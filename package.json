@@ -1,0 +1,8 @@
+{
+  "name": "magistrale-flashcards",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Flashcards universitarie con ripetizione dilazionata, statiche e pubblicabili su GitHub Pages",
+  "scripts": {"test":"node --test tests/*.test.js", "serve":"python3 -m http.server 8000"}
+}

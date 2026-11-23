@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cdg",
+  "source": "Sostituire con il titolo del manuale definitivo e i relativi riferimenti",
+  "chapter": {
+    "id": "cdg-c01",
+    "title": "TITOLO DEL CAPITOLO DA MANUALE",
+    "order": 1,
+    "topics": [
+      {"id": "cdg-c01-t01", "title": "TITOLO ARGOMENTO DAL MANUALE"}
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {"label":"Sezione 1.1 - INSERIRE TITOLO REALE", "cardIds":["cdg-c01-q001"]}
+    ]
+  },
+  "cards": [
+    {
+      "id": "cdg-c01-q001",
+      "topicId": "cdg-c01-t01",
+      "question": "SEGNAPOSTO: sostituire con una vera domanda ricavata dal manuale",
+      "answer": "SEGNAPOSTO: sostituire con la risposta fondamentale verificata",
+      "detail": "SEGNAPOSTO: spiegazione approfondita ricavata dalla fonte",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Manuale definitivo, cap. 1, §1.1, p. ..."
+    }
+  ]
+}
