@@ -1,0 +1,3661 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cdg",
+  "source": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo; PDF fornito dall’utente, pagine PDF 70–85. Fonte unica autorizzata.",
+  "chapter": {
+    "id": "cdg-c07",
+    "title": "Misurazione dei costi nelle produzioni su commessa e per il processo",
+    "order": 7,
+    "topics": [
+      {
+        "id": "cdg-c07-t01",
+        "title": "Finalità, prerequisiti e lessico"
+      },
+      {
+        "id": "cdg-c07-t02",
+        "title": "I quattro sistemi produttivi"
+      },
+      {
+        "id": "cdg-c07-t03",
+        "title": "Job costing e process costing: differenze"
+      },
+      {
+        "id": "cdg-c07-t04",
+        "title": "Configurazioni di costo e oggetti"
+      },
+      {
+        "id": "cdg-c07-t05",
+        "title": "Sistema di misurazione su commessa"
+      },
+      {
+        "id": "cdg-c07-t06",
+        "title": "Documenti di commessa"
+      },
+      {
+        "id": "cdg-c07-t07",
+        "title": "Determinazione dei costi diretti"
+      },
+      {
+        "id": "cdg-c07-t08",
+        "title": "Actual costing e normal costing"
+      },
+      {
+        "id": "cdg-c07-t09",
+        "title": "Scheda di commessa e risultato economico"
+      },
+      {
+        "id": "cdg-c07-t10",
+        "title": "Caso Arcari 4.1: pavimentazione"
+      },
+      {
+        "id": "cdg-c07-t11",
+        "title": "Caso Arcari 4.2: dodici poltrone"
+      },
+      {
+        "id": "cdg-c07-t12",
+        "title": "Caso integrato: commessa tecnica"
+      },
+      {
+        "id": "cdg-c07-t13",
+        "title": "Flussi di magazzino, WIP e rilevazioni"
+      },
+      {
+        "id": "cdg-c07-t14",
+        "title": "Sovra- e sottoassorbimento"
+      },
+      {
+        "id": "cdg-c07-t15",
+        "title": "Process costing: reparto e periodo"
+      },
+      {
+        "id": "cdg-c07-t16",
+        "title": "Quadratura fisica delle unità"
+      },
+      {
+        "id": "cdg-c07-t17",
+        "title": "Gradi di completamento e UEP"
+      },
+      {
+        "id": "cdg-c07-t18",
+        "title": "Profili di impiego dei fattori"
+      },
+      {
+        "id": "cdg-c07-t19",
+        "title": "Media ponderata: metodo MEP"
+      },
+      {
+        "id": "cdg-c07-t20",
+        "title": "Caso Arcari 4.5–4.6: MEP e scarti"
+      },
+      {
+        "id": "cdg-c07-t21",
+        "title": "Metodo FIFO per processi"
+      },
+      {
+        "id": "cdg-c07-t22",
+        "title": "Caso Arcari 4.3–4.4: FIFO con scarti"
+      },
+      {
+        "id": "cdg-c07-t23",
+        "title": "Confronto FIFO e MEP sullo stesso caso"
+      },
+      {
+        "id": "cdg-c07-t24",
+        "title": "Reparti successivi e transferred-in"
+      },
+      {
+        "id": "cdg-c07-t25",
+        "title": "Scarti e perdite normali e anomale"
+      },
+      {
+        "id": "cdg-c07-t26",
+        "title": "Processi congiunti e split-off"
+      },
+      {
+        "id": "cdg-c07-t27",
+        "title": "Tre metodi di allocazione dei costi congiunti"
+      },
+      {
+        "id": "cdg-c07-t28",
+        "title": "Casi Arcari 4.7–4.8: congiunti"
+      },
+      {
+        "id": "cdg-c07-t29",
+        "title": "Sottoprodotti e loro trattamento"
+      },
+      {
+        "id": "cdg-c07-t30",
+        "title": "Casi Arcari 4.9–4.10: ricavo e margine"
+      },
+      {
+        "id": "cdg-c07-t31",
+        "title": "Vendere allo split-off o lavorare ancora"
+      },
+      {
+        "id": "cdg-c07-t32",
+        "title": "Norme contabili e OIC 13"
+      },
+      {
+        "id": "cdg-c07-t33",
+        "title": "Procedure di esame ed errori frequenti"
+      },
+      {
+        "id": "cdg-c07-t34",
+        "title": "Esercizi di allenamento: metodo"
+      },
+      {
+        "id": "cdg-c07-t35",
+        "title": "Soluzioni commentate e domande teoriche"
+      },
+      {
+        "id": "cdg-c07-t36",
+        "title": "Formulario e glossario"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§7.1 — pagina PDF 70",
+        "cardIds": [
+          "cdg-c07-q001",
+          "cdg-c07-q002",
+          "cdg-c07-q003",
+          "cdg-c07-q004",
+          "cdg-c07-q005"
+        ]
+      },
+      {
+        "label": "§7.2 — pagina PDF 70",
+        "cardIds": [
+          "cdg-c07-q006",
+          "cdg-c07-q007",
+          "cdg-c07-q008",
+          "cdg-c07-q009",
+          "cdg-c07-q010",
+          "cdg-c07-q011"
+        ]
+      },
+      {
+        "label": "§7.3 — pagina PDF 71",
+        "cardIds": [
+          "cdg-c07-q012",
+          "cdg-c07-q013",
+          "cdg-c07-q014",
+          "cdg-c07-q015",
+          "cdg-c07-q016"
+        ]
+      },
+      {
+        "label": "§7.4 — pagina PDF 71",
+        "cardIds": [
+          "cdg-c07-q017",
+          "cdg-c07-q018",
+          "cdg-c07-q019",
+          "cdg-c07-q020"
+        ]
+      },
+      {
+        "label": "§7.5 — pagina PDF 71",
+        "cardIds": [
+          "cdg-c07-q021",
+          "cdg-c07-q022",
+          "cdg-c07-q023",
+          "cdg-c07-q024",
+          "cdg-c07-q025"
+        ]
+      },
+      {
+        "label": "§7.6 — pagina PDF 72",
+        "cardIds": [
+          "cdg-c07-q026",
+          "cdg-c07-q027",
+          "cdg-c07-q028",
+          "cdg-c07-q029"
+        ]
+      },
+      {
+        "label": "§7.7 — pagina PDF 72",
+        "cardIds": [
+          "cdg-c07-q030",
+          "cdg-c07-q031",
+          "cdg-c07-q032",
+          "cdg-c07-q033",
+          "cdg-c07-q034"
+        ]
+      },
+      {
+        "label": "§7.8 — pagina PDF 73",
+        "cardIds": [
+          "cdg-c07-q035",
+          "cdg-c07-q036",
+          "cdg-c07-q037",
+          "cdg-c07-q038",
+          "cdg-c07-q039",
+          "cdg-c07-q040",
+          "cdg-c07-q041"
+        ]
+      },
+      {
+        "label": "§7.9 — pagina PDF 73",
+        "cardIds": [
+          "cdg-c07-q042",
+          "cdg-c07-q043",
+          "cdg-c07-q044",
+          "cdg-c07-q045",
+          "cdg-c07-q046"
+        ]
+      },
+      {
+        "label": "§7.10 — pagina PDF 73",
+        "cardIds": [
+          "cdg-c07-q047",
+          "cdg-c07-q048",
+          "cdg-c07-q049",
+          "cdg-c07-q050"
+        ]
+      },
+      {
+        "label": "§7.11 — pagina PDF 74",
+        "cardIds": [
+          "cdg-c07-q051",
+          "cdg-c07-q052",
+          "cdg-c07-q053",
+          "cdg-c07-q054",
+          "cdg-c07-q055"
+        ]
+      },
+      {
+        "label": "§7.12 — pagina PDF 74",
+        "cardIds": [
+          "cdg-c07-q056",
+          "cdg-c07-q057",
+          "cdg-c07-q058",
+          "cdg-c07-q059",
+          "cdg-c07-q060",
+          "cdg-c07-q061"
+        ]
+      },
+      {
+        "label": "§7.13 — pagina PDF 74",
+        "cardIds": [
+          "cdg-c07-q062",
+          "cdg-c07-q063",
+          "cdg-c07-q064",
+          "cdg-c07-q065"
+        ]
+      },
+      {
+        "label": "§7.14 — pagina PDF 75",
+        "cardIds": [
+          "cdg-c07-q066",
+          "cdg-c07-q067",
+          "cdg-c07-q068",
+          "cdg-c07-q069",
+          "cdg-c07-q070",
+          "cdg-c07-q071"
+        ]
+      },
+      {
+        "label": "§7.15 — pagina PDF 75",
+        "cardIds": [
+          "cdg-c07-q072",
+          "cdg-c07-q073",
+          "cdg-c07-q074",
+          "cdg-c07-q075",
+          "cdg-c07-q076"
+        ]
+      },
+      {
+        "label": "§7.16 — pagina PDF 75",
+        "cardIds": [
+          "cdg-c07-q077",
+          "cdg-c07-q078",
+          "cdg-c07-q079",
+          "cdg-c07-q080"
+        ]
+      },
+      {
+        "label": "§7.17 — pagina PDF 76",
+        "cardIds": [
+          "cdg-c07-q081",
+          "cdg-c07-q082",
+          "cdg-c07-q083",
+          "cdg-c07-q084",
+          "cdg-c07-q085"
+        ]
+      },
+      {
+        "label": "§7.18 — pagina PDF 76",
+        "cardIds": [
+          "cdg-c07-q086",
+          "cdg-c07-q087",
+          "cdg-c07-q088",
+          "cdg-c07-q089"
+        ]
+      },
+      {
+        "label": "§7.19 — pagina PDF 76",
+        "cardIds": [
+          "cdg-c07-q090",
+          "cdg-c07-q091",
+          "cdg-c07-q092",
+          "cdg-c07-q093",
+          "cdg-c07-q094",
+          "cdg-c07-q095"
+        ]
+      },
+      {
+        "label": "§7.20 — pagina PDF 77",
+        "cardIds": [
+          "cdg-c07-q096",
+          "cdg-c07-q097",
+          "cdg-c07-q098",
+          "cdg-c07-q099",
+          "cdg-c07-q100",
+          "cdg-c07-q101",
+          "cdg-c07-q102"
+        ]
+      },
+      {
+        "label": "§7.21 — pagina PDF 77",
+        "cardIds": [
+          "cdg-c07-q103",
+          "cdg-c07-q104",
+          "cdg-c07-q105",
+          "cdg-c07-q106",
+          "cdg-c07-q107",
+          "cdg-c07-q108"
+        ]
+      },
+      {
+        "label": "§7.22 — pagina PDF 78",
+        "cardIds": [
+          "cdg-c07-q109",
+          "cdg-c07-q110",
+          "cdg-c07-q111",
+          "cdg-c07-q112",
+          "cdg-c07-q113",
+          "cdg-c07-q114",
+          "cdg-c07-q115"
+        ]
+      },
+      {
+        "label": "§7.23 — pagina PDF 78",
+        "cardIds": [
+          "cdg-c07-q116",
+          "cdg-c07-q117",
+          "cdg-c07-q118",
+          "cdg-c07-q119",
+          "cdg-c07-q120",
+          "cdg-c07-q121",
+          "cdg-c07-q122",
+          "cdg-c07-q123",
+          "cdg-c07-q124"
+        ]
+      },
+      {
+        "label": "§7.24 — pagina PDF 79",
+        "cardIds": [
+          "cdg-c07-q125",
+          "cdg-c07-q126",
+          "cdg-c07-q127",
+          "cdg-c07-q128",
+          "cdg-c07-q129"
+        ]
+      },
+      {
+        "label": "§7.25 — pagina PDF 79",
+        "cardIds": [
+          "cdg-c07-q130",
+          "cdg-c07-q131",
+          "cdg-c07-q132",
+          "cdg-c07-q133",
+          "cdg-c07-q134",
+          "cdg-c07-q135"
+        ]
+      },
+      {
+        "label": "§7.26 — pagina PDF 80",
+        "cardIds": [
+          "cdg-c07-q136",
+          "cdg-c07-q137",
+          "cdg-c07-q138",
+          "cdg-c07-q139",
+          "cdg-c07-q140"
+        ]
+      },
+      {
+        "label": "§7.27 — pagina PDF 80",
+        "cardIds": [
+          "cdg-c07-q141",
+          "cdg-c07-q142",
+          "cdg-c07-q143",
+          "cdg-c07-q144",
+          "cdg-c07-q145",
+          "cdg-c07-q146"
+        ]
+      },
+      {
+        "label": "§7.28 — pagina PDF 81",
+        "cardIds": [
+          "cdg-c07-q147",
+          "cdg-c07-q148",
+          "cdg-c07-q149",
+          "cdg-c07-q150",
+          "cdg-c07-q151",
+          "cdg-c07-q152",
+          "cdg-c07-q153",
+          "cdg-c07-q154"
+        ]
+      },
+      {
+        "label": "§7.29 — pagina PDF 81",
+        "cardIds": [
+          "cdg-c07-q155",
+          "cdg-c07-q156",
+          "cdg-c07-q157",
+          "cdg-c07-q158",
+          "cdg-c07-q159"
+        ]
+      },
+      {
+        "label": "§7.30 — pagina PDF 82",
+        "cardIds": [
+          "cdg-c07-q160",
+          "cdg-c07-q161",
+          "cdg-c07-q162",
+          "cdg-c07-q163",
+          "cdg-c07-q164",
+          "cdg-c07-q165"
+        ]
+      },
+      {
+        "label": "§7.31 — pagina PDF 82",
+        "cardIds": [
+          "cdg-c07-q166",
+          "cdg-c07-q167",
+          "cdg-c07-q168",
+          "cdg-c07-q169",
+          "cdg-c07-q170"
+        ]
+      },
+      {
+        "label": "§7.32 — pagina PDF 82",
+        "cardIds": [
+          "cdg-c07-q171",
+          "cdg-c07-q172",
+          "cdg-c07-q173",
+          "cdg-c07-q174",
+          "cdg-c07-q175"
+        ]
+      },
+      {
+        "label": "§7.33 — pagina PDF 83",
+        "cardIds": [
+          "cdg-c07-q176",
+          "cdg-c07-q177",
+          "cdg-c07-q178",
+          "cdg-c07-q179",
+          "cdg-c07-q180",
+          "cdg-c07-q181",
+          "cdg-c07-q182",
+          "cdg-c07-q183"
+        ]
+      },
+      {
+        "label": "§7.34 — pagina PDF 83",
+        "cardIds": [
+          "cdg-c07-q184",
+          "cdg-c07-q185",
+          "cdg-c07-q186",
+          "cdg-c07-q187",
+          "cdg-c07-q188",
+          "cdg-c07-q189",
+          "cdg-c07-q190",
+          "cdg-c07-q191",
+          "cdg-c07-q192",
+          "cdg-c07-q193",
+          "cdg-c07-q194",
+          "cdg-c07-q195"
+        ]
+      },
+      {
+        "label": "§7.35 — pagina PDF 84",
+        "cardIds": [
+          "cdg-c07-q196",
+          "cdg-c07-q197",
+          "cdg-c07-q198",
+          "cdg-c07-q199",
+          "cdg-c07-q200",
+          "cdg-c07-q201",
+          "cdg-c07-q202",
+          "cdg-c07-q203",
+          "cdg-c07-q204",
+          "cdg-c07-q205",
+          "cdg-c07-q206",
+          "cdg-c07-q207",
+          "cdg-c07-q208",
+          "cdg-c07-q209",
+          "cdg-c07-q210"
+        ]
+      },
+      {
+        "label": "§7.36 — pagina PDF 85",
+        "cardIds": [
+          "cdg-c07-q211",
+          "cdg-c07-q212",
+          "cdg-c07-q213",
+          "cdg-c07-q214",
+          "cdg-c07-q215",
+          "cdg-c07-q216"
+        ]
+      }
+    ],
+    "sourcePdfPages": "70–85",
+    "cardCount": 216
+  },
+  "cards": [
+    {
+      "id": "cdg-c07-q001",
+      "topicId": "cdg-c07-t01",
+      "question": "Quale problema risolve la scelta di un sistema di accumulazione dei costi?",
+      "answer": "Stabilisce dove raccogliere i costi produttivi e come trasformare il totale raccolto in costi unitari attendibili.",
+      "detail": "Le commesse specifiche permettono la tracciatura su singoli ordini; le produzioni continue richiedono aggregazioni per reparto e periodo. Cambia dunque l’oggetto di accumulazione e il modo di trattare i prodotti incompleti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§7.3 — Confronto job/process costing"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.1, pagina PDF 70"
+    },
+    {
+      "id": "cdg-c07-q002",
+      "topicId": "cdg-c07-t01",
+      "question": "Come si definisce una commessa o job nel sistema di costing?",
+      "answer": "È un ordine o progetto identificato, cui si associano progressivamente materiali, lavoro e altre componenti di costo.",
+      "detail": "La commessa può riguardare un unico bene o una serie di unità abbastanza omogenee. L’identificativo permette di collegare consumi, tempi e servizi allo specifico ordine.",
+      "example": "Un software personalizzato, un edificio o un impianto realizzato per un cliente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.1, pagina PDF 70"
+    },
+    {
+      "id": "cdg-c07-q003",
+      "topicId": "cdg-c07-t01",
+      "question": "Che differenza c’è fra lotto, reparto e processo come oggetti di accumulazione?",
+      "answer": "Il lotto identifica un gruppo di unità omogenee; il reparto o processo raccoglie i costi di una produzione ripetitiva per fase e periodo.",
+      "detail": "Un lotto conserva un’identità produttiva individuabile e può differire dagli altri. Nel processo continuo le unità possono essere indistinguibili: il costo si forma sulle attività di reparto e si distribuisce alle unità equivalenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.1, pagina PDF 70"
+    },
+    {
+      "id": "cdg-c07-q004",
+      "topicId": "cdg-c07-t01",
+      "question": "Che cosa indica la sigla WIP e perché è rilevante nel Capitolo 7?",
+      "answer": "WIP significa work in process: comprende i prodotti in corso di lavorazione, non ancora completati.",
+      "detail": "Nei sistemi per processo le rimanenze iniziali e finali di WIP possono avere gradi di avanzamento differenti. Occorre quindi valorizzarle correttamente distinguendole dalle unità completate e trasferite.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.1, pagina PDF 70"
+    },
+    {
+      "id": "cdg-c07-q005",
+      "topicId": "cdg-c07-t01",
+      "question": "Perché le unità equivalenti sono necessarie nel process costing?",
+      "answer": "Consentono di esprimere prodotti completi e incompleti in termini confrontabili di lavoro produttivo.",
+      "detail": "Cento pezzi terminati e cento pezzi al 20% per una risorsa non equivalgono a duecento pezzi completamente lavorati. Le UEP riflettono la frazione di risorsa effettivamente utilizzata.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§7.17 — Unità equivalenti"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.1, pagina PDF 70"
+    },
+    {
+      "id": "cdg-c07-q006",
+      "topicId": "cdg-c07-t02",
+      "question": "Quali sono le quattro modalità produttive individuate nel manuale?",
+      "answer": "Produzione per singola unità, per lotti, in serie e a flusso continuo.",
+      "detail": "Costituiscono un continuum, non categorie sempre rigidamente separate. Aumentando omogeneità e continuità, può diventare più razionale misurare un costo medio di reparto anziché tracciare ogni unità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.2, pagina PDF 70"
+    },
+    {
+      "id": "cdg-c07-q007",
+      "topicId": "cdg-c07-t02",
+      "question": "Come si caratterizza la produzione per singola unità?",
+      "answer": "L’output è distintivo e identificabile; i costi sono raccolti per prodotto, commessa o progetto.",
+      "detail": "È appropriata per realizzazioni uniche e personalizzate, in cui materiali, tempi e servizi possono essere riferiti a uno specifico ordine.",
+      "example": "Impianto speciale, ponte, edificio, consulenza specialistica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.2, pagina PDF 70"
+    },
+    {
+      "id": "cdg-c07-q008",
+      "topicId": "cdg-c07-t02",
+      "question": "Qual è l’oggetto di costo tipico nella produzione per lotti?",
+      "answer": "Il lotto o ordine di produzione, composto da unità simili al suo interno ma potenzialmente differenti rispetto ad altri lotti.",
+      "detail": "La ripetitività del singolo lotto permette un costo medio del gruppo; i lotti possono richiedere materiali, set-up o durate diverse, quindi aggregarli indiscriminatamente può distorcere la misurazione.",
+      "example": "Tiratura editoriale, capi su ordinazione, una serie di arredi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.2, pagina PDF 70"
+    },
+    {
+      "id": "cdg-c07-q009",
+      "topicId": "cdg-c07-t02",
+      "question": "Perché la produzione in serie può impiegare costi medi per linea o reparto?",
+      "answer": "Perché produce unità ripetitive e abbastanza omogenee, per le quali una tracciatura individuale non è sempre economicamente utile.",
+      "detail": "Sebbene ciascun bene sia fisicamente identificabile, la somiglianza di lavorazioni consente una misurazione media sul flusso produttivo, preservando l’analisi delle risorse assorbite.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.2, pagina PDF 70"
+    },
+    {
+      "id": "cdg-c07-q010",
+      "topicId": "cdg-c07-t02",
+      "question": "Quali produzioni si prestano al costing per flusso continuo?",
+      "answer": "Quelle con output omogeneo e spesso materialmente indistinguibile durante le fasi di processo, misurato per reparto e periodo.",
+      "detail": "Il calcolo si concentra sui costi sostenuti nella fase e sulle unità equivalenti, non su un codice di costo distinto per ogni singola unità fisica.",
+      "example": "Processi chimici, bevande, carta e alcune produzioni siderurgiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.2, pagina PDF 70"
+    },
+    {
+      "id": "cdg-c07-q011",
+      "topicId": "cdg-c07-t02",
+      "question": "Da quali fattori dipende la scelta fra job costing e process costing?",
+      "answer": "Da omogeneità dei prodotti, tracciabilità dei costi, continuità produttiva e costo delle rilevazioni.",
+      "detail": "Non è la semplice esistenza di una catena di montaggio a decidere. La stessa impresa può usare job costing per prototipi personalizzati e process costing per prodotti standard.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.2, pagina PDF 70"
+    },
+    {
+      "id": "cdg-c07-q012",
+      "topicId": "cdg-c07-t03",
+      "question": "In che cosa differiscono job costing e process costing per centro di accumulazione?",
+      "answer": "Il job costing accumula costi su una commessa specifica; il process costing accumula costi per reparto o fase e per periodo.",
+      "detail": "Nel primo le misure seguono l’ordine attraverso documenti dedicati; nel secondo il costo di periodo deve essere attribuito a output diversi per stato di completamento mediante UEP.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.3, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q013",
+      "topicId": "cdg-c07-t03",
+      "question": "Quali documenti rappresentano tipicamente il costo nei due sistemi?",
+      "answer": "La scheda di commessa per il job costing; il rapporto dei costi del processo per reparto nel process costing.",
+      "detail": "La scheda di commessa dettaglia materiali, ore e indiretti del singolo ordine. Il rapporto di processo riconcilia entrate, uscite, costi e WIP di una determinata fase e periodo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.3, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q014",
+      "topicId": "cdg-c07-t03",
+      "question": "Come si ottiene il costo unitario nel job costing e nel process costing?",
+      "answer": "Nella commessa si divide il costo totale per le unità omogenee; nel processo si determinano prima i costi per UEP e si valorizzano i diversi gruppi.",
+      "detail": "La divisione semplice della commessa funziona solo se le unità sono effettivamente omogenee. Il processo continuo deve differenziare le unità completate da quelle in corso e distinguere i fattori di costo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.3, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q015",
+      "topicId": "cdg-c07-t03",
+      "question": "Quale problema critico caratterizza il process costing rispetto al job costing?",
+      "answer": "La misurazione dei gradi di avanzamento di rimanenze iniziali, finali e scarti, oltre alla quadratura dei flussi.",
+      "detail": "Nel job costing pesa soprattutto il tracciamento e l’allocazione degli indiretti. Il process costing richiede quantificare il lavoro equivalente incorporato in gruppi non ugualmente completati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.3, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q016",
+      "topicId": "cdg-c07-t03",
+      "question": "Un’impresa con una catena di montaggio deve necessariamente usare process costing?",
+      "answer": "No: il criterio decisivo è la convenienza a tracciare i costi individualmente, non la sola configurazione fisica della linea.",
+      "detail": "Produzioni per lotti identificabili possono mantenere schede specifiche anche in presenza di lavorazioni seriali. Per prodotti omogenei a flusso continuo è normalmente più efficiente l’accumulo per fase.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.3, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q017",
+      "topicId": "cdg-c07-t04",
+      "question": "Che cosa comprende il costo pieno di produzione secondo il Capitolo 7?",
+      "answer": "Materiali, manodopera diretta e costi indiretti pertinenti alla produzione, secondo il perimetro industriale adottato.",
+      "detail": "Questa configurazione permette di costruire il costo dell’output produttivo. Non include automaticamente tutte le spese commerciali, amministrative e generali dell’impresa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.4, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q018",
+      "topicId": "cdg-c07-t04",
+      "question": "Come si distingue il costo pieno aziendale dal costo pieno di produzione?",
+      "answer": "Il costo pieno aziendale può includere ulteriori costi commerciali, amministrativi e di struttura a fini gestionali.",
+      "detail": "L’estensione del perimetro serve a una decisione interna, ma non rende automaticamente i costi extra-produttivi incorporabili nelle rimanenze in bilancio; le finalità e le regole sono differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.4, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q019",
+      "topicId": "cdg-c07-t04",
+      "question": "Qual è il costo di commessa gestionale nell’esempio del progetto informatico?",
+      "answer": "78.000 €, sommando 60.000 € di sviluppo, 10.000 € di test e 8.000 € di gestione progetto, secondo il perimetro dichiarato.",
+      "detail": "L’esempio evidenzia che la scelta dei componenti precede il calcolo. Eventuali costi di sede e vendita richiederebbero una distinta scelta di configurazione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "60000+10000+8000=78000\\;\\text{€}",
+          "meaning": "Costo dell’esempio gestionale."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.4, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q020",
+      "topicId": "cdg-c07-t04",
+      "question": "Che differenza c’è tra costi effettivi, preventivi e normali?",
+      "answer": "Gli effettivi sono consuntivi, i preventivi sono stimati prima dell’attività e i normali combinano tipicamente diretti reali con indiretti imputati a un tasso predefinito.",
+      "detail": "Il normal costing permette di conoscere tempestivamente il costo della commessa prima che siano disponibili tutti gli indiretti consuntivi. Non va confuso con il costo completamente preventivato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.4, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q021",
+      "topicId": "cdg-c07-t05",
+      "question": "Come funziona il sistema di misurazione per commessa?",
+      "answer": "Ogni ordine dispone di un codice univoco e di una scheda aggiornata progressivamente con consumi e costi.",
+      "detail": "La scheda raccoglie documenti sui materiali, ore lavoro, servizi specifici e indiretti attribuiti. Consente analisi sia a consuntivo sia durante l’esecuzione, confrontando gli avanzamenti con il piano.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.5, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q022",
+      "topicId": "cdg-c07-t05",
+      "question": "Quali informazioni identificative devono comparire nella scheda di commessa?",
+      "answer": "Cliente, oggetto dell’ordine, quantità, date, responsabilità operative e componenti di costo, con codice univoco di commessa.",
+      "detail": "Queste informazioni permettono di ricostruire la storia economica del lavoro, assegnare le registrazioni all’ordine corretto e confrontare il preventivo con il costo in maturazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.5, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q023",
+      "topicId": "cdg-c07-t05",
+      "question": "Perché la misurazione dei costi della commessa deve avvenire in itinere?",
+      "answer": "Per segnalare tempestivamente inefficienze, varianti e superamenti di budget prima che siano impossibili da correggere.",
+      "detail": "Confrontare costi già sostenuti, impegni non fatturati e costo stimato a finire rende la scheda uno strumento di controllo, non soltanto un riepilogo finale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.5, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q024",
+      "topicId": "cdg-c07-t05",
+      "question": "Quali criteri di attribuzione degli indiretti possono coesistere con il job costing?",
+      "answer": "Base unica, centri di costo o Activity-Based Costing; cambiano le basi di riparto, non l’oggetto commessa.",
+      "detail": "È necessario distinguere su quale oggetto si accumula il costo dal metodo per assegnare i costi comuni. Una commessa può ricevere indiretti calcolati con coefficienti di reparto o per attività.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.5, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q025",
+      "topicId": "cdg-c07-t05",
+      "question": "Perché non basta l’importo già fatturato per stimare il costo finale della commessa?",
+      "answer": "Perché possono esistere impegni contrattuali non ancora fatturati e lavorazioni ancora da completare.",
+      "detail": "Il confronto gestionale deve comprendere ciò che è già stato consumato e una stima dei costi futuri necessari al completamento, altrimenti il margine previsto potrebbe apparire troppo favorevole.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.5, pagina PDF 71"
+    },
+    {
+      "id": "cdg-c07-q026",
+      "topicId": "cdg-c07-t06",
+      "question": "A cosa serve il modulo di prelievo materiali?",
+      "answer": "A registrare il materiale prelevato dal magazzino e attribuirne il consumo alla commessa pertinente.",
+      "detail": "Contiene almeno codice dell’ordine, data, tipo di materiale, quantità, unità di misura e costo di valorizzazione; consente la riconciliazione con il magazzino.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.6, pagina PDF 72"
+    },
+    {
+      "id": "cdg-c07-q027",
+      "topicId": "cdg-c07-t06",
+      "question": "Quali dati devono essere rilevati dai cartellini dei tempi?",
+      "answer": "Dipendente o centro, attività, ore effettivamente impiegate e codice commessa cui il tempo è attribuibile.",
+      "detail": "La rilevazione distingue il tempo diretto svolto sull’ordine dalle attività comuni non direttamente imputabili. Può essere effettuata su supporto cartaceo o elettronico.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.6, pagina PDF 72"
+    },
+    {
+      "id": "cdg-c07-q028",
+      "topicId": "cdg-c07-t06",
+      "question": "Come sono documentati i servizi esterni direttamente attribuibili a una commessa?",
+      "answer": "Con ordini, contratti e documenti di subfornitura che ne collegano specificamente l’utilizzo all’ordine.",
+      "detail": "Lavorazioni esterne, collaudi, trasporti specifici e progettazioni possono essere costi diretti se tracciati in modo attendibile, evitando di riprenderli anche negli indiretti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.6, pagina PDF 72"
+    },
+    {
+      "id": "cdg-c07-q029",
+      "topicId": "cdg-c07-t06",
+      "question": "Quali funzioni ha la scheda riepilogativa di commessa?",
+      "answer": "Ricompone costi per tipologia e data e confronta budget, consuntivo, impegni residui e costo stimato a finire.",
+      "detail": "Il prospetto alimenta sia il calcolo di costo sia la verifica degli scostamenti. Richiede coerenza fra documenti elementari, magazzino, registrazioni ore e contabilità analitica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.6, pagina PDF 72"
+    },
+    {
+      "id": "cdg-c07-q030",
+      "topicId": "cdg-c07-t07",
+      "question": "Come si determina il costo dei materiali diretti consumati da una commessa?",
+      "answer": "Si sommano le quantità effettivamente consumate dei singoli materiali moltiplicate per i rispettivi costi unitari.",
+      "detail": "I valori unitari possono provenire dal costo medio o dal FIFO adottato per le uscite di magazzino. Eventuali restituzioni devono rettificare il materiale imputato alla commessa.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{MD}=\\sum_j q_jp_j",
+          "meaning": "Quantità consumate × valorizzazioni unitarie."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.7, pagina PDF 72"
+    },
+    {
+      "id": "cdg-c07-q031",
+      "topicId": "cdg-c07-t07",
+      "question": "Come si determina il costo della manodopera diretta di una commessa?",
+      "answer": "Si moltiplicano le ore realmente attribuibili alle diverse lavorazioni per il costo orario aziendale pertinente e si sommano le quote.",
+      "detail": "La tariffa non coincide necessariamente con la retribuzione netta: può includere oneri sociali e altre componenti. Tempi comuni e formazione non vanno automaticamente imputati come diretti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{MOD}=\\sum_k h_kc_k",
+          "meaning": "Ore dirette × costo aziendale per ora."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.7, pagina PDF 72"
+    },
+    {
+      "id": "cdg-c07-q032",
+      "topicId": "cdg-c07-t07",
+      "question": "Perché la restituzione di materiali al magazzino modifica il costo della commessa?",
+      "answer": "Perché il costo diretto deve rappresentare il consumo netto, non il mero prelievo iniziale.",
+      "detail": "Se una quantità è restituita e rimane disponibile per altre lavorazioni, non ha generato il consumo relativo alla commessa; mantenerla nella scheda gonfierebbe i costi dell’ordine.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.7, pagina PDF 72"
+    },
+    {
+      "id": "cdg-c07-q033",
+      "topicId": "cdg-c07-t07",
+      "question": "Quale errore di doppia imputazione bisogna evitare nel calcolo dei diretti?",
+      "answer": "Non bisogna conteggiare nel pool degli indiretti una spesa già tracciata direttamente alla stessa commessa.",
+      "detail": "Una lavorazione esterna specifica già registrata come costo diretto non può essere nuovamente allocata attraverso un coefficiente generico, perché verrebbe attribuita due volte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.7, pagina PDF 72"
+    },
+    {
+      "id": "cdg-c07-q034",
+      "topicId": "cdg-c07-t07",
+      "question": "Quanto valgono i costi diretti dell’esempio con materiale e due lavorazioni?",
+      "answer": "636 €: materiali 25×12=300 €, lavoro qualificato 5×32=160 €, montaggio 8×22=176 €.",
+      "detail": "Il caso verifica due formule indipendenti: materiali quantità × prezzo e manodopera ore × tariffa. Solo dopo la somma dei diretti si aggiungerebbero eventuali indiretti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "25\\times12+5\\times32+8\\times22=636\\;\\text{€}",
+          "meaning": "Costo diretto complessivo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.7, pagina PDF 72"
+    },
+    {
+      "id": "cdg-c07-q035",
+      "topicId": "cdg-c07-t08",
+      "question": "Che cos’è il coefficiente di attribuzione (CdA) dei costi indiretti?",
+      "answer": "Il costo indiretto da attribuire per unità della base di ripartizione prescelta.",
+      "detail": "È espresso, per esempio, in €/ora macchina, €/ora MOD oppure come coefficiente sul costo del lavoro. Richiede un pool coerente e una base che rappresenti ragionevolmente il consumo delle risorse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.8, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q036",
+      "topicId": "cdg-c07-t08",
+      "question": "Come si calcola il CdA effettivo nell’actual costing?",
+      "answer": "Dividendo i costi indiretti consuntivi per la quantità effettiva complessiva della base del periodo.",
+      "detail": "I dati necessari sono disponibili solo a consuntivo. La quota riferita a una commessa si ottiene applicando il tasso alla base che quella commessa ha assorbito.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CdA_{eff}=C_{ind,cons}/B_{cons}",
+          "meaning": "Coefficiente consuntivo di attribuzione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.8, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q037",
+      "topicId": "cdg-c07-t08",
+      "question": "Come si calcola il CdA predeterminato nel normal costing?",
+      "answer": "Dividendo gli indiretti preventivati per la quantità preventivata della corrispondente base di ripartizione.",
+      "detail": "La commessa assorbe poi indiretti usando le unità di base effettivamente consumate e il tasso preventivo, anche quando il totale degli indiretti reali non è ancora noto.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CdA_{pred}=C_{ind,prev}/B_{prev}",
+          "meaning": "Coefficiente di attribuzione predeterminato."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.8, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q038",
+      "topicId": "cdg-c07-t08",
+      "question": "Quale combinazione di valori caratterizza normalmente il normal costing?",
+      "answer": "Costi diretti effettivi più costi indiretti assorbiti mediante un coefficiente predeterminato.",
+      "detail": "Il sistema bilancia attendibilità delle misurazioni dirette e tempestività nell’attribuire gli indiretti. A fine periodo possono emergere differenze tra indiretti consuntivi e assorbiti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.8, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q039",
+      "topicId": "cdg-c07-t08",
+      "question": "Come si calcola la quota di costi indiretti assorbita da una commessa?",
+      "answer": "Moltiplicando il CdA pertinente per la quantità della base effettivamente utilizzata dalla commessa.",
+      "detail": "Il denominatore usato per stimare il tasso è riferito al pool complessivo, non alle sole ore dell’ordine. Il numeratore della quota imputata è la base assorbita dalla singola commessa.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{ind,comm}=CdA\\times B_{comm}",
+          "meaning": "Applicazione del coefficiente alla singola commessa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.8, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q040",
+      "topicId": "cdg-c07-t08",
+      "question": "Qual è il coefficiente del caso con 150.000 € di indiretti previsti e 20.000 ore MOD?",
+      "answer": "7,50 €/h di manodopera diretta, come nel caso delle poltrone Arcari 4.2.",
+      "detail": "Il rapporto tra costo preventivo complessivo e ore preventivate fornisce un tasso da applicare alle ore consumate dalle singole commesse; non è un costo per unità di prodotto.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "150000/20000=7{,}50\\;\\text{€/h MOD}",
+          "meaning": "Coefficiente predeterminato."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.8, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q041",
+      "topicId": "cdg-c07-t08",
+      "question": "Quanti indiretti vengono attribuiti alle 384 ore del caso Arcari 4.2?",
+      "answer": "2.880 €, ottenuti applicando il coefficiente predeterminato di 7,50 €/h alle 384 ore effettive.",
+      "detail": "Il valore è un assorbimento normale: non richiede di conoscere già l’importo finale degli indiretti reali, che sarà riconciliato successivamente.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "384\\times7{,}50=2880\\;\\text{€}",
+          "meaning": "Indiretti attribuiti alla commessa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.8, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q042",
+      "topicId": "cdg-c07-t09",
+      "question": "Qual è la formula completa del costo totale di una commessa?",
+      "answer": "Materiali diretti più MOD, servizi direttamente attribuibili e quota di costi indiretti allocati.",
+      "detail": "La somma dipende dal perimetro dichiarato ed è fondamentale controllare che nessun costo sia omesso o conteggiato due volte. Gli oneri extra-produttivi appartengono ad altre configurazioni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{comm}=MD+MOD+Servizi_{dir}+Indiretti_{attr}",
+          "meaning": "Costo complessivo della commessa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.9, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q043",
+      "topicId": "cdg-c07-t09",
+      "question": "Quando è corretto calcolare il costo unitario della commessa dividendo il totale per le unità?",
+      "answer": "Quando la commessa produce un insieme di unità sufficientemente omogenee e comparabili.",
+      "detail": "La divisione semplice è fuorviante se l’ordine contiene beni con lavorazioni o configurazioni molto diverse. Nel caso di un solo bene il costo complessivo coincide con quello unitario.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{u,comm}=C_{comm}/N_{omogenee}",
+          "meaning": "Costo medio per unità equivalente della stessa commessa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.9, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q044",
+      "topicId": "cdg-c07-t09",
+      "question": "Che cos’è il margine lordo industriale di una commessa?",
+      "answer": "La differenza fra ricavi contrattuali e costo industriale della commessa nel perimetro considerato.",
+      "detail": "Non coincide automaticamente con risultato operativo o utile netto: per questi possono mancare costi commerciali, amministrativi, generali e altre componenti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "M_{industriale}=Ricavi-C_{industriale}",
+          "meaning": "Margine industriale sulla commessa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.9, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q045",
+      "topicId": "cdg-c07-t09",
+      "question": "Perché la scheda deve separare preventivo originale e varianti approvate?",
+      "answer": "Per permettere di interpretare correttamente scostamenti e ricavi aggiuntivi rispetto all’ordine iniziale.",
+      "detail": "Un cambiamento contrattuale può generare lavoro e spesa immediati, mentre il riconoscimento del corrispettivo può avvenire in una fase diversa. Senza la separazione le performance apparirebbero distorte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.9, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q046",
+      "topicId": "cdg-c07-t09",
+      "question": "Perché il costo pieno della commessa non è sempre il valore corretto per una decisione incrementale?",
+      "answer": "Perché nelle decisioni tra alternative contano principalmente costi e ricavi che cambiano scegliendo l’una o l’altra.",
+      "detail": "Le quote comuni imputate a costo pieno possono persistere comunque, quindi devono essere distinte dai costi differenziali effettivamente evitabili o aggiuntivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.9, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q047",
+      "topicId": "cdg-c07-t10",
+      "question": "Quali componenti dirette risultano nel caso Arcari 4.1 della pavimentazione?",
+      "answer": "Materiali diretti 4.574 €, MOD 3.040 € e servizi specifici 1.000 €.",
+      "detail": "Sono componenti già attribuibili all’ordine tramite i documenti elementari. Per arrivare al costo pieno si aggiunge la quota di indiretti calcolata sulle ore MOD.",
+      "example": "La base della commessa è costituita da 118 ore MOD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.10, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q048",
+      "topicId": "cdg-c07-t10",
+      "question": "Qual è il CdA effettivo nel caso della pavimentazione Arcari 4.1?",
+      "answer": "5 €/ora MOD, dividendo 40.000 € di indiretti consuntivi per le 8.000 ore MOD complessive.",
+      "detail": "Il denominatore è l’attività dell’intero pool. Le 118 ore di pavimentazione servono ad attribuire la quota alla singola commessa, non a determinare il tasso.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "40000/8000=5\\;\\text{€/h MOD}",
+          "meaning": "CdA effettivo del pool."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.10, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q049",
+      "topicId": "cdg-c07-t10",
+      "question": "Quali sono gli indiretti imputati alla pavimentazione di Arcari 4.1?",
+      "answer": "590 €, ottenuti applicando il tasso di 5 €/h alle 118 ore di manodopera della commessa.",
+      "detail": "La quota si aggiunge ai costi specifici già tracciati. Dividere i 40.000 € aziendali per 118 ore sarebbe un errore di denominatore.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "118\\times5=590\\;\\text{€}",
+          "meaning": "Quota indiretta della pavimentazione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.10, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q050",
+      "topicId": "cdg-c07-t10",
+      "question": "Qual è il costo pieno industriale finale della pavimentazione Arcari 4.1?",
+      "answer": "9.204 €, somma di 4.574 € materiali, 3.040 € MOD, 1.000 € servizi e 590 € indiretti.",
+      "detail": "La quadratura controlla sia i diretti sia la quota allocata. Il caso rappresenta un esempio di actual costing con tasso basato sui valori effettivi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "4574+3040+1000+590=9204\\;\\text{€}",
+          "meaning": "Costo pieno della commessa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.10, pagina PDF 73"
+    },
+    {
+      "id": "cdg-c07-q051",
+      "topicId": "cdg-c07-t11",
+      "question": "Quali sono i dati diretti del caso Arcari 4.2 sulle 12 poltrone?",
+      "answer": "Materiali 12.648 €, manodopera diretta 5.832 € e servizi diretti 600 €.",
+      "detail": "La commessa riguarda dodici beni omogenei. Gli indiretti sono attribuiti con un CdA predeterminato e il costo unitario si ricava soltanto dopo la somma di tutte le componenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.11, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q052",
+      "topicId": "cdg-c07-t11",
+      "question": "Perché il caso Arcari 4.2 esemplifica il normal costing?",
+      "answer": "Perché utilizza indiretti e ore previsti per determinare un coefficiente che viene applicato alle ore reali della commessa.",
+      "detail": "Il coefficiente di 7,50 €/h è stimato ex ante; permette di valorizzare tempestivamente le poltrone, pur in attesa del totale degli indiretti consuntivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.11, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q053",
+      "topicId": "cdg-c07-t11",
+      "question": "Qual è la quota di indiretti delle 12 poltrone Arcari 4.2?",
+      "answer": "2.880 €, risultanti da 384 ore MOD effettive moltiplicate per 7,50 €/h.",
+      "detail": "Le 384 ore sono la quantità di driver utilizzata dalla commessa, mentre il tasso deriva dal budget globale di indiretti e ore MOD.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "384\\times7{,}50=2880\\;\\text{€}",
+          "meaning": "Assorbimento normale degli indiretti."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.11, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q054",
+      "topicId": "cdg-c07-t11",
+      "question": "Qual è il costo totale delle 12 poltrone e come si ottiene?",
+      "answer": "21.960 €, sommando materiali 12.648 €, MOD 5.832 €, servizi 600 € e indiretti 2.880 €.",
+      "detail": "La somma rappresenta il costo attribuito all’intero lotto di dodici unità uguali, non ancora il costo per singola poltrona.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "12648+5832+600+2880=21960\\;\\text{€}",
+          "meaning": "Costo della commessa delle dodici poltrone."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.11, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q055",
+      "topicId": "cdg-c07-t11",
+      "question": "Qual è il costo unitario delle poltrone Arcari 4.2?",
+      "answer": "1.830 € per poltrona, dividendo il costo totale della commessa di 21.960 € per 12 unità omogenee.",
+      "detail": "La divisione è giustificata dall’omogeneità delle poltrone. L’eventuale differenza fra indiretti preventivati e reali si chiarirà in sede di riconciliazione di periodo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "21960/12=1830\\;\\text{€/poltrona}",
+          "meaning": "Costo medio unitario."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.11, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q056",
+      "topicId": "cdg-c07-t12",
+      "question": "Quali costi diretti sono previsti nel caso della commessa tecnica di automazione?",
+      "answer": "Materiali e componenti 18.000 €, progettazione 260 ore a 38 €/h, montaggio 340 ore a 24 €/h e collaudo esterno 2.500 €.",
+      "detail": "I materiali e il servizio esterno sono direttamente identificati; il lavoro si determina moltiplicando le ore delle due categorie per le rispettive tariffe.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.12, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q057",
+      "topicId": "cdg-c07-t12",
+      "question": "Qual è il costo complessivo della manodopera nel caso di automazione?",
+      "answer": "18.040 €, pari a 9.880 € di progettazione e 8.160 € di montaggio.",
+      "detail": "La commessa assorbe 260+340=600 ore ma non è corretto utilizzare una sola tariffa: progettazione e montaggio hanno costi orari differenti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "260\\times38+340\\times24=18040\\;\\text{€}",
+          "meaning": "MOD complessiva della commessa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.12, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q058",
+      "topicId": "cdg-c07-t12",
+      "question": "Come si determina il CdA dell’esempio di automazione?",
+      "answer": "12 €/ora di lavoro diretto, dividendo il budget di 120.000 € di indiretti per le 10.000 ore preventivate.",
+      "detail": "La base scelta è il tempo complessivo di lavoro diretto. Il tasso è predeterminato e verrà applicato alle ore effettivamente consumate.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "120000/10000=12\\;\\text{€/h}",
+          "meaning": "Coefficiente di allocazione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.12, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q059",
+      "topicId": "cdg-c07-t12",
+      "question": "Quale quota di costi indiretti assorbe la commessa di automazione?",
+      "answer": "7.200 €, ottenuti moltiplicando le 600 ore dirette per 12 €/ora.",
+      "detail": "Le ore derivano dalla somma di 260 ore di progettazione e 340 di montaggio. Si applica qui il coefficiente unico scelto dal caso.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "(260+340)\\times12=7200\\;\\text{€}",
+          "meaning": "Indiretti attribuiti."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.12, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q060",
+      "topicId": "cdg-c07-t12",
+      "question": "Qual è il costo industriale della commessa tecnica?",
+      "answer": "45.740 €, pari a 18.000 € materiali, 18.040 € MOD, 2.500 € collaudo e 7.200 € indiretti.",
+      "detail": "La quadratura dimostra che tutte le componenti industriali dell’esempio sono state considerate una volta. Non include eventuali spese aziendali ulteriori.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "18000+18040+2500+7200=45740\\;\\text{€}",
+          "meaning": "Costo di produzione della commessa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.12, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q061",
+      "topicId": "cdg-c07-t12",
+      "question": "Qual è il margine lordo industriale della commessa tecnica e che cosa non misura?",
+      "answer": "13.260 €, ottenuti sottraendo 45.740 € di costo industriale ai ricavi contrattuali di 59.000 €.",
+      "detail": "Non equivale necessariamente al reddito operativo netto della commessa perché potrebbero esserci altre spese commerciali, amministrative o generali nel perimetro esteso.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "59000-45740=13260\\;\\text{€}",
+          "meaning": "Margine lordo industriale."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.12, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q062",
+      "topicId": "cdg-c07-t13",
+      "question": "Quale percorso seguono i costi nel sistema produttivo dal magazzino al venduto?",
+      "answer": "Materie prime → commesse o lavorazioni in corso (WIP) → prodotti finiti → costo del venduto al momento della vendita.",
+      "detail": "Il prelievo dei materiali trasferisce il costo alla produzione; il completamento lo trasferisce ai prodotti finiti. Solo quando l’output viene venduto emerge il costo del venduto nel conto economico, secondo il sistema contabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.13, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q063",
+      "topicId": "cdg-c07-t13",
+      "question": "Qual è la differenza fra WIP e prodotti finiti?",
+      "answer": "Il WIP comprende lavorazioni non concluse; i prodotti finiti hanno terminato la produzione ma possono essere ancora in magazzino.",
+      "detail": "Una commessa non completata non può essere confusa con un prodotto finito; un prodotto pronto ma invenduto non è automaticamente costo del venduto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.13, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q064",
+      "topicId": "cdg-c07-t13",
+      "question": "Qual è il ruolo della scheda di commessa nei flussi delle rimanenze?",
+      "answer": "Rappresenta il dettaglio analitico dei costi accumulati nel WIP e, al completamento, dei costi attribuiti ai prodotti finiti.",
+      "detail": "Le registrazioni consentono di riconciliare movimenti di materiali, lavoro e quote di indiretti con le consistenze dei prodotti in corso e completati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.13, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q065",
+      "topicId": "cdg-c07-t13",
+      "question": "Perché le commesse pluriennali richiedono cautela rispetto alla semplice scheda gestionale?",
+      "answer": "Perché la rappresentazione di bilancio dei lavori in corso su ordinazione può seguire regole specifiche ulteriori.",
+      "detail": "Il calcolo gestionale misura l’assorbimento di risorse; non definisce da solo le modalità con cui una lavorazione pluriennale va riconosciuta e valorizzata nel bilancio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.13, pagina PDF 74"
+    },
+    {
+      "id": "cdg-c07-q066",
+      "topicId": "cdg-c07-t14",
+      "question": "Che cosa si intende per sottoassorbimento degli indiretti?",
+      "answer": "Si verifica quando i costi indiretti consuntivi superano le quote di indiretti assorbite attraverso i coefficienti applicati.",
+      "detail": "La differenza positiva tra effettivi e assorbiti segnala che il sistema di normal costing ha attribuito meno costo di quanto realmente sostenuto; serve una riconciliazione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Sottoass.=C_{ind,eff}-C_{ind,ass}>0",
+          "meaning": "Condizione di sottoassorbimento."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.14, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q067",
+      "topicId": "cdg-c07-t14",
+      "question": "Che cosa si intende per sovra-assorbimento degli indiretti?",
+      "answer": "Si verifica quando gli indiretti attribuiti alle produzioni superano gli indiretti consuntivi del periodo.",
+      "detail": "La differenza non costituisce nuova ricchezza: è uno scostamento da gestire e spiegare nel sistema contabile e gestionale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire la condizione: se gli assorbiti sono maggiori degli effettivi si parla di sovra-assorbimento.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.14, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q068",
+      "topicId": "cdg-c07-t14",
+      "question": "Quanto è il costo indiretto assorbito con un CdA di 10 €/h e 8.500 ore?",
+      "answer": "85.000 €, ottenuti moltiplicando il tasso applicato per le ore di base effettive.",
+      "detail": "È la quota complessiva allocata alla produzione tramite il coefficiente preventivo, da confrontare con gli indiretti sostenuti a consuntivo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "10\\times8500=85000\\;\\text{€}",
+          "meaning": "Indiretti assorbiti."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.14, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q069",
+      "topicId": "cdg-c07-t14",
+      "question": "Come si interpreta un consuntivo indiretto di 91.000 € a fronte di 85.000 € assorbiti?",
+      "answer": "Si verifica un sottoassorbimento di 6.000 €, perché i costi effettivi sono superiori a quelli attribuiti.",
+      "detail": "La differenza va spiegata considerando volume, prezzi dei fattori, efficienza, capacità e qualità delle rilevazioni; non basta etichettarla come anomalia.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "91000-85000=6000\\;\\text{€}",
+          "meaning": "Sottoassorbimento del caso."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.14, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q070",
+      "topicId": "cdg-c07-t14",
+      "question": "Come si interpreta un consuntivo indiretto di 82.000 € a fronte di 85.000 € assorbiti?",
+      "answer": "Si verifica un sovra-assorbimento di 3.000 €, perché il costo allocato supera quello effettivo.",
+      "detail": "Il valore è uno scostamento da riconciliare con il consuntivo; non cambia automaticamente la quantità fisica prodotta.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "85000-82000=3000\\;\\text{€}",
+          "meaning": "Sovra-assorbimento del caso."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.14, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q071",
+      "topicId": "cdg-c07-t14",
+      "question": "Quali cause dovrebbe analizzare il controllo di gestione quando emergono differenze di assorbimento?",
+      "answer": "Variazioni dei volumi, costi dei fattori, efficienza, capacità inutilizzata, errori di misurazione e rilevanza della differenza.",
+      "detail": "Sotto- e sovra-assorbimento sono segnali diagnostici, non spiegazioni autosufficienti. L’analisi deve individuare fenomeni e responsabilità invece di registrare soltanto un totale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.14, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q072",
+      "topicId": "cdg-c07-t15",
+      "question": "In quali contesti si utilizza normalmente il process costing?",
+      "answer": "Nelle produzioni ripetitive o a flusso continuo, dove tracciare il singolo prodotto non è economicamente conveniente.",
+      "detail": "I costi sono accumulati per reparto e periodo, quindi distribuiti alle unità completate e a quelle ancora in lavorazione; servono le unità equivalenti per considerare diversi gradi di avanzamento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.15, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q073",
+      "topicId": "cdg-c07-t15",
+      "question": "Quali gruppi di costo deve distinguere un rapporto di process costing?",
+      "answer": "Costi già incorporati nel WIP iniziale, costi sostenuti nel periodo e costi da trasferire o lasciare nelle rimanenze finali.",
+      "detail": "Nel reparto possono inoltre arrivare costi trasferiti dal precedente. La corretta distinzione rende verificabile sia il flusso economico sia quello quantitativo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.15, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q074",
+      "topicId": "cdg-c07-t15",
+      "question": "Perché 100 prodotti finiti e 100 prodotti al 20% non formano 200 unità equivalenti?",
+      "answer": "Perché le seconde 100 unità incorporano solo una frazione del lavoro relativo alla risorsa considerata.",
+      "detail": "Per un fattore consumato progressivamente al 20%, la loro produzione equivalente è 20 unità; sommata alle 100 finite porta a 120 UEP di quel fattore, non a 200.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.15, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q075",
+      "topicId": "cdg-c07-t15",
+      "question": "Quali indicatori di reparto può supportare un rapporto di process costing?",
+      "answer": "Rendimento, scarti, percentuali di completamento, quantità trasferite e costi accumulati o attribuiti.",
+      "detail": "Oltre a fornire un costo unitario medio, il report permette al management di analizzare efficienza, qualità e flussi tra fasi produttive.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.15, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q076",
+      "topicId": "cdg-c07-t15",
+      "question": "Perché occorre determinare separatamente il lavoro svolto nei diversi reparti?",
+      "answer": "Ogni fase può ricevere prodotti parzialmente lavorati e aggiungere fattori con gradi di consumo differenti.",
+      "detail": "Il costo trasferito in entrata non coincide con i nuovi materiali o la nuova conversione del reparto; la separazione è necessaria per valorizzare correttamente il WIP.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.15, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q077",
+      "topicId": "cdg-c07-t16",
+      "question": "Qual è la relazione di quadratura fisica del flusso produttivo?",
+      "answer": "Rimanenze iniziali più unità avviate devono uguagliare unità completate più rimanenze finali più eventuali scarti.",
+      "detail": "La relazione va verificata prima di passare ai costi e alle UEP. Vale per il flusso fisico di reparto, eventualmente specificando perdite normali e anomale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "RI+Avviate=Completate+RF+Scarti",
+          "meaning": "Quadratura delle unità fisiche."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.16, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q078",
+      "topicId": "cdg-c07-t16",
+      "question": "Perché la quadratura fisica precede sempre quella economica?",
+      "answer": "Perché occorre conoscere e riconciliare le quantità transitate nel reparto prima di attribuire a esse dei costi.",
+      "detail": "Se mancano unità o sono contate due volte, le UEP e il valore delle rimanenze risulteranno inattendibili anche con coefficienti formalmente corretti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.16, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q079",
+      "topicId": "cdg-c07-t16",
+      "question": "Come si concilia il flusso Arcari con 50 RI, 290 avviate, 300 completate, 30 RF e 10 scarti?",
+      "answer": "Le unità disponibili sono 340 e quelle giustificate sono 300+30+10=340.",
+      "detail": "L’identità riguarda il numero di pezzi, senza usare ancora percentuali di completamento né costi per materiali, MOD o CGP.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "50+290=300+30+10=340",
+          "meaning": "Controllo del movimento fisico."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.16, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q080",
+      "topicId": "cdg-c07-t16",
+      "question": "Che cosa rappresentano le unità avviate in un reparto successivo?",
+      "answer": "Possono essere le unità ricevute dal reparto precedente, anziché prodotti nati direttamente nel reparto corrente.",
+      "detail": "Il passaggio tra reparti deve essere documentato; le perdite che si verificano in una fase non possono essere ignorate nel saldo dei movimenti fisici.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.16, pagina PDF 75"
+    },
+    {
+      "id": "cdg-c07-q081",
+      "topicId": "cdg-c07-t17",
+      "question": "Che cos’è un’unità equivalente di produzione (UEP)?",
+      "answer": "La quantità di una specifica risorsa incorporata in unità incomplete, espressa come numero equivalente di unità pienamente completate.",
+      "detail": "È una misura distinta per fattore: una stessa unità fisica può essere completamente caricata di materiali e parzialmente lavorata per MOD o costi generali.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "UEP_f=Q_{fisica}\\times \\%_{comp,f}",
+          "meaning": "Equivalente produttivo per il fattore f."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.17, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q082",
+      "topicId": "cdg-c07-t17",
+      "question": "Quante UEP di MOD rappresentano 80 unità avanzate al 25%?",
+      "answer": "20 UEP di manodopera diretta, perché le 80 unità incorporano un quarto del lavoro completo.",
+      "detail": "Il risultato non indica 20 unità fisiche: le unità fisiche restano 80, ma il lavoro equivalente della MOD corrisponde a quello di 20 prodotti finiti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "80\\times0{,}25=20\\;UEP_{MOD}",
+          "meaning": "Conversione in unità equivalenti."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.17, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q083",
+      "topicId": "cdg-c07-t17",
+      "question": "Perché quelle stesse 80 unità possono valere 80 UEP di materiali?",
+      "answer": "Se tutti i materiali sono introdotti all’inizio, le unità incomplete possono aver già assorbito il 100% della risorsa materiale.",
+      "detail": "L’avanzamento della MOD non determina automaticamente quello dei materiali. Per questo si costruiscono colonne distinte di UEP per MD, MOD e altre risorse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.17, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q084",
+      "topicId": "cdg-c07-t17",
+      "question": "Da che cosa deve derivare il grado di completamento di un fattore?",
+      "answer": "Dalla frazione reale o stimata attendibilmente della risorsa consumata, non dai soli giorni trascorsi o dalla posizione fisica del pezzo.",
+      "detail": "La tecnologia del processo determina quando e quanto sono introdotti materiali, lavoro e costi generali. Percentuali incongrue producono costi di prodotto e WIP distorti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.17, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q085",
+      "topicId": "cdg-c07-t17",
+      "question": "Perché non si deve usare una sola percentuale di completamento per tutti i fattori?",
+      "answer": "Perché materiali, manodopera e costi generali possono essere consumati in momenti e proporzioni diverse.",
+      "detail": "Una materia immessa a monte può essere al 100% mentre la trasformazione è al 40%; usare il 40% su entrambi sottovaluterebbe l’utilizzo di materiali e altererebbe il costo per UEP.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.17, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q086",
+      "topicId": "cdg-c07-t18",
+      "question": "Quali sono i principali profili temporali di immissione dei materiali nel processo?",
+      "answer": "Immissione all’inizio, introduzione in uno specifico stadio intermedio oppure consumo progressivo durante la lavorazione.",
+      "detail": "Il profilo scelto determina le percentuali di MD da attribuire a prodotti incompleti, RI, RF e scarti: non è corretto assumerle uguali senza conoscere il processo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.18, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q087",
+      "topicId": "cdg-c07-t18",
+      "question": "Come si valorizza l’avanzamento di una risorsa introdotta tutta in un punto preciso?",
+      "answer": "Per quella risorsa un pezzo che ha superato il punto di immissione può essere al 100%, uno che non lo ha raggiunto allo 0%.",
+      "detail": "La percentuale dipende dall’effettivo assorbimento: una lavorazione globalmente incompleta può aver già ricevuto completamente un componente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.18, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q088",
+      "topicId": "cdg-c07-t18",
+      "question": "Perché MOD e costi generali di produzione possono avere gradi differenti dalle materie?",
+      "answer": "Perché la conversione è spesso progressiva, mentre le materie possono essere immesse immediatamente o in fasi discrete.",
+      "detail": "Le schede Arcari distinguono esplicitamente MD, MOD e CGP e attribuiscono percentuali proprie a rimanenze iniziali, finali e scarti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.18, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q089",
+      "topicId": "cdg-c07-t18",
+      "question": "Che cosa bisogna verificare prima di assumere la stessa percentuale per MOD e CGP?",
+      "answer": "Che le due risorse siano effettivamente consumate in modo omogeneo durante la conversione.",
+      "detail": "Il manuale offre esercizi nei quali le percentuali di MOD e CGP coincidono e altri nei quali sono diverse. L’uguaglianza, dunque, è una caratteristica del caso, non una regola universale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.18, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q090",
+      "topicId": "cdg-c07-t19",
+      "question": "Quale principio guida il metodo della media ponderata (MEP)?",
+      "answer": "I costi già presenti nelle rimanenze iniziali si sommano a quelli del periodo e il totale viene distribuito sulle UEP complessive.",
+      "detail": "Il MEP non isola il lavoro corrente sul WIP iniziale: media implicitamente il costo dei periodi precedenti con il costo corrente. Le unità completate vengono considerate interamente ai fini delle UEP.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.19, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q091",
+      "topicId": "cdg-c07-t19",
+      "question": "Come si calcolano le UEP con media ponderata quando gli scarti sono valorizzati separatamente?",
+      "answer": "Per ogni fattore: completate più RF moltiplicate per il loro completamento più scarti moltiplicati per il loro avanzamento.",
+      "detail": "Le RI non vengono sottratte dal numero dei completati: sono già incorporate nel flusso fisico e nel numeratore economico complessivo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "UEP_{MEP,f}=Comp+RF\\alpha_{RF,f}+Scarti\\alpha_{SC,f}",
+          "meaning": "Scarti valorizzati come categoria distinta."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.19, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q092",
+      "topicId": "cdg-c07-t19",
+      "question": "Qual è il numeratore corretto del costo per UEP con MEP?",
+      "answer": "La somma del costo incorporato nelle rimanenze iniziali e del costo sostenuto nel periodo, separatamente per ogni fattore.",
+      "detail": "Includere i costi preesistenti è essenziale: il MEP costruisce un costo medio del lavoro complessivo riconosciuto. Usare solo costi correnti trasformerebbe il criterio.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "c_{MEP,f}=(C_{RI,f}+C_{periodo,f})/UEP_{MEP,f}",
+          "meaning": "Costo medio ponderato per UEP."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.19, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q093",
+      "topicId": "cdg-c07-t19",
+      "question": "Come viene valorizzata la produzione completata con MEP?",
+      "answer": "Moltiplicando il numero di unità completate per la somma dei costi per UEP di tutti i fattori interamente incorporati.",
+      "detail": "Il costo equivalente pieno del reparto somma MD, MOD e CGP; tutti sono riconosciuti al 100% per le unità che hanno completato la fase.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.19, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q094",
+      "topicId": "cdg-c07-t19",
+      "question": "Come si valuta la rimanenza finale nel MEP?",
+      "answer": "Sommando, per ogni categoria di costo, le sue UEP nelle RF moltiplicate per il costo medio della stessa categoria.",
+      "detail": "L’uso di percentuali distinte fa sì che il WIP finale abbia un costo inferiore a quello di unità tutte completate quando il lavoro non è finito.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Valore\\;RF=\\sum_f RF\\alpha_{RF,f}c_{MEP,f}",
+          "meaning": "Valorizzazione delle rimanenze finali."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.19, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q095",
+      "topicId": "cdg-c07-t19",
+      "question": "In che modo le perdite normali possono cambiare il metodo MEP rispetto agli scarti separati?",
+      "answer": "Se la perdita normale è incorporata nel costo delle unità buone, non viene valorizzata con la stessa procedura degli scarti esposti a parte.",
+      "detail": "La convenzione di esercizio va dichiarata prima dei conti: i casi Arcari con scarti distinti non sono intercambiabili con un modello che ripartisce i costi delle perdite normali sui prodotti buoni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.19, pagina PDF 76"
+    },
+    {
+      "id": "cdg-c07-q096",
+      "topicId": "cdg-c07-t20",
+      "question": "Qual è la situazione fisica nel caso Arcari 4.5–4.6 di media ponderata?",
+      "answer": "Il reparto ha 100 unità completate, 20 unità in rimanenza finale e 20 unità scartate.",
+      "detail": "Le RF sono al 100% per MD, 70% per MOD e 90% per CGP; gli scarti al 100% per MD, 40% per MOD e 80% per CGP.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.20, pagina PDF 77"
+    },
+    {
+      "id": "cdg-c07-q097",
+      "topicId": "cdg-c07-t20",
+      "question": "Quante sono le UEP MD nel caso Arcari MEP con 100 completate, 20 RF e 20 scarti?",
+      "answer": "140 UEP di materiali diretti: 100 completate, 20 RF al 100% e 20 scarti al 100%.",
+      "detail": "Tutti e tre i gruppi hanno assorbito completamente i materiali secondo la traccia; lo stato della MOD e dei CGP non modifica le UEP MD.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "100+20+20=140\\;UEP_{MD}",
+          "meaning": "UEP materiali."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.20, pagina PDF 77"
+    },
+    {
+      "id": "cdg-c07-q098",
+      "topicId": "cdg-c07-t20",
+      "question": "Come si determinano le UEP MOD del caso Arcari 4.5–4.6?",
+      "answer": "122 UEP MOD, ottenute come 100 completate più 14 equivalenti delle RF e 8 degli scarti.",
+      "detail": "Le percentuali differiscono fra gruppi: RF al 70% e scarti al 40%. Applicare il 100% della MD anche alla MOD sarebbe errato.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "100+20\\times0{,}70+20\\times0{,}40=122",
+          "meaning": "UEP manodopera diretta."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.20, pagina PDF 77"
+    },
+    {
+      "id": "cdg-c07-q099",
+      "topicId": "cdg-c07-t20",
+      "question": "Come si determinano le UEP CGP del caso Arcari MEP?",
+      "answer": "134 UEP CGP, costituite da 100 completate, 18 equivalenti delle RF e 16 degli scarti.",
+      "detail": "Il grado di completamento è 90% per le rimanenze finali e 80% per gli scarti. Il risultato non coincide con le 122 UEP della MOD.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "100+20\\times0{,}90+20\\times0{,}80=134",
+          "meaning": "UEP costi generali di produzione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.20, pagina PDF 77"
+    },
+    {
+      "id": "cdg-c07-q100",
+      "topicId": "cdg-c07-t20",
+      "question": "Quali costi totali devono essere attribuiti nel caso MEP Arcari?",
+      "answer": "2.800 € MD, 3.660 € MOD e 4.020 € CGP, per un totale di 10.480 €.",
+      "detail": "Questi importi comprendono anche i costi delle RI: MD 1.200+1.600, MOD 500+3.160 e CGP 700+3.320. È la caratteristica del metodo MEP.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.20, pagina PDF 77"
+    },
+    {
+      "id": "cdg-c07-q101",
+      "topicId": "cdg-c07-t20",
+      "question": "Quali sono i costi medi per UEP nel caso Arcari MEP?",
+      "answer": "20 €/UEP MD, 30 €/UEP MOD e 30 €/UEP CGP: costo pieno equivalente 80 €.",
+      "detail": "I tassi sono dati rispettivamente da 2.800/140, 3.660/122 e 4.020/134. Ogni gruppo di unità viene poi valutato in base al proprio stato di completamento.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "2800/140=20",
+          "meaning": "MD per UEP"
+        },
+        {
+          "latex": "3660/122=30",
+          "meaning": "MOD per UEP"
+        },
+        {
+          "latex": "4020/134=30",
+          "meaning": "CGP per UEP"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.20, pagina PDF 77"
+    },
+    {
+      "id": "cdg-c07-q102",
+      "topicId": "cdg-c07-t20",
+      "question": "Come si ripartisce il totale di 10.480 € fra completati, RF e scarti nel caso Arcari MEP?",
+      "answer": "8.000 € ai 100 completati, 1.360 € alle 20 RF e 1.120 € ai 20 scarti distintamente valorizzati.",
+      "detail": "Le RF valgono 20×20+14×30+18×30; gli scarti 20×20+8×30+16×30. La somma 8.000+1.360+1.120 quadra tutti i costi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "8000+1360+1120=10480\\;\\text{€}",
+          "meaning": "Verifica economica del caso MEP."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.20, pagina PDF 77"
+    },
+    {
+      "id": "cdg-c07-q103",
+      "topicId": "cdg-c07-t21",
+      "question": "Qual è il principio contabile-produttivo del metodo FIFO nel process costing?",
+      "answer": "Si assume che le unità già in lavorazione all’inizio vengano completate per prime, distinguendo lavoro passato e lavoro del periodo.",
+      "detail": "Il metodo conserva il valore storico delle RI, considera soltanto il lavoro ancora necessario per finirle e misura separatamente il costo delle nuove unità avviate e completate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.21, pagina PDF 77"
+    },
+    {
+      "id": "cdg-c07-q104",
+      "topicId": "cdg-c07-t21",
+      "question": "Quali categorie formano le unità equivalenti di periodo nel FIFO?",
+      "answer": "Lavoro residuo sulle RI completate, unità avviate e finite, frazione delle RF ed eventuali scarti separati.",
+      "detail": "Le percentuali sono calcolate per fattore; nella formula compatta del manuale si assume che tutte le RI iniziali siano effettivamente completate nel periodo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.21, pagina PDF 77"
+    },
+    {
+      "id": "cdg-c07-q105",
+      "topicId": "cdg-c07-t21",
+      "question": "Qual è la formula delle UEP FIFO quando tutte le RI sono completate?",
+      "answer": "Per ciascun fattore: RI × quota ancora da svolgere + unità completate meno RI + RF equivalenti + scarti equivalenti.",
+      "detail": "La formula compatta richiede flussi semplici e scarti valorizzati a parte. Se le condizioni non valgono bisogna costruire un prospetto per gruppi di unità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "UEP_{FIFO,f}=RI(1-\\alpha_{RI,f})+(Comp-RI)+RF\\alpha_{RF,f}+SC\\alpha_{SC,f}",
+          "meaning": "UEP correnti per fattore nel caso compatto."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.21, pagina PDF 77"
+    },
+    {
+      "id": "cdg-c07-q106",
+      "topicId": "cdg-c07-t21",
+      "question": "Quali costi si usano nel numeratore del costo per UEP FIFO?",
+      "answer": "Esclusivamente i costi sostenuti nel periodo corrente per il fattore considerato.",
+      "detail": "I costi storici delle rimanenze iniziali non vengono mescolati ai costi correnti, ma si aggiungono separatamente al costo per completare le unità iniziali.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "c_{FIFO,f}=C_{periodo,f}/UEP_{FIFO,f}",
+          "meaning": "Costo corrente per unità equivalente."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.21, pagina PDF 77"
+    },
+    {
+      "id": "cdg-c07-q107",
+      "topicId": "cdg-c07-t21",
+      "question": "Come si valorizzano nel FIFO le rimanenze iniziali completate?",
+      "answer": "Al loro valore storico iniziale si somma il costo del lavoro residuo effettuato nel periodo corrente.",
+      "detail": "Per un fattore già presente al 100% nelle RI non va aggiunto di nuovo il materiale; per la conversione ancora incompleta si conteggiano solo le UEP mancanti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.21, pagina PDF 77"
+    },
+    {
+      "id": "cdg-c07-q108",
+      "topicId": "cdg-c07-t21",
+      "question": "Qual è la differenza fondamentale fra FIFO e MEP riguardo ai costi delle RI?",
+      "answer": "Il MEP li media con i costi del periodo; il FIFO mantiene distinto il costo storico delle RI dal nuovo costo sostenuto per completarle.",
+      "detail": "Se prezzi o efficienza variano fra periodi, i due sistemi possono attribuire quote diverse a prodotti trasferiti e WIP finale pur riconciliando lo stesso costo totale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.21, pagina PDF 77"
+    },
+    {
+      "id": "cdg-c07-q109",
+      "topicId": "cdg-c07-t22",
+      "question": "Quali sono i flussi fisici nel caso Arcari 4.3–4.4 con FIFO e scarti?",
+      "answer": "50 RI, 290 unità avviate, 300 completate, 30 RF e 10 scarti; il flusso totale è 340 unità.",
+      "detail": "Le RI sono MD 100%, MOD 30%, CGP 40%; RF MD 100%, MOD e CGP 90%; scarti MD 100%, MOD e CGP 80%.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "50+290=300+30+10=340",
+          "meaning": "Quadratura fisica del caso."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.22, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q110",
+      "topicId": "cdg-c07-t22",
+      "question": "Perché le UEP FIFO MD del caso Arcari sono 290 e non 340?",
+      "answer": "Perché le 50 RI avevano già ricevuto il 100% dei materiali; il periodo aggiunge MD a 250 nuove unità finite, 30 RF e 10 scarti.",
+      "detail": "La parte materiale preesistente nel WIP iniziale è esclusa dalle UEP del periodo. Le nuove unità finite sono 300−50=250.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "250+30+10=290\\;UEP_{MD}",
+          "meaning": "UEP materiali del periodo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.22, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q111",
+      "topicId": "cdg-c07-t22",
+      "question": "Come si ottengono le 320 UEP MOD FIFO del caso Arcari?",
+      "answer": "35 equivalenti per completare le RI, 250 per le nuove completate, 27 per le RF e 8 per gli scarti: totale 320.",
+      "detail": "La MOD delle RI era al 30%, quindi manca il 70%; RF al 90% e scarti all’80%. I gruppi e le percentuali vanno tenuti separati.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "50\\times0{,}70+250+30\\times0{,}90+10\\times0{,}80=320",
+          "meaning": "UEP MOD del periodo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.22, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q112",
+      "topicId": "cdg-c07-t22",
+      "question": "Come si ottengono le 315 UEP CGP FIFO nel caso Arcari?",
+      "answer": "30 equivalenti per completare le RI, 250 nuove completate, 27 RF e 8 scarti: 315 UEP.",
+      "detail": "Le RI erano già al 40% per CGP, dunque il completamento è il 60%; RF e scarti assumono le stesse percentuali indicate per MOD.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "50\\times0{,}60+250+27+8=315",
+          "meaning": "UEP CGP del periodo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.22, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q113",
+      "topicId": "cdg-c07-t22",
+      "question": "Quali sono i costi per UEP nel caso FIFO Arcari 4.3–4.4?",
+      "answer": "38 €/UEP MD, 30 €/UEP MOD e 32 €/UEP CGP, somma equivalente di 100 €/unità pienamente lavorata.",
+      "detail": "Si usano solo i costi di periodo: MD 11.020/290, MOD 9.600/320, CGP 10.080/315. I 5.500 € delle RI sono esclusi dai tre numeratori.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "11020/290=38",
+          "meaning": "MD del periodo"
+        },
+        {
+          "latex": "9600/320=30",
+          "meaning": "MOD del periodo"
+        },
+        {
+          "latex": "10080/315=32",
+          "meaning": "CGP del periodo"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.22, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q114",
+      "topicId": "cdg-c07-t22",
+      "question": "Quanto costano le 50 rimanenze iniziali completate nel caso FIFO Arcari?",
+      "answer": "7.510 €: 5.500 € di costo già incorporato nelle RI più 1.050 € di nuova MOD e 960 € di nuovi CGP.",
+      "detail": "I materiali delle RI erano completi, quindi non occorrono costi MD aggiuntivi. La distinzione fra valore storico e costo di completamento è essenziale nel FIFO.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "5500+35\\times30+30\\times32=7510\\;\\text{€}",
+          "meaning": "Valore delle RI finite."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.22, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q115",
+      "topicId": "cdg-c07-t22",
+      "question": "Qual è la quadratura finale economica nel caso FIFO Arcari con scarti?",
+      "answer": "36.200 € di costi disponibili = 32.510 € trasferiti + 2.814 € RF + 876 € scarti.",
+      "detail": "I costi disponibili comprendono 5.500 € iniziali e 30.700 € del periodo. I trasferiti sono 7.510 € delle RI completate più 25.000 € delle 250 nuove unità completate.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "5500+30700=32510+2814+876=36200",
+          "meaning": "Quadratura costi del processo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.22, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q116",
+      "topicId": "cdg-c07-t23",
+      "question": "Qual è la base quantitativa del confronto MEP–FIFO del manuale?",
+      "answer": "100 RI con MD al 100% e conversione al 40%, 400 avviate, 420 completate e 80 RF con MD 100% e conversione 50%.",
+      "detail": "Non sono previsti scarti. Le RI incorporano costi di 1.000 € MD e 800 € conversione; il periodo aggiunge 4.800 € MD e 6.400 € conversione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.23, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q117",
+      "topicId": "cdg-c07-t23",
+      "question": "Qual è il costo totale da ripartire in entrambi i metodi nel caso di confronto?",
+      "answer": "13.000 €, somma di 1.800 € presenti nelle RI e 11.200 € sostenuti nel periodo.",
+      "detail": "Il metodo di valorizzazione cambia la ripartizione fra unità finite e RF, non il totale dei costi effettivamente incorsi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "1000+800+4800+6400=13000\\;\\text{€}",
+          "meaning": "Costo totale comune a FIFO e MEP."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.23, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q118",
+      "topicId": "cdg-c07-t23",
+      "question": "Quali sono le UEP MEP del caso comparativo?",
+      "answer": "500 UEP materiali e 460 UEP conversione.",
+      "detail": "Le 420 unità completate contano interamente per entrambi i fattori; le 80 RF assorbono il 100% dei materiali e il 50% della conversione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "420+80=500",
+          "meaning": "UEP MEP dei materiali"
+        },
+        {
+          "latex": "420+80\\times0{,}50=460",
+          "meaning": "UEP MEP conversione"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.23, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q119",
+      "topicId": "cdg-c07-t23",
+      "question": "Quali sono i costi per UEP MEP nel caso comparativo?",
+      "answer": "11,60 € per materiali e circa 15,6521739 € per conversione.",
+      "detail": "I costi MEP comprendono RI e periodo: materiali (1.000+4.800)/500; conversione (800+6.400)/460. Il costo equivalente completo somma i due coefficienti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "5800/500=11{,}60",
+          "meaning": "MD/UEP MEP"
+        },
+        {
+          "latex": "7200/460\\approx15{,}6521739",
+          "meaning": "Conversione/UEP MEP"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.23, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q120",
+      "topicId": "cdg-c07-t23",
+      "question": "Come vengono distribuiti i 13.000 € con MEP nel confronto?",
+      "answer": "11.445,91 € alle 420 unità completate e 1.554,09 € alle 80 RF.",
+      "detail": "Le RF comprendono 80 UEP MD e 40 di conversione; il valore completato si ricava dal costo equivalente pieno per 420. I due valori sommano a 13.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "11445{,}91+1554{,}09=13000",
+          "meaning": "Quadratura MEP del confronto."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.23, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q121",
+      "topicId": "cdg-c07-t23",
+      "question": "Quali sono le UEP FIFO del periodo nel caso comparativo?",
+      "answer": "400 UEP materiali e 420 UEP conversione.",
+      "detail": "Le 100 RI hanno MD completo e richiedono ancora il 60% della conversione; le avviate e completate sono 420−100=320, oltre alle 80 RF al 100% MD e 50% conversione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "320+80=400",
+          "meaning": "UEP FIFO MD"
+        },
+        {
+          "latex": "100\\times0{,}60+320+80\\times0{,}50=420",
+          "meaning": "UEP FIFO conversione"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.23, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q122",
+      "topicId": "cdg-c07-t23",
+      "question": "Quali sono i costi per UEP FIFO nel confronto?",
+      "answer": "12 € per materiali e circa 15,2380952 € per conversione, usando soltanto i costi del periodo.",
+      "detail": "I 4.800 € di MD si dividono per 400 UEP; i 6.400 € di conversione per 420 UEP. I 1.800 € preesistenti restano nel valore delle RI, non nel tasso.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "4800/400=12",
+          "meaning": "MD/UEP FIFO"
+        },
+        {
+          "latex": "6400/420\\approx15{,}2380952",
+          "meaning": "Conversione/UEP FIFO"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.23, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q123",
+      "topicId": "cdg-c07-t23",
+      "question": "Come vengono distribuiti i 13.000 € con FIFO nel confronto?",
+      "answer": "11.430,48 € ai completati e 1.569,52 € alle RF, per un totale di 13.000 €.",
+      "detail": "Il completamento delle RI aggiunge circa 914,29 € a 1.800 € iniziali; le 320 nuove finite valgono circa 8.716,19 €. Il WIP finale conserva MD interi e metà conversione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "11430{,}48+1569{,}52=13000",
+          "meaning": "Quadratura FIFO del confronto."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.23, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q124",
+      "topicId": "cdg-c07-t23",
+      "question": "Perché MEP e FIFO del confronto attribuiscono importi diversi pur avendo gli stessi costi?",
+      "answer": "Perché il MEP miscela costi storici e correnti, mentre il FIFO distingue lavoro iniziale e lavoro svolto nel periodo.",
+      "detail": "Le differenze (completati 11.445,91 € vs 11.430,48 €) sono effetti di convenzione di valorizzazione; non indicano una diversa spesa reale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.23, pagina PDF 78"
+    },
+    {
+      "id": "cdg-c07-q125",
+      "topicId": "cdg-c07-t24",
+      "question": "Che cosa rappresenta il transferred-in cost nei reparti successivi?",
+      "answer": "Il costo già accumulato nel reparto precedente che accompagna le unità fisiche trasferite alla nuova fase.",
+      "detail": "Va mantenuto come categoria di costo distinta dalle nuove materie, MOD e spese generali del reparto ricevente, per preservare la tracciabilità e la quadratura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.24, pagina PDF 79"
+    },
+    {
+      "id": "cdg-c07-q126",
+      "topicId": "cdg-c07-t24",
+      "question": "Come viene considerato normalmente il costo trasferito in entrata rispetto alle unità arrivate?",
+      "answer": "È generalmente già incorporato integralmente nelle unità che entrano nel reparto successivo.",
+      "detail": "Le lavorazioni e i materiali aggiunti nella nuova fase possono invece avere percentuali differenti di completamento. In presenza di WIP servono UEP separate per costo trasferito e nuovi fattori.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.24, pagina PDF 79"
+    },
+    {
+      "id": "cdg-c07-q127",
+      "topicId": "cdg-c07-t24",
+      "question": "Come si calcola il costo unitario finale del caso con 500 unità passate dal reparto A al B?",
+      "answer": "60 € per unità: il reparto A trasferisce 20.000 € e B aggiunge 4.000 € MD, 3.000 € MOD e 3.000 € CGP.",
+      "detail": "Il calcolo diretto vale perché tutte le 500 unità vengono completate nel reparto B, senza scarti né rimanenze; con WIP la valorizzazione richiederebbe UEP distinte.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "(20000+4000+3000+3000)/500=60",
+          "meaning": "Costo finale per unità."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.24, pagina PDF 79"
+    },
+    {
+      "id": "cdg-c07-q128",
+      "topicId": "cdg-c07-t24",
+      "question": "Perché un trasferimento interno tra reparti non costituisce necessariamente costo del venduto?",
+      "answer": "Perché i beni possono essere ancora in lavorazione o immagazzinati come prodotti finiti, senza essere stati venduti.",
+      "detail": "Il costo del trasferimento aumenta il valore delle unità nel processo successivo. La rilevazione del costo del venduto avviene invece con la vendita, secondo i criteri applicabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.24, pagina PDF 79"
+    },
+    {
+      "id": "cdg-c07-q129",
+      "topicId": "cdg-c07-t24",
+      "question": "Quale problema sorge nella valutazione del WIP dei reparti successivi?",
+      "answer": "Bisogna distinguere il completamento del costo entrato dal reparto precedente dalle percentuali di materiali e conversione aggiunte.",
+      "detail": "Una percentuale unica cancellerebbe la diversa storia produttiva dei fattori e potrebbe far attribuire costi non ancora sostenuti o omettere costi già incorporati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.24, pagina PDF 79"
+    },
+    {
+      "id": "cdg-c07-q130",
+      "topicId": "cdg-c07-t25",
+      "question": "Che cosa distingue gli scarti normali da quelli anomali?",
+      "answer": "Gli scarti normali sono perdite attese nel processo; quelli anomali eccedono l’andamento fisiologico per guasti, errori o difetti straordinari.",
+      "detail": "La distinzione influisce sulla valutazione delle prestazioni e sul trattamento dei costi. Sfridi di taglio ed evaporazione possono essere fisiologici, mentre una perdita eccezionale va isolata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.25, pagina PDF 79"
+    },
+    {
+      "id": "cdg-c07-q131",
+      "topicId": "cdg-c07-t25",
+      "question": "Come può essere trattato il costo di una perdita normale?",
+      "answer": "Può essere incorporato nel costo delle unità buone secondo la convenzione di processo adottata.",
+      "detail": "Non è sempre una categoria valorizzata separatamente come negli esercizi Arcari con scarti distinti. Occorre dichiarare la regola del caso e considerare eventuale valore recuperabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.25, pagina PDF 79"
+    },
+    {
+      "id": "cdg-c07-q132",
+      "topicId": "cdg-c07-t25",
+      "question": "Come viene considerato in genere il costo di una perdita anomala?",
+      "answer": "Viene evidenziato separatamente dal costo ordinario delle unità buone, nel sistema analitico utilizzato.",
+      "detail": "L’isolamento permette di non confondere inefficienze eccezionali con il consumo fisiologico del processo. Il valore attribuito dipende dal punto di scarto e dalle regole del problema.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.25, pagina PDF 79"
+    },
+    {
+      "id": "cdg-c07-q133",
+      "topicId": "cdg-c07-t25",
+      "question": "Perché gli scarti delle tracce Arcari 4.3–4.6 non vanno trattati automaticamente come perdite normali assorbite?",
+      "answer": "Perché le soluzioni editoriali attribuiscono una voce separata agli scarti, valorizzandola secondo le UEP MD, MOD e CGP.",
+      "detail": "Cambiare convenzione significherebbe modificare la ripartizione rispetto alla traccia e alla soluzione del corso. Prima di calcolare occorre seguire le indicazioni dell’esercizio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.25, pagina PDF 79"
+    },
+    {
+      "id": "cdg-c07-q134",
+      "topicId": "cdg-c07-t25",
+      "question": "Quanto costa ogni kg buono con 1.000 kg iniziali, 10% di scarto normale e costo totale 9.000 €?",
+      "answer": "10 €/kg buono, perché la produzione attesa vendibile è 900 kg e la perdita normale non possiede valore recuperabile.",
+      "detail": "Nel semplice esempio senza WIP il costo totale è distribuito sui 900 kg buoni attesi, comprendendo implicitamente il costo delle perdite fisiologiche.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "9000/(1000-100)=10\\;\\text{€/kg}",
+          "meaning": "Costo per unità buona attesa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.25, pagina PDF 79"
+    },
+    {
+      "id": "cdg-c07-q135",
+      "topicId": "cdg-c07-t25",
+      "question": "Come viene distinto lo scarto anomalo se l’output buono effettivo scende a 880 kg?",
+      "answer": "Lo scarto effettivo è 120 kg, di cui 20 kg oltre i 100 normali; al costo standard del caso, l’anomalia vale 200 €.",
+      "detail": "Una possibile valorizzazione analitica del manuale assegna 8.800 € agli 880 kg buoni e 200 € ai 20 kg anomali; il totale rimane 9.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "20\\times10=200\\;\\text{€}",
+          "meaning": "Valore della perdita anomala nell’esempio."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.25, pagina PDF 79"
+    },
+    {
+      "id": "cdg-c07-q136",
+      "topicId": "cdg-c07-t26",
+      "question": "Che cosa sono i costi congiunti di produzione?",
+      "answer": "Sono costi sostenuti da un processo comune che genera simultaneamente più prodotti prima che tali prodotti siano separabili.",
+      "detail": "Non esiste un tracciamento fisico univoco di ogni quota al singolo output prima del punto di separazione; l’attribuzione ai prodotti richiede criteri convenzionali di riparto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.26, pagina PDF 80"
+    },
+    {
+      "id": "cdg-c07-q137",
+      "topicId": "cdg-c07-t26",
+      "question": "Che cosa indica il punto di split-off?",
+      "answer": "È la fase del processo in cui gli output generati congiuntamente diventano distinguibili e possono seguire percorsi separati.",
+      "detail": "Prima dello split-off i costi sono condivisi. Dopo il punto di separazione i prodotti possono essere venduti direttamente o ricevere lavorazioni aggiuntive specifiche e tracciabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.26, pagina PDF 80"
+    },
+    {
+      "id": "cdg-c07-q138",
+      "topicId": "cdg-c07-t26",
+      "question": "Qual è la differenza fra prodotti congiunti in senso stretto e sottoprodotti?",
+      "answer": "I prodotti congiunti hanno rilevanza economica comparabile; il sottoprodotto è economicamente secondario rispetto all’output principale.",
+      "detail": "La distinzione non dipende soltanto dal numero dei prodotti, ma dall’importanza economica dei loro valori. I sottoprodotti possono richiedere costi specifici dopo la separazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.26, pagina PDF 80"
+    },
+    {
+      "id": "cdg-c07-q139",
+      "topicId": "cdg-c07-t26",
+      "question": "Perché i costi congiunti prima dello split-off non sono causalmente attribuibili a un unico output?",
+      "answer": "Perché il processo comune produce simultaneamente più beni, senza poter associare in modo univoco ciascuna risorsa a un solo prodotto.",
+      "detail": "I criteri di riparto servono alla valorizzazione e all’analisi dei margini per prodotto, ma non misurano necessariamente quanto sarebbe costato produrre il singolo output separatamente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.26, pagina PDF 80"
+    },
+    {
+      "id": "cdg-c07-q140",
+      "topicId": "cdg-c07-t26",
+      "question": "Quale differenza esiste tra costo congiunto e costo specifico successivo?",
+      "answer": "Il primo matura nel processo indiviso; il secondo è sostenuto per una lavorazione identificabile di un prodotto dopo lo split-off.",
+      "detail": "Il costo specifico successivo può essere rilevante nelle decisioni di ulteriore lavorazione, mentre il costo congiunto precedente normalmente non varia tra tali alternative.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.26, pagina PDF 80"
+    },
+    {
+      "id": "cdg-c07-q141",
+      "topicId": "cdg-c07-t27",
+      "question": "In che cosa consiste il metodo delle quantità per ripartire i costi congiunti?",
+      "answer": "Attribuisce il costo comune in proporzione alla quantità fisica dei diversi prodotti ottenuti.",
+      "detail": "È semplice con unità comparabili, per esempio kg o litri. Può però distorcere la lettura dei costi quando gli output hanno valori commerciali molto differenti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{cong,i}=C_{cong}\\frac{Q_i}{\\sum_j Q_j}",
+          "meaning": "Riparto in base alle quantità."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.27, pagina PDF 80"
+    },
+    {
+      "id": "cdg-c07-q142",
+      "topicId": "cdg-c07-t27",
+      "question": "In che cosa consiste il metodo del valore di vendita dei prodotti congiunti?",
+      "answer": "Ripartisce il costo comune in proporzione ai ricavi teorici ottenibili dai singoli output.",
+      "detail": "Il ricavo usato come peso si ottiene valorizzando i volumi ai prezzi di vendita osservabili. Il riparto riflette il peso economico relativo, non il consumo fisico causale delle risorse.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{cong,i}=C_{cong}\\frac{R_i}{\\sum_j R_j}",
+          "meaning": "Riparto proporzionale al valore commerciale."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.27, pagina PDF 80"
+    },
+    {
+      "id": "cdg-c07-q143",
+      "topicId": "cdg-c07-t27",
+      "question": "Come si calcola il valore netto al punto di split-off?",
+      "answer": "Sottraendo dai ricavi finali del prodotto i costi specifici delle lavorazioni che avvengono dopo lo split-off.",
+      "detail": "Il criterio è utile quando il prodotto non è vendibile immediatamente al punto di separazione. Il valore ottenuto diventa il peso relativo nel riparto dei costi comuni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "VN_i=Ricavi_{finali,i}-Costi_{successivi,i}",
+          "meaning": "Valore netto stimato al punto di separazione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.27, pagina PDF 80"
+    },
+    {
+      "id": "cdg-c07-q144",
+      "topicId": "cdg-c07-t27",
+      "question": "Come si attribuisce il costo congiunto con il metodo del valore netto?",
+      "answer": "Si moltiplica il costo comune per il rapporto fra valore netto del prodotto e totale dei valori netti dei prodotti.",
+      "detail": "Il valore netto considera il ricavo finale al netto delle lavorazioni specifiche successive, evitando di trattare tali costi come componenti congiunte.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{cong,i}=C_{cong}\\frac{VN_i}{\\sum_j VN_j}",
+          "meaning": "Riparto mediante valori netti relativi."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.27, pagina PDF 80"
+    },
+    {
+      "id": "cdg-c07-q145",
+      "topicId": "cdg-c07-t27",
+      "question": "Perché la scelta del criterio di allocazione modifica i margini per prodotto ma non il costo complessivo?",
+      "answer": "Perché ogni metodo ridistribuisce lo stesso costo congiunto totale fra output diversi.",
+      "detail": "Le quote devono sempre sommare al costo comune iniziale. Un prodotto può apparire più o meno redditizio in base al criterio senza che il processo abbia sostenuto spese reali differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.27, pagina PDF 80"
+    },
+    {
+      "id": "cdg-c07-q146",
+      "topicId": "cdg-c07-t27",
+      "question": "Quali cautele sono necessarie nel confronto fra criterio quantitativo e criterio commerciale?",
+      "answer": "Occorre dichiarare unità di misura, prezzi, orizzonte e presenza di costi successivi allo split-off.",
+      "detail": "Il criterio quantitativo tratta ogni kg in modo simile; quello commerciale assegna maggiore peso ai prodotti dal ricavo relativo più elevato. Nessuno dei due prova causalità del costo comune.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.27, pagina PDF 80"
+    },
+    {
+      "id": "cdg-c07-q147",
+      "topicId": "cdg-c07-t28",
+      "question": "Quali sono i dati dei prodotti congiunti XY e XZ nei casi Arcari 4.7–4.8?",
+      "answer": "XY: 700 kg a 180 €/kg; XZ: 300 kg a 252 €/kg; costo congiunto del processo: 150.000 €.",
+      "detail": "I ricavi teorici sono rispettivamente 126.000 € e 75.600 €, per 201.600 € complessivi. Le quantità sommano 1.000 kg.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.28, pagina PDF 81"
+    },
+    {
+      "id": "cdg-c07-q148",
+      "topicId": "cdg-c07-t28",
+      "question": "Come si ripartiscono i 150.000 € con il metodo delle quantità nel caso XY–XZ?",
+      "answer": "105.000 € a XY (70%) e 45.000 € a XZ (30%), pari a 150 €/kg per entrambi.",
+      "detail": "Le quote seguono soltanto le quantità fisiche: 700 kg su 1.000 e 300 kg su 1.000. I diversi prezzi unitari non entrano nel calcolo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "150000\\times0{,}70=105000",
+          "meaning": "XY quantità"
+        },
+        {
+          "latex": "150000\\times0{,}30=45000",
+          "meaning": "XZ quantità"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.28, pagina PDF 81"
+    },
+    {
+      "id": "cdg-c07-q149",
+      "topicId": "cdg-c07-t28",
+      "question": "Quali sono i ricavi teorici relativi di XY e XZ?",
+      "answer": "XY vale 126.000 €, XZ vale 75.600 €; i pesi commerciali sono 62,5% e 37,5%.",
+      "detail": "Si moltiplicano quantità e prezzi: 700×180 e 300×252. Il totale di 201.600 € è il denominatore del riparto per valore di vendita.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "700\\times180=126000",
+          "meaning": "Ricavo XY"
+        },
+        {
+          "latex": "300\\times252=75600",
+          "meaning": "Ricavo XZ"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.28, pagina PDF 81"
+    },
+    {
+      "id": "cdg-c07-q150",
+      "topicId": "cdg-c07-t28",
+      "question": "Come si ripartisce il costo congiunto XY–XZ in base al valore di vendita?",
+      "answer": "93.750 € a XY e 56.250 € a XZ, rispettivamente il 62,5% e il 37,5% del totale.",
+      "detail": "Le quote rispecchiano i ricavi teorici, non i pesi quantitativi. Corrispondono a circa 133,93 €/kg per XY e 187,50 €/kg per XZ.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "150000\\times0{,}625=93750",
+          "meaning": "XY valore di vendita"
+        },
+        {
+          "latex": "150000\\times0{,}375=56250",
+          "meaning": "XZ valore di vendita"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.28, pagina PDF 81"
+    },
+    {
+      "id": "cdg-c07-q151",
+      "topicId": "cdg-c07-t28",
+      "question": "Quali sono i valori netti allo split-off nel caso Arcari 4.8?",
+      "answer": "115.600 € per XY e 54.400 € per XZ, per un totale di 170.000 €.",
+      "detail": "Dal ricavo teorico di XY di 126.000 € si sottraggono 10.400 € di lavorazioni successive; per XZ dal ricavo di 75.600 € si sottraggono 21.200 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "126000-10400=115600",
+          "meaning": "Valore netto XY"
+        },
+        {
+          "latex": "75600-21200=54400",
+          "meaning": "Valore netto XZ"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.28, pagina PDF 81"
+    },
+    {
+      "id": "cdg-c07-q152",
+      "topicId": "cdg-c07-t28",
+      "question": "Quali pesi di riparto risultano dai valori netti del caso XY–XZ?",
+      "answer": "68% per XY e 32% per XZ, considerando 115.600 € e 54.400 € di valore netto sul totale di 170.000 €.",
+      "detail": "Le quote non coincidono con quelle del criterio del valore lordo di vendita (62,5% e 37,5%) perché i due prodotti richiedono costi successivi differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.28, pagina PDF 81"
+    },
+    {
+      "id": "cdg-c07-q153",
+      "topicId": "cdg-c07-t28",
+      "question": "Quanto costo congiunto viene attribuito con il valore netto a XY e XZ?",
+      "answer": "102.000 € a XY e 48.000 € a XZ, somma di 150.000 €.",
+      "detail": "Il costo comune è ripartito in base ai pesi del 68% e 32%. Le lavorazioni specifiche successive vanno aggiunte solo dopo avere effettuato questa attribuzione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "150000\\times0{,}68=102000",
+          "meaning": "Quota congiunta XY"
+        },
+        {
+          "latex": "150000\\times0{,}32=48000",
+          "meaning": "Quota congiunta XZ"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.28, pagina PDF 81"
+    },
+    {
+      "id": "cdg-c07-q154",
+      "topicId": "cdg-c07-t28",
+      "question": "Qual è il costo totale unitario dei due prodotti nel caso Arcari 4.8?",
+      "answer": "XY: 112.400 € complessivi, circa 160,57 €/kg; XZ: 69.200 € complessivi, circa 230,67 €/kg.",
+      "detail": "Ai congiunti ripartiti (102.000 € e 48.000 €) si aggiungono i costi successivi (10.400 € e 21.200 €). Il totale di 181.600 € riconcilia 150.000+31.600 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "(102000+10400)/700\\approx160{,}57",
+          "meaning": "XY €/kg"
+        },
+        {
+          "latex": "(48000+21200)/300\\approx230{,}67",
+          "meaning": "XZ €/kg"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.28, pagina PDF 81"
+    },
+    {
+      "id": "cdg-c07-q155",
+      "topicId": "cdg-c07-t29",
+      "question": "Che cosa si intende per sottoprodotto nel sistema dei costi congiunti?",
+      "answer": "Un output che nasce dallo stesso processo del prodotto principale ma che ha importanza economica secondaria.",
+      "detail": "Può comunque essere venduto e richiedere costi aggiuntivi di lavorazione, deposito o distribuzione. Il suo trattamento influenza il costo e il margine attribuiti al principale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.29, pagina PDF 81"
+    },
+    {
+      "id": "cdg-c07-q156",
+      "topicId": "cdg-c07-t29",
+      "question": "Qual è il primo criterio di trattamento dei sottoprodotti indicato dal manuale?",
+      "answer": "Attribuire l’intero costo congiunto al prodotto principale, senza una quota originaria al sottoprodotto.",
+      "detail": "Il criterio è una convenzione gestionale. Rimangono da considerare gli eventuali ricavi e costi specifici del sottoprodotto se si vuole descriverne la contribuzione economica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.29, pagina PDF 81"
+    },
+    {
+      "id": "cdg-c07-q157",
+      "topicId": "cdg-c07-t29",
+      "question": "Qual è il secondo criterio di trattamento dei sottoprodotti?",
+      "answer": "Attribuire al principale il costo congiunto al netto dei ricavi del sottoprodotto.",
+      "detail": "Il ricavo dell’output secondario riduce il costo attribuito al prodotto principale. Occorre distinguere questa convenzione dal conteggio degli eventuali costi successivi del sottoprodotto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.29, pagina PDF 81"
+    },
+    {
+      "id": "cdg-c07-q158",
+      "topicId": "cdg-c07-t29",
+      "question": "Come opera il terzo criterio relativo ai costi successivi del sottoprodotto?",
+      "answer": "Dal costo congiunto assegnato al principale si sottrae il ricavo del sottoprodotto al netto dei suoi costi specifici successivi.",
+      "detail": "Si considera così il contributo netto dell’output secondario. L’importo da sottrarre non coincide necessariamente con l’intero ricavo quando la sua vendita richiede ulteriori costi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.29, pagina PDF 81"
+    },
+    {
+      "id": "cdg-c07-q159",
+      "topicId": "cdg-c07-t29",
+      "question": "Perché non è corretto dire che il sottoprodotto non genera mai costi?",
+      "answer": "Perché può richiedere lavorazioni successive, stoccaggio, movimentazione e distribuzione identificabili.",
+      "detail": "Anche quando non riceve direttamente quote di costo congiunto, tali costi specifici vanno considerati per interpretarne il margine e per la valorizzazione coerente con i fatti aziendali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.29, pagina PDF 81"
+    },
+    {
+      "id": "cdg-c07-q160",
+      "topicId": "cdg-c07-t30",
+      "question": "Quali sono i dati di prodotto principale e sottoprodotto nei casi Arcari 4.9–4.10?",
+      "answer": "Entrambi 10.000 unità: principale a 12 €/u (120.000 € ricavi), sottoprodotto a 2 €/u (20.000 € ricavi).",
+      "detail": "Il processo congiunto costa 70.000 €; il sottoprodotto richiede inoltre 5.000 € di lavorazioni successive. Il margine complessivo è 65.000 €.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.30, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q161",
+      "topicId": "cdg-c07-t30",
+      "question": "Come si attribuisce il costo congiunto con il metodo del ricavo nel caso Arcari 4.9?",
+      "answer": "20.000 € di costo congiunto al sottoprodotto, pari ai suoi ricavi, e i rimanenti 50.000 € al principale.",
+      "detail": "Il sottoprodotto sopporta poi 5.000 € di costo specifico successivo: la quota comune non ne azzera il margine finale. Il risultato complessivo resta invariato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.30, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q162",
+      "topicId": "cdg-c07-t30",
+      "question": "Qual è il margine dei due prodotti secondo il metodo del ricavo Arcari 4.9?",
+      "answer": "Margine principale +70.000 €; margine sottoprodotto −5.000 €; totale +65.000 €.",
+      "detail": "Il principale consegue 120.000−50.000. Il sottoprodotto consegue 20.000−20.000−5.000. Il margine negativo è un effetto della ripartizione convenzionale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "120000-50000=70000",
+          "meaning": "Margine principale"
+        },
+        {
+          "latex": "20000-20000-5000=-5000",
+          "meaning": "Margine sottoprodotto"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.30, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q163",
+      "topicId": "cdg-c07-t30",
+      "question": "Come si determina il costo congiunto attribuito al sottoprodotto con il metodo del margine Arcari 4.10?",
+      "answer": "15.000 €, cioè il suo ricavo di 20.000 € meno 5.000 € di costi specifici successivi.",
+      "detail": "La convenzione assegna al sottoprodotto un costo iniziale che, insieme alle spese successive, ne rende nullo il margine. Il residuo congiunto va al principale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "20000-5000=15000\\;\\text{€}",
+          "meaning": "Congiunto attribuito al sottoprodotto."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.30, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q164",
+      "topicId": "cdg-c07-t30",
+      "question": "Qual è il costo congiunto residuo e il margine del principale nel metodo del margine?",
+      "answer": "55.000 € di costo congiunto assegnato al principale e 65.000 € di margine del principale.",
+      "detail": "Sottraendo 15.000 € dal costo comune di 70.000 € resta 55.000 €. Il sottoprodotto genera margine nullo, così tutti i 65.000 € risultano attribuiti al principale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "70000-15000=55000",
+          "meaning": "Costo principale"
+        },
+        {
+          "latex": "120000-55000=65000",
+          "meaning": "Margine principale"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.30, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q165",
+      "topicId": "cdg-c07-t30",
+      "question": "Perché il risultato economico totale non cambia passando dal metodo del ricavo a quello del margine?",
+      "answer": "Perché entrambi redistribuiscono i medesimi 70.000 € congiunti e 5.000 € specifici fra ricavi totali di 140.000 €.",
+      "detail": "Il risultato complessivo è 65.000 € in entrambi i casi: cambiano solo margini parziali e quote attribuite, non i flussi economici del processo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "120000+20000-70000-5000=65000\\;\\text{€}",
+          "meaning": "Margine aziendale invariato."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.30, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q166",
+      "topicId": "cdg-c07-t31",
+      "question": "Qual è il criterio per decidere se vendere allo split-off oppure proseguire la lavorazione?",
+      "answer": "Confrontare il ricavo incrementale ottenibile dopo la lavorazione con i costi incrementali necessari per effettuarla.",
+      "detail": "La convenienza richiede un beneficio differenziale positivo, considerate anche capacità e vincoli. Il costo congiunto precedente è normalmente comune a entrambe le alternative.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Beneficio=R_{finale}-R_{split-off}-C_{successivi}",
+          "meaning": "Vantaggio della lavorazione ulteriore."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.31, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q167",
+      "topicId": "cdg-c07-t31",
+      "question": "Perché il costo congiunto allocato non va sottratto nella decisione di ulteriore lavorazione?",
+      "answer": "Perché è già stato sostenuto prima dello split-off e non cambia in conseguenza della specifica scelta successiva.",
+      "detail": "Un costo imputato per convenzione può essere utile per valorizzare il prodotto, ma non rappresenta per ciò stesso un costo evitabile o incrementale della lavorazione aggiuntiva.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.31, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q168",
+      "topicId": "cdg-c07-t31",
+      "question": "Qual è il beneficio differenziale se si può vendere a 50.000 € o lavorare ancora per vendere a 65.000 € con costo di 12.000 €?",
+      "answer": "3.000 € di beneficio positivo: 15.000 € di maggior ricavo meno 12.000 € di costi ulteriori.",
+      "detail": "Nelle ipotesi del manuale conviene la lavorazione aggiuntiva, anche se al prodotto fossero stati attribuiti 40.000 € di costi congiunti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "65000-50000-12000=3000\\;\\text{€}",
+          "meaning": "Beneficio della lavorazione successiva."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.31, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q169",
+      "topicId": "cdg-c07-t31",
+      "question": "Quale verifica ulteriore è necessaria oltre al risultato differenziale numerico?",
+      "answer": "Occorre assicurarsi che capacità produttiva, vincoli e altri effetti rilevanti non annullino il vantaggio calcolato.",
+      "detail": "La formula dà un confronto economico nelle ipotesi dichiarate. Se la lavorazione sottrae capacità a un uso alternativo, tale rinuncia può modificare la convenienza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.31, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q170",
+      "topicId": "cdg-c07-t31",
+      "question": "Come si distingue il costo di valorizzazione dal costo rilevante nella decisione allo split-off?",
+      "answer": "Il primo può includere una quota convenzionale dei costi congiunti; il secondo comprende solo le variazioni future tra alternative.",
+      "detail": "Usare il costo pieno allocato per respingere una lavorazione con ricavo incrementale superiore al costo incrementale confonderebbe due finalità della contabilità direzionale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.31, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q171",
+      "topicId": "cdg-c07-t32",
+      "question": "Quale principio contabile nazionale cita il manuale per la valutazione delle rimanenze?",
+      "answer": "OIC 13, riferimento per le rimanenze delle imprese che applicano i principi contabili italiani.",
+      "detail": "Il costo di prodotto costruito per finalità gestionali non coincide automaticamente con il valore iscrivibile nel bilancio. Le disposizioni applicabili richiedono un perimetro documentato e coerente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.32, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q172",
+      "topicId": "cdg-c07-t32",
+      "question": "Quali categorie di costo rientrano generalmente nel costo di produzione per le rimanenze?",
+      "answer": "Oneri direttamente riferibili alla trasformazione e una quota ragionevole di costi indiretti produttivi.",
+      "detail": "Spese commerciali e inefficienze anomale richiedono trattamento diverso; i costi generali fissi produttivi sono da riferire alla capacità normale con le cautele indicate nel manuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.32, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q173",
+      "topicId": "cdg-c07-t32",
+      "question": "Perché la capacità produttiva normale è rilevante per OIC 13?",
+      "answer": "Per evitare che una produzione eccezionalmente bassa gonfi senza giustificazione il costo fisso imputato a ciascuna unità.",
+      "detail": "Il rapporto fra indiretti fissi e capacità normale aiuta a separare il costo assorbibile nel prodotto da quello connesso a un sottoutilizzo non ordinario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.32, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q174",
+      "topicId": "cdg-c07-t32",
+      "question": "Come si collocano i lavori in corso su ordinazione rispetto alla scheda di commessa gestionale?",
+      "answer": "Possono essere soggetti a regole specifiche di rappresentazione contabile, non sostituibili con il solo dettaglio gestionale dei costi.",
+      "detail": "Per attività pluriennali la misura dell’assorbimento di risorse è utile ma non basta a determinare da sola tempi e importi di rilevazione in bilancio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.32, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q175",
+      "topicId": "cdg-c07-t32",
+      "question": "Quale precisazione temporale riporta il manuale sugli emendamenti OIC del dicembre 2025?",
+      "answer": "Che gli emendamenti interessano anche OIC 13 e si applicano ordinariamente agli esercizi con inizio dal 1° gennaio 2026, salvo anticipazioni ammesse.",
+      "detail": "La trattazione del Capitolo 7 è limitata ai principi generali di costing utili all’esame e non pretende di sostituire un’analisi esaustiva delle disposizioni contabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.32, pagina PDF 82"
+    },
+    {
+      "id": "cdg-c07-q176",
+      "topicId": "cdg-c07-t33",
+      "question": "Quale sequenza essenziale occorre seguire in un esercizio di job costing?",
+      "answer": "Identificare la commessa, raccogliere i diretti, scegliere base e CdA, attribuire gli indiretti, sommare, calcolare il costo unitario e riconciliare.",
+      "detail": "È importante dichiarare se il coefficiente è effettivo o preventivo e verificare l’omogeneità delle unità prima di dividere il costo complessivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.33, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q177",
+      "topicId": "cdg-c07-t33",
+      "question": "Quale sequenza essenziale occorre seguire in un esercizio di process costing?",
+      "answer": "Quadratura fisica, gruppi di unità, percentuali per fattore, scelta MEP/FIFO, UEP, costo per UEP, valorizzazione e quadratura economica.",
+      "detail": "La sequenza evita di usare formule corrette su quantità sbagliate. Rimanenze e scarti devono essere gestiti secondo la convenzione della traccia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.33, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q178",
+      "topicId": "cdg-c07-t33",
+      "question": "Quale procedura si deve seguire per ripartire i costi congiunti?",
+      "answer": "Identificare costi prima dello split-off e costi successivi, scegliere il criterio, calcolare i pesi, attribuire le quote e verificare la somma.",
+      "detail": "Dopo il riparto si aggiungono eventuali costi specifici per ottenere i costi totali dei singoli output. La quota congiunta non va usata automaticamente in una decisione differenziale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.33, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q179",
+      "topicId": "cdg-c07-t33",
+      "question": "Qual è l’errore tipico di denominatore nei coefficienti di job costing?",
+      "answer": "Utilizzare le ore della singola commessa al denominatore del pool degli indiretti, anziché la base complessiva.",
+      "detail": "Il CdA deriva dal costo di reparto o di pool diviso la corrispondente attività totale; solo successivamente è moltiplicato per le ore della commessa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.33, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q180",
+      "topicId": "cdg-c07-t33",
+      "question": "Quali due errori opposti si possono commettere con le RI in MEP e FIFO?",
+      "answer": "Sottrarre erroneamente le RI dalle UEP MEP oppure inserire il loro costo storico nel numeratore del costo corrente FIFO.",
+      "detail": "Nel MEP le RI sono inglobate nei costi complessivi e nei prodotti completati; nel FIFO la lavorazione pregressa resta separata, e si valorizza solo il lavoro nuovo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.33, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q181",
+      "topicId": "cdg-c07-t33",
+      "question": "Quali controlli riducono gli errori sul completamento e sugli scarti?",
+      "answer": "Mantenere colonne MD, MOD e CGP distinte, registrare tutti i gruppi fisici e rispettare la convenzione di trattamento delle perdite.",
+      "detail": "Una percentuale unica o uno scarto dimenticato rompe la valorizzazione e può impedire la quadratura. Le unità equivalenti non sono la stessa cosa delle unità fisiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.33, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q182",
+      "topicId": "cdg-c07-t33",
+      "question": "Quali due quadrature indipendenti richiede un rapporto di process costing?",
+      "answer": "Una quadratura fisica delle unità e una quadratura economica di tutti i costi disponibili e attribuiti.",
+      "detail": "La quadratura fisica verifica RI+avviate=completate+RF+scarti; quella economica verifica costi RI+periodo=costi trasferiti+RF+scarti o altre destinazioni dichiarate.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "RI+Avviate=Comp+RF+SC",
+          "meaning": "Unità fisiche"
+        },
+        {
+          "latex": "C_{RI}+C_{periodo}=C_{trasf}+C_{RF}+C_{SC}",
+          "meaning": "Costi attribuiti"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.33, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q183",
+      "topicId": "cdg-c07-t33",
+      "question": "Perché è importante scrivere sempre le unità di misura durante un esercizio?",
+      "answer": "Per evitare di sommare o moltiplicare grandezze non omogenee, distinguendo €, €/h, unità fisiche e UEP per fattore.",
+      "detail": "Il CdA può essere espresso in €/h MOD, mentre le UEP sono quantità equivalenti per MD, MOD o CGP. Un controllo dimensionale rende più facile individuare errori nei passaggi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.33, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q184",
+      "topicId": "cdg-c07-t34",
+      "question": "Nell’esercizio E1, quali grandezze servono per impostare il costo della commessa?",
+      "answer": "Materiali 8.500 €, MOD 120 h×25 €/h, servizi 1.200 € e indiretti con budget 80.000 €/10.000 h.",
+      "detail": "Per prima cosa si calcola il tasso preventivo di 8 €/h, poi la quota indiretta della commessa. Il costo totale deriva dalla somma di tutte le componenti senza duplicazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.34, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q185",
+      "topicId": "cdg-c07-t34",
+      "question": "Nell’esercizio E2, quale procedimento porta al costo unitario di 30 prodotti identici?",
+      "answer": "Attribuire 240 h macchina a 15 €/h, sommare gli indiretti ai 18.000 € diretti e dividere il totale per 30 unità.",
+      "detail": "La divisione è giustificata dall’identicità dei prodotti. Si può calcolare anche la quota indiretta unitaria separando i 3.600 € allocati dal costo complessivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.34, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q186",
+      "topicId": "cdg-c07-t34",
+      "question": "Nell’esercizio E3, quale confronto identifica un sotto- o sovra-assorbimento?",
+      "answer": "Confrontare gli indiretti effettivi di 88.000 € con quelli assorbiti a 7 €/h sulle 12.000 ore effettive.",
+      "detail": "Il prodotto ore×tasso vale 84.000 € e il costo consuntivo è maggiore, quindi la differenza indica sottoassorbimento. Non bisogna confondere un tasso con un costo totale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.34, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q187",
+      "topicId": "cdg-c07-t34",
+      "question": "Nell’esercizio E4, come si ricava il numero di unità scartate?",
+      "answer": "Per differenza fra unità disponibili (70 WIP iniziali+430 avviate) e unità finalizzate o residue (390 completate+85 RF).",
+      "detail": "Il problema chiede una quadratura fisica, non l’applicazione di costi per UEP: prima di calcolare gli scarti non serve conoscere percentuali di completamento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.34, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q188",
+      "topicId": "cdg-c07-t34",
+      "question": "Nell’esercizio E5, come si impostano le UEP MEP con 600 completati e 100 RF?",
+      "answer": "UEP materiali = 600+100; UEP conversione = 600+100×40%, con assenza di scarti.",
+      "detail": "La MD delle RF è al 100%, la conversione al 40%: i costi per UEP vanno quindi calcolati separatamente con numeratori di 7.000 € e 12.800 €.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.34, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q189",
+      "topicId": "cdg-c07-t34",
+      "question": "Nell’esercizio E6, quale lavoro sulle 50 RI è da conteggiare nelle UEP FIFO?",
+      "answer": "Nessun materiale aggiuntivo e l’80% di conversione ancora mancante, ossia 40 UEP di conversione.",
+      "detail": "Le RI sono già MD 100% ma conversione 20%. Bisogna aggiungere anche 250 unità avviate e finite e le RF alle percentuali di ciascun fattore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.34, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q190",
+      "topicId": "cdg-c07-t34",
+      "question": "Nell’esercizio E7, come si verifica la valorizzazione con MEP?",
+      "answer": "Sommandone il valore dei 600 completati e delle 100 RF, ottenuti applicando i costi per UEP dell’esercizio E5.",
+      "detail": "I completati sono pieni di entrambi i fattori; le RF hanno MD 100% e conversione 40%. Il risultato deve coincidere con i 19.800 € totali disponibili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.34, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q191",
+      "topicId": "cdg-c07-t34",
+      "question": "Nell’esercizio E8, quale base si utilizza per il riparto quantitativo di un costo congiunto?",
+      "answer": "Le quantità fisiche di A e B: 600 kg e 400 kg, per 1.000 kg totali, sul costo comune di 96.000 €.",
+      "detail": "Il metodo non richiede prezzi di vendita. I prodotti assorbono rispettivamente 60% e 40% del costo comune e condividono lo stesso costo per kg.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.34, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q192",
+      "topicId": "cdg-c07-t34",
+      "question": "Nell’esercizio E9, come si calcolano i pesi di riparto per valore commerciale?",
+      "answer": "Con i ricavi teorici: A 600×110 € e B 400×85 €, confrontati con il totale di 100.000 €.",
+      "detail": "I pesi relativi sono 66% e 34%, a cui va applicato il costo congiunto di 96.000 €. Il prezzo unitario entra nel riparto insieme ai volumi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.34, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q193",
+      "topicId": "cdg-c07-t34",
+      "question": "Nell’esercizio E10, quali grandezze entrano nel valore netto allo split-off?",
+      "answer": "I ricavi teorici di E9 meno i costi specifici successivi: 6.000 € per A e 12.000 € per B.",
+      "detail": "I valori netti risultanti sono i pesi di riparto del costo comune. Occorre evitare di sottrarre nuovamente i costi successivi all’interno del costo congiunto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.34, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q194",
+      "topicId": "cdg-c07-t34",
+      "question": "Nell’esercizio E11, qual è l’impostazione corretta per la lavorazione ulteriore?",
+      "answer": "Confrontare 34.000 € di ricavi finali con 24.000 € ottenibili allo split-off e 7.500 € di costo aggiuntivo.",
+      "detail": "Si tratta di un confronto differenziale, non di una ripartizione dei costi congiunti. Sono rilevanti il maggior ricavo e il costo supplementare della scelta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.34, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q195",
+      "topicId": "cdg-c07-t34",
+      "question": "Nell’esercizio E12, quale calcolo è sufficiente per due reparti senza WIP e scarti?",
+      "answer": "Somma del costo trasferito dal reparto A (32.000 €) e dei 16.000 € aggiunti nel B, divisa per 800 unità tutte finite.",
+      "detail": "Non servono percentuali di completamento perché nell’ipotesi del caso ogni unità completa tutti i fattori nel reparto ricevente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.34, pagina PDF 83"
+    },
+    {
+      "id": "cdg-c07-q196",
+      "topicId": "cdg-c07-t35",
+      "question": "Qual è il risultato dell’esercizio E1 sulla commessa elementare?",
+      "answer": "CdA di 8 €/h; indiretti assorbiti 960 €; costo totale della commessa 13.660 €.",
+      "detail": "Si calcolano 120×25=3.000 € di MOD e si sommano 8.500 € materiali, 1.200 € servizi e 960 € indiretti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "8500+120\\times25+120\\times8+1200=13660",
+          "meaning": "Costo della commessa E1."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q197",
+      "topicId": "cdg-c07-t35",
+      "question": "Qual è il costo unitario e la quota indiretta unitaria dell’esercizio E2?",
+      "answer": "720 €/unità di costo pieno e 120 €/unità di costi indiretti.",
+      "detail": "Gli indiretti sono 240×15=3.600 €, che aggiunti ai 18.000 € diretti danno 21.600 €. Dividendo per 30 unità si ottengono 720 €, di cui 120 € indiretti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q198",
+      "topicId": "cdg-c07-t35",
+      "question": "Quale scostamento produce l’esercizio E3 di actual versus normal costing?",
+      "answer": "Sottoassorbimento di 4.000 €, perché 84.000 € attribuiti sono inferiori agli 88.000 € consuntivi.",
+      "detail": "Il sistema ha applicato il tasso di 7 €/h a 12.000 ore: il risultato è 84.000 €. La differenza positiva consuntivo meno assorbito è 4.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "88000-12000\\times7=4000",
+          "meaning": "Sottoassorbimento E3."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q199",
+      "topicId": "cdg-c07-t35",
+      "question": "Quante unità risultano scartate nella quadratura fisica dell’esercizio E4?",
+      "answer": "25 unità: 500 disponibili meno 475 giustificate da completati e rimanenze finali.",
+      "detail": "L’identità è 70+430=390+85+25. Non occorre conoscere alcun costo per risolvere la verifica quantitativa.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "70+430-390-85=25",
+          "meaning": "Numero scarti E4."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q200",
+      "topicId": "cdg-c07-t35",
+      "question": "Quali UEP e costi medi risultano nell’esercizio E5 di media ponderata?",
+      "answer": "UEP MD 700 e conversione 640; costo per UEP 10 € MD e 20 € conversione, totale 30 €.",
+      "detail": "Si calcolano 600+100 per MD e 600+40 per conversione. I costi medi derivano da 7.000/700 e 12.800/640.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q201",
+      "topicId": "cdg-c07-t35",
+      "question": "Quali UEP FIFO risultano nell’esercizio E6 senza scarti?",
+      "answer": "320 UEP materiali e 332 UEP conversione.",
+      "detail": "Le 50 RI hanno materiali già completi e conversione residua 80%. Le nuove unità finite sono 250 e le 70 RF hanno MD 100% e conversione 60%.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "250+70=320",
+          "meaning": "UEP MD FIFO"
+        },
+        {
+          "latex": "50\\times0{,}80+250+70\\times0{,}60=332",
+          "meaning": "UEP conversione FIFO"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q202",
+      "topicId": "cdg-c07-t35",
+      "question": "Quale ripartizione economica produce l’esercizio E7 a partire da E5?",
+      "answer": "18.000 € ai 600 completati e 1.800 € alle 100 RF, per un totale di 19.800 €.",
+      "detail": "Il completato vale 30 € (10 MD+20 conversione). La RF vale 100×10+40×20; il totale quadra 7.000+12.800 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "600\\times30+(100\\times10+40\\times20)=19800",
+          "meaning": "Quadratura E7."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q203",
+      "topicId": "cdg-c07-t35",
+      "question": "Quale ripartizione del costo congiunto deriva dall’esercizio E8 per quantità?",
+      "answer": "57.600 € ad A e 38.400 € a B; costo comune unitario 96 €/kg per entrambi.",
+      "detail": "A pesa 600/1.000=60% e B 400/1.000=40%. Le due quote devono sommare al costo congiunto di 96.000 €.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q204",
+      "topicId": "cdg-c07-t35",
+      "question": "Quali costi attribuisce ai prodotti l’esercizio E9 con il valore di vendita?",
+      "answer": "63.360 € al prodotto A e 32.640 € al prodotto B.",
+      "detail": "I ricavi teorici sono A 66.000 € e B 34.000 €, pari al 66% e 34% di 100.000 €; il costo congiunto totale è 96.000 €.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q205",
+      "topicId": "cdg-c07-t35",
+      "question": "Come si ripartiscono i 96.000 € nel caso E10 con il valore netto?",
+      "answer": "70.243,90 € ad A e 25.756,10 € a B, secondo valori netti di 60.000 € e 22.000 €.",
+      "detail": "I ricavi sono 66.000 € e 34.000 €; i costi successivi sono 6.000 € e 12.000 €. Le quote sono 96.000×60/82 e 96.000×22/82, in migliaia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q206",
+      "topicId": "cdg-c07-t35",
+      "question": "Qual è il beneficio economico dell’ulteriore lavorazione nell’esercizio E11?",
+      "answer": "+2.500 €: il maggior ricavo di 10.000 € supera il costo ulteriore di 7.500 €.",
+      "detail": "La lavorazione è conveniente nelle ipotesi dichiarate e in assenza di vincoli o altri costi rilevanti. I costi congiunti passati non influenzano il confronto.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "34000-24000-7500=2500",
+          "meaning": "Beneficio incrementale E11."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q207",
+      "topicId": "cdg-c07-t35",
+      "question": "Qual è il costo unitario finale del processo a due reparti nell’esercizio E12?",
+      "answer": "60 €/unità, dividendo il costo complessivo di 48.000 € per 800 unità tutte terminate.",
+      "detail": "Il costo di 32.000 € proveniente da A e i 16.000 € aggiunti da B sono integralmente incorporati nelle unità completate.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "(32000+16000)/800=60",
+          "meaning": "Costo finale unitario E12."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q208",
+      "topicId": "cdg-c07-t35",
+      "question": "Quale risposta teorica sintetizza la differenza fra media ponderata e FIFO?",
+      "answer": "Il MEP distribuisce insieme costi iniziali e correnti; il FIFO attribuisce il costo corrente solo al lavoro svolto nel periodo.",
+      "detail": "Per l’esame è necessario collegare la distinzione alla diversa formula delle UEP, ai numeratori dei costi e al trattamento delle RI che vengono completate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q209",
+      "topicId": "cdg-c07-t35",
+      "question": "Perché i quesiti teorici finali insistono sul rapporto fra UEP e fattori produttivi?",
+      "answer": "Perché MD, MOD e CGP possono raggiungere percentuali di impiego diverse anche nelle medesime unità fisiche.",
+      "detail": "Una risposta corretta deve distinguere il numero di pezzi dalla quantità equivalente di risorse, soprattutto in presenza di WIP e scarti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q210",
+      "topicId": "cdg-c07-t35",
+      "question": "Quale collegamento tra split-off e decisioni è richiesto nelle domande teoriche finali?",
+      "answer": "Sapere che lo split-off separa gli output e che i costi congiunti antecedenti non sono normalmente differenziali nella lavorazione successiva.",
+      "detail": "La scelta vende o lavora ancora dipende dal confronto fra nuovo ricavo e costi incrementali dopo la separazione, non dalla quota contabile comune imputata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.35, pagina PDF 84"
+    },
+    {
+      "id": "cdg-c07-q211",
+      "topicId": "cdg-c07-t36",
+      "question": "Quali formule bisogna richiamare per costruire e verificare un costo di commessa?",
+      "answer": "Costo = MD + MOD + servizi diretti + CdA×base assorbita; costo unitario = costo totale / unità omogenee.",
+      "detail": "Il CdA predeterminato deriva da indiretti previsti / base prevista. Prima delle operazioni serve chiarire quale base è stata scelta e quale configurazione di costo si desidera.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{comm}=MD+MOD+Servizi+CdA\\cdot B_{comm}",
+          "meaning": "Costo commessa"
+        },
+        {
+          "latex": "C_{u}=C_{comm}/N",
+          "meaning": "Costo unitario di commessa"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.36, pagina PDF 85"
+    },
+    {
+      "id": "cdg-c07-q212",
+      "topicId": "cdg-c07-t36",
+      "question": "Quali tre passaggi logici sono centrali nel process costing secondo il formulario?",
+      "answer": "Riconciliare unità fisiche; determinare UEP per ciascun fattore e metodo; attribuire i costi ai gruppi e verificarne la quadratura.",
+      "detail": "Il passaggio dalle unità fisiche alle equivalenti deve rispettare l’avanzamento di ogni fattore e la convenzione scelta per RI, RF e scarti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.36, pagina PDF 85"
+    },
+    {
+      "id": "cdg-c07-q213",
+      "topicId": "cdg-c07-t36",
+      "question": "Qual è la distinzione da ricordare fra costo per UEP MEP e FIFO?",
+      "answer": "Il MEP usa costi delle RI più costi del periodo; il FIFO solo i costi sostenuti nel periodo per il lavoro corrente.",
+      "detail": "La formula è simile ma il numeratore cambia. Inoltre le UEP FIFO escludono il lavoro già svolto sulle RI; le UEP MEP comprendono le unità completate nella loro interezza.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "c_{MEP,f}=(C_{RI,f}+C_{P,f})/UEP_{MEP,f}",
+          "meaning": "Media ponderata"
+        },
+        {
+          "latex": "c_{FIFO,f}=C_{P,f}/UEP_{FIFO,f}",
+          "meaning": "Costo corrente FIFO"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.36, pagina PDF 85"
+    },
+    {
+      "id": "cdg-c07-q214",
+      "topicId": "cdg-c07-t36",
+      "question": "Quali sono le definizioni essenziali di CdA, WIP, UEP e split-off?",
+      "answer": "CdA: tasso d’imputazione degli indiretti; WIP: lavoro in corso; UEP: lavoro equivalente per fattore; split-off: punto di separazione degli output congiunti.",
+      "detail": "Quattro nozioni identificano passaggi distinti: il coefficiente serve ad attribuire indiretti alla commessa, il WIP contiene prodotti incompleti, le UEP misurano l’avanzamento e lo split-off separa prodotti comuni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.36, pagina PDF 85"
+    },
+    {
+      "id": "cdg-c07-q215",
+      "topicId": "cdg-c07-t36",
+      "question": "Qual è il criterio finale per decidere una lavorazione ulteriore dopo lo split-off?",
+      "answer": "Il ricavo finale meno quello ottenibile allo split-off meno i costi specifici aggiuntivi, valutati con i vincoli rilevanti.",
+      "detail": "La quota di costo congiunto precedente alla separazione non entra normalmente fra i costi differenziali. Va distinta dal costo utile a valutare i prodotti in un prospetto di costing.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\Delta=R_{finale}-R_{split-off}-C_{ulteriori}",
+          "meaning": "Beneficio della lavorazione dopo split-off."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.36, pagina PDF 85"
+    },
+    {
+      "id": "cdg-c07-q216",
+      "topicId": "cdg-c07-t36",
+      "question": "Quali errori di principio è necessario evitare nel ripasso generale del Capitolo 7?",
+      "answer": "Confondere job e process costing; unità fisiche e UEP; MEP e FIFO; scarti separati e perdite normali; costi congiunti e costi incrementali.",
+      "detail": "Queste confusioni alterano già la scelta del modello, prima ancora delle operazioni aritmetiche. In ogni esercizio il metodo deve essere dichiarato e devono quadrare quantità e costi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 7, Misurazione dei costi nelle produzioni su commessa e per il processo, §7.36, pagina PDF 85"
+    }
+  ]
+}

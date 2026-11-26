@@ -1,0 +1,1357 @@
+{
+  "sections": [
+    {
+      "id": "introduzione",
+      "title": "Introduzione",
+      "topics": [],
+      "blocks": [
+        {
+          "image": "cdg-p40-2.png",
+          "caption": "La costruzione del costo pieno richiede due procedimenti diversi: tracciamento dei costi diretti e imputazione delle quote indirette.",
+          "alt": "La costruzione del costo pieno richiede due procedimenti diversi: tracciamento dei costi diretti e imputazione delle quote indirette."
+        }
+      ],
+      "concept": "Introduzione"
+    },
+    {
+      "id": "5-1",
+      "title": "5.1 Obiettivi, raccordo con il Capitolo 4 e mappa concettuale",
+      "topics": [
+        "cdg-c05-t01"
+      ],
+      "blocks": [
+        {
+          "text": "Nel Capitolo 4 abbiamo definito i costi, i loro possibili comportamenti e le configurazioni progressive (costo diretto, costo pieno industriale, costo pieno aziendale). Ora affrontiamo il problema operativo: come attribuire i costi ai singoli prodotti quando una parte delle risorse serve simultaneamente più lavorazioni? In molti contesti, conoscere il totale dei costi sostenuti dall’impresa non significa conoscere il costo di ogni singola unità prodotta."
+        },
+        {
+          "text": "Obiettivo conoscitivo. Saper distinguere il procedimento diretto da quello indiretto, motivare la scelta delle basi di ripartizione, costruire coefficienti e determinare il costo pieno unitario."
+        },
+        {
+          "text": "Obiettivo applicativo. Saper individuare centri di costo, localizzarvi le risorse, ribaltare i costi dei centri di supporto e imputare quelli dei centri produttivi ai prodotti, verificando sempre la quadratura."
+        },
+        {
+          "text": "La stessa spesa può essere diretta rispetto a un reparto e indiretta rispetto a un prodotto. Lo stipendio del responsabile del reparto Taglio, ad esempio, è chiaramente riferibile a quel reparto, ma deve essere ripartito fra i vari prodotti che utilizzano il Taglio. Questa osservazione è fondamentale per comprendere l’utilità dei centri di costo."
+        }
+      ],
+      "concept": "Obiettivi, raccordo con il Capitolo 4 e mappa concettuale"
+    },
+    {
+      "id": "5-2",
+      "title": "5.2 Che cosa significa calcolare il costo pieno",
+      "topics": [
+        "cdg-c05-t02"
+      ],
+      "blocks": [
+        {
+          "text": "Il costo pieno (full cost) è una configurazione di costo che comprende i costi direttamente attribuibili a un oggetto e una quota dei costi indiretti riferita al medesimo oggetto mediante criteri appropriati. L’oggetto può essere il singolo prodotto, il lotto, una commessa, un servizio o un cliente. Per convenzione, il costo pieno industriale comprende i costi di produzione; quello aziendale può includere anche quote commerciali, amministrative e generali, secondo gli scopi interni dell’analisi."
+        },
+        {
+          "text": "La misurazione non consiste semplicemente nel dividere tutti i costi per i pezzi prodotti: bisogna prima definire perimetro, periodo di riferimento, oggetto di costo, unità di misura, costi diretti e costi indiretti e, per questi ultimi, criteri causali o ragionevoli di imputazione."
+        },
+        {
+          "text": "Attenzione all’uso. Il costo pieno è utile per valorizzare produzioni, stimare marginalità e analizzare assorbimenti, ma non determina da solo la convenienza a eliminare un prodotto: per una decisione occorre separare costi evitabili e inevitabili, che studieremo approfonditamente nel capitolo sulle decisioni di breve periodo."
+        },
+        {
+          "text": "Confine civilistico. Il costo pieno aziendale impiegato per decisioni interne non coincide necessariamente con il costo utilizzabile per la valutazione delle rimanenze: la regola contabile OIC 13 considera i costi industriali appropriati, ma non autorizza l’inclusione indiscriminata di costi commerciali e generali."
+        },
+        {
+          "text": "Costo pieno unitario = Costo diretto unitario + Quota unitaria di costi indiretti"
+        },
+        {
+          "text": "Costo pieno totale = Costi diretti totali + Costi indiretti imputati"
+        }
+      ],
+      "concept": "Che cosa significa calcolare il costo pieno"
+    },
+    {
+      "id": "5-3",
+      "title": "5.3 Il costo diretto: tracciamento di quantità e prezzo",
+      "topics": [
+        "cdg-c05-t03"
+      ],
+      "blocks": [
+        {
+          "text": "Un costo diretto può essere attribuito all’oggetto di costo con una misurazione sufficientemente affidabile del fattore consumato. Per i materiali si combinano quantità prelevate e costo unitario; per la manodopera diretta si utilizzano ore dedicate e costo orario; per servizi esterni specifici si impiega il corrispettivo riferito al prodotto o alla commessa."
+        },
+        {
+          "text": "Il procedimento richiede documenti o dati coerenti: distinte base, buoni di prelievo, tempi di lavoro, ordini di produzione, registrazioni di macchina o schede di commessa. Una quantità sbagliata o un prezzo incoerente contaminano tutto il calcolo, anche se i coefficienti indiretti fossero corretti."
+        },
+        {
+          "text": "Il costo unitario delle materie può richiedere criteri di valorizzazione delle uscite di magazzino (ad esempio costo medio ponderato, FIFO). Va tenuto distinto il criterio di valorizzazione contabile dalla quantità fisica effettivamente utilizzata."
+        },
+        {
+          "text": "Esempio. Per un prodotto sono utilizzati 3 kg di materiale da 8 €/kg e 1,5 ore di MOD da 22 €/ora. Materiali diretti = 24 €; MOD = 33 €; totale diretto = 57 € per unità. Se il costo di macchina è condiviso con altri prodotti, questo non si aggiunge semplicemente per intero, ma necessita di imputazione."
+        },
+        {
+          "text": "Costo diretto della risorsa = Quantità attribuibile × Prezzo unitario"
+        }
+      ],
+      "concept": "Il costo diretto: tracciamento di quantità e prezzo"
+    },
+    {
+      "id": "5-4",
+      "title": "5.4 Il costo indiretto: pool, basi di ripartizione e coefficienti",
+      "topics": [
+        "cdg-c05-t04"
+      ],
+      "blocks": [
+        {
+          "text": "I costi indiretti sono sostenuti per risorse condivise da più oggetti. Non essendo economicamente o tecnicamente conveniente attribuirli con misurazione diretta, si raccolgono in uno o più gruppi omogenei detti cost pool. Successivamente si individua una base di ripartizione (allocation base) e si calcola il coefficiente di imputazione o attribuzione (CdA)."
+        },
+        {
+          "text": "La base deve idealmente esprimere il consumo della risorsa: ore macchina per ammortamenti o manutenzioni di impianti, ore MOD per attività di supporto al lavoro manuale, metri quadrati per alcuni costi degli spazi, numero di interventi per assistenza, numero di documenti per specifici servizi amministrativi. Un driver conveniente da rilevare ma scarsamente correlato al costo può produrre un risultato distorto."
+        },
+        {
+          "text": "Quando il coefficiente è percentuale, bisogna esplicitare la sua unità: 0,12 €/€ di costo diretto non è la stessa cosa di 12 €/ora; quando è unitario occorre specificare l’unità della base. È metodologicamente errato moltiplicare costi ed ore senza controllarne la dimensionalità."
+        },
+        {
+          "text": "Esempio. Costi indiretti del reparto = 90.000 €; ore macchina complessive = 6.000. CdA = 15 €/ora macchina. Se il prodotto A assorbe 2 ore per unità, gli vengono imputati 30 € per unità; il prodotto B con 4 ore assorbe 60 € per unità."
+        },
+        {
+          "text": "CdA = Costi indiretti del pool / Quantità totale della base di ripartizione"
+        },
+        {
+          "text": "Quota indiretta del prodotto i = CdA × Base assorbita dal prodotto i"
+        },
+        {
+          "text": "Verifia sempre: Se la base totale è 6.000 ore, la somma delle ore attribuite ai prodotti deve essere 6.000 (o deve essere esplicitata l’eventuale quota inutilizzata). In un riparto consuntivo completo, la somma delle quote deve riprodurre i costi del pool."
+        }
+      ],
+      "concept": "Il costo indiretto: pool, basi di ripartizione e coefficienti"
+    },
+    {
+      "id": "5-5",
+      "title": "5.5 Full costing e direct costing: perché danno informazioni diverse",
+      "topics": [
+        "cdg-c05-t05",
+        "cdg-c05-t06"
+      ],
+      "blocks": [
+        {
+          "text": "Nel linguaggio utilizzato dalle slide, il direct costing include i costi direttamente attribuibili al prodotto, lasciando i costi indiretti al periodo. Occorre però ricordare che in altri contesti e manuali il termine direct costing è usato anche per indicare il variable costing: le due nozioni non sono automaticamente identiche. Per questo insegnamento manterremo la distinzione adottata dalla docente e preciseremo sempre quali componenti di costo sono state considerate."
+        },
+        {
+          "text": "Un prodotto con margine dopo i costi diretti positivo contribuisce a coprire i costi comuni. Una perdita apparente ottenuta dopo allocazione dei costi indiretti non prova che eliminare il prodotto migliori il risultato, perché i costi comuni potrebbero restare a carico dell’impresa."
+        },
+        {
+          "text": "Esempio tratto dall’impostazione della docente: ricavi A = 1.000 €, B = 2.000 €; costi diretti A = 800 €, B = 1.850 €; costi comuni = 300 €. Margini dopo i costi diretti A = 200 €, B = 150 €; risultato complessivo = 50 €."
+        },
+        {
+          "table": [
+            [
+              "Voce",
+              "Prodotto A",
+              "Prodotto B",
+              "Totale"
+            ],
+            [
+              "Ricavi",
+              "1.000",
+              "2.000",
+              "3.000"
+            ],
+            [
+              "Costi diretti",
+              "800",
+              "1.850",
+              "2.650"
+            ],
+            [
+              "Margine dopo costi diretti",
+              "200",
+              "150",
+              "350"
+            ],
+            [
+              "Costi comuni non attribuiti",
+              "—",
+              "—",
+              "300"
+            ],
+            [
+              "Risultato aziendale",
+              "—",
+              "—",
+              "50"
+            ]
+          ]
+        },
+        {
+          "text": "Se i 300 € sono ripartiti in proporzione ai ricavi, A assorbe 100 € e B 200 €: margini apparenti A = +100 €, B = −50 €. Se si ripartiscono in due quote uguali, A assorbe 150 € e B 150 €: A = +50 €, B = 0 €. Il risultato aziendale rimane 50 € in entrambi i casi. Se si elimina B e i 300 € comuni restano, il risultato diviene 1.000 − 800 − 300 = −100 €, peggiorando di 150 €."
+        },
+        {
+          "heading": "5.5.1 Approfondimento numerico — T-shirt e camicie (materiale del corso)"
+        },
+        {
+          "text": "Un negozio vende 3.000 T-shirt a 25 € e 2.000 camicie a 55 €. Il costo di acquisto è rispettivamente 15 € e 30 € al pezzo. I costi indiretti annui sono: affitto 1.500 €/mese (18.000 €), stipendi 2.500 €/mese (30.000 €), utenze e telefonia 1.000 € ogni due mesi (6.000 €); totale 54.000 €. Il risultato dell’attività è 185.000 € di ricavi meno 105.000 € di costi diretti meno 54.000 € di indiretti: utile complessivo = 26.000 €."
+        },
+        {
+          "text": "Primo criterio: riparto in proporzione al fatturato. La base complessiva è 185.000 €; la quota T-shirt è 75.000/185.000 = 40,54%, quella camicie 110.000/185.000 = 59,46%. Le quote indirette sono 21.891,89 € e 32.108,11 €. Secondo criterio: riparto in proporzione ai pezzi venduti (5.000). Le T-shirt ricevono 3.000/5.000 × 54.000 = 32.400 €; le camicie 21.600 €."
+        },
+        {
+          "table": [
+            [
+              "Voce (€)",
+              "T-shirt",
+              "Camicie",
+              "Totale"
+            ],
+            [
+              "Ricavi",
+              "75.000",
+              "110.000",
+              "185.000"
+            ],
+            [
+              "Costi diretti",
+              "45.000",
+              "60.000",
+              "105.000"
+            ],
+            [
+              "Margine diretto",
+              "30.000",
+              "50.000",
+              "80.000"
+            ],
+            [
+              "Indiretti su base ricavi",
+              "21.891,89",
+              "32.108,11",
+              "54.000"
+            ],
+            [
+              "Risultato per prodotto (ricavi)",
+              "8.108,11",
+              "17.891,89",
+              "26.000"
+            ],
+            [
+              "Indiretti su base pezzi",
+              "32.400",
+              "21.600",
+              "54.000"
+            ],
+            [
+              "Risultato per prodotto (pezzi)",
+              "−2.400",
+              "28.400",
+              "26.000"
+            ]
+          ]
+        },
+        {
+          "text": "Interpretazione Il prodotto T-shirt risulta positivo con il riparto sui ricavi e negativo con il riparto sui pezzi, mentre il risultato complessivo resta 26.000 €. La differenza è imputabile alla scelta del criterio, non a un cambiamento reale della gestione. Il suo margine diretto di 30.000 € non può essere ignorato in una decisione di eliminazione."
+        }
+      ],
+      "concept": "Full costing e direct costing: perché danno informazioni diverse"
+    },
+    {
+      "id": "5-6",
+      "title": "5.6 Base unica: procedimento e limiti",
+      "topics": [
+        "cdg-c05-t07"
+      ],
+      "blocks": [
+        {
+          "text": "Nel metodo a base unica tutti i costi indiretti definiti dal perimetro vengono ripartiti con un unico parametro. La scelta può essere il costo della manodopera, le ore macchina, le ore di lavoro diretto o, per finalità interne particolari, una percentuale dei ricavi. Il vantaggio principale è la semplicità; il limite è che costi di natura diversa possono dipendere da fattori diversi."
+        },
+        {
+          "text": "Per esempio, una fabbrica che usa una sola percentuale del costo della MOD per ripartire ammortamenti delle macchine, assistenza e amministrazione attribuirà più costi al prodotto che impiega maggiormente manodopera, anche se l’altro prodotto assorbe molte più ore macchina."
+        },
+        {
+          "text": "Quando è più difendibile. La base unica è più facilmente applicabile quando i prodotti sono omogenei, le lavorazioni hanno intensità simili e i costi indiretti rappresentano una quota contenuta del costo totale."
+        },
+        {
+          "text": "Quando può distorcere. Con automazione elevata, prodotti diversi, mix di processi eterogenei e costi indiretti rilevanti, conviene differenziare le basi o utilizzare centri di costo e, nel capitolo successivo, analizzare la possibilità di un sistema basato sulle attività (ABC)."
+        }
+      ],
+      "concept": "Base unica: procedimento e limiti"
+    },
+    {
+      "id": "5-7",
+      "title": "5.7 Basi differenziate orientate ai fattori produttivi",
+      "topics": [
+        "cdg-c05-t08"
+      ],
+      "blocks": [
+        {
+          "text": "L’orientamento ai fattori produttivi scompone i costi indiretti in gruppi omogenei per natura della risorsa: personale indiretto, ammortamenti, energia, manutenzioni, servizi, assicurazioni. Per ciascun gruppo si sceglie una base di ripartizione coerente con il suo assorbimento."
+        },
+        {
+          "text": "L’approccio evita di utilizzare indiscriminatamente la stessa base per fattori eterogenei. Per contro, al crescere delle classi e dei prodotti aumenta il numero di coefficienti da calcolare e di rilevazioni da conservare."
+        },
+        {
+          "text": "Esempio originale: costi di manutenzione 24.000 € ripartiti su 4.000 ore macchina (6 €/ora), personale di supporto 30.000 € su 3.000 ore MOD (10 €/ora), energia 18.000 € su 12.000 kWh effettivamente misurati (1,50 €/kWh). Un prodotto che usa 2 ore macchina, 1 ora MOD e 5 kWh assorbe 12 + 10 + 7,50 = 29,50 € di indiretti."
+        },
+        {
+          "table": [
+            [
+              "Pool indiretto",
+              "Costo totale",
+              "Base",
+              "Coefficiente"
+            ],
+            [
+              "Manutenzione",
+              "24.000 €",
+              "4.000 h macchina",
+              "6 €/h macchina"
+            ],
+            [
+              "Supporto al personale",
+              "30.000 €",
+              "3.000 h MOD",
+              "10 €/h MOD"
+            ],
+            [
+              "Energia",
+              "18.000 €",
+              "12.000 kWh",
+              "1,50 €/kWh"
+            ]
+          ]
+        }
+      ],
+      "concept": "Basi differenziate orientate ai fattori produttivi"
+    },
+    {
+      "id": "5-8",
+      "title": "5.8 Basi differenziate orientate alle funzioni",
+      "topics": [
+        "cdg-c05-t09"
+      ],
+      "blocks": [
+        {
+          "text": "Nell’orientamento funzionale, i costi vengono aggregati per area aziendale (produzione, amministrazione, commerciale, logistica e altre funzioni), anche quando ciascuna comprende risorse di natura differente. Per ogni aggregato funzionale viene definita una base appropriata di attribuzione."
+        },
+        {
+          "text": "La semplificazione consiste nel passare da numerosi piccoli pool per natura della risorsa a pochi pool riferiti a funzioni omogenee. Il rischio è che all’interno della stessa funzione siano aggregate attività che rispondono a cause differenti, per cui una singola base potrebbe non rappresentarle tutte adeguatamente."
+        },
+        {
+          "text": "Esempio. La funzione amministrazione comprende personale, software e servizi esterni: costi complessivi 90.000 €. Se, per un’analisi interna per cliente, si sceglie come proxy il numero di pratiche gestite (4.500), il costo allocato è 20 € per pratica. Occorre chiedersi se le pratiche siano comparabili per complessità: in caso contrario l’imputazione può essere fuorviante."
+        },
+        {
+          "text": "Il perimetro della configurazione è decisivo: i pool amministrativi e commerciali possono essere imputati per il costo pieno aziendale, ma non diventano automaticamente costi di produzione inventariabili."
+        },
+        {
+          "image": "cdg-p44-1.png",
+          "caption": "Due varianti dell’orientamento alle risorse: raggruppare per natura del fattore oppure per funzione aziendale.",
+          "alt": "Due varianti dell’orientamento alle risorse: raggruppare per natura del fattore oppure per funzione aziendale."
+        }
+      ],
+      "concept": "Basi differenziate orientate alle funzioni"
+    },
+    {
+      "id": "5-9",
+      "title": "5.9 Come scegliere basi di imputazione significative",
+      "topics": [
+        "cdg-c05-t10"
+      ],
+      "blocks": [
+        {
+          "text": "La qualità del costo pieno dipende in misura decisiva dall’adeguatezza della base. La scelta deve essere difendibile tecnicamente e utile per lo scopo dell’analisi: è necessario stabilire se l’intensità di utilizzo di una risorsa cresce al crescere dell’indicatore e se tale indicatore può essere osservato con affidabilità."
+        },
+        {
+          "text": "Non è obbligatorio che ogni costo comune abbia una base perfettamente causale: per alcuni servizi non esiste una relazione misurabile univoca. In tali casi si parla di imputazione ragionevole o convenzionale, che deve essere esplicitata e non presentata come misura oggettiva."
+        },
+        {
+          "text": "Criterio di causalità. Preferire ore macchina per attività governate dall’utilizzo dei macchinari; ore MOD per servizi legati all’impiego del lavoro; ordini o interventi per servizi di gestione delle pratiche."
+        },
+        {
+          "text": "Criterio di omogeneità. Prodotti e attività aggregati in uno stesso pool devono comportarsi in modo sufficientemente comparabile rispetto alla base scelta."
+        },
+        {
+          "text": "Criterio di misurabilità. Il vantaggio informativo di una base più precisa va confrontato con il costo di rilevarla."
+        },
+        {
+          "text": "Criterio di stabilità. Non cambiare frequentemente basi o perimetro senza motivazione: comprometterebbe il confronto dei costi tra periodi diversi."
+        },
+        {
+          "text": "Criterio di riconciliazione. Ogni quota imputata deve essere ricondotta al pool di origine e il calcolo deve poter essere rifatto."
+        }
+      ],
+      "concept": "Come scegliere basi di imputazione significative"
+    },
+    {
+      "id": "5-10",
+      "title": "5.10 Introduzione al sistema dei centri di costo",
+      "topics": [
+        "cdg-c05-t11"
+      ],
+      "blocks": [
+        {
+          "text": "Un centro di costo (CdC) è un’unità di rilevazione e responsabilizzazione caratterizzata da risorse assegnate, attività o tecnologie riconoscibili e un insieme di prestazioni sufficientemente omogenee. Può coincidere con un reparto fisico, una funzione, un servizio o, per esigenze contabili, un centro virtuale."
+        },
+        {
+          "text": "Il principio del sistema è duplice: prima si misura il costo delle risorse utilizzate dalle unità organizzative; poi si ricostruisce il loro contributo al prodotto finale. Questo rende il costo più leggibile e può facilitare il controllo dei responsabili, purché si distingua ciò che il responsabile può realmente governare dai costi semplicemente allocati al suo centro."
+        },
+        {
+          "text": "La logica è un flusso in quattro fasi, coerente con la struttura del materiale della docente: localizzazione, gerarchizzazione, allocazione dei centri intermedi, imputazione dei costi dai centri finali ai prodotti."
+        },
+        {
+          "text": "Per evitare equivoci: un centro di costo è una categoria di organizzazione e misurazione del costo; un centro di profitto è una categoria di responsabilità economica che comprende tipicamente anche ricavi. Non sono sinonimi."
+        },
+        {
+          "image": "cdg-p44-2.png",
+          "caption": "La sequenza operativa del sistema a centri di costo: non si può imputare correttamente ai prodotti prima di aver definito i centri e i loro",
+          "alt": "La sequenza operativa del sistema a centri di costo: non si può imputare correttamente ai prodotti prima di aver definito i centri e i loro"
+        },
+        {
+          "text": "rapporti."
+        }
+      ],
+      "concept": "Introduzione al sistema dei centri di costo"
+    },
+    {
+      "id": "5-11",
+      "title": "5.11 Fase 1 — Localizzazione dei costi nei centri",
+      "topics": [
+        "cdg-c05-t12"
+      ],
+      "blocks": [
+        {
+          "text": "Localizzare significa rilevare l’impiego di risorse nei singoli centri di costo. Lo stipendio del caporeparto di un reparto può essere localizzato direttamente nel reparto stesso; l’affitto di un capannone occupato da più centri deve essere suddiviso secondo una base, ad esempio la superficie, se coerente con la natura del costo."
+        },
+        {
+          "text": "Il procedimento parte dall’elenco dei costi per natura presente nella contabilità generale o analitica, identifica i centri utilizzatori e distingue: (a) costi specifici del centro, localizzabili direttamente; (b) costi comuni a più centri, da localizzare tramite un criterio."
+        },
+        {
+          "text": "La localizzazione non corrisponde ancora al costo del prodotto. Anche quando un costo è specifico del reparto, può essere indiretto rispetto al prodotto. Inoltre i costi meramente amministrativi, quando inclusi per finalità di analisi aziendale, devono restare distinti da quelli industriali inventariabili."
+        },
+        {
+          "text": "Esempio. Affitto industriale di 30.000 €; superficie produzione A 500 m², produzione B 300 m², manutenzione 200 m². Coefficiente = 30 €/m²; localizzazione A = 15.000 €, B = 9.000 €, manutenzione = 6.000 €. Il costo non è ancora stato imputato ai prodotti."
+        },
+        {
+          "table": [
+            [
+              "Costo",
+              "Modalità di localizzazione",
+              "Esempio di base"
+            ],
+            [
+              "Retribuzione capo Taglio",
+              "Diretta al CdC Taglio",
+              "Centro di appartenenza"
+            ],
+            [
+              "Energia misurata per reparto",
+              "Diretta al CdC",
+              "Contatore dedicato"
+            ],
+            [
+              "Affitto edificio industriale",
+              "Indiretta fra CdC",
+              "m² occupati"
+            ],
+            [
+              "Assicurazione macchinari",
+              "Indiretta se polizza comune",
+              "Valore dei beni, se pertinente"
+            ],
+            [
+              "Materiali diretti di prodotto",
+              "Diretta al prodotto",
+              "Buono di prelievo"
+            ]
+          ]
+        }
+      ],
+      "concept": "Fase 1 — Localizzazione dei costi nei centri"
+    },
+    {
+      "id": "5-12",
+      "title": "5.12 Fase 2 — Gerarchizzazione e tipi di centri",
+      "topics": [
+        "cdg-c05-t13"
+      ],
+      "blocks": [
+        {
+          "text": "Gerarchizzare significa ricostruire le relazioni di servizio fra i diversi centri. Non tutti i centri operano direttamente sul prodotto: alcuni forniscono servizi ad altri, e il costo di tali servizi deve essere trasferito ai centri che li utilizzano prima di poter costruire un costo pieno industriale."
+        },
+        {
+          "text": "Centri di produzione o finali. Sono reparti nei quali avviene la trasformazione e per i quali è possibile trovare una relazione sufficientemente diretta fra output prodotto e attività del centro (Taglio, Montaggio, Collaudo)."
+        },
+        {
+          "text": "Centri ausiliari. Operano tipicamente a supporto della produzione, erogando servizi ai reparti produttivi (Manutenzione, Attrezzeria, Centrale termica)."
+        },
+        {
+          "text": "Centri di servizi. Forniscono servizi anche al di fuori della trasformazione fisica: IT, risorse umane, amministrazione, acquisti, marketing. La loro inclusione nel costo industriale o aziendale dipende dalla destinazione effettiva del servizio e dall’obiettivo del sistema di costing."
+        },
+        {
+          "text": "Centri virtuali. Aggregazioni contabili residuali utili per raccogliere costi non riferibili convenientemente a un’unità fisica; non vanno interpretate automaticamente come reparti effettivamente esistenti."
+        },
+        {
+          "text": "In letteratura, la terminologia può variare (service departments, support cost centres, overhead centres). Nel nostro manuale useremo le categorie della docente, mettendo in evidenza eventuali sinonimi."
+        },
+        {
+          "image": "cdg-p45-1.png",
+          "caption": "Classificazione dei centri di costo utilizzata nel corso: i centri virtuali sono aggregazioni contabili, non necessariamente strutture operative.",
+          "alt": "Classificazione dei centri di costo utilizzata nel corso: i centri virtuali sono aggregazioni contabili, non necessariamente strutture operative."
+        }
+      ],
+      "concept": "Fase 2 — Gerarchizzazione e tipi di centri"
+    },
+    {
+      "id": "5-13",
+      "title": "5.13 Fase 3 — Allocazione dai centri intermedi ai centri finali",
+      "topics": [
+        "cdg-c05-t14"
+      ],
+      "blocks": [
+        {
+          "text": "Una volta localizzati i costi, si procede al ribaltamento o allocazione dei costi di centri intermedi (ausiliari e, quando pertinente, di servizi) verso i centri finali che usufruiscono delle prestazioni. Si seleziona una base che rappresenti il rapporto fra centro erogatore e centro beneficiario."
+        },
+        {
+          "text": "Le basi possono essere indicatori di impiego, indicatori di attività o indicatori di capacità. La distinzione è didatticamente importante perché non tutti i servizi consentono una misurazione diretta della quantità effettivamente consumata."
+        },
+        {
+          "text": "Indicatore di impiego. Si misura la prestazione consumata: ad esempio ore di manutenzione richieste da ogni reparto."
+        },
+        {
+          "text": "Indicatore di attività. Si misura il livello di attività degli utenti come proxy del servizio ricevuto: ad esempio pezzi controllati o movimenti di magazzino quando il consumo diretto del servizio non è disponibile."
+        },
+        {
+          "text": "Indicatore di capacità. Si misura la capacità messa a disposizione nel lungo periodo: ad esempio potenza installata, postazioni servite, numero di macchine mantenute disponibili."
+        },
+        {
+          "text": "I centri intermedi possono erogare servizi anche fra loro. Se ciò avviene, il metodo di allocazione influenza i costi finali attribuiti ai reparti, e occorre distinguere i metodi diretto, per passaggi e reciproco."
+        },
+        {
+          "text": "Coefficiente del centro intermedio = Costo del centro / Totale base riferita agli utenti considerati"
+        },
+        {
+          "image": "cdg-p46-1.png",
+          "caption": "Confronto concettuale: i tre metodi non sono equivalenti quando i centri di servizio si scambiano prestazioni.",
+          "alt": "Confronto concettuale: i tre metodi non sono equivalenti quando i centri di servizio si scambiano prestazioni."
+        }
+      ],
+      "concept": "Fase 3 — Allocazione dai centri intermedi ai centri finali"
+    },
+    {
+      "id": "5-14",
+      "title": "5.14 Metodo diretto — Procedimento ed esercizio",
+      "topics": [
+        "cdg-c05-t15"
+      ],
+      "blocks": [
+        {
+          "text": "Il metodo diretto attribuisce i costi di ciascun centro intermedio direttamente ai centri finali, ignorando le prestazioni fra centri intermedi. In presenza di un servizio reso anche ad altri centri intermedi, le percentuali di riparto ai centri produttivi vengono rinormalizzate sulla sola quota erogata ai destinatari finali."
+        },
+        {
+          "text": "È il metodo più semplice; è appropriato soprattutto quando gli scambi tra centri intermedi sono assenti o poco rilevanti. Può però sottostimare o sovrastimare la quantità di costi attribuita ai reparti finali rispetto a un modello che considera gli scambi."
+        },
+        {
+          "text": "Esempio originale comune ai tre metodi. Manutenzione M = 60.000 €; IT = 40.000 €; costi originari dei reparti P1 = 20.000 €, P2 = 30.000 €. M presta 10% a IT, 60% a P1, 30% a P2; IT presta 20% a M, 30% a P1, 50% a P2."
+        },
+        {
+          "text": "Con metodo diretto, per M si ignorano i 10 punti percentuali destinati a IT: su P1 e P2 si ripartiscono 60/90 e 30/90. Per IT si ignora il 20% destinato a M: su P1 e P2 si ripartiscono 30/80 e 50/80."
+        },
+        {
+          "table": [
+            [
+              "Centro origine",
+              "P1",
+              "P2",
+              "Somma"
+            ],
+            [
+              "M = 60.000 €",
+              "40.000",
+              "20.000",
+              "60.000"
+            ],
+            [
+              "IT = 40.000 €",
+              "15.000",
+              "25.000",
+              "40.000"
+            ],
+            [
+              "Ribaltamenti totali",
+              "55.000",
+              "45.000",
+              "100.000"
+            ],
+            [
+              "Costi originari finali",
+              "20.000",
+              "30.000",
+              "50.000"
+            ],
+            [
+              "Costi finali",
+              "75.000",
+              "75.000",
+              "150.000"
+            ]
+          ]
+        },
+        {
+          "text": "Punto di attenzione: L’allocazione diretta ignora lo scambio M ↔ IT, ma non perde i 100.000 € iniziali: li ripartisce per intero fra P1 e P2. L’assenza di perdite contabili non significa però che la causalità della ripartizione sia ottimale."
+        }
+      ],
+      "concept": "Metodo diretto — Procedimento ed esercizio"
+    },
+    {
+      "id": "5-15",
+      "title": "5.15 Metodo per passaggi (step-down) — Procedimento ed esercizio",
+      "topics": [
+        "cdg-c05-t16"
+      ],
+      "blocks": [
+        {
+          "text": "Il metodo per passaggi dispone i centri di servizio in un ordine determinato e ribalta prima il centro che serve il maggior numero di altri centri (oppure segue un altro criterio organizzativo ragionevole esplicitato nel problema). Un centro già chiuso non riceve più costi dai centri ribaltati successivamente."
+        },
+        {
+          "text": "L’approccio considera dunque parte degli scambi fra centri intermedi, ma non quelli che tornerebbero verso centri già chiusi. L’ordine può influenzare i risultati: occorre sempre esplicitare e rispettare la gerarchia stabilita."
+        },
+        {
+          "text": "Passaggio 1 — M. M = 60.000 € viene ribaltata con le percentuali originarie: IT riceve 6.000 €, P1 riceve 36.000 €, P2 riceve 18.000 €. Il centro M è chiuso e non riceverà ulteriori costi."
+        },
+        {
+          "text": "Passaggio 2 — IT. IT dispone ora di 40.000 + 6.000 = 46.000 €. Poiché M è chiuso, il 20% destinato a M è escluso dalla base e le quote di P1 e P2 vengono rinormalizzate rispettivamente 30/80 e 50/80: 17.250 € e 28.750 €."
+        },
+        {
+          "text": "La verifica è immediata: P1 riceve 36.000 + 17.250 = 53.250 € di servizi, P2 riceve 18.000 + 28.750 = 46.750 €. Il totale ribaltato è 100.000 €."
+        },
+        {
+          "table": [
+            [
+              "Passaggio",
+              "P1",
+              "P2",
+              "IT da chiudere"
+            ],
+            [
+              "M = 60.000 €",
+              "36.000",
+              "18.000",
+              "+6.000"
+            ],
+            [
+              "IT ora = 46.000 €",
+              "17.250",
+              "28.750",
+              "−46.000"
+            ],
+            [
+              "Totale quote ricevute",
+              "53.250",
+              "46.750",
+              "0"
+            ],
+            [
+              "Costi originari P1/P2",
+              "20.000",
+              "30.000",
+              "—"
+            ],
+            [
+              "Costi finali",
+              "73.250",
+              "76.750",
+              "—"
+            ]
+          ]
+        }
+      ],
+      "concept": "Metodo per passaggi (step-down) — Procedimento ed esercizio"
+    },
+    {
+      "id": "5-16",
+      "title": "5.16 Metodo reciproco — Impostazione e sistema di equazioni",
+      "topics": [
+        "cdg-c05-t17"
+      ],
+      "blocks": [
+        {
+          "text": "Il metodo reciproco (detto anche algebrico) considera integralmente i servizi che i centri intermedi si scambiano. Se manutenzione e IT si servono a vicenda, il costo totale pienamente attribuibile a ciascuno include il proprio costo originario più una quota dei costi dell’altro."
+        },
+        {
+          "text": "Le incognite sono i costi totali dei centri prima del ribaltamento definitivo. Nel nostro esempio, indicando con M il costo complessivo della manutenzione e con I quello dell’IT, le quote reciproche generano due equazioni simultanee."
+        },
+        {
+          "text": "Prima si calcolano i costi complessivi M e I; successivamente si attribuiscono ai reparti le percentuali dirette a P1 e P2. È normale che M+I superi 100.000 €, poiché incorpora prestazioni intermedie scambiate più volte; la somma dei costi effettivamente trasferiti ai reparti finali rimane invece esattamente 100.000 €."
+        },
+        {
+          "text": "M = 60.000 + 0,20 × I"
+        },
+        {
+          "text": "I = 40.000 + 0,10 × M"
+        },
+        {
+          "text": "M = (60.000 + 8.000) / 0,98 = 69.387,76 €"
+        },
+        {
+          "text": "I = 40.000 + 0,10 × 69.387,76 = 46.938,78 €"
+        },
+        {
+          "text": "Quota P1 = 0,60 × M + 0,30 × I = 55.714,29 €"
+        },
+        {
+          "text": "Quota P2 = 0,30 × M + 0,50 × I = 44.285,71 €"
+        },
+        {
+          "text": "Aggiungendo i costi originari dei reparti, P1 = 20.000 + 55.714,29 = 75.714,29 €, P2 = 30.000 + 44.285,71 = 74.285,71 €. La somma è 150.000 €. I centri M e IT risultano completamente svuotati considerando tutte le prestazioni, senza perdita o duplicazione del costo finale."
+        },
+        {
+          "text": "Metodo Generale: Per n centri di servizio reciprocamente connessi occorre costruire n equazioni. La soluzione può essere ottenuta algebricamente, tramite matrice o foglio di calcolo. L’esercizio d’esame deve fornire percentuali coerenti e chiarire quali centri forniscono servizi agli altri."
+        }
+      ],
+      "concept": "Metodo reciproco — Impostazione e sistema di equazioni"
+    },
+    {
+      "id": "5-17",
+      "title": "5.17 Confronto tra i metodi e quadrature",
+      "topics": [
+        "cdg-c05-t18"
+      ],
+      "blocks": [
+        {
+          "text": "Applicando tre procedure allo stesso insieme di costi, otteniamo costi finali diversi per P1 e P2. Questo non significa che i costi di origine siano cambiati; cambia il modo in cui i servizi intermedi sono considerati nella costruzione dei costi dei reparti."
+        },
+        {
+          "text": "Il metodo diretto ignora i servizi tra centri intermedi; lo step-down li considera solo nella direzione della sequenza; il reciproco li considera interamente. In un contesto semplice le differenze possono essere modeste, ma diventare rilevanti quando i servizi scambiati sono intensi e i reparti utilizzano proporzioni diverse delle prestazioni."
+        },
+        {
+          "table": [
+            [
+              "Metodo",
+              "P1 finale",
+              "P2 finale",
+              "Totale"
+            ],
+            [
+              "Diretto",
+              "75.000,00",
+              "75.000,00",
+              "150.000,00"
+            ],
+            [
+              "Per passaggi",
+              "73.250,00",
+              "76.750,00",
+              "150.000,00"
+            ],
+            [
+              "Reciproco",
+              "75.714,29",
+              "74.285,71",
+              "150.000,00"
+            ]
+          ]
+        },
+        {
+          "image": "cdg-p48-1.png",
+          "caption": "Lo stesso ammontare di costi aziendali (150.000 €) può generare attribuzioni differenti per i reparti finali in base al metodo di ribaltamento.",
+          "alt": "Lo stesso ammontare di costi aziendali (150.000 €) può generare attribuzioni differenti per i reparti finali in base al metodo di ribaltamento."
+        },
+        {
+          "image": "cdg-p48-2.png",
+          "caption": "Quadratura dei costi: la somma dei costi destinati ai centri finali deve essere riconciliabile con i costi di origine inclusi nel perimetro.",
+          "alt": "Quadratura dei costi: la somma dei costi destinati ai centri finali deve essere riconciliabile con i costi di origine inclusi nel perimetro."
+        }
+      ],
+      "concept": "Confronto tra i metodi e quadrature"
+    },
+    {
+      "id": "5-18",
+      "title": "5.18 Fase 4 — Imputazione dai centri finali ai prodotti",
+      "topics": [
+        "cdg-c05-t19"
+      ],
+      "blocks": [
+        {
+          "text": "Dopo il ribaltamento dei centri intermedi, i costi sono accumulati nei centri finali. Per determinare il costo dei prodotti occorre scegliere, per ciascun centro finale, una base rappresentativa dell’intensità con cui ogni prodotto ne utilizza la capacità produttiva."
+        },
+        {
+          "text": "Il reparto Taglio può utilizzare ore macchina; il Montaggio ore MOD; il Collaudo minuti di test. Per ogni reparto si divide il costo completo del centro per il totale della base e si moltiplica il coefficiente per le ore, i minuti o le altre quantità utilizzate da ciascun prodotto."
+        },
+        {
+          "text": "Il coefficiente di un reparto non deve essere applicato a ore registrate in un altro reparto: in tal caso cambierebbe l’unità della base e si perderebbe la coerenza del modello. I totali per reparto devono essere riconciliati prima di passare al prodotto."
+        },
+        {
+          "text": "Alla fine si sommano i costi diretti del prodotto e tutte le quote imputate dai centri finali. Si divide poi per le unità effettivamente prodotte di quel tipo, prestando attenzione a rimanenze in corso, scarti, unità equivalenti e produzioni su commessa: questi aspetti saranno sviluppati nel capitolo dedicato ai contesti produttivi."
+        },
+        {
+          "text": "CdA del reparto finale = Costi del reparto dopo i ribaltamenti / Base totale del reparto Costo pieno unitario i = [Costi diretti totali i + Σ quote reparti i] / Unità prodotte i"
+        }
+      ],
+      "concept": "Fase 4 — Imputazione dai centri finali ai prodotti"
+    },
+    {
+      "id": "5-19",
+      "title": "5.19 Capacità normale e costi indiretti fissi",
+      "topics": [
+        "cdg-c05-t20"
+      ],
+      "blocks": [
+        {
+          "text": "La scelta del denominatore dei coefficienti è particolarmente importante quando il pool include costi fissi. Se un impianto costa 120.000 € l’anno indipendentemente dal numero di ore lavorate, il costo fisso unitario ottenuto dividendo per le ore effettive cresce automaticamente quando la produzione scende, anche se il reparto non ha impiegato più risorse per ciascun prodotto."
+        },
+        {
+          "text": "Le slide del corso distinguono capacità teorica (massimo senza inefficienze), capacità attesa (programmata a breve), capacità effettiva (realmente utilizzata) e capacità normale (livello medio rappresentativo in condizioni operative normali). Per evitare la volatilità artificiale del coefficiente fisso è spesso utile riferirsi alla capacità normale."
+        },
+        {
+          "text": "Il principio contabile nazionale OIC 13 (Rimanenze) impiega proprio la capacità produttiva normale per attribuire i costi generali fissi di produzione alle rimanenze. In caso di sottoutilizzo anomalo, i costi fissi non assorbiti non devono gonfiare il costo delle rimanenze e sono registrati nel conto economico del periodo. Per i costi indiretti variabili di produzione l’attribuzione dipende invece dall’attività effettiva."
+        },
+        {
+          "text": "Esempio. Costi fissi industriali = 120.000 €; capacità normale = 20.000 h; aliquota fissa = 6 €/h. A 15.000 h di attività, sono imputabili alla produzione 90.000 € di costi fissi, mentre 30.000 € restano non assorbiti. Dividere direttamente 120.000 € per 15.000 h darebbe 8 €/h, ma per la valutazione delle rimanenze trasferirebbe impropriamente al prodotto il costo della capacità inutilizzata."
+        },
+        {
+          "text": "Eccezione di attività elevata. Quando l’attività effettiva supera la capacità normale, l’OIC 13 prevede attenzione a non imputare alle rimanenze un ammontare di costi fissi superiore ai costi sostenuti; in tali casi si utilizza una base effettiva appropriata."
+        },
+        {
+          "image": "cdg-p49-1.png",
+          "caption": "Confronto illustrativo: la quota fissa dividendo per il volume effettivo aumenta quando il volume cala, mentre la base normale limita tale",
+          "alt": "Confronto illustrativo: la quota fissa dividendo per il volume effettivo aumenta quando il volume cala, mentre la base normale limita tale"
+        },
+        {
+          "text": "distorsione."
+        }
+      ],
+      "concept": "Capacità normale e costi indiretti fissi"
+    },
+    {
+      "id": "5-20",
+      "title": "5.20 Coefficienti effettivi e predeterminati; sotto e sovra-assorbimento",
+      "topics": [
+        "cdg-c05-t21"
+      ],
+      "blocks": [
+        {
+          "text": "Un coefficiente effettivo è calcolato con costi e basi consuntivi; un coefficiente predeterminato è stabilito prima del periodo utilizzando valori previsti o normali. Il coefficiente predeterminato consente di conoscere tempestivamente il costo attribuito ai prodotti prima che siano disponibili tutti i costi indiretti effettivi."
+        },
+        {
+          "text": "Alla fine del periodo si confronta il totale dei costi indiretti effettivi con quelli imputati alla produzione mediante i coefficienti predeterminati. Se gli effettivi superano quelli imputati, si ha sottoassorbimento; se gli imputati superano gli effettivi, si ha sovrassorbimento. La differenza va analizzata e trattata secondo la finalità contabile del sistema."
+        },
+        {
+          "text": "Esempio. Costi industriali fissi preventivati 120.000 €, costi variabili 3 €/h e capacità normale 20.000 h: coefficiente predeterminato totale = 6 + 3 = 9 €/h. Nell’anno sono utilizzate 15.000 h; costi imputati = 135.000 €. Se il costo indiretto effettivo è 165.000 €, sottoassorbimento = 30.000 €. In questo esempio la differenza coincide con la capacità fissa non assorbita; in altri casi possono concorrere variazioni di prezzo, efficienza o livello di attività."
+        },
+        {
+          "text": "Non bisogna confondere la differenza di assorbimento con un errore automatico del coefficiente. Per esempio una riduzione di ore lavorate può spiegare una parte della differenza anche quando i costi effettivi sono in linea con la previsione."
+        },
+        {
+          "text": "Costi imputati = CdA predeterminato × Quantità effettiva della base"
+        },
+        {
+          "text": "Sottoassorbimento = Costi effettivi − Costi imputati, se positivo"
+        },
+        {
+          "text": "Sovrassorbimento = Costi imputati − Costi effettivi, se positivo"
+        }
+      ],
+      "concept": "Coefficienti effettivi e predeterminati; sotto e sovra-assorbimento"
+    },
+    {
+      "id": "5-21",
+      "title": "5.21 Caso guidato 1 — Glassex S.p.A. (soluzioni Arcari cap. 2)",
+      "topics": [
+        "cdg-c05-t22"
+      ],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "Questo caso, presente nelle soluzioni editoriali del libro Arcari, mostra la costruzione del costo pieno in presenza di due reparti con coefficienti diversi. I prodotti sono Simplex e Suprema. Il reparto Produzione utilizza ore macchina; il reparto Imballaggio usa ore di manodopera diretta."
+            },
+            {
+              "text": "Primo passaggio: coefficiente del reparto Produzione = 441.000 / 29.400 = 15 €/h macchina. Secondo passaggio: coefficiente del reparto Imballaggio = 69.600 / 2.900 = 24 €/h MOD."
+            },
+            {
+              "text": "Per Simplex: 3 h macchina × 15 = 45 €; 0,5 h MOD imballaggio × 24 = 12 €. Per Suprema: 6 h macchina × 15 = 90 €; 1/6 h MOD imballaggio × 24 = 4 €."
+            },
+            {
+              "text": "Si sommano poi materie prime e MOD direttamente attribuite al prodotto. Il risultato editoriale è il seguente."
+            },
+            {
+              "table": [
+                [
+                  "Voce unitaria",
+                  "Simplex",
+                  "Suprema"
+                ],
+                [
+                  "Materie prime",
+                  "90,00",
+                  "120,00"
+                ],
+                [
+                  "MOD produzione",
+                  "20,00",
+                  "20,00"
+                ],
+                [
+                  "MOD imballaggio",
+                  "9,00",
+                  "3,00"
+                ],
+                [
+                  "Costi indiretti produzione",
+                  "45,00",
+                  "90,00"
+                ],
+                [
+                  "Costi indiretti imballaggio",
+                  "12,00",
+                  "4,00"
+                ],
+                [
+                  "Costo pieno unitario",
+                  "176,00",
+                  "237,00"
+                ]
+              ]
+            },
+            {
+              "text": "DA CAPIRE Suprema assorbe il doppio delle ore macchina di Simplex (6 vs 3), quindi riceve il doppio dei costi indiretti di produzione (90 vs 45). Nell’imballaggio, invece, Simplex richiede più tempo e assorbe più costo indiretto. Questo è il vantaggio delle basi differenziate."
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Caso guidato 1 — Glassex S.p.A. (soluzioni Arcari cap. 2)"
+    },
+    {
+      "id": "5-22",
+      "title": "5.22 Caso guidato 2 — Sanna S.p.A. (soluzioni Arcari cap. 2)",
+      "topics": [
+        "cdg-c05-t23",
+        "cdg-c05-t24"
+      ],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "Il caso Sanna permette di vedere l’intero processo dei centri di costo: un centro intermedio Q fornisce servizi a tre centri produttivi M, E e F. Il centro Q ha 30.000 € di costi e fornisce rispettivamente 5.000, 4.000 e 1.000 ore macchina ai centri produttivi."
+            },
+            {
+              "text": "Il suo coefficiente è 30.000 / 10.000 = 3 €/h. Trasferisce dunque 15.000 € a M, 12.000 € a E e 3.000 € a F."
+            },
+            {
+              "text": "I centri M, E e F hanno costi iniziali, prima del ribaltamento, rispettivamente pari a 110.000 €, 53.000 € e 27.000 €. Dopo il riparto diventano 125.000 €, 65.000 € e 30.000 €."
+            },
+            {
+              "text": "Il centro M viene imputato ad Alfa e Beta in rapporto ai costi diretti di produzione (300.000 € e 200.000 €); il centro E è assorbito integralmente da Alfa; il centro F viene imputato in rapporto alla MOD dei due prodotti (80.000 € e 40.000 €)."
+            },
+            {
+              "table": [
+                [
+                  "CdC",
+                  "Costi prima di Q",
+                  "Quota Q",
+                  "Costi dopo Q"
+                ],
+                [
+                  "M",
+                  "110.000",
+                  "15.000",
+                  "125.000"
+                ],
+                [
+                  "E",
+                  "53.000",
+                  "12.000",
+                  "65.000"
+                ],
+                [
+                  "F",
+                  "27.000",
+                  "3.000",
+                  "30.000"
+                ],
+                [
+                  "Totale",
+                  "190.000",
+                  "30.000",
+                  "220.000"
+                ]
+              ]
+            },
+            {
+              "table": [
+                [
+                  "Componente",
+                  "Alfa",
+                  "Beta"
+                ],
+                [
+                  "Costi diretti",
+                  "300.000",
+                  "200.000"
+                ],
+                [
+                  "CdC M",
+                  "75.000",
+                  "50.000"
+                ],
+                [
+                  "CdC E",
+                  "65.000",
+                  "0"
+                ],
+                [
+                  "CdC F",
+                  "20.000",
+                  "10.000"
+                ],
+                [
+                  "Costo pieno",
+                  "",
+                  ""
+                ],
+                [
+                  "totale",
+                  "460.000",
+                  "260.000"
+                ],
+                [
+                  "Unità prodotte",
+                  "10.000",
+                  "5.000"
+                ],
+                [
+                  "Costo pieno",
+                  "",
+                  ""
+                ],
+                [
+                  "unitario",
+                  "46,00",
+                  "52,00"
+                ]
+              ]
+            },
+            {
+              "text": "Verifiche: i costi diretti totali sono 500.000 €; i costi dei centri finali sono 220.000 €; il costo pieno complessivo è quindi 720.000 € = 460.000 + 260.000. Il riparto del centro Q non crea nuovi costi ma trasferisce ai centri produttivi i 30.000 € già sostenuti."
+            },
+            {
+              "heading": "5.22.1 Approfondimento — Sofia S.p.A. e il metodo per passaggi"
+            },
+            {
+              "text": "L’esercizio Sofia S.p.A. delle soluzioni Arcari mostra una sequenza di tre centri di servizio (Mensa, Risorse umane, Sistemi informativi), ribaltati su due reparti finali A e B. I costi originari sono 115.000 €, 150.000 € e 185.000 €, per un totale di 450.000 €. Si procede nell’ordine Mensa → Risorse umane → Sistemi informativi."
+            },
+            {
+              "text": "La Mensa distribuisce il 10% dei costi a Risorse umane, il 10% ai Sistemi informativi, il 40% ad A e il 40% a B. Risorse umane, dopo avere ricevuto 11.500 € dalla Mensa, presenta 161.500 € da distribuire: il 30% va ai Sistemi informativi, il 35% ad A e il 35% a B. Sistemi informativi riceve sia 11.500 € dalla Mensa sia 48.450 € da Risorse umane, arrivando a 244.950 €; il suo costo si ripartisce 60% ad A e 40% a B."
+            },
+            {
+              "table": [
+                [
+                  "Origine / passaggio",
+                  "Risorse umane",
+                  "Sistemi informativi",
+                  "Reparto A",
+                  "Reparto B"
+                ],
+                [
+                  "Mensa 115.000",
+                  "11.500",
+                  "11.500",
+                  "46.000",
+                  "46.000"
+                ],
+                [
+                  "Risorse umane 161.500",
+                  "—",
+                  "48.450",
+                  "56.525",
+                  "56.525"
+                ],
+                [
+                  "Sistemi informativi 244.950",
+                  "—",
+                  "—",
+                  "146.970",
+                  "97.980"
+                ],
+                [
+                  "Quota finale ai reparti",
+                  "—",
+                  "—",
+                  "249.495",
+                  "200.505"
+                ]
+              ]
+            },
+            {
+              "text": "Quadratura: A 249.495 € + B 200.505 € = 450.000 €, esattamente quanto i costi iniziali dei tre centri. Le quote interne 11.500 € e 48.450 € sono trasferimenti fra centri, quindi non si sommano di nuovo al totale aziendale. Questo è il punto nel quale più frequentemente si genera un doppio conteggio."
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Caso guidato 2 — Sanna S.p.A. (soluzioni Arcari cap. 2)"
+    },
+    {
+      "id": "5-23",
+      "title": "5.23 Caso integrato originale — Dall’organigramma al costo unitario",
+      "topics": [
+        "cdg-c05-t25"
+      ],
+      "blocks": [
+        {
+          "text": "Consideriamo una fabbrica con due prodotti (Alfa e Beta), due centri produttivi (Taglio e Montaggio) e due centri di supporto (Manutenzione e IT). Costi iniziali: Taglio 48.000 €, Montaggio 42.000 €, Manutenzione 12.000 €, IT 8.000 €. Si applica il metodo per passaggi: Manutenzione ribalta il 20% a IT, il 50% a Taglio e il 30% a Montaggio; IT trasferisce il proprio costo finale per il 25% a Taglio e per il 75% a Montaggio."
+        },
+        {
+          "text": "Le quantità prodotte sono 1.000 unità Alfa e 500 unità Beta. I costi diretti unitari sono 100 € per Alfa e 150 € per Beta. Le ore del reparto Taglio sono 1.200 per Alfa e 800 per Beta; le ore del Montaggio sono 400 per Alfa e 600 per Beta."
+        },
+        {
+          "text": "1) Manutenzione trasferisce 2.400 € all’IT, 6.000 € al Taglio e 3.600 € al Montaggio. 2) IT ha ora un costo di 10.400 €, attribuito per 2.600 € a Taglio e 7.800 € a Montaggio. 3) Taglio finale = 48.000 + 6.000 + 2.600 = 56.600 €. Montaggio finale = 42.000 + 3.600 + 7.800 = 53.400 €."
+        },
+        {
+          "text": "4) CdA Taglio = 56.600 / (1.200 + 800) = 28,30 €/ora. CdA Montaggio = 53.400 / (400 + 600) = 53,40 €/ora. Si attribuiscono le quote di reparto ai due prodotti."
+        },
+        {
+          "table": [
+            [
+              "Fase",
+              "Alfa",
+              "Beta",
+              "Quadratura"
+            ],
+            [
+              "Taglio (28,30 €/h)",
+              "33.960",
+              "22.640",
+              "56.600"
+            ],
+            [
+              "Montaggio (53,40 €/h)",
+              "21.360",
+              "32.040",
+              "53.400"
+            ],
+            [
+              "Totale indiretti",
+              "55.320",
+              "54.680",
+              "110.000"
+            ],
+            [
+              "Costi diretti totali",
+              "100.000",
+              "75.000",
+              "175.000"
+            ],
+            [
+              "Costo pieno totale",
+              "155.320",
+              "129.680",
+              "285.000"
+            ],
+            [
+              "Unità prodotte",
+              "1.000",
+              "500",
+              "1.500"
+            ],
+            [
+              "Costo pieno unitario",
+              "155,32",
+              "259,36",
+              "—"
+            ]
+          ]
+        },
+        {
+          "text": "Quadratura finale: Costi originari: Taglio 48.000 + Montaggio 42.000 + Manutenzione 12.000 + IT 8.000 = 110.000 €; costi indiretti imputati: 55.320 + 54.680 = 110.000 €. Costi diretti 175.000 + indiretti 110.000 = 285.000 €, pari alla somma dei costi pieni dei due prodotti."
+        },
+        {
+          "text": "Interpretazione: Beta utilizza proporzionalmente più ore del Montaggio, il cui coefficiente è più alto, e ha un costo diretto unitario maggiore. Il costo pieno unitario di Beta non è semplicemente “più alto perché ne produciamo meno”: dipende in misura rilevante dalla struttura del suo consumo delle attività dei reparti."
+        }
+      ],
+      "concept": "Caso integrato originale — Dall’organigramma al costo unitario"
+    },
+    {
+      "id": "5-24",
+      "title": "5.24 Sistemi di costing e scelte decisionali: interpretare i risultati",
+      "topics": [
+        "cdg-c05-t26"
+      ],
+      "blocks": [
+        {
+          "text": "I risultati del full costing non sono misure fisiche assolute. Dipendono da scelte di perimetro, basi di imputazione, capacità utilizzata e organizzazione dei centri. Per questo un buon controllo di gestione presenta insieme alla cifra finale anche le ipotesi utilizzate per ottenerla."
+        },
+        {
+          "text": "Una riduzione del volume di un prodotto può far aumentare la quota di costi fissi ripartita agli altri prodotti, persino quando questi non consumano più risorse. La variazione del costo pieno unitario non implica quindi necessariamente che il processo produttivo sia divenuto meno efficiente."
+        },
+        {
+          "text": "Per le scelte di prezzo in condizioni ordinarie, il costo pieno può fornire un punto di riferimento per la sostenibilità di lungo periodo, ma è necessario considerare mercato, domanda, concorrenza e capacità. Per un ordine speciale con capacità inutilizzata, invece, è spesso più rilevante il costo incrementale e non l’intero costo pieno allocato."
+        },
+        {
+          "text": "È importante inoltre non confondere centri di costo e Activity-Based Costing: i primi raggruppano principalmente responsabilità o unità organizzative; l’ABC, che affronteremo nel Capitolo 6, raggruppa le attività e studia i loro driver. I due approcci possono essere integrati, ma non sono sinonimi."
+        }
+      ],
+      "concept": "Sistemi di costing e scelte decisionali: interpretare i risultati"
+    },
+    {
+      "id": "5-25",
+      "title": "5.25 Metodo generale di risoluzione e controlli",
+      "topics": [
+        "cdg-c05-t27"
+      ],
+      "blocks": [
+        {
+          "text": "Di fronte a un esercizio numerico sul full costing è utile seguire un metodo stabile. La sequenza proposta serve anche a evitare gli errori più frequenti delle prove scritte, nelle quali il tempo disponibile è limitato."
+        },
+        {
+          "text": "Passaggio 1. Identificare periodo, oggetti finali, numero di unità, elementi di costo e basi disponibili."
+        },
+        {
+          "text": "Passaggio 2. Separare costi diretti e indiretti rispetto all’oggetto finale. Evitare di confondere “diretto al reparto” con “diretto al prodotto”."
+        },
+        {
+          "text": "Passaggio 3. Se richiesto, localizzare i costi nei centri e distinguere finali, ausiliari, di servizio e virtuali."
+        },
+        {
+          "text": "Passaggio 4. Individuare il metodo di allocazione dei centri intermedi richiesto dal testo: diretto, per passaggi o reciproco. Indicare l’ordine dei passaggi e le percentuali rinormalizzate quando necessario."
+        },
+        {
+          "text": "Passaggio 5. Controllare la quadratura dei costi dei centri, calcolare i coefficienti dei reparti finali e applicarli alle basi assorbite dai prodotti."
+        },
+        {
+          "text": "Passaggio 6. Sommarvi i costi diretti e dividere per le unità prodotte. Esplicitare il perimetro: industriale oppure aziendale."
+        },
+        {
+          "text": "Passaggio 7. Interpretare economicamente il risultato e verificare che la scelta della base sia plausibile; non concludere automaticamente che un prodotto a margine pieno negativo vada eliminato."
+        },
+        {
+          "text": "Errori tipici: dimenticare di includere un centro intermedio, ripartire due volte un costo, usare denominatori non coerenti, invertire percentuali, non ricalcolare il totale del centro che ha ricevuto un ribaltamento, utilizzare coefficienti predeterminati come se fossero consuntivi oppure confondere euro/ora con percentuali."
+        }
+      ],
+      "concept": "Metodo generale di risoluzione e controlli"
+    },
+    {
+      "id": "5-26",
+      "title": "5.26 Esercizi di allenamento — Prova prima, poi verifica",
+      "topics": [
+        "cdg-c05-t28"
+      ],
+      "blocks": [
+        {
+          "text": "Le tracce seguenti sono originali (salvo indicazioni specifiche) e sono pensate per allenare l’applicazione delle procedure. Le soluzioni sono collocate dopo tutti i testi per evitare di leggerle prima del tentativo."
+        },
+        {
+          "text": "ESERCIZIO 1 — Base unica. Un centro ha 96.000 € di costi indiretti e utilizza 8.000 ore macchina. Il prodotto A usa 3 ore e B 5 ore per unità. Determinare il CdA e la quota per singolo pezzo A e B."
+        },
+        {
+          "text": "ESERCIZIO 2 — Due basi. I costi di Macchinari sono 120.000 € su 20.000 ore macchina; i costi di Supporto sono 60.000 € su 6.000 ore MOD. Il prodotto X utilizza 1,5 ore macchina e 2 ore MOD per pezzo; Y utilizza 4 ore macchina e 0,5 ore MOD. Determinare quote indirette X e Y."
+        },
+        {
+          "text": "ESERCIZIO 3 — Localizzazione. Affitto di 54.000 € ripartito su 900 m² (Reparto A 450, Reparto B 300, Manutenzione 150). Inoltre 12.000 € di energia per il reparto A, 8.000 € per B e 5.000 € di salario del manutentore. Determinare costo iniziale dei tre CdC."
+        },
+        {
+          "text": "ESERCIZIO 4 — Metodo diretto. Manutenzione 36.000 €: 25% dei servizi a IT, 45% a P1, 30% a P2. IT 24.000 €: 10% a Manutenzione, 30% a P1, 60% a P2. Calcolare i ribaltamenti diretti e la loro quadratura."
+        },
+        {
+          "text": "ESERCIZIO 5 — Metodo per passaggi. Sul medesimo caso dell’esercizio 4 ribaltare prima Manutenzione e poi IT, senza tornare al centro chiuso."
+        },
+        {
+          "text": "ESERCIZIO 6 — Metodo reciproco. I centri ausiliari hanno costi iniziali M = 50.000 € e I = 20.000 €. M eroga il 20% a I, il 50% a P1 e il 30% a P2; I eroga il 10% a M, il 40% a P1 e il 50% a P2. Impostare le equazioni, determinare le quote attribuite ai reparti e verificare che sommino a 70.000 €."
+        },
+        {
+          "text": "ESERCIZIO 7 — Capacità normale. Costi fissi industriali 180.000 €; capacità normale 30.000 ore macchina; ore effettive 24.000. Determinare aliquota fissa e costi fissi assorbiti/non assorbiti. Spiegare perché dividere per 24.000 ore non è adeguato per valorizzare le rimanenze se la minore attività è anomala."
+        },
+        {
+          "text": "ESERCIZIO 8 — Interpretazione. Un prodotto ha ricavi 150.000 €, costi diretti evitabili 100.000 € e 55.000 € di costi comuni allocati. Il costo comune è interamente inevitabile nel breve periodo. Che cosa accade al risultato aziendale se si elimina il prodotto, a parità di ogni altra condizione?"
+        },
+        {
+          "worked": [
+            {
+              "text": "Soluzione 1. CdA = 96.000/8.000 = 12 €/h macchina. A = 3×12 = 36 €/pz; B = 5×12 = 60 €/pz. Il coefficiente va sempre espresso in €/h macchina."
+            },
+            {
+              "text": "Soluzione 2. Macchinari = 120.000/20.000 = 6 €/h macchina; Supporto = 60.000/6.000 = 10 €/h MOD. X = 1,5×6 + 2×10 = 29 €; Y = 4×6 + 0,5×10 = 29 €. Stesso costo indiretto unitario non implica lo stesso profilo di consumo delle risorse."
+            },
+            {
+              "text": "Soluzione 3. Affitto = 54.000/900 = 60 €/m². Reparto A: 27.000+12.000 = 39.000 €; B: 18.000+8.000 = 26.000 €; Manutenzione: 9.000+5.000 = 14.000 €. Totale costi localizzati 79.000 €; non sono ancora imputati ai prodotti."
+            },
+            {
+              "text": "Soluzione 4. Metodo diretto: M ripartita solo fra P1 e P2: P1 = 36.000×45/75 = 21.600 €, P2 = 14.400 €. IT: P1 = 24.000×30/90 = 8.000 €, P2 = 16.000 €. Totale P1 = 29.600 €, P2 = 30.400 €, complessivo 60.000 €."
+            },
+            {
+              "text": "Soluzione 5. Metodo per passaggi: M → IT 9.000 €, P1 16.200 €, P2 10.800 €. IT ora = 24.000+9.000 = 33.000 €; la quota diretta a M, centro chiuso, viene esclusa. IT → P1 = 33.000×30/90 = 11.000 €; IT → P2 = 33.000×60/90 = 22.000 €. Totali P1 = 27.200 €, P2 = 32.800 €; somma 60.000 €."
+            },
+            {
+              "text": "Soluzione 6. M = 50.000 + 0,10 I; I = 20.000 + 0,20 M. Sostituzione: M = 52.000/0,98 = 53.061,22 €; I = 20.000 + 0,20×53.061,22 = 30.612,24 €. P1 = 0,50×M + 0,40×I = 38.775,51 €; P2 = 0,30×M + 0,50×I = 31.224,49 €. Totale = 70.000 €."
+            },
+            {
+              "text": "Soluzione 7. Aliquota fissa normale = 180.000/30.000 = 6 €/ora; quota assorbita = 24.000×6 = 144.000 €; non assorbita = 36.000 €. La divisione per le sole ore effettive fornirebbe 7,50 €/ora e caricherebbe sul prodotto il costo di capacità non utilizzata."
+            },
+            {
+              "text": "Soluzione 8. Margine del prodotto dopo costi diretti evitabili = 150.000 − 100.000 = +50.000 €. Il margine pieno dopo costi comuni allocati è −5.000 €, ma i 55.000 € comuni rimangono comunque. Eliminare il prodotto fa perdere 50.000 € di contributo e peggiora di 50.000 € il risultato complessivo, alle ipotesi indicate."
+            }
+          ],
+          "label": "Soluzioni ragionate degli esercizi"
+        }
+      ],
+      "concept": "Esercizi di allenamento — Prova prima, poi verifica"
+    },
+    {
+      "id": "5-27",
+      "title": "5.27 Glossario essenziale e domande teoriche",
+      "topics": [
+        "cdg-c05-t29"
+      ],
+      "blocks": [
+        {
+          "text": "CdA (coefficiente di attribuzione/imputazione): rapporto fra il costo del pool e la quantità di base utilizzata per ripartirlo. Cost pool: aggregato omogeneo di costi indiretti. Base di ripartizione: indicatore quantitativo utilizzato per attribuire un pool a oggetti o centri utenti."
+        },
+        {
+          "text": "Localizzazione: attribuzione delle risorse ai CdC. Gerarchizzazione: classificazione dei centri e delle relazioni fra loro. Ribaltamento/allocazione: trasferimento dei costi dei centri intermedi ai finali. Imputazione: attribuzione dei costi dei centri finali ai prodotti."
+        },
+        {
+          "text": "Full costing industriale: costi diretti di produzione più quote dei costi indiretti industriali. Full costing aziendale: perimetro ampliato anche ad altre funzioni secondo le finalità interne. Capacità normale: livello medio rappresentativo della produzione in condizioni normali."
+        },
+        {
+          "text": "Underapplied overhead / sottoassorbimento: costi indiretti effettivi superiori alle quote imputate con coefficienti. Overapplied overhead / sovrassorbimento: quote imputate superiori ai costi indiretti effettivi."
+        },
+        {
+          "text": "Domande di autoverifica: (1) Perché il full costing contiene una componente convenzionale? (2) Quando una base unica può risultare adeguata? (3) Qual è la differenza fra localizzazione e imputazione? (4) Che ruolo ha il CdC ausiliario? (5) Quale informazione si perde con il metodo diretto? (6) Perché nello step-down cambia il denominatore per i centri rimasti? (7) Perché nel reciproco la somma M+I può superare i costi originari dei due centri? (8) Che cosa significa costo indiretto sottoassorbito? (9) Come si calcola il costo pieno di Sanna? (10) Perché non è corretto eliminare B nel caso esposto dalla docente?"
+        },
+        {
+          "text": "Conclusione: Il costo pieno non è un dato elementare già presente nella contabilità generale: è il risultato di un sistema di misurazione progettato. Imparare a costruirlo significa comprendere flussi fisici e informativi dell’impresa, scelte metodologiche, responsabilità e limiti di ogni imputazione."
+        }
+      ],
+      "concept": "Glossario essenziale e domande teoriche"
+    }
+  ],
+  "relations": [
+    {
+      "to": "5-3",
+      "relation": "I costi diretti si tracciano per quantità e prezzo",
+      "from": "5-2"
+    },
+    {
+      "to": "5-4",
+      "relation": "Gli indiretti richiedono una base di ripartizione",
+      "from": "5-2"
+    },
+    {
+      "to": "5-9",
+      "relation": "Un coefficiente dipende dalla base scelta",
+      "from": "5-4"
+    },
+    {
+      "to": "5-11",
+      "relation": "Il processo inizia localizzando i costi nei centri",
+      "from": "5-10"
+    },
+    {
+      "to": "5-13",
+      "relation": "Dopo la localizzazione, i costi dei centri intermedi passano ai finali",
+      "from": "5-11"
+    },
+    {
+      "to": "5-18",
+      "relation": "Dai centri finali i costi arrivano ai prodotti",
+      "from": "5-13"
+    },
+    {
+      "to": "5-17",
+      "relation": "Il risultato del metodo reciproco si confronta con gli altri metodi",
+      "from": "5-16"
+    }
+  ]
+}

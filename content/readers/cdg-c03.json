@@ -1,0 +1,492 @@
+{
+  "sections": [
+    {
+      "id": "introduzione",
+      "title": "Introduzione",
+      "topics": [
+        "cdg-c03-t01"
+      ],
+      "blocks": [
+        {
+          "text": "Dai dati contabili alle informazioni per programmare, gestire e decidere."
+        },
+        {
+          "text": "Il costo di acquisto riguarda il sacrificio economico sostenuto per acquisire un fattore produttivo. Il costo di produzione riguarda il valore delle risorse consumate per realizzare un output. Il costo totale di possesso (Total Cost of Ownership, TCO) considera, in un orizzonte definito, il costo complessivo associato all’acquisizione, all’uso, alla manutenzione e alla dismissione di un bene."
+        },
+        {
+          "text": "Esempio: un server acquistato a 8.000 € può generare ulteriori costi di energia, licenze, amministrazione, manutenzione e smaltimento. Il suo costo di acquisto non coincide quindi con il costo globale della sua disponibilità nel tempo."
+        }
+      ],
+      "concept": "Introduzione"
+    },
+    {
+      "id": "3-1",
+      "title": "3.1 Caso guidato: una singola transazione, molte informazioni",
+      "topics": [
+        "cdg-c03-t02"
+      ],
+      "blocks": [
+        {
+          "text": "Una società consegna a dicembre un macchinario con corrispettivo contrattuale iniziale di 100.000 €. A gennaio vengono concordate e fatturate modifiche aggiuntive, portando il totale documentato a 120.000 €. Senza ulteriori dati non si può attribuire automaticamente l’intero ricavo a dicembre o a gennaio: la competenza dipende dalla natura della prestazione, dal contratto e dai principi contabili applicabili."
+        },
+        {
+          "table": [
+            [
+              "Funzione",
+              "Domanda alla quale deve rispondere"
+            ],
+            [
+              "Amministrazione",
+              "Quando rilevare il ricavo e i costi correlati? Quali crediti esistono?"
+            ],
+            [
+              "Controllo di gestione",
+              "Qual è il margine della commessa? Chi è responsabile dei maggiori costi?"
+            ],
+            [
+              "Produzione",
+              "Il prodotto è conforme? Sono stati rispettati tempi e qualità?"
+            ],
+            [
+              "Commerciale",
+              "Perché il cliente ha chiesto modifiche? Quale redditività futura attendersi?"
+            ],
+            [
+              "Tesoreria",
+              "Quando si incassa? Qual è l’effetto sui flussi finanziari?"
+            ]
+          ]
+        },
+        {
+          "text": "Esercizio numerico integrativo. Una commessa produce un ricavo di 120.000 € e assorbe 45.000 € di materiali, 25.000 € di manodopera diretta e 18.000 € di costi indiretti imputati. Il costo totale attribuito è 45.000 + 25.000 + 18.000 = 88.000 €. Il margine calcolato con questo perimetro di costi è 120.000 − 88.000 = 32.000 € (26,67% dei ricavi). Non chiamarlo automaticamente utile netto: potrebbero mancare costi commerciali, amministrativi, finanziari e imposte."
+        }
+      ],
+      "concept": "Caso guidato: una singola transazione, molte informazioni"
+    },
+    {
+      "id": "3-2",
+      "title": "3.2 Qualità delle informazioni per le decisioni",
+      "topics": [
+        "cdg-c03-t03"
+      ],
+      "blocks": [
+        {
+          "text": "Un buon sistema informativo gestionale deve produrre informazioni rilevanti rispetto alla decisione, tempestive, attendibili, comprensibili e confrontabili. Sono importanti anche il costo della misurazione e la tracciabilità di ipotesi e fonti. Maggiore dettaglio non significa sempre maggior utilità: un report con centinaia di indicatori può nascondere le poche variabili determinanti."
+        },
+        {
+          "text": "L’informazione economica non sostituisce il giudizio manageriale. Una scelta può dipendere anche da qualità, sicurezza, reputazione, obblighi contrattuali, soddisfazione dei clienti e capacità produttiva futura."
+        }
+      ],
+      "concept": "Qualità delle informazioni per le decisioni"
+    },
+    {
+      "id": "3-3",
+      "title": "3.3 Raccordo con i capitoli successivi",
+      "topics": [
+        "cdg-c03-t04"
+      ],
+      "blocks": [
+        {
+          "text": "Abbiamo definito perché occorre misurare costi riferiti a oggetti specifici. Nel capitolo 4 distingueremo costi diretti/indiretti, fissi/variabili, specifici/comuni, rilevanti/irrilevanti e le configurazioni di costo. Queste categorie permetteranno di costruire i metodi di full costing, ABC e di analisi differenziale nei capitoli successivi."
+        }
+      ],
+      "concept": "Raccordo con i capitoli successivi"
+    },
+    {
+      "id": "3-4",
+      "title": "3.4 Verifica dell’apprendimento — teoria ed esercizi",
+      "topics": [
+        "cdg-c03-t04"
+      ],
+      "blocks": [
+        {
+          "text": "1. Perché un utile aziendale positivo non consente di giudicare la redditività di ogni prodotto?"
+        },
+        {
+          "text": "2. Qual è la differenza tra contabilità generale, analitica e direzionale?"
+        },
+        {
+          "text": "3. Descrivi un esempio di informazione operativa, uno di bilancio e uno di controllo."
+        },
+        {
+          "text": "4. Elenca le tre funzioni del management e spiega il ruolo del feedback."
+        },
+        {
+          "text": "5. Per quale motivo un indicatore non monetario può essere indispensabile per una decisione?"
+        },
+        {
+          "text": "6. Perché un costo può essere diretto rispetto a un reparto ma indiretto rispetto al prodotto?"
+        },
+        {
+          "text": "7. In quali casi una stima tempestiva è più utile di un dato consuntivo molto accurato?"
+        },
+        {
+          "text": "8. Quale distinzione esiste tra margine di una commessa e utile netto aziendale?"
+        },
+        {
+          "text": "9. Calcola il margine su ricavi di 90.000 € e costi imputati di 58.000 € e la sua incidenza percentuale."
+        },
+        {
+          "text": "10. Un prodotto presenta ricavi di 50.000 € e costi direttamente attribuiti per 28.000 €. È corretto dire che l’utile netto è 22.000 €?"
+        },
+        {
+          "worked": [
+            {
+              "text": "1. Perché l’utile complessivo aggrega segmenti con costi, ricavi e consumi di risorse differenti."
+            },
+            {
+              "text": "2. La generale rileva reddito e patrimonio; l’analitica misura risultati parziali per oggetto; la direzionale comprende informazioni per pianificazione, controllo e scelta."
+            },
+            {
+              "text": "3. Operativa: ore lavorate; bilancio: debiti al 31 dicembre; direzionale: costo previsto per servizio."
+            },
+            {
+              "text": "4. Programmare le azioni, attuarle, confrontare risultati con obiettivi; il feedback guida correzioni e revisione dei piani."
+            },
+            {
+              "text": "5. Perché tempi, difetti, saturazione e qualità possono determinare la performance anche prima del loro effetto economico."
+            },
+            {
+              "text": "6. Il fattore può essere attribuibile direttamente al reparto ma essere condiviso fra più prodotti del reparto."
+            },
+            {
+              "text": "7. Quando la decisione è imminente, la stima è ragionevole, l’incertezza dichiarata e il rinvio comporterebbe costi maggiori."
+            },
+            {
+              "text": "8. Il margine usa un perimetro definito di ricavi e costi; l’utile netto aziendale considera anche altre componenti e imposte."
+            },
+            {
+              "text": "9. Margine = 90.000 − 58.000 = 32.000 €; incidenza = 32.000/90.000 × 100 = 35,56%."
+            },
+            {
+              "text": "10. No. 22.000 € è la differenza fra ricavi e costi considerati, non necessariamente il risultato netto dopo tutte le altre voci."
+            },
+            {
+              "heading": "Approfondimenti conclusivi — organizzazione, responsabilità e controllo"
+            }
+          ],
+          "label": "Soluzioni ragionate"
+        }
+      ],
+      "concept": "Verifica dell’apprendimento — teoria ed esercizi"
+    },
+    {
+      "id": "3-5",
+      "title": "3.5 Perché il bilancio non è sufficiente per dirigere un’impresa",
+      "topics": [
+        "cdg-c03-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Nei capitoli precedenti abbiamo studiato come la contabilità generale rileva le operazioni aziendali e come il bilancio sintetizza reddito, patrimonio e flussi finanziari. Quei prospetti sono indispensabili, ma forniscono una rappresentazione soprattutto aggregata: indicano che cosa è accaduto nell’impresa, non sempre perché sia accaduto né quale scelta convenga effettuare domani."
+        },
+        {
+          "text": "Un’impresa che vende due prodotti può conseguire un utile complessivo positivo anche quando uno dei due prodotti assorbe risorse in modo inefficiente. Dal solo utile totale non è possibile conoscere il costo di ogni prodotto, la redditività dei singoli clienti o la convenienza di accettare un ordine aggiuntivo. Servono informazioni costruite per uno specifico problema gestionale."
+        },
+        {
+          "text": "Esempio: ricavi complessivi 400.000 €, costi complessivi 350.000 €, risultato 50.000 €. Il risultato non ci dice quale linea di prodotto abbia generato il margine, se un reparto abbia superato il budget, o se sia conveniente esternalizzare un’attività. La contabilità direzionale rielabora e integra i dati proprio per rispondere a queste domande."
+        }
+      ],
+      "concept": "Perché il bilancio non è sufficiente per dirigere un’impresa"
+    },
+    {
+      "id": "3-6",
+      "title": "3.6 Tre famiglie di informazioni aziendali",
+      "topics": [
+        "cdg-c03-t06"
+      ],
+      "blocks": [
+        {
+          "heading": "3.6.1 Informazioni operative"
+        },
+        {
+          "text": "Sono i dati necessari allo svolgimento delle attività quotidiane: ordini ricevuti, quantità disponibili in magazzino, ore lavorate, avanzamento degli interventi, pezzi difettosi, consegne, fatture e crediti per cliente. Spesso sono registrati dai sistemi operativi mentre l’attività viene svolta. Non sono necessariamente espressi in euro."
+        },
+        {
+          "heading": "3.6.2 Informazioni di bilancio"
+        },
+        {
+          "text": "Rappresentano la situazione patrimoniale e finanziaria e il risultato economico secondo principi contabili condivisi. I rendiconti principali sono Stato Patrimoniale, Conto Economico, Rendiconto Finanziario e Nota Integrativa, secondo il regime applicabile. La comparabilità, la tracciabilità e l’attendibilità sono cruciali, dato che il bilancio comunica anche con soggetti esterni."
+        },
+        {
+          "heading": "3.6.3 Informazioni di management accounting"
+        },
+        {
+          "text": "Sono elaborate in funzione delle necessità interne: costo di una commessa, margine di contribuzione, redditività di un cliente, costo di una lavorazione, budget di un centro di responsabilità, scostamento fra programma e consuntivo, indicatori di qualità e produttività. Possono combinare dati effettivi, stime e previsioni e riferirsi a una parte specifica dell’impresa."
+        },
+        {
+          "text": "Il valore di un dato non dipende solo dalla sua precisione, ma anche dalla pertinenza rispetto al problema e dalla tempestività. Una stima dichiarata, fondata su ipotesi ragionevoli e disponibile oggi, può supportare una decisione meglio di un dato molto preciso disponibile troppo tardi. Questo non giustifica stime arbitrarie: ipotesi, unità di misura e limiti vanno esplicitati."
+        },
+        {
+          "image": "cdg-p23-1.png",
+          "caption": "Dal dato elementare alla decisione: la trasformazione informativa nel controllo di gestione.",
+          "alt": "Dal dato elementare alla decisione: la trasformazione informativa nel controllo di gestione."
+        }
+      ],
+      "concept": "Tre famiglie di informazioni aziendali"
+    },
+    {
+      "id": "3-7",
+      "title": "3.7 Contabilità generale, contabilità analitica e contabilità direzionale",
+      "topics": [
+        "cdg-c03-t07"
+      ],
+      "blocks": [
+        {
+          "text": "La contabilità generale (CO.GE.) rileva in modo sistematico i fatti di gestione con l’obiettivo di determinare il reddito d’esercizio e le grandezze patrimoniali. La contabilità analitica (CO.AN.) approfondisce i costi e i ricavi riferendoli a oggetti parziali, quali prodotti, servizi, commesse, attività, clienti e reparti. Il management accounting ha un perimetro ancora più ampio: utilizza le informazioni economiche e operative per programmare, prendere decisioni, controllare e valutare le prestazioni."
+        },
+        {
+          "text": "La contabilità analitica è dunque una componente fondamentale, ma non esaurisce la contabilità direzionale: un report sui tempi di consegna, un budget di vendite o l’analisi di un investimento sono strumenti direzionali anche quando non si limitano a imputare costi consuntivi."
+        },
+        {
+          "table": [
+            [
+              "Dimensione",
+              "Contabilità generale",
+              "Contabilità analitica / direzionale"
+            ],
+            [
+              "Domanda tipica",
+              "Quanto abbiamo guadagnato? Qual è il patrimonio?",
+              "Quanto costa il prodotto? Perché il risultato differisce dal budget?"
+            ],
+            [
+              "Oggetto",
+              "Impresa considerata nel complesso",
+              "Prodotto, commessa, reparto, cliente, attività o impresa"
+            ],
+            [
+              "Tempo",
+              "Prevalentemente consuntivo",
+              "Consuntivo, attuale, preventivo e scenari futuri"
+            ],
+            [
+              "Destinatari",
+              "Soggetti esterni e direzione",
+              "Management e responsabili interni"
+            ],
+            [
+              "Unità di misura",
+              "Prevalentemente monetarie",
+              "Monetarie e fisico-tecniche"
+            ],
+            [
+              "Vincoli",
+              "Principi contabili e norme applicabili",
+              "Formati flessibili orientati alle decisioni"
+            ]
+          ]
+        }
+      ],
+      "concept": "Contabilità generale, contabilità analitica e contabilità direzionale"
+    },
+    {
+      "id": "3-8",
+      "title": "3.8 Il processo di management: programmare, implementare, controllare",
+      "topics": [
+        "cdg-c03-t08"
+      ],
+      "blocks": [
+        {
+          "heading": "3.8.1 Programmare (planning)"
+        },
+        {
+          "text": "Programmare significa scegliere oggi azioni future coerenti con gli obiettivi aziendali. Il management identifica problemi e opportunità, sviluppa alternative, stabilisce i criteri di scelta, raccoglie informazioni, valuta le conseguenze e seleziona l’alternativa preferibile. Il budget traduce spesso i programmi in obiettivi quantitativi ed economici per un periodo definito."
+        },
+        {
+          "text": "Esempio: per aumentare il margine della linea A, l’impresa considera un nuovo prezzo, una modifica del processo produttivo oppure l’acquisto di un macchinario. Senza stimare domanda, costi e capacità, la scelta sarebbe basata su intuizioni non verificate."
+        },
+        {
+          "heading": "3.8.2 Implementare"
+        },
+        {
+          "text": "Implementare significa trasformare piani e decisioni in attività reali: assegnare responsabilità, impiegare personale e risorse, coordinare processi, risolvere problemi operativi. Richiede supervisione e la possibilità di adattare le attività quando cambiano condizioni o vincoli."
+        },
+        {
+          "heading": "3.8.3 Controllare"
+        },
+        {
+          "text": "Controllare significa favorire comportamenti e decisioni coerenti con gli obiettivi. Le informazioni servono per comunicare programmi, motivare persone, richiamare l’attenzione sui problemi, valutare unità e responsabili. Il controllo non coincide con la ricerca di un colpevole: è un processo di apprendimento e miglioramento."
+        },
+        {
+          "text": "Il ciclo di feedback confronta risultati effettivi e attesi. Se emergono differenze rilevanti, bisogna indagarne le cause, correggere azioni e processi e, se le ipotesi iniziali sono cambiate, rivedere il piano. Lo scostamento è un segnale, non automaticamente la prova di una prestazione negativa."
+        },
+        {
+          "image": "cdg-p24-1.png",
+          "caption": "Ciclo di pianificazione, attuazione, controllo e feedback.",
+          "alt": "Ciclo di pianificazione, attuazione, controllo e feedback."
+        }
+      ],
+      "concept": "Il processo di management: programmare, implementare, controllare"
+    },
+    {
+      "id": "3-9",
+      "title": "3.9 Che cos’è il controllo di gestione",
+      "topics": [
+        "cdg-c03-t09"
+      ],
+      "blocks": [
+        {
+          "text": "Il controllo organizzativo comprende i meccanismi con cui il management orienta decisioni e comportamenti verso gli obiettivi dell’impresa. Il controllo di gestione è il processo che produce e utilizza informazioni prevalentemente quantitative, monetarie e non monetarie, per supportare tale orientamento e il raggiungimento degli obiettivi."
+        },
+        {
+          "text": "Per comprenderne il ruolo occorre distinguere tre prospettive complementari: misurare i costi e i risultati; controllare le prestazioni e motivare comportamenti; supportare le scelte fra alternative. Uno stesso costo può quindi essere misurato in modo differente a seconda della finalità: per valorizzare un prodotto finito servono informazioni diverse da quelle richieste per decidere se accettare un ordine speciale."
+        }
+      ],
+      "concept": "Che cos’è il controllo di gestione"
+    },
+    {
+      "id": "3-10",
+      "title": "3.10 Le dodici differenze fra bilancio e controllo di gestione",
+      "topics": [
+        "cdg-c03-t10"
+      ],
+      "blocks": [
+        {
+          "heading": "3.10.1 Necessità d’uso"
+        },
+        {
+          "text": "La predisposizione del bilancio risponde a obblighi normativi nei casi previsti; un sistema interno di controllo di gestione non ha un unico formato obbligatorio. L’impresa decide quali strumenti sviluppare in funzione della propria complessità."
+        },
+        {
+          "heading": "3.10.2 Scopo"
+        },
+        {
+          "text": "Il bilancio rende conto dei risultati e della situazione patrimoniale; il controllo di gestione produce informazioni che aiutano ad agire, decidere e correggere."
+        },
+        {
+          "heading": "3.10.3 Utilizzatori"
+        },
+        {
+          "text": "Il bilancio si rivolge anche a stakeholder esterni, spesso non identificati individualmente; il reporting gestionale è progettato per dirigenti e responsabili specifici."
+        },
+        {
+          "heading": "3.10.4 Struttura sottostante"
+        },
+        {
+          "text": "Il bilancio poggia sulla struttura contabile di attività, passività, patrimonio netto, costi e ricavi. Il controllo di gestione organizza le misure in funzione della domanda: prodotto, reparto, attività, decisione, obiettivo."
+        },
+        {
+          "heading": "3.10.5 Fonte dei principi"
+        },
+        {
+          "text": "Il financial accounting segue regole contabili e legali; il management accounting può scegliere criteri appropriati allo scopo informativo, rendendoli comunque coerenti e verificabili."
+        },
+        {
+          "heading": "3.10.6 Prospettiva temporale"
+        },
+        {
+          "text": "Il bilancio è prevalentemente storico; il controllo di gestione integra storia e futuro mediante budget, stime, simulazioni e scenari."
+        },
+        {
+          "heading": "3.10.7 Contenuto delle informazioni"
+        },
+        {
+          "text": "Il bilancio usa prevalentemente valori monetari; il controllo può utilizzare quantità vendute, ore macchina, difetti, lead time, saturazione e soddisfazione del cliente."
+        },
+        {
+          "heading": "3.10.8 Precisione"
+        },
+        {
+          "text": "Il bilancio richiede criteri di misurazione disciplinati; il controllo può usare approssimazioni ragionate quando tempestività e rilevanza rendono utile una stima, indicando sempre le ipotesi."
+        },
+        {
+          "heading": "3.10.9 Frequenza del reporting"
+        },
+        {
+          "text": "Il bilancio d’esercizio ha una periodicità generalmente annuale; i report di gestione possono essere mensili, settimanali, giornalieri o per evento."
+        },
+        {
+          "heading": "3.10.10 Tempestività del reporting"
+        },
+        {
+          "text": "La rendicontazione esterna avviene dopo la chiusura del periodo, secondo scadenze applicabili; i report gestionali devono arrivare in tempo utile per intervenire."
+        },
+        {
+          "heading": "3.10.11 Oggetto del reporting"
+        },
+        {
+          "text": "Il bilancio rappresenta principalmente l’intera entità; il controllo mette a fuoco anche porzioni: linee di prodotto, clienti, progetti, stabilimenti."
+        },
+        {
+          "heading": "3.10.12 Responsabilità potenziali"
+        },
+        {
+          "text": "La rendicontazione esterna comporta responsabilità legali e professionali specifiche; le informazioni gestionali hanno regole interne più flessibili, ma possono comunque comportare rilevanti responsabilità organizzative e, in determinati casi, giuridiche."
+        },
+        {
+          "text": "Nota di approfondimento: la dodicesima differenza, spesso presentata schematicamente come assenza di responsabilità per il controllo di gestione, non va intesa letteralmente. Un report interno errato può provocare decisioni dannose; rimangono quindi essenziali qualità dei dati, controlli interni ed etica professionale."
+        }
+      ],
+      "concept": "Le dodici differenze fra bilancio e controllo di gestione"
+    },
+    {
+      "id": "3-11",
+      "title": "3.11 Le tre principali analogie",
+      "topics": [
+        "cdg-c03-t11"
+      ],
+      "blocks": [
+        {
+          "heading": "3.11.1 Principi generali condivisi"
+        },
+        {
+          "text": "I sistemi interni riutilizzano spesso criteri di competenza economica, costo storico, documentabilità e coerenza, pur potendo rielaborare le informazioni per specifiche decisioni. Non sono mondi separati: per esempio, una fattura è rilevante sia per la registrazione contabile sia per il calcolo del costo di una commessa."
+        },
+        {
+          "heading": "3.11.2 Dati elementari condivisi"
+        },
+        {
+          "text": "Fatture, ordini evasi, pagamenti, materiali consumati e ore di lavoro possono alimentare sia la contabilità generale sia quella analitica. L’integrazione dei sistemi riduce duplicazioni e incoerenze; resta però necessario scegliere criteri di attribuzione adeguati."
+        },
+        {
+          "heading": "3.11.3 Supporto comune alle decisioni"
+        },
+        {
+          "text": "Anche il bilancio aiuta investitori, creditori e manager a decidere. La differenza non è quindi “bilancio inutile alle decisioni” contro “controllo utile”: si tratta di prospettive, destinatari, granularità e tempi diversi."
+        }
+      ],
+      "concept": "Le tre principali analogie"
+    },
+    {
+      "id": "3-12",
+      "title": "3.12 Oggetti di costo e sistema di misurazione",
+      "topics": [
+        "cdg-c03-t12"
+      ],
+      "blocks": [
+        {
+          "text": "L’oggetto di costo è qualsiasi entità per la quale si vuole misurare un costo: prodotto, servizio, commessa, attività, centro di costo, cliente o segmento. Definire l’oggetto è indispensabile prima del calcolo; un costo può essere diretto rispetto a un reparto ma indiretto rispetto al singolo prodotto."
+        }
+      ],
+      "concept": "Oggetti di costo e sistema di misurazione"
+    }
+  ],
+  "relations": [
+    {
+      "to": "3-1",
+      "relation": "I prospetti aggregati lasciano aperte domande sulla singola transazione",
+      "from": "3-5"
+    },
+    {
+      "to": "3-7",
+      "relation": "Il tipo di informazione orienta il sistema contabile da usare",
+      "from": "3-6"
+    },
+    {
+      "to": "3-2",
+      "relation": "La pertinenza del dato va valutata rispetto alla decisione",
+      "from": "3-6"
+    },
+    {
+      "to": "3-9",
+      "relation": "Il feedback del management si concretizza nel controllo di gestione",
+      "from": "3-8"
+    },
+    {
+      "to": "3-12",
+      "relation": "Per monitorare le risorse occorre definire che cosa misurare",
+      "from": "3-9"
+    }
+  ]
+}

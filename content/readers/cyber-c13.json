@@ -1,0 +1,109 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Metodo per il colloquio",
+      "concept": "Metodo per il colloquio",
+      "topics": [
+        "cyber-c13-t01",
+        "cyber-c13-t02",
+        "cyber-c13-t09",
+        "cyber-c13-t18"
+      ],
+      "pages": [
+        232,
+        233,
+        244,
+        252
+      ],
+      "blocks": [
+        {
+          "text": "Struttura la risposta partendo da obiettivo, asset e modello di fiducia. Presenta il meccanismo, poi garanzie, limiti e verifiche. Per i confronti usa gli stessi criteri fra alternative e spiega quale contesto modifica la scelta."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Simulazioni su identità, crittografia e protocolli",
+      "concept": "Simulazioni su identità, crittografia e protocolli",
+      "topics": [
+        "cyber-c13-t03",
+        "cyber-c13-t04",
+        "cyber-c13-t07",
+        "cyber-c13-t11",
+        "cyber-c13-t14",
+        "cyber-c13-t16"
+      ],
+      "pages": [
+        235,
+        236,
+        241,
+        246,
+        249,
+        250
+      ],
+      "blocks": [
+        {
+          "text": "Per ogni scenario identifica endpoint, credenziali, autorità di fiducia e informazioni protette. Distingui autenticazione, autorizzazione e integrità dei messaggi. Collega le garanzie tecniche alla gestione di chiavi, token e sessioni."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Simulazioni su rete, rischio e protezione dati",
+      "concept": "Simulazioni su rete, rischio e protezione dati",
+      "topics": [
+        "cyber-c13-t06",
+        "cyber-c13-t08",
+        "cyber-c13-t10",
+        "cyber-c13-t13",
+        "cyber-c13-t17"
+      ],
+      "pages": [
+        239,
+        243,
+        245,
+        248,
+        251
+      ],
+      "blocks": [
+        {
+          "text": "Esplicita i confini del sistema, individua i flussi autorizzati e motiva i controlli. Stima l’impatto prima di scegliere una misura. Aggiungi un modo per verificare sia la protezione sia la continuità del servizio."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Simulazione di risposta a un incidente",
+      "concept": "Simulazione di risposta a un incidente",
+      "topics": [
+        "cyber-c13-t12"
+      ],
+      "pages": [
+        247
+      ],
+      "blocks": [
+        {
+          "text": "Raccogli evidenze e chiarisci come stimare perimetro e impatto. Collega monitoraggio, contenimento, recupero e verifica. Concludi indicando responsabilità e cambiamenti da riesaminare dopo l’incidente."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "1",
+      "to": "2",
+      "relation": "Applica la struttura della risposta distinguendo le garanzie dei protocolli."
+    },
+    {
+      "from": "1",
+      "to": "3",
+      "relation": "Applica gli stessi criteri a un caso di progettazione e governo del rischio."
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "relation": "La gestione di un incidente verifica in pratica il piano e le responsabilità."
+    }
+  ]
+}

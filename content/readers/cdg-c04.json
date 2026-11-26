@@ -1,0 +1,1192 @@
+{
+  "sections": [
+    {
+      "id": "introduzione",
+      "title": "Introduzione",
+      "topics": [],
+      "blocks": [
+        {
+          "image": "cdg-p26-2.png",
+          "caption": "La logica del capitolo: definire cosa misurare, per quale finalità, con quali costi.",
+          "alt": "La logica del capitolo: definire cosa misurare, per quale finalità, con quali costi."
+        },
+        {
+          "text": "Obiettivo generale: Saper leggere qualsiasi elemento di costo, individuare l’oggetto di calcolo, selezionare le classificazioni utili, costruire configurazioni progressive e motivare perché il costo corretto dipende dalla finalità dell’analisi."
+        }
+      ],
+      "concept": "Introduzione"
+    },
+    {
+      "id": "4-1",
+      "title": "4.1 Perché classificare i costi",
+      "topics": [
+        "cdg-c04-t01"
+      ],
+      "blocks": [
+        {
+          "text": "Il costo non è un numero “unico” che esiste indipendentemente dalla domanda posta dal manager. Un’impresa può misurare il costo di un prodotto, di una commessa, di un cliente, di un reparto o di una decisione: ciascuno di questi oggetti richiede un perimetro appropriato di risorse e una diversa logica di attribuzione. Il medesimo esborso può quindi essere classificato in modi diversi senza contraddizione, purché siano esplicitati l’oggetto di costo e la finalità dell’informazione."
+        },
+        {
+          "text": "Si consideri un impianto utilizzato soltanto per produrre un determinato articolo. La sua quota di ammortamento è direttamente riferibile alla linea di prodotto, quindi può essere un costo diretto e specifico di quella linea; nello stesso tempo, se la quota annua resta costante al variare delle quantità nel breve periodo, è un costo fisso. Se l’impianto è invece utilizzato per più prodotti, lo stesso tipo di costo può diventare indiretto e comune rispetto ai singoli prodotti."
+        },
+        {
+          "text": "Le classificazioni servono a quattro finalità centrali: determinare il costo dei beni in magazzino; orientare decisioni economiche; pianificare budget e fabbisogni di risorse; controllare l’efficienza confrontando risultati attesi e conseguiti. Per ciascuna finalità può essere opportuna una diversa configurazione di costo e una diversa natura dei dati, preventivi o consuntivi."
+        },
+        {
+          "text": "Regola fondamentale: Prima di utilizzare una formula, scrivere: (1) oggetto di costo, (2) periodo di riferimento, (3) scopo del calcolo, (4) comportamento dei fattori produttivi, (5) criteri di imputazione."
+        }
+      ],
+      "concept": "Perché classificare i costi"
+    },
+    {
+      "id": "4-2",
+      "title": "4.2 Dal costo di acquisto al costo di produzione e al TCO",
+      "topics": [
+        "cdg-c04-t02"
+      ],
+      "blocks": [
+        {
+          "heading": "4.2.1 Costo di acquisto"
+        },
+        {
+          "text": "Il costo di acquisto nasce da una transazione con un fornitore. Comprende il prezzo concordato e, quando pertinente, gli oneri accessori necessari ad acquisire il bene nelle condizioni e nel luogo di utilizzo, al netto di sconti commerciali e altri elementi applicabili. Non coincide necessariamente con il solo prezzo indicato sulla fattura del fornitore: trasporto in entrata, dazi non recuperabili e altre spese direttamente attribuibili possono far parte del costo di acquisto secondo la disciplina contabile pertinente."
+        },
+        {
+          "heading": "Costo di acquisto = prezzo netto + oneri accessori imputabili"
+        },
+        {
+          "text": "Esempio: l’impresa compra 100 componenti per 5.000 €, sostenendo 400 € di trasporto e ricevendo uno sconto commerciale di 200 €. Il costo di acquisto complessivo è 5.200 €; il costo medio per componente è 52 €. Se i 400 € fossero trasporti per consegnare il prodotto finito al cliente, avrebbero invece una destinazione diversa e non costituirebbero il costo di acquisizione del componente."
+        },
+        {
+          "heading": "4.2.2 Costo di produzione"
+        },
+        {
+          "text": "Il costo di produzione esprime il valore monetario delle risorse utilizzate per ottenere un output. Può riferirsi a una unità di prodotto, a un lotto, a una commessa o a una fase produttiva. Comprende componenti direttamente misurabili e quote di costi indiretti, quando la configurazione prescelta lo richiede. Per il bilancio delle rimanenze si adottano criteri propri: non tutti i costi aziendali possono essere incorporati nel valore dei beni."
+        },
+        {
+          "formula": "Costo di produzione = costi diretti di produzione + quota pertinente di costi indiretti produttivi"
+        },
+        {
+          "text": "Esempio: per realizzare un mobile si consumano materiali per 120 €, manodopera diretta per 55 € e si attribuiscono 25 € di costi generali di fabbricazione. Il costo pieno di produzione è 200 €. Se la vendita del mobile genera ulteriori 15 € di provvigioni e spese commerciali, questi costi appartengono alla gestione aziendale, ma non diventano automaticamente costi di produzione del bene."
+        },
+        {
+          "heading": "4.2.3 Total Cost of Ownership (TCO)"
+        },
+        {
+          "text": "Il Total Cost of Ownership considera tutte le risorse economiche necessarie lungo il ciclo di vita di un bene o sistema. È particolarmente rilevante per macchinari, infrastrutture tecnologiche, sistemi informativi e contratti pluriennali: una soluzione dal prezzo iniziale inferiore può risultare più costosa se richiede maggiori manutenzioni, formazione, consumi e dismissione."
+        },
+        {
+          "image": "cdg-p27-1.png",
+          "caption": "Le quattro fasi principali da considerare nell’analisi del TCO.",
+          "alt": "Le quattro fasi principali da considerare nell’analisi del TCO."
+        },
+        {
+          "formula": "TCO nominale = acquisto + implementazione + esercizio + evoluzione + dismissione"
+        },
+        {
+          "text": "Il TCO è sempre riferito a un orizzonte temporale esplicito e a ipotesi funzionali comparabili. Se la scelta coinvolge flussi distribuiti in anni diversi, può essere opportuno attualizzarli: il criterio formale del valore attuale sarà sviluppato nel capitolo sul capital budgeting."
+        }
+      ],
+      "concept": "Dal costo di acquisto al costo di produzione e al TCO"
+    },
+    {
+      "id": "4-3",
+      "title": "4.3 Oggetti di costo, risorse, tracciabilità e driver",
+      "topics": [
+        "cdg-c04-t03"
+      ],
+      "blocks": [
+        {
+          "text": "L’oggetto di costo è l’entità per la quale si desidera misurare un costo. Gli oggetti finali sono tipicamente prodotti e servizi venduti; gli oggetti intermedi possono essere reparti, attività, processi, fasi, commesse, impianti o centri di responsabilità. Anche clienti, canali di vendita, mercati territoriali e progetti possono essere oggetti rilevanti."
+        },
+        {
+          "text": "La prima conseguenza è che un costo diretto rispetto a un oggetto può essere indiretto rispetto a un altro. Lo stipendio del responsabile del reparto verniciatura può essere attribuito direttamente a quel reparto; se vi transitano decine di prodotti diversi, per il singolo prodotto è normalmente necessario un criterio di ripartizione."
+        },
+        {
+          "text": "Tracciabilità fisico-economica. È la possibilità di identificare in modo attendibile la risorsa consumata da un oggetto e il relativo valore. Se il consumo è direttamente osservabile ed economicamente conveniente da rilevare, si può utilizzare il procedimento diretto. In caso contrario si ricorre a un procedimento indiretto basato su un driver."
+        },
+        {
+          "text": "Base di ripartizione. È la grandezza utilizzata per distribuire un insieme di costi indiretti tra oggetti di costo: ore macchina, ore di manodopera, numero di ordini, superficie occupata, chilowattora misurati o altre misure coerenti con il fenomeno."
+        },
+        {
+          "text": "Cost driver. È il fattore che spiega, o contribuisce a spiegare, il consumo di risorse. Un driver scelto soltanto perché facile da misurare potrebbe produrre attribuzioni inesatte. La causalità deve prevalere sulla comodità contabile, nei limiti di affidabilità e costo dell’informazione."
+        },
+        {
+          "text": "Coefficiente di allocazione = costo indiretto da attribuire / totale della base"
+        },
+        {
+          "text": "Quota imputata all’oggetto i = coefficiente × quantità di base usata dall’oggetto i"
+        },
+        {
+          "text": "Esempio: due prodotti utilizzano lo stesso impianto che genera 24.000 € di costi indiretti. Il prodotto A assorbe 600 ore macchina e il B 900, per un totale di 1.500 ore. Il coefficiente è 24.000/1.500 = 16 €/ora. A riceve 9.600 € e B 14.400 €. Questa ripartizione rappresenta un’ipotesi ragionevole se il consumo delle risorse comuni è effettivamente legato al tempo di impiego dell’impianto."
+        },
+        {
+          "text": "Approfondimento: La scelta di una base unica può essere troppo semplificatrice quando le risorse indirette sono eterogenee. Centri di costo e Activity-Based Costing permettono ripartizioni più specifiche: saranno trattati nei capitoli successivi."
+        }
+      ],
+      "concept": "Oggetti di costo, risorse, tracciabilità e driver"
+    },
+    {
+      "id": "4-4",
+      "title": "4.4 Classificazione per natura e per destinazione",
+      "topics": [
+        "cdg-c04-t04"
+      ],
+      "blocks": [
+        {
+          "text": "La contabilità generale aggrega tradizionalmente molti costi per natura, ossia per tipo di fattore produttivo o di prestazione acquistata: personale, materie, servizi, ammortamenti, utenze. La contabilità analitica, pur potendo partire dagli stessi dati, li riorganizza anche per destinazione: a quale prodotto, reparto, processo, cliente o funzione sono serviti?"
+        },
+        {
+          "table": [
+            [
+              "Per natura: che cosa è stato consumato?",
+              "Per destinazione: per quale finalità?"
+            ],
+            [
+              "Energia elettrica",
+              "Reparto tornitura, reparto assemblaggio, uffici"
+            ],
+            [
+              "Retribuzioni",
+              "Produzione, commerciale, ricerca e sviluppo"
+            ],
+            [
+              "Ammortamenti",
+              "Macchinari dedicati, impianti comuni, server"
+            ],
+            [
+              "Servizi esterni",
+              "Collaudo commessa A, assistenza clienti, amministrazione"
+            ]
+          ]
+        },
+        {
+          "text": "Lo stesso totale dei costi aziendali può così essere analizzato lungo più dimensioni. Un costo classificato per natura non è “sbagliato”, ma è spesso insufficiente per valutare la redditività di un prodotto o la responsabilità di un reparto. Per il controllo di gestione si tende a integrare la natura con oggetto, destinazione e comportamento."
+        }
+      ],
+      "concept": "Classificazione per natura e per destinazione"
+    },
+    {
+      "id": "4-5",
+      "title": "4.5 Le dodici famiglie di classificazione",
+      "topics": [
+        "cdg-c04-t08",
+        "cdg-c04-t07",
+        "cdg-c04-t06",
+        "cdg-c04-t09",
+        "cdg-c04-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Le categorie seguenti seguono l’impostazione del corso. Non sono dodici alternative che si escludono a vicenda: rispondono a domande differenti. Un medesimo costo può comparire contemporaneamente in più categorie. La classificazione è sempre relativa a oggetto, orizzonte temporale e decisione."
+        },
+        {
+          "heading": "4.5.1 Costi diretti e costi indiretti"
+        },
+        {
+          "text": "Un costo è diretto rispetto a un oggetto di calcolo quando è possibile collegargli specificamente il consumo della risorsa mediante misurazioni attendibili ed economicamente sensate. Sono esempi tipici i materiali identificati nella distinta base di un prodotto, le ore di lavoro registrate su una commessa e una licenza pagata esclusivamente per un progetto."
+        },
+        {
+          "text": "È indiretto quando il fattore è utilizzato per più oggetti e non è osservabile, o non è conveniente osservare, quale quota sia stata consumata da ciascuno. Affitto di uno stabilimento condiviso, retribuzione del supervisore di più linee, manutenzione generale e illuminazione comune sono esempi frequenti. L’indiretto richiede una base di ripartizione per attribuire una quota ai prodotti."
+        },
+        {
+          "text": "L’attributo “diretto” non significa né “variabile” né “eliminabile”. Una macchina dedicata a un solo prodotto può generare un costo fisso diretto e non eliminabile nel brevissimo termine. Viceversa, l’energia totale di uno stabilimento può crescere con la produzione ma restare indiretta rispetto ai singoli prodotti, se il consumo non è misurato separatamente."
+        },
+        {
+          "text": "Errori da evitare: Non adottare la regola “tutti i costi diretti sono variabili”: è un’ipotesi semplificativa valida solo in alcuni casi, non una definizione generale."
+        },
+        {
+          "heading": "4.5.2 Costi variabili, fissi, misti e a scatti"
+        },
+        {
+          "text": "Il criterio è il comportamento del costo al variare del livello di attività, non la sua tracciabilità. Si deve sempre indicare la grandezza Q che esprime l’attività (pezzi, ore macchina, ore lavorate, interventi, chilometri). Un costo che cambia con Q può non cambiare con un altro indicatore, quindi la scelta del driver di attività è essenziale."
+        },
+        {
+          "text": "Costo variabile. Il costo variabile complessivo cresce o diminuisce con l’attività. Nel modello lineare, il costo variabile unitario v è costante, mentre il totale è proporzionale a Q."
+        },
+        {
+          "formula": "CV(Q) = v × Q | CV unitario = CV/Q = v"
+        },
+        {
+          "text": "Costo fisso. Il costo fisso complessivo resta costante nell’intervallo di attività e nel periodo considerati. Il costo fisso unitario, invece, diminuisce quando aumenta la quantità, poiché lo stesso importo viene ripartito su più unità."
+        },
+        {
+          "formula": "CF(Q) = F | CF unitario = F/Q, per Q > 0"
+        },
+        {
+          "text": "Costo misto (semivariabile). Comprende una quota fissa e una proporzionale all’attività: per esempio una bolletta con canone e consumo, o un contratto di manutenzione con quota base e corrispettivo per ogni intervento."
+        },
+        {
+          "formula": "C(Q) = F + v × Q"
+        },
+        {
+          "text": "Costo a scatti. Rimane costante per fasce di attività e aumenta quando si supera una soglia operativa: ad esempio una squadra di supervisione aggiuntiva ogni 30 operatori o l’affitto di un nuovo magazzino quando quello esistente raggiunge la capacità massima."
+        },
+        {
+          "image": "cdg-p29-1.png",
+          "caption": "Quattro comportamenti di costo. Andamenti teorici per intervalli pertinenti; i valori sono illustrativi.",
+          "alt": "Quattro comportamenti di costo. Andamenti teorici per intervalli pertinenti; i valori sono illustrativi."
+        },
+        {
+          "text": "Il carattere fisso è relativo: nel breve periodo e nell’intervallo di rilevanza un costo può essere fisso, mentre nel lungo periodo può essere modificato attraverso la capacità produttiva o la revisione dei contratti. È pertanto scorretto affermare che i costi fissi non possano mai variare."
+        },
+        {
+          "heading": "4.5.3 Costi specifici e costi comuni"
+        },
+        {
+          "text": "Un costo è specifico quando riguarda risorse destinate esclusivamente a un determinato oggetto (linea, prodotto, divisione), pur non essendo necessariamente diretto rispetto all’unità di prodotto. È comune quando serve più oggetti. La categoria specifico/comune è legata alla destinazione delle risorse; quella diretto/indiretto enfatizza la possibilità di attribuzione mediante misura diretta oppure per riparto."
+        },
+        {
+          "text": "Esempio: l’ammortamento della pressa dedicata esclusivamente alla linea A è specifico della linea A, ma per determinare la quota assorbita da un singolo articolo potrebbe essere necessario suddividerlo per ore o pezzi prodotti. Il canone del capannone utilizzato per A e B è comune. Il costo del personale della manutenzione centralizzata è comune ai reparti serviti, anche se può essere ripartito sulla base degli interventi registrati."
+        },
+        {
+          "heading": "4.5.4 Costi comuni e costi congiunti"
+        },
+        {
+          "text": "Un costo comune nasce quando un fattore produttivo è utilizzabile, in modo contemporaneo o alternativo, per ottenere più prodotti e la direzione può decidere come distribuirne la capacità produttiva. È il caso di una macchina utilizzata per due articoli distinti; il problema principale è trovare una base di allocazione coerente."
+        },
+        {
+          "text": "Un costo congiunto sorge quando lo stesso processo genera inevitabilmente più output in proporzioni tecnicamente legate. La produzione contemporanea di diversi derivati da un’unica materia prima, oppure la raffinazione che produce più frazioni, costituiscono esempi classici. Prima del punto di separazione degli output il costo congiunto non può essere attribuito direttamente ai singoli prodotti; è possibile ripartirlo per finalità contabili, ad esempio con il valore relativo di vendita, ma tale riparto non elimina il carattere congiunto del processo."
+        },
+        {
+          "text": "Distinzione decisiva. Costi comuni = capacità condivisa fra prodotti, mix almeno in parte discrezionale. Costi congiunti = output vincolati tecnologicamente dal processo. Per una decisione dopo il punto di separazione, il costo congiunto già sostenuto può risultare irrilevante."
+        },
+        {
+          "heading": "4.5.5 Costi di prodotto e costi di periodo"
+        },
+        {
+          "text": "I costi di prodotto comprendono i costi associati alla produzione del bene secondo la configurazione e i criteri di valutazione pertinenti. In un’azienda manifatturiera si distinguono generalmente materiali diretti, manodopera diretta e costi generali produttivi. I costi di periodo non vengono incorporati nelle rimanenze e sono imputati economicamente al periodo di competenza. Molte spese generali e commerciali rientrano fra i costi di periodo."
+        },
+        {
+          "text": "Non bisogna confondere “costo pieno aziendale” — utile per analisi interne che includono una quota di costi commerciali, amministrativi e di struttura — con il costo di produzione utilizzabile per valorizzare le rimanenze nel bilancio. Quest’ultimo segue criteri contabili specifici, discussi nella sezione 4.10."
+        },
+        {
+          "heading": "4.5.6 Costi e ricavi eliminabili e ineliminabili"
+        },
+        {
+          "text": "Un costo è eliminabile quando scompare, nell’orizzonte considerato, scegliendo una determinata alternativa. È ineliminabile quando continua a essere sostenuto anche se si modifica o interrompe l’attività analizzata. Le qualificazioni dipendono dalla concreta possibilità di modificare contratti, personale, risorse e investimenti."
+        },
+        {
+          "text": "Esempio: cessando la produzione di un articolo non si dovranno più acquistare i materiali specifici per quell’articolo. L’affitto dello stabilimento, invece, potrebbe restare dovuto anche dopo la cessazione. Una retribuzione del personale dedicato può essere eliminabile solo se il relativo contratto o reimpiego consente di evitare effettivamente il costo: l’essere “specifico” non basta a dimostrare l’eliminabilità."
+        },
+        {
+          "heading": "4.5.7 Costi e ricavi differenziali"
+        },
+        {
+          "text": "Un valore è differenziale se cambia passando da un’alternativa a un’altra. Per confrontare le decisioni si considerano le differenze tra ricavi e costi futuri: ricavi emergenti e cessanti, costi emergenti e cessanti. I costi identici nelle due alternative non alterano il confronto, anche se molto elevati in valore assoluto."
+        },
+        {
+          "formula": "Vantaggio differenziale A−B = (RA−RB) − (CA−CB)"
+        },
+        {
+          "text": "Esempio: produrre internamente un componente costa, per unità, 18 € di materiali e 7 € di manodopera evitabile; acquistarlo all’esterno costa 30 € e richiede 2 € di controllo qualità aggiuntivo. Se un costo fisso di 50.000 € persiste in entrambe le alternative, quel costo non incide sul confronto a parità di capacità e qualità. Il costo differenziale del make è 25 €, quello del buy 32 €: il make presenta un vantaggio di 7 € per componente, prima di considerare eventuali opportunità alternative di utilizzo della capacità."
+        },
+        {
+          "heading": "4.5.8 Costi incrementali, marginali e sommersi"
+        },
+        {
+          "text": "Il costo incrementale è la variazione complessiva di costo associata a un aumento discreto del livello di attività o a una decisione: ΔC = C(Q+ΔQ)−C(Q). Il costo marginale è il costo aggiuntivo relativo a una unità ulteriore, o in termini matematici la derivata dC/dQ quando il modello è continuo e derivabile. Nel modello lineare C = F + vQ, il costo marginale coincide con v; con scatti di capacità e vincoli può essere differente."
+        },
+        {
+          "formula": "Costo incrementale = C(Q₂) − C(Q₁) | Costo marginale ≈ ΔC/ΔQ"
+        },
+        {
+          "text": "Il costo sommerso (sunk cost) è già sostenuto e non recuperabile né modificabile attraverso la decisione corrente. È generalmente irrilevante nel confronto tra alternative future. Il fatto che un bene sia stato acquistato per 100.000 € non significa che l’importo originario debba guidare oggi una decisione se il pagamento è passato e non recuperabile. Un eventuale valore di rivendita oggi disponibile è invece rilevante, perché rappresenta un’entrata alternativa o un costo opportunità."
+        },
+        {
+          "heading": "4.5.9 Costi e ricavi rilevanti, irrilevanti e figurativi"
+        },
+        {
+          "text": "L’informazione è rilevante per una scelta quando riguarda il futuro e differisce fra le alternative realisticamente disponibili. Sono irrilevanti i valori passati non modificabili e quelli futuri identici in tutte le opzioni. Una informazione contabile precisa può pertanto essere del tutto inutile per una particolare decisione, mentre una stima non rilevata nel bilancio può essere decisiva."
+        },
+        {
+          "text": "I costi figurativi rappresentano il valore economico di fattori impiegati senza generare necessariamente un pagamento o un costo rilevato nella contabilità generale: ad esempio il compenso teorico dell’attività svolta dall’imprenditore o il rendimento alternativo del capitale proprio. Sono utili nelle analisi di convenienza economica e devono essere distinti dai costi registrati contabilmente."
+        },
+        {
+          "heading": "4.5.10 Costi di breve e di lungo periodo"
+        },
+        {
+          "text": "Nel breve periodo alcuni fattori produttivi sono vincolati da capacità, contratti o decisioni già assunte: la direzione può variare soprattutto l’utilizzo dei fattori flessibili. Nel lungo periodo è possibile modificare anche la capacità produttiva, il numero di stabilimenti, gli investimenti e l’organizzazione del personale. Il periodo non corrisponde a un numero universale di mesi: dipende dall’orizzonte entro cui l’impresa può realmente riconfigurare le risorse."
+        },
+        {
+          "heading": "4.5.11 Costi out-of-pocket, contabili e costi opportunità"
+        },
+        {
+          "text": "I costi out-of-pocket comportano un esborso monetario effettivo, immediato o futuro. I costi contabili sono misurati e riconosciuti nel sistema contabile secondo criteri di competenza: possono non coincidere temporalmente con il pagamento. L’ammortamento, ad esempio, è un costo contabile che ripartisce un investimento, ma non è un’uscita di cassa del periodo in cui viene contabilizzato. Il costo opportunità è il beneficio economico della migliore alternativa a cui si rinuncia quando una risorsa scarsa viene destinata a un uso. È una grandezza economica di confronto, spesso priva di registrazione contabile. Se una sala aziendale può essere affittata a terzi per 2.000 € al mese, utilizzarla gratuitamente per un evento interno può comportare un costo opportunità di 2.000 €, se l’affitto alternativo era effettivamente praticabile."
+        },
+        {
+          "heading": "4.5.12 Costi e ricavi controllabili e non controllabili"
+        },
+        {
+          "text": "Un costo è controllabile da un responsabile se quest’ultimo dispone di autorità e strumenti per influenzarne significativamente l’ammontare entro l’orizzonte oggetto di valutazione. Il medesimo costo può essere non controllabile per un capo reparto ma controllabile per un direttore di stabilimento o per la direzione generale."
+        },
+        {
+          "text": "Esempio: il capo reparto può incidere sugli scarti di materie prime e sulle ore straordinarie, ma non può negoziare da solo il canone dello stabilimento. Il sistema di responsabilità economica dovrebbe valutare il manager soprattutto sui risultati che può influenzare, evitando di attribuirgli automaticamente l’intera variazione di costi causata da decisioni altrui."
+        }
+      ],
+      "concept": "Le dodici famiglie di classificazione"
+    },
+    {
+      "id": "4-6",
+      "title": "4.6 Relazioni tra classificazioni: tabella sinottica",
+      "topics": [
+        "cdg-c04-t10"
+      ],
+      "blocks": [
+        {
+          "image": "cdg-p32-1.png",
+          "caption": "L’attribuibilità all’oggetto e il comportamento rispetto a Q sono dimensioni distinte.",
+          "alt": "L’attribuibilità all’oggetto e il comportamento rispetto a Q sono dimensioni distinte."
+        },
+        {
+          "table": [
+            [
+              "Fattore e oggetto di riferimento",
+              "Diretto / indiretto",
+              "Fisso / variabile",
+              "Motivo"
+            ],
+            [
+              "Materiali per il prodotto A",
+              "Diretto",
+              "Variabile",
+              "Consumo misurabile per unità"
+            ],
+            [
+              "Ammortamento macchina dedicata ad A",
+              "Diretto a linea A; per unità dipende dal criterio",
+              "Fisso",
+              "Impianto esclusivo; quota annua"
+            ]
+          ]
+        },
+        {
+          "text": "stabile"
+        },
+        {
+          "table": [
+            [
+              "Energia comune ai prodotti A e B",
+              "Indiretto ai prodotti",
+              "Variabile/misto",
+              "Varia con attività, ma non misurata"
+            ],
+            [
+              "",
+              "",
+              "",
+              "per prodotto"
+            ],
+            [
+              "Affitto stabilimento multi-prodotto",
+              "Indiretto ai prodotti",
+              "Fisso nell’intervallo",
+              "Capacità comune, contratto annuo"
+            ],
+            [
+              "Provvigione su ciascuna vendita",
+              "Diretto all’ordine",
+              "Variabile",
+              "Matura per ogni vendita"
+            ],
+            [
+              "Retribuzione direttore di stabilimento",
+              "Indiretto ai prodotti",
+              "Fisso",
+              "Risorsa di coordinamento comune"
+            ]
+          ]
+        },
+        {
+          "text": "Per risolvere esercizi di classificazione conviene disegnare una griglia: nelle righe i fattori produttivi; nelle colonne le domande “rispetto a quale oggetto?”, “come varia con il volume?”, “è evitabile nella decisione?”, “è sotto il controllo di chi?”, “è costo di prodotto o di periodo?”. Ogni colonna può produrre una risposta diversa senza che ciò costituisca contraddizione."
+        }
+      ],
+      "concept": "Relazioni tra classificazioni: tabella sinottica"
+    },
+    {
+      "id": "4-7",
+      "title": "4.7 Comportamento dei costi e intervallo di rilevanza",
+      "topics": [
+        "cdg-c04-t10"
+      ],
+      "blocks": [
+        {
+          "text": "Il comportamento è definito rispetto a un cost driver di attività Q e a un intervallo di rilevanza (relevant range): l’insieme di livelli operativi in cui le ipotesi sui costi sono ragionevolmente valide. Un’impresa con un solo macchinario può sostenere 40.000 € di ammortamenti fissi per capacità fino a 10.000 unità. Superare tale soglia può richiedere un secondo impianto e modificare il costo fisso totale."
+        },
+        {
+          "formula": "Costo totale (modello lineare) = F + vQ, per Q nell’intervallo pertinente"
+        },
+        {
+          "formula": "Costo medio unitario = F/Q + v, per Q > 0"
+        },
+        {
+          "text": "Con F = 24.000 €/mese e v = 6 €/unità, a 1.000 unità il costo totale è 30.000 € e quello medio 30 €/unità. A 3.000 unità il totale è 42.000 € ma il costo medio scende a 14 €/unità. La componente variabile unitaria resta 6 €, mentre la quota fissa unitaria passa da 24 € a 8 €. È questo il meccanismo dell’assorbimento dei costi fissi."
+        },
+        {
+          "table": [
+            [
+              "Quantità Q",
+              "Costo fisso totale F",
+              "Costo variabile totale 6Q",
+              "Costo totale",
+              "Costo medio unitario"
+            ],
+            [
+              "1.000",
+              "24.000 €",
+              "6.000 €",
+              "30.000 €",
+              "30,00 €"
+            ],
+            [
+              "2.000",
+              "24.000 €",
+              "12.000 €",
+              "36.000 €",
+              "18,00 €"
+            ],
+            [
+              "3.000",
+              "24.000 €",
+              "18.000 €",
+              "42.000 €",
+              "14,00 €"
+            ]
+          ]
+        },
+        {
+          "text": "La relazione non autorizza a prevedere senza limiti: se una capacità massima è raggiunta, i costi fissi possono salire a gradini e i costi variabili unitari possono cambiare per turni straordinari, sconti quantità, scarti o inefficienze. Anche la distinzione fra costi di capacità impegnata (committed) e discrezionali (discretionary), talvolta usata nella letteratura manageriale, aiuta a capire che il grado di modificabilità dei costi fissi non è uguale per tutte le voci."
+        },
+        {
+          "text": "Approfondimento esterno OpenStax: Il modello lineare è una rappresentazione di pianificazione, non una legge fisica. Occorre verificare causalità del driver, fascia di capacità, orizzonte temporale, composizione del mix e stabilità delle condizioni operative."
+        }
+      ],
+      "concept": "Comportamento dei costi e intervallo di rilevanza"
+    },
+    {
+      "id": "4-8",
+      "title": "4.8 Stima della funzione di costo",
+      "topics": [
+        "cdg-c04-t11"
+      ],
+      "blocks": [
+        {
+          "text": "Nella pratica la componente fissa e quella variabile di un costo misto non sono sempre indicate in fattura. L’impresa può stimarle osservando dati di costo e di attività di più periodi. Sono possibili un esame grafico dei punti, il metodo del massimo e del minimo e una regressione con il metodo dei minimi quadrati."
+        },
+        {
+          "heading": "4.8.1 Metodo del massimo e del minimo"
+        },
+        {
+          "text": "Il metodo high–low impiega due osservazioni: quella associata al massimo livello di attività e quella associata al minimo. Non bisogna scegliere semplicemente il costo monetario massimo e minimo: la selezione si effettua in base alla quantità di attività, associando a ciascuna quantità il costo osservato nello stesso periodo."
+        },
+        {
+          "formula": "v = (Cmax_attività − Cmin_attività) / (Qmax − Qmin)"
+        },
+        {
+          "formula": "F = Cmax_attività − v × Qmax"
+        },
+        {
+          "text": "Supponiamo di aver osservato costi di manutenzione di 8.000 € quando la produzione è 1.000 unità e di 11.000 € quando raggiunge 2.000 unità. La quota variabile stimata è (11.000−8.000)/(2.000−1.000)=3 €/unità. La parte fissa è 11.000−3×2.000=5.000 €. Si ottiene C(Q)=5.000+3Q."
+        },
+        {
+          "image": "cdg-p33-1.png",
+          "caption": "Retta stimata con il metodo massimo–minimo. Punti e valori: esempio didattico originale.",
+          "alt": "Retta stimata con il metodo massimo–minimo. Punti e valori: esempio didattico originale."
+        },
+        {
+          "text": "Verifica: per Q = 1.000 il modello prevede 8.000 €; per Q = 2.000 prevede 11.000 €. Per Q = 1.500 il costo previsto è 9.500 €. La stima non deve essere estesa a volumi lontani dal campo osservato senza valutare nuovi livelli di capacità."
+        },
+        {
+          "heading": "4.8.2 Limiti e regressione ai minimi quadrati"
+        },
+        {
+          "text": "Il limite del metodo high–low è la dipendenza da sole due osservazioni: un mese anomalo può alterare il risultato. È buona pratica osservare prima un diagramma di dispersione e chiedersi se esista un legame plausibile fra driver e costo. La regressione lineare ai minimi quadrati utilizza tutte le osservazioni e sceglie i parametri F e v che minimizzano la somma dei quadrati degli scarti dei costi osservati rispetto ai costi stimati."
+        },
+        {
+          "text": "Minimizzare Σ [Cᵢ − (F + vQᵢ)]²"
+        },
+        {
+          "text": "La regressione non garantisce causalità: un alto adattamento statistico può nascondere una scelta errata del driver, dati non omogenei o cambiamenti di struttura. A livello d’esame è fondamentale saper interpretare almeno il significato di intercetta, coefficiente angolare e intervallo di validità. Le applicazioni numeriche più complesse saranno affrontate quando le esercitazioni lo richiederanno."
+        }
+      ],
+      "concept": "Stima della funzione di costo"
+    },
+    {
+      "id": "4-9",
+      "title": "4.9 Configurazioni progressive di costo",
+      "topics": [
+        "cdg-c04-t12",
+        "cdg-c04-t13"
+      ],
+      "blocks": [
+        {
+          "text": "Una configurazione di costo specifica quali componenti includere nella misura del costo dell’oggetto. Le configurazioni parziali considerano solo alcune classi; quelle piene includono quote di costi indiretti. Non esiste un costo pieno “naturale” indipendente dalle regole di attribuzione: la composizione dipende dalle finalità e dalle basi di ripartizione adottate."
+        },
+        {
+          "image": "cdg-p34-1.png",
+          "caption": "Logica cumulativa delle principali configurazioni richieste nel corso.",
+          "alt": "Logica cumulativa delle principali configurazioni richieste nel corso."
+        },
+        {
+          "heading": "4.9.1 Costo primo e costi diretti di trasformazione"
+        },
+        {
+          "text": "Nella nomenclatura delle slide e degli appunti Arcari utilizzata per il corso, il costo primo comprende materie prime e parti componenti. Il costo diretto di trasformazione comprende la manodopera diretta e gli altri oneri direttamente riconducibili alla trasformazione del bene. Dalla somma delle due componenti si ottiene il costo diretto di produzione."
+        },
+        {
+          "text": "Costo primo = materie prime + parti componenti"
+        },
+        {
+          "text": "Costo diretto di trasformazione = MOD + altri costi diretti di trasformazione"
+        },
+        {
+          "text": "Costo diretto di produzione = costo primo + costi diretti di trasformazione"
+        },
+        {
+          "text": "Nota di terminologia: Nella letteratura internazionale, il termine “prime costs” indica spesso materiali diretti + manodopera diretta; alcune impostazioni italiane usano anch’esse convenzioni diverse. Per la preparazione di questo insegnamento manteniamo la definizione adottata dal materiale della docente e segnaliamo esplicitamente la differenza per evitare confusioni."
+        },
+        {
+          "heading": "4.9.2 Costo pieno di produzione e costo pieno aziendale"
+        },
+        {
+          "text": "Il costo pieno di produzione aggiunge al costo diretto di produzione le quote di costi indiretti relativi all’area produttiva, come manutenzione, manodopera indiretta, ammortamenti di impianti comuni ed energia. Il costo pieno aziendale include anche gli oneri di natura commerciale, amministrativa e di struttura attribuiti secondo criteri appropriati. Si tratta di misure utili a scopi differenti e non intercambiabili."
+        },
+        {
+          "text": "Costo pieno di produzione = costo diretto di produzione + indiretti produttivi attribuiti"
+        },
+        {
+          "text": "Costo pieno aziendale = costo pieno di produzione + quote costi extra-produttivi"
+        },
+        {
+          "text": "Nella configurazione a costi variabili si considerano invece i costi che variano con l’attività; nella configurazione a costi diretti si considerano quelli direttamente attribuibili all’oggetto. Le due distinzioni non devono essere confuse: una configurazione direct costing basata sui costi direttamente attribuibili può includere un costo diretto fisso, mentre il variable costing guarda alla variabilità rispetto al volume."
+        },
+        {
+          "heading": "4.9.3 Scelta della configurazione in funzione dello scopo"
+        },
+        {
+          "table": [
+            [
+              "Scopo della misura",
+              "Configurazione particolarmente utile",
+              "Attenzione"
+            ],
+            [
+              "Valutazione delle rimanenze",
+              "Costo di produzione secondo OIC 13",
+              "Esclusi costi non incorporabili nel magazzino"
+            ],
+            [
+              "Decisione di breve periodo",
+              "Costi e ricavi futuri differenziali",
+              "Escludere costi comuni invariati e sommersi"
+            ],
+            [
+              "Controllo efficienza",
+              "Costi standard, budget e consuntivi omogenei",
+              "Separare volume, prezzo ed efficienza"
+            ],
+            [
+              "Politica dei prezzi nel medio",
+              "",
+              ""
+            ],
+            [
+              "periodo",
+              "Costi pertinenti + capacità + mercato + strategia",
+              "Non applicare meccanicamente un markup a"
+            ]
+          ]
+        },
+        {
+          "text": "ogni costo pieno Redditività per prodotto/cliente Configurazioni parziali o piene per destinazione Esplicitare criteri di allocazione e incertezza"
+        },
+        {
+          "heading": "4.9.4 Natura dei valori e organizzazione del sistema di rilevazione"
+        },
+        {
+          "text": "La misurazione del costo richiede anche di stabilire da quale momento temporale provengano i dati. Si distinguono valori storici o consuntivi, riferiti a risorse effettivamente consumate; valori attuali, che riflettono condizioni di prezzo e impiego correnti; e valori prospettici o preventivi, utilizzati per programmare. Tra questi ultimi assumono particolare rilievo i costi standard, definiti in base a consumi e prezzi ritenuti normali o obiettivo. La scelta non è una semplice preferenza di formato: varia in relazione alla domanda gestionale."
+        },
+        {
+          "text": "Per analizzare una commessa già conclusa può servire il costo effettivo, mentre per formulare un preventivo è necessario stimare materiali, ore di lavoro e costi indiretti futuri. Per controllare l’efficienza bisogna invece confrontare dati consuntivi e standard omogenei: confrontare il costo effettivo di 1.500 pezzi con il budget formulato per 1.000, senza isolare l’effetto del volume, può generare valutazioni fuorvianti."
+        },
+        {
+          "table": [
+            [
+              "Tipologia di valori",
+              "Domanda a cui risponde",
+              "Uso tipico"
+            ],
+            [
+              "Consuntivi / effettivi",
+              "Che cosa è realmente accaduto?",
+              "Consuntivazione, rendicontazione, analisi dei risultati"
+            ],
+            [
+              "Attuali",
+              "Quanto costerebbe oggi la stessa risorsa?",
+              "Aggiornamento preventivi e confronti"
+            ],
+            [
+              "Preventivi / stimati",
+              "Quanto prevediamo di spendere?",
+              "Budget e decisioni prima dell’azione"
+            ],
+            [
+              "Standard",
+              "Quanto dovremmo consumare in condizioni definite?",
+              "Controllo dell’efficienza e scostamenti"
+            ]
+          ]
+        },
+        {
+          "text": "Una seconda scelta riguarda le modalità tecniche di raccolta: il sistema può essere integrato alla contabilità generale oppure elaborare separatamente i dati di dettaglio per prodotti e centri di costo. Nella terminologia tradizionale si incontrano sistemi unico integrato, duplice contabile integrato e duplice misto, dove alle rilevazioni contabili si affiancano analisi extra-contabili e statistiche. Al di là delle etichette, l’obiettivo operativo rimane poter riconciliare i dati aziendali con le analisi direzionali, documentando differenze di classificazione, imputazione e periodo."
+        },
+        {
+          "text": "Collegamento metodologico: Un buon sistema di controllo definisce insieme: oggetti e configurazioni (struttura), origine e tempi dei dati (processo), regole di attribuzione e soggetti responsabili. I metodi di costing dei prossimi capitoli approfondiranno le scelte di imputazione."
+        }
+      ],
+      "concept": "Configurazioni progressive di costo"
+    },
+    {
+      "id": "4-10",
+      "title": "4.10 Costi di prodotto, di periodo e rimanenze",
+      "topics": [
+        "cdg-c04-t14"
+      ],
+      "blocks": [
+        {
+          "text": "Per la valorizzazione delle rimanenze di un’impresa che redige il bilancio secondo principi contabili italiani, il riferimento è OIC 13. Il costo di produzione comprende costi diretti e costi generali produttivi ragionevolmente imputabili, per il periodo necessario a portare i beni nelle condizioni e nel luogo attuali. Non comprende i costi di distribuzione; sono inoltre escluse voci anomale e componenti non ammissibili secondo il principio."
+        },
+        {
+          "image": "cdg-p35-1.png",
+          "caption": "La configurazione gestionale non deve essere confusa con il criterio contabile di magazzino.",
+          "alt": "La configurazione gestionale non deve essere confusa con il criterio contabile di magazzino."
+        },
+        {
+          "heading": "4.10.1 Perché la capacità normale conta"
+        },
+        {
+          "text": "I costi indiretti fissi di produzione vengono attribuiti usando come riferimento la normale capacità produttiva, cioè il livello medio atteso di produzione in condizioni ordinarie, tenendo conto delle manutenzioni e delle interruzioni normalmente prevedibili. Se la produzione effettiva è eccezionalmente bassa, non si aumenta senza limite la quota fissa imputata a ciascun bene: la parte non assorbita costituisce generalmente costo dell’esercizio. Se la produzione è insolitamente alta, la quota unitaria è ridotta per evitare una valorizzazione eccessiva."
+        },
+        {
+          "text": "Esempio guidato: costi generali fissi di produzione = 120.000 €; capacità produttiva normale = 10.000 pezzi; produzione effettiva del periodo = 8.000 pezzi. Il coefficiente basato sulla normale capacità è 12 €/pezzo. Ai prodotti sono attribuibili, per questa componente, 96.000 €; i restanti 24.000 € riflettono capacità non assorbita e non vanno caricati sui prodotti in magazzino per il solo fatto che si è prodotto meno del normale."
+        },
+        {
+          "text": "Quota unitaria fissi = 120.000 / 10.000 = 12 €/pezzo"
+        },
+        {
+          "text": "Costi fissi assorbiti = 12 × 8.000 = 96.000 € | non assorbiti = 24.000 €"
+        },
+        {
+          "text": "L’esempio evidenzia perché il costo totale sostenuto e il valore delle rimanenze non coincidono necessariamente. La normativa contabile cerca di evitare che inefficienze e sottoutilizzo anomalo della capacità gonfino il valore dell’attivo."
+        },
+        {
+          "heading": "4.10.2 Costi di prodotto e costi di periodo nella gestione e nel bilancio"
+        },
+        {
+          "text": "Un costo commerciale può essere rilevante per decidere il prezzo di vendita, pur non essendo incorporabile nel costo di produzione delle rimanenze. Viceversa, un ammortamento industriale può essere allocato al costo di prodotto in bilancio, anche quando non è modificabile da una decisione di breve periodo. La distinzione tra “utile per la decisione” e “capitalizzabile nel magazzino” è uno dei concetti più importanti del management accounting."
+        },
+        {
+          "text": "Fonti Esterne: Approfondimento basato su OIC 13 (edizione ufficiale con emendamenti fino al 2023) e sul quadro equivalente dello IAS 2: l’uso della capacità normale è rilevante nell’allocazione dei costi indiretti fissi produttivi."
+        }
+      ],
+      "concept": "Costi di prodotto, di periodo e rimanenze"
+    },
+    {
+      "id": "4-11",
+      "title": "4.11 Caso integrato completo di costing",
+      "topics": [
+        "cdg-c04-t15"
+      ],
+      "blocks": [
+        {
+          "text": "Consideriamo un’impresa manifatturiera che produce nello stesso periodo due articoli, A e B. Tutti i valori sono ipotetici e costruiti per mostrare il passaggio da costo primo a costo pieno aziendale. I prodotti utilizzano la stessa risorsa produttiva, misurata in ore macchina. Si ipotizzano 1.200 unità di A e 800 unità di B, senza rimanenze, con costi extra-produttivi ripartiti per unità prodotta soltanto a fini dimostrativi."
+        },
+        {
+          "table": [
+            [
+              "Dati del periodo",
+              "Prodotto A",
+              "Prodotto B"
+            ],
+            [
+              "Quantità prodotte e vendute",
+              "1.200 u",
+              "800 u"
+            ],
+            [
+              "Prezzo di vendita unitario",
+              "100 €",
+              "180 €"
+            ],
+            [
+              "Materie prime unitarie",
+              "18 €",
+              "22 €"
+            ],
+            [
+              "Componenti unitari",
+              "4 €",
+              "5 €"
+            ],
+            [
+              "MOD unitaria",
+              "10 €",
+              "12 €"
+            ],
+            [
+              "Altri costi diretti trasformazione",
+              "2 €",
+              "3 €"
+            ],
+            [
+              "Ore macchina per unità",
+              "1 h",
+              "3 h"
+            ]
+          ]
+        },
+        {
+          "text": "I costi indiretti variabili complessivi di produzione ammontano a 36.000 €; quelli indiretti fissi di produzione a 72.000 €. I costi indiretti commerciali, amministrativi e generali considerati per questa configurazione gestionale ammontano a 24.000 €. Per semplicità, questi ultimi sono distribuiti sulle 2.000 unità complessive: una scelta contabile didattica, non automaticamente causale."
+        },
+        {
+          "heading": "4.11.1 Fase 1 — Costo primo e costo diretto di produzione"
+        },
+        {
+          "text": "Per A: costo primo = 18+4 = 22 €/u; costo diretto di trasformazione = 10+2 = 12 €/u; costo diretto di produzione = 34 €/u. Per B: costo primo = 22+5 = 27 €/u; trasformazione diretta = 12+3 = 15 €/u; costo diretto di produzione = 42 €/u."
+        },
+        {
+          "table": [
+            [
+              "Configurazione",
+              "A (€ / u)",
+              "B (€ / u)"
+            ],
+            [
+              "Costo primo",
+              "22,00",
+              "27,00"
+            ],
+            [
+              "Costi diretti trasformazione",
+              "12,00",
+              "15,00"
+            ],
+            [
+              "Costo diretto produzione",
+              "34,00",
+              "42,00"
+            ]
+          ]
+        },
+        {
+          "heading": "4.11.2 Fase 2 — Driver e coefficienti dei costi produttivi indiretti"
+        },
+        {
+          "text": "Le ore macchina utilizzate sono 1.200×1 = 1.200 ore per A e 800×3 = 2.400 ore per B, per un totale di 3.600 ore. Il coefficiente dei costi indiretti variabili è 36.000/3.600 = 10 €/ora. Il coefficiente dei costi indiretti fissi è 72.000/3.600 = 20 €/ora. Il coefficiente aggregato è quindi 30 €/ora."
+        },
+        {
+          "text": "Driver complessivo = 1.200×1 + 800×3 = 3.600 ore macchina"
+        },
+        {
+          "text": "CDA variabili = 36.000/3.600 = 10 €/h | CDA fissi = 72.000/3.600 = 20 €/h"
+        },
+        {
+          "text": "Ad A è attribuita una quota variabile di 10 €/u e fissa di 20 €/u, totale 30 €/u. A B è attribuita una quota variabile di 30 €/u e fissa di 60 €/u, totale 90 €/u. Per verificare la quadratura: 1.200×30 + 800×90 = 108.000 €, esattamente il totale degli indiretti produttivi."
+        },
+        {
+          "heading": "4.11.3 Fase 3 — Configurazioni unitarie progressive"
+        },
+        {
+          "table": [
+            [
+              "Elemento (€ / unità)",
+              "Prodotto A",
+              "Prodotto B"
+            ],
+            [
+              "Costo primo",
+              "22,00",
+              "27,00"
+            ],
+            [
+              "Trasformazione diretta",
+              "12,00",
+              "15,00"
+            ],
+            [
+              "Costo diretto produzione",
+              "34,00",
+              "42,00"
+            ],
+            [
+              "Indiretti produttivi variabili",
+              "10,00",
+              "30,00"
+            ],
+            [
+              "Costo variabile di produzione (*)",
+              "44,00",
+              "72,00"
+            ],
+            [
+              "Indiretti produttivi fissi",
+              "20,00",
+              "60,00"
+            ],
+            [
+              "Costo pieno di produzione",
+              "64,00",
+              "132,00"
+            ],
+            [
+              "Quota indiretti extra-produttivi",
+              "12,00",
+              "12,00"
+            ],
+            [
+              "Costo pieno aziendale",
+              "76,00",
+              "144,00"
+            ],
+            [
+              "Prezzo di vendita",
+              "100,00",
+              "180,00"
+            ],
+            [
+              "Differenza prezzo - costo pieno aziendale",
+              "24,00",
+              "36,00"
+            ]
+          ]
+        },
+        {
+          "text": "(*) In questo esempio i costi diretti di produzione sono assunti integralmente variabili. Questa è un’ipotesi del caso, non una proprietà necessaria di tutti i costi diretti."
+        },
+        {
+          "heading": "4.11.4 Fase 4 — Controllo dei totali e interpretazione"
+        },
+        {
+          "text": "Ricavi: A = 1.200×100 = 120.000 €; B = 800×180 = 144.000 €; ricavi complessivi = 264.000 €. Costi diretti: A = 1.200×34 = 40.800 €; B = 800×42 = 33.600 €; totale = 74.400 €. Aggiungendo 108.000 € di indiretti produttivi e 24.000 € di costi extra- produttivi, il costo aziendale complessivo è 206.400 €. Il risultato economico di questo modello è 57.600 €."
+        },
+        {
+          "text": "Risultato del periodo = 264.000 − 74.400 − 108.000 − 24.000 = 57.600 €"
+        },
+        {
+          "text": "Verifica alternativa: (100−76)×1.200 + (180−144)×800 = 28.800 + 28.800 = 57.600 €. La perfetta quadratura conferma la coerenza dei riparti. Tuttavia, la quota di 12 €/unità per i costi extra-produttivi dipende dalla base scelta: attribuire costi comuni non significa dimostrare che ogni unità causi esattamente quella quota. Per una decisione su un ordine aggiuntivo, eliminare il prodotto o usare capacità libera, il dato differenziale può essere diverso dal costo pieno aziendale."
+        },
+        {
+          "text": "Collegamento con i capitoli successivi: Le logiche di ripartizione per reparti, attività e driver multipli saranno sviluppate nei capitoli sul full costing e sull’ABC. Qui impariamo prima a classificare correttamente le componenti e a controllare i risultati."
+        }
+      ],
+      "concept": "Caso integrato completo di costing"
+    },
+    {
+      "id": "4-12",
+      "title": "4.12 Total Cost of Ownership: caso guidato",
+      "topics": [
+        "cdg-c04-t16"
+      ],
+      "blocks": [
+        {
+          "text": "Una società deve scegliere fra un sistema informatico installato e gestito internamente (soluzione X) e un servizio in abbonamento (soluzione Y). L’orizzonte decisionale è tre anni; le funzionalità e i livelli di servizio sono ipotizzati equivalenti. Per isolare il TCO, il primo confronto è nominale e non attualizzato."
+        },
+        {
+          "table": [
+            [
+              "Voce di costo",
+              "Soluzione X",
+              "Soluzione Y"
+            ],
+            [
+              "Acquisto licenze/hardware",
+              "18.000 €",
+              "0 €"
+            ],
+            [
+              "Installazione/attivazione",
+              "7.000 €",
+              "2.500 €"
+            ],
+            [
+              "Formazione iniziale",
+              "5.000 €",
+              "3.500 €"
+            ],
+            [
+              "Manutenzione e supporto (3 anni)",
+              "19.500 €",
+              "0 €"
+            ],
+            [
+              "Cloud/utenze o canone (3 anni)",
+              "12.600 €",
+              "40.500 €"
+            ],
+            [
+              "Gestione interna (3 anni)",
+              "0 €",
+              "12.000 €"
+            ],
+            [
+              "Aggiornamento straordinario",
+              "4.000 €",
+              "0 €"
+            ],
+            [
+              "Migrazione finale",
+              "3.500 €",
+              "3.500 €"
+            ],
+            [
+              "TCO nominale triennale",
+              "69.600 €",
+              "62.000 €"
+            ]
+          ]
+        },
+        {
+          "text": "La soluzione Y presenta un TCO nominale inferiore di 7.600 €. È però scorretto concludere che sia necessariamente la scelta migliore senza valutare sicurezza, disponibilità dei dati, costi di indisponibilità, lock-in contrattuale, qualità del servizio, crescita del numero di utenti e valore finanziario del tempo. Se le due opzioni hanno tempistiche di pagamento differenti, sarà opportuno un confronto finanziario attualizzato."
+        }
+      ],
+      "concept": "Total Cost of Ownership: caso guidato"
+    },
+    {
+      "id": "4-13",
+      "title": "4.13 Costi rilevanti nelle decisioni: applicazione",
+      "topics": [
+        "cdg-c04-t17"
+      ],
+      "blocks": [
+        {
+          "text": "Un cliente propone un ordine straordinario per 100 pezzi al prezzo di 90 € l’uno. I costi variabili aggiuntivi sono 55 € per pezzo e il trasporto specifico dell’ordine costa complessivamente 600 €. Gli affitti e i costi generali fissi per 8.000 € sono sostenuti comunque, qualunque sia la decisione. È disponibile capacità residua e non vi è, inizialmente, alcuna vendita alternativa sacrificata."
+        },
+        {
+          "text": "Margine incrementale = 100 × (90 − 55) − 600 = 2.900 €"
+        },
+        {
+          "text": "L’ordine genera un vantaggio differenziale di 2.900 € ed è economicamente conveniente, date le ipotesi. Sottrarre anche gli 8.000 € di costi fissi comuni invariati porterebbe a una conclusione errata: tali costi non cambiano tra accettazione e rifiuto."
+        },
+        {
+          "text": "Ora introduciamo un costo opportunità: se per accettare l’ordine si deve rinunciare a una commessa alternativa che avrebbe generato 3.500 € di margine netto incrementale, il vantaggio diventa 2.900−3.500 = −600 €. La stessa offerta non è più conveniente. È la prova che la risposta dipende dai costi e benefici *differenziali*, non dal costo pieno contabile attribuito al pezzo."
+        }
+      ],
+      "concept": "Costi rilevanti nelle decisioni: applicazione"
+    },
+    {
+      "id": "4-14",
+      "title": "4.14 Errori ricorrenti e metodo risolutivo",
+      "topics": [
+        "cdg-c04-t18"
+      ],
+      "blocks": [
+        {
+          "text": "Errore 1 — “Diretto” equivale a “variabile”. Falso: la prima dimensione riguarda la tracciabilità rispetto all’oggetto; la seconda riguarda il comportamento rispetto al volume."
+        },
+        {
+          "text": "Errore 2 — Un costo fisso è sempre costante. Falso: varia al cambiare di capacità, periodo, contratti e intervallo di attività."
+        },
+        {
+          "text": "Errore 3 — Il costo pieno è sempre quello da usare per decidere. Falso: scelte alternative richiedono spesso costi futuri differenziali e costi opportunità."
+        },
+        {
+          "text": "Errore 4 — Un costo specifico è sempre eliminabile. Falso: può non esserlo nel breve termine per rigidità contrattuali o tecniche."
+        },
+        {
+          "text": "Errore 5 — Il costo di prodotto include ogni costo dell’azienda. Falso: nel bilancio le rimanenze seguono criteri specifici; molte spese commerciali e amministrative restano costi di periodo."
+        },
+        {
+          "text": "Errore 6 — Il driver va scelto in base alla comodità. Falso: occorre cercare un nesso di consumo o causale, oltre a fattibilità e attendibilità."
+        },
+        {
+          "text": "Errore 7 — Il metodo high–low usa i due costi estremi. Falso: seleziona i livelli di attività massimo e minimo, utilizzando i costi corrispondenti."
+        },
+        {
+          "text": "Errore 8 — Un costo già sostenuto impone di proseguire il progetto. Falso: un costo sommerso non deve, da solo, orientare una decisione sul futuro."
+        },
+        {
+          "text": "PROCEDURA D’ESAME IN CINQUE PASSAGGI 1. Evidenzia oggetto e Q. 2. Classifica ogni voce secondo la domanda posta. 3. Separa costi direttamente misurabili e quote da attribuire. 4. Scrivi formule con unità di misura. 5. Controlla quadrature e interpreta il significato gestionale, non solo il valore numerico."
+        }
+      ],
+      "concept": "Errori ricorrenti e metodo risolutivo"
+    },
+    {
+      "id": "4-15",
+      "title": "4.15 Esercitazioni autonome e soluzioni",
+      "topics": [
+        "cdg-c04-t19"
+      ],
+      "blocks": [
+        {
+          "text": "Gli esercizi sono originali e costruiti per consolidare il programma. Si consiglia di completare la parte A senza consultare le soluzioni della parte B."
+        },
+        {
+          "heading": "4.15.1 Parte A — Esercizi senza soluzione immediata"
+        },
+        {
+          "text": "Esercizio 1. Classifica rispetto al prodotto A, al reparto e al volume: (a) materie prime con quantità per unità registrata; (b) affitto comune dello stabilimento; (c) manutenzione del macchinario dedicato ad A con canone fisso; (d) energia proporzionale alle ore dell’impianto condiviso. Motiva tutte le risposte."
+        },
+        {
+          "text": "Esercizio 2. Un’azienda sostiene 18.000 € mensili di costi fissi e 7,50 € variabili per unità. Calcola costo totale, quota fissa unitaria e costo medio a 600 e a 1.200 unità. Quali condizioni rendono valide le stime?"
+        },
+        {
+          "text": "Esercizio 3. La bolletta industriale è 6.800 € a 600 ore macchina e 9.800 € a 1.100 ore macchina. Stima la funzione di costo col metodo massimo-minimo e prevedi il costo a 900 ore."
+        },
+        {
+          "text": "Esercizio 4. Un prodotto richiede materiali per 14 €, componenti per 6 €, manodopera diretta per 9 €, altre lavorazioni dirette per 2 €, quota indiretti produttivi per 13 € e quota costi di vendita/amministrativi per 5 €. Determina costo primo, diretto di trasformazione, diretto di produzione, pieno industriale e pieno aziendale."
+        },
+        {
+          "text": "Esercizio 5. Un reparto sostiene costi indiretti per 45.000 € e realizza 3.000 ore macchina su due prodotti: A 1.200 ore e B 1.800 ore. Calcola coefficiente e quote attribuite. Spiega quale ipotesi giustifica l’uso delle ore macchina."
+        },
+        {
+          "text": "Esercizio 6. Un ordine extra produce 60 pezzi a 100 €; costo variabile per pezzo 65 €, preparazione specifica 900 €, affitto comune invariato 2.000 €. Calcola l’effetto differenziale. Come cambierebbe con un costo opportunità di 1.500 €?"
+        },
+        {
+          "text": "Esercizio 7. Un’impresa ha costi generali fissi produttivi di 90.000 €, capacità normale di 15.000 pezzi e produzione effettiva di 11.000. Calcola la quota fissa unitaria normale, l’importo assorbito e quello non assorbito, nell’ipotesi semplificata del principio OIC 13."
+        },
+        {
+          "worked": [
+            {
+              "text": "Soluzione esercizio 1. 1) (a) Diretto e normalmente variabile al prodotto A; (b) indiretto e fisso rispetto ai prodotti, comune al reparto/azienda; (c) specifico e fisso della linea A, direttamente riferibile alla linea ma per unità può richiedere attribuzione; (d) variabile rispetto alle ore macchina e indiretto rispetto ai due prodotti, se il consumo non è misurato individualmente. La classificazione non è assoluta: dichiarare sempre oggetto e driver."
+            },
+            {
+              "text": "Soluzione esercizio 2. 2) Q=600: CV=4.500 €, CT=22.500 €, quota fissa/u=30 €, costo medio=37,50 €/u. Q=1.200: CV=9.000 €, CT=27.000 €, quota fissa/u=15 €, costo medio=22,50 €/u. Valido nell’intervallo in cui F e v restano coerenti con le ipotesi."
+            },
+            {
+              "text": "Soluzione esercizio 3. 3) v=(9.800−6.800)/(1.100−600)=6 €/h. F=6.800−6×600=3.200 €. C(Q)=3.200+6Q. A 900 ore: 8.600 €."
+            },
+            {
+              "text": "Soluzione esercizio 4. 4) Costo primo=14+6=20 €. Trasformazione diretta=9+2=11 €. Diretto produzione=31 €. Pieno produzione=31+13=44 €. Pieno aziendale=44+5=49 €. Per la valorizzazione del magazzino la quota extra-produttiva non diventa automaticamente costo inventariabile."
+            },
+            {
+              "text": "Soluzione esercizio 5. 5) CDA=45.000/3.000=15 €/h macchina. Quota A=1.200×15=18.000 €; quota B=1.800×15=27.000 €. Quadratura: 45.000 €. L’imputazione è plausibile se l’impiego delle risorse comuni segue ragionevolmente le ore di funzionamento della macchina."
+            },
+            {
+              "text": "Soluzione esercizio 6. 6) Ricavi=6.000 €. Variabili aggiuntivi=3.900 €. Preparazione=900 €. Margine differenziale=1.200 €, dunque l’ordine è conveniente se non si sacrifica altro. Con 1.500 € di costo opportunità: 1.200−1.500=−300 €; non conviene. L’affitto invariato non cambia la decisione."
+            },
+            {
+              "text": "Soluzione esercizio 7. 7) Quota fissa normale=90.000/15.000=6 €/unità. Costi fissi produttivi assorbiti=11.000×6=66.000 €; residuo non assorbito=24.000 €. Il caso ipotizza sottoutilizzo rispetto alla capacità normale e assenza di ulteriori particolarità."
+            }
+          ],
+          "label": "4.15.2 Parte B — Soluzioni ragionate"
+        }
+      ],
+      "concept": "Esercitazioni autonome e soluzioni"
+    },
+    {
+      "id": "4-16",
+      "title": "4.16 Glossario operativo",
+      "topics": [
+        "cdg-c04-t19"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Termine",
+              "Definizione sintetica per il ripasso"
+            ],
+            [
+              "Oggetto di costo",
+              "Entità rispetto alla quale si vuole determinare un costo."
+            ],
+            [
+              "Costo diretto",
+              "Consumo tracciabile convenientemente all’oggetto."
+            ],
+            [
+              "Costo indiretto",
+              "Costo attribuito all’oggetto tramite una base."
+            ],
+            [
+              "Driver",
+              "Grandezza che misura o spiega l’utilizzo di una risorsa o attività."
+            ],
+            [
+              "Costo variabile",
+              "Totale che cambia con il volume nell’intervallo considerato."
+            ],
+            [
+              "Costo fisso",
+              "Totale relativamente costante nell’intervallo e periodo pertinenti."
+            ],
+            [
+              "Costo misto",
+              "Componente fissa più componente variabile."
+            ],
+            [
+              "Costo comune",
+              "Costo sostenuto per risorse condivise fra oggetti."
+            ],
+            [
+              "Costo congiunto",
+              "Costo di processo che genera output tecnicamente vincolati."
+            ],
+            [
+              "Costo sommerso",
+              "Costo già sostenuto e non recuperabile con la scelta attuale."
+            ],
+            [
+              "Costo opportunità",
+              "Beneficio della migliore alternativa praticabile rinunciata."
+            ],
+            [
+              "Costo differenziale",
+              "Differenza dei costi fra due alternative."
+            ],
+            [
+              "Costo pieno industriale",
+              "Costo diretto produttivo più indiretti produttivi attribuiti."
+            ],
+            [
+              "Costo pieno aziendale",
+              "Costo pieno industriale più extra-produttivi attribuiti."
+            ],
+            [
+              "Intervallo rilevante",
+              "Campo di attività in cui il modello di costo resta ragionevolmente valido."
+            ],
+            [
+              "Capacità normale",
+              "Produzione media attesa in condizioni normali ai fini dell’allocazione dei costi fissi nel magazzino."
+            ]
+          ]
+        }
+      ],
+      "concept": "Glossario operativo"
+    }
+  ],
+  "relations": [
+    {
+      "to": "4-3",
+      "relation": "La classificazione parte dall’oggetto di costo",
+      "from": "4-1"
+    },
+    {
+      "to": "4-5",
+      "relation": "La tracciabilità è uno dei criteri di classificazione",
+      "from": "4-3"
+    },
+    {
+      "to": "4-8",
+      "relation": "Dal comportamento osservato si stima la funzione di costo",
+      "from": "4-7"
+    },
+    {
+      "to": "4-10",
+      "relation": "Il perimetro dei costi determina anche la lettura del costo di prodotto",
+      "from": "4-9"
+    },
+    {
+      "to": "4-12",
+      "relation": "Il costo di possesso considera l’intero ciclo di vita",
+      "from": "4-2"
+    },
+    {
+      "to": "4-13",
+      "relation": "Per scegliere si isolano le voci che cambiano fra alternative",
+      "from": "4-5"
+    }
+  ]
+}

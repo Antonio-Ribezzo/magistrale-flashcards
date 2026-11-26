@@ -1,0 +1,2323 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cyber",
+  "source": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1: Introduzione alla Cybersecurity, pagine PDF 15–22; unica fonte autorizzata.",
+  "chapter": {
+    "id": "cyber-c01",
+    "title": "Introduzione alla Cybersecurity — obiettivi, minacce, asset, rischio e ciclo di sicurezza",
+    "order": 1,
+    "topics": [
+      {
+        "id": "cyber-c01-t01",
+        "title": "Definizione e ambito della cybersecurity"
+      },
+      {
+        "id": "cyber-c01-t02",
+        "title": "Obiettivi di sicurezza e triade CIA"
+      },
+      {
+        "id": "cyber-c01-t03",
+        "title": "Riservatezza e relative contromisure"
+      },
+      {
+        "id": "cyber-c01-t04",
+        "title": "Integrità e relative contromisure"
+      },
+      {
+        "id": "cyber-c01-t05",
+        "title": "Disponibilità e continuità del servizio"
+      },
+      {
+        "id": "cyber-c01-t06",
+        "title": "Identità, identificabilità, autenticazione e autenticità"
+      },
+      {
+        "id": "cyber-c01-t07",
+        "title": "Responsabilità, accountability e non ripudio"
+      },
+      {
+        "id": "cyber-c01-t08",
+        "title": "Famiglie di pratiche e meccanismi di sicurezza"
+      },
+      {
+        "id": "cyber-c01-t09",
+        "title": "Attacchi passivi: osservazione e intercettazione"
+      },
+      {
+        "id": "cyber-c01-t10",
+        "title": "Attacchi attivi: alterazione e interruzione"
+      },
+      {
+        "id": "cyber-c01-t11",
+        "title": "Asset da proteggere: risorse tecniche e organizzative"
+      },
+      {
+        "id": "cyber-c01-t12",
+        "title": "Vulnerabilità e minacce"
+      },
+      {
+        "id": "cyber-c01-t13",
+        "title": "Attacchi, incidenti e impatti"
+      },
+      {
+        "id": "cyber-c01-t14",
+        "title": "Rischio cyber e relazione tra i concetti"
+      },
+      {
+        "id": "cyber-c01-t15",
+        "title": "Superficie d’attacco: rete, software, hardware e persone"
+      },
+      {
+        "id": "cyber-c01-t16",
+        "title": "Security policy: obiettivi, regole e responsabilità"
+      },
+      {
+        "id": "cyber-c01-t17",
+        "title": "Decisioni gestionali e compromessi di sicurezza"
+      },
+      {
+        "id": "cyber-c01-t18",
+        "title": "Ciclo prevention, detection, response e recovery"
+      },
+      {
+        "id": "cyber-c01-t19",
+        "title": "Raccordo con NIST CSF 2.0"
+      },
+      {
+        "id": "cyber-c01-t20",
+        "title": "Collegamenti e preparazione all’esame orale"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§1.1 — pagina PDF 15",
+        "cardIds": [
+          "cyber-c01-q001",
+          "cyber-c01-q002",
+          "cyber-c01-q003",
+          "cyber-c01-q004",
+          "cyber-c01-q005"
+        ]
+      },
+      {
+        "label": "§1.1.1 — pagina PDF 15",
+        "cardIds": [
+          "cyber-c01-q006",
+          "cyber-c01-q007",
+          "cyber-c01-q008"
+        ]
+      },
+      {
+        "label": "§1.2 — pagina PDF 15",
+        "cardIds": [
+          "cyber-c01-q009",
+          "cyber-c01-q010",
+          "cyber-c01-q011",
+          "cyber-c01-q012"
+        ]
+      },
+      {
+        "label": "§1.2.1 — pagina PDF 16",
+        "cardIds": [
+          "cyber-c01-q013",
+          "cyber-c01-q014",
+          "cyber-c01-q015",
+          "cyber-c01-q016",
+          "cyber-c01-q017"
+        ]
+      },
+      {
+        "label": "§1.2.2 — pagina PDF 16",
+        "cardIds": [
+          "cyber-c01-q018",
+          "cyber-c01-q019",
+          "cyber-c01-q020",
+          "cyber-c01-q021",
+          "cyber-c01-q022"
+        ]
+      },
+      {
+        "label": "§1.2.3 — pagina PDF 16",
+        "cardIds": [
+          "cyber-c01-q023",
+          "cyber-c01-q024",
+          "cyber-c01-q025",
+          "cyber-c01-q026",
+          "cyber-c01-q027"
+        ]
+      },
+      {
+        "label": "§1.2.4 — pagina PDF 16",
+        "cardIds": [
+          "cyber-c01-q028",
+          "cyber-c01-q029",
+          "cyber-c01-q030",
+          "cyber-c01-q031",
+          "cyber-c01-q032",
+          "cyber-c01-q033"
+        ]
+      },
+      {
+        "label": "§1.2.5 — pagina PDF 16",
+        "cardIds": [
+          "cyber-c01-q034",
+          "cyber-c01-q035",
+          "cyber-c01-q036",
+          "cyber-c01-q037",
+          "cyber-c01-q038"
+        ]
+      },
+      {
+        "label": "§1.3 — pagina PDF 16",
+        "cardIds": [
+          "cyber-c01-q039",
+          "cyber-c01-q040"
+        ]
+      },
+      {
+        "label": "§1.3 — Crittografia — pagina PDF 16",
+        "cardIds": [
+          "cyber-c01-q041",
+          "cyber-c01-q042"
+        ]
+      },
+      {
+        "label": "§1.3 — Autenticazione — pagina PDF 16",
+        "cardIds": [
+          "cyber-c01-q043",
+          "cyber-c01-q044"
+        ]
+      },
+      {
+        "label": "§1.3 — Copertura del traffico — pagina PDF 17",
+        "cardIds": [
+          "cyber-c01-q045",
+          "cyber-c01-q046"
+        ]
+      },
+      {
+        "label": "§1.3 — Controllo del routing — pagina PDF 17",
+        "cardIds": [
+          "cyber-c01-q047",
+          "cyber-c01-q048"
+        ]
+      },
+      {
+        "label": "§1.3 — Controllo degli accessi — pagina PDF 17",
+        "cardIds": [
+          "cyber-c01-q049",
+          "cyber-c01-q050"
+        ]
+      },
+      {
+        "label": "§1.3 — Awareness e training — pagina PDF 17",
+        "cardIds": [
+          "cyber-c01-q051",
+          "cyber-c01-q052"
+        ]
+      },
+      {
+        "label": "§1.3 — Audit e accountability — pagina PDF 17",
+        "cardIds": [
+          "cyber-c01-q053",
+          "cyber-c01-q054"
+        ]
+      },
+      {
+        "label": "§1.3 — Contingency planning e incident response — pagina PDF 17",
+        "cardIds": [
+          "cyber-c01-q055",
+          "cyber-c01-q056"
+        ]
+      },
+      {
+        "label": "§1.3 — Monitoring e risk assessment — pagina PDF 17",
+        "cardIds": [
+          "cyber-c01-q057",
+          "cyber-c01-q058",
+          "cyber-c01-q059"
+        ]
+      },
+      {
+        "label": "§1.4 — pagina PDF 17",
+        "cardIds": [
+          "cyber-c01-q060",
+          "cyber-c01-q061"
+        ]
+      },
+      {
+        "label": "§1.4.1 — pagina PDF 18",
+        "cardIds": [
+          "cyber-c01-q062",
+          "cyber-c01-q063",
+          "cyber-c01-q064"
+        ]
+      },
+      {
+        "label": "§1.4.2 — pagina PDF 18",
+        "cardIds": [
+          "cyber-c01-q065",
+          "cyber-c01-q066",
+          "cyber-c01-q067",
+          "cyber-c01-q068",
+          "cyber-c01-q069"
+        ]
+      },
+      {
+        "label": "§1.4.3 — pagina PDF 18",
+        "cardIds": [
+          "cyber-c01-q070",
+          "cyber-c01-q071"
+        ]
+      },
+      {
+        "label": "§1.4.4 — pagina PDF 18",
+        "cardIds": [
+          "cyber-c01-q072",
+          "cyber-c01-q073"
+        ]
+      },
+      {
+        "label": "§1.5 — pagina PDF 18",
+        "cardIds": [
+          "cyber-c01-q074",
+          "cyber-c01-q075",
+          "cyber-c01-q076",
+          "cyber-c01-q077",
+          "cyber-c01-q078",
+          "cyber-c01-q079",
+          "cyber-c01-q080",
+          "cyber-c01-q081"
+        ]
+      },
+      {
+        "label": "§1.6 — pagina PDF 18",
+        "cardIds": [
+          "cyber-c01-q082"
+        ]
+      },
+      {
+        "label": "§1.6.1 — pagina PDF 19",
+        "cardIds": [
+          "cyber-c01-q083",
+          "cyber-c01-q084",
+          "cyber-c01-q085"
+        ]
+      },
+      {
+        "label": "§1.6.2 — pagina PDF 19",
+        "cardIds": [
+          "cyber-c01-q086",
+          "cyber-c01-q087",
+          "cyber-c01-q088"
+        ]
+      },
+      {
+        "label": "§1.6.3 — pagina PDF 19",
+        "cardIds": [
+          "cyber-c01-q089",
+          "cyber-c01-q090"
+        ]
+      },
+      {
+        "label": "§1.6.4 — pagina PDF 19",
+        "cardIds": [
+          "cyber-c01-q091",
+          "cyber-c01-q092",
+          "cyber-c01-q093"
+        ]
+      },
+      {
+        "label": "§1.6.5 — pagina PDF 19",
+        "cardIds": [
+          "cyber-c01-q094",
+          "cyber-c01-q095",
+          "cyber-c01-q096",
+          "cyber-c01-q097",
+          "cyber-c01-q098"
+        ]
+      },
+      {
+        "label": "§1.7 — pagina PDF 19",
+        "cardIds": [
+          "cyber-c01-q099",
+          "cyber-c01-q100",
+          "cyber-c01-q101"
+        ]
+      },
+      {
+        "label": "§1.7.1 — pagina PDF 20",
+        "cardIds": [
+          "cyber-c01-q102",
+          "cyber-c01-q103"
+        ]
+      },
+      {
+        "label": "§1.7.2 — pagina PDF 20",
+        "cardIds": [
+          "cyber-c01-q104",
+          "cyber-c01-q105"
+        ]
+      },
+      {
+        "label": "§1.7.3 — pagina PDF 20",
+        "cardIds": [
+          "cyber-c01-q106",
+          "cyber-c01-q107"
+        ]
+      },
+      {
+        "label": "§1.7.4 — pagina PDF 20",
+        "cardIds": [
+          "cyber-c01-q108",
+          "cyber-c01-q109",
+          "cyber-c01-q110"
+        ]
+      },
+      {
+        "label": "§1.8 — pagina PDF 20",
+        "cardIds": [
+          "cyber-c01-q111",
+          "cyber-c01-q112",
+          "cyber-c01-q113",
+          "cyber-c01-q114",
+          "cyber-c01-q115",
+          "cyber-c01-q116",
+          "cyber-c01-q117"
+        ]
+      },
+      {
+        "label": "§1.8 — Ruolo del security manager — pagina PDF 20",
+        "cardIds": [
+          "cyber-c01-q118",
+          "cyber-c01-q119",
+          "cyber-c01-q120",
+          "cyber-c01-q121"
+        ]
+      },
+      {
+        "label": "§1.9 — pagina PDF 21",
+        "cardIds": [
+          "cyber-c01-q122",
+          "cyber-c01-q123",
+          "cyber-c01-q124"
+        ]
+      },
+      {
+        "label": "§1.9.1 — pagina PDF 21",
+        "cardIds": [
+          "cyber-c01-q125",
+          "cyber-c01-q126",
+          "cyber-c01-q127"
+        ]
+      },
+      {
+        "label": "§1.9.2 — pagina PDF 21",
+        "cardIds": [
+          "cyber-c01-q128",
+          "cyber-c01-q129",
+          "cyber-c01-q130"
+        ]
+      },
+      {
+        "label": "§1.9.3 — pagina PDF 21",
+        "cardIds": [
+          "cyber-c01-q131",
+          "cyber-c01-q132",
+          "cyber-c01-q133"
+        ]
+      },
+      {
+        "label": "§1.9.4 — pagina PDF 21",
+        "cardIds": [
+          "cyber-c01-q134",
+          "cyber-c01-q135",
+          "cyber-c01-q136"
+        ]
+      },
+      {
+        "label": "§1.9.5 — pagina PDF 21",
+        "cardIds": [
+          "cyber-c01-q137",
+          "cyber-c01-q138",
+          "cyber-c01-q139"
+        ]
+      },
+      {
+        "label": "§1.10 — pagina PDF 21",
+        "cardIds": [
+          "cyber-c01-q140"
+        ]
+      },
+      {
+        "label": "§1.10 — pagina PDF 22",
+        "cardIds": [
+          "cyber-c01-q141",
+          "cyber-c01-q142"
+        ]
+      },
+      {
+        "label": "§1.11 — pagina PDF 22",
+        "cardIds": [
+          "cyber-c01-q143",
+          "cyber-c01-q144",
+          "cyber-c01-q145",
+          "cyber-c01-q146",
+          "cyber-c01-q147",
+          "cyber-c01-q148",
+          "cyber-c01-q149",
+          "cyber-c01-q150",
+          "cyber-c01-q151",
+          "cyber-c01-q152",
+          "cyber-c01-q153"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cyber-c01-q001",
+      "topicId": "cyber-c01-t01",
+      "question": "Come viene definita la cybersecurity nelle slide introduttive del docente?",
+      "answer": "È l’insieme di pratiche e meccanismi che permettono di raggiungere obiettivi di sicurezza nonostante la presenza di malintenzionati.",
+      "detail": "La definizione sottolinea contemporaneamente gli obiettivi da proteggere e la presenza di un avversario. Nel manuale è completata dalla gestione del rischio e dalla protezione di sistemi, reti, applicazioni, dati e servizi.",
+      "example": "Proteggere l’accesso a un servizio aziendale richiede regole, controlli e gestione degli incidenti, non soltanto un antivirus.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ridurre cybersecurity all’installazione di un singolo prodotto di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.1, pagina PDF 15"
+    },
+    {
+      "id": "cyber-c01-q002",
+      "topicId": "cyber-c01-t01",
+      "question": "Qual è la definizione operativa estesa di cybersecurity proposta dal manuale?",
+      "answer": "Proteggere sistemi, reti, applicazioni, dati e servizi da minacce capaci di comprometterne riservatezza, integrità, disponibilità o altre proprietà di sicurezza.",
+      "detail": "La protezione si ottiene progettando, realizzando, gestendo e controllando sistemi, per ridurre probabilità e impatto degli eventi dannosi. Non è una condizione statica raggiunta una volta per tutte.",
+      "example": "Un’impresa deve proteggere sia le informazioni sia la continuità del servizio che le tratta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare sicuro un sistema solo perché è stato configurato correttamente al momento del rilascio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.1, pagina PDF 15"
+    },
+    {
+      "id": "cyber-c01-q003",
+      "topicId": "cyber-c01-t01",
+      "question": "Perché la cybersecurity è una disciplina di gestione continuativa e non solo una tecnologia?",
+      "answer": "Perché coinvolge analisi dei rischi, progettazione, controlli, operatività, monitoraggio, risposta agli incidenti e recupero.",
+      "detail": "Le minacce e i sistemi cambiano: i controlli devono essere riesaminati, verificati e gestiti nel tempo. L’adozione di uno strumento senza policy o monitoraggio non equivale a gestione della sicurezza.",
+      "example": "Un servizio aziendale può avere una buona cifratura e comunque restare vulnerabile per autorizzazioni errate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che un controllo tecnico isolato basti a soddisfare ogni obiettivo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.1, pagina PDF 15"
+    },
+    {
+      "id": "cyber-c01-q004",
+      "topicId": "cyber-c01-t01",
+      "question": "Quali risorse rientrano nella protezione di cybersecurity secondo il Capitolo 1?",
+      "answer": "Sistemi, reti, applicazioni, dati e servizi, considerati rispetto alle loro proprietà di sicurezza e al valore per l’organizzazione.",
+      "detail": "I dati possono essere custoditi su dispositivi, attraversare reti o essere elaborati da applicazioni. La sicurezza non si limita ai soli file o ai soli apparati fisici.",
+      "example": "Un database, il collegamento al server e il portale che lo utilizza sono tutti oggetti rilevanti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Tralasciare servizi e applicazioni perché la sicurezza riguarderebbe soltanto le reti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.1, pagina PDF 15"
+    },
+    {
+      "id": "cyber-c01-q005",
+      "topicId": "cyber-c01-t01",
+      "question": "Perché è necessario proteggere sia i dati in transito sia quelli a riposo?",
+      "answer": "Perché i dati possono essere compromessi durante la trasmissione oppure mentre sono conservati negli archivi.",
+      "detail": "Proteggere soltanto la comunicazione non tutela automaticamente il database o i backup; proteggere solo gli archivi non impedisce intercettazioni del traffico. Sono due condizioni d’uso con rischi diversi e complementari.",
+      "example": "Una comunicazione può essere intercettata mentre una copia del database può essere letta da un soggetto non autorizzato.",
+      "formulas": [],
+      "connections": [
+        "Capitolo 0 — comunicazione tra client e server"
+      ],
+      "mistakes": "Pensare che proteggere il traffico renda automaticamente sicuro anche l’archivio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.1, pagina PDF 15"
+    },
+    {
+      "id": "cyber-c01-q006",
+      "topicId": "cyber-c01-t01",
+      "question": "Quali sono i tre elementi concettuali da distinguere quando si parla di cybersecurity?",
+      "answer": "Obiettivi di sicurezza; pratiche e meccanismi di sicurezza; attacchi e minacce.",
+      "detail": "Gli obiettivi indicano che cosa va garantito; i meccanismi indicano come provare a garantirlo; le minacce e gli attacchi rappresentano ciò che può impedirne il raggiungimento.",
+      "example": "Riservatezza = obiettivo; cifratura = possibile meccanismo; intercettazione = possibile attacco.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare un obiettivo come se fosse un prodotto o una contromisura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.1.1, pagina PDF 15"
+    },
+    {
+      "id": "cyber-c01-q007",
+      "topicId": "cyber-c01-t01",
+      "question": "Che differenza c’è tra un obiettivo di sicurezza e un meccanismo di sicurezza?",
+      "answer": "L’obiettivo descrive la proprietà da preservare; il meccanismo è un mezzo tecnico, umano o organizzativo impiegato per farlo.",
+      "detail": "La scelta del controllo dovrebbe discendere dalla proprietà richiesta e dal rischio concreto. Più controlli possono contribuire allo stesso obiettivo, e uno stesso controllo può sostenere più proprietà.",
+      "example": "La disponibilità è una proprietà; ridondanza e backup sono strumenti che possono contribuire a garantirla.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Chiamare “riservatezza” un algoritmo oppure “sicurezza” un elenco di software installati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.1.1, pagina PDF 15"
+    },
+    {
+      "id": "cyber-c01-q008",
+      "topicId": "cyber-c01-t01",
+      "question": "Qual è il ruolo di minacce e attacchi rispetto agli obiettivi di sicurezza?",
+      "answer": "Sono eventi o comportamenti che possono ostacolare o compromettere il raggiungimento delle proprietà desiderate.",
+      "detail": "Una minaccia rappresenta una possibile causa di danno; un attacco ne è una concretizzazione secondo il modello presentato nelle sezioni successive.",
+      "example": "Un attacco di interruzione del servizio contrasta l’obiettivo di disponibilità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere minaccia potenziale e attacco effettivamente verificatosi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.1.1, pagina PDF 15"
+    },
+    {
+      "id": "cyber-c01-q009",
+      "topicId": "cyber-c01-t02",
+      "question": "Quali cinque obiettivi di cybersecurity sono elencati nella slide 8 del docente?",
+      "answer": "Riservatezza, integrità, disponibilità, identificabilità e responsabilità.",
+      "detail": "La triade CIA comprende i primi tre; identificabilità e responsabilità riguardano la capacità di identificare soggetti/attività e attribuire correttamente le azioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Memorizzare soltanto la triade CIA dimenticando gli altri due obiettivi esplicitati dal docente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2, pagina PDF 15"
+    },
+    {
+      "id": "cyber-c01-q010",
+      "topicId": "cyber-c01-t02",
+      "question": "Che cosa significa la sigla CIA in ambito cybersecurity?",
+      "answer": "Confidentiality, Integrity, Availability, cioè riservatezza, integrità e disponibilità.",
+      "detail": "È il nucleo dei tre obiettivi fondamentali. Il capitolo aggiunge identificabilità, responsabilità e chiarimenti su autenticità e non ripudio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare la A come “Authentication”: nella triade CIA indica Availability.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2, pagina PDF 15"
+    },
+    {
+      "id": "cyber-c01-q011",
+      "topicId": "cyber-c01-t02",
+      "question": "Perché la triade CIA non esaurisce tutte le proprietà di sicurezza esaminate nel corso?",
+      "answer": "Perché è necessario anche sapere chi agisce, verificare l’origine o l’identità dichiarata e attribuire le azioni ai soggetti responsabili.",
+      "detail": "Il manuale affianca alla triade identificabilità e accountability; approfondisce inoltre autenticazione, autenticità e non ripudio, che non sono semplici sinonimi della riservatezza.",
+      "example": "Un documento non alterato può comunque avere origine incerta se il mittente non è autentico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere autenticità e integrità o equiparare identificabilità alla sola esistenza di un nome utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2, pagina PDF 15"
+    },
+    {
+      "id": "cyber-c01-q012",
+      "topicId": "cyber-c01-t02",
+      "question": "Come distingueresti all’orale le cinque proprietà elencate dal docente usando verbi?",
+      "answer": "Riservatezza: impedire letture illecite; integrità: impedire/rilevare alterazioni indebite; disponibilità: rendere utilizzabile il servizio; identificabilità: ricondurre attività a identità; responsabilità: attribuire azioni.",
+      "detail": "Queste sono sintesi mnemoniche da espandere con definizioni rigorose, esempi di violazione e relative contromisure.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere “chi sei” con “che cosa sei autorizzato a fare”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2, pagina PDF 15"
+    },
+    {
+      "id": "cyber-c01-q013",
+      "topicId": "cyber-c01-t03",
+      "question": "Che cos’è la riservatezza (confidentiality)?",
+      "answer": "La proprietà per cui un’informazione è accessibile soltanto a soggetti, processi o sistemi autorizzati.",
+      "detail": "Riguarda la conoscibilità del dato: anche una copia non autorizzata può compromettere la riservatezza senza alcuna modifica del contenuto.",
+      "example": "Un dipendente legge un documento per cui non possiede i permessi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che la riservatezza serve principalmente a impedire la cancellazione dei file.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.1, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q014",
+      "topicId": "cyber-c01-t03",
+      "question": "Quali esempi di perdita di riservatezza presenta il manuale?",
+      "answer": "Intercettazione di una comunicazione, esposizione in chiaro di un database e consultazione abusiva di documenti da parte di un dipendente.",
+      "detail": "Il denominatore comune è l’accesso informativo non autorizzato, indipendentemente dal fatto che il dato venga poi modificato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che solo un attaccante esterno possa violare la riservatezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.1, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q015",
+      "topicId": "cyber-c01-t03",
+      "question": "Quali contromisure sono associate alla riservatezza nel manuale?",
+      "answer": "Cifratura, controllo degli accessi, segmentazione della rete e principio del minimo privilegio.",
+      "detail": "La cifratura protegge il contenuto in condizioni appropriate; accessi e privilegi definiscono chi può conoscere una risorsa; la segmentazione limita esposizioni e percorsi.",
+      "example": "Un archivio sensibile è leggibile soltanto agli utenti autorizzati e le trasmissioni sono cifrate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che una rete segmentata o la sola cifratura sostituiscano l’autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.1, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q016",
+      "topicId": "cyber-c01-t03",
+      "question": "Una comunicazione può violare la riservatezza senza violare anche l’integrità?",
+      "answer": "Sì: un osservatore può leggere il contenuto senza modificarlo.",
+      "detail": "Questo è il caso caratteristico degli attacchi passivi. Il servizio può continuare a funzionare e il dato può rimanere identico, ma la sua segretezza è perduta.",
+      "example": "Un soggetto non autorizzato copia in lettura un messaggio mentre transita.",
+      "formulas": [],
+      "connections": [
+        "Capitolo 1 — attacchi passivi"
+      ],
+      "mistakes": "Credere che la mancanza di alterazioni renda automaticamente sicura una comunicazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.1, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q017",
+      "topicId": "cyber-c01-t03",
+      "question": "Se un utente legittimamente autenticato legge dati di un reparto non autorizzato, quale proprietà viola?",
+      "answer": "La riservatezza, attraverso un accesso che non rispetta i permessi previsti.",
+      "detail": "L’autenticazione accerta l’identità dichiarata, ma non conferisce automaticamente il diritto di conoscere ogni informazione.",
+      "example": "Un dipendente autenticato consulta dati commerciali di un altro reparto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiare login riuscito con autorizzazione universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.1, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q018",
+      "topicId": "cyber-c01-t04",
+      "question": "Che cos’è l’integrità (integrity) dei dati e dei sistemi?",
+      "answer": "La proprietà secondo cui dati e sistemi devono essere modificati solo in modi autorizzati, intenzionali e verificabili.",
+      "detail": "Il manuale mette in evidenza anche la capacità di rilevare alterazioni illecite o accidentali. Integrità non è sinonimo di correttezza sostanziale assoluta.",
+      "example": "Un file deve poter essere modificato da chi ha permesso e le modifiche non consentite devono essere impedite o rilevate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Definire integro un dato semplicemente perché “sembra plausibile”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.2, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q019",
+      "topicId": "cyber-c01-t04",
+      "question": "Perché un dato integro non coincide necessariamente con un dato corretto in senso assoluto?",
+      "answer": "Perché l’integrità riguarda modifiche autorizzate e rilevabilità delle alterazioni, non la verità del contenuto.",
+      "detail": "Un dato originariamente errato può non essere stato manomesso; viceversa, un dato fattualmente verosimile può essere stato modificato senza autorizzazione.",
+      "example": "Una cifra registrata male dall’origine resta diversa da un file manipolato da un attaccante.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostenere che una verifica d’integrità dimostri automaticamente la verità delle informazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.2, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q020",
+      "topicId": "cyber-c01-t04",
+      "question": "Quali esempi di compromissione dell’integrità cita il manuale?",
+      "answer": "Manomissione di file, modifica di messaggi in transito e alterazione malevola della configurazione di un sistema.",
+      "detail": "La violazione può riguardare sia dati conservati sia comunicazioni sia lo stato operativo dell’infrastruttura.",
+      "example": "Un malware cambia una configurazione di sicurezza di un server.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ridurre integrità ai soli documenti e ignorare le configurazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.2, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q021",
+      "topicId": "cyber-c01-t04",
+      "question": "Quali strumenti possono sostenere la proprietà di integrità?",
+      "answer": "Controllo degli accessi, funzioni hash, firme digitali, validazioni e logging.",
+      "detail": "Il controllo previene modifiche indebite; le verifiche crittografiche e i log possono aiutare a riconoscere o attribuire manomissioni, secondo l’uso appropriato.",
+      "example": "Si verifica l’impronta di un file dopo il trasferimento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che una semplice funzione hash autentichi da sola l’origine del messaggio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.2, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q022",
+      "topicId": "cyber-c01-t04",
+      "question": "Perché il logging può essere utile anche alla tutela dell’integrità?",
+      "answer": "Perché registra eventi e modifiche che possono consentire di individuare e ricostruire alterazioni anomale o non autorizzate.",
+      "detail": "È una misura di osservabilità e attribuzione, non una garanzia assoluta contro la manomissione: il capitolo ricorda anche la necessità di proteggere i log.",
+      "example": "Una modifica anomala a una configurazione lascia un evento consultabile in fase di audit.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che la presenza di un log impedisca materialmente tutte le modifiche.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.2, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q023",
+      "topicId": "cyber-c01-t05",
+      "question": "Che cos’è la disponibilità (availability)?",
+      "answer": "La proprietà per cui sistemi, servizi e dati devono essere accessibili e utilizzabili entro tempi ragionevoli da soggetti autorizzati.",
+      "detail": "Un sistema può essere riservato e integro, ma risultare comunque insicuro se non è disponibile nel momento in cui serve.",
+      "example": "Un servizio aziendale deve rispondere quando gli utenti autorizzati ne hanno necessità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Definire la disponibilità come semplice esistenza di una copia del dato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.3, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q024",
+      "topicId": "cyber-c01-t05",
+      "question": "Un sistema può soddisfare riservatezza e integrità ma non disponibilità?",
+      "answer": "Sì: se il servizio non è utilizzabile quando necessario, fallisce l’obiettivo di disponibilità.",
+      "detail": "Le proprietà CIA sono distinte e nessuna delle tre può essere sostituita automaticamente dalle altre.",
+      "example": "Un database non alterato e protetto da letture indebite diventa irraggiungibile per un guasto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che un dato cifrato e non manomesso sia necessariamente disponibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.3, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q025",
+      "topicId": "cyber-c01-t05",
+      "question": "Quali fattori possono compromettere la disponibilità secondo il manuale?",
+      "answer": "Guasti, errori di configurazione, saturazione delle risorse, malware e attacchi di Denial of Service.",
+      "detail": "La perdita di disponibilità non richiede sempre un aggressore: anche un errore operativo può interrompere un servizio.",
+      "example": "Un errore di configurazione impedisce a un server di accettare richieste legittime.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire ogni indisponibilità a un attacco esterno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.3, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q026",
+      "topicId": "cyber-c01-t05",
+      "question": "Quali contromisure principali il manuale associa alla disponibilità?",
+      "answer": "Ridondanza, backup, monitoraggio, piani di continuità operativa, hardening e capacity planning.",
+      "detail": "Le misure agiscono su resilienza, recupero e prevenzione delle interruzioni. Il backup da solo non assicura che un servizio sia immediatamente operativo.",
+      "example": "Più componenti ridondati e procedure di recupero riducono l’impatto di un guasto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere backup con continuità senza interruzioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.3, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q027",
+      "topicId": "cyber-c01-t05",
+      "question": "Perché la saturazione delle risorse è un problema di sicurezza e non solo di performance?",
+      "answer": "Perché può impedire agli utenti autorizzati di utilizzare il servizio entro tempi ragionevoli, compromettendo la disponibilità.",
+      "detail": "Il capitolo colloca saturazione e Denial of Service fra le cause di indisponibilità; il capacity planning è una delle contromisure indicate.",
+      "example": "Un sistema esaurisce le risorse e non risponde più alle richieste legittime.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che availability significhi soltanto protezione dei dati contro furto e manomissione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.3, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q028",
+      "topicId": "cyber-c01-t06",
+      "question": "Che cosa indica l’“identificabilità” nelle slide del docente?",
+      "answer": "La possibilità di ricondurre un’attività a un’identità.",
+      "detail": "È un obiettivo richiamato accanto alla triade CIA. Il manuale lo chiarisce distinguendo identità, autenticazione e autenticità, che descrivono concetti collegati ma diversi.",
+      "example": "Un’organizzazione deve poter associare un’operazione a un’identità gestita in modo affidabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare identificabilità, autenticazione e autenticità come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.4, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q029",
+      "topicId": "cyber-c01-t06",
+      "question": "Che cos’è l’identità in un sistema informatico?",
+      "answer": "L’insieme degli attributi che descrivono un soggetto o un’entità.",
+      "detail": "L’identità identifica ciò a cui possono essere associati diritti, operazioni e controlli. Non va confusa con la prova di possederla.",
+      "example": "L’account aziendale è associato a un insieme di attributi di un utente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che conoscere un nome utente provi già chi lo sta utilizzando.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.4, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q030",
+      "topicId": "cyber-c01-t06",
+      "question": "Che cos’è l’autenticazione?",
+      "answer": "Il processo con cui un soggetto dimostra di essere chi dichiara di essere.",
+      "detail": "Il soggetto può essere un utente, un dispositivo, un processo o un servizio. La verifica dell’identità dichiarata resta distinta dalla decisione sulle operazioni consentite.",
+      "example": "Il login tramite password è un meccanismo di autenticazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere autenticazione con assegnazione di permessi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.4, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q031",
+      "topicId": "cyber-c01-t06",
+      "question": "Che cosa significa autenticità?",
+      "answer": "È la proprietà secondo cui l’identità o l’origine di un’informazione risultano genuine.",
+      "detail": "Può essere rilevante per stabilire che si sta comunicando con il server atteso o che un’informazione proviene dalla fonte dichiarata.",
+      "example": "Un certificato digitale contribuisce a verificare l’autenticità di un server.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere autenticità del mittente con verità sostanziale del contenuto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.4, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q032",
+      "topicId": "cyber-c01-t06",
+      "question": "Come si distinguono identità, autenticazione e autenticità in un esempio concreto?",
+      "answer": "Identità: attributi del soggetto; autenticazione: prova che è quel soggetto; autenticità: genuinità dell’identità o origine dichiarata.",
+      "detail": "Il manuale propone login con password come autenticazione, certificato digitale per l’autenticità del server e gestione centralizzata delle identità per l’identificabilità.",
+      "example": "Un utente con un’identità registrata accede con password e verifica il certificato del server.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che possedere un account o ricevere un certificato basti automaticamente per ogni scopo di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.4, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q033",
+      "topicId": "cyber-c01-t06",
+      "question": "Che contributo fornisce la gestione centralizzata delle identità?",
+      "answer": "Migliora l’identificabilità degli utenti e la capacità di collegare le attività alle identità gestite dall’organizzazione.",
+      "detail": "L’identificabilità è utile per monitoraggio e responsabilità; il manuale non la presenta come sostituto dell’autenticazione o delle autorizzazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Equiparare gestione delle identità a protezione completa del sistema.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.4, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q034",
+      "topicId": "cyber-c01-t07",
+      "question": "Che cosa significa accountability o responsabilità in cybersecurity?",
+      "answer": "La possibilità di attribuire a un soggetto, processo o componente un’azione compiuta nel sistema.",
+      "detail": "È essenziale per audit, investigazioni, conformità e gestione degli incidenti. Richiede tracciabilità affidabile e ruoli definiti, non solo un identificativo utente.",
+      "example": "In un audit si risale a chi ha eseguito una determinata operazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che identificare un account basti a ricostruire le azioni effettuate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.5, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q035",
+      "topicId": "cyber-c01-t07",
+      "question": "Quali misure sono necessarie per realizzare accountability secondo il manuale?",
+      "answer": "Registrare eventi, proteggere i log, sincronizzare gli orologi dei sistemi e definire ruoli e procedure.",
+      "detail": "Una traccia di eventi deve essere affidabile nel contenuto e nel tempo, per poter essere analizzata in un’indagine o in un controllo.",
+      "example": "Log protetti e orari coerenti permettono di ricostruire la sequenza di un incidente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare i log automaticamente affidabili anche se possono essere alterati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.5, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q036",
+      "topicId": "cyber-c01-t07",
+      "question": "Perché la sincronizzazione degli orologi è importante per la responsabilità delle azioni?",
+      "answer": "Perché consente di collocare e confrontare correttamente nel tempo eventi registrati da componenti diversi.",
+      "detail": "Il manuale la cita fra le condizioni operative per una tracciabilità utile agli audit e alle investigazioni.",
+      "example": "Un accesso al server e una modifica al database possono essere correlati tramite timestamp coerenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che basti registrare gli eventi senza curarne sequenza e affidabilità temporale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.5, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q037",
+      "topicId": "cyber-c01-t07",
+      "question": "Che cos’è il non ripudio nel contesto introduttivo del capitolo?",
+      "answer": "La proprietà che impedisce a un soggetto di negare successivamente un’azione compiuta o un messaggio sottoscritto.",
+      "detail": "Il manuale lo presenta come principio collegato all’accountability, utile in particolari contesti. Non è un sinonimo generico di autenticazione.",
+      "example": "Una sottoscrizione digitale può fornire evidenze attribuibili rispetto a un documento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che una semplice password garantisca automaticamente non ripudio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.5, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q038",
+      "topicId": "cyber-c01-t07",
+      "question": "In che cosa differiscono identificabilità e accountability?",
+      "answer": "L’identificabilità riguarda l’associazione a un’identità; l’accountability riguarda la possibilità di attribuire concretamente azioni ed eventi a soggetti o processi.",
+      "detail": "Per la seconda servono anche audit trail, protezione dei log, ruoli e procedure: la sola gestione delle identità non è sufficiente.",
+      "example": "Identificare l’operatore non significa ancora sapere quale modifica abbia effettuato e quando.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere equivalenti riconoscimento dell’identità e ricostruzione delle azioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.2.5, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q039",
+      "topicId": "cyber-c01-t08",
+      "question": "Come classifica il Capitolo 1 le pratiche e i meccanismi di sicurezza?",
+      "answer": "Come famiglie di misure tecniche, organizzative, procedurali e umane che agiscono su aspetti differenti della protezione.",
+      "detail": "Le slide 9–10 non presentano un catalogo di software isolati. Per una difesa efficace servono controlli coordinati e coerenti con obiettivi e rischi.",
+      "example": "Crittografia e monitoraggio tecnico si affiancano a formazione e procedure di risposta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare tutte le misure come equivalenti o puramente tecnologiche.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q040",
+      "topicId": "cyber-c01-t08",
+      "question": "Quali nove famiglie di pratiche di sicurezza sono descritte nel §1.3?",
+      "answer": "Crittografia; autenticazione; copertura del traffico; controllo del routing; controllo degli accessi; awareness e training; audit e accountability; contingency planning e incident response; monitoring e risk assessment.",
+      "detail": "Per l’orale bisogna ricordare il nome e soprattutto lo scopo di ciascuna famiglia, distinguendo misure preventive, di osservazione e di gestione degli incidenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dimenticare le componenti umane, organizzative e di gestione del rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q041",
+      "topicId": "cyber-c01-t08",
+      "question": "Che ruolo ha la crittografia fra le misure di cybersecurity?",
+      "answer": "Trasforma dati mediante algoritmi e chiavi per proteggerne soprattutto la riservatezza e, con tecniche appropriate, anche integrità e autenticità.",
+      "detail": "Il manuale ricorda che la crittografia moderna comprende cifratura simmetrica e asimmetrica, firme digitali, funzioni hash e gestione delle chiavi.",
+      "example": "Una comunicazione viene protetta da un meccanismo crittografico adeguato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ridurre tutta la crittografia al semplice “nascondere un testo”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Crittografia, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q042",
+      "topicId": "cyber-c01-t08",
+      "question": "Perché la crittografia non coincide soltanto con la cifratura?",
+      "answer": "Perché include anche strumenti per integrità e autenticità, come firme digitali e funzioni hash, oltre a protocolli e gestione delle chiavi.",
+      "detail": "La finalità dipende dallo strumento e dal suo impiego; un controllo d’integrità non garantisce necessariamente la segretezza del contenuto.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 3 — La crittografia"
+      ],
+      "mistakes": "Affermare che una funzione hash renda il messaggio segreto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Crittografia, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q043",
+      "topicId": "cyber-c01-t08",
+      "question": "Quali sono le tre categorie di fattori citate per l’autenticazione?",
+      "answer": "Qualcosa che si conosce (password), qualcosa che si possiede (token) e qualcosa che si è (biometria).",
+      "detail": "Possono essere impiegate singolarmente o in combinazione. L’oggetto dell’autenticazione può essere anche un processo, un servizio o un dispositivo, oltre a un utente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere un fattore di possesso con una regola di autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Autenticazione, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q044",
+      "topicId": "cyber-c01-t08",
+      "question": "Perché autenticazione e controllo degli accessi sono pratiche differenti?",
+      "answer": "L’autenticazione verifica l’identità dichiarata; il controllo degli accessi stabilisce quali risorse e operazioni siano consentite.",
+      "detail": "Entrambe sono necessarie in molti sistemi: identificare correttamente un utente non significa concedergli accesso indiscriminato.",
+      "example": "Un dipendente accede con password ma può leggere solo le risorse del proprio ruolo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che superare il login consenta di leggere tutti i dati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Autenticazione, pagina PDF 16"
+    },
+    {
+      "id": "cyber-c01-q045",
+      "topicId": "cyber-c01-t08",
+      "question": "Che cosa si intende per copertura del traffico (traffic padding/mascheramento delle caratteristiche del traffico)?",
+      "answer": "Ridurre o mascherare le informazioni ricavabili osservando come avvengono le comunicazioni, anche se il contenuto è cifrato.",
+      "detail": "L’osservatore può ricavare informazioni da interlocutori, orari, frequenza e caratteristiche del traffico. Le slide richiamano la modifica delle sue caratteristiche per rendere più difficile tale analisi.",
+      "example": "Una sequenza di comunicazioni può rivelare abitudini operative anche se il messaggio è illeggibile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che cifrare il contenuto nasconda necessariamente ogni metadato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Copertura del traffico, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q046",
+      "topicId": "cyber-c01-t08",
+      "question": "Quali informazioni può rivelare un traffico puramente osservato?",
+      "answer": "Chi comunica con chi, con quale frequenza e in quali orari.",
+      "detail": "Questi metadati possono essere sensibili anche senza leggere i dati applicativi; è il problema cui si rivolge la copertura del traffico.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere segretezza del contenuto e segretezza delle caratteristiche del flusso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Copertura del traffico, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q047",
+      "topicId": "cyber-c01-t08",
+      "question": "Che cosa significa controllo del routing come misura di sicurezza?",
+      "answer": "Gestire i percorsi del traffico per rispettare requisiti di sicurezza, affidabilità o monitoraggio.",
+      "detail": "Si può evitare l’attraversamento di reti non fidate oppure instradare il traffico attraverso punti di controllo come firewall o apparati di ispezione.",
+      "example": "Un collegamento viene instradato attraverso un punto di controllo prima di raggiungere il servizio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che routing riguardi sempre e solo il percorso più corto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Controllo del routing, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q048",
+      "topicId": "cyber-c01-t08",
+      "question": "Perché la scelta del percorso di rete può incidere sulla sicurezza?",
+      "answer": "Perché cambia le reti attraversate e i punti nei quali le comunicazioni possono essere monitorate o sottoposte a controlli.",
+      "detail": "Il manuale collega il controllo dei percorsi a sicurezza, affidabilità e capacità di osservazione del traffico.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che la sola cifratura renda irrilevante ogni decisione di instradamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Controllo del routing, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q049",
+      "topicId": "cyber-c01-t08",
+      "question": "Che cos’è il controllo degli accessi?",
+      "answer": "L’insieme di regole e meccanismi che consente l’uso delle risorse soltanto ai soggetti autorizzati.",
+      "detail": "Comprende modelli di autorizzazione, liste di controllo degli accessi, ruoli, policy e meccanismi che applicano concretamente le regole.",
+      "example": "Una policy vieta a un operatore di modificare file fuori dal proprio ambito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare autorizzazione come semplice identificazione dell’utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Controllo degli accessi, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q050",
+      "topicId": "cyber-c01-t08",
+      "question": "Quali strumenti concettuali rientrano nel controllo degli accessi secondo il §1.3?",
+      "answer": "Modelli autorizzativi, liste di controllo, ruoli, policy e meccanismi di enforcement.",
+      "detail": "La regola da sola non basta: è necessario che un controllo la faccia rispettare nell’uso delle risorse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare una regola scritta automaticamente efficace senza enforcement.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Controllo degli accessi, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q051",
+      "topicId": "cyber-c01-t08",
+      "question": "Perché awareness e training sono meccanismi di cybersecurity?",
+      "answer": "Perché rendono le persone più consapevoli di phishing, rischi e comportamenti insicuri, riducendo errori nell’uso delle risorse.",
+      "detail": "Il manuale sottolinea che molti incidenti sono favoriti da errori umani e scarsa consapevolezza: il fattore umano fa parte della superficie d’attacco.",
+      "example": "Un lavoratore formato riconosce un tentativo di phishing.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare la formazione un tema separato dalla sicurezza informatica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Awareness e training, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q052",
+      "topicId": "cyber-c01-t08",
+      "question": "Quali esempi di rischio umano vengono affrontati tramite formazione?",
+      "answer": "Phishing, errori d’uso, comportamenti insicuri e gestione scorretta delle risorse.",
+      "detail": "La misura è complementare ai controlli tecnici: l’obiettivo è aumentare la probabilità di scelte corrette degli utenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che l’uso di tecnologie elimini automaticamente gli errori delle persone.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Awareness e training, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q053",
+      "topicId": "cyber-c01-t08",
+      "question": "Qual è lo scopo di audit e accountability tra le pratiche di sicurezza?",
+      "answer": "Raccogliere, conservare e analizzare eventi e attività per monitoraggio, investigazione, verifica delle policy e audit.",
+      "detail": "I log sono dati da preservare e interpretare con attenzione; permettono di attribuire e ricostruire eventi e comportamenti.",
+      "example": "I registri di accesso vengono esaminati dopo un incidente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che l’audit coincida solo con il salvataggio indiscriminato di file di log.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Audit e accountability, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q054",
+      "topicId": "cyber-c01-t08",
+      "question": "Perché registrare un evento e svolgere un audit sono attività collegate ma differenti?",
+      "answer": "La registrazione produce evidenze; l’audit le utilizza per verificare comportamenti, responsabilità e conformità alle regole.",
+      "detail": "Il manuale cita raccolta, conservazione e analisi come tre aspetti distinti della stessa famiglia di controlli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che una piattaforma che scrive log realizzi automaticamente controlli efficaci.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Audit e accountability, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q055",
+      "topicId": "cyber-c01-t08",
+      "question": "Che cosa comprende il contingency planning nel §1.3?",
+      "answer": "Predisporre piani, procedure e ruoli per affrontare eventi avversi, limitare i danni e mantenere o recuperare la continuità operativa.",
+      "detail": "Una gestione matura non si limita alla prevenzione: pianifica preventivamente anche come reagire quando qualcosa va storto.",
+      "example": "Un’impresa definisce procedure e responsabili prima di un’interruzione critica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere contingency planning con la sola installazione di un sistema di backup.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Contingency planning e incident response, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q056",
+      "topicId": "cyber-c01-t08",
+      "question": "Che cosa si intende per incident response?",
+      "answer": "Gestire un attacco o un incidente mentre è in corso, utilizzando procedure, persone e decisioni organizzate per contenerne gli effetti.",
+      "detail": "È collegata alla risposta nel ciclo di sicurezza descritto dal §1.9; non coincide con l’analisi dei rischi prima dell’evento.",
+      "example": "Il team applica procedure di contenimento durante un attacco.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare la risposta all’incidente un’attività improvvisata senza ruoli definiti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Contingency planning e incident response, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q057",
+      "topicId": "cyber-c01-t08",
+      "question": "Che cos’è il monitoring in cybersecurity?",
+      "answer": "L’osservazione dello stato dei sistemi per rilevare anomalie e segnali di incidenti.",
+      "detail": "Il monitoraggio genera informazioni che possono alimentare la detection e la valutazione continua dei controlli.",
+      "example": "Un sistema segnala attività inattese e permette una verifica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che la presenza di monitoraggio impedisca automaticamente ogni attacco.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Monitoring e risk assessment, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q058",
+      "topicId": "cyber-c01-t08",
+      "question": "Che cos’è il risk assessment e perché va ripetuto?",
+      "answer": "Il processo di identificazione, analisi e valutazione dei rischi; va riesaminato periodicamente perché minacce, sistemi e contesto cambiano.",
+      "detail": "Controlli un tempo appropriati possono diventare obsoleti o sproporzionati se non si rivaluta il rischio.",
+      "example": "Un nuovo servizio esposto modifica i rischi da considerare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare la valutazione del rischio come un documento compilato una sola volta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Monitoring e risk assessment, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q059",
+      "topicId": "cyber-c01-t08",
+      "question": "Come si distinguono monitoraggio e risk assessment?",
+      "answer": "Il monitoraggio osserva sistemi e anomalie; il risk assessment identifica, analizza e valuta i rischi per orientare le decisioni.",
+      "detail": "Il primo riguarda in modo diretto l’osservazione operativa; il secondo la stima e la valutazione dei rischi in un contesto più ampio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare “monitoraggio” come sinonimo di valutazione strutturata del rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.3 — Monitoring e risk assessment, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q060",
+      "topicId": "cyber-c01-t09",
+      "question": "Qual è la distinzione fondamentale tra attacchi passivi e attacchi attivi?",
+      "answer": "I passivi osservano o acquisiscono informazioni senza alterare apparentemente il sistema; gli attivi modificano dati, comunicazioni o funzionamento.",
+      "detail": "La distinzione collega il comportamento dell’attaccante alle proprietà di sicurezza compromesse. In genere i passivi puntano alla riservatezza e gli attivi incidono su integrità, autenticità o disponibilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Classificare gli attacchi soltanto per gravità invece che per modalità di azione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q061",
+      "topicId": "cyber-c01-t09",
+      "question": "Quale relazione ha la distinzione passivo/attivo con la triade CIA?",
+      "answer": "Gli attacchi passivi compromettono tipicamente la riservatezza; gli attivi colpiscono spesso integrità, autenticità o disponibilità.",
+      "detail": "Sono associazioni tipiche riportate dal manuale, non affermazioni che escludano qualsiasi altra conseguenza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che un attacco attivo riguardi esclusivamente la disponibilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4, pagina PDF 17"
+    },
+    {
+      "id": "cyber-c01-q062",
+      "topicId": "cyber-c01-t09",
+      "question": "Che cos’è un attacco passivo?",
+      "answer": "Un attacco basato su lettura, intercettazione o analisi di informazioni senza modifica apparente del funzionamento del sistema.",
+      "detail": "Poiché il dato e il servizio possono rimanere invariati, il fenomeno è spesso difficile da rilevare. La proprietà più direttamente interessata è la riservatezza.",
+      "example": "Un osservatore intercetta comunicazioni e ne legge i contenuti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che un attacco passivo non possa produrre alcun danno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4.1, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q063",
+      "topicId": "cyber-c01-t09",
+      "question": "Quali due esempi di attacchi passivi sono menzionati esplicitamente?",
+      "answer": "Intercettazione dei dati e analisi del traffico.",
+      "detail": "L’intercettazione mira al contenuto, quando leggibile; l’analisi del traffico può sfruttare le informazioni sui flussi anche senza leggerne il contenuto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere semplice osservazione con modifica volontaria dei messaggi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4.1, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q064",
+      "topicId": "cyber-c01-t09",
+      "question": "Perché un attacco passivo può passare inosservato?",
+      "answer": "Perché non altera in modo evidente il flusso di dati o l’erogazione del servizio.",
+      "detail": "Un sistema può continuare a operare normalmente mentre le informazioni vengono osservate o copiate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare l’assenza di errori o rallentamenti come prova di assenza di intercettazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4.1, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q065",
+      "topicId": "cyber-c01-t10",
+      "question": "Che cos’è un attacco attivo?",
+      "answer": "Un’azione che altera il comportamento del sistema oppure modifica, ritrasmette o interrompe la comunicazione e i dati.",
+      "detail": "Il manuale cita masquerade, replay, modifica dei dati e Denial of Service. Questi attacchi interessano spesso integrità, autenticità e disponibilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare attivo soltanto un attacco che distrugge dati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4.2, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q066",
+      "topicId": "cyber-c01-t10",
+      "question": "Che cos’è il masquerade?",
+      "answer": "Un attacco attivo in cui un soggetto si finge un’altra entità.",
+      "detail": "Il meccanismo è collegato alla compromissione dell’autenticità o all’impersonificazione di un’identità legittima.",
+      "example": "Un attaccante si presenta come un soggetto autorizzato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere impersonificazione con intercettazione passiva.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4.2, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q067",
+      "topicId": "cyber-c01-t10",
+      "question": "Che cos’è un attacco replay?",
+      "answer": "La cattura e la ritrasmissione successiva di dati o messaggi validi.",
+      "detail": "Anche senza modificare il messaggio originale, riprodurlo fuori contesto può alterare le azioni del sistema.",
+      "example": "Un messaggio già valido viene ripresentato per tentare un’operazione non prevista.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che un messaggio autentico sia automaticamente valido in qualsiasi momento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4.2, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q068",
+      "topicId": "cyber-c01-t10",
+      "question": "Perché la modifica dei dati è classificata come attacco attivo?",
+      "answer": "Perché l’avversario interviene sul contenuto o sullo stato, compromettendo l’integrità.",
+      "detail": "La modifica può riguardare informazioni in transito o conservate, e può comportare anche altri effetti sulla sicurezza.",
+      "example": "Un messaggio viene alterato prima di arrivare al destinatario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere modifica di un dato con la sua sola lettura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4.2, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q069",
+      "topicId": "cyber-c01-t10",
+      "question": "Che cos’è il Denial of Service e quale obiettivo colpisce?",
+      "answer": "Un attacco che ostacola o impedisce l’erogazione di un servizio, compromettendone soprattutto la disponibilità.",
+      "detail": "Il DoS è citato fra gli esempi tipici di attacchi attivi, distinto dai casi di intercettazione di informazioni.",
+      "example": "Un servizio non riesce più a rispondere agli utenti autorizzati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiarlo per un attacco diretto principalmente alla riservatezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4.2, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q070",
+      "topicId": "cyber-c01-t09",
+      "question": "Perché gli attacchi passivi sono particolarmente difficili da rilevare?",
+      "answer": "Perché possono limitarsi a osservare o copiare i dati senza modificare traffico o servizio.",
+      "detail": "In assenza di alterazioni visibili, i normali indicatori operativi possono non mostrare segnali evidenti della compromissione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Supporre che tutti gli attacchi lascino un sintomo immediatamente visibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4.3, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q071",
+      "topicId": "cyber-c01-t09",
+      "question": "Quali difese preventive sono indicate contro gli attacchi passivi?",
+      "answer": "Cifratura, riduzione dell’esposizione, segmentazione, hardening e minimizzazione dei dati.",
+      "detail": "Sono misure volte a impedire o limitare la divulgazione di informazioni, dato che la semplice osservazione può essere difficile da individuare.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Puntare esclusivamente sulla detection senza ridurre l’esposizione dei dati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4.3, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q072",
+      "topicId": "cyber-c01-t10",
+      "question": "Perché gli attacchi attivi sono difficili da prevenire completamente?",
+      "answer": "Perché sistemi complessi, dinamici e interdipendenti presentano molte possibilità di attacco non eliminabili in modo assoluto.",
+      "detail": "Gli attacchi attivi possono produrre segnali osservabili, ma la sicurezza deve combinare prevenzione, rilevazione e risposta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Promettere che un controllo preventivo possa escludere ogni attacco.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4.4, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q073",
+      "topicId": "cyber-c01-t10",
+      "question": "Come cambia la strategia di difesa fra attacchi passivi e attivi secondo il manuale?",
+      "answer": "Per i passivi sono cruciali misure preventive contro l’esposizione; per gli attivi servono prevenzione ma anche detection e response.",
+      "detail": "Il motivo è rispettivamente la difficoltà di osservare un attacco privo di alterazioni e l’impossibilità di prevenire totalmente tutte le modifiche o interruzioni in sistemi complessi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ridurre la difesa a un unico strumento applicabile indistintamente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.4.4, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q074",
+      "topicId": "cyber-c01-t11",
+      "question": "Che cos’è un asset in cybersecurity?",
+      "answer": "Una risorsa che compone il sistema e possiede valore per l’organizzazione.",
+      "detail": "Il valore motiva la protezione: la compromissione della risorsa può causare danni informativi, operativi, economici o organizzativi.",
+      "example": "Un database che contiene informazioni commerciali è un asset.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere asset soltanto i dispositivi materiali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.5, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q075",
+      "topicId": "cyber-c01-t11",
+      "question": "Quali quattro categorie principali di asset sono elencate dalla slide 12?",
+      "answer": "Hardware, software, dati conservati e dati in transito.",
+      "detail": "La distinzione permette di non trascurare risorse immateriali e comunicazioni: le minacce e le misure appropriate cambiano secondo la categoria.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitarsi a hardware e programmi ignorando dati e comunicazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.5, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q076",
+      "topicId": "cyber-c01-t11",
+      "question": "Quali elementi rientrano negli asset hardware?",
+      "answer": "Server, computer portatili, smartphone, router, switch, dispositivi IoT, supporti fisici e apparati di rete.",
+      "detail": "Sono risorse tangibili il cui guasto, furto o compromissione può produrre impatti anche sui dati e sulla continuità dei servizi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare gli apparati di rete come elementi privi di rilevanza di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.5, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q077",
+      "topicId": "cyber-c01-t11",
+      "question": "Quali elementi rientrano negli asset software?",
+      "answer": "Sistemi operativi, applicazioni, librerie, middleware, servizi, firmware e configurazioni.",
+      "detail": "Il manuale include esplicitamente anche le configurazioni, spesso trascurate nonostante possano condizionare diritti di accesso e funzionamento dei servizi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare asset software soltanto il codice applicativo principale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.5, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q078",
+      "topicId": "cyber-c01-t11",
+      "question": "Quali asset sono classificati come dati conservati (at rest)?",
+      "answer": "Database, file, credenziali, registri, informazioni personali o aziendali, backup e log archiviati.",
+      "detail": "La categoria include copie e tracciati, non solo i database di produzione; la loro esposizione può causare danni importanti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che un backup o un log non debbano essere protetti perché secondari.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.5, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q079",
+      "topicId": "cyber-c01-t11",
+      "question": "Quali asset rientrano nei dati in transito?",
+      "answer": "Messaggi scambiati in rete, traffico applicativo, dati di autenticazione, sessioni e flussi di protocollo.",
+      "detail": "Il capitolo distingue espressamente le informazioni durante la comunicazione rispetto a quelle conservate.",
+      "example": "Una richiesta contenente dati di autenticazione attraversa la rete.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che proteggere gli archivi protegga automaticamente anche i messaggi inviati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.5, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q080",
+      "topicId": "cyber-c01-t11",
+      "question": "Perché il manuale propone di estendere il concetto di asset oltre le quattro categorie della slide?",
+      "answer": "Per considerare anche persone, processi, reputazione, continuità del servizio e conformità normativa.",
+      "detail": "Queste risorse possono subire conseguenze significative da un incidente anche quando non viene danneggiato fisicamente alcun apparato.",
+      "example": "Un incidente può fermare un processo o compromettere la fiducia dei clienti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che un incidente senza danni hardware sia economicamente irrilevante.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.5, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q081",
+      "topicId": "cyber-c01-t11",
+      "question": "Perché il valore dell’asset è decisivo nella gestione della sicurezza?",
+      "answer": "Perché la protezione deve essere giustificata dai possibili danni che una compromissione produrrebbe sull’organizzazione.",
+      "detail": "Il valore dell’asset è uno degli aspetti che il security manager deve considerare nella definizione delle priorità e dei compromessi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Distribuire le risorse di difesa senza distinguere importanza e possibili conseguenze.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.5, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q082",
+      "topicId": "cyber-c01-t14",
+      "question": "Quali cinque concetti devono essere tenuti distinti nella gestione del rischio cyber?",
+      "answer": "Vulnerabilità, minaccia, attacco, impatto e rischio.",
+      "detail": "Il manuale li colloca in una relazione logica: una debolezza può essere sfruttata da una minaccia; la concretizzazione può generare un incidente e conseguenze, mentre il rischio valuta possibilità e gravità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare “rischio”, “minaccia” e “attacco” come se indicassero lo stesso evento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6, pagina PDF 18"
+    },
+    {
+      "id": "cyber-c01-q083",
+      "topicId": "cyber-c01-t12",
+      "question": "Che cos’è una vulnerabilità?",
+      "answer": "Una debolezza del sistema, delle procedure, dei controlli o dell’implementazione che può essere sfruttata o attivata da una sorgente di minaccia.",
+      "detail": "Il docente richiama errori di design, implementazione, operazione e gestione. Una vulnerabilità può essere tecnica, organizzativa o procedurale.",
+      "example": "Una regola autorizzativa mancante può creare una debolezza nell’accesso ai dati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitare la nozione di vulnerabilità ai soli bug del codice.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.1, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q084",
+      "topicId": "cyber-c01-t12",
+      "question": "Quali cause o ambiti di vulnerabilità sono elencati nella definizione delle slide?",
+      "answer": "Errori nel design, nell’implementazione, nell’operazione oppure nella gestione del sistema.",
+      "detail": "Il manuale collega questa visione anche alle debolezze delle procedure e dei controlli interni.",
+      "example": "Una procedura di revoca dei permessi inadeguata è una possibile vulnerabilità organizzativa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che una configurazione o una procedura non possano essere vulnerabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.1, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q085",
+      "topicId": "cyber-c01-t12",
+      "question": "Una vulnerabilità esistente implica necessariamente un attacco già avvenuto?",
+      "answer": "No: la vulnerabilità è una debolezza sfruttabile, mentre un attacco è la concretizzazione di una minaccia.",
+      "detail": "Può esistere una debolezza non ancora sfruttata; per stimare la priorità di intervento occorre ragionare sul rischio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Equiparare presenza di un difetto a compromissione già verificata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.1, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q086",
+      "topicId": "cyber-c01-t12",
+      "question": "Che cos’è una minaccia?",
+      "answer": "La possibile causa di un incidente indesiderato capace di compromettere un sistema o un asset.",
+      "detail": "Può essere un soggetto malevolo o un evento non intenzionale. La sua presenza indica una possibilità di danno, non che l’incidente sia già avvenuto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere possibilità di attacco e evento realmente accaduto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.2, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q087",
+      "topicId": "cyber-c01-t12",
+      "question": "Quali tipi di minaccia menziona il manuale oltre agli attori malevoli?",
+      "answer": "Errori umani, malware, guasti, eventi ambientali e combinazioni di fattori.",
+      "detail": "La gestione della sicurezza copre anche eventi accidentali: l’analisi del rischio non può limitarsi alla volontà di un aggressore.",
+      "example": "Un guasto compromette la disponibilità anche senza alcun attaccante.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Definire minaccia soltanto un hacker intenzionalmente ostile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.2, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q088",
+      "topicId": "cyber-c01-t12",
+      "question": "Perché “esiste una minaccia” non significa “si è verificato un incidente”?",
+      "answer": "Perché la minaccia rappresenta una possibile causa di compromissione, mentre l’incidente è un evento concreto.",
+      "detail": "Per pianificare la difesa occorre valutare scenari potenziali prima che si realizzino.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trasformare automaticamente ogni minaccia identificata in un attacco osservato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.2, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q089",
+      "topicId": "cyber-c01-t13",
+      "question": "Che cos’è un attacco nella relazione vulnerabilità–minaccia–incidente?",
+      "answer": "La concretizzazione della minaccia, nel modello del capitolo mediante lo sfruttamento di una vulnerabilità.",
+      "detail": "Il manuale distingue l’attacco come evento concreto dalla minaccia come possibilità astratta; quando si considera un evento più generale parla anche di incidente di sicurezza.",
+      "example": "Un attore sfrutta una configurazione debole per ottenere un accesso non autorizzato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Definire attacco una vulnerabilità che nessuno ha sfruttato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.3, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q090",
+      "topicId": "cyber-c01-t13",
+      "question": "Qual è la differenza tra minaccia e attacco?",
+      "answer": "La minaccia è una possibile causa di incidente; l’attacco è l’azione concreta con cui la minaccia si realizza.",
+      "detail": "La distinzione è centrale nella discussione del rischio: dobbiamo considerare cosa potrebbe accadere e riconoscere cosa è effettivamente accaduto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere un allarme di rischio con una compromissione avvenuta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.3, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q091",
+      "topicId": "cyber-c01-t13",
+      "question": "Che cosa si intende per impatto di un attacco?",
+      "answer": "La conseguenza negativa che l’attacco produce sugli asset e sull’organizzazione.",
+      "detail": "Può manifestarsi come perdita di dati, interruzione del servizio, costi economici, danno reputazionale, sanzioni o perdita di fiducia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere la causa dell’evento con le conseguenze che ne derivano.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.4, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q092",
+      "topicId": "cyber-c01-t13",
+      "question": "Quali sei esempi di impatto sono elencati nel §1.6.4?",
+      "answer": "Perdita di dati, fermo del servizio, costi economici, danno alla reputazione, sanzioni normative e perdita di fiducia.",
+      "detail": "Sono esempi di impatti informativi, operativi, economici e immateriali che un’organizzazione deve considerare.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Valutare un incidente soltanto sulla base del costo di riparazione del dispositivo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.4, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q093",
+      "topicId": "cyber-c01-t13",
+      "question": "Perché un attacco senza danni fisici può produrre un impatto elevato?",
+      "answer": "Perché può interrompere servizi, esporre dati, generare costi, danneggiare la reputazione o compromettere la fiducia.",
+      "detail": "Gli asset immateriali e i processi organizzativi hanno valore anche in assenza di distruzione hardware.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Misurare la gravità dell’incidente soltanto dal numero di apparati guasti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.4, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q094",
+      "topicId": "cyber-c01-t14",
+      "question": "Come viene definito il rischio cyber nel manuale?",
+      "answer": "Come combinazione della probabilità che una minaccia si realizzi e della gravità dell’impatto avverso.",
+      "detail": "La formulazione NIST richiamata dal manuale considera la misura dell’entità con cui l’organizzazione è minacciata da eventi o circostanze, tipicamente tramite probabilità e conseguenze.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Definire rischio semplicemente come “presenza di un hacker” o come danno già avvenuto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.5, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q095",
+      "topicId": "cyber-c01-t14",
+      "question": "Quali due dimensioni devono essere considerate nella valutazione del rischio?",
+      "answer": "Probabilità di realizzazione dell’evento e gravità dell’impatto che potrebbe provocare.",
+      "detail": "Non basta considerare quanto grave sarebbe un evento senza stimarne la possibilità, né la possibilità senza valutarne le conseguenze. Il capitolo esprime una combinazione concettuale, non una formula universale unica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare “rischio = probabilità × impatto” come unica formula obbligatoria della fonte: qui il manuale parla di combinazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.5, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q096",
+      "topicId": "cyber-c01-t14",
+      "question": "Che differenza c’è fra impatto e rischio?",
+      "answer": "L’impatto è la conseguenza negativa di un evento; il rischio considera la possibilità dell’evento insieme alla gravità delle possibili conseguenze.",
+      "detail": "L’impatto riguarda ciò che accade se la compromissione si realizza; il rischio serve a ragionare su ciò che potrebbe verificarsi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere la perdita economica realizzata con la valutazione prospettica del rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.5, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q097",
+      "topicId": "cyber-c01-t14",
+      "question": "Ricostruisci la sequenza logica asset → vulnerabilità → minaccia → attacco → impatto → rischio.",
+      "answer": "Un asset di valore presenta una possibile debolezza; una minaccia può sfruttarla; quando si concretizza si ha un attacco/incidente che può produrre un impatto; il rischio valuta possibilità e gravità di quello scenario.",
+      "detail": "La figura del manuale non indica che ogni sequenza debba accadere: è uno schema per riconoscere concetti distinti e gestire le priorità prima dell’evento.",
+      "example": "Asset: database; debolezza: permesso eccessivo; minaccia: accesso malevolo; attacco: lettura abusiva; impatto: perdita di riservatezza e fiducia.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare rischio come ultimo evento temporale anziché come valutazione preventiva della possibilità e dell’impatto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.5, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q098",
+      "topicId": "cyber-c01-t14",
+      "question": "Perché la gestione del rischio deve partire dagli asset e non solo da un elenco di attacchi?",
+      "answer": "Perché la gravità delle conseguenze dipende dal valore delle risorse e dei processi che potrebbero essere compromessi.",
+      "detail": "Il manuale collega l’inventario degli asset ai compromessi economici e organizzativi del security manager.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare allo stesso modo qualunque debolezza senza considerare quale bene esponga.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.6.5, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q099",
+      "topicId": "cyber-c01-t15",
+      "question": "Che cos’è la superficie d’attacco (attack surface)?",
+      "answer": "L’insieme dei punti di esposizione o vulnerabilità raggiungibili attraverso cui un attore può tentare di compromettere un sistema.",
+      "detail": "La definizione del docente viene estesa nel manuale a punti di esposizione che possono interessare rete, software, hardware e persone.",
+      "example": "Un servizio accessibile inutilmente dall’esterno accresce l’esposizione di un sistema.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere superficie d’attacco con il numero degli attacchi effettivamente subiti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.7, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q100",
+      "topicId": "cyber-c01-t15",
+      "question": "Perché una superficie d’attacco ampia è più difficile da difendere?",
+      "answer": "Perché aumenta la varietà dei punti esposti da controllare e delle possibili modalità di compromissione.",
+      "detail": "Il capitolo sottolinea soprattutto ampiezza, eterogeneità e insufficienza dei controlli come fattori che accrescono la difficoltà difensiva.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Supporre che aumentare servizi e interfacce non produca nuove esigenze di protezione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.7, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q101",
+      "topicId": "cyber-c01-t15",
+      "question": "Quali quattro dimensioni della superficie d’attacco distingue il manuale?",
+      "answer": "Superficie di rete, software, hardware e umana.",
+      "detail": "La figura alle pagine 19–20 le collega al sistema/organizzazione: la sicurezza non riguarda solo collegamenti e programmi, ma anche dispositivi fisici e comportamenti delle persone.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitare l’attack surface alle sole porte aperte di un server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.7, pagina PDF 19"
+    },
+    {
+      "id": "cyber-c01-q102",
+      "topicId": "cyber-c01-t15",
+      "question": "Quali elementi compongono la superficie d’attacco di rete?",
+      "answer": "Protocolli, servizi esposti, porte aperte, collegamenti, canali wireless, dispositivi di frontiera e configurazioni di rete.",
+      "detail": "La quantità di componenti raggiungibili è rilevante: lasciare esposto un servizio non necessario incrementa la superficie d’attacco.",
+      "example": "Una porta aperta per un servizio inutilizzato può offrire un punto di esposizione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che la superficie di rete coincida soltanto con la presenza di Internet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.7.1, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q103",
+      "topicId": "cyber-c01-t15",
+      "question": "Perché un servizio di rete inutilmente esposto aumenta l’attack surface?",
+      "answer": "Perché crea un ulteriore punto raggiungibile che deve essere configurato, protetto e monitorato.",
+      "detail": "Il manuale offre proprio questa situazione come esempio della superficie di rete.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare innocua qualsiasi esposizione di rete perché il servizio non è usato dagli utenti ordinari.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.7.1, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q104",
+      "topicId": "cyber-c01-t15",
+      "question": "Quali elementi compongono la superficie d’attacco software?",
+      "answer": "Sistemi operativi, applicazioni, librerie, API, plugin, configurazioni errate, bug e vulnerabilità implementative.",
+      "detail": "La componente software costituisce una parte importante del rischio cyber perché presenta molte interfacce e dipendenze.",
+      "example": "Una API esposta con controllo degli accessi errato è parte della superficie software.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che soltanto il codice sviluppato internamente possa contenere vulnerabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.7.2, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q105",
+      "topicId": "cyber-c01-t15",
+      "question": "Perché librerie, plugin e configurazioni sono rilevanti quanto l’applicazione principale?",
+      "answer": "Perché possono introdurre proprie debolezze o percorsi di accesso che compromettono il sistema.",
+      "detail": "Il capitolo li include esplicitamente nella superficie software, insieme a sistemi operativi e API.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Valutare la sicurezza di un’applicazione ignorando i componenti da cui dipende.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.7.2, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q106",
+      "topicId": "cyber-c01-t15",
+      "question": "Che cosa comprende la superficie d’attacco hardware?",
+      "answer": "Dispositivi, firmware, interfacce fisiche, supporti rimovibili, sensori e modalità d’uso materiale delle apparecchiature.",
+      "detail": "Furto fisico o accesso diretto a una porta possono diventare vettori di attacco.",
+      "example": "L’accesso non autorizzato a un dispositivo o a una sua interfaccia fisica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare il furto di un dispositivo un problema estraneo alla cybersecurity.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.7.3, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q107",
+      "topicId": "cyber-c01-t15",
+      "question": "Quali esempi fisici mostrano il rischio legato alla superficie hardware?",
+      "answer": "Il furto di un dispositivo e l’accesso diretto a una porta o a un’interfaccia fisica.",
+      "detail": "La sicurezza del software non elimina automaticamente l’esposizione dovuta al possesso materiale delle apparecchiature.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che un sistema sia protetto solo perché non è esposto tramite un servizio Web.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.7.3, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q108",
+      "topicId": "cyber-c01-t15",
+      "question": "Che cosa comprende la superficie d’attacco umana?",
+      "answer": "Errori, disattenzione, scarsa formazione, eccessiva fiducia e ingegneria sociale.",
+      "detail": "Le persone possono diventare un punto di ingresso o introdurre rischi con il loro comportamento anche in sistemi tecnicamente protetti.",
+      "example": "Una persona risponde a un tentativo di phishing fornendo informazioni sensibili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare i comportamenti degli utenti come irrilevanti per la sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.7.4, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q109",
+      "topicId": "cyber-c01-t15",
+      "question": "Perché awareness e training sono centrali nella riduzione della superficie umana?",
+      "answer": "Perché aiutano le persone a riconoscere minacce, comportamenti insicuri e tentativi di manipolazione.",
+      "detail": "Il manuale considera consapevolezza e formazione misure di protezione, non attività accessorie.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che la formazione sia sostituibile da un singolo controllo tecnico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.7.4, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q110",
+      "topicId": "cyber-c01-t15",
+      "question": "Come distingueresti una debolezza software da una debolezza umana?",
+      "answer": "La prima riguarda componenti e configurazioni applicative; la seconda riguarda decisioni e comportamenti delle persone, inclusi errori e manipolazioni sociali.",
+      "detail": "Entrambe possono contribuire alla compromissione di un sistema: la difesa deve considerarle congiuntamente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire per definizione ogni incidente a un bug del software.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.7.4, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q111",
+      "topicId": "cyber-c01-t16",
+      "question": "Che cos’è la security policy?",
+      "answer": "La descrizione formale del comportamento desiderato del sistema e delle regole da rispettare per raggiungere gli obiettivi di sicurezza.",
+      "detail": "È la base che orienta priorità, ruoli, misure, registrazioni e gestione degli incidenti: non coincide con una lista di prodotti o configurazioni.",
+      "example": "Una policy stabilisce quali utenti possano accedere a dati commerciali riservati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Chiamare policy un insieme casuale di strumenti installati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.8, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q112",
+      "topicId": "cyber-c01-t16",
+      "question": "Perché le slide suggeriscono di definire la policy prima di installare i meccanismi tecnici?",
+      "answer": "Perché bisogna sapere che cosa proteggere, con quali obiettivi e regole, prima di scegliere i controlli.",
+      "detail": "Senza tale definizione possono essere adottate misure incoerenti, sproporzionate o scollegate dalle reali necessità dell’organizzazione.",
+      "example": "Prima si decide chi può leggere un archivio, poi si configurano i controlli che applicano la regola.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scegliere i prodotti e solo in seguito provare a capire quale proprietà dovrebbero garantire.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.8, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q113",
+      "topicId": "cyber-c01-t16",
+      "question": "Quali cinque ambiti dovrebbe chiarire una security policy matura?",
+      "answer": "Asset e obiettivi prioritari; ruoli e responsabilità; controlli e contesti applicativi; eventi da registrare e monitorare; gestione di eccezioni, incidenti, violazioni e recupero.",
+      "detail": "Sono le cinque categorie elencate dal manuale per passare da un principio generico a regole operative.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scrivere una policy che nomina soltanto le password e trascura monitoraggio e incidenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.8, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q114",
+      "topicId": "cyber-c01-t16",
+      "question": "Che cosa deve specificare la policy riguardo ad asset e obiettivi?",
+      "answer": "Quali risorse sono più importanti e quali proprietà di sicurezza devono essere garantite per ciascuna.",
+      "detail": "La priorità dipende dal valore e dagli impatti potenziali; le misure devono sostenere obiettivi esplicitati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Imporre identiche contromisure a ogni risorsa senza considerare valore e rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.8, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q115",
+      "topicId": "cyber-c01-t16",
+      "question": "Che cosa deve specificare la policy sui ruoli e le responsabilità?",
+      "answer": "Chi è responsabile delle diverse attività di sicurezza e delle decisioni previste.",
+      "detail": "La definizione dei ruoli permette di applicare le regole, gestire eccezioni e coordinare incidenti senza ambiguità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assumere che tutti i dipendenti siano responsabili in modo indistinto di qualunque evento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.8, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q116",
+      "topicId": "cyber-c01-t16",
+      "question": "Perché una security policy deve indicare anche quali eventi registrare e monitorare?",
+      "answer": "Perché tracciabilità e rilevazione consentono verifiche di conformità, investigazioni e gestione degli incidenti.",
+      "detail": "Senza criteri di logging e monitoring, molte azioni non possono essere analizzate efficacemente a posteriori.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitare la policy alla prevenzione ed escludere il controllo dei risultati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.8, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q117",
+      "topicId": "cyber-c01-t16",
+      "question": "Perché la gestione di eccezioni e incidenti deve essere prevista nella policy?",
+      "answer": "Perché sono necessarie regole e procedure per reagire a violazioni, contenere i danni e recuperare i servizi.",
+      "detail": "Il manuale chiede espressamente di coprire eccezioni, incidenti, violazioni e ripristino, non solo la normale operatività.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare la policy valida soltanto quando tutto funziona regolarmente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.8, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q118",
+      "topicId": "cyber-c01-t17",
+      "question": "Quali quattro aspetti chiave deve considerare il security manager secondo le slide?",
+      "answer": "Valore degli asset; vulnerabilità e minacce; equilibrio tra facilità d’uso e protezione; equilibrio tra costo della difesa e costo di un attacco.",
+      "detail": "Il punto di vista è tecnico ma anche economico e organizzativo: l’obiettivo non è massimizzare indiscriminatamente il numero di controlli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ignorare usabilità e costi quando si valuta una misura di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.8 — Ruolo del security manager, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q119",
+      "topicId": "cyber-c01-t17",
+      "question": "Perché il trade-off tra usabilità e protezione è importante?",
+      "answer": "Perché misure più rigide possono ridurre la facilità d’uso, mentre semplificazioni eccessive possono accrescere l’esposizione.",
+      "detail": "Il manuale chiede di valutare il compromesso in rapporto a risorse, minacce, obiettivi e comportamento desiderato del sistema.",
+      "example": "Una verifica di accesso aggiuntiva può essere opportuna per una funzione molto sensibile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che ogni maggiore frizione per l’utente produca automaticamente una migliore sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.8 — Ruolo del security manager, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q120",
+      "topicId": "cyber-c01-t17",
+      "question": "Come si imposta il compromesso tra costo della difesa e costo di un attacco?",
+      "answer": "Valutando se le misure di sicurezza siano proporzionate al valore degli asset e ai potenziali danni di una compromissione.",
+      "detail": "È uno dei quattro temi di decisione manageriale presenti nelle slide, senza una formula economica unica imposta dal capitolo.",
+      "example": "Si attribuisce maggiore priorità alla tutela di un servizio la cui interruzione produrrebbe danni elevati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostenere che la difesa migliore sia sempre quella più costosa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.8 — Ruolo del security manager, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q121",
+      "topicId": "cyber-c01-t17",
+      "question": "Perché la sicurezza è un problema anche di Ingegneria Gestionale?",
+      "answer": "Perché richiede priorità, allocazione di risorse e valutazione dei compromessi economici e organizzativi oltre alle scelte tecniche.",
+      "detail": "Il manager deve considerare valore degli asset, minacce, costi, usabilità e impatto degli incidenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ridurre la gestione cyber alla configurazione di apparati e software.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.8 — Ruolo del security manager, pagina PDF 20"
+    },
+    {
+      "id": "cyber-c01-q122",
+      "topicId": "cyber-c01-t18",
+      "question": "Quali sono le quattro fasi del ciclo di implementazione della sicurezza mostrato dalla slide 16?",
+      "answer": "Prevention (prevenzione), Detection (rilevazione), Response (risposta), Recovery (recupero).",
+      "detail": "La sicurezza viene presentata come ciclo continuo, non come intervento una tantum; le quattro fasi hanno finalità complementari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Fermarsi a prevention e dimenticare detection, response e recovery.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q123",
+      "topicId": "cyber-c01-t18",
+      "question": "Perché la sicurezza deve essere interpretata come un ciclo continuo?",
+      "answer": "Perché nessuna misura preventiva è assoluta e occorre individuare incidenti, reagire e ripristinare le capacità compromesse.",
+      "detail": "Il ciclo lega riduzione del rischio, osservazione, contenimento e recupero; le lezioni apprese possono influenzare i controlli futuri.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare il progetto di sicurezza terminato dopo aver installato le contromisure.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q124",
+      "topicId": "cyber-c01-t18",
+      "question": "Qual è la differenza di scopo tra prevention, detection, response e recovery?",
+      "answer": "Prevention riduce la probabilità di successo; detection individua l’evento; response lo contiene e gestisce; recovery ripristina e verifica le funzioni colpite.",
+      "detail": "Una misura può contribuire a più fasi, ma ognuna risponde a una domanda distinta: impedire, riconoscere, contenere o recuperare.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Chiamare “response” il semplice salvataggio di un backup.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q125",
+      "topicId": "cyber-c01-t18",
+      "question": "Che cos’è la prevention e qual è il suo obiettivo?",
+      "answer": "Ridurre la probabilità che un attacco abbia successo.",
+      "detail": "Le misure preventive non annullano il rischio ma ostacolano o impediscono percorsi di compromissione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che prevenzione equivale a garantire la totale assenza di incidenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.1, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q126",
+      "topicId": "cyber-c01-t18",
+      "question": "Quali misure di prevention elenca il manuale?",
+      "answer": "Hardening, patching, autenticazione, segmentazione, cifratura, controllo degli accessi, minimo privilegio e formazione.",
+      "detail": "Comprende quindi misure tecniche e umane, non soltanto aggiornamenti o firewall.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dimenticare il ruolo preventivo della formazione del personale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.1, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q127",
+      "topicId": "cyber-c01-t18",
+      "question": "Perché patching, hardening e minimo privilegio appartengono alla prevenzione?",
+      "answer": "Perché riducono rispettivamente debolezze software note, configurazioni o esposizioni inutili e ampiezza delle azioni consentite.",
+      "detail": "La sezione cita questi controlli come esempi che diminuiscono le opportunità di successo di un attacco.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere la riduzione della probabilità di compromissione con il ripristino successivo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.1, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q128",
+      "topicId": "cyber-c01-t18",
+      "question": "Che cos’è la detection e qual è il suo obiettivo?",
+      "answer": "Individuare nel minor tempo possibile attacchi, incidenti o comportamenti anomali.",
+      "detail": "La rilevazione è indispensabile quando la prevenzione non basta: permette di riconoscere e analizzare segnali utili per una risposta tempestiva.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare detection un sinonimo di impedire sempre l’attacco.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.2, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q129",
+      "topicId": "cyber-c01-t18",
+      "question": "Quali strumenti e attività di detection vengono citati?",
+      "answer": "Logging, monitoring, IDS, SIEM, allarmi, analisi delle anomalie e controlli periodici.",
+      "detail": "Queste pratiche raccolgono e interpretano evidenze per identificare eventi sospetti o già verificatisi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitare la rilevazione alla semplice presenza di un antivirus.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.2, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q130",
+      "topicId": "cyber-c01-t18",
+      "question": "Perché è importante rilevare un incidente rapidamente?",
+      "answer": "Per poter avviare tempestivamente le decisioni di contenimento e ridurre le conseguenze.",
+      "detail": "Il manuale colloca detection immediatamente prima di response nel ciclo, sottolineando l’importanza del tempo di individuazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assumere che un incidente scoperto tardi abbia necessariamente lo stesso impatto di uno scoperto subito.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.2, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q131",
+      "topicId": "cyber-c01-t18",
+      "question": "Che cosa comprende la response?",
+      "answer": "Azioni di contenimento dell’incidente, riduzione dell’impatto, coordinamento delle persone e decisioni durante l’evento.",
+      "detail": "Richiede procedure, ruoli definiti e capacità tecniche e organizzative; non si limita a rilevare un allarme.",
+      "example": "Un team avvia una procedura di contenimento dopo aver individuato un’attività anomala.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere detection (scoprire) con response (agire).",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.3, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q132",
+      "topicId": "cyber-c01-t18",
+      "question": "Perché la response non può essere soltanto tecnica?",
+      "answer": "Perché durante un incidente occorre coordinare il personale, stabilire responsabilità e prendere decisioni organizzative oltre alle misure sul sistema.",
+      "detail": "La sezione richiama espressamente ruoli, procedure e capacità tecnico-organizzativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che basti un allarme automatico per gestire un incidente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.3, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q133",
+      "topicId": "cyber-c01-t18",
+      "question": "Qual è la funzione del contenimento durante la response?",
+      "answer": "Limitare l’evoluzione dell’incidente e ridurne gli impatti sugli asset e sull’organizzazione.",
+      "detail": "Il contenimento è diverso dal recupero completo: prima si cerca di circoscrivere l’evento in corso, poi si ripristina in modo controllato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere il contenimento immediato con la conclusione di tutte le operazioni di recovery.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.3, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q134",
+      "topicId": "cyber-c01-t18",
+      "question": "Che cos’è la recovery?",
+      "answer": "Il ripristino controllato delle funzionalità, dei dati e dei servizi compromessi, con verifica dell’integrità e analisi delle lezioni apprese.",
+      "detail": "La recovery mira a tornare a operare in modo sostenibile e affidabile: non basta far ripartire il servizio senza verificare lo stato dell’ambiente.",
+      "example": "Un’organizzazione ripristina dati e verifica che l’ambiente recuperato non presenti alterazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Identificare recovery con il solo riavvio della macchina.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.4, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q135",
+      "topicId": "cyber-c01-t18",
+      "question": "Quali attività specifiche il manuale associa al recupero?",
+      "answer": "Ripristino delle funzionalità, restaurazione dei dati e servizi, verifica dell’integrità dell’ambiente e revisione delle lezioni apprese.",
+      "detail": "Le attività uniscono continuità operativa e controllo della qualità e della sicurezza del ripristino.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ripristinare il servizio senza accertare che dati e ambiente siano affidabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.4, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q136",
+      "topicId": "cyber-c01-t18",
+      "question": "Perché la recovery comprende anche le lezioni apprese?",
+      "answer": "Perché l’incidente deve essere analizzato per migliorare controlli e procedure nelle fasi successive.",
+      "detail": "Il modello è ciclico: l’esperienza del recupero deve contribuire a una protezione futura più consapevole.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare un incidente concluso come un evento dal quale non ricavare indicazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.4, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q137",
+      "topicId": "cyber-c01-t19",
+      "question": "Con quali funzioni del NIST Cybersecurity Framework 2.0 si collegano le quattro fasi della slide?",
+      "answer": "Prevention → Protect; Detection → Detect; Response → Respond; Recovery → Recover.",
+      "detail": "Il collegamento è riportato esplicitamente nel manuale. Sono corrispondenze concettuali utili a collocare il ciclo del docente in una prospettiva organizzativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che il framework NIST sia composto esclusivamente da queste quattro funzioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.5, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q138",
+      "topicId": "cyber-c01-t19",
+      "question": "Che cosa aggiunge la prospettiva NIST CSF 2.0 al ciclo in quattro fasi?",
+      "answer": "Funzioni di governo e identificazione del contesto di rischio, a complemento di protezione, rilevazione, risposta e recupero.",
+      "detail": "Il manuale sottolinea il valore organizzativo di questi aspetti per comprendere e migliorare la gestione del rischio cyber.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che il governo del rischio e l’identificazione degli asset non appartengano alla gestione cyber.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.5, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q139",
+      "topicId": "cyber-c01-t19",
+      "question": "Perché non si deve descrivere il collegamento slide–NIST come perfetta identità di modelli?",
+      "answer": "Perché il ciclo didattico della slide ha quattro fasi, mentre il framework NIST comprende anche governo e identificazione del contesto di rischio.",
+      "detail": "Il manuale indica che le fasi si collegano soprattutto a specifiche funzioni NIST: non dichiara equivalenza completa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostenere che Prevention, Detection, Response e Recovery siano i nomi di tutte le funzioni del NIST CSF 2.0.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.9.5, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q140",
+      "topicId": "cyber-c01-t20",
+      "question": "Quali tre categorie di elementi devono essere integrate per una cybersecurity efficace?",
+      "answer": "Obiettivi da garantire, pratiche e controlli per raggiungerli, processi per gestire minacce, attacchi e incidenti.",
+      "detail": "La sintesi del capitolo insiste sulla natura coordinata della protezione e sulla distinzione fra proprietà da preservare e misure operative.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Studiare gli obiettivi come definizioni isolate senza collegarli alle misure.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.10, pagina PDF 21"
+    },
+    {
+      "id": "cyber-c01-q141",
+      "topicId": "cyber-c01-t20",
+      "question": "Qual è l’idea centrale della sintesi del Capitolo 1?",
+      "answer": "Una sicurezza efficace protegge asset di valore attraverso obiettivi, controlli, policy e gestione continua di minacce, incidenti e rischio.",
+      "detail": "La sintesi riprende CIA e altre proprietà, attacchi passivi/attivi, asset, vulnerabilità, superficie d’attacco e ciclo prevention–recovery.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare il capitolo come un elenco scollegato di attacchi e tecnologie.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.10, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c01-q142",
+      "topicId": "cyber-c01-t20",
+      "question": "Quali due affermazioni riassumono il limite di una strategia basata solo sulla prevenzione?",
+      "answer": "Gli attacchi passivi possono essere difficili da rilevare e quelli attivi non si possono prevenire completamente; perciò servono anche detection, response e recovery.",
+      "detail": "Le quattro fasi del ciclo rispondono a limiti diversi della difesa e riducono il rischio di considerare la sicurezza conclusa prima dell’incidente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che prevenzione e continuità siano obiettivi alternativi e non complementari.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.10, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c01-q143",
+      "topicId": "cyber-c01-t20",
+      "question": "Come risponderesti in modo completo alla domanda orale «Che cos’è la cybersecurity?»?",
+      "answer": "È l’insieme di pratiche, meccanismi e processi che protegge sistemi, reti, applicazioni e dati dalle minacce alle proprietà di sicurezza.",
+      "detail": "Una risposta completa richiama obiettivi, contromisure, gestione degli attacchi e incidenti e riduzione del rischio; non si limita a nominare un software.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Definire la materia soltanto come “difesa dagli hacker”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.11, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c01-q144",
+      "topicId": "cyber-c01-t20",
+      "question": "Come struttureresti una risposta orale sugli obiettivi fondamentali della sicurezza?",
+      "answer": "Partirei da CIA (riservatezza, integrità, disponibilità), poi da identificabilità, autenticità e accountability, citando se pertinente il non ripudio.",
+      "detail": "Occorre per ciascuna proprietà definire cosa protegge e fornire un esempio di violazione o contromisura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dimenticare i due obiettivi aggiuntivi espressamente riportati dalla slide 8.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.11, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c01-q145",
+      "topicId": "cyber-c01-t20",
+      "question": "Come distingueresti in una risposta orale vulnerabilità, minaccia e attacco?",
+      "answer": "La vulnerabilità è una debolezza; la minaccia è una possibile causa dannosa; l’attacco è la concretizzazione della minaccia.",
+      "detail": "Il manuale consiglia di spiegare la differenza usando uno scenario coerente, eventualmente aggiungendo impatto e rischio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che una vulnerabilità è già un attacco riuscito.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.11, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c01-q146",
+      "topicId": "cyber-c01-t20",
+      "question": "Qual è una risposta orale completa a «Che cos’è la superficie d’attacco?»?",
+      "answer": "È l’insieme dei punti di esposizione o vulnerabilità raggiungibili attraverso cui un attore può cercare di compromettere il sistema.",
+      "detail": "Va spiegato che riguarda rete, software, hardware e persone e che una superficie più ampia e poco controllata è più difficile da difendere.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Rispondere soltanto “sono le porte aperte”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.11, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c01-q147",
+      "topicId": "cyber-c01-t20",
+      "question": "Come giustificheresti all’orale il fatto che la security policy preceda i controlli tecnici?",
+      "answer": "La policy determina asset prioritari, obiettivi, ruoli e regole; i controlli vanno scelti per attuare tali decisioni in modo coerente e proporzionato.",
+      "detail": "Senza una policy si rischia di usare strumenti non allineati ai bisogni e ai compromessi economico-organizzativi dell’impresa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare la policy come un elenco successivo delle tecnologie già acquistate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.11, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c01-q148",
+      "topicId": "cyber-c01-t20",
+      "question": "Come spiegheresti all’orale perché detection e response sono importanti quanto prevention?",
+      "answer": "Perché nessuna misura preventiva elimina ogni rischio: bisogna individuare gli incidenti, contenerli, limitarne l’impatto e recuperare servizi e dati.",
+      "detail": "Una risposta completa cita il ciclo in quattro fasi e distingue detection (scoprire) da response (agire) e recovery (ripristinare e verificare).",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere tutte le attività che seguono un evento con la sola fase di recovery.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.11, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c01-q149",
+      "topicId": "cyber-c01-t20",
+      "question": "Caso d’orale: un portale ha un database integro ma viene reso irraggiungibile. Quale obiettivo è violato?",
+      "answer": "La disponibilità.",
+      "detail": "L’integrità preservata non compensa l’impossibilità per gli utenti autorizzati di utilizzare il servizio quando necessario.",
+      "example": "Un guasto o una saturazione impedisce di servire richieste legittime.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Rispondere integrità perché è coinvolto un database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.11, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c01-q150",
+      "topicId": "cyber-c01-t20",
+      "question": "Caso d’orale: un attaccante legge di nascosto dati senza alterare il servizio. Come classifichi l’evento?",
+      "answer": "Attacco passivo che compromette soprattutto la riservatezza.",
+      "detail": "Proprio l’assenza di alterazioni evidenti può renderlo difficile da rilevare; il capitolo raccomanda misure preventive.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Classificarlo come attivo perché è comunque intenzionale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.11, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c01-q151",
+      "topicId": "cyber-c01-t20",
+      "question": "Caso d’orale: un avversario ritrasmette un messaggio valido in un momento successivo. Di quale attacco si tratta?",
+      "answer": "Replay, un attacco attivo.",
+      "detail": "La validità originaria di un messaggio non rende automaticamente legittima la sua ripetizione in un altro contesto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confonderlo con l’ascolto passivo del traffico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.11, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c01-q152",
+      "topicId": "cyber-c01-t20",
+      "question": "Caso d’orale: un’impresa registra eventi ma non protegge i log. Quale proprietà rischia di non assicurare?",
+      "answer": "L’accountability, cioè l’attribuzione affidabile delle azioni.",
+      "detail": "Il manuale richiede registrazione e protezione dei log, sincronizzazione degli orologi e definizione di responsabilità per poter utilizzare le evidenze.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere sufficiente la mera presenza dei file di log.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.11, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c01-q153",
+      "topicId": "cyber-c01-t20",
+      "question": "Caso d’orale: come risponderesti alla proposta «mettiamo più strumenti e saremo sicuramente sicuri»?",
+      "answer": "Valuterei prima valore degli asset, minacce, vulnerabilità, obiettivi della policy e costi/benefici delle contromisure.",
+      "detail": "Il manuale sottolinea che la sicurezza è una scelta coerente fra misure tecniche, umane, economiche e organizzative, non un numero di prodotti installati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere quantità di strumenti con adeguatezza dei controlli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 1, §1.11, pagina PDF 22"
+    }
+  ]
+}

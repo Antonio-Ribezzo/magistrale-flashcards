@@ -1,0 +1,2852 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "si",
+  "source": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7: Il linguaggio SQL, pagine PDF 95–112. Unica fonte autorizzata; esempi delle prove ufficiali e integrazioni PostgreSQL/Oracle sono distinti dove indicato nel manuale.",
+  "chapter": {
+    "id": "si-c07",
+    "title": "Il linguaggio SQL",
+    "order": 7,
+    "topics": [
+      {
+        "id": "si-c07-t01",
+        "title": "SQL dichiarativo e famiglie di istruzioni"
+      },
+      {
+        "id": "si-c07-t02",
+        "title": "Tipi di dato e logica di NULL"
+      },
+      {
+        "id": "si-c07-t03",
+        "title": "DDL, chiavi e vincoli"
+      },
+      {
+        "id": "si-c07-t04",
+        "title": "Dataset SQL riproducibile"
+      },
+      {
+        "id": "si-c07-t05",
+        "title": "ALTER, DROP e dipendenze"
+      },
+      {
+        "id": "si-c07-t06",
+        "title": "DML e UPSERT"
+      },
+      {
+        "id": "si-c07-t07",
+        "title": "SELECT, ordine logico e duplicati"
+      },
+      {
+        "id": "si-c07-t08",
+        "title": "Filtri e logica a tre valori"
+      },
+      {
+        "id": "si-c07-t09",
+        "title": "Join e cardinalità"
+      },
+      {
+        "id": "si-c07-t10",
+        "title": "Aggregazione, GROUP BY e HAVING"
+      },
+      {
+        "id": "si-c07-t11",
+        "title": "Sottoquery, EXISTS, ALL e tutti"
+      },
+      {
+        "id": "si-c07-t12",
+        "title": "Operazioni insiemistiche e CTE"
+      },
+      {
+        "id": "si-c07-t13",
+        "title": "CASE, COALESCE e conversioni"
+      },
+      {
+        "id": "si-c07-t14",
+        "title": "Qualità, sicurezza e EXPLAIN"
+      },
+      {
+        "id": "si-c07-t15",
+        "title": "Confronto PostgreSQL–Oracle"
+      },
+      {
+        "id": "si-c07-t16",
+        "title": "Prove ufficiali e metodo Moodle"
+      },
+      {
+        "id": "si-c07-t17",
+        "title": "Esercizi guidati 01–14"
+      },
+      {
+        "id": "si-c07-t18",
+        "title": "Esercizi autonomi e autoverifica"
+      },
+      {
+        "id": "si-c07-t19",
+        "title": "Glossario e collegamenti conclusivi"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§7.1 — pagina PDF 95",
+        "cardIds": [
+          "si-c07-q001",
+          "si-c07-q002",
+          "si-c07-q003",
+          "si-c07-q004",
+          "si-c07-q005",
+          "si-c07-q006",
+          "si-c07-q007"
+        ]
+      },
+      {
+        "label": "§7.2 — pagina PDF 96",
+        "cardIds": [
+          "si-c07-q008",
+          "si-c07-q009",
+          "si-c07-q010",
+          "si-c07-q011",
+          "si-c07-q012",
+          "si-c07-q013",
+          "si-c07-q014",
+          "si-c07-q015",
+          "si-c07-q016"
+        ]
+      },
+      {
+        "label": "§7.3 — pagina PDF 97",
+        "cardIds": [
+          "si-c07-q017",
+          "si-c07-q018",
+          "si-c07-q019",
+          "si-c07-q020",
+          "si-c07-q021",
+          "si-c07-q022",
+          "si-c07-q023",
+          "si-c07-q024",
+          "si-c07-q025",
+          "si-c07-q026",
+          "si-c07-q027",
+          "si-c07-q028"
+        ]
+      },
+      {
+        "label": "§7.4 — pagina PDF 98",
+        "cardIds": [
+          "si-c07-q029",
+          "si-c07-q030",
+          "si-c07-q031",
+          "si-c07-q032",
+          "si-c07-q033"
+        ]
+      },
+      {
+        "label": "§7.4 — pagina PDF 99",
+        "cardIds": [
+          "si-c07-q034",
+          "si-c07-q035",
+          "si-c07-q036",
+          "si-c07-q037",
+          "si-c07-q038",
+          "si-c07-q039"
+        ]
+      },
+      {
+        "label": "§7.5 — pagina PDF 99",
+        "cardIds": [
+          "si-c07-q040",
+          "si-c07-q041",
+          "si-c07-q042",
+          "si-c07-q043",
+          "si-c07-q044"
+        ]
+      },
+      {
+        "label": "§7.6 — pagina PDF 99",
+        "cardIds": [
+          "si-c07-q045",
+          "si-c07-q046",
+          "si-c07-q052"
+        ]
+      },
+      {
+        "label": "§7.6 — pagina PDF 100",
+        "cardIds": [
+          "si-c07-q047",
+          "si-c07-q048",
+          "si-c07-q049",
+          "si-c07-q050",
+          "si-c07-q051"
+        ]
+      },
+      {
+        "label": "§7.7 — pagina PDF 100",
+        "cardIds": [
+          "si-c07-q053",
+          "si-c07-q054",
+          "si-c07-q055",
+          "si-c07-q056",
+          "si-c07-q058",
+          "si-c07-q059",
+          "si-c07-q060"
+        ]
+      },
+      {
+        "label": "§7.7 — pagina PDF 101",
+        "cardIds": [
+          "si-c07-q057"
+        ]
+      },
+      {
+        "label": "§7.8 — pagina PDF 101",
+        "cardIds": [
+          "si-c07-q061",
+          "si-c07-q062",
+          "si-c07-q063",
+          "si-c07-q064",
+          "si-c07-q065",
+          "si-c07-q066",
+          "si-c07-q067",
+          "si-c07-q068",
+          "si-c07-q069"
+        ]
+      },
+      {
+        "label": "§7.9 — pagina PDF 102",
+        "cardIds": [
+          "si-c07-q070",
+          "si-c07-q071",
+          "si-c07-q072",
+          "si-c07-q073",
+          "si-c07-q074",
+          "si-c07-q075",
+          "si-c07-q076",
+          "si-c07-q077",
+          "si-c07-q078",
+          "si-c07-q079"
+        ]
+      },
+      {
+        "label": "§7.10 — pagina PDF 102",
+        "cardIds": [
+          "si-c07-q080",
+          "si-c07-q081",
+          "si-c07-q082",
+          "si-c07-q083"
+        ]
+      },
+      {
+        "label": "§7.10 — pagina PDF 103",
+        "cardIds": [
+          "si-c07-q084",
+          "si-c07-q085",
+          "si-c07-q086",
+          "si-c07-q087",
+          "si-c07-q088",
+          "si-c07-q089",
+          "si-c07-q090"
+        ]
+      },
+      {
+        "label": "§7.11 — pagina PDF 103",
+        "cardIds": [
+          "si-c07-q091",
+          "si-c07-q092",
+          "si-c07-q101"
+        ]
+      },
+      {
+        "label": "§7.11 — pagina PDF 104",
+        "cardIds": [
+          "si-c07-q093",
+          "si-c07-q094",
+          "si-c07-q095",
+          "si-c07-q096",
+          "si-c07-q097",
+          "si-c07-q098",
+          "si-c07-q099",
+          "si-c07-q100"
+        ]
+      },
+      {
+        "label": "§7.12 — pagina PDF 104",
+        "cardIds": [
+          "si-c07-q102",
+          "si-c07-q103",
+          "si-c07-q104",
+          "si-c07-q106",
+          "si-c07-q108"
+        ]
+      },
+      {
+        "label": "§7.12 — pagina PDF 105",
+        "cardIds": [
+          "si-c07-q105",
+          "si-c07-q107"
+        ]
+      },
+      {
+        "label": "§7.13 — pagina PDF 105",
+        "cardIds": [
+          "si-c07-q109",
+          "si-c07-q110",
+          "si-c07-q111",
+          "si-c07-q112",
+          "si-c07-q113",
+          "si-c07-q114",
+          "si-c07-q115"
+        ]
+      },
+      {
+        "label": "§7.14 — pagina PDF 105",
+        "cardIds": [
+          "si-c07-q116",
+          "si-c07-q117",
+          "si-c07-q118",
+          "si-c07-q122"
+        ]
+      },
+      {
+        "label": "§7.14 — pagina PDF 106",
+        "cardIds": [
+          "si-c07-q119",
+          "si-c07-q120",
+          "si-c07-q121"
+        ]
+      },
+      {
+        "label": "§7.15 — pagina PDF 106",
+        "cardIds": [
+          "si-c07-q123",
+          "si-c07-q124",
+          "si-c07-q125",
+          "si-c07-q126",
+          "si-c07-q127",
+          "si-c07-q128",
+          "si-c07-q129",
+          "si-c07-q130",
+          "si-c07-q131",
+          "si-c07-q132"
+        ]
+      },
+      {
+        "label": "§7.16 — pagina PDF 107",
+        "cardIds": [
+          "si-c07-q133",
+          "si-c07-q134",
+          "si-c07-q135",
+          "si-c07-q136",
+          "si-c07-q137",
+          "si-c07-q138",
+          "si-c07-q139"
+        ]
+      },
+      {
+        "label": "§7.17 — pagina PDF 107",
+        "cardIds": [
+          "si-c07-q140",
+          "si-c07-q141",
+          "si-c07-q142"
+        ]
+      },
+      {
+        "label": "§7.17 — pagina PDF 108",
+        "cardIds": [
+          "si-c07-q143",
+          "si-c07-q144",
+          "si-c07-q145",
+          "si-c07-q146",
+          "si-c07-q147",
+          "si-c07-q148",
+          "si-c07-q149",
+          "si-c07-q150",
+          "si-c07-q151",
+          "si-c07-q152",
+          "si-c07-q153",
+          "si-c07-q154"
+        ]
+      },
+      {
+        "label": "§7.17 — pagina PDF 109",
+        "cardIds": [
+          "si-c07-q155",
+          "si-c07-q156",
+          "si-c07-q157",
+          "si-c07-q158",
+          "si-c07-q159",
+          "si-c07-q160",
+          "si-c07-q161",
+          "si-c07-q162",
+          "si-c07-q163",
+          "si-c07-q164",
+          "si-c07-q165",
+          "si-c07-q166"
+        ]
+      },
+      {
+        "label": "§7.17 — pagina PDF 110",
+        "cardIds": [
+          "si-c07-q167",
+          "si-c07-q168"
+        ]
+      },
+      {
+        "label": "§7.18 — pagina PDF 110",
+        "cardIds": [
+          "si-c07-q169",
+          "si-c07-q170",
+          "si-c07-q171",
+          "si-c07-q172",
+          "si-c07-q173",
+          "si-c07-q174",
+          "si-c07-q175"
+        ]
+      },
+      {
+        "label": "§7.18 — pagina PDF 111",
+        "cardIds": [
+          "si-c07-q176",
+          "si-c07-q177",
+          "si-c07-q178",
+          "si-c07-q179",
+          "si-c07-q180",
+          "si-c07-q181",
+          "si-c07-q182",
+          "si-c07-q183",
+          "si-c07-q184"
+        ]
+      },
+      {
+        "label": "§7.19 — pagina PDF 112",
+        "cardIds": [
+          "si-c07-q185",
+          "si-c07-q186",
+          "si-c07-q187",
+          "si-c07-q188",
+          "si-c07-q189",
+          "si-c07-q190"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "si-c07-q001",
+      "topicId": "si-c07-t01",
+      "question": "Che cos’è SQL e qual è il suo scopo in un RDBMS?",
+      "answer": "SQL (Structured Query Language) consente di definire strutture e vincoli, interrogare dati relazionali e modificare il contenuto delle tabelle.",
+      "detail": "È il linguaggio di lavoro su uno schema relazionale concretizzato in un DBMS; non va identificato con il modello relazionale matematico.",
+      "example": "E-R → schema relazionale → CREATE TABLE e SELECT.",
+      "formulas": [],
+      "connections": [
+        "Cap. 4: lo schema relazionale concretizza i concetti modellati in E-R."
+      ],
+      "mistakes": "Non ridurre SQL alle sole interrogazioni SELECT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.1, pagina PDF 95"
+    },
+    {
+      "id": "si-c07-q002",
+      "topicId": "si-c07-t01",
+      "question": "Perché SQL viene definito un linguaggio dichiarativo?",
+      "answer": "Perché esprime quale risultato si richiede, lasciando al DBMS la scelta del piano fisico con cui produrlo.",
+      "detail": "Il programmatore non prescrive la sequenza di accesso ai record né l’indice da leggere; l’ottimizzatore può scegliere strategie differenti.",
+      "example": "SELECT ... WHERE stato = 'VALIDATA'.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere ordine logico delle clausole con esecuzione fisica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.1, pagina PDF 95"
+    },
+    {
+      "id": "si-c07-q003",
+      "topicId": "si-c07-t01",
+      "question": "Quali differenze fondamentali esistono tra algebra relazionale classica e SQL?",
+      "answer": "L’algebra relazionale classica usa insiemi di tuple senza duplicati; SQL permette multinsiemi, NULL e logica a tre valori.",
+      "detail": "Un SELECT senza DISTINCT può replicare valori e un confronto con NULL produce UNKNOWN.",
+      "example": "La proiezione di id_offerta da cinque simulazioni presenta ripetizioni.",
+      "formulas": [],
+      "connections": [
+        "Cap. 5: proiezione e operazioni insiemistiche classiche."
+      ],
+      "mistakes": "Non trasferire automaticamente le regole degli insiemi a ogni SELECT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.1, pagina PDF 95"
+    },
+    {
+      "id": "si-c07-q004",
+      "topicId": "si-c07-t01",
+      "question": "Quali istruzioni appartengono alla famiglia DDL?",
+      "answer": "CREATE, ALTER e DROP, usate per creare, modificare ed eliminare strutture e vincoli del database.",
+      "detail": "Il DDL rende implementabile lo schema logico definendo oggetti persistenti.",
+      "example": "CREATE TABLE didattica.segmento (...).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la creazione di una tabella con l’inserimento delle sue righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.1, pagina PDF 95"
+    },
+    {
+      "id": "si-c07-q005",
+      "topicId": "si-c07-t01",
+      "question": "Che cosa comprende il DML e che cosa modifica?",
+      "answer": "INSERT, UPDATE, DELETE e MERGE: operano sulle istanze o righe memorizzate, non sulla definizione della struttura.",
+      "detail": "La famiglia è distinta dalle interrogazioni anche se in alcuni contesti SQL viene classificato in modi differenti.",
+      "example": "UPDATE didattica.offerta SET quota_annua=105 WHERE id_offerta=50.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un UPDATE privo di WHERE può modificare tutte le righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.1, pagina PDF 95"
+    },
+    {
+      "id": "si-c07-q006",
+      "topicId": "si-c07-t01",
+      "question": "A cosa servono DCL e controllo delle transazioni?",
+      "answer": "GRANT e REVOKE gestiscono i privilegi; BEGIN, COMMIT, ROLLBACK e SAVEPOINT governano le unità di lavoro transazionali.",
+      "detail": "DQL per SELECT/WITH e TCL per il controllo delle transazioni sono etichette didattiche diffuse, non necessariamente categorie autonome della norma.",
+      "example": "COMMIT conferma le modifiche di una transazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere GRANT con un vincolo CHECK applicato ai dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.1, pagina PDF 95"
+    },
+    {
+      "id": "si-c07-q007",
+      "topicId": "si-c07-t01",
+      "question": "Quale percorso concettuale conduce dai requisiti a una tabella SQL?",
+      "answer": "Analisi dei requisiti → modello E-R concettuale → ristrutturazione e traduzione relazionale → definizione DDL.",
+      "detail": "Le query derivano dalle interrogazioni desiderate e recuperano le informazioni dai dati modellati.",
+      "example": "Una relazione E-R N:M diventa una tabella di collegamento con chiavi esterne.",
+      "formulas": [],
+      "connections": [
+        "Cap. 2–4: requisiti, E-R e traduzione logica."
+      ],
+      "mistakes": "Partire direttamente dalla sintassi SQL rischia di perdere vincoli del dominio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.1, pagina PDF 95"
+    },
+    {
+      "id": "si-c07-q008",
+      "topicId": "si-c07-t02",
+      "question": "Perché la scelta del tipo di dato è parte della modellazione?",
+      "answer": "Perché delimita valori rappresentabili, precisione e operazioni consentite; non è una scelta puramente estetica.",
+      "detail": "Prezzi e tariffe richiedono un significato numerico e un’unità dichiarata nella specifica.",
+      "example": "NUMERIC(12,4) per importi in decimali esatti.",
+      "formulas": [],
+      "connections": [
+        "Cap. 6: normalizzazione e dipendenze descrivono semantica, non tipi fisici."
+      ],
+      "mistakes": "Non utilizzare FLOAT per inerzia nei valori economici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.2, pagina PDF 96"
+    },
+    {
+      "id": "si-c07-q009",
+      "topicId": "si-c07-t02",
+      "question": "Quali tipi PostgreSQL sono indicati per identificativi, testo e importi?",
+      "answer": "INTEGER/BIGINT per interi; VARCHAR(n)/TEXT per codici o descrizioni; NUMERIC(p,s) per valori decimali esatti nei limiti dichiarati.",
+      "detail": "VARCHAR(n) impone un limite di lunghezza; TEXT non ne impone uno fisso.",
+      "example": "prezzo_kwh NUMERIC(10,5).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere precisione p e scala s di NUMERIC.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.2, pagina PDF 96"
+    },
+    {
+      "id": "si-c07-q010",
+      "topicId": "si-c07-t02",
+      "question": "Che differenza c’è tra DATE, TIMESTAMP e TIMESTAMP WITH TIME ZONE nel contesto del manuale?",
+      "answer": "DATE rappresenta date; TIMESTAMP data e ora; la variante WITH TIME ZONE è da valutare quando interessa un istante assoluto.",
+      "detail": "La scelta del tipo deve riflettere il significato temporale: data di decorrenza e momento di elaborazione non coincidono.",
+      "example": "data_sim DATE NOT NULL DEFAULT CURRENT_DATE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente un fuso orario a DATE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.2, pagina PDF 96"
+    },
+    {
+      "id": "si-c07-q011",
+      "topicId": "si-c07-t02",
+      "question": "Quali valori può ammettere una colonna BOOLEAN PostgreSQL senza NOT NULL?",
+      "answer": "TRUE, FALSE oppure NULL.",
+      "detail": "NULL non significa FALSE: indica informazione assente, ignota o non applicabile secondo la semantica scelta.",
+      "example": "attivo BOOLEAN NOT NULL DEFAULT TRUE impedisce la terza possibilità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare un flag nullo come una negazione logica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.2, pagina PDF 96"
+    },
+    {
+      "id": "si-c07-q012",
+      "topicId": "si-c07-t02",
+      "question": "Che cosa rappresenta NULL e quali valori non sono equivalenti?",
+      "answer": "NULL rappresenta mancanza, indeterminatezza o non applicabilità di un valore; non equivale a 0, FALSE o stringa vuota.",
+      "detail": "Il dominio stabilisce quale interpretazione dare al valore assente; in SQL il confronto tradizionale con NULL è UNKNOWN.",
+      "example": "Un cliente senza id_segmento ha id_segmento NULL.",
+      "formulas": [],
+      "connections": [
+        "§7.8: logica a tre valori nei predicati di filtro."
+      ],
+      "mistakes": "Non sostituire NULL con 0 senza una regola esplicita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.2, pagina PDF 96"
+    },
+    {
+      "id": "si-c07-q013",
+      "topicId": "si-c07-t02",
+      "question": "Perché il filtro x = NULL non individua i valori mancanti?",
+      "answer": "Perché il confronto con NULL non è TRUE ma UNKNOWN; per trovare valori assenti si usa IS NULL.",
+      "detail": "WHERE mantiene soltanto condizioni TRUE.",
+      "example": "SELECT ... WHERE id_segmento IS NULL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare = NULL o <> NULL per cercare assenze.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.2, pagina PDF 96"
+    },
+    {
+      "id": "si-c07-q014",
+      "topicId": "si-c07-t02",
+      "question": "Quali sono i tre valori della logica SQL e come agisce WHERE?",
+      "answer": "TRUE, FALSE e UNKNOWN; WHERE mantiene le righe per cui il predicato risulta TRUE.",
+      "detail": "Anche NOT UNKNOWN resta UNKNOWN, perciò NOT (x=5) non include i valori x NULL.",
+      "example": "Con prezzo NULL sia prezzo > 0 sia prezzo = 0 producono UNKNOWN.",
+      "formulas": [],
+      "connections": [
+        "§7.3: CHECK non considera violazione un predicato UNKNOWN."
+      ],
+      "mistakes": "Non assimilare UNKNOWN a FALSE in tutte le operazioni logiche.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.2, pagina PDF 96"
+    },
+    {
+      "id": "si-c07-q015",
+      "topicId": "si-c07-t02",
+      "question": "Qual è l’esito di COALESCE(prezzo,0) se prezzo è NULL?",
+      "answer": "Restituisce 0, poiché COALESCE prende il primo argomento non NULL.",
+      "detail": "La sostituzione serve soltanto se attribuire zero al dato mancante è coerente con il dominio.",
+      "example": "COALESCE(prezzo,0) = 0 nel caso di prezzo NULL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare COALESCE per nascondere dati mancanti significativi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.2, pagina PDF 96"
+    },
+    {
+      "id": "si-c07-q016",
+      "topicId": "si-c07-t02",
+      "question": "Come distinguere accuratezza aritmetica e unità di misura nei campi economici?",
+      "answer": "Una precisione NUMERIC adeguata non basta: occorre dichiarare se il dato è in €/kWh, €/MWh, euro/anno o altra unità.",
+      "detail": "Il DBMS non deduce l’unità dal numero memorizzato.",
+      "example": "0,15000 €/kWh non è lo stesso valore numerico di 150 €/MWh anche se sono economicamente equivalenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sommare importi con scale e unità diverse.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.2, pagina PDF 96"
+    },
+    {
+      "id": "si-c07-q017",
+      "topicId": "si-c07-t03",
+      "question": "Che cosa definiscono CREATE SCHEMA e CREATE TABLE in PostgreSQL?",
+      "answer": "CREATE SCHEMA introduce un namespace; CREATE TABLE crea una relazione SQL con colonne, tipi e vincoli.",
+      "detail": "La struttura deve riflettere le chiavi e le dipendenze definite nello schema logico.",
+      "example": "CREATE SCHEMA IF NOT EXISTS didattica;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare uno schema SQL con il solo elenco delle colonne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.3, pagina PDF 97"
+    },
+    {
+      "id": "si-c07-q018",
+      "topicId": "si-c07-t03",
+      "question": "Quali proprietà impone PRIMARY KEY?",
+      "answer": "Identificazione univoca delle righe e obbligatorietà di tutte le colonne della chiave (non NULL).",
+      "detail": "Può essere semplice oppure composta; esprime l’identificatore scelto fra le chiavi candidate.",
+      "example": "PRIMARY KEY (id_preventivo, numero_riga).",
+      "formulas": [],
+      "connections": [
+        "Cap. 4: identificatori e chiavi candidate."
+      ],
+      "mistakes": "Non sostituire una chiave locale composta con numero_riga univoco globalmente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.3, pagina PDF 97"
+    },
+    {
+      "id": "si-c07-q019",
+      "topicId": "si-c07-t03",
+      "question": "In cosa differiscono UNIQUE e PRIMARY KEY?",
+      "answer": "UNIQUE impone unicità secondo la gestione di NULL prevista dal DBMS/vincolo; PRIMARY KEY garantisce anche che le colonne identificanti non siano NULL.",
+      "detail": "Una tabella può avere ulteriori vincoli UNIQUE oltre alla PK.",
+      "example": "codice VARCHAR(20) NOT NULL UNIQUE in OFFERTA.",
+      "formulas": [],
+      "connections": [
+        "Cap. 4: differenza fra chiave primaria e chiavi alternative."
+      ],
+      "mistakes": "Non dedurre automaticamente NOT NULL dal solo UNIQUE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.3, pagina PDF 97"
+    },
+    {
+      "id": "si-c07-q020",
+      "topicId": "si-c07-t03",
+      "question": "Qual è lo scopo di NOT NULL e perché DEFAULT non lo sostituisce?",
+      "answer": "NOT NULL proibisce l’assenza di valore; DEFAULT indica un valore assegnato quando appropriato, ma non elimina di per sé la possibilità di un NULL esplicito.",
+      "detail": "Se la colonna deve essere obbligatoria vanno dichiarati i vincoli pertinenti.",
+      "example": "attivo BOOLEAN NOT NULL DEFAULT TRUE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare DEFAULT come vincolo di obbligatorietà.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.3, pagina PDF 97"
+    },
+    {
+      "id": "si-c07-q021",
+      "topicId": "si-c07-t03",
+      "question": "Qual è la limitazione logica di CHECK (x > 0) rispetto ai NULL?",
+      "answer": "CHECK rifiuta soltanto esiti FALSE; un esito UNKNOWN da x NULL non viola il vincolo.",
+      "detail": "Per imporre x strettamente positivo e obbligatorio serve anche NOT NULL.",
+      "example": "consumo_rif NUMERIC(12,2) NOT NULL CHECK (consumo_rif > 0).",
+      "formulas": [],
+      "connections": [
+        "§7.2: la presenza di NULL determina UNKNOWN."
+      ],
+      "mistakes": "Non affermare che CHECK > 0 escluda automaticamente NULL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.3, pagina PDF 97"
+    },
+    {
+      "id": "si-c07-q022",
+      "topicId": "si-c07-t03",
+      "question": "Quale condizione impone una FOREIGN KEY?",
+      "answer": "Il valore non nullo della colonna o combinazione di colonne figlia deve corrispondere a un valore di chiave primaria o univoca della tabella referenziata.",
+      "detail": "Un riferimento può essere NULL se lo schema lo consente; obbligatorietà e integrità referenziale sono regole distinte.",
+      "example": "simulazione.id_offerta REFERENCES offerta(id_offerta).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare FK a una colonna del padre non univoca.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.3, pagina PDF 97"
+    },
+    {
+      "id": "si-c07-q023",
+      "topicId": "si-c07-t03",
+      "question": "Come si traduce un identificatore esterno in un vincolo SQL?",
+      "answer": "Con una chiave composta che include il riferimento al contesto padre e l’identificativo locale, oltre alla relativa FK.",
+      "detail": "Nel caso del manuale una riga di preventivo è identificata da (id_preventivo,numero_riga).",
+      "example": "PRIMARY KEY (id_preventivo, numero_riga).",
+      "formulas": [],
+      "connections": [
+        "Cap. 2: identificazione esterna in uno schema E-R."
+      ],
+      "mistakes": "Il solo numero di riga può ripetersi in preventivi diversi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.3, pagina PDF 97"
+    },
+    {
+      "id": "si-c07-q024",
+      "topicId": "si-c07-t03",
+      "question": "Che cosa fanno ON DELETE RESTRICT, CASCADE e SET NULL?",
+      "answer": "RESTRICT impedisce la cancellazione del padre referenziato; CASCADE cancella anche i figli collegati; SET NULL rimuove il riferimento impostandolo a NULL.",
+      "detail": "La scelta dipende dal significato e dai requisiti di conservazione del dato.",
+      "example": "Cancellare un’offerta con simulazioni può essere bloccato oppure propagato secondo la FK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "CASCADE può cancellare dati storici; SET NULL non è compatibile con una colonna NOT NULL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.3, pagina PDF 97"
+    },
+    {
+      "id": "si-c07-q025",
+      "topicId": "si-c07-t03",
+      "question": "Quando un vincolo è esprimibile con CHECK di riga?",
+      "answer": "Quando la condizione dipende dai valori della stessa riga e può essere verificata in quel contesto.",
+      "detail": "Esempi: quantità positiva, prezzo non negativo, data finale non anteriore a quella iniziale.",
+      "example": "CHECK (fine >= inizio).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non far leggere altre tabelle a un CHECK PostgreSQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.3, pagina PDF 97"
+    },
+    {
+      "id": "si-c07-q026",
+      "topicId": "si-c07-t03",
+      "question": "Perché CHECK con una sottoquery verso un’altra tabella, presente in certe tracce storiche, non è uno script PostgreSQL valido?",
+      "answer": "Perché PostgreSQL non ammette sottoquery né controlli su altre righe o tabelle nelle espressioni CHECK.",
+      "detail": "La regola di business può essere corretta in astratto, ma richiede un meccanismo implementativo diverso: vincoli opportuni, trigger o logica transazionale.",
+      "example": "Confrontare data_invio di una proposta e scadenza del relativo bando.",
+      "formulas": [],
+      "connections": [
+        "Cap. 8: trigger e regole attive per vincoli non locali."
+      ],
+      "mistakes": "Non cambiare la regola delle slide; distinguere requisito e implementazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.3, pagina PDF 97"
+    },
+    {
+      "id": "si-c07-q027",
+      "topicId": "si-c07-t03",
+      "question": "Qual è la differenza tra integrità referenziale e vincolo di business inter-relazionale?",
+      "answer": "La FK garantisce l’esistenza del riferimento, ma non ogni relazione semantica tra attributi di tabelle diverse.",
+      "detail": "Un figlio può referenziare un bando esistente pur avendo una data di invio successiva alla sua scadenza.",
+      "example": "FK bando valida, ma data_invio <= scadenza_bando da controllare separatamente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire alla FK capacità di confrontare automaticamente date fra tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.3, pagina PDF 97"
+    },
+    {
+      "id": "si-c07-q028",
+      "topicId": "si-c07-t03",
+      "question": "Quali vincoli impone il Listato 7.1 alla tabella SEGMENTO?",
+      "answer": "id_segmento è PK; nome è obbligatorio e univoco; consumo_rif è obbligatorio e maggiore di 0; attivo è BOOLEAN obbligatorio con default TRUE.",
+      "detail": "È una struttura didattica per mostrare PK, UNIQUE, NOT NULL, CHECK e DEFAULT insieme.",
+      "example": "CREATE TABLE didattica.segmento (...).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trascurare il NOT NULL accanto a CHECK(consumo_rif > 0).",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.3, pagina PDF 97"
+    },
+    {
+      "id": "si-c07-q029",
+      "topicId": "si-c07-t04",
+      "question": "Quali sono le quattro tabelle dello schema dimostrativo del Capitolo 7?",
+      "answer": "SEGMENTO, OFFERTA, CLIENTE e SIMULAZIONE.",
+      "detail": "Lo schema è un esempio didattico inventato, non lo schema definitivo di EnerPrice né un modello completo di fatturazione.",
+      "example": "SIMULAZIONE contiene FK verso OFFERTA e SEGMENTO.",
+      "formulas": [],
+      "connections": [
+        "Progetto EnerPrice: lo schema illustrato è solo didattico e non vincolante."
+      ],
+      "mistakes": "Non presentare dati inventati come caratteristiche reali di offerte energetiche.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.4, pagina PDF 98"
+    },
+    {
+      "id": "si-c07-q030",
+      "topicId": "si-c07-t04",
+      "question": "Quali relazioni esistono tra SIMULAZIONE, OFFERTA e SEGMENTO?",
+      "answer": "Ogni simulazione si riferisce a un’offerta e a un segmento; un’offerta e un segmento possono essere collegati a più simulazioni.",
+      "detail": "Le due FK di SIMULAZIONE sono NOT NULL nel dataset.",
+      "example": "id_offerta e id_segmento in simulazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare una singola simulazione come relazione molti-a-molti senza identità autonoma.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.4, pagina PDF 98"
+    },
+    {
+      "id": "si-c07-q031",
+      "topicId": "si-c07-t04",
+      "question": "Qual è la funzione del campo id_segmento in CLIENTE?",
+      "answer": "È una FK opzionale verso SEGMENTO: il cliente può essere associato a un segmento oppure avere il riferimento NULL.",
+      "detail": "Il dataset include apposta un cliente senza segmento per testare IS NULL e i filtri.",
+      "example": "Cliente 3, «Cliente senza segmento», id_segmento NULL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare INNER JOIN se serve mantenere anche clienti non classificati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.4, pagina PDF 98"
+    },
+    {
+      "id": "si-c07-q032",
+      "topicId": "si-c07-t04",
+      "question": "Quali vincoli economici compaiono in OFFERTA?",
+      "answer": "prezzo_kwh NUMERIC(10,5) e quota_annua NUMERIC(10,2), entrambi NOT NULL e non negativi; stato è limitato ai valori BOZZA, VALIDATA, ARCHIVIATA.",
+      "detail": "Codice dell’offerta obbligatorio e univoco; stato ha DEFAULT BOZZA.",
+      "example": "CHECK (prezzo_kwh >= 0), CHECK (quota_annua >= 0).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere prezzo unitario €/kWh e quota annuale in euro.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.4, pagina PDF 98"
+    },
+    {
+      "id": "si-c07-q033",
+      "topicId": "si-c07-t04",
+      "question": "Quali vincoli sono applicati a consumo_kwh e costo_kwh di SIMULAZIONE?",
+      "answer": "consumo_kwh deve essere non NULL e positivo; costo_kwh non NULL e non negativo.",
+      "detail": "SIMULAZIONE ha inoltre data_sim DATE NOT NULL con default CURRENT_DATE.",
+      "example": "CHECK (consumo_kwh > 0), CHECK (costo_kwh >= 0).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non consentire consumo zero quando il vincolo adottato è strettamente > 0.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.4, pagina PDF 98"
+    },
+    {
+      "id": "si-c07-q034",
+      "topicId": "si-c07-t04",
+      "question": "Quali segmenti e consumi di riferimento compongono il dataset?",
+      "answer": "Residenziale (ID 1, 2.700 kWh), Microimpresa (ID 2, 12.000 kWh), PMI (ID 3, 60.000 kWh).",
+      "detail": "Tutti e tre sono attivi nel Listato 7.4.",
+      "example": "I valori sono fittizi e servono per ricostruire le query a mano.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il consumo_rif di SEGMENTO con il consumo effettivo ipotizzato in SIMULAZIONE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.4, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q035",
+      "topicId": "si-c07-t04",
+      "question": "Quali sono le quattro offerte e i loro prezzi e stati iniziali?",
+      "answer": "FISSA_A: 0,15000 €/kWh, quota 90 €, VALIDATA; FISSA_B: 0,17000, quota 120 €, BOZZA; FISSA_C: 0,14000, quota 180 €, VALIDATA; FISSA_D: 0,16000, quota 110 €, BOZZA.",
+      "detail": "ID rispettivi: 10,20,30,40; FISSA_D non ha simulazioni.",
+      "example": "Listato 7.4.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare i valori dell’UPSERT d’esempio (consumo_rif=15000) per i risultati attesi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.4, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q036",
+      "topicId": "si-c07-t04",
+      "question": "Come sono ripartite le cinque simulazioni fra offerte e segmenti?",
+      "answer": "100: offerta 10/segmento 1; 101: 10/2; 102: 20/2; 103: 30/3; 104: 20/1.",
+      "detail": "Le offerte 10 e 20 hanno due simulazioni; la 30 una; la 40 nessuna.",
+      "example": "ID 100–104 nel Listato 7.4.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire simulazioni all’offerta 40.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.4, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q037",
+      "topicId": "si-c07-t04",
+      "question": "Quali consumi e costi unitari si usano nelle cinque simulazioni?",
+      "answer": "100: 2.700 e 0,12000; 101: 12.000 e 0,11500; 102: 8.000 e 0,13000; 103: 50.000 e 0,11000; 104: 3.000 e 0,12500 (kWh e €/kWh).",
+      "detail": "Valori inventati utili a verificare SUM, AVG, filtri e ricavi.",
+      "example": "La somma dei consumi delle cinque simulazioni è 75.700 kWh.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire il consumo_rif con il consumo della simulazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.4, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q038",
+      "topicId": "si-c07-t04",
+      "question": "Quali formule economiche semplificate applica il capitolo per ogni simulazione?",
+      "answer": "Ricavo R = consumo_kwh × prezzo_kwh + quota_annua; costo energia C = consumo_kwh × costo_kwh; margine parziale M = R − C.",
+      "detail": "Non è un conto economico completo: esclude imposte, distribuzione e molte altre componenti della bolletta.",
+      "example": "Sim. 100: ricavo 495 €, costo 324 €, margine 171 €.",
+      "formulas": [
+        {
+          "latex": "R = q\\,p + F",
+          "meaning": "Ricavo annuo semplificato"
+        },
+        {
+          "latex": "C=q\\,c",
+          "meaning": "Costo energia"
+        },
+        {
+          "latex": "M=R-C=q(p-c)+F",
+          "meaning": "Margine parziale"
+        }
+      ],
+      "connections": [
+        "§7.10: le aggregazioni richiedono una granularità economica coerente."
+      ],
+      "mistakes": "Non presentare il margine parziale come utile aziendale completo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.4, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q039",
+      "topicId": "si-c07-t04",
+      "question": "Perché gli esercizi vanno confrontati con il Listato 7.4 non modificato?",
+      "answer": "Perché gli esempi di ALTER, UPDATE e UPSERT possono alterare la struttura o i valori e rendere diversi gli output attesi.",
+      "detail": "Il manuale richiede di ripristinare il dataset dopo i test isolati.",
+      "example": "L’UPSERT del segmento 2 cambia consumo_rif da 12.000 a 15.000: va ripristinato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare risultati discrepanti senza controllare lo stato delle tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.4, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q040",
+      "topicId": "si-c07-t05",
+      "question": "Che funzione ha ALTER TABLE?",
+      "answer": "Modifica la definizione di una tabella esistente: ad esempio aggiunge colonne, rinomina oggetti o introduce vincoli.",
+      "detail": "La modifica deve essere verificata rispetto ai dati già presenti e alle dipendenze applicative.",
+      "example": "ALTER TABLE didattica.offerta ADD COLUMN data_creazione DATE;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una modifica strutturale non è sempre innocua per query e procedure esistenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.5, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q041",
+      "topicId": "si-c07-t05",
+      "question": "Che funzione ha DROP TABLE e perché CASCADE è rischioso?",
+      "answer": "DROP TABLE elimina la tabella; CASCADE propaga l’eliminazione agli oggetti dipendenti secondo le regole del DBMS.",
+      "detail": "La propagazione può rendere indisponibili altri oggetti e causare perdita di dati.",
+      "example": "DROP TABLE didattica.offerta CASCADE è indicato come comando da non eseguire su dati importanti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere ON DELETE CASCADE sulle righe con DROP ... CASCADE sugli oggetti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.5, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q042",
+      "topicId": "si-c07-t05",
+      "question": "Come si applica un controllo che impedisca codici composti soltanto da spazi?",
+      "answer": "Nel manuale si aggiunge CHECK (char_length(trim(codice)) > 0) alla tabella OFFERTA.",
+      "detail": "Il trim rimuove gli spazi esterni prima di misurare la lunghezza; è distinto da NOT NULL.",
+      "example": "ADD CONSTRAINT ck_codice_non_vuoto CHECK (...).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un codice NOT NULL può comunque contenere una stringa non informativa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.5, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q043",
+      "topicId": "si-c07-t05",
+      "question": "Quale differenza transazionale generale segnala il manuale fra DDL PostgreSQL e Oracle?",
+      "answer": "Il DDL ordinario PostgreSQL partecipa alle transazioni; in Oracle un DDL comporta tipicamente commit impliciti.",
+      "detail": "Questa differenza incide sul piano di modifica, ripristino e gestione degli errori.",
+      "example": "Un test ALTER in PostgreSQL può normalmente essere eseguito in una transazione e annullato.",
+      "formulas": [],
+      "connections": [
+        "Cap. 9: transazioni e isolamento."
+      ],
+      "mistakes": "Non assumere che ROLLBACK annulli allo stesso modo un ALTER in ogni DBMS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.5, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q044",
+      "topicId": "si-c07-t05",
+      "question": "Quali controlli precedono una modifica DDL in ambiente reale?",
+      "answer": "Individuare dipendenze, dati esistenti, vincoli che potrebbero non essere soddisfatti, script da aggiornare e strategia di transazione/ripristino.",
+      "detail": "Il manuale sottolinea che oggetti come viste, procedure e query possono dipendere dalla struttura.",
+      "example": "Aggiungere una colonna obbligatoria richiede considerare le righe già presenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare una riuscita sintattica prova di assenza di impatti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.5, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q045",
+      "topicId": "si-c07-t06",
+      "question": "Quali sono gli effetti distinti di INSERT, UPDATE e DELETE?",
+      "answer": "INSERT crea nuove righe; UPDATE modifica valori di righe esistenti; DELETE elimina righe selezionate.",
+      "detail": "Sono operazioni DML e rispettano i vincoli dichiarati sullo schema.",
+      "example": "UPDATE didattica.offerta SET quota_annua=105 WHERE id_offerta=50;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere cancellazione delle righe DELETE e della tabella DROP.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.6, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q046",
+      "topicId": "si-c07-t06",
+      "question": "Perché UPDATE e DELETE senza WHERE sono pericolosi?",
+      "answer": "Perché possono interessare tutte le righe della tabella anziché il singolo record previsto.",
+      "detail": "Per operazioni significative è opportuno prima verificare con SELECT e controllare il numero di righe coinvolte.",
+      "example": "DELETE FROM didattica.offerta WHERE id_offerta=50.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La presenza di un SET non limita automaticamente l’UPDATE a una riga.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.6, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q047",
+      "topicId": "si-c07-t06",
+      "question": "A cosa serve la clausola RETURNING in PostgreSQL?",
+      "answer": "Restituisce colonne delle righe coinvolte da una operazione DML, permettendo di verificare il risultato senza una query separata.",
+      "detail": "Nel Listato 7.6 l’INSERT ritorna id_offerta e stato; quest’ultimo usa il default BOZZA.",
+      "example": "INSERT ... RETURNING id_offerta, stato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "RETURNING non modifica da sé il comportamento della transazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.6, pagina PDF 100"
+    },
+    {
+      "id": "si-c07-q048",
+      "topicId": "si-c07-t06",
+      "question": "Che cosa mostra l’INSERT dell’offerta FISSA_E nel Listato 7.6?",
+      "answer": "L’inserimento dell’offerta 50 con prezzo 0,15800, quota 100 € e stato BOZZA assegnato dal DEFAULT.",
+      "detail": "L’esempio viene poi aggiornato a quota 105 € ed eliminato per ripristinare il dataset.",
+      "example": "INSERT ... VALUES (50,'FISSA_E',...,0.15800,100).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non conservare la riga 50 durante il controllo degli esercizi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.6, pagina PDF 100"
+    },
+    {
+      "id": "si-c07-q049",
+      "topicId": "si-c07-t06",
+      "question": "Come funziona INSERT ... SELECT?",
+      "answer": "Inserisce in una tabella le righe prodotte da una query SELECT compatibile con le colonne di destinazione.",
+      "detail": "È usato per trasferimenti controllati e tabelle di appoggio.",
+      "example": "INSERT INTO archivio(...) SELECT ... FROM origine;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Verificare corrispondenza di numero, tipi e significato delle colonne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.6, pagina PDF 100"
+    },
+    {
+      "id": "si-c07-q050",
+      "topicId": "si-c07-t06",
+      "question": "Che cosa rappresenta ON CONFLICT ... DO UPDATE in PostgreSQL?",
+      "answer": "Una strategia UPSERT: in caso di violazione del vincolo unico indicato, aggiorna la riga già presente invece di inserire un duplicato.",
+      "detail": "Nel Listato 7.7 l’ID del segmento 2 collide con il record esistente.",
+      "example": "ON CONFLICT (id_segmento) DO UPDATE SET consumo_rif=EXCLUDED.consumo_rif.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che la stessa sintassi sia portabile in Oracle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.6, pagina PDF 100"
+    },
+    {
+      "id": "si-c07-q051",
+      "topicId": "si-c07-t06",
+      "question": "Che ruolo ha EXCLUDED nella clausola PostgreSQL ON CONFLICT?",
+      "answer": "Indica i valori della riga che si sarebbe voluto inserire e che ha generato il conflitto.",
+      "detail": "Il manuale usa EXCLUDED.consumo_rif per aggiornare il segmento già presente.",
+      "example": "Il consumo_rif di Microimpresa passerebbe a 15.000 nella prova.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire EXCLUDED ai valori vecchi della riga esistente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.6, pagina PDF 100"
+    },
+    {
+      "id": "si-c07-q052",
+      "topicId": "si-c07-t06",
+      "question": "Quale procedura operativa sicura suggerisce il manuale per modificare dati?",
+      "answer": "Prima SELECT sulle righe coinvolte; poi modifica in transazione quando possibile; infine verifica delle righe, della quantità modificata e dei vincoli.",
+      "detail": "Riduce il rischio di aggiornamenti indiscriminati e consente ripristino quando supportato.",
+      "example": "BEGIN; SELECT ...; UPDATE ... RETURNING ...; ROLLBACK.",
+      "formulas": [],
+      "connections": [
+        "Cap. 9: transazioni e rollback."
+      ],
+      "mistakes": "Non considerare il solo messaggio di esecuzione un controllo sufficiente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.6, pagina PDF 99"
+    },
+    {
+      "id": "si-c07-q053",
+      "topicId": "si-c07-t07",
+      "question": "Quali clausole compongono tipicamente una SELECT e in che ordine conviene interpretarle?",
+      "answer": "La scrittura inizia da SELECT, ma la lettura logica procede da FROM/JOIN a WHERE, GROUP BY, HAVING, SELECT e ORDER BY.",
+      "detail": "È un ordine concettuale, non una descrizione vincolante del piano fisico scelto dall’ottimizzatore.",
+      "example": "WHERE seleziona le righe, HAVING i gruppi e ORDER BY ordina il risultato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la posizione testuale di SELECT con il primo passo del ragionamento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.7, pagina PDF 100"
+    },
+    {
+      "id": "si-c07-q054",
+      "topicId": "si-c07-t07",
+      "question": "Quali funzioni svolgono SELECT, FROM, WHERE e ORDER BY?",
+      "answer": "SELECT specifica espressioni e colonne da restituire; FROM indica le sorgenti; WHERE filtra le righe; ORDER BY stabilisce l’ordinamento desiderato.",
+      "detail": "Senza ORDER BY l’ordine delle righe non è garantito dal linguaggio.",
+      "example": "SELECT codice FROM didattica.offerta WHERE stato='VALIDATA' ORDER BY codice;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre un ordine stabile dalla disposizione fisica dei record.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.7, pagina PDF 100"
+    },
+    {
+      "id": "si-c07-q055",
+      "topicId": "si-c07-t07",
+      "question": "Qual è il risultato del Listato 7.8 sulle offerte VALIDATA?",
+      "answer": "Le righe FISSA_A e FISSA_C, in quest’ordine, perché il filtro seleziona le validate e ORDER BY codice le dispone alfabeticamente.",
+      "detail": "Le offerte FISSA_B e FISSA_D sono in stato BOZZA.",
+      "example": "FISSA_A prezzo 0,15000 e quota 90; FISSA_C prezzo 0,14000 e quota 180.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ordinare per prezzo se l’ORDER BY richiesto è codice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.7, pagina PDF 100"
+    },
+    {
+      "id": "si-c07-q056",
+      "topicId": "si-c07-t07",
+      "question": "Perché SELECT non corrisponde esattamente alla proiezione dell’algebra relazionale classica?",
+      "answer": "SQL conserva normalmente i duplicati (semantica di multinsieme), mentre la proiezione relazionale classica restituisce un insieme senza ripetizioni.",
+      "detail": "Si usa DISTINCT quando è richiesta l’eliminazione dei duplicati.",
+      "example": "SELECT id_offerta FROM simulazione → 10,10,20,20,30.",
+      "formulas": [],
+      "connections": [
+        "Cap. 5: differenza fra relazioni come insiemi e risultati SQL come multinsiemi."
+      ],
+      "mistakes": "Non assumere che SELECT deduplichi implicitamente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.7, pagina PDF 100"
+    },
+    {
+      "id": "si-c07-q057",
+      "topicId": "si-c07-t07",
+      "question": "Quale differenza produce DISTINCT sui cinque id_offerta di SIMULAZIONE?",
+      "answer": "La query senza DISTINCT mostra 10,10,20,20,30; con DISTINCT mostra 10,20,30.",
+      "detail": "I cinque record rimangono nella tabella: DISTINCT opera sul risultato.",
+      "example": "Listato 7.9.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "DISTINCT non ripara automaticamente una JOIN o un conteggio logicamente errato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.7, pagina PDF 101"
+    },
+    {
+      "id": "si-c07-q058",
+      "topicId": "si-c07-t07",
+      "question": "Qual è la differenza tra un risultato senza ordine e un risultato determinato con ORDER BY?",
+      "answer": "Senza ORDER BY non vi è garanzia semantica sull’ordine; con ORDER BY vengono stabiliti i criteri espliciti di ordinamento.",
+      "detail": "Se le colonne di ordinamento hanno valori uguali, può essere necessario un ulteriore criterio per rendere l’ordine deterministico.",
+      "example": "ORDER BY prezzo_kwh, codice ordina prima per prezzo e poi per codice.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare l’ordine d’inserimento come ordine di lettura garantito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.7, pagina PDF 100"
+    },
+    {
+      "id": "si-c07-q059",
+      "topicId": "si-c07-t07",
+      "question": "Che cosa significa usare un alias come o nella clausola FROM?",
+      "answer": "È un nome temporaneo assegnato alla sorgente per qualificare le colonne e semplificare la query.",
+      "detail": "Diventa particolarmente utile con join, self join e colonne omonime.",
+      "example": "FROM didattica.offerta AS o; SELECT o.codice.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un alias con un nome persistente di tabella.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.7, pagina PDF 100"
+    },
+    {
+      "id": "si-c07-q060",
+      "topicId": "si-c07-t07",
+      "question": "Quali verifiche servono prima di considerare corretta una SELECT?",
+      "answer": "Verificare dominio della richiesta, righe selezionate, duplicati, NULL, cardinalità e ordinamento quando richiesto.",
+      "detail": "La validità sintattica non prova l’aderenza alla semantica del quesito.",
+      "example": "Un risultato con 5 simulazioni può essere corretto per una JOIN ma sbagliato per l’elenco delle sole offerte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare un output plausibile una prova di correttezza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.7, pagina PDF 100"
+    },
+    {
+      "id": "si-c07-q061",
+      "topicId": "si-c07-t08",
+      "question": "Che differenza c’è tra BETWEEN e confronti stretti?",
+      "answer": "BETWEEN a AND b include sia l’estremo a sia l’estremo b: equivale a x >= a AND x <= b nella normale semantica dei confronti.",
+      "detail": "Se x è NULL il test non diventa TRUE.",
+      "example": "prezzo_kwh BETWEEN 0.14 AND 0.16 comprende 0,14000 e 0,16000.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non escludere i valori esattamente uguali agli estremi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.8, pagina PDF 101"
+    },
+    {
+      "id": "si-c07-q062",
+      "topicId": "si-c07-t08",
+      "question": "Come funziona IN e quale precauzione richiede rispetto ai NULL?",
+      "answer": "IN verifica l’appartenenza a un elenco o a un risultato di sottoquery, ma la presenza di NULL può produrre UNKNOWN per determinati confronti.",
+      "detail": "IN (a,b,c) è assimilabile a disgiunzioni di confronti di uguaglianza, con logica a tre valori.",
+      "example": "stato IN ('BOZZA','VALIDATA').",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare NULL come un elemento normalmente confrontabile con =.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.8, pagina PDF 101"
+    },
+    {
+      "id": "si-c07-q063",
+      "topicId": "si-c07-t08",
+      "question": "Quali wildcard usa LIKE e in che cosa consiste ILIKE di PostgreSQL?",
+      "answer": "LIKE usa % per una sequenza arbitraria di caratteri e _ per un carattere; ILIKE consente il confronto case-insensitive in PostgreSQL.",
+      "detail": "Collation e regole del DBMS possono influenzare il confronto.",
+      "example": "codice LIKE 'FISSA_%'",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere % con un solo carattere né considerare ILIKE sintassi universale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.8, pagina PDF 101"
+    },
+    {
+      "id": "si-c07-q064",
+      "topicId": "si-c07-t08",
+      "question": "Cosa restituisce il test WHERE id_segmento IS NULL su CLIENTE?",
+      "answer": "La riga «Cliente senza segmento», cioè l’unico cliente senza FK valorizzata nel dataset.",
+      "detail": "La colonna id_segmento è facoltativa.",
+      "example": "Cliente con ID 3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare id_segmento = NULL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.8, pagina PDF 101"
+    },
+    {
+      "id": "si-c07-q065",
+      "topicId": "si-c07-t08",
+      "question": "Perché NOT (prezzo > 5) non restituisce i valori NULL?",
+      "answer": "Se prezzo è NULL, prezzo > 5 è UNKNOWN; applicando NOT resta UNKNOWN e WHERE scarta la riga.",
+      "detail": "La negazione logica SQL non trasforma l’assenza di informazione in TRUE.",
+      "example": "Per includere i NULL serve un criterio esplicito come OR prezzo IS NULL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assimilare UNKNOWN a FALSE sotto NOT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.8, pagina PDF 101"
+    },
+    {
+      "id": "si-c07-q066",
+      "topicId": "si-c07-t08",
+      "question": "Qual è la trappola di NOT IN quando l’elenco contiene NULL?",
+      "answer": "Il confronto con i valori non corrispondenti può diventare UNKNOWN, così un filtro NOT IN può non restituire righe attese.",
+      "detail": "È particolarmente rischioso con sottoquery che possono produrre valori NULL.",
+      "example": "SELECT 1 WHERE 1 NOT IN (2,NULL) non restituisce righe.",
+      "formulas": [],
+      "connections": [
+        "§7.11: anti-selezione con NOT EXISTS."
+      ],
+      "mistakes": "Non usare NOT IN senza aver valutato NULL nell’elenco.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.8, pagina PDF 101"
+    },
+    {
+      "id": "si-c07-q067",
+      "topicId": "si-c07-t08",
+      "question": "Quale alternativa al NOT IN suggerisce il manuale per individuare assenze?",
+      "answer": "Una sottoquery correlata con NOT EXISTS, che chiede se esiste almeno una corrispondenza secondo un predicato esplicito.",
+      "detail": "È adatta a recuperare offerte senza simulazioni.",
+      "example": "NOT EXISTS (SELECT 1 FROM simulazione s WHERE s.id_offerta=o.id_offerta).",
+      "formulas": [],
+      "connections": [
+        "Cap. 5: quantificatore «nessuno» e differenza insiemistica."
+      ],
+      "mistakes": "Non formulare una correlazione sulla colonna sbagliata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.8, pagina PDF 101"
+    },
+    {
+      "id": "si-c07-q068",
+      "topicId": "si-c07-t08",
+      "question": "Qual è il risultato del NOT EXISTS sulle offerte senza simulazioni?",
+      "answer": "Solo FISSA_D.",
+      "detail": "Le altre offerte hanno almeno una simulazione nel dataset 7.4.",
+      "example": "Listato 7.11.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non includere FISSA_C: possiede la simulazione 103.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.8, pagina PDF 101"
+    },
+    {
+      "id": "si-c07-q069",
+      "topicId": "si-c07-t08",
+      "question": "Come si combinano filtri sul prezzo e sullo stato nell’esempio del manuale?",
+      "answer": "Con AND: il prezzo deve cadere nell’intervallo inclusivo [0,14;0,16] e lo stato deve appartenere a BOZZA o VALIDATA.",
+      "detail": "Le due condizioni devono risultare contemporaneamente vere.",
+      "example": "WHERE prezzo_kwh BETWEEN 0.14 AND 0.16 AND stato IN ('BOZZA','VALIDATA')",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare OR se il requisito richiede entrambe le condizioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.8, pagina PDF 101"
+    },
+    {
+      "id": "si-c07-q070",
+      "topicId": "si-c07-t09",
+      "question": "Che cosa fa una INNER JOIN?",
+      "answer": "Restituisce combinazioni di righe che soddisfano la condizione di collegamento, escludendo le righe prive di abbinamento.",
+      "detail": "La cardinalità del legame determina quante righe possono derivare da un record padre.",
+      "example": "Offerta INNER JOIN Simulazione → 5 righe nel dataset.",
+      "formulas": [],
+      "connections": [
+        "Cap. 5: prodotto cartesiano e selezione sui legami."
+      ],
+      "mistakes": "Non aspettarsi una riga per offerta quando ci sono più simulazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.9, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q071",
+      "topicId": "si-c07-t09",
+      "question": "Che cosa fa una LEFT JOIN?",
+      "answer": "Conserva tutte le righe della tabella sinistra; se manca corrispondenza sulla destra, restituisce NULL nelle colonne della destra.",
+      "detail": "È indispensabile quando si vogliono analizzare anche elementi privi di figli.",
+      "example": "Tutte le offerte LEFT JOIN simulazione → 6 righe, inclusa FISSA_D senza simulazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare righe NULL estese con veri record figli.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.9, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q072",
+      "topicId": "si-c07-t09",
+      "question": "Che cosa fa una FULL OUTER JOIN?",
+      "answer": "Conserva sia le corrispondenze sia le righe senza abbinamento da entrambe le sorgenti, riempiendo con NULL il lato mancante.",
+      "detail": "La scelta dipende da quali assenze si desidera analizzare.",
+      "example": "Confronto tra due archivi di codici che possono avere elementi esclusivi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificarla con una INNER JOIN che scarta tutte le assenze.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.9, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q073",
+      "topicId": "si-c07-t09",
+      "question": "Perché una JOIN tra padre e figli con cardinalità 1:N aumenta il numero delle righe?",
+      "answer": "Perché ogni riga del padre appare una volta per ogni figlio corrispondente.",
+      "detail": "È un effetto corretto della relazione, ma può duplicare misure a livello di padre nelle aggregazioni.",
+      "example": "Un’offerta con due simulazioni appare due volte nella JOIN.",
+      "formulas": [],
+      "connections": [
+        "§7.10: verificare il significato prima di SUM e AVG."
+      ],
+      "mistakes": "Non sommare quota_annua del padre senza chiarire la granularità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.9, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q074",
+      "topicId": "si-c07-t09",
+      "question": "Qual è la differenza nei risultati delle JOIN dei Listati 7.12 e 7.13?",
+      "answer": "INNER JOIN dà 5 righe, una per ciascuna simulazione; LEFT JOIN dà 6 righe includendo FISSA_D con id_simulazione NULL.",
+      "detail": "La differenza deriva esclusivamente dalla conservazione della riga senza figlio.",
+      "example": "Listati 7.12–7.13.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere numero di offerte (4), simulazioni (5) e righe della LEFT JOIN (6).",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.9, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q075",
+      "topicId": "si-c07-t09",
+      "question": "Perché WHERE s.consumo_kwh > 5000 dopo LEFT JOIN elimina l’offerta senza simulazioni?",
+      "answer": "Per la riga estesa di FISSA_D il valore s.consumo_kwh è NULL e il confronto è UNKNOWN: WHERE la scarta.",
+      "detail": "Questa condizione può rendere il risultato simile a quello di una INNER JOIN sui record filtrati.",
+      "example": "Listato 7.14, prima query.",
+      "formulas": [],
+      "connections": [
+        "§7.2: UNKNOWN non supera WHERE."
+      ],
+      "mistakes": "Non posizionare filtri sui figli in WHERE se vuoi preservare tutti i padri.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.9, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q076",
+      "topicId": "si-c07-t09",
+      "question": "Come mantenere tutte le offerte filtrando soltanto i record figli su consumo_kwh > 5000?",
+      "answer": "Inserire il predicato nella condizione ON della LEFT JOIN, non nel WHERE.",
+      "detail": "La riga senza figlio resta e la tabella destra presenta NULL dove non trova una riga adatta.",
+      "example": "LEFT JOIN simulazione s ON s.id_offerta=o.id_offerta AND s.consumo_kwh>5000.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare il filtro dopo la JOIN se l’obiettivo è conservare l’intero lato sinistro.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.9, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q077",
+      "topicId": "si-c07-t09",
+      "question": "Quando si usa una SELF JOIN?",
+      "answer": "Quando occorre confrontare o collegare righe della stessa tabella, utilizzando alias distinti.",
+      "detail": "Può servire per gerarchie, confronti tra elementi della stessa classe e condizioni di massimo/minimo.",
+      "example": "FROM dipendente a JOIN dipendente b ON ...",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non riutilizzare lo stesso alias per due ruoli differenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.9, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q078",
+      "topicId": "si-c07-t09",
+      "question": "Che cosa fa una CROSS JOIN e quale cardinalità produce?",
+      "answer": "Genera tutte le combinazioni fra le righe delle due sorgenti: N×M prima di eventuali filtri.",
+      "detail": "Il prodotto cartesiano è utile in alcuni casi ma può esplodere in dimensione.",
+      "example": "3 segmenti × 4 offerte = 12 combinazioni.",
+      "formulas": [
+        {
+          "latex": "|A\\times B|=|A|\\cdot|B|",
+          "meaning": "Cardinalità del prodotto cartesiano"
+        }
+      ],
+      "connections": [
+        "Cap. 5: prodotto cartesiano e cardinalità delle combinazioni."
+      ],
+      "mistakes": "Non dimenticare una condizione di collegamento quando era richiesta una JOIN selettiva.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.9, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q079",
+      "topicId": "si-c07-t09",
+      "question": "Perché il manuale preferisce JOIN ... ON alla JOIN implicita con virgole?",
+      "answer": "La sintassi esplicita rende più chiari i collegamenti e le condizioni, soprattutto in interrogazioni con più relazioni.",
+      "detail": "Entrambe le forme possono essere ammesse, ma una separazione esplicita è più facile da verificare.",
+      "example": "FROM offerta o JOIN simulazione s ON ...",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un filtro di uguaglianza dimenticato nella WHERE di una JOIN implicita crea combinazioni indesiderate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.9, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q080",
+      "topicId": "si-c07-t10",
+      "question": "Che cosa fanno le funzioni aggregate COUNT, SUM, AVG, MIN e MAX?",
+      "answer": "Riassumono un insieme di righe attraverso un conteggio, una somma, una media, un minimo o un massimo.",
+      "detail": "Con GROUP BY vengono calcolate separatamente per ogni gruppo di chiavi.",
+      "example": "AVG(consumo_kwh) per ciascuna offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare una funzione aggregata come se restituisse una riga per elemento sorgente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.10, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q081",
+      "topicId": "si-c07-t10",
+      "question": "Quale differenza fondamentale c’è tra WHERE e HAVING?",
+      "answer": "WHERE filtra singole righe prima dell’aggregazione; HAVING filtra i gruppi dopo la loro formazione.",
+      "detail": "La condizione HAVING COUNT(*) >= 2 seleziona i gruppi con almeno due righe.",
+      "example": "HAVING COUNT(*) >= 2 seleziona offerte 10 e 20.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mettere direttamente COUNT(*) nel WHERE ordinario.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.10, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q082",
+      "topicId": "si-c07-t10",
+      "question": "Qual è la differenza tra COUNT(*) e COUNT(colonna)?",
+      "answer": "COUNT(*) conta tutte le righe del gruppo; COUNT(colonna) conta soltanto le righe in cui la colonna non è NULL.",
+      "detail": "Con LEFT JOIN la riga estesa senza figli può essere contata da COUNT(*) ma non da COUNT(id_figlio).",
+      "example": "FISSA_D: COUNT(s.id_simulazione)=0, mentre COUNT(*) sulla riga estesa è 1.",
+      "formulas": [],
+      "connections": [
+        "§7.9: la LEFT JOIN estende i record assenti con NULL."
+      ],
+      "mistakes": "Non usare COUNT(*) per contare i figli assenti in una LEFT JOIN.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.10, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q083",
+      "topicId": "si-c07-t10",
+      "question": "Come trattano generalmente SUM e AVG i valori NULL?",
+      "answer": "Ignorano i valori NULL nel calcolo; SUM su un insieme vuoto dà NULL, non zero.",
+      "detail": "COUNT(*) su un insieme vuoto dà zero. Queste differenze incidono sull’output dei report.",
+      "example": "AVG(s.consumo_kwh) per FISSA_D è NULL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare indiscriminatamente l’assenza di osservazioni in media 0.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.10, pagina PDF 102"
+    },
+    {
+      "id": "si-c07-q084",
+      "topicId": "si-c07-t10",
+      "question": "Quale risultato restituisce il Listato 7.15 per numero e media delle simulazioni?",
+      "answer": "FISSA_A: 2 e 7.350 kWh; FISSA_B: 2 e 5.500; FISSA_C: 1 e 50.000; FISSA_D: 0 e NULL.",
+      "detail": "La query usa LEFT JOIN e COUNT(s.id_simulazione).",
+      "example": "Media A=(2.700+12.000)/2=7.350; B=(8.000+3.000)/2=5.500.",
+      "formulas": [
+        {
+          "latex": "\\overline q_A=(2700+12000)/2=7350",
+          "meaning": "Media simulazioni offerta A"
+        },
+        {
+          "latex": "\\overline q_B=(8000+3000)/2=5500",
+          "meaning": "Media simulazioni offerta B"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non attribuire a FISSA_D una media di zero.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.10, pagina PDF 103"
+    },
+    {
+      "id": "si-c07-q085",
+      "topicId": "si-c07-t10",
+      "question": "Quali offerte seleziona HAVING COUNT(*) >= 2 nel Listato 7.16?",
+      "answer": "Le offerte con ID 10 e 20, perché ciascuna possiede due simulazioni.",
+      "detail": "L’aggregazione è effettuata raggruppando per id_offerta.",
+      "example": "Risultato: (10,2), (20,2).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare questa condizione alla tabella OFFERTA non raggruppata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.10, pagina PDF 103"
+    },
+    {
+      "id": "si-c07-q086",
+      "topicId": "si-c07-t10",
+      "question": "Perché GROUP BY deve riflettere la granularità del risultato?",
+      "answer": "Perché determina a quale livello vengono calcolate le misure aggregate.",
+      "detail": "Se il report richiede una riga per offerta, servono chiavi del livello offerta; se per segmento, le chiavi del segmento.",
+      "example": "GROUP BY o.id_offerta, o.codice nel report delle simulazioni.",
+      "formulas": [],
+      "connections": [
+        "Cap. 1: dal dato al KPI decisionale interpretabile."
+      ],
+      "mistakes": "Non raggruppare soltanto per descrizioni non univoche senza valutarne l’identificatore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.10, pagina PDF 103"
+    },
+    {
+      "id": "si-c07-q087",
+      "topicId": "si-c07-t10",
+      "question": "Quali formule usa il Listato 7.17 per ricavi, costi energia e margine?",
+      "answer": "Per ogni simulazione: ricavo = consumo×prezzo + quota; costo = consumo×costo_unitario; margine = consumo×(prezzo−costo_unitario)+quota. Le somme sono aggregate per offerta.",
+      "detail": "L’esempio tratta ciascuna simulazione come un cliente/periodo autonomo.",
+      "example": "SUM(s.consumo_kwh*(o.prezzo_kwh-s.costo_kwh)+o.quota_annua).",
+      "formulas": [
+        {
+          "latex": "M=\\sum_i [q_i(p-c_i)+F]",
+          "meaning": "Margine parziale aggregato per simulazioni indipendenti"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non applicare la quota fissa una volta per ogni riga se le righe rappresentano lo stesso contratto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.10, pagina PDF 103"
+    },
+    {
+      "id": "si-c07-q088",
+      "topicId": "si-c07-t10",
+      "question": "Quando è corretto sommare quota_annua per ogni simulazione e quando no?",
+      "answer": "Nel caso didattico è corretto perché ogni simulazione simula un distinto cliente/periodo; non lo sarebbe se più righe fossero componenti dello stesso contratto.",
+      "detail": "La granularità economica della riga deve essere chiarita prima della SUM.",
+      "example": "Due simulazioni A comportano due quote nella formula dimostrativa.",
+      "formulas": [],
+      "connections": [
+        "Cap. 3: costo e qualità del modello dipendono dall’interpretazione del dato."
+      ],
+      "mistakes": "Non duplicare misure del padre dopo una JOIN senza verificarne il significato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.10, pagina PDF 103"
+    },
+    {
+      "id": "si-c07-q089",
+      "topicId": "si-c07-t10",
+      "question": "Come si costruisce una percentuale di marginalità protetta rispetto al denominatore zero?",
+      "answer": "Usando il rapporto margine / NULLIF(ricavo,0) moltiplicato per 100.",
+      "detail": "NULLIF restituisce NULL quando il denominatore sarebbe zero, evitando la divisione illegittima; la definizione del margine dipende dal modello economico.",
+      "example": "margine / NULLIF(ricavo, 0) * 100.",
+      "formulas": [
+        {
+          "latex": "\\mathrm{Marginalit\\grave a\\,\\%}=100\\frac{M}{\\mathrm{NULLIF}(R,0)}",
+          "meaning": "Indicatore di marginalità con denominatore protetto"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confondere percentuale con margine assoluto e non dividere per zero.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.10, pagina PDF 103"
+    },
+    {
+      "id": "si-c07-q090",
+      "topicId": "si-c07-t10",
+      "question": "Perché COUNT(colonna) su una LEFT JOIN è spesso più adatto di COUNT(*)?",
+      "answer": "Perché distingue i record figli realmente presenti dalla riga generata per mantenere il padre senza figli.",
+      "detail": "Nel report desiderato tutte le offerte devono apparire, ma quelle prive di simulazioni devono contare zero.",
+      "example": "COUNT(s.id_simulazione) per FISSA_D dà 0.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non filtrare FISSA_D prima del GROUP BY se devi mostrarla.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.10, pagina PDF 103"
+    },
+    {
+      "id": "si-c07-q091",
+      "topicId": "si-c07-t11",
+      "question": "Quali forme può avere una sottoquery SQL?",
+      "answer": "Può restituire un valore scalare, una colonna per IN, una tabella usabile in FROM oppure essere interrogata da EXISTS.",
+      "detail": "Una sottoquery è una SELECT annidata in un’altra istruzione.",
+      "example": "WHERE id_offerta IN (SELECT id_offerta FROM ...).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare una sottoquery che restituisce più righe dove è richiesto un solo scalare.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.11, pagina PDF 103"
+    },
+    {
+      "id": "si-c07-q092",
+      "topicId": "si-c07-t11",
+      "question": "Che cosa rende una sottoquery correlata?",
+      "answer": "Fa riferimento ad almeno una colonna della query esterna e viene interpretata logicamente rispetto all’elemento corrente.",
+      "detail": "La correlazione è essenziale per cercare figli dell’esatto padre esaminato.",
+      "example": "WHERE s.id_offerta = o.id_offerta in EXISTS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare il predicato di correlazione: altrimenti basta un figlio qualunque.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.11, pagina PDF 103"
+    },
+    {
+      "id": "si-c07-q093",
+      "topicId": "si-c07-t11",
+      "question": "Che cosa verifica EXISTS e quali dati delle righe interne utilizza?",
+      "answer": "Verifica se la sottoquery produce almeno una riga; non restituisce il contenuto della riga come risultato dell’EXISTS.",
+      "detail": "SELECT 1 è una convenzione esplicita perché l’esistenza delle righe è ciò che conta.",
+      "example": "EXISTS (SELECT 1 FROM simulazione s WHERE s.id_offerta=o.id_offerta).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non immaginare che EXISTS restituisca il numero di corrispondenze.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.11, pagina PDF 104"
+    },
+    {
+      "id": "si-c07-q094",
+      "topicId": "si-c07-t11",
+      "question": "Quali offerte restituisce la query EXISTS del Listato 7.18?",
+      "answer": "FISSA_A, FISSA_B e FISSA_C, perché hanno almeno una simulazione.",
+      "detail": "EXISTS evita la moltiplicazione delle righe del padre prodotta da una JOIN 1:N.",
+      "example": "FISSA_D è esclusa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere due volte A o B nel risultato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.11, pagina PDF 104"
+    },
+    {
+      "id": "si-c07-q095",
+      "topicId": "si-c07-t11",
+      "question": "Che cosa significa logicamente NOT EXISTS per una relazione padre-figlio?",
+      "answer": "Seleziona il padre quando non esiste alcun figlio che soddisfi la condizione di correlazione.",
+      "detail": "È la forma tipica per domande «nessuno».",
+      "example": "Offerte senza simulazioni → FISSA_D.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere «nessuno» con «non tutti».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.11, pagina PDF 104"
+    },
+    {
+      "id": "si-c07-q096",
+      "topicId": "si-c07-t11",
+      "question": "Come si traduce una condizione «per tutti» con doppio NOT EXISTS?",
+      "answer": "Si selezionano gli elementi per cui NON esiste un elemento del dominio per cui NON esista la relazione richiesta: assenza di controesempi.",
+      "detail": "La query esterna su OFFERTA controlla tutti i SEGMENTI e l’EXISTS interno verifica una simulazione dell’offerta sul segmento.",
+      "example": "NOT EXISTS (SELECT 1 FROM segmento g WHERE NOT EXISTS(SELECT 1 FROM simulazione s WHERE s.id_offerta=o.id_offerta AND s.id_segmento=g.id_segmento)).",
+      "formulas": [],
+      "connections": [
+        "Cap. 5: divisione relazionale e quantificatore universale."
+      ],
+      "mistakes": "Non trasformare «tutti» in un solo EXISTS, che significa «almeno uno».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.11, pagina PDF 104"
+    },
+    {
+      "id": "si-c07-q097",
+      "topicId": "si-c07-t11",
+      "question": "Quale risultato produce il doppio NOT EXISTS «offerte simulate per tutti i segmenti»?",
+      "answer": "Nessuna riga: nessuna offerta del dataset presenta simulazioni su tutti e tre i segmenti 1, 2 e 3.",
+      "detail": "A e B coprono due segmenti ciascuna; C uno; D zero.",
+      "example": "Listato 7.19.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere due simulazioni con copertura di tutti e tre i segmenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.11, pagina PDF 104"
+    },
+    {
+      "id": "si-c07-q098",
+      "topicId": "si-c07-t11",
+      "question": "Che cos’è la verità vacua nella condizione «per tutti»?",
+      "answer": "Se l’insieme degli elementi da verificare è vuoto, non esistono controesempi e la condizione universale risulta vera.",
+      "detail": "Nel doppio NOT EXISTS, un insieme SEGMENTO vuoto renderebbe vera la condizione per tutte le offerte.",
+      "example": "Zero segmenti censiti: ogni offerta soddisfa logicamente il «per tutti».",
+      "formulas": [],
+      "connections": [
+        "Cap. 5: interpretazione di «tutti» in un dominio vuoto."
+      ],
+      "mistakes": "Non affermare che per una condizione universale serva sempre una corrispondenza positiva.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.11, pagina PDF 104"
+    },
+    {
+      "id": "si-c07-q099",
+      "topicId": "si-c07-t11",
+      "question": "Che cosa significa confrontare un valore con > ALL (subquery)?",
+      "answer": "Il valore deve risultare maggiore di ciascun valore restituito dalla sottoquery secondo la logica SQL.",
+      "detail": "È un quantificatore universale su confronti: differisce da > ANY.",
+      "example": "o.prezzo_kwh > ALL (SELECT b.prezzo_kwh FROM offerta b WHERE stato='BOZZA').",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non tradurre ALL come «maggiore di almeno uno».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.11, pagina PDF 104"
+    },
+    {
+      "id": "si-c07-q100",
+      "topicId": "si-c07-t11",
+      "question": "Perché > ALL rispetto ai prezzi delle offerte BOZZA non restituisce righe nel dataset?",
+      "answer": "Perché i prezzi BOZZA sono 0,17 e 0,16 €/kWh e nessuna delle offerte ha un prezzo superiore a entrambi.",
+      "detail": "Il massimo prezzo disponibile è 0,17, che non è strettamente superiore a sé stesso.",
+      "example": "Listato 7.20: risultato vuoto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere > con >=.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.11, pagina PDF 104"
+    },
+    {
+      "id": "si-c07-q101",
+      "topicId": "si-c07-t11",
+      "question": "In cosa differiscono «almeno uno», «nessuno», «solo» e «tutti» nelle query?",
+      "answer": "«Almeno uno»: EXISTS; «nessuno»: NOT EXISTS; «tutti»: assenza di un controesempio con doppio NOT EXISTS; «solo»: negazione delle corrispondenze vietate dopo aver definito il requisito.",
+      "detail": "Sono quantificatori logici diversi, già collegati all’algebra relazionale nel Capitolo 5.",
+      "example": "«Ha solo simulazioni nel segmento A» non significa necessariamente «ha almeno una simulazione in A».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare lo stesso schema EXISTS a tutti i quantificatori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.11, pagina PDF 103"
+    },
+    {
+      "id": "si-c07-q102",
+      "topicId": "si-c07-t12",
+      "question": "Che cosa fa UNION in SQL?",
+      "answer": "Unisce i risultati di due SELECT compatibili eliminando le righe duplicate.",
+      "detail": "Le colonne devono essere compatibili per numero e tipo.",
+      "example": "UNION di due elenchi di segmenti produce un insieme senza ripetizioni.",
+      "formulas": [],
+      "connections": [
+        "Cap. 5: unione delle relazioni come operazione insiemistica."
+      ],
+      "mistakes": "Non confondere UNION con UNION ALL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.12, pagina PDF 104"
+    },
+    {
+      "id": "si-c07-q103",
+      "topicId": "si-c07-t12",
+      "question": "Che cosa fa UNION ALL?",
+      "answer": "Concatena i risultati compatibili preservando le ripetizioni.",
+      "detail": "Può essere appropriato quando la molteplicità delle righe è parte del requisito.",
+      "example": "Due SELECT che producono ID 1 daranno due occorrenze con UNION ALL.",
+      "formulas": [],
+      "connections": [
+        "Cap. 5: unione delle relazioni come operazione insiemistica."
+      ],
+      "mistakes": "Non utilizzare UNION ALL quando sono richiesti valori distinti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.12, pagina PDF 104"
+    },
+    {
+      "id": "si-c07-q104",
+      "topicId": "si-c07-t12",
+      "question": "Che differenza esiste tra INTERSECT ed EXCEPT?",
+      "answer": "INTERSECT restituisce righe comuni ai due risultati; EXCEPT restituisce righe del primo risultato che non compaiono nel secondo.",
+      "detail": "L’ordine degli operandi è importante per EXCEPT.",
+      "example": "Segmenti di A INTERSECT segmenti di B → {1,2}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire i due operandi di EXCEPT senza rivalutare la semantica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.12, pagina PDF 104"
+    },
+    {
+      "id": "si-c07-q105",
+      "topicId": "si-c07-t12",
+      "question": "Quale risultato dà l’INTERSECT dei segmenti simulati da offerte 10 e 20?",
+      "answer": "Gli ID segmento 1 e 2, perché sono condivisi da entrambe le offerte.",
+      "detail": "Le simulazioni di A sono nei segmenti 1 e 2; quelle di B nei segmenti 2 e 1.",
+      "example": "Listato 7.21.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non includere il segmento 3, usato soltanto dall’offerta 30.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.12, pagina PDF 105"
+    },
+    {
+      "id": "si-c07-q106",
+      "topicId": "si-c07-t12",
+      "question": "A che cosa serve WITH e che cos’è una CTE?",
+      "answer": "WITH definisce una Common Table Expression, cioè un risultato tabellare intermedio con nome, riutilizzabile nella query successiva.",
+      "detail": "Migliora leggibilità e scomposizione logica; non implica necessariamente una materializzazione fisica.",
+      "example": "WITH totali AS (SELECT ... GROUP BY ...) SELECT * FROM totali WHERE n>=2.",
+      "formulas": [],
+      "connections": [
+        "§7.11: organizzazione leggibile di query annidate."
+      ],
+      "mistakes": "Non interpretare ogni CTE come tabella fisica temporanea.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.12, pagina PDF 104"
+    },
+    {
+      "id": "si-c07-q107",
+      "topicId": "si-c07-t12",
+      "question": "Che cosa restituisce la CTE totali del Listato 7.21 con n >= 2?",
+      "answer": "FISSA_A e FISSA_B, perché hanno rispettivamente due simulazioni ciascuna.",
+      "detail": "La CTE calcola il conteggio per offerta mediante LEFT JOIN; la SELECT esterna filtra il risultato.",
+      "example": "WITH totali AS (...) SELECT * FROM totali WHERE n >= 2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire una simulazione a FISSA_D.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.12, pagina PDF 105"
+    },
+    {
+      "id": "si-c07-q108",
+      "topicId": "si-c07-t12",
+      "question": "Dove va collocato ORDER BY in una interrogazione con operatori insiemistici?",
+      "answer": "Sul risultato finale dell’operazione, salvo l’uso di raggruppamenti e sottoquery specifici che ne modifichino l’ambito.",
+      "detail": "La posizione di ORDER BY determina che cosa viene ordinato.",
+      "example": "SELECT ... UNION SELECT ... ORDER BY colonna;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che ORDER BY in una delle SELECT ordini automaticamente l’unione finale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.12, pagina PDF 104"
+    },
+    {
+      "id": "si-c07-q109",
+      "topicId": "si-c07-t13",
+      "question": "A che cosa serve CASE nelle interrogazioni SQL?",
+      "answer": "CASE permette di produrre valori condizionali in base a predicati, ad esempio classificare tariffe in fasce.",
+      "detail": "La trasformazione riguarda il risultato della query e non modifica le righe sorgente.",
+      "example": "CASE WHEN prezzo_kwh < 0.15 THEN 'BASSA' WHEN prezzo_kwh <= 0.16 THEN 'MEDIA' ELSE 'ALTA' END.",
+      "formulas": [],
+      "connections": [
+        "Cap. 1: trasformazione di dati in informazioni/indicatori."
+      ],
+      "mistakes": "Non sostituire con CASE regole configurabili che sarebbe preferibile modellare come dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.13, pagina PDF 105"
+    },
+    {
+      "id": "si-c07-q110",
+      "topicId": "si-c07-t13",
+      "question": "Quali classi prezzo assegna CASE alle quattro offerte del dataset?",
+      "answer": "FISSA_C (0,14) è BASSA; FISSA_A (0,15) e FISSA_D (0,16) sono MEDIA; FISSA_B (0,17) è ALTA.",
+      "detail": "Il primo ramo è prezzo < 0,15, il secondo prezzo <= 0,16, il resto ALTA.",
+      "example": "Listato 7.22.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare 0,15 come BASSA: il confronto è strettamente minore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.13, pagina PDF 105"
+    },
+    {
+      "id": "si-c07-q111",
+      "topicId": "si-c07-t13",
+      "question": "A che cosa serve COALESCE e in quale caso è ridondante nel Listato 7.22?",
+      "answer": "COALESCE restituisce il primo valore non NULL; COALESCE(COUNT(...),0) è ridondante perché COUNT non restituisce NULL.",
+      "detail": "È invece utile per sostituire, quando previsto, il risultato NULL di SUM su un insieme vuoto.",
+      "example": "COALESCE(COUNT(s.id_simulazione),0).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere sostituzioni arbitrarie che nascondono dati mancanti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.13, pagina PDF 105"
+    },
+    {
+      "id": "si-c07-q112",
+      "topicId": "si-c07-t13",
+      "question": "A che cosa serve NULLIF e perché viene usato nelle divisioni?",
+      "answer": "NULLIF(a,b) restituisce NULL quando a=b; consente, per esempio, di evitare la divisione per zero trasformando il denominatore 0 in NULL.",
+      "detail": "In percentuali di margine il denominatore deve avere un significato economico dichiarato.",
+      "example": "margine / NULLIF(ricavo,0) * 100.",
+      "formulas": [],
+      "connections": [
+        "§7.10: percentuali economiche con denominatore controllato."
+      ],
+      "mistakes": "Non assumere che il risultato NULL equivalga a una percentuale pari a zero.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.13, pagina PDF 105"
+    },
+    {
+      "id": "si-c07-q113",
+      "topicId": "si-c07-t13",
+      "question": "A che cosa serve CAST e perché il manuale raccomanda conversioni esplicite?",
+      "answer": "CAST converte un valore verso un tipo indicato, riducendo ambiguità e dipendenze da conversioni implicite specifiche del DBMS.",
+      "detail": "Per date e decimali la portabilità può dipendere dal dialetto e dalle convenzioni locali.",
+      "example": "DATE '2026-11-01' indica una data in modo esplicito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare la virgola italiana come separatore decimale nei letterali SQL illustrati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.13, pagina PDF 105"
+    },
+    {
+      "id": "si-c07-q114",
+      "topicId": "si-c07-t13",
+      "question": "Quando è preferibile una tabella di configurazione anziché soglie CASE ripetute?",
+      "answer": "Quando le soglie cambiano frequentemente o devono essere governate come dati aziendali.",
+      "detail": "Un CASE hardcoded in molte query può rendere difficile mantenere coerenza nel tempo.",
+      "example": "Soglie di classificazione di prezzi soggette a revisioni periodiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un esempio di etichettatura con una decisione architetturale definitiva.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.13, pagina PDF 105"
+    },
+    {
+      "id": "si-c07-q115",
+      "topicId": "si-c07-t13",
+      "question": "Quali proprietà devono avere espressioni economiche derivate attendibili?",
+      "answer": "Tipi e unità coerenti, gestione consapevole di NULL, corretta granularità e denominatori protetti.",
+      "detail": "La validità aritmetica non sostituisce quella semantica.",
+      "example": "Margine relativo diverso dal margine assoluto in euro.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non basarsi soltanto sul nome della colonna per interpretare il calcolo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.13, pagina PDF 105"
+    },
+    {
+      "id": "si-c07-q116",
+      "topicId": "si-c07-t14",
+      "question": "Perché una query sintatticamente valida può essere sbagliata?",
+      "answer": "Può introdurre duplicazioni tramite JOIN, perdere righe con filtri su LEFT JOIN, gestire male NULL o adottare un denominatore sbagliato.",
+      "detail": "La correttezza richiede confronto con requisiti e casi limite su dati di cui si conosce l’output atteso.",
+      "example": "FISSA_D sparisce se si applica in WHERE un filtro sul figlio.",
+      "formulas": [],
+      "connections": [
+        "Cap. 3: correttezza semantica diversa dalla correttezza formale."
+      ],
+      "mistakes": "Non dedurre correttezza dalla sola esecuzione senza errori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.14, pagina PDF 105"
+    },
+    {
+      "id": "si-c07-q117",
+      "topicId": "si-c07-t14",
+      "question": "Come si contrasta l’iniezione SQL nell’accesso applicativo ai dati?",
+      "answer": "Con query parametrizzate/prepared statements e autorizzazioni appropriate, evitando concatenazioni di stringhe fornite dagli utenti.",
+      "detail": "I placeholder separano i valori dai comandi SQL; non sostituiscono le policy di autorizzazione.",
+      "example": "WHERE id_cliente = :id_cliente con parametro associato.",
+      "formulas": [],
+      "connections": [
+        "Fondamenti di Cybersecurity, Cap. 5: SQL injection e protezioni applicative."
+      ],
+      "mistakes": "Non concatenare direttamente input utente a una stringa SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.14, pagina PDF 105"
+    },
+    {
+      "id": "si-c07-q118",
+      "topicId": "si-c07-t14",
+      "question": "I placeholder delle prepared statements possono sostituire anche nomi di tabella e colonna?",
+      "answer": "Normalmente no: parametrizzano i valori, mentre gli identificatori SQL devono essere scelti con validazione o whitelist controllate.",
+      "detail": "Il manuale distingue input come valore da input come struttura della query.",
+      "example": "Selezionare una colonna ordinabile da un elenco consentito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non costruire nomi di tabelle arbitrari con input non attendibile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.14, pagina PDF 105"
+    },
+    {
+      "id": "si-c07-q119",
+      "topicId": "si-c07-t14",
+      "question": "Che cosa fornisce EXPLAIN e che cosa non dimostra da solo?",
+      "answer": "Mostra il piano di esecuzione stimato dal DBMS, ma non certifica un tempo reale universale né la correttezza semantica della query.",
+      "detail": "Il piano dipende da statistiche, dati, configurazioni e versione del motore.",
+      "example": "EXPLAIN SELECT id_offerta,COUNT(*) FROM simulazione GROUP BY id_offerta.",
+      "formulas": [],
+      "connections": [
+        "Cap. 9: indici, accesso ai dati e prestazioni reali."
+      ],
+      "mistakes": "Non equiparare una stima di costo del planner a millisecondi misurati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.14, pagina PDF 106"
+    },
+    {
+      "id": "si-c07-q120",
+      "topicId": "si-c07-t14",
+      "question": "Che differenza c’è tra EXPLAIN ed EXPLAIN ANALYZE nel percorso del manuale?",
+      "answer": "EXPLAIN espone il piano; EXPLAIN ANALYZE permette di raccogliere misure effettive dell’esecuzione, quando si desiderano tempi osservati.",
+      "detail": "L’analisi va condotta con dati realistici e consapevolezza degli effetti dell’esecuzione.",
+      "example": "Il piano per una piccola tabella può preferire la scansione sequenziale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che EXPLAIN da solo esegua benchmark affidabili.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.14, pagina PDF 106"
+    },
+    {
+      "id": "si-c07-q121",
+      "topicId": "si-c07-t14",
+      "question": "Perché un indice su simulazione(id_offerta) non accelera necessariamente ogni query?",
+      "answer": "Perché il vantaggio dipende dalla dimensione, selettività, statistiche e operazioni; su tabelle piccole una scansione sequenziale può costare meno.",
+      "detail": "Gli indici hanno anche costo di spazio e manutenzione, studiati nei capitoli successivi.",
+      "example": "CREATE INDEX idx_sim_offerta ON didattica.simulazione(id_offerta).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare «indice = query sempre più veloce».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.14, pagina PDF 106"
+    },
+    {
+      "id": "si-c07-q122",
+      "topicId": "si-c07-t14",
+      "question": "Come verificare una query economica destinata a una decisione?",
+      "answer": "Definire il significato di ciascuna misura, costruire esempi piccoli e controllati, confrontare risultati manuali, NULL, duplicati e regole di aggregazione.",
+      "detail": "La qualità del dato e la qualità dell’elaborazione sono entrambe necessarie.",
+      "example": "Ricalcolare a mano il ricavo di simulazione 100: 495 €.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non validare soltanto osservando che un numero sembra plausibile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.14, pagina PDF 105"
+    },
+    {
+      "id": "si-c07-q123",
+      "topicId": "si-c07-t15",
+      "question": "Quale differenza sintattica segnala il manuale nelle SELECT di costanti tra PostgreSQL e Oracle?",
+      "answer": "In PostgreSQL è normale SELECT 1; nella sintassi Oracle comunemente usata si scrive SELECT 1 FROM dual;.",
+      "detail": "Il confronto è didattico e va interpretato rispetto alla versione effettiva.",
+      "example": "SELECT 1 FROM dual;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non generalizzare il comportamento a ogni versione senza verifica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.15, pagina PDF 106"
+    },
+    {
+      "id": "si-c07-q124",
+      "topicId": "si-c07-t15",
+      "question": "Quali funzioni vengono confrontate per il trattamento di valori NULL?",
+      "answer": "Entrambi i DBMS supportano COALESCE; Oracle offre anche NVL.",
+      "detail": "La finalità del confronto è riconoscere costrutti comuni e specificità di dialetto.",
+      "example": "COALESCE(x,y), NVL(x,y).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare NVL funzione universale dell’SQL portabile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.15, pagina PDF 106"
+    },
+    {
+      "id": "si-c07-q125",
+      "topicId": "si-c07-t15",
+      "question": "Come si limita il numero di righe restituite in PostgreSQL e Oracle secondo la tabella?",
+      "answer": "PostgreSQL: LIMIT 10 oppure FETCH FIRST 10 ROWS ONLY; Oracle: FETCH FIRST 10 ROWS ONLY.",
+      "detail": "La scelta dipende dalla versione e dalla sintassi accettata nella prova.",
+      "example": "SELECT ... ORDER BY ... FETCH FIRST 10 ROWS ONLY.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitare senza ORDER BY non definisce quali siano le prime righe in modo stabile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.15, pagina PDF 106"
+    },
+    {
+      "id": "si-c07-q126",
+      "topicId": "si-c07-t15",
+      "question": "Quali differenze sono indicate per le chiavi surrogate?",
+      "answer": "PostgreSQL usa costrutti GENERATED ... AS IDENTITY; anche Oracle dispone di IDENTITY nelle versioni moderne.",
+      "detail": "Gli identificativi surrogate non sostituiscono la valutazione dell’unicità semantica.",
+      "example": "id INTEGER GENERATED ... AS IDENTITY.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere generazione tecnica della chiave e identificatore del dominio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.15, pagina PDF 106"
+    },
+    {
+      "id": "si-c07-q127",
+      "topicId": "si-c07-t15",
+      "question": "Come si comportano diversamente PostgreSQL e Oracle con la stringa vuota?",
+      "answer": "Per testo PostgreSQL distingue la stringa vuota da NULL; Oracle tratta la stringa vuota di tipo carattere come NULL.",
+      "detail": "La differenza è rilevante per CHECK, confronti e migrazioni.",
+      "example": "'' e NULL sono distinti in PostgreSQL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire i test sulle stringhe vuote tra i DBMS senza adattamento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.15, pagina PDF 106"
+    },
+    {
+      "id": "si-c07-q128",
+      "topicId": "si-c07-t15",
+      "question": "Come si esprimono le JOIN esterne nei due DBMS?",
+      "answer": "Entrambi supportano LEFT, RIGHT e FULL JOIN ANSI; Oracle conserva anche una sintassi storica con l’operatore (+).",
+      "detail": "Il manuale privilegia la sintassi ANSI nelle query.",
+      "example": "LEFT JOIN ... ON ...",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non preferire una sintassi storica quando la JOIN ANSI rende più chiara la semantica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.15, pagina PDF 106"
+    },
+    {
+      "id": "si-c07-q129",
+      "topicId": "si-c07-t15",
+      "question": "Qual è la differenza transazionale del DDL tra PostgreSQL e Oracle?",
+      "answer": "Il DDL ordinario PostgreSQL è transazionale; Oracle effettua tipicamente commit impliciti per il DDL.",
+      "detail": "Le strategie di verifica e recupero devono adeguarsi al DBMS.",
+      "example": "ROLLBACK dopo un ALTER non ha identica portabilità.",
+      "formulas": [],
+      "connections": [
+        "Cap. 9: semantica delle transazioni."
+      ],
+      "mistakes": "Non applicare automaticamente la gestione transazionale DML al DDL Oracle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.15, pagina PDF 106"
+    },
+    {
+      "id": "si-c07-q130",
+      "topicId": "si-c07-t15",
+      "question": "Come viene gestito il conflitto di inserimento nei due sistemi secondo il manuale?",
+      "answer": "PostgreSQL offre INSERT ... ON CONFLICT; Oracle utilizza MERGE e altre strategie.",
+      "detail": "Entrambi possono realizzare una logica di inserimento/aggiornamento, ma la sintassi non coincide.",
+      "example": "UPSERT del segmento Microimpresa.",
+      "formulas": [],
+      "connections": [
+        "§7.6: inserimenti e aggiornamenti sui dati."
+      ],
+      "mistakes": "Non copiare ON CONFLICT come se fosse direttamente eseguibile in Oracle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.15, pagina PDF 106"
+    },
+    {
+      "id": "si-c07-q131",
+      "topicId": "si-c07-t15",
+      "question": "Qual è la differenza fra DATE PostgreSQL e DATE Oracle?",
+      "answer": "In PostgreSQL DATE conserva soltanto la data; in Oracle DATE include anche la componente oraria fino ai secondi.",
+      "detail": "La differenza incide su confronti, filtri e conversioni durante migrazioni.",
+      "example": "DATE '2026-11-01' nel dataset didattico PostgreSQL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che due colonne chiamate DATE abbiano la stessa semantica temporale nei due DBMS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.15, pagina PDF 106"
+    },
+    {
+      "id": "si-c07-q132",
+      "topicId": "si-c07-t15",
+      "question": "Come va affrontata una domanda Moodle quando la regola è generale ma la sintassi varia per DBMS?",
+      "answer": "Separare il vincolo logico richiesto dalla sua realizzazione; usare il dialetto indicato o accettato dal docente e dichiarare eventuali limiti tecnici.",
+      "detail": "La tabella di confronto del manuale è selettiva e non esaustiva per tutte le versioni.",
+      "example": "Regola di confronto tra due tabelle corretta in astratto ma non implementabile con CHECK PostgreSQL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non correggere silenziosamente la traccia oppure confondere SQL e PL/SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.15, pagina PDF 106"
+    },
+    {
+      "id": "si-c07-q133",
+      "topicId": "si-c07-t16",
+      "question": "Quali tipi di esercizi SQL ricorrono nelle prove ufficiali richiamate?",
+      "answer": "Traduzione dello schema logico in tabelle SQL, chiavi semplici e composte, generalizzazioni e vincoli di dominio.",
+      "detail": "Il capitolo cita prove 2017 (ottica), 2018 (esami) e 2019 (bandi).",
+      "example": "La proposta 2019 ha un numero locale al bando.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare un identificatore locale in PK globale senza motivazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.16, pagina PDF 107"
+    },
+    {
+      "id": "si-c07-q134",
+      "topicId": "si-c07-t16",
+      "question": "Quale identificatore composto va rispettato nel caso delle prove di maturità 2018?",
+      "answer": "La coppia (studente, data) identifica la prova nello scenario della traccia; le FK delle specializzazioni devono includere entrambe le colonne.",
+      "detail": "È uno degli errori di traduzione più rilevanti da evitare.",
+      "example": "FOREIGN KEY (studente,data) REFERENCES prova(studente,data).",
+      "formulas": [],
+      "connections": [
+        "Cap. 2 e 4: identificazione esterna e traduzione delle gerarchie."
+      ],
+      "mistakes": "Non utilizzare solo studente o solo data come FK della sottoclasse.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.16, pagina PDF 107"
+    },
+    {
+      "id": "si-c07-q135",
+      "topicId": "si-c07-t16",
+      "question": "Qual è la criticità nel modello delle proposte per bandi 2019?",
+      "answer": "Il codice/numero della proposta è locale al bando e alcuni vincoli richiedono verifiche fra tabelle, non soltanto un CHECK della singola riga.",
+      "detail": "La realizzazione SQL va distinta dalla descrizione del requisito.",
+      "example": "PRIMARY KEY (codice_bando,numero).",
+      "formulas": [],
+      "connections": [
+        "Cap. 8: controlli che attraversano tabelle."
+      ],
+      "mistakes": "Non imporre numero proposta univoco su tutti i bandi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.16, pagina PDF 107"
+    },
+    {
+      "id": "si-c07-q136",
+      "topicId": "si-c07-t16",
+      "question": "Qual è il metodo in cinque passi per affrontare una traccia SQL?",
+      "answer": "1) Individuare tabelle, chiavi e cardinalità; 2) controllare tipi e vincoli; 3) costruire FROM/JOIN e filtri; 4) verificare con tuple piccole; 5) riesaminare NULL, duplicati, AND/OR, WHERE e vincoli intertabellari.",
+      "detail": "È il metodo pratico sintetizzato dalla Figura 7.9.",
+      "example": "Prima progettare correttamente lo schema, poi scrivere la query.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non saltare il controllo sui casi limite perché la query sembra breve.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.16, pagina PDF 107"
+    },
+    {
+      "id": "si-c07-q137",
+      "topicId": "si-c07-t16",
+      "question": "Quale peso indicativo attribuisce il programma 2026/27 alle due componenti SQL?",
+      "answer": "3/30 alla definizione SQL e 4/30 alla manipolazione SQL secondo il programma comunicato nel manuale.",
+      "detail": "Il manuale avverte che i punteggi delle prove storiche possono differire dall’edizione corrente; i trigger sono affrontati nel Capitolo 8.",
+      "example": "Ripartizione totale specifica: 3+4 punti su 30.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare i pesi storici con quelli comunicati per l’anno corrente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.16, pagina PDF 107"
+    },
+    {
+      "id": "si-c07-q138",
+      "topicId": "si-c07-t16",
+      "question": "Come distinguere in un esercizio SQL requisito di business e implementazione DBMS?",
+      "answer": "Prima esplicitare la condizione da garantire, poi scegliere costrutti realmente eseguibili nel motore specificato.",
+      "detail": "Questo evita di presentare come script valido un CHECK con sottoquery su altra tabella in PostgreSQL.",
+      "example": "Data di invio proposta <= scadenza del bando.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che una FK garantisca ogni regola temporale fra tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.16, pagina PDF 107"
+    },
+    {
+      "id": "si-c07-q139",
+      "topicId": "si-c07-t16",
+      "question": "Quali errori ricontrollare prima di consegnare una query?",
+      "answer": "Duplicati, gestione di NULL, condizioni AND/OR, assenza o errata posizione di WHERE, moltiplicazione da JOIN e correlazione delle sottoquery.",
+      "detail": "Il risultato va verificato sul dataset 7.4, non su dati alterati da esercizi di prova.",
+      "example": "FISSA_D deve rimanere nel report delle offerte anche senza simulazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere DISTINCT per nascondere automaticamente errori nel JOIN.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.16, pagina PDF 107"
+    },
+    {
+      "id": "si-c07-q140",
+      "topicId": "si-c07-t17",
+      "question": "Nell’esercizio guidato 01, come si rappresenta in SQL l’iscrizione N:M fra studente e insegnamento?",
+      "answer": "Con tabella ISCRIZIONE che contiene matricola FK, codice_insegnamento FK, data_iscrizione NOT NULL e PRIMARY KEY (matricola,codice_insegnamento).",
+      "detail": "La traccia permette una sola iscrizione per coppia studente-insegnamento.",
+      "example": "CREATE TABLE iscrizione (... PRIMARY KEY (matricola,codice_insegnamento)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare soltanto matricola come PK se lo studente può seguire più insegnamenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 107"
+    },
+    {
+      "id": "si-c07-q141",
+      "topicId": "si-c07-t17",
+      "question": "Perché la PK composta dell’esercizio 01 rappresenta una regola precisa?",
+      "answer": "Impedisce una seconda riga per la medesima coppia studente-insegnamento pur consentendo a studenti diversi lo stesso insegnamento e viceversa.",
+      "detail": "Il vincolo non serve a memorizzare iscrizioni ripetute nel tempo: quelle non sono previste da questa traccia.",
+      "example": "Una sola iscrizione di M01 al corso C01.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare il pattern di eventi ripetuti se il requisito dice esplicitamente «una sola volta».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 107"
+    },
+    {
+      "id": "si-c07-q142",
+      "topicId": "si-c07-t17",
+      "question": "Nell’esercizio guidato 02, come si identifica la PROPOSTA numerata all’interno del BANDO?",
+      "answer": "Con PRIMARY KEY (codice_bando, numero), più FOREIGN KEY (codice_bando) REFERENCES bando(codice).",
+      "detail": "numero è locale al bando: può ricominciare da 1 in ogni bando.",
+      "example": "Bando A proposta 1 e Bando B proposta 1 sono oggetti distinti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "PRIMARY KEY(numero) impedirebbe un caso lecito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 107"
+    },
+    {
+      "id": "si-c07-q143",
+      "topicId": "si-c07-t17",
+      "question": "Quale CHECK aggiuntivo richiede il numero di proposta nell’esercizio 02?",
+      "answer": "numero INTEGER NOT NULL CHECK (numero > 0).",
+      "detail": "Il vincolo di positività è indipendente dalla corretta identificazione esterna.",
+      "example": "Numero 0 o negativo non è valido nella soluzione del manuale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che PRIMARY KEY imponga automaticamente positività.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 108"
+    },
+    {
+      "id": "si-c07-q144",
+      "topicId": "si-c07-t17",
+      "question": "Come si traducono nell’esercizio 03 prezzo non negativo e validità ordinata?",
+      "answer": "prezzo NUMERIC(10,5) NOT NULL CHECK(prezzo >= 0); inizio e fine DATE NOT NULL; CHECK(fine >= inizio).",
+      "detail": "Entrambe le regole sono verificabili sulla singola riga.",
+      "example": "CREATE TABLE tariffa con due CHECK di riga.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la disuguaglianza >=0 con >0.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 108"
+    },
+    {
+      "id": "si-c07-q145",
+      "topicId": "si-c07-t17",
+      "question": "Perché il CHECK(fine >= inizio) è valido in PostgreSQL?",
+      "answer": "Perché confronta colonne della medesima riga, senza interrogare altre tabelle o tuple.",
+      "detail": "Diversamente da un vincolo data_invio rispetto al bando, questo è un controllo locale.",
+      "example": "Tariffa con inizio 1/11 e fine 30/11 ammessa; fine 31/10 rifiutata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concludere che ogni confronto fra date sia esprimibile da CHECK.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 108"
+    },
+    {
+      "id": "si-c07-q146",
+      "topicId": "si-c07-t17",
+      "question": "Nell’esercizio guidato 04, perché CHECK(data_invio <= SELECT scadenza FROM bando...) non è accettabile in PostgreSQL?",
+      "answer": "Perché la regola coinvolge più tabelle e CHECK PostgreSQL non ammette sottoquery intertabellari.",
+      "detail": "Servono alternative implementative corrette: ad esempio trigger che controllino le variazioni, oppure logica transazionale con adeguata gestione della concorrenza.",
+      "example": "PROPOSTA.data_invio deve precedere BANDO.scadenza.",
+      "formulas": [],
+      "connections": [
+        "Cap. 8: progettazione di trigger per vincoli inter-relazionali."
+      ],
+      "mistakes": "La FK al bando garantisce solo l’esistenza del bando, non le date.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 108"
+    },
+    {
+      "id": "si-c07-q147",
+      "topicId": "si-c07-t17",
+      "question": "Quali due eventi vanno controllati quando si realizza il vincolo intertabellare dell’esercizio 04 con trigger?",
+      "answer": "La creazione/modifica della proposta e le variazioni della scadenza del bando, che potrebbero invalidare proposte già presenti.",
+      "detail": "La correttezza comprende anche la concorrenza fra transazioni.",
+      "example": "Spostare all’indietro la scadenza di un bando può rendere non lecite proposte esistenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non controllare solo l’INSERT sulla tabella figlia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 108"
+    },
+    {
+      "id": "si-c07-q148",
+      "topicId": "si-c07-t17",
+      "question": "Qual è la SELECT corretta per l’esercizio 05, offerte validate ordinate per prezzo crescente?",
+      "answer": "SELECT codice, prezzo_kwh FROM didattica.offerta WHERE stato='VALIDATA' ORDER BY prezzo_kwh, codice;",
+      "detail": "Il secondo campo d’ordinamento rende stabile l’ordine in caso di parità.",
+      "example": "Output: FISSA_C 0,14000; FISSA_A 0,15000.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non elencare A prima di C: qui l’ordine è per prezzo, non per codice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 108"
+    },
+    {
+      "id": "si-c07-q149",
+      "topicId": "si-c07-t17",
+      "question": "Quale risultato atteso verifica il criterio di prezzo dell’esercizio 05?",
+      "answer": "FISSA_C precede FISSA_A perché 0,14000 è minore di 0,15000 €/kWh.",
+      "detail": "Sono entrambe VALIDATA; B e D sono BOZZA.",
+      "example": "Listato dell’esercizio 05.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non associare erroneamente FISSA_B alle offerte validate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 108"
+    },
+    {
+      "id": "si-c07-q150",
+      "topicId": "si-c07-t17",
+      "question": "Come si ricavano i codici delle offerte simulate senza ripetizioni nell’esercizio 06?",
+      "answer": "Si usa una JOIN fra OFFERTA e SIMULAZIONE e SELECT DISTINCT o.codice, oppure una EXISTS opportunamente correlata.",
+      "detail": "DISTINCT è necessario nella soluzione con JOIN perché le offerte A e B hanno due simulazioni.",
+      "example": "Risultato: FISSA_A, FISSA_B, FISSA_C.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non restituire due volte A e B.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 108"
+    },
+    {
+      "id": "si-c07-q151",
+      "topicId": "si-c07-t17",
+      "question": "Perché una SELECT senza DISTINCT sull’esercizio 06 restituirebbe più righe di quante offerte?",
+      "answer": "La JOIN 1:N produce una riga per simulazione: cinque righe, ma le offerte distinte sono tre.",
+      "detail": "Un numero di righe maggiore non significa che esistano più offerte.",
+      "example": "A,A,B,B,C in forma concettuale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare cinque simulazioni per cinque offerte differenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 108"
+    },
+    {
+      "id": "si-c07-q152",
+      "topicId": "si-c07-t17",
+      "question": "Come si contano tutte le offerte, anche senza simulazioni, nell’esercizio 07?",
+      "answer": "LEFT JOIN fra OFFERTA e SIMULAZIONE, GROUP BY sull’offerta e COUNT(s.id_simulazione).",
+      "detail": "La scelta della colonna figlia evita di contare la riga estesa da NULL.",
+      "example": "Output: FISSA_A=2, B=2, C=1, D=0.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "COUNT(*) avrebbe assegnato almeno uno a D sulla LEFT JOIN.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 108"
+    },
+    {
+      "id": "si-c07-q153",
+      "topicId": "si-c07-t17",
+      "question": "Qual è il criterio corretto per preservare FISSA_D nel risultato dell’esercizio 07?",
+      "answer": "La tabella OFFERTA deve stare sul lato sinistro della LEFT JOIN e non devono essere imposti in WHERE filtri che eliminano la riga senza figlio.",
+      "detail": "FISSA_D è il caso diagnostico del dataset.",
+      "example": "LEFT JOIN simulazione s USING(id_offerta).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare INNER JOIN per una richiesta che include «anche senza simulazioni».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 108"
+    },
+    {
+      "id": "si-c07-q154",
+      "topicId": "si-c07-t17",
+      "question": "Quali due condizioni deve soddisfare una simulazione nell’esercizio 08?",
+      "answer": "Il segmento associato deve avere consumo_rif > 10.000 kWh e la simulazione deve avere consumo_kwh > 10.000 kWh.",
+      "detail": "Servono una JOIN con SEGMENTO e due predicati AND su colonne diverse.",
+      "example": "WHERE g.consumo_rif>10000 AND s.consumo_kwh>10000.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire AND con OR né confrontare due volte la medesima colonna.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 108"
+    },
+    {
+      "id": "si-c07-q155",
+      "topicId": "si-c07-t17",
+      "question": "Perché l’esercizio 08 restituisce soltanto le simulazioni 101 e 103?",
+      "answer": "101: riferimento 12.000 e consumo 12.000; 103: riferimento 60.000 e consumo 50.000, entrambi superiori a 10.000.",
+      "detail": "102 ha un segmento da 12.000, ma il consumo simulato è soltanto 8.000.",
+      "example": "101 Microimpresa; 103 PMI.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non includere 102 guardando solo il segmento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 109"
+    },
+    {
+      "id": "si-c07-q156",
+      "topicId": "si-c07-t17",
+      "question": "Come si risolve l’esercizio 09 «offerte con almeno due simulazioni e quantità media»?",
+      "answer": "JOIN con SIMULAZIONE, GROUP BY per offerta, HAVING COUNT(*) >= 2 e AVG(s.consumo_kwh).",
+      "detail": "Si filtrano gruppi, non singole righe.",
+      "example": "SELECT o.codice,AVG(...) ... GROUP BY ... HAVING COUNT(*)>=2.",
+      "formulas": [],
+      "connections": [
+        "§7.10: HAVING filtra gruppi già aggregati."
+      ],
+      "mistakes": "Non usare WHERE COUNT(*) >= 2.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 109"
+    },
+    {
+      "id": "si-c07-q157",
+      "topicId": "si-c07-t17",
+      "question": "Quali medie e offerte restituisce l’esercizio 09?",
+      "answer": "FISSA_A: 7.350 kWh; FISSA_B: 5.500 kWh.",
+      "detail": "Sono le due offerte con almeno due simulazioni nel dataset originale.",
+      "example": "A: (2700+12000)/2; B: (8000+3000)/2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non includere C, che ha un’unica simulazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 109"
+    },
+    {
+      "id": "si-c07-q158",
+      "topicId": "si-c07-t17",
+      "question": "Come si cercano le offerte mai simulate nell’esercizio 10?",
+      "answer": "Con NOT EXISTS correlato alla chiave dell’offerta.",
+      "detail": "Il manuale sconsiglia NOT IN quando la sottoquery potrebbe includere NULL.",
+      "example": "Risultato FISSA_D.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare s.id_offerta=o.id_offerta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 109"
+    },
+    {
+      "id": "si-c07-q159",
+      "topicId": "si-c07-t17",
+      "question": "Quale errore introdurrebbe una NOT EXISTS non correlata nell’esercizio 10?",
+      "answer": "Se la tabella SIMULAZIONE contiene anche una sola riga, la NOT EXISTS non correlata sarebbe falsa per tutte le offerte.",
+      "detail": "La sottoquery deve verificare assenza per l’offerta corrente.",
+      "example": "WHERE NOT EXISTS(SELECT 1 FROM simulazione s WHERE s.id_offerta=o.id_offerta).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cercare la semplice assenza globale di simulazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 109"
+    },
+    {
+      "id": "si-c07-q160",
+      "topicId": "si-c07-t17",
+      "question": "Come si individuano offerte con almeno una simulazione del segmento Microimpresa nell’esercizio 11?",
+      "answer": "Con EXISTS su SIMULAZIONE collegata a SEGMENTO, correlando id_offerta e filtrando g.nome='Microimpresa'.",
+      "detail": "Il risultato non deve duplicare offerte con più simulazioni.",
+      "example": "Risultato FISSA_A e FISSA_B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il nome del segmento con un attributo di OFFERTA.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 109"
+    },
+    {
+      "id": "si-c07-q161",
+      "topicId": "si-c07-t17",
+      "question": "Quali condizioni devono apparire insieme nella sottoquery correlata dell’esercizio 11?",
+      "answer": "La correlazione all’offerta esterna e il criterio di segmento Microimpresa.",
+      "detail": "Il legame ai dati del segmento avviene con JOIN/USING(id_segmento).",
+      "example": "s.id_offerta=o.id_offerta AND g.nome='Microimpresa'.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Se ometti la correlazione, possono comparire offerte senza simulazioni Microimpresa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 109"
+    },
+    {
+      "id": "si-c07-q162",
+      "topicId": "si-c07-t17",
+      "question": "Come sono calcolati ricavo e margine parziale per simulazione nell’esercizio 12?",
+      "answer": "Ricavo = consumo_kwh×prezzo_kwh + quota_annua; margine = consumo_kwh×(prezzo_kwh−costo_kwh)+quota_annua.",
+      "detail": "La query unisce ogni SIMULAZIONE alla sua OFFERTA; le grandezze sono in euro e hanno carattere dimostrativo.",
+      "example": "SELECT s.id_simulazione, s.consumo_kwh*o.prezzo_kwh+o.quota_annua AS ricavo, ...",
+      "formulas": [
+        {
+          "latex": "R_i=q_i p_i+F_i",
+          "meaning": "Ricavo semplificato"
+        },
+        {
+          "latex": "M_i=q_i(p_i-c_i)+F_i",
+          "meaning": "Margine parziale"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non dimenticare la quota annua nel margine del modello.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 109"
+    },
+    {
+      "id": "si-c07-q163",
+      "topicId": "si-c07-t17",
+      "question": "Quali sono i risultati ricavo/margine delle simulazioni 100, 101 e 102?",
+      "answer": "100: 495 €/171 €; 101: 1.890 €/510 €; 102: 1.480 €/440 €.",
+      "detail": "Calcoli ottenuti dal Listato 7.4, trattando ogni simulazione come caso indipendente.",
+      "example": "100: 2700×0,15+90=495; 2700×(0,15−0,12)+90=171.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il consumo di riferimento del segmento al posto del consumo della simulazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 109"
+    },
+    {
+      "id": "si-c07-q164",
+      "topicId": "si-c07-t17",
+      "question": "Quali sono i risultati ricavo/margine delle simulazioni 103 e 104?",
+      "answer": "103: 7.180 €/1.680 €; 104: 630 €/255 €.",
+      "detail": "103 riguarda FISSA_C e 50.000 kWh; 104 FISSA_B e 3.000 kWh.",
+      "example": "103: 50.000×0,14+180=7.180; 104: 3.000×0,17+120=630.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere costo_kwh con prezzo_kwh nella formula.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 109"
+    },
+    {
+      "id": "si-c07-q165",
+      "topicId": "si-c07-t17",
+      "question": "Come si interpreta l’interrogazione «tutte le offerte simulate per ogni segmento» dell’esercizio 13?",
+      "answer": "Si cerca l’assenza di segmenti privi di una simulazione per l’offerta, usando il doppio NOT EXISTS.",
+      "detail": "Il quesito richiede un quantificatore universale, non almeno una corrispondenza.",
+      "example": "Nessuna offerta risponde al criterio con i tre segmenti del dataset.",
+      "formulas": [],
+      "connections": [
+        "Cap. 5: divisione relazionale e ragionamento su controesempi."
+      ],
+      "mistakes": "Non usare semplicemente COUNT(*)>=3 senza verificare segmenti distinti e copertura.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 109"
+    },
+    {
+      "id": "si-c07-q166",
+      "topicId": "si-c07-t17",
+      "question": "Perché l’esercizio 13 restituisce zero righe?",
+      "answer": "Nessuna offerta ha una simulazione in ciascuno dei segmenti 1,2,3.",
+      "detail": "A e B coprono due segmenti, C soltanto PMI, D nessuno.",
+      "example": "Listato dell’esercizio 13.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un’offerta con più simulazioni con copertura universale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 109"
+    },
+    {
+      "id": "si-c07-q167",
+      "topicId": "si-c07-t17",
+      "question": "Come verificare l’aumento di 5 € della quota dell’offerta 40 nell’esercizio 14 senza persisterlo?",
+      "answer": "BEGIN; SELECT sul record; UPDATE quota_annua=quota_annua+5 WHERE id_offerta=40 RETURNING ...; ROLLBACK.",
+      "detail": "Il test avviene all’interno di una transazione PostgreSQL.",
+      "example": "Il valore passa da 110 a 115 durante la prova, poi torna a 110.",
+      "formulas": [],
+      "connections": [
+        "Cap. 9: COMMIT e ROLLBACK."
+      ],
+      "mistakes": "Non eseguire COMMIT se lo scopo è solo verificare.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 110"
+    },
+    {
+      "id": "si-c07-q168",
+      "topicId": "si-c07-t17",
+      "question": "Che cosa dimostra RETURNING nell’esercizio 14?",
+      "answer": "Mostra direttamente il valore aggiornato (115) e la riga interessata prima dell’annullamento della transazione.",
+      "detail": "ROLLBACK rende nuovamente osservabile il valore originale 110.",
+      "example": "RETURNING id_offerta, quota_annua.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la visualizzazione del risultato transitorio con una modifica permanente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.17, pagina PDF 110"
+    },
+    {
+      "id": "si-c07-q169",
+      "topicId": "si-c07-t18",
+      "question": "Esercizio autonomo A1: quante offerte vi sono per stato e con quale query?",
+      "answer": "BOZZA=2 e VALIDATA=2; si usa SELECT stato,COUNT(*) FROM didattica.offerta GROUP BY stato ORDER BY stato.",
+      "detail": "Nel dataset non vi sono offerte ARCHIVIATA.",
+      "example": "A1, risultato del Listato 7.4.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarsi un gruppo con conteggio zero per gli stati privi di righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 110"
+    },
+    {
+      "id": "si-c07-q170",
+      "topicId": "si-c07-t18",
+      "question": "Esercizio autonomo A2: quali simulazioni hanno costo_kwh < 0,12?",
+      "answer": "Le simulazioni 101 e 103.",
+      "detail": "Hanno costo 0,11500 e 0,11000; il costo 0,12000 della simulazione 100 non soddisfa il confronto stretto.",
+      "example": "WHERE costo_kwh < 0.12 ORDER BY id_simulazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non includere 100: 0,12000 non è minore di 0,12.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 110"
+    },
+    {
+      "id": "si-c07-q171",
+      "topicId": "si-c07-t18",
+      "question": "Esercizio autonomo A3: quali segmenti non sono mai usati e come si trovano?",
+      "answer": "Nessuno nel dataset; si può usare NOT EXISTS correlato a SEGMENTO e SIMULAZIONE.",
+      "detail": "Anche PMI è usato, nella simulazione 103.",
+      "example": "SELECT g.nome FROM segmento g WHERE NOT EXISTS(SELECT 1 FROM simulazione s WHERE s.id_segmento=g.id_segmento).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre l’assenza dai soli segmenti delle offerte A e B.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 110"
+    },
+    {
+      "id": "si-c07-q172",
+      "topicId": "si-c07-t18",
+      "question": "Esercizio autonomo A4: quanti clienti sono associati a un segmento e quanti no?",
+      "answer": "Due clienti con segmento (SI) e uno senza (NO).",
+      "detail": "Si può classificare ogni riga con CASE WHEN id_segmento IS NULL THEN 'NO' ELSE 'SI' END e raggruppare.",
+      "example": "Gamma Srl e Delta Spa hanno segmento; Cliente senza segmento no.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non escludere i NULL prima di effettuare il conteggio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 110"
+    },
+    {
+      "id": "si-c07-q173",
+      "topicId": "si-c07-t18",
+      "question": "Esercizio autonomo A5: quali vincoli deve avere PREVENTIVO?",
+      "answer": "id_preventivo INTEGER PRIMARY KEY; data_prev DATE NOT NULL; id_cliente INTEGER NOT NULL REFERENCES didattica.cliente(id_cliente).",
+      "detail": "NOT NULL rende il riferimento obbligatorio, FK ne verifica l’esistenza.",
+      "example": "PREVENTIVO deve riferirsi a un CLIENTE esistente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La sola FOREIGN KEY non rende automaticamente obbligatorio id_cliente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 110"
+    },
+    {
+      "id": "si-c07-q174",
+      "topicId": "si-c07-t18",
+      "question": "Esercizio autonomo A6: quali consumi complessivi per segmento emergono?",
+      "answer": "Residenziale 5.700 kWh, Microimpresa 20.000 kWh, PMI 50.000 kWh.",
+      "detail": "Si usa LEFT JOIN da SEGMENTO e SUM sui consumi; COALESCE può rendere zero la somma NULL per segmenti senza simulazioni.",
+      "example": "Residenziale=2700+3000; Microimpresa=12000+8000.",
+      "formulas": [],
+      "connections": [
+        "§7.9: LEFT JOIN conserva segmenti senza simulazioni."
+      ],
+      "mistakes": "Non usare consumo_rif al posto della somma dei consumi simulati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 110"
+    },
+    {
+      "id": "si-c07-q175",
+      "topicId": "si-c07-t18",
+      "question": "Perché A6 usa LEFT JOIN e COALESCE(SUM(...),0)?",
+      "answer": "LEFT JOIN mantiene anche segmenti eventualmente senza simulazioni; COALESCE consente di mostrare 0 quando SUM non dispone di valori.",
+      "detail": "Nel dataset attuale tutti i segmenti hanno simulazioni, ma la query resta robusta nel caso limite.",
+      "example": "SELECT g.nome,COALESCE(SUM(s.consumo_kwh),0) ... GROUP BY g.id_segmento,g.nome.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non preferire INNER JOIN se serve visualizzare anche categorie a zero.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 110"
+    },
+    {
+      "id": "si-c07-q176",
+      "topicId": "si-c07-t18",
+      "question": "Perché UNIQUE, NOT NULL e CHECK sono concetti indipendenti?",
+      "answer": "UNIQUE controlla duplicazioni, NOT NULL l’obbligatorietà e CHECK il rispetto di predicati che non devono risultare FALSE.",
+      "detail": "Una colonna può richiedere tutti e tre i controlli.",
+      "example": "nome VARCHAR(80) NOT NULL UNIQUE; consumo_rif NOT NULL CHECK > 0.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare a UNIQUE o CHECK l’obbligatorietà implicita che non possiedono.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 111"
+    },
+    {
+      "id": "si-c07-q177",
+      "topicId": "si-c07-t18",
+      "question": "Come si rappresenta in SQL una chiave composta e perché deve essere coerente con le FK?",
+      "answer": "PRIMARY KEY(c1,c2,...) definisce l’identificatore; i riferimenti a questa chiave devono utilizzare le componenti necessarie.",
+      "detail": "La chiave locale perde significato senza il contesto padre.",
+      "example": "PROPOSTA(codice_bando,numero).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare FK che referenziano una sola componente non univoca della chiave composta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 111"
+    },
+    {
+      "id": "si-c07-q178",
+      "topicId": "si-c07-t18",
+      "question": "Come si riconosce l’errore di una COUNT(*) eseguita dopo una LEFT JOIN?",
+      "answer": "Se il gruppo rappresenta un padre senza figli, COUNT(*) può restituire 1 anziché 0 perché conta la riga estesa da NULL.",
+      "detail": "Usare COUNT della chiave non nulla del figlio quando si desidera il numero di corrispondenze.",
+      "example": "FISSA_D: 0 con COUNT(s.id_simulazione).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare COUNT(*) per contare i figli senza verificare la semantica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 111"
+    },
+    {
+      "id": "si-c07-q179",
+      "topicId": "si-c07-t18",
+      "question": "Quali controlli occorrono prima di sommare una grandezza del padre dopo una JOIN 1:N?",
+      "answer": "Individuare la granularità, la cardinalità, il significato della misura e se la ripetizione del padre debba essere conteggiata più volte.",
+      "detail": "È essenziale per evitare un totale economicamente falsato.",
+      "example": "quota_annua di OFFERTA può apparire due volte in corrispondenza di due simulazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ricorrere a DISTINCT sull’importo senza capire quali righe devono contribuire alla somma.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 111"
+    },
+    {
+      "id": "si-c07-q180",
+      "topicId": "si-c07-t18",
+      "question": "In cosa differiscono logicamente EXISTS e NOT EXISTS?",
+      "answer": "EXISTS è vero se la sottoquery produce almeno una riga; NOT EXISTS è vero se non ne produce alcuna.",
+      "detail": "La correlazione delimita l’insieme rilevante per il padre corrente.",
+      "example": "A,B,C hanno simulazioni; D non ne ha.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere TRUE/FALSE del test di esistenza con il valore di una colonna selezionata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 111"
+    },
+    {
+      "id": "si-c07-q181",
+      "topicId": "si-c07-t18",
+      "question": "Come si esprime una condizione universale «per tutti» nell’autoverifica?",
+      "answer": "Con doppio NOT EXISTS che elimina i candidati per i quali esiste almeno un controesempio; la divisione relazionale è l’analogo dell’algebra.",
+      "detail": "La condizione universale va verificata sull’intero insieme richiesto.",
+      "example": "Offerte simulate per ogni segmento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare soltanto una EXISTS, che esprime almeno uno.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 111"
+    },
+    {
+      "id": "si-c07-q182",
+      "topicId": "si-c07-t18",
+      "question": "Perché i NULL rendono rischioso NOT IN in un quesito Moodle?",
+      "answer": "La presenza di NULL nell’elenco può trasformare confronti non corrispondenti in UNKNOWN e produrre un risultato inatteso o vuoto.",
+      "detail": "Preferire NOT EXISTS quando la formulazione «nessuno» consente una correlazione chiara.",
+      "example": "1 NOT IN (2,NULL) non è TRUE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare NOT IN come negazione ordinaria di appartenenza con valori tutti conosciuti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 111"
+    },
+    {
+      "id": "si-c07-q183",
+      "topicId": "si-c07-t18",
+      "question": "Che differenza esiste fra SQL dichiarativo e piano fisico di esecuzione?",
+      "answer": "La query specifica il risultato, mentre il piano descrive la strategia concreta scelta dal DBMS per produrlo.",
+      "detail": "L’ottimizzatore può usare indici, scansioni e join differenti senza cambiare il risultato corretto.",
+      "example": "EXPLAIN mostra un piano, non una nuova definizione del risultato.",
+      "formulas": [],
+      "connections": [
+        "§7.14: EXPLAIN mostra una scelta del motore, non cambia la logica della SELECT."
+      ],
+      "mistakes": "Non confondere ordine logico di SQL con piano di accesso fisico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 111"
+    },
+    {
+      "id": "si-c07-q184",
+      "topicId": "si-c07-t18",
+      "question": "Qual è il criterio generale di padronanza del capitolo secondo le 20 domande di autoverifica?",
+      "answer": "Saper giustificare vincoli, gestire duplicati e NULL, scegliere JOIN e aggregazioni, usare quantificatori e verificare ogni risultato sul dataset noto.",
+      "detail": "Scrivere una query non è sufficiente senza saperne prevedere gli effetti.",
+      "example": "Prevedere che l’offerta D ha 0 simulazioni e che non ne esistono per tutti i segmenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non giudicare il grado di comprensione soltanto dalla familiarità con la sintassi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.18, pagina PDF 111"
+    },
+    {
+      "id": "si-c07-q185",
+      "topicId": "si-c07-t19",
+      "question": "Che differenza esiste tra schema SQL e istanza di database?",
+      "answer": "Lo schema descrive tabelle, attributi e vincoli; l’istanza è il contenuto concreto delle relazioni in un dato momento.",
+      "detail": "Le istruzioni DDL incidono sulla struttura, le DML sui dati.",
+      "example": "CREATE TABLE definisce lo schema; INSERT modifica l’istanza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare i due termini come sinonimi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.19, pagina PDF 112"
+    },
+    {
+      "id": "si-c07-q186",
+      "topicId": "si-c07-t19",
+      "question": "Che cos’è una chiave candidata nel glossario del capitolo?",
+      "answer": "Un insieme minimo di attributi che identifica univocamente le tuple.",
+      "detail": "Il vincolo PRIMARY KEY sceglie una chiave da usare come identificatore principale.",
+      "example": "id_offerta e codice dell’offerta sono univoci nel dataset.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una superchiave non è necessariamente minima.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.19, pagina PDF 112"
+    },
+    {
+      "id": "si-c07-q187",
+      "topicId": "si-c07-t19",
+      "question": "Che cos’è una query correlata e perché è utile?",
+      "answer": "Una sottoquery che si riferisce alle colonne della query esterna, permettendo verifiche relative a ciascun elemento esterno.",
+      "detail": "Supporta condizioni «almeno uno», «nessuno» e «tutti».",
+      "example": "s.id_offerta=o.id_offerta in una EXISTS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere il filtro della sottoquery senza collegarlo all’elemento esterno.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.19, pagina PDF 112"
+    },
+    {
+      "id": "si-c07-q188",
+      "topicId": "si-c07-t19",
+      "question": "Che cosa indica piano di esecuzione nel glossario e come si distingue dal risultato?",
+      "answer": "È la strategia fisica scelta dall’ottimizzatore; non cambia la semantica del risultato desiderato.",
+      "detail": "Il piano può dipendere dalle statistiche, dagli indici e dall’istanza.",
+      "example": "EXPLAIN del conteggio delle simulazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare una stima di piano alla validità della query.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.19, pagina PDF 112"
+    },
+    {
+      "id": "si-c07-q189",
+      "topicId": "si-c07-t19",
+      "question": "Quali argomenti SQL sono rinviati ai capitoli successivi?",
+      "answer": "Il Capitolo 8 tratterà viste, trigger, asserzioni e basi di dati attive; le tecnologie DB approfondiranno transazioni, isolamento, locking, indici, distribuzione e protocolli di commit.",
+      "detail": "Il Capitolo 7 deve consolidare soprattutto vincoli, NULL e interrogazioni corrette.",
+      "example": "Una regola intertabellare potrà essere realizzata con un trigger nel capitolo successivo.",
+      "formulas": [],
+      "connections": [
+        "Cap. 8–9: basi di dati attive e tecnologie DB."
+      ],
+      "mistakes": "Non anticipare dettagli non presenti nel Capitolo 7.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.19, pagina PDF 112"
+    },
+    {
+      "id": "si-c07-q190",
+      "topicId": "si-c07-t19",
+      "question": "Quali attività pratiche consiglia la checklist finale del Capitolo 7?",
+      "answer": "Ripetere esercizi 01–14 su PostgreSQL, ricostruire a mano i risultati dei Listati 7.9 e 7.15 e svolgere almeno due volte le tracce storiche DDL.",
+      "detail": "La padronanza si misura dalla capacità di spiegare come ogni clausola cambia il risultato, non dalla sola velocità di battitura.",
+      "example": "Ricostruire 10,10,20,20,30 e i conteggi A=2,B=2,C=1,D=0.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a memorizzare query senza verificarne la semantica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 7, §7.19, pagina PDF 112"
+    }
+  ]
+}

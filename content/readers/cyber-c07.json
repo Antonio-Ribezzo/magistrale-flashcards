@@ -1,0 +1,104 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Contesto e valutazione del rischio",
+      "concept": "Contesto e valutazione del rischio",
+      "topics": [
+        "cyber-c07-t01",
+        "cyber-c07-t02",
+        "cyber-c07-t03",
+        "cyber-c07-t04"
+      ],
+      "pages": [
+        108,
+        109,
+        110,
+        112
+      ],
+      "blocks": [
+        {
+          "text": "Il risk assessment stabilisce obiettivi, perimetro, asset, tolleranza ed evidenze. Un approccio di base adotta misure comuni, mentre una valutazione formale documenta scenari, criteri e assunzioni. La continuità usa anche RTO e RPO come riferimenti."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Probabilità, impatto e incertezza",
+      "concept": "Probabilità, impatto e incertezza",
+      "topics": [
+        "cyber-c07-t06",
+        "cyber-c07-t07",
+        "cyber-c07-t08",
+        "cyber-c07-t10"
+      ],
+      "pages": [
+        114,
+        115,
+        117
+      ],
+      "blocks": [
+        {
+          "text": "La probabilità va riferita allo scenario e alle condizioni osservate. L’impatto considera conseguenze economiche, operative e organizzative. Una matrice qualitativa aiuta a stabilire priorità, purché i criteri siano espliciti e le categorie non vengano trattate come misure di precisione."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Perdita attesa e analisi economica",
+      "concept": "Perdita attesa e analisi economica",
+      "topics": [
+        "cyber-c07-t09",
+        "cyber-c07-t12",
+        "cyber-c07-t15"
+      ],
+      "pages": [
+        116,
+        119,
+        121
+      ],
+      "blocks": [
+        {
+          "text": "La perdita annua attesa si esprime come perdita per evento moltiplicata per frequenza annua stimata. Le stime vanno riesaminate al variare delle ipotesi. Per scegliere una misura confronta riduzione delle perdite, costi e conseguenze sui servizi."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Trattamento, responsabilità e rischio residuo",
+      "concept": "Trattamento, responsabilità e rischio residuo",
+      "topics": [
+        "cyber-c07-t11",
+        "cyber-c07-t13",
+        "cyber-c07-t14"
+      ],
+      "pages": [
+        117,
+        119,
+        120
+      ],
+      "blocks": [
+        {
+          "text": "Una misura modifica l’esposizione o le conseguenze. Il rischio residuo va rivalutato rispetto alle soglie di accettazione e assegnato a un responsabile. Il registro collega evidenze, trattamento, scadenze e decisioni."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "1",
+      "to": "2",
+      "relation": "Il contesto fissa criteri e orizzonte della valutazione."
+    },
+    {
+      "from": "2",
+      "to": "3",
+      "relation": "Le stime quantitative rendono esplicite alcune ipotesi economiche."
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "relation": "Il confronto economico supporta la scelta e il riesame del trattamento."
+    }
+  ]
+}

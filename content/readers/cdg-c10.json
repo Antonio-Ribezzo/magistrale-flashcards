@@ -1,0 +1,1408 @@
+{
+  "sections": [
+    {
+      "id": "introduzione",
+      "title": "Introduzione",
+      "topics": [],
+      "blocks": [
+        {
+          "image": "cdg-p120-1.png",
+          "caption": "Sei passaggi per affrontare qualsiasi problema di convenienza economica.",
+          "alt": "Sei passaggi per affrontare qualsiasi problema di convenienza economica."
+        }
+      ],
+      "concept": "Introduzione"
+    },
+    {
+      "id": "10-1",
+      "title": "10.1 Obiettivi e mappa degli argomenti",
+      "topics": [
+        "cdg-c10-t01"
+      ],
+      "blocks": [
+        {
+          "text": "Questo capitolo affronta il problema centrale della contabilità direzionale a supporto delle decisioni: non basta conoscere quanto costa un prodotto o quale risultato risulta nel conto economico; bisogna stabilire quali conseguenze economiche cambieranno se il management sceglierà un’alternativa anziché un’altra. Il risultato di una valutazione è una proposta motivata, non una somma automatica di numeri."
+        },
+        {
+          "text": "Dovrai saper distinguere scelte operative e strategiche; selezionare informazioni economiche rilevanti; riconoscere costi opportunità e costi sommersi; impostare il confronto fra alternative; risolvere decisioni di aggiunta/eliminazione di segmenti, ordini speciali, make or buy, lavorazioni successive e impiego di risorse scarse. Le slide e gli esercizi editoriali includono inoltre scelte in condizioni di rischio e di incertezza, con matrici dei risultati e criteri di decisione: anche questi argomenti sono trattati."
+        },
+        {
+          "text": "Prerequisiti collegati ai capitoli precedenti: costo variabile e fisso; costo diretto e indiretto; costi specifici e comuni; margine di contribuzione; costi incrementali; vincoli di capacità; significato di reddito operativo. Nei passaggi numerici ogni grandezza viene comunque definita nuovamente."
+        }
+      ],
+      "concept": "Obiettivi e mappa degli argomenti"
+    },
+    {
+      "id": "10-2",
+      "title": "10.2 Decisioni operative e strategiche",
+      "topics": [
+        "cdg-c10-t02"
+      ],
+      "blocks": [
+        {
+          "text": "Le decisioni operative incidono generalmente sull’utilizzo delle risorse già disponibili, sono più facilmente reversibili e hanno un orizzonte ravvicinato, normalmente coerente con il budget annuale. Esempi: accettare una commessa straordinaria, scegliere fra due turni di produzione, acquistare temporaneamente un componente o impiegare ore macchina residue. I loro effetti si valutano in via principale mediante ricavi e costi differenziali nel periodo considerato."
+        },
+        {
+          "text": "Le decisioni strategiche modificano invece in misura durevole la capacità produttiva, il posizionamento, il portafoglio di attività o gli asset dell’impresa. Esempi: costruire un nuovo stabilimento, acquisire un concorrente, entrare stabilmente in un altro Paese. Sono più difficili da revocare e richiedono normalmente un’analisi pluriennale dei flussi finanziari, dell’attualizzazione e dei rischi: saranno affrontate nel capitolo sul capital budgeting."
+        },
+        {
+          "text": "Il criterio temporale “un anno” è una convenzione didattica, non una frontiera assoluta: una scelta semestrale può avere effetti strategici irreversibili; una scelta ripetuta di outsourcing può modificare nel lungo periodo le competenze aziendali. Prima di applicare una formula occorre quindi definire orizzonte temporale, possibilità di reversibilità e impatto sulla capacità."
+        },
+        {
+          "table": [
+            [
+              "Dimensione",
+              "Decisione operativa",
+              "Decisione strategica"
+            ],
+            [
+              "Orizzonte",
+              "Breve, spesso entro il budget",
+              "Medio-lungo"
+            ],
+            [
+              "Risorse",
+              "Impiego di capacità esistente",
+              "Modifica delle risorse strategiche"
+            ],
+            [
+              "Reversibilità",
+              "Di norma maggiore",
+              "Di norma minore"
+            ],
+            [
+              "Metodo",
+              "Confronto reddituale incrementale",
+              "Flussi di cassa attualizzati e rischio"
+            ],
+            [
+              "Esempio",
+              "Ordine aggiuntivo",
+              "Nuova linea di impianti"
+            ]
+          ]
+        }
+      ],
+      "concept": "Decisioni operative e strategiche"
+    },
+    {
+      "id": "10-3",
+      "title": "10.3 Dall’obiettivo al confronto fra alternative",
+      "topics": [
+        "cdg-c10-t03"
+      ],
+      "blocks": [
+        {
+          "text": "Una scelta gestionale è valutabile soltanto se sono state formulate alternative comparabili. La prima è spesso la situazione-base, detta “non intervenire” o *status quo*; la seconda è la modifica proposta. La domanda rigorosa non è “il prodotto è in utile?”, ma “come cambia il reddito operativo se prendo questa decisione, rispetto all’alternativa che scarto?”."
+        },
+        {
+          "text": "Occorre specificare: (1) obiettivo della decisione; (2) alternative realizzabili; (3) unità di misura e durata; (4) capacità e vincoli; (5) ricavi e costi che differiscono; (6) fattori non monetari; (7) rischi e condizioni che potrebbero invalidare i dati. Un calcolo aritmeticamente corretto basato su alternative irrealizzabili non produce una buona decisione."
+        },
+        {
+          "image": "cdg-p121-1.png",
+          "caption": "Il controllo di gestione trasforma il problema in alternative, dati, differenze e valutazione.",
+          "alt": "Il controllo di gestione trasforma il problema in alternative, dati, differenze e valutazione."
+        }
+      ],
+      "concept": "Dall’obiettivo al confronto fra alternative"
+    },
+    {
+      "id": "10-4",
+      "title": "10.4 Analisi differenziale: logica e formule",
+      "topics": [
+        "cdg-c10-t04"
+      ],
+      "blocks": [
+        {
+          "text": "L’analisi differenziale isola la differenza economica fra due corsi di azione futuri. Fissiamo una convenzione unica per l’intero capitolo: “alternativa A meno alternativa B”. Una differenza positiva di risultato operativo indica che A è più conveniente di B, nelle ipotesi considerate. Ricavi aggiuntivi aumentano il risultato; costi aggiuntivi lo riducono; costi evitati lo aumentano; ricavi persi lo riducono."
+        },
+        {
+          "text": "ΔRO(A−B) = [Ricavi(A) − Costi(A)] − [Ricavi(B) − Costi(B)]"
+        },
+        {
+          "text": "ΔRO = ricavi emergenti − ricavi cessanti + costi cessanti − costi emergenti Il termine “differenziale” non equivale sempre a “variabile”: per esempio l’affitto di un nuovo magazzino è fisso rispetto alle quantità, ma è incrementale e rilevante se nasce soltanto con l’alternativa A. Inoltre il risultato del confronto dipende dalla granularità temporale: una penale sostenuta oggi può essere diversa da un costo di manutenzione che si ripete per tre anni."
+        },
+        {
+          "text": "Due modalità equivalenti di soluzione sono: metodo completo, che costruisce il risultato di ciascuna opzione inserendo tutte le voci (anche identiche), e metodo differenziale, che elimina le voci comuni e calcola solo le variazioni. Il secondo è più rapido; il primo permette una quadratura. I risultati devono coincidere se le ipotesi sono le medesime."
+        },
+        {
+          "table": [
+            [
+              "Voce",
+              "A",
+              "B",
+              "A − B"
+            ],
+            [
+              "Ricavi",
+              "80.000",
+              "55.000",
+              "+25.000"
+            ],
+            [
+              "Costi evitabili",
+              "0",
+              "8.000",
+              "+8.000 sul ΔRO"
+            ],
+            [
+              "Costi emergenti",
+              "21.000",
+              "0",
+              "−21.000 sul ΔRO"
+            ],
+            [
+              "Margine sacrificato (opportunità)",
+              "4.000",
+              "0",
+              "−4.000 sul ΔRO"
+            ],
+            [
+              "Vantaggio economico A su B",
+              "",
+              "",
+              "+8.000"
+            ]
+          ]
+        },
+        {
+          "image": "cdg-p122-1.png",
+          "caption": "Come ricostruire e interpretare il risultato differenziale.",
+          "alt": "Come ricostruire e interpretare il risultato differenziale."
+        },
+        {
+          "text": "Controllo: L’esempio è illustrativo: i “costi evitabili” sono costi presenti in B e assenti in A; il vantaggio si ottiene soltanto dopo aver verificato che la voce sia effettivamente eliminabile e che il beneficio opportunità sia reale."
+        }
+      ],
+      "concept": "Analisi differenziale: logica e formule"
+    },
+    {
+      "id": "10-5",
+      "title": "10.5 Ricavi e costi rilevanti: le tre condizioni",
+      "topics": [
+        "cdg-c10-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Un costo o ricavo può essere rilevante per una determinata decisione se presenta congiuntamente tre caratteristiche. È futuro: consegue a eventi che devono ancora verificarsi. È differenziale: cambia in importo fra le alternative realisticamente disponibili. È collegato alla scelta: nasce, cessa o muta a causa della decisione. In aggiunta, devono essere considerati i benefici sacrificati nell’impiego alternativo delle risorse, anche se non compaiono nella contabilità ordinaria."
+        },
+        {
+          "text": "La rilevanza è sempre relativa alla specifica domanda decisionale. Un costo può essere irrilevante nel confronto fra due ordini nell’arco di un mese e diventare rilevante nel confronto fra due linee produttive nel corso di tre anni. La categoria contabile non costituisce, da sola, una risposta."
+        },
+        {
+          "image": "cdg-p122-2.png",
+          "caption": "Figura 10.4 — Filtro delle informazioni economiche e attenzione al costo opportunità.",
+          "alt": "Figura 10.4 — Filtro delle informazioni economiche e attenzione al costo opportunità."
+        }
+      ],
+      "concept": "Ricavi e costi rilevanti: le tre condizioni"
+    },
+    {
+      "id": "10-6",
+      "title": "10.6 Costi sommersi, eliminabili, incrementali e impegnati",
+      "topics": [
+        "cdg-c10-t06"
+      ],
+      "blocks": [
+        {
+          "text": "Un costo sommerso (*sunk cost*) è già stato sostenuto e non può essere modificato da una decisione futura. Il prezzo storico di un macchinario già acquistato è sommerso per il confronto fra due ordini futuri. Ciò non significa che il macchinario sia privo di valore: un eventuale prezzo di rivendita oggi, diverso fra le alternative, è invece rilevante."
+        },
+        {
+          "text": "Un costo evitabile è una spesa futura che scompare scegliendo una delle alternative. Un costo incrementale è una spesa futura che nasce o aumenta a causa della scelta. Un costo impegnato/contrattualmente vincolato rimane dovuto nel periodo di decisione se l’impresa non può interrompere il relativo rapporto senza penali; l’eventuale penale per recedere può essere rilevante e va valutata insieme al risparmio."
+        },
+        {
+          "text": "Un costo comune allocato compare talvolta nel conto economico di un segmento perché una ripartizione convenzionale distribuisce le spese generali. La quota attribuita non implica che il costo scompaia eliminando il segmento. Nell’analisi differenziale occorre quindi disaggregare il costo allocato e individuare la parte realmente cessante."
+        },
+        {
+          "table": [
+            [
+              "Voce economica",
+              "Esempio",
+              "Come trattarla"
+            ],
+            [
+              "Costo già sostenuto",
+              "Studio di fattibilità pagato",
+              "Escludere: sunk"
+            ],
+            [
+              "Fisso futuro eliminabile",
+              "Stipendio di ruolo chiuso",
+              "Includere se realmente evitabile"
+            ],
+            [
+              "Quota comune allocata",
+              "Spese del direttore generale",
+              "Escludere se invariata"
+            ],
+            [
+              "Costo variabile nuovo",
+              "Materia prima per ordine",
+              "Includere se aggiuntivo"
+            ],
+            [
+              "Costo opportunità",
+              "Margine da ordini sacrificati",
+              "Includere"
+            ],
+            [
+              "Penale di ritardo",
+              "18.000 € per consegna posticipata",
+              "Includere se causata dalla scelta"
+            ]
+          ]
+        }
+      ],
+      "concept": "Costi sommersi, eliminabili, incrementali e impegnati"
+    },
+    {
+      "id": "10-7",
+      "title": "10.7 Rilevanza e classificazioni dei costi: perché non coincidono",
+      "topics": [
+        "cdg-c10-t07"
+      ],
+      "blocks": [
+        {
+          "text": "Dal Capitolo 4 sappiamo che “diretto/indiretto” riguarda la tracciabilità rispetto all’oggetto, mentre “fisso/variabile” riguarda il comportamento in rapporto al volume. La distinzione “rilevante/irrilevante” aggiunge una terza dimensione: riguarda il cambiamento fra alternative. È dunque possibile un costo diretto ma irrilevante, un costo fisso ma rilevante, oppure un costo indiretto ma incrementale."
+        },
+        {
+          "text": "Esempio: 4.000 € di ammortamento annuo attribuito a una specifica commessa non sono automaticamente un costo futuro evitabile se la macchina esiste già e il suo valore contabile scende comunque. Se invece la commessa impone un noleggio aggiuntivo di 4.000 €, quel costo è rilevante. In questa disciplina la parola “fisso” non deve essere utilizzata come sinonimo di “immutabile rispetto a ogni decisione”."
+        },
+        {
+          "image": "cdg-p123-1.png",
+          "caption": "Un costo fisso può essere rilevante e uno variabile può non differire fra le opzioni.",
+          "alt": "Un costo fisso può essere rilevante e uno variabile può non differire fra le opzioni."
+        }
+      ],
+      "concept": "Rilevanza e classificazioni dei costi: perché non coincidono"
+    },
+    {
+      "id": "10-8",
+      "title": "10.8 Costo opportunità e beni già disponibili",
+      "topics": [
+        "cdg-c10-t08"
+      ],
+      "blocks": [
+        {
+          "text": "Il costo opportunità rappresenta il beneficio economico della migliore alternativa concreta a cui rinunciamo impiegando una risorsa in un altro modo. Non è necessariamente una spesa monetaria e non è normalmente registrato come costo nel bilancio civilistico. È però essenziale quando una risorsa limitata potrebbe generare ricavi, margini o risparmi in altri impieghi."
+        },
+        {
+          "text": "Esempio del corso: 500 racchette difettose possono essere vendute immediatamente a 45 € ciascuna oppure rilavorate con un costo ulteriore di 40 € per unità e vendute a 100 € ciascuna. La prima opzione genera 500 × 45 = 22.500 €. La seconda 500 × (100 − 40) = 30.000 €. Rilavorare è più conveniente di 7.500 €. La vendita immediata comporta un beneficio differenziale sacrificato di 7.500 € rispetto alla migliore alternativa."
+        },
+        {
+          "text": "Vantaggio rilavorazione = (100 − 40 − 45) × 500 = 7.500 €"
+        },
+        {
+          "text": "Nel valutare beni già in magazzino non bisogna utilizzare automaticamente il loro costo storico: occorre verificare se, non utilizzandoli per l’ordine, possano essere venduti, impiegati in un’altra produzione o sostituiti acquistandone di nuovi. Il valore economico rilevante può essere il valore di realizzo netto, il costo di sostituzione o il margine alternativo perso, secondo il vincolo concreto. Un materiale inutilizzabile altrove e già pagato può avere costo incrementale nullo, salvo costi aggiuntivi di impiego."
+        }
+      ],
+      "concept": "Costo opportunità e beni già disponibili"
+    },
+    {
+      "id": "10-9",
+      "title": "10.9 Decisioni in condizioni di certezza, rischio e incertezza",
+      "topics": [
+        "cdg-c10-t09"
+      ],
+      "blocks": [
+        {
+          "text": "Certezza: la conseguenza economica di ciascuna scelta è nota, o è assunta come determinata nel modello. Il decisore confronta direttamente i risultati. Rischio: gli stati futuri non sono certi, ma esistono probabilità ragionevolmente attribuibili agli stati di natura (per esempio domanda bassa o alta); è possibile usare valori attesi e distribuzioni. Incertezza in senso stretto: mancano probabilità affidabili oppure non sono identificabili compiutamente gli esiti: si possono utilizzare criteri prudenziali, ottimistici o di rimpianto, dichiarandone i limiti."
+        },
+        {
+          "text": "Le slide distinguono queste tre situazioni e introducono matrici dei payoff e simulazione Monte Carlo. Per non confondere due concetti: il rischio operativo del Capitolo 9 misura la sensibilità dei risultati ai volumi e alla struttura dei costi; la decisione in condizioni di rischio riguarda la presenza di probabilità attribuite a esiti futuri incerti."
+        },
+        {
+          "table": [
+            [
+              "Situazione",
+              "Informazione",
+              "Metodo tipico"
+            ],
+            [
+              "Certezza",
+              "Risultato noto o deterministico",
+              "Massimo ΔRO"
+            ],
+            [
+              "Rischio",
+              "Esiti e probabilità disponibili",
+              "Valore atteso, sensibilità, EVPI"
+            ],
+            [
+              "Incertezza",
+              "Probabilità non disponibili o non credibili",
+              "Maximax, maximin, minimax regret"
+            ]
+          ]
+        }
+      ],
+      "concept": "Decisioni in condizioni di certezza, rischio e incertezza"
+    },
+    {
+      "id": "10-10",
+      "title": "10.10 Tipi di probabilità e stati di natura",
+      "topics": [
+        "cdg-c10-t10"
+      ],
+      "blocks": [
+        {
+          "text": "Uno stato di natura è una condizione futura esterna alla scelta del decisore, per esempio domanda alta o bassa, prezzo dei materiali favorevole o sfavorevole. Il decisore può scegliere l’azione ma non comandare lo stato di natura. Una matrice dei payoff associa a ogni coppia azione-stato il risultato economico atteso in quello stato."
+        },
+        {
+          "text": "La probabilità può essere classica, quando i casi elementari sono equiprobabili; frequentista, quando deriva dall’osservazione ripetuta di frequenze; oppure soggettiva, quando viene assegnata con valutazioni esperte e motivabili. Le probabilità dei possibili stati di una distribuzione discreta devono essere non negative e sommare a uno."
+        },
+        {
+          "text": "0 ≤ p(sᵢ) ≤ 1; Σ p(sᵢ) = 1"
+        },
+        {
+          "text": "Una stima soggettiva non è una misura certa: la qualità delle conclusioni dipende da come è stata ricavata. Quando le probabilità sono molto dubbie, il management dovrebbe calcolare scenari e soglie di inversione della scelta."
+        }
+      ],
+      "concept": "Tipi di probabilità e stati di natura"
+    },
+    {
+      "id": "10-11",
+      "title": "10.11 Matrice dei payoff e criteri decisionali senza probabilità",
+      "topics": [
+        "cdg-c10-t11"
+      ],
+      "blocks": [
+        {
+          "text": "La matrice dei payoff è una tabella: le righe sono le alternative del decisore, le colonne sono gli stati futuri e le celle sono i risultati economici. Se i payoff sono redditi, un valore maggiore è preferibile. Se le celle fossero costi, il verso di convenienza dovrebbe essere adattato."
+        },
+        {
+          "text": "Maximax seleziona l’azione con il migliore fra i risultati migliori di ciascuna riga; è un criterio ottimistico. Maximin seleziona l’azione con il migliore fra i risultati peggiori: è prudenziale. Minimax regret costruisce la matrice dei sacrifici: per ogni stato si prende il payoff massimo di colonna e si sottrae il payoff dell’azione; poi si sceglie la riga con rimpianto massimo più basso."
+        },
+        {
+          "heading": "Rimpianto(a,s) = max[Payoff(*,s)] − Payoff(a,s)"
+        },
+        {
+          "text": "Altri criteri, come Laplace (stati trattati con uguale peso per scelta convenzionale) e Hurwicz (media pesata tra migliore e peggiore risultato mediante coefficiente di ottimismo), possono essere utili come approfondimento; non vanno presentati come risultati oggettivi quando non si conoscono le probabilità."
+        }
+      ],
+      "concept": "Matrice dei payoff e criteri decisionali senza probabilità"
+    },
+    {
+      "id": "10-12",
+      "title": "10.12 Valore atteso, valore dell’informazione e sensibilità",
+      "topics": [
+        "cdg-c10-t12"
+      ],
+      "blocks": [
+        {
+          "text": "In condizioni di rischio il valore monetario atteso di una strategia è la media dei risultati nei diversi stati, ponderata per le probabilità. Si seleziona l’azione col valore atteso più alto se l’obiettivo è massimizzare il payoff medio e si adotta un criterio neutrale rispetto al rischio. Questo non equivale ad affermare che il risultato medio si realizzerà certamente."
+        },
+        {
+          "heading": "EV(a) = Σₛ p(s) × Payoff(a,s)"
+        },
+        {
+          "text": "Il valore atteso dell’informazione perfetta (EVPI) misura il massimo beneficio medio teorico dell’imparare lo stato futuro prima di decidere. Si calcola come valore atteso del miglior payoff in ogni stato, meno il valore atteso della scelta migliore senza informazione. EVPI non è una previsione di spesa: è un limite superiore per la disponibilità a pagare informazione perfetta in un modello neutrale al rischio."
+        },
+        {
+          "heading": "EVPI = Σₛ [p(s) × maxₐ Payoff(a,s)] − maxₐ EV(a)"
+        },
+        {
+          "text": "L’analisi di sensibilità modifica una variabile per volta (per esempio probabilità della domanda alta) e verifica quando cambia la decisione preferita. È particolarmente utile quando probabilità e costi sono stime soggette a incertezza."
+        }
+      ],
+      "concept": "Valore atteso, valore dell’informazione e sensibilità"
+    },
+    {
+      "id": "10-13",
+      "title": "10.13 Alberi decisionali e simulazione Monte Carlo",
+      "topics": [
+        "cdg-c10-t13"
+      ],
+      "blocks": [
+        {
+          "text": "L’albero decisionale rappresenta sequenzialmente le scelte controllate dal manager e gli eventi aleatori successivi. I nodi di decisione sono spesso quadrati, quelli di evento cerchi: per ogni ramo si associano probabilità, flussi e payoff. La soluzione si trova “all’indietro”, calcolando i valori attesi degli eventi e scegliendo l’alternativa più conveniente ai nodi decisionali."
+        },
+        {
+          "image": "cdg-p125-1.png",
+          "caption": "Esempio della Pelletteria: due ordini e due stati della domanda; payoff espressi in euro.",
+          "alt": "Esempio della Pelletteria: due ordini e due stati della domanda; payoff espressi in euro."
+        },
+        {
+          "text": "La simulazione Monte Carlo estende l’analisi a molte variabili incerte e molte combinazioni possibili: si specificano distribuzioni di input, si estraggono scenari coerenti e si ricostruisce una distribuzione dei risultati. Le slide citano a titolo esemplificativo Oracle Crystal Ball. Si tratta di un metodo di esplorazione quantitativa del rischio, non di uno strumento che trasformi automaticamente ogni incertezza in probabilità oggettiva."
+        },
+        {
+          "text": "Approfondimento integrativo: Lettura rigorosa del valore atteso, del valore dell’informazione, degli alberi decisionali e dei limiti dei modelli di simulazione; la presenza di Monte Carlo nelle slide ne giustifica il richiamo, senza richiedere programmazione informatica durante lo scritto salvo diverse indicazioni della docente."
+        }
+      ],
+      "concept": "Alberi decisionali e simulazione Monte Carlo"
+    },
+    {
+      "id": "10-14",
+      "title": "10.14 Aggiungere o eliminare un segmento",
+      "topics": [
+        "cdg-c10-t14"
+      ],
+      "blocks": [
+        {
+          "text": "Un segmento è una parte dell’attività aziendale di cui possiamo identificare ricavi e costi: una linea di prodotto, un mercato geografico, un gruppo di clienti o un reparto. Le decisioni di aggiungere o cessare un segmento non possono essere prese osservando solo il reddito attribuito mediante il full costing: i costi fissi comuni possono essere allocati al segmento pur restando invariati quando esso viene chiuso."
+        },
+        {
+          "text": "Per aggiungere un segmento: il reddito aziendale migliora se il margine di contribuzione generato dai nuovi ricavi, al netto dei costi variabili, supera i nuovi costi fissi specifici evitabili, l’eventuale margine perso sulle altre linee e gli altri oneri incrementali. Per eliminare: il reddito migliora soltanto se il risparmio di costi eliminabili e i benefici del riutilizzo della capacità superano ricavi e margini che cessano."
+        },
+        {
+          "text": "MdC di segmento = ricavi del segmento − costi variabili del segmento − CF specifici evitabili"
+        },
+        {
+          "text": "La formula individua il margine rilevante per la decisione nell’ipotesi in cui i costi fissi indicati siano effettivamente evitabili. Un costo fisso specifico può essere attribuibile alla linea ma non evitabile nel breve periodo; occorre quindi verificarne le condizioni. È inoltre necessario considerare vendite incrociate, fidelizzazione del cliente e possibilità di occupare diversamente gli impianti."
+        }
+      ],
+      "concept": "Aggiungere o eliminare un segmento"
+    },
+    {
+      "id": "10-15",
+      "title": "10.15 Caso del corso: Industrial-Textil",
+      "topics": [
+        "cdg-c10-t15"
+      ],
+      "blocks": [
+        {
+          "text": "Nel caso Industrial-Textil la linea di tessuto medicale M registra ricavi per 300.000 €, costi variabili per 192.000 € e costi attribuiti complessivi per 144.000 € fra personale, ammortamenti e spese generali. Il conto economico tradizionale mostra quindi una perdita di 36.000 €. Il management pensa di chiuderla, ma dei 144.000 € di costi attribuiti solamente 40.000 € sono realmente eliminabili."
+        },
+        {
+          "table": [
+            [
+              "Voce",
+              "Importo",
+              "Interpretazione"
+            ],
+            [
+              "Ricavi",
+              "300.000 €",
+              "Perduti se si chiude"
+            ],
+            [
+              "Costi variabili",
+              "192.000 €",
+              "Evitati con la chiusura"
+            ],
+            [
+              "MdC prima dei fissi",
+              "108.000 €",
+              "Contributo alle spese di struttura"
+            ],
+            [
+              "Fissi realmente eliminabili",
+              "40.000 €",
+              "Risparmio possibile"
+            ],
+            [
+              "Margine di segmento",
+              "68.000 €",
+              "Contributo che si perde chiudendo"
+            ],
+            [
+              "Altri costi allocati non evitabili",
+              "104.000 €",
+              "Restano anche dopo la chiusura"
+            ]
+          ]
+        },
+        {
+          "text": "Effetto della chiusura sul risultato aziendale = −300.000 + 192.000 + 40.000 = −68.000 €"
+        },
+        {
+          "text": "Perciò non conviene eliminare M, se non esistono impieghi alternativi della capacità, effetti commerciali ulteriori o nuovi costi non considerati. Il risultato cambia quando la capacità liberata genera un margine alternativo maggiore di 68.000 €: in tal caso occorre confrontare quel beneficio con il margine cessante. La perdita contabile attribuita non deve essere confusa con la perdita economica della decisione."
+        },
+        {
+          "image": "cdg-p126-1.png",
+          "caption": "Il margine di segmento è positivo nonostante la perdita contabile a full costing.",
+          "alt": "Il margine di segmento è positivo nonostante la perdita contabile a full costing."
+        }
+      ],
+      "concept": "Caso del corso: Industrial-Textil"
+    },
+    {
+      "id": "10-16",
+      "title": "10.16 Caso Arcari 8.1: Mascara e rossetti",
+      "topics": [
+        "cdg-c10-t16"
+      ],
+      "blocks": [
+        {
+          "text": "La soluzione editoriale presenta due aree (Mascara e Rossetti). Per Rossetti sono indicati ricavi per 1.350.000 €, provvigioni per 81.000 €, costi variabili di prodotto per 1.000.000 € e costi fissi specifici per 190.000 €. È possibile determinare il contributo della linea al risultato delle due aree, ma la sua eliminabilità dipende dalla natura effettiva dei costi specifici."
+        },
+        {
+          "text": "MdC Rossetti = 1.350.000 − 81.000 − 1.000.000 = 269.000 €"
+        },
+        {
+          "text": "Margine dopo CF specifici = 269.000 − 190.000 = 79.000 €"
+        },
+        {
+          "text": "Assumendo che tutte le componenti dei 190.000 € siano evitabili e che non siano coinvolte altre linee, la cessazione dei rossetti farebbe perdere 79.000 € di margine; i 930.000 € di costi fissi comuni aziendali non si annullerebbero per il semplice fatto di chiudere la linea. Se gli ammortamenti da 80.000 € non possono essere evitati nel periodo, il calcolo decisionale deve essere aggiornato: il margine effettivamente sacrificato sarebbe più elevato, non più basso. Questo caso mostra perché si distingue costo specifico da costo eliminabile."
+        },
+        {
+          "text": "Riferimento al materiale fornito: Rielaborazione e controllo dei dati presenti nella soluzione editoriale Arcari 4a ed., esercizio 8.1. Il testo integrale della traccia non è ricostruito laddove non compare nel fascicolo delle soluzioni."
+        }
+      ],
+      "concept": "Caso Arcari 8.1: Mascara e rossetti"
+    },
+    {
+      "id": "10-17",
+      "title": "10.17 Ordini speciali: capacità e contributo incrementale",
+      "topics": [
+        "cdg-c10-t17"
+      ],
+      "blocks": [
+        {
+          "text": "Un ordine speciale è una vendita aggiuntiva a condizioni particolari (prezzo, personalizzazione, termini di consegna o quantità), distinta dall’attività ordinaria. La prima domanda è tecnica: esistono ore, materiali, personale e spazio sufficienti? La seconda è economica: i ricavi addizionali coprono i costi incrementali e l’eventuale beneficio sacrificato? La valutazione non va costruita sul costo pieno unitario se la quota di costi fissi non cambia."
+        },
+        {
+          "text": "Ore necessarie = quantità dell’ordine × ore per unità"
+        },
+        {
+          "text": "Ore residue = ore disponibili − ore già impegnate"
+        },
+        {
+          "text": "ΔRO = Q × (prezzo speciale − costo variabile pertinente) − CF incrementali − costi opportunità − altre penali"
+        },
+        {
+          "text": "La formula resta valida solo se le componenti del costo variabile sono effettivamente sostenute per l’ordine, se non mutano i costi variabili della produzione ordinaria e se le penali e gli effetti su altre vendite sono ben identificati. Una commissione non dovuta sull’ordine speciale non deve essere sottratta. Se la capacità è satura, bisogna aggiungere il margine di contribuzione perso sugli ordini che si rinunciano a produrre."
+        },
+        {
+          "image": "cdg-p127-1.png",
+          "caption": "Verifica della capacità e calcolo del risultato incrementale.",
+          "alt": "Verifica della capacità e calcolo del risultato incrementale."
+        }
+      ],
+      "concept": "Ordini speciali: capacità e contributo incrementale"
+    },
+    {
+      "id": "10-18",
+      "title": "10.18 Caso Arcari 8.2: Delta S.p.A.",
+      "topics": [
+        "cdg-c10-t18"
+      ],
+      "blocks": [
+        {
+          "text": "Un reparto dispone di 1.500 ore macchina al mese e ne utilizza il 70%; un ordine aggiuntivo riguarda 2.000 litri e richiede 0,2 ore macchina per litro. Il prezzo speciale è 20 €/litro; i costi variabili pertinenti per litro sono 12 € di materiali, 1 € di provvigioni, 3,50 € di manodopera e 3 € di costi indiretti variabili. La richiesta comporta anche 3.000 € di costi fissi incrementali."
+        },
+        {
+          "text": "Capacità libera = 1.500 × 30% = 450 ore; richiesta = 2.000 × 0,2 = 400 ore"
+        },
+        {
+          "text": "MdC unitario = 20 − 12 − 1 − 3,50 − 3 = 0,50 €/litro"
+        },
+        {
+          "text": "ΔRO = 2.000 × 0,50 − 3.000 = −2.000 € → rifiutare nell’ipotesi data"
+        },
+        {
+          "text": "Il volume di indifferenza puramente economico sarebbe 3.000/0,50 = 6.000 litri. Tuttavia con la capacità residua di 450 ore si possono produrre al massimo 450/0,2 = 2.250 litri. La soglia di 6.000 litri non è tecnicamente raggiungibile senza modificare la capacità o la produzione ordinaria. Questo secondo controllo evita un errore frequente: scambiare la soluzione matematica di un’equazione per una soluzione praticabile."
+        },
+        {
+          "table": [
+            [
+              "Grandezza",
+              "Calcolo",
+              "Risultato"
+            ],
+            [
+              "Ore libere",
+              "1.500 × 0,30",
+              "450 h"
+            ],
+            [
+              "Ore richieste",
+              "2.000 × 0,20",
+              "400 h"
+            ],
+            [
+              "MdC complessivo",
+              "2.000 × 0,50",
+              "1.000 €"
+            ],
+            [
+              "Costi fissi nuovi",
+              "",
+              "3.000 €"
+            ],
+            [
+              "Differenza economica",
+              "1.000 − 3.000",
+              "−2.000 €"
+            ],
+            [
+              "Soglia economica",
+              "3.000 / 0,50",
+              "6.000 litri"
+            ],
+            [
+              "Massimo volume con ore libere",
+              "450 / 0,20",
+              "2.250 litri"
+            ]
+          ]
+        }
+      ],
+      "concept": "Caso Arcari 8.2: Delta S.p.A."
+    },
+    {
+      "id": "10-19",
+      "title": "10.19 Caso Arcari 8.3: Drinking",
+      "topics": [
+        "cdg-c10-t19"
+      ],
+      "blocks": [
+        {
+          "text": "Nel caso Drinking, la capacità trimestrale disponibile per ordini speciali è 4.000 ore mensili × 3 mesi × 30% = 3.600 ore. L’ordine richiede 12.000 unità con consumo di 0,20 ore macchina ciascuna: sono necessarie 2.400 ore, quindi la fattibilità è confermata. Il prezzo è 2,50 €, mentre il costo variabile unitario è 0,80 € (materiali) + 0,40 € (MOD) + 0,80 € (CIV) = 2,00 €."
+        },
+        {
+          "formula": "ΔRO = 12.000 × (2,50 − 2,00) − 3.500 = +2.500 €"
+        },
+        {
+          "text": "Conviene accettare, alle condizioni del problema. Rimangono 1.200 ore non assorbite dall’ordine. Il coefficiente dei costi indiretti variabili si ottiene separando la quota fissa dalla tariffa complessiva: se la tariffa totale è 6 €/ora e la componente fissa è 96.000/48.000 = 2 €/ora, quella variabile è 4 €/ora; moltiplicando per 0,20 ore/unità si ottengono gli 0,80 € pertinenti."
+        }
+      ],
+      "concept": "Caso Arcari 8.3: Drinking"
+    },
+    {
+      "id": "10-20",
+      "title": "10.20 Ordine con penale: caso dei camici della simulazione",
+      "topics": [
+        "cdg-c10-t20"
+      ],
+      "blocks": [
+        {
+          "text": "Una delle simulazioni d’esame fornite descrive un produttore di camici ospedalieri: il prezzo ordinario è 32,50 €, il costo pieno è 26,20 €, il costo diretto di produzione è 24,50 € e il costo variabile pertinente è 20,50 €. Un grande ospedale propone di comprare 5.500 camici a 24 € ciascuno. Per evadere l’ordine occorre ritardare un’altra consegna e pagare una penale di 18.000 €."
+        },
+        {
+          "text": "Ricavo aggiuntivo = 5.500 × 24 = 132.000 €"
+        },
+        {
+          "text": "Costo variabile aggiuntivo = 5.500 × 20,50 = 112.750 €"
+        },
+        {
+          "text": "ΔRO = 132.000 − 112.750 − 18.000 = +1.250 €"
+        },
+        {
+          "text": "In base ai dati economici forniti conviene accettare, con vantaggio 1.250 €, purché la penale rappresenti l’intero effetto economico della consegna ritardata e non vi siano ulteriori danni commerciali. È errato respingere l’ordine perché 24 € è inferiore al costo pieno di 26,20 €: la quota non eliminabile del costo pieno non cresce automaticamente con la commessa. È altrettanto errato ignorare la penale."
+        },
+        {
+          "text": "Verifica gestionale: Il vantaggio è modesto e potrebbe essere annullato da costi aggiuntivi non indicati, come trasporti straordinari, resi o perdita di fiducia del cliente ritardato. Occorre esplicitare queste ipotesi nella risposta teorica."
+        }
+      ],
+      "concept": "Ordine con penale: caso dei camici della simulazione"
+    },
+    {
+      "id": "10-21",
+      "title": "10.21 Capacità satura, commesse concorrenti e costo opportunità",
+      "topics": [
+        "cdg-c10-t21"
+      ],
+      "blocks": [
+        {
+          "text": "In presenza di capacità scarsa, l’ordine speciale compete con le vendite normali. Se per evadere un nuovo ordine bisogna rinunciare a 300 unità normali che generano un MdC di 8 € ciascuna, il costo opportunità è 2.400 €. L’ordine si accetta soltanto se il suo margine aggiuntivo, al netto di eventuali costi nuovi, supera tale sacrificio. Se la produzione normale è recuperabile con ore straordinarie, si deve confrontare il margine perso con il costo di recupero: il sacrificio economico è l’alternativa effettivamente più conveniente e praticabile."
+        },
+        {
+          "text": "Costo opportunità di capacità = unità normali rinunciate × MdC unitario normale"
+        },
+        {
+          "text": "La soluzione Arcari 8.4 riguarda ordini Lucix e Sole con capacità residua di 6.000 ore macchina trimestrali. Lucix domanda 25.000 unità da 0,25 ore ciascuna: servirebbero 6.250 ore, quindi è infeasible integralmente senza cambiamenti; Sole domanda 10.000 unità da 0,5 ore: servono 5.000 ore ed è tecnicamente fattibile. Il fascicolo riunisce nello stesso esercizio sia decisioni su ordini speciali sia, successivamente, un confronto make or buy. È quindi necessario affrontare entrambi i problemi, tenendo distinti i dati e le scelte."
+        },
+        {
+          "text": "Approfondimento quantitativo Lucix. Il prezzo speciale è 6 €, con costi incrementali di 3,25 € per materiali, 2 € per manodopera e 0,40 € per costi indiretti variabili: MdC = 0,35 €/unità. Per 25.000 unità il margine sarebbe 8.750 €. La capacità libera consente solo 24.000 pezzi; per evadere l’intero ordine si rinuncia a 1.000 pezzi standard che avrebbero generato 0,60 € di MdC ciascuno. Il costo opportunità è quindi 600 € e il vantaggio dell’ordine integrale è 8.150 €. Se il cliente accetta un ordine parziale, occorre confrontare anche 24.000 × 0,35 = 8.400 € e gli effetti commerciali delle due alternative."
+        },
+        {
+          "text": "Ordine Sole. Il prezzo è 7,50 €; materiali 4,25 €, MOD 2 €, CIV 0,80 €: MdC = 0,45 €/unità. Per 10.000 pezzi il margine totale è 4.500 €, ma i nuovi costi fissi specifici sono 5.000 €, quindi ΔRO = −500 €. L’ordine è tecnicamente fattibile, ma economicamente non conveniente nella configurazione data."
+        },
+        {
+          "text": "Confronto make/buy nello stesso fascicolo. La scheda indica 1.000 pezzi; il costo interno pertinente totale è 1.822.500 € e il prezzo di acquisto esterno è 1.920.000 €. Conviene MAKE con risparmio 97.500 €, nell’ipotesi che i costi interni considerati siano effettivamente rilevanti. Il prezzo unitario di indifferenza del BUY è 1.822,50 €. In questo caso una quota del 25% dei costi indiretti fissi (690 €/pezzo) è trattata dalla soluzione come evitabile: non va inclusa automaticamente la restante quota del 75%."
+        }
+      ],
+      "concept": "Capacità satura, commesse concorrenti e costo opportunità"
+    },
+    {
+      "id": "10-22",
+      "title": "10.22 Make or buy: struttura rigorosa del confronto",
+      "topics": [
+        "cdg-c10-t22"
+      ],
+      "blocks": [
+        {
+          "text": "La scelta make or buy confronta la produzione interna di un bene o servizio con l’acquisto esterno. Il costo pieno contabile della produzione interna può comprendere ammortamenti e riparti di struttura che resterebbero anche acquistando: per questo si usano i costi futuri evitabili. Al costo di acquisto esterno bisogna aggiungere trasporto, controllo qualità, avvio fornitura, penali, costi logistici e costi opportunità eventualmente rilevanti."
+        },
+        {
+          "text": "Costo MAKE rilevante = costi variabili interni + CF interni evitabili + costo opportunità di capacità"
+        },
+        {
+          "text": "Costo BUY rilevante = prezzo fornitore + costi accessori incrementali + CF residui specifici del BUY"
+        },
+        {
+          "text": "Se entrambi i metodi consentono lo stesso risultato quantitativo e qualitativo, si privilegia l’alternativa a costo rilevante minore. Se il BUY libera capacità che può essere usata per altri prodotti, il margine ulteriore guadagnabile è un beneficio del BUY (oppure un costo opportunità del MAKE): va considerato una sola volta. Anche la qualità, la dipendenza dal fornitore e le competenze da conservare sono rilevanti."
+        },
+        {
+          "text": "Con quantità Q, costo variabile unitario interno c, costo fisso specifico evitabile F e prezzo di acquisto comprensivo di oneri unitari b, la soglia in assenza di altri benefici è Q* = F / (b − c), quando b > c. Sotto Q* il BUY può risultare conveniente; sopra Q* prevale il MAKE, se F è effettivamente necessario al MAKE, se le capacità sono disponibili e se i dati restano validi nel range."
+        },
+        {
+          "text": "MAKE = F + cQ; BUY = bQ; Q* = F / (b − c)"
+        },
+        {
+          "image": "cdg-p129-1.png",
+          "caption": "Soglia di convenienza make/buy: grafico illustrativo con F = 5.000 €, c = 19 €, b = 22 €.",
+          "alt": "Soglia di convenienza make/buy: grafico illustrativo con F = 5.000 €, c = 19 €, b = 22 €."
+        }
+      ],
+      "concept": "Make or buy: struttura rigorosa del confronto"
+    },
+    {
+      "id": "10-23",
+      "title": "10.23 Caso Arcari 8.5: Omega e soglia make/buy",
+      "topics": [
+        "cdg-c10-t23"
+      ],
+      "blocks": [
+        {
+          "text": "Nella soluzione editoriale Omega compaiono 10.000 componenti e un costo rilevante di produzione interna pari a 49 € per unità, risultante da quattro componenti monetarie 22 + 8 + 13 + 6. Il prezzo del fornitore è 53 € per unità. Non si devono aggiungere quote fisse non evitabili alla produzione interna né imputare a un’unica alternativa costi identici nelle due."
+        },
+        {
+          "text": "MAKE = 10.000 × 49 = 490.000 €; BUY = 10.000 × 53 = 530.000 €"
+        },
+        {
+          "text": "Risparmio scegliendo MAKE = 530.000 − 490.000 = 40.000 €"
+        },
+        {
+          "text": "Quindi l’alternativa economicamente più conveniente è MAKE, nell’ipotesi che la capacità utilizzata non abbia un impiego alternativo con margine superiore a 40.000 €, e che qualità e rischi delle due opzioni siano equivalenti. Se la produzione interna impedisce un’altra commessa da cui deriverebbe un margine aggiuntivo di 50.000 €, allora il MAKE avrebbe un costo opportunità di 50.000 € e il BUY diverrebbe preferibile di 10.000 €."
+        }
+      ],
+      "concept": "Caso Arcari 8.5: Omega e soglia make/buy"
+    },
+    {
+      "id": "10-24",
+      "title": "10.24 Outsourcing e fattori qualitativi",
+      "topics": [
+        "cdg-c10-t24"
+      ],
+      "blocks": [
+        {
+          "text": "Le convenienze economiche calcolate con il metodo differenziale vanno integrate con una valutazione qualitativa. Per un fornitore esterno occorre considerare continuità degli approvvigionamenti, tempi di consegna, capacità di variazione dei volumi, costanza della qualità, riservatezza dei dati, dipendenza da tecnologie proprietarie, rischi contrattuali e sicurezza degli impianti o dei sistemi informativi."
+        },
+        {
+          "text": "Nel settore software, il MAKE può significare sviluppare internamente un componente e il BUY acquistare una licenza o un servizio. I costi rilevanti non sono soltanto lo stipendio degli sviluppatori (che potrebbe non essere eliminabile nel trimestre) e il canone: devono includere integrazione, collaudo, aggiornamenti, supporto, uscita dal fornitore, formazione e costo opportunità del tempo sottratto ad altri progetti. Questo esempio è un approfondimento integrativo coerente con i principi generali del corso."
+        }
+      ],
+      "concept": "Outsourcing e fattori qualitativi"
+    },
+    {
+      "id": "10-25",
+      "title": "10.25 Lavorazioni successive: scelta al punto di separazione",
+      "topics": [
+        "cdg-c10-t25"
+      ],
+      "blocks": [
+        {
+          "text": "Nei processi a prodotti congiunti, lo split-off è il momento in cui i prodotti risultano riconoscibili e possono eventualmente essere venduti. La decisione se vendere subito oppure effettuare ulteriori lavorazioni si prende confrontando il ricavo netto aggiuntivo della vendita finale con i costi futuri aggiuntivi di trasformazione, commercializzazione e eventuale utilizzo di capacità scarsa."
+        },
+        {
+          "text": "ΔRO lavorazione ulteriore = (ricavo dopo − ricavo allo split-off) − costi successivi incrementali"
+        },
+        {
+          "text": "I costi congiunti sostenuti prima dello split-off sono già comuni alle alternative e non cambiano per la sola decisione di lavorare ulteriormente il prodotto: non si includono nel confronto, anche se il sistema di full costing li ha ripartiti per valorizzare le rimanenze. La rilevanza si concentra sui flussi dopo il punto di separazione."
+        },
+        {
+          "image": "cdg-p130-1.png",
+          "caption": "I costi congiunti pregressi non determinano la scelta sulla lavorazione successiva.",
+          "alt": "I costi congiunti pregressi non determinano la scelta sulla lavorazione successiva."
+        }
+      ],
+      "concept": "Lavorazioni successive: scelta al punto di separazione"
+    },
+    {
+      "id": "10-26",
+      "title": "10.26 Casi Arcari 8.6 e 8.7: Bianchi e Rossi",
+      "topics": [
+        "cdg-c10-t26"
+      ],
+      "blocks": [
+        {
+          "text": "Nel caso Bianchi i tre prodotti A, B e C mostrano incrementi di ricavo rispettivamente pari a 140.000 €, 100.000 € e 20.000 €, mentre i costi successivi sono 80.000 €, 30.000 € e 12.000 €. L’utile incrementale corrispondente è 60.000 €, 70.000 € e 8.000 €: nel modello dato le lavorazioni successive sono convenienti per tutti e tre i prodotti."
+        },
+        {
+          "table": [
+            [
+              "Prodotto",
+              "Ricavi prima",
+              "Ricavi dopo",
+              "Costi successivi",
+              "Vantaggio"
+            ],
+            [
+              "Bianchi A",
+              "400.000",
+              "540.000",
+              "80.000",
+              "+60.000"
+            ],
+            [
+              "Bianchi B",
+              "200.000",
+              "300.000",
+              "30.000",
+              "+70.000"
+            ],
+            [
+              "Bianchi C",
+              "50.000",
+              "70.000",
+              "12.000",
+              "+8.000"
+            ]
+          ]
+        },
+        {
+          "text": "Nel caso Rossi i ricavi incrementali di X, Y e Z sono 13.000 €, 20.000 € e 32.000 €, con costi successivi 18.000 €, 17.000 € e 20.000 €. Per X il calcolo corretto è 13.000 − 18.000 = −5.000 € (il fascicolo editoriale riporta −6.000 €, refuso aritmetico). Per Y e Z i vantaggi sono +3.000 € e +12.000 €. Conviene lavorare ulteriormente Y e Z, non X."
+        },
+        {
+          "text": "Controllo della fonte: La differenza −5.000 € per X è ottenuta esclusivamente dai ricavi e dai costi riportati nella stessa soluzione ufficiale dell’esercizio 8.7; il testo segnala il refuso per evitare contraddizioni nel quaderno di studio."
+        }
+      ],
+      "concept": "Casi Arcari 8.6 e 8.7: Bianchi e Rossi"
+    },
+    {
+      "id": "10-27",
+      "title": "10.27 Impiego di una risorsa scarsa",
+      "topics": [
+        "cdg-c10-t27"
+      ],
+      "blocks": [
+        {
+          "text": "Una risorsa è scarsa quando il fabbisogno per realizzare l’intero programma desiderato supera la capacità disponibile. Possibili risorse limitanti sono ore macchina, ore di lavoro specializzato, quantità di materiale, spazio di magazzino o tempo del team. Con un solo vincolo di capacità e con quantità frazionabili nei limiti richiesti, si privilegiano inizialmente i prodotti che generano il maggiore margine di contribuzione per unità di risorsa scarsa, non il maggiore margine per unità di prodotto."
+        },
+        {
+          "text": "Indice di priorità i = MdC unitario i / consumo di risorsa scarsa per unità i"
+        },
+        {
+          "text": "Procedura: (1) verificare se la risorsa sia davvero scarsa, calcolando fabbisogno e capacità; (2) calcolare per ogni prodotto il MdC unitario; (3) rapportarlo all’assorbimento della risorsa limitante; (4) ordinare le linee per valore decrescente; (5) soddisfare i vincoli di domanda, fabbisogni minimi e capacità; (6) calcolare quantità residue e reddito finale. Se vi sono più colli di bottiglia, l’ordinamento semplice può non massimizzare il risultato."
+        },
+        {
+          "image": "cdg-p131-1.png",
+          "caption": "Il prodotto più redditizio per pezzo non è necessariamente quello prioritario per ora scarsa.",
+          "alt": "Il prodotto più redditizio per pezzo non è necessariamente quello prioritario per ora scarsa."
+        }
+      ],
+      "concept": "Impiego di una risorsa scarsa"
+    },
+    {
+      "id": "10-28",
+      "title": "10.28 Caso Arcari 8.8: Beta e mix produttivo",
+      "topics": [
+        "cdg-c10-t28"
+      ],
+      "blocks": [
+        {
+          "text": "La società Beta produce tre linee di sedie: Super, Comfort ed Elegant. Nel reparto Stampaggio sono disponibili 1.500 ore, mentre il programma desiderato consumerebbe 2.000 ore: il reparto è il collo di bottiglia. Nel reparto Assemblaggio la capacità è 9.000 ore e il fabbisogno totale è 8.500 ore, quindi l’assemblaggio non limita il piano iniziale."
+        },
+        {
+          "table": [
+            [
+              "Linea",
+              "MdC unitario (€)",
+              "Ore stampaggio/unità",
+              "MdC per ora (€)",
+              "Domanda massima"
+            ],
+            [
+              "Elegant",
+              "1.067,50",
+              "0,20",
+              "5.337,50",
+              "1.000"
+            ],
+            [
+              "Super",
+              "1.312,50",
+              "0,30",
+              "4.375,00",
+              "2.000"
+            ],
+            [
+              "Comfort",
+              "790,00",
+              "0,40",
+              "1.975,00",
+              "3.000"
+            ]
+          ]
+        },
+        {
+          "text": "L’ordine economico di priorità è Elegant → Super → Comfort. Si assegnano 200 ore a 1.000 Elegant; restano 1.300 ore. Si assegnano 600 ore a 2.000 Super; restano 700 ore. Si producono quindi 700/0,40 = 1.750 Comfort. Il programma rispetta il limite di stampaggio: 200 + 600 + 700 = 1.500 ore. Nel programma originario 3.000 Comfort ne avrebbero richieste 1.200, causando il superamento del vincolo."
+        },
+        {
+          "formula": "MdC complessivo = 1.000×1.067,50 + 2.000×1.312,50 + 1.750×790 = 5.075.000 €"
+        },
+        {
+          "text": "Il valore complessivo di MdC è un risultato prima dei costi fissi invarianti. L’esercizio insegna a ottimizzare il contributo della risorsa limitante; una sola graduatoria per margine unitario avrebbe collocato Super sopra Elegant e generato un programma inferiore in queste condizioni."
+        }
+      ],
+      "concept": "Caso Arcari 8.8: Beta e mix produttivo"
+    },
+    {
+      "id": "10-29",
+      "title": "10.29 Più vincoli: introduzione alla programmazione lineare",
+      "topics": [
+        "cdg-c10-t29"
+      ],
+      "blocks": [
+        {
+          "text": "Approfondimento integrativo. Con due o più risorse contemporaneamente limitanti, la regola del contributo per unità di una sola risorsa non è generalmente sufficiente. Il problema diventa: massimizzare il margine totale rispettando tutte le capacità e i limiti di vendita. Per due prodotti A e B si può formulare un semplice modello di programmazione lineare."
+        },
+        {
+          "text": "Massimizzare 30A + 40B"
+        },
+        {
+          "text": "Vincoli: 2A + B ≤ 100; A + 3B ≤ 120; A,B ≥ 0 La soluzione all’intersezione dei due vincoli attivi è A = 36, B = 28 (72 + 28 = 100; 36 + 84 = 120). Il contributo è 30×36 + 40×28 = 2.200 €. I due vertici con un solo prodotto renderebbero 1.500 € (A = 50) e 1.600 € (B = 40). Pertanto la combinazione mista è preferibile. È un cenno metodologico per comprendere i limiti del criterio a un solo fattore scarso, senza sostituire la trattazione richiesta dal corso con tecniche di ottimizzazione avanzate."
+        }
+      ],
+      "concept": "Più vincoli: introduzione alla programmazione lineare"
+    },
+    {
+      "id": "10-30",
+      "title": "10.30 Caso Arcari 8.9: Golosa e decisioni sotto incertezza",
+      "topics": [
+        "cdg-c10-t30"
+      ],
+      "blocks": [
+        {
+          "text": "Il caso Golosa presenta due opzioni, commercializzare merendine acquistate e produrre internamente e commercializzare, in tre stati di domanda: 200.000, 300.000 e 400.000 confezioni. I risultati economici riportati dalla soluzione editoriale (in euro) possono essere sintetizzati nella matrice seguente. Per l’azione di produzione interna, il valore centrale è pari a zero, come risulta dal calcolo dei ricavi meno i costi elencati."
+        },
+        {
+          "table": [
+            [
+              "Decisione",
+              "200.000 confezioni",
+              "300.000 confezioni",
+              "400.000 confezioni"
+            ],
+            [
+              "Comprare e commercializzare",
+              "166.000",
+              "444.000",
+              "822.000"
+            ],
+            [
+              "Produrre e commercializzare",
+              "−160.000",
+              "0",
+              "200.000"
+            ]
+          ]
+        },
+        {
+          "text": "In ogni stato la prima alternativa genera un risultato migliore: si dice che domina strettamente la seconda. I criteri maximax e maximin selezionano quindi la commercializzazione; anche il minimax regret porta alla stessa scelta, perché la prima riga coincide con il massimo di colonna in ogni stato. Non occorrono probabilità per stabilire questa dominanza. La soluzione è vincolata alle ipotesi del caso, incluse le quantità e i prezzi di acquisto indicati; non possiamo generalizzarla a qualunque make/buy."
+        }
+      ],
+      "concept": "Caso Arcari 8.9: Golosa e decisioni sotto incertezza"
+    },
+    {
+      "id": "10-31",
+      "title": "10.31 Caso Arcari 8.10: Pelletteria e quattro criteri di scelta",
+      "topics": [
+        "cdg-c10-t31"
+      ],
+      "blocks": [
+        {
+          "text": "La Pelletteria deve decidere se ordinare 1.000 o 2.000 unità. La domanda può essere 1.000 oppure 2.000 unità. Il prezzo di vendita è 60 €; il costo di acquisto è 30 € con ordine da 1.000 e 28 € con ordine da 2.000. Se l’ordine iniziale è 1.000 ma la domanda è 2.000, il fabbisogno residuo viene soddisfatto dal grossista con costo di 55 €; se si ordinano 2.000 ma se ne vendono soltanto 1.000, le rimanenze sono svendute a 20 €."
+        },
+        {
+          "image": "cdg-p132-1.png",
+          "caption": "Matrice dei payoff verificata per le quattro combinazioni azione-domanda.",
+          "alt": "Matrice dei payoff verificata per le quattro combinazioni azione-domanda."
+        },
+        {
+          "table": [
+            [
+              "Azione",
+              "Domanda 1.000",
+              "Domanda 2.000",
+              "Minimo",
+              "Massimo"
+            ],
+            [
+              "Ordinare 1.000",
+              "30.000 €",
+              "35.000 €",
+              "30.000 €",
+              "35.000 €"
+            ],
+            [
+              "Ordinare 2.000",
+              "24.000 €",
+              "64.000 €",
+              "24.000 €",
+              "64.000 €"
+            ]
+          ]
+        },
+        {
+          "text": "Il criterio maximin privilegia ordinare 1.000, perché il minimo garantito è 30.000 invece di 24.000 €. Il criterio maximax privilegia ordinare 2.000 perché il risultato migliore possibile è 64.000 €. La matrice dei rimpianti è calcolata sottraendo ogni payoff dal migliore della propria colonna:"
+        },
+        {
+          "table": [
+            [
+              "Azione",
+              "Rimpianto se domanda 1.000",
+              "Rimpianto se domanda 2.000",
+              "Rimpianto massimo"
+            ],
+            [
+              "Ordinare 1.000",
+              "0",
+              "64.000 − 35.000 = 29.000",
+              "29.000"
+            ],
+            [
+              "Ordinare 2.000",
+              "30.000 − 24.000 = 6.000",
+              "0",
+              "6.000"
+            ]
+          ]
+        },
+        {
+          "text": "Il minimax regret sceglie quindi ordinare 2.000, perché il suo massimo sacrificio è 6.000 € contro 29.000 €. Attenzione: la soluzione editoriale scrive 64.000 − 35.000 = 19.000 €; il risultato aritmetico corretto è 29.000 €. La decisione non cambia, ma il calcolo del rimpianto va corretto."
+        },
+        {
+          "text": "Se le probabilità sono 80% di domanda 1.000 e 20% di domanda 2.000, i valori attesi sono:"
+        },
+        {
+          "text": "EV(ordine 1.000) = 0,8×30.000 + 0,2×35.000 = 31.000 €"
+        },
+        {
+          "text": "EV(ordine 2.000) = 0,8×24.000 + 0,2×64.000 = 32.000 €"
+        },
+        {
+          "text": "Sotto l’ipotesi di neutralità al rischio, il massimo valore atteso si ottiene ordinando 2.000. Indicando con p la probabilità di domanda elevata, la soglia si trova uguagliando 30.000 + 5.000p e 24.000 + 40.000p: p* = 6/35 = 17,14%. Sopra questa probabilità il secondo ordine ha valore atteso maggiore."
+        },
+        {
+          "text": "EVPI = 0,8×30.000 + 0,2×64.000 − 32.000 = 4.800 €"
+        },
+        {
+          "text": "Il valore teorico dell’informazione perfetta è quindi 4.800 €. Non sarebbe razionale pagare più di questa cifra per un’informazione anche perfetta se l’obiettivo fosse soltanto massimizzare il valore monetario atteso nel modello specificato."
+        }
+      ],
+      "concept": "Caso Arcari 8.10: Pelletteria e quattro criteri di scelta"
+    },
+    {
+      "id": "10-32",
+      "title": "10.32 Caso integrato: commessa software con capacità limitata",
+      "topics": [
+        "cdg-c10-t32"
+      ],
+      "blocks": [
+        {
+          "text": "Approfondimento originale, coerente con il corso. Una società di servizi digitali dispone di 1.200 ore di specialisti nel mese, delle quali 1.050 sono già assegnate a clienti ordinari. Un nuovo cliente propone 200 ore a 130 €/ora. Il costo variabile direttamente connesso alle ore è 45 €/ora; per il nuovo contratto è previsto un setup unico da 3.000 €. Le ore non disponibili devono essere sottratte a una commessa ordinaria che genera 110 € di margine di contribuzione per ogni ora impiegata."
+        },
+        {
+          "text": "Fattibilità: ore libere = 1.200 − 1.050 = 150; il nuovo contratto ne richiede 200. Mancano 50 ore: per prenderlo occorre rinunciare a parte della commessa ordinaria o estendere la capacità. Nell’ipotesi indicata la perdita di MdC è 50×110 = 5.500 €."
+        },
+        {
+          "text": "MdC nuovo incarico = 200 × (130 − 45) = 17.000 €"
+        },
+        {
+          "text": "ΔRO = 17.000 − 3.000 − 5.500 = +8.500 €"
+        },
+        {
+          "text": "L’incarico è economicamente conveniente per 8.500 € se sono ammissibili la riduzione del contratto esistente e il relativo impatto commerciale. Senza tenere conto delle ore scarse il vantaggio sembrerebbe 14.000 €, quindi sarebbe sovrastimato di 5.500 €. Se il cliente ordinario non può essere ridimensionato, l’opzione potrebbe non essere tecnicamente praticabile: l’esito economico positivo non supera un vincolo contrattuale."
+        }
+      ],
+      "concept": "Caso integrato: commessa software con capacità limitata"
+    },
+    {
+      "id": "10-33",
+      "title": "10.33 Fattori qualitativi, rischi e controlli finali",
+      "topics": [
+        "cdg-c10-t33"
+      ],
+      "blocks": [
+        {
+          "text": "Le valutazioni numeriche devono essere interpretate alla luce di almeno cinque verifiche: capacità realizzabile (ore e competenze); effetti commerciali (clienti persi, sconti futuri, reputazione); qualità e sicurezza (rischio difetti e conformità); orizzonte decisionale (costi eliminabili oggi ma non domani); ipotesi su prezzi e volumi (sensibilità e scenari). Qualsiasi analisi può essere fuorviante se tratta come identiche alternative con prestazioni o rischi differenti."
+        },
+        {
+          "text": "I costi sommersi e i costi comuni invarianti non devono essere ricaricati in modo arbitrario sulle nuove decisioni. Al contrario, un vincolo di capacità, una penale, un costo evitabile, un margine sacrificato o una spesa per avviare una nuova attività devono essere considerati. Anche una scelta con ΔRO positivo può non essere approvata se espone l’impresa a rischi gravi o viola impegni contrattuali e requisiti minimi."
+        }
+      ],
+      "concept": "Fattori qualitativi, rischi e controlli finali"
+    },
+    {
+      "id": "10-34",
+      "title": "10.34 Procedura guidata per la prova scritta",
+      "topics": [
+        "cdg-c10-t34"
+      ],
+      "blocks": [
+        {
+          "text": "Per uno scritto di circa 60 minuti, prima di eseguire operazioni numeriche conviene costruire una tabella dei dati con unità di misura e alternative. Il tempo investito nella corretta individuazione delle informazioni rilevanti riduce i calcoli superflui e il rischio di perdere punti a causa di una ripartizione impropria dei costi fissi."
+        },
+        {
+          "text": "• 1. Identifica la decisione. Scrivi le alternative A/B e l’orizzonte temporale. Se il problema prevede più prodotti o più stati futuri, riportali in una tabella prima dei conti."
+        },
+        {
+          "text": "• 2. Controlla la fattibilità. Calcola ore disponibili, ore necessarie, risorse scarse, volumi massimi e eventuali vincoli contrattuali."
+        },
+        {
+          "text": "• 3. Ricostruisci il contributo. Ricavi addizionali, costi variabili realmente incrementali, costi fissi evitabili/emergenti, penali e costi opportunità."
+        },
+        {
+          "text": "• 4. Calcola ΔRO. Se A è l’opzione nuova, usa sempre A−B. Interpreta il segno e motivane il significato."
+        },
+        {
+          "text": "• 5. Verifica il risultato. Confronta i risultati completi delle alternative oppure rifai il calcolo per unità e totali. Ricontrolla i dati monetari e temporali."
+        },
+        {
+          "text": "• 6. Concludi in linguaggio manageriale. Specifica la scelta, il vantaggio economico, le condizioni in cui vale e i fattori qualitativi più importanti."
+        },
+        {
+          "text": "Errori ricorrenti: Confondere costo pieno e costo rilevante; dedurre l’eliminabilità di un costo dalla sua natura “fissa”; dimenticare il costo opportunità della capacità satura; confrontare alternative senza uniformare l’orizzonte temporale; non verificare che il punto di indifferenza sia tecnicamente raggiungibile; scambiare probabilità con certezze."
+        }
+      ],
+      "concept": "Procedura guidata per la prova scritta"
+    },
+    {
+      "id": "10-35",
+      "title": "10.35 Esercizi autonomi graduati",
+      "topics": [
+        "cdg-c10-t35"
+      ],
+      "blocks": [
+        {
+          "text": "Gli esercizi seguenti sono originali, costruiti per allenare i metodi del corso. Sono riportate le soluzioni nella sezione successiva: prova a risolverli senza consultarle, controllando i passaggi e non soltanto il numero finale. Per ciascuno scrivi una conclusione in una o due frasi."
+        },
+        {
+          "text": "E1 — Dati rilevanti Un laboratorio ha già pagato 6.000 € per un progetto ormai concluso. Per accettare una nuova commessa servono materiali da acquistare per 4.000 €, un coordinatore già stipendiato senza lavoro aggiuntivo e un noleggio speciale da 1.200 €. Quali sono i costi futuri incrementali?"
+        },
+        {
+          "text": "E2 — Ordine speciale con setup Un produttore riceve una richiesta di 800 pezzi a 45 €/pezzo. Il costo variabile pertinente è 30 €/pezzo e il setup aggiuntivo costa 8.000 €. È disponibile capacità libera sufficiente. Conviene accettare?"
+        },
+        {
+          "text": "E3 — Chiusura segmento e riconversione Una linea registra ricavi 240.000 €, costi variabili 150.000 €, costi fissi attribuiti 100.000 €, ma solamente 60.000 € sono evitabili. La capacità non ha impieghi alternativi. Conviene chiudere? E se liberandola si ottenesse un nuovo MdC di 45.000 €?"
+        },
+        {
+          "text": "E4 — Ordine e capacità satura Un nuovo ordine di 3.000 pezzi offre 18 €/pezzo, costa 14 €/pezzo in modo variabile e richiede 9.000 € di setup. Ogni pezzo usa 0,15 ore macchina; restano 400 ore. Per le 50 ore mancanti si sacrificano vendite ordinarie con MdC 80 €/ora. Determina la convenienza."
+        },
+        {
+          "text": "E5 — Make or buy con costo opportunità Per 8.000 componenti, il costo variabile interno è 16 €/pezzo, i fissi evitabili sono 18.000 €, il fornitore chiede 21 €/pezzo. Quale opzione è preferibile? Se l’acquisto libera capacità per un nuovo MdC di 30.000 €, cosa cambia?"
+        },
+        {
+          "text": "E6 — Volume di indifferenza Il MAKE implica costo rilevante unitario 12 € più costi fissi evitabili 9.000 €. Il BUY costa 15 € per pezzo. Determina la soglia Q* e quale opzione conviene per 2.000 e per 5.000 pezzi."
+        },
+        {
+          "text": "E7 — Lavorazioni ulteriori Prodotto A: vendita allo split-off 150.000 €, vendita dopo lavorazione 190.000 €, costi successivi 25.000 €. Prodotto B: rispettivamente 50.000 €, 60.000 €, 15.000 €. Quali prodotti conviene lavorare?"
+        },
+        {
+          "text": "E8 — Una risorsa scarsa Tre prodotti: A MdC 12 €, ore macchina 0,4, domanda max 500; B MdC 15 €, ore 1, domanda max 200; C MdC 20 €, ore 0,5, domanda max 400. Sono disponibili solo 500 ore macchina. Costruisci il mix che massimizza il MdC con un unico vincolo."
+        },
+        {
+          "text": "E9 — Rischio e criteri Payoff in migliaia di euro: azione X = 20 con domanda bassa e 40 con alta; Y = 25 con domanda bassa e 30 con alta. Trova maximin, maximax, minimax regret, valori attesi se P(alta)=30% e soglia di probabilità per la scelta."
+        },
+        {
+          "text": "E10 — Valore informazione Con i dati dell’E9 e P(alta)=30%, calcola il valore atteso con informazione perfetta e il corrispondente EVPI."
+        },
+        {
+          "text": "E11 — Materiale già in magazzino Un componente già acquistato potrebbe essere rivenduto oggi per 500 € netti. Un ordine che lo impiega genera ricavi futuri 2.000 € e altri costi variabili 1.300 €. Il costo storico del componente è 1.000 €. Qual è il vantaggio economico di usare il componente invece di rivenderlo?"
+        },
+        {
+          "text": "E12 — Penale di consegna Un ordine da 1.000 unità offre 25 €/unità; costo variabile pertinente 18 €/unità. Accettarlo implica una penale certa di 7.000 € e nessun altro costo. Qual è il risultato incrementale? Quale cautela comunicativa aggiungeresti?"
+        },
+        {
+          "text": "E13 — Prodotto apparentemente in perdita Una linea ha MdC totale 30.000 €, costi fissi specifici realmente evitabili 20.000 € e costi comuni allocati 18.000 € che non cambiano se chiude. Il report mostra −8.000 €. Conviene cessare la linea?"
+        },
+        {
+          "text": "E14 — Due vincoli Massimizza 30A + 40B con 2A+B≤100, A+3B≤120 e A,B≥0. Trova la soluzione ottima e confrontala con la produzione esclusiva di uno dei due prodotti."
+        },
+        {
+          "text": "E15 — Commento critico Spiega perché nel caso Delta (sezione 10.18) il volume economico di indifferenza non autorizza a dire che la commessa possa essere accettata a quel volume senza cambiamenti produttivi."
+        }
+      ],
+      "concept": "Esercizi autonomi graduati"
+    },
+    {
+      "id": "10-36",
+      "title": "10.36 Soluzioni commentate degli esercizi",
+      "topics": [
+        "cdg-c10-t36"
+      ],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "Soluzione E1 Sono rilevanti 4.000 + 1.200 = 5.200 €. I 6.000 € pregressi sono sunk; lo stipendio del coordinatore non cambia. Se il coordinatore sottraesse tempo ad altre attività redditizie, occorrerebbe stimare un eventuale costo opportunità."
+            },
+            {
+              "text": "Soluzione E2 MdC unitario 45 − 30 = 15 €; MdC aggiuntivo 800×15 = 12.000 €; ΔRO = 12.000 − 8.000 = +4.000 €. Accettare con capacità disponibile e senza ulteriori effetti commerciali."
+            },
+            {
+              "text": "Soluzione E3 Margine prima dei fissi 240.000 − 150.000 = 90.000 €. Margine di segmento = 90.000 − 60.000 = 30.000 €. Chiudere senza alternativa riduce il RO di 30.000 €; non conviene. Se il riutilizzo genera +45.000 € di nuovo margine netto, ΔRO della chiusura/riconversione = −30.000 + 45.000 = +15.000 €: diventa conveniente."
+            },
+            {
+              "text": "Soluzione E4 Ore richieste 3.000×0,15 = 450, con 400 libere: ne mancano 50. MdC ordine = 3.000×(18−14) = 12.000 €. Setup 9.000 €. Opportunità = 50×80 = 4.000 €. ΔRO = 12.000 − 9.000 − 4.000 = −1.000 €: non conviene."
+            },
+            {
+              "text": "Soluzione E5 MAKE = 8.000×16+18.000 = 146.000 €; BUY = 8.000×21 = 168.000 €. Senza altro uso della capacità MAKE fa risparmiare 22.000 €. Con MdC alternativo di 30.000 € perso scegliendo MAKE: costo economico MAKE = 176.000 €, quindi conviene BUY di 8.000 €."
+            },
+            {
+              "text": "Soluzione E6 Q* = 9.000/(15−12) = 3.000 unità. A 2.000: MAKE 33.000 €, BUY 30.000 € → BUY. A 5.000: MAKE 69.000 €, BUY 75.000 € → MAKE. Risultato valido solo se i fissi di 9.000 € sono evitabili con BUY e le tariffe restano costanti."
+            },
+            {
+              "text": "Soluzione E7 A: (190.000−150.000)−25.000 = +15.000 €, quindi continuare. B: (60.000−50.000)−15.000 = −5.000 €, quindi vendere al punto di separazione. I costi congiunti precedenti non entrano."
+            },
+            {
+              "text": "Soluzione E8 MdC/ora: C = 20/0,5 = 40; A = 12/0,4 = 30; B = 15/1 = 15. Servire C max400 (200h), A max500 (200h), restano100h per B100. Mix C400, A500, B100; MdC 8.000+6.000+1.500 = 15.500 €."
+            },
+            {
+              "text": "Soluzione E9 Maximin: Y (minimo 25 > 20); maximax: X (massimo 40 > 30). Rimpianti X=(5,0), Y=(0,10), quindi minimax regret: X (massimo5 <10). Con P(alta)=0,30: EV(X)=0,7×20+0,3×40=26; EV(Y)=0,7×25+0,3×30=26,5 migliaia → Y. Soglia: 20+20p=25+5p → p*=1/3 ≈33,33%."
+            },
+            {
+              "text": "Soluzione E10 Con informazione perfetta scegliere Y quando domanda bassa (25) e X quando alta (40). EVPI prima del differenziale: 0,7×25+0,3×40=29,5 migliaia. Senza informazione si sceglie Y con EV=26,5. EVPI = 3.000 €."
+            },
+            {
+              "text": "Soluzione E11 Il costo storico di 1.000 € è sunk e va escluso. Il beneficio alternativo perso per rinunciare alla vendita è 500 €. Vantaggio della commessa = 2.000 − 1.300 − 500 = +200 €: conviene usare il componente, nelle ipotesi date."
+            },
+            {
+              "text": "Soluzione E12 MdC addizionale 1.000×(25−18) = 7.000 €; meno penale 7.000 € → ΔRO = 0 €, indifferenza economica. Verificare se ritardare il cliente normale può causare altre conseguenze o se l’ordine porta opportunità future misurabili."
+            },
+            {
+              "text": "Soluzione E13 Margine decisionale prima della chiusura = 30.000 − 20.000 = 10.000 €. La quota allocata di 18.000 € continua anche dopo la chiusura; eliminare la linea peggiora il RO di 10.000 €. Non cessare in assenza di un impiego migliore della capacità."
+            },
+            {
+              "text": "Soluzione E14 Intersezione dei vincoli attivi: 2A+B=100, A+3B=120 → A=36, B=28, risultato 2.200 €. Solo A: A≤50 → risultato 1.500 €; solo B: B≤40 → risultato 1.600 €. La soluzione combinata domina entrambi i vertici puri."
+            },
+            {
+              "text": "Soluzione E15 A 0,2 ore/litro, la capacità libera consente 450/0,2 = 2.250 litri, mentre il pareggio economico richiede 6.000 litri. Occorrerebbe aumentare la capacità, ridurre produzione normale o cambiare costi/prezzi. La soglia ricavata dall’equazione è inattuabile nel modello tecnico iniziale."
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Soluzioni commentate degli esercizi"
+    },
+    {
+      "id": "10-37",
+      "title": "10.37 Formulario ragionato e glossario essenziale",
+      "topics": [
+        "cdg-c10-t37"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Problema",
+              "Relazione",
+              "Condizione e interpretazione"
+            ],
+            [
+              "Vantaggio economico",
+              "ΔRO = ΔRicavi − ΔCosti",
+              "Positivo: A preferibile a B"
+            ],
+            [
+              "Aggiungere linea",
+              "MdC nuovi − CF nuovi − opportunità",
+              "Includere solo costi nuovi"
+            ],
+            [
+              "Chiudere linea",
+              "CF eliminabili + benefici alternativi − MdC cessante",
+              "Allocazioni comuni invarianti escluse"
+            ],
+            [
+              "Ordine speciale",
+              "Q(Ps−CVr) − CF nuovi − opportunità",
+              "Controllare sempre le ore libere"
+            ],
+            [
+              "Volume indifferenza ordine",
+              "Q* = CF nuovi / (Ps−CVr)",
+              "Solo se Ps > CVr e volume fattibile"
+            ],
+            [
+              "MAKE",
+              "cQ + CF evitabili + opportunità",
+              "Confronto omogeneo col BUY"
+            ],
+            [
+              "BUY",
+              "p fornitore Q + oneri nuovi",
+              "Non dimenticare i costi accessori"
+            ],
+            [
+              "Q* make/buy",
+              "F/(b−c)",
+              "Solo per b>c e costi costanti"
+            ],
+            [
+              "Lavorazioni successive",
+              "Ricavi dopo − prima − costi futuri extra",
+              "Costi congiunti pregressi esclusi"
+            ],
+            [
+              "Fattore scarso",
+              "MdC/u ÷ ore scarse/u",
+              "Un solo vincolo e domanda limitata"
+            ],
+            [
+              "Payoff atteso",
+              "Σ p(s)×payoff(a,s)",
+              "Condizioni di rischio"
+            ],
+            [
+              "EVPI",
+              "EV con informazione perfetta − max EV",
+              "Limite teorico di spesa per informazione"
+            ],
+            [
+              "Regret(a,s)",
+              "Miglior payoff nello stato s − payoff(a,s)",
+              "Minimax: minimo del massimo rimpianto"
+            ]
+          ]
+        }
+      ],
+      "concept": "Formulario ragionato e glossario essenziale"
+    }
+  ],
+  "relations": [
+    {
+      "to": "10-4",
+      "relation": "Le alternative si confrontano sulle differenze economiche",
+      "from": "10-3"
+    },
+    {
+      "to": "10-5",
+      "relation": "L’analisi include i valori futuri che cambiano fra opzioni",
+      "from": "10-4"
+    },
+    {
+      "to": "10-6",
+      "relation": "I costi sommersi si escludono mentre quelli evitabili possono cambiare",
+      "from": "10-5"
+    },
+    {
+      "to": "10-8",
+      "relation": "Rinunciare a un’alternativa può avere un costo economico",
+      "from": "10-5"
+    },
+    {
+      "to": "10-21",
+      "relation": "Con capacità satura, una nuova commessa può sostituirne un’altra",
+      "from": "10-8"
+    },
+    {
+      "to": "10-17",
+      "relation": "Un ordine speciale si valuta dal contributo incrementale",
+      "from": "10-4"
+    },
+    {
+      "to": "10-22",
+      "relation": "Il make or buy confronta i costi che cambiano fra produrre e acquistare",
+      "from": "10-4"
+    },
+    {
+      "to": "10-12",
+      "relation": "Con probabilità disponibili si può valutare il risultato atteso",
+      "from": "10-9"
+    }
+  ]
+}

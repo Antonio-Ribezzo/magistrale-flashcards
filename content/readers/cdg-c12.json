@@ -1,0 +1,1528 @@
+{
+  "sections": [
+    {
+      "id": "introduzione",
+      "title": "Introduzione",
+      "topics": [],
+      "blocks": [
+        {
+          "image": "cdg-p153-1.png",
+          "caption": "Pianificazione, programmazione, budget e controllo come sistema continuo.",
+          "alt": "Pianificazione, programmazione, budget e controllo come sistema continuo."
+        }
+      ],
+      "concept": "Introduzione"
+    },
+    {
+      "id": "12-1",
+      "title": "12.1 Obiettivi e orientamento allo studio",
+      "topics": [
+        "cdg-c12-t01"
+      ],
+      "blocks": [
+        {
+          "text": "Obiettivo: Comprendere la funzione manageriale del budget, distinguere prospetti economici e finanziari e saper ricostruire l’intero sistema."
+        },
+        {
+          "text": "Questo capitolo appartiene alla terza macroarea del programma di Controllo di Gestione. Riprende il ciclo pianificazione– programmazione–controllo, la struttura del master budget, il processo di preparazione e le dimensioni organizzative e comportamentali. Il percorso quantitativo estende le indicazioni del corso grazie agli esercizi ufficiali Arcari sul budget operativo, di cassa e sui documenti previsionali."
+        },
+        {
+          "text": "Non sono richieste conoscenze pregresse di budgeting: definizioni, unità di misura, relazioni contabili e formule vengono introdotte progressivamente. Per applicare correttamente questo capitolo è utile ricordare i costi fissi/variabili, il costo pieno di prodotto, le rimanenze e la differenza fra competenza economica e flusso di cassa."
+        },
+        {
+          "text": "• Saper leggere e costruire budget commerciali, produttivi e finanziari collegati fra loro."
+        },
+        {
+          "text": "• Calcolare un master budget, riconciliando conto economico, situazione patrimoniale e liquidità."
+        },
+        {
+          "text": "• Individuare criticità operative e finanziarie anche quando il risultato economico è positivo."
+        },
+        {
+          "text": "• Comprendere responsabilità, revisioni, scenari e limiti dei sistemi tradizionali di budgeting."
+        }
+      ],
+      "concept": "Obiettivi e orientamento allo studio"
+    },
+    {
+      "id": "12-2",
+      "title": "12.2 Il controllo direzionale come processo continuo",
+      "topics": [
+        "cdg-c12-t02"
+      ],
+      "blocks": [
+        {
+          "text": "La direzione aziendale non si limita a osservare i risultati: definisce obiettivi, mobilita persone e risorse, traduce le decisioni in programmi operativi, misura le performance e corregge le azioni. La gestione si sviluppa dunque come un ciclo continuo, non come una sequenza destinata a concludersi con la semplice approvazione del budget."
+        },
+        {
+          "text": "Nel ciclo direzionale la pianificazione stabilisce la direzione di lungo termine; la programmazione operativa individua attività e risultati intermedi; il budget li quantifica; l’esecuzione produce risultati effettivi; il controllo confronta piani e realizzazioni e restituisce feedback alla direzione. Il controllo efficace serve anche ad apprendere: uno scostamento può nascere da inefficienze, ipotesi sbagliate, variazioni del mercato o decisioni deliberate."
+        },
+        {
+          "text": "Il collegamento con il ciclo PDCA (Plan–Do–Check–Act) aiuta a distinguere: Plan = definizione obiettivi e modalità d’azione; Do = esecuzione; Check = misurazione dei risultati; Act = correzioni e aggiornamento dei processi. Questa analogia è utile, ma le tecniche contabili di budget hanno esigenze specifiche di misurazione monetaria e di responsabilizzazione."
+        }
+      ],
+      "concept": "Il controllo direzionale come processo continuo"
+    },
+    {
+      "id": "12-3",
+      "title": "12.3 Pianificazione strategica: significato e orizzonte",
+      "topics": [
+        "cdg-c12-t03"
+      ],
+      "blocks": [
+        {
+          "text": "La pianificazione strategica è il processo con cui l’impresa identifica gli obiettivi di medio e lungo periodo, valuta opportunità e minacce, sceglie le aree competitive e assegna le risorse essenziali. È diversa dalla programmazione annuale: un investimento in un nuovo mercato o una nuova tecnologia può avere un orizzonte pluriennale, mentre i costi di implementazione sono articolati nel budget dell’anno."
+        },
+        {
+          "text": "Analisi esterna (domanda, concorrenti, regolazione, tecnologia) e interna (competenze, capacità produttiva, struttura dei costi e disponibilità finanziaria) precedono le alternative strategiche. Il piano strategico esplicita ipotesi, risultati attesi, iniziative, risorse e responsabilità; può essere quantitativo oppure parzialmente qualitativo, ma il budget richiede valori operativi verificabili."
+        },
+        {
+          "text": "Esempio: una software house decide di entrare nel settore sanitario entro tre anni. La strategia individua il mercato, la proposta di valore e i canali. Il budget del primo anno stabilisce assunzioni di personale, ricavi da commesse, licenze, spese commerciali, investimento iniziale e cassa necessaria. Il successo di breve periodo non può essere valutato soltanto dal numero di vendite se l’obiettivo strategico è acquisire competenze e clienti pilota."
+        }
+      ],
+      "concept": "Pianificazione strategica: significato e orizzonte"
+    },
+    {
+      "id": "12-4",
+      "title": "12.4 Dal piano strategico agli obiettivi operativi",
+      "topics": [
+        "cdg-c12-t04"
+      ],
+      "blocks": [
+        {
+          "text": "Gli obiettivi strategici vengono tradotti in obiettivi operativi controllabili attraverso indicatori, tempi e responsabili. Un obiettivo formulato genericamente (per esempio «crescere») deve essere trasformato in una combinazione coerente: espansione di una linea di prodotto, volumi attesi, livello di servizio, ricavi, margini, investimenti, personale e cassa."
+        },
+        {
+          "text": "Una buona traduzione richiede coerenza verticale (obiettivi delle unità compatibili con quelli dell’impresa) e orizzontale (produzione, acquisti, commerciale e finanza utilizzano le stesse ipotesi). La crescita delle vendite deve essere compatibile con la capacità produttiva, la disponibilità dei materiali, la formazione delle persone e le condizioni d’incasso."
+        },
+        {
+          "table": [
+            [
+              "Dimensione",
+              "Obiettivo strategico",
+              "Indicatore operativo / budget"
+            ],
+            [
+              "Mercato",
+              "Aumentare la presenza in un segmento",
+              "Volumi, prezzo medio, nuovi clienti, ricavi"
+            ],
+            [
+              "Prodotto",
+              "Aumentare la qualità",
+              "Scarti, resi, investimenti e formazione"
+            ],
+            [
+              "Economica",
+              "Raggiungere margini sostenibili",
+              "Margine industriale, risultato operativo"
+            ],
+            [
+              "Finanziaria",
+              "Evitare tensioni di liquidità",
+              "Incassi, uscite, fabbisogno e cassa minima"
+            ]
+          ]
+        }
+      ],
+      "concept": "Dal piano strategico agli obiettivi operativi"
+    },
+    {
+      "id": "12-5",
+      "title": "12.5 Budget: definizione, funzioni e limiti",
+      "topics": [
+        "cdg-c12-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Il budget è l’espressione quantitativa, prevalentemente monetaria, di un programma d’azione futuro approvato dalla direzione, spesso riferito a dodici mesi e articolato in sottoperiodi. Il budget collega attività e risorse: indica quali risultati si vogliono raggiungere e quali mezzi si prevede di impiegare."
+        },
+        {
+          "text": "Le sue finalità sono almeno cinque: pianificazione, coordinamento, comunicazione degli obiettivi, responsabilizzazione/motivazione e controllo. Le finalità possono entrare in conflitto: una stima prudente adatta alla pianificazione può essere poco stimolante come target, mentre un obiettivo ambizioso può essere inadatto a stimare la liquidità necessaria."
+        },
+        {
+          "text": "Il budget non è una promessa che il futuro si realizzerà esattamente come previsto, né una semplice autorizzazione a spendere tutto lo stanziamento. È un sistema di decisioni fondate su ipotesi, pertanto deve essere accompagnato da monitoraggio, analisi delle cause degli scostamenti e revisione delle previsioni quando cambia il contesto."
+        }
+      ],
+      "concept": "Budget: definizione, funzioni e limiti"
+    },
+    {
+      "id": "12-6",
+      "title": "12.6 Piano, budget, forecast e business plan",
+      "topics": [
+        "cdg-c12-t06"
+      ],
+      "blocks": [
+        {
+          "image": "cdg-p154-1.png",
+          "caption": "Piano strategico, budget e forecast hanno finalità e orizzonti differenti.",
+          "alt": "Piano strategico, budget e forecast hanno finalità e orizzonti differenti."
+        },
+        {
+          "text": "Il piano strategico definisce direzione e risorse pluriennali. Il budget è il piano operativo quantificato e approvato per un periodo (tipicamente annuale). Il forecast è la migliore previsione aggiornata dell’esito probabile, calcolata incorporando i risultati già conseguiti e le nuove informazioni. Un business plan è un documento integrato, spesso pluriennale, che descrive opportunità, modello economico, investimenti, prospetti previsionali, rischi e sostenibilità finanziaria."
+        },
+        {
+          "text": "Esempio: ricavi annui a budget 1.200.000 €; dopo sei mesi il consuntivo è 520.000 € e si prevedono 570.000 € nel semestre successivo. Il forecast annuale è 1.090.000 €, mentre il target originario rimane 1.200.000 € salvo decisione formale di revisione. La differenza di 110.000 € non è una violazione automatica degli obiettivi da attribuire a una sola funzione: occorre studiarne le cause."
+        },
+        {
+          "heading": "Forecast finale = Consuntivo già maturato + Previsione aggiornata dei periodi rimanenti"
+        }
+      ],
+      "concept": "Piano, budget, forecast e business plan"
+    },
+    {
+      "id": "12-7",
+      "title": "12.7 Dimensioni e architettura del master budget",
+      "topics": [
+        "cdg-c12-t07"
+      ],
+      "blocks": [
+        {
+          "text": "Il master budget è un insieme coordinato di budget elementari che converge in conto economico, stato patrimoniale e rendiconto finanziario preventivi. Si distinguono: budget operativi, che programmando vendite, produzione e funzioni definiscono redditività attesa; budget degli investimenti, che pianificano acquisti di beni pluriennali; budget finanziari, che descrivono incassi, pagamenti, fabbisogno di capitale e situazione patrimoniale futura."
+        },
+        {
+          "image": "cdg-p155-1.png",
+          "caption": "Relazioni principali fra budget operativi e finanziari (schema originale).",
+          "alt": "Relazioni principali fra budget operativi e finanziari (schema originale)."
+        },
+        {
+          "text": "La struttura non è identica per ogni impresa. Un produttore costruisce un piano di produzione e budget di materiali, manodopera e costi indiretti. Un’impresa commerciale definisce soprattutto budget di acquisti delle merci e scorte; una società di servizi usa ore professionali, capacità e costi delle persone. In ogni caso, le relazioni economico-finanziarie devono essere coerenti."
+        }
+      ],
+      "concept": "Dimensioni e architettura del master budget"
+    },
+    {
+      "id": "12-8",
+      "title": "12.8 Il processo organizzativo di budgeting",
+      "topics": [
+        "cdg-c12-t08"
+      ],
+      "blocks": [
+        {
+          "text": "Il processo di budgeting comprende una dimensione razionale (sequenza delle analisi e dei prospetti), una dimensione organizzativa (chi formula e approva le proposte) e una dimensione comportamentale (come obiettivi e incentivi influenzano le persone). Il calendario di budget prevede istruzioni iniziali, raccolta delle proposte, negoziazione, verifica di sostenibilità, approvazione e comunicazione ai responsabili."
+        },
+        {
+          "text": "L’ordine dei calcoli è spesso: ipotesi generali → vendite → produzione → consumi e fabbisogni → acquisti e personale → costi indiretti e operativi → investimenti → crediti/debiti e cassa → conto economico e stato patrimoniale preventivi. Il processo reale è iterativo: se la capacità produttiva è insufficiente o la cassa scende sotto la soglia minima, occorre tornare a rivedere volumi, investimenti, prezzi, dilazioni o finanziamenti."
+        }
+      ],
+      "concept": "Il processo organizzativo di budgeting"
+    },
+    {
+      "id": "12-9",
+      "title": "12.9 La costruzione degli obiettivi e le ipotesi",
+      "topics": [
+        "cdg-c12-t09"
+      ],
+      "blocks": [
+        {
+          "text": "La qualità del budget dipende da ipotesi esplicite: scenario di mercato, prezzi, mix, quantità, standard tecnici, produttività, scorte obiettivo, politiche di incasso e pagamento, salari, ammortamenti, investimenti e costo del credito. Dati storici e serie temporali sono utili, ma non sostituiscono l’analisi di cambiamenti strutturali."
+        },
+        {
+          "text": "È consigliabile un registro delle ipotesi con unità di misura, fonte, responsabile, data e versione. L’errore più pericoloso non è una somma sbagliata, ma una variabile introdotta con significato differente nei fogli collegati: confondere pezzi con kg, ricavi netti con fatturato comprensivo di imposte, o vendite con incassi rende errato tutto il master budget."
+        }
+      ],
+      "concept": "La costruzione degli obiettivi e le ipotesi"
+    },
+    {
+      "id": "12-10",
+      "title": "12.10 Il budget delle vendite",
+      "topics": [
+        "cdg-c12-t10"
+      ],
+      "blocks": [
+        {
+          "text": "Il budget delle vendite rappresenta quantità e prezzi previsti per prodotti, mercati, clienti e periodi. È normalmente il punto di partenza perché le vendite influenzano produzione, risorse, scorte, ricavi e incassi. La stima si fonda su domanda, trend, prezzi, portafoglio ordini, stagionalità, iniziative commerciali e capacità di servizio."
+        },
+        {
+          "heading": "Ricavi preventivati = Σ_i (Quantità da vendere_i × Prezzo unitario di vendita_i)"
+        },
+        {
+          "text": "Il fatturato deve essere espresso in modo coerente con la finalità: nei calcoli economici si utilizza di norma il ricavo netto delle imposte indirette e degli sconti pertinenti. Le vendite previste generano ricavi per competenza; gli incassi dipendono dalle condizioni di pagamento, che verranno trattate nei budget finanziari."
+        },
+        {
+          "table": [
+            [
+              "Prodotto",
+              "Unità previste",
+              "Prezzo unitario",
+              "Ricavi"
+            ],
+            [
+              "A",
+              "600",
+              "80 €",
+              "48.000 €"
+            ],
+            [
+              "B",
+              "250",
+              "140 €",
+              "35.000 €"
+            ],
+            [
+              "Totale",
+              "850",
+              "—",
+              "83.000 €"
+            ]
+          ]
+        },
+        {
+          "text": "Nel caso semplice, se il prezzo di A cala del 5% a parità di quantità, il relativo budget dei ricavi diminuisce di 2.400 €, ma il budget di produzione resta invariato se la previsione dei volumi non cambia. Un mutamento di prezzo può tuttavia incidere indirettamente sulla domanda: tale elasticità va stimata, non assunta."
+        }
+      ],
+      "concept": "Il budget delle vendite"
+    },
+    {
+      "id": "12-11",
+      "title": "12.11 Il piano di produzione e la politica delle scorte",
+      "topics": [
+        "cdg-c12-t11"
+      ],
+      "blocks": [
+        {
+          "text": "Il piano di produzione calcola quante unità devono essere realizzate per soddisfare le vendite e la politica delle scorte di prodotti finiti. L’identità fisica è imprescindibile: quantità disponibili iniziali + quantità prodotte − quantità vendute = rimanenze finali."
+        },
+        {
+          "heading": "Produzione prevista = Vendite previste + Rimanenze finali desiderate − Rimanenze iniziali"
+        },
+        {
+          "image": "cdg-p156-1.png",
+          "caption": "Il legame quantitativo fra vendite, scorte e produzione.",
+          "alt": "Il legame quantitativo fra vendite, scorte e produzione."
+        },
+        {
+          "text": "Esempio: vendite 1.000 pezzi, rimanenze iniziali 180, scorta finale desiderata 250. Produzione = 1.000 + 250 − 180 = 1.070 pezzi. La scorta finale può essere fissata come percentuale delle vendite del periodo successivo (non di quelle correnti), introducendo una dipendenza fra mesi. Occorre verificare capienza dei magazzini, cicli produttivi, manutenzioni, capacità produttiva e colli di bottiglia."
+        }
+      ],
+      "concept": "Il piano di produzione e la politica delle scorte"
+    },
+    {
+      "id": "12-12",
+      "title": "12.12 Il budget dei consumi di materie prime",
+      "topics": [
+        "cdg-c12-t12"
+      ],
+      "blocks": [
+        {
+          "text": "Il budget dei consumi di materie prime parte dal volume da produrre e dagli standard fisici di utilizzo. Se servono 2,5 kg per una unità e il piano prevede 1.070 unità, il fabbisogno di consumo è 2.675 kg. Lo standard deve includere i rendimenti tecnici e, quando appropriato, gli scarti fisiologici: se il fabbisogno netto è 2,5 kg e la resa del materiale è il 95%, il fabbisogno lordo è 2,5/0,95 kg per unità."
+        },
+        {
+          "heading": "Consumo standard del materiale j = Volume di produzione × Quantità standard j per prodotto"
+        },
+        {
+          "heading": "Costo dei consumi = Σ_j (Consumo previsto j × Prezzo standard j)"
+        },
+        {
+          "text": "È importante non confondere quantità da consumare con quantità da acquistare. I consumi esprimono l’impiego economico delle risorse; gli acquisti devono anche garantire un livello di rimanenze adeguato."
+        }
+      ],
+      "concept": "Il budget dei consumi di materie prime"
+    },
+    {
+      "id": "12-13",
+      "title": "12.13 Il budget degli acquisti e dei fornitori",
+      "topics": [
+        "cdg-c12-t13"
+      ],
+      "blocks": [
+        {
+          "text": "Il budget degli acquisti trasforma i consumi previsti in fabbisogni di approvvigionamento e tiene conto delle giacenze iniziali e finali. Per ciascuna materia prima si applica una quadratura fisica analoga a quella della produzione."
+        },
+        {
+          "heading": "Acquisti (quantità) = Consumi + Rimanenze finali MP desiderate − Rimanenze iniziali MP"
+        },
+        {
+          "heading": "Acquisti (valore) = Quantità da acquistare × Prezzo unitario d’acquisto"
+        },
+        {
+          "text": "La politica degli acquisti dipende anche da lead time dei fornitori, sconti quantità, minimi d’ordine, limiti di stoccaggio e rischio di interruzione. Ai fini del budget di cassa, al costo degli acquisti si associano le scadenze previste dei pagamenti; ai fini patrimoniali, gli acquisti non pagati generano debiti verso fornitori."
+        },
+        {
+          "text": "Esempio: consumi 2.675 kg, scorta iniziale 400 kg, scorta finale 500 kg. Acquisti = 2.775 kg. Se il costo è 7 €/kg, gli acquisti previsti ammontano a 19.425 €, anche se il costo dei consumi è 18.725 €. La differenza di 700 € è l’aumento di valore delle scorte (100 kg × 7 €)."
+        }
+      ],
+      "concept": "Il budget degli acquisti e dei fornitori"
+    },
+    {
+      "id": "12-14",
+      "title": "12.14 Il budget della manodopera diretta",
+      "topics": [
+        "cdg-c12-t14"
+      ],
+      "blocks": [
+        {
+          "text": "Il budget della manodopera diretta è costruito moltiplicando i volumi di produzione per il tempo standard unitario e per il costo orario completo. Il costo orario comprende gli elementi coerenti con la configurazione aziendale adottata: retribuzione, oneri e altri elementi allocabili secondo la specifica definizione."
+        },
+        {
+          "heading": "Ore MOD necessarie = Volume produzione × Ore standard per unità"
+        },
+        {
+          "heading": "Costo MOD a budget = Ore MOD necessarie × Costo orario standard"
+        },
+        {
+          "text": "La disponibilità di ore deve essere confrontata con la capacità normale (numero addetti × ore lavorabili × percentuale effettivamente disponibile). Quando le ore necessarie superano la capacità, sono possibili straordinari, assunzioni, outsourcing o revisione del piano; le alternative hanno conseguenze economiche e temporali differenti."
+        }
+      ],
+      "concept": "Il budget della manodopera diretta"
+    },
+    {
+      "id": "12-15",
+      "title": "12.15 Il budget dei costi indiretti di produzione",
+      "topics": [
+        "cdg-c12-t15"
+      ],
+      "blocks": [
+        {
+          "text": "Il budget dei costi indiretti di fabbricazione comprende costi produttivi non attribuibili direttamente alle singole unità, classificati in fissi e variabili rispetto a un driver appropriato (ore macchina, ore MOD, lotti, ecc.). I costi variabili cambiano con il livello di attività; i fissi rimangono costanti nell’intervallo rilevante o variano per scatti di capacità."
+        },
+        {
+          "heading": "CIF previsto = Costi indiretti fissi + (Tariffa variabile del driver × Quantità di driver prevista)"
+        },
+        {
+          "text": "Per la valutazione del costo pieno delle scorte, il tasso di imputazione dei costi fissi va definito secondo criteri coerenti con la normale capacità produttiva e con le regole di riferimento; una produzione eccezionalmente bassa non giustifica automaticamente l’aumento dei costi fissi unitari delle rimanenze. La differenza tra costo fisso sostenuto e costo imputato può generare sovra- o sottoassorbimento, analizzato nei Capitoli 5 e 8."
+        },
+        {
+          "text": "Attenzione alla cassa: gli ammortamenti sono costi ma non pagamenti del periodo. Vanno inclusi nel budget economico e nella valutazione dei costi se pertinenti, ed esclusi dalle uscite monetarie del budget di cassa."
+        }
+      ],
+      "concept": "Il budget dei costi indiretti di produzione"
+    },
+    {
+      "id": "12-16",
+      "title": "12.16 Il budget delle rimanenze e del costo del venduto",
+      "topics": [
+        "cdg-c12-t16"
+      ],
+      "blocks": [
+        {
+          "text": "Il budget delle rimanenze finali prevede il valore di materie prime, semilavorati e prodotti finiti a fine periodo. Le quantità provengono dalle politiche di scorta e dai piani produttivi, mentre la valorizzazione richiede criteri coerenti con i metodi adottati dall’impresa. Nel manuale, per finalità didattiche, useremo un costo standard industriale pieno unitario dichiarato e applicato in modo uniforme."
+        },
+        {
+          "heading": "Rimanenze finali di prodotti finiti = Unità finali × Costo industriale unitario preventivo"
+        },
+        {
+          "heading": "Costo del venduto = Rimanenze iniziali PF + Costo della produzione ottenuta − Rimanenze finali PF"
+        },
+        {
+          "text": "Per un’impresa industriale il costo della produzione ottenuta deriva da materiali consumati, MOD e costi generali di produzione, corretto per la variazione dei semilavorati. Le spese commerciali e amministrative non rientrano ordinariamente nel costo industriale delle rimanenze. Il riferimento OIC 13 è un approfondimento normativo esterno: deve essere distinto dal semplice modello di management accounting utilizzato per il budget."
+        }
+      ],
+      "concept": "Il budget delle rimanenze e del costo del venduto"
+    },
+    {
+      "id": "12-17",
+      "title": "12.17 Budget commerciale, amministrativo e R&S",
+      "topics": [
+        "cdg-c12-t17"
+      ],
+      "blocks": [
+        {
+          "text": "Il budget commerciale prevede commissioni di vendita, trasporti, marketing, rete distributiva e promozioni; il budget amministrativo riguarda uffici, sistemi informativi, servizi centrali e spese di supporto; il budget di R&S pianifica risorse per progetti innovativi. Queste aree comprendono costi variabili e fissi, controllabili e non controllabili a livello dei singoli manager."
+        },
+        {
+          "text": "Se le provvigioni sono 4% dei ricavi, il costo commerciale variabile aumenta con il fatturato; se la pubblicità è finanziata con una campagna approvata da 25.000 €, il costo dipende da una scelta discrezionale e non necessariamente dai pezzi venduti. Le spese di investimenti immateriali e i costi di R&S richiedono una corretta distinzione fra costo di esercizio e investimento capitalizzabile secondo le regole applicabili."
+        }
+      ],
+      "concept": "Budget commerciale, amministrativo e R&S"
+    },
+    {
+      "id": "12-18",
+      "title": "12.18 Il conto economico preventivo",
+      "topics": [
+        "cdg-c12-t18"
+      ],
+      "blocks": [
+        {
+          "text": "Il conto economico preventivo riassume i risultati economici attesi dalle attività programmate. La sua struttura dipende dalla finalità del reporting: per funzione (ricavi, costo del venduto, margine lordo, spese operative), per natura o per margini di contribuzione. Le diverse configurazioni non sono intercambiabili senza rispettare il trattamento dei costi fissi e delle variazioni di magazzino."
+        },
+        {
+          "heading": "Margine industriale lordo = Ricavi − Costo industriale del venduto"
+        },
+        {
+          "heading": "Risultato operativo preventivo = Margine industriale − Costi commerciali e amministrativi"
+        },
+        {
+          "text": "Dal risultato operativo si arriva all’utile prima delle imposte sottraendo oneri finanziari e aggiungendo eventuali componenti non operativi, secondo la struttura adottata. Le imposte previste consentono infine di stimare il risultato netto. Per attività gestionali settoriali si può usare un conto economico a margine di contribuzione, utile alle decisioni di breve periodo."
+        }
+      ],
+      "concept": "Il conto economico preventivo"
+    },
+    {
+      "id": "12-19",
+      "title": "12.19 Budget degli investimenti",
+      "topics": [
+        "cdg-c12-t19"
+      ],
+      "blocks": [
+        {
+          "text": "Il budget degli investimenti descrive l’acquisizione programmata di immobilizzazioni materiali e immateriali: macchine, impianti, sistemi informativi, licenze, infrastrutture e sviluppi capitalizzabili. Ogni investimento dovrebbe avere responsabile, obiettivo, valore, data di ordine, entrata in funzione, calendario dei pagamenti e valutazione economico- finanziaria coerente con il Capital Budgeting del Capitolo 11."
+        },
+        {
+          "text": "La differenza tra costo per competenza e uscita di cassa è qui particolarmente evidente: il pagamento di una macchina è un’uscita finanziaria, mentre la quota di ammortamento è il costo di competenza che influisce sul risultato dei periodi di utilizzo. Un budget che confonde i due elementi può contare due volte l’investimento nel conto economico oppure omettere il fabbisogno di cassa."
+        }
+      ],
+      "concept": "Budget degli investimenti"
+    },
+    {
+      "id": "12-20",
+      "title": "12.20 Budget degli incassi e dei pagamenti",
+      "topics": [
+        "cdg-c12-t20"
+      ],
+      "blocks": [
+        {
+          "image": "cdg-p158-1.png",
+          "caption": "Lo stesso fatto di gestione produce effetti economici, monetari e patrimoniali.",
+          "alt": "Lo stesso fatto di gestione produce effetti economici, monetari e patrimoniali."
+        },
+        {
+          "text": "Il budget degli incassi trasforma le vendite previste in entrate monetarie secondo le dilazioni concesse. Un esempio di distribuzione è 60% nel mese della vendita e 40% nel mese seguente; per gennaio si devono sommare anche gli incassi di crediti aperti a fine dicembre. La relazione è una matrice temporale, non un semplice moltiplicatore di tutte le vendite del trimestre."
+        },
+        {
+          "heading": "Incassi del mese t = Quota incassata delle vendite t + Incassi di crediti di periodi precedenti"
+        },
+        {
+          "text": "Analogamente, il budget dei pagamenti considera scadenze dei fornitori, retribuzioni, tributi, investimenti, rate di prestiti e altri impegni. Nel budget finanziario si devono considerare le imposte e l’IVA quando incidono sulle effettive scadenze, pur potendo escludere l’IVA da un esempio semplificato dichiarando espressamente l’ipotesi."
+        }
+      ],
+      "concept": "Budget degli incassi e dei pagamenti"
+    },
+    {
+      "id": "12-21",
+      "title": "12.21 Budget di cassa, liquidità minima e finanziamenti",
+      "topics": [
+        "cdg-c12-t21"
+      ],
+      "blocks": [
+        {
+          "text": "Il budget di cassa espone, per ciascun periodo, saldo iniziale, entrate, uscite operative, investimenti, nuovi finanziamenti, rimborsi, interessi e saldo finale. È il documento che consente di individuare i periodi di fabbisogno finanziario. Un conto economico positivo non garantisce liquidità: si possono realizzare ricavi non ancora incassati, sostenere investimenti o acquistare scorte."
+        },
+        {
+          "formula": "Cassa finale = Cassa iniziale + Incassi − Pagamenti operativi − Investimenti + Prestiti ricevuti − Rimborsi − Interessi"
+        },
+        {
+          "formula": "Fabbisogno addizionale = max(0; Soglia di cassa minima − Cassa prevista prima del finanziamento)"
+        },
+        {
+          "text": "La soglia minima non è identica al saldo zero: rappresenta un margine di sicurezza finanziaria. La copertura può derivare da credito bancario, capitale proprio, rinvio di investimenti, accelerazione degli incassi, dilazioni concordate con fornitori o riduzione di uscite discrezionali. Le azioni hanno costi e rischi da valutare."
+        }
+      ],
+      "concept": "Budget di cassa, liquidità minima e finanziamenti"
+    },
+    {
+      "id": "12-22",
+      "title": "12.22 Rendiconto finanziario e stato patrimoniale preventivi",
+      "topics": [
+        "cdg-c12-t22"
+      ],
+      "blocks": [
+        {
+          "text": "Il rendiconto finanziario preventivo spiega la variazione della disponibilità liquida distinguendo attività operativa, investimento e finanziamento. Il budget di cassa mette in evidenza la scansione dei flussi per mese o settimana; il rendiconto finanziario preventivo sintetizza la dinamica e consente il raccordo con il bilancio previsto."
+        },
+        {
+          "text": "Lo stato patrimoniale preventivo rappresenta attività, passività e patrimonio netto alla data finale. Le sue voci dipendono sia dal budget operativo (rimanenze), sia dalle condizioni commerciali (crediti e debiti), dagli investimenti e ammortamenti (immobilizzazioni), dalle scelte di finanziamento (debiti) e dall’utile previsto (patrimonio netto)."
+        },
+        {
+          "heading": "Totale attività finali = Passività finali + Patrimonio netto finale"
+        },
+        {
+          "heading": "Patrimonio netto finale = Patrimonio netto iniziale + Utile netto previsto + Conferimenti − Dividendi"
+        },
+        {
+          "text": "Se la quadratura non torna, occorre ricontrollare soprattutto: inventari finali, crediti/debiti da incassi e pagamenti, effetti delle quote di ammortamento, movimenti di prestiti e contabilizzazione degli investimenti."
+        }
+      ],
+      "concept": "Rendiconto finanziario e stato patrimoniale preventivi"
+    },
+    {
+      "id": "12-23",
+      "title": "12.23 Caso integrato: assunzioni e sequenza di lavoro",
+      "topics": [
+        "cdg-c12-t23"
+      ],
+      "blocks": [
+        {
+          "text": "Obiettivo: Applicare tutti i concetti a una simulazione trimestrale con quadratura completa."
+        },
+        {
+          "text": "CASO ORIGINALE — ALFA MANUFACTURING S.R.L. L’impresa produce e vende un unico articolo. Budget da gennaio a marzo; tutte le grandezze sono in euro, salvo quantità fisiche. Per rendere controllabile il procedimento si trascurano IVA e imposte sul reddito; non vi sono dividendi, deterioramenti delle scorte o variazioni di altri debiti e crediti oltre quelli esplicitati. La cassa minima desiderata è 20.000 €."
+        },
+        {
+          "text": "Ipotesi commerciali: vendite previste 500, 600 e 700 pezzi; prezzo 120 €/pezzo. A fine marzo la scorta di prodotti finiti desiderata è 160 pezzi; a fine gennaio 120 e febbraio 140; rimanenze iniziali 100. Per aprile si ipotizza una produzione di 800 pezzi ai fini delle sole scorte di materia prima."
+        },
+        {
+          "text": "Ipotesi industriali: 3 kg di materia prima per unità a 8 €/kg; 0,5 ore MOD per pezzo a 18 €/ora; CIF variabili 6 €/ora MOD; CIF fissi 9.000 €/mese, di cui 2.000 € ammortamenti. Le scorte finali MP devono essere pari al 10% del consumo previsto nel mese successivo; scorta MP iniziale 160 kg. Costi commerciali 5 €/pezzo venduto; spese fisse commerciali e amministrative 4.000 €/mese, delle quali 500 € ammortamenti."
+        },
+        {
+          "text": "Condizioni finanziarie: incasso 60% delle vendite del mese e 40% nel successivo; crediti iniziali da vendite dicembre pari a 48.000 € interamente incassati a gennaio. Pagamento materie 50% nel mese d’acquisto e 50% nel mese successivo; debiti iniziali fornitori 6.000 € da saldare a gennaio. Tutti gli altri costi monetari si pagano nel mese. Cassa iniziale 15.000 €. A febbraio si acquista un impianto pagandolo 90.000 €; finanziamento a breve disponibile al bisogno con tasso 1% mensile, rimborso a marzo del capitale ricevuto in febbraio e interessi a marzo."
+        },
+        {
+          "text": "Situazione patrimoniale iniziale per quadratura: disponibilità 15.000; crediti 48.000; MP 160 kg a 8 €/kg; PF 100 unità al costo unitario industriale usato nel caso; immobilizzazioni nette 100.000; debiti a fornitori 6.000; nessun debito finanziario; patrimonio netto come saldo iniziale."
+        },
+        {
+          "text": "Criterio di valorizzazione didattica: tasso fisso di fabbricazione preventivo trimestrale = 27.000 € / 1.860 unità prodotte. Lo stesso costo unitario è assunto anche per le 100 unità iniziali di PF: questa ipotesi serve soltanto alla riconciliazione dell’esercizio."
+        }
+      ],
+      "concept": "Caso integrato: assunzioni e sequenza di lavoro"
+    },
+    {
+      "id": "12-24",
+      "title": "12.24 Caso integrato: budget operativi",
+      "topics": [
+        "cdg-c12-t24"
+      ],
+      "blocks": [
+        {
+          "text": "1) Si parte dalle vendite e si applica l’identità fisica per la produzione. Poi si calcolano consumo, rimanenze finali e acquisti di materia prima. I fabbisogni di MOD e CIF dipendono dalle unità prodotte, mentre le commissioni commerciali dipendono dalle unità vendute."
+        },
+        {
+          "table": [
+            [
+              "Grandezza",
+              "Gennaio",
+              "Febbraio",
+              "Marzo",
+              "Totale"
+            ],
+            [
+              "Vendite (pz)",
+              "500",
+              "600",
+              "700",
+              "1.800"
+            ],
+            [
+              "Ricavi",
+              "60.000",
+              "72.000",
+              "84.000",
+              "216.000"
+            ],
+            [
+              "PF iniziali (pz)",
+              "100",
+              "120",
+              "140",
+              "—"
+            ],
+            [
+              "PF finali (pz)",
+              "120",
+              "140",
+              "160",
+              "160"
+            ],
+            [
+              "Produzione (pz)",
+              "520",
+              "620",
+              "720",
+              "1.860"
+            ],
+            [
+              "Consumi MP (kg)",
+              "1.560",
+              "1.860",
+              "2.160",
+              "5.580"
+            ],
+            [
+              "MP finali desiderate (kg)",
+              "186",
+              "216",
+              "240",
+              "240"
+            ],
+            [
+              "MP iniziali (kg)",
+              "160",
+              "186",
+              "216",
+              "—"
+            ],
+            [
+              "Acquisti MP (kg)",
+              "1.586",
+              "1.890",
+              "2.184",
+              "5.660"
+            ],
+            [
+              "Acquisti MP (€)",
+              "12.688",
+              "15.120",
+              "17.472",
+              "45.280"
+            ]
+          ]
+        },
+        {
+          "text": "Quadratura fisica trimestrale: PF iniziali 100 + produzione 1.860 − vendite 1.800 = PF finali 160. Materie prime iniziali 160 + acquisti 5.660 − consumi 5.580 = finali 240 kg. Il consumo previsto in aprile è 800 × 3 = 2.400 kg e il 10% corrisponde ai 240 kg di scorta finale di marzo."
+        },
+        {
+          "table": [
+            [
+              "Costo programmato",
+              "Gennaio",
+              "Febbraio",
+              "Marzo",
+              "Trimestre"
+            ],
+            [
+              "Materie prime consumate",
+              "12.480",
+              "14.880",
+              "17.280",
+              "44.640"
+            ],
+            [
+              "MOD (0,5 h × 18 €)",
+              "4.680",
+              "5.580",
+              "6.480",
+              "16.740"
+            ],
+            [
+              "CIF variabili (3 €/pz)",
+              "1.560",
+              "1.860",
+              "2.160",
+              "5.580"
+            ],
+            [
+              "CIF fissi",
+              "9.000",
+              "9.000",
+              "9.000",
+              "27.000"
+            ],
+            [
+              "Totale produzione",
+              "27.720",
+              "31.320",
+              "34.920",
+              "93.960"
+            ],
+            [
+              "Commerciali variabili",
+              "2.500",
+              "3.000",
+              "3.500",
+              "9.000"
+            ],
+            [
+              "Commerciali e amm. fissi",
+              "4.000",
+              "4.000",
+              "4.000",
+              "12.000"
+            ]
+          ]
+        },
+        {
+          "text": "L’ora standard di MOD per trimestre è 1.860 × 0,5 = 930 ore. Il costo unitario variabile industriale è 3 kg × 8 € + 0,5 h × 18 € + 0,5 h × 6 € = 36 €/unità. Con i costi indiretti fissi trimestrali ripartiti sulle 1.860 unità si ottiene la quota fissa standard di 14,516129 €/unità e dunque il costo industriale pieno preventivo di 50,516129 €/unità."
+        },
+        {
+          "heading": "Costo industriale unitario = 24 + 9 + 3 + (27.000 / 1.860) = 50,516129 €/pz"
+        }
+      ],
+      "concept": "Caso integrato: budget operativi"
+    },
+    {
+      "id": "12-25",
+      "title": "12.25 Caso integrato: conto economico preventivo",
+      "topics": [
+        "cdg-c12-t25"
+      ],
+      "blocks": [
+        {
+          "text": "Il conto economico preventivo al costo pieno industriale si costruisce valorizzando la produzione e le scorte. È essenziale non imputare interamente a costo del venduto i 1.860 pezzi prodotti: le vendite sono 1.800 pezzi e le scorte finali aumentano di 60 pezzi."
+        },
+        {
+          "table": [
+            [
+              "Voce economica",
+              "Trimestre (€)"
+            ],
+            [
+              "Ricavi di vendita",
+              "216.000,00"
+            ],
+            [
+              "Costo della produzione ottenuta",
+              "93.960,00"
+            ],
+            [
+              "+ Rimanenze iniziali prodotti finiti",
+              "5.051,61"
+            ],
+            [
+              "− Rimanenze finali prodotti finiti",
+              "(8.082,58)"
+            ],
+            [
+              "Costo industriale del venduto",
+              "90.929,03"
+            ],
+            [
+              "Margine industriale",
+              "125.070,97"
+            ],
+            [
+              "Spese commerciali variabili",
+              "(9.000,00)"
+            ],
+            [
+              "Spese commerciali / amm. fisse",
+              "(12.000,00)"
+            ],
+            [
+              "RISULTATO OPERATIVO",
+              "104.070,97"
+            ],
+            [
+              "Oneri finanziari previsti",
+              "(102,28)"
+            ],
+            [
+              "UTILE NETTO PREVISTO (imposte escluse)",
+              "103.968,69"
+            ]
+          ]
+        },
+        {
+          "text": "Verifica: il costo industriale del venduto = 1.800 × 50,516129 = 90.929,03 € (approssimato ai centesimi), coerente con rimanenze iniziali + produzione − rimanenze finali. L’ammortamento produttivo e quello amministrativo sono già inclusi rispettivamente nei 27.000 € di CIF fissi e nei 12.000 € di costi operativi fissi: non devono essere sottratti una seconda volta."
+        }
+      ],
+      "concept": "Caso integrato: conto economico preventivo"
+    },
+    {
+      "id": "12-26",
+      "title": "12.26 Caso integrato: cassa e fabbisogno finanziario",
+      "topics": [
+        "cdg-c12-t26"
+      ],
+      "blocks": [
+        {
+          "text": "La costruzione del budget di cassa richiede dati distinti da quelli del conto economico. Si determinano prima gli incassi relativi alle vendite attuali e pregresse, poi i pagamenti a fornitori, personale e funzioni, e infine il fabbisogno dovuto all’investimento."
+        },
+        {
+          "image": "cdg-p161-1.png",
+          "caption": "Nel trimestre ricavi e incassi mensili non coincidono a causa delle dilazioni.",
+          "alt": "Nel trimestre ricavi e incassi mensili non coincidono a causa delle dilazioni."
+        },
+        {
+          "table": [
+            [
+              "Flussi di cassa",
+              "Gennaio",
+              "Febbraio",
+              "Marzo",
+              "Trimestre"
+            ],
+            [
+              "Incassi da clienti",
+              "84.000",
+              "67.200",
+              "79.200",
+              "230.400"
+            ],
+            [
+              "Pagamenti materie",
+              "12.344",
+              "13.904",
+              "16.296",
+              "42.544"
+            ],
+            [
+              "Pagamenti MOD",
+              "4.680",
+              "5.580",
+              "6.480",
+              "16.740"
+            ],
+            [
+              "Pagamenti CIF (senza amm.)",
+              "8.560",
+              "8.860",
+              "9.160",
+              "26.580"
+            ],
+            [
+              "Pagamenti S&A (senza amm.)",
+              "6.000",
+              "6.500",
+              "7.000",
+              "19.500"
+            ],
+            [
+              "Tot. pagamenti operativi",
+              "31.584",
+              "34.844",
+              "38.936",
+              "105.364"
+            ],
+            [
+              "Flusso operativo netto",
+              "52.416",
+              "32.356",
+              "40.264",
+              "125.036"
+            ],
+            [
+              "Investimento impianto",
+              "0",
+              "(90.000)",
+              "0",
+              "(90.000)"
+            ],
+            [
+              "Nuovo finanziamento",
+              "0",
+              "10.228",
+              "0",
+              "10.228"
+            ],
+            [
+              "Rimborso finanziamento",
+              "0",
+              "0",
+              "(10.228)",
+              "(10.228)"
+            ],
+            [
+              "Interessi",
+              "0",
+              "0",
+              "(102,28)",
+              "(102,28)"
+            ],
+            [
+              "Cassa finale",
+              "67.416",
+              "20.000",
+              "49.933,72",
+              "49.933,72"
+            ]
+          ]
+        },
+        {
+          "text": "Gennaio: saldo iniziale 15.000 + 84.000 − 31.584 = 67.416 €. Febbraio prima di richiedere credito: 67.416 + 67.200 − 34.844 − 90.000 = 9.772 €, inferiore alla soglia minima di 20.000 €: il prestito necessario è 10.228 €. Marzo: 20.000 + 79.200 − 38.936 − 10.228 − 102,28 = 49.933,72 €."
+        },
+        {
+          "image": "cdg-p162-1.png",
+          "caption": "Saldo mensile previsto con soglia di liquidità minima e copertura di febbraio.",
+          "alt": "Saldo mensile previsto con soglia di liquidità minima e copertura di febbraio."
+        },
+        {
+          "text": "Le vendite complessive sono 216.000 € mentre gli incassi sono 230.400 €: la differenza dipende dall’utilizzo del credito iniziale. I costi per acquisti di materiali 45.280 € differiscono dai pagamenti a fornitori 42.544 €; ciò comporta la variazione del debito verso fornitori. Questa è la ragione per cui un master budget ha bisogno di più prospetti collegati."
+        }
+      ],
+      "concept": "Caso integrato: cassa e fabbisogno finanziario"
+    },
+    {
+      "id": "12-27",
+      "title": "12.27 Caso integrato: stato patrimoniale e quadrature",
+      "topics": [
+        "cdg-c12-t27"
+      ],
+      "blocks": [
+        {
+          "text": "Per costruire lo Stato Patrimoniale preventivo si derivano le voci finali dal piano: cassa 49.933,72 €, crediti finali 40% delle vendite di marzo = 33.600 €, materie prime finali 240 kg × 8 = 1.920 €, prodotti finiti finali 160 × 50,516129 = 8.082,58 €. Le immobilizzazioni nette diventano 100.000 + 90.000 − 7.500 = 182.500 €. Il debito verso fornitori è il 50% degli acquisti di marzo, pari a 8.736 €. Il debito finanziario finale è zero, perché interamente rimborsato."
+        },
+        {
+          "table": [
+            [
+              "Stato patrimoniale al 31 marzo",
+              "Importo (€)"
+            ],
+            [
+              "ATTIVITÀ",
+              ""
+            ],
+            [
+              "Liquidità",
+              "49.933,72"
+            ],
+            [
+              "Crediti verso clienti",
+              "33.600,00"
+            ],
+            [
+              "Rimanenze materie prime",
+              "1.920,00"
+            ],
+            [
+              "Rimanenze prodotti finiti",
+              "8.082,58"
+            ],
+            [
+              "Immobilizzazioni nette",
+              "182.500,00"
+            ],
+            [
+              "TOTALE ATTIVITÀ",
+              "276.036,30"
+            ],
+            [
+              "PASSIVITÀ E PATRIMONIO NETTO",
+              ""
+            ],
+            [
+              "Debiti verso fornitori",
+              "8.736,00"
+            ],
+            [
+              "Debiti finanziari",
+              "0,00"
+            ],
+            [
+              "Patrimonio netto iniziale",
+              "163.331,61"
+            ],
+            [
+              "Utile previsto nel trimestre",
+              "103.968,69"
+            ],
+            [
+              "TOTALE PASSIVITÀ + PN",
+              "276.036,30"
+            ]
+          ]
+        },
+        {
+          "text": "L’utile previsto entra nel patrimonio netto: 163.331,61 + 103.968,69 = 267.300,30 €. Il totale passività + patrimonio netto è 8.736 + 267.300,30 = 276.036,30 €, uguale al totale attività. Il saldo iniziale di patrimonio netto è determinato per differenza dalle attività iniziali meno 6.000 € di debiti, coerentemente con l’ipotesi di modello."
+        },
+        {
+          "image": "cdg-p163-1.png",
+          "caption": "Le tre verifiche fondamentali della coerenza del master budget.",
+          "alt": "Le tre verifiche fondamentali della coerenza del master budget."
+        },
+        {
+          "text": "I centesimi esposti derivano dall’arrotondamento di un costo industriale unitario periodico. Nelle verifiche conviene mantenere precisione piena nei calcoli intermedi e arrotondare solo ai prospetti finali."
+        }
+      ],
+      "concept": "Caso integrato: stato patrimoniale e quadrature"
+    },
+    {
+      "id": "12-28",
+      "title": "12.28 Lettura critica degli esercizi Arcari cap. 10",
+      "topics": [
+        "cdg-c12-t28"
+      ],
+      "blocks": [
+        {
+          "text": "Le soluzioni editoriali del testo Arcari, IV edizione, cap. 10, contengono una sequenza di esercizi molto utile per preparare la prova scritta. Poiché disponiamo dei fascicoli delle soluzioni e non sempre dei testi completi del libro, si può ricostruire il metodo dai passaggi pubblicati, senza inventare i dati di partenza non visibili."
+        },
+        {
+          "table": [
+            [
+              "Esercizio",
+              "Contenuto riconoscibile nelle soluzioni",
+              "Competenza allenata"
+            ],
+            [
+              "10.1 — Pastine / omogeneizzati",
+              "Vendite, piano di produzione, consumi e acquisti, costo standard, CE",
+              "Sequenza operativa e rimanenze"
+            ],
+            [
+              "10.2 — Manifatture Palma",
+              "Produzione, materiali, MOD, costo del venduto, CE",
+              "Master budget industriale"
+            ],
+            [
+              "10.3 — Produzioni Brambilla",
+              "Budget trimestrale di vendita, produzione, materiali e costi",
+              "Programmazione per mese"
+            ],
+            [
+              "10.4 — Studio odontoiatrico",
+              "Budget di cassa e possibile piano correttivo",
+              "Liquidità e azioni alternative"
+            ],
+            [
+              "10.5 — Newport Stationery",
+              "Cassa, CE e SP preventivi",
+              "Riconciliazioni finanziarie"
+            ],
+            [
+              "10.6 — Piano di contingenza",
+              "Programma di cassa con revisione delle uscite",
+              "Gestione carenza di cassa"
+            ],
+            [
+              "10.7 — Master budget",
+              "Vendite, investimenti, finanziario, CE e SP preventivi",
+              "Integrazione finale"
+            ]
+          ]
+        },
+        {
+          "text": "Esempio Arcari 10.2 (dati del prospetto editoriale): per Palmbeach il piano di produzione è 12.000 + 300 − 400 = 11.900 unità; per Palm è 9.000 + 200 − 150 = 9.050 unità. Questa identità precede i calcoli di acquisti e MOD. Esempio Arcari 10.1: il budget trimestrale delle vendite complessive nel prospetto editoriale è 192.000 €, ottenuto sommando 62.000, 76.000 e 54.000 € dei tre mesi."
+        },
+        {
+          "text": "Per il caso Arcari 10.4 l’informazione essenziale è distinguere il deficit di cassa dal risultato economico: il modello ricostruisce entrate e pagamenti in base alle scadenze, quindi valuta le azioni finanziarie. Nel caso Newport 10.5 l’analisi si chiude con la quadratura dello Stato Patrimoniale; il caso 10.7 esercita la costruzione di un vero budget integrato. Tali schemi sono utili anche quando cambia completamente il settore aziendale."
+        }
+      ],
+      "concept": "Lettura critica degli esercizi Arcari cap. 10"
+    },
+    {
+      "id": "12-29",
+      "title": "12.29 Budget flessibile, forecast rivisto e rolling budget",
+      "topics": [
+        "cdg-c12-t29"
+      ],
+      "blocks": [
+        {
+          "text": "Il budget statico è approvato per un livello di attività programmato. Il budget flessibile ricalcola costi e ricavi coerentemente con un livello effettivo o alternativo, isolando l’effetto volume da quello di efficienza e prezzo. Il revised budget aggiorna formalmente alcune ipotesi o obiettivi; il rolling budget estende continuamente l’orizzonte aggiungendo nuovi periodi, invece di attendere il nuovo esercizio."
+        },
+        {
+          "heading": "Budget flessibile dei costi = Costi fissi previsti + Costo variabile unitario standard × Volume effettivo"
+        },
+        {
+          "text": "Esempio: 10.000 € di fissi e 7 € di variabili per pezzo; budget statico riferito a 1.000 pezzi = 17.000 €. Se si producono 1.200 pezzi, il budget flessibile è 18.400 €. Con costi effettivi di 19.100 €, lo scostamento sfavorevole controllabile rispetto al budget flessibile è 700 €, non i 2.100 € ottenuti confrontando il consuntivo con lo statico."
+        },
+        {
+          "text": "Il budget flessibile serve al controllo e sarà ripreso in modo sistematico nel Capitolo 13. Qui è importante comprendere perché la preparazione del budget deve raccogliere dati separati su volumi, costi variabili unitari e fissi."
+        }
+      ],
+      "concept": "Budget flessibile, forecast rivisto e rolling budget"
+    },
+    {
+      "id": "12-30",
+      "title": "12.30 Approcci incrementale, zero-based e activity-based",
+      "topics": [
+        "cdg-c12-t30"
+      ],
+      "blocks": [
+        {
+          "image": "cdg-p164-1.png",
+          "caption": "Principali approcci: incrementale, zero-based, activity-based e rolling.",
+          "alt": "Principali approcci: incrementale, zero-based, activity-based e rolling."
+        },
+        {
+          "text": "Nel budgeting incrementale si parte dal budget o consuntivo precedente e si applicano le modifiche previste; è rapido, ma conserva inefficienze e stanziamenti non giustificati. Nel budget a base zero (zero-based budgeting, ZBB) ogni spesa o attività deve essere motivata sulla base delle risorse necessarie agli obiettivi del nuovo periodo, spesso mediante pacchetti decisionali; è informativo ma più oneroso da preparare."
+        },
+        {
+          "text": "L’activity-based budgeting parte dalle attività e dai rispettivi driver per stimare risorse e costi coerenti con la domanda prevista, integrando la logica dell’ABC. Il rolling budget mantiene un orizzonte mobile (per esempio sempre dodici mesi), aggiornandolo mese dopo mese o trimestre dopo trimestre. L’approccio beyond budgeting propone modelli gestionali più adattivi rispetto agli obiettivi annuali rigidamente fissati: è un campo di approfondimento, non una regola obbligatoria per tutte le imprese."
+        },
+        {
+          "text": "Nella selezione occorre valutare stabilità ambientale, disponibilità dati, disponibilità dei responsabili, necessità di innovazione e costo di preparazione. I riferimenti professionali ACCA descrivono i vantaggi e i limiti di ZBB, ABB e rolling budget; le soluzioni editoriali Arcari 11.5 e 11.6 analizzano i limiti del budgeting tradizionale e il budgeting basato sulle attività."
+        }
+      ],
+      "concept": "Approcci incrementale, zero-based e activity-based"
+    },
+    {
+      "id": "12-31",
+      "title": "12.31 Governance del budget e aspetti comportamentali",
+      "topics": [
+        "cdg-c12-t31"
+      ],
+      "blocks": [
+        {
+          "image": "cdg-p164-2.png",
+          "caption": "Interazione fra definizione top-down, proposte bottom-up e negoziazione.",
+          "alt": "Interazione fra definizione top-down, proposte bottom-up e negoziazione."
+        },
+        {
+          "text": "Nell’approccio top-down gli obiettivi vengono indicati dal vertice e articolati nelle unità; nel bottom-up le proposte nascono dai responsabili operativi e vengono consolidate. Nelle organizzazioni complesse è frequente un processo negoziale che combina obiettivi strategici e conoscenze locali, riducendo il rischio di budget non realizzabili."
+        },
+        {
+          "text": "Il controller definisce procedure, assiste nella raccolta dei dati, verifica coerenza e quadrature, presenta analisi e coordina revisioni. Il comitato di budget coinvolge la direzione e le funzioni interessate, approva indirizzi e risolve conflitti. La responsabilità sugli obiettivi dovrebbe rispettare il principio di controllabilità: non è corretto giudicare un manager esclusivamente su costi che non può influenzare."
+        },
+        {
+          "text": "Il budgeting partecipativo può aumentare motivazione e qualità delle informazioni, ma può generare budgetary slack: sovrastima dei costi o sottostima dei ricavi per rendere gli obiettivi più facili da raggiungere. Le soluzioni ufficiali Arcari 11.2– 11.5 richiamano i conflitti fra pianificazione, motivazione e valutazione, il rischio di stime distorte e i limiti del controllo eccessivamente legato a target annuali."
+        }
+      ],
+      "concept": "Governance del budget e aspetti comportamentali"
+    },
+    {
+      "id": "12-32",
+      "title": "12.32 Budget in imprese commerciali, di servizi e software",
+      "topics": [
+        "cdg-c12-t32"
+      ],
+      "blocks": [
+        {
+          "text": "In un’impresa commerciale non è necessario calcolare il costo della produzione ottenuta: si pianificano vendite, acquisti di merci, rimanenze e costo del venduto. Per un’impresa di servizi la capacità viene espressa in ore fatturabili, posti disponibili, visite o pratiche gestite; una tariffa non sostituisce la stima delle ore e dell’efficienza di impiego."
+        },
+        {
+          "text": "Caso di servizi software: 6 sviluppatori, 160 ore teoriche/mese ciascuno, coefficiente di fatturabilità 75%, tariffa media 90 €/ora. Le ore vendibili stimate sono 6 × 160 × 0,75 = 720 h/mese; il ricavo potenziale è 64.800 €/mese. Il budget deve considerare anche attività non fatturabili, ferie, manutenzione di prodotto, licenze, cloud, commerciali e ritardi di pagamento. La capacità teorica non coincide con quella vendibile."
+        },
+        {
+          "text": "Nel settore energetico il budget può distinguere clienti/segmenti, kWh, prezzo unitario, acquisti, sbilanciamenti, margini e stagionalità. Non basta moltiplicare consumi per prezzo: occorre separare variabili che dipendono da volumi e variabili contrattuali e di calendario, documentando assunzioni e rischi regolatori."
+        }
+      ],
+      "concept": "Budget in imprese commerciali, di servizi e software"
+    },
+    {
+      "id": "12-33",
+      "title": "12.33 Modelli informativi, Excel/ERP e qualità dei dati",
+      "topics": [
+        "cdg-c12-t33"
+      ],
+      "blocks": [
+        {
+          "image": "cdg-p165-1.png",
+          "caption": "Disegno di un modello di budgeting verificabile e replicabile.",
+          "alt": "Disegno di un modello di budgeting verificabile e replicabile."
+        },
+        {
+          "text": "Un foglio di calcolo o software di budgeting attendibile deve distinguere input, parametri standard, formule e report. Occorre mantenere un dizionario dei dati, usare unità di misura e periodi coerenti, separare dati consuntivi da ipotesi e bloccare le celle di calcolo critiche. Il controllo di versione e la tracciabilità delle modifiche riducono il rischio che più responsabili preparino budget basati su numeri diversi."
+        },
+        {
+          "text": "Controlli automatici minimi: vendite + scorte finali − scorte iniziali = produzione; acquisti = consumi + variazione scorte MP; ricavi = quantità × prezzo; cassa finale = iniziale + flussi; crediti e debiti finali = iniziali + operazioni − incassi/pagamenti; attività = passività + patrimonio netto. Se uno di questi controlli è diverso da zero, il modello non dovrebbe essere approvato."
+        }
+      ],
+      "concept": "Modelli informativi, Excel/ERP e qualità dei dati"
+    },
+    {
+      "id": "12-34",
+      "title": "12.34 Stress test e analisi di sensibilità",
+      "topics": [
+        "cdg-c12-t34"
+      ],
+      "blocks": [
+        {
+          "text": "Il budget deve essere sottoposto a simulazioni perché una previsione puntuale non descrive tutta l’incertezza. Una variabile sensibile è quella la cui modifica produce un forte impatto sul risultato o sulla cassa. Nei budget industriali, volumi, prezzi, costi MP, tempi di incasso e investimenti sono spesso le variabili più importanti."
+        },
+        {
+          "text": "Esempio: 1.000 unità previste a 100 € ciascuna, costo variabile unitario 60 €, costi fissi 25.000 €. Risultato operativo atteso = 15.000 €. Se il prezzo diminuisce a 95 € e i volumi restano 1.000, il risultato scende a 10.000 €. Se invece il volume scende a 900 al prezzo originario, il risultato è 900 × (100 − 60) − 25.000 = 11.000 €. La previsione realistica può richiedere l’effetto simultaneo di prezzi, volumi e tempi di pagamento."
+        },
+        {
+          "text": "Un budget di scenario può presentare scenario base, pessimistico e ottimistico, con assunzioni trasparenti. La probabilità dei diversi scenari va usata soltanto quando è giustificata da dati o valutazioni esplicite. Per la liquidità, uno scenario sfavorevole può richiedere una linea di credito preventiva pur in presenza di un budget economico positivo."
+        }
+      ],
+      "concept": "Stress test e analisi di sensibilità"
+    },
+    {
+      "id": "12-35",
+      "title": "12.35 Errori tipici e strategia per lo scritto",
+      "topics": [
+        "cdg-c12-t35"
+      ],
+      "blocks": [
+        {
+          "text": "• Confondere vendite con produzione o utilizzare le scorte finali nel periodo sbagliato."
+        },
+        {
+          "text": "• Confondere consumo e acquisto delle materie prime, oppure costi e pagamenti."
+        },
+        {
+          "text": "• Sommare rimanenze iniziali e finali con segni invertiti: controllare sempre l’identità fisica."
+        },
+        {
+          "text": "• Omettere il costo degli ammortamenti nel conto economico oppure inserirli come uscita di cassa."
+        },
+        {
+          "text": "• Non riportare crediti e debiti pregressi nei primi mesi del budget di cassa."
+        },
+        {
+          "text": "• Inserire investimenti direttamente tra i costi operativi, causando una doppia contabilizzazione."
+        },
+        {
+          "text": "• Non prevedere la liquidità minima e le commissioni/condizioni dei finanziamenti."
+        },
+        {
+          "text": "• Non verificare la quadratura dello Stato Patrimoniale preventivo."
+        },
+        {
+          "text": "• Arrotondare coefficienti di costo prima dei calcoli del costo del venduto, causando differenze evitabili."
+        },
+        {
+          "text": "• Trattare il budget come una previsione immutabile anziché come un piano da monitorare e aggiornare."
+        },
+        {
+          "text": "In 60 minuti di esame è preferibile scrivere subito le identità fondamentali, distinguere unità di misura e periodi, costruire prospetti ordinati e verificare per ogni tabella i totali. Gli esercizi del manuale Arcari consentono di allenare sia singoli budget sia casi integrati."
+        }
+      ],
+      "concept": "Errori tipici e strategia per lo scritto"
+    },
+    {
+      "id": "12-36",
+      "title": "12.36 Formulario ragionato del capitolo",
+      "topics": [
+        "cdg-c12-t36"
+      ],
+      "blocks": [
+        {
+          "heading": "Ricavi = Σ(Prezzo unitario × Quantità di vendita)"
+        },
+        {
+          "heading": "Produzione = Vendite + PF finali desiderati − PF iniziali"
+        },
+        {
+          "heading": "Consumi MP = Produzione × Standard MP per unità"
+        },
+        {
+          "heading": "Acquisti MP = Consumi + MP finali desiderate − MP iniziali"
+        },
+        {
+          "heading": "Ore MOD = Produzione × Ore standard/unità; Costo MOD = Ore MOD × Tariffa standard"
+        },
+        {
+          "heading": "CIF = Fissi previsti + Tariffa variabile × Unità di driver"
+        },
+        {
+          "heading": "Costo produzione ottenuta = MP consumate + MOD + CIF ± Δ semilavorati"
+        },
+        {
+          "heading": "Costo del venduto = PF iniziali + Produzione ottenuta − PF finali"
+        },
+        {
+          "heading": "Incassi = Incassi su vendite correnti + Incassi su crediti pregressi"
+        },
+        {
+          "heading": "Pagamenti MP = Pagamenti acquisti correnti + Pagamenti debiti pregressi"
+        },
+        {
+          "heading": "Cassa finale = Cassa iniziale + Incassi − Uscite + Nuovi finanziamenti − Rimborsi"
+        },
+        {
+          "heading": "Fabbisogno prestito = max[0; Cassa minima − Cassa pre-finanziamento]"
+        },
+        {
+          "heading": "Attività finali = Passività finali + Patrimonio netto finale"
+        },
+        {
+          "heading": "Budget flessibile costi = Fissi a budget + CV standard unitario × Volume effettivo"
+        }
+      ],
+      "concept": "Formulario ragionato del capitolo"
+    },
+    {
+      "id": "12-37",
+      "title": "12.37 Esercizi guidati e prove autonome",
+      "topics": [
+        "cdg-c12-t37"
+      ],
+      "blocks": [
+        {
+          "text": "Gli esercizi seguenti sono originali e svolgibili senza ricorrere al libro. Per ciascuno si raccomanda di annotare unità di misura, ipotesi e formula utilizzata prima dei calcoli. Le soluzioni sono nella sezione successiva."
+        },
+        {
+          "text": "E1 — Vendite multiprodotto A: 800 pezzi a 75 €; B: 350 a 120 €. Calcolare i ricavi preventivati e l’effetto di una riduzione del prezzo di B del 10%, a quantità invariate."
+        },
+        {
+          "text": "E2 — Piano di produzione Vendite gennaio 900, febbraio 1.100, marzo 1.200; PF iniziali 120; PF finali desiderati pari al 20% delle vendite del mese successivo; aprile previste 1.300. Determinare produzione mensile e totale trimestre."
+        },
+        {
+          "text": "E3 — Consumi e acquisti di materiali Produzione prevista 1.500 pezzi; 2 kg per pezzo a 6 €/kg; MP iniziali 240 kg, finali desiderate 300 kg. Calcolare consumi, acquisti e relativo costo. Verificare scorte."
+        },
+        {
+          "text": "E4 — MOD e capacità Produzione 3.600 unità; 0,40 h/u; costo orario 22 €. Sei addetti, 160 h nominali/mese, disponibilità produttiva 85%. Determinare costo MOD e deficit o surplus di ore."
+        },
+        {
+          "text": "E5 — Costi indiretti e ammortamenti CIF fissi 18.000 €/mese, di cui 4.000 € ammortamenti; CIF variabili 5 €/ora macchina per 1.600 ore. Determinare costo totale di competenza e pagamento di cassa, assumendo tutte le altre voci pagate nel mese."
+        },
+        {
+          "text": "E6 — Costo industriale e venduto Produzione ottenuta 76.000 €, PF iniziali 9.000 €, PF finali 13.000 €. Ricavi 140.000 €, spese commerciali e amm. 22.000 €. Calcolare costo del venduto, margine industriale e risultato operativo."
+        },
+        {
+          "text": "E7 — Incassi differiti Ricavi dicembre 40.000 €, gennaio 50.000 €, febbraio 60.000 €; 30% incassato subito, 70% mese successivo. Calcolare incassi di gennaio e febbraio e crediti al 28 febbraio."
+        },
+        {
+          "text": "E8 — Pagamenti fornitori Acquisti gennaio 30.000 €, febbraio 50.000 €; debiti pregressi al 1 gennaio 8.000 € pagabili in gennaio; 60% acquisti pagato subito e 40% dopo un mese. Calcolare pagamenti gennaio e febbraio e debito finale febbraio."
+        },
+        {
+          "text": "E9 — Budget di cassa e finanziamento Cassa iniziale 8.000; incassi 42.000; uscite correnti 36.000; acquisto impianto 25.000; cassa minima 10.000. Determinare cassa pre-finanziamento e prestito necessario."
+        },
+        {
+          "text": "E10 — Budget flessibile CV unitari previsti 12 €, fissi 30.000 €, volume budget 4.000, effettivo 4.500, costi effettivi 86.500 €. Calcolare statico, flessibile e scostamento effettivo vs flessibile."
+        },
+        {
+          "text": "E11 — Riclassificazione e bilancio integrato Vendite 100.000, MP 22.000, MOD 15.000, CIF 18.000, aumento di PF 3.000, costi S&A 12.000, interessi 1.000; imposte escluse. Calcolare costo del venduto, risultato operativo e utile."
+        },
+        {
+          "text": "E12 — Strategia e scostamento Budget ricavi 500.000 €; consuntivo semestre 225.000 €; previsione secondo semestre 240.000 €. Calcolare forecast annuo e gap rispetto al budget, indicando un motivo per cui forecast e target non devono essere confusi."
+        },
+        {
+          "text": "E13 — Rolling vs statico Un budget annuale copre gennaio–dicembre. A fine marzo la direzione mantiene un orizzonte rolling di 12 mesi: quali mesi includerà l’orizzonte nuovo e quale vantaggio ha rispetto al budget statico?"
+        },
+        {
+          "text": "E14 — Integrato: scorte + acquisti Vendite 400 pezzi, PF iniziali 50, finali desiderati 70; standard 4 kg MP per unità, MP iniziali 90 kg, finali 120 kg, prezzo 5 €/kg. Trovare produzione, consumo, acquisti e valorizzazioni."
+        },
+        {
+          "text": "E15 — Controllo di quadratura A fine periodo: cassa 18.000, crediti 12.000, rimanenze 15.000, immobilizzazioni 85.000; debiti 45.000, patrimonio netto iniziale 75.000 e nessun conferimento/dividendo. Determinare utile previsto che assicura la quadratura."
+        }
+      ],
+      "concept": "Esercizi guidati e prove autonome"
+    },
+    {
+      "id": "12-38",
+      "title": "12.38 Soluzioni complete agli esercizi",
+      "topics": [
+        "cdg-c12-t38"
+      ],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "E1 — Soluzione ragionata A 800 × 75 = 60.000 €; B 350 × 120 = 42.000 €; totale 102.000 €. Prezzo B a 108 €: ricavi B 37.800 €, ricavi totali 97.800 €; variazione −4.200 €."
+            },
+            {
+              "text": "E2 — Soluzione ragionata PF fine gennaio = 20% × 1.100 = 220; fine febbraio = 240; fine marzo = 260. Produzione gennaio 900+220−120=1.000; febbraio 1.100+240−220=1.120; marzo 1.200+260−240=1.220; trimestre 3.340."
+            },
+            {
+              "text": "E3 — Soluzione ragionata Consumo 1.500×2=3.000 kg, costo consumo 18.000 €. Acquisti 3.000+300−240=3.060 kg, costo 18.360 €. Verifica 240+3.060−3.000=300 kg finali."
+            },
+            {
+              "text": "E4 — Soluzione ragionata Ore necessarie 3.600×0,40=1.440; costo 31.680 €. Ore disponibili 6×160×0,85=816; deficit =624 ore. L’ipotesi di un mese non è compatibile con il piano senza misure correttive."
+            },
+            {
+              "text": "E5 — Soluzione ragionata CIF variabili=5×1.600=8.000; totale economico=18.000+8.000=26.000 €. Pagamenti=26.000−4.000=22.000 €."
+            },
+            {
+              "text": "E6 — Soluzione ragionata Costo del venduto=9.000+76.000−13.000=72.000; margine=140.000−72.000=68.000; risultato operativo=68.000−22.000=46.000 €."
+            },
+            {
+              "text": "E7 — Soluzione ragionata Gennaio: 70% × 40.000 + 30% × 50.000 =43.000 €. Febbraio:70%×50.000 +30%×60.000=53.000 €. Crediti finali febbraio=70%×60.000=42.000 €."
+            },
+            {
+              "text": "E8 — Soluzione ragionata Gennaio=8.000+60%×30.000=26.000 €. Febbraio=40%×30.000+60%×50.000=42.000 €. Debito finale febbraio=40%×50.000=20.000 €."
+            },
+            {
+              "text": "E9 — Soluzione ragionata Cassa prima del finanziamento=8.000+42.000−36.000−25.000=−11.000 €. Per arrivare a 10.000 € minimi serve un nuovo prestito di 21.000 €."
+            },
+            {
+              "text": "E10 — Soluzione ragionata Statico=30.000+12×4.000=78.000 €. Flessibile=30.000+12×4.500=84.000 €. Effettivi 86.500: extra-costo sfavorevole=2.500 €, rispetto al flessibile."
+            },
+            {
+              "text": "E11 — Soluzione ragionata Costo del venduto=22.000+15.000+18.000−3.000=52.000 €. Risultato operativo=100.000−52.000−12.000=36.000 €. Utile=36.000−1.000=35.000 €."
+            },
+            {
+              "text": "E12 — Soluzione ragionata Forecast=225.000+240.000=465.000 €; gap=−35.000 € vs 500.000. Il target rappresenta l’obiettivo assegnato, il forecast la stima aggiornata dell’esito probabile."
+            },
+            {
+              "text": "E13 — Soluzione ragionata Nuovo orizzonte di 12 mesi da aprile a marzo dell’anno successivo; aggiunge gennaio–marzo successivi rispetto al budget gennaio–dicembre originario, mantenendo le previsioni continuamente aggiornate."
+            },
+            {
+              "text": "E14 — Soluzione ragionata Produzione=400+70−50=420 pezzi; consumo MP=420×4=1.680 kg; acquisti=1.680+120−90=1.710 kg. Costo consumi=8.400 €, acquisti=8.550 €; quadrature: 50+420−400=70 pezzi, 90+1.710−1.680=120 kg."
+            },
+            {
+              "text": "E15 — Soluzione ragionata Attività finali=18.000+12.000+15.000+85.000=130.000 €. Patrimonio netto finale=130.000−45.000=85.000 €. Utile=85.000−75.000=10.000 €."
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Soluzioni complete agli esercizi"
+    },
+    {
+      "id": "12-39",
+      "title": "12.39 Glossario del capitolo",
+      "topics": [],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Termine",
+              "Definizione operativa"
+            ],
+            [
+              "Piano strategico",
+              "Orientamento pluriennale, scelte competitive e risorse fondamentali."
+            ],
+            [
+              "Budget",
+              "Piano quantitativo approvato per un periodo, articolato in responsabilità e prospetti."
+            ],
+            [
+              "Forecast",
+              "Previsione aggiornata dell’esito probabile, non necessariamente identica al target."
+            ],
+            [
+              "Master budget",
+              "Sistema integrato di budget operativi, investimenti e finanziari."
+            ],
+            [
+              "Budget vendite",
+              "Ricavi attesi per quantità e prezzo."
+            ],
+            [
+              "Piano di produzione",
+              "Quantità da fabbricare, considerando vendite e scorte."
+            ],
+            [
+              "Budget consumi",
+              "Fabbisogno fisico e costo dei fattori utilizzati nella produzione."
+            ],
+            [
+              "Budget acquisti",
+              "Materiali da approvvigionare, tenendo conto delle rimanenze."
+            ],
+            [
+              "Budget di cassa",
+              "Previsione dei flussi monetari e del saldo di liquidità."
+            ],
+            [
+              "Budget flessibile",
+              "Ricalcolo delle componenti variabili per un dato volume di attività."
+            ],
+            [
+              "Rolling budget",
+              "Budget che aggiunge periodi al termine della finestra temporale."
+            ],
+            [
+              "Budgetary slack",
+              "Distorsione prudenziale strategica degli obiettivi di ricavo/costo."
+            ],
+            [
+              "ZBB",
+              "Budget a base zero: stanziamenti giustificati nel nuovo periodo."
+            ],
+            [
+              "ABB",
+              "Budget delle risorse guidato da attività e cost driver."
+            ]
+          ]
+        }
+      ],
+      "concept": "Glossario del capitolo"
+    }
+  ],
+  "relations": [
+    {
+      "to": "12-4",
+      "relation": "Il piano strategico si traduce in traguardi operativi",
+      "from": "12-3"
+    },
+    {
+      "to": "12-5",
+      "relation": "Il budget assegna risorse e quantifica gli obiettivi",
+      "from": "12-4"
+    },
+    {
+      "to": "12-10",
+      "relation": "Il master budget parte spesso dalla previsione delle vendite",
+      "from": "12-7"
+    },
+    {
+      "to": "12-11",
+      "relation": "Vendite e scorte obiettivo determinano la produzione",
+      "from": "12-10"
+    },
+    {
+      "to": "12-12",
+      "relation": "Dai volumi produttivi si stimano i consumi di materia",
+      "from": "12-11"
+    },
+    {
+      "to": "12-13",
+      "relation": "Consumi e scorte di materia determinano gli acquisti",
+      "from": "12-12"
+    },
+    {
+      "to": "12-21",
+      "relation": "Gli incassi e i pagamenti programmati alimentano il budget di cassa",
+      "from": "12-20"
+    },
+    {
+      "to": "12-22",
+      "relation": "La previsione finanziaria contribuisce alla quadratura patrimoniale",
+      "from": "12-21"
+    }
+  ]
+}

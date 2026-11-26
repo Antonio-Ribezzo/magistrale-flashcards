@@ -1,0 +1,3486 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cdg",
+  "source": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi; PDF fornito dall’utente, pagine PDF 26–40 (da §4.1 a §4.16). Fonte unica autorizzata.",
+  "chapter": {
+    "id": "cdg-c04",
+    "title": "Classificazioni, configurazioni e comportamento dei costi",
+    "order": 4,
+    "topics": [
+      {
+        "id": "cdg-c04-t01",
+        "title": "Perché classificare i costi e impostare il calcolo"
+      },
+      {
+        "id": "cdg-c04-t02",
+        "title": "Costo di acquisto, produzione e Total Cost of Ownership"
+      },
+      {
+        "id": "cdg-c04-t03",
+        "title": "Oggetti di costo, tracciabilità e driver"
+      },
+      {
+        "id": "cdg-c04-t04",
+        "title": "Classificazione per natura e destinazione"
+      },
+      {
+        "id": "cdg-c04-t05",
+        "title": "Costi diretti e indiretti"
+      },
+      {
+        "id": "cdg-c04-t06",
+        "title": "Costi variabili, fissi, misti e a scatti"
+      },
+      {
+        "id": "cdg-c04-t07",
+        "title": "Costi specifici/comuni, congiunti e di prodotto/periodo"
+      },
+      {
+        "id": "cdg-c04-t08",
+        "title": "Costi eliminabili, differenziali, incrementali, sommersi e rilevanti"
+      },
+      {
+        "id": "cdg-c04-t09",
+        "title": "Orizzonte temporale, costi monetari, opportunità e controllabilità"
+      },
+      {
+        "id": "cdg-c04-t10",
+        "title": "Relazioni tra classificazioni e intervallo di rilevanza"
+      },
+      {
+        "id": "cdg-c04-t11",
+        "title": "Stima della funzione di costo: high–low e regressione"
+      },
+      {
+        "id": "cdg-c04-t12",
+        "title": "Configurazioni progressive di costo"
+      },
+      {
+        "id": "cdg-c04-t13",
+        "title": "Valori consuntivi, attuali, preventivi e standard"
+      },
+      {
+        "id": "cdg-c04-t14",
+        "title": "Rimanenze, OIC 13 e capacità produttiva normale"
+      },
+      {
+        "id": "cdg-c04-t15",
+        "title": "Caso integrato di costing dei prodotti A e B"
+      },
+      {
+        "id": "cdg-c04-t16",
+        "title": "Caso TCO: confronto soluzioni X e Y"
+      },
+      {
+        "id": "cdg-c04-t17",
+        "title": "Decisioni differenziali: ordine speciale e costo opportunità"
+      },
+      {
+        "id": "cdg-c04-t18",
+        "title": "Errori ricorrenti e metodo d’esame"
+      },
+      {
+        "id": "cdg-c04-t19",
+        "title": "Esercitazioni autonome e glossario operativo"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§4.1 — pagina PDF 26",
+        "cardIds": [
+          "cdg-c04-q001",
+          "cdg-c04-q002",
+          "cdg-c04-q003",
+          "cdg-c04-q004",
+          "cdg-c04-q005"
+        ]
+      },
+      {
+        "label": "§4.2.1 — pagina PDF 27",
+        "cardIds": [
+          "cdg-c04-q006",
+          "cdg-c04-q007",
+          "cdg-c04-q008"
+        ]
+      },
+      {
+        "label": "§4.2.2 — pagina PDF 27",
+        "cardIds": [
+          "cdg-c04-q009",
+          "cdg-c04-q010"
+        ]
+      },
+      {
+        "label": "§4.2.3 — pagina PDF 27",
+        "cardIds": [
+          "cdg-c04-q011",
+          "cdg-c04-q012",
+          "cdg-c04-q013",
+          "cdg-c04-q014"
+        ]
+      },
+      {
+        "label": "§4.3 — pagina PDF 27",
+        "cardIds": [
+          "cdg-c04-q015",
+          "cdg-c04-q016"
+        ]
+      },
+      {
+        "label": "§4.3 — pagina PDF 28",
+        "cardIds": [
+          "cdg-c04-q017",
+          "cdg-c04-q018",
+          "cdg-c04-q019",
+          "cdg-c04-q020",
+          "cdg-c04-q021",
+          "cdg-c04-q022",
+          "cdg-c04-q023",
+          "cdg-c04-q024"
+        ]
+      },
+      {
+        "label": "§4.4 — pagina PDF 28",
+        "cardIds": [
+          "cdg-c04-q025",
+          "cdg-c04-q026",
+          "cdg-c04-q027",
+          "cdg-c04-q028"
+        ]
+      },
+      {
+        "label": "§4.5.1 — pagina PDF 28",
+        "cardIds": [
+          "cdg-c04-q029",
+          "cdg-c04-q030"
+        ]
+      },
+      {
+        "label": "§4.5.1 — pagina PDF 29",
+        "cardIds": [
+          "cdg-c04-q031",
+          "cdg-c04-q032",
+          "cdg-c04-q033"
+        ]
+      },
+      {
+        "label": "§4.5.2 — pagina PDF 29",
+        "cardIds": [
+          "cdg-c04-q034",
+          "cdg-c04-q035",
+          "cdg-c04-q036",
+          "cdg-c04-q037",
+          "cdg-c04-q038",
+          "cdg-c04-q039",
+          "cdg-c04-q040",
+          "cdg-c04-q041"
+        ]
+      },
+      {
+        "label": "§4.5.3 — pagina PDF 30",
+        "cardIds": [
+          "cdg-c04-q042",
+          "cdg-c04-q043",
+          "cdg-c04-q044"
+        ]
+      },
+      {
+        "label": "§4.5.4 — pagina PDF 30",
+        "cardIds": [
+          "cdg-c04-q045",
+          "cdg-c04-q046",
+          "cdg-c04-q047"
+        ]
+      },
+      {
+        "label": "§4.5.5 — pagina PDF 30",
+        "cardIds": [
+          "cdg-c04-q048",
+          "cdg-c04-q049",
+          "cdg-c04-q050"
+        ]
+      },
+      {
+        "label": "§4.5.6 — pagina PDF 30",
+        "cardIds": [
+          "cdg-c04-q051",
+          "cdg-c04-q052"
+        ]
+      },
+      {
+        "label": "§4.5.7 — pagina PDF 30",
+        "cardIds": [
+          "cdg-c04-q053",
+          "cdg-c04-q054",
+          "cdg-c04-q055"
+        ]
+      },
+      {
+        "label": "§4.5.8 — pagina PDF 31",
+        "cardIds": [
+          "cdg-c04-q056",
+          "cdg-c04-q057",
+          "cdg-c04-q058",
+          "cdg-c04-q059"
+        ]
+      },
+      {
+        "label": "§4.5.9 — pagina PDF 31",
+        "cardIds": [
+          "cdg-c04-q060",
+          "cdg-c04-q061",
+          "cdg-c04-q062"
+        ]
+      },
+      {
+        "label": "§4.5.10 — pagina PDF 31",
+        "cardIds": [
+          "cdg-c04-q063"
+        ]
+      },
+      {
+        "label": "§4.5.11 — pagina PDF 31",
+        "cardIds": [
+          "cdg-c04-q064",
+          "cdg-c04-q065",
+          "cdg-c04-q066",
+          "cdg-c04-q067"
+        ]
+      },
+      {
+        "label": "§4.5.12 — pagina PDF 31",
+        "cardIds": [
+          "cdg-c04-q068",
+          "cdg-c04-q069",
+          "cdg-c04-q070"
+        ]
+      },
+      {
+        "label": "§4.6 — pagina PDF 32",
+        "cardIds": [
+          "cdg-c04-q071",
+          "cdg-c04-q072",
+          "cdg-c04-q073",
+          "cdg-c04-q074",
+          "cdg-c04-q075",
+          "cdg-c04-q076",
+          "cdg-c04-q077"
+        ]
+      },
+      {
+        "label": "§4.7 — pagina PDF 32",
+        "cardIds": [
+          "cdg-c04-q078",
+          "cdg-c04-q079",
+          "cdg-c04-q080",
+          "cdg-c04-q081",
+          "cdg-c04-q082",
+          "cdg-c04-q083",
+          "cdg-c04-q084"
+        ]
+      },
+      {
+        "label": "§4.8 — pagina PDF 33",
+        "cardIds": [
+          "cdg-c04-q085"
+        ]
+      },
+      {
+        "label": "§4.8.1 — pagina PDF 33",
+        "cardIds": [
+          "cdg-c04-q086",
+          "cdg-c04-q087",
+          "cdg-c04-q088",
+          "cdg-c04-q089",
+          "cdg-c04-q090",
+          "cdg-c04-q091"
+        ]
+      },
+      {
+        "label": "§4.8.2 — pagina PDF 33",
+        "cardIds": [
+          "cdg-c04-q092",
+          "cdg-c04-q093",
+          "cdg-c04-q094",
+          "cdg-c04-q095",
+          "cdg-c04-q096"
+        ]
+      },
+      {
+        "label": "§4.9 — pagina PDF 33",
+        "cardIds": [
+          "cdg-c04-q097",
+          "cdg-c04-q098"
+        ]
+      },
+      {
+        "label": "§4.9.1 — pagina PDF 34",
+        "cardIds": [
+          "cdg-c04-q099",
+          "cdg-c04-q100",
+          "cdg-c04-q101",
+          "cdg-c04-q102"
+        ]
+      },
+      {
+        "label": "§4.9.2 — pagina PDF 34",
+        "cardIds": [
+          "cdg-c04-q103",
+          "cdg-c04-q104",
+          "cdg-c04-q105",
+          "cdg-c04-q106"
+        ]
+      },
+      {
+        "label": "§4.9.3 — pagina PDF 34",
+        "cardIds": [
+          "cdg-c04-q107",
+          "cdg-c04-q108",
+          "cdg-c04-q109",
+          "cdg-c04-q110",
+          "cdg-c04-q111"
+        ]
+      },
+      {
+        "label": "§4.9.4 — pagina PDF 34",
+        "cardIds": [
+          "cdg-c04-q112"
+        ]
+      },
+      {
+        "label": "§4.9.4 — pagina PDF 35",
+        "cardIds": [
+          "cdg-c04-q113",
+          "cdg-c04-q114",
+          "cdg-c04-q115",
+          "cdg-c04-q116",
+          "cdg-c04-q117",
+          "cdg-c04-q118",
+          "cdg-c04-q119",
+          "cdg-c04-q120"
+        ]
+      },
+      {
+        "label": "§4.10 — pagina PDF 35",
+        "cardIds": [
+          "cdg-c04-q121",
+          "cdg-c04-q122"
+        ]
+      },
+      {
+        "label": "§4.10.1 — pagina PDF 35",
+        "cardIds": [
+          "cdg-c04-q123",
+          "cdg-c04-q124",
+          "cdg-c04-q125",
+          "cdg-c04-q126",
+          "cdg-c04-q127"
+        ]
+      },
+      {
+        "label": "§4.10.1 — pagina PDF 36",
+        "cardIds": [
+          "cdg-c04-q128"
+        ]
+      },
+      {
+        "label": "§4.10.2 — pagina PDF 36",
+        "cardIds": [
+          "cdg-c04-q129",
+          "cdg-c04-q130"
+        ]
+      },
+      {
+        "label": "§4.11 — pagina PDF 36",
+        "cardIds": [
+          "cdg-c04-q131",
+          "cdg-c04-q132",
+          "cdg-c04-q133",
+          "cdg-c04-q134"
+        ]
+      },
+      {
+        "label": "§4.11.1 — pagina PDF 36",
+        "cardIds": [
+          "cdg-c04-q135",
+          "cdg-c04-q136"
+        ]
+      },
+      {
+        "label": "§4.11.2 — pagina PDF 37",
+        "cardIds": [
+          "cdg-c04-q137",
+          "cdg-c04-q138",
+          "cdg-c04-q139",
+          "cdg-c04-q140",
+          "cdg-c04-q141"
+        ]
+      },
+      {
+        "label": "§4.11.3 — pagina PDF 37",
+        "cardIds": [
+          "cdg-c04-q142",
+          "cdg-c04-q143",
+          "cdg-c04-q144",
+          "cdg-c04-q145",
+          "cdg-c04-q146"
+        ]
+      },
+      {
+        "label": "§4.11.4 — pagina PDF 37",
+        "cardIds": [
+          "cdg-c04-q147",
+          "cdg-c04-q148",
+          "cdg-c04-q149",
+          "cdg-c04-q150",
+          "cdg-c04-q151"
+        ]
+      },
+      {
+        "label": "§4.12 — pagina PDF 38",
+        "cardIds": [
+          "cdg-c04-q152",
+          "cdg-c04-q153",
+          "cdg-c04-q154",
+          "cdg-c04-q155",
+          "cdg-c04-q156",
+          "cdg-c04-q157"
+        ]
+      },
+      {
+        "label": "§4.13 — pagina PDF 38",
+        "cardIds": [
+          "cdg-c04-q158",
+          "cdg-c04-q159",
+          "cdg-c04-q160",
+          "cdg-c04-q161",
+          "cdg-c04-q162"
+        ]
+      },
+      {
+        "label": "§4.14 — pagina PDF 38",
+        "cardIds": [
+          "cdg-c04-q163",
+          "cdg-c04-q164",
+          "cdg-c04-q165",
+          "cdg-c04-q166",
+          "cdg-c04-q167",
+          "cdg-c04-q168"
+        ]
+      },
+      {
+        "label": "§4.14 — pagina PDF 39",
+        "cardIds": [
+          "cdg-c04-q169",
+          "cdg-c04-q170",
+          "cdg-c04-q171"
+        ]
+      },
+      {
+        "label": "§4.15.1–4.15.2 — pagina PDF 39",
+        "cardIds": [
+          "cdg-c04-q172",
+          "cdg-c04-q173",
+          "cdg-c04-q174",
+          "cdg-c04-q175",
+          "cdg-c04-q176",
+          "cdg-c04-q177",
+          "cdg-c04-q178",
+          "cdg-c04-q179"
+        ]
+      },
+      {
+        "label": "§4.15.1–4.15.2 — pagina PDF 40",
+        "cardIds": [
+          "cdg-c04-q180",
+          "cdg-c04-q181",
+          "cdg-c04-q182",
+          "cdg-c04-q183"
+        ]
+      },
+      {
+        "label": "§4.16 — pagina PDF 40",
+        "cardIds": [
+          "cdg-c04-q184",
+          "cdg-c04-q185",
+          "cdg-c04-q186",
+          "cdg-c04-q187"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cdg-c04-q001",
+      "topicId": "cdg-c04-t01",
+      "question": "Perché il costo di un prodotto o di una commessa non è un valore univoco?",
+      "answer": "Perché il valore dipende dall’oggetto misurato, dalla finalità dell’analisi, dal periodo considerato e dalle regole con cui si attribuiscono le risorse.",
+      "detail": "La stessa spesa può essere pertinente al costo di produzione, al costo pieno aziendale o a una decisione differenziale in modi diversi. Per questo il costo deve essere definito rispetto a una domanda manageriale esplicita.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Definizione dell’oggetto di costo",
+        "§4.9 — Configurazioni di costo e finalità"
+      ],
+      "mistakes": "Non esiste un costo «vero» unico indipendente dallo scopo del calcolo.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.1, pagina PDF 26"
+    },
+    {
+      "id": "cdg-c04-q002",
+      "topicId": "cdg-c04-t01",
+      "question": "Quali sono le quattro finalità fondamentali della classificazione dei costi?",
+      "answer": "Valutare le rimanenze; supportare le decisioni economiche; predisporre budget e fabbisogni; controllare l’efficienza confrontando valori attesi e risultati conseguiti.",
+      "detail": "Le finalità non richiedono sempre lo stesso perimetro: per il magazzino valgono vincoli contabili, per le alternative gestionali sono decisivi i costi differenziali, per il controllo servono grandezze confrontabili nel tempo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Definizione dell’oggetto di costo",
+        "§4.9 — Configurazioni di costo e finalità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.1, pagina PDF 26"
+    },
+    {
+      "id": "cdg-c04-q003",
+      "topicId": "cdg-c04-t01",
+      "question": "Quali cinque elementi bisogna definire prima di applicare una formula di costo?",
+      "answer": "Oggetto di costo, periodo di riferimento, scopo del calcolo, comportamento dei fattori produttivi e criteri di imputazione.",
+      "detail": "La sequenza evita di calcolare un numero formalmente corretto ma inutilizzabile. Specificare il contesto consente di selezionare costi pertinenti e di distinguere misure dirette da quote convenzionalmente attribuite.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Definizione dell’oggetto di costo",
+        "§4.9 — Configurazioni di costo e finalità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.1, pagina PDF 26"
+    },
+    {
+      "id": "cdg-c04-q004",
+      "topicId": "cdg-c04-t01",
+      "question": "Come può essere classificato l’ammortamento di un impianto dedicato a un solo prodotto?",
+      "answer": "È specifico e direttamente riferibile alla linea di prodotto; nello stesso tempo può essere fisso rispetto ai volumi prodotti nel breve periodo.",
+      "detail": "Le classificazioni rispondono a domande diverse: destinazione esclusiva, attribuibilità all’oggetto e variazione rispetto a Q. Se lo stesso impianto serve più prodotti, l’ammortamento può essere indiretto e comune ai singoli articoli.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Definizione dell’oggetto di costo",
+        "§4.9 — Configurazioni di costo e finalità"
+      ],
+      "mistakes": "Diretto non significa necessariamente variabile.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.1, pagina PDF 26"
+    },
+    {
+      "id": "cdg-c04-q005",
+      "topicId": "cdg-c04-t01",
+      "question": "Perché lo stesso esborso può ricevere classificazioni diverse senza contraddizione?",
+      "answer": "Perché ogni classificazione dipende dall’oggetto di analisi e dalla domanda decisionale cui deve rispondere.",
+      "detail": "Una risorsa condivisa può essere specifica di un reparto ma comune ai prodotti; un costo fisso può essere direttamente attribuibile a una linea. Serve dichiarare sempre l’oggetto, l’orizzonte e lo scopo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Definizione dell’oggetto di costo",
+        "§4.9 — Configurazioni di costo e finalità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.1, pagina PDF 26"
+    },
+    {
+      "id": "cdg-c04-q006",
+      "topicId": "cdg-c04-t02",
+      "question": "Che cosa comprende il costo di acquisto di un bene?",
+      "answer": "Il prezzo netto dopo gli sconti commerciali, più gli oneri accessori imputabili necessari a ottenere il bene nelle condizioni e nel luogo d’impiego.",
+      "detail": "Oltre al prezzo fatturato possono entrare trasporto in entrata e dazi non recuperabili, secondo le regole applicabili. Non tutti i trasporti sono costi di acquisto: quelli per consegnare il prodotto finito al cliente hanno una destinazione diversa.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{acq}=P_{netto}+O_{accessori}",
+          "meaning": "Prezzo netto più oneri accessori attribuibili all’acquisizione."
+        }
+      ],
+      "connections": [
+        "§4.9.3 — Configurazione legata alla decisione",
+        "§4.12 — Confronto completo del TCO"
+      ],
+      "mistakes": "Non equiparare automaticamente costo di acquisto e solo prezzo esposto in fattura.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.2.1, pagina PDF 27"
+    },
+    {
+      "id": "cdg-c04-q007",
+      "topicId": "cdg-c04-t02",
+      "question": "Come si calcola il costo unitario dei 100 componenti acquistati nell’esempio del manuale?",
+      "answer": "Il costo totale è 5.000 + 400 − 200 = 5.200 €; diviso per 100 componenti dà 52 € ciascuno.",
+      "detail": "Il prezzo di 5.000 € è integrato con 400 € di trasporto in entrata e ridotto di 200 € di sconto commerciale. La base di ripartizione è il numero di componenti acquistati.",
+      "example": "(5.000 + 400 − 200) / 100 = 52 €/componente.",
+      "formulas": [
+        {
+          "latex": "c_{unitario}=\\frac{P+O-S}{Q}",
+          "meaning": "P prezzo iniziale, O oneri imputabili, S sconti e Q quantità acquistata."
+        }
+      ],
+      "connections": [
+        "§4.9.3 — Configurazione legata alla decisione",
+        "§4.12 — Confronto completo del TCO"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.2.1, pagina PDF 27"
+    },
+    {
+      "id": "cdg-c04-q008",
+      "topicId": "cdg-c04-t02",
+      "question": "Perché il trasporto verso il cliente non è automaticamente parte del costo di acquisizione di un componente?",
+      "answer": "Perché è sostenuto per distribuire un prodotto finito, non per portare il componente acquistato nelle condizioni e nel luogo d’uso.",
+      "detail": "La classificazione dipende dalla destinazione economica del servizio. Nel manuale si contrappone il trasporto in entrata dei componenti al trasporto in uscita verso il cliente.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Configurazione legata alla decisione",
+        "§4.12 — Confronto completo del TCO"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.2.1, pagina PDF 27"
+    },
+    {
+      "id": "cdg-c04-q009",
+      "topicId": "cdg-c04-t02",
+      "question": "Che cos’è il costo di produzione e a quali oggetti può riferirsi?",
+      "answer": "È il valore monetario delle risorse consumate per realizzare un output; può riguardare unità, lotti, commesse o fasi produttive.",
+      "detail": "La misura comprende costi direttamente osservabili e, se la configurazione lo prevede, una quota pertinente di costi indiretti produttivi. I criteri per valorizzare il magazzino non coincidono automaticamente con tutte le configurazioni gestionali.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{prod}=C_{diretti\\ produttivi}+C_{indiretti\\ produttivi\\ imputati}",
+          "meaning": "Configurazione generale del costo di produzione nel manuale."
+        }
+      ],
+      "connections": [
+        "§4.9.3 — Configurazione legata alla decisione",
+        "§4.12 — Confronto completo del TCO"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.2.2, pagina PDF 27"
+    },
+    {
+      "id": "cdg-c04-q010",
+      "topicId": "cdg-c04-t02",
+      "question": "Qual è il costo pieno di produzione del mobile nell’esempio del manuale?",
+      "answer": "200 €, somma di 120 € di materiali, 55 € di manodopera diretta e 25 € di costi generali produttivi imputati.",
+      "detail": "Ulteriori 15 € di provvigioni e spese commerciali legate alla vendita appartengono alla gestione, ma non diventano automaticamente costi di produzione del mobile.",
+      "example": "120 + 55 + 25 = 200 € per mobile.",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Configurazione legata alla decisione",
+        "§4.12 — Confronto completo del TCO"
+      ],
+      "mistakes": "Non incorporare indiscriminatamente le spese commerciali nelle rimanenze.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.2.2, pagina PDF 27"
+    },
+    {
+      "id": "cdg-c04-q011",
+      "topicId": "cdg-c04-t02",
+      "question": "Che cos’è il Total Cost of Ownership (TCO)?",
+      "answer": "È il costo complessivo di un bene o sistema lungo un orizzonte definito, includendo acquisizione, attivazione, utilizzo, evoluzione e dismissione.",
+      "detail": "Permette di confrontare alternative con prezzi iniziali e oneri successivi differenti. È rilevante per macchinari, infrastrutture, sistemi informativi e contratti pluriennali; le ipotesi devono essere funzionalmente comparabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Configurazione legata alla decisione",
+        "§4.12 — Confronto completo del TCO"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.2.3, pagina PDF 27"
+    },
+    {
+      "id": "cdg-c04-q012",
+      "topicId": "cdg-c04-t02",
+      "question": "Quali componenti entrano nel TCO nominale secondo il manuale?",
+      "answer": "Acquisto, implementazione, esercizio, evoluzione e dismissione.",
+      "detail": "L’acquisto è solo la prima fase; l’implementazione può includere installazione e formazione, l’esercizio consumi e manutenzione, l’evoluzione aggiornamenti, la dismissione migrazione o smaltimento.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "TCO_{nom}=C_{acquisto}+C_{implementazione}+C_{esercizio}+C_{evoluzione}+C_{dismissione}",
+          "meaning": "Somma nominale delle componenti del costo nel ciclo di vita."
+        }
+      ],
+      "connections": [
+        "§4.9.3 — Configurazione legata alla decisione",
+        "§4.12 — Confronto completo del TCO"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.2.3, pagina PDF 27"
+    },
+    {
+      "id": "cdg-c04-q013",
+      "topicId": "cdg-c04-t02",
+      "question": "Perché la sola differenza tra prezzi di acquisto è insufficiente per scegliere fra due sistemi?",
+      "answer": "Perché manutenzione, formazione, consumi, aggiornamenti e dismissione possono ribaltare la convenienza economica.",
+      "detail": "Il TCO richiede un orizzonte comune e livelli di servizio comparabili. Se le spese si distribuiscono nel tempo in modo differente, può essere necessario attualizzare i flussi anziché sommarli nominalmente.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Configurazione legata alla decisione",
+        "§4.12 — Confronto completo del TCO"
+      ],
+      "mistakes": "Il TCO nominale non equivale a un confronto finanziario attualizzato.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.2.3, pagina PDF 27"
+    },
+    {
+      "id": "cdg-c04-q014",
+      "topicId": "cdg-c04-t02",
+      "question": "Quando è opportuno attualizzare i flussi di costo di alternative con TCO differenti?",
+      "answer": "Quando pagamenti e costi sono distribuiti in periodi diversi, per considerare il valore finanziario del tempo.",
+      "detail": "Il capitolo introduce soltanto l’esigenza: il calcolo formale del valore attuale sarà approfondito nel capital budgeting. Prima di confrontare alternative occorre dichiarare l’orizzonte di analisi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Configurazione legata alla decisione",
+        "§4.12 — Confronto completo del TCO"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.2.3, pagina PDF 27"
+    },
+    {
+      "id": "cdg-c04-q015",
+      "topicId": "cdg-c04-t03",
+      "question": "Che cos’è un oggetto di costo e quali esempi fornisce il manuale?",
+      "answer": "È qualunque entità per la quale si vuole misurare un costo: prodotto, servizio, commessa, reparto, attività, processo, cliente, canale o progetto.",
+      "detail": "Gli oggetti finali sono spesso beni e servizi venduti; quelli intermedi comprendono reparti, fasi, attività, impianti e centri di responsabilità. La loro definizione precede qualunque classificazione o attribuzione.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Attribuzione diretta o indiretta",
+        "§4.11.2 — Allocazione del caso A/B"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.3, pagina PDF 27"
+    },
+    {
+      "id": "cdg-c04-q016",
+      "topicId": "cdg-c04-t03",
+      "question": "Qual è la differenza tra oggetti di costo finali e intermedi?",
+      "answer": "I finali sono tipicamente i prodotti e i servizi venduti; gli intermedi rappresentano unità o fasi che contribuiscono alla loro realizzazione.",
+      "detail": "Un reparto o un’attività può ricevere costi prima che questi siano ulteriormente riferiti ai prodotti. Clienti e progetti possono anch’essi essere oggetti di analisi in funzione della domanda gestionale.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Attribuzione diretta o indiretta",
+        "§4.11.2 — Allocazione del caso A/B"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.3, pagina PDF 27"
+    },
+    {
+      "id": "cdg-c04-q017",
+      "topicId": "cdg-c04-t03",
+      "question": "In che senso la tracciabilità di un costo è relativa all’oggetto di riferimento?",
+      "answer": "Una risorsa può essere misurabile direttamente per un reparto, ma richiedere un riparto per i prodotti che lo attraversano.",
+      "detail": "Lo stipendio del responsabile della verniciatura è attribuibile al reparto, mentre la quota imputabile a ciascuno dei molti prodotti di quel reparto può non essere osservabile direttamente.",
+      "example": "Stipendio del caporeparto: diretto per il reparto verniciatura, normalmente indiretto per ciascun prodotto.",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Attribuzione diretta o indiretta",
+        "§4.11.2 — Allocazione del caso A/B"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.3, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q018",
+      "topicId": "cdg-c04-t03",
+      "question": "Che cosa significa tracciabilità fisico-economica?",
+      "answer": "È la possibilità di identificare attendibilmente il consumo della risorsa da parte dell’oggetto e di misurarne il valore.",
+      "detail": "Se il consumo è osservabile direttamente con un costo di rilevazione ragionevole, si applica il procedimento diretto; altrimenti si impiega una base o un driver per l’attribuzione indiretta.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Attribuzione diretta o indiretta",
+        "§4.11.2 — Allocazione del caso A/B"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.3, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q019",
+      "topicId": "cdg-c04-t03",
+      "question": "Che cos’è una base di ripartizione dei costi indiretti?",
+      "answer": "È la grandezza utilizzata per distribuire un insieme di costi indiretti tra più oggetti di costo.",
+      "detail": "Esempi nel manuale sono ore macchina, ore di manodopera, ordini, superficie e kWh. La base dovrebbe essere coerente con le modalità di consumo della risorsa anziché scelta solo per comodità.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Attribuzione diretta o indiretta",
+        "§4.11.2 — Allocazione del caso A/B"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.3, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q020",
+      "topicId": "cdg-c04-t03",
+      "question": "Che cosa si intende per cost driver e perché è importante la causalità?",
+      "answer": "Il cost driver è il fattore che spiega o contribuisce a spiegare il consumo delle risorse; deve avere un nesso plausibile col costo attribuito.",
+      "detail": "Un criterio di riparto semplice da misurare può essere fuorviante se non riflette l’assorbimento effettivo. Il manuale richiede di bilanciare causalità, attendibilità e costo dell’informazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Attribuzione diretta o indiretta",
+        "§4.11.2 — Allocazione del caso A/B"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.3, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q021",
+      "topicId": "cdg-c04-t03",
+      "question": "Come si determina il coefficiente di allocazione dei costi indiretti?",
+      "answer": "Dividendo il totale dei costi indiretti da attribuire per il totale della base scelta.",
+      "detail": "Il risultato è espresso in euro per unità di base: per esempio €/ora macchina. Tale unità di misura è necessaria per calcolare correttamente la quota degli oggetti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "k=\\frac{C_{indiretti\\ del\\ pool}}{B_{totale}}",
+          "meaning": "k coefficiente; B totale della base di ripartizione."
+        }
+      ],
+      "connections": [
+        "§4.5.1 — Attribuzione diretta o indiretta",
+        "§4.11.2 — Allocazione del caso A/B"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.3, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q022",
+      "topicId": "cdg-c04-t03",
+      "question": "Come si determina la quota di costi indiretti imputata all’oggetto i?",
+      "answer": "Si moltiplica il coefficiente di allocazione per la quantità di base assorbita dall’oggetto.",
+      "detail": "La corretta applicazione richiede coerenza nelle unità di misura e una base valida per il fenomeno. La somma delle quote può essere confrontata con il totale del pool.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{ind,i}=k\\cdot B_i",
+          "meaning": "Quota imputata all’oggetto i: coefficiente per quantità di base assorbita."
+        }
+      ],
+      "connections": [
+        "§4.5.1 — Attribuzione diretta o indiretta",
+        "§4.11.2 — Allocazione del caso A/B"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.3, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q023",
+      "topicId": "cdg-c04-t03",
+      "question": "Come vengono ripartiti 24.000 € di costi dell’impianto fra A e B nel caso da 600 e 900 ore?",
+      "answer": "Il coefficiente è 24.000 / 1.500 = 16 €/h; ad A spettano 9.600 € e a B 14.400 €.",
+      "detail": "A utilizza 600 ore e B 900 ore. Il riparto è ragionevole se l’uso della macchina è legato al consumo delle risorse comuni. La quadratura dà 9.600 + 14.400 = 24.000 €.",
+      "example": "k=24.000/(600+900)=16 €/h; A=600×16=9.600 €, B=900×16=14.400 €.",
+      "formulas": [
+        {
+          "latex": "k=\\frac{24000}{600+900}=16\\ \\mathrm{€/h}",
+          "meaning": "Coefficiente per il caso esaminato."
+        }
+      ],
+      "connections": [
+        "§4.5.1 — Attribuzione diretta o indiretta",
+        "§4.11.2 — Allocazione del caso A/B"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.3, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q024",
+      "topicId": "cdg-c04-t03",
+      "question": "Perché una base di ripartizione unica può essere inadeguata?",
+      "answer": "Perché costi indiretti eterogenei possono dipendere da driver diversi e produrre attribuzioni distorte con un solo parametro.",
+      "detail": "Quando la composizione delle risorse condivise è complessa, centri di costo e Activity-Based Costing consentono analisi più specifiche, sviluppate nei capitoli successivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Attribuzione diretta o indiretta",
+        "§4.11.2 — Allocazione del caso A/B"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.3, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q025",
+      "topicId": "cdg-c04-t04",
+      "question": "Qual è la differenza tra classificazione dei costi per natura e per destinazione?",
+      "answer": "Per natura si distingue il tipo di risorsa consumata; per destinazione si individua il prodotto, reparto, processo o funzione che l’ha utilizzata.",
+      "detail": "La contabilità generale registra frequentemente materie, personale, servizi, ammortamenti e utenze per natura. Il controllo di gestione integra queste informazioni per capire dove e per quale fine le risorse sono state impiegate.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Oggetto di costo e destinazione",
+        "§4.9.4 — Sistema informativo e raccolta dati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.4, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q026",
+      "topicId": "cdg-c04-t04",
+      "question": "Come può essere analizzato un costo di energia elettrica per natura e per destinazione?",
+      "answer": "Per natura è una spesa per energia; per destinazione può essere attribuita a tornitura, assemblaggio o uffici.",
+      "detail": "Il totale economico resta lo stesso, ma l’attribuzione per area consente di valutare attività e responsabilità. Occorre una misura diretta oppure una base ragionevole.",
+      "example": "Energia → natura: utenze; destinazione: reparto tornitura o uffici.",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Oggetto di costo e destinazione",
+        "§4.9.4 — Sistema informativo e raccolta dati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.4, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q027",
+      "topicId": "cdg-c04-t04",
+      "question": "Quali esempi di classificazione per destinazione fornisce il manuale oltre all’energia?",
+      "answer": "Retribuzioni per produzione, commerciale e R&S; ammortamenti per macchinari dedicati, impianti comuni e server; servizi per collaudo, assistenza e amministrazione.",
+      "detail": "La natura descrive il fattore produttivo, mentre la destinazione rende leggibile l’assorbimento per attività o oggetto. L’una non sostituisce l’altra: servono prospettive integrate.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Oggetto di costo e destinazione",
+        "§4.9.4 — Sistema informativo e raccolta dati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.4, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q028",
+      "topicId": "cdg-c04-t04",
+      "question": "Perché la classificazione per natura può non bastare per valutare la redditività di un prodotto?",
+      "answer": "Perché dice quali risorse sono state consumate a livello aziendale, ma non necessariamente da quale prodotto o funzione.",
+      "detail": "Per stimare margini e responsabilità è necessario associare i costi agli oggetti pertinenti e distinguere comportamento e modalità di attribuzione.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Oggetto di costo e destinazione",
+        "§4.9.4 — Sistema informativo e raccolta dati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.4, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q029",
+      "topicId": "cdg-c04-t05",
+      "question": "Quando un costo è diretto rispetto a un oggetto?",
+      "answer": "Quando il consumo della risorsa è collegabile specificamente all’oggetto con misure attendibili ed economicamente sensate.",
+      "detail": "Sono esempi materiali identificabili nella distinta base, ore di lavoro registrate su una commessa e licenze acquistate esclusivamente per un progetto. La directness dipende sempre dall’oggetto scelto.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.2 — Comportamento variabile o fisso",
+        "§4.6 — Matrice delle classificazioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.1, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q030",
+      "topicId": "cdg-c04-t05",
+      "question": "Quando un costo è indiretto e come viene attribuito?",
+      "answer": "Quando serve più oggetti e la sua quota per ciascuno non è osservabile direttamente, oppure rilevarla sarebbe troppo costoso.",
+      "detail": "Per determinare quote di costo si usa una base di ripartizione. Esempi sono stabilimento condiviso, supervisore di più linee, manutenzione e illuminazione comuni.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.2 — Comportamento variabile o fisso",
+        "§4.6 — Matrice delle classificazioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.1, pagina PDF 28"
+    },
+    {
+      "id": "cdg-c04-q031",
+      "topicId": "cdg-c04-t05",
+      "question": "Un costo diretto è necessariamente variabile o eliminabile?",
+      "answer": "No. La direttezza riguarda la tracciabilità; variabilità e eliminabilità riguardano rispettivamente il comportamento e la decisione.",
+      "detail": "L’ammortamento di una macchina dedicata a un solo prodotto può essere diretto ma fisso e non eliminabile nel brevissimo periodo.",
+      "example": "Macchina esclusiva per A: costo diretto di linea, fisso per l’intervallo considerato.",
+      "formulas": [],
+      "connections": [
+        "§4.5.2 — Comportamento variabile o fisso",
+        "§4.6 — Matrice delle classificazioni"
+      ],
+      "mistakes": "È falso che tutti i costi diretti siano variabili.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.1, pagina PDF 29"
+    },
+    {
+      "id": "cdg-c04-q032",
+      "topicId": "cdg-c04-t05",
+      "question": "Un costo variabile può essere indiretto ai singoli prodotti?",
+      "answer": "Sì. Può variare con il volume complessivo senza che sia misurabile quanto ne assorbe ciascun prodotto.",
+      "detail": "L’energia di uno stabilimento può aumentare con la produzione ma restare indiretta per A e B se non esistono misure distinte dei consumi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.2 — Comportamento variabile o fisso",
+        "§4.6 — Matrice delle classificazioni"
+      ],
+      "mistakes": "Variabile non equivale a direttamente attribuibile.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.1, pagina PDF 29"
+    },
+    {
+      "id": "cdg-c04-q033",
+      "topicId": "cdg-c04-t05",
+      "question": "Qual è l’errore della regola «tutti i costi diretti sono variabili»?",
+      "answer": "Confonde una proprietà di misurazione rispetto all’oggetto con una proprietà di comportamento rispetto all’attività.",
+      "detail": "La relazione può essere un’ipotesi utile in casi didattici limitati, ma non costituisce una definizione generale. Occorre classificare ogni voce lungo entrambe le dimensioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.2 — Comportamento variabile o fisso",
+        "§4.6 — Matrice delle classificazioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.1, pagina PDF 29"
+    },
+    {
+      "id": "cdg-c04-q034",
+      "topicId": "cdg-c04-t06",
+      "question": "In base a quale criterio si distinguono costi variabili, fissi, misti e a scatti?",
+      "answer": "In base a come il costo totale cambia al variare di una specifica misura di attività Q entro un periodo e intervallo definiti.",
+      "detail": "Q può rappresentare pezzi, ore lavorate, ore macchina, interventi o chilometri. Un costo può variare con un driver e non con un altro.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.7 — Intervallo di rilevanza",
+        "§4.8 — Stima della funzione F+vQ"
+      ],
+      "mistakes": "Il comportamento di costo non coincide con la sua tracciabilità ai prodotti.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.2, pagina PDF 29"
+    },
+    {
+      "id": "cdg-c04-q035",
+      "topicId": "cdg-c04-t06",
+      "question": "Che cos’è un costo variabile nel modello lineare?",
+      "answer": "Un costo totale proporzionale al livello di attività Q, con costo variabile unitario v costante nel campo di validità.",
+      "detail": "Il totale aumenta con Q; il costo per unità rimane v. È un comportamento teorico riferito a driver, periodo e intervallo operativo specifici.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CV(Q)=vQ\\quad;\\quad CV_u=v",
+          "meaning": "v è il costo variabile unitario; Q il livello di attività."
+        }
+      ],
+      "connections": [
+        "§4.7 — Intervallo di rilevanza",
+        "§4.8 — Stima della funzione F+vQ"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.2, pagina PDF 29"
+    },
+    {
+      "id": "cdg-c04-q036",
+      "topicId": "cdg-c04-t06",
+      "question": "Che cos’è un costo fisso e come varia il suo valore unitario?",
+      "answer": "Il costo totale F resta costante nell’intervallo pertinente; il costo fisso per unità è F/Q e diminuisce all’aumentare di Q.",
+      "detail": "Il costo fisso non è immutabile per sempre: può cambiare quando si modifica la capacità, il contratto o l’orizzonte temporale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CF(Q)=F\\quad;\\quad CF_u=\\frac{F}{Q},\\ Q>0",
+          "meaning": "Il fisso totale è F; la quota per unità decresce se Q aumenta."
+        }
+      ],
+      "connections": [
+        "§4.7 — Intervallo di rilevanza",
+        "§4.8 — Stima della funzione F+vQ"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.2, pagina PDF 29"
+    },
+    {
+      "id": "cdg-c04-q037",
+      "topicId": "cdg-c04-t06",
+      "question": "Che cos’è un costo misto o semivariabile?",
+      "answer": "Un costo che contiene una componente fissa F e una componente che cresce proporzionalmente con l’attività vQ.",
+      "detail": "Un’utenza con canone e consumo o una manutenzione con quota base e corrispettivo per intervento sono esempi del manuale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C(Q)=F+vQ",
+          "meaning": "Funzione del costo totale misto, con F fissi e v costo unitario variabile."
+        }
+      ],
+      "connections": [
+        "§4.7 — Intervallo di rilevanza",
+        "§4.8 — Stima della funzione F+vQ"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.2, pagina PDF 29"
+    },
+    {
+      "id": "cdg-c04-q038",
+      "topicId": "cdg-c04-t06",
+      "question": "Che cos’è un costo a scatti?",
+      "answer": "Un costo che rimane costante entro fasce di attività ma aumenta quando si supera una soglia di capacità.",
+      "detail": "Il manuale cita una squadra di supervisione aggiuntiva ogni 30 operatori o un nuovo magazzino al raggiungimento della capienza. Non segue una retta continua.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.7 — Intervallo di rilevanza",
+        "§4.8 — Stima della funzione F+vQ"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.2, pagina PDF 29"
+    },
+    {
+      "id": "cdg-c04-q039",
+      "topicId": "cdg-c04-t06",
+      "question": "Come si leggono i quattro grafici dei comportamenti dei costi a pagina 29?",
+      "answer": "Il variabile totale cresce linearmente; il fisso totale è orizzontale; il misto parte da un’intercetta positiva e cresce; il costo a scatti presenta livelli orizzontali separati da salti.",
+      "detail": "Nel diagramma il driver Q è sull’asse orizzontale e il costo totale sull’asse verticale. Le curve rappresentano modelli teorici validi soltanto in intervalli pertinenti.",
+      "example": "La retta C(Q)=F+vQ intercetta l’asse verticale a F; lo scatto si manifesta al raggiungimento di una soglia.",
+      "formulas": [],
+      "connections": [
+        "§4.7 — Intervallo di rilevanza",
+        "§4.8 — Stima della funzione F+vQ"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.2, pagina PDF 29"
+    },
+    {
+      "id": "cdg-c04-q040",
+      "topicId": "cdg-c04-t06",
+      "question": "Perché non è corretto affermare che un costo fisso non varia mai?",
+      "answer": "Perché la fissità riguarda un determinato intervallo di attività, un orizzonte temporale e condizioni operative definite.",
+      "detail": "Nel breve periodo il contratto o la capacità possono renderlo stabile; nel lungo periodo l’impresa può modificarli. Un ampliamento di capacità può generare costi a scatti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.7 — Intervallo di rilevanza",
+        "§4.8 — Stima della funzione F+vQ"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.2, pagina PDF 29"
+    },
+    {
+      "id": "cdg-c04-q041",
+      "topicId": "cdg-c04-t06",
+      "question": "Qual è la differenza tra costo totale variabile e costo variabile unitario?",
+      "answer": "Il totale cresce con Q secondo vQ; il valore per unità rimane v nel modello lineare.",
+      "detail": "Non confondere l’andamento del totale con quello della media unitaria. È la parte fissa per unità, F/Q, che diminuisce con la quantità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CV_{tot}=vQ\\quad;\\quad CV_{unit}=v",
+          "meaning": "Relazione valida nel modello lineare del capitolo."
+        }
+      ],
+      "connections": [
+        "§4.7 — Intervallo di rilevanza",
+        "§4.8 — Stima della funzione F+vQ"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.2, pagina PDF 29"
+    },
+    {
+      "id": "cdg-c04-q042",
+      "topicId": "cdg-c04-t07",
+      "question": "Qual è la differenza tra costo specifico e costo comune?",
+      "answer": "Il costo specifico riguarda una risorsa destinata esclusivamente a un oggetto; il costo comune riguarda una risorsa condivisa fra più oggetti.",
+      "detail": "È una classificazione per destinazione. La specificità non implica automaticamente tracciabilità all’unità o eliminabilità; per attribuire costi comuni possono servire basi di ripartizione.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.6 — Eliminabilità dei costi",
+        "§4.10 — Prodotto, periodo e rimanenze"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.3, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q043",
+      "topicId": "cdg-c04-t07",
+      "question": "Perché l’ammortamento di una pressa dedicata ad A è specifico ma può richiedere un riparto unitario?",
+      "answer": "Perché la pressa serve solo la linea A, ma bisogna comunque distribuire la quota annua fra le unità o i lotti prodotti.",
+      "detail": "Il carattere specifico identifica l’uso esclusivo della risorsa da parte della linea. Il costo unitario è una misura ulteriore che può dipendere dalle ore di funzionamento o dalla quantità prodotta.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.6 — Eliminabilità dei costi",
+        "§4.10 — Prodotto, periodo e rimanenze"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.3, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q044",
+      "topicId": "cdg-c04-t07",
+      "question": "Quali esempi di costi comuni fornisce il manuale?",
+      "answer": "Il canone di un capannone impiegato per i prodotti A e B e il personale di manutenzione centralizzata che serve più reparti.",
+      "detail": "L’allocazione può essere basata sulla superficie utilizzata o sul numero di interventi, a patto di dichiarare i criteri adottati.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.6 — Eliminabilità dei costi",
+        "§4.10 — Prodotto, periodo e rimanenze"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.3, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q045",
+      "topicId": "cdg-c04-t07",
+      "question": "Qual è la differenza essenziale tra costi comuni e costi congiunti?",
+      "answer": "I costi comuni derivano da capacità condivisa fra output con un mix almeno in parte decidibile; i congiunti nascono da un processo che produce inevitabilmente più output tecnologicamente collegati.",
+      "detail": "Un impianto che alterna due prodotti genera costi comuni; un processo di raffinazione che produce frazioni contemporaneamente genera costi congiunti. Il problema di attribuzione ha una natura diversa.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.6 — Eliminabilità dei costi",
+        "§4.10 — Prodotto, periodo e rimanenze"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.4, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q046",
+      "topicId": "cdg-c04-t07",
+      "question": "Che cos’è il punto di separazione nel caso dei costi congiunti?",
+      "answer": "È il momento del processo in cui gli output congiunti diventano identificabili separatamente.",
+      "detail": "Prima di quel punto il costo nasce da un processo comune indissociabile; si può ripartire contabilmente il costo usando, per esempio, valori relativi di vendita, ma l’allocazione non ne cambia la natura congiunta.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.6 — Eliminabilità dei costi",
+        "§4.10 — Prodotto, periodo e rimanenze"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.4, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q047",
+      "topicId": "cdg-c04-t07",
+      "question": "Perché un costo congiunto già sostenuto può essere irrilevante per una decisione dopo il punto di separazione?",
+      "answer": "Perché la decisione futura non può modificare il costo di processo già sostenuto.",
+      "detail": "Occorre valutare i ricavi e i costi differenziali delle alternative successive al punto di separazione, senza lasciarsi guidare da riparti contabili di costi passati.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.6 — Eliminabilità dei costi",
+        "§4.10 — Prodotto, periodo e rimanenze"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.4, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q048",
+      "topicId": "cdg-c04-t07",
+      "question": "Quali sono i costi di prodotto in un’impresa manifatturiera?",
+      "answer": "Sono i costi associati alla produzione del bene secondo la configurazione appropriata, in genere materiali diretti, manodopera diretta e costi generali produttivi.",
+      "detail": "L’incorporazione nelle rimanenze segue criteri contabili specifici. Non qualunque costo aziendale diventa costo di prodotto ai fini di bilancio.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.6 — Eliminabilità dei costi",
+        "§4.10 — Prodotto, periodo e rimanenze"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.5, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q049",
+      "topicId": "cdg-c04-t07",
+      "question": "Che cosa sono i costi di periodo?",
+      "answer": "Costi non incorporati nelle rimanenze e imputati al periodo economico di competenza.",
+      "detail": "Molte spese commerciali, amministrative e generali hanno tale natura. La distinzione serve a non gonfiare il valore delle scorte con costi che non rappresentano produzione inventariabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.6 — Eliminabilità dei costi",
+        "§4.10 — Prodotto, periodo e rimanenze"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.5, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q050",
+      "topicId": "cdg-c04-t07",
+      "question": "Perché il costo pieno aziendale non coincide con il costo di produzione inventariabile?",
+      "answer": "Perché il costo pieno aziendale per analisi interne può includere quote commerciali, amministrative e di struttura che non sono ammesse nella valorizzazione delle rimanenze.",
+      "detail": "Il costo di produzione del magazzino segue le regole del bilancio, non il semplice criterio di attribuire tutti i costi possibili a un prodotto.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.6 — Eliminabilità dei costi",
+        "§4.10 — Prodotto, periodo e rimanenze"
+      ],
+      "mistakes": "Un costo utile per decidere un prezzo non è automaticamente capitalizzabile in magazzino.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.5, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q051",
+      "topicId": "cdg-c04-t08",
+      "question": "Quando un costo è eliminabile?",
+      "answer": "Quando scompare nell’orizzonte considerato se si sceglie una determinata alternativa.",
+      "detail": "La condizione va verificata per contratti, personale, risorse e investimenti concreti. Se un articolo viene eliminato, i materiali specifici possono non essere più acquistati, mentre l’affitto può continuare.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.13 — Scelte differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.6, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q052",
+      "topicId": "cdg-c04-t08",
+      "question": "Perché un costo specifico non è necessariamente eliminabile?",
+      "answer": "Perché una risorsa dedicata può restare vincolata da contratti o condizioni tecniche anche dopo la cessazione dell’attività.",
+      "detail": "La manodopera dedicata è evitabile solo se il rapporto o il reimpiego consentono realmente di risparmiare il costo. Specificità e evitabilità rispondono a domande distinte.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.13 — Scelte differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "Non dichiarare evitabile ogni spesa legata esclusivamente a un prodotto.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.6, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q053",
+      "topicId": "cdg-c04-t08",
+      "question": "Che cosa significa che un costo o un ricavo è differenziale?",
+      "answer": "Significa che cambia passando da un’alternativa realistica all’altra.",
+      "detail": "L’analisi considera variazioni future: ricavi e costi emergenti o cessanti. I valori identici nelle alternative non modificano la scelta anche se elevati.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "V_{A-B}=(R_A-R_B)-(C_A-C_B)",
+          "meaning": "Vantaggio differenziale fra le alternative A e B."
+        }
+      ],
+      "connections": [
+        "§4.13 — Scelte differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.7, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q054",
+      "topicId": "cdg-c04-t08",
+      "question": "Quali costi vanno esclusi da un confronto differenziale tra due alternative?",
+      "answer": "I costi che rimangono identici in entrambe le alternative, oltre ai costi passati non modificabili.",
+      "detail": "L’obiettivo non è ricostruire il costo pieno contabile, bensì quantificare gli effetti futuri della scelta. Un costo fisso comune persistente può essere irrilevante.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.13 — Scelte differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.7, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q055",
+      "topicId": "cdg-c04-t08",
+      "question": "Nell’esempio make-or-buy, perché la produzione interna è più conveniente per componente?",
+      "answer": "Il make costa 18 + 7 = 25 €; il buy 30 + 2 = 32 €: produrre internamente ha un vantaggio di 7 € per componente.",
+      "detail": "Il fisso di 50.000 € permane in entrambe le alternative e non entra nel confronto. La conclusione richiede ipotesi di capacità e qualità comparabili e assenza di ulteriori opportunità alternative.",
+      "example": "Make: 25 €/u; Buy: 32 €/u; vantaggio make = 7 €/u.",
+      "formulas": [],
+      "connections": [
+        "§4.13 — Scelte differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "Non sottrarre 50.000 € identici nelle alternative come se fossero una differenza.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.7, pagina PDF 30"
+    },
+    {
+      "id": "cdg-c04-q056",
+      "topicId": "cdg-c04-t08",
+      "question": "Come si definisce il costo incrementale?",
+      "answer": "È la variazione totale di costo associata a un aumento discreto del livello di attività o a una decisione.",
+      "detail": "Si confronta il costo della situazione successiva con quello iniziale. Può includere scatti di capacità e non deve essere sempre calcolato come costo variabile unitario moltiplicato per quantità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\Delta C=C(Q_2)-C(Q_1)",
+          "meaning": "Variazione di costo fra due livelli di attività."
+        }
+      ],
+      "connections": [
+        "§4.13 — Scelte differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.8, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q057",
+      "topicId": "cdg-c04-t08",
+      "question": "Qual è la differenza tra costo marginale e incrementale?",
+      "answer": "Il marginale si riferisce al costo di un’unità ulteriore o al limite alla derivata dC/dQ; l’incrementale è la variazione totale fra due livelli discreti.",
+      "detail": "Nel modello lineare C=F+vQ, il marginale coincide con v. In presenza di salti di capacità, il costo incrementale medio può discostarsi da v.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CM\\approx\\frac{\\Delta C}{\\Delta Q}\\quad;\\quad CM=\\frac{dC}{dQ}",
+          "meaning": "Approssimazione discreta e definizione continua del costo marginale."
+        }
+      ],
+      "connections": [
+        "§4.13 — Scelte differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.8, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q058",
+      "topicId": "cdg-c04-t08",
+      "question": "Che cos’è un costo sommerso (sunk cost)?",
+      "answer": "Un costo già sostenuto e non recuperabile né modificabile attraverso la decisione attuale.",
+      "detail": "Il suo ammontare storico è in genere irrilevante per confrontare alternative future. Se però il bene possiede oggi un valore di rivendita, tale entrata alternativa può essere rilevante.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.13 — Scelte differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.8, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q059",
+      "topicId": "cdg-c04-t08",
+      "question": "L’acquisto storico di una macchina per 100.000 € deve determinare la decisione se continuarne l’uso?",
+      "answer": "No, se i 100.000 € sono un costo già sostenuto e irrecuperabile; occorre valutare costi e benefici futuri.",
+      "detail": "Un valore attuale di rivendita, se concretamente ottenibile, non è invece sommerso: è un’alternativa rinunciata utilizzando la macchina.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.13 — Scelte differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "Non continuare un progetto solo per «recuperare» un esborso non recuperabile.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.8, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q060",
+      "topicId": "cdg-c04-t08",
+      "question": "Quali condizioni rendono un costo rilevante per una decisione?",
+      "answer": "Deve riguardare il futuro e differire fra alternative realisticamente praticabili.",
+      "detail": "Un dato contabilmente certo ma invariato nelle alternative può essere irrilevante; una stima non iscritta in bilancio può essere rilevante se modifica la convenienza della scelta.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.13 — Scelte differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.9, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q061",
+      "topicId": "cdg-c04-t08",
+      "question": "Cosa si intende per costi figurativi?",
+      "answer": "Valori economici imputati a fattori utilizzati senza un corrispondente esborso o senza una registrazione di costo nella contabilità generale.",
+      "detail": "Il manuale cita la remunerazione teorica del lavoro dell’imprenditore e il rendimento alternativo del capitale proprio. Sono utili nell’analisi economica di convenienza e vanno distinti dai costi contabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.13 — Scelte differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.9, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q062",
+      "topicId": "cdg-c04-t08",
+      "question": "Perché i costi figurativi possono contare anche quando non compaiono nel Conto Economico?",
+      "answer": "Perché rappresentano risorse e benefici economici alternativi che la decisione consuma o sacrifica.",
+      "detail": "La convenienza gestionale può richiedere di considerare il compenso teorico dell’imprenditore o il rendimento alternativo del capitale, benché non siano costi contabilizzati come normali pagamenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.13 — Scelte differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.9, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q063",
+      "topicId": "cdg-c04-t09",
+      "question": "Come cambia la possibilità di modificare i costi fra breve e lungo periodo?",
+      "answer": "Nel breve alcune risorse sono vincolate da capacità e contratti; nel lungo anche impianti, dimensioni produttive e organizzazione possono essere modificati.",
+      "detail": "Non esiste un numero universale di mesi che separi i due orizzonti: conta il tempo necessario a riconfigurare effettivamente le risorse.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.8 — Costi sommersi e decisioni",
+        "§4.13 — Ordine speciale e costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.10, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q064",
+      "topicId": "cdg-c04-t09",
+      "question": "Che cosa sono i costi out-of-pocket?",
+      "answer": "Sono costi che comportano un esborso monetario effettivo, immediato o futuro.",
+      "detail": "La manifestazione di cassa può non coincidere con il periodo di competenza del costo contabile. La distinzione è rilevante quando si confrontano uscite finanziarie e grandezze economiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.8 — Costi sommersi e decisioni",
+        "§4.13 — Ordine speciale e costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.11, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q065",
+      "topicId": "cdg-c04-t09",
+      "question": "Perché l’ammortamento non è un costo out-of-pocket dell’anno in cui è contabilizzato?",
+      "answer": "Perché rappresenta la ripartizione economica di un investimento già effettuato, senza un nuovo pagamento nel periodo della quota.",
+      "detail": "La registrazione contabile rileva il consumo dell’utilità del bene; il pagamento è associato all’acquisto e a eventuali debiti regolati in altri momenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.8 — Costi sommersi e decisioni",
+        "§4.13 — Ordine speciale e costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.11, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q066",
+      "topicId": "cdg-c04-t09",
+      "question": "Che cosa si intende per costo opportunità?",
+      "answer": "Il beneficio economico della migliore alternativa praticabile cui si rinuncia utilizzando una risorsa scarsa per un certo impiego.",
+      "detail": "È una grandezza economica di confronto, spesso non registrata dalla contabilità generale; è rilevante solo se l’alternativa rinunciata è effettivamente realizzabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.8 — Costi sommersi e decisioni",
+        "§4.13 — Ordine speciale e costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.11, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q067",
+      "topicId": "cdg-c04-t09",
+      "question": "Qual è il costo opportunità di usare internamente una sala affittabile per 2.000 € al mese?",
+      "answer": "È 2.000 € al mese, se l’affitto alternativo a terzi era concretamente praticabile.",
+      "detail": "Non si tratta necessariamente di un pagamento effettivo: è il beneficio sacrificato per assegnare la sala a un evento interno.",
+      "example": "Sala: possibile affitto 2.000 €/mese → costo opportunità dell’uso alternativo interno = 2.000 €/mese.",
+      "formulas": [],
+      "connections": [
+        "§4.5.8 — Costi sommersi e decisioni",
+        "§4.13 — Ordine speciale e costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.11, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q068",
+      "topicId": "cdg-c04-t09",
+      "question": "Quando un costo è controllabile da un responsabile?",
+      "answer": "Quando il responsabile possiede autorità e strumenti sufficienti per influenzarne significativamente l’ammontare nel periodo valutato.",
+      "detail": "Lo stesso costo può essere non controllabile per un capo reparto ma controllabile da un direttore di stabilimento. Il giudizio dipende da leve decisionali e responsabilità effettive.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.8 — Costi sommersi e decisioni",
+        "§4.13 — Ordine speciale e costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.12, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q069",
+      "topicId": "cdg-c04-t09",
+      "question": "Quali costi può influenzare un capo reparto e quali normalmente no, nell’esempio del manuale?",
+      "answer": "Può incidere su scarti di materiali e ore straordinarie, ma non negoziare autonomamente l’affitto dello stabilimento.",
+      "detail": "La valutazione della sua performance dovrebbe concentrarsi sui risultati controllabili, senza imputargli automaticamente scostamenti generati da decisioni di altri livelli.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.8 — Costi sommersi e decisioni",
+        "§4.13 — Ordine speciale e costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.12, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q070",
+      "topicId": "cdg-c04-t09",
+      "question": "Perché il controllo di gestione deve distinguere costi attribuiti e costi controllabili?",
+      "answer": "Perché l’imputazione contabile di un costo a un centro non dimostra che il relativo responsabile possa modificarlo.",
+      "detail": "La valutazione equa richiede di collegare responsabilità e leve operative. Un responsabile non dovrebbe rispondere di un affitto deciso dalla direzione come se potesse negoziarlo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.8 — Costi sommersi e decisioni",
+        "§4.13 — Ordine speciale e costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.5.12, pagina PDF 31"
+    },
+    {
+      "id": "cdg-c04-q071",
+      "topicId": "cdg-c04-t10",
+      "question": "Perché diretto/indiretto e fisso/variabile sono due dimensioni indipendenti?",
+      "answer": "La prima riguarda come il costo è attribuito all’oggetto; la seconda come il totale cambia al variare dell’attività.",
+      "detail": "La griglia del manuale mostra tutte le combinazioni possibili: diretto-variabile, diretto-fisso, indiretto-variabile e indiretto-fisso. Non c’è equivalenza logica fra le due classificazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.6, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q072",
+      "topicId": "cdg-c04-t10",
+      "question": "Quali quattro combinazioni risultano dalla matrice attribuibilità/comportamento?",
+      "answer": "Diretto e variabile; diretto e fisso; indiretto e variabile; indiretto e fisso.",
+      "detail": "Esempi: materie misurate per prodotto; ammortamento di impianto dedicato; energia condivisa che cresce con le ore; affitto del capannone multi-prodotto.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "Non ridurre la matrice a «diretto=variabile» e «indiretto=fisso».",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.6, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q073",
+      "topicId": "cdg-c04-t10",
+      "question": "Come si classificano le materie prime direttamente misurate per il prodotto A?",
+      "answer": "Sono costi diretti rispetto ad A e normalmente variabili con le unità prodotte, nelle ipotesi del caso.",
+      "detail": "La tracciabilità nasce dalla quantità per unità registrata; la variabilità deriva dall’uso delle materie al crescere di Q.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.6, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q074",
+      "topicId": "cdg-c04-t10",
+      "question": "Come si classifica l’ammortamento di una macchina esclusiva della linea A?",
+      "answer": "Diretto rispetto alla linea A, normalmente fisso nel periodo; la quota per singola unità richiede un criterio di attribuzione.",
+      "detail": "È specifico della linea ma non aumenta necessariamente col numero di pezzi nel breve periodo. Il manuale separa attribuzione alla linea e imputazione alle unità.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.6, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q075",
+      "topicId": "cdg-c04-t10",
+      "question": "Come si classifica l’energia comune ai prodotti A e B che varia con l’attività?",
+      "answer": "Variabile o mista rispetto al driver d’attività, ma indiretta ai singoli prodotti se i consumi non sono misurati separatamente.",
+      "detail": "Serve un driver coerente per ripartirla. Il comportamento variabile del costo totale non comporta che ogni singolo prodotto abbia una misura diretta del consumo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.6, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q076",
+      "topicId": "cdg-c04-t10",
+      "question": "Come si classificano affitto di stabilimento, provvigione per ordine e retribuzione del direttore?",
+      "answer": "Affitto multi-prodotto: indiretto e fisso; provvigione per vendita: diretta all’ordine e variabile; retribuzione del direttore: indiretta ai prodotti e normalmente fissa.",
+      "detail": "Le classificazioni dipendono dall’oggetto e dall’intervallo considerato. Sono esempi della tabella sinottica del manuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.6, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q077",
+      "topicId": "cdg-c04-t10",
+      "question": "Quali domande conviene porsi per classificare ogni voce di costo in un esercizio?",
+      "answer": "Rispetto a quale oggetto? Come varia con Q? È evitabile? Chi la controlla? È costo di prodotto o di periodo?",
+      "detail": "La griglia a colonne evita di attribuire una sola etichetta globale a una voce. Le risposte possono variare senza contraddizione.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.6, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q078",
+      "topicId": "cdg-c04-t10",
+      "question": "Che cos’è l’intervallo di rilevanza (relevant range)?",
+      "answer": "È il campo di livelli operativi in cui le ipotesi sul comportamento dei costi risultano ragionevolmente valide.",
+      "detail": "La funzione lineare C=F+vQ non è una legge universale: oltre determinate soglie i costi fissi possono salire per nuove capacità e quelli variabili possono cambiare per turni, sconti o inefficienze.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C(Q)=F+vQ,\\quad Q\\in\\mathrm{range\\ pertinente}",
+          "meaning": "Funzione valida entro l’intervallo pertinente e il periodo ipotizzato."
+        }
+      ],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.7, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q079",
+      "topicId": "cdg-c04-t10",
+      "question": "Come si esprime il costo medio unitario nel modello F+vQ?",
+      "answer": "È F/Q + v: la componente fissa unitaria diminuisce con l’attività, mentre il costo variabile unitario resta v.",
+      "detail": "Il risultato dipende dall’ipotesi che F e v siano validi per il volume considerato.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "c_{medio}(Q)=\\frac{F}{Q}+v,\\quad Q>0",
+          "meaning": "Costo totale diviso per Q."
+        }
+      ],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.7, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q080",
+      "topicId": "cdg-c04-t10",
+      "question": "Con F=24.000 € e v=6 €/unità, quanto costano 1.000 pezzi in totale e per unità?",
+      "answer": "Il costo totale è 30.000 € e il costo medio unitario è 30 €.",
+      "detail": "Il variabile totale è 6.000 €; il fisso unitario è 24 €. Sommando 24 + 6 si ottengono 30 €/unità.",
+      "example": "24.000 + 6×1.000 = 30.000 €; 30.000/1.000 = 30 €/u.",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.7, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q081",
+      "topicId": "cdg-c04-t10",
+      "question": "Con F=24.000 € e v=6 €/unità, quanto costano 3.000 pezzi in totale e per unità?",
+      "answer": "Il costo totale è 42.000 € e il costo medio unitario è 14 €.",
+      "detail": "La componente fissa unità scende a 8 € (24.000/3.000) e la parte variabile resta 6 €. È l’effetto di assorbimento dei costi fissi.",
+      "example": "24.000 + 6×3.000 = 42.000 €; 42.000/3.000 = 14 €/u.",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.7, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q082",
+      "topicId": "cdg-c04-t10",
+      "question": "Che cosa si intende per assorbimento dei costi fissi?",
+      "answer": "La diminuzione del costo fisso medio quando uno stesso importo F viene ripartito su più unità Q.",
+      "detail": "Nel caso del manuale la quota fissa passa da 24 €/u a Q=1.000 a 8 €/u a Q=3.000, senza che cambi il fisso totale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CF_{unit}=\\frac{F}{Q}",
+          "meaning": "La quota fissa media decresce al crescere di Q, a F invariato."
+        }
+      ],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.7, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q083",
+      "topicId": "cdg-c04-t10",
+      "question": "Perché non bisogna estrapolare indefinitamente il modello lineare dei costi?",
+      "answer": "Perché la capacità massima, nuovi turni, scarti, sconti quantità e altre discontinuità possono modificare F o v.",
+      "detail": "La funzione è utilizzabile solo entro un intervallo di attività ragionevole; superare la soglia può richiedere un secondo impianto o una nuova struttura di costi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.7, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q084",
+      "topicId": "cdg-c04-t10",
+      "question": "Che differenza c’è tra costi di capacità impegnata e costi discrezionali?",
+      "answer": "Si distinguono per il diverso grado di modificabilità dei costi fissi: alcuni dipendono da impegni di capacità, altri da scelte gestionali discrezionali.",
+      "detail": "Il manuale introduce le categorie per chiarire che non tutte le componenti fisse sono ugualmente rigide, né variano con le stesse tempistiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.1 — Tracciabilità e attribuzione",
+        "§4.8 — Validità dei modelli stimati"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.7, pagina PDF 32"
+    },
+    {
+      "id": "cdg-c04-q085",
+      "topicId": "cdg-c04-t11",
+      "question": "Perché è necessario stimare separatamente la quota fissa e quella variabile di un costo misto?",
+      "answer": "Perché le due componenti non sono sempre esplicitate nelle fatture, ma sono necessarie per prevedere costi al variare dell’attività.",
+      "detail": "Si analizzano osservazioni storiche di Q e C. Il manuale presenta analisi grafica, metodo massimo–minimo e regressione ai minimi quadrati.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.2 — Costo misto",
+        "§4.7 — Modello lineare e relevant range"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.8, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q086",
+      "topicId": "cdg-c04-t11",
+      "question": "Che cosa seleziona il metodo del massimo e del minimo (high–low)?",
+      "answer": "Le osservazioni con il massimo e minimo livello di attività Q, prendendo i relativi costi osservati.",
+      "detail": "La selezione non avviene scegliendo gli importi di costo più alto e più basso indipendentemente da Q. Si usano poi le due coppie (Q,C) per stimare la pendenza v e l’intercetta F.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.2 — Costo misto",
+        "§4.7 — Modello lineare e relevant range"
+      ],
+      "mistakes": "Non scegliere semplicemente il costo monetario massimo e minimo.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.8.1, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q087",
+      "topicId": "cdg-c04-t11",
+      "question": "Come si determina il costo variabile unitario con il metodo high–low?",
+      "answer": "Dividendo la differenza tra i costi osservati ai livelli massimo e minimo di attività per la differenza fra tali livelli.",
+      "detail": "Il numeratore contiene C associati a Qmax e Qmin; il denominatore è Qmax−Qmin. Il rapporto ha unità €/unità di attività.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "v=\\frac{C_{Q_{max}}-C_{Q_{min}}}{Q_{max}-Q_{min}}",
+          "meaning": "Coefficiente angolare del modello di costo stimato."
+        }
+      ],
+      "connections": [
+        "§4.5.2 — Costo misto",
+        "§4.7 — Modello lineare e relevant range"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.8.1, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q088",
+      "topicId": "cdg-c04-t11",
+      "question": "Come si determina la quota fissa F dopo aver stimato v con il metodo high–low?",
+      "answer": "Sottraendo vQ dal costo osservato in una delle due condizioni estreme: F=C−vQ.",
+      "detail": "Si può usare la coppia del massimo o del minimo livello di attività; nel modello stimato entrambe danno lo stesso valore. F rappresenta l’intercetta sull’asse dei costi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "F=C_{Q_{max}}-vQ_{max}",
+          "meaning": "Quota fissa stimata dall’osservazione al massimo livello di attività."
+        }
+      ],
+      "connections": [
+        "§4.5.2 — Costo misto",
+        "§4.7 — Modello lineare e relevant range"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.8.1, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q089",
+      "topicId": "cdg-c04-t11",
+      "question": "Qual è la funzione di costo stimata dall’esempio con 8.000 € a 1.000 unità e 11.000 € a 2.000?",
+      "answer": "C(Q)=5.000 + 3Q: quota fissa 5.000 € e quota variabile 3 €/unità.",
+      "detail": "Si ricava v=(11.000−8.000)/(2.000−1.000)=3 €/u e F=11.000−3×2.000=5.000 €. La retta passa per entrambe le osservazioni selezionate.",
+      "example": "A Q=1.500: C=5.000+3×1.500=9.500 €.",
+      "formulas": [
+        {
+          "latex": "C(Q)=5000+3Q",
+          "meaning": "Retta stimata nell’esempio del manuale."
+        }
+      ],
+      "connections": [
+        "§4.5.2 — Costo misto",
+        "§4.7 — Modello lineare e relevant range"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.8.1, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q090",
+      "topicId": "cdg-c04-t11",
+      "question": "Quanto prevede la funzione high–low dell’esempio per 1.500 unità?",
+      "answer": "9.500 €.",
+      "detail": "Con F=5.000 € e v=3 €/unità, la componente variabile è 4.500 €. La previsione è un’interpolazione fra i due livelli osservati.",
+      "example": "5.000 + 3×1.500 = 9.500 €.",
+      "formulas": [],
+      "connections": [
+        "§4.5.2 — Costo misto",
+        "§4.7 — Modello lineare e relevant range"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.8.1, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q091",
+      "topicId": "cdg-c04-t11",
+      "question": "Perché una stima high–low non va estesa senza controllo fuori dai volumi osservati?",
+      "answer": "Perché a livelli di attività molto diversi possono cambiare capacità, struttura dei costi e andamento della componente variabile.",
+      "detail": "La funzione lineare è un’approssimazione valida nell’intervallo pertinente. Estrarre una retta da due dati non prova che rimanga valida a qualunque Q.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.2 — Costo misto",
+        "§4.7 — Modello lineare e relevant range"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.8.1, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q092",
+      "topicId": "cdg-c04-t11",
+      "question": "Qual è il limite principale del metodo high–low?",
+      "answer": "Dipende da due sole osservazioni, perciò un periodo anomalo può distorcere la stima della funzione di costo.",
+      "detail": "È utile osservare il diagramma di dispersione e verificare il nesso plausibile tra driver e costo. La regressione sfrutta più dati anziché affidarsi ai due estremi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.2 — Costo misto",
+        "§4.7 — Modello lineare e relevant range"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.8.2, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q093",
+      "topicId": "cdg-c04-t11",
+      "question": "Come funziona in generale la regressione lineare ai minimi quadrati applicata ai costi?",
+      "answer": "Stima F e v usando tutte le osservazioni e minimizzando la somma dei quadrati degli scarti fra costi osservati e costi previsti.",
+      "detail": "Il modello è C_i≈F+vQ_i; gli scarti vengono elevati al quadrato per misurare l’errore complessivo della retta.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\min_{F,v}\\sum_i[C_i-(F+vQ_i)]^2",
+          "meaning": "Obiettivo della regressione ai minimi quadrati."
+        }
+      ],
+      "connections": [
+        "§4.5.2 — Costo misto",
+        "§4.7 — Modello lineare e relevant range"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.8.2, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q094",
+      "topicId": "cdg-c04-t11",
+      "question": "Come si interpretano intercetta e coefficiente angolare di una regressione dei costi?",
+      "answer": "L’intercetta F stima il costo fisso; il coefficiente angolare v stima il costo aggiuntivo per unità del driver Q nel modello.",
+      "detail": "L’interpretazione richiede un driver plausibile e un intervallo di validità appropriato. Non sono necessariamente parametri fisici esatti: derivano da dati e ipotesi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.2 — Costo misto",
+        "§4.7 — Modello lineare e relevant range"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.8.2, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q095",
+      "topicId": "cdg-c04-t11",
+      "question": "Una regressione con buon adattamento statistico dimostra che il driver causa il costo?",
+      "answer": "No: un buon adattamento non garantisce causalità.",
+      "detail": "Può derivare da driver impropri, dati non omogenei o cambiamenti di struttura. Bisogna interpretare la relazione dal punto di vista operativo oltre a valutare il fit numerico.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.2 — Costo misto",
+        "§4.7 — Modello lineare e relevant range"
+      ],
+      "mistakes": "Non confondere correlazione statistica e causalità gestionale.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.8.2, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q096",
+      "topicId": "cdg-c04-t11",
+      "question": "Quali competenze sulla regressione richiede esplicitamente il capitolo a livello d’esame?",
+      "answer": "Comprendere il significato di intercetta F, coefficiente v e intervallo di validità.",
+      "detail": "Il manuale rinvia le applicazioni numeriche più complesse alle eventuali esercitazioni: qui conta soprattutto leggere e motivare il modello di costo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.2 — Costo misto",
+        "§4.7 — Modello lineare e relevant range"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.8.2, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q097",
+      "topicId": "cdg-c04-t12",
+      "question": "Che cos’è una configurazione di costo?",
+      "answer": "È la scelta delle componenti di costo da includere nella misurazione di un oggetto, in funzione dello scopo.",
+      "detail": "Le configurazioni parziali usano alcune classi di costo; quelle piene comprendono anche quote indirette. Anche il costo pieno dipende dalle regole e dalle basi di attribuzione, non è naturale o unico.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q098",
+      "topicId": "cdg-c04-t12",
+      "question": "Perché il costo pieno non è un valore naturale indipendente dalle ipotesi?",
+      "answer": "Perché le quote indirette dipendono dal perimetro dei costi selezionati e dai driver utilizzati per attribuirle.",
+      "detail": "Due configurazioni ugualmente coerenti con finalità diverse possono produrre risultati diversi. L’importante è dichiarare criteri e limiti delle imputazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9, pagina PDF 33"
+    },
+    {
+      "id": "cdg-c04-q099",
+      "topicId": "cdg-c04-t12",
+      "question": "Qual è la definizione di costo primo adottata nel corso?",
+      "answer": "Costo primo = materie prime + parti componenti.",
+      "detail": "È la nomenclatura specifica delle slide e degli appunti Arcari richiamata nel manuale. Non è equivalente alla definizione diffusa in alcuni testi internazionali che comprende materiali diretti e manodopera diretta.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{primo}=C_{materie\\ prime}+C_{parti\\ componenti}",
+          "meaning": "Definizione richiesta per questo insegnamento."
+        }
+      ],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "Per l’esame non sostituire la definizione della docente con “materiali + MOD”.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.1, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q100",
+      "topicId": "cdg-c04-t12",
+      "question": "Che cosa comprende il costo diretto di trasformazione?",
+      "answer": "La manodopera diretta (MOD) e gli altri oneri direttamente riconducibili alla trasformazione del bene.",
+      "detail": "È una componente diversa dal costo primo, che nel corso contiene materie e componenti. I due aggregati si sommano per costruire il costo diretto di produzione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{trasf\\ diretto}=MOD+C_{altri\\ diretti\\ di\\ trasf}",
+          "meaning": "Somma della MOD e degli altri costi diretti di trasformazione."
+        }
+      ],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.1, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q101",
+      "topicId": "cdg-c04-t12",
+      "question": "Come si ottiene il costo diretto di produzione?",
+      "answer": "Sommando costo primo e costi diretti di trasformazione.",
+      "detail": "La formula segue la progressione del manuale: materiali e componenti → trasformazione diretta → costo diretto del prodotto.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{diretto\\ prod}=C_{primo}+C_{trasf\\ diretto}",
+          "meaning": "Somma dei costi diretti di materiali/componenti e trasformazione."
+        }
+      ],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.1, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q102",
+      "topicId": "cdg-c04-t12",
+      "question": "Perché occorre fare attenzione al termine inglese prime costs?",
+      "answer": "Perché nella letteratura internazionale spesso significa materiali diretti più MOD, mentre il corso usa “costo primo” per materie prime e parti componenti.",
+      "detail": "Il manuale segnala espressamente la differenza terminologica per evitare errori negli esercizi. In questo insegnamento valgono le definizioni adottate dalla docente.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.1, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q103",
+      "topicId": "cdg-c04-t12",
+      "question": "Come si calcola il costo pieno di produzione?",
+      "answer": "Si aggiungono al costo diretto di produzione le quote dei costi indiretti pertinenti all’area produttiva.",
+      "detail": "Il manuale cita manutenzione, manodopera indiretta, ammortamento di impianti comuni ed energia. Occorre giustificare il criterio di imputazione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{pieno\\ prod}=C_{diretto\\ prod}+C_{indiretti\\ produttivi\\ attribuiti}",
+          "meaning": "Configurazione piena industriale."
+        }
+      ],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.2, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q104",
+      "topicId": "cdg-c04-t12",
+      "question": "Come si passa dal costo pieno di produzione al costo pieno aziendale?",
+      "answer": "Aggiungendo quote appropriate dei costi extra-produttivi, commerciali, amministrativi e di struttura.",
+      "detail": "La misura è utilizzabile per specifiche analisi gestionali ma non coincide automaticamente con il valore inventariabile delle rimanenze.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{pieno\\ aziendale}=C_{pieno\\ prod}+C_{extra\\ produttivi\\ attribuiti}",
+          "meaning": "Configurazione piena aziendale."
+        }
+      ],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.2, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q105",
+      "topicId": "cdg-c04-t12",
+      "question": "Qual è la sequenza progressiva delle configurazioni di costo illustrata nel diagramma del capitolo?",
+      "answer": "Costo primo → costo diretto di produzione → costo pieno industriale → costo pieno aziendale.",
+      "detail": "Al costo primo si aggiunge la trasformazione diretta; poi gli indiretti produttivi; infine i costi extra-produttivi attribuiti. Ogni passaggio amplia il perimetro.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.2, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q106",
+      "topicId": "cdg-c04-t12",
+      "question": "Qual è la differenza fra configurazione a costi diretti e configurazione a costi variabili?",
+      "answer": "La prima guarda all’attribuibilità diretta all’oggetto, la seconda al comportamento del costo al variare dell’attività.",
+      "detail": "Un costo diretto fisso può entrare nel direct costing inteso come costi direttamente attribuibili, ma non nel variable costing. Il manuale insiste sulla distinzione concettuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "Non usare direct costing e variable costing come sinonimi senza definire il perimetro.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.2, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q107",
+      "topicId": "cdg-c04-t12",
+      "question": "Quale configurazione va adottata per valorizzare le rimanenze?",
+      "answer": "Il costo di produzione determinato secondo i criteri applicabili, richiamati nel manuale tramite OIC 13.",
+      "detail": "Sono esclusi i costi che non possono essere incorporati nel magazzino. La configurazione interna di costo pieno aziendale non può essere trasferita senza modifiche al bilancio.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.3, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q108",
+      "topicId": "cdg-c04-t12",
+      "question": "Quale criterio di costo è più utile per una decisione di breve periodo?",
+      "answer": "Costi e ricavi futuri differenziali, escludendo costi sommersi e costi comuni invariati.",
+      "detail": "La finalità è stabilire cosa cambia veramente scegliendo un’alternativa, non attribuire tutto il costo contabile al prodotto.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.3, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q109",
+      "topicId": "cdg-c04-t12",
+      "question": "Come si selezionano i valori per controllare l’efficienza di un’attività?",
+      "answer": "Confrontando standard, budget e consuntivi omogenei e separando gli effetti di volume, prezzo ed efficienza.",
+      "detail": "Un maggiore costo totale può derivare da più unità prodotte e non da un peggioramento della produttività. È necessario confrontare basi e condizioni coerenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.3, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q110",
+      "topicId": "cdg-c04-t12",
+      "question": "Perché la politica dei prezzi non deve limitarsi a un markup meccanico sul costo pieno?",
+      "answer": "Perché occorre considerare costi pertinenti, capacità produttiva, domanda di mercato e strategia.",
+      "detail": "Il costo pieno può essere un’informazione utile, ma la decisione di prezzo richiede di valutare anche condizioni e alternative del mercato e l’orizzonte temporale.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.3, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q111",
+      "topicId": "cdg-c04-t12",
+      "question": "Come si studia la redditività per prodotto o cliente scegliendo la configurazione dei costi?",
+      "answer": "Si possono usare configurazioni parziali o piene per destinazione, esplicitando basi di allocazione e incertezza.",
+      "detail": "Un margine calcolato con un criterio convenzionale di riparto non ha necessariamente lo stesso significato di un margine basato su costi direttamente eliminabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.10 — Costo inventariabile",
+        "§4.11 — Configurazioni nel caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.3, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q112",
+      "topicId": "cdg-c04-t13",
+      "question": "Perché è necessario specificare anche la natura temporale dei valori di costo?",
+      "answer": "Perché la scelta fra consuntivi, attuali, preventivi e standard cambia in base alla domanda gestionale.",
+      "detail": "Il costo di una commessa conclusa richiede valori effettivi, un’offerta futura valori previsionali, il controllo di efficienza parametri standard da confrontare con i consuntivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Scopo della misurazione",
+        "§4.7 — Ipotesi di volume comparabile"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.4, pagina PDF 34"
+    },
+    {
+      "id": "cdg-c04-q113",
+      "topicId": "cdg-c04-t13",
+      "question": "Che cosa sono i costi consuntivi o effettivi?",
+      "answer": "Valori riferiti a risorse realmente impiegate e a fatti già avvenuti.",
+      "detail": "Rispondono alla domanda «Che cosa è accaduto?» e sono utilizzati per consuntivazione, rendicontazione e analisi dei risultati.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Scopo della misurazione",
+        "§4.7 — Ipotesi di volume comparabile"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.4, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q114",
+      "topicId": "cdg-c04-t13",
+      "question": "Che cosa sono i costi attuali?",
+      "answer": "Valori che riflettono le condizioni correnti di prezzo e impiego delle risorse.",
+      "detail": "Rispondono a «Quanto costerebbe oggi la stessa risorsa?» e aiutano ad aggiornare preventivi e confronti economici.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Scopo della misurazione",
+        "§4.7 — Ipotesi di volume comparabile"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.4, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q115",
+      "topicId": "cdg-c04-t13",
+      "question": "Che cosa sono i costi preventivi o stimati?",
+      "answer": "Valori prospettici che rappresentano quanto l’impresa prevede di spendere prima di svolgere l’attività.",
+      "detail": "Servono a formulare budget, stimare fabbisogni e supportare decisioni ex ante.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Scopo della misurazione",
+        "§4.7 — Ipotesi di volume comparabile"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.4, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q116",
+      "topicId": "cdg-c04-t13",
+      "question": "Che cosa sono i costi standard?",
+      "answer": "Valori costruiti assumendo prezzi e consumi considerati normali o obiettivo in condizioni definite.",
+      "detail": "Rispondono a «Quanto dovremmo consumare o spendere?» e permettono analisi di efficienza e degli scostamenti rispetto ai risultati effettivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Scopo della misurazione",
+        "§4.7 — Ipotesi di volume comparabile"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.4, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q117",
+      "topicId": "cdg-c04-t13",
+      "question": "Perché è fuorviante confrontare il consuntivo di 1.500 pezzi con un budget preparato per 1.000?",
+      "answer": "Perché parte della differenza nel costo totale può derivare dal maggior volume e non da inefficienza.",
+      "detail": "Occorre rendere omogenee le condizioni di confronto o isolare separatamente gli effetti del volume, del prezzo e dell’impiego delle risorse.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Scopo della misurazione",
+        "§4.7 — Ipotesi di volume comparabile"
+      ],
+      "mistakes": "Non interpretare ogni superamento del budget come inefficienza.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.4, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q118",
+      "topicId": "cdg-c04-t13",
+      "question": "Quali modelli tradizionali di sistema di rilevazione dei costi cita il manuale?",
+      "answer": "Sistema unico integrato, sistema duplice contabile integrato e sistema duplice misto.",
+      "detail": "Si differenziano per il grado e le modalità di integrazione delle rilevazioni contabili con elaborazioni analitiche ed extra-contabili. Il requisito operativo è poter riconciliare i risultati.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Scopo della misurazione",
+        "§4.7 — Ipotesi di volume comparabile"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.4, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q119",
+      "topicId": "cdg-c04-t13",
+      "question": "Qual è il requisito fondamentale di riconciliazione fra dati contabili e controllo di gestione?",
+      "answer": "Riuscire a ricondurre le analisi direzionali ai dati aziendali, spiegando differenze di classificazione, imputazione e periodo.",
+      "detail": "L’integrazione può essere realizzata tecnicamente con sistemi diversi, ma deve restare chiaro da dove provengono i numeri e perché cambiano fra prospetti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Scopo della misurazione",
+        "§4.7 — Ipotesi di volume comparabile"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.4, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q120",
+      "topicId": "cdg-c04-t13",
+      "question": "Quali tre dimensioni deve definire insieme un buon sistema di controllo?",
+      "answer": "Struttura degli oggetti e delle configurazioni; processo e tempi dei dati; regole di attribuzione e soggetti responsabili.",
+      "detail": "La coerenza tra le tre dimensioni rende le misure utili alla decisione e al controllo, non solo aritmeticamente corrette.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.9.3 — Scopo della misurazione",
+        "§4.7 — Ipotesi di volume comparabile"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.9.4, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q121",
+      "topicId": "cdg-c04-t14",
+      "question": "Quale riferimento contabile indica il manuale per la valorizzazione delle rimanenze italiane?",
+      "answer": "Il principio contabile OIC 13.",
+      "detail": "In generale il costo di produzione comprende costi diretti e quote ragionevoli di costi generali produttivi necessari a portare i beni nelle condizioni e nel luogo attuali; voci non ammissibili e costi di distribuzione sono esclusi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.5 — Costo di prodotto e periodo",
+        "§4.9.3 — Configurazione per il magazzino"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.10, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q122",
+      "topicId": "cdg-c04-t14",
+      "question": "Quali costi non possono essere incorporati indiscriminatamente nelle rimanenze secondo OIC 13?",
+      "answer": "Costi di distribuzione, componenti anomale e altre voci non ammissibili secondo il principio.",
+      "detail": "Non è sufficiente che una spesa rientri nel costo pieno aziendale di un prodotto: il suo trattamento in magazzino dipende dal criterio civilistico pertinente.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.5 — Costo di prodotto e periodo",
+        "§4.9.3 — Configurazione per il magazzino"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.10, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q123",
+      "topicId": "cdg-c04-t14",
+      "question": "Che cosa si intende per capacità produttiva normale?",
+      "answer": "Il livello medio atteso di produzione in condizioni ordinarie, tenendo conto anche di manutenzioni e interruzioni normalmente prevedibili.",
+      "detail": "È un riferimento per attribuire ai prodotti i costi indiretti fissi produttivi senza aumentare artificialmente il valore delle rimanenze in periodi di sottoutilizzo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.5 — Costo di prodotto e periodo",
+        "§4.9.3 — Configurazione per il magazzino"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.10.1, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q124",
+      "topicId": "cdg-c04-t14",
+      "question": "Perché i costi indiretti fissi produttivi sono attribuiti facendo riferimento alla capacità normale?",
+      "answer": "Per evitare che una produzione eccezionalmente bassa faccia crescere senza limite il fisso imputato a ogni unità.",
+      "detail": "La quota non assorbita diventa generalmente costo del periodo. In caso di produzione insolitamente elevata, la quota unitaria si riduce per evitare valori di magazzino eccessivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.5 — Costo di prodotto e periodo",
+        "§4.9.3 — Configurazione per il magazzino"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.10.1, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q125",
+      "topicId": "cdg-c04-t14",
+      "question": "Nel caso OIC 13, quale quota fissa unitaria deriva da 120.000 € di indiretti e 10.000 pezzi di capacità normale?",
+      "answer": "12 €/pezzo.",
+      "detail": "Si divide il costo generale fisso produttivo per il volume della capacità normale, non per la produzione effettiva ridotta.",
+      "example": "120.000 / 10.000 = 12 €/pezzo.",
+      "formulas": [
+        {
+          "latex": "k_{normale}=\\frac{120000}{10000}=12\\ \\mathrm{€/pezzo}",
+          "meaning": "Coefficiente fisso produttivo su capacità normale."
+        }
+      ],
+      "connections": [
+        "§4.5.5 — Costo di prodotto e periodo",
+        "§4.9.3 — Configurazione per il magazzino"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.10.1, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q126",
+      "topicId": "cdg-c04-t14",
+      "question": "Quanto costi fissi vengono assorbiti con 8.000 pezzi effettivi e quota normale di 12 €?",
+      "answer": "96.000 €.",
+      "detail": "Si imputa ai prodotti 8.000×12 = 96.000 €; il totale fisso produttivo del periodo rimane 120.000 €, ma non viene interamente caricato sui beni.",
+      "example": "8.000 × 12 = 96.000 €.",
+      "formulas": [
+        {
+          "latex": "C_{assorbiti}=Q_{eff}\\cdot k_{normale}",
+          "meaning": "Valore dei costi fissi produttivi imputati alla produzione effettiva."
+        }
+      ],
+      "connections": [
+        "§4.5.5 — Costo di prodotto e periodo",
+        "§4.9.3 — Configurazione per il magazzino"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.10.1, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q127",
+      "topicId": "cdg-c04-t14",
+      "question": "Qual è la quota non assorbita nell’esempio OIC 13 da 120.000 € e 8.000 pezzi effettivi?",
+      "answer": "24.000 €, cioè 120.000 − 96.000 €.",
+      "detail": "Riflette il sottoutilizzo della capacità rispetto al riferimento normale e, nell’ipotesi didattica, non va aumentato il valore del magazzino per recuperarla.",
+      "example": "120.000 − (8.000×12) = 24.000 €.",
+      "formulas": [],
+      "connections": [
+        "§4.5.5 — Costo di prodotto e periodo",
+        "§4.9.3 — Configurazione per il magazzino"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.10.1, pagina PDF 35"
+    },
+    {
+      "id": "cdg-c04-q128",
+      "topicId": "cdg-c04-t14",
+      "question": "Che cosa accade all’allocazione unitaria degli indiretti fissi se la produzione è insolitamente alta?",
+      "answer": "La quota unitaria attribuita viene ridotta per evitare una valorizzazione eccessiva delle rimanenze.",
+      "detail": "Il principio richiede di evitare attribuzioni che facciano eccedere i costi effettivamente sostenuti; la capacità normale è un riferimento, non una regola per sovrastimare il magazzino.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.5 — Costo di prodotto e periodo",
+        "§4.9.3 — Configurazione per il magazzino"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.10.1, pagina PDF 36"
+    },
+    {
+      "id": "cdg-c04-q129",
+      "topicId": "cdg-c04-t14",
+      "question": "Perché un costo commerciale può essere utile al pricing ma non incorporabile nelle rimanenze?",
+      "answer": "Perché la decisione sul prezzo considera la convenienza aziendale più ampia, mentre la valorizzazione delle scorte segue il costo di produzione ammesso dai criteri contabili.",
+      "detail": "La finalità decisionale e quella del bilancio hanno perimetri differenti. Non si deve dedurre la capitalizzabilità dalla sola pertinenza gestionale.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.5 — Costo di prodotto e periodo",
+        "§4.9.3 — Configurazione per il magazzino"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.10.2, pagina PDF 36"
+    },
+    {
+      "id": "cdg-c04-q130",
+      "topicId": "cdg-c04-t14",
+      "question": "Perché un ammortamento industriale può essere imputato al prodotto ma irrilevante per una decisione di breve?",
+      "answer": "Può essere parte del costo di produzione ai fini di bilancio senza cambiare fra le alternative di breve periodo.",
+      "detail": "La capitalizzabilità e la rilevanza differenziale sono due quesiti distinti: uno riguarda il magazzino, l’altro gli effetti futuri della scelta.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.5 — Costo di prodotto e periodo",
+        "§4.9.3 — Configurazione per il magazzino"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.10.2, pagina PDF 36"
+    },
+    {
+      "id": "cdg-c04-q131",
+      "topicId": "cdg-c04-t15",
+      "question": "Quali sono le quantità e i prezzi dei prodotti A e B nel caso integrato?",
+      "answer": "A: 1.200 unità a 100 €; B: 800 unità a 180 €.",
+      "detail": "Si assumono prodotti realizzati e venduti nello stesso periodo, senza rimanenze. I costi diretti unitari e le ore macchina sono diversi per A e B, perciò l’allocazione basata sulle ore non equivale a una divisione uniforme per pezzo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11, pagina PDF 36"
+    },
+    {
+      "id": "cdg-c04-q132",
+      "topicId": "cdg-c04-t15",
+      "question": "Quali componenti dirette per unità sono assunte per il prodotto A?",
+      "answer": "Materie 18 €, componenti 4 €, MOD 10 €, altri diretti di trasformazione 2 €; ore macchina 1 per pezzo.",
+      "detail": "Questi dati servono a costruire costo primo, trasformazione diretta e costo diretto di produzione prima di allocare gli indiretti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11, pagina PDF 36"
+    },
+    {
+      "id": "cdg-c04-q133",
+      "topicId": "cdg-c04-t15",
+      "question": "Quali componenti dirette per unità sono assunte per il prodotto B?",
+      "answer": "Materie 22 €, componenti 5 €, MOD 12 €, altri diretti di trasformazione 3 €; ore macchina 3 per pezzo.",
+      "detail": "B assorbe tre ore macchina per unità: pur avendo una produzione inferiore in pezzi, riceverà una quota totale maggiore dei costi indiretti basati su questo driver.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11, pagina PDF 36"
+    },
+    {
+      "id": "cdg-c04-q134",
+      "topicId": "cdg-c04-t15",
+      "question": "Quali pool di costi indiretti vengono allocati nel caso A e B?",
+      "answer": "36.000 € di indiretti produttivi variabili, 72.000 € di indiretti produttivi fissi e 24.000 € di costi extra-produttivi.",
+      "detail": "I primi due pool vengono allocati con ore macchina; gli extra-produttivi sono divisi per numero di unità solo a scopo didattico, senza presunzione di causalità.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11, pagina PDF 36"
+    },
+    {
+      "id": "cdg-c04-q135",
+      "topicId": "cdg-c04-t15",
+      "question": "Quali sono costo primo, trasformazione diretta e costo diretto di produzione del prodotto A?",
+      "answer": "Costo primo 22 €/u; trasformazione diretta 12 €/u; diretto di produzione 34 €/u.",
+      "detail": "Si applica la definizione del corso: 18+4=22; MOD e altri diretti 10+2=12; totale diretto 22+12=34.",
+      "example": "A: (18+4)+(10+2)=34 €/unità.",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.1, pagina PDF 36"
+    },
+    {
+      "id": "cdg-c04-q136",
+      "topicId": "cdg-c04-t15",
+      "question": "Quali sono costo primo, trasformazione diretta e costo diretto di produzione del prodotto B?",
+      "answer": "Costo primo 27 €/u; trasformazione diretta 15 €/u; diretto di produzione 42 €/u.",
+      "detail": "Per B: 22+5=27 di materiali/componenti, 12+3=15 di trasformazione e 27+15=42 di diretto produttivo.",
+      "example": "B: (22+5)+(12+3)=42 €/unità.",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.1, pagina PDF 36"
+    },
+    {
+      "id": "cdg-c04-q137",
+      "topicId": "cdg-c04-t15",
+      "question": "Quante ore macchina totali assorbono A e B nel caso integrato?",
+      "answer": "A 1.200 ore, B 2.400 ore, in totale 3.600 ore.",
+      "detail": "A richiede 1 ora per 1.200 unità, B 3 ore per 800 unità. La differenza guida l’imputazione dei costi indiretti produttivi.",
+      "example": "1.200×1 + 800×3 = 3.600 ore.",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.2, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q138",
+      "topicId": "cdg-c04-t15",
+      "question": "Quali coefficienti risultano per indiretti produttivi variabili e fissi nel caso A/B?",
+      "answer": "10 €/h per i variabili (36.000/3.600) e 20 €/h per i fissi (72.000/3.600); complessivamente 30 €/h.",
+      "detail": "Le tre cifre sono per ora macchina. È essenziale non usare i pezzi come base quando il caso prescrive l’assorbimento di ore macchina.",
+      "example": "kV=10 €/h; kF=20 €/h; kTot=30 €/h.",
+      "formulas": [
+        {
+          "latex": "k_V=\\frac{36000}{3600}=10,\\quad k_F=\\frac{72000}{3600}=20",
+          "meaning": "Coefficienti per ora macchina dei due pool."
+        }
+      ],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.2, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q139",
+      "topicId": "cdg-c04-t15",
+      "question": "Quali indiretti produttivi per unità sono imputati al prodotto A?",
+      "answer": "10 €/u variabili + 20 €/u fissi = 30 €/u.",
+      "detail": "A assorbe un’ora macchina per pezzo: moltiplicando 1 h per i coefficienti di 10 e 20 €/h si ottengono le due quote.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.2, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q140",
+      "topicId": "cdg-c04-t15",
+      "question": "Quali indiretti produttivi per unità sono imputati al prodotto B?",
+      "answer": "30 €/u variabili + 60 €/u fissi = 90 €/u.",
+      "detail": "B assorbe 3 ore macchina a pezzo, quindi l’allocazione è tripla rispetto ad A, coerentemente con il driver.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.2, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q141",
+      "topicId": "cdg-c04-t15",
+      "question": "Come si verifica la quadratura degli indiretti produttivi allocati a A e B?",
+      "answer": "1.200×30 + 800×90 = 108.000 €, uguale a 36.000 + 72.000 € di costi indiretti produttivi.",
+      "detail": "La verifica conferma che le quote complessive riproducono il pool imputato, ma non dimostra da sola che il driver sia causalmente perfetto.",
+      "example": "36.000 + 72.000 = 108.000 €.",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.2, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q142",
+      "topicId": "cdg-c04-t15",
+      "question": "Qual è il costo variabile di produzione unitario dei prodotti A e B nel caso integrato?",
+      "answer": "44 €/u per A e 72 €/u per B.",
+      "detail": "Nel caso, tutti i diretti produttivi sono ipotizzati variabili: A 34+10=44; B 42+30=72. Il manuale precisa che non è una proprietà necessaria di ogni costo diretto.",
+      "example": "A=34+10=44 €/u; B=42+30=72 €/u.",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "Non generalizzare l’ipotesi di tutti i diretti variabili ad ogni impresa.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.3, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q143",
+      "topicId": "cdg-c04-t15",
+      "question": "Qual è il costo pieno di produzione unitario di A e B nel caso integrato?",
+      "answer": "A 64 €/u; B 132 €/u.",
+      "detail": "Si aggiungono tutti gli indiretti produttivi ai costi diretti: per A 34+10+20=64; per B 42+30+60=132.",
+      "example": "A 34+30=64; B 42+90=132 €/u.",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.3, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q144",
+      "topicId": "cdg-c04-t15",
+      "question": "Come sono distribuiti i 24.000 € di costi extra-produttivi nell’esempio A/B?",
+      "answer": "In modo uniforme sulle 2.000 unità complessive: 12 €/unità per entrambi i prodotti.",
+      "detail": "È una convenzione didattica, non un driver necessariamente causale. La scelta potrebbe modificare la redditività attribuita ai singoli prodotti.",
+      "example": "24.000/(1.200+800)=12 €/u.",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "Non affermare che ogni pezzo causa necessariamente 12 € di extra-produttivi.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.3, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q145",
+      "topicId": "cdg-c04-t15",
+      "question": "Qual è il costo pieno aziendale unitario di A e B?",
+      "answer": "76 €/u per A e 144 €/u per B.",
+      "detail": "Al costo pieno di produzione si aggiungono i 12 €/u di extra-produttivi: 64+12=76; 132+12=144.",
+      "example": "A 64+12=76 €/u; B 132+12=144 €/u.",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.3, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q146",
+      "topicId": "cdg-c04-t15",
+      "question": "Quale differenza tra prezzo e costo pieno aziendale presenta ciascun prodotto?",
+      "answer": "A: 24 €/unità; B: 36 €/unità.",
+      "detail": "I prezzi sono rispettivamente 100 e 180 €. Le differenze dipendono dal perimetro del costo pieno e dalle basi di imputazione, perciò non sono invarianti rispetto a ogni criterio di allocazione.",
+      "example": "A=100−76=24 €/u; B=180−144=36 €/u.",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.3, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q147",
+      "topicId": "cdg-c04-t15",
+      "question": "Quali sono i ricavi complessivi del caso integrato A/B?",
+      "answer": "264.000 €, di cui 120.000 € per A e 144.000 € per B.",
+      "detail": "Si moltiplica la quantità venduta per il prezzo unitario: A 1.200×100, B 800×180.",
+      "example": "120.000 + 144.000 = 264.000 €.",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.4, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q148",
+      "topicId": "cdg-c04-t15",
+      "question": "Quali sono i costi diretti produttivi totali del caso A/B?",
+      "answer": "74.400 €, composti da 40.800 € del prodotto A e 33.600 € del prodotto B.",
+      "detail": "Le cifre derivano da costo diretto unitario per quantità: 34×1.200 e 42×800.",
+      "example": "40.800 + 33.600 = 74.400 €.",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.4, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q149",
+      "topicId": "cdg-c04-t15",
+      "question": "Qual è il costo aziendale complessivo e il risultato del caso A/B?",
+      "answer": "Costo complessivo 206.400 € e risultato economico 57.600 €.",
+      "detail": "Il costo totale è 74.400 diretti + 108.000 indiretti produttivi + 24.000 extra-produttivi. Il risultato è la differenza rispetto a 264.000 € di ricavi.",
+      "example": "264.000−74.400−108.000−24.000=57.600 €.",
+      "formulas": [
+        {
+          "latex": "R=264000-74400-108000-24000=57600",
+          "meaning": "Risultato economico della configurazione del caso."
+        }
+      ],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.4, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q150",
+      "topicId": "cdg-c04-t15",
+      "question": "Come si verifica alternativamente il risultato di 57.600 € usando i margini unitari?",
+      "answer": "Con (100−76)×1.200 + (180−144)×800 = 28.800 + 28.800 = 57.600 €.",
+      "detail": "Si usano le differenze tra prezzo e costo pieno aziendale per ogni prodotto. La quadratura dimostra coerenza aritmetica, non causalità delle basi indirette.",
+      "example": "A 24×1.200=28.800 €; B 36×800=28.800 €.",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.4, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q151",
+      "topicId": "cdg-c04-t15",
+      "question": "Perché il risultato unitario del caso A/B non basta per decidere se eliminare un prodotto?",
+      "answer": "Perché parte dei costi pieni è ripartita convenzionalmente e potrebbe non scomparire eliminando il prodotto.",
+      "detail": "Una decisione di breve periodo richiede invece valutare costi e ricavi differenziali, capacità disponibile ed eventuali costi opportunità.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.3 — Driver e allocazione",
+        "§4.9.1–4.9.2 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.11.4, pagina PDF 37"
+    },
+    {
+      "id": "cdg-c04-q152",
+      "topicId": "cdg-c04-t16",
+      "question": "Quali alternative vengono confrontate nel caso TCO triennale?",
+      "answer": "Soluzione X: sistema informatico installato e gestito internamente; soluzione Y: servizio in abbonamento.",
+      "detail": "Il caso assume funzionalità e livelli di servizio equivalenti ed esamina inizialmente i costi nominali, senza attualizzazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.2.3 — Total Cost of Ownership",
+        "§4.5.11 — Valore delle alternative"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.12, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q153",
+      "topicId": "cdg-c04-t16",
+      "question": "Quali sono i principali oneri iniziali della soluzione X e della soluzione Y?",
+      "answer": "X: 18.000 € per licenze/hardware, 7.000 € per installazione e 5.000 € per formazione; Y: 2.500 € per attivazione e 3.500 € per formazione.",
+      "detail": "La soluzione Y non presenta costo iniziale di acquisto licenze/hardware nella tabella, ma ha un canone triennale maggiore. Il confronto deve considerare tutte le fasi di vita.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.2.3 — Total Cost of Ownership",
+        "§4.5.11 — Valore delle alternative"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.12, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q154",
+      "topicId": "cdg-c04-t16",
+      "question": "Quali costi di gestione triennale sono previsti nel caso TCO X/Y?",
+      "answer": "X: 19.500 € manutenzione/supporto e 12.600 € cloud/utenze; Y: 40.500 € canone/cloud e 12.000 € gestione interna.",
+      "detail": "Si aggiungono gli altri oneri della tabella, inclusi eventuali aggiornamenti e la migrazione finale. Il solo prezzo iniziale non descrive il costo totale.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.2.3 — Total Cost of Ownership",
+        "§4.5.11 — Valore delle alternative"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.12, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q155",
+      "topicId": "cdg-c04-t16",
+      "question": "Quali sono i TCO nominali triennali delle soluzioni X e Y?",
+      "answer": "X 69.600 € e Y 62.000 €; Y presenta un vantaggio nominale di 7.600 €.",
+      "detail": "I valori comprendono acquisto/attivazione, formazione, manutenzione, canoni, eventuale evoluzione e migrazione. Sono somme non attualizzate.",
+      "example": "69.600−62.000=7.600 € di minor TCO nominale per Y.",
+      "formulas": [],
+      "connections": [
+        "§4.2.3 — Total Cost of Ownership",
+        "§4.5.11 — Valore delle alternative"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.12, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q156",
+      "topicId": "cdg-c04-t16",
+      "question": "Perché Y non è necessariamente la scelta migliore nonostante il TCO nominale inferiore?",
+      "answer": "Perché occorre considerare sicurezza, disponibilità dei dati, costi d’indisponibilità, lock-in, qualità del servizio, crescita degli utenti e valore finanziario del tempo.",
+      "detail": "Il TCO da solo non esaurisce tutte le variabili decisionali. Se X e Y hanno pagamenti con tempistiche diverse, può servire un confronto attualizzato.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.2.3 — Total Cost of Ownership",
+        "§4.5.11 — Valore delle alternative"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.12, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q157",
+      "topicId": "cdg-c04-t16",
+      "question": "Perché la comparabilità dei livelli di servizio è essenziale nel confronto TCO?",
+      "answer": "Perché il confronto dei costi ha senso solo se le alternative forniscono prestazioni e condizioni funzionali equivalenti o rese confrontabili.",
+      "detail": "Un’opzione meno costosa ma meno affidabile o con minore disponibilità potrebbe non generare lo stesso valore. Il caso assume esplicitamente equivalenza per isolare l’effetto del TCO.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.2.3 — Total Cost of Ownership",
+        "§4.5.11 — Valore delle alternative"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.12, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q158",
+      "topicId": "cdg-c04-t17",
+      "question": "Quali dati caratterizzano l’ordine straordinario nel caso del manuale?",
+      "answer": "100 pezzi a 90 € ciascuno; costo variabile aggiuntivo 55 €/pezzo; trasporto specifico totale 600 €; fissi comuni invariati 8.000 €.",
+      "detail": "Si assume capacità residua e, inizialmente, assenza di commesse alternative sacrificate. Sono pertanto rilevanti solo le grandezze che cambiano accettando l’ordine.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.7 — Costi differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.13, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q159",
+      "topicId": "cdg-c04-t17",
+      "question": "Come si determina il margine incrementale dell’ordine di 100 pezzi?",
+      "answer": "100×(90−55)−600=2.900 €, positivo.",
+      "detail": "Il margine unitario prima del trasporto è 35 €, per un totale di 3.500 €; il trasporto specifico riduce il vantaggio a 2.900 €. Il costo fisso comune invariato non incide.",
+      "example": "3.500−600=2.900 €.",
+      "formulas": [
+        {
+          "latex": "M_{incr}=Q(p-v)-C_{specifici}=100(90-55)-600",
+          "meaning": "Vantaggio incrementale in assenza di costi opportunità."
+        }
+      ],
+      "connections": [
+        "§4.5.7 — Costi differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.13, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q160",
+      "topicId": "cdg-c04-t17",
+      "question": "Perché gli 8.000 € di affitto e costi generali fissi non entrano nell’analisi dell’ordine?",
+      "answer": "Perché sono sostenuti comunque, sia accettando sia rifiutando l’ordine.",
+      "detail": "La loro presenza nel costo contabile complessivo non li rende differenziali. Includerli nella scelta porterebbe a sottovalutare il margine incrementale reale.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.7 — Costi differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.13, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q161",
+      "topicId": "cdg-c04-t17",
+      "question": "Come cambia la convenienza se l’ordine fa rinunciare a 3.500 € di margine alternativo?",
+      "answer": "Il vantaggio scende da +2.900 a −600 €: l’ordine non è più economicamente conveniente nelle ipotesi fornite.",
+      "detail": "Il margine rinunciato diventa costo opportunità perché la capacità sottratta avrebbe potuto generare quel beneficio con un’altra commessa.",
+      "example": "2.900 − 3.500 = −600 €.",
+      "formulas": [
+        {
+          "latex": "M_{netto}=M_{incr}-C_{opportunita}",
+          "meaning": "Margine differenziale dopo il costo della migliore alternativa sacrificata."
+        }
+      ],
+      "connections": [
+        "§4.5.7 — Costi differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.13, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q162",
+      "topicId": "cdg-c04-t17",
+      "question": "Qual è la regola generale da applicare alle offerte speciali?",
+      "answer": "Accettare soltanto se i ricavi differenziali superano costi aggiuntivi, altri effetti rilevanti ed eventuali costi opportunità, nel perimetro delle ipotesi.",
+      "detail": "Il costo pieno del pezzo non è il criterio decisivo quando contiene allocazioni di costi fissi immutati. Occorre sempre verificare capacità residua e alternative sacrificate.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.5.7 — Costi differenziali",
+        "§4.5.11 — Costo opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.13, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q163",
+      "topicId": "cdg-c04-t18",
+      "question": "Perché la frase «diretto equivale a variabile» è errata?",
+      "answer": "Perché la direttezza riguarda la tracciabilità rispetto all’oggetto, mentre la variabilità riguarda l’andamento rispetto al volume.",
+      "detail": "Una macchina esclusiva può generare un fisso diretto; energia condivisa può essere variabile ma indiretta ai prodotti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.6 — Matrice delle classificazioni",
+        "§4.15 — Esercitazioni e verifiche"
+      ],
+      "mistakes": "Non confondere le due classificazioni.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.14, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q164",
+      "topicId": "cdg-c04-t18",
+      "question": "Perché è errato considerare tutti i costi fissi costanti in ogni circostanza?",
+      "answer": "Perché cambiano al variare dell’orizzonte temporale, delle decisioni di capacità, dei contratti e dell’intervallo di attività.",
+      "detail": "Un nuovo stabilimento o un turno aggiuntivo può modificare il livello dei costi fissi anche quando ciascuno è costante entro una certa fascia.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.6 — Matrice delle classificazioni",
+        "§4.15 — Esercitazioni e verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.14, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q165",
+      "topicId": "cdg-c04-t18",
+      "question": "Perché il costo pieno non è sempre il costo da usare per decidere?",
+      "answer": "Perché una scelta tra alternative richiede soprattutto costi e ricavi futuri differenziali, oltre a eventuali costi opportunità.",
+      "detail": "L’attribuzione di costi comuni invariati o sunk costs può distorcere il confronto, anche se appropriata per altri fini contabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.6 — Matrice delle classificazioni",
+        "§4.15 — Esercitazioni e verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.14, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q166",
+      "topicId": "cdg-c04-t18",
+      "question": "Perché un costo specifico non è automaticamente evitabile?",
+      "answer": "Perché una risorsa dedicata può rimanere vincolata da contratti o vincoli tecnici nel periodo considerato.",
+      "detail": "Occorre verificare se, scegliendo l’alternativa, il costo verrà realmente meno. La specificità attiene alla destinazione, l’evitabilità alla decisione.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.6 — Matrice delle classificazioni",
+        "§4.15 — Esercitazioni e verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.14, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q167",
+      "topicId": "cdg-c04-t18",
+      "question": "Perché non tutti i costi aziendali diventano costi di prodotto a bilancio?",
+      "answer": "Perché le rimanenze seguono regole di produzione e imputazione specifiche; molte spese commerciali e amministrative restano costi di periodo.",
+      "detail": "La configurazione gestionale piena può essere più ampia della configurazione inventariabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.6 — Matrice delle classificazioni",
+        "§4.15 — Esercitazioni e verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.14, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q168",
+      "topicId": "cdg-c04-t18",
+      "question": "Qual è il rischio di scegliere un cost driver soltanto perché semplice da misurare?",
+      "answer": "Attribuire i costi in modo poco rappresentativo del consumo reale delle risorse.",
+      "detail": "Una base di ripartizione dovrebbe seguire un nesso causale plausibile, pur tenendo conto di fattibilità e attendibilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.6 — Matrice delle classificazioni",
+        "§4.15 — Esercitazioni e verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.14, pagina PDF 38"
+    },
+    {
+      "id": "cdg-c04-q169",
+      "topicId": "cdg-c04-t18",
+      "question": "Perché è errato individuare i due punti high–low in base ai costi estremi?",
+      "answer": "Perché si devono selezionare i livelli massimo e minimo dell’attività Q e prendere i costi associati a quei livelli.",
+      "detail": "Il metodo stima il rapporto fra variazione di costo e variazione di attività, non una differenza arbitraria fra importi monetari.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.6 — Matrice delle classificazioni",
+        "§4.15 — Esercitazioni e verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.14, pagina PDF 39"
+    },
+    {
+      "id": "cdg-c04-q170",
+      "topicId": "cdg-c04-t18",
+      "question": "Perché aver già sostenuto una spesa non obbliga a continuare un progetto?",
+      "answer": "Perché un costo sommerso, già irrecuperabile, non viene modificato dalla decisione futura.",
+      "detail": "La prosecuzione deve essere giustificata da ricavi e costi futuri differenziali, non dal tentativo di recuperare contabilmente un esborso passato.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.6 — Matrice delle classificazioni",
+        "§4.15 — Esercitazioni e verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.14, pagina PDF 39"
+    },
+    {
+      "id": "cdg-c04-q171",
+      "topicId": "cdg-c04-t18",
+      "question": "Quali sono i cinque passaggi suggeriti dal manuale per risolvere gli esercizi d’esame sui costi?",
+      "answer": "Identificare oggetto e Q; classificare le voci; distinguere diretto e indiretti imputati; scrivere formule e unità; verificare quadrature e interpretazione gestionale.",
+      "detail": "La procedura rende leggibili le ipotesi e riduce errori di classificazione o dimensionalità. Un risultato numerico senza interpretazione può non rispondere alla domanda del caso.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.6 — Matrice delle classificazioni",
+        "§4.15 — Esercitazioni e verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.14, pagina PDF 39"
+    },
+    {
+      "id": "cdg-c04-q172",
+      "topicId": "cdg-c04-t19",
+      "question": "Nell’esercizio di classificazione, come si descrivono materie registrate per A e affitto condiviso?",
+      "answer": "Le materie registrate per unità sono dirette e normalmente variabili rispetto ad A; l’affitto è indiretto e normalmente fisso rispetto ai prodotti.",
+      "detail": "La classificazione si riferisce all’oggetto dichiarato. Per l’affitto occorre anche evidenziare che la risorsa è comune a più reparti o prodotti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.15.1–4.15.2, pagina PDF 39"
+    },
+    {
+      "id": "cdg-c04-q173",
+      "topicId": "cdg-c04-t19",
+      "question": "Nell’esercizio di classificazione, come si descrivono manutenzione fissa di macchina A ed energia condivisa?",
+      "answer": "La manutenzione della macchina A è specifica e fissa della linea, direttamente riferibile alla linea; l’energia di un impianto condiviso è variabile con le ore ma indiretta ai prodotti se non misurata per ciascuno.",
+      "detail": "La manutenzione, se riferita all’unità, può richiedere un criterio; l’energia richiede un driver di riparto se i consumi individuali non sono osservati.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.15.1–4.15.2, pagina PDF 39"
+    },
+    {
+      "id": "cdg-c04-q174",
+      "topicId": "cdg-c04-t19",
+      "question": "Con 18.000 € fissi e 7,50 €/unità variabili, quali sono costo totale e medio per Q=600?",
+      "answer": "Il costo totale è 22.500 €; la quota fissa unitaria 30 €; il costo medio 37,50 €/unità.",
+      "detail": "Il costo variabile complessivo è 7,50×600=4.500 €. Il modello resta valido entro il campo in cui F e v sono coerenti con le ipotesi.",
+      "example": "CT=18.000+4.500=22.500 €; medio=22.500/600=37,50 €/u.",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.15.1–4.15.2, pagina PDF 39"
+    },
+    {
+      "id": "cdg-c04-q175",
+      "topicId": "cdg-c04-t19",
+      "question": "Con 18.000 € fissi e 7,50 €/unità variabili, quali sono costo totale e medio per Q=1.200?",
+      "answer": "Il costo totale è 27.000 €; la quota fissa unitaria 15 €; il costo medio 22,50 €/unità.",
+      "detail": "Il variabile totale è 9.000 €. Raddoppiando Q, il fisso unitario si dimezza senza che il fisso totale diminuisca.",
+      "example": "CT=18.000+9.000=27.000 €; medio=27.000/1.200=22,50 €/u.",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.15.1–4.15.2, pagina PDF 39"
+    },
+    {
+      "id": "cdg-c04-q176",
+      "topicId": "cdg-c04-t19",
+      "question": "Qual è la funzione della bolletta stimata con high–low da 6.800 € a 600 ore e 9.800 € a 1.100 ore?",
+      "answer": "C(Q)=3.200+6Q, con Q espresso in ore macchina.",
+      "detail": "La quota variabile è (9.800−6.800)/(1.100−600)=6 €/h; quella fissa è 6.800−6×600=3.200 €.",
+      "example": "A 900 h la stima è 3.200+6×900=8.600 €.",
+      "formulas": [
+        {
+          "latex": "C(Q)=3200+6Q",
+          "meaning": "Funzione di costo della bolletta nell’esercizio 3."
+        }
+      ],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.15.1–4.15.2, pagina PDF 39"
+    },
+    {
+      "id": "cdg-c04-q177",
+      "topicId": "cdg-c04-t19",
+      "question": "Quali configurazioni si ottengono nell’esercizio con materiali 14, componenti 6, MOD 9 e altri diretti 2?",
+      "answer": "Costo primo 20 €; trasformazione diretta 11 €; costo diretto produttivo 31 €.",
+      "detail": "Si applicano le definizioni del corso: materie+componenti per il costo primo e MOD+altri costi diretti di trasformazione per la seconda componente.",
+      "example": "14+6=20 €; 9+2=11 €; 20+11=31 €.",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.15.1–4.15.2, pagina PDF 39"
+    },
+    {
+      "id": "cdg-c04-q178",
+      "topicId": "cdg-c04-t19",
+      "question": "Come si completano le configurazioni nell’esercizio con 13 € di indiretti produttivi e 5 € extra-produttivi?",
+      "answer": "Costo pieno di produzione 44 €; costo pieno aziendale 49 €.",
+      "detail": "Dal diretto di produzione di 31 € si aggiungono 13 € produttivi; poi 5 € di costi commerciali/amministrativi. Questi ultimi non sono automaticamente inventariabili.",
+      "example": "31+13=44 €; 44+5=49 €.",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.15.1–4.15.2, pagina PDF 39"
+    },
+    {
+      "id": "cdg-c04-q179",
+      "topicId": "cdg-c04-t19",
+      "question": "Come si ripartiscono 45.000 € di indiretti su 3.000 ore macchina tra A (1.200 h) e B (1.800 h)?",
+      "answer": "Coefficiente 15 €/h; A assorbe 18.000 € e B 27.000 €.",
+      "detail": "La quadratura è 18.000+27.000=45.000 €. Il driver ore macchina è plausibile se l’impiego di risorse indirette segue il funzionamento della macchina.",
+      "example": "k=45.000/3.000=15 €/h; A=1.200×15; B=1.800×15.",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.15.1–4.15.2, pagina PDF 39"
+    },
+    {
+      "id": "cdg-c04-q180",
+      "topicId": "cdg-c04-t19",
+      "question": "Qual è l’effetto differenziale di un ordine extra da 60 pezzi a 100 € con variabili 65 €/u e preparazione 900 €?",
+      "answer": "1.200 € favorevoli, se non si sacrificano altre opportunità.",
+      "detail": "I ricavi sono 6.000 €, i variabili 3.900 €, la preparazione specifica 900 €. L’affitto comune invariato di 2.000 € non deve essere aggiunto ai differenziali.",
+      "example": "6.000−3.900−900=1.200 €.",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.15.1–4.15.2, pagina PDF 40"
+    },
+    {
+      "id": "cdg-c04-q181",
+      "topicId": "cdg-c04-t19",
+      "question": "Come cambia l’ordine extra da 60 pezzi se compare un costo opportunità di 1.500 €?",
+      "answer": "Il vantaggio differenziale diventa −300 € e l’ordine non conviene nelle condizioni del caso.",
+      "detail": "Il margine originario di 1.200 € non copre il beneficio rinunciato di 1.500 €. Il fisso comune invariato rimane irrilevante.",
+      "example": "1.200−1.500=−300 €.",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.15.1–4.15.2, pagina PDF 40"
+    },
+    {
+      "id": "cdg-c04-q182",
+      "topicId": "cdg-c04-t19",
+      "question": "Con 90.000 € di fissi produttivi, capacità normale 15.000 e produzione 11.000, qual è il coefficiente?",
+      "answer": "6 € per pezzo, determinati sulla capacità normale.",
+      "detail": "Non si usa la produzione effettiva per gonfiare il costo unitario delle rimanenze nel caso semplificato del manuale.",
+      "example": "90.000/15.000=6 €/pezzo.",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.15.1–4.15.2, pagina PDF 40"
+    },
+    {
+      "id": "cdg-c04-q183",
+      "topicId": "cdg-c04-t19",
+      "question": "Quanto viene assorbito e non assorbito nei 90.000 € fissi con produzione effettiva 11.000?",
+      "answer": "Assorbiti 66.000 €; non assorbiti 24.000 €.",
+      "detail": "La quota normale 6 €/pezzo è applicata alle 11.000 unità effettive. La differenza rispetto ai 90.000 € è costo di capacità non assorbita nelle ipotesi del caso.",
+      "example": "11.000×6=66.000 €; 90.000−66.000=24.000 €.",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.15.1–4.15.2, pagina PDF 40"
+    },
+    {
+      "id": "cdg-c04-q184",
+      "topicId": "cdg-c04-t19",
+      "question": "Quale distinzione riassuntiva fa il glossario tra costo comune e costo congiunto?",
+      "answer": "Comune: costo di risorse condivise tra oggetti; congiunto: costo di processo che produce output tecnicamente vincolati.",
+      "detail": "Il criterio decisivo è la natura del processo: capacità condivisa con mix decidibile contro produzione inevitabilmente multipla.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.16, pagina PDF 40"
+    },
+    {
+      "id": "cdg-c04-q185",
+      "topicId": "cdg-c04-t19",
+      "question": "Quale distinzione riassuntiva fa il glossario tra costo sommerso e costo opportunità?",
+      "answer": "Sommerso: già sostenuto e irrecuperabile; opportunità: beneficio della migliore alternativa praticabile sacrificata.",
+      "detail": "Il primo di regola non cambia con una decisione attuale; il secondo può essere determinante proprio perché cambia in base all’uso della risorsa.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.16, pagina PDF 40"
+    },
+    {
+      "id": "cdg-c04-q186",
+      "topicId": "cdg-c04-t19",
+      "question": "Come definisce il glossario costo pieno industriale e costo pieno aziendale?",
+      "answer": "Il primo comprende diretto produttivo più indiretti produttivi imputati; il secondo aggiunge costi extra-produttivi attribuiti.",
+      "detail": "Il maggior perimetro di quello aziendale è utile per analisi interne, ma non implica che i relativi costi siano capitalizzabili nelle rimanenze.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.16, pagina PDF 40"
+    },
+    {
+      "id": "cdg-c04-q187",
+      "topicId": "cdg-c04-t19",
+      "question": "Come si distinguono nel glossario intervallo rilevante e capacità normale?",
+      "answer": "Il primo è il campo di attività in cui il modello di costo resta valido; la seconda è il volume atteso in condizioni ordinarie usato come base per i fissi produttivi in magazzino.",
+      "detail": "Entrambi riguardano i volumi, ma con finalità differenti: validità delle funzioni di costo versus allocazione degli indiretti fissi del periodo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.14 — Errori ricorrenti",
+        "§4.9 — Configurazioni progressive"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 4, Classificazioni, configurazioni e comportamento dei costi, §4.16, pagina PDF 40"
+    }
+  ]
+}

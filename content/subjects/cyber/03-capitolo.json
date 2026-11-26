@@ -1,0 +1,3117 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cyber",
+  "source": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3: La Crittografia, pagine PDF 35–50; unica fonte autorizzata.",
+  "chapter": {
+    "id": "cyber-c03",
+    "title": "La Crittografia — principi, algoritmi, chiavi, hash, firme e protezione dei dati",
+    "order": 3,
+    "topics": [
+      {
+        "id": "cyber-c03-t01",
+        "title": "Fondamenti di crittografia, dati binari e trasformazioni"
+      },
+      {
+        "id": "cyber-c03-t02",
+        "title": "Principi di Kerckhoffs, chiavi, confusione, diffusione e one-time pad"
+      },
+      {
+        "id": "cyber-c03-t03",
+        "title": "Crittografia simmetrica e cifrari storici"
+      },
+      {
+        "id": "cyber-c03-t04",
+        "title": "AES, modalità operative e cifratura autenticata"
+      },
+      {
+        "id": "cyber-c03-t05",
+        "title": "Distribuzione e ciclo di vita delle chiavi"
+      },
+      {
+        "id": "cyber-c03-t06",
+        "title": "Crittografia asimmetrica, RSA, ECC e firme: confronto"
+      },
+      {
+        "id": "cyber-c03-t07",
+        "title": "Diffie–Hellman, ECDHE, forward secrecy e modello ibrido"
+      },
+      {
+        "id": "cyber-c03-t08",
+        "title": "Funzioni hash, resistenza e algoritmi"
+      },
+      {
+        "id": "cyber-c03-t09",
+        "title": "Hash autenticato: MAC e HMAC"
+      },
+      {
+        "id": "cyber-c03-t10",
+        "title": "Firme digitali, generazione e verifica"
+      },
+      {
+        "id": "cyber-c03-t11",
+        "title": "PKI, certificati X.509 e catena di fiducia"
+      },
+      {
+        "id": "cyber-c03-t12",
+        "title": "Emissione, revoca dei certificati e OpenPGP"
+      },
+      {
+        "id": "cyber-c03-t13",
+        "title": "Protezione crittografica dei dati a riposo"
+      },
+      {
+        "id": "cyber-c03-t14",
+        "title": "Password hashing, salt, pepper e autenticazione"
+      },
+      {
+        "id": "cyber-c03-t15",
+        "title": "Caso aziendale integrato e scelta dei meccanismi"
+      },
+      {
+        "id": "cyber-c03-t16",
+        "title": "Errori concettuali e distinzioni essenziali"
+      },
+      {
+        "id": "cyber-c03-t17",
+        "title": "Glossario e lessico crittografico"
+      },
+      {
+        "id": "cyber-c03-t18",
+        "title": "Collegamenti trasversali per il colloquio orale"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§3.1 — pagina PDF 35",
+        "cardIds": [
+          "cyber-c03-q001",
+          "cyber-c03-q002",
+          "cyber-c03-q003"
+        ]
+      },
+      {
+        "label": "§3.1 — pagina PDF 36",
+        "cardIds": [
+          "cyber-c03-q004",
+          "cyber-c03-q005",
+          "cyber-c03-q006"
+        ]
+      },
+      {
+        "label": "§3.1.1 — pagina PDF 36",
+        "cardIds": [
+          "cyber-c03-q007",
+          "cyber-c03-q008",
+          "cyber-c03-q009"
+        ]
+      },
+      {
+        "label": "§3.1.2 — pagina PDF 36",
+        "cardIds": [
+          "cyber-c03-q010",
+          "cyber-c03-q011",
+          "cyber-c03-q012",
+          "cyber-c03-q013"
+        ]
+      },
+      {
+        "label": "§3.2.1 — pagina PDF 37",
+        "cardIds": [
+          "cyber-c03-q014",
+          "cyber-c03-q015",
+          "cyber-c03-q016"
+        ]
+      },
+      {
+        "label": "§3.2.2 — pagina PDF 37",
+        "cardIds": [
+          "cyber-c03-q017",
+          "cyber-c03-q018",
+          "cyber-c03-q019",
+          "cyber-c03-q020"
+        ]
+      },
+      {
+        "label": "§3.2.3 — pagina PDF 37",
+        "cardIds": [
+          "cyber-c03-q021",
+          "cyber-c03-q022",
+          "cyber-c03-q023",
+          "cyber-c03-q024"
+        ]
+      },
+      {
+        "label": "§3.2.4 — pagina PDF 37",
+        "cardIds": [
+          "cyber-c03-q025",
+          "cyber-c03-q026",
+          "cyber-c03-q027",
+          "cyber-c03-q028",
+          "cyber-c03-q029",
+          "cyber-c03-q030",
+          "cyber-c03-q031"
+        ]
+      },
+      {
+        "label": "§3.3 — pagina PDF 38",
+        "cardIds": [
+          "cyber-c03-q032",
+          "cyber-c03-q033",
+          "cyber-c03-q034"
+        ]
+      },
+      {
+        "label": "§3.3.1 — pagina PDF 38",
+        "cardIds": [
+          "cyber-c03-q035",
+          "cyber-c03-q036",
+          "cyber-c03-q037"
+        ]
+      },
+      {
+        "label": "§3.3.2 — pagina PDF 38",
+        "cardIds": [
+          "cyber-c03-q038",
+          "cyber-c03-q039"
+        ]
+      },
+      {
+        "label": "§3.3.3 — pagina PDF 38",
+        "cardIds": [
+          "cyber-c03-q040",
+          "cyber-c03-q041"
+        ]
+      },
+      {
+        "label": "§3.3.4 — pagina PDF 39",
+        "cardIds": [
+          "cyber-c03-q042",
+          "cyber-c03-q043",
+          "cyber-c03-q044",
+          "cyber-c03-q045",
+          "cyber-c03-q046"
+        ]
+      },
+      {
+        "label": "§3.3.5 — pagina PDF 39",
+        "cardIds": [
+          "cyber-c03-q047",
+          "cyber-c03-q048",
+          "cyber-c03-q049",
+          "cyber-c03-q050",
+          "cyber-c03-q051",
+          "cyber-c03-q052",
+          "cyber-c03-q053",
+          "cyber-c03-q054"
+        ]
+      },
+      {
+        "label": "§3.3.5 — pagina PDF 40",
+        "cardIds": [
+          "cyber-c03-q055"
+        ]
+      },
+      {
+        "label": "§3.4 — pagina PDF 40",
+        "cardIds": [
+          "cyber-c03-q056",
+          "cyber-c03-q057",
+          "cyber-c03-q058",
+          "cyber-c03-q059",
+          "cyber-c03-q060",
+          "cyber-c03-q061"
+        ]
+      },
+      {
+        "label": "§3.5 — pagina PDF 40",
+        "cardIds": [
+          "cyber-c03-q062",
+          "cyber-c03-q063",
+          "cyber-c03-q064",
+          "cyber-c03-q065",
+          "cyber-c03-q066"
+        ]
+      },
+      {
+        "label": "§3.5.1 — pagina PDF 40",
+        "cardIds": [
+          "cyber-c03-q067",
+          "cyber-c03-q068"
+        ]
+      },
+      {
+        "label": "§3.5.1 — pagina PDF 41",
+        "cardIds": [
+          "cyber-c03-q069",
+          "cyber-c03-q070",
+          "cyber-c03-q071",
+          "cyber-c03-q072"
+        ]
+      },
+      {
+        "label": "§3.5.2 — pagina PDF 41",
+        "cardIds": [
+          "cyber-c03-q073",
+          "cyber-c03-q074",
+          "cyber-c03-q075"
+        ]
+      },
+      {
+        "label": "§3.6.1 — pagina PDF 41",
+        "cardIds": [
+          "cyber-c03-q076",
+          "cyber-c03-q077",
+          "cyber-c03-q078",
+          "cyber-c03-q079"
+        ]
+      },
+      {
+        "label": "§3.6.2 — pagina PDF 41",
+        "cardIds": [
+          "cyber-c03-q080",
+          "cyber-c03-q081",
+          "cyber-c03-q082",
+          "cyber-c03-q083"
+        ]
+      },
+      {
+        "label": "§3.6.3 — pagina PDF 42",
+        "cardIds": [
+          "cyber-c03-q084",
+          "cyber-c03-q085",
+          "cyber-c03-q086",
+          "cyber-c03-q087",
+          "cyber-c03-q088"
+        ]
+      },
+      {
+        "label": "§3.7 — pagina PDF 42",
+        "cardIds": [
+          "cyber-c03-q089",
+          "cyber-c03-q090",
+          "cyber-c03-q091",
+          "cyber-c03-q092",
+          "cyber-c03-q093"
+        ]
+      },
+      {
+        "label": "§3.7.1 — pagina PDF 42",
+        "cardIds": [
+          "cyber-c03-q094",
+          "cyber-c03-q095",
+          "cyber-c03-q096",
+          "cyber-c03-q097",
+          "cyber-c03-q098"
+        ]
+      },
+      {
+        "label": "§3.7.2 — pagina PDF 43",
+        "cardIds": [
+          "cyber-c03-q099",
+          "cyber-c03-q100",
+          "cyber-c03-q101",
+          "cyber-c03-q102"
+        ]
+      },
+      {
+        "label": "§3.7.3 — pagina PDF 43",
+        "cardIds": [
+          "cyber-c03-q103",
+          "cyber-c03-q104"
+        ]
+      },
+      {
+        "label": "§3.8 — pagina PDF 43",
+        "cardIds": [
+          "cyber-c03-q105",
+          "cyber-c03-q106",
+          "cyber-c03-q107",
+          "cyber-c03-q108",
+          "cyber-c03-q109",
+          "cyber-c03-q110"
+        ]
+      },
+      {
+        "label": "§3.9 — pagina PDF 44",
+        "cardIds": [
+          "cyber-c03-q111",
+          "cyber-c03-q112",
+          "cyber-c03-q113",
+          "cyber-c03-q114",
+          "cyber-c03-q115",
+          "cyber-c03-q116"
+        ]
+      },
+      {
+        "label": "§3.9.1 — pagina PDF 44",
+        "cardIds": [
+          "cyber-c03-q117",
+          "cyber-c03-q118",
+          "cyber-c03-q119"
+        ]
+      },
+      {
+        "label": "§3.10 — pagina PDF 44",
+        "cardIds": [
+          "cyber-c03-q120",
+          "cyber-c03-q121",
+          "cyber-c03-q122",
+          "cyber-c03-q123",
+          "cyber-c03-q124",
+          "cyber-c03-q125"
+        ]
+      },
+      {
+        "label": "§3.10.1 — pagina PDF 44",
+        "cardIds": [
+          "cyber-c03-q126",
+          "cyber-c03-q127",
+          "cyber-c03-q128"
+        ]
+      },
+      {
+        "label": "§3.10.1 — pagina PDF 45",
+        "cardIds": [
+          "cyber-c03-q129",
+          "cyber-c03-q130"
+        ]
+      },
+      {
+        "label": "§3.10.2 — pagina PDF 45",
+        "cardIds": [
+          "cyber-c03-q131",
+          "cyber-c03-q132",
+          "cyber-c03-q133",
+          "cyber-c03-q134",
+          "cyber-c03-q135",
+          "cyber-c03-q136",
+          "cyber-c03-q137"
+        ]
+      },
+      {
+        "label": "§3.10.3 — pagina PDF 45",
+        "cardIds": [
+          "cyber-c03-q138",
+          "cyber-c03-q139",
+          "cyber-c03-q140"
+        ]
+      },
+      {
+        "label": "§3.10.4 — pagina PDF 45",
+        "cardIds": [
+          "cyber-c03-q141",
+          "cyber-c03-q142",
+          "cyber-c03-q143",
+          "cyber-c03-q144",
+          "cyber-c03-q145"
+        ]
+      },
+      {
+        "label": "§3.10.5 — pagina PDF 46",
+        "cardIds": [
+          "cyber-c03-q146",
+          "cyber-c03-q147",
+          "cyber-c03-q148"
+        ]
+      },
+      {
+        "label": "§3.11 — pagina PDF 46",
+        "cardIds": [
+          "cyber-c03-q149",
+          "cyber-c03-q150",
+          "cyber-c03-q151",
+          "cyber-c03-q152",
+          "cyber-c03-q153"
+        ]
+      },
+      {
+        "label": "§3.11.1 — pagina PDF 46",
+        "cardIds": [
+          "cyber-c03-q154",
+          "cyber-c03-q155",
+          "cyber-c03-q156"
+        ]
+      },
+      {
+        "label": "§3.11.2 — pagina PDF 46",
+        "cardIds": [
+          "cyber-c03-q157",
+          "cyber-c03-q158"
+        ]
+      },
+      {
+        "label": "§3.12 — pagina PDF 47",
+        "cardIds": [
+          "cyber-c03-q159",
+          "cyber-c03-q160",
+          "cyber-c03-q161"
+        ]
+      },
+      {
+        "label": "§3.12.1 — pagina PDF 47",
+        "cardIds": [
+          "cyber-c03-q162",
+          "cyber-c03-q163",
+          "cyber-c03-q164"
+        ]
+      },
+      {
+        "label": "§3.12.2 — pagina PDF 47",
+        "cardIds": [
+          "cyber-c03-q165",
+          "cyber-c03-q166"
+        ]
+      },
+      {
+        "label": "§3.12.3 — pagina PDF 47",
+        "cardIds": [
+          "cyber-c03-q167",
+          "cyber-c03-q168"
+        ]
+      },
+      {
+        "label": "§3.12.4 — pagina PDF 48",
+        "cardIds": [
+          "cyber-c03-q169",
+          "cyber-c03-q170",
+          "cyber-c03-q171"
+        ]
+      },
+      {
+        "label": "§3.13 — pagina PDF 48",
+        "cardIds": [
+          "cyber-c03-q172",
+          "cyber-c03-q173",
+          "cyber-c03-q174",
+          "cyber-c03-q175",
+          "cyber-c03-q176",
+          "cyber-c03-q177",
+          "cyber-c03-q178",
+          "cyber-c03-q179"
+        ]
+      },
+      {
+        "label": "§3.14 — pagina PDF 48",
+        "cardIds": [
+          "cyber-c03-q180",
+          "cyber-c03-q181",
+          "cyber-c03-q182",
+          "cyber-c03-q183",
+          "cyber-c03-q184",
+          "cyber-c03-q185",
+          "cyber-c03-q186"
+        ]
+      },
+      {
+        "label": "§3.15 — pagina PDF 49",
+        "cardIds": [
+          "cyber-c03-q187",
+          "cyber-c03-q188",
+          "cyber-c03-q189",
+          "cyber-c03-q190",
+          "cyber-c03-q191"
+        ]
+      },
+      {
+        "label": "§3.16 — pagina PDF 49",
+        "cardIds": [
+          "cyber-c03-q192",
+          "cyber-c03-q193",
+          "cyber-c03-q194",
+          "cyber-c03-q195",
+          "cyber-c03-q196",
+          "cyber-c03-q197",
+          "cyber-c03-q198",
+          "cyber-c03-q199",
+          "cyber-c03-q200",
+          "cyber-c03-q201"
+        ]
+      },
+      {
+        "label": "§3.16 — pagina PDF 50",
+        "cardIds": [
+          "cyber-c03-q202",
+          "cyber-c03-q203",
+          "cyber-c03-q204",
+          "cyber-c03-q205",
+          "cyber-c03-q206",
+          "cyber-c03-q207"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cyber-c03-q001",
+      "topicId": "cyber-c03-t01",
+      "question": "Che cos’è la crittografia e quali obiettivi può sostenere?",
+      "answer": "È la disciplina dei metodi matematici e computazionali per proteggere informazioni e comunicazioni.",
+      "detail": "Oltre alla riservatezza mediante cifratura, strumenti crittografici possono supportare integrità, autenticità dell’origine, prove digitali e accordo su segreti condivisi.",
+      "example": "La cifratura difende un report dalla lettura; la firma consente di verificare un’approvazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre ogni meccanismo crittografico alla sola cifratura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.1, pagina PDF 35"
+    },
+    {
+      "id": "cyber-c03-q002",
+      "topicId": "cyber-c03-t01",
+      "question": "Qual è la differenza tra il problema storico della crittografia e le applicazioni attuali?",
+      "answer": "Storicamente si cercava soprattutto di rendere il messaggio illeggibile a un intercettatore; oggi si proteggono anche integrità, origine e accordo sulle chiavi.",
+      "detail": "La riservatezza è soltanto una delle proprietà offerte dai diversi strumenti; ogni obiettivo richiede un meccanismo adatto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che un messaggio cifrato sia automaticamente autentico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.1, pagina PDF 35"
+    },
+    {
+      "id": "cyber-c03-q003",
+      "topicId": "cyber-c03-t01",
+      "question": "Come si distinguono plaintext e ciphertext?",
+      "answer": "Il plaintext è il dato originario interpretabile in chiaro; il ciphertext è il risultato della trasformazione di cifratura.",
+      "detail": "Il ciphertext deve risultare non intelligibile a chi non dispone delle chiavi e delle condizioni richieste dallo schema.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Chiamare ciphertext un semplice testo codificato in Base64.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.1, pagina PDF 35"
+    },
+    {
+      "id": "cyber-c03-q004",
+      "topicId": "cyber-c03-t01",
+      "question": "Che cosa rappresenta una chiave crittografica?",
+      "answer": "Un valore matematico che controlla l’operazione crittografica, generabile casualmente o derivabile e da gestire con misure specifiche.",
+      "detail": "La chiave non è necessariamente una password inserita da un utente; la sua corretta gestione è parte essenziale della protezione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere password umana, chiave crittografica e nome dell’algoritmo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.1, pagina PDF 36"
+    },
+    {
+      "id": "cyber-c03-q005",
+      "topicId": "cyber-c03-t01",
+      "question": "Come si esprimono simbolicamente cifratura e decifratura simmetriche?",
+      "answer": "E_K(M)=C e D_K(C)=M.",
+      "detail": "M è il messaggio, K è la chiave segreta, C è il testo cifrato; E e D indicano le trasformazioni di cifratura e decifratura. Il materiale crittografico usato dal destinatario deve essere corretto.",
+      "example": "Un client cifra M con K e il destinatario recupera M con D_K(C), conoscendo il segreto.",
+      "formulas": [
+        {
+          "latex": "E_{K}(M)=C"
+        },
+        {
+          "latex": "D_{K}(C)=M"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Applicare D senza la chiave richiesta e aspettarsi di ricostruire M.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.1, pagina PDF 36"
+    },
+    {
+      "id": "cyber-c03-q006",
+      "topicId": "cyber-c03-t01",
+      "question": "Perché il possesso del materiale crittografico corretto è fondamentale per il destinatario?",
+      "answer": "Perché la decifratura del ciphertext dipende dalla chiave prevista dallo schema.",
+      "detail": "La cifratura non è una semplice trasformazione grafica: solo chi dispone delle informazioni segrete richieste può recuperare il messaggio legittimamente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che basti conoscere il nome dell’algoritmo per decifrare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.1, pagina PDF 36"
+    },
+    {
+      "id": "cyber-c03-q007",
+      "topicId": "cyber-c03-t01",
+      "question": "Che cosa sono bit e byte e qual è il loro rapporto?",
+      "answer": "Un bit vale 0 o 1; un byte è composto da 8 bit.",
+      "detail": "Testi, immagini e file vengono rappresentati in byte: gli algoritmi crittografici operano su tali rappresentazioni binarie, non sul significato linguistico.",
+      "example": "Una chiave di 128 bit occupa 16 byte; una chiave di 256 bit ne occupa 32.",
+      "formulas": [
+        {
+          "latex": "1\\,\\mathrm{byte}=8\\,\\mathrm{bit}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Scambiare 128 bit per 128 byte.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.1.1, pagina PDF 36"
+    },
+    {
+      "id": "cyber-c03-q008",
+      "topicId": "cyber-c03-t01",
+      "question": "Perché lo stesso algoritmo di cifratura può proteggere testo, fotografia e database?",
+      "answer": "Perché qualunque contenuto digitale viene codificato come sequenza di bit o byte.",
+      "detail": "La crittografia elabora dati binari; non richiede che il messaggio sia scritto in una lingua naturale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che gli algoritmi operino direttamente su frasi o immagini semantiche.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.1.1, pagina PDF 36"
+    },
+    {
+      "id": "cyber-c03-q009",
+      "topicId": "cyber-c03-t01",
+      "question": "A cosa si riferiscono le lunghezze espresse in bit nella crittografia?",
+      "answer": "Alle dimensioni binarie di chiavi, blocchi e digest, ciascuna con significato specifico.",
+      "detail": "Una chiave di 256 bit non è la stessa cosa di un blocco di 128 bit o di un digest di 256 bit: i tre numeri misurano oggetti differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Deducere la lunghezza di un blocco dalla lunghezza della chiave.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.1.1, pagina PDF 36"
+    },
+    {
+      "id": "cyber-c03-q010",
+      "topicId": "cyber-c03-t01",
+      "question": "Perché una codifica come Base64 non fornisce riservatezza?",
+      "answer": "Perché cambia la rappresentazione dei dati secondo regole pubbliche e reversibili, senza utilizzare una protezione crittografica segreta.",
+      "detail": "Chi conosce Base64 può decodificare il dato; la codifica serve a rappresentare informazioni, non a impedire la lettura.",
+      "example": "Un allegato e-mail convertito in Base64 rimane leggibile dopo decodifica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Chiamare cifratura qualunque trasformazione che rende il testo meno immediato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.1.2, pagina PDF 36"
+    },
+    {
+      "id": "cyber-c03-q011",
+      "topicId": "cyber-c03-t01",
+      "question": "Quale differenza esiste tra compressione e cifratura?",
+      "answer": "La compressione riduce lo spazio di rappresentazione; la cifratura protegge la riservatezza mediante algoritmo e chiave appropriati.",
+      "detail": "Un archivio ZIP compresso non è necessariamente cifrato; occorre un meccanismo di protezione dedicato per renderne riservato il contenuto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere formato di archivio e sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.1.2, pagina PDF 36"
+    },
+    {
+      "id": "cyber-c03-q012",
+      "topicId": "cyber-c03-t01",
+      "question": "Perché un hash non è un algoritmo di cifratura?",
+      "answer": "Perché produce un’impronta sintetica che non è destinata a essere decifrata per ricostruire il messaggio.",
+      "detail": "La funzione hash non protegge di per sé la segretezza e, se priva di autenticazione, non prova chi abbia prodotto il messaggio.",
+      "example": "Il digest di un allegato può essere confrontato, ma l’allegato non diventa segreto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire a un semplice digest la riservatezza o l’identità dell’autore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.1.2, pagina PDF 36"
+    },
+    {
+      "id": "cyber-c03-q013",
+      "topicId": "cyber-c03-t01",
+      "question": "Quali quattro trasformazioni occorre distinguere su un allegato e-mail?",
+      "answer": "Codifica, compressione, cifratura e hashing.",
+      "detail": "La codifica modifica il formato, la compressione riduce la dimensione, la cifratura mira alla segretezza e l’hash genera una sintesi per controlli di integrità rispetto a un riferimento affidabile.",
+      "example": "Base64, ZIP, AES e SHA-256 rispondono a scopi diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare i termini come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.1.2, pagina PDF 36"
+    },
+    {
+      "id": "cyber-c03-q014",
+      "topicId": "cyber-c03-t02",
+      "question": "Che cosa afferma il principio di Kerckhoffs?",
+      "answer": "Un sistema crittografico dovrebbe restare sicuro anche quando l’avversario conosce il suo funzionamento, purché le chiavi e gli altri requisiti di sicurezza restino protetti.",
+      "detail": "La sicurezza deve derivare dalla robustezza dello schema e dalla segretezza del materiale critico, non dall’oscurità della descrizione.",
+      "example": "AES è documentato pubblicamente, mentre le chiavi effettivamente usate per cifrare i dati restano segrete.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affidare la sicurezza all’idea che nessuno scoprirà come opera l’algoritmo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.1, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q015",
+      "topicId": "cyber-c03-t02",
+      "question": "Perché gli algoritmi crittografici moderni vengono pubblicati e analizzati?",
+      "answer": "Per favorire l’esame da parte della comunità scientifica e la scoperta di difetti prima che siano sfruttati.",
+      "detail": "Un algoritmo proprietario nascosto non è automaticamente più sicuro; può semplicemente essere stato meno verificato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiare segretezza della documentazione per prova di robustezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.1, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q016",
+      "topicId": "cyber-c03-t02",
+      "question": "Qual è il rapporto tra Kerckhoffs e open design del Capitolo 2?",
+      "answer": "Entrambi richiedono che il meccanismo resti affidabile anche se conosciuto; devono essere protetti i segreti specifici e verificate le proprietà progettuali.",
+      "detail": "Kerckhoffs applica esplicitamente la logica ai sistemi crittografici.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Principio di open design del Capitolo 2"
+      ],
+      "mistakes": "Pensare che open design imponga di pubblicare le chiavi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.1, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q017",
+      "topicId": "cyber-c03-t02",
+      "question": "Quante chiavi distinte può rappresentare una chiave di n bit?",
+      "answer": "In linea teorica 2^n valori.",
+      "detail": "Una chiave da 128 bit ha 2^128 possibilità; una da 256 bit ne ha 2^256. Lo spazio ampio ostacola la ricerca esaustiva quando lo schema è ben progettato.",
+      "example": "Con n=3 lo spazio ha 2^3=8 possibili chiavi; con 128 bit ha 2^128 possibilità.",
+      "formulas": [
+        {
+          "latex": "N_{\\mathrm{chiavi}}=2^n"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Confondere numero di bit con numero di chiavi possibili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.2, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q018",
+      "topicId": "cyber-c03-t02",
+      "question": "Che cosa si intende per attacco brute force a una chiave?",
+      "answer": "Un tentativo di provare chiavi candidate fino a trovare quella utilizzabile.",
+      "detail": "La praticabilità dipende dallo spazio delle chiavi, dagli strumenti computazionali e dal sistema concreto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che un numero elevato di bit elimina ogni attacco possibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.2, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q019",
+      "topicId": "cyber-c03-t02",
+      "question": "Perché la lunghezza della chiave non è l’unica misura della sicurezza?",
+      "answer": "Perché contano anche algoritmo, modalità operativa, casualità, implementazione e protezione del segreto.",
+      "detail": "Una chiave lunga non compensa un nonce riutilizzato, una modalità insicura o una chiave esposta nel sorgente.",
+      "example": "Una chiave lunga memorizzata in un repository espone comunque il segreto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Valutare un sistema solo dal numero di bit dichiarato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.2, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q020",
+      "topicId": "cyber-c03-t02",
+      "question": "Perché non si può confrontare direttamente una chiave RSA di migliaia di bit con AES-256?",
+      "answer": "Perché appartengono a famiglie che usano problemi matematici diversi e richiedono valutazioni di sicurezza equivalenti, non un semplice confronto di lunghezze.",
+      "detail": "La dimensione numerica maggiore della chiave RSA non prova una protezione superiore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che 2048 bit siano automaticamente più sicuri di 256 bit.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.2, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q021",
+      "topicId": "cyber-c03-t02",
+      "question": "Che cosa indica la confusione secondo Shannon?",
+      "answer": "Rendere complessa la relazione tra chiave e testo cifrato, ostacolando la deduzione della chiave osservando messaggi cifrati.",
+      "detail": "È un principio progettuale dei cifrari, distinto dalla diffusione dell’influenza dei bit in ingresso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Definire confusione come semplice disordine visivo del testo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.3, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q022",
+      "topicId": "cyber-c03-t02",
+      "question": "Che cosa indica la diffusione secondo Shannon?",
+      "answer": "Distribuire l’influenza dei bit del messaggio originale su molte parti del cifrato.",
+      "detail": "La finalità è evitare corrispondenze semplici fra piccoli cambiamenti dell’ingresso e porzioni isolate dell’uscita.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere diffusione con distribuzione delle chiavi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.3, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q023",
+      "topicId": "cyber-c03-t02",
+      "question": "Che cos’è l’effetto valanga?",
+      "answer": "La proprietà per cui una piccola variazione dell’ingresso tende a provocare molte variazioni imprevedibili nell’uscita.",
+      "detail": "Può emergere cambiando un solo bit del messaggio; tuttavia non è sufficiente da solo a dimostrare la sicurezza di un algoritmo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare l’effetto valanga come prova definitiva di robustezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.3, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q024",
+      "topicId": "cyber-c03-t02",
+      "question": "Come distingui confusione, diffusione ed effetto valanga all’orale?",
+      "answer": "Confusione: rapporto complesso chiave–cifrato; diffusione: effetto dei bit di ingresso distribuito sul cifrato; effetto valanga: variazione estesa dell’uscita quando cambia poco l’ingresso.",
+      "detail": "Sono concetti collegati ma non equivalenti: i primi due sono principi progettuali e il terzo una proprietà comportamentale desiderata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Fornire una sola definizione generica per tutti e tre.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.3, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q025",
+      "topicId": "cyber-c03-t02",
+      "question": "Come funziona l’operazione binaria XOR?",
+      "answer": "XOR vale 1 se i due bit sono diversi e 0 se sono uguali.",
+      "detail": "Le quattro combinazioni sono 0⊕0=0, 0⊕1=1, 1⊕0=1, 1⊕1=0; è usata in diversi meccanismi crittografici.",
+      "example": "01 XOR 11 = 10 e 10 XOR 11 = 01.",
+      "formulas": [
+        {
+          "latex": "0\\oplus 0=0;\\quad 0\\oplus1=1;\\quad 1\\oplus0=1;\\quad 1\\oplus1=0"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Confonderla con OR inclusivo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.4, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q026",
+      "topicId": "cyber-c03-t02",
+      "question": "Quale proprietà XOR permette di ricostruire il messaggio originale?",
+      "answer": "Applicare due volte XOR con la medesima chiave restituisce il dato iniziale.",
+      "detail": "Il risultato segue dalla proprietà che x⊕k⊕k=x; nel one-time pad la cifratura e la decifratura usano XOR.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "(M\\oplus K)\\oplus K=M"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Credere che XOR sia, da sola, una cifratura sicura per qualsiasi chiave.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.4, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q027",
+      "topicId": "cyber-c03-t02",
+      "question": "In che cosa consiste il one-time pad?",
+      "answer": "Combina bit per bit il messaggio con una chiave casuale segreta della stessa lunghezza, mediante XOR.",
+      "detail": "Il metodo può dare segretezza perfetta solo se tutte le condizioni sulle chiavi sono rispettate rigorosamente.",
+      "example": "Per proteggere 100 bit di messaggio occorrono almeno 100 bit di chiave casuale usata una volta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare un semplice XOR con una password breve come one-time pad sicuro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.4, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q028",
+      "topicId": "cyber-c03-t02",
+      "question": "Quali condizioni rendono il one-time pad teoricamente perfettamente segreto?",
+      "answer": "La chiave deve essere uniforme e veramente casuale, indipendente dal messaggio, segreta, lunga quanto il messaggio e utilizzata una volta sola.",
+      "detail": "Se anche una condizione essenziale manca, non si può invocare la garanzia di segretezza perfetta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Riutilizzare la stessa chiave o generarla con una sequenza prevedibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.4, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q029",
+      "topicId": "cyber-c03-t02",
+      "question": "Perché il one-time pad non è comunemente utilizzato su larga scala?",
+      "answer": "Perché richiede la distribuzione e la conservazione sicure di chiavi casuali almeno lunghe quanto ogni messaggio, senza alcun riutilizzo.",
+      "detail": "Il costo e la complessità di gestione delle chiavi costituiscono il limite operativo principale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che, essendo teoricamente perfetto, sia la soluzione più pratica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.4, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q030",
+      "topicId": "cyber-c03-t02",
+      "question": "Qual è il rischio matematico del riutilizzo della chiave in un one-time pad?",
+      "answer": "Cifrando M1 e M2 con la stessa K, il confronto dei cifrati elimina K e rivela M1⊕M2.",
+      "detail": "Questo legame può esporre la struttura dei messaggi e permettere recuperi di contenuto, soprattutto con testo parzialmente noto.",
+      "example": "Con lo stesso K su due messaggi, C1 XOR C2 rivela M1 XOR M2.",
+      "formulas": [
+        {
+          "latex": "C_1\\oplus C_2=M_1\\oplus M_2"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Considerare sicuro il riutilizzo perché l’attaccante non possiede K.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.4, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q031",
+      "topicId": "cyber-c03-t02",
+      "question": "Il one-time pad garantisce automaticamente integrità e autenticità?",
+      "answer": "No: il suo obiettivo di segretezza perfetta non include da solo prove di integrità o dell’identità del mittente.",
+      "detail": "Per tali proprietà occorrono ulteriori meccanismi appropriati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Deducere autenticazione dalla sola segretezza del ciphertext.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.2.4, pagina PDF 37"
+    },
+    {
+      "id": "cyber-c03-q032",
+      "topicId": "cyber-c03-t03",
+      "question": "Come funziona in generale la crittografia simmetrica?",
+      "answer": "Mittente e destinatario condividono una chiave segreta che viene usata direttamente, o con chiavi strettamente correlate, nelle operazioni di cifratura e decifratura.",
+      "detail": "È efficiente e adatta a dati voluminosi, ma richiede distribuzione e gestione sicura del segreto condiviso.",
+      "example": "Cifratura di file, dischi, database o traffico di rete.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trasmettere la chiave segreta in chiaro sul canale che si vuole proteggere.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3, pagina PDF 38"
+    },
+    {
+      "id": "cyber-c03-q033",
+      "topicId": "cyber-c03-t03",
+      "question": "Quale vantaggio e quale limite caratterizzano la cifratura simmetrica?",
+      "answer": "Vantaggio: elevata efficienza sui grandi volumi; limite: distribuzione iniziale e gestione della chiave condivisa.",
+      "detail": "Questo spiega il ricorso a protocolli di accordo sulle chiavi e architetture ibride.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere alta efficienza con assenza di problemi di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3, pagina PDF 38"
+    },
+    {
+      "id": "cyber-c03-q034",
+      "topicId": "cyber-c03-t03",
+      "question": "Che differenza c’è fra cifrario a blocchi e cifrario a flusso?",
+      "answer": "Il cifrario a blocchi elabora unità di dimensione prefissata; quello a flusso genera una sequenza pseudocasuale combinata ai dati.",
+      "detail": "Un blocco di AES da 128 bit non significa che qualsiasi file di grandi dimensioni possa essere protetto senza una modalità operativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Chiamare modalità di cifratura qualunque algoritmo a blocchi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3, pagina PDF 38"
+    },
+    {
+      "id": "cyber-c03-q035",
+      "topicId": "cyber-c03-t03",
+      "question": "Quali sono blocco, chiave effettiva e numero di round di DES?",
+      "answer": "DES elabora blocchi da 64 bit, ha 56 bit effettivi di chiave e usa 16 round Feistel.",
+      "detail": "La rappresentazione della chiave include 64 bit, ma 8 sono destinati alla parità; lo spazio effettivo è quindi 2^56.",
+      "example": "DES usa 64 bit per blocco ma soltanto 56 bit di chiave effettiva; gli altri 8 sono di parità.",
+      "formulas": [
+        {
+          "latex": "\\mathrm{Blocco}_{DES}=64\\,\\mathrm{bit}"
+        },
+        {
+          "latex": "\\mathrm{Chiave}_{DES}=56\\,\\mathrm{bit}"
+        },
+        {
+          "latex": "\\mathrm{Round}_{DES}=16"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Confondere i 64 bit rappresentati con 64 bit effettivi di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.1, pagina PDF 38"
+    },
+    {
+      "id": "cyber-c03-q036",
+      "topicId": "cyber-c03-t03",
+      "question": "Perché DES non è adeguato per nuovi sistemi?",
+      "answer": "Perché una chiave effettiva di soli 56 bit è oggi troppo corta contro tentativi esaustivi.",
+      "detail": "DES resta importante storicamente per comprendere l’evoluzione dei cifrari a blocchi e dei limiti nel tempo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare DES come opzione consigliabile per nuovi progetti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.1, pagina PDF 38"
+    },
+    {
+      "id": "cyber-c03-q037",
+      "topicId": "cyber-c03-t03",
+      "question": "Che ruolo svolge la struttura Feistel in DES?",
+      "answer": "È il tipo di struttura a round su cui si basa il cifrario DES.",
+      "detail": "Nel manuale la nozione serve a inquadrare il design storico; il punto centrale è ricordare il numero di round e i limiti della chiave.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere round della struttura con lunghezza del blocco.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.1, pagina PDF 38"
+    },
+    {
+      "id": "cyber-c03-q038",
+      "topicId": "cyber-c03-t03",
+      "question": "Che cos’è 3DES/TDEA e quale sequenza utilizza comunemente?",
+      "answer": "Una variante storica che applica tre operazioni DES nel formato Encrypt–Decrypt–Encrypt (EDE), con due o tre chiavi secondo la variante.",
+      "detail": "Non coincide con un singolo DES che esegue tre soli round: ciascuna operazione DES possiede la propria struttura a 16 round.",
+      "example": "La sequenza EDE applica tre interi DES, ciascuno con 16 round.",
+      "formulas": [
+        {
+          "latex": "3DES:\\ E\\rightarrow D\\rightarrow E"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Ridurre 3DES a «DES con tre round».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.2, pagina PDF 38"
+    },
+    {
+      "id": "cyber-c03-q039",
+      "topicId": "cyber-c03-t03",
+      "question": "Quali limiti rendono TDEA una scelta storica e non moderna per nuova cifratura?",
+      "answer": "Conserva blocchi da 64 bit e presenta limiti di sicurezza ed efficienza; le indicazioni NIST ne hanno escluso il nuovo uso protettivo dopo il 31 dicembre 2023.",
+      "detail": "Alcune decifrature di dati storici possono restare necessarie per compatibilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare le operazioni di compatibilità come approvazione per nuovi sistemi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.2, pagina PDF 38"
+    },
+    {
+      "id": "cyber-c03-q040",
+      "topicId": "cyber-c03-t03",
+      "question": "Quali sono le dimensioni di blocco e chiave di IDEA?",
+      "answer": "IDEA utilizza blocchi da 64 bit e chiave da 128 bit.",
+      "detail": "È un cifrario simmetrico storico, citato come passaggio precedente alla diffusione di AES.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "IDEA:\\ \\mathrm{blocco}=64\\,\\mathrm{bit};\\ \\mathrm{chiave}=128\\,\\mathrm{bit}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Dedurre che IDEA usi blocchi da 128 bit solo perché la chiave è da 128 bit.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.3, pagina PDF 38"
+    },
+    {
+      "id": "cyber-c03-q041",
+      "topicId": "cyber-c03-t03",
+      "question": "Come distingui sinteticamente DES, 3DES e IDEA?",
+      "answer": "DES: blocco 64 bit, chiave effettiva 56 bit e 16 round; 3DES: tre operazioni DES EDE; IDEA: blocco 64 bit e chiave 128 bit.",
+      "detail": "Sono riferimenti storici e non le scelte preferibili per nuovi sistemi secondo il manuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire a tutti tre le stesse dimensioni della chiave.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.3, pagina PDF 38"
+    },
+    {
+      "id": "cyber-c03-q042",
+      "topicId": "cyber-c03-t04",
+      "question": "Che cos’è AES e quale dimensione di blocco utilizza?",
+      "answer": "AES è il moderno standard di riferimento per molti usi di cifratura simmetrica e lavora sempre su blocchi da 128 bit (16 byte).",
+      "detail": "È descritto dal NIST FIPS 197; l’aggiornamento editoriale del 2023 non ha modificato tecnicamente l’algoritmo.",
+      "example": "AES-256 continua a utilizzare blocchi da 16 byte, non da 32.",
+      "formulas": [
+        {
+          "latex": "\\mathrm{Blocco}_{AES}=128\\,\\mathrm{bit}=16\\,\\mathrm{byte}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Affermare che AES-256 usi blocchi da 256 bit.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.4, pagina PDF 39"
+    },
+    {
+      "id": "cyber-c03-q043",
+      "topicId": "cyber-c03-t04",
+      "question": "Quali dimensioni di chiave prevede AES?",
+      "answer": "128, 192 e 256 bit.",
+      "detail": "Le varianti non differiscono per dimensione del blocco ma per lunghezza della chiave e numero di round.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "AES\\text{-}128:\\ K=128\\,\\mathrm{bit}"
+        },
+        {
+          "latex": "AES\\text{-}192:\\ K=192\\,\\mathrm{bit}"
+        },
+        {
+          "latex": "AES\\text{-}256:\\ K=256\\,\\mathrm{bit}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Parlare di blocco da 192 o 256 bit in AES.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.4, pagina PDF 39"
+    },
+    {
+      "id": "cyber-c03-q044",
+      "topicId": "cyber-c03-t04",
+      "question": "Quanti round prevede ciascuna variante AES?",
+      "answer": "AES-128 prevede 10 round, AES-192 12 e AES-256 14.",
+      "detail": "Durante i round avvengono trasformazioni strutturate dello stato e aggiunta di materiale derivato dalla chiave.",
+      "example": "AES-128 usa 10 round, AES-256 ne usa 14 pur avendo lo stesso blocco da 128 bit.",
+      "formulas": [
+        {
+          "latex": "AES\\text{-}128\\rightarrow 10\\,\\mathrm{round}"
+        },
+        {
+          "latex": "AES\\text{-}192\\rightarrow 12\\,\\mathrm{round}"
+        },
+        {
+          "latex": "AES\\text{-}256\\rightarrow 14\\,\\mathrm{round}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Deducere che il numero di round coincida con la dimensione del blocco.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.4, pagina PDF 39"
+    },
+    {
+      "id": "cyber-c03-q045",
+      "topicId": "cyber-c03-t04",
+      "question": "Come è organizzato lo stato interno di AES?",
+      "answer": "Come una struttura di 4 × 4 byte, su cui si applicano trasformazioni algebraiche e materiale derivato dalla chiave.",
+      "detail": "Il cifrario non consiste in una semplice sostituzione di caratteri di un testo; opera sul dato binario.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "4\\times4\\,\\mathrm{byte}=16\\,\\mathrm{byte}=128\\,\\mathrm{bit}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Descrivere AES come un cifrario alfabetico di sostituzione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.4, pagina PDF 39"
+    },
+    {
+      "id": "cyber-c03-q046",
+      "topicId": "cyber-c03-t04",
+      "question": "Come confronti AES con DES, 3DES e IDEA sul piano dei blocchi?",
+      "answer": "AES usa 128 bit per blocco; DES, 3DES e IDEA usano blocchi da 64 bit.",
+      "detail": "La chiave e la dimensione del blocco sono variabili distinte: conoscere una non consente di dedurre l’altra.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere blocco e chiave nei confronti storici.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.4, pagina PDF 39"
+    },
+    {
+      "id": "cyber-c03-q047",
+      "topicId": "cyber-c03-t04",
+      "question": "Perché AES, come cifrario a blocchi, richiede una modalità operativa?",
+      "answer": "Perché l’algoritmo di base trasforma un blocco da 128 bit; un messaggio lungo richiede regole per elaborare più blocchi e proteggerne proprietà ulteriori.",
+      "detail": "La scelta della modalità è parte della sicurezza concreta dello schema applicativo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che la sola scelta «AES» sia sufficiente a definire un protocollo sicuro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.5, pagina PDF 39"
+    },
+    {
+      "id": "cyber-c03-q048",
+      "topicId": "cyber-c03-t04",
+      "question": "Perché ECB è inadatto alla cifratura generale di messaggi o file?",
+      "answer": "Perché cifra blocchi indipendentemente e può conservare pattern riconoscibili quando blocchi di plaintext uguali producono blocchi di ciphertext uguali.",
+      "detail": "Questo può rivelare struttura del contenuto pur senza mostrare il testo originale.",
+      "example": "Due blocchi identici in un file possono produrre blocchi cifrati identici, rivelando pattern.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scegliere ECB per semplicità trascurando la ripetizione dei blocchi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.5, pagina PDF 39"
+    },
+    {
+      "id": "cyber-c03-q049",
+      "topicId": "cyber-c03-t04",
+      "question": "Quali attenzioni richiedono le modalità CBC e CTR citate nel manuale?",
+      "answer": "Una corretta gestione dei valori iniziali e una protezione separata dell’integrità quando necessaria.",
+      "detail": "L’uso di una modalità non autenticata, da solo, non garantisce che eventuali manomissioni vengano rilevate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Equiparare automaticamente cifratura e autenticazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.5, pagina PDF 39"
+    },
+    {
+      "id": "cyber-c03-q050",
+      "topicId": "cyber-c03-t04",
+      "question": "Che cosa significa AEAD?",
+      "answer": "Authenticated Encryption with Associated Data: uno schema che protegge la riservatezza dei dati cifrati e fornisce verifica dell’autenticità/integrità, con possibile autenticazione di dati associati non cifrati.",
+      "detail": "È l’approccio spesso privilegiato nelle moderne applicazioni rispetto alla sola cifratura senza autenticazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che tutti i dati autenticati debbano essere necessariamente cifrati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.5, pagina PDF 39"
+    },
+    {
+      "id": "cyber-c03-q051",
+      "topicId": "cyber-c03-t04",
+      "question": "Quale protezione offre la modalità AES-GCM?",
+      "answer": "Combina cifratura dei dati e un tag di autenticazione che consente di rilevare modifiche non autorizzate.",
+      "detail": "La protezione dipende dalla corretta gestione di chiavi, nonce/IV e verifica del tag.",
+      "example": "Protezione di un file con dati economici riservati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere valida la protezione anche senza controllare il tag ricevuto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.5, pagina PDF 39"
+    },
+    {
+      "id": "cyber-c03-q052",
+      "topicId": "cyber-c03-t04",
+      "question": "Che cosa sono gli associated data in una modalità AEAD?",
+      "answer": "Informazioni che vengono autenticate senza dover essere cifrate.",
+      "detail": "Possono essere necessari al protocollo in chiaro ma devono comunque essere protetti contro modifiche.",
+      "example": "Un campo necessario al protocollo può restare leggibile ma autenticato insieme al cifrato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire agli associated data la riservatezza che non viene loro fornita.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.5, pagina PDF 39"
+    },
+    {
+      "id": "cyber-c03-q053",
+      "topicId": "cyber-c03-t04",
+      "question": "Perché è critico non riutilizzare un nonce con la stessa chiave in GCM?",
+      "answer": "Perché il riutilizzo può compromettere gravemente le garanzie di sicurezza dello schema.",
+      "detail": "La sicurezza dipende da come si usa il nonce previsto dalla modalità, non soltanto dal nome AES.",
+      "example": "Riutilizzare un nonce con la stessa chiave AES-GCM compromette le garanzie della modalità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Riutilizzare sistematicamente lo stesso IV per comodità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.5, pagina PDF 39"
+    },
+    {
+      "id": "cyber-c03-q054",
+      "topicId": "cyber-c03-t04",
+      "question": "Quali controlli occorre verificare per affermare di usare AES-GCM correttamente?",
+      "answer": "Modalità appropriata, chiavi generate e protette, nonce usati secondo le regole, tag verificati e implementazioni consolidate.",
+      "detail": "Una configurazione debole o una gestione scorretta può vanificare un algoritmo robusto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitare la valutazione al numero di bit della chiave AES.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.5, pagina PDF 39"
+    },
+    {
+      "id": "cyber-c03-q055",
+      "topicId": "cyber-c03-t04",
+      "question": "Nel caso del file economico, quali rischi distinguono AES-ECB e AES-GCM con nonce ripetuto?",
+      "answer": "ECB può rivelare pattern dei blocchi; GCM con lo stesso nonce e la stessa chiave può perdere garanzie fondamentali di sicurezza.",
+      "detail": "Il caso mostra che due errori diversi possono danneggiare la sicurezza anche quando l’algoritmo di base è AES.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che qualsiasi modalità AES sia automaticamente corretta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.3.5, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q056",
+      "topicId": "cyber-c03-t05",
+      "question": "Qual è il principale problema operativo della crittografia simmetrica?",
+      "answer": "Far ottenere ai partecipanti la stessa chiave segreta in modo sicuro, soprattutto quando il canale iniziale è intercettabile.",
+      "detail": "Trasmettere il segreto in chiaro sulla rete da proteggere esporrebbe le comunicazioni successive alla decifratura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere il problema di gestione delle chiavi con una scarsa efficienza computazionale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.4, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q057",
+      "topicId": "cyber-c03-t05",
+      "question": "Quali fasi comprende il ciclo di vita delle chiavi crittografiche?",
+      "answer": "Generazione casuale, assegnazione, distribuzione, conservazione, uso, rotazione, revoca, distruzione, eventuale backup e audit.",
+      "detail": "La protezione richiede una gestione continua e non si esaurisce al momento in cui la chiave viene generata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Conservare per sempre la stessa chiave senza controllare accessi o revoche.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.4, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q058",
+      "topicId": "cyber-c03-t05",
+      "question": "Perché inserire una chiave crittografica nel codice o in un repository è una pratica pericolosa?",
+      "answer": "Perché espone un segreto operativo a copie, letture e accessi non controllati, potenzialmente compromettendo i dati protetti.",
+      "detail": "La chiave non dovrebbe essere trattata come un normale parametro di configurazione visibile a chi legge il sorgente.",
+      "example": "Una chiave AES aggiunta a un repository viene esposta a chi può leggere il codice.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Caricare credenziali e chiavi in un repository insieme al codice.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.4, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q059",
+      "topicId": "cyber-c03-t05",
+      "question": "Che cos’è un KMS?",
+      "answer": "Un Key Management System, sistema per organizzare e controllare gestione e uso delle chiavi crittografiche.",
+      "detail": "Può rendere più verificabile il loro ciclo di vita, senza eliminare ogni minaccia o errore operativo.",
+      "example": "In un’impresa il KMS può gestire il ciclo di vita delle chiavi mentre i servizi applicativi le usano secondo autorizzazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare KMS sinonimo di algoritmo di cifratura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.4, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q060",
+      "topicId": "cyber-c03-t05",
+      "question": "Che cos’è un HSM e a cosa può servire?",
+      "answer": "Un Hardware Security Module, dispositivo specializzato per proteggere ed eseguire operazioni sul materiale crittografico in contesti con requisiti specifici.",
+      "detail": "Il manuale lo indica come possibile componente della gestione sicura delle chiavi nelle organizzazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che possedere un HSM renda automaticamente sicuri applicazioni e autorizzazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.4, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q061",
+      "topicId": "cyber-c03-t05",
+      "question": "Qual è il ruolo del NIST SP 800-57 citato dal manuale?",
+      "answer": "Fornire raccomandazioni sul ciclo di vita e sulla gestione delle chiavi crittografiche.",
+      "detail": "Il riferimento chiarisce che la scelta dell’algoritmo e l’amministrazione del segreto sono problemi distinti e complementari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitare la sicurezza delle chiavi alla sola loro lunghezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.4, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q062",
+      "topicId": "cyber-c03-t06",
+      "question": "Come si definisce la crittografia asimmetrica?",
+      "answer": "Utilizza una coppia di chiavi matematicamente correlate: una pubblica distribuibile e una privata da mantenere segreta.",
+      "detail": "La coppia supporta schemi di cifratura, firme e protocolli di accordo sulle chiavi, secondo l’algoritmo utilizzato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che entrambe le chiavi debbano essere segrete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q063",
+      "topicId": "cyber-c03-t06",
+      "question": "Come invia A un messaggio confidenziale a B nel modello didattico asimmetrico?",
+      "answer": "A utilizza uno schema idoneo con la chiave pubblica di B; B recupera il messaggio con la propria chiave privata.",
+      "detail": "La chiave pubblica impiegata deve essere autenticata e associata realmente a B, altrimenti può essere sostituita.",
+      "example": "A cifra per B con la sua chiave pubblica; B usa la privata corrispondente per decifrare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Cifrare con la chiave privata del mittente per ottenere riservatezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q064",
+      "topicId": "cyber-c03-t06",
+      "question": "Perché la crittografia asimmetrica non è normalmente scelta per cifrare da sola grandi quantità di dati?",
+      "answer": "Perché le operazioni asimmetriche sono generalmente più onerose di quelle simmetriche.",
+      "detail": "Nelle architetture moderne l’approccio ibrido combina i vantaggi del trasferimento/accordo del segreto e della cifratura efficiente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare l’asimmetrica come superiore alla simmetrica in ogni dimensione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q065",
+      "topicId": "cyber-c03-t06",
+      "question": "Perché una chiave pubblica, pur non essendo segreta, deve essere verificata?",
+      "answer": "Perché un attaccante potrebbe sostituirla con la propria e farsi credere il legittimo destinatario.",
+      "detail": "Certificati digitali o canali autenticati permettono di controllare il legame tra chiave pubblica e identità.",
+      "example": "Un attaccante può sostituire la pubblica di B con la propria, intercettando la comunicazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare qualsiasi chiave pubblica ricevuta come se fosse automaticamente attendibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q066",
+      "topicId": "cyber-c03-t06",
+      "question": "Quali funzioni principali può svolgere la crittografia asimmetrica?",
+      "answer": "Cifratura per un destinatario, verifica di firme generate con chiave privata e partecipazione a meccanismi di accordo sulle chiavi.",
+      "detail": "Ogni funzione usa uno schema concreto con proprietà e regole proprie: non è sufficiente parlare genericamente di «RSA» o «chiave pubblica».",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire a una semplice cifratura asimmetrica l’autenticazione automatica del mittente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q067",
+      "topicId": "cyber-c03-t06",
+      "question": "Qual è l’idea matematica generale alla base di RSA?",
+      "answer": "RSA si basa su proprietà dei numeri interi e su problemi matematici collegati alla fattorizzazione.",
+      "detail": "Per impieghi reali si utilizzano schemi completi, non operazioni RSA elementari prive di precauzioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Descrivere la sicurezza di RSA come derivante dalla segretezza dell’algoritmo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5.1, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q068",
+      "topicId": "cyber-c03-t06",
+      "question": "Quali sono esempi di schemi RSA distinti per cifratura e firma?",
+      "answer": "RSA-OAEP è uno schema di cifratura; RSA-PSS è uno schema di firma digitale.",
+      "detail": "I due risolvono problemi diversi e comprendono regole specifiche non riducibili a un generico calcolo con RSA.",
+      "example": "RSA-OAEP per cifrare e RSA-PSS per firmare sono esempi distinti indicati nel manuale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare indistintamente RSA-OAEP e RSA-PSS per qualunque funzione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5.1, pagina PDF 40"
+    },
+    {
+      "id": "cyber-c03-q069",
+      "topicId": "cyber-c03-t06",
+      "question": "A cosa servono le tecniche crittografiche basate su curve ellittiche (ECC)?",
+      "answer": "Supportano operazioni come accordo sulle chiavi e firme digitali mediante parametri e strutture differenti rispetto a RSA.",
+      "detail": "Il manuale richiede di conoscerne le finalità, non di dimostrare tutta la matematica delle curve ellittiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare ECC come sinonimo di cifratura simmetrica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5.1, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q070",
+      "topicId": "cyber-c03-t06",
+      "question": "Quali esempi di algoritmi di firma basati su curve ellittiche cita il manuale?",
+      "answer": "ECDSA ed EdDSA.",
+      "detail": "Sono schemi concreti di firma digitale e mostrano perché la definizione «cifrare un hash con chiave privata» non vale universalmente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Identificarli come modalità operative AES.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5.1, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q071",
+      "topicId": "cyber-c03-t06",
+      "question": "Quali problemi caratterizzano simmetrica e asimmetrica nella tabella comparativa?",
+      "answer": "Simmetrica: distribuzione e protezione del segreto comune; asimmetrica: autenticità della chiave pubblica e custodia della privata.",
+      "detail": "AES è tipico per file, dischi e traffico bulk; RSA ed ECC trovano impiego in schemi asimmetrici, accordi e firme.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che la chiave pubblica possa essere sostituita senza rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5.1, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q072",
+      "topicId": "cyber-c03-t06",
+      "question": "Come confronti applicazioni e prestazioni di crittografia simmetrica e asimmetrica?",
+      "answer": "La simmetrica è generalmente molto efficiente per grandi volumi; l’asimmetrica è più onerosa ma abilita firme e meccanismi per condividere segreti senza una chiave precondivisa.",
+      "detail": "Il modello ibrido usa ciascuna famiglia per il compito in cui è più adatta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare le due tecnologie come alternative esclusive.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5.1, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q073",
+      "topicId": "cyber-c03-t06",
+      "question": "Perché «firma digitale = cifratura del digest con chiave privata» è una definizione imprecisa?",
+      "answer": "Perché una firma è prodotta con un algoritmo specifico e la chiave privata e verificata con la pubblica; schemi come ECDSA ed EdDSA non sono una cifratura del digest.",
+      "detail": "L’espressione richiama alcuni schemi RSA storici ma non descrive la firma digitale moderna in generale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Memorizzare un’intuizione storica come legge universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5.2, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q074",
+      "topicId": "cyber-c03-t06",
+      "question": "Una firma digitale rende riservato il documento firmato?",
+      "answer": "No: fornisce evidenze di autenticità e integrità, non la confidenzialità del contenuto.",
+      "detail": "Un documento firmato può restare pubblicamente leggibile se non viene anche cifrato.",
+      "example": "Un documento firmato può restare leggibile a chiunque lo riceva.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere provenienza verificabile con segretezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5.2, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q075",
+      "topicId": "cyber-c03-t06",
+      "question": "Cifrare con la chiave pubblica del destinatario autentica automaticamente il mittente?",
+      "answer": "No: tutela l’accessibilità del contenuto al destinatario previsto, ma non prova di per sé chi lo abbia inviato.",
+      "detail": "Per combinare confidenzialità e autenticità servono meccanismi distinti in un protocollo progettato correttamente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Deducere l’identità del mittente dalla sola possibilità del destinatario di decifrare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.5.2, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q076",
+      "topicId": "cyber-c03-t07",
+      "question": "Che problema risolve l’accordo sulle chiavi Diffie–Hellman?",
+      "answer": "Permette a due parti di derivare un segreto condiviso senza trasmettere direttamente quel segreto sulla rete.",
+      "detail": "Ogni parte combina il proprio materiale privato con l’informazione pubblica ricevuta dall’altra.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Descrivere Diffie–Hellman come un algoritmo che cifra direttamente l’intero messaggio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.6.1, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q077",
+      "topicId": "cyber-c03-t07",
+      "question": "Quali dati attraversano la rete in un accordo Diffie–Hellman concettuale?",
+      "answer": "Le informazioni pubbliche dei partecipanti; i rispettivi valori segreti privati non devono essere trasmessi.",
+      "detail": "Dalla combinazione dei dati pubblici dell’altra parte con il proprio segreto si deriva materiale condiviso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Inviare il segreto privato per permettere all’altro di completare il calcolo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.6.1, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q078",
+      "topicId": "cyber-c03-t07",
+      "question": "Diffie–Hellman da solo garantisce l’autenticità degli interlocutori?",
+      "answer": "No: se non autenticato è vulnerabile al Man-in-the-Middle.",
+      "detail": "L’aggressore potrebbe negoziare segreti separati con i due partecipanti impersonandoli reciprocamente.",
+      "example": "Un aggressore MITM può creare una negoziazione separata con A e un’altra con B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che la sola segretezza matematica dell’accordo impedisca ogni MITM.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.6.1, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q079",
+      "topicId": "cyber-c03-t07",
+      "question": "Perché il risultato di Diffie–Hellman viene poi usato con algoritmi simmetrici?",
+      "answer": "Perché DH permette di ottenere materiale segreto condiviso; la cifratura dei dati può poi essere affidata a un algoritmo simmetrico efficiente.",
+      "detail": "È una distinzione centrale tra accordo sulle chiavi e cifratura vera e propria.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere la derivazione di un segreto con il trasporto dei dati applicativi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.6.1, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q080",
+      "topicId": "cyber-c03-t07",
+      "question": "Che cosa significa ECDHE?",
+      "answer": "Elliptic Curve Diffie–Hellman Ephemeral: accordo sulle chiavi basato su curve ellittiche e segreti temporanei per la negoziazione.",
+      "detail": "Ephemeral sottolinea il carattere non permanente dei segreti impiegati per una sessione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere la E finale con «encryption».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.6.2, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q081",
+      "topicId": "cyber-c03-t07",
+      "question": "Che cosa si intende per forward secrecy?",
+      "answer": "La compromissione futura di una chiave di autenticazione a lungo termine non basta, da sola, a decifrare retroattivamente sessioni passate registrate.",
+      "detail": "La proprietà richiede un protocollo e una gestione corretta delle chiavi temporanee, come nell’uso appropriato di ECDHE.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che la forward secrecy impedisca qualunque compromissione in tempo reale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.6.2, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q082",
+      "topicId": "cyber-c03-t07",
+      "question": "Qual è il collegamento tra ECDHE e TLS 1.3?",
+      "answer": "ECDHE è un importante meccanismo di accordo per derivare segreti temporanei e sostenere la forward secrecy nei protocolli moderni come TLS 1.3.",
+      "detail": "Restano necessari autenticazione, validazione dei parametri e derivazione corretta delle chiavi.",
+      "example": "Con segreti effimeri correttamente usati, la perdita futura di una chiave a lungo termine non consente da sola di leggere le sessioni passate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dedurre che usare una curva ellittica renda il sistema automaticamente sicuro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.6.2, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q083",
+      "topicId": "cyber-c03-t07",
+      "question": "Qual è l’esempio di funzione ECDH citata dal manuale e relativo riferimento?",
+      "answer": "X25519, descritta tra l’altro dalla RFC 7748.",
+      "detail": "È un esempio di costruzione impiegabile negli accordi sulle chiavi basati su curve ellittiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confonderla con una funzione hash per password.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.6.2, pagina PDF 41"
+    },
+    {
+      "id": "cyber-c03-q084",
+      "topicId": "cyber-c03-t07",
+      "question": "Che cos’è la crittografia ibrida?",
+      "answer": "Combina meccanismi asimmetrici o di accordo sulle chiavi per stabilire segreti con cifratura simmetrica per proteggere grandi quantità di dati.",
+      "detail": "Il modello sfrutta il vantaggio di gestione delle chiavi dell’asimmetrica e l’efficienza della simmetrica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che i due algoritmi cifrino sempre l’intero messaggio due volte.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.6.3, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q085",
+      "topicId": "cyber-c03-t07",
+      "question": "Qual è il ruolo del meccanismo asimmetrico e di AES-GCM in un esempio ibrido?",
+      "answer": "Il primo consente di stabilire/proteggere il segreto condiviso; AES-GCM usa chiavi simmetriche derivate per proteggere efficacemente i dati applicativi.",
+      "detail": "È il modello di riferimento illustrato per comunicazioni HTTPS e altri canali protetti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare RSA per cifrare direttamente tutti i grandi file quando non necessario.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.6.3, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q086",
+      "topicId": "cyber-c03-t07",
+      "question": "Come opera concettualmente il modello ibrido in una connessione HTTPS?",
+      "answer": "Il client verifica l’identità del server, i partecipanti stabiliscono un segreto secondo il protocollo e derivano chiavi simmetriche che proteggono il traffico applicativo.",
+      "detail": "Il capitolo approfondisce l’architettura generale senza entrare in tutti i dettagli del TLS handshake.",
+      "example": "Durante HTTPS le chiavi simmetriche derivate dal segreto condiviso proteggono il traffico applicativo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che TLS impieghi esclusivamente crittografia asimmetrica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.6.3, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q087",
+      "topicId": "cyber-c03-t07",
+      "question": "Che cos’è la cifratura a busta (envelope encryption)?",
+      "answer": "Un file è cifrato con una chiave simmetrica casuale, mentre tale chiave viene protetta con un meccanismo asimmetrico adeguato ai destinatari.",
+      "detail": "È una forma di crittografia ibrida non limitata alla comunicazione di rete.",
+      "example": "Un file è cifrato con una chiave casuale simmetrica, poi quella chiave è protetta per i destinatari.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Cifrare un file voluminoso direttamente con la sola chiave pubblica senza considerare lo schema concreto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.6.3, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q088",
+      "topicId": "cyber-c03-t07",
+      "question": "Perché forward secrecy e crittografia ibrida non sono sinonimi?",
+      "answer": "La crittografia ibrida indica la combinazione di strumenti; la forward secrecy è una proprietà temporale che può derivare da un appropriato accordo di chiavi effimere.",
+      "detail": "Una soluzione ibrida non garantisce automaticamente la protezione retroattiva delle sessioni passate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire forward secrecy a qualunque schema che usi sia RSA sia AES.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.6.3, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q089",
+      "topicId": "cyber-c03-t08",
+      "question": "Che cos’è una funzione hash crittografica?",
+      "answer": "Trasforma un messaggio di lunghezza arbitraria in un’impronta sintetica (digest), in genere di dimensione prefissata.",
+      "detail": "Per esempio SHA-256 produce 256 bit di output indipendentemente dalla dimensione del file in ingresso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare il digest come testo cifrato decifrabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q090",
+      "topicId": "cyber-c03-t08",
+      "question": "Quanti byte contiene un digest SHA-256?",
+      "answer": "32 byte, corrispondenti a 256 bit.",
+      "detail": "La lunghezza del digest non dipende direttamente dalla lunghezza del messaggio elaborato.",
+      "example": "Un file di pochi byte e uno di 10 MB producono entrambi digest SHA-256 da 32 byte.",
+      "formulas": [
+        {
+          "latex": "256\\,\\mathrm{bit}/8=32\\,\\mathrm{byte}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Confondere 256 bit con 256 byte.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q091",
+      "topicId": "cyber-c03-t08",
+      "question": "Tutte le funzioni hash hanno obbligatoriamente output di lunghezza fissa?",
+      "answer": "No: molte, come SHA-256, sì; alcune famiglie come SHAKE consentono di selezionare la lunghezza dell’output.",
+      "detail": "La distinzione compare come cautela nel manuale per non universalizzare una caratteristica comune.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che qualsiasi hash abbia un’unica lunghezza di digest.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q092",
+      "topicId": "cyber-c03-t08",
+      "question": "Perché una funzione hash non nasconde il contenuto del messaggio?",
+      "answer": "Perché il digest non è una cifratura e il calcolo è normalmente pubblico, senza segreto necessario.",
+      "detail": "Chi conosce il messaggio può calcolarne lo stesso hash; il digest non deve essere scambiato con uno strumento di riservatezza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostituire la cifratura con il semplice calcolo di SHA-256.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q093",
+      "topicId": "cyber-c03-t08",
+      "question": "Per quali attività possono essere utili le funzioni hash crittografiche?",
+      "answer": "Controlli di integrità, firme digitali, strutture dati e protocolli crittografici.",
+      "detail": "Le proprietà effettive dipendono dal modo in cui l’hash viene impiegato e dall’autenticazione dell’eventuale riferimento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dedurre da un hash non autenticato la certezza dell’identità del mittente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q094",
+      "topicId": "cyber-c03-t08",
+      "question": "Che cosa significa preimage resistance?",
+      "answer": "Dato un digest H(M), deve risultare computazionalmente difficile trovare un messaggio che produca proprio quel digest.",
+      "detail": "La difficoltà è computazionale, non l’inesistenza matematica di una preimmagine.",
+      "example": "Dato H(M), un avversario tenta di trovare un input che produca quell’impronta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Descrivere la proprietà come impossibilità assoluta di ricostruire qualsiasi input.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7.1, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q095",
+      "topicId": "cyber-c03-t08",
+      "question": "Che cosa significa second-preimage resistance?",
+      "answer": "Dato un messaggio specifico M, deve essere difficile trovare M2 diverso da M con H(M2)=H(M).",
+      "detail": "A differenza della resistenza alle collisioni, qui uno dei due messaggi è già fissato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confonderla con la ricerca di una coppia qualsiasi di messaggi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7.1, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q096",
+      "topicId": "cyber-c03-t08",
+      "question": "Che cosa significa collision resistance?",
+      "answer": "Deve essere difficile trovare una coppia qualsiasi di messaggi distinti con il medesimo digest.",
+      "detail": "Le collisioni esistono necessariamente perché gli output possibili sono finiti; la sicurezza consiste nel renderne difficile la ricerca.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che una funzione hash sicura non ammetta mai collisioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7.1, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q097",
+      "topicId": "cyber-c03-t08",
+      "question": "Qual è la differenza essenziale tra preimage, second-preimage e collision resistance?",
+      "answer": "Preimage: invertire un digest fissato; second-preimage: trovare un secondo messaggio per uno già fissato; collision: trovare due messaggi qualsiasi con hash uguale.",
+      "detail": "Cambiano le informazioni date all’attaccante e il problema che deve risolvere.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare indistintamente «collisione» per ogni attacco agli hash.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7.1, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q098",
+      "topicId": "cyber-c03-t08",
+      "question": "Qual è la complessità generica approssimativa per trovare una collisione in un hash ideale di n bit?",
+      "answer": "Dell’ordine di 2^(n/2) prove, per il birthday bound.",
+      "detail": "Per trovare una preimmagine casuale la complessità generica è invece circa 2^n; sono stime ideali, non garanzie per qualsiasi algoritmo concreto.",
+      "example": "Per un hash ideale di 256 bit, il birthday bound indica circa 2^128 prove per collisioni.",
+      "formulas": [
+        {
+          "latex": "N_{\\mathrm{collisione}}\\sim 2^{n/2}"
+        },
+        {
+          "latex": "N_{\\mathrm{preimmagine}}\\sim 2^n"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Attribuire alla ricerca di collisioni lo stesso costo 2^n delle preimmagini.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7.1, pagina PDF 42"
+    },
+    {
+      "id": "cyber-c03-q099",
+      "topicId": "cyber-c03-t08",
+      "question": "Quali esempi appartengono alla famiglia SHA-2?",
+      "answer": "SHA-256 e SHA-512.",
+      "detail": "SHA-3 è una famiglia distinta, mentre «SHA» da solo non identifica un algoritmo unico.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare SHA-2 e SHA-3 come nomi intercambiabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7.2, pagina PDF 43"
+    },
+    {
+      "id": "cyber-c03-q100",
+      "topicId": "cyber-c03-t08",
+      "question": "Che cos’è SHA-3 rispetto a SHA-2?",
+      "answer": "Una famiglia standardizzata differente, basata su una costruzione crittografica distinta.",
+      "detail": "Il nome indica una famiglia di algoritmi, non semplicemente un digest SHA-2 di lunghezza maggiore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare il numero 3 come dimensione del digest.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7.2, pagina PDF 43"
+    },
+    {
+      "id": "cyber-c03-q101",
+      "topicId": "cyber-c03-t08",
+      "question": "Perché MD5 non è appropriato per nuove applicazioni che richiedono resistenza alle collisioni?",
+      "answer": "Perché attacchi pubblici ne hanno compromesso questa proprietà; produce digest da 128 bit ma ciò non basta a renderlo sicuro.",
+      "detail": "Il manuale menziona in particolare gli usi come le firme digitali, per i quali la resistenza alle collisioni è essenziale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Valutare MD5 solo dalla lunghezza dell’output.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7.2, pagina PDF 43"
+    },
+    {
+      "id": "cyber-c03-q102",
+      "topicId": "cyber-c03-t08",
+      "question": "Quale cautela vale per SHA-1 in nuove firme digitali?",
+      "answer": "Non è appropriato per nuove firme che richiedono resistenza alle collisioni.",
+      "detail": "La scelta va fondata su algoritmi, parametri e librerie raccomandati nel contesto, anziché su abitudini storiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Continuare a usare SHA-1 perché è «della famiglia SHA».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7.2, pagina PDF 43"
+    },
+    {
+      "id": "cyber-c03-q103",
+      "topicId": "cyber-c03-t08",
+      "question": "Perché allegare SHA-256 a un documento non autentica da solo il mittente?",
+      "answer": "Perché un attaccante che sostituisce il documento può calcolare e sostituire anche il digest.",
+      "detail": "Il confronto fra file e hash indica corrispondenza rispetto al valore fornito, non prova indipendente dell’origine del riferimento.",
+      "example": "Un attaccante sostituisce il report e pubblica anche il nuovo SHA-256: il confronto resta positivo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare la coincidenza dei due hash come prova della persona che ha inviato il documento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7.3, pagina PDF 43"
+    },
+    {
+      "id": "cyber-c03-q104",
+      "topicId": "cyber-c03-t08",
+      "question": "Quali strumenti possono aggiungere autenticazione all’integrità rispetto a un avversario attivo?",
+      "answer": "MAC con chiave condivisa, firma digitale con chiave pubblica attendibile o protocollo con cifratura autenticata.",
+      "detail": "La scelta dipende da chi debba verificare la prova e dalle proprietà attese.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare un hash pubblico come sostituto universale di MAC e firma.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.7.3, pagina PDF 43"
+    },
+    {
+      "id": "cyber-c03-q105",
+      "topicId": "cyber-c03-t09",
+      "question": "Che cos’è un MAC (Message Authentication Code)?",
+      "answer": "Un codice calcolato su messaggio e chiave segreta condivisa che consente di verificarne l’integrità/autenticazione fra chi conosce la chiave.",
+      "detail": "Il verificatore può accertare che il codice sia compatibile con un partecipante che possiede il segreto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Equiparare un MAC a un semplice hash senza chiave.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.8, pagina PDF 43"
+    },
+    {
+      "id": "cyber-c03-q106",
+      "topicId": "cyber-c03-t09",
+      "question": "Che cos’è HMAC e quale esempio cita il manuale?",
+      "answer": "Una costruzione MAC basata su una funzione hash, come HMAC-SHA-256.",
+      "detail": "Combina messaggio e chiave segreta con una procedura definita per produrre un codice di autenticazione.",
+      "example": "HMAC-SHA-256 impiega una chiave segreta condivisa e un messaggio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere HMAC-SHA-256 con SHA-256 applicato senza segreto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.8, pagina PDF 43"
+    },
+    {
+      "id": "cyber-c03-q107",
+      "topicId": "cyber-c03-t09",
+      "question": "Perché un MAC con chiave condivisa non fornisce prova univoca del mittente verso terzi?",
+      "answer": "Perché entrambi i partecipanti che conoscono la chiave possono generare un codice valido.",
+      "detail": "La presenza del MAC identifica il possesso della chiave condivisa, non necessariamente quale persona lo abbia generato.",
+      "example": "Entrambi i possessori della chiave HMAC possono produrre un codice valido.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Deducere dal MAC un non ripudio forte equivalente a quello ricercato con una firma.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.8, pagina PDF 43"
+    },
+    {
+      "id": "cyber-c03-q108",
+      "topicId": "cyber-c03-t09",
+      "question": "Un HMAC cifra il contenuto del messaggio?",
+      "answer": "No: protegge autenticazione/integrità, non riservatezza.",
+      "detail": "Se il messaggio deve rimanere segreto, occorre aggiungere cifratura appropriata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare un HMAC per sostituire la protezione crittografica del canale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.8, pagina PDF 43"
+    },
+    {
+      "id": "cyber-c03-q109",
+      "topicId": "cyber-c03-t09",
+      "question": "Quali proprietà differenziano hash semplice, HMAC e firma digitale?",
+      "answer": "Hash: impronta senza segreto; HMAC: autenticazione mediante segreto condiviso; firma: generazione con chiave privata e verifica con pubblica attendibile.",
+      "detail": "Nessuno dei tre meccanismi, da solo, nasconde necessariamente il contenuto del messaggio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire automaticamente riservatezza o non ripudio a tutti e tre.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.8, pagina PDF 43"
+    },
+    {
+      "id": "cyber-c03-q110",
+      "topicId": "cyber-c03-t09",
+      "question": "Perché l’autenticazione tramite HMAC e quella tramite firma non sono intercambiabili in ogni scenario?",
+      "answer": "Perché HMAC richiede un segreto condiviso tra le parti, mentre la firma usa una chiave privata per generare e una pubblica per verificare.",
+      "detail": "Il modello di fiducia e l’attribuibilità a terzi cambiano sostanzialmente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare MAC per provare a un terzo quale dei due possessori del segreto abbia agito.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.8, pagina PDF 43"
+    },
+    {
+      "id": "cyber-c03-q111",
+      "topicId": "cyber-c03-t10",
+      "question": "Come si definisce una firma digitale in senso crittografico?",
+      "answer": "È una firma generata sul messaggio mediante una chiave privata e verificabile con la corrispondente chiave pubblica.",
+      "detail": "Se schema, custodia della privata e affidabilità della pubblica sono corretti, la verifica offre evidenza su origine e assenza di alterazioni successive.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare una firma digitale un generico documento cifrato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.9, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q112",
+      "topicId": "cyber-c03-t10",
+      "question": "Quali condizioni rendono affidabile una verifica positiva della firma?",
+      "answer": "Schema sicuro, chiave pubblica autentica e corretta custodia della chiave privata del firmatario.",
+      "detail": "Una verifica matematicamente riuscita non è sufficiente se un attaccante ha controllato la chiave privata o il legame identità–chiave è errato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare qualsiasi chiave pubblica ottenuta come attendibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.9, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q113",
+      "topicId": "cyber-c03-t10",
+      "question": "Quali algoritmi di firma digitale moderna cita il capitolo?",
+      "answer": "RSA-PSS, ECDSA ed EdDSA.",
+      "detail": "Sono schemi distinti con procedure matematiche proprie, non una generica «cifratura dell’hash con chiave privata».",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire a tutti la stessa implementazione concettuale RSA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.9, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q114",
+      "topicId": "cyber-c03-t10",
+      "question": "La firma digitale garantisce che il contenuto firmato sia vero?",
+      "answer": "No: può offrire evidenza su origine e integrità, ma non certifica la correttezza sostanziale delle affermazioni contenute.",
+      "detail": "Un firmatario può sottoscrivere un documento con dati errati: la verifica attesta la corrispondenza tecnica della firma, non la verità.",
+      "example": "Una firma su un report economico non prova la correttezza degli importi contenuti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere autenticità dell’approvazione con veridicità del report.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.9, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q115",
+      "topicId": "cyber-c03-t10",
+      "question": "Che rapporto c’è tra firma digitale e non ripudio?",
+      "answer": "Una firma validamente verificata è una forte evidenza tecnica, ma l’attribuzione giuridica di un atto richiede anche identità, gestione delle credenziali, contesto temporale e norme applicabili.",
+      "detail": "Il non ripudio non è ottenuto automaticamente in ogni contesto semplicemente usando un algoritmo di firma.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Deducere responsabilità legale certa dal solo risultato di una verifica matematica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.9, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q116",
+      "topicId": "cyber-c03-t10",
+      "question": "Perché una firma non sostituisce la cifratura?",
+      "answer": "Perché autenticità e integrità non comportano riservatezza.",
+      "detail": "Il documento può essere letto da chiunque lo riceva, anche se la firma è corretta, se non viene applicato anche un meccanismo di cifratura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare firma e cifratura come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.9, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q117",
+      "topicId": "cyber-c03-t10",
+      "question": "Quali sono le cinque fasi concettuali di firma e verifica?",
+      "answer": "Definire il documento; generare firma con chiave privata; trasmettere documento e firma con eventuali certificati; verificare attendibilità della pubblica e firma; accettare soltanto una verifica valida.",
+      "detail": "Nel controllo bisogna usare gli stessi dati sottoscritti: modifiche del documento dopo la firma devono far fallire la verifica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Verificare solo che il file firmato esista, senza controllarne firma e chiave.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.9.1, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q118",
+      "topicId": "cyber-c03-t10",
+      "question": "Che cosa deve fare il verificatore prima di fidarsi di una firma digitale?",
+      "answer": "Verificare l’attendibilità della chiave pubblica e applicare l’algoritmo di verifica al documento e alla firma.",
+      "detail": "Il possesso di un certificato o di una chiave pubblica non controllata non basta a stabilire l’identità del firmatario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Saltare la verifica del legame tra chiave pubblica e identità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.9.1, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q119",
+      "topicId": "cyber-c03-t10",
+      "question": "Come si applica la firma digitale al documento di approvazione economica dell’esempio?",
+      "answer": "Il responsabile firma il documento; il destinatario ne verifica firma e chiave associata al responsabile, rilevando eventuali cambiamenti successivi.",
+      "detail": "Un’approvazione firmata resta leggibile a chi la possiede, a meno che non sia anche cifrata.",
+      "example": "Una modifica del valore economico dopo l’approvazione deve far fallire la verifica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiare la firma per una misura di confidenzialità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.9.1, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q120",
+      "topicId": "cyber-c03-t11",
+      "question": "Quale problema di fiducia risolvono i certificati e la PKI?",
+      "answer": "Associare in modo verificabile una chiave pubblica all’identità di un server, utente o organizzazione.",
+      "detail": "La crittografia asimmetrica non può da sola impedire che un attaccante distribuisca una chiave pubblica falsa.",
+      "example": "Il certificato HTTPS collega il nome del server alla sua chiave pubblica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che la chiave pubblica ricevuta dalla rete sia automaticamente autentica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q121",
+      "topicId": "cyber-c03-t11",
+      "question": "Che cosa significa PKI?",
+      "answer": "Public Key Infrastructure: infrastruttura per gestire certificati, chiavi pubbliche e relazioni di fiducia.",
+      "detail": "Comprende emittenti, politiche e percorsi di validazione, non soltanto un archivio di certificati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ridurre PKI a un singolo algoritmo crittografico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q122",
+      "topicId": "cyber-c03-t11",
+      "question": "Quali informazioni contiene tipicamente un certificato X.509?",
+      "answer": "Soggetto, chiave pubblica, emittente, periodo di validità, estensioni di utilizzo e firma della CA, oltre a identificativi tecnici.",
+      "detail": "Permette al verificatore di controllare il legame chiave–identità secondo regole e politiche della PKI.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Cercare la chiave privata nel certificato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q123",
+      "topicId": "cyber-c03-t11",
+      "question": "Un certificato X.509 contiene la chiave privata del titolare?",
+      "answer": "No: contiene la chiave pubblica del soggetto; la privata deve rimanere sotto la sua protezione.",
+      "detail": "Il certificato può essere distribuito, mentre divulgare la chiave privata può compromettere operazioni crittografiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Inviare la chiave privata alla CA insieme al certificato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q124",
+      "topicId": "cyber-c03-t11",
+      "question": "Che cos’è una Certification Authority (CA)?",
+      "answer": "Un’autorità che verifica secondo policy determinate informazioni ed emette certificati firmandoli digitalmente.",
+      "detail": "La firma della CA contribuisce ad attestare l’associazione tra dati dichiarati e chiave pubblica del soggetto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare la CA come garante assoluta di qualsiasi informazione contenuta nel documento firmato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q125",
+      "topicId": "cyber-c03-t11",
+      "question": "Perché un certificato autofirmato non è automaticamente attendibile per ogni browser?",
+      "answer": "Perché manca un collegamento già riconosciuto a un punto di fiducia nel trust store del client, salvo specifica configurazione.",
+      "detail": "La fiducia in un certificato richiede un percorso valido verso un trust anchor accettato e i controlli previsti.",
+      "example": "Un certificato aziendale non viene riconosciuto automaticamente dal browser pubblico senza fiducia esplicita.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere firma valida matematicamente con attendibilità già riconosciuta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q126",
+      "topicId": "cyber-c03-t11",
+      "question": "Quali componenti compongono una tipica catena di certificazione pubblica?",
+      "answer": "CA radice, una o più CA intermedie e certificato finale del server.",
+      "detail": "Il certificato intermedio è firmato a monte; quello del server collega chiave pubblica e attributi del servizio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che ogni certificato del server debba essere firmato direttamente dalla radice.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.1, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q127",
+      "topicId": "cyber-c03-t11",
+      "question": "Qual è il ruolo della root CA in una catena di certificazione?",
+      "answer": "È il punto di fiducia iniziale (trust anchor) riconosciuto dal client per validare il percorso dei certificati.",
+      "detail": "La presenza della radice nell’insieme di autorità fidate è parte della decisione di fiducia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare automaticamente attendibile una radice sconosciuta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.1, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q128",
+      "topicId": "cyber-c03-t11",
+      "question": "Che ruolo svolge una CA intermedia?",
+      "answer": "Emette o firma certificati secondo un’autorità derivata dalla radice o da una CA superiore.",
+      "detail": "Permette di organizzare la PKI in più livelli, mantenendo un percorso di verifica verso una radice riconosciuta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare un’intermedia una chiave segreta del server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.1, pagina PDF 44"
+    },
+    {
+      "id": "cyber-c03-q129",
+      "topicId": "cyber-c03-t11",
+      "question": "Quali controlli deve effettuare il browser oltre a verificare una firma della CA?",
+      "answer": "Percorso di fiducia, nomi del server, impieghi consentiti, validità temporale e altre condizioni previste dal contesto.",
+      "detail": "Una catena con firme corrette non è sufficiente se il certificato è emesso per un nome diverso da quello richiesto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Accettare il certificato soltanto perché «firmato».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.1, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q130",
+      "topicId": "cyber-c03-t11",
+      "question": "Che cosa indica un errore di corrispondenza tra nome del servizio e certificato?",
+      "answer": "Il certificato non risulta valido per l’identità richiesta e la connessione deve essere trattata con sospetto.",
+      "detail": "La correttezza matematica della firma dell’emittente non risolve il mismatch tra nome del server e identità certificata.",
+      "example": "Un certificato non valido per il nome del servizio richiesto non deve essere accettato solo perché la CA lo ha firmato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ignorare l’errore hostname perché la scadenza è futura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.1, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q131",
+      "topicId": "cyber-c03-t11",
+      "question": "A cosa servono Subject e Subject Alternative Name (SAN) di X.509?",
+      "answer": "Identificano il soggetto e i nomi o identificatori per cui il certificato può essere valido; nel Web il SAN è particolarmente rilevante.",
+      "detail": "Il client deve confrontare il nome del servizio contattato con i nomi coperti dal certificato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Verificare soltanto Issuer senza controllare l’hostname.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.2, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q132",
+      "topicId": "cyber-c03-t11",
+      "question": "Che cosa indicano Issuer e Serial Number in X.509?",
+      "answer": "Issuer identifica l’emittente; Serial Number identifica il certificato nell’ambito della CA che l’ha emesso.",
+      "detail": "Sono campi distinti da Subject, che descrive il soggetto certificato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere seriale del certificato con chiave pubblica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.2, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q133",
+      "topicId": "cyber-c03-t11",
+      "question": "Quale funzione hanno Not Before e Not After?",
+      "answer": "Delimitano l’intervallo temporale nel quale il certificato è valido, secondo le regole previste.",
+      "detail": "Un certificato non ancora valido o già scaduto non supera il controllo del periodo; il superamento di tale controllo non garantisce però assenza di revoca.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare la scadenza futura prova sufficiente di affidabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.2, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q134",
+      "topicId": "cyber-c03-t11",
+      "question": "Che cosa contiene il campo Subject Public Key Info?",
+      "answer": "La chiave pubblica del soggetto e le informazioni sull’algoritmo associato.",
+      "detail": "Non contiene la corrispondente chiave privata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che il campo pubblico contenga tutto il materiale della coppia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.2, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q135",
+      "topicId": "cyber-c03-t11",
+      "question": "A cosa servono Signature Algorithm e firma della CA?",
+      "answer": "Permettono di verificare che il certificato sia stato firmato dall’emittente previsto con lo schema indicato.",
+      "detail": "Questo è uno dei controlli necessari, ma non esaurisce verifica di identità, validità e vincoli d’uso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che la sola verifica della firma renda il certificato idoneo per qualsiasi servizio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.2, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q136",
+      "topicId": "cyber-c03-t11",
+      "question": "Che cosa indicano Basic Constraints e Key Usage?",
+      "answer": "Se il certificato può essere utilizzato come CA e quali impieghi della chiave sono consentiti.",
+      "detail": "Impediscono di trattare indiscriminatamente un certificato di servizio come autorità emittente, o viceversa.",
+      "example": "Un certificato di server non è automaticamente autorizzato a firmare certificati come CA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ignorare vincoli d’uso nella validazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.2, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q137",
+      "topicId": "cyber-c03-t11",
+      "question": "In che modo può essere verificato il revocation status di un certificato?",
+      "answer": "Tramite meccanismi previsti dal contesto come CRL o OCSP.",
+      "detail": "Il controllo serve a rilevare certificati da non considerare affidabili anche prima della loro scadenza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare «non scaduto» equivalente a «non revocato».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.2, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q138",
+      "topicId": "cyber-c03-t12",
+      "question": "Che cos’è una CSR (Certificate Signing Request)?",
+      "answer": "Una richiesta di certificato che contiene le informazioni da certificare e materiale utile a dimostrare il possesso della chiave privata corrispondente, senza trasmettere la privata alla CA.",
+      "detail": "La chiave privata deve rimanere sotto il controllo del titolare; la pubblica può essere inclusa nella richiesta.",
+      "example": "La richiesta alla CA contiene la chiave pubblica e le informazioni per l’emissione, non la chiave privata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Spedire la chiave privata alla CA insieme alla CSR.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.3, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q139",
+      "topicId": "cyber-c03-t12",
+      "question": "Quali sono le fasi generali di emissione di un certificato?",
+      "answer": "Generare una coppia di chiavi, creare CSR, sottoporla alla CA, completare le verifiche, ricevere il certificato firmato e installarlo con eventuali intermedi.",
+      "detail": "Il client verifica la catena quando stabilisce una connessione con il servizio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che la CSR, da sola, sia già un certificato emesso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.3, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q140",
+      "topicId": "cyber-c03-t12",
+      "question": "Perché durante l’installazione possono essere necessari certificati intermedi?",
+      "answer": "Per permettere ai client di costruire un percorso di certificazione dall’identità del server a una radice attendibile.",
+      "detail": "La catena incompleta può impedire la validazione anche quando il certificato finale è corretto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Installare solo il certificato finale senza considerare il percorso di fiducia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.3, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q141",
+      "topicId": "cyber-c03-t12",
+      "question": "Perché un certificato può essere revocato prima della scadenza?",
+      "answer": "Perché la chiave privata può essere compromessa o il titolare può non essere più autorizzato a usarlo.",
+      "detail": "La revoca è una modifica dello stato di affidabilità distinta dal termine naturale del periodo di validità.",
+      "example": "Un certificato deve poter perdere la fiducia dopo compromissione della chiave privata, anche prima di Not After.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Supporre che finché non scade la chiave possa sempre essere considerata attendibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.4, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q142",
+      "topicId": "cyber-c03-t12",
+      "question": "Che cos’è una CRL?",
+      "answer": "Una Certificate Revocation List: elenco firmato dalla CA che comunica certificati revocati.",
+      "detail": "La sua utilità dipende anche dall’aggiornamento e dall’effettiva consultazione del client.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare una lista non aggiornata una prova definitiva di validità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.4, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q143",
+      "topicId": "cyber-c03-t12",
+      "question": "Che cos’è OCSP?",
+      "answer": "Online Certificate Status Protocol: meccanismo per ottenere informazioni sullo stato di revoca di un certificato.",
+      "detail": "È un’alternativa o integrazione ai meccanismi basati su liste, secondo le scelte dell’infrastruttura e dell’applicazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confonderlo con l’algoritmo di firma del certificato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.4, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q144",
+      "topicId": "cyber-c03-t12",
+      "question": "Perché le procedure di revoca non sono una garanzia assoluta?",
+      "answer": "Perché richiedono distribuzione tempestiva e controlli coerenti da parte dei client.",
+      "detail": "Una revoca non rilevata può lasciare un certificato apparentemente regolare pur non essendo più affidabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare il solo invio di una revoca come mitigazione sufficiente senza verificarne l’efficacia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.4, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q145",
+      "topicId": "cyber-c03-t12",
+      "question": "Quale riferimento standard il manuale cita per struttura e validazione X.509?",
+      "answer": "RFC 5280.",
+      "detail": "Il capitolo lo presenta come riferimento per i certificati e i relativi controlli di validazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere RFC 5280 con la specifica di un cifrario a blocchi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.4, pagina PDF 45"
+    },
+    {
+      "id": "cyber-c03-q146",
+      "topicId": "cyber-c03-t12",
+      "question": "Che cos’è una PKI privata aziendale?",
+      "answer": "Un’infrastruttura interna che emette certificati per server, utenti o dispositivi dell’organizzazione.",
+      "detail": "I client devono fidarsi esplicitamente della relativa CA; i browser pubblici potrebbero non riconoscerla automaticamente.",
+      "example": "Una CA interna può emettere certificati per server di laboratorio e applicazioni aziendali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assumere che qualunque certificato aziendale sia attendibile su Internet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.5, pagina PDF 46"
+    },
+    {
+      "id": "cyber-c03-q147",
+      "topicId": "cyber-c03-t12",
+      "question": "Come cambia il modello di fiducia quando si usa una CA aziendale?",
+      "answer": "La fiducia nella CA privata va distribuita e configurata in modo sicuro sui client interessati.",
+      "detail": "È appropriata per sistemi interni, laboratori e ambienti controllati quando prevista dalla policy.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Installare fiducia cieca verso CA non controllate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.5, pagina PDF 46"
+    },
+    {
+      "id": "cyber-c03-q148",
+      "topicId": "cyber-c03-t12",
+      "question": "Che rapporto esiste fra OpenPGP/PGP e certificati X.509?",
+      "answer": "PGP/OpenPGP appartengono a una famiglia distinta di strumenti e formati per cifratura e firme, con strutture e modelli di fiducia differenti da X.509.",
+      "detail": "Il manuale richiama anche l’uso storico nella posta elettronica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Definire OpenPGP un semplice formato di certificato X.509.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.10.5, pagina PDF 46"
+    },
+    {
+      "id": "cyber-c03-q149",
+      "topicId": "cyber-c03-t13",
+      "question": "Che cosa significa encryption at rest?",
+      "answer": "Proteggere crittograficamente dati archiviati su dischi, file, database, backup, dispositivi rimovibili e altri supporti.",
+      "detail": "È complementare alla cifratura in transito, che protegge il canale di comunicazione e non necessariamente gli archivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare HTTPS sufficiente a proteggere i file a riposo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.11, pagina PDF 46"
+    },
+    {
+      "id": "cyber-c03-q150",
+      "topicId": "cyber-c03-t13",
+      "question": "Quale minaccia mitiga tipicamente la cifratura completa del disco?",
+      "answer": "La lettura dei dati da un supporto perso o sottratto, per esempio con dispositivo spento.",
+      "detail": "Non impedisce necessariamente che un utente autenticato legga il contenuto mentre il sistema è in funzione.",
+      "example": "Un notebook rubato mentre è spento può avere i dati protetti dalla cifratura del disco.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare disk encryption come controllo applicativo dei permessi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.11, pagina PDF 46"
+    },
+    {
+      "id": "cyber-c03-q151",
+      "topicId": "cyber-c03-t13",
+      "question": "Che cos’è TDE e quale limite possiede?",
+      "answer": "Transparent Data Encryption è una cifratura trasparente del DBMS che protegge determinate esposizioni dei file di memorizzazione.",
+      "detail": "Non impedisce a un’applicazione legittimamente connessa di leggere i dati che il DBMS le restituisce in chiaro.",
+      "example": "La cifratura dei file di database non impedisce a un’applicazione con permessi validi di leggere i valori restituiti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare TDE come sostituto delle autorizzazioni applicative.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.11, pagina PDF 46"
+    },
+    {
+      "id": "cyber-c03-q152",
+      "topicId": "cyber-c03-t13",
+      "question": "Quale vantaggio e quale complessità ha la cifratura applicativa di campi o colonne?",
+      "answer": "Può proteggere informazioni in modo più granulare, ma richiede maggiore cura su gestione delle chiavi e sulle funzioni di interrogazione dei dati.",
+      "detail": "La scelta del livello di cifratura cambia il tipo di minaccia mitigata e l’impatto sull’applicazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che una cifratura più granulare sia priva di costi progettuali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.11, pagina PDF 46"
+    },
+    {
+      "id": "cyber-c03-q153",
+      "topicId": "cyber-c03-t13",
+      "question": "Perché cifratura in transito e cifratura a riposo sono complementari?",
+      "answer": "Perché dati trasmessi e dati archiviati possono essere compromessi in momenti e condizioni differenti.",
+      "detail": "La presenza di TLS non impedisce il furto di un backup; la cifratura del backup non protegge una comunicazione non cifrata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Applicare protezione a una sola fase del ciclo dei dati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.11, pagina PDF 46"
+    },
+    {
+      "id": "cyber-c03-q154",
+      "topicId": "cyber-c03-t13",
+      "question": "Quali approcci architetturali di cifratura a riposo presenta il manuale?",
+      "answer": "Cifratura a livello server/applicazione, mediante appliance specializzate oppure attraverso servizi gestiti di cifratura e gestione delle chiavi.",
+      "detail": "Ogni opzione cambia prestazioni, trasparenza applicativa, isolamento delle chiavi e capacità di audit.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confrontare le soluzioni solo sul nome dell’algoritmo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.11.1, pagina PDF 46"
+    },
+    {
+      "id": "cyber-c03-q155",
+      "topicId": "cyber-c03-t13",
+      "question": "Perché la protezione dei backup deve far parte del progetto crittografico?",
+      "answer": "Perché copie e procedure di recupero possono esporre gli stessi dati, ed è necessario poter ripristinare i servizi mantenendo protette e disponibili le chiavi.",
+      "detail": "La cifratura non è completa senza considerare accessi, conservazione del segreto e recovery.",
+      "example": "Una copia non cifrata del database può divulgare dati che sono cifrati nell’archivio principale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Cifrare il database principale lasciando i backup leggibili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.11.1, pagina PDF 46"
+    },
+    {
+      "id": "cyber-c03-q156",
+      "topicId": "cyber-c03-t13",
+      "question": "Quale rischio deriva dalla conservazione congiunta di dati cifrati e relative chiavi senza adeguate misure?",
+      "answer": "Un attaccante che acquisisce entrambi può decifrare il contenuto e neutralizzare la protezione.",
+      "detail": "Il progetto deve decidere chi accede alle chiavi e in quali sistemi si eseguono le operazioni crittografiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Conservare chiavi e dati senza separazioni e controlli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.11.1, pagina PDF 46"
+    },
+    {
+      "id": "cyber-c03-q157",
+      "topicId": "cyber-c03-t13",
+      "question": "Perché la cifratura a riposo non sostituisce il controllo degli accessi?",
+      "answer": "Perché un’applicazione autorizzata può ottenere dati già decifrati, e una sua vulnerabilità può esporli all’attaccante.",
+      "detail": "Il manuale cita SQL injection, autorizzazioni, auditing, patching e protezione delle API come difese comunque necessarie.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affidare la sicurezza dei dati esclusivamente a TDE o disk encryption.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.11.2, pagina PDF 46"
+    },
+    {
+      "id": "cyber-c03-q158",
+      "topicId": "cyber-c03-t13",
+      "question": "Che cosa dimostra l’esempio della SQL injection su un’applicazione che usa dati cifrati?",
+      "answer": "Che la cifratura dei file sottostanti non impedisce a un’applicazione vulnerabile di restituire dati in chiaro dopo la normale decifratura.",
+      "detail": "Occorrono query sicure, permessi appropriati e difesa a più livelli.",
+      "example": "Una query malevola può ottenere dati che il DBMS rende già in chiaro all’applicazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che cifrare le tabelle elimini le vulnerabilità applicative.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.11.2, pagina PDF 46"
+    },
+    {
+      "id": "cyber-c03-q159",
+      "topicId": "cyber-c03-t14",
+      "question": "Perché normalmente le password non devono essere conservate con cifratura reversibile?",
+      "answer": "Perché il server deve verificarne la conoscenza, non ricostruire il testo originale.",
+      "detail": "È preferibile memorizzare verificatori prodotti da funzioni di password hashing dedicate e parametri necessari alla verifica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Conservare password in chiaro o in forma reversibile senza necessità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.12, pagina PDF 47"
+    },
+    {
+      "id": "cyber-c03-q160",
+      "topicId": "cyber-c03-t14",
+      "question": "Che cos’è il salt nel password hashing?",
+      "answer": "Un valore casuale specifico per ogni credenziale, conservato insieme al risultato del password hashing.",
+      "detail": "Rende diversi i verificatori di password uguali e ostacola tabelle precalcolate. Non è un segreto che debba rimanere nascosto.",
+      "example": "Due utenti con password identiche devono ottenere verificatori diversi grazie a salt differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare lo stesso salt fisso per tutti o confonderlo con una chiave segreta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.12, pagina PDF 47"
+    },
+    {
+      "id": "cyber-c03-q161",
+      "topicId": "cyber-c03-t14",
+      "question": "Quali dati deve conservare un sistema per verificare correttamente una password?",
+      "answer": "Il verificatore/hash dedicato, il salt, l’identificativo dell’algoritmo e i parametri di costo.",
+      "detail": "La password originale non va conservata; i dati registrati devono consentire il ricalcolo in fase di autenticazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Salvare la password in chiaro accanto all’hash «per comodità».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.12, pagina PDF 47"
+    },
+    {
+      "id": "cyber-c03-q162",
+      "topicId": "cyber-c03-t14",
+      "question": "Perché SHA-256 da solo non è adeguato come sistema di password storage?",
+      "answer": "Perché è progettato per essere veloce, favorendo anche gli attaccanti che provano moltissime password dopo il furto del database.",
+      "detail": "I verificatori di password richiedono schemi intenzionalmente costosi per rendere oneroso l’attacco offline.",
+      "example": "Un attaccante che ruba l’archivio degli hash può testare rapidamente moltissime candidate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Equiparare la robustezza generica di SHA-256 all’adeguatezza nel password hashing.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.12.1, pagina PDF 47"
+    },
+    {
+      "id": "cyber-c03-q163",
+      "topicId": "cyber-c03-t14",
+      "question": "Quali esempi di algoritmi dedicati al password hashing cita il manuale?",
+      "answer": "Argon2id, scrypt, bcrypt e PBKDF2.",
+      "detail": "Parametri e proprietà differiscono; il manuale riporta la preferenza OWASP per Argon2id quando disponibile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare un hash veloce senza parametri di costo come equivalente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.12.1, pagina PDF 47"
+    },
+    {
+      "id": "cyber-c03-q164",
+      "topicId": "cyber-c03-t14",
+      "question": "Perché i parametri di costo delle password KDF vanno scelti e aggiornati?",
+      "answer": "Perché determinano il lavoro richiesto per ogni tentativo e devono restare adeguati all’evoluzione della tecnologia e dei requisiti operativi.",
+      "detail": "Lo scopo è rendere più onerosa la ricerca offline senza compromettere eccessivamente l’uso legittimo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Impostare costi una volta e ignorare ogni evoluzione delle risorse computazionali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.12.1, pagina PDF 47"
+    },
+    {
+      "id": "cyber-c03-q165",
+      "topicId": "cyber-c03-t14",
+      "question": "Qual è la procedura corretta di registrazione di una password?",
+      "answer": "Ricevere la password su canale protetto, generare salt specifico, applicare password hashing dedicato con parametri di costo e memorizzare solo verificatore e metadati necessari.",
+      "detail": "La password in chiaro dovrebbe essere trattata in memoria soltanto per il tempo necessario.",
+      "example": "Il server salva salt, identificativo algoritmo, parametri e verificatore, non la password originale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Conservare testo originale o salt riutilizzato per tutti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.12.2, pagina PDF 47"
+    },
+    {
+      "id": "cyber-c03-q166",
+      "topicId": "cyber-c03-t14",
+      "question": "Perché il salt deve essere generato specificamente per la credenziale?",
+      "answer": "Per differenziare i verificatori anche di password identiche e ostacolare attacchi che riutilizzano risultati precalcolati.",
+      "detail": "Il salt deve essere casuale e associato al verificatore per la successiva verifica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Impostare salt uguale al nome dell’utente o a una costante universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.12.2, pagina PDF 47"
+    },
+    {
+      "id": "cyber-c03-q167",
+      "topicId": "cyber-c03-t14",
+      "question": "Come verifica il server una password durante il login?",
+      "answer": "Riceve la password su canale protetto, recupera salt e parametri, ricalcola il verificatore e confronta i valori in modo sicuro.",
+      "detail": "La verifica positiva attesta la conoscenza della password secondo il sistema; non richiede recuperare la password originale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Tentare di decifrare un hash per confrontare password.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.12.3, pagina PDF 47"
+    },
+    {
+      "id": "cyber-c03-q168",
+      "topicId": "cyber-c03-t14",
+      "question": "Perché il confronto del verificatore va eseguito in modo sicuro?",
+      "answer": "Per evitare che la procedura di autenticazione introduca debolezze durante il controllo della prova di conoscenza.",
+      "detail": "Il manuale include esplicitamente il confronto sicuro e il rifiuto quando non corrisponde.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Accettare la credenziale anche se il verificatore non corrisponde.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.12.3, pagina PDF 47"
+    },
+    {
+      "id": "cyber-c03-q169",
+      "topicId": "cyber-c03-t14",
+      "question": "Che cosa distingue salt e pepper?",
+      "answer": "Il salt è unico per credenziale e non segreto; il pepper è un segreto aggiuntivo condiviso, se previsto, custodito separatamente dal database.",
+      "detail": "Il pepper può essere protetto mediante HSM o sistema di segreti e introduce necessità di gestione e rotazione.",
+      "example": "Il salt può essere nel database, mentre il pepper può essere protetto in un HSM separato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostituire il salt con il pepper o salvare il pepper in chiaro nel database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.12.4, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q170",
+      "topicId": "cyber-c03-t14",
+      "question": "Perché il pepper non elimina la necessità del salt?",
+      "answer": "Perché svolgono funzioni differenti: il salt differenzia i verificatori e ostacola precalcoli; il pepper aggiunge un segreto custodito separatamente.",
+      "detail": "Il sistema deve gestire correttamente entrambi se l’architettura utilizza un pepper.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare un solo segreto condiviso e rinunciare ai salt individuali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.12.4, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q171",
+      "topicId": "cyber-c03-t14",
+      "question": "Quali altre misure sono importanti oltre al password hashing?",
+      "answer": "Proteggere il canale, limitare tentativi automatizzati, gestire gli account, promuovere password adeguate e adottare autenticazione più robusta dove necessaria.",
+      "detail": "Una KDF sicura non è l’intero sistema di autenticazione: contano anche le altre componenti del processo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che il rischio di furto account sia risolto completamente con Argon2id.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.12.4, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q172",
+      "topicId": "cyber-c03-t15",
+      "question": "Quali esigenze di sicurezza emergono nell’applicazione aziendale per valutare offerte commerciali?",
+      "answer": "Proteggere il traffico browser–server, i dati economici archiviati, le password degli utenti e l’integrità/autenticità dei report approvati.",
+      "detail": "Il manuale associa a ciascuna esigenza un meccanismo specifico: TLS, cifratura a riposo, password hashing e firma digitale.",
+      "example": "Nel portale aziendale TLS protegge il traffico, una firma protegge un report approvato e una KDF protegge gli hash password.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Cercare un solo algoritmo che risolva tutte le esigenze.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.13, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q173",
+      "topicId": "cyber-c03-t15",
+      "question": "Quale meccanismo il manuale suggerisce per proteggere dati confidenziali trasmessi su rete pubblica?",
+      "answer": "TLS 1.3 con autenticazione del server, utilizzato normalmente nel canale HTTPS.",
+      "detail": "Protegge il trasporto, ma non risolve vulnerabilità dell’applicazione come SQL injection.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che HTTPS renda sicuro anche il codice applicativo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.13, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q174",
+      "topicId": "cyber-c03-t15",
+      "question": "Quale strategia è proposta per proteggere file o database rubati?",
+      "answer": "AES con modalità appropriata e gestione sicura delle chiavi, secondo il livello di cifratura adottato.",
+      "detail": "La protezione dipende dalle condizioni di compromissione: se l’avversario ottiene anche la chiave, la difesa può decadere.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitarsi a dire «salviamo il file in formato crittografico» senza considerare la gestione delle chiavi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.13, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q175",
+      "topicId": "cyber-c03-t15",
+      "question": "Che cosa si deve usare per evitare il recupero delle password originali dall’archivio?",
+      "answer": "Una funzione dedicata di password hashing con salt individuale e parametri appropriati.",
+      "detail": "Rallenta le prove offline su un database eventualmente sottratto, senza impedire in assoluto ogni furto di account.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Cifrare reversibilmente le password o usare SHA-256 semplice.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.13, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q176",
+      "topicId": "cyber-c03-t15",
+      "question": "Che cosa occorre per verificare che un report sia stato approvato e non modificato?",
+      "answer": "Firma digitale, con verifica della chiave pubblica associata al firmatario.",
+      "detail": "La firma non nasconde il documento e non prova automaticamente la veridicità delle cifre del report.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Utilizzare soltanto un hash non autenticato come attestazione di approvazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.13, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q177",
+      "topicId": "cyber-c03-t15",
+      "question": "Per condividere dati cifrati con più destinatari, quale modello propone il manuale?",
+      "answer": "L’approccio ibrido o cifratura a busta, che combina una chiave simmetrica per i dati e meccanismi adatti a proteggerla per i destinatari.",
+      "detail": "La gestione delle chiavi e l’identificazione dei destinatari sono parti essenziali del disegno.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Cifrare un grande file interamente con ogni chiave pubblica senza un modello appropriato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.13, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q178",
+      "topicId": "cyber-c03-t15",
+      "question": "Perché TLS, TDE, hash e firma non si sostituiscono a vicenda nel caso aziendale?",
+      "answer": "Proteggono proprietà differenti: TLS il canale, TDE certe esposizioni a riposo, hash l’impronta e firma origine/integrità dell’approvazione.",
+      "detail": "Restano necessari autorizzazione, validazione degli input, audit e altri controlli indipendenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che attivare un unico meccanismo elimini ogni altra minaccia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.13, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q179",
+      "topicId": "cyber-c03-t15",
+      "question": "Come risponderesti al manager che propone solo TDE per proteggere il portale?",
+      "answer": "TDE può limitare l’esposizione dei file di database, ma non impedisce a un’applicazione con credenziali valide o vulnerabile di accedere ai dati decifrati.",
+      "detail": "La soluzione richiede anche sicurezza applicativa, permessi, rete, monitoraggio e gestione delle chiavi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere cifratura delle tabelle con autorizzazione delle query.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.13, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q180",
+      "topicId": "cyber-c03-t16",
+      "question": "Qual è la distinzione fondamentale fra crittografia simmetrica e asimmetrica da ricordare all’esame?",
+      "answer": "La simmetrica è efficiente per i dati voluminosi; l’asimmetrica usa coppie pubblica/privata e agevola accordi sulle chiavi e firme.",
+      "detail": "I due approcci si combinano spesso invece di escludersi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dichiarare che uno dei due sostituisca sempre l’altro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.14, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q181",
+      "topicId": "cyber-c03-t16",
+      "question": "Perché non devi definire una firma come «messaggio cifrato con chiave privata»?",
+      "answer": "Perché gli schemi di firma moderni sono algoritmi specifici verificabili con chiave pubblica, non genericamente cifrature reversibili.",
+      "detail": "La firma non dà, da sola, confidenzialità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare una semplificazione RSA storica per descrivere ECDSA o EdDSA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.14, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q182",
+      "topicId": "cyber-c03-t16",
+      "question": "Perché una chiave pubblica può essere pubblica ma non può essere accettata senza verifica?",
+      "answer": "Perché la sua autenticità rispetto al soggetto dichiarato è essenziale contro sostituzioni e impersonificazioni.",
+      "detail": "La PKI e altre forme di verifica affidabile del legame chiave-identità risolvono questo problema.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare la pubblicità della chiave come prova della sua legittimità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.14, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q183",
+      "topicId": "cyber-c03-t16",
+      "question": "Perché scadenza futura e firma valida della CA non bastano a considerare affidabile un certificato?",
+      "answer": "Perché bisogna verificare nomi, usi consentiti, catena e stato di revoca secondo il contesto.",
+      "detail": "Un certificato può essere stato revocato oppure non coprire l’hostname richiesto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Fermare la validazione a Not After.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.14, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q184",
+      "topicId": "cyber-c03-t16",
+      "question": "Perché il salt non va confuso con un segreto crittografico?",
+      "answer": "Perché è un valore individuale non segreto che contrasta i precalcoli e rende distinti i verificatori; il costo delle prove dipende anche dalla password KDF.",
+      "detail": "Il pepper, ove usato, è invece un segreto aggiuntivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Nascondere il salt come unica misura o usare un hash troppo veloce.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.14, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q185",
+      "topicId": "cyber-c03-t16",
+      "question": "Qual è il messaggio generale del manuale sulla scelta degli algoritmi?",
+      "answer": "La sicurezza dipende dallo schema completo, dai parametri, dalle chiavi e dall’implementazione, non dal solo nome dell’algoritmo.",
+      "detail": "AES usato in ECB o GCM con nonce ripetuto può essere configurato in modo pericoloso nonostante sia uno standard robusto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare «usa AES» come garanzia sufficiente di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.14, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q186",
+      "topicId": "cyber-c03-t16",
+      "question": "Perché la cifratura a riposo non elimina backup, audit e patch management?",
+      "answer": "Perché protegge solo determinate modalità di esposizione e non risolve abuso di credenziali, vulnerabilità applicative, incidenti o necessità di recupero.",
+      "detail": "Resta indispensabile una difesa coordinata a più livelli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Eliminare i controlli operativi dopo avere attivato TDE.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.14, pagina PDF 48"
+    },
+    {
+      "id": "cyber-c03-q187",
+      "topicId": "cyber-c03-t17",
+      "question": "Nel glossario, come distingui plaintext, ciphertext e key?",
+      "answer": "Plaintext è il dato in chiaro; ciphertext è il prodotto della cifratura; key è il valore che ne governa la trasformazione.",
+      "detail": "Le tre voci compongono il lessico minimo per descrivere correttamente una cifratura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare «chiave» come sinonimo del messaggio cifrato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.15, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q188",
+      "topicId": "cyber-c03-t17",
+      "question": "Qual è il significato operativo di nonce/IV e AEAD?",
+      "answer": "Il nonce/IV è un valore usato secondo lo schema per differenziare o rendere sicure le operazioni; AEAD è una cifratura autenticata che può includere associated data.",
+      "detail": "In GCM la gestione del nonce è particolarmente critica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assumere che il nonce possa essere riutilizzato liberamente con la stessa chiave.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.15, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q189",
+      "topicId": "cyber-c03-t17",
+      "question": "Come distingui digest, MAC e digital signature nel glossario?",
+      "answer": "Digest: impronta hash; MAC: codice autenticato con segreto condiviso; firma digitale: generata con chiave privata e verificata con pubblica.",
+      "detail": "Sono tre oggetti diversi, con proprietà e modelli di fiducia differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare un digest isolato come una firma.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.15, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q190",
+      "topicId": "cyber-c03-t17",
+      "question": "Quali ruoli distinti svolgono CA, CSR e PKI?",
+      "answer": "CA emette e firma certificati; CSR richiede un certificato; PKI è l’infrastruttura di gestione e validazione delle chiavi pubbliche.",
+      "detail": "Il certificato emesso contiene la pubblica, non la privata dell’utente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiare la richiesta CSR con un certificato già valido.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.15, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q191",
+      "topicId": "cyber-c03-t17",
+      "question": "Che cosa significano password KDF e forward secrecy?",
+      "answer": "Password KDF: funzione appositamente costosa per verificatori delle password; forward secrecy: una compromissione futura della chiave a lungo termine non basta a decifrare sessioni passate.",
+      "detail": "Si tratta di proprietà in ambiti diversi, archiviazione credenziali e protocolli di accordo sulle chiavi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare forward secrecy una proprietà del password hashing.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.15, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q192",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: come collegheresti in un discorso crittografia, riservatezza, integrità e autenticazione?",
+      "answer": "La cifratura protegge la riservatezza; MAC e firme supportano integrità e autenticazione dell’origine; gli accordi sulle chiavi stabiliscono segreti da utilizzare nei protocolli.",
+      "detail": "La crittografia offre servizi differenti e i meccanismi vanno selezionati rispetto all’obiettivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Rispondere con la sola definizione di cifratura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q193",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: spiega come le proprietà di Kerckhoffs, Shannon e del one-time pad si collegano senza confondersi.",
+      "answer": "Kerckhoffs richiede robustezza anche con algoritmo noto; confusione/diffusione sono criteri dei cifrari; il one-time pad dà segretezza perfetta solo con chiave casuale, segreta, lunga e monouso.",
+      "detail": "Sono principi e casi teorici differenti, da collocare in una spiegazione coerente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare l’effetto valanga come condizione sufficiente per ottenere segretezza perfetta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q194",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: come confronteresti DES, 3DES, IDEA e AES per motivare una scelta moderna?",
+      "answer": "DES/3DES/IDEA sono riferimenti storici con blocchi da 64 bit; AES usa blocchi da 128 bit, chiavi da 128/192/256 bit e 10/12/14 round.",
+      "detail": "Per nuovi sistemi il manuale presenta AES come riferimento e richiede modalità adeguate, ad esempio GCM quando serve cifratura autenticata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare DES perché noto o scegliere AES-ECB per la semplicità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q195",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: hai un algoritmo robusto ma un IV riutilizzato. Che cosa concludi?",
+      "answer": "Che l’implementazione può perdere proprietà fondamentali nonostante l’algoritmo sia robusto: in AES-GCM il nonce non va riutilizzato con la stessa chiave.",
+      "detail": "Occorre esaminare lo schema completo: modalità, segreti, nonce e tag.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che AES garantisca sempre protezione a prescindere dall’uso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q196",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: come risponderesti a «come fanno due sistemi a cifrare senza aver condiviso prima la chiave?»",
+      "answer": "Possono utilizzare un accordo come Diffie–Hellman autenticato per derivare un segreto condiviso, poi cifrare i dati con chiavi simmetriche.",
+      "detail": "Nel modello ibrido si evita di inviare in chiaro la chiave, ma l’autenticazione resta necessaria contro MITM.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che DH non abbia bisogno di verificare gli interlocutori.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q197",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: perché è importante la forward secrecy di ECDHE?",
+      "answer": "Perché segreti temporanei correttamente usati possono proteggere sessioni passate registrate anche se in futuro viene compromessa una chiave a lungo termine.",
+      "detail": "La garanzia dipende da protocollo, autenticazione e gestione delle chiavi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretarla come protezione assoluta contro la compromissione attuale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q198",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: dimostra la differenza fra preimage, second-preimage e collision resistance.",
+      "answer": "Preimage parte da un digest fissato; second-preimage parte da un messaggio fissato; collision cerca due messaggi qualsiasi con lo stesso hash.",
+      "detail": "La collision resistance richiede un ordine di prove più basso nel modello ideale a n bit per il birthday bound.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere il recupero di un messaggio fissato con la ricerca di una coppia arbitraria.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q199",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: perché non basta mandare un documento con il suo SHA-256?",
+      "answer": "Perché chi lo modifica può ricalcolare l’hash; serve autenticazione del riferimento con HMAC, firma o canale autenticato.",
+      "detail": "L’hash semplice non lega il messaggio all’identità del mittente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare il semplice confronto di digest come prova del firmatario.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q200",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: in quale situazione preferiresti una firma rispetto a un MAC?",
+      "answer": "Quando serve verifica mediante chiave pubblica e un’evidenza attribuibile al firmatario, anziché un codice che entrambi i possessori del segreto condiviso possono generare.",
+      "detail": "La firma richiede verifica affidabile della chiave pubblica e valutazione del contesto di attribuzione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che il MAC fornisca non ripudio forte verso terzi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q201",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: come verifica il browser un certificato server e quali errori possono interrompere la fiducia?",
+      "answer": "Valida la catena verso la radice fidata, le firme, il nome del server, gli usi ammessi, la validità temporale e, secondo le regole, la revoca.",
+      "detail": "Una firma corretta non compensa un hostname sbagliato o un certificato revocato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Controllare solo la scadenza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 49"
+    },
+    {
+      "id": "cyber-c03-q202",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: descrivi in sequenza come si ottiene e si verifica un certificato X.509.",
+      "answer": "Il titolare genera chiavi e CSR senza divulgare la privata; la CA effettua verifiche, emette e firma il certificato; il servizio lo installa e il client valida la catena.",
+      "detail": "Il processo distingue autenticità della chiave, autorità emittente e controlli di utilizzo/revoca.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere CSR, certificato emesso e trust anchor.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 50"
+    },
+    {
+      "id": "cyber-c03-q203",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: perché la protezione delle password non deve basarsi su semplice SHA-256?",
+      "answer": "Perché SHA-256 è veloce, agevolando molte prove offline; occorre una password KDF appositamente costosa, come Argon2id, con salt e parametri adeguati.",
+      "detail": "Il server salva un verificatore e non deve ricostruire la password.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Conservare password cifrate reversibilmente o senza salt individuale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 50"
+    },
+    {
+      "id": "cyber-c03-q204",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: cosa distingue il salt da un pepper e quale elemento puoi conservare nel database?",
+      "answer": "Il salt è casuale, individuale e non segreto; il pepper è un segreto aggiuntivo custodito separatamente, quando utilizzato.",
+      "detail": "Nel database si possono conservare salt, algoritmo, parametri di costo e verificatore, non la password originale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Nascondere il salt al posto di proteggere il pepper.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 50"
+    },
+    {
+      "id": "cyber-c03-q205",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: il DBMS cifra i file con TDE. Quale rischio rimane aperto?",
+      "answer": "Un’applicazione vulnerabile o con autorizzazioni eccessive può leggere dati già decifrati dal DBMS.",
+      "detail": "Servono controlli di accesso, query sicure, auditing e gestione delle vulnerabilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che la cifratura del disco prevenga SQL injection.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 50"
+    },
+    {
+      "id": "cyber-c03-q206",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: progettando un portale commerciale, quali strumenti useresti per canale, archivi, password e report?",
+      "answer": "TLS/HTTPS per il canale; cifratura adeguata e key management per archivi; password KDF con salt per credenziali; firma digitale per report approvati.",
+      "detail": "Una strategia corretta combina protezioni diverse e ne chiarisce esplicitamente i limiti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scegliere una sola tecnica per risolvere ogni problema.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 50"
+    },
+    {
+      "id": "cyber-c03-q207",
+      "topicId": "cyber-c03-t18",
+      "question": "Orale: quale messaggio generale sintetizza l’intero Capitolo 3?",
+      "answer": "Le proprietà di sicurezza derivano dalla combinazione coerente di algoritmo, schema, gestione delle chiavi, verifica delle identità e implementazione, non dal solo nome della tecnologia.",
+      "detail": "Il manuale sottolinea le cautele su AES-GCM, PKI, password, firma e cifratura a riposo come applicazioni del medesimo principio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Definire una tecnologia sicura soltanto perché usa un algoritmo noto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 3, §3.16, pagina PDF 50"
+    }
+  ]
+}

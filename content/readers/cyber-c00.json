@@ -1,0 +1,100 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Reti, nodi e apparati",
+      "concept": "Reti, nodi e apparati",
+      "topics": [
+        "cyber-c00-t01",
+        "cyber-c00-t02",
+        "cyber-c00-t03"
+      ],
+      "pages": [
+        2,
+        3
+      ],
+      "blocks": [
+        {
+          "text": "Una rete mette in comunicazione nodi che scambiano dati seguendo regole comuni. La NIC collega l’host al mezzo, lo switch inoltra frame nella LAN e il router mette in comunicazione reti IP distinte. LAN, WAN e WLAN descrivono estensioni o mezzi diversi."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Modelli a livelli e incapsulamento",
+      "concept": "Modelli a livelli e incapsulamento",
+      "topics": [
+        "cyber-c00-t04",
+        "cyber-c00-t05",
+        "cyber-c00-t06",
+        "cyber-c00-t07"
+      ],
+      "pages": [
+        3,
+        4
+      ],
+      "blocks": [
+        {
+          "text": "OSI è un modello di riferimento; TCP/IP descrive la famiglia di protocolli Internet. Ogni livello fornisce un servizio a quello superiore e usa quello inferiore. Nell’incapsulamento, le intestazioni aggiunte dai livelli permettono al destinatario di ricostruire i dati e consegnarli al processo giusto."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "MAC, IP e porte",
+      "concept": "MAC, IP e porte",
+      "topics": [
+        "cyber-c00-t08",
+        "cyber-c00-t10",
+        "cyber-c00-t11"
+      ],
+      "pages": [
+        5,
+        7
+      ],
+      "blocks": [
+        {
+          "text": "Il MAC identifica l’interfaccia nel collegamento locale, l’indirizzo IP consente l’instradamento e la porta aiuta a individuare il servizio di trasporto. Il prefisso CIDR determina la porzione di rete dell’indirizzo. In IPv4, gli indirizzi privati servono all’uso interno e non sono instradabili direttamente su Internet."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Dal client alla risorsa HTTPS",
+      "concept": "Dal client alla risorsa HTTPS",
+      "topics": [
+        "cyber-c00-t16",
+        "cyber-c00-t17",
+        "cyber-c00-t18",
+        "cyber-c00-t19"
+      ],
+      "pages": [
+        10,
+        11,
+        12
+      ],
+      "blocks": [
+        {
+          "text": "Il client risolve il nome, stabilisce la connessione e usa TLS per proteggere il canale prima di scambiare messaggi HTTP. La protezione del trasporto va affiancata a controlli sull’identità, sul server e sui dati dopo la terminazione del canale."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "1",
+      "to": "2",
+      "relation": "Le funzioni degli apparati si interpretano attraverso i livelli della rete."
+    },
+    {
+      "from": "2",
+      "to": "3",
+      "relation": "Ogni livello usa identificatori coerenti con la propria funzione."
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "relation": "Indirizzi e porte permettono di raggiungere il servizio che risponde al client."
+    }
+  ]
+}

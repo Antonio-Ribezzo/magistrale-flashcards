@@ -1,0 +1,3462 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "si",
+  "source": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14: CSS — Fogli di stile e presentazione delle pagine Web, pagine PDF 209–226. Unica fonte autorizzata; esempi ufficiali con float, correzioni e integrazioni moderne sono distinti nel contenuto del manuale.",
+  "chapter": {
+    "id": "si-c14",
+    "title": "CSS — Fogli di stile e presentazione delle pagine Web",
+    "order": 14,
+    "topics": [
+      {
+        "id": "si-c14-t01",
+        "title": "Obiettivi, prerequisiti e metodologia"
+      },
+      {
+        "id": "si-c14-t02",
+        "title": "Che cos’è CSS e come si è evoluto"
+      },
+      {
+        "id": "si-c14-t03",
+        "title": "Come associare un foglio CSS a HTML"
+      },
+      {
+        "id": "si-c14-t04",
+        "title": "Sintassi: proprietà, dichiarazioni, selettori e regole"
+      },
+      {
+        "id": "si-c14-t05",
+        "title": "Selettori fondamentali: tipo, classe, ID e struttura"
+      },
+      {
+        "id": "si-c14-t06",
+        "title": "Selettori di attributo, pseudoclassi e pseudoelementi"
+      },
+      {
+        "id": "si-c14-t07",
+        "title": "Tipi di dato, unità di misura e colori"
+      },
+      {
+        "id": "si-c14-t08",
+        "title": "Il box model: contenuto, padding, border e margin"
+      },
+      {
+        "id": "si-c14-t09",
+        "title": "Flusso normale e proprietà display"
+      },
+      {
+        "id": "si-c14-t10",
+        "title": "Float, clear e layout storico a colonne"
+      },
+      {
+        "id": "si-c14-t11",
+        "title": "Position, coordinate, z-index e contesto di sovrapposizione"
+      },
+      {
+        "id": "si-c14-t12",
+        "title": "Visibilità dei box e trasparenza"
+      },
+      {
+        "id": "si-c14-t13",
+        "title": "Font, testo, spaziature tipografiche e sfondi"
+      },
+      {
+        "id": "si-c14-t14",
+        "title": "Stilizzazione delle tabelle HTML"
+      },
+      {
+        "id": "si-c14-t15",
+        "title": "Caso guidato delle dispense: la pagina «Guida alla città»"
+      },
+      {
+        "id": "si-c14-t16",
+        "title": "Cascata, specificità, origini ed ereditarietà"
+      },
+      {
+        "id": "si-c14-t17",
+        "title": "Media Queries e responsive web design"
+      },
+      {
+        "id": "si-c14-t18",
+        "title": "Integrazione: Flexbox, Grid, custom properties e CSS modulari"
+      },
+      {
+        "id": "si-c14-t19",
+        "title": "Accessibilità, convalida, debug e manutenzione"
+      },
+      {
+        "id": "si-c14-t20",
+        "title": "Caso didattico EnerPrice: una schermata di simulazione"
+      },
+      {
+        "id": "si-c14-t21",
+        "title": "Esercizi svolti e commentati"
+      },
+      {
+        "id": "si-c14-t22",
+        "title": "Esercizi autonomi e soluzioni ragionate"
+      },
+      {
+        "id": "si-c14-t23",
+        "title": "Trenta domande di autoverifica con risposte"
+      },
+      {
+        "id": "si-c14-t24",
+        "title": "Glossario essenziale ed errori ricorrenti"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§14.1 — pagina PDF 209",
+        "cardIds": [
+          "si-c14-q001",
+          "si-c14-q002",
+          "si-c14-q003",
+          "si-c14-q004"
+        ]
+      },
+      {
+        "label": "§14.2 — pagine PDF 209–210",
+        "cardIds": [
+          "si-c14-q005",
+          "si-c14-q006",
+          "si-c14-q007",
+          "si-c14-q008",
+          "si-c14-q009",
+          "si-c14-q010",
+          "si-c14-q011"
+        ]
+      },
+      {
+        "label": "§14.3 — pagine PDF 210–211",
+        "cardIds": [
+          "si-c14-q012",
+          "si-c14-q013",
+          "si-c14-q014",
+          "si-c14-q015",
+          "si-c14-q016",
+          "si-c14-q017",
+          "si-c14-q018"
+        ]
+      },
+      {
+        "label": "§14.4 — pagina PDF 211",
+        "cardIds": [
+          "si-c14-q019",
+          "si-c14-q020",
+          "si-c14-q021",
+          "si-c14-q022",
+          "si-c14-q023",
+          "si-c14-q024",
+          "si-c14-q025",
+          "si-c14-q026",
+          "si-c14-q027"
+        ]
+      },
+      {
+        "label": "§14.5 — pagine PDF 211–212",
+        "cardIds": [
+          "si-c14-q028",
+          "si-c14-q029",
+          "si-c14-q030",
+          "si-c14-q031",
+          "si-c14-q032",
+          "si-c14-q033",
+          "si-c14-q034",
+          "si-c14-q035",
+          "si-c14-q036",
+          "si-c14-q037"
+        ]
+      },
+      {
+        "label": "§14.6 — pagina PDF 212",
+        "cardIds": [
+          "si-c14-q038",
+          "si-c14-q039",
+          "si-c14-q040",
+          "si-c14-q041",
+          "si-c14-q042",
+          "si-c14-q043",
+          "si-c14-q044",
+          "si-c14-q045",
+          "si-c14-q046"
+        ]
+      },
+      {
+        "label": "§14.7 — pagine PDF 212–213",
+        "cardIds": [
+          "si-c14-q047",
+          "si-c14-q048",
+          "si-c14-q049",
+          "si-c14-q050",
+          "si-c14-q051",
+          "si-c14-q052",
+          "si-c14-q053",
+          "si-c14-q054",
+          "si-c14-q055",
+          "si-c14-q056",
+          "si-c14-q057"
+        ]
+      },
+      {
+        "label": "§14.8 — pagina PDF 213",
+        "cardIds": [
+          "si-c14-q058",
+          "si-c14-q059",
+          "si-c14-q060",
+          "si-c14-q061",
+          "si-c14-q062",
+          "si-c14-q063",
+          "si-c14-q064",
+          "si-c14-q065",
+          "si-c14-q066",
+          "si-c14-q067",
+          "si-c14-q068"
+        ]
+      },
+      {
+        "label": "§14.9 — pagina PDF 214",
+        "cardIds": [
+          "si-c14-q069",
+          "si-c14-q070",
+          "si-c14-q071",
+          "si-c14-q072",
+          "si-c14-q073",
+          "si-c14-q074",
+          "si-c14-q075",
+          "si-c14-q076"
+        ]
+      },
+      {
+        "label": "§14.10 — pagina PDF 214",
+        "cardIds": [
+          "si-c14-q077",
+          "si-c14-q078",
+          "si-c14-q079",
+          "si-c14-q080",
+          "si-c14-q081",
+          "si-c14-q082",
+          "si-c14-q083"
+        ]
+      },
+      {
+        "label": "§14.11 — pagine PDF 214–215",
+        "cardIds": [
+          "si-c14-q084",
+          "si-c14-q085",
+          "si-c14-q086",
+          "si-c14-q087",
+          "si-c14-q088",
+          "si-c14-q089",
+          "si-c14-q090",
+          "si-c14-q091",
+          "si-c14-q092",
+          "si-c14-q093",
+          "si-c14-q094"
+        ]
+      },
+      {
+        "label": "§14.12 — pagina PDF 215",
+        "cardIds": [
+          "si-c14-q095",
+          "si-c14-q096",
+          "si-c14-q097",
+          "si-c14-q098",
+          "si-c14-q099",
+          "si-c14-q100"
+        ]
+      },
+      {
+        "label": "§14.13 — pagine PDF 215–216",
+        "cardIds": [
+          "si-c14-q101",
+          "si-c14-q102",
+          "si-c14-q103",
+          "si-c14-q104",
+          "si-c14-q105",
+          "si-c14-q106",
+          "si-c14-q107",
+          "si-c14-q108",
+          "si-c14-q109",
+          "si-c14-q110"
+        ]
+      },
+      {
+        "label": "§14.14 — pagina PDF 216",
+        "cardIds": [
+          "si-c14-q111",
+          "si-c14-q112",
+          "si-c14-q113",
+          "si-c14-q114",
+          "si-c14-q115",
+          "si-c14-q116",
+          "si-c14-q117",
+          "si-c14-q118"
+        ]
+      },
+      {
+        "label": "§14.15 — pagine PDF 216–217",
+        "cardIds": [
+          "si-c14-q119",
+          "si-c14-q120",
+          "si-c14-q121",
+          "si-c14-q122",
+          "si-c14-q123",
+          "si-c14-q124",
+          "si-c14-q125",
+          "si-c14-q126",
+          "si-c14-q127",
+          "si-c14-q128"
+        ]
+      },
+      {
+        "label": "§14.16 — pagine PDF 217–218",
+        "cardIds": [
+          "si-c14-q129",
+          "si-c14-q130",
+          "si-c14-q131",
+          "si-c14-q132",
+          "si-c14-q133",
+          "si-c14-q134",
+          "si-c14-q135",
+          "si-c14-q136",
+          "si-c14-q137",
+          "si-c14-q138",
+          "si-c14-q139",
+          "si-c14-q140",
+          "si-c14-q141",
+          "si-c14-q142",
+          "si-c14-q143"
+        ]
+      },
+      {
+        "label": "§14.17 — pagine PDF 218–219",
+        "cardIds": [
+          "si-c14-q144",
+          "si-c14-q145",
+          "si-c14-q146",
+          "si-c14-q147",
+          "si-c14-q148",
+          "si-c14-q149",
+          "si-c14-q150",
+          "si-c14-q151",
+          "si-c14-q152",
+          "si-c14-q153"
+        ]
+      },
+      {
+        "label": "§14.18 — pagine PDF 219–220",
+        "cardIds": [
+          "si-c14-q154",
+          "si-c14-q155",
+          "si-c14-q156",
+          "si-c14-q157",
+          "si-c14-q158",
+          "si-c14-q159",
+          "si-c14-q160",
+          "si-c14-q161",
+          "si-c14-q162",
+          "si-c14-q163",
+          "si-c14-q164",
+          "si-c14-q165"
+        ]
+      },
+      {
+        "label": "§14.19 — pagine PDF 220–222",
+        "cardIds": [
+          "si-c14-q166",
+          "si-c14-q167",
+          "si-c14-q168",
+          "si-c14-q169",
+          "si-c14-q170",
+          "si-c14-q171",
+          "si-c14-q172",
+          "si-c14-q173",
+          "si-c14-q174",
+          "si-c14-q175",
+          "si-c14-q176",
+          "si-c14-q177",
+          "si-c14-q178",
+          "si-c14-q179",
+          "si-c14-q180"
+        ]
+      },
+      {
+        "label": "§14.20 — pagina PDF 222",
+        "cardIds": [
+          "si-c14-q181",
+          "si-c14-q182",
+          "si-c14-q183",
+          "si-c14-q184",
+          "si-c14-q185",
+          "si-c14-q186",
+          "si-c14-q187",
+          "si-c14-q188"
+        ]
+      },
+      {
+        "label": "§14.21 — pagine PDF 222–224",
+        "cardIds": [
+          "si-c14-q189",
+          "si-c14-q190",
+          "si-c14-q191",
+          "si-c14-q192",
+          "si-c14-q193",
+          "si-c14-q194",
+          "si-c14-q195",
+          "si-c14-q196",
+          "si-c14-q197",
+          "si-c14-q198",
+          "si-c14-q199",
+          "si-c14-q200",
+          "si-c14-q201",
+          "si-c14-q202",
+          "si-c14-q203",
+          "si-c14-q204",
+          "si-c14-q205",
+          "si-c14-q206",
+          "si-c14-q207",
+          "si-c14-q208"
+        ]
+      },
+      {
+        "label": "§14.22 — pagine PDF 224–225",
+        "cardIds": [
+          "si-c14-q209",
+          "si-c14-q210",
+          "si-c14-q211",
+          "si-c14-q212",
+          "si-c14-q213",
+          "si-c14-q214",
+          "si-c14-q215",
+          "si-c14-q216",
+          "si-c14-q217",
+          "si-c14-q218"
+        ]
+      },
+      {
+        "label": "§14.23 — pagine PDF 225–226",
+        "cardIds": [
+          "si-c14-q219",
+          "si-c14-q220",
+          "si-c14-q221",
+          "si-c14-q222",
+          "si-c14-q223",
+          "si-c14-q224",
+          "si-c14-q225",
+          "si-c14-q226",
+          "si-c14-q227",
+          "si-c14-q228",
+          "si-c14-q229",
+          "si-c14-q230",
+          "si-c14-q231",
+          "si-c14-q232",
+          "si-c14-q233",
+          "si-c14-q234"
+        ]
+      },
+      {
+        "label": "§14.24 — pagina PDF 226",
+        "cardIds": [
+          "si-c14-q235",
+          "si-c14-q236",
+          "si-c14-q237",
+          "si-c14-q238",
+          "si-c14-q239",
+          "si-c14-q240",
+          "si-c14-q241",
+          "si-c14-q242",
+          "si-c14-q243"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "si-c14-q001",
+      "topicId": "si-c14-t01",
+      "question": "Quale problema risolve il CSS rispetto a HTML?",
+      "answer": "Separa contenuti e struttura semantica dalla presentazione visiva, permettendo stili diversi per la stessa pagina.",
+      "detail": "Il browser combina il DOM HTML e le regole CSS per costruire il rendering su schermo, stampa o viewport differenti.",
+      "example": "Un unico HTML di EnerPrice è leggibile su smartphone e stampabile con stili diversi.",
+      "formulas": [],
+      "connections": [
+        "Sistemi Informativi, Capitolo 13 — HTML e Unicode"
+      ],
+      "mistakes": "Non confondere HTML, CSS e logica applicativa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.1, pagina PDF 209"
+    },
+    {
+      "id": "si-c14-q002",
+      "topicId": "si-c14-t01",
+      "question": "Quali competenze operative richiede il Capitolo 14?",
+      "answer": "Scrivere regole e collegamenti CSS, usare selettori, ragionare sulla cascata, calcolare box, creare layout, media query e diagnosticare errori.",
+      "detail": "La padronanza comprende interpretare gli esempi storici del docente e spiegare quando utilizzare tecniche attuali.",
+      "example": "Spiegare perché un footer va sotto un float e come evitarlo con un layout moderno.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a copiare listati senza saper prevedere gli effetti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.1, pagina PDF 209"
+    },
+    {
+      "id": "si-c14-q003",
+      "topicId": "si-c14-t01",
+      "question": "Come distinguere contenuti ufficiali e integrazioni del Capitolo 14?",
+      "answer": "Le slide del professor Corsini sono fonte primaria; CSS Snapshot, Flexbox/Grid e le correzioni tecniche sono integrazioni esplicitamente dichiarate nel manuale.",
+      "detail": "Alcuni esempi storici con HTML 4 e float sono mantenuti per comprendere la lezione, non come modello unico di sviluppo moderno.",
+      "example": "Guida alla città del corso vs interfaccia EnerPrice aggiunta a scopo applicativo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire al docente i frammenti originali integrativi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.1, pagina PDF 209"
+    },
+    {
+      "id": "si-c14-q004",
+      "topicId": "si-c14-t01",
+      "question": "Perché la separazione HTML/CSS è utile nelle applicazioni database-driven?",
+      "answer": "Consente di cambiare rappresentazione e responsività senza riscrivere dati e logica di business.",
+      "detail": "HTML rappresenta struttura, CSS presentazione, codice server e DBMS elaborano e conservano informazioni.",
+      "example": "Il margine economico non deve essere calcolato da una proprietà CSS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidare validazioni o autorizzazioni al foglio di stile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.1, pagina PDF 209"
+    },
+    {
+      "id": "si-c14-q005",
+      "topicId": "si-c14-t02",
+      "question": "Che cosa significa l’acronimo CSS?",
+      "answer": "Cascading Style Sheets, ossia fogli di stile a cascata.",
+      "detail": "Il termine cascading richiama il procedimento che risolve dichiarazioni concorrenti provenienti da sorgenti diverse.",
+      "example": "Due regole su h1 possono competere per il colore finale.",
+      "formulas": [],
+      "connections": [
+        "Sistemi Informativi, Capitolo 13 — HTML"
+      ],
+      "mistakes": "Non chiamarlo linguaggio per descrivere dati o programmi procedurali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.2, pagine PDF 209–210"
+    },
+    {
+      "id": "si-c14-q006",
+      "topicId": "si-c14-t02",
+      "question": "Che natura ha CSS come linguaggio?",
+      "answer": "È un linguaggio dichiarativo per definire la presentazione, non un elenco imperativo di istruzioni per disegnare pixel.",
+      "detail": "L’autore specifica proprietà e valori; il motore di rendering calcola il risultato seguendo le regole CSS.",
+      "example": "h1 { color: navy; font-size: 2rem; }.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare la sequenza delle dichiarazioni come comandi eseguiti in ordine grafico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.2, pagine PDF 209–210"
+    },
+    {
+      "id": "si-c14-q007",
+      "topicId": "si-c14-t02",
+      "question": "CSS si applica soltanto a documenti HTML?",
+      "answer": "No: è uno standard di stile indipendente e può essere applicato anche a XML nei contesti appropriati.",
+      "detail": "HTML descrive significato e struttura; CSS caratteri, colori, spazi, bordi, visibilità e layout.",
+      "example": "Un documento XML può avere una presentazione CSS associata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare CSS una estensione esclusiva di HTML.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.2, pagine PDF 209–210"
+    },
+    {
+      "id": "si-c14-q008",
+      "topicId": "si-c14-t02",
+      "question": "Qual è la cronologia essenziale di CSS1, CSS2 e CSS2.1?",
+      "answer": "CSS1 (1996) introduce soprattutto colori, font, margini e testo; CSS2 (1998) e CSS2.1 (2011) estendono posizionamento, media e layout.",
+      "detail": "La cronologia serve a contestualizzare gli esempi storici del corso.",
+      "example": "Gli esempi float e position hanno radici nei modelli CSS classici.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che CSS2.1 coincida con CSS moderno completo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.2, pagine PDF 209–210"
+    },
+    {
+      "id": "si-c14-q009",
+      "topicId": "si-c14-t02",
+      "question": "Come si è evoluto CSS dopo CSS2?",
+      "answer": "In moduli sviluppati e stabilizzati in modo indipendente, come selettori, colori e layout.",
+      "detail": "Non esiste una singola specifica complessiva denominata CSS4 che sostituisca tutti i moduli.",
+      "example": "CSS Grid e CSS Flexbox seguono propri livelli di specifica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere CSS3/CSS4 come versioni monolitiche dei browser.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.2, pagine PDF 209–210"
+    },
+    {
+      "id": "si-c14-q010",
+      "topicId": "si-c14-t02",
+      "question": "Che cos’è CSS Snapshot 2026?",
+      "answer": "Una fotografia W3C dei moduli ritenuti sufficientemente stabili in quel momento.",
+      "detail": "La presenza in uno snapshot non implica supporto identico o simultaneo in tutti i browser.",
+      "example": "Per una proprietà moderna occorre verificare l’implementazione nei browser interessati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere standardizzazione e compatibilità universale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.2, pagine PDF 209–210"
+    },
+    {
+      "id": "si-c14-q011",
+      "topicId": "si-c14-t02",
+      "question": "Quali vantaggi offre centralizzare la presentazione in CSS?",
+      "answer": "Riuso delle regole, manutenzione più semplice e adattamento del documento a mezzi diversi.",
+      "detail": "Una modifica a un selettore condiviso può aggiornare più pagine senza modificarne il markup.",
+      "example": "Una classe .card applicata a tutte le schede di offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non duplicare lo stesso stile in ogni attributo HTML se deve essere mantenuto globalmente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.2, pagine PDF 209–210"
+    },
+    {
+      "id": "si-c14-q012",
+      "topicId": "si-c14-t03",
+      "question": "Quali quattro modalità di associazione di CSS a HTML compaiono nelle slide?",
+      "answer": "Attributo inline style, blocco interno style, direttiva CSS @import e file esterno tramite link rel=\"stylesheet\".",
+      "detail": "Sono alternative con compromessi di modularità e priorità; non tutte sono equivalenti nella cascata.",
+      "example": "<link rel=\"stylesheet\" href=\"css/main.css\"> nella head.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare @import e link lo stesso costrutto HTML.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.3, pagine PDF 210–211"
+    },
+    {
+      "id": "si-c14-q013",
+      "topicId": "si-c14-t03",
+      "question": "Che cos’è uno stile inline?",
+      "answer": "Una o più dichiarazioni CSS nell’attributo style del singolo elemento.",
+      "detail": "È diretto e specifico, ma ripeterlo su tanti elementi rende la grafica difficile da aggiornare.",
+      "example": "<h1 style=\"color:red\">Offerte energia</h1>.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiararlo vietato; è semplicemente poco adatto a regole ripetute.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.3, pagine PDF 210–211"
+    },
+    {
+      "id": "si-c14-q014",
+      "topicId": "si-c14-t03",
+      "question": "Dove si inserisce un foglio CSS interno?",
+      "answer": "In un elemento <style> nella head del documento HTML.",
+      "detail": "Permette regole condivise dentro una pagina senza creare un file a parte.",
+      "example": "<style>h1 {color:navy}</style>.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituirlo all’attributo style di ogni elemento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.3, pagine PDF 210–211"
+    },
+    {
+      "id": "si-c14-q015",
+      "topicId": "si-c14-t03",
+      "question": "Come si collega correttamente un foglio di stile esterno?",
+      "answer": "Con <link rel=\"stylesheet\" href=\"css/main.css\">, normalmente dentro head.",
+      "detail": "L’URL del file deve risolversi correttamente e il file deve essere raggiungibile.",
+      "example": "La directory css contiene main.css accanto al documento web.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un link con percorso inesistente e poi attribuire il problema alla specificità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.3, pagine PDF 210–211"
+    },
+    {
+      "id": "si-c14-q016",
+      "topicId": "si-c14-t03",
+      "question": "Che cosa fa @import in CSS?",
+      "answer": "Importa un altro foglio di stile secondo le regole ammesse dal parser.",
+      "detail": "Si scrive nel foglio CSS o in un blocco style, non come sostituto diretto del tag HTML link.",
+      "example": "@import url(\"base.css\"); prima delle regole principali, quando consentito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la direttiva CSS con un tag HTML.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.3, pagine PDF 210–211"
+    },
+    {
+      "id": "si-c14-q017",
+      "topicId": "si-c14-t03",
+      "question": "Perché un CSS esterno è spesso preferibile in una applicazione multipagina?",
+      "answer": "Centralizza regole riutilizzabili e separa struttura HTML da presentazione.",
+      "detail": "Le diverse pagine possono condividere colori, tipografia e componenti.",
+      "example": "form.html e report.html usano lo stesso main.css.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserire tutte le regole globali come stili inline duplicati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.3, pagine PDF 210–211"
+    },
+    {
+      "id": "si-c14-q018",
+      "topicId": "si-c14-t03",
+      "question": "Qual è la cautela sui vecchi esempi HTML 4 presenti nelle slide?",
+      "answer": "Sono materiale storico per leggere la lezione; i nuovi documenti HTML possono usare <!doctype html> e il collegamento link corretto.",
+      "detail": "Il manuale segnala un’imprecisione nel riferimento al tag di importazione dello stile.",
+      "example": "Nel documento HTML moderno non si richiede il vecchio doctype HTML 4.01.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non copiare alla lettera un errore tipografico della slide.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.3, pagine PDF 210–211"
+    },
+    {
+      "id": "si-c14-q019",
+      "topicId": "si-c14-t04",
+      "question": "Come si costruisce una dichiarazione CSS?",
+      "answer": "Proprietà: valore, per esempio color: navy.",
+      "detail": "Le dichiarazioni sono racchiuse nel blocco di una regola e tipicamente terminate con punto e virgola.",
+      "example": "font-family: Arial, sans-serif;.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere il due punti tra proprietà e valore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.4, pagina PDF 211"
+    },
+    {
+      "id": "si-c14-q020",
+      "topicId": "si-c14-t04",
+      "question": "Quali sono le parti di una regola CSS?",
+      "answer": "Un selettore e un blocco di dichiarazioni racchiuso tra parentesi graffe.",
+      "detail": "Il selettore individua gli elementi, il blocco specifica i valori delle proprietà.",
+      "example": "h1 {color: #183b62; margin: 0;}",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere selettore e dichiarazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.4, pagina PDF 211"
+    },
+    {
+      "id": "si-c14-q021",
+      "topicId": "si-c14-t04",
+      "question": "Come si scrive una lista di selettori che condividono regole?",
+      "answer": "Separando i selettori con virgole.",
+      "detail": "Si applica lo stesso blocco di dichiarazioni a ogni selettore della lista.",
+      "example": "h1, h2 {font-weight:700;}",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eliminare la virgola: h1 h2 indica discendenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.4, pagina PDF 211"
+    },
+    {
+      "id": "si-c14-q022",
+      "topicId": "si-c14-t04",
+      "question": "Qual è la sintassi dei commenti CSS?",
+      "answer": "/* testo del commento */.",
+      "detail": "Il browser ignora i commenti; possono descrivere scelte o sezioni del foglio.",
+      "example": "/* Stili tabella */ table {width:100%}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare i commenti HTML come sostituto generale nei file CSS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.4, pagina PDF 211"
+    },
+    {
+      "id": "si-c14-q023",
+      "topicId": "si-c14-t04",
+      "question": "Che ruolo ha il punto e virgola nelle regole?",
+      "answer": "Delimita le dichiarazioni; dopo l’ultima è consigliabile pur non essendo sempre obbligatorio.",
+      "detail": "Aiuta a modificare il blocco senza errori quando si aggiungono nuove dichiarazioni.",
+      "example": "color: navy; padding: 1rem;.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere ; con il separatore selettore/blocco.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.4, pagina PDF 211"
+    },
+    {
+      "id": "si-c14-q024",
+      "topicId": "si-c14-t04",
+      "question": "Le proprietà CSS e i valori seguono sempre la stessa grammatica?",
+      "answer": "No: i valori possibili dipendono dalla proprietà e possono essere unità, numeri, colori, funzioni, stringhe o parole chiave.",
+      "detail": "Un valore formalmente numerico può essere comunque invalido per la proprietà che lo riceve.",
+      "example": "width:12px è una lunghezza; width:12 in generale non lo è.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire validità a ogni stringa dopo i due punti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.4, pagina PDF 211"
+    },
+    {
+      "id": "si-c14-q025",
+      "topicId": "si-c14-t04",
+      "question": "Come si comporta il browser davanti a una dichiarazione CSS sconosciuta o non valida?",
+      "answer": "In genere ignora la dichiarazione non valida preservando le altre regole, nei limiti del tipo di errore sintattico.",
+      "detail": "La gestione di una costruzione gravemente malformata dipende dalla grammatica e dalla posizione.",
+      "example": "color: inventato; non rende automaticamente inutilizzabile tutto il CSS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che ogni errore interrompa il foglio intero.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.4, pagina PDF 211"
+    },
+    {
+      "id": "si-c14-q026",
+      "topicId": "si-c14-t04",
+      "question": "Quali due errori sintattici esemplifica il manuale?",
+      "answer": "h1: {color:blue} è un selettore non corretto per lo scopo; color blue omette i due punti.",
+      "detail": "Bisogna distinguere refusi del codice da sintassi CSS lecita.",
+      "example": "Correggere in h1 { color: blue; }.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non memorizzare come sintassi normativa i refusi delle slide.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.4, pagina PDF 211"
+    },
+    {
+      "id": "si-c14-q027",
+      "topicId": "si-c14-t04",
+      "question": "Una regola CSS sintatticamente valida garantisce che venga applicata al punto giusto?",
+      "answer": "No: il selettore può non corrispondere a nessun elemento o una dichiarazione può essere superata dalla cascata.",
+      "detail": "Per il debug bisogna esaminare DOM, selettore, media query, regole concorrenti e proprietà.",
+      "example": ".offerte h2 non trova h2 se il contenitore ha classe offerta senza s.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare sintassi errata ogni caso di selettore senza match.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.4, pagina PDF 211"
+    },
+    {
+      "id": "si-c14-q028",
+      "topicId": "si-c14-t05",
+      "question": "Che cosa seleziona il selettore di tipo p?",
+      "answer": "Tutti gli elementi HTML <p> pertinenti alla regola.",
+      "detail": "Il nome del tag è distinto dal nome di una classe.",
+      "example": "p {line-height:1.5}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con .p.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.5, pagine PDF 211–212"
+    },
+    {
+      "id": "si-c14-q029",
+      "topicId": "si-c14-t05",
+      "question": "Che cosa seleziona .card?",
+      "answer": "Qualsiasi elemento con la classe card.",
+      "detail": "Una stessa classe può essere usata su più elementi; viene preceduta dal punto nel selettore.",
+      "example": "<article class=\"card\"> ... </article>.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare #card per selezionare la classe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.5, pagine PDF 211–212"
+    },
+    {
+      "id": "si-c14-q030",
+      "topicId": "si-c14-t05",
+      "question": "Che cosa seleziona #offerta?",
+      "answer": "L’elemento con id=\"offerta\".",
+      "detail": "Gli id HTML devono essere univoci nel documento, mentre le classi possono essere riusate.",
+      "example": "#offerta {color:navy}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non duplicare id per colpire più schede.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.5, pagine PDF 211–212"
+    },
+    {
+      "id": "si-c14-q031",
+      "topicId": "si-c14-t05",
+      "question": "Qual è la differenza tra main p e main > p?",
+      "answer": "main p seleziona qualunque p discendente; main > p soltanto i figli diretti.",
+      "detail": "Il combinatore di spazio e il segno > esprimono relazioni DOM diverse.",
+      "example": "Un p dentro section dentro main risponde al primo ma non al secondo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il combinatore figlio quando devono essere compresi nipoti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.5, pagine PDF 211–212"
+    },
+    {
+      "id": "si-c14-q032",
+      "topicId": "si-c14-t05",
+      "question": "Che cosa seleziona h2 + p?",
+      "answer": "Un p fratello immediatamente successivo a un h2.",
+      "detail": "I due elementi devono condividere il genitore; non si seleziona un discendente.",
+      "example": "<h2>Titolo</h2><p>Introduzione</p>.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con h2 p, che richiede discendenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.5, pagine PDF 211–212"
+    },
+    {
+      "id": "si-c14-q033",
+      "topicId": "si-c14-t05",
+      "question": "Che cosa seleziona h2 ~ p?",
+      "answer": "I p che sono fratelli successivi di h2, anche se non immediatamente adiacenti.",
+      "detail": "Il combinatore ~ è aggiunto come integrazione operativa nel manuale.",
+      "example": "h2 seguito da div e poi p può ancora corrispondere.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi al solo primo fratello successivo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.5, pagine PDF 211–212"
+    },
+    {
+      "id": "si-c14-q034",
+      "topicId": "si-c14-t05",
+      "question": "Che cosa seleziona * in CSS?",
+      "answer": "Il selettore universale che corrisponde agli elementi senza restringere per nome, classe o ID.",
+      "detail": "È utile in regole generali come l’impostazione box-sizing.",
+      "example": "* {box-sizing:border-box}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con un carattere jolly da inserire dentro ogni selettore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.5, pagine PDF 211–212"
+    },
+    {
+      "id": "si-c14-q035",
+      "topicId": "si-c14-t05",
+      "question": "Qual è la differenza tra .card.warning e .card .warning?",
+      "answer": "Il primo richiede due classi sullo stesso elemento; il secondo richiede un discendente .warning di un antenato .card.",
+      "detail": "L’assenza dello spazio cambia completamente la relazione richiesta.",
+      "example": "<div class=\"card warning\"> per .card.warning.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserire spazi pensando che siano solo formattazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.5, pagine PDF 211–212"
+    },
+    {
+      "id": "si-c14-q036",
+      "topicId": "si-c14-t05",
+      "question": "Qual è la differenza tra h1, h2 e h1 h2?",
+      "answer": "La virgola raggruppa due selettori; lo spazio esprime un discendente.",
+      "detail": "h1 h2 presuppone un h2 dentro un h1 e non seleziona tutti i titoli h1 e h2.",
+      "example": "h1, h2 {color:navy}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare un elenco con un combinatore di discendenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.5, pagine PDF 211–212"
+    },
+    {
+      "id": "si-c14-q037",
+      "topicId": "si-c14-t05",
+      "question": "Una regola CSS può corrispondere a zero, uno o molti elementi?",
+      "answer": "Sì: il risultato dipende dalla struttura DOM e dal selettore.",
+      "detail": "Un selettore senza corrispondenze può essere valido ma non produrre alcun effetto.",
+      "example": ".card può trovare 12 elementi, #offerta uno, .inesistente zero.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre dal CSS quante istanze esistono nel documento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.5, pagine PDF 211–212"
+    },
+    {
+      "id": "si-c14-q038",
+      "topicId": "si-c14-t06",
+      "question": "Che cosa fa il selettore input[required]?",
+      "answer": "Seleziona input in cui l’attributo required è presente.",
+      "detail": "Non richiede un valore specifico; la presenza di un attributo booleano HTML è significativa.",
+      "example": "input[required] {border-color:#a15e13}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con il selettore di valore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.6, pagina PDF 212"
+    },
+    {
+      "id": "si-c14-q039",
+      "topicId": "si-c14-t06",
+      "question": "Che cosa seleziona input[type=\"number\"]?",
+      "answer": "Gli input con attributo type esattamente pari a number.",
+      "detail": "È un selettore di attributo con corrispondenza sul valore.",
+      "example": "Allineare a destra un campo numerico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non colpire ogni input della pagina.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.6, pagina PDF 212"
+    },
+    {
+      "id": "si-c14-q040",
+      "topicId": "si-c14-t06",
+      "question": "Che cosa seleziona a[href^=\"https://\"]?",
+      "answer": "I link il cui href inizia con la stringa https://.",
+      "detail": "L’operatore ^= verifica il prefisso del valore dell’attributo.",
+      "example": "Differenziare collegamenti assoluti HTTPS nel menu.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretarlo come filtro sull’host realmente raggiunto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.6, pagina PDF 212"
+    },
+    {
+      "id": "si-c14-q041",
+      "topicId": "si-c14-t06",
+      "question": "Che cosa rappresenta una pseudoclasse CSS?",
+      "answer": "Uno stato o condizione strutturale di un elemento, espresso con un due punti.",
+      "detail": "Esempi: :first-child, :hover, :focus, :lang, :visited.",
+      "example": "li:first-child evidenzia il primo elemento della sua famiglia di fratelli.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderla con uno pseudoelemento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.6, pagina PDF 212"
+    },
+    {
+      "id": "si-c14-q042",
+      "topicId": "si-c14-t06",
+      "question": "Quali pseudoclassi dei link e delle interazioni cita il manuale?",
+      "answer": "Tra le altre :link, :visited, :hover, :active, :focus e :focus-visible come integrazione.",
+      "detail": "I loro criteri non coincidono: link visitato, puntatore, attivazione, focus.",
+      "example": "button:hover modifica lo sfondo con puntatore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che :hover funzioni su tutti i dispositivi touch.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.6, pagina PDF 212"
+    },
+    {
+      "id": "si-c14-q043",
+      "topicId": "si-c14-t06",
+      "question": "Perché :focus-visible è importante?",
+      "answer": "Permette di mostrare un indicatore distinguibile del focus quando appropriato, soprattutto nella navigazione da tastiera.",
+      "detail": "L’accessibilità richiede un feedback che non dipenda esclusivamente dal mouse.",
+      "example": "button:focus-visible {outline:3px solid orange}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non togliere outline senza alternativa accessibile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.6, pagina PDF 212"
+    },
+    {
+      "id": "si-c14-q044",
+      "topicId": "si-c14-t06",
+      "question": "Qual è la differenza tra pseudoclasse e pseudoelemento?",
+      "answer": "La prima seleziona un elemento in una condizione, il secondo una parte o contenuto generato associato al rendering.",
+      "detail": "Per gli pseudoelementi oggi si usa generalmente ::, pur esistendo compatibilità storica con : singolo.",
+      "example": "p::first-letter e .warning::before.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare ::hover o :before come forme moderne equivalenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.6, pagina PDF 212"
+    },
+    {
+      "id": "si-c14-q045",
+      "topicId": "si-c14-t06",
+      "question": "Quali pseudoelementi ricorrono nelle slide?",
+      "answer": "::before, ::after, ::first-line e ::first-letter, spesso mostrati con la vecchia notazione a un due punti.",
+      "detail": "Il manuale separa le slide dal modo attuale di scriverli.",
+      "example": "p::first-letter {font-size:1.4em}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che il contenuto generato sia sempre presente nel DOM come un elemento reale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.6, pagina PDF 212"
+    },
+    {
+      "id": "si-c14-q046",
+      "topicId": "si-c14-t06",
+      "question": "Perché un messaggio essenziale non dovrebbe vivere soltanto in ::before?",
+      "answer": "Perché il contenuto generato con CSS può non essere percepito in modo affidabile da tutte le tecnologie assistive.",
+      "detail": "Informazioni funzionali importanti devono essere presenti nel markup e disponibili a tutti.",
+      "example": "Warning reale nel testo, eventuale decorazione tramite ::before.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non delegare avvisi indispensabili al solo pseudo-contenuto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.6, pagina PDF 212"
+    },
+    {
+      "id": "si-c14-q047",
+      "topicId": "si-c14-t07",
+      "question": "Quali famiglie di valori CSS compaiono nel capitolo?",
+      "answer": "Numeri, lunghezze, percentuali, colori, stringhe, URL e valori funzionali.",
+      "detail": "Ogni proprietà definisce una grammatica e un contesto in cui i valori acquistano significato.",
+      "example": "width:80%; color:rgb(30 57 85); background-image:url(...).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare una unità fuori dal tipo ammesso dalla proprietà.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.7, pagine PDF 212–213"
+    },
+    {
+      "id": "si-c14-q048",
+      "topicId": "si-c14-t07",
+      "question": "Che differenza c’è fra px CSS e pixel fisico?",
+      "answer": "px è una unità CSS di lunghezza e non coincide necessariamente con un pixel fisico dello schermo.",
+      "detail": "Densità di pixel e scala di rendering influiscono sulla corrispondenza concreta.",
+      "example": "Un bordo di 1px CSS può occupare più pixel fisici su display ad alta densità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare px come misura fisica invariabile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.7, pagine PDF 212–213"
+    },
+    {
+      "id": "si-c14-q049",
+      "topicId": "si-c14-t07",
+      "question": "Come si definiscono em e rem?",
+      "answer": "em è relativa al font del contesto pertinente; rem alla dimensione del font dell’elemento radice.",
+      "detail": "La base dell’em dipende dalla proprietà e dal contesto; su font-size spesso si riferisce al font del genitore.",
+      "example": "Con radice 16px, 1.25rem equivale a 20px.",
+      "formulas": [
+        {
+          "latex": "1{,}25\\mathrm{rem}\\cdot16\\mathrm{px}=20\\mathrm{px}",
+          "meaning": "Conversione rem alla dimensione radice illustrata nel manuale"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non assumere che em e rem diano sempre lo stesso risultato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.7, pagine PDF 212–213"
+    },
+    {
+      "id": "si-c14-q050",
+      "topicId": "si-c14-t07",
+      "question": "Perché più font-size in em possono amplificarsi gerarchicamente?",
+      "answer": "Perché ogni elemento può calcolare la dimensione rispetto al contesto e i rapporti si compongono.",
+      "detail": "Una regola annidata ripetuta può moltiplicare ripetutamente il fattore.",
+      "example": "Due livelli con 1.25em: 1.25×1.25 rispetto alla base pertinente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerarli unità assolute.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.7, pagine PDF 212–213"
+    },
+    {
+      "id": "si-c14-q051",
+      "topicId": "si-c14-t07",
+      "question": "Che cosa rappresenta una percentuale CSS?",
+      "answer": "Un rapporto con un riferimento definito dalla singola proprietà, non un numero sempre relativo alla viewport.",
+      "detail": "La larghezza di un pannello può riferirsi al contenitore; altri calcoli hanno basi diverse.",
+      "example": ".panel {width:80%}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare la medesima base a tutte le proprietà percentuali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.7, pagine PDF 212–213"
+    },
+    {
+      "id": "si-c14-q052",
+      "topicId": "si-c14-t07",
+      "question": "Quali unità sono legate alla viewport?",
+      "answer": "vw e vh, che esprimono quote delle dimensioni della viewport secondo la semantica CSS.",
+      "detail": "Possono essere utili per sezioni a tutto schermo, con cautele nei browser mobili.",
+      "example": ".hero {min-height:50vh}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che vh corrisponda sempre alla stessa altezza visibile sui dispositivi mobili.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.7, pagine PDF 212–213"
+    },
+    {
+      "id": "si-c14-q053",
+      "topicId": "si-c14-t07",
+      "question": "Che cosa rappresenta fr?",
+      "answer": "Una frazione dello spazio disponibile nelle tracce di CSS Grid.",
+      "detail": "È usata nella definizione delle dimensioni della griglia, non come qualsiasi lunghezza generica.",
+      "example": "grid-template-columns:1fr 2fr.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare fr per assegnare una dimensione CSS arbitraria fuori Grid.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.7, pagine PDF 212–213"
+    },
+    {
+      "id": "si-c14-q054",
+      "topicId": "si-c14-t07",
+      "question": "Quando preferire pt, cm, mm o in?",
+      "answer": "Soprattutto nei contesti di stampa o misure assolute CSS.",
+      "detail": "La dimensione fisica percepita non è sempre una conversione semplice sugli schermi.",
+      "example": "@media print {body{font-size:11pt}}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare pt come predefinito per interfacce responsive.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.7, pagine PDF 212–213"
+    },
+    {
+      "id": "si-c14-q055",
+      "topicId": "si-c14-t07",
+      "question": "Come si rappresenta il rosso con notazione hex e rgb?",
+      "answer": "#ff0000 e rgb(255,0,0) sono rappresentazioni equivalenti del rosso nel comune spazio sRGB.",
+      "detail": "Il manuale segnala inoltre sintassi moderne e differenti spazi colore.",
+      "example": "h1 {color:#ff0000}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un codice esadecimale con una lunghezza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.7, pagine PDF 212–213"
+    },
+    {
+      "id": "si-c14-q056",
+      "topicId": "si-c14-t07",
+      "question": "In cosa differiscono rgba(0,0,0,.5) e opacity:.5?",
+      "answer": "rgba riduce l’opacità della sola componente colore; opacity modifica il compositing dell’intero elemento e dei discendenti.",
+      "detail": "Questa distinzione è importante per testo e controlli inseriti nel box.",
+      "example": "Sfondo semitrasparente con testo pienamente opaco vs box tutto semitrasparente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare opacity una semplice abbreviazione di rgba.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.7, pagine PDF 212–213"
+    },
+    {
+      "id": "si-c14-q057",
+      "topicId": "si-c14-t07",
+      "question": "Per una proprietà di lunghezza, quando 0 può comparire senza unità?",
+      "answer": "Per zero, la sintassi CSS consente generalmente omettere l’unità nelle lunghezze; valori diversi richiedono unità dove previste.",
+      "detail": "Ad esempio margin:0 è valido, ma margin:12 senza unità non rappresenta una lunghezza valida.",
+      "example": "margin:0; padding:12px.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non generalizzare che tutti i numeri nudi siano lunghezze.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.7, pagine PDF 212–213"
+    },
+    {
+      "id": "si-c14-q058",
+      "topicId": "si-c14-t08",
+      "question": "Quali sono le quattro regioni concentriche del box model?",
+      "answer": "Dall’interno all’esterno: content, padding, border, margin.",
+      "detail": "Content ospita dati; padding separa il contenuto dal bordo; border delinea; margin crea distanza esterna.",
+      "example": "La figura 14.4 visualizza il contenuto racchiuso da tre fasce successive.",
+      "formulas": [],
+      "connections": [
+        "Sistemi Informativi, Capitolo 13 — elementi e DOM"
+      ],
+      "mistakes": "Non trattare margin come parte dello sfondo del box.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.8, pagina PDF 213"
+    },
+    {
+      "id": "si-c14-q059",
+      "topicId": "si-c14-t08",
+      "question": "Che cosa misura width nel modello content-box?",
+      "answer": "La larghezza del solo contenuto, escludendo padding e border.",
+      "detail": "Per ottenere ingombro al bordo bisogna sommare padding e border orizzontali.",
+      "example": "width:300px, padding:20px per lato, border:2px per lato → 344px fino al bordo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare 300px alla larghezza visibile totale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.8, pagina PDF 213"
+    },
+    {
+      "id": "si-c14-q060",
+      "topicId": "si-c14-t08",
+      "question": "Come calcolare l’ingombro orizzontale nominale di un content-box?",
+      "answer": "Somma width, padding sinistro/destro, border sinistro/destro e margin sinistro/destro.",
+      "detail": "Il risultato è una stima geometrica nel caso semplice, senza effetti particolari di layout.",
+      "example": "300+40+4+20=364px nell’esempio del manuale.",
+      "formulas": [
+        {
+          "latex": "W_{\\mathrm{esterno}}=W+P_L+P_R+B_L+B_R+M_L+M_R",
+          "meaning": "Ingombro nominale nel semplice content-box"
+        },
+        {
+          "latex": "300+2\\cdot20+2\\cdot2+2\\cdot10=364\\mathrm{px}",
+          "meaning": "Esempio con margini del paragrafo 14.8"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non omettere i margini se la richiesta riguarda l’occupazione complessiva.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.8, pagina PDF 213"
+    },
+    {
+      "id": "si-c14-q061",
+      "topicId": "si-c14-t08",
+      "question": "Che cosa significa box-sizing:border-box?",
+      "answer": "La width dichiarata comprende content, padding e border, escludendo i margini.",
+      "detail": "Il contenuto si riduce affinché il box mantenga la larghezza fino al bordo richiesta.",
+      "example": "width:300px, padding:20px, border:2px → contenuto 256px.",
+      "formulas": [
+        {
+          "latex": "W_{\\mathrm{content}}=300-2\\cdot20-2\\cdot2=256\\mathrm{px}",
+          "meaning": "Content width con box-sizing:border-box"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non includere margin nei 300px dichiarati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.8, pagina PDF 213"
+    },
+    {
+      "id": "si-c14-q062",
+      "topicId": "si-c14-t08",
+      "question": "Perché border-box è utile nel responsive design?",
+      "answer": "Rende più prevedibile il dimensionamento dei riquadri quando si aggiungono padding e bordi.",
+      "detail": "Una regola universale può facilitare la costruzione di griglie.",
+      "example": "* {box-sizing:border-box}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che border-box impedisca qualunque overflow.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.8, pagina PDF 213"
+    },
+    {
+      "id": "si-c14-q063",
+      "topicId": "si-c14-t08",
+      "question": "Qual è l’ordine dei quattro valori nelle shorthand di margin e padding?",
+      "answer": "Alto, destra, basso, sinistra (top, right, bottom, left).",
+      "detail": "Con due valori, il primo vale per alto/basso e il secondo per destra/sinistra.",
+      "example": "margin:1px 2px 3px 4px.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non leggerli in ordine orario a partire dalla sinistra.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.8, pagina PDF 213"
+    },
+    {
+      "id": "si-c14-q064",
+      "topicId": "si-c14-t08",
+      "question": "Qual è il significato di margin:0 auto per un blocco?",
+      "answer": "Con vincoli e spazio disponibili può distribuire automaticamente i margini orizzontali e centrare il blocco.",
+      "detail": "Serve un contesto di layout e una dimensione adatta; non è una garanzia universale.",
+      "example": ".container {width:90%; max-width:1100px; margin:0 auto}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che centri verticalmente qualsiasi elemento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.8, pagina PDF 213"
+    },
+    {
+      "id": "si-c14-q065",
+      "topicId": "si-c14-t08",
+      "question": "Che cosa è il margin collapsing?",
+      "answer": "In alcune condizioni i margini verticali dei box in normale flusso si combinano invece di sommarsi.",
+      "detail": "La gestione non è una somma aritmetica di tutti i margin vicini.",
+      "example": "margin-bottom:24px e margin-top:16px possono produrre 24px di distanza.",
+      "formulas": [
+        {
+          "latex": "\\max(24,16)=24\\mathrm{px}",
+          "meaning": "Esempio di margin collapsing positivo in condizioni ammesse"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non applicare il collasso indifferentemente a flex o grid.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.8, pagina PDF 213"
+    },
+    {
+      "id": "si-c14-q066",
+      "topicId": "si-c14-t08",
+      "question": "I margini verticali degli elementi Flexbox e Grid collassano come normali blocchi?",
+      "answer": "No, i margini fra elementi flex/grid non collassano in quel modo.",
+      "detail": "La stessa coppia di valori può produrre distanze diverse al cambiare del modello di layout.",
+      "example": "Il passaggio da normale flusso a display:flex cambia il comportamento dei margin fra figli.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare la regola dei blocchi tradizionali a tutti i contenitori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.8, pagina PDF 213"
+    },
+    {
+      "id": "si-c14-q067",
+      "topicId": "si-c14-t08",
+      "question": "Qual è il ruolo di background-color rispetto a padding e margin?",
+      "answer": "Lo sfondo del box copre normalmente l’area pertinente fino al bordo secondo le regole CSS, non il margin esterno.",
+      "detail": "Il padding non è uno spazio esterno separato dal box.",
+      "example": "Una card colorata include visivamente anche il padding.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non colorare margin supponendo sia parte del riquadro.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.8, pagina PDF 213"
+    },
+    {
+      "id": "si-c14-q068",
+      "topicId": "si-c14-t08",
+      "question": "Come calcolare il contenuto nel caso border-box width 300, padding 20 e border 2?",
+      "answer": "300−40−4 = 256px, con valori applicati a entrambi i lati.",
+      "detail": "La larghezza nominale del box resta 300px fino al bordo; il margin rimane esterno.",
+      "example": "Esempio 14.H su .card.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sottrarre soltanto un lato di padding e border.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.8, pagina PDF 213"
+    },
+    {
+      "id": "si-c14-q069",
+      "topicId": "si-c14-t09",
+      "question": "Che cos’è il flusso normale nel layout CSS?",
+      "answer": "È il posizionamento ordinario dei box nel documento prima di float o posizionamenti particolari.",
+      "detail": "I blocchi si susseguono secondo la direzione di impaginazione; i contenuti inline partecipano alla composizione delle righe.",
+      "example": "Un p segue un h2 nella sequenza del documento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che l’ordine visivo sia sempre determinato da absolute.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.9, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q070",
+      "topicId": "si-c14-t09",
+      "question": "Qual è il comportamento tipico di display:block?",
+      "answer": "Il box partecipa come blocco e normalmente occupa una riga propria nel flusso.",
+      "detail": "Può essere dimensionato e contenere altri elementi secondo le regole del box formatting.",
+      "example": "Un <div> generico è tipicamente block.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretarlo come sinonimo semantico di sezione HTML.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.9, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q071",
+      "topicId": "si-c14-t09",
+      "question": "Che cosa cambia con display:inline?",
+      "answer": "Il box partecipa alla disposizione del testo in linea; width e height non si comportano generalmente come per un blocco.",
+      "detail": "È la modalità tipica per parti testuali come span.",
+      "example": "<span class=\"evidenza\">margine</span>.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarsi che width:300px funzioni come su un block non sostituito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.9, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q072",
+      "topicId": "si-c14-t09",
+      "question": "Che cos’è display:inline-block?",
+      "answer": "Un box che partecipa alla disposizione in linea ma consente dimensioni rettangolari come un blocco.",
+      "detail": "Combina comportamento esterno inline e dimensionabilità interna.",
+      "example": "Un badge affiancato al testo con padding e width.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificarlo con display:block.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.9, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q073",
+      "topicId": "si-c14-t09",
+      "question": "Che effetto ha display:none sul layout?",
+      "answer": "L’elemento non genera il proprio box e non occupa lo spazio corrispondente nel layout.",
+      "detail": "L’elemento rimane nella struttura DOM, quindi non è una misura di segretezza dei dati.",
+      "example": "Nascondere il menu laterale nella versione stampa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equipararlo a una cancellazione dal documento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.9, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q074",
+      "topicId": "si-c14-t09",
+      "question": "Che cosa creano display:flex e display:grid?",
+      "answer": "Contenitori che organizzano figli con modelli dedicati rispettivamente flessibile e a griglia.",
+      "detail": "Sono alternative al flusso tradizionale per il layout, non sostituti della semantica HTML.",
+      "example": ".actions display:flex; .dashboard display:grid.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare il valore display con un tag HTML.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.9, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q075",
+      "topicId": "si-c14-t09",
+      "question": "Perché il tag HTML deve essere scelto prima di impostare display?",
+      "answer": "Perché semantica e accessibilità del documento non dipendono dall’aspetto grafico scelto.",
+      "detail": "Un elemento semanticamente appropriato può essere stilizzato in molti modi.",
+      "example": "<nav> per navigazione, <main> per contenuto principale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire ogni elemento semantico con div solo per ragioni di layout.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.9, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q076",
+      "topicId": "si-c14-t09",
+      "question": "Qual è la differenza fra display:flex e inline-flex?",
+      "answer": "Entrambi stabiliscono un formato flessibile per i figli, ma differiscono nel comportamento esterno del contenitore.",
+      "detail": "L’uso dipende da come il contenitore deve partecipare al layout del genitore.",
+      "example": "Barra comandi in linea contro barra a blocco.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che i figli cambino natura perché il contenitore è inline-flex.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.9, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q077",
+      "topicId": "si-c14-t10",
+      "question": "A che cosa serviva originariamente float?",
+      "answer": "A far scorrere testo e altri contenuti intorno a un elemento spostato lateralmente.",
+      "detail": "Il corso usa float anche per un layout storico a colonne.",
+      "example": "Una immagine affiancata a un paragrafo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentarlo come sistema bidimensionale di layout.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.10, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q078",
+      "topicId": "si-c14-t10",
+      "question": "Come impostare il menu laterale storico del caso guidato?",
+      "answer": "Applicare float:left e una larghezza percentuale alla barra laterale.",
+      "detail": "L’area principale viene spostata con margin-left coerente con la larghezza della barra.",
+      "example": ".menubar {float:left;width:22%} e .content {margin-left:22%}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare padding e box-sizing nel calcolo delle larghezze.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.10, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q079",
+      "topicId": "si-c14-t10",
+      "question": "Qual è l’effetto di clear:both?",
+      "answer": "Evita che il box sia collocato accanto ai float precedenti sui due lati, collocandolo al di sotto quando necessario.",
+      "detail": "Nel caso docente è applicato al footer/trailer.",
+      "example": ".trailer {clear:both}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretarlo come proprietà che disattiva tutti i float del documento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.10, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q080",
+      "topicId": "si-c14-t10",
+      "question": "Perché un footer può affiancarsi erroneamente a un menu floated?",
+      "answer": "Perché il float influenza la disposizione dei contenuti successivi e il normale flusso può scorrergli accanto.",
+      "detail": "Il clear del footer cambia la condizione di affiancamento.",
+      "example": "Sidebar float e trailer senza clear.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non risolvere soltanto con colori o z-index.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.10, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q081",
+      "topicId": "si-c14-t10",
+      "question": "Quali limiti ha il layout a due colonne con float?",
+      "answer": "Altezze differenti, flusso del contenuto accanto al float, necessità di clear e gestione delicata delle larghezze.",
+      "detail": "Può funzionare negli esempi storici ma è meno robusto di soluzioni dedicate.",
+      "example": "Sidebar più lunga del contenuto e sfondi disallineati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare float equivalente a Grid.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.10, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q082",
+      "topicId": "si-c14-t10",
+      "question": "Perché bisogna conoscere float anche se oggi esistono Flexbox e Grid?",
+      "answer": "Per interpretare correttamente gli esempi delle slide e mantenere codice esistente.",
+      "detail": "La scelta moderna non cancella il perimetro dell’esame.",
+      "example": "Ricostruire i cinque box di “Guida alla città”.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire tacitamente l’esercizio ufficiale con un altro layout.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.10, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q083",
+      "topicId": "si-c14-t10",
+      "question": "Quando un layout dedicato è più appropriato di float?",
+      "answer": "Quando servono regioni stabilmente affiancate e allineate su uno o due assi.",
+      "detail": "Flexbox e Grid offrono strumenti più diretti per il layout di interfacce.",
+      "example": "Sidebar + main in Grid e oggetti fluttuanti in float.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non vietare float per il vero scorrimento del testo attorno alle immagini.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.10, pagina PDF 214"
+    },
+    {
+      "id": "si-c14-q084",
+      "topicId": "si-c14-t11",
+      "question": "Qual è il comportamento di position:static?",
+      "answer": "È il posizionamento ordinario nel flusso; top/left normalmente non spostano il box.",
+      "detail": "È il valore predefinito delle proprietà di position.",
+      "example": ".card {position:static;left:10px} non produce lo spostamento desiderato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare le coordinate come se ogni elemento fosse positioned.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.11, pagine PDF 214–215"
+    },
+    {
+      "id": "si-c14-q085",
+      "topicId": "si-c14-t11",
+      "question": "Come funziona position:relative?",
+      "answer": "Il box mantiene il posto nel flusso e può essere traslato visualmente rispetto ad esso.",
+      "detail": "Può fungere da riferimento per discendenti absolutely positioned.",
+      "example": ".panel {position:relative}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che il suo spazio originale scompaia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.11, pagine PDF 214–215"
+    },
+    {
+      "id": "si-c14-q086",
+      "topicId": "si-c14-t11",
+      "question": "Come funziona position:absolute?",
+      "answer": "Il box esce dal flusso normale e viene posizionato rispetto al containing block appropriato.",
+      "detail": "Può sovrapporsi ad altri contenuti e richiede attenzione al riferimento.",
+      "example": ".badge {position:absolute;top:.5rem;right:.5rem}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che sia relativo automaticamente alla finestra.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.11, pagine PDF 214–215"
+    },
+    {
+      "id": "si-c14-q087",
+      "topicId": "si-c14-t11",
+      "question": "Come creare un badge nell’angolo alto destro di una card?",
+      "answer": "Impostare position:relative sulla card e position:absolute con top/right sul badge.",
+      "detail": "Il positioned ancestor stabilisce il containing block rilevante nell’esempio.",
+      "example": ".card {position:relative}; .badge {position:absolute;top:.5rem;right:.5rem}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare il riferimento sulla card.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.11, pagine PDF 214–215"
+    },
+    {
+      "id": "si-c14-q088",
+      "topicId": "si-c14-t11",
+      "question": "Come funziona position:fixed?",
+      "answer": "Il box è fuori dal flusso ed è normalmente riferito alla viewport secondo il contesto applicabile.",
+      "detail": "È adatto ad alcuni componenti che rimangono fissi, ma può coprire contenuti.",
+      "example": ".dialog {position:fixed;inset:10% 20%}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equipararlo a sticky.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.11, pagine PDF 214–215"
+    },
+    {
+      "id": "si-c14-q089",
+      "topicId": "si-c14-t11",
+      "question": "Come funziona position:sticky?",
+      "answer": "Combina un comportamento di flusso relativo con il mantenimento a una soglia di scorrimento entro le condizioni del contenitore.",
+      "detail": "Richiede un contesto di scroll appropriato e una soglia, come top:0.",
+      "example": ".toolbar {position:sticky;top:0}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che funzioni senza condizioni di scroll adeguate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.11, pagine PDF 214–215"
+    },
+    {
+      "id": "si-c14-q090",
+      "topicId": "si-c14-t11",
+      "question": "Quale ruolo svolgono top, right, bottom e left?",
+      "answer": "Definiscono offset o posizioni secondo la modalità di position e il containing block.",
+      "detail": "La stessa proprietà non ha identico effetto su static, relative e absolute.",
+      "example": "top:0 per sticky contro top:.5rem per absolute.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare le coordinate come proprietà sempre operative.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.11, pagine PDF 214–215"
+    },
+    {
+      "id": "si-c14-q091",
+      "topicId": "si-c14-t11",
+      "question": "Che cosa significa inset:10% 20%?",
+      "answer": "Shorthand degli offset: top/bottom 10%, right/left 20%, secondo le regole del posizionamento.",
+      "detail": "È un esempio di integrazione moderna nel manuale.",
+      "example": ".dialog {position:fixed;inset:10% 20%}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con margin.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.11, pagine PDF 214–215"
+    },
+    {
+      "id": "si-c14-q092",
+      "topicId": "si-c14-t11",
+      "question": "Che cos’è uno stacking context?",
+      "answer": "Un contesto di impilamento che determina come i discendenti vengono ordinati nella sovrapposizione.",
+      "detail": "Può nascere in varie condizioni, ad esempio position con z-index o opacity inferiore a 1.",
+      "example": "Un figlio con z-index elevato può restare dietro un elemento di un contesto superiore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare z-index come una graduatoria globale di tutti gli elementi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.11, pagine PDF 214–215"
+    },
+    {
+      "id": "si-c14-q093",
+      "topicId": "si-c14-t11",
+      "question": "Perché z-index:999 non garantisce che un elemento compaia davanti a tutto?",
+      "answer": "Il confronto dei livelli avviene all’interno e fra stacking context, con regole gerarchiche.",
+      "detail": "Un contesto subordinato non può sfuggire arbitrariamente all’ordine del proprio antenato.",
+      "example": "Modal dentro un contenitore con stacking context inferiore a un header.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aumentare casualmente z-index senza analizzare gli antenati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.11, pagine PDF 214–215"
+    },
+    {
+      "id": "si-c14-q094",
+      "topicId": "si-c14-t11",
+      "question": "Quale differenza fra relative e absolute è fondamentale per l’esame?",
+      "answer": "Relative conserva lo spazio originario nel flusso; absolute esce dal flusso.",
+      "detail": "La distinzione influenza disposizione degli elementi vicini e dimensionamento del contenitore.",
+      "example": "Due badge posizionati con relative e absolute interagiscono in modo diverso coi box successivi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non basarsi soltanto sull’apparente effetto visivo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.11, pagine PDF 214–215"
+    },
+    {
+      "id": "si-c14-q095",
+      "topicId": "si-c14-t12",
+      "question": "Che effetto ha display:none rispetto allo spazio?",
+      "answer": "Non genera il box nel layout e quindi non riserva lo spazio corrispondente.",
+      "detail": "L’elemento non viene eliminato dal DOM e resta accessibile al codice in altri modi.",
+      "example": ".menu {display:none} nella stampa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerarlo un controllo per informazioni riservate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.12, pagina PDF 215"
+    },
+    {
+      "id": "si-c14-q096",
+      "topicId": "si-c14-t12",
+      "question": "Che effetto ha visibility:hidden?",
+      "answer": "Rende invisibile il box conservandone normalmente l’occupazione di spazio.",
+      "detail": "Differisce da display:none e può influire diversamente su interazione e accessibilità.",
+      "example": "Una card nascosta che lascia un vuoto nel layout.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarsi la ricomposizione del flusso come con display:none.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.12, pagina PDF 215"
+    },
+    {
+      "id": "si-c14-q097",
+      "topicId": "si-c14-t12",
+      "question": "Che effetto ha opacity:0?",
+      "answer": "Rende il box e i discendenti trasparenti nel compositing, ma non elimina automaticamente layout, clic, focus o accessibilità.",
+      "detail": "Un oggetto invisibile può ancora ricevere interazioni in determinate condizioni.",
+      "example": ".transparent {opacity:0}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usarlo come meccanismo per disabilitare un pulsante.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.12, pagina PDF 215"
+    },
+    {
+      "id": "si-c14-q098",
+      "topicId": "si-c14-t12",
+      "question": "Come si confrontano display:none, visibility:hidden e opacity:0?",
+      "answer": "Primo: niente box nel layout; secondo: box invisibile con spazio conservato; terzo: box trasparente con layout preservato.",
+      "detail": "Le differenze si estendono a focus, eventi e tecnologie assistive e non vanno semplificate eccessivamente.",
+      "example": "Nascondere sidebar stampa, mantenere spazio, effetto dissolvenza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descriverli come sinonimi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.12, pagina PDF 215"
+    },
+    {
+      "id": "si-c14-q099",
+      "topicId": "si-c14-t12",
+      "question": "Perché opacity:.5 non equivale a disabled?",
+      "answer": "Modifica solo l’aspetto e non la semantica funzionale del controllo.",
+      "detail": "Per impedire un’azione occorre utilizzare le regole applicative e attributi appropriati quando previsti.",
+      "example": "Un button semitrasparente resta potenzialmente cliccabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidare lo stato disabilitato al solo colore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.12, pagina PDF 215"
+    },
+    {
+      "id": "si-c14-q100",
+      "topicId": "si-c14-t12",
+      "question": "Perché nessuna di queste proprietà è una misura di protezione dei dati?",
+      "answer": "Il contenuto può restare nel documento o nell’applicazione e può essere ispezionato.",
+      "detail": "Sicurezza e autorizzazione devono essere applicate da servizi e backend.",
+      "example": "Un prezzo segreto non deve essere inviato in HTML e poi solo nascosto via CSS.",
+      "formulas": [],
+      "connections": [
+        "Sistemi Informativi — sicurezza e autorizzazioni applicative"
+      ],
+      "mistakes": "Non confondere presentazione con controllo degli accessi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.12, pagina PDF 215"
+    },
+    {
+      "id": "si-c14-q101",
+      "topicId": "si-c14-t13",
+      "question": "Come viene interpretata una lista font-family?",
+      "answer": "Il browser prova le famiglie indicate nell’ordine, scegliendo la prima disponibile appropriata.",
+      "detail": "È buona pratica terminare con una famiglia generica.",
+      "example": "font-family:Arial,Helvetica,sans-serif.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che un font citato sia installato su tutti i dispositivi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.13, pagine PDF 215–216"
+    },
+    {
+      "id": "si-c14-q102",
+      "topicId": "si-c14-t13",
+      "question": "Quali categorie generiche di font ricorda il capitolo?",
+      "answer": "serif, sans-serif e monospace.",
+      "detail": "Sono fallback per rendere il testo quando non sono disponibili font specifici.",
+      "example": "font-family:Arial,sans-serif.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere una famiglia generica con il nome di un file font.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.13, pagine PDF 215–216"
+    },
+    {
+      "id": "si-c14-q103",
+      "topicId": "si-c14-t13",
+      "question": "Che cosa controlla font-size?",
+      "answer": "La dimensione del carattere secondo l’unità e il contesto specificati.",
+      "detail": "Può essere espressa tramite rem, em o altre unità appropriate.",
+      "example": "body {font-size:1rem}; h1 {font-size:2rem}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre automaticamente la dimensione fisica del carattere dal numero.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.13, pagine PDF 215–216"
+    },
+    {
+      "id": "si-c14-q104",
+      "topicId": "si-c14-t13",
+      "question": "Che cosa controllano font-weight e font-style?",
+      "answer": "Rispettivamente il peso del tratto e lo stile, ad esempio normale o corsivo.",
+      "detail": "Sono proprietà diverse da text-transform e text-decoration.",
+      "example": "h1 {font-weight:700}; em {font-style:italic}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere italic con uppercase.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.13, pagine PDF 215–216"
+    },
+    {
+      "id": "si-c14-q105",
+      "topicId": "si-c14-t13",
+      "question": "Che cosa controlla line-height?",
+      "answer": "La distanza/altezza della linea di testo, influenzando l’interlinea.",
+      "detail": "Un valore unitless come 1.5 è moltiplicato per il font e si eredita in modo prevedibile.",
+      "example": "body {font-size:1rem;line-height:1.55}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattarlo come padding aggiuntivo del box.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.13, pagine PDF 215–216"
+    },
+    {
+      "id": "si-c14-q106",
+      "topicId": "si-c14-t13",
+      "question": "Quali proprietà trattano trasformazione, decorazione e spaziatura del testo?",
+      "answer": "text-transform, text-decoration, letter-spacing e word-spacing.",
+      "detail": "Vanno usate con attenzione alla leggibilità, soprattutto su viewport strette.",
+      "example": "a {text-decoration:underline;text-underline-offset:.12em}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare una spaziatura estrema solo per effetti estetici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.13, pagine PDF 215–216"
+    },
+    {
+      "id": "si-c14-q107",
+      "topicId": "si-c14-t13",
+      "question": "Qual è la funzione di text-align?",
+      "answer": "Determina l’allineamento del contenuto testuale nello spazio disponibile.",
+      "detail": "Il giustificato non è necessariamente più leggibile del testo allineato a sinistra in colonne strette.",
+      "example": "p {text-align:left}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare justify sempre migliore per l’accessibilità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.13, pagine PDF 215–216"
+    },
+    {
+      "id": "si-c14-q108",
+      "topicId": "si-c14-t13",
+      "question": "Quali proprietà governano gli sfondi CSS?",
+      "answer": "background-color, background-image, background-repeat, background-position, background-size e background-attachment.",
+      "detail": "Consentono colori e immagini decorative con differenti modalità di ripetizione e dimensione.",
+      "example": ".hero {background-image:url(...);background-size:cover}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare background-image un sostituto semantico universale di img.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.13, pagine PDF 215–216"
+    },
+    {
+      "id": "si-c14-q109",
+      "topicId": "si-c14-t13",
+      "question": "Perché un’immagine essenziale va rappresentata di norma con img e alt, non solo con background-image?",
+      "answer": "Il contenuto informativo richiede una rappresentazione semantica e un’alternativa testuale adeguata.",
+      "detail": "Gli sfondi CSS sono soprattutto decorativi e non sostituiscono le informazioni accessibili.",
+      "example": "Grafico necessario a capire un KPI inserito con <img alt=\"...\">.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non comunicare risultati importanti solo in una decorazione CSS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.13, pagine PDF 215–216"
+    },
+    {
+      "id": "si-c14-q110",
+      "topicId": "si-c14-t13",
+      "question": "Perché line-height senza unità è spesso raccomandabile?",
+      "answer": "Si adatta alla dimensione effettiva del testo e propaga proporzioni utili ai discendenti.",
+      "detail": "Riduce alcuni problemi di ereditarietà di altezze fisse.",
+      "example": "body {line-height:1.5}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituirlo ciecamente con 24px in ogni contenitore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.13, pagine PDF 215–216"
+    },
+    {
+      "id": "si-c14-q111",
+      "topicId": "si-c14-t14",
+      "question": "Che cosa deve essere rappresentato con una tabella HTML?",
+      "answer": "Dati che possiedono una struttura realmente tabulare, non l’intero layout della pagina.",
+      "detail": "CSS presenta celle, righe e intestazioni; HTML mantiene la semantica tabellare.",
+      "example": "Tabella delle offerte con colonna prezzo e ricavi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare tabelle solo per allineare contenuti generici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.14, pagina PDF 216"
+    },
+    {
+      "id": "si-c14-q112",
+      "topicId": "si-c14-t14",
+      "question": "Quali elementi HTML della tabella sono citati?",
+      "answer": "table, caption, thead, tbody, tr, th e td.",
+      "detail": "CSS può assegnare stili diversi a titolo, intestazioni, righe e celle.",
+      "example": "th,td {padding:.65rem;border:1px solid #aab7c3}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire th con td quando il contenuto è un’intestazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.14, pagina PDF 216"
+    },
+    {
+      "id": "si-c14-q113",
+      "topicId": "si-c14-t14",
+      "question": "Che effetto ha border-collapse:collapse?",
+      "answer": "Applica il modello dei bordi collassati: i bordi adiacenti condividono il tracciamento secondo regole di conflitto.",
+      "detail": "Il manuale lo contrappone al modello separate.",
+      "example": "table {border-collapse:collapse}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretarlo come eliminazione indiscriminata di tutti i bordi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.14, pagina PDF 216"
+    },
+    {
+      "id": "si-c14-q114",
+      "topicId": "si-c14-t14",
+      "question": "Qual è l’alternativa border-collapse:separate?",
+      "answer": "Il modello a bordi separati, in cui ogni cella mantiene il proprio bordo e si può controllare border-spacing.",
+      "detail": "Cambiano l’aspetto dei confini fra celle e la spaziatura.",
+      "example": "table {border-collapse:separate;border-spacing:.5rem}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non tentare di usare border-spacing come nel modello collapse.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.14, pagina PDF 216"
+    },
+    {
+      "id": "si-c14-q115",
+      "topicId": "si-c14-t14",
+      "question": "Come ottenere righe pari con fondo alternato?",
+      "answer": "Selezionare tbody tr:nth-child(even) con una regola background.",
+      "detail": "La scelta deve preservare contrasto e struttura leggibile.",
+      "example": "tbody tr:nth-child(even){background:#f7fafc}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire le intestazioni con il solo colore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.14, pagina PDF 216"
+    },
+    {
+      "id": "si-c14-q116",
+      "topicId": "si-c14-t14",
+      "question": "A cosa serve caption in una tabella?",
+      "answer": "A descrivere l’oggetto della tabella, facilitando comprensione e accessibilità.",
+      "detail": "Può essere stilizzato con padding e peso tipografico senza modificarne il significato.",
+      "example": "<caption>Offerte per segmento</caption>.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare soltanto un h2 lontano dalla tabella come etichetta implicita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.14, pagina PDF 216"
+    },
+    {
+      "id": "si-c14-q117",
+      "topicId": "si-c14-t14",
+      "question": "Perché scope, id e headers non sono sostituibili dal solo CSS?",
+      "answer": "Perché identificano relazioni semantiche tra intestazioni e celle, specialmente in tabelle complesse.",
+      "detail": "CSS modifica la presentazione ma non crea automaticamente le associazioni necessarie alle tecnologie assistive.",
+      "example": "<th scope=\"col\">Ricavi</th>.",
+      "formulas": [],
+      "connections": [
+        "Sistemi Informativi, Capitolo 13 — tabelle HTML accessibili"
+      ],
+      "mistakes": "Non dichiarare accessibile una tabella solo perché i th hanno uno sfondo colorato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.14, pagina PDF 216"
+    },
+    {
+      "id": "si-c14-q118",
+      "topicId": "si-c14-t14",
+      "question": "Come rendere utilizzabile una tabella larga su smartphone?",
+      "answer": "Consentire scorrimento orizzontale in un contenitore adeguato quando non è possibile comprimere le colonne.",
+      "detail": "Meglio conservare la struttura semantica che trasformare indiscriminatamente tutte le celle in blocchi.",
+      "example": "Contenitore overflow-x:auto intorno alla tabella.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non nascondere colonne economicamente necessarie senza comunicare il dato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.14, pagina PDF 216"
+    },
+    {
+      "id": "si-c14-q119",
+      "topicId": "si-c14-t15",
+      "question": "Qual è la finalità del caso ufficiale «Guida alla città»?",
+      "answer": "Mostrare progressivamente come struttura HTML e regole CSS creano un layout con più aree.",
+      "detail": "Gli esempi storici usano principalmente div e float, poi modificano tipografia, tabelle, bordi, cascata e responsive.",
+      "example": "Pagina turistica con header, menu, sidebar, contenuto, footer.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imparare soltanto il CSS finale senza comprendere le fasi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.15, pagine PDF 216–217"
+    },
+    {
+      "id": "si-c14-q120",
+      "topicId": "si-c14-t15",
+      "question": "Quali sono le cinque aree fondamentali di «Guida alla città»?",
+      "answer": "Header, menu principale, barra laterale, area contenuti e trailer/footer.",
+      "detail": "La figura 14.7 le dispone in una pagina coerente con la sequenza delle slide.",
+      "example": "header, nav, aside, main, footer nel markup adattato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre il caso a due colonne ignorando header e trailer.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.15, pagine PDF 216–217"
+    },
+    {
+      "id": "si-c14-q121",
+      "topicId": "si-c14-t15",
+      "question": "Che differenza tra il markup delle slide e l’adattamento del manuale?",
+      "answer": "Le slide usano prevalentemente div con classi; il manuale conserva le classi ma sostituisce quando opportuno elementi HTML semantici.",
+      "detail": "Il confronto è esplicito per distinguere convenzione storica e soluzione moderna.",
+      "example": "<div class=\"header\"> vs <header class=\"header\">.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente i tag moderni all’esempio originale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.15, pagine PDF 216–217"
+    },
+    {
+      "id": "si-c14-q122",
+      "topicId": "si-c14-t15",
+      "question": "Come viene disposta la barra laterale nel caso storico?",
+      "answer": "Con float:left, width:22%, padding e box-sizing:border-box.",
+      "detail": "La colonna content imposta margin-left:22% per lasciare spazio al menu.",
+      "example": ".menubar {float:left;width:22%;padding:1rem;box-sizing:border-box}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ignorare il padding nel rapporto fra colonne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.15, pagine PDF 216–217"
+    },
+    {
+      "id": "si-c14-q123",
+      "topicId": "si-c14-t15",
+      "question": "Perché il trailer utilizza clear:both?",
+      "answer": "Per evitare che venga affiancato al menu laterale flottante.",
+      "detail": "Il footer deve comparire dopo la regione a colonne, anche se la sidebar è più alta del contenuto.",
+      "example": ".trailer {clear:both}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidarsi a z-index per risolvere il flusso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.15, pagine PDF 216–217"
+    },
+    {
+      "id": "si-c14-q124",
+      "topicId": "si-c14-t15",
+      "question": "Quale ruolo ha la classe container nell’esempio?",
+      "answer": "Imposta una larghezza proporzionale e il centraggio, con un bordo che rende visibile il contenitore.",
+      "detail": "Il manuale usa width:90%, margin:1rem auto e border.",
+      "example": ".container {width:90%;margin:1rem auto;border:1px solid #555}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderla con la classe content.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.15, pagine PDF 216–217"
+    },
+    {
+      "id": "si-c14-q125",
+      "topicId": "si-c14-t15",
+      "question": "Quali sette passaggi compongono l’esercitazione progressiva?",
+      "answer": "HTML a cinque aree; font/link; tabella; padding/background; colonne float/clear; cascata; media query per piccoli schermi.",
+      "detail": "Il valore didattico è verificare a ogni passaggio l’effetto sul rendering.",
+      "example": "Aggiungere la tabella degli orari prima di cambiare il layout.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non saltare direttamente alla versione finale se devi spiegare il procedimento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.15, pagine PDF 216–217"
+    },
+    {
+      "id": "si-c14-q126",
+      "topicId": "si-c14-t15",
+      "question": "Quale confronto di specificità è suggerito dal laboratorio «Guida alla città»?",
+      "answer": "Confrontare stili concorrenti su h1, .header h1 e dichiarazione inline style.",
+      "detail": "Serve a riconoscere specificità e priorità a parità di origine e importanza.",
+      "example": ".header h1 supera h1; inline normal spesso supera entrambe.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare “ultima regola vince” senza valutare priorità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.15, pagine PDF 216–217"
+    },
+    {
+      "id": "si-c14-q127",
+      "topicId": "si-c14-t15",
+      "question": "Quale limite emerge cambiando l’altezza delle colonne nella pagina storica?",
+      "answer": "Il layout float può presentare sfondi/altezza e flusso dei contenuti non intuitivi.",
+      "detail": "Il docente usa il caso anche per far osservare questi inconvenienti.",
+      "example": "Sidebar con molti link, content molto breve.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare il layout a float robusto in tutti i contenuti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.15, pagine PDF 216–217"
+    },
+    {
+      "id": "si-c14-q128",
+      "topicId": "si-c14-t15",
+      "question": "Perché è corretto conoscere il float del caso e usare Grid altrove?",
+      "answer": "La prima attività verifica la lettura delle slide, la seconda applica un modello più adatto a nuove interfacce.",
+      "detail": "La distinzione fra esercizio ufficiale e integrazioni moderne è esplicita.",
+      "example": "Esame: ricostruire .menubar; progetto: due colonne in Grid.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cancellare la soluzione docente in nome delle buone pratiche moderne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.15, pagine PDF 216–217"
+    },
+    {
+      "id": "si-c14-q129",
+      "topicId": "si-c14-t16",
+      "question": "Che cosa significa cascata CSS?",
+      "answer": "Il procedimento che risolve dichiarazioni concorrenti su una stessa proprietà di un elemento.",
+      "detail": "Tiene conto di pertinenza, origini, importanza, layer, specificità e ordine secondo le regole applicabili.",
+      "example": "h2 color blue e .content h2 color green.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare cascata al semplice ordine delle righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q130",
+      "topicId": "si-c14-t16",
+      "question": "Quali sono le tre principali origini CSS?",
+      "answer": "User agent/browser, user/utente e author/autore della pagina.",
+      "detail": "La priorità dipende anche da !important e dagli altri livelli di cascata.",
+      "example": "Stile di default browser confrontato con style.css.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che ogni origine abbia sempre la stessa priorità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q131",
+      "topicId": "si-c14-t16",
+      "question": "Che cosa cambia con !important?",
+      "answer": "Interviene nel livello di importanza della cascata, che può prevalere su dichiarazioni normali più specifiche.",
+      "detail": "Non è un punteggio aggiuntivo alla specificità, bensì una differente priorità.",
+      "example": ".header h1 {color:blue!important} contro style=\"color:red\" normale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sommare !important a (ID,classi,tipi).",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q132",
+      "topicId": "si-c14-t16",
+      "question": "Una dichiarazione CSS inline normale prevale sempre su qualsiasi regola?",
+      "answer": "No: in condizioni ordinarie può prevalere su regole author normal, ma perde contro dichiarazioni di importanza superiore.",
+      "detail": "La comparazione deve partire da origine e importanza.",
+      "example": "style=\"color:red\" perde contro regola autore blue!important.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare inline come assolutamente imbattibile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q133",
+      "topicId": "si-c14-t16",
+      "question": "Come si rappresenta la specificità di un selettore ordinario?",
+      "answer": "Come tupla (ID, classi/attributi/pseudoclassi, tipi/pseudoelementi).",
+      "detail": "Si confrontano i componenti da sinistra a destra a parità dei livelli di precedenza superiori.",
+      "example": "#x=(1,0,0), .a .b=(0,2,0), h2=(0,0,1).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sommare elementi come se fossero punti arbitrari.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q134",
+      "topicId": "si-c14-t16",
+      "question": "Qual è la specificità di .content h2?",
+      "answer": "La tupla (0,1,1): una classe e un selettore di tipo.",
+      "detail": "Prevale su h2=(0,0,1) nelle condizioni di confronto indicate.",
+      "example": ".content h2 {color:green} supera h2 {color:blue}.",
+      "formulas": [
+        {
+          "latex": "(0,1,1)>(0,0,1)",
+          "meaning": "Confronto tra selettori .content h2 e h2"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non richiedere che la regola più specifica venga dopo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q135",
+      "topicId": "si-c14-t16",
+      "question": "Qual è la specificità di #prodotto?",
+      "answer": "La tupla (1,0,0), per un selettore ID.",
+      "detail": "Supera normali selettori fatti soltanto di classi e tipi a parità di livello.",
+      "example": "#prodotto prevale su .a .b se entrambi raggiungono lo stesso elemento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare 100 classi come equivalenti a un ID.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q136",
+      "topicId": "si-c14-t16",
+      "question": "Qual è la specificità di h2?",
+      "answer": "La tupla (0,0,1), per un selettore di tipo.",
+      "detail": "È inferiore a quella di una classe e di un ID in condizioni paritarie.",
+      "example": "h2 {color:blue}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il nome h2 come una classe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q137",
+      "topicId": "si-c14-t16",
+      "question": "Quando interviene l’ordine di apparizione delle regole?",
+      "answer": "Quando i criteri di precedenza di livello superiore e la specificità non risolvono il conflitto.",
+      "detail": "Per questo “l’ultima vince” è solo una regola condizionata.",
+      "example": "Due regole h2 normali, nella stessa origine e layer, con uguale specificità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicarlo quando un selettore ha specificità maggiore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q138",
+      "topicId": "si-c14-t16",
+      "question": "Che cosa sono i cascade layers?",
+      "answer": "Gruppi espliciti di regole CSS organizzati per gestire precedenze di cascata.",
+      "detail": "Sono una integrazione più avanzata del manuale, utile a ridurre conflitti fra reset, componenti e utility.",
+      "example": "@layer reset, components, utilities;.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurli a classi CSS o a commenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q139",
+      "topicId": "si-c14-t16",
+      "question": "Che cos’è l’ereditarietà CSS?",
+      "answer": "Il meccanismo per cui alcune proprietà assumono valori dal genitore in assenza di un valore applicabile direttamente.",
+      "detail": "È separata dalla cascata, che risolve dichiarazioni riferite a un elemento.",
+      "example": "body {color:#333} e p privo di regole eredita normalmente color.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che tutte le proprietà siano ereditabili.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q140",
+      "topicId": "si-c14-t16",
+      "question": "Quali proprietà sono generalmente ereditate e quali no?",
+      "answer": "color e font-family sono tipicamente ereditabili; margin, padding e border non lo sono automaticamente.",
+      "detail": "Le proprietà possono usare valori iniziali o regole diverse quando non ereditate.",
+      "example": "Un p eredita il colore del body, non il padding del div genitore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare inherit come comportamento implicito universale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q141",
+      "topicId": "si-c14-t16",
+      "question": "Che significato hanno inherit, initial e unset?",
+      "answer": "inherit forza il valore ereditato; initial seleziona il valore iniziale; unset sceglie eredità o iniziale secondo la proprietà.",
+      "detail": "Sono keyword speciali che controllano esplicitamente il modo di ottenere il valore.",
+      "example": "color:inherit, margin:initial.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere unset con display:none.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q142",
+      "topicId": "si-c14-t16",
+      "question": "Che cos’è revert rispetto a inherit?",
+      "answer": "Permette di tornare a un valore stabilito in considerazione degli altri livelli/origini pertinenti, anziché copiare semplicemente il valore del genitore.",
+      "detail": "È un’integrazione tecnica moderna dichiarata nel manuale.",
+      "example": "color:revert in un componente che rinuncia a una regola autore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equipararlo sempre al valore iniziale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q143",
+      "topicId": "si-c14-t16",
+      "question": "Perché il figlio em in `.content p em {color:blue}` è blu anche se il p è verde?",
+      "answer": "Perché il valore color viene dichiarato direttamente sull’em, mentre altre proprietà come font-size possono essere ereditate.",
+      "detail": "La dichiarazione specifica del discendente supera il semplice valore ereditato.",
+      "example": ".content p {color:darkgreen}; .content p em {color:blue}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare l’ereditarietà come un vincolo che impedisce override.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.16, pagine PDF 217–218"
+    },
+    {
+      "id": "si-c14-q144",
+      "topicId": "si-c14-t17",
+      "question": "Che cos’è una media query CSS?",
+      "answer": "Una condizione che attiva regole solo quando caratteristiche del mezzo o dell’area di visualizzazione soddisfano il criterio.",
+      "detail": "Permette adattamenti di stile senza modificare la struttura HTML.",
+      "example": "@media screen and (min-width:700px){...}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere media query e selettore DOM.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.17, pagine PDF 218–219"
+    },
+    {
+      "id": "si-c14-q145",
+      "topicId": "si-c14-t17",
+      "question": "Quali caratteristiche delle media query compaiono nelle slide?",
+      "answer": "Tipi screen e print, larghezza, altezza, orientamento e profondità colore.",
+      "detail": "Le condizioni possono combinarsi con and oppure con alternative separate da virgola.",
+      "example": "@media print {...}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare screen con un modello fisso di dispositivo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.17, pagine PDF 218–219"
+    },
+    {
+      "id": "si-c14-q146",
+      "topicId": "si-c14-t17",
+      "question": "Come si combinano due condizioni con and?",
+      "answer": "Entrambe devono essere soddisfatte per attivare quel ramo.",
+      "detail": "È una congiunzione logica sulle caratteristiche del mezzo.",
+      "example": "@media screen and (min-width:700px).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non leggerlo come una scelta fra le condizioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.17, pagine PDF 218–219"
+    },
+    {
+      "id": "si-c14-q147",
+      "topicId": "si-c14-t17",
+      "question": "Che cosa significa una lista di media query separate da virgola?",
+      "answer": "Una disgiunzione: è sufficiente che una alternativa sia soddisfatta.",
+      "detail": "Differisce da and, che richiede che le condizioni siano contemporaneamente vere.",
+      "example": "@media screen, print {...}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire alla virgola il significato di AND.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.17, pagine PDF 218–219"
+    },
+    {
+      "id": "si-c14-q148",
+      "topicId": "si-c14-t17",
+      "question": "Che cosa significa progettazione mobile-first?",
+      "answer": "Definire prima gli stili di base per viewport strette e introdurre variazioni per spazio maggiore.",
+      "detail": "I breakpoint vanno scelti in funzione del contenuto e della leggibilità.",
+      "example": "Colonne larghe 100% di base, due colonne oltre 700px.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare mobile-first a una lista di modelli commerciali di smartphone.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.17, pagine PDF 218–219"
+    },
+    {
+      "id": "si-c14-q149",
+      "topicId": "si-c14-t17",
+      "question": "Come si interpreta il breakpoint 700px dell’esempio?",
+      "answer": "È una soglia per applicare il layout più largo quando la viewport soddisfa min-width.",
+      "detail": "È un valore dimostrativo; non rappresenta un confine universale smartphone/desktop.",
+      "example": "@media (min-width:700px){.menubar{width:22%;float:left}}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare il numero come requisito fisso di ogni sito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.17, pagine PDF 218–219"
+    },
+    {
+      "id": "si-c14-q150",
+      "topicId": "si-c14-t17",
+      "question": "Come si adatta il caso Guida alla città alla stampa?",
+      "answer": "Con una media query print che nasconde menu e sidebar e imposta colori adatti alla stampa.",
+      "detail": "Stampa e schermo possono avere presentazioni diverse della stessa struttura HTML.",
+      "example": "@media print {.menu,.menubar{display:none} body{color:black;background:white}}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non stampare inutilmente la navigazione se il requisito richiede solo il contenuto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.17, pagine PDF 218–219"
+    },
+    {
+      "id": "si-c14-q151",
+      "topicId": "si-c14-t17",
+      "question": "Perché il meta viewport è importante in una pagina mobile?",
+      "answer": "Aiuta il browser mobile a interpretare correttamente dimensione della viewport e scala iniziale.",
+      "detail": "È un elemento HTML, non una proprietà CSS; è già trattato nel Capitolo 13.",
+      "example": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non tentare di inserirlo in un file CSS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.17, pagine PDF 218–219"
+    },
+    {
+      "id": "si-c14-q152",
+      "topicId": "si-c14-t17",
+      "question": "Quali aspetti controllare in un layout responsive?",
+      "answer": "Leggibilità del testo, input utilizzabili, contenuti senza taglio e tabelle eventualmente scrollabili.",
+      "detail": "Il responsive è verificato su differenti viewport, non basta una regola media query corretta.",
+      "example": "Un modulo a due colonne diventa una colonna sotto 650px.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non forzare lo zoom o comprimere eccessivamente le tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.17, pagine PDF 218–219"
+    },
+    {
+      "id": "si-c14-q153",
+      "topicId": "si-c14-t17",
+      "question": "Perché le media query non cambiano la semantica del documento?",
+      "answer": "Operano sulla presentazione e non modificano necessariamente struttura, significato e dati.",
+      "detail": "La navigazione e la gerarchia HTML vanno progettate indipendentemente dal breakpoint.",
+      "example": "Stessa section dei KPI su mobile e desktop.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidare la classificazione degli utenti ai soli px della viewport.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.17, pagine PDF 218–219"
+    },
+    {
+      "id": "si-c14-q154",
+      "topicId": "si-c14-t18",
+      "question": "Qual è la distinzione fondamentale tra Flexbox e Grid?",
+      "answer": "Flexbox organizza prevalentemente un asse; Grid coordina righe e colonne in due dimensioni.",
+      "detail": "Entrambi sono layout CSS moderni; il capitolo li presenta come integrazioni rispetto ai principali esempi float delle slide.",
+      "example": "Barra pulsanti con Flexbox e dashboard offerte con Grid.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare float come soluzione obbligatoria per ogni colonna.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.18, pagine PDF 219–220"
+    },
+    {
+      "id": "si-c14-q155",
+      "topicId": "si-c14-t18",
+      "question": "Quale proprietà attiva Flexbox?",
+      "answer": "display:flex oppure inline-flex sul contenitore.",
+      "detail": "I figli partecipano al layout flessibile regolato da direzione, allineamenti e flessibilità.",
+      "example": ".actions {display:flex;gap:.75rem}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire display:flex ai singoli pulsanti se vuoi organizzare i figli.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.18, pagine PDF 219–220"
+    },
+    {
+      "id": "si-c14-q156",
+      "topicId": "si-c14-t18",
+      "question": "Che cosa controlla flex-direction?",
+      "answer": "L’orientamento e la direzione dell’asse principale del layout flex.",
+      "detail": "row e column producono strutture diverse, influenzando justify-content e align-items.",
+      "example": "flex-direction:row per pulsanti affiancati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che justify-content controlli sempre l’asse orizzontale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.18, pagine PDF 219–220"
+    },
+    {
+      "id": "si-c14-q157",
+      "topicId": "si-c14-t18",
+      "question": "Che cosa controllano justify-content e align-items?",
+      "answer": "Il primo dispone elementi sull’asse principale; il secondo li allinea sull’asse trasversale nel modello appropriato.",
+      "detail": "Il significato visivo degli assi dipende da flex-direction.",
+      "example": ".actions {justify-content:flex-end;align-items:center}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire i due assi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.18, pagine PDF 219–220"
+    },
+    {
+      "id": "si-c14-q158",
+      "topicId": "si-c14-t18",
+      "question": "A che cosa serve flex-wrap:wrap?",
+      "answer": "Consente ai flex item di disporsi su più righe quando lo spazio disponibile non basta.",
+      "detail": "È utile per barre di comandi responsive.",
+      "example": "Tre pulsanti diventano due righe su smartphone stretto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che imposti una griglia fissa a colonne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.18, pagine PDF 219–220"
+    },
+    {
+      "id": "si-c14-q159",
+      "topicId": "si-c14-t18",
+      "question": "Che cosa rappresentano flex-grow, flex-shrink e flex-basis?",
+      "answer": "Sono componenti che descrivono crescita, restringimento e dimensione di base dei flex item.",
+      "detail": "La shorthand flex le raggruppa nei casi previsti.",
+      "example": "flex:0 0 auto per bottoni che mantengono dimensione naturale nell’esempio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare flex-basis come margine.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.18, pagine PDF 219–220"
+    },
+    {
+      "id": "si-c14-q160",
+      "topicId": "si-c14-t18",
+      "question": "Come si attiva CSS Grid e come si definiscono tre colonne?",
+      "answer": "display:grid con grid-template-columns, per esempio repeat(3,minmax(0,1fr)).",
+      "detail": "Il gap separa le tracce e minmax aiuta a evitare larghezze minime indesiderate.",
+      "example": ".dashboard {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare Grid una proprietà che cambia i dati delle schede.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.18, pagine PDF 219–220"
+    },
+    {
+      "id": "si-c14-q161",
+      "topicId": "si-c14-t18",
+      "question": "Che cosa indica 1fr in Grid?",
+      "answer": "Una quota dello spazio disponibile nel dimensionamento delle tracce.",
+      "detail": "La ripartizione dipende dalle altre tracce e dalle regole di dimensionamento.",
+      "example": "repeat(3,1fr) per tre tracce proporzionali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattarlo come una percentuale fissa della viewport.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.18, pagine PDF 219–220"
+    },
+    {
+      "id": "si-c14-q162",
+      "topicId": "si-c14-t18",
+      "question": "Perché minmax(0,1fr) è utile in una dashboard?",
+      "answer": "Consente di ridurre la traccia senza imporre automaticamente il minimo intrinseco del contenuto troppo largo.",
+      "detail": "Aiuta a prevenire overflow dovuti a contenuti lunghi.",
+      "example": "Tre card con descrizioni o identificatori estesi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarsi che corregga ogni elemento non comprimibile senza altre regole.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.18, pagine PDF 219–220"
+    },
+    {
+      "id": "si-c14-q163",
+      "topicId": "si-c14-t18",
+      "question": "Come trasformare tre colonne Grid in una su mobile?",
+      "answer": "A un breakpoint si imposta grid-template-columns:1fr.",
+      "detail": "La trasformazione agisce sul layout ma non sui dati delle card.",
+      "example": "@media(max-width:700px){.dashboard{grid-template-columns:1fr}}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cancellare le due card in eccesso per adattare la vista.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.18, pagine PDF 219–220"
+    },
+    {
+      "id": "si-c14-q164",
+      "topicId": "si-c14-t18",
+      "question": "Che cosa sono le custom properties CSS?",
+      "answer": "Proprietà personalizzate, tipicamente con nome --brand, lette mediante var(--brand).",
+      "detail": "Centralizzano valori di colore e spaziatura riusabili fra regole.",
+      "example": ":root {--brand:#234e78}; .button {background:var(--brand)}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderle con variabili PHP valutate lato server.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.18, pagine PDF 219–220"
+    },
+    {
+      "id": "si-c14-q165",
+      "topicId": "si-c14-t18",
+      "question": "Che cosa rappresenta @layer nel manuale?",
+      "answer": "Un modo moderno di definire gruppi ordinati di regole per governare la cascata.",
+      "detail": "Nel caso sono dichiarati reset, components e utilities come integrazione avanzata.",
+      "example": "@layer reset, components, utilities;.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare @layer un elemento HTML.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.18, pagine PDF 219–220"
+    },
+    {
+      "id": "si-c14-q166",
+      "topicId": "si-c14-t19",
+      "question": "Quali aspetti rendono un CSS realmente usabile e accessibile?",
+      "answer": "Contrasto, leggibilità, adattamento del testo e della viewport, navigazione da tastiera e indicatori comprensibili.",
+      "detail": "La bellezza estetica è solo uno dei requisiti dell’interfaccia.",
+      "example": "Modulo leggibile a zoom elevato con pulsanti utilizzabili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare accessibile una pagina solo perché il CSS è valido.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q167",
+      "topicId": "si-c14-t19",
+      "question": "Perché gli stati non devono essere comunicati solo tramite colore?",
+      "answer": "Il significato può non essere percepibile da utenti con diverse capacità visive o in contesti di rendering differenti.",
+      "detail": "Servono etichette e indicatori testuali accanto al colore.",
+      "example": "Errore: testo «Prezzo non valido» oltre al bordo rosso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dipendere esclusivamente da verde/rosso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q168",
+      "topicId": "si-c14-t19",
+      "question": "Perché non eliminare il focus outline senza alternativa?",
+      "answer": "Renderebbe difficile capire quale controllo riceve la navigazione da tastiera.",
+      "detail": "La regola :focus-visible aiuta a fornire un feedback chiaro.",
+      "example": "button:focus-visible {outline:3px solid #e9a83b}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere hover con focus.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q169",
+      "topicId": "si-c14-t19",
+      "question": "Quali tre modalità accetta il W3C CSS Validation Service?",
+      "answer": "URL, file caricato e codice incollato.",
+      "detail": "Controlla sintassi e conformità rispetto al profilo selezionato.",
+      "example": "Caricare stile.css e osservare errori e avvisi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usarlo come test automatico del comportamento del backend.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q170",
+      "topicId": "si-c14-t19",
+      "question": "Che cosa non garantisce un esito positivo del validatore CSS?",
+      "answer": "Non garantisce layout bello, accessibile, usabile o compatibile in ogni browser.",
+      "detail": "La convalida è un controllo tecnico necessario ma non esaustivo.",
+      "example": "Una regola valida può nascondere il pulsante importante con display:none.",
+      "formulas": [],
+      "connections": [
+        "Sistemi Informativi, Capitolo 13 — validazione HTML e accessibilità"
+      ],
+      "mistakes": "Non interpretare «CSS valido» come qualità complessiva certificata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q171",
+      "topicId": "si-c14-t19",
+      "question": "A che cosa servono i DevTools del browser nello studio CSS?",
+      "answer": "A ispezionare DOM, regole applicate/sovrascritte, box model, valori calcolati e media query.",
+      "detail": "Permettono di trovare errori di selettore, priorità, valori e dimensionamento.",
+      "example": "Aprire il pannello Styles e disattivare padding di .libro.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non modificare il CSS alla cieca quando una regola sembra ignorata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q172",
+      "topicId": "si-c14-t19",
+      "question": "Che cos’era acid3 nelle slide e quale cautela esplicita il manuale?",
+      "answer": "Una suite storica di test delle capacità dei browser, non una valutazione completa di una moderna applicazione.",
+      "detail": "Oggi servono verifiche funzionali, accessibilità e browser/viewport reali.",
+      "example": "Test di una dashboard con tastiera e smartphone diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare un punteggio storico come certificazione attuale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q173",
+      "topicId": "si-c14-t19",
+      "question": "Qual è il perimetro dell’esercitazione ufficiale «La mia biblioteca»?",
+      "answer": "Una semplice pagina con titolo, sottotitolo, testo, scheda di un libro e pulsante, stilizzata progressivamente.",
+      "detail": "L’obiettivo è praticare file HTML/CSS separati e vedere l’effetto di una proprietà per volta, non progettare un database di libri.",
+      "example": "index.html con h1,h2,p,section.libro e button.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare la lezione in un progetto CRUD inesistente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q174",
+      "topicId": "si-c14-t19",
+      "question": "Quali sono i primi due passi del laboratorio «La mia biblioteca»?",
+      "answer": "Creare index.html con link a stile.css e poi impostare sfondo lightgray sul body.",
+      "detail": "Il manuale integra meta viewport per compatibilità moderna.",
+      "example": "body {background-color:lightgray}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cominciare dal CSS se non è collegato al documento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q175",
+      "topicId": "si-c14-t19",
+      "question": "Come sono stilizzati titolo, sottotitolo e paragrafi nel laboratorio?",
+      "answer": "h1 blu e centrato; h2 verde e centrato; p Arial 16px con line-height:1.6.",
+      "detail": "Servono a osservare colori, allineamento, font e interlinea.",
+      "example": "h1 {color:blue;text-align:center}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cambiare tutte le proprietà insieme senza isolare gli effetti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q176",
+      "topicId": "si-c14-t19",
+      "question": "Quali misure ha la scheda .libro dell’esercizio?",
+      "answer": "background white, width 400px, padding 20px, margin 30px auto, border 1px solid gray, border-radius 10px.",
+      "detail": "Nel content-box predefinito la larghezza fino al bordo è 442px.",
+      "example": ".libro {width:400px;padding:20px;border:1px solid gray}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non contare i 400px come ingombro completo su mobile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q177",
+      "topicId": "si-c14-t19",
+      "question": "Qual è la larghezza nominale al bordo della scheda .libro in content-box?",
+      "answer": "442px, cioè 400+20+20+1+1.",
+      "detail": "I margini esterni sono esclusi; 30px auto riguarda direzione verticale/orizzontale secondo shorthand.",
+      "example": "Figura/scheda libro della esercitazione.",
+      "formulas": [
+        {
+          "latex": "400+2\\cdot20+2\\cdot1=442\\mathrm{px}",
+          "meaning": "Larghezza al bordo della card La mia biblioteca in content-box"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non sommare arbitrariamente i margini auto alla larghezza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q178",
+      "topicId": "si-c14-t19",
+      "question": "Qual è la sequenza di stile del pulsante della biblioteca?",
+      "answer": "Sfondo darkblue, testo white, padding 10px 20px, bordo none, border-radius 5px e cursor pointer; in hover sfondo green.",
+      "detail": "L’effetto hover non fornisce da solo feedback di tastiera.",
+      "example": "button:hover {background-color:green}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidare l’interazione al solo hover.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q179",
+      "topicId": "si-c14-t19",
+      "question": "Come correggere il possibile overflow della scheda larga 400px?",
+      "answer": "Usare border-box e max-width:100%, oppure una larghezza responsive come min(100%,400px), con calcolo coerente del contenitore.",
+      "detail": "Sono adattamenti integrativi rispetto alle misure originali delle slide.",
+      "example": ".libro {box-sizing:border-box;max-width:100%}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ignorare padding e bordo su viewport inferiori al totale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q180",
+      "topicId": "si-c14-t19",
+      "question": "Quale verifica pratica propone il manuale per il laboratorio?",
+      "answer": "Aprire index.html, ispezionare .libro con DevTools, disattivare singole proprietà, testare focus tastiera e convalidare CSS.",
+      "detail": "L’osservazione incrementale collega teoria e rendering effettivo.",
+      "example": "Togliere border per distinguere confine del box e padding.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il laboratorio concluso senza verificarlo nel browser.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.19, pagine PDF 220–222"
+    },
+    {
+      "id": "si-c14-q181",
+      "topicId": "si-c14-t20",
+      "question": "Qual è il ruolo del caso EnerPrice nel Capitolo 14?",
+      "answer": "È un esempio originale di interfaccia per simulare un’offerta, non l’architettura definitiva del progetto.",
+      "detail": "Serve a collegare struttura semantica, presentazione CSS e responsive design.",
+      "example": "Form di consumo e prezzo con due card KPI.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire il codice a un requisito approvato di produzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.20, pagina PDF 222"
+    },
+    {
+      "id": "si-c14-q182",
+      "topicId": "si-c14-t20",
+      "question": "Quali campi contiene il form EnerPrice dimostrativo?",
+      "answer": "Consumo annuo in kWh e prezzo energia in €/kWh, entrambi numerici, con minimo 0 e required.",
+      "detail": "Il prezzo usa uno step dichiarato di 0.001 nell’esempio, il consumo è un numero non negativo.",
+      "example": "name=\"consumo\" e name=\"prezzo\" nel form method=\"post\".",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la presenza di min/required con validazione economica server-side.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.20, pagina PDF 222"
+    },
+    {
+      "id": "si-c14-q183",
+      "topicId": "si-c14-t20",
+      "question": "Quali aree della pagina EnerPrice sono rilevanti semanticamente?",
+      "answer": "main, h1, form con label/input, section con titolo e article per i KPI.",
+      "detail": "Il CSS non sostituisce la struttura semantica HTML.",
+      "example": "Sezione risultati con Ricavi stimati e Margine stimato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare KPI reali da contenuto grafico hardcoded.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.20, pagina PDF 222"
+    },
+    {
+      "id": "si-c14-q184",
+      "topicId": "si-c14-t20",
+      "question": "Come è impostata la griglia del form nel caso EnerPrice?",
+      "answer": "display:grid con due colonne repeat(2,minmax(0,1fr)), gap 1rem e padding.",
+      "detail": "La stessa scelta viene riutilizzata per i KPI in una griglia a due colonne.",
+      "example": ".form-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mettere la proprietà grid-template-columns solo sugli input.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.20, pagina PDF 222"
+    },
+    {
+      "id": "si-c14-q185",
+      "topicId": "si-c14-t20",
+      "question": "Come viene impostata la regola responsive per form e KPI?",
+      "answer": "Sotto 650px form-grid e kpis diventano a una sola colonna.",
+      "detail": "La struttura HTML è invariata e l’adattamento riguarda soltanto il layout.",
+      "example": "@media (max-width:650px){.form-grid,.kpis{grid-template-columns:1fr}}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare 650px come una misura universale per tutti i dispositivi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.20, pagina PDF 222"
+    },
+    {
+      "id": "si-c14-q186",
+      "topicId": "si-c14-t20",
+      "question": "Perché il bottone del caso ha :focus-visible?",
+      "answer": "Per rendere evidente il focus durante la navigazione da tastiera.",
+      "detail": "Uno sfondo ad alto contrasto non sostituisce il focus indicator.",
+      "example": "button:focus-visible {outline:3px solid #d6982b}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare soltanto button:hover.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.20, pagina PDF 222"
+    },
+    {
+      "id": "si-c14-q187",
+      "topicId": "si-c14-t20",
+      "question": "Qual è la responsabilità del CSS nel flusso EnerPrice?",
+      "answer": "Modificare aspetto e organizzazione responsive, senza calcolare margini, autorizzare utenti o salvare dati.",
+      "detail": "Calcolo, validazione applicativa e persistenza appartengono alla logica applicativa e DBMS.",
+      "example": "CSS può mostrare due KPI ma non determinare il loro valore reale.",
+      "formulas": [],
+      "connections": [
+        "Sistemi Informativi, Capitolo 10 — architettura database-driven",
+        "Progetto EnerPrice — MVC"
+      ],
+      "mistakes": "Non assegnare al CSS operazioni di business.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.20, pagina PDF 222"
+    },
+    {
+      "id": "si-c14-q188",
+      "topicId": "si-c14-t20",
+      "question": "Perché il codice dimostrativo non va copiato in produzione senza analisi?",
+      "answer": "Non è l’architettura definitiva e non implementa workflow, sicurezza e logica economica reale.",
+      "detail": "Il manuale lo segnala come laboratorio di presentazione, non progetto tecnico completo.",
+      "example": "Azione POST /simula richiede route e backend da definire.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il solo markup come applicazione funzionante.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.20, pagina PDF 222"
+    },
+    {
+      "id": "si-c14-q189",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 1] Come separare lo stile HTML in un file CSS?",
+      "answer": "Creare stile.css e aggiungere nella head di HTML un link rel=\"stylesheet\" con href corretto.",
+      "detail": "Prima di diagnosticare un problema di cascata verificare la risoluzione del percorso.",
+      "example": "<link rel=\"stylesheet\" href=\"stile.css\">.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare un href non corrispondente al file.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q190",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 2] Come selezionare tutti i p discendenti di main, inclusi i nipoti?",
+      "answer": "Usare main p, non main > p.",
+      "detail": "Il combinatore spazio non limita il livello di annidamento.",
+      "example": "main p {color:navy}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare > se il requisito include i nipoti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q191",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 3] Come selezionare tutte le card e il solo riepilogo?",
+      "answer": "Usare .card per la classe riutilizzata e #riepilogo per l’id singolo.",
+      "detail": "La classe identifica un gruppo, l’ID un elemento univoco.",
+      "example": ".card {...}; #riepilogo {...}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non riusare lo stesso id su ogni card.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q192",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 4] Come selezionare input obbligatori e numerici?",
+      "answer": "Con input[required] e input[type=\"number\"].",
+      "detail": "Il primo controlla presenza dell’attributo, il secondo uguaglianza del valore.",
+      "example": "input[required]{...}; input[type=\"number\"]{...}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare input.required per trovare l’attributo required.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q193",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 5] Quale regola CSS evidenzia un pulsante focalizzato da tastiera?",
+      "answer": "button:focus-visible con outline visibile.",
+      "detail": "È diverso da :hover e preserva l’usabilità senza mouse.",
+      "example": "button:focus-visible {outline:3px solid orange}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eliminare l’outline senza alternativa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q194",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 6] Qual è l’ingombro orizzontale con content-box width 240, padding 12, border 3 e margin 8 per lato?",
+      "answer": "286px, dati 240+24+6+16.",
+      "detail": "La larghezza fino al bordo è 270px e i margini aggiungono 16px.",
+      "example": "240+2×12+2×3+2×8=286px.",
+      "formulas": [
+        {
+          "latex": "240+2\\cdot12+2\\cdot3+2\\cdot8=286\\mathrm{px}",
+          "meaning": "Ingombro nominale dell’esercizio svolto 6"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non contare un solo lato di ogni spazio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q195",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 7] Con gli stessi valori ma border-box, quale larghezza ha il contenuto?",
+      "answer": "210px, cioè 240−24−6.",
+      "detail": "Width comprende già padding e bordo; margin resta fuori.",
+      "example": "240−2×12−2×3=210px.",
+      "formulas": [
+        {
+          "latex": "240-2\\cdot12-2\\cdot3=210\\mathrm{px}",
+          "meaning": "Content width dell’esercizio svolto 7"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non sottrarre anche margin dal contenuto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q196",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 8] Fra h2 e .content h2 normali quale colore vince se la seconda regola è verde?",
+      "answer": "Verde, a parità di origine, layer e importanza, perché (0,1,1) supera (0,0,1).",
+      "detail": "La posizione nel file non è decisiva finché la priorità più alta differisce.",
+      "example": "h2 {color:blue} e .content h2 {color:green}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire il risultato solo all’ordine.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q197",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 9] h1 inline rosso contro .header h1 blue!important: quale prevale?",
+      "answer": "Blue!important dell’autore, rispetto a una dichiarazione inline normale.",
+      "detail": "L’importanza ha priorità sulla normale specificità author in questo confronto.",
+      "example": "<h1 style=\"color:red\"> con regola .header h1 {color:blue!important}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare l’inline normale come imbattibile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q198",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 10] Se body ha color:#333 e div padding:10px, cosa eredita il p interno?",
+      "answer": "Normalmente il color #333, ma non il padding del div.",
+      "detail": "Color è ereditabile; padding non lo è automaticamente.",
+      "example": "body {color:#333}; div {padding:10px}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che ogni proprietà del genitore si propaghi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q199",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 11] Come si confrontano display:none, visibility:hidden e opacity:0?",
+      "answer": "Rimozione dal layout; invisibilità con spazio; trasparenza con box ancora presente e potenzialmente interattivo.",
+      "detail": "La distinzione conta anche per focus e tecnologie assistive.",
+      "example": "Tre classi applicate a tre contenuti analoghi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non parlare di tre forme equivalenti di nascondimento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q200",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 12] Come impedire che il footer scorra accanto a una sidebar float:left?",
+      "answer": "Applicare clear:both al footer e verificare dimensioni delle colonne.",
+      "detail": "La soluzione segue l’esempio storico docente.",
+      "example": ".trailer {clear:both}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non correggere con position:absolute sul footer.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q201",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 13] Come fissare un badge in alto a destra di una card?",
+      "answer": "Card position:relative; badge position:absolute con top e right.",
+      "detail": "La card positioned definisce il containing block nel caso.",
+      "example": ".badge{position:absolute;top:.5rem;right:.5rem}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare position:relative sul contenitore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q202",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 14] Come avere una colonna sotto 650px e tre sopra?",
+      "answer": "Usare una colonna come base e @media(min-width:650px) per le tre colonne.",
+      "detail": "È una soluzione mobile-first con Grid.",
+      "example": ".grid{grid-template-columns:1fr} @media(min-width:650px){.grid{grid-template-columns:repeat(3,1fr)}}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire min-width con max-width se il requisito è mobile-first.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q203",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 15] Come allineare tre pulsanti con spaziatura uniforme tramite Flexbox?",
+      "answer": "Contenitore display:flex, gap e justify-content appropriato; flex-wrap quando serve.",
+      "detail": "La distribuzione esatta dipende dall’allineamento richiesto.",
+      "example": ".actions {display:flex;gap:1rem;justify-content:space-between;flex-wrap:wrap}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare float per i pulsanti come prima scelta obbligata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q204",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 16] Come evitare doppi bordi in una tabella CSS?",
+      "answer": "Usare table {border-collapse:collapse} e impostare bordo/padding sulle celle.",
+      "detail": "Conservare la struttura HTML semantica, incluse th e caption.",
+      "example": "th,td {border:1px solid #999;padding:.5rem}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rimuovere le intestazioni per migliorare lo stile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q205",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 17] Perché .card .title non equivale a .card.title?",
+      "answer": "Il primo seleziona discendenti .title all’interno di .card; il secondo un elemento con entrambe le classi.",
+      "detail": "Lo spazio è un combinatore di discendenza.",
+      "example": "<div class=\"card title\"> corrisponde solo al secondo, se non è discendente appropriato di altra card.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare lo spazio trascurabile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q206",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 18] Quali passi spiegano il CSS del caso «Guida alla città»?",
+      "answer": "HTML con cinque aree, tipografia, tabella, box model, float/clear, cascata e media query.",
+      "detail": "È la sequenza didattica progressiva del corso.",
+      "example": "Sidebar 22% con float e footer liberato da clear.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non saltare le fasi di costruzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q207",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 19] Con font radice 16px, quanto vale font-size:1.5rem?",
+      "answer": "24px, perché 1.5×16=24.",
+      "detail": "Se fosse 1.5em il riferimento sarebbe la dimensione del font del contesto pertinente.",
+      "example": "html {font-size:16px}; h1 {font-size:1.5rem}.",
+      "formulas": [
+        {
+          "latex": "1{,}5\\mathrm{rem}\\cdot16\\mathrm{px}=24\\mathrm{px}",
+          "meaning": "Dimensione font relativa alla radice"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non usare em e rem come sinonimi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q208",
+      "topicId": "si-c14-t21",
+      "question": "[Esercizio svolto 20] Una regola valida non appare applicata: quali controlli fare?",
+      "answer": "Verificare caricamento CSS, selettore/DOM, origine, importanza, specificità, layer, media query e valori con DevTools.",
+      "detail": "Un CSS formalmente valido può non corrispondere all’elemento o essere sovrascritto.",
+      "example": "Ispezionare il pannello Styles e i valori calcolati della card.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non risolvere aggiungendo indiscriminatamente !important.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.21, pagine PDF 222–224"
+    },
+    {
+      "id": "si-c14-q209",
+      "topicId": "si-c14-t22",
+      "question": "[Esercizio autonomo A1] Quale selettore individua solo i p figli diretti di article?",
+      "answer": "article > p.",
+      "detail": "Il combinatore > limita a un grado di discendenza.",
+      "example": "Un p dentro section dentro article non corrisponde.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare article p se i nipoti vanno esclusi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.22, pagine PDF 224–225"
+    },
+    {
+      "id": "si-c14-q210",
+      "topicId": "si-c14-t22",
+      "question": "[Esercizio autonomo A2] Qual è l’ingombro esterno di width 180, padding 10, border 1 e margin 12 per lato in content-box?",
+      "answer": "226px, cioè 180+20+2+24.",
+      "detail": "La somma tiene conto di entrambi i lati.",
+      "example": "Box nominale 202px fino al bordo e 226px compresi i margini.",
+      "formulas": [
+        {
+          "latex": "180+2\\cdot10+2\\cdot1+2\\cdot12=226\\mathrm{px}",
+          "meaning": "Ingombro complessivo esercizio autonomo A2"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non sottrarre i margini come nel calcolo del contenuto border-box.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.22, pagine PDF 224–225"
+    },
+    {
+      "id": "si-c14-q211",
+      "topicId": "si-c14-t22",
+      "question": "[Esercizio autonomo A3] Tra #x e .a .b qual è più specifico a parità di origine e importanza?",
+      "answer": "#x con tupla (1,0,0) rispetto a (0,2,0).",
+      "detail": "Il confronto è lessicografico per componenti, non somma di punti.",
+      "example": "#x {color:blue} prevale su .a .b {color:red} se entrambi si applicano.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare due classi superiori a un ID.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.22, pagine PDF 224–225"
+    },
+    {
+      "id": "si-c14-q212",
+      "topicId": "si-c14-t22",
+      "question": "[Esercizio autonomo A4] Come posizionare il footer dopo float sui due lati?",
+      "answer": "Con clear:both, rispettando anche il contesto di formattazione.",
+      "detail": "È il controllo di flusso usato nel layout storico.",
+      "example": "footer {clear:both}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare z-index per separare il footer dai float.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.22, pagine PDF 224–225"
+    },
+    {
+      "id": "si-c14-q213",
+      "topicId": "si-c14-t22",
+      "question": "[Esercizio autonomo A5] Come nascondere il menu laterale in stampa?",
+      "answer": "Con @media print { .menubar {display:none;} }.",
+      "detail": "La presentazione stampa può semplificare gli elementi di navigazione.",
+      "example": "Sidebar eliminata dal layout stampato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rimuovere il menu dal DOM di tutte le modalità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.22, pagine PDF 224–225"
+    },
+    {
+      "id": "si-c14-q214",
+      "topicId": "si-c14-t22",
+      "question": "[Esercizio autonomo A6] Quale differenza fra colore rgba semitrasparente e opacity:.5?",
+      "answer": "RGBA agisce sulla singola componente colore; opacity semitrasparente sull’elemento e sui discendenti nel compositing.",
+      "detail": "L’effetto su testo, immagini e contenitori può essere differente.",
+      "example": "Sfondo scuro translucido e testo pieno vs intera card traslucida.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare opacity al contenitore per rendere trasparente solo lo sfondo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.22, pagine PDF 224–225"
+    },
+    {
+      "id": "si-c14-q215",
+      "topicId": "si-c14-t22",
+      "question": "[Esercizio autonomo A7] Come ottenere bordi tabellari collassati e righe alternate?",
+      "answer": "border-collapse:collapse per table, bordo per th/td e nth-child(even) per tr del tbody.",
+      "detail": "Conservare intestazioni HTML e contrasto sufficiente.",
+      "example": "tbody tr:nth-child(even){background:#f1f4f7}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un colore differente come sostituto dei th semantici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.22, pagine PDF 224–225"
+    },
+    {
+      "id": "si-c14-q216",
+      "topicId": "si-c14-t22",
+      "question": "[Esercizio autonomo A8] Come creare Grid con una colonna sotto 800px e due sopra?",
+      "answer": "Base display:grid e grid-template-columns:1fr; media min-width:800px con repeat(2,1fr).",
+      "detail": "È un comportamento responsive mobile-first.",
+      "example": "@media(min-width:800px){.grid{grid-template-columns:repeat(2,1fr)}}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre una terza colonna non richiesta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.22, pagine PDF 224–225"
+    },
+    {
+      "id": "si-c14-q217",
+      "topicId": "si-c14-t22",
+      "question": "[Esercizio autonomo A9] Perché un figlio può ereditare color ma non margin?",
+      "answer": "Perché color è generalmente ereditabile e margin no.",
+      "detail": "Ereditarietà dipende dalla definizione della proprietà, non dal fatto che esista un genitore.",
+      "example": "body color:#333; p eredita colore; p non eredita margin del div.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare la cascata a una propagazione di tutte le proprietà.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.22, pagine PDF 224–225"
+    },
+    {
+      "id": "si-c14-q218",
+      "topicId": "si-c14-t22",
+      "question": "[Esercizio autonomo A10] Cita due limiti delle due colonne float del corso.",
+      "answer": "Diverse altezze e flusso non intuitivo, con necessità di clear e gestione coerente delle dimensioni.",
+      "detail": "I layout dedicati sono spesso più robusti per nuove interfacce.",
+      "example": "Una sidebar molto lunga può complicare sfondo e footer.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il float equivalente a Grid.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.22, pagine PDF 224–225"
+    },
+    {
+      "id": "si-c14-q219",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 1–4] Quali sono definizione, vantaggio principale ed evoluzione di CSS?",
+      "answer": "CSS è Cascading Style Sheets, separa struttura HTML e presentazione ed è sviluppato per moduli, non in una specifica CSS4 monolitica.",
+      "detail": "Può stilizzare anche XML ed essere applicato a media differenti.",
+      "example": "La stessa pagina con CSS screen e CSS print.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere HTML, CSS e componenti del backend.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q220",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 5–7] Come si collega CSS esterno, si importa un CSS e si scrive una dichiarazione?",
+      "answer": "link rel=\"stylesheet\" in HTML; @import nel foglio di stile; proprietà: valore; come dichiarazione.",
+      "detail": "Sono costrutti collocati in contesti differenti.",
+      "example": "<link href=\"stile.css\" rel=\"stylesheet\">; @import url(\"base.css\"); color:navy.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserire @import come tag HTML.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q221",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 8–10] Che differenza c’è fra classi, discendenti, figli e fratelli adiacenti?",
+      "answer": ".card per classe; article p per discendenza; article > p per figli; h2 + p per il fratello p immediato.",
+      "detail": "I selettori dipendono dalla struttura DOM e non dal solo nome visivo degli elementi.",
+      "example": "Un p figlio di section dentro article non soddisfa article > p.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare gli spazi come irrilevanti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q222",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 11–13] Come distinguere attributi, pseudoclassi e pseudoelementi?",
+      "answer": "[type=\"number\"] testa un valore di attributo; :hover esprime stato; ::first-letter una parte del testo renderizzato.",
+      "detail": "Le categorie di selettori non sono sinonimi.",
+      "example": "input[type=\"number\"], button:hover, p::first-letter.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare :hover come unico mezzo per mostrare dati importanti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q223",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 14] Che cosa misura rem?",
+      "answer": "Una dimensione relativa al font dell’elemento radice.",
+      "detail": "Con radice 16px, 1.5rem vale 24px come riferimento.",
+      "example": "Dimensione dei titoli nella pagina.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con em.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q224",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 15–16] Che cosa distingue content-box e border-box?",
+      "answer": "Nel primo la width si riferisce al content; nel secondo comprende padding e border.",
+      "detail": "Il margin resta esterno in entrambi i casi.",
+      "example": "width:300px;padding:20px;border:2px → content 300 oppure 256 secondo il modello.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non includere margin nella width border-box.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q225",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 17] Qual è l’ordine di margin:1px 2px 3px 4px?",
+      "answer": "Alto 1, destra 2, basso 3, sinistra 4.",
+      "detail": "È la regola di shorthand con quattro valori.",
+      "example": "margin:1px 2px 3px 4px.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non leggere l’ordine come sinistra-destra-alto-basso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q226",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 18] Margin si eredita automaticamente?",
+      "answer": "No, in generale margin non è ereditabile.",
+      "detail": "Diverso da color e font-family.",
+      "example": "Il p figlio di un div non assume il margin del div.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare inherited e initial come sinonimi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q227",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 19–20] Qual è la funzione di inline-block e clear:both?",
+      "answer": "inline-block crea un box dimensionabile che resta in linea; clear:both evita l’affiancamento ai float precedenti su entrambi i lati.",
+      "detail": "Operano su aspetti differenti del layout.",
+      "example": "Badge inline-block; footer clear:both.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usarli come alternative equivalenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q228",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 21–22] Relative, absolute e z-index: quali distinzioni essenziali?",
+      "answer": "Relative conserva il posto originale; absolute esce dal flusso; z-index opera nei contesti di sovrapposizione pertinenti.",
+      "detail": "Lo stacking context impedisce un confronto globale ingenuo di tutti i valori z-index.",
+      "example": "Badge absolute dentro card relative; dialog con z-index.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che z-index:999 garantisca priorità globale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q229",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 23–24] Come distinguere display:none, visibility:hidden e opacity:0?",
+      "answer": "Niente box nel layout, invisibilità con spazio, trasparenza senza disabilitazione automatica.",
+      "detail": "Focus, interazione e accessibilità non sono necessariamente equivalenti.",
+      "example": "Menu stampa display:none; icona visualmente nascosta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare opacity una misura di sicurezza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q230",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 25] Color è normalmente ereditabile?",
+      "answer": "Sì, può propagarsi dal genitore in assenza di regola diretta applicabile.",
+      "detail": "Il figlio può sovrascriverlo con una dichiarazione propria.",
+      "example": "body {color:#333}; em {color:blue}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che margin si comporta allo stesso modo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q231",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 26–27] Come si confronta la specificità e quando conta l’ordine?",
+      "answer": "Si confronta la tupla ID, classi/attributi/pseudoclassi, tipi/pseudoelementi; l’ordine conta soltanto quando le priorità superiori sono pari.",
+      "detail": "Origine, importanza e layer possono prevalere prima della specificità.",
+      "example": "#x supera .a .b a condizioni pari.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare la cascata in «ultima regola vince».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q232",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 28] A che cosa servono le media query?",
+      "answer": "Ad applicare regole condizionate dal mezzo e dalle caratteristiche della viewport.",
+      "detail": "Permettono stampa e adattamento responsive senza cambiare il significato HTML.",
+      "example": "@media print, @media(min-width:700px).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare rigidamente dispositivi per larghezza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q233",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 29] Quando preferire Flexbox e quando Grid?",
+      "answer": "Flexbox per disposizione prevalentemente su un asse; Grid per righe e colonne coordinate.",
+      "detail": "Sono integrazioni moderne distinte dal float storico della lezione.",
+      "example": "Barra comandi in flex; KPI in grid.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descriverli come synonymi o come elementi HTML.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q234",
+      "topicId": "si-c14-t23",
+      "question": "[Autoverifica 30] Che cosa certifica un CSS validator?",
+      "answer": "Conformità e sintassi CSS rispetto al profilo prescelto, non qualità completa dell’interfaccia.",
+      "detail": "Usabilità, leggibilità, accessibilità e resa browser vanno testate separatamente.",
+      "example": "Un CSS valido può avere testo invisibile o basso contrasto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il validatore uno strumento unico di QA.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.23, pagine PDF 225–226"
+    },
+    {
+      "id": "si-c14-q235",
+      "topicId": "si-c14-t24",
+      "question": "Quali termini compongono il glossario essenziale del Capitolo 14?",
+      "answer": "Cascata, specificità, ereditarietà, containing block, box model, float, media query, breakpoint, Flexbox, Grid e custom property.",
+      "detail": "Le definizioni devono essere collegate agli esempi dei paragrafi precedenti.",
+      "example": "Box model per le larghezze; cascade per conflitti sui colori.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non memorizzare sigle senza saper spiegare l’effetto nel browser.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.24, pagina PDF 226"
+    },
+    {
+      "id": "si-c14-q236",
+      "topicId": "si-c14-t24",
+      "question": "Che differenza finale esiste fra cascata ed ereditarietà?",
+      "answer": "La cascata risolve dichiarazioni concorrenti sullo stesso elemento; l’ereditarietà propaga certe proprietà dal genitore.",
+      "detail": "Un valore diretto può sostituire un valore ricevuto per ereditarietà.",
+      "example": "em blu dentro p verde in .content.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare “ereditarietà” ogni prevalenza di selettori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.24, pagina PDF 226"
+    },
+    {
+      "id": "si-c14-q237",
+      "topicId": "si-c14-t24",
+      "question": "Che cos’è il containing block?",
+      "answer": "Il riferimento geometrico che il motore CSS usa per determinare determinate dimensioni e posizioni.",
+      "detail": "Dipende dal contesto e dal tipo di posizionamento.",
+      "example": "Card relative che contiene un badge absolute.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificarlo sempre con la viewport.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.24, pagina PDF 226"
+    },
+    {
+      "id": "si-c14-q238",
+      "topicId": "si-c14-t24",
+      "question": "Che cos’è un breakpoint?",
+      "answer": "Una soglia di condizioni in cui cambia una scelta di layout responsive.",
+      "detail": "Deve derivare dalle necessità del contenuto e non da categorie rigide dei dispositivi.",
+      "example": "Sotto 700px una colonna, sopra tre.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il nome del telefono come vincolo CSS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.24, pagina PDF 226"
+    },
+    {
+      "id": "si-c14-q239",
+      "topicId": "si-c14-t24",
+      "question": "Quali tre errori classici riguardano classi, specificità e !important?",
+      "answer": "Confondere #id con .classe; sommare specificità arbitrariamente; trattare !important come incremento di specificità.",
+      "detail": "Sono livelli semantici differenti di selezione e risoluzione conflitti.",
+      "example": "#x=(1,0,0) prevale su .a .b=(0,2,0) a priorità pari.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non forzare ogni conflitto con !important.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.24, pagina PDF 226"
+    },
+    {
+      "id": "si-c14-q240",
+      "topicId": "si-c14-t24",
+      "question": "Quali errori tipici riguardano box model e margin collapsing?",
+      "answer": "Dimenticare padding/border nel content-box e sommare sempre margini verticali contigui.",
+      "detail": "Il risultato dipende anche da box-sizing e contesto di formattazione.",
+      "example": "Content-box 300+40+4; margin 24 e 16 può collassare a 24.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire automaticamente il collasso ai flex item.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.24, pagina PDF 226"
+    },
+    {
+      "id": "si-c14-q241",
+      "topicId": "si-c14-t24",
+      "question": "Quali errori tipici riguardano position e opacity?",
+      "answer": "Usare absolute senza riferimento adeguato; confondere opacity:0 con display:none o protezione dei dati.",
+      "detail": "Posizionamento e trasparenza non stabiliscono sicurezza, stato disabilitato o accessibilità.",
+      "example": "Badge posizionato sulla viewport anziché sulla card.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non nascondere contenuti riservati solo con CSS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.24, pagina PDF 226"
+    },
+    {
+      "id": "si-c14-q242",
+      "topicId": "si-c14-t24",
+      "question": "Quali errori tipici riguardano responsive e float?",
+      "answer": "Usare float come sostituto universale di Grid/Flexbox e usare breakpoint come classificazione rigida dei dispositivi.",
+      "detail": "Il manuale distingue la comprensione delle slide dalle scelte progettuali moderne.",
+      "example": "Guida città in float; dashboard con Grid su viewport variabili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire le competenze sul layout storico con una sola tecnica moderna.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.24, pagina PDF 226"
+    },
+    {
+      "id": "si-c14-q243",
+      "topicId": "si-c14-t24",
+      "question": "Qual è la verifica finale di qualità per un foglio CSS?",
+      "answer": "Controllare sintassi, selettori, cascata, dimensioni, responsive, focus, contrasto e interazione reale, usando validatore e DevTools.",
+      "detail": "Sono controlli complementari, non un’unica prova di conformità.",
+      "example": "Testare il bottone con tastiera e la tabella su viewport stretta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere sufficiente che il CSS sia privo di errori sintattici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 2, Capitolo 14, §14.24, pagina PDF 226"
+    }
+  ]
+}

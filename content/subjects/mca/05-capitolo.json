@@ -1,0 +1,3193 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mca",
+  "source": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5: Customer metrics, Lezioni 20–24, pagine PDF 137–167. Fonte unica autorizzata.",
+  "chapter": {
+    "id": "mca-c05",
+    "title": "Customer metrics: fedeltà, consumo, esperienza e funnel di acquisizione",
+    "order": 5,
+    "topics": [
+      {
+        "id": "mca-c05-t01",
+        "title": "Customer Analytics, CRM e livelli di analisi"
+      },
+      {
+        "id": "mca-c05-t02",
+        "title": "Dati granulari, transazioni e qualità informativa"
+      },
+      {
+        "id": "mca-c05-t03",
+        "title": "Classificazione delle metriche e statistica di base"
+      },
+      {
+        "id": "mca-c05-t04",
+        "title": "Fedeltà temporale, frequency e pattern"
+      },
+      {
+        "id": "mca-c05-t05",
+        "title": "Visite uniche, recency e profilo R–F"
+      },
+      {
+        "id": "mca-c05-t06",
+        "title": "Brand Sensitivity e concentrazione degli acquisti"
+      },
+      {
+        "id": "mca-c05-t07",
+        "title": "Share of Loyalty e Willingness to Search"
+      },
+      {
+        "id": "mca-c05-t08",
+        "title": "Churn e dinamica della base clienti"
+      },
+      {
+        "id": "mca-c05-t09",
+        "title": "Retention, contratti e costo del churn"
+      },
+      {
+        "id": "mca-c05-t10",
+        "title": "Customer Lifetime Value e decisioni economiche"
+      },
+      {
+        "id": "mca-c05-t11",
+        "title": "Scontrino medio, frequenza e spesa normalizzata"
+      },
+      {
+        "id": "mca-c05-t12",
+        "title": "Categorie di spesa e Ratio Spend Score"
+      },
+      {
+        "id": "mca-c05-t13",
+        "title": "Market Basket Variance ed entropia"
+      },
+      {
+        "id": "mca-c05-t14",
+        "title": "Redemption, promozioni e reservation price"
+      },
+      {
+        "id": "mca-c05-t15",
+        "title": "WTP, margini e applicazioni delle metriche di consumo"
+      },
+      {
+        "id": "mca-c05-t16",
+        "title": "Customer experience, percezioni e scale"
+      },
+      {
+        "id": "mca-c05-t17",
+        "title": "Customer satisfaction e CSAT"
+      },
+      {
+        "id": "mca-c05-t18",
+        "title": "Attributi, gap e priorità di miglioramento"
+      },
+      {
+        "id": "mca-c05-t19",
+        "title": "Willingness to Recommend, NPS e rating"
+      },
+      {
+        "id": "mca-c05-t20",
+        "title": "WOM, engagement, statistica ed errori"
+      },
+      {
+        "id": "mca-c05-t21",
+        "title": "Funnel, notorietà aided/unaided e top of mind"
+      },
+      {
+        "id": "mca-c05-t22",
+        "title": "Impression, reach, frequenza e CPM"
+      },
+      {
+        "id": "mca-c05-t23",
+        "title": "Attitude, intenzioni, visite, bounce e CTR"
+      },
+      {
+        "id": "mca-c05-t24",
+        "title": "Adoption, conversion, redemption e acquisizione"
+      },
+      {
+        "id": "mca-c05-t25",
+        "title": "Trial, repeat, penetrazione e analisi delle campagne"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "Lezione 20, §1 — pagina PDF 137",
+        "cardIds": [
+          "mca-c05-q001",
+          "mca-c05-q002"
+        ]
+      },
+      {
+        "label": "Lezione 20, §1.1 — pagina PDF 137",
+        "cardIds": [
+          "mca-c05-q003",
+          "mca-c05-q004"
+        ]
+      },
+      {
+        "label": "Lezione 20, §1.2 — pagina PDF 137",
+        "cardIds": [
+          "mca-c05-q005",
+          "mca-c05-q006"
+        ]
+      },
+      {
+        "label": "Lezione 20, §2 — pagina PDF 137",
+        "cardIds": [
+          "mca-c05-q007"
+        ]
+      },
+      {
+        "label": "Lezione 20, §3 — pagina PDF 138",
+        "cardIds": [
+          "mca-c05-q008",
+          "mca-c05-q009"
+        ]
+      },
+      {
+        "label": "Lezione 20, §3.1 — pagina PDF 138",
+        "cardIds": [
+          "mca-c05-q010",
+          "mca-c05-q011"
+        ]
+      },
+      {
+        "label": "Lezione 20, §3.2 — pagina PDF 138",
+        "cardIds": [
+          "mca-c05-q012"
+        ]
+      },
+      {
+        "label": "Lezione 20, §4 — pagina PDF 139",
+        "cardIds": [
+          "mca-c05-q013",
+          "mca-c05-q014"
+        ]
+      },
+      {
+        "label": "Lezione 20, §5 — pagina PDF 139",
+        "cardIds": [
+          "mca-c05-q015"
+        ]
+      },
+      {
+        "label": "Lezione 20, §6 — pagina PDF 139",
+        "cardIds": [
+          "mca-c05-q016"
+        ]
+      },
+      {
+        "label": "Lezione 20, §7 — pagina PDF 140",
+        "cardIds": [
+          "mca-c05-q017",
+          "mca-c05-q018"
+        ]
+      },
+      {
+        "label": "Lezione 20, §7.1 — pagina PDF 140",
+        "cardIds": [
+          "mca-c05-q019"
+        ]
+      },
+      {
+        "label": "Lezione 20, §7.2 — pagina PDF 140",
+        "cardIds": [
+          "mca-c05-q020"
+        ]
+      },
+      {
+        "label": "Lezione 20, §8 — pagina PDF 140",
+        "cardIds": [
+          "mca-c05-q021"
+        ]
+      },
+      {
+        "label": "Lezione 20, §8 — pagina PDF 141",
+        "cardIds": [
+          "mca-c05-q022"
+        ]
+      },
+      {
+        "label": "Lezione 20, §8.1 — pagina PDF 141",
+        "cardIds": [
+          "mca-c05-q023"
+        ]
+      },
+      {
+        "label": "Lezione 20, §9 — pagina PDF 141",
+        "cardIds": [
+          "mca-c05-q024"
+        ]
+      },
+      {
+        "label": "Lezione 20, §10 — pagina PDF 141",
+        "cardIds": [
+          "mca-c05-q025"
+        ]
+      },
+      {
+        "label": "Lezione 20, §10.1 — pagina PDF 142",
+        "cardIds": [
+          "mca-c05-q026"
+        ]
+      },
+      {
+        "label": "Lezione 20, §10.2 — pagina PDF 142",
+        "cardIds": [
+          "mca-c05-q027"
+        ]
+      },
+      {
+        "label": "Lezione 20, §10.3 — pagina PDF 142",
+        "cardIds": [
+          "mca-c05-q028"
+        ]
+      },
+      {
+        "label": "Lezione 20, §11 — pagina PDF 142",
+        "cardIds": [
+          "mca-c05-q029"
+        ]
+      },
+      {
+        "label": "Lezione 20, §12 — pagina PDF 142",
+        "cardIds": [
+          "mca-c05-q030"
+        ]
+      },
+      {
+        "label": "Lezione 20, §13 — pagina PDF 143",
+        "cardIds": [
+          "mca-c05-q031",
+          "mca-c05-q032"
+        ]
+      },
+      {
+        "label": "Lezione 20, §14 — pagina PDF 143",
+        "cardIds": [
+          "mca-c05-q033"
+        ]
+      },
+      {
+        "label": "Lezione 20, §15 — pagina PDF 144",
+        "cardIds": [
+          "mca-c05-q034"
+        ]
+      },
+      {
+        "label": "Lezione 21, §1 — pagina PDF 144",
+        "cardIds": [
+          "mca-c05-q035"
+        ]
+      },
+      {
+        "label": "Lezione 21, §2 — pagina PDF 144",
+        "cardIds": [
+          "mca-c05-q036",
+          "mca-c05-q037"
+        ]
+      },
+      {
+        "label": "Lezione 21, §2.1 — pagina PDF 145",
+        "cardIds": [
+          "mca-c05-q038"
+        ]
+      },
+      {
+        "label": "Lezione 21, §3 — pagina PDF 145",
+        "cardIds": [
+          "mca-c05-q039",
+          "mca-c05-q040",
+          "mca-c05-q041",
+          "mca-c05-q042"
+        ]
+      },
+      {
+        "label": "Lezione 21, §3.1 — pagina PDF 145",
+        "cardIds": [
+          "mca-c05-q043"
+        ]
+      },
+      {
+        "label": "Lezione 21, §4 — pagina PDF 146",
+        "cardIds": [
+          "mca-c05-q044",
+          "mca-c05-q045",
+          "mca-c05-q046"
+        ]
+      },
+      {
+        "label": "Lezione 21, §5 — pagina PDF 146",
+        "cardIds": [
+          "mca-c05-q047"
+        ]
+      },
+      {
+        "label": "Lezione 21, §5.1 — pagina PDF 146",
+        "cardIds": [
+          "mca-c05-q048",
+          "mca-c05-q049"
+        ]
+      },
+      {
+        "label": "Lezione 21, §5.2 — pagina PDF 147",
+        "cardIds": [
+          "mca-c05-q050"
+        ]
+      },
+      {
+        "label": "Lezione 21, §6 — pagina PDF 147",
+        "cardIds": [
+          "mca-c05-q051",
+          "mca-c05-q052"
+        ]
+      },
+      {
+        "label": "Lezione 21, §7 — pagina PDF 147",
+        "cardIds": [
+          "mca-c05-q053"
+        ]
+      },
+      {
+        "label": "Lezione 21, §8 — pagina PDF 147",
+        "cardIds": [
+          "mca-c05-q054"
+        ]
+      },
+      {
+        "label": "Lezione 21, §8 — pagina PDF 148",
+        "cardIds": [
+          "mca-c05-q055",
+          "mca-c05-q056"
+        ]
+      },
+      {
+        "label": "Lezione 21, §8.1 — pagina PDF 148",
+        "cardIds": [
+          "mca-c05-q057"
+        ]
+      },
+      {
+        "label": "Lezione 21, §8.2 — pagina PDF 148",
+        "cardIds": [
+          "mca-c05-q058",
+          "mca-c05-q059"
+        ]
+      },
+      {
+        "label": "Lezione 21, §8.3 — pagina PDF 148",
+        "cardIds": [
+          "mca-c05-q060"
+        ]
+      },
+      {
+        "label": "Lezione 21, §9 — pagina PDF 148",
+        "cardIds": [
+          "mca-c05-q061",
+          "mca-c05-q062",
+          "mca-c05-q063",
+          "mca-c05-q064"
+        ]
+      },
+      {
+        "label": "Lezione 21, §10 — pagina PDF 149",
+        "cardIds": [
+          "mca-c05-q065"
+        ]
+      },
+      {
+        "label": "Lezione 21, §11 — pagina PDF 149",
+        "cardIds": [
+          "mca-c05-q066",
+          "mca-c05-q067",
+          "mca-c05-q068"
+        ]
+      },
+      {
+        "label": "Lezione 21, §12 — pagina PDF 149",
+        "cardIds": [
+          "mca-c05-q069"
+        ]
+      },
+      {
+        "label": "Lezione 22, §1 — pagina PDF 150",
+        "cardIds": [
+          "mca-c05-q070"
+        ]
+      },
+      {
+        "label": "Lezione 22, §2 — pagina PDF 150",
+        "cardIds": [
+          "mca-c05-q071",
+          "mca-c05-q072"
+        ]
+      },
+      {
+        "label": "Lezione 22, §3 — pagina PDF 150",
+        "cardIds": [
+          "mca-c05-q073",
+          "mca-c05-q074",
+          "mca-c05-q075"
+        ]
+      },
+      {
+        "label": "Lezione 22, §3 — pagina PDF 151",
+        "cardIds": [
+          "mca-c05-q076"
+        ]
+      },
+      {
+        "label": "Lezione 22, §4 — pagina PDF 151",
+        "cardIds": [
+          "mca-c05-q077",
+          "mca-c05-q078"
+        ]
+      },
+      {
+        "label": "Lezione 22, §5 — pagina PDF 151",
+        "cardIds": [
+          "mca-c05-q079",
+          "mca-c05-q080"
+        ]
+      },
+      {
+        "label": "Lezione 22, §5 — pagina PDF 152",
+        "cardIds": [
+          "mca-c05-q081",
+          "mca-c05-q082"
+        ]
+      },
+      {
+        "label": "Lezione 22, §6 — pagina PDF 152",
+        "cardIds": [
+          "mca-c05-q083",
+          "mca-c05-q084",
+          "mca-c05-q085",
+          "mca-c05-q086"
+        ]
+      },
+      {
+        "label": "Lezione 22, §7 — pagina PDF 152",
+        "cardIds": [
+          "mca-c05-q087"
+        ]
+      },
+      {
+        "label": "Lezione 22, §7 — pagina PDF 153",
+        "cardIds": [
+          "mca-c05-q088",
+          "mca-c05-q089"
+        ]
+      },
+      {
+        "label": "Lezione 22, §8 — pagina PDF 153",
+        "cardIds": [
+          "mca-c05-q090",
+          "mca-c05-q091",
+          "mca-c05-q092"
+        ]
+      },
+      {
+        "label": "Lezione 22, §9 — pagina PDF 153",
+        "cardIds": [
+          "mca-c05-q093"
+        ]
+      },
+      {
+        "label": "Lezione 22, §9 — pagina PDF 154",
+        "cardIds": [
+          "mca-c05-q094",
+          "mca-c05-q095"
+        ]
+      },
+      {
+        "label": "Lezione 22, §10 — pagina PDF 154",
+        "cardIds": [
+          "mca-c05-q096",
+          "mca-c05-q097",
+          "mca-c05-q098"
+        ]
+      },
+      {
+        "label": "Lezione 22, §11 — pagina PDF 154",
+        "cardIds": [
+          "mca-c05-q099"
+        ]
+      },
+      {
+        "label": "Lezione 22, §12 — pagina PDF 154",
+        "cardIds": [
+          "mca-c05-q100"
+        ]
+      },
+      {
+        "label": "Lezione 22, §12 — pagina PDF 155",
+        "cardIds": [
+          "mca-c05-q101"
+        ]
+      },
+      {
+        "label": "Lezione 23, §1 — pagina PDF 155",
+        "cardIds": [
+          "mca-c05-q102",
+          "mca-c05-q103"
+        ]
+      },
+      {
+        "label": "Lezione 23, §2 — pagina PDF 155",
+        "cardIds": [
+          "mca-c05-q104",
+          "mca-c05-q105"
+        ]
+      },
+      {
+        "label": "Lezione 23, §3 — pagina PDF 155",
+        "cardIds": [
+          "mca-c05-q106"
+        ]
+      },
+      {
+        "label": "Lezione 23, §3 — pagina PDF 156",
+        "cardIds": [
+          "mca-c05-q107"
+        ]
+      },
+      {
+        "label": "Lezione 23, §4 — pagina PDF 156",
+        "cardIds": [
+          "mca-c05-q108",
+          "mca-c05-q109",
+          "mca-c05-q110",
+          "mca-c05-q111"
+        ]
+      },
+      {
+        "label": "Lezione 23, §5 — pagina PDF 156",
+        "cardIds": [
+          "mca-c05-q112"
+        ]
+      },
+      {
+        "label": "Lezione 23, §5 — pagina PDF 157",
+        "cardIds": [
+          "mca-c05-q113"
+        ]
+      },
+      {
+        "label": "Lezione 23, §6 — pagina PDF 157",
+        "cardIds": [
+          "mca-c05-q114"
+        ]
+      },
+      {
+        "label": "Lezione 23, §7 — pagina PDF 157",
+        "cardIds": [
+          "mca-c05-q115",
+          "mca-c05-q116"
+        ]
+      },
+      {
+        "label": "Lezione 23, §7 — pagina PDF 158",
+        "cardIds": [
+          "mca-c05-q117"
+        ]
+      },
+      {
+        "label": "Lezione 23, §8 — pagina PDF 158",
+        "cardIds": [
+          "mca-c05-q118",
+          "mca-c05-q119"
+        ]
+      },
+      {
+        "label": "Lezione 23, §9 — pagina PDF 158",
+        "cardIds": [
+          "mca-c05-q120",
+          "mca-c05-q121"
+        ]
+      },
+      {
+        "label": "Lezione 23, §10 — pagina PDF 158",
+        "cardIds": [
+          "mca-c05-q122"
+        ]
+      },
+      {
+        "label": "Lezione 23, §11 — pagina PDF 159",
+        "cardIds": [
+          "mca-c05-q123",
+          "mca-c05-q124"
+        ]
+      },
+      {
+        "label": "Lezione 23, §12 — pagina PDF 159",
+        "cardIds": [
+          "mca-c05-q125",
+          "mca-c05-q126",
+          "mca-c05-q127"
+        ]
+      },
+      {
+        "label": "Lezione 23, §13 — pagina PDF 159",
+        "cardIds": [
+          "mca-c05-q128"
+        ]
+      },
+      {
+        "label": "Lezione 23, §14 — pagina PDF 160",
+        "cardIds": [
+          "mca-c05-q129"
+        ]
+      },
+      {
+        "label": "Lezione 24, §1 — pagina PDF 160",
+        "cardIds": [
+          "mca-c05-q130",
+          "mca-c05-q131"
+        ]
+      },
+      {
+        "label": "Lezione 24, §2 — pagina PDF 161",
+        "cardIds": [
+          "mca-c05-q132"
+        ]
+      },
+      {
+        "label": "Lezione 24, §2.1 — pagina PDF 161",
+        "cardIds": [
+          "mca-c05-q133"
+        ]
+      },
+      {
+        "label": "Lezione 24, §2.2 — pagina PDF 161",
+        "cardIds": [
+          "mca-c05-q134"
+        ]
+      },
+      {
+        "label": "Lezione 24, §2.3 — pagina PDF 161",
+        "cardIds": [
+          "mca-c05-q135",
+          "mca-c05-q136",
+          "mca-c05-q137"
+        ]
+      },
+      {
+        "label": "Lezione 24, §2.4 — pagina PDF 161",
+        "cardIds": [
+          "mca-c05-q138"
+        ]
+      },
+      {
+        "label": "Lezione 24, §3 — pagina PDF 161",
+        "cardIds": [
+          "mca-c05-q139",
+          "mca-c05-q140",
+          "mca-c05-q141"
+        ]
+      },
+      {
+        "label": "Lezione 24, §3 — pagina PDF 162",
+        "cardIds": [
+          "mca-c05-q142"
+        ]
+      },
+      {
+        "label": "Lezione 24, §4 — pagina PDF 162",
+        "cardIds": [
+          "mca-c05-q143",
+          "mca-c05-q144"
+        ]
+      },
+      {
+        "label": "Lezione 24, §4.1 — pagina PDF 162",
+        "cardIds": [
+          "mca-c05-q145"
+        ]
+      },
+      {
+        "label": "Lezione 24, §5 — pagina PDF 162",
+        "cardIds": [
+          "mca-c05-q146"
+        ]
+      },
+      {
+        "label": "Lezione 24, §5.1 — pagina PDF 162",
+        "cardIds": [
+          "mca-c05-q147",
+          "mca-c05-q148"
+        ]
+      },
+      {
+        "label": "Lezione 24, §5.2 — pagina PDF 162",
+        "cardIds": [
+          "mca-c05-q149"
+        ]
+      },
+      {
+        "label": "Lezione 24, §5.2 — pagina PDF 163",
+        "cardIds": [
+          "mca-c05-q150"
+        ]
+      },
+      {
+        "label": "Lezione 24, §5.3 — pagina PDF 163",
+        "cardIds": [
+          "mca-c05-q151"
+        ]
+      },
+      {
+        "label": "Lezione 24, §6 — pagina PDF 163",
+        "cardIds": [
+          "mca-c05-q152",
+          "mca-c05-q153"
+        ]
+      },
+      {
+        "label": "Lezione 24, §7 — pagina PDF 164",
+        "cardIds": [
+          "mca-c05-q154",
+          "mca-c05-q155",
+          "mca-c05-q156"
+        ]
+      },
+      {
+        "label": "Lezione 24, §8 — pagina PDF 164",
+        "cardIds": [
+          "mca-c05-q157",
+          "mca-c05-q158",
+          "mca-c05-q159",
+          "mca-c05-q160"
+        ]
+      },
+      {
+        "label": "Lezione 24, §9 — pagina PDF 164",
+        "cardIds": [
+          "mca-c05-q161",
+          "mca-c05-q162"
+        ]
+      },
+      {
+        "label": "Lezione 24, §9.1 — pagina PDF 165",
+        "cardIds": [
+          "mca-c05-q163"
+        ]
+      },
+      {
+        "label": "Lezione 24, §9.2 — pagina PDF 165",
+        "cardIds": [
+          "mca-c05-q164"
+        ]
+      },
+      {
+        "label": "Lezione 24, §9.3 — pagina PDF 165",
+        "cardIds": [
+          "mca-c05-q165"
+        ]
+      },
+      {
+        "label": "Lezione 24, §10 — pagina PDF 165",
+        "cardIds": [
+          "mca-c05-q166",
+          "mca-c05-q167"
+        ]
+      },
+      {
+        "label": "Lezione 24, §11 — pagina PDF 166",
+        "cardIds": [
+          "mca-c05-q168"
+        ]
+      },
+      {
+        "label": "Lezione 24, §12 — pagina PDF 166",
+        "cardIds": [
+          "mca-c05-q169",
+          "mca-c05-q170",
+          "mca-c05-q171",
+          "mca-c05-q172"
+        ]
+      },
+      {
+        "label": "Lezione 24, §13 — pagina PDF 166",
+        "cardIds": [
+          "mca-c05-q173"
+        ]
+      },
+      {
+        "label": "Lezione 24, §14 — pagina PDF 167",
+        "cardIds": [
+          "mca-c05-q174"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "mca-c05-q001",
+      "topicId": "mca-c05-t01",
+      "question": "Che cos’è la Customer Analytics secondo l’impostazione di Fader e Bradlow riportata nel manuale?",
+      "answer": "Raccolta, gestione, analisi e impiego strategico di dati granulari sui comportamenti della clientela.",
+      "detail": "Le quattro operazioni sono connesse: dati affidabili → organizzazione → metriche e modelli → decisioni aziendali. Non basta disporre di molti dati se non sono riconducibili ai clienti o non guidano scelte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §1, pagina PDF 137"
+    },
+    {
+      "id": "mca-c05-q002",
+      "topicId": "mca-c05-t01",
+      "question": "Quale valore aggiunge la Customer Analytics alle misure aggregate del marketing?",
+      "answer": "L’analisi granulare del singolo cliente e dell’evoluzione dei suoi comportamenti nel tempo.",
+      "detail": "Clienti che acquistano oggi lo stesso prodotto possono avere probabilità di riacquisto, margine futuro e rischio di abbandono molto diversi; una media di mercato li nasconde.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 1 — quote aggregate di mercato"
+      ],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §1, pagina PDF 137"
+    },
+    {
+      "id": "mca-c05-q003",
+      "topicId": "mca-c05-t01",
+      "question": "Quali sei caratteristiche qualificano la Customer Analytics nel Capitolo 5?",
+      "answer": "Granularità, orientamento predittivo, longitudinalità, multicanalità, multidisciplinarità e attenzione al comportamento osservato.",
+      "detail": "Le previsioni sono incerte; le serie temporali sono più informative di un’istantanea; l’integrazione dei canali richiede liceità e qualità; le opinioni e la demografia restano utili senza sostituire le azioni concrete.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §1.1, pagina PDF 137"
+    },
+    {
+      "id": "mca-c05-q004",
+      "topicId": "mca-c05-t01",
+      "question": "Perché l’orientamento longitudinale è importante nelle analisi dei clienti?",
+      "answer": "Perché il numero complessivo di acquisti non mostra ordine temporale, regolarità e cambiamento di comportamento.",
+      "detail": "Due clienti con 48 visite nello stesso periodo hanno la stessa frequenza media, ma uno può essere regolare e un altro aver cessato le visite da mesi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §1.1, pagina PDF 137"
+    },
+    {
+      "id": "mca-c05-q005",
+      "topicId": "mca-c05-t01",
+      "question": "Quali sono i quattro livelli di analisi dei dati cliente e quali domande rispondono?",
+      "answer": "Descrittivo: cosa è successo; diagnostico: quali fattori accompagnano il fenomeno; predittivo: cosa potrebbe accadere; decisionale: quale azione conviene.",
+      "detail": "La diagnosi osservazionale individua associazioni, non causalità dimostrata. Il livello decisionale richiede anche costi, benefici e confronto tra interventi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §1.2, pagina PDF 137"
+    },
+    {
+      "id": "mca-c05-q006",
+      "topicId": "mca-c05-t01",
+      "question": "Perché una correlazione tra ritardi di consegna e bassa frequenza non dimostra la causa del calo?",
+      "answer": "Perché i due fenomeni possono essere collegati a variabili confondenti o a una relazione non causale.",
+      "detail": "Il manuale distingue diagnosi e decisione: prima di attribuire l’effetto ai ritardi servono analisi con disegni e dati coerenti, non soltanto due serie associate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §1.2, pagina PDF 137"
+    },
+    {
+      "id": "mca-c05-q007",
+      "topicId": "mca-c05-t01",
+      "question": "Che differenza esiste tra CRM e Customer Analytics?",
+      "answer": "Il CRM gestisce processi e relazioni di acquisizione, servizio e mantenimento; la Customer Analytics è la componente analitica che supporta tali decisioni.",
+      "detail": "Un CRM può registrare contratti, richieste e rinnovi; l’analisi dello storico cerca segnali di riduzione dell’attività o probabilità di abbandono, senza sostituire le decisioni del management.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §2, pagina PDF 137"
+    },
+    {
+      "id": "mca-c05-q008",
+      "topicId": "mca-c05-t02",
+      "question": "Quali unità si devono distinguere prima di calcolare customer metrics su transazioni?",
+      "answer": "Cliente, evento, transazione/ordine, riga dell’ordine, periodo e attributo.",
+      "detail": "Una transazione può contenere più righe e un cliente può effettuare più transazioni. Contare le righe come acquisti sovrastima la frequenza; contare accessi come persone ignora sessioni ripetute.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §3, pagina PDF 138"
+    },
+    {
+      "id": "mca-c05-q009",
+      "topicId": "mca-c05-t02",
+      "question": "Perché l’identificativo cliente stabile è indispensabile nelle analisi longitudinali?",
+      "answer": "Permette di riunire correttamente transazioni, interazioni e date dello stesso cliente nei diversi periodi.",
+      "detail": "Duplicazioni d’identità o account condivisi compromettono frequency, recency e fedeltà. L’ID deve essere interpretabile secondo l’unità effettiva osservata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §3, pagina PDF 138"
+    },
+    {
+      "id": "mca-c05-q010",
+      "topicId": "mca-c05-t02",
+      "question": "Come differiscono transaction table e customer table?",
+      "answer": "La transaction table registra eventi/ordini con data e cliente; la customer table registra un cliente per riga, attributi e metriche sintetiche del periodo.",
+      "detail": "Nell’esempio C1 ha tre ordini (20+12+15=47 €) fra gennaio e febbraio; C2 e C3 uno ciascuno. Le misure per cliente devono usare la medesima finestra osservativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §3.1, pagina PDF 138"
+    },
+    {
+      "id": "mca-c05-q011",
+      "topicId": "mca-c05-t02",
+      "question": "Nella tabella del manuale quanto ha speso C1 nei mesi gennaio–febbraio e quante transazioni ha fatto?",
+      "answer": "C1 ha effettuato tre ordini per 47 € complessivi.",
+      "detail": "Gli ordini O1=20 €, O2=12 € e O4=15 € appartengono a C1: le tre transazioni non diventano quattro contando le categorie o i prodotti contenuti.",
+      "example": "3 ordini; 20 + 12 + 15 = 47 €.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §3.1, pagina PDF 138"
+    },
+    {
+      "id": "mca-c05-q012",
+      "topicId": "mca-c05-t02",
+      "question": "Quali errori di qualità del dato alterano più spesso le metriche cliente?",
+      "answer": "Duplicati, ID incoerenti, date mancanti, resi e cancellazioni mal gestiti, unità di tempo discordanti e finestre di osservazione differenti.",
+      "detail": "Un reso può modificare importi e numero di eventi secondo la regola adottata. Confrontare due ordini in 15 giorni con due ordini in 180 giorni senza normalizzazione è fuorviante.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §3.2, pagina PDF 138"
+    },
+    {
+      "id": "mca-c05-q013",
+      "topicId": "mca-c05-t03",
+      "question": "Quali sei famiglie di customer metrics distingue il corso?",
+      "answer": "Awareness, Attitude, Adoption, Consumo, Esperienza e Fedeltà.",
+      "detail": "La notorietà misura conoscenza, l’attitude giudizi e intenzioni, l’adoption azioni, il consumo spesa e paniere, l’esperienza soddisfazione, la fedeltà continuità/valore. Il funnel non è obbligatoriamente lineare.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §4, pagina PDF 139"
+    },
+    {
+      "id": "mca-c05-q014",
+      "topicId": "mca-c05-t03",
+      "question": "Perché una visita ripetuta al sito non equivale necessariamente a fedeltà?",
+      "answer": "Perché visita, acquisto, soddisfazione e permanenza nella relazione sono costrutti diversi.",
+      "detail": "La persona può visitare spesso per risolvere un problema o confrontare concorrenti, senza acquistare; un cliente soddisfatto può non riacquistare perché non ha un nuovo bisogno.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §4, pagina PDF 139"
+    },
+    {
+      "id": "mca-c05-q015",
+      "topicId": "mca-c05-t03",
+      "question": "Quali scale e indicatori statistici sono prerequisiti per interpretare le metriche cliente?",
+      "answer": "Scale nominali, ordinali e quantitative; media, varianza e deviazione standard.",
+      "detail": "La varianza descrittiva della popolazione usa N, quella campionaria di norma n−1; la deviazione standard restituisce la dispersione nelle unità originarie. Non fare medie di codici nominali.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\bar{x}=\\frac{\\sum_{i=1}^{n}x_i}{n}",
+          "meaning": "Media"
+        },
+        {
+          "latex": "\\sigma^2=\\frac{\\sum_{i=1}^{N}(x_i-\\mu)^2}{N}",
+          "meaning": "Varianza di popolazione"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §5, pagina PDF 139"
+    },
+    {
+      "id": "mca-c05-q016",
+      "topicId": "mca-c05-t03",
+      "question": "In quali due dimensioni viene distinta la fedeltà nel manuale?",
+      "answer": "Fedeltà nel tempo (ripetizione e continuità) e fedeltà nello spazio delle alternative (preferenza/concentrazione su brand).",
+      "detail": "Un cliente può acquistare spesso ma alternare molti marchi; un altro può scegliere sempre un solo marchio ma acquistare raramente. Nessuna misura di sola frequenza rivela l’esclusività.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §6, pagina PDF 139"
+    },
+    {
+      "id": "mca-c05-q017",
+      "topicId": "mca-c05-t04",
+      "question": "Qual è la formula della frequenza normalizzata in un intervallo T?",
+      "answer": "f_T = (N / D) × T, dove N è il numero di eventi, D i giorni osservati e T i giorni dell’intervallo standard.",
+      "detail": "D e T devono utilizzare la stessa unità; il valore stima il numero medio di eventi nel periodo standard assumendo un ritmo rappresentativo. Nelle slide compare anche f = 1/T̄ per eventi idealmente periodici.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "f_T=\\frac{N}{D}\\cdot T",
+          "meaning": "f_T = (N / D) × T, dove N è il numero di eventi, D i giorni osservati e T i giorni dell’intervallo standard."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §7, pagina PDF 140"
+    },
+    {
+      "id": "mca-c05-q018",
+      "topicId": "mca-c05-t04",
+      "question": "Un cliente effettua 18 acquisti in 90 giorni: qual è la frequenza su 30 e su 7 giorni?",
+      "answer": "Su 30 giorni f₃₀=6; su 7 giorni f₇=1,4 acquisti.",
+      "detail": "Sono frequenze medie normalizzate, non la prova che ogni mese abbia contenuto esattamente sei acquisti.",
+      "example": "18/90×30=6; 18/90×7=1,4.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §7, pagina PDF 140"
+    },
+    {
+      "id": "mca-c05-q019",
+      "topicId": "mca-c05-t04",
+      "question": "Come va interpretato un tasso medio di sei acquisti ogni trenta giorni?",
+      "answer": "È una frequenza normalizzata media, non la distribuzione reale di acquisti in ciascun mese.",
+      "detail": "Le sequenze mensili 6–6–6 e 15–3–0 producono entrambe 18 acquisti in 90 giorni e f₃₀=6, ma hanno regolarità e segnali di cambiamento radicalmente diversi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §7.1, pagina PDF 140"
+    },
+    {
+      "id": "mca-c05-q020",
+      "topicId": "mca-c05-t04",
+      "question": "Qual è la frequenza mensile convenzionale dell’esempio con 48 visite in 211 giorni?",
+      "answer": "f₃₀=(48/211)×30≈6,82 visite per 30 giorni.",
+      "detail": "Il mese convenzionale di 30 giorni non coincide con la media semplice dei sette mesi di calendario. Occorre dichiarare durata D e finestra T.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "f_{30}=\\frac{48}{211}\\cdot30\\approx6{,}82",
+          "meaning": "f₃₀=(48/211)×30≈6,82 visite per 30 giorni."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §7.2, pagina PDF 140"
+    },
+    {
+      "id": "mca-c05-q021",
+      "topicId": "mca-c05-t04",
+      "question": "Che cosa mostrano i clienti A, B e C con 48 visite ciascuno nelle slide?",
+      "answer": "La stessa frequenza complessiva può corrispondere a un comportamento regolare, discontinuo oppure in netto declino.",
+      "detail": "Le sequenze mensili sono A [7,5,7,9,7,6,7], B [12,0,6,1,11,0,18], C [18,12,11,6,1,0,0]. Lo stesso N/D non fornisce il trend.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §8, pagina PDF 140"
+    },
+    {
+      "id": "mca-c05-q022",
+      "topicId": "mca-c05-t04",
+      "question": "Che differenza c’è tra dispersione della frequenza mensile e direzione del trend?",
+      "answer": "La deviazione standard misura la variabilità, ma non rivela se gli acquisti aumentano o diminuiscono nel tempo.",
+      "detail": "Nell’esempio la deviazione standard è ≈1,21 per A e ≈7,03 per B e C; B e C sono variabili allo stesso modo pur avendo sequenze temporali differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §8, pagina PDF 141"
+    },
+    {
+      "id": "mca-c05-q023",
+      "topicId": "mca-c05-t04",
+      "question": "Quali possibili letture manageriali emergono dai pattern dei clienti A, B e C?",
+      "answer": "A stabile: sostenere la relazione; B discontinuo: indagare stagionalità o promozioni; C in calo recente: approfondire possibile inattività.",
+      "detail": "Il crollo delle visite di C è un segnale, non la prova automatica di churn permanente. Servono recency, contesto e dati ulteriori.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §8.1, pagina PDF 141"
+    },
+    {
+      "id": "mca-c05-q024",
+      "topicId": "mca-c05-t05",
+      "question": "Qual è la formula della frequenza media di visita web basata sui visitatori unici?",
+      "answer": "V_T / U_T, con visite V_T e visitatori unici U_T nello stesso periodo.",
+      "detail": "12.000 visite su 3.000 unique visitors danno 4 visite per visitatore: non significa che ogni persona abbia visitato esattamente quattro volte. Cookie e device non identificano perfettamente persone fisiche.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "F_{web}=\\frac{V_T}{U_T}",
+          "meaning": "V_T / U_T, con visite V_T e visitatori unici U_T nello stesso periodo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §9, pagina PDF 141"
+    },
+    {
+      "id": "mca-c05-q025",
+      "topicId": "mca-c05-t05",
+      "question": "Che cosa misura Recency e come viene calcolata?",
+      "answer": "Il tempo trascorso dall’ultimo acquisto fino alla data comune di analisi: Recency = T₀ − T_last.",
+      "detail": "Valore basso = acquisto recente, valore alto = ultimo acquisto lontano nel tempo. Non coincide con età anagrafica, anzianità di relazione o redditività.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "R=T_0-T_{last}",
+          "meaning": "Il tempo trascorso dall’ultimo acquisto fino alla data comune di analisi: Recency = T₀ − T_last."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §10, pagina PDF 141"
+    },
+    {
+      "id": "mca-c05-q026",
+      "topicId": "mca-c05-t05",
+      "question": "Al 31 ottobre 2026, quale recency ha un acquisto del 26 ottobre e uno del 1° settembre?",
+      "answer": "Rispettivamente 5 e 60 giorni, secondo la differenza tra date usata nel manuale.",
+      "detail": "Per chi non ha mai acquistato non esiste T_last: recency non definita, non pari a zero. Un prospect richiede un trattamento separato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §10.1, pagina PDF 142"
+    },
+    {
+      "id": "mca-c05-q027",
+      "topicId": "mca-c05-t05",
+      "question": "Come si costruisce una Recency binaria con soglia Δ?",
+      "answer": "Recency_bin=1 quando l’ultimo acquisto è entro Δ giorni (R≤Δ); vale 0 se R>Δ.",
+      "detail": "La soglia dipende dalla categoria e dalla periodicità normale degli acquisti. Per Δ=30 giorni, R=5 produce 1, R=60 produce 0.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "R_{bin}=\\begin{cases}1 & R\\leq\\Delta\\\\0 & R>\\Delta\\end{cases}",
+          "meaning": "Recency_bin=1 quando l’ultimo acquisto è entro Δ giorni (R≤Δ); vale 0 se R>Δ."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §10.2, pagina PDF 142"
+    },
+    {
+      "id": "mca-c05-q028",
+      "topicId": "mca-c05-t05",
+      "question": "Quali cautele servono quando si confrontano recency di clienti diversi?",
+      "answer": "Stessa data di riferimento e stessa unità temporale, soglia pertinente alla categoria e distinzione fra inattività e abbandono.",
+      "detail": "In alcuni beni acquistati raramente anche 180 giorni senza comprare possono essere normali; nell’acquisto quotidiano possono essere un segnale critico.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §10.3, pagina PDF 142"
+    },
+    {
+      "id": "mca-c05-q029",
+      "topicId": "mca-c05-t05",
+      "question": "Quali quattro profili risultano incrociando Frequency alta/bassa e Recency alta/bassa?",
+      "answer": "F alta R bassa: molto attivo di recente; F alta R alta: attivo in passato; F bassa R bassa: cliente recente/poco osservato; F bassa R alta: poco attivo.",
+      "detail": "Recency alta significa ultimo acquisto lontano: non confondere il verso. Il modello RFM estende il profilo con Monetary, non ancora calcolato in questa lezione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §11, pagina PDF 142"
+    },
+    {
+      "id": "mca-c05-q030",
+      "topicId": "mca-c05-t05",
+      "question": "Nel caso dei quattro clienti osservati per 120 giorni, come si differenziano A e B?",
+      "answer": "A e B hanno entrambi 16 ordini e f₃₀=4; A ha recency 4 giorni e binaria 1, B recency 80 giorni e binaria 0.",
+      "detail": "L’identica frequenza maschera un diverso stato di attività recente; B merita approfondimento ma non è automaticamente perso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §12, pagina PDF 142"
+    },
+    {
+      "id": "mca-c05-q031",
+      "topicId": "mca-c05-t05",
+      "question": "Che frequenza hanno 14 acquisti in 70 giorni rispetto a intervalli di 7 e 30 giorni?",
+      "answer": "1,4 acquisti per 7 giorni e 6 per 30 giorni.",
+      "detail": "La verifica richiede sempre la stessa unità di tempo per D e T. È il caso Esercizio 1 della lezione 20.",
+      "example": "14/70×7=1,4; 14/70×30=6.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §13, pagina PDF 143"
+    },
+    {
+      "id": "mca-c05-q032",
+      "topicId": "mca-c05-t05",
+      "question": "Due clienti effettuano 24 acquisti in 120 giorni e 12 in 60: chi ha frequenza mensile maggiore?",
+      "answer": "Nessuno: entrambi f₃₀=6 acquisti per 30 giorni.",
+      "detail": "Confrontare i soli 24 contro 12 senza riportare la finestra allo stesso orizzonte produce una conclusione sbagliata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §13, pagina PDF 143"
+    },
+    {
+      "id": "mca-c05-q033",
+      "topicId": "mca-c05-t05",
+      "question": "Quali sei domande orali concludono la Lezione 20?",
+      "answer": "Distinguere CRM/Analytics, ruolo dell’ID cliente, frequenza normalizzata, limiti della stessa frequency, definizione di recency e limiti degli unique visitors.",
+      "detail": "Sono i collegamenti richiesti dal manuale: dati corretti → eventi → frequenze → trend/recency → lettura prudente dei comportamenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §14, pagina PDF 143"
+    },
+    {
+      "id": "mca-c05-q034",
+      "topicId": "mca-c05-t05",
+      "question": "Qual è la principale conclusione della Lezione 20 sulla fedeltà?",
+      "answer": "Frequency e Recency sono descrittori comportamentali complementari, ma nessuno dei due da solo dimostra la fedeltà autentica o il churn.",
+      "detail": "I risultati sono condizionati da definizioni di evento, finestra di osservazione e normalizzazione: la Lezione 21 aggiunge SOL, WTS, churn, retention e CLTV.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 20, §15, pagina PDF 144"
+    },
+    {
+      "id": "mca-c05-q035",
+      "topicId": "mca-c05-t06",
+      "question": "Perché la fedeltà è multidimensionale e non coincide sempre con la preferenza?",
+      "answer": "Perché un acquisto ripetuto può derivare da preferenza, assenza di alternative, contratto o costi di switching.",
+      "detail": "La fedeltà osservata nello spazio delle alternative differisce da quella nel tempo e dall’atteggiamento psicologico. Il corso utilizza metriche separate proprio per evitare equivalenze arbitrarie.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §1, pagina PDF 144"
+    },
+    {
+      "id": "mca-c05-q036",
+      "topicId": "mca-c05-t06",
+      "question": "Qual è la formula della Brand Sensitivity SB del cliente k?",
+      "answer": "SB_k=1−(numero di brand distinti acquistati / numero di brand disponibili).",
+      "detail": "SB alta segnala concentrazione della scelta su poche marche, non specifica su quale marchio né la quantità dedicata a ciascuno. Se nessuna marca è acquistata, trattare la situazione a parte.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "SB_k=1-\\frac{b_k}{B}",
+          "meaning": "SB_k=1−(numero di brand distinti acquistati / numero di brand disponibili)."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §2, pagina PDF 144"
+    },
+    {
+      "id": "mca-c05-q037",
+      "topicId": "mca-c05-t06",
+      "question": "Se sono disponibili cinque brand e un cliente ne acquista uno, quanto vale SB? E se ne acquista quattro?",
+      "answer": "Con un brand SB=0,80; con quattro brand SB=0,20.",
+      "detail": "L’indice dipende dal numero di alternative conteggiate: non confrontare direttamente assortimenti di cinque e dieci brand a parità di comportamento senza dichiarare il mercato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §2, pagina PDF 144"
+    },
+    {
+      "id": "mca-c05-q038",
+      "topicId": "mca-c05-t06",
+      "question": "Che cosa cambia nella Brand Sensitivity ponderata proposta dalle slide?",
+      "answer": "Si confronta la somma degli score dei brand acquistati con la somma degli score di tutti i brand disponibili: SB_pond=1−(Σ score acquistati/Σ score disponibili).",
+      "detail": "Si usano pesi esterni forniti dalla traccia; non è una misura della quantità acquistata. Se non vengono specificati gli score, non inventarli.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "SB_{pond}=1-\\frac{\\sum_{j\\in A_k}score_j}{\\sum_{j\\in B}score_j}",
+          "meaning": "Si confronta la somma degli score dei brand acquistati con la somma degli score di tutti i brand disponibili: SB_pond=1−(Σ score acquistati/Σ score disponibili)."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §2.1, pagina PDF 145"
+    },
+    {
+      "id": "mca-c05-q039",
+      "topicId": "mca-c05-t07",
+      "question": "Come si definisce lo Share of Loyalty (SOL) di una marca per un singolo cliente?",
+      "answer": "Acquisti del brand j da parte del cliente k / acquisti totali del cliente k nella stessa categoria e periodo.",
+      "detail": "Può essere calcolato in quantità o in euro, mantenendo omogenea l’unità. Per chi compra la categoria la somma delle SOL di tutti i brand è 1.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "SOL_{j,k}=\\frac{Acquisti_{j,k}}{Acquisti_{categoria,k}}",
+          "meaning": "Acquisti del brand j da parte del cliente k / acquisti totali del cliente k nella stessa categoria e periodo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §3, pagina PDF 145"
+    },
+    {
+      "id": "mca-c05-q040",
+      "topicId": "mca-c05-t07",
+      "question": "Nei dati delle slide due clienti comprano entrambi sei unità: quali SOL di A risultano?",
+      "answer": "Cliente 1: 4/6=66,7%; Cliente 2: 2/6=33,3%.",
+      "detail": "Il volume totale uguale non implica fedeltà uguale al brand. Sono i pesi relativi delle marche acquistate a determinarla.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §3, pagina PDF 145"
+    },
+    {
+      "id": "mca-c05-q041",
+      "topicId": "mca-c05-t07",
+      "question": "Perché SOL e Share of Wallet (SOW) non sono la stessa metrica?",
+      "answer": "SOL è una quota individuale; SOW è il rapporto aggregato tra acquisti del brand e acquisti di categoria dei suoi brand buyers.",
+      "detail": "La media aritmetica delle SOL pesa ogni cliente allo stesso modo; il SOW aggregato pesa maggiormente chi acquista di più. Non chiamare SOW una media semplice di quote individuali.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 1 — Share of Wallet"
+      ],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §3, pagina PDF 145"
+    },
+    {
+      "id": "mca-c05-q042",
+      "topicId": "mca-c05-t07",
+      "question": "Quale controesempio dimostra che la media delle SOL può essere diversa dal SOW aggregato?",
+      "answer": "Due clienti: X su categoria 1/1 e 1/9. SOL media=(100%+11,1%)/2=55,6%, mentre SOW=(1+1)/(1+9)=20%.",
+      "detail": "La differenza non è errore aritmetico: nel primo calcolo ogni persona ha lo stesso peso, nel secondo ogni quantità acquistata contribuisce al totale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §3, pagina PDF 145"
+    },
+    {
+      "id": "mca-c05-q043",
+      "topicId": "mca-c05-t07",
+      "question": "Perché è utile calcolare SOL per periodo anziché soltanto sul totale?",
+      "answer": "Per analizzare la stabilità temporale della preferenza per il brand.",
+      "detail": "Le slide presentano due clienti con media SOL circa 0,67 ma deviazioni standard ≈0,12 e ≈0,31: il primo è più costante; il secondo cambia molto fra periodi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §3.1, pagina PDF 145"
+    },
+    {
+      "id": "mca-c05-q044",
+      "topicId": "mca-c05-t07",
+      "question": "Che cos’è la Willingness to Search (WTS) e come si rileva?",
+      "answer": "La propensione dichiarata a cercare ancora il brand quando non è disponibile, invece di scegliere un sostituto.",
+      "detail": "Si rileva con survey 1–5: 1 certamente sostituto, 5 certamente ricerca del brand, 3 incerto. È attitudinale e non prova un comportamento reale di ricerca.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §4, pagina PDF 146"
+    },
+    {
+      "id": "mca-c05-q045",
+      "topicId": "mca-c05-t07",
+      "question": "Quali sono le due metriche WTS e come si calcolano?",
+      "answer": "WTS media=Σ punteggi / n risposte; WTS%=n risposte positive / n risposte valide ×100.",
+      "detail": "Prima di contare i positivi esplicitare la soglia, frequentemente 4–5. Media in punti su 5 e WTS% non sono numeri confrontabili direttamente.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "WTS_{media}=\\frac{\\sum_k score_k}{n}",
+          "meaning": "Media dei giudizi"
+        },
+        {
+          "latex": "WTS_{\\%}=\\frac{n_{positivi}}{n}\\cdot100",
+          "meaning": "Percentuale di propensione"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §4, pagina PDF 146"
+    },
+    {
+      "id": "mca-c05-q046",
+      "topicId": "mca-c05-t07",
+      "question": "Quanto valgono WTS media e percentuale per le risposte 5, 4, 3, 2, 4?",
+      "answer": "Media 18/5=3,6; con positivi 4–5, WTS%=3/5=60%.",
+      "detail": "Il cliente con score 3 è incerto; non includerlo fra positivi senza una definizione diversa della traccia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §4, pagina PDF 146"
+    },
+    {
+      "id": "mca-c05-q047",
+      "topicId": "mca-c05-t08",
+      "question": "Come si calcola il churn rate nelle slide?",
+      "answer": "Clienti persi tra t−1 e t / clienti attivi in t−1 ×100, oppure / clienti a rischio iniziali se specificato.",
+      "detail": "Definire che cosa significa perso e chi era realmente esposto al rischio. In contesti non contrattuali l’assenza di acquisti in un mese non prova cessazione definitiva.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Churn=\\frac{L}{B_0}\\cdot100",
+          "meaning": "Clienti persi tra t−1 e t / clienti attivi in t−1 ×100, oppure / clienti a rischio iniziali se specificato."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §5, pagina PDF 146"
+    },
+    {
+      "id": "mca-c05-q048",
+      "topicId": "mca-c05-t08",
+      "question": "Quali equazioni descrivono la dinamica della base clienti?",
+      "answer": "B₀=F+L; B₁=F+N; quindi B₁−B₀=N−L.",
+      "detail": "B₀ iniziali, F fedeli, L persi, N nuovi. Con denominatore comune B₀, crescita percentuale = acquisition rate − churn rate.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "B_0=F+L",
+          "meaning": "Base iniziale"
+        },
+        {
+          "latex": "B_1=F+N",
+          "meaning": "Base finale"
+        },
+        {
+          "latex": "\\frac{B_1-B_0}{B_0}=\\frac{N-L}{B_0}",
+          "meaning": "Crescita netta"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §5.1, pagina PDF 146"
+    },
+    {
+      "id": "mca-c05-q049",
+      "topicId": "mca-c05-t08",
+      "question": "Con 1.000 clienti iniziali, 100 persi e 170 nuovi, quali tassi e base finale risultano?",
+      "answer": "Fedeli 900, base finale 1.070, churn 10%, acquisition 17%, crescita netta 7%.",
+      "detail": "La quadratura dimostra 17−10=7 punti percentuali. Non aggiungere i nuovi al gruppo dei fedeli preesistenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §5.1, pagina PDF 146"
+    },
+    {
+      "id": "mca-c05-q050",
+      "topicId": "mca-c05-t09",
+      "question": "Perché il churn è più direttamente osservabile nei business contrattuali che nel retail?",
+      "answer": "Nel contrattuale esistono date di avvio e cessazione; nel non contrattuale l’abbandono è spesso inferito da assenza di acquisti.",
+      "detail": "Nel retail una finestra di inattività richiede una soglia sensata; nelle slide due domande, acquisto nell’ultimo trimestre e prima del trimestre, classificano fedeli, persi, nuovi e non clienti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §5.2, pagina PDF 147"
+    },
+    {
+      "id": "mca-c05-q051",
+      "topicId": "mca-c05-t09",
+      "question": "Qual è la formula del retention rate e quando vale retention=1−churn?",
+      "answer": "Retention=clienti iniziali mantenuti / clienti iniziali ×100. La somma con churn è 100% se basi, periodo e classificazione coincidono.",
+      "detail": "Quando il numeratore comprende clienti finali nuovi, non si sta misurando retention. La versione per clienti iniziali a rischio richiede denominatori coerenti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Retention=\\frac{F}{B_0}\\cdot100",
+          "meaning": "Retention=clienti iniziali mantenuti / clienti iniziali ×100. La somma con churn è 100% se basi, periodo e classificazione coincidono."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §6, pagina PDF 147"
+    },
+    {
+      "id": "mca-c05-q052",
+      "topicId": "mca-c05-t09",
+      "question": "Nell’esempio con 800 clienti iniziali, 680 fedeli, 120 persi e 90 nuovi, qual è la retention?",
+      "answer": "680/800=85%, churn=15%; base finale=770, ma 770/800=96,25% non è retention.",
+      "detail": "La formula equivalente è (base finale−nuovi)/base iniziale=(770−90)/800=85%.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Includere i nuovi clienti nel numeratore della retention.",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §6, pagina PDF 147"
+    },
+    {
+      "id": "mca-c05-q053",
+      "topicId": "mca-c05-t09",
+      "question": "Come si stima il ricavo associato ai clienti persi e perché non coincide con il profitto?",
+      "answer": "Ricavi potenzialmente persi = clienti persi × revenue pro capite; per profitto servono margini e orizzonte temporale.",
+      "detail": "Con 300.000 clienti, churn 3% e 100 € di ricavo per cliente si stimano 9.000 clienti persi e 900.000 € di revenue, non 900.000 € di CLTV o utile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §7, pagina PDF 147"
+    },
+    {
+      "id": "mca-c05-q054",
+      "topicId": "mca-c05-t10",
+      "question": "Che cosa rappresenta il Customer Lifetime Value e perché è finanziario?",
+      "answer": "Il valore attuale dei margini netti attesi dalla relazione con un cliente, ponderati per permanenza e attualizzazione.",
+      "detail": "Distinguere ricavi, margine attribuibile e flusso atteso attualizzato: non sono sinonimi. I clienti più redditizi oggi possono non generare il maggior valore futuro.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §8, pagina PDF 147"
+    },
+    {
+      "id": "mca-c05-q055",
+      "topicId": "mca-c05-t10",
+      "question": "Qual è la formula CLTV a orizzonte finito del professore per clienti acquisiti?",
+      "answer": "CLV=Σ da t=1 a n di [(M_t−C_t)×r^t]/(1+i)^t.",
+      "detail": "M_t è il margine prima dei costi di retention C_t; r è permanenza annuale costante; i è tasso di sconto; i flussi sono attesi a fine anno secondo il corso. Usare r come decimale, non 85 invece di 0,85.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CLV_n=\\sum_{t=1}^{n}\\frac{(M_t-C_t)r^t}{(1+i)^t}",
+          "meaning": "CLV=Σ da t=1 a n di [(M_t−C_t)×r^t]/(1+i)^t."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §8, pagina PDF 148"
+    },
+    {
+      "id": "mca-c05-q056",
+      "topicId": "mca-c05-t10",
+      "question": "Perché nel CLTV compaiono r^t e (1+i)^t, e quale convenzione usa il manuale?",
+      "answer": "r^t è la probabilità semplificata di essere ancora clienti al periodo t; (1+i)^t attualizza il flusso futuro.",
+      "detail": "Il corso assume retention costante e incasso a fine periodo a partire da t=1, quindi r^t. Con retention annuali diverse la sopravvivenza cumulata è S_t=r₁×…×r_t; non cambiare arbitrariamente in r^(t−1).",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §8, pagina PDF 148"
+    },
+    {
+      "id": "mca-c05-q057",
+      "topicId": "mca-c05-t10",
+      "question": "Quanto valgono oggi 100 € ricevuti fra uno e due anni con tasso di sconto 5%?",
+      "answer": "Fra un anno 100/1,05≈95,24 €; fra due anni 100/(1,05)²≈90,70 €.",
+      "detail": "Il CLTV non si limita a sommare ricavi: prima pondera i flussi per la permanenza, poi li porta al valore presente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §8.1, pagina PDF 148"
+    },
+    {
+      "id": "mca-c05-q058",
+      "topicId": "mca-c05-t10",
+      "question": "Nell’esempio quinquennale del professore quali sono i margini netti annui e il CLTV?",
+      "answer": "Margini netti 30, 41, 52, 63 e 74 €, r=0,85, i=0,05; CLTV≈131,52 €.",
+      "detail": "Per ogni anno: margine = spesa − costo di servizio/retention − 10 € ulteriori di variabili. Poi moltiplicare per (0,85/1,05)^t e sommare i cinque valori attuali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §8.2, pagina PDF 148"
+    },
+    {
+      "id": "mca-c05-q059",
+      "topicId": "mca-c05-t10",
+      "question": "Come si ottiene il margine netto del terzo anno nell’esempio di CLTV della lezione 21?",
+      "answer": "70 € di spesa − 8 € di servizio − 10 € di altri costi variabili = 52 €.",
+      "detail": "Il fattore di valore attuale del terzo anno è (0,85/1,05)^3≈0,53050; contributo al CLTV≈27,59 €.",
+      "example": "52×(0,85/1,05)^3≈27,59 €.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §8.2, pagina PDF 148"
+    },
+    {
+      "id": "mca-c05-q060",
+      "topicId": "mca-c05-t10",
+      "question": "Come può un cliente con margini inferiori avere CLTV superiore a un altro con margini più alti?",
+      "answer": "Può avere una probabilità di permanenza più elevata e quindi generare maggior valore attualizzato.",
+      "detail": "Il manuale riporta ≈193,78 € per un cliente con retention 80% e margini più alti contro ≈231,15 € per uno con retention 90% e margini inferiori. Non è una regola universale: dipende da tutte le ipotesi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §8.3, pagina PDF 148"
+    },
+    {
+      "id": "mca-c05-q061",
+      "topicId": "mca-c05-t10",
+      "question": "Qual è la formula del CLTV a orizzonte infinito con margine e retention costanti?",
+      "answer": "CLV∞=m×r/(1+i−r), con m=M−C e flussi annuali attesi a fine anno.",
+      "detail": "Si ottiene dalla serie geometrica Σ[m(r/(1+i))^t] per t≥1; presuppone |r/(1+i)|<1. È un modello matematico, non la promessa di una relazione infinita.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CLV_{\\infty}=\\frac{mr}{1+i-r}",
+          "meaning": "CLV∞=m×r/(1+i−r), con m=M−C e flussi annuali attesi a fine anno."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §9, pagina PDF 148"
+    },
+    {
+      "id": "mca-c05-q062",
+      "topicId": "mca-c05-t10",
+      "question": "Con margine annuo 50 €, retention 85% e sconto 5%, quanto vale il CLV∞?",
+      "answer": "50×0,85/(1,05−0,85)=212,50 €.",
+      "detail": "Il CLTV limitato a cinque anni nell’esempio delle slide è ≈138,62 €: valori diversi perché l’orizzonte infinito include anni futuri ulteriori.",
+      "example": "50×0,85/0,20=212,50 €.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §9, pagina PDF 148"
+    },
+    {
+      "id": "mca-c05-q063",
+      "topicId": "mca-c05-t10",
+      "question": "Come si calcola il CLTV di un prospect con costo iniziale di acquisizione AC?",
+      "answer": "Si sottrae AC al valore attuale dei margini futuri: CLV_prospect=−AC+CLV della relazione.",
+      "detail": "Nel caso ufficiale con valore quinquennale 131,52 € e AC=60 €, il netto è 71,52 €. Non sottrarre due volte AC se è già incluso nei costi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CLV_{prospect}=-AC+\\sum_{t=1}^{n}\\frac{(M_t-C_t)r^t}{(1+i)^t}",
+          "meaning": "Si sottrae AC al valore attuale dei margini futuri: CLV_prospect=−AC+CLV della relazione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §9, pagina PDF 148"
+    },
+    {
+      "id": "mca-c05-q064",
+      "topicId": "mca-c05-t10",
+      "question": "Quale è il massimo AC sostenibile nel modello elementare del CLTV?",
+      "answer": "Al più il CLTV della relazione prima dell’acquisizione, se l’obiettivo minimo è valore netto non negativo.",
+      "detail": "L’azienda normalmente richiede margine di sicurezza e tiene conto di rischio, costi indiretti e alternative di investimento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §9, pagina PDF 148"
+    },
+    {
+      "id": "mca-c05-q065",
+      "topicId": "mca-c05-t10",
+      "question": "Qual è l’effetto sul CLTV di retention, tasso di sconto e costo di retention?",
+      "answer": "Retention più elevata aumenta CLTV, sconto più elevato lo riduce; costi maggiori riducono i margini netti.",
+      "detail": "A parità di altre condizioni si muove la sensibilità del valore. Un programma da 30 € che aumenta il CLTV di 15 € non crea valore netto, anche se abbassa churn.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §10, pagina PDF 149"
+    },
+    {
+      "id": "mca-c05-q066",
+      "topicId": "mca-c05-t10",
+      "question": "Quali sono SOL e SB di un cliente che compra 6 A, 3 B, 1 C su cinque marche disponibili?",
+      "answer": "SOL_A=60%, SOL_B=30%, SOL_C=10%; SB=1−3/5=40%.",
+      "detail": "La SOL misura quantità destinate a ogni brand, SB usa solo numero di marche distinte: sono indici con significati diversi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §11, pagina PDF 149"
+    },
+    {
+      "id": "mca-c05-q067",
+      "topicId": "mca-c05-t10",
+      "question": "Con 2.400 clienti iniziali, 240 persi e 360 nuovi, quali indicatori risultano?",
+      "answer": "Fedeli 2.160; finale 2.520; churn 10%, retention 90%, acquisition 15%, crescita 5%.",
+      "detail": "La relazione 15%−10%=5% è una verifica di quadratura della base, purché i tassi usino come denominatore comune i 2.400 iniziali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §11, pagina PDF 149"
+    },
+    {
+      "id": "mca-c05-q068",
+      "topicId": "mca-c05-t10",
+      "question": "Un cliente con margine annuo netto 100 €, r=80%, i=10% per tre anni ha quale CLV e valore netto con AC 50 €?",
+      "answer": "Il manuale riporta CLV triennale ≈164,09 € e netto prospect ≈114,09 €.",
+      "detail": "Applicare Σ da 1 a 3 di 100×(0,8/1,1)^t, poi sottrarre AC. La differenza di pochi centesimi può dipendere dagli arrotondamenti usati.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "100\\sum_{t=1}^{3}\\left(\\frac{0.8}{1.1}\\right)^t",
+          "meaning": "Il manuale riporta CLV triennale ≈164,09 € e netto prospect ≈114,09 €."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §11, pagina PDF 149"
+    },
+    {
+      "id": "mca-c05-q069",
+      "topicId": "mca-c05-t10",
+      "question": "Quali errori ricorrenti compromettono churn, retention e CLTV negli esercizi?",
+      "answer": "Confondere nuovi e fedeli, basi iniziali e finali, 85% con 85, ricavi con margini, quantità ed euro, e dimenticare attualizzazione.",
+      "detail": "Inoltre dichiarare il churn non contrattuale come definitivo senza definire soglia e periodo può produrre una lettura scorretta. La formula del corso richiede r in decimali e r^t.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 21, §12, pagina PDF 149"
+    },
+    {
+      "id": "mca-c05-q070",
+      "topicId": "mca-c05-t11",
+      "question": "Quali quattro granularità distingue la Lezione 22 prima di misurare il consumo?",
+      "answer": "Riga di prodotto, transazione/scontrino, sessione/visita e cliente-periodo; a esse si affianca il cliente-categoria.",
+      "detail": "Una visita può non produrre acquisti e uno scontrino può contenere più prodotti. Le formule delle slide spesso assumono una spesa per visita: nei dati reali va verificata la corrispondenza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §1, pagina PDF 150"
+    },
+    {
+      "id": "mca-c05-q071",
+      "topicId": "mca-c05-t11",
+      "question": "Come si calcola lo scontrino medio secondo la Lezione 22?",
+      "answer": "Spesa totale del periodo divisa per numero N di sessioni/transazioni con acquisto osservate.",
+      "detail": "Il denominatore non è il numero di prodotti né i giorni. Un alto scontrino medio non implica alta spesa mensile se la frequenza degli acquisti è bassa.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "SM=\\frac{\\sum_{i=1}^{N}Spesa_i}{N}",
+          "meaning": "Spesa totale del periodo divisa per numero N di sessioni/transazioni con acquisto osservate."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §2, pagina PDF 150"
+    },
+    {
+      "id": "mca-c05-q072",
+      "topicId": "mca-c05-t11",
+      "question": "Qual è lo scontrino medio per le otto visite dell’esempio ufficiale, con spesa totale 301,48 €?",
+      "answer": "301,48/8=37,685 €, circa 37,69 € per sessione con acquisto.",
+      "detail": "Non è un prezzo unitario. Il caso comprende importi molto disomogenei, ma la media pesa ogni sessione una volta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §2, pagina PDF 150"
+    },
+    {
+      "id": "mca-c05-q073",
+      "topicId": "mca-c05-t11",
+      "question": "Qual è la formula della spesa normalizzata a T giorni?",
+      "answer": "Spesa media su T giorni = (spesa totale osservata in D giorni / D) × T.",
+      "detail": "Il mese convenzionale delle slide usa T=30. L’ipotesi di un ritmo medio stazionario è delicata per clienti recenti, stagionalità e finestre piccole.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_T=\\frac{S_D}{D}\\cdot T",
+          "meaning": "Spesa media su T giorni = (spesa totale osservata in D giorni / D) × T."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §3, pagina PDF 150"
+    },
+    {
+      "id": "mca-c05-q074",
+      "topicId": "mca-c05-t11",
+      "question": "Per il cliente con 301,48 € spesi in 183 giorni, qual è la spesa mensile convenzionale?",
+      "answer": "(301,48/183)×30≈49,42 €.",
+      "detail": "Non corrisponde necessariamente alla media dei sei mesi di calendario né al valore medio di un solo acquisto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §3, pagina PDF 150"
+    },
+    {
+      "id": "mca-c05-q075",
+      "topicId": "mca-c05-t11",
+      "question": "Quale identità collega scontrino medio, frequenza e spesa normalizzata?",
+      "answer": "Spesa_T = Scontrino medio × (N/D) × T.",
+      "detail": "Il livello medio di spesa per periodo dipende sia da quanto si spende per acquisto, sia da quante sessioni di acquisto si effettuano nello stesso orizzonte.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_T=SM\\cdot f_T=SM\\cdot\\frac{N}{D}\\cdot T",
+          "meaning": "Spesa_T = Scontrino medio × (N/D) × T."
+        }
+      ],
+      "connections": [
+        "Lezione 20 — frequency"
+      ],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §3, pagina PDF 150"
+    },
+    {
+      "id": "mca-c05-q076",
+      "topicId": "mca-c05-t11",
+      "question": "Quali limiti presenta la normalizzazione lineare della spesa?",
+      "answer": "Finestre brevi, stagionalità, pochi eventi, clienti appena acquisiti e ipotesi di ritmo costante possono renderla non rappresentativa.",
+      "detail": "Se D=0 alcuni rapporti sono indefiniti; se N=0 lo scontrino medio non è definito. Non sostituire un denominatore nullo con zero senza una diversa definizione della metrica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §3, pagina PDF 151"
+    },
+    {
+      "id": "mca-c05-q077",
+      "topicId": "mca-c05-t12",
+      "question": "Come si costruisce il vettore di spesa per categorie di un cliente?",
+      "answer": "Si registra la spesa in ciascuna categoria e la si divide per la spesa totale del cliente nel periodo: Q_kj=Spesa_kj/Spesa_k.",
+      "detail": "Se tutte le spese sono non negative e tutte le categorie rilevanti sono incluse, ciascuna quota è in [0,1] e le quote sommano a 1.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Q_{k,j}=\\frac{S_{k,j}}{S_k}",
+          "meaning": "Si registra la spesa in ciascuna categoria e la si divide per la spesa totale del cliente nel periodo: Q_kj=Spesa_kj/Spesa_k."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §4, pagina PDF 151"
+    },
+    {
+      "id": "mca-c05-q078",
+      "topicId": "mca-c05-t12",
+      "question": "Nei dati ufficiali quali categorie dominano il paniere dei due clienti?",
+      "answer": "Cliente 1: libri 38,2% e personal care 30,3%; Cliente 2: elettrodomestici 64,8%.",
+      "detail": "Il primo distribuisce la spesa tra più categorie; il secondo è più concentrato negli elettrodomestici. Si tratta di categorie merceologiche, non di brand alternativi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §4, pagina PDF 151"
+    },
+    {
+      "id": "mca-c05-q079",
+      "topicId": "mca-c05-t12",
+      "question": "Come si definisce la quota aggregata di mercato per la categoria j?",
+      "answer": "Q_mercato,j = spesa totale di tutti i clienti nella categoria j / spesa totale di tutti i clienti osservati.",
+      "detail": "È rapporto tra somme, non media aritmetica semplice delle quote personali. I clienti che spendono di più pesano di più nel benchmark.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Q_{mercato,j}=\\frac{\\sum_k S_{k,j}}{\\sum_k S_k}",
+          "meaning": "Q_mercato,j = spesa totale di tutti i clienti nella categoria j / spesa totale di tutti i clienti osservati."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §5, pagina PDF 151"
+    },
+    {
+      "id": "mca-c05-q080",
+      "topicId": "mca-c05-t12",
+      "question": "Che cos’è il Ratio Spend Score (RSS) e come si interpreta?",
+      "answer": "RSS_k,j=Q_k,j / Q_mercato,j: >1 peso relativo sopra mercato; =1 in linea; <1 sotto mercato.",
+      "detail": "RSS=1,5 significa che la quota della categoria nel paniere è 50% più elevata del riferimento, non che il cliente spenda il 50% di euro in più.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "RSS_{k,j}=\\frac{Q_{k,j}}{Q_{mercato,j}}",
+          "meaning": "RSS_k,j=Q_k,j / Q_mercato,j: >1 peso relativo sopra mercato; =1 in linea; <1 sotto mercato."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §5, pagina PDF 151"
+    },
+    {
+      "id": "mca-c05-q081",
+      "topicId": "mca-c05-t12",
+      "question": "Quanto vale il RSS elettrodomestici per Cliente 1 e Cliente 2 nell’esempio ufficiale?",
+      "answer": "Quota mercato 257,38/705,79≈36,5%; RSS₁≈0,508; RSS₂≈1,778.",
+      "detail": "Il Cliente 2 dedica una quota molto più alta dei suoi acquisti agli elettrodomestici. Il benchmark delle slide include entrambi i clienti osservati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §5, pagina PDF 152"
+    },
+    {
+      "id": "mca-c05-q082",
+      "topicId": "mca-c05-t12",
+      "question": "Quali cautele devono accompagnare un RSS molto alto?",
+      "answer": "Verificare che il benchmark abbia denominatore non nullo, confrontare anche la spesa assoluta e dichiarare chi compone il mercato.",
+      "detail": "Una categoria marginale in valore può produrre un grande rapporto. Se la quota aggregata della categoria è zero, RSS è indefinito; non imputare zero.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §5, pagina PDF 152"
+    },
+    {
+      "id": "mca-c05-q083",
+      "topicId": "mca-c05-t13",
+      "question": "Che cos’è il Market Basket Variance (MBV) del manuale?",
+      "answer": "L’entropia di Shannon normalizzata delle proporzioni del paniere tra M categorie, non una varianza statistica.",
+      "detail": "La formula MBV=−Σ p_i ln p_i/ln M misura la diversificazione del paniere; la scelta fra quantità, occorrenze e spesa modifica le proporzioni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "MBV=-\\frac{\\sum_{i=1}^{M}p_i\\ln(p_i)}{\\ln(M)}",
+          "meaning": "L’entropia di Shannon normalizzata delle proporzioni del paniere tra M categorie, non una varianza statistica."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §6, pagina PDF 152"
+    },
+    {
+      "id": "mca-c05-q084",
+      "topicId": "mca-c05-t13",
+      "question": "Come si interpretano gli estremi di MBV per M>1?",
+      "answer": "MBV=0 se tutto il paniere è in un’unica categoria; MBV=1 se le M categorie hanno pesi uguali.",
+      "detail": "Per M>1 MBV rimane tra 0 e 1. Con M=1 la formula non è definita perché ln(1)=0; termini con p=0 contribuiscono zero per limite.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §6, pagina PDF 152"
+    },
+    {
+      "id": "mca-c05-q085",
+      "topicId": "mca-c05-t13",
+      "question": "Qual è MBV per tre categorie con quote 0,5, 0,3 e 0,2?",
+      "answer": "MBV≈0,937, secondo l’entropia normalizzata del manuale.",
+      "detail": "Calcolare −[0,5ln0,5+0,3ln0,3+0,2ln0,2]/ln3; il risultato elevato rappresenta relativa distribuzione della spesa fra le tre categorie.",
+      "example": "Paniere (5,3,2) su 10 prodotti → p=(0,5;0,3;0,2).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §6, pagina PDF 152"
+    },
+    {
+      "id": "mca-c05-q086",
+      "topicId": "mca-c05-t13",
+      "question": "Perché non è sempre lecito confrontare MBV di panieri con tassonomie differenti?",
+      "answer": "Perché cambiare numero e definizione delle categorie modifica p_i, M e il valore dell’entropia.",
+      "detail": "Unire due categorie o aggiungerne una può modificare la normalizzazione. MBV descrive varietà e non prova soddisfazione, valore economico o fedeltà.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §6, pagina PDF 152"
+    },
+    {
+      "id": "mca-c05-q087",
+      "topicId": "mca-c05-t14",
+      "question": "Come si calcola il redemption rate individuale nella Lezione 22?",
+      "answer": "Offerte accettate dal cliente / offerte inviate allo stesso cliente nel periodo.",
+      "detail": "Il dato rappresenta risposta a opportunità promozionali e non volume di spesa generato. Tre offerte accettate su dodici danno 25%; se nessuna offerta è inviata il tasso è indefinito.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Redemption_k=\\frac{OfferteAccettate_k}{OfferteInviate_k}",
+          "meaning": "Offerte accettate dal cliente / offerte inviate allo stesso cliente nel periodo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §7, pagina PDF 152"
+    },
+    {
+      "id": "mca-c05-q088",
+      "topicId": "mca-c05-t14",
+      "question": "Come si misura la sensibilità alle promozioni del cliente per una categoria?",
+      "answer": "Spesa effettuata in promozione nella categoria / spesa totale nella stessa categoria.",
+      "detail": "120 € su 300 € danno 40%. Misura composizione osservata, non l’effetto incrementale causato dagli sconti; servirebbe un confronto controfattuale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S^{prm}_k(j)=\\frac{SpesaPromo_k(j)}{SpesaTotale_k(j)}",
+          "meaning": "Spesa effettuata in promozione nella categoria / spesa totale nella stessa categoria."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §7, pagina PDF 153"
+    },
+    {
+      "id": "mca-c05-q089",
+      "topicId": "mca-c05-t14",
+      "question": "Perché redemption e quota di spesa promozionale non sono intercambiabili?",
+      "answer": "La prima è numero di offerte accettate / offerte proposte; la seconda è euro in promozione / euro totali della categoria.",
+      "detail": "Un cliente può usare pochi coupon molto onerosi, con redemption bassa e alta quota monetaria in promozione. Sono due denominatori e fenomeni differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §7, pagina PDF 153"
+    },
+    {
+      "id": "mca-c05-q090",
+      "topicId": "mca-c05-t14",
+      "question": "Che cosa si intende per reservation price o maximum WTP?",
+      "answer": "Prezzo massimo che un cliente è disposto a pagare per un’offerta nelle condizioni considerate.",
+      "detail": "Un acquisto osservato a 9 € in genere indica WTP almeno 9 €, non il valore massimo esatto. I metodi citati includono dati osservati, domande dirette, conjoint, contingent valuation e aste.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §8, pagina PDF 153"
+    },
+    {
+      "id": "mca-c05-q091",
+      "topicId": "mca-c05-t14",
+      "question": "Come si definisce il % Good Value al prezzo p?",
+      "answer": "Quota dei clienti osservati con prezzo di riserva almeno pari a p.",
+      "detail": "È una curva generalmente non crescente al crescere di p. Nell’esempio ufficiale 6 clienti su 11 hanno WTP≥7,20 €, quindi Good Value≈54,5%.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "GV(p)=\\frac{\\#\\{k:WTP_k\\geq p\\}}{N}",
+          "meaning": "Quota dei clienti osservati con prezzo di riserva almeno pari a p."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §8, pagina PDF 153"
+    },
+    {
+      "id": "mca-c05-q092",
+      "topicId": "mca-c05-t14",
+      "question": "Quali sono i limiti delle misure dichiarate del prezzo di riserva?",
+      "answer": "Convenienza percepita, intenzione dichiarata e acquisto effettivo non sono la stessa cosa.",
+      "detail": "Il dato dipende da contesto, prodotto, reddito e alternative. La distribuzione dei prezzi pagati non consente da sola di identificare tutti i prezzi massimi accettabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §8, pagina PDF 153"
+    },
+    {
+      "id": "mca-c05-q093",
+      "topicId": "mca-c05-t15",
+      "question": "Come si passa dalla distribuzione dei reservation price a ricavi e margine a un prezzo p?",
+      "answer": "Q(p)=numero di WTP≥p; ricavi=p×Q(p); margine di contribuzione=(p−c_v)×Q(p).",
+      "detail": "Il modello didattico assume un acquisto di una unità per cliente disposto a pagare e assenza di altri vincoli; il margine non è l’utile netto, perché mancano costi fissi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Q(p)=\\#\\{WTP_k\\geq p\\}",
+          "meaning": "Acquirenti attesi"
+        },
+        {
+          "latex": "R(p)=pQ(p)",
+          "meaning": "Ricavi"
+        },
+        {
+          "latex": "MDC(p)=(p-c_v)Q(p)",
+          "meaning": "Margine"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §9, pagina PDF 153"
+    },
+    {
+      "id": "mca-c05-q094",
+      "topicId": "mca-c05-t15",
+      "question": "Nell’esercizio su 11 prezzi di riserva, quale prezzo tra 3,99; 5,99; 6,99; 7,99 massimizza i ricavi?",
+      "answer": "5,99 € con 9 acquirenti e 53,91 € di ricavi.",
+      "detail": "Con costo unitario 5 €, gli altri prezzi producono ricavi 43,89; 48,93; 39,95 €. Il prezzo che massimizza il fatturato non è necessariamente il più profittevole.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §9, pagina PDF 154"
+    },
+    {
+      "id": "mca-c05-q095",
+      "topicId": "mca-c05-t15",
+      "question": "Quale prezzo dell’esercizio WTP massimizza il margine di contribuzione tra le quattro alternative?",
+      "answer": "7,99 € con cinque acquirenti e margine (7,99−5)×5=14,95 €.",
+      "detail": "Il massimo dei ricavi è invece 5,99 €. Prezzo 3,99 € produce margine negativo −11,11 € pur avendo undici acquirenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §9, pagina PDF 154"
+    },
+    {
+      "id": "mca-c05-q096",
+      "topicId": "mca-c05-t15",
+      "question": "Quattro transazioni da 20, 40, 10 e 50 € in 60 giorni: quali sono scontrino e spesa mensile?",
+      "answer": "Totale 120 €; scontrino 120/4=30 €; spesa 30 giorni=120/60×30=60 €.",
+      "detail": "Nell’esame occorre spiegare che lo scontrino divide per transazioni, la spesa mensile normalizzata divide per tempo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §10, pagina PDF 154"
+    },
+    {
+      "id": "mca-c05-q097",
+      "topicId": "mca-c05-t15",
+      "question": "Con spesa libri 30 € su 100 € e 70 € su 200 €, quali sono benchmark aggregato e RSS?",
+      "answer": "Benchmark=(30+70)/(100+200)=33,33%; RSS₁=0,90, RSS₂=1,05.",
+      "detail": "Non usare la semplice media delle due quote 30% e 35%=32,5%, perché il mercato del manuale è definito come rapporto fra somme.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §10, pagina PDF 154"
+    },
+    {
+      "id": "mca-c05-q098",
+      "topicId": "mca-c05-t15",
+      "question": "Con 20 offerte, 4 accettate, 125 € promozionali su 500 €, quali sono i due indici?",
+      "answer": "Redemption=4/20=20%; quota di spesa promozionale=125/500=25%.",
+      "detail": "Il primo è un conteggio di offerte; il secondo un rapporto fra importi. Non confrontare i due numeratori come se misurassero la stessa unità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §10, pagina PDF 154"
+    },
+    {
+      "id": "mca-c05-q099",
+      "topicId": "mca-c05-t15",
+      "question": "Come distinguere MBV dalla varianza statistica in una domanda orale?",
+      "answer": "MBV è entropia normalizzata delle quote per categoria; varianza statistica misura dispersione quadratica dei valori attorno alla media.",
+      "detail": "La prima dipende dalla distribuzione di categorie e da ln(M), la seconda dalle osservazioni numeriche e dalle unità quadrate; il nome “variance” di MBV è fuorviante.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §11, pagina PDF 154"
+    },
+    {
+      "id": "mca-c05-q100",
+      "topicId": "mca-c05-t15",
+      "question": "Quali controlli essenziali vanno fatti prima e dopo gli esercizi sulle metriche di consumo?",
+      "answer": "Chiarire cliente, periodo, unità, transazioni e categorie; usare quote decimali; verificare somme delle quote e range di MBV; gestire denominatori nulli.",
+      "detail": "Il risultato va commentato con significato manageriale. Benchmark aggregato, media di quote e misura per cliente sono entità diverse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §12, pagina PDF 154"
+    },
+    {
+      "id": "mca-c05-q101",
+      "topicId": "mca-c05-t15",
+      "question": "Quali due controlli numerici concludono la checklist della Lezione 22?",
+      "answer": "Le quote di spesa devono sommare a 1 e MBV deve essere tra 0 e 1 se M>1.",
+      "detail": "In presenza di denominatori nulli o una sola categoria non forzare artificialmente gli indicatori a zero; esplicitare la situazione e la definizione scelta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 22, §12, pagina PDF 155"
+    },
+    {
+      "id": "mca-c05-q102",
+      "topicId": "mca-c05-t16",
+      "question": "Perché le metriche di esperienza aggiungono informazioni alle metriche comportamentali?",
+      "answer": "Le metriche di esperienza rilevano come il cliente valuta le interazioni, mentre frequenza, spesa e retention descrivono ciò che fa.",
+      "detail": "Un cliente può riacquistare per vincoli pur essendo insoddisfatto o non riacquistare pur avendo avuto un’esperienza positiva. I due livelli si completano ma non coincidono.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §1, pagina PDF 155"
+    },
+    {
+      "id": "mca-c05-q103",
+      "topicId": "mca-c05-t16",
+      "question": "Che differenza esiste tra touchpoint, customer journey e customer experience?",
+      "answer": "Touchpoint: singolo contatto; customer journey: successione di contatti; customer experience: insieme delle esperienze nella relazione.",
+      "detail": "Prima di misurare occorre dire se il voto riguarda assistenza di oggi, prodotto acquistato o valutazione complessiva del brand.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §1, pagina PDF 155"
+    },
+    {
+      "id": "mca-c05-q104",
+      "topicId": "mca-c05-t16",
+      "question": "Come distinguere percezione, aspettativa, performance percepita e soddisfazione?",
+      "answer": "Percezione: rappresentazione soggettiva; aspettativa: risultato atteso; performance percepita: esperienza vissuta; soddisfazione: giudizio su quanto l’esperienza risponda alle attese.",
+      "detail": "Qualità percepita può riferirsi a velocità, cortesia e affidabilità; il giudizio complessivo sulla relazione integra più attributi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §2, pagina PDF 155"
+    },
+    {
+      "id": "mca-c05-q105",
+      "topicId": "mca-c05-t16",
+      "question": "Qual è la formula didattica del gap fra performance percepita e aspettative?",
+      "answer": "Gap=P−E: >0 supera le attese, =0 le conferma, <0 le disattende.",
+      "detail": "È un modello concettuale di disconferma, non la formula universale del CSAT. Se attesa rapidità=4,5/5 e percepita=3,5/5, gap=−1 punto.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Gap=P-E",
+          "meaning": "Gap=P−E: >0 supera le attese, =0 le conferma, <0 le disattende."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §2, pagina PDF 155"
+    },
+    {
+      "id": "mca-c05-q106",
+      "topicId": "mca-c05-t16",
+      "question": "Quali elementi rendono confrontabili due questionari sulla customer experience?",
+      "answer": "Stessa domanda/costrutto, scala, popolazione di riferimento e periodo, oltre a un metodo di campionamento coerente.",
+      "detail": "Misurare un touchpoint e il rapporto generale con l’impresa non equivale. Missing e rifiuti di risposta non devono diventare voti negativi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §3, pagina PDF 155"
+    },
+    {
+      "id": "mca-c05-q107",
+      "topicId": "mca-c05-t16",
+      "question": "Quali scale di risposta sono presentate per misurare esperienza e soddisfazione?",
+      "answer": "Likert 1–5, scala 0–10 per raccomandazione, rating a stelle 1–5 e domanda binaria sì/no.",
+      "detail": "Una media delle scale ordinali richiede cautela; una risposta 0–10 sulla propensione a raccomandare non è una probabilità osservata. Bias possibili: autoselezione, non risposta e desiderabilità sociale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §3, pagina PDF 156"
+    },
+    {
+      "id": "mca-c05-q108",
+      "topicId": "mca-c05-t17",
+      "question": "Come si calcola il voto medio di Customer Satisfaction su scala 1–5?",
+      "answer": "Media ponderata delle frequenze dei voti: Σ(n_i×i)/N, con N risposte valide.",
+      "detail": "La media considera ogni valore della scala; una media 3,8/5 non significa 76% di clienti soddisfatti secondo una determinata soglia.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\bar{s}=\\frac{\\sum_{i=1}^{5}n_i i}{N}",
+          "meaning": "Media ponderata delle frequenze dei voti: Σ(n_i×i)/N, con N risposte valide."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §4, pagina PDF 156"
+    },
+    {
+      "id": "mca-c05-q109",
+      "topicId": "mca-c05-t17",
+      "question": "Qual è la formula del CSAT top-two-box su scala da 1 a 5?",
+      "answer": "CSAT=(n₄+n₅)/N×100, dove N conta tutte le risposte valide.",
+      "detail": "Top-two-box conta solo risposte 4 e 5: non equivale alla media né alla somma di tutte le risposte di voto almeno 3. Esplicitare sempre soglia e scala.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CSAT_{TTB}=\\frac{n_4+n_5}{N}\\cdot100",
+          "meaning": "CSAT=(n₄+n₅)/N×100, dove N conta tutte le risposte valide."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §4, pagina PDF 156"
+    },
+    {
+      "id": "mca-c05-q110",
+      "topicId": "mca-c05-t17",
+      "question": "Nell’esempio da 120 risposte con frequenze 6,12,22,39,41 qual è la media e il CSAT?",
+      "answer": "Voto medio 457/120≈3,81/5; CSAT=(39+41)/120≈66,67%.",
+      "detail": "I due indicatori misurano aspetti differenti della stessa distribuzione e non si sostituiscono. I 120 sono rispondenti validi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §4, pagina PDF 156"
+    },
+    {
+      "id": "mca-c05-q111",
+      "topicId": "mca-c05-t17",
+      "question": "Se 120 persone rispondono su 150 contattate, quale differenza esiste fra response rate e CSAT?",
+      "answer": "Response rate=120/150=80%; CSAT si calcola solo sulle 120 risposte valide usando la soglia di soddisfazione.",
+      "detail": "Il tasso di risposta misura partecipazione al questionario e non la positività del giudizio. Non sostituire i non rispondenti con voto zero.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §4, pagina PDF 156"
+    },
+    {
+      "id": "mca-c05-q112",
+      "topicId": "mca-c05-t18",
+      "question": "Perché è utile misurare la Customer Satisfaction per attributo oltre al voto globale?",
+      "answer": "Il globale sintetizza l’esperienza; attributi come affidabilità, assistenza e prezzo percepito indicano possibili aree d’intervento.",
+      "detail": "Segmenti diversi possono avere debolezze molto differenti anche con lo stesso CSAT globale. Conviene analizzare importanza, risultati e costi di miglioramento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §5, pagina PDF 156"
+    },
+    {
+      "id": "mca-c05-q113",
+      "topicId": "mca-c05-t18",
+      "question": "Come si definisce il gap descrittivo fra importanza e performance di un attributo?",
+      "answer": "Gap_j=importanza_j−performance_j, se le scale sono comparabili.",
+      "detail": "Gap positivo segnala importanza superiore al risultato percepito: affidabilità 4,8−4,1=+0,7; packaging 2,5−3,0=−0,5. Non è un indice universale né prova causalità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Gap_j=Importanza_j-Performance_j",
+          "meaning": "Gap_j=importanza_j−performance_j, se le scale sono comparabili."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §5, pagina PDF 157"
+    },
+    {
+      "id": "mca-c05-q114",
+      "topicId": "mca-c05-t19",
+      "question": "Che cos’è la Willingness to Recommend (WTR) e perché non coincide con il NPS?",
+      "answer": "WTR è propensione dichiarata a raccomandare; NPS è un indice con soglie e formula specifiche su risposte 0–10.",
+      "detail": "Si può rappresentare WTR con media o percentuale secondo soglia esplicita, ma nessuna di queste misure prova raccomandazioni concretamente effettuate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §6, pagina PDF 157"
+    },
+    {
+      "id": "mca-c05-q115",
+      "topicId": "mca-c05-t19",
+      "question": "Quali sono le classi dell’NPS e come si calcola?",
+      "answer": "Promotori 9–10, passivi 7–8, detrattori 0–6; NPS=%promotori−%detrattori.",
+      "detail": "I passivi sono nel denominatore, ma non nel saldo; l’indice varia da −100 a +100 punti NPS, non da 0 a 100% di clienti soddisfatti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "NPS=\\frac{n_{promotori}-n_{detrattori}}{N}\\cdot100",
+          "meaning": "Promotori 9–10, passivi 7–8, detrattori 0–6; NPS=%promotori−%detrattori."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §7, pagina PDF 157"
+    },
+    {
+      "id": "mca-c05-q116",
+      "topicId": "mca-c05-t19",
+      "question": "Per 50 promotori, 32 passivi e 18 detrattori su 100 risposte, quale NPS risulta?",
+      "answer": "+32 punti NPS, ossia 50%−18%.",
+      "detail": "Non dire “32% soddisfatti”: +32 è un saldo delle due quote, mentre il CSAT misura un diverso costrutto e usa una scala diversa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §7, pagina PDF 157"
+    },
+    {
+      "id": "mca-c05-q117",
+      "topicId": "mca-c05-t19",
+      "question": "Quali sono i limiti principali del Net Promoter Score?",
+      "answer": "È un’intenzione dichiarata, non raccomandazione reale né dimostrazione che un cambiamento di NPS provochi maggiore fatturato.",
+      "detail": "Contesto, settore, cultura di risposta e campionamento influiscono. Domande aperte e dati di comportamento possono integrare il punteggio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §7, pagina PDF 158"
+    },
+    {
+      "id": "mca-c05-q118",
+      "topicId": "mca-c05-t19",
+      "question": "Come si interpreta correttamente un rating medio e perché è importante N?",
+      "answer": "Rating medio=Σ punteggi/N, ma la stessa media su 8 e 800 recensioni ha robustezza e rappresentatività potenzialmente differenti.",
+      "detail": "Considerare anche dispersione, periodo e autoselezione di chi recensisce. La media dei recensori non è una stima automaticamente non distorta di tutti i clienti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §8, pagina PDF 158"
+    },
+    {
+      "id": "mca-c05-q119",
+      "topicId": "mca-c05-t19",
+      "question": "Qual è la formula della media ponderata dei rating e quale cautela richiede?",
+      "answer": "R_pond=Σ(w_i r_i)/Σw_i; i pesi devono avere un significato dichiarato.",
+      "detail": "Non scegliere pesi dopo aver guardato i risultati per ottenere graduatorie più favorevoli. Se un voto 5 compare venti volte e un voto 3 trenta, media=(20×5+30×3)/50=3,8.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "R_{pond}=\\frac{\\sum_iw_ir_i}{\\sum_iw_i}",
+          "meaning": "R_pond=Σ(w_i r_i)/Σw_i; i pesi devono avere un significato dichiarato."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §8, pagina PDF 158"
+    },
+    {
+      "id": "mca-c05-q120",
+      "topicId": "mca-c05-t20",
+      "question": "Come distinguere percezione delle differenze, coinvolgimento, WOM, engagement e virality?",
+      "answer": "Differenze percepite: distanza fra offerte; coinvolgimento: attenzione/partecipazione; WOM: comunicazione fra persone; engagement: interazioni col brand; virality: propagazione.",
+      "detail": "Le slide non impongono una formula unica per ciascuna. Esempi operativi: dissimilarità 1–9, interazioni per cliente, referral osservati, interazioni/reach, inviti per utente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §9, pagina PDF 158"
+    },
+    {
+      "id": "mca-c05-q121",
+      "topicId": "mca-c05-t20",
+      "question": "Perché due engagement rate possono essere incomparabili anche se hanno lo stesso nome?",
+      "answer": "Perché il denominatore può essere reach, impression, follower o utenti unici.",
+      "detail": "Occorre verificare periodo, canale, unità osservata e deduplicazione prima di interpretare o confrontare i numeri.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §9, pagina PDF 158"
+    },
+    {
+      "id": "mca-c05-q122",
+      "topicId": "mca-c05-t20",
+      "question": "Un servizio registra CSAT 80%, NPS +10 e retention 92%: i dati sono contraddittori?",
+      "answer": "No, misurano soddisfazione, propensione a raccomandare e permanenza della clientela, aspetti non equivalenti.",
+      "detail": "Alcuni clienti possono essere soddisfatti ma non promotori; altri restano per costi di cambio. La causa richiede ulteriori analisi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §10, pagina PDF 158"
+    },
+    {
+      "id": "mca-c05-q123",
+      "topicId": "mca-c05-t20",
+      "question": "Qual è l’errore standard approssimato di una proporzione campionaria, come il CSAT?",
+      "answer": "SE(p̂)=√[p̂(1−p̂)/n], con indipendenza e campionamento approssimativamente casuale.",
+      "detail": "Per IC 95% normale si può utilizzare p̂±1,96×SE quando n è adeguato; campioni piccoli o proporzioni estreme richiedono metodi migliori e i bias non spariscono.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "SE(\\hat{p})=\\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}",
+          "meaning": "SE(p̂)=√[p̂(1−p̂)/n], con indipendenza e campionamento approssimativamente casuale."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §11, pagina PDF 159"
+    },
+    {
+      "id": "mca-c05-q124",
+      "topicId": "mca-c05-t20",
+      "question": "Qual è l’intervallo al 95% per CSAT 80% su 400 risposte secondo la formula normale?",
+      "answer": "SE=0,02; margine=0,0392; intervallo circa 76,08%–83,92%.",
+      "detail": "Un CSAT campionario non è il valore esatto della popolazione. La formula presuppone condizioni approssimative che non correggono autoselezione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §11, pagina PDF 159"
+    },
+    {
+      "id": "mca-c05-q125",
+      "topicId": "mca-c05-t20",
+      "question": "Quali risultati si ottengono nel caso d’esame con 50 risposte ai voti 1–5: 4,6,10,20,10?",
+      "answer": "Media=(4+12+30+80+50)/50=3,52; CSAT=(20+10)/50=60%.",
+      "detail": "Se gli inviti erano 100, response rate=50%; non va confuso col CSAT del 60%.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §12, pagina PDF 159"
+    },
+    {
+      "id": "mca-c05-q126",
+      "topicId": "mca-c05-t20",
+      "question": "Quale NPS si ricava da 110 promotori, 60 passivi e 30 detrattori su 200?",
+      "answer": "Promotori 55%, detrattori 15%; NPS=+40 punti.",
+      "detail": "I sessanta passivi restano nel denominatore N=200 e non vengono sommati ai promotori o ai detrattori.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §12, pagina PDF 159"
+    },
+    {
+      "id": "mca-c05-q127",
+      "topicId": "mca-c05-t20",
+      "question": "Se i soddisfatti aumentano da 90 su 120 a 105 su 150, come cambia il CSAT?",
+      "answer": "Da 75% a 70%: diminuisce di 5 punti percentuali nonostante aumenti il numero assoluto di soddisfatti.",
+      "detail": "I denominatori differiscono: confrontare conteggi e percentuali senza base comune produce letture errate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §12, pagina PDF 159"
+    },
+    {
+      "id": "mca-c05-q128",
+      "topicId": "mca-c05-t20",
+      "question": "Quali differenze concettuali sono richieste nelle domande orali di Customer Experience?",
+      "answer": "Soddisfazione vs fedeltà; media vs CSAT; WTR vs NPS; NPS vs vendite; rating vs rappresentatività; globale vs attributi.",
+      "detail": "Per rispondere serve definire che cosa misura ogni indicatore e il tipo di dato (survey, recensione o transazione), non ripetere soltanto la formula.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §13, pagina PDF 159"
+    },
+    {
+      "id": "mca-c05-q129",
+      "topicId": "mca-c05-t20",
+      "question": "Quali errori metodologici evitare nel calcolo di CSAT, NPS e rating?",
+      "answer": "Confondere scale, soglie, campioni e denominatori; escludere i passivi dal denominatore NPS; trattare missing come negativi; attribuire causalità.",
+      "detail": "Controllare anche distinzione fra punti percentuali e variazione relativa, dispersione di voti e dimensione della base rispondente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 23, §14, pagina PDF 160"
+    },
+    {
+      "id": "mca-c05-q130",
+      "topicId": "mca-c05-t21",
+      "question": "Quali tre stadi distingue il funnel Awareness–Attitude–Adoption?",
+      "answer": "Awareness: conoscenza della marca; Attitude: valutazione/intenzione; Adoption: comportamento di prova o acquisto.",
+      "detail": "Le fasi sono un modello di organizzazione, non un percorso rigido per tutti. Le slide richiamano anche Awareness–Interest/Desire–Adoption, Think–Feel–Do e Awareness–Trial–Reinforcement.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §1, pagina PDF 160"
+    },
+    {
+      "id": "mca-c05-q131",
+      "topicId": "mca-c05-t21",
+      "question": "Perché non è corretto usare la notorietà del brand come misura di acquisto?",
+      "answer": "Perché conoscere un marchio non implica desiderarlo, ritenerlo disponibile o compiere una transazione.",
+      "detail": "Esposizione, intenzione e comportamento osservabile hanno basi diverse e richiedono indicatori e denominatori propri.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §1, pagina PDF 160"
+    },
+    {
+      "id": "mca-c05-q132",
+      "topicId": "mca-c05-t21",
+      "question": "In che senso l’awareness descrive la conoscenza del brand anziché la sua preferenza?",
+      "answer": "Indica il riconoscimento o richiamo della marca nella popolazione target, non una scelta o un acquisto.",
+      "detail": "Le metriche devono separare riconoscimento guidato, richiamo spontaneo e prima citazione; la domanda esatta e il campione ne determinano il significato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §2, pagina PDF 161"
+    },
+    {
+      "id": "mca-c05-q133",
+      "topicId": "mca-c05-t21",
+      "question": "Quali elementi vanno fissati prima di misurare l’awareness con una survey?",
+      "answer": "Popolazione/mercato target, campionamento, formulazione della domanda, suggerimenti eventualmente mostrati e base di risposte valide.",
+      "detail": "Interrogare soltanto clienti esistenti può sovrastimare la notorietà rispetto al mercato generale; non comparare basi campionarie diverse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §2.1, pagina PDF 161"
+    },
+    {
+      "id": "mca-c05-q134",
+      "topicId": "mca-c05-t21",
+      "question": "Come si calcola la Aided Brand Awareness?",
+      "answer": "Risposte positive sul brand presentato / intervistati validi ×100.",
+      "detail": "La notorietà assistita misura riconoscimento dopo suggerimento del nome. 420 risposte positive su 600 valide danno 70%; non usare 650 contatti se 50 hanno dato risposte mancanti senza dichiararlo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Awareness_{aided}=\\frac{RispostePositive}{N_{validi}}\\cdot100",
+          "meaning": "Risposte positive sul brand presentato / intervistati validi ×100."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §2.2, pagina PDF 161"
+    },
+    {
+      "id": "mca-c05-q135",
+      "topicId": "mca-c05-t21",
+      "question": "Che differenza esiste tra unaided awareness e top of mind?",
+      "answer": "Unaided: quota che cita spontaneamente il brand in qualunque posizione; top of mind: quota che lo nomina per primo.",
+      "detail": "Le due misure si sovrappongono; top of mind è la condizione più restrittiva. Non vanno sommate con la notorietà assistita.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §2.3, pagina PDF 161"
+    },
+    {
+      "id": "mca-c05-q136",
+      "topicId": "mca-c05-t21",
+      "question": "Come distinguere il lessico Brand Recognition della slide 1084 dalla terminologia usuale?",
+      "answer": "La slide chiama Brand Recognition una domanda di citazione spontanea; comunemente equivale più a unaided recall che a riconoscimento assistito.",
+      "detail": "Per l’esame seguire il lessico del docente ma specificare sempre se il nome era suggerito oppure no per evitare equivoci.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §2.3, pagina PDF 161"
+    },
+    {
+      "id": "mca-c05-q137",
+      "topicId": "mca-c05-t21",
+      "question": "Con 240 citazioni spontanee, 130 prime citazioni e 350 riconoscimenti su 400 persone quali awareness risultano?",
+      "answer": "Unaided=60%; top of mind=32,5%; aided=87,5%.",
+      "detail": "Rappresentano soglie di ricordo differenti e non tre classi disgiunte da sommare.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §2.3, pagina PDF 161"
+    },
+    {
+      "id": "mca-c05-q138",
+      "topicId": "mca-c05-t21",
+      "question": "Perché gli score medi di ranking dell’awareness dipendono dalla codifica?",
+      "answer": "Perché assegnare pesi alla posizione di citazione (es. 5,3,1) e includere/escludere chi non cita modifica il significato della media.",
+      "detail": "Con zero ai non citanti la media incorpora diffusione e salienza; con solo chi cita descrive la posizione media tra i ricordanti. Dichiarare le regole prima del calcolo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §2.4, pagina PDF 161"
+    },
+    {
+      "id": "mca-c05-q139",
+      "topicId": "mca-c05-t22",
+      "question": "Qual è la differenza tra impression, reach netto e frequenza media?",
+      "answer": "Impression: esposizioni conteggiate; reach netto: persone uniche raggiunte; frequenza media: esposizioni per persona raggiunta.",
+      "detail": "Un utente che vede cinque volte un annuncio produce cinque impression e, con deduplicazione corretta, un solo utente nel reach.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Frequenza=\\frac{Impression}{ReachNetto}",
+          "meaning": "Impression: esposizioni conteggiate; reach netto: persone uniche raggiunte; frequenza media: esposizioni per persona raggiunta."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §3, pagina PDF 161"
+    },
+    {
+      "id": "mca-c05-q140",
+      "topicId": "mca-c05-t22",
+      "question": "Come si ricava il reach netto dalle impression e dalla frequenza media?",
+      "answer": "Reach netto=impression/frequenza media; reach% = reach netto/popolazione target×100.",
+      "detail": "240.000 impression e frequenza 3 danno 80.000 persone; su 200.000 di popolazione target il reach è 40%.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Reach=\\frac{Impression}{Frequenza}",
+          "meaning": "Persone raggiunte"
+        },
+        {
+          "latex": "Reach_{\\%}=\\frac{Reach}{Popolazione}\\cdot100",
+          "meaning": "Copertura target"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §3, pagina PDF 161"
+    },
+    {
+      "id": "mca-c05-q141",
+      "topicId": "mca-c05-t22",
+      "question": "Che cos’è il CPM e come si calcola?",
+      "answer": "Costo della campagna per mille impression = spesa pubblicitaria/(impression/1.000).",
+      "detail": "Con 1.800 € e 240.000 impression CPM=7,50 € per mille. È costo dell’esposizione, non prova di conversione o vendita.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CPM=\\frac{Spesa}{Impression/1000}",
+          "meaning": "Costo della campagna per mille impression = spesa pubblicitaria/(impression/1.000)."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §3, pagina PDF 161"
+    },
+    {
+      "id": "mca-c05-q142",
+      "topicId": "mca-c05-t22",
+      "question": "Perché una campagna con molte impression può avere reach basso?",
+      "answer": "Perché le stesse persone possono ricevere molte esposizioni: cresce la frequenza media, non necessariamente il numero di persone distinte.",
+      "detail": "Distinguere deduplicazione delle identità ed esposizione attenta: non tutte le impression equivalgono a persone che hanno visto consapevolmente il messaggio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §3, pagina PDF 162"
+    },
+    {
+      "id": "mca-c05-q143",
+      "topicId": "mca-c05-t23",
+      "question": "Come si costruisce un indicatore di Attitude multiattributo nel modello del corso?",
+      "answer": "Attitude=Σ(x_i×w_i), con giudizi x_i e pesi di importanza w_i.",
+      "detail": "Se Σw=1 il punteggio resta sulla scala dei giudizi (per pesi non negativi). Se i pesi non sommano a 1, normalizzare; attributi come prezzo numerico vanno trasformati in giudizi coerenti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Attitude=\\sum_i x_i w_i",
+          "meaning": "Attitude=Σ(x_i×w_i), con giudizi x_i e pesi di importanza w_i."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §4, pagina PDF 162"
+    },
+    {
+      "id": "mca-c05-q144",
+      "topicId": "mca-c05-t23",
+      "question": "Quale Attitude risulta con affidabilità 8 peso 0,5, semplicità 6 peso 0,3 e prezzo valutato 7 peso 0,2?",
+      "answer": "8×0,5+6×0,3+7×0,2=7,2 su 10.",
+      "detail": "I pesi sommano 1; il punteggio del prezzo è un giudizio orientato in modo coerente, non euro direttamente sommati a valutazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §4, pagina PDF 162"
+    },
+    {
+      "id": "mca-c05-q145",
+      "topicId": "mca-c05-t23",
+      "question": "Come si differenziano purchase intentions top-two-box e punteggio medio?",
+      "answer": "Top-two-box=quota delle risposte positive secondo soglia; media=media dei punteggi codificati, es. 1–5.",
+      "detail": "Con risposte 40 decisamente sì, 70 probabilmente sì, 30 incerte, 40 probabilmente no, 20 decisamente no su 200: top-two=55%, media=3,35/5.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §4.1, pagina PDF 162"
+    },
+    {
+      "id": "mca-c05-q146",
+      "topicId": "mca-c05-t23",
+      "question": "Quali tre indicatori web di interesse sono distinti nella Lezione 24?",
+      "answer": "Durata delle visite, bounce rate secondo una soglia dichiarata e Click-through Rate (CTR) dell’annuncio.",
+      "detail": "Tempo, rimbalzo e click misurano azioni digitali diverse; nessuno equivale automaticamente a intenzione forte o acquisto osservato. Prima dei confronti si fissano evento, base e periodo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §5, pagina PDF 162"
+    },
+    {
+      "id": "mca-c05-q147",
+      "topicId": "mca-c05-t23",
+      "question": "Come si calcola il tempo medio speso per visita senza cadere nell’errore della media delle medie?",
+      "answer": "Somma della durata di tutte le visite / numero totale delle visite, pesando per numero di sessioni.",
+      "detail": "A: due visite da 60 e 120 s (media 90); B: una da 30 s (media 30). Media per visita=(60+120+30)/3=70 s, media semplice dei clienti=60 s.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §5.1, pagina PDF 162"
+    },
+    {
+      "id": "mca-c05-q148",
+      "topicId": "mca-c05-t23",
+      "question": "Qual è la differenza tra durata grezza della visita e tempo di coinvolgimento GA4 nel manuale?",
+      "answer": "Durata grezza: timestamp uscita−ingresso; tempo di engagement GA4: periodo in cui pagina/app è attiva o in primo piano.",
+      "detail": "La distinzione è indicata come integrazione alla slide: non sostituire la definizione didattica se la traccia richiede quella del professore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §5.1, pagina PDF 162"
+    },
+    {
+      "id": "mca-c05-q149",
+      "topicId": "mca-c05-t23",
+      "question": "Come viene definito il bounce rate nel materiale del professore?",
+      "answer": "Per clienti o sessioni: numero con tempo speso inferiore alla soglia T̄ / totale di clienti o visite ×100.",
+      "detail": "Il numeratore e il denominatore devono essere sullo stesso livello. La soglia è parte della definizione e non è universale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Bounce_{sessioni}=\\frac{Sessioni_{tempo<\\bar{T}}}{SessioniTotali}\\cdot100",
+          "meaning": "Per clienti o sessioni: numero con tempo speso inferiore alla soglia T̄ / totale di clienti o visite ×100."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §5.2, pagina PDF 162"
+    },
+    {
+      "id": "mca-c05-q150",
+      "topicId": "mca-c05-t23",
+      "question": "Qual è la differenza fra bounce rate del corso e definizione GA4 riportata nel manuale?",
+      "answer": "Il corso usa una soglia sul tempo trascorso; GA4 usa la quota di sessioni non coinvolte secondo i criteri di engagement.",
+      "detail": "Con soglia 20 s, 80/500 sessioni danno bounce corso 16%; con 125/500 sessioni non engaged GA4 è 25%. Non c’è contraddizione: cambiano le definizioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §5.2, pagina PDF 163"
+    },
+    {
+      "id": "mca-c05-q151",
+      "topicId": "mca-c05-t23",
+      "question": "Che cosa misura il Click-through Rate (CTR) e come si calcola?",
+      "answer": "Click ricevuti / impression ×100; misura risposta in click alle esposizioni.",
+      "detail": "1.500 click su 75.000 impression = 2%. CTR alto non dimostra acquisti, CTR basso non implica che una campagna di awareness sia inutile.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CTR=\\frac{Click}{Impression}\\cdot100",
+          "meaning": "Click ricevuti / impression ×100; misura risposta in click alle esposizioni."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §5.3, pagina PDF 163"
+    },
+    {
+      "id": "mca-c05-q152",
+      "topicId": "mca-c05-t24",
+      "question": "Che cos’è una conversione e perché non esiste un conversion rate unico?",
+      "answer": "È il compimento dell’azione obiettivo; il tasso cambia a seconda della base: impression, click, visite, utenti o contatti.",
+      "detail": "Preventivo, iscrizione, trial e acquisto sono eventi diversi. Il denominatore va scelto in base allo stadio del funnel e mantenuto esplicito.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §6, pagina PDF 163"
+    },
+    {
+      "id": "mca-c05-q153",
+      "topicId": "mca-c05-t24",
+      "question": "Quali quattro indicatori si ottengono da 40.000 impression, 1.200 click, 1.080 visite e 54 acquisti?",
+      "answer": "CTR=3%; conversione per visita=5%; acquisti/click=4,5%; acquisti/impression=0,135%.",
+      "detail": "I tassi non sono alternativi identici: ciascuno ha una popolazione di riferimento distinta; occorrono attribution window e deduplicazione coerenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §6, pagina PDF 163"
+    },
+    {
+      "id": "mca-c05-q154",
+      "topicId": "mca-c05-t24",
+      "question": "Come viene definito Redemption rate nella Lezione 24 e perché può differire dalla Lezione 22?",
+      "answer": "Nella Lezione 24: clienti che acquistano in promozione/clienti contattati; con coupon la traccia può chiedere coupon utilizzati/coupon distribuiti.",
+      "detail": "La Lezione 22 propone anche redemption individuale offerte accettate/offerte inviate. Sono unità diverse: seguire l’unità precisata nell’esercizio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §7, pagina PDF 164"
+    },
+    {
+      "id": "mca-c05-q155",
+      "topicId": "mca-c05-t24",
+      "question": "Che cos’è il Transaction Conversion Rate (TCR) nel materiale del corso?",
+      "answer": "Clienti che acquistano dopo l’ingresso nel sito / clienti che entrano nel sito.",
+      "detail": "La variante transazioni/sessioni è una metrica per sessione, non uguale automaticamente a clienti unici acquirenti/visitatori unici.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "TCR=\\frac{AcquirentiEntrati}{ClientiEntrati}\\cdot100",
+          "meaning": "Clienti che acquistano dopo l’ingresso nel sito / clienti che entrano nel sito."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §7, pagina PDF 164"
+    },
+    {
+      "id": "mca-c05-q156",
+      "topicId": "mca-c05-t24",
+      "question": "Quali tassi risultano con 260 coupon usati su 2.000 distribuiti e 42 acquirenti su 600 visitatori?",
+      "answer": "Redemption coupon=13%; TCR per utenti=7%.",
+      "detail": "Non moltiplicarli automaticamente: non rappresentano necessariamente fasi consecutive della stessa popolazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §7, pagina PDF 164"
+    },
+    {
+      "id": "mca-c05-q157",
+      "topicId": "mca-c05-t24",
+      "question": "Come si calcola l’acquisition rate nel corso?",
+      "answer": "Nuovi clienti acquisiti nel periodo / clienti presenti a inizio periodo ×100.",
+      "detail": "140 nuovi su 2.000 iniziali danno 7%. La crescita netta può essere diversa se ci sono abbandoni, come mostra la relazione con churn.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "AcquisitionRate=\\frac{Nuovi}{B_0}\\cdot100",
+          "meaning": "Nuovi clienti acquisiti nel periodo / clienti presenti a inizio periodo ×100."
+        }
+      ],
+      "connections": [
+        "Lezione 21 — B₁−B₀=Nuovi−Persi"
+      ],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §8, pagina PDF 164"
+    },
+    {
+      "id": "mca-c05-q158",
+      "topicId": "mca-c05-t24",
+      "question": "Come si calcola il costo di acquisizione AC/CAC e quale denominatore richiede?",
+      "answer": "Spese di marketing per acquisizione / numero di nuovi clienti effettivamente acquisiti.",
+      "detail": "Con 8.000 € di campagna e 200 nuovi AC=40 €; se nel conteggio ci sono clienti esistenti che riacquistano, il denominatore non è valido per il CAC.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CAC=\\frac{CostiAcquisizione}{NuoviClienti}",
+          "meaning": "Spese di marketing per acquisizione / numero di nuovi clienti effettivamente acquisiti."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §8, pagina PDF 164"
+    },
+    {
+      "id": "mca-c05-q159",
+      "topicId": "mca-c05-t24",
+      "question": "Qual è la relazione tra costo per contatto, redemption e costo di acquisizione?",
+      "answer": "AC = costo unitario per contatto / redemption decimale, nelle condizioni semplificate delle slide.",
+      "detail": "Con costo contatto 1,20 € e redemption 3%=0,03: AC=40 €. Occorre che ogni conversione sia un nuovo cliente, che la spesa sia proporzionale ai contatti e che non ci siano altri costi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "AC=\\frac{c_{contatto}}{redemption}",
+          "meaning": "AC = costo unitario per contatto / redemption decimale, nelle condizioni semplificate delle slide."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §8, pagina PDF 164"
+    },
+    {
+      "id": "mca-c05-q160",
+      "topicId": "mca-c05-t24",
+      "question": "Perché CAC va analizzato insieme al CLTV?",
+      "answer": "CAC è un investimento iniziale; CLTV stima il valore futuro della relazione dopo margini, retention e sconto.",
+      "detail": "Un CAC basso non prova che il cliente sia redditizio, e un alto CLTV non giustifica automaticamente qualunque spesa di acquisizione: confrontare anche rischi e capacità finanziaria.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Lezione 21 — CLTV prospect"
+      ],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §8, pagina PDF 164"
+    },
+    {
+      "id": "mca-c05-q161",
+      "topicId": "mca-c05-t25",
+      "question": "Che differenza esiste tra clienti trial e repeat?",
+      "answer": "Trial: chi prova il prodotto per la prima volta nel periodo; repeat: chi torna ad acquistare secondo la definizione temporale.",
+      "detail": "Separarli consente di distinguere crescita per nuove prove da riacquisto di clienti passati, soprattutto nei primi mesi dopo il lancio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §9, pagina PDF 164"
+    },
+    {
+      "id": "mca-c05-q162",
+      "topicId": "mca-c05-t25",
+      "question": "Qual è la formula del Trial rate utilizzata dal professore?",
+      "answer": "Trial rate=Conversion Rate×Brand Awareness×Disponibilità distributiva.",
+      "detail": "È una stima moltiplicativa sotto ipotesi di passaggi coerenti e fattori decimali; la disponibilità può essere misurata in copertura numerica o ponderata secondo il caso.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "TrialRate=Conversion\\cdot Awareness\\cdot Disponibilita",
+          "meaning": "Trial rate=Conversion Rate×Brand Awareness×Disponibilità distributiva."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §9, pagina PDF 164"
+    },
+    {
+      "id": "mca-c05-q163",
+      "topicId": "mca-c05-t25",
+      "question": "Come si ricava il Trial rate del 9,3% dal questionario dell’esempio del docente?",
+      "answer": "Conversione=0,20×0,80+0,50×0,30=0,31; awareness=0,60; disponibilità=0,50: trial=0,31×0,60×0,50=0,093.",
+      "detail": "Le conversioni 80% e 30% per risposte definitely/probably sono assunzioni del modello, non probabilità garantite da dichiarazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §9.1, pagina PDF 165"
+    },
+    {
+      "id": "mca-c05-q164",
+      "topicId": "mca-c05-t25",
+      "question": "Quali formule descrivono Trial, Repeat e Penetration nei periodi del modello del corso?",
+      "answer": "Trial_rate_t=Trial_t/Popolazione; Repeat_rate_t=Repeat_t/Penetration_(t−1); Penetration_t=Trial_rate_t×Popolazione+Repeat_rate_t×Penetration_(t−1).",
+      "detail": "Qui Penetration_t è il numero di acquirenti del periodo nella dinamica delle slide, non il totale cumulato di persone che hanno mai acquistato. Evitare doppi conteggi fuori dalle convenzioni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "P_t=TR_t\\cdot N+RR_t\\cdot P_{t-1}",
+          "meaning": "Trial_rate_t=Trial_t/Popolazione; Repeat_rate_t=Repeat_t/Penetration_(t−1); Penetration_t=Trial_rate_t×Popolazione+Repeat_rate_t×Penetration_(t−1)."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §9.2, pagina PDF 165"
+    },
+    {
+      "id": "mca-c05-q165",
+      "topicId": "mca-c05-t25",
+      "question": "Per 4.200.000 famiglie, trial 9,3%, repeat 50% e P₀=0, quanti clienti si stimano nei primi tre mesi?",
+      "answer": "Mese 1:390.600; mese 2:585.900; mese 3:683.550 acquirenti del periodo.",
+      "detail": "Trial mensile=390.600; Repeat_1=0, Repeat_2=195.300, Repeat_3=292.950. La formula semplificata non va protratta indefinitamente senza considerare saturazione e bacino residuo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §9.3, pagina PDF 165"
+    },
+    {
+      "id": "mca-c05-q166",
+      "topicId": "mca-c05-t25",
+      "question": "In una campagna awareness passa dal 45% al 65%: qual è la differenza in punti e la crescita relativa?",
+      "answer": "+20 punti percentuali, pari a (65−45)/45≈44,44% di crescita relativa.",
+      "detail": "La purchase intention dal 20% al 23% aumenta invece di +3 punti percentuali. Non scrivere “+20%” se intendi +20 punti percentuali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §10, pagina PDF 165"
+    },
+    {
+      "id": "mca-c05-q167",
+      "topicId": "mca-c05-t25",
+      "question": "Perché una differenza prima/dopo una campagna non dimostra automaticamente efficacia causale?",
+      "answer": "Perché stagionalità, promozioni, concorrenti, mutamenti del campione o eventi esterni possono spiegare parte del cambiamento.",
+      "detail": "Il manuale cita gruppi di controllo, randomizzazione e metodi quasi-sperimentali come possibili approfondimenti per attribuire un effetto alla campagna.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §10, pagina PDF 165"
+    },
+    {
+      "id": "mca-c05-q168",
+      "topicId": "mca-c05-t25",
+      "question": "Quali sono gli errori d’esame più frequenti nel funnel awareness–attitude–adoption?",
+      "answer": "Sommare misure sovrapposte, trattare percentuali come interi, confondere impression/persone o click/visite, denominatori di conversione, bounce corso/GA4 e CAC/numero transazioni.",
+      "detail": "Inoltre controllare unità e tempo del repeat, non scambiare intenzione con acquisto e non applicare indefinitamente trial costante senza saturazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §11, pagina PDF 166"
+    },
+    {
+      "id": "mca-c05-q169",
+      "topicId": "mca-c05-t25",
+      "question": "Con 360.000 impression, frequenza 4, spesa 3.240 €, 7.200 click e target 300.000, quali KPI ottieni?",
+      "answer": "Reach=90.000; reach%=30%; CPM=9 €; CTR=2%.",
+      "detail": "Misurano rispettivamente copertura netta, frazione del target raggiunta, costo per mille esposizioni e reazione in click; nessuno coincide con quota vendite.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §12, pagina PDF 166"
+    },
+    {
+      "id": "mca-c05-q170",
+      "topicId": "mca-c05-t25",
+      "question": "Con 20.000 impression, 800 click, 700 visite e 35 acquirenti quali conversioni risultano?",
+      "answer": "CTR=4%; acquisti/visite=5%; acquisti/impression=0,175%.",
+      "detail": "Ciascun rapporto risponde a una domanda diversa; evitare di convertire percentuali in numeri interi prima delle moltiplicazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §12, pagina PDF 166"
+    },
+    {
+      "id": "mca-c05-q171",
+      "topicId": "mca-c05-t25",
+      "question": "Con 12.000 offerte a 0,80 € e 240 nuovi clienti, quanto sono redemption e AC?",
+      "answer": "Redemption=240/12.000=2%; costo totale=9.600 €; AC=9.600/240=40 €.",
+      "detail": "Vale l’identità 0,80/0,02=40 € per acquisizione se ogni risposta conteggiata è un nuovo cliente e non ci sono ulteriori costi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §12, pagina PDF 166"
+    },
+    {
+      "id": "mca-c05-q172",
+      "topicId": "mca-c05-t25",
+      "question": "Con popolazione 100.000, trial 4%, repeat 25% e P₀=0, quanto sono P₁ e P₂?",
+      "answer": "P₁=4.000; P₂=4.000+0,25×4.000=5.000 clienti acquirenti nel periodo.",
+      "detail": "Non chiamare P₂ un totale cumulato di individui mai acquisiti: il significato deriva dalla convenzione della formula del docente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §12, pagina PDF 166"
+    },
+    {
+      "id": "mca-c05-q173",
+      "topicId": "mca-c05-t25",
+      "question": "Quali questioni manageriali chiudono la Lezione 24 nelle domande orali?",
+      "answer": "Awareness assistita vs top of mind, impression vs reach, CTR vs acquisti, attitude vs adoption, CAC vs CLTV, fattori del trial e limiti del repeat.",
+      "detail": "Una buona risposta deve citare unità osservate, fonte dei dati, periodo, denominatori e assunzioni dei modelli, non solamente il valore numerico.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §13, pagina PDF 166"
+    },
+    {
+      "id": "mca-c05-q174",
+      "topicId": "mca-c05-t25",
+      "question": "Quali grandezze e unità riassume il formulario conclusivo della Lezione 24?",
+      "answer": "Awareness, reach%, CTR, TCR, redemption, acquisition, trial e repeat sono quote/tassi; reach è in persone; CPM in €/1.000 impression; CAC in €/cliente.",
+      "detail": "Penetration_t nel modello slide è un numero di acquirenti del periodo; Attitude è un punteggio ponderato. Esplicitare sempre se si riporta decimale o percentuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 5, Lezione 24, §14, pagina PDF 167"
+    }
+  ]
+}

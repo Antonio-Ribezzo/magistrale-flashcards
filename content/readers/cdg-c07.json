@@ -1,0 +1,1554 @@
+{
+  "sections": [
+    {
+      "id": "introduzione",
+      "title": "Introduzione",
+      "topics": [],
+      "blocks": [
+        {
+          "image": "cdg-p70-1.png",
+          "caption": "Dal prodotto unico al flusso continuo cambia l’oggetto al quale conviene accumulare i costi.",
+          "alt": "Dal prodotto unico al flusso continuo cambia l’oggetto al quale conviene accumulare i costi."
+        }
+      ],
+      "concept": "Introduzione"
+    },
+    {
+      "id": "7-1",
+      "title": "7.1 Finalità, prerequisiti e lessico",
+      "topics": [
+        "cdg-c07-t01"
+      ],
+      "blocks": [
+        {
+          "text": "Nei capitoli precedenti abbiamo imparato a classificare i costi e attribuire le quote indirette con coefficienti, centri di costo e attività. Ora dobbiamo scegliere un sistema di accumulazione che rispecchi il modo in cui si svolge la produzione. Un prodotto unico progettato per un cliente non può essere trattato esattamente come migliaia di unità identiche che scorrono in un processo continuo."
+        },
+        {
+          "text": "Il problema operativo è duplice: (1) identificare dove si accumulano i costi e (2) individuare come trasformare i costi totali in un costo unitario attendibile. In una commessa il costo è normalmente riferibile a un ordine specifico. Nella produzione continua si conoscono invece i costi di un reparto e di un periodo, mentre i pezzi completati e incompleti devono essere resi confrontabili mediante unità equivalenti."
+        },
+        {
+          "text": "Termini essenziali. Commessa (job): ordine o progetto identificato. Lotto: insieme di unità omogenee realizzate con una specifica lavorazione. Reparto o processo: centro di accumulazione per produzione ripetitiva. WIP (work in process): prodotti in corso di lavorazione. Unità equivalenti di produzione (UEP): espressione quantitativa del lavoro effettuato su unità finite o parzialmente finite."
+        },
+        {
+          "text": "Il capitolo affronta anche i processi congiunti, in cui lo stesso processo genera più prodotti distinguibili solo da un determinato punto in avanti. Questo tema è presente sia nelle slide sia nelle soluzioni editoriali 4.7–4.10, e completa il programma sui diversi contesti produttivi."
+        }
+      ],
+      "concept": "Finalità, prerequisiti e lessico"
+    },
+    {
+      "id": "7-2",
+      "title": "7.2 I quattro sistemi produttivi",
+      "topics": [
+        "cdg-c07-t02"
+      ],
+      "blocks": [
+        {
+          "text": "La docente colloca i sistemi produttivi lungo un continuum che va dalla realizzazione di un singolo bene alla produzione in flusso continuo. Non esiste una separazione rigida tra le modalità; le imprese possono avere attività con caratteristiche miste."
+        },
+        {
+          "text": "Produzione per singola unità. L’output è identificabile e distinguibile: un ponte, un edificio, un impianto su misura, una consulenza specialistica. Il costo va raccolto per ordine o progetto."
+        },
+        {
+          "text": "Produzione per lotti. Si realizzano gruppi di prodotti identificabili; le unità dello stesso lotto sono spesso simili, mentre lotti diversi differiscono per configurazione, materiali o tempi. Esempi: una tiratura editoriale, una collezione di capi, un ordine di arredi."
+        },
+        {
+          "text": "Produzione in serie. I beni sono prodotti con continuità e hanno caratteristiche omogenee; ogni unità è identificabile, ma economicamente si può ricorrere a costi medi per linea o reparto."
+        },
+        {
+          "text": "Produzione a flusso continuo. L’output può essere materialmente indistinguibile fino a fasi avanzate: liquidi, sostanze chimiche, bevande, prodotti cartari o siderurgici. Il reparto e il periodo diventano il naturale centro di accumulazione dei costi."
+        },
+        {
+          "text": "La scelta del sistema di costing dipende soprattutto da omogeneità, tracciabilità, continuità della produzione e costo della misurazione. Un’azienda può utilizzare job costing per i prototipi e process costing per i prodotti standardizzati."
+        },
+        {
+          "table": [
+            [
+              "Modalità",
+              "Oggetto fisico",
+              "Oggetto di costo tipico",
+              "Esempio"
+            ],
+            [
+              "Singola unità",
+              "Un prodotto distintivo",
+              "Progetto / commessa",
+              "Impianto speciale"
+            ],
+            [
+              "Lotti",
+              "Serie differenziate",
+              "Lotto / ordine",
+              "Capi su ordinazione"
+            ],
+            [
+              "Serie",
+              "Unità ripetitive",
+              "Linea / reparto",
+              "Componenti elettrici"
+            ],
+            [
+              "Flusso continuo",
+              "Output omogeneo",
+              "Processo / fase",
+              "Prodotti chimici"
+            ]
+          ]
+        }
+      ],
+      "concept": "I quattro sistemi produttivi"
+    },
+    {
+      "id": "7-3",
+      "title": "7.3 Differenze tra job costing e process costing",
+      "topics": [
+        "cdg-c07-t03"
+      ],
+      "blocks": [
+        {
+          "text": "Nel job costing ogni commessa possiede una propria scheda che registra materiali, ore di lavoro e quota di costi indiretti. Il costo unitario si ottiene dividendo per le unità della commessa quando queste sono sufficientemente omogenee. Un ordine può riguardare un solo bene: in tal caso il costo totale coincide con quello del singolo bene."
+        },
+        {
+          "text": "Nel process costing i costi sono accumulati per periodo e per reparto; il costo medio viene distribuito sulla produzione equivalente. Di conseguenza è indispensabile stimare lo stato di avanzamento dei prodotti incompleti e conciliare i quantitativi in entrata e in uscita."
+        },
+        {
+          "text": "Differenza decisiva. In una commessa i materiali e la manodopera seguono l’identificativo dell’ordine; nel processo continuo gli stessi fattori sono normalmente collegati a un reparto. Il metodo non dipende dal fatto che vi sia o meno una catena di montaggio, ma dalla convenienza a tracciare un costo individuale."
+        },
+        {
+          "text": "OpenStax conferma questa distinzione e illustra che nei sistemi a commessa le singole schede fungono da dettaglio del WIP, mentre nei sistemi per processo i rapporti di produzione sono sviluppati per reparto. [E1]"
+        },
+        {
+          "table": [
+            [
+              "Caratteristica",
+              "Job costing",
+              "Process costing"
+            ],
+            [
+              "Produzione",
+              "Personalizzata / lotti distinguibili",
+              "Continua / omogenea"
+            ],
+            [
+              "Accumulo",
+              "Commessa specifica",
+              "Reparto e periodo"
+            ],
+            [
+              "Documento",
+              "Scheda di commessa",
+              "Rapporto costi del processo"
+            ],
+            [
+              "Costo unitario",
+              "Costo commessa / pezzi omogenei",
+              "Costo per UEP e ripartizione"
+            ],
+            [
+              "Problema critico",
+              "Tracciamento e riparti",
+              "Avanzamento, WIP, scarti"
+            ],
+            [
+              "Esempio",
+              "Progetto software su misura",
+              "Bevanda in bottiglia"
+            ]
+          ]
+        }
+      ],
+      "concept": "Differenze tra job costing e process costing"
+    },
+    {
+      "id": "7-4",
+      "title": "7.4 Configurazione di costo e oggetto di calcolo",
+      "topics": [
+        "cdg-c07-t04"
+      ],
+      "blocks": [
+        {
+          "text": "Prima di effettuare qualsiasi calcolo occorre dichiarare il perimetro del costo. Il costo pieno di produzione comprende materiali, lavoro diretto e costi indiretti di fabbricazione. Il costo pieno aziendale può includere per scopi interni anche quote commerciali, amministrative e di struttura."
+        },
+        {
+          "text": "Il fatto che il cliente sia associato a una commessa non implica che qualunque spesa commerciale diventi automaticamente inventariabile. Il calcolo direzionale del costo pieno e la determinazione delle rimanenze in bilancio hanno scopi differenti e possono richiedere configurazioni diverse."
+        },
+        {
+          "text": "Esempio. Un progetto informatico richiede 60.000 € di sviluppo, 10.000 € di test e una quota di 8.000 € di gestione del progetto. Il costo di commessa per analisi gestionale è 78.000 € se tutte queste componenti sono incluse nel perimetro; costi della sede centrale e di vendita richiedono una scelta separata sul tipo di configurazione."
+        },
+        {
+          "text": "In questo capitolo distingueremo inoltre costi effettivi (consuntivi), costi preventivi e costi “normali”, ossia ottenuti combinando dati effettivi e coefficienti predeterminati."
+        }
+      ],
+      "concept": "Configurazione di costo e oggetto di calcolo"
+    },
+    {
+      "id": "7-5",
+      "title": "7.5 Il sistema di misurazione su commessa",
+      "topics": [
+        "cdg-c07-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Il job costing è un sistema di misurazione nel quale i costi sono accumulati attorno a uno specifico ordine di produzione o servizio. Ogni commessa possiede un codice univoco e una scheda che viene alimentata mentre il lavoro procede."
+        },
+        {
+          "text": "La scheda identifica il cliente, l’oggetto dell’ordine, la quantità, le date, la responsabilità operativa e tutte le componenti del costo. Il costo dei materiali è raccolto attraverso i prelievi, quello del personale attraverso il tempo assegnato e quello dei servizi esterni attraverso documenti specifici. I costi indiretti vengono successivamente attribuiti con un coefficiente coerente con la base scelta."
+        },
+        {
+          "text": "Il flusso informativo deve permettere controlli in itinere: un preventivo può essere confrontato con costi già sostenuti e impegni non ancora fatturati. Se si attende la fine della commessa per conoscere tutti i costi, spesso è troppo tardi per intervenire su inefficienze e varianti."
+        },
+        {
+          "text": "Un sistema per commessa è compatibile con criteri differenti di attribuzione degli indiretti: base unica, centri di costo oppure Activity-Based Costing. Non bisogna confondere l’oggetto di accumulazione (commessa) con il criterio di imputazione dei costi comuni."
+        },
+        {
+          "image": "cdg-p72-1.png",
+          "caption": "Le informazioni di costo provengono da documenti diversi e confluiscono nella medesima scheda di commessa.",
+          "alt": "Le informazioni di costo provengono da documenti diversi e confluiscono nella medesima scheda di commessa."
+        }
+      ],
+      "concept": "Il sistema di misurazione su commessa"
+    },
+    {
+      "id": "7-6",
+      "title": "7.6 Documenti: prelievi, cartellini dei tempi e schede",
+      "topics": [
+        "cdg-c07-t06"
+      ],
+      "blocks": [
+        {
+          "text": "Modulo di prelievo materiali. Riporta almeno codice commessa, data, tipo di materiale, quantità prelevata, unità di misura e costo di valorizzazione. Consente di collegare il consumo del magazzino alla specifica produzione."
+        },
+        {
+          "text": "Cartellino dei tempi. Registra le ore lavorate, il dipendente o centro, l’attività e la commessa. Può essere elettronico, ma deve distinguere il tempo effettivamente attribuibile a quell’ordine da quello dedicato ad attività comuni."
+        },
+        {
+          "text": "Ordini e contratti di subfornitura. Permettono di associare lavorazioni esterne, collaudi, trasporti specifici e servizi di progettazione a una commessa quando il loro impiego è riferibile direttamente all’ordine."
+        },
+        {
+          "text": "Scheda riepilogativa. Ricompone i costi per tipologia e data, con budget, consuntivo, impegni residui e costo stimato a finire. È utile sia alla valorizzazione sia al controllo economico."
+        },
+        {
+          "text": "Nel materiale del corso sono esplicitamente riportati i buoni di prelievo e i cartellini dei tempi come documenti elementari principali. La tracciabilità permette anche la riconciliazione tra magazzino, rilevazione ore e contabilità analitica."
+        }
+      ],
+      "concept": "Documenti: prelievi, cartellini dei tempi e schede"
+    },
+    {
+      "id": "7-7",
+      "title": "7.7 Determinazione dei costi diretti",
+      "topics": [
+        "cdg-c07-t07"
+      ],
+      "blocks": [
+        {
+          "text": "Il costo dei materiali è il prodotto fra quantità consumate e costo unitario. Il costo unitario deriva dal sistema di valorizzazione delle uscite di magazzino (ad esempio costo medio o FIFO), coerentemente con il metodo adottato. Una parte restituita al magazzino non deve rimanere imputata alla commessa."
+        },
+        {
+          "text": "Per la manodopera, il costo diretto richiede ore attribuibili e tariffa oraria. Quest’ultima non coincide necessariamente con la retribuzione netta del dipendente: può includere oneri sociali e altre componenti del costo aziendale. I tempi di attesa o formazione comuni vanno trattati secondo la natura del sistema di costing e il perimetro scelto."
+        },
+        {
+          "text": "Gli altri costi diretti comprendono lavorazioni esterne e servizi che possono essere associati in modo affidabile alla singola commessa. È importante evitare doppie attribuzioni: una spesa già tracciata direttamente non va nuovamente inserita in un pool di costi indiretti."
+        },
+        {
+          "text": "Costo materiali diretti = Σ (quantità consumata del materiale j × prezzo unitario j)"
+        },
+        {
+          "text": "Costo MOD = Σ (ore dirette della lavorazione k × costo orario k)"
+        },
+        {
+          "text": "Esempio: una commessa consuma 25 kg di materiale a 12 €/kg, 5 ore di lavoro qualificato a 32 €/ora e 8 ore di montaggio a 22 €/ora. Materiali = 300 €; lavoro = 160 + 176 = 336 €; costo diretto complessivo = 636 €."
+        }
+      ],
+      "concept": "Determinazione dei costi diretti"
+    },
+    {
+      "id": "7-8",
+      "title": "7.8 Costi indiretti: actual costing e normal costing",
+      "topics": [
+        "cdg-c07-t08"
+      ],
+      "blocks": [
+        {
+          "text": "Per attribuire gli indiretti bisogna stabilire un pool e una base. Il coefficiente di allocazione (CdA) esprime il costo indiretto da applicare per unità della base: €/ora macchina, €/ora MOD, percentuale sul costo del lavoro o un’altra misura congruente."
+        },
+        {
+          "text": "Con l’actual costing (a valori effettivi) la quota attribuita si basa su costi indiretti e volume di base realmente misurati. È possibile conoscere il coefficiente esatto solo quando i dati consuntivi sono disponibili."
+        },
+        {
+          "text": "Con il normal costing si utilizza un coefficiente predeterminato, costruito con costi indiretti preventivi e volume preventivo della base. La base effettivamente consumata dalla commessa viene moltiplicata per quel coefficiente. Questo consente una valorizzazione tempestiva della commessa, anche se i costi indiretti effettivi del periodo non sono ancora definitivi."
+        },
+        {
+          "text": "In conclusione il normal costing combina tipicamente costi diretti effettivi e costi indiretti assorbiti a un tasso predeterminato. Differenze fra costi indiretti effettivi e attribuiti si manifestano come sovra- o sottoassorbimento."
+        },
+        {
+          "text": "CdA effettivo = Costi indiretti consuntivi / Quantità consuntiva della base"
+        },
+        {
+          "text": "CdA predeterminato = Costi indiretti preventivati / Quantità preventivata della base"
+        },
+        {
+          "text": "Indiretti attribuiti alla commessa = CdA × Quantità base consumata dalla commessa"
+        },
+        {
+          "text": "Esempio: Budget costi indiretti: 150.000 €; ore MOD previste: 20.000. CdA = 7,50 €/h. Una commessa con 384 ore MOD assorbe 384 × 7,50 = 2.880 €; il risultato è quello riportato nelle soluzioni Arcari 4.2."
+        }
+      ],
+      "concept": "Costi indiretti: actual costing e normal costing"
+    },
+    {
+      "id": "7-9",
+      "title": "7.9 Scheda di commessa e risultato economico",
+      "topics": [
+        "cdg-c07-t09"
+      ],
+      "blocks": [
+        {
+          "text": "La scheda riepiloga il costo di produzione accumulato per ordine. Se la commessa comprende più unità omogenee, il costo medio si ottiene dividendo per le unità completate. Questo calcolo non va applicato indistintamente a lotti composti da elementi molto differenti senza ulteriori analisi."
+        },
+        {
+          "text": "Se si dispone di un prezzo contrattuale, la differenza fra ricavi e costo industriale genera un margine lordo industriale. Per stimare il risultato operativo della commessa possono essere necessari ulteriori costi commerciali e di struttura, secondo le convenzioni adottate. Nelle valutazioni di convenienza incrementale è invece necessario separare i costi che variano per effetto della decisione."
+        },
+        {
+          "text": "Le variazioni contrattuali possono generare costi aggiuntivi e ricavi riconosciuti solo in un momento successivo. La scheda deve poter distinguere preventivo originario, modifiche approvate e costi effettivi, altrimenti gli scostamenti non sono interpretabili."
+        },
+        {
+          "text": "Costo totale commessa = Materiali diretti + MOD + Servizi diretti + Indiretti attribuiti"
+        },
+        {
+          "text": "Costo unitario commessa = Costo totale commessa / Unità omogenee della commessa"
+        }
+      ],
+      "concept": "Scheda di commessa e risultato economico"
+    },
+    {
+      "id": "7-10",
+      "title": "7.10 Caso Arcari 4.1: pavimentazione a valori effettivi",
+      "topics": [
+        "cdg-c07-t10"
+      ],
+      "blocks": [
+        {
+          "text": "Nel caso editoriale Arcari 4.1, relativo a una lavorazione di pavimentazione, i materiali diretti risultano pari a 4.574 €, la manodopera diretta a 3.040 €, i servizi specifici a 1.000 €. La base di imputazione dei costi indiretti è costituita da 118 ore di MOD. Il CdA effettivo è ottenuto dividendo 40.000 € di indiretti per 8.000 ore complessive."
+        },
+        {
+          "text": "Dalla divisione si ricava un coefficiente di 5 €/ora MOD. La commessa assorbe quindi 118 × 5 = 590 € di indiretti. Il costo pieno industriale della commessa è la somma delle quattro componenti, pari a 9.204 €."
+        },
+        {
+          "text": "Questo esercizio insegna la sequenza: identificazione dei costi diretti, scelta di una base, determinazione di un coefficiente, calcolo della quota indiretta, riepilogo e verifica. Non è corretto dividere gli indiretti aziendali per le ore della sola commessa: il denominatore sono le 8.000 ore dell’intero pool."
+        },
+        {
+          "table": [
+            [
+              "Componente",
+              "Importo (€)",
+              "Come si ottiene"
+            ],
+            [
+              "Materiali diretti",
+              "4.574",
+              "Somma consumi analitici"
+            ],
+            [
+              "Manodopera diretta",
+              "3.040",
+              "Ore × tariffe per attività"
+            ],
+            [
+              "Servizi specifici",
+              "1.000",
+              "Costo lavorazione esterna"
+            ],
+            [
+              "Indiretti attribuiti",
+              "590",
+              "118 h × 5 €/h"
+            ],
+            [
+              "TOTALE COMMESSA",
+              "9.204",
+              "4.574 + 3.040 + 1.000 + 590"
+            ]
+          ]
+        },
+        {
+          "text": "Quadratura: 4.574 + 3.040 + 1.000 + 590 = 9.204 €. I valori sono ripresi dalle soluzioni editoriali Arcari 4.1, non inventati."
+        }
+      ],
+      "concept": "Caso Arcari 4.1: pavimentazione a valori effettivi"
+    },
+    {
+      "id": "7-11",
+      "title": "7.11 Caso Arcari 4.2: 12 poltrone e coefficiente predeterminato",
+      "topics": [
+        "cdg-c07-t11"
+      ],
+      "blocks": [
+        {
+          "text": "Il caso editoriale Arcari 4.2 prevede 12 poltrone di una commessa. I materiali diretti ammontano a 12.648 €, la MOD a 5.832 €, i servizi diretti a 600 €. Il coefficiente predeterminato si calcola su indiretti pianificati di 150.000 € e 20.000 ore MOD previste, ottenendo 7,50 €/h."
+        },
+        {
+          "text": "Le ore effettive attribuite sono 384. La quota di indiretti è quindi 384 × 7,50 = 2.880 €. La scheda si chiude con un costo totale di 21.960 € e un costo unitario di 1.830 € per poltrona."
+        },
+        {
+          "text": "La differenza rispetto al caso precedente non è soltanto l’oggetto prodotto: il coefficiente è stimato in anticipo e consente una rilevazione tempestiva. È necessario riconciliare a fine periodo gli indiretti effettivi con quelli assorbiti."
+        },
+        {
+          "table": [
+            [
+              "Componente",
+              "Importo"
+            ],
+            [
+              "Materiali diretti",
+              "12.648 €"
+            ],
+            [
+              "Manodopera diretta",
+              "5.832 €"
+            ],
+            [
+              "Servizi diretti",
+              "600 €"
+            ],
+            [
+              "Indiretti assorbiti: 384×7,50",
+              "2.880 €"
+            ],
+            [
+              "Totale commessa",
+              "21.960 €"
+            ],
+            [
+              "Costo unitario: 21.960/12",
+              "1.830 €/poltrona"
+            ]
+          ]
+        }
+      ],
+      "concept": "Caso Arcari 4.2: 12 poltrone e coefficiente predeterminato"
+    },
+    {
+      "id": "7-12",
+      "title": "7.12 Caso integrato originale: una commessa tecnica",
+      "topics": [
+        "cdg-c07-t12"
+      ],
+      "blocks": [
+        {
+          "text": "Un’impresa sviluppa un sistema di automazione per un cliente. Il lavoro richiede materiali e componenti per 18.000 €, 260 ore di progettazione a 38 €/ora, 340 ore di montaggio a 24 €/ora e un collaudo esterno specifico per 2.500 €. Il pool dei costi indiretti industriali di periodo è stimato in 120.000 € per 10.000 ore di lavoro diretto preventivate."
+        },
+        {
+          "text": "Il CdA è 120.000 / 10.000 = 12 €/ora diretta. La base consumata dalla commessa è 260 + 340 = 600 ore. Gli indiretti assorbiti ammontano a 7.200 €."
+        },
+        {
+          "text": "La MOD è 260×38 + 340×24 = 9.880 + 8.160 = 18.040 €. Il costo di produzione della commessa è 18.000 + 18.040 + 2.500 + 7.200 = 45.740 €. Il prezzo contrattuale di 59.000 € determina un margine lordo industriale di 13.260 € prima di eventuali costi ulteriori."
+        },
+        {
+          "text": "Elemento Formula Totale"
+        },
+        {
+          "table": [
+            [
+              "Materiali",
+              "Dato",
+              "18.000 €"
+            ],
+            [
+              "MOD progettazione",
+              "260 × 38",
+              "9.880 €"
+            ],
+            [
+              "MOD montaggio",
+              "340 × 24",
+              "8.160 €"
+            ],
+            [
+              "Collaudo esterno",
+              "Dato",
+              "2.500 €"
+            ],
+            [
+              "Indiretti",
+              "600 × 12",
+              "7.200 €"
+            ],
+            [
+              "COSTO INDUSTRIALE",
+              "Somma",
+              "45.740 €"
+            ],
+            [
+              "Margine industriale",
+              "59.000 − 45.740",
+              "13.260 €"
+            ]
+          ]
+        }
+      ],
+      "concept": "Caso integrato originale: una commessa tecnica"
+    },
+    {
+      "id": "7-13",
+      "title": "7.13 Flussi di magazzino, WIP e rilevazioni",
+      "topics": [
+        "cdg-c07-t13"
+      ],
+      "blocks": [
+        {
+          "text": "Il costo segue le fasi della produzione: l’acquisto alimenta le materie prime, il prelievo trasferisce i costi nelle commesse in corso di lavorazione (WIP), il completamento determina il passaggio ai prodotti finiti e la vendita fa emergere il costo del venduto nel conto economico."
+        },
+        {
+          "text": "Il magazzino dei prodotti finiti non si confonde con le commesse non concluse. Una lavorazione parzialmente completata resta normalmente in corso; un bene finito ma non ancora venduto mantiene il suo costo nella relativa rimanenza, secondo il sistema contabile adottato."
+        },
+        {
+          "text": "Questa sequenza collega il calcolo gestionale al bilancio, senza rendere identici i due scopi. Per le produzioni che soddisfano contratti specifici di lunga durata possono rilevare regole contabili ulteriori (per esempio lavori in corso su ordinazione): si tratta di un tema distinto dalla semplice scheda gestionale della commessa."
+        },
+        {
+          "image": "cdg-p75-1.png",
+          "caption": "La scheda di commessa rappresenta il dettaglio analitico che alimenta i lavori in corso e, al completamento, i prodotti finiti.",
+          "alt": "La scheda di commessa rappresenta il dettaglio analitico che alimenta i lavori in corso e, al completamento, i prodotti finiti."
+        }
+      ],
+      "concept": "Flussi di magazzino, WIP e rilevazioni"
+    },
+    {
+      "id": "7-14",
+      "title": "7.14 Sovra- e sottoassorbimento, margini e controlli",
+      "topics": [
+        "cdg-c07-t14"
+      ],
+      "blocks": [
+        {
+          "text": "Con il normal costing la somma delle quote indirette assorbite può essere diversa dai costi indiretti effettivi. Se gli effettivi superano gli assorbiti abbiamo un sottoassorbimento; nel caso opposto un sovra-assorbimento. È indispensabile spiegare la differenza e trattarla secondo il sistema contabile applicabile."
+        },
+        {
+          "text": "Esempio: il coefficiente preventivo è 10 €/h e le ore complessive effettive sono 8.500: indiretti assorbiti 85.000 €. Se i costi indiretti consuntivi sono 91.000 €, il sottoassorbimento è 6.000 €. Se fossero 82.000 €, avremmo un sovra-assorbimento di 3.000 €."
+        },
+        {
+          "text": "Un sistema di controllo deve distinguere le differenze dovute a volume di attività, costo dei fattori, efficienza, errori di rilevazione o capacità inutilizzata. Non basta registrare la differenza: è utile interpretarla e valutarne la materialità."
+        },
+        {
+          "text": "Sottoassorbimento = Costi indiretti effettivi − Costi indiretti assorbiti, se positivo"
+        }
+      ],
+      "concept": "Sovra- e sottoassorbimento, margini e controlli"
+    },
+    {
+      "id": "7-15",
+      "title": "7.15 Process costing: reparto, periodo e costo medio",
+      "topics": [
+        "cdg-c07-t15"
+      ],
+      "blocks": [
+        {
+          "text": "Nelle produzioni a flusso continuo o ripetitivo non è generalmente conveniente costruire una scheda per ogni singolo pezzo. I costi vengono accumulati per reparto o fase di lavorazione e per periodo; successivamente sono attribuiti alle unità realizzate."
+        },
+        {
+          "text": "Si distinguono le risorse consumate nel periodo, i costi incorporati nelle unità già in corso all’inizio e il costo che deve essere trasferito al reparto successivo, nonché le rimanenze finali di semilavorati. Le fasi possono ricevere prodotti già parzialmente lavorati da reparti precedenti."
+        },
+        {
+          "text": "Il problema centrale è che a fine periodo non tutte le unità hanno lo stesso grado di completamento: 100 pezzi conclusi e 100 pezzi al 20% non rappresentano 200 pezzi di lavoro completo. Per ottenere un costo medio corretto si introducono le unità equivalenti di produzione."
+        },
+        {
+          "text": "In termini gestionali il sistema consente di analizzare anche rendimento di reparto, scarti, percentuali di completamento e quantità di costi trasferiti: questo report non è quindi soltanto un esercizio di aritmetica."
+        }
+      ],
+      "concept": "Process costing: reparto, periodo e costo medio"
+    },
+    {
+      "id": "7-16",
+      "title": "7.16 Flusso fisico e quadratura delle unità",
+      "topics": [
+        "cdg-c07-t16"
+      ],
+      "blocks": [
+        {
+          "text": "Il primo passaggio in ogni esercizio è la quadratura fisica, indipendente dalla valutazione economica. Le unità da giustificare sono le rimanenze iniziali di semilavorati più le unità introdotte nel periodo; le unità giustificate sono quelle completate e trasferite, le rimanenze finali e gli eventuali scarti."
+        },
+        {
+          "text": "In un reparto successivo, le unità introdotte possono provenire dal reparto precedente. Nel primo reparto possono invece essere rappresentate dalle unità avviate con materiali iniziali. Le eventuali perdite devono essere incluse nella riconciliazione quantitativa, specificando quando si verificano."
+        },
+        {
+          "text": "Esempio coerente con Arcari 4.3–4.4: 50 unità iniziali + 290 avviate = 300 completate + 30 finali + 10 scartate = 340 unità. La quadratura non richiede ancora conoscere il costo dei materiali o della MOD."
+        },
+        {
+          "text": "RI fisiche + unità avviate = unità completate + RF fisiche + scarti/perdite"
+        },
+        {
+          "image": "cdg-p76-1.png",
+          "caption": "Prima la quadratura delle unità fisiche, poi la valorizzazione per categorie di costo.",
+          "alt": "Prima la quadratura delle unità fisiche, poi la valorizzazione per categorie di costo."
+        }
+      ],
+      "concept": "Flusso fisico e quadratura delle unità"
+    },
+    {
+      "id": "7-17",
+      "title": "7.17 Gradi di completamento e unità equivalenti (UEP)",
+      "topics": [
+        "cdg-c07-t17"
+      ],
+      "blocks": [
+        {
+          "text": "Le unità equivalenti esprimono, per una determinata risorsa, quante unità pienamente completate corrispondono al lavoro svolto. Si moltiplica la quantità fisica per la percentuale di impiego del fattore produttivo associata a quelle unità."
+        },
+        {
+          "text": "Per esempio, 80 unità al 25% di completamento per la MOD corrispondono a 20 UEP MOD. Ma se i materiali sono stati introdotti tutti all’inizio, quelle stesse 80 unità possono equivalere a 80 UEP di materiali diretti."
+        },
+        {
+          "text": "È scorretto attribuire una percentuale indistinta a tutti i fattori: il processo può prevedere materie introdotte all’inizio, componenti aggiunti al 60%, manodopera e costi generali maturati nel corso della trasformazione. Servono perciò più colonne di UEP, una per ogni fattore o classe di costi con comportamento omogeneo."
+        },
+        {
+          "text": "Il grado di completamento deve rappresentare la frazione di utilizzo effettivo delle risorse, non semplicemente il numero di giorni passati o la posizione fisica del prodotto lungo una linea di produzione."
+        },
+        {
+          "formula": "UEP per la risorsa f = Unità fisiche × % di completamento relativa a f"
+        }
+      ],
+      "concept": "Gradi di completamento e unità equivalenti (UEP)"
+    },
+    {
+      "id": "7-18",
+      "title": "7.18 Profili di impiego dei fattori produttivi",
+      "topics": [
+        "cdg-c07-t18"
+      ],
+      "blocks": [
+        {
+          "text": "I materiali diretti possono essere immessi all’inizio del processo, in uno stadio intermedio o progressivamente. La MOD e i costi generali di trasformazione vengono spesso considerati maturati in modo graduale, ma la scelta deve riflettere il processo specifico."
+        },
+        {
+          "text": "Quando un fattore viene inserito in un punto preciso, una unità che ha superato tale punto può essere completa al 100% per quel fattore pur essendo solo parzialmente lavorata. Se non lo ha ancora raggiunto, può essere completa allo 0%. Se invece un fattore è consumato progressivamente, la percentuale può seguire l’avanzamento lavorativo."
+        },
+        {
+          "text": "Le schede Arcari distinguono materiali diretti (MD), manodopera diretta (MOD) e costi generali di produzione (CGP), ognuno con proprie percentuali di impiego nelle rimanenze iniziali, finali e scarti."
+        },
+        {
+          "image": "cdg-p76-2.png",
+          "caption": "Schema qualitativo dell’impiego dei fattori: percentuali di completamento diverse generano UEP diverse.",
+          "alt": "Schema qualitativo dell’impiego dei fattori: percentuali di completamento diverse generano UEP diverse."
+        }
+      ],
+      "concept": "Profili di impiego dei fattori produttivi"
+    },
+    {
+      "id": "7-19",
+      "title": "7.19 Metodo della media ponderata (MEP): procedimento completo",
+      "topics": [
+        "cdg-c07-t19"
+      ],
+      "blocks": [
+        {
+          "text": "Il metodo della media ponderata considera congiuntamente il lavoro incorporato nelle rimanenze iniziali e quello svolto nel periodo corrente, senza separare esplicitamente le due componenti. I costi delle RI si sommano a quelli sostenuti nel periodo; il totale viene diviso per le UEP complessive."
+        },
+        {
+          "text": "Le UEP di ciascun fattore comprendono le unità completate (al 100% per il reparto in esame), le quote di lavorazione incorporate nelle rimanenze finali e quelle eventualmente riconosciute negli scarti, secondo le convenzioni del problema. Le rimanenze iniziali sono già incorporate nei costi totali e non vengono sottratte dalle UEP dei completati."
+        },
+        {
+          "text": "Il costo delle unità completate deriva dalla moltiplicazione delle unità per il costo pieno equivalente di reparto; il costo delle rimanenze finali è la somma del valore di ciascun fattore alle percentuali effettive."
+        },
+        {
+          "text": "Quando gli scarti sono contabilizzati separatamente, il loro costo va calcolato in modo analogo; in esercizi con perdite normali trattate come costo delle unità buone il metodo è differente e richiede una convenzione esplicita."
+        },
+        {
+          "text": "UEP MEP_f = Completate + RF × %RF_f + Scarti × %SC_f (se valorizzati a parte)"
+        },
+        {
+          "text": "Costo per UEP MEP_f = (Costo RI_f + Costo periodo_f) / UEP MEP_f"
+        },
+        {
+          "text": "Valore RF = Σ (RF × %RF_f × costo per UEP_f)"
+        }
+      ],
+      "concept": "Metodo della media ponderata (MEP): procedimento completo"
+    },
+    {
+      "id": "7-20",
+      "title": "7.20 Caso editoriale Arcari 4.5–4.6: MEP e scarti",
+      "topics": [
+        "cdg-c07-t20"
+      ],
+      "blocks": [
+        {
+          "text": "Nel caso MEP delle soluzioni editoriali, il reparto completa 100 unità, mantiene 20 unità come rimanenze finali e registra 20 unità scartate. Per i materiali diretti, le RF e gli scarti sono al 100%; per la MOD rispettivamente al 70% e al 40%; per i CGP rispettivamente al 90% e all’80%."
+        },
+        {
+          "text": "Pertanto UEP MD = 100 + 20 + 20 = 140; UEP MOD = 100 + 14 + 8 = 122; UEP CGP = 100 + 18 + 16 = 134. I costi totali da distribuire, comprese le RI, sono MD 2.800 €, MOD 3.660 €, CGP 4.020 €: totale 10.480 €."
+        },
+        {
+          "text": "Si ottengono 20 €/UEP MD, 30 €/UEP MOD, 30 €/UEP CGP. Il costo equivalente unitario dei prodotti completati è 80 €. La produzione completata vale 8.000 €, le RF 1.360 € e gli scarti 1.120 €."
+        },
+        {
+          "text": "Controllo fondamentale: 8.000 + 1.360 + 1.120 = 10.480 €, pari a tutti i costi in entrata. I risultati seguono l’impostazione delle soluzioni Arcari, nelle quali gli scarti sono valorizzati distintamente."
+        },
+        {
+          "table": [
+            [
+              "Voce",
+              "MD",
+              "MOD",
+              "CGP",
+              "Totale"
+            ],
+            [
+              "Costi RI",
+              "1.200",
+              "500",
+              "700",
+              "2.400"
+            ],
+            [
+              "Costi del periodo",
+              "1.600",
+              "3.160",
+              "3.320",
+              "8.080"
+            ],
+            [
+              "Costi da attribuire",
+              "2.800",
+              "3.660",
+              "4.020",
+              "10.480"
+            ],
+            [
+              "UEP",
+              "140",
+              "122",
+              "134",
+              "—"
+            ],
+            [
+              "Costo €/UEP",
+              "20",
+              "30",
+              "30",
+              "80"
+            ],
+            [
+              "Completati (100)",
+              "2.000",
+              "3.000",
+              "3.000",
+              "8.000"
+            ],
+            [
+              "RF (20)",
+              "400",
+              "420",
+              "540",
+              "1.360"
+            ],
+            [
+              "Scarti (20)",
+              "400",
+              "240",
+              "480",
+              "1.120"
+            ]
+          ]
+        }
+      ],
+      "concept": "Caso editoriale Arcari 4.5–4.6: MEP e scarti"
+    },
+    {
+      "id": "7-21",
+      "title": "7.21 Metodo FIFO: procedimento completo",
+      "topics": [
+        "cdg-c07-t21"
+      ],
+      "blocks": [
+        {
+          "text": "Il metodo First In, First Out (FIFO) assume che le unità iniziate nei periodi precedenti siano completate per prime. Per la determinazione del costo del periodo separa la lavorazione già incorporata nelle rimanenze iniziali dal lavoro effettivamente svolto nel periodo corrente."
+        },
+        {
+          "text": "Per le UEP del periodo si calcola: (1) il lavoro residuo necessario a completare le RI; (2) il lavoro sulle unità avviate e completate nello stesso periodo; (3) la quota incorporata nelle rimanenze finali; (4) l’eventuale lavoro sulle unità scartate e riconosciute separatamente."
+        },
+        {
+          "text": "Il costo per UEP si ottiene utilizzando soltanto i costi del periodo corrente. Il costo delle unità iniziali completate è invece composto dal valore storico delle RI più il costo per completarle in questo periodo. La produzione avviata e finita nel periodo è valorizzata interamente ai nuovi costi per UEP."
+        },
+        {
+          "text": "La principale differenza rispetto al MEP è quindi nella separazione temporale dei costi. Se i prezzi e i livelli di efficienza cambiano, FIFO e MEP attribuiranno importi diversi alle unità completate e alle rimanenze finali."
+        },
+        {
+          "text": "UEP FIFO_f = RI × (1 − %RI_f) + (Completate − RI) + RF × %RF_f + Scarti × %SC_f"
+        },
+        {
+          "text": "Costo FIFO per UEP_f = Costo sostenuto nel periodo_f / UEP FIFO_f"
+        },
+        {
+          "text": "Costo RI completate = Valore iniziale RI + costo di completamento del periodo"
+        },
+        {
+          "text": "Ipotesi necessarie: La formula compatta presuppone che tutte le RI siano completate nel periodo, che gli scarti siano separati e che non ci siano ulteriori categorie di flusso. Se il caso è più complesso, va costruito un prospetto per gruppi di unità anziché applicare automaticamente la formula."
+        }
+      ],
+      "concept": "Metodo FIFO: procedimento completo"
+    },
+    {
+      "id": "7-22",
+      "title": "7.22 Caso editoriale Arcari 4.3–4.4: FIFO con scarti",
+      "topics": [
+        "cdg-c07-t22"
+      ],
+      "blocks": [
+        {
+          "text": "Il caso prevede 50 unità in rimanenza iniziale, 300 unità completate, 30 unità finali e 10 unità scartate. Le RI sono al 100% MD, 30% MOD e 40% CGP; le RF sono al 100% MD, 90% MOD e 90% CGP; gli scarti al 100% MD, 80% MOD e 80% CGP."
+        },
+        {
+          "text": "Le UEP FIFO MD sono 300 − 50 + 30 + 10 = 290, perché il materiale delle 50 RI era già interamente incorporato. Le UEP MOD sono 50×70% + 250 + 30×90% + 10×80% = 35 + 250 + 27 + 8 = 320. Le UEP CGP sono 50×60% + 250 + 30×90% + 10×80% = 30 + 250 + 27 + 8 = 315."
+        },
+        {
+          "text": "I costi del periodo sono 11.020 € MD, 9.600 € MOD e 10.080 € CGP. Il costo per UEP è quindi 38 € MD, 30 € MOD e 32 € CGP: in totale 100 € per unità pienamente lavorata nel periodo."
+        },
+        {
+          "text": "Per le 50 RI già iniziate si conserva il valore iniziale di 5.500 € e si aggiunge il completamento: 35 UEP MOD × 30 = 1.050 € e 30 UEP CGP × 32 = 960 €. Il costo totale delle RI completate è 7.510 €. Le unità iniziate e terminate nel periodo sono 250, per un costo di 25.000 €: trasferito totale 32.510 €."
+        },
+        {
+          "text": "Le RF valgono 30×38 + 27×30 + 27×32 = 2.814 €. Gli scarti valgono 10×38 + 8×30 + 8×32 = 876 €. La quadratura economica è 5.500 + 30.700 = 32.510 + 2.814 + 876 = 36.200 €."
+        },
+        {
+          "table": [
+            [
+              "Voce",
+              "MD",
+              "MOD",
+              "CGP",
+              "Totale"
+            ],
+            [
+              "Costi del periodo",
+              "11.020",
+              "9.600",
+              "10.080",
+              "30.700"
+            ],
+            [
+              "UEP periodo",
+              "290",
+              "32",
+              "315",
+              "—"
+            ],
+            [
+              "Costo €/UEP",
+              "38",
+              "30",
+              "32",
+              "100"
+            ],
+            [
+              "RI iniziale",
+              "3.000",
+              "1.500",
+              "1.000",
+              "5.500"
+            ],
+            [
+              "Completamento RI",
+              "0",
+              "1.050",
+              "960",
+              "2.010"
+            ],
+            [
+              "Avviate e completate",
+              "—",
+              "—",
+              "—",
+              "25.000"
+            ],
+            [
+              "Completate e trasferite",
+              "—",
+              "—",
+              "—",
+              "32.510"
+            ],
+            [
+              "Rimanenze finali",
+              "1.140",
+              "810",
+              "864",
+              "2.814"
+            ],
+            [
+              "Scarti",
+              "380",
+              "240",
+              "256",
+              "876"
+            ]
+          ]
+        },
+        {
+          "text": "Doppia Quadratura: Fisica: 50 + 290 = 300 + 30 + 10 = 340. Economica: 5.500 + 30.700 = 32.510 + 2.814 + 876 = 36.200. Sono i risultati delle soluzioni editoriali, ripercorsi integralmente."
+        }
+      ],
+      "concept": "Caso editoriale Arcari 4.3–4.4: FIFO con scarti"
+    },
+    {
+      "id": "7-23",
+      "title": "7.23 Confronto originale FIFO e MEP sullo stesso caso",
+      "topics": [
+        "cdg-c07-t23"
+      ],
+      "blocks": [
+        {
+          "text": "Per confrontare rigorosamente i due metodi dobbiamo applicarli allo stesso flusso di unità e agli stessi costi. Consideriamo 100 unità iniziali, tutte con materiali al 100% e conversione al 40%. Nel periodo sono avviate 400 unità; 420 risultano completate e 80 restano in rimanenza finale, con materiali al 100% e conversione al 50%. Non ci sono scarti."
+        },
+        {
+          "text": "Costi nelle RI: materiali 1.000 €, conversione 800 €. Costi del periodo: materiali 4.800 €, conversione 6.400 €. Totale costi da assegnare 13.000 €. Nel MEP le UEP MD sono 420 + 80 = 500, le UEP conversione 420 + 80×50% = 460. Il costo per UEP MD è 5.800/500 = 11,60 € e il costo per UEP conversione 7.200/460 = 15,6521739 €. I completati valgono 420×27,2521739 = 11.445,91 €; le RF 80×11,60 + 40×15,6521739 = 1.554,09 €."
+        },
+        {
+          "text": "Nel FIFO le unità iniziate e completate nel periodo sono 420 − 100 = 320. Le UEP MD correnti sono 320 + 80 = 400. Le UEP conversione correnti sono 100×60% + 320 + 80×50% = 420. I tassi correnti sono MD 4.800/400 = 12 € e conversione 6.400/420 = 15,2380952 €."
+        },
+        {
+          "text": "Il completamento delle RI costa 100×60%×15,2380952 = 914,29 €, da sommare ai 1.800 € di costo iniziale: 2.714,29 €. Le 320 unità avviate e finite costano 320×(12+15,2380952) = 8.716,19 €. Il totale trasferito FIFO è 11.430,48 €; le RF sono 80×12 + 40×15,2380952 = 1.569,52 €. Entrambi i metodi riconciliano i 13.000 € complessivi, ma li distribuiscono diversamente."
+        },
+        {
+          "table": [
+            [
+              "Grandezza",
+              "Media ponderata",
+              "FIFO"
+            ],
+            [
+              "UEP materiali",
+              "500",
+              "400"
+            ],
+            [
+              "UEP conversione",
+              "460",
+              "420"
+            ],
+            [
+              "Costo MD per UEP",
+              "11,6000 €",
+              "12,0000 €"
+            ],
+            [
+              "Costo conv. per UEP",
+              "15,6522 €",
+              "15,2381 €"
+            ],
+            [
+              "Completati",
+              "11.445,91 €",
+              "11.430,48 €"
+            ],
+            [
+              "Rimanenze finali",
+              "1.554,09 €",
+              "1.569,52 €"
+            ],
+            [
+              "Somma",
+              "13.000,00 €",
+              "13.000,00 €"
+            ]
+          ]
+        },
+        {
+          "image": "cdg-p79-1.png",
+          "caption": "Nello stesso esercizio i due metodi ridistribuiscono diversamente i 13.000 € tra trasferiti e rimanenze finali.",
+          "alt": "Nello stesso esercizio i due metodi ridistribuiscono diversamente i 13.000 € tra trasferiti e rimanenze finali."
+        },
+        {
+          "text": "Interpretazione: La differenza non rappresenta una maggiore o minore spesa effettiva. Entrambi i metodi attribuiscono lo stesso costo totale, ma usano convenzioni diverse per separare i costi del periodo corrente da quelli già incorporati nelle RI."
+        }
+      ],
+      "concept": "Confronto originale FIFO e MEP sullo stesso caso"
+    },
+    {
+      "id": "7-24",
+      "title": "7.24 Reparti successivi e costi trasferiti",
+      "topics": [
+        "cdg-c07-t24"
+      ],
+      "blocks": [
+        {
+          "text": "Quando il prodotto attraversa più reparti, il reparto successivo riceve sia unità fisiche sia il costo già accumulato dal reparto precedente. Questo costo viene detto costo trasferito in entrata (transferred-in cost) e va conservato come categoria distinta per non perdere la riconciliazione."
+        },
+        {
+          "text": "Nel reparto successivo possono aggiungersi nuove materie prime, MOD e costi indiretti. Il costo trasferito è normalmente considerato già incorporato nelle unità entrate nel reparto, mentre le nuove lavorazioni hanno percentuali di completamento specifiche."
+        },
+        {
+          "text": "Esempio: il reparto A trasferisce 500 unità con un costo complessivo di 20.000 €. Il reparto B aggiunge 4.000 € di materiali, 3.000 € di MOD e 3.000 € di costi generali. Se tutte le 500 unità vengono completate senza scarti né giacenze, il costo unitario è (20.000+4.000+3.000+3.000)/500 = 60 €. Con rimanenze finali il calcolo richiederebbe UEP separate per costi trasferiti, materiali aggiunti e trasformazione."
+        },
+        {
+          "text": "Le schede per reparto devono anche distinguere i passaggi interni dalle vendite. Il costo trasferito al reparto successivo non è automaticamente un costo del venduto, perché il prodotto può essere ancora in lavorazione o in magazzino."
+        }
+      ],
+      "concept": "Reparti successivi e costi trasferiti"
+    },
+    {
+      "id": "7-25",
+      "title": "7.25 Scarti e perdite: fisiologici e anomali",
+      "topics": [
+        "cdg-c07-t25"
+      ],
+      "blocks": [
+        {
+          "text": "Le perdite possono derivare da fenomeni fisiologici del processo (evaporazione, taglio, sfridi tecnici, controlli distruttivi) o da condizioni anomale (guasti, errori e difetti eccedenti le soglie normali). La distinzione è importante per misurare efficienza e attribuire i costi in modo ragionevole."
+        },
+        {
+          "text": "Una perdita normale è attesa e può essere incorporata nel costo dei prodotti buoni secondo il sistema adottato. Una perdita anomala è rilevata separatamente e non deve essere confusa con il normale consumo del processo. Se lo scarto possiede un valore recuperabile, questo deve essere considerato coerentemente con il caso."
+        },
+        {
+          "text": "Le soluzioni Arcari 4.3–4.6 valorizzano distintamente una voce “scarti” in base allo stato di avanzamento per MD, MOD e CGP. È la convenzione da utilizzare quando risolviamo quelle specifiche tracce; non bisogna sostituirla automaticamente con la tecnica delle perdite normali appena descritta."
+        },
+        {
+          "text": "ACCA propone un quadro esplicito delle perdite normali, anomale e dei recuperi di valore, evidenziando che il trattamento quantitativo ed economico dipende dal punto del processo e dalla natura della perdita. [E3]"
+        },
+        {
+          "image": "cdg-p80-1.png",
+          "caption": "Perdite normali e anomale richiedono analisi differenti: non tutti gli scarti sono una voce indistinta.",
+          "alt": "Perdite normali e anomale richiedono analisi differenti: non tutti gli scarti sono una voce indistinta."
+        },
+        {
+          "text": "Esempio integrativo senza WIP: sono immessi 1.000 kg con costo complessivo 9.000 €; lo scarto normale atteso è il 10% (100 kg), privo di valore recuperabile. Se l’output buono effettivo è di 900 kg, il costo per kg buono è 9.000/900 = 10 €. Se l’output buono è invece 880 kg e lo scarto effettivo 120 kg, abbiamo 20 kg di perdita anomala: un possibile trattamento analitico è valorizzare i 20 kg anomali a 10 €/kg (= 200 €) e le 880 unità buone per 8.800 €, mantenendo separata la perdita. La procedura effettiva va adattata ai dettagli della traccia e alle regole contabili applicabili."
+        }
+      ],
+      "concept": "Scarti e perdite: fisiologici e anomali"
+    },
+    {
+      "id": "7-26",
+      "title": "7.26 Processi congiunti: definizione e punto di split-off",
+      "topics": [
+        "cdg-c07-t26"
+      ],
+      "blocks": [
+        {
+          "text": "In alcune produzioni un processo comune genera simultaneamente più output distinti. Fino a un certo momento i prodotti non sono separabili e i costi sostenuti sono congiunti: non esiste un legame fisico diretto che permetta di attribuire ciascuna componente a un solo prodotto."
+        },
+        {
+          "text": "Il punto a partire dal quale gli output diventano distinti prende il nome di punto di separazione o split-off. Da quel momento ogni prodotto può essere venduto direttamente oppure sottoposto a lavorazioni specifiche successive."
+        },
+        {
+          "text": "Se i prodotti ottenuti hanno rilevanza economica comparabile parliamo di prodotti congiunti in senso stretto; se uno degli output è nettamente secondario, si distingue tra prodotto principale e sottoprodotto. Le slide includono entrambi i casi e richiedono la conoscenza di criteri specifici di ripartizione."
+        },
+        {
+          "text": "È essenziale comprendere il limite del calcolo: prima dello split-off non esiste una relazione causale univoca fra il costo comune e ciascun output. Le ripartizioni sono convenzioni utili per valorizzazioni e analisi, ma non descrivono necessariamente quanto costerebbe produrre un solo prodotto."
+        },
+        {
+          "image": "cdg-p80-2.png",
+          "caption": "I costi congiunti si formano prima dello split-off; quelli successivi possono essere tracciati al singolo prodotto.",
+          "alt": "I costi congiunti si formano prima dello split-off; quelli successivi possono essere tracciati al singolo prodotto."
+        }
+      ],
+      "concept": "Processi congiunti: definizione e punto di split-off"
+    },
+    {
+      "id": "7-27",
+      "title": "7.27 I tre criteri di allocazione dei costi congiunti",
+      "topics": [
+        "cdg-c07-t27"
+      ],
+      "blocks": [
+        {
+          "text": "Metodo delle quantità prodotte. Il costo comune è attribuito in proporzione alle unità fisiche (kg, litri, pezzi) dei prodotti. È semplice quando le unità sono omogenee e confrontabili. Può essere distorsivo se i prodotti hanno valori commerciali molto diversi."
+        },
+        {
+          "text": "Metodo del valore di vendita. Il costo comune viene ripartito in proporzione al valore di vendita dei prodotti, generalmente sulla base dei volumi prodotti valorizzati ai prezzi osservabili. È più vicino al peso economico degli output, ma dipende dai prezzi."
+        },
+        {
+          "text": "Metodo del valore netto al punto di split-off. Quando i prodotti vengono venduti solo dopo lavorazioni successive, il valore stimato allo split-off può essere calcolato sottraendo dal ricavo finale i costi specifici successivi. Il peso di tale valore netto viene usato per attribuire i costi congiunti."
+        },
+        {
+          "text": "Con entrambi i metodi basati sui ricavi si usa il valore relativo: la somma delle quote assegnate deve essere uguale al totale congiunto. Il criterio va dichiarato perché modifica la marginalità attribuita ai singoli prodotti, senza modificare la spesa totale sostenuta dal processo."
+        },
+        {
+          "text": "Quota congiunta_i (quantità) = Costo congiunto × Q_i / ΣQ"
+        },
+        {
+          "text": "Quota congiunta_i (ricavi) = Costo congiunto × Ricavi_i / ΣRicavi"
+        },
+        {
+          "text": "Valore netto_i = Ricavi finali_i − Costi successivi_i"
+        },
+        {
+          "text": "Quota congiunta_i (valore netto) = Costo congiunto × Valore netto_i / ΣValori netti"
+        }
+      ],
+      "concept": "I tre criteri di allocazione dei costi congiunti"
+    },
+    {
+      "id": "7-28",
+      "title": "7.28 Casi Arcari 4.7–4.8: quantità, ricavi e valore netto",
+      "topics": [
+        "cdg-c07-t28"
+      ],
+      "blocks": [
+        {
+          "text": "Il caso editoriale riguarda due prodotti congiunti XY e XZ: XY 700 kg vendibili a 180 €/kg e XZ 300 kg vendibili a 252 €/kg. Il costo comune è di 150.000 €. I ricavi teorici sono 126.000 € per XY e 75.600 € per XZ, per un totale di 201.600 €."
+        },
+        {
+          "text": "Con il metodo delle quantità, XY assorbe il 70% del costo comune (105.000 €, 150 €/kg) e XZ il 30% (45.000 €, 150 €/kg). Con il metodo del valore di vendita, XY pesa 126.000/201.600 = 62,5% e assorbe 93.750 € (133,93 €/kg); XZ pesa 37,5% e assorbe 56.250 € (187,50 €/kg)."
+        },
+        {
+          "text": "Nel caso Arcari 4.8 i costi successivi allo split-off sono 10.400 € per XY e 21.200 € per XZ. I valori netti sono 115.600 € e 54.400 €, per un totale di 170.000 €. Le percentuali di riparto diventano 68% e 32%: quote comuni 102.000 € e 48.000 €."
+        },
+        {
+          "text": "Aggiungendo i costi successivi, il costo totale di XY è 112.400 € (160,57 €/kg), mentre il costo totale di XZ è 69.200 € (230,67 €/kg). Le quote comuni sommano 150.000 € e i costi complessivi 181.600 €."
+        },
+        {
+          "table": [
+            [
+              "Metodo",
+              "XY: costo comune",
+              "XZ: costo comune",
+              "Totale"
+            ],
+            [
+              "Quantità (70% / 30%)",
+              "105.000 €",
+              "45.000 €",
+              "150.000 €"
+            ],
+            [
+              "Valore vendita (62,5% / 37,5%)",
+              "93.750 €",
+              "56.250 €",
+              "150.000 €"
+            ],
+            [
+              "Valore netto (68% / 32%)",
+              "102.000 €",
+              "48.000 €",
+              "150.000 €"
+            ],
+            [
+              "Costi successivi",
+              "10.400 €",
+              "21.200 €",
+              "31.600 €"
+            ],
+            [
+              "Costo totale con valore netto",
+              "112.400 €",
+              "69.200 €",
+              "181.600 €"
+            ]
+          ]
+        }
+      ],
+      "concept": "Casi Arcari 4.7–4.8: quantità, ricavi e valore netto"
+    },
+    {
+      "id": "7-29",
+      "title": "7.29 Sottoprodotti: significato e trattamenti possibili",
+      "topics": [
+        "cdg-c07-t29"
+      ],
+      "blocks": [
+        {
+          "text": "Il sottoprodotto è un output economicamente secondario ottenuto insieme al prodotto principale. Il relativo valore può essere limitato rispetto a quello del prodotto principale. La modalità di trattamento può avere effetti rilevanti sulla valorizzazione di quest’ultimo."
+        },
+        {
+          "text": "Nel materiale didattico sono presenti tre approcci: (1) attribuire tutti i costi congiunti al principale; (2) attribuirli al principale al netto dei ricavi del sottoprodotto; (3) sottrarre dal costo congiunto del principale il ricavo del sottoprodotto al netto dei suoi costi successivi allo split-off."
+        },
+        {
+          "text": "Non è corretto affermare che i sottoprodotti siano sempre privi di costi: possono richiedere lavorazioni, stoccaggio e distribuzione successive identificabili. Per misurare la marginalità bisogna considerare questi costi specifici e dichiarare la convenzione di attribuzione del costo originario."
+        },
+        {
+          "text": "Il valore realizzabile dei sottoprodotti e i costi ulteriori assumono anche rilevanza nella valutazione di magazzino, in relazione al principio contabile e ai fatti specifici dell’impresa."
+        }
+      ],
+      "concept": "Sottoprodotti: significato e trattamenti possibili"
+    },
+    {
+      "id": "7-30",
+      "title": "7.30 Casi Arcari 4.9–4.10: metodo del ricavo e del margine",
+      "topics": [
+        "cdg-c07-t30"
+      ],
+      "blocks": [
+        {
+          "text": "Le soluzioni editoriali presentano un processo con un prodotto principale e un sottoprodotto, entrambi vendibili in 10.000 unità. Il prodotto principale ha un prezzo di 12 €/unità (ricavo 120.000 €), il sottoprodotto un prezzo di 2 €/unità (ricavo 20.000 €); il costo congiunto è 70.000 € e il costo specifico successivo del sottoprodotto è 5.000 €."
+        },
+        {
+          "text": "Con il metodo del ricavo (Arcari 4.9), 20.000 € di costo congiunto sono attribuiti al sottoprodotto, e 50.000 € al principale. Il sottoprodotto, sostenendo ulteriori 5.000 €, presenta un margine di −5.000 €; il principale un margine di 70.000 €. Il margine complessivo è 65.000 €."
+        },
+        {
+          "text": "Con il metodo del margine (Arcari 4.10), al sottoprodotto viene attribuito un costo congiunto netto di 15.000 € (20.000 ricavo meno 5.000 costi successivi). Il margine del sottoprodotto si azzera e il costo residuo del principale diventa 55.000 €. Il margine del principale è 65.000 €."
+        },
+        {
+          "text": "La dimostrazione più importante è che il risultato totale non cambia: 120.000 + 20.000 − 70.000 − 5.000 = 65.000 €, qualunque sia il criterio che distribuisce la componente congiunta fra i due output."
+        },
+        {
+          "table": [
+            [
+              "Voce",
+              "Metodo ricavo",
+              "Metodo margine"
+            ],
+            [
+              "Congiunto al principale",
+              "50.000",
+              "55.000"
+            ],
+            [
+              "Congiunto al sottoprodotto",
+              "20.000",
+              "15.000"
+            ],
+            [
+              "Costi specifici sottoprodotto",
+              "5.000",
+              "5.000"
+            ],
+            [
+              "Margine principale",
+              "70.000",
+              "65.000"
+            ],
+            [
+              "Margine sottoprodotto",
+              "−5.000",
+              "0"
+            ],
+            [
+              "Margine complessivo",
+              "65.000",
+              "65.000"
+            ]
+          ]
+        }
+      ],
+      "concept": "Casi Arcari 4.9–4.10: metodo del ricavo e del margine"
+    },
+    {
+      "id": "7-31",
+      "title": "7.31 Decisione di vendere allo split-off o lavorare ulteriormente",
+      "topics": [
+        "cdg-c07-t31"
+      ],
+      "blocks": [
+        {
+          "text": "Per decidere se proseguire la lavorazione di un prodotto congiunto, i costi sostenuti prima dello split-off sono già comuni alle alternative e, salvo cambiamenti del processo originario, non cambiano per effetto della scelta. Non sono quindi costi differenziali della decisione specifica."
+        },
+        {
+          "text": "La convenienza va misurata attraverso il ricavo incrementale ottenibile dalla lavorazione ulteriore, confrontato con il costo incrementale necessario per essa. Se il primo supera il secondo, l’ulteriore lavorazione genera un beneficio economico, fermo restando il rispetto della capacità e dei vincoli produttivi."
+        },
+        {
+          "text": "Esempio: un semilavorato è vendibile subito per 50.000 €. Una lavorazione successiva costa 12.000 € e permette ricavi per 65.000 €. Il ricavo incrementale è 15.000 €; il beneficio è 3.000 €. I 40.000 € di costi congiunti attribuiti con un criterio contabile non devono essere nuovamente sottratti per decidere tra le due alternative."
+        },
+        {
+          "text": "Beneficio lavorazione ulteriore = Ricavo finale − Ricavo allo split-off − Costi ulteriori"
+        }
+      ],
+      "concept": "Decisione di vendere allo split-off o lavorare ulteriormente"
+    },
+    {
+      "id": "7-32",
+      "title": "7.32 Norme contabili e raccordo con OIC 13",
+      "topics": [
+        "cdg-c07-t32"
+      ],
+      "blocks": [
+        {
+          "text": "La contabilità direzionale può attribuire costi per valutare la redditività delle singole commesse e dei prodotti, ma la valorizzazione delle rimanenze per il bilancio segue il principio contabile applicabile. Per le imprese che applicano i principi nazionali, OIC 13 rappresenta il riferimento principale per le rimanenze di magazzino. [E4]"
+        },
+        {
+          "text": "In termini generali il costo di produzione comprende gli oneri direttamente riferibili alla trasformazione e una quota ragionevole dei costi indiretti di produzione. I costi commerciali non possono essere inclusi senza valutare il loro diverso ruolo; costi anomali e inefficienze eccezionali richiedono un trattamento specifico. I costi generali fissi sono attribuiti sulla base della capacità produttiva normale, con cautela se l’utilizzo degli impianti è molto basso."
+        },
+        {
+          "text": "Gli emendamenti OIC pubblicati a dicembre 2025 hanno interessato anche OIC 13 e si applicano ordinariamente agli esercizi che iniziano dal 1° gennaio 2026, salvo applicazione anticipata consentita. In questo manuale la descrizione è limitata ai principi generali di costing utili all’esame e non costituisce un commento esaustivo delle regole di redazione del bilancio. [E5] La valutazione di lavori in corso su ordinazione, ove ricorrano i presupposti, presenta inoltre regole proprie: i principi della scheda gestionale su commessa non sostituiscono automaticamente l’analisi contabile necessaria per la corretta rilevazione dei lavori pluriennali."
+        },
+        {
+          "text": "La distinzione concettuale da ricordare è che il costo di prodotto per il controllo di gestione può essere costruito per scopi interni; l’importo iscritto in bilancio va determinato in base alle regole contabili applicabili e documentato."
+        }
+      ],
+      "concept": "Norme contabili e raccordo con OIC 13"
+    },
+    {
+      "id": "7-33",
+      "title": "7.33 Procedura generale di risoluzione ed errori frequenti",
+      "topics": [
+        "cdg-c07-t33"
+      ],
+      "blocks": [
+        {
+          "text": "Per il job costing: identificare la commessa; individuare costi diretti e documenti; stabilire base e CdA degli indiretti; distinguere coefficiente effettivo o preventivo; calcolare la quota; sommare il costo complessivo; dividere per le unità omogenee; riconciliare i risultati."
+        },
+        {
+          "text": "Per il process costing: redigere la quadratura fisica; identificare gruppi di unità (RI, completate, RF, scarti); determinare le percentuali di impiego per ogni fattore; scegliere MEP o FIFO; calcolare le UEP; determinare costo per UEP; valorizzare ogni gruppo; verificare la quadratura dei costi."
+        },
+        {
+          "text": "Per prodotti congiunti: identificare costi comuni prima dello split-off e costi specifici successivi; scegliere il criterio richiesto; calcolare pesi percentuali; attribuire le quote; aggiungere i costi successivi; verificare la somma e non usare il costo comune allocato come costo incrementale per le decisioni."
+        },
+        {
+          "text": "Errori tipici. Usare il volume della sola commessa come denominatore degli indiretti; confondere unità fisiche e UEP; sommare costi RI nel numeratore FIFO; sottrarre RI dalle UEP MEP; usare una sola percentuale di completamento per materiali e lavoro; dimenticare gli scarti; perdere il costo del reparto precedente; non verificare la quadratura; trattare una quota congiunta come un costo evitabile."
+        },
+        {
+          "text": "In esame è utile scrivere sempre l’unità di misura accanto al numero: €/h, unità, UEP MD, UEP MOD, €/kg. Il passaggio dai pezzi alle unità equivalenti è un punto in cui si verificano molti errori."
+        },
+        {
+          "image": "cdg-p83-1.png",
+          "caption": "Due uguaglianze indipendenti rendono verificabile il prospetto di produzione.",
+          "alt": "Due uguaglianze indipendenti rendono verificabile il prospetto di produzione."
+        }
+      ],
+      "concept": "Procedura generale di risoluzione ed errori frequenti"
+    },
+    {
+      "id": "7-34",
+      "title": "7.34 Esercizi di allenamento (risolvere prima di leggere le soluzioni)",
+      "topics": [
+        "cdg-c07-t34"
+      ],
+      "blocks": [
+        {
+          "text": "Gli esercizi che seguono sono originali, costruiti per consolidare gli strumenti richiesti nel corso. Partono dai problemi di commessa e proseguono verso process costing, confronto FIFO–MEP e costi congiunti."
+        },
+        {
+          "text": "E1 — Commessa elementare. Una commessa usa materiali per 8.500 €, 120 h di MOD a 25 €/h, servizi esterni per 1.200 €. Gli indiretti previsti sono 80.000 € per 10.000 h MOD attese. Determina CdA, indiretti assorbiti e costo totale."
+        },
+        {
+          "text": "E2 — Costo unitario. Una commessa produce 30 unità identiche, con costi diretti complessivi pari a 18.000 €, 240 h macchina e CdA di 15 €/h macchina. Determina costo unitario e costo indiretto unitario."
+        },
+        {
+          "text": "E3 — Sovra/sottoassorbimento. L’azienda applica 7 €/h MOD su 12.000 h effettive. I costi indiretti effettivi ammontano a 88.000 €. Calcola la differenza e la sua natura."
+        },
+        {
+          "text": "E4 — Quadratura fisica. Un reparto apre con 70 unità WIP, ne avvia 430, ne completa 390 e chiude con 85 unità WIP. Quante unità sono state scartate se la quadratura fisica comprende soltanto queste categorie?"
+        },
+        {
+          "text": "E5 — UEP MEP. Sono completate 600 unità, 100 restano finali al 100% per MD e al 40% per conversione. Non vi sono scarti. Costi complessivi MD 7.000 €, conversione 12.800 €. Calcola UEP e costo per UEP."
+        },
+        {
+          "text": "E6 — FIFO senza scarti. RI 50 unità con MD 100% e conversione 20%. Completate 300 unità, RF 70 unità con MD 100% e conversione 60%. Costi del periodo MD 6.400 €, conversione 7.200 €. Calcola le UEP FIFO per MD e conversione."
+        },
+        {
+          "text": "E7 — MEP e valore rimanenze. Nel caso E5 determina costo delle 600 unità completate e valore delle 100 RF; verifica i costi totali."
+        },
+        {
+          "text": "E8 — Costi congiunti quantità. Un processo costa 96.000 € e produce A = 600 kg, B = 400 kg. Ripartisci per quantità e determina il costo comune unitario."
+        },
+        {
+          "text": "E9 — Costi congiunti valore di vendita. A = 600 kg a 110 €/kg, B = 400 kg a 85 €/kg, costo congiunto 96.000 €. Ripartisci per valore commerciale e verifica la somma."
+        },
+        {
+          "text": "E10 — Valore netto allo split-off. Con i dati di E9, se A richiede 6.000 € di costi successivi e B 12.000 €, ripartisci i 96.000 € in proporzione ai valori netti."
+        },
+        {
+          "text": "E11 — Lavorazione ulteriore. Un prodotto è vendibile allo split-off per 24.000 €. L’ulteriore lavorazione costa 7.500 € e consente ricavi per 34.000 €. Conviene effettuare la trasformazione?"
+        },
+        {
+          "text": "E12 — Reparti successivi. Il reparto A trasferisce 800 unità con costo complessivo 32.000 € al reparto B, che aggiunge costi per 16.000 €. Se tutte le unità escono finite, senza scarti o WIP, qual è il costo unitario finale?"
+        }
+      ],
+      "concept": "Esercizi di allenamento (risolvere prima di leggere le soluzioni)"
+    },
+    {
+      "id": "7-35",
+      "title": "7.35 Soluzioni commentate e domande teoriche",
+      "topics": [
+        "cdg-c07-t35"
+      ],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "Le soluzioni seguenti si riferiscono esclusivamente agli esercizi originali della sezione precedente. Per controllare l’apprendimento cerca di ricostruirle anche con uno schema vuoto."
+            },
+            {
+              "text": "E1. CdA 80.000/10.000 = 8 €/h. Indiretti 120×8 = 960 €. MOD 120×25 = 3.000 €. Costo totale 8.500+3.000+1.200+960 = 13.660 €."
+            },
+            {
+              "text": "E2. Indiretti totali 240×15 = 3.600 €. Costo totale 18.000+3.600 = 21.600 €. Per 30 unità: 720 €/unità. Indiretti unitari: 3.600/30 = 120 €."
+            },
+            {
+              "text": "E3. Indiretti assorbiti 12.000×7 = 84.000 €. Effettivi 88.000 €. Sottoassorbimento 4.000 €, perché gli effettivi sono maggiori degli assorbiti."
+            },
+            {
+              "text": "E4. Da giustificare 70+430 = 500. Giustificate senza scarti 390+85 = 475. Scarti = 25 unità."
+            },
+            {
+              "text": "E5. UEP MD 600+100=700. UEP conversione 600+100×40%=640. Costo MD/UEP=7.000/700=10 €. Costo conversione/UEP=12.800/640=20 €. Costo pieno equivalente 30 €."
+            },
+            {
+              "text": "E6. RI completate: 50. Avviate e completate 300−50=250. UEP MD = 250+70=320. UEP conversione = 50×80%+250+70×60%=40+250+42=332."
+            },
+            {
+              "text": "E7. Completate 600×(10+20)=18.000 €. RF: 100×10 + 100×40%×20 = 1.800 €. Totale 19.800 € = 7.000+12.800 €."
+            },
+            {
+              "text": "E8. Totale quantità 1.000 kg. Quota A 96.000×0,60=57.600 €. B 38.400 €. Costo comune unitario uguale per entrambi: 96 €/kg."
+            },
+            {
+              "text": "E9. Ricavi teorici A=600×110=66.000 €, B=400×85=34.000 €. Totale 100.000 €. Pesi 66% e 34%; costi A=63.360 €, B=32.640 €."
+            },
+            {
+              "text": "E10. Valori netti A=66.000−6.000=60.000 €, B=34.000−12.000=22.000 €; totale 82.000 €. A=96.000×60/82=70.243,90 €; B=25.756,10 €; totale 96.000 €."
+            },
+            {
+              "text": "E11. Ricavo incrementale 34.000−24.000=10.000 €. Costo ulteriore 7.500 €. Beneficio +2.500 €: conviene, se non esistono altri vincoli o costi rilevanti."
+            },
+            {
+              "text": "E12. Costo totale 32.000+16.000=48.000 €; costo unitario finale 48.000/800=60 €."
+            },
+            {
+              "heading": "7.35.1 Domande teoriche per la prova scritta"
+            },
+            {
+              "text": "• Perché è più appropriato accumulare i costi per commessa quando i prodotti sono distinguibili?"
+            },
+            {
+              "text": "• Qual è la differenza fra actual costing e normal costing e quando si genera un sottoassorbimento?"
+            },
+            {
+              "text": "• Che cosa sono le UEP e perché devono essere calcolate per categorie di fattori?"
+            },
+            {
+              "text": "• In che cosa differiscono MEP e FIFO nel trattamento delle rimanenze iniziali?"
+            },
+            {
+              "text": "• Quale relazione collega rimanenze iniziali, prodotti introdotti, completati, finali e scarti?"
+            },
+            {
+              "text": "• Che cosa indica il punto di split-off? Perché i costi congiunti non sono generalmente differenziali nella scelta di lavorazioni successive?"
+            },
+            {
+              "text": "• Come cambia l’allocazione dei costi comuni fra metodo per quantità e metodo per valore commerciale?"
+            },
+            {
+              "text": "• Che differenza esiste fra prodotto congiunto in senso stretto e sottoprodotto?"
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Soluzioni commentate e domande teoriche"
+    },
+    {
+      "id": "7-36",
+      "title": "7.36 Formulario conclusivo, glossario e fonti",
+      "topics": [
+        "cdg-c07-t36"
+      ],
+      "blocks": [
+        {
+          "text": "Il riepilogo seguente raccoglie le relazioni operative indispensabili. Non sostituisce le spiegazioni precedenti: per un esame scritto è fondamentale identificare prima il metodo richiesto e soltanto dopo applicare la formula."
+        },
+        {
+          "text": "Costo commessa = MD + MOD + servizi diretti + CDA × base assorbita"
+        },
+        {
+          "text": "CdA predeterminato = Costi indiretti previsti / Base prevista"
+        },
+        {
+          "text": "Costo unitario commessa = Costo totale / Unità omogenee"
+        },
+        {
+          "text": "Quadratura fisica = RI + avviate − completate − RF − scarti = 0"
+        },
+        {
+          "text": "UEP_f = Q fisica × percentuale di consumo del fattore f"
+        },
+        {
+          "text": "MEP: Costo/UEP_f = (Costo RI_f + Costo periodo_f) / UEP complessive_f"
+        },
+        {
+          "text": "FIFO: Costo/UEP_f = Costo periodo_f / UEP eseguite nel periodo_f"
+        },
+        {
+          "text": "Valore RF = Σ (UEP RF_f × Costo/UEP_f)"
+        },
+        {
+          "text": "Quota costi congiunti_i = Totale congiunto × peso_i"
+        },
+        {
+          "text": "Valore netto split-off_i = Ricavo finale_i − Costo successivo_i"
+        },
+        {
+          "text": "Decisione lavoro ulteriore = Ricavo finale − Ricavo split-off − Costi successivi"
+        },
+        {
+          "heading": "7.36.1 Glossario essenziale"
+        },
+        {
+          "text": "Job costing. accumulo di costi per ordine o commessa specifica."
+        },
+        {
+          "text": "Process costing. accumulo per fase/reparto e periodo, con valorizzazione media della produzione."
+        },
+        {
+          "text": "WIP. prodotti in corso di lavorazione, che non hanno ancora completato le fasi previste."
+        },
+        {
+          "text": "UEP. misura di produzione equivalente ottenuta considerando il grado di lavorazione."
+        },
+        {
+          "text": "MEP. media ponderata: costi iniziali e correnti considerati congiuntamente."
+        },
+        {
+          "text": "FIFO. metodo che separa il lavoro del periodo dal costo preesistente nelle RI."
+        },
+        {
+          "text": "CDA. coefficiente unitario utilizzato per attribuire indiretti sulla base scelta."
+        },
+        {
+          "text": "Split-off. punto in cui prodotti generati da un processo comune diventano distinguibili."
+        },
+        {
+          "text": "Costo congiunto. costo sostenuto prima dello split-off non tracciabile causalmente a un solo prodotto."
+        },
+        {
+          "text": "Sottoprodotto. output economicamente secondario ottenuto insieme a quello principale."
+        },
+        {
+          "text": "Scarto normale. perdita attesa nelle normali condizioni di processo."
+        },
+        {
+          "text": "Scarto anomalo. perdita eccedente l’andamento fisiologico del processo."
+        }
+      ],
+      "concept": "Formulario conclusivo, glossario e fonti"
+    }
+  ],
+  "relations": [
+    {
+      "to": "7-3",
+      "relation": "L’organizzazione della produzione orienta la scelta del sistema di costo",
+      "from": "7-2"
+    },
+    {
+      "to": "7-6",
+      "relation": "Prelievi e tempi alimentano la scheda di commessa",
+      "from": "7-5"
+    },
+    {
+      "to": "7-8",
+      "relation": "L’imputazione degli indiretti può usare un coefficiente effettivo o predeterminato",
+      "from": "7-5"
+    },
+    {
+      "to": "7-16",
+      "relation": "Prima di valorizzare il flusso occorre quadrare le unità fisiche",
+      "from": "7-15"
+    },
+    {
+      "to": "7-17",
+      "relation": "Le unità parzialmente lavorate si convertono in unità equivalenti",
+      "from": "7-16"
+    },
+    {
+      "to": "7-19",
+      "relation": "La media ponderata include lavoro precedente e corrente",
+      "from": "7-17"
+    },
+    {
+      "to": "7-21",
+      "relation": "Il FIFO distingue il lavoro del periodo da quello già svolto",
+      "from": "7-17"
+    },
+    {
+      "to": "7-23",
+      "relation": "Il confronto con il FIFO chiarisce l’effetto sulle valutazioni",
+      "from": "7-19"
+    }
+  ]
+}

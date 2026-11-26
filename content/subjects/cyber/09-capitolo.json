@@ -1,0 +1,2601 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cyber",
+  "source": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9: Reti Wireless e Radiomobili, pagine PDF 147–168; unica fonte autorizzata.",
+  "chapter": {
+    "id": "cyber-c09",
+    "title": "Reti Wireless e Radiomobili",
+    "order": 9,
+    "topics": [
+      {
+        "id": "cyber-c09-t01",
+        "title": "Reti radio: natura del mezzo, minacce e differenze WLAN/cellulare"
+      },
+      {
+        "id": "cyber-c09-t02",
+        "title": "Rete radiomobile: celle, RAN, core, copertura e protezione end-to-end"
+      },
+      {
+        "id": "cyber-c09-t03",
+        "title": "Evoluzione cellulare: 1G, GSM/2G, UMTS/3G, LTE/4G e 5G"
+      },
+      {
+        "id": "cyber-c09-t04",
+        "title": "Identità e autenticazione mobile: SIM, USIM, UICC, eSIM, IMSI, SUPI e SUCI"
+      },
+      {
+        "id": "cyber-c09-t05",
+        "title": "Mobilità radio: selezione cella, handover, ping-pong e sicurezza"
+      },
+      {
+        "id": "cyber-c09-t06",
+        "title": "Architettura LTE: EPC, eNodeB, MME, S-GW, P-GW, HSS ed EPS-AKA"
+      },
+      {
+        "id": "cyber-c09-t07",
+        "title": "Architettura 5G Core: AMF, SMF, UPF, AUSF, SBA e 5G-AKA"
+      },
+      {
+        "id": "cyber-c09-t08",
+        "title": "Minacce wireless: eavesdropping, rogue AP, evil twin, MitM, DoS e jamming"
+      },
+      {
+        "id": "cyber-c09-t09",
+        "title": "Difese wireless: cifratura, autenticazione, endpoint e segmentazione"
+      },
+      {
+        "id": "cyber-c09-t10",
+        "title": "Wi-Fi IEEE 802.11: AP, STA, SSID/BSSID, frame e accesso"
+      },
+      {
+        "id": "cyber-c09-t11",
+        "title": "WEP: RC4, IV, XOR, ICV e vulnerabilità"
+      },
+      {
+        "id": "cyber-c09-t12",
+        "title": "WPA: TKIP, MIC e limiti della soluzione transitoria"
+      },
+      {
+        "id": "cyber-c09-t13",
+        "title": "WPA2: CCMP, Personal, Enterprise, chiavi e four-way handshake"
+      },
+      {
+        "id": "cyber-c09-t14",
+        "title": "WPA2: KRACK, implementazioni e gestione del rischio"
+      },
+      {
+        "id": "cyber-c09-t15",
+        "title": "WPA3: SAE, Enterprise, PMF e modalità transition"
+      },
+      {
+        "id": "cyber-c09-t16",
+        "title": "Wi-Fi Enhanced Open, reti pubbliche e captive portal"
+      },
+      {
+        "id": "cyber-c09-t17",
+        "title": "Confronti: tecnologie Wi-Fi e livelli distinti di protezione"
+      },
+      {
+        "id": "cyber-c09-t18",
+        "title": "Progettazione WLAN aziendali con AAA, EAP-TLS, ospiti e IoT"
+      },
+      {
+        "id": "cyber-c09-t19",
+        "title": "Minacce cellulari e gestione degli endpoint mobili"
+      },
+      {
+        "id": "cyber-c09-t20",
+        "title": "Caso integrato: WLAN aziendale e accesso a un gestionale"
+      },
+      {
+        "id": "cyber-c09-t21",
+        "title": "Laboratorio guidato, errori concettuali, glossario ed esercizi"
+      },
+      {
+        "id": "cyber-c09-t22",
+        "title": "Simulazioni per il colloquio orale: ragionamento e collegamenti"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§9.1 — pagina PDF 147",
+        "cardIds": [
+          "cyber-c09-q001",
+          "cyber-c09-q002"
+        ]
+      },
+      {
+        "label": "§9.1.1 — pagina PDF 148",
+        "cardIds": [
+          "cyber-c09-q003",
+          "cyber-c09-q004"
+        ]
+      },
+      {
+        "label": "§9.2 — pagina PDF 148",
+        "cardIds": [
+          "cyber-c09-q005",
+          "cyber-c09-q006"
+        ]
+      },
+      {
+        "label": "§9.2.1 — pagina PDF 148",
+        "cardIds": [
+          "cyber-c09-q007",
+          "cyber-c09-q008"
+        ]
+      },
+      {
+        "label": "§9.2.2 — pagina PDF 149",
+        "cardIds": [
+          "cyber-c09-q009",
+          "cyber-c09-q010"
+        ]
+      },
+      {
+        "label": "§9.2.3 — pagina PDF 149",
+        "cardIds": [
+          "cyber-c09-q011"
+        ]
+      },
+      {
+        "label": "§9.3 — pagina PDF 149",
+        "cardIds": [
+          "cyber-c09-q012"
+        ]
+      },
+      {
+        "label": "§9.3.1 — pagina PDF 149",
+        "cardIds": [
+          "cyber-c09-q013"
+        ]
+      },
+      {
+        "label": "§9.3.2 — pagina PDF 149",
+        "cardIds": [
+          "cyber-c09-q014"
+        ]
+      },
+      {
+        "label": "§9.3.3 — pagina PDF 149",
+        "cardIds": [
+          "cyber-c09-q015"
+        ]
+      },
+      {
+        "label": "§9.3.4 — pagina PDF 150",
+        "cardIds": [
+          "cyber-c09-q016"
+        ]
+      },
+      {
+        "label": "§9.3.5 — pagina PDF 150",
+        "cardIds": [
+          "cyber-c09-q017",
+          "cyber-c09-q018"
+        ]
+      },
+      {
+        "label": "§9.4 — pagina PDF 150",
+        "cardIds": [
+          "cyber-c09-q019"
+        ]
+      },
+      {
+        "label": "§9.4.1 — pagina PDF 150",
+        "cardIds": [
+          "cyber-c09-q020",
+          "cyber-c09-q021"
+        ]
+      },
+      {
+        "label": "§9.4.2 — pagina PDF 150",
+        "cardIds": [
+          "cyber-c09-q022",
+          "cyber-c09-q023"
+        ]
+      },
+      {
+        "label": "§9.4.3 — pagina PDF 150",
+        "cardIds": [
+          "cyber-c09-q024"
+        ]
+      },
+      {
+        "label": "§9.5 — pagina PDF 151",
+        "cardIds": [
+          "cyber-c09-q025"
+        ]
+      },
+      {
+        "label": "§9.5.1 — pagina PDF 151",
+        "cardIds": [
+          "cyber-c09-q026"
+        ]
+      },
+      {
+        "label": "§9.5.2 — pagina PDF 151",
+        "cardIds": [
+          "cyber-c09-q027"
+        ]
+      },
+      {
+        "label": "§9.5.3 — pagina PDF 151",
+        "cardIds": [
+          "cyber-c09-q028"
+        ]
+      },
+      {
+        "label": "§9.6 — pagina PDF 151",
+        "cardIds": [
+          "cyber-c09-q029"
+        ]
+      },
+      {
+        "label": "§9.6.1 — pagina PDF 152",
+        "cardIds": [
+          "cyber-c09-q030",
+          "cyber-c09-q031",
+          "cyber-c09-q032",
+          "cyber-c09-q033",
+          "cyber-c09-q034"
+        ]
+      },
+      {
+        "label": "§9.6.2 — pagina PDF 152",
+        "cardIds": [
+          "cyber-c09-q035",
+          "cyber-c09-q036"
+        ]
+      },
+      {
+        "label": "§9.6.3 — pagina PDF 152",
+        "cardIds": [
+          "cyber-c09-q037"
+        ]
+      },
+      {
+        "label": "§9.7 — pagina PDF 153",
+        "cardIds": [
+          "cyber-c09-q038",
+          "cyber-c09-q039",
+          "cyber-c09-q040",
+          "cyber-c09-q041",
+          "cyber-c09-q042"
+        ]
+      },
+      {
+        "label": "§9.7.1 — pagina PDF 153",
+        "cardIds": [
+          "cyber-c09-q043",
+          "cyber-c09-q044"
+        ]
+      },
+      {
+        "label": "§9.7.2 — pagina PDF 153",
+        "cardIds": [
+          "cyber-c09-q045"
+        ]
+      },
+      {
+        "label": "§9.7.3 — pagina PDF 154",
+        "cardIds": [
+          "cyber-c09-q046"
+        ]
+      },
+      {
+        "label": "§9.8 — pagina PDF 154",
+        "cardIds": [
+          "cyber-c09-q047"
+        ]
+      },
+      {
+        "label": "§9.8.1 — pagina PDF 154",
+        "cardIds": [
+          "cyber-c09-q048"
+        ]
+      },
+      {
+        "label": "§9.8.2 — pagina PDF 154",
+        "cardIds": [
+          "cyber-c09-q049",
+          "cyber-c09-q050"
+        ]
+      },
+      {
+        "label": "§9.8.3 — pagina PDF 154",
+        "cardIds": [
+          "cyber-c09-q051",
+          "cyber-c09-q052"
+        ]
+      },
+      {
+        "label": "§9.8.4 — pagina PDF 154",
+        "cardIds": [
+          "cyber-c09-q053"
+        ]
+      },
+      {
+        "label": "§9.8.5 — pagina PDF 154",
+        "cardIds": [
+          "cyber-c09-q054"
+        ]
+      },
+      {
+        "label": "§9.9 — pagina PDF 155",
+        "cardIds": [
+          "cyber-c09-q055"
+        ]
+      },
+      {
+        "label": "§9.9.1 — pagina PDF 155",
+        "cardIds": [
+          "cyber-c09-q056"
+        ]
+      },
+      {
+        "label": "§9.9.2 — pagina PDF 155",
+        "cardIds": [
+          "cyber-c09-q057"
+        ]
+      },
+      {
+        "label": "§9.9.3 — pagina PDF 155",
+        "cardIds": [
+          "cyber-c09-q058"
+        ]
+      },
+      {
+        "label": "§9.9.4 — pagina PDF 155",
+        "cardIds": [
+          "cyber-c09-q059"
+        ]
+      },
+      {
+        "label": "§9.9.5 — pagina PDF 155",
+        "cardIds": [
+          "cyber-c09-q060"
+        ]
+      },
+      {
+        "label": "§9.9.6 — pagina PDF 155",
+        "cardIds": [
+          "cyber-c09-q061"
+        ]
+      },
+      {
+        "label": "§9.10 — pagina PDF 156",
+        "cardIds": [
+          "cyber-c09-q062",
+          "cyber-c09-q063"
+        ]
+      },
+      {
+        "label": "§9.10.1 — pagina PDF 156",
+        "cardIds": [
+          "cyber-c09-q064"
+        ]
+      },
+      {
+        "label": "§9.10.2 — pagina PDF 156",
+        "cardIds": [
+          "cyber-c09-q065"
+        ]
+      },
+      {
+        "label": "§9.11 — pagina PDF 156",
+        "cardIds": [
+          "cyber-c09-q066"
+        ]
+      },
+      {
+        "label": "§9.11.1 — pagina PDF 157",
+        "cardIds": [
+          "cyber-c09-q067",
+          "cyber-c09-q068"
+        ]
+      },
+      {
+        "label": "§9.11.2 — pagina PDF 157",
+        "cardIds": [
+          "cyber-c09-q069",
+          "cyber-c09-q070"
+        ]
+      },
+      {
+        "label": "§9.11.3 — pagina PDF 157",
+        "cardIds": [
+          "cyber-c09-q071",
+          "cyber-c09-q072",
+          "cyber-c09-q073"
+        ]
+      },
+      {
+        "label": "§9.12 — pagina PDF 158",
+        "cardIds": [
+          "cyber-c09-q074"
+        ]
+      },
+      {
+        "label": "§9.12.1 — pagina PDF 158",
+        "cardIds": [
+          "cyber-c09-q075"
+        ]
+      },
+      {
+        "label": "§9.12.2 — pagina PDF 158",
+        "cardIds": [
+          "cyber-c09-q076"
+        ]
+      },
+      {
+        "label": "§9.13 — pagina PDF 158",
+        "cardIds": [
+          "cyber-c09-q077"
+        ]
+      },
+      {
+        "label": "§9.13.1 — pagina PDF 158",
+        "cardIds": [
+          "cyber-c09-q078"
+        ]
+      },
+      {
+        "label": "§9.13.2 — pagina PDF 158",
+        "cardIds": [
+          "cyber-c09-q079"
+        ]
+      },
+      {
+        "label": "§9.13.3 — pagina PDF 159",
+        "cardIds": [
+          "cyber-c09-q080",
+          "cyber-c09-q081"
+        ]
+      },
+      {
+        "label": "§9.13.4 — pagina PDF 159",
+        "cardIds": [
+          "cyber-c09-q082"
+        ]
+      },
+      {
+        "label": "§9.13.5 — pagina PDF 159",
+        "cardIds": [
+          "cyber-c09-q083",
+          "cyber-c09-q084"
+        ]
+      },
+      {
+        "label": "§9.13.6 — pagina PDF 159",
+        "cardIds": [
+          "cyber-c09-q085",
+          "cyber-c09-q086"
+        ]
+      },
+      {
+        "label": "§9.14 — pagina PDF 159",
+        "cardIds": [
+          "cyber-c09-q087"
+        ]
+      },
+      {
+        "label": "§9.14.1 — pagina PDF 159",
+        "cardIds": [
+          "cyber-c09-q088",
+          "cyber-c09-q089"
+        ]
+      },
+      {
+        "label": "§9.14.2 — pagina PDF 160",
+        "cardIds": [
+          "cyber-c09-q090"
+        ]
+      },
+      {
+        "label": "§9.14.3 — pagina PDF 160",
+        "cardIds": [
+          "cyber-c09-q091"
+        ]
+      },
+      {
+        "label": "§9.14.4 — pagina PDF 160",
+        "cardIds": [
+          "cyber-c09-q092"
+        ]
+      },
+      {
+        "label": "§9.14.5 — pagina PDF 160",
+        "cardIds": [
+          "cyber-c09-q093"
+        ]
+      },
+      {
+        "label": "§9.15 — pagina PDF 160",
+        "cardIds": [
+          "cyber-c09-q094",
+          "cyber-c09-q095",
+          "cyber-c09-q096"
+        ]
+      },
+      {
+        "label": "§9.16 — pagina PDF 161",
+        "cardIds": [
+          "cyber-c09-q097",
+          "cyber-c09-q098"
+        ]
+      },
+      {
+        "label": "§9.16.1 — pagina PDF 161",
+        "cardIds": [
+          "cyber-c09-q099"
+        ]
+      },
+      {
+        "label": "§9.17 — pagina PDF 161",
+        "cardIds": [
+          "cyber-c09-q100",
+          "cyber-c09-q101"
+        ]
+      },
+      {
+        "label": "§9.18 — pagina PDF 161",
+        "cardIds": [
+          "cyber-c09-q102"
+        ]
+      },
+      {
+        "label": "§9.18.1 — pagina PDF 161",
+        "cardIds": [
+          "cyber-c09-q103"
+        ]
+      },
+      {
+        "label": "§9.18.2 — pagina PDF 162",
+        "cardIds": [
+          "cyber-c09-q104",
+          "cyber-c09-q105",
+          "cyber-c09-q106"
+        ]
+      },
+      {
+        "label": "§9.18.3 — pagina PDF 162",
+        "cardIds": [
+          "cyber-c09-q107",
+          "cyber-c09-q108"
+        ]
+      },
+      {
+        "label": "§9.18.4 — pagina PDF 162",
+        "cardIds": [
+          "cyber-c09-q109"
+        ]
+      },
+      {
+        "label": "§9.19 — pagina PDF 162",
+        "cardIds": [
+          "cyber-c09-q110"
+        ]
+      },
+      {
+        "label": "§9.19.1 — pagina PDF 162",
+        "cardIds": [
+          "cyber-c09-q111"
+        ]
+      },
+      {
+        "label": "§9.19.2 — pagina PDF 162",
+        "cardIds": [
+          "cyber-c09-q112"
+        ]
+      },
+      {
+        "label": "§9.19.3 — pagina PDF 162",
+        "cardIds": [
+          "cyber-c09-q113"
+        ]
+      },
+      {
+        "label": "§9.19.4 — pagina PDF 162",
+        "cardIds": [
+          "cyber-c09-q114"
+        ]
+      },
+      {
+        "label": "§9.20 — pagina PDF 163",
+        "cardIds": [
+          "cyber-c09-q115",
+          "cyber-c09-q116",
+          "cyber-c09-q117",
+          "cyber-c09-q118",
+          "cyber-c09-q119"
+        ]
+      },
+      {
+        "label": "§9.21 — pagina PDF 163",
+        "cardIds": [
+          "cyber-c09-q120",
+          "cyber-c09-q121",
+          "cyber-c09-q122"
+        ]
+      },
+      {
+        "label": "§9.22 — pagina PDF 164",
+        "cardIds": [
+          "cyber-c09-q123",
+          "cyber-c09-q124"
+        ]
+      },
+      {
+        "label": "§9.23 — pagina PDF 164",
+        "cardIds": [
+          "cyber-c09-q125",
+          "cyber-c09-q126"
+        ]
+      },
+      {
+        "label": "§9.24 — pagina PDF 165",
+        "cardIds": [
+          "cyber-c09-q127",
+          "cyber-c09-q128",
+          "cyber-c09-q129",
+          "cyber-c09-q130"
+        ]
+      },
+      {
+        "label": "§9.24 — pagina PDF 166",
+        "cardIds": [
+          "cyber-c09-q131",
+          "cyber-c09-q132"
+        ]
+      },
+      {
+        "label": "§9.25 — pagina PDF 166",
+        "cardIds": [
+          "cyber-c09-q133",
+          "cyber-c09-q134",
+          "cyber-c09-q135",
+          "cyber-c09-q136",
+          "cyber-c09-q137",
+          "cyber-c09-q138",
+          "cyber-c09-q139"
+        ]
+      },
+      {
+        "label": "§9.25 — pagina PDF 167",
+        "cardIds": [
+          "cyber-c09-q140",
+          "cyber-c09-q141",
+          "cyber-c09-q142",
+          "cyber-c09-q143",
+          "cyber-c09-q144",
+          "cyber-c09-q145",
+          "cyber-c09-q146",
+          "cyber-c09-q147",
+          "cyber-c09-q148",
+          "cyber-c09-q149"
+        ]
+      },
+      {
+        "label": "§9.25 — pagina PDF 168",
+        "cardIds": [
+          "cyber-c09-q150",
+          "cyber-c09-q151",
+          "cyber-c09-q152",
+          "cyber-c09-q153",
+          "cyber-c09-q154",
+          "cyber-c09-q155",
+          "cyber-c09-q156",
+          "cyber-c09-q157"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cyber-c09-q001",
+      "topicId": "cyber-c09-t01",
+      "question": "Perché la sicurezza delle reti wireless richiede attenzioni particolari rispetto alle reti cablate?",
+      "answer": "Le onde radio possono propagarsi oltre il perimetro fisico dell’organizzazione ed essere ricevute senza accedere a una presa o a un cavo.",
+      "detail": "L’esposizione del mezzo richiede autenticazione, cifratura, integrità e monitoraggio adeguati. Si aggiungono mobilità, interferenze, qualità del canale variabile, consumo energetico e rischio di furto dei terminali.",
+      "example": "Una persona all’esterno dell’edificio può ricevere segnali di una WLAN pur non avendo accesso alla LAN cablata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che tutte le reti wireless siano inevitabilmente insicure.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.1, pagina PDF 147"
+    },
+    {
+      "id": "cyber-c09-q002",
+      "topicId": "cyber-c09-t01",
+      "question": "Quale differenza architetturale esiste tra WLAN Wi-Fi e rete cellulare?",
+      "answer": "La WLAN IEEE 802.11 collega dispositivi a uno o più access point in un’area locale; la rete cellulare copre territori mediante celle della rete radio dell’operatore e un core network.",
+      "detail": "Le due reti condividono la trasmissione radio ma non lo stesso sistema di autenticazione, le stesse funzioni di mobilità e gli stessi domini amministrativi. In una WLAN aziendale si governa l’AP; nella rete radiomobile intervengono RAN e core dell’operatore.",
+      "example": "Un notebook collegato al Wi-Fi d’ufficio non usa l’architettura LTE/EPC solo perché comunica senza fili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la categoria wireless con uno standard o una specifica rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.1, pagina PDF 147"
+    },
+    {
+      "id": "cyber-c09-q003",
+      "topicId": "cyber-c09-t01",
+      "question": "Quali sei caratteristiche fisiche e operative aumentano la superficie d’attacco wireless?",
+      "answer": "Mezzo condiviso, propagazione radio variabile, mobilità, vincoli computazionali/energetici, esposizione fisica dei terminali e presenza di sensori/interfacce ulteriori.",
+      "detail": "Il mezzo condiviso permette ricezione multipla dei segnali; la propagazione dipende da ostacoli e interferenze; la mobilità aggiunge cambi di AP o cella; i vincoli IoT limitano la protezione; furto, GPS, Bluetooth, NFC e sensori aprono ulteriori scenari.",
+      "example": "Un sensore IoT può essere difficile da aggiornare e trovarsi in un luogo fisicamente accessibile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre il rischio wireless alla sola intercettazione del contenuto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.1.1, pagina PDF 148"
+    },
+    {
+      "id": "cyber-c09-q004",
+      "topicId": "cyber-c09-t01",
+      "question": "Perché la propagazione e la qualità radio non sono costanti?",
+      "answer": "Dipendono da frequenza, distanza, ostacoli, riflessioni, interferenze e disposizione delle antenne.",
+      "detail": "Questi fattori cambiano nel tempo e nello spazio, influenzando copertura, prestazioni, mobilità e accessibilità del segnale a osservatori esterni. Non esiste un confine di sicurezza fisico coincidente automaticamente con il perimetro aziendale.",
+      "example": "Il segnale dell’AP può raggiungere un parcheggio nonostante il dispositivo sia installato all’interno.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare la potenza impostata sul trasmettitore come protezione crittografica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.1.1, pagina PDF 148"
+    },
+    {
+      "id": "cyber-c09-q005",
+      "topicId": "cyber-c09-t02",
+      "question": "Che cosa sono cella, stazione radio base e User Equipment in una rete radiomobile?",
+      "answer": "La cella è un’area logica di copertura radio; la stazione radio base gestisce il collegamento con gli utenti; lo User Equipment (UE) è il terminale mobile, come smartphone, modem o dispositivo IoT.",
+      "detail": "Una stessa sede fisica può offrire più celle e settori. Il nodo radio cambia denominazione con la generazione: BTS nel GSM, NodeB in UMTS, eNodeB in LTE e gNodeB nel 5G NR. La USIM contribuisce a gestire le credenziali dell’abbonato.",
+      "example": "Un sito radio con tre settori non equivale necessariamente a una sola cella.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare cella, antenna e singolo edificio come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.2, pagina PDF 148"
+    },
+    {
+      "id": "cyber-c09-q006",
+      "topicId": "cyber-c09-t02",
+      "question": "Quali denominazioni assume la stazione radio base passando da 2G a 5G?",
+      "answer": "BTS nel GSM/2G, NodeB nel 3G/UMTS, eNodeB o eNB nel 4G/LTE, gNodeB o gNB nel 5G NR.",
+      "detail": "Queste denominazioni indicano generazioni e architetture specifiche. Usarle correttamente aiuta a non attribuire al 5G Core funzioni e componenti del vecchio EPC e a descrivere dove terminano collegamento radio e interfacce di rete.",
+      "example": "Una BTS GSM e un gNodeB NR appartengono a tecnologie radio differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare eNodeB ogni stazione radio cellulare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.2, pagina PDF 148"
+    },
+    {
+      "id": "cyber-c09-q007",
+      "topicId": "cyber-c09-t02",
+      "question": "Qual è la distinzione fondamentale fra Radio Access Network e core network?",
+      "answer": "La RAN fornisce accesso radio e gestisce risorse e mobilità nell’accesso; il core governa autenticazione, sessioni, mobilità di rete, instradamento e interconnessioni.",
+      "detail": "Una stazione radio base non coincide con Internet né con il sistema centrale di autenticazione. Il traffico dell’UE attraversa la rete di accesso e funzioni del core prima di raggiungere eventuali reti esterne.",
+      "example": "La stazione radio collega lo smartphone, ma le funzioni di core partecipano all’autenticazione e al percorso dati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collocare tutte le verifiche di identità direttamente nell’antenna.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.2.1, pagina PDF 148"
+    },
+    {
+      "id": "cyber-c09-q008",
+      "topicId": "cyber-c09-t02",
+      "question": "Quali funzioni di sicurezza rendono indispensabile la distinzione fra RAN e core?",
+      "answer": "Identificare chi gestisce l’accesso radio, chi autentica l’abbonato, chi governa le sessioni e dove passa il traffico da proteggere.",
+      "detail": "La distinzione consente di collocare correttamente credenziali, contesti di sicurezza, controlli sul piano di controllo e protezione del piano utente; permette anche di ragionare sulle interconnessioni con reti terze.",
+      "example": "Una funzione di autenticazione centrale e un router del traffico utente non sono la stessa componente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere disponibilità del segnale radio con autorizzazione ai servizi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.2.1, pagina PDF 148"
+    },
+    {
+      "id": "cyber-c09-q009",
+      "topicId": "cyber-c09-t02",
+      "question": "Come incidono banda di frequenza e altre condizioni su copertura e capacità delle celle?",
+      "answer": "Le frequenze più basse tendono a propagarsi più lontano e attraverso gli ostacoli; frequenze più alte possono offrire grande capacità su aree più ristrette.",
+      "detail": "Capacità e copertura dipendono anche da ampiezza di banda, antenne, modulazione, interferenze, accesso multiplo e densità degli utenti. I confini delle celle non sono poligoni fissi e netti.",
+      "example": "Un’area indoor può richiedere soluzioni radio diverse da una zona aperta ad alta densità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che scegliere una frequenza alta garantisca automaticamente la massima capacità o la massima sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.2.2, pagina PDF 149"
+    },
+    {
+      "id": "cyber-c09-q010",
+      "topicId": "cyber-c09-t02",
+      "question": "Perché il dispositivo non sceglie sempre la cella dal segnale istantaneo più forte?",
+      "answer": "Perché intervengono qualità radio, priorità, criteri di mobilità, soglie e policy della rete, che variano in base alla tecnologia.",
+      "detail": "Oscillazioni momentanee del segnale non devono causare continui trasferimenti di connessione. La potenza è una misura utile ma non basta a descrivere l’algoritmo di selezione e handover.",
+      "example": "Una cella poco più forte per un secondo non diventa automaticamente la nuova cella di servizio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre la mobilità radio al confronto di due valori di potenza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.2.2, pagina PDF 149"
+    },
+    {
+      "id": "cyber-c09-q011",
+      "topicId": "cyber-c09-t02",
+      "question": "La cifratura radio della rete cellulare garantisce riservatezza fino al sito web?",
+      "answer": "No: protegge il tratto radio nei limiti dello standard, non tutta la catena end-to-end verso il server applicativo.",
+      "detail": "Oltre la rete di accesso intervengono core, interconnessioni, reti IP e servizi remoti. Occorrono protezioni applicative come HTTPS/TLS ed eventualmente una VPN e autorizzazioni adeguate.",
+      "example": "Una banca online deve usare HTTPS anche quando il telefono si collega tramite una rete mobile cifrata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assimilare cifratura del link radio e cifratura end-to-end.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.2.3, pagina PDF 149"
+    },
+    {
+      "id": "cyber-c09-q012",
+      "topicId": "cyber-c09-t03",
+      "question": "Qual è il quadro evolutivo delle generazioni cellulari da 1G a 5G?",
+      "answer": "1G: voce analogica; 2G: GSM digitale, SMS e dati GPRS/EDGE; 3G: UMTS/HSPA; 4G: LTE con rete dati IP ed EPC; 5G: NR, eventuale 5G Core e servizi a requisiti differenziati.",
+      "detail": "La sicurezza evolve da protezioni deboli a meccanismi AKA, gerarchie di chiavi, protezione più strutturata dei piani radio e del core. Generazioni diverse possono però coesistere e il fallback può conservare rischi delle tecnologie legacy.",
+      "example": "Un terminale che supporta 5G può continuare a incontrare componenti 4G in una rete NSA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare le generazioni come un rimpiazzo istantaneo e totale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.3, pagina PDF 149"
+    },
+    {
+      "id": "cyber-c09-q013",
+      "topicId": "cyber-c09-t03",
+      "question": "Quali sono le caratteristiche e le debolezze principali della prima generazione cellulare (1G)?",
+      "answer": "La 1G offriva soprattutto telefonia analogica e disponeva di protezioni deboli o assenti rispetto agli standard successivi.",
+      "detail": "L’intercettazione e la clonazione risultavano relativamente più agevoli. È importante ricordarla come punto di partenza storico, non come architettura radio moderna per servizi dati.",
+      "example": "Intercettare fonia analogica non richiede gli stessi attacchi di una rete con autenticazione e cifratura moderne.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire alla 1G protocolli e funzioni di autenticazione del 4G/5G.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.3.1, pagina PDF 149"
+    },
+    {
+      "id": "cyber-c09-q014",
+      "topicId": "cyber-c09-t03",
+      "question": "Che cosa introduce il 2G/GSM e quali limiti di sicurezza mantiene?",
+      "answer": "Digitalizza la telefonia, aggiunge SMS e, con GPRS/EDGE, dati a pacchetto; autentica l’abbonato ma storicamente non garantisce sempre l’autenticazione reciproca della rete.",
+      "detail": "Questa asimmetria e l’uso di algoritmi o configurazioni ormai deboli possono favorire attacchi di impersonificazione e downgrade. La sicurezza deve essere considerata nel contesto delle effettive impostazioni del terminale e della rete.",
+      "example": "Un attaccante può cercare di sfruttare il fallback verso una rete legacy, senza che ciò significhi che tutte le connessioni 2G siano identiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere GSM come equivalente a 5G-AKA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.3.2, pagina PDF 149"
+    },
+    {
+      "id": "cyber-c09-q015",
+      "topicId": "cyber-c09-t03",
+      "question": "Quali progressi caratterizzano il 3G/UMTS rispetto al GSM?",
+      "answer": "UMTS e HSPA migliorano la comunicazione dati e introducono meccanismi AKA che supportano l’autenticazione mutua e una protezione rafforzata del collegamento.",
+      "detail": "Il componente USIM partecipa alle procedure; la sicurezza è più evoluta rispetto alle prime generazioni ma può ancora dipendere da implementazione, interconnessioni e utilizzo di reti legacy.",
+      "example": "Una procedura AKA 3G non è la stessa cosa della sola verifica dell’abbonato tipica del GSM storico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concludere che la crittografia sul 3G renda immuni a minacce lato applicazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.3.3, pagina PDF 149"
+    },
+    {
+      "id": "cyber-c09-q016",
+      "topicId": "cyber-c09-t03",
+      "question": "Quali componenti distinguono la rete 4G/LTE e la sua sicurezza?",
+      "answer": "LTE impiega accesso radio eNodeB, core Evolved Packet Core (EPC), comunicazione dati su IP e autenticazione EPS-AKA con chiavi gerarchiche.",
+      "detail": "La rete separa funzioni di controllo, autenticazione, mobilità e inoltro dati. La protezione di segnalazione e collegamento è descritta in 3GPP TS 33.401, senza sostituire la cifratura applicativa.",
+      "example": "Nel 4G il MME gestisce segnalazione e sicurezza, mentre i gateway gestiscono traffico dati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire AMF/UPF al core LTE classico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.3.4, pagina PDF 150"
+    },
+    {
+      "id": "cyber-c09-q017",
+      "topicId": "cyber-c09-t03",
+      "question": "Qual è la differenza tra 5G Standalone e Non-Standalone?",
+      "answer": "5G SA utilizza un 5G Core; 5G NSA usa elementi di accesso 5G insieme a componenti di generazioni precedenti, frequentemente LTE/EPC.",
+      "detail": "La presenza di radio New Radio non identifica automaticamente l’architettura del core. Questa distinzione determina le funzioni di autenticazione, controllo, trasporto e interconnessione effettivamente coinvolte.",
+      "example": "Un collegamento radio 5G che si appoggia all’EPC non deve essere descritto come 5G Core SA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare 5G NR, 5GC e 5G NSA come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.3.5, pagina PDF 150"
+    },
+    {
+      "id": "cyber-c09-q018",
+      "topicId": "cyber-c09-t03",
+      "question": "Quali capacità abilita il 5G e perché non sono garantite in ogni situazione?",
+      "answer": "Banda larga mobile potenziata, elevata densità IoT e servizi con requisiti specifici di latenza o affidabilità.",
+      "detail": "Tecniche come massive MIMO e uso di bande ad alta frequenza possono contribuire alle prestazioni, ma copertura e latenza dipendono dal contesto radio, dalla topologia e dal dimensionamento; non sono proprietà uniformi di ogni collegamento 5G.",
+      "example": "Un’area con alta frequenza e ostacoli può avere copertura più limitata di una cella in banda bassa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non promettere latenza nulla, copertura universale o sicurezza automatica nel 5G.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.3.5, pagina PDF 150"
+    },
+    {
+      "id": "cyber-c09-q019",
+      "topicId": "cyber-c09-t04",
+      "question": "Come si distinguono SIM, USIM, UICC ed eSIM?",
+      "answer": "La UICC è il supporto sicuro; SIM è l’applicazione storica GSM; USIM è l’applicazione di autenticazione nelle generazioni successive; eSIM fa riferimento all’eUICC e al provisioning remoto dei profili.",
+      "detail": "Nel linguaggio comune «SIM» indica spesso la scheda nel telefono, ma i termini hanno ruoli tecnici diversi. Il provisioning eSIM non elimina i requisiti di custodire segreti e autenticare l’abbonato.",
+      "example": "Un profilo eSIM può sostituire la scheda fisica estraibile senza diventare un nuovo algoritmo di cifratura.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere contenitore, applicazione e modalità di gestione del profilo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.4, pagina PDF 150"
+    },
+    {
+      "id": "cyber-c09-q020",
+      "topicId": "cyber-c09-t04",
+      "question": "Qual è la differenza tra IMSI e IMEI?",
+      "answer": "IMSI identifica storicamente l’abbonamento cellulare; IMEI identifica l’apparato terminale.",
+      "detail": "L’identità dell’utente/abbonamento e quella del dispositivo non sono intercambiabili: lo stesso abbonamento può essere usato in terminali differenti e un terminale può ospitare più profili di abbonamento.",
+      "example": "Cambiare smartphone non implica necessariamente cambiare identità dell’abbonamento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare IMEI il numero della SIM o IMSI il seriale dello smartphone.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.4.1, pagina PDF 150"
+    },
+    {
+      "id": "cyber-c09-q021",
+      "topicId": "cyber-c09-t04",
+      "question": "Che cosa rappresentano SUPI e SUCI nel 5G?",
+      "answer": "SUPI è l’identificatore permanente dell’abbonamento; SUCI è una rappresentazione protetta del SUPI che ne riduce l’esposizione nelle procedure previste.",
+      "detail": "La protezione dell’identificatore contribuisce alla privacy, ma non garantisce anonimato assoluto perché possono restare osservabili metadati, segnali radio, localizzazione e informazioni delle reti legacy.",
+      "example": "SUCI riduce l’esposizione della identità permanente durante determinate segnalazioni 5G.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che il SUPI sia sempre inviato in chiaro o che SUCI nasconda tutta la localizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.4.1, pagina PDF 150"
+    },
+    {
+      "id": "cyber-c09-q022",
+      "topicId": "cyber-c09-t04",
+      "question": "Qual è il ruolo del segreto crittografico di lungo periodo conservato nel sistema USIM?",
+      "answer": "Permette di partecipare all’autenticazione dell’abbonamento e alla derivazione di chiavi operative senza trasmettere il segreto permanente come una normale credenziale alla stazione base.",
+      "detail": "La procedura usa challenge, valori di autenticazione e funzioni crittografiche; materiali differenti vengono derivati per specifiche fasi e protezioni. Non è prevista la diffusione indiscriminata della chiave permanente alle app dello smartphone.",
+      "example": "La rete può validare una risposta alla sfida senza richiedere al terminale di inviare il segreto a lungo termine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che la SIM trasmette semplicemente la propria chiave segreta alla BTS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.4.2, pagina PDF 150"
+    },
+    {
+      "id": "cyber-c09-q023",
+      "topicId": "cyber-c09-t04",
+      "question": "Perché il sistema radio utilizza chiavi derivate oltre ai segreti permanenti?",
+      "answer": "Per separare il materiale a lungo termine dalle chiavi operative usate per funzioni e comunicazioni specifiche.",
+      "detail": "Una gerarchia di chiavi permette di limitare l’esposizione di segreti principali e di proteggere segnalazione e traffico secondo lo standard. Modalità e gerarchia variano fra GSM, UMTS, LTE e 5G.",
+      "example": "Chiavi per segnalazioni e protezione radio possono derivare da materiale autenticato senza coincidere con la chiave permanente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rappresentare tutte le chiavi radio come un’unica password comune.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.4.2, pagina PDF 150"
+    },
+    {
+      "id": "cyber-c09-q024",
+      "topicId": "cyber-c09-t04",
+      "question": "Come funziona il principio challenge-response nell’autenticazione cellulare?",
+      "answer": "La rete propone una sfida; il componente sicuro del terminale calcola una risposta usando un segreto; la rete verifica che corrisponda a quanto atteso.",
+      "detail": "La risposta non dovrebbe rivelare il segreto permanente. Le vere procedure AKA includono ulteriori condizioni, verifica di freschezza, protezione dei vettori, autenticazione della rete ove prevista e derivazione delle chiavi.",
+      "example": "Il telefono risponde a un valore casuale senza inviare direttamente la chiave dell’abbonato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare questo esempio introduttivo con la specifica completa EPS-AKA o 5G-AKA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.4.3, pagina PDF 150"
+    },
+    {
+      "id": "cyber-c09-q025",
+      "topicId": "cyber-c09-t05",
+      "question": "Che cos’è l’handover nelle reti radiomobili?",
+      "answer": "È il trasferimento di una connessione o del suo contesto operativo da una cella o nodo radio a un altro durante la mobilità.",
+      "detail": "Il trasferimento consente di conservare il servizio quando l’utente si sposta o cambiano copertura, interferenze e qualità radio. Richiede coordinamento e gestione del contesto di sicurezza oltre alla semplice scelta del segnale.",
+      "example": "Un utente in chiamata passa dalla copertura di una cella alla successiva mantenendo, per quanto possibile, la continuità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere l’handover come semplice disconnessione e nuovo login.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.5, pagina PDF 151"
+    },
+    {
+      "id": "cyber-c09-q026",
+      "topicId": "cyber-c09-t05",
+      "question": "Che cosa significa ping-pong handover e quali tecniche lo limitano?",
+      "answer": "È l’oscillazione ripetuta della connessione fra celle vicine dovuta a fluttuazioni della qualità radio.",
+      "detail": "Soglie, isteresi, time-to-trigger, misure di qualità e policy operatore evitano che un miglioramento momentaneo induca un trasferimento immediato, riducendo overhead di segnalazione, interruzioni e consumo di risorse.",
+      "example": "Se A e B alternano un lieve vantaggio ogni pochi secondi, attendere condizioni stabili può evitare cambi continui.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere la nuova cella sulla sola massima potenza misurata istante per istante.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.5.1, pagina PDF 151"
+    },
+    {
+      "id": "cyber-c09-q027",
+      "topicId": "cyber-c09-t05",
+      "question": "Come si distinguono cell selection, reselection e handover?",
+      "answer": "Selection individua una cella adatta; reselection modifica la cella di riferimento in determinati stati; handover trasferisce una connessione attiva in modo coordinato.",
+      "detail": "Le procedure reali dipendono dallo stato RRC e dallo standard. La distinzione è importante all’orale perché non ogni cambio di cella implica il trasferimento di una sessione dati già in corso.",
+      "example": "Un terminale inattivo può effettuare reselection senza handover di una chiamata attiva.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare indistintamente tutti i cambi di cella come «handover».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.5.2, pagina PDF 151"
+    },
+    {
+      "id": "cyber-c09-q028",
+      "topicId": "cyber-c09-t05",
+      "question": "Quali proprietà di sicurezza devono essere mantenute durante l’handover?",
+      "answer": "Continuità e corretta derivazione delle chiavi, identità del terminale, autorizzazione dei nodi coinvolti e protezione della segnalazione.",
+      "detail": "Un cambio cella errato può compromettere disponibilità, riservatezza o policy del servizio. I rischi sono più complessi in scenari di interoperabilità e fallback fra generazioni.",
+      "example": "Il nuovo nodo radio deve ricevere o derivare il contesto previsto senza esporre il segreto a lungo termine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare la sicurezza dell’handover al solo mantenimento di un segnale forte.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.5.3, pagina PDF 151"
+    },
+    {
+      "id": "cyber-c09-q029",
+      "topicId": "cyber-c09-t06",
+      "question": "Che cos’è l’Evolved Packet Core e a quale generazione appartiene?",
+      "answer": "L’EPC è il core della rete LTE/4G, costituito da funzioni di autenticazione, mobilità, controllo e gateway per il traffico a pacchetto.",
+      "detail": "Il riferimento a MME, Serving Gateway, PDN Gateway e HSS è proprio dell’architettura EPC; in 5G SA si utilizzano invece funzioni e interfacce differenti.",
+      "example": "Nell’EPC LTE l’eNodeB serve la radio mentre i gateway partecipano al percorso IP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire l’EPC la struttura standard del 5G Standalone.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.6, pagina PDF 151"
+    },
+    {
+      "id": "cyber-c09-q030",
+      "topicId": "cyber-c09-t06",
+      "question": "Che ruolo ha l’eNodeB nella rete LTE?",
+      "answer": "Gestisce il collegamento radio degli UE e le risorse radio, connettendosi all’EPC secondo le interfacce previste.",
+      "detail": "L’eNodeB è un nodo della RAN LTE e non coincide con MME o HSS: queste ultime sono funzioni centrali di controllo e gestione dell’abbonato.",
+      "example": "Una sessione dati parte dal terminale e attraversa l’eNodeB prima delle funzioni del core.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuirgli l’intero database di sottoscrizione degli utenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.6.1, pagina PDF 152"
+    },
+    {
+      "id": "cyber-c09-q031",
+      "topicId": "cyber-c09-t06",
+      "question": "Che cosa fa il Mobility Management Entity (MME) nell’EPC?",
+      "answer": "È una funzione del piano di controllo che gestisce aspetti di mobilità, segnalazione, partecipazione all’autenticazione e instaurazione del contesto di sicurezza.",
+      "detail": "Il MME non è il normale percorso del traffico applicativo dell’utente. Questa differenza è essenziale nel confronto con Serving Gateway e PDN Gateway.",
+      "example": "La segnalazione per instaurare un contesto passa per il piano di controllo del MME.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare il MME un gateway che inoltra normalmente i pacchetti web.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.6.1, pagina PDF 152"
+    },
+    {
+      "id": "cyber-c09-q032",
+      "topicId": "cyber-c09-t06",
+      "question": "Qual è la differenza tra Serving Gateway (S-GW) e PDN Gateway (P-GW)?",
+      "answer": "S-GW inoltra pacchetti utente e può fungere da ancoraggio di mobilità; P-GW collega la rete EPC alle reti dati esterne e applica funzioni legate a routing e policy.",
+      "detail": "I due appartengono al percorso del piano utente, ma con compiti differenti. Il P-GW può partecipare, secondo lo scenario, all’assegnazione dell’indirizzo IP o al controllo della connettività esterna.",
+      "example": "L’S-GW sostiene il percorso dati durante certe mobilità fra eNodeB, il P-GW collega a Internet o altre PDN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere entrambi con il sistema centrale di autenticazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.6.1, pagina PDF 152"
+    },
+    {
+      "id": "cyber-c09-q033",
+      "topicId": "cyber-c09-t06",
+      "question": "Che cos’è l’HSS e quale funzione svolge?",
+      "answer": "L’Home Subscriber Server custodisce dati di sottoscrizione e informazioni pertinenti all’autenticazione e ai servizi degli abbonati LTE.",
+      "detail": "Coopera con altre funzioni dell’EPC secondo le procedure standard e non corrisponde al punto di accesso radio né a un gateway di inoltro dati.",
+      "example": "Il core consulta informazioni dell’abbonamento per verificare che il terminale possa accedere ai servizi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire all’HSS il compito di trasportare il traffico applicativo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.6.1, pagina PDF 152"
+    },
+    {
+      "id": "cyber-c09-q034",
+      "topicId": "cyber-c09-t06",
+      "question": "In LTE quale differenza c’è tra piano di controllo e piano utente?",
+      "answer": "Il control plane trasporta le segnalazioni che instaurano e governano le connessioni; lo user plane trasporta i dati applicativi veri e propri.",
+      "detail": "MME opera nel controllo; S-GW e P-GW compaiono nel percorso dati. Distinguere i piani aiuta a capire attacchi alla segnalazione, disponibilità, routing e visibilità del traffico.",
+      "example": "Un messaggio per registrare un utente appartiene al controllo; un pacchetto di una pagina web è traffico utente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare «signaling» come sinonimo di dati dell’applicazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.6.1, pagina PDF 152"
+    },
+    {
+      "id": "cyber-c09-q035",
+      "topicId": "cyber-c09-t06",
+      "question": "Quali fasi concettuali comprende l’autenticazione EPS-AKA di LTE?",
+      "answer": "Richiesta di accesso, ottenimento dei vettori di autenticazione, challenge del terminale, verifica della risposta e derivazione/attivazione del contesto di sicurezza.",
+      "detail": "La procedura coinvolge USIM e funzioni dell’operatore, fornisce assicurazioni previste sull’identità e produce materiale per la protezione di comunicazioni successive.",
+      "example": "Il terminale può provare il possesso del segreto senza inviare la chiave permanente all’eNodeB.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere EPS-AKA come semplice invio di password sulla radio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.6.2, pagina PDF 152"
+    },
+    {
+      "id": "cyber-c09-q036",
+      "topicId": "cyber-c09-t06",
+      "question": "Quali aree di comunicazione sono protette in LTE e quale ruolo hanno le chiavi gerarchiche?",
+      "answer": "Secondo le specifiche LTE vengono protette selettivamente segnalazioni NAS, messaggi radio RRC e dati radio, mediante chiavi derivate per funzioni diverse.",
+      "detail": "Le protezioni dipendono dagli algoritmi e contesti negoziati. La separazione funzionale delle chiavi evita che tutta la rete si basi su un’unica credenziale applicata indistintamente.",
+      "example": "Chiavi e procedure per segnalazione NAS non si identificano automaticamente con quelle impiegate sui frame radio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare cifratura radio a protezione di tutti gli hop verso il server remoto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.6.2, pagina PDF 152"
+    },
+    {
+      "id": "cyber-c09-q037",
+      "topicId": "cyber-c09-t06",
+      "question": "Come correggere un candidato che descrive MME, S-GW e P-GW come le funzioni caratteristiche del 5G Core Standalone?",
+      "answer": "Sono nomi propri dell’EPC LTE; il 5G SA usa AMF, SMF, UPF e altre funzioni, mentre componenti LTE possono permanere in reti NSA o interoperabili.",
+      "detail": "La distinzione cambia collocazione di autenticazione, segnalazione, trasporto dati e interfacce di sicurezza. Il confronto è funzionale, non una semplice sostituzione lessicale uno-a-uno.",
+      "example": "Il 5G NSA può utilizzare LTE/EPC pur offrendo accesso radio 5G.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire i nomi EPC nella descrizione normativa del 5GC SA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.6.3, pagina PDF 152"
+    },
+    {
+      "id": "cyber-c09-q038",
+      "topicId": "cyber-c09-t07",
+      "question": "Qual è la differenza generale di architettura fra EPC LTE e 5G Core SA?",
+      "answer": "Il 5G Core SA impiega funzioni specializzate e interfacce di servizio; l’EPC LTE impiega funzioni come MME, S-GW, P-GW e HSS.",
+      "detail": "Nel 5GC la separazione e cooperazione tra gestione mobilità, sessioni, user plane, autenticazione e dati dell’abbonato è descritta mediante funzioni AMF, SMF, UPF, AUSF, UDM e altre.",
+      "example": "Per spiegare una connessione 5G SA è più pertinente riferirsi ad AMF e UPF che a MME e P-GW.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dare per scontato che le corrispondenze funzionali siano perfettamente uno-a-uno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.7, pagina PDF 153"
+    },
+    {
+      "id": "cyber-c09-q039",
+      "topicId": "cyber-c09-t07",
+      "question": "Quale funzione svolge l’AMF nel 5G Core?",
+      "answer": "Access and Mobility Management Function: gestisce registrazione, mobilità e funzioni di controllo e sicurezza correlate all’UE.",
+      "detail": "L’AMF è parte del control plane; collabora con servizi di autenticazione e gestione dati, senza diventare automaticamente il componente che inoltra il traffico Internet degli utenti.",
+      "example": "Un UE che si registra nel 5G SA interagisce con il percorso di controllo che coinvolge AMF.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire AMF un sostituto fisico del modem radio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.7, pagina PDF 153"
+    },
+    {
+      "id": "cyber-c09-q040",
+      "topicId": "cyber-c09-t07",
+      "question": "In cosa differiscono SMF e UPF nel 5GC?",
+      "answer": "SMF (Session Management Function) controlla le sessioni e il comportamento del piano utente; UPF (User Plane Function) inoltra i pacchetti del piano utente.",
+      "detail": "La separazione control/user plane consente di ragionare in modo distinto su gestione della connettività e trasporto effettivo dei dati verso reti esterne.",
+      "example": "Il SMF può definire regole per la sessione, mentre la UPF gestisce l’inoltro operativo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il controller della sessione con il nodo che tratta i pacchetti utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.7, pagina PDF 153"
+    },
+    {
+      "id": "cyber-c09-q041",
+      "topicId": "cyber-c09-t07",
+      "question": "Quali ruoli svolgono UDM e AUSF nel 5G Core?",
+      "answer": "UDM gestisce informazioni di sottoscrizione dell’utente; AUSF partecipa alle procedure di autenticazione dell’abbonato.",
+      "detail": "Le funzioni cooperano con altri servizi e repository secondo l’architettura e i profili di autenticazione. Non coincidono né con la base radio gNodeB né con il percorso ordinario di dati via UPF.",
+      "example": "AUSF è rilevante in una procedura 5G-AKA, mentre UDM supporta la gestione dei dati di abbonamento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare al gNodeB la custodia centralizzata di tutte le informazioni della sottoscrizione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.7, pagina PDF 153"
+    },
+    {
+      "id": "cyber-c09-q042",
+      "topicId": "cyber-c09-t07",
+      "question": "Che cosa sono SEAF, NRF e NSSF nel 5G Core?",
+      "answer": "SEAF ancora logicamente la sicurezza nella rete servente; NRF supporta registrazione e discovery delle funzioni; NSSF contribuisce alla selezione delle network slice.",
+      "detail": "SEAF è generalmente collocata nell’AMF nelle procedure considerate; NRF e NSSF supportano esigenze diverse, rispettivamente la scoperta di servizi e la selezione di slice. Nessuno dei tre svolge indistintamente l’inoltro dati della UPF.",
+      "example": "La rete può scoprire una funzione disponibile via NRF e scegliere una slice tramite logiche che coinvolgono NSSF.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare una slice un dispositivo hardware singolo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.7, pagina PDF 153"
+    },
+    {
+      "id": "cyber-c09-q043",
+      "topicId": "cyber-c09-t07",
+      "question": "Che cos’è la Service-Based Architecture (SBA) del 5G Core e quali esigenze di sicurezza introduce?",
+      "answer": "È l’architettura in cui molte funzioni 5GC comunicano mediante interfacce e servizi, richiedendo autenticazione, autorizzazione, protezione del canale e governo delle identità.",
+      "detail": "La sicurezza non termina sulla radio: anche i rapporti fra funzioni di rete, i dati e le interconnessioni con altri operatori richiedono policy e controlli.",
+      "example": "Una funzione che richiama l’API di un’altra funzione di core deve possedere i permessi previsti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che l’isolamento fisico della rete dell’operatore renda superflua la sicurezza del servizio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.7.1, pagina PDF 153"
+    },
+    {
+      "id": "cyber-c09-q044",
+      "topicId": "cyber-c09-t07",
+      "question": "Che cos’è una network slice e perché non garantisce isolamento assoluto?",
+      "answer": "È una partizione logica di funzioni e risorse di rete per esigenze di servizio differenziate; può condividere infrastruttura con altre slice.",
+      "detail": "Occorrono separazione e controllo degli accessi per limitare interferenze, propagazione di problemi e attraversamenti indebiti fra domini logici.",
+      "example": "Due slice possono utilizzare risorse fisiche comuni, pur richiedendo policy differenziate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere le slice come reti fisicamente indipendenti per definizione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.7.1, pagina PDF 153"
+    },
+    {
+      "id": "cyber-c09-q045",
+      "topicId": "cyber-c09-t07",
+      "question": "Quali procedure e identità sono importanti per la sicurezza del 5G?",
+      "answer": "5G-AKA ed EAP-AKA′ per l’autenticazione; SUPI come identificatore permanente dell’abbonamento; SUCI come sua rappresentazione protetta in procedure applicabili.",
+      "detail": "Il riferimento di sistema è 3GPP TS 33.501. La protezione della segnalazione e dei contesti di sicurezza non va confusa con l’anonimato totale o con la protezione automatica di ogni dato applicativo.",
+      "example": "Il 5G mira a ridurre l’esposizione dell’identità permanente attraverso SUCI.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere autenticazione dell’abbonamento, privacy dell’identificatore e cifratura end-to-end.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.7.2, pagina PDF 153"
+    },
+    {
+      "id": "cyber-c09-q046",
+      "topicId": "cyber-c09-t07",
+      "question": "Perché l’autenticazione mutua e il controllo delle interconnessioni sono importanti nel 5G?",
+      "answer": "Per impedire accessi e impostazioni di contesti non autorizzati, autenticare l’abbonamento e ridurre l’impersonificazione dei componenti di rete.",
+      "detail": "Lo standard definisce specifiche proprietà, ma la sicurezza effettiva dipende da implementazione, configurazione, compatibilità legacy e protezione delle interfacce di segnalazione.",
+      "example": "Una connessione può essere attaccabile in fase di fallback anche se la radio 5G usa funzioni moderne.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che un apparato che trasmette come gNodeB sia affidabile soltanto per la tecnologia dichiarata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.7.3, pagina PDF 154"
+    },
+    {
+      "id": "cyber-c09-q047",
+      "topicId": "cyber-c09-t08",
+      "question": "Quali dimensioni di un sistema wireless possono essere colpite da un attacco?",
+      "answer": "Il collegamento radio, il punto di accesso o la stazione base, le identità, la disponibilità del mezzo, il terminale, la segnalazione o l’applicazione.",
+      "detail": "La classificazione corretta parte da debolezza, minaccia e obiettivo colpito. Difese contro la lettura del traffico non sono necessariamente difese contro saturazione radio o furto del dispositivo.",
+      "example": "Una rete cifrata può comunque subire interferenze che ne impediscono l’uso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ricondurre ogni vulnerabilità wireless a una password debole.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.8, pagina PDF 154"
+    },
+    {
+      "id": "cyber-c09-q048",
+      "topicId": "cyber-c09-t08",
+      "question": "Che cos’è l’eavesdropping in una WLAN e che cosa può osservare un attaccante?",
+      "answer": "È l’intercettazione non autorizzata di frame e informazioni trasmesse via radio, quando il ricevitore è in copertura.",
+      "detail": "L’osservatore può acquisire segnali e metadati visibili; il contenuto può essere esposto se il link non è cifrato o usa protezioni obsolete. Cifratura Wi-Fi e TLS risolvono problemi distinti e possono essere complementari.",
+      "example": "Un ricevitore vicino a un hotspot open osserva frame radio, ma una sessione HTTPS corretta protegge il contenuto fino all’endpoint TLS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che ogni pacchetto osservabile sia automaticamente decifrabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.8.1, pagina PDF 154"
+    },
+    {
+      "id": "cyber-c09-q049",
+      "topicId": "cyber-c09-t08",
+      "question": "Qual è la differenza tra rogue access point ed evil twin?",
+      "answer": "Un rogue AP è un punto di accesso non autorizzato; un evil twin è un AP che imita una rete legittima per ingannare i dispositivi.",
+      "detail": "Un rogue può essere installato anche per errore da un dipendente; un evil twin mira in particolare all’impersonificazione. Le difese comprendono monitoraggio, profili client corretti e autenticazione del server EAP in reti enterprise.",
+      "example": "Un dispositivo con lo stesso SSID aziendale non è per questo un AP autentico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare ogni rogue AP intenzionalmente malevolo né usare SSID come prova d’identità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.8.2, pagina PDF 154"
+    },
+    {
+      "id": "cyber-c09-q050",
+      "topicId": "cyber-c09-t08",
+      "question": "Perché verificare il certificato del server EAP aiuta contro un evil twin?",
+      "answer": "Permette al client di verificare che l’infrastruttura di autenticazione corrisponda a quella prevista dalla policy.",
+      "detail": "Un SSID è facile da imitare. Certificati, catena attendibile, nome corretto e configurazione della rete riducono il rischio che il terminale riveli credenziali o stabilisca una sessione con un backend impostore.",
+      "example": "Un notebook gestito deve rifiutare un server EAP-TLS con identità inattesa anche se il nome Wi-Fi appare familiare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non disabilitare la verifica dei certificati per facilitare la connessione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.8.2, pagina PDF 154"
+    },
+    {
+      "id": "cyber-c09-q051",
+      "topicId": "cyber-c09-t08",
+      "question": "Come si distinguono spoofing e Man-in-the-Middle nelle reti wireless?",
+      "answer": "Lo spoofing falsifica identità o informazioni; il MitM colloca l’attaccante nel percorso delle comunicazioni per osservarle o alterarle.",
+      "detail": "Lo spoofing può essere una tecnica che facilita un MitM, ma non è sinonimo di MitM. Un AP malevolo o una verifica di certificato assente possono favorire l’attacco al canale.",
+      "example": "L’attaccante imita l’identità di un AP e cerca di diventare intermediario del traffico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che ogni indirizzo MAC falsificato comporti automaticamente pieno controllo dei messaggi applicativi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.8.3, pagina PDF 154"
+    },
+    {
+      "id": "cyber-c09-q052",
+      "topicId": "cyber-c09-t08",
+      "question": "Perché la cifratura da sola non basta per contrastare un MitM?",
+      "answer": "Perché può essere instaurata una connessione cifrata con il soggetto sbagliato se non si autentica correttamente l’endpoint.",
+      "detail": "Un canale protetto tutela la comunicazione tra gli estremi effettivi. Per stabilire che l’interlocutore sia legittimo servono autenticazione del server e regole di fiducia coerenti.",
+      "example": "Un client che accetta un certificato falso può parlare via TLS con l’attaccante anziché col server voluto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare «connessione cifrata» a «identità del destinatario verificata».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.8.3, pagina PDF 154"
+    },
+    {
+      "id": "cyber-c09-q053",
+      "topicId": "cyber-c09-t08",
+      "question": "Che differenza c’è tra DoS wireless e jamming?",
+      "answer": "DoS è l’obiettivo di degradare o impedire un servizio; jamming è una tecnica fisica di interferenza radio che può realizzare un DoS.",
+      "detail": "Altri DoS sfruttano saturazione, gestione dell’AP o frame di controllo. La cifratura non elimina le interferenze elettromagnetiche intenzionali; PMF protegge alcune categorie di frame di gestione, non il mezzo fisico.",
+      "example": "Un attaccante che disturba il canale può interrompere la WLAN senza conoscere la password.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre soltanto TLS o AES come contromisura al jamming.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.8.4, pagina PDF 154"
+    },
+    {
+      "id": "cyber-c09-q054",
+      "topicId": "cyber-c09-t08",
+      "question": "Che cosa significa reflection e perché va distinta dalla semplice interferenza fra reti?",
+      "answer": "Reflection indica l’inoltro di risposte verso una vittima abusando di falsificazione dell’origine o di peculiarità del protocollo; l’interferenza fra reti vicine può essere un fenomeno non malevolo.",
+      "detail": "Bisogna distinguere amplificazione/reflection IP e specifiche interazioni dei protocolli radio, senza chiamare «attacco» qualsiasi sovrapposizione di canali o WLAN.",
+      "example": "Due AP vicini sullo stesso canale possono interferire pur essendo entrambi legittimi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare la presenza di reti sovrapposte come prova di un aggressore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.8.5, pagina PDF 154"
+    },
+    {
+      "id": "cyber-c09-q055",
+      "topicId": "cyber-c09-t09",
+      "question": "Perché la difesa wireless deve applicare più controlli coordinati?",
+      "answer": "Le minacce colpiscono componenti differenti: mezzo radio, identità, terminali, accessi di rete e applicazioni; una sola misura non le affronta tutte.",
+      "detail": "Defense in depth combina cifratura radio, autenticazione, segmentazione, patching, monitoraggio, gestione device e protezione end-to-end.",
+      "example": "WPA3 tutela parte del collegamento, EAP-TLS verifica l’accesso, firewall limita il traffico e HTTPS protegge l’applicazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il nome WPA3 equivalente a sicurezza totale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.9, pagina PDF 155"
+    },
+    {
+      "id": "cyber-c09-q056",
+      "topicId": "cyber-c09-t09",
+      "question": "Quale tecnologia consiglia il manuale per cifrare il collegamento Wi-Fi e quali limiti restano?",
+      "answer": "Preferire WPA3 quando supportato; utilizzare WPA2 con configurazioni e algoritmi robusti solo dove necessario e adeguatamente gestito.",
+      "detail": "La protezione del frame radio non sostituisce HTTPS, VPN quando richiesta, autorizzazione applicativa, aggiornamenti e sicurezza dei terminali.",
+      "example": "Una WLAN WPA3 aziendale deve comunque proteggere il portale gestionale con HTTPS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere WEP o WPA/TKIP per nuove installazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.9.1, pagina PDF 155"
+    },
+    {
+      "id": "cyber-c09-q057",
+      "topicId": "cyber-c09-t09",
+      "question": "Nascondere il nome SSID rende una WLAN segreta o sicura?",
+      "answer": "No. L’SSID è un identificatore e può emergere da scambi di gestione anche se non viene pubblicizzato nei normali beacon.",
+      "detail": "La scelta può complicare la ricerca della rete da parte dei client, generando interrogazioni che rivelano profili noti. Non offre autenticazione né cifratura e non è una sostituzione di WPA2/WPA3.",
+      "example": "Un AP «hidden SSID» con cifratura disattivata resta sostanzialmente una WLAN aperta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare l’SSID una password o un segreto crittografico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.9.2, pagina PDF 155"
+    },
+    {
+      "id": "cyber-c09-q058",
+      "topicId": "cyber-c09-t09",
+      "question": "Perché limitare la potenza dell’AP o usare antenne direzionali non garantisce riservatezza?",
+      "answer": "Perché un ricevitore con antenna più efficiente può ancora intercettare il segnale; ridurre troppo la potenza può danneggiare il servizio.",
+      "detail": "Potenza, schermature e direttività servono soprattutto alla pianificazione radio e alla riduzione della copertura non necessaria, non all’autenticazione o alla cifratura dei dati.",
+      "example": "Ridurre la potenza per non raggiungere l’esterno non sostituisce WPA3 e la verifica degli accessi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un segnale attenuato con un segnale crittograficamente protetto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.9.3, pagina PDF 155"
+    },
+    {
+      "id": "cyber-c09-q059",
+      "topicId": "cyber-c09-t09",
+      "question": "Che cosa offrono 802.1X/EAP e un server AAA rispetto a una password Wi-Fi condivisa?",
+      "answer": "Consentono autenticazione centralizzata e, in profili idonei, credenziali individuali e policy differenziate per utenti o dispositivi.",
+      "detail": "L’autenticazione verifica il soggetto; l’autorizzazione definisce le risorse disponibili dopo l’accesso. Certificati e infrastruttura AAA possono facilitare revoca puntuale e audit.",
+      "example": "Si può revocare il certificato del singolo ex dipendente anziché sostituire la password di tutta la sede.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che 802.1X conceda automaticamente accesso a tutte le applicazioni interne.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.9.4, pagina PDF 155"
+    },
+    {
+      "id": "cyber-c09-q060",
+      "topicId": "cyber-c09-t09",
+      "question": "Quali controlli servono sul dispositivo wireless anche se la WLAN è cifrata?",
+      "answer": "Hardening, patch, cifratura dei dati locali, blocco del terminale, protezione di chiavi e certificati, gestione dei furti e MDM/UEM.",
+      "detail": "La gestione centralizzata può distribuire policy, rilevare non conformità, revocare credenziali e applicare procedure d’incidente. Un dispositivo già compromesso può esporre dati decifrati anche su una rete radio sicura.",
+      "example": "In caso di notebook perso, si revocano token e certificati e si attivano le procedure di gestione del device.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non delegare tutta la sicurezza del dato alla configurazione dell’AP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.9.5, pagina PDF 155"
+    },
+    {
+      "id": "cyber-c09-q061",
+      "topicId": "cyber-c09-t09",
+      "question": "Perché creare una WLAN ospiti separata e perché la sola VLAN non basta?",
+      "answer": "Gli ospiti non devono poter accedere automaticamente alle risorse interne; servono segmentazione e policy firewall/routing efficaci.",
+      "detail": "Una VLAN separa un dominio logico di livello 2, ma la comunicazione inter-VLAN può essere comunque consentita da router o switch di livello 3. Le ACL e le policy devono esplicitare i flussi autorizzati.",
+      "example": "Guest Wi-Fi consentita solo verso Internet e bloccata verso database e server gestionali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire alla presenza di un VLAN ID la proprietà di bloccare ogni flusso tra reti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.9.6, pagina PDF 155"
+    },
+    {
+      "id": "cyber-c09-q062",
+      "topicId": "cyber-c09-t10",
+      "question": "Quali sono i ruoli di AP, STA, SSID e BSSID in una rete IEEE 802.11?",
+      "answer": "AP fornisce l’accesso radio; STA è la stazione client; SSID è il nome logico della WLAN; BSSID identifica una specifica cella radio BSS, spesso tramite un MAC.",
+      "detail": "Un SSID può essere comune a più AP e non prova la loro autenticità. BSSID è utile nella gestione radio e nell’analisi dei frame, ma un identificatore MAC non è da solo una prova crittografica.",
+      "example": "Più access point di un campus possono pubblicizzare lo stesso SSID aziendale con BSSID differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare SSID la chiave Wi-Fi o il certificato del server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.10, pagina PDF 156"
+    },
+    {
+      "id": "cyber-c09-q063",
+      "topicId": "cyber-c09-t10",
+      "question": "Quali sono le tre grandi famiglie di frame IEEE 802.11?",
+      "answer": "Management (scoperta e associazione), data (trasporto dei dati) e control (coordinamento dell’uso del mezzo).",
+      "detail": "La cifratura dei frame dati e la protezione di alcune categorie di management frame non sono identiche. PMF copre determinate comunicazioni di gestione nelle condizioni previste.",
+      "example": "Beacon e association appartengono al management, mentre il payload delle applicazioni viaggia nei data frame.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che tutti i frame Wi-Fi siano protetti nello stesso modo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.10, pagina PDF 156"
+    },
+    {
+      "id": "cyber-c09-q064",
+      "topicId": "cyber-c09-t10",
+      "question": "Qual è il percorso tipico per ottenere l’accesso a una WLAN protetta?",
+      "answer": "Discovery con beacon o ricerca attiva; selezione AP; procedure 802.11 pertinenti; associazione; autenticazione e derivazione/istallazione chiavi; accesso ai dati secondo policy.",
+      "detail": "La fase denominata «autenticazione» nei frame 802.11, soprattutto nell’open-system iniziale, non equivale necessariamente all’autenticazione effettiva dell’identità dell’utente.",
+      "example": "Un notebook può essersi associato a un AP senza avere ancora completato 802.1X/EAP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare l’associazione radio come autorizzazione a navigare in tutta la LAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.10.1, pagina PDF 156"
+    },
+    {
+      "id": "cyber-c09-q065",
+      "topicId": "cyber-c09-t10",
+      "question": "Qual è la differenza gestionale fra Wi-Fi Personal ed Enterprise?",
+      "answer": "Personal usa di norma una credenziale condivisa con meccanismi specifici WPA2/WPA3; Enterprise integra autenticazione 802.1X/EAP e un backend AAA, spesso con credenziali individuali.",
+      "detail": "Enterprise consente identità, revoche e policy granulari, ma richiede configurazione e gestione rigorose di server, certificati e profili client.",
+      "example": "In una grande impresa EAP-TLS consente revoca mirata dei certificati dei dipendenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la semplice modalità Personal con la presenza di chiavi frame identiche per tutti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.10.2, pagina PDF 156"
+    },
+    {
+      "id": "cyber-c09-q066",
+      "topicId": "cyber-c09-t11",
+      "question": "Che cos’era WEP e perché lo si studia nonostante sia obsoleto?",
+      "answer": "Wired Equivalent Privacy era un sistema storico di protezione IEEE 802.11 oggi compromesso; illustra i rischi di IV corti, keystream riutilizzati e controlli di integrità non crittografici.",
+      "detail": "L’obiettivo originario era fornire protezione del collegamento paragonabile a una LAN cablata. Il disegno complessivo si è rivelato insufficiente; non è adatto a nuove installazioni.",
+      "example": "Studiare WEP aiuta a comprendere perché «i dati sono cifrati» non sia garanzia di sicurezza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre WEP come modalità compatibile ma sicura per apparati legacy.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.11, pagina PDF 156"
+    },
+    {
+      "id": "cyber-c09-q067",
+      "topicId": "cyber-c09-t11",
+      "question": "Quali primitive e parametri usa WEP?",
+      "answer": "Usa RC4 come cifrario a flusso, una chiave segreta condivisa, un IV storico di 24 bit e un controllo ICV basato su CRC-32.",
+      "detail": "RC4 produce un keystream pseudocasuale combinato per XOR con dati e ICV. L’IV è un parametro trasmesso in chiaro per consentire la ricostruzione del flusso.",
+      "example": "L’IV da 24 bit può assumere 2^24 combinazioni, insufficienti per un utilizzo massiccio senza ripetizioni.",
+      "formulas": [
+        {
+          "latex": "2^{24}=16\\,777\\,216"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confondere IV pubblico con chiave segreta o ICV con MAC sicuro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.11.1, pagina PDF 157"
+    },
+    {
+      "id": "cyber-c09-q068",
+      "topicId": "cyber-c09-t11",
+      "question": "Che cos’è il keystream e come lo impiega un cifrario a flusso?",
+      "answer": "È una sequenza di bit/byte pseudocasuale generata a partire dalla chiave e da altri parametri; viene combinata tramite XOR al messaggio.",
+      "detail": "Per decifrare si ricostruisce il medesimo keystream e si applica di nuovo XOR. La sicurezza dipende dalla qualità della generazione e dal non riutilizzo per messaggi che non devono condividere il flusso.",
+      "example": "Con M messaggio e K keystream: C=M XOR K e M=C XOR K.",
+      "formulas": [
+        {
+          "latex": "C=M\\oplus K"
+        },
+        {
+          "latex": "M=C\\oplus K"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non attribuire insicurezza all’operatore XOR in sé.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.11.1, pagina PDF 157"
+    },
+    {
+      "id": "cyber-c09-q069",
+      "topicId": "cyber-c09-t11",
+      "question": "Qual è la sequenza essenziale di cifratura di un frame WEP?",
+      "answer": "Chiave WEP condivisa; selezione dell’IV; inizializzazione RC4; calcolo e aggiunta ICV/CRC-32; XOR di payload+ICV con keystream; trasmissione dell’IV; decifratura e verifica ICV.",
+      "detail": "Il destinatario usa informazioni del frame e il segreto comune per ricostruire il keystream. La verifica di CRC-32 rileva errori accidentali ma non fornisce un’autenticazione crittografica adeguata.",
+      "example": "Il frame include l’IV in chiaro; i dati e il CRC-32 aggiunto sono sottoposti alla trasformazione XOR.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che trasmettere l’IV in chiaro sia l’unico motivo della vulnerabilità di WEP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.11.2, pagina PDF 157"
+    },
+    {
+      "id": "cyber-c09-q070",
+      "topicId": "cyber-c09-t11",
+      "question": "Perché applicare due volte XOR con lo stesso keystream permette di decifrare?",
+      "answer": "Per ogni bit vale (x XOR k) XOR k = x: l’operazione di XOR annulla se stessa rispetto allo stesso valore k.",
+      "detail": "La proprietà matematica permette il modello di cifratura/decifratura dei flussi. Non significa che un cifrario sicuro possa riutilizzare liberamente il keystream con messaggi diversi.",
+      "example": "Un byte cifrato tramite XOR con un flusso K torna leggibile con un secondo XOR con K.",
+      "formulas": [
+        {
+          "latex": "(M\\oplus K)\\oplus K=M"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confondere reversibilità legittima con vulnerabilità del protocollo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.11.2, pagina PDF 157"
+    },
+    {
+      "id": "cyber-c09-q071",
+      "topicId": "cyber-c09-t11",
+      "question": "Quali quattro fattori principali rendono WEP vulnerabile?",
+      "answer": "IV troppo corto, debolezze nell’uso di RC4, integrità CRC-32 non crittografica e gestione fragile di chiavi statiche condivise.",
+      "detail": "La ripetizione degli IV può comportare riuso di keystream; caratteristiche statistiche del disegno RC4 favoriscono attacchi; l’ICV non autentica il messaggio e le chiavi condivise sono difficili da revocare.",
+      "example": "Un grande numero di frame WEP aumenta il rischio di IV ripetuti e attacchi contro il protocollo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire tutta la compromissione alla pubblicità dell’IV.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.11.3, pagina PDF 157"
+    },
+    {
+      "id": "cyber-c09-q072",
+      "topicId": "cyber-c09-t11",
+      "question": "Perché CRC-32/ICV non garantisce autenticità e integrità contro un avversario attivo?",
+      "answer": "CRC-32 è progettato per rilevare errori di trasmissione accidentali, non per resistere a una modifica intenzionale con conoscenza del protocollo.",
+      "detail": "Un controllo di integrità crittografico richiede proprietà differenti, per esempio MAC/tag di autenticazione costruito con chiavi adeguate. WEP può essere manipolato senza che il solo ICV fornisca una difesa affidabile.",
+      "example": "CRC-32 è utile per errori casuali sul collegamento, non per dimostrare la provenienza di un frame.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare l’ICV WEP una firma digitale o un HMAC.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.11.3, pagina PDF 157"
+    },
+    {
+      "id": "cyber-c09-q073",
+      "topicId": "cyber-c09-t11",
+      "question": "Perché un IV pubblico non è, da solo, una vulnerabilità?",
+      "answer": "Molti sistemi crittografici sicuri trasmettono nonce o IV pubblici: la sicurezza dipende dalla costruzione, dall’unicità e dal corretto impiego insieme alle chiavi.",
+      "detail": "In WEP il problema nasce dalla dimensione dell’IV, dal possibile riutilizzo del keystream e da difetti complessivi del protocollo; la segretezza dell’IV non sarebbe una soluzione generale.",
+      "example": "Anche AES-GCM utilizza nonce non necessariamente segreti ma con vincoli rigorosi di unicità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre di nascondere l’IV WEP come correzione sufficiente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.11.3, pagina PDF 157"
+    },
+    {
+      "id": "cyber-c09-q074",
+      "topicId": "cyber-c09-t12",
+      "question": "Perché fu introdotto WPA e quale ruolo svolge TKIP?",
+      "answer": "WPA fu una soluzione transitoria migliorativa rispetto a WEP; TKIP migliorò gestione delle chiavi, IV e integrità pur mantenendo RC4.",
+      "detail": "Il passaggio servì ad aumentare la robustezza in alcuni apparati pre-WPA2; non rese RC4 moderno né cancellò tutte le vulnerabilità. Il protocollo non è consigliato per nuove reti.",
+      "example": "TKIP mantenne compatibilità con una parte dell’hardware storico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare WPA originale a WPA2/AES-CCMP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.12, pagina PDF 158"
+    },
+    {
+      "id": "cyber-c09-q075",
+      "topicId": "cyber-c09-t12",
+      "question": "Quali aspetti TKIP migliora rispetto a WEP?",
+      "answer": "Mixing delle chiavi per pacchetto, IV a 48 bit invece di 24, chiavi operative storiche da 128 bit e verifiche di integrità migliorate.",
+      "detail": "L’obiettivo è ridurre riutilizzi pericolosi e alcuni attacchi praticabili su WEP. Il protocollo mantiene però limitazioni proprie di RC4 e delle soluzioni storiche.",
+      "example": "Il passaggio a WPA/TKIP non consiste nel cifrare semplicemente lo stesso WEP con una chiave più lunga.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare TKIP come cifratura AES.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.12.1, pagina PDF 158"
+    },
+    {
+      "id": "cyber-c09-q076",
+      "topicId": "cyber-c09-t12",
+      "question": "Che cosa rappresenta MIC in WPA/TKIP e quali limiti ha?",
+      "answer": "Il Michael MIC, un Message Integrity Code aggiuntivo concepito per migliorare il rilevamento delle manipolazioni rispetto a WEP.",
+      "detail": "I controlli di TKIP appartengono a un compromesso storico e non offrono robustezza equivalente alle moderne protezioni CCMP/AEAD. Lo standard va trattato come obsoleto.",
+      "example": "L’impiego di un MIC migliora alcuni controlli senza sostituire la scelta di una suite Wi-Fi moderna.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che il MIC TKIP sia identico a HMAC-SHA-256 o renda WPA attuale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.12.2, pagina PDF 158"
+    },
+    {
+      "id": "cyber-c09-q077",
+      "topicId": "cyber-c09-t13",
+      "question": "Quali innovazioni fondamentali introduce WPA2 rispetto a WPA/TKIP?",
+      "answer": "WPA2 è basato sullo standard IEEE 802.11i e impiega diffusamente AES-CCMP, con gestione strutturata di autenticazione, chiavi e protezione dei dati.",
+      "detail": "AES è il cifrario a blocchi; CCMP è la costruzione che protegge i frame, combinando cifratura e verifica dell’autenticità. La sicurezza dipende anche dall’autenticazione e dalla corretta implementazione.",
+      "example": "WPA2-Enterprise può utilizzare 802.1X/EAP-TLS e chiavi derivate per sessione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare AES da solo a un intero protocollo Wi-Fi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.13, pagina PDF 158"
+    },
+    {
+      "id": "cyber-c09-q078",
+      "topicId": "cyber-c09-t13",
+      "question": "Che cos’è AES-CCMP e quali proprietà offre?",
+      "answer": "È una protezione WLAN con AES nel Counter Mode with CBC-MAC Protocol, che combina cifratura e autenticazione/integrità dei frame.",
+      "detail": "In numerose configurazioni WPA2 viene utilizzato AES-CCMP con chiave di 128 bit. Occorre distinguere la primitiva AES dal protocollo che definisce modalità, nonce, conteggi e gestione delle chiavi.",
+      "example": "La protezione del frame non elimina i rischi delle API web a valle del punto di accesso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare CCMP il nome della password o del server AAA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.13.1, pagina PDF 158"
+    },
+    {
+      "id": "cyber-c09-q079",
+      "topicId": "cyber-c09-t13",
+      "question": "Come funziona WPA2-Personal e quale problema crea la password condivisa?",
+      "answer": "Il modello PSK utilizza una credenziale condivisa per ottenere materiale di base da cui derivano chiavi operative; revocare il singolo utente è meno agevole.",
+      "detail": "La password comune non implica che tutti cifrino ogni frame con una identica chiave di sessione. La cattura di dati della negoziazione può consentire attacchi offline se la password è debole.",
+      "example": "Quando un dipendente esce, cambiare una PSK nota a tutti richiede aggiornare i client autorizzati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che WPA2-Personal usa una sola chiave uguale per ogni collegamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.13.2, pagina PDF 158"
+    },
+    {
+      "id": "cyber-c09-q080",
+      "topicId": "cyber-c09-t13",
+      "question": "Quali attori intervengono in WPA2-Enterprise con 802.1X/EAP?",
+      "answer": "Supplicant (client), authenticator (AP o switch) e server di autenticazione/AAA, spesso con protocollo RADIUS.",
+      "detail": "Il client partecipa a un metodo EAP; l’AP fa applicare il controllo di accesso e inoltra le comunicazioni con il backend. Certificati e policy consentono verifiche individuali.",
+      "example": "Un notebook esegue EAP-TLS con un server AAA passando attraverso l’AP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere RADIUS, EAP e 802.1X come protocolli equivalenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.13.3, pagina PDF 159"
+    },
+    {
+      "id": "cyber-c09-q081",
+      "topicId": "cyber-c09-t13",
+      "question": "Perché in EAP-TLS è indispensabile verificare il certificato del server?",
+      "answer": "Per impedire che il client accetti come sistema aziendale un backend o AP che impersona l’infrastruttura attendibile.",
+      "detail": "La verifica riguarda catena di fiducia, nome/identificatore previsto e policy del profilo; devono inoltre essere gestiti certificati client e loro revoca. Senza verifica il client potrebbe esporre informazioni a un impostore.",
+      "example": "Un portatile non dovrebbe connettersi solo perché l’SSID corrisponde al nome dell’ufficio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non disabilitare la validazione per evitare errori di configurazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.13.3, pagina PDF 159"
+    },
+    {
+      "id": "cyber-c09-q082",
+      "topicId": "cyber-c09-t13",
+      "question": "Qual è la differenza tra PTK e GTK?",
+      "answer": "PTK è materiale chiave pairwise per la sessione fra stazione e AP; GTK è materiale chiave di gruppo per broadcast/multicast.",
+      "detail": "Entrambe sono chiavi operative previste dal protocollo e non devono essere confuse con la password originaria della rete. Le loro finalità sono differenti e possono essere aggiornate secondo procedure distinte.",
+      "example": "Una trasmissione unicast protetta a un client usa materiale pairwise, una trasmissione di gruppo usa chiavi di gruppo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare PTK e GTK sinonimi di PSK.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.13.4, pagina PDF 159"
+    },
+    {
+      "id": "cyber-c09-q083",
+      "topicId": "cyber-c09-t13",
+      "question": "A cosa serve il four-way handshake di WPA2?",
+      "answer": "A confermare il possesso del materiale crittografico di base e derivare, distribuire ove previsto e installare correttamente chiavi operative della WLAN.",
+      "detail": "Le entità usano nonce, indirizzi e codici di autenticazione. La procedura comprende quattro messaggi tra AP e client; richiede gestione corretta delle chiavi e dei contatori per evitare riutilizzi pericolosi.",
+      "example": "L’AP invia materiale iniziale, il client risponde con un nonce, l’AP comunica i parametri protetti e il client conferma.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descriverlo come semplice invio in chiaro della password all’AP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.13.5, pagina PDF 159"
+    },
+    {
+      "id": "cyber-c09-q084",
+      "topicId": "cyber-c09-t13",
+      "question": "Qual è la sequenza didattica dei quattro messaggi del four-way handshake?",
+      "answer": "1) AP invia un messaggio iniziale; 2) client risponde con nonce e prova di autenticità; 3) AP comunica parametri e chiavi di gruppo protette; 4) client conferma.",
+      "detail": "La sequenza non sostituisce tutti i campi EAPOL-Key reali. Spiega però perché la protezione WLAN dipenda da più messaggi e da una gestione corretta degli stati della negoziazione.",
+      "example": "Per ricostruirla all’orale: AP → client → AP → client, con ruoli e verifiche specifiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che i quattro messaggi inviino quattro password.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.13.5, pagina PDF 159"
+    },
+    {
+      "id": "cyber-c09-q085",
+      "topicId": "cyber-c09-t14",
+      "question": "Che cosa è KRACK e quale tipo di errore sfrutta?",
+      "answer": "Key Reinstallation Attack: una vulnerabilità nella gestione e implementazione dell’handshake WPA2, resa nota nel 2017, che può provocare reinstallazione di chiavi e riutilizzo non corretto di nonce/contatori.",
+      "detail": "Non significa automaticamente recuperare la password WPA2. In certe condizioni può compromettere proprietà della sessione; le difese includono patch, configurazione sicura e protezione applicativa.",
+      "example": "Un client non aggiornato può gestire male una ritrasmissione del messaggio di handshake.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere KRACK come una rottura matematica di AES.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.13.6, pagina PDF 159"
+    },
+    {
+      "id": "cyber-c09-q086",
+      "topicId": "cyber-c09-t14",
+      "question": "Quale lezione generale di sicurezza insegna l’attacco KRACK?",
+      "answer": "Un algoritmo crittografico valido non basta: implementazione, macchina a stati e uso corretto di nonce e contatori sono essenziali.",
+      "detail": "La sicurezza pratica richiede aggiornamenti degli endpoint, verifiche, gestione della configurazione e difese complementari come HTTPS. Gli errori di protocollo possono compromettere le garanzie anche senza decifrare una password.",
+      "example": "Patchare il client vulnerabile è più pertinente che cambiare casualmente la lunghezza della password.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che una WPA2 con AES renda irrilevanti tutti i bug software.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.13.6, pagina PDF 159"
+    },
+    {
+      "id": "cyber-c09-q087",
+      "topicId": "cyber-c09-t15",
+      "question": "Quali obiettivi principali ha WPA3 rispetto alle tecnologie Wi-Fi precedenti?",
+      "answer": "Rafforzare autenticazione e protezione delle password, migliorare sicurezza dei frame di gestione e rendere più robuste le suite e i profili di protezione.",
+      "detail": "La famiglia distingue modalità Personal ed Enterprise e non rende invulnerabili AP, client, firmware o applicazioni. Sono necessari corretta configurazione, patch e segmentazione.",
+      "example": "WPA3-Personal introduce SAE, mentre WPA3-Enterprise supporta profili per infrastrutture gestite.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre la differenza fra WPA2 e WPA3 al solo numero di bit di AES.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.14, pagina PDF 159"
+    },
+    {
+      "id": "cyber-c09-q088",
+      "topicId": "cyber-c09-t15",
+      "question": "Che cos’è SAE in WPA3-Personal e quale rischio riduce?",
+      "answer": "Simultaneous Authentication of Equals è un metodo di autenticazione e accordo sulle chiavi basato su password, associato a Dragonfly.",
+      "detail": "Sostituisce il tradizionale modello PSK di WPA2-Personal e rende più difficile effettuare un attacco offline a dizionario semplicemente catturando un handshake, migliorando anche la separazione del materiale di sessione.",
+      "example": "Registrare il traffico radio di una negoziazione SAE non produce automaticamente lo stesso scenario offline tipico di una PSK WPA2 debole.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che SAE rende impossibile indovinare una password debole.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.14.1, pagina PDF 159"
+    },
+    {
+      "id": "cyber-c09-q089",
+      "topicId": "cyber-c09-t15",
+      "question": "Quali limiti rimangono in WPA3-Personal nonostante l’uso di SAE?",
+      "answer": "Password deboli, errori di implementazione, firmware non aggiornati, endpoint compromessi e configurazioni transition poco controllate.",
+      "detail": "SAE migliora proprietà specifiche dell’autenticazione ma non sostituisce controllo degli accessi applicativi, autorizzazione, protezione dei device e buona gestione della rete.",
+      "example": "Un dispositivo con malware può divulgare dati anche se collegato a una WLAN WPA3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare WPA3 un sistema di protezione totale per tutte le minacce.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.14.1, pagina PDF 159"
+    },
+    {
+      "id": "cyber-c09-q090",
+      "topicId": "cyber-c09-t15",
+      "question": "Che cosa distingue WPA3-Enterprise e che cos’è il profilo 192-bit security?",
+      "answer": "WPA3-Enterprise riguarda ambienti gestiti con requisiti di autenticazione e protezione robusti; il profilo 192-bit security è una variante ad alta sicurezza con requisiti specifici.",
+      "detail": "Non ogni installazione WPA3-Enterprise utilizza automaticamente questo profilo, né «192-bit» significa che tutte le connessioni impiegano AES-256.",
+      "example": "Un’organizzazione può avere WPA3-Enterprise senza adottare la suite opzionale ad alta sicurezza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare genericamente WPA3 con una particolare lunghezza di chiave AES.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.14.2, pagina PDF 160"
+    },
+    {
+      "id": "cyber-c09-q091",
+      "topicId": "cyber-c09-t15",
+      "question": "Che cosa sono i Protected Management Frames (PMF) e quali attacchi riducono?",
+      "answer": "PMF proteggono crittograficamente specifiche categorie di frame di gestione, contribuendo a ridurre falsificazioni di deauthentication e disassociation.",
+      "detail": "Le protezioni sono collegate a IEEE 802.11w e suoi sviluppi. Non coprono indistintamente tutti i frame prima dell’associazione e non impediscono il jamming fisico.",
+      "example": "PMF può contrastare alcuni falsi messaggi di deauthentication ma non spegnere un trasmettitore interferente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare che PMF elimini ogni DoS o ogni attacco radio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.14.3, pagina PDF 160"
+    },
+    {
+      "id": "cyber-c09-q092",
+      "topicId": "cyber-c09-t15",
+      "question": "È corretto dire che WPA3 introduce per la prima volta chiavi individuali per i client?",
+      "answer": "No. Anche WPA2 deriva materiale pairwise specifico per le connessioni; WPA3-Personal innova soprattutto il modello SAE e requisiti di protezione ulteriori.",
+      "detail": "Bisogna distinguere la credenziale condivisa di una rete WPA2-Personal dalle PTK impiegate operativamente. La differenza di SAE riguarda le proprietà dell’autenticazione e della derivazione dalla password.",
+      "example": "Due notebook connessi allo stesso WPA2-Personal non devono necessariamente usare identica chiave unicast.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire in modo esclusivo a WPA3 le PTK.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.14.4, pagina PDF 160"
+    },
+    {
+      "id": "cyber-c09-q093",
+      "topicId": "cyber-c09-t15",
+      "question": "Quali rischi e benefici presenta una modalità WPA2/WPA3 transition?",
+      "answer": "Facilita la connessione dei dispositivi vecchi e nuovi sullo stesso SSID, ma conserva superfici di compatibilità e potenziali downgrade.",
+      "detail": "Per contesti ad alta sicurezza si può preferire WPA3-only o una WLAN separata per i device legacy. Le sessioni non hanno tutte lo stesso profilo protettivo solo perché condividono il nome della WLAN.",
+      "example": "Un dispositivo datato può negoziare WPA2 su un SSID che supporta anche WPA3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare il nome WPA2/WPA3 mixed come garanzia uniforme per tutti gli utenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.14.5, pagina PDF 160"
+    },
+    {
+      "id": "cyber-c09-q094",
+      "topicId": "cyber-c09-t16",
+      "question": "Qual è la differenza fra Wi-Fi Open tradizionale e Wi-Fi Enhanced Open?",
+      "answer": "Una WLAN Open tradizionale può trasmettere senza cifratura link-layer; Enhanced Open usa OWE per derivare chiavi individuali e cifrare il collegamento pur senza password di rete.",
+      "detail": "OWE migliora la riservatezza rispetto alla rete aperta non cifrata, ma non autentica l’AP. Reti pubbliche continuano a richiedere HTTPS e attenzione alla sicurezza dell’endpoint.",
+      "example": "Un hotspot Enhanced Open può cifrare le trasmissioni locali senza chiedere agli utenti una PSK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assimilare OWE a SAE o a EAP-TLS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.15, pagina PDF 160"
+    },
+    {
+      "id": "cyber-c09-q095",
+      "topicId": "cyber-c09-t16",
+      "question": "Perché OWE/Enhanced Open non protegge dall’impersonificazione dell’AP?",
+      "answer": "OWE stabilisce cifratura individuale opportunistica ma non fornisce, da solo, autenticazione crittografica dell’identità del punto di accesso.",
+      "detail": "Un attaccante può tentare di presentare un AP malevolo; verifica dei servizi applicativi, gestione dei profili e infrastrutture con autenticazione restano necessarie.",
+      "example": "Un utente non deve dedurre che il Wi-Fi di un aeroporto sia autentico soltanto perché segnala Enhanced Open.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere riservatezza del link e fiducia nella rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.15, pagina PDF 160"
+    },
+    {
+      "id": "cyber-c09-q096",
+      "topicId": "cyber-c09-t16",
+      "question": "Un captive portal garantisce la sicurezza crittografica di un Wi-Fi pubblico?",
+      "answer": "No: è una pagina di accettazione, informazione o login prima dell’accesso, non necessariamente un protocollo di cifratura o autenticazione del link.",
+      "detail": "La protezione del canale dipende dal profilo Wi-Fi effettivo e quella verso i siti da TLS. Un captive portal può essere presente su WLAN non cifrate.",
+      "example": "Una pagina che chiede di accettare condizioni di utilizzo non rende di per sé cifrati i frame wireless.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che una pagina di login equivalga a WPA3-Enterprise.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.15, pagina PDF 160"
+    },
+    {
+      "id": "cyber-c09-q097",
+      "topicId": "cyber-c09-t17",
+      "question": "Confronta in ordine cronologico WEP, WPA, WPA2 e WPA3: quali tecniche dominanti li caratterizzano?",
+      "answer": "WEP: RC4 con IV 24 bit e CRC-32; WPA: TKIP ancora basato su RC4; WPA2: AES-CCMP e Personal/Enterprise; WPA3: SAE Personal e requisiti rafforzati, inclusi PMF.",
+      "detail": "Non cambiano soltanto gli algoritmi: variano autenticazione, gestione delle chiavi, protezione dei frame e requisiti di sicurezza. WEP e WPA/TKIP sono obsoleti; WPA3 è preferibile ove supportato.",
+      "example": "Un AP con solo WEP deve essere sostituito o escluso dalle WLAN moderne.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che WPA2 usa automaticamente AES-256 o che tutte le connessioni WPA3 sono equivalenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.16, pagina PDF 161"
+    },
+    {
+      "id": "cyber-c09-q098",
+      "topicId": "cyber-c09-t17",
+      "question": "Perché le quattro generazioni di sicurezza Wi-Fi non vanno confrontate soltanto per lunghezza della chiave?",
+      "answer": "Perché contano anche autenticazione, cifratura del link, integrità, nonce, derivazione delle chiavi, protezione dei frame di gestione e qualità delle implementazioni.",
+      "detail": "Un cifrario robusto con gestione errata del contesto può essere vulnerabile. Il nome commerciale del protocollo non specifica necessariamente ogni algoritmo e opzione realmente negoziati.",
+      "example": "KRACK mostra che un difetto di gestione delle chiavi WPA2 può creare problemi pur usando AES.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare la lunghezza della PSK come unico indicatore di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.16, pagina PDF 161"
+    },
+    {
+      "id": "cyber-c09-q099",
+      "topicId": "cyber-c09-t17",
+      "question": "Quali controlli verificare prima di dichiarare sicura una configurazione WPA2/WPA3?",
+      "answer": "Profilo e suite realmente negoziati, autenticazione, PMF, credenziali, aggiornamenti, modalità mixed, protezione degli endpoint e policy della rete.",
+      "detail": "La stessa etichetta WPA2/WPA3 può includere sessioni con profili differenti. Deve essere valutato anche l’effetto di compatibilità e downgrade e la presenza di altre difese.",
+      "example": "Un AP in transition mode può accettare client WPA2 legacy senza che questi ottengano le proprietà di SAE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non basarsi unicamente sul marchio stampato sul router.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.16.1, pagina PDF 161"
+    },
+    {
+      "id": "cyber-c09-q100",
+      "topicId": "cyber-c09-t17",
+      "question": "Quali sono i diversi endpoint di protezione di WPA3, HTTPS e VPN?",
+      "answer": "WPA3 protegge frame tra client e AP; HTTPS protegge dati applicativi fra endpoint TLS; VPN protegge pacchetti entro un tunnel fra endpoint VPN.",
+      "detail": "Le protezioni possono sovrapporsi ma terminano in punti differenti. Dopo l’AP il traffico attraversa altre reti; TLS può terminare su un reverse proxy; una VPN può terminare su un gateway aziendale.",
+      "example": "In Wi-Fi pubblico il browser può usare HTTPS e una VPN aziendale per proteggere tratti e risorse differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che una WLAN cifrata protegga automaticamente tutti i dati dentro il database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.17, pagina PDF 161"
+    },
+    {
+      "id": "cyber-c09-q101",
+      "topicId": "cyber-c09-t17",
+      "question": "Come si può essere su una WLAN Open e avere comunque un contenuto web riservato?",
+      "answer": "Se il browser stabilisce correttamente HTTPS verso il server, TLS protegge il contenuto fra i suoi endpoint anche se il collegamento Wi-Fi non è cifrato.",
+      "detail": "Rimangono osservabili metadati e possibili rischi di rete locale; occorrono validazione del certificato, aggiornamenti e difesa degli endpoint. La presenza di HTTPS non autentica il punto di accesso Wi-Fi.",
+      "example": "Una banca con HTTPS correttamente configurato limita la leggibilità delle proprie comunicazioni su un hotspot open.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concludere che un hotspot open renda automaticamente leggibili password trasmesse dentro TLS valido.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.17, pagina PDF 161"
+    },
+    {
+      "id": "cyber-c09-q102",
+      "topicId": "cyber-c09-t18",
+      "question": "Qual è il problema principale da risolvere progettando la WLAN di dipendenti, consulenti e visitatori?",
+      "answer": "Garantire accessi e livelli di fiducia differenziati: dipendenti a risorse autorizzate, consulenti soltanto ai servizi necessari, visitatori normalmente a Internet.",
+      "detail": "L’architettura deve associare identità e policy a segmenti, applicazioni, amministrazione degli AP e meccanismi di rilevazione, senza presumere che l’accesso radio equivalga al diritto di accesso alle risorse.",
+      "example": "Un visitatore che usa il Wi-Fi non dovrebbe poter raggiungere la rete del database gestionale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare una sola WLAN senza controlli per ogni categoria di dispositivo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.18, pagina PDF 161"
+    },
+    {
+      "id": "cyber-c09-q103",
+      "topicId": "cyber-c09-t18",
+      "question": "Quali requisiti occorre raccogliere per una WLAN aziendale sicura?",
+      "answer": "Autenticazione individuale forte, revoca puntuale, isolamento ospiti, log, gestione AP centralizzata, aggiornamenti, rilevazione anomalie, disponibilità e protezione endpoint.",
+      "detail": "La definizione dei requisiti precede il prodotto da acquistare; i controlli sono scelti in relazione ad asset, minacce, operatività e ruoli degli utenti.",
+      "example": "Poter bloccare solo un ex dipendente senza cambiare la password di tutti è un requisito gestionale e di sicurezza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere numero di AP con maturità dei controlli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.18.1, pagina PDF 161"
+    },
+    {
+      "id": "cyber-c09-q104",
+      "topicId": "cyber-c09-t18",
+      "question": "Come dovrebbe essere protetta la WLAN dei dipendenti secondo l’architettura proposta?",
+      "answer": "Preferibilmente WPA3-Enterprise, 802.1X/EAP-TLS, certificati individuali, server AAA, verifica del certificato del server e policy di accesso dinamiche.",
+      "detail": "Le credenziali individuali facilitano revoca e controllo granulare; alle protezioni WLAN devono affiancarsi firewall di rete, HTTPS e autorizzazione applicativa lato server.",
+      "example": "Un dipendente con certificato scaduto non deve ricevere l’accesso alla rete riservata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la sola autenticazione radio sufficiente per consultare tutte le offerte aziendali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.18.2, pagina PDF 162"
+    },
+    {
+      "id": "cyber-c09-q105",
+      "topicId": "cyber-c09-t18",
+      "question": "Come si progettano le WLAN per ospiti e dispositivi IoT/legacy?",
+      "answer": "Ospiti: segmento separato, accesso Internet e blocco delle reti interne; IoT/legacy: segmento dedicato, accessi minimi ai soli servizi necessari, inventario e aggiornamenti.",
+      "detail": "Gli apparati legacy spesso non supportano standard moderni; la compensazione richiede isolamento, controllo destinazioni e monitoraggio. Il captive portal ospiti non equivale a cifratura del collegamento.",
+      "example": "Le telecamere IP possono comunicare solo col server di registrazione e servizi di manutenzione autorizzati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collegare i sensori non gestiti alla stessa rete di amministrazione o ai database aziendali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.18.2, pagina PDF 162"
+    },
+    {
+      "id": "cyber-c09-q106",
+      "topicId": "cyber-c09-t18",
+      "question": "Come proteggere la gestione e le applicazioni oltre agli SSID aziendali?",
+      "answer": "Gestione centralizzata AP, rete di management dedicata/protetta, password amministrative forti, MFA, backup configurazioni, patching, monitoraggio e HTTPS per le applicazioni.",
+      "detail": "La WLAN è solo uno degli strati: backend AAA, console, reverse proxy, database e identità applicative richiedono controlli distinti e coerenti.",
+      "example": "Il pannello di gestione degli AP deve essere accessibile soltanto ad amministratori autorizzati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare la console AP nella rete guest.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.18.2, pagina PDF 162"
+    },
+    {
+      "id": "cyber-c09-q107",
+      "topicId": "cyber-c09-t18",
+      "question": "Ricostruisci le sette fasi principali dell’accesso di un dipendente a una WLAN aziendale con certificato.",
+      "answer": "1) Selezione WLAN; 2) AP authenticator; 3) EAP-TLS; 4) verifica del certificato del server; 5) risposta/autorizzazione backend AAA; 6) chiavi radio; 7) accesso limitato dalle policy.",
+      "detail": "Il backend può fornire attributi autorizzativi. L’ultimo controllo è fondamentale: l’accesso al Wi-Fi e il possesso del certificato non concedono permessi amministrativi sulle applicazioni.",
+      "example": "Un account correttamente autenticato può consultare solo i servizi definiti dal suo ruolo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non saltare la validazione del certificato dell’infrastruttura EAP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.18.3, pagina PDF 162"
+    },
+    {
+      "id": "cyber-c09-q108",
+      "topicId": "cyber-c09-t18",
+      "question": "Qual è il ruolo di supplicant, authenticator e backend AAA nell’accesso EAP-TLS?",
+      "answer": "Il supplicant è il notebook, l’authenticator è l’AP, il backend AAA verifica le credenziali e restituisce l’esito e le policy previste.",
+      "detail": "Il metodo EAP-TLS utilizza TLS e certificati secondo il profilo; l’AP controlla l’accesso alla rete e inoltra i messaggi, senza sostituirsi al servizio applicativo che autorizza le operazioni sui dati.",
+      "example": "Dopo il successo AAA, le chiavi radio vengono installate e i firewall applicano le autorizzazioni di rete.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere EAP-TLS come «passare la password del Wi-Fi in chiaro al router».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.18.3, pagina PDF 162"
+    },
+    {
+      "id": "cyber-c09-q109",
+      "topicId": "cyber-c09-t18",
+      "question": "Perché un filtro sugli indirizzi MAC non equivale all’autenticazione robusta della WLAN?",
+      "answer": "Perché il MAC non è una credenziale segreta, può essere falsificato e può cambiare per meccanismi di randomizzazione.",
+      "detail": "Può avere impieghi amministrativi limitati ma non autentica l’identità di utente o dispositivo in modo crittograficamente affidabile.",
+      "example": "Un attaccante vicino alla rete può copiare un indirizzo MAC osservato, se mancano ulteriori protezioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare allowlist MAC come alternativa a 802.1X/EAP-TLS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.18.4, pagina PDF 162"
+    },
+    {
+      "id": "cyber-c09-q110",
+      "topicId": "cyber-c09-t19",
+      "question": "Quali principali famiglie di rischio specifico rimangono nelle reti mobili moderne?",
+      "answer": "Falsi apparati e downgrade, esposizione della posizione, smarrimento dei terminali e vulnerabilità dei dispositivi IoT con risorse limitate.",
+      "detail": "Le difese dipendono da generazione della rete, protocolli di autenticazione, configurazioni del terminale, gestione delle identità e controlli organizzativi. Il 5G non annulla automaticamente i rischi legacy.",
+      "example": "Il furto dello smartphone può compromettere sessioni applicative anche quando la rete cellulare è cifrata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare la sicurezza delle reti mobili al solo algoritmo radio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.19, pagina PDF 162"
+    },
+    {
+      "id": "cyber-c09-q111",
+      "topicId": "cyber-c09-t19",
+      "question": "Che cosa sono i falsi apparati radio e quale ruolo ha il downgrade?",
+      "answer": "Un apparato che imita o influenza l’infrastruttura cellulare può tentare di sfruttare procedure di identificazione, interoperabilità o fallback verso standard meno protetti.",
+      "detail": "Gli attacchi dipendono dalla tecnologia e dalle policy effettive; non ogni ripetitore è malevolo e non tutti i sistemi 2G-5G sono vulnerabili nello stesso modo.",
+      "example": "Un terminale costretto a usare una rete legacy può perdere alcune protezioni moderne.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare il downgrade come possibile sempre e indistintamente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.19.1, pagina PDF 162"
+    },
+    {
+      "id": "cyber-c09-q112",
+      "topicId": "cyber-c09-t19",
+      "question": "Perché la privacy della posizione rimane un tema anche nel 5G?",
+      "answer": "Perché selezione cella, mobilità e messaggi di segnalazione possono esporre metadati, anche se SUCI protegge l’identificatore permanente in determinate procedure.",
+      "detail": "La privacy va valutata con attenzione alla gestione del core, ai contesti di rete e alle tecnologie precedenti. La protezione dell’identificatore non cancella ogni traccia delle attività o della localizzazione.",
+      "example": "La rete può conoscere dati di mobilità necessari al servizio anche senza inviare il SUPI in chiaro.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere protezione dell’identità con anonimato geografico assoluto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.19.2, pagina PDF 162"
+    },
+    {
+      "id": "cyber-c09-q113",
+      "topicId": "cyber-c09-t19",
+      "question": "Quali misure servono quando viene perso uno smartphone aziendale?",
+      "answer": "Cifratura locale, blocco robusto, protezione delle chiavi, cancellazione remota ove possibile, revoca di token e certificati, inventario e incident response.",
+      "detail": "La biometria locale può integrare altre misure, ma la rete radio cifrata non protegge da sola i file o le sessioni accessibili sul terminale smarrito.",
+      "example": "L’IT revoca credenziali VPN e token dell’applicazione e valuta la cancellazione gestita del dispositivo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidarsi al solo blocco della SIM per proteggere tutti i dati dello smartphone.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.19.3, pagina PDF 162"
+    },
+    {
+      "id": "cyber-c09-q114",
+      "topicId": "cyber-c09-t19",
+      "question": "Quali problemi di sicurezza caratterizzano i dispositivi IoT wireless a risorse limitate?",
+      "answer": "Aggiornamenti difficili, capacità di calcolo/memoria limitate, impossibilità di eseguire software complesso di protezione e monitoraggio poco frequente.",
+      "detail": "Servono segmentazione, credenziali univoche, aggiornamenti firmati, inventario, riduzione delle porte e telemetria proporzionata; in ambito produttivo occorre considerare la continuità dei processi.",
+      "example": "Una telecamera obsoleta può essere isolata nella VLAN IoT e autorizzata soltanto verso il registratore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare l’IoT come una normale workstation aggiornabile senza vincoli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.19.4, pagina PDF 162"
+    },
+    {
+      "id": "cyber-c09-q115",
+      "topicId": "cyber-c09-t20",
+      "question": "Qual è l’architettura iniziale e quali debolezze sono presenti nel caso del portale gestionale del manuale?",
+      "answer": "Dipendenti e consulenti accedono via WLAN a un portale HTTPS tramite reverse proxy, application server e DB; le debolezze sono PSK WPA2 comune, guest non isolati, AP non aggiornati e validazione certificati incoerente.",
+      "detail": "Il rischio riguarda contemporaneamente accesso radio, segmentazione, credenziali, sessioni applicative, firmware e protezione del servizio. Il caso richiede difese coordinate anziché un solo cambio di router.",
+      "example": "Una rete guest erroneamente instradata verso il DB interno amplia la superficie d’attacco.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre il caso al solo furto della password Wi-Fi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.20, pagina PDF 163"
+    },
+    {
+      "id": "cyber-c09-q116",
+      "topicId": "cyber-c09-t20",
+      "question": "Quali asset e minacce riconoscere nel caso aziendale di Wi-Fi e applicazione gestionale?",
+      "answer": "Asset: credenziali, documenti, dati economici, servizi, continuità, reputazione. Minacce: PSK sottratta, AP rogue, furto di sessione, accesso dalla guest, firmware vulnerabile, terminale compromesso.",
+      "detail": "Definire asset e minacce consente di scegliere controlli specifici e valutarne il costo in relazione agli impatti economici e operativi.",
+      "example": "Un’interruzione di accesso al portale commerciale può avere danni economici anche senza violazione di riservatezza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare gli asset ai dispositivi fisici.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.20, pagina PDF 163"
+    },
+    {
+      "id": "cyber-c09-q117",
+      "topicId": "cyber-c09-t20",
+      "question": "Quali principali interventi preventivi propone il caso integrato?",
+      "answer": "WPA3-Enterprise/EAP-TLS con identità individuali; segmentazione guest e firewall; patching AP; validazione certificati; HTTPS; MFA; WIDS/WIPS ove utile; BYOD/MDM.",
+      "detail": "Le misure rispondono a rischi differenti: revoca individuale, controllo dei flussi, protezione dell’autenticazione, sicurezza del device e monitoraggio del mezzo.",
+      "example": "L’accesso della guest viene confinato a Internet, mentre i dipendenti passano per AAA e policy dedicate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a EAP-TLS la funzione di prevenire una SQL injection nel portale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.20, pagina PDF 163"
+    },
+    {
+      "id": "cyber-c09-q118",
+      "topicId": "cyber-c09-t20",
+      "question": "Quali dati monitorare per rilevare attacchi o anomalie nella WLAN aziendale?",
+      "answer": "AP nuovi o non autorizzati, associazioni anomale, autenticazioni rifiutate, log AAA, nuovi dispositivi e correlazione con gli eventi applicativi.",
+      "detail": "Il monitoraggio deve rispettare politiche di conservazione e privacy; gli indicatori devono essere contestualizzati e non ogni errore di autenticazione è un tentativo ostile.",
+      "example": "Un picco di fallimenti AAA da un device nuovo può richiedere verifica di inventario e certificati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare attacco un singolo evento anomalo senza analisi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.20, pagina PDF 163"
+    },
+    {
+      "id": "cyber-c09-q119",
+      "topicId": "cyber-c09-t20",
+      "question": "Come organizzare risposta, recupero e valutazione gestionale nel caso integrato?",
+      "answer": "Identificare componenti coinvolti, isolare segmenti compromessi, revocare credenziali, aggiornare firmware, verificare applicazioni, raccogliere evidenze e ripristinare in modo controllato.",
+      "detail": "Gli investimenti preventivi e operativi vanno confrontati con impatto di interruzioni, violazioni dati e costi formativi/gestionali; conta la coerenza dei controlli nel tempo.",
+      "example": "Dopo un rogue AP, il team può segmentare la rete, revocare certificati esposti e verificare accessi ai sistemi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre la risposta a spegnere l’AP sospetto e riaccenderlo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.20, pagina PDF 163"
+    },
+    {
+      "id": "cyber-c09-q120",
+      "topicId": "cyber-c09-t21",
+      "question": "Qual è il perimetro corretto di un laboratorio didattico sulle WLAN?",
+      "answer": "Osservare configurazioni, autenticazione, segmentazione e log di reti proprie o esplicitamente autorizzate, senza attaccare reti di terzi.",
+      "detail": "Il manuale propone inventario dei parametri WLAN, verifica del profilo WPA, progettazione di tre SSID e analisi di log sintetici. Non occorre intercettare o disturbare reti altrui per apprendere.",
+      "example": "Controllare sul proprio router se è attiva la modalità WPA2/WPA3 transition.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non condividere pubblicamente chiavi, password o identificativi sensibili della rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.21, pagina PDF 163"
+    },
+    {
+      "id": "cyber-c09-q121",
+      "topicId": "cyber-c09-t21",
+      "question": "Quali informazioni raccogliere nell’inventario autorizzato di una WLAN?",
+      "answer": "SSID, standard di sicurezza dichiarato, banda/frequenza, presenza di PMF se visibile, identificazione dell’AP e stato degli aggiornamenti.",
+      "detail": "L’analisi distingue ciò che il sistema segnala da ciò che si può verificare sulle configurazioni. Serve anche a identificare standard obsoleti o apparati non aggiornati.",
+      "example": "La scheda di inventario indica WLAN ospiti su WPA2, AP firmware recente e banda utilizzata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trascrivere password e segreti nel report condiviso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.21, pagina PDF 163"
+    },
+    {
+      "id": "cyber-c09-q122",
+      "topicId": "cyber-c09-t21",
+      "question": "Come commentare cinque rifiuti AAA seguiti da un accesso riuscito senza accusare impropriamente un attaccante?",
+      "answer": "Verificare orari, identità del dispositivo, metodo EAP, eventi AAA, inventario e altre anomalie; formulare ipotesi invece di concludere automaticamente che vi sia un attacco.",
+      "detail": "La causa può essere certificato scaduto, password errata, configurazione non aggiornata o tentativo malevolo. La correlazione di evidenze è decisiva.",
+      "example": "Un notebook aziendale si autentica dopo aver aggiornato il proprio certificato: i fallimenti precedenti erano di configurazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare una sequenza di eventi di autenticazione come prova autosufficiente di intrusioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.21, pagina PDF 163"
+    },
+    {
+      "id": "cyber-c09-q123",
+      "topicId": "cyber-c09-t21",
+      "question": "Perché è sbagliato affermare che «il MAC o BSSID identifica sempre con certezza l’apparato»?",
+      "answer": "Gli identificativi MAC/BSSID possono essere falsificati o randomizzati e non costituiscono da soli una prova crittografica dell’identità.",
+      "detail": "Per riconoscere infrastrutture attendibili servono verifiche dell’autenticazione e dei certificati, oltre al controllo degli apparati e dei profili di rete.",
+      "example": "Un evil twin può imitare identificativi visibili di un AP aziendale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare un indirizzo di rete in credenziale di fiducia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.22, pagina PDF 164"
+    },
+    {
+      "id": "cyber-c09-q124",
+      "topicId": "cyber-c09-t21",
+      "question": "Quali cinque affermazioni intuitive sono particolarmente pericolose nelle reti wireless?",
+      "answer": "«SIM invia la chiave permanente», «SSID nascosto significa rete invisibile», «WEP cade perché IV è pubblico», «PMF blocca ogni DoS» e «WPA3 rende sicura l’applicazione».",
+      "detail": "La correzione richiede distinguere challenge-response e gerarchia chiavi; autenticazione da nome SSID; IV pubblico da riuso; protezione frame da jamming; cifratura radio da protezione TLS/endpoint.",
+      "example": "Un buon orale non si limita a negare l’affermazione: indica quale proprietà è realmente protetta e quale rimane scoperta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imparare lo slogan senza saper argomentare il motivo tecnico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.22, pagina PDF 164"
+    },
+    {
+      "id": "cyber-c09-q125",
+      "topicId": "cyber-c09-t21",
+      "question": "Che cosa significano PMK, PTK e GTK nel glossario Wi-Fi?",
+      "answer": "PMK = Pairwise Master Key, materiale maestro di base; PTK = Pairwise Transient Key, chiave/materiale di sessione per client-AP; GTK = Group Temporal Key, chiave di gruppo.",
+      "detail": "Il materiale PMK consente la derivazione di chiavi operative secondo la procedura; la password non coincide necessariamente con ciascuna di queste chiavi. PTK e GTK proteggono traffico di tipologia differente.",
+      "example": "PTK per comunicazioni pairwise; GTK per broadcast/multicast.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare PSK, PMK, PTK e GTK come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.23, pagina PDF 164"
+    },
+    {
+      "id": "cyber-c09-q126",
+      "topicId": "cyber-c09-t21",
+      "question": "Che cosa indicano EAP, EAP-TLS, 802.1X, RADIUS e WIDS/WIPS?",
+      "answer": "EAP è un framework di autenticazione; EAP-TLS è un metodo basato su TLS; 802.1X controlla l’accesso; RADIUS collega spesso backend AAA; WIDS/WIPS rileva o previene intrusioni wireless.",
+      "detail": "Questi strumenti appartengono a piani differenti e vanno combinati nell’architettura, non confusi fra loro. WIDS/WIPS aiuta a monitorare AP anomali e comportamenti di associazione.",
+      "example": "Un AP applica 802.1X, inoltra una procedura EAP-TLS al server RADIUS e produce log per il WIDS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare RADIUS il protocollo di cifratura dei dati Wi-Fi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.23, pagina PDF 164"
+    },
+    {
+      "id": "cyber-c09-q127",
+      "topicId": "cyber-c09-t21",
+      "question": "Esercizio 1 — Una WLAN con PSK comune a 40 notebook: come revocare l’accesso di un ex dipendente?",
+      "answer": "Nel breve sostituire la PSK e riconfigurare i dispositivi autorizzati; nel medio passare a un sistema Enterprise/AAA con credenziali individuali e revoche puntuali.",
+      "detail": "Servono anche patch degli AP, segmentazione, gestione endpoint e monitoraggio. Il problema della chiave condivisa riguarda l’identità e la revoca, non soltanto la cifratura dei frame.",
+      "example": "Revocare un certificato EAP-TLS individuale evita il cambio della credenziale di tutti gli utenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che cancellare l’account applicativo disabiliti automaticamente la PSK Wi-Fi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.24, pagina PDF 165"
+    },
+    {
+      "id": "cyber-c09-q128",
+      "topicId": "cyber-c09-t21",
+      "question": "Esercizio 2 — Quanti valori possiede un IV WEP da 24 bit, e che cosa implica?",
+      "answer": "2^24 = 16.777.216 valori; una quantità elevata di traffico può favorire il ripetersi di IV secondo le politiche di generazione.",
+      "detail": "In WEP la ripetizione, insieme alle debolezze RC4 e della gestione delle chiavi, può portare a riutilizzo di keystream e attacchi. Il solo numero di valori non determina quante trasmissioni siano necessarie per ogni attacco.",
+      "example": "Ripetizioni di IV diventano un problema crescente per una rete WEP molto attiva.",
+      "formulas": [
+        {
+          "latex": "2^{24}=16\\,777\\,216"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non tradurre il risultato in una soglia universale di pacchetti sufficienti a recuperare una chiave.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.24, pagina PDF 165"
+    },
+    {
+      "id": "cyber-c09-q129",
+      "topicId": "cyber-c09-t21",
+      "question": "Esercizio 3 — Perché un cellulare non deve passare immediatamente alla cella appena più potente?",
+      "answer": "Perché piccole fluttuazioni possono causare ping-pong handover con costi di segnalazione e perdita di stabilità.",
+      "detail": "L’isteresi, il time-to-trigger e le soglie aiutano a valutare la persistenza del vantaggio della cella candidata, considerando qualità e policy.",
+      "example": "La cella B supera A per un istante, poi A torna migliore: non è necessariamente ragionevole fare due handover.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare soltanto una potenza istantanea come criterio di scelta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.24, pagina PDF 165"
+    },
+    {
+      "id": "cyber-c09-q130",
+      "topicId": "cyber-c09-t21",
+      "question": "Esercizio 4 — Quali proprietà restano protette quando si usa HTTPS su un hotspot open?",
+      "answer": "Il contenuto fra gli endpoint TLS rimane crittograficamente protetto se HTTPS è configurato e verificato correttamente.",
+      "detail": "Il Wi-Fi open resta non cifrato localmente e metadati o traffico non TLS possono essere esposti; rimangono rischi di impersonificazione dell’AP e compromissione dell’endpoint.",
+      "example": "Un utente può accedere alla banca protetta da TLS, pur evitando di considerare sicuro ogni altro traffico dell’hotspot.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare la mancanza di WPA alla mancanza di qualsiasi cifratura applicativa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.24, pagina PDF 165"
+    },
+    {
+      "id": "cyber-c09-q131",
+      "topicId": "cyber-c09-t21",
+      "question": "Esercizio 5 — Quale policy minima applicare a WLAN dipendenti, ospiti e telecamere?",
+      "answer": "Dipendenti: autenticazione individuale e accesso ai soli servizi concessi; ospiti: Internet senza raggiungere la LAN; telecamere: accesso limitato ai sistemi di gestione/registrazione.",
+      "detail": "La differenziazione deve essere attuata con segmenti e regole firewall verificabili, non soltanto con tre nomi SSID.",
+      "example": "Il segmento telecamere non deve raggiungere amministrazione del database commerciale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la sola separazione degli SSID un controllo di accesso sufficiente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.24, pagina PDF 166"
+    },
+    {
+      "id": "cyber-c09-q132",
+      "topicId": "cyber-c09-t21",
+      "question": "Esercizio 6 — Perché è falsa l’affermazione «WPA3 è il primo a dare una chiave diversa a ogni client»?",
+      "answer": "Perché WPA2 possiede già chiavi operative pairwise derivate per client/AP; la novità importante di WPA3-Personal è SAE.",
+      "detail": "Il cambiamento riguarda soprattutto il modello di autenticazione basato su password e la resistenza a determinate modalità di attacco offline, non l’invenzione stessa delle chiavi unicast individuali.",
+      "example": "Una PSK comune WPA2 non equivale a una PTK identica per tutti i client.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a WPA3 l’introduzione di qualunque concetto di chiave sessione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.24, pagina PDF 166"
+    },
+    {
+      "id": "cyber-c09-q133",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: come spiegheresti in due minuti perché il wireless amplia la superficie d’attacco?",
+      "answer": "Il mezzo radio è ricevibile anche al di fuori dei luoghi controllati; si aggiungono mobilità, interferenze, identità di rete imitabili, device fisicamente esposti e gestione delle chiavi.",
+      "detail": "Organizza la risposta per obiettivo: confidenzialità contro eavesdropping, autenticità contro evil twin, disponibilità contro jamming, controllo degli accessi contro abusi, protezione del terminale contro furti e malware.",
+      "example": "Una WLAN ben cifrata può ancora subire DoS e richiede comunque HTTPS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire semplicemente che «non c’è un cavo» senza spiegare minacce e contromisure.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 166"
+    },
+    {
+      "id": "cyber-c09-q134",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: disegna verbalmente una rete cellulare dal terminale a Internet.",
+      "answer": "UE comunica via radio con la RAN/cella; la rete di accesso raggiunge il core, che autentica, governa le sessioni e inoltra il traffico verso la rete esterna.",
+      "detail": "Le denominazioni radio cambiano: BTS, NodeB, eNodeB e gNodeB; il core cambia fra LTE/EPC e 5G SA. Il percorso dati e il percorso di controllo possono attraversare funzioni differenti.",
+      "example": "In LTE eNodeB → core EPC → rete dati esterna, con MME nel controllo e gateway nello user plane.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che il gNodeB contenga da solo tutti i servizi Internet e le credenziali degli abbonati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 166"
+    },
+    {
+      "id": "cyber-c09-q135",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: perché una «cella» non coincide necessariamente con un’antenna fisica unica?",
+      "answer": "Una cella è un’entità logica e radio di copertura; un sito o un impianto fisico può realizzare più settori, bande e celle.",
+      "detail": "Le aree di copertura dipendono dalla propagazione e dalle condizioni radio; perciò i confini non sono rigidi e possono sovrapporsi.",
+      "example": "Un impianto sul tetto può trasmettere su più settori, ciascuno con celle e parametri propri.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare «cella», «sito» e «stazione radio» come sinonimi tecnici.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 166"
+    },
+    {
+      "id": "cyber-c09-q136",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: come collegheresti l’evoluzione da 1G a 5G al progresso della sicurezza?",
+      "answer": "Da radio analogica e protezioni deboli si passa a GSM digitale, AKA con autenticazione mutua nel 3G, sicurezza EPS-AKA nel 4G e meccanismi 5G con SUPI/SUCI e service-based core.",
+      "detail": "L’evoluzione amplia servizi dati e controlli ma non cancella rischi di interconnessione, fallback, endpoint o implementazioni; occorre sempre distinguere l’architettura realmente in uso.",
+      "example": "Un 5G NSA può dipendere da componenti LTE/EPC.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proclamare una tecnologia automaticamente immune per il solo numero della generazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 166"
+    },
+    {
+      "id": "cyber-c09-q137",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: perché bisogna distinguere 5G NR, 5G NSA e 5G SA?",
+      "answer": "NR è l’accesso radio 5G; NSA combina accesso 5G con componenti precedenti; SA impiega il 5G Core.",
+      "detail": "Questa distinzione determina nomi e ruoli delle funzioni di rete e le procedure di sicurezza, non solo le prestazioni radio.",
+      "example": "MME e P-GW possono entrare nella descrizione NSA, non come funzioni caratteristiche del 5GC SA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre il core dalla sola icona 5G sul telefono.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 166"
+    },
+    {
+      "id": "cyber-c09-q138",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: come funziona la sicurezza dell’abbonamento mobile senza inviare la chiave permanente sulla radio?",
+      "answer": "La USIM e la rete usano materiale segreto condiviso per challenge-response, verifiche e derivazione di chiavi, senza trasmettere il segreto di lungo periodo come normale dato.",
+      "detail": "Le procedure AKA reali sono più articolate e possono prevedere verifica della rete, parametri di freschezza, key hierarchy e protezione di segnalazione.",
+      "example": "Il terminale restituisce una risposta derivata alla sfida, verificabile dall’operatore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare USIM come una memoria che trasmette il proprio segreto alla cella.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 166"
+    },
+    {
+      "id": "cyber-c09-q139",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: perché proteggere SUPI mediante SUCI non equivale ad anonimato completo?",
+      "answer": "SUCI limita l’esposizione dell’identificatore permanente in determinate procedure 5G, ma metadati radio, mobilità, localizzazione e sistemi legacy restano potenziali fonti informative.",
+      "detail": "È necessario distinguere privacy dell’identità permanente da privacy di tutte le attività del terminale e dai dati gestiti dall’operatore.",
+      "example": "Un osservatore può ricavare informazioni sulla presenza di segnali anche senza leggere il SUPI.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che SUCI rende impossibile qualsiasi tracciamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 166"
+    },
+    {
+      "id": "cyber-c09-q140",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: illustra il problema del ping-pong e come si risolve senza compromettere la mobilità.",
+      "answer": "Oscillazioni rapide del livello radio possono provocare handover ripetuti; si usano isteresi, soglie, time-to-trigger, qualità e policy per stabilizzare la decisione.",
+      "detail": "Una soluzione troppo prudente potrebbe ritardare un handover necessario: la configurazione cerca un equilibrio fra continuità della comunicazione e overhead.",
+      "example": "Un utente al confine di due celle non cambia a ogni minimo vantaggio di una delle due.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non indicare la potenza massima come unico algoritmo di handover.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 167"
+    },
+    {
+      "id": "cyber-c09-q141",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: separa control plane e user plane nell’EPC LTE indicando i rispettivi nodi.",
+      "answer": "MME è soprattutto control plane; S-GW e P-GW partecipano allo user plane; eNodeB realizza accesso radio e HSS gestisce informazioni dell’abbonato.",
+      "detail": "Il piano controllo stabilisce e governa la connessione e i contesti di sicurezza; il piano utente trasporta il traffico applicativo.",
+      "example": "L’autenticazione non consiste nel far transitare i pacchetti HTTP dentro il MME.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire ogni nodo con il termine generico «gateway».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 167"
+    },
+    {
+      "id": "cyber-c09-q142",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: confronta i compiti delle funzioni AMF, SMF, UPF, UDM e AUSF.",
+      "answer": "AMF governa accesso/mobilità; SMF sessioni; UPF inoltro dati; UDM dati di sottoscrizione; AUSF autenticazione.",
+      "detail": "La separazione permette di ragionare su autenticazione, autorizzazione tra funzioni e protezione dei flussi nella Service-Based Architecture 5G.",
+      "example": "Per l’inoltro dati verso Internet è pertinente UPF, non AUSF.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare MME/P-GW come nomi canonici del 5GC SA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 167"
+    },
+    {
+      "id": "cyber-c09-q143",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: perché 5G-AKA non è semplicemente «una password forte»?",
+      "answer": "È una procedura standardizzata di autenticazione e accordo sulle chiavi che coinvolge UE, credenziali dell’abbonato e funzioni di rete.",
+      "detail": "Prevede messaggi, risposte, verifiche e materiale crittografico derivato in un contesto definito dallo standard 3GPP TS 33.501.",
+      "example": "La procedura costruisce un contesto di sicurezza senza rendere pubblica la chiave a lungo termine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre AKA a una stringa digitata dall’utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 167"
+    },
+    {
+      "id": "cyber-c09-q144",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: confronta eavesdropping, spoofing, evil twin e jamming con l’obiettivo di sicurezza colpito.",
+      "answer": "Eavesdropping mira alla riservatezza; spoofing/evil twin all’autenticità e talvolta alle sessioni; jamming alla disponibilità radio.",
+      "detail": "Le difese cambiano: cifratura, validazione dell’identità dell’AP/server, monitoraggio, progettazione radio e resilienza; una misura non elimina tutte le altre minacce.",
+      "example": "AES-CCMP aiuta contro lettura del contenuto, non contro emissione intenzionale di interferenze.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare tutte queste tecniche come varianti dello stesso attacco.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 167"
+    },
+    {
+      "id": "cyber-c09-q145",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: come valuteresti se un AP sconosciuto è rogue, evil twin o semplicemente una rete vicina?",
+      "answer": "Verificherei se viola la policy, se imita identità attese, dove è connesso e quali anomalie sono osservabili; un SSID simile da solo non prova un attacco.",
+      "detail": "Monitoraggio WIDS/WIPS, inventario AP, parametri radio, log e certificati aiutano a distinguere presenza non autorizzata, impersonificazione e normale sovrapposizione.",
+      "example": "Un dipendente può installare un AP non autorizzato senza voler imitare la rete ufficiale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare evil twin ogni AP che appare con nome simile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 167"
+    },
+    {
+      "id": "cyber-c09-q146",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: se la rete è cifrata ma il Wi-Fi non funziona per interferenze, quale minaccia e quale proprietà sono coinvolte?",
+      "answer": "È un problema di disponibilità, eventualmente un DoS fisico da jamming; riservatezza del contenuto e disponibilità sono proprietà diverse.",
+      "detail": "Le risposte riguardano analisi radio, monitoraggio, continuità e procedure d’intervento, non solamente crittografia o password più complesse.",
+      "example": "La rete WPA3 può diventare inutilizzabile per disturbo intenzionale del canale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che PMF o HTTPS siano rimedi sufficienti al jamming.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 167"
+    },
+    {
+      "id": "cyber-c09-q147",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: spiega perché WEP è insicuro evitando la risposta superficiale «l’IV è in chiaro».",
+      "answer": "WEP combina un IV di soli 24 bit con RC4 in una costruzione debole, può riutilizzare keystream, usa CRC-32 non crittografico e gestisce chiavi statiche condivise.",
+      "detail": "Gli IV possono essere pubblici anche in protocolli sicuri. Ciò che conta è la qualità del design e il rispetto delle condizioni d’uso del materiale crittografico.",
+      "example": "La ripetizione dell’IV sotto la stessa chiave può facilitare relazioni tra cifrati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre nascondere l’IV come riparazione di WEP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 167"
+    },
+    {
+      "id": "cyber-c09-q148",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: perché WPA/TKIP non è una sostituzione moderna di WEP?",
+      "answer": "Migliora diversi aspetti, ma rimane legato a RC4 e a una struttura progettata come soluzione transitoria; oggi è obsoleto.",
+      "detail": "La soluzione moderna richiede almeno WPA2 configurato correttamente dove ancora necessario, preferibilmente WPA3 ove supportato e gestito.",
+      "example": "Un dispositivo che supporta soltanto TKIP va considerato un vincolo legacy da isolare o sostituire.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare TKIP come alias di AES-CCMP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 167"
+    },
+    {
+      "id": "cyber-c09-q149",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: perché un Wi-Fi con «password condivisa» può comunque usare chiavi diverse sui collegamenti?",
+      "answer": "La credenziale PSK può servire a ottenere materiale di base, ma il protocollo deriva PTK per le singole connessioni e GTK per il traffico di gruppo.",
+      "detail": "PMK, PTK e GTK hanno ruoli distinti e vengono gestite attraverso le procedure del sistema. Questo è vero già per WPA2 e non nasce esclusivamente con WPA3.",
+      "example": "Client A e B sullo stesso SSID WPA2 non inviano necessariamente ogni frame unicast con la medesima chiave.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere segreto di accesso comune e cifratura operativa dei singoli frame.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 167"
+    },
+    {
+      "id": "cyber-c09-q150",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: se un attaccante cattura un handshake, in che modo differiscono i rischi di WPA2-PSK e WPA3-SAE?",
+      "answer": "Nel modello WPA2-Personal tradizionale una password debole può essere bersaglio di attacchi offline sul materiale acquisito; SAE riduce fortemente il rischio del semplice attacco offline da handshake osservato.",
+      "detail": "SAE non rende invulnerabili password deboli, device e implementazioni. Le policy e gli aggiornamenti restano necessari.",
+      "example": "La migrazione a WPA3-Personal con SAE modifica il modello di autenticazione rispetto al PSK tradizionale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che WPA3 garantisca assenza assoluta di attacchi a dizionario.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 168"
+    },
+    {
+      "id": "cyber-c09-q151",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: quali sono i limiti concreti dei PMF in un attacco di deauthentication e in un jamming?",
+      "answer": "PMF protegge determinate classi di frame di gestione, contribuendo a contrastare falsi messaggi come deauthentication; non impedisce interferenze fisiche o ogni management frame prima dell’associazione.",
+      "detail": "La protezione dipende dal profilo e dallo stato effettivo della connessione. Non garantisce continuità contro tutte le forme di DoS.",
+      "example": "Un attacco di jamming può saturare il canale anche se PMF è attivo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare PMF come sinonimo di antivirus o di immunità radio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 168"
+    },
+    {
+      "id": "cyber-c09-q152",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: Enhanced Open e WPA3-Personal offrono la stessa autenticazione?",
+      "answer": "No. Enhanced Open/OWE fornisce cifratura opportunistica del collegamento senza password tradizionale, ma non autentica l’AP; WPA3-Personal usa SAE basato su password.",
+      "detail": "Entrambi possono proteggere dati radio in certe condizioni, ma risolvono differenti problemi di autenticazione e di accesso alla WLAN.",
+      "example": "Una rete pubblica OWE è diversa dalla WLAN privata che accetta solo soggetti con credenziale SAE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare OWE, SAE ed EAP-TLS come lo stesso algoritmo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 168"
+    },
+    {
+      "id": "cyber-c09-q153",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: progetta una rete Wi-Fi aziendale con dipendenti, ospiti e IoT.",
+      "answer": "Definirei asset e policy; dipendenti con autenticazione individuale EAP-TLS/WPA3-Enterprise ove possibile; ospiti isolati verso Internet; IoT su segmento a minimo privilegio; firewall, patch, monitoring, MDM e HTTPS.",
+      "detail": "La progettazione deve includere backend AAA, gestione certificati e revoche, console amministrativa protetta, controlli per applicazioni e valutazione di disponibilità e costi.",
+      "example": "Ospiti non raggiungono il DB; telecamere parlano solo con server di registrazione; dipendenti accedono ai servizi previsti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a scegliere tre nomi SSID senza regole di routing e autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 168"
+    },
+    {
+      "id": "cyber-c09-q154",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: perché la rete aziendale continua ad avere bisogno di HTTPS anche dopo la migrazione a WPA3?",
+      "answer": "WPA3 protegge il link Wi-Fi fino all’AP, mentre HTTPS tutela il contenuto applicativo fino all’endpoint TLS, potenzialmente un reverse proxy.",
+      "detail": "Tra AP e servizio vi sono altri nodi; dopo la terminazione TLS servono protezioni ulteriori e autorizzazione applicativa. Sono anche necessari gestione delle sessioni e hardening dei dispositivi.",
+      "example": "Il portale offerte gestisce dati economici: WPA3 del notebook non sostituisce il certificato HTTPS del portale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare sicurezza del trasporto radio come sicurezza end-to-end garantita.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 168"
+    },
+    {
+      "id": "cyber-c09-q155",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: come distingueresti le garanzie di autenticazione del Wi-Fi da quelle dell’applicazione?",
+      "answer": "L’accesso radio accerta se un dispositivo/utente può usare la WLAN; l’applicazione verifica identità, sessione e diritti sull’operazione o sul record richiesto.",
+      "detail": "Una persona autenticata con EAP-TLS può avere privilegi minimi sul portale; le regole lato server devono verificare l’accesso a ogni risorsa, anche dentro la rete aziendale.",
+      "example": "Il dipendente accede all’SSID aziendale ma non può leggere offerte di altri reparti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non associare il diritto alla rete a tutti i permessi del software gestionale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 168"
+    },
+    {
+      "id": "cyber-c09-q156",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: come dimostreresti la sicurezza di una WLAN senza eseguire attacchi su reti terze?",
+      "answer": "Farei inventario delle impostazioni, verifica di cifratura/autenticazione, controllo delle policy e dei log e una revisione progettuale su ambiente autorizzato.",
+      "detail": "I test didattici possono esaminare WPA2/3, PMF, firmware, segmenti guest/IoT e segnali di anomalie senza impersonare AP altrui o interferire sul traffico non autorizzato.",
+      "example": "Si possono analizzare log di prova di autenticazione fallita e recupero corretto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere formazione pratica con il diritto di testare qualsiasi rete visibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 168"
+    },
+    {
+      "id": "cyber-c09-q157",
+      "topicId": "cyber-c09-t22",
+      "question": "All’orale: quali tre errori di interpretazione potrebbero portare a scegliere una contromisura sbagliata?",
+      "answer": "Scambiare nome SSID per identità, credere che cifratura radio blocchi jamming, presumere che WPA3 autorizzi l’accesso ai dati applicativi.",
+      "detail": "Gli errori nascono dalla confusione tra identificazione, autenticazione, disponibilità, riservatezza e autorizzazione. L’esame richiede collegare una minaccia alla proprietà effettivamente protetta.",
+      "example": "Per contrastare evil twin si validano identità/certificati, per jamming servono misure radio, per il gestionale policy server.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dare la stessa risposta tecnica a minacce che sfruttano livelli diversi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 9, §9.25, pagina PDF 168"
+    }
+  ]
+}

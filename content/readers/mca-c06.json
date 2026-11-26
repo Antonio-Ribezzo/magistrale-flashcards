@@ -1,0 +1,2719 @@
+{
+  "sections": [
+    {
+      "id": "l25-intro",
+      "title": "Introduzione alla lezione",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Obiettivi: distinguere associazione e causalità; interpretare un grafico di dispersione; calcolare covariance e Pearson r; riconoscere il significato di una retta di regressione; calcolare e interpretare pendenza, intercetta, valori stimati e residui; risolvere un primo esercizio completo."
+        }
+      ],
+      "concept": "Introduzione alla lezione"
+    },
+    {
+      "id": "l25-1",
+      "title": "1. Perché la regressione serve alla Customer Analytics",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t01"
+      ],
+      "blocks": [
+        {
+          "text": "Le metriche del Capitolo 5 descrivono fenomeni già osservati: quanto un cliente spende, quanti acquisti effettua, quando è stato l’ultimo ordine. Un modello statistico cerca invece di studiare come una variabile sia associata a una o più altre, per descrivere un comportamento, effettuare previsioni e formulare ipotesi da sottoporre a verifica."
+        },
+        {
+          "text": "Esempi: come cambia la spesa media al crescere della frequenza di visita? Esiste una relazione tra età e spesa? Il cliente spende progressivamente di più nel tempo? Di quanto cambia la domanda quando varia il prezzo? Nessuna di queste domande può essere risolta correttamente semplicemente osservando una media isolata."
+        },
+        {
+          "text": "L’esistenza di una relazione statistica non prova, da sola, un rapporto di causa-effetto. Un aumento di spesa associato a più visite può dipendere anche da reddito, stagionalità, promozioni o altre variabili non osservate."
+        }
+      ],
+      "concept": "Perché la regressione serve alla Customer Analytics"
+    },
+    {
+      "id": "l25-2",
+      "title": "2. Variabili, osservazioni e matrice dei dati",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t02"
+      ],
+      "blocks": [
+        {
+          "text": "Una variabile statistica è una proprietà osservata su ogni unità dell’analisi. Una osservazione è una specifica unità (persona, famiglia, visita, negozio, periodo). In questa lezione lavoriamo su coppie di dati quantitativi (xᵢ, yᵢ), rilevate per le stesse n unità. L’indice i va da 1 a n."
+        },
+        {
+          "text": "Si chiama X variabile esplicativa, indipendente o predittore e Y variabile risposta, dipendente o outcome. Le parole “indipendente/dipendente” indicano il ruolo nel modello, non dimostrano causalità né indipendenza statistica."
+        },
+        {
+          "text": "Esempio originale: per sei clienti si registra il numero di visite mensili X e la spesa mensile Y. La scelta delle unità è essenziale: visite è un conteggio, spesa è in euro e si riferiscono allo stesso mese."
+        },
+        {
+          "table": [
+            [
+              "Cliente",
+              "Visite X",
+              "Spesa Y (€)"
+            ],
+            [
+              "C1",
+              "1",
+              "12"
+            ],
+            [
+              "C2",
+              "2",
+              "15"
+            ],
+            [
+              "C3",
+              "3",
+              "14"
+            ],
+            [
+              "C4",
+              "4",
+              "19"
+            ],
+            [
+              "C5",
+              "5",
+              "22"
+            ],
+            [
+              "C6",
+              "6",
+              "24"
+            ]
+          ]
+        }
+      ],
+      "concept": "Variabili, osservazioni e matrice dei dati"
+    },
+    {
+      "id": "l25-3",
+      "title": "3. Prima esplorazione: scatter plot e tipologie di relazione",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t02"
+      ],
+      "blocks": [
+        {
+          "text": "Lo scatter plot (diagramma di dispersione) mostra ogni coppia (xᵢ, yᵢ) come un punto. Prima di calcolare qualsiasi coefficiente, si osservano direzione della nuvola, eventuale andamento curvo, ampiezza della dispersione, gruppi e valori anomali (outlier). Una stessa correlazione può nascondere strutture molto diverse."
+        },
+        {
+          "image": "mca-p169-1.png",
+          "caption": "Figura 1 — Esempi didattici di associazione positiva, negativa e apparentemente debole.",
+          "alt": "Figura 1 — Esempi didattici di associazione positiva, negativa e apparentemente debole."
+        },
+        {
+          "text": "Relazione positiva: all’aumentare di X, Y tende ad aumentare. Negativa: all’aumentare di X, Y tende a diminuire. Nulla o debole: il legame lineare è poco evidente. Un legame curvilineo può avere una correlazione lineare molto piccola anche se la relazione tra le variabili è forte."
+        }
+      ],
+      "concept": "Prima esplorazione: scatter plot e tipologie di relazione"
+    },
+    {
+      "id": "l25-4",
+      "title": "4. Media, scarto dalla media, varianza e deviazione standard",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t02"
+      ],
+      "blocks": [
+        {
+          "text": "La media aritmetica della variabile X è x̄ = (Σxᵢ)/n. Lo scarto xᵢ−x̄ dice quanto un valore è sopra (segno positivo) o sotto (segno negativo) la media. La somma degli scarti dalla media è sempre zero: Σ(xᵢ−x̄ )=0."
+        },
+        {
+          "text": "La varianza misura la dispersione al quadrato: nella popolazione Varₚ(X) = Σ(xᵢ−μₓ)²/N; nel campione sₓ² = Σ(xᵢ−x̄ )²/(n−1). La deviazione standard è la radice quadrata della varianza e torna alle unità originali. Nella notazione delle slide il denominatore N è usato per descrivere la popolazione osservata."
+        },
+        {
+          "text": "Non confondere i denominatori: n indica osservazioni campionarie, N indica una popolazione. La versione con n−1 è la correzione campionaria usuale per stimare una varianza di popolazione sconosciuta. In rapporti come Pearson r e la pendenza OLS il denominatore n o n−1 si semplifica, se usato coerentemente in tutte le componenti."
+        }
+      ],
+      "concept": "Media, scarto dalla media, varianza e deviazione standard"
+    },
+    {
+      "id": "l25-5",
+      "title": "5. Covarianza: definizione, formula, calcolo e limiti",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t03"
+      ],
+      "blocks": [
+        {
+          "text": "La covarianza misura il verso della variazione congiunta di due variabili. Quando entrambe tendono a stare sopra o sotto le rispettive medie, i prodotti (xᵢ−x̄ )(yᵢ−ȳ) tendono a essere positivi; quando una è sopra e l’altra sotto, tendono a essere negativi."
+        },
+        {
+          "text": "Formule: Covₚ(X,Y) = Σ(xᵢ−μₓ)(yᵢ−μᵧ)/N; covarianza campionaria sₓᵧ = Σ(xᵢ−x̄ )(yᵢ−ȳ)/(n−1). La covarianza di X con X è la sua varianza."
+        },
+        {
+          "text": "Interpretazione del segno: Cov > 0 = co-variazione positiva; Cov < 0 = negativa; Cov ≈ 0 = assenza di relazione lineare apprezzabile. Un valore vicino allo zero NON esclude relazioni non lineari."
+        },
+        {
+          "text": "Limite fondamentale: la covarianza dipende dalle unità e dalla scala. Cambiando da euro a centesimi, il valore numerico viene moltiplicato per 100. Non è quindi adatta a confrontare direttamente intensità di associazioni tra coppie di variabili misurate su scale diverse."
+        }
+      ],
+      "concept": "Covarianza: definizione, formula, calcolo e limiti"
+    },
+    {
+      "id": "l25-6",
+      "title": "6. Correlazione lineare di Pearson",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t03"
+      ],
+      "blocks": [
+        {
+          "text": "Il coefficiente di correlazione di Pearson normalizza la covarianza mediante le deviazioni standard: r = Cov(X,Y) / [DevStd(X) × DevStd(Y)] = Sxy / √(Sxx × Syy), dove Sxy = Σ(xᵢ−x̄ )(yᵢ−ȳ), Sxx = Σ(xᵢ−x̄ )², Syy = Σ(yᵢ−ȳ)²."
+        },
+        {
+          "text": "Proprietà: −1 ≤ r ≤ 1. Il segno indica il verso; il valore assoluto indica la forza dell’associazione LINEARE, non una percentuale. r = 1 significa punti perfettamente allineati su una retta crescente; r = −1 su una decrescente; r = 0 significa assenza di correlazione lineare."
+        },
+        {
+          "text": "Pearson non si calcola quando una delle variabili ha deviazione standard nulla, perché il denominatore è zero. Gli outlier possono influenzare fortemente r. Rilevare una correlazione elevata non dimostra causalità e non assicura che la relazione resti stabile fuori dal campione."
+        }
+      ],
+      "concept": "Correlazione lineare di Pearson"
+    },
+    {
+      "id": "l25-7",
+      "title": "7. Esercizio guidato completo: dalla tabella alle metriche",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t04"
+      ],
+      "blocks": [
+        {
+          "text": "Per i sei clienti: n = 6; x̄ = 3.5000 visite e ȳ = 17.6667 euro. Calcoliamo gli scarti e i loro prodotti:"
+        },
+        {
+          "table": [
+            [
+              "i",
+              "xᵢ−x̄",
+              "yᵢ−ȳ",
+              "(xᵢ−x̄ )²",
+              "(yᵢ−ȳ)²",
+              "Prodotto degli scarti"
+            ],
+            [
+              "1",
+              "-2.500",
+              "-5.667",
+              "6.250",
+              "32.111",
+              "14.167"
+            ],
+            [
+              "2",
+              "-1.500",
+              "-2.667",
+              "2.250",
+              "7.111",
+              "4.000"
+            ],
+            [
+              "3",
+              "-0.500",
+              "-3.667",
+              "0.250",
+              "13.444",
+              "1.833"
+            ],
+            [
+              "4",
+              "0.500",
+              "1.333",
+              "0.250",
+              "1.778",
+              "0.667"
+            ],
+            [
+              "5",
+              "1.500",
+              "4.333",
+              "2.250",
+              "18.778",
+              "6.500"
+            ],
+            [
+              "6",
+              "2.500",
+              "6.333",
+              "6.250",
+              "40.111",
+              "15.833"
+            ],
+            [
+              "Totale",
+              "",
+              "",
+              "17.500",
+              "113.333",
+              "43.000"
+            ]
+          ]
+        },
+        {
+          "text": "Covarianza con denominatore n: Covₚ = 43.000/6 = 7.1667 visite·euro. Covarianza campionaria: sₓᵧ = 43.000/5 = 8.6000."
+        },
+        {
+          "text": "Deviazioni standard campionarie: sₓ = √(17.500/5) = 1.8708; sᵧ = √(113.333/5) = 4.7610. Correlazione: r = 43.000/√(17.500 × 113.333) = 0.9655."
+        },
+        {
+          "text": "Interpretazione: nei dati è presente una forte associazione lineare positiva tra numero di visite e spesa. Attenzione: si tratta di sei osservazioni costruite per finalità didattiche, non di evidenza causale su una popolazione reale."
+        }
+      ],
+      "concept": "Esercizio guidato completo: dalla tabella alle metriche"
+    },
+    {
+      "id": "l25-8",
+      "title": "8. Dalla correlazione alla regressione",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t05"
+      ],
+      "blocks": [
+        {
+          "text": "La correlazione riassume verso e intensità dell’associazione lineare. La regressione costruisce invece una regola quantitativa per stimare Y in funzione di X. Le due operazioni non sono intercambiabili: la correlazione è simmetrica (r(X,Y)=r(Y,X)); la regressione Y su X, in generale, non coincide con la regressione X su Y."
+        },
+        {
+          "text": "Modello teorico: Yᵢ = α + βXᵢ + εᵢ. Qui α e β sono parametri ignoti della popolazione; εᵢ è il termine di errore, che raccoglie la parte di Y non spiegata sistematicamente da X. Retta stimata: ŷᵢ = a + bxᵢ, dove a e b sono stime ottenute dai dati."
+        },
+        {
+          "text": "Il coefficiente b è la pendenza: a fronte di un aumento di un’unità di X, la spesa prevista cambia mediamente di b euro. L’intercetta a è la previsione di Y quando X=0; può non avere significato pratico se il valore zero è lontano dai dati osservati."
+        }
+      ],
+      "concept": "Dalla correlazione alla regressione"
+    },
+    {
+      "id": "l25-9",
+      "title": "9. Il metodo dei minimi quadrati ordinari (OLS): prima costruzione",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t06"
+      ],
+      "blocks": [
+        {
+          "text": "Una retta non passa necessariamente per tutti i punti. La distanza verticale di ogni punto dalla retta stimata è il residuo eᵢ = yᵢ − ŷᵢ. Il metodo OLS sceglie a e b per minimizzare la somma dei quadrati dei residui: SSE(a,b) = Σ[yᵢ−(a+bxᵢ)]². Si usano i quadrati perché altrimenti gli errori positivi e negativi si compenserebbero."
+        },
+        {
+          "text": "Le formule per la regressione lineare semplice sono b = Sxy/Sxx = Cov(X,Y)/Var(X) e a = ȳ−b x̄ . Queste espressioni sono valide se X varia, cioè Sxx > 0. Sono equivalenti alle formule riportate nelle slide del professore, che le ottiene minimizzando l’errore quadratico."
+        },
+        {
+          "text": "Calcolo sul nostro esempio: b = 43.000/17.500 = 2.4571 euro per visita; a = 17.6667 − 2.4571 × 3.5000 = 9.0667 euro."
+        },
+        {
+          "text": "La retta stimata è quindi: ŷ = 9.0667 + 2.4571X. Un cliente con 4 visite avrebbe spesa prevista di 18.90 euro; con 7 visite, previsione di 26.27 euro (estrapolazione: 7 è fuori dal campione osservato, che va da 1 a 6)."
+        },
+        {
+          "image": "mca-p171-1.png",
+          "caption": "Dati osservati e retta dei minimi quadrati (esempio originale).",
+          "alt": "Dati osservati e retta dei minimi quadrati (esempio originale)."
+        }
+      ],
+      "concept": "Il metodo dei minimi quadrati ordinari (OLS): prima costruzione"
+    },
+    {
+      "id": "l25-10",
+      "title": "10. Residui, errore di stima e qualità preliminare del modello",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t06"
+      ],
+      "blocks": [
+        {
+          "text": "Ogni residuo misura la differenza tra spesa osservata e prevista. Se eᵢ > 0, il cliente ha speso più del previsto; se eᵢ < 0, meno. L’analisi dei residui aiuta a riconoscere strutture non rappresentate dalla retta."
+        },
+        {
+          "table": [
+            [
+              "Cliente",
+              "Y osservata",
+              "Ŷ stimata",
+              "Residuo e=Y−Ŷ"
+            ],
+            [
+              "C1",
+              "12.00",
+              "11.52",
+              "+0.48"
+            ],
+            [
+              "C2",
+              "15.00",
+              "13.98",
+              "+1.02"
+            ],
+            [
+              "C3",
+              "14.00",
+              "16.44",
+              "-2.44"
+            ],
+            [
+              "C4",
+              "19.00",
+              "18.90",
+              "+0.10"
+            ],
+            [
+              "C5",
+              "22.00",
+              "21.35",
+              "+0.65"
+            ],
+            [
+              "C6",
+              "24.00",
+              "23.81",
+              "+0.19"
+            ]
+          ]
+        },
+        {
+          "text": "SSE = Σeᵢ² = 7.6762 euro². Nella regressione con intercetta, la somma dei residui è teoricamente zero (a meno di arrotondamenti). Il coefficiente R² = 1 − SSE/Syy = 0.9323; nella regressione semplice con intercetta è uguale a r² = 0.9323."
+        },
+        {
+          "text": "R² esprime la quota della variabilità campionaria di Y spiegata dalla retta rispetto alla previsione costante ȳ. NON significa che X “causi” quella quota di spesa. I dettagli su stima dell’errore, test e verifiche delle ipotesi saranno sviluppati nella Lezione 26."
+        },
+        {
+          "image": "mca-p171-2.png",
+          "caption": "Residui del modello e linea di riferimento a zero (esempio originale).",
+          "alt": "Residui del modello e linea di riferimento a zero (esempio originale)."
+        }
+      ],
+      "concept": "Residui, errore di stima e qualità preliminare del modello"
+    },
+    {
+      "id": "l25-11",
+      "title": "11. Assunzioni del modello e differenza tra descrivere e inferire",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t07"
+      ],
+      "blocks": [
+        {
+          "text": "Per calcolare una retta OLS non è necessario supporre che tutti i dati siano normalmente distribuiti. Per fare inferenza e valutare adeguatamente l’affidabilità delle stime è invece necessario ragionare sulle proprietà degli errori: media condizionata nulla, adeguatezza della forma lineare, indipendenza e varianza costante; la normalità degli errori è una condizione utile per alcune procedure inferenziali esatte in piccoli campioni."
+        },
+        {
+          "text": "La causalità richiede un disegno di ricerca adatto o ipotesi aggiuntive forti. L’estrapolazione fuori dall’intervallo di X osservato è rischiosa. I risultati di regressione possono variare nel tempo per cambiamenti nella popolazione, nella politica commerciale o nel mercato."
+        }
+      ],
+      "concept": "Assunzioni del modello e differenza tra descrivere e inferire"
+    },
+    {
+      "id": "l25-12",
+      "title": "12. Errori ricorrenti negli esercizi",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t07"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "•",
+              "Usare lo stesso denominatore senza controllare se si sta descrivendo popolazione o campione."
+            ],
+            [
+              "•",
+              "Interpretare r = 0,80 come “80% di varianza spiegata”: R² è 0,64, cioè 64%, nella regressione semplice con intercetta."
+            ],
+            [
+              "•",
+              "Interpretare correlazione positiva come prova che X sia causa di Y."
+            ],
+            [
+              "•",
+              "Confondere β (parametro ignoto) con b (stima sui dati) e ε (errore teorico) con e (residuo osservato)."
+            ],
+            [
+              "•",
+              "Attribuire significato all’intercetta quando X=0 non è plausibile o non è presente nella regione osservata."
+            ],
+            [
+              "•",
+              "Considerare i coefficienti validi con qualsiasi unità di misura: la pendenza cambia quando si modificano le unità."
+            ]
+          ]
+        }
+      ],
+      "concept": "Errori ricorrenti negli esercizi"
+    },
+    {
+      "id": "l25-13",
+      "title": "13. Esercizi di autovalutazione con soluzione",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t07"
+      ],
+      "blocks": [
+        {
+          "text": "Esercizio A: Quattro clienti presentano (X,Y)=(1,2),(2,4),(3,6),(4,8). Calcolare correlazione e retta OLS."
+        },
+        {
+          "worked": [
+            {
+              "text": "Le osservazioni giacciono sulla retta Y=2X. La correlazione è r=1; b=2, a=0; tutti i residui sono nulli, SSE=0, R²=1."
+            }
+          ],
+          "label": "Soluzione A"
+        },
+        {
+          "text": "Esercizio B: Una regressione stimata restituisce ŷ = 18 − 0,5X. Interpretare b se X è il prezzo in euro e Y è la quantità venduta."
+        },
+        {
+          "worked": [
+            {
+              "text": "A un aumento unitario del prezzo (1 €) corrisponde, secondo il modello, una riduzione prevista di 0,5 unità di vendita. La relazione è negativa; non è automaticamente causale."
+            }
+          ],
+          "label": "Soluzione B"
+        },
+        {
+          "text": "Esercizio C: Una relazione presenta r=−0,70. Qual è r²? La relazione è crescente o decrescente?"
+        },
+        {
+          "worked": [
+            {
+              "text": "r²=0,49. La relazione lineare è decrescente. Solo nel modello lineare semplice con intercetta, in campione, R²=r²=49%."
+            }
+          ],
+          "label": "Soluzione C"
+        },
+        {
+          "text": "Esercizio D: Un’azienda rileva una correlazione tra investimenti pubblicitari e vendite pari a +0,85. Può concludere che gli investimenti abbiano causato l’aumento delle vendite?"
+        },
+        {
+          "worked": [
+            {
+              "text": "No: potrebbero incidere domanda stagionale, promozioni, investimenti simultanei o simultaneità tra spesa pubblicitaria e vendite. Servono disegni e controlli più robusti per una conclusione causale."
+            }
+          ],
+          "label": "Soluzione D"
+        }
+      ],
+      "concept": "Esercizi di autovalutazione con soluzione"
+    },
+    {
+      "id": "l25-14",
+      "title": "14. Domande da esame orale: risposte essenziali ma rigorose",
+      "group": "Lezione 25. Dalla relazione tra variabili alla regressione lineare",
+      "topics": [
+        "mca-c06-t07"
+      ],
+      "blocks": [
+        {
+          "text": "Che cosa distingue covarianza e correlazione? La prima misura la variazione congiunta in unità dipendenti dalla scala; la seconda normalizza tale misura mediante le deviazioni standard e assume valori tra −1 e +1."
+        },
+        {
+          "text": "Qual è la differenza tra correlazione e regressione? La correlazione è simmetrica e descrive associazione lineare; la regressione tratta Y come risposta e costruisce una previsione condizionata a X."
+        },
+        {
+          "text": "Perché si minimizza la somma dei quadrati degli errori? Per evitare che segni opposti si annullino, penalizzare maggiormente errori grandi e ottenere un criterio matematico trattabile. Non è l’unico criterio possibile."
+        },
+        {
+          "text": "Che cosa significa b=3,2? Nel modello lineare semplice, a un incremento unitario di X corrisponde un incremento previsto di 3,2 unità di Y; l’interpretazione sostantiva dipende dalle rispettive unità."
+        },
+        {
+          "text": "Perché un coefficiente di correlazione può essere zero anche se le variabili sono legate? Perché Pearson misura soltanto la componente lineare dell’associazione: una dipendenza non lineare può essere presente."
+        }
+      ],
+      "concept": "Domande da esame orale: risposte essenziali ma rigorose"
+    },
+    {
+      "id": "l26-1",
+      "title": "1. Da dove ripartiamo e cosa impareremo",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t08"
+      ],
+      "blocks": [
+        {
+          "text": "La Lezione 25 ha introdotto correlazione, covarianza e prima costruzione della retta. Ora dobbiamo essere in grado di ricavare quella retta, non soltanto applicare la formula, e soprattutto stabilire se la retta ha senso per il problema aziendale. Un modello può essere matematicamente corretto nei dati osservati ma inadeguato a prevedere il comportamento dei clienti."
+        },
+        {
+          "text": "• Prerequisiti minimi: medie di X e Y, scarti dalle medie, somme dei quadrati, covarianza e differenza fra variabile risposta Y e predittore X."
+        },
+        {
+          "text": "• Obiettivi operativi: impostare e minimizzare SSE; derivare le equazioni normali; calcolare e interpretare a e b; valutare residui, SST, SSR, R², MSE e RMSE; esaminare le assunzioni e risolvere una traccia completa."
+        }
+      ],
+      "concept": "Da dove ripartiamo e cosa impareremo"
+    },
+    {
+      "id": "l26-2",
+      "title": "2. Il modello statistico: tre quantità da non confondere",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t08"
+      ],
+      "blocks": [
+        {
+          "text": "Modello teorico della popolazione: Yᵢ = β₀ + β₁Xᵢ + εᵢ. β₀ e β₁ sono parametri ignoti, εᵢ è la componente non spiegata dal predittore. Retta stimata dal campione: ŷᵢ = a + bxᵢ. Residuo osservato: eᵢ = yᵢ − ŷᵢ. L’errore teorico εᵢ non si osserva direttamente; eᵢ è calcolabile perché conosciamo yᵢ e ŷᵢ."
+        },
+        {
+          "text": "Il coefficiente b indica la variazione media stimata della risposta per una unità in più di X, nei limiti del modello. Se X indica visite e Y indica euro di spesa, b si misura in euro per visita; a indica la spesa prevista per X=0. Se lo zero è fuori dai valori osservati o non ha significato economico, non bisogna attribuirgli un’interpretazione realistica."
+        },
+        {
+          "text": "Esempio: una retta ŷ = 8 + 3x indica, nell’intervallo osservato, una spesa prevista maggiore di 3 € per ogni visita aggiuntiva. Non implica che imporre una visita in più provochi sicuramente 3 € di spesa aggiuntiva: una relazione osservazionale non prova causalità."
+        }
+      ],
+      "concept": "Il modello statistico: tre quantità da non confondere"
+    },
+    {
+      "id": "l26-3",
+      "title": "3. Perché minimizziamo i quadrati dei residui",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t08"
+      ],
+      "blocks": [
+        {
+          "text": "Per ogni osservazione esiste uno scarto tra valore reale e stima. Se sommassimo direttamente gli scarti, quelli positivi e negativi potrebbero annullarsi, facendo sembrare perfetto anche un modello impreciso. Elevando al quadrato, tutti gli errori contribuiscono positivamente e quelli grandi ricevono un peso maggiore."
+        },
+        {
+          "text": "Funzione da minimizzare (Sum of Squared Errors): S(a,b) = SSE(a,b) = Σᵢ₌₁ⁿ [yᵢ − a − bxᵢ]². L’algoritmo Ordinary Least Squares (OLS) sceglie a e b che rendono più piccola possibile questa funzione."
+        },
+        {
+          "text": "I quadrati non sono la sola scelta possibile: per esempio la somma degli errori assoluti riduce l’effetto dei grandi scarti. Tuttavia OLS è la scelta di riferimento del corso e possiede proprietà matematiche particolarmente utili."
+        },
+        {
+          "image": "mca-p173-1.png",
+          "caption": "Osservazioni e residui: i segmenti verticali rappresentano gli scarti yᵢ − ŷᵢ.",
+          "alt": "Osservazioni e residui: i segmenti verticali rappresentano gli scarti yᵢ − ŷᵢ."
+        }
+      ],
+      "concept": "Perché minimizziamo i quadrati dei residui"
+    },
+    {
+      "id": "l26-4",
+      "title": "4. Derivazione completa delle equazioni normali",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t08"
+      ],
+      "blocks": [
+        {
+          "text": "Partiamo da S(a,b)=Σ(yᵢ−a−bxᵢ)². Ricordiamo una regola di derivazione: se f(z)=[g(z)]², allora f′(z)=2g(z)g′(z). In questo caso g rispetto ad a ha derivata −1; rispetto a b ha derivata −xᵢ."
+        },
+        {
+          "text": "Derivata rispetto ad a: ∂S/∂a = −2Σ(yᵢ−a−bxᵢ). Imporre ∂S/∂a = 0 dà Σyᵢ−na−bΣxᵢ=0. Dividendo per n: ȳ−a−bx̄ =0. Pertanto: a = ȳ − bx̄ ."
+        },
+        {
+          "text": "Derivata rispetto a b: ∂S/∂b = −2Σxᵢ(yᵢ−a−bxᵢ). Imporre ∂S/∂b=0 dà Σxᵢyᵢ − aΣxᵢ − bΣxᵢ² = 0."
+        },
+        {
+          "text": "Sostituiamo a=ȳ−bx̄ nella seconda equazione, raccogliamo i termini in b e otteniamo:"
+        },
+        {
+          "text": "b = [Σxᵢyᵢ − (ΣxᵢΣyᵢ)/n] / [Σxᵢ² − (Σxᵢ)²/n] = Sxy/Sxx."
+        },
+        {
+          "text": "Le notazioni compatte sono: Sxy=Σ(xᵢ−x̄ )(yᵢ−ȳ), Sxx=Σ(xᵢ−x̄ )². Pertanto b=Cov(X,Y)/Var(X), purché numeratore e denominatore siano calcolati usando la stessa convenzione (n oppure n−1)."
+        },
+        {
+          "text": "Quando la varianza di X è nulla (tutti i valori X sono uguali), Sxx=0 e la pendenza non è identificabile. Non basta avere molti dati: occorre anche variabilità del predittore."
+        },
+        {
+          "text": "Perché è un minimo? SSE è una funzione quadratica convessa in (a,b); se Sxx>0 la soluzione ottenuta è il minimo globale unico. È dunque un procedimento di ottimizzazione e non una regola arbitraria."
+        }
+      ],
+      "concept": "Derivazione completa delle equazioni normali"
+    },
+    {
+      "id": "l26-5",
+      "title": "5. Proprietà algebriche fondamentali della retta OLS",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t08"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "•",
+              "La retta passa per il punto delle medie (x̄ ,ȳ), perché a+bx̄ =ȳ."
+            ],
+            [
+              "•",
+              "Se si stima anche l’intercetta, la somma dei residui è zero: Σeᵢ=0. Non significa che tutti i residui siano nulli."
+            ],
+            [
+              "•",
+              "Sempre con intercetta, i residui sono ortogonali a X: Σxᵢeᵢ=0; sono inoltre ortogonali ai valori stimati ŷᵢ."
+            ],
+            [
+              "•",
+              "Nel modello lineare semplice con intercetta e Y non costante: R²=r(X,Y)². Questa equivalenza non si estende automaticamente a tutti i modelli."
+            ],
+            [
+              "Una conseguenza pratica: aggiungere un dato anomalo molto distante può cambiare sensibilmente la pendenza, perché i",
+              ""
+            ],
+            [
+              "quadrati fanno pesare molto gli scarti grandi. Per questo, prima di trarre conclusioni, si deve osservare il diagramma di",
+              ""
+            ],
+            [
+              "dispersione.",
+              ""
+            ]
+          ]
+        }
+      ],
+      "concept": "Proprietà algebriche fondamentali della retta OLS"
+    },
+    {
+      "id": "l26-6",
+      "title": "6. Esercizio integrale: da sei clienti alla retta",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t09"
+      ],
+      "blocks": [
+        {
+          "text": "Esempio didattico ripreso dalla Lezione 25, ora sviluppato con la verifica analitica e gli indicatori di bontà del modello. X = numero di visite mensili, Y = euro spesi nello stesso mese."
+        },
+        {
+          "table": [
+            [
+              "Cliente",
+              "X",
+              "Y (€)",
+              "Valore stimato ŷ (€)",
+              "Residuo e (€)",
+              "e² (€²)"
+            ],
+            [
+              "C1",
+              "1",
+              "12",
+              "11.524",
+              "+0.476",
+              "0.227"
+            ],
+            [
+              "C2",
+              "2",
+              "15",
+              "13.981",
+              "+1.019",
+              "1.038"
+            ],
+            [
+              "C3",
+              "3",
+              "14",
+              "16.438",
+              "-2.438",
+              "5.944"
+            ],
+            [
+              "C4",
+              "4",
+              "19",
+              "18.895",
+              "+0.105",
+              "0.011"
+            ],
+            [
+              "C5",
+              "5",
+              "22",
+              "21.352",
+              "+0.648",
+              "0.419"
+            ],
+            [
+              "C6",
+              "6",
+              "24",
+              "23.810",
+              "+0.190",
+              "0.036"
+            ],
+            [
+              "Totale",
+              "21",
+              "106",
+              "106.000",
+              "-0.000",
+              "7.676"
+            ]
+          ]
+        },
+        {
+          "text": "Passaggio 1. Calcoliamo le medie: x̄ = 3.5000, ȳ = 17.6667."
+        },
+        {
+          "text": "Passaggio 2. Calcoliamo le somme centrate: Sxx = 17.5000; Sxy = 43.0000; Syy = 113.3333."
+        },
+        {
+          "text": "Passaggio 3. Calcoliamo la pendenza: b = Sxy/Sxx = 43.0000/17.5000 = 2.457143."
+        },
+        {
+          "text": "Passaggio 4. Calcoliamo l’intercetta: a=ȳ−bx̄ = 17.6667−(2.457143×3.5000) = 9.066667."
+        },
+        {
+          "text": "Risultato: ŷ = 9.0667 + 2.4571x. Nell’intervallo osservato, una visita in più si associa a circa 2.46 € di spesa mensile prevista in più."
+        },
+        {
+          "text": "Passaggio 5. Per X=4, ŷ = 9.0667 + 2.4571×4 = 18.8952 €. La spesa reale del cliente C4 è 19 €; il suo residuo è +0.1048 €. Il segno positivo indica che ha speso più del valore previsto."
+        },
+        {
+          "text": "Controlli: somma dei residui ≈ 0 (salvo arrotondamenti); SSE = 7,676190 €². L’unità corretta è EURO AL QUADRATO, perché si sommano quadrati di residui espressi in euro; RMSE e RSE, essendo radici quadrate di medie quadratiche, sono invece espressi in euro."
+        }
+      ],
+      "concept": "Esercizio integrale: da sei clienti alla retta"
+    },
+    {
+      "id": "l26-7",
+      "title": "7. La scomposizione della variabilità: SST, SSR, SSE",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t10"
+      ],
+      "blocks": [
+        {
+          "text": "Per valutare il modello confrontiamo la retta OLS con una previsione di base che assegna a tutti i clienti la media ȳ. La dispersione totale di Y intorno alla media si può scomporre in parte spiegata e parte non spiegata."
+        },
+        {
+          "text": "SST (Total Sum of Squares) = Σ(yᵢ−ȳ)². SSR (Regression Sum of Squares) = Σ(ŷᵢ−ȳ)². SSE (Error Sum of Squares) = Σ(yᵢ−ŷᵢ)²."
+        },
+        {
+          "text": "Con intercetta OLS vale esattamente SST = SSR + SSE. La prova deriva dalla decomposizione yᵢ−ȳ=(ŷᵢ−ȳ)+eᵢ e dall’ortogonalità fra valori stimati e residui: sommando i quadrati, il termine misto si annulla."
+        },
+        {
+          "text": "Nell’esempio: SST = 113.333333; SSE = 7.676190; SSR = SST−SSE = 105.657143. Verifica: 105.657143+7.676190=113.333333."
+        },
+        {
+          "image": "mca-p175-1.png",
+          "caption": "La variabilità totale si scompone nella quota spiegata dal modello e nella quota residua.",
+          "alt": "La variabilità totale si scompone nella quota spiegata dal modello e nella quota residua."
+        }
+      ],
+      "concept": "La scomposizione della variabilità: SST, SSR, SSE"
+    },
+    {
+      "id": "l26-8",
+      "title": "8. Il coefficiente di determinazione R²",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t10"
+      ],
+      "blocks": [
+        {
+          "text": "Definizione: R² = SSR/SST = 1−SSE/SST, quando SST>0 e il modello contiene l’intercetta. Indica quale frazione della variabilità osservata della risposta, attorno alla sua media, viene descritta dal modello sul campione utilizzato."
+        },
+        {
+          "text": "Nel nostro esempio R² = 1−(7.676190/113.333333) = 0.932269 = 93.23%. Quindi il modello lineare descrive circa il 93.2% della variabilità campionaria della spesa mensile; non significa che le visite causino quella percentuale di spesa."
+        },
+        {
+          "text": "R²=1 significa dati perfettamente allineati alla retta; R²=0 significa che, con intercetta, la retta non migliora la previsione costante basata sulla media. R² non dà direttamente l’errore in euro e non garantisce previsioni valide su clienti nuovi."
+        },
+        {
+          "text": "Un R² elevato non esclude errori sistematici: può nascondere una curva non modellata, eteroschedasticità o un outlier influente. Inoltre il confronto tra modelli deve considerare complessità e capacità di generalizzare."
+        }
+      ],
+      "concept": "Il coefficiente di determinazione R²"
+    },
+    {
+      "id": "l26-9",
+      "title": "9. MSE, RMSE, MAE e errore standard della regressione",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t11"
+      ],
+      "blocks": [
+        {
+          "text": "Per descrivere la grandezza degli errori servono metriche con significati diversi. Attenzione: alcune si riferiscono al campione di addestramento, altre alla stima della varianza dell’errore."
+        },
+        {
+          "table": [
+            [
+              "•",
+              "SSE = Σeᵢ²: somma degli errori quadratici; cresce meccanicamente con il numero di osservazioni e ha unità Y²."
+            ],
+            [
+              "•",
+              "MSE descrittivo (training) = SSE/n: errore quadratico medio sul campione; unità Y²."
+            ],
+            [
+              "•",
+              "MSE residuo per la stima della varianza degli errori = SSE/(n−2): si sottraggono due gradi di libertà perché sono stimati intercetta e pendenza."
+            ],
+            [
+              "•",
+              "Residual Standard Error (RSE) = √[SSE/(n−2)]: scala tipica stimata dell’errore, nelle stesse unità di Y."
+            ],
+            [
+              "•",
+              "RMSE predittivo su un set di valutazione = √[Σ(y−ŷ)²/m], dove m è il numero delle osservazioni valutate. Non chiamare automaticamente “RMSE” il valore SSE/(n−2)."
+            ],
+            [
+              "•",
+              "MAE = (1/m)Σ|y−ŷ|: media degli errori assoluti, nello stesso ordine di grandezza di Y, meno sensibile ai grandi scarti rispetto all’RMSE."
+            ]
+          ]
+        },
+        {
+          "text": "Esempio: SSE = 7.6762; training MSE = 1.2794 €²; training RMSE = 1.1311 €; RSE = √(7.6762/4) = 1.3853 €; training MAE = 0.8127 €. Le differenze sono legate ai denominatori e al tipo di errore misurato."
+        },
+        {
+          "text": "Criterio manageriale: quando devi stimare la spesa in euro, un errore di 3 € è immediatamente leggibile; un R² di 0,80 non dice da solo se 3 € siano troppi o pochi. Bisogna confrontare gli errori con l’uso previsto della previsione."
+        }
+      ],
+      "concept": "MSE, RMSE, MAE e errore standard della regressione"
+    },
+    {
+      "id": "l26-10",
+      "title": "10. Quando il metodo OLS è affidabile: assunzioni e diagnostica",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t12"
+      ],
+      "blocks": [
+        {
+          "text": "Per stimare a e b non è richiesta la normalità degli errori. Per interpretare il modello come strumento inferenziale e usare test/intervalli classici occorrono invece ulteriori condizioni. Un utile schema didattico è LINE: Linearità della media condizionata, Indipendenza degli errori, Normalità degli errori (specialmente per l’inferenza esatta in piccoli campioni), Equal variances/omoschedasticità."
+        },
+        {
+          "text": "• Linearità: per ogni livello di X, la media attesa di Y è descritta adeguatamente da β₀+β₁X. Un pattern curvo nei residui segnala possibile errore di specificazione."
+        },
+        {
+          "text": "• Media degli errori condizionata a X pari a zero, E(ε|X)=0: condizione cruciale per interpretare la pendenza come associazione non distorta da variabili omesse correlate con X; non verificabile pienamente dal solo grafico."
+        },
+        {
+          "text": "• Indipendenza: residui consecutivi non devono presentare dipendenze incompatibili con il modello; importante per serie temporali e clienti osservati ripetutamente."
+        },
+        {
+          "text": "• Omoschedasticità: la varianza condizionata dell’errore rimane approssimativamente costante lungo X; una forma a imbuto nei residui indica il contrario."
+        },
+        {
+          "text": "• Normalità: serve per gli intervalli e test t esatti del modello classico in piccoli campioni, non per definire il minimo OLS; nei campioni più grandi possono intervenire approssimazioni asintotiche."
+        },
+        {
+          "image": "mca-p176-1.png",
+          "caption": "Esempi schematici originali di residui regolari, curvatura e dispersione crescente.",
+          "alt": "Esempi schematici originali di residui regolari, curvatura e dispersione crescente."
+        },
+        {
+          "text": "Controllo consigliato: traccia i residui contro X o valori stimati, poi contro il tempo se i dati sono cronologici; osserva outlier e punti con X molto distante dal resto. Un andamento “casuale” non dimostra da solo che tutte le ipotesi siano vere."
+        }
+      ],
+      "concept": "Quando il metodo OLS è affidabile: assunzioni e diagnostica"
+    },
+    {
+      "id": "l26-11",
+      "title": "11. Outlier, leverage e influenza: differenze",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t13"
+      ],
+      "blocks": [
+        {
+          "text": "Outlier di risposta: osservazione con residuo eᵢ insolito. Leverage elevato: osservazione con X molto lontana dalla media; può spingere la retta a cambiare. Punto influente: osservazione la cui rimozione modifica sensibilmente le stime. Queste proprietà non coincidono: un punto ad alto leverage può stare sulla retta e avere residuo piccolo."
+        },
+        {
+          "text": "Per un modello semplice con intercetta, un indicatore di leverage è hᵢ = 1/n + (xᵢ−x̄ )²/Sxx. Valori elevati suggeriscono cautela e necessità di approfondimento; non giustificano automaticamente la cancellazione del dato."
+        },
+        {
+          "text": "Strategie corrette: verificare errori di acquisizione, comprendere il fenomeno economico, confrontare analisi con e senza l’osservazione sospetta, documentare ogni decisione. Scartare un cliente “scomodo” senza motivazione produce distorsioni."
+        }
+      ],
+      "concept": "Outlier, leverage e influenza: differenze"
+    },
+    {
+      "id": "l26-12",
+      "title": "12. Interpolazione, estrapolazione e qualità previsionale",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t13"
+      ],
+      "blocks": [
+        {
+          "text": "Interpolare significa prevedere Y per X interno all’intervallo osservato (qui 1–6 visite). Estrapolare significa prevedere oltre quel campo, per esempio X=20: è rischioso perché la relazione potrebbe modificarsi, diventare non lineare o incontrare vincoli reali."
+        },
+        {
+          "text": "La bontà in-sample non garantisce quella out-of-sample. In applicazioni aziendali è buona pratica separare dati di stima e dati di valutazione, rispettando la successione temporale quando si prevede il futuro per evitare data leakage."
+        },
+        {
+          "text": "Le previsioni puntuali sono valori attesi del modello, non certezze. La stima di un valore individuale nuovo richiede un intervallo predittivo più ampio dell’intervallo di confidenza della media perché include sia l’incertezza dei parametri sia la variabilità del nuovo cliente."
+        }
+      ],
+      "concept": "Interpolazione, estrapolazione e qualità previsionale"
+    },
+    {
+      "id": "l26-13",
+      "title": "13. Approfondimento inferenziale: errore standard e test sulla pendenza",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t13"
+      ],
+      "blocks": [
+        {
+          "text": "Questa sezione integra le slide con materiale universitario di Penn State. Quando valgono le assunzioni classiche, possiamo stimare la variabilità del coefficiente b: s² = SSE/(n−2), SE(b)=s/√Sxx. Un test t per H₀:β₁=0 usa t=b/SE(b) con n−2 gradi di libertà."
+        },
+        {
+          "text": "Nel caso dei sei clienti: s = 1.3853, SE(b) = 0.3311, t = 7.4200, gradi di libertà = 4. Il valore t da solo non basta per parlare di causalità o utilità economica; il giudizio statistico dipende dal livello di significatività e dalle assunzioni."
+        },
+        {
+          "text": "L’intervallo di confidenza bilaterale per β₁ al livello 1−α è b ± t₍₁−α/₂,n−2₎ SE(b). È un intervallo sul parametro medio della popolazione, non sul prossimo acquisto di un singolo cliente."
+        }
+      ],
+      "concept": "Approfondimento inferenziale: errore standard e test sulla pendenza"
+    },
+    {
+      "id": "l26-14",
+      "title": "14. Regressione multipla: anticipazione indispensabile",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t14"
+      ],
+      "blocks": [
+        {
+          "text": "Con più variabili esplicative il modello diventa Y = β₀+β₁X₁+β₂X₂+⋯+ε. Per esempio, spesa = funzione di visite, sconti, reddito e anzianità cliente. In questo caso β₁ rappresenta l’associazione stimata delle visite con la spesa a parità delle altre variabili incluse; non bisogna sostituire automaticamente questa interpretazione con quella della regressione semplice."
+        },
+        {
+          "text": "R² cresce o resta uguale se si aggiungono predittori su uno stesso campione con intercetta; quindi da solo non premia la parsimonia. Un indicatore che tiene conto del numero di regressori è l’R² aggiustato:"
+        },
+        {
+          "text": "1−[(1−R²)(n−1)/(n−k−1)], con k predittori e n>k+1."
+        },
+        {
+          "text": "Questo è un approfondimento utile, che anticipa la costruzione di modelli più articolati."
+        }
+      ],
+      "concept": "Regressione multipla: anticipazione indispensabile"
+    },
+    {
+      "id": "l26-15",
+      "title": "15. Procedura operativa per una traccia d’esame",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t14"
+      ],
+      "blocks": [
+        {
+          "text": "1. Definisci unità di osservazione, significato di X e Y e periodo; verifica che ogni coppia di dati sia confrontabile."
+        },
+        {
+          "text": "2. Costruisci tabella con xᵢ, yᵢ, xᵢ² e xᵢyᵢ; calcola n, Σx, Σy, Σx², Σxy, x̄ , ȳ."
+        },
+        {
+          "text": "3. Determina b con la formula delle somme centrate oppure con le somme grezze; verifica Sxx>0."
+        },
+        {
+          "text": "4. Calcola a=ȳ−bx̄ , scrivi la retta e interpreta b e a con le unità appropriate."
+        },
+        {
+          "text": "5. Calcola ŷᵢ e eᵢ, verifica Σe≈0, determina SSE."
+        },
+        {
+          "text": "6. Calcola SST, SSR e R²; controlla SST≈SSR+SSE."
+        },
+        {
+          "text": "7. Osserva i residui, verifica plausibilità della previsione e segnala eventuali limiti (outlier, extrapolazione, campione piccolo)."
+        },
+        {
+          "text": "8. Concludi con un commento manageriale: cosa può suggerire il risultato e cosa non è lecito concludere."
+        }
+      ],
+      "concept": "Procedura operativa per una traccia d’esame"
+    },
+    {
+      "id": "l26-16",
+      "title": "16. Esercizi graduati con soluzione",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t14"
+      ],
+      "blocks": [
+        {
+          "text": "Esercizio A — Calcolo della retta dalle somme Sono osservati n=5 clienti con Σx=15, Σy=60, Σx²=55 e Σxy=205. Determina b e a."
+        },
+        {
+          "worked": [
+            {
+              "text": "x̄ =15/5=3; ȳ=60/5=12; Sxx=55−15²/5=10; Sxy=205−(15×60)/5=25; b=25/10=2,5; a=12−2,5×3=4,5. La retta è ŷ=4,5+2,5x."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio B — Valutare il modello Una regressione con intercetta presenta SST=200 e SSE=50. Calcola SSR e R² e interpreta."
+        },
+        {
+          "worked": [
+            {
+              "text": "SSR=200−50=150; R²=1−50/200=0,75. Il modello descrive il 75% della variabilità osservata di Y intorno alla media. Non si deduce da questo dato né causalità né errore medio espresso nelle unità di Y."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio C — Differenza fra RMSE e RSE Un modello lineare semplice stimato su n=10 osservazioni ha SSE=80. Calcola training RMSE e RSE."
+        },
+        {
+          "worked": [
+            {
+              "text": "training RMSE=√(80/10)=2,828; RSE=√(80/8)=3,162. Il secondo valore usa i due gradi di libertà consumati dalla stima di a e b."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio D — Diagnostica Dopo il fit, i residui rispetto a X disegnano una U: positivi ai valori piccoli e grandi, negativi al centro. R² è 0,88. Il modello è necessariamente adeguato?"
+        },
+        {
+          "worked": [
+            {
+              "text": "no. La struttura a U suggerisce una componente non lineare non catturata dalla retta. R² elevato non annulla questo segnale; occorre rivalutare la specificazione e testare, se opportuno, una relazione curvilinea."
+            }
+          ],
+          "label": "Soluzione"
+        }
+      ],
+      "concept": "Esercizi graduati con soluzione"
+    },
+    {
+      "id": "l26-17",
+      "title": "17. Domande per l’esame orale",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t14"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Domanda",
+              "Risposta essenziale ma completa"
+            ],
+            [
+              "Perché gli errori sono elevati al quadrato?",
+              "Per evitare compensazioni tra segni, penalizzare maggiormente grandi scarti e ottenere una funzione differenziabile e convessa."
+            ],
+            [
+              "Da dove viene b=Cov/Var?",
+              "Dalla minimizzazione di SSE rispetto a a e b, risolvendo le equazioni normali."
+            ],
+            [
+              "Che cosa misura R²?",
+              "La quota della variabilità campionaria di Y intorno alla media descritta dal modello con intercetta; non misura causalità."
+            ],
+            [
+              "Perché non bastano i valori di R²?",
+              "Occorre verificare residui, valori anomali, significato delle variabili e affidabilità fuori campione."
+            ],
+            [
+              "Differenza tra errore ε e residuo e?",
+              "ε è lo scostamento dal valore atteso teorico della popolazione; e è lo scostamento osservato dalla retta stimata."
+            ],
+            [
+              "Quando può fallire un modello lineare?",
+              "In presenza di curvatura, dipendenza, eteroschedasticità, variabili omesse o osservazioni influenti; servono controlli diagnostici."
+            ]
+          ]
+        }
+      ],
+      "concept": "Domande per l’esame orale"
+    },
+    {
+      "id": "l26-18",
+      "title": "18. Formulario conclusivo",
+      "group": "Lezione 26. Metodo dei minimi quadrati e valutazione del modello di regressione",
+      "topics": [
+        "mca-c06-t14"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "•",
+              "ŷᵢ=a+bxᵢ; eᵢ=yᵢ−ŷᵢ; SSE=Σeᵢ²."
+            ],
+            [
+              "•",
+              "Sxx=Σ(xᵢ−x̄ )²; Sxy=Σ(xᵢ−x̄ )(yᵢ−ȳ); b=Sxy/Sxx; a=ȳ−bx̄ ."
+            ],
+            [
+              "•",
+              "SST=Σ(yᵢ−ȳ)²; SSR=Σ(ŷᵢ−ȳ)²; SST=SSR+SSE (OLS con intercetta)."
+            ],
+            [
+              "•",
+              "R²=1−SSE/SST; RSE=√[SSE/(n−2)]; MAE=Σ|eᵢ|/n."
+            ],
+            [
+              "•",
+              "SE(b)=√[SSE/((n−2)Sxx)]; t=b/SE(b) per H₀:β₁=0 sotto ipotesi inferenziali."
+            ]
+          ]
+        }
+      ],
+      "concept": "Formulario conclusivo"
+    },
+    {
+      "id": "l27-intro",
+      "title": "Introduzione alla lezione",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Obiettivo formativo. Interpretare l’evoluzione temporale di acquisti, frequenza e spesa; calcolare un trend OLS; comprendere l’effetto dei periodi senza acquisto; misurare la sensibilità al prezzo secondo la formula delle slide; distinguere una relazione osservata da un effetto causale e da un’elasticità."
+        }
+      ],
+      "concept": "Introduzione alla lezione"
+    },
+    {
+      "id": "l27-1",
+      "title": "1. Ripresa: la regressione come strumento per leggere i comportamenti",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t15"
+      ],
+      "blocks": [
+        {
+          "text": "Nelle lezioni 25 e 26 abbiamo imparato a rappresentare una relazione con la retta ŷ = a + bx e a stimarne i parametri mediante OLS. Ora X non rappresenta soltanto una caratteristica del cliente: può essere un indice temporale (mese, trimestre, settimana) oppure un prezzo. Y può essere frequenza di visita, importo acquistato, quantità o frequenza di acquisto a un certo prezzo."
+        },
+        {
+          "text": "La pendenza b dice di quanto varia in media il valore previsto di Y quando X aumenta di una unità. Il significato economico dipende completamente dalle unità di misura: “2 visite per mese aggiuntivo” non equivale a “2 euro di spesa per euro di prezzo”. La retta descrive una tendenza media, non garantisce che ogni osservazione segua lo stesso andamento."
+        },
+        {
+          "text": "Domanda X (predittore) Y (variabile risposta) Unità della pendenza Il cliente compra più spesso col passare dei mesi?"
+        },
+        {
+          "text": "Mese t Acquisti nel mese Acquisti/mese per mese"
+        },
+        {
+          "text": "La spesa cambia nei trimestri? Trimestre t Spesa in € €/trimestre Come cambia l’acquisto per fascia di prezzo?"
+        },
+        {
+          "text": "Prezzo in € Frequenza nella classe Acquisti per €"
+        }
+      ],
+      "concept": "Ripresa: la regressione come strumento per leggere i comportamenti"
+    },
+    {
+      "id": "l27-2",
+      "title": "2. Serie temporali dei clienti: costruzione corretta dei dati",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t15"
+      ],
+      "blocks": [
+        {
+          "text": "Una serie temporale è una successione di osservazioni ordinate nel tempo. Per confrontare clienti occorre fissare la stessa granularità (ad esempio 7 mesi), la stessa definizione di acquisto e le stesse regole di trattamento delle mancate osservazioni. Un mese con zero acquisti osservati non è necessariamente un dato mancante: se sappiamo che il cliente era osservabile e non ha comprato, Y=0 è informazione reale."
+        },
+        {
+          "text": "• Indice temporale: attribuiamo t=1,2,…,T a intervalli equidistanti. Non confondere un numero di trimestre con una data anagrafica o un calendario irregolare."
+        },
+        {
+          "text": "• Frequenza mensile: numero di acquisti registrati in ciascun mese, distinto dalla media mensile calcolata su un orizzonte più lungo."
+        },
+        {
+          "text": "• Per il trend usiamo tutte le osservazioni valide, comprese quelle nulle. Escluderle significa cambiare il fenomeno descritto: da “spesa per periodo” a “spesa condizionata all’aver acquistato”."
+        },
+        {
+          "text": "• Un dato mancante (nessun tracciamento, errore di acquisizione) non deve diventare uno zero senza una ragione metodologica documentata."
+        }
+      ],
+      "concept": "Serie temporali dei clienti: costruzione corretta dei dati"
+    },
+    {
+      "id": "l27-3",
+      "title": "3. Esempio ufficiale: tre clienti con identica frequenza totale",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t16"
+      ],
+      "blocks": [
+        {
+          "text": "Le slide riportano tre clienti con 48 acquisti in sette mesi e frequenza media indicata come 6,82 acquisti/mese nel contesto di 211 giorni osservati; le serie mensili riportate nelle slide sono riprodotte qui. La media aritmetica delle sette osservazioni è 48/7 ≈ 6,857: il valore 6,82 mostrato nelle slide dipende dalla normalizzazione su 211 giorni e dall’unità mensile adottata. Non vanno confusi i due denominatori."
+        },
+        {
+          "table": [
+            [
+              "Mese",
+              "t",
+              "Cliente 1",
+              "Cliente 2",
+              "Cliente 3"
+            ],
+            [
+              "Gen",
+              "1",
+              "7",
+              "12",
+              "18"
+            ],
+            [
+              "Feb",
+              "2",
+              "5",
+              "0",
+              "12"
+            ],
+            [
+              "Mar",
+              "3",
+              "7",
+              "6",
+              "11"
+            ],
+            [
+              "Apr",
+              "4",
+              "9",
+              "1",
+              "6"
+            ],
+            [
+              "Mag",
+              "5",
+              "7",
+              "11",
+              "1"
+            ],
+            [
+              "Giu",
+              "6",
+              "6",
+              "0",
+              "0"
+            ],
+            [
+              "Lug",
+              "7",
+              "7",
+              "18",
+              "0"
+            ],
+            [
+              "Totale",
+              "",
+              "48",
+              "48",
+              "48"
+            ],
+            [
+              "Media su 7 mesi",
+              "",
+              "6,86",
+              "6,86",
+              "6,86"
+            ]
+          ]
+        },
+        {
+          "image": "mca-p180-1.png",
+          "caption": "Tre comportamenti temporali con uguale numero totale di acquisti.",
+          "alt": "Tre comportamenti temporali con uguale numero totale di acquisti."
+        },
+        {
+          "text": "Cliente 1: acquisti relativamente regolari; cliente 2: andamento molto irregolare senza crescita lineare marcata; cliente 3: andamento nettamente decrescente fino a zero. La sola media non basta a distinguere queste situazioni. Servono almeno dispersione e tendenza."
+        }
+      ],
+      "concept": "Esempio ufficiale: tre clienti con identica frequenza totale"
+    },
+    {
+      "id": "l27-4",
+      "title": "4. Tre misure complementari: media, deviazione standard e pendenza",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t16"
+      ],
+      "blocks": [
+        {
+          "text": "Media: x̄ = Σxₜ/T. Riassume il livello dell’attività. Deviazione standard: σ = √[Σ(xₜ−x̄ )²/T] se i periodi osservati sono l’intera finestra descrittiva, oppure s = √[Σ(xₜ−x̄ )²/(T−1)] se sono trattati come campione statistico. Le slide confrontano deviazioni standard descrittive."
+        },
+        {
+          "text": "Covarianza con il tempo: Cov(t,y) = Σ(t−t̄ )(yₜ−ȳ)/T (con lo stesso denominatore della Var(t)); la sua positività suggerisce un andamento crescente e la negatività un andamento decrescente. Pendenza: b = Cov(t,y)/Var(t). La divisione per Var(t) è necessaria per avere la variazione prevista di acquisti per unità di tempo."
+        },
+        {
+          "text": "Per questi sette mesi, t̄ =4 e Var(t)=4. Con le serie riportate:"
+        },
+        {
+          "text": "Cliente 1: media=6.857; σ=1.125; Cov(t,Y)=0.286; b=0.071 acquisti per mese aggiuntivo."
+        },
+        {
+          "text": "Cliente 2: media=6.857; σ=6.512; Cov(t,Y)=3.286; b=0.821 acquisti per mese aggiuntivo."
+        },
+        {
+          "text": "Cliente 3: media=6.857; σ=6.512; Cov(t,Y)=-12.571; b=-3.143 acquisti per mese aggiuntivo."
+        },
+        {
+          "text": "Le slide arrotondano la pendenza a 0,07; 0,82; −3,14 rispettivamente. Segno e intensità della pendenza distinguono stabilità, incremento e decremento; una pendenza positiva non implica automaticamente fedeltà elevata né garantisce crescita futura."
+        }
+      ],
+      "concept": "Tre misure complementari: media, deviazione standard e pendenza"
+    },
+    {
+      "id": "l27-5",
+      "title": "5. Lettura manageriale: livello, variabilità e tendenza",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t16"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Dimensione",
+              "Valore basso",
+              "Valore alto",
+              "Domanda manageriale"
+            ],
+            [
+              "Media degli acquisti",
+              "Bassa intensità",
+              "Alta intensità",
+              "Quanto è attivo?"
+            ],
+            [
+              "Deviazione standard",
+              "Stabile nel periodo",
+              "Irregolare",
+              "Quanto è prevedibile?"
+            ],
+            [
+              "Pendenza b",
+              "Declino se negativa",
+              "Crescita se positiva",
+              "In quale direzione si muove?"
+            ]
+          ]
+        },
+        {
+          "text": "Queste etichette sono interpretative e dipendono dal contesto: “basso” e “alto” richiedono soglie relative al settore, all’unità temporale e alla distribuzione dei dati. Un cliente con b<0 può restare molto attivo; uno con b>0 può essere ancora poco redditizio."
+        }
+      ],
+      "concept": "Lettura manageriale: livello, variabilità e tendenza"
+    },
+    {
+      "id": "l27-6",
+      "title": "6. Esempio ufficiale: regressione della spesa senza e con gli zeri",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t17"
+      ],
+      "blocks": [
+        {
+          "text": "Il professore considera una serie di venti trimestri in cui sono presenti cinque trimestri con spesa positiva. La prima regressione utilizza solo i cinque periodi con acquisto; la seconda tutti i venti trimestri, assegnando Y=0 ai periodi senza acquisto. Questi due modelli rispondono a domande diverse."
+        },
+        {
+          "table": [
+            [
+              "Periodo t",
+              "Spesa (€)"
+            ],
+            [
+              "1",
+              "26.31"
+            ],
+            [
+              "2",
+              "0,00"
+            ],
+            [
+              "3",
+              "0,00"
+            ],
+            [
+              "4",
+              "0,00"
+            ],
+            [
+              "5",
+              "0,00"
+            ],
+            [
+              "6",
+              "0,00"
+            ],
+            [
+              "7",
+              "0,00"
+            ],
+            [
+              "8",
+              "0,00"
+            ],
+            [
+              "9",
+              "61.89"
+            ],
+            [
+              "10",
+              "0,00"
+            ],
+            [
+              "11",
+              "0,00"
+            ],
+            [
+              "12",
+              "0,00"
+            ],
+            [
+              "13",
+              "0,00"
+            ],
+            [
+              "14",
+              "0,00"
+            ],
+            [
+              "15",
+              "0,00"
+            ],
+            [
+              "16",
+              "0,00"
+            ],
+            [
+              "17",
+              "76.97"
+            ],
+            [
+              "18",
+              "0,00"
+            ],
+            [
+              "19",
+              "49.90"
+            ],
+            [
+              "20",
+              "107.78"
+            ]
+          ]
+        },
+        {
+          "text": "Solo periodi con acquisto: n=5; media(t)=13.20; media(Y)=64.570 €; b=2.8140 €/trimestre; a=27.4253 €; modello ŷ=27.4253+(2.8140)t."
+        },
+        {
+          "text": "Tutti i periodi: n=20; media(t)=10.50; media(Y)=16.143 €; b=2.4144 €/trimestre; a=-9.2088 €; modello ŷ=-9.2088+(2.4144)t."
+        },
+        {
+          "image": "mca-p181-1.png",
+          "caption": "La retta cambia quando si considerano anche i periodi senza acquisti.",
+          "alt": "La retta cambia quando si considerano anche i periodi senza acquisti."
+        },
+        {
+          "text": "Interpretazione rigorosa: la retta calcolata solo nei periodi attivi misura la spesa media condizionata alla presenza di acquisti (e la sua tendenza); la retta su tutti i trimestri misura una tendenza della spesa complessiva per periodo, che incorpora anche la frequenza di attività. La scelta non deve basarsi su quale retta appare “migliore”, ma sulla domanda aziendale."
+        },
+        {
+          "text": "Attenzione: la previsione per alcuni periodi può risultare negativa quando la retta ha intercetta negativa. Una spesa prevista negativa non è economicamente ammissibile: indica un limite del modello lineare nel dominio considerato, non una spesa realmente possibile."
+        }
+      ],
+      "concept": "Esempio ufficiale: regressione della spesa senza e con gli zeri"
+    },
+    {
+      "id": "l27-7",
+      "title": "7. Sensibilità al prezzo secondo la formula delle slide",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t18"
+      ],
+      "blocks": [
+        {
+          "text": "Nelle slide il docente propone di osservare il numero di acquisti in corrispondenza di classi di prezzo e di calcolare il coefficiente angolare della regressione di frequenza su prezzo: Sp = Cov(pᵢ, fᵢ)/Var(pᵢ). La frequenza di acquisto per fascia può servire come proxy empirica della probabilità di acquisto, ma non coincide automaticamente con una probabilità normalizzata: occorre distinguere conteggi, frequenze relative ed esposizioni ai prezzi."
+        },
+        {
+          "text": "La sensibilità Sp è la pendenza di una retta fra prezzo e frequenza; non va confusa con l’elasticità della domanda, che è una variazione percentuale della quantità per variazione percentuale del prezzo. Una pendenza può essere positiva nel campione senza dimostrare che prezzi più alti causino più acquisti."
+        }
+      ],
+      "concept": "Sensibilità al prezzo secondo la formula delle slide"
+    },
+    {
+      "id": "l27-8",
+      "title": "8. Esempio ufficiale: classi di prezzo e due clienti",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t18"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Prezzo (€)",
+              "Cliente 1: N acquisti",
+              "Cliente 2: N acquisti"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "2",
+              "0",
+              "0"
+            ],
+            [
+              "4",
+              "1",
+              "0"
+            ],
+            [
+              "6",
+              "2",
+              "1"
+            ],
+            [
+              "8",
+              "1",
+              "1"
+            ],
+            [
+              "10",
+              "1",
+              "2"
+            ],
+            [
+              "12",
+              "0",
+              "0"
+            ],
+            [
+              "14",
+              "0",
+              "0"
+            ],
+            [
+              "16",
+              "0",
+              "0"
+            ],
+            [
+              "18",
+              "0",
+              "1"
+            ],
+            [
+              "20",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "text": "Cliente 1: n classi=11; media prezzo=10.0 €; media frequenza=0.4545; Var(p)=40.0 €²; Cov(p,f)=-1.4545; Sp=- 1.4545/40.0=-0.03636 acquisti/€; intercetta=0.81818."
+        },
+        {
+          "text": "Cliente 2: n classi=11; media prezzo=10.0 €; media frequenza=0.4545; Var(p)=40.0 €²; Cov(p,f)=0.1818; Sp=0.1818/40.0=0.00455 acquisti/€; intercetta=0.40909."
+        },
+        {
+          "image": "mca-p182-1.png",
+          "caption": "Frequenza degli acquisti nelle undici classi di prezzo delle slide.",
+          "alt": "Frequenza degli acquisti nelle undici classi di prezzo delle slide."
+        },
+        {
+          "text": "Il docente presenta anche il medesimo esercizio utilizzando X come numero progressivo della classe (1,…,11) anziché il prezzo monetario (0,2,…,20 €). La pendenza cambia scala: un incremento di una classe corrisponde a 2 €, quindi b_classe = 2 × b_euro. Non è una contraddizione: cambiano le unità di X."
+        },
+        {
+          "text": "Le slide arrotondano i risultati a circa −0,073 e +0,009 per classe; −0,036 e +0,005 per euro rispettivamente. La prima serie ha associazione lineare negativa; la seconda è debolmente positiva nel campione osservato. Non dedurre una preferenza causale per prezzi elevati: assortimento, qualità, disponibilità e caratteristiche dei clienti possono confondere il risultato."
+        }
+      ],
+      "concept": "Esempio ufficiale: classi di prezzo e due clienti"
+    },
+    {
+      "id": "l27-9",
+      "title": "9. Attenzione metodologica: frequenza e probabilità di acquisto",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t19"
+      ],
+      "blocks": [
+        {
+          "text": "Per parlare propriamente di probabilità d’acquisto a prezzo p serve conoscere, per ciascun prezzo, il numero di occasioni in cui il cliente ha effettivamente potuto acquistare a quel prezzo. Se osserviamo 2 acquisti a 10 €, ma non sappiamo quante esposizioni vi siano state a 10 €, 2 è un conteggio, non una probabilità."
+        },
+        {
+          "text": "Se abbiamo 20 esposizioni a 10 € e 2 acquisti, la frequenza relativa è 2/20=0,10. Se abbiamo 2 esposizioni e 2 acquisti, la probabilità empirica diventa 1,00. Sono fenomeni completamente diversi, anche se il numero degli acquisti coincide."
+        },
+        {
+          "text": "• Formula per le occasioni di scelta note: p̂ (acquisto | prezzo p) = numero di acquisti al prezzo p / numero di occasioni di scelta al prezzo p."
+        },
+        {
+          "text": "• Quando usiamo i soli conteggi per fascia, il modello descrive la distribuzione storica delle transazioni sui prezzi, non necessariamente una curva di domanda individuale."
+        }
+      ],
+      "concept": "Attenzione metodologica: frequenza e probabilità di acquisto"
+    },
+    {
+      "id": "l27-10",
+      "title": "10. Esempio guidato originale: calcolo OLS da zero",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t19"
+      ],
+      "blocks": [
+        {
+          "text": "Supponiamo quattro livelli di prezzo p = [2,4,6,8] € e frequenze f = [8,6,4,2] (conteggi con uguale esposizione a ogni prezzo). Le medie sono p̄ =5 e f̄ =5."
+        },
+        {
+          "table": [
+            [
+              "pᵢ",
+              "fᵢ",
+              "pᵢ−5",
+              "fᵢ−5",
+              "Prodotto",
+              "(pᵢ−5)²"
+            ],
+            [
+              "2",
+              "8",
+              "-3",
+              "3",
+              "-9",
+              "9"
+            ],
+            [
+              "4",
+              "6",
+              "-1",
+              "1",
+              "-1",
+              "1"
+            ],
+            [
+              "6",
+              "4",
+              "1",
+              "-1",
+              "-1",
+              "1"
+            ],
+            [
+              "8",
+              "2",
+              "3",
+              "-3",
+              "-9",
+              "9"
+            ],
+            [
+              "Totale",
+              "",
+              "",
+              "",
+              "−20",
+              "20"
+            ]
+          ]
+        },
+        {
+          "text": "Di conseguenza b = Σ(pᵢ−p̄ )(fᵢ−f̄ ) / Σ(pᵢ−p̄ )² = −20/20 = −1 acquisto/€. L’intercetta è a = f̄ −bp̄ = 5−(−1×5)=10. La retta è f̂ =10−p. Aumentando il prezzo di 1 €, la frequenza prevista diminuisce di un acquisto nell’intervallo osservato e secondo questa specifica approssimazione lineare."
+        }
+      ],
+      "concept": "Esempio guidato originale: calcolo OLS da zero"
+    },
+    {
+      "id": "l27-11",
+      "title": "11. Sensibilità ed elasticità: differenze non trascurabili",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t19"
+      ],
+      "blocks": [
+        {
+          "text": "La sensibilità delle slide misura una variazione assoluta della frequenza per euro: b = Δf/Δp nella regressione lineare. L’elasticità-prezzo puntuale, se una funzione differenziabile Q(p) è nota, è ε(p)=(dQ/dp)×(p/Q). In una retta Q=a+bp si ottiene ε(p)=b·p/(a+bp)."
+        },
+        {
+          "text": "Per esempio Q=100−2p: a p=20 €, Q=60 e ε=−2×20/60=−0,667. La pendenza −2 resta invariata, mentre l’elasticità cambia in funzione di prezzo e quantità. Questo approfondimento serve a collegare Customer Analytics e il pricing del Capitolo 4 del primo modulo."
+        }
+      ],
+      "concept": "Sensibilità ed elasticità: differenze non trascurabili"
+    },
+    {
+      "id": "l27-12",
+      "title": "12. Limitazioni, causalità e correttezza del modello",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t19"
+      ],
+      "blocks": [
+        {
+          "text": "• Correlazione ≠ causalità: prezzi maggiori possono accompagnarsi a prodotti migliori, stagionalità, promozioni o segmenti differenti; il segno di b non identifica da solo un effetto del prezzo."
+        },
+        {
+          "text": "• Autocorrelazione: in serie storiche i residui di periodi vicini possono essere dipendenti. Questo compromette le formule standard per test e intervalli se non trattato; controllare grafici dei residui in ordine temporale."
+        },
+        {
+          "text": "• Stagionalità e trend: una crescita apparente può dipendere dai mesi dell’anno. Un modello più accurato può includere indicatori stagionali e altri predittori, ma la loro definizione richiede nuovi dati."
+        },
+        {
+          "text": "• Zero reali e dati mancanti: non sostituire gli uni agli altri. Per i dati di acquisto sporadici, valutare modelli a due stadi (probabilità di acquisto e importo condizionato) come integrazione metodologica."
+        },
+        {
+          "text": "• Limiti della previsione: una retta può dare frequenze negative o probabilità sopra 1. Per variabili non negative o binarie esistono modelli più adatti; sono approfondimenti esterni rispetto agli esercizi lineari del docente."
+        }
+      ],
+      "concept": "Limitazioni, causalità e correttezza del modello"
+    },
+    {
+      "id": "l27-13",
+      "title": "13. Procedura operativa per gli esercizi del corso",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t20"
+      ],
+      "blocks": [
+        {
+          "text": "1. Definisci la variabile indipendente X e l’unità: t, fascia numerica o prezzo in euro."
+        },
+        {
+          "text": "2. Definisci Y: acquisti per mese, spesa per trimestre, conteggi per prezzo oppure probabilità empiriche."
+        },
+        {
+          "text": "3. Costruisci la tabella completa delle osservazioni e verifica se gli zeri sono reali."
+        },
+        {
+          "text": "4. Calcola media(X), media(Y), Var(X), Cov(X,Y), b=Cov/Var e a=media(Y)−b·media(X)."
+        },
+        {
+          "text": "5. Scrivi la retta ŷ=a+bX e le unità fisiche della pendenza."
+        },
+        {
+          "text": "6. Interpreta segno, grandezza e limiti; non confondere predizione, correlazione e causalità."
+        },
+        {
+          "text": "7. Se si richiede una previsione, valuta l’ammissibilità dei risultati e se X è dentro l’intervallo osservato."
+        }
+      ],
+      "concept": "Procedura operativa per gli esercizi del corso"
+    },
+    {
+      "id": "l27-14",
+      "title": "14. Esercizi d’esame e soluzioni ragionate",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t20"
+      ],
+      "blocks": [
+        {
+          "text": "Esercizio A – Trend degli acquisti Una cliente acquista 2, 4, 4, 6, 9 unità nei mesi t=1,…,5. Calcolare la retta di regressione e commentare il trend."
+        },
+        {
+          "worked": [
+            {
+              "text": "t̄ =3, ȳ=5; Sxx=10; Sxy=(−2)(−3)+(−1)(−1)+0(−1)+1(1)+2(4)=16; b=16/10=1,6 acquisti/mese; a=5−1,6×3=0,2. Retta: ŷ=0,2+1,6t; tendenza crescente. Per t=6 la previsione è 9,8, ma è già un’estrapolazione."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio B – Inclusione degli zeri Una persona compra 30 € nei periodi 1 e 3 e niente nei periodi 2 e 4. Confronta la spesa media su tutti i periodi e la spesa media solo sui periodi di acquisto."
+        },
+        {
+          "worked": [
+            {
+              "text": "media incondizionata = (30+0+30+0)/4 = 15 € per periodo. Media condizionata all’acquisto = (30+30)/2 = 30 € per periodo attivo. La seconda non rappresenta il valore atteso della spesa in un periodo qualsiasi."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio C – Sensibilità al prezzo Per p=[5,10,15] € e f=[9,6,3], stimare il coefficiente angolare della frequenza sul prezzo."
+        },
+        {
+          "worked": [
+            {
+              "text": "p̄ =10; f̄ =6; Sxy=(−5)(3)+0+5(−3)=−30; Sxx=25+0+25=50; b=−0,6 acquisti/€. La retta stimata è f̂ =12−0,6p. È un’associazione lineare negativa nel campione."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio D – Passaggio dalla classe al prezzo Se la pendenza rispetto alla classe (1,2,3,…) è −0,10 acquisti/classe e ogni classe corrisponde a 5 €, quale pendenza si ottiene rispetto a p espresso in euro?"
+        },
+        {
+          "worked": [
+            {
+              "text": "b_euro=b_classe/5=−0,02 acquisti/€. L’intensità numerica cambia per effetto della diversa unità di misura, non perché è cambiata la relazione empirica."
+            }
+          ],
+          "label": "Soluzione"
+        }
+      ],
+      "concept": "Esercizi d’esame e soluzioni ragionate"
+    },
+    {
+      "id": "l27-15",
+      "title": "15. Domande orali con risposte essenziali ma rigorose",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t20"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Domanda",
+              "Risposta fondamentale"
+            ],
+            [
+              "Qual è la differenza fra media e trend?",
+              "La media misura il livello complessivo; il coefficiente b misura la direzione e l’intensità della variazione prevista per unità di tempo."
+            ],
+            [
+              "Perché escludere gli zeri è rischioso?",
+              "Può trasformare l’analisi della spesa per periodo in analisi della sola spesa nei periodi attivi; cambia la popolazione osservata."
+            ],
+            [
+              "Che cosa misura la price sensitivity nelle slide?",
+              "La pendenza della regressione della frequenza di acquisto sulle classi di prezzo o sul prezzo in euro."
+            ],
+            [
+              "Come interpreti b>0 nel rapporto prezzo–acquisti?",
+              "Associazione positiva nei dati osservati; senza controlli non dimostra una causalità positiva."
+            ],
+            [
+              "Perché b per classe e b per euro sono diversi?",
+              "Le unità della variabile X cambiano; il rapporto numerico delle pendenze coincide con la larghezza della classe."
+            ],
+            [
+              "Che cosa può rendere inaffidabili inferenze con dati temporali?",
+              "Dipendenza temporale/autocorrelazione dei residui, stagionalità e variabili omesse."
+            ]
+          ]
+        }
+      ],
+      "concept": "Domande orali con risposte essenziali ma rigorose"
+    },
+    {
+      "id": "l27-16",
+      "title": "16. Formulario della Lezione 27 e riferimenti",
+      "group": "Lezione 27. Analisi dei comportamenti nel tempo e sensibilità al prezzo",
+      "topics": [
+        "mca-c06-t20"
+      ],
+      "blocks": [
+        {
+          "text": "Media: x̄=Σxᵢ/n. Var(X)=Σ(xᵢ−x̄ )²/n. Cov(X,Y)=Σ(xᵢ−x̄ )(yᵢ−ȳ)/n. Pendenza OLS: b=Cov(X,Y)/Var(X). Intercetta: a=ȳ−bx̄ . Valore previsto: ŷ=a+bx. Elasticità puntuale (integrazione): ε=(dQ/dp)(p/Q)."
+        }
+      ],
+      "concept": "Formulario della Lezione 27 e riferimenti"
+    },
+    {
+      "id": "l28-intro",
+      "title": "Introduzione alla lezione",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t28"
+      ],
+      "blocks": [
+        {
+          "heading": "Obiettivi della lezione"
+        },
+        {
+          "text": "• Comprendere perché il cliente sceglie un prodotto come combinazione di attributi e non come somma di caratteristiche isolate."
+        },
+        {
+          "table": [
+            [
+              "•",
+              "Interpretare utilità, utilità parziali (part-worth), variabili dummy e livelli di riferimento."
+            ],
+            [
+              "•",
+              "Riprodurre gli esempi ufficiali auto e scarpe, usando la regressione lineare."
+            ],
+            [
+              "•",
+              "Calcolare importanza relativa degli attributi e formulare valutazioni manageriali corrette."
+            ],
+            [
+              "•",
+              "Distinguere disponibilità a pagare, Reservation Price e prezzo effettivamente pagato."
+            ],
+            [
+              "•",
+              "Riconoscere limiti dei modelli di preferenza e differenze rispetto alla choice-based conjoint moderna."
+            ]
+          ]
+        }
+      ],
+      "concept": "Introduzione alla lezione"
+    },
+    {
+      "id": "l28-1",
+      "title": "1. Dal comportamento osservato alle preferenze",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t21"
+      ],
+      "blocks": [
+        {
+          "text": "Nei paragrafi precedenti abbiamo studiato come i consumatori reagiscono al prezzo e come si può stimare una relazione statistica tra una variabile esplicativa e un comportamento. Ma nella realtà un acquisto dipende da più caratteristiche simultaneamente: prezzo, marca, prestazioni, paese di produzione, servizi e design. La Conjoint Analysis (analisi congiunta) studia come i consumatori valutano combinazioni di attributi e quali compromessi sono disposti ad accettare."
+        },
+        {
+          "text": "La domanda non è soltanto “preferisci un prezzo basso?”, bensì “quanta utilità guadagni abbassando il prezzo e quanta ne perdi se rinunci a una determinata caratteristica?”. La parola conjoint richiama proprio la valutazione congiunta di più attributi."
+        }
+      ],
+      "concept": "Dal comportamento osservato alle preferenze"
+    },
+    {
+      "id": "l28-2",
+      "title": "2. Attributi, livelli, profilo e stimolo",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t21"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "•",
+              "Attributo: dimensione sulla quale due offerte possono differire (ad esempio prezzo)."
+            ],
+            [
+              "•",
+              "Livello: valore specifico dell’attributo (per esempio 50 €, 125 €, 200 €)."
+            ],
+            [
+              "•",
+              "Profilo o stimolo: combinazione concreta di un livello per ciascun attributo (scarpa in pelle, fabbricata in Italia, 125 €)."
+            ],
+            [
+              "•",
+              "Valutazione: risposta del consumatore al profilo, mediante rating, graduatoria o scelta."
+            ],
+            [
+              "Gli attributi devono essere rilevanti per il consumatore e concretamente modificabili dall’impresa; i livelli devono essere",
+              ""
+            ],
+            [
+              "plausibili e coprire un intervallo sufficientemente ampio. La scelta dei livelli è cruciale: se il prezzo varia da 50 a 200 €, la",
+              ""
+            ],
+            [
+              "sua importanza stimata può essere diversa da quella ottenuta facendo variare il prezzo soltanto da 120 a 140 €.",
+              ""
+            ]
+          ]
+        }
+      ],
+      "concept": "Attributi, livelli, profilo e stimolo"
+    },
+    {
+      "id": "l28-3",
+      "title": "3. Funzione di utilità additiva",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t21"
+      ],
+      "blocks": [
+        {
+          "text": "Le slide introducono una funzione lineare additiva: U = k + β₁x₁ + β₂x₂ + … + βₙxₙ. U esprime un punteggio di preferenza o utilità; k è la costante; βⱼ misura il contributo della variabile xⱼ mantenendo fisse le altre. Nell’applicazione didattica il rating su scala Likert viene trattato numericamente come variabile dipendente della regressione."
+        },
+        {
+          "text": "Il modello è additivo perché somma i contributi degli attributi; è compensatorio perché un valore sfavorevole di un attributo può essere compensato da altri valori favorevoli. Non significa che una persona possa sempre compensare qualsiasi difetto: vincoli e soglie minime possono rendere inappropriata questa ipotesi."
+        },
+        {
+          "text": "Un coefficiente va interpretato secondo la codifica della variabile. Per le dummy, β è una differenza rispetto al livello di riferimento; non è automaticamente l’importanza relativa dell’intero attributo."
+        }
+      ],
+      "concept": "Funzione di utilità additiva"
+    },
+    {
+      "id": "l28-4",
+      "title": "4. Procedura della Conjoint Analysis secondo le slide",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t22"
+      ],
+      "blocks": [
+        {
+          "text": "1. Formulare il problema: identificare attributi, scala di misurazione e livelli; evitare attributi irrilevanti o irrealistici."
+        },
+        {
+          "text": "2. Costruire gli stimoli: profili full-profile (tutti gli attributi) oppure valutazioni pairwise (coppie di attributi)."
+        },
+        {
+          "text": "3. Scegliere la risposta: ordinamento, rating di preferenza/intenzione di acquisto oppure acquisto/scelta effettiva."
+        },
+        {
+          "text": "4. Trasformare i dati: codificare i livelli degli attributi categorici mediante variabili binarie dummy."
+        },
+        {
+          "text": "5. Stimare il modello: mediante regressione nella versione illustrata dal professore."
+        },
+        {
+          "text": "6. Interpretare i risultati: utilità dei livelli, confronto dei profili, importanza relativa e possibili decisioni."
+        }
+      ],
+      "concept": "Procedura della Conjoint Analysis secondo le slide"
+    },
+    {
+      "id": "l28-5",
+      "title": "5. Perché servono le variabili dummy",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t22"
+      ],
+      "blocks": [
+        {
+          "text": "Gli attributi nominali non possiedono un ordine numerico intrinseco. Assegnare “Lexus = 1” e “Infiniti = 2” come se fossero quantità produrrebbe un significato artificiale; occorre invece indicare la presenza o assenza di un livello con 0 e 1. Se un attributo ha L livelli, con intercetta si usano L−1 dummy, lasciando un livello come riferimento."
+        },
+        {
+          "table": [
+            [
+              "Livello di un attributo a 3 livelli",
+              "Dummy D₁",
+              "Dummy D₂"
+            ],
+            [
+              "Livello A",
+              "1",
+              "0"
+            ],
+            [
+              "Livello B",
+              "0",
+              "1"
+            ],
+            [
+              "Livello C (riferimento)",
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "text": "Il riferimento non è “assenza dell’attributo”: il prodotto possiede comunque quell’attributo al livello C. Inserire tutte e tre le dummy insieme all’intercetta crea dipendenza lineare perfetta (dummy variable trap). Cambiare il livello di riferimento modifica i singoli coefficienti, ma non le utilità previste per gli stessi profili."
+        }
+      ],
+      "concept": "Perché servono le variabili dummy"
+    },
+    {
+      "id": "l28-6",
+      "title": "6. Esempio 1 delle slide: Lexus/Infiniti e Sedan/SUV",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t23"
+      ],
+      "blocks": [
+        {
+          "text": "Il consumatore valuta tre configurazioni con rating da 1 a 7. Seguendo la codifica delle slide, X₁=1 quando la marca è Infiniti (0 per Lexus), X₂=1 quando l’auto è SUV (0 per Sedan)."
+        },
+        {
+          "table": [
+            [
+              "Marca",
+              "Tipo",
+              "X₁",
+              "X₂",
+              "Rating"
+            ],
+            [
+              "Infiniti",
+              "Sedan",
+              "1",
+              "0",
+              "5"
+            ],
+            [
+              "Lexus",
+              "SUV",
+              "0",
+              "1",
+              "6"
+            ],
+            [
+              "Lexus",
+              "Sedan",
+              "0",
+              "0",
+              "2"
+            ]
+          ]
+        },
+        {
+          "text": "Poniamo U = k + b₁X₁ + b₂X₂. Dalla terza osservazione k=2. Dalla prima: 2+b₁=5, quindi b₁=3. Dalla seconda: 2+b₂=6, quindi b₂=4. Risultato: U = 2 + 3X₁ + 4X₂."
+        },
+        {
+          "text": "Interpretazione: passando da Lexus a Infiniti a tipo invariato, l’utilità aumenta di 3 punti nel modello; passando da Sedan a SUV a marca invariata, aumenta di 4 punti. Nell’intervallo di livelli analizzati, l’attributo “tipo” produce una variazione maggiore dell’attributo “marca”."
+        },
+        {
+          "text": "Il quarto profilo Infiniti SUV non è presente tra quelli valutati, ma il modello additivo prevede U=2+3+4=9. Poiché 9 supera la scala osservata 1–7, questa previsione segnala un limite concreto del modello additivo lineare con soli tre profili: non va trattata come rating certo o automaticamente valido. Inoltre con tre osservazioni e tre parametri il modello interpola perfettamente i dati e non possiede gradi di libertà residui per verificare la bontà della stima."
+        }
+      ],
+      "concept": "Esempio 1 delle slide: Lexus/Infiniti e Sedan/SUV"
+    },
+    {
+      "id": "l28-7",
+      "title": "7. Esempio 2 delle slide: scarpe, tre attributi a tre livelli",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t24"
+      ],
+      "blocks": [
+        {
+          "text": "Il professore considera materiali della tomaia (pelle, camoscio, similpelle), paese di provenienza (Italia, USA, Estremo Oriente) e prezzo (50 €, 125 €, 200 €). Il consumatore valuta nove profili. Per ogni attributo a tre livelli si costruiscono due dummy: in totale sei regressori e un’intercetta."
+        },
+        {
+          "table": [
+            [
+              "N.",
+              "Tomaia",
+              "Paese",
+              "Prezzo",
+              "Rating"
+            ],
+            [
+              "1",
+              "Pelle",
+              "Italia",
+              "50 €",
+              "9"
+            ],
+            [
+              "2",
+              "Pelle",
+              "USA",
+              "125 €",
+              "7"
+            ],
+            [
+              "3",
+              "Pelle",
+              "Estremo Oriente",
+              "200 €",
+              "5"
+            ],
+            [
+              "4",
+              "Camoscio",
+              "Italia",
+              "125 €",
+              "6"
+            ],
+            [
+              "5",
+              "Camoscio",
+              "USA",
+              "200 €",
+              "5"
+            ],
+            [
+              "6",
+              "Camoscio",
+              "Estremo Oriente",
+              "50 €",
+              "6"
+            ],
+            [
+              "7",
+              "Similpelle",
+              "Italia",
+              "200 €",
+              "5"
+            ],
+            [
+              "8",
+              "Similpelle",
+              "USA",
+              "50 €",
+              "7"
+            ],
+            [
+              "9",
+              "Similpelle",
+              "Estremo Oriente",
+              "125 €",
+              "6"
+            ]
+          ]
+        },
+        {
+          "text": "Definiamo: X₁=Pelle; X₂=Camoscio; X₃=Italia; X₄=USA; X₅=Prezzo 50 €; X₆=Prezzo 125 €. I livelli di riferimento sono similpelle, Estremo Oriente e 200 €."
+        },
+        {
+          "text": "Applicando la regressione ai dati riportati nelle slide si ottengono, per arrotondamento:"
+        },
+        {
+          "text": "Û = 4,222 + 1,000X₁ − 0,333X₂ + 1,000X₃ + 0,667X₄ + 2,333X₅ + 1,333X₆."
+        },
+        {
+          "table": [
+            [
+              "Attributo",
+              "Livello",
+              "Contributo part-worth rispetto al riferimento"
+            ],
+            [
+              "Tomaia",
+              "Pelle",
+              "+1,000"
+            ],
+            [
+              "Tomaia",
+              "Camoscio",
+              "−0,333"
+            ],
+            [
+              "Tomaia",
+              "Similpelle (rif.)",
+              "0,000"
+            ],
+            [
+              "Provenienza",
+              "Italia",
+              "+1,000"
+            ],
+            [
+              "Provenienza",
+              "USA",
+              "+0,667"
+            ],
+            [
+              "Provenienza",
+              "Estremo Oriente (rif.)",
+              "0,000"
+            ],
+            [
+              "Prezzo",
+              "50 €",
+              "+2,333"
+            ],
+            [
+              "Prezzo",
+              "125 €",
+              "+1,333"
+            ],
+            [
+              "Prezzo",
+              "200 € (rif.)",
+              "0,000"
+            ]
+          ]
+        },
+        {
+          "text": "Esempio di previsione: per “pelle–Italia–50 €” il modello produce 4,222+1+1+2,333=8,555; il rating osservato è 9, quindi il residuo osservato meno previsto è circa +0,445. Il modello non coincide necessariamente con tutti i giudizi perché i coefficienti sono stimati attraverso minimi quadrati e il modello è una semplificazione."
+        },
+        {
+          "image": "mca-p187-1.png",
+          "caption": "Utilità parziali rispetto al livello di riferimento. Figura originale ricostruita dai coefficienti riportati nelle slide.",
+          "alt": "Utilità parziali rispetto al livello di riferimento. Figura originale ricostruita dai coefficienti riportati nelle slide."
+        }
+      ],
+      "concept": "Esempio 2 delle slide: scarpe, tre attributi a tre livelli"
+    },
+    {
+      "id": "l28-8",
+      "title": "8. Calcolare l’importanza relativa di un attributo",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t25"
+      ],
+      "blocks": [
+        {
+          "text": "Non basta confrontare un singolo bⱼ con un altro: un attributo a più livelli può avere più coefficienti. Nel caso di attributi categorici l’ampiezza di utilità è data dal livello con part-worth massimo meno quello con part-worth minimo, includendo il livello di riferimento con utilità 0."
+        },
+        {
+          "text": "Range materiale = 1,000 − (−0,333) = 1,333. Range provenienza = 1,000 − 0 = 1,000. Range prezzo = 2,333 − 0 = 2,333. Somma = 4,666."
+        },
+        {
+          "text": "Importanza relativa_j = 100 × range_j / somma dei range. Quindi materiale ≈ 28,57%; provenienza ≈ 21,43%; prezzo ≈ 50,00%. Il prezzo è l’attributo più influente NELL’INTERVALLO DI LIVELLI ANALIZZATO, non una proprietà universale del consumatore."
+        },
+        {
+          "image": "mca-p188-1.png",
+          "caption": "Importanza relativa basata sull’ampiezza delle utilità parziali. Elaborazione originale dell’esempio delle slide.",
+          "alt": "Importanza relativa basata sull’ampiezza delle utilità parziali. Elaborazione originale dell’esempio delle slide."
+        }
+      ],
+      "concept": "Calcolare l’importanza relativa di un attributo"
+    },
+    {
+      "id": "l28-9",
+      "title": "9. Limiti interpretativi e di metodo della regressione conjoint",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t25"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "•",
+              "Le stime sono specifiche per le persone intervistate, i livelli testati e il contesto del questionario."
+            ],
+            [
+              "•",
+              "Una preferenza dichiarata non coincide necessariamente con un acquisto reale: prezzo, disponibilità, budget e contesto possono cambiare la scelta."
+            ],
+            [
+              "•",
+              "Nella regressione additiva le interazioni fra attributi non sono modellate a meno di introdurre termini specifici."
+            ],
+            [
+              "•",
+              "Con pochi stimoli e molti parametri può esserci scarsa affidabilità: servono disegno sperimentale e osservazioni adeguati."
+            ],
+            [
+              "•",
+              "Le part-worth possono cambiare segno e valore in funzione del livello di riferimento, pur lasciando inalterate le predizioni."
+            ],
+            [
+              "•",
+              "I rating ordinali vengono trattati numericamente come variabile di regressione negli esercizi del corso: ciò implica un’approssimazione."
+            ]
+          ]
+        }
+      ],
+      "concept": "Limiti interpretativi e di metodo della regressione conjoint"
+    },
+    {
+      "id": "l28-10",
+      "title": "10. Reservation Price: tre definizioni complementari",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t26"
+      ],
+      "blocks": [
+        {
+          "text": "Nelle slide del corso viene definito come (a) prezzo massimo che un acquirente è disposto a pagare; (b) soglia oltre la quale il cliente non acquista; (c) prezzo al quale, a reddito dato, l’utilità dell’acquisto equivale all’utilità del non acquisto. I tre modi di esprimerlo sono collegati, ma gli ultimi due richiedono ipotesi precise sul contesto decisionale."
+        },
+        {
+          "text": "Il prezzo di riserva NON è il prezzo di listino, non coincide necessariamente con il prezzo osservato in un acquisto e non può essere identificato automaticamente con il prezzo più alto pagato in passato. I dati di acquisto forniscono indizi, non sempre una soglia esatta."
+        }
+      ],
+      "concept": "Reservation Price: tre definizioni complementari"
+    },
+    {
+      "id": "l28-11",
+      "title": "11. Prezzo di riserva con la funzione di utilità",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t26"
+      ],
+      "blocks": [
+        {
+          "text": "In un modello semplificato con prezzo continuo, l’utilità di acquistare è U_acq(p)=V−αp, con α>0; l’utilità di non acquistare è U_non=U₀. Il Reservation Price p* risolve V−αp*=U₀, dunque p*=(V−U₀)/α. Per p<p* acquistare è preferito al non acquisto; per p>p* non acquistare è preferito, se le altre condizioni restano uguali."
+        },
+        {
+          "text": "Esempio originale: U_acq=7,5−0,025p, U_non=4. Impongo 7,5−0,025p*=4 ⇒ 3,5=0,025p* ⇒ p*=140 €. A p=100 €, U_acq=5,0>4; a p=160 €, U_acq=3,5<4. Questa formulazione è una semplificazione didattica e non coincide con la codifica a livelli categorici dello studio sulle scarpe."
+        },
+        {
+          "image": "mca-p189-1.png",
+          "caption": "Reservation Price come soglia di indifferenza fra acquisto e non acquisto (esempio didattico originale).",
+          "alt": "Reservation Price come soglia di indifferenza fra acquisto e non acquisto (esempio didattico originale)."
+        }
+      ],
+      "concept": "Prezzo di riserva con la funzione di utilità"
+    },
+    {
+      "id": "l28-12",
+      "title": "12. Perché una Conjoint Analysis a prezzi discreti non identifica automaticamente il prezzo",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t26"
+      ],
+      "blocks": [
+        {
+          "heading": "massimo"
+        },
+        {
+          "text": "Nell’esempio delle scarpe il prezzo è trattato come variabile categorica con tre livelli: 50, 125 e 200 €. Il modello restituisce differenze di utilità tra questi livelli, non una funzione continua del prezzo. Non possiamo quindi calcolare direttamente un Reservation Price preciso in euro senza ipotesi ulteriori, una funzione stimata continua oppure una procedura specifica che confronti acquisto e non acquisto."
+        },
+        {
+          "text": "La willingness to pay per un miglioramento di attributo si può derivare con un modello lineare continuo U=β₀+βₐA+βₚp, βₚ<0: mantenendo costante U, la variazione di prezzo compensativa è Δp=−(βₐ/βₚ)ΔA. Questa relazione è una integrazione metodologica e non va confusa con le dummy di prezzo nell’esempio ufficiale."
+        }
+      ],
+      "concept": "Perché una Conjoint Analysis a prezzi discreti non identifica automaticamente il prezzo"
+    },
+    {
+      "id": "l28-13",
+      "title": "13. Metodi per misurare la disponibilità a pagare",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t27"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Metodo",
+              "Che cosa si osserva",
+              "Punto di forza / limite"
+            ],
+            [
+              "Dati di acquisto effettivi",
+              "Prezzi pagati e scelte reali",
+              "Comportamento reale, ma scelta condizionata da prezzi e disponibilità"
+            ],
+            [
+              "Self-stated WTP",
+              "Prezzo massimo dichiarato",
+              "Semplice; rischio di risposta ipotetica"
+            ],
+            [
+              "Conjoint Analysis",
+              "Preferenze tra combinazioni di attributi",
+              "Misura trade-off; dipende dal disegno"
+            ],
+            [
+              "Contingent valuation",
+              "Risposta a scenari ipotetici",
+              "Permette scenari non ancora sul mercato; richiede cautela"
+            ],
+            [
+              "Aste sperimentali",
+              "Offerte o puntate in contesto controllato",
+              "Può creare incentivi più realistici; richiede progettazione rigorosa"
+            ]
+          ]
+        },
+        {
+          "text": "Le slide elencano questi metodi; le spiegazioni dei rispettivi limiti sono integrazioni didattiche. Un modello logit della scelta e una conjoint choice-based non sono identici alla regressione lineare sui rating presentata nell’esercizio ufficiale."
+        }
+      ],
+      "concept": "Metodi per misurare la disponibilità a pagare"
+    },
+    {
+      "id": "l28-14",
+      "title": "14. Integrazione: Choice-Based Conjoint e simulazioni",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t27"
+      ],
+      "blocks": [
+        {
+          "text": "Nella Choice-Based Conjoint (CBC) il rispondente sceglie un’alternativa fra profili anziché assegnare necessariamente un rating. Sono comuni modelli logit e, in alcune implementazioni, stime bayesiane gerarchiche. La probabilità di scelta dipende dalle utilità relative delle alternative presenti nello specifico insieme di scelta. Questo approfondimento NON sostituisce il metodo con rating e dummy delle slide."
+        },
+        {
+          "text": "Una comune specificazione logit è P(i)=exp(Uᵢ)/Σⱼexp(Uⱼ), dove la somma riguarda le alternative disponibili. Le quote stimate così ottenute sono quote di preferenza simulate, non quote di mercato reali garantite. È necessario considerare opzione di non acquisto, notorietà, disponibilità, distribuzione e qualità dei dati."
+        }
+      ],
+      "concept": "Integrazione: Choice-Based Conjoint e simulazioni"
+    },
+    {
+      "id": "l28-15",
+      "title": "15. Esercizi di riepilogo completamente svolti",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t28"
+      ],
+      "blocks": [
+        {
+          "text": "Esercizio A — Interpretare una dummy Modello U=3+2D_A−D_B con riferimento C. Calcolare U(A), U(B), U(C), sapendo che i livelli sono mutuamente esclusivi."
+        },
+        {
+          "worked": [
+            {
+              "text": "U(A)=5; U(B)=2; U(C)=3. A è preferito a C di 2 punti; B è inferiore a C di 1 punto."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio B — Confronto di due profili con il modello delle scarpe Profilo 1: pelle, Italia, 125 €. Profilo 2: camoscio, USA, 50 €. Usando i coefficienti delle slide: U₁=4,222+1+1+1,333=7,555. U₂=4,222−0,333+0,667+2,333=6,889. Differenza ≈ 0,666 a favore del profilo 1. Le stime sono arrotondate."
+        },
+        {
+          "text": "Esercizio C — Importanza relativa Tre attributi hanno range 2, 1 e 3. Totale=6; importanze relative: 33,33%, 16,67% e 50,00%. Non confrontare i coefficienti grezzi se appartengono ad attributi con numerosi livelli."
+        },
+        {
+          "text": "Esercizio D — WTP differenziale Un modello continuo fornisce β_attributo=1,8 utilità per unità di miglioramento, β_prezzo=−0,03 utilità/€. Quanto si può aumentare il prezzo mantenendo costante la previsione di utilità per un incremento unitario dell’attributo? Soluzione: Δp=−1,8/(−0,03)=60 €. L’interpretazione vale nell’intervallo in cui il modello è adeguato e a parità di altri fattori."
+        },
+        {
+          "text": "Esercizio E — Reservation Price U_acq=12−0,04p; U_non=5. All’indifferenza: 12−0,04p*=5 ⇒ p*=7/0,04=175 €. A 150 € è previsto acquisto (U_acq=6>5); a 200 € è previsto non acquisto (U_acq=4<5)."
+        }
+      ],
+      "concept": "Esercizi di riepilogo completamente svolti"
+    },
+    {
+      "id": "l28-16",
+      "title": "16. Domande d’esame e risposte",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t28"
+      ],
+      "blocks": [
+        {
+          "text": "DOMANDA — A che cosa serve la Conjoint Analysis?"
+        },
+        {
+          "text": "RISPOSTA — A scomporre il giudizio su un profilo nelle utilità associate ai suoi attributi e livelli, stimando i compromessi fra caratteristiche."
+        },
+        {
+          "text": "DOMANDA — Perché usare L−1 dummy?"
+        },
+        {
+          "text": "RISPOSTA — Per evitare collinearità perfetta con l’intercetta: un livello è il riferimento e tutti gli altri sono codificati rispetto a esso."
+        },
+        {
+          "text": "DOMANDA — Cosa rappresenta un part-worth negativo?"
+        },
+        {
+          "text": "RISPOSTA — Un contributo inferiore a quello del livello di riferimento, mantenuti invariati gli altri attributi, non necessariamente una valutazione assoluta negativa del prodotto."
+        },
+        {
+          "text": "DOMANDA — Come si calcola l’importanza relativa?"
+        },
+        {
+          "text": "RISPOSTA — Per ogni attributo si prende il range massimo−minimo fra le utilità dei livelli; poi si divide per la somma dei range di tutti gli attributi."
+        },
+        {
+          "text": "DOMANDA — Che differenza c’è tra Reservation Price e prezzo effettivo?"
+        },
+        {
+          "text": "RISPOSTA — Il primo è una soglia teorica di disponibilità a pagare, il secondo è il corrispettivo realmente sostenuto in una specifica transazione."
+        },
+        {
+          "text": "DOMANDA — Si può usare il modello delle scarpe per ricavare direttamente un reservation price continuo?"
+        },
+        {
+          "text": "RISPOSTA — No: il prezzo è codificato con tre livelli categorici e non è inclusa un’esplicita alternativa di non acquisto."
+        },
+        {
+          "text": "DOMANDA — La miglior utilità prevista implica vendite certe?"
+        },
+        {
+          "text": "RISPOSTA — No: il rating misura preferenza modellata; vendite dipendono anche da altri fattori non inclusi nel modello."
+        }
+      ],
+      "concept": "Domande d’esame e risposte"
+    },
+    {
+      "id": "l28-17",
+      "title": "17. Formulario finale",
+      "group": "Lezione 28. Funzione di utilità, prezzo di riserva e Conjoint Analysis",
+      "topics": [
+        "mca-c06-t28"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "•",
+              "U=k+Σβⱼxⱼ"
+            ],
+            [
+              "•",
+              "Numero dummy con intercetta per attributo a L livelli = L−1"
+            ],
+            [
+              "•",
+              "Part-worth del riferimento = 0 (codifica dummy)"
+            ],
+            [
+              "•",
+              "Range attributo = max(part-worth livelli) − min(part-worth livelli)"
+            ],
+            [
+              "•",
+              "Importanza relativa = 100 × range attributo / Σrange"
+            ],
+            [
+              "•",
+              "Se U_acq=V−αp e U_non=U₀, p*=(V−U₀)/α, con α>0"
+            ],
+            [
+              "•",
+              "Se U=β₀+βₐA+βₚp, Δp=−(βₐ/βₚ)ΔA, con βₚ<0"
+            ],
+            [
+              "•",
+              "Logit CBC (integrazione): P(i)=exp(Uᵢ)/Σⱼ exp(Uⱼ)"
+            ]
+          ]
+        }
+      ],
+      "concept": "Formulario finale"
+    },
+    {
+      "id": "appendice-e",
+      "title": "E. Capitolo 6 — Regressione e Conjoint Analysis",
+      "group": "Revisione scientifica",
+      "topics": [
+        "mca-c06-t28"
+      ],
+      "blocks": [
+        {
+          "text": "Copertura confrontata: covarianza e correlazione, minimi quadrati e retta OLS, indici di adattamento, analisi nel tempo con e senza zeri, sensibilità al prezzo come pendenza, utilità, prezzo di riserva e conjoint con dummy. Le lezioni 25–28 coprono tutti gli argomenti richiesti."
+        },
+        {
+          "table": [
+            [
+              "Verifica numerica",
+              "Risultato ricontrollato"
+            ],
+            [
+              "OLS sei clienti: Sxx=17,5; Sxy=43; Syy=113,3333",
+              "b=43/17,5=2,457143; a=9,066667."
+            ],
+            [
+              "Stessa OLS: SSE, SSR, R²",
+              "SSE=7,676190 €²; SSR=105,657143 €²; R²≈0,932269."
+            ],
+            [
+              "Domanda lineare sui prezzi 5,10,15 con frequenze 9,6,3",
+              "b=−0,6 acquisti/€; intercetta=12."
+            ],
+            [
+              "Dummy nell’utilità U=3+2D_A−D_B",
+              "U(A)=5; U(B)=2; U(riferimento C)=3."
+            ],
+            [
+              "WTP marginale con β_attr=1,8; β_prezzo=−0,03",
+              "−β_attr/β_prezzo = 60 €/unità di attributo."
+            ]
+          ]
+        },
+        {
+          "text": "CORREZIONE APPLICATA NELLA LEZIONE 26. La SSE in una regressione con risposta monetaria Y in euro deve essere riportata in €². RMSE e RSE sono invece in euro. La formula di OLS e R² è valida solo nel contesto specificato: per il modello lineare semplice con intercetta R²=r², ma questa identità non si può estendere indiscriminatamente ad altre specificazioni."
+        },
+        {
+          "text": "In analisi temporale i periodi a zero e quelli assenti per mancanza dati sono concettualmente distinti. Regressione condizionata all’acquisto (solo periodi attivi) e regressione della spesa per periodo (zeri inclusi) stimano oggetti diversi. La sensibilità al prezzo delle slide è la pendenza Cov(p,f)/Var(p), non l’elasticità-prezzo."
+        },
+        {
+          "text": "Nella conjoint analysis, i coefficienti delle dummy dipendono dai livelli di riferimento: un coefficiente negativo non significa utilità assoluta negativa, ma utilità inferiore al baseline nel modello dato. La disponibilità marginale a pagare calcolata come −β_attributo/β_prezzo è interpretabile se β_prezzo non è zero e il modello descrive adeguatamente le preferenze nell’intervallo pertinente."
+        }
+      ],
+      "concept": "E. Capitolo 6 — Regressione e Conjoint Analysis"
+    }
+  ],
+  "relations": [
+    {
+      "relation": "Lo scatter plot si affianca a una misura di associazione lineare",
+      "to": "l25-6",
+      "from": "l25-3"
+    },
+    {
+      "relation": "La correlazione descrive l’associazione mentre i minimi quadrati stimano una retta",
+      "to": "l26-3",
+      "from": "l25-6"
+    },
+    {
+      "relation": "L’esercizio applica la minimizzazione dei residui ai dati osservati",
+      "to": "l26-6",
+      "from": "l26-3"
+    },
+    {
+      "relation": "La pendenza può descrivere l’evoluzione del comportamento nel tempo",
+      "to": "l27-4",
+      "from": "l26-6"
+    },
+    {
+      "relation": "Includere o escludere gli zeri cambia la grandezza che si sta stimando",
+      "to": "l27-6",
+      "from": "l27-4"
+    },
+    {
+      "relation": "Gli attributi e i livelli entrano nella funzione di utilità",
+      "to": "l28-3",
+      "from": "l28-2"
+    },
+    {
+      "relation": "Le variabili dummy rappresentano livelli qualitativi nel modello additivo",
+      "to": "l28-5",
+      "from": "l28-3"
+    }
+  ]
+}

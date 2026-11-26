@@ -1,0 +1,766 @@
+{
+  "sections": [
+    {
+      "id": "introduzione",
+      "title": "Obiettivo del capitolo",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Comprendere come le operazioni aziendali modificano ricchezza, debiti, crediti, liquidità e reddito; saper leggere e costruire i prospetti fondamentali del bilancio, interpretandone i collegamenti. Questo capitolo è una trattazione autonoma dei fondamenti necessari per affrontare la contabilità direzionale."
+        }
+      ]
+    },
+    {
+      "id": "2-1",
+      "title": "2.1 Perché un’impresa ha bisogno della contabilità",
+      "topics": [
+        "cdg-c02-t01"
+      ],
+      "blocks": [
+        {
+          "text": "Ogni impresa svolge operazioni di gestione: acquista fattori produttivi, assume personale, investe in impianti, vende beni e servizi, contrae debiti e incassa crediti. Queste operazioni hanno conseguenze differenti: possono modificare il valore del patrimonio, il reddito prodotto e la disponibilità monetaria. Il sistema contabile permette di trasformare i singoli eventi in informazioni ordinate, confrontabili e verificabili."
+        },
+        {
+          "text": "La contabilità generale (Co.Ge.) è un sistema organizzato di rilevazione dei fatti di gestione, fondato su regole contabili, che contribuisce a determinare il reddito del periodo e la situazione patrimoniale e finanziaria dell’impresa. Le rilevazioni servono anche a rispettare gli obblighi informativi e a comunicare con soggetti esterni."
+        },
+        {
+          "text": "Operazioni di gestione. Si distinguono, a fini didattici, la gestione caratteristica (attività tipica), la gestione finanziaria (reperimento e remunerazione dei capitali) e le operazioni di investimento e disinvestimento. Una singola transazione può interessare contemporaneamente più dimensioni."
+        },
+        {
+          "diagram": [
+            [
+              "Economica",
+              "Costi e ricavi",
+              "Utile o perdita"
+            ],
+            [
+              "Patrimoniale",
+              "Attività e passività",
+              "Patrimonio netto"
+            ],
+            [
+              "Monetaria",
+              "Incassi e pagamenti",
+              "Liquidità"
+            ]
+          ],
+          "caption": "Tre prospettive per leggere i fatti aziendali."
+        }
+      ],
+      "concept": "Contabilità generale"
+    },
+    {
+      "id": "2-2",
+      "title": "2.2 Le tre dimensioni: economica, patrimoniale e monetaria",
+      "topics": [
+        "cdg-c02-t02"
+      ],
+      "blocks": [
+        {
+          "text": "Dimensione economica. Riguarda i costi dei fattori consumati e i ricavi generati per competenza in un periodo; la loro differenza concorre a formare l’utile o la perdita. Non coincide con la semplice differenza tra incassi e pagamenti."
+        },
+        {
+          "text": "Dimensione patrimoniale. Riguarda lo stock di attività, passività e patrimonio netto in un preciso istante. Le attività rappresentano risorse controllate dall’impresa da cui ci si attendono benefici economici; le passività sono obbligazioni verso terzi; il patrimonio netto rappresenta l’interesse residuo dei proprietari."
+        },
+        {
+          "text": "Dimensione finanziario-monetaria. Comprende crediti e debiti e, specificamente per il profilo monetario, incassi, pagamenti e disponibilità liquide. Un ricavo può generare un credito prima di diventare incasso; un acquisto può generare un debito prima del pagamento."
+        },
+        {
+          "text": "Esempio. Una società eroga un servizio per 12.000 € a dicembre, emettendo fattura con pagamento a gennaio. A dicembre il ricavo di competenza è 12.000 €; nasce un credito verso clienti di 12.000 €, ma la cassa non aumenta ancora. A gennaio la riscossione riduce il credito e aumenta la liquidità, senza creare un nuovo ricavo per lo stesso servizio."
+        },
+        {
+          "diagram": [
+            [
+              "1 dicembre",
+              "Consegna e ricavo",
+              "Competenza economica"
+            ],
+            [
+              "31 dicembre",
+              "Chiusura dell’esercizio"
+            ],
+            [
+              "31 gennaio",
+              "Incasso",
+              "Manifestazione monetaria"
+            ]
+          ],
+          "caption": "Competenza economica e incasso possono collocarsi in esercizi diversi."
+        }
+      ],
+      "concept": "Dimensioni economica, patrimoniale e monetaria"
+    },
+    {
+      "id": "2-3",
+      "title": "2.3 La competenza economica e la distinzione tra costo, uscita, ricavo e incasso",
+      "topics": [
+        "cdg-c02-t03"
+      ],
+      "blocks": [
+        {
+          "text": "Il principio della competenza economica richiede di attribuire al periodo costi e ricavi che gli competono, indipendentemente dalla data in cui interviene il regolamento monetario. Nella rappresentazione didattica è essenziale collegare i costi all’utilità consumata e ai ricavi pertinenti al periodo; in bilancio l’applicazione concreta richiede di rispettare i principi contabili vigenti."
+        },
+        {
+          "table": [
+            [
+              "Fenomeno",
+              "Significato",
+              "Possibile differimento"
+            ],
+            [
+              "Costo",
+              "Consumo economico di risorse",
+              "Il pagamento può avvenire prima o dopo"
+            ],
+            [
+              "Uscita monetaria",
+              "Pagamento effettivo",
+              "Può precedere il relativo costo"
+            ],
+            [
+              "Ricavo",
+              "Valore della prestazione di competenza",
+              "L’incasso può avvenire dopo"
+            ],
+            [
+              "Entrata monetaria",
+              "Incasso effettivo",
+              "Può anticipare il relativo ricavo"
+            ]
+          ]
+        },
+        {
+          "text": "Esempio: acquisto un macchinario per 100.000 €, pagando immediatamente. L’uscita monetaria è 100.000 €; in via ordinaria non si iscrive l’intera somma come costo del solo anno di acquisto, poiché il bene genera utilità in più esercizi. Il consumo economico è distribuito mediante ammortamento, se ricorrono le condizioni previste."
+        }
+      ],
+      "concept": "Competenza economica e manifestazione monetaria"
+    },
+    {
+      "id": "2-4",
+      "title": "2.4 Il bilancio d’esercizio: funzione e destinatari",
+      "topics": [
+        "cdg-c02-t04"
+      ],
+      "blocks": [
+        {
+          "text": "Il bilancio d’esercizio è il documento periodico con cui l’impresa rende conto del risultato economico dell’esercizio e della propria situazione patrimoniale e finanziaria. È uno strumento di comunicazione verso soci, creditori, finanziatori, fornitori, clienti, dipendenti, pubbliche amministrazioni e altri portatori di interesse (stakeholder)."
+        },
+        {
+          "text": "Per le società soggette alle regole ordinarie del Codice Civile, i documenti fondamentali del bilancio comprendono Stato Patrimoniale, Conto Economico, Rendiconto Finanziario e Nota Integrativa; esistono semplificazioni ed esoneri per alcune categorie di imprese. La relazione sulla gestione può accompagnare il bilancio nei casi previsti, ma non sostituisce tali prospetti."
+        },
+        {
+          "table": [
+            [
+              "Documento",
+              "Domanda a cui risponde"
+            ],
+            [
+              "Stato Patrimoniale",
+              "Quali risorse possiede e quali debiti ha l’impresa alla data di chiusura?"
+            ],
+            [
+              "Conto Economico",
+              "Quale reddito ha prodotto la gestione durante l’esercizio?"
+            ],
+            [
+              "Rendiconto Finanziario",
+              "Da quali attività proviene la liquidità e come è stata impiegata?"
+            ],
+            [
+              "Nota Integrativa",
+              "Con quali criteri sono stati valutati e spiegati i valori di bilancio?"
+            ]
+          ]
+        }
+      ],
+      "concept": "Bilancio d’esercizio"
+    },
+    {
+      "id": "2-5",
+      "title": "2.5 Principi di redazione e valutazione",
+      "topics": [
+        "cdg-c02-t05"
+      ],
+      "blocks": [
+        {
+          "text": "La rappresentazione contabile deve essere comprensibile, attendibile e coerente. Tra i principi richiamati nel corso figurano prudenza, continuità aziendale (going concern), competenza economica, costanza dei criteri, chiarezza e rappresentazione veritiera e corretta. La valutazione dei beni può partire dal costo di acquisto o produzione, ma i criteri applicabili variano secondo la specifica voce e il quadro normativo."
+        },
+        {
+          "text": "Prudenza. Non anticipare utili non realizzati e considerare rischi e perdite di competenza secondo le regole applicabili. Prudenza non equivale a sottostimare deliberatamente il patrimonio."
+        },
+        {
+          "text": "Continuità aziendale. Le valutazioni si basano, salvo diversa evidenza, sulla prospettiva che l’azienda continui a operare nel futuro prevedibile."
+        },
+        {
+          "text": "Costanza dei criteri. Applicare criteri omogenei nel tempo favorisce la comparabilità. Eventuali cambiamenti devono essere giustificati e rappresentati secondo le regole vigenti."
+        },
+        {
+          "text": "Costo storico. È una fondamentale base di misurazione, ad esempio per molte immobilizzazioni; non esaurisce le regole di valutazione del bilancio."
+        },
+        {
+          "text": "Nota di metodo: distinguere sempre i principi semplificati utili allo studio dal dettaglio giuridico dei singoli criteri di bilancio. Questa trattazione è rivolta ai fondamenti di Controllo di Gestione, non alla normativa fiscale."
+        }
+      ]
+    },
+    {
+      "id": "2-6",
+      "title": "2.6 Lo Stato Patrimoniale: struttura ed equazione fondamentale",
+      "topics": [
+        "cdg-c02-t06"
+      ],
+      "blocks": [
+        {
+          "text": "Lo Stato Patrimoniale fotografa la situazione dell’impresa in una data. La sua equazione fondamentale esprime il vincolo di equilibrio tra impieghi e fonti di finanziamento:"
+        },
+        {
+          "formula": "ATTIVITÀ = PASSIVITÀ + PATRIMONIO NETTO"
+        },
+        {
+          "text": "Le attività comprendono, fra le altre, immobilizzazioni, rimanenze, crediti e disponibilità liquide. Le passività comprendono debiti e altri obblighi verso terzi. Il patrimonio netto comprende capitale apportato dai soci, riserve e risultato d’esercizio. Le attività NON rappresentano soltanto la cassa; il patrimonio netto NON coincide necessariamente con il denaro versato in origine."
+        },
+        {
+          "table": [
+            [
+              "ATTIVO (impieghi)",
+              "PASSIVO E NETTO (fonti)"
+            ],
+            [
+              "Immobilizzazioni: fabbricati, impianti, brevetti",
+              "Patrimonio netto: capitale, riserve, utile/perdita"
+            ],
+            [
+              "Attivo circolante: rimanenze, crediti, titoli, liquidità",
+              "Fondi, TFR e debiti verso terzi"
+            ],
+            [
+              "Ratei e risconti attivi",
+              "Ratei e risconti passivi"
+            ]
+          ]
+        },
+        {
+          "text": "I termini “attività a breve” e “attività a lungo” sono frequenti nell’analisi gestionale, ma non coincidono perfettamente con la classificazione civilistica per destinazione riportata nel prospetto previsto dall’art. 2424 c.c. Analogamente, per i debiti l’esigibilità entro/oltre l’esercizio successivo è generalmente indicata nelle singole voci. È quindi opportuno distinguere lo schema civilistico dalla riclassificazione finanziaria."
+        },
+        {
+          "text": "Esempio iniziale: i soci sottoscrivono capitale per 150.000 € e ne versano il 30%. La banca riceve 45.000 €; il credito verso soci per la parte ancora dovuta è 105.000 €. Il totale dell’attivo è 150.000 €, uguale al capitale sociale di 150.000 € in assenza di altri debiti."
+        }
+      ],
+      "concept": "Stato Patrimoniale"
+    },
+    {
+      "id": "2-7",
+      "title": "2.7 L’ammortamento delle immobilizzazioni",
+      "topics": [
+        "cdg-c02-t07"
+      ],
+      "blocks": [
+        {
+          "text": "L’ammortamento rappresenta la ripartizione sistematica del costo ammortizzabile di un’immobilizzazione lungo la sua vita utile. La quota imputata al Conto Economico rappresenta il consumo di utilità del bene nel periodo; il valore contabile netto viene ridotto, normalmente attraverso un fondo ammortamento."
+        },
+        {
+          "formula": "QUOTA ANNUA (LINEARE) = (COSTO − VALORE RESIDUO) / VITA UTILE"
+        },
+        {
+          "text": "Esempio. Macchinario acquistato all’inizio del 2018 al costo di 100.000 €; valore residuo stimato 20.000 €; vita utile 4 anni; quote costanti. Il costo ammortizzabile è 80.000 € e la quota annua è 20.000 €. Il valore contabile netto al termine del 2018 è 80.000 €, al termine del 2019 è 60.000 €."
+        },
+        {
+          "table": [
+            [
+              "Esercizio",
+              "Quota di ammortamento",
+              "Fondo cumulato",
+              "Valore netto finale"
+            ],
+            [
+              "2018",
+              "20.000 €",
+              "20.000 €",
+              "80.000 €"
+            ],
+            [
+              "2019",
+              "20.000 €",
+              "40.000 €",
+              "60.000 €"
+            ],
+            [
+              "2020",
+              "20.000 €",
+              "60.000 €",
+              "40.000 €"
+            ],
+            [
+              "2021",
+              "20.000 €",
+              "80.000 €",
+              "20.000 €"
+            ]
+          ]
+        },
+        {
+          "text": "Se il fornitore è pagato 50.000 € nel 2018, 25.000 € nel 2019 e 25.000 € nel 2020, alla fine del 2018 rimane un debito verso il fornitore di 50.000 € e alla fine del 2019 di 25.000 € (ipotizzando nessun altro evento). Il debito dipende dai pagamenti, mentre l’ammortamento dipende dal consumo dell’utilità economica: sono fenomeni separati."
+        },
+        {
+          "text": "Attenzione: la sola quota di ammortamento non costituisce un accantonamento monetario vincolato a finanziare la sostituzione del bene. Non implica, di per sé, l’esistenza di un fondo liquido."
+        }
+      ],
+      "concept": "Ammortamento"
+    },
+    {
+      "id": "2-8",
+      "title": "2.8 Le rimanenze di magazzino e i criteri di valutazione",
+      "topics": [
+        "cdg-c02-t08"
+      ],
+      "blocks": [
+        {
+          "text": "Le rimanenze sono beni acquistati o prodotti che non hanno ancora esaurito la loro utilità economica nel periodo. Nel calcolo del costo di competenza, la quantità rimasta in magazzino a fine anno deve essere separata dal consumo. Per le materie prime, in forma semplificata:"
+        },
+        {
+          "formula": "CONSUMI = RIMANENZE INIZIALI + ACQUISTI − RIMANENZE FINALI"
+        },
+        {
+          "text": "Quando beni fungibili sono acquistati a prezzi differenti, occorre attribuire un valore alle unità rimaste. I metodi trattati nel corso includono costo medio ponderato, FIFO (prime entrate considerate prime uscite) e LIFO (ultime entrate considerate prime uscite). Il LIFO è discusso come criterio di costing e in contesti contabili nazionali, ma non è ammesso dagli IFRS; occorre distinguere il modello esercitativo dalle regole applicabili in bilancio."
+        },
+        {
+          "text": "Esempio didattico indipendente: si acquistano 100 unità a 10 € e poi 100 unità a 12 €. Si vendono 150 unità. Rimangono 50 unità. Per FIFO il valore finale è 50 × 12 = 600 €; per LIFO periodico è 50 × 10 = 500 €; con costo medio ponderato periodico il costo medio è 11 € e il magazzino finale vale 550 €. La differenza di valorizzazione modifica il costo attribuito alle unità vendute e quindi il reddito del periodo, a parità delle altre condizioni."
+        },
+        {
+          "table": [
+            [
+              "Metodo",
+              "Valore rimanenza finale",
+              "Costo delle 150 unità uscite"
+            ],
+            [
+              "FIFO",
+              "600 €",
+              "1.600 €"
+            ],
+            [
+              "LIFO periodico",
+              "500 €",
+              "1.700 €"
+            ],
+            [
+              "Costo medio ponderato",
+              "550 €",
+              "1.650 €"
+            ]
+          ]
+        }
+      ],
+      "concept": "Criteri di valutazione delle rimanenze"
+    },
+    {
+      "id": "2-9",
+      "title": "2.9 Ratei e risconti: collocare costi e ricavi nel periodo corretto",
+      "topics": [
+        "cdg-c02-t09"
+      ],
+      "blocks": [
+        {
+          "text": "I ratei e i risconti consentono di rispettare la competenza economica per operazioni che si sviluppano su più periodi. I ratei rilevano quote di ricavi o costi già maturati nel periodo, ma con manifestazione finanziaria futura; i risconti rinviano a esercizi successivi quote di ricavi o costi già contabilizzati, ma non ancora di competenza."
+        },
+        {
+          "table": [
+            [
+              "Voce",
+              "Interpretazione",
+              "Esempio"
+            ],
+            [
+              "Rateo attivo",
+              "Ricavo maturato, da liquidare successivamente",
+              "Interessi attivi maturati e non ancora riscossi"
+            ],
+            [
+              "Rateo passivo",
+              "Costo maturato, da liquidare successivamente",
+              "Interessi passivi maturati e non ancora pagati"
+            ],
+            [
+              "Risconto attivo",
+              "Costo pagato/registrato in anticipo per competenza futura",
+              "Premio assicurativo anticipato"
+            ],
+            [
+              "Risconto passivo",
+              "Ricavo incassato/registrato in anticipo per competenza futura",
+              "Canone riscosso anticipatamente"
+            ]
+          ]
+        },
+        {
+          "text": "Esempio di risconto. Il 1° ottobre si paga un’assicurazione annuale di 12.000 €, relativa al periodo ottobre–settembre successivo. Al 31 dicembre sono di competenza 3 mesi, pari a 3.000 €; i restanti 9 mesi, pari a 9.000 €, costituiscono risconto attivo, ipotizzando imputazione temporale uniforme."
+        },
+        {
+          "text": "Esempio di rateo. Dal 1° agosto decorre un contratto di consulenza di un anno, remunerato 12.000 € da fatturare e pagare alla conclusione. Al 31 dicembre sono maturati 5 mesi: la società che presta il servizio rileva 5.000 € di ricavo e, se ricorrono i presupposti per questa rappresentazione, un rateo attivo; l’impresa cliente rileva 5.000 € di costo e rateo passivo. Nel concreto la classificazione può dipendere dalla natura della prestazione e dall’esigibilità dei corrispettivi."
+        }
+      ],
+      "concept": "Ratei e risconti"
+    },
+    {
+      "id": "2-10",
+      "title": "2.10 Il Conto Economico: formazione del reddito",
+      "topics": [
+        "cdg-c02-t10"
+      ],
+      "blocks": [
+        {
+          "text": "Il Conto Economico descrive i componenti positivi e negativi del reddito riferiti a un intervallo temporale, normalmente l’esercizio. In forma elementare il risultato è dato dalla differenza tra ricavi e costi di competenza, ma nel bilancio civilistico le voci sono raggruppate in uno schema ordinato per aree."
+        },
+        {
+          "formula": "RISULTATO D’ESERCIZIO = COMPONENTI POSITIVI − COMPONENTI NEGATIVI"
+        },
+        {
+          "text": "La struttura civilistica del Conto Economico (art. 2425 c.c.) individua: A) Valore della produzione; B) Costi della produzione; differenza A − B; C) Proventi e oneri finanziari; D) Rettifiche di valore di attività e passività finanziarie; risultato prima delle imposte; imposte sul reddito; utile o perdita dell’esercizio."
+        },
+        {
+          "table": [
+            [
+              "Area",
+              "Voci tipiche / contenuto"
+            ],
+            [
+              "A — Valore della produzione",
+              "Vendite e prestazioni; variazioni rimanenze di prodotti; lavori interni capitalizzati; altri ricavi"
+            ],
+            [
+              "B — Costi della produzione",
+              "Materie, servizi, godimento beni di terzi, personale, ammortamenti, variazioni rimanenze materie, oneri diversi"
+            ],
+            [
+              "C — Gestione finanziaria",
+              "Interessi attivi e passivi, proventi da partecipazioni e altre voci finanziarie"
+            ],
+            [
+              "D — Rettifiche finanziarie",
+              "Rivalutazioni e svalutazioni di attività/passività finanziarie"
+            ],
+            [
+              "Risultato netto",
+              "Risultato prima delle imposte meno imposte di competenza"
+            ]
+          ]
+        },
+        {
+          "text": "Non confondere utile con liquidità: un esercizio può chiudere in utile e presentare tensioni di cassa, ad esempio a causa di incassi differiti o investimenti elevati."
+        }
+      ],
+      "concept": "Conto Economico"
+    },
+    {
+      "id": "2-11",
+      "title": "2.11 Collegamento tra Stato Patrimoniale e Conto Economico",
+      "topics": [
+        "cdg-c02-t11"
+      ],
+      "blocks": [
+        {
+          "text": "Il Conto Economico determina l’utile o la perdita, che contribuisce a modificare il patrimonio netto presentato nello Stato Patrimoniale. In assenza di conferimenti, prelievi/distribuzioni e altre variazioni dirette di patrimonio netto, vale la seguente relazione semplificata:"
+        },
+        {
+          "formula": "PATRIMONIO NETTO FINALE = PATRIMONIO NETTO INIZIALE + UTILE (− PERDITA)"
+        },
+        {
+          "diagram": [
+            [
+              "Conto Economico",
+              "Ricavi − costi = utile (perdita)"
+            ],
+            [
+              "Risultato d’esercizio",
+              "Confluisce nel patrimonio netto"
+            ],
+            [
+              "Stato Patrimoniale",
+              "Attività = passività + patrimonio netto"
+            ]
+          ],
+          "caption": "Il risultato del Conto Economico confluisce nel Patrimonio Netto."
+        }
+      ],
+      "concept": "Collegamento con lo Stato Patrimoniale"
+    },
+    {
+      "id": "2-12",
+      "title": "2.12 Caso integrato: dalla costituzione ai prospetti del primo esercizio",
+      "topics": [
+        "cdg-c02-t12",
+        "cdg-c02-t13",
+        "cdg-c02-t14"
+      ],
+      "blocks": [
+        {
+          "text": "Una società nasce con capitale sottoscritto di 150.000 €, di cui viene versato il 30%. Nel primo esercizio acquista materiali per 50.000 €, pagando 25.000 €; materiali per 45.000 € vengono consumati, 5.000 € restano in magazzino. Acquista immobilizzazioni per 60.000 €, pagando 30.000 €, con ammortamento annuo di 15.000 €. Sostiene costi di personale per 20.000 € interamente pagati e matura TFR per 1.500 €. Vende servizi per 90.000 €, incassandone 70.000 €. Si ipotizzano assenti ulteriori operazioni, imposte e componenti di reddito."
+        }
+      ]
+    },
+    {
+      "id": "2-12-1",
+      "title": "2.12.1 Ricostruzione dei flussi di cassa",
+      "topics": [
+        "cdg-c02-t12"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Entrate monetarie",
+              "Importo",
+              "Uscite monetarie",
+              "Importo"
+            ],
+            [
+              "Capitale versato",
+              "45.000 €",
+              "Pagamenti materiali",
+              "25.000 €"
+            ],
+            [
+              "Incassi vendite",
+              "70.000 €",
+              "Pagamenti investimenti",
+              "30.000 €"
+            ],
+            [
+              "",
+              "",
+              "Pagamenti personale",
+              "20.000 €"
+            ],
+            [
+              "TOTALE",
+              "115.000 €",
+              "TOTALE",
+              "75.000 €"
+            ]
+          ]
+        },
+        {
+          "formula": "DISPONIBILITÀ LIQUIDE FINALI = 115.000 − 75.000 = 40.000 €"
+        }
+      ],
+      "concept": "Ricostruzione dei flussi di cassa"
+    },
+    {
+      "id": "2-12-2",
+      "title": "2.12.2 Costruzione del Conto Economico",
+      "topics": [
+        "cdg-c02-t13"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Voce",
+              "Importo"
+            ],
+            [
+              "Ricavi dei servizi",
+              "+90.000 €"
+            ],
+            [
+              "Acquisti materiali",
+              "−50.000 €"
+            ],
+            [
+              "Rimanenze finali materiali (rettifica del consumo)",
+              "+5.000 €"
+            ],
+            [
+              "Costo del personale",
+              "−20.000 €"
+            ],
+            [
+              "TFR maturato",
+              "−1.500 €"
+            ],
+            [
+              "Ammortamento dell’esercizio",
+              "−15.000 €"
+            ],
+            [
+              "UTILE D’ESERCIZIO",
+              "+8.500 €"
+            ]
+          ]
+        },
+        {
+          "text": "Il consumo dei materiali è 50.000 − 5.000 = 45.000 €. Il risultato è quindi 90.000 − 45.000 − 20.000 − 1.500 − 15.000 = 8.500 €. Osserva che le uscite monetarie non sono state usate automaticamente come costi di competenza."
+        }
+      ],
+      "concept": "Conto Economico del caso integrato"
+    },
+    {
+      "id": "2-12-3",
+      "title": "2.12.3 Costruzione dello Stato Patrimoniale",
+      "topics": [
+        "cdg-c02-t14"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "ATTIVO",
+              "Importo",
+              "PASSIVO E NETTO",
+              "Importo"
+            ],
+            [
+              "Credito verso soci",
+              "105.000 €",
+              "Capitale sociale",
+              "150.000 €"
+            ],
+            [
+              "Immobilizzazioni nette",
+              "45.000 €",
+              "Utile di esercizio",
+              "8.500 €"
+            ],
+            [
+              "Rimanenze materiali",
+              "5.000 €",
+              "Fondo TFR",
+              "1.500 €"
+            ],
+            [
+              "Crediti verso clienti",
+              "20.000 €",
+              "Debiti verso fornitori",
+              "55.000 €"
+            ],
+            [
+              "Disponibilità liquide",
+              "40.000 €",
+              "",
+              ""
+            ],
+            [
+              "TOTALE ATTIVO",
+              "215.000 €",
+              "TOTALE PASSIVO E NETTO",
+              "215.000 €"
+            ]
+          ]
+        },
+        {
+          "text": "Il debito verso fornitori comprende 25.000 € per materiali ancora da pagare e 30.000 € per investimenti ancora da pagare. Il valore netto delle immobilizzazioni è 60.000 − 15.000 = 45.000 €. Il credito verso clienti è 90.000 − 70.000 = 20.000 €. La verifica finale 215.000 = 56.500 + 158.500 conferma l’equilibrio dei prospetti, ma non sostituisce il controllo della corretta classificazione delle voci."
+        }
+      ],
+      "concept": "Situazione patrimoniale del caso integrato"
+    },
+    {
+      "id": "2-13",
+      "title": "2.13 Errori ricorrenti e controlli di coerenza",
+      "topics": [
+        "cdg-c02-t15"
+      ],
+      "blocks": [
+        {
+          "text": "Confondere fatturato e incassi. I ricavi maturati possono essere superiori agli incassi, generando crediti commerciali."
+        },
+        {
+          "text": "Confondere investimento e costo immediato. Un macchinario è normalmente immobilizzato e ammortizzato, non interamente spesato nell’anno di acquisto."
+        },
+        {
+          "text": "Dimenticare magazzino e consumi. Le materie acquistate ma non consumate restano fra le attività e riducono il costo di competenza."
+        },
+        {
+          "text": "Dimenticare i costi maturati ma non pagati. TFR, ratei e altre competenze economiche possono esistere senza immediata uscita di cassa."
+        },
+        {
+          "text": "Ritenere il patrimonio netto una disponibilità bancaria. Il patrimonio netto è un valore residuale: attività meno passività."
+        },
+        {
+          "text": "Usare l’equazione patrimoniale come unica verifica. La quadratura è necessaria, ma non assicura che classificazioni e misurazioni siano corrette."
+        }
+      ]
+    },
+    {
+      "id": "2-14",
+      "title": "2.14 Verifica dell’apprendimento",
+      "topics": [],
+      "blocks": [
+        {
+          "list": [
+            "Un servizio venduto a dicembre e incassato a febbraio modifica quali grandezze nei due esercizi?",
+            "Qual è la differenza fra competenza economica e manifestazione monetaria?",
+            "Un macchinario da 60.000 € ha valore residuo di 12.000 € e vita utile di quattro anni: quota annua lineare e valore netto dopo due anni?",
+            "Materie iniziali 8.000 €, acquisti 32.000 €, materie finali 7.000 €: qual è il consumo?",
+            "Un canone annuale di 24.000 € è pagato il 1° novembre. Quale costo compete all’anno, e quale risconto resta al 31 dicembre, con ripartizione mensile uniforme?",
+            "Perché utile e cassa non coincidono necessariamente?",
+            "Una società ha attività per 270.000 € e passività per 115.000 €: quanto vale il patrimonio netto?",
+            "Quali documenti costituiscono il bilancio ordinario e quale domanda soddisfa ognuno?"
+          ]
+        },
+        {
+          "solutions": [
+            "A dicembre ricavi e crediti; a febbraio riduzione dei crediti e aumento delle disponibilità liquide (a parità delle altre condizioni).",
+            "La competenza individua il periodo cui riferire costi/ricavi; la manifestazione monetaria è l’effettivo incasso/pagamento.",
+            "(60.000−12.000)/4 = 12.000 € all’anno; netto dopo due anni = 36.000 €.",
+            "8.000+32.000−7.000 = 33.000 €.",
+            "Costo novembre–dicembre: 4.000 €; risconto attivo: 20.000 €.",
+            "Per crediti/debiti, ammortamenti, competenze differite e investimenti; il risultato economico non equivale al flusso monetario.",
+            "270.000−115.000 = 155.000 €.",
+            "SP: situazione patrimoniale; CE: risultato economico; rendiconto: movimenti di liquidità; nota integrativa: criteri e dettagli, salvo esenzioni normative."
+          ]
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "2-1",
+      "relation": "si articola in",
+      "to": "2-2"
+    },
+    {
+      "from": "2-2",
+      "relation": "richiedono di distinguere",
+      "to": "2-3"
+    },
+    {
+      "from": "2-3",
+      "relation": "si applica alle immobilizzazioni mediante",
+      "to": "2-7"
+    },
+    {
+      "from": "2-3",
+      "relation": "si applica ai consumi di magazzino mediante",
+      "to": "2-8"
+    },
+    {
+      "from": "2-3",
+      "relation": "attribuisce costi e ricavi al periodo tramite",
+      "to": "2-9"
+    },
+    {
+      "from": "2-4",
+      "relation": "presenta le risorse e le fonti nello",
+      "to": "2-6"
+    },
+    {
+      "from": "2-4",
+      "relation": "presenta il risultato d’esercizio nel",
+      "to": "2-10"
+    },
+    {
+      "from": "2-10",
+      "relation": "mostra l’utile che modifica il patrimonio netto →",
+      "to": "2-11"
+    },
+    {
+      "from": "2-12-2",
+      "relation": "si confronta con la",
+      "to": "2-12-1"
+    },
+    {
+      "from": "2-12-2",
+      "relation": "trasferisce l’utile alla",
+      "to": "2-12-3"
+    }
+  ]
+}

@@ -1,0 +1,2910 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "si",
+  "source": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8: SQL avanzato: viste, asserzioni, trigger e basi di dati attive, pagine PDF 113–129. Unica fonte autorizzata; SQL standard teorico, esempi PostgreSQL, confronto Oracle ed esercizi originali sono distinti come nel manuale.",
+  "chapter": {
+    "id": "si-c08",
+    "title": "SQL avanzato: viste, asserzioni, trigger e basi di dati attive",
+    "order": 8,
+    "topics": [
+      {
+        "id": "si-c08-t01",
+        "title": "SQL avanzato e ruolo nel sistema informativo"
+      },
+      {
+        "id": "si-c08-t02",
+        "title": "Integrità dichiarativa e vincoli complessi"
+      },
+      {
+        "id": "si-c08-t03",
+        "title": "Viste relazionali: significato e impieghi"
+      },
+      {
+        "id": "si-c08-t04",
+        "title": "Viste aggiornabili e WITH CHECK OPTION"
+      },
+      {
+        "id": "si-c08-t05",
+        "title": "Viste materializzate e refresh"
+      },
+      {
+        "id": "si-c08-t06",
+        "title": "Asserzioni SQL e portata globale"
+      },
+      {
+        "id": "si-c08-t07",
+        "title": "Database attivi e regole ECA"
+      },
+      {
+        "id": "si-c08-t08",
+        "title": "Trigger: eventi, tempi, livelli e condizioni"
+      },
+      {
+        "id": "si-c08-t09",
+        "title": "OLD, NEW e valori restituiti"
+      },
+      {
+        "id": "si-c08-t10",
+        "title": "Funzioni trigger PostgreSQL / PL/pgSQL"
+      },
+      {
+        "id": "si-c08-t11",
+        "title": "Schema e dati didattici delle offerte"
+      },
+      {
+        "id": "si-c08-t12",
+        "title": "Trigger di audit e storicizzazione"
+      },
+      {
+        "id": "si-c08-t13",
+        "title": "Trigger di validazione e ciclo di vita"
+      },
+      {
+        "id": "si-c08-t14",
+        "title": "Transazioni, concorrenza e vincoli robusti"
+      },
+      {
+        "id": "si-c08-t15",
+        "title": "Scelta tra vincoli, trigger e applicazione"
+      },
+      {
+        "id": "si-c08-t16",
+        "title": "Prestazioni, sicurezza e manutenzione dei trigger"
+      },
+      {
+        "id": "si-c08-t17",
+        "title": "Differenze PostgreSQL e Oracle"
+      },
+      {
+        "id": "si-c08-t18",
+        "title": "Sedici esercizi svolti in stile esame"
+      },
+      {
+        "id": "si-c08-t19",
+        "title": "Sei esercizi autonomi con soluzioni"
+      },
+      {
+        "id": "si-c08-t20",
+        "title": "Autoverifica e mini-simulazione"
+      },
+      {
+        "id": "si-c08-t21",
+        "title": "Glossario e collegamenti conclusivi"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§8.1 — pagina PDF 113",
+        "cardIds": [
+          "si-c08-q001",
+          "si-c08-q002",
+          "si-c08-q003",
+          "si-c08-q004",
+          "si-c08-q005",
+          "si-c08-q006"
+        ]
+      },
+      {
+        "label": "§8.2 — pagine PDF 113–114",
+        "cardIds": [
+          "si-c08-q007",
+          "si-c08-q008",
+          "si-c08-q009",
+          "si-c08-q010",
+          "si-c08-q011",
+          "si-c08-q012",
+          "si-c08-q013",
+          "si-c08-q014",
+          "si-c08-q015"
+        ]
+      },
+      {
+        "label": "§8.3 — pagina PDF 114",
+        "cardIds": [
+          "si-c08-q016",
+          "si-c08-q017",
+          "si-c08-q018",
+          "si-c08-q019",
+          "si-c08-q020",
+          "si-c08-q021",
+          "si-c08-q022",
+          "si-c08-q023",
+          "si-c08-q024"
+        ]
+      },
+      {
+        "label": "§8.4 — pagina PDF 115",
+        "cardIds": [
+          "si-c08-q025",
+          "si-c08-q026",
+          "si-c08-q027",
+          "si-c08-q028",
+          "si-c08-q029",
+          "si-c08-q030",
+          "si-c08-q031",
+          "si-c08-q032"
+        ]
+      },
+      {
+        "label": "§8.5 — pagine PDF 115–116",
+        "cardIds": [
+          "si-c08-q033",
+          "si-c08-q034",
+          "si-c08-q035",
+          "si-c08-q036",
+          "si-c08-q037",
+          "si-c08-q038",
+          "si-c08-q039",
+          "si-c08-q040"
+        ]
+      },
+      {
+        "label": "§8.6 — pagina PDF 116",
+        "cardIds": [
+          "si-c08-q041",
+          "si-c08-q042",
+          "si-c08-q043",
+          "si-c08-q044",
+          "si-c08-q045",
+          "si-c08-q046",
+          "si-c08-q047"
+        ]
+      },
+      {
+        "label": "§8.7 — pagine PDF 116–117",
+        "cardIds": [
+          "si-c08-q048",
+          "si-c08-q049",
+          "si-c08-q050",
+          "si-c08-q051",
+          "si-c08-q052",
+          "si-c08-q053"
+        ]
+      },
+      {
+        "label": "§8.8 — pagina PDF 117",
+        "cardIds": [
+          "si-c08-q054",
+          "si-c08-q055",
+          "si-c08-q056",
+          "si-c08-q057",
+          "si-c08-q058",
+          "si-c08-q059",
+          "si-c08-q060",
+          "si-c08-q061",
+          "si-c08-q062",
+          "si-c08-q063",
+          "si-c08-q064"
+        ]
+      },
+      {
+        "label": "§8.9 — pagine PDF 117–118",
+        "cardIds": [
+          "si-c08-q065",
+          "si-c08-q066",
+          "si-c08-q067",
+          "si-c08-q068",
+          "si-c08-q069",
+          "si-c08-q070",
+          "si-c08-q071",
+          "si-c08-q072",
+          "si-c08-q073"
+        ]
+      },
+      {
+        "label": "§8.10 — pagina PDF 118",
+        "cardIds": [
+          "si-c08-q074",
+          "si-c08-q075",
+          "si-c08-q076",
+          "si-c08-q077",
+          "si-c08-q078",
+          "si-c08-q079",
+          "si-c08-q080",
+          "si-c08-q081",
+          "si-c08-q082"
+        ]
+      },
+      {
+        "label": "§8.11 — pagine PDF 119–120",
+        "cardIds": [
+          "si-c08-q083",
+          "si-c08-q084",
+          "si-c08-q085",
+          "si-c08-q086",
+          "si-c08-q087",
+          "si-c08-q088",
+          "si-c08-q089",
+          "si-c08-q090",
+          "si-c08-q091",
+          "si-c08-q092",
+          "si-c08-q093",
+          "si-c08-q094",
+          "si-c08-q095",
+          "si-c08-q096",
+          "si-c08-q097",
+          "si-c08-q098"
+        ]
+      },
+      {
+        "label": "§8.12 — pagine PDF 120–121",
+        "cardIds": [
+          "si-c08-q099",
+          "si-c08-q100",
+          "si-c08-q101",
+          "si-c08-q102",
+          "si-c08-q103",
+          "si-c08-q104",
+          "si-c08-q105",
+          "si-c08-q106",
+          "si-c08-q107",
+          "si-c08-q108"
+        ]
+      },
+      {
+        "label": "§8.13 — pagine PDF 121–123",
+        "cardIds": [
+          "si-c08-q109",
+          "si-c08-q110",
+          "si-c08-q111",
+          "si-c08-q112",
+          "si-c08-q113",
+          "si-c08-q114",
+          "si-c08-q115",
+          "si-c08-q116",
+          "si-c08-q117",
+          "si-c08-q118",
+          "si-c08-q119",
+          "si-c08-q120",
+          "si-c08-q121",
+          "si-c08-q122",
+          "si-c08-q123"
+        ]
+      },
+      {
+        "label": "§8.14 — pagina PDF 123",
+        "cardIds": [
+          "si-c08-q124",
+          "si-c08-q125",
+          "si-c08-q126",
+          "si-c08-q127",
+          "si-c08-q128",
+          "si-c08-q129",
+          "si-c08-q130",
+          "si-c08-q131",
+          "si-c08-q132",
+          "si-c08-q133"
+        ]
+      },
+      {
+        "label": "§8.15 — pagina PDF 124",
+        "cardIds": [
+          "si-c08-q134",
+          "si-c08-q135",
+          "si-c08-q136",
+          "si-c08-q137",
+          "si-c08-q138",
+          "si-c08-q139",
+          "si-c08-q140",
+          "si-c08-q141",
+          "si-c08-q142"
+        ]
+      },
+      {
+        "label": "§8.16 — pagina PDF 124",
+        "cardIds": [
+          "si-c08-q143",
+          "si-c08-q144",
+          "si-c08-q145",
+          "si-c08-q146",
+          "si-c08-q147",
+          "si-c08-q148",
+          "si-c08-q149"
+        ]
+      },
+      {
+        "label": "§8.17 — pagine PDF 124–125",
+        "cardIds": [
+          "si-c08-q150",
+          "si-c08-q151",
+          "si-c08-q152",
+          "si-c08-q153",
+          "si-c08-q154",
+          "si-c08-q155",
+          "si-c08-q156",
+          "si-c08-q157",
+          "si-c08-q158"
+        ]
+      },
+      {
+        "label": "§8.18 — pagine PDF 125–127",
+        "cardIds": [
+          "si-c08-q159",
+          "si-c08-q160",
+          "si-c08-q161",
+          "si-c08-q162",
+          "si-c08-q163",
+          "si-c08-q164",
+          "si-c08-q165",
+          "si-c08-q166",
+          "si-c08-q167",
+          "si-c08-q168",
+          "si-c08-q169",
+          "si-c08-q170",
+          "si-c08-q171",
+          "si-c08-q172",
+          "si-c08-q173",
+          "si-c08-q174",
+          "si-c08-q175"
+        ]
+      },
+      {
+        "label": "§8.19 — pagina PDF 127",
+        "cardIds": [
+          "si-c08-q176",
+          "si-c08-q177",
+          "si-c08-q178",
+          "si-c08-q179",
+          "si-c08-q180",
+          "si-c08-q181",
+          "si-c08-q182"
+        ]
+      },
+      {
+        "label": "§8.20 — pagine PDF 127–129",
+        "cardIds": [
+          "si-c08-q183",
+          "si-c08-q184",
+          "si-c08-q185",
+          "si-c08-q186",
+          "si-c08-q187",
+          "si-c08-q188",
+          "si-c08-q189",
+          "si-c08-q190",
+          "si-c08-q191",
+          "si-c08-q192",
+          "si-c08-q193",
+          "si-c08-q194",
+          "si-c08-q195",
+          "si-c08-q196",
+          "si-c08-q197"
+        ]
+      },
+      {
+        "label": "§8.21 — pagina PDF 129",
+        "cardIds": [
+          "si-c08-q198",
+          "si-c08-q199",
+          "si-c08-q200",
+          "si-c08-q201",
+          "si-c08-q202",
+          "si-c08-q203"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "si-c08-q001",
+      "topicId": "si-c08-t01",
+      "question": "Quali funzionalità evolute di SQL sono studiate nel Capitolo 8?",
+      "answer": "Viste, asserzioni, trigger e basi di dati attive.",
+      "detail": "Permettono rispettivamente prospettive logiche sui dati, formulazione teorica di invarianti globali, reazioni agli eventi e comportamento autonomo del DBMS.",
+      "example": "Un report usa una VIEW; una variazione di prezzo può attivare un audit tramite trigger.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerarle tutte modalità equivalenti di memorizzare righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.1, pagina PDF 113"
+    },
+    {
+      "id": "si-c08-q002",
+      "topicId": "si-c08-t01",
+      "question": "Perché le viste sono utili a report e applicazioni aziendali?",
+      "answer": "Espongono interrogazioni riutilizzabili come interfacce logiche stabili sui dati.",
+      "detail": "Possono isolare l’utilizzatore dai dettagli di join e filtri delle tabelle e offrire viste differenti a ruoli differenti.",
+      "example": "Una vista espone solo codice e prezzo delle offerte in BOZZA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che una vista ordinaria duplichi fisicamente il risultato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.1, pagina PDF 113"
+    },
+    {
+      "id": "si-c08-q003",
+      "topicId": "si-c08-t01",
+      "question": "Che cosa distingue un database attivo da uno puramente passivo?",
+      "answer": "Un database attivo reagisce a eventi previsti mediante regole, oltre a memorizzare dati e rispondere alle query.",
+      "detail": "Le azioni automatiche sono avviate dal DBMS al verificarsi di operazioni che soddisfano le condizioni stabilite.",
+      "example": "UPDATE prezzo → confronto vecchio/nuovo → INSERT nella tabella audit.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la reazione interna del DBMS con una chiamata applicativa esplicita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.1, pagina PDF 113"
+    },
+    {
+      "id": "si-c08-q004",
+      "topicId": "si-c08-t01",
+      "question": "Quali sono i tre componenti essenziali del paradigma ECA?",
+      "answer": "Evento, Condizione e Azione (Event–Condition–Action).",
+      "detail": "La condizione determina se eseguire la reazione in corrispondenza di un evento.",
+      "example": "Evento: UPDATE; condizione: prezzo cambiato; azione: registra storico.",
+      "formulas": [],
+      "connections": [
+        "§8.7: formalizzazione delle regole delle basi di dati attive."
+      ],
+      "mistakes": "Non confondere la condizione con l’evento stesso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.1, pagina PDF 113"
+    },
+    {
+      "id": "si-c08-q005",
+      "topicId": "si-c08-t01",
+      "question": "Quali tre equivalenze sbagliate evidenzia la nota introduttiva del capitolo?",
+      "answer": "Una VIEW non è automaticamente una copia materializzata; un trigger non rimpiazza i vincoli ben progettati; una ASSERTION teorica non è necessariamente eseguibile nel DBMS.",
+      "detail": "Ogni costrutto ha un perimetro e una disponibilità implementativa distinti.",
+      "example": "CREATE ASSERTION non è supportato da PostgreSQL nel caso trattato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare SQL standard, modello logico e supporto reale di PostgreSQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.1, pagina PDF 113"
+    },
+    {
+      "id": "si-c08-q006",
+      "topicId": "si-c08-t01",
+      "question": "Come si collegano SQL avanzato, progettazione del DB e governo del sistema informativo?",
+      "answer": "Le regole evolute di SQL implementano controlli e prospettive informative derivati dai requisiti e dal modello dati.",
+      "detail": "La scelta nasce dalla semantica del dominio, non dal desiderio di utilizzare la tecnologia più sofisticata.",
+      "example": "La regola «approvata solo con scenario» va modellata e verificata prima di scegliere un trigger.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare un trigger per nascondere requisiti poco chiari.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.1, pagina PDF 113"
+    },
+    {
+      "id": "si-c08-q007",
+      "topicId": "si-c08-t02",
+      "question": "Che cos’è un vincolo di integrità in una base di dati?",
+      "answer": "Una condizione che deve essere vera in ogni stato ammissibile del database.",
+      "detail": "La dichiarazione centralizzata permette di applicare la regola a modifiche effettuate da client diversi.",
+      "example": "prezzo_eur_kwh >= 0 per ogni offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare i vincoli alla validazione dell’interfaccia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.2, pagina PDF 113"
+    },
+    {
+      "id": "si-c08-q008",
+      "topicId": "si-c08-t02",
+      "question": "Perché preferire un vincolo dichiarativo nativo rispetto a un trigger quando possibile?",
+      "answer": "È generalmente più semplice, documentabile, centralizzato e supportato direttamente dal DBMS.",
+      "detail": "Evita una logica procedurale che aumenterebbe manutenzione e rischi di errore.",
+      "example": "CHECK(volume_kwh > 0) è preferibile a un trigger che controlla lo stesso valore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare «più righe di codice» a maggiore affidabilità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.2, pagina PDF 113"
+    },
+    {
+      "id": "si-c08-q009",
+      "topicId": "si-c08-t02",
+      "question": "Quale proprietà impone NOT NULL e quale PRIMARY KEY?",
+      "answer": "NOT NULL impedisce valori NULL in una colonna; PRIMARY KEY identifica univocamente le righe con valori non nulli.",
+      "detail": "Una chiave primaria combina il vincolo di unicità con l’obbligo di identificazione.",
+      "example": "id_offerta INTEGER PRIMARY KEY; codice VARCHAR(30) NOT NULL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare una colonna UNIQUE nullable come sempre equivalente a una PK.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.2, pagina PDF 113"
+    },
+    {
+      "id": "si-c08-q010",
+      "topicId": "si-c08-t02",
+      "question": "Qual è la funzione di CHECK per una regola locale?",
+      "answer": "Verificare un predicato esprimibile sugli attributi della riga interessata.",
+      "detail": "Nel caso PostgreSQL del manuale un CHECK non deve essere usato per contare altre righe con SELECT annidate.",
+      "example": "CHECK (importo >= 0); CHECK (stato IN ('BOZZA','APPROVATA')).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere un CHECK inter-tabellare con sottoquery pensando che PostgreSQL lo accetti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.2, pagina PDF 113"
+    },
+    {
+      "id": "si-c08-q011",
+      "topicId": "si-c08-t02",
+      "question": "Che differenza esiste tra UNIQUE e FOREIGN KEY?",
+      "answer": "UNIQUE impedisce duplicati della chiave dichiarata; FOREIGN KEY impone che un riferimento punti a una riga ammissibile nella tabella padre.",
+      "detail": "Sono invarianti differenti: identità locale contro integrità referenziale.",
+      "example": "UNIQUE(codice); id_offerta REFERENCES offerta(id_offerta).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una FOREIGN KEY non garantisce automaticamente l’esistenza di almeno un figlio per ogni padre.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.2, pagina PDF 113"
+    },
+    {
+      "id": "si-c08-q012",
+      "topicId": "si-c08-t02",
+      "question": "Per quale genere di requisito può essere utile EXCLUDE in PostgreSQL?",
+      "answer": "Per vietare combinazioni incompatibili tra righe, ad esempio sovrapposizioni di intervalli quando modellate opportunamente.",
+      "detail": "È un costrutto dichiarativo PostgreSQL più generale rispetto all’unicità semplice.",
+      "example": "Intervalli di assegnazione che non devono sovrapporsi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre tutti i vincoli tra righe a CHECK standard.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.2, pagina PDF 114"
+    },
+    {
+      "id": "si-c08-q013",
+      "topicId": "si-c08-t02",
+      "question": "Perché «ogni offerta approvata ha almeno uno scenario» non si implementa con un semplice CHECK sulla tabella OFFERTA?",
+      "answer": "Perché richiede di esaminare l’esistenza di righe nella tabella SCENARIO.",
+      "detail": "È una proprietà globale e inter-tabellare che va distinta da un confronto tra colonne della stessa riga.",
+      "example": "NOT EXISTS(offerta approvata senza scenario) descrive la regola.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere sintassi concettualmente utile e DDL eseguibile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.2, pagina PDF 114"
+    },
+    {
+      "id": "si-c08-q014",
+      "topicId": "si-c08-t02",
+      "question": "Quale lezione trarre dai CHECK con SELECT presenti in alcune prove storiche?",
+      "answer": "Possono esprimere un requisito teorico, ma la specifica sintassi non è eseguibile come CHECK PostgreSQL.",
+      "detail": "La risposta d’esame deve distinguere significato del vincolo e strumento consentito dal DBMS.",
+      "example": "Per un massimo di tre partner occorre scegliere un controllo appropriato oltre il CHECK di riga.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non giudicare la correttezza della regola dalla sola eseguibilità di una traccia didattica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.2, pagina PDF 114"
+    },
+    {
+      "id": "si-c08-q015",
+      "topicId": "si-c08-t02",
+      "question": "Che cosa garantisce il DDL CREATE TABLE demo_check del manuale?",
+      "answer": "Una chiave primaria id e un importo obbligatorio non negativo.",
+      "detail": "Il vincolo locale è applicato a INSERT/UPDATE tramite il motore del database.",
+      "example": "id INTEGER PRIMARY KEY, importo NUMERIC(12,2) NOT NULL CHECK(importo>=0).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che un CHECK senza NOT NULL rifiuti tutti i NULL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.2, pagina PDF 114"
+    },
+    {
+      "id": "si-c08-q016",
+      "topicId": "si-c08-t03",
+      "question": "Come si definisce formalmente una vista relazionale ordinaria?",
+      "answer": "È un oggetto denominato definito da un’interrogazione, che si comporta come una relazione consultabile.",
+      "detail": "Il DBMS conserva la definizione e valuta il risultato sui dati visibili alla query, anziché memorizzare una copia indipendente delle tuple.",
+      "example": "CREATE VIEW v AS SELECT ... FROM offerta WHERE stato='BOZZA'.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare ogni vista «tabella temporanea» o «copia».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.3, pagina PDF 114"
+    },
+    {
+      "id": "si-c08-q017",
+      "topicId": "si-c08-t03",
+      "question": "Come si collega il concetto di vista all’algebra relazionale?",
+      "answer": "È il dare un nome a una espressione relazionale Q, così da riutilizzarla nelle interrogazioni.",
+      "detail": "Rende la composizione di query più leggibile, senza cambiare il significato dei dati sottostanti.",
+      "example": "V := Q in notazione astratta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare la definizione astratta della vista con una materializzazione fisica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.3, pagina PDF 114"
+    },
+    {
+      "id": "si-c08-q018",
+      "topicId": "si-c08-t03",
+      "question": "Che dati presenta v_offerte_in_bozza nel listato 8.2?",
+      "answer": "id_offerta, codice, prezzo_eur_kwh e quota_fissa_annua delle offerte in stato BOZZA.",
+      "detail": "La vista seleziona solo quattro colonne e applica WHERE stato = BOZZA alla tabella didattica8.offerta.",
+      "example": "SELECT codice, prezzo_eur_kwh FROM didattica8.v_offerte_in_bozza ORDER BY codice.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarsi l’inclusione delle offerte APPROVATE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.3, pagina PDF 114"
+    },
+    {
+      "id": "si-c08-q019",
+      "topicId": "si-c08-t03",
+      "question": "Perché una vista ordinaria riflette le modifiche alle tabelle base?",
+      "answer": "La sua SELECT usa la definizione memorizzata e i dati accessibili secondo le regole di visibilità transazionale al momento della lettura.",
+      "detail": "Non c’è un insieme autonomo di righe da aggiornare periodicamente.",
+      "example": "Dopo una UPDATE confermata, una SELECT sulla vista può mostrare il nuovo prezzo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che si aggiornano i dati della vista mediante REFRESH.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.3, pagina PDF 114"
+    },
+    {
+      "id": "si-c08-q020",
+      "topicId": "si-c08-t03",
+      "question": "Quali sono tre vantaggi delle viste ordinarie?",
+      "answer": "Riutilizzo di join e filtri, interfaccia logica stabile, esposizione selettiva di informazioni.",
+      "detail": "Possono anche semplificare KPI e separare la logica delle interrogazioni dalla struttura fisica dei dati.",
+      "example": "Un report interroga la stessa vista usata dal portale gestionale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere riutilizzo di definizioni con assenza di costo computazionale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.3, pagina PDF 114"
+    },
+    {
+      "id": "si-c08-q021",
+      "topicId": "si-c08-t03",
+      "question": "Perché una vista non è una garanzia automatica di sicurezza?",
+      "answer": "Perché protezione e visibilità dipendono da privilegi, proprietari e regole di valutazione delle query.",
+      "detail": "Nascondere una colonna nella definizione non sostituisce la progettazione dei permessi sugli oggetti.",
+      "example": "Il ruolo che consulta la vista richiede autorizzazioni coerenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che una VIEW, da sola, realizzi un controllo degli accessi completo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.3, pagina PDF 114"
+    },
+    {
+      "id": "si-c08-q022",
+      "topicId": "si-c08-t03",
+      "question": "Quali problemi possono emergere dalle viste con query complesse?",
+      "answer": "Prestazioni difficili da valutare, dipendenze dalle tabelle base e necessità di manutenzione quando lo schema evolve.",
+      "detail": "Il costo di join e aggregazioni rimane nel piano di esecuzione della query.",
+      "example": "Una vista con numerosi join può avere un SELECT oneroso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare la vista come una «ottimizzazione gratis».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.3, pagina PDF 114"
+    },
+    {
+      "id": "si-c08-q023",
+      "topicId": "si-c08-t03",
+      "question": "Che cosa bisogna sapere di CREATE OR REPLACE VIEW in PostgreSQL?",
+      "answer": "Può cambiare la query definitoria, ma con vincoli sulla compatibilità delle colonne esistenti.",
+      "detail": "La possibilità di sostituire una vista non significa libertà di rompere le interfacce utilizzate dai client.",
+      "example": "Evoluzione controllata del SELECT di una vista già usata da report.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che ogni modifica dello schema sia trasparente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.3, pagina PDF 114"
+    },
+    {
+      "id": "si-c08-q024",
+      "topicId": "si-c08-t03",
+      "question": "Quale differenza fondamentale intercorre tra una vista e una tabella di base?",
+      "answer": "La tabella conserva tuple come dati propri; una vista ordinaria espone logicamente il risultato di un’interrogazione.",
+      "detail": "Il riferimento a una vista può comporre query più complesse; l’accesso effettivo alle tabelle resta gestito dal DBMS.",
+      "example": "SELECT ... FROM v_offerte_in_bozza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la possibilità di interrogare entrambe con identico comportamento fisico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.3, pagina PDF 114"
+    },
+    {
+      "id": "si-c08-q025",
+      "topicId": "si-c08-t04",
+      "question": "Quale caratteristica rende una vista PostgreSQL automaticamente aggiornabile?",
+      "answer": "In generale, essere una vista semplice su una sola tabella, senza aggregazioni o costrutti che impediscano una mappatura univoca alle righe base.",
+      "detail": "GROUP BY, DISTINCT e operazioni insiemistiche al livello principale escludono tipicamente l’aggiornabilità automatica.",
+      "example": "Una vista filtrata sulle offerte può essere aggiornabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non generalizzare a tutte le viste con SELECT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.4, pagina PDF 115"
+    },
+    {
+      "id": "si-c08-q026",
+      "topicId": "si-c08-t04",
+      "question": "Perché una vista con GROUP BY e COUNT(*) non è normalmente aggiornabile?",
+      "answer": "Perché una riga aggregata può rappresentare molte righe fisiche, senza una modifica univoca da eseguire.",
+      "detail": "UPDATE del conteggio non specifica quali record base inserire, eliminare o modificare.",
+      "example": "COUNT(*) per stato raggruppa più offerte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che ogni colonna restituita da SELECT sia direttamente scrivibile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.4, pagina PDF 115"
+    },
+    {
+      "id": "si-c08-q027",
+      "topicId": "si-c08-t04",
+      "question": "A cosa serve WITH CHECK OPTION in una vista aggiornabile filtrata?",
+      "answer": "A impedire che INSERT o UPDATE eseguiti attraverso la vista producano righe non conformi al predicato di visibilità applicabile.",
+      "detail": "Il vincolo vale per le operazioni che attraversano quella vista, non necessariamente per le operazioni dirette sulla tabella.",
+      "example": "Vista su stato=BOZZA con CHECK OPTION.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare CHECK OPTION per un CHECK globale sulla tabella base.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.4, pagina PDF 115"
+    },
+    {
+      "id": "si-c08-q028",
+      "topicId": "si-c08-t04",
+      "question": "Che cosa accade se attraverso v_bozze_modificabili si tenta di impostare stato=APPROVATA?",
+      "answer": "L’UPDATE viene rifiutato dal WITH LOCAL CHECK OPTION perché la riga non soddisferebbe più stato=BOZZA.",
+      "detail": "Il caso riguarda la modifica effettuata attraverso la vista e presuppone che gli altri vincoli siano rispettati.",
+      "example": "UPDATE didattica8.v_bozze_modificabili SET stato='APPROVATA' ...",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la rimozione dalla selezione logica della vista con la cancellazione della riga.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.4, pagina PDF 115"
+    },
+    {
+      "id": "si-c08-q029",
+      "topicId": "si-c08-t04",
+      "question": "Che differenza esiste tra LOCAL e CASCADED CHECK OPTION?",
+      "answer": "LOCAL controlla il predicato della vista corrente; CASCADED estende il controllo alle viste sottostanti pertinenti.",
+      "detail": "In annidamenti con INSTEAD OF trigger o regole possono esistere eccezioni specifiche documentate dal DBMS.",
+      "example": "Vista A filtrata e vista B costruita sopra A.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire lo stesso comportamento a tutti i DBMS o a tutte le viste annidate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.4, pagina PDF 115"
+    },
+    {
+      "id": "si-c08-q030",
+      "topicId": "si-c08-t04",
+      "question": "Senza CHECK OPTION, un UPDATE attraverso una vista filtrata può far sparire la riga dalla vista?",
+      "answer": "Sì, se l’UPDATE è ammesso dagli altri vincoli e rende falsa la condizione di selezione.",
+      "detail": "La riga può continuare a esistere nella tabella base ma non apparire più nella query della vista.",
+      "example": "BOZZA → APPROVATA nella tabella base.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "«Sparire dalla vista» non significa DELETE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.4, pagina PDF 115"
+    },
+    {
+      "id": "si-c08-q031",
+      "topicId": "si-c08-t04",
+      "question": "WITH CHECK OPTION protegge anche gli UPDATE diretti sulla tabella di origine?",
+      "answer": "No: il controllo è associato alle scritture che attraversano la vista.",
+      "detail": "Un invariante generale dello stato dati deve essere espresso con vincoli e controlli appropriati sul modello sottostante.",
+      "example": "UPDATE didattica8.offerta ... non passa per il CHECK OPTION della vista.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire la policy dei dati con il filtro di presentazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.4, pagina PDF 115"
+    },
+    {
+      "id": "si-c08-q032",
+      "topicId": "si-c08-t04",
+      "question": "A cosa può servire INSTEAD OF quando una vista non è automaticamente aggiornabile?",
+      "answer": "A definire esplicitamente come una modifica richiesta alla vista si traduce in operazioni sulle tabelle base.",
+      "detail": "È una logica procedurale alternativa al mapping diretto; va progettata e testata come tale.",
+      "example": "INSERT su una vista complessa distribuisce i valori sulle entità di origine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere che INSTEAD OF renda la vista automaticamente corretta senza scrivere la logica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.4, pagina PDF 115"
+    },
+    {
+      "id": "si-c08-q033",
+      "topicId": "si-c08-t05",
+      "question": "Che cos’è una vista materializzata?",
+      "answer": "Un oggetto che conserva fisicamente il risultato calcolato da una query.",
+      "detail": "Serve a riutilizzare dati precomputati a scapito di spazio e rischio di obsolescenza.",
+      "example": "mv_margine_offerta memorizza un riepilogo per offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descriverla come sola definizione virtuale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.5, pagina PDF 115"
+    },
+    {
+      "id": "si-c08-q034",
+      "topicId": "si-c08-t05",
+      "question": "Come si aggiorna una MATERIALIZED VIEW in PostgreSQL nell’esempio del manuale?",
+      "answer": "Con REFRESH MATERIALIZED VIEW, che ricostruisce il risultato dalla query definitoria.",
+      "detail": "Le modifiche alle tabelle base non si riflettono automaticamente nella materializzazione senza refresh ordinario.",
+      "example": "REFRESH MATERIALIZED VIEW didattica8.mv_margine_offerta;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare la query su materialized view come sempre in tempo reale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.5, pagina PDF 115"
+    },
+    {
+      "id": "si-c08-q035",
+      "topicId": "si-c08-t05",
+      "question": "Quale trade-off introduce una vista materializzata rispetto a una vista ordinaria?",
+      "answer": "Può accelerare letture ripetute, ma consuma memoria e richiede manutenzione del refresh; inoltre può esporre dati non aggiornati.",
+      "detail": "La scelta dipende da frequenza di modifica, costo della query e freschezza richiesta.",
+      "example": "Report aggregato complesso letto spesso, dati aggiornati periodicamente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non selezionarla solo perché una query contiene SUM.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.5, pagina PDF 115"
+    },
+    {
+      "id": "si-c08-q036",
+      "topicId": "si-c08-t05",
+      "question": "Che cosa calcola mv_margine_offerta nel listato 8.4?",
+      "answer": "Per ogni offerta: codice, numero di scenari e somma didattica dei margini stimati degli scenari collegati.",
+      "detail": "Usa LEFT JOIN, COUNT(id_scenario), SUM(volume×(prezzo−costo)+quota_fissa), COALESCE e GROUP BY.",
+      "example": "COUNT(s.id_scenario) e COALESCE(SUM(...),0).",
+      "formulas": [
+        {
+          "latex": "\\mathrm{Margine}_{scenario}=V\\,(p-c)+Q_f",
+          "meaning": "Margine didattico dello scenario: volume × spread unitario + quota fissa annua"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non interpretare automaticamente il valore aggregato come profitto economico reale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.5, pagina PDF 115"
+    },
+    {
+      "id": "si-c08-q037",
+      "topicId": "si-c08-t05",
+      "question": "Perché la somma dei margini di scenari alternativi non è un business plan aziendale?",
+      "answer": "Perché ogni scenario rappresenta un’ipotesi alternativa, non necessariamente un insieme di clienti simultanei da sommare.",
+      "detail": "La SUM nel manuale illustra SQL, non certifica una definizione economica del KPI finale EnerPrice.",
+      "example": "Uno scenario domestico e uno impresa possono essere simulazioni concorrenti della stessa offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire la formula del listato all’app senza validarne il significato di business.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.5, pagina PDF 116"
+    },
+    {
+      "id": "si-c08-q038",
+      "topicId": "si-c08-t05",
+      "question": "Che ruolo hanno LEFT JOIN e COALESCE nella vista materializzata del manuale?",
+      "answer": "LEFT JOIN include anche le offerte prive di scenari; COALESCE può trasformare il totale SUM nullo in zero.",
+      "detail": "COUNT(s.id_scenario) conta solo scenari effettivamente collegati.",
+      "example": "FIX-NO-SCENARIO appare con n_scenari = 0.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare COUNT(*) se si vuole zero per il padre senza figli.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.5, pagina PDF 116"
+    },
+    {
+      "id": "si-c08-q039",
+      "topicId": "si-c08-t05",
+      "question": "Quali dati conserva una vista ordinaria rispetto a una materializzata?",
+      "answer": "La vista ordinaria conserva la definizione della query; quella materializzata conserva anche il risultato delle righe calcolate.",
+      "detail": "La prima calcola sui dati visibili alla lettura; la seconda mostra il contenuto dell’ultimo refresh.",
+      "example": "SELECT dalla VIEW e dalla MATERIALIZED VIEW dopo una UPDATE di base.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire il medesimo comportamento di freschezza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.5, pagina PDF 116"
+    },
+    {
+      "id": "si-c08-q040",
+      "topicId": "si-c08-t05",
+      "question": "Quando un report basato su MATERIALIZED VIEW potrebbe risultare temporalmente incoerente?",
+      "answer": "Quando le tabelle base cambiano ma non è stato ancora eseguito il REFRESH previsto.",
+      "detail": "La decisione sul refresh deve essere parte dei requisiti di freschezza e manutenzione.",
+      "example": "Prezzo aggiornato oggi, report calcolato sul prezzo di ieri.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere query andata a buon fine con risultato necessariamente recente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.5, pagina PDF 116"
+    },
+    {
+      "id": "si-c08-q041",
+      "topicId": "si-c08-t06",
+      "question": "Che cos’è un’asserzione nel modello teorico SQL?",
+      "answer": "Un vincolo dichiarativo globale che deve risultare vero sullo stato della base di dati.",
+      "detail": "Può riferirsi a più tabelle e descrive un invariante senza specificare quali singoli eventi controllarlo.",
+      "example": "«Non esistono offerte approvate senza scenario».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarla al CHECK della riga corrente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.6, pagina PDF 116"
+    },
+    {
+      "id": "si-c08-q042",
+      "topicId": "si-c08-t06",
+      "question": "Come si può esprimere logicamente un’asserzione globale?",
+      "answer": "Con un predicato P(S) sullo stato del database S, che deve valere in ogni stato ammissibile.",
+      "detail": "Il controllo interessa tutto lo stato rilevante, non solo la riga aggiornata.",
+      "example": "P(S)=«ogni offerta APPROVATA possiede almeno uno SCENARIO».",
+      "formulas": [
+        {
+          "latex": "P(S)=\\mathrm{TRUE}",
+          "meaning": "Il predicato globale deve risultare vero per ogni stato ammissibile"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non considerare sufficiente verificare P una sola volta in avvio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.6, pagina PDF 116"
+    },
+    {
+      "id": "si-c08-q043",
+      "topicId": "si-c08-t06",
+      "question": "PostgreSQL supporta CREATE ASSERTION del SQL standard?",
+      "answer": "No, nel contesto tecnico trattato dal manuale CREATE ASSERTION non è implementato da PostgreSQL.",
+      "detail": "Il listato 8.5 è presentato soltanto come sintassi teorica illustrativa.",
+      "example": "CREATE ASSERTION offerta_approvata_con_scenario CHECK (...).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non copiare il listato in PostgreSQL aspettandosi l’esecuzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.6, pagina PDF 116"
+    },
+    {
+      "id": "si-c08-q044",
+      "topicId": "si-c08-t06",
+      "question": "Come si legge il doppio NOT EXISTS nella regola sull’approvazione?",
+      "answer": "Non deve esistere alcuna offerta APPROVATA per cui non esista uno scenario collegato.",
+      "detail": "È la negazione di una violazione: se non ci sono controesempi, il vincolo vale.",
+      "example": "NOT EXISTS(SELECT ... FROM offerta o WHERE approvata AND NOT EXISTS(SELECT ... FROM scenario s ...)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare il primo NOT EXISTS per «nessuna offerta approvata».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.6, pagina PDF 116"
+    },
+    {
+      "id": "si-c08-q045",
+      "topicId": "si-c08-t06",
+      "question": "Perché un trigger equivalente a una asserzione deve considerare più eventi?",
+      "answer": "Perché la proprietà globale può diventare falsa attraverso modifiche diverse, non solo aggiornando lo stato di una offerta.",
+      "detail": "L’eliminazione o riallocazione dell’ultimo scenario può invalidare una approvazione preesistente.",
+      "example": "UPDATE offerta, DELETE scenario, UPDATE scenario.id_offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non controllare esclusivamente la transizione a APPROVATA.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.6, pagina PDF 116"
+    },
+    {
+      "id": "si-c08-q046",
+      "topicId": "si-c08-t06",
+      "question": "Qual è la differenza tra asserzione teorica e trigger procedurale?",
+      "answer": "L’asserzione dichiara un risultato valido per l’intero database; il trigger definisce evento, momento, condizione e azioni per preservarlo.",
+      "detail": "Il secondo richiede una copertura completa delle operazioni che potrebbero infrangere la regola.",
+      "example": "Regola globale → trigger OFFERTA più trigger SCENARIO.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere equivalenza automatica tra una regola ECA e un vincolo globale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.6, pagina PDF 116"
+    },
+    {
+      "id": "si-c08-q047",
+      "topicId": "si-c08-t06",
+      "question": "Quali alternative discute il manuale quando manca CREATE ASSERTION?",
+      "answer": "Modellazione più adeguata, vincoli nativi ove possibili, trigger e gestione transazionale e concorrente coerente.",
+      "detail": "La combinazione deve essere motivata da proprietà del dominio e dalle garanzie effettivamente offerte dal DBMS.",
+      "example": "Approvazione dell’offerta condizionata dalla presenza e stabilità degli scenari.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare una SELECT di controllo immune alle race condition.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.6, pagina PDF 116"
+    },
+    {
+      "id": "si-c08-q048",
+      "topicId": "si-c08-t07",
+      "question": "Che cosa significa Event–Condition–Action nel funzionamento di un trigger?",
+      "answer": "Dopo l’evento pertinente, viene valutata una condizione e, se soddisfatta, viene eseguita l’azione prevista.",
+      "detail": "La sequenza lega una regola di business all’evento SQL che la rende rilevante.",
+      "example": "UPDATE prezzo; OLD diverso da NEW; INSERT audit.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non saltare la condizione nei casi in cui non tutte le UPDATE sono significative.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.7, pagina PDF 116"
+    },
+    {
+      "id": "si-c08-q049",
+      "topicId": "si-c08-t07",
+      "question": "Quali operazioni SQL costituiscono i principali eventi ECA nel capitolo?",
+      "answer": "INSERT, UPDATE e DELETE, oltre agli eventi speciali supportati dal DBMS in contesti specifici.",
+      "detail": "Un evento è ciò che scatena la valutazione automatica, non il cambiamento desiderato come obiettivo finale.",
+      "example": "UPDATE didattica8.offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il predicato OLD<>NEW con il comando UPDATE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.7, pagina PDF 116"
+    },
+    {
+      "id": "si-c08-q050",
+      "topicId": "si-c08-t07",
+      "question": "Quali condizioni e azioni possono figurare in una regola ECA?",
+      "answer": "Condizioni su valori vecchi/nuovi o dati correlati; azioni come scrittura di storico, rifiuto della modifica o aggiornamento di dati collegati.",
+      "detail": "L’azione può richiamare altre operazioni del database, soggette a vincoli e transazioni.",
+      "example": "Se cambia lo stato, registra stato_pre e stato_post.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che una regola ECA debba sempre produrre una INSERT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.7, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q051",
+      "topicId": "si-c08-t07",
+      "question": "Chi invoca normalmente un trigger quando si verifica il suo evento?",
+      "answer": "Il DBMS, automaticamente, durante l’esecuzione dell’operazione pertinente.",
+      "detail": "L’applicazione invia l’istruzione SQL; non richiama esplicitamente il trigger come normale procedura.",
+      "example": "Un UPDATE da due applicazioni differenti provoca la stessa regola su offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un trigger di database con un evento di UI o un workflow applicativo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.7, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q052",
+      "topicId": "si-c08-t07",
+      "question": "In che modo il paradigma ECA facilita il passaggio dai requisiti al codice?",
+      "answer": "Obbliga a specificare quando verificare, cosa valutare e quale effetto attuare.",
+      "detail": "Aiuta a individuare anche eventi dimenticati e reazioni indesiderate.",
+      "example": "«Audit delle variazioni di prezzo»: E=UPDATE; C=variazione; A=INSERT audit.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere il codice prima di aver definito chiaramente l’invariante.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.7, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q053",
+      "topicId": "si-c08-t07",
+      "question": "Qual è il limite di una regola ECA applicata a una policy globale?",
+      "answer": "Una singola regola può non intercettare tutti gli eventi che violano il vincolo.",
+      "detail": "Per correttezza occorre analizzare le tabelle interessate, le transazioni e le possibilità di scrittura indiretta.",
+      "example": "L’ultimo scenario può sparire senza che venga modificata OFFERTA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare «trigger attivo» a «invariante garantito».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.7, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q054",
+      "topicId": "si-c08-t08",
+      "question": "Che cos’è un trigger di database?",
+      "answer": "Un oggetto collegato a un evento del DBMS su una tabella o, nei casi previsti, su una vista, che attiva una funzione di controllo o azione.",
+      "detail": "Specifica oggetto, evento, momento, granularità e talvolta condizione WHEN.",
+      "example": "CREATE TRIGGER ... BEFORE UPDATE ON offerta FOR EACH ROW.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattarlo come una funzione richiamata manualmente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.8, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q055",
+      "topicId": "si-c08-t08",
+      "question": "Quali sono i tre momenti di attivazione fondamentali dei trigger?",
+      "answer": "BEFORE, AFTER e INSTEAD OF.",
+      "detail": "Il momento influenza disponibilità dei dati, semantica della restituzione e possibilità di sostituire l’operazione.",
+      "example": "BEFORE per validare; AFTER per audit; INSTEAD OF per personalizzare scritture su viste.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "AFTER non significa «dopo il commit».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.8, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q056",
+      "topicId": "si-c08-t08",
+      "question": "Che differenza esiste tra FOR EACH ROW e FOR EACH STATEMENT?",
+      "answer": "ROW invoca il trigger per ciascuna riga coinvolta; STATEMENT lo invoca una sola volta per istruzione.",
+      "detail": "Una UPDATE di 100 righe produce 100 invocazioni ROW e una STATEMENT.",
+      "example": "UPDATE ... WHERE condizione su 100 record.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere numero di righe interessate e numero di istruzioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.8, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q057",
+      "topicId": "si-c08-t08",
+      "question": "Un trigger STATEMENT scatta se l’istruzione modifica zero righe?",
+      "answer": "Sì: viene eseguito una volta per il comando, anche se nessuna riga è stata modificata.",
+      "detail": "Un ROW trigger, invece, non viene eseguito se non esiste alcuna riga interessata.",
+      "example": "UPDATE offerta SET ... WHERE id_offerta=-1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non far dipendere il conteggio delle invocazioni STATEMENT dal numero di tuple.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.8, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q058",
+      "topicId": "si-c08-t08",
+      "question": "Quali eventi DML compaiono tipicamente in CREATE TRIGGER?",
+      "answer": "INSERT, UPDATE e DELETE; PostgreSQL contempla anche TRUNCATE nei contesti documentati.",
+      "detail": "La disponibilità precisa di livello e momento dipende dal tipo di evento e oggetto.",
+      "example": "BEFORE INSERT OR UPDATE OR DELETE ON scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che qualunque combinazione sia permessa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.8, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q059",
+      "topicId": "si-c08-t08",
+      "question": "A cosa serve la clausola WHEN di un trigger?",
+      "answer": "A specificare un predicato che limita l’esecuzione dell’azione nei casi consentiti.",
+      "detail": "Può evitare invocazioni inutili della funzione per modifiche non rilevanti.",
+      "example": "WHEN (OLD.prezzo_eur_kwh IS DISTINCT FROM NEW.prezzo_eur_kwh).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere WHEN del trigger con WHERE della UPDATE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.8, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q060",
+      "topicId": "si-c08-t08",
+      "question": "Quando è appropriato un BEFORE ROW trigger?",
+      "answer": "Per validare o normalizzare la riga prima che l’operazione venga completata.",
+      "detail": "Può rifiutare tramite eccezione o, nelle condizioni supportate, modificare NEW.",
+      "example": "Bloccare un’approvazione senza scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare AFTER se serve modificare NEW prima della scrittura.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.8, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q061",
+      "topicId": "si-c08-t08",
+      "question": "Quando è appropriato un AFTER ROW trigger?",
+      "answer": "Quando si vogliono registrare o reagire a cambiamenti della riga già effettuati nell’istruzione.",
+      "detail": "È una scelta frequente per audit di stato e prezzo, sempre all’interno della transazione.",
+      "example": "INSERT into offerta_audit dopo UPDATE offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che l’inserimento di audit sopravviva automaticamente al rollback.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.8, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q062",
+      "topicId": "si-c08-t08",
+      "question": "Che cosa rappresenta un trigger INSTEAD OF?",
+      "answer": "Definisce una logica da eseguire al posto dell’operazione richiesta, spesso per aggiornare una vista non aggiornabile automaticamente.",
+      "detail": "Non è semplicemente un BEFORE più precoce: sostituisce il trattamento standard della scrittura.",
+      "example": "Scrittura su una vista composta mediante operazioni SQL sulle tabelle.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare INSTEAD OF come sinonimo generico di AFTER.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.8, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q063",
+      "topicId": "si-c08-t08",
+      "question": "Come si gestiscono più righe modificate in un trigger STATEMENT PostgreSQL avanzato?",
+      "answer": "Per specifici AFTER trigger si possono usare transition tables che espongono insiemi di righe interessate.",
+      "detail": "Normalmente il trigger STATEMENT non dispone della coppia OLD/NEW per ciascuna riga come un ROW trigger.",
+      "example": "Analizzare in blocco righe modificate da una UPDATE massiva.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che NEW sia disponibile come singola riga in STATEMENT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.8, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q064",
+      "topicId": "si-c08-t08",
+      "question": "Quali sono le cinque dimensioni di un trigger riportate nella tabella 8.5?",
+      "answer": "Evento, momento, livello, condizione ed azione.",
+      "detail": "La configurazione serve a prevedere esattamente quando e quante volte viene eseguita la funzione.",
+      "example": "UPDATE; AFTER; ROW; prezzo cambiato; INSERT audit.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere una regola solamente con il nome del trigger.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.8, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q065",
+      "topicId": "si-c08-t09",
+      "question": "Che cosa rappresenta NEW in un trigger ROW PostgreSQL?",
+      "answer": "La nuova riga nei trigger INSERT e UPDATE.",
+      "detail": "È usata per controllare i valori proposti, confrontarli con OLD e proseguire una modifica in BEFORE.",
+      "example": "NEW.stato, NEW.prezzo_eur_kwh.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "NEW non è disponibile per DELETE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.9, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q066",
+      "topicId": "si-c08-t09",
+      "question": "Che cosa rappresenta OLD in un trigger ROW PostgreSQL?",
+      "answer": "La riga preesistente nei trigger UPDATE e DELETE.",
+      "detail": "Permette di registrare vecchi valori o verificarli prima di un’eventuale modifica/eliminazione.",
+      "example": "OLD.stato per impedire DELETE di una offerta APPROVATA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "OLD non è disponibile in INSERT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.9, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q067",
+      "topicId": "si-c08-t09",
+      "question": "Che cosa restituisce normalmente un BEFORE INSERT o BEFORE UPDATE ROW per consentire la scrittura?",
+      "answer": "RETURN NEW.",
+      "detail": "Il risultato può contenere eventuali modifiche apportate a NEW dalla funzione trigger.",
+      "example": "Validazione prezzo, poi RETURN NEW.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non restituire OLD in un BEFORE INSERT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.9, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q068",
+      "topicId": "si-c08-t09",
+      "question": "Che cosa restituisce normalmente un BEFORE DELETE ROW per consentire la cancellazione?",
+      "answer": "RETURN OLD.",
+      "detail": "La nuova riga non esiste nell’operazione DELETE.",
+      "example": "IF OLD.stato = APPROVATA THEN RAISE EXCEPTION; ELSE RETURN OLD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare RETURN NEW per consentire DELETE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.9, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q069",
+      "topicId": "si-c08-t09",
+      "question": "Qual è l’effetto di RETURN NULL in un BEFORE ROW PostgreSQL?",
+      "answer": "Salta l’operazione sulla riga corrente.",
+      "detail": "È diverso dal sollevare un errore: le altre righe del comando possono essere elaborate secondo il contesto.",
+      "example": "BEFORE UPDATE ... RETURN NULL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usarlo inconsapevolmente come valore neutro.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.9, pagina PDF 118"
+    },
+    {
+      "id": "si-c08-q070",
+      "topicId": "si-c08-t09",
+      "question": "Qual è il significato del RETURN in un AFTER ROW trigger?",
+      "answer": "Il valore restituito è ignorato dal DBMS ai fini della riga già modificata.",
+      "detail": "Per questo un AFTER ROW di audit può terminare con RETURN NULL.",
+      "example": "La funzione fn_audit_offerta() ritorna NULL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che RETURN NULL in AFTER annulli la UPDATE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.9, pagina PDF 118"
+    },
+    {
+      "id": "si-c08-q071",
+      "topicId": "si-c08-t09",
+      "question": "Un trigger STATEMENT usa direttamente OLD e NEW come record di una singola riga?",
+      "answer": "No: queste pseudorighe appartengono tipicamente ai trigger ROW.",
+      "detail": "Le transition tables PostgreSQL sono un meccanismo distinto per alcuni trigger su insiemi di righe.",
+      "example": "FOR EACH STATEMENT con transizioni, nei casi supportati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere NEW.prezzo in un trigger STATEMENT ordinario.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.9, pagina PDF 118"
+    },
+    {
+      "id": "si-c08-q072",
+      "topicId": "si-c08-t09",
+      "question": "Qual è l’effetto di RAISE EXCEPTION in una funzione trigger?",
+      "answer": "Interrompe l’istruzione che ha attivato il trigger generando un errore; gli effetti seguono le regole transazionali.",
+      "detail": "Non crea una transazione separata e non conferma modifiche intermedie.",
+      "example": "RAISE EXCEPTION 'Prezzo non valido';.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’eccezione con una riga semplicemente saltata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.9, pagina PDF 118"
+    },
+    {
+      "id": "si-c08-q073",
+      "topicId": "si-c08-t09",
+      "question": "Quali variabili di ambiente descrivono l’operazione e il contesto del trigger PostgreSQL?",
+      "answer": "TG_OP, TG_WHEN, TG_LEVEL e TG_TABLE_NAME tra le variabili speciali citate dal manuale.",
+      "detail": "Aiutano una funzione a identificare tipo di operazione, momento, livello e tabella di attivazione.",
+      "example": "TG_OP='DELETE' determina la scelta RETURN OLD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare :NEW/:OLD nella sintassi PL/pgSQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.9, pagina PDF 117"
+    },
+    {
+      "id": "si-c08-q074",
+      "topicId": "si-c08-t10",
+      "question": "Quali due oggetti si creano per un trigger PL/pgSQL PostgreSQL standard?",
+      "answer": "Una funzione CREATE FUNCTION ... RETURNS TRIGGER e un CREATE TRIGGER che la collega all’evento.",
+      "detail": "La funzione definisce che cosa fare; CREATE TRIGGER definisce quando e su quale tabella eseguirla.",
+      "example": "fn_esempio() e trg_esempio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere definizione della funzione e attivazione del trigger.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.10, pagina PDF 118"
+    },
+    {
+      "id": "si-c08-q075",
+      "topicId": "si-c08-t10",
+      "question": "Qual è la struttura minima di una funzione trigger PL/pgSQL?",
+      "answer": "CREATE OR REPLACE FUNCTION ... RETURNS TRIGGER LANGUAGE plpgsql AS $$ BEGIN ... RETURN NEW; END; $$.",
+      "detail": "Il valore restituito deve essere coerente con evento, momento e livello del trigger.",
+      "example": "Funzione validante usata da BEFORE UPDATE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare RETURNS BOOLEAN al posto di RETURNS TRIGGER nel caso base.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.10, pagina PDF 118"
+    },
+    {
+      "id": "si-c08-q076",
+      "topicId": "si-c08-t10",
+      "question": "Qual è la sintassi PostgreSQL per collegare una funzione trigger a una tabella?",
+      "answer": "CREATE TRIGGER nome BEFORE/AFTER evento ON tabella FOR EACH ROW/STATEMENT EXECUTE FUNCTION nome_funzione();",
+      "detail": "Momento, evento e granularità sono parte della definizione del trigger.",
+      "example": "CREATE TRIGGER trg_esempio BEFORE UPDATE ON didattica8.offerta FOR EACH ROW EXECUTE FUNCTION didattica8.fn_esempio();",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare EXECUTE FUNCTION la chiamata esplicita da parte dell’applicazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.10, pagina PDF 118"
+    },
+    {
+      "id": "si-c08-q077",
+      "topicId": "si-c08-t10",
+      "question": "Quale variabile permette a una sola funzione di distinguere INSERT, UPDATE e DELETE?",
+      "answer": "TG_OP, che contiene il tipo di operazione del trigger.",
+      "detail": "Si usa in un ramo IF/ELSIF per controllare disponibilità di OLD/NEW e valore di ritorno.",
+      "example": "IF TG_OP = 'DELETE' THEN RETURN OLD; END IF;.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare TG_OP con un nome di tabella.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.10, pagina PDF 118"
+    },
+    {
+      "id": "si-c08-q078",
+      "topicId": "si-c08-t10",
+      "question": "Come si scrive il riferimento ai nuovi valori in PostgreSQL e in Oracle?",
+      "answer": "PostgreSQL PL/pgSQL: NEW.campo; Oracle PL/SQL: :NEW.campo.",
+      "detail": "Il prefisso con i due punti è una differenza sintattica rilevante tra le piattaforme.",
+      "example": "NEW.prezzo_eur_kwh / :NEW.prezzo_eur_kwh.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mescolare i due dialetti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.10, pagina PDF 118"
+    },
+    {
+      "id": "si-c08-q079",
+      "topicId": "si-c08-t10",
+      "question": "Perché preferire IS DISTINCT FROM rispetto a <> per il confronto di colonne nullable?",
+      "answer": "Perché considera esplicitamente anche i NULL e restituisce TRUE/FALSE invece di UNKNOWN.",
+      "detail": "È idoneo a verificare cambiamenti di valori potenzialmente nulli nell’audit.",
+      "example": "OLD.note IS DISTINCT FROM NEW.note.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Con <> il confronto con NULL non diventa automaticamente TRUE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.10, pagina PDF 118"
+    },
+    {
+      "id": "si-c08-q080",
+      "topicId": "si-c08-t10",
+      "question": "Come si scrive una condizione WHEN per una variazione effettiva del prezzo?",
+      "answer": "WHEN (OLD.prezzo_eur_kwh IS DISTINCT FROM NEW.prezzo_eur_kwh), nei contesti di trigger che lo consentono.",
+      "detail": "Evita l’elaborazione della funzione quando l’UPDATE non cambia il valore osservato.",
+      "example": "CREATE TRIGGER ... AFTER UPDATE ... FOR EACH ROW WHEN (...).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere UPDATE di una colonna con cambiamento effettivo del valore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.10, pagina PDF 118"
+    },
+    {
+      "id": "si-c08-q081",
+      "topicId": "si-c08-t10",
+      "question": "Si può invocare fn_esempio() con una SELECT ordinaria come se fosse una funzione applicativa?",
+      "answer": "No: una funzione RETURNS TRIGGER è predisposta per l’ambiente specifico del trigger.",
+      "detail": "NEW, OLD e TG_OP sono forniti dal DBMS quando si verifica l’evento.",
+      "example": "Il collegamento avviene tramite CREATE TRIGGER.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usarla come una semplice stored function con argomenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.10, pagina PDF 118"
+    },
+    {
+      "id": "si-c08-q082",
+      "topicId": "si-c08-t10",
+      "question": "Quali errori sintattici e concettuali del trigger PostgreSQL elenca la tabella 8.7?",
+      "answer": "Uso di :NEW invece di NEW, chiamata manuale a funzione trigger, RETURN NEW in DELETE, AFTER confuso con COMMIT, e CHECK con SELECT inter-tabellare.",
+      "detail": "Ciascun errore deriva dalla confusione tra dialetto, evento, gestione delle transazioni o tipo di vincolo.",
+      "example": "Prima di eseguire SQL distinguere eventi, piattaforma e garanzia richiesta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non memorizzare solo la sintassi senza comprendere la semantica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.10, pagina PDF 118"
+    },
+    {
+      "id": "si-c08-q083",
+      "topicId": "si-c08-t11",
+      "question": "Quali quattro tabelle compongono lo schema didattico per SQL avanzato?",
+      "answer": "SEGMENTO, OFFERTA, SCENARIO e OFFERTA_AUDIT, nello schema didattica8.",
+      "detail": "SCENARIO collega una offerta e un segmento; OFFERTA_AUDIT conserva alcuni eventi di modifica delle offerte.",
+      "example": "SCENARIO.id_offerta → OFFERTA.id_offerta; SCENARIO.id_segmento → SEGMENTO.id_segmento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare il modello didattico per lo schema definitivo di EnerPrice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 119"
+    },
+    {
+      "id": "si-c08-q084",
+      "topicId": "si-c08-t11",
+      "question": "Qual è la relazione tra OFFERTA, SCENARIO e SEGMENTO nel caso didattico?",
+      "answer": "Una offerta può avere più scenari; ciascuno scenario si riferisce esattamente a una offerta e un segmento.",
+      "detail": "Le due FOREIGN KEY di SCENARIO garantiscono che i riferimenti indicati esistano.",
+      "example": "id_offerta INTEGER NOT NULL REFERENCES offerta(...); id_segmento ... REFERENCES segmento(...).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre dai soli riferimenti che ogni offerta debba avere almeno uno scenario.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 119"
+    },
+    {
+      "id": "si-c08-q085",
+      "topicId": "si-c08-t11",
+      "question": "Quali campi caratterizzano l’entità OFFERTA nell’esempio?",
+      "answer": "id_offerta, codice, stato, prezzo_eur_kwh, quota_fissa_annua e costo_eur_kwh.",
+      "detail": "Il prezzo e il costo sono NUMERIC(10,5), la quota fissa NUMERIC(12,2); i tre valori economici devono essere non negativi.",
+      "example": "FIX-BASE, BOZZA, 0.18000 €/kWh, 120 €/anno, 0.13000 €/kWh.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere prezzo di vendita e costo unitario.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 119"
+    },
+    {
+      "id": "si-c08-q086",
+      "topicId": "si-c08-t11",
+      "question": "Quali stati di una offerta sono consentiti dal CHECK del caso?",
+      "answer": "BOZZA e APPROVATA, con BOZZA come DEFAULT.",
+      "detail": "Il vincolo è una proprietà dichiarativa locale, indipendente dalla logica di approvazione che richiede scenari.",
+      "example": "CHECK(stato IN ('BOZZA','APPROVATA')).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "PUBBLICATA non è un valore ammesso nel listato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 119"
+    },
+    {
+      "id": "si-c08-q087",
+      "topicId": "si-c08-t11",
+      "question": "Quale vincolo evita scenari omonimi per la stessa offerta e lo stesso segmento?",
+      "answer": "UNIQUE(id_offerta, id_segmento, nome).",
+      "detail": "L’unicità è della combinazione, non di ciascuna colonna presa separatamente.",
+      "example": "Due offerte diverse possono avere uno scenario chiamato Standard.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre erroneamente UNIQUE(nome) su tutti gli scenari.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 119"
+    },
+    {
+      "id": "si-c08-q088",
+      "topicId": "si-c08-t11",
+      "question": "Che cosa garantisce CHECK (consumo_rif_kwh > 0) nella tabella SEGMENTO?",
+      "answer": "Che il consumo di riferimento sia strettamente positivo.",
+      "detail": "NOT NULL evita l’assenza di valore; CHECK garantisce il dominio numerico consentito.",
+      "example": "Domestico: 3000.00 kWh; piccola impresa: 5000.00 kWh.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere valido uno zero solo perché non è negativo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 119"
+    },
+    {
+      "id": "si-c08-q089",
+      "topicId": "si-c08-t11",
+      "question": "Che cosa garantisce CHECK(volume_kwh > 0) sulla tabella SCENARIO?",
+      "answer": "Che lo scenario utilizzi un volume energetico positivo.",
+      "detail": "È una proprietà della riga di SCENARIO, quindi un vincolo nativo senza trigger è sufficiente.",
+      "example": "Scenario 101: volume_kwh = 3000.00.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire questo CHECK con una funzione procedurale non necessaria.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 119"
+    },
+    {
+      "id": "si-c08-q090",
+      "topicId": "si-c08-t11",
+      "question": "Quali dati vengono memorizzati nel registro OFFERTA_AUDIT?",
+      "answer": "id_audit, id_offerta, tipo evento, stato e prezzo prima/dopo, istante di registrazione e utente DB.",
+      "detail": "Il listato usa BIGINT GENERATED ALWAYS AS IDENTITY per la PK e valori di default per timestamp e current_user.",
+      "example": "stato_pre=BOZZA, stato_post=APPROVATA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che l’audit memorizzi automaticamente anche quota fissa e costo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 119"
+    },
+    {
+      "id": "si-c08-q091",
+      "topicId": "si-c08-t11",
+      "question": "Perché OFFERTA_AUDIT non ha una FOREIGN KEY su OFFERTA nell’esempio?",
+      "answer": "Per consentire la conservazione di storico anche se una offerta in bozza viene cancellata.",
+      "detail": "È una scelta di progettazione didattica, non una politica di conservazione automaticamente appropriata per sistemi reali.",
+      "example": "La riga audit può riferirsi a un id_offerta non più presente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che l’assenza di FK equivalga a una buona policy universale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 119"
+    },
+    {
+      "id": "si-c08-q092",
+      "topicId": "si-c08-t11",
+      "question": "Quali segmenti e offerte sono caricati nei dati iniziali?",
+      "answer": "Segmenti: Domestico (3000 kWh), Piccola impresa (5000 kWh). Offerte: FIX-BASE, FIX-SMART e FIX-NO-SCENARIO, tutte BOZZA.",
+      "detail": "I dati sono inventati per l’esercitazione e mostrano anche un’offerta intenzionalmente priva di scenari.",
+      "example": "OFFERTA id 1 = FIX-BASE; id 2 = FIX-SMART; id 3 = FIX-NO-SCENARIO.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che tutte le offerte abbiano scenari.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 120"
+    },
+    {
+      "id": "si-c08-q093",
+      "topicId": "si-c08-t11",
+      "question": "Quali scenari sono presenti nel dataset iniziale?",
+      "answer": "101: FIX-BASE/Domestico/3000 kWh; 102: FIX-BASE/Piccola impresa/5000 kWh; 103: FIX-SMART/Domestico/3000 kWh.",
+      "detail": "L’offerta id 3 è priva di scenari; ciò è utile per test negativi di approvazione.",
+      "example": "SCENARIO(101,1,1), (102,1,2), (103,2,1).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non associare 103 a FIX-BASE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 120"
+    },
+    {
+      "id": "si-c08-q094",
+      "topicId": "si-c08-t11",
+      "question": "Quali colonne calcola v_scenario_margine?",
+      "answer": "id_scenario, codice offerta, nome segmento, volume_kwh, ricavo_stimato, costo_stimato e margine_stimato.",
+      "detail": "La vista usa join tra SCENARIO, OFFERTA e SEGMENTO e ROUND a due decimali per gli importi.",
+      "example": "Ricavo=volume×prezzo+quota; costo=volume×costo unitario; margine=ricavo−costo.",
+      "formulas": [
+        {
+          "latex": "R=\\operatorname{ROUND}(V\\,p+Q_f,2)",
+          "meaning": "Ricavo simulato in euro"
+        },
+        {
+          "latex": "C=\\operatorname{ROUND}(V\\,c,2)",
+          "meaning": "Costo simulato in euro"
+        },
+        {
+          "latex": "M=\\operatorname{ROUND}(V\\,(p-c)+Q_f,2)",
+          "meaning": "Margine simulato in euro"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confondere il valore simulato con ricavo reale fatturato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 120"
+    },
+    {
+      "id": "si-c08-q095",
+      "topicId": "si-c08-t11",
+      "question": "Quali sono ricavo, costo e margine dello scenario 101 secondo la tabella 8.8?",
+      "answer": "Ricavo 660,00 €, costo 390,00 €, margine 270,00 €.",
+      "detail": "Scenario FIX-BASE domestico: 3000 kWh, prezzo 0,18 €/kWh, costo 0,13 €/kWh, quota 120 €.",
+      "example": "3000×0,18+120=660; 3000×0,13=390; 660−390=270.",
+      "formulas": [
+        {
+          "latex": "3000\\cdot 0{,}18+120=660\\ \\mathrm{€}",
+          "meaning": "Ricavo scenario 101"
+        },
+        {
+          "latex": "3000\\cdot 0{,}13=390\\ \\mathrm{€}",
+          "meaning": "Costo scenario 101"
+        },
+        {
+          "latex": "660-390=270\\ \\mathrm{€}",
+          "meaning": "Margine scenario 101"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non sottrarre la quota fissa dal ricavo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 120"
+    },
+    {
+      "id": "si-c08-q096",
+      "topicId": "si-c08-t11",
+      "question": "Quali sono ricavo, costo e margine dello scenario 102?",
+      "answer": "Ricavo 1.020,00 €, costo 650,00 €, margine 370,00 €.",
+      "detail": "FIX-BASE impresa usa 5000 kWh, stesso prezzo unitario e stessa quota fissa dello scenario 101.",
+      "example": "5000×0,18+120=1020; 5000×0,13=650.",
+      "formulas": [
+        {
+          "latex": "5000\\cdot 0{,}18+120=1020\\ \\mathrm{€}",
+          "meaning": "Ricavo scenario 102"
+        },
+        {
+          "latex": "5000\\cdot 0{,}13=650\\ \\mathrm{€}",
+          "meaning": "Costo scenario 102"
+        },
+        {
+          "latex": "1020-650=370\\ \\mathrm{€}",
+          "meaning": "Margine scenario 102"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non considerare 102 come un’offerta diversa dalla FIX-BASE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 120"
+    },
+    {
+      "id": "si-c08-q097",
+      "topicId": "si-c08-t11",
+      "question": "Quali sono ricavo, costo e margine dello scenario 103?",
+      "answer": "Ricavo 510,00 €, costo 345,00 €, margine 165,00 €.",
+      "detail": "FIX-SMART domestico: 3000 kWh, prezzo 0,14 €/kWh, costo 0,115 €/kWh, quota 90 €.",
+      "example": "3000×0,14+90=510; 3000×0,115=345.",
+      "formulas": [
+        {
+          "latex": "3000\\cdot 0{,}14+90=510\\ \\mathrm{€}",
+          "meaning": "Ricavo scenario 103"
+        },
+        {
+          "latex": "3000\\cdot 0{,}115=345\\ \\mathrm{€}",
+          "meaning": "Costo scenario 103"
+        },
+        {
+          "latex": "510-345=165\\ \\mathrm{€}",
+          "meaning": "Margine scenario 103"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non usare i parametri di FIX-BASE per 103.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 120"
+    },
+    {
+      "id": "si-c08-q098",
+      "topicId": "si-c08-t11",
+      "question": "Perché il dataset e i KPI del Capitolo 8 non definiscono EnerPrice definitivo?",
+      "answer": "Sono costruiti esclusivamente come esempi didattici di SQL avanzato, senza molti componenti economici e regolatori reali.",
+      "detail": "Gli scenari sono ipotesi alternative; non devono essere sommati automaticamente come redditività complessiva.",
+      "example": "La vista sui margini mostra l’uso di join e ROUND.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire acriticamente formule dimostrative nel progetto di esame.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.11, pagina PDF 120"
+    },
+    {
+      "id": "si-c08-q099",
+      "topicId": "si-c08-t12",
+      "question": "Qual è lo scopo del trigger di audit del §8.12?",
+      "answer": "Registrare i cambiamenti significativi di prezzo o stato dell’offerta in OFFERTA_AUDIT.",
+      "detail": "La registrazione consente diagnosi e tracciabilità, ma il registro non è automaticamente immutabile o completo ai fini compliance.",
+      "example": "UPDATE prezzo da 0.18000 a 0.18500 per FIX-BASE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare «audit completo» uno storico limitato a due campi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.12, pagina PDF 120"
+    },
+    {
+      "id": "si-c08-q100",
+      "topicId": "si-c08-t12",
+      "question": "Quando viene eseguito trg_audit_offerta?",
+      "answer": "AFTER UPDATE ON didattica8.offerta FOR EACH ROW.",
+      "detail": "Il DBMS richiama la funzione una volta per ogni riga modificata, all’interno della stessa transazione.",
+      "example": "CREATE TRIGGER trg_audit_offerta AFTER UPDATE ... EXECUTE FUNCTION fn_audit_offerta().",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere AFTER con una registrazione dopo commit.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.12, pagina PDF 121"
+    },
+    {
+      "id": "si-c08-q101",
+      "topicId": "si-c08-t12",
+      "question": "Quale condizione determina se registrare un audit nel listato 8.14?",
+      "answer": "Cambio effettivo di prezzo oppure cambio effettivo di stato, verificati con IS DISTINCT FROM.",
+      "detail": "Il confronto gestisce eventuali NULL e non genera uno storico per modifiche non rilevanti.",
+      "example": "OLD.prezzo_eur_kwh IS DISTINCT FROM NEW.prezzo_eur_kwh OR OLD.stato IS DISTINCT FROM NEW.stato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una UPDATE senza differenze in questi due campi non genera audit.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.12, pagina PDF 121"
+    },
+    {
+      "id": "si-c08-q102",
+      "topicId": "si-c08-t12",
+      "question": "Quali valori usa la INSERT di fn_audit_offerta per registrare la modifica?",
+      "answer": "NEW.id_offerta, TG_OP, OLD.stato, NEW.stato, OLD.prezzo_eur_kwh, NEW.prezzo_eur_kwh.",
+      "detail": "Sono memorizzati l’oggetto modificato, l’operazione, i valori prima e dopo.",
+      "example": "INSERT INTO offerta_audit(id_offerta,evento,stato_pre,stato_post,prezzo_pre,prezzo_post) VALUES (...).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire OLD e NEW.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.12, pagina PDF 121"
+    },
+    {
+      "id": "si-c08-q103",
+      "topicId": "si-c08-t12",
+      "question": "Qual è la risposta del trigger di audit a un UPDATE della sola quota_fissa_annua?",
+      "answer": "Non registra alcuna riga nel caso originario, perché il predicato controlla solo prezzo e stato.",
+      "detail": "Per includere la quota serve ampliare tabella di storico, condizione di confronto e valori registrati.",
+      "example": "UPDATE offerta SET quota_fissa_annua=130 ...",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere che il nome «audit offerta» implichi tutte le modifiche.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.12, pagina PDF 121"
+    },
+    {
+      "id": "si-c08-q104",
+      "topicId": "si-c08-t12",
+      "question": "Perché fn_audit_offerta termina con RETURN NULL?",
+      "answer": "Perché è un AFTER ROW trigger e il valore restituito viene ignorato.",
+      "detail": "L’INSERT nello storico è già stata eseguita nel contesto della UPDATE di origine.",
+      "example": "END IF; RETURN NULL; END;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare RETURN NULL come cancellazione della riga aggiornata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.12, pagina PDF 121"
+    },
+    {
+      "id": "si-c08-q105",
+      "topicId": "si-c08-t12",
+      "question": "Qual è il risultato atteso del test UPDATE prezzo a 0.18500 per l’offerta 1?",
+      "answer": "Una riga audit che registra il prezzo da 0.18000 a 0.18500; lo stato resta BOZZA.",
+      "detail": "La modifica coinvolge uno dei due attributi sorvegliati dal predicato ECA.",
+      "example": "WHERE id_offerta=1, prezzo_pre=0.18000, prezzo_post=0.18500.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che l’audit scatti per ogni UPDATE a prescindere dal valore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.12, pagina PDF 121"
+    },
+    {
+      "id": "si-c08-q106",
+      "topicId": "si-c08-t12",
+      "question": "Cosa succede all’audit se la transazione principale viene annullata?",
+      "answer": "La riga audit inserita dal trigger ordinario viene annullata insieme alla UPDATE.",
+      "detail": "Trigger e DML scatenante sono parte della stessa transazione: non esiste commit indipendente nel listato.",
+      "example": "BEGIN; UPDATE prezzo; ROLLBACK → né prezzo né audit confermati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare questo trigger come registro di tentativi falliti resistente al rollback.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.12, pagina PDF 121"
+    },
+    {
+      "id": "si-c08-q107",
+      "topicId": "si-c08-t12",
+      "question": "Come ottenere traccia di eventi anche dopo una transazione abortita?",
+      "answer": "Serve un’architettura dedicata di logging/audit esterno al normale audit transazionale.",
+      "detail": "Il manuale distingue la tabella di audit operativa dalla necessità di registrare eventi che devono sopravvivere a rollback.",
+      "example": "Un sistema di sicurezza raccoglie tentativi falliti su canale separato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarsi che INSERT fatta in trigger ordinario ignori il ROLLBACK.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.12, pagina PDF 121"
+    },
+    {
+      "id": "si-c08-q108",
+      "topicId": "si-c08-t12",
+      "question": "Perché i requisiti del logging vanno definiti prima di scrivere fn_audit_offerta?",
+      "answer": "Per scegliere gli eventi e i campi realmente da tracciare, la granularità, i permessi e la conservazione.",
+      "detail": "Nel listato l’audit non comprende quota fissa, costo né ogni modifica non sorvegliata.",
+      "example": "Aggiungere audit quota richiede cambiare schema, trigger e test.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un esempio funzionante con la copertura di ogni requisito di audit.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.12, pagina PDF 121"
+    },
+    {
+      "id": "si-c08-q109",
+      "topicId": "si-c08-t13",
+      "question": "Quali due regole di ciclo di vita sono richieste nel caso OFFERTA/SCENARIO?",
+      "answer": "Non approvare una offerta senza almeno uno scenario; non modificare direttamente l’offerta e i suoi scenari una volta APPROVATA.",
+      "detail": "La prima richiede un controllo inter-tabellare; la seconda controlla lo stato e le operazioni consentite.",
+      "example": "BOZZA → APPROVATA soltanto se EXISTS(scenario).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non tentare di coprire entrambe le regole con un CHECK sulla sola OFFERTA.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 121"
+    },
+    {
+      "id": "si-c08-q110",
+      "topicId": "si-c08-t13",
+      "question": "Perché si usano due funzioni trigger distinte fn_guard_offerta e fn_guard_scenario?",
+      "answer": "Perché la violazione può derivare da operazioni sulla tabella OFFERTA oppure sulla tabella SCENARIO.",
+      "detail": "Sorvegliare solo la transizione di stato non impedisce cancellazioni o variazioni successive degli scenari.",
+      "example": "Un’offerta approvata può perdere l’ultimo scenario senza UPDATE di OFFERTA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare garantito un invariante globale con un solo controllo parziale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 122"
+    },
+    {
+      "id": "si-c08-q111",
+      "topicId": "si-c08-t13",
+      "question": "Quale trigger si collega a fn_guard_offerta?",
+      "answer": "BEFORE UPDATE OR DELETE ON didattica8.offerta FOR EACH ROW.",
+      "detail": "Controlla modifiche e cancellazioni delle offerte prima che possano essere confermate.",
+      "example": "trg_guard_offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuirgli l’intercettazione di tutte le operazioni possibili sul database.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 122"
+    },
+    {
+      "id": "si-c08-q112",
+      "topicId": "si-c08-t13",
+      "question": "Come tratta fn_guard_offerta la DELETE di una offerta APPROVATA?",
+      "answer": "Rileva TG_OP=DELETE; se OLD.stato=APPROVATA solleva eccezione, altrimenti restituisce OLD per consentire la cancellazione.",
+      "detail": "In DELETE si usa OLD perché NEW non esiste.",
+      "example": "RAISE EXCEPTION 'Non si elimina una offerta approvata'.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non restituire NEW per la cancellazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 121"
+    },
+    {
+      "id": "si-c08-q113",
+      "topicId": "si-c08-t13",
+      "question": "Come tratta fn_guard_offerta un UPDATE di una offerta già APPROVATA?",
+      "answer": "Se OLD.stato è APPROVATA solleva un’eccezione che vieta la modifica.",
+      "detail": "L’obiettivo del caso è impedire modifiche dirette successivamente all’approvazione.",
+      "example": "RAISE EXCEPTION 'Offerta approvata: modifica vietata'.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare il controllo soltanto quando cambia lo stato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 121"
+    },
+    {
+      "id": "si-c08-q114",
+      "topicId": "si-c08-t13",
+      "question": "Qual è la verifica quando NEW.stato diventa APPROVATA?",
+      "answer": "La funzione cerca almeno una riga SCENARIO con id_offerta = NEW.id_offerta; se non la trova rifiuta la UPDATE.",
+      "detail": "Il controllo usa NOT EXISTS e RAISE EXCEPTION per impedire lo stato approvato senza figli.",
+      "example": "FIX-NO-SCENARIO (id 3) non supera l’approvazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare la mancata presenza come margine nullo ma come violazione della regola.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 121"
+    },
+    {
+      "id": "si-c08-q115",
+      "topicId": "si-c08-t13",
+      "question": "Qual è il RETURN finale di fn_guard_offerta per un UPDATE valido?",
+      "answer": "RETURN NEW.",
+      "detail": "La nuova riga è ammessa dopo i controlli sullo stato e sugli scenari.",
+      "example": "Approvazione di FIX-BASE con scenari 101 e 102.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare RETURN NULL per concedere la UPDATE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 122"
+    },
+    {
+      "id": "si-c08-q116",
+      "topicId": "si-c08-t13",
+      "question": "Quali tre eventi intercetta trg_guard_scenario?",
+      "answer": "BEFORE INSERT, UPDATE e DELETE su SCENARIO, a livello FOR EACH ROW.",
+      "detail": "Il controllo riguarda ogni mutazione che potrebbe compromettere la stabilità degli scenari delle offerte approvate.",
+      "example": "trg_guard_scenario BEFORE INSERT OR UPDATE OR DELETE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non verificare soltanto DELETE dell’ultimo scenario.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 122"
+    },
+    {
+      "id": "si-c08-q117",
+      "topicId": "si-c08-t13",
+      "question": "Come individua fn_guard_scenario l’offerta da controllare?",
+      "answer": "Su DELETE usa OLD.id_offerta; su INSERT o UPDATE usa NEW.id_offerta, ma rifiuta lo spostamento fra offerte in UPDATE.",
+      "detail": "Il controllo impedisce che un UPDATE cambi l’offerta padre di uno scenario.",
+      "example": "IF NEW.id_offerta IS DISTINCT FROM OLD.id_offerta THEN RAISE EXCEPTION.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a controllare il nuovo padre ignorando quello precedente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 122"
+    },
+    {
+      "id": "si-c08-q118",
+      "topicId": "si-c08-t13",
+      "question": "A cosa serve SELECT stato ... FROM OFFERTA FOR UPDATE nel trigger su SCENARIO?",
+      "answer": "A leggere lo stato e bloccare la riga parent dell’offerta mentre viene validata la modifica dello scenario.",
+      "detail": "Coordina scritture concorrenti che coinvolgono approvazione e scenari della stessa offerta.",
+      "example": "SELECT stato INTO v_stato FROM didattica8.offerta WHERE id_offerta=v_id FOR UPDATE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare FOR UPDATE come una modifica del valore stato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 122"
+    },
+    {
+      "id": "si-c08-q119",
+      "topicId": "si-c08-t13",
+      "question": "Quali due esiti di errore controlla fn_guard_scenario dopo la SELECT del parent?",
+      "answer": "Se l’offerta non è trovata segnala inesistenza; se è APPROVATA rifiuta la modifica agli scenari.",
+      "detail": "Il listato controlla IF NOT FOUND e poi IF v_stato = APPROVATA.",
+      "example": "Rifiuta DELETE dello scenario 101 dopo approvazione di FIX-BASE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere esistenza di parent (anche garantita da FK per alcune operazioni) e stato autorizzato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 122"
+    },
+    {
+      "id": "si-c08-q120",
+      "topicId": "si-c08-t13",
+      "question": "Quali sono i valori restituiti dal trigger SCENARIO per operazioni ammesse?",
+      "answer": "RETURN OLD per DELETE; RETURN NEW per INSERT/UPDATE.",
+      "detail": "È un trigger BEFORE ROW e deve restituire la riga corretta perché l’operazione prosegua.",
+      "example": "IF TG_OP=DELETE THEN RETURN OLD; END IF; RETURN NEW.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare RETURN NULL, che salterebbe la riga.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 122"
+    },
+    {
+      "id": "si-c08-q121",
+      "topicId": "si-c08-t13",
+      "question": "Qual è la sequenza dei quattro test proposta dal manuale?",
+      "answer": "Una approvazione riuscita (offerta 1) e tre operazioni da far fallire: modifica prezzo approvato, eliminazione scenario 101, approvazione offerta 3 senza scenari.",
+      "detail": "I test negativi vanno eseguiti separatamente, non fanno parte dello script di inizializzazione.",
+      "example": "UPDATE offerta SET stato=APPROVATA WHERE id=1; poi tentativi previsti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eseguire i fallimenti come parte indistinta dell’inizializzazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 123"
+    },
+    {
+      "id": "si-c08-q122",
+      "topicId": "si-c08-t13",
+      "question": "Che effetto ha l’approvazione valida di FIX-BASE nel caso di audit?",
+      "answer": "Lo stato diventa APPROVATA e il trigger di audit registra il cambiamento BOZZA → APPROVATA.",
+      "detail": "Il trigger di guardia permette la transizione perché ci sono scenari; l’audit osserva la variazione significativa.",
+      "example": "offerta id=1; audit con stato_pre=BOZZA e stato_post=APPROVATA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che la validazione disabiliti l’audit.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 123"
+    },
+    {
+      "id": "si-c08-q123",
+      "topicId": "si-c08-t13",
+      "question": "Quali limiti sono esplicitamente riconosciuti alla soluzione didattica dei trigger di guardia?",
+      "answer": "Non copre automaticamente operazioni privilegiate, trigger disabilitati, grandi caricamenti, replica, modifiche di schema o ogni scenario amministrativo.",
+      "detail": "Una soluzione produttiva richiederebbe anche permessi, revisione dei percorsi di scrittura e test concorrenti.",
+      "example": "Un amministratore può avere modalità operative non previste dai trigger del caso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare «integrità assoluta» sulla sola base del test mono-sessione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.13, pagina PDF 122"
+    },
+    {
+      "id": "si-c08-q124",
+      "topicId": "si-c08-t14",
+      "question": "Qual è il rapporto transazionale tra un trigger DML e l’istruzione che lo scatena?",
+      "answer": "Il trigger opera nello stesso contesto transazionale dell’istruzione principale.",
+      "detail": "Se l’operazione viene annullata, sono annullati anche gli effetti del trigger nella stessa transazione.",
+      "example": "BEGIN; UPDATE offerta; INSERT audit del trigger; ROLLBACK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non parlare di commit automatico del trigger.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.14, pagina PDF 123"
+    },
+    {
+      "id": "si-c08-q125",
+      "topicId": "si-c08-t14",
+      "question": "Che cosa succede dopo RAISE EXCEPTION durante una transazione PostgreSQL esplicita?",
+      "answer": "L’istruzione fallisce e occorre gestire lo stato della transazione, normalmente con ROLLBACK o recupero tramite savepoint.",
+      "detail": "Gli effetti dell’operazione e del relativo trigger non restano confermati.",
+      "example": "Approvazione di offerta 3 genera errore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che le scritture parziali del trigger siano già persistenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.14, pagina PDF 123"
+    },
+    {
+      "id": "si-c08-q126",
+      "topicId": "si-c08-t14",
+      "question": "Perché SELECT COUNT(*) o EXISTS in un trigger non garantisce automaticamente un vincolo sotto concorrenza?",
+      "answer": "Due sessioni possono controllare uno stato parziale e svolgere modifiche incompatibili senza adeguata sincronizzazione.",
+      "detail": "Sono necessarie strategie come vincoli nativi, lock/serializzazione o isolamento e gestione dei fallimenti.",
+      "example": "Approva offerta e contemporaneamente elimina ultimo scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare un test mono-sessione a una prova di correttezza concorrente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.14, pagina PDF 123"
+    },
+    {
+      "id": "si-c08-q127",
+      "topicId": "si-c08-t14",
+      "question": "Che obiettivo ha il lock SELECT ... FOR UPDATE sulla riga OFFERTA?",
+      "answer": "Coordinare le transazioni che modificano scenari e stato della medesima offerta tramite una risorsa padre comune.",
+      "detail": "Il lock stabilizza l’ordine delle operazioni rilevanti per la regola didattica.",
+      "example": "fn_guard_scenario legge e blocca OFFERTA prima del controllo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a FOR UPDATE l’eliminazione automatica di tutti i problemi concorrenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.14, pagina PDF 123"
+    },
+    {
+      "id": "si-c08-q128",
+      "topicId": "si-c08-t14",
+      "question": "Perché le UPDATE di approvazione sono coordinate con il trigger su SCENARIO?",
+      "answer": "L’UPDATE del record OFFERTA detiene un lock sulla riga; il trigger SCENARIO cerca il lock della stessa offerta.",
+      "detail": "Le operazioni concorrenti sul medesimo oggetto devono coordinarsi per rispettare l’invariante.",
+      "example": "Sessione A approva; sessione B tenta DELETE scenario associato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non leggere l’offerta senza un protocollo coerente di lock.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.14, pagina PDF 123"
+    },
+    {
+      "id": "si-c08-q129",
+      "topicId": "si-c08-t14",
+      "question": "Quali rischi rimangono usando lock e trigger?",
+      "answer": "Deadlock, attese, necessità di retry, ordine di acquisizione incoerente e possibili percorsi di scrittura non coperti.",
+      "detail": "Il manuale richiede ordine stabile dei lock e test con transazioni realmente parallele.",
+      "example": "Una UPDATE multi-riga acquisisce vari lock.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare un lock come una ricetta universale valida per qualsiasi schema.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.14, pagina PDF 123"
+    },
+    {
+      "id": "si-c08-q130",
+      "topicId": "si-c08-t14",
+      "question": "A cosa servono i constraint trigger differibili PostgreSQL?",
+      "answer": "Permettono in determinati casi controlli AFTER ROW DEFERRABLE valutati anche alla fine della transazione tramite SET CONSTRAINTS.",
+      "detail": "Consentono stati intermedi temporaneamente non validi quando lo stato finale rispetta l’invariante.",
+      "example": "Inserimento coordinato di oggetti collegati prima della verifica finale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderli con un normale BEFORE ROW trigger.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.14, pagina PDF 123"
+    },
+    {
+      "id": "si-c08-q131",
+      "topicId": "si-c08-t14",
+      "question": "Quando è appropriato differire la valutazione di un vincolo complesso?",
+      "answer": "Quando una transazione compie più modifiche e soltanto il risultato finale deve rispettare un vincolo globale.",
+      "detail": "Il controllo differito non significa eliminare il vincolo; sposta il momento della valutazione.",
+      "example": "Sequenza di modifiche che temporaneamente lascia un’offerta senza figli ma la ripristina prima del commit.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che tutti i trigger possano essere resi DEFERRABLE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.14, pagina PDF 123"
+    },
+    {
+      "id": "si-c08-q132",
+      "topicId": "si-c08-t14",
+      "question": "Che cosa dimostra il listato 8.19 su prezzo e audit?",
+      "answer": "Dopo BEGIN, UPDATE del prezzo di FIX-SMART e ROLLBACK, né il prezzo né la relativa riga audit restano modificati.",
+      "detail": "Conferma l’atomicità nel caso di trigger ordinario e DML all’interno della stessa transazione.",
+      "example": "SET prezzo=0.14500 WHERE id_offerta=2; ROLLBACK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non contare una riga audit non confermata come persistente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.14, pagina PDF 123"
+    },
+    {
+      "id": "si-c08-q133",
+      "topicId": "si-c08-t14",
+      "question": "Qual è il controllo empirico necessario per affermare robustezza sotto concorrenza?",
+      "answer": "Eseguire test con sessioni e transazioni concorrenti, verificando lock, esiti, deadlock e invarianti al commit.",
+      "detail": "Una sequenza di casi positivi e negativi eseguita nella stessa sessione non riproduce possibili race condition.",
+      "example": "Due sessioni lavorano sullo stesso id_offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre sicurezza concorrente da una singola SELECT seguita da UPDATE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.14, pagina PDF 123"
+    },
+    {
+      "id": "si-c08-q134",
+      "topicId": "si-c08-t15",
+      "question": "Qual è la gerarchia di scelta raccomandata tra vincoli nativi, trigger e logica applicativa?",
+      "answer": "Preferire vincoli dichiarativi per regole esprimibili direttamente, usare trigger quando serve una reazione DB o un controllo complesso, riservare all’app la logica di interazione e orchestrazione.",
+      "detail": "Il criterio è minimizzare complessità mantenendo gli invarianti centralizzati quando necessario.",
+      "example": "CHECK per prezzo; trigger audit; PHP MVC per validazione UX.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare trigger come soluzione predefinita a ogni requisito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.15, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q135",
+      "topicId": "si-c08-t15",
+      "question": "Qual è lo strumento preferibile per prezzo non negativo?",
+      "answer": "CHECK(prezzo_eur_kwh >= 0).",
+      "detail": "Un trigger aggiungerebbe codice ridondante per un predicato di riga.",
+      "example": "ALTER/CREATE TABLE con CHECK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere dimostrazione sintattica del trigger e migliore scelta progettuale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.15, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q136",
+      "topicId": "si-c08-t15",
+      "question": "Qual è lo strumento preferibile per un codice offerta univoco?",
+      "answer": "UNIQUE sul codice, eventualmente insieme a NOT NULL secondo i requisiti.",
+      "detail": "Il DBMS offre un meccanismo centralizzato di unicità che gestisce anche interferenze concorrenti.",
+      "example": "codice VARCHAR(30) NOT NULL UNIQUE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fare SELECT COUNT poi INSERT da client come garanzia di unicità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.15, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q137",
+      "topicId": "si-c08-t15",
+      "question": "Come si garantisce che ogni SCENARIO riferisca un’OFFERTA esistente?",
+      "answer": "Mediante FOREIGN KEY dichiarativa da SCENARIO.id_offerta a OFFERTA.id_offerta.",
+      "detail": "È un vincolo referenziale nativo, distinto dal richiedere almeno uno scenario per offerta.",
+      "example": "REFERENCES didattica8.offerta(id_offerta).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un trigger solo per verificare l’esistenza del parent.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.15, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q138",
+      "topicId": "si-c08-t15",
+      "question": "Quale meccanismo è indicato per tracciare cambiamenti di prezzo indipendentemente dal client?",
+      "answer": "Un AFTER UPDATE trigger di audit nella base di dati.",
+      "detail": "La stessa regola viene applicata alle UPDATE provenienti da applicazioni diverse.",
+      "example": "fn_audit_offerta().",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non demandare l’unico audit a un client che potrebbe non essere usato da tutti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.15, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q139",
+      "topicId": "si-c08-t15",
+      "question": "Come applicare la regola «approvazione solo con scenario»?",
+      "answer": "Con un disegno transazionale e controlli inter-tabellari coerenti, anche mediante trigger su tutti gli eventi pertinenti.",
+      "detail": "CHECK sulla sola riga non verifica l’esistenza dei figli; l’invariante deve tenere conto anche delle modifiche successive.",
+      "example": "Trigger su OFFERTA e SCENARIO coordinati via lock.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fermarsi al controllo della sola UPDATE stato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.15, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q140",
+      "topicId": "si-c08-t15",
+      "question": "Quale strumento è appropriato per un calcolo informativo di marginalità?",
+      "answer": "Una query SELECT oppure una VIEW, se il dato è derivabile e non serve duplicarlo.",
+      "detail": "La scelta evita ridondanze non giustificate; eventuale materializzazione richiede analisi prestazionale.",
+      "example": "v_scenario_margine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non salvare automaticamente ogni KPI calcolabile in una colonna base.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.15, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q141",
+      "topicId": "si-c08-t15",
+      "question": "Quali compiti sono più adatti a un servizio applicativo PHP MVC?",
+      "answer": "Orchestrazione di una simulazione interattiva, presentazione dei risultati e feedback all’utente.",
+      "detail": "La logica di interazione e workflow complesso non dovrebbe essere nascosta completamente nei trigger.",
+      "example": "Validazione di una form, comunicazione dell’esito di una simulazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la UI sufficiente per una regola di integrità che deve valere per ogni client.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.15, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q142",
+      "topicId": "si-c08-t15",
+      "question": "Perché la logica applicativa non sostituisce sempre i vincoli del database?",
+      "answer": "Perché database e tabelle possono essere modificati anche da client, batch e strumenti diversi dall’applicazione.",
+      "detail": "Un invariante globale deve essere applicato nel livello appropriato per coprire tutti i percorsi di scrittura.",
+      "example": "Un caricamento batch che non usa l’interfaccia web.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fare affidamento esclusivo su JavaScript o controlli form.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.15, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q143",
+      "topicId": "si-c08-t16",
+      "question": "Che costo comporta un trigger ROW su una UPDATE massiva?",
+      "answer": "La funzione può essere richiamata centinaia o migliaia di volte, ripetendo letture, scritture e lock.",
+      "detail": "Il costo dipende dalla granularità, dalle query eseguite nel corpo e dal numero di righe modificate.",
+      "example": "UPDATE 20.000 offerte con query aggiuntiva per ciascuna.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire i trigger come operazioni «gratuite» sul DBMS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.16, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q144",
+      "topicId": "si-c08-t16",
+      "question": "Quando un trigger STATEMENT con transition tables può essere preferibile?",
+      "answer": "Quando la logica deve elaborare l’insieme delle righe modificate ed è possibile ridurre lavoro per-riga senza cambiare il comportamento richiesto.",
+      "detail": "La disponibilità delle transition tables è limitata a specifici casi PostgreSQL.",
+      "example": "Audit batch o elaborazione aggregata di modifiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cambiare la semantica funzionale per ottenere solo velocità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.16, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q145",
+      "topicId": "si-c08-t16",
+      "question": "Perché proprietà, permessi e search_path sono rilevanti per le funzioni trigger?",
+      "answer": "Una funzione può accedere a dati privilegiati; configurazioni errate possono introdurre escalation o esecuzione di oggetti inattesi.",
+      "detail": "Le funzioni SECURITY DEFINER richiedono particolare attenzione, search_path controllato e riferimenti espliciti agli oggetti.",
+      "example": "didattica8.offerta invece di nome ambiguo nel percorso di ricerca.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare trigger per aggirare il modello di autorizzazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.16, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q146",
+      "topicId": "si-c08-t16",
+      "question": "Qual è il limite di sicurezza di un audit trigger nella stessa transazione?",
+      "answer": "Gli eventi di una transazione annullata non restano nel registro tabellare normale dopo rollback.",
+      "detail": "Per tracciare tentativi falliti può occorrere logging separato dall’azione transazionale.",
+      "example": "RAISE EXCEPTION dopo INSERT audit nella stessa transazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere il log interno resistente a qualsiasi errore o manipolazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.16, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q147",
+      "topicId": "si-c08-t16",
+      "question": "Come possono nascere ricorsioni o cascate di trigger?",
+      "answer": "Un trigger modifica una tabella che a sua volta attiva altri trigger, eventualmente richiamando nuovamente gli originali.",
+      "detail": "Per limitarle servono responsabilità nette, condizioni di attivazione e test dei percorsi di scrittura.",
+      "example": "Trigger A aggiorna B; trigger B aggiorna A.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che un trigger possa scrivere su qualsiasi tabella senza effetti collaterali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.16, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q148",
+      "topicId": "si-c08-t16",
+      "question": "Come ordina PostgreSQL trigger dello stesso tipo associati allo stesso evento, secondo il manuale?",
+      "answer": "Alfabeticamente per nome.",
+      "detail": "L’ordine può incidere sugli effetti ma non dovrebbe essere l’unica condizione da cui dipende la correttezza della progettazione.",
+      "example": "trg_audit... e trg_guard... sullo stesso evento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidare la semantica a nomi casuali anziché a regole esplicite.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.16, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q149",
+      "topicId": "si-c08-t16",
+      "question": "Quali aspetti valutare prima di introdurre un trigger in produzione?",
+      "answer": "Necessità, costo di esecuzione, atomicità, concorrenza, permessi, ricorsione, osservabilità, test e manutenzione.",
+      "detail": "Un trigger è codice di business eseguito implicitamente dal DBMS, con possibili dipendenze nascoste.",
+      "example": "Revisione del piano di test su INSERT, UPDATE, DELETE e operazioni concorrenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non giudicare la qualità dalla sola compilazione del codice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.16, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q150",
+      "topicId": "si-c08-t17",
+      "question": "Qual è la differenza strutturale principale tra trigger PostgreSQL e Oracle?",
+      "answer": "PostgreSQL in genere usa una funzione separata RETURNS TRIGGER; Oracle spesso incorpora il blocco PL/SQL nel CREATE TRIGGER.",
+      "detail": "Entrambi hanno eventi e tempi, ma la sintassi della funzione, le pseudorighe e gli errori differiscono.",
+      "example": "PostgreSQL: CREATE FUNCTION ...; CREATE TRIGGER ... EXECUTE FUNCTION. Oracle: CREATE TRIGGER ... BEGIN ... END.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non copiare il corpo Oracle in una definizione PL/pgSQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.17, pagina PDF 124"
+    },
+    {
+      "id": "si-c08-q151",
+      "topicId": "si-c08-t17",
+      "question": "Come si scrivono OLD e NEW nei due DBMS?",
+      "answer": "PostgreSQL: OLD.campo e NEW.campo; Oracle: :OLD.campo e :NEW.campo.",
+      "detail": "In PostgreSQL sono record speciali della funzione trigger; in Oracle sono pseudorecord di trigger con colon.",
+      "example": ":NEW.prezzo_eur_kwh in Oracle.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere o aggiungere : nel DBMS sbagliato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.17, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q152",
+      "topicId": "si-c08-t17",
+      "question": "Come si identifica il tipo di operazione in PostgreSQL e Oracle?",
+      "answer": "PostgreSQL: variabile TG_OP; Oracle: predicati INSERTING, UPDATING e DELETING.",
+      "detail": "Consentono rami distinti di logica in trigger con più eventi.",
+      "example": "IF TG_OP='DELETE'... / IF UPDATING THEN...",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non tentare di usare TG_OP in Oracle PL/SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.17, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q153",
+      "topicId": "si-c08-t17",
+      "question": "Come si solleva un errore da un trigger PostgreSQL rispetto a Oracle?",
+      "answer": "PostgreSQL PL/pgSQL usa RAISE EXCEPTION; Oracle PL/SQL può usare RAISE_APPLICATION_ERROR.",
+      "detail": "In entrambi i casi il rifiuto dell’operazione segue la gestione transazionale del DBMS.",
+      "example": "RAISE_APPLICATION_ERROR(-20001, 'Prezzo negativo') in Oracle.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare sintassi e codici errore tra piattaforme.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.17, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q154",
+      "topicId": "si-c08-t17",
+      "question": "Quale differenza esiste nel RETURN della funzione trigger?",
+      "answer": "In PostgreSQL il RETURN NEW/OLD/NULL ha semantica specifica; un trigger Oracle tradizionale non restituisce una tupla con la stessa forma.",
+      "detail": "La scelta PostgreSQL dipende da BEFORE ROW, tipo DML e condizioni.",
+      "example": "RETURN OLD dopo DELETE PostgreSQL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere RETURN NEW come se fosse obbligatorio in un trigger Oracle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.17, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q155",
+      "topicId": "si-c08-t17",
+      "question": "Che cos’è la mutating-table restriction Oracle?",
+      "answer": "È una limitazione che in determinate circostanze impedisce a un trigger row-level di interrogare o modificare in modo improprio la tabella soggetta alla DML.",
+      "detail": "È una caratteristica specifica da riconoscere senza trasferirla automaticamente a PostgreSQL.",
+      "example": "Trigger Oracle su tabella che tenta di rileggerla mentre viene modificata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire lo stesso errore a ogni trigger PostgreSQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.17, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q156",
+      "topicId": "si-c08-t17",
+      "question": "Perché il trigger Oracle che vieta prezzo negativo è didatticamente ridondante?",
+      "answer": "Perché il predicato prezzo >= 0 può essere imposto con CHECK, più semplice e affidabile.",
+      "detail": "Il listato Oracle serve a mostrare sintassi e RAISE_APPLICATION_ERROR, non a raccomandare la soluzione in produzione.",
+      "example": "BEFORE UPDATE OF prezzo_eur_kwh ... :NEW.prezzo_eur_kwh < 0.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere sempre un trigger solo perché si conosce PL/SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.17, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q157",
+      "topicId": "si-c08-t17",
+      "question": "Quali caratteristiche di BEFORE/AFTER/INSTEAD OF e ROW/STATEMENT sono comuni ai due sistemi?",
+      "answer": "Entrambi supportano concetti di momento del trigger e granularità, pur con differenze sintattiche e limiti specifici.",
+      "detail": "Il significato generale è confrontabile, ma i dettagli devono essere validati nel dialetto scelto.",
+      "example": "BEFORE UPDATE FOR EACH ROW.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere identica disponibilità di tutte le combinazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.17, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q158",
+      "topicId": "si-c08-t17",
+      "question": "Perché conoscere Oracle non basta a scrivere automaticamente trigger PostgreSQL corretti?",
+      "answer": "I concetti trasferibili non sostituiscono le differenze su funzione RETURNS TRIGGER, NEW/OLD, eccezioni, TG_OP e locking.",
+      "detail": "Il manuale richiede di saper giustificare lo strumento e il comportamento, oltre alla sintassi.",
+      "example": "Conversione di un trigger PL/SQL in PL/pgSQL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare PL/SQL e PL/pgSQL come lo stesso linguaggio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.17, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q159",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 1] Come costruire una vista delle sole offerte APPROVATE con codice e prezzo?",
+      "answer": "CREATE VIEW didattica8.v_approvate AS SELECT codice, prezzo_eur_kwh FROM didattica8.offerta WHERE stato = 'APPROVATA';.",
+      "detail": "Dopo la sequenza didattica di approvazione la vista ordinaria include FIX-BASE; non costituisce una copia fisica.",
+      "example": "CREATE VIEW didattica8.v_approvate AS SELECT codice, prezzo_eur_kwh FROM didattica8.offerta WHERE stato='APPROVATA';",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non materializzare il risultato senza requisito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q160",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 2] Come contare gli scenari di ogni offerta includendo quelle con zero scenari?",
+      "answer": "Usare LEFT JOIN tra OFFERTA e SCENARIO, GROUP BY sull’offerta e COUNT(s.id_scenario).",
+      "detail": "COUNT su una colonna del lato destro resta zero per il padre senza figli; COUNT(*) invece conta la riga sintetica del LEFT JOIN.",
+      "example": "SELECT o.codice, COUNT(s.id_scenario) FROM offerta o LEFT JOIN scenario s ON s.id_offerta=o.id_offerta GROUP BY o.id_offerta,o.codice;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare INNER JOIN, che escluderebbe FIX-NO-SCENARIO.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q161",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 3] Una vista con GROUP BY codice e COUNT(*) è automaticamente aggiornabile?",
+      "answer": "No, perché le righe aggregate non corrispondono univocamente a singole righe delle tabelle base.",
+      "detail": "Una vista semplice su una sola tabella può esserlo nei casi consentiti.",
+      "example": "UPDATE su un COUNT non indica quale riga di origine modificare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre aggiornabilità da qualsiasi SELECT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q162",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 4] Come formalizzare «non esistono offerte approvate senza scenari»?",
+      "answer": "Con NOT EXISTS di una offerta APPROVATA per la quale NOT EXISTS uno scenario associato.",
+      "detail": "È un’asserzione concettuale globale, che PostgreSQL non consente di creare direttamente con CREATE ASSERTION.",
+      "example": "NOT EXISTS (SELECT 1 FROM offerta o WHERE stato='APPROVATA' AND NOT EXISTS(SELECT 1 FROM scenario s WHERE s.id_offerta=o.id_offerta)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire un CHECK PostgreSQL con SELECT annidata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q163",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 5] Un AFTER UPDATE FOR EACH ROW su dodici righe quante volte è invocato?",
+      "answer": "Dodici volte.",
+      "detail": "Un trigger FOR EACH STATEMENT verrebbe chiamato una sola volta per comando.",
+      "example": "Una UPDATE cambia il prezzo di 12 offerte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare la frequenza delle istruzioni alle righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q164",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 6] Qual è la scelta migliore per impedire volume_kwh <= 0?",
+      "answer": "CHECK(volume_kwh > 0) sulla tabella SCENARIO.",
+      "detail": "Il vincolo esiste già nel caso didattico; un trigger aggiunge complessità non necessaria.",
+      "example": "CHECK (volume_kwh > 0).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non implementare con BEFORE INSERT un controllo locale già esprimibile come CHECK.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 126"
+    },
+    {
+      "id": "si-c08-q165",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 7] In un BEFORE DELETE ROW come leggere il vecchio prezzo e consentire DELETE?",
+      "answer": "Leggere OLD.prezzo_eur_kwh e terminare con RETURN OLD.",
+      "detail": "NEW non è presente in DELETE; in AFTER DELETE il ritorno è ignorato.",
+      "example": "IF TG_OP='DELETE' THEN ... RETURN OLD; END IF;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non restituire NEW o RETURN NULL per consentire la cancellazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 126"
+    },
+    {
+      "id": "si-c08-q166",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 8] Come evitare audit se il prezzo non è cambiato, anche per eventuali NULL?",
+      "answer": "Controllare OLD.prezzo_eur_kwh IS DISTINCT FROM NEW.prezzo_eur_kwh prima di inserire lo storico.",
+      "detail": "Il confronto produce un Booleano certo senza UNKNOWN legato a NULL.",
+      "example": "IF OLD.prezzo_eur_kwh IS DISTINCT FROM NEW.prezzo_eur_kwh THEN INSERT ...; END IF;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare soltanto <> per dati nullable.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 126"
+    },
+    {
+      "id": "si-c08-q167",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 9] Quale trigger rifiuta l’approvazione di una offerta senza scenari?",
+      "answer": "Un BEFORE UPDATE ROW su OFFERTA, che verifica NEW.stato e l’assenza di scenari, poi solleva RAISE EXCEPTION.",
+      "detail": "La sola verifica della transizione non copre le successive operazioni su SCENARIO.",
+      "example": "fn_guard_offerta: IF NEW.stato='APPROVATA' AND NOT EXISTS(...) THEN RAISE EXCEPTION.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere il lato SCENARIO dell’invariante.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 126"
+    },
+    {
+      "id": "si-c08-q168",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 10] Perché controllare SCENARIO anche dopo aver protetto la UPDATE di OFFERTA?",
+      "answer": "Perché la DELETE o la modifica dell’ultimo scenario potrebbe lasciare una offerta già approvata senza scenari.",
+      "detail": "Il database può cambiare per percorsi che non attivano il trigger sulla tabella OFFERTA.",
+      "example": "BEFORE INSERT/UPDATE/DELETE ON scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non valutare solo l’operazione che crea lo stato APPROVATA.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 126"
+    },
+    {
+      "id": "si-c08-q169",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 11] BEGIN, UPDATE con audit e ROLLBACK: cosa resta?",
+      "answer": "Né la UPDATE né la sua riga di audit, se entrambe appartengono alla transazione annullata.",
+      "detail": "È un esempio diretto di atomicità delle azioni di trigger e istruzione scatenante.",
+      "example": "BEGIN; UPDATE; audit automatico; ROLLBACK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare l’AFTER trigger una transazione autonoma.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 126"
+    },
+    {
+      "id": "si-c08-q170",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 12] Una MATERIALIZED VIEW è aggiornata se è cambiata la tabella base ma non c’è stato REFRESH?",
+      "answer": "No, il contenuto fisico conserva lo stato dell’ultimo refresh.",
+      "detail": "È necessario gestire il ciclo di aggiornamento in funzione della freschezza richiesta.",
+      "example": "REFRESH MATERIALIZED VIEW ...",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere dati cached e dati attuali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 126"
+    },
+    {
+      "id": "si-c08-q171",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 13] Un UPDATE che coinvolge zero righe attiva un trigger STATEMENT?",
+      "answer": "Sì, una volta; un trigger ROW non viene invocato su alcuna riga.",
+      "detail": "Questa differenza incide sui log degli eventi e sulle statistiche delle operazioni.",
+      "example": "UPDATE ... WHERE id=-1;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che nessun trigger scatta se non cambiano tuple.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 126"
+    },
+    {
+      "id": "si-c08-q172",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 14] Come scoprire una variazione di stato oppure prezzo?",
+      "answer": "OLD.stato IS DISTINCT FROM NEW.stato OR OLD.prezzo_eur_kwh IS DISTINCT FROM NEW.prezzo_eur_kwh.",
+      "detail": "È esattamente la condizione della funzione di audit del caso.",
+      "example": "IF condizione THEN INSERT INTO offerta_audit ...; END IF;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non richiedere che cambino entrambi gli attributi usando AND.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 126"
+    },
+    {
+      "id": "si-c08-q173",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 15] Perché EXISTS non basta con approvazione e cancellazione concorrenti?",
+      "answer": "La lettura dell’esistenza non blocca necessariamente l’altra sessione; serve un protocollo di sincronizzazione, vincoli o isolamento adeguati.",
+      "detail": "Il caso usa FOR UPDATE sulla riga OFFERTA per coordinare l’operazione sugli scenari.",
+      "example": "Due sessioni: una approva, l’altra elimina lo scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non generalizzare la correttezza da un test in una sola sessione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 127"
+    },
+    {
+      "id": "si-c08-q174",
+      "topicId": "si-c08-t18",
+      "question": "[Esercizio 16] Quale differenza tra NEW in PostgreSQL e Oracle va ricordata?",
+      "answer": "PL/pgSQL usa NEW.campo; PL/SQL Oracle usa :NEW.campo.",
+      "detail": "Il confronto comprende anche RAISE EXCEPTION contro RAISE_APPLICATION_ERROR.",
+      "example": "NEW.prezzo_eur_kwh / :NEW.prezzo_eur_kwh.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mescolare elementi sintattici di PostgreSQL e Oracle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 127"
+    },
+    {
+      "id": "si-c08-q175",
+      "topicId": "si-c08-t18",
+      "question": "Qual è il metodo in sette passaggi proposto per affrontare un esercizio sui trigger?",
+      "answer": "Leggere la traccia; individuare tabelle/eventi; formalizzare condizione; scegliere momento e livello; scrivere funzione; collegarla con CREATE TRIGGER; testare casi positivi/negativi e discutere concorrenza.",
+      "detail": "La prova riguarda ragionamento, sintassi e integrità, non soltanto produzione di un listato.",
+      "example": "Dall’invariante alla verifica SQL su un dataset di test.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere il trigger prima di aver identificato tutte le vie di violazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.18, pagina PDF 125"
+    },
+    {
+      "id": "si-c08-q176",
+      "topicId": "si-c08-t19",
+      "question": "[Autonomo A1] Quale vista mostra gli scenari con margine stimato >200 €?",
+      "answer": "Una vista basata su v_scenario_margine con WHERE margine_stimato > 200.00.",
+      "detail": "Sui dati iniziali restano gli scenari 101 (270 €) e 102 (370 €), mentre il 103 (165 €) è escluso.",
+      "example": "CREATE VIEW didattica8.v_scenari_soglia AS SELECT * FROM didattica8.v_scenario_margine WHERE margine_stimato > 200.00;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non includere 103 soltanto perché è uno scenario valido.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.19, pagina PDF 127"
+    },
+    {
+      "id": "si-c08-q177",
+      "topicId": "si-c08-t19",
+      "question": "[Autonomo A2] Come estendere l’audit alle variazioni della quota fissa?",
+      "answer": "Aggiungere quota_pre/ quota_post a OFFERTA_AUDIT, il confronto OLD.quota_fissa_annua IS DISTINCT FROM NEW.quota_fissa_annua e i valori nella INSERT.",
+      "detail": "Occorrono schema, predicato di attivazione e registrazione coerenti tra loro.",
+      "example": "Modifica quota_fissa_annua di FIX-SMART.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiornare soltanto la condizione lasciando assenti le colonne di storico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.19, pagina PDF 127"
+    },
+    {
+      "id": "si-c08-q178",
+      "topicId": "si-c08-t19",
+      "question": "[Autonomo A3] Perché UPDATE stato=PUBBLICATA viene rifiutato?",
+      "answer": "Il CHECK della colonna stato ammette soltanto BOZZA e APPROVATA.",
+      "detail": "La violazione è gestita declarativamente, prima di costruire logica specifica nel trigger.",
+      "example": "UPDATE didattica8.offerta SET stato='PUBBLICATA' WHERE id_offerta=2;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente ogni errore a RAISE EXCEPTION del trigger.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.19, pagina PDF 127"
+    },
+    {
+      "id": "si-c08-q179",
+      "topicId": "si-c08-t19",
+      "question": "[Autonomo A4] Come impedire più di quattro scenari per una offerta in BOZZA?",
+      "answer": "Serve un controllo sull’INSERT di SCENARIO che coordini le sessioni, per esempio blocchi la riga OFFERTA, conti gli scenari e rifiuti il quinto.",
+      "detail": "È un vincolo tra righe e sotto concorrenza un COUNT non sincronizzato non basta.",
+      "example": "Inserimento concorrente del quarto e del quinto scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non tentare un CHECK con COUNT(*) su altre righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.19, pagina PDF 127"
+    },
+    {
+      "id": "si-c08-q180",
+      "topicId": "si-c08-t19",
+      "question": "[Autonomo A5] Quando proporre INSTEAD OF su una vista?",
+      "answer": "Quando una vista non aggiornabile automaticamente deve supportare modifiche tradotte esplicitamente in DML sulle tabelle base.",
+      "detail": "La funzione definisce sia le operazioni sottostanti sia la semantica di ritorno del DBMS.",
+      "example": "INSERT in vista join che richiede INSERT su più tabelle.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere INSTEAD OF con una VIEW materializzata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.19, pagina PDF 127"
+    },
+    {
+      "id": "si-c08-q181",
+      "topicId": "si-c08-t19",
+      "question": "[Autonomo A6] Come termina un tentativo di approvare FIX-NO-SCENARIO?",
+      "answer": "Il BEFORE UPDATE trigger fn_guard_offerta solleva eccezione e la modifica di stato fallisce.",
+      "detail": "Se il comando è dentro una transazione esplicita bisogna gestire errore e rollback.",
+      "example": "UPDATE didattica8.offerta SET stato='APPROVATA' WHERE id_offerta=3;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare uno stato approvato solo perché si è eseguita una UPDATE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.19, pagina PDF 127"
+    },
+    {
+      "id": "si-c08-q182",
+      "topicId": "si-c08-t19",
+      "question": "Quale metodo di lavoro suggerisce il manuale prima di leggere le soluzioni autonome?",
+      "answer": "Scrivere una soluzione su foglio o editor SQL e poi verificarne sintassi ed effetti in un ambiente PostgreSQL di test isolato.",
+      "detail": "Il confronto con la soluzione serve a riconoscere errori di semantica, non a copiare codice a memoria.",
+      "example": "Test A1–A6 su database didattico ricreabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eseguire prove distruttive direttamente su dati di produzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.19, pagina PDF 127"
+    },
+    {
+      "id": "si-c08-q183",
+      "topicId": "si-c08-t20",
+      "question": "Quali cinque confronti sulle viste devi saper esporre senza consultare il manuale?",
+      "answer": "VIEW vs MATERIALIZED VIEW; dati aggiornati vs fotografia; aggiornabile vs non aggiornabile; LOCAL vs CASCADED CHECK OPTION; vista logica vs vincolo di sicurezza.",
+      "detail": "Sono le principali distinzioni richieste nelle domande 1–4 di autoverifica e nelle applicazioni.",
+      "example": "Un aggregato con GROUP BY non è normalmente automaticamente aggiornabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non comprimere tutte le viste nella categoria «tabella derivata».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 127"
+    },
+    {
+      "id": "si-c08-q184",
+      "topicId": "si-c08-t20",
+      "question": "Come risponderesti al quesito «Che differenza esiste tra BEFORE e AFTER?»",
+      "answer": "BEFORE agisce prima della modifica e può validare/modificare NEW; AFTER reagisce alla modifica già eseguita nello statement ma prima del commit della transazione.",
+      "detail": "Il valore restituito da AFTER ROW è ignorato; quello di BEFORE ROW può incidere sulla riga.",
+      "example": "BEFORE guardia; AFTER audit.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che AFTER implica transazione confermata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 128"
+    },
+    {
+      "id": "si-c08-q185",
+      "topicId": "si-c08-t20",
+      "question": "Come ricostruire il numero di invocazioni per UPDATE di cinque o zero righe?",
+      "answer": "Con ROW: cinque o zero invocazioni; con STATEMENT: una invocazione in entrambi i casi.",
+      "detail": "Il valore dipende dall’evento statement, non dal numero di tuple, nel caso del trigger a livello istruzione.",
+      "example": "UPDATE di 0 righe comunque attiva STATEMENT.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un’operazione che modifica zero righe con un’istruzione non eseguita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 128"
+    },
+    {
+      "id": "si-c08-q186",
+      "topicId": "si-c08-t20",
+      "question": "Qual è la risposta completa al quesito OLD/NEW in UPDATE e DELETE?",
+      "answer": "In UPDATE OLD è la riga prima e NEW la riga proposta; in DELETE si dispone di OLD, non di NEW, e in BEFORE DELETE si restituisce tipicamente OLD.",
+      "detail": "In BEFORE INSERT e UPDATE si restituisce in genere NEW per consentire la modifica.",
+      "example": "RETURN NEW in BEFORE UPDATE, RETURN OLD in BEFORE DELETE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare OLD/NEW sempre presenti su ogni evento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 128"
+    },
+    {
+      "id": "si-c08-q187",
+      "topicId": "si-c08-t20",
+      "question": "Che cosa devi spiegare su RETURN NULL in BEFORE ROW e AFTER ROW?",
+      "answer": "In BEFORE ROW può saltare la singola modifica; in AFTER ROW il valore di ritorno è ignorato.",
+      "detail": "Sono comportamenti diversi a parità di istruzione RETURN NULL.",
+      "example": "fn_audit_offerta AFTER ROW ritorna NULL senza annullare la UPDATE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non memorizzare un singolo significato universale di RETURN NULL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 128"
+    },
+    {
+      "id": "si-c08-q188",
+      "topicId": "si-c08-t20",
+      "question": "Come risponderesti al quesito su TG_OP e valori nullable?",
+      "answer": "TG_OP indica l’operazione che ha attivato il trigger; IS DISTINCT FROM confronta valori inclusi eventuali NULL senza UNKNOWN.",
+      "detail": "Il primo serve a scegliere il ramo della funzione, il secondo a decidere se i dati sono cambiati.",
+      "example": "IF TG_OP='DELETE'...; OLD.note IS DISTINCT FROM NEW.note.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare TG_OP per confrontare colonne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 128"
+    },
+    {
+      "id": "si-c08-q189",
+      "topicId": "si-c08-t20",
+      "question": "Quali sono tre ragioni per cui un audit trigger non equivale a un audit immutabile?",
+      "answer": "Partecipa al rollback, registra soltanto gli eventi previsti e la protezione dei log dipende da permessi e architettura.",
+      "detail": "Un audit robusto potrebbe richiedere logging separato e governance della conservazione.",
+      "example": "Una transazione fallita non lascia la sua riga di audit ordinario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire valore probatorio assoluto al solo nome della tabella.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 128"
+    },
+    {
+      "id": "si-c08-q190",
+      "topicId": "si-c08-t20",
+      "question": "Quali vincoli sono da preferire per prezzo, codice offerta e riferimento a offerta?",
+      "answer": "CHECK per prezzo non negativo, UNIQUE per codice, FOREIGN KEY per lo scenario.",
+      "detail": "Sono tre proprietà diverse e gestibili direttamente dal DBMS.",
+      "example": "CHECK >=0; UNIQUE(codice); REFERENCES offerta(id_offerta).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non riscriverle in trigger senza una necessità dimostrata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 128"
+    },
+    {
+      "id": "si-c08-q191",
+      "topicId": "si-c08-t20",
+      "question": "Perché un solo trigger di approvazione non mantiene la regola sugli scenari?",
+      "answer": "Perché anche le operazioni successive su SCENARIO possono far diventare falsa la proprietà dell’offerta approvata.",
+      "detail": "Si richiede una copertura del sistema di transizioni, non solo del momento di approvazione.",
+      "example": "DELETE ultimo scenario dopo approvazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare la verifica passata come garanzia permanente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 128"
+    },
+    {
+      "id": "si-c08-q192",
+      "topicId": "si-c08-t20",
+      "question": "Qual è la richiesta della mini-simulazione da 4/30?",
+      "answer": "Progettare il controllo «offerta approvabile solo con scenario e scenari di offerte approvate immodificabili», identificando eventi, trigger, logica e concorrenza.",
+      "detail": "Il punteggio è un modello di autovalutazione didattico, non una rubrica ufficiale del docente.",
+      "example": "OFFERTA(id,stato,prezzo), SCENARIO(id,id_offerta,consumo).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non tralasciare la discussione del protocollo transazionale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 128"
+    },
+    {
+      "id": "si-c08-q193",
+      "topicId": "si-c08-t20",
+      "question": "Quali eventi occorre indicare nella mini-simulazione?",
+      "answer": "UPDATE dello stato dell’offerta, e INSERT/UPDATE/DELETE degli scenari quando abilitati.",
+      "detail": "Sono le operazioni che nel caso proposto possono cambiare le condizioni rilevanti per l’invariante.",
+      "example": "trg_guard_offerta e trg_guard_scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare sufficiente la sola UPDATE sul prezzo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 129"
+    },
+    {
+      "id": "si-c08-q194",
+      "topicId": "si-c08-t20",
+      "question": "Quali momento e granularità sono proposti nella mini-simulazione?",
+      "answer": "BEFORE ROW per verificare la singola operazione e rifiutarla quando viola la regola.",
+      "detail": "È coerente con la necessità di impedire il cambiamento prima che prosegua.",
+      "example": "BEFORE UPDATE OR DELETE ON offerta; BEFORE INSERT OR UPDATE OR DELETE ON scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un trigger di guardia con un AFTER di audit.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 129"
+    },
+    {
+      "id": "si-c08-q195",
+      "topicId": "si-c08-t20",
+      "question": "Quali controlli dovrebbe contenere la soluzione logica alla mini-simulazione?",
+      "answer": "Esistenza di scenari prima dell’approvazione, divieto di modifica a stato approvato, controllo su OLD/NEW e RAISE EXCEPTION per i casi non validi.",
+      "detail": "RETURN NEW o OLD deve essere coerente con l’operazione in un BEFORE ROW.",
+      "example": "IF NEW.stato='APPROVATA' AND NOT EXISTS(...) THEN RAISE EXCEPTION.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a un commento che descrive il requisito senza implementare la condizione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 129"
+    },
+    {
+      "id": "si-c08-q196",
+      "topicId": "si-c08-t20",
+      "question": "Come viene distribuito il punteggio 4/30 della rubrica didattica della mini-simulazione?",
+      "answer": "Eventi 1,0; momento e livello 0,75; algoritmo e sintassi 1,5; consistenza generale 0,75.",
+      "detail": "Valorizza maggiormente il ragionamento di controllo e la corretta descrizione operativa del trigger.",
+      "example": "La concorrenza rientra nella consistenza generale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare la rubrica come fornita ufficialmente dai docenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 129"
+    },
+    {
+      "id": "si-c08-q197",
+      "topicId": "si-c08-t20",
+      "question": "Quale parte della mini-simulazione serve a discutere la concorrenza?",
+      "answer": "Spiegare che tutti i percorsi di scrittura devono coordinarsi e che il trigger su SCENARIO blocca la riga parent OFFERTA prima dei controlli.",
+      "detail": "Senza lock o isolamento idoneo, sessioni concorrenti potrebbero violare l’invariante.",
+      "example": "SELECT ... FOR UPDATE nella funzione di guardia degli scenari.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che EXISTS sia sempre sufficiente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.20, pagina PDF 129"
+    },
+    {
+      "id": "si-c08-q198",
+      "topicId": "si-c08-t21",
+      "question": "Quali termini costituiscono il glossario minimo del Capitolo 8?",
+      "answer": "VIEW, MATERIALIZED VIEW, ASSERTION, TRIGGER, ECA, BEFORE/AFTER, INSTEAD OF, ROW/STATEMENT, NEW/OLD, TG_OP, CONSTRAINT TRIGGER, TRANSITION TABLE, ROLLBACK, IS DISTINCT FROM.",
+      "detail": "Sono concetti da spiegare e mettere in relazione con un’istruzione SQL concreta.",
+      "example": "Confronto tra NEW/OLD e trigger per riga.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non memorizzare il glossario come parole isolate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.21, pagina PDF 129"
+    },
+    {
+      "id": "si-c08-q199",
+      "topicId": "si-c08-t21",
+      "question": "Qual è la differenza tra CONSTRAINT TRIGGER e un normale trigger BEFORE ROW?",
+      "answer": "Il constraint trigger PostgreSQL è un tipo speciale di AFTER ROW che può essere differibile nei casi previsti; un normale BEFORE ROW controlla la modifica prima della sua esecuzione.",
+      "detail": "Il controllo differito può verificare invarianti al termine di una transazione.",
+      "example": "SET CONSTRAINTS con trigger DEFERRABLE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare DEFERRABLE come attributo indistinto di tutti i trigger.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.21, pagina PDF 129"
+    },
+    {
+      "id": "si-c08-q200",
+      "topicId": "si-c08-t21",
+      "question": "Che cosa significa TRANSITION TABLE nel glossario?",
+      "answer": "Un insieme dei record interessati da una operazione, disponibile in determinati trigger PostgreSQL.",
+      "detail": "Permette di trattare collettivamente i cambiamenti, invece di iterare automaticamente per ogni riga.",
+      "example": "Trigger statement-level avanzato per UPDATE multi-riga.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderla con una tabella fisica applicativa permanente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.21, pagina PDF 129"
+    },
+    {
+      "id": "si-c08-q201",
+      "topicId": "si-c08-t21",
+      "question": "Quali cinque distinzioni finali sono prioritarie per l’esame?",
+      "answer": "CHECK vs trigger; OLD vs NEW; BEFORE vs AFTER; ROW vs STATEMENT; controllo locale vs invariante su più tabelle.",
+      "detail": "A queste si aggiungono RAISE EXCEPTION, rollback e gestione della concorrenza.",
+      "example": "Una approvazione richiede EXISTS e controllo di modifiche successive.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non basarsi solo sulla memoria del listato SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.21, pagina PDF 129"
+    },
+    {
+      "id": "si-c08-q202",
+      "topicId": "si-c08-t21",
+      "question": "Qual è il collegamento metodologico tra Capitoli 7, 8 e 9?",
+      "answer": "Cap. 7: SQL di interrogazione e DML; Cap. 8: viste, regole attive e vincoli complessi; Cap. 9: tecnologie DBMS, prestazioni, transazioni, concorrenza e recupero.",
+      "detail": "Le scelte finali per EnerPrice devono considerare anche architettura transazionale e requisiti di correttezza.",
+      "example": "Una vista con query complessa va valutata con indici e piani del Cap. 9.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non isolare le tecniche dei trigger dal sistema che le esegue.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.21, pagina PDF 129"
+    },
+    {
+      "id": "si-c08-q203",
+      "topicId": "si-c08-t21",
+      "question": "Come capire se si è realmente pronti a un quesito su SQL avanzato?",
+      "answer": "Saper riconoscere evento, condizioni, effetti, disponibilità di OLD/NEW, restituzione, errori e impatto di concorrenza/rollback per una traccia mai vista.",
+      "detail": "La competenza richiesta è applicativa: saper motivare anche quando non utilizzare trigger.",
+      "example": "Scelta CHECK vs trigger e discussione di modifica dell’ultimo scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a ripetere sintassi senza spiegare la garanzia fornita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 8, §8.21, pagina PDF 129"
+    }
+  ]
+}

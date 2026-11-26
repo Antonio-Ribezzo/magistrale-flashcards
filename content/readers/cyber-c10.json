@@ -1,0 +1,101 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Switching, broadcast e VLAN",
+      "concept": "Switching, broadcast e VLAN",
+      "topics": [
+        "cyber-c10-t01",
+        "cyber-c10-t02",
+        "cyber-c10-t03"
+      ],
+      "pages": [
+        169,
+        170,
+        171
+      ],
+      "blocks": [
+        {
+          "text": "Gli switch apprendono destinazioni Ethernet e inoltrano frame entro il dominio previsto. Una VLAN separa logicamente il traffico a livello 2. Il perimetro della VLAN va considerato insieme a routing, policy e autorizzazione degli endpoint."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Access, trunk e tag 802.1Q",
+      "concept": "Access, trunk e tag 802.1Q",
+      "topics": [
+        "cyber-c10-t04",
+        "cyber-c10-t05",
+        "cyber-c10-t06",
+        "cyber-c10-t08"
+      ],
+      "pages": [
+        172,
+        173,
+        174,
+        175
+      ],
+      "blocks": [
+        {
+          "text": "Una porta access associa il traffico a una VLAN; un trunk trasporta più VLAN secondo le regole concordate. Le configurazioni dei due estremi vanno verificate insieme, considerando classificazione in ingresso, tagging in uscita e VLAN ammesse."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Routing tra VLAN",
+      "concept": "Routing tra VLAN",
+      "topics": [
+        "cyber-c10-t10",
+        "cyber-c10-t11"
+      ],
+      "pages": [
+        177,
+        179
+      ],
+      "blocks": [
+        {
+          "text": "La comunicazione fra segmenti IP richiede un gateway e una decisione di routing. Una policy deve esplicitare i servizi autorizzati fra segmenti e verificare sia flussi consentiti sia flussi vietati."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Hardening e verifica operativa",
+      "concept": "Hardening e verifica operativa",
+      "topics": [
+        "cyber-c10-t14",
+        "cyber-c10-t15",
+        "cyber-c10-t21"
+      ],
+      "pages": [
+        180,
+        181,
+        186
+      ],
+      "blocks": [
+        {
+          "text": "Riduci porte non necessarie e accessi di gestione, separa la rete amministrativa e verifica l’ammissione dei dispositivi. Nel troubleshooting controlla livello fisico, configurazione VLAN, indirizzi, gateway, routing e policy prima di attribuire il guasto a una singola causa."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "1",
+      "to": "2",
+      "relation": "Le VLAN devono essere trasportate in modo coerente tra apparati."
+    },
+    {
+      "from": "2",
+      "to": "3",
+      "relation": "Il trasporto a livello 2 precede la decisione di routing a livello 3."
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "relation": "La segmentazione richiede anche criteri di ammissione e verifiche."
+    }
+  ]
+}

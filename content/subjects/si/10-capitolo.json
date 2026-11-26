@@ -1,0 +1,2954 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "si",
+  "source": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10: Sviluppo di applicazioni per basi di dati e architetture per l’analisi dei dati, pagine PDF 146–161. Unica fonte autorizzata; codice ECPG/Oracle/PostgreSQL, esempi e dataset originali dimostrativi sono distinti secondo il manuale.",
+  "chapter": {
+    "id": "si-c10",
+    "title": "Sviluppo di applicazioni per basi di dati e architetture per l’analisi dei dati",
+    "order": 10,
+    "topics": [
+      {
+        "id": "si-c10-t01",
+        "title": "Perimetro del capitolo e finalità applicative"
+      },
+      {
+        "id": "si-c10-t02",
+        "title": "Architetture di accesso ai dati e responsabilità"
+      },
+      {
+        "id": "si-c10-t03",
+        "title": "SQL embedded ed ECPG: preprocessore e compilazione"
+      },
+      {
+        "id": "si-c10-t04",
+        "title": "Variabili host, SELECT INTO e risultati"
+      },
+      {
+        "id": "si-c10-t05",
+        "title": "Cursori e accesso sequenziale ai risultati"
+      },
+      {
+        "id": "si-c10-t06",
+        "title": "Transazioni, risorse, errori e idempotenza"
+      },
+      {
+        "id": "si-c10-t07",
+        "title": "SQL statico, parametrico e dinamico; SQL injection"
+      },
+      {
+        "id": "si-c10-t08",
+        "title": "Call Level Interface: libpq, JDBC e PDO"
+      },
+      {
+        "id": "si-c10-t09",
+        "title": "Stored procedure, funzioni e collocazione della logica"
+      },
+      {
+        "id": "si-c10-t10",
+        "title": "Oracle PL/SQL: blocchi, parametri e package"
+      },
+      {
+        "id": "si-c10-t11",
+        "title": "PL/SQL: cursori, eccezioni e SQL dinamico"
+      },
+      {
+        "id": "si-c10-t12",
+        "title": "Oracle PL/SQL e PostgreSQL PL/pgSQL"
+      },
+      {
+        "id": "si-c10-t13",
+        "title": "OLTP, OLAP e scelta architetturale"
+      },
+      {
+        "id": "si-c10-t14",
+        "title": "Data warehouse, data mart, ETL/ELT e data quality"
+      },
+      {
+        "id": "si-c10-t15",
+        "title": "Modello dimensionale, schema a stella, fatti e dimensioni"
+      },
+      {
+        "id": "si-c10-t16",
+        "title": "Grana, misure additive, KPI e SCD"
+      },
+      {
+        "id": "si-c10-t17",
+        "title": "Viste materializzate, operazioni OLAP e freschezza"
+      },
+      {
+        "id": "si-c10-t18",
+        "title": "Dataset EnerPrice: data mart e margini dimostrativi"
+      },
+      {
+        "id": "si-c10-t19",
+        "title": "Dieci esercizi svolti: database e stored routine"
+      },
+      {
+        "id": "si-c10-t20",
+        "title": "Dieci esercizi svolti: OLAP e indicatori"
+      },
+      {
+        "id": "si-c10-t21",
+        "title": "Sei esercizi autonomi, autoverifica e glossario"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§10.1 — pagina PDF 146",
+        "cardIds": [
+          "si-c10-q001",
+          "si-c10-q002",
+          "si-c10-q003",
+          "si-c10-q004",
+          "si-c10-q005"
+        ]
+      },
+      {
+        "label": "§10.2 — pagine PDF 146–147",
+        "cardIds": [
+          "si-c10-q006",
+          "si-c10-q007",
+          "si-c10-q008",
+          "si-c10-q009",
+          "si-c10-q010",
+          "si-c10-q011",
+          "si-c10-q012",
+          "si-c10-q013"
+        ]
+      },
+      {
+        "label": "§10.3 — pagina PDF 147",
+        "cardIds": [
+          "si-c10-q014",
+          "si-c10-q015",
+          "si-c10-q016",
+          "si-c10-q017",
+          "si-c10-q018",
+          "si-c10-q019",
+          "si-c10-q020"
+        ]
+      },
+      {
+        "label": "§10.4 — pagine PDF 147–148",
+        "cardIds": [
+          "si-c10-q021",
+          "si-c10-q022",
+          "si-c10-q023",
+          "si-c10-q024",
+          "si-c10-q025",
+          "si-c10-q026",
+          "si-c10-q027",
+          "si-c10-q028"
+        ]
+      },
+      {
+        "label": "§10.5 — pagina PDF 148",
+        "cardIds": [
+          "si-c10-q029",
+          "si-c10-q030",
+          "si-c10-q031",
+          "si-c10-q032",
+          "si-c10-q033",
+          "si-c10-q034",
+          "si-c10-q035"
+        ]
+      },
+      {
+        "label": "§10.6 — pagine PDF 148–149",
+        "cardIds": [
+          "si-c10-q036",
+          "si-c10-q037",
+          "si-c10-q038",
+          "si-c10-q039",
+          "si-c10-q040",
+          "si-c10-q041",
+          "si-c10-q042",
+          "si-c10-q043",
+          "si-c10-q044"
+        ]
+      },
+      {
+        "label": "§10.7 — pagina PDF 149",
+        "cardIds": [
+          "si-c10-q045",
+          "si-c10-q046",
+          "si-c10-q047",
+          "si-c10-q048",
+          "si-c10-q049",
+          "si-c10-q050",
+          "si-c10-q051",
+          "si-c10-q052",
+          "si-c10-q053",
+          "si-c10-q054"
+        ]
+      },
+      {
+        "label": "§10.8 — pagine PDF 150–151",
+        "cardIds": [
+          "si-c10-q055",
+          "si-c10-q056",
+          "si-c10-q057",
+          "si-c10-q058",
+          "si-c10-q059",
+          "si-c10-q060",
+          "si-c10-q061",
+          "si-c10-q062",
+          "si-c10-q063",
+          "si-c10-q064",
+          "si-c10-q065",
+          "si-c10-q066"
+        ]
+      },
+      {
+        "label": "§10.9 — pagina PDF 151",
+        "cardIds": [
+          "si-c10-q067",
+          "si-c10-q068",
+          "si-c10-q069",
+          "si-c10-q070",
+          "si-c10-q071",
+          "si-c10-q072",
+          "si-c10-q073",
+          "si-c10-q074",
+          "si-c10-q075"
+        ]
+      },
+      {
+        "label": "§10.10 — pagine PDF 151–152",
+        "cardIds": [
+          "si-c10-q076",
+          "si-c10-q077",
+          "si-c10-q078",
+          "si-c10-q079",
+          "si-c10-q080",
+          "si-c10-q081",
+          "si-c10-q082",
+          "si-c10-q083",
+          "si-c10-q084",
+          "si-c10-q085",
+          "si-c10-q086"
+        ]
+      },
+      {
+        "label": "§10.11 — pagine PDF 152–153",
+        "cardIds": [
+          "si-c10-q087",
+          "si-c10-q088",
+          "si-c10-q089",
+          "si-c10-q090",
+          "si-c10-q091",
+          "si-c10-q092",
+          "si-c10-q093",
+          "si-c10-q094",
+          "si-c10-q095"
+        ]
+      },
+      {
+        "label": "§10.12 — pagina PDF 153",
+        "cardIds": [
+          "si-c10-q096",
+          "si-c10-q097",
+          "si-c10-q098",
+          "si-c10-q099",
+          "si-c10-q100",
+          "si-c10-q101",
+          "si-c10-q102",
+          "si-c10-q103"
+        ]
+      },
+      {
+        "label": "§10.13 — pagine PDF 153–154",
+        "cardIds": [
+          "si-c10-q104",
+          "si-c10-q105",
+          "si-c10-q106",
+          "si-c10-q107",
+          "si-c10-q108",
+          "si-c10-q109",
+          "si-c10-q110",
+          "si-c10-q111"
+        ]
+      },
+      {
+        "label": "§10.14 — pagina PDF 154",
+        "cardIds": [
+          "si-c10-q112",
+          "si-c10-q113",
+          "si-c10-q114",
+          "si-c10-q115",
+          "si-c10-q116",
+          "si-c10-q117",
+          "si-c10-q118",
+          "si-c10-q119",
+          "si-c10-q120",
+          "si-c10-q121",
+          "si-c10-q122"
+        ]
+      },
+      {
+        "label": "§10.15 — pagine PDF 154–155",
+        "cardIds": [
+          "si-c10-q123",
+          "si-c10-q124",
+          "si-c10-q125",
+          "si-c10-q126",
+          "si-c10-q127",
+          "si-c10-q128",
+          "si-c10-q129",
+          "si-c10-q130"
+        ]
+      },
+      {
+        "label": "§10.16 — pagine PDF 155–156",
+        "cardIds": [
+          "si-c10-q131",
+          "si-c10-q132",
+          "si-c10-q133",
+          "si-c10-q134",
+          "si-c10-q135",
+          "si-c10-q136",
+          "si-c10-q137",
+          "si-c10-q138",
+          "si-c10-q139",
+          "si-c10-q140",
+          "si-c10-q141",
+          "si-c10-q142",
+          "si-c10-q143",
+          "si-c10-q144"
+        ]
+      },
+      {
+        "label": "§10.17 — pagine PDF 156–157",
+        "cardIds": [
+          "si-c10-q145",
+          "si-c10-q146",
+          "si-c10-q147",
+          "si-c10-q148",
+          "si-c10-q149",
+          "si-c10-q150",
+          "si-c10-q151",
+          "si-c10-q152",
+          "si-c10-q153",
+          "si-c10-q154",
+          "si-c10-q155",
+          "si-c10-q156"
+        ]
+      },
+      {
+        "label": "§10.18 — pagine PDF 157–158",
+        "cardIds": [
+          "si-c10-q157",
+          "si-c10-q158",
+          "si-c10-q159",
+          "si-c10-q160",
+          "si-c10-q161",
+          "si-c10-q162",
+          "si-c10-q163",
+          "si-c10-q164",
+          "si-c10-q165",
+          "si-c10-q166",
+          "si-c10-q167",
+          "si-c10-q168",
+          "si-c10-q169",
+          "si-c10-q170",
+          "si-c10-q171",
+          "si-c10-q172"
+        ]
+      },
+      {
+        "label": "§10.19 — pagine PDF 158–159",
+        "cardIds": [
+          "si-c10-q173",
+          "si-c10-q174",
+          "si-c10-q175",
+          "si-c10-q176",
+          "si-c10-q177",
+          "si-c10-q178",
+          "si-c10-q179",
+          "si-c10-q180",
+          "si-c10-q181",
+          "si-c10-q182"
+        ]
+      },
+      {
+        "label": "§10.20 — pagina PDF 159",
+        "cardIds": [
+          "si-c10-q183",
+          "si-c10-q184",
+          "si-c10-q185",
+          "si-c10-q186",
+          "si-c10-q187",
+          "si-c10-q188",
+          "si-c10-q189",
+          "si-c10-q190",
+          "si-c10-q191",
+          "si-c10-q192"
+        ]
+      },
+      {
+        "label": "§10.21 — pagine PDF 159–161",
+        "cardIds": [
+          "si-c10-q193",
+          "si-c10-q194",
+          "si-c10-q195",
+          "si-c10-q196",
+          "si-c10-q197",
+          "si-c10-q198",
+          "si-c10-q199",
+          "si-c10-q200",
+          "si-c10-q201",
+          "si-c10-q202",
+          "si-c10-q203",
+          "si-c10-q204",
+          "si-c10-q205",
+          "si-c10-q206"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "si-c10-q001",
+      "topicId": "si-c10-t01",
+      "question": "Quali due ambiti collega il Capitolo 10 al percorso sulle basi di dati?",
+      "answer": "L'accesso applicativo al DBMS e l'architettura per analizzare dati operativi.",
+      "detail": "Dopo modellazione, SQL e tecnologia dei DBMS, occorre spiegare chi produce le query e come i dati transazionali diventano aggregati per le decisioni.",
+      "example": "Un servizio salva una simulazione; un cruscotto confronta margini per trimestre.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare le due finalità come equivalenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.1, pagina PDF 146"
+    },
+    {
+      "id": "si-c10-q002",
+      "topicId": "si-c10-t01",
+      "question": "Perché una query SQL corretta non basta a realizzare un'applicazione database-driven?",
+      "answer": "Servono interfacce, parametri, autorizzazioni, gestione dei risultati, connessioni e transazioni.",
+      "detail": "La sintassi della query è solo un elemento di una catena applicativa affidabile e manutenibile.",
+      "example": "Una SELECT può essere corretta, ma il programma deve gestire anche assenza di righe e timeout.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre l'applicazione a un elenco di query.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.1, pagina PDF 146"
+    },
+    {
+      "id": "si-c10-q003",
+      "topicId": "si-c10-t01",
+      "question": "Che cosa differenzia un evento operativo da un'informazione analitica?",
+      "answer": "L'evento registra un fatto puntuale; l'informazione analitica aggrega e confronta fatti secondo criteri dichiarati.",
+      "detail": "La valutazione aggregata richiede periodi, dimensioni, misure e regole di qualità; spesso l'architettura di accesso cambia.",
+      "example": "Registrare l'approvazione di un'offerta rispetto a confrontare il margine per segmento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare la somma di dati non coerenti per una decisione affidabile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.1, pagina PDF 146"
+    },
+    {
+      "id": "si-c10-q004",
+      "topicId": "si-c10-t01",
+      "question": "Quali competenze applicative indica l'apertura del capitolo?",
+      "answer": "Confrontare accessi SQL, interpretare ECPG/libpq/PL/SQL, gestire SQL dinamico e modellare fatti e dimensioni.",
+      "detail": "Il capitolo combina lettura di codice, sicurezza del binding, progettazione analitica e calcolo di indicatori.",
+      "example": "Spiegare un EXEC SQL, un PQexecParams e un rapporto di margine ponderato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non studiare soltanto la sintassi PL/SQL trascurando OLAP.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.1, pagina PDF 146"
+    },
+    {
+      "id": "si-c10-q005",
+      "topicId": "si-c10-t01",
+      "question": "Come va interpretata la presenza di ECPG e data warehouse nel programma?",
+      "answer": "Indica il perimetro formativo, non prova il peso specifico di ciascun argomento all'esame.",
+      "detail": "Il manuale dichiara esplicitamente che numerosi dettagli e dataset sono integrazioni didattiche dimostrative.",
+      "example": "Un esercizio su ECPG è utile per capire la tecnica senza presumere una prova pratica ufficiale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente gli esempi originali alla docente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.1, pagina PDF 146"
+    },
+    {
+      "id": "si-c10-q006",
+      "topicId": "si-c10-t02",
+      "question": "Quali livelli compongono concettualmente un'applicazione database-driven?",
+      "answer": "Interfaccia utente, logica applicativa e livello di persistenza/DBMS.",
+      "detail": "L'interfaccia raccoglie richieste; l'applicazione interpreta, autorizza e coordina; il DBMS esegue SQL, vincoli e transazioni.",
+      "example": "Browser, servizio di pricing e PostgreSQL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non far coincidere il modello MVC con una tabella SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.2, pagine PDF 146–147"
+    },
+    {
+      "id": "si-c10-q007",
+      "topicId": "si-c10-t02",
+      "question": "Come si ripartiscono le responsabilità fra applicazione e DBMS?",
+      "answer": "L'applicazione valida requisiti e permessi di processo; il DBMS custodisce dati, esegue SQL, vincoli e transazioni.",
+      "detail": "Le responsabilità possono variare con l'architettura; alcune regole condivise possono risiedere in routine memorizzate.",
+      "example": "Autorizzazione dell'utente nel servizio e chiave esterna sul database.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che una PK/FK sostituisca la logica autorizzativa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.2, pagine PDF 146–147"
+    },
+    {
+      "id": "si-c10-q008",
+      "topicId": "si-c10-t02",
+      "question": "Qual è la differenza essenziale tra SQL embedded, CLI e stored routine?",
+      "answer": "SQL embedded inserisce istruzioni nel sorgente; CLI invoca API di driver; stored routine esegue logica memorizzata nel DBMS.",
+      "detail": "Le prime due riguardano soprattutto il modo di comunicare col DBMS; la terza la collocazione della logica.",
+      "example": "ECPG in C, libpq o PDO, procedura PL/SQL.",
+      "formulas": [],
+      "connections": [
+        "Capitolo 7 — SQL",
+        "Capitolo 9 — tecnologie DBMS"
+      ],
+      "mistakes": "Non considerarle tre tecnologie reciprocamente esclusive.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.2, pagine PDF 146–147"
+    },
+    {
+      "id": "si-c10-q009",
+      "topicId": "si-c10-t02",
+      "question": "Perché CLI e stored procedure possono essere utilizzate insieme?",
+      "answer": "La CLI è il canale di invocazione; la stored procedure è la logica chiamata nel DBMS.",
+      "detail": "La scelta dell'interfaccia e quella della sede della logica sono decisioni diverse.",
+      "example": "Un backend PHP usa PDO per chiamare una funzione memorizzata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non contrapporre driver e stored procedure come alternative incompatibili.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.2, pagine PDF 146–147"
+    },
+    {
+      "id": "si-c10-q010",
+      "topicId": "si-c10-t02",
+      "question": "Dove risiede la logica quando si usa SQL embedded?",
+      "answer": "Nel codice del linguaggio ospite con istruzioni SQL tradotte dal preprocessore.",
+      "detail": "L'applicazione compila ed esegue codice generato che comunica con il database.",
+      "example": "File C .pgc elaborato da ECPG.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che SQL embedded sia una stored procedure.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.2, pagine PDF 146–147"
+    },
+    {
+      "id": "si-c10-q011",
+      "topicId": "si-c10-t02",
+      "question": "Dove risiede la logica di accesso con una CLI?",
+      "answer": "Nell'applicazione, che chiama funzioni di libreria o driver per connettersi, eseguire e leggere.",
+      "detail": "Il driver incapsula dettagli del protocollo e dell'accesso ai risultati senza sostituire le regole di business.",
+      "example": "Java JDBC, C libpq, PHP PDO.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere driver con il DBMS stesso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.2, pagine PDF 146–147"
+    },
+    {
+      "id": "si-c10-q012",
+      "topicId": "si-c10-t02",
+      "question": "Dove risiede la logica di una stored routine?",
+      "answer": "Nel DBMS, come procedura o funzione definita e richiamabile.",
+      "detail": "La routine può applicare operazioni vicino ai dati, ma una parte dell'orchestrazione resta possibile in applicazione.",
+      "example": "Una funzione PL/SQL calcola il margine di una simulazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che tutte le regole debbano diventare procedure SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.2, pagine PDF 146–147"
+    },
+    {
+      "id": "si-c10-q013",
+      "topicId": "si-c10-t02",
+      "question": "Che cosa significa scegliere il confine di responsabilità nell'architettura?",
+      "answer": "Decidere quali controlli appartengono a UI, servizi, routine e vincoli dati.",
+      "detail": "Il confine dipende da riuso, atomicità, portabilità, sicurezza e manutenibilità.",
+      "example": "Validare il ruolo sul server e imporre unicità con un vincolo DB.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non duplicare incoerentemente la stessa regola in luoghi diversi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.2, pagine PDF 146–147"
+    },
+    {
+      "id": "si-c10-q014",
+      "topicId": "si-c10-t03",
+      "question": "Che cos'è SQL embedded?",
+      "answer": "È la scrittura di comandi SQL riconoscibili dentro un linguaggio ospite, elaborati da un preprocessore.",
+      "detail": "La notazione storicamente standardizzata usa costrutti come EXEC SQL nel sorgente C.",
+      "example": "EXEC SQL INSERT INTO prova(id, descrizione) VALUES (1,'verifica');",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equipararlo all'invio di stringhe SQL mediante un driver.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.3, pagina PDF 147"
+    },
+    {
+      "id": "si-c10-q015",
+      "topicId": "si-c10-t03",
+      "question": "Qual è la sequenza di costruzione di un programma ECPG?",
+      "answer": "Sorgente .pgc, preprocessore ECPG, sorgente C, compilatore e linking con libecpg.",
+      "detail": "ECPG traduce le direttive embedded in chiamate client utilizzabili dal compilatore C.",
+      "example": "Un file sorgente con EXEC SQL produce un file .c compilabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non saltare la fase di preprocessing.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.3, pagina PDF 147"
+    },
+    {
+      "id": "si-c10-q016",
+      "topicId": "si-c10-t03",
+      "question": "A cosa serve il comando EXEC SQL in ECPG?",
+      "answer": "Marca l'istruzione SQL incorporata che sarà trattata dal preprocessore.",
+      "detail": "Consente di mescolare logica del linguaggio ospite e istruzioni database secondo la sintassi prevista.",
+      "example": "EXEC SQL CONNECT TO testdb USER studente;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che il compilatore C comprenda direttamente SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.3, pagina PDF 147"
+    },
+    {
+      "id": "si-c10-q017",
+      "topicId": "si-c10-t03",
+      "question": "Quali operazioni mostra il frammento base ECPG del manuale?",
+      "answer": "Connessione, inserimento, COMMIT e disconnessione.",
+      "detail": "L'esempio è schematico e presuppone un database e una tabella correttamente creati.",
+      "example": "CONNECT TO testdb, INSERT INTO prova, COMMIT, DISCONNECT ALL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare il listato come programma autonomo completo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.3, pagina PDF 147"
+    },
+    {
+      "id": "si-c10-q018",
+      "topicId": "si-c10-t03",
+      "question": "Quali errori può rilevare la precompilazione e quali no?",
+      "answer": "Può individuare alcuni problemi sintattici embedded; oggetti, privilegi, vincoli e risultati sono verificati a runtime.",
+      "detail": "La connessione reale potrebbe riferirsi a uno schema diverso o a dati non conformi.",
+      "example": "La tabella prova manca o un vincolo rifiuta l'INSERT.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere successo della precompilazione con successo dell'operazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.3, pagina PDF 147"
+    },
+    {
+      "id": "si-c10-q019",
+      "topicId": "si-c10-t03",
+      "question": "In che senso ECPG è diverso da PDO o JDBC?",
+      "answer": "ECPG inserisce SQL nel linguaggio ospite e lo precompila; PDO/JDBC forniscono API per inviare comandi.",
+      "detail": "Entrambi interagiscono col DBMS, ma con modelli di programmazione differenti.",
+      "example": "C con EXEC SQL vs PHP $pdo->prepare().",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che uno dei due elimina la gestione degli errori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.3, pagina PDF 147"
+    },
+    {
+      "id": "si-c10-q020",
+      "topicId": "si-c10-t03",
+      "question": "Come si collega SQL embedded a una transazione?",
+      "answer": "Le istruzioni embedded possono avviare, usare o concludere transazioni come gli altri client.",
+      "detail": "Il programmatore resta responsabile del confine atomico e degli esiti dei comandi.",
+      "example": "Una serie di INSERT seguita da COMMIT solo dopo le verifiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare ogni EXEC SQL automaticamente una transazione completa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.3, pagina PDF 147"
+    },
+    {
+      "id": "si-c10-q021",
+      "topicId": "si-c10-t04",
+      "question": "Che cos'è una variabile host in SQL embedded?",
+      "answer": "È una variabile del linguaggio ospite che passa valori al SQL o riceve risultati.",
+      "detail": "Nel codice ECPG è dichiarata per il preprocessore e viene referenziata con due punti.",
+      "example": ":v_id come parametro WHERE, :v_nome come destinazione SELECT INTO.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderla con una colonna del database.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.4, pagine PDF 147–148"
+    },
+    {
+      "id": "si-c10-q022",
+      "topicId": "si-c10-t04",
+      "question": "A cosa serve BEGIN DECLARE SECTION in ECPG?",
+      "answer": "Delimita le dichiarazioni delle variabili host riconosciute dal preprocessore.",
+      "detail": "Comprende tipi e identificativi del C che saranno associati alle istruzioni embedded.",
+      "example": "EXEC SQL BEGIN DECLARE SECTION; int v_id; ... END DECLARE SECTION;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare una variabile generica senza verificare l'uso ECPG richiesto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.4, pagine PDF 147–148"
+    },
+    {
+      "id": "si-c10-q023",
+      "topicId": "si-c10-t04",
+      "question": "Quale significato hanno i due punti davanti a v_id e v_nome?",
+      "answer": "Identificano le variabili host utilizzate dalla query, non valori SQL letterali.",
+      "detail": "La stessa sintassi consente di associare input e output tra applicazione e database.",
+      "example": "WHERE id = :v_id e SELECT nome INTO :v_nome.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concatenare l'input a una stringa per imitare il binding.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.4, pagine PDF 147–148"
+    },
+    {
+      "id": "si-c10-q024",
+      "topicId": "si-c10-t04",
+      "question": "Che cosa presuppone un SELECT ... INTO con una singola variabile di output?",
+      "answer": "Che la query produca un risultato compatibile con una sola riga e il dato atteso.",
+      "detail": "Occorre trattare esplicitamente zero righe, risultati multipli ed errori DB.",
+      "example": "SELECT nome INTO :v_nome FROM cliente WHERE id = :v_id.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usarlo per consumare indiscriminatamente un elenco di righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.4, pagine PDF 147–148"
+    },
+    {
+      "id": "si-c10-q025",
+      "topicId": "si-c10-t04",
+      "question": "Quali sono i quattro esiti applicativi di una ricerca puntuale?",
+      "answer": "Una riga trovata, nessuna riga, più righe, errore DB.",
+      "detail": "Le risposte dovrebbero distinguere dato valido, assenza, violazione dell'unicità attesa e malfunzionamento.",
+      "example": "Offerta 7 trovata oppure duplicata su un presunto identificatore unico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non restituire un valore arbitrario quando arrivano più righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.4, pagine PDF 147–148"
+    },
+    {
+      "id": "si-c10-q026",
+      "topicId": "si-c10-t04",
+      "question": "Perché NULL richiede attenzione nelle variabili host?",
+      "answer": "Un valore SQL assente non coincide con zero numerico o stringa vuota.",
+      "detail": "Nei linguaggi ospiti possono servire indicatori di nullità specifici per distinguere le situazioni.",
+      "example": "Cliente con nome NULL diverso da cliente con nome ''.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare ogni NULL come un valore predefinito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.4, pagine PDF 147–148"
+    },
+    {
+      "id": "si-c10-q027",
+      "topicId": "si-c10-t04",
+      "question": "Che cosa deve fare l'applicazione se una ricerca univoca restituisce più righe?",
+      "answer": "Segnalare l'anomalia e correggere vincolo o condizione della query.",
+      "detail": "Un insieme plurimo rivela l'inadeguatezza dell'assunzione di unicità.",
+      "example": "Due offerte con lo stesso codice che si presume univoco.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere casualmente la prima riga.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.4, pagine PDF 147–148"
+    },
+    {
+      "id": "si-c10-q028",
+      "topicId": "si-c10-t04",
+      "question": "Come viene utilizzata la variabile host in un caso di offerta commerciale?",
+      "answer": "Il codice selezionato dall'utente diventa parametro; la descrizione letta diventa output.",
+      "detail": "L'applicazione gestisce distinto l'oggetto trovato, quello assente e l'errore di connessione.",
+      "example": "Selezione del codice offerta nel gestionale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non far diventare il codice offerta un frammento libero di SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.4, pagine PDF 147–148"
+    },
+    {
+      "id": "si-c10-q029",
+      "topicId": "si-c10-t05",
+      "question": "Che cos'è un cursore SQL?",
+      "answer": "È un meccanismo per attraversare progressivamente il risultato di una query.",
+      "detail": "La sua utilità principale è controllare la modalità di consumo delle righe e non accelerare automaticamente la query.",
+      "example": "Leggere le offerte ordinate per id una alla volta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificarlo con un risultato sempre caricato in RAM.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.5, pagina PDF 148"
+    },
+    {
+      "id": "si-c10-q030",
+      "topicId": "si-c10-t05",
+      "question": "Quali sono le fasi fondamentali di un cursore esplicito?",
+      "answer": "DECLARE, OPEN, FETCH ripetuto fino a esaurimento e CLOSE.",
+      "detail": "L'apertura e la chiusura delimitano la gestione delle risorse e FETCH trasferisce righe al client o al blocco.",
+      "example": "Un ciclo che recupera una proposta alla volta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare di chiudere il cursore in caso di errore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.5, pagina PDF 148"
+    },
+    {
+      "id": "si-c10-q031",
+      "topicId": "si-c10-t05",
+      "question": "Qual è lo scopo del controllo dopo FETCH?",
+      "answer": "Capire se è disponibile una riga o se il risultato è terminato.",
+      "detail": "Senza una condizione di terminazione si rischia di elaborare dati invalidi o creare cicli errati.",
+      "example": "FETCH finché lo stato segnala fine delle righe.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare la fine del cursore come una riga nulla da processare.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.5, pagina PDF 148"
+    },
+    {
+      "id": "si-c10-q032",
+      "topicId": "si-c10-t05",
+      "question": "Che cosa dimostra il cursore PostgreSQL nel manuale?",
+      "answer": "Dichiarazione e letture successive in una transazione esplicita.",
+      "detail": "Lo schema comprende BEGIN, DECLARE CURSOR, FETCH NEXT, CLOSE e COMMIT.",
+      "example": "DECLARE c_offerte CURSOR FOR SELECT id,descrizione ...",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che il cursore sopravviva automaticamente a qualunque COMMIT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.5, pagina PDF 148"
+    },
+    {
+      "id": "si-c10-q033",
+      "topicId": "si-c10-t05",
+      "question": "Quando una query set-based è preferibile a un cursore?",
+      "answer": "Quando un'operazione uniforme su molte righe può essere descritta come unica istruzione SQL.",
+      "detail": "Un UPDATE collettivo evita round trip e logica di controllo per riga, se produce lo stesso risultato corretto.",
+      "example": "Aggiornare mille prezzi con un unico UPDATE condizionato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un ciclo di mille UPDATE senza necessità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.5, pagina PDF 148"
+    },
+    {
+      "id": "si-c10-q034",
+      "topicId": "si-c10-t05",
+      "question": "Cursore esplicito e operazione set-based sono equivalenti?",
+      "answer": "No: il cursore controlla un attraversamento procedurale; l'operazione set-based esprime un'azione su insiemi.",
+      "detail": "La scelta dipende da requisiti funzionali, risorse e costo di trasferimento.",
+      "example": "Generare un report riga per riga versus aggiornare in blocco le righe ammissibili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare il cursore come soluzione più efficiente in assoluto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.5, pagina PDF 148"
+    },
+    {
+      "id": "si-c10-q035",
+      "topicId": "si-c10-t05",
+      "question": "Quali fattori determinano il costo e il comportamento di un cursore?",
+      "answer": "DBMS, opzioni del cursore, contesto transazionale e modalità di lettura.",
+      "detail": "La posizione del risultato e le risorse necessarie variano fra implementazioni.",
+      "example": "Un cursore può conservare stato del risultato per la transazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare cursore a accesso casuale gratuito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.5, pagina PDF 148"
+    },
+    {
+      "id": "si-c10-q036",
+      "topicId": "si-c10-t06",
+      "question": "Che differenza esiste tra connessione e transazione?",
+      "answer": "La connessione è il canale col DBMS; la transazione è l'unità atomica di lavoro.",
+      "detail": "La stessa connessione può eseguire transazioni successive e una transazione può finire senza chiudere la connessione.",
+      "example": "Più salvataggi distinti durante la sessione di un operatore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare COMMIT come sinonimo di DISCONNECT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.6, pagine PDF 148–149"
+    },
+    {
+      "id": "si-c10-q037",
+      "topicId": "si-c10-t06",
+      "question": "Qual è lo schema generale per la gestione affidabile delle operazioni DB?",
+      "answer": "Aprire connessione, iniziare la transazione se necessaria, eseguire e verificare, fare COMMIT o ROLLBACK, rilasciare sempre le risorse.",
+      "detail": "I percorsi di errore devono avere trattamenti espliciti.",
+      "example": "Inserimento di una simulazione con gestione delle eccezioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiudere solo nel ramo di successo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.6, pagine PDF 148–149"
+    },
+    {
+      "id": "si-c10-q038",
+      "topicId": "si-c10-t06",
+      "question": "Perché inserire lo scenario e collegarlo all'offerta deve essere atomico?",
+      "answer": "Per non lasciare uno scenario creato ma scollegato se la seconda istruzione fallisce.",
+      "detail": "Le due scritture sono passi di un'unica regola applicativa; un vincolo referenziale non sostituisce l'atomicità dell'intera sequenza.",
+      "example": "INSERT scenario e UPDATE offerta seguiti da unico COMMIT.",
+      "formulas": [],
+      "connections": [
+        "Capitolo 9 — ACID e transazioni"
+      ],
+      "mistakes": "Non separare due passi inseparabili in transazioni indipendenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.6, pagine PDF 148–149"
+    },
+    {
+      "id": "si-c10-q039",
+      "topicId": "si-c10-t06",
+      "question": "Perché bisogna controllare quante righe sono state aggiornate?",
+      "answer": "Un UPDATE che termina senza errore SQL può aver modificato zero righe.",
+      "detail": "La validazione del risultato applicativo non è equivalente al solo successo del comando.",
+      "example": "UPDATE offerta WHERE id = 7 quando id 7 non esiste.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non registrare successo se la precondizione non è soddisfatta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.6, pagine PDF 148–149"
+    },
+    {
+      "id": "si-c10-q040",
+      "topicId": "si-c10-t06",
+      "question": "Che differenza c'è tra errore di vincolo, timeout ed errore di connessione?",
+      "answer": "Sono fallimenti di natura diversa che richiedono verifiche e recuperi potenzialmente differenti.",
+      "detail": "In alcuni casi è noto il rollback; in altri l'esito finale potrebbe essere incerto.",
+      "example": "Unique violation contro interruzione della rete durante COMMIT.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mascherare tutto con un generico messaggio «operazione riuscita».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.6, pagine PDF 148–149"
+    },
+    {
+      "id": "si-c10-q041",
+      "topicId": "si-c10-t06",
+      "question": "Che cosa si intende per esito del COMMIT sconosciuto?",
+      "answer": "Il client perde la certezza che la transazione sia stata confermata o meno dal DBMS.",
+      "detail": "Ripetere ciecamente l'operazione può generare duplicati se il COMMIT precedente è avvenuto.",
+      "example": "La rete cade subito dopo l'invio del COMMIT.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che l'assenza di risposta significhi mancata conferma.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.6, pagine PDF 148–149"
+    },
+    {
+      "id": "si-c10-q042",
+      "topicId": "si-c10-t06",
+      "question": "Come possono aiutare idempotenza e identificativi di richiesta?",
+      "answer": "Consentono di riconoscere tentativi ripetuti e ridurre il rischio di duplicare effetti.",
+      "detail": "L'operazione va progettata con una chiave applicativa che distingua richieste nuove da ritentativi.",
+      "example": "Stesso idRichiesta usato nel retry di una simulazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare idempotenza alla semplice presenza di una transazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.6, pagine PDF 148–149"
+    },
+    {
+      "id": "si-c10-q043",
+      "topicId": "si-c10-t06",
+      "question": "Perché l'applicazione deve distinguere vincolo referenziale e transazione?",
+      "answer": "Il vincolo impedisce dati non referenziati non validi; la transazione evita il successo parziale di un processo.",
+      "detail": "Le due misure si integrano ma risolvono problemi distinti.",
+      "example": "Foreign key sullo scenario e unità atomica per associarlo all'offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidarsi alla FK per annullare un INSERT valido precedente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.6, pagine PDF 148–149"
+    },
+    {
+      "id": "si-c10-q044",
+      "topicId": "si-c10-t06",
+      "question": "Quali risorse devono essere liberate anche dopo un errore?",
+      "answer": "Connessioni, cursori, risultati e risorse applicative detenute dal client, secondo l'API.",
+      "detail": "Una gestione in un blocco finalmente equivalente evita perdite.",
+      "example": "Chiusura PGresult/PQclear e rollback se necessario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mantenere risorse aperte perché l'eccezione ha interrotto il ciclo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.6, pagine PDF 148–149"
+    },
+    {
+      "id": "si-c10-q045",
+      "topicId": "si-c10-t07",
+      "question": "Che cosa distingue una query statica da una parametrica?",
+      "answer": "La statica ha struttura nota; la parametrica mantiene la struttura ma riceve valori variabili.",
+      "detail": "Un parametro cambia dati di confronto senza cambiare nomi di colonne o l'operazione SQL.",
+      "example": "WHERE segmento = $1 eseguito con PMI o Residenziale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare SQL dinamico ogni query con binding.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.7, pagina PDF 149"
+    },
+    {
+      "id": "si-c10-q046",
+      "topicId": "si-c10-t07",
+      "question": "Quando si parla propriamente di SQL dinamico?",
+      "answer": "Quando il testo o la struttura del comando vengono costruiti durante l'esecuzione.",
+      "detail": "Possono variare proiezioni, filtri strutturali, identificatori o il tipo di operazione.",
+      "example": "Scegliere runtime una colonna per ORDER BY.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo col solo cambiamento del valore del filtro.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.7, pagina PDF 149"
+    },
+    {
+      "id": "si-c10-q047",
+      "topicId": "si-c10-t07",
+      "question": "Qual è la funzione di PREPARE, EXECUTE e DEALLOCATE in PostgreSQL?",
+      "answer": "PREPARE definisce l'istruzione, EXECUTE la invoca con valori e DEALLOCATE rilascia la preparazione.",
+      "detail": "Il listato del manuale usa parametro text, segnaposto $1 e chiamata con PMI.",
+      "example": "PREPARE cerca_offerte(text) AS SELECT ... WHERE segmento=$1;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non costruire la query concatenando il segmento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.7, pagina PDF 149"
+    },
+    {
+      "id": "si-c10-q048",
+      "topicId": "si-c10-t07",
+      "question": "Quali elementi sono normalmente passabili come parametri bind?",
+      "answer": "Valori come testi, numeri e date.",
+      "detail": "Il binding mantiene separati i dati dalla sintassi della query.",
+      "example": "'PMI' al posto di $1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non tentare di bindare direttamente la parola chiave ORDER BY.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.7, pagina PDF 149"
+    },
+    {
+      "id": "si-c10-q049",
+      "topicId": "si-c10-t07",
+      "question": "Perché il nome di una colonna non va passato come un normale valore bind?",
+      "answer": "Un identificatore SQL è parte della struttura sintattica, non un valore di una espressione.",
+      "detail": "Per selezionarlo dinamicamente si usa un insieme controllato di identificatori validi.",
+      "example": "Scegliere fra ricavi, costi e margine tramite allowlist.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare `ORDER BY $1` come selezione dinamica di una colonna.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.7, pagina PDF 149"
+    },
+    {
+      "id": "si-c10-q050",
+      "topicId": "si-c10-t07",
+      "question": "Come si protegge un ORDER BY selezionabile dall'utente?",
+      "answer": "Con una allowlist rigorosa di nomi consentiti, separata dai parametri dei valori.",
+      "detail": "Il campo non riconosciuto viene rifiutato o sostituito da un default verificato.",
+      "example": "requested = 'margine' ammesso, stringa arbitraria respinta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concatenare input SQL libero.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.7, pagina PDF 149"
+    },
+    {
+      "id": "si-c10-q051",
+      "topicId": "si-c10-t07",
+      "question": "Perché la parametrizzazione contrasta SQL injection?",
+      "answer": "Mantiene i valori utente separati dal testo SQL preparato.",
+      "detail": "L'efficacia riguarda i valori bindabili; permessi e identificatori hanno altri controlli.",
+      "example": "Input contenente apici trattato come dato di segmento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che il binding risolva ogni problema di sicurezza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.7, pagina PDF 149"
+    },
+    {
+      "id": "si-c10-q052",
+      "topicId": "si-c10-t07",
+      "question": "Quali controlli restano necessari anche usando query parametrizzate?",
+      "answer": "Autorizzazione, validazione semantica, least privilege e gestione corretta degli identificatori.",
+      "detail": "Una query sicura sintatticamente può leggere dati non autorizzati.",
+      "example": "Utente autenticato tenta di leggere un'offerta di un altro reparto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre sicurezza dell'accesso dal solo uso di PREPARE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.7, pagina PDF 149"
+    },
+    {
+      "id": "si-c10-q053",
+      "topicId": "si-c10-t07",
+      "question": "La query preparata è sempre più veloce?",
+      "answer": "No: la pianificazione dipende dal DBMS, dai parametri e dall'uso di piani generici o specifici.",
+      "detail": "Il manuale non promette un guadagno prestazionale automatico.",
+      "example": "Filtri con selettività molto diversa possono richiedere piani differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare un vantaggio eventuale in una garanzia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.7, pagina PDF 149"
+    },
+    {
+      "id": "si-c10-q054",
+      "topicId": "si-c10-t07",
+      "question": "Come distingueresti SQL parametrico e SQL dinamico in una risposta d'esame?",
+      "answer": "Il primo varia i dati dentro una forma SQL fissata, il secondo può cambiare la forma stessa del comando.",
+      "detail": "È utile portare due esempi dello stesso dominio applicativo.",
+      "example": "Segmento come parametro rispetto a scelta dinamica della colonna per ordinare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare esempi identici per due concetti differenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.7, pagina PDF 149"
+    },
+    {
+      "id": "si-c10-q055",
+      "topicId": "si-c10-t08",
+      "question": "Che cos'è una Call Level Interface per l'accesso a un DBMS?",
+      "answer": "È un insieme di funzioni del driver usate dal programma per connettersi, inviare query, ricevere risultati e rilevare errori.",
+      "detail": "Il modello è diverso da SQL embedded perché l'applicazione chiama direttamente una API.",
+      "example": "libpq in C, JDBC in Java, PDO in PHP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare la CLI con un blocco SQL eseguito dal server.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.8, pagine PDF 150–151"
+    },
+    {
+      "id": "si-c10-q056",
+      "topicId": "si-c10-t08",
+      "question": "Quale driver cita il manuale per applicazioni C con PostgreSQL?",
+      "answer": "libpq.",
+      "detail": "Espone funzioni per connessione, comando, risultato e gestione delle risorse.",
+      "example": "PQexecParams e PQclear.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con ECPG, che usa un preprocessore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.8, pagine PDF 150–151"
+    },
+    {
+      "id": "si-c10-q057",
+      "topicId": "si-c10-t08",
+      "question": "Qual è il ruolo di JDBC in Java?",
+      "answer": "Fornire l'interfaccia standard per connettersi al DBMS e usare istruzioni SQL tramite driver.",
+      "detail": "È il ponte applicativo normalmente utilizzato nel contesto Java enterprise.",
+      "example": "Servizio Java che esegue una query parametrica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che JDBC coincida con una stored procedure.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.8, pagine PDF 150–151"
+    },
+    {
+      "id": "si-c10-q058",
+      "topicId": "si-c10-t08",
+      "question": "Qual è il ruolo di PDO in PHP?",
+      "answer": "Esporre un'interfaccia per preparare ed eseguire istruzioni, gestire connessioni, risultati e transazioni.",
+      "detail": "Il backend PHP MVC può usare PDO come livello di accesso dati.",
+      "example": "$pdo->prepare(), execute(), fetchAll().",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere PDO col framework MVC nel suo insieme.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.8, pagine PDF 150–151"
+    },
+    {
+      "id": "si-c10-q059",
+      "topicId": "si-c10-t08",
+      "question": "Che cosa fa PQexecParams nel listato libpq del manuale?",
+      "answer": "Esegue una query parametrizzata passando separatamente la stringa SQL e il valore PMI.",
+      "detail": "Il risultato è un puntatore PGresult che richiede verifica di stato e successivo rilascio.",
+      "example": "WHERE segmento=$1 e vettore values contenente 'PMI'.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserire il valore direttamente nel testo SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.8, pagine PDF 150–151"
+    },
+    {
+      "id": "si-c10-q060",
+      "topicId": "si-c10-t08",
+      "question": "Perché controllare PQresultStatus prima di usare il risultato?",
+      "answer": "Per distinguere un risultato query valido da un errore di esecuzione.",
+      "detail": "Nel listato, per la SELECT è atteso PGRES_TUPLES_OK.",
+      "example": "if (PQresultStatus(r) != PGRES_TUPLES_OK) ...",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non leggere tuple se la query è fallita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.8, pagine PDF 150–151"
+    },
+    {
+      "id": "si-c10-q061",
+      "topicId": "si-c10-t08",
+      "question": "A cosa serve PQclear nel client libpq?",
+      "answer": "Rilascia la memoria del risultato PGresult.",
+      "detail": "La gestione esplicita del ciclo di vita è responsabilità del client C.",
+      "example": "Dopo aver processato la SELECT, PQclear(r).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare ogni PGresult in memoria indefinitamente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.8, pagine PDF 150–151"
+    },
+    {
+      "id": "si-c10-q062",
+      "topicId": "si-c10-t08",
+      "question": "Quale sequenza usa il listato PDO per ottenere offerte di un segmento?",
+      "answer": "prepare della SELECT, execute con parametro associativo e fetchAll in formato associativo.",
+      "detail": "Il risultato viene consumato come elenco di righe i cui nomi di colonna sono chiavi.",
+      "example": "prepare('... WHERE segmento = :s'), execute(['s'=>'PMI']).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare fetchAll come prova che la query restituisca una sola riga.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.8, pagine PDF 150–151"
+    },
+    {
+      "id": "si-c10-q063",
+      "topicId": "si-c10-t08",
+      "question": "Perché l'esempio PDO della transazione verifica rowCount()?",
+      "answer": "Per rilevare il caso in cui l'UPDATE dell'offerta non abbia coinvolto la riga attesa.",
+      "detail": "Il frammento lancia un errore e tenta rollback se il controllo fallisce.",
+      "example": "INSERT scenario 101 e UPDATE offerta 7, atteso esattamente un record.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare successo soltanto perché execute non ha lanciato eccezione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.8, pagine PDF 150–151"
+    },
+    {
+      "id": "si-c10-q064",
+      "topicId": "si-c10-t08",
+      "question": "Qual è la cautela del manuale sull'interpretazione di rowCount()?",
+      "answer": "Dipende dal driver e dal tipo di operazione; non è una garanzia universale di corrispondenza semantica.",
+      "detail": "Per operazioni robuste servono anche verifiche delle precondizioni, chiavi e controllo della concorrenza.",
+      "example": "Riga individuata per PK e controllata con una politica di lock coerente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non generalizzare a ogni DBMS il conteggio delle righe modificate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.8, pagine PDF 150–151"
+    },
+    {
+      "id": "si-c10-q065",
+      "topicId": "si-c10-t08",
+      "question": "Perché il codice libpq esemplificativo non è un programma C completo?",
+      "answer": "Presuppone una connessione valida e non mostra include, apertura e chiusura dell'intero ciclo.",
+      "detail": "Il manuale lo usa per illustrare il principio dell'API, non per fornire un progetto eseguibile autonomo.",
+      "example": "Il listato inizia già con un puntatore conn disponibile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire all'esempio i controlli che non compaiono.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.8, pagine PDF 150–151"
+    },
+    {
+      "id": "si-c10-q066",
+      "topicId": "si-c10-t08",
+      "question": "Quale combinazione di tecnologie è coerente con il progetto EnerPrice descritto nel manuale?",
+      "answer": "Backend PHP MVC con PDO verso PostgreSQL e, se utili, routine nel DBMS.",
+      "detail": "La scelta della tecnologia d'accesso deve rientrare nell'architettura approvata, mentre ECPG serve a comprendere il concetto di embedded SQL.",
+      "example": "Controller PHP, servizio di pricing, repository PDO e DB PostgreSQL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire l'architettura di progetto con un programma ECPG in C.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.8, pagine PDF 150–151"
+    },
+    {
+      "id": "si-c10-q067",
+      "topicId": "si-c10-t09",
+      "question": "Che cos'è una stored procedure?",
+      "answer": "È una routine definita e memorizzata nel DBMS, richiamabile per svolgere operazioni.",
+      "detail": "Può combinare SQL e strutture procedurali secondo il linguaggio e le regole del sistema.",
+      "example": "Una procedura che registra un evento o calcola un indicatore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definirla come query SQL inserita nel sorgente C.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.9, pagina PDF 151"
+    },
+    {
+      "id": "si-c10-q068",
+      "topicId": "si-c10-t09",
+      "question": "Che cos'è una stored function?",
+      "answer": "È una routine memorizzata che restituisce un valore o una struttura secondo la semantica del DBMS.",
+      "detail": "Le funzioni possono essere chiamate in contesti consentiti dal database e differiscono dalle procedure anche nella firma.",
+      "example": "Una funzione che restituisce ricavi meno costi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere equivalenza assoluta tra Oracle e PostgreSQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.9, pagina PDF 151"
+    },
+    {
+      "id": "si-c10-q069",
+      "topicId": "si-c10-t09",
+      "question": "Quali benefici possono offrire stored routine ben progettate?",
+      "answer": "Riuso di regole, centralizzazione di controlli condivisi e talvolta riduzione degli scambi con il database.",
+      "detail": "La vicinanza ai dati può favorire operazioni coerenti, soprattutto quando più client invocano la stessa regola.",
+      "example": "Calcolo economico disponibile sia a batch sia a interfaccia.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente prestazioni migliori a ogni routine.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.9, pagina PDF 151"
+    },
+    {
+      "id": "si-c10-q070",
+      "topicId": "si-c10-t09",
+      "question": "Quali sono i principali limiti di collocare troppa logica nel DBMS?",
+      "answer": "Difficoltà di test, manutenzione, migrazione e dipendenza dal dialetto specifico.",
+      "detail": "Routine enormi creano accoppiamento e possono ostacolare l'evoluzione dell'applicazione.",
+      "example": "Package che incorpora navigazione web e controlli di interfaccia.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non spostare tutto nel DBMS solo perché supporta PL/SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.9, pagina PDF 151"
+    },
+    {
+      "id": "si-c10-q071",
+      "topicId": "si-c10-t09",
+      "question": "Dove è preferibile collocare PK, FK e integrità referenziale?",
+      "answer": "In vincoli del database.",
+      "detail": "Così tutti i client sono soggetti alle stesse condizioni di integrità.",
+      "example": "Foreign key scenario-offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidare la PK al solo controller.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.9, pagina PDF 151"
+    },
+    {
+      "id": "si-c10-q072",
+      "topicId": "si-c10-t09",
+      "question": "Dove può risiedere un calcolo economico riutilizzabile?",
+      "answer": "In una routine DBMS o in un servizio applicativo, in base all'architettura.",
+      "detail": "La scelta dipende da testabilità, riuso, atomicità, prestazioni e portabilità.",
+      "example": "Calcolare il margine di una configurazione di offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare una preferenza progettuale in una regola obbligatoria.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.9, pagina PDF 151"
+    },
+    {
+      "id": "si-c10-q073",
+      "topicId": "si-c10-t09",
+      "question": "Dove si colloca normalmente la navigazione e la presentazione della UI?",
+      "answer": "Nel controller e nella view dell'applicazione web.",
+      "detail": "Queste responsabilità sono distinte dalla persistente integrità dei dati.",
+      "example": "Pagina di confronto offerte e gestione form.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire rendering HTML a una stored procedure.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.9, pagina PDF 151"
+    },
+    {
+      "id": "si-c10-q074",
+      "topicId": "si-c10-t09",
+      "question": "Come distribuire una politica di approvazione delle offerte?",
+      "answer": "Nel servizio che governa il processo, sostenuto da vincoli del DBMS.",
+      "detail": "La regola comprende identità, ruolo, stato del workflow e integrità delle transizioni.",
+      "example": "Responsabile autorizzato può approvare una simulazione valida.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che un campo status e una FK da soli assicurino l'approvazione corretta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.9, pagina PDF 151"
+    },
+    {
+      "id": "si-c10-q075",
+      "topicId": "si-c10-t09",
+      "question": "Perché la posizione della logica non coincide con il confine della transazione?",
+      "answer": "Una procedura può essere chiamata all'interno di un'operazione applicativa più ampia.",
+      "detail": "Il chiamante deve sapere quali commit e rollback sono consentiti e dove avvengono.",
+      "example": "Il servizio invoca due routine in un'unica transazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non effettuare commit arbitrari dentro routine riutilizzabili.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.9, pagina PDF 151"
+    },
+    {
+      "id": "si-c10-q076",
+      "topicId": "si-c10-t10",
+      "question": "Quali costrutti aggiunge PL/SQL a SQL Oracle?",
+      "answer": "Blocchi, variabili, controlli di flusso, procedure, funzioni, package ed eccezioni.",
+      "detail": "Permette di comporre operazioni SQL e logica procedurale all'interno del database.",
+      "example": "Calcolo di un margine con IF, variabili e DBMS_OUTPUT.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerarlo SQL standard portabile senza modifiche.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.10, pagine PDF 151–152"
+    },
+    {
+      "id": "si-c10-q077",
+      "topicId": "si-c10-t10",
+      "question": "Quali sezioni costituiscono un blocco anonimo PL/SQL?",
+      "answer": "DECLARE facoltativa, BEGIN obbligatoria, EXCEPTION facoltativa, chiusura END;.",
+      "detail": "Le dichiarazioni precedono l'esecuzione; EXCEPTION gestisce condizioni anomale.",
+      "example": "DECLARE v_margine NUMBER; BEGIN ... EXCEPTION ... END;.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare il blocco BEGIN ... END.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.10, pagine PDF 151–152"
+    },
+    {
+      "id": "si-c10-q078",
+      "topicId": "si-c10-t10",
+      "question": "Che funzione ha il simbolo / in una riga separata dopo END;?",
+      "answer": "È un comando di invio/esecuzione usato da determinati tool Oracle, non sintassi propria di PL/SQL.",
+      "detail": "Il manuale cita SQL*Plus come ambiente che interpreta lo slash.",
+      "example": "END; seguito da / nel listato dimostrativo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non includerlo come parte necessaria di ogni routine nei linguaggi client.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.10, pagine PDF 151–152"
+    },
+    {
+      "id": "si-c10-q079",
+      "topicId": "si-c10-t10",
+      "question": "Quale valore produce il blocco anonimo del margine illustrato?",
+      "answer": "500, a partire da ricavi 2.000 e costi 1.500.",
+      "detail": "Il blocco assegna v_margine := v_ricavi - v_costi e mostra il risultato.",
+      "example": "DBMS_OUTPUT.PUT_LINE con concatenazione della stringa e del valore di v_margine.",
+      "formulas": [
+        {
+          "latex": "2000-1500=500",
+          "meaning": "Margine nel blocco anonimo Oracle"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confondere visualizzazione diagnostica con risultato di una funzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.10, pagine PDF 151–152"
+    },
+    {
+      "id": "si-c10-q080",
+      "topicId": "si-c10-t10",
+      "question": "Qual è il significato dei parametri IN, OUT e IN OUT?",
+      "answer": "IN porta valori alla routine; OUT porta valori restituiti; IN OUT può fare entrambe le cose.",
+      "detail": "La direzione dei parametri definisce il contratto della procedura.",
+      "example": "p_ricavi IN, p_costi IN, p_margine OUT.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare tutti i parametri modificabili indistintamente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.10, pagine PDF 151–152"
+    },
+    {
+      "id": "si-c10-q081",
+      "topicId": "si-c10-t10",
+      "question": "Che controllo effettua calc_margine in Oracle?",
+      "answer": "Rifiuta ricavi o costi negativi e restituisce ricavi meno costi via parametro OUT.",
+      "detail": "Usa IF e RAISE_APPLICATION_ERROR con codice -20001 quando l'input non rispetta la regola.",
+      "example": "calc_margine(2000,1500) produce 500 nell'OUT.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire i vincoli persistenti del DB con un solo controllo procedurale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.10, pagine PDF 151–152"
+    },
+    {
+      "id": "si-c10-q082",
+      "topicId": "si-c10-t10",
+      "question": "A cosa serve RAISE_APPLICATION_ERROR?",
+      "answer": "Segnala al chiamante una condizione applicativa non valida con codice e messaggio.",
+      "detail": "Permette di evitare un risultato apparentemente valido quando l'input non lo è.",
+      "example": "-20001: «Importi negativi».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inghiottire l'eccezione e restituire un margine fittizio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.10, pagine PDF 151–152"
+    },
+    {
+      "id": "si-c10-q083",
+      "topicId": "si-c10-t10",
+      "question": "Che differenza c'è fra specifica e body di un package Oracle?",
+      "answer": "La specification dichiara l'interfaccia pubblica; il body implementa il comportamento.",
+      "detail": "La separazione ricorda l'incapsulamento e consente di organizzare un'API stabile.",
+      "example": "pricing_pkg.margine dichiarata nella spec e definita nel body.",
+      "formulas": [],
+      "connections": [
+        "Capitolo 11 — programmazione a oggetti e incapsulamento"
+      ],
+      "mistakes": "Non trattare la specifica come una seconda implementazione indipendente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.10, pagine PDF 151–152"
+    },
+    {
+      "id": "si-c10-q084",
+      "topicId": "si-c10-t10",
+      "question": "Quali elementi può raccogliere un package Oracle?",
+      "answer": "Procedure, funzioni, tipi, costanti e altre dichiarazioni secondo il linguaggio.",
+      "detail": "Il package organizza funzionalità correlate sotto un'interfaccia condivisa.",
+      "example": "pricing_pkg con funzione margine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che tutti i DBMS supportino package con identica semantica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.10, pagine PDF 151–152"
+    },
+    {
+      "id": "si-c10-q085",
+      "topicId": "si-c10-t10",
+      "question": "Che limite dichiara il manuale per il package pricing_pkg di esempio?",
+      "answer": "È dimostrativo e non implementa controlli di dominio nel body mostrato.",
+      "detail": "Serve a comprendere specification e body, non a proporre la logica definitiva di EnerPrice.",
+      "example": "RETURN p_ricavi - p_costi senza gestione di valori negativi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire al listato controlli che non sono presenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.10, pagine PDF 151–152"
+    },
+    {
+      "id": "si-c10-q086",
+      "topicId": "si-c10-t10",
+      "question": "Quali aspetti deve documentare ogni routine DBMS enterprise?",
+      "answer": "Effetti collaterali, privilegi necessari e comportamento in caso di errore.",
+      "detail": "Sono informazioni indispensabili per sicurezza, test e composizione transazionale.",
+      "example": "Funzione sola lettura distinta da procedura che aggiorna tabelle.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non documentare soltanto il nome e i parametri.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.10, pagine PDF 151–152"
+    },
+    {
+      "id": "si-c10-q087",
+      "topicId": "si-c10-t11",
+      "question": "Qual è la differenza tra cursore implicito ed esplicito in PL/SQL?",
+      "answer": "L'implicito è gestito automaticamente per certe istruzioni; l'esplicito è dichiarato e gestito dal programmatore.",
+      "detail": "Un SELECT INTO usa un contesto implicito; OPEN/FETCH/CLOSE riguarda un cursore esplicito.",
+      "example": "Query puntuale contro attraversamento di molte offerte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che SELECT INTO possa raccogliere automaticamente più righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.11, pagine PDF 152–153"
+    },
+    {
+      "id": "si-c10-q088",
+      "topicId": "si-c10-t11",
+      "question": "Quale comodità offre il CURSOR FOR LOOP Oracle?",
+      "answer": "Gestisce automaticamente apertura, fetch e chiusura del cursore durante il ciclo.",
+      "detail": "Il programmatore scrive la query e la logica di elaborazione del record corrente.",
+      "example": "FOR r IN (SELECT id, descrizione FROM offerta) LOOP ... END LOOP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere un CLOSE manuale allo stesso cursore implicito del ciclo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.11, pagine PDF 152–153"
+    },
+    {
+      "id": "si-c10-q089",
+      "topicId": "si-c10-t11",
+      "question": "Qual è il significato di NO_DATA_FOUND in una SELECT INTO PL/SQL?",
+      "answer": "La query puntuale non ha restituito alcuna riga.",
+      "detail": "È una condizione diversa dal risultato NULL di una riga esistente.",
+      "example": "WHERE id = 999 quando non esiste l'offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare riga assente a valore di colonna NULL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.11, pagine PDF 152–153"
+    },
+    {
+      "id": "si-c10-q090",
+      "topicId": "si-c10-t11",
+      "question": "Qual è il significato di TOO_MANY_ROWS in PL/SQL?",
+      "answer": "La SELECT INTO che attendeva una riga ne ha ottenute più di una.",
+      "detail": "Richiede revisione del requisito di unicità o scelta di una strategia per insiemi.",
+      "example": "Ricerca di offerta senza filtro adeguato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere silenziosamente una delle righe restituite.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.11, pagine PDF 152–153"
+    },
+    {
+      "id": "si-c10-q091",
+      "topicId": "si-c10-t11",
+      "question": "Perché non bisogna usare eccezioni per ogni normale iterazione?",
+      "answer": "I casi previsti di elaborazione multipla possono essere gestiti con query e cicli adatti.",
+      "detail": "Il manuale suggerisce di non affidare il flusso ordinario a eccezioni evitabili.",
+      "example": "CURSOR FOR LOOP anziché molte SELECT INTO errate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare TOO_MANY_ROWS come meccanismo per scoprire l'esistenza di più offerte.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.11, pagine PDF 152–153"
+    },
+    {
+      "id": "si-c10-q092",
+      "topicId": "si-c10-t11",
+      "question": "Come funziona EXECUTE IMMEDIATE con bind in Oracle?",
+      "answer": "Esegue una stringa SQL costruita a runtime e passa i valori tramite USING.",
+      "detail": "L'esempio recupera COUNT(*) con il segmento PMI come bind invece di concatenarlo.",
+      "example": "EXECUTE IMMEDIATE v_sql INTO v_cnt USING v_segmento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpolare valori utente direttamente nel testo SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.11, pagine PDF 152–153"
+    },
+    {
+      "id": "si-c10-q093",
+      "topicId": "si-c10-t11",
+      "question": "Quali ruoli hanno INTO e USING nell'esempio di EXECUTE IMMEDIATE?",
+      "answer": "INTO riceve il risultato della query; USING passa il parametro di input.",
+      "detail": "Il database esegue COUNT(*) con :p associato al valore host del segmento.",
+      "example": "SELECT COUNT(*) ... WHERE segmento = :p.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la destinazione del risultato con il dato di filtro.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.11, pagine PDF 152–153"
+    },
+    {
+      "id": "si-c10-q094",
+      "topicId": "si-c10-t11",
+      "question": "Perché WHEN OTHERS THEN NULL è scorretto come gestione generale?",
+      "answer": "Sopprime errori importanti senza informare il chiamante o applicare una strategia di recupero.",
+      "detail": "Il manuale raccomanda di propagare o gestire significativamente le eccezioni.",
+      "example": "Il calcolo fallisce ma il servizio segnala successo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non nascondere un errore DB con un risultato apparentemente valido.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.11, pagine PDF 152–153"
+    },
+    {
+      "id": "si-c10-q095",
+      "topicId": "si-c10-t11",
+      "question": "Perché una routine PL/SQL non dovrebbe inserire COMMIT senza progettazione?",
+      "answer": "Potrebbe essere parte di una transazione più ampia controllata dal chiamante.",
+      "detail": "Un commit autonomo potrebbe impedire l'annullamento dell'intera operazione applicativa.",
+      "example": "Approvazione di una simulazione composta da più passaggi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la fine della routine con il confine atomico del processo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.11, pagine PDF 152–153"
+    },
+    {
+      "id": "si-c10-q096",
+      "topicId": "si-c10-t12",
+      "question": "PL/SQL Oracle e PL/pgSQL PostgreSQL sono lo stesso linguaggio?",
+      "answer": "No: entrambi estendono SQL con strutture procedurali, ma differiscono per sintassi, tipi e semantica.",
+      "detail": "La migrazione richiede riprogettare interfacce, gestione delle eccezioni, ritorni e transazioni.",
+      "example": "Trasformare procedura Oracle calc_margine in funzione PostgreSQL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a sostituire NUMBER con NUMERIC.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.12, pagina PDF 153"
+    },
+    {
+      "id": "si-c10-q097",
+      "topicId": "si-c10-t12",
+      "question": "Quali tipi numerici parametrizzati sono messi a confronto nel manuale?",
+      "answer": "NUMBER(p,s) in Oracle e NUMERIC(p,s) in PostgreSQL.",
+      "detail": "La somiglianza non implica equivalenza totale di tutti i tipi.",
+      "example": "Importi con precisione 12 e scala 2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non generalizzare questa corrispondenza a qualsiasi tipo DBMS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.12, pagina PDF 153"
+    },
+    {
+      "id": "si-c10-q098",
+      "topicId": "si-c10-t12",
+      "question": "Come differisce un blocco anonimo nei due esempi?",
+      "answer": "Oracle: DECLARE/BEGIN/END con eventuale slash nel tool; PostgreSQL: DO $$ BEGIN ... END $$;.",
+      "detail": "È una differenza illustrativa della sintassi e degli ambienti.",
+      "example": "Blocco Oracle per v_margine contro DO anonimo PostgreSQL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non copiare esattamente il blocco Oracle in PostgreSQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.12, pagina PDF 153"
+    },
+    {
+      "id": "si-c10-q099",
+      "topicId": "si-c10-t12",
+      "question": "Come si scrive un output diagnostico nei due linguaggi?",
+      "answer": "Oracle DBMS_OUTPUT.PUT_LINE; PostgreSQL RAISE NOTICE.",
+      "detail": "Entrambi sono strumenti diagnostici, non canali generali per restituire tabelle all'applicazione.",
+      "example": "Stampare «Margine = 500».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere un output diagnostico al posto del valore di ritorno richiesto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.12, pagina PDF 153"
+    },
+    {
+      "id": "si-c10-q100",
+      "topicId": "si-c10-t12",
+      "question": "Qual è la differenza mostrata per SQL dinamico?",
+      "answer": "Oracle usa EXECUTE IMMEDIATE ... USING; PL/pgSQL usa EXECUTE ... USING.",
+      "detail": "I dettagli di sintassi e restituzione di risultati vanno verificati nel DBMS.",
+      "example": "Conteggio di offerte per segmento passato come bind.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che EXECUTE IMMEDIATE esista identico in PL/pgSQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.12, pagina PDF 153"
+    },
+    {
+      "id": "si-c10-q101",
+      "topicId": "si-c10-t12",
+      "question": "Come si differenzia la dichiarazione del risultato di una funzione?",
+      "answer": "Oracle CREATE FUNCTION ... RETURN ...; PostgreSQL CREATE FUNCTION ... RETURNS ... .",
+      "detail": "La tabella del manuale mette in evidenza differenze sintattiche.",
+      "example": "Funzione numerica calc_margine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trascurare variazioni del contratto di chiamata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.12, pagina PDF 153"
+    },
+    {
+      "id": "si-c10-q102",
+      "topicId": "si-c10-t12",
+      "question": "Che comportamento ha la funzione PL/pgSQL calc_margine del manuale?",
+      "answer": "Rifiuta importi negativi e restituisce p_ricavi - p_costi, pari a 500 per 2.000 e 1.500.",
+      "detail": "Usa RAISE EXCEPTION e RETURN nella funzione PostgreSQL.",
+      "example": "SELECT calc_margine(2000,1500).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamarla equivalente sotto ogni aspetto alla procedura Oracle con OUT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.12, pagina PDF 153"
+    },
+    {
+      "id": "si-c10-q103",
+      "topicId": "si-c10-t12",
+      "question": "Quale limite transazionale sottolinea il manuale in PostgreSQL?",
+      "answer": "Non si può presumere che una funzione PL/pgSQL esegua liberamente COMMIT.",
+      "detail": "Il controllo delle transazioni nelle procedure dipende dalle condizioni di invocazione.",
+      "example": "Funzione di calcolo usata dentro una transazione del servizio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire le regole transazionali Oracle in modo automatico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.12, pagina PDF 153"
+    },
+    {
+      "id": "si-c10-q104",
+      "topicId": "si-c10-t13",
+      "question": "Che cosa significa OLTP?",
+      "answer": "Online Transaction Processing: elaborazione delle operazioni quotidiane di un'organizzazione.",
+      "detail": "È orientato a registrazioni puntuali, transazioni brevi e coerenza immediata.",
+      "example": "Inserire un'offerta o approvare una simulazione.",
+      "formulas": [],
+      "connections": [
+        "Capitolo 9 — DBMS transazionali"
+      ],
+      "mistakes": "Non equiparare OLTP a reportistica storica massiva.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.13, pagine PDF 153–154"
+    },
+    {
+      "id": "si-c10-q105",
+      "topicId": "si-c10-t13",
+      "question": "Che cosa significa OLAP?",
+      "answer": "Online Analytical Processing: analisi e aggregazione di dati su più dimensioni.",
+      "detail": "Serve a confrontare periodi, segmenti e misure economiche per supportare decisioni.",
+      "example": "Margine medio e totale per segmento e trimestre.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con la semplice registrazione di un evento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.13, pagine PDF 153–154"
+    },
+    {
+      "id": "si-c10-q106",
+      "topicId": "si-c10-t13",
+      "question": "Quali differenze tipiche presentano le query OLTP e OLAP?",
+      "answer": "OLTP usa query selettive e brevi; OLAP aggregazioni ampie e confronti su molti record.",
+      "detail": "Le differenze riflettono carichi di lavoro, latenza richiesta e utenti serviti.",
+      "example": "Ricerca di offerta per ID contro margine annuale per segmento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che una stessa query abbia sempre prestazioni ottimali sui due carichi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.13, pagine PDF 153–154"
+    },
+    {
+      "id": "si-c10-q107",
+      "topicId": "si-c10-t13",
+      "question": "Come differiscono le modalità di aggiornamento OLTP e OLAP?",
+      "answer": "OLTP ha aggiornamenti frequenti e puntuali; OLAP spesso caricamenti pianificati o incrementali.",
+      "detail": "I sistemi analitici possono tollerare freschezza diversa in cambio di isolamento dei carichi.",
+      "example": "Approvazione immediata vs aggiornamento notturno dei KPI.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un dato OLAP ritardato come se fosse aggiornato in tempo reale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.13, pagine PDF 153–154"
+    },
+    {
+      "id": "si-c10-q108",
+      "topicId": "si-c10-t13",
+      "question": "Quali modelli dati sono tipici dei due mondi?",
+      "answer": "OLTP spesso normalizzato; OLAP spesso dimensionale.",
+      "detail": "Sono scelte frequenti, non regole assolute: il disegno risponde ai requisiti.",
+      "example": "Tabelle applicative 3NF vs fatto_simulazione con dimensioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che OLAP deve necessariamente essere denormalizzato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.13, pagine PDF 153–154"
+    },
+    {
+      "id": "si-c10-q109",
+      "topicId": "si-c10-t13",
+      "question": "Quando può bastare una vista SQL sul database operativo?",
+      "answer": "Quando i volumi sono contenuti e l'analisi è semplice e poco invasiva.",
+      "detail": "Il capitolo invita a dimensionare la soluzione rispetto al carico, evitando componenti analitici non necessari.",
+      "example": "Report mensile su poche migliaia di simulazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non costruire sempre un data warehouse separato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.13, pagine PDF 153–154"
+    },
+    {
+      "id": "si-c10-q110",
+      "topicId": "si-c10-t13",
+      "question": "Quando ha senso isolare un carico analitico in un data mart?",
+      "answer": "Quando analisi ripetute, grandi volumi e requisiti di isolamento giustificano dati e aggiornamenti dedicati.",
+      "detail": "Un'architettura separata riduce la competizione tra query pesanti e operazioni transazionali.",
+      "example": "Dashboard direzionale con scansioni storiche ricorrenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non decidere soltanto in base alla moda tecnologica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.13, pagine PDF 153–154"
+    },
+    {
+      "id": "si-c10-q111",
+      "topicId": "si-c10-t13",
+      "question": "Quale differenza esiste tra latenza transazionale e freschezza analitica?",
+      "answer": "La prima misura la risposta di un'operazione; la seconda l'attualità dei dati disponibili per analisi.",
+      "detail": "Sono requisiti diversi da misurare e documentare.",
+      "example": "Salvataggio in 200 ms e dashboard aggiornata alle ore 06:00.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare «veloce» per descrivere entrambe senza distinguere.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.13, pagine PDF 153–154"
+    },
+    {
+      "id": "si-c10-q112",
+      "topicId": "si-c10-t14",
+      "question": "Che cos'è un data warehouse secondo il manuale?",
+      "answer": "È un ambiente che integra dati da più sorgenti a fini analitici, con controlli di qualità e conservazione della storia.",
+      "detail": "Rende coerenti informazioni altrimenti distribuite tra più sistemi operativi.",
+      "example": "Simulazioni, segmenti e listini raccolti in una base analitica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattarlo come un database operativo con un nuovo nome.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.14, pagina PDF 154"
+    },
+    {
+      "id": "si-c10-q113",
+      "topicId": "si-c10-t14",
+      "question": "Che cos'è un data mart?",
+      "answer": "È una porzione orientata a uno specifico dominio di analisi.",
+      "detail": "Può riguardare un'area come marketing, vendite o pricing.",
+      "example": "Data mart dei margini per offerta e segmento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo automaticamente con un sistema transazionale separato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.14, pagina PDF 154"
+    },
+    {
+      "id": "si-c10-q114",
+      "topicId": "si-c10-t14",
+      "question": "In cosa consiste ETL?",
+      "answer": "Extract, Transform, Load: estrazione, trasformazione e caricamento dei dati.",
+      "detail": "La pulizia, standardizzazione e riconciliazione possono avvenire prima del caricamento nella destinazione analitica.",
+      "example": "Unificare codici segmento e valuta prima di creare i fatti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non passare direttamente alla somma di dati grezzi incompatibili.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.14, pagina PDF 154"
+    },
+    {
+      "id": "si-c10-q115",
+      "topicId": "si-c10-t14",
+      "question": "In cosa consiste ELT?",
+      "answer": "Extract, Load, Transform: i dati vengono caricati e trasformati nella piattaforma di destinazione.",
+      "detail": "La sequenza diversa richiede che l'ambiente di destinazione supporti trasformazioni e controlli adeguati.",
+      "example": "Caricare dati grezzi in area staging e normalizzarli tramite SQL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare ETL ed ELT processi identici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.14, pagina PDF 154"
+    },
+    {
+      "id": "si-c10-q116",
+      "topicId": "si-c10-t14",
+      "question": "Perché la deduplicazione è cruciale per il margine aggregato?",
+      "answer": "Lo stesso fatto caricato due volte viene conteggiato due volte, alterando importi e indicatori.",
+      "detail": "L'errore è di qualità e identità dei dati, non necessariamente della formula del margine.",
+      "example": "Doppio inserimento dello scenario mensile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non correggere una duplicazione con una media arbitraria.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.14, pagina PDF 154"
+    },
+    {
+      "id": "si-c10-q117",
+      "topicId": "si-c10-t14",
+      "question": "Quali controlli di completezza richiede un fatto analitico?",
+      "answer": "Presenza di campi necessari come periodo e segmento.",
+      "detail": "Un fatto senza dimensioni fondamentali può non essere confrontabile o correttamente aggregabile.",
+      "example": "Ogni simulazione deve avere il mese di riferimento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare NULL periodo come un mese valido.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.14, pagina PDF 154"
+    },
+    {
+      "id": "si-c10-q118",
+      "topicId": "si-c10-t14",
+      "question": "Quale controllo di unicità propone il manuale sui dati analitici?",
+      "answer": "Una chiave coerente con grana e perimetro temporale, per esempio scenario-periodo.",
+      "detail": "La sua definizione impedisce doppi conteggi nel caricamento.",
+      "example": "Una sola riga per chiave offerta-segmento-mese-scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che un ID generato automaticamente impedisca duplicazioni semantiche.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.14, pagina PDF 154"
+    },
+    {
+      "id": "si-c10-q119",
+      "topicId": "si-c10-t14",
+      "question": "Quali controlli di coerenza delle unità servono nell'ETL?",
+      "answer": "Valuta, unità di misura e significato economico delle colonne devono essere omogenei.",
+      "detail": "Somme di EUR con altre valute o grandezze diverse sono prive di significato senza conversioni.",
+      "example": "Ricavi e costi espressi entrambi in EUR.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggregare kWh ed euro come se fossero la stessa misura.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.14, pagina PDF 154"
+    },
+    {
+      "id": "si-c10-q120",
+      "topicId": "si-c10-t14",
+      "question": "Perché la temporalità è essenziale nella qualità dei dati?",
+      "answer": "Le classificazioni e le versioni delle offerte devono essere riferite al periodo corretto.",
+      "detail": "Applicare un prezzo o un segmento attuale a fatti storici può distorcere i confronti.",
+      "example": "Offerta versione A a gennaio e versione B a febbraio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ricalcolare la storia usando indiscriminatamente le anagrafiche correnti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.14, pagina PDF 154"
+    },
+    {
+      "id": "si-c10-q121",
+      "topicId": "si-c10-t14",
+      "question": "A cosa serve la riconciliazione nei caricamenti?",
+      "answer": "A verificare la corrispondenza tra totali o conteggi della sorgente e della destinazione.",
+      "detail": "Rende verificabili le trasformazioni e consente di diagnosticare perdite o duplicazioni.",
+      "example": "Somma ricavi origine = somma ricavi caricata, per lo stesso perimetro.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi al messaggio «job riuscito».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.14, pagina PDF 154"
+    },
+    {
+      "id": "si-c10-q122",
+      "topicId": "si-c10-t14",
+      "question": "Qual è il compromesso fra caricamento completo e incrementale?",
+      "answer": "Il completo è concettualmente semplice ma costoso sui grandi volumi; l'incrementale limita i dati trattati ma rende più complesso gestire modifiche e cancellazioni.",
+      "detail": "La scelta dipende da tempi, volume, frequenza e coerenza.",
+      "example": "Ricaricare ogni notte tutto lo storico vs usare un timestamp e correzioni retroattive.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ignorare cancellazioni logiche e rettifiche negli incrementali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.14, pagina PDF 154"
+    },
+    {
+      "id": "si-c10-q123",
+      "topicId": "si-c10-t15",
+      "question": "Che cosa contiene una tabella dei fatti?",
+      "answer": "Eventi o aggregati misurabili, misure numeriche e chiavi delle dimensioni.",
+      "detail": "Il fatto rappresenta il fenomeno quantificabile a una grana definita.",
+      "example": "Ricavi e costi di una simulazione in un dato periodo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserire automaticamente tutti gli attributi descrittivi come misure.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.15, pagine PDF 154–155"
+    },
+    {
+      "id": "si-c10-q124",
+      "topicId": "si-c10-t15",
+      "question": "Che cosa contiene una dimensione?",
+      "answer": "Il contesto descrittivo per filtrare, raggruppare e interpretare i fatti.",
+      "detail": "Una dimensione può esporre anno, categoria, segmento o altri attributi coerenti con la sua identità.",
+      "example": "Dimensioni periodo, offerta, segmento, scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere dimensione con valore monetario da sommare.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.15, pagine PDF 154–155"
+    },
+    {
+      "id": "si-c10-q125",
+      "topicId": "si-c10-t15",
+      "question": "Come è costruito uno schema a stella?",
+      "answer": "Tabella dei fatti centrale collegata a tabelle dimensionali tramite chiavi.",
+      "detail": "Le dimensioni forniscono assi di analisi e il fatto ospita le quantità.",
+      "example": "FATTO_SIMULAZIONE al centro, collegata a DIM_PERIODO e DIM_OFFERTA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentarlo come l'unico modello possibile per ogni DB.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.15, pagine PDF 154–155"
+    },
+    {
+      "id": "si-c10-q126",
+      "topicId": "si-c10-t15",
+      "question": "Quali misure usa il modello dimensionale delle simulazioni economiche?",
+      "answer": "Ricavi e costi come quantità generalmente additive nel perimetro coerente.",
+      "detail": "Da esse si possono derivare margine assoluto e margine percentuale.",
+      "example": "Margine assoluto = ricavi meno costi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non memorizzare margine % come se fosse additivo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.15, pagine PDF 154–155"
+    },
+    {
+      "id": "si-c10-q127",
+      "topicId": "si-c10-t15",
+      "question": "A che cosa può servire una chiave surrogata in una dimensione?",
+      "answer": "A identificare versioni o righe dimensionali indipendentemente dal codice di business.",
+      "detail": "È utile nella storicizzazione, specialmente con Slowly Changing Dimension di tipo 2.",
+      "example": "La stessa offerta commerciale ha due versioni descrittive con chiavi surrogate differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il codice business automaticamente sufficiente a distinguere la storia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.15, pagine PDF 154–155"
+    },
+    {
+      "id": "si-c10-q128",
+      "topicId": "si-c10-t15",
+      "question": "Perché 3NF e schema dimensionale non sono in contraddizione?",
+      "answer": "Rispondono a carichi e obiettivi diversi: coerenza transazionale e analisi aggregata.",
+      "detail": "La normalizzazione minimizza anomalie operative; la modellazione dimensionale può utilizzare ridondanze controllate per facilitare interrogazioni.",
+      "example": "Schema applicativo 3NF e data mart per report.",
+      "formulas": [],
+      "connections": [
+        "Capitolo 6 — normalizzazione"
+      ],
+      "mistakes": "Non accusare di errore qualsiasi ridondanza analitica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.15, pagine PDF 154–155"
+    },
+    {
+      "id": "si-c10-q129",
+      "topicId": "si-c10-t15",
+      "question": "Quale cautela dà il manuale sull'adozione di tabelle dimensionali?",
+      "answer": "Non usarle indiscriminatamente quando i requisiti non giustificano il costo aggiuntivo.",
+      "detail": "Un'applicazione semplice può ottenere report adeguati con viste SQL.",
+      "example": "Report quotidiano su un dataset piccolo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non adottare un data warehouse solo per prestigio tecnologico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.15, pagine PDF 154–155"
+    },
+    {
+      "id": "si-c10-q130",
+      "topicId": "si-c10-t15",
+      "question": "Quali assi propone l'esempio dimensionale EnerPrice?",
+      "answer": "Periodo, offerta, segmento e scenario.",
+      "detail": "Le dimensioni devono avere definizioni consistenti e chiavi appropriate.",
+      "example": "Confronto margini per mese e segmenti PMI/Residenziale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non perdere la dimensione temporale quando confronti configurazioni differenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.15, pagine PDF 154–155"
+    },
+    {
+      "id": "si-c10-q131",
+      "topicId": "si-c10-t16",
+      "question": "Che cos'è la grana di una tabella dei fatti?",
+      "answer": "È la definizione esatta di ciò che rappresenta una singola riga.",
+      "detail": "La grana va fissata prima di scegliere misure, chiavi e aggregazioni.",
+      "example": "Una riga per mese, offerta, segmento e scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mescolare fatti per cliente con aggregati per mese.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q132",
+      "topicId": "si-c10-t16",
+      "question": "Perché mescolare granularità diverse produce errori?",
+      "answer": "Le righe possono rappresentare unità statistiche differenti, rendendo conteggi e somme non omogenei.",
+      "detail": "Prima dell'aggregazione è necessario verificare le chiavi e l'unità osservata.",
+      "example": "Una simulazione individuale sommata a un totale mensile già comprensivo di quella simulazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sommare dettaglio e totale come eventi distinti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q133",
+      "topicId": "si-c10-t16",
+      "question": "Che cosa significa misura additiva?",
+      "answer": "Può essere sommata lungo tutte le dimensioni appropriate, con unità e perimetro coerenti.",
+      "detail": "Il manuale cita ricavi e costi come esempi.",
+      "example": "Ricavi di gennaio e febbraio in EUR relativi a eventi distinti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non raddoppiare lo stesso fatto in dimensioni non indipendenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q134",
+      "topicId": "si-c10-t16",
+      "question": "Che cosa significa misura semi-additiva?",
+      "answer": "Può essere sommata solo su alcune dimensioni, non su tutte.",
+      "detail": "Gli stock a fine periodo possono aggregarsi per categoria ma non automaticamente nel tempo.",
+      "example": "Numero di offerte attive a fine mese.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sommare stock mensili per ottenere clienti o offerte uniche annue.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q135",
+      "topicId": "si-c10-t16",
+      "question": "Che cosa significa misura non additiva?",
+      "answer": "Non si somma direttamente perché rappresenta spesso un rapporto o una percentuale.",
+      "detail": "Per un valore aggregato bisogna ricostruire numeratore e denominatore.",
+      "example": "Margine percentuale e tassi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sommare né mediare percentuali senza un modello di pesi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q136",
+      "topicId": "si-c10-t16",
+      "question": "Qual è la formula corretta del margine percentuale aggregato?",
+      "answer": "100 × somma(ricavi - costi) / somma(ricavi), quando il denominatore non è zero.",
+      "detail": "Il rapporto deve essere calcolato dai totali coerenti con la grana.",
+      "example": "SQL: 100.0*SUM(ricavi-costi)/NULLIF(SUM(ricavi),0).",
+      "formulas": [
+        {
+          "latex": "\\mathrm{Margine\\%}=100\\,\\frac{\\sum_i(\\mathrm{ricavi}_i-\\mathrm{costi}_i)}{\\sum_i\\mathrm{ricavi}_i}",
+          "meaning": "Margine percentuale complessivo ricavato dai totali"
+        }
+      ],
+      "connections": [
+        "Controllo di Gestione — KPI e reporting"
+      ],
+      "mistakes": "Non fare AVG(margine_pct) come sostituto automatico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q137",
+      "topicId": "si-c10-t16",
+      "question": "Perché nel calcolo SQL del margine aggregato compare NULLIF?",
+      "answer": "Trasforma in NULL il denominatore quando la somma dei ricavi è zero, evitando la divisione per zero.",
+      "detail": "L'indicatore è non definito in quel caso secondo la formula, non necessariamente 0%.",
+      "example": "NULLIF(SUM(ricavi),0).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non forzare sempre una percentuale zero quando il denominatore manca.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q138",
+      "topicId": "si-c10-t16",
+      "question": "Qual è il risultato dell'esempio con 90 e 910 euro di ricavi?",
+      "answer": "Il margine percentuale aggregato è 13,6%, non la media semplice 30%.",
+      "detail": "I margini sono 45 e 91: (45+91)/(90+910) = 136/1.000.",
+      "example": "Primo segmento 50%, secondo 10% con ricavi molto diversi.",
+      "formulas": [
+        {
+          "latex": "\\frac{45+91}{90+910}\\cdot100=13{,}6\\%",
+          "meaning": "Esempio di media ponderata implicita attraverso i ricavi"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non attribuire lo stesso peso economico ai due segmenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q139",
+      "topicId": "si-c10-t16",
+      "question": "Quando avrebbe senso la media aritmetica delle percentuali dei segmenti?",
+      "answer": "Quando lo scopo analitico assegna volutamente lo stesso peso a ogni segmento.",
+      "detail": "È una misura diversa dal margine percentuale dell'insieme dei ricavi.",
+      "example": "Media fra 50% e 10% = 30% se ogni segmento conta una volta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamarla percentuale complessiva dei ricavi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q140",
+      "topicId": "si-c10-t16",
+      "question": "Quali metadati sono essenziali per documentare un KPI?",
+      "answer": "Numeratore, denominatore, unità, grana e assi di aggregazione.",
+      "detail": "Questi elementi determinano come interpretare e ricalcolare l'indicatore.",
+      "example": "Margine % = margine EUR / ricavi EUR per trimestre e segmento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare etichette vaghe come «percentuale margine» senza formula.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q141",
+      "topicId": "si-c10-t16",
+      "question": "Che cosa sono dimensioni conformi?",
+      "answer": "Dimensioni condivise con chiavi e definizioni coerenti fra più tabelle dei fatti.",
+      "detail": "Permettono confronti consistenti di periodo, segmento o altra dimensione comune.",
+      "example": "Fatti vendite e fatti simulazioni usano DIM_PERIODO omogenea.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collegare due fact direttamente alla grana più dettagliata senza verificare i join.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q142",
+      "topicId": "si-c10-t16",
+      "question": "Quale rischio si presenta unendo due tabelle dei fatti per una dimensione comune?",
+      "answer": "Una cardinalità molti-a-molti fra fatti può moltiplicare le righe e gli importi.",
+      "detail": "Spesso si devono aggregare preventivamente le misure alla grana di confronto.",
+      "example": "Tre simulazioni e quattro vendite dello stesso segmento producono 12 coppie nel join.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare la duplicazione del join come incremento economico reale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q143",
+      "topicId": "si-c10-t16",
+      "question": "Che cosa fa una Slowly Changing Dimension di tipo 1?",
+      "answer": "Sovrascrive il valore dell'attributo dimensionale e non conserva la versione precedente nel record.",
+      "detail": "Le analisi storiche possono riflettere la classificazione attuale.",
+      "example": "Segmento della stessa offerta aggiornato senza nuova versione.",
+      "formulas": [],
+      "connections": [
+        "Capitolo 6 — progettazione e storicizzazione"
+      ],
+      "mistakes": "Non aspettarsi che un SCD1 preservi la storia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q144",
+      "topicId": "si-c10-t16",
+      "question": "Che cosa fa una Slowly Changing Dimension di tipo 2?",
+      "answer": "Crea una nuova versione della dimensione e collega i fatti alla versione pertinente.",
+      "detail": "Consente di leggere la classificazione valida al momento del fatto.",
+      "example": "Nuova riga con chiave surrogata e intervallo di validità per segmento modificato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sovrascrivere le versioni storiche se serve ricostruire il passato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.16, pagine PDF 155–156"
+    },
+    {
+      "id": "si-c10-q145",
+      "topicId": "si-c10-t17",
+      "question": "Che differenza esiste tra vista ordinaria e vista materializzata?",
+      "answer": "La vista ordinaria memorizza la definizione della query; la materializzata conserva fisicamente il risultato.",
+      "detail": "Il contenuto materializzato può essere meno aggiornato della sorgente.",
+      "example": "CREATE MATERIALIZED VIEW mv_margini_segmento AS SELECT ...",
+      "formulas": [],
+      "connections": [
+        "Capitolo 8 — viste SQL e viste materializzate"
+      ],
+      "mistakes": "Non considerare le due viste equivalenti per spazio e refresh.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.17, pagine PDF 156–157"
+    },
+    {
+      "id": "si-c10-q146",
+      "topicId": "si-c10-t17",
+      "question": "A che cosa serve REFRESH MATERIALIZED VIEW in PostgreSQL?",
+      "answer": "A rigenerare il contenuto memorizzato della vista materializzata.",
+      "detail": "È necessario prevedere una politica di aggiornamento compatibile col requisito di freschezza.",
+      "example": "REFRESH MATERIALIZED VIEW mv_margini_segmento;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che ogni INSERT nel fatto aggiorni automaticamente la vista.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.17, pagine PDF 156–157"
+    },
+    {
+      "id": "si-c10-q147",
+      "topicId": "si-c10-t17",
+      "question": "Quali benefici e costi ha una vista materializzata?",
+      "answer": "Riduce elaborazioni ripetute in lettura, ma usa spazio, richiede refresh e può risultare stale.",
+      "detail": "Va valutata in base a frequenza delle letture e tempo massimo di ritardo ammesso.",
+      "example": "Aggregati per segmento richiesti frequentemente da dashboard.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non promettere dati real-time senza strategia di refresh adeguata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.17, pagine PDF 156–157"
+    },
+    {
+      "id": "si-c10-q148",
+      "topicId": "si-c10-t17",
+      "question": "Quali informazioni temporali dovrebbe esporre una dashboard analitica?",
+      "answer": "Periodo del dato e, se rilevante, momento dell'ultimo aggiornamento.",
+      "detail": "Una formula corretta su dati superati può indurre scelte sbagliate.",
+      "example": "Report «dati al 24 novembre, refresh ore 06:00».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare correttezza aritmetica per attualità del risultato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.17, pagine PDF 156–157"
+    },
+    {
+      "id": "si-c10-q149",
+      "topicId": "si-c10-t17",
+      "question": "Che cos'è il roll-up in OLAP?",
+      "answer": "Passare da maggiore dettaglio a una sintesi lungo una gerarchia.",
+      "detail": "Normalmente si applicano aggregazioni coerenti con il tipo di misura.",
+      "example": "Da mese ad anno.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con la ricerca di record di dettaglio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.17, pagine PDF 156–157"
+    },
+    {
+      "id": "si-c10-q150",
+      "topicId": "si-c10-t17",
+      "question": "Che cos'è il drill-down in OLAP?",
+      "answer": "Passare da riepilogo a livelli di dettaglio più fini.",
+      "detail": "Richiede che i dati mantengano la grana necessaria o siano recuperabili.",
+      "example": "Da anno a trimestre e mese.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pretendere dettagli eliminati da un aggregato irreversibile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.17, pagine PDF 156–157"
+    },
+    {
+      "id": "si-c10-q151",
+      "topicId": "si-c10-t17",
+      "question": "Che cos'è lo slice in OLAP?",
+      "answer": "Selezionare un sottoinsieme fissando una dimensione.",
+      "detail": "Permette di osservare i fatti da una prospettiva specifica.",
+      "example": "Solo periodo febbraio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il filtro su una dimensione con una somma.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.17, pagine PDF 156–157"
+    },
+    {
+      "id": "si-c10-q152",
+      "topicId": "si-c10-t17",
+      "question": "Che cos'è il dice in OLAP?",
+      "answer": "Filtrare rispetto a più dimensioni o insiemi di valori.",
+      "detail": "Produce un sottoinsieme multidimensionale dei fatti.",
+      "example": "Segmenti PMI e Residenziale su due trimestri.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare slice un filtro multidimensionale articolato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.17, pagine PDF 156–157"
+    },
+    {
+      "id": "si-c10-q153",
+      "topicId": "si-c10-t17",
+      "question": "Che cos'è il pivot in OLAP?",
+      "answer": "Cambiare l'orientamento delle dimensioni nell'esposizione dei risultati.",
+      "detail": "Non modifica necessariamente gli eventi, ma riorganizza righe e colonne.",
+      "example": "Offerte sulle righe e mesi sulle colonne, poi viceversa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretarlo come aggiornamento dei dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.17, pagine PDF 156–157"
+    },
+    {
+      "id": "si-c10-q154",
+      "topicId": "si-c10-t17",
+      "question": "A cosa servono GROUPING SETS in PostgreSQL?",
+      "answer": "Consentono più livelli espliciti di aggregazione nella stessa query.",
+      "detail": "Il manuale mostra gruppi (segmento, offerta), (segmento) e totale generale.",
+      "example": "GROUP BY GROUPING SETS ((segmento,offerta),(segmento),()).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che il risultato rappresenti un solo livello di dettaglio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.17, pagine PDF 156–157"
+    },
+    {
+      "id": "si-c10-q155",
+      "topicId": "si-c10-t17",
+      "question": "Perché i NULL nelle righe GROUPING SETS richiedono cautela?",
+      "answer": "Possono indicare righe di totale e non necessariamente un valore mancante nei dati di origine.",
+      "detail": "È necessario distinguere le diverse aggregazioni del result set.",
+      "example": "La riga () rappresenta il totale generale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare ogni NULL del gruppo come dato non valido.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.17, pagine PDF 156–157"
+    },
+    {
+      "id": "si-c10-q156",
+      "topicId": "si-c10-t17",
+      "question": "Qual è la differenza tra correttezza logica del KPI e freschezza?",
+      "answer": "La prima riguarda formula e grana; la seconda quanto recentemente sono stati acquisiti o aggiornati i dati.",
+      "detail": "Entrambe sono necessarie perché l'indicatore supporti la decisione.",
+      "example": "Percentuale del margine corretta, ma calcolata su prezzi obsoleti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un KPI fuori periodo senza avvertimento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.17, pagine PDF 156–157"
+    },
+    {
+      "id": "si-c10-q157",
+      "topicId": "si-c10-t18",
+      "question": "Qual è la natura del dataset EnerPrice del paragrafo 10.18?",
+      "answer": "È un piccolo dataset didattico simulato, non il modello definitivo del progetto approvato.",
+      "detail": "Contiene ricavi e costi già aggregati di due offerte e due segmenti su due mesi.",
+      "example": "Offerte Base e Plus; segmenti Residenziale e PMI; Gen e Feb.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare i numeri come prezzi commerciali reali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q158",
+      "topicId": "si-c10-t18",
+      "question": "Quante righe contiene la tabella di laboratorio e che cosa rappresenta ogni riga?",
+      "answer": "Otto righe: una per combinazione di mese, segmento e offerta.",
+      "detail": "Il numero di scenari è fissato nell'esempio e non costituisce una ulteriore dimensione variabile nel dataset piatto.",
+      "example": "2 mesi × 2 segmenti × 2 offerte = 8 fatti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere ogni riga con un singolo cliente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q159",
+      "topicId": "si-c10-t18",
+      "question": "Quali colonne compongono la chiave primaria della tabella piatta di laboratorio?",
+      "answer": "periodo, segmento e offerta.",
+      "detail": "La chiave rispetta la grana dimostrativa, con unicità della combinazione.",
+      "example": "PRIMARY KEY(periodo, segmento, offerta).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usarla automaticamente come chiave del modello di produzione con più scenari.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q160",
+      "topicId": "si-c10-t18",
+      "question": "Quali misure contiene ciascuna delle otto righe del caso?",
+      "answer": "n_clienti, ricavi e costi; il margine è ricavabile come ricavi meno costi.",
+      "detail": "I valori di ricavi e costi sono importi aggregati in euro; n_clienti è un conteggio mensile.",
+      "example": "Gen/Residenziale/Base: 10 clienti, ricavi 1.600 €, costi 1.200 €.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare n_clienti come identificativi individuali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q161",
+      "topicId": "si-c10-t18",
+      "question": "Quale vincolo garantisce che il numero di clienti di una riga non sia negativo?",
+      "answer": "CHECK (n_clienti >= 0) insieme a NOT NULL.",
+      "detail": "È un controllo elementare sul contenuto delle righe della tabella dimostrativa.",
+      "example": "CREATE TABLE fatto_simulazione (... n_clienti INTEGER NOT NULL CHECK (...)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che il CHECK dimostri l'unicità dei clienti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q162",
+      "topicId": "si-c10-t18",
+      "question": "Quali ricavi e costi totali si ottengono dagli otto fatti?",
+      "answer": "Ricavi 16.850 € e costi 13.161 €.",
+      "detail": "La somma è eseguita su tutte le combinazioni mensili, segmenti e offerte.",
+      "example": "SUM(ricavi) e SUM(costi) della tabella.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sommare una seconda volta subtotali già inclusi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q163",
+      "topicId": "si-c10-t18",
+      "question": "Qual è il margine assoluto complessivo del dataset?",
+      "answer": "3.689 €.",
+      "detail": "È la differenza fra ricavi totali 16.850 € e costi totali 13.161 €.",
+      "example": "16.850 - 13.161 = 3.689 €.",
+      "formulas": [
+        {
+          "latex": "16850-13161=3689",
+          "meaning": "Margine totale del dataset"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non chiamare 3.689 una percentuale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q164",
+      "topicId": "si-c10-t18",
+      "question": "Qual è il margine percentuale complessivo verificato?",
+      "answer": "21,89%, arrotondato a due decimali.",
+      "detail": "Si calcola come 100 × 3.689 / 16.850 ≈ 21,893%.",
+      "example": "ROUND(100.0*SUM(ricavi-costi)/NULLIF(SUM(ricavi),0),2).",
+      "formulas": [
+        {
+          "latex": "100\\cdot\\frac{3689}{16850}\\approx21{,}89\\%",
+          "meaning": "Margine percentuale aggregato del dataset"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non fare la media semplice dei margini percentuali dei segmenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q165",
+      "topicId": "si-c10-t18",
+      "question": "Quali risultati produce l'aggregazione Residenziale?",
+      "answer": "Ricavi 6.375 €, costi 4.946 €, margine 1.429 €, margine percentuale 22,42%.",
+      "detail": "Comprende sia Base sia Plus nei mesi Gen e Feb.",
+      "example": "Le quattro righe con segmento Residenziale.",
+      "formulas": [
+        {
+          "latex": "6375-4946=1429",
+          "meaning": "Margine assoluto Residenziale"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non usare solo i fatti di gennaio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q166",
+      "topicId": "si-c10-t18",
+      "question": "Quali risultati produce l'aggregazione PMI?",
+      "answer": "Ricavi 10.475 €, costi 8.215 €, margine 2.260 €, margine percentuale 21,58%.",
+      "detail": "Il rapporto corretto è 2.260 / 10.475 × 100.",
+      "example": "Quattro righe PMI su entrambi i mesi e le offerte.",
+      "formulas": [
+        {
+          "latex": "10475-8215=2260",
+          "meaning": "Margine assoluto PMI"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non scambiare l'importo di margine col peso del segmento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q167",
+      "topicId": "si-c10-t18",
+      "question": "Quali risultati si ottengono per il solo mese di gennaio?",
+      "answer": "Ricavi 7.640 €, costi 5.976 € e margine 1.664 €.",
+      "detail": "Si sommano le quattro righe di gennaio, indipendentemente da segmento e offerta.",
+      "example": "Gen: 1.600+1.440+2.400+2.200 di ricavi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non contare il bimestre quando la domanda chiede Gen.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q168",
+      "topicId": "si-c10-t18",
+      "question": "Quali risultati si ottengono per il solo mese di febbraio?",
+      "answer": "Ricavi 9.210 €, costi 7.185 € e margine 2.025 €.",
+      "detail": "La somma riguarda le quattro combinazioni di febbraio.",
+      "example": "Feb: ricavi 2.040+1.295+3.000+2.875.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il totale mensile con quello di un solo segmento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q169",
+      "topicId": "si-c10-t18",
+      "question": "Qual è il margine complessivo dell'offerta Base?",
+      "answer": "Ricavi 9.040 €, costi 7.010 €, margine 2.030 €, pari a circa 22,46%.",
+      "detail": "Comprende Residenziale e PMI sia a gennaio sia a febbraio.",
+      "example": "Ricavi Base = 1.600+2.400+2.040+3.000.",
+      "formulas": [
+        {
+          "latex": "9040-7010=2030",
+          "meaning": "Margine complessivo Base"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non usare solo il confronto Base/Plus di un mese.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q170",
+      "topicId": "si-c10-t18",
+      "question": "Qual è il margine complessivo dell'offerta Plus?",
+      "answer": "Ricavi 7.810 €, costi 6.151 €, margine 1.659 €, circa 21,24%.",
+      "detail": "Il valore è ricostruibile dai fatti e serve a confrontare correttamente le offerte.",
+      "example": "Ricavi Plus = 1.440+2.200+1.295+2.875.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare la sola percentuale senza considerare i volumi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q171",
+      "topicId": "si-c10-t18",
+      "question": "Perché non si possono sommare n_clienti per ottenere i clienti unici del bimestre?",
+      "answer": "Una persona può comparire in più aggregati e in più mesi.",
+      "detail": "I dati sono conteggi per fatto mensile, non identificativi di clienti distinti.",
+      "example": "27 in gennaio e 30 in febbraio: 57 presenze aggregate, non 57 clienti unici dimostrati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inferire cardinalità uniche da soli conteggi aggregati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q172",
+      "topicId": "si-c10-t18",
+      "question": "Quale cautela architetturale accompagna la tabella fatto_simulazione piatta?",
+      "answer": "È pensata per replicare gli esercizi, mentre il modello di produzione richiede offerte, versioni, scenari e periodi formalizzati.",
+      "detail": "Lo schema a stella citato nel capitolo resta concettuale, con dimensioni separate e grana esplicita.",
+      "example": "La tabella piatta usa campi TEXT per periodo e offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non convertirla direttamente in schema definitivo di EnerPrice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.18, pagine PDF 157–158"
+    },
+    {
+      "id": "si-c10-q173",
+      "topicId": "si-c10-t19",
+      "question": "[Esercizio 1] Come distingui SQL embedded da libpq?",
+      "answer": "Nel primo il sorgente contiene EXEC SQL tradotto dal preprocessore; nel secondo il programma usa funzioni della libreria client.",
+      "detail": "Le due tecniche possono entrambe impiegare parametri e transazioni.",
+      "example": "ECPG in C contro PQexecParams in C.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la tecnica di integrazione con il linguaggio SQL usato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.19, pagine PDF 158–159"
+    },
+    {
+      "id": "si-c10-q174",
+      "topicId": "si-c10-t19",
+      "question": "[Esercizio 2] Quali sono le fasi di un cursore esplicito?",
+      "answer": "DECLARE, OPEN, FETCH ripetuto fino alla fine, CLOSE.",
+      "detail": "In Oracle il CURSOR FOR LOOP automatizza vari passaggi, mentre la gestione manuale rende il controllo esplicito.",
+      "example": "Attraversamento dei risultati di una SELECT di offerte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere la condizione di arresto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.19, pagine PDF 158–159"
+    },
+    {
+      "id": "si-c10-q175",
+      "topicId": "si-c10-t19",
+      "question": "[Esercizio 3] Come interpreti SELECT INTO che restituisce tre righe?",
+      "answer": "Viola l'assunzione di risultato puntuale: vanno corretti i vincoli o usato un meccanismo per più righe.",
+      "detail": "In Oracle può verificarsi TOO_MANY_ROWS.",
+      "example": "Ricerca con filtro troppo largo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere automaticamente una delle tre righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.19, pagine PDF 158–159"
+    },
+    {
+      "id": "si-c10-q176",
+      "topicId": "si-c10-t19",
+      "question": "[Esercizio 4] Come gestire un campo scelto dall'utente per ORDER BY?",
+      "answer": "Usare un'allowlist di identificatori SQL validi e fare binding separato dei valori.",
+      "detail": "La struttura dell'ordinamento non va costruita con input libero.",
+      "example": "Campo fra ricavi, costi e margine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un placeholder di valore come se rappresentasse il nome di colonna.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.19, pagine PDF 158–159"
+    },
+    {
+      "id": "si-c10-q177",
+      "topicId": "si-c10-t19",
+      "question": "[Esercizio 5] Perché evitare COMMIT sempre dentro una routine?",
+      "answer": "La routine potrebbe essere un passo di una transazione applicativa più ampia.",
+      "detail": "Un commit interno può rendere impossibile il rollback dell'operazione globale.",
+      "example": "Procedura di pricing invocata durante un'approvazione multilivello.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non far corrispondere la fine della procedura alla fine della transazione per definizione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.19, pagine PDF 158–159"
+    },
+    {
+      "id": "si-c10-q178",
+      "topicId": "si-c10-t19",
+      "question": "[Esercizio 6] Come distingui procedura e funzione?",
+      "answer": "La procedura espone una sequenza di operazioni e parametri; la funzione restituisce un risultato secondo il DBMS.",
+      "detail": "Le differenze concrete di firma e invocazione dipendono da Oracle e PostgreSQL.",
+      "example": "calc_margine con OUT Oracle contro RETURN in funzione PL/pgSQL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presupporre conversione uno-a-uno senza verifica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.19, pagine PDF 158–159"
+    },
+    {
+      "id": "si-c10-q179",
+      "topicId": "si-c10-t19",
+      "question": "[Esercizio 7] Quando una CLI è la scelta coerente?",
+      "answer": "Quando l'applicazione deve comunicare col DBMS mediante API del proprio ambiente.",
+      "detail": "PHP: PDO; Java: JDBC; C: libpq, secondo i requisiti.",
+      "example": "Backend web PHP che usa query preparate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non adottare ECPG come soluzione obbligatoria per ogni linguaggio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.19, pagine PDF 158–159"
+    },
+    {
+      "id": "si-c10-q180",
+      "topicId": "si-c10-t19",
+      "question": "[Esercizio 8] A cosa serve RAISE_APPLICATION_ERROR?",
+      "answer": "A segnalare dal codice Oracle un errore applicativo con codice e messaggio.",
+      "detail": "È utile per invalidazioni di dominio e non va usato per sostituire indistintamente tutti i vincoli.",
+      "example": "Importi negativi nel calcolo del margine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a stampare un errore senza segnalarlo al chiamante.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.19, pagine PDF 158–159"
+    },
+    {
+      "id": "si-c10-q181",
+      "topicId": "si-c10-t19",
+      "question": "[Esercizio 9] Quando un cursore è meno opportuno di una query set-based?",
+      "answer": "Per trasformazioni uniformi su molti record esprimibili con una sola istruzione SQL.",
+      "detail": "L'UPDATE collettivo evita logica riga per riga e trasferimenti ripetuti quando equivalenti.",
+      "example": "Aggiornare in massa le offerte secondo una condizione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non preferire sempre la procedura iterativa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.19, pagine PDF 158–159"
+    },
+    {
+      "id": "si-c10-q182",
+      "topicId": "si-c10-t19",
+      "question": "[Esercizio 10] Quali proprietà ACID devono essere preservate?",
+      "answer": "Atomicità, consistenza, isolamento e durabilità, secondo le garanzie del DBMS scelto.",
+      "detail": "Il riferimento teorico è il Capitolo 9 e qui viene applicato alle transazioni del client.",
+      "example": "Salvataggio di scenario e associazione offerta come unità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre ACID al solo COMMIT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.19, pagine PDF 158–159"
+    },
+    {
+      "id": "si-c10-q183",
+      "topicId": "si-c10-t20",
+      "question": "[Esercizio 11] Qual è la grana della tabella del caso analitico?",
+      "answer": "Una riga per mese, segmento e offerta, con scenario dimostrativo fissato.",
+      "detail": "Non rappresenta singoli clienti o varianti storiche multiple.",
+      "example": "Gen–PMI–Base è una riga aggregata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collocare la grana al livello del cliente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.20, pagina PDF 159"
+    },
+    {
+      "id": "si-c10-q184",
+      "topicId": "si-c10-t20",
+      "question": "[Esercizio 12] Qual è il margine assoluto totale del bimestre?",
+      "answer": "3.689 €.",
+      "detail": "Deriva dai ricavi 16.850 € meno i costi 13.161 €.",
+      "example": "SUM(ricavi-costi) delle otto righe.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sommare margini percentuali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.20, pagina PDF 159"
+    },
+    {
+      "id": "si-c10-q185",
+      "topicId": "si-c10-t20",
+      "question": "[Esercizio 13] Come si ottiene la percentuale totale?",
+      "answer": "3.689 / 16.850 × 100, pari a circa 21,89%.",
+      "detail": "Il valore è calcolato dai totali, non dalla media di percentuali.",
+      "example": "SUM(margine)/SUM(ricavi).",
+      "formulas": [
+        {
+          "latex": "100\\cdot\\frac{3689}{16850}\\approx21{,}89\\%",
+          "meaning": "Calcolo del KPI aggregato"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non calcolare AVG(percentuali) senza giustificazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.20, pagina PDF 159"
+    },
+    {
+      "id": "si-c10-q186",
+      "topicId": "si-c10-t20",
+      "question": "[Esercizio 14] Qual è il margine PMI del bimestre?",
+      "answer": "2.260 €, pari a circa 21,58% dei ricavi PMI.",
+      "detail": "Ricavi PMI 10.475 €, costi 8.215 €.",
+      "example": "2.400+2.200+3.000+2.875 meno i costi PMI.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il totale di un solo mese.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.20, pagina PDF 159"
+    },
+    {
+      "id": "si-c10-q187",
+      "topicId": "si-c10-t20",
+      "question": "[Esercizio 15] Quanto vale il margine di febbraio?",
+      "answer": "2.025 €.",
+      "detail": "Ricavi febbraio 9.210 €, costi 7.185 €.",
+      "example": "Quattro righe di Feb.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non includere gennaio nella selezione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.20, pagina PDF 159"
+    },
+    {
+      "id": "si-c10-q188",
+      "topicId": "si-c10-t20",
+      "question": "[Esercizio 16] Che cosa non si ricava da SUM(n_clienti) su due mesi?",
+      "answer": "Il numero di clienti unici.",
+      "detail": "Il fatto è un aggregato mensile e gli stessi clienti possono ricomparire.",
+      "example": "Somma 57 presenze nei fatti senza prova di 57 persone distinte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare il conteggio aggregato come DISTINCT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.20, pagina PDF 159"
+    },
+    {
+      "id": "si-c10-q189",
+      "topicId": "si-c10-t20",
+      "question": "[Esercizio 17] Perché margine % è non additivo?",
+      "answer": "Perché è un rapporto e va ricalcolato sui numeratori e denominatori aggregati.",
+      "detail": "L'additività di ricavi e costi non si trasferisce alle loro percentuali.",
+      "example": "Margine% bimestre = SUM(ricavi-costi)/SUM(ricavi).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non archiviare la percentuale come quantità sommabile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.20, pagina PDF 159"
+    },
+    {
+      "id": "si-c10-q190",
+      "topicId": "si-c10-t20",
+      "question": "[Esercizio 18] Come distinguere SCD tipo 1 e tipo 2?",
+      "answer": "Tipo 1 sovrascrive; tipo 2 registra versioni storiche della dimensione.",
+      "detail": "La seconda consente di attribuire fatti passati al contesto allora valido.",
+      "example": "Segmento rinominato: sostituzione o nuova versione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che SCD1 conserva automaticamente tutte le variazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.20, pagina PDF 159"
+    },
+    {
+      "id": "si-c10-q191",
+      "topicId": "si-c10-t20",
+      "question": "[Esercizio 19] Quando è appropriata una vista materializzata?",
+      "answer": "Con aggregazioni frequenti e una politica di refresh compatibile col ritardo accettabile.",
+      "detail": "Riduce ricalcoli ma aumenta spazio e manutenzione.",
+      "example": "Cruscotto margini per segmento aggiornato giornalmente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentarla come dati sempre in tempo reale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.20, pagina PDF 159"
+    },
+    {
+      "id": "si-c10-q192",
+      "topicId": "si-c10-t20",
+      "question": "[Esercizio 20] Quale differenza esiste tra roll-up e drill-down?",
+      "answer": "Il roll-up sintetizza verso gerarchie superiori; il drill-down esplora maggior dettaglio.",
+      "detail": "Le misure devono restare aggregabili sul percorso dimensionale previsto.",
+      "example": "Da mese ad anno vs da anno a trimestre.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare drill-down l'aggregazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.20, pagina PDF 159"
+    },
+    {
+      "id": "si-c10-q193",
+      "topicId": "si-c10-t21",
+      "question": "[Esercizio autonomo 1] Come strutturare i tre livelli di EnerPrice con PostgreSQL?",
+      "answer": "Browser, controller/servizio PHP, accesso PDO e DBMS PostgreSQL; i servizi validano gli input e i permessi.",
+      "detail": "Il DBMS applica vincoli e transazioni mentre il modello applicativo non coincide con una tabella.",
+      "example": "Browser → servizio pricing → repository PDO → PostgreSQL.",
+      "formulas": [],
+      "connections": [
+        "EnerPrice — architettura del progetto individuale"
+      ],
+      "mistakes": "Non far accedere il browser direttamente al database.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    },
+    {
+      "id": "si-c10-q194",
+      "topicId": "si-c10-t21",
+      "question": "[Esercizio autonomo 2] Come gestire correttamente un cursore con gli errori?",
+      "answer": "Dichiarare e aprire, leggere via FETCH finché esistono righe, elaborare e chiudere sempre, gestendo rollback quando necessario.",
+      "detail": "Il rilascio della risorsa deve avvenire sia nel ramo regolare sia in quello eccezionale.",
+      "example": "finally per chiusura del cursore e della connessione secondo API.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non abbandonare il cursore aperto a seguito di un'eccezione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    },
+    {
+      "id": "si-c10-q195",
+      "topicId": "si-c10-t21",
+      "question": "[Esercizio autonomo 3] Come progettare una procedura di margine con due IN e un OUT?",
+      "answer": "Validare importi non negativi, calcolare ricavi meno costi e assegnare l'OUT; propagare errori di dominio.",
+      "detail": "Il manuale rinvia al Listato 10.9 Oracle come variante guida.",
+      "example": "calc_margine(p_ricavi IN, p_costi IN, p_margine OUT).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assorbire silenziosamente l'eccezione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    },
+    {
+      "id": "si-c10-q196",
+      "topicId": "si-c10-t21",
+      "question": "[Esercizio autonomo 4] Qual è la grana corretta per un fatto di costo acquisizione previsto?",
+      "answer": "Una riga per offerta, segmento, mese e scenario, con versione temporale definita.",
+      "detail": "Il costo è misura; nomi e categorie appartengono alle dimensioni.",
+      "example": "Acquisition cost per configurazione e periodo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mescolare per cliente e per offerta aggregata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    },
+    {
+      "id": "si-c10-q197",
+      "topicId": "si-c10-t21",
+      "question": "[Esercizio autonomo 5] Quanto vale il margine Base nei due mesi?",
+      "answer": "2.030 €, con ricavi 9.040 € e costi 7.010 €, pari a circa 22,46%.",
+      "detail": "La selezione riguarda tutte le righe dell'offerta Base.",
+      "example": "Quattro combinazioni Base, due mesi e due segmenti.",
+      "formulas": [
+        {
+          "latex": "9040-7010=2030",
+          "meaning": "Esercizio autonomo offerta Base"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non assumere Base sia una sola riga della tabella.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    },
+    {
+      "id": "si-c10-q198",
+      "topicId": "si-c10-t21",
+      "question": "[Esercizio autonomo 6] Quali tre controlli ETL sono indicati come soluzione?",
+      "answer": "Coerenza valuta/unità, unicità della chiave scenario-offerta-segmento-mese e validità delle versioni temporali.",
+      "detail": "Si possono aggiungere riconciliazione con sorgente e completezza dei campi.",
+      "example": "Impedire doppio caricamento di PMI–Base–Gen.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere la dimensione temporale dai controlli.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    },
+    {
+      "id": "si-c10-q199",
+      "topicId": "si-c10-t21",
+      "question": "[Autoverifica] Che cosa indica un result set?",
+      "answer": "L'insieme di righe e colonne restituito dall'esecuzione di un'interrogazione.",
+      "detail": "Una API o un cursore consente di consumarlo, verificando esiti e risorse.",
+      "example": "Lista delle offerte restituite da una SELECT parametrica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con una singola variabile host.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    },
+    {
+      "id": "si-c10-q200",
+      "topicId": "si-c10-t21",
+      "question": "[Autoverifica] Perché un binding non sostituisce il nome di una tabella?",
+      "answer": "Perché gli identificatori SQL sono componenti della struttura del comando, mentre il bind rappresenta un valore.",
+      "detail": "Servono nomi controllati per gli identificatori e binding per i dati.",
+      "example": "SELECT da tabelle consentite via allowlist.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concatenare nomi da input non verificato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    },
+    {
+      "id": "si-c10-q201",
+      "topicId": "si-c10-t21",
+      "question": "[Autoverifica] Quale responsabilità ha il chiamante della routine rispetto al COMMIT?",
+      "answer": "Conoscere e rispettare il confine della transazione di processo.",
+      "detail": "Il comportamento di commit delle routine deve essere progettato e documentato.",
+      "example": "Un servizio conserva rollback globale quando usa più comandi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che ogni procedura sia padrona della transazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    },
+    {
+      "id": "si-c10-q202",
+      "topicId": "si-c10-t21",
+      "question": "[Autoverifica] Quali tre proprietà rendono interpretabile un indicatore analitico?",
+      "answer": "Definizione della grana, rapporto fra numeratore e denominatore e riferimento temporale.",
+      "detail": "Per decisioni affidabili conta anche l'ultimo aggiornamento e la versione dei dati.",
+      "example": "Margine% per segmento e trimestre aggiornato ieri.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare una percentuale senza unità e periodo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    },
+    {
+      "id": "si-c10-q203",
+      "topicId": "si-c10-t21",
+      "question": "[Autoverifica] Come può una vista materializzata introdurre ritardo informativo?",
+      "answer": "Il risultato fisico resta quello dell'ultimo refresh anche se le tabelle origine sono cambiate.",
+      "detail": "La dashboard deve documentare freschezza e sincronizzazione del dato.",
+      "example": "Nuova simulazione inserita dopo il refresh, non ancora nel report.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non etichettare il contenuto come aggiornato live.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    },
+    {
+      "id": "si-c10-q204",
+      "topicId": "si-c10-t21",
+      "question": "[Autoverifica] Che differenza passa fra fatto e dimensione?",
+      "answer": "Il fatto rappresenta misura o evento a una grana; la dimensione descrive gli assi interpretativi.",
+      "detail": "La distinzione guida la progettazione dello schema a stella.",
+      "example": "Ricavi e costi come misure; periodo e segmento come dimensioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il margine percentuale come chiave di dimensione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    },
+    {
+      "id": "si-c10-q205",
+      "topicId": "si-c10-t21",
+      "question": "Quale successione concettuale collega il dato transazionale alla decisione?",
+      "answer": "Operazione OLTP, acquisizione e controlli qualità, fatti/dimensioni o viste, query aggregata e interpretazione del KPI.",
+      "detail": "Il processo restituisce senso alle misure, non solo una query tecnicamente valida.",
+      "example": "Scenario registrato, caricato nel data mart, margine per trimestre.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non passare direttamente da record grezzo a KPI senza definire grana e qualità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    },
+    {
+      "id": "si-c10-q206",
+      "topicId": "si-c10-t21",
+      "question": "Qual è la distinzione finale tra CLI, stored routine e OLAP?",
+      "answer": "La CLI è il mezzo di accesso; la routine colloca logica nel DBMS; OLAP descrive la finalità analitica del carico.",
+      "detail": "Sono assi progettuali differenti che possono comparire nella stessa architettura.",
+      "example": "PDO invoca una funzione e una dashboard mostra aggregati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare tutta l'applicazione come OLAP solo perché usa PDO.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 10, §10.21, pagine PDF 159–161"
+    }
+  ]
+}

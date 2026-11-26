@@ -1,0 +1,3420 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cyber",
+  "source": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5: Gli attacchi informatici, pagine PDF 63–84; unica fonte autorizzata.",
+  "chapter": {
+    "id": "cyber-c05",
+    "title": "Gli attacchi informatici — malware, SQL injection, XSS, DoS/DDoS e buffer overflow",
+    "order": 5,
+    "topics": [
+      {
+        "id": "cyber-c05-t01",
+        "title": "Attacco, incidente, vettori, exploit e catena causale"
+      },
+      {
+        "id": "cyber-c05-t02",
+        "title": "Malware: definizione e categorie delle slide"
+      },
+      {
+        "id": "cyber-c05-t03",
+        "title": "Ransomware, wiper, infostealer e vettori di infezione"
+      },
+      {
+        "id": "cyber-c05-t04",
+        "title": "Botnet, Command and Control e minacce di propagazione"
+      },
+      {
+        "id": "cyber-c05-t05",
+        "title": "Virus, worm, polimorfismo, metamorfismo e APT"
+      },
+      {
+        "id": "cyber-c05-t06",
+        "title": "Rilevamento malware: firme, euristiche, comportamenti, IOC ed EDR"
+      },
+      {
+        "id": "cyber-c05-t07",
+        "title": "Prevenzione e gestione degli incidenti malware"
+      },
+      {
+        "id": "cyber-c05-t08",
+        "title": "SQL injection: cause, esempi Java e stored procedure"
+      },
+      {
+        "id": "cyber-c05-t09",
+        "title": "SQL injection: superfici, tecniche, effetti e vincoli"
+      },
+      {
+        "id": "cyber-c05-t10",
+        "title": "SQL injection: query sicure, validazione, privilegi, audit e test"
+      },
+      {
+        "id": "cyber-c05-t11",
+        "title": "Cross-Site Scripting: principi, varianti, effetti e difese"
+      },
+      {
+        "id": "cyber-c05-t12",
+        "title": "Denial of Service: disponibilità, ICMP e UDP flood"
+      },
+      {
+        "id": "cyber-c05-t13",
+        "title": "DoS/DDoS: SYN, HTTP, Slowloris, SIP, riflessione e amplificazione"
+      },
+      {
+        "id": "cyber-c05-t14",
+        "title": "Difesa DoS/DDoS: upstream, monitoraggio, filtri e limitazioni"
+      },
+      {
+        "id": "cyber-c05-t15",
+        "title": "Buffer overflow: memoria, stack, heap ed errori di programmazione"
+      },
+      {
+        "id": "cyber-c05-t16",
+        "title": "Buffer overflow: bounds checking, canary, DEP, ASLR, CFI e test"
+      },
+      {
+        "id": "cyber-c05-t17",
+        "title": "Difesa in profondità e confronto tra famiglie di attacchi"
+      },
+      {
+        "id": "cyber-c05-t18",
+        "title": "Caso integrato: portale offerte, minacce e mitigazioni"
+      },
+      {
+        "id": "cyber-c05-t19",
+        "title": "Domande trasversali e ragionamento per il colloquio orale"
+      },
+      {
+        "id": "cyber-c05-t20",
+        "title": "Glossario e terminologia tecnica da ricordare"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§5.1 — pagina PDF 63",
+        "cardIds": [
+          "cyber-c05-q001",
+          "cyber-c05-q002",
+          "cyber-c05-q003",
+          "cyber-c05-q004",
+          "cyber-c05-q005"
+        ]
+      },
+      {
+        "label": "§5.1.1 — pagina PDF 63",
+        "cardIds": [
+          "cyber-c05-q006",
+          "cyber-c05-q007",
+          "cyber-c05-q008",
+          "cyber-c05-q009",
+          "cyber-c05-q010"
+        ]
+      },
+      {
+        "label": "§5.1.2 — pagina PDF 63",
+        "cardIds": [
+          "cyber-c05-q011"
+        ]
+      },
+      {
+        "label": "§5.1.2 — pagina PDF 64",
+        "cardIds": [
+          "cyber-c05-q012",
+          "cyber-c05-q013"
+        ]
+      },
+      {
+        "label": "§5.2 — pagina PDF 64",
+        "cardIds": [
+          "cyber-c05-q014",
+          "cyber-c05-q015",
+          "cyber-c05-q016"
+        ]
+      },
+      {
+        "label": "§5.2.1 — pagina PDF 64",
+        "cardIds": [
+          "cyber-c05-q017"
+        ]
+      },
+      {
+        "label": "§5.2.1 — pagina PDF 65",
+        "cardIds": [
+          "cyber-c05-q018",
+          "cyber-c05-q019",
+          "cyber-c05-q020",
+          "cyber-c05-q021",
+          "cyber-c05-q022",
+          "cyber-c05-q023",
+          "cyber-c05-q024",
+          "cyber-c05-q025",
+          "cyber-c05-q026",
+          "cyber-c05-q027",
+          "cyber-c05-q028",
+          "cyber-c05-q029",
+          "cyber-c05-q030",
+          "cyber-c05-q031",
+          "cyber-c05-q032"
+        ]
+      },
+      {
+        "label": "§5.2.2 — pagina PDF 65",
+        "cardIds": [
+          "cyber-c05-q033",
+          "cyber-c05-q034",
+          "cyber-c05-q035",
+          "cyber-c05-q036",
+          "cyber-c05-q037"
+        ]
+      },
+      {
+        "label": "§5.2.3 — pagina PDF 65",
+        "cardIds": [
+          "cyber-c05-q038",
+          "cyber-c05-q039",
+          "cyber-c05-q040"
+        ]
+      },
+      {
+        "label": "§5.2.4 — pagina PDF 66",
+        "cardIds": [
+          "cyber-c05-q041",
+          "cyber-c05-q042",
+          "cyber-c05-q043"
+        ]
+      },
+      {
+        "label": "§5.3.1 — pagina PDF 66",
+        "cardIds": [
+          "cyber-c05-q044",
+          "cyber-c05-q045",
+          "cyber-c05-q046"
+        ]
+      },
+      {
+        "label": "§5.3.2 — pagina PDF 66",
+        "cardIds": [
+          "cyber-c05-q047",
+          "cyber-c05-q048"
+        ]
+      },
+      {
+        "label": "§5.3.3 — pagina PDF 66",
+        "cardIds": [
+          "cyber-c05-q049",
+          "cyber-c05-q050"
+        ]
+      },
+      {
+        "label": "§5.3 — pagina PDF 67",
+        "cardIds": [
+          "cyber-c05-q051"
+        ]
+      },
+      {
+        "label": "§5.3.4 — pagina PDF 67",
+        "cardIds": [
+          "cyber-c05-q052",
+          "cyber-c05-q053"
+        ]
+      },
+      {
+        "label": "§5.4 — pagina PDF 67",
+        "cardIds": [
+          "cyber-c05-q054"
+        ]
+      },
+      {
+        "label": "§5.4.1 — pagina PDF 67",
+        "cardIds": [
+          "cyber-c05-q055",
+          "cyber-c05-q056",
+          "cyber-c05-q057",
+          "cyber-c05-q058",
+          "cyber-c05-q059"
+        ]
+      },
+      {
+        "label": "§5.4.2 — pagina PDF 68",
+        "cardIds": [
+          "cyber-c05-q060",
+          "cyber-c05-q061",
+          "cyber-c05-q062",
+          "cyber-c05-q063"
+        ]
+      },
+      {
+        "label": "§5.4.3 — pagina PDF 68",
+        "cardIds": [
+          "cyber-c05-q064",
+          "cyber-c05-q065",
+          "cyber-c05-q066"
+        ]
+      },
+      {
+        "label": "§5.5.1 — pagina PDF 68",
+        "cardIds": [
+          "cyber-c05-q067",
+          "cyber-c05-q068"
+        ]
+      },
+      {
+        "label": "§5.5.2 — pagina PDF 68",
+        "cardIds": [
+          "cyber-c05-q069"
+        ]
+      },
+      {
+        "label": "§5.5.3 — pagina PDF 68",
+        "cardIds": [
+          "cyber-c05-q070",
+          "cyber-c05-q071",
+          "cyber-c05-q072",
+          "cyber-c05-q073"
+        ]
+      },
+      {
+        "label": "§5.5.4 — pagina PDF 69",
+        "cardIds": [
+          "cyber-c05-q074",
+          "cyber-c05-q075",
+          "cyber-c05-q076"
+        ]
+      },
+      {
+        "label": "§5.6.1 — pagina PDF 69",
+        "cardIds": [
+          "cyber-c05-q077",
+          "cyber-c05-q078",
+          "cyber-c05-q079"
+        ]
+      },
+      {
+        "label": "§5.6.2 — pagina PDF 70",
+        "cardIds": [
+          "cyber-c05-q080",
+          "cyber-c05-q081",
+          "cyber-c05-q082"
+        ]
+      },
+      {
+        "label": "§5.6.3 — pagina PDF 70",
+        "cardIds": [
+          "cyber-c05-q083",
+          "cyber-c05-q084"
+        ]
+      },
+      {
+        "label": "§5.6.4 — pagina PDF 70",
+        "cardIds": [
+          "cyber-c05-q085",
+          "cyber-c05-q086"
+        ]
+      },
+      {
+        "label": "§5.6.5 — pagina PDF 70",
+        "cardIds": [
+          "cyber-c05-q087",
+          "cyber-c05-q088",
+          "cyber-c05-q089"
+        ]
+      },
+      {
+        "label": "§5.7.1 — pagina PDF 70",
+        "cardIds": [
+          "cyber-c05-q090"
+        ]
+      },
+      {
+        "label": "§5.7.1 — pagina PDF 71",
+        "cardIds": [
+          "cyber-c05-q091",
+          "cyber-c05-q092",
+          "cyber-c05-q093",
+          "cyber-c05-q094",
+          "cyber-c05-q095"
+        ]
+      },
+      {
+        "label": "§5.7.2 — pagina PDF 71",
+        "cardIds": [
+          "cyber-c05-q096",
+          "cyber-c05-q097",
+          "cyber-c05-q098",
+          "cyber-c05-q099",
+          "cyber-c05-q100"
+        ]
+      },
+      {
+        "label": "§5.7.3 — pagina PDF 71",
+        "cardIds": [
+          "cyber-c05-q101",
+          "cyber-c05-q102"
+        ]
+      },
+      {
+        "label": "§5.8 — pagina PDF 72",
+        "cardIds": [
+          "cyber-c05-q103"
+        ]
+      },
+      {
+        "label": "§5.8.1 — pagina PDF 72",
+        "cardIds": [
+          "cyber-c05-q104"
+        ]
+      },
+      {
+        "label": "§5.8.2 — pagina PDF 72",
+        "cardIds": [
+          "cyber-c05-q105",
+          "cyber-c05-q106",
+          "cyber-c05-q107"
+        ]
+      },
+      {
+        "label": "§5.8.3 — pagina PDF 72",
+        "cardIds": [
+          "cyber-c05-q108"
+        ]
+      },
+      {
+        "label": "§5.8.4 — pagina PDF 72",
+        "cardIds": [
+          "cyber-c05-q109",
+          "cyber-c05-q110"
+        ]
+      },
+      {
+        "label": "§5.8.5 — pagina PDF 72",
+        "cardIds": [
+          "cyber-c05-q111",
+          "cyber-c05-q112"
+        ]
+      },
+      {
+        "label": "§5.8.6 — pagina PDF 72",
+        "cardIds": [
+          "cyber-c05-q113"
+        ]
+      },
+      {
+        "label": "§5.8 — pagina PDF 73",
+        "cardIds": [
+          "cyber-c05-q114"
+        ]
+      },
+      {
+        "label": "§5.9.1 — pagina PDF 73",
+        "cardIds": [
+          "cyber-c05-q115",
+          "cyber-c05-q116",
+          "cyber-c05-q117",
+          "cyber-c05-q118"
+        ]
+      },
+      {
+        "label": "§5.9.2 — pagina PDF 73",
+        "cardIds": [
+          "cyber-c05-q119",
+          "cyber-c05-q120",
+          "cyber-c05-q121",
+          "cyber-c05-q122"
+        ]
+      },
+      {
+        "label": "§5.9.3 — pagina PDF 73",
+        "cardIds": [
+          "cyber-c05-q123"
+        ]
+      },
+      {
+        "label": "§5.9.3 — pagina PDF 74",
+        "cardIds": [
+          "cyber-c05-q124",
+          "cyber-c05-q125"
+        ]
+      },
+      {
+        "label": "§5.9.4 — pagina PDF 74",
+        "cardIds": [
+          "cyber-c05-q126",
+          "cyber-c05-q127",
+          "cyber-c05-q128",
+          "cyber-c05-q129",
+          "cyber-c05-q130"
+        ]
+      },
+      {
+        "label": "§5.9.5 — pagina PDF 74",
+        "cardIds": [
+          "cyber-c05-q131",
+          "cyber-c05-q132"
+        ]
+      },
+      {
+        "label": "§5.9.6 — pagina PDF 74",
+        "cardIds": [
+          "cyber-c05-q133"
+        ]
+      },
+      {
+        "label": "§5.10.1 — pagina PDF 75",
+        "cardIds": [
+          "cyber-c05-q134",
+          "cyber-c05-q135",
+          "cyber-c05-q136"
+        ]
+      },
+      {
+        "label": "§5.10.2 — pagina PDF 75",
+        "cardIds": [
+          "cyber-c05-q137",
+          "cyber-c05-q138"
+        ]
+      },
+      {
+        "label": "§5.10.3 — pagina PDF 75",
+        "cardIds": [
+          "cyber-c05-q139",
+          "cyber-c05-q140"
+        ]
+      },
+      {
+        "label": "§5.10.4 — pagina PDF 75",
+        "cardIds": [
+          "cyber-c05-q141",
+          "cyber-c05-q142"
+        ]
+      },
+      {
+        "label": "§5.10.5 — pagina PDF 76",
+        "cardIds": [
+          "cyber-c05-q143",
+          "cyber-c05-q144",
+          "cyber-c05-q145",
+          "cyber-c05-q146"
+        ]
+      },
+      {
+        "label": "§5.10.6 — pagina PDF 76",
+        "cardIds": [
+          "cyber-c05-q147",
+          "cyber-c05-q148"
+        ]
+      },
+      {
+        "label": "§5.10.7 — pagina PDF 76",
+        "cardIds": [
+          "cyber-c05-q149",
+          "cyber-c05-q150"
+        ]
+      },
+      {
+        "label": "§5.10.8 — pagina PDF 76",
+        "cardIds": [
+          "cyber-c05-q151"
+        ]
+      },
+      {
+        "label": "§5.10.8 — pagina PDF 77",
+        "cardIds": [
+          "cyber-c05-q152"
+        ]
+      },
+      {
+        "label": "§5.10.9 — pagina PDF 77",
+        "cardIds": [
+          "cyber-c05-q153",
+          "cyber-c05-q154",
+          "cyber-c05-q155"
+        ]
+      },
+      {
+        "label": "§5.11.1 — pagina PDF 77",
+        "cardIds": [
+          "cyber-c05-q156",
+          "cyber-c05-q157",
+          "cyber-c05-q158"
+        ]
+      },
+      {
+        "label": "§5.11.2 — pagina PDF 77",
+        "cardIds": [
+          "cyber-c05-q159",
+          "cyber-c05-q160"
+        ]
+      },
+      {
+        "label": "§5.11.3 — pagina PDF 77",
+        "cardIds": [
+          "cyber-c05-q161",
+          "cyber-c05-q162"
+        ]
+      },
+      {
+        "label": "§5.11.4 — pagina PDF 77",
+        "cardIds": [
+          "cyber-c05-q163"
+        ]
+      },
+      {
+        "label": "§5.11.5 — pagina PDF 78",
+        "cardIds": [
+          "cyber-c05-q164",
+          "cyber-c05-q165",
+          "cyber-c05-q166"
+        ]
+      },
+      {
+        "label": "§5.12.1 — pagina PDF 78",
+        "cardIds": [
+          "cyber-c05-q167",
+          "cyber-c05-q168",
+          "cyber-c05-q169"
+        ]
+      },
+      {
+        "label": "§5.12.2 — pagina PDF 78",
+        "cardIds": [
+          "cyber-c05-q170",
+          "cyber-c05-q171"
+        ]
+      },
+      {
+        "label": "§5.12.3 — pagina PDF 78",
+        "cardIds": [
+          "cyber-c05-q172",
+          "cyber-c05-q173",
+          "cyber-c05-q174"
+        ]
+      },
+      {
+        "label": "§5.12.4 — pagina PDF 79",
+        "cardIds": [
+          "cyber-c05-q175",
+          "cyber-c05-q176"
+        ]
+      },
+      {
+        "label": "§5.12.5 — pagina PDF 79",
+        "cardIds": [
+          "cyber-c05-q177",
+          "cyber-c05-q178"
+        ]
+      },
+      {
+        "label": "§5.13.1 — pagina PDF 79",
+        "cardIds": [
+          "cyber-c05-q179"
+        ]
+      },
+      {
+        "label": "§5.13.2 — pagina PDF 79",
+        "cardIds": [
+          "cyber-c05-q180"
+        ]
+      },
+      {
+        "label": "§5.13.3 — pagina PDF 79",
+        "cardIds": [
+          "cyber-c05-q181"
+        ]
+      },
+      {
+        "label": "§5.13.4 — pagina PDF 79",
+        "cardIds": [
+          "cyber-c05-q182",
+          "cyber-c05-q183"
+        ]
+      },
+      {
+        "label": "§5.13.5 — pagina PDF 80",
+        "cardIds": [
+          "cyber-c05-q184",
+          "cyber-c05-q185",
+          "cyber-c05-q186"
+        ]
+      },
+      {
+        "label": "§5.13.6 — pagina PDF 80",
+        "cardIds": [
+          "cyber-c05-q187",
+          "cyber-c05-q188"
+        ]
+      },
+      {
+        "label": "§5.14 — pagina PDF 80",
+        "cardIds": [
+          "cyber-c05-q189"
+        ]
+      },
+      {
+        "label": "§5.14.1 — pagina PDF 80",
+        "cardIds": [
+          "cyber-c05-q190",
+          "cyber-c05-q191",
+          "cyber-c05-q192"
+        ]
+      },
+      {
+        "label": "§5.14.2 — pagina PDF 80",
+        "cardIds": [
+          "cyber-c05-q193"
+        ]
+      },
+      {
+        "label": "§5.14.2 — pagina PDF 81",
+        "cardIds": [
+          "cyber-c05-q194"
+        ]
+      },
+      {
+        "label": "§5.15.1 — pagina PDF 81",
+        "cardIds": [
+          "cyber-c05-q195",
+          "cyber-c05-q196"
+        ]
+      },
+      {
+        "label": "§5.15.2 — pagina PDF 81",
+        "cardIds": [
+          "cyber-c05-q197"
+        ]
+      },
+      {
+        "label": "§5.15.3 — pagina PDF 81",
+        "cardIds": [
+          "cyber-c05-q198"
+        ]
+      },
+      {
+        "label": "§5.15.4 — pagina PDF 81",
+        "cardIds": [
+          "cyber-c05-q199"
+        ]
+      },
+      {
+        "label": "§5.15.5 — pagina PDF 81",
+        "cardIds": [
+          "cyber-c05-q200"
+        ]
+      },
+      {
+        "label": "§5.15.6 — pagina PDF 82",
+        "cardIds": [
+          "cyber-c05-q201",
+          "cyber-c05-q202"
+        ]
+      },
+      {
+        "label": "§5.16 — pagina PDF 82",
+        "cardIds": [
+          "cyber-c05-q203",
+          "cyber-c05-q204",
+          "cyber-c05-q205",
+          "cyber-c05-q206",
+          "cyber-c05-q207"
+        ]
+      },
+      {
+        "label": "§5.16 — pagina PDF 83",
+        "cardIds": [
+          "cyber-c05-q208",
+          "cyber-c05-q209",
+          "cyber-c05-q210",
+          "cyber-c05-q211"
+        ]
+      },
+      {
+        "label": "§5.16 — pagina PDF 84",
+        "cardIds": [
+          "cyber-c05-q212",
+          "cyber-c05-q213",
+          "cyber-c05-q214"
+        ]
+      },
+      {
+        "label": "§5.17 — pagina PDF 84",
+        "cardIds": [
+          "cyber-c05-q215",
+          "cyber-c05-q216",
+          "cyber-c05-q217",
+          "cyber-c05-q218",
+          "cyber-c05-q219",
+          "cyber-c05-q220",
+          "cyber-c05-q221"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cyber-c05-q001",
+      "topicId": "cyber-c05-t01",
+      "question": "Che cos’è un attacco informatico?",
+      "answer": "È un’azione intenzionale volta a compromettere proprietà di sicurezza di dati, sistemi, reti o servizi.",
+      "detail": "Può minacciare riservatezza, integrità, disponibilità, autenticità e accountability, sfruttando vulnerabilità software, configurazioni, credenziali o comportamenti umani.",
+      "example": "Sottrarre dati tramite credenziali rubate o rendere indisponibile un servizio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare attacco qualsiasi guasto accidentale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.1, pagina PDF 63"
+    },
+    {
+      "id": "cyber-c05-q002",
+      "topicId": "cyber-c05-t01",
+      "question": "Come si distinguono asset, vulnerabilità, minaccia, attacco e incidente?",
+      "answer": "Asset è ciò che ha valore; vulnerabilità è una debolezza; minaccia è una causa potenziale di danno; attacco è il tentativo concreto; incidente è un evento rilevante per la sicurezza secondo il contesto.",
+      "detail": "Un tentativo può fallire e non causare danni; un incidente può nascere anche da errore o guasto non intenzionale. I cinque termini descrivono livelli distinti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 1: rischio e asset"
+      ],
+      "mistakes": "Non dire che attacco e incidente sono sempre sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.1, pagina PDF 63"
+    },
+    {
+      "id": "cyber-c05-q003",
+      "topicId": "cyber-c05-t01",
+      "question": "Quali cinque proprietà della sicurezza possono essere colpite da un attacco?",
+      "answer": "Riservatezza, integrità, disponibilità, autenticità e accountability.",
+      "detail": "Furto dati colpisce riservatezza; alterazione di prezzi integrità; DDoS disponibilità; impersonificazione autenticità; cancellazione dei log accountability.",
+      "example": "Un attacco che modifica offerte economiche può incidere sia sull’integrità sia sulle decisioni aziendali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre la cybersecurity alla sola riservatezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.1, pagina PDF 63"
+    },
+    {
+      "id": "cyber-c05-q004",
+      "topicId": "cyber-c05-t01",
+      "question": "Quali domande guidano l’analisi tecnica e manageriale di un attacco?",
+      "answer": "Quale proprietà viene colpita, quale debolezza è sfruttata, quale punto d’ingresso è usato, quali azioni sono eseguite e quali conseguenze derivano?",
+      "detail": "Il metodo del capitolo collega tecnica di attacco, asset e impatto e permette di selezionare controlli e motivare le priorità di rischio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non iniziare e finire l’analisi col nome dello strumento impiegato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.1, pagina PDF 63"
+    },
+    {
+      "id": "cyber-c05-q005",
+      "topicId": "cyber-c05-t01",
+      "question": "Perché non ogni tentativo informatico ostile coincide con un incidente riuscito?",
+      "answer": "Perché il tentativo può essere respinto o fallire; l’incidente richiede una valutazione dell’evento e dei suoi effetti secondo le regole dell’organizzazione.",
+      "detail": "In senso ampio anche un evento che può compromettere il funzionamento può essere gestito come incidente, e un incidente può essere causato da un errore senza attaccante.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere intenzionalità dell’attacco con successo tecnico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.1, pagina PDF 63"
+    },
+    {
+      "id": "cyber-c05-q006",
+      "topicId": "cyber-c05-t01",
+      "question": "Che cos’è il vettore d’attacco?",
+      "answer": "È il percorso o la modalità attraverso cui l’attaccante raggiunge un sistema o una risorsa.",
+      "detail": "Esempi: e-mail ingannevole, allegato, file, API, servizio esposto, accesso fisico. È il canale d’ingresso, non necessariamente il codice malevolo che verrà eseguito.",
+      "example": "Un allegato ricevuto tramite phishing costituisce un possibile vettore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere vettore con payload.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.1.1, pagina PDF 63"
+    },
+    {
+      "id": "cyber-c05-q007",
+      "topicId": "cyber-c05-t01",
+      "question": "Che cos’è un exploit?",
+      "answer": "È il codice, la procedura o la tecnica che sfrutta una vulnerabilità.",
+      "detail": "L’exploit può servire a ottenere esecuzione, privilegi o accesso sfruttando una debolezza; non coincide necessariamente con il malware né con il vettore utilizzato per arrivare al bersaglio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare exploit ogni contenuto maligno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.1.1, pagina PDF 63"
+    },
+    {
+      "id": "cyber-c05-q008",
+      "topicId": "cyber-c05-t01",
+      "question": "Che cos’è il payload in un attacco?",
+      "answer": "È il componente o l’azione che produce l’effetto desiderato dall’attaccante.",
+      "detail": "Può sottrarre dati, cifrare file o eseguire altre attività. Un attacco può combinare vettore, exploit e payload in fasi differenti.",
+      "example": "Un componente che esfiltra credenziali è un payload possibile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare il payload con la via d’ingresso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.1.1, pagina PDF 63"
+    },
+    {
+      "id": "cyber-c05-q009",
+      "topicId": "cyber-c05-t01",
+      "question": "Che cos’è la superficie d’attacco e perché conta?",
+      "answer": "È l’insieme dei punti di esposizione potenzialmente sfruttabili da un avversario.",
+      "detail": "Può comprendere porte e servizi, interfacce API, software, dispositivi, utenti e meccanismi di accesso. Ridurre l’esposizione semplifica il controllo ma non elimina da sola ogni rischio.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 1: superficie d’attacco"
+      ],
+      "mistakes": "Non limitarla ai soli indirizzi IP pubblici.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.1.1, pagina PDF 63"
+    },
+    {
+      "id": "cyber-c05-q010",
+      "topicId": "cyber-c05-t01",
+      "question": "Ricostruisci vettore, exploit e payload in un esempio di phishing.",
+      "answer": "Il phishing è il vettore; un eventuale difetto software sfruttato è l’exploit; la componente che sottrae dati o cifra file è il payload.",
+      "detail": "L’allegato può essere un contenitore o un mezzo di avvio; non tutte le infezioni richiedono un exploit di bug e non tutte le fasi si presentano in ogni attacco.",
+      "example": "Mail ingannevole → apertura allegato → avvio codice → esfiltrazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Evitare di presentare ogni catena come obbligatoria.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.1.1, pagina PDF 63"
+    },
+    {
+      "id": "cyber-c05-q011",
+      "topicId": "cyber-c05-t01",
+      "question": "Qual è la catena causale proposta per studiare un attacco?",
+      "answer": "Punto d’ingresso → debolezza sfruttata → tecnica/payload → impatto sull’asset.",
+      "detail": "La catena è un quadro di analisi: gravità e rischio richiedono valutare il contesto, il valore degli asset e le difese attive, non solo descrivere la sequenza tecnica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una descrizione tecnica non è automaticamente una stima del rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.1.2, pagina PDF 63"
+    },
+    {
+      "id": "cyber-c05-q012",
+      "topicId": "cyber-c05-t01",
+      "question": "Che cos’è MITRE ATT&CK nel manuale e come va interpretato?",
+      "answer": "È un framework di tecniche e obiettivi tattici osservati in attacchi reali.",
+      "detail": "Richiama accesso iniziale, esecuzione, persistenza, movimento laterale, raccolta ed esfiltrazione. È un’integrazione dichiarata dal manuale e non una sequenza unica o fissa né una tassonomia attribuita alle slide.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rappresentarlo come un diagramma di fasi obbligatorie.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.1.2, pagina PDF 64"
+    },
+    {
+      "id": "cyber-c05-q013",
+      "topicId": "cyber-c05-t01",
+      "question": "Perché la medesima tecnica d’attacco può avere un rischio diverso in due imprese?",
+      "answer": "Perché il rischio dipende anche da asset, esposizione, controlli attivi e gravità delle conseguenze.",
+      "detail": "Un attacco alla disponibilità durante una scadenza operativa può essere economicamente più grave di uno contro un servizio non critico; occorre stimare probabilità e impatto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre il livello di rischio dal solo nome dell’attacco.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.1.2, pagina PDF 64"
+    },
+    {
+      "id": "cyber-c05-q014",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cos’è un malware?",
+      "answer": "È software progettato per svolgere attività malevole, dannose o non autorizzate.",
+      "detail": "Può rubare informazioni, alterare dati, spiare, rendere indisponibile un servizio, aprire accessi o installare altri componenti. Il termine malicious software è una categoria generale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che ogni malware deve replicarsi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2, pagina PDF 64"
+    },
+    {
+      "id": "cyber-c05-q015",
+      "topicId": "cyber-c05-t02",
+      "question": "Perché le categorie malware del manuale non si escludono reciprocamente?",
+      "answer": "Perché descrivono dimensioni diverse: propagazione, funzione, occultamento, ingresso e strumenti.",
+      "detail": "Un unico campione può essere un trojan per l’ingresso, un downloader per la funzione iniziale e uno spyware per l’obiettivo. Altre etichette possono identificare strumenti non necessariamente malware.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pretendere che ciascun file appartenga a una sola categoria.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2, pagina PDF 64"
+    },
+    {
+      "id": "cyber-c05-q016",
+      "topicId": "cyber-c05-t02",
+      "question": "Perché non è corretto affermare che ogni malware rubi dati o debba essere avviato volontariamente?",
+      "answer": "Perché i payload possono avere obiettivi diversi e la compromissione può avvenire anche tramite servizi vulnerabili o processi automatici.",
+      "detail": "Molti malware mirano a interrompere il servizio, nascondere accessi o diffondersi; visibilità e intervento dell’utente variano in base al caso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assimilare malware, spyware e phishing.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2, pagina PDF 64"
+    },
+    {
+      "id": "cyber-c05-q017",
+      "topicId": "cyber-c05-t02",
+      "question": "Quale criterio bisogna usare per interpretare l’elenco storico dei malware del docente?",
+      "answer": "Distinguere strumenti, vettori, modalità di propagazione, meccanismi di occultamento e obiettivi malevoli.",
+      "detail": "Le slide 63–65 riportano termini di epoche e funzioni differenti. La tabella del manuale li conserva, precisando che l’etichetta non determina da sola il comportamento di un campione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare drive-by download come virus, né exploit come payload per definizione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 64"
+    },
+    {
+      "id": "cyber-c05-q018",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cosa indica il termine adware?",
+      "answer": "Software che mostra pubblicità o modifica l’esperienza di navigazione.",
+      "detail": "Non tutto l’adware è necessariamente malevolo: occorre valutare consenso, comportamento effettivo ed eventuali azioni indesiderate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare automaticamente ogni software pubblicitario come malware.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q019",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cosa sono exploit kit e attack kit?",
+      "answer": "Insiemi di strumenti che facilitano l’esecuzione di attacchi o la consegna di componenti malevoli.",
+      "detail": "Sono strumenti o raccolte di capacità operative; non costituiscono necessariamente un tipo di malware autoreplicante.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un kit con il codice malevolo effettivamente installato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q020",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cosa si intende per auto-rooter?",
+      "answer": "Uno strumento storico di automazione della compromissione e dell’ottenimento di privilegi elevati.",
+      "detail": "Il manuale collega oggi il termine a tecniche più generali di privilege escalation e automazione delle attività offensive.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con rootkit.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q021",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cos’è una backdoor?",
+      "answer": "Un meccanismo che consente accesso eludendo i normali controlli di sicurezza.",
+      "detail": "Può essere introdotta da malware o da modifiche malevole del software; può sopravvivere al primo accesso e mantenere una via di ingresso persistente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificarla con ogni account amministrativo lecito.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q022",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cos’è un downloader malevolo?",
+      "answer": "Un componente che, dopo essere stato avviato, scarica ulteriori file o programmi.",
+      "detail": "Spesso costituisce un primo stadio di compromissione: l’effetto principale può essere provocato da moduli installati in seguito.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire al downloader necessariamente il payload finale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q023",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cos’è un drive-by download?",
+      "answer": "Un download o un’attivazione di software associati alla visita di un sito malevolo o compromesso.",
+      "detail": "Descrive una modalità di ingresso o distribuzione, non una classe autonoma di virus. La necessità di interazione dell’utente dipende dal caso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il termine come sinonimo di worm.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q024",
+      "topicId": "cyber-c05-t02",
+      "question": "Qual è la funzione di un flooder?",
+      "answer": "Generare grandi quantità di traffico o richieste, anche per provocare indisponibilità.",
+      "detail": "Il suo ruolo prevalente è sostenere attacchi di saturazione, che nel capitolo sono approfonditi nelle sezioni DoS/DDoS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con un malware che cifra i file.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q025",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cosa fa un keylogger?",
+      "answer": "Registra input da tastiera, potenzialmente per sottrarre credenziali e altri dati.",
+      "detail": "Può essere software o dispositivo fisico. Esistono anche impieghi controllati leciti, quindi contesto e autorizzazione sono importanti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che sia sempre soltanto software.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q026",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cos’è una logic bomb?",
+      "answer": "Codice la cui attivazione dipende da una condizione, una data o un evento.",
+      "detail": "L’effetto malevolo può rimanere inattivo fino al verificarsi del trigger; la definizione riguarda il meccanismo di attivazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderla con un worm autoreplicante.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q027",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cosa caratterizza un macro virus?",
+      "answer": "L’uso di macro presenti in documenti come veicolo di codice malevolo.",
+      "detail": "L’esecuzione dipende dai percorsi e dalle policy delle macro: aprire il documento non equivale sempre a eseguirne il codice.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che ogni documento con macro è infetto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q028",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cos’è un rootkit?",
+      "answer": "Un insieme di tecniche o componenti per occultare presenza o attività di software malevolo.",
+      "detail": "Può agire in user mode, a livello kernel o in contesti più profondi. È definito dall’occultamento e dal controllo, non dalla replicazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere rootkit con auto-rooter o con virus.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q029",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cosa si intende per spammer?",
+      "answer": "Software o infrastruttura impiegata per inviare massivamente messaggi indesiderati.",
+      "detail": "Il termine descrive soprattutto un’attività abusiva: un bot compromesso può operare come spammer all’interno di una botnet.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensarlo come una tecnica di cifratura o di occultamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q030",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cos’è uno spyware?",
+      "answer": "Software che acquisisce informazioni e osserva attività senza adeguata autorizzazione.",
+      "detail": "Può raccogliere schermate, file, informazioni browser e rete; descrive il fine di sorveglianza o raccolta, non la via di diffusione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assimilare ogni spyware a un virus autoreplicante.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q031",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cos’è un trojan?",
+      "answer": "Un software che si presenta come legittimo o utile per indurre l’utente a eseguirlo o installarlo.",
+      "detail": "La denominazione riguarda l’inganno nella presentazione. Non è necessaria la capacità di autoreplicarsi, a differenza dei criteri tipici dei virus o dei worm.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che il trojan si propaga sempre da solo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q032",
+      "topicId": "cyber-c05-t02",
+      "question": "Che cosa indica il termine zombie/bot?",
+      "answer": "Un dispositivo o componente compromesso che può ricevere istruzioni da remoto.",
+      "detail": "Più bot controllati in modo coordinato costituiscono una botnet; le attività possono variare da spam a DDoS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare il singolo bot con l’intera botnet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.1, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q033",
+      "topicId": "cyber-c05-t03",
+      "question": "Che cos’è il ransomware?",
+      "answer": "Un malware che limita l’accesso a dati o sistemi, spesso tramite cifratura, per esercitare pressione economica.",
+      "detail": "Alcune campagne combinano cifratura, sottrazione di dati e minacce di pubblicazione. Il backup favorisce il recupero ma non impedisce divulgazioni di informazioni già esfiltrate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che un buon backup elimina tutto il rischio ransomware.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.2, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q034",
+      "topicId": "cyber-c05-t03",
+      "question": "Qual è la differenza fondamentale tra ransomware e wiper?",
+      "answer": "Il ransomware limita l’accesso, spesso con finalità estorsive; il wiper mira alla cancellazione o distruzione dei dati.",
+      "detail": "Il primo può includere esfiltrazione e ricatto, il secondo persegue primariamente distruzione. Entrambi possono minacciare disponibilità e integrità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non parlare di riscattabilità come proprietà del wiper.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.2, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q035",
+      "topicId": "cyber-c05-t03",
+      "question": "Che cos’è un infostealer?",
+      "answer": "Un malware il cui obiettivo principale è sottrarre credenziali, token o informazioni.",
+      "detail": "Descrive la finalità di furto e può coesistere con altre classificazioni, ad esempio un trojan che installa componenti per raccogliere dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificarlo automaticamente come ransomware.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.2, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q036",
+      "topicId": "cyber-c05-t03",
+      "question": "Che cosa significa malware fileless?",
+      "answer": "Componenti che possono operare prevalentemente in memoria e sfruttare strumenti legittimi del sistema, lasciando meno artefatti tradizionali.",
+      "detail": "Non significa assenza assoluta di evidenze; eventi, processi, persistenza e comunicazioni possono ancora essere monitorati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che sia irrintracciabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.2, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q037",
+      "topicId": "cyber-c05-t03",
+      "question": "In che cosa differiscono phishing, macro, exploit e ransomware?",
+      "answer": "Phishing è ingegneria sociale/vettore; macro è un meccanismo di esecuzione; exploit sfrutta una vulnerabilità; ransomware descrive un comportamento malevolo.",
+      "detail": "La distinzione aiuta a descrivere separatamente ingresso, esecuzione, sfruttamento e risultato dell’attacco.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamarli quattro nomi per lo stesso malware.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.2, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q038",
+      "topicId": "cyber-c05-t03",
+      "question": "Quali sono i principali canali di ingresso di un malware citati nel manuale?",
+      "answer": "Allegati e link ingannevoli, siti compromessi, software alterato, supporti rimovibili, dipendenze compromesse, servizi vulnerabili e credenziali rubate.",
+      "detail": "Alcuni richiedono interazione dell’utente, altri sfruttano configurazioni o vulnerabilità. La valutazione dei canali guida la scelta dei controlli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre tutto alle e-mail.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.3, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q039",
+      "topicId": "cyber-c05-t03",
+      "question": "Quali fasi può comprendere una tipica catena di infezione malware?",
+      "answer": "Esecuzione iniziale, raccolta informazioni, download moduli, escalation privilegi, comunicazioni esterne ed esecuzione dell’obiettivo.",
+      "detail": "È un modello illustrativo, non una sequenza invariabile. È importante riconoscere anche persistenti task o servizi e possibili spostamenti tra sistemi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre tutte le fasi a ogni campione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.3, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q040",
+      "topicId": "cyber-c05-t03",
+      "question": "Quali evidenze difensive aiutano a ricostruire un’infezione?",
+      "answer": "Login, nuovi processi, modifiche a servizi/task, accessi a file anomali, comunicazioni inattese e variazioni del comportamento degli utenti.",
+      "detail": "L’analista correla segnali provenienti da host, rete e identità; una singola osservazione può non essere sufficiente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare un solo processo sospetto come prova definitiva.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.3, pagina PDF 65"
+    },
+    {
+      "id": "cyber-c05-q041",
+      "topicId": "cyber-c05-t04",
+      "question": "Che cos’è una botnet?",
+      "answer": "Una rete di dispositivi compromessi che possono svolgere azioni coordinate sotto controllo esterno.",
+      "detail": "Può essere usata per DDoS, spam, diffusione di malware o furto di credenziali; il controllore viene spesso chiamato botmaster.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il bot singolo con la botnet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.4, pagina PDF 66"
+    },
+    {
+      "id": "cyber-c05-q042",
+      "topicId": "cyber-c05-t04",
+      "question": "Che cosa significa Command and Control (C2)?",
+      "answer": "È il meccanismo con cui l’avversario comunica con dispositivi compromessi e impartisce istruzioni.",
+      "detail": "Comunicazioni periodiche, domini sospetti e trasferimenti anomali possono fornire indizi di C2, da correlare ad altre osservazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che una connessione periodica sia per forza C2.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.4, pagina PDF 66"
+    },
+    {
+      "id": "cyber-c05-q043",
+      "topicId": "cyber-c05-t04",
+      "question": "Perché osservare il traffico di rete può aiutare a rilevare una botnet?",
+      "answer": "Perché i bot devono spesso comunicare o produrre traffico coordinato, generando pattern e anomalie osservabili.",
+      "detail": "Le evidenze di dominio, frequenza delle connessioni, processi originanti e flussi anomali vanno considerate nel loro contesto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non prendere un dominio sospetto isolato come attribuzione certa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.2.4, pagina PDF 66"
+    },
+    {
+      "id": "cyber-c05-q044",
+      "topicId": "cyber-c05-t05",
+      "question": "Che cos’è un virus informatico?",
+      "answer": "Un malware che si riproduce infettando file, documenti o altri componenti ospiti destinati a essere eseguiti.",
+      "detail": "Richiede generalmente l’esecuzione o il trasferimento dell’elemento infetto. Può contenere una routine di replicazione e un payload malevolo, ma il danno distruttivo non è condizione necessaria.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equipararlo a qualsiasi file malevolo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.3.1, pagina PDF 66"
+    },
+    {
+      "id": "cyber-c05-q045",
+      "topicId": "cyber-c05-t05",
+      "question": "Qual è la differenza tra routine di replicazione e payload di un virus?",
+      "answer": "La routine di replicazione diffonde l’infezione; il payload realizza un’azione malevola ulteriore.",
+      "detail": "La capacità di infettare un ospite identifica il virus, mentre il payload può variare e non deve necessariamente essere distruttivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire il virus solo dal danno che procura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.3.1, pagina PDF 66"
+    },
+    {
+      "id": "cyber-c05-q046",
+      "topicId": "cyber-c05-t05",
+      "question": "Che cos’è un’infezione del boot sector secondo il manuale?",
+      "answer": "Un’infezione che interessa componenti coinvolti nella fase di avvio del sistema.",
+      "detail": "È un caso storico di diffusione dei virus; la soluzione non consiste sempre e automaticamente nel formattare il dispositivo: servono verifiche e ripristino attendibile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che una formattazione sia sempre l’unica risposta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.3.1, pagina PDF 66"
+    },
+    {
+      "id": "cyber-c05-q047",
+      "topicId": "cyber-c05-t05",
+      "question": "Qual è la differenza fra virus polimorfico e metamorfico?",
+      "answer": "Il polimorfico cambia aspetto o rappresentazione mantenendo la funzione; il metamorfico riscrive più profondamente la struttura del codice.",
+      "detail": "Entrambi possono rendere inefficaci impronte statiche esatte. La rilevazione può beneficiare di euristiche, analisi del comportamento e correlazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire entrambi soltanto come virus che mutano senza distinguerli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.3.2, pagina PDF 66"
+    },
+    {
+      "id": "cyber-c05-q048",
+      "topicId": "cyber-c05-t05",
+      "question": "Perché le firme statiche hanno limiti con i virus polimorfici e metamorfici?",
+      "answer": "Perché il file può variare nella rappresentazione in byte pur svolgendo una funzione malevola simile.",
+      "detail": "Una firma esatta può non corrispondere alla variante; occorre associare firme, euristiche e osservazione delle azioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare inutili tutte le firme: restano utili contro varianti note.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.3.2, pagina PDF 66"
+    },
+    {
+      "id": "cyber-c05-q049",
+      "topicId": "cyber-c05-t05",
+      "question": "Che cos’è un worm?",
+      "answer": "Un malware capace di propagarsi autonomamente tra sistemi, senza dover necessariamente infettare file ospiti.",
+      "detail": "Può sfruttare servizi raggiungibili, vulnerabilità o meccanismi di trasporto; si distingue dal virus per la modalità di propagazione, non per la gravità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che ogni worm deve allegarsi a un documento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.3.3, pagina PDF 66"
+    },
+    {
+      "id": "cyber-c05-q050",
+      "topicId": "cyber-c05-t05",
+      "question": "Quali quattro strategie di scelta dei bersagli di un worm cita il docente?",
+      "answer": "Indirizzi IP casuali, hit list predeterminata, ricostruzione della topologia e scansione della sottorete locale.",
+      "detail": "Sono modalità possibili di individuazione di nuovi obiettivi, non passaggi eseguiti inevitabilmente da ogni worm.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare una lista fissa come algoritmo universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.3.3, pagina PDF 66"
+    },
+    {
+      "id": "cyber-c05-q051",
+      "topicId": "cyber-c05-t05",
+      "question": "Come si confrontano virus e worm su ospite, propagazione e difesa?",
+      "answer": "Virus: infetta componenti ospiti; worm: può propagarsi autonomamente tramite rete. Le difese sono complementari ma con priorità diverse.",
+      "detail": "Per i virus contano esecuzione sicura, scansioni e patch; per worm sono particolarmente importanti segmentazione, controllo dei servizi esposti e patching.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare l’intensità del danno per distinguere le famiglie.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.3, pagina PDF 67"
+    },
+    {
+      "id": "cyber-c05-q052",
+      "topicId": "cyber-c05-t05",
+      "question": "Che cos’è una APT (Advanced Persistent Threat)?",
+      "answer": "Un avversario o una campagna con capacità e obiettivi prolungati, non un singolo file malware.",
+      "detail": "Advanced richiama tecniche combinate, persistent la permanenza dell’obiettivo/accesso, threat la presenza di un attore capace e intenzionato. Può utilizzare strumenti legittimi, credenziali e malware.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ripetere senza precisazioni la semplificazione della slide «malware persistente».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.3.4, pagina PDF 67"
+    },
+    {
+      "id": "cyber-c05-q053",
+      "topicId": "cyber-c05-t05",
+      "question": "Quali evidenze possono suggerire attività di una minaccia persistente?",
+      "answer": "Eventi correlati nel tempo, accessi anomali, uso inconsueto delle identità, movimenti nella rete e persistenza di componenti o privilegi.",
+      "detail": "Un singolo malware o un episodio prolungato non dimostrano da soli l’esistenza di una campagna APT. La correlazione fra host, rete, log e identità è essenziale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente un’APT sulla base di un solo indicatore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.3.4, pagina PDF 67"
+    },
+    {
+      "id": "cyber-c05-q054",
+      "topicId": "cyber-c05-t06",
+      "question": "Perché prevenzione e rilevazione del malware sono entrambe necessarie?",
+      "answer": "La prevenzione tenta di impedire la compromissione; la rilevazione cerca di scoprirla quando supera le difese iniziali.",
+      "detail": "Sono funzioni complementari e vanno affiancate da risposta e recupero; nessuna configurazione può impedire tutte le infezioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire all’antivirus una protezione assoluta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.4, pagina PDF 67"
+    },
+    {
+      "id": "cyber-c05-q055",
+      "topicId": "cyber-c05-t06",
+      "question": "Quali approcci storici di scanner compaiono nelle slide?",
+      "answer": "Confronto con impronte note, euristiche, controllo delle azioni e osservazione in ambienti controllati.",
+      "detail": "La classificazione per generazioni è didattica e storica; i prodotti attuali possono combinare simultaneamente più capacità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare le generazioni categorie rigide di tutti gli strumenti moderni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.4.1, pagina PDF 67"
+    },
+    {
+      "id": "cyber-c05-q056",
+      "topicId": "cyber-c05-t06",
+      "question": "Che cos’è la signature-based detection?",
+      "answer": "Il confronto di file, contenuti o eventi con firme, hash, pattern o regole conosciuti.",
+      "detail": "È efficace per indicatori noti, ma può mancare varianti nuove o offuscate. Un hash di file cambia se cambiano i suoi byte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare una firma negativa come assenza garantita di minaccia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.4.1, pagina PDF 67"
+    },
+    {
+      "id": "cyber-c05-q057",
+      "topicId": "cyber-c05-t06",
+      "question": "Che cos’è la heuristic detection?",
+      "answer": "L’analisi di caratteristiche, strutture o anomalie sospette senza richiedere identità esatta con un campione noto.",
+      "detail": "Può rilevare varianti nuove ma richiede soglie appropriate e può generare falsi allarmi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamarla firma tradizionale con un nome diverso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.4.1, pagina PDF 67"
+    },
+    {
+      "id": "cyber-c05-q058",
+      "topicId": "cyber-c05-t06",
+      "question": "Che cos’è la behavior-based detection?",
+      "answer": "L’analisi delle attività e delle sequenze di eventi prodotte da programmi e sistemi.",
+      "detail": "Può osservare persistenza inattesa, apertura di connessioni strane o molte modifiche rapide di file. Il contesto è cruciale perché alcune azioni possono essere legittime.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare ogni evento anomalo una compromissione confermata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.4.1, pagina PDF 67"
+    },
+    {
+      "id": "cyber-c05-q059",
+      "topicId": "cyber-c05-t06",
+      "question": "Perché il confronto tra hash esatti non basta a riconoscere nuove varianti malware?",
+      "answer": "Perché modificare anche pochi byte altera l’impronta, pur lasciando possibili comportamenti malevoli equivalenti.",
+      "detail": "L’hash è utile come IOC per file specifici, ma la resilienza del rilevamento richiede più segnali e metodi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire all’hash capacità di riconoscere ogni variante polimorfica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.4.1, pagina PDF 67"
+    },
+    {
+      "id": "cyber-c05-q060",
+      "topicId": "cyber-c05-t06",
+      "question": "Che cos’è un IOC, Indicator of Compromise?",
+      "answer": "Un elemento osservabile potenzialmente associato a una compromissione.",
+      "detail": "Può essere un IP, dominio, file, hash, percorso, processo o evento di log. Serve a orientare verifiche e correlazioni, non prova automaticamente causa e responsabilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare IOC come verdetto infallibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.4.2, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q061",
+      "topicId": "cyber-c05-t06",
+      "question": "Qual è la differenza tra evento, alert e incidente?",
+      "answer": "Evento è un fatto osservato; alert è una segnalazione del sistema; incidente è una situazione valutata come rilevante per la sicurezza.",
+      "detail": "Una segnalazione richiede indagine. L’evento può essere benigno; un incidente può coinvolgere molte evidenze e avere conseguenze operative.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non contare ogni alert come attacco riuscito.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.4.2, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q062",
+      "topicId": "cyber-c05-t06",
+      "question": "Che cos’è un falso positivo nel rilevamento?",
+      "answer": "La segnalazione di una minaccia che, dopo verifica, non è presente.",
+      "detail": "Può aumentare il carico di analisi e produrre interventi inutili. La sensibilità del sistema va calibrata rispetto ai rischi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con un attacco reale non osservato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.4.2, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q063",
+      "topicId": "cyber-c05-t06",
+      "question": "Che cos’è un falso negativo nel rilevamento?",
+      "answer": "Una minaccia reale presente che il sistema non segnala o non riconosce.",
+      "detail": "È pericoloso perché può prolungare la compromissione. Soglie troppo permissive e tecniche sconosciute possono aumentarne la frequenza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definirlo un semplice errore innocuo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.4.2, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q064",
+      "topicId": "cyber-c05-t06",
+      "question": "Qual è il ruolo di un EDR (Endpoint Detection and Response)?",
+      "answer": "Raccogliere e analizzare telemetria dagli endpoint e supportare indagini e possibili azioni di contenimento.",
+      "detail": "Può correlare eventi, processi e connessioni e, in certi prodotti, isolare dispositivi. Non garantisce rilevazione o risposta infallibili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con il solo antivirus tradizionale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.4.3, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q065",
+      "topicId": "cyber-c05-t06",
+      "question": "Qual è lo scopo di una sandbox nel malware analysis?",
+      "answer": "Eseguire o osservare file sospetti in un ambiente controllato per analizzarne il comportamento.",
+      "detail": "Una minaccia può comportarsi diversamente nell’ambiente di analisi, attendere condizioni o rimanere inattiva; anche la sandbox ha limiti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerarla un test conclusivo di sicurezza del file.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.4.3, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q066",
+      "topicId": "cyber-c05-t06",
+      "question": "Come distinguere antivirus, EDR, IDS e SIEM?",
+      "answer": "Antivirus rileva/blocca codice nocivo; EDR osserva e supporta la risposta sugli endpoint; IDS segnala intrusioni; SIEM raccoglie e correla log.",
+      "detail": "Le capacità possono sovrapporsi, ma gli scopi e le posizioni di osservazione sono differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 6: difesa perimetrale e rilevamento"
+      ],
+      "mistakes": "Non chiamare SIEM un sistema che corregge automaticamente il software vulnerabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.4.3, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q067",
+      "topicId": "cyber-c05-t07",
+      "question": "Quali tre principi anti-malware sono particolarmente richiamati dalle slide?",
+      "answer": "Ridurre l’ingresso di malware, mantenere aggiornati i sistemi e applicare controlli di accesso restrittivi.",
+      "detail": "Il manuale amplia queste tre misure con MFA, inventory, segmentazione, protezione e-mail, monitoraggio, backup verificati e formazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre un unico antivirus come strategia completa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.5.1, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q068",
+      "topicId": "cyber-c05-t07",
+      "question": "Che cosa significa defense in depth contro i malware?",
+      "answer": "Combinare controlli indipendenti e complementari lungo ingresso, esecuzione, propagazione, rilevazione e ripristino.",
+      "detail": "Se una mail supera il filtro, un endpoint con limitazione dei privilegi, controllo dell’esecuzione ed EDR può limitarne gli effetti; i backup servono per recuperare.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che sommare strumenti identici garantisca difese indipendenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.5.1, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q069",
+      "topicId": "cyber-c05-t07",
+      "question": "Perché il patching riduce il rischio ma non garantisce sicurezza?",
+      "answer": "Corregge vulnerabilità note, ma restano possibili zero-day, errori di configurazione, credenziali rubate e debolezze organizzative.",
+      "detail": "La priorità delle patch dovrebbe dipendere da esposizione, impatto e sfruttamento noto, non solo dalla data dell’aggiornamento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare software aggiornato a software invulnerabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.5.2, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q070",
+      "topicId": "cyber-c05-t07",
+      "question": "Quali sono le tre attività principali nella gestione operativa di un’infezione malware?",
+      "answer": "Contenimento, bonifica e ripristino controllato, con analisi e conservazione delle evidenze.",
+      "detail": "Isolare sistemi quando appropriato, limitare account compromessi, ricostruire l’estensione, rimuovere cause e componenti e verificare integrità prima della riapertura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a cancellare un file sospetto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.5.3, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q071",
+      "topicId": "cyber-c05-t07",
+      "question": "Perché bonificare un’infezione non equivale necessariamente a cancellare il malware?",
+      "answer": "Perché possono persistere accessi, credenziali compromesse, task, modifiche di configurazione e altre condizioni d’ingresso.",
+      "detail": "È necessario risolvere la causa, verificare i dispositivi e le risorse coinvolte e prevenire la reinfezione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che sparire dell’eseguibile significhi guarigione completa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.5.3, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q072",
+      "topicId": "cyber-c05-t07",
+      "question": "Quando è opportuno il rebuild da fonti attendibili?",
+      "answer": "Quando non è possibile stabilire con sufficiente fiducia che il sistema sia stato bonificato e che il suo stato sia integro.",
+      "detail": "Il manuale lo distingue dalla «formattazione» genericamente citata nelle slide: recupero da immagini o supporti affidabili, ripristino dei dati e verifiche prima del ritorno in produzione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre la formattazione indistintamente a ogni sospetto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.5.3, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q073",
+      "topicId": "cyber-c05-t07",
+      "question": "Quale ruolo hanno i backup nella risposta al malware?",
+      "answer": "Permettono il recupero dei dati e dei servizi se sono disponibili, integri e verificati.",
+      "detail": "Devono essere protetti e testati; non impediscono l’eventuale esfiltrazione precedente al ripristino né la reinfezione tramite credenziali compromesse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che backup equivale a prevenzione del furto dati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.5.3, pagina PDF 68"
+    },
+    {
+      "id": "cyber-c05-q074",
+      "topicId": "cyber-c05-t07",
+      "question": "Come dovrebbe reagire inizialmente il team davanti a file inaccessibili e messaggi anomali su un PC?",
+      "answer": "Verificare la natura dell’evento, raccogliere evidenze, valutare isolamento, controllare la diffusione e coordinare contenimento e recupero.",
+      "detail": "Annotare orari, log, processi, file modificati e account; distinguere errore applicativo da ransomware prima di trarre conclusioni. Salvaguardare evidenze secondo procedura.",
+      "example": "Un dipendente segnala file non apribili: il team verifica anche cartelle condivise e server.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare ransomware senza verifica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.5.4, pagina PDF 69"
+    },
+    {
+      "id": "cyber-c05-q075",
+      "topicId": "cyber-c05-t07",
+      "question": "Quali dimensioni manageriali devono essere considerate nel caso di sospetto ransomware?",
+      "answer": "Indisponibilità, estensione, costo del recupero, integrità dei backup, dati eventualmente sottratti e comunicazioni organizzative.",
+      "detail": "La risposta deve mantenere separata la possibilità di ripristinare file cifrati dalla valutazione della riservatezza dei dati potenzialmente esfiltrati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concludere che il rischio sia chiuso appena il server riparte.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.5.4, pagina PDF 69"
+    },
+    {
+      "id": "cyber-c05-q076",
+      "topicId": "cyber-c05-t07",
+      "question": "Come il manuale collega la risposta agli incidenti a NIST SP 800-61 Rev. 3?",
+      "answer": "La presenta come attività integrata nella gestione continua del rischio, con procedure e ruoli prima, durante e dopo l’incidente.",
+      "detail": "L’immagine operativa del testo è una sintesi didattica e non va attribuita come trascrizione integrale del framework.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire alla figura ogni passaggio del documento NIST.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.5.4, pagina PDF 69"
+    },
+    {
+      "id": "cyber-c05-q077",
+      "topicId": "cyber-c05-t08",
+      "question": "Che cos’è la SQL injection (SQLi)?",
+      "answer": "Un attacco in cui dati controllabili dall’esterno vengono interpretati come sintassi SQL anziché semplici valori.",
+      "detail": "La vulnerabilità nasce dalla costruzione insicura della query: l’applicazione invia al DBMS un comando malformato sotto il profilo della separazione tra dati e istruzioni. Il difetto non riguarda soltanto Oracle o Java.",
+      "example": "Un campo nome prodotto viene concatenato nella clausola SQL di ricerca.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che l’attaccante debba necessariamente collegarsi al DBMS in modo diretto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.6.1, pagina PDF 69"
+    },
+    {
+      "id": "cyber-c05-q078",
+      "topicId": "cyber-c05-t08",
+      "question": "Qual è la debolezza architetturale sfruttata dalla SQL injection?",
+      "answer": "La mancata separazione tra struttura della query e valori non affidabili.",
+      "detail": "La barriera tra dato e istruzione viene meno quando valori esterni modificano il significato del comando interpretato dal database.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuirla semplicemente all’esistenza di apostrofi nell’input.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.6.1, pagina PDF 69"
+    },
+    {
+      "id": "cyber-c05-q079",
+      "topicId": "cyber-c05-t08",
+      "question": "Perché SQLi può colpire anche un’applicazione con login correttamente implementato?",
+      "answer": "Perché un endpoint autorizzato può costruire query insicure o eseguire controlli insufficienti sui dati.",
+      "detail": "Il login verifica l’identità; la parametrizzazione protegge la struttura SQL; l’autorizzazione limita gli accessi. Sono controlli distinti e complementari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare autenticazione una protezione contro tutte le injection.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.6.1, pagina PDF 69"
+    },
+    {
+      "id": "cyber-c05-q080",
+      "topicId": "cyber-c05-t08",
+      "question": "Qual è la differenza tra dato, comando e interprete nel problema SQLi?",
+      "answer": "Il dato è il valore passato dal client; il comando è la struttura SQL prevista; l’interprete è il DBMS che analizza ed esegue la query.",
+      "detail": "Nelle query parametrizzate la struttura è definita dal programma e i valori sono associati separatamente mediante bind variables.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mettere input esterno dentro frammenti sintattici della query.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.6.2, pagina PDF 70"
+    },
+    {
+      "id": "cyber-c05-q081",
+      "topicId": "cyber-c05-t08",
+      "question": "Come una query parametrizzata previene l’interpretazione di un valore come sintassi SQL?",
+      "answer": "Mantiene fissa la struttura SQL e associa il valore a un parametro che viene gestito come dato.",
+      "detail": "La protezione principale deriva dalla separazione semantica tra comando e valore, non dall’eliminazione di particolari caratteri nel campo testuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 4: autorizzazioni lato server"
+      ],
+      "mistakes": "Non usare blacklist di caratteri come sostituto dei bind.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.6.2, pagina PDF 70"
+    },
+    {
+      "id": "cyber-c05-q082",
+      "topicId": "cyber-c05-t08",
+      "question": "Perché rimuovere gli apostrofi dall’input non è una difesa generale contro SQLi?",
+      "answer": "Perché l’attacco può dipendere da contesti SQL differenti e una sanitizzazione manuale è fragile e dipendente da DBMS e configurazione.",
+      "detail": "I dati devono essere associati come parametri e validati per le regole applicative; la rimozione indiscriminata può inoltre danneggiare input leciti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare sanitizzazione e parametrizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.6.2, pagina PDF 70"
+    },
+    {
+      "id": "cyber-c05-q083",
+      "topicId": "cyber-c05-t08",
+      "question": "Qual è il difetto nel codice Java che concatena request.getParameter(\"nome\") nella query SQL?",
+      "answer": "Il testo del client viene inserito direttamente nella stringa SQL, senza separazione tra valore e struttura del comando.",
+      "detail": "Il problema non è getParameter, ma il fatto che Statement esegua una query creata mediante concatenazione di contenuto non affidabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre l’esempio vulnerabile come implementazione di produzione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.6.3, pagina PDF 70"
+    },
+    {
+      "id": "cyber-c05-q084",
+      "topicId": "cyber-c05-t08",
+      "question": "Quale differenza pratica intercorre tra Statement con concatenazione e PreparedStatement parametrizzato?",
+      "answer": "Statement esegue il comando di testo composto; PreparedStatement consente di definire il comando e associare i valori con metodi come setString.",
+      "detail": "La forma illustrata nel manuale usa \"WHERE NOME = ?\" e ps.setString(1, nome), così il valore non altera la sintassi del WHERE.",
+      "example": "Ricerca per nome in tabella PRODOTTI con placeholder ?.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che tutte le istanze di Statement siano pericolose in assoluto: conta come è costruita la query.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.6.3, pagina PDF 70"
+    },
+    {
+      "id": "cyber-c05-q085",
+      "topicId": "cyber-c05-t08",
+      "question": "Come si scrive concettualmente una ricerca Java sicura per nome prodotto?",
+      "answer": "Si predispone SELECT ... WHERE NOME = ? e si associa la stringa ricercata con PreparedStatement.setString(1, nome).",
+      "detail": "L’esecuzione usa i bind; la risposta deve poi essere trattata secondo autorizzazioni e requisiti di dominio. Il metodo non garantisce, da solo, che il client possa leggere tutti i record ottenuti.",
+      "example": "PreparedStatement ps = connection.prepareStatement(sql); ps.setString(1, nome).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere assenza di injection con diritto all’accesso ai dati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.6.4, pagina PDF 70"
+    },
+    {
+      "id": "cyber-c05-q086",
+      "topicId": "cyber-c05-t08",
+      "question": "Una query parametrizzata garantisce che il risultato sia autorizzato?",
+      "answer": "No. Garantisce che il valore associato non alteri la sintassi, non stabilisce i diritti dell’utente sui record.",
+      "detail": "Un utente può ottenere dati non pertinenti se la business logic e i controlli di autorizzazione sono sbagliati, anche senza SQL injection.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare i bind una sostituzione del controllo per singolo oggetto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.6.4, pagina PDF 70"
+    },
+    {
+      "id": "cyber-c05-q087",
+      "topicId": "cyber-c05-t08",
+      "question": "Una stored procedure è automaticamente protetta da SQL injection?",
+      "answer": "No. Rimane vulnerabile se costruisce SQL dinamico concatenando parametri non affidabili.",
+      "detail": "L’uso di PL/SQL o di procedure memorizzate non rimuove di per sé la separazione fra codice e dati; SQL statico e bind sono generalmente più sicuri.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare immuni tutte le procedure Oracle.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.6.5, pagina PDF 70"
+    },
+    {
+      "id": "cyber-c05-q088",
+      "topicId": "cyber-c05-t08",
+      "question": "Come si gestiscono in Oracle PL/SQL i valori in una query dinamica?",
+      "answer": "Associandoli tramite bind variables, per esempio con la clausola USING di EXECUTE IMMEDIATE.",
+      "detail": "Non devono essere concatenati nella query. Per elementi strutturali, quali tabelle e colonne, il bind non è appropriato e servono scelte consentite e predefinite.",
+      "example": "EXECUTE IMMEDIATE con parametro valore associato tramite USING.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare USING per un nome tabella come se fosse un valore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.6.5, pagina PDF 70"
+    },
+    {
+      "id": "cyber-c05-q089",
+      "topicId": "cyber-c05-t08",
+      "question": "Quali elementi della query non possono essere sostituiti direttamente da bind di valore?",
+      "answer": "Nomi di tabella, nomi di colonna, ordinamenti e altri identificatori o frammenti strutturali.",
+      "detail": "Vanno selezionati mediante mapping allowlist dell’applicazione verso identificatori definiti e affidabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concatenare la scelta testuale grezza dell’utente nell’ORDER BY.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.6.5, pagina PDF 70"
+    },
+    {
+      "id": "cyber-c05-q090",
+      "topicId": "cyber-c05-t09",
+      "question": "Perché l’input SQLi non va limitato ai campi di un modulo web?",
+      "answer": "Perché dati non affidabili possono provenire anche da URL, JSON, header, cookie, dispositivi fisici o archivi popolati in precedenza.",
+      "detail": "Il rischio emerge in qualsiasi punto in cui un valore esterno viene reinterpretato come testo SQL strutturale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare sicuro un valore perché non proviene da un form.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.7.1, pagina PDF 70"
+    },
+    {
+      "id": "cyber-c05-q091",
+      "topicId": "cyber-c05-t09",
+      "question": "Perché header come User-Agent o Referer possono essere vettori di SQLi?",
+      "answer": "Perché possono essere forniti o manipolati dal richiedente e diventare pericolosi se concatenati in query SQL.",
+      "detail": "Il fatto che il backend li legga tramite API server non ne prova l’affidabilità. Anche valori passati da proxy richiedono verifica della fonte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare automaticamente gli header come variabili attendibili del server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.7.1, pagina PDF 71"
+    },
+    {
+      "id": "cyber-c05-q092",
+      "topicId": "cyber-c05-t09",
+      "question": "Perché i cookie non sono sorgenti automaticamente attendibili per l’SQL dinamico?",
+      "answer": "Perché rappresentano dati ricevuti dal client e possono essere manipolabili o alterati.",
+      "detail": "HttpOnly limita la lettura di determinati cookie da JavaScript, ma non impedisce l’inserimento insicuro del loro contenuto dentro una query SQL.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che HttpOnly protegge dalla SQL injection.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.7.1, pagina PDF 71"
+    },
+    {
+      "id": "cyber-c05-q093",
+      "topicId": "cyber-c05-t09",
+      "question": "Che cos’è la second-order SQL injection?",
+      "answer": "Un’SQLi in cui il dato viene prima memorizzato e poi riutilizzato in una query costruita in modo insicuro.",
+      "detail": "Il problema può non manifestarsi durante l’inserimento iniziale. È il successivo punto di impiego come frammento SQL a rendere vulnerabile il processo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare affidabili tutti i dati già residenti nel database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.7.1, pagina PDF 71"
+    },
+    {
+      "id": "cyber-c05-q094",
+      "topicId": "cyber-c05-t09",
+      "question": "Come possono QR code, RFID o lettori di codici a barre diventare ingressi per SQLi?",
+      "answer": "Trasmettono dati esterni che possono raggiungere componenti che compongono SQL dinamico senza corretta separazione.",
+      "detail": "La presenza di un lettore fisico non garantisce che il contenuto acquisito sia sicuro; valgono le stesse regole di parametri e allowlist.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fidarsi del canale soltanto perché hardware.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.7.1, pagina PDF 71"
+    },
+    {
+      "id": "cyber-c05-q095",
+      "topicId": "cyber-c05-t09",
+      "question": "Quali sorgenti indirette di input andrebbero incluse in una code review SQLi?",
+      "answer": "Cookie, header HTTP, dati da proxy, valori già archiviati, input di dispositivi e servizi esterni, oltre ai normali parametri UI.",
+      "detail": "L’indagine deve seguire i flussi di dati fino ai punti in cui la query viene costruita o eseguita.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare il test ai soli form visibili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.7.1, pagina PDF 71"
+    },
+    {
+      "id": "cyber-c05-q096",
+      "topicId": "cyber-c05-t09",
+      "question": "Che cos’è una tecnica SQLi per tautologia?",
+      "answer": "Il tentativo di rendere sempre vera una condizione logica della query per alterare i filtri previsti.",
+      "detail": "Il problema è che la semantica della selezione non è più quella progettata: un filtro puntuale potrebbe diventare una selezione molto più ampia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderla con la sola sintassi dei commenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.7.2, pagina PDF 71"
+    },
+    {
+      "id": "cyber-c05-q097",
+      "topicId": "cyber-c05-t09",
+      "question": "Che ruolo possono avere commenti o fine istruzione in una SQLi?",
+      "answer": "Possono tentare di neutralizzare parti successive del comando se l’input modifica la sintassi della query.",
+      "detail": "La fattibilità dipende da concatenazione, dialetto SQL e API; non ogni input o database consente questo comportamento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che un commento annulla sempre ogni verifica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.7.2, pagina PDF 71"
+    },
+    {
+      "id": "cyber-c05-q098",
+      "topicId": "cyber-c05-t09",
+      "question": "Che cosa sono le piggybacked queries?",
+      "answer": "Tentativi di aggiungere istruzioni SQL ulteriori a quella prevista dall’applicazione.",
+      "detail": "La possibilità effettiva di eseguire più istruzioni dipende dal DBMS, dalle API e dalla modalità di accesso adottata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che tutte le connessioni accettino query multiple.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.7.2, pagina PDF 71"
+    },
+    {
+      "id": "cyber-c05-q099",
+      "topicId": "cyber-c05-t09",
+      "question": "Che cosa distingue SQLi error-based e SQLi blind/inferenziale?",
+      "answer": "Nella prima gli errori espongono informazioni; nella seconda si inferiscono informazioni da differenze in esiti, risposte o tempi.",
+      "detail": "Il manuale chiede di non sovrapporre indiscriminatamente error-based e blind: entrambe sfruttano la query ma usano evidenze diverse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare «inferenziale» come sinonimo obbligatorio di «errore SQL visibile».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.7.2, pagina PDF 71"
+    },
+    {
+      "id": "cyber-c05-q100",
+      "topicId": "cyber-c05-t09",
+      "question": "Che cosa significa SQLi out-of-band?",
+      "answer": "Il tentativo di sfruttare canali di comunicazione alternativi alla normale risposta dell’applicazione.",
+      "detail": "Richiede condizioni specifiche, come capacità di rete disponibili ai processi DBMS. La difesa considera anche i privilegi e l’accesso alla rete del database.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a ogni database capacità illimitata di comunicazione esterna.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.7.2, pagina PDF 71"
+    },
+    {
+      "id": "cyber-c05-q101",
+      "topicId": "cyber-c05-t09",
+      "question": "Quali sono le conseguenze possibili di SQL injection?",
+      "answer": "Lettura, alterazione o cancellazione di dati, aggiramento di logiche, compromissione dell’autenticazione e, in casi specifici, operazioni più invasive.",
+      "detail": "L’ampiezza del danno dipende dai privilegi del DBMS e dalla business logic. Una SQLi non dà automaticamente controllo del sistema operativo o dell’intero server.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare ogni SQLi come compromissione totale dell’infrastruttura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.7.3, pagina PDF 71"
+    },
+    {
+      "id": "cyber-c05-q102",
+      "topicId": "cyber-c05-t09",
+      "question": "Perché una SQL injection può provocare danni aziendali anche senza esfiltrare informazioni?",
+      "answer": "Perché può modificare prezzi, margini, dati contabili o regole di calcolo e alterare decisioni operative.",
+      "detail": "L’integrità dei dati economici è un asset critico e può essere danneggiata in assenza di un furto visibile di dati.",
+      "example": "Nel portale offerte, un prezzo alterato può generare simulazioni e approvazioni sbagliate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non associare SQLi esclusivamente alla riservatezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.7.3, pagina PDF 71"
+    },
+    {
+      "id": "cyber-c05-q103",
+      "topicId": "cyber-c05-t10",
+      "question": "Come si classificano le difese SQLi per funzione?",
+      "answer": "Controlli che rimuovono la causa, misure che rilevano i tentativi e protezioni che limitano le conseguenze.",
+      "detail": "Parametrizzazione previene la conversione del valore in comando; monitoraggio e SIEM rilevano; privilegi minimi limitano l’impatto; validazione applicativa protegge la coerenza dell’input.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mettere tutti i controlli sullo stesso piano come se prevenissero la stessa causa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.8, pagina PDF 72"
+    },
+    {
+      "id": "cyber-c05-q104",
+      "topicId": "cyber-c05-t10",
+      "question": "Qual è la difesa primaria contro SQLi nei valori delle query?",
+      "answer": "Query parametrizzate con bind, come PreparedStatement nelle applicazioni Java.",
+      "detail": "L’ORM può aiutare ma non garantisce immunità se il programmatore usa query dinamiche insicure o concatenazioni manuali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che usare Hibernate o un ORM rende automaticamente sicuro ogni SQL.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.8.1, pagina PDF 72"
+    },
+    {
+      "id": "cyber-c05-q105",
+      "topicId": "cyber-c05-t10",
+      "question": "Che cos’è la validazione positiva (allowlist) dell’input?",
+      "answer": "La verifica lato server che il valore rispetti tipo, formato, lunghezza, intervallo e regole di business ammessi.",
+      "detail": "È un controllo di qualità e correttezza: per un mese il valore valido può essere 1–12. Complementa, ma non sostituisce, la parametrizzazione SQL.",
+      "example": "Mese selezionato: ammettere solo numeri nell’intervallo 1–12.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rifiutare arbitrariamente caratteri validi in testo libero anziché usarli come bind.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.8.2, pagina PDF 72"
+    },
+    {
+      "id": "cyber-c05-q106",
+      "topicId": "cyber-c05-t10",
+      "question": "Quali limiti presenta la sanitizzazione manuale per prevenire SQLi?",
+      "answer": "Dipende da dialetto, contesto e configurazione ed è fragile rispetto a forme diverse di input.",
+      "detail": "Sostituire o cancellare caratteri «sospetti» può essere bypassato o danneggiare dati leciti. La principale protezione è la separazione mediante parametri.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare escaping artigianale difesa primaria.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.8.2, pagina PDF 72"
+    },
+    {
+      "id": "cyber-c05-q107",
+      "topicId": "cyber-c05-t10",
+      "question": "Che cosa si intende con SQL DOM nel manuale?",
+      "answer": "Un approccio a composizione SQL mediante API o strutture oggetto anziché concatenazioni non controllate di testo.",
+      "detail": "Il concetto riduce il rischio di costruzione libera dei comandi, ma mantiene indispensabile la separazione tra valori e sintassi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il solo uso di oggetti prova matematica di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.8.2, pagina PDF 72"
+    },
+    {
+      "id": "cyber-c05-q108",
+      "topicId": "cyber-c05-t10",
+      "question": "Come deve gestire il backend un parametro di ordinamento selezionabile?",
+      "answer": "Mappare il valore richiesto a un insieme chiuso di colonne e direzioni consentite.",
+      "detail": "I nomi delle colonne e ASC/DESC sono struttura SQL, non valori parametrizzabili come una stringa di ricerca.",
+      "example": "ordinamento=prezzo è trasformato in PREZZO soltanto se questa opzione è ammessa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concatenare il testo dell’ordinamento ricevuto dal browser.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.8.3, pagina PDF 72"
+    },
+    {
+      "id": "cyber-c05-q109",
+      "topicId": "cyber-c05-t10",
+      "question": "Perché il minimo privilegio è importante per l’account DB dell’applicazione?",
+      "answer": "Riduce gli oggetti e le operazioni che un attaccante potrebbe raggiungere in caso di compromissione.",
+      "detail": "Un account di sola lettura non dovrebbe avere diritti di amministrazione o cancellazione; se opportuno, separare ruoli di lettura, scrittura e gestione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare permessi DBA per comodità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.8.4, pagina PDF 72"
+    },
+    {
+      "id": "cyber-c05-q110",
+      "topicId": "cyber-c05-t10",
+      "question": "Il minimo privilegio elimina la vulnerabilità SQLi?",
+      "answer": "No: limita l’impatto di una vulnerabilità che deve essere corretta nella costruzione delle query.",
+      "detail": "Anche una lettura autorizzata a livello DB può esporre dati di altri utenti se mancano i controlli applicativi per record o funzione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare autorizzazioni DB come sostituto delle query parametrizzate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.8.4, pagina PDF 72"
+    },
+    {
+      "id": "cyber-c05-q111",
+      "topicId": "cyber-c05-t10",
+      "question": "Perché la cifratura a riposo non impedisce necessariamente di leggere dati tramite una SQLi riuscita?",
+      "answer": "Perché il DBMS può decifrare i dati durante le normali query eseguite con credenziali applicative valide.",
+      "detail": "TDE, cifratura di campi, TLS in transito e gestione chiavi affrontano minacce diverse; la sicurezza delle query e delle autorizzazioni resta necessaria.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non promettere che la cifratura del disco blocchi un attacco applicativo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.8.5, pagina PDF 72"
+    },
+    {
+      "id": "cyber-c05-q112",
+      "topicId": "cyber-c05-t10",
+      "question": "Quale ruolo ha il SIEM rispetto agli attacchi SQLi?",
+      "answer": "Aggrega e correla eventi per supportare rilevazione, allerta, analisi e investigazione.",
+      "detail": "Può individuare errori ripetuti, interrogazioni insolite, accessi fuori orario e cambiamenti nei privilegi, ma non corregge la query vulnerabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire al SIEM la prevenzione automatica della SQLi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.8.5, pagina PDF 72"
+    },
+    {
+      "id": "cyber-c05-q113",
+      "topicId": "cyber-c05-t10",
+      "question": "Quali verifiche difensive comprende un test di sicurezza SQLi?",
+      "answer": "Controllo dei bind, SQL dinamico, input indiretti, privilegi DB, esposizione degli errori e logging.",
+      "detail": "La verifica può essere condotta mediante code review, analisi statica e test dinamici in ambienti autorizzati; i controlli vanno eseguiti su tutti i percorsi di query, inclusi i dati riutilizzati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare la revisione alla pagina del form.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.8.6, pagina PDF 72"
+    },
+    {
+      "id": "cyber-c05-q114",
+      "topicId": "cyber-c05-t10",
+      "question": "Come sintetizzeresti all’orale una difesa completa contro SQLi?",
+      "answer": "Parametrizzare le query; validare i dati; applicare autorizzazioni e privilegi minimi; effettuare logging, monitoraggio e test.",
+      "detail": "Ogni misura svolge una funzione distinta: prevenire la causa, garantire correttezza applicativa, ridurre i danni, rilevare e ricostruire tentativi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare una misura sufficiente da sola.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.8, pagina PDF 73"
+    },
+    {
+      "id": "cyber-c05-q115",
+      "topicId": "cyber-c05-t11",
+      "question": "Che cos’è il Cross-Site Scripting (XSS)?",
+      "answer": "Una vulnerabilità in cui un dato non affidabile viene interpretato dal browser come codice o markup attivo nel contesto dell’applicazione.",
+      "detail": "La debolezza consiste nella confusione tra contenuto da visualizzare e contenuto eseguibile, non nell’esistenza di JavaScript o caratteri speciali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che basta inserire testo con simboli per avere una vulnerabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.1, pagina PDF 73"
+    },
+    {
+      "id": "cyber-c05-q116",
+      "topicId": "cyber-c05-t11",
+      "question": "Qual è la differenza centrale tra SQL injection e XSS?",
+      "answer": "SQLi agisce sull’interprete SQL nel DBMS; XSS agisce sul browser e sul contesto di esecuzione della pagina della vittima.",
+      "detail": "I due casi condividono la confusione dato/codice, ma colpiscono interpreti differenti e richiedono difese primarie differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare PreparedStatement come difesa sufficiente per XSS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.1, pagina PDF 73"
+    },
+    {
+      "id": "cyber-c05-q117",
+      "topicId": "cyber-c05-t11",
+      "question": "Quali impatti può avere XSS nel browser della vittima?",
+      "answer": "Manipolazione della pagina, richieste indesiderate nell’ambito della sessione, lettura di informazioni accessibili e redirect.",
+      "detail": "L’impatto dipende dal contesto di origine del sito e dai controlli browser e applicativi; non ogni XSS permette di leggere tutti i cookie.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non associare automaticamente ogni XSS al furto del cookie di sessione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.1, pagina PDF 73"
+    },
+    {
+      "id": "cyber-c05-q118",
+      "topicId": "cyber-c05-t11",
+      "question": "Perché un cookie HttpOnly non elimina i rischi di XSS?",
+      "answer": "Perché limita la lettura del cookie da script ma non impedisce necessariamente l’esecuzione di azioni nella sessione già attiva.",
+      "detail": "La mitigazione di sessione è complementare alla prevenzione dell’inserimento di codice e markup non affidabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare HttpOnly una correzione del rendering vulnerabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.1, pagina PDF 73"
+    },
+    {
+      "id": "cyber-c05-q119",
+      "topicId": "cyber-c05-t11",
+      "question": "Che cos’è lo Stored XSS?",
+      "answer": "Una variante in cui il contenuto non affidabile viene conservato e poi visualizzato come contenuto attivo ad altri utenti.",
+      "detail": "Può interessare commenti, note o descrizioni e può coinvolgere più utenti, anche amministratori che consultano il dato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare Stored XSS con una vulnerabilità necessariamente nel database: il problema è nel rendering.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.2, pagina PDF 73"
+    },
+    {
+      "id": "cyber-c05-q120",
+      "topicId": "cyber-c05-t11",
+      "question": "Che cos’è il Reflected XSS?",
+      "answer": "Una variante in cui il contenuto di una richiesta viene restituito nella risposta web e interpretato senza adeguate difese.",
+      "detail": "Può manifestarsi durante la stessa navigazione, anche dopo un collegamento manipolato; non richiede salvataggio persistente sul server.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con contenuto conservato a lungo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.2, pagina PDF 73"
+    },
+    {
+      "id": "cyber-c05-q121",
+      "topicId": "cyber-c05-t11",
+      "question": "Che cos’è il DOM-based XSS?",
+      "answer": "Una vulnerabilità introdotta nel codice client quando valori non affidabili raggiungono API del DOM che interpretano HTML o codice.",
+      "detail": "L’inserimento problematico può avvenire interamente nel browser, senza che il server rifletta direttamente il contenuto eseguibile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che ogni XSS richieda concatenazione HTML lato server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.2, pagina PDF 73"
+    },
+    {
+      "id": "cyber-c05-q122",
+      "topicId": "cyber-c05-t11",
+      "question": "Quale criterio distingue Stored, Reflected e DOM-based XSS?",
+      "answer": "Dove e quando il dato non affidabile arriva a essere interpretato come codice nel browser.",
+      "detail": "Stored viene conservato; Reflected torna con la risposta; DOM-based nasce nella manipolazione client. Le categorie possono avere elementi misti in alcune architetture.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretarle come tre linguaggi diversi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.2, pagina PDF 73"
+    },
+    {
+      "id": "cyber-c05-q123",
+      "topicId": "cyber-c05-t11",
+      "question": "Perché il campo note di un portale può diventare vettore XSS?",
+      "answer": "Perché un contenuto testuale visualizzato come HTML interpretato senza trattamento può acquisire significato eseguibile.",
+      "detail": "I caratteri speciali non sono vietati per definizione: il problema è la scelta del sink, dell’encoding e della gestione del dato nel rendering.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non vietare ogni parentesi angolare come soluzione generale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.3, pagina PDF 73"
+    },
+    {
+      "id": "cyber-c05-q124",
+      "topicId": "cyber-c05-t11",
+      "question": "Perché textContent è utile nella visualizzazione sicura di note testuali?",
+      "answer": "Perché inserisce contenuto come testo e non lo interpreta come markup HTML.",
+      "detail": "Il manuale mostra noteElement.textContent = notaRicevutaDalServer. La scelta è appropriata quando il requisito è mostrare una stringa letterale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare innerHTML con dato esterno non trattato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.3, pagina PDF 74"
+    },
+    {
+      "id": "cyber-c05-q125",
+      "topicId": "cyber-c05-t11",
+      "question": "Perché l’escaping HTML generico non è corretto per qualsiasi punto d’inserimento?",
+      "answer": "Perché i contesti di output HTML, attributi, URL, JavaScript e CSS hanno grammatiche e regole differenti.",
+      "detail": "La difesa deve essere contestuale al sink in cui i dati vengono utilizzati, specialmente in applicazioni con template server-side.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non riutilizzare indiscriminatamente un encoder HTML per una stringa JavaScript.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.3, pagina PDF 74"
+    },
+    {
+      "id": "cyber-c05-q126",
+      "topicId": "cyber-c05-t11",
+      "question": "Che cos’è l’output encoding contestuale contro XSS?",
+      "answer": "La trasformazione di dati non affidabili in una rappresentazione sicura per il preciso contesto in cui sono visualizzati.",
+      "detail": "Le regole variano tra testo HTML, attributi, URL e script; è una difesa primaria per i valori da mostrare nel browser.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerarlo un unico filtro uguale in tutti i contesti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.4, pagina PDF 74"
+    },
+    {
+      "id": "cyber-c05-q127",
+      "topicId": "cyber-c05-t11",
+      "question": "Quando è necessaria la sanitizzazione HTML?",
+      "answer": "Quando l’applicazione deve consentire HTML formattato controllato fornito dagli utenti.",
+      "detail": "Si impiegano librerie mantenute e adatte al contesto. Se serve soltanto testo semplice, è preferibile evitarne l’interpretazione come HTML.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere sanitizzazione HTML con rimozione indiscriminata di stringhe sospette.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.4, pagina PDF 74"
+    },
+    {
+      "id": "cyber-c05-q128",
+      "topicId": "cyber-c05-t11",
+      "question": "Che cosa sono sink DOM interpretativi e perché sono delicati?",
+      "answer": "API o punti di inserimento che trattano valori come HTML o codice, anziché semplice testo.",
+      "detail": "Un valore non affidabile passato a innerHTML senza protezioni appropriate può essere interpretato dal browser. L’uso di innerHTML non è sempre illegittimo, ma richiede trattamento corretto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare sicuro un dato perché proviene da una API interna.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.4, pagina PDF 74"
+    },
+    {
+      "id": "cyber-c05-q129",
+      "topicId": "cyber-c05-t11",
+      "question": "Che ruolo ha la Content Security Policy (CSP) nella protezione XSS?",
+      "answer": "È un controllo aggiuntivo che può limitare determinate esecuzioni e il caricamento di risorse nel browser.",
+      "detail": "Una CSP debole o troppo permissiva può offrire benefici modesti; non sostituisce output encoding, API DOM sicure e sanitizzazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare CSP come «cura» di una vulnerabilità XSS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.4, pagina PDF 74"
+    },
+    {
+      "id": "cyber-c05-q130",
+      "topicId": "cyber-c05-t11",
+      "question": "Quali proprietà di cookie come HttpOnly, Secure e SameSite possono essere utili in presenza di XSS?",
+      "answer": "Mitigano specifici rischi legati a accesso ai cookie, trasporto e invio contestuale dei cookie.",
+      "detail": "Sono protezioni di sessione e non eliminano la possibilità che un dato diventi codice attivo nel browser.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere mitigazione dell’impatto con correzione del sink vulnerabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.4, pagina PDF 74"
+    },
+    {
+      "id": "cyber-c05-q131",
+      "topicId": "cyber-c05-t11",
+      "question": "Perché le protezioni automatiche dei framework web non garantiscono assenza di XSS?",
+      "answer": "Perché API a basso livello e inserimenti manuali in contesti non coperti possono aggirare l’escaping automatico.",
+      "detail": "Bisogna conoscere la destinazione dell’output; in sistemi legacy o misti server/client i confini di fiducia sono particolarmente importanti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che un template framework renda sicuro qualsiasi uso di HTML grezzo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.5, pagina PDF 74"
+    },
+    {
+      "id": "cyber-c05-q132",
+      "topicId": "cyber-c05-t11",
+      "question": "Perché la sola validazione dell’input non può sostituire l’output encoding?",
+      "answer": "Perché il valore può essere lecito al momento dell’inserimento ma rischioso nella particolare grammatica di output.",
+      "detail": "La protezione va decisa quando il dato entra nel contesto HTML, attributo, URL, CSS o script e non solo in fase di acquisizione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare una blacklist unica come garanzia XSS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.5, pagina PDF 74"
+    },
+    {
+      "id": "cyber-c05-q133",
+      "topicId": "cyber-c05-t11",
+      "question": "Come confronteresti in sintesi SQLi e XSS per interprete, difetto e difesa?",
+      "answer": "SQLi: DBMS, dato trasformato in sintassi SQL, bind parameters; XSS: browser, dato trasformato in markup/codice, encoding contestuale e API sicure.",
+      "detail": "Per SQLi aggiungere privilegi minimi; per XSS CSP e gestione delle sessioni come difese complementari. Entrambe richiedono validazioni e test ma a livelli differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare una mitigazione dell’uno come sostituto della difesa primaria dell’altro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.9.6, pagina PDF 74"
+    },
+    {
+      "id": "cyber-c05-q134",
+      "topicId": "cyber-c05-t12",
+      "question": "Che cos’è un attacco Denial of Service (DoS)?",
+      "answer": "Un attacco intenzionale che cerca di rendere un servizio indisponibile o di degradarne gravemente le prestazioni.",
+      "detail": "L’obiettivo prevalente è la disponibilità: non occorre rubare o modificare dati. Anche guasti e picchi legittimi possono causare saturazione, ma non sono automaticamente DoS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare attacco ogni rallentamento inatteso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.1, pagina PDF 75"
+    },
+    {
+      "id": "cyber-c05-q135",
+      "topicId": "cyber-c05-t12",
+      "question": "Che differenza c’è tra DoS e DDoS?",
+      "answer": "Il DoS non richiede sorgenti multiple; il DDoS è un attacco di indisponibilità proveniente da molte sorgenti coordinate.",
+      "detail": "Le sorgenti possono essere bot, infrastrutture compromesse o riflettori. La distribuzione rende inadeguato il semplice blocco di un singolo indirizzo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che un attacco diventa DDoS solo perché usa tanto traffico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.1, pagina PDF 75"
+    },
+    {
+      "id": "cyber-c05-q136",
+      "topicId": "cyber-c05-t12",
+      "question": "Perché non è sempre possibile diagnosticare un DoS dal solo traffico elevato?",
+      "answer": "Perché carico legittimo, guasti, errori di configurazione e traffico intenzionalmente malevolo possono produrre sintomi simili.",
+      "detail": "L’indagine deve stabilire risorsa saturata, intenzionalità, pattern, punti di congestione e impatto sul servizio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare un picco di accessi a un attacco confermato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.1, pagina PDF 75"
+    },
+    {
+      "id": "cyber-c05-q137",
+      "topicId": "cyber-c05-t12",
+      "question": "Quali risorse possono essere saturate in un attacco DoS/DDoS?",
+      "answer": "Banda, CPU, RAM, code, thread, worker, tabelle di connessione, pool database, disco e servizi esterni.",
+      "detail": "Il bersaglio non è soltanto la rete: poche richieste applicative molto costose possono esaurire risorse di backend.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non misurare sempre l’attacco in soli gigabit al secondo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.2, pagina PDF 75"
+    },
+    {
+      "id": "cyber-c05-q138",
+      "topicId": "cyber-c05-t12",
+      "question": "Perché un endpoint che genera report complessi può essere vulnerabile a un DoS applicativo?",
+      "answer": "Perché ogni richiesta può imporre un lavoro elevato al server, anche quando il numero di richieste non è enorme.",
+      "detail": "Il rapporto fra costo imposto al server e costo sostenuto dal richiedente influisce sul rischio. Difese includono code, caching, timeouts e quote.",
+      "example": "Generazione ripetuta di PDF che occupa worker e database.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che la difesa consista soltanto nell’aumentare la banda.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.2, pagina PDF 75"
+    },
+    {
+      "id": "cyber-c05-q139",
+      "topicId": "cyber-c05-t12",
+      "question": "Che cos’è un ICMP flood?",
+      "answer": "Un attacco che invia molti messaggi ICMP per consumare banda o risorse di elaborazione.",
+      "detail": "ICMP è legittimo per controlli e diagnostica; la criticità deriva dal volume e dall’abuso. Si applicano filtri mirati, rate limiting e mitigazioni a monte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non bloccare indiscriminatamente ICMP senza considerare funzioni essenziali della rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.3, pagina PDF 75"
+    },
+    {
+      "id": "cyber-c05-q140",
+      "topicId": "cyber-c05-t12",
+      "question": "Quali difese sono adatte a un ICMP flood e qual è il limite di un blocco totale di ICMP?",
+      "answer": "Rate limiting appropriato, filtri di bordo e mitigazione upstream; il blocco indiscriminato può ostacolare diagnostica e funzioni di rete.",
+      "detail": "La policy deve preservare il traffico ICMP necessario e affrontare la congestione prima del punto che va in saturazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare tutto ICMP malevolo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.3, pagina PDF 75"
+    },
+    {
+      "id": "cyber-c05-q141",
+      "topicId": "cyber-c05-t12",
+      "question": "Che cos’è un UDP flood?",
+      "answer": "L’invio massivo di datagrammi UDP per consumare banda, capacità degli host o risorse di rete.",
+      "detail": "UDP è privo di connessione, ma viene usato anche da DNS, realtime e QUIC: i filtri richiedono distinzione fra flussi legittimi e abusivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non bloccare tutto UDP in un sistema che ne dipende.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.4, pagina PDF 75"
+    },
+    {
+      "id": "cyber-c05-q142",
+      "topicId": "cyber-c05-t12",
+      "question": "Perché una mitigazione collocata dopo il collegamento già saturo può fallire contro UDP flood?",
+      "answer": "Perché i pacchetti hanno già consumato la capacità del tratto congestionato prima di raggiungere il filtro.",
+      "detail": "Sono spesso necessari interventi dell’operatore upstream, servizi distribuiti o filtri più vicini alla sorgente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidarsi esclusivamente a un firewall interno quando il link Internet è già pieno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.4, pagina PDF 75"
+    },
+    {
+      "id": "cyber-c05-q143",
+      "topicId": "cyber-c05-t13",
+      "question": "Quale fase del TCP sfrutta un SYN flood?",
+      "answer": "La fase di apertura della connessione, nella quale richieste SYN possono lasciare stato o risorse in attesa di completamento.",
+      "detail": "Il normale three-way handshake è SYN → SYN-ACK → ACK; richieste incomplete in grande quantità possono saturare strutture di gestione delle connessioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 0: three-way handshake"
+      ],
+      "mistakes": "Non confondere il SYN flood con un HTTP flood già a livello applicativo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.5, pagina PDF 76"
+    },
+    {
+      "id": "cyber-c05-q144",
+      "topicId": "cyber-c05-t13",
+      "question": "L’IP spoofing è un requisito indispensabile per un SYN flood?",
+      "answer": "No. Può contribuire a impedire il completamento normale dell’handshake, ma non è obbligatorio in ogni scenario.",
+      "detail": "Il fenomeno caratteristico è la moltiplicazione di connessioni non completate e delle relative risorse di gestione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che tutte le richieste SYN arrivino da indirizzi falsificati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.5, pagina PDF 76"
+    },
+    {
+      "id": "cyber-c05-q145",
+      "topicId": "cyber-c05-t13",
+      "question": "Che cosa sono i SYN cookies?",
+      "answer": "Un meccanismo TCP che permette di ridurre la necessità di mantenere completo stato in attesa dell’ACK finale.",
+      "detail": "Il server codifica parte delle informazioni nell’apertura della connessione; è una mitigazione con limiti e compromessi implementativi. Non si tratta di cookie HTTP del browser.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere SYN cookie con session cookie.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.5, pagina PDF 76"
+    },
+    {
+      "id": "cyber-c05-q146",
+      "topicId": "cyber-c05-t13",
+      "question": "Che cosa si intende per selective drop nella mitigazione SYN flood?",
+      "answer": "Scarto o gestione selettiva di richieste e connessioni incomplete secondo criteri appropriati.",
+      "detail": "Richiede equilibrio per non penalizzare eccessivamente i client legittimi; può affiancare SYN cookies e protezione di rete.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare ogni SYN incompleto necessariamente malevolo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.5, pagina PDF 76"
+    },
+    {
+      "id": "cyber-c05-q147",
+      "topicId": "cyber-c05-t13",
+      "question": "Che cos’è un HTTP flood?",
+      "answer": "Molte richieste HTTP dirette a sovraccaricare il server web o l’applicazione.",
+      "detail": "Le richieste possono essere sintatticamente valide. Gli endpoint costosi, ad esempio report e interrogazioni DB, sono particolarmente sensibili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarsi necessariamente richieste HTTP malformate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.6, pagina PDF 76"
+    },
+    {
+      "id": "cyber-c05-q148",
+      "topicId": "cyber-c05-t13",
+      "question": "Quali controlli applicativi riducono la suscettibilità a HTTP flood?",
+      "answer": "Rate limiting, caching, query efficienti, timeouts, code, limiti di lavoro e degrado controllato.",
+      "detail": "WAF e CDN possono aiutare, ma non risolvono da soli un endpoint con costo esagerato per richiesta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre solo più server senza rivedere le operazioni costose.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.6, pagina PDF 76"
+    },
+    {
+      "id": "cyber-c05-q149",
+      "topicId": "cyber-c05-t13",
+      "question": "Che cos’è Slowloris o slow HTTP?",
+      "answer": "Un attacco che mantiene numerose connessioni HTTP aperte inviando lentamente dati o richieste incomplete.",
+      "detail": "Può esaurire slot e risorse per le connessioni senza richiedere volume elevato di traffico; dipende dall’architettura del server.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattarlo come sinonimo di flood volumetrico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.7, pagina PDF 76"
+    },
+    {
+      "id": "cyber-c05-q150",
+      "topicId": "cyber-c05-t13",
+      "question": "Quali misure difendono da Slowloris?",
+      "answer": "Timeout per header/body, limiti di connessione, reverse proxy, gestione asincrona e politiche proporzionate.",
+      "detail": "È importante non bloccare sistematicamente client legittimi che possiedono collegamenti lenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare timeouts così aggressivi da danneggiare tutto il traffico legittimo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.7, pagina PDF 76"
+    },
+    {
+      "id": "cyber-c05-q151",
+      "topicId": "cyber-c05-t13",
+      "question": "Che cos’è un SIP flood?",
+      "answer": "Un attacco che sovraccarica i componenti che elaborano la segnalazione SIP dei servizi multimediali o VoIP.",
+      "detail": "SIP gestisce creazione, modifica e chiusura di sessioni. Le difese coinvolgono apparati e policy di segnalazione, autenticazione, monitoraggio e dimensionamento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare gli attacchi DoS ai siti web.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.8, pagina PDF 76"
+    },
+    {
+      "id": "cyber-c05-q152",
+      "topicId": "cyber-c05-t13",
+      "question": "Quali obiettivi difensivi sono pertinenti a un servizio SIP sotto flood?",
+      "answer": "Proteggere i componenti di segnalazione, limitare traffico abusivo e monitorare disponibilità e qualità delle sessioni.",
+      "detail": "Il manuale richiama dimensionamento, controlli sugli endpoint e autenticazione dove pertinente, in base all’architettura telecomunicativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non adottare solo controlli HTTP per il protocollo SIP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.8, pagina PDF 77"
+    },
+    {
+      "id": "cyber-c05-q153",
+      "topicId": "cyber-c05-t13",
+      "question": "Che cos’è un reflection attack nel DDoS?",
+      "answer": "L’uso di server terzi che inviano risposte alla vittima, spesso dopo richieste con indirizzo sorgente falsificato.",
+      "detail": "Il riflettore non è necessariamente il bersaglio finale; l’attaccante sfrutta il fatto che risponde a una richiesta apparentemente originata dalla vittima.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che la riflessione richieda necessariamente risposte più grandi delle richieste.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.9, pagina PDF 77"
+    },
+    {
+      "id": "cyber-c05-q154",
+      "topicId": "cyber-c05-t13",
+      "question": "Che cos’è l’amplificazione in un DDoS?",
+      "answer": "Il fenomeno per cui una risposta può generare traffico significativamente maggiore della richiesta che l’ha provocata.",
+      "detail": "Può coesistere con la riflessione ma descrive un diverso aspetto quantitativo del traffico.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare amplification e reflection come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.9, pagina PDF 77"
+    },
+    {
+      "id": "cyber-c05-q155",
+      "topicId": "cyber-c05-t13",
+      "question": "Come si riduce la possibilità che un servizio diventi un reflector per attacchi contro terzi?",
+      "answer": "Limitare esposizioni e risposte abusive, configurare correttamente i servizi e applicare filtri anti-spoofing dove appropriato.",
+      "detail": "Una rete deve proteggere se stessa e non contribuire inconsapevolmente ad attacchi esterni. Serve coordinamento con operatori e servizi di mitigazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la sicurezza DDoS un problema solo di chi viene attaccato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.10.9, pagina PDF 77"
+    },
+    {
+      "id": "cyber-c05-q156",
+      "topicId": "cyber-c05-t14",
+      "question": "Quali componenti e dipendenze valutare prima di un attacco DDoS?",
+      "answer": "Collegamento Internet, DNS, reverse proxy, bilanciatori, app, database e servizi esterni.",
+      "detail": "La resilienza richiede riconoscere i colli di bottiglia, definire capacità, redundanza, limiti, caching, quote e strategie di risposta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare solo la banda o il singolo web server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.11.1, pagina PDF 77"
+    },
+    {
+      "id": "cyber-c05-q157",
+      "topicId": "cyber-c05-t14",
+      "question": "Perché l’autoscaling non è una difesa illimitata dal DDoS?",
+      "answer": "Perché il traffico malevolo può aumentare i costi senza eliminare colli di bottiglia non scalabili.",
+      "detail": "I database, le dipendenze esterne e i collegamenti rimangono risorse finite. L’autoscaling è utile per variazioni di carico, ma va accompagnato da mitigazione e limiti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che aumentare automaticamente le istanze risolva ogni flood.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.11.1, pagina PDF 77"
+    },
+    {
+      "id": "cyber-c05-q158",
+      "topicId": "cyber-c05-t14",
+      "question": "Che ruolo svolgono quote, timeout e caching nella resilienza DoS?",
+      "answer": "Limitano il consumo eccessivo di risorse da parte delle richieste e riducono il lavoro ripetitivo.",
+      "detail": "Agiscono soprattutto su livello applicativo, worker e database; contro saturazione volumetrica del collegamento servono protezioni a monte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare una difesa applicativa con mitigazione del link già congestionato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.11.1, pagina PDF 77"
+    },
+    {
+      "id": "cyber-c05-q159",
+      "topicId": "cyber-c05-t14",
+      "question": "Quali indicatori distinguono un attacco volumetrico da uno applicativo?",
+      "answer": "Per la rete: banda, packet loss, errori di bordo; per l’app: tempi, code, thread, pool DB, tassi d’errore e pattern di richieste.",
+      "detail": "La diagnosi guida filtri upstream oppure ottimizzazione e isolamento degli endpoint più costosi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente latenza elevata alla congestione Internet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.11.2, pagina PDF 77"
+    },
+    {
+      "id": "cyber-c05-q160",
+      "topicId": "cyber-c05-t14",
+      "question": "Quali azioni sono possibili durante un DDoS e perché vanno documentate?",
+      "answer": "Filtri temporanei, protezione del fornitore, limiti, priorità ai servizi essenziali e isolamento di funzioni costose.",
+      "detail": "Registrare le modifiche permette di valutare effetti sui clienti e rimuovere contromisure eccezionali dopo l’attacco.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare permanentemente blocchi emergenziali non più giustificati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.11.2, pagina PDF 77"
+    },
+    {
+      "id": "cyber-c05-q161",
+      "topicId": "cyber-c05-t14",
+      "question": "Che cosa significa anti-spoofing a livello IP?",
+      "answer": "Controllare la plausibilità degli indirizzi sorgenti, impedendo quando possibile la falsificazione dell’origine del traffico.",
+      "detail": "In uscita dalla rete, bloccare sorgenti non assegnate legittimamente; i controlli sul percorso richiedono attenzione a routing asimmetrico e topologie.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerarlo un metodo che blocca tutti gli attacchi DDoS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.11.3, pagina PDF 77"
+    },
+    {
+      "id": "cyber-c05-q162",
+      "topicId": "cyber-c05-t14",
+      "question": "Perché l’anti-spoofing non elimina ogni DDoS?",
+      "answer": "Perché dispositivi compromessi reali possono generare traffico con indirizzi sorgenti autentici.",
+      "detail": "È utile soprattutto contro alcune forme di riflessione o amplificazione basate su spoofing, ma richiede altre protezioni di rete e applicative.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere IP autentico con traffico lecito.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.11.3, pagina PDF 77"
+    },
+    {
+      "id": "cyber-c05-q163",
+      "topicId": "cyber-c05-t14",
+      "question": "Che cosa può e non può fare un CAPTCHA contro i DoS?",
+      "answer": "Può limitare alcune interazioni automatizzate di form e registrazioni, ma non impedisce saturazione di link e apparati di rete.",
+      "detail": "È una mitigazione applicativa specifica, con limiti di accessibilità e possibilità di elusione. Non è una difesa generale dal DDoS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre CAPTCHA come misura contro ICMP o UDP flood.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.11.4, pagina PDF 77"
+    },
+    {
+      "id": "cyber-c05-q164",
+      "topicId": "cyber-c05-t14",
+      "question": "Quale coppia attacco–risorsa caratterizza il SYN flood?",
+      "answer": "SYN flood → strutture di gestione dello stato delle connessioni TCP.",
+      "detail": "Difese indicate: SYN cookies, gestione delle code e protezione delle connessioni a livello rete.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con saturazione applicativa dei worker HTTP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.11.5, pagina PDF 78"
+    },
+    {
+      "id": "cyber-c05-q165",
+      "topicId": "cyber-c05-t14",
+      "question": "Quale coppia attacco–risorsa caratterizza Slow HTTP?",
+      "answer": "Slowloris/slow HTTP → connessioni mantenute aperte per tempi eccessivi.",
+      "detail": "Mitigazioni: timeout, reverse proxy, limiti alle risorse e gestione delle richieste incomplete.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non misurarlo soltanto dal numero di byte al secondo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.11.5, pagina PDF 78"
+    },
+    {
+      "id": "cyber-c05-q166",
+      "topicId": "cyber-c05-t14",
+      "question": "Quali misure vanno associate a reflection/amplification nella tabella del manuale?",
+      "answer": "Anti-spoofing, protezione dei riflettori e mitigazione upstream.",
+      "detail": "Il problema tipico è la saturazione del collegamento e della banda della vittima tramite sistemi terzi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che un filtro locale sia sufficiente dopo la saturazione del link.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.11.5, pagina PDF 78"
+    },
+    {
+      "id": "cyber-c05-q167",
+      "topicId": "cyber-c05-t15",
+      "question": "Che cos’è un buffer in programmazione?",
+      "answer": "Un’area di memoria di capacità determinata usata temporaneamente per conservare informazioni.",
+      "detail": "Può contenere stringhe, dati di rete o file; la sua capacità va rispettata anche quando la memoria è allocata dinamicamente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non immaginare che un buffer si espanda sempre in automatico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.12.1, pagina PDF 78"
+    },
+    {
+      "id": "cyber-c05-q168",
+      "topicId": "cyber-c05-t15",
+      "question": "Che cos’è un buffer overflow?",
+      "answer": "Un tentativo di scrittura oltre la capacità prevista per un buffer, con possibile corruzione della memoria adiacente.",
+      "detail": "Può provocare crash, alterazione di dati o del flusso di controllo. Nel manuale si richiama CWE-120 per la copia senza controllo appropriato della lunghezza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire overflow ogni errore generico di memoria.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.12.1, pagina PDF 78"
+    },
+    {
+      "id": "cyber-c05-q169",
+      "topicId": "cyber-c05-t15",
+      "question": "Qual è la distinzione tra buffer overflow e altri difetti di memoria?",
+      "answer": "L’overflow riguarda la scrittura oltre i limiti del buffer; esistono anche out-of-bounds read, integer overflow e use-after-free.",
+      "detail": "Le categorie hanno cause e difese in parte differenti; una diagnosi precisa è essenziale per correggere il problema.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare ogni accesso invalido alla memoria buffer overflow.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.12.1, pagina PDF 78"
+    },
+    {
+      "id": "cyber-c05-q170",
+      "topicId": "cyber-c05-t15",
+      "question": "Perché scrivere oltre i limiti di un buffer può compromettere l’integrità di un programma?",
+      "answer": "Perché i dati in eccesso possono alterare variabili o informazioni di controllo poste in memoria adiacente.",
+      "detail": "La conseguenza dipende da layout e protezioni: corruzione di dati, malfunzionamento, crash o modifiche del flusso di esecuzione.",
+      "example": "Buffer da 4 elementi e scrittura di 8 senza verificare la capacità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare lo schema didattico come layout reale universale di uno stack.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.12.2, pagina PDF 78"
+    },
+    {
+      "id": "cyber-c05-q171",
+      "topicId": "cyber-c05-t15",
+      "question": "Quali proprietà CIA può compromettere un buffer overflow?",
+      "answer": "Soprattutto integrità e disponibilità, e talvolta riservatezza.",
+      "detail": "La corruzione o il crash incidono su I e A; secondo la posizione del difetto e le capacità dell’attaccante può diventare possibile anche esporre informazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che ogni overflow permetta esecuzione remota.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.12.2, pagina PDF 78"
+    },
+    {
+      "id": "cyber-c05-q172",
+      "topicId": "cyber-c05-t15",
+      "question": "Qual è il ruolo dello stack e quale rischio comporta uno stack overflow di buffer?",
+      "answer": "Lo stack gestisce chiamate e variabili locali in molte implementazioni; un overflow può sovrascrivere dati adiacenti e talvolta informazioni di controllo.",
+      "detail": "Il rischio reale dipende dal compilatore, dall’architettura e dalle mitigazioni. Non tutte le variabili risiedono necessariamente sullo stack.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a ogni overflow una sovrascrittura dell’indirizzo di ritorno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.12.3, pagina PDF 78"
+    },
+    {
+      "id": "cyber-c05-q173",
+      "topicId": "cyber-c05-t15",
+      "question": "Che cosa distingue un heap overflow dallo stack overflow?",
+      "answer": "Riguarda un’area di memoria allocata dinamicamente anziché il tipico spazio delle chiamate di funzione.",
+      "detail": "Può danneggiare oggetti vicini, metadati e strutture interne del programma. Le conseguenze dipendono dall’allocatore e dall’ambiente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che tutte le vulnerabilità di memoria si trovano nello stack.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.12.3, pagina PDF 78"
+    },
+    {
+      "id": "cyber-c05-q174",
+      "topicId": "cyber-c05-t15",
+      "question": "Perché anche le aree globali o statiche possono essere coinvolte in accessi errati?",
+      "answer": "Perché memorizzano dati con durata diversa dalle chiamate di funzione, ma hanno comunque confini di memoria da rispettare.",
+      "detail": "Il testo ricorda che le violazioni dei limiti non dipendono esclusivamente da stack o heap.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare sicurezza della memoria con sola protezione dello stack.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.12.3, pagina PDF 78"
+    },
+    {
+      "id": "cyber-c05-q175",
+      "topicId": "cyber-c05-t15",
+      "question": "Quali errori di sviluppo possono generare un buffer overflow?",
+      "answer": "Copie senza controllo, dimensionamenti errati, indici fuori range, conversioni numeriche scorrette e assunzioni sbagliate sui dati.",
+      "detail": "Code review, analisi statica, strumenti del compilatore e test sui limiti possono aiutare a individuarli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che il chiamante abbia verificato la capacità del buffer.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.12.4, pagina PDF 79"
+    },
+    {
+      "id": "cyber-c05-q176",
+      "topicId": "cyber-c05-t15",
+      "question": "Che cosa insegna il caso del buffer da 10 caratteri in cui se ne scrivono 15?",
+      "answer": "Che i cinque caratteri eccedenti violano il confine della memoria prevista; il bug nasce dalla mancata verifica della lunghezza.",
+      "detail": "È un esempio concettuale: non serve costruire un exploit per individuare la causa. La soluzione di base è il controllo corretto delle dimensioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare il problema come una semplice anomalia grafica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.12.4, pagina PDF 79"
+    },
+    {
+      "id": "cyber-c05-q177",
+      "topicId": "cyber-c05-t15",
+      "question": "Perché i linguaggi memory-safe riducono alcune vulnerabilità di memoria?",
+      "answer": "Perché applicano garanzie o controlli strutturali sugli accessi fuori dai limiti e su determinate operazioni pericolose.",
+      "detail": "Java controlla gli indici degli array nel codice gestito e non espone ordinariamente puntatori come C; C/C++ richiedono più disciplina su buffer e memoria.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che Java sia immune a SQLi, XSS, problemi di autorizzazione o codice nativo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.12.5, pagina PDF 79"
+    },
+    {
+      "id": "cyber-c05-q178",
+      "topicId": "cyber-c05-t15",
+      "question": "Quale limite rimane nell’uso di linguaggi come Java in un’applicazione enterprise?",
+      "answer": "La memory safety non impedisce automaticamente vulnerabilità applicative o nei componenti nativi.",
+      "detail": "SQL injection, XSS, deserializzazione insicura e autorizzazione errata restano possibili; le difese devono seguire la causa di ciascun rischio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare protezione degli array per sicurezza completa dell’applicazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.12.5, pagina PDF 79"
+    },
+    {
+      "id": "cyber-c05-q179",
+      "topicId": "cyber-c05-t16",
+      "question": "Qual è la prevenzione primaria contro il buffer overflow?",
+      "answer": "Impedire le scritture oltre la capacità con bounds checking, dimensionamento corretto, gestione delle conversioni e validazione delle lunghezze.",
+      "detail": "È preferibile eliminare il difetto nella logica o utilizzare componenti con garanzie di memory safety, non affidarsi soltanto a protezioni contro lo sfruttamento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare al chiamante tutta la responsabilità di verificare la lunghezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.13.1, pagina PDF 79"
+    },
+    {
+      "id": "cyber-c05-q180",
+      "topicId": "cyber-c05-t16",
+      "question": "Che cos’è uno stack canary?",
+      "answer": "Un valore di controllo inserito nello stack per rilevare alcune sovrascritture prima di passaggi critici dell’esecuzione.",
+      "detail": "Se alterato può far interrompere il processo. È una mitigazione selettiva: non elimina il bug né copre ogni overflow o accesso indebito.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerarlo garanzia di disponibilità o protezione di tutte le regioni memoria.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.13.2, pagina PDF 79"
+    },
+    {
+      "id": "cyber-c05-q181",
+      "topicId": "cyber-c05-t16",
+      "question": "Che cosa fa DEP/NX?",
+      "answer": "Permette di contrassegnare determinate pagine di memoria come non eseguibili, ostacolando l’esecuzione di codice in aree destinate ai dati.",
+      "detail": "DEP non impedisce la corruzione della memoria né tutte le modalità di abuso: alcuni attacchi alterano dati senza introdurre nuove istruzioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere non eseguibilità con protezione da scritture fuori limite.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.13.3, pagina PDF 79"
+    },
+    {
+      "id": "cyber-c05-q182",
+      "topicId": "cyber-c05-t16",
+      "question": "Che cos’è ASLR?",
+      "answer": "Una mitigazione che rende meno prevedibile la posizione di regioni e componenti nella memoria del processo.",
+      "detail": "La robustezza dipende dall’entropia e dalle implementazioni; la fuga di indirizzi può ridurne l’efficacia. Non corregge il difetto originale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che ASLR impedisce la scrittura fuori dai buffer.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.13.4, pagina PDF 79"
+    },
+    {
+      "id": "cyber-c05-q183",
+      "topicId": "cyber-c05-t16",
+      "question": "Perché ASLR e DEP possono essere complementari?",
+      "answer": "Uno limita la prevedibilità degli indirizzi; l’altro limita l’esecuzione da determinate pagine dati.",
+      "detail": "Agiscono su aspetti differenti delle tecniche di sfruttamento. Rimangono necessari controllo dei limiti, test e protezione del flusso di controllo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la somma delle mitigazioni una prova di assenza di bug.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.13.4, pagina PDF 79"
+    },
+    {
+      "id": "cyber-c05-q184",
+      "topicId": "cyber-c05-t16",
+      "question": "Che cos’è la Control-Flow Integrity (CFI)?",
+      "answer": "Una protezione che cerca di limitare deviazioni non autorizzate del flusso di esecuzione.",
+      "detail": "La copertura e l’efficacia variano con compilatore, piattaforma e contesto; è complementare ai controlli di memoria.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificarla con la semplice randomizzazione degli indirizzi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.13.5, pagina PDF 80"
+    },
+    {
+      "id": "cyber-c05-q185",
+      "topicId": "cyber-c05-t16",
+      "question": "Che cos’è il fuzzing e a che cosa serve nello sviluppo sicuro?",
+      "answer": "Una tecnica di test che prova numerosi input variati per individuare crash e comportamenti anomali.",
+      "detail": "I sanitizer di sviluppo e l’analisi statica possono aiutare a rilevare difetti. Nessun metodo di test dimostra, da solo, assenza di vulnerabilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare un test senza crash una certificazione di memory safety.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.13.5, pagina PDF 80"
+    },
+    {
+      "id": "cyber-c05-q186",
+      "topicId": "cyber-c05-t16",
+      "question": "Come scegliere fra correzione del bug e mitigazioni di sfruttamento nei sistemi legacy?",
+      "answer": "La correzione e la prevenzione del difetto hanno priorità; canary, DEP, ASLR e CFI mitigano possibili sfruttamenti quando la correzione non è immediata.",
+      "detail": "Il manuale insiste su memory safety, bounds checking, hardening e test in combinazione, specie nei sistemi non riscrivibili rapidamente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare le mitigazioni come alibi per non correggere il codice.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.13.5, pagina PDF 80"
+    },
+    {
+      "id": "cyber-c05-q187",
+      "topicId": "cyber-c05-t16",
+      "question": "Associare le protezioni al rischio: bounds checking, canary, DEP, ASLR, CFI.",
+      "answer": "Bounds checking: limiti; canary: alcune sovrascritture stack; DEP: pagine dati eseguibili; ASLR: indirizzi prevedibili; CFI: flusso di controllo deviato.",
+      "detail": "Ogni protezione affronta una diversa componente del rischio e ha limiti. Test, compiler hardening e linguaggi memory-safe rafforzano la prevenzione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare tutte le tecniche come equivalenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.13.6, pagina PDF 80"
+    },
+    {
+      "id": "cyber-c05-q188",
+      "topicId": "cyber-c05-t16",
+      "question": "Quali limiti accomunano sanitizer, SAST e fuzzing?",
+      "answer": "Individuano difetti in sviluppo ma non garantiscono che il software sia privo di errori.",
+      "detail": "La qualità della copertura e le ipotesi del test influiscono sui risultati. Le analisi devono affiancare revisione e progettazione robusta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che l’assenza di segnalazioni equivale a prova di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.13.6, pagina PDF 80"
+    },
+    {
+      "id": "cyber-c05-q189",
+      "topicId": "cyber-c05-t17",
+      "question": "Perché gli attacchi del Capitolo 5 richiedono contromisure differenti?",
+      "answer": "Perché sfruttano debolezze e bersagli diversi: software/endpoint, SQL, browser, risorse di servizio o memoria.",
+      "detail": "Malware: esecuzione nociva; SQLi: composizione di comandi; XSS: rendering browser; DoS: saturazione; overflow: gestione della memoria.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre un singolo prodotto per coprire ogni vulnerabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.14, pagina PDF 80"
+    },
+    {
+      "id": "cyber-c05-q190",
+      "topicId": "cyber-c05-t17",
+      "question": "Perché un antivirus non può correggere una query SQL non parametrizzata?",
+      "answer": "Perché l’antivirus mira principalmente al codice malevolo, mentre la SQLi deriva dal modo in cui l’applicazione costruisce i comandi.",
+      "detail": "Occorre correggere il codice, applicare bind e controllare privilegi e accessi. Sono livelli di difesa diversi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere rilevamento malware e prevenzione delle injection.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.14.1, pagina PDF 80"
+    },
+    {
+      "id": "cyber-c05-q191",
+      "topicId": "cyber-c05-t17",
+      "question": "Perché HTTPS e firewall non sono difese sufficienti contro XSS o overflow?",
+      "answer": "Perché HTTPS protegge il canale e il firewall regola i flussi, ma non correggono dati resi codice nel browser o scritture errate in memoria.",
+      "detail": "L’applicazione deve essere progettata e testata per proteggere output e memoria; rete e trasporto restano difese complementari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non promettere sicurezza applicativa completa con TLS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.14.1, pagina PDF 80"
+    },
+    {
+      "id": "cyber-c05-q192",
+      "topicId": "cyber-c05-t17",
+      "question": "Che cosa dovrebbe comprendere una difesa in profondità per un portale enterprise?",
+      "answer": "Identità, endpoint, rete, codice applicativo, database, logging, monitoraggio, backup e risposta agli incidenti.",
+      "detail": "La logica è ridurre probabilità di successo e impatto residuo quando almeno una misura viene superata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre il concetto a installare più firewall.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.14.1, pagina PDF 80"
+    },
+    {
+      "id": "cyber-c05-q193",
+      "topicId": "cyber-c05-t17",
+      "question": "Quali controlli principali associare a malware, SQLi, XSS, DDoS e buffer overflow?",
+      "answer": "Malware: patch/EDR/recovery; SQLi: bind e privilegi minimi; XSS: encoding e API DOM sicure; DDoS: mitigazione upstream e resilienza; overflow: memory safety, bounds checking e hardening.",
+      "detail": "Il manuale presenta una matrice causa–impatto–controllo; le misure complementari variano secondo asset e architettura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare soltanto la stessa checklist a ogni attacco.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.14.2, pagina PDF 80"
+    },
+    {
+      "id": "cyber-c05-q194",
+      "topicId": "cyber-c05-t17",
+      "question": "Perché gli effetti CIA nella matrice degli attacchi non devono essere letti come esclusivi?",
+      "answer": "Perché un singolo attacco può incidere su più proprietà della sicurezza contemporaneamente.",
+      "detail": "La tabella segnala gli impatti prevalenti: malware C/I/A, SQLi C/I/A, XSS C/I, DoS A, overflow soprattutto I/A e talvolta C.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non escludere riservatezza da un incidente solo perché il suo impatto tipico è disponibilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.14.2, pagina PDF 81"
+    },
+    {
+      "id": "cyber-c05-q195",
+      "topicId": "cyber-c05-t18",
+      "question": "Quali componenti presenta il portale enterprise del caso integrato?",
+      "answer": "Browser, reverse proxy, applicazione Java, database relazionale, autenticazione e logging.",
+      "detail": "Gli utenti hanno privilegi diversi: lettura report, modifica parametri economici o gestione amministrativa. La sicurezza richiede protezione coerente lungo tutti i livelli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il database l’unico asset del portale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.15.1, pagina PDF 81"
+    },
+    {
+      "id": "cyber-c05-q196",
+      "topicId": "cyber-c05-t18",
+      "question": "Quali asset e obiettivi sono critici nel caso del portale offerte?",
+      "answer": "Dati delle offerte, parametri economici, credenziali, simulazioni e disponibilità del servizio.",
+      "detail": "L’alterazione dei prezzi danneggia l’integrità; l’interruzione durante una scadenza può produrre forte impatto economico, anche senza esfiltrazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare la valutazione del rischio alla perdita di dati personali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.15.1, pagina PDF 81"
+    },
+    {
+      "id": "cyber-c05-q197",
+      "topicId": "cyber-c05-t18",
+      "question": "Come analizzeresti una SQLi nel campo ricerca delle offerte del caso integrato?",
+      "answer": "Ingresso HTTP → concatenazione SQL insicura → alterazione della logica → possibile lettura/modifica dati → bind, autorizzazioni e privilegi minimi.",
+      "detail": "La rilevazione comprende query ed errori anomali; la risposta individua la funzione, limita l’esposizione, corregge il codice e verifica la coerenza dei dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non correggere solo il messaggio di errore lasciando la concatenazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.15.2, pagina PDF 81"
+    },
+    {
+      "id": "cyber-c05-q198",
+      "topicId": "cyber-c05-t18",
+      "question": "Come analizzeresti lo XSS in una descrizione condivisa del portale?",
+      "answer": "Campo descrittivo → rendering come HTML non sicuro → esecuzione nel browser → encoding contestuale, API sicure e sanitizzazione se necessaria.",
+      "detail": "CSP e controlli sessione sono aggiuntivi. La risposta comprende rimozione del contenuto dannoso, correzione del rendering e verifica delle sessioni coinvolte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidarsi alla sola validazione dell’input.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.15.3, pagina PDF 81"
+    },
+    {
+      "id": "cyber-c05-q199",
+      "topicId": "cyber-c05-t18",
+      "question": "Come analizzeresti un DDoS durante una campagna commerciale?",
+      "answer": "Endpoint pubblico e risorse saturabili → degrado della disponibilità → mitigazione a monte, rate limiting, caching, limiti e monitoraggio dei colli di bottiglia.",
+      "detail": "La diagnosi usa volumi, errori, latenze e occupazione dei pool; la risposta protegge le funzioni essenziali e applica filtri proporzionati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che una cache possa bloccare da sola la saturazione del collegamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.15.4, pagina PDF 81"
+    },
+    {
+      "id": "cyber-c05-q200",
+      "topicId": "cyber-c05-t18",
+      "question": "Come analizzeresti un allegato malevolo ricevuto dall’operatore?",
+      "answer": "Messaggio/allegato → esecuzione o abuso privilegi → possibile furto dati/credenziali → difese endpoint, MFA, EDR, patching e contenimento.",
+      "detail": "La risposta deve verificare eventuali movimenti laterali, gestire credenziali compromesse e ripristinare da fonti attendibili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare il problema chiuso dopo aver cancellato l’allegato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.15.5, pagina PDF 81"
+    },
+    {
+      "id": "cyber-c05-q201",
+      "topicId": "cyber-c05-t18",
+      "question": "Come prioritizzare gli interventi cyber del caso aziendale?",
+      "answer": "Valutando probabilità, impatto, efficacia dei controlli, costo e rischio residuo per ciascun asset e scenario.",
+      "detail": "Una SQLi su endpoint pubblico può essere urgente; altre iniziative possono essere pianificate secondo esposizione e costo. Non esiste una graduatoria universale valida per tutte le imprese.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ordinare i rischi solo in base alla notorietà dell’attacco.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.15.6, pagina PDF 82"
+    },
+    {
+      "id": "cyber-c05-q202",
+      "topicId": "cyber-c05-t18",
+      "question": "Quali evidenze consentono di giustificare una priorità di sicurezza al management?",
+      "answer": "Esposizione della risorsa, conseguenze economiche e operative, controlli esistenti, costo e beneficio della mitigazione.",
+      "detail": "Il linguaggio gestionale collega vulnerabilità concrete a rischio residuo, continuità operativa, reputazione e integrità delle decisioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non motivare un investimento soltanto con «aumenta la sicurezza».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.15.6, pagina PDF 82"
+    },
+    {
+      "id": "cyber-c05-q203",
+      "topicId": "cyber-c05-t19",
+      "question": "All’orale, perché malware e vulnerabilità non sono sinonimi?",
+      "answer": "Il malware è software malevolo; la vulnerabilità è una debolezza che può essere sfruttata.",
+      "detail": "Un malware può sfruttare una vulnerabilità oppure essere avviato da un utente ingannato senza necessità di un bug software.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che ogni malware è una vulnerabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.16, pagina PDF 82"
+    },
+    {
+      "id": "cyber-c05-q204",
+      "topicId": "cyber-c05-t19",
+      "question": "All’orale, come distingueresti virus, worm e trojan in una sola risposta precisa?",
+      "answer": "Virus infetta un ospite; worm può diffondersi autonomamente; trojan si presenta come software legittimo o utile.",
+      "detail": "Sono criteri differenti che possono coesistere in un malware complesso. La gravità non è il criterio discriminante.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificarli in base alla sola intensità del danno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.16, pagina PDF 82"
+    },
+    {
+      "id": "cyber-c05-q205",
+      "topicId": "cyber-c05-t19",
+      "question": "Perché una rilevazione basata solo su file noti è insufficiente per una campagna persistente?",
+      "answer": "Perché l’avversario può cambiare campioni, utilizzare credenziali valide o strumenti legittimi e mantenere attività distribuite nel tempo.",
+      "detail": "Serve correlare log, identità, endpoint e rete e osservare attività e comportamenti in più fasi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare una APT con il solo hash di un file.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.16, pagina PDF 82"
+    },
+    {
+      "id": "cyber-c05-q206",
+      "topicId": "cyber-c05-t19",
+      "question": "Quale principio accomuna SQLi e XSS, e quale differenza governa le difese?",
+      "answer": "Entrambi derivano dal trattare dati non affidabili come istruzioni; SQLi colpisce SQL/DBMS, XSS il rendering nel browser.",
+      "detail": "SQLi richiede bind per i valori; XSS richiede encoding per contesto, API DOM sicure e sanitizzazione quando necessario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire meccanicamente la stessa difesa da SQLi a XSS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.16, pagina PDF 82"
+    },
+    {
+      "id": "cyber-c05-q207",
+      "topicId": "cyber-c05-t19",
+      "question": "Perché un’organizzazione deve studiare insieme prevenzione, detection, response e recovery?",
+      "answer": "Perché le protezioni possono fallire e bisogna individuare, contenere e ripristinare i sistemi in modo affidabile.",
+      "detail": "Il ciclo già studiato nel Capitolo 1 è applicato a malware, DDoS e vulnerabilità applicative.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 1: ciclo di gestione della sicurezza"
+      ],
+      "mistakes": "Non trattare recovery come un intervento privo di pianificazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.16, pagina PDF 82"
+    },
+    {
+      "id": "cyber-c05-q208",
+      "topicId": "cyber-c05-t19",
+      "question": "Quali sono quattro principi da citare quando si parla di SQL injection all’orale?",
+      "answer": "Query parametrizzate, autorizzazione applicativa, privilegi minimi e logging/test; completare con validazione del dato.",
+      "detail": "La parametrizzazione rimuove la causa sintattica, l’autorizzazione controlla l’accesso, least privilege limita l’impatto e la rilevazione individua tentativi o abusi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che SQL statico o PL/SQL eliminino sempre la necessità di controlli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.16, pagina PDF 83"
+    },
+    {
+      "id": "cyber-c05-q209",
+      "topicId": "cyber-c05-t19",
+      "question": "Come spiegheresti perché una stored procedure può essere vulnerabile senza usare codice offensivo?",
+      "answer": "Se concatena input non affidabile dentro SQL dinamico, il parametro può essere interpretato come parte del comando.",
+      "detail": "La correzione è separare valori tramite bind e restringere a opzioni approvate gli identificatori strutturali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire la vulnerabilità al fatto stesso di usare una stored procedure.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.16, pagina PDF 83"
+    },
+    {
+      "id": "cyber-c05-q210",
+      "topicId": "cyber-c05-t19",
+      "question": "Perché una second-order SQLi rende insufficiente il controllo soltanto all’ingresso dei dati?",
+      "answer": "Perché l’input può essere conservato senza danni immediati ed essere riusato successivamente in una query costruita male.",
+      "detail": "La separazione dato/comando va garantita in ogni punto di esecuzione, anche per valori provenienti da archivi interni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare «viene dal DB» come prova di affidabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.16, pagina PDF 83"
+    },
+    {
+      "id": "cyber-c05-q211",
+      "topicId": "cyber-c05-t19",
+      "question": "Perché un framework con escaping automatico non elimina ogni XSS?",
+      "answer": "Perché inserimenti manuali, sink DOM insicuri o contesti speciali possono aggirare la protezione.",
+      "detail": "È necessario comprendere il contesto di output effettivo e verificare le modalità di rendering sia lato server sia lato client.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fidarsi ciecamente del solo framework.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.16, pagina PDF 83"
+    },
+    {
+      "id": "cyber-c05-q212",
+      "topicId": "cyber-c05-t19",
+      "question": "Perché un CAPTCHA non è soluzione generale contro DDoS e un attacco lento non richiede molta banda?",
+      "answer": "CAPTCHA agisce su interazioni applicative; DDoS può saturare rete o stato connessioni, mentre Slowloris consuma risorse tenendo connessioni aperte lentamente.",
+      "detail": "Le difese devono essere proporzionate al livello colpito: upstream per banda, timeout e proxy per connessioni, ottimizzazione e limiti per funzioni applicative.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ragionare soltanto in termini di numero totale di pacchetti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.16, pagina PDF 84"
+    },
+    {
+      "id": "cyber-c05-q213",
+      "topicId": "cyber-c05-t19",
+      "question": "Perché stack canary, DEP e ASLR non eliminano il buffer overflow?",
+      "answer": "Sono mitigazioni dello sfruttamento: canary rileva alcune sovrascritture, DEP limita esecuzione da pagine dati, ASLR randomizza indirizzi.",
+      "detail": "Il bug di gestione dei limiti rimane e va corretto con memory safety e bounds checking; le difese possono essere combinate per aumentare la resilienza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare hardening come sostituto dello sviluppo sicuro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.16, pagina PDF 84"
+    },
+    {
+      "id": "cyber-c05-q214",
+      "topicId": "cyber-c05-t19",
+      "question": "Come dimostrare capacità di analisi anziché memorizzare i soli nomi delle minacce?",
+      "answer": "Per ogni scenario identificare ingresso, debolezza, tecnica, proprietà compromessa, evidenze, controllo primario, difese complementari e rischio residuo.",
+      "detail": "È il metodo introduttivo esplicito del capitolo e si collega al caso di gestione offerte e alle decisioni manageriali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rispondere soltanto con un elenco di sigle.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.16, pagina PDF 84"
+    },
+    {
+      "id": "cyber-c05-q215",
+      "topicId": "cyber-c05-t20",
+      "question": "Che cosa significano C2, bot e botnet, e come si collegano?",
+      "answer": "C2 è la comunicazione di comando e controllo; bot è un endpoint compromesso controllabile; botnet è una rete coordinata di bot.",
+      "detail": "La relazione aiuta a interpretare comunicazioni periodiche, possibili DDoS o spam e segnali di attività post-compromissione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare il C2 stesso un malware necessariamente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.17, pagina PDF 84"
+    },
+    {
+      "id": "cyber-c05-q216",
+      "topicId": "cyber-c05-t20",
+      "question": "Qual è la differenza fra IOC e hash di file?",
+      "answer": "IOC è una categoria generale di indicatore di compromissione; l’hash del file è un possibile tipo di IOC.",
+      "detail": "Indirizzi, domini e log possono essere IOC. L’hash esatto serve a riconoscere campioni specifici e può cambiare con i byte del file.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere che l’hash identifichi ogni variante della stessa famiglia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.17, pagina PDF 84"
+    },
+    {
+      "id": "cyber-c05-q217",
+      "topicId": "cyber-c05-t20",
+      "question": "Qual è la differenza fra CSP e DEP/NX?",
+      "answer": "CSP limita alcune operazioni di esecuzione e risorse nel browser; DEP/NX limita l’esecuzione di istruzioni in pagine di memoria dati.",
+      "detail": "Operano in domini di sicurezza differenti: web e gestione della memoria del processo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare CSP come misura contro buffer overflow.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.17, pagina PDF 84"
+    },
+    {
+      "id": "cyber-c05-q218",
+      "topicId": "cyber-c05-t20",
+      "question": "Che cosa si intende per NAPT/PAT nel contesto dei protocolli di rete?",
+      "answer": "La traduzione di indirizzi e identificatori di trasporto, spesso porte, per condividere un indirizzo IPv4 esterno.",
+      "detail": "È un concetto di rete richiamato nel glossario e nel Capitolo 0; non coincide con un sistema di rilevazione o prevenzione malware.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 0: NAT e port address translation"
+      ],
+      "mistakes": "Non confondere NAT con firewall o SIEM.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.17, pagina PDF 84"
+    },
+    {
+      "id": "cyber-c05-q219",
+      "topicId": "cyber-c05-t20",
+      "question": "Che cosa significa out-of-band in un contesto SQLi?",
+      "answer": "Un canale di comunicazione diverso da quello della normale risposta applicativa.",
+      "detail": "È possibile solo in configurazioni e permessi specifici del DBMS: l’analisi deve considerare la connettività del server database.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che ogni SQLi implichi un trasferimento di dati fuori banda.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.17, pagina PDF 84"
+    },
+    {
+      "id": "cyber-c05-q220",
+      "topicId": "cyber-c05-t20",
+      "question": "Quale differenza c’è tra exploit e flood?",
+      "answer": "Exploit sfrutta una vulnerabilità; flood è un volume elevato di traffico o richieste mirato a consumare risorse.",
+      "detail": "Il primo descrive una tecnica di sfruttamento; il secondo un comportamento di saturazione utilizzato negli attacchi DoS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare ogni flood come esecuzione di codice.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.17, pagina PDF 84"
+    },
+    {
+      "id": "cyber-c05-q221",
+      "topicId": "cyber-c05-t20",
+      "question": "Perché il glossario distingue buffer, buffer overflow ed exploit?",
+      "answer": "Buffer è un’area di memoria, overflow è una violazione dei limiti, exploit è una tecnica che può sfruttare una debolezza.",
+      "detail": "Si devono separare il componente, il difetto e l’eventuale azione malevola che cerca di trarre vantaggio dal difetto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare buffer overflow l’azione dell’attaccante quando si sta descrivendo il bug.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 5, §5.17, pagina PDF 84"
+    }
+  ]
+}

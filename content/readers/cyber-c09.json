@@ -1,0 +1,107 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Reti radio, mobilità e identità",
+      "concept": "Reti radio, mobilità e identità",
+      "topics": [
+        "cyber-c09-t01",
+        "cyber-c09-t02",
+        "cyber-c09-t03",
+        "cyber-c09-t04",
+        "cyber-c09-t05"
+      ],
+      "pages": [
+        147,
+        148,
+        149,
+        150,
+        151
+      ],
+      "blocks": [
+        {
+          "text": "Nelle reti mobili accesso radio e rete centrale svolgono ruoli distinti. Le credenziali dell’abbonato consentono autenticazione e gestione di profili di sicurezza. La mobilità richiede continuità mentre cambiano cella o punto di accesso."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "LTE e 5G",
+      "concept": "LTE e 5G",
+      "topics": [
+        "cyber-c09-t06",
+        "cyber-c09-t07"
+      ],
+      "pages": [
+        151,
+        153
+      ],
+      "blocks": [
+        {
+          "text": "Confronta componenti di accesso, piano di controllo, piano utente e servizio di autenticazione. Il 5G cambia organizzazione del core e alcune proprietà di identità e sicurezza. La protezione del tratto radio e quella del servizio applicativo hanno obiettivi diversi."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Protezione del Wi‑Fi",
+      "concept": "Protezione del Wi‑Fi",
+      "topics": [
+        "cyber-c09-t09",
+        "cyber-c09-t10",
+        "cyber-c09-t15",
+        "cyber-c09-t16",
+        "cyber-c09-t17"
+      ],
+      "pages": [
+        155,
+        156,
+        159,
+        160,
+        161
+      ],
+      "blocks": [
+        {
+          "text": "Per valutare una WLAN verifica modalità di autenticazione, cifratura, protezione dei frame di gestione e configurazione dei client. Le reti pubbliche e le modalità di transizione richiedono assunzioni esplicite su identità e configurazione."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Progettazione di una WLAN aziendale",
+      "concept": "Progettazione di una WLAN aziendale",
+      "topics": [
+        "cyber-c09-t18",
+        "cyber-c09-t19",
+        "cyber-c09-t20"
+      ],
+      "pages": [
+        161,
+        162,
+        163
+      ],
+      "blocks": [
+        {
+          "text": "Separare ospiti, dispositivi aziendali e IoT consente policy proporzionate. L’autenticazione enterprise deve prevedere verifica attendibile dell’identità del server e gestione di credenziali e configurazioni. La visibilità operativa consente di riesaminare gli accessi e gli endpoint."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "1",
+      "to": "2",
+      "relation": "La mobilità dipende anche dal coordinamento fra accesso e core."
+    },
+    {
+      "from": "1",
+      "to": "3",
+      "relation": "Perimetro radio e autenticazione orientano le misure locali."
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "relation": "La configurazione dei client e la segmentazione estendono la protezione."
+    }
+  ]
+}

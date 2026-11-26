@@ -1,0 +1,2920 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cyber",
+  "source": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8: Protocolli di Sicurezza delle Comunicazioni e dell’accesso, pagine PDF 125–147; unica fonte autorizzata.",
+  "chapter": {
+    "id": "cyber-c08",
+    "title": "Protocolli di Sicurezza delle Comunicazioni e dell’accesso",
+    "order": 8,
+    "topics": [
+      {
+        "id": "cyber-c08-t01",
+        "title": "Protocolli di sicurezza: obiettivi, livelli ed endpoint"
+      },
+      {
+        "id": "cyber-c08-t02",
+        "title": "Posta elettronica: MIME, agenti e percorso del messaggio"
+      },
+      {
+        "id": "cyber-c08-t03",
+        "title": "S/MIME: firma, cifratura e certificati"
+      },
+      {
+        "id": "cyber-c08-t04",
+        "title": "DKIM, SPF e DMARC: verifica del dominio"
+      },
+      {
+        "id": "cyber-c08-t05",
+        "title": "TLS: servizi, architettura e handshake TLS 1.3"
+      },
+      {
+        "id": "cyber-c08-t06",
+        "title": "TLS: certificati, record, forward secrecy e limiti"
+      },
+      {
+        "id": "cyber-c08-t07",
+        "title": "HTTPS: trasporti, proxy e confini di protezione"
+      },
+      {
+        "id": "cyber-c08-t08",
+        "title": "IPsec: VPN, ESP, AH e servizi di sicurezza"
+      },
+      {
+        "id": "cyber-c08-t09",
+        "title": "IPsec: SA, SPD/SAD, modalità e IKEv2"
+      },
+      {
+        "id": "cyber-c08-t10",
+        "title": "Kerberos: KDC, ticket e messaggi di autenticazione"
+      },
+      {
+        "id": "cyber-c08-t11",
+        "title": "Kerberos: durata, realm, SSO e rischi"
+      },
+      {
+        "id": "cyber-c08-t12",
+        "title": "RADIUS: AAA, NAS, 802.1X/EAP e sicurezza"
+      },
+      {
+        "id": "cyber-c08-t13",
+        "title": "OAuth 2.0: ruoli, token, scope e Authorization Code"
+      },
+      {
+        "id": "cyber-c08-t14",
+        "title": "OAuth 2.0: PKCE, sicurezza, OIDC e applicazioni"
+      },
+      {
+        "id": "cyber-c08-t15",
+        "title": "Confronto ragionato e architetture di sicurezza"
+      },
+      {
+        "id": "cyber-c08-t16",
+        "title": "Esercizi applicativi del capitolo"
+      },
+      {
+        "id": "cyber-c08-t17",
+        "title": "Interrogazione orale, glossario e errori concettuali"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§8.1 — pagina PDF 126",
+        "cardIds": [
+          "cyber-c08-q001",
+          "cyber-c08-q002",
+          "cyber-c08-q003"
+        ]
+      },
+      {
+        "label": "§8.1.1 — pagina PDF 126",
+        "cardIds": [
+          "cyber-c08-q004",
+          "cyber-c08-q005",
+          "cyber-c08-q006"
+        ]
+      },
+      {
+        "label": "§8.1.1 — pagina PDF 127",
+        "cardIds": [
+          "cyber-c08-q007"
+        ]
+      },
+      {
+        "label": "§8.2 — pagina PDF 127",
+        "cardIds": [
+          "cyber-c08-q008"
+        ]
+      },
+      {
+        "label": "§8.2.1 — pagina PDF 127",
+        "cardIds": [
+          "cyber-c08-q009",
+          "cyber-c08-q010",
+          "cyber-c08-q011"
+        ]
+      },
+      {
+        "label": "§8.2.2 — pagina PDF 127",
+        "cardIds": [
+          "cyber-c08-q012",
+          "cyber-c08-q013",
+          "cyber-c08-q014",
+          "cyber-c08-q015"
+        ]
+      },
+      {
+        "label": "§8.2.3 — pagina PDF 128",
+        "cardIds": [
+          "cyber-c08-q016"
+        ]
+      },
+      {
+        "label": "§8.3 — pagina PDF 128",
+        "cardIds": [
+          "cyber-c08-q017",
+          "cyber-c08-q018"
+        ]
+      },
+      {
+        "label": "§8.3.1 — pagina PDF 128",
+        "cardIds": [
+          "cyber-c08-q019",
+          "cyber-c08-q020"
+        ]
+      },
+      {
+        "label": "§8.3.2 — pagina PDF 128",
+        "cardIds": [
+          "cyber-c08-q021",
+          "cyber-c08-q022",
+          "cyber-c08-q023",
+          "cyber-c08-q024"
+        ]
+      },
+      {
+        "label": "§8.3.3 — pagina PDF 128",
+        "cardIds": [
+          "cyber-c08-q025",
+          "cyber-c08-q026",
+          "cyber-c08-q027"
+        ]
+      },
+      {
+        "label": "§8.3.4 — pagina PDF 129",
+        "cardIds": [
+          "cyber-c08-q028",
+          "cyber-c08-q029"
+        ]
+      },
+      {
+        "label": "§8.3.5 — pagina PDF 129",
+        "cardIds": [
+          "cyber-c08-q030"
+        ]
+      },
+      {
+        "label": "§8.3.6 — pagina PDF 129",
+        "cardIds": [
+          "cyber-c08-q031",
+          "cyber-c08-q032"
+        ]
+      },
+      {
+        "label": "§8.4 — pagina PDF 129",
+        "cardIds": [
+          "cyber-c08-q033"
+        ]
+      },
+      {
+        "label": "§8.4.1 — pagina PDF 129",
+        "cardIds": [
+          "cyber-c08-q034",
+          "cyber-c08-q035",
+          "cyber-c08-q036"
+        ]
+      },
+      {
+        "label": "§8.4.2 — pagina PDF 129",
+        "cardIds": [
+          "cyber-c08-q037"
+        ]
+      },
+      {
+        "label": "§8.4.2 — pagina PDF 130",
+        "cardIds": [
+          "cyber-c08-q038"
+        ]
+      },
+      {
+        "label": "§8.4.3 — pagina PDF 130",
+        "cardIds": [
+          "cyber-c08-q039",
+          "cyber-c08-q040"
+        ]
+      },
+      {
+        "label": "§8.4.4 — pagina PDF 130",
+        "cardIds": [
+          "cyber-c08-q041",
+          "cyber-c08-q042",
+          "cyber-c08-q043"
+        ]
+      },
+      {
+        "label": "§8.5 — pagina PDF 130",
+        "cardIds": [
+          "cyber-c08-q044"
+        ]
+      },
+      {
+        "label": "§8.5.1 — pagina PDF 130",
+        "cardIds": [
+          "cyber-c08-q045",
+          "cyber-c08-q046"
+        ]
+      },
+      {
+        "label": "§8.5.2 — pagina PDF 131",
+        "cardIds": [
+          "cyber-c08-q047",
+          "cyber-c08-q048",
+          "cyber-c08-q049",
+          "cyber-c08-q050"
+        ]
+      },
+      {
+        "label": "§8.5.3 — pagina PDF 131",
+        "cardIds": [
+          "cyber-c08-q051",
+          "cyber-c08-q052",
+          "cyber-c08-q053",
+          "cyber-c08-q054",
+          "cyber-c08-q055",
+          "cyber-c08-q056"
+        ]
+      },
+      {
+        "label": "§8.5.4 — pagina PDF 132",
+        "cardIds": [
+          "cyber-c08-q057",
+          "cyber-c08-q058"
+        ]
+      },
+      {
+        "label": "§8.5.5 — pagina PDF 132",
+        "cardIds": [
+          "cyber-c08-q059",
+          "cyber-c08-q060"
+        ]
+      },
+      {
+        "label": "§8.5.6 — pagina PDF 132",
+        "cardIds": [
+          "cyber-c08-q061"
+        ]
+      },
+      {
+        "label": "§8.5.7 — pagina PDF 132",
+        "cardIds": [
+          "cyber-c08-q062",
+          "cyber-c08-q063"
+        ]
+      },
+      {
+        "label": "§8.5.8 — pagina PDF 132",
+        "cardIds": [
+          "cyber-c08-q064"
+        ]
+      },
+      {
+        "label": "§8.6 — pagina PDF 132",
+        "cardIds": [
+          "cyber-c08-q065"
+        ]
+      },
+      {
+        "label": "§8.6.1 — pagina PDF 132",
+        "cardIds": [
+          "cyber-c08-q066",
+          "cyber-c08-q067"
+        ]
+      },
+      {
+        "label": "§8.6.2 — pagina PDF 133",
+        "cardIds": [
+          "cyber-c08-q068",
+          "cyber-c08-q069"
+        ]
+      },
+      {
+        "label": "§8.6.3 — pagina PDF 133",
+        "cardIds": [
+          "cyber-c08-q070",
+          "cyber-c08-q071"
+        ]
+      },
+      {
+        "label": "§8.6.4 — pagina PDF 133",
+        "cardIds": [
+          "cyber-c08-q072"
+        ]
+      },
+      {
+        "label": "§8.7 — pagina PDF 133",
+        "cardIds": [
+          "cyber-c08-q073"
+        ]
+      },
+      {
+        "label": "§8.7.1 — pagina PDF 133",
+        "cardIds": [
+          "cyber-c08-q074",
+          "cyber-c08-q075"
+        ]
+      },
+      {
+        "label": "§8.7.2 — pagina PDF 133",
+        "cardIds": [
+          "cyber-c08-q076",
+          "cyber-c08-q077"
+        ]
+      },
+      {
+        "label": "§8.7.3 — pagina PDF 133",
+        "cardIds": [
+          "cyber-c08-q078",
+          "cyber-c08-q079"
+        ]
+      },
+      {
+        "label": "§8.7.3 — pagina PDF 134",
+        "cardIds": [
+          "cyber-c08-q080",
+          "cyber-c08-q081"
+        ]
+      },
+      {
+        "label": "§8.7.4 — pagina PDF 134",
+        "cardIds": [
+          "cyber-c08-q082",
+          "cyber-c08-q083"
+        ]
+      },
+      {
+        "label": "§8.7.5 — pagina PDF 134",
+        "cardIds": [
+          "cyber-c08-q084"
+        ]
+      },
+      {
+        "label": "§8.7.6 — pagina PDF 134",
+        "cardIds": [
+          "cyber-c08-q085",
+          "cyber-c08-q086"
+        ]
+      },
+      {
+        "label": "§8.7.7 — pagina PDF 134",
+        "cardIds": [
+          "cyber-c08-q087",
+          "cyber-c08-q088",
+          "cyber-c08-q089",
+          "cyber-c08-q090"
+        ]
+      },
+      {
+        "label": "§8.7.8 — pagina PDF 135",
+        "cardIds": [
+          "cyber-c08-q091"
+        ]
+      },
+      {
+        "label": "§8.7.9 — pagina PDF 135",
+        "cardIds": [
+          "cyber-c08-q092"
+        ]
+      },
+      {
+        "label": "§8.8 — pagina PDF 135",
+        "cardIds": [
+          "cyber-c08-q093"
+        ]
+      },
+      {
+        "label": "§8.8.1 — pagina PDF 135",
+        "cardIds": [
+          "cyber-c08-q094",
+          "cyber-c08-q095"
+        ]
+      },
+      {
+        "label": "§8.8.2 — pagina PDF 135",
+        "cardIds": [
+          "cyber-c08-q096",
+          "cyber-c08-q097"
+        ]
+      },
+      {
+        "label": "§8.8.2 — pagina PDF 136",
+        "cardIds": [
+          "cyber-c08-q098"
+        ]
+      },
+      {
+        "label": "§8.8.3 — pagina PDF 136",
+        "cardIds": [
+          "cyber-c08-q099",
+          "cyber-c08-q100",
+          "cyber-c08-q101"
+        ]
+      },
+      {
+        "label": "§8.8.4 — pagina PDF 136",
+        "cardIds": [
+          "cyber-c08-q102",
+          "cyber-c08-q103"
+        ]
+      },
+      {
+        "label": "§8.8.5 — pagina PDF 136",
+        "cardIds": [
+          "cyber-c08-q104",
+          "cyber-c08-q105"
+        ]
+      },
+      {
+        "label": "§8.8.6 — pagina PDF 137",
+        "cardIds": [
+          "cyber-c08-q106",
+          "cyber-c08-q107"
+        ]
+      },
+      {
+        "label": "§8.8.7 — pagina PDF 137",
+        "cardIds": [
+          "cyber-c08-q108",
+          "cyber-c08-q109"
+        ]
+      },
+      {
+        "label": "§8.8.8 — pagina PDF 137",
+        "cardIds": [
+          "cyber-c08-q110"
+        ]
+      },
+      {
+        "label": "§8.8.9 — pagina PDF 137",
+        "cardIds": [
+          "cyber-c08-q111"
+        ]
+      },
+      {
+        "label": "§8.9 — pagina PDF 137",
+        "cardIds": [
+          "cyber-c08-q112"
+        ]
+      },
+      {
+        "label": "§8.9.1 — pagina PDF 137",
+        "cardIds": [
+          "cyber-c08-q113",
+          "cyber-c08-q114"
+        ]
+      },
+      {
+        "label": "§8.9.2 — pagina PDF 137",
+        "cardIds": [
+          "cyber-c08-q115",
+          "cyber-c08-q116"
+        ]
+      },
+      {
+        "label": "§8.9.3 — pagina PDF 137",
+        "cardIds": [
+          "cyber-c08-q117",
+          "cyber-c08-q118"
+        ]
+      },
+      {
+        "label": "§8.9.3 — pagina PDF 138",
+        "cardIds": [
+          "cyber-c08-q119"
+        ]
+      },
+      {
+        "label": "§8.9.4 — pagina PDF 138",
+        "cardIds": [
+          "cyber-c08-q120",
+          "cyber-c08-q121"
+        ]
+      },
+      {
+        "label": "§8.9.5 — pagina PDF 138",
+        "cardIds": [
+          "cyber-c08-q122",
+          "cyber-c08-q123"
+        ]
+      },
+      {
+        "label": "§8.9.6 — pagina PDF 138",
+        "cardIds": [
+          "cyber-c08-q124"
+        ]
+      },
+      {
+        "label": "§8.9.7 — pagina PDF 138",
+        "cardIds": [
+          "cyber-c08-q125"
+        ]
+      },
+      {
+        "label": "§8.10 — pagina PDF 138",
+        "cardIds": [
+          "cyber-c08-q126"
+        ]
+      },
+      {
+        "label": "§8.10.1 — pagina PDF 138",
+        "cardIds": [
+          "cyber-c08-q127"
+        ]
+      },
+      {
+        "label": "§8.10.2 — pagina PDF 139",
+        "cardIds": [
+          "cyber-c08-q128",
+          "cyber-c08-q129"
+        ]
+      },
+      {
+        "label": "§8.10.3 — pagina PDF 139",
+        "cardIds": [
+          "cyber-c08-q130",
+          "cyber-c08-q131",
+          "cyber-c08-q132",
+          "cyber-c08-q133",
+          "cyber-c08-q134"
+        ]
+      },
+      {
+        "label": "§8.10.4 — pagina PDF 139",
+        "cardIds": [
+          "cyber-c08-q135",
+          "cyber-c08-q136",
+          "cyber-c08-q137"
+        ]
+      },
+      {
+        "label": "§8.10.5 — pagina PDF 139",
+        "cardIds": [
+          "cyber-c08-q138",
+          "cyber-c08-q139",
+          "cyber-c08-q140"
+        ]
+      },
+      {
+        "label": "§8.10.6 — pagina PDF 140",
+        "cardIds": [
+          "cyber-c08-q141",
+          "cyber-c08-q142",
+          "cyber-c08-q143"
+        ]
+      },
+      {
+        "label": "§8.10.7 — pagina PDF 140",
+        "cardIds": [
+          "cyber-c08-q144",
+          "cyber-c08-q145"
+        ]
+      },
+      {
+        "label": "§8.10.8 — pagina PDF 140",
+        "cardIds": [
+          "cyber-c08-q146",
+          "cyber-c08-q147"
+        ]
+      },
+      {
+        "label": "§8.10.9 — pagina PDF 140",
+        "cardIds": [
+          "cyber-c08-q148",
+          "cyber-c08-q149"
+        ]
+      },
+      {
+        "label": "§8.10.10 — pagina PDF 140",
+        "cardIds": [
+          "cyber-c08-q150"
+        ]
+      },
+      {
+        "label": "§8.10.11 — pagina PDF 141",
+        "cardIds": [
+          "cyber-c08-q151",
+          "cyber-c08-q152"
+        ]
+      },
+      {
+        "label": "§8.11 — pagina PDF 141",
+        "cardIds": [
+          "cyber-c08-q153",
+          "cyber-c08-q154"
+        ]
+      },
+      {
+        "label": "§8.11.1 — pagina PDF 141",
+        "cardIds": [
+          "cyber-c08-q155"
+        ]
+      },
+      {
+        "label": "§8.11.2 — pagina PDF 141",
+        "cardIds": [
+          "cyber-c08-q156"
+        ]
+      },
+      {
+        "label": "§8.11.3 — pagina PDF 141",
+        "cardIds": [
+          "cyber-c08-q157"
+        ]
+      },
+      {
+        "label": "§8.12 — pagina PDF 141",
+        "cardIds": [
+          "cyber-c08-q158"
+        ]
+      },
+      {
+        "label": "§8.12 — pagina PDF 142",
+        "cardIds": [
+          "cyber-c08-q159",
+          "cyber-c08-q160",
+          "cyber-c08-q161",
+          "cyber-c08-q162",
+          "cyber-c08-q163"
+        ]
+      },
+      {
+        "label": "§8.12 — pagina PDF 143",
+        "cardIds": [
+          "cyber-c08-q164"
+        ]
+      },
+      {
+        "label": "§8.13 — pagina PDF 143",
+        "cardIds": [
+          "cyber-c08-q165",
+          "cyber-c08-q166",
+          "cyber-c08-q167"
+        ]
+      },
+      {
+        "label": "§8.13 — pagina PDF 144",
+        "cardIds": [
+          "cyber-c08-q168",
+          "cyber-c08-q169",
+          "cyber-c08-q170"
+        ]
+      },
+      {
+        "label": "§8.13 — pagina PDF 145",
+        "cardIds": [
+          "cyber-c08-q171",
+          "cyber-c08-q172",
+          "cyber-c08-q173"
+        ]
+      },
+      {
+        "label": "§8.13 — pagina PDF 146",
+        "cardIds": [
+          "cyber-c08-q174",
+          "cyber-c08-q175"
+        ]
+      },
+      {
+        "label": "§8.14 — pagina PDF 146",
+        "cardIds": [
+          "cyber-c08-q176",
+          "cyber-c08-q177",
+          "cyber-c08-q178"
+        ]
+      },
+      {
+        "label": "§8.15 — pagina PDF 146",
+        "cardIds": [
+          "cyber-c08-q179"
+        ]
+      },
+      {
+        "label": "§8.15 — pagina PDF 147",
+        "cardIds": [
+          "cyber-c08-q180",
+          "cyber-c08-q181",
+          "cyber-c08-q182",
+          "cyber-c08-q183"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cyber-c08-q001",
+      "topicId": "cyber-c08-t01",
+      "question": "Che cos’è un protocollo di sicurezza?",
+      "answer": "È un insieme di formati, messaggi, procedure e operazioni crittografiche che disciplina una comunicazione rispettando determinati requisiti di sicurezza.",
+      "detail": "Le primitive crittografiche sono gli strumenti di base; il protocollo ne specifica impiego, gestione delle chiavi, identificazione delle controparti, risposta agli errori e chiusura della sessione.",
+      "example": "TLS combina autenticazione, negoziazione delle chiavi e protezione dei record, mentre AES da solo cifra dati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare un algoritmo di cifratura un protocollo completo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.1, pagina PDF 126"
+    },
+    {
+      "id": "cyber-c08-q002",
+      "topicId": "cyber-c08-t01",
+      "question": "Perché cifrare con AES non equivale a instaurare un canale sicuro?",
+      "answer": "AES non stabilisce con chi stiamo comunicando, come autenticare il peer, negoziare chiavi e resistere al replay.",
+      "detail": "Per il canale occorre disciplinare gestione delle sessioni, integrità, identificazione e procedure di errore. TLS definisce una combinazione coerente di strumenti e scambi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che basta scegliere AES-256 per proteggere un sito.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.1, pagina PDF 126"
+    },
+    {
+      "id": "cyber-c08-q003",
+      "topicId": "cyber-c08-t01",
+      "question": "Quali proprietà differenti possono essere necessarie in una comunicazione?",
+      "answer": "Riservatezza, integrità, autenticazione dell’origine, protezione dal replay, autorizzazione e accounting.",
+      "detail": "Un protocollo può fornirne soltanto alcune; le altre richiedono controlli complementari. È inoltre essenziale distinguere protezione del messaggio da protezione del percorso o del diritto di accesso.",
+      "example": "S/MIME può cifrare un messaggio, RADIUS centralizza decisioni AAA, IPsec protegge traffico IP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare cifratura e autorizzazione come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.1, pagina PDF 126"
+    },
+    {
+      "id": "cyber-c08-q004",
+      "topicId": "cyber-c08-t01",
+      "question": "Quali sei domande permettono di valutare qualsiasi protocollo di sicurezza?",
+      "answer": "Che cosa protegge, fra quali endpoint opera, quali proprietà offre, come gestisce chiavi/credenziali, che cosa rimane visibile e quali limiti conserva.",
+      "detail": "Questa griglia si applica a posta, TLS, IPsec, ticket Kerberos, AAA e autorizzazione OAuth. Consente un confronto non superficiale e aiuta a scegliere il controllo adatto al rischio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non valutare un protocollo solo in base all’algoritmo o alla lunghezza della chiave.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.1.1, pagina PDF 126"
+    },
+    {
+      "id": "cyber-c08-q005",
+      "topicId": "cyber-c08-t01",
+      "question": "Che cosa significa individuare gli endpoint crittografici reali?",
+      "answer": "Significa identificare precisamente i due estremi fra i quali una data proprietà di sicurezza viene garantita.",
+      "detail": "Il percorso logico client-database può includere proxy o gateway che decifrano e ricifrano. Un osservatore interno può vedere dati su tratti non coperti da quel canale.",
+      "example": "Il browser è protetto fino a un reverse proxy TLS, non automaticamente fino al backend.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire «end-to-end» senza definire gli estremi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.1.1, pagina PDF 126"
+    },
+    {
+      "id": "cyber-c08-q006",
+      "topicId": "cyber-c08-t01",
+      "question": "Perché è importante domandarsi quali metadati restano visibili?",
+      "answer": "Perché la cifratura del contenuto non nasconde necessariamente indirizzi, identità dei gateway, orari, volume o intestazioni necessarie all’instradamento.",
+      "detail": "La parte ancora osservabile può consentire analisi del traffico o rivelare relazioni fra soggetti. La protezione deve essere valutata rispetto alla minaccia concreta.",
+      "example": "S/MIME non rende automaticamente segreti tutti gli header esterni della e-mail.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Riservatezza del contenuto e invisibilità della comunicazione non sono equivalenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.1.1, pagina PDF 126"
+    },
+    {
+      "id": "cyber-c08-q007",
+      "topicId": "cyber-c08-t01",
+      "question": "Qual è la funzione principale di S/MIME, DKIM, TLS, IPsec, Kerberos, RADIUS e OAuth 2.0?",
+      "answer": "S/MIME protegge il contenuto MIME; DKIM firma per dominio; TLS il canale; IPsec il traffico IP; Kerberos autentica tramite ticket; RADIUS gestisce AAA; OAuth 2.0 delega autorizzazioni.",
+      "detail": "La tabella comparativa del manuale identifica per ciascuno endpoint e limiti. Nessuno sostituisce automaticamente gli altri, perché risponde a esigenze diverse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che tutti questi protocolli «servono a cifrare i dati».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.1.1, pagina PDF 127"
+    },
+    {
+      "id": "cyber-c08-q008",
+      "topicId": "cyber-c08-t02",
+      "question": "Quale percorso segue normalmente una e-mail prima di arrivare al destinatario?",
+      "answer": "Il programma mittente sottopone il messaggio al sistema di posta; uno o più server lo trasferiscono; un agente lo consegna e un deposito lo conserva fino alla lettura.",
+      "detail": "L’invio non è generalmente una comunicazione diretta e permanente tra i due programmi di posta. Ogni passaggio può avere politiche, controlli e protezione del trasporto differenti.",
+      "example": "MUA → MSA → MTA intermedi → MDA → Message Store → MUA destinatario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che una singola sessione TLS copra tutta la catena.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.2, pagina PDF 127"
+    },
+    {
+      "id": "cyber-c08-q009",
+      "topicId": "cyber-c08-t02",
+      "question": "Che cos’è MIME e che cosa aggiunge alla posta elettronica?",
+      "answer": "Multipurpose Internet Mail Extensions: specifiche che permettono testi con codifiche diverse, HTML, allegati binari e messaggi multipart.",
+      "detail": "MIME definisce la struttura delle entità e il modo di interpretarne le parti; non offre, da solo, firma o cifratura. S/MIME applica la sicurezza proprio alle entità MIME.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "MIME e S/MIME non sono intercambiabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.2.1, pagina PDF 127"
+    },
+    {
+      "id": "cyber-c08-q010",
+      "topicId": "cyber-c08-t02",
+      "question": "Qual è la differenza tra header generali della e-mail e header MIME?",
+      "answer": "I primi descrivono il messaggio e i destinatari, ad esempio From, To, Date, Subject; i secondi descrivono il contenuto e la sua codifica.",
+      "detail": "Content-Type, Content-Transfer-Encoding e delimitatori multipart rendono interpretabili il corpo e gli allegati. Separare le due classi è importante per capire quali metadati vengono protetti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere Subject con Content-Type.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.2.1, pagina PDF 127"
+    },
+    {
+      "id": "cyber-c08-q011",
+      "topicId": "cyber-c08-t02",
+      "question": "Perché MIME non garantisce riservatezza, anche se include allegati codificati?",
+      "answer": "Perché la codifica dei contenuti descrive la rappresentazione, non impiega necessariamente chiavi crittografiche.",
+      "detail": "Un file reso trasportabile tramite una codifica binaria o testuale rimane decodificabile da chi dispone dei dati. Firma e cifratura richiedono estensioni specifiche come S/MIME.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la codifica Base64 una cifratura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.2.1, pagina PDF 127"
+    },
+    {
+      "id": "cyber-c08-q012",
+      "topicId": "cyber-c08-t02",
+      "question": "Che ruolo ha il MUA (Mail User Agent)?",
+      "answer": "È il programma con cui l’utente scrive, legge, gestisce e organizza le e-mail.",
+      "detail": "Può essere un client desktop, mobile o web. Se supporta S/MIME e dispone delle chiavi può firmare, verificare e decifrare i messaggi.",
+      "example": "Un client di posta con certificato personale firma un allegato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere MUA con il server che instrada la posta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.2.2, pagina PDF 127"
+    },
+    {
+      "id": "cyber-c08-q013",
+      "topicId": "cyber-c08-t02",
+      "question": "Che cosa fa il MSA rispetto al MTA?",
+      "answer": "Il MSA riceve e controlla la posta in uscita dal client; il MTA la trasferisce fra server, prevalentemente tramite SMTP.",
+      "detail": "L’MSA applica policy di submission, autenticazione e rifiuto; uno o più MTA si occupano di instradamento e tentativi di consegna verso il dominio destinatario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire al MTA il compito principale di gestire l’interfaccia utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.2.2, pagina PDF 127"
+    },
+    {
+      "id": "cyber-c08-q014",
+      "topicId": "cyber-c08-t02",
+      "question": "Qual è la differenza tra MDA e Message Store?",
+      "answer": "Il MDA consegna la posta nella destinazione prevista; il Message Store è il deposito persistente dei messaggi.",
+      "detail": "Una volta depositato, il destinatario può consultare il messaggio tramite il MUA, ad esempio usando IMAP o un’interfaccia web. Consegna e lettura sono fasi distinte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire il deposito come un canale TLS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.2.2, pagina PDF 127"
+    },
+    {
+      "id": "cyber-c08-q015",
+      "topicId": "cyber-c08-t02",
+      "question": "Perché una e-mail può essere esposta a più soggetti intermedi?",
+      "answer": "Perché attraversa sistemi di submission, trasferimento, consegna e memorizzazione, non una connessione unica fra mittente e destinatario.",
+      "detail": "Ogni componente può trattare messaggi e metadati; anche quando i collegamenti usano TLS, i server autorizzati che terminano il canale possono gestire i dati in chiaro.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la protezione hop-by-hop con quella del contenuto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.2.2, pagina PDF 127"
+    },
+    {
+      "id": "cyber-c08-q016",
+      "topicId": "cyber-c08-t02",
+      "question": "Come distingui la sicurezza del singolo collegamento dalla sicurezza persistente del messaggio?",
+      "answer": "TLS protegge uno specifico collegamento; S/MIME protegge il contenuto MIME che può rimanere cifrato anche dopo inoltro e deposito.",
+      "detail": "La protezione del canale termina ai suoi endpoint; la protezione del contenuto segue il messaggio, purché le chiavi dei destinatari rimangano custodite. Sono due misure complementari.",
+      "example": "Un contratto cifrato con S/MIME rimane illeggibile al server di posta che non dispone della chiave di decifratura.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare SMTP/TLS equivalente alla cifratura end-to-end del corpo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.2.3, pagina PDF 128"
+    },
+    {
+      "id": "cyber-c08-q017",
+      "topicId": "cyber-c08-t03",
+      "question": "Che cos’è S/MIME e quale livello della comunicazione protegge?",
+      "answer": "Secure/Multipurpose Internet Mail Extensions è una famiglia di specifiche per firmare e/o cifrare entità MIME, proteggendo il contenuto di una e-mail.",
+      "detail": "S/MIME 4.0 è trattato dalla RFC 8551 e impiega strutture CMS. Le sue protezioni non dipendono dal numero di server SMTP attraversati: sono applicate al contenuto, non al mero hop di rete.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere S/MIME con SMTP, che si occupa di trasferimento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3, pagina PDF 128"
+    },
+    {
+      "id": "cyber-c08-q018",
+      "topicId": "cyber-c08-t03",
+      "question": "Qual è il rapporto fra S/MIME, MIME e CMS?",
+      "answer": "MIME definisce contenuti e struttura del messaggio; S/MIME aggiunge le operazioni di sicurezza; CMS fornisce le strutture crittografiche usate da S/MIME.",
+      "detail": "La differenza è architetturale: formattazione, protocollo di protezione del contenuto e contenitore crittografico sono concetti con ruoli distinti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che CMS è un server di posta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3, pagina PDF 128"
+    },
+    {
+      "id": "cyber-c08-q019",
+      "topicId": "cyber-c08-t03",
+      "question": "Che cosa garantisce la firma S/MIME e che cosa non garantisce?",
+      "answer": "Permette di verificare l’integrità dei dati firmati e il collegamento crittografico alla chiave del firmatario, ma non rende segreto il contenuto.",
+      "detail": "La verifica presuppone una chiave pubblica attendibile e una chiave privata correttamente custodita. La provenienza crittografica non equivale alla veridicità del messaggio o all’assenza di malware.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che firmare = cifrare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.1, pagina PDF 128"
+    },
+    {
+      "id": "cyber-c08-q020",
+      "topicId": "cyber-c08-t03",
+      "question": "Che cosa garantisce la cifratura S/MIME e che cosa non dimostra?",
+      "answer": "Protegge la riservatezza del contenuto MIME verso chi non possiede il materiale necessario, ma non prova automaticamente l’identità di chi lo ha scritto.",
+      "detail": "Se serve verificare anche origine e integrità del mittente, si ricorre alla firma oltre alla cifratura; i destinatari devono possedere le relative chiavi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una e-mail soltanto cifrata non è automaticamente autenticata come proveniente da Alice.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.1, pagina PDF 128"
+    },
+    {
+      "id": "cyber-c08-q021",
+      "topicId": "cyber-c08-t03",
+      "question": "Perché S/MIME usa normalmente crittografia ibrida?",
+      "answer": "Perché cifra efficientemente i dati con una chiave simmetrica temporanea e protegge il materiale per recuperarla mediante meccanismi a chiave pubblica.",
+      "detail": "Ogni destinatario autorizzato riceve il materiale crittografico necessario tramite un meccanismo appropriato alla propria chiave pubblica. La cifratura asimmetrica diretta dell’intero allegato sarebbe meno efficiente.",
+      "example": "Un allegato commerciale viene cifrato una volta; il materiale per la chiave viene protetto per ciascun destinatario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che tutti i byte dell’allegato vengono cifrati direttamente con RSA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.2, pagina PDF 128"
+    },
+    {
+      "id": "cyber-c08-q022",
+      "topicId": "cyber-c08-t03",
+      "question": "Quali chiavi usa S/MIME per firmare e per verificare una firma?",
+      "answer": "Il mittente genera la firma con la propria chiave privata; il destinatario la verifica con la corrispondente chiave pubblica attendibile.",
+      "detail": "Il certificato X.509 aiuta a collegare chiave pubblica e identità. La verifica deve comprendere la catena, la validità, gli usi ammessi e le condizioni di revoca pertinenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire chiave privata del firmatario e chiave pubblica del verificatore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.2, pagina PDF 128"
+    },
+    {
+      "id": "cyber-c08-q023",
+      "topicId": "cyber-c08-t03",
+      "question": "Quali verifiche sui certificati sono necessarie in S/MIME?",
+      "answer": "Catena di certificazione, validità temporale, usi autorizzati della chiave e, quando pertinente, stato di revoca.",
+      "detail": "Una firma matematica corretta verificata con una chiave non attendibile non basta per attribuire correttamente il messaggio all’identità dichiarata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fidarsi di qualunque certificato solo perché contiene una chiave pubblica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.2, pagina PDF 128"
+    },
+    {
+      "id": "cyber-c08-q024",
+      "topicId": "cyber-c08-t03",
+      "question": "Che cosa accade se sono compromesse le chiavi private di mittente o destinatario?",
+      "answer": "La chiave privata del mittente compromessa può essere usata per firmare falsamente; quella del destinatario può esporre la riservatezza dei messaggi a lui destinati.",
+      "detail": "Il rischio dipende dalle chiavi e dalle strutture effettivamente utilizzate. Certificati e tecnologia non sostituiscono custodia, revoca e gestione del ciclo di vita.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare la compromissione della chiave del destinatario come sola perdita d’identità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.2, pagina PDF 128"
+    },
+    {
+      "id": "cyber-c08-q025",
+      "topicId": "cyber-c08-t03",
+      "question": "Come funziona il caso S/MIME con sola firma?",
+      "answer": "Alice firma il contenuto; Bob riceve il testo leggibile e verifica firma, integrità e origine crittografica.",
+      "detail": "Una firma utile a dimostrare l’associazione con la chiave non rende il contenuto riservato: i soggetti in grado di vedere il messaggio possono leggerlo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un messaggio firmato con un messaggio cifrato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.3, pagina PDF 128"
+    },
+    {
+      "id": "cyber-c08-q026",
+      "topicId": "cyber-c08-t03",
+      "question": "Come funziona il caso S/MIME con sola cifratura?",
+      "answer": "Alice cifra il contenuto per Bob; Bob lo decifra con il materiale crittografico appropriato, ma l’operazione da sola non identifica Alice.",
+      "detail": "La cifratura tutela soprattutto il contenuto durante trasporto e deposito; se serve autenticità del mittente è necessario un meccanismo aggiuntivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La confidenzialità non implica automaticamente la firma.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.3, pagina PDF 128"
+    },
+    {
+      "id": "cyber-c08-q027",
+      "topicId": "cyber-c08-t03",
+      "question": "Qual è la sequenza «firma e poi cifra» in S/MIME?",
+      "answer": "Alice firma il contenuto e cifra la struttura comprendente firma e messaggio; Bob prima decifra e poi verifica la firma.",
+      "detail": "Con meccanismi e chiavi corretti si combinano riservatezza del contenuto e verifica crittografica di origine e integrità. L’ordine delle operazioni è importante per descrivere l’elaborazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che Bob deve verificare una firma nascosta dentro il cifrato prima di decifrare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.3, pagina PDF 128"
+    },
+    {
+      "id": "cyber-c08-q028",
+      "topicId": "cyber-c08-t03",
+      "question": "S/MIME rende segreti mittente, destinatario e oggetto di una e-mail?",
+      "answer": "No: alcuni header esterni e i metadati necessari al trasporto possono restare visibili, anche quando il contenuto MIME è cifrato.",
+      "detail": "Le forme tradizionali hanno concentrato la protezione sul corpo. La RFC 9788 (2025) migliora i meccanismi di protezione delle intestazioni, ma non elimina ogni dato indispensabile alla consegna.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non promettere l’anonimato completo con S/MIME.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.4, pagina PDF 129"
+    },
+    {
+      "id": "cyber-c08-q029",
+      "topicId": "cyber-c08-t03",
+      "question": "Qual è il significato della RFC 9788 citata nel manuale?",
+      "answer": "Aggiorna la protezione crittografica delle intestazioni dei messaggi S/MIME, migliorandone integrità, autenticità e, dove possibile, riservatezza.",
+      "detail": "È un aggiornamento relativo a una debolezza storica della protezione dei metadati. Le informazioni di instradamento necessarie ai server non possono scomparire integralmente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire allo standard la cancellazione di tutti i metadati SMTP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.4, pagina PDF 129"
+    },
+    {
+      "id": "cyber-c08-q030",
+      "topicId": "cyber-c08-t03",
+      "question": "Quale soluzione useresti per un contratto riservato che attraversa provider esterni?",
+      "answer": "S/MIME cifrato per il destinatario e, se occorre provare origine e integrità, anche firmato dal mittente.",
+      "detail": "SMTP/TLS protegge i collegamenti ma non garantisce che copie e tappe intermedie non vedano il testo. La cifratura del contenuto persiste finché le chiavi rimangono al sicuro.",
+      "example": "Ufficio acquisti che invia una proposta economica al consulente esterno.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire la cifratura del contenuto con il solo lucchetto del client di posta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.5, pagina PDF 129"
+    },
+    {
+      "id": "cyber-c08-q031",
+      "topicId": "cyber-c08-t03",
+      "question": "Quali problemi organizzativi introduce S/MIME?",
+      "answer": "Distribuzione, rinnovo e validazione dei certificati; custodia e recupero delle chiavi; gestione della perdita delle chiavi e degli archivi storici.",
+      "detail": "Se la chiave per vecchi messaggi viene persa, la disponibilità degli archivi cifrati può essere compromessa. Servono policy aziendali che bilancino sicurezza e recuperabilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non progettare solo l’invio ignorando backup e rinnovo delle chiavi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.6, pagina PDF 129"
+    },
+    {
+      "id": "cyber-c08-q032",
+      "topicId": "cyber-c08-t03",
+      "question": "Una firma S/MIME valida dimostra che un allegato è innocuo?",
+      "answer": "No: dimostra soltanto proprietà crittografiche relative al contenuto e alla chiave, non l’assenza di contenuti malevoli.",
+      "detail": "Anche un titolare legittimo potrebbe avere firmato inconsapevolmente un file dannoso; una chiave compromessa potrebbe essere utilizzata dall’attaccante.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Firma valida non equivale a scansione antivirus superata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.3.6, pagina PDF 129"
+    },
+    {
+      "id": "cyber-c08-q033",
+      "topicId": "cyber-c08-t04",
+      "question": "Che cosa fa DKIM e in che cosa si differenzia da S/MIME?",
+      "answer": "DKIM associa una firma a un dominio mittente su parti selezionate della e-mail; S/MIME firma e/o cifra il contenuto per specifici mittenti/destinatari.",
+      "detail": "DKIM viene comunemente applicato dall’infrastruttura del dominio. Il risultato non è un messaggio cifrato né una firma personale end-to-end.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare DKIM un sostituto della firma S/MIME.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.4, pagina PDF 129"
+    },
+    {
+      "id": "cyber-c08-q034",
+      "topicId": "cyber-c08-t04",
+      "question": "Come viene prodotta una firma DKIM?",
+      "answer": "Il server autorizzato seleziona e canonicalizza corpo e header, calcola un digest e firma con la chiave privata del dominio.",
+      "detail": "Il campo DKIM-Signature contiene parametri quali d= (dominio), s= (selettore), h= (header firmati), bh= (digest del corpo) e b= (firma). Solo i dati previsti sono coperti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a DKIM la firma indistinta di ogni singolo campo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.4.1, pagina PDF 129"
+    },
+    {
+      "id": "cyber-c08-q035",
+      "topicId": "cyber-c08-t04",
+      "question": "A cosa serve la canonicalizzazione in DKIM?",
+      "answer": "A normalizzare il contenuto secondo regole definite per consentire la verifica anche dopo alcune trasformazioni lecite durante il trasferimento.",
+      "detail": "Spaziature e rappresentazioni del testo possono cambiare tra server. Una canonicalizzazione più o meno tollerante influenza quali modifiche invalidano la firma.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretarla come cifratura del messaggio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.4.1, pagina PDF 129"
+    },
+    {
+      "id": "cyber-c08-q036",
+      "topicId": "cyber-c08-t04",
+      "question": "Quale funzione svolgono d=, s=, h=, bh= e b= nella DKIM-Signature?",
+      "answer": "d= dominio firmatario; s= selettore della chiave; h= header coperti; bh= hash del corpo; b= valore della firma.",
+      "detail": "Il verificatore usa dominio e selettore per trovare la chiave pubblica, segue la canonicalizzazione indicata e controlla digest e firma.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere bh= (digest) con b= (firma digitale).",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.4.1, pagina PDF 129"
+    },
+    {
+      "id": "cyber-c08-q037",
+      "topicId": "cyber-c08-t04",
+      "question": "Dove viene pubblicata la chiave pubblica DKIM?",
+      "answer": "Nel DNS del dominio firmatario, tipicamente all’indirizzo selettore._domainkey.dominio.",
+      "detail": "Il server ricevente ricava dominio e selettore dalla firma e ottiene la chiave pertinente per la verifica dei dati canonicalizzati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cercare una chiave privata nel DNS: viene pubblicata la chiave di verifica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.4.2, pagina PDF 129"
+    },
+    {
+      "id": "cyber-c08-q038",
+      "topicId": "cyber-c08-t04",
+      "question": "Quali passaggi compie un verificatore DKIM?",
+      "answer": "Legge selettore e dominio, recupera la chiave pubblica DNS, canonicalizza i dati ricevuti, controlla digest del corpo e firma.",
+      "detail": "Una verifica positiva associa crittograficamente al dominio i campi coperti, non dimostra la sicurezza o la legittimità del contenuto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre dalla verifica positiva che la persona nel campo From sia certa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.4.2, pagina PDF 130"
+    },
+    {
+      "id": "cyber-c08-q039",
+      "topicId": "cyber-c08-t04",
+      "question": "Quali garanzie DKIM non offre?",
+      "answer": "Non cifra i messaggi, non prova automaticamente l’identità personale del mittente e non impedisce necessariamente phishing o malware.",
+      "detail": "Inoltri, liste e modifiche dei messaggi possono invalidare una firma; alcuni header possono non essere firmati. Un dominio simile a quello autentico può avere una firma DKIM valida.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che DKIM garantisca riservatezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.4.3, pagina PDF 130"
+    },
+    {
+      "id": "cyber-c08-q040",
+      "topicId": "cyber-c08-t04",
+      "question": "Perché un messaggio fraudolento può superare DKIM?",
+      "answer": "Perché il dominio effettivamente firmatario può essere controllato dal truffatore o può essere compromesso, e DKIM non giudica il contenuto.",
+      "detail": "La firma prova il legame con una chiave del dominio; l’analisi di reputazione, i controlli antiphishing e l’attenzione al dominio visibile restano necessari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "DKIM valido non significa «nessuna frode».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.4.3, pagina PDF 130"
+    },
+    {
+      "id": "cyber-c08-q041",
+      "topicId": "cyber-c08-t04",
+      "question": "A cosa serve SPF?",
+      "answer": "Permette a un dominio di dichiarare quali server sono autorizzati a inviare posta per determinate identità di dominio nel contesto SMTP.",
+      "detail": "SPF riguarda l’autorizzazione dei server mittenti rispetto al dominio verificato. Non cifra il corpo né equivale alla firma individuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere SPF come una cifratura e-mail.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.4.4, pagina PDF 130"
+    },
+    {
+      "id": "cyber-c08-q042",
+      "topicId": "cyber-c08-t04",
+      "question": "A cosa serve DMARC rispetto a DKIM e SPF?",
+      "answer": "Utilizza risultati SPF e/o DKIM con regole di allineamento al dominio From visibile, esprimendo policy e reporting.",
+      "detail": "Aiuta a contrastare alcune falsificazioni di dominio, perché non considera sufficienti verifiche scollegate dal dominio che l’utente vede. Rimangono possibili altre truffe.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’allineamento di dominio con la verifica dell’identità fisica dell’autore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.4.4, pagina PDF 130"
+    },
+    {
+      "id": "cyber-c08-q043",
+      "topicId": "cyber-c08-t04",
+      "question": "Come confronteresti S/MIME, DKIM e SPF/DMARC all’orale?",
+      "answer": "S/MIME protegge il contenuto con firma/cifratura; DKIM associa firme al dominio; SPF/DMARC controllano autorizzazione e allineamento dei domini di posta.",
+      "detail": "S/MIME opera tipicamente presso client/servizi compatibili e usa certificati; DKIM viene applicato dall’infrastruttura e verificato via DNS; SPF/DMARC richiedono configurazioni DNS e server.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare i tre strumenti come alternative equivalenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.4.4, pagina PDF 130"
+    },
+    {
+      "id": "cyber-c08-q044",
+      "topicId": "cyber-c08-t05",
+      "question": "Che cos’è TLS e fra quali estremi protegge la comunicazione?",
+      "answer": "Transport Layer Security protegge il traffico applicativo fra due endpoint TLS, fornendo una relazione crittografica di canale.",
+      "detail": "Gli endpoint possono essere browser e web server oppure browser e reverse proxy. La protezione non si estende automaticamente oltre il punto in cui TLS viene terminato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che TLS cifra tutto il percorso logico fino al database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5, pagina PDF 130"
+    },
+    {
+      "id": "cyber-c08-q045",
+      "topicId": "cyber-c08-t05",
+      "question": "Quali servizi di sicurezza fornisce normalmente TLS?",
+      "answer": "Riservatezza e integrità del traffico protetto, autenticazione del server tramite certificato e, quando configurata, autenticazione del client.",
+      "detail": "La protezione è circoscritta agli endpoint TLS. La cifratura del canale non elimina SQL injection, malware, controlli autorizzativi errati o uso di certificati falsamente attendibili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare TLS come un antivirus o un meccanismo di controllo dei privilegi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.1, pagina PDF 130"
+    },
+    {
+      "id": "cyber-c08-q046",
+      "topicId": "cyber-c08-t05",
+      "question": "Che cos’è mTLS rispetto al modello TLS più comune?",
+      "answer": "È un uso di TLS che richiede anche l’autenticazione del client, oltre a quella normalmente richiesta del server.",
+      "detail": "In un’architettura enterprise può rafforzare l’identificazione dei peer di una comunicazione, ma non determina automaticamente i permessi applicativi associati a ciascuna identità.",
+      "example": "Un gateway aziendale chiede un certificato valido al client prima di consentire il canale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un certificato client non sostituisce la policy sulle operazioni autorizzate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.1, pagina PDF 130"
+    },
+    {
+      "id": "cyber-c08-q047",
+      "topicId": "cyber-c08-t05",
+      "question": "Quali componenti caratterizzano il modello didattico storico della suite TLS?",
+      "answer": "Record Protocol, Handshake Protocol, Change Cipher Spec, Alert e un’estensione facoltativa Heartbeat.",
+      "detail": "Il Record protegge unità di dati; l’Handshake negozia chiavi e parametri; Alert notifica errori e chiusure. CCS ha un ruolo storico; Heartbeat è separata e non necessaria per TLS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare i dettagli di TLS 1.2 automaticamente a TLS 1.3.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.2, pagina PDF 131"
+    },
+    {
+      "id": "cyber-c08-q048",
+      "topicId": "cyber-c08-t05",
+      "question": "Che differenza esiste tra Handshake Protocol e Record Protocol?",
+      "answer": "Handshake stabilisce parametri, identità e segreti; Record incapsula e protegge i dati trasmessi nella sessione.",
+      "detail": "Alcuni messaggi di handshake possono essere protetti dai meccanismi negoziati. In TLS 1.3 il Record Protocol usa AEAD, che integra cifratura e autenticazione dei dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che il Record Protocol rilascia certificati o negozia i peer.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.2, pagina PDF 131"
+    },
+    {
+      "id": "cyber-c08-q049",
+      "topicId": "cyber-c08-t05",
+      "question": "Come cambia Change Cipher Spec passando dalla rappresentazione storica a TLS 1.3?",
+      "answer": "In TLS 1.2 segnalava il passaggio ai nuovi parametri; in TLS 1.3 può comparire soltanto per compatibilità con dispositivi intermedi.",
+      "detail": "Non controlla la vera attivazione delle chiavi come nel modello precedente. Il manuale distingue esplicitamente il ruolo storico dal comportamento moderno.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che TLS 1.3 deve attendere CCS per iniziare la cifratura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.2, pagina PDF 131"
+    },
+    {
+      "id": "cyber-c08-q050",
+      "topicId": "cyber-c08-t05",
+      "question": "Perché non è corretto presentare TLS 1.3 come «MAC separato più cifratura»?",
+      "answer": "Perché TLS 1.3 utilizza cifratura autenticata AEAD a livello Record, non uno schema universale di MAC separato e successiva cifratura.",
+      "detail": "Le proprietà crittografiche dipendono da versione e suite; il modello storico serve a comprendere l’evoluzione, non a descrivere ogni connessione attuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mescolare le suite delle vecchie versioni con TLS 1.3.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.2, pagina PDF 131"
+    },
+    {
+      "id": "cyber-c08-q051",
+      "topicId": "cyber-c08-t05",
+      "question": "Quali obiettivi deve raggiungere l’handshake TLS prima del traffico applicativo?",
+      "answer": "Selezionare parametri compatibili, stabilire segreti e chiavi di sessione e autenticare le identità richieste.",
+      "detail": "L’accordo crittografico avviene con una sequenza di messaggi. La verifica del certificato e la protezione della trascrizione sono indispensabili per evitare connessioni verso peer non attesi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre l’handshake a uno scambio della password del server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.3, pagina PDF 131"
+    },
+    {
+      "id": "cyber-c08-q052",
+      "topicId": "cyber-c08-t05",
+      "question": "Che cosa propone ClientHello in TLS 1.3?",
+      "answer": "Versioni supportate, suite crittografiche, materiale casuale, informazioni di key exchange ed eventuali estensioni.",
+      "detail": "È il primo messaggio logico di negoziazione; il server risponde con ServerHello scegliendo parametri compatibili e contribuendo allo stabilimento dei segreti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere ClientHello con una richiesta HTTP applicativa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.3, pagina PDF 131"
+    },
+    {
+      "id": "cyber-c08-q053",
+      "topicId": "cyber-c08-t05",
+      "question": "Che cosa comunica ServerHello nel modello TLS 1.3?",
+      "answer": "La selezione dei parametri compatibili e il contributo del server allo stabilimento del segreto condiviso.",
+      "detail": "Dopo ServerHello molti dei messaggi successivi sono protetti. Il server fornisce informazioni autenticative e il client ne verifica la correttezza prima di fidarsi del canale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare ServerHello come certificazione automatica dell’identità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.3, pagina PDF 131"
+    },
+    {
+      "id": "cyber-c08-q054",
+      "topicId": "cyber-c08-t05",
+      "question": "Quali messaggi possono seguire ServerHello in un handshake TLS 1.3 autenticato con certificato?",
+      "answer": "EncryptedExtensions, Certificate, CertificateVerify e Finished del server; quindi Finished del client dopo i controlli.",
+      "detail": "Certificate presenta i certificati, CertificateVerify prova il possesso della chiave privata e Finished conferma crittograficamente la procedura. La sequenza è un modello introduttivo, non ogni variante TLS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare il nome CertificateVerify con la validazione completa della catena eseguita dal client.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.3, pagina PDF 131"
+    },
+    {
+      "id": "cyber-c08-q055",
+      "topicId": "cyber-c08-t05",
+      "question": "Qual è il ruolo di CertificateVerify e Finished in TLS 1.3?",
+      "answer": "CertificateVerify fornisce una prova crittografica relativa alla chiave privata; Finished verifica che lo scambio crittografico sia coerente.",
+      "detail": "Si combinano controlli sul possesso della chiave associata al certificato e sulla trascrizione dell’handshake. HKDF deriva i segreti usati per proteggere i dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un certificato ricevuto da solo non basta a concludere che la negoziazione sia autentica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.3, pagina PDF 131"
+    },
+    {
+      "id": "cyber-c08-q056",
+      "topicId": "cyber-c08-t05",
+      "question": "A che cosa serve HKDF nel funzionamento di TLS 1.3?",
+      "answer": "A derivare materiale crittografico e chiavi di sessione dai segreti stabiliti durante la negoziazione.",
+      "detail": "Il protocollo non usa la chiave pubblica del certificato per cifrare direttamente ogni dato applicativo; stabilisce segreti da cui ottiene efficienti chiavi simmetriche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere firma del certificato con cifratura dell’intero traffico tramite chiave RSA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.3, pagina PDF 131"
+    },
+    {
+      "id": "cyber-c08-q057",
+      "topicId": "cyber-c08-t06",
+      "question": "Quali controlli deve effettuare un client sul certificato di un server TLS?",
+      "answer": "Corrispondenza del nome, validità temporale, catena verso una CA fidata, usi consentiti e verifiche previste dal contesto.",
+      "detail": "Un certificato solo presente o matematicamente firmato non basta: serve verificare che attesti proprio il servizio richiesto. Il client deve inoltre valutare le prove dell’handshake.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una connessione cifrata con un server sbagliato non autentica la destinazione corretta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.4, pagina PDF 132"
+    },
+    {
+      "id": "cyber-c08-q058",
+      "topicId": "cyber-c08-t06",
+      "question": "Perché la verifica del nome del server è essenziale anche con una CA attendibile?",
+      "answer": "Perché un certificato valido per un servizio diverso non dimostra l’identità del dominio richiesto.",
+      "detail": "La catena di certificazione collega la chiave a un’identità specifica. Il client deve controllare che quell’identità sia compatibile con la richiesta effettiva.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a «il certificato non è scaduto».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.4, pagina PDF 132"
+    },
+    {
+      "id": "cyber-c08-q059",
+      "topicId": "cyber-c08-t06",
+      "question": "Che cos’è la forward secrecy in un canale TLS?",
+      "answer": "La compromissione futura della chiave privata a lungo termine non basta, da sola, a ricostruire le chiavi delle sessioni passate correttamente negoziate.",
+      "detail": "Si ottiene in condizioni appropriate con accordi effimeri come (EC)DHE e corretta eliminazione/protezione dei segreti temporanei. Non protegge i dati già sottratti dagli endpoint.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che forward secrecy rende immuni a ogni compromissione futura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.5, pagina PDF 132"
+    },
+    {
+      "id": "cyber-c08-q060",
+      "topicId": "cyber-c08-t06",
+      "question": "Quale differenza vi è tra chiave di autenticazione stabile e segreti effimeri in TLS?",
+      "answer": "La prima permette di autenticare il peer; i secondi sono usati nella negoziazione delle chiavi temporanee di una sessione.",
+      "detail": "La separazione dei ruoli delle chiavi spiega la forward secrecy: conoscere in futuro il materiale a lungo termine non equivale a conoscere tutti i segreti effimeri delle sessioni precedenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente al certificato l’operazione di cifratura bulk.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.5, pagina PDF 132"
+    },
+    {
+      "id": "cyber-c08-q061",
+      "topicId": "cyber-c08-t06",
+      "question": "Come protegge i dati il TLS Record Protocol in TLS 1.3?",
+      "answer": "Suddivide e incapsula il traffico in record protetti con algoritmi AEAD, che forniscono riservatezza e verifica crittografica dell’integrità.",
+      "detail": "L’alterazione non autorizzata di un record deve far fallire la verifica. I record trasportano sia dati applicativi sia vari messaggi del protocollo stesso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere la protezione come una semplice checksum non autenticata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.6, pagina PDF 132"
+    },
+    {
+      "id": "cyber-c08-q062",
+      "topicId": "cyber-c08-t06",
+      "question": "A cosa servono i messaggi TLS Alert e close_notify?",
+      "answer": "Gli Alert comunicano errori e condizioni di protocollo; close_notify segnala la corretta cessazione dell’invio di dati applicativi.",
+      "detail": "Queste segnalazioni permettono di gestire fallimenti e chiusure secondo la semantica TLS prevista. Non sono algoritmi di cifratura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere close_notify con la distruzione dei dati applicativi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.7, pagina PDF 132"
+    },
+    {
+      "id": "cyber-c08-q063",
+      "topicId": "cyber-c08-t06",
+      "question": "Che cos’è Heartbeat in TLS e quale errore storico viene citato?",
+      "answer": "È un’estensione facoltativa di controllo della connessione; Heartbleed fu una vulnerabilità d’implementazione dell’estensione in alcune versioni di OpenSSL.",
+      "detail": "Heartbeat (RFC 6520) permette messaggi di controllo fra peer, ma non è parte obbligatoria dell’handshake. Heartbleed dimostra che una libreria può avere bug anche usando un protocollo standardizzato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che TLS include Heartbeat sempre o che Heartbleed fosse una funzione prevista dello standard.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.7, pagina PDF 132"
+    },
+    {
+      "id": "cyber-c08-q064",
+      "topicId": "cyber-c08-t06",
+      "question": "Quali controlli operativi servono per una distribuzione TLS affidabile?",
+      "answer": "Versioni e suite aggiornate, gestione delle chiavi, verifica dei certificati, rinnovi, disabilitazione dei protocolli obsoleti e monitoraggio.",
+      "detail": "Occorre anche analizzare i canali verso i backend e la terminazione dei proxy. Un errore di configurazione può vanificare la robustezza delle primitive crittografiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire la sicurezza a un protocollo «TLS attivo» senza validare configurazione e percorso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.5.8, pagina PDF 132"
+    },
+    {
+      "id": "cyber-c08-q065",
+      "topicId": "cyber-c08-t07",
+      "question": "Come si definisce HTTPS nel capitolo?",
+      "answer": "HTTP che scambia richieste e risposte attraverso un meccanismo crittografico di trasporto conforme allo schema HTTPS.",
+      "detail": "Nel modello tradizionale HTTP/1.1 e HTTP/2 operano su TLS/TCP, comunemente porta 443, ma l’architettura moderna include HTTP/3 e QUIC.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare HTTPS con un singolo protocollo di livello fisico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.6, pagina PDF 132"
+    },
+    {
+      "id": "cyber-c08-q066",
+      "topicId": "cyber-c08-t07",
+      "question": "Qual è la sequenza generale di apertura di una pagina HTTPS su TCP?",
+      "answer": "Interpretazione URL, eventuale DNS, instradamento e TCP, handshake TLS e verifica del server, scambio HTTP protetto, elaborazione della risposta.",
+      "detail": "Le connessioni possono essere riutilizzate; i passaggi effettivi dipendono dal protocollo e dalle cache. TLS protegge l’HTTP scambiato fra gli endpoint negoziati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eseguire la richiesta HTTP in chiaro prima di aver stabilito il canale protetto nel modello descritto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.6.1, pagina PDF 132"
+    },
+    {
+      "id": "cyber-c08-q067",
+      "topicId": "cyber-c08-t07",
+      "question": "Perché un certificato HTTPS non cifra direttamente tutto il traffico con la chiave pubblica?",
+      "answer": "Perché nel TLS moderno i certificati servono soprattutto ad autenticare il peer; le chiavi del traffico derivano dal key exchange e sono simmetriche.",
+      "detail": "La cifratura simmetrica è efficiente, mentre l’handshake gestisce autenticazione, accordo dei segreti e derivazione delle chiavi. È un esempio di crittografia ibrida.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire «ogni pagina web è cifrata con la chiave RSA del server».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.6.1, pagina PDF 132"
+    },
+    {
+      "id": "cyber-c08-q068",
+      "topicId": "cyber-c08-t07",
+      "question": "Perché HTTPS non significa sempre TCP porta 443?",
+      "answer": "Perché HTTP/3 utilizza QUIC sopra UDP, integrando le funzioni TLS 1.3, comunemente sulla porta UDP 443.",
+      "detail": "HTTP/1.1 e HTTP/2 usano normalmente TLS su TCP. La semantica protetta del Web può poggiare su trasporti differenti: la porta non è la definizione della sicurezza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare UDP 443 necessariamente una violazione di HTTPS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.6.2, pagina PDF 133"
+    },
+    {
+      "id": "cyber-c08-q069",
+      "topicId": "cyber-c08-t07",
+      "question": "Qual è il rapporto tra HTTP/3, QUIC, UDP e TLS 1.3?",
+      "answer": "HTTP/3 usa QUIC; QUIC opera su UDP e integra meccanismi crittografici TLS 1.3.",
+      "detail": "Si mantiene la semantica applicativa HTTP protetta, ma la struttura del trasporto è diversa rispetto alla pila TLS-over-TCP dei protocolli precedenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che HTTP/3 faccia a meno della sicurezza TLS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.6.2, pagina PDF 133"
+    },
+    {
+      "id": "cyber-c08-q070",
+      "topicId": "cyber-c08-t07",
+      "question": "Che cosa significa TLS termination su un reverse proxy?",
+      "answer": "Il proxy è uno degli endpoint TLS: decifra i dati ricevuti dal client e può aprire una distinta connessione verso il backend.",
+      "detail": "Se la seconda connessione è HTTP non cifrato, il traffico interno non beneficia della cifratura del primo hop. Serve verificare esplicitamente ciascun tratto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La presenza del lucchetto nel browser non prova che il backend riceva dati cifrati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.6.3, pagina PDF 133"
+    },
+    {
+      "id": "cyber-c08-q071",
+      "topicId": "cyber-c08-t07",
+      "question": "Come si può proteggere il tratto proxy-backend di un’applicazione HTTPS?",
+      "answer": "Attivando un secondo canale TLS quando richiesto dal rischio, oltre a segmentazione, autorizzazioni e monitoraggio.",
+      "detail": "La soluzione dipende da trust boundary ed endpoint effettivi. Protezione del canale, controlli applicativi e credenziali del database sono requisiti distinti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare end-to-end la sola protezione browser-gateway.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.6.3, pagina PDF 133"
+    },
+    {
+      "id": "cyber-c08-q072",
+      "topicId": "cyber-c08-t07",
+      "question": "Quali controlli sono necessari oltre a HTTPS in un portale aziendale delle offerte?",
+      "answer": "Protezione gateway-backend, autenticazione eventualmente mTLS, autorizzazioni applicative, custodia delle credenziali DB e controllo degli endpoint.",
+      "detail": "Il gateway presenta un certificato per il dominio pubblico; il backend esegue logiche e query. Ogni confine ha rischi propri non eliminati dal TLS front-end.",
+      "example": "Un analista usa HTTPS ma non deve poter leggere le offerte di un altro reparto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che HTTPS sostituisce complete mediation o least privilege.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.6.4, pagina PDF 133"
+    },
+    {
+      "id": "cyber-c08-q073",
+      "topicId": "cyber-c08-t08",
+      "question": "Che cos’è IPsec, dove opera e in che cosa differisce da TLS?",
+      "answer": "È una famiglia di meccanismi di sicurezza del livello IP, che protegge pacchetti fra host o gateway; TLS protegge canali fra endpoint applicativi.",
+      "detail": "IPsec opera al livello Internet/IP della pila TCP/IP, non sotto IP. Può proteggere vari protocolli applicativi senza che ognuno implementi direttamente il meccanismo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il livello di rete IPsec con il livello applicativo TLS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7, pagina PDF 133"
+    },
+    {
+      "id": "cyber-c08-q074",
+      "topicId": "cyber-c08-t08",
+      "question": "Che cosa significa VPN e perché «privata» non vuol dire rete fisica dedicata?",
+      "answer": "Virtual Private Network: crea una comunicazione logicamente separata e, se configurata correttamente, protetta su una rete di trasporto condivisa come Internet.",
+      "detail": "La protezione nasce da tunnel, controlli e credenziali, non dalla proprietà fisica dei collegamenti attraversati. Anche dentro la VPN sono necessarie policy di autorizzazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un tunnel cifrato non trasforma automaticamente Internet in una rete aziendale fisica privata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.1, pagina PDF 133"
+    },
+    {
+      "id": "cyber-c08-q075",
+      "topicId": "cyber-c08-t08",
+      "question": "Quali sono i tre scenari VPN descritti nel manuale?",
+      "answer": "Remote access per un utente remoto; site-to-site intranet per due sedi della stessa azienda; extranet fra organizzazioni differenti.",
+      "detail": "Gli endpoint e i flussi da consentire cambiano fra scenari. Una progettazione corretta restringe gli accessi ai servizi realmente necessari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre dal collegamento VPN l’autorizzazione universale a ogni sistema interno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.1, pagina PDF 133"
+    },
+    {
+      "id": "cyber-c08-q076",
+      "topicId": "cyber-c08-t08",
+      "question": "Quali proprietà può fornire IPsec?",
+      "answer": "Integrità, autenticazione dell’origine, anti-replay, riservatezza tramite cifratura e protezione limitata da alcune analisi del traffico.",
+      "detail": "I servizi effettivi dipendono da protocolli, SA, algoritmi e policy negoziati; indirizzi esterni dei gateway, volumi e parte dei metadati possono rimanere visibili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare l’analisi del traffico come impossibile dopo IPsec.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.2, pagina PDF 133"
+    },
+    {
+      "id": "cyber-c08-q077",
+      "topicId": "cyber-c08-t08",
+      "question": "Quali limiti impone l’osservabilità dei metadati IPsec?",
+      "answer": "Anche quando il payload è cifrato, gli osservatori possono vedere almeno informazioni del tunnel, come endpoint esterni e volume del traffico.",
+      "detail": "La protezione dei dati interni non coincide con anonimato completo o invisibilità del collegamento. La valutazione del rischio deve tenerne conto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere cifratura del payload con occultamento di ogni header.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.2, pagina PDF 133"
+    },
+    {
+      "id": "cyber-c08-q078",
+      "topicId": "cyber-c08-t08",
+      "question": "Che cos’è ESP e perché è centrale nelle VPN IPsec moderne?",
+      "answer": "Encapsulating Security Payload: formato IPsec che può fornire cifratura, integrità/autenticazione dei dati e funzionalità anti-replay.",
+      "detail": "Il pacchetto include fra gli altri SPI, numero di sequenza e payload protetto; la verifica si basa sui parametri di una Security Association valida.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare ESP a un semplice tunnel privo di autenticazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.3, pagina PDF 133"
+    },
+    {
+      "id": "cyber-c08-q079",
+      "topicId": "cyber-c08-t08",
+      "question": "Che cosa significano SPI e Sequence Number in ESP?",
+      "answer": "SPI identifica i parametri dell’associazione di sicurezza; il Sequence Number sostiene l’ordinamento logico e i controlli anti-replay.",
+      "detail": "Il ricevente usa l’associazione corretta per verificare il pacchetto. La numerazione consente di riconoscere duplicazioni o ritrasmissioni non autorizzate secondo la policy.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare SPI come un indirizzo IP né Sequence Number come la porta TCP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.3, pagina PDF 133"
+    },
+    {
+      "id": "cyber-c08-q080",
+      "topicId": "cyber-c08-t08",
+      "question": "In che cosa differiscono ESP e AH?",
+      "answer": "ESP può fornire confidenzialità oltre a integrità/autenticazione; AH protegge l’integrità e l’origine di determinati campi senza cifrare il payload.",
+      "detail": "ESP è richiesto nell’architettura IPsec e ampiamente utilizzato; AH è facoltativo e meno diffuso, anche per le interazioni problematiche con alcune traduzioni NAT.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che AH cifra il contenuto applicativo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.3, pagina PDF 134"
+    },
+    {
+      "id": "cyber-c08-q081",
+      "topicId": "cyber-c08-t08",
+      "question": "Perché NAT può complicare l’uso di AH?",
+      "answer": "Perché AH autentica determinati campi che la traduzione degli indirizzi può modificare, rendendo incompatibili alcune verifiche.",
+      "detail": "ESP e NAT Traversal sono spesso preferiti nelle VPN moderne. Non bisogna generalizzare un comportamento identico di AH ed ESP in ogni topologia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare AH equivalente a ESP per attraversare reti NAT.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.3, pagina PDF 134"
+    },
+    {
+      "id": "cyber-c08-q082",
+      "topicId": "cyber-c08-t09",
+      "question": "Che cos’è una Security Association (SA) in IPsec?",
+      "answer": "È l’insieme di parametri che determina come proteggere il traffico in un determinato verso: chiavi, algoritmi, durata e stato.",
+      "detail": "Una SA ESP/AH è in generale unidirezionale: una comunicazione bidirezionale usa associazioni distinte. Non si tratta di una sola generica chiave condivisa da tutta la VPN.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere la SA come una connessione TCP applicativa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.4, pagina PDF 134"
+    },
+    {
+      "id": "cyber-c08-q083",
+      "topicId": "cyber-c08-t09",
+      "question": "Qual è la differenza fra SPD e SAD in IPsec?",
+      "answer": "SPD (Security Policy Database) determina le policy dei flussi; SAD (Security Association Database) conserva lo stato delle SA attive.",
+      "detail": "La SPD decide se proteggere, scartare o permettere un flusso secondo policy; la SAD contiene i parametri effettivi per applicare la protezione negoziata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire policy e informazioni crittografiche di sessione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.4, pagina PDF 134"
+    },
+    {
+      "id": "cyber-c08-q084",
+      "topicId": "cyber-c08-t09",
+      "question": "Che cosa caratterizza IPsec ESP transport mode?",
+      "answer": "Protegge principalmente il contenuto trasportato dal pacchetto IP, lasciando presente l’intestazione IP esterna per l’instradamento.",
+      "detail": "È particolarmente associato alla protezione host-to-host. Non cifra indistintamente tutto il pacchetto originario; la protezione dipende dal formato effettivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere transport mode come un incapsulamento completo di una rete privata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.5, pagina PDF 134"
+    },
+    {
+      "id": "cyber-c08-q085",
+      "topicId": "cyber-c08-t09",
+      "question": "Che cosa caratterizza IPsec ESP tunnel mode?",
+      "answer": "L’intero pacchetto IP interno viene incapsulato in un nuovo pacchetto con header esterno per gli endpoint del tunnel.",
+      "detail": "ESP può proteggere payload e indirizzi interni; gli indirizzi pubblici dei gateway esterni restano necessari all’instradamento. È tipico del collegamento site-to-site.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere gli IP interni del server con gli IP esterni dei gateway.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.6, pagina PDF 134"
+    },
+    {
+      "id": "cyber-c08-q086",
+      "topicId": "cyber-c08-t09",
+      "question": "Come si distinguono visivamente transport mode e tunnel mode?",
+      "answer": "Transport mantiene l’header IP esterno originario; tunnel aggiunge un nuovo header IP esterno intorno al pacchetto IP interno.",
+      "detail": "La differenza di incapsulamento determina quali indirizzi sono osservabili dal percorso esterno e quali informazioni risultano incluse nella protezione crittografica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che tunnel mode elimina la necessità di un indirizzo IP esterno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.6, pagina PDF 134"
+    },
+    {
+      "id": "cyber-c08-q087",
+      "topicId": "cyber-c08-t09",
+      "question": "Che cos’è IKEv2 e perché non va confuso con ESP?",
+      "answer": "Internet Key Exchange v2 negozia autenticazione, algoritmi e associazioni di sicurezza; ESP è il formato usato per proteggere i dati IP.",
+      "detail": "IKEv2 (RFC 7296) avvia e gestisce IKE SA e Child SA, mentre il traffico applicativo è poi trasportato sotto le protezioni di ESP configurate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che IKEv2 cifra direttamente tutti i pacchetti dati come ESP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.7, pagina PDF 134"
+    },
+    {
+      "id": "cyber-c08-q088",
+      "topicId": "cyber-c08-t09",
+      "question": "Che cosa avviene nelle fasi IKE_SA_INIT e IKE_AUTH?",
+      "answer": "IKE_SA_INIT negozia parametri e contributi crittografici; IKE_AUTH autentica i peer e stabilisce le prime Child SA.",
+      "detail": "Le credenziali possono includere certificati o segreti precondivisi; ulteriori Child SA e rekey possono essere gestiti durante la vita della VPN.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare la sola negoziazione iniziale come verifica completa di ogni permesso applicativo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.7, pagina PDF 134"
+    },
+    {
+      "id": "cyber-c08-q089",
+      "topicId": "cyber-c08-t09",
+      "question": "Quali numeri di protocollo e porte bisogna ricordare per IPsec/IKEv2?",
+      "answer": "ESP usa normalmente il protocol number IP 50; IKEv2 comunemente UDP 500; NAT Traversal usa tipicamente UDP 4500.",
+      "detail": "La distinzione fra numero di protocollo IP e porta UDP è essenziale: ESP non coincide con una porta TCP. NAT-T permette l’attraversamento della traduzione degli indirizzi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che ESP «usa la porta 50 TCP».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.7, pagina PDF 134"
+    },
+    {
+      "id": "cyber-c08-q090",
+      "topicId": "cyber-c08-t09",
+      "question": "A cosa serve NAT Traversal in una VPN IPsec?",
+      "answer": "A trasportare il traffico in modo compatibile con apparati NAT, frequentemente tramite UDP 4500.",
+      "detail": "NAT può cambiare gli indirizzi o le porte; NAT-T affronta le difficoltà di attraversamento tipiche delle VPN remote preservando la negoziazione e i flussi protetti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere NAT-T con una sostituzione dei controlli IPsec.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.7, pagina PDF 134"
+    },
+    {
+      "id": "cyber-c08-q091",
+      "topicId": "cyber-c08-t09",
+      "question": "Come funziona il collegamento site-to-site fra le subnet 10.10.0.0/16 e 10.20.0.0/16?",
+      "answer": "La policy seleziona il pacchetto; il gateway A lo incapsula e protegge con ESP tunnel; il gateway B verifica, decifra e inoltra il pacchetto interno.",
+      "detail": "Internet vede principalmente la comunicazione fra gateway esterni. Il traffico fra server interni continua a richiedere autorizzazioni sul database o sull’applicazione raggiunta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il tunnel non attribuisce automaticamente il permesso di interrogare il DB remoto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.8, pagina PDF 135"
+    },
+    {
+      "id": "cyber-c08-q092",
+      "topicId": "cyber-c08-t09",
+      "question": "Quali limiti e rischi rimangono anche con un tunnel IPsec correttamente cifrato?",
+      "answer": "Endpoint compromessi, credenziali e chiavi gestite male, accessi troppo ampi, vulnerabilità applicative e movimento laterale nella rete collegata.",
+      "detail": "Occorrono segmentazione, least privilege, autenticazione robusta, monitoraggio e gestione delle chiavi. Una VPN troppo permissiva può ampliare l’impatto di una compromissione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il tunnel come autorizzazione generale a tutti i server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.7.9, pagina PDF 135"
+    },
+    {
+      "id": "cyber-c08-q093",
+      "topicId": "cyber-c08-t10",
+      "question": "Quale problema risolve Kerberos?",
+      "answer": "Permette a client e servizi di autenticarsi tramite ticket temporanei emessi da un’autorità fidata, senza inviare ogni volta la password al server applicativo.",
+      "detail": "Il KDC e i servizi condividono materiale crittografico appropriato; il client ottiene ticket verificabili e può accedere a più servizi secondo le autorizzazioni effettive.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Kerberos non è un protocollo di autorizzazione universale per tutte le operazioni di business.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8, pagina PDF 135"
+    },
+    {
+      "id": "cyber-c08-q094",
+      "topicId": "cyber-c08-t10",
+      "question": "Quali sono i componenti principali di Kerberos V5?",
+      "answer": "Client, application server S e KDC, composto dai ruoli Authentication Server (AS), Ticket-Granting Server (TGS) e archivio delle chiavi.",
+      "detail": "AS gestisce l’autenticazione iniziale; TGS rilascia ticket per servizi specifici. AS e TGS possono essere ruoli logici nello stesso sistema; il KDC è un asset critico.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare il server applicativo un TGS per il solo fatto di accettare ticket.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.1, pagina PDF 135"
+    },
+    {
+      "id": "cyber-c08-q095",
+      "topicId": "cyber-c08-t10",
+      "question": "Perché il KDC è un componente ad alta criticità?",
+      "answer": "Perché custodisce informazioni e chiavi fidate usate per l’autenticazione di molti servizi nel realm.",
+      "detail": "Una sua compromissione può minare la fiducia nel sistema di ticket. Availability, hardening, gestione delle chiavi e audit sono fondamentali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare il KDC come un cache server senza responsabilità di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.1, pagina PDF 135"
+    },
+    {
+      "id": "cyber-c08-q096",
+      "topicId": "cyber-c08-t10",
+      "question": "Che cos’è il Ticket-Granting Ticket (TGT)?",
+      "answer": "È una credenziale temporanea destinata al TGS con cui il client può richiedere ticket per servizi specifici.",
+      "detail": "Il TGT contiene informazioni protette per il TGS e non deve essere decifrato dal client. Non si presenta direttamente a qualunque applicazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere TGT con password dell’utente o service ticket.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.2, pagina PDF 135"
+    },
+    {
+      "id": "cyber-c08-q097",
+      "topicId": "cyber-c08-t10",
+      "question": "Qual è la funzione del service ticket in Kerberos?",
+      "answer": "Autenticare il client presso uno specifico server di servizio mediante un ticket verificabile con una chiave appropriata del server.",
+      "detail": "Viene rilasciato dal TGS e presentato con un authenticator. Il client può trasportarlo senza conoscere la chiave segreta del server destinatario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il TGT direttamente come ticket per tutti i servizi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.2, pagina PDF 135"
+    },
+    {
+      "id": "cyber-c08-q098",
+      "topicId": "cyber-c08-t10",
+      "question": "Che cos’è l’authenticator di Kerberos e perché è dinamico?",
+      "answer": "È una prova creata dal client e protetta con la chiave di sessione, spesso includente identità e timestamp.",
+      "detail": "Il servizio verifica che chi presenta il ticket possieda anche il segreto pertinente. Il tempo e le verifiche anti-replay aiutano a contrastare il riutilizzo di messaggi acquisiti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con il ticket opaco emesso dal KDC.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.2, pagina PDF 136"
+    },
+    {
+      "id": "cyber-c08-q099",
+      "topicId": "cyber-c08-t10",
+      "question": "Che cosa avviene nella prima fase Kerberos AS-REQ/AS-REP?",
+      "answer": "Il client richiede credenziali al servizio AS; l’AS verifica e restituisce un TGT più una parte destinata al client con le informazioni di sessione.",
+      "detail": "Nelle configurazioni comuni si usa preautenticazione. La porzione destinata al client è protetta con il suo materiale a lungo termine o altro metodo; il TGT è protetto per il TGS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che il TGT viene decifrato dal client usando la password.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.3, pagina PDF 136"
+    },
+    {
+      "id": "cyber-c08-q100",
+      "topicId": "cyber-c08-t10",
+      "question": "Qual è il ruolo della preautenticazione in Kerberos?",
+      "answer": "Richiede al client una prova adeguata di possesso di materiale segreto prima del rilascio delle credenziali iniziali utilizzabili.",
+      "detail": "Aumenta la sicurezza della richiesta all’AS; il manuale la descrive come pratica comune, non come identico meccanismo in tutte le configurazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere la preautenticazione come l’invio in chiaro della password.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.3, pagina PDF 136"
+    },
+    {
+      "id": "cyber-c08-q101",
+      "topicId": "cyber-c08-t10",
+      "question": "Perché il client non decifra il proprio TGT?",
+      "answer": "Perché il TGT è cifrato o protetto con una chiave del TGS; il client lo presenta come oggetto opaco.",
+      "detail": "Il client può recuperare i dati della propria parte di AS-REP e utilizzare la chiave di sessione client-TGS, ma non può modificare arbitrariamente il TGT.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire al client la conoscenza della chiave segreta del TGS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.3, pagina PDF 136"
+    },
+    {
+      "id": "cyber-c08-q102",
+      "topicId": "cyber-c08-t10",
+      "question": "Qual è la sequenza della fase TGS-REQ/TGS-REP?",
+      "answer": "Il client invia TGT e authenticator al TGS indicando il servizio; il TGS verifica e rilascia un service ticket e materiale di sessione.",
+      "detail": "Il service ticket è cifrato per il server S, mentre il client riceve una parte destinata a sé che permette di autenticarsi successivamente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che la validità del ticket si fondi solo sul confronto degli indirizzi IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.4, pagina PDF 136"
+    },
+    {
+      "id": "cyber-c08-q103",
+      "topicId": "cyber-c08-t10",
+      "question": "Che cosa controlla il TGS prima di rilasciare un service ticket?",
+      "answer": "Validità e coerenza del TGT, authenticator e informazioni del servizio richiesto, secondo la policy e i segreti pertinenti.",
+      "detail": "Timestamp, durata, possesso della chiave di sessione e correttezza crittografica sono più centrali di un ipotetico controllo universale degli IP del client.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che Kerberos si basa sempre su indirizzi IP incorporati nei ticket.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.4, pagina PDF 136"
+    },
+    {
+      "id": "cyber-c08-q104",
+      "topicId": "cyber-c08-t10",
+      "question": "Come avviene la fase AP-REQ/AP-REP verso il servizio Kerberos?",
+      "answer": "Il client presenta service ticket e authenticator in AP-REQ; il server verifica chiave e ticket e può inviare AP-REP per autenticazione reciproca.",
+      "detail": "Dopo la verifica il servizio applica le sue autorizzazioni. Kerberos dimostra l’identità, non stabilisce ogni permesso specifico sulle risorse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il ticket una licenza illimitata a qualunque operazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.5, pagina PDF 136"
+    },
+    {
+      "id": "cyber-c08-q105",
+      "topicId": "cyber-c08-t10",
+      "question": "Quando termina la responsabilità di Kerberos e inizia quella della business application?",
+      "answer": "Dopo l’autenticazione del client, le regole dell’applicazione decidono su oggetti, azioni e contesto effettivamente autorizzati.",
+      "detail": "Una sessione legittima può comunque tentare un’operazione vietata; servono controlli server-side su risorse e privilegi.",
+      "example": "Il dipendente autenticato non può approvare una proposta di un altro reparto senza permesso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Autenticazione non equivale ad autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.5, pagina PDF 136"
+    },
+    {
+      "id": "cyber-c08-q106",
+      "topicId": "cyber-c08-t11",
+      "question": "Perché Kerberos dipende dalla sincronizzazione degli orologi?",
+      "answer": "Perché ticket e authenticator usano informazioni temporali per validità e protezione contro replay.",
+      "detail": "Scostamenti eccessivi possono impedire autenticazioni legittime o indebolire i controlli. Ticket e chiavi temporanee devono anche essere protetti contro furto e riuso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che una password non inviata garantisca sicurezza assoluta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.6, pagina PDF 137"
+    },
+    {
+      "id": "cyber-c08-q107",
+      "topicId": "cyber-c08-t11",
+      "question": "Qual è il rischio del furto di ticket Kerberos validi?",
+      "answer": "Un attaccante può tentare di usarli o sfruttare chiavi di sessione associate per impersonare il titolare durante la loro validità.",
+      "detail": "Servono protezione degli endpoint, cache dei ticket sicure, durate limitate e monitoraggio. La segretezza della password non elimina il rischio delle credenziali temporanee.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare il ticket come informazione pubblica innocua.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.6, pagina PDF 137"
+    },
+    {
+      "id": "cyber-c08-q108",
+      "topicId": "cyber-c08-t11",
+      "question": "Che cos’è un realm Kerberos?",
+      "answer": "È un dominio amministrativo di autenticazione con il proprio KDC e spazio di nomi.",
+      "detail": "I realm possono stabilire relazioni di fiducia per l’accesso a servizi esterni. La progettazione dei trust determina la portata della fiducia e i percorsi accettabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare ogni realm a una subnet IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.7, pagina PDF 137"
+    },
+    {
+      "id": "cyber-c08-q109",
+      "topicId": "cyber-c08-t11",
+      "question": "Come funziona, in linea generale, la fiducia fra realm Kerberos?",
+      "answer": "Consente di ottenere ticket per servizi di un altro realm attraverso relazioni e percorsi di fiducia configurati.",
+      "detail": "Non è necessario che ogni coppia di KDC condivida direttamente una chiave; trust e gestione dei percorsi possono collegare domini amministrativi differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere il cross-realm come accesso senza alcun controllo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.7, pagina PDF 137"
+    },
+    {
+      "id": "cyber-c08-q110",
+      "topicId": "cyber-c08-t11",
+      "question": "Come Kerberos abilita il Single Sign-On?",
+      "answer": "Dopo la prima autenticazione, il client può ottenere ticket per più servizi senza reinserire la password per ciascuno.",
+      "detail": "L’SSO dipende da credenziali temporanee valide e policy. Migliora l’esperienza d’uso ma aumenta l’importanza di endpoint, KDC e cache protetti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che SSO concede automaticamente tutti i privilegi su ogni servizio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.8, pagina PDF 137"
+    },
+    {
+      "id": "cyber-c08-q111",
+      "topicId": "cyber-c08-t11",
+      "question": "Quali rischi e limiti tipici di Kerberos vengono indicati nel manuale?",
+      "answer": "Compromissione del KDC, furto ticket, password deboli, attacchi offline in configurazioni inadeguate, clock errati, trust ampi e autorizzazioni applicative carenti.",
+      "detail": "Kerberos autentica mediante ticket ma non cifra automaticamente tutte le comunicazioni applicative; i servizi possono richiedere canali protetti aggiuntivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare Kerberos una VPN o un sostituto universale di TLS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.8.9, pagina PDF 137"
+    },
+    {
+      "id": "cyber-c08-q112",
+      "topicId": "cyber-c08-t12",
+      "question": "Che cos’è RADIUS e per quali contesti viene usato?",
+      "answer": "Remote Authentication Dial In User Service è un protocollo per centralizzare AAA per l’accesso di rete tramite dispositivi NAS.",
+      "detail": "Originariamente legato agli accessi remoti, è impiegato anche in Wi-Fi enterprise, VPN, accessi cablati e infrastrutture degli operatori. Il suo obiettivo non è cifrare ogni sessione applicativa successiva.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere RADIUS come un protocollo di cifratura del traffico Wi-Fi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9, pagina PDF 137"
+    },
+    {
+      "id": "cyber-c08-q113",
+      "topicId": "cyber-c08-t12",
+      "question": "Che cosa significa AAA in RADIUS?",
+      "answer": "Authentication verifica l’identità; Authorization decide risorse e limiti; Accounting registra informazioni sull’uso e sulle sessioni.",
+      "detail": "Le tre funzioni possono convivere ma rispondono a problemi diversi: un utente autentico potrebbe non avere accesso a una VLAN riservata; un record di accounting non prova che tutto sia stato autorizzato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere accounting con firma digitale o fatturazione soltanto economica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9.1, pagina PDF 137"
+    },
+    {
+      "id": "cyber-c08-q114",
+      "topicId": "cyber-c08-t12",
+      "question": "Quali dati può raccogliere la funzione Accounting?",
+      "answer": "Inizio e fine sessione, durata, quantità di traffico e altri attributi operativi utili per gestione, audit e rendicontazione.",
+      "detail": "L’accounting rende più osservabile l’uso dei servizi, ma non garantisce la liceità dell’azione o l’autenticazione forte se non vengono applicati gli altri controlli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare accounting a un controllo preventivo dei permessi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9.1, pagina PDF 137"
+    },
+    {
+      "id": "cyber-c08-q115",
+      "topicId": "cyber-c08-t12",
+      "question": "Chi è il client RADIUS in un accesso Wi-Fi aziendale?",
+      "answer": "Di norma è il NAS o l’apparato che controlla l’accesso (access point, switch, controller o concentratore), non necessariamente lo smartphone dell’utente.",
+      "detail": "Il NAS riceve la richiesta del dispositivo, interroga il server AAA, ottiene una decisione e la applica nel proprio contesto di rete.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire il supplicant il client RADIUS in tutti i casi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9.2, pagina PDF 137"
+    },
+    {
+      "id": "cyber-c08-q116",
+      "topicId": "cyber-c08-t12",
+      "question": "Come collaborano NAS e server AAA?",
+      "answer": "Il NAS invia al server i dati della richiesta di accesso; il server verifica e decide; il NAS concede o nega l’accesso e applica gli attributi di policy.",
+      "detail": "La decisione può includere restrizioni di servizio, gruppi e VLAN dinamiche. Il fatto di centralizzare non elimina la responsabilità di configurare correttamente i dispositivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il server RADIUS non è il router che trasporta automaticamente tutti i dati dell’utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9.2, pagina PDF 137"
+    },
+    {
+      "id": "cyber-c08-q117",
+      "topicId": "cyber-c08-t12",
+      "question": "Quali sono i principali messaggi RADIUS di accesso?",
+      "answer": "Access-Request, Access-Accept, Access-Reject e Access-Challenge.",
+      "detail": "Il NAS invia la Request; il server accetta, nega o richiede un ulteriore scambio. La semantica precisa dipende dal metodo di autenticazione e dagli attributi trasportati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare Access-Challenge una conferma definitiva di autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9.3, pagina PDF 137"
+    },
+    {
+      "id": "cyber-c08-q118",
+      "topicId": "cyber-c08-t12",
+      "question": "Che differenza esiste tra messaggi Access e Accounting in RADIUS?",
+      "answer": "Gli Access gestiscono la decisione di accesso; Accounting-Request e Accounting-Response trasportano e confermano informazioni sulle sessioni.",
+      "detail": "Una rete può associare record di avvio e termine alle sessioni; la disponibilità dell’accounting non dimostra il rispetto di tutte le policy applicative.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere una risposta di accounting con Access-Accept.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9.3, pagina PDF 137"
+    },
+    {
+      "id": "cyber-c08-q119",
+      "topicId": "cyber-c08-t12",
+      "question": "Che cosa sono gli AVP in RADIUS?",
+      "answer": "Attribute-Value Pair: coppie attributo-valore che descrivono richiesta, identità, apparato, servizio e parametri della sessione.",
+      "detail": "Possono essere standard o specifici del fornitore e permettono all’infrastruttura di applicare gruppi, vincoli e VLAN dinamiche secondo la policy.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che una risposta RADIUS contiene soltanto «sì» o «no».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9.3, pagina PDF 138"
+    },
+    {
+      "id": "cyber-c08-q120",
+      "topicId": "cyber-c08-t12",
+      "question": "Quali sono i ruoli di supplicant, authenticator e server AAA in 802.1X?",
+      "answer": "Il supplicant è il dispositivo dell’utente; l’authenticator è AP/switch; il server AAA può usare RADIUS per verificare le credenziali.",
+      "detail": "802.1X disciplina il controllo d’accesso alla rete; EAP trasporta metodi di autenticazione; RADIUS collega tipicamente autenticatore e server AAA. Sono livelli e protocolli complementari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "802.1X ed RADIUS non sono lo stesso protocollo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9.4, pagina PDF 138"
+    },
+    {
+      "id": "cyber-c08-q121",
+      "topicId": "cyber-c08-t12",
+      "question": "Che cos’è EAP e come si collega a RADIUS?",
+      "answer": "Extensible Authentication Protocol è un framework per il trasporto di metodi di autenticazione; le informazioni EAP possono essere incapsulate in RADIUS.",
+      "detail": "Nel Wi-Fi enterprise il dialogo fra terminale e apparato usa il contesto 802.1X/EAP; l’apparato può inoltrare gli scambi al server centrale via RADIUS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che EAP è un algoritmo di cifratura universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9.4, pagina PDF 138"
+    },
+    {
+      "id": "cyber-c08-q122",
+      "topicId": "cyber-c08-t12",
+      "question": "Perché il trasporto RADIUS tradizionale richiede cautele sulle reti non fidate?",
+      "answer": "Perché i meccanismi storici con segreti condivisi non equivalgono a una moderna cifratura completa di tutto il canale.",
+      "detail": "Bisogna proteggere percorso e credenziali, evitando di assumere che il protocollo legacy garantisca da solo riservatezza moderna su reti pubbliche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare qualunque packet RADIUS completamente cifrato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9.5, pagina PDF 138"
+    },
+    {
+      "id": "cyber-c08-q123",
+      "topicId": "cyber-c08-t12",
+      "question": "Quali aggiornamenti sul trasporto RADIUS cita il manuale?",
+      "answer": "RFC 6614 definisce RADIUS/TLS; RFC 9765 (2025) introduce in via sperimentale RADIUS/1.1 su TLS/DTLS con profilo modernizzato.",
+      "detail": "La seconda specifica contempla ALPN ed elimina alcuni meccanismi legacy basati su MD5 nel profilo di trasporto. Non implica supporto automatico da tutti i dispositivi esistenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la pubblicazione di uno standard con la sua adozione universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9.5, pagina PDF 138"
+    },
+    {
+      "id": "cyber-c08-q124",
+      "topicId": "cyber-c08-t12",
+      "question": "Qual è il flusso completo di accesso Wi-Fi enterprise con RADIUS?",
+      "answer": "Il terminale avvia EAP/802.1X con l’AP; l’AP inoltra al server RADIUS; il server decide; l’AP applica Access-Accept/Reject e gli attributi.",
+      "detail": "Possono seguire registrazioni di accounting e assegnazioni dinamiche di VLAN. Il traffico Wi-Fi richiede i propri meccanismi di protezione, distinti dalla sola AAA centralizzata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che il server RADIUS cifri di per sé tutti i pacchetti Wi-Fi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9.6, pagina PDF 138"
+    },
+    {
+      "id": "cyber-c08-q125",
+      "topicId": "cyber-c08-t12",
+      "question": "Quali sono i principali limiti operativi di RADIUS?",
+      "answer": "Dipendenza dalla disponibilità del server AAA, rischio di client non autorizzati, segreti compromessi, EAP mal configurato ed esposizione di attributi sensibili.",
+      "detail": "Occorre resilienza, fallback in linea con il rischio, protezione del trasporto, policy di accesso, segmentazione ed endpoint security. L’AAA centralizzata non sostituisce gli altri controlli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non configurare fallback permissivi senza analizzarne il rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.9.7, pagina PDF 138"
+    },
+    {
+      "id": "cyber-c08-q126",
+      "topicId": "cyber-c08-t13",
+      "question": "Che cos’è OAuth 2.0 e quale problema risolve?",
+      "answer": "È un framework di autorizzazione delegata: un client ottiene accesso delimitato a risorse protette senza ricevere la password generale del proprietario.",
+      "detail": "La RFC 6749 descrive la base; RFC 6750 i bearer token; RFC 9700 le best practice moderne. OAuth riduce l’esposizione delle credenziali e facilita limiti e revoche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare OAuth 2.0 come un protocollo di autenticazione utente completo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10, pagina PDF 138"
+    },
+    {
+      "id": "cyber-c08-q127",
+      "topicId": "cyber-c08-t13",
+      "question": "Perché un’applicazione terza non dovrebbe chiedere e conservare la password di un servizio esterno?",
+      "answer": "Perché otterrebbe poteri eccessivi, aumenterebbe il rischio di furto e renderebbe difficile revocare un singolo accesso.",
+      "detail": "Con una delega OAuth il diritto può essere ristretto a una risorsa, un’applicazione, una durata e determinati scope senza consegnare credenziali generali.",
+      "example": "Un’app per il calendario legge solo gli eventi autorizzati senza conoscere la password dell’account.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire l’autorizzazione delegata con la condivisione permanente della password.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.1, pagina PDF 138"
+    },
+    {
+      "id": "cyber-c08-q128",
+      "topicId": "cyber-c08-t13",
+      "question": "Quali sono i quattro ruoli logici di OAuth 2.0?",
+      "answer": "Resource owner, client, authorization server, resource server.",
+      "detail": "Il resource owner autorizza; il client chiede accesso; l’authorization server rilascia token dopo le verifiche; il resource server espone l’API e applica i limiti. Uno stesso fornitore può gestire più ruoli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare l’authorization server con un generico database o proxy.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.2, pagina PDF 139"
+    },
+    {
+      "id": "cyber-c08-q129",
+      "topicId": "cyber-c08-t13",
+      "question": "Quale differenza esiste fra authorization server e resource server?",
+      "answer": "Il primo gestisce il processo autorizzativo e rilascia token; il secondo verifica i token e serve le risorse protette.",
+      "detail": "Le due funzioni possono risiedere presso la stessa organizzazione, ma la distinzione logica chiarisce chi emette la credenziale e chi verifica ogni accesso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il semplice possesso del token sufficiente a bypassare le policy del resource server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.2, pagina PDF 139"
+    },
+    {
+      "id": "cyber-c08-q130",
+      "topicId": "cyber-c08-t13",
+      "question": "Che cos’è un access token e a cosa serve?",
+      "answer": "È una credenziale presentata dal client al resource server per richiedere accesso a risorse nei limiti previsti.",
+      "detail": "La protezione dipende da scadenza, audience, scope, policy, integrità e custodia. Un token può essere opaco o strutturato, non necessariamente JWT.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un access token con la password dell’utente né con un ID token OIDC.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.3, pagina PDF 139"
+    },
+    {
+      "id": "cyber-c08-q131",
+      "topicId": "cyber-c08-t13",
+      "question": "Che cos’è un refresh token e perché è sensibile?",
+      "answer": "È una credenziale rilasciata, quando previsto, per ottenere nuovi access token senza ripetere tutta l’interazione con l’utente.",
+      "detail": "Va protetto e gestito con scadenze, revoca e rotazione appropriata: la sua compromissione può consentire di ottenere ulteriori token.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che il refresh token è innocuo perché non viene inviato all’API.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.3, pagina PDF 139"
+    },
+    {
+      "id": "cyber-c08-q132",
+      "topicId": "cyber-c08-t13",
+      "question": "Che cosa indica lo scope in OAuth 2.0?",
+      "answer": "L’ambito di autorizzazione richiesto o concesso al client, secondo la semantica definita dall’API.",
+      "detail": "Uno scope come read:offers limita la categoria delle operazioni, ma ruoli, permessi sugli oggetti e condizioni aziendali possono restringere ulteriormente l’accesso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scope, ruolo e autorizzazione sul singolo record non sono sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.3, pagina PDF 139"
+    },
+    {
+      "id": "cyber-c08-q133",
+      "topicId": "cyber-c08-t13",
+      "question": "Perché un access token non deve necessariamente essere un JWT?",
+      "answer": "Perché OAuth definisce il ruolo della credenziale, non obbliga a una singola rappresentazione: il token può essere una stringa opaca.",
+      "detail": "Il resource server può validare un token opaco tramite il servizio di autorizzazione o usare i metodi previsti per il token strutturato. La sicurezza dipende dalla validazione corretta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre dal framework OAuth l’esistenza obbligatoria di un JWT.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.3, pagina PDF 139"
+    },
+    {
+      "id": "cyber-c08-q134",
+      "topicId": "cyber-c08-t13",
+      "question": "Che cos’è un bearer token e qual è il rischio principale?",
+      "answer": "È una credenziale utilizzabile da chiunque la possieda, salvo vincoli aggiuntivi al mittente.",
+      "detail": "Il furto del token da cache, log o endpoint può consentire chiamate API durante la sua validità; servono conservazione sicura, TLS, durata breve e verifica delle autorizzazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che il bearer token resti inutilizzabile dopo il furto solo perché le richieste originali usavano TLS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.3, pagina PDF 139"
+    },
+    {
+      "id": "cyber-c08-q135",
+      "topicId": "cyber-c08-t13",
+      "question": "Quali sono i sei passaggi fondamentali dell’Authorization Code Flow?",
+      "answer": "Richiesta dal client; redirect al server; autenticazione/autorizzazione; ritorno con code; scambio code-token; chiamata API con access token.",
+      "detail": "Il client specifica client ID, redirect URI e scope; l’authorization server gestisce la concessione; il token endpoint verifica il codice e i requisiti della transazione; il resource server applica policy.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare l’authorization code per il token da presentare direttamente all’API.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.4, pagina PDF 139"
+    },
+    {
+      "id": "cyber-c08-q136",
+      "topicId": "cyber-c08-t13",
+      "question": "Che cosa rappresenta l’authorization code e perché deve essere di breve durata?",
+      "answer": "È una credenziale temporanea ottenuta dopo l’autorizzazione e destinata allo scambio presso il token endpoint.",
+      "detail": "Da solo non dovrebbe dare accesso diretto all’API. Le protezioni aggiuntive, come PKCE, contrastano l’utilizzo di codici sottratti o iniettati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non conservare il code come credenziale duratura per invocare servizi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.4, pagina PDF 139"
+    },
+    {
+      "id": "cyber-c08-q137",
+      "topicId": "cyber-c08-t13",
+      "question": "Il consenso dell’utente è sempre l’unica condizione per emettere un access token?",
+      "answer": "No: l’authorization server verifica che la concessione sia ammessa secondo identità, policy e contesto; il consenso può essere richiesto quando pertinente.",
+      "detail": "OAuth serve anche flussi fra servizi e casi con autorizzazione amministrativa. Una UI di consenso non sostituisce le regole di sicurezza del fornitore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere tutti i flussi OAuth come click obbligatorio su «Consenti».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.4, pagina PDF 139"
+    },
+    {
+      "id": "cyber-c08-q138",
+      "topicId": "cyber-c08-t14",
+      "question": "Che cos’è PKCE e quale rischio riduce nell’Authorization Code Flow?",
+      "answer": "Proof Key for Code Exchange lega la richiesta iniziale allo scambio del code, riducendo il rischio di utilizzo di un codice sottratto.",
+      "detail": "Il client crea un code_verifier casuale, ne deriva una code_challenge e presenta poi il verifier al token endpoint. Il server verifica il legame prima di consegnare i token.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "PKCE non è una password dell’utente né un secondo fattore MFA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.5, pagina PDF 139"
+    },
+    {
+      "id": "cyber-c08-q139",
+      "topicId": "cyber-c08-t14",
+      "question": "Come si costruiscono code_verifier e code_challenge con PKCE S256?",
+      "answer": "Il client genera un verifier casuale e deriva la challenge normalmente applicando SHA-256 e la codifica prevista dal protocollo.",
+      "detail": "La challenge viaggia nella richiesta di autorizzazione; il verifier originale viene presentato soltanto allo scambio del codice. Chi ruba il code senza verifier non può normalmente completare il flusso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inviare il code_verifier nella prima richiesta al posto della challenge.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.5, pagina PDF 139"
+    },
+    {
+      "id": "cyber-c08-q140",
+      "topicId": "cyber-c08-t14",
+      "question": "Quali client devono utilizzare PKCE secondo le best practice richiamate?",
+      "answer": "La RFC 9700 lo richiede per i client pubblici con Authorization Code e lo raccomanda per i client confidenziali.",
+      "detail": "I client pubblici, come molte applicazioni native o browser, non possono custodire in modo affidabile un segreto applicativo permanente. PKCE aggiunge prova del legame con la transazione iniziale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre l’Implicit Flow al posto di PKCE in nuove applicazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.5, pagina PDF 139"
+    },
+    {
+      "id": "cyber-c08-q141",
+      "topicId": "cyber-c08-t14",
+      "question": "A cosa serve il parametro state in un flusso OAuth?",
+      "answer": "A correlare la risposta autorizzativa con la richiesta iniziale, quando generato e verificato correttamente.",
+      "detail": "Può contribuire alla difesa contro CSRF o confusione di sessione; PKCE fornisce a sua volta protezioni specifiche. La sicurezza dipende dal contesto e dai controlli previsti dalla specifica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare state un dato opzionale innocuo da accettare senza verifica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.6, pagina PDF 140"
+    },
+    {
+      "id": "cyber-c08-q142",
+      "topicId": "cyber-c08-t14",
+      "question": "Perché le redirect URI devono essere controllate rigorosamente?",
+      "answer": "Perché un indirizzo di ritorno manipolabile può permettere a un attaccante di ricevere un authorization code destinato al client legittimo.",
+      "detail": "Il server deve verificare le URI registrate e la transazione. L’uso di redirect aperti o non attendibili vanifica parte delle protezioni dell’Authorization Code Flow.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non accettare arbitrariamente redirect URI controllate dall’utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.6, pagina PDF 140"
+    },
+    {
+      "id": "cyber-c08-q143",
+      "topicId": "cyber-c08-t14",
+      "question": "Che cosa deve controllare il resource server oltre allo scope?",
+      "answer": "Validità del token, audience appropriata, scadenza e policy applicative, incluse le autorizzazioni sull’operazione e sulla risorsa.",
+      "detail": "Uno scope generalista non è una concessione universale di accesso a ogni record. Autorizzazione delegata, ruoli e controlli ABAC possono combinarsi in modo più restrittivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ignorare audience o oggetto richiesto solo perché la firma del token è valida.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.6, pagina PDF 140"
+    },
+    {
+      "id": "cyber-c08-q144",
+      "topicId": "cyber-c08-t14",
+      "question": "Quali misure mitigano il furto o il riuso di un bearer token?",
+      "answer": "TLS, custodia sicura, vita breve, scope minimo, controllo dell’audience, revoca, rotazione dei refresh token e token vincolati al mittente quando disponibili.",
+      "detail": "Il resource server deve rifiutare token scaduti o non destinati alla propria API. La sicurezza del trasporto non evita il furto sul client o nei log.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non conservare bearer token in chiaro su sistemi accessibili indiscriminatamente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.7, pagina PDF 140"
+    },
+    {
+      "id": "cyber-c08-q145",
+      "topicId": "cyber-c08-t14",
+      "question": "Perché un refresh token richiede protezioni anche più attente di un access token breve?",
+      "answer": "Perché può consentire il rilascio di nuovi access token e prolungare nel tempo un accesso non autorizzato.",
+      "detail": "La sua gestione richiede memorizzazione sicura, revoca e rotazione quando pertinenti. Non va trasmesso direttamente al resource server per le normali chiamate API.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il ruolo del token endpoint con quello dell’API protetta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.7, pagina PDF 140"
+    },
+    {
+      "id": "cyber-c08-q146",
+      "topicId": "cyber-c08-t14",
+      "question": "Quando usare Client Credentials invece di Authorization Code?",
+      "answer": "Client Credentials serve per richieste machine-to-machine svolte dal client per proprio conto; Authorization Code per accessi delegati tramite utente e browser/app.",
+      "detail": "Nei progetti moderni Authorization Code va protetto con PKCE secondo il tipo di client. Il grant determina il contesto e le credenziali, non ogni permesso sul dato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre il resource owner in una comunicazione solo macchina quando non è previsto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.8, pagina PDF 140"
+    },
+    {
+      "id": "cyber-c08-q147",
+      "topicId": "cyber-c08-t14",
+      "question": "Perché le best practice moderne sconsigliano Implicit e Resource Owner Password Credentials per nuovi progetti?",
+      "answer": "Perché presentano rischi di esposizione dei token e/o di condivisione diretta delle credenziali incompatibili con scelte moderne più sicure.",
+      "detail": "Il manuale li cita come parte storica di OAuth 2.0; per nuovi progetti preferisce Authorization Code con PKCE o Client Credentials dove adatto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non consigliarli come flussi equivalenti ad Authorization Code con PKCE.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.8, pagina PDF 140"
+    },
+    {
+      "id": "cyber-c08-q148",
+      "topicId": "cyber-c08-t14",
+      "question": "Perché OAuth 2.0 non è di per sé un protocollo standardizzato di login?",
+      "answer": "Perché definisce delega di autorizzazione a risorse, non una prova universale dell’identità di un utente finale presso il client.",
+      "detail": "OpenID Connect aggiunge un livello di identità e autenticazione sopra OAuth e definisce ID token e controlli specifici. Un access token può non identificare l’utente secondo semantica di login.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare l’access token come equivalente automatico a un ID token OIDC.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.9, pagina PDF 140"
+    },
+    {
+      "id": "cyber-c08-q149",
+      "topicId": "cyber-c08-t14",
+      "question": "Che differenza esiste fra ID token OIDC e access token OAuth?",
+      "answer": "ID token informa il client sull’autenticazione dell’utente; access token autorizza richieste verso una risorsa/API.",
+      "detail": "Destinatari, validazioni e semantiche differiscono. Il fatto che entrambi siano token non consente di scambiarne le funzioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare l’ID token al resource server come normale credenziale di accesso alle API.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.9, pagina PDF 140"
+    },
+    {
+      "id": "cyber-c08-q150",
+      "topicId": "cyber-c08-t14",
+      "question": "Come EnerPrice potrebbe leggere dati da un’API esterna senza acquisire password dell’utente?",
+      "answer": "Usando Authorization Code con PKCE, chiedendo scope limitato, ricevendo un access token e presentandolo all’API che lo valida.",
+      "detail": "Se EnerPrice deve anche effettuare il login federato dell’utente, può adottare un flusso OIDC appropriato verificando l’ID token. La delega di lettura e il login restano operazioni diverse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiedere al cliente le credenziali dell’API esterna per conservarle in EnerPrice.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.10, pagina PDF 140"
+    },
+    {
+      "id": "cyber-c08-q151",
+      "topicId": "cyber-c08-t14",
+      "question": "Come si combinano OAuth 2.0, MFA e ABAC nella stessa architettura?",
+      "answer": "MFA rafforza la prova d’identità; OAuth delega scope e token; ABAC valuta attributi di utente, risorsa, azione e contesto.",
+      "detail": "Un authorization server può autenticare un utente con MFA e rilasciare un token; il resource server può poi applicare regole ABAC più specifiche prima della lettura del dato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire queste tecnologie come alternative concorrenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.11, pagina PDF 141"
+    },
+    {
+      "id": "cyber-c08-q152",
+      "topicId": "cyber-c08-t14",
+      "question": "Come giustificare all’orale la differenza fra uno scope e un controllo ABAC?",
+      "answer": "Lo scope limita l’accesso delegato espresso dal token; ABAC decide una specifica richiesta sulla base di attributi contestuali.",
+      "detail": "Il token può riportare read:offers, ma una regola può consentire di leggere soltanto le offerte del reparto dell’utente e durante condizioni operative ammesse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che lo scope risolve da solo la sicurezza a livello di record.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.10.11, pagina PDF 141"
+    },
+    {
+      "id": "cyber-c08-q153",
+      "topicId": "cyber-c08-t15",
+      "question": "Perché non ha senso chiedere quale sia il «protocollo più sicuro» senza indicare il problema?",
+      "answer": "Perché protocolli differenti proteggono oggetti e proprietà differenti, con endpoint, credenziali, limiti e minacce specifici.",
+      "detail": "Per una e-mail riservata si valuta S/MIME; per accesso Wi-Fi 802.1X/RADIUS; per siti VPN IPsec; per un’API esterna OAuth. La scelta dipende dall’asset e dal requisito.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un unico protocollo come risposta universale a ogni minaccia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.11, pagina PDF 141"
+    },
+    {
+      "id": "cyber-c08-q154",
+      "topicId": "cyber-c08-t15",
+      "question": "Quale combinazione di protocolli è coerente con otto scenari tipici del manuale?",
+      "answer": "Messaggio cifrato S/MIME; dominio di e-mail DKIM/SPF/DMARC; Web HTTPS; sedi IPsec; SSO Kerberos; Wi-Fi 802.1X/RADIUS; API delegate OAuth+PKCE; login federato OIDC.",
+      "detail": "La tabella distingue il meccanismo principale dalle misure aggiuntive: endpoint, permessi, policy, segmentazione, validation e gestione delle chiavi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere protezione primaria e sicurezza complessiva del sistema.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.11, pagina PDF 141"
+    },
+    {
+      "id": "cyber-c08-q155",
+      "topicId": "cyber-c08-t15",
+      "question": "Come distingui in una risposta orale autenticazione, autorizzazione e cifratura?",
+      "answer": "Autenticazione: chi sei; autorizzazione: che cosa puoi fare; cifratura: chi può leggere il contenuto protetto.",
+      "detail": "Kerberos autentica ma non decide ogni permesso aziendale; OAuth delega diritti ma non è login standard; IPsec cifra pacchetti ma non prova la liceità di una query.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare le tre parole come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.11.1, pagina PDF 141"
+    },
+    {
+      "id": "cyber-c08-q156",
+      "topicId": "cyber-c08-t15",
+      "question": "Dove terminano le garanzie di HTTPS, IPsec, S/MIME e OIDC?",
+      "answer": "HTTPS ai peer TLS reali; IPsec ai peer del tunnel; S/MIME ai titolari delle chiavi del contenuto; OIDC al contesto d’identità attestato.",
+      "detail": "Un proxy può terminare HTTPS; un gateway IPsec non protegge automaticamente il tratto successivo; un endpoint compromesso può leggere S/MIME; l’ID token non autorizza ogni operazione API.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre da un protocollo protetto la protezione di ogni sistema collegato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.11.2, pagina PDF 141"
+    },
+    {
+      "id": "cyber-c08-q157",
+      "topicId": "cyber-c08-t15",
+      "question": "Come costruire una difesa multilivello per sedi distaccate, Wi-Fi e portale pricing?",
+      "answer": "IPsec fra gateway, 802.1X/RADIUS per rete, HTTPS per Web, identità federata, OAuth/ABAC per API, S/MIME e DKIM/SPF/DMARC per posta.",
+      "detail": "I controlli risolvono problemi distinti e devono essere coerenti fra loro, con policy, least privilege, monitoraggio ed endpoint sicuri. Il manuale presenta questa architettura come esempio integrato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che un singolo certificato renda sicuro il sistema multilivello.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.11.3, pagina PDF 141"
+    },
+    {
+      "id": "cyber-c08-q158",
+      "topicId": "cyber-c08-t16",
+      "question": "Caso contratto riservato: perché DKIM e SMTP/TLS non bastano contro un amministratore di posta intermedio?",
+      "answer": "DKIM non cifra e SMTP/TLS protegge singoli hop; per impedire la lettura sui server intermedi occorre protezione del contenuto, ad esempio S/MIME cifrato.",
+      "detail": "Se Alice vuole anche dimostrare l’origine, firma e poi cifra per Bob. Ogni misura ha un ambito: dominio DKIM, collegamento TLS, contenuto S/MIME.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la sicurezza del server di posta con la segretezza persistente del contratto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.12, pagina PDF 141"
+    },
+    {
+      "id": "cyber-c08-q159",
+      "topicId": "cyber-c08-t16",
+      "question": "Esercizio 1: qual è la soluzione completa per un contratto inviato via e-mail e perché?",
+      "answer": "Usare S/MIME per la cifratura del contenuto con la chiave del destinatario; aggiungere firma del mittente per origine/integrità, conservando DKIM e TLS come difese complementari.",
+      "detail": "Si protegge il dato anche quando transita o è conservato dai provider, purché gli endpoint e le chiavi siano sicuri. DKIM e TLS mantengono utilità ma non risolvono l’esigenza di riservatezza end-to-end.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eliminare controlli complementari pensando che S/MIME li sostituisca tutti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.12, pagina PDF 142"
+    },
+    {
+      "id": "cyber-c08-q160",
+      "topicId": "cyber-c08-t16",
+      "question": "Esercizio 2: un proxy termina HTTPS e inoltra in HTTP. Qual è il rischio?",
+      "answer": "Il tratto browser-proxy è protetto, ma il traffico proxy-backend può essere letto o alterato da chi lo intercetti sulla rete interna.",
+      "detail": "Il lucchetto identifica la protezione TLS del collegamento osservato dal browser. Occorre verificare i nuovi confini e valutare un ulteriore TLS, segmentazione e controlli applicativi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che l’indicazione HTTPS garantisce cifratura fino al database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.12, pagina PDF 142"
+    },
+    {
+      "id": "cyber-c08-q161",
+      "topicId": "cyber-c08-t16",
+      "question": "Esercizio 3: quali indirizzi IP rimangono visibili in ESP tunnel mode tra due sedi?",
+      "answer": "Gli IP pubblici dei gateway 198.51.100.10 e 203.0.113.10; gli IP interni 10.10.1.20 e 10.20.1.30 sono nel pacchetto interno protetto.",
+      "detail": "Il gateway A incapsula, Internet instrada il pacchetto esterno e il gateway B verifica/decifra e consegna il pacchetto interno. La protezione non elimina le autorizzazioni sul server B.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che il pacchetto esterno abbia come destinazione pubblica il database privato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.12, pagina PDF 142"
+    },
+    {
+      "id": "cyber-c08-q162",
+      "topicId": "cyber-c08-t16",
+      "question": "Esercizio 4: come può il client Kerberos usare un TGT che non sa decifrare?",
+      "answer": "Lo presenta come oggetto opaco al TGS e aggiunge un authenticator costruito con la chiave di sessione client-TGS.",
+      "detail": "Il TGS possiede il materiale per verificare il TGT e la prova di possesso del segreto, quindi può rilasciare un ticket per il servizio. Il client non riceve le chiavi segrete dei server.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la parte AS-REP leggibile dal client con il TGT protetto per il TGS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.12, pagina PDF 142"
+    },
+    {
+      "id": "cyber-c08-q163",
+      "topicId": "cyber-c08-t16",
+      "question": "Esercizio 5: perché entrare nel Wi-Fi tramite RADIUS non autorizza automaticamente una chiamata API OAuth?",
+      "answer": "L’AAA di rete concede connettività secondo policy; l’API richiede un token autorizzativo e controlli applicativi separati.",
+      "detail": "Il resource server verifica audience, scope, validità del token e permessi sul dato. L’autenticazione di rete non sostituisce l’autorizzazione di business.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare la fiducia nella rete locale come autorizzazione implicita a tutte le risorse.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.12, pagina PDF 142"
+    },
+    {
+      "id": "cyber-c08-q164",
+      "topicId": "cyber-c08-t16",
+      "question": "Esercizio 6: che cosa può fare un attaccante con un bearer access token copiato?",
+      "answer": "Può tentare di usarlo per richiedere risorse nell’ambito delle autorizzazioni e del periodo di validità del token.",
+      "detail": "TLS non impedisce furti dai dispositivi o dalle memorie applicative. Limiti di durata, audience, scope, revoca e vincoli al mittente riducono l’impatto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che il token resti protetto una volta sottratto solo perché è stato usato su HTTPS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.12, pagina PDF 143"
+    },
+    {
+      "id": "cyber-c08-q165",
+      "topicId": "cyber-c08-t17",
+      "question": "All’orale, come dimostreresti in modo sistematico che «usare la crittografia» non è una descrizione sufficiente della sicurezza?",
+      "answer": "Identifico il bene, la proprietà protetta, gli endpoint, l’autenticazione, il ciclo delle chiavi, il controllo delle autorizzazioni e le minacce residue.",
+      "detail": "Una soluzione ben progettata definisce sia protocolli sia procedure operative; lo studente deve esplicitare che cosa garantisce il meccanismo e cosa resta fuori dalla sua portata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fornire solo il nome di AES, RSA o TLS come risposta completa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.13, pagina PDF 143"
+    },
+    {
+      "id": "cyber-c08-q166",
+      "topicId": "cyber-c08-t17",
+      "question": "Quale ricostruzione orale collega MIME, MUA/MSA/MTA/MDA e S/MIME?",
+      "answer": "MIME struttura il contenuto; gli agenti gestiscono composizione, invio, trasferimento, consegna e deposito; S/MIME firma/cifra le entità MIME indipendentemente dagli hop.",
+      "detail": "La ricostruzione deve spiegare perché la presenza di server intermedi motiva una protezione persistente del messaggio e non esclusivamente del singolo collegamento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare il Message Store e i metadati esterni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.13, pagina PDF 143"
+    },
+    {
+      "id": "cyber-c08-q167",
+      "topicId": "cyber-c08-t17",
+      "question": "Come presenteresti in un unico ragionamento la catena DKIM, SPF e DMARC?",
+      "answer": "DKIM attesta la responsabilità del dominio firmatario per alcuni campi, SPF verifica server autorizzati e DMARC integra l’allineamento al From e le policy.",
+      "detail": "La combinazione contrasta alcune falsificazioni del dominio ma non fornisce riservatezza né impedisce contenuti malevoli firmati o domini somiglianti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che una e-mail con DMARC valido è automaticamente affidabile nel contenuto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.13, pagina PDF 143"
+    },
+    {
+      "id": "cyber-c08-q168",
+      "topicId": "cyber-c08-t17",
+      "question": "Se il docente chiede di disegnare TLS 1.3, quali tappe e controlli devono comparire?",
+      "answer": "ClientHello → ServerHello → messaggi autenticativi protetti del server (EncryptedExtensions, Certificate, CertificateVerify, Finished) → verifiche e Finished client → dati protetti.",
+      "detail": "Spiega negoziazione, accordo sui segreti, controllo del certificato, derivazione HKDF e successiva protezione AEAD dei record. Specifica che è una sequenza introduttiva.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserire Change Cipher Spec come obbligatoria attivazione delle chiavi TLS 1.3.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.13, pagina PDF 144"
+    },
+    {
+      "id": "cyber-c08-q169",
+      "topicId": "cyber-c08-t17",
+      "question": "Come spiegheresti perché una sessione TLS cifrata può non autenticare correttamente il server?",
+      "answer": "Perché il client potrebbe non aver controllato nome, catena, validità e uso del certificato oppure la prova crittografica del peer.",
+      "detail": "La confidenzialità del canale con un interlocutore sbagliato non soddisfa la sicurezza desiderata. Un handshake deve associare i segreti al peer corretto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare «c’è una chiave crittografica» come prova dell’identità del destinatario.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.13, pagina PDF 144"
+    },
+    {
+      "id": "cyber-c08-q170",
+      "topicId": "cyber-c08-t17",
+      "question": "Quale sequenza concettuale distingueresti fra policy IPsec, IKEv2 ed ESP?",
+      "answer": "La policy (SPD) stabilisce quale traffico proteggere; IKEv2 autentica e negozia le SA; ESP protegge concretamente i pacchetti secondo quelle SA.",
+      "detail": "La SAD registra parametri attivi e la modalità transport/tunnel determina struttura dei pacchetti. Descrivi almeno gli endpoint e l’header esterno nel tunnel.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare IKEv2 il payload cifrato del pacchetto dati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.13, pagina PDF 144"
+    },
+    {
+      "id": "cyber-c08-q171",
+      "topicId": "cyber-c08-t17",
+      "question": "Come ricostruiresti Kerberos all’orale senza saltare nessuna delle tre fasi?",
+      "answer": "AS-REQ/REP per ottenere TGT; TGS-REQ/REP con TGT e authenticator per ottenere service ticket; AP-REQ (ed eventuale AP-REP) per autenticarsi al server.",
+      "detail": "Il TGT è opaco al client; le chiavi di sessione servono a provare possesso dei segreti; ticket, timestamp e trust sono rilevanti. Dopo l’autenticazione rimangono le autorizzazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che il client usa la propria password per decifrare il ticket del TGS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.13, pagina PDF 145"
+    },
+    {
+      "id": "cyber-c08-q172",
+      "topicId": "cyber-c08-t17",
+      "question": "Come collegheresti 802.1X, EAP, RADIUS e AAA in una domanda orale?",
+      "answer": "802.1X controlla l’accesso al link; EAP veicola i metodi di autenticazione; RADIUS collega NAS e server AAA; AAA comprende autenticazione, autorizzazione e accounting.",
+      "detail": "Il supplicant è il dispositivo utente, l’authenticator l’access point/switch e il client RADIUS normalmente il NAS. Le policy possono includere VLAN e vincoli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fare corrispondere univocamente tutti e quattro i termini alla stessa funzione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.13, pagina PDF 145"
+    },
+    {
+      "id": "cyber-c08-q173",
+      "topicId": "cyber-c08-t17",
+      "question": "Come spiegheresti i quattro ruoli e i token OAuth senza trasformarlo in un protocollo di login?",
+      "answer": "Resource owner concede diritti al client; authorization server emette token; resource server controlla access token e autorizzazioni. Per identità standardizzata serve OIDC.",
+      "detail": "Distingui authorization code e access token, refresh token, scope, PKCE, audience, redirect URI e ID token. Un token valido non sostituisce controlli ABAC.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare OIDC un semplice alias di OAuth 2.0.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.13, pagina PDF 145"
+    },
+    {
+      "id": "cyber-c08-q174",
+      "topicId": "cyber-c08-t17",
+      "question": "Come confronteresti oralmente 2FA, Kerberos, RADIUS e OAuth?",
+      "answer": "2FA è un metodo multifattore; Kerberos un protocollo di autenticazione a ticket; RADIUS un protocollo AAA; OAuth un framework di autorizzazione delegata.",
+      "detail": "Possono coesistere: MFA all’autenticazione iniziale, Kerberos per SSO, RADIUS per accessi di rete e token OAuth per le API. La scelta parte dal requisito e non dalla notorietà della tecnologia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare autenticazione a due fattori e delega di autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.13, pagina PDF 146"
+    },
+    {
+      "id": "cyber-c08-q175",
+      "topicId": "cyber-c08-t17",
+      "question": "Quali criticità dei token OAuth vorresti controllare durante una revisione di sicurezza?",
+      "answer": "Furto bearer, scadenze, refresh token, redirect URI, code injection, audience, scope, archiviazione sicura, validazione delle policy e revoca.",
+      "detail": "La sicurezza richiede controlli coordinati lungo authorization endpoint, token endpoint, client e API. PKCE è una protezione centrale contro il furto dei codici.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non basarsi sul solo uso di HTTPS in assenza di controlli sulle credenziali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.13, pagina PDF 146"
+    },
+    {
+      "id": "cyber-c08-q176",
+      "topicId": "cyber-c08-t17",
+      "question": "Nel glossario del Capitolo 8, quali sigle indicano oggetti protetti e quali indicano meccanismi?",
+      "answer": "Ciphertext e TLS record sono dati protetti; TGT e access token sono credenziali; ESP/AH e TLS sono meccanismi di protezione; AAA descrive funzioni di accesso.",
+      "detail": "Riconoscere la categoria evita di scambiare una credenziale per una chiave, un record per una sessione e una funzione per un formato crittografico.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare «ticket», «token», «chiave» come parole intercambiabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.14, pagina PDF 146"
+    },
+    {
+      "id": "cyber-c08-q177",
+      "topicId": "cyber-c08-t17",
+      "question": "Quale differenza c’è fra SA, SPI, IKEv2 ed ESP nel lessico IPsec?",
+      "answer": "SA è l’associazione di parametri; SPI è un identificatore della SA; IKEv2 negozia le associazioni; ESP protegge concretamente il payload IP.",
+      "detail": "Queste quattro sigle descrivono aspetti diversi della medesima architettura e aiutano a leggere i diagrammi IPsec del manuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "SPI non è la chiave stessa, e IKEv2 non è ESP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.14, pagina PDF 146"
+    },
+    {
+      "id": "cyber-c08-q178",
+      "topicId": "cyber-c08-t17",
+      "question": "Come distingueresti in trenta secondi scope, access token, ID token e PKCE?",
+      "answer": "Scope descrive diritti richiesti; access token è credenziale API; ID token comunica autenticazione OIDC; PKCE lega il codice allo scambio di token.",
+      "detail": "Le quattro nozioni interagiscono in un sistema moderno ma hanno ruoli distinti: autorizzazione, identità e protezione del flusso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un ID token come bearer access token ordinario per una API.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.14, pagina PDF 146"
+    },
+    {
+      "id": "cyber-c08-q179",
+      "topicId": "cyber-c08-t17",
+      "question": "Quale errore concettuale nasconde la frase «DKIM cifra le e-mail»?",
+      "answer": "Attribuisce la riservatezza a un meccanismo di firma di dominio che non cifra il contenuto.",
+      "detail": "DKIM copre dati selezionati con una firma verificabile via DNS; una vera riservatezza persistente del contenuto può richiedere S/MIME.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "DKIM valido non significa contenuto segreto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.15, pagina PDF 146"
+    },
+    {
+      "id": "cyber-c08-q180",
+      "topicId": "cyber-c08-t17",
+      "question": "Quali tre false affermazioni su TLS il manuale invita a correggere?",
+      "answer": "«HTTPS cifra fino al database»; «CCS attiva le chiavi in TLS 1.3 come in TLS 1.2»; «Heartbeat è sempre parte dell’handshake».",
+      "detail": "TLS termina agli endpoint effettivi; CCS in TLS 1.3 è di compatibilità; Heartbeat è un’estensione separata facoltativa. Si devono distinguere modelli storici e moderni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non memorizzare senza contesto semplificazioni didattiche obsolete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.15, pagina PDF 147"
+    },
+    {
+      "id": "cyber-c08-q181",
+      "topicId": "cyber-c08-t17",
+      "question": "Quali due errori su Kerberos e IPsec indicano la confusione degli strati di protezione?",
+      "answer": "«Il client decifra il TGT con la password» e «IPsec opera sotto il livello IP».",
+      "detail": "Il TGT è protetto per il TGS, mentre IPsec realizza meccanismi proprio al livello IP. Il client riceve separatamente i propri dati della risposta AS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere i ticket come documenti liberamente decifrabili dal client.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.15, pagina PDF 147"
+    },
+    {
+      "id": "cyber-c08-q182",
+      "topicId": "cyber-c08-t17",
+      "question": "Quali errori su RADIUS, OAuth e bearer token vanno evitati?",
+      "answer": "RADIUS non coincide con 802.1X; OAuth non è automaticamente login; un bearer token rubato può essere riutilizzato malgrado l’uso originario di TLS.",
+      "detail": "RADIUS collega il NAS al sistema AAA; OIDC aggiunge identità ad OAuth; i token richiedono protezione contro furto e riuso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre dalla sicurezza del canale la sicurezza delle credenziali sugli endpoint.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.15, pagina PDF 147"
+    },
+    {
+      "id": "cyber-c08-q183",
+      "topicId": "cyber-c08-t17",
+      "question": "Perché «una VPN IPsec autorizza a tutti i servizi interni» è un’affermazione errata?",
+      "answer": "Perché il tunnel protegge la comunicazione fra peer IPsec, ma non determina automaticamente i privilegi applicativi del soggetto.",
+      "detail": "Permessi, segmentazione, accesso alle risorse, autenticazione dei servizi e monitoraggio rimangono necessari anche dopo una VPN valida.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare la connettività di rete come autorizzazione illimitata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 8, §8.15, pagina PDF 147"
+    }
+  ]
+}

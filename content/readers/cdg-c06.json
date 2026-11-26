@@ -1,0 +1,1499 @@
+{
+  "sections": [
+    {
+      "id": "introduzione",
+      "title": "Introduzione",
+      "topics": [],
+      "blocks": [
+        {
+          "image": "cdg-p54-1.png",
+          "caption": "Il modello ABC attribuisce i costi delle risorse alle attività e, successivamente, agli oggetti di costo.",
+          "alt": "Il modello ABC attribuisce i costi delle risorse alle attività e, successivamente, agli oggetti di costo."
+        }
+      ],
+      "concept": "Introduzione"
+    },
+    {
+      "id": "6-1",
+      "title": "6.1 Perché studiamo l’Activity-Based Costing",
+      "topics": [
+        "cdg-c06-t01"
+      ],
+      "blocks": [
+        {
+          "text": "Il Capitolo 5 ha mostrato come attribuire costi indiretti ai prodotti attraverso risorse e centri di costo. Il sistema a centri di costo è già più articolato di un riparto unico, ma non sempre riesce a rappresentare ciò che determina davvero i consumi di risorse. In particolare, un’impresa può utilizzare le stesse macchine per prodotti molto diversi: alcuni vengono realizzati in lotti grandi e standardizzati, altri richiedono frequenti cambi di attrezzaggio, ordini urgenti, collaudi speciali e modifiche di progettazione."
+        },
+        {
+          "text": "Per rispondere a questo problema la contabilità direzionale sviluppa l’Activity-Based Costing (ABC), un sistema di misurazione dei costi che assume come elemento centrale non il reparto, ma l’attività svolta per produrre o servire un oggetto di costo. I prodotti non “consumano” direttamente la maggior parte delle risorse comuni: richiedono attività, e sono tali attività a consumare risorse."
+        },
+        {
+          "text": "Conoscenze attese. Saper definire l’ABC, distinguere resource driver, activity driver e cost driver, riconoscere attività e processi, costruire un sistema di imputazione a due stadi e interpretarne criticamente i risultati."
+        },
+        {
+          "text": "Competenze applicative. Saper calcolare i costi di attività e prodotti, confrontare ABC e metodi tradizionali, valutare la redditività di clienti e servizi e identificare iniziative di miglioramento dei processi."
+        },
+        {
+          "text": "L’approccio segue in primo luogo le slide e il glossario Arcari. I concetti di gerarchia dei costi e Time-Driven ABC, non necessari per riprodurre in modo letterale il nucleo delle slide, vengono introdotti come approfondimenti scientificamente documentati."
+        }
+      ],
+      "concept": "Perché studiamo l’Activity-Based Costing"
+    },
+    {
+      "id": "6-2",
+      "title": "6.2 Il problema dei sistemi di costo tradizionali",
+      "topics": [
+        "cdg-c06-t02"
+      ],
+      "blocks": [
+        {
+          "text": "Nel modello a base unica, i costi generali possono essere ripartiti, ad esempio, in proporzione alle ore di manodopera diretta. Anche con i centri di costo, molte quote continuano a dipendere da basi prevalentemente volumetriche. Una simile scelta presuppone che il consumo dei costi indiretti cresca in modo sufficientemente coerente con il driver scelto."
+        },
+        {
+          "text": "Il presupposto può non valere quando si producono contemporaneamente articoli semplici e articoli molto complessi. La progettazione di un nuovo prodotto, l’apertura di un ordine di acquisto e un setup macchina possono dipendere dal numero di varianti o di lotti, non dal numero dei pezzi lavorati. Se un prodotto è realizzato in piccoli lotti, può richiedere molti setup anche con un volume complessivo limitato."
+        },
+        {
+          "text": "Distorsione tipica. Il prodotto standard ad alto volume finisce per assorbire una quota sproporzionata dei costi di complessità, mentre il prodotto speciale a basso volume riceve una quota troppo piccola. Questa redistribuzione viene chiamata sovvenzionamento incrociato dei costi (cross-subsidization)."
+        },
+        {
+          "text": "Non significa che il full costing tradizionale sia sempre inutilizzabile: quando le attività sono omogenee e i costi indiretti seguono davvero un unico driver, un sistema semplice può essere corretto e meno costoso da amministrare. L’ABC è particolarmente utile quando attività e driver sono eterogenei e pesano significativamente sulla struttura dei costi. [E1][E2]"
+        }
+      ],
+      "concept": "Il problema dei sistemi di costo tradizionali"
+    },
+    {
+      "id": "6-3",
+      "title": "6.3 L’assunto fondamentale dell’ABC",
+      "topics": [
+        "cdg-c06-t03"
+      ],
+      "blocks": [
+        {
+          "text": "La proposizione fondamentale è: prodotti, servizi, clienti e altri oggetti di costo richiedono attività; le attività utilizzano fattori produttivi; il consumo di fattori genera costi. Il calcolo del costo pieno viene quindi organizzato in due fasi."
+        },
+        {
+          "text": "Prima fase — dalle risorse alle attività. I costi delle risorse impiegate (personale, immobili, sistemi informativi, impianti) vengono attribuiti a specifiche attività. Se una risorsa è dedicata esclusivamente a un’attività, il suo costo può essere tracciato direttamente; se è condivisa, si ricorre a un resource driver."
+        },
+        {
+          "text": "Seconda fase — dalle attività agli oggetti. Una volta misurato il costo dell’attività, questo viene assegnato ai prodotti o agli altri oggetti in proporzione alla quantità di attività da essi utilizzata, misurata mediante un activity driver."
+        },
+        {
+          "text": "Ad esempio, il responsabile acquisti e il sistema gestionale consumano risorse per gestire gli ordini. I costi della gestione ordini possono essere attribuiti ai prodotti secondo il numero o il tipo di ordini di acquisto richiesti da ciascuno. La quantità di unità prodotte non è necessariamente un buon sostituto di questa informazione."
+        },
+        {
+          "image": "cdg-p55-1.png",
+          "caption": "Schema del procedimento ABC: ogni passaggio richiede un criterio di misurazione esplicito.",
+          "alt": "Schema del procedimento ABC: ogni passaggio richiede un criterio di misurazione esplicito."
+        },
+        {
+          "text": "Risorse → attività (resource driver) → oggetti di costo (activity driver)"
+        }
+      ],
+      "concept": "L’assunto fondamentale dell’ABC"
+    },
+    {
+      "id": "6-4",
+      "title": "6.4 Le attività: definizione, elementi e confini",
+      "topics": [
+        "cdg-c06-t04"
+      ],
+      "blocks": [
+        {
+          "text": "Un’attività è un insieme omogeneo di compiti elementari, realizzati da una persona o da un gruppo con competenze specifiche, che utilizza input e produce un output identificabile destinato a un cliente interno o esterno. Le slide identificano esplicitamente tali proprietà: esistenza di compiti, persone, know-how, omogeneità di costo e performance, input e output."
+        },
+        {
+          "text": "Esempi di attività sono emettere ordini di acquisto, predisporre un setup, collaudare un lotto, effettuare una riparazione, movimentare materiali, rispondere a una richiesta del cliente, elaborare un’offerta commerciale e predisporre la documentazione tecnica."
+        },
+        {
+          "text": "Per definire attività davvero utili occorre precisare inizio e fine, input ricevuti, output rilasciati, destinatario, risorse impiegate, unità di misura, volume annuo e responsabile del processo. Senza confini chiari è facile conteggiare due volte un costo o confondere due prestazioni diverse sotto la stessa voce."
+        },
+        {
+          "text": "Esempio. “Acquisti” è una funzione aziendale. “Registrare un ordine”, “qualificare un fornitore” e “gestire un sollecito urgente” sono attività. Possono essere svolte dalle stesse persone, ma presentare driver differenti e quindi costi differenti."
+        }
+      ],
+      "concept": "Le attività: definizione, elementi e confini"
+    },
+    {
+      "id": "6-5",
+      "title": "6.5 Attività, compiti, processi e centri di costo",
+      "topics": [
+        "cdg-c06-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Un compito è una singola operazione elementare, come verificare la presenza di un codice fornitore. Più compiti coordinati costituiscono un’attività, per esempio emettere un ordine. Più attività correlate formano un processo, come approvvigionare il materiale necessario a completare una produzione."
+        },
+        {
+          "text": "Il centro di costo, invece, è un contenitore definito in rapporto a una unità organizzativa: un reparto, un ufficio o altra aggregazione destinata al controllo. Un’attività non coincide necessariamente con un centro e può attraversare i confini organizzativi."
+        },
+        {
+          "text": "Il centro di costo è normalmente più ampio dell’attività: il centro Acquisti comprende molte attività con diversa intensità di lavoro. Anche una stessa attività, come la gestione delle non conformità, può coinvolgere Produzione, Qualità, Logistica e Assistenza clienti."
+        },
+        {
+          "text": "Questa è la differenza strutturale centrale fra cost accounting per centri e ABC che viene evidenziata nel materiale didattico. L’uno misura costi per unità organizzative, l’altro cerca il collegamento tra costo e lavoro effettivamente richiesto. I due criteri possono coesistere: l’ABC può utilizzare i dati contabili già raccolti per centro di costo."
+        },
+        {
+          "image": "cdg-p56-1.png",
+          "caption": "Un singolo centro di costo può contenere attività differenti, con driver e costi molto diversi.",
+          "alt": "Un singolo centro di costo può contenere attività differenti, con driver e costi molto diversi."
+        }
+      ],
+      "concept": "Attività, compiti, processi e centri di costo"
+    },
+    {
+      "id": "6-6",
+      "title": "6.6 Analisi e rappresentazione dei processi aziendali",
+      "topics": [
+        "cdg-c06-t06"
+      ],
+      "blocks": [
+        {
+          "text": "Un processo è una sequenza coordinata di attività finalizzata alla generazione di un output complessivo per un cliente interno o esterno. La prospettiva per processi non descrive anzitutto chi comanda chi, ma come il lavoro si svolge e come il valore attraversa l’organizzazione."
+        },
+        {
+          "text": "Il processo “dall’ordine alla consegna”, per esempio, può comprendere inserimento dell’ordine, verifica disponibilità, approvvigionamento, lavorazione, collaudo, imballaggio e spedizione. Il risultato dipende dalla fluidità dell’intera catena, non soltanto dall’efficienza della singola funzione."
+        },
+        {
+          "text": "Un’analisi preliminare dei processi (process mapping) aiuta a identificare attività duplicate, passaggi senza output utile, colli di bottiglia e responsabilità frammentate. Per il costing occorre individuare quali oggetti richiedono ciascuna attività e con quale intensità."
+        },
+        {
+          "text": "Responsabilizzazione. La trasversalità introduce il problema della responsabilità del processo: le persone rispondono spesso a capi funzionali, ma la performance finale deve essere misurata anche lungo il percorso che collega le funzioni. Un process owner, quando previsto, coordina il risultato end-to-end."
+        },
+        {
+          "image": "cdg-p57-1.png",
+          "caption": "Esempio di processo trasversale a più funzioni: gli oggetti di costo possono richiedere combinazioni diverse di attività.",
+          "alt": "Esempio di processo trasversale a più funzioni: gli oggetti di costo possono richiedere combinazioni diverse di attività."
+        }
+      ],
+      "concept": "Analisi e rappresentazione dei processi aziendali"
+    },
+    {
+      "id": "6-7",
+      "title": "6.7 Il livello di aggregazione delle attività",
+      "topics": [
+        "cdg-c06-t07"
+      ],
+      "blocks": [
+        {
+          "text": "Non bisogna creare una voce per ogni gesto compiuto da ogni dipendente. Un ABC con migliaia di attività sarebbe molto costoso e poco gestibile; al contrario, poche attività troppo ampie renderebbero difficoltosa l’individuazione delle determinanti reali dei costi."
+        },
+        {
+          "text": "Le slide propongono di trattare separatamente attività che costituiscono una quota significativa dei costi, hanno cost driver sostanzialmente differenti oppure contribuiscono in modo distinto alla differenziazione dell’impresa."
+        },
+        {
+          "text": "Per esempio, “gestione ordini standard” e “gestione ordini urgenti” possono richiedere tempi molto diversi. Se le urgenze sono numerose e costose, un unico costo medio per ordine nasconderebbe un fenomeno gestionale importante. Se invece le differenze sono irrilevanti, mantenerle insieme può essere una semplificazione ragionevole."
+        },
+        {
+          "text": "Trade-off progettuale. Maggiore dettaglio aumenta potenzialmente la precisione ma anche il costo di raccolta dati. La scelta corretta è il livello di dettaglio che sostiene decisioni più utili rispetto alle risorse necessarie per mantenerlo."
+        }
+      ],
+      "concept": "Il livello di aggregazione delle attività"
+    },
+    {
+      "id": "6-8",
+      "title": "6.8 Resource driver: dalle risorse alle attività",
+      "topics": [
+        "cdg-c06-t08"
+      ],
+      "blocks": [
+        {
+          "text": "Il resource driver è la misura della quantità di una risorsa consumata da una specifica attività. Serve ad attribuire alle attività il costo di risorse che non possono essere tracciate in modo esclusivo. Non è necessariamente un conteggio di pezzi: può essere una percentuale di tempo del personale, minuti macchina, metri quadrati occupati, accessi a un sistema, consumo energetico misurato o altre misure causali."
+        },
+        {
+          "text": "Il percorso operativo consiste nel rilevare i costi totali di ciascuna risorsa, individuare le attività che ne fanno uso, scegliere la base di attribuzione, misurare o stimare con criteri controllabili le quote e distribuire il costo. Ogni costo deve essere assegnato una volta sola, o dichiarato come non attribuito."
+        },
+        {
+          "text": "Attribuzione diretta. Se una macchina è utilizzata esclusivamente per il collaudo, l’ammortamento può essere attribuito direttamente a tale attività senza passare per percentuali di riparto."
+        },
+        {
+          "text": "Attribuzione indiretta. Se tre addetti suddividono il tempo fra gestione ordini, qualificazione fornitori e solleciti, il costo del personale può essere attribuito in base alle ore effettivamente dedicate o, in assenza di rilevazioni, a stime ragionate e periodicamente validate."
+        },
+        {
+          "text": "Un resource driver descrive l’uso della risorsa da parte dell’attività; non va confuso con il driver che successivamente distribuisce il costo dell’attività ai prodotti."
+        },
+        {
+          "text": "Costo risorsa r → attività a = Costo totale risorsa r × quota di utilizzo r,a"
+        },
+        {
+          "text": "Costo totale dell’attività a = Somma dei costi di risorsa assegnati all’attività a"
+        }
+      ],
+      "concept": "Resource driver: dalle risorse alle attività"
+    },
+    {
+      "id": "6-9",
+      "title": "6.9 Esempio completo: dalle risorse alle attività",
+      "topics": [
+        "cdg-c06-t09"
+      ],
+      "blocks": [
+        {
+          "text": "Supponiamo che un’impresa sostenga tre categorie di costi condivisi: personale tecnico per 120.000 €, ammortamenti e funzionamento macchine per 90.000 €, sistemi informativi per 30.000 €. Dobbiamo attribuire i 240.000 € a quattro attività: setup, test, lavorazione macchina e assistenza clienti."
+        },
+        {
+          "text": "Le quote di impiego sono determinate sulla base di dati di lavoro e di utilizzo. Per ciascuna risorsa devono sommare al 100%, altrimenti rimarrebbe una porzione di costo da spiegare."
+        },
+        {
+          "table": [
+            [
+              "Risorsa (€)",
+              "Setup",
+              "Test",
+              "Macchine",
+              "Assistenza"
+            ],
+            [
+              "Personale 120.000",
+              "30% = 36.000",
+              "40% = 48.000",
+              "0% = 0",
+              "30% = 36.000"
+            ],
+            [
+              "Macchinari 90.000",
+              "20% = 18.000",
+              "10% = 9.000",
+              "70% = 63.000",
+              "0% = 0"
+            ],
+            [
+              "Sistemi IT 30.000",
+              "20% = 6.000",
+              "50% = 15.000",
+              "0% = 0",
+              "30% = 9.000"
+            ],
+            [
+              "Totale attività",
+              "60.000",
+              "72.000",
+              "63.000",
+              "45.000"
+            ]
+          ]
+        },
+        {
+          "text": "Verifica: 60.000 + 72.000 + 63.000 + 45.000 = 240.000 €, cioè esattamente il costo totale delle risorse. Si tratta della prima quadratura del sistema ABC."
+        },
+        {
+          "text": "CHE COSA ABBIAMO CALCOLATO? Abbiamo calcolato il costo annuo di ciascuna attività, NON ancora il costo attribuibile a ciascun prodotto o cliente. Per il secondo stadio servono gli activity driver."
+        }
+      ],
+      "concept": "Esempio completo: dalle risorse alle attività"
+    },
+    {
+      "id": "6-10",
+      "title": "6.10 Activity driver: dalle attività agli oggetti di costo",
+      "topics": [
+        "cdg-c06-t10"
+      ],
+      "blocks": [
+        {
+          "text": "L’activity driver misura quanta attività è richiesta da ciascun oggetto di costo. È la base di imputazione attraverso la quale il costo dell’attività viene assegnato a prodotti, commesse, servizi, clienti e altri oggetti."
+        },
+        {
+          "text": "Per l’attività “gestire ordini”, il driver può essere il numero di ordini, se il tempo richiesto è relativamente uniforme. Per l’attività “collaudo”, può essere il numero di ore di test, quando i collaudi hanno durata molto diversa. Per il setup, si può utilizzare il numero di avviamenti o il tempo effettivo di setup."
+        },
+        {
+          "text": "Prima di calcolare il tasso di attività è indispensabile definire il periodo e la quantità totale dell’activity driver. Non si deve dividere il costo del pool per il numero di prodotti di un solo tipo: il denominatore comprende tutti gli oggetti che utilizzano quella attività, salva una scelta esplicita diversa sulla capacità e sulle risorse non utilizzate."
+        },
+        {
+          "text": "Criterio di scelta. Un buon activity driver ha relazione causale con il consumo dell’attività, è osservabile, non è eccessivamente costoso da rilevare, è stabile nel tempo o viene aggiornato e non incentiva comportamenti distorsivi."
+        },
+        {
+          "text": "Activity rate a = Costo dell’attività a / Volume totale dell’activity driver a"
+        },
+        {
+          "text": "Costo dell’attività a attribuito all’oggetto i = Activity rate a × Driver a consumato da i"
+        },
+        {
+          "text": "Costo pieno oggetto i = Costi diretti i + Somma dei costi delle attività imputati a i"
+        },
+        {
+          "image": "cdg-p58-1.png",
+          "caption": "Resource driver, activity driver e cost driver hanno ruoli diversi, anche quando nella pratica condividono alcune misure.",
+          "alt": "Resource driver, activity driver e cost driver hanno ruoli diversi, anche quando nella pratica condividono alcune misure."
+        }
+      ],
+      "concept": "Activity driver: dalle attività agli oggetti di costo"
+    },
+    {
+      "id": "6-11",
+      "title": "6.11 Le tipologie di activity driver adottate nel corso",
+      "topics": [
+        "cdg-c06-t11"
+      ],
+      "blocks": [
+        {
+          "text": "Il materiale didattico distingue quattro grandi famiglie di activity driver. La classificazione è utile per scegliere misure che rappresentino in modo adeguato l’origine della richiesta di lavoro."
+        },
+        {
+          "text": "Driver legati al volume. Livello di produzione, costo della manodopera diretta, consumo di materiale, numero di unità o ore macchina. Sono appropriati quando il consumo dell’attività cresce sostanzialmente con il volume."
+        },
+        {
+          "text": "Driver legati alla complessità. Numero di componenti, movimentazioni, interventi, ordini distinti, varianti o modifiche. Sono particolarmente importanti per prodotti personalizzati e lotti piccoli."
+        },
+        {
+          "text": "Driver legati all’efficienza. Tempi di attrezzaggio, tempi di collaudo, durata della lavorazione e altre misure che riflettono intensità e condizioni di impiego delle risorse."
+        },
+        {
+          "text": "Driver legati al mercato. Ampiezza del catalogo, differenziazione dei margini, varietà dei segmenti, complessità commerciale e caratteristiche dell’offerta che incidono sulle attività richieste."
+        },
+        {
+          "text": "Queste famiglie non sono mutuamente esclusive: un tempo di collaudo può essere influenzato contemporaneamente dal volume dei prodotti, dalla loro complessità e dall’efficienza del personale. Per un calcolo rigoroso occorre dichiarare la convenzione adottata."
+        },
+        {
+          "table": [
+            [
+              "Attività",
+              "Driver possibile",
+              "Che cosa misura"
+            ],
+            [
+              "Setup impianto",
+              "N. attrezzaggi / ore setup",
+              "Frequenza o intensità degli avvii"
+            ],
+            [
+              "Ordini ai fornitori",
+              "N. ordini distinti",
+              "Carico amministrativo acquisti"
+            ],
+            [
+              "Collaudi",
+              "Ore di controllo / n. test",
+              "Impegno del personale qualità"
+            ],
+            [
+              "Movimentazione",
+              "N. spostamenti / pallet",
+              "Impegno logistico"
+            ],
+            [
+              "Assistenza tecnica",
+              "N. ticket ponderati / minuti",
+              "Domanda di supporto per cliente"
+            ],
+            [
+              "Progettazione",
+              "Ore progettazione / varianti",
+              "Complessità prodotto"
+            ]
+          ]
+        }
+      ],
+      "concept": "Le tipologie di activity driver adottate nel corso"
+    },
+    {
+      "id": "6-12",
+      "title": "6.12 Gerarchia delle attività e dei costi — approfondimento esterno",
+      "topics": [
+        "cdg-c06-t12"
+      ],
+      "blocks": [
+        {
+          "text": "La letteratura manageriale anglosassone distingue spesso quattro livelli di attività, perché non tutti i costi dipendono dalle unità prodotte. Questa griglia completa la classificazione dei driver del corso ma non la sostituisce. [E2][E3]"
+        },
+        {
+          "text": "Attività a livello di unità (unit-level). Si svolgono per ogni unità prodotta: lavorazione, consumo materiali, taluni controlli ripetuti su ciascun pezzo. Il loro driver è normalmente proporzionale alle unità o alle ore per unità."
+        },
+        {
+          "text": "Attività a livello di lotto (batch-level). Si svolgono una volta per lotto o ordine: setup, preparazione documenti, avviamento, controlli di prima produzione. Il costo unitario dipende anche dalla dimensione media dei lotti."
+        },
+        {
+          "text": "Attività a livello di prodotto (product-sustaining). Servono a mantenere una linea o una variante indipendentemente dal volume: progettazione di una famiglia, aggiornamento documentazione, test di omologazione, gestione distinta base."
+        },
+        {
+          "text": "Attività a livello di struttura (facility-sustaining). Mantengono l’intero stabilimento o l’impresa in condizioni operative: sicurezza generale del sito, illuminazione comune, direzione generale. L’attribuzione ai singoli prodotti può essere debole dal punto di vista causale e va trattata con cautela."
+        },
+        {
+          "text": "Per esempio, produrre 1.000 unità in 20 lotti richiede venti avviamenti; produrre le stesse 1.000 unità in due lotti ne richiede soltanto due. Il costo batch-level può quindi cambiare molto senza alcuna variazione del volume totale."
+        },
+        {
+          "image": "cdg-p59-1.png",
+          "caption": "La gerarchia rende visibili costi che sorgono a livello di unità, lotto, prodotto o intera struttura.",
+          "alt": "La gerarchia rende visibili costi che sorgono a livello di unità, lotto, prodotto o intera struttura."
+        }
+      ],
+      "concept": "Gerarchia delle attività e dei costi — approfondimento esterno"
+    },
+    {
+      "id": "6-13",
+      "title": "6.13 Le determinanti di costo (cost driver)",
+      "topics": [
+        "cdg-c06-t13"
+      ],
+      "blocks": [
+        {
+          "text": "Nelle slide italiane il cost driver viene distinto metodologicamente dall’activity driver. Il primo è la determinante economico- organizzativa che causa o influenza la necessità di svolgere un’attività e il consumo di risorse ad essa associato; il secondo è la misura usata per attribuire il costo di quell’attività all’oggetto."
+        },
+        {
+          "text": "Esempio: un elevato numero di fornitori e la scarsa standardizzazione dei codici materiali aumentano la complessità della funzione acquisti: sono possibili cost driver gestionali. Il numero di ordini di acquisto emessi è invece un activity driver utilizzabile per imputare il costo dell’attività ai prodotti."
+        },
+        {
+          "text": "Sotto il profilo operativo le due etichette possono sovrapporsi: la letteratura internazionale usa frequentemente “cost driver” anche per indicare la base di attribuzione ABC. Per evitare confusione, il presente manuale segue la distinzione del corso e segnala la diversa convenzione quando si riportano fonti esterne."
+        },
+        {
+          "text": "Fra le cause gestionali troviamo complessità del prodotto, ampiezza della gamma, personalizzazione, qualità dei dati, automazione, variabilità delle richieste, numero di cambi formato, politiche di lotto e varietà dei mercati. Individuare tali cause è il passaggio fondamentale per trasformare il costing in gestione delle performance."
+        },
+        {
+          "text": "Nel prospetto delle slide vengono confrontate tre attività — assemblaggio, movimentazione merci e pagamenti ai fornitori — per mostrare concretamente come resource driver, activity driver e cost driver non coincidano. La tabella seguente ne rielabora gli esempi senza riprodurre graficamente la slide."
+        },
+        {
+          "table": [
+            [
+              "Misura",
+              "Assemblaggio prodotti",
+              "Movimentazione merci",
+              "Pagamento fornitori"
+            ],
+            [
+              "Resource driver",
+              "Ore dedicate; risorse specifiche",
+              "Ore dedicate; risorse specifiche",
+              "Ore dedicate; risorse specifiche"
+            ],
+            [
+              "Activity driver",
+              "N. assemblaggi; unità assemblate",
+              "N. codici, bancali o pallet movimentati",
+              "N. pagamenti; n. fatture saldate"
+            ],
+            [
+              "Cost driver",
+              "N. componenti per prodotto; dimensione lotti; automazione",
+              "",
+              ""
+            ]
+          ]
+        },
+        {
+          "text": "Layout; efficienza mezzi; disponibilità magazzini vicino alla linea"
+        },
+        {
+          "text": "Varietà condizioni; n. banche; qualità documenti; automazione"
+        },
+        {
+          "text": "Si osservi la differenza logica: per calcolare il costo della movimentazione si possono utilizzare le ore di addetti e mezzi; per imputarlo a un prodotto si può contare quanti pallet esso ha richiesto; per ridurlo nel tempo occorre analizzare layout, efficienza del trasporto e collocazione del magazzino."
+        }
+      ],
+      "concept": "Le determinanti di costo (cost driver)"
+    },
+    {
+      "id": "6-14",
+      "title": "6.14 Procedimento completo per costruire un sistema ABC",
+      "topics": [
+        "cdg-c06-t14"
+      ],
+      "blocks": [
+        {
+          "text": "La costruzione si realizza attraverso una sequenza ordinata che collega disegno organizzativo, dati e calcolo: (1) fissare scopo e oggetto del costo; (2) mappare i processi; (3) individuare le attività; (4) rilevare le risorse e il loro costo; (5) attribuire risorse alle attività con resource driver; (6) definire e misurare gli activity driver; (7) calcolare tassi e imputare le attività agli oggetti; (8) sommare i costi diretti ed effettuare quadrature e verifiche di plausibilità."
+        },
+        {
+          "text": "La sequenza a due stadi può essere riassunta nelle seguenti formule. Nelle formule, C(r) è il costo della risorsa r, q(r,a) la quota utilizzata dall’attività a, X(a,i) la quantità del driver dell’attività a consumata dall’oggetto i e X(a,tot) il driver totale."
+        },
+        {
+          "text": "C(attività a) = Σ [ C(r) × q(r,a) ]"
+        },
+        {
+          "text": "Tasso(a) = C(attività a) / X(a,tot)"
+        },
+        {
+          "text": "C(indiretti,i) = Σ [ Tasso(a) × X(a,i) ]"
+        },
+        {
+          "text": "C(pieno unitario,i) = [ C(diretti,i) + C(indiretti,i) ] / Unità prodotte i"
+        },
+        {
+          "text": "Quando alcuni costi sono già specifici dell’oggetto (materie prime e talune lavorazioni esterne), essi vanno tracciati direttamente e non fatti inutilmente transitare per attività. Se la finalità è un diverso tipo di analisi, ad esempio il costo di una prestazione erogata da una funzione aziendale, anche una risorsa normalmente diretta al prodotto può essere attribuita prima alle attività: la scelta va dichiarata per evitare conteggi doppi."
+        },
+        {
+          "text": "QUADRATURE OBBLIGATORIE (1) Somma quote di ogni risorsa = costo totale della risorsa. (2) Somma costi delle attività = costi indiretti oggetto di analisi. (3) Somma quote delle attività agli oggetti = costi delle attività, se tutto viene allocato; altrimenti quantificare costi non imputati o capacità inutilizzata."
+        }
+      ],
+      "concept": "Procedimento completo per costruire un sistema ABC"
+    },
+    {
+      "id": "6-15",
+      "title": "6.15 Caso elementare: controllo qualità nei formaggi",
+      "topics": [
+        "cdg-c06-t15"
+      ],
+      "blocks": [
+        {
+          "text": "L’esercizio 3.1 delle soluzioni editoriali Arcari mostra un caso volutamente semplice: due formaggi richiedono un numero differente di controlli, con un costo di 200 € per controllo. Il prodotto Stagionato è realizzato in 500 unità e richiede quattro controlli; il Fresco è realizzato in 400 unità e richiede dieci controlli."
+        },
+        {
+          "text": "Il costo dell’attività imputato allo Stagionato è 4 × 200 = 800 €, ossia 800/500 = 1,60 € per unità. Il Fresco assorbe 10 × 200 = 2.000 €, ossia 2.000/400 = 5,00 € per unità."
+        },
+        {
+          "text": "Le unità di Fresco sono meno numerose, ma il costo per unità dell’attività di controllo è più elevato. Un riparto basato soltanto sui pezzi prodotti avrebbe attribuito a entrambi il costo medio complessivo di 2.800/900 = 3,111... € per unità, perdendo l’informazione che i due prodotti richiedono un’intensità di controllo differente."
+        },
+        {
+          "text": "Il totale dei costi rimane invariato: ABC non “crea” nuovi costi, ma modifica il criterio con cui vengono riferiti agli oggetti. [A3, esercizio 3.1]"
+        },
+        {
+          "table": [
+            [
+              "Prodotto",
+              "Unità",
+              "Controlli",
+              "Costo attività",
+              "Costo unitario"
+            ],
+            [
+              "Stagionato",
+              "500",
+              "4",
+              "800 €",
+              "1,60 €/unità"
+            ],
+            [
+              "Fresco",
+              "400",
+              "10",
+              "2.000 €",
+              "5,00 €/unità"
+            ],
+            [
+              "Totale",
+              "900",
+              "14",
+              "2.800 €",
+              "—"
+            ]
+          ]
+        }
+      ],
+      "concept": "Caso elementare: controllo qualità nei formaggi"
+    },
+    {
+      "id": "6-16",
+      "title": "6.16 Applicazione da soluzioni Arcari: ABC e due prodotti",
+      "topics": [
+        "cdg-c06-t16"
+      ],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "Gli esercizi 3.3 e 3.4 delle soluzioni editoriali riportano costi ABC per due prodotti e mostrano chiaramente il calcolo dei tassi. Consideriamo il caso 3.4, con attività di programmazione, acquisti, collaudo e vendite."
+            },
+            {
+              "text": "Il pool Programmazione costa 20.000 € e il driver totale è 2.000: il tasso è 10 € per unità di driver. Per Acquisti il tasso è 30.000/10.000 = 3; per Collaudo è 15.000/300 = 50; per Vendite è 50.000/1.000 = 50. I costi attribuiti al prodotto A sono complessivamente 59.000 € e quelli al prodotto B 56.000 €."
+            },
+            {
+              "text": "Se si producono 10.000 unità di A e 5.000 di B, i costi indiretti unitari sono 5,90 € e 11,20 €. Aggiungendo i costi diretti unitari del problema si ottengono rispettivamente 14,40 € e 31,20 € di costo pieno industriale. Questa differenza non può essere interpretata soltanto come un effetto delle materie o del lavoro diretto: conta anche il profilo di utilizzo delle attività. [A3, esercizio 3.4]"
+            },
+            {
+              "table": [
+                [
+                  "Attività",
+                  "Pool €",
+                  "Driver totale",
+                  "Tasso per driver"
+                ],
+                [
+                  "Programmazione",
+                  "20.000",
+                  "2.000",
+                  "10"
+                ],
+                [
+                  "Acquisti",
+                  "30.000",
+                  "10.000",
+                  "3"
+                ],
+                [
+                  "Collaudo",
+                  "15.000",
+                  "300",
+                  "50"
+                ],
+                [
+                  "Vendite",
+                  "50.000",
+                  "1.000",
+                  "50"
+                ],
+                [
+                  "Totale",
+                  "115.000",
+                  "—",
+                  "—"
+                ],
+                [
+                  "Configurazione",
+                  "Prodotto A",
+                  "Prodotto B",
+                  ""
+                ],
+                [
+                  "Materiali diretti M1",
+                  "2,00 €",
+                  "4,00 €",
+                  ""
+                ],
+                [
+                  "Materiali diretti M2",
+                  "1,50 €",
+                  "1,00 €",
+                  ""
+                ],
+                [
+                  "Manodopera diretta",
+                  "5,00 €",
+                  "15,00 €",
+                  ""
+                ],
+                [
+                  "Costi indiretti ABC",
+                  "5,90 €",
+                  "11,20 €",
+                  ""
+                ],
+                [
+                  "Costo pieno industriale",
+                  "14,40 €",
+                  "31,20 €",
+                  ""
+                ]
+              ]
+            },
+            {
+              "text": "INDICAZIONE D’ESAME Negli esercizi con più activity driver: calcola separatamente ogni tasso, distribuisci ciascun pool, somma per prodotto e dividi per il numero di unità solo alla fine. Non applicare un tasso che appartiene a un’attività a un driver diverso."
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Applicazione da soluzioni Arcari: ABC e due prodotti"
+    },
+    {
+      "id": "6-17",
+      "title": "6.17 Caso integrato originale — due prodotti e cinque attività",
+      "topics": [
+        "cdg-c06-t17"
+      ],
+      "blocks": [
+        {
+          "text": "Un’impresa produce 10.000 unità Standard e 2.000 Premium. I costi diretti unitari sono 12 € di materiali e 6 € di MOD per Standard, 20 € di materiali e 12 € di MOD per Premium. I costi indiretti industriali ammontano a 330.000 €, suddivisi nei cinque pool riportati sotto. Tutti i costi sono riferiti allo stesso periodo e i volumi dei driver riguardano l’intera produzione."
+        },
+        {
+          "text": "Il caso è creato appositamente per il manuale; consente di esercitare calcolo del rateo, imputazione, quadratura, confronto con il metodo tradizionale e lettura delle conseguenze gestionali."
+        },
+        {
+          "table": [
+            [
+              "Attività",
+              "Pool €",
+              "Driver",
+              "Standard",
+              "Premium"
+            ],
+            [
+              "Attrezzaggi",
+              "72.000",
+              "N. setup",
+              "12",
+              "24"
+            ],
+            [
+              "Acquisti",
+              "54.000",
+              "N. ordini",
+              "60",
+              "120"
+            ],
+            [
+              "Collaudi",
+              "66.000",
+              "Ore test",
+              "400",
+              "700"
+            ],
+            [
+              "Lavorazione",
+              "96.000",
+              "Ore macchina",
+              "8.000",
+              "4.000"
+            ],
+            [
+              "Supporto prodotto",
+              "42.000",
+              "N. schede tecniche",
+              "3",
+              "4"
+            ],
+            [
+              "Totale",
+              "330.000",
+              "—",
+              "—",
+              "—"
+            ]
+          ]
+        },
+        {
+          "text": "Calcoliamo innanzitutto le quantità totali dei driver: setup 12+24=36; ordini 60+120=180; ore test 400+700=1.100; ore macchina 8.000+4.000=12.000; schede tecniche 3+4=7."
+        },
+        {
+          "table": [
+            [
+              "Attività",
+              "Formula",
+              "Tasso di attività"
+            ],
+            [
+              "Attrezzaggi",
+              "72.000 / 36",
+              "2.000 €/setup"
+            ],
+            [
+              "Acquisti",
+              "54.000 / 180",
+              "300 €/ordine"
+            ],
+            [
+              "Collaudi",
+              "66.000 / 1.100",
+              "60 €/ora test"
+            ],
+            [
+              "Lavorazione",
+              "96.000 / 12.000",
+              "8 €/ora macchina"
+            ],
+            [
+              "Supporto prodotto",
+              "42.000 / 7",
+              "6.000 €/scheda"
+            ]
+          ]
+        },
+        {
+          "text": "Moltiplichiamo ora ogni tasso per il consumo di driver dei singoli prodotti. Il costo di ciascun pool viene attribuito integralmente ai due prodotti: questo consentirà una verifica della quadratura esatta."
+        },
+        {
+          "table": [
+            [
+              "Attività",
+              "Standard",
+              "Premium",
+              "Controllo totale"
+            ],
+            [
+              "Attrezzaggi",
+              "24.000",
+              "48.000",
+              "72.000"
+            ],
+            [
+              "Acquisti",
+              "18.000",
+              "36.000",
+              "54.000"
+            ],
+            [
+              "Collaudi",
+              "24.000",
+              "42.000",
+              "66.000"
+            ],
+            [
+              "Lavorazione",
+              "64.000",
+              "32.000",
+              "96.000"
+            ],
+            [
+              "Supporto prodotto",
+              "18.000",
+              "24.000",
+              "42.000"
+            ],
+            [
+              "Totale indiretti",
+              "148.000",
+              "182.000",
+              "330.000"
+            ]
+          ]
+        },
+        {
+          "text": "Il costo indiretto per unità Standard è 148.000/10.000 = 14,80 €. Il Premium assorbe 182.000/2.000 = 91,00 € di costi indiretti per unità. I costi diretti sono rispettivamente 18,00 € e 32,00 € per unità."
+        },
+        {
+          "table": [
+            [
+              "Voce per unità",
+              "Standard",
+              "Premium"
+            ],
+            [
+              "Materiali",
+              "12,00 €",
+              "20,00 €"
+            ],
+            [
+              "Manodopera diretta",
+              "6,00 €",
+              "12,00 €"
+            ],
+            [
+              "Costi indiretti ABC",
+              "14,80 €",
+              "91,00 €"
+            ],
+            [
+              "Costo pieno industriale ABC",
+              "32,80 €",
+              "123,00 €"
+            ]
+          ]
+        },
+        {
+          "text": "Verifica finale: costi diretti totali 18×10.000 + 32×2.000 = 244.000 €; indiretti 330.000 €; costo industriale complessivo 574.000 €. Anche dai costi unitari si ottiene 32,80×10.000 + 123×2.000 = 574.000 €. Le due vie coincidono."
+        }
+      ],
+      "concept": "Caso integrato originale — due prodotti e cinque attività"
+    },
+    {
+      "id": "6-18",
+      "title": "6.18 Confronto con un sistema tradizionale a base unica",
+      "topics": [
+        "cdg-c06-t18"
+      ],
+      "blocks": [
+        {
+          "text": "Con gli stessi costi e prodotti del caso precedente, ipotizziamo ora di attribuire tutti i 330.000 € di costi indiretti soltanto in base alle ore macchina, come avverrebbe in un sistema molto semplificato."
+        },
+        {
+          "text": "Il coefficiente tradizionale è 330.000/12.000 = 27,50 € per ora macchina. Standard assorbe 8.000 ore e quindi 220.000 € di costi indiretti, pari a 22 € per unità; Premium assorbe 4.000 ore, quindi 110.000 €, pari a 55 € per unità."
+        },
+        {
+          "text": "Il costo pieno unitario tradizionale è dunque 18+22 = 40 € per Standard e 32+55 = 87 € per Premium. Il totale dei costi è sempre 574.000 €, ma cambia radicalmente la distribuzione interna."
+        },
+        {
+          "table": [
+            [
+              "Voce unitaria",
+              "Standard",
+              "Premium"
+            ],
+            [
+              "Costi diretti",
+              "18,00 €",
+              "32,00 €"
+            ],
+            [
+              "Indiretti tradizionali",
+              "22,00 €",
+              "55,00 €"
+            ],
+            [
+              "Costo totale tradizionale",
+              "40,00 €",
+              "87,00 €"
+            ],
+            [
+              "Costo totale ABC",
+              "32,80 €",
+              "123,00 €"
+            ],
+            [
+              "Tradizionale − ABC",
+              "+7,20 €",
+              "−36,00 €"
+            ]
+          ]
+        },
+        {
+          "image": "cdg-p63-1.png",
+          "caption": "Il sistema tradizionale sovrastima il costo unitario Standard e sottostima quello Premium rispetto al profilo di attività misurato nell’esempio",
+          "alt": "Il sistema tradizionale sovrastima il costo unitario Standard e sottostima quello Premium rispetto al profilo di attività misurato nell’esempio"
+        },
+        {
+          "text": "ABC."
+        },
+        {
+          "text": "In termini complessivi, Standard assorbe 72.000 € di costo in più nel tradizionale rispetto all’ABC (7,20×10.000), mentre Premium riceve 72.000 € di costo in meno (36×2.000). Non è un incremento o una diminuzione del costo complessivo dell’impresa: è una diversa attribuzione."
+        }
+      ],
+      "concept": "Confronto con un sistema tradizionale a base unica"
+    },
+    {
+      "id": "6-19",
+      "title": "6.19 Interpretazione delle distorsioni di costo",
+      "topics": [
+        "cdg-c06-t19"
+      ],
+      "blocks": [
+        {
+          "text": "La differenza di costo non dimostra automaticamente che il sistema ABC restituisca un numero “assolutamente vero”: i costi indiretti rimangono in parte basati su scelte di misurazione e su ipotesi, anche nell’ABC. Il sistema fornisce però una descrizione più coerente quando il consumo delle attività viene effettivamente misurato meglio che da un’unica base volumetrica."
+        },
+        {
+          "text": "Nel caso integrato il Premium rappresenta soltanto 2.000 unità, ma utilizza 24 setup su 36, 120 ordini su 180 e 700 ore test su 1.100. Il suo costo risente fortemente della complessità. Standard, pur rappresentando la grande maggioranza dei pezzi e delle ore macchina, assorbe meno attività di preparazione e controllo per unità."
+        },
+        {
+          "text": "Le implicazioni riguardano listini, negoziazione con i clienti, progettazione di prodotto, dimensione dei lotti, complessità delle varianti, automazione dei processi e organizzazione della produzione."
+        },
+        {
+          "text": "Attenzione alle decisioni. Il costo pieno attribuito non coincide con il costo eliminabile. La rinuncia al Premium non fa necessariamente sparire i costi di personale, macchinari e struttura. Le decisioni richiedono l’analisi differenziale che sarà trattata più avanti nel programma."
+        },
+        {
+          "text": "Un’analisi utile consiste nel verificare in quali condizioni si formano molte attività e se sia possibile ridurne il consumo senza ridurre il valore percepito dal cliente. [E2][E3]"
+        }
+      ],
+      "concept": "Interpretazione delle distorsioni di costo"
+    },
+    {
+      "id": "6-20",
+      "title": "6.20 ABC nelle imprese di servizi",
+      "topics": [
+        "cdg-c06-t20"
+      ],
+      "blocks": [
+        {
+          "text": "Le attività non sono una caratteristica esclusiva delle fabbriche. Un’impresa di servizi impiega persone, sistemi, infrastrutture e competenze in un insieme di processi frequentemente differenziati per cliente e prestazione."
+        },
+        {
+          "text": "Consideriamo la filiale bancaria presente nella prima esercitazione didattica. Sei addetti allo sportello costano in totale 300.000 € l’anno; due vice-direttori 160.000 €; il direttore 100.000 €. Il personale dedica quote di tempo a tre attività principali: apertura di conti, operazioni di sportello e concessione di mutui. Vi sono inoltre 250.000 € di costi generali di struttura."
+        },
+        {
+          "text": "Dal tempo degli addetti, l’apertura dei conti assorbe 20%×300.000 = 60.000 €; la gestione operazioni 70%×300.000 = 210.000 €. La concessione dei mutui assorbe 10%×300.000 + 60%×160.000 + 30%×100.000 = 156.000 €. Altre attività assorbono la quota restante del lavoro, pari a 134.000 €."
+        },
+        {
+          "text": "Le quantità realizzate sono: 120 conti, 420.000 operazioni e 80 mutui. Limitatamente al personale direttamente imputato alle tre attività, il costo per unità di activity driver risulta 500 € per apertura di conto, 0,50 € per operazione e 1.950 € per mutuo."
+        },
+        {
+          "text": "Rimangono però i 250.000 € di struttura e i 134.000 € di personale per altre attività. Non possiamo semplicemente farli sparire dal costo aziendale né attribuirli senza motivazione. Occorre decidere se tenerli separati per la valutazione gestionale oppure ripartirli con una base coerente e dichiarata. La scelta può cambiare i costi unitari ottenuti. [P1, esercitazione 1]"
+        },
+        {
+          "table": [
+            [
+              "Attività",
+              "Personale attribuito",
+              "Numero prestazioni",
+              "Costo parziale unitario"
+            ],
+            [
+              "Apertura conto",
+              "60.000 €",
+              "120",
+              "500,00 €"
+            ],
+            [
+              "Operazioni sportello",
+              "210.000 €",
+              "420.000",
+              "0,50 €"
+            ],
+            [
+              "Concessione mutui",
+              "156.000 €",
+              "80",
+              "1.950,00 €"
+            ],
+            [
+              "Altre attività",
+              "134.000 €",
+              "—",
+              "Non calcolato"
+            ],
+            [
+              "Costi di struttura",
+              "250.000 €",
+              "—",
+              "Non ancora attribuiti"
+            ]
+          ]
+        },
+        {
+          "text": "LETTURA CRITICA Le grandezze della tabella misurano i costi del personale imputati alle attività e non il costo pieno delle prestazioni. Il testo di esercitazione richiede una scelta giustificata per i costi comuni: qualsiasi risultato completo dipende dalla scelta effettuata."
+        }
+      ],
+      "concept": "ABC nelle imprese di servizi"
+    },
+    {
+      "id": "6-21",
+      "title": "6.21 ABC per clienti, canali e mercati",
+      "topics": [
+        "cdg-c06-t21"
+      ],
+      "blocks": [
+        {
+          "text": "Un oggetto di costo non deve necessariamente essere un prodotto. Nell’ABC si possono misurare il costo di una commessa, di un cliente, di una categoria di clienti, di un canale di vendita o di un mercato geografico. La logica resta la stessa: le attività devono essere attribuite ai soggetti che ne determinano il consumo."
+        },
+        {
+          "text": "Per esempio, due clienti acquistano lo stesso valore di merce. Il primo effettua un solo ordine trimestrale, comunica dati completi e non richiede assistenza; il secondo effettua ordini settimanali, necessita di consegne urgenti e presenta molti reclami. Con una semplice quota percentuale sui ricavi i due clienti sembrerebbero ugualmente costosi, mentre un ABC può evidenziare costi di servizio molto diversi."
+        },
+        {
+          "text": "La redditività del cliente può essere analizzata partendo dal margine commerciale e sottraendo i costi delle attività causate dal cliente: gestione ordini, consegne speciali, supporto tecnico, resi, amministrazione del credito. È importante distinguere il costo del servizio dalla redditività incrementale e considerare anche il valore strategico del rapporto."
+        },
+        {
+          "text": "L’esercizio Arcari 3.7 Sofianna propone esplicitamente l’imputazione dei costi delle attività ai clienti attraverso appositi coefficienti. La struttura di analisi è quindi coerente con l’impostazione del manuale adottato nel corso. [A3]"
+        }
+      ],
+      "concept": "ABC per clienti, canali e mercati"
+    },
+    {
+      "id": "6-22",
+      "title": "6.22 Caso originale: Activity-Based Costing nei servizi software ed energetici",
+      "topics": [
+        "cdg-c06-t22"
+      ],
+      "blocks": [
+        {
+          "text": "Consideriamo un team che configura offerte energetiche per due linee commerciali, Standard e Custom. Nel mese i costi indiretti attribuibili a quattro attività sono: raccolta requisiti 12.000 €, configurazione 16.000 €, test 18.000 €, supporto post- rilascio 9.000 €. Il team svolge 30 revisioni dei requisiti, 80 configurazioni, 600 ore di test e 45 interventi di assistenza."
+        },
+        {
+          "text": "Le linee Standard e Custom richiedono quantità differenti di attività. La prima consuma 10 revisioni, 50 configurazioni, 200 ore di test e 15 interventi; la seconda 20 revisioni, 30 configurazioni, 400 ore di test e 30 interventi."
+        },
+        {
+          "text": "Calcoliamo i tassi: requisiti 12.000/30 = 400 € per revisione; configurazione 16.000/80 = 200 € per configurazione; test 18.000/600 = 30 €/ora; supporto 9.000/45 = 200 € per intervento."
+        },
+        {
+          "table": [
+            [
+              "Attività",
+              "Tasso",
+              "Standard",
+              "Custom"
+            ],
+            [
+              "Requisiti",
+              "400 €/revisione",
+              "10×400=4.000",
+              "20×400=8.000"
+            ],
+            [
+              "Configurazione",
+              "200 €/config.",
+              "50×200=10.000",
+              "30×200=6.000"
+            ],
+            [
+              "Test",
+              "30 €/ora",
+              "200×30=6.000",
+              "400×30=12.000"
+            ],
+            [
+              "Supporto",
+              "200 €/ticket",
+              "15×200=3.000",
+              "30×200=6.000"
+            ],
+            [
+              "Totale",
+              "—",
+              "23.000 €",
+              "32.000 €"
+            ]
+          ]
+        },
+        {
+          "text": "Il totale assegnato alle due linee è 23.000 + 32.000 = 55.000 €, pari alla somma dei quattro cost pool. Benché il progetto Custom possa produrre meno configurazioni finali, genera un costo superiore per via delle revisioni, dei test e del supporto. La decisione di prezzo, tuttavia, richiede di aggiungere i costi diretti e valutare anche ricavi, capacità inutilizzata e condizioni contrattuali."
+        }
+      ],
+      "concept": "Caso originale: Activity-Based Costing nei servizi software ed energetici"
+    },
+    {
+      "id": "6-23",
+      "title": "6.23 Dall’ABC all’Activity-Based Management (ABM)",
+      "topics": [
+        "cdg-c06-t23"
+      ],
+      "blocks": [
+        {
+          "text": "Il solo calcolo del costo delle attività non modifica automaticamente il funzionamento dell’impresa. L’Activity-Based Management (ABM) utilizza le informazioni generate dall’ABC per progettare e migliorare processi, efficienza, qualità e redditività."
+        },
+        {
+          "text": "Mentre l’ABC risponde soprattutto alla domanda “quanto costa e chi consuma le attività?”, l’ABM si domanda anche “perché consumiamo queste risorse, quali attività creano valore e come possiamo intervenire?”. Questa transizione è espressamente prevista dalle slide del corso."
+        },
+        {
+          "text": "Gli obiettivi indicati nel materiale didattico sono due: aumentare il valore offerto ai clienti e migliorare la redditività aziendale. La riduzione dei costi è un mezzo possibile, ma non l’unico: talvolta un’attività più costosa è giustificata perché migliora in modo significativo la qualità o la disponibilità del servizio."
+        },
+        {
+          "image": "cdg-p65-1.png",
+          "caption": "L’ABM collega misurazione e cambiamento organizzativo attraverso un ciclo di miglioramento.",
+          "alt": "L’ABM collega misurazione e cambiamento organizzativo attraverso un ciclo di miglioramento."
+        }
+      ],
+      "concept": "Dall’ABC all’Activity-Based Management (ABM)"
+    },
+    {
+      "id": "6-24",
+      "title": "6.24 Le quattro fasi dell’ABM",
+      "topics": [
+        "cdg-c06-t24"
+      ],
+      "blocks": [
+        {
+          "text": "Le slide individuano quattro fasi continue: identificare attività che aggiungono valore e che non lo aggiungono; reingegnerizzare l’impresa; fare benchmarking sulle attività che creano valore; sviluppare misure di miglioramento continuo."
+        },
+        {
+          "text": "1. Identificazione del valore. Si descrivono le attività e si valuta il loro contributo alle esigenze del cliente, alla qualità, alla conformità e alla continuità operativa. Un controllo obbligatorio può non trasformare direttamente il prodotto, ma essere necessario per legge o per sicurezza; non va eliminato indiscriminatamente."
+        },
+        {
+          "text": "2. Reingegnerizzazione. Si analizzano le modalità di svolgimento delle attività, riducendo passaggi inutili, duplicazioni, attese, errori, rilavorazioni e trasferimenti di informazioni non necessari. Talvolta occorre riprogettare un intero processo, non soltanto un reparto."
+        },
+        {
+          "text": "3. Benchmarking. Si confrontano prestazioni e metodi con standard interni, altre unità o realtà esterne comparabili, tenendo conto di condizioni operative, complessità e qualità del servizio."
+        },
+        {
+          "text": "4. Miglioramento continuo. Si definiscono KPI, responsabilità, obiettivi e frequenze di monitoraggio. Si verifica se gli interventi riducono realmente tempi e risorse o producono semplicemente spostamenti contabili tra attività."
+        },
+        {
+          "text": "Il processo è ciclico: il miglioramento cambia il modo di lavorare e richiede una successiva revisione dei costi delle attività e dei relativi driver."
+        }
+      ],
+      "concept": "Le quattro fasi dell’ABM"
+    },
+    {
+      "id": "6-25",
+      "title": "6.25 Attività a valore, non-valore e risorse inutilizzate",
+      "topics": [
+        "cdg-c06-t25"
+      ],
+      "blocks": [
+        {
+          "text": "Un’attività a valore aggiunto contribuisce in modo riconoscibile alla prestazione richiesta dal cliente o all’adempimento delle condizioni essenziali per fornirla. Un’attività senza valore aggiunto dal punto di vista del cliente può includere rilavorazioni dovute a errori, passaggi amministrativi duplicati, trasferimenti non necessari e attese evitabili."
+        },
+        {
+          "text": "La classificazione richiede cautela: non tutte le attività indirette o non visibili al cliente sono inutili. Sicurezza, conformità normativa, controllo qualità e gestione dei rischi possono essere essenziali anche quando il cliente non le percepisce direttamente."
+        },
+        {
+          "text": "La misurazione delle attività è utile per riconoscere la capacità inutilizzata. Se un ufficio ha un costo annuo di 100.000 € per una capacità pratica di 5.000 pratiche, il costo teorico della capacità è 20 € per pratica; se ne vengono effettivamente gestite soltanto 4.000, attribuire tutti i costi alle pratiche ne porterebbe il costo a 25 €. La differenza può nascondere 20.000 € di capacità non utilizzata anziché essere considerata necessariamente un costo causato dalle pratiche eseguite."
+        },
+        {
+          "text": "Per la valorizzazione civilistica delle rimanenze e per determinati sistemi di controllo valgono regole specifiche. La distinzione fra risorse fornite, risorse utilizzate e capacità inutilizzata va quindi mantenuta esplicita."
+        }
+      ],
+      "concept": "Attività a valore, non-valore e risorse inutilizzate"
+    },
+    {
+      "id": "6-26",
+      "title": "6.26 Indicatori di processo e reporting basato sulle attività",
+      "topics": [
+        "cdg-c06-t26"
+      ],
+      "blocks": [
+        {
+          "text": "Un sistema ABC può essere collegato a un reporting multidimensionale: costo per attività, volume di driver, costo per unità di driver, tempo medio, difettosità, puntualità e qualità. Un unico indicatore monetario è insufficiente a rappresentare gli effetti delle decisioni."
+        },
+        {
+          "text": "Per l’attività di collaudo, ad esempio, si possono rilevare costo per ora test, ore per lotto, percentuale di test da ripetere, tempo di attraversamento e numero di non conformità. Per acquisti: costo per ordine, quota ordini urgenti, numero di fornitori attivi, ritardi e incidenza delle correzioni."
+        },
+        {
+          "text": "Il reporting deve essere orientato all’azione: per ogni indicatore occorre individuare una definizione, una fonte dati, una periodicità e un responsabile. Gli indicatori di efficienza non vanno ottimizzati a scapito della qualità o del servizio."
+        },
+        {
+          "table": [
+            [
+              "Attività",
+              "KPI economico",
+              "KPI operativo",
+              "Possibile causa da analizzare"
+            ],
+            [
+              "Setup",
+              "€ per avviamento",
+              "Minuti di setup",
+              "Varietà lotti e formati"
+            ],
+            [
+              "Ordini",
+              "€ per ordine",
+              "Ordini urgenti %",
+              "Dati incompleti / fornitori"
+            ],
+            [
+              "Collaudi",
+              "€ per ora test",
+              "% ripetizioni",
+              "Errori, variabilità, difetti"
+            ],
+            [
+              "Assistenza",
+              "€ per ticket",
+              "Tempo risoluzione",
+              "Qualità rilascio e documentazione"
+            ]
+          ]
+        }
+      ],
+      "concept": "Indicatori di processo e reporting basato sulle attività"
+    },
+    {
+      "id": "6-27",
+      "title": "6.27 Limiti dell’ABC e condizioni di convenienza",
+      "topics": [
+        "cdg-c06-t27"
+      ],
+      "blocks": [
+        {
+          "text": "L’ABC comporta costi di progettazione, raccolta dati, formazione delle persone, aggiornamento dei driver e manutenzione del modello. Non è automaticamente migliore in qualsiasi impresa: va scelto quando i benefici informativi attesi superano tali costi."
+        },
+        {
+          "text": "Le difficoltà principali riguardano l’identificazione delle attività, la scelta del livello di dettaglio, la qualità dei dati di tempo e consumo, l’attribuzione di risorse comuni e la stabilità nel tempo. La percentuale di tempo dichiarata in un’intervista può essere diversa da quella effettiva; alcuni driver sono proxy poco causali; i pool possono essere costruiti con un’aggregazione eccessiva."
+        },
+        {
+          "text": "Inoltre i costi a livello di struttura sono talvolta difficili da collegare causalmente ai prodotti. Forzarne l’allocazione può generare costi di prodotto apparentemente precisi ma arbitrari. I risultati devono essere sottoposti a controlli e analisi di sensibilità."
+        },
+        {
+          "text": "L’ABC tende a risultare più utile quando i costi indiretti sono elevati, la gamma è ampia, i prodotti hanno complessità differenziata, i lotti sono eterogenei, i clienti richiedono servizi diversi e il sistema informativo permette di raccogliere driver affidabili. [E1][E2][E3]"
+        }
+      ],
+      "concept": "Limiti dell’ABC e condizioni di convenienza"
+    },
+    {
+      "id": "6-28",
+      "title": "6.28 Approfondimento esterno: Time-Driven Activity-Based Costing",
+      "topics": [
+        "cdg-c06-t28"
+      ],
+      "blocks": [
+        {
+          "text": "Robert Kaplan e Steven Anderson hanno proposto il Time-Driven Activity-Based Costing (TDABC) per ridurre alcune difficoltà di implementazione dei modelli ABC tradizionali. La formulazione originaria è documentata in Harvard Business Review (2004). [E4]"
+        },
+        {
+          "text": "Il TDABC utilizza principalmente due parametri: il costo per unità di capacità pratica fornita da un gruppo di risorse e il tempo necessario a svolgere una determinata transazione. Il costo si ottiene moltiplicando costo per unità di tempo e tempo standard o stimato della prestazione."
+        },
+        {
+          "text": "Esempio: un team costa 120.000 € annui e dispone di 12.000 minuti di capacità pratica per una certa attività. Il costo della capacità è 10 €/minuto. Se una pratica semplice richiede 3 minuti, il costo attribuito è 30 €; se una pratica complessa richiede 9 minuti, il costo è 90 €."
+        },
+        {
+          "text": "Per trattare transazioni differenziate si possono utilizzare equazioni temporali (time equations), per esempio: tempo pratica = 3 minuti di base + 2 minuti se il cliente è nuovo + 4 minuti se serve verifica manuale. Anche queste stime devono essere validate."
+        },
+        {
+          "text": "Il TDABC può evidenziare capacità inutilizzata in modo più esplicito, ma si basa comunque su stime e misurazioni che devono essere aggiornate quando i processi cambiano. Questo tema è un’integrazione utile alla comprensione, non un argomento esplicitamente separato nel nucleo delle slide del corso."
+        },
+        {
+          "image": "cdg-p67-1.png",
+          "caption": "Esempio didattico di costo per unità di tempo, distinto dal calcolo tradizionale dell’activity rate.",
+          "alt": "Esempio didattico di costo per unità di tempo, distinto dal calcolo tradizionale dell’activity rate."
+        }
+      ],
+      "concept": "Approfondimento esterno: Time-Driven Activity-Based Costing"
+    },
+    {
+      "id": "6-29",
+      "title": "6.29 Quadrature, errori frequenti e criteri per l’esame",
+      "topics": [
+        "cdg-c06-t29"
+      ],
+      "blocks": [
+        {
+          "text": "La correttezza dell’ABC richiede tre controlli indipendenti. Primo: tutte le risorse attribuite alle attività devono coincidere con il perimetro dei costi selezionati. Secondo: il totale dei pool deve corrispondere ai costi delle attività calcolati. Terzo: la somma delle quote delle attività ai prodotti deve riprodurre i pool, oppure la differenza deve essere esplicitata come costo non attribuito o capacità non utilizzata."
+        },
+        {
+          "text": "Gli errori ricorrenti sono: usare le unità prodotte come denominatore per un pool guidato dai setup; scambiare resource driver e activity driver; sommare ore a pezzi; ripartire due volte una stessa risorsa; utilizzare una quantità di driver relativa a un singolo prodotto anziché al totale; confondere costo unitario e costo totale; arrotondare i tassi troppo presto; trattare un costo pieno attribuito come costo evitabile."
+        },
+        {
+          "text": "Nei problemi d’esame è utile costruire cinque tabelle in sequenza: (1) costi delle risorse, se richiesti; (2) costi per attività; (3) driver totali e tassi; (4) quote attribuite ai prodotti; (5) costo unitario e interpretazione. Ogni tabella deve chiudersi con un controllo di quadratura."
+        },
+        {
+          "image": "cdg-p68-1.png",
+          "caption": "La quadratura impedisce perdite o duplicazioni di costi nei due stadi del procedimento ABC.",
+          "alt": "La quadratura impedisce perdite o duplicazioni di costi nei due stadi del procedimento ABC."
+        }
+      ],
+      "concept": "Quadrature, errori frequenti e criteri per l’esame"
+    },
+    {
+      "id": "6-30",
+      "title": "6.30 Esercizi di allenamento — risolvi prima di guardare le soluzioni",
+      "topics": [
+        "cdg-c06-t30"
+      ],
+      "blocks": [
+        {
+          "text": "Le prove seguenti sono originali e sono organizzate con difficoltà crescente. Per ogni esercizio scrivi il procedimento, indica le unità di misura e commenta il risultato. Se possibile, svolgile senza formulario nella seconda ripetizione."
+        },
+        {
+          "text": "Esercizio 1 — Attività e driver. Per ciascuna attività scegli un activity driver motivato: (a) gestione di 150 ordini, con durate simili; (b) setup macchina che varia da 10 a 100 minuti; (c) assistenza tecnica con ticket semplici e complessi; (d) progettazione di 12 varianti di prodotto."
+        },
+        {
+          "text": "Esercizio 2 — Attribuzione delle risorse. Costo totale 100.000 €: personale 70.000 € ripartito 50% su gestione ordini e 50% su assistenza, software 30.000 € ripartito 20% su gestione ordini e 80% su assistenza. Calcola il costo delle due attività e verifica la quadratura."
+        },
+        {
+          "text": "Esercizio 3 — Calcolo di activity rate. Costi di setup 48.000 €, numero totale di setup 24; costi acquisti 36.000 €, ordini totali 120. Il prodotto X utilizza 8 setup e 30 ordini, il prodotto Y 16 setup e 90 ordini. Calcola le quote imputate e la quadratura."
+        },
+        {
+          "text": "Esercizio 4 — Costo industriale unitario. Il prodotto A è realizzato in 2.000 unità e presenta costi diretti unitari di 25 €. Riceve 42.000 € da attività di setup e 18.000 € da collaudi. Determina i costi indiretti unitari e il costo pieno industriale unitario."
+        },
+        {
+          "text": "Esercizio 5 — Tradizionale e ABC. 100.000 € di costi indiretti vengono ripartiti tradizionalmente con 5.000 ore macchina, di cui 3.000 per A e 2.000 per B. L’ABC attribuisce invece 45.000 € ad A e 55.000 € a B. Con volumi di 3.000 unità A e 1.000 unità B, confronta le quote indirette unitarie e spiega il trasferimento di costo."
+        },
+        {
+          "text": "Esercizio 6 — Servizi. Una società sostiene 72.000 € per gestire 1.200 ticket equivalenti di assistenza. Il cliente Alfa ne utilizza 300, Beta 650 e Gamma 250. Calcola tasso e costo per cliente e verifica la quadratura."
+        },
+        {
+          "text": "Esercizio 7 — Lotti e complessità. Due prodotti hanno entrambi 1.000 unità annue. A è prodotto in 10 lotti, B in 50. Se ogni setup costa 500 €, quanto vale il costo di setup per unità di A e di B? Quale informazione si perderebbe con un riparto per pezzo?"
+        },
+        {
+          "text": "Esercizio 8 — Capacità pratica nel TDABC. Costo capacità 60.000 €, disponibilità pratica 30.000 minuti, utilizzo effettivo 24.000 minuti. Calcola costo minuto, costo attribuito alle prestazioni e costo della capacità inutilizzata."
+        }
+      ],
+      "concept": "Esercizi di allenamento — risolvi prima di guardare le soluzioni"
+    },
+    {
+      "id": "6-31",
+      "title": "6.31 Soluzioni ragionate e controlli degli esercizi",
+      "topics": [
+        "cdg-c06-t31"
+      ],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "Soluzione 1. (a) Numero ordini, perché la durata media è simile; (b) minuti di setup, perché il numero di attrezzaggi non misura l’intensità; (c) minuti per ticket o ticket ponderati per complessità, evitando una media fuorviante; (d) numero varianti oppure ore di progettazione, secondo l’eterogeneità del lavoro. La scelta migliore è quella che riflette il consumo, non soltanto la più semplice da rilevare."
+            },
+            {
+              "text": "Soluzione 2. Gestione ordini: 70.000×50% + 30.000×20% = 35.000 + 6.000 = 41.000 €. Assistenza: 70.000×50% + 30.000×80% = 35.000 + 24.000 = 59.000 €. Quadratura: 41.000 + 59.000 = 100.000 €."
+            },
+            {
+              "text": "Soluzione 3. Tasso setup = 48.000/24 = 2.000 €/setup. Tasso ordini = 36.000/120 = 300 €/ordine. X: 8×2.000 + 30×300 = 25.000 €. Y: 16×2.000 + 90×300 = 59.000 €. Totale 84.000 €, pari ai due pool."
+            },
+            {
+              "text": "Soluzione 4. Costi indiretti totali di A = 42.000 + 18.000 = 60.000 €. Quota indiretta unitaria = 60.000/2.000 = 30 €. Costo pieno industriale unitario = 25 + 30 = 55 €. Il costo diretto già espresso per unità non va diviso nuovamente."
+            },
+            {
+              "text": "Soluzione 5. Coefficiente tradizionale = 100.000/5.000 = 20 €/ora. A assorbe 3.000×20 = 60.000 €, ossia 20 €/unità; B 2.000×20=40.000 €, ossia 40 €/unità. Con ABC: A 45.000/3.000=15 €/unità; B 55.000/1.000=55 €/unità. Il tradizionale attribuisce ad A 15.000 € in più rispetto ad ABC e altrettanti in meno a B."
+            },
+            {
+              "text": "Soluzione 6. Tasso = 72.000/1.200 = 60 €/ticket equivalente. Alfa = 18.000 €, Beta = 39.000 €, Gamma = 15.000 €. Quadratura: 18.000+39.000+15.000=72.000 €. Usare ticket equivalenti presuppone che la ponderazione rappresenti il carico di lavoro effettivo."
+            },
+            {
+              "text": "Soluzione 7. A: 10×500=5.000 € complessivi, cioè 5 €/unità. B: 50×500=25.000 €, cioè 25 €/unità. Il riparto complessivo per pezzo sarebbe 30.000/2.000 = 15 € per entrambi, nascondendo la maggiore frammentazione dei lotti B."
+            },
+            {
+              "text": "Soluzione 8. Costo per minuto pratico = 60.000/30.000 = 2 €/min. Prestazioni: 24.000×2 = 48.000 €. Capacità non utilizzata: 6.000 minuti, pari a 12.000 €. La somma 48.000+12.000 = 60.000 € conferma la quadratura."
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Soluzioni ragionate e controlli degli esercizi"
+    },
+    {
+      "id": "6-32",
+      "title": "6.32 Ripasso: domande teoriche, formulario e glossario",
+      "topics": [
+        "cdg-c06-t32"
+      ],
+      "blocks": [
+        {
+          "text": "Per verificare la comprensione teorica, prova a rispondere per iscritto, senza rileggere il testo: (1) perché nasce l’ABC? (2) quali differenze intercorrono fra centro di costo, attività e processo? (3) che cosa misura un resource driver? (4) che cosa misura un activity driver? (5) quale significato ha cost driver nel materiale didattico? (6) come si definiscono i confini di una attività? (7) in che cosa consiste il sovvenzionamento incrociato? (8) quando conviene utilizzare un sistema ABC? (9) che rapporto c’è fra ABC e ABM? (10) quali sono le quattro fasi dell’ABM? (11) perché è rischioso attribuire a caso i costi di struttura? (12) che cosa aggiunge il TDABC?"
+        },
+        {
+          "text": "Il formulario operativo riportato sotto sintetizza le operazioni senza sostituire le spiegazioni precedenti."
+        },
+        {
+          "text": "Costo attività a = Σr Costo risorsa r × % di impiego nell’attività a"
+        },
+        {
+          "text": "Tasso attività a = Costo attività a / Driver totale a"
+        },
+        {
+          "text": "Costo attività a per oggetto i = Tasso attività a × Driver consumato da i"
+        },
+        {
+          "text": "Costo pieno industriale i = Costi diretti i + Σ Costi attività industriali attribuite a i"
+        },
+        {
+          "text": "Costo unitario i = Costo pieno industriale totale i / Unità prodotte i"
+        },
+        {
+          "table": [
+            [
+              "Termine",
+              "Definizione essenziale"
+            ],
+            [
+              "Attività",
+              "Insieme omogeneo di compiti con input, output e destinatario"
+            ],
+            [
+              "Processo",
+              "Sequenza di attività correlate, spesso trasversali alle funzioni"
+            ],
+            [
+              "Cost pool",
+              "Aggregazione dei costi attribuiti a una attività"
+            ],
+            [
+              "Resource driver",
+              "Misura del consumo di risorsa da parte dell’attività"
+            ],
+            [
+              "Activity driver",
+              "Misura del consumo dell’attività da parte dell’oggetto"
+            ],
+            [
+              "Cost driver",
+              "Determinante che influenza il bisogno di attività e il suo costo"
+            ],
+            [
+              "Activity rate",
+              "Costo attribuito per unità di activity driver"
+            ],
+            [
+              "ABM",
+              "Uso del costing per migliorare processi e risultati"
+            ],
+            [
+              "Cross-subsidization",
+              "Attribuzione distorta di costi tra prodotti o altri oggetti"
+            ],
+            [
+              "TDABC",
+              "Approccio che utilizza costi di capacità e tempi delle transazioni"
+            ]
+          ]
+        }
+      ],
+      "concept": "Ripasso: domande teoriche, formulario e glossario"
+    }
+  ],
+  "relations": [
+    {
+      "to": "6-3",
+      "relation": "L’ABC risponde alle distorsioni dei criteri di ripartizione tradizionali",
+      "from": "6-2"
+    },
+    {
+      "to": "6-8",
+      "relation": "Il primo stadio attribuisce le risorse alle attività",
+      "from": "6-3"
+    },
+    {
+      "to": "6-10",
+      "relation": "Il secondo stadio attribuisce le attività agli oggetti di costo",
+      "from": "6-3"
+    },
+    {
+      "to": "6-9",
+      "relation": "I consumi di risorse si attribuiscono usando i resource driver",
+      "from": "6-8"
+    },
+    {
+      "to": "6-11",
+      "relation": "Il driver va scelto in base al modo in cui si consuma l’attività",
+      "from": "6-10"
+    },
+    {
+      "to": "6-17",
+      "relation": "Il caso integrato applica l’intera sequenza ABC",
+      "from": "6-14"
+    },
+    {
+      "to": "6-23",
+      "relation": "Le distorsioni evidenziate dalla misura orientano il miglioramento",
+      "from": "6-19"
+    }
+  ]
+}

@@ -1,0 +1,2667 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cyber",
+  "source": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4: Autenticazione e Controlli degli accessi, pagine PDF 51–62; unica fonte autorizzata.",
+  "chapter": {
+    "id": "cyber-c04",
+    "title": "Autenticazione e Controlli degli accessi — fattori, DAC, MAC, RBAC, ABAC, ICAM e federazione",
+    "order": 4,
+    "topics": [
+      {
+        "id": "cyber-c04-t01",
+        "title": "Fondamenti e finalità del controllo degli accessi"
+      },
+      {
+        "id": "cyber-c04-t02",
+        "title": "Identificazione, identity proofing, autenticazione, autorizzazione, accounting"
+      },
+      {
+        "id": "cyber-c04-t03",
+        "title": "Modello di accesso: soggetti, oggetti, operazioni e policy"
+      },
+      {
+        "id": "cyber-c04-t04",
+        "title": "Fattori di autenticazione, SFA, MFA, biometria e passkey"
+      },
+      {
+        "id": "cyber-c04-t05",
+        "title": "Sicurezza delle password, linee guida NIST e minacce"
+      },
+      {
+        "id": "cyber-c04-t06",
+        "title": "Sessioni applicative e controlli server-side"
+      },
+      {
+        "id": "cyber-c04-t07",
+        "title": "DAC e matrice degli accessi"
+      },
+      {
+        "id": "cyber-c04-t08",
+        "title": "Access Control List e capability"
+      },
+      {
+        "id": "cyber-c04-t09",
+        "title": "MAC e modello Bell–LaPadula"
+      },
+      {
+        "id": "cyber-c04-t10",
+        "title": "RBAC: ruoli, gerarchie, vincoli e separation of duties"
+      },
+      {
+        "id": "cyber-c04-t11",
+        "title": "ABAC: attributi, PDP, PEP, PAP e PIP"
+      },
+      {
+        "id": "cyber-c04-t12",
+        "title": "Confronto e criteri di scelta fra DAC, MAC, RBAC, ABAC"
+      },
+      {
+        "id": "cyber-c04-t13",
+        "title": "ICAM: identità, credenziali, diritti e ciclo Joiner–Mover–Leaver"
+      },
+      {
+        "id": "cyber-c04-t14",
+        "title": "Federazione delle identità, IdP, RP, SSO e asserzioni"
+      },
+      {
+        "id": "cyber-c04-t15",
+        "title": "Architetture AAA, RADIUS, Kerberos, OAuth e OpenID Connect"
+      },
+      {
+        "id": "cyber-c04-t16",
+        "title": "Sicurezza fisica e ambientale"
+      },
+      {
+        "id": "cyber-c04-t17",
+        "title": "Caso integrato: approvazione offerte aziendali"
+      },
+      {
+        "id": "cyber-c04-t18",
+        "title": "Errori concettuali da evitare all’orale"
+      },
+      {
+        "id": "cyber-c04-t19",
+        "title": "Domande trasversali e sintesi per l’esame orale"
+      },
+      {
+        "id": "cyber-c04-t20",
+        "title": "Glossario e terminologia di access management"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§4.1 — pagina PDF 51",
+        "cardIds": [
+          "cyber-c04-q001",
+          "cyber-c04-q002",
+          "cyber-c04-q003",
+          "cyber-c04-q004",
+          "cyber-c04-q005",
+          "cyber-c04-q006"
+        ]
+      },
+      {
+        "label": "§4.2 — pagina PDF 51",
+        "cardIds": [
+          "cyber-c04-q007",
+          "cyber-c04-q008",
+          "cyber-c04-q009",
+          "cyber-c04-q010",
+          "cyber-c04-q011",
+          "cyber-c04-q012",
+          "cyber-c04-q013"
+        ]
+      },
+      {
+        "label": "§4.2 — pagina PDF 52",
+        "cardIds": [
+          "cyber-c04-q014",
+          "cyber-c04-q015"
+        ]
+      },
+      {
+        "label": "§4.3 — pagina PDF 52",
+        "cardIds": [
+          "cyber-c04-q016",
+          "cyber-c04-q017",
+          "cyber-c04-q018",
+          "cyber-c04-q019",
+          "cyber-c04-q020",
+          "cyber-c04-q021",
+          "cyber-c04-q022",
+          "cyber-c04-q023"
+        ]
+      },
+      {
+        "label": "§4.4 — pagina PDF 52",
+        "cardIds": [
+          "cyber-c04-q024",
+          "cyber-c04-q025",
+          "cyber-c04-q026",
+          "cyber-c04-q027",
+          "cyber-c04-q028"
+        ]
+      },
+      {
+        "label": "§4.4 — pagina PDF 53",
+        "cardIds": [
+          "cyber-c04-q029",
+          "cyber-c04-q030",
+          "cyber-c04-q031",
+          "cyber-c04-q032",
+          "cyber-c04-q033",
+          "cyber-c04-q034",
+          "cyber-c04-q035",
+          "cyber-c04-q036",
+          "cyber-c04-q037"
+        ]
+      },
+      {
+        "label": "§4.5 — pagina PDF 53",
+        "cardIds": [
+          "cyber-c04-q038",
+          "cyber-c04-q039",
+          "cyber-c04-q040",
+          "cyber-c04-q041",
+          "cyber-c04-q042",
+          "cyber-c04-q043",
+          "cyber-c04-q044"
+        ]
+      },
+      {
+        "label": "§4.5 — pagina PDF 54",
+        "cardIds": [
+          "cyber-c04-q045",
+          "cyber-c04-q046",
+          "cyber-c04-q047",
+          "cyber-c04-q048",
+          "cyber-c04-q049"
+        ]
+      },
+      {
+        "label": "§4.6 — pagina PDF 54",
+        "cardIds": [
+          "cyber-c04-q050",
+          "cyber-c04-q051",
+          "cyber-c04-q052",
+          "cyber-c04-q053",
+          "cyber-c04-q054",
+          "cyber-c04-q055"
+        ]
+      },
+      {
+        "label": "§4.7 — pagina PDF 54",
+        "cardIds": [
+          "cyber-c04-q056",
+          "cyber-c04-q057",
+          "cyber-c04-q058"
+        ]
+      },
+      {
+        "label": "§4.7 — pagina PDF 55",
+        "cardIds": [
+          "cyber-c04-q059",
+          "cyber-c04-q060",
+          "cyber-c04-q061"
+        ]
+      },
+      {
+        "label": "§4.8 — pagina PDF 55",
+        "cardIds": [
+          "cyber-c04-q062",
+          "cyber-c04-q063",
+          "cyber-c04-q064",
+          "cyber-c04-q065",
+          "cyber-c04-q066",
+          "cyber-c04-q067",
+          "cyber-c04-q068"
+        ]
+      },
+      {
+        "label": "§4.9 — pagina PDF 55",
+        "cardIds": [
+          "cyber-c04-q069",
+          "cyber-c04-q070",
+          "cyber-c04-q071",
+          "cyber-c04-q072"
+        ]
+      },
+      {
+        "label": "§4.9 — pagina PDF 56",
+        "cardIds": [
+          "cyber-c04-q073",
+          "cyber-c04-q074",
+          "cyber-c04-q075",
+          "cyber-c04-q076",
+          "cyber-c04-q077"
+        ]
+      },
+      {
+        "label": "§4.10 — pagina PDF 56",
+        "cardIds": [
+          "cyber-c04-q078",
+          "cyber-c04-q079",
+          "cyber-c04-q080"
+        ]
+      },
+      {
+        "label": "§4.10 — pagina PDF 57",
+        "cardIds": [
+          "cyber-c04-q081",
+          "cyber-c04-q082",
+          "cyber-c04-q083",
+          "cyber-c04-q084",
+          "cyber-c04-q085",
+          "cyber-c04-q086",
+          "cyber-c04-q087",
+          "cyber-c04-q088",
+          "cyber-c04-q089",
+          "cyber-c04-q090"
+        ]
+      },
+      {
+        "label": "§4.11 — pagina PDF 57",
+        "cardIds": [
+          "cyber-c04-q091",
+          "cyber-c04-q092",
+          "cyber-c04-q093",
+          "cyber-c04-q094",
+          "cyber-c04-q095",
+          "cyber-c04-q096",
+          "cyber-c04-q097",
+          "cyber-c04-q098",
+          "cyber-c04-q099",
+          "cyber-c04-q100",
+          "cyber-c04-q101",
+          "cyber-c04-q102"
+        ]
+      },
+      {
+        "label": "§4.11 — pagina PDF 58",
+        "cardIds": [
+          "cyber-c04-q103"
+        ]
+      },
+      {
+        "label": "§4.12 — pagina PDF 58",
+        "cardIds": [
+          "cyber-c04-q104",
+          "cyber-c04-q105",
+          "cyber-c04-q106",
+          "cyber-c04-q107",
+          "cyber-c04-q108",
+          "cyber-c04-q109"
+        ]
+      },
+      {
+        "label": "§4.13 — pagina PDF 58",
+        "cardIds": [
+          "cyber-c04-q110",
+          "cyber-c04-q111",
+          "cyber-c04-q112",
+          "cyber-c04-q113",
+          "cyber-c04-q114",
+          "cyber-c04-q115",
+          "cyber-c04-q116",
+          "cyber-c04-q117",
+          "cyber-c04-q118",
+          "cyber-c04-q119",
+          "cyber-c04-q120"
+        ]
+      },
+      {
+        "label": "§4.14 — pagina PDF 59",
+        "cardIds": [
+          "cyber-c04-q121",
+          "cyber-c04-q122",
+          "cyber-c04-q123",
+          "cyber-c04-q124",
+          "cyber-c04-q125",
+          "cyber-c04-q126",
+          "cyber-c04-q127",
+          "cyber-c04-q128",
+          "cyber-c04-q129",
+          "cyber-c04-q130"
+        ]
+      },
+      {
+        "label": "§4.15 — pagina PDF 59",
+        "cardIds": [
+          "cyber-c04-q131",
+          "cyber-c04-q132",
+          "cyber-c04-q133",
+          "cyber-c04-q134"
+        ]
+      },
+      {
+        "label": "§4.15 — pagina PDF 60",
+        "cardIds": [
+          "cyber-c04-q135",
+          "cyber-c04-q136",
+          "cyber-c04-q137"
+        ]
+      },
+      {
+        "label": "§4.16 — pagina PDF 60",
+        "cardIds": [
+          "cyber-c04-q138",
+          "cyber-c04-q139",
+          "cyber-c04-q140",
+          "cyber-c04-q141",
+          "cyber-c04-q142",
+          "cyber-c04-q143",
+          "cyber-c04-q144",
+          "cyber-c04-q145",
+          "cyber-c04-q146"
+        ]
+      },
+      {
+        "label": "§4.17 — pagina PDF 60",
+        "cardIds": [
+          "cyber-c04-q147",
+          "cyber-c04-q148",
+          "cyber-c04-q149",
+          "cyber-c04-q150",
+          "cyber-c04-q151",
+          "cyber-c04-q152",
+          "cyber-c04-q153"
+        ]
+      },
+      {
+        "label": "§4.17 — pagina PDF 61",
+        "cardIds": [
+          "cyber-c04-q154",
+          "cyber-c04-q155",
+          "cyber-c04-q156",
+          "cyber-c04-q157",
+          "cyber-c04-q158"
+        ]
+      },
+      {
+        "label": "§4.18 — pagina PDF 61",
+        "cardIds": [
+          "cyber-c04-q159",
+          "cyber-c04-q160",
+          "cyber-c04-q161",
+          "cyber-c04-q162",
+          "cyber-c04-q163",
+          "cyber-c04-q164",
+          "cyber-c04-q165",
+          "cyber-c04-q166",
+          "cyber-c04-q167"
+        ]
+      },
+      {
+        "label": "§4.19 — pagina PDF 61",
+        "cardIds": [
+          "cyber-c04-q168",
+          "cyber-c04-q169"
+        ]
+      },
+      {
+        "label": "§4.19 — pagina PDF 62",
+        "cardIds": [
+          "cyber-c04-q170",
+          "cyber-c04-q171",
+          "cyber-c04-q172",
+          "cyber-c04-q173",
+          "cyber-c04-q174",
+          "cyber-c04-q175",
+          "cyber-c04-q176",
+          "cyber-c04-q177"
+        ]
+      },
+      {
+        "label": "§4.20 — pagina PDF 62",
+        "cardIds": [
+          "cyber-c04-q178",
+          "cyber-c04-q179",
+          "cyber-c04-q180",
+          "cyber-c04-q181",
+          "cyber-c04-q182",
+          "cyber-c04-q183",
+          "cyber-c04-q184",
+          "cyber-c04-q185"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cyber-c04-q001",
+      "topicId": "cyber-c04-t01",
+      "question": "Che cos’è il controllo degli accessi?",
+      "answer": "È l’insieme di politiche, processi e meccanismi che decidono e applicano quali operazioni un soggetto possa compiere su una risorsa.",
+      "detail": "Il controllo deve impedire usi non autorizzati senza impedire le attività lecite. È necessario per file, record, database, apparati di rete, servizi e API.",
+      "example": "Un impiegato autenticato può visualizzare il proprio cedolino, ma non quello di un collega.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificarlo con la sola schermata di login.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.1, pagina PDF 51"
+    },
+    {
+      "id": "cyber-c04-q002",
+      "topicId": "cyber-c04-t01",
+      "question": "Perché la verifica dell’identità non basta a concedere l’accesso?",
+      "answer": "Perché sapere chi è un soggetto non stabilisce automaticamente quali risorse o operazioni siano consentite.",
+      "detail": "La decisione autorizzativa dipende dalla specifica risorsa e dalla policy; utenti legittimi possono avere privilegi diversi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare login riuscito come permesso universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.1, pagina PDF 51"
+    },
+    {
+      "id": "cyber-c04-q003",
+      "topicId": "cyber-c04-t01",
+      "question": "Quale relazione esiste tra minimo privilegio e controllo degli accessi?",
+      "answer": "Il minimo privilegio richiede di assegnare a ogni soggetto soltanto i permessi necessari alle mansioni autorizzate.",
+      "detail": "Riduce la capacità di abuso o di movimento di un attaccante che comprometta un account. Il controllo degli accessi deve applicare concretamente tale limitazione.",
+      "example": "Un addetto che consulta offerte non deve necessariamente approvarle.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assegnare permessi amministrativi per comodità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.1, pagina PDF 51"
+    },
+    {
+      "id": "cyber-c04-q004",
+      "topicId": "cyber-c04-t01",
+      "question": "Quale comportamento impone il diniego predefinito (deny by default)?",
+      "answer": "Se non esiste una regola che autorizza positivamente l’azione, il sistema deve negare l’accesso.",
+      "detail": "Il principio evita che l’assenza di configurazione venga interpretata come permesso implicito.",
+      "example": "Un nuovo endpoint resta inaccessibile finché la sua policy non autorizza i soggetti previsti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere assenza di divieti con autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.1, pagina PDF 51"
+    },
+    {
+      "id": "cyber-c04-q005",
+      "topicId": "cyber-c04-t01",
+      "question": "Perché il controllo degli accessi deve essere applicato a ogni richiesta rilevante?",
+      "answer": "Perché una sessione autenticata non legittima necessariamente ogni operazione successiva.",
+      "detail": "Risorsa, ruolo e contesto possono cambiare; il controllo dev’essere applicato anche a chiamate API dirette e non solo all’interfaccia.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Complete mediation del Capitolo 2"
+      ],
+      "mistakes": "Credere che il permesso venga deciso una volta per tutte al login.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.1, pagina PDF 51"
+    },
+    {
+      "id": "cyber-c04-q006",
+      "topicId": "cyber-c04-t01",
+      "question": "In che senso l’access management è anche una scelta organizzativa e gestionale?",
+      "answer": "Le regole tecniche devono tradurre mansioni, ruoli, responsabilità e separazione dei compiti.",
+      "detail": "La definizione dei permessi richiede stabilire chi può fare cosa, come verificare le assegnazioni e quanto costa amministrarle.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare la gestione degli accessi come una pura impostazione software.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.1, pagina PDF 51"
+    },
+    {
+      "id": "cyber-c04-q007",
+      "topicId": "cyber-c04-t02",
+      "question": "Che cos’è l’identificazione di un soggetto?",
+      "answer": "È la presentazione al sistema di un identificatore, per esempio username, matricola, e-mail o ID dispositivo.",
+      "detail": "È una dichiarazione di identità e non contiene, da sola, la prova che chi la presenta sia il titolare legittimo.",
+      "example": "Scrivere uno username non dimostra di essere la persona corrispondente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Chiamare autenticazione la sola immissione del nome utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.2, pagina PDF 51"
+    },
+    {
+      "id": "cyber-c04-q008",
+      "topicId": "cyber-c04-t02",
+      "question": "Che cos’è l’autenticazione?",
+      "answer": "È il processo che verifica che chi dichiara un’identità controlli gli autenticatori o le credenziali associate.",
+      "detail": "Può riguardare utenti, processi, dispositivi o servizi; nel lessico NIST un claimant dimostra al verifier il controllo degli autenticatori dell’account.",
+      "example": "La verifica di una password, passkey o fattore hardware.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere prova di identità con determinazione dei diritti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.2, pagina PDF 51"
+    },
+    {
+      "id": "cyber-c04-q009",
+      "topicId": "cyber-c04-t02",
+      "question": "Che cos’è l’autorizzazione?",
+      "answer": "È la decisione che stabilisce quali operazioni un soggetto può compiere su una determinata risorsa.",
+      "detail": "Può dipendere da ruoli, attributi, policy e contesto; in casi specifici alcune risorse possono essere autorizzate anche ad accesso anonimo.",
+      "example": "Un utente può leggere il report della propria area senza poterlo approvare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che ogni autorizzazione richieda sempre una persona nominativa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.2, pagina PDF 51"
+    },
+    {
+      "id": "cyber-c04-q010",
+      "topicId": "cyber-c04-t02",
+      "question": "Che cos’è l’accounting nella sicurezza?",
+      "answer": "È la registrazione strutturata dell’uso di risorse e delle attività compiute da soggetti o processi.",
+      "detail": "Log di identità, risorsa, azione, esito, orario e durata possono supportare audit, rendicontazione e investigazioni; devono essere protetti e gestiti rispettando la privacy.",
+      "example": "Il sistema registra chi ha approvato un’offerta e quando.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere accounting con autorizzazione o semplice fatturazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.2, pagina PDF 51"
+    },
+    {
+      "id": "cyber-c04-q011",
+      "topicId": "cyber-c04-t02",
+      "question": "Quali domande distinguono identificazione, autenticazione, autorizzazione e accounting?",
+      "answer": "Identificazione: chi dichiari di essere? Autenticazione: puoi dimostrarlo? Autorizzazione: che cosa puoi fare? Accounting: che cosa hai fatto?",
+      "detail": "La sequenza chiarisce perché un singolo accesso può essere legittimo sul piano dell’identità ma illecito per una specifica operazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare i quattro termini come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.2, pagina PDF 51"
+    },
+    {
+      "id": "cyber-c04-q012",
+      "topicId": "cyber-c04-t02",
+      "question": "Qual è la differenza fra identity proofing ed autenticazione ricorrente?",
+      "answer": "Identity proofing verifica inizialmente la relazione fra identità dichiarata e persona; l’autenticazione successiva verifica il controllo di credenziali associate.",
+      "detail": "Le linee guida citate nel manuale distinguono verifica iniziale, enrollment, autenticazione e federazione.",
+      "example": "Un documento verificato in assunzione non sostituisce la verifica delle credenziali al login quotidiano.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che l’identità iniziale venga nuovamente accertata da zero a ogni login.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.2, pagina PDF 51"
+    },
+    {
+      "id": "cyber-c04-q013",
+      "topicId": "cyber-c04-t02",
+      "question": "Che cos’è l’enrollment nel ciclo di gestione dell’identità?",
+      "answer": "È la fase di registrazione e associazione degli autenticatori o credenziali all’account, dopo i controlli appropriati.",
+      "detail": "Il manuale distingue enrollment da identity proofing e dall’autenticazione successiva.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare enrollment come equivalente alla semplice immissione della password.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.2, pagina PDF 51"
+    },
+    {
+      "id": "cyber-c04-q014",
+      "topicId": "cyber-c04-t02",
+      "question": "Come funzionano le quattro fasi nel caso del Pricing Manager?",
+      "answer": "Username per identificarsi, secondo fattore per autenticarsi, ruolo e area territoriale per decidere l’approvazione, audit log per registrarla.",
+      "detail": "L’esempio del manuale dimostra che il ruolo «Pricing Manager» non è sufficiente da solo: conta anche l’appartenenza territoriale della proposta.",
+      "example": "L’approvazione del prodotto viene registrata con data, identificativo ed esito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Fermare il controllo al ruolo dopo un login valido.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.2, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q015",
+      "topicId": "cyber-c04-t02",
+      "question": "Perché accounting e audit devono essere previsti già nella progettazione?",
+      "answer": "Perché senza eventi registrati in modo affidabile non si possono ricostruire responsabilità, decisioni e accessi.",
+      "detail": "La tracciabilità serve per investigazioni e verifiche successive; i log vanno protetti dalle alterazioni e accessi indebiti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dare valore probatorio assoluto a log non custoditi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.2, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q016",
+      "topicId": "cyber-c04-t03",
+      "question": "Quali sono i quattro elementi di una decisione di controllo accessi?",
+      "answer": "Soggetto, oggetto, operazione e policy, eventualmente valutati nel contesto della richiesta.",
+      "detail": "Il soggetto chiede un’azione; l’oggetto è la risorsa; l’operazione descrive ciò che vuole fare; la policy contiene la regola che decide.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere chi agisce con la risorsa bersaglio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q017",
+      "topicId": "cyber-c04-t03",
+      "question": "Che cosa si intende per soggetto nel modello di accesso?",
+      "answer": "L’entità che richiede un’operazione: utente, processo, servizio o dispositivo.",
+      "detail": "Non è limitato alle persone; l’autorizzazione dei servizi tecnici richiede la stessa attenzione di quella degli utenti.",
+      "example": "Un batch che richiede accesso a una tabella è un soggetto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare solo utenti umani.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q018",
+      "topicId": "cyber-c04-t03",
+      "question": "Che cos’è un oggetto nel controllo degli accessi?",
+      "answer": "La risorsa sottoposta a protezione, per esempio file, record, API, tabella, stampante o schermata.",
+      "detail": "L’oggetto deve essere individuato abbastanza precisamente da poter applicare la policy sul dato corretto.",
+      "example": "Il report di marginalità di un singolo segmento è l’oggetto richiesto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Proteggere genericamente l’applicazione senza distinguere risorse.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q019",
+      "topicId": "cyber-c04-t03",
+      "question": "Che cosa rappresenta l’operazione in una richiesta autorizzativa?",
+      "answer": "L’azione richiesta sullo specifico oggetto: lettura, scrittura, esecuzione, cancellazione, esportazione o approvazione.",
+      "detail": "Lo stesso soggetto può avere diritto di lettura ma non di modifica oppure di approvazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dare automaticamente tutti i diritti appena un soggetto ne possiede uno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q020",
+      "topicId": "cyber-c04-t03",
+      "question": "In che modo il contesto influisce sulla decisione di accesso?",
+      "answer": "Può introdurre condizioni aggiuntive, come dispositivo conforme, area territoriale o autenticazione forte della sessione.",
+      "detail": "Il manuale rappresenta la decisione come funzione di soggetto, oggetto, operazione, contesto e policy.",
+      "example": "Esportazione CSV consentita solo ad analisti autorizzati con dispositivo conforme.",
+      "formulas": [
+        {
+          "latex": "\\operatorname{Decisione}=F(\\text{soggetto, oggetto, operazione, contesto, policy})"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Ignorare i requisiti contestuali perché il ruolo è corretto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q021",
+      "topicId": "cyber-c04-t03",
+      "question": "Quali sono gli esiti tipici di una decisione di accesso?",
+      "answer": "Permit oppure Deny, con possibilità in sistemi più complessi di richiedere verifiche ulteriori.",
+      "detail": "Il sistema può decidere di richiedere autenticazione rafforzata invece di accordare subito il permesso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare ogni decisione come una sola impostazione permanente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q022",
+      "topicId": "cyber-c04-t03",
+      "question": "Un medesimo processo può essere sia soggetto sia oggetto?",
+      "answer": "Sì: è soggetto quando richiede una risorsa, oggetto quando un altro soggetto ne modifica i permessi.",
+      "detail": "La distinzione è relativa alla singola operazione, non alla natura intrinseca del componente.",
+      "example": "Un servizio legge un database ma un amministratore ne configura i permessi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che una stessa entità abbia un ruolo fisso in ogni relazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q023",
+      "topicId": "cyber-c04-t03",
+      "question": "Perché nascondere un pulsante nell’interfaccia non autorizza un’operazione?",
+      "answer": "Perché la UI non sostituisce la verifica sul server della specifica richiesta.",
+      "detail": "Un utente può costruire una chiamata diretta all’API; identità, azione, oggetto e condizioni devono essere verificati lato server.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare la sola visibilità dell’azione come meccanismo di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q024",
+      "topicId": "cyber-c04-t04",
+      "question": "Quali sono le quattro categorie didattiche dei fattori di autenticazione?",
+      "answer": "Qualcosa che sai, hai, sei e fai.",
+      "detail": "Le conoscenze includono password/PIN; i possessi smart card/chiavi; le caratteristiche biometriche impronta/volto; i comportamenti dinamiche di digitazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare qualunque caratteristica comportamentale come fattore NIST indipendente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q025",
+      "topicId": "cyber-c04-t04",
+      "question": "Che cos’è il fattore «something you know»?",
+      "answer": "Una conoscenza posseduta dal soggetto, come password o PIN.",
+      "detail": "La prova dipende dal mantenere il segreto; è vulnerabile a sottrazione, riutilizzo, indovinamento e phishing.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che una seconda password appartenga a una categoria diversa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q026",
+      "topicId": "cyber-c04-t04",
+      "question": "Che cos’è «something you have»?",
+      "answer": "Il controllo o possesso di un autenticatore, come smart card o chiave hardware.",
+      "detail": "Il dispositivo può contribuire a una MFA quando combina un fattore distinto da un segreto di conoscenza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assumere che un dispositivo fisico non possa mai essere rubato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q027",
+      "topicId": "cyber-c04-t04",
+      "question": "Che cos’è «something you are»?",
+      "answer": "Una caratteristica biometrica dell’individuo, per esempio impronta o volto.",
+      "detail": "La biometria richiede gestione di falsi riconoscimenti, privacy e attacchi di presentazione; non è un segreto revocabile come una password.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare un volto una password rinnovabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q028",
+      "topicId": "cyber-c04-t04",
+      "question": "Che cosa indica «something you do»?",
+      "answer": "Un tratto comportamentale, come dinamica di digitazione o movimento caratteristico.",
+      "detail": "La categoria è didattica: le biometrie comportamentali non rappresentano automaticamente un fattore indipendente accettato da ogni standard.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire a ogni caratteristica comportamentale la stessa affidabilità di una chiave hardware.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 52"
+    },
+    {
+      "id": "cyber-c04-q029",
+      "topicId": "cyber-c04-t04",
+      "question": "Che cos’è la Single-Factor Authentication (SFA)?",
+      "answer": "Autenticazione basata su una sola categoria di fattore.",
+      "detail": "Può consistere nella verifica della sola password anche se il sistema raccoglie più segreti dello stesso tipo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Chiamare MFA l’uso di due password diverse.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q030",
+      "topicId": "cyber-c04-t04",
+      "question": "Che cos’è la Multi-Factor Authentication (MFA)?",
+      "answer": "Un’autenticazione che combina almeno due fattori distinti.",
+      "detail": "Ad esempio password e chiave hardware o autenticatore crittografico sbloccato con biometria, secondo le condizioni del sistema.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere numero di passaggi con numero di categorie di fattori.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q031",
+      "topicId": "cyber-c04-t04",
+      "question": "Come si distingue la 2FA dalla MFA?",
+      "answer": "2FA utilizza esattamente due fattori; MFA è la categoria generale delle autenticazioni con almeno due fattori.",
+      "detail": "La presenza di un singolo dispositivo non esclude che esso implementi più fattori nello stesso evento di autenticazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che due dispositivi significhino necessariamente due fattori indipendenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q032",
+      "topicId": "cyber-c04-t04",
+      "question": "Perché due password non formano di per sé una MFA?",
+      "answer": "Perché entrambe sono segreti della categoria «qualcosa che sai».",
+      "detail": "La robustezza multifattore deriva dalla diversità dei fattori, non dalla semplice duplicazione delle credenziali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Contare due campi password come due fattori.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q033",
+      "topicId": "cyber-c04-t04",
+      "question": "Quale precisazione NIST riporta il manuale sulla biometria?",
+      "answer": "Nel perimetro delle linee guida citate, la biometria si usa come parte della MFA insieme a un autenticatore fisico, non come credenziale autonoma sufficiente.",
+      "detail": "È un’indicazione contestualizzata alle raccomandazioni NIST SP 800-63B-4, non un’affermazione che ogni sistema del mondo operi nello stesso modo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare la sola impronta come soluzione universalmente sufficiente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q034",
+      "topicId": "cyber-c04-t04",
+      "question": "Quali vulnerabilità colpiscono tipicamente le password?",
+      "answer": "Riutilizzo, phishing, tentativi di guessing e credential stuffing.",
+      "detail": "Gli attaccanti possono sfruttare segreti già esposti su servizi diversi oppure convincere l’utente a comunicarli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire tutti i fallimenti a password troppo corte.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q035",
+      "topicId": "cyber-c04-t04",
+      "question": "Quali sono i rischi degli OTP via SMS?",
+      "answer": "Phishing e SIM swap, fra gli altri rischi del canale di ricezione.",
+      "detail": "Un OTP può rafforzare l’accesso ma non è automaticamente resistente a tecniche che intercettano o inducono l’utente a comunicare il codice.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Equiparare SMS OTP e passkey resistenti al phishing.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q036",
+      "topicId": "cyber-c04-t04",
+      "question": "Quale beneficio specifico possono offrire le passkey FIDO/WebAuthn?",
+      "answer": "Una maggiore resistenza al phishing grazie al legame crittografico tra autenticazione e servizio autentico.",
+      "detail": "L’efficacia richiede comunque corretta gestione di account, dispositivi e recupero; la passkey non rende ogni aspetto del sistema invulnerabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che una passkey elimini tutti i rischi di account takeover.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q037",
+      "topicId": "cyber-c04-t04",
+      "question": "Perché il furto di uno smartphone può incidere sull’autenticazione?",
+      "answer": "Perché lo smartphone può custodire autenticatori o canali di recupero e può essere compromesso da malware.",
+      "detail": "Il fattore di possesso richiede protezioni adeguate sul dispositivo e sulle procedure di recupero.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare il possesso un fattore privo di rischi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.4, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q038",
+      "topicId": "cyber-c04-t05",
+      "question": "Da che cosa dipende la robustezza di una password secondo il manuale?",
+      "answer": "Da lunghezza, imprevedibilità, unicità e protezione del sistema che la gestisce, non solo dalla presenza di simboli.",
+      "detail": "Una password formalmente complessa, ma già compromessa o riutilizzata, espone comunque l’account.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Giudicare sicura una password solo perché include maiuscole e un simbolo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.5, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q039",
+      "topicId": "cyber-c04-t05",
+      "question": "Perché una password lunga ma già presente in un data breach non è affidabile?",
+      "answer": "Perché può essere conosciuta dagli attaccanti e riutilizzata in tentativi automatizzati.",
+      "detail": "La verifica contro elenchi di password compromesse è una misura esplicitamente raccomandata nel manuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che la sola lunghezza compensi una fuga di credenziali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.5, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q040",
+      "topicId": "cyber-c04-t05",
+      "question": "Perché le raccomandazioni moderne evitano regole arbitrarie di composizione?",
+      "answer": "Perché possono indurre trasformazioni prevedibili e comportamenti meno sicuri.",
+      "detail": "Il manuale confronta i vecchi criteri obbligatori su maiuscole, simboli e rotazioni con l’attenzione moderna a lunghezza e segreti non compromessi.",
+      "example": "La password «Estate2026!» può risultare prevedibile pur rispettando regole formali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare vecchie regole di complessità come garanzia di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.5, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q041",
+      "topicId": "cyber-c04-t05",
+      "question": "Perché non è raccomandabile cambiare password periodicamente senza motivo?",
+      "answer": "Perché il cambio forzato senza evidenze di compromissione può incentivare sequenze prevedibili e abitudini scorrette.",
+      "detail": "Il manuale richiama NIST SP 800-63B-4 e distingue i cambi immotivati da quelli richiesti dopo una compromissione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che più rotazioni equivalgano sempre a maggiore sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.5, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q042",
+      "topicId": "cyber-c04-t05",
+      "question": "Quali vantaggi offrono password manager e supporto all’incolla?",
+      "answer": "Consentono di usare segreti lunghi, unici e difficili da ricordare senza imporre sforzo mnemonico eccessivo.",
+      "detail": "La gestione automatizzata riduce la tentazione di riutilizzare la stessa password su molti servizi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Impedire l’incolla come se fosse sempre una misura di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.5, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q043",
+      "topicId": "cyber-c04-t05",
+      "question": "Perché occorre limitare i tentativi di autenticazione?",
+      "answer": "Per ridurre la praticabilità dei tentativi automatizzati di guessing online.",
+      "detail": "È una difesa complementare alla qualità della password e alla MFA.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affidarsi esclusivamente alla complessità del segreto senza proteggere il servizio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.5, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q044",
+      "topicId": "cyber-c04-t05",
+      "question": "Come devono essere protetti i verifier delle password?",
+      "answer": "Con funzioni dedicate di password hashing, salt e ulteriori protezioni appropriate, senza conservare password in chiaro.",
+      "detail": "La memorizzazione sicura è distinta dalla scelta della password da parte dell’utente ed è collegata al Capitolo 3.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 3: password hashing e salt"
+      ],
+      "mistakes": "Salvare le password reversibilmente senza necessità o in chiaro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.5, pagina PDF 53"
+    },
+    {
+      "id": "cyber-c04-q045",
+      "topicId": "cyber-c04-t05",
+      "question": "Qual è la lunghezza minima prevista nel manuale per le password usate come unico fattore nello specifico perimetro NIST SP 800-63B-4?",
+      "answer": "Almeno 15 caratteri.",
+      "detail": "Il requisito è presentato come prescrizione per i sistemi che adottano il relativo standard NIST, non come obbligo giuridico universale per ogni software.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire i 15 caratteri a qualsiasi normativa o contesto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.5, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q046",
+      "topicId": "cyber-c04-t05",
+      "question": "Qual è la lunghezza minima ammessa per una password utilizzata nell’ambito di MFA secondo il NIST citato dal manuale?",
+      "answer": "8 caratteri.",
+      "detail": "La differenza rispetto ai 15 caratteri del caso a fattore unico ha senso solo nel perimetro delle prescrizioni NIST contestualizzate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Applicare indistintamente la soglia di 8 caratteri a password usate da sole.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.5, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q047",
+      "topicId": "cyber-c04-t05",
+      "question": "Quale comportamento NIST è richiesto rispetto alle password compromesse?",
+      "answer": "Il confronto con una blocklist di segreti noti o compromessi.",
+      "detail": "L’obiettivo è impedire password già facilmente note agli attaccanti, anche quando superano controlli superficiali di formato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare sempre accettabile una password perché lunga.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.5, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q048",
+      "topicId": "cyber-c04-t05",
+      "question": "Quale distinzione va fatta tra raccomandazione tecnica NIST e obbligo legale?",
+      "answer": "Le indicazioni NIST descritte nel manuale valgono nel contesto di applicazione dello standard, non sono automaticamente norme legali universali.",
+      "detail": "Il manuale invita esplicitamente a non presentare limiti di lunghezza e divieti di composizione come prescrizioni applicabili indistintamente a ogni prodotto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trasformare una guida tecnica contestualizzata in un obbligo di legge generalizzato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.5, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q049",
+      "topicId": "cyber-c04-t05",
+      "question": "Perché una passphrase non collegata a informazioni pubbliche può essere preferibile a una password breve complessa?",
+      "answer": "Perché la maggiore lunghezza e imprevedibilità possono renderla più resistente ai tentativi di indovinamento.",
+      "detail": "Deve comunque essere unica e non già compromessa; una passphrase personale non significa una frase facilmente intuibile dai social.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiare una frase celebre o informazioni biografiche per segreti robusti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.5, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q050",
+      "topicId": "cyber-c04-t06",
+      "question": "Qual è la funzione dell’identificatore di sessione dopo il login?",
+      "answer": "Collega le richieste successive del browser a una sessione che ha già superato l’autenticazione.",
+      "detail": "È un identificatore temporaneo da proteggere; la sua validità non sostituisce l’autorizzazione sulle risorse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere prova della sessione con permesso su ogni record.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.6, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q051",
+      "topicId": "cyber-c04-t06",
+      "question": "Quali proprietà e controlli richiede la gestione sicura delle sessioni?",
+      "answer": "Identificatori non prevedibili, cookie e trasporto protetti, timeout, rigenerazione nei passaggi di privilegio e invalidazione al logout.",
+      "detail": "La sicurezza della sessione richiede anche verifiche di autorizzazione lato server a ogni operazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che un cookie di sessione sia sicuro senza scadenza o revoca.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.6, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q052",
+      "topicId": "cyber-c04-t06",
+      "question": "Che cos’è il session hijacking?",
+      "answer": "Il riutilizzo non autorizzato di un identificatore o token di sessione sottratto a un utente legittimo.",
+      "detail": "L’attaccante può tentare di impersonare la sessione senza ripetere il login; protezione dei cookie e gestione della durata riducono il rischio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assumere che password robuste bastino a proteggere una sessione rubata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.6, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q053",
+      "topicId": "cyber-c04-t06",
+      "question": "Perché è opportuno rigenerare l’identificatore dopo variazioni importanti dei privilegi?",
+      "answer": "Per limitare l’uso improprio di sessioni o identificatori associati a uno stato autorizzativo precedente.",
+      "detail": "Il manuale elenca la rigenerazione tra le misure di gestione sicura delle sessioni, insieme a timeout e revoca.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Mantenere indefinitamente lo stesso identificatore durante cambi di privilegi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.6, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q054",
+      "topicId": "cyber-c04-t06",
+      "question": "Come deve rispondere il server alla richiesta autenticata GET /stipendi/52?",
+      "answer": "Deve verificare sia la sessione sia il diritto del soggetto associato di accedere proprio alla risorsa 52.",
+      "detail": "La modifica dell’identificativo nel percorso non deve consentire la lettura degli stipendi altrui.",
+      "example": "Un dipendente con cookie valido tenta l’URL di un altro cedolino: il server deve negare se non autorizzato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Fermarsi al controllo della presenza del cookie.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.6, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q055",
+      "topicId": "cyber-c04-t06",
+      "question": "Perché il controllo lato interfaccia non è sufficiente per le API?",
+      "answer": "Perché un client può inviare direttamente richieste, alterare URL o parametri e aggirare la UI.",
+      "detail": "La policy deve essere applicata dal server alla risorsa e all’operazione reali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che un pulsante nascosto impedisca una richiesta HTTP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.6, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q056",
+      "topicId": "cyber-c04-t07",
+      "question": "Che cos’è il Discretionary Access Control (DAC)?",
+      "answer": "Un modello in cui il proprietario della risorsa o un delegato può concedere o revocare permessi, nel rispetto delle regole di sistema.",
+      "detail": "La discrezionalità riguarda la possibilità di gestire le autorizzazioni; il sistema continua comunque a farle rispettare.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare discretionary come assenza di enforcement.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.7, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q057",
+      "topicId": "cyber-c04-t07",
+      "question": "Che cos’è la matrice degli accessi?",
+      "answer": "Una rappresentazione logica con soggetti sulle righe, oggetti sulle colonne e diritti di accesso nelle celle.",
+      "detail": "Permette di descrivere in modo esplicito chi può leggere, scrivere o compiere altre operazioni su ogni risorsa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere matrice logica con una singola tabella fisica obbligatoria.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.7, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q058",
+      "topicId": "cyber-c04-t07",
+      "question": "Perché la matrice degli accessi può essere poco pratica come struttura completa?",
+      "answer": "Perché con molti soggetti e oggetti diventa molto grande e spesso sparsa.",
+      "detail": "Per questo il manuale presenta rappresentazioni implementative come ACL e capability.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Aspettarsi che ogni coppia soggetto-oggetto abbia molti permessi da memorizzare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.7, pagina PDF 54"
+    },
+    {
+      "id": "cyber-c04-q059",
+      "topicId": "cyber-c04-t07",
+      "question": "Qual è un esempio di assegnazione discrezionale dei diritti?",
+      "answer": "Il proprietario di un documento concede lettura ai collaboratori e modifica ai referenti tecnici, escludendo gli utenti esterni.",
+      "detail": "È la logica tipica di risorse collaborative amministrate dai relativi proprietari o delegati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che tutti gli utenti possano modificare i diritti di ogni oggetto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.7, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q060",
+      "topicId": "cyber-c04-t07",
+      "question": "Quali sono i principali vantaggi del DAC?",
+      "answer": "Flessibilità, collaborazione e gestione relativamente semplice dei permessi sulle risorse degli utenti.",
+      "detail": "Consente ai soggetti autorizzati a gestire una risorsa di condividerla senza ridefinire sempre una policy centralizzata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare tale flessibilità priva di compromessi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.7, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q061",
+      "topicId": "cyber-c04-t07",
+      "question": "Quali rischi e limiti presenta il DAC?",
+      "answer": "Condivisioni eccessive, propagazione non controllata dei diritti e difficoltà di governance in organizzazioni grandi.",
+      "detail": "Un permesso concesso per errore può superare il principio di minimo privilegio e allargare l’accesso al dato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dimenticare di revisionare i permessi delegati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.7, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q062",
+      "topicId": "cyber-c04-t08",
+      "question": "Che cos’è una Access Control List (ACL)?",
+      "answer": "Un elenco associato a un oggetto che indica quali soggetti o gruppi possono compiere determinate azioni su di esso.",
+      "detail": "È la vista per colonna della matrice degli accessi e facilita la domanda: chi può usare questa risorsa?",
+      "example": "Per report.pdf: Mario read/write, Lucia read, Management read.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere ACL con l’elenco di tutte le risorse accessibili da un solo utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.8, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q063",
+      "topicId": "cyber-c04-t08",
+      "question": "Che cos’è una capability nel modello di accesso?",
+      "answer": "Un riferimento o token autorizzativo non falsificabile che conferisce al possessore determinati diritti su risorse specifiche.",
+      "detail": "È concettualmente una vista per riga della matrice: quali risorse e operazioni sono disponibili a questo soggetto?",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare sicuro qualsiasi token solo perché viene chiamato capability.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.8, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q064",
+      "topicId": "cyber-c04-t08",
+      "question": "Qual è la differenza fondamentale fra ACL e capability?",
+      "answer": "ACL è organizzata per oggetto e dichiara chi può accedervi; capability è organizzata attorno ai diritti detenuti da un soggetto.",
+      "detail": "Sono due rappresentazioni alternative degli stessi rapporti astratti fra soggetti, oggetti e permessi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che siano due obiettivi di sicurezza contrapposti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.8, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q065",
+      "topicId": "cyber-c04-t08",
+      "question": "Quali diritti tradizionali sono usati nei file system UNIX?",
+      "answer": "Read (r), write (w) ed execute (x), distinguendo proprietario, gruppo e altri.",
+      "detail": "I file system possono disporre anche di ACL estese, più granulari del solo schema proprietario/gruppo/altri.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare x come permesso di leggere il contenuto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.8, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q066",
+      "topicId": "cyber-c04-t08",
+      "question": "Quali problemi vanno gestiti quando si usano capability?",
+      "answer": "Emissione, protezione da falsificazione, trasferimento, scadenza e revoca.",
+      "detail": "Il fatto che un servizio riceva un riferimento autorizzativo non garantisce sicurezza se esso può essere copiato o usato oltre il proprio ambito.",
+      "example": "Un token non falsificabile dà lettura di un oggetto soltanto fino alla scadenza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trascurare la revoca o la portata dei diritti delegati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.8, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q067",
+      "topicId": "cyber-c04-t08",
+      "question": "Come rispondi con una ACL alla domanda «chi può leggere questo documento»?",
+      "answer": "Si consulta la lista collegata a quell’oggetto e si controllano i permessi dei soggetti o gruppi.",
+      "detail": "Il manuale sottolinea che il riferimento del controllo è l’oggetto; l’effettiva decisione rimane soggetta alla policy applicata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Cercare necessariamente l’elenco dei token del richiedente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.8, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q068",
+      "topicId": "cyber-c04-t08",
+      "question": "Come rispondi con una capability alla domanda «quali risorse può usare questo processo»?",
+      "answer": "Si esaminano i diritti validi detenuti dal processo e si verificano risorse e operazioni permesse.",
+      "detail": "La capability deve essere attendibile e la sua validità verificata; non basta possedere una stringa arbitraria.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare un identificatore di risorsa come una prova sufficiente di autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.8, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q069",
+      "topicId": "cyber-c04-t09",
+      "question": "Che cos’è il Mandatory Access Control (MAC)?",
+      "answer": "Un modello nel quale le regole di accesso sono imposte da una policy centrale e non modificabili liberamente dal proprietario della risorsa.",
+      "detail": "Può utilizzare classificazioni degli oggetti e livelli di autorizzazione dei soggetti; è adatto ad ambienti con segregazione rigida delle informazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere MAC con discrezionalità del proprietario o Message Authentication Code.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.9, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q070",
+      "topicId": "cyber-c04-t09",
+      "question": "Qual è la differenza gestionale fondamentale fra DAC e MAC?",
+      "answer": "Nel DAC proprietario o delegato possono gestire i permessi; nel MAC le decisioni sono subordinate a una policy centrale obbligatoria.",
+      "detail": "Il MAC limita la libertà locale di concedere accessi a informazioni classificate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che l’autore del file possa sempre cambiare le etichette MAC.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.9, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q071",
+      "topicId": "cyber-c04-t09",
+      "question": "Qual è la finalità principale di Bell–LaPadula nel contesto MAC?",
+      "answer": "Proteggere la riservatezza impedendo flussi non autorizzati di informazioni classificate.",
+      "detail": "Il modello viene presentato con livelli e regole sulla lettura e scrittura per evitare divulgazioni verso livelli più bassi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentarlo come modello dedicato primariamente all’integrità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.9, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q072",
+      "topicId": "cyber-c04-t09",
+      "question": "Qual è la gerarchia di classificazione usata nell’esempio del manuale?",
+      "answer": "Top Secret > Secret > Confidential > Restricted > Unclassified.",
+      "detail": "È la scala didattica dell’esempio; le denominazioni effettive possono variare tra organizzazioni e sistemi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assumere che queste etichette siano universali in ogni contesto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.9, pagina PDF 55"
+    },
+    {
+      "id": "cyber-c04-q073",
+      "topicId": "cyber-c04-t09",
+      "question": "Che cosa significa «No Read Up» in Bell–LaPadula?",
+      "answer": "Un soggetto non può leggere oggetti classificati a un livello superiore alla propria clearance.",
+      "detail": "È la Simple Security Property, orientata a impedire che chi ha un livello inferiore apprenda informazioni più riservate.",
+      "example": "Una clearance Confidential non consente lettura di oggetti Secret.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Invertire la direzione del divieto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.9, pagina PDF 56"
+    },
+    {
+      "id": "cyber-c04-q074",
+      "topicId": "cyber-c04-t09",
+      "question": "Che cosa significa «No Write Down» in Bell–LaPadula?",
+      "answer": "Un soggetto non può scrivere dati verso oggetti classificati a un livello inferiore.",
+      "detail": "È la Star Property (*-property): limita il trasferimento di informazioni sensibili verso contesti meno protetti.",
+      "example": "Un utente Secret non deve copiare dati riservati in un file Unclassified.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che la regola vieti soprattutto la scrittura verso livelli più alti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.9, pagina PDF 56"
+    },
+    {
+      "id": "cyber-c04-q075",
+      "topicId": "cyber-c04-t09",
+      "question": "Perché una clearance Confidential può leggere Unclassified ma non Secret, nel semplice esempio Bell–LaPadula?",
+      "answer": "Perché No Read Up consente letture verso livelli uguali o inferiori ma vieta quelle verso livelli superiori.",
+      "detail": "Il principio si applica tenendo conto anche di categorie o compartimenti eventualmente richiesti dalla policy.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ridurre l’autorizzazione alla sola verifica del nome utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.9, pagina PDF 56"
+    },
+    {
+      "id": "cyber-c04-q076",
+      "topicId": "cyber-c04-t09",
+      "question": "Le sole etichette gerarchiche sono sempre sufficienti per valutare una richiesta MAC?",
+      "answer": "No: categorie o compartimenti possono aggiungere vincoli oltre al confronto tra livelli.",
+      "detail": "Il manuale avverte che una comparazione numerica della clearance può essere insufficiente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ignorare compartimenti e vincoli specifici delle informazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.9, pagina PDF 56"
+    },
+    {
+      "id": "cyber-c04-q077",
+      "topicId": "cyber-c04-t09",
+      "question": "Perché MAC è una sigla potenzialmente ambigua nel corso?",
+      "answer": "Indica sia Mandatory Access Control sia Message Authentication Code, concetti distinti.",
+      "detail": "Il primo è un modello autorizzativo; il secondo è un meccanismo crittografico di autenticazione dei messaggi studiato nel Capitolo 3.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 3: MAC/HMAC"
+      ],
+      "mistakes": "Confondere policy sugli accessi con HMAC.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.9, pagina PDF 56"
+    },
+    {
+      "id": "cyber-c04-q078",
+      "topicId": "cyber-c04-t10",
+      "question": "Che cos’è il Role-Based Access Control (RBAC)?",
+      "answer": "Un modello che assegna permessi ai ruoli e associa utenti ai ruoli coerenti con le mansioni.",
+      "detail": "Semplifica assegnazioni e revisioni rispetto a una gestione di permessi indipendenti per ciascun individuo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire sempre direttamente ogni diritto a ciascun utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.10, pagina PDF 56"
+    },
+    {
+      "id": "cyber-c04-q079",
+      "topicId": "cyber-c04-t10",
+      "question": "Quale vantaggio porta RBAC nell’onboarding di un nuovo dipendente?",
+      "answer": "Assegnando il ruolo appropriato, l’utente ottiene il set di permessi già definito per quella mansione.",
+      "detail": "Quando la mansione cambia, si aggiornano le associazioni ai ruoli invece di riscrivere numerose regole individuali.",
+      "example": "Un nuovo analista riceve i permessi del ruolo Analista.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assegnare ruoli indiscriminati solo per accelerare l’onboarding.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.10, pagina PDF 56"
+    },
+    {
+      "id": "cyber-c04-q080",
+      "topicId": "cyber-c04-t10",
+      "question": "Quali relazioni fondamentali descrivono un modello RBAC?",
+      "answer": "Utenti associati a ruoli e ruoli associati a permessi su risorse e operazioni.",
+      "detail": "Un utente può essere titolare di più ruoli e le regole di attivazione possono variare con il modello.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere ruolo con singolo permesso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.10, pagina PDF 56"
+    },
+    {
+      "id": "cyber-c04-q081",
+      "topicId": "cyber-c04-t10",
+      "question": "Che cos’è RBAC0?",
+      "answer": "Il modello RBAC di base con utenti, ruoli, permessi e relative associazioni.",
+      "detail": "Non introduce necessariamente gerarchie o vincoli aggiuntivi di separazione dei compiti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire a RBAC0 tutte le funzionalità avanzate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.10, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q082",
+      "topicId": "cyber-c04-t10",
+      "question": "Che cos’è RBAC1?",
+      "answer": "L’estensione del modello base che aggiunge gerarchie di ruoli.",
+      "detail": "Un ruolo può ereditare permessi da altri ruoli secondo regole definite dal sistema.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare il ruolo gerarchicamente superiore come amministratore universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.10, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q083",
+      "topicId": "cyber-c04-t10",
+      "question": "Che cos’è RBAC2?",
+      "answer": "L’estensione del modello base che introduce vincoli, inclusa la separation of duties.",
+      "detail": "Permette di definire incompatibilità e condizioni sull’attribuzione o sull’attivazione dei ruoli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che RBAC2 dipenda necessariamente da RBAC1.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.10, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q084",
+      "topicId": "cyber-c04-t10",
+      "question": "Che cos’è RBAC3?",
+      "answer": "Combina RBAC0 con gerarchie e vincoli, integrando le estensioni RBAC1 e RBAC2.",
+      "detail": "RBAC1 e RBAC2 sono estensioni indipendenti, non passaggi obbligatori di una sequenza lineare.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Descrivere RBAC0→1→2→3 come quattro fasi obbligatorie.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.10, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q085",
+      "topicId": "cyber-c04-t10",
+      "question": "Quale cautela richiede la gerarchia dei ruoli RBAC?",
+      "answer": "La posizione organizzativa superiore non deve comportare automaticamente ogni privilegio tecnico.",
+      "detail": "L’ereditarietà va progettata tenendo conto del minimo privilegio e delle responsabilità effettive.",
+      "example": "Un responsabile commerciale non deve per questo amministrare il database.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere gerarchia aziendale con onnipotenza applicativa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.10, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q086",
+      "topicId": "cyber-c04-t10",
+      "question": "Che cos’è la Separation of Duties (SoD)?",
+      "answer": "La distribuzione delle fasi di un processo critico tra soggetti o ruoli differenti per limitare frodi, conflitti d’interesse ed errori.",
+      "detail": "In una procedura di acquisto la persona che crea un ordine non dovrebbe essere l’unica che lo approva.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concentrare preparazione e approvazione in uno stesso soggetto senza controlli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.10, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q087",
+      "topicId": "cyber-c04-t10",
+      "question": "Che cos’è la SoD statica?",
+      "answer": "Un vincolo che impedisce di assegnare alla stessa persona due ruoli incompatibili.",
+      "detail": "Opera sulle assegnazioni dei ruoli, prima dell’esecuzione di una specifica transazione.",
+      "example": "Creatore degli ordini e approvatore non possono essere ruoli assegnati simultaneamente al medesimo dipendente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confonderla con il vincolo applicato solo in una singola transazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.10, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q088",
+      "topicId": "cyber-c04-t10",
+      "question": "Che cos’è la SoD dinamica?",
+      "answer": "Un vincolo che impedisce l’uso contemporaneo di ruoli incompatibili in una sessione o transazione.",
+      "detail": "Consente di applicare condizioni contestuali sulle attivazioni o sulla stessa operazione.",
+      "example": "Chi ha redatto un’offerta non può approvare quella stessa offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che la SoD dinamica imponga sempre ruoli incompatibili per tutta la vita dell’account.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.10, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q089",
+      "topicId": "cyber-c04-t10",
+      "question": "Che cos’è la role explosion e quale modello può aiutare a limitarne gli effetti?",
+      "answer": "È la proliferazione di ruoli molto specializzati quando si tenta di rappresentare con soli ruoli ogni condizione di accesso.",
+      "detail": "L’integrazione con ABAC permette di trattare territorio, importo, stato e contesto come attributi anziché creare ruoli per ogni combinazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§4.11: ABAC"
+      ],
+      "mistakes": "Moltiplicare ruoli per ogni data, luogo e tipo di documento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.10, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q090",
+      "topicId": "cyber-c04-t10",
+      "question": "Perché RBAC può essere insufficiente per autorizzazioni legate a luogo e rischio?",
+      "answer": "Perché un ruolo non esprime sempre condizioni dinamiche di sessione, documento, orario o area.",
+      "detail": "Il manuale introduce ABAC proprio per decisioni più granulari e contestuali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che RBAC sia inutilizzabile: può restare la base del controllo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.10, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q091",
+      "topicId": "cyber-c04-t11",
+      "question": "Che cos’è Attribute-Based Access Control (ABAC)?",
+      "answer": "Un modello che valuta regole basate su attributi del soggetto, dell’oggetto, dell’azione richiesta e dell’ambiente.",
+      "detail": "La decisione può dipendere da caratteristiche attuali e da requisiti contestuali, non solo da un ruolo assegnato.",
+      "example": "Autorizzare un report quando reparto del dipendente e area del documento coincidono.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ridurre ABAC alla sola appartenenza a un gruppo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q092",
+      "topicId": "cyber-c04-t11",
+      "question": "Quali sono esempi di attributi del soggetto in ABAC?",
+      "answer": "Reparto, ruolo, clearance, area territoriale, tipo di contratto o dispositivo assegnato.",
+      "detail": "Sono caratteristiche riferite all’entità che richiede l’operazione e che possono influire sulla policy.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiare l’attributo del soggetto con il valore della risorsa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q093",
+      "topicId": "cyber-c04-t11",
+      "question": "Quali sono esempi di attributi dell’oggetto in ABAC?",
+      "answer": "Proprietario, classificazione, reparto di appartenenza, importo e stato del documento.",
+      "detail": "Permettono autorizzazioni per singola risorsa, evitando di esporre tutto ciò che è visibile a un determinato ruolo.",
+      "example": "Offerta «area Sud», importo 50.000 €, stato «in approvazione».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Autorizzare tutte le offerte solo perché il richiedente è manager.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q094",
+      "topicId": "cyber-c04-t11",
+      "question": "Quali sono esempi di attributi dell’azione in ABAC?",
+      "answer": "Lettura, modifica, approvazione, esportazione ed eliminazione.",
+      "detail": "La policy può differenziare la stessa risorsa secondo l’operazione richiesta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Consentire scrittura perché è stata autorizzata lettura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q095",
+      "topicId": "cyber-c04-t11",
+      "question": "Quali sono esempi di attributi dell’ambiente in ABAC?",
+      "answer": "Ora, luogo, rischio della sessione, conformità del dispositivo e rete di provenienza.",
+      "detail": "Il contesto consente decisioni adattive, ma richiede informazioni attendibili e aggiornate.",
+      "example": "Richiesta di accesso ammessa solo da un dispositivo conforme.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare gli attributi ambientali sempre fissi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q096",
+      "topicId": "cyber-c04-t11",
+      "question": "Come si interpreta la policy ABAC di lettura di un report interno?",
+      "answer": "Consente la lettura solo se l’area del dipendente coincide con quella del report, la classificazione è adeguata, la sessione usa MFA e il dispositivo è conforme.",
+      "detail": "La decisione nasce dalla congiunzione di più condizioni e deve essere valutata sulla richiesta concreta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dimenticare una condizione perché l’utente è stato autenticato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q097",
+      "topicId": "cyber-c04-t11",
+      "question": "Che cos’è il Policy Decision Point (PDP)?",
+      "answer": "Il componente che valuta la policy e produce la decisione di autorizzazione.",
+      "detail": "È logicamente distinto dal componente che intercetta e applica il risultato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere decisione ed enforcement.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q098",
+      "topicId": "cyber-c04-t11",
+      "question": "Che cos’è il Policy Enforcement Point (PEP)?",
+      "answer": "Il componente che intercetta la richiesta e applica l’esito della decisione autorizzativa.",
+      "detail": "È il punto operativo che ammette o nega l’accesso sulla risorsa secondo la decisione ottenuta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitare l’enforcement al nascondere controlli grafici.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q099",
+      "topicId": "cyber-c04-t11",
+      "question": "Quali ruoli svolgono PAP e PIP in un’architettura ABAC?",
+      "answer": "Il PAP amministra le policy; il PIP fornisce attributi e informazioni utili alla loro valutazione.",
+      "detail": "Il PDP usa regole e informazioni affidabili per decidere, mentre il PEP applica il risultato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire al PAP la funzione primaria di applicare una decisione runtime.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q100",
+      "topicId": "cyber-c04-t11",
+      "question": "Qual è la sequenza logica fra PEP, PDP, PAP e PIP?",
+      "answer": "Il PEP riceve/intercetta la richiesta; il PDP valuta la policy gestita dal PAP usando gli attributi forniti dal PIP; il PEP applica la decisione.",
+      "detail": "La rappresentazione progettuale del manuale evidenzia separazione di amministrazione, acquisizione dati, decisione e enforcement.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che un’unica schermata utente sostituisca questi compiti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q101",
+      "topicId": "cyber-c04-t11",
+      "question": "Quali sono i vantaggi tipici di ABAC?",
+      "answer": "Granularità, adattabilità a condizioni dinamiche e possibilità di applicare policy uniformi su risorse differenti.",
+      "detail": "Permette di evitare un ruolo distinto per ogni possibile combinazione di area, importo, dispositivo e orario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che più granularità equivalga automaticamente a minore complessità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q102",
+      "topicId": "cyber-c04-t11",
+      "question": "Quali limiti presenta ABAC?",
+      "answer": "Complessità di implementazione e audit, dipendenza da attributi affidabili e aggiornati, possibili problemi di prestazione.",
+      "detail": "Una policy corretta può produrre decisioni errate se gli attributi arrivano incompleti, obsoleti o non verificati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare i dati del PIP come sempre affidabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "cyber-c04-q103",
+      "topicId": "cyber-c04-t11",
+      "question": "RBAC e ABAC si escludono a vicenda?",
+      "answer": "No: il ruolo può essere uno degli attributi di ABAC e può essere integrato con condizioni su territorio, importo o rischio.",
+      "detail": "Una soluzione ibrida permette di mantenere ruoli comprensibili e applicare autorizzazioni puntuali dove necessario.",
+      "example": "Manager può approvare solo proposte della propria area entro una soglia.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Supporre che adottare ABAC imponga di eliminare i ruoli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.11, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q104",
+      "topicId": "cyber-c04-t12",
+      "question": "Quale criterio governa i permessi nel DAC?",
+      "answer": "La discrezionalità del proprietario o di un delegato nel concedere permessi su soggetti e oggetti.",
+      "detail": "È flessibile per la condivisione ma può produrre accessi troppo estesi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confonderlo con classificazioni imposte centralmente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.12, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q105",
+      "topicId": "cyber-c04-t12",
+      "question": "Quale criterio governa i permessi nel MAC?",
+      "answer": "Policy centrale con etichette e livelli di sicurezza obbligatori.",
+      "detail": "Favorisce il controllo rigoroso su informazioni classificate ma introduce rigidità operativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire al proprietario piena libertà di assegnazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.12, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q106",
+      "topicId": "cyber-c04-t12",
+      "question": "Quale criterio governa i permessi nel RBAC?",
+      "answer": "Ruoli amministrati e insiemi di permessi assegnati alle mansioni.",
+      "detail": "È facile da governare su strutture organizzative regolari, ma può generare una proliferazione dei ruoli (role explosion).",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare soli ruoli per requisiti che dipendono da stato e contesto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.12, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q107",
+      "topicId": "cyber-c04-t12",
+      "question": "Quale criterio governa i permessi nel ABAC?",
+      "answer": "Valutazione delle policy su attributi e contesto della richiesta.",
+      "detail": "È granulare e dinamico ma richiede progettazione accurata e buona qualità degli attributi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Supporre che la granularità cancelli i costi di manutenzione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.12, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q108",
+      "topicId": "cyber-c04-t12",
+      "question": "Perché non esiste un modello di controllo accessi assolutamente migliore?",
+      "answer": "Perché la scelta dipende da vincoli, rischi, dimensioni, cambiamenti organizzativi, costi e risorse da proteggere.",
+      "detail": "I sistemi reali possono combinare DAC, MAC, RBAC e ABAC per rispondere a problemi differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scegliere un modello senza considerare la politica aziendale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.12, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q109",
+      "topicId": "cyber-c04-t12",
+      "question": "Come distingui rapidamente i quattro modelli davanti a un caso d’esame?",
+      "answer": "DAC: decide il proprietario; MAC: impone una policy centrale; RBAC: decide per ruolo; ABAC: decide con attributi e contesto.",
+      "detail": "Una risposta completa deve aggiungere vantaggio, limite e scenario in cui usare o integrare il modello.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitarsi a recitare gli acronimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.12, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q110",
+      "topicId": "cyber-c04-t13",
+      "question": "Che cosa significa ICAM?",
+      "answer": "Identity, Credential and Access Management: gestione coordinata delle identità, delle credenziali e dei diritti di accesso.",
+      "detail": "È un approccio che comprende processi e componenti, non il nome di un singolo software obbligatorio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confinarlo alla sola pagina di login.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q111",
+      "topicId": "cyber-c04-t13",
+      "question": "Quali tre componenti fondamentali comprende ICAM secondo il capitolo?",
+      "answer": "Repository delle identità, gestione delle credenziali e gestione delle policy/privilegi/accessi alle risorse.",
+      "detail": "L’integrazione delle tre aree permette di connettere account, autenticatori e permessi attivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Supporre che un archivio usernames sia un sistema ICAM completo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q112",
+      "topicId": "cyber-c04-t13",
+      "question": "Qual è la funzione della repository delle identità?",
+      "answer": "Memorizzare identità digitali e relativi attributi aziendali.",
+      "detail": "Le informazioni alimentano i processi di registrazione, aggiornamento e verifica dei permessi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare tali dati sempre affidabili anche se non aggiornati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q113",
+      "topicId": "cyber-c04-t13",
+      "question": "Che cosa gestisce il sistema delle credenziali?",
+      "answer": "Emissione, aggiornamento, sospensione e revoca di credenziali e autenticatori.",
+      "detail": "Il ciclo di vita delle credenziali deve essere coerente con lo stato dell’utente e con le policy di accesso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Lasciare credenziali attive dopo la cessazione del rapporto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q114",
+      "topicId": "cyber-c04-t13",
+      "question": "Che cosa gestisce il sistema di policy e privilegi in ICAM?",
+      "answer": "Le regole che autorizzano l’accesso alle risorse e la corrispondenza fra identità, mansioni e diritti.",
+      "detail": "Deve supportare assegnazioni e riesami periodici per evitare privilegi non più necessari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere possesso di una credenziale con diritto su ogni risorsa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q115",
+      "topicId": "cyber-c04-t13",
+      "question": "Quali fasi comprende il ciclo di vita dell’identità?",
+      "answer": "Registrazione e verifica, creazione account, emissione credenziali, assegnazione privilegi, aggiornamenti, riesami, sospensione e disattivazione.",
+      "detail": "La sicurezza richiede che identità e diritti seguano i cambiamenti dell’organizzazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Gestire soltanto la creazione dell’utente senza prevederne la chiusura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q116",
+      "topicId": "cyber-c04-t13",
+      "question": "Che cosa significa Joiner in Joiner–Mover–Leaver?",
+      "answer": "Un nuovo assunto riceve account e privilegi necessari alla mansione iniziale.",
+      "detail": "L’onboarding deve connettere verifica d’identità, emissione credenziali e autorizzazioni secondo minimo privilegio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concedere diritti «provvisori» illimitati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q117",
+      "topicId": "cyber-c04-t13",
+      "question": "Che cosa significa Mover in Joiner–Mover–Leaver?",
+      "answer": "Un dipendente cambia mansione: perde privilegi non più giustificati e riceve quelli necessari al nuovo ruolo.",
+      "detail": "È fondamentale la revoca dei vecchi diritti, non solo l’aggiunta dei nuovi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Accumulare ruoli ogni volta che la persona cambia reparto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q118",
+      "topicId": "cyber-c04-t13",
+      "question": "Che cosa significa Leaver in Joiner–Mover–Leaver?",
+      "answer": "Il dipendente esce dall’organizzazione e gli accessi e le credenziali devono essere revocati tempestivamente.",
+      "detail": "Gli account residui rappresentano un rischio significativo, soprattutto quando collegati a servizi e informazioni sensibili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitarsi a disattivare il badge lasciando accessi digitali attivi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q119",
+      "topicId": "cyber-c04-t13",
+      "question": "Perché audit e governance sono necessari in ICAM?",
+      "answer": "Per tracciare attribuzioni, revisionare privilegi e controllare gli account più sensibili.",
+      "detail": "L’automazione riduce errori manuali, ma non sostituisce la definizione di policy e processi organizzativi coerenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che l’automazione renda corrette anche policy sbagliate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q120",
+      "topicId": "cyber-c04-t13",
+      "question": "Quale rischio specifico introduce una gestione incompleta dell’uscita del personale?",
+      "answer": "Credenziali e privilegi residui possono essere ancora utilizzati dopo la cessazione del rapporto.",
+      "detail": "Il problema riguarda sessioni, account e sistemi eterogenei e richiede processi di revoca integrati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che basta rimuovere l’utente dalla rubrica aziendale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "cyber-c04-q121",
+      "topicId": "cyber-c04-t14",
+      "question": "Che cos’è la federazione delle identità?",
+      "answer": "Un modello di fiducia tra domini amministrativi che consente a un sistema di utilizzare informazioni di autenticazione rilasciate da un altro.",
+      "detail": "Riduce la necessità di credenziali indipendenti presso ogni servizio, ma richiede protocolli e verifiche sulle asserzioni ricevute.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere trust federativo con condivisione delle password.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q122",
+      "topicId": "cyber-c04-t14",
+      "question": "Che cos’è un Identity Provider (IdP)?",
+      "answer": "Il componente che autentica l’utente e rilascia informazioni verificabili sull’identità o sull’evento di autenticazione.",
+      "detail": "La relazione di fiducia tra IdP e servizi deve essere stabilita e mantenuta.",
+      "example": "Un dipendente accede alla piattaforma di formazione con l’identità aziendale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che l’IdP autorizzi automaticamente qualsiasi azione nel servizio terzo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q123",
+      "topicId": "cyber-c04-t14",
+      "question": "Che cos’è una Relying Party (RP)?",
+      "answer": "Il servizio che utilizza le informazioni fornite dall’IdP per stabilire l’accesso e applicare le proprie policy.",
+      "detail": "L’RP deve verificare le informazioni ricevute e decidere i diritti specifici sulla propria applicazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Accettare qualunque asserzione senza controlli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q124",
+      "topicId": "cyber-c04-t14",
+      "question": "Che cos’è un’asserzione (assertion) nella federazione?",
+      "answer": "Una dichiarazione verificabile relativa all’identità o all’evento di autenticazione emessa dall’IdP.",
+      "detail": "L’RP deve verificare che sia genuina, valida e destinata a sé prima di fondarvi una decisione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare un’asserzione non verificata come prova affidabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q125",
+      "topicId": "cyber-c04-t14",
+      "question": "La federazione richiede che il servizio esterno riceva la password aziendale?",
+      "answer": "No: può ricevere un’asserzione verificabile, senza conoscere il segreto con cui il dipendente si autentica presso l’IdP.",
+      "detail": "Il servizio esterno rimane responsabile della propria sessione e della policy autorizzativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Condividere la stessa password con tutti i servizi come presunta federazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q126",
+      "topicId": "cyber-c04-t14",
+      "question": "Qual è la differenza tra federazione delle identità e Single Sign-On (SSO)?",
+      "answer": "La federazione riguarda la fiducia tra domini; SSO descrive un’esperienza in cui si accede a più servizi riducendo nuovi login.",
+      "detail": "La federazione può facilitare SSO, ma i due concetti non coincidono: esistono SSO non cross-domain e federazioni con ri-autenticazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare SSO come sinonimo tecnico di qualsiasi federazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q127",
+      "topicId": "cyber-c04-t14",
+      "question": "Quali protocolli vengono indicati come esempi di federazione o autenticazione?",
+      "answer": "SAML 2.0 e OpenID Connect.",
+      "detail": "OAuth 2.0, invece, è presentato principalmente come framework di autorizzazione delegata, non come protocollo di login autonomo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare OAuth puro come equivalenza di OpenID Connect.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q128",
+      "topicId": "cyber-c04-t14",
+      "question": "Quali verifiche deve compiere l’RP su un’asserzione federativa?",
+      "answer": "Controllare firma, emittente, destinatario, validità temporale, protezione dal replay e coerenza degli attributi.",
+      "detail": "La fiducia tra domini non elimina l’obbligo di convalidare ogni elemento rilevante dell’asserzione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Accettare una dichiarazione solo perché proviene da una risposta di rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q129",
+      "topicId": "cyber-c04-t14",
+      "question": "Quali rischi derivano da una federazione implementata male?",
+      "answer": "Asserzioni false o accettate senza validazione possono permettere accessi impropri a più servizi.",
+      "detail": "La centralità dell’IdP introduce anche dipendenze di disponibilità e continuità operativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare la federazione solo un vantaggio di usabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q130",
+      "topicId": "cyber-c04-t14",
+      "question": "Un IdP indisponibile può influire sui servizi federati?",
+      "answer": "Sì: i servizi dipendenti possono incontrare problemi nell’effettuare nuove autenticazioni o verifiche richieste.",
+      "detail": "Le esigenze di resilienza dell’Identity Provider devono essere considerate assieme ai vantaggi della federazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dimenticare la dipendenza sistemica dal servizio centrale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q131",
+      "topicId": "cyber-c04-t15",
+      "question": "Che cosa significa AAA in ambito di sicurezza?",
+      "answer": "Authentication, Authorization, Accounting.",
+      "detail": "Le tre funzioni rispondono rispettivamente a chi può dimostrare la propria identità, quali diritti possiede e quali attività sono state registrate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiare le funzioni con tre nomi di protocolli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.15, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q132",
+      "topicId": "cyber-c04-t15",
+      "question": "Che ruolo svolge RADIUS?",
+      "answer": "Supporta lo scambio di informazioni per autenticazione, autorizzazione e configurazione dell’accesso tra server di rete e server di autenticazione.",
+      "detail": "Nel manuale è collegato a contesti aziendali Wi-Fi ed Ethernet 802.1X, con accounting trattato dallo standard storico dedicato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentarlo come un protocollo per firmare documenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.15, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q133",
+      "topicId": "cyber-c04-t15",
+      "question": "Quali riferimenti RFC storici sono citati per RADIUS e accounting?",
+      "answer": "RFC 2865 per RADIUS e RFC 2866 per la funzione di accounting.",
+      "detail": "La distinzione riguarda gli standard richiamati dal manuale, non la necessità di memorizzare ogni dettaglio implementativo in questo capitolo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere accounting con autenticazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.15, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q134",
+      "topicId": "cyber-c04-t15",
+      "question": "Che cos’è Kerberos in termini generali?",
+      "answer": "Un protocollo di autenticazione di rete che usa un’autorità fidata e ticket crittografici.",
+      "detail": "Riduce la necessità di trasmettere ripetutamente password ai diversi server; il manuale rinvia il flusso AS/TGS ai capitoli successivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Descriverlo come un modello di access control DAC/MAC.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.15, pagina PDF 59"
+    },
+    {
+      "id": "cyber-c04-q135",
+      "topicId": "cyber-c04-t15",
+      "question": "Qual è lo scopo prevalente di OAuth 2.0?",
+      "answer": "Delegare a un’applicazione terza autorizzazioni di accesso a risorse protette senza consegnarle la password dell’utente.",
+      "detail": "Non fornisce, da solo, la stessa semantica di un protocollo di autenticazione dell’identità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Definire OAuth 2.0 un login standard senza ulteriori specificazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.15, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q136",
+      "topicId": "cyber-c04-t15",
+      "question": "Che cosa aggiunge OpenID Connect (OIDC) rispetto a OAuth 2.0?",
+      "answer": "Uno strato di autenticazione e informazioni sull’identità.",
+      "detail": "Il manuale richiama OIDC per distinguere il login federato dalla sola delega di accesso alle risorse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare OAuth e OIDC come perfettamente intercambiabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.15, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q137",
+      "topicId": "cyber-c04-t15",
+      "question": "Come distingueresti RADIUS, Kerberos e OAuth 2.0 all’orale?",
+      "answer": "RADIUS: AAA per accessi di rete; Kerberos: autenticazione tramite ticket; OAuth 2.0: autorizzazione delegata.",
+      "detail": "Hanno finalità differenti e il manuale annuncia un approfondimento dei protocolli nei capitoli successivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare uno dei nomi come risposta generica a ogni problema di identità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.15, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q138",
+      "topicId": "cyber-c04-t16",
+      "question": "Perché i controlli fisici rimangono indispensabili anche con protezioni logiche efficaci?",
+      "answer": "Perché un attaccante o un evento fisico può sottrarre, danneggiare o rendere indisponibili dispositivi e infrastrutture.",
+      "detail": "I controlli digitali non impediscono da soli l’ingresso in una sala server, un guasto elettrico o un incendio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare la sicurezza interamente digitale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.16, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q139",
+      "topicId": "cyber-c04-t16",
+      "question": "Quali controlli fisici sono esplicitamente elencati nel manuale?",
+      "answer": "Serrature, badge, biometrie, allarmi, CCTV e protezione antincendio.",
+      "detail": "Sono misure complementari, con funzioni di prevenzione, rilevazione, deterrenza e continuità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire a una telecamera capacità di bloccare fisicamente ogni intrusione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.16, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q140",
+      "topicId": "cyber-c04-t16",
+      "question": "Come si imposta il controllo degli ingressi alle aree protette?",
+      "answer": "Definendo chi può entrare, quando, in quali aree e come vengono registrati gli accessi.",
+      "detail": "Badge, codici e biometrie vanno associati a policy e verifiche appropriate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare il possesso del badge come diritto a ogni stanza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.16, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q141",
+      "topicId": "cyber-c04-t16",
+      "question": "Che cos’è il tailgating?",
+      "answer": "L’ingresso non autorizzato dietro una persona legittimamente abilitata al passaggio.",
+      "detail": "Il rischio richiede misure organizzative oltre ai sistemi elettronici dei varchi.",
+      "example": "Un estraneo segue un dipendente attraverso una porta riservata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Supporre che una serratura con badge sia sufficiente in ogni circostanza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.16, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q142",
+      "topicId": "cyber-c04-t16",
+      "question": "Che differenza c’è fra allarme e CCTV?",
+      "answer": "L’allarme segnala intrusioni o condizioni anomale; la CCTV registra/osserva eventi con finalità di deterrenza ed evidenza.",
+      "detail": "Nessuno dei due sostituisce automaticamente un dispositivo che impedisce l’ingresso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere sorveglianza con blocco fisico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.16, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q143",
+      "topicId": "cyber-c04-t16",
+      "question": "Quali cautele richiede la videosorveglianza?",
+      "answer": "Controllare gli accessi alle registrazioni, definire tempi di conservazione adeguati e rispettare la protezione dei dati.",
+      "detail": "L’efficacia investigativa deve essere bilanciata con responsabilità e privacy.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Conservare o distribuire filmati senza regole.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.16, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q144",
+      "topicId": "cyber-c04-t16",
+      "question": "Quali misure proteggono disponibilità e integrità da eventi ambientali?",
+      "answer": "Rilevatori di fumo, sistemi di estinzione, UPS, alimentazione di emergenza, monitoraggio di temperatura/umidità e ridondanza.",
+      "detail": "Sono utili anche contro guasti e incidenti non dolosi, non solo contro aggressori umani.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitare la difesa a phishing e accessi remoti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.16, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q145",
+      "topicId": "cyber-c04-t16",
+      "question": "Perché un server cifrato e aggiornato può comunque subire un grave incidente fisico?",
+      "answer": "Perché furto di supporti, scollegamento dell’alimentazione o sabotaggio possono interrompere il servizio e compromettere gli asset.",
+      "detail": "La sicurezza completa richiede controlli complementari fisici, logici e organizzativi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che cifratura del disco garantisca continuità operativa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.16, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q146",
+      "topicId": "cyber-c04-t16",
+      "question": "In che senso le misure fisiche costituiscono defense in depth?",
+      "answer": "Coprono minacce differenti dalle barriere di autenticazione, autorizzazione e cifratura.",
+      "detail": "Rafforzano disponibilità, integrità e tracciabilità nel caso in cui altri controlli siano aggirati o falliscano.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 2: layering e difesa in profondità"
+      ],
+      "mistakes": "Duplicare solo lo stesso controllo logico anziché coprire rischi distinti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.16, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q147",
+      "topicId": "cyber-c04-t17",
+      "question": "Quale scenario aziendale viene usato per integrare il Capitolo 4?",
+      "answer": "Un portale in cui operatori, analisti pricing, manager e amministratori tecnici creano, analizzano e approvano offerte commerciali sensibili.",
+      "detail": "Serve a mostrare come ICAM, MFA, RBAC, ABAC, SoD, controlli server-side, audit e sicurezza fisica lavorino insieme.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentarlo come una singola misura tecnica risolutiva.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.17, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q148",
+      "topicId": "cyber-c04-t17",
+      "question": "Come viene gestita l’identità nel portale delle offerte?",
+      "answer": "Ogni dipendente è censito nella repository aziendale e l’account è legato all’identità verificata e allo stato occupazionale.",
+      "detail": "Le variazioni del rapporto devono propagarsi alle credenziali e ai permessi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Mantenere account senza collegamento al ciclo di vita del personale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.17, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q149",
+      "topicId": "cyber-c04-t17",
+      "question": "Come viene gestita l’autenticazione nel portale delle offerte?",
+      "answer": "Usando un autenticatore appropriato al rischio e MFA per le operazioni sensibili, seguito da una sessione protetta.",
+      "detail": "L’autenticazione precede l’autorizzazione ma non determina automaticamente i diritti su tutte le offerte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che la MFA autorizzi da sola l’approvazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.17, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q150",
+      "topicId": "cyber-c04-t17",
+      "question": "Come viene applicato RBAC ai diversi ruoli del portale?",
+      "answer": "Commerciale prepara le proposte, Pricing modifica parametri economici, Approvatore autorizza il rilascio.",
+      "detail": "Il ruolo Amministratore tecnico non deve acquisire automaticamente la competenza di approvazione business.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere privilegi amministrativi IT con responsabilità commerciale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.17, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q151",
+      "topicId": "cyber-c04-t17",
+      "question": "Come viene applicato ABAC all’approvazione delle offerte?",
+      "answer": "La policy valuta area territoriale, importo e contesto, oltre al ruolo del manager.",
+      "detail": "Per le offerte superiori a una soglia si può richiedere un secondo approvatore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Riconoscere genericamente il ruolo Manager come permesso illimitato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.17, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q152",
+      "topicId": "cyber-c04-t17",
+      "question": "Quale vincolo SoD è applicato alle offerte?",
+      "answer": "Chi crea una proposta non può essere l’unico soggetto che approva la medesima proposta.",
+      "detail": "L’applicazione confronta l’identificativo del creatore con quello dell’approvatore; il controllo può essere statico o transazionale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Lasciare l’autorizzazione dell’operazione nelle mani del suo solo autore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.17, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q153",
+      "topicId": "cyber-c04-t17",
+      "question": "Come deve essere verificata la sicurezza delle API del portale?",
+      "answer": "Ogni API verifica il diritto del soggetto, la risorsa richiesta e le condizioni applicabili lato server.",
+      "detail": "Nascondere pulsanti o sezioni UI non impedisce richieste dirette all’endpoint.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Autorizzare la richiesta solo in base alla presenza di una sessione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.17, pagina PDF 60"
+    },
+    {
+      "id": "cyber-c04-q154",
+      "topicId": "cyber-c04-t17",
+      "question": "Quali informazioni devono essere registrate nel caso integrato per accountability?",
+      "answer": "Autore di creazione, modifica, validazione e approvazione, orario, oggetto, esito e motivazione delle operazioni.",
+      "detail": "I log devono essere protetti da accessi non autorizzati e manomissioni per supportare audit affidabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Registrare soltanto il login senza le operazioni sensibili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.17, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q155",
+      "topicId": "cyber-c04-t17",
+      "question": "Che cosa accade ai privilegi quando l’utente cambia mansione o lascia l’organizzazione?",
+      "answer": "I permessi obsoleti devono essere rimossi al cambio e gli accessi revocati all’uscita.",
+      "detail": "Il caso integra la gestione Joiner–Mover–Leaver con controlli server-side e sessioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Aggiungere solo nuovi ruoli senza rimuovere i precedenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.17, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q156",
+      "topicId": "cyber-c04-t17",
+      "question": "Qual è il ruolo dei controlli fisici nella piattaforma di offerte?",
+      "answer": "Proteggere i server e gli apparati con accessi ai locali controllati e procedure di continuità.",
+      "detail": "Crittografia e MFA non proteggono da tutti i rischi fisici o ambientali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Escludere la sicurezza della sala server dalla valutazione del sistema.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.17, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q157",
+      "topicId": "cyber-c04-t17",
+      "question": "Qual è il compromesso economico-gestionale del caso ICAM centralizzato?",
+      "answer": "Richiede investimenti iniziali, ma può ridurre errori, frodi, accessi abusivi e costi di gestione e audit rispetto a permessi manuali.",
+      "detail": "La scelta deve considerare rischio, manutenzione e costo complessivo nel tempo, non soltanto il costo iniziale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che la soluzione con meno configurazione iniziale sia sempre la più conveniente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.17, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q158",
+      "topicId": "cyber-c04-t17",
+      "question": "Come si applicano insieme RBAC, ABAC e SoD nel caso delle offerte?",
+      "answer": "RBAC definisce mansioni, ABAC limita le operazioni a territorio/importo/contesto, SoD separa creazione e approvazione.",
+      "detail": "La combinazione realizza un controllo più aderente al processo economico rispetto a un’unica regola generale di accesso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostituire le verifiche transazionali con il solo ruolo dell’utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.17, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q159",
+      "topicId": "cyber-c04-t18",
+      "question": "Perché la frase «login riuscito significa libero accesso» è errata?",
+      "answer": "Perché autenticazione e autorizzazione sono distinte; la seconda va applicata a ogni specifica risorsa e azione.",
+      "detail": "Il diritto di aprire una sessione non conferisce automaticamente privilegi su record o funzioni amministrative.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiare il perimetro dell’applicazione con quello dei permessi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.18, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q160",
+      "topicId": "cyber-c04-t18",
+      "question": "Perché «due password sono MFA» è un errore?",
+      "answer": "Perché sono due prove della stessa categoria di conoscenza, non fattori indipendenti.",
+      "detail": "La multifattorialità richiede categorie distinte e corretta implementazione degli autenticatori.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Contare il numero di segreti senza considerarne la natura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.18, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q161",
+      "topicId": "cyber-c04-t18",
+      "question": "Perché «la biometria è una password più sicura» è una semplificazione scorretta?",
+      "answer": "Perché i tratti biometrici non sono segreti revocabili come le password e introducono rischi di falsa accettazione, presentazione e privacy.",
+      "detail": "Il manuale descrive la biometria nel contesto della MFA con autenticatore fisico secondo NIST.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare un’impronta compromessa come password facilmente sostituibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.18, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q162",
+      "topicId": "cyber-c04-t18",
+      "question": "Perché Bell–LaPadula non deve essere presentato come modello soprattutto per l’integrità?",
+      "answer": "Perché No Read Up e No Write Down mirano prioritariamente a controllare la divulgazione di informazioni classificate.",
+      "detail": "È un modello orientato alla confidenzialità nell’ambito del MAC.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuirgli finalità principali diverse da quelle esplicitate nel manuale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.18, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q163",
+      "topicId": "cyber-c04-t18",
+      "question": "Perché RBAC1 e RBAC2 non costituiscono due stadi sequenziali obbligatori?",
+      "answer": "Perché rappresentano estensioni indipendenti del RBAC0: gerarchie e vincoli.",
+      "detail": "RBAC3 integra entrambe le estensioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare RBAC2 come semplice evoluzione cronologica necessaria di RBAC1.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.18, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q164",
+      "topicId": "cyber-c04-t18",
+      "question": "Perché ABAC non elimina necessariamente RBAC?",
+      "answer": "Perché i ruoli possono fungere da attributi all’interno di policy più granulari.",
+      "detail": "La combinazione consente mantenere un modello organizzativo chiaro e applicare condizioni ulteriori.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare ABAC incompatibile con qualsiasi ruolo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.18, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q165",
+      "topicId": "cyber-c04-t18",
+      "question": "Qual è l’errore comune nell’equiparare OAuth 2.0 a un protocollo di autenticazione?",
+      "answer": "OAuth 2.0 è principalmente un framework di autorizzazione delegata; OIDC aggiunge la componente di autenticazione.",
+      "detail": "Il manuale rinvia i dettagli dei protocolli a un capitolo successivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che ottenere accesso delegato equivalga a verificare l’identità dell’utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.18, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q166",
+      "topicId": "cyber-c04-t18",
+      "question": "Perché SSO e federazione non sono sinonimi?",
+      "answer": "SSO descrive l’esperienza di login su più servizi; la federazione descrive rapporti di fiducia fra domini.",
+      "detail": "Possono cooperare ma non coincidono in ogni architettura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Definire automaticamente cross-domain ogni forma di SSO.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.18, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q167",
+      "topicId": "cyber-c04-t18",
+      "question": "Perché è falso che nascondere un pulsante in UI impedisca un’operazione?",
+      "answer": "Perché le richieste possono essere inviate direttamente al server, che deve controllare la policy sulla risorsa.",
+      "detail": "L’interfaccia è un ausilio usabilità, non la sede esclusiva dell’enforcement.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Rinunciare a controlli sui percorsi API.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.18, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q168",
+      "topicId": "cyber-c04-t19",
+      "question": "Orale: come collegheresti autenticazione, minimo privilegio e controllo accessi?",
+      "answer": "L’autenticazione associa affidabilmente la richiesta a un’identità; il minimo privilegio limita i diritti; il controllo degli accessi applica tali diritti a ogni azione.",
+      "detail": "Alcune risorse possono essere pubbliche, ma la politica di accesso deve prevederle esplicitamente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che ogni risorsa pubblica rappresenti una violazione della sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.19, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q169",
+      "topicId": "cyber-c04-t19",
+      "question": "Orale: quando sceglieresti DAC invece di MAC?",
+      "answer": "DAC quando serve condivisione flessibile gestita da proprietari; MAC quando servono classificazioni e divieti centralizzati rigorosi.",
+      "detail": "La scelta dipende dagli asset, dalle policy e dai rischi, non da un presunto valore assoluto dei modelli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scegliere MAC per ogni ambiente senza considerare i costi operativi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.19, pagina PDF 61"
+    },
+    {
+      "id": "cyber-c04-q170",
+      "topicId": "cyber-c04-t19",
+      "question": "Orale: come spiegheresti No Read Up e No Write Down a un collega?",
+      "answer": "Un soggetto non legge dati classificati più in alto e non scrive verso livelli più bassi, per limitare la fuoriuscita di informazioni riservate.",
+      "detail": "Le categorie/compartimenti possono introdurre ulteriori condizioni rispetto al solo livello.",
+      "example": "Un Secret non copia documenti riservati in Unclassified.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Invertire le direzioni di read e write.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.19, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q171",
+      "topicId": "cyber-c04-t19",
+      "question": "Orale: quali elementi devi spiegare per descrivere RBAC completamente?",
+      "answer": "Utenti, ruoli, permessi, associazioni; eventuali gerarchie; vincoli di separazione dei compiti e manutenzione dei ruoli.",
+      "detail": "RBAC0 è base, RBAC1 gerarchie, RBAC2 vincoli, RBAC3 combinazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Descrivere RBAC soltanto come tabella «utente→ruolo».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.19, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q172",
+      "topicId": "cyber-c04-t19",
+      "question": "Orale: come costruiresti una policy ABAC per approvare offerte ad alto valore?",
+      "answer": "Valuterei ruolo e area del soggetto, area e importo dell’offerta, operazione richiesta e condizioni della sessione; oltre soglia richiederei ulteriore approvazione.",
+      "detail": "Un PEP applica la decisione valutata dal PDP su attributi affidabili, con policy gestite dal PAP.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitarsi alla verifica della parola «manager» nel token.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.19, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q173",
+      "topicId": "cyber-c04-t19",
+      "question": "Orale: come distingueresti PDP e PEP da PAP e PIP?",
+      "answer": "PDP decide, PEP applica, PAP amministra la policy, PIP fornisce gli attributi necessari.",
+      "detail": "La separazione delle funzioni serve a comprendere dove intervenire in caso di decisioni errate o dati non aggiornati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire tutti i compiti a un unico oggetto senza distinguerli concettualmente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.19, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q174",
+      "topicId": "cyber-c04-t19",
+      "question": "Orale: qual è il ruolo di ICAM e del processo Joiner–Mover–Leaver?",
+      "answer": "Governare identità, credenziali e permessi lungo l’intero rapporto con l’organizzazione, con revoche tempestive ai cambi di ruolo e in uscita.",
+      "detail": "La qualità dell’account provisioning va unita alla revisione dei diritti e alla registrazione degli eventi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare ICAM come semplice account provisioning iniziale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.19, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q175",
+      "topicId": "cyber-c04-t19",
+      "question": "Orale: quale differenza c’è tra IdP, RP e asserzione?",
+      "answer": "L’IdP autentica e rilascia l’asserzione; l’RP la convalida e applica la propria autorizzazione.",
+      "detail": "La sicurezza federata dipende dalla fiducia stabilita e dalla corretta verifica di emittente, destinatario, firma, tempo e replay.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che RP e IdP siano necessariamente lo stesso servizio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.19, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q176",
+      "topicId": "cyber-c04-t19",
+      "question": "Orale: come distingueresti i requisiti di sicurezza fisica da quelli logici?",
+      "answer": "La sicurezza logica governa accessi digitali e trattamento dei dati; quella fisica contrasta intrusioni materiali, furti, sabotaggi e rischi ambientali.",
+      "detail": "Le due famiglie di controlli sono complementari e contribuiscono anche a disponibilità e continuità operativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che la cifratura sia una protezione antincendio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.19, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q177",
+      "topicId": "cyber-c04-t19",
+      "question": "Orale: qual è il compromesso principale nella scelta dei modelli di accesso?",
+      "answer": "Bilanciare rischio, granularità delle autorizzazioni, semplicità amministrativa, costi, prestazioni e usabilità.",
+      "detail": "Un sistema ibrido RBAC+ABAC può risultare appropriato se i ruoli sono stabili ma le policy dipendono anche da attributi dinamici.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Giudicare una soluzione solo dalla complessità tecnica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.19, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q178",
+      "topicId": "cyber-c04-t20",
+      "question": "Nel glossario, che cosa significa «identity proofing»?",
+      "answer": "Verifica iniziale del collegamento fra identità dichiarata e persona.",
+      "detail": "È distinta dall’autenticazione di login che avviene dopo l’iscrizione del soggetto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confonderla con una singola richiesta OTP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.20, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q179",
+      "topicId": "cyber-c04-t20",
+      "question": "Che cosa indica «credential» nel glossario del manuale?",
+      "answer": "Informazione o oggetto usato per attestare un diritto o un’identità.",
+      "detail": "È una categoria concettuale che va distinta dall’autenticator specificamente usato per dimostrare il controllo dell’account.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ridurre tutte le credenziali a sole password.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.20, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q180",
+      "topicId": "cyber-c04-t20",
+      "question": "Che cosa indica «authenticator»?",
+      "answer": "Il mezzo attraverso il quale un soggetto dimostra il controllo dell’account.",
+      "detail": "Può rientrare in una delle categorie di fattori richiamate dal capitolo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare authenticator come sinonimo di identificatore pubblico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.20, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q181",
+      "topicId": "cyber-c04-t20",
+      "question": "Che cosa significa «clearance»?",
+      "answer": "Il livello di autorizzazione assegnato a un soggetto in un sistema con classificazioni.",
+      "detail": "Serve nel confronto con il livello degli oggetti, eventualmente insieme a categorie e compartimenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiarla per la password o per il ruolo professionale generico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.20, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q182",
+      "topicId": "cyber-c04-t20",
+      "question": "Che cosa indica «capability» nel glossario?",
+      "answer": "Un diritto o riferimento autorizzativo non falsificabile associato al possessore.",
+      "detail": "Il suo uso richiede controlli su validità, possesso, delega ed eventuale revoca.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere un semplice ID risorsa con una capability.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.20, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q183",
+      "topicId": "cyber-c04-t20",
+      "question": "Che cosa significa «assertion» nel glossario federativo?",
+      "answer": "Una dichiarazione verificabile sull’identità o sull’autenticazione.",
+      "detail": "Serve all’RP quando proviene dall’IdP atteso e supera le verifiche di sicurezza necessarie.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Accettare un’asserzione senza convalidarne contesto e firma.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.20, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q184",
+      "topicId": "cyber-c04-t20",
+      "question": "Che cosa significa «SoD»?",
+      "answer": "Separation of Duties: distribuzione di fasi o responsabilità incompatibili tra ruoli o soggetti distinti.",
+      "detail": "Può essere realizzata con vincoli statici o dinamici per evitare che una sola persona completi processi sensibili senza controllo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confonderla con il minimo privilegio, che limita i singoli permessi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.20, pagina PDF 62"
+    },
+    {
+      "id": "cyber-c04-q185",
+      "topicId": "cyber-c04-t20",
+      "question": "Che cosa significa «AAA»?",
+      "answer": "Authentication, Authorization, Accounting.",
+      "detail": "In una spiegazione completa occorre distinguere la prova di identità, la decisione di permesso e la tracciabilità delle operazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Invertire authorization e accounting.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 4, §4.20, pagina PDF 62"
+    }
+  ]
+}

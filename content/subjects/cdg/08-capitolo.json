@@ -1,0 +1,3357 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cdg",
+  "source": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti; PDF fornito dall’utente, pagine PDF 86–101. Fonte unica autorizzata.",
+  "chapter": {
+    "id": "cdg-c08",
+    "title": "Costi standard e analisi degli scostamenti",
+    "order": 8,
+    "topics": [
+      {
+        "id": "cdg-c08-t01",
+        "title": "Necessità e finalità dei costi preventivi"
+      },
+      {
+        "id": "cdg-c08-t02",
+        "title": "Definizione e duplice funzione dello standard"
+      },
+      {
+        "id": "cdg-c08-t03",
+        "title": "Standard pratici, ideali e storici"
+      },
+      {
+        "id": "cdg-c08-t04",
+        "title": "Cinque funzioni dello standard costing"
+      },
+      {
+        "id": "cdg-c08-t05",
+        "title": "Standard, preventivo, budget e consuntivo"
+      },
+      {
+        "id": "cdg-c08-t06",
+        "title": "Notazione e unità di misura"
+      },
+      {
+        "id": "cdg-c08-t07",
+        "title": "Costruzione della scheda dei costi standard"
+      },
+      {
+        "id": "cdg-c08-t08",
+        "title": "Prezzi standard dei fattori diretti"
+      },
+      {
+        "id": "cdg-c08-t09",
+        "title": "Resa, consumi e tempi standard"
+      },
+      {
+        "id": "cdg-c08-t10",
+        "title": "Caso Arcari 5.1: scheda della crema"
+      },
+      {
+        "id": "cdg-c08-t11",
+        "title": "Standard analitici dei fattori indiretti"
+      },
+      {
+        "id": "cdg-c08-t12",
+        "title": "Stima statistica degli indiretti e standard di reparto"
+      },
+      {
+        "id": "cdg-c08-t13",
+        "title": "Budget flessibile"
+      },
+      {
+        "id": "cdg-c08-t14",
+        "title": "Convenzione dei segni e interpretazione"
+      },
+      {
+        "id": "cdg-c08-t15",
+        "title": "Ponte e scomposizione dei costi variabili"
+      },
+      {
+        "id": "cdg-c08-t16",
+        "title": "Scostamento globale e di volume"
+      },
+      {
+        "id": "cdg-c08-t17",
+        "title": "Scostamento di efficienza"
+      },
+      {
+        "id": "cdg-c08-t18",
+        "title": "Scostamento di prezzo e tariffa"
+      },
+      {
+        "id": "cdg-c08-t19",
+        "title": "Quadratura delle varianze"
+      },
+      {
+        "id": "cdg-c08-t20",
+        "title": "Caso Arcari 5.3: Setter"
+      },
+      {
+        "id": "cdg-c08-t21",
+        "title": "Caso Arcari 5.4: Hortya"
+      },
+      {
+        "id": "cdg-c08-t22",
+        "title": "Varianza prezzo dei materiali: acquisto e consumo"
+      },
+      {
+        "id": "cdg-c08-t23",
+        "title": "Manodopera: tariffa, efficienza e inattività"
+      },
+      {
+        "id": "cdg-c08-t24",
+        "title": "Costi indiretti variabili: efficienza e spesa"
+      },
+      {
+        "id": "cdg-c08-t25",
+        "title": "Costi indiretti: doppio standard fisico"
+      },
+      {
+        "id": "cdg-c08-t26",
+        "title": "Costi fissi: assorbimento, volume e spesa"
+      },
+      {
+        "id": "cdg-c08-t27",
+        "title": "Capacità e sotto/sovrassorbimento"
+      },
+      {
+        "id": "cdg-c08-t28",
+        "title": "Effetto congiunto prezzo-quantità"
+      },
+      {
+        "id": "cdg-c08-t29",
+        "title": "Caso integrato mensile: varianze e basi"
+      },
+      {
+        "id": "cdg-c08-t30",
+        "title": "Standard costing e rimanenze OIC 13"
+      },
+      {
+        "id": "cdg-c08-t31",
+        "title": "Controllo commesse: PV, EV e AC"
+      },
+      {
+        "id": "cdg-c08-t32",
+        "title": "Caso dei 20 negozi: Earned Value"
+      },
+      {
+        "id": "cdg-c08-t33",
+        "title": "Report direzionale degli scostamenti"
+      },
+      {
+        "id": "cdg-c08-t34",
+        "title": "Responsabilità e controllabilità"
+      },
+      {
+        "id": "cdg-c08-t35",
+        "title": "Limiti dello standard costing e controllo per eccezione"
+      },
+      {
+        "id": "cdg-c08-t36",
+        "title": "Approfondimenti: mix, resa e planning variances"
+      },
+      {
+        "id": "cdg-c08-t37",
+        "title": "Formulario generale del capitolo"
+      },
+      {
+        "id": "cdg-c08-t38",
+        "title": "Checklist ed errori della prova scritta"
+      },
+      {
+        "id": "cdg-c08-t39",
+        "title": "Autovalutazione: esercizi E1–E10"
+      },
+      {
+        "id": "cdg-c08-t40",
+        "title": "Soluzioni commentate e quadrature"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§8.1 — pagina PDF 86",
+        "cardIds": [
+          "cdg-c08-q001",
+          "cdg-c08-q002",
+          "cdg-c08-q003",
+          "cdg-c08-q004"
+        ]
+      },
+      {
+        "label": "§8.2 — pagina PDF 86",
+        "cardIds": [
+          "cdg-c08-q005",
+          "cdg-c08-q006",
+          "cdg-c08-q007",
+          "cdg-c08-q008"
+        ]
+      },
+      {
+        "label": "§8.3 — pagina PDF 86",
+        "cardIds": [
+          "cdg-c08-q009",
+          "cdg-c08-q010",
+          "cdg-c08-q011",
+          "cdg-c08-q012"
+        ]
+      },
+      {
+        "label": "§8.4 — pagina PDF 87",
+        "cardIds": [
+          "cdg-c08-q013",
+          "cdg-c08-q014",
+          "cdg-c08-q015",
+          "cdg-c08-q016",
+          "cdg-c08-q017",
+          "cdg-c08-q018"
+        ]
+      },
+      {
+        "label": "§8.5 — pagina PDF 87",
+        "cardIds": [
+          "cdg-c08-q019",
+          "cdg-c08-q020",
+          "cdg-c08-q021",
+          "cdg-c08-q022"
+        ]
+      },
+      {
+        "label": "§8.6 — pagina PDF 87",
+        "cardIds": [
+          "cdg-c08-q023",
+          "cdg-c08-q024",
+          "cdg-c08-q025",
+          "cdg-c08-q026",
+          "cdg-c08-q027"
+        ]
+      },
+      {
+        "label": "§8.7 — pagina PDF 88",
+        "cardIds": [
+          "cdg-c08-q028",
+          "cdg-c08-q029",
+          "cdg-c08-q030",
+          "cdg-c08-q031"
+        ]
+      },
+      {
+        "label": "§8.8 — pagina PDF 88",
+        "cardIds": [
+          "cdg-c08-q032",
+          "cdg-c08-q033",
+          "cdg-c08-q034",
+          "cdg-c08-q035"
+        ]
+      },
+      {
+        "label": "§8.9 — pagina PDF 88",
+        "cardIds": [
+          "cdg-c08-q036",
+          "cdg-c08-q037",
+          "cdg-c08-q038",
+          "cdg-c08-q039"
+        ]
+      },
+      {
+        "label": "§8.10 — pagina PDF 88",
+        "cardIds": [
+          "cdg-c08-q040",
+          "cdg-c08-q041",
+          "cdg-c08-q042",
+          "cdg-c08-q043",
+          "cdg-c08-q044"
+        ]
+      },
+      {
+        "label": "§8.11 — pagina PDF 89",
+        "cardIds": [
+          "cdg-c08-q045",
+          "cdg-c08-q046",
+          "cdg-c08-q047",
+          "cdg-c08-q048"
+        ]
+      },
+      {
+        "label": "§8.12 — pagina PDF 89",
+        "cardIds": [
+          "cdg-c08-q049",
+          "cdg-c08-q050",
+          "cdg-c08-q051",
+          "cdg-c08-q052",
+          "cdg-c08-q053"
+        ]
+      },
+      {
+        "label": "§8.13 — pagina PDF 89",
+        "cardIds": [
+          "cdg-c08-q054",
+          "cdg-c08-q055",
+          "cdg-c08-q056",
+          "cdg-c08-q057"
+        ]
+      },
+      {
+        "label": "§8.14 — pagina PDF 90",
+        "cardIds": [
+          "cdg-c08-q058",
+          "cdg-c08-q059",
+          "cdg-c08-q060",
+          "cdg-c08-q061"
+        ]
+      },
+      {
+        "label": "§8.15 — pagina PDF 90",
+        "cardIds": [
+          "cdg-c08-q062",
+          "cdg-c08-q063",
+          "cdg-c08-q064",
+          "cdg-c08-q065"
+        ]
+      },
+      {
+        "label": "§8.16 — pagina PDF 90",
+        "cardIds": [
+          "cdg-c08-q066",
+          "cdg-c08-q067",
+          "cdg-c08-q068",
+          "cdg-c08-q069"
+        ]
+      },
+      {
+        "label": "§8.17 — pagina PDF 90",
+        "cardIds": [
+          "cdg-c08-q070",
+          "cdg-c08-q071",
+          "cdg-c08-q072",
+          "cdg-c08-q073"
+        ]
+      },
+      {
+        "label": "§8.18 — pagina PDF 91",
+        "cardIds": [
+          "cdg-c08-q074",
+          "cdg-c08-q075",
+          "cdg-c08-q076",
+          "cdg-c08-q077"
+        ]
+      },
+      {
+        "label": "§8.19 — pagina PDF 91",
+        "cardIds": [
+          "cdg-c08-q078",
+          "cdg-c08-q079",
+          "cdg-c08-q080"
+        ]
+      },
+      {
+        "label": "§8.20 — pagina PDF 91",
+        "cardIds": [
+          "cdg-c08-q081",
+          "cdg-c08-q082",
+          "cdg-c08-q083",
+          "cdg-c08-q084",
+          "cdg-c08-q085",
+          "cdg-c08-q086",
+          "cdg-c08-q087"
+        ]
+      },
+      {
+        "label": "§8.21 — pagina PDF 92",
+        "cardIds": [
+          "cdg-c08-q088",
+          "cdg-c08-q089",
+          "cdg-c08-q090",
+          "cdg-c08-q091",
+          "cdg-c08-q092",
+          "cdg-c08-q093"
+        ]
+      },
+      {
+        "label": "§8.22 — pagina PDF 92",
+        "cardIds": [
+          "cdg-c08-q094",
+          "cdg-c08-q095",
+          "cdg-c08-q096",
+          "cdg-c08-q097"
+        ]
+      },
+      {
+        "label": "§8.23 — pagina PDF 93",
+        "cardIds": [
+          "cdg-c08-q098",
+          "cdg-c08-q099",
+          "cdg-c08-q100",
+          "cdg-c08-q101",
+          "cdg-c08-q102"
+        ]
+      },
+      {
+        "label": "§8.24 — pagina PDF 93",
+        "cardIds": [
+          "cdg-c08-q103",
+          "cdg-c08-q104",
+          "cdg-c08-q105",
+          "cdg-c08-q106"
+        ]
+      },
+      {
+        "label": "§8.25 — pagina PDF 93",
+        "cardIds": [
+          "cdg-c08-q107",
+          "cdg-c08-q108",
+          "cdg-c08-q109",
+          "cdg-c08-q110"
+        ]
+      },
+      {
+        "label": "§8.26 — pagina PDF 94",
+        "cardIds": [
+          "cdg-c08-q111",
+          "cdg-c08-q112",
+          "cdg-c08-q113",
+          "cdg-c08-q114",
+          "cdg-c08-q115"
+        ]
+      },
+      {
+        "label": "§8.27 — pagina PDF 94",
+        "cardIds": [
+          "cdg-c08-q116",
+          "cdg-c08-q117",
+          "cdg-c08-q118",
+          "cdg-c08-q119"
+        ]
+      },
+      {
+        "label": "§8.28 — pagina PDF 94",
+        "cardIds": [
+          "cdg-c08-q120",
+          "cdg-c08-q121",
+          "cdg-c08-q122",
+          "cdg-c08-q123",
+          "cdg-c08-q124"
+        ]
+      },
+      {
+        "label": "§8.29 — pagina PDF 95",
+        "cardIds": [
+          "cdg-c08-q125",
+          "cdg-c08-q126",
+          "cdg-c08-q127",
+          "cdg-c08-q128",
+          "cdg-c08-q129",
+          "cdg-c08-q130",
+          "cdg-c08-q131",
+          "cdg-c08-q132",
+          "cdg-c08-q133"
+        ]
+      },
+      {
+        "label": "§8.30 — pagina PDF 95",
+        "cardIds": [
+          "cdg-c08-q134",
+          "cdg-c08-q135",
+          "cdg-c08-q136",
+          "cdg-c08-q137"
+        ]
+      },
+      {
+        "label": "§8.31 — pagina PDF 96",
+        "cardIds": [
+          "cdg-c08-q138",
+          "cdg-c08-q139",
+          "cdg-c08-q140",
+          "cdg-c08-q141",
+          "cdg-c08-q142"
+        ]
+      },
+      {
+        "label": "§8.32 — pagina PDF 96",
+        "cardIds": [
+          "cdg-c08-q143",
+          "cdg-c08-q144",
+          "cdg-c08-q145",
+          "cdg-c08-q146",
+          "cdg-c08-q147"
+        ]
+      },
+      {
+        "label": "§8.33 — pagina PDF 97",
+        "cardIds": [
+          "cdg-c08-q148",
+          "cdg-c08-q149",
+          "cdg-c08-q150",
+          "cdg-c08-q151"
+        ]
+      },
+      {
+        "label": "§8.34 — pagina PDF 97",
+        "cardIds": [
+          "cdg-c08-q152",
+          "cdg-c08-q153",
+          "cdg-c08-q154",
+          "cdg-c08-q155"
+        ]
+      },
+      {
+        "label": "§8.35 — pagina PDF 98",
+        "cardIds": [
+          "cdg-c08-q156",
+          "cdg-c08-q157",
+          "cdg-c08-q158",
+          "cdg-c08-q159",
+          "cdg-c08-q160"
+        ]
+      },
+      {
+        "label": "§8.36 — pagina PDF 98",
+        "cardIds": [
+          "cdg-c08-q161",
+          "cdg-c08-q162",
+          "cdg-c08-q163",
+          "cdg-c08-q164",
+          "cdg-c08-q165"
+        ]
+      },
+      {
+        "label": "§8.37 — pagina PDF 98",
+        "cardIds": [
+          "cdg-c08-q166",
+          "cdg-c08-q167",
+          "cdg-c08-q168",
+          "cdg-c08-q169",
+          "cdg-c08-q170"
+        ]
+      },
+      {
+        "label": "§8.38 — pagina PDF 99",
+        "cardIds": [
+          "cdg-c08-q171",
+          "cdg-c08-q172",
+          "cdg-c08-q173",
+          "cdg-c08-q174"
+        ]
+      },
+      {
+        "label": "§8.39 — pagina PDF 99",
+        "cardIds": [
+          "cdg-c08-q175",
+          "cdg-c08-q176",
+          "cdg-c08-q177",
+          "cdg-c08-q178",
+          "cdg-c08-q179"
+        ]
+      },
+      {
+        "label": "§8.40 — pagina PDF 100",
+        "cardIds": [
+          "cdg-c08-q180",
+          "cdg-c08-q181",
+          "cdg-c08-q182",
+          "cdg-c08-q183",
+          "cdg-c08-q184",
+          "cdg-c08-q185",
+          "cdg-c08-q186",
+          "cdg-c08-q187",
+          "cdg-c08-q188",
+          "cdg-c08-q189",
+          "cdg-c08-q190"
+        ]
+      }
+    ],
+    "sourcePdfPages": [
+      86,
+      101
+    ],
+    "cardCount": 190
+  },
+  "cards": [
+    {
+      "id": "cdg-c08-q001",
+      "topicId": "cdg-c08-t01",
+      "question": "Perché conoscere soltanto il costo consuntivo non permette di giudicare l’efficienza?",
+      "answer": "Per valutare l’efficienza serve confrontare la spesa consuntiva con il costo che sarebbe stato ragionevole sostenere per l’output ottenuto.",
+      "detail": "Un costo effettivo, pur essendo misurato correttamente, non dice se il consumo delle risorse sia appropriato rispetto al volume e alla qualità della produzione. Lo standard costituisce un parametro predefinito per interpretare il risultato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.1, pagina PDF 86"
+    },
+    {
+      "id": "cdg-c08-q002",
+      "topicId": "cdg-c08-t01",
+      "question": "Quale domanda gestionale guida la costruzione di un sistema a costi standard?",
+      "answer": "Quanto dovrebbe costare produrre una unità di output in condizioni operative definite e ragionevoli?",
+      "detail": "Il costo preventivo è costruito prima della produzione combinando condizioni economiche e tecniche. Soltanto dopo può essere confrontato con ciò che si è realmente impiegato e pagato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.1, pagina PDF 86"
+    },
+    {
+      "id": "cdg-c08-q003",
+      "topicId": "cdg-c08-t01",
+      "question": "Perché lo scostamento tra costo previsto ed effettivo non conclude l’analisi?",
+      "answer": "Lo scostamento segnala una differenza, ma non identifica da solo le cause né le responsabilità.",
+      "detail": "Occorre distinguere effetti di volume, uso dei fattori, prezzo di acquisto e qualità delle ipotesi iniziali. Le decisioni correttive devono seguire un’indagine su fenomeni operativi osservabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.1, pagina PDF 86"
+    },
+    {
+      "id": "cdg-c08-q004",
+      "topicId": "cdg-c08-t01",
+      "question": "Che cosa segnala l’esempio introduttivo dei 1.000 componenti e dei 10.700 € effettivi?",
+      "answer": "Il budget dei materiali è 10.000 € e la spesa effettiva supera il riferimento di 700 €, generando uno scostamento di costo di −700 €.",
+      "detail": "La previsione comprende 1.000 unità × 2 kg/unità × 5 €/kg. Il maggior costo non permette ancora di dire se il problema riguarda il prezzo del materiale, gli scarti o uno standard errato.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "1.000\\times2\\times5-10.700=-700\\,\\text{€}",
+          "meaning": "Budget meno costo effettivo: segno sfavorevole."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.1, pagina PDF 86"
+    },
+    {
+      "id": "cdg-c08-q005",
+      "topicId": "cdg-c08-t02",
+      "question": "Come definisce il manuale il costo standard?",
+      "answer": "È un parametro-obiettivo definito ex ante che misura il costo atteso dell’impiego o dell’acquisizione di un fattore produttivo in condizioni dichiarate.",
+      "detail": "Può riferirsi a una unità di prodotto o attività e, per estensione, a commesse, reparti e periodi. Deve essere interpretabile come benchmark, non soltanto come una cifra previsionale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.2, pagina PDF 86"
+    },
+    {
+      "id": "cdg-c08-q006",
+      "topicId": "cdg-c08-t02",
+      "question": "Quali sono i due significati complementari attribuiti allo standard?",
+      "answer": "Metro di confronto dei consuntivi e meta da raggiungere per orientare comportamenti e miglioramento.",
+      "detail": "Come metro rende possibile misurare gli scostamenti a basi omogenee; come obiettivo motiva il miglioramento dei processi. Entrambi richiedono valori tecnicamente fondati e raggiungibili quando usati per valutare le persone.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.2, pagina PDF 86"
+    },
+    {
+      "id": "cdg-c08-q007",
+      "topicId": "cdg-c08-t02",
+      "question": "Quali condizioni devono accompagnare un costo standard per consentire confronti significativi?",
+      "answer": "Prodotto, qualità, periodo, reparto, tecnologia, volume e condizioni operative a cui il parametro si riferisce.",
+      "detail": "Due prodotti o reparti con metodi e condizioni differenti possono avere standard legittimamente diversi. Confrontare indiscriminatamente i loro costi senza rendere omogenei i presupposti produce giudizi distorti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.2, pagina PDF 86"
+    },
+    {
+      "id": "cdg-c08-q008",
+      "topicId": "cdg-c08-t02",
+      "question": "Qual è la differenza di funzione fra costo standard e costo previsto?",
+      "answer": "Lo standard è un benchmark unitario fondato su parametri tecnici ed economici; il costo previsto può essere una stima aggregata della spesa futura.",
+      "detail": "Uno standard unitario può alimentare il budget di periodo, ma non si identifica con l’intero piano quantitativo ed economico dell’impresa. Il primo definisce il riferimento di consumo; il secondo incorpora anche i volumi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.2, pagina PDF 86"
+    },
+    {
+      "id": "cdg-c08-q009",
+      "topicId": "cdg-c08-t03",
+      "question": "Che cosa sono gli standard pratici o raggiungibili?",
+      "answer": "Parametri costruiti in condizioni operative ordinarie, comprendendo manutenzioni normali, sfridi fisiologici e produttività sostenibile.",
+      "detail": "Sono il riferimento generalmente più utile per budget, controllo quotidiano e valutazione operativa perché non fingono che la produzione avvenga senza fermate o perdite.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.3, pagina PDF 86"
+    },
+    {
+      "id": "cdg-c08-q010",
+      "topicId": "cdg-c08-t03",
+      "question": "Che cosa sono gli standard ideali o teorici e qual è il loro limite?",
+      "answer": "Rappresentano condizioni tecniche perfette senza interruzioni o inefficienze; come unico riferimento operativo possono essere demotivanti.",
+      "detail": "Permettono di confrontarsi con una frontiera tecnica e ragionare su miglioramenti radicali. Ma gli scostamenti sistematicamente sfavorevoli possono riflettere soltanto l’irraggiungibilità delle condizioni ideali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.3, pagina PDF 86"
+    },
+    {
+      "id": "cdg-c08-q011",
+      "topicId": "cdg-c08-t03",
+      "question": "Perché un costo storico non coincide necessariamente con uno standard valido?",
+      "answer": "Perché l’esperienza passata può contenere sprechi strutturali, cambiamenti tecnologici o condizioni non più rappresentative.",
+      "detail": "I valori osservati sono una base informativa da normalizzare, non un obiettivo automatico. Occorre valutarli rispetto alle condizioni operative future e al livello desiderato di efficienza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.3, pagina PDF 86"
+    },
+    {
+      "id": "cdg-c08-q012",
+      "topicId": "cdg-c08-t03",
+      "question": "Quando è più appropriato lo standard pratico rispetto a quello ideale?",
+      "answer": "Quando serve valutare la prestazione corrente e stabilire obiettivi realistici per persone e reparti.",
+      "detail": "La metrica pratica consente di distinguere perdite fisiologiche da inefficienze evitabili; quella ideale è più adatta a misurare la distanza da un limite tecnico e a progettare innovazioni significative.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.3, pagina PDF 86"
+    },
+    {
+      "id": "cdg-c08-q013",
+      "topicId": "cdg-c08-t04",
+      "question": "Quali sono le cinque funzioni principali dello standard costing?",
+      "answer": "Programmazione, controllo, motivazione, semplificazione contabile e normalizzazione dei costi.",
+      "detail": "Il sistema non è soltanto un metodo per calcolare varianze: traduce i piani in fabbisogni, orienta le persone e permette di confrontare dati produttivi ed economici con un riferimento stabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.4, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q014",
+      "topicId": "cdg-c08-t04",
+      "question": "Come favoriscono la programmazione le schede dei costi standard?",
+      "answer": "Trasformano il volume pianificato in fabbisogni analitici di materiali, ore lavoro, energia e capacità produttiva.",
+      "detail": "Acquisti, produzione e risorse umane possono così pianificare coerentemente le attività. Se il volume cambia, il fabbisogno variabile standard viene ricalcolato in modo esplicito.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.4, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q015",
+      "topicId": "cdg-c08-t04",
+      "question": "Qual è la funzione di controllo degli standard?",
+      "answer": "Confrontare il consumo autorizzato per la produzione effettiva con il consuntivo e individuare scostamenti rilevanti e controllabili.",
+      "detail": "Il confronto a volume omogeneo è essenziale: altrimenti uno scostamento attribuito al reparto può derivare soltanto da un livello di attività differente dal programmato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.4, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q016",
+      "topicId": "cdg-c08-t04",
+      "question": "Quali condizioni rendono motivante l’utilizzo degli standard?",
+      "answer": "Obiettivi realistici, eventualmente negoziati, e valutazione integrata con sicurezza, qualità e puntualità delle consegne.",
+      "detail": "Obiettivi impossibili o ridotti alla mera minimizzazione dei costi possono indurre scorciatoie, peggioramenti qualitativi e disaffezione. La motivazione deve essere coerente con gli obiettivi aziendali complessivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.4, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q017",
+      "topicId": "cdg-c08-t04",
+      "question": "Perché gli standard semplificano la contabilità industriale?",
+      "answer": "Consentono valorizzazioni a costi predefiniti, velocizzando rilevazioni industriali e preventivi.",
+      "detail": "La semplificazione non elimina gli scostamenti fra valori standard ed effettivi: questi devono essere registrati, analizzati e riconciliati, soprattutto se incidono sulla valorizzazione delle rimanenze.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.4, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q018",
+      "topicId": "cdg-c08-t04",
+      "question": "In che cosa consiste la funzione di normalizzazione dei costi?",
+      "answer": "Usare tariffe standard per confrontare i consumi fisici senza confonderli con oscillazioni momentanee dei prezzi.",
+      "detail": "Se il prezzo di una risorsa aumenta, la misurazione dell’efficienza tecnica va mantenuta distinta dal rincaro di acquisto. Lo standard gestionale non sostituisce comunque le regole contabili delle rimanenze.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.4, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q019",
+      "topicId": "cdg-c08-t05",
+      "question": "Come si collegano costo standard unitario, budget originario e budget flessibile?",
+      "answer": "Per un fattore variabile: Cs = Ps×qs, budget originario = Cs×Vp, budget flessibile = Cs×Ve.",
+      "detail": "Il prezzo standard e il fabbisogno unitario formano il costo standard per output; applicandolo al volume programmato o realizzato si ottengono due diverse basi per leggere gli scostamenti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_s=P_s q_s",
+          "meaning": "Costo standard unitario."
+        },
+        {
+          "latex": "CB=C_s V_p",
+          "meaning": "Budget originario."
+        },
+        {
+          "latex": "CF=C_s V_e",
+          "meaning": "Budget flessibile."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.5, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q020",
+      "topicId": "cdg-c08-t05",
+      "question": "Quale differenza esiste tra budget originario e budget flessibile?",
+      "answer": "Il primo applica gli standard al volume programmato, il secondo al volume effettivamente prodotto.",
+      "detail": "L’uso di un budget flessibile permette di isolare l’efficienza dalle oscillazioni quantitative della produzione e impedisce di confrontare consumi associati a livelli di output diversi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.5, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q021",
+      "topicId": "cdg-c08-t05",
+      "question": "Perché il costo consuntivo non coincide necessariamente con il budget flessibile?",
+      "answer": "Perché le quantità effettive di fattori e i loro prezzi possono differire da quelli standard.",
+      "detail": "Il budget flessibile mantiene prezzi e consumi tecnici standard per l’output reale. Il costo consuntivo moltiplica invece quantità di input realmente utilizzate per prezzi effettivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.5, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q022",
+      "topicId": "cdg-c08-t05",
+      "question": "A quale esigenza risponde il budget dei costi rispetto alla scheda standard?",
+      "answer": "Traduce la regola tecnica per unità in valori complessivi riferiti a un programma di attività.",
+      "detail": "La scheda è un elemento di costruzione del budget: da sola non determina il volume di output da realizzare né tutte le componenti del programma aziendale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.5, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q023",
+      "topicId": "cdg-c08-t06",
+      "question": "Che cosa rappresentano Vp e Ve nella notazione del Capitolo 8?",
+      "answer": "Vp è il volume di prodotto programmato; Ve è il volume di prodotto effettivamente realizzato.",
+      "detail": "Sono grandezze dell’output, espresse per esempio in pezzi, kg di prodotto o servizi. Vanno distinte dagli input materiali o dalle ore impiegate nella produzione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.6, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q024",
+      "topicId": "cdg-c08-t06",
+      "question": "Che cosa rappresentano Ps e Pe e quali unità possono avere?",
+      "answer": "Ps indica prezzo o tariffa standard di un input; Pe il corrispondente prezzo o tariffa effettiva.",
+      "detail": "Per le materie si possono esprimere in €/kg e per la manodopera in €/ora. Sono valori monetari per unità di risorsa, non prezzi di vendita dell’output.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.6, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q025",
+      "topicId": "cdg-c08-t06",
+      "question": "In che cosa differiscono qs, qe, Qsa e Qei?",
+      "answer": "qs e qe sono consumi di input per unità di output; Qsa e Qei sono quantità complessive autorizzate ed effettivamente impiegate.",
+      "detail": "Per passare dalle quantità unitarie ai totali occorre moltiplicare per Ve: Qsa = qs×Ve e Qei = qe×Ve. Confondere qs e Qsa altera sistematicamente le varianze.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Q_{sa}=q_sV_e",
+          "meaning": "Totale input standard ammesso per output effettivo."
+        },
+        {
+          "latex": "Q_{ei}=q_eV_e",
+          "meaning": "Totale input effettivamente impiegato."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.6, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q026",
+      "topicId": "cdg-c08-t06",
+      "question": "Come si calcolano costo standard unitario e costo effettivo totale?",
+      "answer": "Cs = Ps×qs e CE = Pe×Qei, purché le unità di misura siano coerenti.",
+      "detail": "Il primo è un valore monetario per unità di output, il secondo un totale monetario del fattore consumato. Per esempio €/kg-input × kg-input/pezzo produce €/pezzo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_s=P_sq_s",
+          "meaning": "Euro per unità di output."
+        },
+        {
+          "latex": "CE=P_eQ_{ei}",
+          "meaning": "Costo totale effettivo del fattore."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.6, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q027",
+      "topicId": "cdg-c08-t06",
+      "question": "Perché convertire correttamente minuti e ore è essenziale nel costo standard della MOD?",
+      "answer": "Perché una tariffa espressa in €/ora può essere moltiplicata soltanto per tempi espressi in ore.",
+      "detail": "Un tempo di 15 minuti corrisponde a 0,25 ore. Moltiplicare 15 direttamente per una tariffa oraria comporterebbe un errore di un fattore 60.",
+      "example": "15 minuti × 16 €/ora = (15/60) × 16 = 4 €/pezzo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.6, pagina PDF 87"
+    },
+    {
+      "id": "cdg-c08-q028",
+      "topicId": "cdg-c08-t07",
+      "question": "Quali dati contiene una scheda dei costi standard per unità di prodotto?",
+      "answer": "Per ogni fattore: tipologia, quantità fisica standard, prezzo o tariffa standard e costo unitario conseguente.",
+      "detail": "La standard cost card connette distinta base, ciclo di lavoro, pianificazione e contabilità industriale. Permette di aggiornare separatamente le componenti che generano il costo standard dell’output.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.7, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q029",
+      "topicId": "cdg-c08-t07",
+      "question": "Come si combinano nella scheda standard materiali, MOD, CIV e CIF?",
+      "answer": "Si sommano i costi standard unitari dei materiali, della manodopera, degli indiretti variabili e della quota di indiretti fissi.",
+      "detail": "Ogni componente richiede una base coerente: kg di materia, ore di manodopera, tariffa CIV per driver e coefficiente fisso costruito rispetto alla capacità normale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.7, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q030",
+      "topicId": "cdg-c08-t07",
+      "question": "Che cosa mostra l’esempio didattico di standard cost card da 27 € per unità?",
+      "answer": "Un prodotto che utilizza 2 kg di materiale, 0,5 ore di lavoro e 0,5 ore di attività di reparto può avere un costo standard pieno di 27 €.",
+      "detail": "Il manuale sottolinea che i costi variabili indiretti seguono un driver di ore MOD e che la quota fissa dipende da budget e capacità normale. Il valore totale non basta senza la scomposizione per fattori.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.7, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q031",
+      "topicId": "cdg-c08-t07",
+      "question": "Perché è importante aggiornare separatamente le componenti della scheda standard?",
+      "answer": "Perché cambiare il prezzo di una risorsa non equivale a modificare il consumo tecnico necessario o la capacità assorbita.",
+      "detail": "Separando standard fisici e monetari è possibile analizzare le cause dei cambiamenti, rivedere un parametro specifico e preservare la comparabilità degli altri fattori.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.7, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q032",
+      "topicId": "cdg-c08-t08",
+      "question": "Quali elementi concorrono al prezzo standard delle materie prime?",
+      "answer": "Prezzo unitario atteso, sconti pertinenti e oneri accessori direttamente imputabili all’acquisto, come trasporto e imballaggi.",
+      "detail": "Lo standard economico può basarsi su contratti, listini, ordini aperti e previsioni di mercato. Deve riferirsi alla materia con qualità e specifiche previste dal processo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.8, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q033",
+      "topicId": "cdg-c08-t08",
+      "question": "Come deve essere definita la tariffa standard della manodopera diretta?",
+      "answer": "Come costo orario aziendale coerente con la finalità gestionale, comprendendo gli oneri pertinenti oltre alla paga netta.",
+      "detail": "La base delle ore (produttive, lavorate o retribuite) deve essere coerente con il numeratore. Ferie, contributi e tempi fisiologici non possono essere ignorati senza distorcere il benchmark.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.8, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q034",
+      "topicId": "cdg-c08-t08",
+      "question": "Perché prezzo standard e qualità del fattore devono essere definiti insieme?",
+      "answer": "Perché un prezzo più basso può riflettere una risorsa di qualità inferiore e provocare consumi, scarti o tempi maggiori.",
+      "detail": "Un risparmio nell’acquisto è favorevole solo se interpretato con le conseguenze produttive. Prezzo dei materiali ed efficienza fisica sono misure complementari, non sostitutive.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.8, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q035",
+      "topicId": "cdg-c08-t08",
+      "question": "Quali fonti operative sono utilizzabili per costruire un prezzo standard ragionevole?",
+      "answer": "Condizioni contrattuali, listini, ordini aperti e proiezioni del mercato, adattati alle specifiche tecniche.",
+      "detail": "La stima va resa esplicita e riferita al periodo di validità. L’obiettivo non è scegliere automaticamente il prezzo storico o quello minimo osservato, ma un prezzo coerente con le condizioni attese.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.8, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q036",
+      "topicId": "cdg-c08-t09",
+      "question": "Come si ricava la quantità lorda standard di materiale da un fabbisogno netto e da una resa?",
+      "answer": "Si divide la quantità netta incorporata nel prodotto per la resa ordinaria espressa in forma decimale.",
+      "detail": "La quantità lorda include lo sfrido fisiologico previsto, non perdite anomale. Per 0,475 litri netti e resa 95%, il prelievo standard è 0,50 litri.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "q_{s,\\,lordo}=q_{netto}/\\text{resa}",
+          "meaning": "La resa va espressa come frazione, per esempio 0,95."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.9, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q037",
+      "topicId": "cdg-c08-t09",
+      "question": "Come si determina il tempo standard lordo della manodopera da un tempo tecnico?",
+      "answer": "Si divide il tempo tecnico per il coefficiente di efficienza fisiologica previsto.",
+      "detail": "Se occorrono 8 minuti tecnici e la quota utile ordinaria è l’80%, il tempo standard lordo diventa 10 minuti, cioè un sesto d’ora.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "t_s=t_{tecnico}/\\eta",
+          "meaning": "Per efficienza prevista η, espressa in forma decimale."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.9, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q038",
+      "topicId": "cdg-c08-t09",
+      "question": "Perché gli standard fisici includono perdite fisiologiche ma non sprechi anomali?",
+      "answer": "Per rappresentare condizioni normali e raggiungibili, lasciando agli scostamenti il compito di segnalare inefficienze evitabili.",
+      "detail": "Uno standard che includesse anche le anomalie ricorrenti normalizzerebbe gli sprechi e ridurrebbe l’utilità del controllo. All’opposto, uno standard senza alcuna perdita sarebbe spesso ideale e poco praticabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.9, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q039",
+      "topicId": "cdg-c08-t09",
+      "question": "Perché possono servire standard differenti per reparti o livelli qualitativi?",
+      "answer": "Perché tecnologia, complessità dell’output e profilo dei consumi possono cambiare significativamente tra lavorazioni.",
+      "detail": "Nelle produzioni multistadio o continue, usare una media unica senza segmentare i processi può mascherare le cause degli scostamenti e attribuire inefficienze a reparti non responsabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.9, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q040",
+      "topicId": "cdg-c08-t10",
+      "question": "Come si calcolano quantità e prezzo standard del latte nell’esempio Arcari 5.1?",
+      "answer": "Ps = 1,10 €/l includendo il 10% di trasporto; qs = 0,50 l/kg di crema dopo la correzione per resa del 95%.",
+      "detail": "Il prezzo base è 1,00 €/l, il fabbisogno netto è 0,475 l per kg di crema. La combinazione produce 0,55 € per kg di crema.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "P_s=1,00\\times1,10=1,10\\,€/l",
+          "meaning": "Prezzo standard del latte con trasporto."
+        },
+        {
+          "latex": "q_s=0,475/0,95=0,50\\,l/kg",
+          "meaning": "Quantità lorda standard."
+        },
+        {
+          "latex": "C_s=0,50\\times1,10=0,55\\,€/kg",
+          "meaning": "Costo standard del latte per kg di crema."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.10, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q041",
+      "topicId": "cdg-c08-t10",
+      "question": "Come si calcolano quantità e prezzo standard della farina nell’esempio Arcari 5.1?",
+      "answer": "Ps = 0,48 €/kg; qs = 0,125 kg/kg di crema; costo standard = 0,06 € per kg di crema.",
+      "detail": "Il prezzo base di 0,40 €/kg è maggiorato del 20%, mentre il fabbisogno netto di 0,115 kg è corretto per una resa del 92%.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "P_s=0,40\\times1,20=0,48",
+          "meaning": "Prezzo standard della farina."
+        },
+        {
+          "latex": "q_s=0,115/0,92=0,125",
+          "meaning": "Quantità lorda standard."
+        },
+        {
+          "latex": "C_s=0,125\\times0,48=0,06",
+          "meaning": "Costo standard per kg di crema."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.10, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q042",
+      "topicId": "cdg-c08-t10",
+      "question": "Quali sono i costi unitari di zucchero e uova nel caso Arcari 5.1?",
+      "answer": "Zucchero: 0,18 €/kg di crema; uova: 0,88 €/kg di crema.",
+      "detail": "Lo zucchero richiede 0,240 kg a 0,75 €/kg; le uova sono quattro al costo unitario di 0,22 €. I due importi appartengono alla scheda diretta per kg di crema.",
+      "example": "Zucchero: 0,240×0,75=0,18 €. Uova: 4×0,22=0,88 €.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.10, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q043",
+      "topicId": "cdg-c08-t10",
+      "question": "Qual è il costo standard della manodopera nell’esempio Arcari 5.1?",
+      "answer": "1,65 € per kg di crema, calcolati da 10 minuti di MOD e tariffa standard di 9,90 €/ora.",
+      "detail": "I 10 minuti devono essere convertiti in 10/60 ore. Moltiplicare il valore 10 direttamente per 9,90 sarebbe un errore di unità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{MOD}=(10/60)\\times9,90=1,65\\,\\text{€}",
+          "meaning": "Conversione da minuti a ore prima della moltiplicazione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.10, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q044",
+      "topicId": "cdg-c08-t10",
+      "question": "Qual è il costo standard diretto complessivo di 1 kg di crema nel caso Arcari 5.1?",
+      "answer": "3,32 €/kg di crema, ottenuti sommando latte 0,55, farina 0,06, zucchero 0,18, uova 0,88 e MOD 1,65.",
+      "detail": "L’esempio unisce prezzi di acquisto corretti per accessori, quantità corrette per resa e tempi convertiti in ore. Il costo diretto risulta da una scheda multicomponente verificabile.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "0,55+0,06+0,18+0,88+1,65=3,32\\,\\text{€/kg}",
+          "meaning": "Somma dei cinque costi diretti standard."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.10, pagina PDF 88"
+    },
+    {
+      "id": "cdg-c08-q045",
+      "topicId": "cdg-c08-t11",
+      "question": "Che cosa significa costruire uno standard analitico a due livelli per un costo indiretto?",
+      "answer": "Separare consumo della risorsa per unità di driver e consumo del driver per unità di prodotto, valorizzando entrambi con il prezzo della risorsa.",
+      "detail": "Il procedimento ricostruisce un nesso di utilizzo più specifico del semplice riparto arbitrario della spesa comune per unità di output.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{s,ind}=P_{s,risorsa}\\times q_{s,risorsa/driver}\\times q_{s,driver/output}",
+          "meaning": "Standard monetario tramite due passaggi fisici."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.11, pagina PDF 89"
+    },
+    {
+      "id": "cdg-c08-q046",
+      "topicId": "cdg-c08-t11",
+      "question": "Come si calcola il costo standard di energia con 2 kWh/ora macchina, 0,40 ore/pezzo e 0,25 €/kWh?",
+      "answer": "Si ottengono 0,80 kWh per pezzo e un costo standard di 0,20 € per pezzo.",
+      "detail": "Prima si converte il consumo specifico per ora macchina in consumo per pezzo; poi si applica il prezzo dell’energia. Questo mantiene distinta l’efficienza energetica della macchina dall’uso delle ore macchina.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.11, pagina PDF 89"
+    },
+    {
+      "id": "cdg-c08-q047",
+      "topicId": "cdg-c08-t11",
+      "question": "Quali due inefficienze è possibile distinguere grazie allo standard analitico dei costi indiretti?",
+      "answer": "L’inefficienza nel consumo della risorsa per unità di driver e l’inefficienza nell’impiego del driver per unità di prodotto.",
+      "detail": "Per esempio una macchina può consumare più kWh per ora, oppure un pezzo può richiedere più ore macchina del previsto. Sono fenomeni diversi che richiedono interventi distinti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.11, pagina PDF 89"
+    },
+    {
+      "id": "cdg-c08-q048",
+      "topicId": "cdg-c08-t11",
+      "question": "In quale relazione si trova lo standard analitico degli indiretti rispetto a centri di costo e ABC?",
+      "answer": "Può usare driver e relazioni causali analoghe ai centri di costo e all’ABC, ma mira a fissare consumi standard.",
+      "detail": "Non richiede di ricostruire l’intera mappa delle attività: serve una misura affidabile e sostenibile dei consumi della risorsa. Il costo delle rilevazioni deve essere proporzionato al valore delle informazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.11, pagina PDF 89"
+    },
+    {
+      "id": "cdg-c08-q049",
+      "topicId": "cdg-c08-t12",
+      "question": "Quale funzione di costo si può stimare statisticamente per gli indiretti?",
+      "answer": "CIT = CIF + civ×Q, con componente fissa CIF e coefficiente variabile civ riferito al volume o driver Q.",
+      "detail": "Il modello nasce da osservazioni di costi e attività ed è uno strumento di costruzione degli standard. Occorre verificare omogeneità dei dati e adeguatezza del driver.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CIT=CIF+civ\\cdot Q",
+          "meaning": "Costi indiretti totali come somma di parte fissa e variabile."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.12, pagina PDF 89"
+    },
+    {
+      "id": "cdg-c08-q050",
+      "topicId": "cdg-c08-t12",
+      "question": "Quali metodi di stima degli indiretti richiama il Capitolo 8?",
+      "answer": "Perequazione grafica, metodo massimo–minimo e regressione ai minimi quadrati.",
+      "detail": "Questi metodi sono stati introdotti nel Capitolo 4; qui il loro risultato è impiegato per individuare parametri standard. Non sono necessariamente equivalenti perché utilizzano diversamente le osservazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.12, pagina PDF 89"
+    },
+    {
+      "id": "cdg-c08-q051",
+      "topicId": "cdg-c08-t12",
+      "question": "Quale funzione di costo risulta dal metodo massimo–minimo nel caso Arcari 5.2?",
+      "answer": "CIT = 5.800 + 2,60Q; per Q = 8.000 il costo previsto è 26.600 €.",
+      "detail": "Dalle osservazioni Q=2.000, CIT=11.000 € e Q=7.000, CIT=24.000 € si ricavano coefficiente variabile 2,60 €/unità e quota fissa 5.800 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "civ=(24.000-11.000)/(7.000-2.000)=2,60",
+          "meaning": "Coefficiente variabile high-low."
+        },
+        {
+          "latex": "CIF=24.000-2,60\\times7.000=5.800",
+          "meaning": "Intercept fisso."
+        },
+        {
+          "latex": "CIT(8.000)=26.600",
+          "meaning": "Previsione al volume richiesto."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.12, pagina PDF 89"
+    },
+    {
+      "id": "cdg-c08-q052",
+      "topicId": "cdg-c08-t12",
+      "question": "Perché l’Arcari 5.2 fornisce previsioni diverse con high–low e minimi quadrati?",
+      "answer": "Perché high–low considera due punti estremi; la regressione utilizza tutte le osservazioni e stima parametri differenti.",
+      "detail": "Il manuale riporta CIT=5.800+2,60Q per high–low e CIT=4.990+2,743Q per minimi quadrati: a 8.000 unità producono 26.600 € e 26.934 €.",
+      "example": "Le due formule non sono contraddittorie: hanno basi statistiche di stima diverse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.12, pagina PDF 89"
+    },
+    {
+      "id": "cdg-c08-q053",
+      "topicId": "cdg-c08-t12",
+      "question": "Perché costruire standard separati per reparto può migliorare il controllo?",
+      "answer": "Perché reparti con tecnologie, saturazione e personale diversi possono presentare consumi e tariffe strutturalmente differenti.",
+      "detail": "Una media aggregata rischia di mascherare le ragioni del costo e rendere impossibile l’attribuzione delle leve controllabili. Il livello utile di osservazione è quello in cui si può governare l’efficienza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.12, pagina PDF 89"
+    },
+    {
+      "id": "cdg-c08-q054",
+      "topicId": "cdg-c08-t13",
+      "question": "Che cosa è il budget flessibile e perché è utile nel controllo dei costi variabili?",
+      "answer": "È il costo che sarebbe stato sostenuto applicando standard unitari al volume effettivamente prodotto.",
+      "detail": "Consente di confrontare consuntivi e standard a parità di output, separando la variazione dovuta alla produzione dalla variazione di consumi fisici e prezzi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CF=P_s q_s V_e",
+          "meaning": "Budget flessibile del fattore variabile."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.13, pagina PDF 89"
+    },
+    {
+      "id": "cdg-c08-q055",
+      "topicId": "cdg-c08-t13",
+      "question": "Come si legge l’esempio del budget 100.000 €, produzione 9.000 e costo effettivo 90.720 €?",
+      "answer": "Il budget flessibile è 90.000 €; rispetto al budget originario il risparmio apparente è 9.280 €, ma a parità di produzione vi è un maggior costo di 720 €.",
+      "detail": "Il budget originario era 10.000 pezzi × 2 kg × 5 €/kg. I 1.000 pezzi in meno valgono 10.000 € di effetto volume; l’efficienza/prezzo sul volume effettivo genera −720 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "100.000-90.720=+9.280",
+          "meaning": "Differenza budget originario–consuntivo."
+        },
+        {
+          "latex": "90.000-90.720=-720",
+          "meaning": "Differenza budget flessibile–consuntivo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.13, pagina PDF 89"
+    },
+    {
+      "id": "cdg-c08-q056",
+      "topicId": "cdg-c08-t13",
+      "question": "Perché il budget totale dei costi fissi normalmente non viene flessibilizzato con i volumi?",
+      "answer": "Perché entro l’intervallo rilevante il costo fisso complessivo programmato rimane costante.",
+      "detail": "La quota fissa imputata a ogni pezzo dipende dal volume, ma il budget di spesa non cresce o diminuisce automaticamente per ogni unità prodotta in più o in meno.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.13, pagina PDF 89"
+    },
+    {
+      "id": "cdg-c08-q057",
+      "topicId": "cdg-c08-t13",
+      "question": "Che cosa permette di distinguere il confronto budget originario–flessibile–consuntivo?",
+      "answer": "L’effetto di variazione dei volumi dal divario dovuto all’uso delle risorse e alle loro condizioni di costo.",
+      "detail": "Un budget inferiore al consuntivo non rappresenta necessariamente efficienza o inefficienza: prima bisogna isolare il livello di attività sul quale la spesa si è generata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.13, pagina PDF 89"
+    },
+    {
+      "id": "cdg-c08-q058",
+      "topicId": "cdg-c08-t14",
+      "question": "Qual è la convenzione dei segni utilizzata nel Capitolo 8 per gli scostamenti di costo?",
+      "answer": "Scostamento = standard o budget meno effettivo; positivo è favorevole, negativo è sfavorevole.",
+      "detail": "Un valore positivo indica un costo inferiore al riferimento, mentre un valore negativo indica un aggravio. Esistono manuali con segno opposto: non bisogna cambiare convenzione durante un esercizio.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S=C_{standard/budget}-C_{effettivo}",
+          "meaning": "Un risparmio ha segno positivo per i costi."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.14, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q059",
+      "topicId": "cdg-c08-t14",
+      "question": "Perché uno scostamento favorevole di costo non dimostra da solo una performance migliore?",
+      "answer": "Perché il risparmio può derivare da peggioramenti qualitativi, tagli di manutenzione o attività produttiva inferiore.",
+      "detail": "La valutazione va completata con risultati commerciali, produttività, sicurezza e qualità. Il segno numerico è favorevole rispetto alla misura economica scelta, non automaticamente alla strategia aziendale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.14, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q060",
+      "topicId": "cdg-c08-t14",
+      "question": "Perché uno scostamento di volume negativo sui costi variabili non implica inefficienza?",
+      "answer": "Può nascere semplicemente da una produzione maggiore di quella programmata, che consuma più input a standard invariati.",
+      "detail": "Per capire la convenienza dell’aumento di attività è necessario considerare anche vendite e margine di contribuzione, non la sola spesa variabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.14, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q061",
+      "topicId": "cdg-c08-t14",
+      "question": "Come deve essere interpretato uno scostamento favorevole di volume se si produce meno?",
+      "answer": "Come minore spesa dovuta al minor output, non automaticamente come risparmio per maggiore efficienza.",
+      "detail": "Il volume inferiore richiede meno fattori e riduce i costi variabili a parità di standard. Può contemporaneamente ridurre ricavi o generare sottoutilizzo della capacità produttiva.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.14, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q062",
+      "topicId": "cdg-c08-t15",
+      "question": "Quali sono i quattro importi A, B, C e D nel ponte delle varianze dei costi variabili?",
+      "answer": "A = Ps×qs×Vp, B = Ps×qs×Ve, C = Ps×Qei, D = Pe×Qei.",
+      "detail": "A è budget originario, B budget flessibile, C input effettivamente impiegati valorizzati al prezzo standard, D costo effettivo. La successione modifica un elemento alla volta.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "A=P_sq_sV_p",
+          "meaning": "Budget iniziale."
+        },
+        {
+          "latex": "B=P_sq_sV_e",
+          "meaning": "Budget flessibile."
+        },
+        {
+          "latex": "C=P_sQ_{ei}",
+          "meaning": "Input effettivo a prezzo standard."
+        },
+        {
+          "latex": "D=P_eQ_{ei}",
+          "meaning": "Costo consuntivo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.15, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q063",
+      "topicId": "cdg-c08-t15",
+      "question": "Quali passaggi del ponte A→B→C→D corrispondono a volume, efficienza e prezzo?",
+      "answer": "A−B misura il volume, B−C misura l’efficienza e C−D misura il prezzo; A−D è il globale.",
+      "detail": "Il passaggio A→B modifica l’output; B→C modifica i consumi fisici di input; C→D modifica soltanto il prezzo del fattore. La decomposizione evita sovrapposizioni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_g=(A-B)+(B-C)+(C-D)=A-D",
+          "meaning": "Identità telescopica di quadratura."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.15, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q064",
+      "topicId": "cdg-c08-t15",
+      "question": "Qual è la formula complessiva per scomporre uno scostamento variabile in tre componenti?",
+      "answer": "Ps×qs×Vp − Pe×Qei = Ps×qs×(Vp−Ve) + Ps×(qs×Ve−Qei) + Qei×(Ps−Pe).",
+      "detail": "La prima componente è di volume, la seconda di efficienza e la terza di prezzo. Usando Qei nella terza si include automaticamente l’eventuale interazione prezzo–quantità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "P_sq_sV_p-P_eQ_{ei}=P_sq_s(V_p-V_e)+P_s(q_sV_e-Q_{ei})+Q_{ei}(P_s-P_e)",
+          "meaning": "Varianze volume, efficienza e prezzo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.15, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q065",
+      "topicId": "cdg-c08-t15",
+      "question": "Perché la catena A→B→C→D non richiede un effetto congiunto separato?",
+      "answer": "Perché lo scostamento di prezzo è calcolato sulla quantità effettiva, includendo la componente di interazione.",
+      "detail": "La scelta della base di quantità per lo scostamento di prezzo determina la scomposizione matematica. Cambiandola occorre aggiustare gli altri termini per conservare la quadratura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.15, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q066",
+      "topicId": "cdg-c08-t16",
+      "question": "Come si calcola lo scostamento globale di un fattore variabile?",
+      "answer": "Sg = Ps×qs×Vp − Pe×Qei, ossia costo di budget originario meno costo effettivo.",
+      "detail": "È un indicatore sintetico che include le conseguenze di volumi, efficienza e condizioni di acquisto. Non identifica quale fenomeno abbia determinato la differenza.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_g=P_sq_sV_p-P_eQ_{ei}",
+          "meaning": "Budget originario meno consuntivo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.16, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q067",
+      "topicId": "cdg-c08-t16",
+      "question": "Come si calcola lo scostamento di volume dei costi variabili?",
+      "answer": "Sv = Ps×qs×(Vp−Ve) = Cs×(Vp−Ve).",
+      "detail": "La componente mantiene invariato il costo standard unitario e varia soltanto il numero di prodotti. Non misura l’efficienza di consumo, ma una differenza di attività.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_v=C_s(V_p-V_e)",
+          "meaning": "Costo standard per variazione del volume."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.16, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q068",
+      "topicId": "cdg-c08-t16",
+      "question": "Che segno assume Sv quando il volume effettivo supera quello programmato?",
+      "answer": "Negativo per un costo variabile positivo, perché i fattori necessari aumentano con l’output.",
+      "detail": "Il segno sfavorevole è puramente contabile rispetto al budget di spesa iniziale; non permette di dire se la produzione aggiuntiva sia economicamente conveniente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.16, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q069",
+      "topicId": "cdg-c08-t16",
+      "question": "Perché uno scostamento globale nullo non implica assenza di problemi?",
+      "answer": "Perché varianze favorevoli e sfavorevoli di volume, prezzo ed efficienza possono compensarsi.",
+      "detail": "Un miglior prezzo d’acquisto può occultare un sovraconsumo rilevante, così come un calo dei volumi può nascondere peggioramenti dei processi. È sempre necessaria la scomposizione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.16, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q070",
+      "topicId": "cdg-c08-t17",
+      "question": "Che cosa si intende per quantità standard autorizzata Qsa?",
+      "answer": "È il totale degli input che sarebbero necessari secondo lo standard per produrre il volume effettivamente ottenuto.",
+      "detail": "Qsa non coincide con l’input di budget iniziale qs×Vp, salvo volumi uguali. Serve come base fisica corretta per la misura dell’efficienza.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Q_{sa}=q_s V_e",
+          "meaning": "Input ammesso al volume effettivo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.17, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q071",
+      "topicId": "cdg-c08-t17",
+      "question": "Qual è la formula dello scostamento di efficienza dei fattori variabili?",
+      "answer": "Seff = Ps×(Qsa−Qei) = Ps×(qs×Ve−Qei).",
+      "detail": "Confronta quantità di input autorizzata e quantità consumata, entrambe sul volume effettivo e valorizzate allo stesso prezzo standard. L’effetto di prezzo viene quindi escluso.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_{eff}=P_s(Q_{sa}-Q_{ei})",
+          "meaning": "Standard fisico meno input effettivo a prezzo standard."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.17, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q072",
+      "topicId": "cdg-c08-t17",
+      "question": "Che cosa segnala uno scostamento di efficienza negativo?",
+      "answer": "Un consumo effettivo di input superiore a quello standard autorizzato per la produzione realizzata.",
+      "detail": "Cause possibili sono scarti, guasti, materiale difettoso, cambi di processo, apprendistato, fermate o uno standard obsoleto. Occorre indagarle prima di attribuire responsabilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.17, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q073",
+      "topicId": "cdg-c08-t17",
+      "question": "Perché lo scostamento di efficienza si valorizza con Ps e non con Pe?",
+      "answer": "Per isolare l’uso fisico della risorsa dalle variazioni di prezzo dell’input.",
+      "detail": "Se si applicasse Pe al differenziale fisico, la componente assorbirebbe parte dell’effetto economico del prezzo, rompendo la scomposizione concordata nel ponte A→B→C→D.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.17, pagina PDF 90"
+    },
+    {
+      "id": "cdg-c08-q074",
+      "topicId": "cdg-c08-t18",
+      "question": "Qual è la formula dello scostamento di prezzo o tariffa?",
+      "answer": "Sprezzo = Qei×(Ps−Pe), cioè quantità effettiva di input per differenza tra prezzo standard ed effettivo.",
+      "detail": "Mantenere fissa la quantità Qei isola l’effetto delle condizioni economiche. Il prezzo effettivo maggiore dello standard genera un valore negativo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_{prezzo}=Q_{ei}(P_s-P_e)",
+          "meaning": "Varianza di prezzo nella scomposizione A→B→C→D."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.18, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q075",
+      "topicId": "cdg-c08-t18",
+      "question": "Perché, per la manodopera, si parla di scostamento di tariffa anziché di prezzo?",
+      "answer": "Perché il costo unitario riguarda una tariffa oraria influenzata da qualifica, contratti, straordinari e oneri.",
+      "detail": "L’equivalente dell’input fisico è il tempo di lavoro. La varianza di tariffa si calcola sulle ore effettivamente impiegate, mantenendo separate quelle in eccesso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.18, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q076",
+      "topicId": "cdg-c08-t18",
+      "question": "Perché la varianza prezzo su Qsa non coincide con quella su Qei?",
+      "answer": "Perché cambia la quantità sulla quale viene valorizzata la differenza di prezzo e può rendersi necessario un effetto congiunto.",
+      "detail": "Nel ponte A→B→C→D il riferimento corretto è Qei. Usare altri riferimenti può essere valido con una riconciliazione esplicita ma non mescolando le diverse formule.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.18, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q077",
+      "topicId": "cdg-c08-t18",
+      "question": "In quali condizioni una varianza prezzo materiali favorevole potrebbe richiedere un approfondimento?",
+      "answer": "Quando il prezzo minore è ottenuto comprando materiali peggiori che provocano scarti, rilavorazioni o ritardi.",
+      "detail": "Una variazione favorevole nel costo d’acquisto può essere associata a una varianza di efficienza negativa. I due fenomeni vanno esaminati insieme a qualità e produttività.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.18, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q078",
+      "topicId": "cdg-c08-t19",
+      "question": "Qual è l’identità di quadratura fondamentale per tre varianze dei costi variabili?",
+      "answer": "Scostamento globale = scostamento di volume + scostamento di efficienza + scostamento di prezzo.",
+      "detail": "La somma deve coincidere con budget originario meno costo effettivo. Se non coincide, almeno una base, unità, quantità o convenzione di segno è stata usata male.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_g=S_v+S_{eff}+S_{prezzo}",
+          "meaning": "Quadratura delle varianze."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.19, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q079",
+      "topicId": "cdg-c08-t19",
+      "question": "Quali errori tecnici vengono evidenziati dalla mancata quadratura?",
+      "answer": "Errori di segno, conversioni errate tra unità, confusione fra volumi previsti ed effettivi o uso di quantità diverse nella varianza prezzo.",
+      "detail": "La riconciliazione è necessaria anche quando le singole formule sembrano plausibili. Prima di interpretare i risultati occorre verificare i conti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.19, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q080",
+      "topicId": "cdg-c08-t19",
+      "question": "Come viene evitato il doppio conteggio dell’interazione prezzo–quantità?",
+      "answer": "Calcolando il differenziale di prezzo su tutta la quantità effettiva di input, compreso l’eventuale sovraconsumo.",
+      "detail": "Nella rappresentazione geometrica l’area di costo aggiuntivo è quantità per prezzo. La fascia dovuta al prezzo si estende alla quantità effettiva: non si aggiunge una seconda volta la zona di intersezione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.19, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q081",
+      "topicId": "cdg-c08-t20",
+      "question": "Quali sono i principali dati di volume del caso Arcari 5.3 Setter?",
+      "answer": "Volume programmato 28.000 unità e volume effettivo 30.000 unità.",
+      "detail": "La produzione aumenta di 2.000 unità. Gli scostamenti di volume di MP, MOD e CIV risultano quindi negativi nella convenzione di costo budget meno effettivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.20, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q082",
+      "topicId": "cdg-c08-t20",
+      "question": "Quali sono budget, consuntivo e globale delle materie prime nel caso Setter?",
+      "answer": "Budget MP 42.000 €, consuntivo 63.000 € e scostamento globale −21.000 €.",
+      "detail": "Lo standard è 3 m per unità a 0,50 €/m; l’effettivo è 3,5 m per unità a 0,60 €/m. La differenza comprende più produzione, sovraconsumo e rincaro.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "28.000\\times3\\times0,50=42.000",
+          "meaning": "Budget MP."
+        },
+        {
+          "latex": "30.000\\times3,5\\times0,60=63.000",
+          "meaning": "Consuntivo MP."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.20, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q083",
+      "topicId": "cdg-c08-t20",
+      "question": "Come si scompone lo scostamento MP del caso Setter?",
+      "answer": "Volume −3.000 €, efficienza −7.500 €, prezzo −10.500 €; somma −21.000 €.",
+      "detail": "La quantità autorizzata è 90.000 m e quella effettiva 105.000 m. Il prezzo standard è 0,50 €/m e quello effettivo 0,60 €/m.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_v=1,50(28.000-30.000)=-3.000",
+          "meaning": "Volume."
+        },
+        {
+          "latex": "S_{eff}=0,50(90.000-105.000)=-7.500",
+          "meaning": "Efficienza."
+        },
+        {
+          "latex": "S_p=105.000(0,50-0,60)=-10.500",
+          "meaning": "Prezzo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.20, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q084",
+      "topicId": "cdg-c08-t20",
+      "question": "Come si calcolano budget, consuntivo e globale MOD nel caso Setter?",
+      "answer": "Budget 84.000 €, consuntivo 110.000 €, scostamento globale −26.000 €.",
+      "detail": "La MOD standard è 15 minuti (0,25 h) a 12 €/h; quella effettiva è 20 minuti (1/3 h) a 11 €/h. Il minor costo orario non compensa le ore eccedenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.20, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q085",
+      "topicId": "cdg-c08-t20",
+      "question": "Qual è la scomposizione degli scostamenti MOD nel caso Setter?",
+      "answer": "Volume −6.000 €, efficienza −30.000 €, tariffa +10.000 €: globale −26.000 €.",
+      "detail": "Le ore autorizzate sono 7.500 e quelle effettive 10.000; si perde efficienza oraria ma la tariffa effettiva è inferiore a quella standard.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_v=3(28.000-30.000)=-6.000",
+          "meaning": "Volume."
+        },
+        {
+          "latex": "S_{eff}=12(7.500-10.000)=-30.000",
+          "meaning": "Efficienza."
+        },
+        {
+          "latex": "S_{tar}=10.000(12-11)=+10.000",
+          "meaning": "Tariffa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.20, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q086",
+      "topicId": "cdg-c08-t20",
+      "question": "Qual è la scomposizione dei CIV nel caso Setter?",
+      "answer": "Volume −2.000 €, efficienza −10.000 €, spesa +15.000 €; globale +3.000 €.",
+      "detail": "La tariffa standard è 4 €/h MOD; le ore standard autorizzate sono 7.500 e quelle effettive 10.000. I CIV effettivi sono 25.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_v=1(28.000-30.000)=-2.000",
+          "meaning": "Volume CIV."
+        },
+        {
+          "latex": "S_{eff}=4(7.500-10.000)=-10.000",
+          "meaning": "Ore CIV."
+        },
+        {
+          "latex": "S_{sp}=4\\times10.000-25.000=+15.000",
+          "meaning": "Spesa CIV."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.20, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q087",
+      "topicId": "cdg-c08-t20",
+      "question": "Qual è lo scostamento complessivo di Setter e quali fenomeni lo determinano?",
+      "answer": "Globale −44.000 €, composto da volume −11.000 €, efficienza −47.500 € e prezzo/spesa +14.500 €.",
+      "detail": "Budget complessivo 154.000 € e costo effettivo 198.000 €. L’inefficienza, soprattutto delle ore MOD, è il problema centrale e non viene annullata dai vantaggi di tariffe e CIV.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.20, pagina PDF 91"
+    },
+    {
+      "id": "cdg-c08-q088",
+      "topicId": "cdg-c08-t21",
+      "question": "Quali sono i volumi programmato ed effettivo del caso Arcari 5.4 Hortya?",
+      "answer": "Vp = 100.000 unità e Ve = 90.000 unità: la produzione effettiva è inferiore di 10.000 unità.",
+      "detail": "A differenza di Setter, in Hortya gli scostamenti di volume dei costi variabili sono favorevoli per il solo fatto che si produce meno; la performance va valutata anche rispetto alla domanda.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.21, pagina PDF 92"
+    },
+    {
+      "id": "cdg-c08-q089",
+      "topicId": "cdg-c08-t21",
+      "question": "Come si scompone lo scostamento delle MP nel caso Hortya?",
+      "answer": "Volume +20.000 €, efficienza −72.000 €, prezzo +31.500 €; scostamento globale −20.500 €.",
+      "detail": "I materiali standard sono 0,50 kg a 4 €/kg; gli effettivi 0,70 kg a 3,50 €/kg. Il prezzo di acquisto migliore non compensa il forte sovraconsumo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "20.000-72.000+31.500=-20.500\\,\\text{€}",
+          "meaning": "Quadratura MP Hortya."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.21, pagina PDF 92"
+    },
+    {
+      "id": "cdg-c08-q090",
+      "topicId": "cdg-c08-t21",
+      "question": "Come si scompone lo scostamento della MOD nel caso Hortya?",
+      "answer": "Volume +30.000 €, efficienza −54.000 €, tariffa −18.000 €; globale −42.000 €.",
+      "detail": "Lo standard è 10 minuti a 18 €/h, l’effettivo 12 minuti a 19 €/h. La minor produzione produce un effetto volume favorevole ma la produttività e la tariffa peggiorano.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.21, pagina PDF 92"
+    },
+    {
+      "id": "cdg-c08-q091",
+      "topicId": "cdg-c08-t21",
+      "question": "Come si scompone lo scostamento dei CIV nel caso Hortya?",
+      "answer": "Volume +5.000 €, efficienza −9.000 €, spesa +6.000 €; globale +2.000 €.",
+      "detail": "La tariffa standard è 3 €/h MOD e i CIV effettivi sono 48.000 €. Il risultato favorevole complessivo è la combinazione di riduzione volumi e risparmio di spesa nonostante il peggioramento delle ore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.21, pagina PDF 92"
+    },
+    {
+      "id": "cdg-c08-q092",
+      "topicId": "cdg-c08-t21",
+      "question": "Qual è la quadratura aggregata del caso Hortya?",
+      "answer": "Volume +55.000 €, efficienza −135.000 €, prezzo/spesa +19.500 €; globale −60.500 €.",
+      "detail": "Il risparmio apparente collegato alla minor produzione maschera un’enorme inefficienza: occorre esaminare gli input e non fermarsi al totale di spesa.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "55.000-135.000+19.500=-60.500\\,\\text{€}",
+          "meaning": "Quadratura aggregata Hortya."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.21, pagina PDF 92"
+    },
+    {
+      "id": "cdg-c08-q093",
+      "topicId": "cdg-c08-t21",
+      "question": "Quale insegnamento interpretativo emerge dal confronto fra Setter e Hortya?",
+      "answer": "Il segno dello scostamento di volume riflette la direzione del volume prodotto, non un giudizio autonomo sull’efficienza.",
+      "detail": "In Setter la produzione cresce, in Hortya diminuisce. In entrambi i casi soltanto la separazione di volume, efficienza e prezzo evidenzia le cause e impedisce conclusioni erronee.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.21, pagina PDF 92"
+    },
+    {
+      "id": "cdg-c08-q094",
+      "topicId": "cdg-c08-t22",
+      "question": "Quando si può misurare la varianza di prezzo dei materiali?",
+      "answer": "Al momento dell’acquisto oppure al momento del consumo, con basi quantitative differenti.",
+      "detail": "La rilevazione sugli acquisti responsabilizza tempestivamente l’approvvigionamento; quella sui consumi ricostruisce il costo produttivo del periodo. Coincidono solo se quantità comprata e utilizzata sono uguali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.22, pagina PDF 92"
+    },
+    {
+      "id": "cdg-c08-q095",
+      "topicId": "cdg-c08-t22",
+      "question": "Quali sono le varianze di prezzo all’acquisto e al consumo nell’esempio dei 10.000 kg?",
+      "answer": "Prezzo all’acquisto −5.000 € su 10.000 kg; prezzo al consumo −4.250 € su 8.500 kg.",
+      "detail": "Il prezzo standard è 4 €/kg e l’effettivo 4,50 €/kg. I 1.500 kg non utilizzati conservano un differenziale di −750 € da riconciliare con il magazzino.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "10.000(4-4,5)=-5.000",
+          "meaning": "Varianza prezzo su acquisti."
+        },
+        {
+          "latex": "8.500(4-4,5)=-4.250",
+          "meaning": "Varianza prezzo su consumi."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.22, pagina PDF 92"
+    },
+    {
+      "id": "cdg-c08-q096",
+      "topicId": "cdg-c08-t22",
+      "question": "Come si calcola la varianza di impiego nell’esempio dei materiali acquistati a 4,50 €/kg?",
+      "answer": "La quantità standard autorizzata è 8.000 kg e l’effettiva 8.500 kg; Seff = −2.000 €.",
+      "detail": "Lo scostamento di quantità si valorizza al prezzo standard di 4 €/kg: (8.000−8.500)×4. Combinato con la varianza prezzo sul consumo (−4.250 €) dà −6.250 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_{eff}=4(8.000-8.500)=-2.000\\,\\text{€}",
+          "meaning": "Varianza di impiego del periodo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.22, pagina PDF 92"
+    },
+    {
+      "id": "cdg-c08-q097",
+      "topicId": "cdg-c08-t22",
+      "question": "Perché è scorretto sommare prezzo su tutti gli acquisti e impiego del solo periodo?",
+      "answer": "Perché includerebbe il prezzo differenziale delle quantità acquistate ma non ancora consumate.",
+      "detail": "Nell’esempio −5.000 € di prezzo su acquisti più −2.000 € di impiego darebbe −7.000 €, ma il costo produttivo del periodo differisce di −6.250 €: i −750 € residui riguardano il magazzino.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.22, pagina PDF 92"
+    },
+    {
+      "id": "cdg-c08-q098",
+      "topicId": "cdg-c08-t23",
+      "question": "Quali sono le due varianze fondamentali della manodopera diretta?",
+      "answer": "Scostamento di tariffa e scostamento di efficienza delle ore di lavoro.",
+      "detail": "La tariffa misura l’effetto del costo orario effettivo rispetto allo standard; l’efficienza confronta le ore autorizzate per l’output reale con quelle realmente impiegate, a tariffa standard.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.23, pagina PDF 93"
+    },
+    {
+      "id": "cdg-c08-q099",
+      "topicId": "cdg-c08-t23",
+      "question": "Quali cause possono spiegare una varianza sfavorevole di tariffa MOD?",
+      "answer": "Straordinari, composizione delle qualifiche, condizioni contrattuali e oneri aziendali diversi da quelli standard.",
+      "detail": "La varianza di tariffa non deve essere attribuita automaticamente agli operatori: può dipendere da scelte retributive, programmazione dei turni o contratti stabiliti a livelli gestionali differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.23, pagina PDF 93"
+    },
+    {
+      "id": "cdg-c08-q100",
+      "topicId": "cdg-c08-t23",
+      "question": "Che cosa distingue ore retribuite e ore produttivamente lavorate?",
+      "answer": "Le prime sono ore pagate; le seconde sono il tempo effettivamente dedicato alla produzione.",
+      "detail": "Per esempio 1.000 ore retribuite con 80 ore inattive non sono equivalenti a 1.000 ore di lavorazione. La scelta della base va mantenuta coerente con lo standard e con la varianza di efficienza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.23, pagina PDF 93"
+    },
+    {
+      "id": "cdg-c08-q101",
+      "topicId": "cdg-c08-t23",
+      "question": "Perché una varianza specifica di tempo inattivo potrebbe duplicare lo scostamento di efficienza?",
+      "answer": "Se le ore inattive sono già incluse nelle ore considerate per l’efficienza, rilevarle di nuovo come costo separato può contarle due volte.",
+      "detail": "È necessaria una politica coerente di classificazione delle ore retribuite, produttive e inattive. Le basi delle varianze devono essere mutuamente riconciliabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.23, pagina PDF 93"
+    },
+    {
+      "id": "cdg-c08-q102",
+      "topicId": "cdg-c08-t23",
+      "question": "Come si valutano correttamente le responsabilità di un eccesso di ore MOD?",
+      "answer": "Indagando le cause effettive e le leve controllabili, incluse qualità dei materiali, guasti, cambi di programma e formazione.",
+      "detail": "Le ore eccedenti possono nascere da problemi imputabili ad acquisti, manutenzione o direzione, non soltanto da scarso rendimento dell’operatore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.23, pagina PDF 93"
+    },
+    {
+      "id": "cdg-c08-q103",
+      "topicId": "cdg-c08-t24",
+      "question": "Quali tre componenti spiegano lo scostamento complessivo dei costi indiretti variabili?",
+      "answer": "Variazione di volume del prodotto, efficienza del driver e spesa effettiva per unità di driver.",
+      "detail": "Il driver è spesso rappresentato da ore MOD oppure ore macchina. L’analisi separa la maggiore produzione, l’uso eccessivo del driver e il prezzo complessivo del pool.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§8.20 — Setter",
+        "§8.25 — Standard propri delle risorse"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.24, pagina PDF 93"
+    },
+    {
+      "id": "cdg-c08-q104",
+      "topicId": "cdg-c08-t24",
+      "question": "Quali formule si usano per gli scostamenti CIV basati sulle ore?",
+      "answer": "Volume = r×hstd×(Vp−Ve); efficienza = r×(Hsa−He); spesa = r×He−CIV effettivi.",
+      "detail": "La tariffa r è il costo standard variabile per ora di driver. Hsa sono le ore standard autorizzate per Ve, mentre He sono le ore realmente rilevate.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_v=r h_{std}(V_p-V_e)",
+          "meaning": "Volume CIV."
+        },
+        {
+          "latex": "S_{eff}=r(H_{sa}-H_e)",
+          "meaning": "Efficienza del driver."
+        },
+        {
+          "latex": "S_{sp}=rH_e-CIV_{eff}",
+          "meaning": "Spesa del pool."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.24, pagina PDF 93"
+    },
+    {
+      "id": "cdg-c08-q105",
+      "topicId": "cdg-c08-t24",
+      "question": "Perché la varianza di spesa dei CIV non individua necessariamente una sola causa?",
+      "answer": "Perché il costo aggregato del pool può comprendere energia, manodopera indiretta, materiali di consumo e altri input.",
+      "detail": "Una tariffa aggregata favorevole può nascondere condizioni opposte fra le singole risorse. Per identificare la causa occorre analizzare i componenti del pool.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.24, pagina PDF 93"
+    },
+    {
+      "id": "cdg-c08-q106",
+      "topicId": "cdg-c08-t24",
+      "question": "Che cosa dimostra il caso Setter sui CIV e sull’efficienza delle ore?",
+      "answer": "Si può avere uno scostamento di spesa CIV positivo anche quando l’efficienza delle ore di lavoro peggiora.",
+      "detail": "Nel caso Setter l’efficienza CIV vale −10.000 € ma la spesa +15.000 €; l’effetto globale è favorevole di +3.000 €, includendo −2.000 € di volume.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.24, pagina PDF 93"
+    },
+    {
+      "id": "cdg-c08-q107",
+      "topicId": "cdg-c08-t25",
+      "question": "Che cosa distingue lo scostamento proprio di efficienza di una risorsa indiretta?",
+      "answer": "Misura la quantità di risorsa consumata rispetto alle ore effettive del driver, distinta dalla variazione delle ore driver per pezzo.",
+      "detail": "La scomposizione usa due standard fisici: quantità di risorsa per unità di driver e quantità di driver per prodotto. Consente di separare efficienza della risorsa ed efficienza del processo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.25, pagina PDF 93"
+    },
+    {
+      "id": "cdg-c08-q108",
+      "topicId": "cdg-c08-t25",
+      "question": "Quali standard fisici sono utilizzati nell’esercizio Arcari 5.6?",
+      "answer": "4 unità di risorsa per fattore di collegamento a standard, 4,2 effettive, 3,5 unità di driver per prodotto e 10.000 prodotti.",
+      "detail": "Il prodotto dei due standard fisici e del volume genera Qsa=140.000 unità; il consumo effettivo considerato è Qei=147.000 unità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.25, pagina PDF 93"
+    },
+    {
+      "id": "cdg-c08-q109",
+      "topicId": "cdg-c08-t25",
+      "question": "Quali sono gli scostamenti proprio di efficienza e di prezzo nell’esercizio Arcari 5.6?",
+      "answer": "Efficienza −1.400 € e prezzo +7.350 €, con Ps=0,20 €/unità e Pe=0,15 €/unità.",
+      "detail": "La differenza fisica è −7.000 unità ma non −7.000 €. Occorre valorizzarla a 0,20 €/unità per ottenere −1.400 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "0,20(140.000-147.000)=-1.400",
+          "meaning": "Scostamento proprio di efficienza monetario."
+        },
+        {
+          "latex": "147.000(0,20-0,15)=+7.350",
+          "meaning": "Scostamento di prezzo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.25, pagina PDF 93"
+    },
+    {
+      "id": "cdg-c08-q110",
+      "topicId": "cdg-c08-t25",
+      "question": "Qual è l’errore di unità segnalato dal manuale nella soluzione editoriale Arcari 5.6?",
+      "answer": "Il valore −7.000 indica unità fisiche di risorsa, non euro; lo scostamento monetario corretto con Ps=0,20 è −1.400 €.",
+      "detail": "Il manuale segnala espressamente la discrepanza nella soluzione editoriale e richiede di mantenere visibile il passaggio dal differenziale quantitativo a quello di costo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.25, pagina PDF 93"
+    },
+    {
+      "id": "cdg-c08-q111",
+      "topicId": "cdg-c08-t26",
+      "question": "Quali tre grandezze distinguere nell’analisi degli scostamenti dei costi indiretti fissi?",
+      "answer": "CIF di budget, CIF assorbiti dai prodotti realizzati e CIF effettivamente sostenuti.",
+      "detail": "Il budget è un importo assoluto entro il relevant range; l’assorbito deriva da coefficiente fisso standard × Ve; l’effettivo è il costo consuntivo. Non sono valori intercambiabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.26, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q112",
+      "topicId": "cdg-c08-t26",
+      "question": "Come si determina il coefficiente standard e il totale dei CIF assorbiti?",
+      "answer": "Il coefficiente fisso deriva dal budget diviso per una base di capacità pertinente; l’assorbito è coefficiente × volume effettivo.",
+      "detail": "Se la base è espressa in pezzi, la tariffa è €/pezzo. Se è un driver di ore, occorre moltiplicare per le ore corrispondenti, senza confondere i livelli di analisi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CIF_{ass}=r_f V_e",
+          "meaning": "CIF standard assorbiti al volume effettivo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.26, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q113",
+      "topicId": "cdg-c08-t26",
+      "question": "Quali sono le formule di volume, spesa e globale per i CIF?",
+      "answer": "Volume = CIF assorbiti − CIF budget; spesa = CIF budget − CIF effettivi; globale = CIF assorbiti − CIF effettivi.",
+      "detail": "Le due varianze elementari si sommano esattamente al globale. Il loro significato è diverso dagli scostamenti di volume di un costo variabile.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_v^{CIF}=CIF_{ass}-CIF_{bud}",
+          "meaning": "Volume/assorbimento."
+        },
+        {
+          "latex": "S_{sp}^{CIF}=CIF_{bud}-CIF_{eff}",
+          "meaning": "Spesa."
+        },
+        {
+          "latex": "S_g^{CIF}=CIF_{ass}-CIF_{eff}",
+          "meaning": "Globale."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.26, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q114",
+      "topicId": "cdg-c08-t26",
+      "question": "Quali risultati dà il caso Arcari 5.7 sui CIF?",
+      "answer": "Budget 180.000 €, assorbiti 160.000 €, effettivi 200.000 €; volume −20.000 €, spesa −20.000 € e globale −40.000 €.",
+      "detail": "La tariffa standard totale è 8×0,5=4 €/prodotto. Il volume passa da 45.000 prodotti programmati a 40.000 effettivi; è necessaria una quadratura distinta dalle varianze dei costi variabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.26, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q115",
+      "topicId": "cdg-c08-t26",
+      "question": "Quali risultati dà il caso Arcari 5.8 sui CIF?",
+      "answer": "Budget 80.000 €, assorbiti 75.000 €, effettivi 81.000 €; volume −5.000 €, spesa −1.000 € e globale −6.000 €.",
+      "detail": "Il coefficiente fisso è 20×0,25=5 €/unità. I volumi programmato ed effettivo sono rispettivamente 16.000 e 15.000 unità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.26, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q116",
+      "topicId": "cdg-c08-t27",
+      "question": "Che cosa segnala una varianza di volume negativa sui costi fissi?",
+      "answer": "Che il volume effettivo ha assorbito meno costi fissi rispetto al livello di capacità impiegato per il budget.",
+      "detail": "Le cause possibili includono domanda insufficiente, fermate, modifiche del mix e sottoutilizzo. Non è lo stesso fenomeno del maggior costo fisso sostenuto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.27, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q117",
+      "topicId": "cdg-c08-t27",
+      "question": "Qual è la differenza tra sottoassorbimento e sovrassorbimento degli indiretti?",
+      "answer": "Sottoassorbimento: indiretti effettivi superiori agli importi applicati ai prodotti; sovrassorbimento: indiretti assorbiti superiori agli effettivi.",
+      "detail": "Sono differenze fra applicazione e costo reale dei pool, tipiche anche del normal costing. Possono dipendere sia dai volumi sia dalla tariffa o da condizioni economiche, quindi non coincidono con la sola varianza di spesa CIF.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.27, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q118",
+      "topicId": "cdg-c08-t27",
+      "question": "Quali risultati mostrano gli esempi Arcari 5.9 e 5.10 sul sotto/sovrassorbimento?",
+      "answer": "Arcari 5.9: 45.000 € assorbiti contro 40.000 € effettivi, sovrassorbimento 5.000 €. Arcari 5.10: 110.000 € assorbiti contro 120.000 € effettivi, sottoassorbimento 10.000 €.",
+      "detail": "Nel 5.9 si applica 15 €/h a 3.000 ore; nel 5.10 si applica 10 €/h a 11.000 ore. L’esito dipende dal confronto con i costi consuntivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.27, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q119",
+      "topicId": "cdg-c08-t27",
+      "question": "Quale cautela serve se si rettificano magazzino e costo del venduto per sotto/sovrassorbimenti?",
+      "answer": "L’eventuale allocazione contabile deve rispettare le regole di valutazione e non capitalizzare oneri anomali o sottoutilizzi non normali.",
+      "detail": "Il manuale ricorda che la ripartizione proporzionale degli scostamenti non equivale a un’autorizzazione generalizzata a trasferire inefficienze nell’attivo patrimoniale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.27, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q120",
+      "topicId": "cdg-c08-t28",
+      "question": "Perché una scomposizione prezzo–quantità può richiedere un effetto congiunto?",
+      "answer": "Perché prezzo e quantità possono variare simultaneamente: l’intersezione dei due cambiamenti deve essere attribuita senza doppio conteggio.",
+      "detail": "Se il prezzo è valutato su Qp e la quantità a Ps, occorre una terza componente. In alternativa, il prezzo su Qe assorbe l’interazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.28, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q121",
+      "topicId": "cdg-c08-t28",
+      "question": "Qual è la formula con effetto congiunto della variazione di costo a prezzo e quantità variabili?",
+      "answer": "Sg = Ps(Qp−Qe) + Qp(Ps−Pe) + (Qe−Qp)(Ps−Pe).",
+      "detail": "Nella convenzione budget meno effettivo, i tre addendi sono effetto quantità, effetto prezzo calcolato su quantità programmata e loro interazione coerente nei segni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_g=P_s(Q_p-Q_e)+Q_p(P_s-P_e)+(Q_e-Q_p)(P_s-P_e)",
+          "meaning": "Decomposizione a tre addendi con interazione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.28, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q122",
+      "topicId": "cdg-c08-t28",
+      "question": "Quali varianze risultano nell’esempio Arcari 5.5 con Ps=5, Pe=7, Qp=10.000 e Qe=12.000?",
+      "answer": "Quantità −10.000 €, prezzo su Qp −20.000 € ed effetto congiunto −4.000 €; globale −34.000 €.",
+      "detail": "Il costo di budget è 50.000 € e l’effettivo 84.000 €. È essenziale sommare l’effetto congiunto con segno negativo, come chiarisce la nota critica del manuale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "(-10.000)+(-20.000)+(-4.000)=-34.000\\,\\text{€}",
+          "meaning": "Quadratura Arcari 5.5."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.28, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q123",
+      "topicId": "cdg-c08-t28",
+      "question": "Come si ottiene lo stesso globale senza un effetto congiunto separato?",
+      "answer": "Si calcola il differenziale di quantità al prezzo standard e quello di prezzo sulla quantità effettiva.",
+      "detail": "Nell’esempio la quantità dà −10.000 € e il prezzo su 12.000 litri dà −24.000 €, totale −34.000 €. È matematicamente equivalente purché le basi siano omogenee.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.28, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q124",
+      "topicId": "cdg-c08-t28",
+      "question": "Quale precisazione sui segni riporta il manuale riguardo all’effetto congiunto dell’Arcari 5.5?",
+      "answer": "La componente congiunta di valore assoluto 4.000 € è sfavorevole e deve entrare nella somma come −4.000 €.",
+      "detail": "La nota richiama una formulazione editoriale che può indurre a invertire i fattori. Il risultato globale di −34.000 € fornisce il controllo oggettivo della convenzione adottata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.28, pagina PDF 94"
+    },
+    {
+      "id": "cdg-c08-q125",
+      "topicId": "cdg-c08-t29",
+      "question": "Quali sono i dati programmati ed effettivi del caso integrato del Capitolo 8?",
+      "answer": "Vp=10.000 e Ve=9.000 unità; MP 18.900 kg a 4,80 €/kg, MOD 4.950 h a 19 €/h, CIV 31.000 € e CIF 53.000 €.",
+      "detail": "Gli standard sono MP 2 kg a 5 €/kg, MOD 0,5 h a 18 €/h, CIV 6 €/ora MOD e budget CIF 50.000 € per 10.000 pezzi. È un caso che collega varianze variabili, fisse e criteri di quadratura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.29, pagina PDF 95"
+    },
+    {
+      "id": "cdg-c08-q126",
+      "topicId": "cdg-c08-t29",
+      "question": "Quali budget originari sono previsti per MP, MOD, CIV e CIF nel caso integrato?",
+      "answer": "MP 100.000 €, MOD 90.000 €, CIV 30.000 € e CIF 50.000 €; totale 270.000 €.",
+      "detail": "Le tre componenti variabili derivano da costi standard unitari di 10, 9 e 3 euro per pezzo; il budget dei costi fissi è un importo di spesa complessivo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "100.000+90.000+30.000+50.000=270.000\\,\\text{€}",
+          "meaning": "Somma del budget originario."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.29, pagina PDF 95"
+    },
+    {
+      "id": "cdg-c08-q127",
+      "topicId": "cdg-c08-t29",
+      "question": "Quali sono i costi effettivi e lo scostamento totale rispetto al budget originario nel caso integrato?",
+      "answer": "Consuntivi: MP 90.720 €, MOD 94.050 €, CIV 31.000 €, CIF 53.000 €; totale 268.770 €, con scostamento +1.230 €.",
+      "detail": "Il costo totale è leggermente inferiore al budget originario, ma questo risultato mescola un volume produttivo minore con inefficienze e tariffe differenti. Non basta per giudicare la performance.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "270.000-268.770=+1.230\\,\\text{€}",
+          "meaning": "Budget originario meno costo effettivo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.29, pagina PDF 95"
+    },
+    {
+      "id": "cdg-c08-q128",
+      "topicId": "cdg-c08-t29",
+      "question": "Come si scompone la varianza MP del caso integrato?",
+      "answer": "Volume +10.000 €, efficienza −4.500 €, prezzo +3.780 €; globale +9.280 €.",
+      "detail": "Per Ve=9.000 l’autorizzato è 18.000 kg e l’impiego effettivo è 18.900 kg. Il prezzo effettivo di 4,80 €/kg è più basso del prezzo standard 5 €/kg.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "10(10.000-9.000)=+10.000",
+          "meaning": "Volume MP."
+        },
+        {
+          "latex": "5(18.000-18.900)=-4.500",
+          "meaning": "Efficienza MP."
+        },
+        {
+          "latex": "18.900(5-4,8)=+3.780",
+          "meaning": "Prezzo MP."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.29, pagina PDF 95"
+    },
+    {
+      "id": "cdg-c08-q129",
+      "topicId": "cdg-c08-t29",
+      "question": "Qual è la quadratura delle varianze MOD nel caso integrato?",
+      "answer": "Volume +9.000 €, efficienza −8.100 €, tariffa −4.950 €; globale −4.050 €.",
+      "detail": "Il tempo standard autorizzato per 9.000 pezzi è 4.500 ore; ne sono state utilizzate 4.950, a 19 €/h contro 18 €/h standard.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "9.000-8.100-4.950=-4.050\\,\\text{€}",
+          "meaning": "Scostamento MOD: 90.000−94.050."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.29, pagina PDF 95"
+    },
+    {
+      "id": "cdg-c08-q130",
+      "topicId": "cdg-c08-t29",
+      "question": "Come si scompongono le varianze CIV nel caso integrato?",
+      "answer": "Volume +3.000 €, efficienza −2.700 €, spesa −1.300 €; globale −1.000 €.",
+      "detail": "La tariffa CIV è 6 €/ora MOD; ore standard autorizzate 4.500, ore effettive 4.950. Il costo effettivo CIV di 31.000 € è superiore a 6×4.950.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "3.000-2.700-1.300=-1.000\\,\\text{€}",
+          "meaning": "Scostamento CIV: 30.000−31.000."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.29, pagina PDF 95"
+    },
+    {
+      "id": "cdg-c08-q131",
+      "topicId": "cdg-c08-t29",
+      "question": "Quali sono gli scostamenti dei CIF nel caso integrato e perché occorre distinguere le basi?",
+      "answer": "CIF assorbiti 45.000 €, volume −5.000 €, spesa −3.000 €, globale assorbiti−effettivi −8.000 €.",
+      "detail": "Il budget originario CIF è 50.000 € e il costo effettivo 53.000 €. Se si confronta il budget totale originario con il consuntivo, per i CIF entra −3.000 € di spesa, non −8.000 € di globale assorbito.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "45.000-50.000=-5.000",
+          "meaning": "Varianza di volume CIF."
+        },
+        {
+          "latex": "50.000-53.000=-3.000",
+          "meaning": "Varianza di spesa CIF."
+        },
+        {
+          "latex": "45.000-53.000=-8.000",
+          "meaning": "Varianza globale assorbita."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.29, pagina PDF 95"
+    },
+    {
+      "id": "cdg-c08-q132",
+      "topicId": "cdg-c08-t29",
+      "question": "Perché la quadratura del caso integrato usa −3.000 € per i CIF e non −8.000 €?",
+      "answer": "Perché confronta budget originario e consuntivo, mentre −8.000 € è riferito ai CIF assorbiti sul volume effettivo.",
+      "detail": "La somma coerente è MP +9.280, MOD −4.050, CIV −1.000 e CIF spesa −3.000 = +1.230 €. Usare il globale dei fissi aggiungerebbe di nuovo l’effetto volume.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "9.280-4.050-1.000-3.000=+1.230\\,\\text{€}",
+          "meaning": "Quadratura sul budget originario."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.29, pagina PDF 95"
+    },
+    {
+      "id": "cdg-c08-q133",
+      "topicId": "cdg-c08-t29",
+      "question": "Come si verifica il caso integrato tramite costo standard assorbito e consuntivo?",
+      "answer": "Costo standard assorbito 243.000 €, scostamento rispetto all’effettivo −25.770 €; effetto volume del budget +27.000 €; globale +1.230 €.",
+      "detail": "Il costo standard pieno è 27 €/pezzo e la produzione 9.000 pezzi. Il controllo alternativo è 270.000−243.000=27.000 e 243.000−268.770=−25.770; la somma restituisce +1.230 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "27\\times9.000=243.000",
+          "meaning": "Standard complessivamente assorbito."
+        },
+        {
+          "latex": "27.000-25.770=+1.230",
+          "meaning": "Quadratura alternativa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.29, pagina PDF 95"
+    },
+    {
+      "id": "cdg-c08-q134",
+      "topicId": "cdg-c08-t30",
+      "question": "Quale condizione pone il manuale per utilizzare costi standard nella valutazione delle rimanenze secondo OIC 13?",
+      "answer": "Devono essere rappresentativi dei costi effettivamente sostenuti, con verifica degli scostamenti e aggiornamenti quando mutano significativamente le condizioni.",
+      "detail": "Lo standard costing è uno strumento gestionale; il suo impiego in bilancio richiede coerenza con il valore contabile delle rimanenze e con la natura degli scostamenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.30, pagina PDF 95"
+    },
+    {
+      "id": "cdg-c08-q135",
+      "topicId": "cdg-c08-t30",
+      "question": "Perché gli extra-costi dovuti a inefficienze anomale non devono essere automaticamente inclusi nel magazzino?",
+      "answer": "Perché capitalizzarli potrebbe trasformare perdite operative e sottoutilizzo non normale in un valore dell’attivo artificiosamente alto.",
+      "detail": "Occorre distinguere le differenze fisiologiche di prezzo o processo dalle anomalie eccezionali dell’esercizio e trattarle secondo le norme contabili applicabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.30, pagina PDF 95"
+    },
+    {
+      "id": "cdg-c08-q136",
+      "topicId": "cdg-c08-t30",
+      "question": "Come devono essere considerati gli scostamenti legati a cambiamenti permanenti di prezzi o processi?",
+      "answer": "Possono rendere necessario aggiornare gli standard e verificare che il costo di magazzino rappresenti condizioni effettive.",
+      "detail": "Una differenza permanente e normale non ha lo stesso significato di uno spreco eccezionale. Aggiornare la base di costo richiede un’analisi economica e una documentazione dei parametri.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.30, pagina PDF 95"
+    },
+    {
+      "id": "cdg-c08-q137",
+      "topicId": "cdg-c08-t30",
+      "question": "Quale relazione esiste tra capacità normale, costo standard e valorizzazione delle rimanenze?",
+      "answer": "Il costo di produzione può incorporare indiretti coerenti con la capacità normale, senza caricare automaticamente sui prodotti il sottoutilizzo anomalo.",
+      "detail": "Il manuale collega il tema alla trattazione dei costi pieni e della capacità normale del Capitolo 5. La rilevazione di uno scostamento gestionale non sostituisce le regole patrimoniali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.30, pagina PDF 95"
+    },
+    {
+      "id": "cdg-c08-q138",
+      "topicId": "cdg-c08-t31",
+      "question": "Perché il solo costo effettivo non è sufficiente a controllare una commessa in avanzamento?",
+      "answer": "Perché non distingue il maggior costo da una diversa quantità di lavoro effettivamente completato rispetto al piano.",
+      "detail": "Serve confrontare spesa reale, lavoro pianificato alla data e valore a budget del lavoro effettivamente realizzato, usando grandezze riferite allo stesso momento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.31, pagina PDF 96"
+    },
+    {
+      "id": "cdg-c08-q139",
+      "topicId": "cdg-c08-t31",
+      "question": "Che cosa indicano BCWS/PV, BCWP/EV e ACWP/AC?",
+      "answer": "PV è il valore di budget del lavoro pianificato; EV quello del lavoro completato; AC è il costo effettivamente sostenuto.",
+      "detail": "PV e EV sono entrambi valutati a standard/budget ma differiscono per quantità di lavoro. AC valorizza la spesa reale del lavoro svolto; da queste tre grandezze derivano indici di tempi e costi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.31, pagina PDF 96"
+    },
+    {
+      "id": "cdg-c08-q140",
+      "topicId": "cdg-c08-t31",
+      "question": "Quali formule descrivono SV e CV nell’Earned Value Management?",
+      "answer": "SV = EV−PV e CV = EV−AC.",
+      "detail": "SV misura l’avanzamento rispetto al programma in euro di budget; CV confronta il valore a budget del lavoro realizzato con il costo realmente sostenuto per quel lavoro. Non vanno confusi con Sv dei costi variabili.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "SV=EV-PV",
+          "meaning": "Scostamento di avanzamento valorizzato a budget."
+        },
+        {
+          "latex": "CV=EV-AC",
+          "meaning": "Scostamento di costo della commessa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.31, pagina PDF 96"
+    },
+    {
+      "id": "cdg-c08-q141",
+      "topicId": "cdg-c08-t31",
+      "question": "Come si interpretano SPI e CPI nell’Earned Value?",
+      "answer": "SPI = EV/PV indica avanzamento relativo; CPI = EV/AC indica efficienza economica del lavoro completato.",
+      "detail": "Valori sotto 1 indicano rispettivamente avanzamento inferiore al piano e costo superiore al valore a budget del lavoro eseguito, purché i denominatori siano non nulli.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "SPI=EV/PV",
+          "meaning": "Indice di avanzamento."
+        },
+        {
+          "latex": "CPI=EV/AC",
+          "meaning": "Indice di performance del costo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.31, pagina PDF 96"
+    },
+    {
+      "id": "cdg-c08-q142",
+      "topicId": "cdg-c08-t31",
+      "question": "Quale differenza concettuale c’è fra SV delle commesse e Sv dei costi variabili?",
+      "answer": "SV = EV−PV riguarda l’avanzamento di un progetto; Sv = Cs×(Vp−Ve) riguarda il costo variabile associato alla variazione dei volumi.",
+      "detail": "La notazione simile può trarre in inganno, ma misure e basi sono differenti. Nel contesto Earned Value si legge il valore a budget del lavoro, non il costo di consumo dei fattori del capitolo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.31, pagina PDF 96"
+    },
+    {
+      "id": "cdg-c08-q143",
+      "topicId": "cdg-c08-t32",
+      "question": "Quali sono i dati essenziali del caso della docente sull’allestimento di 20 negozi?",
+      "answer": "20 negozi previsti a 30.000 € ciascuno; dopo cinque mesi 10 negozi pianificati, 9 completati a 35.000 € effettivi per negozio.",
+      "detail": "La commessa richiede di distinguere budget totale, avanzamento previsto, avanzamento reale e spesa per unità realizzata alla data del controllo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.32, pagina PDF 96"
+    },
+    {
+      "id": "cdg-c08-q144",
+      "topicId": "cdg-c08-t32",
+      "question": "Come si calcolano PV, EV e AC nel caso dei 20 negozi?",
+      "answer": "PV=300.000 €, EV=270.000 €, AC=315.000 €.",
+      "detail": "PV usa i 10 negozi che avrebbero dovuto essere terminati a 30.000 €/negozio; EV i 9 completati valorizzati a 30.000 €; AC i 9 completati al costo reale medio di 35.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "PV=10\\times30.000=300.000",
+          "meaning": "Lavoro pianificato."
+        },
+        {
+          "latex": "EV=9\\times30.000=270.000",
+          "meaning": "Lavoro completato a budget."
+        },
+        {
+          "latex": "AC=9\\times35.000=315.000",
+          "meaning": "Costo reale."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.32, pagina PDF 96"
+    },
+    {
+      "id": "cdg-c08-q145",
+      "topicId": "cdg-c08-t32",
+      "question": "Quali sono gli scostamenti SV e CV nel caso dei 20 negozi?",
+      "answer": "SV = −30.000 € e CV = −45.000 €.",
+      "detail": "Il primo indica avanzamento inferiore al piano; il secondo indica che il lavoro realizzato è costato 45.000 € in più del suo valore di budget.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "270.000-300.000=-30.000",
+          "meaning": "Schedule variance."
+        },
+        {
+          "latex": "270.000-315.000=-45.000",
+          "meaning": "Cost variance."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.32, pagina PDF 96"
+    },
+    {
+      "id": "cdg-c08-q146",
+      "topicId": "cdg-c08-t32",
+      "question": "Quali sono SPI e CPI nel caso dei 20 negozi?",
+      "answer": "SPI = 0,90 e CPI ≈ 0,857: il progetto è in ritardo e sta spendendo più del budget per l’avanzamento reale.",
+      "detail": "SPI confronta 9 negozi realizzati con 10 programmati, entrambi a valore standard; CPI confronta 270.000 € di lavoro realizzato a budget con 315.000 € di costo effettivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.32, pagina PDF 96"
+    },
+    {
+      "id": "cdg-c08-q147",
+      "topicId": "cdg-c08-t32",
+      "question": "Come si ottiene la stima EAC nel caso dei negozi e quale cautela serve?",
+      "answer": "Con BAC=600.000 € e CPI invariato si stima EAC=BAC/CPI≈700.000 €, ma è una proiezione condizionata.",
+      "detail": "L’estrapolazione suppone che l’efficienza economica cumulata persista. Per una previsione affidabile occorre verificare lavoro residuo, prezzi, vincoli e correttivi possibili.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "EAC\\approx BAC/CPI=600.000/0,857\\approx700.000\\,\\text{€}",
+          "meaning": "Stima condizionata alla persistenza del CPI."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.32, pagina PDF 96"
+    },
+    {
+      "id": "cdg-c08-q148",
+      "topicId": "cdg-c08-t33",
+      "question": "Quali informazioni deve contenere un report direzionale degli scostamenti?",
+      "answer": "Periodo, oggetto, budget di riferimento, risultati effettivi, varianze, materialità, ipotesi causali, responsabili, azioni e data di verifica.",
+      "detail": "Un report utile alla decisione non deve essere un elenco di numeri. Deve trasformare i segnali contabili in domande operative e in attività di approfondimento misurabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.33, pagina PDF 97"
+    },
+    {
+      "id": "cdg-c08-q149",
+      "topicId": "cdg-c08-t33",
+      "question": "Che cosa deve evidenziare il report gestionale sul caso integrato 8.29?",
+      "answer": "L’inefficienza MOD di −8.100 € e la tariffa sfavorevole di −4.950 €, oltre al sovraconsumo di materiali.",
+      "detail": "Il presunto risparmio MP di +9.280 € nasce per +10.000 € dai minori volumi; l’impiego MP è invece sfavorevole di −4.500 €. Presentare soltanto la differenza globale sarebbe fuorviante.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.33, pagina PDF 97"
+    },
+    {
+      "id": "cdg-c08-q150",
+      "topicId": "cdg-c08-t33",
+      "question": "Quali azioni gestionali possono seguire un report con varianze di efficienza negative?",
+      "answer": "Verificare scarti, tempi di lavorazione, qualità degli input e adeguatezza degli standard, definendo interventi e successive verifiche.",
+      "detail": "Il report deve assegnare a ciascun approfondimento una responsabilità organizzativa concreta e una scadenza di controllo; il segno della varianza non identifica automaticamente la causa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.33, pagina PDF 97"
+    },
+    {
+      "id": "cdg-c08-q151",
+      "topicId": "cdg-c08-t33",
+      "question": "Perché è necessario indicare il budget di riferimento nel report?",
+      "answer": "Perché la stessa spesa può apparire favorevole rispetto al budget originario ma sfavorevole rispetto al budget flessibile.",
+      "detail": "Specie con volumi differenti, un confronto non dichiarato rischia di mescolare un effetto di quantità con una valutazione di efficienza. La base va esplicitata prima dei giudizi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.33, pagina PDF 97"
+    },
+    {
+      "id": "cdg-c08-q152",
+      "topicId": "cdg-c08-t34",
+      "question": "Qual è il principio di responsabilità nel controllo degli scostamenti?",
+      "answer": "Valutare i risultati sulla base delle leve effettivamente influenzabili, non assegnare automaticamente una colpa al reparto cui appare associata la varianza.",
+      "detail": "Il controllo direzionale deve distinguere responsabilità formali, controllabilità operativa e fattori esterni; un costo può dipendere da decisioni prese da più funzioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.34, pagina PDF 97"
+    },
+    {
+      "id": "cdg-c08-q153",
+      "topicId": "cdg-c08-t34",
+      "question": "Quali fattori possono incidere sul prezzo di una materia senza dipendere soltanto dagli acquisti?",
+      "answer": "Crisi di mercato, specifiche tecniche imposte dalla progettazione e ordini urgenti derivanti dalla produzione.",
+      "detail": "Anche quando la varianza prezzo è osservata dal servizio acquisti, le cause e le decisioni correttive potrebbero essere distribuite fra più soggetti e livelli manageriali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.34, pagina PDF 97"
+    },
+    {
+      "id": "cdg-c08-q154",
+      "topicId": "cdg-c08-t34",
+      "question": "Perché una varianza negativa di efficienza MOD non deve essere attribuita subito agli operatori?",
+      "answer": "Perché può essere originata da macchine difettose, mix più complesso, manutenzione insufficiente o carenze formative.",
+      "detail": "Le responsabilità devono essere ricostruite causalmente e assegnate a chi possiede capacità di intervento, altrimenti il sistema di misurazione incentiva conflitti più che miglioramenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.34, pagina PDF 97"
+    },
+    {
+      "id": "cdg-c08-q155",
+      "topicId": "cdg-c08-t34",
+      "question": "Come collegare varianze e valutazione delle performance manageriali?",
+      "answer": "Confrontando scostamenti, responsabilità negoziate e fattori realmente controllabili dal responsabile.",
+      "detail": "La qualità del sistema deriva dalla capacità di attribuire spiegazioni e azioni alle funzioni che possono intervenire. La sola imputazione contabile di un costo a un centro non dimostra la sua controllabilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.34, pagina PDF 97"
+    },
+    {
+      "id": "cdg-c08-q156",
+      "topicId": "cdg-c08-t35",
+      "question": "Quali fattori possono rendere obsoleti gli standard?",
+      "answer": "Inflazione, nuove tecnologie, cambiamenti dei prodotti e processi, modifiche di approvvigionamento ed esternalizzazioni.",
+      "detail": "Parametri non aggiornati possono produrre varianze persistenti che non riflettono più l’efficienza. Le revisioni devono essere documentate per mantenere comparabile la serie storica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.35, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q157",
+      "topicId": "cdg-c08-t35",
+      "question": "Quali comportamenti distorti possono essere incentivati da obiettivi di costo troppo rigidi?",
+      "answer": "Rinvio di spese, scelta di materiali scadenti, produzione in eccesso per assorbire costi fissi e riduzione dei controlli qualità.",
+      "detail": "Un valore favorevole di costo non coincide con un buon esito complessivo: possono peggiorare sicurezza, soddisfazione dei clienti, puntualità e affidabilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.35, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q158",
+      "topicId": "cdg-c08-t35",
+      "question": "Che cosa si intende per controllo per eccezione degli scostamenti?",
+      "answer": "Concentrare l’attenzione gestionale sui divari più rilevanti, persistenti o rischiosi.",
+      "detail": "La priorità di analisi dipende da importo assoluto, percentuale, ripetitività, criticità e possibilità di intervenire; non soltanto dal segno favorevole o sfavorevole.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.35, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q159",
+      "topicId": "cdg-c08-t35",
+      "question": "Quali indicatori non finanziari devono affiancare gli standard economici?",
+      "answer": "Qualità, scarti, tempi di attraversamento, puntualità, sicurezza e soddisfazione del cliente.",
+      "detail": "Consentono di identificare risparmi che compromettono il risultato industriale, di servizio o di lungo termine e di comprendere scostamenti tecnici prima che si traducano in maggiori costi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.35, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q160",
+      "topicId": "cdg-c08-t35",
+      "question": "Perché occorre conservare la cronologia delle revisioni degli standard?",
+      "answer": "Per non confondere un miglioramento reale con il semplice cambiamento della soglia di riferimento.",
+      "detail": "Ogni aggiornamento deve documentare decorrenza, condizioni tecniche e motivazioni. Il confronto tra periodi richiede parametri omogenei o una spiegazione degli scostamenti dovuti al cambio di standard.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.35, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q161",
+      "topicId": "cdg-c08-t36",
+      "question": "Che cosa misura una varianza di mix delle materie prime?",
+      "answer": "La modifica nelle proporzioni relative dei diversi materiali rispetto alla ricetta standard, a quantità complessiva di input data.",
+      "detail": "È un approfondimento teorico citato dal manuale, distinto dal nucleo obbligatorio di formule Arcari. Serve quando più materiali sostituibili entrano nello stesso output.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.36, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q162",
+      "topicId": "cdg-c08-t36",
+      "question": "Che cosa misura una varianza di resa o yield?",
+      "answer": "La differenza tra output ottenuto e output che sarebbe atteso dalla quantità totale di fattori realmente impiegata.",
+      "detail": "Aiuta a distinguere inefficienze dovute alla composizione del mix da quelle dovute alla resa complessiva del processo. Deve essere calcolata su basi coerenti con la varianza di consumo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.36, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q163",
+      "topicId": "cdg-c08-t36",
+      "question": "Come si collegano varianze di mix e resa alla varianza di consumo?",
+      "answer": "Mix e resa costituiscono una scomposizione ulteriore della varianza di consumo; non devono essere sommate ad essa come scostamenti aggiuntivi.",
+      "detail": "Il totale di consumo viene spiegato dalle due componenti. Aggiungere anche la varianza originale creerebbe un doppio conteggio dei medesimi fenomeni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.36, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q164",
+      "topicId": "cdg-c08-t36",
+      "question": "Che cosa distinguono le varianze di pianificazione da quelle operative?",
+      "answer": "Le prime isolano gli effetti di uno standard originario non più realistico; le seconde valutano il divario rispetto a parametri rivisti e giustificati.",
+      "detail": "È necessario documentare standard originale, aggiornamento e ragione della modifica. Una revisione retroattiva arbitraria potrebbe cancellare inefficienze controllabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§8.35 — Obsolescenza degli standard"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.36, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q165",
+      "topicId": "cdg-c08-t36",
+      "question": "Che status attribuisce il manuale a mix, resa e planning variances rispetto al programma principale?",
+      "answer": "Sono approfondimenti integrativi, utili per l’interpretazione, ma non sostituiscono le scomposizioni richieste nelle slide e negli esercizi Arcari 5.1–5.10.",
+      "detail": "Il testo distingue esplicitamente l’approfondimento ACCA dalle procedure fondamentali del corso. Nelle flashcard le nozioni accessorie sono mantenute separate dalle formule di esame principali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.36, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q166",
+      "topicId": "cdg-c08-t37",
+      "question": "Quali sono le formule-base di un fattore variabile da ricordare prima delle varianze?",
+      "answer": "Cs=Ps×qs, Qsa=qs×Ve, Qei=qe×Ve, CB=Ps×qs×Vp, CF=Ps×qs×Ve e CE=Pe×Qei.",
+      "detail": "Queste sei grandezze fissano unità e basi di confronto. Le varianze sono differenze fra importi che vanno costruiti con la stessa notazione per evitare incoerenze.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_s=P_sq_s;\\;Q_{sa}=q_sV_e;\\;Q_{ei}=q_eV_e",
+          "meaning": "Standard e input."
+        },
+        {
+          "latex": "CB=P_sq_sV_p;\\;CF=P_sq_sV_e;\\;CE=P_eQ_{ei}",
+          "meaning": "Tre costi totali."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.37, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q167",
+      "topicId": "cdg-c08-t37",
+      "question": "Qual è il formulario riassuntivo delle tre varianze dei fattori variabili?",
+      "answer": "Sg=Ps×qs×Vp−Pe×Qei; Sv=Ps×qs×(Vp−Ve); Seff=Ps×(Qsa−Qei); Sprezzo=Qei×(Ps−Pe).",
+      "detail": "La quadratura Sg=Sv+Seff+Sprezzo deve essere verificata indipendentemente dalla presentazione dei singoli risultati e dalla loro interpretazione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_g=P_sq_sV_p-P_eQ_{ei}",
+          "meaning": "Globale."
+        },
+        {
+          "latex": "S_v=P_sq_s(V_p-V_e)",
+          "meaning": "Volume."
+        },
+        {
+          "latex": "S_{eff}=P_s(Q_{sa}-Q_{ei})",
+          "meaning": "Efficienza."
+        },
+        {
+          "latex": "S_p=Q_{ei}(P_s-P_e)",
+          "meaning": "Prezzo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.37, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q168",
+      "topicId": "cdg-c08-t37",
+      "question": "Quali due formule speciali vanno aggiunte per i CIV con costo effettivo di pool?",
+      "answer": "Efficienza CIV = r×(Hsa−He); spesa CIV = r×He−CIV effettivi.",
+      "detail": "Il sistema utilizza ore standard autorizzate e ore effettive del driver. La varianza di spesa del pool non equivale necessariamente a una singola variazione di prezzo di input.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_{eff}^{CIV}=r(H_{sa}-H_e)",
+          "meaning": "Efficienza del driver."
+        },
+        {
+          "latex": "S_{sp}^{CIV}=rH_e-CIV_{eff}",
+          "meaning": "Spesa del pool."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.37, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q169",
+      "topicId": "cdg-c08-t37",
+      "question": "Quale formulario riepiloga gli scostamenti dei costi indiretti fissi?",
+      "answer": "Assorbiti=rf×Ve; volume=assorbiti−budget; spesa=budget−effettivi; globale=assorbiti−effettivi.",
+      "detail": "La scomposizione dei fissi distingue quanto viene applicato ai prodotti dal costo fisso totale di budget. L’identità globale=volume+spesa deve quadrare.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "CIF_{ass}=r_fV_e",
+          "meaning": "Assorbimento."
+        },
+        {
+          "latex": "S_g^{CIF}=CIF_{ass}-CIF_{eff}",
+          "meaning": "Globale."
+        },
+        {
+          "latex": "S_v^{CIF}=CIF_{ass}-CIF_{bud}",
+          "meaning": "Volume."
+        },
+        {
+          "latex": "S_{sp}^{CIF}=CIF_{bud}-CIF_{eff}",
+          "meaning": "Spesa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.37, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q170",
+      "topicId": "cdg-c08-t37",
+      "question": "Quale formulario essenziale si applica alle commesse con Earned Value?",
+      "answer": "SV=EV−PV, CV=EV−AC, SPI=EV/PV e CPI=EV/AC.",
+      "detail": "Il confronto di avanzamento è distinto da quello di costo, sebbene entrambi abbiano valori monetari. Gli indici trasformano le differenze in rapporti confrontabili.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "SV=EV-PV;\\;CV=EV-AC",
+          "meaning": "Scostamenti."
+        },
+        {
+          "latex": "SPI=EV/PV;\\;CPI=EV/AC",
+          "meaning": "Indici di performance."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.37, pagina PDF 98"
+    },
+    {
+      "id": "cdg-c08-q171",
+      "topicId": "cdg-c08-t38",
+      "question": "Qual è il primo controllo da effettuare leggendo una traccia sulle varianze?",
+      "answer": "Identificare la base richiesta: budget originario–consuntivo, budget flessibile–consuntivo oppure costo assorbito–effettivo.",
+      "detail": "Le formule corrette dipendono dalla domanda. Il caso integrato mostra che confondere confronto originario e assorbimento produce scostamenti non riconciliabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.38, pagina PDF 99"
+    },
+    {
+      "id": "cdg-c08-q172",
+      "topicId": "cdg-c08-t38",
+      "question": "Quali grandezze devono essere definite prima di calcolare le varianze?",
+      "answer": "Vp, Ve, unità di misura e consumo standard autorizzato per il volume effettivo.",
+      "detail": "Qsa si ottiene da qs×Ve, non dal volume programmato. Tempi in minuti, ore e quantità in unità fisiche coerenti vanno convertiti prima dei prodotti con tariffe.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.38, pagina PDF 99"
+    },
+    {
+      "id": "cdg-c08-q173",
+      "topicId": "cdg-c08-t38",
+      "question": "Quali errori specifici evitare con varianze prezzo e CIF?",
+      "answer": "Usare Qei quando il prezzo segue A→B→C→D; indicare acquisto o consumo per i materiali; distinguere CIF assorbiti, budget ed effettivi.",
+      "detail": "La combinazione di basi differenti può dare risultati plausibili ma non sommabili. Per i CIF il budget totale resta fisso entro l’intervallo rilevante.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.38, pagina PDF 99"
+    },
+    {
+      "id": "cdg-c08-q174",
+      "topicId": "cdg-c08-t38",
+      "question": "Che cosa deve essere scritto accanto ai risultati numerici nella prova scritta?",
+      "answer": "Formule, unità, segno e giudizio di favorevolezza, quadratura e breve interpretazione economica con ipotesi sulle cause.",
+      "detail": "I risultati matematici sono necessari ma non sufficienti: la prova valuta anche il significato gestionale e l’uso corretto del modello rispetto al contesto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.38, pagina PDF 99"
+    },
+    {
+      "id": "cdg-c08-q175",
+      "topicId": "cdg-c08-t39",
+      "question": "Quali conoscenze verifica l’esercizio E1 della scheda standard?",
+      "answer": "Trasformare consumi netti in quantità lorde con la resa, includere il trasporto nel prezzo e convertire minuti in ore per la MOD.",
+      "detail": "La traccia chiede 1,60 kg netti con resa 80%, prezzo base 3 €/kg più trasporto 5%, e 24 minuti di MOD a 15 €/h. L’obiettivo è la costruzione di una scheda diretta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.39, pagina PDF 99"
+    },
+    {
+      "id": "cdg-c08-q176",
+      "topicId": "cdg-c08-t39",
+      "question": "Quali grandezze richiedono gli esercizi E2 e E3?",
+      "answer": "E2 richiede le varianze di MP; E3 quelle di MOD, comprese quantità standard autorizzate e differenziale di prezzo/tariffa.",
+      "detail": "Entrambi richiedono budget, consuntivo, volume, efficienza, prezzo e controllo globale. Per E3 il tempo standard è espresso in minuti e va convertito in ore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.39, pagina PDF 99"
+    },
+    {
+      "id": "cdg-c08-q177",
+      "topicId": "cdg-c08-t39",
+      "question": "Quali differenze metodologiche verificano gli esercizi E4 ed E5?",
+      "answer": "E4 riguarda CIV e separa volume, efficienza delle ore e spesa; E5 riguarda CIF e distingue importi assorbiti, budget e costi effettivi.",
+      "detail": "La differenza è sostanziale: il costo fisso di budget non si adegua proporzionalmente al volume, mentre la quota assorbita si modifica con Ve.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.39, pagina PDF 99"
+    },
+    {
+      "id": "cdg-c08-q178",
+      "topicId": "cdg-c08-t39",
+      "question": "Quali aspetti specifici verificano gli esercizi E6 ed E7?",
+      "answer": "E6 distingue variazioni fisiche da scostamenti monetari di una risorsa indiretta; E7 confronta prezzo su acquisti e su consumi.",
+      "detail": "In E6 bisogna moltiplicare la differenza quantitativa per la tariffa standard; in E7 la differenza di prezzo sulle giacenze non va mescolata all’impiego del periodo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.39, pagina PDF 99"
+    },
+    {
+      "id": "cdg-c08-q179",
+      "topicId": "cdg-c08-t39",
+      "question": "Quali competenze valutano E8, E9 ed E10?",
+      "answer": "E8 calcola PV, EV, AC e indici Earned Value; E9 scompone il prezzo–quantità con effetto congiunto; E10 interpreta managerialmente varianze e KPI.",
+      "detail": "Le tracce integrano calcolo, controllo dei segni e spiegazione economica. E10 richiede ipotesi causali e indicatori non finanziari, non una semplice somma algebrica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.39, pagina PDF 99"
+    },
+    {
+      "id": "cdg-c08-q180",
+      "topicId": "cdg-c08-t40",
+      "question": "Qual è il risultato dell’esercizio E1 della scheda standard e come si ottiene?",
+      "answer": "Materia 2 kg a 3,15 €/kg = 6,30 €; MOD 0,40 ore a 15 €/h = 6,00 €; costo standard diretto 12,30 €/unità.",
+      "detail": "Il materiale netto 1,60 kg viene diviso per resa 0,80, il prezzo base 3 € maggiorato del 5% e i 24 minuti di MOD convertiti in 0,40 ore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.40, pagina PDF 100"
+    },
+    {
+      "id": "cdg-c08-q181",
+      "topicId": "cdg-c08-t40",
+      "question": "Quali risultati fornisce l’esercizio E2 sui materiali?",
+      "answer": "Budget 40.000 €, flessibile 41.600 €, effettivo 47.300 €; volume −1.600 €, efficienza −2.400 €, prezzo −3.300 €; globale −7.300 €.",
+      "detail": "Qsa è 10.400 kg e Qei 11.000 kg; il prezzo effettivo di 4,30 €/kg supera Ps=4 €/kg. La somma delle tre varianze coincide con 40.000−47.300.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "(-1.600)+(-2.400)+(-3.300)=-7.300",
+          "meaning": "Quadratura E2."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.40, pagina PDF 100"
+    },
+    {
+      "id": "cdg-c08-q182",
+      "topicId": "cdg-c08-t40",
+      "question": "Quali risultati fornisce l’esercizio E3 sulla manodopera?",
+      "answer": "Budget 32.000 €, consuntivo 35.700 €; volume +2.000 €, efficienza −3.600 €, tariffa −2.100 €; globale −3.700 €.",
+      "detail": "Le ore standard autorizzate sono 7.500×0,25=1.875, a fronte di 2.100 ore effettive. Il prezzo standard è 16 €/h, quello effettivo 17 €/h.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "2.000-3.600-2.100=-3.700",
+          "meaning": "Quadratura E3."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.40, pagina PDF 100"
+    },
+    {
+      "id": "cdg-c08-q183",
+      "topicId": "cdg-c08-t40",
+      "question": "Quali risultati fornisce l’esercizio E4 sui CIV?",
+      "answer": "Budget 12.000 €, effettivo 12.900 €; volume +1.000 €, efficienza −1.000 €, spesa −900 €; globale −900 €.",
+      "detail": "Le ore autorizzate per Ve sono 2.750, quelle effettive 3.000, tariffa standard 4 €/h. È fondamentale distinguere il costo del pool dalla tariffa oraria.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "1.000-1.000-900=-900",
+          "meaning": "Quadratura CIV E4."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.40, pagina PDF 100"
+    },
+    {
+      "id": "cdg-c08-q184",
+      "topicId": "cdg-c08-t40",
+      "question": "Quali risultati fornisce l’esercizio E5 sui costi indiretti fissi?",
+      "answer": "Coefficiente 4 €/unità, assorbiti 64.000 €, volume −8.000 €, spesa −4.000 €, globale −12.000 €.",
+      "detail": "Budget CIF 72.000 € a 18.000 unità, produzione effettiva 16.000 e CIF consuntivi 76.000 €. Il confronto budget−effettivo vale solo −4.000 €, non −12.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "(-8.000)+(-4.000)=-12.000",
+          "meaning": "Quadratura CIF E5."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.40, pagina PDF 100"
+    },
+    {
+      "id": "cdg-c08-q185",
+      "topicId": "cdg-c08-t40",
+      "question": "Quali risultati fornisce l’esercizio E6 sulla risorsa indiretta?",
+      "answer": "Efficienza −1.400 €, prezzo +7.350 €; costo standard autorizzato 28.000 €, effettivo 22.050 €; differenza +5.950 €.",
+      "detail": "Il consumo fisico cresce da 140.000 a 147.000 unità, ma la tariffa scende da 0,20 a 0,15 €/unità. Il saldo monetario è diverso dal saldo delle unità fisiche.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "(-1.400)+7.350=+5.950",
+          "meaning": "Quadratura E6."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.40, pagina PDF 100"
+    },
+    {
+      "id": "cdg-c08-q186",
+      "topicId": "cdg-c08-t40",
+      "question": "Quali risultati fornisce l’esercizio E7 su prezzo all’acquisto e prezzo al consumo?",
+      "answer": "Prezzo su acquisti −2.500 €, su consumi −2.100 €, efficienza −1.100 €; differenza giacenze −400 €.",
+      "detail": "Sono acquistati 5.000 kg e consumati 4.200 kg, con Ps=5,50 € e Pe=6 €. Lo scostamento di prezzo sui 800 kg residui non riguarda il materiale impiegato nel periodo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.40, pagina PDF 100"
+    },
+    {
+      "id": "cdg-c08-q187",
+      "topicId": "cdg-c08-t40",
+      "question": "Quali risultati fornisce l’esercizio E8 sull’Earned Value?",
+      "answer": "PV 200.000 €, EV 180.000 €, AC 207.000 €; SV −20.000 €, CV −27.000 €, SPI 0,90 e CPI≈0,870.",
+      "detail": "Su 20 impianti pianificati ne sono realizzati 18, ciascuno a valore standard 10.000 €. Il progetto è in ritardo e costoso rispetto al valore a budget del lavoro realmente eseguito.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.40, pagina PDF 100"
+    },
+    {
+      "id": "cdg-c08-q188",
+      "topicId": "cdg-c08-t40",
+      "question": "Come si risolve l’esercizio E9 con l’effetto congiunto prezzo–quantità?",
+      "answer": "Quantità −500 €, prezzo su Qp −1.000 €, congiunto −100 €; globale −1.600 €.",
+      "detail": "Il costo di budget è 500×10=5.000 €, quello effettivo 550×12=6.600 €. La variante senza termine congiunto usa prezzo su Qe=−1.100 € e quantità −500 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "(-500)+(-1.000)+(-100)=-1.600",
+          "meaning": "Quadratura E9."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.40, pagina PDF 100"
+    },
+    {
+      "id": "cdg-c08-q189",
+      "topicId": "cdg-c08-t40",
+      "question": "Quali possibili cause propone il manuale per gli scostamenti dell’esercizio E10?",
+      "answer": "Materiale più economico ma scadente che genera scarti, fermate o cambi di produzione che aumentano le ore MOD, e manutenzioni posticipate che riducono temporaneamente i costi fissi.",
+      "detail": "Le varianze sono prezzo materiali +7.000 €, efficienza MP −13.000 €, ore MOD −9.000 € e spesa fissa +4.000 €. Non bastano per attribuire automaticamente le cause a un solo responsabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.40, pagina PDF 100"
+    },
+    {
+      "id": "cdg-c08-q190",
+      "topicId": "cdg-c08-t40",
+      "question": "Quali indicatori non finanziari il manuale suggerisce per interpretare l’esercizio E10?",
+      "answer": "Tasso di scarti o difettosità, first-pass yield, ore di fermo, lead time e puntualità delle consegne.",
+      "detail": "Gli indicatori integrano il giudizio sugli scostamenti monetari; un risparmio temporaneo può produrre ritardi, peggioramenti qualitativi e costi successivi, che il solo saldo contabile non rende evidenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 8, Costi standard e analisi degli scostamenti, §8.40, pagina PDF 100"
+    }
+  ]
+}

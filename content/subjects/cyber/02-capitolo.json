@@ -1,0 +1,2503 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cyber",
+  "source": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2: Il design della sicurezza, pagine PDF 22–35; unica fonte autorizzata.",
+  "chapter": {
+    "id": "cyber-c02",
+    "title": "Il design della sicurezza — dodici principi, sviluppo sicuro e applicazioni enterprise",
+    "order": 2,
+    "topics": [
+      {
+        "id": "cyber-c02-t01",
+        "title": "Security by design, sicurezza assoluta e requisiti verificabili"
+      },
+      {
+        "id": "cyber-c02-t02",
+        "title": "Origine e quadro dei dodici principi di progettazione"
+      },
+      {
+        "id": "cyber-c02-t03",
+        "title": "Economy of mechanism: semplicità verificabile"
+      },
+      {
+        "id": "cyber-c02-t04",
+        "title": "Fail-safe defaults: deny by default"
+      },
+      {
+        "id": "cyber-c02-t05",
+        "title": "Complete mediation: controlli su ogni accesso"
+      },
+      {
+        "id": "cyber-c02-t06",
+        "title": "Open design: verificabilità e protezione dei segreti"
+      },
+      {
+        "id": "cyber-c02-t07",
+        "title": "Separation of privilege e separation of duties"
+      },
+      {
+        "id": "cyber-c02-t08",
+        "title": "Least privilege, need-to-know e permessi temporanei"
+      },
+      {
+        "id": "cyber-c02-t09",
+        "title": "Least common mechanism e condivisione sicura"
+      },
+      {
+        "id": "cyber-c02-t10",
+        "title": "Psychological acceptability: sicurezza usabile"
+      },
+      {
+        "id": "cyber-c02-t11",
+        "title": "Isolation e trust boundaries"
+      },
+      {
+        "id": "cyber-c02-t12",
+        "title": "Encapsulation e interfacce controllate"
+      },
+      {
+        "id": "cyber-c02-t13",
+        "title": "Modularity e responsabilità dei componenti"
+      },
+      {
+        "id": "cyber-c02-t14",
+        "title": "Layering e defense in depth"
+      },
+      {
+        "id": "cyber-c02-t15",
+        "title": "Tensioni e bilanciamento tra i principi"
+      },
+      {
+        "id": "cyber-c02-t16",
+        "title": "Applicazione al ciclo di sviluppo sicuro e Zero Trust"
+      },
+      {
+        "id": "cyber-c02-t17",
+        "title": "Caso integrato del portale enterprise"
+      },
+      {
+        "id": "cyber-c02-t18",
+        "title": "Errori concettuali frequenti"
+      },
+      {
+        "id": "cyber-c02-t19",
+        "title": "Glossario operativo"
+      },
+      {
+        "id": "cyber-c02-t20",
+        "title": "Domande e collegamenti per l’orale"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§2.1 — pagina PDF 22",
+        "cardIds": [
+          "cyber-c02-q001",
+          "cyber-c02-q002",
+          "cyber-c02-q003",
+          "cyber-c02-q004"
+        ]
+      },
+      {
+        "label": "§2.1 — pagina PDF 23",
+        "cardIds": [
+          "cyber-c02-q005",
+          "cyber-c02-q006",
+          "cyber-c02-q007",
+          "cyber-c02-q008"
+        ]
+      },
+      {
+        "label": "§2.1.1 — pagina PDF 23",
+        "cardIds": [
+          "cyber-c02-q009",
+          "cyber-c02-q010",
+          "cyber-c02-q011"
+        ]
+      },
+      {
+        "label": "§2.2 — pagina PDF 23",
+        "cardIds": [
+          "cyber-c02-q012",
+          "cyber-c02-q013",
+          "cyber-c02-q014",
+          "cyber-c02-q015"
+        ]
+      },
+      {
+        "label": "§2.3 — pagina PDF 24",
+        "cardIds": [
+          "cyber-c02-q016",
+          "cyber-c02-q017",
+          "cyber-c02-q018",
+          "cyber-c02-q019"
+        ]
+      },
+      {
+        "label": "§2.3.1 — pagina PDF 24",
+        "cardIds": [
+          "cyber-c02-q020"
+        ]
+      },
+      {
+        "label": "§2.4 — pagina PDF 24",
+        "cardIds": [
+          "cyber-c02-q021",
+          "cyber-c02-q022",
+          "cyber-c02-q023"
+        ]
+      },
+      {
+        "label": "§2.4 — pagina PDF 25",
+        "cardIds": [
+          "cyber-c02-q024"
+        ]
+      },
+      {
+        "label": "§2.4.1 — pagina PDF 25",
+        "cardIds": [
+          "cyber-c02-q025",
+          "cyber-c02-q026"
+        ]
+      },
+      {
+        "label": "§2.4.2 — pagina PDF 25",
+        "cardIds": [
+          "cyber-c02-q027"
+        ]
+      },
+      {
+        "label": "§2.5 — pagina PDF 25",
+        "cardIds": [
+          "cyber-c02-q028",
+          "cyber-c02-q029",
+          "cyber-c02-q030",
+          "cyber-c02-q031"
+        ]
+      },
+      {
+        "label": "§2.5.1 — pagina PDF 25",
+        "cardIds": [
+          "cyber-c02-q032"
+        ]
+      },
+      {
+        "label": "§2.5.1 — pagina PDF 26",
+        "cardIds": [
+          "cyber-c02-q033",
+          "cyber-c02-q034"
+        ]
+      },
+      {
+        "label": "§2.6 — pagina PDF 26",
+        "cardIds": [
+          "cyber-c02-q035",
+          "cyber-c02-q036",
+          "cyber-c02-q037",
+          "cyber-c02-q038",
+          "cyber-c02-q039"
+        ]
+      },
+      {
+        "label": "§2.7 — pagina PDF 26",
+        "cardIds": [
+          "cyber-c02-q040",
+          "cyber-c02-q041",
+          "cyber-c02-q042"
+        ]
+      },
+      {
+        "label": "§2.7 — pagina PDF 27",
+        "cardIds": [
+          "cyber-c02-q043"
+        ]
+      },
+      {
+        "label": "§2.7.1 — pagina PDF 27",
+        "cardIds": [
+          "cyber-c02-q044",
+          "cyber-c02-q045"
+        ]
+      },
+      {
+        "label": "§2.8 — pagina PDF 27",
+        "cardIds": [
+          "cyber-c02-q046",
+          "cyber-c02-q047",
+          "cyber-c02-q048"
+        ]
+      },
+      {
+        "label": "§2.8.1 — pagina PDF 27",
+        "cardIds": [
+          "cyber-c02-q049",
+          "cyber-c02-q050"
+        ]
+      },
+      {
+        "label": "§2.8.2 — pagina PDF 27",
+        "cardIds": [
+          "cyber-c02-q051"
+        ]
+      },
+      {
+        "label": "§2.8.3 — pagina PDF 27",
+        "cardIds": [
+          "cyber-c02-q052"
+        ]
+      },
+      {
+        "label": "§2.9 — pagina PDF 27",
+        "cardIds": [
+          "cyber-c02-q053",
+          "cyber-c02-q054"
+        ]
+      },
+      {
+        "label": "§2.9 — pagina PDF 28",
+        "cardIds": [
+          "cyber-c02-q055"
+        ]
+      },
+      {
+        "label": "§2.9.1 — pagina PDF 28",
+        "cardIds": [
+          "cyber-c02-q056",
+          "cyber-c02-q057"
+        ]
+      },
+      {
+        "label": "§2.10 — pagina PDF 28",
+        "cardIds": [
+          "cyber-c02-q058",
+          "cyber-c02-q059",
+          "cyber-c02-q060"
+        ]
+      },
+      {
+        "label": "§2.10.1 — pagina PDF 28",
+        "cardIds": [
+          "cyber-c02-q061",
+          "cyber-c02-q062"
+        ]
+      },
+      {
+        "label": "§2.11 — pagina PDF 28",
+        "cardIds": [
+          "cyber-c02-q063",
+          "cyber-c02-q064",
+          "cyber-c02-q065",
+          "cyber-c02-q066",
+          "cyber-c02-q067"
+        ]
+      },
+      {
+        "label": "§2.11.1 — pagina PDF 28",
+        "cardIds": [
+          "cyber-c02-q068",
+          "cyber-c02-q069",
+          "cyber-c02-q070"
+        ]
+      },
+      {
+        "label": "§2.12 — pagina PDF 29",
+        "cardIds": [
+          "cyber-c02-q071",
+          "cyber-c02-q072",
+          "cyber-c02-q073"
+        ]
+      },
+      {
+        "label": "§2.12.1 — pagina PDF 29",
+        "cardIds": [
+          "cyber-c02-q074",
+          "cyber-c02-q075"
+        ]
+      },
+      {
+        "label": "§2.13 — pagina PDF 29",
+        "cardIds": [
+          "cyber-c02-q076",
+          "cyber-c02-q077",
+          "cyber-c02-q078",
+          "cyber-c02-q079"
+        ]
+      },
+      {
+        "label": "§2.14 — pagina PDF 29",
+        "cardIds": [
+          "cyber-c02-q080",
+          "cyber-c02-q081",
+          "cyber-c02-q082"
+        ]
+      },
+      {
+        "label": "§2.14.1 — pagina PDF 30",
+        "cardIds": [
+          "cyber-c02-q083",
+          "cyber-c02-q084"
+        ]
+      },
+      {
+        "label": "§2.15 — pagina PDF 30",
+        "cardIds": [
+          "cyber-c02-q085",
+          "cyber-c02-q086",
+          "cyber-c02-q087",
+          "cyber-c02-q088",
+          "cyber-c02-q089",
+          "cyber-c02-q090",
+          "cyber-c02-q091",
+          "cyber-c02-q092"
+        ]
+      },
+      {
+        "label": "§2.16 — pagina PDF 31",
+        "cardIds": [
+          "cyber-c02-q093",
+          "cyber-c02-q094"
+        ]
+      },
+      {
+        "label": "§2.16.1 — pagina PDF 31",
+        "cardIds": [
+          "cyber-c02-q095",
+          "cyber-c02-q096"
+        ]
+      },
+      {
+        "label": "§2.16.2 — pagina PDF 31",
+        "cardIds": [
+          "cyber-c02-q097",
+          "cyber-c02-q098"
+        ]
+      },
+      {
+        "label": "§2.16.3 — pagina PDF 31",
+        "cardIds": [
+          "cyber-c02-q099",
+          "cyber-c02-q100"
+        ]
+      },
+      {
+        "label": "§2.16.4 — pagina PDF 31",
+        "cardIds": [
+          "cyber-c02-q101",
+          "cyber-c02-q102"
+        ]
+      },
+      {
+        "label": "§2.16.5 — pagina PDF 31",
+        "cardIds": [
+          "cyber-c02-q103",
+          "cyber-c02-q104"
+        ]
+      },
+      {
+        "label": "§2.17 — pagina PDF 31",
+        "cardIds": [
+          "cyber-c02-q105"
+        ]
+      },
+      {
+        "label": "§2.17.1 — pagina PDF 32",
+        "cardIds": [
+          "cyber-c02-q106",
+          "cyber-c02-q107",
+          "cyber-c02-q108",
+          "cyber-c02-q109",
+          "cyber-c02-q110"
+        ]
+      },
+      {
+        "label": "§2.17.2 — pagina PDF 32",
+        "cardIds": [
+          "cyber-c02-q111",
+          "cyber-c02-q112",
+          "cyber-c02-q113",
+          "cyber-c02-q114",
+          "cyber-c02-q115"
+        ]
+      },
+      {
+        "label": "§2.17.3 — pagina PDF 32",
+        "cardIds": [
+          "cyber-c02-q116",
+          "cyber-c02-q117",
+          "cyber-c02-q118",
+          "cyber-c02-q119"
+        ]
+      },
+      {
+        "label": "§2.17.3 — pagina PDF 33",
+        "cardIds": [
+          "cyber-c02-q120",
+          "cyber-c02-q121",
+          "cyber-c02-q122",
+          "cyber-c02-q123",
+          "cyber-c02-q124"
+        ]
+      },
+      {
+        "label": "§2.17.4 — pagina PDF 33",
+        "cardIds": [
+          "cyber-c02-q125",
+          "cyber-c02-q126",
+          "cyber-c02-q127"
+        ]
+      },
+      {
+        "label": "§2.17.5 — pagina PDF 33",
+        "cardIds": [
+          "cyber-c02-q128",
+          "cyber-c02-q129",
+          "cyber-c02-q130",
+          "cyber-c02-q131"
+        ]
+      },
+      {
+        "label": "§2.18 — pagina PDF 33",
+        "cardIds": [
+          "cyber-c02-q132",
+          "cyber-c02-q133",
+          "cyber-c02-q134",
+          "cyber-c02-q135",
+          "cyber-c02-q136",
+          "cyber-c02-q137",
+          "cyber-c02-q138",
+          "cyber-c02-q139"
+        ]
+      },
+      {
+        "label": "§2.18 — pagina PDF 34",
+        "cardIds": [
+          "cyber-c02-q140"
+        ]
+      },
+      {
+        "label": "§2.19 — pagina PDF 34",
+        "cardIds": [
+          "cyber-c02-q141",
+          "cyber-c02-q142",
+          "cyber-c02-q143",
+          "cyber-c02-q144",
+          "cyber-c02-q145",
+          "cyber-c02-q146",
+          "cyber-c02-q147",
+          "cyber-c02-q148",
+          "cyber-c02-q149"
+        ]
+      },
+      {
+        "label": "§2.20 — pagina PDF 34",
+        "cardIds": [
+          "cyber-c02-q150",
+          "cyber-c02-q151",
+          "cyber-c02-q152",
+          "cyber-c02-q153",
+          "cyber-c02-q154",
+          "cyber-c02-q155",
+          "cyber-c02-q156"
+        ]
+      },
+      {
+        "label": "§2.20 — pagina PDF 35",
+        "cardIds": [
+          "cyber-c02-q157",
+          "cyber-c02-q158",
+          "cyber-c02-q159",
+          "cyber-c02-q160",
+          "cyber-c02-q161",
+          "cyber-c02-q162",
+          "cyber-c02-q163",
+          "cyber-c02-q164",
+          "cyber-c02-q165"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cyber-c02-q001",
+      "topicId": "cyber-c02-t01",
+      "question": "Qual è la domanda centrale del design della sicurezza?",
+      "answer": "Come progettare un sistema affinché riservatezza, integrità e altre proprietà non dipendano soltanto da controlli aggiunti dopo lo sviluppo.",
+      "detail": "Il capitolo sposta l’attenzione dagli obiettivi della sicurezza alle regole per costruire sistemi coerentemente protetti fin dai requisiti.",
+      "example": "Un portale deve prevedere i permessi per area aziendale già nell’architettura, non soltanto dopo il rilascio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere security design con installazione finale di strumenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.1, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c02-q002",
+      "topicId": "cyber-c02-t01",
+      "question": "Perché la sicurezza non si ottiene semplicemente aumentando il numero di strumenti?",
+      "answer": "Perché dipende da coerenza di requisiti, responsabilità, confini e controlli, non dalla quantità di prodotti installati.",
+      "detail": "Persone, database, reti e servizi interagiscono: una singola interdipendenza insicura può vanificare molte difese.",
+      "example": "Un firewall non corregge un’API che permette di leggere l’offerta di un’altra unità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Equiparare complessità dell’architettura a maggiore protezione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.1, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c02-q003",
+      "topicId": "cyber-c02-t01",
+      "question": "Quali componenti interagenti di un sistema vanno considerati nel security design?",
+      "answer": "Persone, applicazioni, sistemi operativi, database, reti, dispositivi e servizi esterni.",
+      "detail": "Ogni componente può introdurre difetti, comportamenti imprevisti e dipendenze; il progetto deve valutarne le interazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitare il perimetro alla sola rete o all’applicazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.1, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c02-q004",
+      "topicId": "cyber-c02-t01",
+      "question": "Perché un sistema assolutamente sicuro non è realisticamente garantibile?",
+      "answer": "Perché complessità, errori potenziali, interdipendenze e minacce evolutive impediscono di escludere a priori ogni abuso o difetto.",
+      "detail": "Il manuale richiama la slide 19: l’ingegneria della sicurezza punta a ridurre vulnerabilità, limitare impatti, verificare controlli e gestire il rischio residuo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Promettere assenza totale di vulnerabilità come risultato del metodo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.1, pagina PDF 22"
+    },
+    {
+      "id": "cyber-c02-q005",
+      "topicId": "cyber-c02-t01",
+      "question": "Quali sono i quattro scopi pratici dell’ingegneria della sicurezza dichiarati nel capitolo?",
+      "answer": "Ridurre vulnerabilità, limitare le conseguenze di compromissioni, rendere i controlli verificabili e gestire il rischio residuo.",
+      "detail": "Sono obiettivi realisti rispetto all’impossibilità di eliminare ogni errore e ogni attacco.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostituire la gestione del rischio con l’idea di una protezione assoluta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.1, pagina PDF 23"
+    },
+    {
+      "id": "cyber-c02-q006",
+      "topicId": "cyber-c02-t01",
+      "question": "Che cosa significa security by design?",
+      "answer": "Integrare la sicurezza dalla definizione dei requisiti e lungo l’intero ciclo di vita del sistema.",
+      "detail": "Si differenzia dall’aggiunta tardiva di controlli dopo che architettura, flussi e autorizzazioni sono già stati fissati.",
+      "example": "Definire già in analisi chi può leggere e approvare una proposta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretarla come sola revisione di sicurezza prima della consegna.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.1, pagina PDF 23"
+    },
+    {
+      "id": "cyber-c02-q007",
+      "topicId": "cyber-c02-t01",
+      "question": "Che cosa significa security by default?",
+      "answer": "Configurazioni e comportamenti iniziali devono essere sicuri per l’utilizzo previsto, senza richiedere correzioni da parte dell’utente.",
+      "detail": "Descrive soprattutto lo stato di partenza del prodotto; il by design descrive invece come si progetta lungo il ciclo di vita.",
+      "example": "Un endpoint appena creato non è accessibile in assenza di una regola esplicita di autorizzazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare security by default e by design sinonimi perfetti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.1, pagina PDF 23"
+    },
+    {
+      "id": "cyber-c02-q008",
+      "topicId": "cyber-c02-t01",
+      "question": "Come distingui security by design da security by default in una risposta orale?",
+      "answer": "By design è il metodo che integra la sicurezza nei requisiti e nello sviluppo; by default è il comportamento sicuro già nelle impostazioni iniziali.",
+      "detail": "Un progetto può incorporare entrambi: stabilisce requisiti e meccanismi in anticipo e offre configurazioni di partenza prudenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che by default riguarda soltanto la scelta della password.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.1, pagina PDF 23"
+    },
+    {
+      "id": "cyber-c02-q009",
+      "topicId": "cyber-c02-t01",
+      "question": "Perché il requisito «aggiungere un login» non basta a proteggere le offerte aziendali?",
+      "answer": "Perché autenticare l’utente non definisce quali offerte, operazioni e condizioni siano autorizzate.",
+      "detail": "Un requisito completo chiarisce identità/soggetto, azione, specifica risorsa, condizioni del permesso e comportamento al fallimento.",
+      "example": "L’analista può leggere soltanto offerte dell’area autorizzata e il sistema nega ogni richiesta non verificabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere autenticazione e autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.1.1, pagina PDF 23"
+    },
+    {
+      "id": "cyber-c02-q010",
+      "topicId": "cyber-c02-t01",
+      "question": "Quali elementi deve contenere un requisito di sicurezza verificabile?",
+      "answer": "Soggetto, azione, risorsa, condizioni di autorizzazione e risposta del sistema quando il controllo non riesce.",
+      "detail": "Il manuale formula un requisito sull’accesso alle offerte: verifica il permesso per ogni richiesta e nega l’accesso se la verifica fallisce.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scrivere una prescrizione generica come «il sistema deve essere protetto».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.1.1, pagina PDF 23"
+    },
+    {
+      "id": "cyber-c02-q011",
+      "topicId": "cyber-c02-t01",
+      "question": "Come formuleresti un requisito verificabile per leggere un’offerta?",
+      "answer": "Consentire la lettura soltanto a utenti della unità organizzativa autorizzata, verificando il permesso a ogni richiesta e negando l’accesso se non verificabile.",
+      "detail": "È il caso esemplificativo del manuale: specifica azione, risorsa, contesto, controllo e comportamento sicuro in errore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concedere accesso a qualsiasi utente autenticato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.1.1, pagina PDF 23"
+    },
+    {
+      "id": "cyber-c02-q012",
+      "topicId": "cyber-c02-t02",
+      "question": "A quali autori e a quale lavoro risalgono gli otto principi classici del design della sicurezza?",
+      "answer": "Jerome H. Saltzer e Michael D. Schroeder, «The Protection of Information in Computer Systems» (1975).",
+      "detail": "Il manuale riporta gli otto principi come criteri di progettazione, non come garanzie matematiche assolute.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire tutti e dodici i principi originali ai due autori.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.2, pagina PDF 23"
+    },
+    {
+      "id": "cyber-c02-q013",
+      "topicId": "cyber-c02-t02",
+      "question": "Quali sono gli otto principi classici presentati nel corso?",
+      "answer": "Economy of mechanism; fail-safe defaults; complete mediation; open design; separation of privilege; least privilege; least common mechanism; psychological acceptability.",
+      "detail": "Il docente li presenta nelle slide 20–23, prima dei quattro principi aggiuntivi delle slide 24–25.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dimenticare open design o confondere least common mechanism con least privilege.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.2, pagina PDF 23"
+    },
+    {
+      "id": "cyber-c02-q014",
+      "topicId": "cyber-c02-t02",
+      "question": "Quali quattro principi aggiuntivi il docente affianca agli otto classici?",
+      "answer": "Isolation, encapsulation, modularity e layering.",
+      "detail": "Il manuale li attribuisce alle slide 24–25 e li spiega in relazione alle architetture moderne.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentarli come parte dei soli otto principi classici.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.2, pagina PDF 23"
+    },
+    {
+      "id": "cyber-c02-q015",
+      "topicId": "cyber-c02-t02",
+      "question": "Come vanno interpretati i dodici principi progettuali del capitolo?",
+      "answer": "Come linee guida e criteri di valutazione che possono rafforzarsi o entrare in tensione, non come ricette automatiche.",
+      "detail": "Il progetto deve bilanciare rischi, costi, disponibilità, prestazioni e usabilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che applicare ciascun principio separatamente garantisca sicurezza totale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.2, pagina PDF 23"
+    },
+    {
+      "id": "cyber-c02-q016",
+      "topicId": "cyber-c02-t03",
+      "question": "Che cosa afferma economy of mechanism?",
+      "answer": "I meccanismi di protezione dovrebbero essere quanto più semplici e piccoli possibile compatibilmente con i requisiti.",
+      "detail": "Meno eccezioni e dipendenze facilitano analisi, testing, revisione e manutenzione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere semplicità con eliminazione di controlli indispensabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.3, pagina PDF 24"
+    },
+    {
+      "id": "cyber-c02-q017",
+      "topicId": "cyber-c02-t03",
+      "question": "Perché la complessità di un meccanismo di sicurezza può aumentare il rischio?",
+      "answer": "Perché moltiplica casi da verificare, regole sovrapposte, dipendenze, possibili errori e percorsi di accesso non previsti.",
+      "detail": "Un sistema difficile da comprendere è difficile da testare esaustivamente e mantenere coerente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assumere che più condizioni e servizi rendano sempre più sicura l’autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.3, pagina PDF 24"
+    },
+    {
+      "id": "cyber-c02-q018",
+      "topicId": "cyber-c02-t03",
+      "question": "Qual è l’esempio del manuale relativo a cinque moduli con controlli sui permessi?",
+      "answer": "Cinque moduli che autorizzano in modi differenti rischiano divergenze; un modello uniforme e punti di enforcement coerenti risultano più verificabili.",
+      "detail": "Una progettazione comune non elimina la necessità di controllare concretamente ogni operazione e risorsa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare la centralizzazione come scusa per omettere verifiche per oggetto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.3, pagina PDF 24"
+    },
+    {
+      "id": "cyber-c02-q019",
+      "topicId": "cyber-c02-t03",
+      "question": "Perché un punto centrale di controllo può diventare un problema nonostante economy of mechanism?",
+      "answer": "Perché, se unico, può trasformarsi in un punto di guasto comune e pregiudicare la disponibilità.",
+      "detail": "Occorre bilanciare semplicità, isolamento dei guasti e resilienza, applicando congiuntamente i diversi principi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Centralizzare senza progettare la continuità del servizio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.3, pagina PDF 24"
+    },
+    {
+      "id": "cyber-c02-q020",
+      "topicId": "cyber-c02-t03",
+      "question": "Come risponderesti all’orale: perché un meccanismo semplice è spesso preferibile?",
+      "answer": "Perché è più facile da comprendere, verificare, testare e mantenere, e riduce i percorsi non previsti che potrebbero sfuggire all’analisi.",
+      "detail": "È la motivazione esplicitamente proposta dal manuale per economy of mechanism.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitarti a dire «è più economico» senza legarlo alla verificabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.3.1, pagina PDF 24"
+    },
+    {
+      "id": "cyber-c02-q021",
+      "topicId": "cyber-c02-t04",
+      "question": "Come si definisce il principio fail-safe defaults?",
+      "answer": "In assenza di autorizzazione positiva, l’accesso va negato; il permesso richiede una regola esplicita.",
+      "detail": "La concessione dipende dalla presenza del permesso, non dalla sola assenza di un divieto. È il criterio deny by default/allowlist.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Impostare tutto aperto e bloccare soltanto poche eccezioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.4, pagina PDF 24"
+    },
+    {
+      "id": "cyber-c02-q022",
+      "topicId": "cyber-c02-t04",
+      "question": "Che differenza esiste fra deny by default e una logica fondata su denylist?",
+      "answer": "Deny by default ammette solo operazioni esplicitamente autorizzate; una denylist consente per impostazione iniziale salvo divieti elencati.",
+      "detail": "Con risorse riservate, dimenticare una voce nella denylist potrebbe esporre dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che i due approcci abbiano lo stesso rischio di omissione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.4, pagina PDF 24"
+    },
+    {
+      "id": "cyber-c02-q023",
+      "topicId": "cyber-c02-t04",
+      "question": "Qual è il rischio dell’archivio con cento documenti descritto dal manuale?",
+      "answer": "Se la lettura è concessa a tutti salvo documenti bloccati, una sola regola di blocco dimenticata espone dati riservati.",
+      "detail": "La strategia alternativa nega tutto finché non esista un’autorizzazione positiva e specifica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affidare l’accesso al fatto che un documento non sia in una lista di divieti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.4, pagina PDF 24"
+    },
+    {
+      "id": "cyber-c02-q024",
+      "topicId": "cyber-c02-t04",
+      "question": "Perché «utente autenticato» non implica accesso a tutti i documenti?",
+      "answer": "Perché serve anche l’autorizzazione su una risorsa specifica, secondo ruolo, appartenenza e contesto.",
+      "detail": "Un documento di un’altra area o cliente può restare riservato pur a fronte di un login valido.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare una sessione attiva come permesso universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.4, pagina PDF 25"
+    },
+    {
+      "id": "cyber-c02-q025",
+      "topicId": "cyber-c02-t04",
+      "question": "Fail-safe defaults significa bloccare sempre qualunque funzione in caso di guasto?",
+      "answer": "No: occorre definire preventivamente un comportamento appropriato alla funzione, bilanciando riservatezza, integrità, disponibilità e sicurezza fisica.",
+      "detail": "Per dati riservati un servizio autorizzativo indisponibile porta normalmente a negare l’accesso; per emergenze un arresto indiscriminato può essere pericoloso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare «fail-safe» come indisponibilità indiscriminata anche per funzioni salvavita.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.4.1, pagina PDF 25"
+    },
+    {
+      "id": "cyber-c02-q026",
+      "topicId": "cyber-c02-t04",
+      "question": "Quale comportamento è normalmente prudente se fallisce la verifica autorizzativa su dati sensibili?",
+      "answer": "Negare l’accesso in assenza di una verifica valida.",
+      "detail": "Il manuale avverte che vanno comunque previste procedure di eccezione o emergenza quando il contesto lo richiede.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Consentire per comodità quando il controllo non risponde.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.4.1, pagina PDF 25"
+    },
+    {
+      "id": "cyber-c02-q027",
+      "topicId": "cyber-c02-t04",
+      "question": "Come si applica fail-safe defaults a un nuovo endpoint GET /offerte/{id}?",
+      "answer": "Deve negare l’accesso finché non viene stabilita una regola esplicita che autorizzi l’utente a leggere il record richiesto.",
+      "detail": "L’assenza di configurazione del controllo non deve diventare un permesso implicito.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pubblicare un endpoint aperto temporaneamente in attesa di aggiungere i ruoli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.4.2, pagina PDF 25"
+    },
+    {
+      "id": "cyber-c02-q028",
+      "topicId": "cyber-c02-t05",
+      "question": "Che cosa richiede complete mediation?",
+      "answer": "Che ogni operazione che accede a una risorsa sia sottoposta a un appropriato controllo di autorizzazione.",
+      "detail": "Il controllo deve valere per ogni soggetto e ogni percorso tecnico, sullo specifico oggetto richiesto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Controllare i permessi soltanto all’avvio della sessione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.5, pagina PDF 25"
+    },
+    {
+      "id": "cyber-c02-q029",
+      "topicId": "cyber-c02-t05",
+      "question": "Perché il controllo autorizzativo eseguito solo una volta può diventare insufficiente?",
+      "answer": "Perché permessi, oggetti e contesto possono cambiare e una richiesta successiva può usare un percorso diverso.",
+      "detail": "Il principio mira a evitare che autorizzazioni ormai non pertinenti vengano riutilizzate senza verifica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dare per sempre valido un permesso concesso al login.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.5, pagina PDF 25"
+    },
+    {
+      "id": "cyber-c02-q030",
+      "topicId": "cyber-c02-t05",
+      "question": "Perché nascondere il pulsante «Elimina offerta» non basta a proteggere l’operazione?",
+      "answer": "Perché la richiesta HTTP può essere inviata direttamente senza passare dall’interfaccia.",
+      "detail": "Il server deve verificare ruolo, azione e oggetto a ogni chiamata sensibile, indipendentemente da dove origina.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere una limitazione UI con enforcement lato server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.5, pagina PDF 25"
+    },
+    {
+      "id": "cyber-c02-q031",
+      "topicId": "cyber-c02-t05",
+      "question": "A quale livello devono essere collocati i controlli di complete mediation per un’applicazione web?",
+      "answer": "Lato server e sullo specifico oggetto/azione; non soltanto nel browser o nella navigazione mostrata.",
+      "detail": "Il manuale cita anche richieste AJAX e integrazioni: nessun endpoint deve restare privo di autorizzazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere sicuro un servizio perché la pagina non espone il link alla API.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.5, pagina PDF 25"
+    },
+    {
+      "id": "cyber-c02-q032",
+      "topicId": "cyber-c02-t05",
+      "question": "Complete mediation proibisce qualsiasi cache delle autorizzazioni?",
+      "answer": "No: una cache è ammissibile se legata correttamente a identità, risorsa, azione e contesto ed è coerentemente aggiornata o invalidata.",
+      "detail": "La richiesta è verificare ogni accesso con informazioni attendibili, non obbligatoriamente interrogare un database esterno ogni volta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che complete mediation implichi sempre una query remota per richiesta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.5.1, pagina PDF 25"
+    },
+    {
+      "id": "cyber-c02-q033",
+      "topicId": "cyber-c02-t05",
+      "question": "Qual è il pericolo di conservare per ore un’autorizzazione in cache dopo la revoca di un ruolo?",
+      "answer": "L’utente può continuare a eseguire operazioni non più consentite finché la cache non scade o viene invalidata.",
+      "detail": "Tempi di revoca, durata della cache e criticità della risorsa devono essere progettati in modo coerente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invalidare i permessi al mutare dei ruoli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.5.1, pagina PDF 26"
+    },
+    {
+      "id": "cyber-c02-q034",
+      "topicId": "cyber-c02-t05",
+      "question": "Quali dimensioni del contesto devono essere considerate nel caching autorizzativo sicuro?",
+      "answer": "Identità, azione, risorsa, contesto, durata ed eventi di modifica o revoca dei privilegi.",
+      "detail": "La cache deve consentire una decisione aggiornata sull’accesso pertinente, evitando il riuso di permessi validi per altre risorse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare un semplice flag globale «autorizzato» per ogni operazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.5.1, pagina PDF 26"
+    },
+    {
+      "id": "cyber-c02-q035",
+      "topicId": "cyber-c02-t06",
+      "question": "Che cosa afferma open design?",
+      "answer": "La sicurezza deve reggere anche quando il funzionamento del meccanismo è noto: devono essere protetti i segreti specifici, come chiavi e credenziali.",
+      "detail": "Un design analizzabile da ricercatori e revisori evita di basare le garanzie sull’ignoranza dell’avversario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Equiparare design aperto alla diffusione pubblica di chiavi e credenziali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.6, pagina PDF 26"
+    },
+    {
+      "id": "cyber-c02-q036",
+      "topicId": "cyber-c02-t06",
+      "question": "Che cosa si intende per security through obscurity e perché non basta?",
+      "answer": "Affidarsi alla segretezza del funzionamento o della struttura del sistema come principale difesa.",
+      "detail": "Nascondere la rotta di una API o la descrizione di un algoritmo non sostituisce controlli e proprietà robuste.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che cambiare il nome di un endpoint equivalga ad autorizzarlo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.6, pagina PDF 26"
+    },
+    {
+      "id": "cyber-c02-q037",
+      "topicId": "cyber-c02-t06",
+      "question": "Come si applica open design alla crittografia?",
+      "answer": "Un algoritmo crittografico robusto deve rimanere sicuro anche se è pubblicamente descritto, grazie alla solidità dello schema e alla segretezza delle chiavi.",
+      "detail": "La revisione pubblica aiuta a scoprire difetti, ma non è garanzia assoluta di sicurezza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che un algoritmo proprietario sia sicuro solo perché segreto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.6, pagina PDF 26"
+    },
+    {
+      "id": "cyber-c02-q038",
+      "topicId": "cyber-c02-t06",
+      "question": "Open design obbliga a rendere pubbliche configurazioni sensibili e topologia interna?",
+      "answer": "No: credenziali, chiavi private, configurazioni operative e dettagli di esposizione vanno protetti secondo la policy.",
+      "detail": "Il principio riguarda la verificabilità del meccanismo, non l’indiscriminata condivisione di informazioni utili a un attacco.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere apertura della progettazione con assenza di segreti operativi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.6, pagina PDF 26"
+    },
+    {
+      "id": "cyber-c02-q039",
+      "topicId": "cyber-c02-t06",
+      "question": "Perché un design pubblico e molto revisionato non elimina il rischio cyber?",
+      "answer": "Perché possono rimanere difetti nell’implementazione, nelle configurazioni o nelle dipendenze, e le minacce cambiano.",
+      "detail": "Restano necessari test, patch, vulnerability management e capacità di risposta agli incidenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare la pubblicazione del codice come certificazione automatica di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.6, pagina PDF 26"
+    },
+    {
+      "id": "cyber-c02-q040",
+      "topicId": "cyber-c02-t07",
+      "question": "Qual è il significato di separation of privilege?",
+      "answer": "Un’operazione critica dovrebbe richiedere più condizioni indipendenti di autorizzazione, non un unico fattore o controllo.",
+      "detail": "L’obiettivo è impedire che la compromissione di un solo elemento basti a completare un’azione sensibile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ridurre il principio alla presenza di due password.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.7, pagina PDF 26"
+    },
+    {
+      "id": "cyber-c02-q041",
+      "topicId": "cyber-c02-t07",
+      "question": "Perché la MFA è un’applicazione, ma non una definizione completa, di separation of privilege?",
+      "answer": "Perché richiede più fattori indipendenti di autenticazione, mentre il principio comprende anche doppia approvazione e verifiche di ruolo o contesto.",
+      "detail": "La separazione si può attuare a livello tecnico e organizzativo; il manuale distingue entrambe le forme.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare MFA e separation of privilege come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.7, pagina PDF 26"
+    },
+    {
+      "id": "cyber-c02-q042",
+      "topicId": "cyber-c02-t07",
+      "question": "In che cosa consiste l’esempio organizzativo del pagamento a doppia approvazione?",
+      "answer": "Un addetto prepara il pagamento ma un altro soggetto autorizzato deve approvarlo prima dell’esecuzione.",
+      "detail": "L’esempio riduce rischi di frode e di errore non rilevato grazie alla separazione delle condizioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Consentire alla stessa persona di predisporre e autorizzare da sola tutte le operazioni critiche.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.7, pagina PDF 26"
+    },
+    {
+      "id": "cyber-c02-q043",
+      "topicId": "cyber-c02-t07",
+      "question": "Come si applica separation of privilege a una funzione amministrativa critica?",
+      "answer": "Richiedendo MFA e verifiche ulteriori su ruolo e contesto, quando queste condizioni sono realmente indipendenti.",
+      "detail": "La compromissione di una credenziale non deve essere sufficiente a ottenere l’autorizzazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare due controlli dipendenti dallo stesso segreto come fattori indipendenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.7, pagina PDF 27"
+    },
+    {
+      "id": "cyber-c02-q044",
+      "topicId": "cyber-c02-t07",
+      "question": "Qual è la differenza fra separation of privilege e separation of duties?",
+      "answer": "Il primo richiede più condizioni indipendenti per operazioni critiche; il secondo separa specificamente compiti incompatibili tra persone o ruoli.",
+      "detail": "Separation of duties è una misura organizzativa strettamente collegata al principio generale.",
+      "example": "Chi registra un fornitore non dovrebbe poter autorizzare da solo i relativi pagamenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Definire la separation of duties come semplice MFA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.7.1, pagina PDF 27"
+    },
+    {
+      "id": "cyber-c02-q045",
+      "topicId": "cyber-c02-t07",
+      "question": "Perché dividere l’inserimento di un fornitore dall’autorizzazione dei pagamenti è rilevante?",
+      "answer": "Perché impedisce che una sola persona controlli interamente un processo economico sensibile.",
+      "detail": "La separazione riduce opportunità di frode, errori e comportamenti non verificati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere sufficiente la presenza di un log se manca ogni separazione di compiti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.7.1, pagina PDF 27"
+    },
+    {
+      "id": "cyber-c02-q046",
+      "topicId": "cyber-c02-t08",
+      "question": "Come si definisce least privilege?",
+      "answer": "Assegnare a ogni utente, processo o componente soltanto i privilegi strettamente necessari a svolgere attività autorizzate, nel tempo e contesto richiesti.",
+      "detail": "I privilegi possono riguardare lettura, modifica, cancellazione, installazione software o amministrazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Fornire permessi amministrativi per comodità a chi necessita soltanto di consultazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.8, pagina PDF 27"
+    },
+    {
+      "id": "cyber-c02-q047",
+      "topicId": "cyber-c02-t08",
+      "question": "In che modo least privilege limita gli effetti di un account compromesso?",
+      "answer": "Riduce le operazioni e le risorse a cui l’aggressore può accedere usando i privilegi dell’account.",
+      "detail": "L’approccio limita l’abuso e la propagazione di un incidente, senza prevenire necessariamente ogni compromissione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che least privilege impedisca il furto di credenziali in sé.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.8, pagina PDF 27"
+    },
+    {
+      "id": "cyber-c02-q048",
+      "topicId": "cyber-c02-t08",
+      "question": "Perché un servizio di sola lettura non deve usare un account DB amministratore?",
+      "answer": "Perché una compromissione consentirebbe operazioni di modifica, cancellazione e configurazione non necessarie al servizio.",
+      "detail": "Le credenziali dovrebbero consentire soltanto SELECT sugli oggetti indispensabili.",
+      "example": "Un processo di reportistica non deve poter cancellare tabelle.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire permessi più elevati di quelli utili alla funzione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.8, pagina PDF 27"
+    },
+    {
+      "id": "cyber-c02-q049",
+      "topicId": "cyber-c02-t08",
+      "question": "Che cosa aggiunge la dimensione temporale al minimo privilegio?",
+      "answer": "Un permesso elevato può essere concesso per la durata limitata di un’attività, invece di mantenerlo permanente.",
+      "detail": "Il manuale collega questo criterio a just-in-time access e privileged access management.",
+      "example": "Privilegi amministrativi attivati soltanto per una finestra di manutenzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare least privilege soltanto come elenco statico di ruoli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.8.1, pagina PDF 27"
+    },
+    {
+      "id": "cyber-c02-q050",
+      "topicId": "cyber-c02-t08",
+      "question": "Perché i privilegi devono essere valutati anche rispetto al contesto?",
+      "answer": "Perché ciò che è necessario per una funzione in un momento o ambito non lo è automaticamente in ogni altra situazione.",
+      "detail": "Il principio richiede controllo della necessità effettiva, delle autorizzazioni e delle eccezioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Lasciare invariati i diritti dopo un cambio di mansione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.8.1, pagina PDF 27"
+    },
+    {
+      "id": "cyber-c02-q051",
+      "topicId": "cyber-c02-t08",
+      "question": "Che differenza c’è tra least privilege e need-to-know?",
+      "answer": "Least privilege limita in generale le operazioni consentite; need-to-know limita soprattutto l’accesso a informazioni necessarie alla mansione.",
+      "detail": "I due criteri sono affini ma il secondo è specificamente orientato alla conoscibilità dei dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dare per scontato che ogni utente con permesso tecnico debba leggere tutti i documenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.8.2, pagina PDF 27"
+    },
+    {
+      "id": "cyber-c02-q052",
+      "topicId": "cyber-c02-t08",
+      "question": "Quale limite pratico presenta un’applicazione troppo rigida del minimo privilegio?",
+      "answer": "Può impedire attività lecite; occorrono analisi delle mansioni, revisione dei diritti e procedure controllate per le eccezioni.",
+      "detail": "L’obiettivo è fornire i permessi necessari, non negare indistintamente ogni operazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere least privilege con blocco completo delle attività.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.8.3, pagina PDF 27"
+    },
+    {
+      "id": "cyber-c02-q053",
+      "topicId": "cyber-c02-t09",
+      "question": "Che cosa stabilisce least common mechanism?",
+      "answer": "Ridurre quando possibile meccanismi e risorse condivise tra soggetti con diversi livelli di fiducia o esigenze di sicurezza.",
+      "detail": "La condivisione crea interazioni e può favorire interferenze, fughe di dati e propagazione di guasti tra domini.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere con least privilege: il tema qui è ciò che viene condiviso, non soltanto quanti permessi ha il singolo account.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.9, pagina PDF 27"
+    },
+    {
+      "id": "cyber-c02-q054",
+      "topicId": "cyber-c02-t09",
+      "question": "Quale pericolo illustra l’esempio di due applicazioni che condividono una directory temporanea?",
+      "answer": "Permessi errati possono consentire a un’applicazione di leggere i file dell’altra.",
+      "detail": "La separazione delle directory o appropriati meccanismi di isolamento riducono la possibilità di violazione fra domini.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dare per sicura una risorsa temporanea solo perché non è un database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.9, pagina PDF 27"
+    },
+    {
+      "id": "cyber-c02-q055",
+      "topicId": "cyber-c02-t09",
+      "question": "Least common mechanism vieta ogni libreria o servizio condiviso?",
+      "answer": "No: componenti comuni maturi e verificati possono essere migliori di molte copie indipendenti e vulnerabili.",
+      "detail": "Occorre bilanciare riuso con rischio di propagazione, perdita di isolamento o singolo punto di guasto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare il principio come divieto assoluto di riuso software.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.9, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q056",
+      "topicId": "cyber-c02-t09",
+      "question": "Come si applica least common mechanism in un ambiente multi-tenant?",
+      "answer": "Separando logicamente identità, dati, permessi, percorsi di esecuzione e risorse, pur utilizzando un’infrastruttura comune.",
+      "detail": "La condivisione può essere necessaria economicamente; l’obiettivo è limitare e proteggere le parti condivise.",
+      "example": "Un portale SaaS deve impedire che il tenant A legga i dati del tenant B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare il multi-tenant incompatibile con la sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.9.1, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q057",
+      "topicId": "cyber-c02-t09",
+      "question": "Perché il riuso di infrastruttura in multi-tenant richiede controlli aggiuntivi?",
+      "answer": "Perché errori di isolamento possono permettere a un tenant di influire su dati o operazioni di un altro.",
+      "detail": "L’interdipendenza deve essere analizzata a livello logico, autorizzativo e delle risorse condivise.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presumere che organizzazioni diverse siano separate solo perché hanno utenti diversi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.9.1, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q058",
+      "topicId": "cyber-c02-t10",
+      "question": "Che cosa significa psychological acceptability?",
+      "answer": "Progettare protezioni comprensibili, utilizzabili e compatibili con le attività lecite, riducendo errori e aggiramenti.",
+      "detail": "Un sistema sicuro sulla carta ma troppo scomodo induce pratiche operative insicure.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che sicurezza e usabilità siano necessariamente in opposizione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.10, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q059",
+      "topicId": "cyber-c02-t10",
+      "question": "Quali caratteristiche dovrebbe avere un controllo sicuro e usabile?",
+      "answer": "Istruzioni chiare, errori comprensibili, recupero adeguato e verifiche proporzionate al rischio.",
+      "detail": "La user experience dovrebbe rendere più facile comportarsi correttamente che eludere le regole.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Rimuovere i controlli indispensabili per rendere più rapida qualsiasi operazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.10, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q060",
+      "topicId": "cyber-c02-t10",
+      "question": "Quale comportamento insicuro può derivare da una gestione eccessivamente complessa delle password?",
+      "answer": "Gli utenti possono annotarle in luoghi non protetti o adottare scorciatoie.",
+      "detail": "Il manuale cita password manager, autenticazione centralizzata e MFA ben progettata come possibili riduzioni del problema.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare errori umani ricorrenti solo come indisciplina e non come problema di design.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.10, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q061",
+      "topicId": "cyber-c02-t10",
+      "question": "Psychological acceptability richiede l’eliminazione di ogni frizione nell’esperienza utente?",
+      "answer": "No: operazioni rischiose possono giustificare verifiche o conferme supplementari, purché siano motivate e progettate bene.",
+      "detail": "L’usabilità deve convivere con i controlli necessari alla sicurezza.",
+      "example": "Una seconda conferma per un trasferimento economico rilevante.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dare priorità assoluta a un clic in meno rispetto al rischio dell’operazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.10.1, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q062",
+      "topicId": "cyber-c02-t10",
+      "question": "Qual è il rapporto fra sicurezza e comportamento umano secondo psychological acceptability?",
+      "answer": "Il modo in cui i controlli vengono presentati influenza la probabilità che gli utenti li rispettino correttamente.",
+      "detail": "Interfacce incomprensibili e messaggi poco chiari possono favorire errori anche quando la logica tecnica funziona.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare la formazione e l’interfaccia come elementi completamente esterni alla sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.10.1, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q063",
+      "topicId": "cyber-c02-t11",
+      "question": "Qual è il principio isolation?",
+      "answer": "Separare componenti, utenti, processi e risorse che non devono influenzarsi liberamente, controllando le comunicazioni ammesse.",
+      "detail": "La slide cita risorse pubbliche e critiche, processi di utenti differenti e meccanismi di sicurezza da proteggere.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare isolamento come impossibilità totale di comunicare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.11, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q064",
+      "topicId": "cyber-c02-t11",
+      "question": "Quali tre applicazioni di isolation menziona esplicitamente il docente?",
+      "answer": "Separazione fra servizi pubblici e risorse critiche; separazione di file e processi tra utenti; isolamento dei meccanismi di sicurezza da altre risorse.",
+      "detail": "Queste separazioni si applicano a reti, sistemi operativi e architetture applicative.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitare isolation alla sola suddivisione di una LAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.11, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q065",
+      "topicId": "cyber-c02-t11",
+      "question": "Che cosa si vuole ottenere isolando un server web pubblico da un database interno?",
+      "answer": "Evitare che la compromissione del web server dia automaticamente accesso illimitato al database e agli strumenti amministrativi.",
+      "detail": "La separazione in zone e la protezione degli attraversamenti limitano il possibile blast radius.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Collocare ogni sistema critico nella stessa zona del server esposto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.11, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q066",
+      "topicId": "cyber-c02-t11",
+      "question": "Che cosa indica blast radius nel contesto dell’isolamento?",
+      "answer": "L’estensione potenziale delle conseguenze di una compromissione.",
+      "detail": "L’isolamento è utile perché circoscrive gli effetti di un incidente a domini o risorse definiti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che isolamento significhi impedire sempre l’attacco iniziale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.11, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q067",
+      "topicId": "cyber-c02-t11",
+      "question": "In che modo virtualizzazione e container possono contribuire all’isolamento?",
+      "answer": "Attraverso confini di esecuzione, namespace, hypervisor, policy e risorse dedicate, purché configurati correttamente.",
+      "detail": "Il manuale avverte che l’efficacia non è automatica e dipende dai limiti della tecnologia e dalla configurazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che container o VM rendano qualsiasi configurazione intrinsecamente sicura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.11, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q068",
+      "topicId": "cyber-c02-t11",
+      "question": "Che cos’è un trust boundary?",
+      "answer": "Un confine tra domini con livelli di fiducia o regole differenti, il cui attraversamento richiede verifiche appropriate.",
+      "detail": "Il browser non è controllato dal server: ogni richiesta e parametro ricevuto attraversa un confine di fiducia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Fidarsi automaticamente dei dati provenienti da un client autenticato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.11.1, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q069",
+      "topicId": "cyber-c02-t11",
+      "question": "Perché i parametri che arrivano dal browser devono essere verificati dal server?",
+      "answer": "Perché attraversano il confine tra ambiente non fidato dell’utente e applicazione, e possono essere manipolati.",
+      "detail": "Il server deve applicare validazione e controlli autorizzativi secondo il contesto e la risorsa richiesta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presumere che i controlli effettuati dal frontend siano impossibili da aggirare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.11.1, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q070",
+      "topicId": "cyber-c02-t11",
+      "question": "Isolamento vuol dire impedire qualsiasi interazione fra due componenti?",
+      "answer": "No: consente interazioni necessarie attraverso interfacce e canali definiti, autenticati e autorizzati.",
+      "detail": "La separazione mira a controllare ciò che attraversa il confine e limitarne gli effetti, non a eliminare le funzioni di business.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Equiparare isolation a un sistema completamente scollegato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.11.1, pagina PDF 28"
+    },
+    {
+      "id": "cyber-c02-q071",
+      "topicId": "cyber-c02-t12",
+      "question": "Che cosa richiede encapsulation in un sistema sicuro?",
+      "answer": "Organizzare dati e funzioni in componenti ben definiti e controllare l’accesso tramite interfacce stabilite.",
+      "detail": "Il principio impedisce che componenti esterni manipolino direttamente risorse interne senza i controlli previsti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che sia soltanto un dettaglio della sintassi a oggetti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.12, pagina PDF 29"
+    },
+    {
+      "id": "cyber-c02-q072",
+      "topicId": "cyber-c02-t12",
+      "question": "Qual è l’esempio del manuale relativo al componente delle credenziali?",
+      "answer": "Il componente non espone chiavi o hash, ma fornisce operazioni limitate come verifica delle credenziali o autorizzazione.",
+      "detail": "I dati interni restano protetti e le interazioni passano per metodi o API controllati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Offrire all’esterno un endpoint che restituisce segreti interni per «semplificare» l’integrazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.12, pagina PDF 29"
+    },
+    {
+      "id": "cyber-c02-q073",
+      "topicId": "cyber-c02-t12",
+      "question": "Perché interfacce e API di dominio migliorano la verificabilità della sicurezza?",
+      "answer": "Perché concentrano le operazioni consentite in punti espliciti dove possono essere applicate le policy.",
+      "detail": "Accessi diretti e indiscriminati alle tabelle rendono difficile capire dove siano davvero controllate le autorizzazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Permettere a ogni componente di modificare direttamente qualsiasi tabella.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.12, pagina PDF 29"
+    },
+    {
+      "id": "cyber-c02-q074",
+      "topicId": "cyber-c02-t12",
+      "question": "Qual è la differenza tra encapsulation e isolation?",
+      "answer": "Isolation separa domini e limita influenze reciproche; encapsulation disciplina le interfacce e le operazioni attraverso cui si interagisce.",
+      "detail": "Un dominio isolato con API non protette resta vulnerabile; un componente ben incapsulato che condivida privilegi con codice non fidato può essere comunque compromesso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare i due termini come sinonimi indistinti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.12.1, pagina PDF 29"
+    },
+    {
+      "id": "cyber-c02-q075",
+      "topicId": "cyber-c02-t12",
+      "question": "Perché isolation e encapsulation si rafforzano ma non si sostituiscono?",
+      "answer": "L’isolamento protegge i confini; l’incapsulamento controlla le modalità d’accesso attraverso quei confini.",
+      "detail": "L’esistenza di una sola delle due proprietà non risolve tutte le esposizioni dell’altra.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che una API è sicura solo perché raggiungibile da una rete separata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.12.1, pagina PDF 29"
+    },
+    {
+      "id": "cyber-c02-q076",
+      "topicId": "cyber-c02-t13",
+      "question": "Come definisce modularity il manuale?",
+      "answer": "Suddividere le funzioni di sicurezza in componenti con responsabilità precise, interfacce esplicite e dipendenze controllate.",
+      "detail": "La modularità facilita verifica, manutenzione, sostituzione e riuso dei meccanismi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere modularità con creazione indiscriminata di microservizi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.13, pagina PDF 29"
+    },
+    {
+      "id": "cyber-c02-q077",
+      "topicId": "cyber-c02-t13",
+      "question": "Quali funzioni di sicurezza possono essere organizzate in moduli distinti?",
+      "answer": "Autenticazione, autorizzazione, gestione dei segreti, cifratura, audit, monitoraggio e backup.",
+      "detail": "La separazione consente ruoli, test, versioni e procedure di aggiornamento più chiari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Inserire funzioni di controllo in punti duplicati senza responsabilità definite.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.13, pagina PDF 29"
+    },
+    {
+      "id": "cyber-c02-q078",
+      "topicId": "cyber-c02-t13",
+      "question": "In che modo la modularità facilita la manutenzione e il test della sicurezza?",
+      "answer": "Perché ciascun componente ha compiti delimitati, interfacce note e un perimetro verificabile.",
+      "detail": "Un modulo di autenticazione può essere aggiornato senza confondere le sue regole con la logica economica delle offerte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che la modularità eviti automaticamente i test di integrazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.13, pagina PDF 29"
+    },
+    {
+      "id": "cyber-c02-q079",
+      "topicId": "cyber-c02-t13",
+      "question": "Qual è il rischio di una modularità eccessiva?",
+      "answer": "Può aumentare interfacce, dipendenze, complessità operativa e superficie d’attacco.",
+      "detail": "Il principio deve essere bilanciato con economy of mechanism, isolation e least common mechanism.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assumere che più moduli equivalgano sempre a meno rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.13, pagina PDF 29"
+    },
+    {
+      "id": "cyber-c02-q080",
+      "topicId": "cyber-c02-t14",
+      "question": "Che cosa significa layering nella progettazione della sicurezza?",
+      "answer": "Proteggere una risorsa con più controlli complementari su livelli diversi, per non dipendere da una sola barriera.",
+      "detail": "È collegato alla defense in depth: il fallimento di un controllo non deve causare automaticamente l’intera compromissione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare tre copie dello stesso controllo con identica vulnerabilità come unica strategia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.14, pagina PDF 29"
+    },
+    {
+      "id": "cyber-c02-q081",
+      "topicId": "cyber-c02-t14",
+      "question": "Quali livelli di protezione vengono proposti per un database riservato?",
+      "answer": "Firewall e segmentazione, autenticazione e autorizzazione, minimo privilegio sul DB, segreti e canali protetti, audit, monitoraggio, backup e recupero.",
+      "detail": "Il manuale sottolinea che un singolo firewall non è sufficiente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affidare tutta la riservatezza a un filtro di rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.14, pagina PDF 29"
+    },
+    {
+      "id": "cyber-c02-q082",
+      "topicId": "cyber-c02-t14",
+      "question": "Come si collega layering alla resilienza in caso di attacco?",
+      "answer": "Difese diverse possono rallentare, rilevare e contenere l’attacco anche dopo il superamento di una barriera iniziale.",
+      "detail": "La strategia non punta a prevenire ogni evento, ma anche a ridurre le conseguenze.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare defense in depth esclusivamente come controllo preventivo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.14, pagina PDF 29"
+    },
+    {
+      "id": "cyber-c02-q083",
+      "topicId": "cyber-c02-t14",
+      "question": "Perché tre password sullo stesso componente non sono necessariamente tre livelli indipendenti?",
+      "answer": "Perché potrebbero dipendere dallo stesso segreto, sistema o singolo punto di guasto.",
+      "detail": "Il valore del layering dipende dall’indipendenza e dalla complementarità dei controlli rispetto ai diversi percorsi d’attacco.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Misurare la profondità della difesa solo contando le barriere.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.14.1, pagina PDF 30"
+    },
+    {
+      "id": "cyber-c02-q084",
+      "topicId": "cyber-c02-t14",
+      "question": "Quali caratteristiche devono possedere livelli di difesa efficaci?",
+      "answer": "Complementarità, per mitigare rischi diversi, e possibilmente indipendenza dai medesimi guasti o vulnerabilità.",
+      "detail": "Il manuale raccomanda controlli che ostacolino percorsi d’attacco differenti invece di replicare un unico elemento fragile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Progettare tutte le difese attorno a una sola credenziale condivisa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.14.1, pagina PDF 30"
+    },
+    {
+      "id": "cyber-c02-q085",
+      "topicId": "cyber-c02-t15",
+      "question": "Perché i dodici principi non vanno applicati isolatamente?",
+      "answer": "Perché sono interdipendenti e possono entrare in tensione su costi, prestazioni, usabilità, disponibilità e rischio residuo.",
+      "detail": "Il progetto deve scegliere un insieme coerente di misure e dimostrarne l’efficacia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Applicare ogni principio come requisito assoluto e scollegato dagli altri.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.15, pagina PDF 30"
+    },
+    {
+      "id": "cyber-c02-q086",
+      "topicId": "cyber-c02-t15",
+      "question": "Qual è la tensione tra economy of mechanism e modularity?",
+      "answer": "Più moduli possono agevolare manutenzione e controllo ma aumentare numero di interfacce e complessità.",
+      "detail": "La soluzione del manuale è modularità con responsabilità nitide, evitando frammentazioni inutili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Progettare una moltitudine di componenti per il solo scopo di «essere modulari».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.15, pagina PDF 30"
+    },
+    {
+      "id": "cyber-c02-q087",
+      "topicId": "cyber-c02-t15",
+      "question": "Quale conflitto può emergere fra complete mediation e performance?",
+      "answer": "Controllare ogni accesso introduce costi e latenza; una cache può aiutare se gestisce correttamente contesto, scadenze e revoche.",
+      "detail": "Non bisogna rinunciare al controllo, ma progettare un enforcement efficiente e affidabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Omettere la verifica dei permessi perché «troppo costosa».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.15, pagina PDF 30"
+    },
+    {
+      "id": "cyber-c02-q088",
+      "topicId": "cyber-c02-t15",
+      "question": "Come bilanciare least common mechanism e riuso di componenti?",
+      "answer": "Riutilizzare componenti affidabili quando utile, mantenendo isolamento appropriato di dati, permessi e domini.",
+      "detail": "La condivisione può essere economica ed efficace ma deve limitare la propagazione di guasti e accessi impropri.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Vietare qualsiasi riuso o condividere tutto senza separazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.15, pagina PDF 30"
+    },
+    {
+      "id": "cyber-c02-q089",
+      "topicId": "cyber-c02-t15",
+      "question": "Come bilanciare psychological acceptability e controlli rigorosi?",
+      "answer": "Introdurre controlli proporzionati al rischio, facili da capire, senza eliminare verifiche essenziali.",
+      "detail": "Una frizione significativa può essere appropriata per un’operazione ad alto rischio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Massimizzare comodità o rigidità senza valutazione contestuale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.15, pagina PDF 30"
+    },
+    {
+      "id": "cyber-c02-q090",
+      "topicId": "cyber-c02-t15",
+      "question": "Quale tensione esiste tra fail-safe defaults e disponibilità?",
+      "answer": "Negare accessi in caso di guasto può interrompere processi critici: servono comportamenti e procedure emergenziali preventivamente progettati.",
+      "detail": "L’eccezione non deve significare accesso libero, ma una procedura controllata e registrata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scegliere automaticamente fail-open o fail-closed senza analizzare il servizio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.15, pagina PDF 30"
+    },
+    {
+      "id": "cyber-c02-q091",
+      "topicId": "cyber-c02-t15",
+      "question": "Come si bilanciano layering e complessità?",
+      "answer": "Preferendo difese complementari e verificabili, evitando strati ridondanti che moltiplichino errori e dipendenze.",
+      "detail": "Il manuale invita a verificarne indipendenza ed efficacia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Misurare la sicurezza con il numero degli strumenti acquistati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.15, pagina PDF 30"
+    },
+    {
+      "id": "cyber-c02-q092",
+      "topicId": "cyber-c02-t15",
+      "question": "Quali domande manageriali devono giustificare una scelta di sicurezza?",
+      "answer": "Quale minaccia contrasta, quale rischio riduce, quanto costa, come verificarne l’efficacia e quale rischio residuo lascia.",
+      "detail": "La scelta tecnica va spiegata in termini anche organizzativi ed economici, non solo tecnologici.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare genericamente «aumenta la sicurezza» senza argomentare il beneficio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.15, pagina PDF 30"
+    },
+    {
+      "id": "cyber-c02-q093",
+      "topicId": "cyber-c02-t16",
+      "question": "Qual è il ruolo della sezione 2.16 rispetto alle slide del docente?",
+      "answer": "È un’integrazione del manuale sul ciclo di sviluppo sicuro, non un blocco dichiarato come ulteriore contenuto delle lezioni del professore.",
+      "detail": "Il testo richiama NIST SP 800-160 e SP 800-218 per collegare i principi a requisiti, progetto, implementazione, test e gestione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire al docente tutte le integrazioni metodologiche del manuale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.16, pagina PDF 31"
+    },
+    {
+      "id": "cyber-c02-q094",
+      "topicId": "cyber-c02-t16",
+      "question": "Come si traducono i principi di sicurezza nel ciclo di vita del software?",
+      "answer": "Si identificano risorse e requisiti, si analizzano confini e abusi, si selezionano controlli, si implementano, si testano e si riesaminano nel tempo.",
+      "detail": "La sicurezza non è una fase conclusiva indipendente: attraversa l’intero ciclo dello sviluppo e della gestione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Applicare controlli soltanto durante il collaudo finale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.16, pagina PDF 31"
+    },
+    {
+      "id": "cyber-c02-q095",
+      "topicId": "cyber-c02-t16",
+      "question": "Che cosa deve identificare il team prima di progettare i controlli?",
+      "answer": "Asset, attori, servizi, operazioni, obiettivi di sicurezza e condizioni di accesso alle risorse critiche.",
+      "detail": "Vanno chiariti anche disponibilità attesa, conservazione delle informazioni e obblighi di accountability.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Selezionare tecnologie prima di capire che cosa proteggere e da chi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.16.1, pagina PDF 31"
+    },
+    {
+      "id": "cyber-c02-q096",
+      "topicId": "cyber-c02-t16",
+      "question": "Quali requisiti devono essere esplicitati per ciascuna risorsa critica?",
+      "answer": "Chi può accedervi, in quali condizioni, per quali operazioni, con quali requisiti di disponibilità, conservazione e tracciabilità.",
+      "detail": "La definizione rende i controlli verificabili e coerenti con il valore dell’asset.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Basare tutto sulla semplice distinzione tra utenti loggati e non loggati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.16.1, pagina PDF 31"
+    },
+    {
+      "id": "cyber-c02-q097",
+      "topicId": "cyber-c02-t16",
+      "question": "Quali trust boundary tipici si analizzano in un’applicazione enterprise?",
+      "answer": "Browser–server, server–database, applicazione–servizio esterno, utente–portale amministrativo.",
+      "detail": "Il passaggio fra domini richiede controlli sui dati e sulle operazioni autorizzate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Fidarsi implicitamente di tutte le richieste provenienti dalla rete interna.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.16.2, pagina PDF 31"
+    },
+    {
+      "id": "cyber-c02-q098",
+      "topicId": "cyber-c02-t16",
+      "question": "Che cosa significa individuare potenziali abusi durante la progettazione?",
+      "answer": "Formulare scenari realistici in cui un utente o servizio tenta letture di record altrui o operazioni superiori ai propri diritti.",
+      "detail": "Il team usa questi scenari per scegliere controlli e test pertinenti ai confini di fiducia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attendere un attacco reale prima di considerare percorsi d’uso improprio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.16.2, pagina PDF 31"
+    },
+    {
+      "id": "cyber-c02-q099",
+      "topicId": "cyber-c02-t16",
+      "question": "Quali principi sceglierebbe il manuale per un’API di semplice consultazione?",
+      "answer": "Deny by default, complete mediation, least privilege e logging.",
+      "detail": "La combinazione riguarda accesso predefinito, verifica per richiesta, ampiezza dei permessi e tracciabilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che una sola password copra tutte le esigenze dell’API.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.16.3, pagina PDF 31"
+    },
+    {
+      "id": "cyber-c02-q100",
+      "topicId": "cyber-c02-t16",
+      "question": "Quali controlli sono particolarmente adatti a una funzione di approvazione economica e a un database riservato?",
+      "answer": "Separation of privilege per l’approvazione; isolation e layering per il database.",
+      "detail": "I controlli derivano da minacce e conseguenze specifiche, non dalla mera disponibilità di strumenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Applicare identiche misure a ogni operazione senza valutarne il rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.16.3, pagina PDF 31"
+    },
+    {
+      "id": "cyber-c02-q101",
+      "topicId": "cyber-c02-t16",
+      "question": "Quali test di sicurezza applicativi suggerisce il manuale durante lo sviluppo?",
+      "answer": "Tentativi di accesso senza permesso, revoca di un ruolo durante la sessione, guasto del servizio autorizzativo e controlli sulle API che non devono esporre dati fuori ambito.",
+      "detail": "I test verificano le regole anche nei casi negativi e nelle variazioni del contesto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Testare soltanto il flusso utente autorizzato che deve riuscire.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.16.4, pagina PDF 31"
+    },
+    {
+      "id": "cyber-c02-q102",
+      "topicId": "cyber-c02-t16",
+      "question": "Perché il riesame dei controlli continua dopo il rilascio?",
+      "answer": "Perché nuove funzionalità, integrazioni, fornitori o cambi di policy possono introdurre vulnerabilità.",
+      "detail": "La progettazione inizialmente corretta non garantisce la sicurezza indefinita del sistema.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare completata l’attività di security design con il go-live.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.16.4, pagina PDF 31"
+    },
+    {
+      "id": "cyber-c02-q103",
+      "topicId": "cyber-c02-t16",
+      "question": "Qual è l’idea fondamentale di Zero Trust richiamata dal manuale?",
+      "answer": "Non attribuire fiducia implicita a utenti o dispositivi soltanto perché sono nella rete aziendale.",
+      "detail": "Il testo collega questa impostazione a least privilege, complete mediation e isolation, richiamando NIST SP 800-207.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Equiparare rete interna a soggetti automaticamente affidabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.16.5, pagina PDF 31"
+    },
+    {
+      "id": "cyber-c02-q104",
+      "topicId": "cyber-c02-t16",
+      "question": "Zero Trust sostituisce i dodici principi progettuali del capitolo?",
+      "answer": "No: applica e valorizza diversi principi, soprattutto minimo privilegio, verifica degli accessi e isolamento.",
+      "detail": "È una prospettiva architetturale orientata alla protezione delle risorse, non una scorciatoia che elimina il lavoro di design.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare Zero Trust come prodotto da acquistare o regola unica sufficiente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.16.5, pagina PDF 31"
+    },
+    {
+      "id": "cyber-c02-q105",
+      "topicId": "cyber-c02-t17",
+      "question": "Quale sistema è usato nel caso applicativo integrato del Capitolo 2?",
+      "answer": "Un portale enterprise per configurare offerte, simulare costi e ricavi, calcolare margini e sottoporre proposte all’approvazione.",
+      "detail": "Il caso permette di combinare ruoli, politiche di accesso, architettura, incidenti e dodici principi progettuali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare il portale didattico come specifica obbligatoria di un software reale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17, pagina PDF 31"
+    },
+    {
+      "id": "cyber-c02-q106",
+      "topicId": "cyber-c02-t17",
+      "question": "Quali sono i quattro ruoli previsti nell’esempio di portale aziendale?",
+      "answer": "Analista, Responsabile commerciale, Amministratore applicativo e Auditor.",
+      "detail": "Le rispettive mansioni hanno esigenze distinte di accesso ai dati e alle operazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concedere indistintamente tutti i poteri agli amministratori tecnici.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.1, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q107",
+      "topicId": "cyber-c02-t17",
+      "question": "Qual è il perimetro del ruolo Analista nel caso del manuale?",
+      "answer": "Può creare e modificare proposte della propria area, nel rispetto delle condizioni previste.",
+      "detail": "Non è un approvatore e non deve potersi muovere automaticamente fra proposte di aree diverse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che la possibilità di modificare una proposta comporti anche il diritto di approvarla.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.1, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q108",
+      "topicId": "cyber-c02-t17",
+      "question": "Quale separazione di responsabilità vale per il Responsabile commerciale?",
+      "answer": "Può approvare proposte che non ha creato personalmente, secondo policy.",
+      "detail": "La condizione di non essere autore applica separation of privilege/separation of duties alla filiera economica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Consentire l’auto-approvazione senza controllo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.1, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q109",
+      "topicId": "cyber-c02-t17",
+      "question": "Che cosa distingue il ruolo Amministratore applicativo nel caso?",
+      "answer": "Gestisce utenze e configurazioni tecniche, senza ottenere automaticamente accesso ai dati economici riservati.",
+      "detail": "Il manuale mostra che amministrazione tecnica e autorizzazione a consultare business data sono permessi differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere amministrazione dell’infrastruttura con accesso universale ai contenuti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.1, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q110",
+      "topicId": "cyber-c02-t17",
+      "question": "Qual è il ruolo dell’Auditor nell’esempio?",
+      "answer": "Consultare eventi e audit trail secondo regole specifiche, senza ereditare automaticamente funzioni operative.",
+      "detail": "La tracciabilità e la revisione devono avere autorizzazioni dedicate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concedere all’auditor anche poteri di modifica perché può consultare i log.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.1, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q111",
+      "topicId": "cyber-c02-t17",
+      "question": "Nella matrice del manuale, chi può approvare una proposta?",
+      "answer": "Il Responsabile commerciale, a condizione che non sia autore della proposta; gli altri ruoli non possono approvarla.",
+      "detail": "La matrice è didattica e semplificata, ma rende visibile la separazione della decisione economica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere creazione e approvazione in un unico permesso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.2, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q112",
+      "topicId": "cyber-c02-t17",
+      "question": "Chi può gestire ruoli e configurazioni nella matrice autorizzativa?",
+      "answer": "L’Amministratore applicativo, non l’Analista, il Responsabile o l’Auditor.",
+      "detail": "Sono operazioni tecniche privilegiate, separate dalle autorizzazioni economiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dare agli analisti il diritto di attribuirsi autonomamente nuovi ruoli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.2, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q113",
+      "topicId": "cyber-c02-t17",
+      "question": "Come sono gestiti i permessi di modifica su proposte non approvate?",
+      "answer": "L’Analista può modificare soltanto le proprie; per il Responsabile valgono condizioni specifiche della policy; gli altri non modificano.",
+      "detail": "La tabella distingue ruolo, proprietà della proposta e stato del documento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare un controllo che considera soltanto il ruolo e non la risorsa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.2, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q114",
+      "topicId": "cyber-c02-t17",
+      "question": "Quali condizioni regolano la consultazione dell’audit trail nella matrice?",
+      "answer": "L’Auditor consulta secondo policy; Analista e Responsabile hanno visibilità limitata; l’Amministratore soltanto tecnico.",
+      "detail": "La consultazione dei log non è un permesso indifferenziato: può contenere informazioni sensibili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Rendere accessibili tutti gli eventi a qualunque utente autenticato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.2, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q115",
+      "topicId": "cyber-c02-t17",
+      "question": "Che cosa dimostra la matrice dei permessi del portale?",
+      "answer": "Che l’autorizzazione dipende da ruolo, specifica risorsa, azione e contesto, non dal solo login.",
+      "detail": "È un esempio, non una policy universale prescritta per ogni azienda.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare la matrice un modello rigido da imporre in ogni organizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.2, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q116",
+      "topicId": "cyber-c02-t17",
+      "question": "Come si applicano economy of mechanism e fail-safe defaults al portale di offerte?",
+      "answer": "Un modello autorizzativo coerente evita regole duplicate; ogni nuova funzione è negata finché non esiste una policy positiva.",
+      "detail": "Il primo principio favorisce semplicità verificabile; il secondo controlla il comportamento iniziale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presumere che ogni funzione nuova erediti automaticamente tutti i permessi delle precedenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.3, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q117",
+      "topicId": "cyber-c02-t17",
+      "question": "Come si applica complete mediation nel portale?",
+      "answer": "Ogni API controlla ruolo, appartenenza della proposta e azione richiesta, anche se l’interfaccia non mostra il comando.",
+      "detail": "È necessario applicare l’autorizzazione lato server alla specifica proposta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare l’assenza di un pulsante un enforcement sufficiente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.3, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q118",
+      "topicId": "cyber-c02-t17",
+      "question": "Come si applicano open design e least privilege al portale?",
+      "answer": "L’efficacia dei permessi non dipende da URL segreti; utenze e servizi hanno solo i diritti indispensabili.",
+      "detail": "Design verificabile e contenimento dell’impatto di possibili compromissioni operano su piani differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare endpoint nascosti e account superuser come soluzione unica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.3, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q119",
+      "topicId": "cyber-c02-t17",
+      "question": "Come vengono applicati separation of privilege e least common mechanism?",
+      "answer": "Le proposte importanti richiedono approvazione distinta dalla creazione; dati e configurazioni di unità diverse sono separati e le risorse condivise controllate.",
+      "detail": "Si combinano indipendenza decisionale e riduzione del rischio tra domini di fiducia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Permettere che l’analista approvi da solo oppure che diverse unità condividano dati senza restrizioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.3, pagina PDF 32"
+    },
+    {
+      "id": "cyber-c02-q120",
+      "topicId": "cyber-c02-t17",
+      "question": "Come si applica psychological acceptability al portale?",
+      "answer": "L’interfaccia mostra chiaramente stati delle proposte e ragioni dei blocchi autorizzativi senza svelare dati sensibili.",
+      "detail": "L’utente deve comprendere cosa può fare e perché una operazione viene negata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Mostrare messaggi ambigui o esporre dati riservati per spiegare l’errore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.3, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q121",
+      "topicId": "cyber-c02-t17",
+      "question": "Come si applica isolation all’architettura del portale?",
+      "answer": "Frontend pubblico, servizi applicativi, database e strumenti amministrativi vengono separati in zone o domini.",
+      "detail": "I canali tra le zone sono controllati per limitarne l’esposizione e il blast radius.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Posizionare tutti i componenti critici nella stessa zona indistinta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.3, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q122",
+      "topicId": "cyber-c02-t17",
+      "question": "Come si applica encapsulation al portale?",
+      "answer": "Le modifiche passano attraverso API di dominio controllate e non tramite accesso diretto del browser al database.",
+      "detail": "L’interfaccia applicativa delimita operazioni e punti di enforcement.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concedere al browser credenziali SQL per aggiornare direttamente i dati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.3, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q123",
+      "topicId": "cyber-c02-t17",
+      "question": "Come si applica modularity al portale?",
+      "answer": "Autenticazione, autorizzazione, audit e gestione offerte sono componenti con responsabilità e interfacce distinte.",
+      "detail": "La separazione facilita controllo e manutenzione, purché non introduca frammentazione inutile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Mescolare ogni funzione di sicurezza nella stessa logica priva di confini.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.3, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q124",
+      "topicId": "cyber-c02-t17",
+      "question": "Come si applica layering alla protezione delle offerte?",
+      "answer": "Combinando TLS, segmentazione, autorizzazioni, validazione, segreti protetti, monitoraggio e backup.",
+      "detail": "Le difese sono complementari e si collocano lungo diverse parti del sistema.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che TLS protegga anche da accessi applicativi non autorizzati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.3, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q125",
+      "topicId": "cyber-c02-t17",
+      "question": "Qual è la sequenza centrale dello Scenario A, accesso diretto all’offerta altrui?",
+      "answer": "Un analista modifica l’ID nell’URL; il server verifica identità, permesso, appartenenza e stato della proposta prima di rispondere.",
+      "detail": "Il tentativo non deve avere successo solo perché l’utente conosce un identificativo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare un ID difficile da indovinare come unica misura di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.4, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q126",
+      "topicId": "cyber-c02-t17",
+      "question": "Quale deve essere la risposta del server al tentativo di leggere una proposta non autorizzata?",
+      "answer": "Negare l’accesso secondo policy senza restituire i dati riservati; eventualmente registrare l’evento con adeguata protezione del log.",
+      "detail": "È l’applicazione combinata di complete mediation, fail-safe defaults, least privilege, encapsulation e accountability.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Inviare comunque il record completo al browser e nasconderlo soltanto nella UI.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.4, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q127",
+      "topicId": "cyber-c02-t17",
+      "question": "Quali principi sono esplicitamente associati dal manuale allo Scenario A?",
+      "answer": "Complete mediation, fail-safe defaults, least privilege, encapsulation e accountability.",
+      "detail": "Il caso dimostra perché le verifiche debbano risiedere sul server e sulla risorsa oggetto dell’azione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitare la difesa al filtro di navigazione visibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.4, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q128",
+      "topicId": "cyber-c02-t17",
+      "question": "Qual è l’evento iniziale dello Scenario B del manuale?",
+      "answer": "Un aggressore compromette una credenziale tecnica usata da un servizio applicativo.",
+      "detail": "Il caso non presume che sia impossibile perdere una credenziale: esamina come contenere le conseguenze.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che least privilege impedisce automaticamente la compromissione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.5, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q129",
+      "topicId": "cyber-c02-t17",
+      "question": "Come riducono il danno least privilege e isolation nello Scenario B?",
+      "answer": "L’account può eseguire poche operazioni e la rete gli impedisce di raggiungere liberamente archivi e sistemi amministrativi non necessari.",
+      "detail": "Il contenimento riguarda sia i permessi applicativi/DB sia le zone di rete.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare per tutti i servizi la stessa credenziale amministrativa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.5, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q130",
+      "topicId": "cyber-c02-t17",
+      "question": "Quali attività devono accompagnare l’individuazione di comportamenti anomali nello Scenario B?",
+      "answer": "Monitorare i log, bloccare o ruotare la credenziale, verificare integrità e ripristino e ridurre il rischio di recidiva.",
+      "detail": "Prevenzione, detection, response e recovery si coordinano con i principi architetturali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitarsi a cambiare la password senza controllare effetti e persistenza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.5, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q131",
+      "topicId": "cyber-c02-t17",
+      "question": "Quali principi il manuale collega esplicitamente allo Scenario B?",
+      "answer": "Least privilege, isolation, least common mechanism, layering e modularity.",
+      "detail": "Combinati, questi principi limitano gli effetti del compromesso e facilitano il monitoraggio e il recupero.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che uno qualunque di essi, da solo, garantisca protezione totale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.17.5, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q132",
+      "topicId": "cyber-c02-t18",
+      "question": "Perché è scorretta l’affermazione «più strumenti metto, più il sistema è sicuro»?",
+      "answer": "Perché contano qualità, coerenza, indipendenza e verificabilità dei controlli; la complessità eccessiva può introdurre vulnerabilità.",
+      "detail": "È l’errore generale che motiva la valutazione integrata dei dodici principi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Valutare una soluzione esclusivamente dal numero di prodotti di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.18, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q133",
+      "topicId": "cyber-c02-t18",
+      "question": "Perché «deny by default impedisce qualsiasi attività» è falso?",
+      "answer": "Perché le operazioni con autorizzazione positiva restano consentite; si negano quelle prive di regola valida.",
+      "detail": "Fail-safe defaults disciplina le decisioni di default, non abolisce le attività lecite.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere default negato con sistema sempre inutilizzabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.18, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q134",
+      "topicId": "cyber-c02-t18",
+      "question": "Perché l’affermazione «complete mediation vieta qualsiasi cache» è imprecisa?",
+      "answer": "Perché sono possibili cache gestite correttamente, purché non mantengano permessi scaduti e rispettino il contesto.",
+      "detail": "Controllare ogni accesso non significa necessariamente interrogare sempre lo stesso servizio esterno.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare una cache priva di invalidazione dopo revoche.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.18, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q135",
+      "topicId": "cyber-c02-t18",
+      "question": "Che cosa c’è di sbagliato nell’idea «open design significa pubblicare password e configurazioni»?",
+      "answer": "Open design rende verificabile la logica dei meccanismi, ma richiede comunque protezione di chiavi, credenziali e dati operativi sensibili.",
+      "detail": "L’obiettivo è non dipendere dalla segretezza del metodo, non cancellare ogni segreto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pubblicare informazioni riservate per dimostrare trasparenza del design.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.18, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q136",
+      "topicId": "cyber-c02-t18",
+      "question": "Perché separation of privilege non coincide necessariamente con 2FA?",
+      "answer": "Perché comprende condizioni indipendenti più ampie, come approvazioni distinte e controlli di contesto; la MFA è un esempio.",
+      "detail": "Il principio è astratto, la tecnica di autenticazione è una delle sue implementazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare il numero di fattori di login come unica misura della separation of privilege.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.18, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q137",
+      "topicId": "cyber-c02-t18",
+      "question": "Qual è l’errore nel dire che least privilege è la stessa cosa di autenticazione?",
+      "answer": "L’autenticazione verifica l’identità dichiarata; least privilege limita le azioni autorizzate a quell’identità.",
+      "detail": "La gestione degli accessi richiede entrambe le capacità, ma risolvono problemi diversi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare il login sufficiente a concedere privilegi operativi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.18, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q138",
+      "topicId": "cyber-c02-t18",
+      "question": "Perché «le risorse condivise sono sempre vietate» non corrisponde a least common mechanism?",
+      "answer": "Perché il principio minimizza la condivisione rischiosa, senza escludere componenti comuni robusti, isolati e controllati.",
+      "detail": "Il riuso può ridurre duplicazione e vulnerabilità se i domini sono correttamente protetti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Imporre duplicazioni inutili di ogni servizio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.18, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q139",
+      "topicId": "cyber-c02-t18",
+      "question": "Perché layering non significa duplicare controlli identici?",
+      "answer": "Perché richiede difese complementari e preferibilmente indipendenti, in grado di contrastare diversi percorsi d’attacco.",
+      "detail": "Strati che condividono lo stesso punto di guasto apportano meno protezione di quanto sembri.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Contare la ripetizione dello stesso controllo come difesa profonda.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.18, pagina PDF 33"
+    },
+    {
+      "id": "cyber-c02-q140",
+      "topicId": "cyber-c02-t18",
+      "question": "Perché non è corretto sostenere che «un’interfaccia intuitiva riduce la sicurezza»?",
+      "answer": "Una buona usabilità può ridurre errori e tentativi di aggiramento, pur mantenendo controlli proporzionati.",
+      "detail": "Il manuale corregge esplicitamente l’idea che sicurezza significhi necessariamente complicazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Aggiungere ostacoli inutili come prova di rigore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.18, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q141",
+      "topicId": "cyber-c02-t19",
+      "question": "In che cosa differiscono access control e authorization nel glossario?",
+      "answer": "Access control è l’insieme dei meccanismi che fanno rispettare una policy; authorization è la decisione sul permesso di un soggetto per una specifica operazione.",
+      "detail": "La prima nozione comprende l’enforcement, la seconda riguarda la scelta di consentire o negare.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare «autorizzazione» per descrivere solo il login.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.19, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q142",
+      "topicId": "cyber-c02-t19",
+      "question": "Che cos’è authentication nel glossario del capitolo?",
+      "answer": "La procedura con cui viene verificata l’identità dichiarata da un soggetto.",
+      "detail": "Non sostituisce la successiva decisione di autorizzare un’azione su una risorsa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare autenticazione e autorizzazione come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.19, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q143",
+      "topicId": "cyber-c02-t19",
+      "question": "Che cosa significa deny by default nel glossario?",
+      "answer": "Negare un accesso in assenza di un permesso esplicito valido.",
+      "detail": "Rimanda a fail-safe defaults e a regole positive di autorizzazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trasformare il blocco predefinito in divieto permanente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.19, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q144",
+      "topicId": "cyber-c02-t19",
+      "question": "Che cosa indica defense in depth?",
+      "answer": "Una strategia con più controlli complementari a protezione di una stessa risorsa.",
+      "detail": "È la traduzione architetturale del layering.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confonderla con il semplice numero di firewall.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.19, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q145",
+      "topicId": "cyber-c02-t19",
+      "question": "Come viene sintetizzato least privilege nel glossario?",
+      "answer": "Attribuzione dei soli privilegi realmente necessari.",
+      "detail": "La definizione completa include anche durata e contesto del bisogno operativo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dare il massimo livello di permesso per evitare richieste successive.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.19, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q146",
+      "topicId": "cyber-c02-t19",
+      "question": "Che cosa significa MFA nel glossario del manuale?",
+      "answer": "Autenticazione basata su più fattori appartenenti a categorie indipendenti.",
+      "detail": "È uno dei modi con cui si possono realizzare più condizioni di verifica, non l’intera separation of privilege.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Contare due password della stessa categoria come due fattori indipendenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.19, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q147",
+      "topicId": "cyber-c02-t19",
+      "question": "Come viene definita una security policy nel glossario?",
+      "answer": "L’insieme di regole e condizioni che stabiliscono comportamenti consentiti e richiesti.",
+      "detail": "La policy orienta scelta dei controlli, autorizzazioni e gestione del rischio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere una policy con la sola documentazione di un prodotto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.19, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q148",
+      "topicId": "cyber-c02-t19",
+      "question": "Che cosa significa secure by design nella sintesi lessicale del capitolo?",
+      "answer": "Integrare la sicurezza in requisiti, progettazione e ciclo di vita del sistema.",
+      "detail": "La formula è compatibile con il security by design approfondito nella sezione 2.1.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Rinviare ogni decisione di sicurezza al rilascio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.19, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q149",
+      "topicId": "cyber-c02-t19",
+      "question": "Come viene definito trust boundary nel glossario?",
+      "answer": "Il confine tra domini con livelli differenti di fiducia o autorizzazione.",
+      "detail": "Gli attraversamenti richiedono controlli espliciti e appropriati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presumere che ogni componente comunicante abbia lo stesso livello di fiducia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.19, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q150",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: come spiegheresti il concetto di rischio residuo per giustificare l’impossibilità della sicurezza assoluta?",
+      "answer": "I controlli riducono probabilità e impatto, ma complessità, errori e minacce evolutive lasciano una quota di rischio da gestire.",
+      "detail": "La risposta collega design, monitoraggio, verifica e capacità di reazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che i principi eliminano definitivamente ogni rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q151",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: quali elementi useresti per dimostrare che un meccanismo è davvero economic of mechanism?",
+      "answer": "Responsabilità delimitate, regole comprensibili, poche eccezioni, testabilità e assenza di dipendenze superflue.",
+      "detail": "Il criterio è la semplicità che consente una verifica più affidabile; non basta ridurre le righe di codice.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confrontare architetture soltanto in base alla quantità di codice.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q152",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: ti propongono una API nuova aperta a tutti finché non viene configurato il ruolo. Quale principio viola e come la correggi?",
+      "answer": "Viola fail-safe defaults: deve restare negata fino a una regola positiva che specifichi chi può fare cosa sulla risorsa.",
+      "detail": "Verificherei accessi autorizzati e tentativi non autorizzati prima del rilascio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Accettare l’assenza di configurazione come permesso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q153",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: un analista può cancellare una proposta inviando direttamente una richiesta HTTP anche senza pulsante. Quale difetto rilevi?",
+      "answer": "Manca complete mediation: l’autorizzazione non viene verificata adeguatamente lato server.",
+      "detail": "Il caso richiama espressamente la differenza tra UI e controlli su ogni API e oggetto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Risolvere soltanto nascondendo meglio il comando.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q154",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: si vuole accelerare l’autorizzazione con una cache. Quali condizioni chiederesti?",
+      "answer": "Vincolo a identità, risorsa, azione e contesto, scadenza appropriata e invalidazione tempestiva dei cambi di ruolo.",
+      "detail": "La scelta deve mantenere complete mediation pur riducendo il costo delle consultazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Mantenere flag generici e permessi revocati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q155",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: l’algoritmo di sicurezza di un prodotto è segreto. È sufficiente per considerarlo robusto?",
+      "answer": "No: open design richiede robustezza anche se il meccanismo è noto, mentre chiavi e credenziali rimangono protette.",
+      "detail": "Il codice o la descrizione nascosti non costituiscono una garanzia di sicurezza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere segretezza dell’algoritmo e segretezza della chiave.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q156",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: perché una doppia approvazione può essere più adatta della sola MFA per un pagamento?",
+      "answer": "Perché separa due condizioni decisionali e soggetti, mentre la MFA verifica l’identità dell’operatore.",
+      "detail": "Separation of privilege comprende controlli organizzativi oltre alla multi-factor authentication.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che l’utente, una volta autenticato con MFA, possa approvare qualsiasi propria operazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 34"
+    },
+    {
+      "id": "cyber-c02-q157",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: un collaboratore può leggere tutti i dati del reparto ma gli serve un solo cliente. Quale principio applichi?",
+      "answer": "Least privilege e, più specificamente per l’accesso informativo, need-to-know.",
+      "detail": "Limiterei i permessi alle operazioni e ai dati necessari alla mansione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere possibilità tecnica di accesso con necessità operativa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 35"
+    },
+    {
+      "id": "cyber-c02-q158",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: che rischio introduce un servizio che interroga dati usando un account amministratore DB?",
+      "answer": "In caso di compromissione l’attaccante può anche modificare, cancellare o amministrare, pur essendo richieste solo operazioni di lettura.",
+      "detail": "La correzione è assegnare permessi minimi su oggetti selezionati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scegliere sempre account ad alta autorità per comodità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 35"
+    },
+    {
+      "id": "cyber-c02-q159",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: due aziende condividono infrastruttura e servizi. Quale principio aiuta a evitare passaggi impropri tra domini?",
+      "answer": "Least common mechanism, con condivisione limitata e isolamento appropriato delle risorse condivise.",
+      "detail": "Verificherei segregazione di dati e permessi per tenant.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che la condivisione non generi mai rischi fra aziende.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 35"
+    },
+    {
+      "id": "cyber-c02-q160",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: alcuni dipendenti aggirano un login troppo complicato. Quale principio richiami?",
+      "answer": "Psychological acceptability: controlli comprensibili, proporzionati e con una esperienza d’uso che favorisca il comportamento corretto.",
+      "detail": "Password manager e MFA progettata bene sono esempi di supporti coerenti con il manuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Aumentare indiscriminatamente le frizioni ignorando gli errori umani.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 35"
+    },
+    {
+      "id": "cyber-c02-q161",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: perché separare due server non equivale a incapsulare correttamente le loro funzioni?",
+      "answer": "L’isolamento definisce i domini e limita influenze; l’incapsulamento impone accessi tramite interfacce specifiche e controllate.",
+      "detail": "Una API esposta senza controlli resta problematica anche tra componenti in zone diverse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare isolation ed encapsulation come termini intercambiabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 35"
+    },
+    {
+      "id": "cyber-c02-q162",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: quale tensione esiste tra modularity ed economy of mechanism?",
+      "answer": "Modularity crea componenti con responsabilità chiare, ma frammentazione eccessiva aumenta interfacce e complessità.",
+      "detail": "Occorre scegliere confini utili e ridurre dipendenze non necessarie.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare qualsiasi numero di microservizi automaticamente più sicuro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 35"
+    },
+    {
+      "id": "cyber-c02-q163",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: illustra layering con un esempio che non si limiti al firewall.",
+      "answer": "Un database è difeso mediante segmentazione, autenticazione, controlli applicativi, privilegi minimi, protezione dei segreti, logging e backup.",
+      "detail": "Insieme le misure prevengono, rilevano, contengono e permettono recupero anche dopo un controllo violato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Limitare la sicurezza del database all’apertura/chiusura di una porta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 35"
+    },
+    {
+      "id": "cyber-c02-q164",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: fai un esempio di conflitto progettuale tra sicurezza e disponibilità.",
+      "answer": "Negare l’accesso quando il servizio autorizzativo fallisce tutela i dati ma può interrompere funzioni critiche; servono procedure di emergenza definite e controllate.",
+      "detail": "È la tensione fail-safe defaults/disponibilità presentata dal manuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scegliere fail-open o fail-closed senza motivazione e senza analisi delle conseguenze.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 35"
+    },
+    {
+      "id": "cyber-c02-q165",
+      "topicId": "cyber-c02-t20",
+      "question": "Orale: come valuteresti complessivamente la sicurezza di un portale aziendale con i dodici principi?",
+      "answer": "Definirei asset, ruoli e policy; controllerei autorizzazioni su ogni API, privilegi minimi, separazione di approvazioni e domini, interfacce protette, difese complementari, log e recupero.",
+      "detail": "La valutazione deve associare ogni controllo alla minaccia, al rischio mitigato, ai costi e al rischio residuo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Recitare l’elenco dei principi senza tradurli in verifiche sul sistema.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 2, §2.20, pagina PDF 35"
+    }
+  ]
+}

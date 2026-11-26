@@ -1,0 +1,2861 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "si",
+  "source": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5: Algebra relazionale, pagine PDF 64–79. Unica fonte autorizzata; casi ufficiali e esempi didattici originali distinti nelle schede.",
+  "chapter": {
+    "id": "si-c05",
+    "title": "Algebra relazionale",
+    "order": 5,
+    "topics": [
+      {
+        "id": "si-c05-t01",
+        "title": "Algebra relazionale: ruolo, chiusura e semantica insiemistica"
+      },
+      {
+        "id": "si-c05-t02",
+        "title": "Notazione e dataset dimostrativo STUDENTE–ESAME"
+      },
+      {
+        "id": "si-c05-t03",
+        "title": "Selezione: predicati e condizioni"
+      },
+      {
+        "id": "si-c05-t04",
+        "title": "Proiezione: attributi, duplicati e dipendenze"
+      },
+      {
+        "id": "si-c05-t05",
+        "title": "Ridenominazione e auto-confronto"
+      },
+      {
+        "id": "si-c05-t06",
+        "title": "Unione, intersezione, differenza e compatibilità"
+      },
+      {
+        "id": "si-c05-t07",
+        "title": "Prodotto cartesiano, theta-join ed equi-join"
+      },
+      {
+        "id": "si-c05-t08",
+        "title": "Natural join, inner e outer join"
+      },
+      {
+        "id": "si-c05-t09",
+        "title": "Espressioni composte, tipaggio e alberi di interrogazione"
+      },
+      {
+        "id": "si-c05-t10",
+        "title": "Esistenza, assenza, «solo» e differenze fra insiemi"
+      },
+      {
+        "id": "si-c05-t11",
+        "title": "Quantificazione universale e divisione relazionale"
+      },
+      {
+        "id": "si-c05-t12",
+        "title": "Minimi e massimi mediante auto-join"
+      },
+      {
+        "id": "si-c05-t13",
+        "title": "Ottimizzazione algebrica e precondizioni"
+      },
+      {
+        "id": "si-c05-t14",
+        "title": "Algebra, SQL e calcolo relazionale"
+      },
+      {
+        "id": "si-c05-t15",
+        "title": "Esercizi ufficiali: biblioteca, noleggio CD e treni"
+      },
+      {
+        "id": "si-c05-t16",
+        "title": "Esercizi ufficiali: aule, voti ed enoteche"
+      },
+      {
+        "id": "si-c05-t17",
+        "title": "Applicazioni didattiche EnerPrice"
+      },
+      {
+        "id": "si-c05-t18",
+        "title": "Esercizi autonomi EA-01–EA-06"
+      },
+      {
+        "id": "si-c05-t19",
+        "title": "Esercizi autonomi EA-07–EA-12"
+      },
+      {
+        "id": "si-c05-t20",
+        "title": "Autoverifica ed errori ricorrenti nella prova"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§5.1 — pagina PDF 64",
+        "cardIds": [
+          "si-c05-q001",
+          "si-c05-q002",
+          "si-c05-q003",
+          "si-c05-q004",
+          "si-c05-q005",
+          "si-c05-q006",
+          "si-c05-q007",
+          "si-c05-q008"
+        ]
+      },
+      {
+        "label": "§5.2 — pagina PDF 65",
+        "cardIds": [
+          "si-c05-q009",
+          "si-c05-q010",
+          "si-c05-q011",
+          "si-c05-q012",
+          "si-c05-q013",
+          "si-c05-q014",
+          "si-c05-q015",
+          "si-c05-q016"
+        ]
+      },
+      {
+        "label": "§5.3.1 — pagina PDF 65",
+        "cardIds": [
+          "si-c05-q017",
+          "si-c05-q018",
+          "si-c05-q019",
+          "si-c05-q020",
+          "si-c05-q021",
+          "si-c05-q022",
+          "si-c05-q023"
+        ]
+      },
+      {
+        "label": "§5.3.2 — pagina PDF 66",
+        "cardIds": [
+          "si-c05-q024",
+          "si-c05-q025",
+          "si-c05-q026",
+          "si-c05-q027",
+          "si-c05-q028",
+          "si-c05-q029",
+          "si-c05-q030",
+          "si-c05-q031",
+          "si-c05-q032"
+        ]
+      },
+      {
+        "label": "§5.3.3 — pagina PDF 66",
+        "cardIds": [
+          "si-c05-q033",
+          "si-c05-q034",
+          "si-c05-q035",
+          "si-c05-q036",
+          "si-c05-q037",
+          "si-c05-q038"
+        ]
+      },
+      {
+        "label": "§5.4 — pagina PDF 67",
+        "cardIds": [
+          "si-c05-q039",
+          "si-c05-q040",
+          "si-c05-q041"
+        ]
+      },
+      {
+        "label": "§5.4.1 — pagina PDF 67",
+        "cardIds": [
+          "si-c05-q042",
+          "si-c05-q043",
+          "si-c05-q044"
+        ]
+      },
+      {
+        "label": "§5.4.2 — pagina PDF 67",
+        "cardIds": [
+          "si-c05-q045",
+          "si-c05-q046"
+        ]
+      },
+      {
+        "label": "§5.4.3 — pagina PDF 67",
+        "cardIds": [
+          "si-c05-q047",
+          "si-c05-q048",
+          "si-c05-q049",
+          "si-c05-q050"
+        ]
+      },
+      {
+        "label": "§5.5.1 — pagina PDF 68",
+        "cardIds": [
+          "si-c05-q051",
+          "si-c05-q052",
+          "si-c05-q053",
+          "si-c05-q054"
+        ]
+      },
+      {
+        "label": "§5.5.2 — pagina PDF 68",
+        "cardIds": [
+          "si-c05-q055",
+          "si-c05-q056",
+          "si-c05-q057",
+          "si-c05-q058",
+          "si-c05-q059"
+        ]
+      },
+      {
+        "label": "§5.5.3 — pagina PDF 69",
+        "cardIds": [
+          "si-c05-q060",
+          "si-c05-q061",
+          "si-c05-q062"
+        ]
+      },
+      {
+        "label": "§5.5.4 — pagina PDF 69",
+        "cardIds": [
+          "si-c05-q063",
+          "si-c05-q064",
+          "si-c05-q065",
+          "si-c05-q066",
+          "si-c05-q067",
+          "si-c05-q068",
+          "si-c05-q069"
+        ]
+      },
+      {
+        "label": "§5.6 — pagina PDF 70",
+        "cardIds": [
+          "si-c05-q070",
+          "si-c05-q071",
+          "si-c05-q072",
+          "si-c05-q073",
+          "si-c05-q074",
+          "si-c05-q075"
+        ]
+      },
+      {
+        "label": "§5.7.1 — pagina PDF 70",
+        "cardIds": [
+          "si-c05-q076",
+          "si-c05-q077"
+        ]
+      },
+      {
+        "label": "§5.7.2 — pagina PDF 70",
+        "cardIds": [
+          "si-c05-q078",
+          "si-c05-q079"
+        ]
+      },
+      {
+        "label": "§5.7.3 — pagina PDF 71",
+        "cardIds": [
+          "si-c05-q080",
+          "si-c05-q081",
+          "si-c05-q082",
+          "si-c05-q083"
+        ]
+      },
+      {
+        "label": "§5.7.4 — pagina PDF 71",
+        "cardIds": [
+          "si-c05-q084",
+          "si-c05-q085",
+          "si-c05-q086",
+          "si-c05-q087",
+          "si-c05-q088",
+          "si-c05-q089"
+        ]
+      },
+      {
+        "label": "§5.8 — pagina PDF 72",
+        "cardIds": [
+          "si-c05-q090",
+          "si-c05-q091"
+        ]
+      },
+      {
+        "label": "§5.8.1 — pagina PDF 72",
+        "cardIds": [
+          "si-c05-q092",
+          "si-c05-q093"
+        ]
+      },
+      {
+        "label": "§5.8.2 — pagina PDF 72",
+        "cardIds": [
+          "si-c05-q094",
+          "si-c05-q095",
+          "si-c05-q096",
+          "si-c05-q097"
+        ]
+      },
+      {
+        "label": "§5.9 — pagina PDF 73",
+        "cardIds": [
+          "si-c05-q098",
+          "si-c05-q099"
+        ]
+      },
+      {
+        "label": "§5.9.1 — pagina PDF 73",
+        "cardIds": [
+          "si-c05-q100",
+          "si-c05-q101"
+        ]
+      },
+      {
+        "label": "§5.9.2 — pagina PDF 73",
+        "cardIds": [
+          "si-c05-q102",
+          "si-c05-q103"
+        ]
+      },
+      {
+        "label": "§5.9.3 — pagina PDF 73",
+        "cardIds": [
+          "si-c05-q104",
+          "si-c05-q105",
+          "si-c05-q106"
+        ]
+      },
+      {
+        "label": "§5.9.4 — pagina PDF 73",
+        "cardIds": [
+          "si-c05-q107",
+          "si-c05-q108",
+          "si-c05-q109",
+          "si-c05-q110"
+        ]
+      },
+      {
+        "label": "§5.10.1 — pagina PDF 74",
+        "cardIds": [
+          "si-c05-q111",
+          "si-c05-q112",
+          "si-c05-q113",
+          "si-c05-q114",
+          "si-c05-q115"
+        ]
+      },
+      {
+        "label": "§5.10.2 — pagina PDF 74",
+        "cardIds": [
+          "si-c05-q116",
+          "si-c05-q117",
+          "si-c05-q118"
+        ]
+      },
+      {
+        "label": "§5.11 — pagina PDF 75",
+        "cardIds": [
+          "si-c05-q119",
+          "si-c05-q120"
+        ]
+      },
+      {
+        "label": "§5.11 (esercizio ufficiale A) — pagina PDF 75",
+        "cardIds": [
+          "si-c05-q121",
+          "si-c05-q122"
+        ]
+      },
+      {
+        "label": "§5.11 (esercizio ufficiale B) — pagina PDF 75",
+        "cardIds": [
+          "si-c05-q123",
+          "si-c05-q124"
+        ]
+      },
+      {
+        "label": "§5.11 (esercizio ufficiale C) — pagina PDF 75",
+        "cardIds": [
+          "si-c05-q125",
+          "si-c05-q126",
+          "si-c05-q127"
+        ]
+      },
+      {
+        "label": "§5.11 (esercizio ufficiale D) — pagina PDF 75",
+        "cardIds": [
+          "si-c05-q128",
+          "si-c05-q129",
+          "si-c05-q130"
+        ]
+      },
+      {
+        "label": "§5.11 (esercizio ufficiale E) — pagina PDF 76",
+        "cardIds": [
+          "si-c05-q131",
+          "si-c05-q132",
+          "si-c05-q133"
+        ]
+      },
+      {
+        "label": "§5.11 (esercizio ufficiale F) — pagina PDF 76",
+        "cardIds": [
+          "si-c05-q134",
+          "si-c05-q135",
+          "si-c05-q136"
+        ]
+      },
+      {
+        "label": "§5.11 (esercizio ufficiale G) — pagina PDF 76",
+        "cardIds": [
+          "si-c05-q137",
+          "si-c05-q138"
+        ]
+      },
+      {
+        "label": "§5.12 — pagina PDF 76",
+        "cardIds": [
+          "si-c05-q139",
+          "si-c05-q140"
+        ]
+      },
+      {
+        "label": "§5.12 (esercizio EnerPrice 1) — pagina PDF 77",
+        "cardIds": [
+          "si-c05-q141",
+          "si-c05-q142"
+        ]
+      },
+      {
+        "label": "§5.12 (esercizio EnerPrice 2) — pagina PDF 77",
+        "cardIds": [
+          "si-c05-q143",
+          "si-c05-q144"
+        ]
+      },
+      {
+        "label": "§5.12 (esercizio EnerPrice 3) — pagina PDF 77",
+        "cardIds": [
+          "si-c05-q145",
+          "si-c05-q146",
+          "si-c05-q147"
+        ]
+      },
+      {
+        "label": "§5.13.1 (EA-01) — pagina PDF 78",
+        "cardIds": [
+          "si-c05-q148",
+          "si-c05-q149"
+        ]
+      },
+      {
+        "label": "§5.13.1 (EA-02) — pagina PDF 78",
+        "cardIds": [
+          "si-c05-q150",
+          "si-c05-q151"
+        ]
+      },
+      {
+        "label": "§5.13.1 (EA-03) — pagina PDF 78",
+        "cardIds": [
+          "si-c05-q152",
+          "si-c05-q153"
+        ]
+      },
+      {
+        "label": "§5.13.1 (EA-04) — pagina PDF 78",
+        "cardIds": [
+          "si-c05-q154",
+          "si-c05-q155"
+        ]
+      },
+      {
+        "label": "§5.13.1 (EA-05) — pagina PDF 78",
+        "cardIds": [
+          "si-c05-q156",
+          "si-c05-q157"
+        ]
+      },
+      {
+        "label": "§5.13.1 (EA-06) — pagina PDF 78",
+        "cardIds": [
+          "si-c05-q158",
+          "si-c05-q159"
+        ]
+      },
+      {
+        "label": "§5.13.1 (EA-07) — pagina PDF 78",
+        "cardIds": [
+          "si-c05-q160",
+          "si-c05-q161"
+        ]
+      },
+      {
+        "label": "§5.13.1 (EA-08) — pagina PDF 78",
+        "cardIds": [
+          "si-c05-q162",
+          "si-c05-q163"
+        ]
+      },
+      {
+        "label": "§5.13.1 (EA-09) — pagina PDF 78",
+        "cardIds": [
+          "si-c05-q164"
+        ]
+      },
+      {
+        "label": "§5.13.1 (EA-10) — pagina PDF 78",
+        "cardIds": [
+          "si-c05-q165",
+          "si-c05-q166"
+        ]
+      },
+      {
+        "label": "§5.13.1 (EA-11) — pagina PDF 78",
+        "cardIds": [
+          "si-c05-q167",
+          "si-c05-q168"
+        ]
+      },
+      {
+        "label": "§5.13.1 (EA-12) — pagina PDF 78",
+        "cardIds": [
+          "si-c05-q169",
+          "si-c05-q170"
+        ]
+      },
+      {
+        "label": "§5.14 — pagina PDF 78",
+        "cardIds": [
+          "si-c05-q171",
+          "si-c05-q172",
+          "si-c05-q173",
+          "si-c05-q174",
+          "si-c05-q175"
+        ]
+      },
+      {
+        "label": "§5.14.1 — pagina PDF 79",
+        "cardIds": [
+          "si-c05-q176",
+          "si-c05-q177",
+          "si-c05-q178",
+          "si-c05-q179",
+          "si-c05-q180",
+          "si-c05-q181",
+          "si-c05-q182",
+          "si-c05-q183",
+          "si-c05-q184",
+          "si-c05-q185",
+          "si-c05-q186"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "si-c05-q001",
+      "topicId": "si-c05-t01",
+      "question": "Che cos’è l’algebra relazionale e a quale scopo serve?",
+      "answer": "È un linguaggio formale di interrogazione delle basi di dati relazionali: combina operatori su relazioni per produrre una nuova relazione.",
+      "detail": "Serve a descrivere la logica di una richiesta indipendentemente dal DBMS e prima di implementarla in SQL.",
+      "example": "Dal dataset STUDENTE si possono estrarre i nomi degli iscritti a Gestionale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderla con la notazione E-R usata per progettare concettualmente i dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.1, pagina PDF 64"
+    },
+    {
+      "id": "si-c05-q002",
+      "topicId": "si-c05-t01",
+      "question": "In quale senso l’algebra relazionale è un linguaggio procedurale?",
+      "answer": "Un’espressione indica la successione logica delle trasformazioni necessarie a ottenere il risultato.",
+      "detail": "Procedurale non significa scegliere le strutture fisiche o il piano di esecuzione effettivo del DBMS.",
+      "example": "Prima filtro STUDENTE per corso, poi proietto nome.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare l’ordine logico dell’espressione al piano fisico obbligatorio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.1, pagina PDF 64"
+    },
+    {
+      "id": "si-c05-q003",
+      "topicId": "si-c05-t01",
+      "question": "Che cosa significa la proprietà di chiusura?",
+      "answer": "Ogni operatore ben formato riceve una o più relazioni e restituisce ancora una relazione.",
+      "detail": "Il risultato può quindi diventare l’operando di un’altra selezione, proiezione, join o operazione insiemistica.",
+      "example": "T = σ_{corso=\"Gestionale\"}(STUDENTE); U = π_{nome}(T).",
+      "formulas": [],
+      "connections": [
+        "§5.6: ogni operatore dell’albero produce uno schema intermedio verificabile."
+      ],
+      "mistakes": "Non trattare il risultato come un valore isolato anziché come relazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.1, pagina PDF 64"
+    },
+    {
+      "id": "si-c05-q004",
+      "topicId": "si-c05-t01",
+      "question": "Che cosa sono schema e istanza di una relazione?",
+      "answer": "Lo schema descrive attributi e domini; l’istanza è l’insieme delle tuple effettivamente presenti.",
+      "detail": "Lo schema è l’intensione della relazione; l’istanza può cambiare nel tempo rispettando lo stesso schema.",
+      "example": "STUDENTE(id,nome,corso) è uno schema; {(1,Ada,Gestionale)} è un’istanza.",
+      "formulas": [],
+      "connections": [
+        "Capitolo 4: modello relazionale e dati effettivamente presenti."
+      ],
+      "mistakes": "Non confondere la definizione con i dati correnti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.1, pagina PDF 64"
+    },
+    {
+      "id": "si-c05-q005",
+      "topicId": "si-c05-t01",
+      "question": "Che differenza esiste tra grado e cardinalità di una relazione?",
+      "answer": "Grado = numero di attributi; cardinalità = numero di tuple dell’istanza.",
+      "detail": "Le due quantità misurano dimensioni diverse: struttura e numerosità dei dati.",
+      "example": "STUDENTE(id,nome,corso) ha grado 3; con 120 studenti la cardinalità è 120.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare cardinalità come sinonimo di numero di colonne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.1, pagina PDF 64"
+    },
+    {
+      "id": "si-c05-q006",
+      "topicId": "si-c05-t01",
+      "question": "Che cosa si intende per espressione algebrica ben formata?",
+      "answer": "Una composizione di operatori in cui ogni operando possiede lo schema richiesto e ogni predicato usa attributi disponibili e domini coerenti.",
+      "detail": "Occorre controllare anche gli schemi delle relazioni intermedie, non solo quello iniziale.",
+      "example": "Se una proiezione ha eliminato corso, non si può più selezionare su corso nel risultato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che una colonna sia disponibile dopo essere stata proiettata via.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.1, pagina PDF 64"
+    },
+    {
+      "id": "si-c05-q007",
+      "topicId": "si-c05-t01",
+      "question": "Quale semantica dei duplicati usa il capitolo per l’algebra relazionale classica?",
+      "answer": "La semantica insiemistica: ogni tupla distinta compare una sola volta.",
+      "detail": "Anche la proiezione elimina automaticamente le tuple che diventano identiche. SQL senza DISTINCT può invece conservare più righe uguali.",
+      "example": "π_{nome}(STUDENTE) contiene Anna una sola volta anche con due studentesse omonime.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare automaticamente la semantica bag di SQL all’algebra classica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.1, pagina PDF 64"
+    },
+    {
+      "id": "si-c05-q008",
+      "topicId": "si-c05-t01",
+      "question": "Perché le espressioni si leggono dall’interno verso l’esterno?",
+      "answer": "Perché l’operatore più interno produce la relazione su cui agisce quello successivo.",
+      "detail": "Negli alberi di interrogazione gli operatori vicini alle foglie vengono valutati prima a livello logico.",
+      "example": "π_{nome}(σ_{corso=\"Gestionale\"}(STUDENTE)): prima σ, poi π.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare l’ordine se il filtro richiede un attributo che la proiezione elimina.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.1, pagina PDF 64"
+    },
+    {
+      "id": "si-c05-q009",
+      "topicId": "si-c05-t02",
+      "question": "Quali simboli rappresentano selezione, proiezione e ridenominazione?",
+      "answer": "σ (sigma) seleziona tuple; π (pi greco) proietta attributi; ρ (rho) rinomina relazione o attributi.",
+      "detail": "Sono operatori unari, cioè si applicano a una relazione.",
+      "example": "σ_{citta=\"Bari\"}(STUDENTE); π_{nome}(STUDENTE); ρ_{S1}(STUDENTE).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere σ, che agisce sulle righe, con π, che agisce sulle colonne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.2, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q010",
+      "topicId": "si-c05-t02",
+      "question": "Quali sono gli operatori insiemistici classici e come differiscono?",
+      "answer": "Unione ∪, intersezione ∩ e differenza − confrontano tuple di relazioni con schemi compatibili.",
+      "detail": "Le prime due sono commutative; la differenza non lo è generalmente.",
+      "example": "{1,2,3} − {2,3,4} = {1}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eseguire operazioni insiemistiche su colonne semanticamente incompatibili.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.2, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q011",
+      "topicId": "si-c05-t02",
+      "question": "Quali operatori binari permettono di costruire e filtrare coppie di tuple?",
+      "answer": "Prodotto cartesiano × e theta-join ⋈_c; il natural join ⋈ collega sui nomi condivisi quando si adotta tale convenzione.",
+      "detail": "Il theta-join può essere descritto come σ_c(R × S).",
+      "example": "STUDENTE ⋈_{STUDENTE.id_studente=ESAME.id_studente} ESAME.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere la condizione necessaria al collegamento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.2, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q012",
+      "topicId": "si-c05-t02",
+      "question": "Che cosa rappresentano R, S, T, A, B e c nelle convenzioni del capitolo?",
+      "answer": "R, S, T sono relazioni o intermedi; A, B, C sono attributi; c è un predicato logico.",
+      "detail": "Le parentesi delimitano gli operandi cui si applica ciascun simbolo.",
+      "example": "σ_c(R) e π_{A,B}(R).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare una lettera come un dato letterale, se indica una variabile di schema.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.2, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q013",
+      "topicId": "si-c05-t02",
+      "question": "Qual è lo schema dimostrativo di STUDENTE e quali tuple contiene?",
+      "answer": "STUDENTE(id_studente,nome,corso,citta) contiene: (1,Anna,Gestionale,Bari), (2,Luca,Informatica,Lecce), (3,Sara,Gestionale,Bari), (4,Anna,Gestionale,Taranto).",
+      "detail": "Il nome Anna non è identificativo: due studenti distinti hanno lo stesso nome.",
+      "example": "La proiezione del solo nome contiene Anna, Luca, Sara.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre l’identità di un soggetto dal nome.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.2, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q014",
+      "topicId": "si-c05-t02",
+      "question": "Qual è lo schema dimostrativo di ESAME e quali eventi contiene?",
+      "answer": "ESAME(id_esame,id_studente,materia,voto) contiene 101:(1,Database,30), 102:(1,Marketing,27), 103:(2,Database,25), 104:(3,Database,28), 105:(4,Marketing,30).",
+      "detail": "id_esame distingue gli eventi; id_studente collega ogni esame al relativo studente.",
+      "example": "Gli studenti 1 e 4 hanno entrambi il nome Anna, ma esami diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere id_esame con la chiave di collegamento verso STUDENTE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.2, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q015",
+      "topicId": "si-c05-t02",
+      "question": "Perché il dataset di esempio conserva gli identificativi degli studenti?",
+      "answer": "Per evitare di confondere persone omonime e mantenere corretti join, intersezioni e differenze.",
+      "detail": "Proiettare il nome troppo presto potrebbe fondere soggetti distinti.",
+      "example": "Studenti 1 e 4: entrambi Anna, con eventi ESAME diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare nomi come chiavi nei ragionamenti su assenza o cardinalità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.2, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q016",
+      "topicId": "si-c05-t02",
+      "question": "Quali effetti sullo schema hanno σ, π, × e join?",
+      "answer": "σ conserva gli attributi; π li riduce a quelli indicati; × combina gli schemi; il join combina gli attributi e filtra le coppie.",
+      "detail": "Il natural join deduplica gli attributi comuni per nome, mentre un equi-join concettuale può mantenerli entrambi.",
+      "example": "Dopo π_{nome}(STUDENTE) non è più presente id_studente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che tutte le trasformazioni lascino inalterato lo schema.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.2, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q017",
+      "topicId": "si-c05-t03",
+      "question": "Come è definita la selezione σ_c(R)?",
+      "answer": "Conserva esattamente le tuple t di R per cui il predicato c(t) è vero.",
+      "detail": "Non cambia gli attributi né i domini: produce un sottoinsieme di R.",
+      "example": "σ_{citta=\"Bari\"}(STUDENTE) restituisce gli studenti 1 e 3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usarla per eliminare colonne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.1, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q018",
+      "topicId": "si-c05-t03",
+      "question": "Quali tipi di condizioni può usare la selezione?",
+      "answer": "Confronti tra attributi o con costanti e combinazioni logiche AND, OR e NOT, con domini compatibili.",
+      "detail": "Le condizioni sono valutate su ogni tupla singolarmente.",
+      "example": "σ_{corso=\"Gestionale\" ∧ citta=\"Bari\"}(STUDENTE) seleziona 1 e 3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare una condizione logica come una frase ambigua.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.1, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q019",
+      "topicId": "si-c05-t03",
+      "question": "Qual è la differenza fra AND e OR in una selezione?",
+      "answer": "AND richiede che entrambe le condizioni siano vere per la stessa tupla; OR richiede che ne sia vera almeno una.",
+      "detail": "Con OR le tuple che soddisfano entrambi i criteri rimangono incluse una sola volta per la semantica di insieme.",
+      "example": "corso=Gestionale OR citta=Lecce restituisce 1,2,3,4 nel dataset.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare OR come «uno e uno solo».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.1, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q020",
+      "topicId": "si-c05-t03",
+      "question": "Perché σ non consente direttamente il confronto fra righe diverse?",
+      "answer": "Perché valuta il predicato su una singola tupla della relazione di input.",
+      "detail": "Per confrontare due soggetti distinti servono due copie rinominate della relazione e un prodotto cartesiano o join.",
+      "example": "Trovare clienti omonimi con CF diverso richiede C1 × C2 e condizioni tra C1 e C2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare gli attributi di due tuple senza aver costruito l’operando con entrambe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.1, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q021",
+      "topicId": "si-c05-t03",
+      "question": "Che cosa significa selezionare un valore di città nel dataset STUDENTE?",
+      "answer": "Il predicato è applicato all’attributo citta così come definito nello schema.",
+      "detail": "Non si può trasformarlo automaticamente in luogo di nascita, di residenza o altra proprietà non dichiarata.",
+      "example": "La richiesta «nati non a Bari» non è ricavabile se citta non è definita come luogo di nascita.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere semantica non presente nei requisiti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.1, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q022",
+      "topicId": "si-c05-t03",
+      "question": "Quale relazione produce σ_{corso=\"Gestionale\"}(STUDENTE)?",
+      "answer": "Le tuple complete degli studenti 1, 3 e 4, mantenendo id_studente, nome, corso e citta.",
+      "detail": "La selezione modifica solo la cardinalità, non il grado della relazione.",
+      "example": "(1,Anna,Gestionale,Bari), (3,Sara,Gestionale,Bari), (4,Anna,Gestionale,Taranto).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non restituire direttamente i soli nomi: quello richiederebbe anche π.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.1, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q023",
+      "topicId": "si-c05-t03",
+      "question": "Quale differenza vi è tra selezione e ricerca di corrispondenze fra tabelle?",
+      "answer": "La selezione filtra una relazione; la ricerca di corrispondenze fra relazioni richiede anche un join o una costruzione equivalente.",
+      "detail": "Il filtro del voto riguarda ESAME, il filtro del corso riguarda STUDENTE; vanno collegati mediante id_studente.",
+      "example": "Studenti di Gestionale con voto ≥ 28: selezioni locali, join, proiezione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare attributi di ESAME in una selezione su STUDENTE non collegata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.1, pagina PDF 65"
+    },
+    {
+      "id": "si-c05-q024",
+      "topicId": "si-c05-t04",
+      "question": "Che cosa fa π_{A,B}(R)?",
+      "answer": "Restituisce una relazione che contiene solo gli attributi A e B di R, eliminando eventuali tuple duplicate.",
+      "detail": "Il grado diventa il numero degli attributi distinti proiettati; la cardinalità può diminuire.",
+      "example": "π_{citta}(STUDENTE) = {Bari,Lecce,Taranto}.",
+      "formulas": [],
+      "connections": [
+        "§5.10: confronto con SELECT DISTINCT di SQL."
+      ],
+      "mistakes": "Non interpretare la proiezione come mantenimento automatico dei duplicati SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.2, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q025",
+      "topicId": "si-c05-t04",
+      "question": "Perché la proiezione di STUDENTE su nome restituisce tre valori e non quattro?",
+      "answer": "Perché i due studenti chiamati Anna diventano tuple identiche e nell’algebra insiemistica ne rimane una sola.",
+      "detail": "Il risultato è {Anna,Luca,Sara}.",
+      "example": "π_{nome}(STUDENTE).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il numero di studenti originari come cardinalità della proiezione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.2, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q026",
+      "topicId": "si-c05-t04",
+      "question": "Qual è la differenza strutturale tra selezione e proiezione?",
+      "answer": "La selezione conserva le colonne e filtra righe; la proiezione conserva colonne selezionate e può ridurre anche le righe per eliminazione dei duplicati.",
+      "detail": "Una selezione mantiene lo schema dell’operando; una proiezione ne cambia il grado.",
+      "example": "σ_{citta=\"Bari\"}(STUDENTE) conserva quattro colonne; π_{citta}(STUDENTE) ne conserva una.",
+      "formulas": [],
+      "connections": [
+        "§5.9: push-down di filtri e colonne con attenzione ai campi necessari."
+      ],
+      "mistakes": "Non confondere la riduzione di grado con la riduzione di cardinalità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.2, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q027",
+      "topicId": "si-c05-t04",
+      "question": "Perché selezionare prima di proiettare è spesso indispensabile?",
+      "answer": "Perché l’attributo usato nel filtro deve ancora appartenere allo schema corrente.",
+      "detail": "La sequenza inversa diventa mal formata se la proiezione elimina il campo su cui si vuole filtrare.",
+      "example": "π_{nome}(σ_{corso=\"Gestionale\"}(STUDENTE)) è valida; σ_{corso=\"Gestionale\"}(π_{nome}(STUDENTE)) no.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non filtrare su attributi già esclusi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.2, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q028",
+      "topicId": "si-c05-t04",
+      "question": "Qual è il risultato di π_{nome,citta}(σ_{corso=\"Gestionale\"}(STUDENTE))?",
+      "answer": "{(Anna,Bari),(Sara,Bari),(Anna,Taranto)}.",
+      "detail": "Le tre coppie sono distinte anche se il nome Anna ricorre due volte.",
+      "example": "Pagina PDF 67, Esempio 1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non deduplicare sulla sola colonna nome quando la proiezione conserva anche citta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.2, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q029",
+      "topicId": "si-c05-t04",
+      "question": "Quando due righe vengono considerate duplicate dopo una proiezione?",
+      "answer": "Quando coincidono su tutti gli attributi conservati dalla proiezione.",
+      "detail": "L’identità delle tuple risultanti dipende dall’intero schema proiettato.",
+      "example": "(Anna,Bari) e (Anna,Taranto) sono diverse; due tuple (Anna,Bari) identiche collassano.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare una deduplicazione su un sottoinsieme non richiesto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.2, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q030",
+      "topicId": "si-c05-t04",
+      "question": "Perché non si deve proiettare subito nome per cercare studenti con voto almeno 28?",
+      "answer": "Perché ESAME si collega tramite id_studente: eliminandolo si perde la chiave necessaria al join.",
+      "detail": "Si filtrano gli esami, si collegano a STUDENTE e solo in seguito si proiettano gli attributi finali.",
+      "example": "π_{nome}(STUDENTE ⋈_{id_studente} σ_{voto≥28}(ESAME)).",
+      "formulas": [],
+      "connections": [
+        "§5.5: il join richiede la chiave id_studente."
+      ],
+      "mistakes": "Non usare il nome per simulare una FK.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.2, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q031",
+      "topicId": "si-c05-t04",
+      "question": "Qual è il risultato insiemistico dei nomi degli studenti con almeno un voto ≥ 28 nel dataset dimostrativo?",
+      "answer": "{Anna,Sara}.",
+      "detail": "Gli esami con voto almeno 28 appartengono agli studenti 1,3,4, ma la proiezione del solo nome unifica Anna.",
+      "example": "Esami 101 (30), 104 (28), 105 (30).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Se servono persone distinte, proiettare anche id_studente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.2, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q032",
+      "topicId": "si-c05-t04",
+      "question": "Perché π_{id_studente,nome} è diversa da π_{nome}?",
+      "answer": "La prima preserva l’identità dei soggetti; la seconda può unificare omonimi.",
+      "detail": "La scelta dello schema finale dipende dalla richiesta: nome visualizzato o persone distinguibili.",
+      "example": "Gli studenti 1 e 4 rimangono distinti solo con l’identificativo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare che il risultato contiene due persone distinte quando si conserva solo il nome.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.2, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q033",
+      "topicId": "si-c05-t05",
+      "question": "Qual è la funzione di ρ nell’algebra relazionale?",
+      "answer": "Rinomina una relazione o alcuni attributi senza modificare il contenuto delle tuple.",
+      "detail": "È utile per assegnare ruoli differenti a copie della stessa relazione e per allineare nomi degli schemi.",
+      "example": "ρ_{S1}(STUDENTE), ρ_{S2}(STUDENTE).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare la ridenominazione come modifica persistente dei dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.3, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q034",
+      "topicId": "si-c05-t05",
+      "question": "Perché si rinominano due copie della stessa relazione in un auto-join?",
+      "answer": "Per riferirsi senza ambiguità agli attributi delle due tuple confrontate.",
+      "detail": "Senza ruoli distinti un predicato su nome, codice o voto può risultare ambiguo o tautologico.",
+      "example": "C1.nome=C2.nome ∧ C1.cf≠C2.cf.",
+      "formulas": [],
+      "connections": [
+        "§5.8: minimi e massimi richiedono confronti fra copie rinominate."
+      ],
+      "mistakes": "Non scrivere un confronto che usa lo stesso attributo della stessa copia su entrambi i lati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.3, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q035",
+      "topicId": "si-c05-t05",
+      "question": "Che differenza c’è tra ρ e π?",
+      "answer": "ρ cambia le intestazioni; π elimina attributi e può fondere tuple duplicate.",
+      "detail": "Nella ridenominazione la struttura viene etichettata diversamente, ma non viene eliminata alcuna informazione.",
+      "example": "ρ_{E2(codice2,matricola2,data2,voto2)}(ESAMI).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare ρ per ottenere una sotto-relazione di sole colonne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.3, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q036",
+      "topicId": "si-c05-t05",
+      "question": "Quando ρ è utile per preparare un’unione o una differenza?",
+      "answer": "Quando i dati da confrontare hanno attributi semanticamente omogenei ma nomi discordanti e vanno resi compatibili.",
+      "detail": "La ridenominazione risolve il problema dei nomi, non quello di domini o significati incongruenti.",
+      "example": "CodiceCliente e id_cliente possono essere allineati se indicano lo stesso identificatore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rendere compatibili per nome due attributi che descrivono concetti diversi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.3, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q037",
+      "topicId": "si-c05-t05",
+      "question": "Che analogia c’è tra ρ e SQL?",
+      "answer": "La ridenominazione ha un analogo negli alias di tabelle e colonne usati nelle query SQL.",
+      "detail": "L’analogia è concettuale, non una corrispondenza biunivoca di tutte le sintassi.",
+      "example": "CLIENTE C1, CLIENTE C2 nel confronto fra omonimi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che un alias cambi il contenuto del database.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.3, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q038",
+      "topicId": "si-c05-t05",
+      "question": "Quale accorgimento vale dopo aver rinominato un attributo usato in un join?",
+      "answer": "Aggiornare anche i predicati successivi al nuovo nome.",
+      "detail": "I nomi disponibili in ogni fase devono corrispondere allo schema prodotto dalla rinomina.",
+      "example": "Se M(voto) diventa M(voto_massimo), usare ESAME.voto=M.voto_massimo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non continuare a riferirsi a M.voto dopo averlo rinominato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.3.3, pagina PDF 66"
+    },
+    {
+      "id": "si-c05-q039",
+      "topicId": "si-c05-t06",
+      "question": "Quale compatibilità richiedono unione, intersezione e differenza?",
+      "answer": "Gli operandi devono avere attributi in corrispondenza con domini e significati compatibili; se serve, si rinominano i campi.",
+      "detail": "Avere soltanto lo stesso numero di colonne non basta per l’unione o la sottrazione.",
+      "example": "Un insieme di id_studente può essere sottratto da un altro insieme di id_studente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sottrarre nome da id_studente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.4, pagina PDF 67"
+    },
+    {
+      "id": "si-c05-q040",
+      "topicId": "si-c05-t06",
+      "question": "Perché è importante proiettare lo stesso identificativo prima di ∩ e −?",
+      "answer": "Perché entrambi gli insiemi devono rappresentare lo stesso tipo di oggetti senza confondere soggetti omonimi.",
+      "detail": "I nomi non univoci possono produrre risultati falsi nelle interrogazioni su presenza e assenza.",
+      "example": "π_{id_studente}(STUDENTE) − π_{id_studente}(ESAME).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fare la differenza sui nomi di persona.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.4, pagina PDF 67"
+    },
+    {
+      "id": "si-c05-q041",
+      "topicId": "si-c05-t06",
+      "question": "Qual è il risultato di unione, intersezione e differenza per R={1,2,3}, S={2,3,4}?",
+      "answer": "R∪S={1,2,3,4}; R∩S={2,3}; R−S={1}.",
+      "detail": "L’ordine è irrilevante nelle prime due operazioni; conta nella differenza.",
+      "example": "S−R={4}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non restituire 2 e 3 due volte nell’unione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.4, pagina PDF 67"
+    },
+    {
+      "id": "si-c05-q042",
+      "topicId": "si-c05-t06",
+      "question": "Che cosa restituisce R ∪ S?",
+      "answer": "Tutte le tuple presenti in almeno uno fra R e S, senza duplicati.",
+      "detail": "È l’operatore tipico per unire risultati compatibili ottenuti da condizioni alternative.",
+      "example": "Id di clienti che hanno acquistato prodotti del tipo A oppure B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere ∪ con la concatenazione che conserva duplicati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.4.1, pagina PDF 67"
+    },
+    {
+      "id": "si-c05-q043",
+      "topicId": "si-c05-t06",
+      "question": "L’unione è commutativa?",
+      "answer": "Sì: R ∪ S = S ∪ R per relazioni compatibili.",
+      "detail": "Se una tupla è presente in entrambe, compare una sola volta.",
+      "example": "{1,2}∪{2,3}={1,2,3}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il risultato con UNION ALL di SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.4.1, pagina PDF 67"
+    },
+    {
+      "id": "si-c05-q044",
+      "topicId": "si-c05-t06",
+      "question": "Quando conviene unire due risultati invece di usare un singolo OR?",
+      "answer": "Quando i due criteri sono calcolati su percorsi o join differenti, ma entrambi restituiscono lo stesso tipo di identificativo.",
+      "detail": "Se OR agisce sullo stesso operando, una selezione con disgiunzione può essere equivalente.",
+      "example": "Utenti con prestiti di Camilleri oppure De Luca: OR sul filtro LIBRI o unione dei rispettivi id_utente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non unire relazioni di schema differente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.4.1, pagina PDF 67"
+    },
+    {
+      "id": "si-c05-q045",
+      "topicId": "si-c05-t06",
+      "question": "Che cosa restituisce R ∩ S?",
+      "answer": "Solo le tuple presenti in entrambi gli insiemi.",
+      "detail": "È commutativa e adatta a richieste in cui lo stesso soggetto deve soddisfare condizioni mediante righe distinte.",
+      "example": "Enoteche con almeno un vino rosso e almeno un vino rosato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non richiedere che una singola riga VINO abbia contemporaneamente due colori diversi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.4.2, pagina PDF 67"
+    },
+    {
+      "id": "si-c05-q046",
+      "topicId": "si-c05-t06",
+      "question": "Perché l’intersezione è appropriata per «enoteche con rossi e rosati»?",
+      "answer": "Si costruiscono separatamente gli id delle enoteche che vendono rosso e quelli che vendono rosato, poi se ne prende l’intersezione.",
+      "detail": "Gli attributi colore si riferiscono a righe di vini potenzialmente differenti.",
+      "example": "R=π_{codice_enoteca}(CATALOGO ⋈ σ_{colore=\"rosso\"}(VINI)); S analogamente per rosato; R∩S.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere colore=rosso ∧ colore=rosato sulla stessa tupla VINI.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.4.2, pagina PDF 67"
+    },
+    {
+      "id": "si-c05-q047",
+      "topicId": "si-c05-t06",
+      "question": "Che cosa restituisce R − S?",
+      "answer": "Le tuple presenti in R ma non in S.",
+      "detail": "La differenza è orientata e, in generale, non commutativa.",
+      "example": "{1,2,3}−{2,3,4}={1}; l’inverso dà {4}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire candidati e soggetti da escludere.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.4.3, pagina PDF 67"
+    },
+    {
+      "id": "si-c05-q048",
+      "topicId": "si-c05-t06",
+      "question": "Qual è lo schema di riferimento per una richiesta «non hanno mai sostenuto esami»?",
+      "answer": "Tutti gli id_studente presenti in STUDENTE meno gli id_studente presenti in ESAME.",
+      "detail": "I candidati devono includere anche chi non ha alcuna relazione in ESAME.",
+      "example": "π_{id_studente}(STUDENTE) − π_{id_studente}(ESAME).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non partire dagli studenti già presenti in ESAME: perderesti proprio gli assenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.4.3, pagina PDF 67"
+    },
+    {
+      "id": "si-c05-q049",
+      "topicId": "si-c05-t06",
+      "question": "Che risultato ha la differenza «studenti senza esami» sul dataset dimostrativo?",
+      "answer": "La relazione vuota, perché tutti e quattro gli studenti compaiono almeno una volta in ESAME.",
+      "detail": "Aggiungendo uno studente 5 senza esami, il risultato diventerebbe {5}.",
+      "example": "ESAME contiene id_studente 1,2,3,4.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere «senza esami» con «senza un esame di una materia particolare».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.4.3, pagina PDF 67"
+    },
+    {
+      "id": "si-c05-q050",
+      "topicId": "si-c05-t06",
+      "question": "Perché R−S non basta da sola se i nomi finali vanno visualizzati?",
+      "answer": "Conviene sottrarre identificativi e solo dopo ricongiungere il risultato all’anagrafica per ottenere gli attributi di presentazione.",
+      "detail": "Questo preserva identità e compatibilità degli insiemi.",
+      "example": "Id delle aule libere → join con AULE → nome ed edificio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare direttamente tuple dell’anagrafica con tuple di prenotazione di schema diverso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.4.3, pagina PDF 67"
+    },
+    {
+      "id": "si-c05-q051",
+      "topicId": "si-c05-t07",
+      "question": "Che cosa produce il prodotto cartesiano R × S?",
+      "answer": "Tutte le coppie possibili formate da una tupla di R e una tupla di S.",
+      "detail": "L’operazione non contiene di per sé alcuna condizione di collegamento semantico.",
+      "example": "Quattro clienti e cinque ordini danno venti coppie.",
+      "formulas": [
+        {
+          "latex": "|R\\times S|=|R|\\cdot|S|",
+          "meaning": "Cardinalità del prodotto cartesiano su relazioni finite."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non assumere che ogni coppia rappresenti un ordine del relativo cliente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.1, pagina PDF 68"
+    },
+    {
+      "id": "si-c05-q052",
+      "topicId": "si-c05-t07",
+      "question": "Come si calcolano cardinalità e grado di R × S?",
+      "answer": "Cardinalità: |R|·|S|; grado: grado(R)+grado(S), disambiguando i nomi omonimi.",
+      "detail": "Ogni coppia di tuple conserva gli attributi di entrambi gli operandi.",
+      "example": "4×5=20 coppie; se R ha 3 attributi e S ne ha 4, il grado è 7.",
+      "formulas": [
+        {
+          "latex": "\\mathrm{grado}(R\\times S)=\\mathrm{grado}(R)+\\mathrm{grado}(S)",
+          "meaning": "Somma degli attributi degli operandi, con disambiguazione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confondere il numero di righe con il numero di colonne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.1, pagina PDF 68"
+    },
+    {
+      "id": "si-c05-q053",
+      "topicId": "si-c05-t07",
+      "question": "Perché il prodotto cartesiano può essere molto costoso come risultato intermedio?",
+      "answer": "Perché la sua cardinalità cresce moltiplicando le numerosità dei due insiemi.",
+      "detail": "Un successivo filtro spesso elimina la gran parte delle combinazioni, ma è utile evitarne la materializzazione superflua.",
+      "example": "Fra 4 clienti e 5 ordini, soltanto 5 coppie soddisfano l’associazione cliente–ordine nell’ipotesi del manuale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare il prodotto cartesiano completo come un join già filtrato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.1, pagina PDF 68"
+    },
+    {
+      "id": "si-c05-q054",
+      "topicId": "si-c05-t07",
+      "question": "Che cosa bisogna fare quando R e S hanno attributi con lo stesso nome nel prodotto cartesiano?",
+      "answer": "Disambiguare gli attributi, per esempio qualificandoli con il nome della relazione o rinominandoli.",
+      "detail": "Serve per scrivere predicati che identificano quale colonna provenga da ciascun operando.",
+      "example": "STUDENTE.id_studente ed ESAME.id_studente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare un predicato di uguaglianza ambiguo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.1, pagina PDF 68"
+    },
+    {
+      "id": "si-c05-q055",
+      "topicId": "si-c05-t07",
+      "question": "Come si definisce il theta-join R ⋈_c S?",
+      "answer": "È il sottoinsieme di R×S formato dalle coppie che soddisfano il predicato c: R ⋈_c S = σ_c(R×S).",
+      "detail": "Il predicato può usare uguaglianze, disuguaglianze, intervalli e condizioni composite.",
+      "example": "STUDENTE ⋈_{STUDENTE.id_studente=ESAME.id_studente} ESAME.",
+      "formulas": [
+        {
+          "latex": "R\\bowtie_c S=\\sigma_c(R\\times S)",
+          "meaning": "Definizione del theta-join mediante selezione su prodotto cartesiano."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non assumere che ogni theta-join sia un equi-join.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.2, pagina PDF 68"
+    },
+    {
+      "id": "si-c05-q056",
+      "topicId": "si-c05-t07",
+      "question": "Che cosa distingue equi-join e theta-join?",
+      "answer": "L’equi-join è un theta-join il cui predicato di collegamento è basato su uguaglianze.",
+      "detail": "Il theta-join più generale può includere <, >, ≤, ≥ o altre condizioni coerenti.",
+      "example": "id_studente=id_studente è un equi-join; costo<costo2 è un theta-join non equi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare equivalenti tutti i theta-join.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.2, pagina PDF 68"
+    },
+    {
+      "id": "si-c05-q057",
+      "topicId": "si-c05-t07",
+      "question": "Il predicato di un theta-join deve necessariamente coincidere con una FK?",
+      "answer": "No. La condizione deve esprimere il collegamento richiesto, ma può riferirsi anche a comparazioni o intervalli temporali.",
+      "detail": "Le chiavi esterne sono un caso frequente, non l’unico possibile.",
+      "example": "Confrontare due costi nello stesso prodotto per determinare il massimo relativo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre una FK inesistente solo per giustificare un confronto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.2, pagina PDF 68"
+    },
+    {
+      "id": "si-c05-q058",
+      "topicId": "si-c05-t07",
+      "question": "Quante righe produce il join STUDENTE–ESAME del dataset dimostrativo?",
+      "answer": "Cinque, una per ciascun record di ESAME, perché ciascuno trova uno studente valido.",
+      "detail": "Lo studente 1 si ripete per i due esami; la proiezione successiva può eliminare duplicati se omette id_esame.",
+      "example": "Esami 101–105 collegati agli studenti 1,1,2,3,4.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che un join abbia tante righe quanti sono gli studenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.2, pagina PDF 68"
+    },
+    {
+      "id": "si-c05-q059",
+      "topicId": "si-c05-t07",
+      "question": "Che differenza c’è tra schema di equi-join e schema di natural join?",
+      "answer": "Un equi-join concettuale può mantenere entrambi gli attributi usati per il confronto; il natural join elimina la duplicazione dei campi comuni.",
+      "detail": "La differenza riguarda non soltanto il filtro, ma anche la struttura del risultato.",
+      "example": "STUDENTE.id_studente ed ESAME.id_studente possono apparire entrambi nell’equi-join.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che ogni join deduplichi automaticamente le colonne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.2, pagina PDF 68"
+    },
+    {
+      "id": "si-c05-q060",
+      "topicId": "si-c05-t08",
+      "question": "Come funziona il natural join?",
+      "answer": "Collega le tuple che coincidono su tutti gli attributi omonimi e ne conserva una sola copia nel risultato.",
+      "detail": "È conciso se i campi omonimi sono esattamente quelli che hanno significato di collegamento.",
+      "example": "STUDENTE(id_studente,nome,corso) ⋈ ESAME(id_esame,id_studente,materia,voto).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare tutti i nomi uguali come se fossero necessariamente la stessa proprietà.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.3, pagina PDF 69"
+    },
+    {
+      "id": "si-c05-q061",
+      "topicId": "si-c05-t08",
+      "question": "Perché NATURAL JOIN può diventare pericoloso dopo una modifica di schema?",
+      "answer": "Perché una nuova colonna con nome coincidente può aggiungere implicitamente una condizione di uguaglianza non voluta.",
+      "detail": "Il risultato può cambiare senza che l’espressione o la query sia stata modificata.",
+      "example": "Se ESAME aggiungesse nome con significato diverso, il join richiederebbe anche uguaglianza su nome.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare natural join indiscriminatamente in schemi operativi in evoluzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.3, pagina PDF 69"
+    },
+    {
+      "id": "si-c05-q062",
+      "topicId": "si-c05-t08",
+      "question": "Qual è la scelta normalmente più robusta nelle query SQL reali rispetto al natural join?",
+      "answer": "Un join esplicito con chiavi e condizioni dichiarate.",
+      "detail": "Riduce la dipendenza dalle coincidenze accidentali fra i nomi degli attributi.",
+      "example": "JOIN ESAME ON STUDENTE.id_studente=ESAME.id_studente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidare la semantica del collegamento alla sola omonimia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.3, pagina PDF 69"
+    },
+    {
+      "id": "si-c05-q063",
+      "topicId": "si-c05-t08",
+      "question": "Che cosa distingue INNER JOIN e LEFT OUTER JOIN?",
+      "answer": "INNER conserva solo le coppie corrispondenti; LEFT conserva tutte le tuple del lato sinistro, anche quando non hanno partner.",
+      "detail": "Negli outer join le colonne dell’operando mancante assumono valori NULL nel risultato operativo.",
+      "example": "Tutti i clienti compresi quelli senza ordini: CLIENTE LEFT JOIN ORDINE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare INNER JOIN per trovare direttamente soggetti privi di corrispondenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.4, pagina PDF 69"
+    },
+    {
+      "id": "si-c05-q064",
+      "topicId": "si-c05-t08",
+      "question": "Quali tuple conserva il RIGHT OUTER JOIN?",
+      "answer": "Tutte le tuple dell’operando destro e quelle sinistre che trovano corrispondenza.",
+      "detail": "Per i record senza partner a sinistra, le colonne sinistre sono riempite con NULL.",
+      "example": "Tutti gli ordini anche se non associati a un cliente valido nello scenario considerato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il lato conservato con il lato scritto per primo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.4, pagina PDF 69"
+    },
+    {
+      "id": "si-c05-q065",
+      "topicId": "si-c05-t08",
+      "question": "Quali tuple conserva il FULL OUTER JOIN?",
+      "answer": "Tutte quelle di entrambi gli operandi, associando le corrispondenze e mantenendo anche gli elementi non abbinati di ciascun lato.",
+      "detail": "I NULL rappresentano l’assenza del partner nel risultato operativo esteso.",
+      "example": "Confrontare due elenchi di record e vedere anche le mancate corrispondenze.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che FULL OUTER sia la stessa cosa di un prodotto cartesiano.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.4, pagina PDF 69"
+    },
+    {
+      "id": "si-c05-q066",
+      "topicId": "si-c05-t08",
+      "question": "Che cosa significa «join completo» nel lessico del manuale e che cosa NON significa?",
+      "answer": "Nel contesto delle slide richiamate indica una situazione in cui tutte le tuple di entrambi gli operandi partecipano ad almeno una coppia.",
+      "detail": "Non è sinonimo di FULL OUTER JOIN, che invece conserva anche le tuple prive di partner.",
+      "example": "Un join fra due relazioni in cui nessun elemento rimane isolato può essere completo senza essere un outer join.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la proprietà delle corrispondenze con il tipo FULL OUTER.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.4, pagina PDF 69"
+    },
+    {
+      "id": "si-c05-q067",
+      "topicId": "si-c05-t08",
+      "question": "Perché gli outer join non appartengono alla versione strettamente classica dell’algebra relazionale insiemistica senza nulli?",
+      "answer": "Perché mantengono elementi privi di partner e introducono valori NULL, estranei al modello insiemistico puro tradizionale.",
+      "detail": "Gli outer join sono un’estensione operativa; in SQL la gestione di NULL introduce una logica a tre valori.",
+      "example": "Il lato senza corrispondenza mostra colonne nulle nella query LEFT JOIN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare senza verifica le equivalenze classiche agli outer join.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.4, pagina PDF 69"
+    },
+    {
+      "id": "si-c05-q068",
+      "topicId": "si-c05-t08",
+      "question": "Come si trovano i clienti senza ordini usando l’algebra relazionale classica?",
+      "answer": "Si calcola l’insieme di tutti gli id_cliente di CLIENTE e si sottrae l’insieme degli id_cliente presenti in ORDINE.",
+      "detail": "Non richiede NULL; per visualizzare i nomi si riunisce il risultato all’anagrafica.",
+      "example": "π_{id_cliente}(CLIENTE) − π_{id_cliente}(ORDINE).",
+      "formulas": [],
+      "connections": [
+        "§5.7.2: assenza come candidati meno elementi associati."
+      ],
+      "mistakes": "Non sottrarre nomi o tentare un INNER JOIN per trovare i non associati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.4, pagina PDF 69"
+    },
+    {
+      "id": "si-c05-q069",
+      "topicId": "si-c05-t08",
+      "question": "Qual è l’alternativa operativa SQL per clienti senza ordini richiamata nel manuale?",
+      "answer": "LEFT JOIN fra CLIENTE e ORDINE e filtro sulle righe senza corrispondenza.",
+      "detail": "È un’alternativa all’antidifferenza classica; occorre scegliere una colonna del lato destro la cui assenza provi mancato abbinamento.",
+      "example": "CLIENTE LEFT JOIN ORDINE ... WHERE ORDINE.id_ordine IS NULL, in uno schema coerente.",
+      "formulas": [],
+      "connections": [
+        "§5.7.2: assenza come candidati meno elementi associati."
+      ],
+      "mistakes": "Non controllare una colonna del lato destro che può essere NULL anche in una corrispondenza valida.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.5.4, pagina PDF 69"
+    },
+    {
+      "id": "si-c05-q070",
+      "topicId": "si-c05-t09",
+      "question": "Quale procedimento usa il manuale per costruire espressioni algebriche complesse?",
+      "answer": "Tradurre la frase in passi: filtri locali, collegamenti, operazioni fra insiemi, proiezione finale; nominare gli intermedi e solo dopo compattare.",
+      "detail": "A ogni fase si deve verificare che lo schema intermedio contenga gli attributi successivamente necessari.",
+      "example": "Studenti di Gestionale con voto ≥ 28: σ su STUDENTE e ESAME, join su id_studente, poi π.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non costruire subito una formula lunga senza controllare i tipi degli intermedi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.6, pagina PDF 70"
+    },
+    {
+      "id": "si-c05-q071",
+      "topicId": "si-c05-t09",
+      "question": "Quali attributi occorrono nei quattro passi dell’esempio studenti di Gestionale con voto ≥ 28?",
+      "answer": "Il primo filtro conserva STUDENTE(id_studente,nome,corso,citta); il secondo ESAME(id_esame,id_studente,materia,voto); il join usa id_studente; il risultato conserva id_studente e nome.",
+      "detail": "L’identificativo preserva la distinzione fra omonimi.",
+      "example": "Schema finale T(id_studente,nome).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserire cognome: non esiste nello schema dimostrativo del manuale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.6, pagina PDF 70"
+    },
+    {
+      "id": "si-c05-q072",
+      "topicId": "si-c05-t09",
+      "question": "Come si controlla formalmente il tipaggio di un albero di interrogazione?",
+      "answer": "Si assegna uno schema a ogni nodo: σ lo mantiene, π lo riduce, ×/join combinano schemi e ∪/∩/− richiedono compatibilità.",
+      "detail": "Un’espressione è invalida se usa in un nodo un attributo che un sottoalbero ha già rimosso.",
+      "example": "Dopo π_{nome}(STUDENTE), σ_{voto≥28} non ha schema appropriato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non verificare solo gli attributi presenti alle foglie.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.6, pagina PDF 70"
+    },
+    {
+      "id": "si-c05-q073",
+      "topicId": "si-c05-t09",
+      "question": "Perché un join senza condizione è rischioso in un’espressione composta?",
+      "answer": "Produce un prodotto cartesiano o un collegamento semanticamente errato, potenzialmente con troppe righe.",
+      "detail": "La corretta sequenza logica include le uguaglianze tra le chiavi pertinenti.",
+      "example": "Il join fra STUDENTE ed ESAME va fatto su id_studente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non accettare una formula che non stabilisce quale studente ha sostenuto un esame.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.6, pagina PDF 70"
+    },
+    {
+      "id": "si-c05-q074",
+      "topicId": "si-c05-t09",
+      "question": "Come si interpretano gli alberi di interrogazione logica?",
+      "answer": "Le relazioni di base sono alle foglie, gli operatori sono nodi intermedi e la radice restituisce il risultato finale.",
+      "detail": "Si leggono dalle foglie verso la radice, verificando ad ogni livello schema e condizione.",
+      "example": "Due selezioni locali → join → proiezione della chiave e del nome.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’albero logico con un piano fisico inderogabile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.6, pagina PDF 70"
+    },
+    {
+      "id": "si-c05-q075",
+      "topicId": "si-c05-t09",
+      "question": "Perché il manuale sconsiglia di proiettare cognome nell’esempio STUDENTE–ESAME?",
+      "answer": "Perché STUDENTE è definita con id_studente, nome, corso e citta: il cognome non è presente.",
+      "detail": "Una richiesta che necessita cognome richiederebbe dati ulteriori o uno schema diverso.",
+      "example": "Il risultato corretto è id_studente e nome.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare un attributo per rendere più naturale una query.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.6, pagina PDF 70"
+    },
+    {
+      "id": "si-c05-q076",
+      "topicId": "si-c05-t10",
+      "question": "Come si traduce «almeno un» in algebra relazionale?",
+      "answer": "Si filtra l’evento cercato, si collegano le relazioni necessarie e si proietta l’identificativo del soggetto che ha almeno una corrispondenza.",
+      "detail": "L’insieme elimina duplicati anche se un utente soddisfa la richiesta più volte.",
+      "example": "Utenti che hanno preso in prestito almeno un libro di Camilleri: LIBRI filtrati → PRESTITI → id_utente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non richiedere due o più eventi quando basta l’esistenza di uno.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.1, pagina PDF 70"
+    },
+    {
+      "id": "si-c05-q077",
+      "topicId": "si-c05-t10",
+      "question": "Perché la proiezione su id_utente restituisce una sola tupla per utente con più prestiti validi?",
+      "answer": "Per la semantica insiemistica: tutti gli eventi dello stesso utente producono lo stesso identificativo nella proiezione.",
+      "detail": "Le tuple di PRESTITI rimangono distinte, ma il risultato richiesto riguarda l’utente.",
+      "example": "Un utente con due prestiti Camilleri compare una sola volta fra gli id finali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere numero di prestiti con numero di utenti distinti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.1, pagina PDF 70"
+    },
+    {
+      "id": "si-c05-q078",
+      "topicId": "si-c05-t10",
+      "question": "Come si formalizza «nessun libro di Camilleri preso in prestito»?",
+      "answer": "Tutti gli id degli utenti meno l’insieme degli id che hanno preso almeno un libro di Camilleri.",
+      "detail": "L’insieme di partenza deve provenire da UTENTI, per includere anche chi non ha mai effettuato prestiti.",
+      "example": "π_{id_utente}(UTENTI) − id_utente_di_prestiti_Camilleri.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non partire soltanto da PRESTITI.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.2, pagina PDF 70"
+    },
+    {
+      "id": "si-c05-q079",
+      "topicId": "si-c05-t10",
+      "question": "Perché «nessuno» non coincide con «non comparire in un inner join»?",
+      "answer": "Perché INNER JOIN produce soltanto tuple abbinate e non contiene direttamente i soggetti mancanti.",
+      "detail": "Per individuare assenze servono complementi rispetto a candidati completi o un outer join in SQL con controllo di mancanza.",
+      "example": "Aule senza prenotazioni: AULE − aule prenotate nella data.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cercare l’assenza dentro un risultato che ha già scartato gli assenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.2, pagina PDF 70"
+    },
+    {
+      "id": "si-c05-q080",
+      "topicId": "si-c05-t10",
+      "question": "Che cosa significa «utenti che hanno preso solo libri di Camilleri» nell’interpretazione del materiale ufficiale?",
+      "answer": "Utenti con almeno un prestito di Camilleri e nessun prestito di autore diverso.",
+      "detail": "Si costruisce A=utenti con Camilleri e B=utenti con almeno un autore diverso; risultato A−B.",
+      "example": "Chi non ha mai fatto prestiti non è incluso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non tradurre «solo A» semplicemente come «non B».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.3, pagina PDF 71"
+    },
+    {
+      "id": "si-c05-q081",
+      "topicId": "si-c05-t10",
+      "question": "Qual è la differenza fra «nessuno di B» e «solo A»?",
+      "answer": "«Nessuno di B» richiede l’assenza di B, ma «solo A» nel corso richiede anche almeno un A.",
+      "detail": "L’universo dei candidati è diverso; la scelta cambia i casi senza associazioni.",
+      "example": "Chi non ha prestiti è ammesso a «nessun libro di De Luca», ma escluso da «solo Camilleri».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare il requisito di esistenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.3, pagina PDF 71"
+    },
+    {
+      "id": "si-c05-q082",
+      "topicId": "si-c05-t10",
+      "question": "Perché la frase «tutti i suoi prestiti sono di Camilleri» può includere logicamente chi non ha prestiti?",
+      "answer": "Perché una proposizione universale è vera vacuamente quando non esistono controesempi.",
+      "detail": "Il manuale evidenzia che l’uso colloquiale «ha preso solo libri di Camilleri» normalmente presuppone almeno un prestito; le tracce ufficiali seguono tale interpretazione.",
+      "example": "A−B esclude gli utenti privi di A.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare automaticamente l’interpretazione universale vacua alla richiesta del corso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.3, pagina PDF 71"
+    },
+    {
+      "id": "si-c05-q083",
+      "topicId": "si-c05-t10",
+      "question": "Quali sono i due errori più frequenti nelle richieste «solo»?",
+      "answer": "Non imporre alcun evento A oppure sottrarre eventi invece degli identificativi dei soggetti.",
+      "detail": "La soluzione robusta è proiettare la stessa chiave nei due insiemi A e B.",
+      "example": "Utenti con almeno un Camilleri meno utenti con almeno un autore non Camilleri.",
+      "formulas": [],
+      "connections": [
+        "§5.7.3: esistenza obbligatoria più assenza di elementi non ammessi."
+      ],
+      "mistakes": "Non usare categorie diverse di oggetti negli operandi della differenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.3, pagina PDF 71"
+    },
+    {
+      "id": "si-c05-q084",
+      "topicId": "si-c05-t11",
+      "question": "Che cosa esprime la divisione relazionale R ÷ S?",
+      "answer": "Restituisce i valori X associati a tutti i valori Y appartenenti alla relazione S, quando R rappresenta coppie (X,Y).",
+      "detail": "Formalizza la quantificazione universale «per ogni elemento richiesto».",
+      "example": "Clienti che hanno acquistato tutte le categorie obbligatorie.",
+      "formulas": [],
+      "connections": [
+        "§5.10.2: quantificatore universale e ricerca dei controesempi."
+      ],
+      "mistakes": "Non confonderla con «almeno una categoria».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.4, pagina PDF 71"
+    },
+    {
+      "id": "si-c05-q085",
+      "topicId": "si-c05-t11",
+      "question": "Come si risolve una domanda «tutti» senza usare ÷ come operatore primitivo?",
+      "answer": "Si costruiscono i candidati C, le coppie richieste C×S, le coppie mancanti M=(C×S)−R e si eliminano i candidati comparsi in M.",
+      "detail": "Il risultato è C−π_X(M); le coppie mancanti individuano esattamente chi non soddisfa il requisito universale.",
+      "example": "C=id_cliente, S=categorie richieste, R=coppie cliente–categoria acquistata.",
+      "formulas": [
+        {
+          "latex": "M=(C\\times S)-R",
+          "meaning": "Insieme delle coppie cliente–categoria ancora mancanti."
+        },
+        {
+          "latex": "\\mathrm{Risultato}=C-\\pi_X(M)",
+          "meaning": "Esclude tutti i candidati con almeno un requisito mancante."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non considerare sufficiente un singolo acquisto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.4, pagina PDF 71"
+    },
+    {
+      "id": "si-c05-q086",
+      "topicId": "si-c05-t11",
+      "question": "Perché nella divisione il prodotto cartesiano C×S è essenziale?",
+      "answer": "Perché genera tutte le combinazioni che ogni candidato dovrebbe possedere per soddisfare «tutti».",
+      "detail": "La differenza con le coppie effettivamente presenti rileva le condizioni mancanti.",
+      "example": "Se S={A,B,C}, per ogni cliente si attendono tre coppie (cliente,A/B/C).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare soltanto la numerosità delle categorie: potrebbero essere categorie sbagliate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.4, pagina PDF 71"
+    },
+    {
+      "id": "si-c05-q087",
+      "topicId": "si-c05-t11",
+      "question": "Quale differenza c’è tra «tutte le categorie» e «almeno una categoria»?",
+      "answer": "«Tutte» esclude chi manca anche di una sola categoria richiesta; «almeno una» richiede una singola corrispondenza.",
+      "detail": "Le costruzioni algebriche corrispondono a quantificatori diversi: universale vs esistenziale.",
+      "example": "Cliente con A e B, ma senza C: soddisfa «almeno una», non «tutte» se S={A,B,C}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un join seguito da π per risolvere «tutte».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.4, pagina PDF 71"
+    },
+    {
+      "id": "si-c05-q088",
+      "topicId": "si-c05-t11",
+      "question": "Perché il manuale specifica la convenzione dell’insieme dei candidati quando S è vuoto?",
+      "answer": "Perché il risultato della formulazione universale dipende dall’universo di X che si sceglie.",
+      "detail": "Nella costruzione mostrata C viene ricavato dalle coppie R; se si vogliono tutti i clienti, C deve provenire dalla relazione CLIENTE.",
+      "example": "Con S vuoto tutti i clienti candidati soddisfano vacuamente la condizione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che π_X(R) contenga soggetti che non hanno alcuna coppia in R.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.4, pagina PDF 71"
+    },
+    {
+      "id": "si-c05-q089",
+      "topicId": "si-c05-t11",
+      "question": "Che interpretazione logica equivale alla quantificazione universale?",
+      "answer": "«Per ogni elemento richiesto esiste una corrispondenza» equivale a «non esiste alcun elemento richiesto mancante».",
+      "detail": "È la motivazione della divisione ricostruita con negazione ed esclusione delle mancanze.",
+      "example": "Cliente senza categorie mancanti → cliente che possiede tutte quelle di S.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cercare una riga con un attributo che rappresenti contemporaneamente tutte le categorie.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.7.4, pagina PDF 71"
+    },
+    {
+      "id": "si-c05-q090",
+      "topicId": "si-c05-t12",
+      "question": "Perché servono auto-join e differenze per calcolare estremi nell’algebra di base?",
+      "answer": "Perché l’algebra relazionale classica del capitolo non comprende necessariamente MIN e MAX come operatori primitivi.",
+      "detail": "Un valore non è massimo se esiste un concorrente maggiore; non è minimo se esiste un concorrente minore.",
+      "example": "Si eliminano i valori dominati dopo il confronto con una seconda copia rinominata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre MIN/MAX nella formula come se facessero parte degli operatori trattati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.8, pagina PDF 72"
+    },
+    {
+      "id": "si-c05-q091",
+      "topicId": "si-c05-t12",
+      "question": "Qual è l’idea generale per trovare un valore estremo senza aggregazioni?",
+      "answer": "Partire dai candidati e sottrarre quelli per cui esiste una tupla con valore migliore rispetto all’ordinamento desiderato.",
+      "detail": "Per un minimo si scartano i valori con almeno un più piccolo; per un massimo quelli con almeno un più grande.",
+      "example": "Voti: sottrai i voti inferiori a qualche altro per trovare i massimi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire i versi delle disuguaglianze.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.8, pagina PDF 72"
+    },
+    {
+      "id": "si-c05-q092",
+      "topicId": "si-c05-t12",
+      "question": "Come si trova il minimo assoluto di B in R(A,B) senza MIN?",
+      "answer": "Si rinomina una seconda copia R2(A2,B2), si individuano i B per cui esiste B2<B, poi li si sottrae da π_B(R).",
+      "detail": "I valori candidati non dominati sono i minimi.",
+      "example": "π_B(R) − π_B(σ_{B>B2}(R×R2)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare B<B2 per eliminare i non minimi: servirebbe a trovare i massimi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.8.1, pagina PDF 72"
+    },
+    {
+      "id": "si-c05-q093",
+      "topicId": "si-c05-t12",
+      "question": "Che cosa accade ai pari merito nell’individuazione del minimo assoluto?",
+      "answer": "Sono tutti valori minimi: la disuguaglianza stretta non elimina i pari merito.",
+      "detail": "Nella proiezione dei soli valori, tuple identiche vengono deduplicate; per distinguere le righe originarie occorrono identificativi.",
+      "example": "Due esami con voto minimo 18: π_voto restituisce 18 una sola volta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare ≤ per scartare i candidati: il confronto di una tupla con sé stessa eliminerebbe tutto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.8.1, pagina PDF 72"
+    },
+    {
+      "id": "si-c05-q094",
+      "topicId": "si-c05-t12",
+      "question": "Come si trova un massimo relativo per prodotto usando R(prodotto,costo)?",
+      "answer": "Si sottraggono le coppie (prodotto,costo) per cui esiste una seconda coppia dello stesso prodotto con costo strettamente maggiore.",
+      "detail": "Il predicato deve includere sia l’uguaglianza sul gruppo sia costo<costo2.",
+      "example": "π_{prodotto,costo}(R) − π_{prodotto,costo}(σ_{prodotto=prodotto2 ∧ costo<costo2}(R×R2)).",
+      "formulas": [],
+      "connections": [
+        "§5.11-F: massimo voto per matricola."
+      ],
+      "mistakes": "Non confrontare valori appartenenti a prodotti differenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.8.2, pagina PDF 72"
+    },
+    {
+      "id": "si-c05-q095",
+      "topicId": "si-c05-t12",
+      "question": "Perché nel massimo per gruppo occorre la condizione prodotto=prodotto2?",
+      "answer": "Perché il confronto deve avvenire esclusivamente fra elementi dello stesso gruppo.",
+      "detail": "Senza tale uguaglianza il massimo globale potrebbe cancellare i massimi degli altri prodotti.",
+      "example": "Prezzo massimo di ogni prodotto, non del catalogo intero.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cercare il massimo per gruppo con una sola condizione sul valore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.8.2, pagina PDF 72"
+    },
+    {
+      "id": "si-c05-q096",
+      "topicId": "si-c05-t12",
+      "question": "Come si trova il voto massimo per ciascuno studente nell’esercizio ufficiale?",
+      "answer": "Si confrontano coppie (matricola,voto) di ESAMI con una copia E2, si eliminano quelle per cui esiste voto2 superiore della stessa matricola.",
+      "detail": "Il risultato conserva matricola e voto, non soltanto il numero del voto.",
+      "example": "Candidati − Dominati, con matricola=matricola2 ∧ voto<voto2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare matricole diverse.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.8.2, pagina PDF 72"
+    },
+    {
+      "id": "si-c05-q097",
+      "topicId": "si-c05-t12",
+      "question": "Che cosa succede se lo stesso studente ha voti 25, 29 e 29?",
+      "answer": "La relazione (matricola,voto) del massimo contiene una sola coppia (studente,29).",
+      "detail": "In insiemistica i due 29 identici collassano; per ottenere le righe originali a pari merito bisogna conservare id_esame o altri identificativi.",
+      "example": "Esempio di pagina PDF 72.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare la deduplicazione per sostenere che lo studente abbia sostenuto un solo esame da 29.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.8.2, pagina PDF 72"
+    },
+    {
+      "id": "si-c05-q098",
+      "topicId": "si-c05-t13",
+      "question": "Qual è lo scopo dell’ottimizzazione algebrica?",
+      "answer": "Riscrivere un’espressione in forma logicamente equivalente, spesso con intermedi meno voluminosi e passaggi più convenienti.",
+      "detail": "L’equivalenza deve conservare il risultato per qualunque istanza valida degli operandi.",
+      "example": "Applicare filtri su STUDENTE e ESAME prima del join.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere una trasformazione logica con una garanzia di miglioramento del tempo reale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.9, pagina PDF 73"
+    },
+    {
+      "id": "si-c05-q099",
+      "topicId": "si-c05-t13",
+      "question": "Quali quattro famiglie di trasformazioni richiama il materiale ufficiale?",
+      "answer": "Atomizzazione delle selezioni, idempotenza delle proiezioni, anticipazione delle selezioni e anticipazione delle proiezioni rispetto ai join.",
+      "detail": "Le regole richiedono attenzione agli schemi e ai predicati.",
+      "example": "Conservare id_studente quando si anticipa la proiezione rispetto al join.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare qualsiasi spostamento di operatori come automaticamente equivalente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.9, pagina PDF 73"
+    },
+    {
+      "id": "si-c05-q100",
+      "topicId": "si-c05-t13",
+      "question": "Come si atomizza una selezione congiuntiva?",
+      "answer": "σ_{c1∧c2}(R) = σ_{c1}(σ_{c2}(R)) = σ_{c2}(σ_{c1}(R)).",
+      "detail": "Le selezioni con condizioni congiunte sulla stessa relazione possono essere riordinate.",
+      "example": "Filtrare separatamente citta=Bari e corso=Gestionale.",
+      "formulas": [
+        {
+          "latex": "\\sigma_{c_1\\land c_2}(R)=\\sigma_{c_1}(\\sigma_{c_2}(R))",
+          "meaning": "Equivalenza di atomizzazione delle selezioni."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non sostituire la congiunzione con un’unione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.9.1, pagina PDF 73"
+    },
+    {
+      "id": "si-c05-q101",
+      "topicId": "si-c05-t13",
+      "question": "Quale vantaggio può dare applicare prima una selezione molto restrittiva?",
+      "answer": "Può ridurre presto la cardinalità dell’intermedio e quindi le combinazioni successive.",
+      "detail": "È una considerazione generale; il vantaggio fisico effettivo dipende anche dal DBMS.",
+      "example": "Filtrare ESAME per voto≥28 prima di collegarlo a STUDENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare sempre noto il miglior ordine senza costi e statistiche.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.9.1, pagina PDF 73"
+    },
+    {
+      "id": "si-c05-q102",
+      "topicId": "si-c05-t13",
+      "question": "Quando può essere anticipata una selezione rispetto a un join interno?",
+      "answer": "Quando il suo predicato usa soltanto attributi di un operando; allora può essere applicata a quell’operando prima del join.",
+      "detail": "La trasformazione preserva il risultato di un join interno se si rispettano le precondizioni.",
+      "example": "σ_{corso=Gestionale}(STUDENTE ⋈ ESAME) ↔ σ_{corso=Gestionale}(STUDENTE) ⋈ ESAME.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non spostare su STUDENTE un filtro che richiede voto presente solo in ESAME.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.9.2, pagina PDF 73"
+    },
+    {
+      "id": "si-c05-q103",
+      "topicId": "si-c05-t13",
+      "question": "Perché il push-down delle selezioni non si applica indiscriminatamente agli outer join?",
+      "answer": "Perché spostare un filtro può cambiare quali righe non abbinate sono preservate e quali valori NULL sopravvivono.",
+      "detail": "Le equivalenze del join interno non sono automaticamente valide per LEFT/RIGHT/FULL OUTER.",
+      "example": "Un filtro sul lato destro messo in WHERE può eliminare righe sinistre senza partner.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ottimizzare un outer join come se fosse sempre un inner join.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.9.2, pagina PDF 73"
+    },
+    {
+      "id": "si-c05-q104",
+      "topicId": "si-c05-t13",
+      "question": "Qual è lo scopo dell’anticipazione delle proiezioni?",
+      "answer": "Eliminare presto colonne non necessarie mantenendo quelle utili a filtri, condizioni di join e risultato finale.",
+      "detail": "La riduzione dello schema intermedio non deve impedire i passi successivi.",
+      "example": "Su STUDENTE conservare id_studente e nome prima del join se si vogliono nomi di studenti con esami.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eliminare id_studente prima del join.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.9.3, pagina PDF 73"
+    },
+    {
+      "id": "si-c05-q105",
+      "topicId": "si-c05-t13",
+      "question": "Quali colonne devono sopravvivere a una proiezione anticipata rispetto al join?",
+      "answer": "Quelle richieste dal risultato finale e tutte quelle necessarie a valutare il predicato di collegamento e i filtri successivi.",
+      "detail": "L’insieme minimo dipende dal ruolo di ciascun operando nel predicato.",
+      "example": "STUDENTE: {id_studente,nome}; ESAME: {id_studente} dopo eventuale filtro su materia/voto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non anticipare la proiezione scartando il campo del filtro ancora da applicare.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.9.3, pagina PDF 73"
+    },
+    {
+      "id": "si-c05-q106",
+      "topicId": "si-c05-t13",
+      "question": "Che cosa significa idempotenza della proiezione nel controllo delle equivalenze?",
+      "answer": "Proiettare nuovamente su un sottoinsieme di attributi già disponibili equivale a proiettare direttamente su tale sottoinsieme.",
+      "detail": "Il secondo insieme di attributi deve essere contenuto nel primo.",
+      "example": "π_{nome}(π_{id_studente,nome}(STUDENTE)) = π_{nome}(STUDENTE).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invocare l’idempotenza se la proiezione interna ha già eliminato un attributo che serve fuori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.9.3, pagina PDF 73"
+    },
+    {
+      "id": "si-c05-q107",
+      "topicId": "si-c05-t13",
+      "question": "Come si distribuisce una selezione disgiuntiva in termini di insiemi?",
+      "answer": "σ_{c1∨c2}(R) = σ_{c1}(R) ∪ σ_{c2}(R).",
+      "detail": "Gli operandi dell’unione hanno lo stesso schema perché entrambi derivano da R.",
+      "example": "Selezionare studenti di Gestionale oppure residenti a Lecce.",
+      "formulas": [
+        {
+          "latex": "\\sigma_{c_1\\lor c_2}(R)=\\sigma_{c_1}(R)\\cup\\sigma_{c_2}(R)",
+          "meaning": "Equivalenza OR/unione su una relazione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non usare intersezione per una disgiunzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.9.4, pagina PDF 73"
+    },
+    {
+      "id": "si-c05-q108",
+      "topicId": "si-c05-t13",
+      "question": "Come si distribuisce una selezione congiuntiva in termini di insiemi?",
+      "answer": "σ_{c1∧c2}(R) = σ_{c1}(R) ∩ σ_{c2}(R).",
+      "detail": "L’equivalenza si riferisce a due predicati su tuple della stessa relazione.",
+      "example": "Studenti di Gestionale e della città Bari, nello stesso dataset.",
+      "formulas": [
+        {
+          "latex": "\\sigma_{c_1\\land c_2}(R)=\\sigma_{c_1}(R)\\cap\\sigma_{c_2}(R)",
+          "meaning": "Equivalenza AND/intersezione su una relazione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non applicarla a due criteri che devono valere su eventi distinti senza proiettare l’identificativo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.9.4, pagina PDF 73"
+    },
+    {
+      "id": "si-c05-q109",
+      "topicId": "si-c05-t13",
+      "question": "Perché «enoteche con rosso e rosato» non si riduce a σ_{rosso∧rosato}(VINI)?",
+      "answer": "Perché i due colori possono appartenere a vini diversi presenti nella stessa enoteca, non a una singola tupla di VINI.",
+      "detail": "Si filtrano e si collegano i due cataloghi di colore, poi si intersecano gli identificativi di enoteca.",
+      "example": "R∩S su codice_enoteca.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere AND fra predicati su una tupla e AND fra esistenze di tuple distinte.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.9.4, pagina PDF 73"
+    },
+    {
+      "id": "si-c05-q110",
+      "topicId": "si-c05-t13",
+      "question": "Che verifica conclude un’ottimizzazione su espressioni con join?",
+      "answer": "Dimostrare che tutte le chiavi e i predicati necessari sono ancora disponibili e che il risultato finale è invariato.",
+      "detail": "Intermedi più piccoli sono utili soltanto se la trasformazione è semanticamente corretta.",
+      "example": "Studenti Gestionale con voto≥28: filtri anticipati, join sull’id, proiezione dell’id.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che l’ottimizzatore fisico esegua proprio l’albero riscritto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.9.4, pagina PDF 73"
+    },
+    {
+      "id": "si-c05-q111",
+      "topicId": "si-c05-t14",
+      "question": "Qual è la differenza fondamentale fra proiezione classica e SELECT SQL?",
+      "answer": "π usa semantica insiemistica ed elimina i duplicati; SELECT SQL, senza DISTINCT, può mantenerli.",
+      "detail": "SELECT DISTINCT corrisponde più da vicino alla proiezione dell’algebra relazionale classica.",
+      "example": "SELECT citta FROM studente può mostrare Bari due volte; SELECT DISTINCT citta no.",
+      "formulas": [],
+      "connections": [
+        "§5.1: semantica insiemistica dell’algebra classica."
+      ],
+      "mistakes": "Non assumere che SELECT deduplichi automaticamente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.10.1, pagina PDF 74"
+    },
+    {
+      "id": "si-c05-q112",
+      "topicId": "si-c05-t14",
+      "question": "Come si traducono schematicamente selezione e proiezione in SQL?",
+      "answer": "σ_c(R) richiama SELECT ... FROM R WHERE c; π_A(R) richiama SELECT DISTINCT A FROM R.",
+      "detail": "L’analogia è introduttiva, perché SQL aggiunge semantica bag e gestione dei valori nulli.",
+      "example": "π_{citta}(STUDENTE) ↔ SELECT DISTINCT citta FROM studente.",
+      "formulas": [],
+      "connections": [
+        "§5.9: push-down di filtri e colonne con attenzione ai campi necessari."
+      ],
+      "mistakes": "Non dichiarare equivalenti in ogni aspetto algebra e SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.10.1, pagina PDF 74"
+    },
+    {
+      "id": "si-c05-q113",
+      "topicId": "si-c05-t14",
+      "question": "Quali costrutti SQL richiamano ⋈_c, ∪ e −?",
+      "answer": "JOIN ... ON c, UNION ed EXCEPT (ove supportato dal DBMS).",
+      "detail": "UNION elimina duplicati nella forma comune, a differenza di UNION ALL.",
+      "example": "R ⋈_c S ↔ FROM R JOIN S ON c.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere UNION ALL con l’unione insiemistica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.10.1, pagina PDF 74"
+    },
+    {
+      "id": "si-c05-q114",
+      "topicId": "si-c05-t14",
+      "question": "Quali differenze di semantica introduce NULL rispetto all’algebra relazionale pura?",
+      "answer": "SQL gestisce valori mancanti e condizioni con risultato TRUE/FALSE/UNKNOWN; l’algebra classica del capitolo presume relazioni senza nulli.",
+      "detail": "Un filtro SQL non conserva le righe per le quali il predicato risulta UNKNOWN.",
+      "example": "Comparare un attributo NULL con una costante non equivale a una normale uguaglianza insiemistica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire senza precauzioni le equivalenze algebriche alla logica a tre valori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.10.1, pagina PDF 74"
+    },
+    {
+      "id": "si-c05-q115",
+      "topicId": "si-c05-t14",
+      "question": "Qual è il legame tra ridenominazione algebrica e query SQL?",
+      "answer": "ρ è concettualmente corrispondente ad alias di relazioni o colonne.",
+      "detail": "Gli alias sono particolarmente importanti per auto-join e attributi omonimi.",
+      "example": "CLIENTI AS C1 JOIN CLIENTI AS C2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non riferirsi a un alias di colonna non disponibile nello stesso ambito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.10.1, pagina PDF 74"
+    },
+    {
+      "id": "si-c05-q116",
+      "topicId": "si-c05-t14",
+      "question": "Che differenza c’è fra algebra relazionale e calcolo relazionale?",
+      "answer": "L’algebra è procedurale-logica: esplicita una composizione di operatori. Il calcolo è dichiarativo: specifica le proprietà delle tuple cercate mediante predicati.",
+      "detail": "Il manuale introduce il calcolo come integrazione al programma e privilegia l’algebra per gli esercizi ufficiali.",
+      "example": "{s.nome | s∈STUDENTE ∧ s.corso=\"Gestionale\"}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere dichiarativo con assenza di regole formali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.10.2, pagina PDF 74"
+    },
+    {
+      "id": "si-c05-q117",
+      "topicId": "si-c05-t14",
+      "question": "Quali quantificatori usa il calcolo relazionale?",
+      "answer": "∃ indica «esiste almeno uno» e ∀ indica «per ogni».",
+      "detail": "Sono utili per interpretare richieste con esistenza, assenza e universalità.",
+      "example": "«Ogni categoria richiesta è stata acquistata» equivale a «non esiste una categoria richiesta mancante».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare ∀ quando è richiesto soltanto almeno un elemento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.10.2, pagina PDF 74"
+    },
+    {
+      "id": "si-c05-q118",
+      "topicId": "si-c05-t14",
+      "question": "Perché il corso collega divisione relazionale e quantificatore universale?",
+      "answer": "Perché entrambe formalizzano il requisito che un soggetto soddisfi tutte le condizioni appartenenti a un insieme richiesto.",
+      "detail": "La divisione può essere riscritta tramite il principio di assenza di controesempi.",
+      "example": "Clienti che possiedono tutte le categorie di S.",
+      "formulas": [],
+      "connections": [
+        "§5.10.2: quantificatore universale e ricerca dei controesempi."
+      ],
+      "mistakes": "Non ridurre «tutte» a una serie di join che controlla una sola categoria.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.10.2, pagina PDF 74"
+    },
+    {
+      "id": "si-c05-q119",
+      "topicId": "si-c05-t15",
+      "question": "Quali scenari ufficiali riprende la sezione 5.11?",
+      "answer": "Biblioteca, noleggio CD, prenotazione treni, prenotazione aule, esami universitari ed enoteche.",
+      "detail": "Gli scenari sono riformulati nel manuale per evidenziare i passaggi algebrici e le ipotesi necessarie sugli schemi.",
+      "example": "Assenza di prenotazioni, massimo voto, clienti omonimi, vini di due colori.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare gli schemi didattici come dati del progetto EnerPrice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11, pagina PDF 75"
+    },
+    {
+      "id": "si-c05-q120",
+      "topicId": "si-c05-t15",
+      "question": "Qual è il metodo di controllo comune agli esercizi ufficiali?",
+      "answer": "Individuare gli attributi realmente disponibili, applicare filtri alle relazioni corrette, collegare gli identificativi, poi ottenere soltanto gli output richiesti.",
+      "detail": "In differenze/intersezioni i due lati devono avere schema semanticamente compatibile.",
+      "example": "Per un’aula libera: prima codici delle aule; poi sottrazione; infine nome ed edificio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proiettare un attributo prima del passaggio in cui serve per il join.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11, pagina PDF 75"
+    },
+    {
+      "id": "si-c05-q121",
+      "topicId": "si-c05-t15",
+      "question": "Come si trovano i titoli dei libri presi in prestito il 13 luglio 2011 nell’esercizio ufficiale A?",
+      "answer": "Si filtra PRESTITI per data_prestito=2011-07-13, si collega a LIBRI tramite codice_libro e si proietta titolo.",
+      "detail": "La relazione risultante è un insieme di titoli: prestiti ripetuti dello stesso titolo non ne duplicano il valore.",
+      "example": "π_{titolo}(σ_{data_prestito=\"2011-07-13\"}(PRESTITI) ⋈ LIBRI).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non filtrare LIBRI usando data_prestito, che appartiene a PRESTITI.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale A), pagina PDF 75"
+    },
+    {
+      "id": "si-c05-q122",
+      "topicId": "si-c05-t15",
+      "question": "Quale cautela sul join dell’esercizio biblioteca A segnala il manuale?",
+      "answer": "Il natural join è adeguato solo se codice_libro è l’unico attributo omonimo significativo fra LIBRI e PRESTITI.",
+      "detail": "Se ci fossero altre omonimie, sarebbe preferibile dichiarare il predicato esplicitamente.",
+      "example": "JOIN su codice_libro.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che il natural join sia sicuro in qualsiasi schema.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale A), pagina PDF 75"
+    },
+    {
+      "id": "si-c05-q123",
+      "topicId": "si-c05-t15",
+      "question": "Come si trovano gli utenti che hanno preso libri di Camilleri oppure De Luca?",
+      "answer": "Si selezionano i libri con autore Camilleri OR De Luca, si collegano a PRESTITI e si proietta codice_utente.",
+      "detail": "Si può anche costruire un insieme per autore e usarne l’unione, purché lo schema sia lo stesso.",
+      "example": "π_{codice_utente}(PRESTITI ⋈ σ_{autore=\"Camilleri\" ∨ autore=\"De Luca\"}(LIBRI)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare «oppure» come richiesta di entrambi gli autori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale B), pagina PDF 75"
+    },
+    {
+      "id": "si-c05-q124",
+      "topicId": "si-c05-t15",
+      "question": "Perché nell’esercizio ufficiale B basta un OR nella selezione di LIBRI?",
+      "answer": "Perché i due valori di autore sono alternative sullo stesso attributo della medesima relazione.",
+      "detail": "Il filtro può essere applicato prima del join e la proiezione finale elimina eventuali duplicati di utente.",
+      "example": "autore=\"Camilleri\" ∨ autore=\"De Luca\".",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare due join scollegati che producono un prodotto cartesiano.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale B), pagina PDF 75"
+    },
+    {
+      "id": "si-c05-q125",
+      "topicId": "si-c05-t15",
+      "question": "Come si individuano clienti con stesso nome e cognome ma codice fiscale diverso?",
+      "answer": "Si rinominano due copie di CLIENTI, si confrontano le due tuple con stesso nome e cognome e CF differente, poi si proiettano i dati richiesti.",
+      "detail": "È un auto-confronto, non una ricerca di valori mancanti.",
+      "example": "σ_{C1.nome=C2.nome ∧ C1.cognome=C2.cognome ∧ C1.cf≠C2.cf}(C1×C2).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare una sola copia di CLIENTI.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale C), pagina PDF 75"
+    },
+    {
+      "id": "si-c05-q126",
+      "topicId": "si-c05-t15",
+      "question": "Come si possono evitare doppie rappresentazioni delle stesse coppie di clienti omonimi?",
+      "answer": "Aggiungendo un criterio d’ordine convenzionale sugli identificativi, per esempio C1.codice_cliente<C2.codice_cliente.",
+      "detail": "Il confronto «diverso» da solo può produrre sia (A,B) sia (B,A).",
+      "example": "L’esercizio di noleggio CD menziona l’ordinamento convenzionale per ottenere coppie non duplicate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere questa condizione con il requisito di CF diversi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale C), pagina PDF 75"
+    },
+    {
+      "id": "si-c05-q127",
+      "topicId": "si-c05-t15",
+      "question": "Perché per l’esercizio CD non serve l’operatore di differenza?",
+      "answer": "Perché il requisito non domanda elementi assenti: confronta due tuple esistenti su uguaglianze e disuguaglianze.",
+      "detail": "L’auto-join theta è il costrutto naturale.",
+      "example": "Stesso nome/cognome ma CF differente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare − solo perché appare la parola «diversi».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale C), pagina PDF 75"
+    },
+    {
+      "id": "si-c05-q128",
+      "topicId": "si-c05-t15",
+      "question": "Quali passi risolvono la ricerca dei viaggiatori da Pisa a Roma il 10 dicembre 2011?",
+      "answer": "Filtro PRENOTAZIONI sulla data; filtro TRENI su provenienza Pisa e destinazione Roma; join su codice_treno e codice_viaggiatore; proiezione finale.",
+      "detail": "La data dell’evento di prenotazione non appartiene a VIAGGIATORI.",
+      "example": "VIAGGIATORI ⋈ PRENOTAZIONI_filtrate ⋈ TRENI_filtrati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere uno dei due join.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale D), pagina PDF 75"
+    },
+    {
+      "id": "si-c05-q129",
+      "topicId": "si-c05-t15",
+      "question": "Perché le selezioni dell’esercizio treni possono essere applicate prima dei join?",
+      "answer": "Perché il filtro della data dipende soltanto da PRENOTAZIONI e quello delle stazioni soltanto da TRENI.",
+      "detail": "È un caso di push-down della selezione su join interno.",
+      "example": "σ_{data=\"2011-12-10\"}(PRENOTAZIONI) e σ_{provenienza=\"Pisa\"∧destinazione=\"Roma\"}(TRENI).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare il filtro provenienza al viaggiatore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale D), pagina PDF 75"
+    },
+    {
+      "id": "si-c05-q130",
+      "topicId": "si-c05-t15",
+      "question": "Perché può essere opportuno restituire anche codice_viaggiatore oltre a nome e cognome?",
+      "answer": "Perché due viaggiatori possono essere omonimi: l’identificativo conserva le persone distinte.",
+      "detail": "La proiezione dei soli dati anagrafici può unificare tuple che rappresentano soggetti diversi.",
+      "example": "Risultato con codice_viaggiatore,nome,cognome.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere una sola coppia nome/cognome con un solo viaggiatore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale D), pagina PDF 75"
+    },
+    {
+      "id": "si-c05-q131",
+      "topicId": "si-c05-t16",
+      "question": "Come si trovano aule di capienza superiore a 100 senza prenotazioni in una data?",
+      "answer": "C=codici delle aule con capienza>100; O=codici delle aule prenotate nella data; libere=C−O. Poi join con AULE per presentare nome ed edificio.",
+      "detail": "L’esercizio ufficiale E riguarda il 10 dicembre 2011.",
+      "example": "C=π_{codice_aula}(σ_{capienza>100}(AULE)); O=π_{codice_aula}(σ_{data=\"2011-12-10\"}(PRENOTAZIONI)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sottrarre direttamente tuple di AULE da tuple PRENOTAZIONI.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale E), pagina PDF 76"
+    },
+    {
+      "id": "si-c05-q132",
+      "topicId": "si-c05-t16",
+      "question": "Perché nella sottrazione sulle aule servono solo i codici?",
+      "answer": "Per assicurare che gli operandi abbiano schema compatibile ed evitare differenze spurie dovute a nome, edificio o altri campi.",
+      "detail": "Il risultato degli id può essere collegato successivamente a AULE.",
+      "example": "(C−O) ⋈ AULE → π_{nome,edificio}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sottrarre le righe complete delle due tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale E), pagina PDF 76"
+    },
+    {
+      "id": "si-c05-q133",
+      "topicId": "si-c05-t16",
+      "question": "Quale errore nelle versioni abbreviate dell’esercizio aule è segnalato dal manuale?",
+      "answer": "Può mancare il collegamento all’anagrafica AULE dopo aver fatto la differenza sugli identificativi.",
+      "detail": "La sottrazione trova le chiavi libere, ma non produce automaticamente nome ed edificio.",
+      "example": "Prima C−O, poi join con AULE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proiettare attributi che non fanno parte del risultato della differenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale E), pagina PDF 76"
+    },
+    {
+      "id": "si-c05-q134",
+      "topicId": "si-c05-t16",
+      "question": "Come si calcola il voto minimo assoluto senza MIN nell’esercizio ufficiale F?",
+      "answer": "Si proiettano tutti i voti e si sottraggono i voti che risultano maggiori di almeno un voto presente in una seconda copia rinominata.",
+      "detail": "L’operatore essenziale è la differenza fra candidati e valori dominati.",
+      "example": "π_voto(ESAMI) − π_voto(σ_{voto>voto2}(ESAMI×E2)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scartare i voti inferiori a un altro: otterresti il massimo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale F), pagina PDF 76"
+    },
+    {
+      "id": "si-c05-q135",
+      "topicId": "si-c05-t16",
+      "question": "Come si calcola il massimo voto per ciascuna matricola nell’esercizio F?",
+      "answer": "Si parte da π_{matricola,voto}(ESAMI) e si sottraggono le coppie con un voto minore di un’altra coppia della stessa matricola.",
+      "detail": "Il confronto richiede matricola=matricola2 ∧ voto<voto2.",
+      "example": "Il risultato conserva i pari merito come valore, ma non duplica tuple (matricola,voto) identiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare studenti distinti nella ricerca del massimo per studente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale F), pagina PDF 76"
+    },
+    {
+      "id": "si-c05-q136",
+      "topicId": "si-c05-t16",
+      "question": "Come influiscono i pari merito sul risultato di massimo per matricola?",
+      "answer": "Restano massimi tutti gli eventi con pari voto, ma proiettando solo (matricola,voto) il risultato visualizza una coppia distinta.",
+      "detail": "Se la richiesta riguarda gli esami individuali bisogna mantenere identificativi di evento o data appropriati.",
+      "example": "Voti 25,29,29 → una tupla (matricola,29).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che i pari merito non esistono perché la proiezione mostra una sola riga.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale F), pagina PDF 76"
+    },
+    {
+      "id": "si-c05-q137",
+      "topicId": "si-c05-t16",
+      "question": "Come si trovano le enoteche che vendono vini sia rossi sia rosati?",
+      "answer": "Si ricavano due insiemi di codice_enoteca: uno per le enoteche che vendono almeno un rosso, uno per almeno un rosato; si intersecano.",
+      "detail": "La relazione CATALOGO collega ENOTECHE e VINI tramite i codici.",
+      "example": "R=π_{codice_enoteca}(CATALOGO ⋈ σ_{colore=\"rosso\"}(VINI)); S analogamente per rosato; R∩S.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pretendere un vino contemporaneamente rosso e rosato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale G), pagina PDF 76"
+    },
+    {
+      "id": "si-c05-q138",
+      "topicId": "si-c05-t16",
+      "question": "Come si ottengono i nomi delle enoteche dopo l’intersezione R∩S?",
+      "answer": "Si riunisce l’insieme di codici risultante alla relazione ENOTECHE e si proietta il nome richiesto.",
+      "detail": "I nomi sono attributi di presentazione; i criteri vengono combinati sugli id.",
+      "example": "(R∩S) ⋈ ENOTECHE → π_{nome_enoteca}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiedere il nome a CATALOGO se lo schema non lo contiene.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.11 (esercizio ufficiale G), pagina PDF 76"
+    },
+    {
+      "id": "si-c05-q139",
+      "topicId": "si-c05-t17",
+      "question": "Quali quattro relazioni ipotetiche usa il Capitolo 5 per gli esercizi EnerPrice?",
+      "answer": "SEGMENTO(id_segmento,nome); OFFERTA(id_offerta,id_segmento,nome); CONFIGURAZIONE(id_config,id_offerta,prezzo,quota); SCENARIO(id_scenario,id_config,margine).",
+      "detail": "È uno schema semplificato per l’algebra relazionale, non il progetto E-R definitivo né un’implementazione approvata.",
+      "example": "SEGMENTO collega OFFERTA, OFFERTA collega CONFIGURAZIONE, CONFIGURAZIONE collega SCENARIO.",
+      "formulas": [],
+      "connections": [
+        "Capitolo 2: modello E-R concettuale di EnerPrice distinto dagli esempi del Capitolo 5."
+      ],
+      "mistakes": "Non presentare lo schema didattico come struttura reale del progetto EnerPrice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.12, pagina PDF 76"
+    },
+    {
+      "id": "si-c05-q140",
+      "topicId": "si-c05-t17",
+      "question": "Qual è il percorso di collegamento tra OFFERTA e SCENARIO nello schema EnerPrice di esempio?",
+      "answer": "OFFERTA.id_offerta → CONFIGURAZIONE.id_offerta; CONFIGURAZIONE.id_config → SCENARIO.id_config.",
+      "detail": "Un risultato di simulazione dipende dalla configurazione che appartiene all’offerta.",
+      "example": "Per cercare offerte con margine positivo servono SCENARIO e CONFIGURAZIONE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non unire direttamente SCENARIO a OFFERTA su identificativi non corrispondenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.12, pagina PDF 76"
+    },
+    {
+      "id": "si-c05-q141",
+      "topicId": "si-c05-t17",
+      "question": "Come si trovano le offerte rivolte al segmento «Piccole imprese»?",
+      "answer": "Si filtra SEGMENTO per nome, si collega a OFFERTA tramite id_segmento e si proiettano id_offerta e nome dell’offerta.",
+      "detail": "Nelle due relazioni esiste un attributo nome: occorre qualificare quello di OFFERTA nella proiezione.",
+      "example": "π_{OFFERTA.id_offerta,OFFERTA.nome}(OFFERTA ⋈_{id_segmento} σ_{SEGMENTO.nome=\"Piccole imprese\"}(SEGMENTO)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proiettare per errore il nome del segmento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.12 (esercizio EnerPrice 1), pagina PDF 77"
+    },
+    {
+      "id": "si-c05-q142",
+      "topicId": "si-c05-t17",
+      "question": "Perché «nome» va disambiguato nell’esercizio EnerPrice 1?",
+      "answer": "Perché sia SEGMENTO sia OFFERTA hanno un attributo nome, ma indicano entità differenti.",
+      "detail": "La ridenominazione o qualificazione impedisce risultati ambigui.",
+      "example": "OFFERTA.nome vs SEGMENTO.nome.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che un nome omonimo abbia lo stesso significato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.12 (esercizio EnerPrice 1), pagina PDF 77"
+    },
+    {
+      "id": "si-c05-q143",
+      "topicId": "si-c05-t17",
+      "question": "Come si trovano le configurazioni ancora prive di simulazioni in EnerPrice?",
+      "answer": "Tutti gli id_config di CONFIGURAZIONE meno gli id_config presenti in SCENARIO.",
+      "detail": "La differenza avviene fra chiavi omogenee e non richiede NULL.",
+      "example": "π_{id_config}(CONFIGURAZIONE) − π_{id_config}(SCENARIO).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non partire dai soli scenari: escluderesti le configurazioni mai simulate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.12 (esercizio EnerPrice 2), pagina PDF 77"
+    },
+    {
+      "id": "si-c05-q144",
+      "topicId": "si-c05-t17",
+      "question": "Perché una configurazione può comparire più volte in SCENARIO senza alterare la differenza?",
+      "answer": "Perché la proiezione dell’id_config elimina duplicati: interessa se esiste almeno uno scenario, non quanti.",
+      "detail": "Il risultato è l’insieme delle configurazioni prive di qualsiasi scenario.",
+      "example": "Due scenari per id_config=8 producono un solo 8 nel secondo insieme.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare il numero di scenari come requisito della query.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.12 (esercizio EnerPrice 2), pagina PDF 77"
+    },
+    {
+      "id": "si-c05-q145",
+      "topicId": "si-c05-t17",
+      "question": "Come si trovano le offerte con almeno uno scenario di margine positivo?",
+      "answer": "Si filtrano SCENARIO per margine>0, si collegano a CONFIGURAZIONE su id_config e si proietta id_offerta.",
+      "detail": "La proiezione deduplica offerte con più scenari positivi.",
+      "example": "π_{id_offerta}(CONFIGURAZIONE ⋈ σ_{margine>0}(SCENARIO)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare che tutti gli scenari dell’offerta siano positivi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.12 (esercizio EnerPrice 3), pagina PDF 77"
+    },
+    {
+      "id": "si-c05-q146",
+      "topicId": "si-c05-t17",
+      "question": "Quale differenza esiste tra «offerta con uno scenario positivo» e «offerta sempre positiva»?",
+      "answer": "La prima è una condizione esistenziale; la seconda richiederebbe la verifica di tutti gli scenari pertinenti o l’assenza di scenari negativi.",
+      "detail": "Sono requisiti diversi, che portano a interrogazioni differenti.",
+      "example": "L’esercizio EnerPrice 3 dimostra solo l’esistenza di almeno un margine>0.",
+      "formulas": [],
+      "connections": [
+        "§5.7: esistenza contrapposta a universalità."
+      ],
+      "mistakes": "Non usare la proiezione degli scenari positivi come prova di redditività universale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.12 (esercizio EnerPrice 3), pagina PDF 77"
+    },
+    {
+      "id": "si-c05-q147",
+      "topicId": "si-c05-t17",
+      "question": "Perché il Capitolo 5 specifica che i suoi esercizi EnerPrice sono solo didattici?",
+      "answer": "Per distinguere la verifica degli operatori dall’architettura e dalla semantica definitiva del progetto individuale.",
+      "detail": "Lo schema non implica formule o dati aziendali riservati né vincoli approvati dai docenti.",
+      "example": "Le quattro relazioni sono una semplificazione costruita per selezioni, join e differenze.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire automaticamente questi campi al database finale dell’applicazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.12 (esercizio EnerPrice 3), pagina PDF 77"
+    },
+    {
+      "id": "si-c05-q148",
+      "topicId": "si-c05-t18",
+      "question": "EA-01: come ricavi le città distinte degli studenti di Gestionale?",
+      "answer": "π_{citta}(σ_{corso=\"Gestionale\"}(STUDENTE)).",
+      "detail": "Si filtra per corso e si proietta città; l’insieme deduplica Bari.",
+      "example": "Risultato del dataset: {Bari,Taranto}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non restituire Bari due volte.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-01), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q149",
+      "topicId": "si-c05-t18",
+      "question": "EA-01: perché la proiezione finale deve avvenire dopo la selezione?",
+      "answer": "Perché il filtro usa corso, che sparirebbe se si conservasse subito la sola città.",
+      "detail": "L’ordine dei passaggi dipende dagli attributi disponibili.",
+      "example": "σ_{corso=Gestionale}(π_{citta}(STUDENTE)) è mal formata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eliminare l’attributo del filtro prima di applicarlo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-01), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q150",
+      "topicId": "si-c05-t18",
+      "question": "EA-02: come trovi gli studenti con voto almeno 28 in Database?",
+      "answer": "Si selezionano gli esami con materia=Database e voto≥28 e si proietta id_studente; il join con STUDENTE serve soltanto se occorrono altri dati anagrafici.",
+      "detail": "L’identificativo è già presente nella relazione ESAME.",
+      "example": "Nel dataset gli studenti sono {1,3}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere join superflui o dimenticare una delle due condizioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-02), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q151",
+      "topicId": "si-c05-t18",
+      "question": "EA-02: perché i risultati 1 e 3 sono distinti dal caso generico voto≥28?",
+      "answer": "Perché il filtro materia=Database esclude l’esame Marketing da 30 dello studente 4.",
+      "detail": "La congiunzione si applica alla stessa tupla di ESAME.",
+      "example": "Esami Database validi: id_esame 101 e 104.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non includere automaticamente ogni voto alto di qualunque materia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-02), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q152",
+      "topicId": "si-c05-t18",
+      "question": "EA-03: come trovi gli studenti senza esami di Database?",
+      "answer": "π_{id_studente}(STUDENTE) − π_{id_studente}(σ_{materia=\"Database\"}(ESAME)).",
+      "detail": "Si sottraggono soltanto i soggetti che hanno almeno un esame della materia richiesta.",
+      "example": "Nel dataset: studente {4}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cercare semplicemente studenti senza alcun esame.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-03), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q153",
+      "topicId": "si-c05-t18",
+      "question": "EA-03: perché Luca non è nel risultato degli studenti senza Database?",
+      "answer": "Perché Luca, id_studente=2, ha l’esame 103 di Database con voto 25.",
+      "detail": "La presenza dell’esame conta indipendentemente dal voto.",
+      "example": "ESAME 103 → id_studente=2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non filtrare per superamento o voto se il requisito non lo chiede.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-03), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q154",
+      "topicId": "si-c05-t18",
+      "question": "EA-04: come trovi gli studenti con un esame di Database e uno di Marketing?",
+      "answer": "Intersechi due proiezioni dell’identificativo studente, ognuna ottenuta selezionando una materia in ESAME.",
+      "detail": "Le materie possono essere presenti in due eventi diversi dello stesso studente.",
+      "example": "π_{id_studente}(σ_{materia=\"Database\"}(ESAME)) ∩ π_{id_studente}(σ_{materia=\"Marketing\"}(ESAME)); risultato {1}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cercare una singola tupla con due materie contemporaneamente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-04), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q155",
+      "topicId": "si-c05-t18",
+      "question": "EA-04: perché Anna id_studente=4 non soddisfa il requisito?",
+      "answer": "Perché ha Marketing ma non un esame Database nel dataset.",
+      "detail": "Il fatto che anche la studentessa 1 si chiami Anna non rende equivalenti i loro esami.",
+      "example": "Studenti 1 e 4 sono due persone distinte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non intersecare nomi al posto delle matricole.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-04), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q156",
+      "topicId": "si-c05-t18",
+      "question": "EA-05: come ottieni le materie sostenute da almeno uno studente di Gestionale?",
+      "answer": "Si filtrano gli STUDENTE con corso=Gestionale, si collegano a ESAME su id_studente e si proietta materia.",
+      "detail": "Il join collega il criterio anagrafico alle materie degli eventi.",
+      "example": "Risultato del dataset: {Database,Marketing}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non filtrare ESAME direttamente per corso: quello schema non contiene corso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-05), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q157",
+      "topicId": "si-c05-t18",
+      "question": "EA-05: perché può comparire Marketing anche se lo studente 2 di Informatica non lo ha sostenuto?",
+      "answer": "Perché gli studenti 1 e 4, entrambi di Gestionale, hanno sostenuto Marketing.",
+      "detail": "Basta l’esistenza di almeno uno studente del corso con quell’esame.",
+      "example": "ESAME 102 e 105.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere una query di esistenza con una di totalità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-05), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q158",
+      "topicId": "si-c05-t18",
+      "question": "EA-06: come identifichi gli studenti che hanno il voto massimo del dataset senza MAX?",
+      "answer": "Si trova prima il massimo assoluto dei voti mediante auto-confronto e differenza; poi si collega quel valore a ESAME e si proietta id_studente.",
+      "detail": "Se vi sono pari merito devono essere restituiti tutti gli studenti corrispondenti.",
+      "example": "Voto massimo 30; studenti {1,4}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fermarti a un solo studente fra i pari merito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-06), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q159",
+      "topicId": "si-c05-t18",
+      "question": "EA-06: che cosa cambia nel join finale se rinomini M(voto) in M(voto_massimo)?",
+      "answer": "Deve essere cambiato anche il predicato: ESAME.voto=M.voto_massimo.",
+      "detail": "La ridenominazione modifica i nomi disponibili nello schema intermedio.",
+      "example": "Non usare ESAME.voto=M.voto dopo aver rinominato la colonna.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare riferimenti a nomi di attributo ormai inesistenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-06), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q160",
+      "topicId": "si-c05-t19",
+      "question": "EA-07: quale schema esteso usa l’esercizio «clienti senza offerte per il proprio segmento»?",
+      "answer": "CLIENTE(id_cliente,id_segmento) e OFFERTA(id_offerta,id_segmento).",
+      "detail": "Si costruiscono i clienti candidati e si sottraggono quelli collegati ad almeno un’offerta mediante uguaglianza su id_segmento.",
+      "example": "π_{id_cliente}(CLIENTE) − π_{id_cliente}(CLIENTE ⋈_{CLIENTE.id_segmento=OFFERTA.id_segmento} OFFERTA).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare direttamente id_cliente con id_offerta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-07), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q161",
+      "topicId": "si-c05-t19",
+      "question": "EA-07: quale ambiguità del dominio va dichiarata prima di interpretare la risposta?",
+      "answer": "Se un segmento possa non avere alcuna offerta e che cosa si intenda precisamente per «offerta per il proprio segmento».",
+      "detail": "La soluzione è valida nello schema esteso esplicitamente assunto dal manuale, non è una regola generale di business.",
+      "example": "Un cliente può risultare senza offerte se il segmento associato non compare in OFFERTA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare vincoli su cardinalità e corrispondenze.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-07), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q162",
+      "topicId": "si-c05-t19",
+      "question": "EA-08: come trovi le offerte con almeno una configurazione la cui quota è sotto una soglia?",
+      "answer": "Si filtra CONFIGURAZIONE con quota<soglia e si proietta id_offerta.",
+      "detail": "È sufficiente una configurazione associata alla singola offerta.",
+      "example": "π_{id_offerta}(σ_{quota<soglia}(CONFIGURAZIONE)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserire obbligatoriamente un join a OFFERTA se serve solo l’id ed esiste già nella configurazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-08), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q163",
+      "topicId": "si-c05-t19",
+      "question": "EA-08: perché la soglia non deve essere interpretata come requisito su tutte le configurazioni?",
+      "answer": "Perché la traccia chiede «almeno una», quindi basta una tupla CONFIGURAZIONE che superi il test quota<soglia.",
+      "detail": "Una query universale richiederebbe cercare configurazioni fuori soglia ed escludere le offerte corrispondenti.",
+      "example": "Una stessa offerta può avere configurazioni di quota diversa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare esistenza e universalità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-08), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q164",
+      "topicId": "si-c05-t19",
+      "question": "EA-09: come trovi le configurazioni senza scenari?",
+      "answer": "π_{id_config}(CONFIGURAZIONE) − π_{id_config}(SCENARIO).",
+      "detail": "È la stessa ricerca di assenza mostrata nell’esercizio EnerPrice 2.",
+      "example": "La differenza è fra due relazioni monocolonna di id_config.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare id_scenario nella sottrazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-09), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q165",
+      "topicId": "si-c05-t19",
+      "question": "EA-10: come trovi le offerte con scenari sia positivi sia negativi?",
+      "answer": "Costruisci A=offerte con almeno uno scenario margine>0 e B=offerte con almeno uno scenario margine<0; risultato A∩B.",
+      "detail": "I due scenari possono essere eventi differenti, collegati a configurazioni della stessa offerta.",
+      "example": "A e B si ottengono mediante SCENARIO ⋈ CONFIGURAZIONE e proiezione di id_offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere margine>0 ∧ margine<0 sulla medesima tupla.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-10), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q166",
+      "topicId": "si-c05-t19",
+      "question": "EA-10: perché il margine esattamente zero non entra direttamente in A né in B?",
+      "answer": "Perché i predicati dell’esercizio sono stretti: positivo >0 e negativo <0.",
+      "detail": "Un’offerta con soli scenari pari a zero non soddisfa il requisito.",
+      "example": "margine=0 non è né positivo né negativo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire < con ≤ o > con ≥.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-10), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q167",
+      "topicId": "si-c05-t19",
+      "question": "EA-11: come trovi offerte con soltanto scenari non negativi e almeno uno scenario?",
+      "answer": "A=offerte con almeno uno scenario; B=offerte con almeno uno scenario a margine<0; risposta A−B.",
+      "detail": "La presenza iniziale in A esclude offerte prive di scenari.",
+      "example": "Le configurazioni collegano SCENARIO a OFFERTA attraverso id_offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non partire da tutte le offerte: includeresti quelle mai simulate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-11), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q168",
+      "topicId": "si-c05-t19",
+      "question": "EA-11: perché una offerta con scenari tutti pari a zero può soddisfare la richiesta?",
+      "answer": "Perché 0 è non negativo; soddisfa «almeno uno scenario» e non esiste alcun margine<0.",
+      "detail": "L’esercizio non richiede margini strettamente positivi.",
+      "example": "Scenari margine=0,0 → ammesso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare «non negativo» come «positivo».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-11), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q169",
+      "topicId": "si-c05-t19",
+      "question": "EA-12: come trovi studenti con almeno un esame ma nessun voto inferiore a 18?",
+      "answer": "A=π_{id_studente}(ESAME); B=π_{id_studente}(σ_{voto<18}(ESAME)); risposta A−B.",
+      "detail": "Partire da ESAME garantisce almeno un esame; la differenza rimuove chi possiede almeno un voto sotto soglia.",
+      "example": "Nel dataset tutti gli studenti {1,2,3,4} soddisfano il requisito.",
+      "formulas": [],
+      "connections": [
+        "§5.7.3: distinzione fra presenza e divieto di controesempi."
+      ],
+      "mistakes": "Non partire da STUDENTE se vuoi escludere automaticamente chi non ha mai sostenuto esami.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-12), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q170",
+      "topicId": "si-c05-t19",
+      "question": "EA-12: perché non si deve usare voto≤18 per la differenza?",
+      "answer": "Perché il requisito esclude i voti inferiori a 18, non quelli uguali a 18.",
+      "detail": "Le disuguaglianze devono rispettare letteralmente la soglia.",
+      "example": "Un voto pari a 18 non è un controesempio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere «sotto 18» con «fino a 18 compreso».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.13.1 (EA-12), pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q171",
+      "topicId": "si-c05-t20",
+      "question": "Quali cinque controlli guidano la revisione finale di un’espressione di algebra relazionale?",
+      "answer": "Oggetto richiesto, operandi e loro schemi, predicati/collegamenti, identità dei soggetti, attributi del risultato.",
+      "detail": "A questi si aggiunge la verifica dei casi limite: omonimi, assenze, pari merito, duplicati e condizioni universali.",
+      "example": "Per aule libere la chiave va sottratta prima di recuperare nome ed edificio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fermarsi al fatto che la formula «sembri» corretta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14, pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q172",
+      "topicId": "si-c05-t20",
+      "question": "Come distingui a colpo d’occhio «A oppure B», «A e B», «nessuno A» e «solo A»?",
+      "answer": "A∨B sullo stesso operando o ∪ dei candidati; A e B su eventi diversi tramite ∩; nessuno A=universo−con A; solo A=con A−con non-A.",
+      "detail": "La distinzione è valida quando gli insiemi confrontati rappresentano gli stessi oggetti.",
+      "example": "Enoteche rosse e rosate: intersezione; utenti solo Camilleri: differenza fra due insiemi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare indiscriminatamente i connettivi italiani in condizioni sulla stessa riga.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14, pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q173",
+      "topicId": "si-c05-t20",
+      "question": "Per quale tipo di domanda si usa l’operatore di divisione?",
+      "answer": "Per «tutti», cioè quando il soggetto deve essere collegato a ogni elemento di un insieme richiesto.",
+      "detail": "Si può risolvere anche cercando gli elementi obbligatori mancanti.",
+      "example": "Clienti che hanno acquistato tutte le categorie richieste.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare la divisione per «almeno uno».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14, pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q174",
+      "topicId": "si-c05-t20",
+      "question": "Quali errori di tipaggio possono comparire in una formula composta?",
+      "answer": "Usare attributi già proiettati via, fare unione/differenza fra schemi incompatibili o rinominare un campo senza aggiornare i predicati successivi.",
+      "detail": "Disegnare lo schema dopo ogni operatore consente di riconoscerli.",
+      "example": "Se T(id_studente,nome), σ_{corso=Gestionale}(T) non è definita.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non verificare solo gli schemi delle tabelle originali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14, pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q175",
+      "topicId": "si-c05-t20",
+      "question": "Perché un’espressione corretta sugli identificativi può essere errata sui nomi?",
+      "answer": "La proiezione sui nomi può fondere persone diverse che condividono lo stesso valore.",
+      "detail": "Nelle richieste su «studenti» o «clienti» gli identificativi devono sopravvivere fino a quando non è più necessario distinguere i soggetti.",
+      "example": "Le due Anna hanno id 1 e 4.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere nomi distinti con individui distinti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14, pagina PDF 78"
+    },
+    {
+      "id": "si-c05-q176",
+      "topicId": "si-c05-t20",
+      "question": "Errore di esame: hai proiettato troppo presto. Qual è il sintomo e come correggerlo?",
+      "answer": "Nel passaggio successivo manca la chiave di collegamento: conservare PK/FK e attributi di filtro fino al loro ultimo utilizzo.",
+      "detail": "Si applica a π prima di join e selezioni.",
+      "example": "Conservare id_studente prima di unire STUDENTE a ESAME.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proiettare nome se il join necessita ancora id_studente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14.1, pagina PDF 79"
+    },
+    {
+      "id": "si-c05-q177",
+      "topicId": "si-c05-t20",
+      "question": "Errore di esame: hai confuso OR e AND. Qual è il rimedio?",
+      "answer": "Determinare se le proprietà si riferiscano alla stessa tupla o all’esistenza di tuple distinte; nel secondo caso costruire insiemi di identificativi e usare ∩ per entrambe.",
+      "detail": "Un unico vino non deve avere simultaneamente colore rosso e rosato.",
+      "example": "Enoteche con entrambi i colori → R∩S.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare una condizione insoddisfacibile sulla stessa tupla.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14.1, pagina PDF 79"
+    },
+    {
+      "id": "si-c05-q178",
+      "topicId": "si-c05-t20",
+      "question": "Errore di esame: hai unito o sottratto relazioni incompatibili. Come correggere?",
+      "answer": "Controllare corrispondenza degli attributi, significati e domini; proiettare gli stessi identificativi e rinominare soltanto quando le semantiche sono compatibili.",
+      "detail": "La compatibilità non dipende solo dal numero di colonne.",
+      "example": "π_{codice_aula}(AULE) − π_{codice_aula}(PRENOTAZIONI).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sottrarre una tupla aula completa da una tupla prenotazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14.1, pagina PDF 79"
+    },
+    {
+      "id": "si-c05-q179",
+      "topicId": "si-c05-t20",
+      "question": "Errore di esame: il risultato confonde omonimi. Che cosa hai perso?",
+      "answer": "L’identificativo univoco del soggetto.",
+      "detail": "Recuperare nomi solo dopo i confronti su id.",
+      "example": "Le due Anna devono rimanere distinguibili quando si cercano studenti con esami diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare nomi e cognomi come chiavi senza vincoli di unicità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14.1, pagina PDF 79"
+    },
+    {
+      "id": "si-c05-q180",
+      "topicId": "si-c05-t20",
+      "question": "Errore di esame: hai omesso un join. Qual è il sintomo tipico?",
+      "answer": "Si usano dati di due relazioni senza definire il percorso di associazione oppure si generano combinazioni spurie.",
+      "detail": "Bisogna individuare quale chiave collega le relazioni e verificare lo schema al nodo di join.",
+      "example": "ESAME.id_studente=STUDENTE.id_studente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un prodotto cartesiano come se le coppie fossero automaticamente significative.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14.1, pagina PDF 79"
+    },
+    {
+      "id": "si-c05-q181",
+      "topicId": "si-c05-t20",
+      "question": "Errore di esame: il natural join produce vincoli indesiderati. Come intervenire?",
+      "answer": "Sostituirlo con theta-join/equi-join a predicato esplicito, disambiguando gli attributi.",
+      "detail": "Attribuire significato a tutti gli omonimi prima di farli intervenire nel join.",
+      "example": "Colonna nome in due tabelle non significa sempre la stessa cosa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre uguaglianze accidentali fra attributi omonimi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14.1, pagina PDF 79"
+    },
+    {
+      "id": "si-c05-q182",
+      "topicId": "si-c05-t20",
+      "question": "Errore di esame: hai interpretato «solo» senza «almeno uno». Qual è la correzione?",
+      "answer": "Usare l’insieme dei soggetti con almeno un elemento richiesto A e sottrarre quelli con almeno un elemento non-A.",
+      "detail": "Il manuale ufficiale esclude i soggetti privi di eventi dalla frase «ha preso solo libri di Camilleri».",
+      "example": "A−B con A=utenti con Camilleri e B=utenti con altri autori.",
+      "formulas": [],
+      "connections": [
+        "§5.7.3: esistenza obbligatoria più assenza di elementi non ammessi."
+      ],
+      "mistakes": "Non includere persone senza prestiti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14.1, pagina PDF 79"
+    },
+    {
+      "id": "si-c05-q183",
+      "topicId": "si-c05-t20",
+      "question": "Errore di esame: massimo per gruppo calcolato globalmente. Come correggere?",
+      "answer": "Nel predicato tra le due copie aggiungere l’uguaglianza sull’identificativo del gruppo.",
+      "detail": "Confronta i voti soltanto per la stessa matricola o i costi soltanto per lo stesso prodotto.",
+      "example": "matricola=matricola2 ∧ voto<voto2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eliminare i massimi locali perché esiste un massimo maggiore altrove.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14.1, pagina PDF 79"
+    },
+    {
+      "id": "si-c05-q184",
+      "topicId": "si-c05-t20",
+      "question": "Errore di esame: ottimizzazione aggressiva. Che cosa bisogna preservare?",
+      "answer": "Tutte le colonne necessarie per filtri, join e proiezione finale e le precondizioni delle equivalenze.",
+      "detail": "La trasformazione deve essere corretta su ogni istanza lecita.",
+      "example": "Non eliminare id_studente con una proiezione anticipata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere utile un piano che restituisce un risultato diverso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14.1, pagina PDF 79"
+    },
+    {
+      "id": "si-c05-q185",
+      "topicId": "si-c05-t20",
+      "question": "Errore di esame: hai confuso set e bag. Qual è la precisazione fondamentale?",
+      "answer": "Nell’algebra classica le tuple sono un insieme; SQL può restituire duplicati con SELECT e UNION ALL.",
+      "detail": "Usare DISTINCT quando serve replicare la semantica insiemistica di π.",
+      "example": "π_{citta}(STUDENTE) produce Bari una sola volta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere deduplicazione in SELECT senza DISTINCT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14.1, pagina PDF 79"
+    },
+    {
+      "id": "si-c05-q186",
+      "topicId": "si-c05-t20",
+      "question": "Come concludere una risposta completa d’esame su un’espressione algebrica?",
+      "answer": "Presentare lo schema di partenza, tradurre il testo in condizioni, definire insiemi intermedi, scrivere l’espressione e verificare il risultato con un caso limite.",
+      "detail": "È particolarmente utile nelle domande su assenza, «solo», «tutti» e massimi per gruppo.",
+      "example": "Per le aule: C candidati, O occupate, C−O, riconnessione ad AULE per il nome.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarti a una formula non spiegata e non tipata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 5, §5.14.1, pagina PDF 79"
+    }
+  ]
+}

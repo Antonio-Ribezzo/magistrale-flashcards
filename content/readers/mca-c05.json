@@ -1,0 +1,3060 @@
+{
+  "sections": [
+    {
+      "id": "l20-1",
+      "title": "1. Perché nasce la Customer Analytics",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t01"
+      ],
+      "blocks": [
+        {
+          "text": "Il marketing studia un mercato costituito da persone che differiscono per bisogni, preferenze e comportamenti. Due clienti possono acquistare lo stesso prodotto oggi, ma avere valore futuro e probabilità di riacquisto completamente differenti. Il marketing tradizionale osserva spesso medie aggregate; la Customer Analytics aggiunge l’analisi granulare, cioè riferita al singolo cliente e ai suoi comportamenti ripetuti nel tempo."
+        },
+        {
+          "text": "Nelle slide del corso, la Customer Analytics è definita sulla base di Fader e Bradlow come raccolta, gestione, analisi e impiego strategico dei dati granulari che descrivono i comportamenti della clientela. Questa definizione contiene quattro passaggi, tutti essenziali: raccogliere dati affidabili; organizzarli; ricavarne indicatori e modelli; usarli per scegliere azioni aziendali."
+        },
+        {
+          "text": "Un dataset non costituisce, di per sé, Customer Analytics. Se un’azienda dispone di un milione di transazioni, ma non riesce ad associarle ai clienti o non le utilizza per prendere decisioni, possiede dati ma non ancora una capacità analitica matura. Viceversa, anche un piccolo database può supportare analisi corrette se i dati sono ben definiti e i risultati sono interpretabili."
+        },
+        {
+          "text": "1.1 Caratteristiche distintive"
+        },
+        {
+          "table": [
+            [
+              "•",
+              "Granularità: preferibilmente dati a livello del singolo cliente, non solo vendite aggregate."
+            ],
+            [
+              "•",
+              "Orientamento predittivo: oltre a descrivere cosa è successo, stimare comportamenti futuri (con incertezza)."
+            ],
+            [
+              "•",
+              "Dimensione longitudinale: osservare la successione degli eventi nel tempo, non solo una fotografia statica."
+            ],
+            [
+              "•",
+              "Multicanalità: integrare, quando lecito e affidabile, dati di negozio, sito, app, customer care e altri canali."
+            ],
+            [
+              "•",
+              "Multidisciplinarità: combinare marketing, statistica, sistemi informativi e modelli matematici."
+            ],
+            [
+              "•",
+              "Prevalenza del comportamento osservato: i dati demografici e le opinioni sono utili, ma le azioni concrete del cliente hanno un ruolo centrale."
+            ],
+            [
+              "1.2 Descrizione, diagnosi, previsione e decisione",
+              ""
+            ]
+          ]
+        },
+        {
+          "table": [
+            [
+              "Livello",
+              "Domanda",
+              "Esempio"
+            ],
+            [
+              "Descrittivo",
+              "Che cosa è successo?",
+              "La frequenza mensile media è 2,3 acquisti."
+            ],
+            [
+              "Diagnostico",
+              "Quali fattori accompagnano il fenomeno?",
+              "La frequenza cala fra chi ha sperimentato ritardi."
+            ],
+            [
+              "Predittivo",
+              "Che cosa potrebbe accadere?",
+              "Stima della probabilità di riacquisto."
+            ],
+            [
+              "Decisionale",
+              "Quale azione conviene adottare?",
+              "Confronto del beneficio atteso di campagne alternative."
+            ]
+          ]
+        },
+        {
+          "text": "Attenzione: la presenza di una correlazione tra due variabili non dimostra che una causi l’altra. Anche per questo il passaggio dalla diagnosi alla decisione richiede cautela."
+        }
+      ],
+      "concept": "Perché nasce la Customer Analytics"
+    },
+    {
+      "id": "l20-2",
+      "title": "2. Customer Analytics, CRM e marketing",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t01"
+      ],
+      "blocks": [
+        {
+          "text": "CRM significa Customer Relationship Management, ossia gestione delle relazioni con i clienti. È un insieme di processi, strategie e strumenti utilizzati per acquisire, conoscere, servire e mantenere i clienti. La Customer Analytics è una componente analitica che supporta questi processi: trasforma interazioni, acquisti e segnali comportamentali in informazioni per il management."
+        },
+        {
+          "text": "Esempio originale: una società che fornisce energia elettrica può usare un CRM per gestire contratti, richieste di assistenza e rinnovi. Le analisi sui dati di storico possono identificare gruppi che rinnovano spesso, clienti che hanno ridotto l’utilizzo dei servizi o segmenti con elevata probabilità di abbandono. La decisione commerciale resta una scelta manageriale: non è una conseguenza automatica di un indicatore."
+        }
+      ],
+      "concept": "Customer Analytics, CRM e marketing"
+    },
+    {
+      "id": "l20-3",
+      "title": "3. Dal comportamento ai dati: unità, eventi, attributi",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t02"
+      ],
+      "blocks": [
+        {
+          "text": "Prima di calcolare una metrica occorre specificare cosa rappresenta ogni riga e ogni colonna. La stessa tabella può generare misure errate se si confondono clienti, transazioni, righe articolo e sessioni web."
+        },
+        {
+          "table": [
+            [
+              "Concetto",
+              "Definizione operativa",
+              "Esempio"
+            ],
+            [
+              "Cliente",
+              "Unità identificata stabilmente da un ID",
+              "C0042"
+            ],
+            [
+              "Evento",
+              "Azione osservata con data e identificativo",
+              "Acquisto del 10/10"
+            ],
+            [
+              "Transazione",
+              "Operazione commerciale identificata",
+              "Ordine O392"
+            ],
+            [
+              "Riga transazione",
+              "Singola voce dell’operazione",
+              "Due confezioni di pasta"
+            ],
+            [
+              "Periodo",
+              "Finestra di osservazione esplicita",
+              "1/1–31/3"
+            ],
+            [
+              "Attributo",
+              "Caratteristica del cliente o dell’evento",
+              "Canale, importo, categoria"
+            ]
+          ]
+        },
+        {
+          "text": "Una persona può effettuare più transazioni e una transazione può contenere più righe. Se si conta il numero di righe articolo come numero di acquisti, si sovrastima la frequenza. Analogamente, due visite registrate in un sito non garantiscono che vi siano due persone distinte."
+        },
+        {
+          "image": "mca-p138-1.png",
+          "caption": "Dal dato transazionale alla metrica (schema originale).",
+          "alt": "Dal dato transazionale alla metrica (schema originale)."
+        },
+        {
+          "text": "3.1 Customer table e transaction table"
+        },
+        {
+          "text": "La transaction table ha normalmente una riga per evento e contiene ID cliente, data/ora, identificativo transazione, valore economico, categoria ed eventuali attributi di contesto. Una customer table ha invece una riga per cliente e contiene attributi relativamente stabili e metriche calcolate per un preciso periodo."
+        },
+        {
+          "table": [
+            [
+              "ID cliente",
+              "ID ordine",
+              "Data",
+              "Categoria",
+              "Valore (€)"
+            ],
+            [
+              "C1",
+              "O1",
+              "03/01",
+              "Libri",
+              "20"
+            ],
+            [
+              "C1",
+              "O2",
+              "19/01",
+              "Musica",
+              "12"
+            ],
+            [
+              "C2",
+              "O3",
+              "05/01",
+              "Libri",
+              "35"
+            ],
+            [
+              "C1",
+              "O4",
+              "08/02",
+              "Libri",
+              "15"
+            ],
+            [
+              "C3",
+              "O5",
+              "11/02",
+              "Casa",
+              "42"
+            ]
+          ]
+        },
+        {
+          "text": "Esempio originale: nel bimestre gennaio–febbraio C1 ha effettuato tre ordini per complessivi 47 €, C2 un ordine e C3 un ordine. Questo livello di dettaglio consente sia un’analisi per evento sia una sintesi per cliente. Per confrontare correttamente i clienti è tuttavia necessario chiarire se tutti sono stati osservati per lo stesso periodo."
+        },
+        {
+          "text": "3.2 Errori frequenti nella preparazione dei dati"
+        },
+        {
+          "table": [
+            [
+              "•",
+              "Duplicati: la stessa transazione registrata due volte produce metriche gonfiate."
+            ],
+            [
+              "•",
+              "Identificativi incoerenti: la stessa persona può apparire con più ID oppure più persone condividere un account."
+            ],
+            [
+              "•",
+              "Date incoerenti o mancanti: impediscono di stabilire l’ultimo acquisto o la finestra temporale."
+            ],
+            [
+              "•",
+              "Resi e cancellazioni: bisogna dichiarare se contano come acquisto e come trattare gli importi stornati."
+            ],
+            [
+              "•",
+              "Unità di misura: giorni, settimane, mesi e anni non sono intercambiabili senza conversione."
+            ],
+            [
+              "•",
+              "Finestre differenti: osservare un cliente per 30 giorni e un altro per 365 senza normalizzazione rende il confronto iniquo."
+            ]
+          ]
+        }
+      ],
+      "concept": "Dal comportamento ai dati: unità, eventi, attributi"
+    },
+    {
+      "id": "l20-4",
+      "title": "4. Classificazione delle customer metrics nel corso",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t03"
+      ],
+      "blocks": [
+        {
+          "text": "Il professore collega le metriche alle fasi del comportamento del consumatore: Awareness, Attitude, Adoption e successivamente consumo, esperienza e fedeltà in una relazione continuativa. Il funnel rappresenta il percorso dalla conoscenza all’azione; il customer journey considera anche l’esperienza e le interazioni ricorrenti. Non si tratta di tappe obbligatoriamente lineari per ogni persona."
+        },
+        {
+          "table": [
+            [
+              "Famiglia",
+              "Che cosa osserva",
+              "Esempi dal programma"
+            ],
+            [
+              "Awareness",
+              "Conoscenza e riconoscimento della marca",
+              "Aided/unaided awareness; reach; impression"
+            ],
+            [
+              "Attitude",
+              "Percezioni, atteggiamenti e intenzioni",
+              "Tempo sul sito; bounce rate; CTR; intenzioni"
+            ],
+            [
+              "Adoption",
+              "Passaggio all’azione e prime prove",
+              "Conversion; trial; repeat; redemption"
+            ],
+            [
+              "Consumo",
+              "Quanto e come il cliente acquista",
+              "Scontrino, spesa, RSS, basket variance"
+            ],
+            [
+              "Esperienza",
+              "Valutazione dell’interazione",
+              "Satisfaction; rating; willingness to recommend"
+            ],
+            [
+              "Fedeltà",
+              "Continuità e mantenimento della relazione",
+              "Frequency; recency; churn; retention; CLV"
+            ]
+          ]
+        },
+        {
+          "text": "Lo stesso indicatore può essere utile in più fasi, ma occorre evitare equivalenze improprie. Un cliente che visita spesso un sito non necessariamente è fedele alla marca; una persona che dichiara elevata soddisfazione non necessariamente acquisterà ancora."
+        }
+      ],
+      "concept": "Classificazione delle customer metrics nel corso"
+    },
+    {
+      "id": "l20-5",
+      "title": "5. Prime nozioni statistiche necessarie",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t03"
+      ],
+      "blocks": [
+        {
+          "text": "Per leggere le metriche di questo modulo sono necessari alcuni prerequisiti. Una variabile nominale identifica categorie senza ordine (ad esempio, regione); una variabile ordinale identifica categorie ordinabili (ad esempio, valutazione da molto insoddisfatto a molto soddisfatto); una variabile numerica descrive quantità, come numero di ordini, spesa o giorni dall’ultimo acquisto."
+        },
+        {
+          "text": "La media aritmetica di n osservazioni x₁,…,xₙ si ottiene sommando i valori e dividendo per n. La varianza misura la dispersione rispetto alla media; la deviazione standard è la radice quadrata della varianza ed è espressa nella stessa unità dei dati."
+        },
+        {
+          "heading": "Media: x̄ = (x₁ + … + xₙ) / n"
+        },
+        {
+          "heading": "Varianza della popolazione: σ² = Σ(xᵢ − μ)² / N"
+        },
+        {
+          "heading": "Deviazione standard: σ = √[Σ(xᵢ − μ)² / N]"
+        },
+        {
+          "text": "Quando invece si stima la varianza della popolazione a partire da un campione, si usa comunemente il divisore n−1 per la varianza campionaria. Nel seguito, quando calcoliamo la dispersione dei mesi effettivamente osservati come popolazione descrittiva, utilizziamo il divisore N. Dichiarare la convenzione evita apparenti discrepanze tra calcolatrice, Excel e slide."
+        }
+      ],
+      "concept": "Prime nozioni statistiche necessarie"
+    },
+    {
+      "id": "l20-6",
+      "title": "6. Fedeltà: significato e dimensioni",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t03"
+      ],
+      "blocks": [
+        {
+          "text": "La fedeltà non è un fenomeno unico. Nelle slide vengono distinte la fedeltà nel tempo e la fedeltà nello spazio delle alternative. La prima riguarda la ripetizione del comportamento; la seconda la preferenza per un brand rispetto agli altri disponibili."
+        },
+        {
+          "text": "Un cliente può comprare spesso una categoria ma dividere gli acquisti tra molte marche (alta frequenza, basso peso relativo di una marca). Un altro può comprare raramente, ma scegliere sempre lo stesso brand (bassa frequenza, alta fedeltà nello spazio delle alternative). Perciò la frequenza non misura, da sola, l’esclusività o l’attaccamento emotivo."
+        }
+      ],
+      "concept": "Fedeltà: significato e dimensioni"
+    },
+    {
+      "id": "l20-7",
+      "title": "7. Frequency: definizione e formule del professore",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t04"
+      ],
+      "blocks": [
+        {
+          "text": "Frequency significa frequenza: quanti eventi si verificano per unità di tempo. Nel corso compare dapprima il richiamo a un fenomeno idealmente periodico con f = 1/T̄ , dove T̄ è il periodo medio tra eventi. Per eventi osservati in una finestra di durata D, il professore utilizza una forma operativa di normalizzazione:"
+        },
+        {
+          "heading": "f_T = (N / D) × T"
+        },
+        {
+          "text": "N è il numero di eventi osservati; D è la durata della finestra nella stessa unità temporale di T; T è l’orizzonte di normalizzazione desiderato (7 giorni per la settimana, 30 giorni per il mese convenzionale, ecc.). Il risultato si interpreta come numero medio atteso di eventi per intervallo T, assumendo che il ritmo osservato sia rappresentativo."
+        },
+        {
+          "text": "7.1 Esempio originale: frequenza mensile"
+        },
+        {
+          "text": "Un cliente effettua 18 acquisti nei 90 giorni del trimestre. La frequenza normalizzata a 30 giorni è f₃₀ = (18 / 90) × 30 = 6 acquisti ogni 30 giorni. La frequenza settimanale è f₇ = (18 / 90) × 7 = 1,4 acquisti ogni 7 giorni."
+        },
+        {
+          "text": "Una frequenza mensile pari a 6 non significa che in ogni mese siano avvenuti esattamente 6 acquisti: è una media normalizzata. La sequenza reale potrebbe essere 6–6–6 oppure 15–3–0; la media, in entrambi i casi, è uguale."
+        },
+        {
+          "text": "7.2 Durata effettiva della finestra e convenzioni"
+        },
+        {
+          "text": "Nel materiale del professore un esempio considera 211 giorni dal 1° gennaio al 31 luglio e N = 48 visite, ottenendo f₃₀ = (48 / 211) × 30 ≈ 6,82 visite al mese convenzionale. L’esempio illustra la normalizzazione e non la media aritmetica dei conteggi dei sette mesi di calendario. Non bisogna confondere il “mese convenzionale di 30 giorni” con un mese reale che può durare 28, 29, 30 o 31 giorni."
+        },
+        {
+          "text": "Confrontare clienti con periodi di osservazione diversi richiede particolare attenzione: se un cliente ha avuto solo 15 giorni a disposizione da quando è stato acquisito, i suoi due acquisti non vanno confrontati direttamente con i due acquisti di un cliente osservato per 180 giorni."
+        }
+      ],
+      "concept": "Frequency: definizione e formule del professore"
+    },
+    {
+      "id": "l20-8",
+      "title": "8. Stessa frequenza, comportamenti opposti",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t04"
+      ],
+      "blocks": [
+        {
+          "text": "Le slide mostrano tre clienti con 48 visite ciascuno in un intervallo di 211 giorni. Hanno dunque la stessa frequenza normalizzata (≈6,82 visite al mese convenzionale), ma sequenze mensili differenti. Uno presenta una cadenza relativamente regolare; un altro concentra le visite in alcuni mesi; il terzo riduce progressivamente le visite fino ad azzerarle."
+        },
+        {
+          "table": [
+            [
+              "Mese",
+              "Cliente A",
+              "Cliente B",
+              "Cliente C"
+            ],
+            [
+              "Gen",
+              "7",
+              "12",
+              "18"
+            ],
+            [
+              "Feb",
+              "5",
+              "0",
+              "12"
+            ],
+            [
+              "Mar",
+              "7",
+              "6",
+              "11"
+            ],
+            [
+              "Apr",
+              "9",
+              "1",
+              "6"
+            ],
+            [
+              "Mag",
+              "7",
+              "11",
+              "1"
+            ],
+            [
+              "Giu",
+              "6",
+              "0",
+              "0"
+            ],
+            [
+              "Lug",
+              "7",
+              "18",
+              "0"
+            ],
+            [
+              "Totale",
+              "48",
+              "48",
+              "48"
+            ]
+          ]
+        },
+        {
+          "image": "mca-p141-1.png",
+          "caption": "Stessa frequenza media, pattern temporali differenti (dati dalle slide, grafico originale).",
+          "alt": "Stessa frequenza media, pattern temporali differenti (dati dalle slide, grafico originale)."
+        },
+        {
+          "text": "Nella lettura delle slide, la dispersione dei valori mensili è circa 1,21 per il Cliente A e circa 7,03 per B e C, considerando la deviazione standard descrittiva sull’insieme dei sette mesi. La deviazione standard segnala la variabilità, ma non la direzione temporale: B e C hanno dispersione simile pur mostrando andamenti diversi. Per capire se il comportamento cresce o decresce serve analizzare l’ordine temporale degli eventi."
+        },
+        {
+          "text": "8.1 Interpretazione manageriale"
+        },
+        {
+          "text": "• Cliente A: comportamento stabile; può essere opportuno sostenere la relazione evitando iniziative inutilmente invasive."
+        },
+        {
+          "text": "• Cliente B: comportamento discontinuo; valutare stagionalità, promozioni, problemi di accesso o altre cause osservabili."
+        },
+        {
+          "text": "• Cliente C: forte riduzione recente dell’attività; può essere un segnale da investigare, ma non dimostra da solo l’abbandono definitivo."
+        }
+      ],
+      "concept": "Stessa frequenza, comportamenti opposti"
+    },
+    {
+      "id": "l20-9",
+      "title": "9. Visite e visitatori unici",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Le slide distinguono il traffico (visite o accessi) dal numero di unique visitors. La formula mostrata per la frequenza di visita media sul web è:"
+        },
+        {
+          "heading": "Frequenza di visita sul web = V_T / U_T"
+        },
+        {
+          "text": "V_T è il numero di visite registrate nel periodo T; U_T è il numero di visitatori unici stimati nello stesso periodo. Se un sito registra 12.000 visite e 3.000 visitatori unici, otteniamo 4 visite per visitatore unico nel periodo."
+        },
+        {
+          "text": "Nel corso gli unique visitors sono ricondotti a identificativi univoci, come i cookie ID. Questa è una stima delle persone e non un conteggio certo: un individuo può usare più dispositivi o browser, cancellare i cookie oppure condividere un dispositivo. Bisogna inoltre distinguere sessione, visualizzazione di pagina e persona."
+        }
+      ],
+      "concept": "Visite e visitatori unici"
+    },
+    {
+      "id": "l20-10",
+      "title": "10. Recency: tempo trascorso dall’ultimo acquisto",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Recency misura quanto tempo è passato dall’ultimo acquisto registrato rispetto a una data di riferimento T₀. A differenza della frequenza, che guarda quanti eventi sono avvenuti nel periodo, la recency si concentra sulla distanza temporale dall’evento più recente."
+        },
+        {
+          "heading": "Recency = T₀ − T_last"
+        },
+        {
+          "text": "T_last è la data dell’ultimo acquisto; T₀ è la data alla quale si vuole calcolare la metrica. Un valore basso indica un acquisto recente; un valore alto indica che il cliente non acquista da più tempo. Attenzione: ciò non significa automaticamente che un cliente con recency bassa sia più redditizio o più soddisfatto. 10.1 Esempio originale con data di analisi"
+        },
+        {
+          "text": "Si fissi T₀ = 31 ottobre 2026. Il Cliente A ha acquistato l’ultima volta il 26 ottobre (recency 5 giorni); il Cliente B il 1° settembre (60 giorni); il Cliente C non ha mai acquistato. Per C la recency non si può calcolare come differenza dall’ultimo acquisto: il valore è non disponibile e il cliente va trattato separatamente, ad esempio come prospect."
+        },
+        {
+          "text": "10.2 Recency come variabile binaria"
+        },
+        {
+          "text": "Le slide prevedono una seconda forma: scegliere un periodo recente rilevante per il management e assegnare 1 a chi vi ha acquistato, 0 altrimenti. Possiamo formalizzarla indicando una soglia Δ in giorni:"
+        },
+        {
+          "heading": "Recency_bin = 1 se Recency ≤ Δ; 0 altrimenti"
+        },
+        {
+          "text": "Questa scrittura rappresenta lo stesso concetto della notazione di intervallo utilizzata dal professore, ma rende più esplicita la regola operativa. Se Δ = 30 giorni, il Cliente A del precedente esempio ha valore 1 e il Cliente B ha valore 0. La scelta della soglia non è universale: dipende dalla periodicità degli acquisti nella categoria."
+        },
+        {
+          "text": "10.3 Scelte di riferimento e rischi di errore"
+        },
+        {
+          "table": [
+            [
+              "•",
+              "La data di riferimento deve essere la stessa per i clienti confrontati."
+            ],
+            [
+              "•",
+              "Un acquisto avvenuto il giorno di riferimento ha recency pari a zero giorni, se si adotta la differenza di date."
+            ],
+            [
+              "•",
+              "Non confondere recency con età del cliente o durata del rapporto commerciale."
+            ],
+            [
+              "•",
+              "Per prodotti acquistati raramente (es. automobili) una recency di 180 giorni può essere normale; per prodotti di uso quotidiano può essere rilevante."
+            ],
+            [
+              "•",
+              "La metrica non distingue da sola abbandono, temporanea inattività e stagionalità."
+            ]
+          ]
+        }
+      ],
+      "concept": "Recency: tempo trascorso dall’ultimo acquisto"
+    },
+    {
+      "id": "l20-11",
+      "title": "11. Frequency e Recency insieme: un primo profilo R–F",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Un primo profilo comportamentale può combinare il numero normalizzato di acquisti e il tempo trascorso dall’ultimo acquisto. L’obiettivo non è ancora costruire un modello predittivo completo, ma evitare di prendere decisioni basandosi su un solo dato."
+        },
+        {
+          "table": [
+            [
+              "Profilo",
+              "Frequency",
+              "Recency",
+              "Interpretazione prudente"
+            ],
+            [
+              "1",
+              "Alta",
+              "Bassa",
+              "Cliente recentemente e frequentemente attivo"
+            ],
+            [
+              "2",
+              "Alta",
+              "Alta",
+              "Cliente storicamente attivo ma non di recente"
+            ],
+            [
+              "3",
+              "Bassa",
+              "Bassa",
+              "Cliente recente, con pochi eventi finora"
+            ],
+            [
+              "4",
+              "Bassa",
+              "Alta",
+              "Cliente scarsamente attivo nel periodo osservato"
+            ]
+          ]
+        },
+        {
+          "text": "Nel metodo RFM utilizzato in molti contesti si aggiunge Monetary, cioè una misura monetaria del comportamento. Qui è citato soltanto come collegamento didattico: la classificazione delle metriche e le formule da padroneggiare in questa lezione restano quelle delle slide."
+        }
+      ],
+      "concept": "Frequency e Recency insieme: un primo profilo R–F"
+    },
+    {
+      "id": "l20-12",
+      "title": "12. Caso aziendale integrato originale",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Un servizio digitale osserva quattro clienti per 120 giorni. Per semplicità, la data di analisi è la fine del periodo e tutti sono osservati dall’inizio. Gli eventi sono ordini validi."
+        },
+        {
+          "table": [
+            [
+              "Cliente",
+              "Ordini in 120 giorni",
+              "Ultimo ordine (giorni prima)",
+              "Frequenza per 30 giorni",
+              "Recency_bin (soglia 30 gg)"
+            ],
+            [
+              "A",
+              "16",
+              "4",
+              "4,00",
+              "1"
+            ],
+            [
+              "B",
+              "16",
+              "80",
+              "4,00",
+              "0"
+            ],
+            [
+              "C",
+              "5",
+              "2",
+              "1,25",
+              "1"
+            ],
+            [
+              "D",
+              "5",
+              "90",
+              "1,25",
+              "0"
+            ]
+          ]
+        },
+        {
+          "text": "Calcolo per A: f₃₀ = 16/120 × 30 = 4. Per C: f₃₀ = 5/120 × 30 = 1,25. La regola binaria assegna 1 ai clienti con ultimo ordine entro 30 giorni, cioè A e C. A e B hanno uguale frequenza ma recency molto diversa: B potrebbe meritare un approfondimento sul recente calo di attività. Questa evidenza, tuttavia, non è una diagnosi causale."
+        }
+      ],
+      "concept": "Caso aziendale integrato originale"
+    },
+    {
+      "id": "l20-13",
+      "title": "13. Esercizi con soluzione guidata",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Esercizio 1 – Normalizzazione temporale Un cliente effettua 14 acquisti in 70 giorni. Calcola la frequenza per 7 e per 30 giorni."
+        },
+        {
+          "worked": [
+            {
+              "text": "f₇ = (14/70)×7 = 1,4 acquisti ogni 7 giorni. f₃₀ = (14/70)×30 = 6 acquisti ogni 30 giorni. L’unità della frequenza deve sempre essere dichiarata."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio 2 – Web traffic Un sito registra 8.400 visite e 2.800 visitatori unici in un mese. Calcola la frequenza media per visitatore nel mese."
+        },
+        {
+          "worked": [
+            {
+              "text": "8.400/2.800 = 3 visite per visitatore unico. Non è lecito concludere che ciascuna persona abbia visitato esattamente tre volte il sito."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio 3 – Recency e soglia Alla data 31/10/2026, un cliente ha acquistato il 20/10 e un altro il 15/08. Calcola la recency e il valore binario per una soglia di 30 giorni."
+        },
+        {
+          "worked": [
+            {
+              "text": "Cliente 1: 11 giorni, valore binario 1. Cliente 2: 77 giorni, valore binario 0. Il giorno di riferimento e le convenzioni di conteggio delle date devono essere fissati prima del calcolo."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio 4 – Interpretazione Due clienti hanno registrato rispettivamente 24 acquisti in 120 giorni e 12 acquisti in 60 giorni. Quale ha frequenza maggiore?"
+        },
+        {
+          "worked": [
+            {
+              "text": "entrambi hanno (N/D)×30 = 6 acquisti ogni 30 giorni. Il numero assoluto di acquisti è diverso, ma il ritmo medio normalizzato è uguale. Per capire chi è più attivo oggi servono altri dati, in particolare recency e andamento temporale."
+            }
+          ],
+          "label": "Soluzione"
+        }
+      ],
+      "concept": "Esercizi con soluzione guidata"
+    },
+    {
+      "id": "l20-14",
+      "title": "14. Domande di autovalutazione per l’orale",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Domanda: Qual è la differenza tra CRM e Customer Analytics?"
+        },
+        {
+          "text": "Risposta: Il CRM gestisce relazioni e interazioni; la Customer Analytics analizza dati e comportamenti per supportare tali decisioni."
+        },
+        {
+          "text": "Domanda: Perché è importante usare un ID cliente stabile?"
+        },
+        {
+          "text": "Risposta: Permette di associare correttamente transazioni successive allo stesso soggetto e misurare i comportamenti longitudinali."
+        },
+        {
+          "text": "Domanda: Che cosa indica la frequenza normalizzata?"
+        },
+        {
+          "text": "Risposta: Il numero medio di eventi atteso per un intervallo standard T, sulla base del rapporto N/D osservato."
+        },
+        {
+          "text": "Domanda: Perché clienti con identica frequency possono richiedere azioni diverse?"
+        },
+        {
+          "text": "Risposta: Perché frequenza e totale possono nascondere variabilità, concentrazione e trend temporali differenti."
+        },
+        {
+          "text": "Domanda: Che cosa misura recency?"
+        },
+        {
+          "text": "Risposta: Il tempo trascorso dalla data dell’ultimo acquisto rispetto alla data di riferimento."
+        },
+        {
+          "text": "Domanda: Qual è il limite degli unique visitors?"
+        },
+        {
+          "text": "Risposta: Gli identificativi tecnici, come cookie e device, non coincidono sempre con persone fisiche distinte."
+        }
+      ],
+      "concept": "Domande di autovalutazione per l’orale"
+    },
+    {
+      "id": "l20-15",
+      "title": "15. Sintesi ragionata e collegamento alla prossima lezione",
+      "group": "Lezione 20. Introduzione alla Customer Analytics e prime metriche di fedeltà",
+      "topics": [
+        "mca-c05-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Questa lezione introduce l’intero secondo modulo e costruisce una prima base rigorosa per misurare il comportamento nel tempo. Abbiamo imparato che le metriche dipendono dalla struttura dei dati, dalla definizione della finestra di osservazione e dall’unità temporale scelta. La frequenza descrive l’intensità media degli eventi; la recency aggiunge l’informazione sulla distanza dell’evento più recente. Nessuna delle due, da sola, dimostra la vera fedeltà o il rischio di abbandono."
+        },
+        {
+          "text": "Nella prossima lezione completeremo il blocco delle metriche di fedeltà: brand loyalty e willingness to search, share of loyalty, churn rate, retention rate e Customer Lifetime Value, usando le formule del professore e verificando con esercizi completamente svolti."
+        }
+      ],
+      "concept": "Sintesi ragionata e collegamento alla prossima lezione"
+    },
+    {
+      "id": "l21-intro",
+      "title": "Introduzione alla lezione",
+      "group": "Lezione 21. Fedeltà alla marca, abbandono, retention e valore economico del cliente",
+      "topics": [],
+      "blocks": [
+        {
+          "heading": "Obiettivi formativi"
+        },
+        {
+          "text": "Al termine della lezione occorre saper distinguere una fedeltà osservata negli acquisti dalla fedeltà dichiarata; calcolare sensibilità al brand e Share of Loyalty a livello individuale; misurare willingness to search; costruire una tabella clienti per ricavare churn, retention e acquisizione; distinguere clienti a rischio, contratti e acquisti non contrattuali; calcolare e interpretare il Customer Lifetime Value, su orizzonte finito e infinito, con e senza costo di acquisizione."
+        }
+      ],
+      "concept": "Introduzione alla lezione"
+    },
+    {
+      "id": "l21-1",
+      "title": "1. Perché la fedeltà è multidimensionale",
+      "group": "Lezione 21. Fedeltà alla marca, abbandono, retention e valore economico del cliente",
+      "topics": [
+        "mca-c05-t06"
+      ],
+      "blocks": [
+        {
+          "text": "Un cliente può acquistare sempre la stessa marca perché la preferisce, perché non ci sono alternative nel negozio, perché ha un contratto oppure perché la sostituzione sarebbe costosa. Comportamento osservato e atteggiamento psicologico non coincidono necessariamente. Inoltre la stessa persona può acquistare soltanto una marca ma farlo raramente: la fedeltà fra alternative va distinta dalla frequenza nel tempo. Questa distinzione spiega perché il corso usa metriche diverse."
+        },
+        {
+          "text": "Nella Lezione 20 abbiamo misurato Frequency e Recency. Qui passiamo alla fedeltà nello spazio delle alternative e alla permanenza della relazione con l’impresa. La prima si osserva tramite distribuzione degli acquisti tra le marche; la seconda tramite il mantenimento o l’abbandono della clientela."
+        }
+      ],
+      "concept": "Perché la fedeltà è multidimensionale"
+    },
+    {
+      "id": "l21-2",
+      "title": "2. Brand Sensitivity: quante marche acquistiamo?",
+      "group": "Lezione 21. Fedeltà alla marca, abbandono, retention e valore economico del cliente",
+      "topics": [
+        "mca-c05-t06"
+      ],
+      "blocks": [
+        {
+          "text": "Il professore definisce la sensibilità al brand SB del cliente k, in una categoria e in un periodo fissati, come:"
+        },
+        {
+          "formula": "SB_k = 1 − (numero di brand distinti acquistati dal cliente k / numero di brand disponibili)."
+        },
+        {
+          "text": "Un numero elevato indica che il cliente concentra gli acquisti su poche marche rispetto alle alternative disponibili. L’indice non dice quale marca domina nel portafoglio, né quanti pezzi di ogni marca sono stati acquistati."
+        },
+        {
+          "text": "Esempio originale: nel mercato sono disponibili 5 marche. Anna ne acquista 1: SB = 1 − 1/5 = 0,80. Bruno ne acquista 4: SB = 1 − 4/5 = 0,20. La prima appare più concentrata nelle scelte. Se non si acquista alcuna marca, il dato va trattato separatamente, perché non descrive un comportamento di acquisto nella categoria."
+        },
+        {
+          "text": "Il valore dipende dal numero di alternative considerate. Se a parità di comportamento cambia l’assortimento disponibile, cambia SB: non confrontare direttamente negozi con numeri di brand molto diversi senza dichiarare la base di riferimento. 2.1 Variante ponderata"
+        },
+        {
+          "text": "Nelle slide è proposta anche una sensibilità ponderata:"
+        },
+        {
+          "text": "SB_pond = 1 − [somma degli score dei brand effettivamente acquistati / somma degli score di tutti i brand disponibili]."
+        },
+        {
+          "text": "Gli score sono pesi o giudizi assegnati alle marche. La formula va utilizzata solo quando il testo dell’esercizio fornisce tali score e specifica quali marche sono state acquistate. Non va confusa con una quota di acquisti: pesa le alternative in base a una misura esterna."
+        }
+      ],
+      "concept": "Brand Sensitivity: quante marche acquistiamo?"
+    },
+    {
+      "id": "l21-3",
+      "title": "3. Share of Loyalty: la quota individuale degli acquisti",
+      "group": "Lezione 21. Fedeltà alla marca, abbandono, retention e valore economico del cliente",
+      "topics": [
+        "mca-c05-t07"
+      ],
+      "blocks": [
+        {
+          "text": "Lo Share of Loyalty del brand j per il cliente k è"
+        },
+        {
+          "text": "SOL_(j,k) = acquisti del brand j da parte del cliente k / acquisti totali del cliente k nella medesima categoria e nello stesso"
+        },
+        {
+          "text": "periodo"
+        },
+        {
+          "text": "Se gli acquisti sono espressi come quantità, l’indice è una quota in quantità; se sono in euro, diventa una quota in valore. In un esercizio occorre usare unità coerenti."
+        },
+        {
+          "text": "Per un cliente che abbia acquistato almeno un prodotto della categoria, la somma delle SOL di tutte le marche è pari a 1 (100%). Una SOL pari a 1 indica uso esclusivo del brand nel periodo; una SOL pari a 0 indica nessun acquisto del brand in quel periodo."
+        },
+        {
+          "table": [
+            [
+              "Cliente",
+              "Marca A",
+              "Marca B",
+              "Marca C",
+              "Marca D",
+              "Totale",
+              "SOL(A)"
+            ],
+            [
+              "1",
+              "4",
+              "0",
+              "1",
+              "1",
+              "6",
+              "4/6 = 66,7%"
+            ],
+            [
+              "2",
+              "2",
+              "1",
+              "1",
+              "2",
+              "6",
+              "2/6 = 33,3%"
+            ]
+          ]
+        },
+        {
+          "text": "I dati riportano l’esempio ufficiale delle slide: entrambi i clienti comprano 6 unità, ma attribuiscono alla marca A quote molto diverse. La stessa frequenza o lo stesso volume totale di acquisti non implica la stessa fedeltà a un brand."
+        },
+        {
+          "text": "Differenza rispetto allo Share of Wallet della prima parte del corso: SOW è aggregato sui brand buyers di una marca e confronta vendite della marca con il totale degli acquisti di categoria compiuti da quegli stessi clienti; SOL riguarda invece uno specifico cliente. Non è corretto fare la media semplice delle SOL dei clienti e chiamarla sempre SOW: la media semplice pesa ogni cliente allo stesso modo, mentre il rapporto di aggregati pesa maggiormente chi acquista più quantità."
+        },
+        {
+          "text": "Esempio dimostrativo originale: Cliente A compra 1 unità del brand X su 1 totale (SOL = 100%). Cliente B compra 1 unità di X su 9 totali (SOL = 11,1%). Media delle SOL = 55,6%, mentre SOW aggregato = (1+1)/(1+9) = 20%. Entrambi sono calcoli corretti, ma rispondono a domande differenti."
+        },
+        {
+          "text": "3.1 Fedeltà nel tempo: media e variabilità"
+        },
+        {
+          "text": "Un solo valore medio può occultare forti oscillazioni. Nelle slide, due clienti hanno SOL media di circa 0,67 per il brand 1, ma deviazioni standard differenti (circa 0,12 e 0,31): il primo è più stabile, mentre il secondo alterna periodi di preferenza e allontanamento. Per analizzare la fedeltà temporale si calcolano SOL per periodo, media e deviazione standard, senza dimenticare che il risultato dipende dalla durata delle finestre e dall’esistenza di acquisti in ogni finestra."
+        },
+        {
+          "image": "mca-p146-1.png",
+          "caption": "Figura originale renderizzata sui dati di SOL presenti nelle slide ufficiali. L’andamento fa capire perché la deviazione standard aggiunge",
+          "alt": "Figura originale renderizzata sui dati di SOL presenti nelle slide ufficiali. L’andamento fa capire perché la deviazione standard aggiunge"
+        },
+        {
+          "text": "informazione alla media."
+        }
+      ],
+      "concept": "Share of Loyalty: la quota individuale degli acquisti"
+    },
+    {
+      "id": "l21-4",
+      "title": "4. Willingness to Search (WTS): fedeltà dichiarata",
+      "group": "Lezione 21. Fedeltà alla marca, abbandono, retention e valore economico del cliente",
+      "topics": [
+        "mca-c05-t07"
+      ],
+      "blocks": [
+        {
+          "text": "La willingness to search si rileva tramite survey: «Se il brand non fosse disponibile, comprerebbe un sostituto oppure continuerebbe a cercare il brand?». La scala ufficiale va da 1 (certamente comprerei un sostituto) a 5 (certamente continuerei a cercare il brand); il valore 3 rappresenta l’incertezza."
+        },
+        {
+          "text": "Sono previste due rappresentazioni:"
+        },
+        {
+          "formula": "WTS_media = somma dei punteggi / numero di intervistati;"
+        },
+        {
+          "formula": "WTS_% = numero di risposte positive / numero di clienti intervistati."
+        },
+        {
+          "text": "È indispensabile stabilire cosa significhi “positivo” (di solito risposte 4 e 5, se così richiesto). La media si esprime nella scala 1–5 e la percentuale tra 0 e 100: non si possono confrontare direttamente."
+        },
+        {
+          "text": "Esempio originale: punteggi 5, 4, 3, 2, 4 → media = 18/5 = 3,6; risposte positive (4 o 5) = 3, quindi WTS_% = 3/5 = 60%. Una dichiarazione d’intenzione non garantisce il comportamento reale: la metrica è attitudinale, mentre SOL è comportamentale."
+        }
+      ],
+      "concept": "Willingness to Search (WTS): fedeltà dichiarata"
+    },
+    {
+      "id": "l21-5",
+      "title": "5. Churn rate: misurare l’abbandono",
+      "group": "Lezione 21. Fedeltà alla marca, abbandono, retention e valore economico del cliente",
+      "topics": [
+        "mca-c05-t08",
+        "mca-c05-t09"
+      ],
+      "blocks": [
+        {
+          "text": "Churn significa perdita di clienti in un intervallo di osservazione. Nelle slide:"
+        },
+        {
+          "formula": "Churn = clienti persi nell’intervallo [t−1,t] / clienti attivi in t−1 × 100"
+        },
+        {
+          "text": "Variante: clienti persi / clienti a rischio in t−1 × 100"
+        },
+        {
+          "text": "La differenza riguarda la base: non tutti i clienti attivi all’inizio potrebbero essere effettivamente esposti al rischio di abbandono nel periodo."
+        },
+        {
+          "text": "Una definizione operativa di “perso” è indispensabile. In un contratto può essere identificato dalla revoca o dalla cessazione; nel retail può essere inferito dall’assenza di acquisti dopo una finestra adeguata. L’assenza di acquisti in un singolo mese non prova necessariamente un abbandono permanente."
+        },
+        {
+          "text": "5.1 Base clienti: equazione dei flussi"
+        },
+        {
+          "text": "Indicando con B_0 la base iniziale, F i clienti mantenuti, L i persi e N i nuovi, valgono: B_0 = F + L e B_1 = F + N. Pertanto B_1 − B_0 = N − L. Dividendo per B_0 si ottiene: variazione % della base = acquisition rate − churn rate, purché si usi lo stesso denominatore B_0 per i due tassi."
+        },
+        {
+          "text": "Esempio originale: base iniziale 1.000; persi 100; nuovi 170. Fedeli 900, base finale 1.070. Churn = 10%, acquisition = 17%, crescita base = 7%; verifica: 17% − 10% = 7%. Se i nuovi arrivati vengono contati anche tra i persi dello stesso intervallo, occorre definire esplicitamente un modello di flussi più articolato."
+        },
+        {
+          "image": "mca-p147-1.png",
+          "caption": "diagramma dei flussi della clientela, con dati di esempio.",
+          "alt": "diagramma dei flussi della clientela, con dati di esempio."
+        },
+        {
+          "text": "5.2 Situazioni contrattuali e non contrattuali"
+        },
+        {
+          "text": "Settori contrattuali: assicurazioni, abbonamenti o servizi di telecomunicazioni possono disporre di data di inizio e data di cessazione. L’attività si misura in date puntuali; verificare sospensioni, riattivazioni e clienti con più contratti."
+        },
+        {
+          "text": "Settori non contrattuali: supermercati, e-commerce e molti servizi non possiedono una vera “data di cessazione”. Qui il churn è una classificazione inferita da comportamento e soglie temporali. Il professore mostra un esempio con due domande: acquisto nell’ultimo trimestre? acquisto prima del trimestre? Da queste risposte si distinguono clienti fedeli, persi, nuovi e non clienti."
+        }
+      ],
+      "concept": "Churn rate: misurare l’abbandono"
+    },
+    {
+      "id": "l21-6",
+      "title": "6. Retention rate: misurare i clienti mantenuti",
+      "group": "Lezione 21. Fedeltà alla marca, abbandono, retention e valore economico del cliente",
+      "topics": [
+        "mca-c05-t09"
+      ],
+      "blocks": [
+        {
+          "formula": "Retention = clienti fedeli tra t−1 e t / clienti attivi in t−1 × 100"
+        },
+        {
+          "text": "Variante: clienti fedeli / clienti a rischio iniziali × 100"
+        },
+        {
+          "text": "Quando la popolazione di riferimento coincide e ogni cliente iniziale viene classificato o fedele o perso, retention + churn = 100%, ossia r = 1 − churn se entrambi sono in forma decimale."
+        },
+        {
+          "text": "Esempio: 800 clienti iniziali, 680 mantenuti, 120 persi e 90 nuovi. Retention = 680/800 = 85%, churn = 120/800 = 15%; la base finale è 770, perciò 770/800 = 96,25% non è retention, perché include i nuovi clienti. Se usi la formula (clienti finali − nuovi)/clienti iniziali, ottieni correttamente (770−90)/800 = 85%."
+        },
+        {
+          "text": "L’uguaglianza retention = 1 − churn non vale automaticamente se si usano basi diverse (per esempio denominatori “a rischio” differenti) o definizioni temporali non coerenti. Nei quesiti d’esame bisogna dichiarare sempre il denominatore."
+        }
+      ],
+      "concept": "Retention rate: misurare i clienti mantenuti"
+    },
+    {
+      "id": "l21-7",
+      "title": "7. Costo economico del churn",
+      "group": "Lezione 21. Fedeltà alla marca, abbandono, retention e valore economico del cliente",
+      "topics": [
+        "mca-c05-t09"
+      ],
+      "blocks": [
+        {
+          "text": "Nelle slide compare una stima del ricavo perduto: clienti persi × revenue pro capite, oppure churn decimale × clienti iniziali × revenue pro capite. Attenzione: questa è una misura dei ricavi potenzialmente persi, non necessariamente del profitto; per una misura economica più rigorosa va considerato il margine di contribuzione e l’orizzonte temporale."
+        },
+        {
+          "text": "Esempio ufficiale: banca con 300.000 clienti iniziali, churn 3% e ricavo medio per cliente 100 €. Clienti persi stimati = 300.000 × 0,03 = 9.000; ricavo annuo associato = 9.000 × 100 = 900.000 €. La cifra non coincide con il CLTV dei clienti persi."
+        }
+      ],
+      "concept": "Costo economico del churn"
+    },
+    {
+      "id": "l21-8",
+      "title": "8. Customer Lifetime Value (CLTV): perché è una metrica finanziaria",
+      "group": "Lezione 21. Fedeltà alla marca, abbandono, retention e valore economico del cliente",
+      "topics": [
+        "mca-c05-t10"
+      ],
+      "blocks": [
+        {
+          "text": "Il Customer Lifetime Value misura il valore economico attuale della relazione con un cliente, considerando margini attesi, probabilità di mantenimento, costi della relazione e valore del denaro nel tempo. Non basta sommare fatturati: il ricavo non è il margine, una vendita futura non è certa e un euro futuro non vale quanto un euro oggi."
+        },
+        {
+          "text": "Occorre distinguere tre grandezze:"
+        },
+        {
+          "table": [
+            [
+              "-",
+              "fatturato o spesa del cliente, cioè ricavi;"
+            ],
+            [
+              "-",
+              "margine operativo attribuibile, ottenuto sottraendo i costi direttamente rilevanti;"
+            ],
+            [
+              "-",
+              "flusso atteso attualizzato."
+            ]
+          ]
+        },
+        {
+          "text": "La formula del professore per cliente già acquisito è: CLV = Σ[t=1..n] [(M_t − C_t) × r^t] / (1+i)^t, in cui M_t è il margine, C_t il costo di retention, r la probabilità annuale di permanenza assunta costante, i il tasso di attualizzazione e n l’orizzonte."
+        },
+        {
+          "text": "Nota di rigore: r^t presuppone una probabilità costante e indipendente dalla durata già trascorsa (modello semplificato). Con probabilità di permanenza variabile nel tempo si usa la probabilità cumulata S_t = r_1 × r_2 × … × r_t. La scelta fra r^t e r^(t−1) dipende dal momento in cui si assume che il flusso sia generato: la convenzione del corso è r^t e verrà applicata negli esempi."
+        },
+        {
+          "text": "8.1 Perché si attualizza: valore temporale del denaro"
+        },
+        {
+          "text": "Se il tasso i è 5%, 100 € incassati fra un anno valgono oggi 100/(1,05) ≈ 95,24 €, mentre fra due anni valgono 100/(1,05)^2 ≈ 90,70 €. In CLTV il flusso è prima ponderato per la probabilità che il cliente sia ancora attivo, poi attualizzato con il fattore (1+i)^t."
+        },
+        {
+          "text": "8.2 Esempio ufficiale del professore, svolto interamente"
+        },
+        {
+          "text": "Orizzonte di 5 anni; spesa annuale 50, 60, 70, 80, 90 €; costo di servizio/retention 10, 9, 8, 7, 6 €; ulteriori costi variabili pari a 10 € annui; probabilità di abbandono 15%, dunque r = 0,85; tasso di attualizzazione i = 0,05. I margini netti annuali sono 30, 41, 52, 63, 74 €."
+        },
+        {
+          "table": [
+            [
+              "Anno",
+              "Spesa",
+              "Costi servizio",
+              "Costi variabili",
+              "Margine netto",
+              "r^t/(1+i)^t",
+              "Flusso attuale"
+            ],
+            [
+              "1",
+              "50",
+              "10",
+              "10",
+              "30",
+              "0.80952",
+              "24.29 €"
+            ],
+            [
+              "2",
+              "60",
+              "9",
+              "10",
+              "41",
+              "0.65533",
+              "26.87 €"
+            ],
+            [
+              "3",
+              "70",
+              "8",
+              "10",
+              "52",
+              "0.53050",
+              "27.59 €"
+            ],
+            [
+              "4",
+              "80",
+              "7",
+              "10",
+              "63",
+              "0.42946",
+              "27.06 €"
+            ],
+            [
+              "5",
+              "90",
+              "6",
+              "10",
+              "74",
+              "0.34765",
+              "25.73 €"
+            ]
+          ]
+        },
+        {
+          "text": "CLTV quinquennale = 131.52 € (circa 131,52 €, come nelle slide, salvo arrotondamenti intermedi). Ogni anno contribuisce al valore solo nella misura in cui il cliente è atteso ancora attivo e il denaro viene attualizzato."
+        },
+        {
+          "text": "8.3 CLTV di due clienti: il più remunerativo oggi non è sempre il più prezioso"
+        },
+        {
+          "text": "Nelle slide il cliente con margini più alti ma retention 80% produce, su cinque anni, CLTV circa 193,78 €; un cliente con margini annuali più bassi ma retention 90% produce circa 231,15 €. La differenza dipende dalla maggiore persistenza dei flussi futuri. Il confronto non significa che la fedeltà sia sempre più importante del margine: il risultato dipende da tutti i valori e dall’orizzonte."
+        }
+      ],
+      "concept": "Customer Lifetime Value (CLTV): perché è una metrica finanziaria"
+    },
+    {
+      "id": "l21-9",
+      "title": "9. Formula a orizzonte infinito e prospetti di acquisizione",
+      "group": "Lezione 21. Fedeltà alla marca, abbandono, retention e valore economico del cliente",
+      "topics": [
+        "mca-c05-t10"
+      ],
+      "blocks": [
+        {
+          "text": "Assumendo margine netto costante m = M−C, retention costante r, attualizzazione i e incassi attesi a fine periodo a partire da t=1, la serie geometrica porta a: CLV∞ = m × r/(1+i−r). Derivazione: CLV∞ = m Σ[t=1..∞] (r/(1+i))^t; la somma di una serie geometrica con rapporto q è q/(1−q), purché |q|<1."
+        },
+        {
+          "text": "Esempio delle slide: margine annuo 50 €, abbandono 15% (r=0,85), tasso i=5% ⇒ CLV∞ = 50×0,85/(1,05−0,85) = 212,50 €. Su cinque anni: 50×Σ[t=1..5](0,85/1,05)^t ≈ 138,62 €. Il modello infinito è una semplificazione: nessuna relazione dura letteralmente per sempre."
+        },
+        {
+          "text": "Per un potenziale nuovo cliente (prospect), la formula del corso sottrae il costo iniziale di acquisizione AC: CLV_prospect = −AC + Σ[t=1..n] [(M_t−C_t)r^t]/(1+i)^t. Se AC=60 €, il CLTV netto quinquennale dell’esempio precedente diventa circa 71,52 €. Il costo di acquisizione non va sottratto una seconda volta se il margine già lo include."
+        },
+        {
+          "text": "Il massimo costo di acquisizione economicamente sostenibile, nel modello elementare e ignorando costi/rischi ulteriori, è pari al CLTV della relazione prima del costo di acquisizione. Nella realtà il management richiede un margine di sicurezza e valuta alternative d’investimento."
+        },
+        {
+          "image": "mca-p149-1.png",
+          "caption": "Figura originale, renderizzata su valori ricavati dal modello ufficiale con margine costante 50 €, retention 85% e sconto 5%.",
+          "alt": "Figura originale, renderizzata su valori ricavati dal modello ufficiale con margine costante 50 €, retention 85% e sconto 5%."
+        }
+      ],
+      "concept": "Formula a orizzonte infinito e prospetti di acquisizione"
+    },
+    {
+      "id": "l21-10",
+      "title": "10. Sensibilità del CLTV e decisioni aziendali",
+      "group": "Lezione 21. Fedeltà alla marca, abbandono, retention e valore economico del cliente",
+      "topics": [
+        "mca-c05-t10"
+      ],
+      "blocks": [
+        {
+          "text": "A parità di margine e tasso di sconto, un aumento di retention aumenta il CLTV perché rende più probabili i flussi futuri. A parità di retention, un aumento del tasso di sconto lo riduce. Il CLTV può anche essere negativo se i costi della relazione e di acquisizione superano i margini attesi."
+        },
+        {
+          "text": "Non usare il CLTV come unica misura della redditività: occorre stimare i margini in modo attendibile, evitare attribuzioni arbitrarie dei costi e distinguere correlazione da causalità quando si valutano campagne di fidelizzazione. Un intervento che costa 30 € e aumenta CLTV di soli 15 € non crea valore, anche se riduce il churn."
+        }
+      ],
+      "concept": "Sensibilità del CLTV e decisioni aziendali"
+    },
+    {
+      "id": "l21-11",
+      "title": "11. Esercizi graduati con soluzioni",
+      "group": "Lezione 21. Fedeltà alla marca, abbandono, retention e valore economico del cliente",
+      "topics": [
+        "mca-c05-t10"
+      ],
+      "blocks": [
+        {
+          "text": "Esercizio 1. Un cliente acquista 6 unità di A, 3 di B e 1 di C. Calcolare SOL di A, B, C e SB se in mercato esistono cinque marche."
+        },
+        {
+          "worked": [
+            {
+              "text": "totale 10; SOL = 60%, 30%, 10%; marche distinte acquistate=3; SB=1−3/5=40%."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio 2. Su 12 risposte WTS si hanno: 2 risposte 1, 1 risposta 2, 3 risposte 3, 4 risposte 4, 2 risposte 5. Positivi=4 o 5."
+        },
+        {
+          "worked": [
+            {
+              "text": "media=(2+2+9+16+10)/12=39/12=3,25; WTS%=6/12=50%."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio 3. Base iniziale 2.400, persi 240, nuovi 360."
+        },
+        {
+          "worked": [
+            {
+              "text": "fedeli=2.160; finale=2.520; churn=10%; retention=90%; acquisition=15%; crescita=5%. Verifica: 15−10=5 punti percentuali."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio 4. Un cliente acquisito genera margini netti annuali costanti di 100 € per 3 anni; retention 80%, sconto 10%."
+        },
+        {
+          "worked": [
+            {
+              "text": "CLV = 100×[(.8/1.1)+(.8/1.1)^2+(.8/1.1)^3] ≈ 164,09 €. Se costo acquisizione 50 €, valore netto prospect ≈ 114,09 €."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio 5. Retention 90%, costo di retention 15 €, margine prima del costo 75 €, tasso sconto 5%. Soluzione: m=60 €; CLV infinito=60×0,90/(1,05−0,90)=360 €. Se si finanzia una campagna con costo iniziale di 80 €, il valore netto (nel modello) è 280 €."
+        }
+      ],
+      "concept": "Esercizi graduati con soluzioni"
+    },
+    {
+      "id": "l21-12",
+      "title": "12. Domande d’orale e errori da evitare",
+      "group": "Lezione 21. Fedeltà alla marca, abbandono, retention e valore economico del cliente",
+      "topics": [
+        "mca-c05-t10"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Domanda",
+              "Risposta essenziale"
+            ],
+            [
+              "SOL e SOW sono uguali?",
+              "No: SOL riguarda un cliente, SOW è aggregato sui clienti della marca."
+            ],
+            [
+              "Cosa misura SB?",
+              "La concentrazione della scelta su un numero ridotto di brand rispetto a quelli disponibili."
+            ],
+            [
+              "Cosa distingue WTS e SOL?",
+              "WTS è intenzione dichiarata; SOL è comportamento d’acquisto osservato."
+            ],
+            [
+              "Quando retention = 1 − churn?",
+              "Quando definizioni, periodo e denominatore coincidono e ogni cliente iniziale è fedele o perso."
+            ],
+            [
+              "Il fatturato perduto coincide con profitto perso?",
+              "No: per il profitto va considerato il margine e il valore dei flussi futuri."
+            ],
+            [
+              "Perché il CLTV contiene r^t e (1+i)^t?",
+              "Il primo misura permanenza attesa; il secondo attualizza il denaro nel tempo."
+            ],
+            [
+              "Un cliente può avere CLTV negativo?",
+              "Sì, se costi e investimenti superano i margini attesi."
+            ]
+          ]
+        },
+        {
+          "text": "Errori frequenti: scambiare clienti finali e clienti fedeli; usare 85 anziché 0,85 nella formula CLTV; aggiungere i nuovi clienti al numeratore della retention; trattare ricavi come margini; usare quantità al numeratore e euro al denominatore del SOL; dimenticare le assunzioni sul churn non contrattuale; sommare flussi futuri senza attualizzarli."
+        }
+      ],
+      "concept": "Domande d’orale e errori da evitare"
+    },
+    {
+      "id": "l22-intro",
+      "title": "Introduzione alla lezione",
+      "group": "Lezione 22. Customer metrics: metriche di consumo",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Obiettivi: distinguere quanto, che cosa e come acquista un cliente; misurare scontrino e spesa media; ricostruire il profilo di spesa nelle categorie; applicare RSS e Market Basket Variance; misurare l’uso delle promozioni; comprendere prezzo di riserva e willingness to pay; risolvere esercizi simili a quelli d’esame senza confondere osservazione, stima e previsione."
+        }
+      ],
+      "concept": "Introduzione alla lezione"
+    },
+    {
+      "id": "l22-1",
+      "title": "1. Concetti preliminari: cliente, acquisto, riga, sessione e periodo",
+      "group": "Lezione 22. Customer metrics: metriche di consumo",
+      "topics": [
+        "mca-c05-t11"
+      ],
+      "blocks": [
+        {
+          "text": "La stessa base dati può essere osservata con granularità diverse. La riga di prodotto è una voce acquistata; una transazione o scontrino raggruppa le righe di un acquisto; una sessione o visita è l’occasione in cui il cliente interagisce col punto vendita o sito. Nelle slide si assume una spesa associata a ciascuna visita; nei dati reali una visita potrebbe non produrre transazioni e un ordine potrebbe includere più prodotti. Definire l’unità di osservazione impedisce di dividere una spesa per il denominatore sbagliato."
+        },
+        {
+          "text": "Si distingue inoltre la popolazione dei clienti osservati, il periodo D (giorni effettivamente coperti), il numero N di sessioni e l’insieme M delle categorie. I valori monetari possono essere lordi o netti di resi, imposte e sconti: la scelta deve essere coerente e dichiarata."
+        },
+        {
+          "table": [
+            [
+              "Livello",
+              "Esempio",
+              "Utilizzo"
+            ],
+            [
+              "Riga di acquisto",
+              "Libro: 12 €, 1 unità",
+              "Composizione e quantità"
+            ],
+            [
+              "Scontrino/sessione",
+              "Libro + musica: 30 €",
+              "Scontrino medio"
+            ],
+            [
+              "Cliente-periodo",
+              "8 visite tra luglio e dicembre",
+              "Spesa mensile e fedeltà"
+            ],
+            [
+              "Cliente-categoria",
+              "165 € in libri nel semestre",
+              "Quota di spesa e RSS"
+            ]
+          ]
+        }
+      ],
+      "concept": "Concetti preliminari: cliente, acquisto, riga, sessione e periodo"
+    },
+    {
+      "id": "l22-2",
+      "title": "2. “Quanto acquista”: scontrino medio",
+      "group": "Lezione 22. Customer metrics: metriche di consumo",
+      "topics": [
+        "mca-c05-t11"
+      ],
+      "blocks": [
+        {
+          "text": "Lo scontrino medio è la spesa media per sessione con acquisto nel periodo di osservazione, secondo l’impostazione delle slide. Si calcola dividendo la spesa totale per il numero N di sessioni osservate con acquisto."
+        },
+        {
+          "heading": "Scontrino medio = (Σᵢ Spesaᵢ) / N"
+        },
+        {
+          "text": "Esempio tratto dalle slide: otto sessioni registrano 12,26; 121,59; 23,63; 12,84; 0,99; 80,19; 39,00; 10,98 euro. La somma è 301,48 €, quindi lo scontrino medio è 301,48 / 8 = 37,685 ≈ 37,69 €."
+        },
+        {
+          "text": "Non confondere scontrino medio e prezzo unitario. Uno scontrino da 40 € può derivare da un solo articolo di valore elevato o da dieci articoli economici; per la quantità media per transazione serve un indicatore diverso. Un cliente con uno scontrino alto non è necessariamente quello che spende di più in un mese: conta anche quante volte acquista."
+        }
+      ],
+      "concept": "“Quanto acquista”: scontrino medio"
+    },
+    {
+      "id": "l22-3",
+      "title": "3. Spesa media per periodo: normalizzare l’orizzonte temporale",
+      "group": "Lezione 22. Customer metrics: metriche di consumo",
+      "topics": [
+        "mca-c05-t11"
+      ],
+      "blocks": [
+        {
+          "text": "La spesa media per T giorni esprime quanto il cliente spenderebbe mediamente in una finestra standard, assumendo stabile il ritmo medio della spesa nel periodo osservato di D giorni. Le slide adottano il mese convenzionale di 30 giorni, non necessariamente il mese di calendario."
+        },
+        {
+          "heading": "Spesa media in T giorni = (Spesa totale in D giorni / D) × T"
+        },
+        {
+          "heading": "Spesa media mensile (30 gg) = (Σᵢ Spesaᵢ / D) × 30"
+        },
+        {
+          "text": "Nell’esempio ufficiale: spesa totale 301,48 €, periodo 183 giorni, T = 30. Si ottiene 301,48 / 183 × 30 = 49,42 € (arrotondato). Questa cifra non è la media dei soli mesi con acquisti e non coincide con la media dei sei totali mensili di calendario se l’intervallo è definito in modo differente."
+        },
+        {
+          "text": "Relazione fondamentale: Spesa normalizzata su T giorni = Scontrino medio × (N / D) × T. Per esempio, 37,685 × 8/183 × 30 = 49,42. L’indicatore di frequenza media e lo scontrino medio spiegano congiuntamente la spesa normalizzata."
+        },
+        {
+          "text": "Attenzione: con pochi dati, stagionalità, clienti appena acquisiti o periodi molto brevi, la proiezione lineare può essere fuorviante. Se D = 0 o N = 0, alcuni rapporti sono indefiniti: non vanno sostituiti automaticamente con zero."
+        }
+      ],
+      "concept": "Spesa media per periodo: normalizzare l’orizzonte temporale"
+    },
+    {
+      "id": "l22-4",
+      "title": "4. “Che cosa acquista”: spesa per categoria e composizione del paniere",
+      "group": "Lezione 22. Customer metrics: metriche di consumo",
+      "topics": [
+        "mca-c05-t12"
+      ],
+      "blocks": [
+        {
+          "text": "Si rappresenta la spesa del cliente k tramite un vettore di M categorie. La quota di spesa è la frazione del totale che il cliente destina alla categoria j. È compresa tra 0 e 1, se tutte le spese sono non negative, e le quote sommano a 1 quando tutte le categorie rilevanti sono incluse."
+        },
+        {
+          "heading": "Qₖ,ⱼ = Spesaₖ,ⱼ / Spesa totaleₖ"
+        },
+        {
+          "text": "Dati ufficiali: il Cliente 1 spende 20,91 € in accessori telefonia, 80,19 € in elettrodomestici, 165,21 € in libri, 35,17 € in musica e 131,01 € in personal care (totale 432,49 €). Il Cliente 2 spende rispettivamente 5,50; 177,19; 43,62; 0,99; 46,00 € (totale 273,30 €)."
+        },
+        {
+          "table": [
+            [
+              "Categoria",
+              "Cliente 1 (€)",
+              "Cliente 2 (€)",
+              "Quota cliente 1",
+              "Quota cliente 2"
+            ],
+            [
+              "Accessori telefonia",
+              "20,91",
+              "5,50",
+              "4,8%",
+              "2,0%"
+            ],
+            [
+              "Elettrodomestici",
+              "80,19",
+              "177,19",
+              "18,5%",
+              "64,8%"
+            ],
+            [
+              "Libri",
+              "165,21",
+              "43,62",
+              "38,2%",
+              "16,0%"
+            ],
+            [
+              "Musica",
+              "35,17",
+              "0,99",
+              "8,1%",
+              "0,4%"
+            ],
+            [
+              "Personal care",
+              "131,01",
+              "46,00",
+              "30,3%",
+              "16,8%"
+            ],
+            [
+              "Totale",
+              "432,49",
+              "273,30",
+              "100%",
+              "100%"
+            ]
+          ]
+        },
+        {
+          "image": "mca-p151-1.png",
+          "caption": "Quote di spesa per categoria ricostruite dai dati dell’esempio ufficiale.",
+          "alt": "Quote di spesa per categoria ricostruite dai dati dell’esempio ufficiale."
+        },
+        {
+          "text": "Interpretazione manageriale: il primo cliente distribuisce la spesa tra più categorie; il secondo è concentrato negli elettrodomestici. La quota di spesa non misura da sola la fedeltà a una marca, perché qui le categorie non sono brand alternativi dello stesso mercato."
+        }
+      ],
+      "concept": "“Che cosa acquista”: spesa per categoria e composizione del paniere"
+    },
+    {
+      "id": "l22-5",
+      "title": "5. Ratio Spend Score (RSS): scostamento rispetto al mercato",
+      "group": "Lezione 22. Customer metrics: metriche di consumo",
+      "topics": [
+        "mca-c05-t12"
+      ],
+      "blocks": [
+        {
+          "text": "La quota del singolo cliente può essere confrontata con quella del mercato. Il professore definisce la quota media di mercato come rapporto tra la spesa totale per la categoria e la spesa totale di tutti i clienti osservati: è quindi una quota aggregata ponderata dagli importi, non la media aritmetica semplice delle quote individuali."
+        },
+        {
+          "heading": "Qmercato,ⱼ = (Σₖ Spesaₖ,ⱼ) / (Σₖ Spesa totaleₖ)"
+        },
+        {
+          "heading": "RSSₖ,ⱼ = Qₖ,ⱼ / Qmercato,ⱼ"
+        },
+        {
+          "text": "Se RSS > 1, il cliente destina alla categoria una quota superiore alla media aggregata di mercato; se RSS = 1, è in linea; se RSS < 1, destina una quota inferiore. Un RSS pari a 1,5 significa che il peso relativo della categoria è il 50% più alto rispetto al benchmark, non che il cliente spende il 50% in più in euro."
+        },
+        {
+          "text": "Esempio ufficiale: per gli elettrodomestici la quota di mercato è 257,38 / 705,79 ≈ 36,5%. Cliente 1: 18,5% / 36,5% ≈ 0,508 (50,8%). Cliente 2: 64,8% / 36,5% ≈ 1,778 (177,8%). Il secondo cliente mostra un interesse relativo molto più elevato nella categoria."
+        },
+        {
+          "text": "Precisazione metodologica: per costruire un benchmark indipendente si può usare un campione più ampio, anziché includere proprio il cliente valutato nel denominatore. Nelle slide il mercato è rappresentato dai clienti della tabella: seguire questa convenzione negli esercizi del corso. Se la quota aggregata della categoria è zero, il RSS non è calcolabile. Una categoria di importanza monetaria minima può produrre RSS elevati: incrociare l’indice con la spesa assoluta."
+        }
+      ],
+      "concept": "Ratio Spend Score (RSS): scostamento rispetto al mercato"
+    },
+    {
+      "id": "l22-6",
+      "title": "6. Market Basket Variance (MBV): varietà del paniere come entropia",
+      "group": "Lezione 22. Customer metrics: metriche di consumo",
+      "topics": [
+        "mca-c05-t13"
+      ],
+      "blocks": [
+        {
+          "text": "La MBV misura quanto il paniere di un cliente sia distribuito tra categorie differenti. Il professore la chiama “Market Basket Variance (Shannon’s Entropy)”. Pur contenendo il termine variance, non è la varianza statistica classica: è una misura normalizzata di entropia della distribuzione delle categorie."
+        },
+        {
+          "heading": "MBV = −Σᵢ₌₁"
+        },
+        {
+          "heading": "ᴹ pᵢ · log₍"
+        },
+        {
+          "heading": "ᴹ"
+        },
+        {
+          "heading": "₎(pᵢ) = −(Σ pᵢ ln pᵢ) / ln M"
+        },
+        {
+          "text": "M è il numero di categorie considerate; pᵢ è la proporzione del paniere nella categoria i, calcolata sui prodotti/quantità o sugli importi secondo la rappresentazione richiesta. Nelle slide l’esempio con le sessioni fa riferimento alla ripartizione del paniere per categorie; è essenziale esplicitare se usiamo quantità, occorrenze o valore di spesa, perché possono produrre risultati diversi."
+        },
+        {
+          "text": "Per i termini con pᵢ = 0 si adotta la convenzione 0·log(0) = 0, intesa come limite. Con M > 1, 0 ≤ MBV ≤ 1: MBV = 0 quando tutta la massa è in una categoria; MBV = 1 quando le M categorie hanno esattamente lo stesso peso (pᵢ = 1/M). Se si considera una sola categoria (M = 1), il rapporto con ln(1) è indefinito; si può descrivere il paniere come privo di varietà, ma non applicare la formula senza adattamento."
+        },
+        {
+          "text": "Esempio guidato: con tre categorie e pesi (0,5; 0,3; 0,2), MBV = −[0,5 ln(0,5) + 0,3 ln(0,3) + 0,2 ln(0,2)]/ln(3) ≈ 0,937. Con (1; 0; 0) si ha MBV = 0; con (1/3; 1/3; 1/3), MBV = 1."
+        },
+        {
+          "text": "La comparabilità richiede attenzione al numero M e alla tassonomia scelta: aggiungere o aggregare categorie modifica la distribuzione e può alterare il risultato. L’entropia indica diversificazione, non necessariamente soddisfazione, fedeltà o valore economico del cliente."
+        },
+        {
+          "image": "mca-p152-1.png",
+          "caption": "Entropia normalizzata con due categorie: massimo in corrispondenza della divisione 50%–50%.",
+          "alt": "Entropia normalizzata con due categorie: massimo in corrispondenza della divisione 50%–50%."
+        }
+      ],
+      "concept": "Market Basket Variance (MBV): varietà del paniere come entropia"
+    },
+    {
+      "id": "l22-7",
+      "title": "7. “Come acquista”: redemption e sensibilità alle promozioni",
+      "group": "Lezione 22. Customer metrics: metriche di consumo",
+      "topics": [
+        "mca-c05-t14"
+      ],
+      "blocks": [
+        {
+          "text": "Il redemption rate misura la quota di offerte promozionali accettate sulle offerte inviate o rese disponibili, secondo la definizione delle slide. Il numeratore può rappresentare coupon riscattati, offerte utilizzate o risposte positive, purché il denominatore rappresenti opportunità dello stesso tipo."
+        },
+        {
+          "heading": "Redemption rateₖ = Offerte accettateₖ / Offerte inviateₖ"
+        },
+        {
+          "text": "Esempio: 3 promozioni utilizzate su 12 offerte inviate al cliente producono 3/12 = 25%. Ma il numero di offerte accettate non misura direttamente la spesa generata."
+        },
+        {
+          "text": "La sensibilità alle promozioni nel corso si calcola per cliente k e categoria j come il rapporto tra la spesa effettuata in promozione e la spesa totale nella stessa categoria:"
+        },
+        {
+          "heading": "Sᵖʳᵐₖ(j) = Spesa promozionaleₖ(j) / Spesa totaleₖ(j)"
+        },
+        {
+          "text": "Esempio: 120 € spesi in prodotti della categoria in promozione su 300 € di acquisti totali nella medesima categoria danno 40%. Questo rapporto descrive la composizione osservata della spesa; non prova che la promozione abbia causato gli acquisti. Per valutare un effetto causale servirebbero dati e un disegno di confronto adeguato."
+        },
+        {
+          "text": "Attenzione: redemption rate e quota di spesa promozionale sono grandezze diverse. Un cliente può usare una sola offerta costosa e generare bassa redemption ma alta spesa promozionale. Se non vi sono offerte inviate o spesa di categoria, i rapporti sono indefiniti."
+        }
+      ],
+      "concept": "“Come acquista”: redemption e sensibilità alle promozioni"
+    },
+    {
+      "id": "l22-8",
+      "title": "8. Reservation price: massima disponibilità a pagare",
+      "group": "Lezione 22. Customer metrics: metriche di consumo",
+      "topics": [
+        "mca-c05-t14"
+      ],
+      "blocks": [
+        {
+          "text": "Il reservation price (prezzo di riserva) è il prezzo massimo che un cliente è disposto a pagare per un bene o servizio, nelle condizioni specifiche considerate. È vicino alla nozione di maximum willingness to pay (WTP). Non coincide con il prezzo effettivamente pagato: comprare a 9 € indica in generale una disponibilità a pagare almeno pari a 9 €, ma non determina esattamente il massimo."
+        },
+        {
+          "text": "Le slide citano più famiglie di metodi: dati di acquisto osservati, dichiarazioni dirette (self-stated WTP), conjoint analysis con stima di una funzione di utilità, contingent valuation e aste sperimentali. Il risultato dipende da prodotto, reddito, contesto, momento e alternative disponibili."
+        },
+        {
+          "text": "Un metodo diretto chiede se un prodotto sia conveniente a un certo prezzo (% Good Value), oppure misura le intenzioni di acquisto con una scala. La curva % Good Value al variare del prezzo è in genere decrescente e può essere ricostruita da una distribuzione di prezzi di riserva stimati."
+        },
+        {
+          "heading": "% Good Value(p) = N. clienti con reservation price ≥ p / N. clienti osservati"
+        },
+        {
+          "text": "Esempio: se 6 clienti su 11 hanno prezzo di riserva ≥ 7,20 €, il % Good Value a 7,20 € è 6/11 = 54,5%, secondo l’esempio delle slide. In uno scenario didattico con clienti equiprobabili e un solo acquisto ciascuno, la domanda attesa al prezzo p è pari a N × %GV(p)."
+        },
+        {
+          "image": "mca-p153-1.png",
+          "caption": "Esempio originale: andamento a gradini della frazione di clienti con prezzo di riserva almeno pari al prezzo proposto.",
+          "alt": "Esempio originale: andamento a gradini della frazione di clienti con prezzo di riserva almeno pari al prezzo proposto."
+        },
+        {
+          "text": "È importante non confondere “considera il prezzo conveniente”, “dichiara che acquisterebbe” e “compra effettivamente”: le misure dichiarate possono divergere dal comportamento osservato. Inoltre, il valore minimo, massimo o medio dei prezzi effettivamente pagati non identifica senza altre ipotesi la distribuzione dei prezzi di riserva."
+        }
+      ],
+      "concept": "Reservation price: massima disponibilità a pagare"
+    },
+    {
+      "id": "l22-9",
+      "title": "9. Ricavi e margini stimati da WTP: esercizio guidato",
+      "group": "Lezione 22. Customer metrics: metriche di consumo",
+      "topics": [
+        "mca-c05-t15"
+      ],
+      "blocks": [
+        {
+          "text": "Supponiamo di conoscere gli 11 prezzi di riserva dell’esempio ufficiale: 4,99; 5,49; 5,99; 6,49; 6,99; 7,49; 7,99; 8,49; 8,99; 9,49; 9,99 €. Un cliente acquista una unità se il reservation price è almeno pari al prezzo di vendita. Con costo variabile unitario pari a 5 €:"
+        },
+        {
+          "table": [
+            [
+              "Prezzo p",
+              "Acquirenti attesi",
+              "Ricavo p×Q",
+              "Margine di contribuzione (p−5)×Q"
+            ],
+            [
+              "3,99 €",
+              "11",
+              "43,89 €",
+              "−11,11 €"
+            ],
+            [
+              "5,99 €",
+              "9",
+              "53,91 €",
+              "8,91 €"
+            ],
+            [
+              "6,99 €",
+              "7",
+              "48,93 €",
+              "13,93 €"
+            ],
+            [
+              "7,99 €",
+              "5",
+              "39,95 €",
+              "14,95 €"
+            ]
+          ]
+        },
+        {
+          "text": "Nota: questi margini non sono l’utile netto dell’impresa: non abbiamo sottratto costi fissi e altri costi. L’esercizio serve a dimostrare che massimizzare il numero di clienti o i ricavi non coincide necessariamente con massimizzare il margine di contribuzione."
+        }
+      ],
+      "concept": "Ricavi e margini stimati da WTP: esercizio guidato"
+    },
+    {
+      "id": "l22-10",
+      "title": "10. Esercizi d’esame commentati e controlli",
+      "group": "Lezione 22. Customer metrics: metriche di consumo",
+      "topics": [
+        "mca-c05-t15"
+      ],
+      "blocks": [
+        {
+          "text": "Esercizio A. Un cliente effettua quattro transazioni per 20, 40, 10 e 50 € in 60 giorni. Calcolare scontrino medio e spesa media su 30 giorni."
+        },
+        {
+          "worked": [
+            {
+              "text": "spesa totale 120 €; scontrino medio 120/4 = 30 €; spesa media mensile 120/60 × 30 = 60 €."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio B. Due clienti spendono rispettivamente 30 € e 70 € in libri, con spesa complessiva personale rispettivamente 100 € e 200 €. Calcolare il benchmark e RSS dei due."
+        },
+        {
+          "worked": [
+            {
+              "text": "quota aggregata libri 100/300 = 33,33%; quote individuali 30% e 35%; RSS₁ = 0,30/(1/3) = 0,90; RSS₂ = 0,35/(1/3) = 1,05."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio C. Un paniere contiene 10 prodotti: 5 della categoria A, 3 di B e 2 di C. Calcolare MBV normalizzata su M=3."
+        },
+        {
+          "worked": [
+            {
+              "text": "proporzioni 0,5; 0,3; 0,2; MBV ≈ 0,937. Verificare che il risultato sia fra 0 e 1."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio D. Per la categoria elettronica un cliente ha ricevuto 20 offerte, ne ha utilizzate 4, ha speso 500 € nel totale e 125 € in articoli promozionati. Calcolare gli indicatori."
+        },
+        {
+          "worked": [
+            {
+              "text": "redemption rate 4/20 = 20%; sensibilità alle promozioni 125/500 = 25%. Le due percentuali non sono intercambiabili."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio E. Il prezzo è 12 €. Tra 50 clienti, 18 hanno prezzo di riserva almeno pari a 12 €. Ognuno può acquistare al massimo un’unità. Stimare Good Value e ricavi."
+        },
+        {
+          "worked": [
+            {
+              "text": "18/50 = 36%; vendite 18; ricavi = 12×18 = 216 €. La previsione assume che il prezzo di riserva si traduca in acquisto, senza vincoli esterni."
+            }
+          ],
+          "label": "Soluzione"
+        }
+      ],
+      "concept": "Esercizi d’esame commentati e controlli"
+    },
+    {
+      "id": "l22-11",
+      "title": "11. Domande di autoverifica con risposte argomentate",
+      "group": "Lezione 22. Customer metrics: metriche di consumo",
+      "topics": [
+        "mca-c05-t15"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Domanda",
+              "Risposta essenziale"
+            ],
+            [
+              "Perché scontrino medio e spesa media mensile non coincidono?",
+              "Il primo divide per le sessioni; la seconda per il tempo, poi riporta a una finestra di T giorni."
+            ],
+            [
+              "Che cosa significa RSS = 1,8?",
+              "Il peso della categoria nel paniere del cliente è 1,8 volte il peso aggregato di mercato."
+            ],
+            [
+              "Qual è la differenza tra MBV e varianza?",
+              "MBV è entropia normalizzata delle proporzioni per categoria; non è la varianza campionaria."
+            ],
+            [
+              "È lecito calcolare MBV con categorie assenti?",
+              "Sì: termini con p=0 valgono zero per limite. Deve essere definito il numero M di categorie."
+            ],
+            [
+              "Un’elevata spesa promozionale prova la causalità dello sconto?",
+              "No: misura una associazione descrittiva, non un effetto incrementale provato."
+            ],
+            [
+              "Il prezzo massimo pagato è il reservation price?",
+              "Non necessariamente: l’acquisto osservato dà solo un vincolo inferiore sulla disponibilità a pagare."
+            ]
+          ]
+        }
+      ],
+      "concept": "Domande di autoverifica con risposte argomentate"
+    },
+    {
+      "id": "l22-12",
+      "title": "12. Checklist operativa per esercizi quantitativi",
+      "group": "Lezione 22. Customer metrics: metriche di consumo",
+      "topics": [
+        "mca-c05-t15"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "•",
+              "Definire unità di misura, periodo, cliente e categorie prima delle formule."
+            ],
+            [
+              "•",
+              "Distinguere numeri di sessioni, prodotti acquistati e clienti."
+            ],
+            [
+              "•",
+              "Separare benchmark aggregato (rapporto fra somme) da media semplice dei rapporti."
+            ],
+            [
+              "•",
+              "Trasformare le percentuali in frazioni decimali nei calcoli; indicare la scala nel risultato."
+            ]
+          ]
+        },
+        {
+          "table": [
+            [
+              "•",
+              "Controllare che quote di spesa sommino a 1 e che MBV sia fra 0 e 1 (M>1)."
+            ],
+            [
+              "•",
+              "Evitare divisioni per zero e non sostituire gli indici non definiti con zero."
+            ],
+            [
+              "•",
+              "Interpretare l’indice con una frase manageriale, non soltanto con il risultato numerico."
+            ]
+          ]
+        }
+      ],
+      "concept": "Checklist operativa per esercizi quantitativi"
+    },
+    {
+      "id": "l23-1",
+      "title": "1. Perché misurare l’esperienza del cliente?",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t16"
+      ],
+      "blocks": [
+        {
+          "text": "Un’impresa può osservare molte transazioni senza sapere se i clienti considerino soddisfacente ciò che hanno vissuto. Le metriche comportamentali – frequenza, recency, spesa e retention – misurano che cosa il cliente fa; le metriche di esperienza cercano di misurare come il cliente valuta ciò che gli accade. I due livelli non coincidono: si può continuare ad acquistare per mancanza di alternative pur essendo insoddisfatti; viceversa, una persona soddisfatta può non riacquistare perché il bisogno non si ripresenta."
+        },
+        {
+          "text": "La customer experience è l’insieme delle esperienze del cliente lungo la relazione con l’impresa: ricerca, scelta, acquisto, consegna, utilizzo, assistenza e post-vendita. Una singola interazione è un touchpoint; la successione di touchpoint è il customer journey. Occorre definire con precisione se stiamo misurando un singolo contatto, un prodotto oppure la relazione generale con un brand."
+        }
+      ],
+      "concept": "Perché misurare l’esperienza del cliente?"
+    },
+    {
+      "id": "l23-2",
+      "title": "2. Percezioni, aspettative, qualità e soddisfazione",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t16"
+      ],
+      "blocks": [
+        {
+          "text": "Percezione: rappresentazione soggettiva che il cliente si forma su una caratteristica o esperienza. Aspettativa: livello di servizio o risultato che la persona si attende prima dell’esperienza. Performance percepita: valutazione del risultato vissuto. Soddisfazione: giudizio complessivo o specifico sulla misura in cui l’esperienza risponde alle attese e ai bisogni del cliente."
+        },
+        {
+          "text": "Un modello didattico intuitivo confronta performance percepita P e aspettative E: Gap = P − E. Se il gap è positivo l’esperienza supera le aspettative; se è nullo le conferma; se è negativo le disattende. Attenzione: questa differenza non è una formula universale del CSAT e non sostituisce un questionario validato. È uno schema concettuale utile per comprendere la disconferma delle aspettative."
+        },
+        {
+          "text": "Esempio: un cliente valuta rapidità attesa 4,5/5 e rapidità osservata 3,5/5. Gap = 3,5 − 4,5 = −1,0 punti. La rapidità risulta sotto attesa. Se un altro cliente si aspettava 3,0 e osserva 4,0, il gap è +1,0; il medesimo risultato oggettivo potrebbe essere valutato diversamente. Perciò una scala di percezione non equivale a una misura oggettiva del tempo di risposta."
+        },
+        {
+          "text": "La qualità percepita riguarda attributi specifici, come affidabilità, cortesia, rapidità, semplicità e trasparenza; la soddisfazione può sintetizzare la valutazione complessiva. È utile raccogliere entrambi i livelli: un voto globale dice “quanto”, un profilo per attributi aiuta a spiegare “perché”."
+        }
+      ],
+      "concept": "Percezioni, aspettative, qualità e soddisfazione"
+    },
+    {
+      "id": "l23-3",
+      "title": "3. Dalla percezione al dato: questionari e scale di risposta",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t16"
+      ],
+      "blocks": [
+        {
+          "text": "Una metrica di esperienza nasce da una domanda, una scala, una popolazione target e un periodo di rilevazione. Senza questi elementi, confrontare due punteggi può essere scorretto. Esempi di formulazione: «Quanto sei soddisfatto dell’assistenza ricevuta oggi?» (touchpoint) e «Quanto sei soddisfatto complessivamente dell’azienda?» (relazione). Le due domande non misurano esattamente lo stesso costrutto."
+        },
+        {
+          "text": "Scala Esempio Precisazione Likert a 5 punti 1 molto insoddisfatto … 5 molto soddisfatto Risposte ordinali; la media è pratica diffusa ma assume distanze"
+        },
+        {
+          "text": "approssimativamente confrontabili."
+        },
+        {
+          "table": [
+            [
+              "Scala 0–10",
+              "Probabilità dichiarata di raccomandare",
+              "Usata per il quesito NPS: non è una probabilità osservata."
+            ],
+            [
+              "Rating a stelle",
+              "1 … 5 stelle",
+              "Può misurare valutazioni spontanee, spesso selezionate da chi decide di recensire."
+            ],
+            [
+              "Domanda binaria",
+              "Sì/No: esperienza positiva?",
+              "Semplice da interpretare, perde intensità della valutazione."
+            ]
+          ]
+        },
+        {
+          "text": "Dati mancanti e risposte non valide devono essere separati dai giudizi negativi. Non si può trattare l’assenza di risposta come voto zero. Il campione può soffrire di autoselezione, bias di non risposta, desiderabilità sociale, ricordo imperfetto e differenze di composizione fra periodi. Per i confronti manageriali è opportuno controllare il numero dei rispondenti, la percentuale di risposta, il canale di raccolta e la distribuzione dei clienti."
+        }
+      ],
+      "concept": "Dalla percezione al dato: questionari e scale di risposta"
+    },
+    {
+      "id": "l23-4",
+      "title": "4. Customer Satisfaction: media dei voti e CSAT",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t17"
+      ],
+      "blocks": [
+        {
+          "text": "Due misure molto diffuse sono (a) il voto medio e (b) la percentuale di risposte positive. Non sono intercambiabili: raccontano aspetti diversi della distribuzione."
+        },
+        {
+          "text": "Voto medio (scala 1–5): media = (Σ_i n_i · i) / N, dove n_i è il numero di risposte pari al voto i e N è il totale delle risposte valide. La media rimane nell’intervallo [1,5] se i voti sono tutti tra 1 e 5."
+        },
+        {
+          "text": "CSAT top-two-box (scala 1–5) = (n_4 + n_5) / N × 100. È la percentuale di persone che hanno risposto 4 oppure 5. Questa convenzione è descritta dalla metodologia Qualtrics; non va confusa con la media né con un indice generico ottenuto da altre soglie."
+        },
+        {
+          "text": "Esempio svolto: n1=6, n2=12, n3=22, n4=39, n5=41; N=120. Totale punteggi = 6+24+66+156+205 = 457. Media = 457/120 = 3,8083 ≈ 3,81/5. CSAT = (39+41)/120×100 = 66,67%. Pertanto il 66,67% è soddisfatto secondo la soglia scelta, mentre il giudizio medio è 3,81 punti. Un risultato non sostituisce l’altro."
+        },
+        {
+          "image": "mca-p156-1.png",
+          "caption": "Esempio originale: distribuzione dei voti e calcolo del CSAT.",
+          "alt": "Esempio originale: distribuzione dei voti e calcolo del CSAT."
+        },
+        {
+          "text": "Scelta del denominatore. Bisogna indicare se N comprende tutti gli intervistati o soltanto le risposte valide. Se 120 persone rispondono su 150 contattate, il tasso di risposta è 120/150=80%; il CSAT usuale, invece, si calcola sui 120 rispondenti validi. Non sono la stessa metrica."
+        }
+      ],
+      "concept": "Customer Satisfaction: media dei voti e CSAT"
+    },
+    {
+      "id": "l23-5",
+      "title": "5. Customer Satisfaction per attributo e analisi delle priorità",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t18"
+      ],
+      "blocks": [
+        {
+          "text": "Il punteggio globale indica la valutazione sintetica; per scegliere interventi occorre scomporre l’esperienza in attributi, quali affidabilità, prezzo percepito, assistenza e facilità d’uso. Le differenze tra segmenti possono rivelare problemi nascosti dietro una media complessiva."
+        },
+        {
+          "image": "mca-p157-1.png",
+          "caption": "Profilo comparativo originale di rating medi per attributo, due segmenti.",
+          "alt": "Profilo comparativo originale di rating medi per attributo, due segmenti."
+        },
+        {
+          "text": "Un semplice indicatore descrittivo di criticità può essere definito come Gap_j = importanza_j − performance_j, se entrambe le misure usano la stessa scala comparabile. La differenza è una costruzione per analisi manageriale e non un indice standard universale. Un attributo importante ma scarsamente valutato merita approfondimento; le priorità dipendono anche da costi e possibilità reali d’intervento."
+        },
+        {
+          "text": "Esempio: importanza media affidabilità 4,8, performance 4,1, gap +0,7; importanza packaging 2,5, performance 3,0, gap −0,5. Migliorare affidabilità è plausibilmente più urgente, ma il risultato richiede verifiche e non prova una causalità tra rating e acquisti."
+        }
+      ],
+      "concept": "Customer Satisfaction per attributo e analisi delle priorità"
+    },
+    {
+      "id": "l23-6",
+      "title": "6. Willingness to Recommend: significato e limiti",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t19"
+      ],
+      "blocks": [
+        {
+          "text": "Willingness to Recommend (WTR) indica la propensione dichiarata di un cliente a raccomandare il prodotto o il brand. È un giudizio prospettico, non il numero effettivo di raccomandazioni avvenute. La formulazione del quesito, la scala e il contesto sono parte integrante della metrica. Si può riportare la media dei voti oppure la percentuale oltre una soglia dichiarata, ma occorre esplicitare la convenzione adottata."
+        },
+        {
+          "text": "Il Net Promoter Score (NPS) è una specifica trasformazione delle risposte alla domanda di raccomandazione, sviluppata nell’ambito del Net Promoter System. Non è sinonimo di WTR: WTR è il concetto generale, NPS è un indice costruito secondo una regola precisa."
+        }
+      ],
+      "concept": "Willingness to Recommend: significato e limiti"
+    },
+    {
+      "id": "l23-7",
+      "title": "7. Net Promoter Score (NPS): formula, calcolo, interpretazione",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t19"
+      ],
+      "blocks": [
+        {
+          "text": "Scala 0–10: promotori = 9–10; passivi = 7–8; detrattori = 0–6. NPS = % promotori − % detrattori = [(n_promotori − n_detrattori) / N] × 100. L’indice assume valori teorici tra −100 e +100 punti; i passivi entrano nel denominatore ma non nella sottrazione."
+        },
+        {
+          "text": "Esempio svolto: 100 risposte, di cui 50 promotori, 32 passivi e 18 detrattori. NPS = 50% − 18% = +32 punti. Non si deve dire “32% di clienti soddisfatti”: il valore è un saldo di percentuali, espresso convenzionalmente in punti NPS."
+        },
+        {
+          "image": "mca-p157-2.png",
+          "caption": "Classificazione delle risposte NPS in un campione originale di 100 clienti.",
+          "alt": "Classificazione delle risposte NPS in un campione originale di 100 clienti."
+        },
+        {
+          "text": "Controlli essenziali: n_promotori+n_passivi+n_detrattori=N; non confondere le soglie con la scala 1–5 del CSAT; non sottrarre i numeri assoluti quando le numerosità dei campioni sono diverse senza normalizzare. Il confronto nel tempo è sensato soltanto a parità, per quanto possibile, di questionario, campione e metodo di raccolta."
+        },
+        {
+          "text": "Limiti: il punteggio non misura automaticamente raccomandazioni realmente effettuate, non prova che un aumento di NPS provochi un aumento di vendite e può variare tra settori e culture di risposta. È più informativo se accompagnato da domande aperte («Qual è il motivo principale del voto?») e da indicatori di comportamento osservato."
+        }
+      ],
+      "concept": "Net Promoter Score (NPS): formula, calcolo, interpretazione"
+    },
+    {
+      "id": "l23-8",
+      "title": "8. Rating e recensioni: che cosa misurano realmente",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t19"
+      ],
+      "blocks": [
+        {
+          "text": "Un rating è una valutazione sintetica attribuita a un prodotto, venditore o esperienza, spesso sotto forma di stelle. Possiamo calcolare la media semplice R = Σ rating_i/N, ma due prodotti con media identica possono differire per numero di recensioni e dispersione delle valutazioni. Il rating osservato può essere distorto da chi decide spontaneamente di recensire."
+        },
+        {
+          "text": "Esempio: prodotto A: 4,5 stelle su 8 recensioni; prodotto B: 4,5 su 800 recensioni. Il valore medio è uguale, ma l’incertezza e la rappresentatività possono essere molto differenti. È prudente considerare numerosità, varianza, periodo di osservazione e provenienza delle recensioni. Non interpretare la media delle sole recensioni come media certa di tutti i clienti."
+        },
+        {
+          "text": "Rating ponderato: se l’impresa decide pesi w_i, la media ponderata è Σ(w_i r_i)/Σw_i. I pesi devono avere una giustificazione esplicita: non devono essere introdotti dopo aver visto i risultati per ottenere una classifica favorevole."
+        }
+      ],
+      "concept": "Rating e recensioni: che cosa misurano realmente"
+    },
+    {
+      "id": "l23-9",
+      "title": "9. Percezione delle differenze, coinvolgimento, WOM, engagement e virality",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t20"
+      ],
+      "blocks": [
+        {
+          "text": "Le slide del professore includono anche percezione delle differenze, coinvolgimento, word of mouth (passaparola), engagement e virality tra le metriche di esperienza. Questi elementi possono essere misurati con approcci diversi a seconda del contesto; poiché nel prospetto introduttivo delle slide non viene indicata un’unica formula obbligatoria per ciascuno, distinguiamo qui concetti e possibili operazionalizzazioni didattiche."
+        },
+        {
+          "table": [
+            [
+              "Concetto",
+              "Cosa si osserva",
+              "Possibile misura operativa (da definire)"
+            ],
+            [
+              "Percezione delle differenze",
+              "Quanto due offerte sono considerate diverse",
+              "Scala di dissimilarità 1–9 o punteggio per attributo"
+            ],
+            [
+              "Coinvolgimento",
+              "Intensità di attenzione o partecipazione",
+              "Scala dichiarata; interazioni per cliente"
+            ],
+            [
+              "Word of mouth",
+              "Comunicazioni fra persone relative al brand",
+              "Numero di segnalazioni/referral osservati"
+            ],
+            [
+              "Engagement",
+              "Partecipazione e interazione con il brand",
+              "Interazioni / utenti raggiunti, con periodo e canale"
+            ],
+            [
+              "Virality",
+              "Propagazione dei contenuti o delle segnalazioni",
+              "Inviti generati per utente o tasso di condivisione"
+            ]
+          ]
+        },
+        {
+          "text": "Non esiste un confronto corretto tra due “engagement rate” se i denominatori sono diversi (reach, impression, follower, utenti unici). In futuro, nel blocco sulle metriche di awareness, attitude e adoption, definiremo con precisione questi indicatori digitali."
+        }
+      ],
+      "concept": "Percezione delle differenze, coinvolgimento, WOM, engagement e virality"
+    },
+    {
+      "id": "l23-10",
+      "title": "10. Confronto tra le metriche e collegamento con fedeltà e consumo",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t20"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Metrica",
+              "Domanda",
+              "Fonte dei dati",
+              "Precauzione"
+            ],
+            [
+              "CSAT",
+              "Quanto sei soddisfatto?",
+              "Survey post-esperienza",
+              "Dipende dalla scala e dalla soglia"
+            ],
+            [
+              "WTR/NPS",
+              "Lo consiglieresti?",
+              "Survey 0–10",
+              "Propensione non equivale ad azione"
+            ],
+            [
+              "Rating",
+              "Come valuti prodotto/servizio?",
+              "Recensioni o survey",
+              "Bias di selezione e numerosità"
+            ],
+            [
+              "Retention",
+              "Quanti clienti restano?",
+              "Dati longitudinali",
+              "Richiede coorti e periodi coerenti"
+            ],
+            [
+              "Spesa media",
+              "Quanto spendono?",
+              "Transazioni",
+              "Comportamento non equivale a soddisfazione"
+            ]
+          ]
+        },
+        {
+          "text": "Esempio di diagnosi integrata: un servizio registra CSAT 80%, NPS +10, retention 92%. Non c’è contraddizione: molti possono essere soddisfatti dell’ultima interazione, ma relativamente pochi si dichiarano promotori; la retention elevata potrebbe dipendere anche dai costi di cambio. Occorrono dati ulteriori per attribuire le cause."
+        }
+      ],
+      "concept": "Confronto tra le metriche e collegamento con fedeltà e consumo"
+    },
+    {
+      "id": "l23-11",
+      "title": "11. Statistica della misurazione: campioni e incertezza",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t20"
+      ],
+      "blocks": [
+        {
+          "text": "Il CSAT è una proporzione campionaria p̂ . Se il campione è approssimativamente casuale e le risposte sono indipendenti, il suo errore standard approssimato è SE(p̂ )=sqrt[p̂ (1−p̂ )/n]. Per un intervallo di confidenza al 95% si usa spesso la stima approssimata p̂ ±1,96 SE, purché la numerosità sia adeguata. Per piccoli campioni o proporzioni estreme sono preferibili metodi più robusti (come Wilson). Il risultato non elimina bias di campionamento o autoselezione."
+        },
+        {
+          "text": "Esempio: CSAT 80% su n=400; SE=sqrt(0,8×0,2/400)=0,02; margine ≈1,96×0,02=0,0392. Intervallo approssimato: 76,08%–83,92%. Dire “80% esatto nella popolazione” sarebbe ingiustificato."
+        },
+        {
+          "text": "Per un confronto fra gruppi, una differenza osservata non dimostra automaticamente una differenza reale. Servono campioni adeguati, verifiche statistiche e controllo delle differenze nella composizione dei rispondenti. Anche un test significativo non prova la causa della differenza."
+        }
+      ],
+      "concept": "Statistica della misurazione: campioni e incertezza"
+    },
+    {
+      "id": "l23-12",
+      "title": "12. Esercizi d’esame completamente svolti",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t20"
+      ],
+      "blocks": [
+        {
+          "text": "Esercizio 1. CSAT e voto medio. Risposte: 1→4, 2→6, 3→10, 4→20, 5→10. Calcolare N, media, CSAT. Soluzione: N=50; somma voti=4+12+30+80+50=176; media=176/50=3,52; CSAT=(20+10)/50×100=60%. Se le persone invitate erano 100, il response rate è 50%, non 60%."
+        },
+        {
+          "text": "Esercizio 2. NPS. In un campione di 200 clienti: 110 votano 9–10, 60 votano 7–8 e 30 votano 0–6. Soluzione: promotori 55%, passivi 30%, detrattori 15%; NPS=55−15=+40 punti."
+        },
+        {
+          "text": "Esercizio 3. Confronto tra periodi. Periodo A: 90 soddisfatti su 120 rispondenti. Periodo B: 105 soddisfatti su 150."
+        },
+        {
+          "worked": [
+            {
+              "text": "CSAT_A=90/120=75%; CSAT_B=105/150=70%. Pur aumentando il numero dei soddisfatti, l’indice è diminuito di 5 punti percentuali perché è aumentato il numero complessivo delle risposte."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio 4. Rating ponderati. Un prodotto ottiene 20 rating da 5 stelle e 30 rating da 3 stelle."
+        },
+        {
+          "worked": [
+            {
+              "text": "Media = (20×5+30×3)/50=190/50=3,8 stelle. Non è corretto calcolare (5+3)/2=4 senza pesare per le frequenze."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio 5. Gap percezioni/aspettative. Su scala 1–5, le aspettative medie di rapidità e chiarezza sono 4,4 e 4,0; le performance percepite 3,8 e 4,2."
+        },
+        {
+          "worked": [
+            {
+              "text": "gap rapidità=−0,6; gap chiarezza=+0,2. La rapidità è sotto le aspettative e merita approfondimento; non significa automaticamente che sia la causa principale del churn."
+            }
+          ],
+          "label": "Soluzione"
+        }
+      ],
+      "concept": "Esercizi d’esame completamente svolti"
+    },
+    {
+      "id": "l23-13",
+      "title": "13. Domande orali con risposte ragionate",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t20"
+      ],
+      "blocks": [
+        {
+          "text": "DOMANDA: Perché soddisfazione e fedeltà non sono sinonimi?"
+        },
+        {
+          "text": "RISPOSTA: La soddisfazione è un giudizio sull’esperienza; la fedeltà può essere valutata come comportamento di riacquisto, preferenza o intenzione. Un cliente può rimanere per vincoli e non per soddisfazione."
+        },
+        {
+          "text": "DOMANDA: Perché media dei voti e CSAT non coincidono?"
+        },
+        {
+          "text": "RISPOSTA: La media utilizza il valore di tutti i voti; il CSAT top-two-box considera solo la proporzione di voti sopra una soglia specificata. Sono due sintesi diverse della medesima distribuzione."
+        },
+        {
+          "text": "DOMANDA: Che differenza c’è tra WTR e NPS?"
+        },
+        {
+          "text": "RISPOSTA: WTR è la propensione a raccomandare; NPS è un indice ottenuto con una domanda 0–10 e la sottrazione fra percentuali di promotori e detrattori."
+        },
+        {
+          "text": "DOMANDA: Un NPS positivo indica necessariamente una crescita delle vendite?"
+        },
+        {
+          "text": "RISPOSTA: No. È una misura di propensione dichiarata; occorrono dati di vendita e un disegno analitico appropriato per studiarne il rapporto con i risultati economici."
+        },
+        {
+          "text": "DOMANDA: Quali problemi possono distorcere le recensioni online?"
+        },
+        {
+          "text": "RISPOSTA: Autoselezione, differenze tra chi recensisce e chi no, incentivi e possibili recensioni non genuine, variazione della numerosità nel tempo."
+        },
+        {
+          "text": "DOMANDA: Come scegliere tra indicatore globale e valutazioni per attributo?"
+        },
+        {
+          "text": "RISPOSTA: Il globale offre una sintesi confrontabile; gli attributi consentono di identificare aree di forza o criticità. Le due letture sono complementari."
+        }
+      ],
+      "concept": "Domande orali con risposte ragionate"
+    },
+    {
+      "id": "l23-14",
+      "title": "14. Errori ricorrenti e checklist per gli esercizi",
+      "group": "Lezione 23. Metriche di esperienza del cliente",
+      "topics": [
+        "mca-c05-t20"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "•",
+              "Definire unità di analisi (cliente, risposta, interazione) e periodo prima del calcolo."
+            ],
+            [
+              "•",
+              "Esplicitare sempre la scala: 1–5, 0–10 o altra; non mescolare soglie."
+            ],
+            [
+              "•",
+              "Per CSAT distinguere voto medio e percentuale top-two-box."
+            ],
+            [
+              "•",
+              "Nel NPS includere i passivi nel denominatore, non nel saldo."
+            ],
+            [
+              "•",
+              "Distinguere punti percentuali da variazione percentuale relativa."
+            ],
+            [
+              "•",
+              "Un voto medio non descrive necessariamente dispersione e numerosità del campione."
+            ],
+            [
+              "•",
+              "Non assimilare i dati mancanti a risposte negative."
+            ],
+            [
+              "•",
+              "Non attribuire causalità a correlazioni osservazionali tra soddisfazione e retention."
+            ],
+            [
+              "•",
+              "Per indicatori web e social, definire numeratore e denominatore prima dei confronti."
+            ]
+          ]
+        }
+      ],
+      "concept": "Errori ricorrenti e checklist per gli esercizi"
+    },
+    {
+      "id": "l24-intro",
+      "title": "Introduzione alla lezione",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Dalle attività di comunicazione alla scelta d’acquisto: awareness, attitude e adoption."
+        },
+        {
+          "heading": "Obiettivi e metodo di lettura"
+        },
+        {
+          "text": "Al termine saprai distinguere notorietà assistita e spontanea, calcolare reach e CPM, costruire indicatori di atteggiamento e intenzione d’acquisto, usare correttamente tempo di permanenza e CTR, misurare conversioni, redemption, acquisizione e costo di acquisizione e prevedere trial e repeat nel lancio di un nuovo prodotto. Tutti i tassi richiedono un’unità di osservazione (persone, visite, esposizioni, transazioni), un intervallo temporale e una definizione esplicita del denominatore."
+        }
+      ],
+      "concept": "Introduzione alla lezione"
+    },
+    {
+      "id": "l24-1",
+      "title": "1. Il percorso del cliente: awareness → attitude → adoption",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t21"
+      ],
+      "blocks": [
+        {
+          "text": "La notorietà (awareness) descrive se una persona conosce o riconosce un marchio o un messaggio; l’atteggiamento (attitude) riguarda le valutazioni e le intenzioni; l’adozione (adoption) è il comportamento osservabile, come la prova o l’acquisto. Nella stessa impresa possono coesistere clienti in fasi diverse. La progressione è un modello organizzativo: nella realtà gli individui non devono percorrere tutte le fasi in un ordine identico."
+        },
+        {
+          "text": "Nelle slide il professore richiama un modello gerarchico Awareness–Interest/Desire–Adoption, sequenze Think–Feel–Do differenti secondo coinvolgimento e natura cognitiva/emotiva e il percorso Awareness–Trial–Reinforcement. La teoria non autorizza a scambiare una metrica di notorietà con una metrica di acquisto."
+        },
+        {
+          "image": "mca-p160-1.png",
+          "caption": "Esempio inventato: livelli di notorietà e clienti effettivi non sono sinonimi.",
+          "alt": "Esempio inventato: livelli di notorietà e clienti effettivi non sono sinonimi."
+        }
+      ],
+      "concept": "Il percorso del cliente: awareness → attitude → adoption"
+    },
+    {
+      "id": "l24-2",
+      "title": "2. Awareness: la conoscenza del brand",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t21"
+      ],
+      "blocks": [
+        {
+          "text": "2.1 Universo, campionamento e domande"
+        },
+        {
+          "text": "L’awareness viene spesso misurata con indagini su un campione della popolazione obiettivo. Dobbiamo definire il mercato di riferimento (ad esempio adulti residenti in una regione interessati a una categoria), la domanda esatta e se il marchio viene suggerito o richiamato spontaneamente. Se chiediamo a clienti esistenti anziché alla popolazione target, la notorietà risulterà normalmente più alta: il confronto non è valido."
+        },
+        {
+          "text": "2.2 Aided Brand Awareness: notorietà assistita"
+        },
+        {
+          "text": "Il questionario mostra o pronuncia il nome del brand e chiede se è già conosciuto. Nelle slide (p. 1082) il rapporto è Aided Awareness (%) = (risposte positive / intervistati validi) × 100. Può essere anche calcolato un punteggio medio quando la domanda usa una scala numerica; percentuale e media non sono intercambiabili."
+        },
+        {
+          "text": "Esempio: 420 risposte positive su 600 valide danno 420/600 × 100 = 70%. Se i contatti iniziali erano 650 ma 50 risposte sono mancanti, il denominatore delle risposte valide è 600; la scelta di includere i non rispondenti richiede una convenzione dichiarata e non va effettuata tacitamente."
+        },
+        {
+          "text": "2.3 Unaided Awareness, richiamo spontaneo e top of mind"
+        },
+        {
+          "text": "La domanda spontanea non presenta un elenco di marche. Si chiede quali marchi vengono in mente pensando a una categoria. La notorietà spontanea è il numero di intervistati che citano un marchio in qualunque posizione sul totale degli intervistati validi. Il Top of Mind è invece la percentuale che lo menziona per primo. Le due misure non coincidono: la prima può includere la seconda."
+        },
+        {
+          "text": "ATTENZIONE AL LESSICO DELLE SLIDE. A p. 1084 il materiale chiama “Brand Recognition” una misura ricavata da una domanda spontanea di citazione delle marche: nella terminologia di ricerca di mercato più comune, tale operazione si avvicina alla unaided recall; “recognition” è spesso riservata al riconoscimento assistito. Per l’esame impariamo la denominazione della slide ma specifichiamo la formulazione della domanda, evitando ambiguità."
+        },
+        {
+          "text": "Esempio: su 400 persone 240 citano spontaneamente Alfa, 130 lo nominano per primo e 350 lo riconoscono dopo suggerimento. Unaided = 240/400 = 60%; Top of Mind = 130/400 = 32,5%; Aided = 350/400 = 87,5%. Sono livelli diversi di memoria, non parti da sommare."
+        },
+        {
+          "text": "2.4 Awareness media e ranking"
+        },
+        {
+          "text": "Le slide propongono anche un valore medio delle risposte e uno score di ranking. L’interpretazione dipende da come vengono codificate le risposte: ad esempio punteggio 5 alla prima citazione, 3 alla seconda e 1 alla terza. Se si assegna zero a chi non cita il marchio, la media incorpora anche la diffusione; se si considerano solo coloro che lo citano, descrive invece la forza del ricordo tra chi lo conosce. Le regole di codifica vanno dichiarate prima del calcolo."
+        }
+      ],
+      "concept": "Awareness: la conoscenza del brand"
+    },
+    {
+      "id": "l24-3",
+      "title": "3. Metriche della comunicazione: Impression, Reach, Frequenza e CPM",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t22"
+      ],
+      "blocks": [
+        {
+          "text": "Un’impression è una visualizzazione/erogazione dell’annuncio secondo le regole di conteggio della piattaforma: non equivale necessariamente a una persona distinta, a una visione attenta o a un click. Il numero di persone uniche raggiunte è il reach netto; la frequenza media misura quante impression sono attribuite, in media, a ogni persona raggiunta."
+        },
+        {
+          "text": "Relazione delle slide: Net reach = Impression / Frequenza media. Reach (%) = Net reach / Popolazione di riferimento × 100. CPM (€ per mille impression) = Spesa pubblicitaria / (Impression / 1.000)."
+        },
+        {
+          "text": "Esempio completo: una campagna ha 240.000 impression, frequenza media 3 e costo di 1.800 €. Reach netto = 240.000/3 = 80.000 persone; popolazione target 200.000 ⇒ reach = 40%; CPM = 1.800/(240.000/1.000) = 7,50 € per mille. Il CPM misura il costo dell’esposizione e non l’efficacia commerciale."
+        },
+        {
+          "text": "Se l’annuncio ha 240.000 impression ma è visto da 80.000 persone, non si può sostenere che abbia raggiunto 240.000 clienti. Se una persona vede lo stesso messaggio cinque volte, genera cinque impression ma un solo utente raggiunto, a condizione di avere una corretta deduplicazione delle identità."
+        }
+      ],
+      "concept": "Metriche della comunicazione: Impression, Reach, Frequenza e CPM"
+    },
+    {
+      "id": "l24-4",
+      "title": "4. Attitude: atteggiamento e preferenza del consumatore",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t23"
+      ],
+      "blocks": [
+        {
+          "text": "L’atteggiamento è una valutazione del prodotto, marca o esperienza: può essere studiato con giudizi sugli attributi, importanza attribuita alle caratteristiche, gradimento e intenzioni. Non è un comportamento osservato. Nelle slide, in un contesto cognitivo e ad alto coinvolgimento: Attitude = Σ(xᵢ × wᵢ), con xᵢ giudizio sull’attributo i e wᵢ importanza assegnata allo stesso attributo."
+        },
+        {
+          "text": "Esempio: una persona valuta un servizio per affidabilità (8, peso 0,5), semplicità (6, peso 0,3) e prezzo (7, peso 0,2). Attitude = 8×0,5 + 6×0,3 + 7×0,2 = 7,2/10. I pesi sommano 1: se non sommano 1, la somma ponderata non rappresenta automaticamente un voto sulla scala originaria; occorre normalizzare con Σwᵢ. Per attributi “minore è meglio” (come un prezzo numerico), il dato va trasformato in un giudizio coerente prima della ponderazione."
+        },
+        {
+          "text": "4.1 Intenzioni d’acquisto"
+        },
+        {
+          "text": "La domanda tipica è “Con quale probabilità acquisterebbe questo prodotto?”. Nelle slide si possono usare sia una quota di risposte considerate positive sia la media di un punteggio ordinato. Nel caso di categorie “definitivamente sì”, “probabilmente sì”, “incerto”, “probabilmente no”, “definitivamente no”, una codifica comune è 5–1, ma la quota dei positivi richiede di stabilire quali categorie contano come positive."
+        },
+        {
+          "text": "Esempio con 200 rispondenti: 40 “definitivamente sì”, 70 “probabilmente sì”, 30 incerti, 40 “probabilmente no”, 20 “definitivamente no”. Purchase Intentions positivo (top-two-box) = (40+70)/200 = 55%; punteggio medio = (40×5 + 70×4 + 30×3 + 40×2 + 20×1)/200 = 3,35/5. Una risposta “probabilmente sì” non garantisce che avvenga un acquisto."
+        }
+      ],
+      "concept": "Attitude: atteggiamento e preferenza del consumatore"
+    },
+    {
+      "id": "l24-5",
+      "title": "5. Metriche web di interesse: tempo speso, bounce rate e CTR",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t23"
+      ],
+      "blocks": [
+        {
+          "text": "5.1 Tempo speso: tre livelli di analisi"
+        },
+        {
+          "text": "La slide p. 1092 costruisce la durata della visita come differenza tra timestamp di uscita e ingresso; questa formula richiede di avere rilevato entrambe le estremità. Il tempo medio del cliente è la somma delle durate delle sue visite divisa per il numero di visite del cliente. Il tempo medio complessivo per visita divide la durata totale per il numero totale di visite; non equivale necessariamente alla media delle medie dei clienti."
+        },
+        {
+          "text": "Esempio: Cliente A visita 2 volte, 60 e 120 secondi; Cliente B visita 1 volta, 30 secondi. Media A = 90 s, media B = 30 s. Media per visita complessiva = (60+120+30)/3 = 70 s; media semplice dei due clienti = (90+30)/2 = 60 s. I due valori rispondono a domande diverse."
+        },
+        {
+          "text": "Integrazione: Google Analytics 4 misura anche il tempo di coinvolgimento, cioè quando la pagina o app è attiva/in primo piano, diverso dalla differenza grezza tra primo e ultimo timestamp della visita. Questa specifica è della documentazione Google, non delle slide."
+        },
+        {
+          "text": "5.2 Bounce rate: definizione del corso e definizione corrente"
+        },
+        {
+          "text": "Il professore propone: Bounce rate clienti (%) = [numero di clienti con tempo speso inferiore alla soglia T̄ / numero totale di clienti]×100; Bounce rate sessioni (%) = [numero di visite con tempo speso inferiore alla soglia T̄ / numero totale di visite]×100. T̄ è la soglia indicata nel modello; deve essere dichiarata. Negli esercizi basati sulle slide dobbiamo seguire esattamente questa costruzione."
+        },
+        {
+          "text": "Integrazione – GA4: la frequenza di rimbalzo è la quota di sessioni non coinvolte. Una sessione è coinvolta se dura più di 10 secondi, oppure registra un evento chiave, oppure contiene almeno due visualizzazioni di pagina/schermata. Il complemento è l’engagement rate. Si tratta di una definizione diversa dalla soglia di tempo del corso; pertanto i numeri ottenuti dalle due procedure non sono direttamente confrontabili."
+        },
+        {
+          "text": "Esempio secondo le slide: con soglia T̄ = 20 s, 80 sessioni sotto soglia su 500 sessioni danno bounce = 16%. Esempio GA4: se le sessioni non coinvolte sono 125 su 500, bounce = 25%. Non c’è contraddizione aritmetica: cambia il criterio di classificazione."
+        },
+        {
+          "text": "5.3 Click-through Rate (CTR)"
+        },
+        {
+          "formula": "CTR (%) = Click / Impression × 100"
+        },
+        {
+          "text": "Il rapporto misura con quale frequenza le esposizioni dell’annuncio sono seguite da click, secondo la definizione e il perimetro del sistema usato. Esempio: 1.500 click / 75.000 impression = 2%. Un CTR alto non significa che le persone abbiano acquistato; un CTR basso non dimostra necessariamente inefficacia se l’obiettivo della campagna è la notorietà e non il traffico."
+        }
+      ],
+      "concept": "Metriche web di interesse: tempo speso, bounce rate e CTR"
+    },
+    {
+      "id": "l24-6",
+      "title": "6. Adoption: dall’esposizione all’azione",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t24"
+      ],
+      "blocks": [
+        {
+          "text": "Una conversione è un’azione obiettivo misurabile: richiesta preventivo, iscrizione, prova, acquisto. Le slide (p. 1100) mostrano che non esiste un unico denominatore universale: il conversion rate può essere inteso come risultato/attività promozionale, clienti acquistanti/impression oppure trial customers/clienti contattati. Le tre formule misurano stadi distinti e non vanno confuse."
+        },
+        {
+          "table": [
+            [
+              "Fase / metrica",
+              "Formula",
+              "Interpretazione"
+            ],
+            [
+              "CTR",
+              "Click / Impression",
+              "Dalle esposizioni ai click"
+            ],
+            [
+              "Visita per click",
+              "Visite / Click",
+              "Dai click alle visite effettivamente registrate"
+            ],
+            [
+              "TCR",
+              "Clienti che acquistano dopo ingresso / Clienti che entrano nel sito",
+              ""
+            ]
+          ]
+        },
+        {
+          "text": "Dalle visite o persone entrate all’acquisto; definire l’unità"
+        },
+        {
+          "table": [
+            [
+              "Conversione per contatto",
+              "Clienti che compiono l’azione / Clienti contattati",
+              "Efficacia commerciale del contatto"
+            ],
+            [
+              "Conversione per impression",
+              "Utenti acquirenti / Impression",
+              "Tasso per esposizione, distinto dal tasso su visite"
+            ]
+          ]
+        },
+        {
+          "image": "mca-p163-1.png",
+          "caption": "Funnel quantitativo originale. Nota: asse orizzontale logaritmico per rendere confrontabili ordini di grandezza diversi.",
+          "alt": "Funnel quantitativo originale. Nota: asse orizzontale logaritmico per rendere confrontabili ordini di grandezza diversi."
+        },
+        {
+          "text": "Esempio integrato: 40.000 impression, 1.200 click, 1.080 visite, 54 acquisti. CTR=1.200/40.000=3%; conversione per visita=54/1.080=5%; acquisti per click=54/1.200=4,5%; acquisti per impression=54/40.000=0,135%. Si tratta di indicatori tutti corretti, ma riferiti a denominatori diversi. I dati devono riferirsi allo stesso intervallo, con attribution window e regole di deduplicazione coerenti."
+        },
+        {
+          "text": "Integrazione – Google Analytics: le azioni aziendali importanti possono essere marcate come eventi chiave; le conversioni pubblicitarie sono collegate alla misurazione delle campagne. Questo aggiornamento terminologico non modifica le formule didattiche del corso, ma aiuta a leggere i report moderni."
+        }
+      ],
+      "concept": "Adoption: dall’esposizione all’azione"
+    },
+    {
+      "id": "l24-7",
+      "title": "7. Redemption rate e Transaction Conversion Rate",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t24"
+      ],
+      "blocks": [
+        {
+          "text": "Nelle slide,"
+        },
+        {
+          "formula": "Redemption rate = clienti che acquistano in promozione / clienti contattati"
+        },
+        {
+          "text": "è un tasso di risposta alla promozione. In alcuni contesti i coupon sono misurati come buoni riscattati / buoni distribuiti: è una scelta di unità diversa. Quando la traccia specifica “coupon utilizzati” e “coupon distribuiti”, la formula usa necessariamente i coupon e non il numero di clienti distinti."
+        },
+        {
+          "text": "Transaction Conversion Rate (TCR) = clienti che acquistano dopo l’ingresso sul sito / clienti che entrano nel sito"
+        },
+        {
+          "text": "In una misurazione per sessione si può definire invece transazioni / sessioni; occorre esplicitare che non coincide automaticamente con clienti unici acquirenti / visitatori unici."
+        },
+        {
+          "text": "Esempio: 2.000 coupon inviati, 260 utilizzati ⇒ redemption coupon = 13%. In parallelo un sito ha 600 visitatori unici e 42 acquirenti ⇒ TCR per utenti = 42/600 = 7%. Non si possono moltiplicare i due tassi senza aver verificato che descrivano stadi concatenati della stessa popolazione."
+        }
+      ],
+      "concept": "Redemption rate e Transaction Conversion Rate"
+    },
+    {
+      "id": "l24-8",
+      "title": "8. Acquisition rate e costo di acquisizione (CAC/AC)",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t24"
+      ],
+      "blocks": [
+        {
+          "text": "Nelle slide,"
+        },
+        {
+          "formula": "Acquisition rate (%) = nuovi clienti del periodo / clienti presenti a inizio periodo × 100."
+        },
+        {
+          "text": "Esempio: 140 nuovi clienti, 2.000 iniziali ⇒ 7%. La crescita netta della base clienti può essere diversa, perché nel frattempo alcuni clienti potrebbero abbandonare."
+        },
+        {
+          "formula": "Costo di acquisizione nelle slide = spesa delle azioni di marketing / numero di clienti che accettano l’offerta"
+        },
+        {
+          "text": "Se la campagna costa 8.000 € e acquisisce 200 clienti, AC = 40 €/cliente. Se invece i 200 includono clienti esistenti che effettuano un nuovo acquisto, il denominatore non è correttamente definito come “nuovi clienti”."
+        },
+        {
+          "text": "Per una campagna di contatto: AC = (costo per contatto × numero contatti)/(contatti × redemption rate) = costo per contatto / redemption rate, purché il costo totale sia proporzionale ai contatti, il redemption rate sia espresso come numero decimale e ogni risposta idonea sia conteggiata una sola volta. Esempio: 1,20 € per contatto e redemption 3% ⇒ AC = 1,20/0,03 = 40 €. All’aumentare del redemption rate il costo di acquisizione diminuisce a parità di spesa per contatto."
+        },
+        {
+          "text": "Attenzione: il CAC misura un costo e non la profittabilità del cliente. Per decidere se acquisirlo conviene confrontare CAC con margini, retention e Customer Lifetime Value, già studiati nella Lezione 21, tenendo conto delle ipotesi e dell’incertezza."
+        }
+      ],
+      "concept": "Acquisition rate e costo di acquisizione (CAC/AC)"
+    },
+    {
+      "id": "l24-9",
+      "title": "9. Trial rate, Repeat rate e stima della penetrazione",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t25"
+      ],
+      "blocks": [
+        {
+          "text": "TRIAL: clienti che provano per la prima volta un prodotto in un dato periodo. REPEAT: clienti che ripetono l’acquisto, secondo la definizione temporale adottata."
+        },
+        {
+          "text": "Sono grandezze fondamentali soprattutto nelle prime fasi di lancio, quando non basta contare gli acquisti totali per capire se il successo viene da nuove prove oppure da clienti che tornano."
+        },
+        {
+          "text": "Nelle slide:"
+        },
+        {
+          "formula": "Trial rate = Conversion Rate × Brand Awareness × Disponibilità"
+        },
+        {
+          "text": "I fattori sono probabilità o quote espresse in decimali: la formula è un modello moltiplicativo di stima, non una legge universale. La disponibilità viene misurata come quota dei punti vendita che trattano la marca, eventualmente in numero o in valore. Il prodotto dei tassi assume che le probabilità rappresentino passaggi coerenti dello stesso funnel, senza sovrapposizioni o distorsioni. 9.1 Esempio del professore: stima dal questionario"
+        },
+        {
+          "text": "20% risponde “definitely will buy”; 50% “probably will buy”; si assume che l’80% dei definitely e il 30% dei probably acquisteranno. Conversione prevista tra chi valuta l’offerta = 0,20×0,80 + 0,50×0,30 = 0,16 + 0,15 = 0,31 = 31%. Awareness = 6/10 = 0,60; disponibilità = 5/10 = 0,50. Trial rate = 0,31×0,60×0,50 = 0,093 = 9,3%. La stima dipende dalle percentuali di traduzione dell’intenzione in comportamento, che sono ipotesi del modello, non dati garantiti."
+        },
+        {
+          "text": "9.2 Le formule di evoluzione"
+        },
+        {
+          "text": "Trial rate_t = Trial customers_t / Popolazione; Repeat rate_t = Repeat customers_t / Penetration_(t−1). Penetration_t = Trial customers_t + Repeat customers_t = Trial rate_t × Popolazione + Repeat rate_t × Penetration_(t−1). È una dinamica di stima dei clienti attivi/acquirenti del periodo, non necessariamente il numero cumulato di individui distinti che hanno acquistato almeno una volta dalla nascita del prodotto."
+        },
+        {
+          "text": "La distinzione è cruciale: se “penetration” fosse definita come insieme cumulato di tutti i clienti unici mai acquisiti, non si potrebbe sommare indiscriminatamente lo stesso cliente che ripete un acquisto senza una regola di deduplicazione. Qui usiamo la convenzione della formula specifica delle slide."
+        },
+        {
+          "text": "9.3 Esempio delle slide: 4.200.000 famiglie"
+        },
+        {
+          "text": "Proponiamo un mercato geografico con 4.200.000 famiglie, trial rate mensile 9,3% e repeat rate mensile 50%, assumendo frequenza di acquisto una volta al mese. Se il prodotto è nuovo e Penetration_0 = 0: Trial_1 = 4.200.000×0,093 = 390.600 famiglie; Repeat_1 = 0; Penetration_1 = 390.600. Al secondo mese: Trial_2 = 390.600; Repeat_2 = 390.600×0,50 = 195.300; Penetration_2 = 585.900. Nel terzo mese, mantenendo tassi costanti: Repeat_3 = 585.900×0,50 = 292.950; Penetration_3 = 683.550. Attenzione: la formula elementare, se prolungata senza vincoli, può riutilizzare un bacino di trial che nella realtà è progressivamente limitato dal mercato residuo: non applicarla indefinitamente senza correggere le ipotesi."
+        },
+        {
+          "table": [
+            [
+              "Mese",
+              "Trial",
+              "Repeat",
+              "Penetration del periodo"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "390.600",
+              "0",
+              "390.600"
+            ],
+            [
+              "2",
+              "390.600",
+              "195.300",
+              "585.900"
+            ],
+            [
+              "3",
+              "390.600",
+              "292.950",
+              "683.550"
+            ]
+          ]
+        }
+      ],
+      "concept": "Trial rate, Repeat rate e stima della penetrazione"
+    },
+    {
+      "id": "l24-10",
+      "title": "10. Interpretare una campagna: analisi prima/dopo e limiti causali",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t25"
+      ],
+      "blocks": [
+        {
+          "text": "Le slide invitano a confrontare notorietà, intenzione e risultati prima e dopo la campagna. Supponiamo awareness dal 45% al 65% e purchase intention dal 20% al 23%: aumentano entrambe, ma di +20 punti percentuali e +3 punti percentuali rispettivamente. Non è corretto scrivere “awareness +20%” se si intende la differenza in punti percentuali; la crescita relativa sarebbe (65−45)/45 = 44,44%."
+        },
+        {
+          "text": "Un incremento osservato non dimostra di per sé che la campagna lo abbia causato: possono intervenire stagionalità, eventi esterni, sconti, cambiamenti nel campione e concorrenti. In un’analisi più rigorosa si usano gruppi di controllo, randomizzazione o appropriate tecniche quasi-sperimentali. Questo è un approfondimento metodologico, non un modello richiesto nelle slide della lezione."
+        }
+      ],
+      "concept": "Interpretare una campagna: analisi prima/dopo e limiti causali"
+    },
+    {
+      "id": "l24-11",
+      "title": "11. Errori che fanno perdere punti negli esercizi",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t25"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "•",
+              "Non sommare aided, unaided e top of mind: sono misure sovrapposte, non categorie mutuamente esclusive."
+            ],
+            [
+              "•",
+              "Controllare la scala del tasso: 9,3% = 0,093 prima delle moltiplicazioni."
+            ],
+            [
+              "•",
+              "Non confondere impression con persone raggiunte né click con visitatori."
+            ],
+            [
+              "•",
+              "Specificare sempre se il conversion rate è per impression, click, visita, persona o contatto."
+            ],
+            [
+              "•",
+              "Separare la definizione di bounce rate delle slide dalla definizione GA4."
+            ],
+            [
+              "•",
+              "Non prendere la media delle medie per visita se i clienti hanno numeri diversi di visite."
+            ],
+            [
+              "•",
+              "Calcolare il CAC sui nuovi clienti acquisiti, non sulle transazioni."
+            ],
+            [
+              "•",
+              "Evidenziare la regola temporale del repeat rate e non confondere penetrazione cumulata con clienti attivi del periodo."
+            ],
+            [
+              "•",
+              "Non confondere intenzioni dichiarate con quote effettive di acquisto."
+            ],
+            [
+              "•",
+              "Esporre sempre se i dati sono fittizi, ricavati dalle slide o ottenuti da fonti esterne."
+            ]
+          ]
+        }
+      ],
+      "concept": "Errori che fanno perdere punti negli esercizi"
+    },
+    {
+      "id": "l24-12",
+      "title": "12. Esercizi di autovalutazione con soluzioni",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t25"
+      ],
+      "blocks": [
+        {
+          "text": "Esercizio A — Awareness e promozione Tra 500 intervistati 410 riconoscono il marchio, 275 lo citano spontaneamente, 145 lo citano per primo. Calcola le tre metriche e interpreta."
+        },
+        {
+          "worked": [
+            {
+              "text": "aided 410/500=82%; unaided 275/500=55%; top of mind 145/500=29%. La marca è ampiamente riconosciuta, ma una parte importante del pubblico non la richiama spontaneamente; il primo posto nella memoria è ancora più selettivo."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio B — Reach, CPM e CTR Una campagna ha 360.000 impression, frequenza 4, spesa 3.240 €, 7.200 click; il mercato target conta 300.000 persone. Calcola reach, reach %, CPM e CTR."
+        },
+        {
+          "worked": [
+            {
+              "text": "reach=360.000/4=90.000; reach%=90.000/300.000=30%; CPM=3.240/360=9 €; CTR=7.200/360.000=2%. I quattro KPI misurano copertura, efficienza dei costi e risposta all’annuncio, non necessariamente vendite."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio C — Funnel e conversioni Per una campagna si osservano 20.000 impression, 800 click, 700 visite e 35 acquirenti. Calcola CTR, conversione per visita e per impression."
+        },
+        {
+          "worked": [
+            {
+              "text": "CTR=800/20.000=4%; conversione per visita=35/700=5%; conversione per impression=35/20.000=0,175%. Le tre metriche non sono alternative equivalenti: cambia il denominatore."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio D — Costi e redemption Una campagna invia 12.000 offerte al costo di 0,80 € per contatto e ottiene 240 nuovi clienti. Calcola redemption rate e AC, supponendo che non vi siano altri costi."
+        },
+        {
+          "worked": [
+            {
+              "text": "redemption=240/12.000=2%; costo totale=12.000×0,80=9.600 €; AC=9.600/240=40 €; verifica alternativa 0,80/0,02=40 €. Se i costi aggiuntivi esistono, vanno sommati."
+            }
+          ],
+          "label": "Soluzione"
+        },
+        {
+          "text": "Esercizio E — Trial e Repeat In una popolazione di 100.000 famiglie, trial rate mensile 4%, repeat rate mensile 25%, penetrazione iniziale nulla. Stima Penetration_1 e Penetration_2 secondo il modello del professore."
+        },
+        {
+          "worked": [
+            {
+              "text": "Trial_1=0,04×100.000=4.000, Repeat_1=0 ⇒ Penetration_1=4.000. Trial_2=4.000; Repeat_2=0,25×4.000=1.000 ⇒ Penetration_2=5.000 famiglie acquirenti nel secondo periodo secondo la convenzione delle slide."
+            }
+          ],
+          "label": "Soluzione"
+        }
+      ],
+      "concept": "Esercizi di autovalutazione con soluzioni"
+    },
+    {
+      "id": "l24-13",
+      "title": "13. Domande tipiche per la preparazione orale",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t25"
+      ],
+      "blocks": [
+        {
+          "text": "DOMANDA — Perché aided awareness e top of mind non sono sinonimi?"
+        },
+        {
+          "text": "RISPOSTA — La prima rileva riconoscimento con suggerimento; il secondo è richiamo spontaneo come prima marca citata."
+        },
+        {
+          "text": "DOMANDA — Come può una campagna generare molte impression ma poco reach?"
+        },
+        {
+          "text": "RISPOSTA — Perché ripete l’annuncio molte volte sulle stesse persone: la frequenza media è elevata."
+        },
+        {
+          "text": "DOMANDA — Perché un CTR del 5% non dice quanti hanno comprato?"
+        },
+        {
+          "text": "RISPOSTA — Il CTR conta click rispetto a impression, non transazioni; serve un tasso di conversione con denominatore appropriato."
+        },
+        {
+          "text": "DOMANDA — Che differenza esiste tra attitude e adoption?"
+        },
+        {
+          "text": "RISPOSTA — L’attitude è una valutazione o intenzione; l’adoption è un comportamento osservato, come la prova o l’acquisto."
+        },
+        {
+          "text": "DOMANDA — Come si interpreta il CAC rispetto al CLTV?"
+        },
+        {
+          "text": "RISPOSTA — Il CAC è il costo di acquisizione iniziale, mentre il CLTV stima il valore futuro attualizzato della relazione secondo ipotesi su margini, retention e sconto."
+        },
+        {
+          "text": "DOMANDA — Perché il trial rate è un prodotto di tre fattori?"
+        },
+        {
+          "text": "RISPOSTA — Nel modello del corso servono propensione a provare tra gli esposti, awareness e disponibilità distributiva: se manca uno dei fattori, la prova è limitata."
+        },
+        {
+          "text": "DOMANDA — Quando la formula del repeat diventa ingannevole?"
+        },
+        {
+          "text": "RISPOSTA — Se manca una definizione coerente della popolazione di riferimento, si contano più volte le stesse persone o si proietta un tasso costante oltre la saturazione plausibile del mercato."
+        }
+      ],
+      "concept": "Domande tipiche per la preparazione orale"
+    },
+    {
+      "id": "l24-14",
+      "title": "14. Formulario essenziale e unità di misura",
+      "group": "Lezione 24. Metriche di Awareness, Attitude e Adoption",
+      "topics": [
+        "mca-c05-t25"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "KPI",
+              "Formula",
+              "Unità / note"
+            ],
+            [
+              "Aided awareness",
+              "Risposte positive / intervistati validi",
+              "%"
+            ],
+            [
+              "Unaided awareness",
+              "Citazioni spontanee / intervistati validi",
+              "%"
+            ],
+            [
+              "Top of mind",
+              "Prime citazioni / intervistati validi",
+              "%"
+            ],
+            [
+              "Reach netto",
+              "Impression / frequenza media",
+              "Persone"
+            ],
+            [
+              "Reach %",
+              "Reach netto / popolazione",
+              "%"
+            ],
+            [
+              "CPM",
+              "Spesa / (impression/1000)",
+              "€/1000 impression"
+            ],
+            [
+              "CTR",
+              "Click / impression",
+              "%"
+            ],
+            [
+              "Attitude",
+              "Σ giudizio_i × peso_i",
+              "Punteggio; pesi coerenti"
+            ],
+            [
+              "Purchase intentions",
+              "Risposte positive / intervistati",
+              "%"
+            ],
+            [
+              "TCR",
+              "Acquirenti entrati / entrati nel sito",
+              "%"
+            ],
+            [
+              "Redemption",
+              "Acquisti promozionali / contatti",
+              "%"
+            ],
+            [
+              "Acquisition rate",
+              "Nuovi clienti / clienti a inizio periodo",
+              "%"
+            ],
+            [
+              "AC",
+              "Costo azioni / nuovi clienti acquisiti",
+              "€/cliente"
+            ],
+            [
+              "Trial rate",
+              "Conversion × Awareness × Disponibilità",
+              "Quota"
+            ],
+            [
+              "Repeat rate",
+              "Repeat_t / Penetration_(t−1)",
+              "Quota"
+            ],
+            [
+              "Penetration_t",
+              "Trial rate_t × popolazione + Repeat rate_t × Penetration_(t−1)",
+              "Clienti del periodo (modello slide)"
+            ]
+          ]
+        }
+      ],
+      "concept": "Formulario essenziale e unità di misura"
+    }
+  ],
+  "relations": [
+    {
+      "relation": "Dai dati su clienti ed eventi derivano famiglie diverse di metriche",
+      "to": "l20-4",
+      "from": "l20-3"
+    },
+    {
+      "relation": "La quota di acquisti individuale misura una dimensione della fedeltà",
+      "to": "l21-3",
+      "from": "l20-6"
+    },
+    {
+      "relation": "Abbandono e permanenza si confrontano a parità di base e periodo",
+      "to": "l21-6",
+      "from": "l21-5"
+    },
+    {
+      "relation": "La composizione della spesa permette di confrontare cliente e mercato",
+      "to": "l22-5",
+      "from": "l22-4"
+    },
+    {
+      "relation": "Le quote di spesa permettono di misurare la varietà del paniere",
+      "to": "l22-6",
+      "from": "l22-4"
+    },
+    {
+      "relation": "Lo scarto rispetto alle aspettative può essere indagato con misure di soddisfazione",
+      "to": "l23-4",
+      "from": "l23-2"
+    },
+    {
+      "relation": "Notorietà e azione misurano fasi diverse del percorso di acquisizione",
+      "to": "l24-6",
+      "from": "l24-2"
+    }
+  ]
+}

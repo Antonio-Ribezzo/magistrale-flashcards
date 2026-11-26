@@ -2,10 +2,66 @@
   "schemaVersion": 1,
   "subjects": [
     { "id": "cdg", "name": "Controllo di Gestione", "shortName": "Controllo di Gestione", "code": "CDG", "icon": "chart", "accent": "teal", "description": "Costi, budget, performance e strumenti di controllo", "chapters": [
-      {"id":"cdg-c01", "file":"content/subjects/cdg/01-capitolo.json"}
+      {"id":"cdg-c01", "file":"content/subjects/cdg/01-capitolo.json"},
+      {"id":"cdg-c02", "file":"content/subjects/cdg/02-capitolo.json"},
+      {"id":"cdg-c03", "file":"content/subjects/cdg/03-capitolo.json"},
+      {"id":"cdg-c04", "file":"content/subjects/cdg/04-capitolo.json"},
+      {"id":"cdg-c05", "file":"content/subjects/cdg/05-capitolo.json"},
+      {"id":"cdg-c06", "file":"content/subjects/cdg/06-capitolo.json"},
+      {"id":"cdg-c07", "file":"content/subjects/cdg/07-capitolo.json"},
+      {"id":"cdg-c08", "file":"content/subjects/cdg/08-capitolo.json"},
+      {"id":"cdg-c09", "file":"content/subjects/cdg/09-capitolo.json"},
+      {"id":"cdg-c10", "file":"content/subjects/cdg/10-capitolo.json"},
+      {"id":"cdg-c11", "file":"content/subjects/cdg/11-capitolo.json"},
+      {"id":"cdg-c12", "file":"content/subjects/cdg/12-capitolo.json"},
+      {"id":"cdg-c13", "file":"content/subjects/cdg/13-capitolo.json"},
+      {"id":"cdg-c14", "file":"content/subjects/cdg/14-capitolo.json"},
+      {"id":"cdg-c15", "file":"content/subjects/cdg/15-capitolo.json"},
+      {"id":"cdg-c16", "file":"content/subjects/cdg/16-capitolo.json"}
     ] },
-    { "id": "mca", "name": "Marketing e Customer Analytics", "shortName": "Marketing & Analytics", "code": "MCA", "icon": "target", "accent": "purple", "description": "Strategia di marketing, modelli e analisi del cliente", "chapters": [] },
-    { "id": "cyber", "name": "Fondamenti di Cybersecurity", "shortName": "Cybersecurity", "code": "CYB", "icon": "shield", "accent": "orange", "description": "Sicurezza delle reti, sistemi e informazioni", "chapters": [] },
-    { "id": "si", "name": "Sistemi Informativi", "shortName": "Sistemi Informativi", "code": "SI", "icon": "database", "accent": "blue", "description": "Dati, organizzazione e architetture informatiche", "chapters": [] }
+    { "id": "mca", "name": "Marketing e Customer Analytics", "shortName": "Marketing & Analytics", "code": "MCA", "icon": "target", "accent": "purple", "description": "Strategia di marketing, modelli e analisi del cliente", "chapters": [
+      {"id":"mca-c00", "file":"content/subjects/mca/00-capitolo.json"},
+      {"id":"mca-c01", "file":"content/subjects/mca/01-capitolo.json"},
+      {"id":"mca-c02", "file":"content/subjects/mca/02-capitolo.json"},
+      {"id":"mca-c03", "file":"content/subjects/mca/03-capitolo.json"},
+      {"id":"mca-c04", "file":"content/subjects/mca/04-capitolo.json"},
+      {"id":"mca-c05", "file":"content/subjects/mca/05-capitolo.json"},
+      {"id":"mca-c06", "file":"content/subjects/mca/06-capitolo.json"},
+      {"id":"mca-c07", "file":"content/subjects/mca/07-capitolo.json"}
+    ] },
+    { "id": "cyber", "name": "Fondamenti di Cybersecurity", "shortName": "Cybersecurity", "code": "CYB", "icon": "shield", "accent": "orange", "description": "Sicurezza delle reti, sistemi e informazioni", "chapters": [
+      {"id":"cyber-c00", "file":"content/subjects/cyber/00-capitolo.json"},
+      {"id":"cyber-c01", "file":"content/subjects/cyber/01-capitolo.json"},
+      {"id":"cyber-c02", "file":"content/subjects/cyber/02-capitolo.json"},
+      {"id":"cyber-c03", "file":"content/subjects/cyber/03-capitolo.json"},
+      {"id":"cyber-c04", "file":"content/subjects/cyber/04-capitolo.json"},
+      {"id":"cyber-c05", "file":"content/subjects/cyber/05-capitolo.json"},
+      {"id":"cyber-c06", "file":"content/subjects/cyber/06-capitolo.json"},
+      {"id":"cyber-c07", "file":"content/subjects/cyber/07-capitolo.json"},
+      {"id":"cyber-c08", "file":"content/subjects/cyber/08-capitolo.json"},
+      {"id":"cyber-c09", "file":"content/subjects/cyber/09-capitolo.json"},
+      {"id":"cyber-c10", "file":"content/subjects/cyber/10-capitolo.json"},
+      {"id":"cyber-c11", "file":"content/subjects/cyber/11-capitolo.json"},
+      {"id":"cyber-c12", "file":"content/subjects/cyber/12-capitolo.json"},
+      {"id":"cyber-c13", "file":"content/subjects/cyber/13-capitolo.json"}
+    ] },
+    { "id": "si", "name": "Sistemi Informativi", "shortName": "Sistemi Informativi", "code": "SI", "icon": "database", "accent": "blue", "description": "Dati, organizzazione e architetture informatiche", "chapters": [
+      {"id":"si-c01", "file":"content/subjects/si/01-capitolo.json"},
+      {"id":"si-c02", "file":"content/subjects/si/02-capitolo.json"},
+      {"id":"si-c03", "file":"content/subjects/si/03-capitolo.json"},
+      {"id":"si-c04", "file":"content/subjects/si/04-capitolo.json"},
+      {"id":"si-c05", "file":"content/subjects/si/05-capitolo.json"},
+      {"id":"si-c06", "file":"content/subjects/si/06-capitolo.json"},
+      {"id":"si-c07", "file":"content/subjects/si/07-capitolo.json"},
+      {"id":"si-c08", "file":"content/subjects/si/08-capitolo.json"},
+      {"id":"si-c09", "file":"content/subjects/si/09-capitolo.json"},
+      {"id":"si-c10", "file":"content/subjects/si/10-capitolo.json"},
+      {"id":"si-c11", "file":"content/subjects/si/11-capitolo.json"},
+      {"id":"si-c12", "file":"content/subjects/si/12-capitolo.json"},
+      {"id":"si-c13", "file":"content/subjects/si/13-capitolo.json"},
+      {"id":"si-c14", "file":"content/subjects/si/14-capitolo.json"},
+      {"id":"si-c15", "file":"content/subjects/si/15-capitolo.json"},
+      {"id":"si-c16", "file":"content/subjects/si/16-capitolo.json"}
+    ] }
   ]
 }

@@ -1,0 +1,103 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Livelli di protezione e posta sicura",
+      "concept": "Livelli di protezione e posta sicura",
+      "topics": [
+        "cyber-c08-t01",
+        "cyber-c08-t02",
+        "cyber-c08-t03",
+        "cyber-c08-t04"
+      ],
+      "pages": [
+        126,
+        127,
+        128,
+        129
+      ],
+      "blocks": [
+        {
+          "text": "S/MIME può proteggere contenuto e provenienza tramite cifratura, firma e certificati. SPF, DKIM e DMARC operano su identità e policy di dominio nella posta. Per confrontarli individua cosa viene protetto, a quale livello e fra quali punti."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "TLS e HTTPS",
+      "concept": "TLS e HTTPS",
+      "topics": [
+        "cyber-c08-t05",
+        "cyber-c08-t06",
+        "cyber-c08-t07"
+      ],
+      "pages": [
+        130,
+        132
+      ],
+      "blocks": [
+        {
+          "text": "TLS stabilisce i parametri del canale, autentica la parte prevista dal contesto e protegge l’integrità e la riservatezza del trasporto. Con proxy o terminazione TLS, le garanzie valgono per i singoli segmenti del collegamento e vanno ricostruite end-to-end."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "IPsec e VPN",
+      "concept": "IPsec e VPN",
+      "topics": [
+        "cyber-c08-t08",
+        "cyber-c08-t09"
+      ],
+      "pages": [
+        133,
+        134
+      ],
+      "blocks": [
+        {
+          "text": "IPsec protegge traffico a livello di rete. Modalità e associazioni di sicurezza determinano quali pacchetti sono protetti e tra quali endpoint. La scelta si ragiona a partire dal perimetro e dal modello di fiducia richiesti."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Autenticazione di rete e autorizzazione delegata",
+      "concept": "Autenticazione di rete e autorizzazione delegata",
+      "topics": [
+        "cyber-c08-t10",
+        "cyber-c08-t11",
+        "cyber-c08-t12",
+        "cyber-c08-t13",
+        "cyber-c08-t14"
+      ],
+      "pages": [
+        135,
+        137,
+        138,
+        139
+      ],
+      "blocks": [
+        {
+          "text": "Kerberos usa ticket entro un dominio di fiducia, RADIUS supporta architetture AAA e OAuth disciplina l’accesso delegato. OIDC aggiunge un livello di identità. Confronta sempre ruolo degli attori, oggetto trasmesso e garanzie attese."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "1",
+      "to": "2",
+      "relation": "La posta e il Web mostrano che contenuto e canale hanno confini diversi."
+    },
+    {
+      "from": "2",
+      "to": "3",
+      "relation": "La protezione a livello di rete offre un perimetro diverso da TLS."
+    },
+    {
+      "from": "2",
+      "to": "4",
+      "relation": "Proteggere il trasporto e prendere una decisione di identità sono compiti distinti."
+    }
+  ]
+}

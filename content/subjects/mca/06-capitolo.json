@@ -1,0 +1,3391 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "mca",
+  "source": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6: Regression Analysis; Lezioni 25–28, pagine PDF 168–191; Appendice E, pagina PDF 194. Fonte unica autorizzata.",
+  "chapter": {
+    "id": "mca-c06",
+    "title": "Regression Analysis: correlazione, OLS, trend, sensibilità al prezzo e Conjoint Analysis",
+    "order": 6,
+    "topics": [
+      {
+        "id": "mca-c06-t01",
+        "title": "Customer Analytics, associazione e causalità"
+      },
+      {
+        "id": "mca-c06-t02",
+        "title": "Matrice dati, scatter plot e descrizione statistica"
+      },
+      {
+        "id": "mca-c06-t03",
+        "title": "Covarianza e correlazione di Pearson"
+      },
+      {
+        "id": "mca-c06-t04",
+        "title": "Esempio di correlazione su sei clienti"
+      },
+      {
+        "id": "mca-c06-t05",
+        "title": "Regressione semplice e parametri del modello"
+      },
+      {
+        "id": "mca-c06-t06",
+        "title": "Metodo OLS, residui e primo esempio"
+      },
+      {
+        "id": "mca-c06-t07",
+        "title": "Assunzioni, verifiche e domande di regressione"
+      },
+      {
+        "id": "mca-c06-t08",
+        "title": "Derivazione delle equazioni normali e proprietà OLS"
+      },
+      {
+        "id": "mca-c06-t09",
+        "title": "Esercizio integrale OLS a sei clienti"
+      },
+      {
+        "id": "mca-c06-t10",
+        "title": "SST, SSR, SSE e coefficiente R²"
+      },
+      {
+        "id": "mca-c06-t11",
+        "title": "Metriche di errore: MSE, RMSE, MAE e RSE"
+      },
+      {
+        "id": "mca-c06-t12",
+        "title": "Diagnostica: linearità, errori e omoschedasticità"
+      },
+      {
+        "id": "mca-c06-t13",
+        "title": "Outlier, leverage, influenza, previsione e test"
+      },
+      {
+        "id": "mca-c06-t14",
+        "title": "Regressione multipla, R² aggiustato e procedura d’esame"
+      },
+      {
+        "id": "mca-c06-t15",
+        "title": "Trend temporale e costruzione delle serie clienti"
+      },
+      {
+        "id": "mca-c06-t16",
+        "title": "Tre clienti: frequenza, variabilità e tendenza"
+      },
+      {
+        "id": "mca-c06-t17",
+        "title": "Spesa condizionata e periodi a zero"
+      },
+      {
+        "id": "mca-c06-t18",
+        "title": "Sensibilità al prezzo e classi di prezzo"
+      },
+      {
+        "id": "mca-c06-t19",
+        "title": "Prezzo: frequenze, probabilità, elasticità e cautele"
+      },
+      {
+        "id": "mca-c06-t20",
+        "title": "Esercizi e interpretazione dei trend e della sensibilità"
+      },
+      {
+        "id": "mca-c06-t21",
+        "title": "Conjoint: attributi, livelli e utilità additiva"
+      },
+      {
+        "id": "mca-c06-t22",
+        "title": "Conjoint: dummy e procedura di rilevazione"
+      },
+      {
+        "id": "mca-c06-t23",
+        "title": "Esempio ufficiale: automobili Lexus e Infiniti"
+      },
+      {
+        "id": "mca-c06-t24",
+        "title": "Esempio ufficiale: scarpe e coefficienti part-worth"
+      },
+      {
+        "id": "mca-c06-t25",
+        "title": "Importanza relativa e limiti interpretativi della conjoint"
+      },
+      {
+        "id": "mca-c06-t26",
+        "title": "Prezzo di riserva e funzione di utilità"
+      },
+      {
+        "id": "mca-c06-t27",
+        "title": "WTP, CBC e metodi di rilevazione"
+      },
+      {
+        "id": "mca-c06-t28",
+        "title": "Esercizi conclusivi e revisione scientifica del capitolo"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "Lezione 25, §1 — pagina PDF 168",
+        "cardIds": [
+          "mca-c06-q001",
+          "mca-c06-q002",
+          "mca-c06-q003"
+        ]
+      },
+      {
+        "label": "Lezione 25, §2 — pagina PDF 168",
+        "cardIds": [
+          "mca-c06-q004",
+          "mca-c06-q005",
+          "mca-c06-q006"
+        ]
+      },
+      {
+        "label": "Lezione 25, §3 — pagina PDF 168",
+        "cardIds": [
+          "mca-c06-q007",
+          "mca-c06-q008"
+        ]
+      },
+      {
+        "label": "Lezione 25, §4 — pagina PDF 169",
+        "cardIds": [
+          "mca-c06-q009",
+          "mca-c06-q010"
+        ]
+      },
+      {
+        "label": "Lezione 25, §5 — pagina PDF 169",
+        "cardIds": [
+          "mca-c06-q011",
+          "mca-c06-q012",
+          "mca-c06-q013",
+          "mca-c06-q014"
+        ]
+      },
+      {
+        "label": "Lezione 25, §6 — pagina PDF 169",
+        "cardIds": [
+          "mca-c06-q015",
+          "mca-c06-q016",
+          "mca-c06-q017"
+        ]
+      },
+      {
+        "label": "Lezione 25, §7 — pagina PDF 170",
+        "cardIds": [
+          "mca-c06-q018",
+          "mca-c06-q019",
+          "mca-c06-q020"
+        ]
+      },
+      {
+        "label": "Lezione 25, §8 — pagina PDF 170",
+        "cardIds": [
+          "mca-c06-q021",
+          "mca-c06-q022",
+          "mca-c06-q023"
+        ]
+      },
+      {
+        "label": "Lezione 25, §9 — pagina PDF 170",
+        "cardIds": [
+          "mca-c06-q024",
+          "mca-c06-q025",
+          "mca-c06-q026",
+          "mca-c06-q027"
+        ]
+      },
+      {
+        "label": "Lezione 25, §10 — pagina PDF 171",
+        "cardIds": [
+          "mca-c06-q028",
+          "mca-c06-q029",
+          "mca-c06-q030"
+        ]
+      },
+      {
+        "label": "Lezione 25, §11 — pagina PDF 172",
+        "cardIds": [
+          "mca-c06-q031",
+          "mca-c06-q032"
+        ]
+      },
+      {
+        "label": "Lezione 25, §12 — pagina PDF 172",
+        "cardIds": [
+          "mca-c06-q033",
+          "mca-c06-q034"
+        ]
+      },
+      {
+        "label": "Lezione 25, §13 — pagina PDF 172",
+        "cardIds": [
+          "mca-c06-q035",
+          "mca-c06-q036",
+          "mca-c06-q037"
+        ]
+      },
+      {
+        "label": "Lezione 25, §14 — pagina PDF 172",
+        "cardIds": [
+          "mca-c06-q038"
+        ]
+      },
+      {
+        "label": "Lezione 26, §1 — pagina PDF 173",
+        "cardIds": [
+          "mca-c06-q039"
+        ]
+      },
+      {
+        "label": "Lezione 26, §2 — pagina PDF 173",
+        "cardIds": [
+          "mca-c06-q040",
+          "mca-c06-q041"
+        ]
+      },
+      {
+        "label": "Lezione 26, §3 — pagina PDF 173",
+        "cardIds": [
+          "mca-c06-q042",
+          "mca-c06-q043"
+        ]
+      },
+      {
+        "label": "Lezione 26, §4 — pagina PDF 174",
+        "cardIds": [
+          "mca-c06-q044",
+          "mca-c06-q045",
+          "mca-c06-q046",
+          "mca-c06-q047",
+          "mca-c06-q048",
+          "mca-c06-q049"
+        ]
+      },
+      {
+        "label": "Lezione 26, §5 — pagina PDF 174",
+        "cardIds": [
+          "mca-c06-q050",
+          "mca-c06-q051",
+          "mca-c06-q052"
+        ]
+      },
+      {
+        "label": "Lezione 26, §6 — pagina PDF 174",
+        "cardIds": [
+          "mca-c06-q053",
+          "mca-c06-q054",
+          "mca-c06-q055",
+          "mca-c06-q056"
+        ]
+      },
+      {
+        "label": "Lezione 26, §7 — pagina PDF 175",
+        "cardIds": [
+          "mca-c06-q057",
+          "mca-c06-q058",
+          "mca-c06-q059"
+        ]
+      },
+      {
+        "label": "Lezione 26, §8 — pagina PDF 175",
+        "cardIds": [
+          "mca-c06-q060",
+          "mca-c06-q061",
+          "mca-c06-q062"
+        ]
+      },
+      {
+        "label": "Lezione 26, §9 — pagina PDF 175",
+        "cardIds": [
+          "mca-c06-q063",
+          "mca-c06-q064",
+          "mca-c06-q065",
+          "mca-c06-q066",
+          "mca-c06-q067"
+        ]
+      },
+      {
+        "label": "Lezione 26, §10 — pagina PDF 176",
+        "cardIds": [
+          "mca-c06-q068",
+          "mca-c06-q069",
+          "mca-c06-q070",
+          "mca-c06-q071",
+          "mca-c06-q072",
+          "mca-c06-q073"
+        ]
+      },
+      {
+        "label": "Lezione 26, §11 — pagina PDF 176",
+        "cardIds": [
+          "mca-c06-q074",
+          "mca-c06-q075",
+          "mca-c06-q076"
+        ]
+      },
+      {
+        "label": "Lezione 26, §12 — pagina PDF 177",
+        "cardIds": [
+          "mca-c06-q077",
+          "mca-c06-q078",
+          "mca-c06-q079"
+        ]
+      },
+      {
+        "label": "Lezione 26, §13 — pagina PDF 177",
+        "cardIds": [
+          "mca-c06-q080",
+          "mca-c06-q081",
+          "mca-c06-q082"
+        ]
+      },
+      {
+        "label": "Lezione 26, §14 — pagina PDF 177",
+        "cardIds": [
+          "mca-c06-q083",
+          "mca-c06-q084",
+          "mca-c06-q085"
+        ]
+      },
+      {
+        "label": "Lezione 26, §15 — pagina PDF 177",
+        "cardIds": [
+          "mca-c06-q086",
+          "mca-c06-q087"
+        ]
+      },
+      {
+        "label": "Lezione 26, §16 — pagina PDF 178",
+        "cardIds": [
+          "mca-c06-q088",
+          "mca-c06-q089",
+          "mca-c06-q090",
+          "mca-c06-q091"
+        ]
+      },
+      {
+        "label": "Lezione 26, §17 — pagina PDF 178",
+        "cardIds": [
+          "mca-c06-q092"
+        ]
+      },
+      {
+        "label": "Lezione 26, §18 — pagina PDF 178",
+        "cardIds": [
+          "mca-c06-q093"
+        ]
+      },
+      {
+        "label": "Lezione 27, §1 — pagina PDF 179",
+        "cardIds": [
+          "mca-c06-q094",
+          "mca-c06-q095"
+        ]
+      },
+      {
+        "label": "Lezione 27, §2 — pagina PDF 179",
+        "cardIds": [
+          "mca-c06-q096",
+          "mca-c06-q097",
+          "mca-c06-q098"
+        ]
+      },
+      {
+        "label": "Lezione 27, §3 — pagina PDF 179",
+        "cardIds": [
+          "mca-c06-q099",
+          "mca-c06-q100",
+          "mca-c06-q101"
+        ]
+      },
+      {
+        "label": "Lezione 27, §4 — pagina PDF 180",
+        "cardIds": [
+          "mca-c06-q102",
+          "mca-c06-q103",
+          "mca-c06-q104",
+          "mca-c06-q105",
+          "mca-c06-q106"
+        ]
+      },
+      {
+        "label": "Lezione 27, §5 — pagina PDF 180",
+        "cardIds": [
+          "mca-c06-q107",
+          "mca-c06-q108"
+        ]
+      },
+      {
+        "label": "Lezione 27, §6 — pagina PDF 181",
+        "cardIds": [
+          "mca-c06-q109",
+          "mca-c06-q110",
+          "mca-c06-q111",
+          "mca-c06-q112",
+          "mca-c06-q113"
+        ]
+      },
+      {
+        "label": "Lezione 27, §7 — pagina PDF 182",
+        "cardIds": [
+          "mca-c06-q114",
+          "mca-c06-q115"
+        ]
+      },
+      {
+        "label": "Lezione 27, §8 — pagina PDF 182",
+        "cardIds": [
+          "mca-c06-q116",
+          "mca-c06-q117",
+          "mca-c06-q118",
+          "mca-c06-q119",
+          "mca-c06-q120"
+        ]
+      },
+      {
+        "label": "Lezione 27, §9 — pagina PDF 183",
+        "cardIds": [
+          "mca-c06-q121",
+          "mca-c06-q122"
+        ]
+      },
+      {
+        "label": "Lezione 27, §10 — pagina PDF 183",
+        "cardIds": [
+          "mca-c06-q123",
+          "mca-c06-q124"
+        ]
+      },
+      {
+        "label": "Lezione 27, §11 — pagina PDF 183",
+        "cardIds": [
+          "mca-c06-q125",
+          "mca-c06-q126"
+        ]
+      },
+      {
+        "label": "Lezione 27, §12 — pagina PDF 183",
+        "cardIds": [
+          "mca-c06-q127",
+          "mca-c06-q128",
+          "mca-c06-q129"
+        ]
+      },
+      {
+        "label": "Lezione 27, §13 — pagina PDF 184",
+        "cardIds": [
+          "mca-c06-q130"
+        ]
+      },
+      {
+        "label": "Lezione 27, §14 — pagina PDF 184",
+        "cardIds": [
+          "mca-c06-q131",
+          "mca-c06-q132",
+          "mca-c06-q133",
+          "mca-c06-q134"
+        ]
+      },
+      {
+        "label": "Lezione 27, §15 — pagina PDF 184",
+        "cardIds": [
+          "mca-c06-q135"
+        ]
+      },
+      {
+        "label": "Lezione 27, §16 — pagina PDF 185",
+        "cardIds": [
+          "mca-c06-q136"
+        ]
+      },
+      {
+        "label": "Lezione 28, §1 — pagina PDF 185",
+        "cardIds": [
+          "mca-c06-q137",
+          "mca-c06-q138"
+        ]
+      },
+      {
+        "label": "Lezione 28, §2 — pagina PDF 185",
+        "cardIds": [
+          "mca-c06-q139",
+          "mca-c06-q140"
+        ]
+      },
+      {
+        "label": "Lezione 28, §3 — pagina PDF 185",
+        "cardIds": [
+          "mca-c06-q141",
+          "mca-c06-q142",
+          "mca-c06-q143"
+        ]
+      },
+      {
+        "label": "Lezione 28, §4 — pagina PDF 186",
+        "cardIds": [
+          "mca-c06-q144",
+          "mca-c06-q145",
+          "mca-c06-q146"
+        ]
+      },
+      {
+        "label": "Lezione 28, §5 — pagina PDF 186",
+        "cardIds": [
+          "mca-c06-q147",
+          "mca-c06-q148",
+          "mca-c06-q149",
+          "mca-c06-q150"
+        ]
+      },
+      {
+        "label": "Lezione 28, §6 — pagina PDF 186",
+        "cardIds": [
+          "mca-c06-q151",
+          "mca-c06-q152",
+          "mca-c06-q153",
+          "mca-c06-q154",
+          "mca-c06-q155"
+        ]
+      },
+      {
+        "label": "Lezione 28, §7 — pagina PDF 186",
+        "cardIds": [
+          "mca-c06-q156",
+          "mca-c06-q157"
+        ]
+      },
+      {
+        "label": "Lezione 28, §7 — pagina PDF 187",
+        "cardIds": [
+          "mca-c06-q158",
+          "mca-c06-q159",
+          "mca-c06-q160",
+          "mca-c06-q161",
+          "mca-c06-q162",
+          "mca-c06-q163"
+        ]
+      },
+      {
+        "label": "Lezione 28, §8 — pagina PDF 188",
+        "cardIds": [
+          "mca-c06-q164",
+          "mca-c06-q165",
+          "mca-c06-q166"
+        ]
+      },
+      {
+        "label": "Lezione 28, §9 — pagina PDF 188",
+        "cardIds": [
+          "mca-c06-q167",
+          "mca-c06-q168",
+          "mca-c06-q169"
+        ]
+      },
+      {
+        "label": "Lezione 28, §10 — pagina PDF 188",
+        "cardIds": [
+          "mca-c06-q170",
+          "mca-c06-q171"
+        ]
+      },
+      {
+        "label": "Lezione 28, §11 — pagina PDF 188",
+        "cardIds": [
+          "mca-c06-q172",
+          "mca-c06-q173"
+        ]
+      },
+      {
+        "label": "Lezione 28, §12 — pagina PDF 189",
+        "cardIds": [
+          "mca-c06-q174",
+          "mca-c06-q175"
+        ]
+      },
+      {
+        "label": "Lezione 28, §13 — pagina PDF 189",
+        "cardIds": [
+          "mca-c06-q176",
+          "mca-c06-q177",
+          "mca-c06-q178"
+        ]
+      },
+      {
+        "label": "Lezione 28, §14 — pagina PDF 189",
+        "cardIds": [
+          "mca-c06-q179",
+          "mca-c06-q180",
+          "mca-c06-q181"
+        ]
+      },
+      {
+        "label": "Lezione 28, §15 — pagina PDF 190",
+        "cardIds": [
+          "mca-c06-q182",
+          "mca-c06-q183",
+          "mca-c06-q184",
+          "mca-c06-q185",
+          "mca-c06-q186"
+        ]
+      },
+      {
+        "label": "Lezione 28, §16 — pagina PDF 190",
+        "cardIds": [
+          "mca-c06-q187"
+        ]
+      },
+      {
+        "label": "Lezione 28, §17 — pagina PDF 191",
+        "cardIds": [
+          "mca-c06-q188"
+        ]
+      },
+      {
+        "label": "Lezione 28, §Appendice E — pagina PDF 194",
+        "cardIds": [
+          "mca-c06-q189",
+          "mca-c06-q190",
+          "mca-c06-q191",
+          "mca-c06-q192"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "mca-c06-q001",
+      "topicId": "mca-c06-t01",
+      "question": "Perché la Customer Analytics introduce la regressione dopo le metriche descrittive?",
+      "answer": "Per studiare associazioni tra variabili, costruire previsioni e formulare ipotesi da verificare.",
+      "detail": "Frequency, recency e spesa descrivono ciò che si osserva; la regressione studia come la risposta Y cambia al variare di un predittore X. È uno strumento per problemi commerciali quali spesa-visite e sensibilità ai prezzi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 5 — metriche del cliente"
+      ],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §1, pagina PDF 168"
+    },
+    {
+      "id": "mca-c06-q002",
+      "topicId": "mca-c06-t01",
+      "question": "Quale differenza fondamentale esiste fra associazione statistica e causalità?",
+      "answer": "Due variabili possono variare insieme senza che una provochi la variazione dell’altra.",
+      "detail": "La spesa e il numero di visite possono essere influenzati da reddito, stagionalità, promozioni o altre variabili; correlazione e regressione osservazionale non isolano da sole un effetto causale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare il coefficiente di regressione come effetto certo di un intervento manageriale.",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §1, pagina PDF 168"
+    },
+    {
+      "id": "mca-c06-q003",
+      "topicId": "mca-c06-t01",
+      "question": "Quali domande applicative motiva la regressione nel manuale?",
+      "answer": "Relazione spesa-visite, età-spesa, andamento della spesa nel tempo e risposta della domanda al prezzo.",
+      "detail": "Ogni caso impone di specificare variabile esplicativa, risposta, unità statistica e periodo, invece di osservare semplicemente una media aggregata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §1, pagina PDF 168"
+    },
+    {
+      "id": "mca-c06-q004",
+      "topicId": "mca-c06-t02",
+      "question": "Che cosa rappresentano X, Y e l’indice i nelle coppie (xᵢ,yᵢ)?",
+      "answer": "X è il predittore, Y la risposta, i identifica la singola unità osservata tra le n unità.",
+      "detail": "Ogni coppia è rilevata sulla stessa persona, famiglia, visita, negozio o periodo. Nel caso didattico X è il numero di visite mensili e Y la spesa in euro nello stesso mese.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "(x_i,y_i),\\quad i=1,\\ldots,n",
+          "meaning": "X è il predittore, Y la risposta, i identifica la singola unità osservata tra le n unità."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §2, pagina PDF 168"
+    },
+    {
+      "id": "mca-c06-q005",
+      "topicId": "mca-c06-t02",
+      "question": "Che cosa NON implica chiamare X «variabile indipendente» e Y «dipendente»?",
+      "answer": "Non implica né indipendenza probabilistica né causalità: indica soltanto il ruolo attribuito alle variabili nel modello.",
+      "detail": "Cambiare il ruolo di X e Y cambia il problema di regressione; è necessario distinguere terminologia modellistica e conclusioni scientifiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §2, pagina PDF 168"
+    },
+    {
+      "id": "mca-c06-q006",
+      "topicId": "mca-c06-t02",
+      "question": "Quali sei osservazioni compongono l’esempio didattico visite-spesa?",
+      "answer": "C1–C6: (1,12), (2,15), (3,14), (4,19), (5,22), (6,24); visite X e spesa mensile Y in euro.",
+      "detail": "Il dataset ha n=6, X da 1 a 6 e mostra una relazione complessivamente crescente, ma non perfettamente allineata. Le stesse osservazioni sono riprese nella Lezione 26.",
+      "example": "Con 3 visite C3 spende 14 €, meno dei 15 € di C2 che ha 2 visite.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §2, pagina PDF 168"
+    },
+    {
+      "id": "mca-c06-q007",
+      "topicId": "mca-c06-t02",
+      "question": "Che cos’è uno scatter plot e quali elementi bisogna osservare?",
+      "answer": "Un diagramma che rappresenta ogni osservazione (X,Y) come un punto; si osservano verso, forma, dispersione, gruppi e outlier.",
+      "detail": "Il grafico va letto prima di calcolare la correlazione perché una singola sintesi numerica può nascondere relazioni curve o sottogruppi con comportamenti differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §3, pagina PDF 168"
+    },
+    {
+      "id": "mca-c06-q008",
+      "topicId": "mca-c06-t02",
+      "question": "Come si distinguono relazioni positive, negative e apparentemente deboli in uno scatter plot?",
+      "answer": "Positiva: Y tende a salire con X; negativa: Y tende a scendere; debole: manca una tendenza lineare evidente.",
+      "detail": "L’associazione può essere forte ma curvilinea, producendo una bassa correlazione di Pearson: «poco lineare» non significa «senza relazione».",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §3, pagina PDF 168"
+    },
+    {
+      "id": "mca-c06-q009",
+      "topicId": "mca-c06-t02",
+      "question": "Come si calcolano media e scarto dalla media, e quale proprietà hanno gli scarti?",
+      "answer": "Media x̄=Σxᵢ/n; scarto xᵢ−x̄; la somma degli scarti è zero.",
+      "detail": "Uno scarto positivo indica valore sopra la media, uno negativo sotto. Questa proprietà è usata nelle equazioni normali OLS.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\bar x=\\frac{1}{n}\\sum_i x_i;\\quad\\sum_i(x_i-\\bar x)=0",
+          "meaning": "Media x̄=Σxᵢ/n; scarto xᵢ−x̄; la somma degli scarti è zero."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §4, pagina PDF 169"
+    },
+    {
+      "id": "mca-c06-q010",
+      "topicId": "mca-c06-t02",
+      "question": "Qual è la differenza fra varianza di popolazione e varianza campionaria?",
+      "answer": "La prima divide la somma degli scarti quadratici per N; la seconda usa n−1 per stimare la varianza di una popolazione non interamente osservata.",
+      "detail": "La deviazione standard è la radice della varianza e torna alle unità originali. Nelle formule di Pearson e di b OLS le convenzioni n e n−1 si semplificano se applicate coerentemente.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\sigma_X^2=\\frac{\\sum(x_i-\\mu)^2}{N};\\quad s_X^2=\\frac{\\sum(x_i-\\bar x)^2}{n-1}",
+          "meaning": "La prima divide la somma degli scarti quadratici per N; la seconda usa n−1 per stimare la varianza di una popolazione non interamente osservata."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §4, pagina PDF 169"
+    },
+    {
+      "id": "mca-c06-q011",
+      "topicId": "mca-c06-t03",
+      "question": "Che cosa misura la covarianza e come si interpreta il segno?",
+      "answer": "La variazione congiunta di X e Y: positiva se tendono a scostarsi nello stesso verso dalle medie, negativa se in versi opposti.",
+      "detail": "Covarianza vicina a zero indica assenza di associazione lineare apprezzabile, ma non esclude legami curvilinei.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\operatorname{Cov}(X,Y)=\\frac{1}{N}\\sum_i(x_i-\\mu_X)(y_i-\\mu_Y)",
+          "meaning": "La variazione congiunta di X e Y: positiva se tendono a scostarsi nello stesso verso dalle medie, negativa se in versi opposti."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §5, pagina PDF 169"
+    },
+    {
+      "id": "mca-c06-q012",
+      "topicId": "mca-c06-t03",
+      "question": "Come si calcola la covarianza campionaria e in cosa differisce dalla popolazione?",
+      "answer": "Si sommano i prodotti degli scarti dalla media e si divide per n−1, anziché per N.",
+      "detail": "Le medie campionarie x̄ e ȳ sostituiscono le medie teoriche. Il rapporto Cov(X,Y)/Var(X) richiede la stessa convenzione nei due termini.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "s_{XY}=\\frac{\\sum_i(x_i-\\bar x)(y_i-\\bar y)}{n-1}",
+          "meaning": "Si sommano i prodotti degli scarti dalla media e si divide per n−1, anziché per N."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §5, pagina PDF 169"
+    },
+    {
+      "id": "mca-c06-q013",
+      "topicId": "mca-c06-t03",
+      "question": "Perché non si usa il valore assoluto della covarianza per confrontare la forza di associazioni diverse?",
+      "answer": "Perché dipende dalle unità e dalla scala delle variabili.",
+      "detail": "Convertendo Y da euro a centesimi, la covarianza numerica si moltiplica per 100 senza che cambi il legame sostanziale. Pearson normalizza il problema.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che una covarianza pari a 50 è sempre «più forte» di una pari a 5.",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §5, pagina PDF 169"
+    },
+    {
+      "id": "mca-c06-q014",
+      "topicId": "mca-c06-t03",
+      "question": "Qual è la covarianza di X con sé stessa?",
+      "answer": "È la varianza della variabile X.",
+      "detail": "Il prodotto degli scarti (xᵢ−x̄)(xᵢ−x̄) è uno scarto quadrato; restando coerenti con il divisore, Cov(X,X)=Var(X).",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\operatorname{Cov}(X,X)=\\operatorname{Var}(X)",
+          "meaning": "È la varianza della variabile X."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §5, pagina PDF 169"
+    },
+    {
+      "id": "mca-c06-q015",
+      "topicId": "mca-c06-t03",
+      "question": "Come si definisce e si calcola il coefficiente di correlazione di Pearson?",
+      "answer": "È la covarianza normalizzata per il prodotto delle deviazioni standard: r=Sxy/√(Sxx·Syy).",
+      "detail": "Il risultato non dipende dalle unità delle variabili ed è compreso fra −1 e +1. Il segno dà il verso, |r| la forza dell’associazione lineare.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "r=\\frac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}}",
+          "meaning": "È la covarianza normalizzata per il prodotto delle deviazioni standard: r=Sxy/√(Sxx·Syy)."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §6, pagina PDF 169"
+    },
+    {
+      "id": "mca-c06-q016",
+      "topicId": "mca-c06-t03",
+      "question": "Come vanno interpretati r=+1, r=−1 e r=0?",
+      "answer": "+1: perfetto allineamento crescente; −1: perfetto allineamento decrescente; 0: nessun legame lineare.",
+      "detail": "Il valore 0 non esclude dipendenze non lineari e nessuno dei tre valori dimostra il nesso causa-effetto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare r come percentuale di variabilità spiegata o prova causale.",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §6, pagina PDF 169"
+    },
+    {
+      "id": "mca-c06-q017",
+      "topicId": "mca-c06-t03",
+      "question": "Quando Pearson non è definito e quali fattori possono renderlo ingannevole?",
+      "answer": "Non è definito se X o Y ha deviazione standard nulla; può risentire molto degli outlier e della forma della relazione.",
+      "detail": "Serve ispezionare il diagramma di dispersione e verificare che il modello lineare abbia senso nel campione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §6, pagina PDF 169"
+    },
+    {
+      "id": "mca-c06-q018",
+      "topicId": "mca-c06-t04",
+      "question": "Quali medie e somme centrate risultano dal caso dei sei clienti?",
+      "answer": "x̄=3,5 visite; ȳ≈17,6667 €; Sxx=17,5; Syy≈113,3333; Sxy=43.",
+      "detail": "Le somme derivano dai prodotti e quadrati degli scarti riportati nella tabella del manuale e sono il punto di partenza per r, b e R².",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §7, pagina PDF 170"
+    },
+    {
+      "id": "mca-c06-q019",
+      "topicId": "mca-c06-t04",
+      "question": "Quanto valgono covarianza di popolazione e campionaria sui sei clienti?",
+      "answer": "Cov_pop=43/6≈7,1667 visite·euro; Cov_camp=43/5=8,6 visite·euro.",
+      "detail": "Non è una contraddizione: cambia il denominatore. L’unità è prodotto delle unità di X e Y, non una percentuale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\operatorname{Cov}_{pop}=\\frac{43}{6};\\quad s_{XY}=\\frac{43}{5}",
+          "meaning": "Cov_pop=43/6≈7,1667 visite·euro; Cov_camp=43/5=8,6 visite·euro."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §7, pagina PDF 170"
+    },
+    {
+      "id": "mca-c06-q020",
+      "topicId": "mca-c06-t04",
+      "question": "Quali sono le deviazioni standard campionarie e la correlazione del caso visite-spesa?",
+      "answer": "sX≈1,8708; sY≈4,7610; r≈0,9655, forte associazione positiva.",
+      "detail": "Si ottiene r=43/√(17,5×113,3333). Il campione ha solo sei osservazioni didattiche: il coefficiente elevato non è evidenza causale su clienti reali.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "r=\\frac{43}{\\sqrt{17.5\\cdot113.3333}}\\approx0.9655",
+          "meaning": "sX≈1,8708; sY≈4,7610; r≈0,9655, forte associazione positiva."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §7, pagina PDF 170"
+    },
+    {
+      "id": "mca-c06-q021",
+      "topicId": "mca-c06-t05",
+      "question": "In che cosa differiscono correlazione e regressione lineare?",
+      "answer": "La correlazione è simmetrica e misura un’associazione lineare; la regressione stima la risposta Y in funzione di X.",
+      "detail": "Invertire X e Y non cambia Pearson ma in generale cambia la retta stimata: i due metodi rispondono a domande diverse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §8, pagina PDF 170"
+    },
+    {
+      "id": "mca-c06-q022",
+      "topicId": "mca-c06-t05",
+      "question": "Come si distingue il modello teorico della regressione dalla retta stimata?",
+      "answer": "Modello: Yᵢ=α+βXᵢ+εᵢ; retta stimata: ŷᵢ=a+bxᵢ.",
+      "detail": "α e β sono parametri sconosciuti della popolazione, ε è l’errore teorico; a e b sono stime sui dati, ŷ le predizioni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Y_i=\\alpha+\\beta X_i+\\varepsilon_i;\\quad\\hat y_i=a+bx_i",
+          "meaning": "Modello: Yᵢ=α+βXᵢ+εᵢ; retta stimata: ŷᵢ=a+bxᵢ."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §8, pagina PDF 170"
+    },
+    {
+      "id": "mca-c06-q023",
+      "topicId": "mca-c06-t05",
+      "question": "Come si interpretano pendenza b e intercetta a?",
+      "answer": "b è la variazione prevista di Y per un aumento unitario di X; a è il valore previsto quando X=0.",
+      "detail": "Il significato dipende dalle unità: euro/visita nel caso didattico. L’intercetta può essere priva di significato reale quando X=0 è fuori dalla zona osservata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che ogni visita aggiuntiva causi esattamente b euro.",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §8, pagina PDF 170"
+    },
+    {
+      "id": "mca-c06-q024",
+      "topicId": "mca-c06-t06",
+      "question": "Che cosa sono i residui e quale funzione minimizza OLS?",
+      "answer": "eᵢ=yᵢ−ŷᵢ; OLS minimizza SSE(a,b)=Σ[yᵢ−a−bxᵢ]².",
+      "detail": "Elevare al quadrato evita che scarti opposti si annullino e penalizza gli scarti grandi; il minimo seleziona l’intercetta e la pendenza della retta.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "e_i=y_i-(a+bx_i);\\quad SSE=\\sum_i e_i^2",
+          "meaning": "eᵢ=yᵢ−ŷᵢ; OLS minimizza SSE(a,b)=Σ[yᵢ−a−bxᵢ]²."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §9, pagina PDF 170"
+    },
+    {
+      "id": "mca-c06-q025",
+      "topicId": "mca-c06-t06",
+      "question": "Quali sono le formule di b e a nella regressione semplice con intercetta?",
+      "answer": "b=Sxy/Sxx=Cov(X,Y)/Var(X); a=ȳ−bx̄, con Sxx>0.",
+      "detail": "I denominatori della covarianza e varianza devono essere coerenti, e X deve variare. La retta OLS passa per il punto delle medie.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "b=\\frac{\\sum(x_i-\\bar x)(y_i-\\bar y)}{\\sum(x_i-\\bar x)^2};\\quad a=\\bar y-b\\bar x",
+          "meaning": "b=Sxy/Sxx=Cov(X,Y)/Var(X); a=ȳ−bx̄, con Sxx>0."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §9, pagina PDF 170"
+    },
+    {
+      "id": "mca-c06-q026",
+      "topicId": "mca-c06-t06",
+      "question": "Quale retta OLS otteniamo sui sei clienti e come si interpreta?",
+      "answer": "ŷ=9,0667+2,4571X; una visita in più è associata a circa 2,46 € di spesa prevista aggiuntiva.",
+      "detail": "Sxy=43, Sxx=17,5 danno b=2,457143. L’intercetta è ȳ−b×3,5=9,066667. L’interpretazione resta associativa.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat y=9.0667+2.4571X",
+          "meaning": "ŷ=9,0667+2,4571X; una visita in più è associata a circa 2,46 € di spesa prevista aggiuntiva."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §9, pagina PDF 170"
+    },
+    {
+      "id": "mca-c06-q027",
+      "topicId": "mca-c06-t06",
+      "question": "Quanto spende secondo la retta un cliente con quattro o sette visite?",
+      "answer": "Con X=4 si prevedono circa 18,90 €; con X=7 circa 26,27 €, ma sette visite sono fuori dal campione.",
+      "detail": "Il dato osservato varia tra una e sei visite; la previsione a sette è un’estrapolazione, potenzialmente meno affidabile.",
+      "example": "ŷ(4)=9,0667+2,4571×4≈18,90 €; ŷ(7)≈26,27 €.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §9, pagina PDF 170"
+    },
+    {
+      "id": "mca-c06-q028",
+      "topicId": "mca-c06-t06",
+      "question": "Qual è il segno del residuo quando un cliente spende più del previsto?",
+      "answer": "Positivo, perché e=y−ŷ>0; negativo quando spende meno del valore stimato.",
+      "detail": "Per C3: osservato 14 €, previsto circa 16,44 €, residuo ≈−2,44 €. Il residuo è in euro, SSE è in euro al quadrato.",
+      "example": "C4: y=19 €, ŷ≈18,895 €, e≈+0,105 €.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §10, pagina PDF 171"
+    },
+    {
+      "id": "mca-c06-q029",
+      "topicId": "mca-c06-t06",
+      "question": "Quali valori di SSE e R² riporta il primo esercizio di regressione?",
+      "answer": "SSE≈7,6762 €² e R²≈0,9323, ossia 93,23% di variabilità campionaria descritta dalla retta.",
+      "detail": "In una regressione semplice con intercetta R²=r²=1−SSE/Syy. Non è la percentuale di spesa causalmente prodotta dalle visite.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "R^2=1-\\frac{SSE}{S_{yy}}=r^2",
+          "meaning": "SSE≈7,6762 €² e R²≈0,9323, ossia 93,23% di variabilità campionaria descritta dalla retta."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §10, pagina PDF 171"
+    },
+    {
+      "id": "mca-c06-q030",
+      "topicId": "mca-c06-t06",
+      "question": "Perché la somma dei residui OLS è zero con intercetta?",
+      "answer": "È una proprietà della minimizzazione rispetto all’intercetta, non la prova che tutti gli errori siano nulli.",
+      "detail": "La condizione Σeᵢ=0 è una delle equazioni normali; i singoli residui possono essere grandi e compensarsi esattamente.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\sum_i e_i=0",
+          "meaning": "È una proprietà della minimizzazione rispetto all’intercetta, non la prova che tutti gli errori siano nulli."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §10, pagina PDF 171"
+    },
+    {
+      "id": "mca-c06-q031",
+      "topicId": "mca-c06-t07",
+      "question": "La normalità degli errori è necessaria per stimare una retta OLS?",
+      "answer": "No: i minimi quadrati possono essere calcolati anche senza errori normalmente distribuiti.",
+      "detail": "Per test e intervalli di confidenza sono invece importanti condizioni sugli errori: media condizionata nulla, linearità, indipendenza, varianza costante; normalità utile per inferenza esatta in piccoli campioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §11, pagina PDF 172"
+    },
+    {
+      "id": "mca-c06-q032",
+      "topicId": "mca-c06-t07",
+      "question": "Perché extrapolazione e variabili omesse richiedono cautela?",
+      "answer": "La relazione può cambiare fuori dal campione e X può essere associata a fattori non misurati che influenzano Y.",
+      "detail": "Il modello può variare con mercato, promozioni, composizione della clientela e tempo; una retta non giustifica da sola interventi causali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §11, pagina PDF 172"
+    },
+    {
+      "id": "mca-c06-q033",
+      "topicId": "mca-c06-t07",
+      "question": "Se r=0,80, quanta variabilità spiega il modello lineare semplice con intercetta?",
+      "answer": "R²=0,80²=0,64, cioè il 64% della variabilità campionaria.",
+      "detail": "Il valore r non va letto come 80% e R² non indica una percentuale di effetto causale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "R^2=r^2=(0.8)^2=0.64",
+          "meaning": "R²=0,80²=0,64, cioè il 64% della variabilità campionaria."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Confondere correlazione con coefficiente di determinazione.",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §12, pagina PDF 172"
+    },
+    {
+      "id": "mca-c06-q034",
+      "topicId": "mca-c06-t07",
+      "question": "Quali sono gli errori concettuali più frequenti nella regressione introduttiva?",
+      "answer": "Scambiare associazione per causalità, confondere β con b ed ε con e, interpretare l’intercetta fuori dominio e trascurare le unità di misura.",
+      "detail": "Controllare anche la convenzione per varianza/covarianza, il range osservato di X e la presenza di non linearità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §12, pagina PDF 172"
+    },
+    {
+      "id": "mca-c06-q035",
+      "topicId": "mca-c06-t07",
+      "question": "Per i quattro punti (1,2),(2,4),(3,6),(4,8), quali sono retta, r, SSE e R²?",
+      "answer": "La retta è ŷ=2X; r=1, SSE=0 e R²=1.",
+      "detail": "Tutti i punti giacciono esattamente sulla retta crescente; è l’Esercizio A della Lezione 25.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat y=2x;\\quad r=1;\\quad SSE=0;\\quad R^2=1",
+          "meaning": "La retta è ŷ=2X; r=1, SSE=0 e R²=1."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §13, pagina PDF 172"
+    },
+    {
+      "id": "mca-c06-q036",
+      "topicId": "mca-c06-t07",
+      "question": "Come si interpreta ŷ=18−0,5X quando X è il prezzo in euro?",
+      "answer": "A ogni euro in più di prezzo si associa una riduzione prevista di 0,5 unità vendute.",
+      "detail": "La pendenza è in unità vendute per euro, non rappresenta automaticamente un effetto causale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat y=18-0.5X",
+          "meaning": "A ogni euro in più di prezzo si associa una riduzione prevista di 0,5 unità vendute."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §13, pagina PDF 172"
+    },
+    {
+      "id": "mca-c06-q037",
+      "topicId": "mca-c06-t07",
+      "question": "Con r=−0,70, quanto vale R² e quale verso ha la relazione?",
+      "answer": "R²=0,49=49%; l’associazione lineare è decrescente.",
+      "detail": "La relazione R²=r² si applica alla regressione lineare semplice con intercetta e agli stessi dati; r² non conserva il verso.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "(-0.70)^2=0.49",
+          "meaning": "R²=0,49=49%; l’associazione lineare è decrescente."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §13, pagina PDF 172"
+    },
+    {
+      "id": "mca-c06-q038",
+      "topicId": "mca-c06-t07",
+      "question": "Che cosa bisogna saper spiegare nell’orale conclusivo della Lezione 25?",
+      "answer": "Covarianza contro correlazione, associazione contro regressione, ragioni di OLS, unità di b e possibilità di r=0 con relazione non lineare.",
+      "detail": "Le risposte devono includere non solo la definizione ma anche il limite interpretativo: la correlazione non è causale, la pendenza dipende dalle unità e la regressione non è simmetrica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 25, §14, pagina PDF 172"
+    },
+    {
+      "id": "mca-c06-q039",
+      "topicId": "mca-c06-t08",
+      "question": "Quali competenze aggiunge la Lezione 26 alla prima introduzione della regressione?",
+      "answer": "Derivare la retta OLS, controllarne proprietà e residui, calcolare qualità di adattamento ed errori, valutare assunzioni e plausibilità previsionale.",
+      "detail": "Il capitolo richiede passare dall’applicazione meccanica di b e a alla spiegazione della minimizzazione e alla valutazione critica di un modello per scopi aziendali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §1, pagina PDF 173"
+    },
+    {
+      "id": "mca-c06-q040",
+      "topicId": "mca-c06-t08",
+      "question": "Quali sono le tre grandezze da non confondere: errore ε, residuo e e valore stimato ŷ?",
+      "answer": "ε è la componente teorica non osservata; ŷ è la previsione della retta stimata; e=y−ŷ è lo scarto osservabile dai dati.",
+      "detail": "Il modello della popolazione contiene β₀, β₁ ed ε; la stima dal campione produce a, b ed e, utili per controlli di adattamento.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Y_i=\\beta_0+\\beta_1X_i+\\varepsilon_i;\\ \\hat y_i=a+bx_i;\\ e_i=y_i-\\hat y_i",
+          "meaning": "ε è la componente teorica non osservata; ŷ è la previsione della retta stimata; e=y−ŷ è lo scarto osservabile dai dati."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §2, pagina PDF 173"
+    },
+    {
+      "id": "mca-c06-q041",
+      "topicId": "mca-c06-t08",
+      "question": "Che cosa significa la retta ŷ=8+3x nel caso visite e spesa?",
+      "answer": "All’interno del campo considerato una visita in più si associa a 3 € in più di spesa prevista; per zero visite il modello prevede 8 €.",
+      "detail": "Il termine 3 ha unità €/visita e non è una garanzia causale: non segue che «far fare una visita» generi 3 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat y=8+3x",
+          "meaning": "All’interno del campo considerato una visita in più si associa a 3 € in più di spesa prevista; per zero visite il modello prevede 8 €."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §2, pagina PDF 173"
+    },
+    {
+      "id": "mca-c06-q042",
+      "topicId": "mca-c06-t08",
+      "question": "Qual è la funzione obiettivo del metodo OLS e perché usa i quadrati?",
+      "answer": "S(a,b)=Σ(yᵢ−a−bxᵢ)², per evitare compensazioni di segno e dare maggior peso agli errori grandi.",
+      "detail": "Con i quadrati, SSE è differenziabile e convessa; non è però l’unica misura possibile: gli scarti assoluti sono un criterio alternativo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S(a,b)=\\sum_{i=1}^n(y_i-a-bx_i)^2",
+          "meaning": "S(a,b)=Σ(yᵢ−a−bxᵢ)², per evitare compensazioni di segno e dare maggior peso agli errori grandi."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §3, pagina PDF 173"
+    },
+    {
+      "id": "mca-c06-q043",
+      "topicId": "mca-c06-t08",
+      "question": "In quale direzione si misura un residuo in una regressione Y su X?",
+      "answer": "Verticalmente nel grafico X–Y: dalla previsione ŷ per quello stesso X fino al valore osservato y.",
+      "detail": "La retta OLS classica minimizza gli scarti verticali in Y, non la distanza geometrica minima ortogonale alla retta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §3, pagina PDF 173"
+    },
+    {
+      "id": "mca-c06-q044",
+      "topicId": "mca-c06-t08",
+      "question": "Come si deriva la prima equazione normale rispetto all’intercetta?",
+      "answer": "Si impone ∂S/∂a=−2Σ(yᵢ−a−bxᵢ)=0, ottenendo a=ȳ−bx̄.",
+      "detail": "Dividere l’equazione Σyᵢ−na−bΣxᵢ=0 per n lega la retta al punto delle medie.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\frac{\\partial S}{\\partial a}=-2\\sum_i(y_i-a-bx_i)=0\\Rightarrow a=\\bar y-b\\bar x",
+          "meaning": "Si impone ∂S/∂a=−2Σ(yᵢ−a−bxᵢ)=0, ottenendo a=ȳ−bx̄."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §4, pagina PDF 174"
+    },
+    {
+      "id": "mca-c06-q045",
+      "topicId": "mca-c06-t08",
+      "question": "Come si deriva la seconda equazione normale rispetto a b?",
+      "answer": "Si impone ∂S/∂b=−2Σxᵢ(yᵢ−a−bxᵢ)=0 e si sostituisce a=ȳ−bx̄.",
+      "detail": "Si ottiene b=[Σxy−ΣxΣy/n]/[Σx²−(Σx)²/n]=Sxy/Sxx.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "b=\\frac{\\sum x_iy_i-\\frac{\\sum x_i\\sum y_i}{n}}{\\sum x_i^2-\\frac{(\\sum x_i)^2}{n}}",
+          "meaning": "Si impone ∂S/∂b=−2Σxᵢ(yᵢ−a−bxᵢ)=0 e si sostituisce a=ȳ−bx̄."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §4, pagina PDF 174"
+    },
+    {
+      "id": "mca-c06-q046",
+      "topicId": "mca-c06-t08",
+      "question": "Quali sono le definizioni di Sxx, Sxy e Syy?",
+      "answer": "Sxx=Σ(x−x̄)²; Sxy=Σ(x−x̄)(y−ȳ); Syy=Σ(y−ȳ)².",
+      "detail": "Sxx misura la dispersione di X, Sxy la covariazione non normalizzata, Syy la dispersione totale della risposta e coincide con SST.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_{xx}=\\sum(x_i-\\bar x)^2;\\ S_{xy}=\\sum(x_i-\\bar x)(y_i-\\bar y);\\ S_{yy}=\\sum(y_i-\\bar y)^2",
+          "meaning": "Sxx=Σ(x−x̄)²; Sxy=Σ(x−x̄)(y−ȳ); Syy=Σ(y−ȳ)²."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §4, pagina PDF 174"
+    },
+    {
+      "id": "mca-c06-q047",
+      "topicId": "mca-c06-t08",
+      "question": "Perché la pendenza OLS è non identificabile se tutti gli X sono uguali?",
+      "answer": "Perché Sxx=0 e si avrebbe una divisione per zero nella formula b=Sxy/Sxx.",
+      "detail": "La numerosità n non risolve l’assenza di variabilità del predittore; per stimare l’associazione servono almeno due valori distinti di X.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "b=\\frac{S_{xy}}{S_{xx}},\\quad S_{xx}>0",
+          "meaning": "Perché Sxx=0 e si avrebbe una divisione per zero nella formula b=Sxy/Sxx."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §4, pagina PDF 174"
+    },
+    {
+      "id": "mca-c06-q048",
+      "topicId": "mca-c06-t08",
+      "question": "Perché la soluzione delle equazioni normali è un minimo globale?",
+      "answer": "Perché SSE è una funzione quadratica convessa di a e b e, se Sxx>0, il minimo è unico.",
+      "detail": "Le condizioni di stazionarietà non sono un trucco di calcolo: risolvono il problema di ottimizzazione posto da OLS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §4, pagina PDF 174"
+    },
+    {
+      "id": "mca-c06-q049",
+      "topicId": "mca-c06-t08",
+      "question": "In quale condizione Cov/Var restituisce la stessa pendenza delle somme centrate?",
+      "answer": "Quando covarianza e varianza sono costruite con la stessa convenzione di denominatore e Var(X)>0.",
+      "detail": "Dividere sia Sxy sia Sxx per n, oppure entrambi per n−1, lascia invariato il loro rapporto.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "b=\\frac{\\operatorname{Cov}(X,Y)}{\\operatorname{Var}(X)}=\\frac{S_{xy}}{S_{xx}}",
+          "meaning": "Quando covarianza e varianza sono costruite con la stessa convenzione di denominatore e Var(X)>0."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §4, pagina PDF 174"
+    },
+    {
+      "id": "mca-c06-q050",
+      "topicId": "mca-c06-t08",
+      "question": "Perché la retta OLS con intercetta passa per il punto (x̄,ȳ)?",
+      "answer": "Perché a=ȳ−bx̄, dunque a+bx̄=ȳ.",
+      "detail": "È un controllo rapido da utilizzare per riconoscere errori numerici nel calcolo di a o b.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §5, pagina PDF 174"
+    },
+    {
+      "id": "mca-c06-q051",
+      "topicId": "mca-c06-t08",
+      "question": "Quali due condizioni di ortogonalità soddisfano i residui OLS con intercetta?",
+      "answer": "Σeᵢ=0 e Σxᵢeᵢ=0; i residui sono inoltre ortogonali alle predizioni.",
+      "detail": "Questi risultati discendono dalle equazioni normali e rendono possibile la scomposizione della variabilità totale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\sum_i e_i=0;\\quad \\sum_i x_ie_i=0",
+          "meaning": "Σeᵢ=0 e Σxᵢeᵢ=0; i residui sono inoltre ortogonali alle predizioni."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §5, pagina PDF 174"
+    },
+    {
+      "id": "mca-c06-q052",
+      "topicId": "mca-c06-t08",
+      "question": "In quale caso vale R²=r² e quale cautela serve?",
+      "answer": "Nella regressione lineare semplice OLS con intercetta, sulla stessa risposta e sullo stesso campione, purché Y vari.",
+      "detail": "Non estendere l’identità meccanicamente a modelli senza intercetta, regressioni multiple o statistiche calcolate su campioni differenti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "R^2=r_{XY}^2\\quad\\text{(OLS semplice con intercetta)}",
+          "meaning": "Nella regressione lineare semplice OLS con intercetta, sulla stessa risposta e sullo stesso campione, purché Y vari."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §5, pagina PDF 174"
+    },
+    {
+      "id": "mca-c06-q053",
+      "topicId": "mca-c06-t09",
+      "question": "Quali sono i cinque valori fondamentali per il fit sui sei clienti?",
+      "answer": "n=6, x̄=3,5, ȳ=17,6667, Sxx=17,5, Sxy=43.",
+      "detail": "Lezione 26 riutilizza il dataset della Lezione 25: consente di ricavare retta, residui e indici di adattamento senza dati esterni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §6, pagina PDF 174"
+    },
+    {
+      "id": "mca-c06-q054",
+      "topicId": "mca-c06-t09",
+      "question": "Quali coefficienti OLS risultano sul dataset delle sei visite e spese?",
+      "answer": "b=2,457143 €/visita e a=9,066667 €; retta ŷ=9,066667+2,457143x.",
+      "detail": "La retta associa visite mensili e spesa nello stesso mese, senza dimostrare un aumento causale della spesa.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "b=43/17.5=2.457143;\\ a=9.066667",
+          "meaning": "b=2,457143 €/visita e a=9,066667 €; retta ŷ=9,066667+2,457143x."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §6, pagina PDF 174"
+    },
+    {
+      "id": "mca-c06-q055",
+      "topicId": "mca-c06-t09",
+      "question": "Quanto vale il residuo di C4 e come se ne interpreta il segno?",
+      "answer": "ŷ(4)=18,8952 €; y=19 €; e≈+0,1048 €, dunque C4 spende leggermente più del previsto.",
+      "detail": "L’esempio permette di controllare la sequenza: stima ŷ, confronto con Y, segno del residuo e suo contributo a SSE.",
+      "example": "e_C4=19−(9,066667+2,457143×4)≈+0,104762 €.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §6, pagina PDF 174"
+    },
+    {
+      "id": "mca-c06-q056",
+      "topicId": "mca-c06-t09",
+      "question": "Quale osservazione produce lo scarto quadratico maggiore nell’esempio?",
+      "answer": "C3: y=14 €, ŷ≈16,438 €, residuo ≈−2,438 € e residuo quadratico ≈5,944 €².",
+      "detail": "Il contributo di C3 domina gran parte di SSE≈7,676 €²: OLS penalizza maggiormente scarti grandi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §6, pagina PDF 174"
+    },
+    {
+      "id": "mca-c06-q057",
+      "topicId": "mca-c06-t10",
+      "question": "Quali differenze esistono fra SST, SSR e SSE?",
+      "answer": "SST è variabilità totale di Y dalla media; SSR è variabilità spiegata dalla retta; SSE è variabilità dei residui.",
+      "detail": "Con OLS e intercetta: SST=SSR+SSE. La decomposizione richiede l’ortogonalità fra valori stimati e residui.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "SST=\\sum(y_i-\\bar y)^2;\\ SSR=\\sum(\\hat y_i-\\bar y)^2;\\ SSE=\\sum(y_i-\\hat y_i)^2",
+          "meaning": "SST è variabilità totale di Y dalla media; SSR è variabilità spiegata dalla retta; SSE è variabilità dei residui."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §7, pagina PDF 175"
+    },
+    {
+      "id": "mca-c06-q058",
+      "topicId": "mca-c06-t10",
+      "question": "Che cosa afferma l’identità SST=SSR+SSE?",
+      "answer": "La variabilità complessiva della risposta si scompone in parte spiegata dal modello e parte residua.",
+      "detail": "Vale nell’OLS con intercetta: il termine incrociato è zero perché residui e valori stimati sono ortogonali.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "SST=SSR+SSE",
+          "meaning": "La variabilità complessiva della risposta si scompone in parte spiegata dal modello e parte residua."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §7, pagina PDF 175"
+    },
+    {
+      "id": "mca-c06-q059",
+      "topicId": "mca-c06-t10",
+      "question": "Quali sono SST, SSR e SSE nel caso dei sei clienti?",
+      "answer": "SST=113,333333 €²; SSR=105,657143 €²; SSE=7,676190 €².",
+      "detail": "Quadratura: 105,657143+7,676190≈113,333333. Tutte e tre sono somme di quadrati e si misurano in €².",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "113.333333=105.657143+7.676190",
+          "meaning": "SST=113,333333 €²; SSR=105,657143 €²; SSE=7,676190 €²."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §7, pagina PDF 175"
+    },
+    {
+      "id": "mca-c06-q060",
+      "topicId": "mca-c06-t10",
+      "question": "Come si calcola e interpreta R² in una regressione OLS con intercetta?",
+      "answer": "R²=1−SSE/SST=SSR/SST; quota di variabilità osservata di Y descritta dal modello.",
+      "detail": "È una misura di bontà di adattamento nel campione, non di causalità, errore medio in euro o previsione garantita fuori campione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "R^2=1-\\frac{SSE}{SST}=\\frac{SSR}{SST}",
+          "meaning": "R²=1−SSE/SST=SSR/SST; quota di variabilità osservata di Y descritta dal modello."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §8, pagina PDF 175"
+    },
+    {
+      "id": "mca-c06-q061",
+      "topicId": "mca-c06-t10",
+      "question": "Quanto vale R² nei sei clienti e cosa NON significa?",
+      "answer": "R²≈0,932269, quindi circa il 93,23% della variabilità campionaria della spesa è descritta dalla retta.",
+      "detail": "Non significa che le visite causino il 93,23% della spesa, né che ogni nuovo cliente sarà predetto con errore minimo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "1-7.676190/113.333333\\approx0.932269",
+          "meaning": "R²≈0,932269, quindi circa il 93,23% della variabilità campionaria della spesa è descritta dalla retta."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §8, pagina PDF 175"
+    },
+    {
+      "id": "mca-c06-q062",
+      "topicId": "mca-c06-t10",
+      "question": "Come si interpretano R²=1 e R²=0 nel modello con intercetta?",
+      "answer": "1: adattamento perfetto dei punti; 0: la retta non migliora la previsione costante basata sulla media.",
+      "detail": "Una R² elevata può convivere con curvatura nei residui, outlier influenti o scarsa capacità previsionale fuori campione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §8, pagina PDF 175"
+    },
+    {
+      "id": "mca-c06-q063",
+      "topicId": "mca-c06-t11",
+      "question": "Come si calcolano training MSE e training RMSE?",
+      "answer": "MSE=SSE/n, RMSE=√(SSE/n): indicano errore quadratico medio e sua radice sul campione di valutazione.",
+      "detail": "MSE ha unità Y²; RMSE ha unità Y ed è più direttamente leggibile. Attenzione a specificare se gli errori sono in-sample o su test set.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "MSE_{train}=\\frac{SSE}{n};\\quad RMSE_{train}=\\sqrt{\\frac{SSE}{n}}",
+          "meaning": "MSE=SSE/n, RMSE=√(SSE/n): indicano errore quadratico medio e sua radice sul campione di valutazione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §9, pagina PDF 175"
+    },
+    {
+      "id": "mca-c06-q064",
+      "topicId": "mca-c06-t11",
+      "question": "Che differenza c’è fra RSE e RMSE di training per una regressione semplice?",
+      "answer": "RSE=√[SSE/(n−2)] stima la scala dell’errore correggendo per due parametri; RMSE_train=√[SSE/n] descrive l’errore quadratico medio nel training.",
+      "detail": "Con n=10 e SSE=80: RMSE=√8≈2,828; RSE=√10≈3,162. Denominatori diversi, finalità diverse.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "RSE=\\sqrt{\\frac{SSE}{n-2}}",
+          "meaning": "RSE=√[SSE/(n−2)] stima la scala dell’errore correggendo per due parametri; RMSE_train=√[SSE/n] descrive l’errore quadratico medio nel training."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §9, pagina PDF 175"
+    },
+    {
+      "id": "mca-c06-q065",
+      "topicId": "mca-c06-t11",
+      "question": "Come si definisce MAE e in cosa differisce dall’RMSE?",
+      "answer": "MAE=(1/n)Σ|eᵢ|; misura lo scarto assoluto medio ed è meno sensibile a pochi errori molto grandi rispetto a RMSE.",
+      "detail": "MAE e RMSE hanno le stesse unità di Y; nessuno dei due sostituisce da solo l’analisi degli errori per l’uso concreto del modello.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "MAE=\\frac{1}{n}\\sum_i|y_i-\\hat y_i|",
+          "meaning": "MAE=(1/n)Σ|eᵢ|; misura lo scarto assoluto medio ed è meno sensibile a pochi errori molto grandi rispetto a RMSE."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §9, pagina PDF 175"
+    },
+    {
+      "id": "mca-c06-q066",
+      "topicId": "mca-c06-t11",
+      "question": "Quali valori di errore riporta il manuale per i sei clienti?",
+      "answer": "MSE_train≈1,2794 €²; RMSE_train≈1,1311 €; RSE≈1,3853 €; MAE_train≈0,8127 €.",
+      "detail": "Sono misure diverse derivate da SSE≈7,6762. La scelta dipende da sensibilità agli errori grandi, unità e uso previsionale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §9, pagina PDF 175"
+    },
+    {
+      "id": "mca-c06-q067",
+      "topicId": "mca-c06-t11",
+      "question": "Perché R² elevato e errore in euro sono due valutazioni differenti?",
+      "answer": "R² è una frazione di variabilità spiegata; RMSE o MAE esprimono l’ordine di grandezza degli errori nelle unità della risposta.",
+      "detail": "Un errore di 3 € può essere trascurabile o grave a seconda dell’uso della previsione; R²=0,80 non risponde a questa domanda manageriale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §9, pagina PDF 175"
+    },
+    {
+      "id": "mca-c06-q068",
+      "topicId": "mca-c06-t12",
+      "question": "Quali condizioni ricorda l’acronimo didattico LINE?",
+      "answer": "Linearità, Indipendenza, Normalità degli errori e Equal variances (omoschedasticità).",
+      "detail": "L’acronimo è una guida didattica: va aggiunta la condizione sostanziale E(ε|X)=0; la normalità non è necessaria per il mero calcolo OLS.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "E(\\varepsilon\\mid X)=0",
+          "meaning": "Linearità, Indipendenza, Normalità degli errori e Equal variances (omoschedasticità)."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §10, pagina PDF 176"
+    },
+    {
+      "id": "mca-c06-q069",
+      "topicId": "mca-c06-t12",
+      "question": "Quale pattern dei residui suggerisce violazione della linearità?",
+      "answer": "Una struttura sistematica curva, come una U nei residui contro X o contro le predizioni.",
+      "detail": "Anche con R² elevato, un andamento a U segnala che una retta può non catturare la forma reale della relazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §10, pagina PDF 176"
+    },
+    {
+      "id": "mca-c06-q070",
+      "topicId": "mca-c06-t12",
+      "question": "Che cosa significa omoschedasticità e quale grafico segnala il suo contrario?",
+      "answer": "Varianza condizionata dell’errore approssimativamente costante; un grafico a imbuto con dispersione crescente indica eteroschedasticità.",
+      "detail": "Una dispersione non costante può compromettere gli errori standard classici e i test, anche se i coefficienti OLS sono calcolabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §10, pagina PDF 176"
+    },
+    {
+      "id": "mca-c06-q071",
+      "topicId": "mca-c06-t12",
+      "question": "Perché l’indipendenza degli errori è particolarmente importante per serie temporali?",
+      "answer": "Perché residui vicini nel tempo possono risultare correlati (autocorrelazione) e invalidare inferenze standard non corrette.",
+      "detail": "Controllare i residui in ordine cronologico, non soltanto contro X. La dipendenza può derivare da stagionalità o dinamiche non modellate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §10, pagina PDF 176"
+    },
+    {
+      "id": "mca-c06-q072",
+      "topicId": "mca-c06-t12",
+      "question": "Quando è richiesta la normalità degli errori e quando no?",
+      "answer": "È utile per test t e intervalli esatti classici con pochi dati; non è requisito per minimizzare SSE e stimare a,b.",
+      "detail": "Su campioni più ampi possono valere approssimazioni asintotiche, purché altre ipotesi siano appropriate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §10, pagina PDF 176"
+    },
+    {
+      "id": "mca-c06-q073",
+      "topicId": "mca-c06-t12",
+      "question": "Qual è la differenza tra un residuo apparentemente casuale e una prova che tutte le ipotesi siano vere?",
+      "answer": "Un pattern casuale è un controllo favorevole, ma non dimostra media condizionata nulla, assenza di confondenti o causalità.",
+      "detail": "Le assunzioni non sono tutte verificabili con il solo grafico; dati e disegno di ricerca restano essenziali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §10, pagina PDF 176"
+    },
+    {
+      "id": "mca-c06-q074",
+      "topicId": "mca-c06-t13",
+      "question": "Qual è la differenza tra outlier, punto ad alto leverage e punto influente?",
+      "answer": "Outlier: residuo insolito; leverage alto: X lontano dalla media; influente: la sua rimozione modifica sensibilmente le stime.",
+      "detail": "Le tre caratteristiche non coincidono: un punto può avere X estremo ma residuo piccolo se si trova sulla retta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §11, pagina PDF 176"
+    },
+    {
+      "id": "mca-c06-q075",
+      "topicId": "mca-c06-t13",
+      "question": "Qual è la formula del leverage hᵢᵢ in una regressione semplice con intercetta?",
+      "answer": "hᵢᵢ=1/n+(xᵢ−x̄)²/Sxx; cresce quando X è lontano dalla media.",
+      "detail": "È un segnale da approfondire, non un criterio automatico per eliminare osservazioni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "h_{ii}=\\frac1n+\\frac{(x_i-\\bar x)^2}{S_{xx}}",
+          "meaning": "hᵢᵢ=1/n+(xᵢ−x̄)²/Sxx; cresce quando X è lontano dalla media."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §11, pagina PDF 176"
+    },
+    {
+      "id": "mca-c06-q076",
+      "topicId": "mca-c06-t13",
+      "question": "Come si affronta correttamente un dato potenzialmente influente?",
+      "answer": "Verificare errori di acquisizione, spiegazione economica, sensibilità del modello con e senza il dato e documentare la scelta.",
+      "detail": "Eliminare osservazioni solo perché peggiorano R² o cambiano la pendenza può introdurre distorsioni non giustificate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §11, pagina PDF 176"
+    },
+    {
+      "id": "mca-c06-q077",
+      "topicId": "mca-c06-t13",
+      "question": "Che differenza c’è tra interpolazione ed estrapolazione?",
+      "answer": "Interpolazione: previsione per X interno al campo osservato; estrapolazione: previsione fuori da esso.",
+      "detail": "Il modello sui clienti con 1–6 visite è meno affidabile a X=20 perché relazione e vincoli economici possono cambiare.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §12, pagina PDF 177"
+    },
+    {
+      "id": "mca-c06-q078",
+      "topicId": "mca-c06-t13",
+      "question": "Perché una buona previsione in-sample non garantisce buona previsione out-of-sample?",
+      "answer": "Perché il modello può adattarsi al campione o cambiare comportamento su nuovi clienti, periodi o condizioni.",
+      "detail": "È buona pratica distinguere dati di stima e valutazione; nel forecasting temporale si rispetta l’ordine per evitare data leakage.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §12, pagina PDF 177"
+    },
+    {
+      "id": "mca-c06-q079",
+      "topicId": "mca-c06-t13",
+      "question": "Che differenza esiste tra intervallo di confidenza della media e intervallo predittivo individuale?",
+      "answer": "Il secondo è più ampio, perché incorpora anche la variabilità del nuovo individuo oltre all’incertezza sui coefficienti.",
+      "detail": "Un valore ŷ è una previsione puntuale: non va presentato come esito certo di un acquisto futuro.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §12, pagina PDF 177"
+    },
+    {
+      "id": "mca-c06-q080",
+      "topicId": "mca-c06-t13",
+      "question": "Come si stima l’errore standard della pendenza e come si costruisce il test t?",
+      "answer": "s²=SSE/(n−2); SE(b)=s/√Sxx; t=b/SE(b) per H₀:β₁=0 con n−2 gradi di libertà.",
+      "detail": "Richiede le ipotesi inferenziali del modello classico. Nel caso dei sei clienti il manuale riporta SE(b)≈0,3311 e t≈7,4200, df=4.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "SE(b)=\\sqrt{\\frac{SSE}{(n-2)S_{xx}}};\\quad t=\\frac{b}{SE(b)}",
+          "meaning": "s²=SSE/(n−2); SE(b)=s/√Sxx; t=b/SE(b) per H₀:β₁=0 con n−2 gradi di libertà."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §13, pagina PDF 177"
+    },
+    {
+      "id": "mca-c06-q081",
+      "topicId": "mca-c06-t13",
+      "question": "Qual è la forma dell’intervallo di confidenza per la pendenza β₁?",
+      "answer": "b ± t_critico·SE(b), con t critico a n−2 gradi di libertà e livello 1−α.",
+      "detail": "È un intervallo per il parametro della relazione media, non un intervallo del prossimo acquisto individuale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "IC(\\beta_1)=b\\pm t_{1-\\alpha/2,n-2}\\,SE(b)",
+          "meaning": "b ± t_critico·SE(b), con t critico a n−2 gradi di libertà e livello 1−α."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §13, pagina PDF 177"
+    },
+    {
+      "id": "mca-c06-q082",
+      "topicId": "mca-c06-t13",
+      "question": "Perché un t elevato non dimostra né causalità né utilità commerciale?",
+      "answer": "Perché verifica un’ipotesi sul coefficiente sotto assunzioni statistiche, mentre interventi causali e valore economico richiedono ulteriori evidenze.",
+      "detail": "Significatività statistica, grandezza dell’effetto e azionabilità sono concetti distinti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §13, pagina PDF 177"
+    },
+    {
+      "id": "mca-c06-q083",
+      "topicId": "mca-c06-t14",
+      "question": "Come si estende il modello da regressione semplice a multipla?",
+      "answer": "Si inseriscono più predittori: Y=β₀+β₁X₁+β₂X₂+…+ε.",
+      "detail": "Per la spesa si possono usare visite, sconti, reddito e anzianità cliente; β₁ descrive l’associazione con X₁ tenendo fissi gli altri regressori inclusi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "Y=\\beta_0+\\beta_1X_1+\\cdots+\\beta_kX_k+\\varepsilon",
+          "meaning": "Si inseriscono più predittori: Y=β₀+β₁X₁+β₂X₂+…+ε."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §14, pagina PDF 177"
+    },
+    {
+      "id": "mca-c06-q084",
+      "topicId": "mca-c06-t14",
+      "question": "Come si interpreta β₁ in una regressione multipla?",
+      "answer": "Variazione media stimata della risposta al crescere di X₁ di un’unità, a parità degli altri predittori inclusi.",
+      "detail": "Non equivale generalmente al coefficiente della regressione semplice e resta soggetto a ipotesi su variabili omesse e causalità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §14, pagina PDF 177"
+    },
+    {
+      "id": "mca-c06-q085",
+      "topicId": "mca-c06-t14",
+      "question": "Perché si introduce R² aggiustato e qual è la formula?",
+      "answer": "Per compensare in parte l’aumento meccanico di R² quando si aggiungono predittori allo stesso campione.",
+      "detail": "La misura considera n osservazioni e k predittori; richiede n>k+1. L’R² ordinario non premia la parsimonia.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "R^2_{adj}=1-(1-R^2)\\frac{n-1}{n-k-1}",
+          "meaning": "Per compensare in parte l’aumento meccanico di R² quando si aggiungono predittori allo stesso campione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §14, pagina PDF 177"
+    },
+    {
+      "id": "mca-c06-q086",
+      "topicId": "mca-c06-t14",
+      "question": "Qual è la procedura completa per risolvere un esercizio OLS di esame?",
+      "answer": "Definire X/Y e unità; calcolare somme e medie; trovare b,a; stimare ŷ e residui; calcolare SSE,SST,SSR,R²; controllare assunzioni e interpretare.",
+      "detail": "La traccia prevede controlli Σe≈0 e SST≈SSR+SSE. La conclusione manageriale deve distinguere associazione, attendibilità e causalità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §15, pagina PDF 177"
+    },
+    {
+      "id": "mca-c06-q087",
+      "topicId": "mca-c06-t14",
+      "question": "Quali controlli numerici devono tornare dopo aver stimato una regressione semplice con intercetta?",
+      "answer": "Sxx>0; retta passante per (x̄,ȳ); Σe≈0; SST≈SSR+SSE; 0≤R²≤1 nel contesto OLS usuale.",
+      "detail": "Scostamenti minimi da zero o dalla quadratura possono derivare da arrotondamenti; differenze grandi suggeriscono errore di calcolo o definizione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §15, pagina PDF 177"
+    },
+    {
+      "id": "mca-c06-q088",
+      "topicId": "mca-c06-t14",
+      "question": "Esercizio con n=5, Σx=15, Σy=60, Σx²=55, Σxy=205: quale retta si ottiene?",
+      "answer": "x̄=3, ȳ=12; Sxx=10, Sxy=25; b=2,5; a=4,5; dunque ŷ=4,5+2,5x.",
+      "detail": "È un esercizio sulle somme grezze: Sxx=55−15²/5=10 e Sxy=205−(15×60)/5=25.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat y=4.5+2.5x",
+          "meaning": "x̄=3, ȳ=12; Sxx=10, Sxy=25; b=2,5; a=4,5; dunque ŷ=4,5+2,5x."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §16, pagina PDF 178"
+    },
+    {
+      "id": "mca-c06-q089",
+      "topicId": "mca-c06-t14",
+      "question": "Con SST=200 e SSE=50, quanto valgono SSR e R²?",
+      "answer": "SSR=150 e R²=1−50/200=0,75, cioè 75% di variabilità osservata descritta.",
+      "detail": "SST=SSR+SSE; l’indice non descrive l’errore in unità Y né prova una causalità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "SSR=200-50=150;\\quad R^2=0.75",
+          "meaning": "SSR=150 e R²=1−50/200=0,75, cioè 75% di variabilità osservata descritta."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §16, pagina PDF 178"
+    },
+    {
+      "id": "mca-c06-q090",
+      "topicId": "mca-c06-t14",
+      "question": "Con n=10 e SSE=80, quali sono RMSE di training e RSE?",
+      "answer": "RMSE_train=√(80/10)≈2,828; RSE=√(80/8)≈3,162.",
+      "detail": "L’RSE usa n−2 perché si stimano intercetta e pendenza; l’RMSE di training usa n osservazioni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "RMSE=\\sqrt{80/10};\\quad RSE=\\sqrt{80/8}",
+          "meaning": "RMSE_train=√(80/10)≈2,828; RSE=√(80/8)≈3,162."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §16, pagina PDF 178"
+    },
+    {
+      "id": "mca-c06-q091",
+      "topicId": "mca-c06-t14",
+      "question": "Un modello con R²=0,88 ma residui a U è sicuramente adeguato?",
+      "answer": "No: la forma a U suggerisce una relazione curvilinea non catturata dal modello lineare.",
+      "detail": "Bisogna rivedere la specificazione e valutare modelli alternativi; R² da solo non sostituisce la diagnostica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §16, pagina PDF 178"
+    },
+    {
+      "id": "mca-c06-q092",
+      "topicId": "mca-c06-t14",
+      "question": "Quali differenze deve saper argomentare all’orale lo studente sulla Lezione 26?",
+      "answer": "Errore teorico/residuo, origine di b=Cov/Var, criterio quadratico, interpretazione di R² e limiti dovuti a pattern dei residui e assunzioni.",
+      "detail": "Le risposte richiedono sia formula sia significato economico e un controllo di plausibilità dei dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §17, pagina PDF 178"
+    },
+    {
+      "id": "mca-c06-q093",
+      "topicId": "mca-c06-t14",
+      "question": "Quali formule formano il formulario conclusivo OLS e quali unità occorre rispettare?",
+      "answer": "ŷ=a+bx, e=y−ŷ, SSE=Σe², b=Sxy/Sxx, R²=1−SSE/SST, RSE=√[SSE/(n−2)], MAE=Σ|e|/n.",
+      "detail": "Con Y in euro: residui, RSE e MAE sono in €, SSE/SST/SSR in €², R² senza unità; è una correzione scientifica esplicitata nell’appendice.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat y=a+bx;\\quad e=y-\\hat y;\\quad SSE=\\sum e^2",
+          "meaning": "ŷ=a+bx, e=y−ŷ, SSE=Σe², b=Sxy/Sxx, R²=1−SSE/SST, RSE=√[SSE/(n−2)], MAE=Σ|e|/n."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 26, §18, pagina PDF 178"
+    },
+    {
+      "id": "mca-c06-q094",
+      "topicId": "mca-c06-t15",
+      "question": "Quali variabili può assumere X nella regressione comportamentale della Lezione 27?",
+      "answer": "Un indice temporale (mese, trimestre, settimana) oppure un prezzo in euro o in classi; Y può essere spesa, frequenza o acquisti.",
+      "detail": "La pendenza conserva sempre la regola di «variazione prevista di Y per una unità in più di X» ma cambia significato e unità secondo il problema.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §1, pagina PDF 179"
+    },
+    {
+      "id": "mca-c06-q095",
+      "topicId": "mca-c06-t15",
+      "question": "Quali sono le unità tipiche di una pendenza di regressione nel tempo o sul prezzo?",
+      "answer": "Trend acquisti: acquisti per mese aggiuntivo; trend spesa: euro per trimestre aggiuntivo; sensibilità al prezzo: acquisti per euro.",
+      "detail": "Non è corretto confrontare direttamente coefficienti stimati per variabili espresse su scale o unità differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §1, pagina PDF 179"
+    },
+    {
+      "id": "mca-c06-q096",
+      "topicId": "mca-c06-t15",
+      "question": "Che cos’è una serie temporale e quali condizioni servono per confrontare più clienti?",
+      "answer": "Successione di osservazioni ordinate in intervalli di tempo; servono stessa granularità, definizione di acquisto, periodo e regole per i dati assenti.",
+      "detail": "Per OLS si può usare t=1,…,T con intervalli equidistanti. Non confondere trimestri sequenziali con date irregolari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §2, pagina PDF 179"
+    },
+    {
+      "id": "mca-c06-q097",
+      "topicId": "mca-c06-t15",
+      "question": "Qual è la differenza fra zero acquisti e dato mancante in una serie temporale?",
+      "answer": "Zero è un’osservazione valida di inattività quando il cliente è osservabile; mancante significa che non disponiamo dell’informazione.",
+      "detail": "Sostituire uno zero con un missing oppure viceversa altera medie e pendenza; la decisione va documentata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Eliminare automaticamente mesi a zero dal calcolo di un trend della spesa per periodo.",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §2, pagina PDF 179"
+    },
+    {
+      "id": "mca-c06-q098",
+      "topicId": "mca-c06-t15",
+      "question": "Che cosa cambia se regredisco soltanto periodi con acquisto?",
+      "answer": "Stimo spesa condizionata all’attività, anziché spesa complessiva attesa per qualsiasi periodo.",
+      "detail": "Il criterio di selezione dei periodi cambia la domanda manageriale. Bisogna scegliere la base coerente con il problema, non quella che rende la retta più convincente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §2, pagina PDF 179"
+    },
+    {
+      "id": "mca-c06-q099",
+      "topicId": "mca-c06-t16",
+      "question": "Come possono tre clienti avere 48 acquisti in sette mesi ma comportamenti diversi?",
+      "answer": "Il cliente 1 è regolare, il 2 irregolare, il 3 in netto declino; il totale e la media sono uguali ma dispersione e trend differiscono.",
+      "detail": "Le serie ufficiali sono C1=[7,5,7,9,7,6,7], C2=[12,0,6,1,11,0,18], C3=[18,12,11,6,1,0,0].",
+      "example": "Tutti: 48 acquisti; media aritmetica su sette mesi ≈6,857.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §3, pagina PDF 179"
+    },
+    {
+      "id": "mca-c06-q100",
+      "topicId": "mca-c06-t16",
+      "question": "Perché le slide indicano frequenza 6,82 mentre la media delle sette osservazioni è 6,857?",
+      "answer": "6,82 deriva dalla normalizzazione su 211 giorni e dall’unità mensile adottata nelle slide; 48/7≈6,857 è la media delle sette osservazioni mensili.",
+      "detail": "I denominatori rappresentano due basi differenti: non correggere uno con l’altro o mescolarli nella stessa formula.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §3, pagina PDF 179"
+    },
+    {
+      "id": "mca-c06-q101",
+      "topicId": "mca-c06-t16",
+      "question": "Qual è la serie mensile ufficiale del cliente 3 e quale tendenza descrive?",
+      "answer": "[18,12,11,6,1,0,0] da gennaio a luglio; presenta decrescita netta e inattività negli ultimi due mesi.",
+      "detail": "Il numero medio di acquisti resta 48/7≈6,86, ma nasconde un possibile problema di retention che la pendenza evidenzia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §3, pagina PDF 179"
+    },
+    {
+      "id": "mca-c06-q102",
+      "topicId": "mca-c06-t16",
+      "question": "Quali sono le tre misure complementari per descrivere una serie comportamentale?",
+      "answer": "Media degli acquisti (livello), deviazione standard (variabilità) e pendenza OLS sul tempo (direzione e intensità del trend).",
+      "detail": "Un cliente con stessa media può avere dispersione e tendenza molto differenti: le tre misure rispondono a domande diverse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §4, pagina PDF 180"
+    },
+    {
+      "id": "mca-c06-q103",
+      "topicId": "mca-c06-t16",
+      "question": "Come si calcola la pendenza della frequenza sul tempo?",
+      "answer": "b=Cov(t,Y)/Var(t), usando lo stesso denominatore nelle due misure.",
+      "detail": "Il segno di Cov indica il verso della tendenza; dividere per Var(t) fornisce una variazione prevista di frequenza per unità temporale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "b=\\frac{\\operatorname{Cov}(t,Y)}{\\operatorname{Var}(t)}",
+          "meaning": "b=Cov(t,Y)/Var(t), usando lo stesso denominatore nelle due misure."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §4, pagina PDF 180"
+    },
+    {
+      "id": "mca-c06-q104",
+      "topicId": "mca-c06-t16",
+      "question": "Quali sono media t e varianza descrittiva di t=1,…,7?",
+      "answer": "Media t̄=4 e Var(t)=4.",
+      "detail": "Si usano per le pendenze dei tre clienti del caso delle slide; le unità temporali sono mesi consecutivi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\bar t=4;\\quad \\operatorname{Var}(t)=4",
+          "meaning": "Media t̄=4 e Var(t)=4."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §4, pagina PDF 180"
+    },
+    {
+      "id": "mca-c06-q105",
+      "topicId": "mca-c06-t16",
+      "question": "Quali deviazioni standard e pendenze riporta il manuale per i tre clienti?",
+      "answer": "C1: σ≈1,125, b≈+0,071; C2: σ≈6,512, b≈+0,821; C3: σ≈6,512, b≈−3,143.",
+      "detail": "La pendenza esprime acquisti per mese aggiuntivo; C1 quasi stabile, C2 irregolare e con tendenza positiva modesta, C3 in forte declino.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §4, pagina PDF 180"
+    },
+    {
+      "id": "mca-c06-q106",
+      "topicId": "mca-c06-t16",
+      "question": "Quali covarianze tempo-frequenza risultano per i tre clienti?",
+      "answer": "C1: circa +0,286; C2: +3,286; C3: −12,571.",
+      "detail": "Dividendo ogni covarianza per Var(t)=4 si ottengono rispettivamente le pendenze +0,071, +0,821 e −3,143.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "b=\\operatorname{Cov}(t,Y)/4",
+          "meaning": "C1: circa +0,286; C2: +3,286; C3: −12,571."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §4, pagina PDF 180"
+    },
+    {
+      "id": "mca-c06-q107",
+      "topicId": "mca-c06-t16",
+      "question": "Come si interpreta insieme media alta, σ elevata e pendenza negativa?",
+      "answer": "Il cliente è mediamente attivo, ma poco regolare e in declino lungo il periodo.",
+      "detail": "Media misura livello, sigma regolarità e b trend. Le soglie «alto/basso» dipendono dal settore e dall’orizzonte; b<0 non significa automaticamente che il cliente sia già perso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §5, pagina PDF 180"
+    },
+    {
+      "id": "mca-c06-q108",
+      "topicId": "mca-c06-t16",
+      "question": "Una pendenza positiva indica automaticamente fedeltà elevata o crescita futura certa?",
+      "answer": "No: è una tendenza lineare nel periodo osservato, non una garanzia di retention, causalità o redditività futura.",
+      "detail": "L’interpretazione va confrontata con frequenza, margini, recency, stagionalità e variabilità della serie.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §5, pagina PDF 180"
+    },
+    {
+      "id": "mca-c06-q109",
+      "topicId": "mca-c06-t17",
+      "question": "Qual è la struttura dell’esempio ufficiale della spesa su 20 trimestri?",
+      "answer": "Sono osservati 20 trimestri, di cui cinque con spesa positiva e quindici con Y=0.",
+      "detail": "Le spese positive sono nei trimestri t=1,9,17,19,20: 26,31; 61,89; 76,97; 49,90; 107,78 euro.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §6, pagina PDF 181"
+    },
+    {
+      "id": "mca-c06-q110",
+      "topicId": "mca-c06-t17",
+      "question": "Quali coefficienti OLS otteniamo usando solo i cinque trimestri attivi?",
+      "answer": "n=5; t̄=13,20; ȳ=64,570 €; b=2,8140 €/trimestre; a=27,4253 €.",
+      "detail": "La retta ŷ=27,4253+2,8140t descrive l’andamento della spesa condizionata alla presenza di acquisto.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat y_{attivi}=27.4253+2.8140t",
+          "meaning": "n=5; t̄=13,20; ȳ=64,570 €; b=2,8140 €/trimestre; a=27,4253 €."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §6, pagina PDF 181"
+    },
+    {
+      "id": "mca-c06-q111",
+      "topicId": "mca-c06-t17",
+      "question": "Quali coefficienti OLS otteniamo includendo tutti i venti trimestri, anche gli zeri?",
+      "answer": "n=20; t̄=10,50; ȳ=16,143 €; b=2,4144 €/trimestre; a=−9,2088 €.",
+      "detail": "La retta ŷ=−9,2088+2,4144t incorpora tanto la frequenza dei periodi attivi quanto la spesa in essi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat y_{tutti}=-9.2088+2.4144t",
+          "meaning": "n=20; t̄=10,50; ȳ=16,143 €; b=2,4144 €/trimestre; a=−9,2088 €."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §6, pagina PDF 181"
+    },
+    {
+      "id": "mca-c06-q112",
+      "topicId": "mca-c06-t17",
+      "question": "Quale differenza di oggetto descrivono le due regressioni del caso dei venti trimestri?",
+      "answer": "Solo attivi: spesa nei periodi in cui si acquista; tutti i trimestri: spesa per qualunque periodo, inclusa inattività.",
+      "detail": "Non si sceglie la regressione per un R² apparentemente migliore: la base dei dati deve rispondere alla domanda di business.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §6, pagina PDF 181"
+    },
+    {
+      "id": "mca-c06-q113",
+      "topicId": "mca-c06-t17",
+      "question": "Come si interpreta l’intercetta negativa del modello con zeri e cosa NON significa?",
+      "answer": "È un limite dell’approssimazione lineare, non la possibilità di sostenere una spesa reale negativa.",
+      "detail": "Le previsioni economicamente implausibili indicano che modello e dominio d’uso vanno verificati, soprattutto per importi vincolati a essere non negativi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §6, pagina PDF 181"
+    },
+    {
+      "id": "mca-c06-q114",
+      "topicId": "mca-c06-t18",
+      "question": "Qual è la price sensitivity Sp usata dal professore nella Lezione 27?",
+      "answer": "La pendenza della regressione della frequenza d’acquisto f sul prezzo p: Sp=Cov(p,f)/Var(p).",
+      "detail": "È una variazione assoluta per euro o per classe di prezzo, non l’elasticità percentuale della domanda.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_p=\\frac{\\operatorname{Cov}(p,f)}{\\operatorname{Var}(p)}",
+          "meaning": "La pendenza della regressione della frequenza d’acquisto f sul prezzo p: Sp=Cov(p,f)/Var(p)."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §7, pagina PDF 182"
+    },
+    {
+      "id": "mca-c06-q115",
+      "topicId": "mca-c06-t18",
+      "question": "Perché la frequenza di acquisto per fascia di prezzo è solo una proxy della probabilità?",
+      "answer": "Perché senza il numero di esposizioni/opportunità di acquisto a ogni prezzo il conteggio non è una probabilità normalizzata.",
+      "detail": "La regressione su acquisti per fascia descrive la distribuzione osservata di transazioni ai vari prezzi, non necessariamente una curva causale di domanda.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §7, pagina PDF 182"
+    },
+    {
+      "id": "mca-c06-q116",
+      "topicId": "mca-c06-t18",
+      "question": "Quali sono i prezzi e le frequenze d’acquisto dei due clienti nelle slide?",
+      "answer": "Prezzi 0,2,…,20 € (11 classi); C1=[0,0,1,2,1,1,0,0,0,0,0]; C2=[0,0,0,1,1,2,0,0,0,1,0].",
+      "detail": "I due clienti hanno entrambi cinque acquisti totali, ma distribuzioni dei prezzi differenti. Sono dati di conteggio per classe.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §8, pagina PDF 182"
+    },
+    {
+      "id": "mca-c06-q117",
+      "topicId": "mca-c06-t18",
+      "question": "Quali sono i valori Cov, Var e Sp del cliente 1 nella regressione su euro?",
+      "answer": "Var(p)=40 €²; Cov(p,f)=−1,4545; Sp=−0,03636 acquisti/€ e intercetta≈0,81818.",
+      "detail": "Il segno negativo indica un’associazione inversa tra prezzo e numero di acquisti osservati nelle classi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_{p,1}=-1.4545/40=-0.03636",
+          "meaning": "Var(p)=40 €²; Cov(p,f)=−1,4545; Sp=−0,03636 acquisti/€ e intercetta≈0,81818."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §8, pagina PDF 182"
+    },
+    {
+      "id": "mca-c06-q118",
+      "topicId": "mca-c06-t18",
+      "question": "Quali sono i valori Cov, Var e Sp del cliente 2 su euro?",
+      "answer": "Var(p)=40 €²; Cov(p,f)=+0,1818; Sp≈+0,00455 acquisti/€ e intercetta≈0,40909.",
+      "detail": "La lieve pendenza positiva non dimostra che il cliente comprerebbe di più a causa dell’aumento di prezzo: possono influire assortimento, qualità ed esposizioni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "S_{p,2}=0.1818/40\\approx0.00455",
+          "meaning": "Var(p)=40 €²; Cov(p,f)=+0,1818; Sp≈+0,00455 acquisti/€ e intercetta≈0,40909."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §8, pagina PDF 182"
+    },
+    {
+      "id": "mca-c06-q119",
+      "topicId": "mca-c06-t18",
+      "question": "Che cosa cambia usando classe 1–11 anziché prezzo in euro 0,2,…,20?",
+      "answer": "La pendenza per classe è due volte la pendenza per euro, perché una classe equivale a 2 €.",
+      "detail": "Le slide riportano circa −0,073 e +0,009 per classe, contro −0,036 e +0,005 per euro. Si modifica l’unità, non l’evidenza.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "b_{classe}=2b_{euro}",
+          "meaning": "La pendenza per classe è due volte la pendenza per euro, perché una classe equivale a 2 €."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §8, pagina PDF 182"
+    },
+    {
+      "id": "mca-c06-q120",
+      "topicId": "mca-c06-t18",
+      "question": "Perché non è lecito concludere che il cliente 2 preferisca causalmente i prezzi alti?",
+      "answer": "Il segno positivo della regressione su conteggi osservati può riflettere prodotti, disponibilità, qualità o esposizioni differenti.",
+      "detail": "Servono dati sui prezzi effettivamente proposti e sulle occasioni di scelta per interpretare una probabilità o costruire un’analisi causale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §8, pagina PDF 182"
+    },
+    {
+      "id": "mca-c06-q121",
+      "topicId": "mca-c06-t19",
+      "question": "Come si stima la probabilità empirica di acquisto a un prezzo specifico?",
+      "answer": "Numero di acquisti a quel prezzo diviso per numero di occasioni in cui acquistare a quel prezzo era possibile.",
+      "detail": "Due acquisti su venti esposizioni danno 10%; due su due danno 100%, pur a parità di acquisti osservati.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat P(\\text{acquisto}\\mid p)=\\frac{\\#\\text{acquisti a }p}{\\#\\text{occasioni a }p}",
+          "meaning": "Numero di acquisti a quel prezzo diviso per numero di occasioni in cui acquistare a quel prezzo era possibile."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §9, pagina PDF 183"
+    },
+    {
+      "id": "mca-c06-q122",
+      "topicId": "mca-c06-t19",
+      "question": "Qual è l’errore di interpretare un conteggio di due acquisti come probabilità d’acquisto?",
+      "answer": "Manca il denominatore delle occasioni: due acquisti possono rappresentare probabilità empiriche molto diverse.",
+      "detail": "Se abbiamo 20 offerte al prezzo dato, 2/20=0,10; se le offerte sono 2, 2/2=1,00.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §9, pagina PDF 183"
+    },
+    {
+      "id": "mca-c06-q123",
+      "topicId": "mca-c06-t19",
+      "question": "Quale retta OLS si ottiene per prezzi [2,4,6,8] e acquisti [8,6,4,2]?",
+      "answer": "b=−1 acquisto/€, a=10, quindi f̂=10−p.",
+      "detail": "Medie p̄=f̄=5; Sxy=−20 e Sxx=20. I conteggi sono confrontabili nell’esempio perché è ipotizzata uguale esposizione per prezzo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat f=10-p",
+          "meaning": "b=−1 acquisto/€, a=10, quindi f̂=10−p."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §10, pagina PDF 183"
+    },
+    {
+      "id": "mca-c06-q124",
+      "topicId": "mca-c06-t19",
+      "question": "Quali sono i prodotti degli scarti e i quadrati di X nel caso [2,4,6,8]?",
+      "answer": "Prodotti degli scarti: −9,−1,−1,−9 (somma −20); scarti quadratici di X: 9,1,1,9 (somma 20).",
+      "detail": "Questa tabella permette di ricostruire b=Sxy/Sxx=−1 senza applicare la formula a memoria.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §10, pagina PDF 183"
+    },
+    {
+      "id": "mca-c06-q125",
+      "topicId": "mca-c06-t19",
+      "question": "Qual è la differenza fra sensibilità lineare al prezzo ed elasticità-prezzo puntuale?",
+      "answer": "La sensibilità b misura ΔQ assoluta per euro; l’elasticità ε misura la variazione percentuale di Q rispetto alla variazione percentuale di p.",
+      "detail": "In Q(p)=a+bp, b è costante mentre ε(p)=b·p/(a+bp) dipende dal punto sulla curva.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\varepsilon(p)=\\frac{dQ}{dp}\\frac{p}{Q(p)}=b\\frac{p}{a+bp}",
+          "meaning": "La sensibilità b misura ΔQ assoluta per euro; l’elasticità ε misura la variazione percentuale di Q rispetto alla variazione percentuale di p."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §11, pagina PDF 183"
+    },
+    {
+      "id": "mca-c06-q126",
+      "topicId": "mca-c06-t19",
+      "question": "Con Q=100−2p, quanto vale l’elasticità a p=20 €?",
+      "answer": "Q=60 e ε=−2×20/60≈−0,667.",
+      "detail": "La pendenza è −2 unità/€ ovunque sulla retta, ma l’elasticità cambia al variare del prezzo e della quantità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\varepsilon(20)=-2\\cdot20/60=-0.667",
+          "meaning": "Q=60 e ε=−2×20/60≈−0,667."
+        }
+      ],
+      "connections": [
+        "Capitolo 4 — Pricing"
+      ],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §11, pagina PDF 183"
+    },
+    {
+      "id": "mca-c06-q127",
+      "topicId": "mca-c06-t19",
+      "question": "Quali criticità rendono rischiosa un’interpretazione causale della sensibilità al prezzo?",
+      "answer": "Prezzi endogeni a qualità, assortimento, promozioni, stagionalità, caratteristiche dei clienti e condizioni d’offerta.",
+      "detail": "Una retta osservata può descrivere frequenze storiche, ma non isolare l’effetto di un aumento di listino senza un disegno e dati appropriati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §12, pagina PDF 183"
+    },
+    {
+      "id": "mca-c06-q128",
+      "topicId": "mca-c06-t19",
+      "question": "Quali rischi statistici sono particolarmente rilevanti per regressioni su dati nel tempo?",
+      "answer": "Autocorrelazione dei residui, stagionalità, trend confusi con altre variabili e gestione scorretta di zeri/missing.",
+      "detail": "Un semplice modello lineare può produrre frequenze negative o probabilità sopra 1; per questi fenomeni esistono modelli più appropriati, ma gli esercizi del docente sono lineari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §12, pagina PDF 183"
+    },
+    {
+      "id": "mca-c06-q129",
+      "topicId": "mca-c06-t19",
+      "question": "Qual è il significato di un modello a due stadi per la spesa sporadica?",
+      "answer": "Separare probabilità di acquisto e importo speso condizionato al verificarsi dell’acquisto.",
+      "detail": "È un approfondimento metodologico menzionato nel manuale per trattare l’elevato numero di zeri senza confonderli con dati assenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §12, pagina PDF 183"
+    },
+    {
+      "id": "mca-c06-q130",
+      "topicId": "mca-c06-t20",
+      "question": "Quale sequenza operativa suggerisce il manuale per gli esercizi su trend o prezzo?",
+      "answer": "Definire X,Y e unità; verificare zeri; calcolare medie, varianza e covarianza; trovare b,a; interpretare segno e plausibilità della previsione.",
+      "detail": "Il risultato deve esplicitare se X è tempo, classe o euro, se Y è conteggio o probabilità, e quali limiti riguardano estrapolazione/causalità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §13, pagina PDF 184"
+    },
+    {
+      "id": "mca-c06-q131",
+      "topicId": "mca-c06-t20",
+      "question": "Esercizio A: per acquisti [2,4,4,6,9] nei mesi 1–5, qual è il trend OLS?",
+      "answer": "t̄=3, ȳ=5; Sxx=10, Sxy=16, b=1,6, a=0,2; ŷ=0,2+1,6t.",
+      "detail": "La pendenza è positiva: circa 1,6 acquisti previsti per mese aggiuntivo. Per t=6, ŷ=9,8 ma fuori dal campione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat y=0.2+1.6t",
+          "meaning": "t̄=3, ȳ=5; Sxx=10, Sxy=16, b=1,6, a=0,2; ŷ=0,2+1,6t."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §14, pagina PDF 184"
+    },
+    {
+      "id": "mca-c06-q132",
+      "topicId": "mca-c06-t20",
+      "question": "Esercizio B: spese 30,0,30,0 su quattro periodi; quali medie si ottengono?",
+      "answer": "Media per periodo=15 €; media nei soli periodi di acquisto=30 €.",
+      "detail": "La media condizionata raddoppia perché ignora i periodi senza transazione, mentre l’altra misura la spesa per periodo generico.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\bar y_{tutti}=60/4=15;\\quad\\bar y_{attivi}=60/2=30",
+          "meaning": "Media per periodo=15 €; media nei soli periodi di acquisto=30 €."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §14, pagina PDF 184"
+    },
+    {
+      "id": "mca-c06-q133",
+      "topicId": "mca-c06-t20",
+      "question": "Esercizio C: p=[5,10,15] e f=[9,6,3]; qual è la sensibilità?",
+      "answer": "b=−0,6 acquisti/€ e retta f̂=12−0,6p.",
+      "detail": "p̄=10, f̄=6, Sxy=−30 e Sxx=50: associazione negativa nelle tre classi osservate.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat f=12-0.6p",
+          "meaning": "b=−0,6 acquisti/€ e retta f̂=12−0,6p."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §14, pagina PDF 184"
+    },
+    {
+      "id": "mca-c06-q134",
+      "topicId": "mca-c06-t20",
+      "question": "Esercizio D: con b=−0,10 acquisti/classe e classi di 5 €, qual è b per euro?",
+      "answer": "b_euro=−0,10/5=−0,02 acquisti/€.",
+      "detail": "Cambiare unità di X cambia il coefficiente numerico senza cambiare il comportamento osservato.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "b_{euro}=b_{classe}/5=-0.02",
+          "meaning": "b_euro=−0,10/5=−0,02 acquisti/€."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §14, pagina PDF 184"
+    },
+    {
+      "id": "mca-c06-q135",
+      "topicId": "mca-c06-t20",
+      "question": "Quali distinzioni fondamentali riprende l’orale sulla Lezione 27?",
+      "answer": "Media vs trend; zeri vs dati mancanti; conteggi vs probabilità; sensibilità vs elasticità; associazione positiva vs causalità; rischi temporali.",
+      "detail": "In ciascuna risposta occorre esplicitare l’unità del coefficiente e la popolazione/periodo a cui si riferisce.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §15, pagina PDF 184"
+    },
+    {
+      "id": "mca-c06-q136",
+      "topicId": "mca-c06-t20",
+      "question": "Quali formule sintetizzano la regressione di tendenza e la sensibilità?",
+      "answer": "Var(X)=Σ(X−X̄)²/n; Cov=Σ(X−X̄)(Y−Ȳ)/n; b=Cov/Var; a=Ȳ−bX̄; ŷ=a+bX.",
+      "detail": "Il formulario include anche ε=(dQ/dp)(p/Q) come approfondimento distinto dalla price sensitivity lineare.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "b=\\frac{\\operatorname{Cov}(X,Y)}{\\operatorname{Var}(X)};\\quad a=\\bar Y-b\\bar X",
+          "meaning": "Var(X)=Σ(X−X̄)²/n; Cov=Σ(X−X̄)(Y−Ȳ)/n; b=Cov/Var; a=Ȳ−bX̄; ŷ=a+bX."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 27, §16, pagina PDF 185"
+    },
+    {
+      "id": "mca-c06-q137",
+      "topicId": "mca-c06-t21",
+      "question": "A che cosa serve la Conjoint Analysis nella Customer Analytics?",
+      "answer": "A valutare come attributi e relativi livelli concorrono alla preferenza per un prodotto completo, misurando trade-off fra caratteristiche.",
+      "detail": "Il cliente confronta profili che combinano marca, prezzo, materiali, design o servizio; il modello cerca di stimare i contributi di ciascuna caratteristica mantenendo fisse le altre.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 3 — preferenze e posizionamento"
+      ],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §1, pagina PDF 185"
+    },
+    {
+      "id": "mca-c06-q138",
+      "topicId": "mca-c06-t21",
+      "question": "Qual è la differenza tra chiedere «preferisci un prezzo basso?» e svolgere una Conjoint Analysis?",
+      "answer": "La prima domanda isola un attributo; la conjoint quantifica quanta preferenza si guadagna o perde scambiando più attributi contemporaneamente.",
+      "detail": "Una riduzione di prezzo può compensare un materiale meno pregiato: la domanda è quantificare il compromesso nelle configurazioni realistiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §1, pagina PDF 185"
+    },
+    {
+      "id": "mca-c06-q139",
+      "topicId": "mca-c06-t21",
+      "question": "Come si distinguono attributo, livello, profilo e valutazione?",
+      "answer": "Attributo: caratteristica; livello: valore dell’attributo; profilo: combinazione completa di livelli; valutazione: risposta del consumatore.",
+      "detail": "Esempio: attributo prezzo, livello 125 €, profilo scarpa in pelle fatta in Italia a 125 €, valutazione rating 7.",
+      "example": "«Paese di produzione» è attributo; «Italia» è livello.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §2, pagina PDF 185"
+    },
+    {
+      "id": "mca-c06-q140",
+      "topicId": "mca-c06-t21",
+      "question": "Perché scelta degli attributi e range dei livelli influenza le stime conjoint?",
+      "answer": "Le importanze dipendono dalle alternative presentate: valori poco realistici o range troppo stretti/ampi distorcono il confronto.",
+      "detail": "Il prezzo tra 50 e 200 € può produrre una variazione di utilità molto maggiore di un esperimento limitato a 120–140 €: l’importanza non è assoluta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §2, pagina PDF 185"
+    },
+    {
+      "id": "mca-c06-q141",
+      "topicId": "mca-c06-t21",
+      "question": "Qual è la funzione di utilità lineare additiva utilizzata negli esercizi?",
+      "answer": "U=k+β₁x₁+β₂x₂+…+βₙxₙ; k è costante e i β misurano contributi delle variabili date le altre.",
+      "detail": "Negli esempi il rating su scala Likert è trattato numericamente come Y di una regressione, una semplificazione modellistica.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "U=k+\\sum_{j=1}^n\\beta_jx_j",
+          "meaning": "U=k+β₁x₁+β₂x₂+…+βₙxₙ; k è costante e i β misurano contributi delle variabili date le altre."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §3, pagina PDF 185"
+    },
+    {
+      "id": "mca-c06-q142",
+      "topicId": "mca-c06-t21",
+      "question": "Perché il modello conjoint proposto è additivo e compensatorio?",
+      "answer": "Additivo perché somma i contributi; compensatorio perché un attributo sfavorevole può essere controbilanciato da altri favorevoli.",
+      "detail": "Non ogni preferenza reale è completamente compensatoria: alcuni clienti possono avere soglie o requisiti minimi rigidi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §3, pagina PDF 185"
+    },
+    {
+      "id": "mca-c06-q143",
+      "topicId": "mca-c06-t21",
+      "question": "Qual è il significato di un coefficiente β di una dummy nella funzione di utilità?",
+      "answer": "La differenza di utilità prevista fra il livello indicato dalla dummy e il livello di riferimento, a parità degli altri attributi.",
+      "detail": "Il coefficiente non è automaticamente l’importanza dell’intero attributo; va considerata l’ampiezza fra tutte le part-worth dei suoi livelli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §3, pagina PDF 185"
+    },
+    {
+      "id": "mca-c06-q144",
+      "topicId": "mca-c06-t22",
+      "question": "Quali sono le sei fasi operative della Conjoint Analysis riportate dal manuale?",
+      "answer": "Definire problema, attributi e livelli; costruire profili; raccogliere rating/ranking/scelte; codificare dummy; stimare regressione; interpretare utilità e decisioni.",
+      "detail": "Gli stimoli possono essere full-profile o pairwise. Il metodo degli esercizi del docente usa rating trattati come variabile dipendente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §4, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q145",
+      "topicId": "mca-c06-t22",
+      "question": "Che differenza c’è fra full-profile e pairwise nel disegno degli stimoli?",
+      "answer": "Full-profile mostra un profilo con livelli di tutti gli attributi; pairwise confronta coppie di attributi o valutazioni fra coppie.",
+      "detail": "La scelta del tipo di stimolo influenza carico cognitivo, dati disponibili e interpretazione; il modello stimato deve essere coerente con le risposte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §4, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q146",
+      "topicId": "mca-c06-t22",
+      "question": "Quali risposte del consumatore può utilizzare un esperimento conjoint?",
+      "answer": "Ordinamenti, rating di preferenza/intenzione di acquisto oppure scelte effettive fra alternative.",
+      "detail": "Non tutte richiedono lo stesso modello statistico: la regressione lineare sui rating illustrata nelle slide è distinta dalla choice-based conjoint.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §4, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q147",
+      "topicId": "mca-c06-t22",
+      "question": "Perché non si deve trattare una variabile nominale come una quantità numerica?",
+      "answer": "Codici come Lexus=1 e Infiniti=2 sono etichette, non una differenza quantitativa interpretabile: si ricorre alle dummy.",
+      "detail": "La codifica 0/1 rappresenta presenza di un livello rispetto a un baseline e permette stimare differenze di utilità senza imporre una falsa scala.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §5, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q148",
+      "topicId": "mca-c06-t22",
+      "question": "Quante dummy si usano per un attributo con L livelli e intercetta?",
+      "answer": "L−1 dummy; il livello non codificato è il riferimento.",
+      "detail": "Con 3 livelli A,B,C: D1(A)=1,D2(A)=0; D1(B)=0,D2(B)=1; C=(0,0). Il livello C continua a possedere l’attributo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\#\\text{dummy}=L-1",
+          "meaning": "L−1 dummy; il livello non codificato è il riferimento."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §5, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q149",
+      "topicId": "mca-c06-t22",
+      "question": "Che cos’è la «dummy variable trap» e come si evita?",
+      "answer": "Collinearità perfetta prodotta includendo tutte le L dummy di un attributo e contemporaneamente l’intercetta.",
+      "detail": "Eliminare una dummy per attributo sceglie il riferimento; gli altri coefficienti diventano differenze rispetto a esso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §5, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q150",
+      "topicId": "mca-c06-t22",
+      "question": "Che cosa succede cambiando il livello di riferimento di una variabile categorica?",
+      "answer": "Cambiano costante e singoli coefficienti, ma non le utilità previste degli stessi profili se il modello è equivalente.",
+      "detail": "Una part-worth negativa significa preferenza relativa inferiore al baseline, non utilità assoluta negativa del prodotto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §5, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q151",
+      "topicId": "mca-c06-t23",
+      "question": "Come sono codificate marca e carrozzeria nel caso ufficiale Lexus/Infiniti?",
+      "answer": "X1=1 per Infiniti (0 Lexus); X2=1 per SUV (0 Sedan).",
+      "detail": "Sono due variabili binarie; il profilo di riferimento Lexus Sedan ha X1=X2=0.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §6, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q152",
+      "topicId": "mca-c06-t23",
+      "question": "Quali tre profili/rating compongono l’esempio ufficiale Lexus/Infiniti?",
+      "answer": "Infiniti Sedan: rating 5; Lexus SUV: 6; Lexus Sedan: 2.",
+      "detail": "Il dataset fornisce tre equazioni per tre parametri del modello U=k+b1X1+b2X2.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §6, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q153",
+      "topicId": "mca-c06-t23",
+      "question": "Quale funzione di utilità risulta dall’esempio delle auto e come si ricava?",
+      "answer": "U=2+3X1+4X2; k=2 dal riferimento, b1=5−2=3, b2=6−2=4.",
+      "detail": "Il passaggio da Lexus a Infiniti vale +3 nel modello; da Sedan a SUV +4, mantenuti fissi gli altri livelli.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "U=2+3X_1+4X_2",
+          "meaning": "U=2+3X1+4X2; k=2 dal riferimento, b1=5−2=3, b2=6−2=4."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §6, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q154",
+      "topicId": "mca-c06-t23",
+      "question": "Qual è la previsione per Infiniti SUV e perché è problematica?",
+      "answer": "U=2+3+4=9, superiore alla scala rating 1–7.",
+      "detail": "Il modello additivo interpola i tre punti ma la previsione del quarto profilo non valutato è fuori scala; non è un voto garantito o una previsione affidabile.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "U(\\text{Infiniti SUV})=9",
+          "meaning": "U=2+3+4=9, superiore alla scala rating 1–7."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §6, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q155",
+      "topicId": "mca-c06-t23",
+      "question": "Perché nell’esempio auto non ci sono gradi di libertà residui per verificare l’adattamento?",
+      "answer": "Ci sono tre osservazioni e tre parametri stimati (costante e due dummy): la stima interpola perfettamente i punti disponibili.",
+      "detail": "Una SSE nulla in questo piccolo disegno non prova che il modello sia valido su profili o persone non osservati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §6, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q156",
+      "topicId": "mca-c06-t24",
+      "question": "Quali attributi e livelli considera il caso ufficiale delle scarpe?",
+      "answer": "Tomaia (pelle, camoscio, similpelle), provenienza (Italia, USA, Estremo Oriente), prezzo (50 €, 125 €, 200 €).",
+      "detail": "Ci sono nove profili valutati dal consumatore; ogni attributo ha tre livelli, quindi sei dummy complessive più intercetta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §7, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q157",
+      "topicId": "mca-c06-t24",
+      "question": "Quali livelli sono riferimenti e quali sei dummy sono usate nel caso scarpe?",
+      "answer": "Riferimenti: similpelle, Estremo Oriente e 200 €; dummy: pelle, camoscio, Italia, USA, 50 €, 125 €.",
+      "detail": "Il riferimento ha contributo part-worth 0 per costruzione della codifica, non utilità assoluta nulla.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §7, pagina PDF 186"
+    },
+    {
+      "id": "mca-c06-q158",
+      "topicId": "mca-c06-t24",
+      "question": "Qual è la funzione di utilità stimata per i nove profili di scarpe nelle slide?",
+      "answer": "Û=4,222+1X1−0,333X2+1X3+0,667X4+2,333X5+1,333X6.",
+      "detail": "Coefficienti arrotondati: pelle +1, camoscio −0,333; Italia +1, USA +0,667; prezzo 50 +2,333, 125 +1,333; riferimenti a 0.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat U=4.222+X_1-0.333X_2+X_3+0.667X_4+2.333X_5+1.333X_6",
+          "meaning": "Û=4,222+1X1−0,333X2+1X3+0,667X4+2,333X5+1,333X6."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §7, pagina PDF 187"
+    },
+    {
+      "id": "mca-c06-q159",
+      "topicId": "mca-c06-t24",
+      "question": "Quali sono le part-worth della tomaia nel caso scarpe?",
+      "answer": "Pelle +1,000; camoscio −0,333; similpelle riferimento 0,000.",
+      "detail": "A parità di altri attributi, camoscio è leggermente sotto il riferimento mentre pelle è sopra. Negativo non significa rating totale negativo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §7, pagina PDF 187"
+    },
+    {
+      "id": "mca-c06-q160",
+      "topicId": "mca-c06-t24",
+      "question": "Quali sono le part-worth della provenienza nel caso scarpe?",
+      "answer": "Italia +1,000; USA +0,667; Estremo Oriente riferimento 0.",
+      "detail": "I valori sono contributi relativi al luogo di riferimento nello stesso modello; non implicano una valutazione causale indipendente dal questionario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §7, pagina PDF 187"
+    },
+    {
+      "id": "mca-c06-q161",
+      "topicId": "mca-c06-t24",
+      "question": "Quali sono le part-worth dei tre livelli di prezzo nel caso scarpe?",
+      "answer": "50 €: +2,333; 125 €: +1,333; 200 €: 0 di riferimento.",
+      "detail": "Nel range scelto prezzi più bassi ricevono contributi maggiori, ma il modello classifica livelli discreti, non stima direttamente una retta continua nel prezzo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §7, pagina PDF 187"
+    },
+    {
+      "id": "mca-c06-q162",
+      "topicId": "mca-c06-t24",
+      "question": "Qual è l’utilità prevista del profilo pelle–Italia–50 € e il suo residuo?",
+      "answer": "Û≈8,555; rating osservato 9, dunque residuo ≈+0,445.",
+      "detail": "Somma: 4,222+1+1+2,333=8,555. Il residuo positivo indica giudizio reale superiore alla previsione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\hat U=4.222+1+1+2.333=8.555;\\ e=9-8.555=0.445",
+          "meaning": "Û≈8,555; rating osservato 9, dunque residuo ≈+0,445."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §7, pagina PDF 187"
+    },
+    {
+      "id": "mca-c06-q163",
+      "topicId": "mca-c06-t24",
+      "question": "Quale conclusione trarre dal fatto che la regressione scarpe non riproduce esattamente tutti i rating?",
+      "answer": "È una stima OLS additiva che approssima nove giudizi, non un sistema di equazioni necessariamente soddisfatto senza scarti.",
+      "detail": "Servono più osservazioni del minimo e un disegno adeguato per valutare l’affidabilità; coefficiente e interazione non catturano necessariamente tutta la preferenza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §7, pagina PDF 187"
+    },
+    {
+      "id": "mca-c06-q164",
+      "topicId": "mca-c06-t25",
+      "question": "Come si calcola l’importanza relativa di un attributo nella Conjoint Analysis?",
+      "answer": "Range dell’attributo=max(part-worth)−min(part-worth), includendo il riferimento 0; importanza%=100×range/somma dei range.",
+      "detail": "Non si confrontano direttamente coefficienti grezzi di attributi con numerosi livelli e codifiche differenti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "I_j=100\\frac{\\max_lu_{jl}-\\min_lu_{jl}}{\\sum_h(\\max_lu_{hl}-\\min_lu_{hl})}",
+          "meaning": "Range dell’attributo=max(part-worth)−min(part-worth), includendo il riferimento 0; importanza%=100×range/somma dei range."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §8, pagina PDF 188"
+    },
+    {
+      "id": "mca-c06-q165",
+      "topicId": "mca-c06-t25",
+      "question": "Quali sono i tre range di utilità nell’esempio scarpe?",
+      "answer": "Tomaia=1,333; provenienza=1,000; prezzo=2,333; totale=4,666.",
+      "detail": "Materiale: 1−(−0,333); Paese: 1−0; Prezzo: 2,333−0; il range riflette l’ampiezza dei livelli testati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §8, pagina PDF 188"
+    },
+    {
+      "id": "mca-c06-q166",
+      "topicId": "mca-c06-t25",
+      "question": "Quali importanze relative risultano per tomaia, provenienza e prezzo?",
+      "answer": "Tomaia≈28,57%; provenienza≈21,43%; prezzo≈50,00%.",
+      "detail": "Il prezzo pesa di più all’interno degli intervalli scelti: non significa che metà delle decisioni d’acquisto reali dipenda universalmente dal prezzo.",
+      "example": "Prezzo: 2,333/4,666≈50%.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §8, pagina PDF 188"
+    },
+    {
+      "id": "mca-c06-q167",
+      "topicId": "mca-c06-t25",
+      "question": "Quali sono i principali limiti della regressione conjoint sui rating?",
+      "answer": "Dipendenza da livelli e intervistati, divario dichiarato/reale, additività senza interazioni, pochi stimoli, sensibilità al riferimento e approssimazione di scale ordinali.",
+      "detail": "I rating Likert vengono trattati numericamente, ma non necessariamente possiedono distanze perfettamente uguali. Le stime non sono automaticamente causalità o vendite previste.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §9, pagina PDF 188"
+    },
+    {
+      "id": "mca-c06-q168",
+      "topicId": "mca-c06-t25",
+      "question": "Perché un modello additivo può mancare una preferenza importante?",
+      "answer": "Perché può esistere interazione: il valore di una marca dipende dal tipo di prodotto o da un’altra caratteristica.",
+      "detail": "Senza termini di interazione, il modello somma contributi costanti e può generare profili fuori scala, come Infiniti SUV=9 su una scala fino a 7.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §9, pagina PDF 188"
+    },
+    {
+      "id": "mca-c06-q169",
+      "topicId": "mca-c06-t25",
+      "question": "Perché una preferenza dichiarata non coincide con un acquisto certo?",
+      "answer": "Budget, disponibilità, alternative, contesto e prezzo reale possono modificare la scelta anche se il rating previsto è elevato.",
+      "detail": "La Conjoint Analysis misura preferenza modellata; per trasformarla in vendite servono ipotesi ulteriori e dati di mercato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §9, pagina PDF 188"
+    },
+    {
+      "id": "mca-c06-q170",
+      "topicId": "mca-c06-t26",
+      "question": "Quali sono le tre definizioni del Reservation Price indicate dalle slide?",
+      "answer": "Prezzo massimo disposto a pagare; soglia oltre la quale non si acquista; prezzo di indifferenza fra utilità dell’acquisto e del non acquisto, a reddito dato.",
+      "detail": "Le definizioni sono collegate ma la soglia di non acquisto e la parità di utilità richiedono ipotesi su opzioni disponibili e decisione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §10, pagina PDF 188"
+    },
+    {
+      "id": "mca-c06-q171",
+      "topicId": "mca-c06-t26",
+      "question": "Qual è la differenza tra Reservation Price, listino e prezzo osservato?",
+      "answer": "Il Reservation Price è una soglia teorica di disponibilità a pagare; il listino è il prezzo richiesto e il prezzo pagato è il corrispettivo effettivo di una transazione.",
+      "detail": "Il massimo prezzo pagato in passato non identifica necessariamente la massima disponibilità a pagare del cliente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §10, pagina PDF 188"
+    },
+    {
+      "id": "mca-c06-q172",
+      "topicId": "mca-c06-t26",
+      "question": "Come si ricava il Reservation Price da U_acq(p)=V−αp e U_non=U0?",
+      "answer": "Imponendo indifferenza V−αp*=U0: p*=(V−U0)/α, per α>0.",
+      "detail": "Sotto p* l’acquisto ha utilità maggiore, sopra p* il non acquisto è preferito, a parità delle altre condizioni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "p^*=\\frac{V-U_0}{\\alpha},\\quad\\alpha>0",
+          "meaning": "Imponendo indifferenza V−αp*=U0: p*=(V−U0)/α, per α>0."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §11, pagina PDF 188"
+    },
+    {
+      "id": "mca-c06-q173",
+      "topicId": "mca-c06-t26",
+      "question": "Qual è il prezzo di riserva del caso U_acq=7,5−0,025p e U_non=4?",
+      "answer": "p*=(7,5−4)/0,025=140 €.",
+      "detail": "A p=100: U_acq=5>4, acquisto preferito; a p=160: U_acq=3,5<4, non acquisto preferito.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "p^*=3.5/0.025=140\\,\\mathrm{€}",
+          "meaning": "p*=(7,5−4)/0,025=140 €."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §11, pagina PDF 188"
+    },
+    {
+      "id": "mca-c06-q174",
+      "topicId": "mca-c06-t26",
+      "question": "Perché il modello delle scarpe con prezzi 50,125,200 € non fornisce direttamente un Reservation Price preciso?",
+      "answer": "Il prezzo è una variabile categorica a tre livelli, non una funzione continua, e manca un’alternativa esplicita di non acquisto.",
+      "detail": "Le differenze di utilità fra i tre livelli non determinano una soglia monetaria continua senza ipotesi e un metodo ulteriori.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §12, pagina PDF 189"
+    },
+    {
+      "id": "mca-c06-q175",
+      "topicId": "mca-c06-t26",
+      "question": "Come si stima la willingness to pay marginale per un attributo con prezzo continuo lineare?",
+      "answer": "A utilità costante: Δp=−(β_attributo/β_prezzo)ΔA, con β_prezzo<0 e diverso da zero.",
+      "detail": "La formula non si applica meccanicamente alle dummy di prezzo della Conjoint scarpe e vale nel campo dove il modello è plausibile.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\Delta p=-\\frac{\\beta_a}{\\beta_p}\\Delta A,\\quad\\beta_p<0",
+          "meaning": "A utilità costante: Δp=−(β_attributo/β_prezzo)ΔA, con β_prezzo<0 e diverso da zero."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §12, pagina PDF 189"
+    },
+    {
+      "id": "mca-c06-q176",
+      "topicId": "mca-c06-t27",
+      "question": "Quali cinque metodi di rilevazione della disponibilità a pagare sono citati?",
+      "answer": "Acquisti reali, self-stated WTP, Conjoint Analysis, contingent valuation e aste sperimentali.",
+      "detail": "Ogni metodo osserva una cosa diversa: comportamento reale, dichiarazione, trade-off di profili, scenario ipotetico o offerta incentivata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §13, pagina PDF 189"
+    },
+    {
+      "id": "mca-c06-q177",
+      "topicId": "mca-c06-t27",
+      "question": "Quali vantaggi e limiti hanno dati di acquisto effettivi e self-stated WTP?",
+      "answer": "Acquisti reali riflettono transazioni, ma sono condizionati da prezzi e disponibilità; WTP dichiarata è semplice ma esposta a bias ipotetico.",
+      "detail": "Un acquisto a 100 € non dimostra che la soglia individuale sia esattamente 100 €; una risposta dichiarata potrebbe non tradursi in azione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §13, pagina PDF 189"
+    },
+    {
+      "id": "mca-c06-q178",
+      "topicId": "mca-c06-t27",
+      "question": "Qual è la differenza tra contingent valuation, aste sperimentali e conjoint?",
+      "answer": "Contingent valuation usa scenari ipotetici; aste raccolgono offerte in contesto controllato; conjoint analizza preferenze fra combinazioni di attributi.",
+      "detail": "Differiscono nei dati prodotti, negli incentivi e nella capacità di collegare dichiarazioni e scelte reali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §13, pagina PDF 189"
+    },
+    {
+      "id": "mca-c06-q179",
+      "topicId": "mca-c06-t27",
+      "question": "Che cosa distingue Choice-Based Conjoint (CBC) dalla conjoint con rating delle slide?",
+      "answer": "CBC richiede di scegliere fra profili; la conjoint del docente stima utilità lineari a partire da rating.",
+      "detail": "La CBC può usare modelli logit e stime gerarchiche; è un approfondimento, non una sostituzione del metodo da conoscere per gli esercizi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §14, pagina PDF 189"
+    },
+    {
+      "id": "mca-c06-q180",
+      "topicId": "mca-c06-t27",
+      "question": "Qual è la formula logit di una probabilità di scelta in CBC?",
+      "answer": "P(i)=exp(Ui)/Σj exp(Uj) sulle alternative disponibili.",
+      "detail": "La probabilità è relativa al set di scelta e dipende dalle utilità; la quota simulata non equivale a quota di mercato reale garantita.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "P(i)=\\frac{e^{U_i}}{\\sum_j e^{U_j}}",
+          "meaning": "P(i)=exp(Ui)/Σj exp(Uj) sulle alternative disponibili."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §14, pagina PDF 189"
+    },
+    {
+      "id": "mca-c06-q181",
+      "topicId": "mca-c06-t27",
+      "question": "Perché quote simulate tramite CBC non garantiscono vendite reali?",
+      "answer": "Perché il mercato reale dipende da notorietà, assortimento disponibile, distribuzione, prezzo, non acquisto e qualità dei dati.",
+      "detail": "È necessario esplicitare alternative, possibile opt-out e vincoli commerciali prima di tradurre preferenze in previsioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §14, pagina PDF 189"
+    },
+    {
+      "id": "mca-c06-q182",
+      "topicId": "mca-c06-t28",
+      "question": "Esercizio A: nel modello U=3+2D_A−D_B, quali utilità hanno i tre livelli?",
+      "answer": "U(A)=5, U(B)=2 e U(C riferimento)=3.",
+      "detail": "A vale due punti in più del riferimento C; B vale un punto in meno. Il coefficiente −1 non significa utilità totale negativa.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "U_A=5;\\ U_B=2;\\ U_C=3",
+          "meaning": "U(A)=5, U(B)=2 e U(C riferimento)=3."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §15, pagina PDF 190"
+    },
+    {
+      "id": "mca-c06-q183",
+      "topicId": "mca-c06-t28",
+      "question": "Esercizio B: quale profilo vince fra pelle–Italia–125 € e camoscio–USA–50 €?",
+      "answer": "U1≈7,555 e U2≈6,889: il primo profilo è preferito nel modello di circa 0,666 punti.",
+      "detail": "Somme sui coefficienti arrotondati: U1=4,222+1+1+1,333; U2=4,222−0,333+0,667+2,333.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\Delta U=7.555-6.889\\approx0.666",
+          "meaning": "U1≈7,555 e U2≈6,889: il primo profilo è preferito nel modello di circa 0,666 punti."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §15, pagina PDF 190"
+    },
+    {
+      "id": "mca-c06-q184",
+      "topicId": "mca-c06-t28",
+      "question": "Esercizio C: con range di attributi 2,1 e 3, quali importanze relative si ottengono?",
+      "answer": "33,33%, 16,67% e 50,00% rispettivamente.",
+      "detail": "La somma dei range è 6: la quota per attributo è il suo range diviso per 6, non il coefficiente di una singola dummy.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §15, pagina PDF 190"
+    },
+    {
+      "id": "mca-c06-q185",
+      "topicId": "mca-c06-t28",
+      "question": "Esercizio D: con β_attributo=1,8 e β_prezzo=−0,03, qual è la WTP marginale?",
+      "answer": "Un miglioramento unitario può compensare circa 60 € di maggior prezzo a utilità prevista costante.",
+      "detail": "Δp=−1,8/(−0,03)=60 €; vale sotto le ipotesi del modello continuo e a parità degli altri attributi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\Delta p=-1.8/(-0.03)=60\\,\\mathrm{€}",
+          "meaning": "Un miglioramento unitario può compensare circa 60 € di maggior prezzo a utilità prevista costante."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §15, pagina PDF 190"
+    },
+    {
+      "id": "mca-c06-q186",
+      "topicId": "mca-c06-t28",
+      "question": "Esercizio E: U_acq=12−0,04p e U_non=5; qual è il Reservation Price?",
+      "answer": "p*=(12−5)/0,04=175 €.",
+      "detail": "A 150 €, U_acq=6>5: acquisto preferito; a 200 €, U_acq=4<5: non acquisto preferito.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "p^*=7/0.04=175\\,\\mathrm{€}",
+          "meaning": "p*=(12−5)/0,04=175 €."
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §15, pagina PDF 190"
+    },
+    {
+      "id": "mca-c06-q187",
+      "topicId": "mca-c06-t28",
+      "question": "Quali domande d’esame riassumono i punti più importanti della Conjoint Analysis?",
+      "answer": "Scopo della conjoint, necessità di L−1 dummy, interpretazione dei part-worth, importanza relativa, Reservation Price e limiti di previsioni di rating e vendite.",
+      "detail": "La risposta deve distinguere differenza di utilità rispetto a un riferimento, importanza del range e prezzo di riserva come soglia non ricavabile dalla sola codifica discreta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §16, pagina PDF 190"
+    },
+    {
+      "id": "mca-c06-q188",
+      "topicId": "mca-c06-t28",
+      "question": "Quali sono le formule chiave del formulario di Conjoint Analysis?",
+      "answer": "U=k+Σβjxj; L−1 dummy; range=max−min; importanza%=100×range/Σrange; p*=(V−U0)/α; Δp=−(βa/βp)ΔA.",
+      "detail": "La formula logit CBC è presentata come integrazione. Le premesse di ogni formula devono essere dichiarate, soprattutto prezzo discreto vs continuo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "U=k+\\sum_j\\beta_jx_j",
+          "meaning": "Utilità additiva"
+        },
+        {
+          "latex": "I_j=100\\frac{range_j}{\\sum_h range_h}",
+          "meaning": "Importanza relativa"
+        },
+        {
+          "latex": "p^*=(V-U_0)/\\alpha",
+          "meaning": "Soglia di indifferenza"
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §17, pagina PDF 191"
+    },
+    {
+      "id": "mca-c06-q189",
+      "topicId": "mca-c06-t28",
+      "question": "Quali correzioni scientifiche della revisione finale riguardano direttamente la regressione?",
+      "answer": "SSE, SST e SSR hanno unità quadrate; RSE/RMSE hanno unità di Y; R²=r² solo nel modello lineare semplice con intercetta.",
+      "detail": "La revisione ribadisce che formule e identità vanno applicate soltanto nelle ipotesi specificate, senza attribuire causalità ai fit.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Lezione 26 — indici di adattamento"
+      ],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §Appendice E, pagina PDF 194"
+    },
+    {
+      "id": "mca-c06-q190",
+      "topicId": "mca-c06-t28",
+      "question": "Quali due cautele essenziali ribadisce la revisione finale sui comportamenti temporali e sul prezzo?",
+      "answer": "Zero vero non equivale a dato mancante; la sensibilità al prezzo è Cov(p,f)/Var(p), non elasticità.",
+      "detail": "La regressione condizionata all’acquisto e quella con gli zeri stimano oggetti differenti. La pendenza è una variazione assoluta per unità di prezzo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Lezione 27 — trend e sensibilità"
+      ],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §Appendice E, pagina PDF 194"
+    },
+    {
+      "id": "mca-c06-q191",
+      "topicId": "mca-c06-t28",
+      "question": "Quali limiti delle dummy e della WTP ricorda la revisione finale?",
+      "answer": "Una part-worth negativa è inferiore al riferimento, non utilità totale negativa; WTP=−βa/βp richiede prezzo continuo con βp≠0 e modello adeguato.",
+      "detail": "Le stime dipendono da codifica, intervallo dei prezzi e livello di riferimento; non usare le dummy categoriali delle scarpe per calcolare una WTP continua.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Lezione 28 — Conjoint e Reservation Price"
+      ],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §Appendice E, pagina PDF 194"
+    },
+    {
+      "id": "mca-c06-q192",
+      "topicId": "mca-c06-t28",
+      "question": "Quali valori numerici di regressione e WTP sono stati ricontrollati nell’appendice?",
+      "answer": "OLS: Sxx=17,5, Sxy=43, b=2,457143, a=9,066667, SSE=7,676190, SSR=105,657143, R²≈0,932269; WTP marginale=60 €/unità.",
+      "detail": "Sono i controlli del manuale che collegano gli esercizi delle Lezioni 25–28 e aiutano a evitare discrepanze tra formule e risultati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Marketing_e_Customer_Analytics_Manuale.pdf — Modulo II, Capitolo 6, Lezione 28, §Appendice E, pagina PDF 194"
+    }
+  ]
+}

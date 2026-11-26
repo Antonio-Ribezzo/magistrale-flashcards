@@ -1,0 +1,960 @@
+{
+  "sections": [
+    {
+      "id": "16-1",
+      "title": "16.1 Verifiche matematiche indipendenti: risultati e avvertenze",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Le verifiche seguenti distinguono volutamente «refuso nella soluzione Arcari» da «errore accertato nel nostro manuale». L’esistenza di un refuso nel materiale editoriale non implica che il nostro capitolo lo riproduca."
+        }
+      ],
+      "concept": "Verifiche matematiche indipendenti: risultati e avvertenze"
+    },
+    {
+      "id": "16-2",
+      "title": "16.2 Arcari 12.1 — varianza di prezzo di vendita",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "La soluzione editoriale presenta per la variante Basic 52.000 unità in una riga della formula, benché il volume effettivo riportato sia 50.000. Con i dati effettivi: 50.000×(146−160) + 25.200×(238−220) = −700.000 + 453.600 = −246.400 €. Se si impiegassero invece 52.000 unità, si otterrebbe −274.400 €, in disaccordo con il risultato indicato. Correzione: 50.000 unità."
+        }
+      ],
+      "concept": "Arcari 12.1 — varianza di prezzo di vendita"
+    },
+    {
+      "id": "16-3",
+      "title": "16.3 Arcari 12.2 — somma degli scostamenti commerciali",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "I singoli effetti riportati dalla soluzione sono: dimensione mercato −3.692.640 €, quota di mercato +1.061.634 €, mix +88.256 €, prezzo −4.452.420 €. La somma verificata è −6.995.170 €. Il totale −6.695.170 € indicato nel riepilogo finale del PDF non riconcilia le quattro componenti. Correzione: −6.995.170 €."
+        }
+      ],
+      "concept": "Arcari 12.2 — somma degli scostamenti commerciali"
+    },
+    {
+      "id": "16-4",
+      "title": "16.4 Arcari 9.7 — incassi mensili posticipati",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Assumendo investimenti immediati per 19.000 €, canoni d’affitto di 900 € mensili anticipati per 36 mesi, gestione 500 € posticipata, ricavi costanti posticipati e tasso mensile 2%: il fattore di rendita posticipata è circa 25,488842; il valore attuale dei costi risulta circa 55.143,18 €; il fatturato mensile di pareggio è circa 2.163,42 €. La soluzione editoriale riporta 2.136,42 €. Il Capitolo 11 del manuale segnala già la discrepanza: conservarne esplicitamente le ipotesi; non attribuire automaticamente l’errore al manuale."
+        }
+      ],
+      "concept": "Arcari 9.7 — incassi mensili posticipati"
+    },
+    {
+      "id": "16-5",
+      "title": "16.5 Controlli campione presenti nel manuale",
+      "topics": [],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Caso",
+              "Controllo eseguito",
+              "Esito"
+            ],
+            [
+              "Cap. 12 — Master budget",
+              "Totale attività = passività + patrimonio netto = 276.036,30 €",
+              "Quadratura dichiarata nel documento"
+            ],
+            [
+              "Cap. 13 — Caso Bernini",
+              "Budget flex 96.564,75 €; costi effettivi 95.581 €",
+              "Differenza favorevole 983,75 €"
+            ],
+            [
+              "Cap. 14 — ponte operativo",
+              "90.000 € + 8.000 + 5.000 − 2.000 − 11.000 − 8.000",
+              "82.000 €: riconciliazione corretta"
+            ],
+            [
+              "Cap. 11 — logistica portuale",
+              "Interpretazione dei progetti al 3% e uso di flussi annuali",
+              "Verificare sempre anche la collocazione temporale dei flussi"
+            ]
+          ]
+        },
+        {
+          "text": "LIMITE DELLE VERIFICHE: Non tutti gli esercizi, grafici e fogli Excel originali sono stati sottoposti a controllo aritmetico indipendente. Il rapporto non dichiara assenza universale di errori; individua correzioni certe e verifiche residue."
+        }
+      ],
+      "concept": "Controlli campione presenti nel manuale"
+    },
+    {
+      "id": "16-6",
+      "title": "16.6 Lessico e convenzioni da uniformare",
+      "topics": [],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Voce",
+              "Regola editoriale proposta"
+            ],
+            [
+              "Direct costing / variable costing",
+              "Il primo richiama l’attribuibilità e i margini di costo; il secondo il comportamento variabile dei costi. Indicare sempre il modello effettivamente adottato."
+            ],
+            [
+              "Costo primo",
+              "Dichiarare esplicitamente quali costi diretti vi rientrano nella classificazione del corso, evitando definizioni implicite prese da altri testi."
+            ],
+            [
+              "Costo prodotto / costo periodo",
+              "Separare finalità gestionali e regole di capitalizzazione delle rimanenze (OIC 13)."
+            ],
+            [
+              "Scostamenti",
+              "Scrivere la convenzione nel titolo della tabella: per i costi spesso standard−effettivo; per il reddito consuntivo−budget."
+            ],
+            [
+              "Budget / budget flessibile / forecast",
+              "Budget approvato: target originale; flex: stesso standard ai volumi effettivi; forecast: nuova stima delle variabili future."
+            ],
+            [
+              "EBIT / EBITDA / EBIT adjusted",
+              "Non sono sinonimi. Dichiarare quali ammortamenti, rettifiche e componenti straordinarie siano esclusi/inclusi."
+            ],
+            [
+              "ROI / ROCE / ROE / ROS",
+              "Dichiarare perimetro del capitale e periodo, nonché reddito e denominatore usati."
+            ],
+            [
+              "Capacità e risorse scarse",
+              "Prima vincolo tecnico, poi margine incrementale, infine costi opportunità e rischi."
+            ],
+            [
+              "FCFF / FCFE / tasso di sconto",
+              "Evitare miscele: flussi operativi disponibili a tutti i finanziatori con WACC; flussi per l’azionista con costo del capitale proprio."
+            ],
+            [
+              "KPI leading / lagging",
+              "I legami causali in BSC sono ipotesi da verificare, non relazioni matematiche garantite."
+            ]
+          ]
+        }
+      ],
+      "concept": "Lessico e convenzioni da uniformare"
+    },
+    {
+      "id": "16-7",
+      "title": "16.7 Il caso reale di bilancio: integrazione consigliata",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Nel Capitolo 2 è già presente il caso Poste Italiane 2025, fondato su un portale societario ufficiale. La lettura è però ancora soprattutto descrittiva: non contiene una riclassificazione patrimoniale e finanziaria completa con tutte le voci e le note. Per insegnare davvero ad analizzare un bilancio reale, aggiungere un prospetto guidato con valori comparativi 2025/2024 da fonte primaria e note selezionate su crediti, debiti, investimenti e cash flow, usando lo stesso perimetro e chiarendo gli effetti delle attività finanziarie del Gruppo."
+        },
+        {
+          "text": "Un dettaglio che va esplicitato: il portale ufficiale riporta ricavi 2025 di 13.121 milioni €, EBIT adjusted 3.245 milioni € e utile netto contabile 2.235 milioni €, mentre 2.220 milioni € è il dato esclusa la partecipazione TIM e altri effetti richiamati nell’informativa. Non confrontare direttamente numeratori aggiustati e non aggiustati senza dichiararlo. Nel manuale l’uso di valori arrotondati è dichiarato, ma per un caso completo servono i valori non arrotondati e la riconciliazione di quelli alternativi."
+        },
+        {
+          "text": "Anche la disciplina di bilancio va mantenuta distinta: schemi civilistici/OIC per la teoria italiana, bilancio consolidato IFRS per Poste Italiane. Le fonti normative nazionali da citare sono gli artt. 2423–2427 del Codice Civile e gli OIC 10, 11, 12 e 13; per il consolidato internazionale si richiamano gli IFRS applicabili all’esercizio analizzato."
+        }
+      ],
+      "concept": "Il caso reale di bilancio: integrazione consigliata"
+    },
+    {
+      "id": "esercizi",
+      "title": "Fascicolo di esercizi",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Come si usa questo fascicolo"
+        },
+        {
+          "text": "Lo scritto previsto dal programma è di circa 60 minuti e combina teoria ed esercizi. Le due “Esercitazioni n° 1 e 2” sono materiali disponibili, non prove la cui identità con l’appello 2027 sia garantita. Il nostro obiettivo è imparare a impostare autonomamente una traccia, fare quadrare i numeri e interpretare il risultato."
+        },
+        {
+          "image": "cdg-p211-1.png",
+          "caption": "Procedura di svolgimento e autocorrezione.",
+          "alt": "Procedura di svolgimento e autocorrezione."
+        },
+        {
+          "table": [
+            [
+              "Parte",
+              "Contenuto",
+              "Utilizzo"
+            ],
+            [
+              "I",
+              "Catalogo delle fonti e copertura per capitoli",
+              "Scegliere gli esercizi"
+            ],
+            [
+              "II",
+              "Due simulazioni con consegne complete",
+              "Svolgere senza soluzioni"
+            ],
+            [
+              "III",
+              "Soluzioni verificate delle due simulazioni",
+              "Controllo del procedimento"
+            ],
+            [
+              "IV",
+              "12 esercizi originali per capitoli 4–15",
+              "Allenamento graduato"
+            ],
+            [
+              "V",
+              "Soluzioni degli originali e schede di errore",
+              "Correzione e ripasso"
+            ]
+          ]
+        }
+      ],
+      "concept": "Fascicolo di esercizi"
+    },
+    {
+      "id": "sim-1-a",
+      "title": "Simulazione 1 · Problema A — Motel e punto di pareggio",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Un motel dispone di 400 stanze ed è aperto 365 giorni l’anno. Costi fissi annui: 3.400.000 €. Prezzo per stanza-giorno occupata: 50 €. Costo variabile per stanza-giorno: 10 €. Determina: risultato operativo massimo, risultato con occupazione al 50%, occupazione di pareggio e valori di ricavi, costi variabili e costi totali al pareggio. Disegna ricavi e costi nel dominio fisicamente possibile."
+        }
+      ],
+      "concept": "Simulazione 1 · Problema A — Motel e punto di pareggio"
+    },
+    {
+      "id": "sim-1-b",
+      "title": "Simulazione 1 · Problema B — ABC in una filiale bancaria",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "La filiale svolge apertura conti, gestione di prelievi/versamenti e concessione mutui. Personale: 6 addetti da 50.000 €/anno ciascuno, 2 vicedirettori da 80.000 € ciascuno, 1 direttore da 100.000 €. Altri costi di struttura: 250.000 €/anno (senza una base causale nota). Ripartizione del tempo: addetti 20% apertura, 70% operazioni, 10% mutui; vicedirettori 60% mutui e 40% altre attività; direttore 30% mutui e 70% altre attività. Volumi annui: 120 nuovi conti, 420.000 operazioni, 80 mutui. Scegli e motiva un criterio per i 250.000 €, determina i costi delle attività e le tariffe unitarie."
+        }
+      ],
+      "concept": "Simulazione 1 · Problema B — ABC in una filiale bancaria"
+    },
+    {
+      "id": "sim-1-c",
+      "title": "Simulazione 1 · Problema C — Investimenti logistica portuale",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Con un tasso di sconto del 3% annuo confronta due progetti attraverso VAN e Pay-back Period (non attualizzato, salvo diversa richiesta). Tutti i flussi sono in euro:"
+        },
+        {
+          "table": [
+            [
+              "Anno",
+              "Investimento 1",
+              "Investimento 2"
+            ],
+            [
+              "0",
+              "-28,000",
+              "-150,000"
+            ],
+            [
+              "1",
+              "5,000",
+              "12,000"
+            ],
+            [
+              "2",
+              "3,000",
+              "15,000"
+            ],
+            [
+              "3",
+              "2,000",
+              "25,000"
+            ],
+            [
+              "4",
+              "1,000",
+              "27,000"
+            ],
+            [
+              "5",
+              "3,000",
+              "30,000"
+            ],
+            [
+              "6",
+              "3,000",
+              "30,000"
+            ],
+            [
+              "7",
+              "4,500",
+              "35,000"
+            ],
+            [
+              "8",
+              "5,000",
+              "35,000"
+            ]
+          ]
+        }
+      ],
+      "concept": "Simulazione 1 · Problema C — Investimenti logistica portuale"
+    },
+    {
+      "id": "sim-2-a",
+      "title": "Simulazione 2 · Problema A — Ordine speciale di camici",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Prezzo normale 32,50 €; costo pieno unitario 26,20 €; costo variabile unitario 20,50 €; costo diretto unitario 24,50 €. Un ospedale richiede 5.500 camici a 24,00 € ciascuno. Per evadere l’ordine l’impresa deve ritardare altre consegne e pagare una penale di 18.000 €. Valuta la convenienza nell’ipotesi che gli altri costi fissi restino invariati."
+        }
+      ],
+      "concept": "Simulazione 2 · Problema A — Ordine speciale di camici"
+    },
+    {
+      "id": "sim-2-b",
+      "title": "Simulazione 2 · Problema B — E-commerce e break-even",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Un’impresa rivende beni con markup 36% sul costo di acquisto e spedizione pari al 10% del costo di acquisto. Costi fissi annui 220.000 € e capacità di fatturato massima iniziale 2.000.000 €. Ricavi di vendita 2017: 1.750.000 €. Nel 2018 acquista hardware per 750.000 €, ammortizzato linearmente in tre anni; capacità 10.000.000 €, markup 40% a prezzi di vendita invariati, incidenza spedizione 10% del costo di acquisto, ricavi 2.700.000 €. Determina risultato operativo e ricavi di pareggio per entrambi gli anni, confronta rischio e risultati e descrivi graficamente."
+        }
+      ],
+      "concept": "Simulazione 2 · Problema B — E-commerce e break-even"
+    },
+    {
+      "id": "sim-2-c",
+      "title": "Simulazione 2 · Problema C — Teoria",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Indica e spiega almeno tre differenze tra contabilità generale e contabilità industriale/direzionale. Inserisci per ogni differenza una conseguenza pratica per il manager."
+        }
+      ],
+      "concept": "Simulazione 2 · Problema C — Teoria"
+    },
+    {
+      "id": "impostazione",
+      "title": "Scheda di impostazione — prima di leggere le soluzioni",
+      "topics": [],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "Compila per ciascuna traccia il metodo scelto, la formula centrale e la verifica con cui controllare il risultato."
+            },
+            {
+              "table": [
+                [
+                  "Problema",
+                  "Dati e formula",
+                  "Verifica / decisione"
+                ],
+                [
+                  "Motel",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "text": "________________________________ _________________________ ABC banca"
+            },
+            {
+              "text": "________________________________ _________________________"
+            },
+            {
+              "table": [
+                [
+                  "Logistica",
+                  "________________________________",
+                  "_________________________"
+                ],
+                [
+                  "Camici",
+                  "",
+                  ""
+                ]
+              ]
+            },
+            {
+              "text": "________________________________ _________________________ E-commerce"
+            },
+            {
+              "text": "________________________________ _________________________ Teoria"
+            },
+            {
+              "text": "________________________________ _________________________"
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Scheda di impostazione — prima di leggere le soluzioni"
+    },
+    {
+      "id": "sol-sim-1",
+      "title": "Soluzioni della simulazione 1",
+      "topics": [],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "heading": "III.1 · Motel: dati, formule, grafico"
+            },
+            {
+              "text": "Capacità massima = 400 × 365 = 146.000 stanza-giorno. Margine unitario = 50−10 = 40 €. Risultato operativo al volume Q: RO(Q) = 40Q − 3.400.000."
+            },
+            {
+              "table": [
+                [
+                  "Quesito",
+                  "Svolgimento",
+                  "Risultato"
+                ],
+                [
+                  "Massimo",
+                  "40 × 146.000 − 3.400.000",
+                  "+2.440.000 €"
+                ],
+                [
+                  "Occupazione 50%",
+                  "Q = 146.000 × 0,50 = 73.000; RO = 40 × 73.000 − 3.400.000",
+                  "−480.000 €"
+                ],
+                [
+                  "Pareggio",
+                  "Q_BE = 3.400.000 / 40 = 85.000; occ. = 85.000/146.000",
+                  "58,22%"
+                ],
+                [
+                  "Ricavi al BE",
+                  "85.000 × 50",
+                  "4.250.000 €"
+                ],
+                [
+                  "CV al BE",
+                  "85.000 × 10",
+                  "850.000 €"
+                ],
+                [
+                  "Costi totali al BE",
+                  "3.400.000 + 850.000",
+                  "4.250.000 €"
+                ]
+              ]
+            },
+            {
+              "image": "cdg-p213-1.png",
+              "caption": "Ricavi e costi annuali del motel al variare delle presenze.",
+              "alt": "Ricavi e costi annuali del motel al variare delle presenze."
+            },
+            {
+              "text": "Interpretazione: il massimo si ottiene saturando le camere disponibili con prezzo e costo unitario costanti. Il 50% di occupazione è al di sotto della soglia di pareggio; dunque la gestione è in perdita."
+            },
+            {
+              "heading": "III.2 · Banca: allocazioni e ambiguità del criterio"
+            },
+            {
+              "text": "Costo annuo del personale: addetti 6×50.000 = 300.000 €, vicedirettori 160.000 €, direttore 100.000 €, totale 560.000 €. Si ricostruiscono prima i costi tracciabili alle attività con le percentuali di tempo:"
+            },
+            {
+              "table": [
+                [
+                  "Attività",
+                  "Calcolo personale",
+                  "Costo personale"
+                ],
+                [
+                  "Apertura conti",
+                  "300.000 × 20%",
+                  "60.000 €"
+                ],
+                [
+                  "Prelievi / versamenti",
+                  "300.000 × 70%",
+                  "210.000 €"
+                ],
+                [
+                  "Concessione mutui",
+                  "300.000 × 10% + 160.000 × 60% + 100.000 × 30%",
+                  "156.000 €"
+                ],
+                [
+                  "Altre attività",
+                  "160.000 × 40% + 100.000 × 70%",
+                  "134.000 €"
+                ]
+              ]
+            },
+            {
+              "text": "Criterio scelto (ipotesi didattica): si distribuiscono i 250.000 € di struttura in proporzione al costo del personale già attribuito alle quattro attività, includendo “altre attività”, perché assorbono anch’esse risorse di struttura. È un driver convenzionale, non causale: nella realtà sarebbe preferibile cercare indicatori d’uso degli spazi e dei servizi, oppure lasciare i costi non allocati se la decisione lo consente."
+            },
+            {
+              "table": [
+                [
+                  "Attività",
+                  "Costo complessivo",
+                  "Driver di output",
+                  "Costo per output"
+                ],
+                [
+                  "Apertura conti",
+                  "86.785,71 €",
+                  "120 nuovi conti",
+                  "723,21 €/conto"
+                ],
+                [
+                  "Prelievi/versamenti",
+                  "303.750,00 €",
+                  "420.000 operazioni",
+                  "0,7232 €/operazione"
+                ],
+                [
+                  "Concessione mutui",
+                  "225.642,86 €",
+                  "80 mutui",
+                  "2.820,54 €/mutuo"
+                ],
+                [
+                  "Altre attività",
+                  "193.821,43 €",
+                  "Non richiesto",
+                  "Non definibile"
+                ]
+              ]
+            },
+            {
+              "text": "Quadratura: 86.785,71 + 303.750 + 225.642,86 + 193.821,43 = 810.000 € = 560.000 di lavoro + 250.000 di struttura. Un’altra allocazione motivata darebbe tariffe diverse: per questo il quesito non ha un unico risultato numerico senza l’ipotesi sul riparto."
+            },
+            {
+              "heading": "III.3 · Logistica portuale: VAN e PBP"
+            },
+            {
+              "text": "Il VAN è la somma dei flussi attualizzati al 3%, incluso l’esborso al tempo zero. Il PBP semplice si determina sommando i flussi non attualizzati fino al recupero del capitale."
+            },
+            {
+              "table": [
+                [
+                  "Progetto",
+                  "VAN al 3%",
+                  "PBP semplice",
+                  "Esito"
+                ],
+                [
+                  "Investimento 1",
+                  "−4.892,84 €",
+                  "Mai recuperato entro l’anno 8",
+                  "Da rifiutare"
+                ],
+                [
+                  "Investimento 2",
+                  "+29.747,43 €",
+                  "6 + 11/35 = 6,31 anni",
+                  "Preferibile"
+                ]
+              ]
+            },
+            {
+              "text": "Per il progetto 1: incassi complessivi = 26.500 €, inferiori al costo iniziale di 28.000 €; il PBP non si raggiunge nemmeno senza sconto. Per il progetto 2, i flussi cumulati fino all’anno 6 sono 139.000 €, quindi restano 11.000 € da recuperare nell’anno 7, che genera 35.000 €. Il risultato del VAN è positivo e superiore a quello dell’alternativa 1."
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Soluzioni della simulazione 1"
+    },
+    {
+      "id": "sol-sim-2",
+      "title": "Soluzioni della simulazione 2",
+      "topics": [],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "heading": "III.4 · Camici: margine incrementale e penale"
+            },
+            {
+              "text": "L’ordine offre un margine unitario differenziale di 24−20,50 = 3,50 € (ipotesi: i costi variabili indicati sono tutti incrementali e gli altri costi non cambiano). Margine incrementale = 5.500 × 3,50 = 19.250 €. Dopo la penale di 18.000 €, ΔRO = +1.250 €: conviene accettare sotto le ipotesi. Il costo pieno di 26,20 € e quello diretto di 24,50 € NON vanno usati automaticamente come costi incrementali; bisogna sapere quali componenti cambiano davvero."
+            },
+            {
+              "heading": "III.5 · E-commerce: chiarimento del markup e risultati"
+            },
+            {
+              "text": "Assunzione esplicita: 1.750.000 € e 2.700.000 € sono ricavi di vendita. Un markup m sul costo di acquisto implica ricavi = costo acquisto × (1+m); quindi acquisto = ricavi/(1+m). Le spedizioni sono 10% dell’acquisto. L’ammortamento hardware 2018 è 750.000/3 = 250.000 € annui."
+            },
+            {
+              "table": [
+                [
+                  "Voce",
+                  "2017",
+                  "2018"
+                ],
+                [
+                  "Ricavi",
+                  "1.750.000,00 €",
+                  "2.700.000,00 €"
+                ],
+                [
+                  "Acquisti merci",
+                  "1.286.764,71 €",
+                  "1.928.571,43 €"
+                ],
+                [
+                  "Costi spedizione",
+                  "128.676,47 €",
+                  "192.857,14 €"
+                ],
+                [
+                  "Margine di contribuzione",
+                  "334.558,82 €",
+                  "578.571,43 €"
+                ],
+                [
+                  "Costi fissi incl. ammortamento",
+                  "220.000,00 €",
+                  "470.000,00 €"
+                ],
+                [
+                  "Risultato operativo",
+                  "114.558,82 €",
+                  "108.571,43 €"
+                ],
+                [
+                  "Tasso di contribuzione",
+                  "19,1176%",
+                  "21,4286%"
+                ],
+                [
+                  "Ricavi al pareggio",
+                  "1.150.769,23 €",
+                  "2.193.333,33 €"
+                ]
+              ]
+            },
+            {
+              "text": "Interpretazione: il margine percentuale migliora grazie alle condizioni dei produttori, ma i maggiori costi fissi portano a un reddito operativo lievemente inferiore nel 2018 (−5.987,39 €). Il punto di pareggio cresce molto: il rischio operativo aumenta a parità delle altre condizioni. Entrambi i BEP sono entro la capacità di fatturato disponibile per il rispettivo anno."
+            },
+            {
+              "heading": "III.6 · Teoria: tre differenze chiave"
+            },
+            {
+              "table": [
+                [
+                  "Dimensione",
+                  "Contabilità generale",
+                  "Contabilità direzionale/industriale"
+                ],
+                [
+                  "Destinatari",
+                  "Stakeholder esterni e interni",
+                  "Management e responsabili interni"
+                ],
+                [
+                  "Oggetto e dettaglio",
+                  "Azienda nel complesso, bilancio e risultati storici",
+                  "Prodotti, processi, attività, reparti, clienti"
+                ],
+                [
+                  "Regole e tempi",
+                  "Norme e principi per il bilancio; cadenze periodiche",
+                  ""
+                ]
+              ]
+            },
+            {
+              "text": "Metodi adattabili a finalità decisionali; anche preventivi e frequenti"
+            },
+            {
+              "text": "Esempio operativo: il bilancio può mostrare il totale costi del personale; il sistema direzionale può spiegare quanto lavoro è assorbito da una commessa e supportare una scelta make or buy."
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Soluzioni della simulazione 2"
+    },
+    {
+      "id": "originali",
+      "title": "Esercizi originali senza soluzione",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Regole di lavoro Le tracce A1–A12 sono ORIGINALI, non tratte letteralmente dal testo Arcari. Lasciare il formulario aperto solo nella prima fase di apprendimento; poi rifare gli esercizi senza aiuti."
+        },
+        {
+          "heading": "A1 · Classificazione dei costi"
+        },
+        {
+          "text": "Una linea produce un solo articolo: materie prime 12.000 € variabili e dirette; stipendio del capo linea 6.000 € fisso e specifico; energia delle macchine 1.800 € variabile ma misurata solo per stabilimento; affitto stabilimento 8.000 € fisso comune; product manager dedicato 3.000 € fisso specifico. Classifica per tracciabilità e comportamento, spiega che non sono equivalenti."
+        },
+        {
+          "heading": "A2 · Full costing"
+        },
+        {
+          "text": "Prodotto A: 600 pezzi, costi diretti 40 €/pezzo, usa 1.200 ore macchina. Prodotto B: 400 pezzi, diretti 60 €/pezzo, usa 800 ore. CIF del centro 40.000 €, base ore macchina. Calcola CDA, CIF imputati, costo pieno totale e unitario; verifica quadratura."
+        },
+        {
+          "heading": "A3 · ABC"
+        },
+        {
+          "text": "Costi indiretti annui: 30.000 € setup (60 setup) e 50.000 € collaudi (1.000 ore collaudo). A: 1.000 pezzi, costi diretti 20 €/pezzo, 20 setup, 400 ore collaudo. B: 500 pezzi, costi diretti 30 €/pezzo, 40 setup, 600 ore collaudo. Calcola le tariffe e i due costi pieni unitari."
+        },
+        {
+          "heading": "A4 · Process costing FIFO vs MEP"
+        },
+        {
+          "text": "WIP iniziale 100 unità, materiali completi al 100%, conversione 40%; costi precedenti: materiali 3.000 €, conversione 2.000 €. Unità avviate 900, trasferite 800, WIP finale 200 (materiali 100%, conversione 50%). Costi del periodo: materiali 36.000 €, conversione 27.000 €. Determina UEP, costi unitari, produzione completata e WIP finale con MEP e FIFO. Nessuno scarto."
+        },
+        {
+          "heading": "A5 · Scostamenti standard"
+        },
+        {
+          "text": "Budget: 1.000 prodotti; effettivi 900. Materiale standard 2 kg/unità a 5 €/kg; materiale consumato 1.900 kg a 5,40 €/kg. Convenzione F positivo. Calcola scostamento globale, volume, efficienza e prezzo, con quadratura."
+        },
+        {
+          "heading": "A6 · BEP multiprodotto"
+        },
+        {
+          "text": "A: prezzo 100 €, variabile 60 €; B: prezzo 150 €, variabile 90 €. Mix costante 3 pezzi A per 2 pezzi B. Costi fissi totali 24.000 €. Determina margine del mix, numero di mix di pareggio, pezzi A/B, fatturato totale e verifica."
+        },
+        {
+          "heading": "A7 · Ordine speciale"
+        },
+        {
+          "text": "Ordine di 800 unità a 32 €/unità; costo variabile incrementale 24 €/unità; costo fisso aggiuntivo di attrezzaggio 2.000 €, nessuna capacità sacrificata. Conviene? Di quanto aumenta RO? Quale prezzo minimo?"
+        },
+        {
+          "heading": "A8 · Risorsa scarsa"
+        },
+        {
+          "text": "Prodotto A: MDCu 30 €, 3 ore macchina/unità, domanda max 50. Prodotto B: MDCu 20 €, 1 ora macchina/unità, domanda max 80. Totale ore disponibili 140. Scelta del mix ottimale e MDC complessivo, assumendo prodotti frazionabili solo se necessario."
+        },
+        {
+          "heading": "A9 · VAN"
+        },
+        {
+          "text": "Investimento iniziale 50.000 €; tre incassi annuali posticipati di 20.000 € ciascuno; tasso 10%, nessun residuo. Calcola VAN e interpreta."
+        },
+        {
+          "heading": "A10 · Budget di cassa"
+        },
+        {
+          "text": "Cassa iniziale 20.000 €. Ricavi previsti 100.000 €: incasso 60% nel trimestre, 40% successivamente; incasso crediti pregressi 20.000 €. Acquisti 70.000 €: pagamento 50% nel trimestre, restante nel successivo; pagamento debiti pregressi 10.000 €. Altre uscite di cassa 15.000 € e investimento cash 30.000 €. Liquidità minima 15.000 €. Calcola cassa pre- finanziamento e fabbisogno."
+        },
+        {
+          "heading": "A11 · Budget statico/flessibile"
+        },
+        {
+          "text": "Budget costi: CF 30.000 € e cvu 10 €, volume 1.000; volume effettivo 1.200; costi consuntivi 43.100 €. Calcola budget statico, flexed, scostamento volume, scostamento di gestione e totale con convenzione riferimento − effettivo."
+        },
+        {
+          "heading": "A12 · ROI e reddito residuo"
+        },
+        {
+          "text": "Divisione: RO attuale 120.000 €, capitale medio 800.000 €, costo capitale 10%. Progetto addizionale: RO 30.000 €, capitale 250.000 €. Calcola ROI e reddito residuo prima e dopo. Spiega perché il manager valutato solo sul ROI può respingere il progetto."
+        }
+      ],
+      "concept": "Esercizi originali senza soluzione"
+    },
+    {
+      "id": "sol-originali",
+      "title": "Soluzioni degli esercizi originali",
+      "topics": [],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "heading": "A1 · Svolgimento verificato"
+            },
+            {
+              "text": "Materie prime: dirette e variabili; capo linea: diretto/specifico al prodotto se riferito esclusivamente a esso e fisso; energia: indiretta rispetto al singolo prodotto e variabile al volume; affitto: indiretto/comune e fisso; product manager dedicato: specifico e fisso, la direttezza dipende dalla definizione dell’oggetto costo e dalla tracciabilità. “Diretto” non implica “variabile”."
+            },
+            {
+              "heading": "A2 · Svolgimento verificato"
+            },
+            {
+              "text": "Ore totali 2.000; CDA = 40.000/2.000 = 20 €/h. A: CIF 24.000 €; diretti 600×40=24.000 €; pieno 48.000 € e 80 €/pezzo. B: CIF 16.000 €; diretti 400×60=24.000 €; pieno 40.000 € e 100 €/pezzo. Quadratura CIF: 24.000+16.000=40.000 €."
+            },
+            {
+              "heading": "A3 · Svolgimento verificato"
+            },
+            {
+              "text": "Setup = 30.000/60 = 500 €/setup; collaudo = 50.000/1.000 = 50 €/h. A: CIF = 20×500 + 400×50 = 30.000 €; CIFu 30 €, pieno 50 €/pezzo. B: CIF = 40×500 + 600×50 = 50.000 €; CIFu 100 €, pieno 130 €/pezzo. Quadratura indiretti: 30.000+50.000 = 80.000 €."
+            },
+            {
+              "heading": "A4 · Svolgimento verificato"
+            },
+            {
+              "text": "Fisica: 100+900=800+200. MEP: UEP materiali 1.000; conversione 800+200×50%=900. Costi totali 39.000 € e 29.000 €. Tariffe 39 €/UEP e 32,2222 €/UEP. Trasferito 800×71,2222=56.977,78 €; WIP finale 200×39+100×32,2222=11.022,22 €. FIFO: iniziato e completato 700; UEP materiali = 700+200=900; UEP conversione = 100×60%+700+200×50%=860. Tariffe 40 €/UEP e 31,39535 €/UEP; trasferito = 5.000 costi vecchi + 60×31,39535 +700×(40+31,39535)=56.860,47 €; WIP finale=200×40+100×31,39535=11.139,53 €. Entrambi quadrano a 68.000 €."
+            },
+            {
+              "heading": "A5 · Svolgimento verificato"
+            },
+            {
+              "text": "Budget = 1.000×2×5=10.000 €. Effettivo=1.900×5,40=10.260 €. Δglobale=−260 € S. Volume = 2×5×(1.000−900)=+1.000 € F. Efficienza = 5×(1.800−1.900)=−500 € S. Prezzo=1.900×(5−5,4)=−760 € S. Somma 1.000−500−760=−260 €. L’effetto volume F sui costi non implica che produrre meno sia economicamente positivo."
+            },
+            {
+              "heading": "A6 · Svolgimento verificato"
+            },
+            {
+              "text": "MDCu A=40 €, B=60 €. Un mix 3A+2B genera 3×40+2×60=240 €. Mix_BE=24.000/240=100 mix. Volumi A=300 e B=200. Ricavi A=30.000 €, B=30.000 €, totale60.000 €. Variabili A=18.000 €, B=18.000 €; MDC totale=24.000 € pari ai fissi."
+            },
+            {
+              "heading": "A7 · Svolgimento verificato"
+            },
+            {
+              "text": "MDC ordine=800×(32−24)=6.400 €; meno attrezzaggio 2.000 € → ΔRO=+4.400 €, accettare. Prezzo minimo con pareggio = 24+2.000/800 = 26,50 €/unità, in assenza di altri effetti."
+            },
+            {
+              "heading": "A8 · Svolgimento verificato"
+            },
+            {
+              "text": "A: MDC/h =30/3=10 €. B: 20/1=20 €. Priorità B: 80 unità occupano 80 ore, rimangono60 ore. A: 60/3=20 unità. MDC totale=80×20+20×30=2.200 €. Ore usate 80+60=140; tutti i vincoli rispettati."
+            },
+            {
+              "heading": "A9 · Svolgimento verificato"
+            },
+            {
+              "text": "VAN = −50.000 + 20.000/1,1 + 20.000/1,1² + 20.000/1,1³ = −262,96 €. Il progetto non soddisfa la soglia del 10% date le ipotesi; VAN leggermente negativo."
+            },
+            {
+              "heading": "A10 · Svolgimento verificato"
+            },
+            {
+              "text": "Incassi =60.000+20.000=80.000 €. Pagamento acquisti =35.000+10.000=45.000 €. Altre uscite=15.000+30.000=45.000 €. Cassa prima del finanziamento =20.000+80.000−45.000−45.000=10.000 €. Per mantenere 15.000 €, finanziamento minimo 5.000 € (al netto di eventuali interessi/commissioni non previsti)."
+            },
+            {
+              "heading": "A11 · Svolgimento verificato"
+            },
+            {
+              "text": "Statico =30.000+10×1.000 =40.000 €. Flexed=30.000+10×1.200 =42.000 €. Effettivo43.100 €. Effetto volume sui costi=40.000−42.000=−2.000 € (sfavorevole, perché si sostiene un costo variabile maggiore con più attività). Gestione=42.000−43.100=−1.100 € S. Totale=−3.100 €, verificato 40.000−43.100."
+            },
+            {
+              "heading": "A12 · Svolgimento verificato"
+            },
+            {
+              "text": "ROI prima=120.000/800.000=15%. Reddito residuo prima=120.000−10%×800.000=40.000 €. ROI dopo=(120.000+30.000)/(800.000+250.000)=14,2857%. Reddito residuo dopo=150.000−10%×1.050.000=45.000 €. L’investimento genera RI addizionale +5.000 € anche se fa scendere il ROI medio della divisione. La valutazione basata solo sul ROI può creare un incentivo distorto."
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Soluzioni degli esercizi originali"
+    },
+    {
+      "id": "registro",
+      "title": "Registro errori e strategia di ripasso",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Per ogni tentativo annota la causa e un’azione di recupero. Dopo una correzione completa riprova lo stesso problema senza soluzione, poi ripetilo dopo alcuni giorni cambiando leggermente i dati."
+        },
+        {
+          "table": [
+            [
+              "Data / esercizio",
+              "Errore osservato",
+              "Correzione / regola",
+              "Rifatto?"
+            ],
+            [
+              "____ / ____",
+              "________________________________",
+              "________________________________",
+              "____"
+            ],
+            [
+              "____ / ____",
+              "________________________________",
+              "________________________________",
+              "____"
+            ],
+            [
+              "____ / ____",
+              "________________________________",
+              "________________________________",
+              "____"
+            ],
+            [
+              "____ / ____",
+              "________________________________",
+              "________________________________",
+              "____"
+            ],
+            [
+              "____ / ____",
+              "________________________________",
+              "________________________________",
+              "____"
+            ],
+            [
+              "____ / ____",
+              "________________________________",
+              "________________________________",
+              "____"
+            ],
+            [
+              "____ / ____",
+              "________________________________",
+              "________________________________",
+              "____"
+            ],
+            [
+              "____ / ____",
+              "________________________________",
+              "________________________________",
+              "____"
+            ]
+          ]
+        },
+        {
+          "text": "Protocollo per una simulazione in 60 minuti"
+        },
+        {
+          "text": "• Prima lettura: ricava i dati e sottolinea richieste, unità e vincoli; non iniziare immediatamente a calcolare."
+        },
+        {
+          "text": "• Svolgi prima i problemi su cui sai impostare la formula corretta; lascia spazio e passa oltre in caso di blocco."
+        },
+        {
+          "text": "• Ogni problema deve terminare con unità di misura, quadratura e decisione interpretativa."
+        },
+        {
+          "text": "• Nella revisione finale verifica segni, quantità/valori e coerenza del risultato con la capacità produttiva e con le ipotesi."
+        },
+        {
+          "text": "Quali esercizi ripassare prima della sessione Priorità di consolidamento: standard e scostamenti (cap. 8), costo pieno e ABC (cap. 5–6), direct costing/BEP (cap. 9), decisioni di breve periodo (cap. 10), capital budgeting (cap. 11), master budget e reporting (cap. 12–14). Sono priorità di studio ragionate, non pesi ufficiali comunicati dalla docente."
+        },
+        {
+          "text": "Fonti e limiti delle soluzioni Enunciati delle Simulazioni 1 e 2 ricavati dai PDF forniti; parafrasi didattiche dei testi. Gli esercizi A1–A12 sono costruiti appositamente per questo fascicolo. Riferimento ulteriore: soluzioni Arcari IV edizione 2023, file in questa conversazione; gli eventuali refusi sono trattati nei singoli capitoli e nel rapporto di revisione. Verifica integrativa: OIC 13 per criteri di costo delle rimanenze, OpenStax e ACCA per formule e schemi."
+        }
+      ],
+      "concept": "Registro errori e strategia di ripasso"
+    }
+  ],
+  "relations": [
+    {
+      "to": "16-5",
+      "relation": "I controlli aritmetici si possono verificare sui casi del manuale",
+      "from": "16-1"
+    },
+    {
+      "to": "16-6",
+      "relation": "Le verifiche dipendono anche da definizioni e convenzioni coerenti",
+      "from": "16-5"
+    },
+    {
+      "to": "sim-1-a",
+      "relation": "La prima simulazione applica il punto di pareggio",
+      "from": "esercizi"
+    },
+    {
+      "to": "sol-sim-1",
+      "relation": "Lo svolgimento riconcilia quantità, ricavi e costi",
+      "from": "sim-1-a"
+    },
+    {
+      "to": "sol-originali",
+      "relation": "Le soluzioni permettono di controllare calcoli e interpretazione",
+      "from": "originali"
+    }
+  ]
+}

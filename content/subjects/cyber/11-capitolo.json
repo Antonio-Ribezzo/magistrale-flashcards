@@ -1,0 +1,2410 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cyber",
+  "source": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11: Protezione Dati e GDPR, pagine PDF 192–207; unica fonte autorizzata.",
+  "chapter": {
+    "id": "cyber-c11",
+    "title": "Protezione Dati e GDPR",
+    "order": 11,
+    "topics": [
+      {
+        "id": "cyber-c11-t01",
+        "title": "Cybersecurity, privacy e ambito del GDPR"
+      },
+      {
+        "id": "cyber-c11-t02",
+        "title": "Dato personale, categorie particolari e identificabilità"
+      },
+      {
+        "id": "cyber-c11-t03",
+        "title": "Pseudonimizzazione, anonimizzazione e cifratura"
+      },
+      {
+        "id": "cyber-c11-t04",
+        "title": "Trattamento e ruoli privacy"
+      },
+      {
+        "id": "cyber-c11-t05",
+        "title": "Sette principi dell’articolo 5"
+      },
+      {
+        "id": "cyber-c11-t06",
+        "title": "Sei basi giuridiche, consenso e finalità ulteriori"
+      },
+      {
+        "id": "cyber-c11-t07",
+        "title": "Informativa, trasparenza e ciclo di vita del dato"
+      },
+      {
+        "id": "cyber-c11-t08",
+        "title": "Controlli di accesso, qualità, classificazione e retention"
+      },
+      {
+        "id": "cyber-c11-t09",
+        "title": "Privacy by design e privacy by default"
+      },
+      {
+        "id": "cyber-c11-t10",
+        "title": "Sicurezza e misure tecniche/organizzative dell’articolo 32"
+      },
+      {
+        "id": "cyber-c11-t11",
+        "title": "Diritti degli interessati e gestione delle richieste"
+      },
+      {
+        "id": "cyber-c11-t12",
+        "title": "Registro dei trattamenti, DPIA e DPO"
+      },
+      {
+        "id": "cyber-c11-t13",
+        "title": "Data breach, valutazione del rischio e notifiche"
+      },
+      {
+        "id": "cyber-c11-t14",
+        "title": "Trasferimenti internazionali e gestione fornitori"
+      },
+      {
+        "id": "cyber-c11-t15",
+        "title": "Standard ISO/IEC per privacy e compliance"
+      },
+      {
+        "id": "cyber-c11-t16",
+        "title": "Caso integrato: portale offerte e consumi"
+      },
+      {
+        "id": "cyber-c11-t17",
+        "title": "Esercizi di interpretazione e casi di esame"
+      },
+      {
+        "id": "cyber-c11-t18",
+        "title": "Glossario e domande trasversali per l’orale"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§11.1 — pagina PDF 192",
+        "cardIds": [
+          "cyber-c11-q001",
+          "cyber-c11-q002",
+          "cyber-c11-q003",
+          "cyber-c11-q004"
+        ]
+      },
+      {
+        "label": "§11.1.1 — pagina PDF 192",
+        "cardIds": [
+          "cyber-c11-q005",
+          "cyber-c11-q006",
+          "cyber-c11-q007",
+          "cyber-c11-q008"
+        ]
+      },
+      {
+        "label": "§11.2 — pagina PDF 193",
+        "cardIds": [
+          "cyber-c11-q009",
+          "cyber-c11-q010",
+          "cyber-c11-q011",
+          "cyber-c11-q012"
+        ]
+      },
+      {
+        "label": "§11.2.1 — pagina PDF 193",
+        "cardIds": [
+          "cyber-c11-q013",
+          "cyber-c11-q014",
+          "cyber-c11-q015",
+          "cyber-c11-q016",
+          "cyber-c11-q017"
+        ]
+      },
+      {
+        "label": "§11.2.2 — pagina PDF 194",
+        "cardIds": [
+          "cyber-c11-q018",
+          "cyber-c11-q019",
+          "cyber-c11-q020",
+          "cyber-c11-q021",
+          "cyber-c11-q022",
+          "cyber-c11-q023"
+        ]
+      },
+      {
+        "label": "§11.3 — pagina PDF 195",
+        "cardIds": [
+          "cyber-c11-q024",
+          "cyber-c11-q025",
+          "cyber-c11-q026"
+        ]
+      },
+      {
+        "label": "§11.3.1 — pagina PDF 195",
+        "cardIds": [
+          "cyber-c11-q027",
+          "cyber-c11-q028",
+          "cyber-c11-q029",
+          "cyber-c11-q030",
+          "cyber-c11-q031",
+          "cyber-c11-q032"
+        ]
+      },
+      {
+        "label": "§11.4 — pagina PDF 195",
+        "cardIds": [
+          "cyber-c11-q033"
+        ]
+      },
+      {
+        "label": "§11.4.1 — pagina PDF 195",
+        "cardIds": [
+          "cyber-c11-q034"
+        ]
+      },
+      {
+        "label": "§11.4.2 — pagina PDF 196",
+        "cardIds": [
+          "cyber-c11-q035",
+          "cyber-c11-q036"
+        ]
+      },
+      {
+        "label": "§11.4.3 — pagina PDF 196",
+        "cardIds": [
+          "cyber-c11-q037",
+          "cyber-c11-q038"
+        ]
+      },
+      {
+        "label": "§11.4.4 — pagina PDF 196",
+        "cardIds": [
+          "cyber-c11-q039"
+        ]
+      },
+      {
+        "label": "§11.4.5 — pagina PDF 196",
+        "cardIds": [
+          "cyber-c11-q040",
+          "cyber-c11-q041"
+        ]
+      },
+      {
+        "label": "§11.4.6 — pagina PDF 196",
+        "cardIds": [
+          "cyber-c11-q042"
+        ]
+      },
+      {
+        "label": "§11.4.7 — pagina PDF 196",
+        "cardIds": [
+          "cyber-c11-q043",
+          "cyber-c11-q044"
+        ]
+      },
+      {
+        "label": "§11.5 — pagina PDF 197",
+        "cardIds": [
+          "cyber-c11-q045",
+          "cyber-c11-q046",
+          "cyber-c11-q047",
+          "cyber-c11-q048",
+          "cyber-c11-q049"
+        ]
+      },
+      {
+        "label": "§11.5.1 — pagina PDF 197",
+        "cardIds": [
+          "cyber-c11-q050",
+          "cyber-c11-q051",
+          "cyber-c11-q052"
+        ]
+      },
+      {
+        "label": "§11.5.2 — pagina PDF 197",
+        "cardIds": [
+          "cyber-c11-q053"
+        ]
+      },
+      {
+        "label": "§11.5.3 — pagina PDF 197",
+        "cardIds": [
+          "cyber-c11-q054",
+          "cyber-c11-q055"
+        ]
+      },
+      {
+        "label": "§11.6 — pagina PDF 198",
+        "cardIds": [
+          "cyber-c11-q056",
+          "cyber-c11-q057",
+          "cyber-c11-q058",
+          "cyber-c11-q059",
+          "cyber-c11-q060"
+        ]
+      },
+      {
+        "label": "§11.7 — pagina PDF 198",
+        "cardIds": [
+          "cyber-c11-q061"
+        ]
+      },
+      {
+        "label": "§11.7.1 — pagina PDF 198",
+        "cardIds": [
+          "cyber-c11-q062",
+          "cyber-c11-q063",
+          "cyber-c11-q064"
+        ]
+      },
+      {
+        "label": "§11.7.2 — pagina PDF 198",
+        "cardIds": [
+          "cyber-c11-q065",
+          "cyber-c11-q066"
+        ]
+      },
+      {
+        "label": "§11.7.3 — pagina PDF 199",
+        "cardIds": [
+          "cyber-c11-q067",
+          "cyber-c11-q068"
+        ]
+      },
+      {
+        "label": "§11.7.4 — pagina PDF 199",
+        "cardIds": [
+          "cyber-c11-q069"
+        ]
+      },
+      {
+        "label": "§11.7.5 — pagina PDF 199",
+        "cardIds": [
+          "cyber-c11-q070",
+          "cyber-c11-q071"
+        ]
+      },
+      {
+        "label": "§11.7.6 — pagina PDF 199",
+        "cardIds": [
+          "cyber-c11-q072"
+        ]
+      },
+      {
+        "label": "§11.8 — pagina PDF 199",
+        "cardIds": [
+          "cyber-c11-q073",
+          "cyber-c11-q074",
+          "cyber-c11-q075",
+          "cyber-c11-q076",
+          "cyber-c11-q077",
+          "cyber-c11-q078"
+        ]
+      },
+      {
+        "label": "§11.9 — pagina PDF 200",
+        "cardIds": [
+          "cyber-c11-q079",
+          "cyber-c11-q080",
+          "cyber-c11-q081"
+        ]
+      },
+      {
+        "label": "§11.9.1 — pagina PDF 200",
+        "cardIds": [
+          "cyber-c11-q082",
+          "cyber-c11-q083",
+          "cyber-c11-q084"
+        ]
+      },
+      {
+        "label": "§11.9.2 — pagina PDF 200",
+        "cardIds": [
+          "cyber-c11-q085",
+          "cyber-c11-q086"
+        ]
+      },
+      {
+        "label": "§11.10 — pagina PDF 200",
+        "cardIds": [
+          "cyber-c11-q087",
+          "cyber-c11-q088",
+          "cyber-c11-q089",
+          "cyber-c11-q090",
+          "cyber-c11-q091",
+          "cyber-c11-q092",
+          "cyber-c11-q093",
+          "cyber-c11-q094",
+          "cyber-c11-q095",
+          "cyber-c11-q096"
+        ]
+      },
+      {
+        "label": "§11.10.1 — pagina PDF 201",
+        "cardIds": [
+          "cyber-c11-q097",
+          "cyber-c11-q098"
+        ]
+      },
+      {
+        "label": "§11.11 — pagina PDF 201",
+        "cardIds": [
+          "cyber-c11-q099",
+          "cyber-c11-q100",
+          "cyber-c11-q101",
+          "cyber-c11-q102",
+          "cyber-c11-q103",
+          "cyber-c11-q104",
+          "cyber-c11-q105",
+          "cyber-c11-q106"
+        ]
+      },
+      {
+        "label": "§11.12 — pagina PDF 202",
+        "cardIds": [
+          "cyber-c11-q107",
+          "cyber-c11-q108",
+          "cyber-c11-q109"
+        ]
+      },
+      {
+        "label": "§11.12.1 — pagina PDF 202",
+        "cardIds": [
+          "cyber-c11-q110",
+          "cyber-c11-q111",
+          "cyber-c11-q112",
+          "cyber-c11-q113",
+          "cyber-c11-q114",
+          "cyber-c11-q115",
+          "cyber-c11-q116",
+          "cyber-c11-q117"
+        ]
+      },
+      {
+        "label": "§11.13 — pagina PDF 203",
+        "cardIds": [
+          "cyber-c11-q118",
+          "cyber-c11-q119",
+          "cyber-c11-q120",
+          "cyber-c11-q121",
+          "cyber-c11-q122"
+        ]
+      },
+      {
+        "label": "§11.14 — pagina PDF 203",
+        "cardIds": [
+          "cyber-c11-q123",
+          "cyber-c11-q124",
+          "cyber-c11-q125",
+          "cyber-c11-q126",
+          "cyber-c11-q127",
+          "cyber-c11-q128",
+          "cyber-c11-q129"
+        ]
+      },
+      {
+        "label": "§11.15 — pagina PDF 204",
+        "cardIds": [
+          "cyber-c11-q130"
+        ]
+      },
+      {
+        "label": "§11.15.1 — pagina PDF 204",
+        "cardIds": [
+          "cyber-c11-q131",
+          "cyber-c11-q132"
+        ]
+      },
+      {
+        "label": "§11.15.2 — pagina PDF 204",
+        "cardIds": [
+          "cyber-c11-q133",
+          "cyber-c11-q134"
+        ]
+      },
+      {
+        "label": "§11.15.3 — pagina PDF 204",
+        "cardIds": [
+          "cyber-c11-q135",
+          "cyber-c11-q136"
+        ]
+      },
+      {
+        "label": "§11.15.4 — pagina PDF 204",
+        "cardIds": [
+          "cyber-c11-q137",
+          "cyber-c11-q138"
+        ]
+      },
+      {
+        "label": "§11.15.5 — pagina PDF 204",
+        "cardIds": [
+          "cyber-c11-q139"
+        ]
+      },
+      {
+        "label": "§11.15.6 — pagina PDF 204",
+        "cardIds": [
+          "cyber-c11-q140",
+          "cyber-c11-q141"
+        ]
+      },
+      {
+        "label": "§11.16 — pagina PDF 205",
+        "cardIds": [
+          "cyber-c11-q142",
+          "cyber-c11-q143",
+          "cyber-c11-q144",
+          "cyber-c11-q145",
+          "cyber-c11-q146",
+          "cyber-c11-q147"
+        ]
+      },
+      {
+        "label": "§11.17 — pagina PDF 206",
+        "cardIds": [
+          "cyber-c11-q148",
+          "cyber-c11-q149",
+          "cyber-c11-q150"
+        ]
+      },
+      {
+        "label": "§11.18 — pagina PDF 206",
+        "cardIds": [
+          "cyber-c11-q151",
+          "cyber-c11-q152",
+          "cyber-c11-q153",
+          "cyber-c11-q154",
+          "cyber-c11-q155",
+          "cyber-c11-q156",
+          "cyber-c11-q157",
+          "cyber-c11-q158",
+          "cyber-c11-q159",
+          "cyber-c11-q160"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cyber-c11-q001",
+      "topicId": "cyber-c11-t01",
+      "question": "Qual è la differenza fondamentale tra cybersecurity e protezione dei dati personali?",
+      "answer": "La cybersecurity protegge sistemi, reti, applicazioni e informazioni; la protezione dei dati personali tutela le persone rispetto alle operazioni compiute sui dati che le riguardano.",
+      "detail": "Le due discipline si intersecano, perché la sicurezza dei sistemi è parte della tutela dei dati, ma non coincidono: un trattamento può essere sicuro tecnicamente e illecito per finalità, raccolta eccessiva o informazione insufficiente.",
+      "example": "Un database perfettamente cifrato può essere gestito illecitamente se raccoglie dati non necessari.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare conformità al GDPR alla sola presenza di antivirus, firewall o cifratura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.1, pagina PDF 192"
+    },
+    {
+      "id": "cyber-c11-q002",
+      "topicId": "cyber-c11-t01",
+      "question": "Qual è la differenza tra privacy e protezione dei dati personali nel linguaggio del manuale?",
+      "answer": "Privacy richiama sfera privata e controllo sulle informazioni; protezione dei dati disciplina principi, diritti e obblighi del trattamento di dati relativi a persone fisiche.",
+      "detail": "Una notizia resa pubblica può comunque essere un dato personale soggetto a regole di riutilizzo. La dimensione della tutela non coincide con la segretezza del singolo dato.",
+      "example": "Il nome di un professionista visibile online rimane un dato personale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pubblico non significa liberamente riutilizzabile per qualsiasi finalità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.1, pagina PDF 192"
+    },
+    {
+      "id": "cyber-c11-q003",
+      "topicId": "cyber-c11-t01",
+      "question": "Qual è il riferimento normativo centrale per la protezione dei dati personali nell’Unione europea?",
+      "answer": "Il Regolamento (UE) 2016/679, o GDPR, applicabile dal 25 maggio 2018, insieme alla disciplina nazionale compatibile.",
+      "detail": "Il GDPR riguarda il trattamento dei dati personali e la loro libera circolazione, riconoscendo la tutela delle persone come diritto fondamentale. In Italia è pertinente anche il d.lgs. 196/2003, come modificato.",
+      "example": "Un’azienda italiana che tratta dati dei clienti deve considerare la disciplina europea e quella italiana applicabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il numero del regolamento 2016/679 con la data dalla quale è applicabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.1, pagina PDF 192"
+    },
+    {
+      "id": "cyber-c11-q004",
+      "topicId": "cyber-c11-t01",
+      "question": "Perché un’organizzazione non può dichiararsi conforme al GDPR solo perché il suo sistema è protetto?",
+      "answer": "Perché servono anche liceità, finalità definite, minimizzazione, trasparenza, gestione dei diritti e dimostrazione della conformità.",
+      "detail": "La sicurezza costituisce una componente necessaria, non sufficiente. Il titolare deve governare l’intero trattamento, dalle scelte iniziali alle procedure di cancellazione e di gestione degli incidenti.",
+      "example": "Una piattaforma può avere TLS e backup ma raccogliere informazioni superflue senza adeguata base giuridica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre un obbligo giuridico-organizzativo a un elenco di prodotti di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.1, pagina PDF 192"
+    },
+    {
+      "id": "cyber-c11-q005",
+      "topicId": "cyber-c11-t01",
+      "question": "A quali trattamenti si applica generalmente il GDPR?",
+      "answer": "Al trattamento totalmente o parzialmente automatizzato di dati personali e al trattamento non automatizzato di dati personali contenuti o destinati a un archivio.",
+      "detail": "L’ambito del regolamento dipende da natura dei dati, caratteristiche del trattamento e condizioni previste. Le sole operazioni manuali non sono automaticamente escluse se i dati fanno parte di un archivio.",
+      "example": "Un archivio aziendale di clienti gestito su software o una raccolta cartacea strutturata possono rientrare nell’ambito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che il GDPR valga solo per i database informatici.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.1.1, pagina PDF 192"
+    },
+    {
+      "id": "cyber-c11-q006",
+      "topicId": "cyber-c11-t01",
+      "question": "Quali sono alcune esclusioni o situazioni speciali nell’ambito del GDPR?",
+      "answer": "Tra le esclusioni ci sono alcune attività puramente personali o domestiche; specifici trattamenti delle autorità competenti in materia penale seguono regimi particolari.",
+      "detail": "L’applicazione richiede sempre valutazione del contesto. La presenza di dati personali non implica automaticamente che ogni attività del mondo ricada senza eccezioni nel GDPR.",
+      "example": "Una rubrica usata esclusivamente in ambito personale ha una valutazione diversa da un CRM di impresa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare le esclusioni come autorizzazione generale per attività aziendali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.1.1, pagina PDF 192"
+    },
+    {
+      "id": "cyber-c11-q007",
+      "topicId": "cyber-c11-t01",
+      "question": "Il GDPR può applicarsi a organizzazioni non stabilite nell’Unione europea?",
+      "answer": "Sì, in determinate condizioni, ad esempio quando offrono beni o servizi a interessati nell’Unione o ne monitorano il comportamento nell’Unione.",
+      "detail": "L’ambito territoriale non è riducibile alla collocazione fisica del server o alla sede legale del fornitore. Conta anche il collegamento concreto del trattamento con le persone nell’Unione.",
+      "example": "Un servizio extra-UE che monitora il comportamento online di persone nell’UE può rientrare nel GDPR.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre l’esclusione dal semplice fatto che il provider sia estero.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.1.1, pagina PDF 192"
+    },
+    {
+      "id": "cyber-c11-q008",
+      "topicId": "cyber-c11-t01",
+      "question": "Perché è importante distinguere dati individuali da misure aggregate nel settore energia?",
+      "answer": "Perché nominativi, recapiti e consumi associabili a clienti fisici sono dati personali, mentre misure davvero aggregate non riconducibili a persone possono richiedere una diversa valutazione.",
+      "detail": "La classificazione non dipende soltanto dal nome della colonna: identificativi del punto di fornitura, orari e localizzazione possono consentire una reidentificazione.",
+      "example": "Un report aggregato di consumo per grande segmento è diverso da una serie oraria riferibile a un cliente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che un identificativo tecnico renda automaticamente anonimo il profilo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.1.1, pagina PDF 192"
+    },
+    {
+      "id": "cyber-c11-q009",
+      "topicId": "cyber-c11-t02",
+      "question": "Che cos’è un dato personale ai sensi dell’articolo 4, punto 1, del GDPR?",
+      "answer": "Qualsiasi informazione riguardante una persona fisica identificata o identificabile, anche indirettamente.",
+      "detail": "L’identificabilità può dipendere da numeri, identificativi online, dati di ubicazione e fattori legati all’identità. L’informazione può essere testo, immagine, voce, dato tecnico o inferenza sul comportamento.",
+      "example": "Un codice cliente collegabile a un’anagrafica può essere dato personale pur non contenendo il nome.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare il concetto a nome, cognome e codice fiscale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2, pagina PDF 193"
+    },
+    {
+      "id": "cyber-c11-q010",
+      "topicId": "cyber-c11-t02",
+      "question": "Come si distinguono identificazione diretta e indiretta?",
+      "answer": "L’identificazione diretta riconosce la persona immediatamente; quella indiretta richiede l’uso combinato di informazioni ragionevolmente disponibili.",
+      "detail": "Un dato tecnico isolato può diventare identificativo quando viene collegato a un archivio, a un luogo o ad altre informazioni. Conta il contesto dell’operazione e dei mezzi accessibili.",
+      "example": "Un nominativo con codice fiscale identifica direttamente; un codice cliente con tabella di corrispondenza può identificare indirettamente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non valutare l’identificabilità solo guardando una singola colonna.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2, pagina PDF 193"
+    },
+    {
+      "id": "cyber-c11-q011",
+      "topicId": "cyber-c11-t02",
+      "question": "Quali dati tecnici e digitali possono essere personali?",
+      "answer": "Indirizzi IP, identificativi dei dispositivi, dati di traffico, ubicazione e consumi associabili a un individuo possono costituire dati personali.",
+      "detail": "La qualificazione richiede di verificare se, nel contesto, i dati permettono di identificare una persona tramite mezzi ragionevolmente utilizzabili. Non tutte le stringhe numeriche lo sono sempre.",
+      "example": "Un profilo di consumi associato a un POD riferibile a un’abitazione può permettere di individuare un cliente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che qualsiasi IP sia sempre personale o che non lo sia mai.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2, pagina PDF 193"
+    },
+    {
+      "id": "cyber-c11-q012",
+      "topicId": "cyber-c11-t02",
+      "question": "Un dato già pubblicamente accessibile perde la natura di dato personale?",
+      "answer": "No. Un’informazione pubblica può continuare a riferirsi a una persona identificata o identificabile.",
+      "detail": "La visibilità dell’informazione non trasforma automaticamente in lecito qualsiasi trattamento successivo: serve verificare finalità e basi giuridiche.",
+      "example": "Il nome e la qualifica professionale pubblicati su un sito rimangono dati personali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere dato accessibile a tutti con dato anonimo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2, pagina PDF 193"
+    },
+    {
+      "id": "cyber-c11-q013",
+      "topicId": "cyber-c11-t02",
+      "question": "Che cosa sono le categorie particolari di dati personali dell’articolo 9?",
+      "answer": "Sono informazioni soggette a tutela rafforzata, tra cui origine razziale o etnica, opinioni politiche, convinzioni religiose o filosofiche, appartenenza sindacale, dati genetici, biometrici per identificazione univoca, salute, vita e orientamento sessuale.",
+      "detail": "Il trattamento è in linea generale vietato, salvo le condizioni specifiche previste dal paragrafo 2 dell’articolo 9, oltre ai normali requisiti applicabili.",
+      "example": "Un dato clinico riferito a una persona rientra normalmente in una categoria particolare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare “dato sensibile” come sinonimo tecnico indistinto di qualunque dato riservato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2.1, pagina PDF 193"
+    },
+    {
+      "id": "cyber-c11-q014",
+      "topicId": "cyber-c11-t02",
+      "question": "Una fotografia è automaticamente un dato biometrico dell’articolo 9?",
+      "answer": "No. È normalmente dato personale, ma assume la qualificazione speciale biometrica solo in specifiche condizioni, ad esempio se sottoposta a trattamento tecnico per identificare univocamente una persona.",
+      "detail": "La differenza è tra l’informazione fotografica in sé e l’elaborazione biometrica finalizzata a identificazione univoca. Contano metodo e finalità dell’operazione.",
+      "example": "Foto profilo e template per riconoscimento facciale non sono automaticamente equivalenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire l’articolo 9 a ogni fotografia senza analizzare il trattamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2.1, pagina PDF 193"
+    },
+    {
+      "id": "cyber-c11-q015",
+      "topicId": "cyber-c11-t02",
+      "question": "Come sono disciplinati i dati relativi a condanne penali e reati?",
+      "answer": "Sono soggetti alla disciplina specifica dell’articolo 10 del GDPR, distinta dalle categorie particolari dell’articolo 9.",
+      "detail": "La presenza di regole rafforzate non significa che questi dati siano semplicemente una sottovoce dell’articolo 9. La valutazione deve considerare il regime proprio.",
+      "example": "Un archivio di informazioni relative a condanne non va qualificato soltanto come dato sanitario o biometrico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Distinguere sempre articolo 9 e articolo 10 all’orale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2.1, pagina PDF 193"
+    },
+    {
+      "id": "cyber-c11-q016",
+      "topicId": "cyber-c11-t02",
+      "question": "Perché i dati dei minori richiedono attenzione particolare?",
+      "answer": "Perché il GDPR prevede tutele specifiche, anche riguardo al consenso per servizi della società dell’informazione ai sensi dell’articolo 8.",
+      "detail": "Possono intervenire disposizioni nazionali sulle soglie di età nei limiti consentiti dal Regolamento. Le condizioni devono essere valutate nel contesto del servizio.",
+      "example": "Un servizio digitale rivolto a minori non può gestire il consenso come se ogni utente fosse adulto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare un’unica soglia numerica senza considerare il diritto nazionale previsto dal manuale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2.1, pagina PDF 193"
+    },
+    {
+      "id": "cyber-c11-q017",
+      "topicId": "cyber-c11-t02",
+      "question": "Un dato personale comune non è tutelato perché non appartiene all’articolo 9?",
+      "answer": "È comunque tutelato dal GDPR: le categorie particolari aggiungono condizioni rafforzate, non introducono da sole l’unico caso di tutela.",
+      "detail": "Nominativi, indirizzi e dati contrattuali sono normalmente dati personali soggetti ai principi, ai diritti e agli obblighi di sicurezza anche senza essere relativi alla salute o alla religione.",
+      "example": "L’indirizzo di fatturazione richiede gestione lecita pur non essendo un dato dell’articolo 9.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere “non particolare” con “liberamente trattabile”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2.1, pagina PDF 193"
+    },
+    {
+      "id": "cyber-c11-q018",
+      "topicId": "cyber-c11-t03",
+      "question": "Che cos’è la pseudonimizzazione ai sensi dell’articolo 4, punto 5?",
+      "answer": "È un trattamento per cui i dati non possono essere attribuiti a un interessato specifico senza informazioni aggiuntive, conservate separatamente e adeguatamente protette.",
+      "detail": "La riconducibilità rimane possibile tramite una tabella di corrispondenza o altri elementi. I dati pseudonimizzati restano dati personali soggetti al GDPR.",
+      "example": "Sostituire il nominativo con CLT-00481 e mantenere il mapping protetto è pseudonimizzazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definirla anonimizzazione irreversibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2.2, pagina PDF 194"
+    },
+    {
+      "id": "cyber-c11-q019",
+      "topicId": "cyber-c11-t03",
+      "question": "Che cos’è l’anonimizzazione effettiva?",
+      "answer": "È il processo che rende i dati non più riferibili a persone identificate o identificabili, considerando i mezzi ragionevolmente utilizzabili per reidentificarle.",
+      "detail": "Quando l’anonimizzazione è reale, l’insieme non ricade più nel GDPR come insieme di dati personali. La mera rimozione dei nomi può non essere sufficiente.",
+      "example": "Una tabella aggregata per fasce ampie può ridurre il rischio; dati orari e coordinate dettagliate possono consentire reidentificazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare cancellazione della colonna “nome” ad anonimizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2.2, pagina PDF 194"
+    },
+    {
+      "id": "cyber-c11-q020",
+      "topicId": "cyber-c11-t03",
+      "question": "Perché la cifratura non equivale normalmente ad anonimizzazione?",
+      "answer": "Perché i dati sono recuperabili con la chiave e possono restare riferibili a una persona fisica; pertanto il trattamento continua generalmente a rientrare nel GDPR.",
+      "detail": "La cifratura è una misura di sicurezza, non una cancellazione della relazione con l’interessato. Protegge la leggibilità nei confronti di chi non possiede la chiave.",
+      "example": "Un database clienti cifrato resta personale per l’azienda che custodisce le chiavi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concludere che “i dati sono cifrati, quindi il GDPR non si applica”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2.2, pagina PDF 194"
+    },
+    {
+      "id": "cyber-c11-q021",
+      "topicId": "cyber-c11-t03",
+      "question": "Come si protegge correttamente una tabella di corrispondenza usata per pseudonimizzare?",
+      "answer": "Separandola dal dataset pseudonimizzato, limitandone l’accesso e applicando misure adeguate alla possibilità di reidentificazione.",
+      "detail": "La tabella di mapping è la chiave logica che collega ID e nominativo. Anche senza mapping esplicito si deve considerare l’identificazione tramite combinazioni di attributi.",
+      "example": "Archivio consumi con ID pseudonimo e mapping su sistema separato con privilegi restrittivi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare sicura una pseudonimizzazione se chiunque consulta anche il mapping.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2.2, pagina PDF 194"
+    },
+    {
+      "id": "cyber-c11-q022",
+      "topicId": "cyber-c11-t03",
+      "question": "Un database con ID utente, POD, consumi mensili e indirizzo è anonimo se viene rimosso il nominativo?",
+      "answer": "Non necessariamente: può restare personale se mapping, ubicazione, orari e consumi consentono di identificare l’abitazione o il singolo individuo.",
+      "detail": "Il manuale invita a esaminare la possibilità concreta di reidentificazione e non soltanto la presenza di identificativi testuali diretti.",
+      "example": "Sostituire il nome con un ID casuale non elimina il rischio se permane un collegamento al POD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trascurare quasi-identificatori e serie di consumo dettagliate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2.2, pagina PDF 194"
+    },
+    {
+      "id": "cyber-c11-q023",
+      "topicId": "cyber-c11-t03",
+      "question": "Qual è la differenza essenziale tra pseudonimizzazione, anonimizzazione e cifratura?",
+      "answer": "La pseudonimizzazione riduce l’attribuibilità mediante informazioni separate; l’anonimizzazione elimina efficacemente l’identificabilità; la cifratura rende il dato illeggibile senza chiave.",
+      "detail": "Le tre tecniche risolvono problemi diversi: riduzione della riconducibilità, eliminazione della riferibilità e riservatezza. Pseudonimizzazione e cifratura non escludono da sole il GDPR.",
+      "example": "ID pseudonimo con mapping; dataset irreversibilmente non identificabile; archivio AES decifrabile con chiave.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare le tre parole come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.2.2, pagina PDF 194"
+    },
+    {
+      "id": "cyber-c11-q024",
+      "topicId": "cyber-c11-t04",
+      "question": "Che cosa significa “trattamento” nell’articolo 4, punto 2, del GDPR?",
+      "answer": "Qualsiasi operazione o insieme di operazioni su dati personali, con o senza mezzi automatizzati.",
+      "detail": "Il concetto include raccolta, registrazione, organizzazione, conservazione, modifica, estrazione, consultazione, uso, trasmissione, diffusione, raffronto, interconnessione, limitazione, cancellazione e distruzione.",
+      "example": "Leggere un record cliente in un gestionale è già un trattamento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non restringere il trattamento alla cessione dei dati a terzi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.3, pagina PDF 195"
+    },
+    {
+      "id": "cyber-c11-q025",
+      "topicId": "cyber-c11-t04",
+      "question": "Anche consultazione, copia o cancellazione di dati personali sono trattamenti?",
+      "answer": "Sì. Sono operazioni espressamente ricomprese nella nozione ampia di trattamento.",
+      "detail": "Il GDPR disciplina l’intero ciclo di vita delle informazioni, anche quando non avviene alcuna comunicazione esterna.",
+      "example": "Copiare un file con anagrafiche in un ambiente di test o cancellare vecchi record sono trattamenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che un’attività interna sia automaticamente esclusa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.3, pagina PDF 195"
+    },
+    {
+      "id": "cyber-c11-q026",
+      "topicId": "cyber-c11-t04",
+      "question": "Che cos’è la finalità di un trattamento e perché conta?",
+      "answer": "È il motivo per cui i dati vengono trattati; deve essere definito e valutato prima di usare le informazioni.",
+      "detail": "La stessa informazione può essere utilizzata per scopi differenti, non necessariamente accomunati dalla stessa liceità: eseguire un contratto non equivale a profilare a fini commerciali.",
+      "example": "L’indirizzo usato per la fatturazione e i consumi usati per offerte personalizzate rispondono a finalità differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il semplice possesso tecnico del dato non autorizza qualunque riutilizzo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.3, pagina PDF 195"
+    },
+    {
+      "id": "cyber-c11-q027",
+      "topicId": "cyber-c11-t04",
+      "question": "Chi è l’interessato nel GDPR?",
+      "answer": "È la persona fisica cui si riferiscono i dati personali trattati.",
+      "detail": "I diritti di informazione, accesso, rettifica e altri diritti si riferiscono a tale soggetto, anche quando i dati sono detenuti dall’organizzazione che presta un servizio.",
+      "example": "Il cliente individuale i cui consumi energetici sono nel CRM è un interessato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’interessato con la società che possiede il database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.3.1, pagina PDF 195"
+    },
+    {
+      "id": "cyber-c11-q028",
+      "topicId": "cyber-c11-t04",
+      "question": "Chi è il titolare del trattamento?",
+      "answer": "Il soggetto che, da solo o con altri, determina finalità e mezzi del trattamento.",
+      "detail": "La qualificazione dipende dalla funzione decisionale e non semplicemente dalla proprietà dei server, dall’hosting o dall’attività di programmazione.",
+      "example": "L’impresa che decide perché raccogliere dati dei propri clienti è normalmente titolare delle relative finalità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente il ruolo di titolare al cloud provider.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.3.1, pagina PDF 195"
+    },
+    {
+      "id": "cyber-c11-q029",
+      "topicId": "cyber-c11-t04",
+      "question": "Chi è il responsabile del trattamento e quale articolo ne disciplina il rapporto?",
+      "answer": "È il soggetto che tratta dati personali per conto del titolare, secondo un rapporto disciplinato dall’articolo 28 del GDPR.",
+      "detail": "Il responsabile opera nell’ambito dell’incarico e delle istruzioni previste e deve rispettare obblighi e misure di sicurezza pertinenti.",
+      "example": "Un fornitore che gestisce per conto del titolare una piattaforma con dati clienti può essere responsabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere responsabile del trattamento e DPO.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.3.1, pagina PDF 195"
+    },
+    {
+      "id": "cyber-c11-q030",
+      "topicId": "cyber-c11-t04",
+      "question": "Che differenza esiste tra contitolari e sub-responsabile?",
+      "answer": "I contitolari decidono congiuntamente finalità e mezzi ai sensi dell’articolo 26; un sub-responsabile è un ulteriore soggetto incaricato dal responsabile secondo le condizioni del GDPR.",
+      "detail": "Sono due relazioni distinte: decisione congiunta da un lato, filiera di trattamento per conto altrui dall’altro. Occorre chiarire e documentare gli obblighi.",
+      "example": "Due imprese che decidono insieme lo scopo di una raccolta sono diverse da un fornitore cloud che utilizza un subfornitore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare contitolare qualsiasi fornitore tecnico esterno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.3.1, pagina PDF 195"
+    },
+    {
+      "id": "cyber-c11-q031",
+      "topicId": "cyber-c11-t04",
+      "question": "Che cos’è il DPO/RPD e in cosa differisce dal responsabile del trattamento?",
+      "answer": "Il DPO svolge consulenza, sorveglianza e collegamento con l’autorità di controllo; il responsabile tratta concretamente dati per conto del titolare.",
+      "detail": "La designazione del DPO è obbligatoria nelle situazioni previste dall’articolo 37 e facoltativa negli altri casi. Non trasferisce automaticamente le responsabilità del titolare e del responsabile.",
+      "example": "Il DPO può consigliare sul programma di conformità, ma non sostituisce l’azienda nelle decisioni sulle finalità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "DPO non è sinonimo di “responsabile ex articolo 28”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.3.1, pagina PDF 195"
+    },
+    {
+      "id": "cyber-c11-q032",
+      "topicId": "cyber-c11-t04",
+      "question": "Un dipendente può accedere a qualsiasi dato aziendale per il solo fatto di lavorare nell’impresa?",
+      "answer": "No. Le persone autorizzate devono operare sotto l’autorità del titolare o responsabile e secondo istruzioni e permessi delimitati.",
+      "detail": "Il principio si traduce in perimetri di accesso legati alle mansioni e revocabili; appartenenza organizzativa e diritto di consultazione non coincidono.",
+      "example": "Un operatore di assistenza può vedere lo stato della pratica senza accedere a tutta la storia clinica o economica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare “è dipendente” come regola universale di autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.3.1, pagina PDF 195"
+    },
+    {
+      "id": "cyber-c11-q033",
+      "topicId": "cyber-c11-t05",
+      "question": "Quali sono i sette principi dell’articolo 5 del GDPR?",
+      "answer": "Liceità, correttezza e trasparenza; limitazione della finalità; minimizzazione; esattezza; limitazione della conservazione; integrità e riservatezza; responsabilizzazione.",
+      "detail": "Sono criteri operativi per progettare e gestire tutti i trattamenti, non semplici definizioni astratte: si riflettono nei flussi, nelle interfacce, nei permessi e nella durata dei dati.",
+      "example": "Un CRM conforme deve avere finalità, base giuridica, accessi, retention e procedure dimostrabili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre l’articolo 5 al solo requisito della cifratura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.4, pagina PDF 195"
+    },
+    {
+      "id": "cyber-c11-q034",
+      "topicId": "cyber-c11-t05",
+      "question": "Che cosa comprende il principio di liceità, correttezza e trasparenza?",
+      "answer": "Il trattamento deve avere una base giuridica valida, essere leale verso le persone e risultare chiaro e comprensibile.",
+      "detail": "L’interessato deve poter sapere chi tratta i dati, per quali scopi, con quali destinatari, tempi di conservazione e diritti. Un’informativa oscura non garantisce vera trasparenza.",
+      "example": "La raccolta dati deve presentare chiaramente l’uso contrattuale e l’eventuale uso promozionale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare un lungo documento legale poco leggibile a informazione trasparente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.4.1, pagina PDF 195"
+    },
+    {
+      "id": "cyber-c11-q035",
+      "topicId": "cyber-c11-t05",
+      "question": "Che cosa significa limitazione della finalità?",
+      "answer": "Raccogliere i dati per finalità determinate, esplicite e legittime ed evitare trattamenti successivi incompatibili con esse.",
+      "detail": "La possibilità di riutilizzo va valutata secondo il regolamento: non è sempre vietata né automaticamente permessa.",
+      "example": "Consumi raccolti per fatturazione non vanno riutilizzati senza valutazione per una profilazione commerciale differente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che il consenso iniziale copra indistintamente tutte le finalità future.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.4.2, pagina PDF 196"
+    },
+    {
+      "id": "cyber-c11-q036",
+      "topicId": "cyber-c11-t05",
+      "question": "Come si valuta il riutilizzo dei dati per una finalità differente?",
+      "answer": "Occorre verificare la compatibilità della finalità ulteriore e le condizioni applicabili prima del nuovo trattamento.",
+      "detail": "La finalità originaria è un vincolo di gestione, non una semplice etichetta. Il riutilizzo può richiedere ulteriori verifiche o basi appropriate.",
+      "example": "I consumi necessari al contratto non diventano automaticamente un dataset liberamente destinabile al marketing.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare né che ogni riutilizzo sia proibito né che ogni riutilizzo sia libero.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.4.2, pagina PDF 196"
+    },
+    {
+      "id": "cyber-c11-q037",
+      "topicId": "cyber-c11-t05",
+      "question": "Che cosa significa minimizzazione dei dati?",
+      "answer": "Trattare dati adeguati, pertinenti e limitati a quanto necessario rispetto alle finalità.",
+      "detail": "La minimizzazione riguarda raccolta, lettura, esportazione, condivisione, copie di test e log. È una regola di progettazione, non solo di cancellazione successiva.",
+      "example": "Se basta l’e-mail per un servizio, non richiedere automaticamente codice fiscale e documento d’identità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere minimizzazione con eliminazione indiscriminata di dati necessari.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.4.3, pagina PDF 196"
+    },
+    {
+      "id": "cyber-c11-q038",
+      "topicId": "cyber-c11-t05",
+      "question": "Come si applica la minimizzazione ai log e alle esportazioni?",
+      "answer": "Si registrano e si trasferiscono soltanto campi e dettagli pertinenti per la finalità e con durata giustificata.",
+      "detail": "Il rischio non deriva solo dal database centrale: copie nei report, log con query o identificativi e invii ai fornitori possono ampliare dati esposti e conservarli inutilmente.",
+      "example": "Esportare statistiche aggregate invece dell’intera anagrafica per analizzare la domanda.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare ogni copia “tecnica” automaticamente necessaria.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.4.3, pagina PDF 196"
+    },
+    {
+      "id": "cyber-c11-q039",
+      "topicId": "cyber-c11-t05",
+      "question": "Che cosa prescrive il principio di esattezza?",
+      "answer": "I dati devono essere esatti e, quando necessario, aggiornati; quelli inesatti vanno rettificati o cancellati tempestivamente secondo le finalità.",
+      "detail": "Nei sistemi storicizzati l’esattezza non impone di sovrascrivere tutti i valori precedenti: occorre documentare correttamente periodo di validità e correzioni.",
+      "example": "Un indirizzo aggiornato per spedizioni può coesistere con l’indirizzo storico della fattura del passato, se giustificato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere dato storicamente corretto con dato attualmente valido.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.4.4, pagina PDF 196"
+    },
+    {
+      "id": "cyber-c11-q040",
+      "topicId": "cyber-c11-t05",
+      "question": "Che cosa significa limitazione della conservazione?",
+      "answer": "Non conservare dati identificabili oltre il tempo necessario per le finalità, salvo condizioni particolari e obblighi applicabili.",
+      "detail": "La retention dipende da categoria, finalità, norme e possibili garanzie per ricerca, archivio di pubblico interesse o statistica. Non esiste un periodo universale per ogni dato.",
+      "example": "Log di accesso, documenti fiscali e dati promozionali possono richiedere regole temporali differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che “più dati per più anni” sia sempre prudente o consentito.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.4.5, pagina PDF 196"
+    },
+    {
+      "id": "cyber-c11-q041",
+      "topicId": "cyber-c11-t05",
+      "question": "Ricerca e archiviazione giustificano automaticamente una conservazione illimitata?",
+      "answer": "No. Alcune finalità di ricerca, statistica o archiviazione godono di regimi particolari ma richiedono condizioni e garanzie specifiche.",
+      "detail": "La conservazione prolungata va sempre motivata e collegata a finalità appropriate; il manuale esclude il permesso incondizionato di mantenere tutti i dati per sempre.",
+      "example": "Un archivio di ricerca con dati pseudonimizzati richiede una valutazione, non una semplice etichetta “ricerca”.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare un’eccezione delimitata in deroga generale al GDPR.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.4.5, pagina PDF 196"
+    },
+    {
+      "id": "cyber-c11-q042",
+      "topicId": "cyber-c11-t05",
+      "question": "Che cosa richiede il principio di integrità e riservatezza?",
+      "answer": "Sicurezza adeguata contro trattamenti non autorizzati o illeciti e contro perdita, distruzione e danno accidentali tramite misure tecniche e organizzative.",
+      "detail": "Il principio unisce protezione dagli accessi abusivi, sicurezza applicativa, backup, gestione delle patch, monitoraggio e controllo dei fornitori.",
+      "example": "RBAC e TLS tutelano gli accessi e il canale; backup testati aiutano rispetto alla perdita accidentale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non parlare solo di riservatezza dimenticando integrità e disponibilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.4.6, pagina PDF 196"
+    },
+    {
+      "id": "cyber-c11-q043",
+      "topicId": "cyber-c11-t05",
+      "question": "Che cos’è accountability nel GDPR?",
+      "answer": "È la responsabilizzazione del titolare: rispettare i principi e poter dimostrare di averli rispettati.",
+      "detail": "Occorrono decisioni tracciabili, ruoli, istruzioni, registri, analisi dei rischi, verifiche e documentazione commisurata al trattamento.",
+      "example": "Una policy di retention con responsabili, evidenze di cancellazione e controlli periodici dimostra attuazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non basta affermare “siamo compliant” senza prove e procedure.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.4.7, pagina PDF 196"
+    },
+    {
+      "id": "cyber-c11-q044",
+      "topicId": "cyber-c11-t05",
+      "question": "Qual è il nesso tra accountability e progettazione dei sistemi informativi?",
+      "answer": "Le scelte applicative devono essere giustificabili, verificabili e documentabili lungo tutto il ciclo di trattamento.",
+      "detail": "Permessi, log, retention, operazioni di modifica e gestione delle richieste non sono solo funzioni tecniche: sostengono la dimostrazione dei principi.",
+      "example": "Un sistema registra chi ha autorizzato accessi eccezionali e quando i permessi sono stati rimossi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la mera raccolta di log con una governance completa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.4.7, pagina PDF 196"
+    },
+    {
+      "id": "cyber-c11-q045",
+      "topicId": "cyber-c11-t06",
+      "question": "Quali sono le sei basi giuridiche previste dall’articolo 6 del GDPR?",
+      "answer": "Consenso; necessità contrattuale; obbligo legale; tutela degli interessi vitali; compito di interesse pubblico o esercizio di pubblici poteri; legittimo interesse alle condizioni previste.",
+      "detail": "Il titolare individua prima del trattamento la base pertinente per la specifica finalità. Il consenso è una delle possibilità, non la regola obbligatoria in tutti i casi.",
+      "example": "Dati necessari a eseguire una fornitura possono basarsi sul contratto; documenti obbligatori possono basarsi sulla legge.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non richiedere “consenso privacy” come fondamento universale del trattamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.5, pagina PDF 197"
+    },
+    {
+      "id": "cyber-c11-q046",
+      "topicId": "cyber-c11-t06",
+      "question": "Quando è appropriata la base giuridica contrattuale?",
+      "answer": "Quando il trattamento è necessario per eseguire un contratto con l’interessato o misure precontrattuali richieste dallo stesso.",
+      "detail": "La necessità deve collegarsi effettivamente alla prestazione. Finalità opzionali ulteriori non diventano automaticamente contrattuali.",
+      "example": "Nome, indirizzo e informazioni necessarie alla gestione di una fornitura.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserire arbitrariamente la profilazione commerciale tra le attività “necessarie al contratto”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.5, pagina PDF 197"
+    },
+    {
+      "id": "cyber-c11-q047",
+      "topicId": "cyber-c11-t06",
+      "question": "Qual è la differenza tra obbligo legale e consenso come base di trattamento?",
+      "answer": "L’obbligo legale deriva da una disposizione applicabile al titolare; il consenso deriva da una scelta libera e valida dell’interessato.",
+      "detail": "Quando la normativa impone di conservare documenti, non si giustifica la conservazione chiedendo un consenso facoltativo.",
+      "example": "Adempimenti fiscali fondati su un obbligo di legge invece che su una casella di consenso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mescolare finalità obbligatorie e facoltative sotto un unico pulsante.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.5, pagina PDF 197"
+    },
+    {
+      "id": "cyber-c11-q048",
+      "topicId": "cyber-c11-t06",
+      "question": "Quando possono rilevare interessi vitali e interesse pubblico?",
+      "answer": "Gli interessi vitali riguardano la protezione della vita o incolumità in circostanze appropriate; l’interesse pubblico riguarda compiti o poteri previsti dal diritto applicabile.",
+      "detail": "Sono basi con condizioni proprie, non formule generiche utilizzabili da ogni organizzazione per semplice convenienza.",
+      "example": "Trattamento in un’emergenza sanitaria; attività amministrativa attribuita dalla legge a un ente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invocare “utilità pubblica” senza il corrispondente fondamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.5, pagina PDF 197"
+    },
+    {
+      "id": "cyber-c11-q049",
+      "topicId": "cyber-c11-t06",
+      "question": "Come funziona il legittimo interesse come base giuridica?",
+      "answer": "Richiede un interesse legittimo del titolare o di terzi, la necessità del trattamento e un bilanciamento con diritti, libertà e aspettative dell’interessato.",
+      "detail": "Non è una base residuale sempre disponibile. La lettera f) non si applica alle autorità pubbliche nel trattamento effettuato nell’esecuzione dei loro compiti.",
+      "example": "Talune misure antifrode o di sicurezza possono richiedere una valutazione del legittimo interesse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un interesse aziendale con una giustificazione automatica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.5, pagina PDF 197"
+    },
+    {
+      "id": "cyber-c11-q050",
+      "topicId": "cyber-c11-t06",
+      "question": "Quali requisiti deve soddisfare un consenso valido?",
+      "answer": "Deve essere libero, specifico, informato e inequivocabile, documentabile e revocabile con facilità comparabile alla sua prestazione.",
+      "detail": "Gli articoli 4 e 7 escludono la scelta apparente: caselle preselezionate non dimostrano un consenso valido; condizionare un contratto a trattamenti non necessari può minare la libertà.",
+      "example": "Una casella non preselezionata per newsletter separata dalle condizioni del servizio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare silenzio, preselezione o presa visione dell’informativa a consenso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.5.1, pagina PDF 197"
+    },
+    {
+      "id": "cyber-c11-q051",
+      "topicId": "cyber-c11-t06",
+      "question": "Qual è la differenza tra informativa e consenso?",
+      "answer": "L’informativa comunica modalità e condizioni del trattamento; il consenso è una specifica base giuridica che richiede una scelta valida.",
+      "detail": "L’informativa va resa anche quando la base sia un contratto o un obbligo di legge. Consegnare un documento informativo non equivale a raccogliere un consenso.",
+      "example": "Il cliente riceve informativa sulla fatturazione e può avere un’opzione distinta per comunicazioni promozionali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare “ho letto la privacy” come sostituto di una scelta libera per ogni finalità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.5.1, pagina PDF 197"
+    },
+    {
+      "id": "cyber-c11-q052",
+      "topicId": "cyber-c11-t06",
+      "question": "Perché un consenso collegato obbligatoriamente a un trattamento non necessario può essere invalido?",
+      "answer": "Perché, se non esiste una possibilità autentica di rifiutare, viene meno la libertà della manifestazione di volontà.",
+      "detail": "Il manuale sottolinea il problema del condizionamento dell’esecuzione contrattuale a un trattamento ulteriore che non sia necessario alla prestazione.",
+      "example": "Per acquistare un servizio non dovrebbe essere obbligatorio accettare finalità promozionali non necessarie.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere libertà del consenso quando rifiutare significa perdere la prestazione principale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.5.1, pagina PDF 197"
+    },
+    {
+      "id": "cyber-c11-q053",
+      "topicId": "cyber-c11-t06",
+      "question": "Per trattare categorie particolari ai sensi dell’articolo 9 è sufficiente una base dell’articolo 6?",
+      "answer": "No. Occorre anche una condizione specifica tra quelle dell’articolo 9, paragrafo 2, e rispettare gli altri obblighi.",
+      "detail": "Tra le condizioni illustrate ci sono consenso esplicito quando appropriato, situazioni di lavoro e sicurezza sociale, interessi vitali, assistenza sanitaria e interesse pubblico rilevante nei limiti normativi.",
+      "example": "Dati sulla salute richiedono un’analisi specifica oltre alla base generale di liceità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che consenso esplicito sia sempre l’unica condizione possibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.5.2, pagina PDF 197"
+    },
+    {
+      "id": "cyber-c11-q054",
+      "topicId": "cyber-c11-t06",
+      "question": "Quali cautele richiede una finalità ulteriore rispetto alla raccolta originaria?",
+      "answer": "Verificare compatibilità ai sensi dell’articolo 6, paragrafo 4, e le altre disposizioni pertinenti; talvolta può servire un’altra base giuridica.",
+      "detail": "Il principio di limitazione della finalità non impedisce ogni uso successivo, ma richiede una valutazione motivata, non un riutilizzo automatico.",
+      "example": "I consumi raccolti per fatturazione non vanno liberamente passati a profilazione senza verifica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre automaticamente liceità dalla presenza pregressa dei dati nel CRM.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.5.3, pagina PDF 197"
+    },
+    {
+      "id": "cyber-c11-q055",
+      "topicId": "cyber-c11-t06",
+      "question": "La ricerca scientifica, storica e statistica è esentata da tutte le regole privacy?",
+      "answer": "No. L’articolo 89 e altre disposizioni prevedono condizioni e garanzie; eventuali deroghe informative hanno presupposti specifici.",
+      "detail": "La compatibilità di ulteriori finalità, i diritti e gli obblighi informativi vanno valutati in rapporto alla disciplina applicabile, senza esenzione generalizzata.",
+      "example": "Una ricerca su serie storiche individuali richiede garanzie e un’analisi della riconducibilità dei dati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare l’etichetta “statistica” come salvacondotto per ogni trattamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.5.3, pagina PDF 197"
+    },
+    {
+      "id": "cyber-c11-q056",
+      "topicId": "cyber-c11-t07",
+      "question": "Che cos’è l’informativa sul trattamento e quali caratteristiche deve avere?",
+      "answer": "È l’insieme di informazioni che consente all’interessato di comprendere come e perché i dati saranno trattati; deve essere concisa, trasparente, intelligibile, accessibile e chiara.",
+      "detail": "Gli articoli 12–14 richiedono attenzione al linguaggio, specialmente quando ci si rivolge a minori. L’informativa permette il controllo consapevole anche quando non occorre consenso.",
+      "example": "Un portale illustra separatamente gestione contrattuale e scelta facoltativa per promozioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere informativa e casella “accetto tutto”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.6, pagina PDF 198"
+    },
+    {
+      "id": "cyber-c11-q057",
+      "topicId": "cyber-c11-t07",
+      "question": "Qual è la differenza tra gli articoli 13 e 14 sull’informativa?",
+      "answer": "L’articolo 13 riguarda dati raccolti direttamente presso l’interessato; l’articolo 14 dati ottenuti da fonti diverse, con termini e obblighi propri.",
+      "detail": "Nella raccolta diretta le informazioni vanno normalmente rese al momento della raccolta. Le deroghe previste per l’articolo 14 sono specifiche e non automatiche.",
+      "example": "Un cliente inserisce dati sul sito: articolo 13; un’azienda riceve dati da terzi: valutazione ai sensi dell’articolo 14.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non escludere l’informativa solo perché i dati provengono da un fornitore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.6, pagina PDF 198"
+    },
+    {
+      "id": "cyber-c11-q058",
+      "topicId": "cyber-c11-t07",
+      "question": "Quali contenuti deve chiarire l’informativa GDPR?",
+      "answer": "Identità e contatti del titolare, eventuale DPO, finalità e basi giuridiche, destinatari e trasferimenti pertinenti, conservazione, diritti, reclami, obbligatorietà dei dati ed eventuali decisioni automatizzate rilevanti.",
+      "detail": "La formulazione e l’esatto insieme dei contenuti dipendono da articoli 13 o 14 e dal caso concreto, ma devono permettere una comprensione effettiva.",
+      "example": "Informativa su portale clienti con finalità fatturazione, gestione assistenza, retention e diritti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire la finalità concreta con una formula vaga come “per migliorare i servizi”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.6, pagina PDF 198"
+    },
+    {
+      "id": "cyber-c11-q059",
+      "topicId": "cyber-c11-t07",
+      "question": "L’impossibilità pratica di contattare tutti gli interessati esonera sempre dall’informativa?",
+      "answer": "No. Eventuali esenzioni richiedono i presupposti specifici previsti dal GDPR e, quando applicabile, misure compensative.",
+      "detail": "Il manuale richiama le eccezioni dell’articolo 14 per dati non ottenuti dall’interessato, che non vanno interpretate come autorizzazione generale.",
+      "example": "Un archivio acquisito da terzi richiede verifica dei doveri informativi, non una rinuncia automatica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare “troppi utenti da contattare” come giustificazione sufficiente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.6, pagina PDF 198"
+    },
+    {
+      "id": "cyber-c11-q060",
+      "topicId": "cyber-c11-t07",
+      "question": "Perché una schermata unica «accetta tutto» è problematica?",
+      "answer": "Perché può confondere informazioni contrattuali e informative obbligatorie con scelte promozionali facoltative, senza distinguere finalità e basi giuridiche.",
+      "detail": "Una buona progettazione separa ciò che è richiesto per erogare il servizio da quanto richiede una decisione ulteriore e registrabile.",
+      "example": "Sul portale energia informativa sulla fornitura e casella opzionale per newsletter sono elementi distinti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare un consenso indistinto che copra finalità eterogenee.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.6, pagina PDF 198"
+    },
+    {
+      "id": "cyber-c11-q061",
+      "topicId": "cyber-c11-t07",
+      "question": "Perché la protezione deve accompagnare l’intero ciclo di vita dei dati?",
+      "answer": "Perché i rischi nascono dalla raccolta, attraverso accesso, utilizzo, condivisione e conservazione, fino a cancellazione e backup.",
+      "detail": "Non basta cifrare il database: occorre gestire anche copie, esportazioni, sistemi di test, log, qualificazione dei fornitori e richieste degli interessati.",
+      "example": "Un dato eliminato dall’interfaccia può persistere nei backup e in un report esportato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la sicurezza come un intervento limitato alla fase di memorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.7, pagina PDF 198"
+    },
+    {
+      "id": "cyber-c11-q062",
+      "topicId": "cyber-c11-t08",
+      "question": "Come si distinguono autenticazione e autorizzazione nella gestione dei dati personali?",
+      "answer": "L’autenticazione verifica l’identità dichiarata; l’autorizzazione stabilisce quali dati e operazioni siano permessi a quell’identità.",
+      "detail": "Un login corretto non attribuisce automaticamente il diritto di leggere tutte le risorse. Servono controlli per ruolo, risorsa e contesto e revoche tempestive.",
+      "example": "L’operatore di assistenza accede allo stato della pratica, non a tutti i dati finanziari del cliente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere “ha effettuato login” con “può vedere ogni record”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.7.1, pagina PDF 198"
+    },
+    {
+      "id": "cyber-c11-q063",
+      "topicId": "cyber-c11-t08",
+      "question": "Qual è la differenza tra need-to-know e least privilege?",
+      "answer": "Need-to-know limita le informazioni conoscibili alle necessità della mansione; least privilege limita complessivamente permessi e operazioni al minimo indispensabile.",
+      "detail": "Sono principi complementari: un addetto può avere un accesso di sola lettura alle sole sezioni che gli servono, senza diritti di cancellazione o di amministrazione.",
+      "example": "Un tecnico consulta un ticket ma non può esportare l’intero CRM.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarti a verificare identità e ruolo senza circoscrivere dati e operazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.7.1, pagina PDF 198"
+    },
+    {
+      "id": "cyber-c11-q064",
+      "topicId": "cyber-c11-t08",
+      "question": "Perché i permessi di accesso ai dati devono essere riesaminati e revocati?",
+      "answer": "Perché il bisogno operativo cambia e i privilegi non più necessari aumentano esposizione e possibilità di accessi impropri.",
+      "detail": "Il riesame periodico è un controllo organizzativo con realizzazione tecnica: la revoca deve riflettersi nei sistemi e nelle credenziali.",
+      "example": "Un operatore trasferito ad altro reparto perde il diritto di vedere i clienti del reparto precedente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare ruoli obsoleti attivi solo perché in passato erano legittimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.7.1, pagina PDF 198"
+    },
+    {
+      "id": "cyber-c11-q065",
+      "topicId": "cyber-c11-t08",
+      "question": "Come si applica la minimizzazione nella raccolta e nel trasferimento?",
+      "answer": "Per ogni attributo, copia o invio si chiede se sia realmente necessario alla finalità; se no, va escluso o ridotto.",
+      "detail": "Si possono rimuovere colonne, aggregare dati, mascherare identificatori o esporre un’interfaccia limitata in alternativa all’export completo.",
+      "example": "Per testare una statistica sui consumi non occorre necessariamente duplicare nominativi e indirizzi reali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare inevitabile trasmettere l’intero database al partner.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.7.2, pagina PDF 198"
+    },
+    {
+      "id": "cyber-c11-q066",
+      "topicId": "cyber-c11-t08",
+      "question": "Quali alternative possono ridurre i dati esposti in un ambiente di test?",
+      "answer": "Rimozione di attributi non necessari, aggregazione, masking e uso di dati adeguatamente pseudonimizzati, secondo la finalità.",
+      "detail": "Il manuale mostra che la stessa esigenza funzionale può essere soddisfatta con meno dati direttamente identificativi, riducendo l’impatto di una compromissione.",
+      "example": "Test di report con valori aggregati di segmento invece di copie complete dell’anagrafica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare dati di produzione completi quando non strettamente necessari.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.7.2, pagina PDF 198"
+    },
+    {
+      "id": "cyber-c11-q067",
+      "topicId": "cyber-c11-t08",
+      "question": "Che cosa occorre verificare quando un dataset proviene da terzi?",
+      "answer": "Fonte, liceità dell’acquisizione, affidabilità, aggiornamento, limitazioni d’uso, base giuridica, obblighi informativi e compatibilità delle finalità.",
+      "detail": "La provenienza incide sia sull’esattezza sia sulla conformità: la possibilità tecnica di scaricare dati non conferisce automaticamente un diritto al riutilizzo.",
+      "example": "Un partner consegna anagrafiche: l’impresa verifica scopo, informazioni rese e basi giuridiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare lecito un dataset solo perché disponibile tramite API.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.7.3, pagina PDF 199"
+    },
+    {
+      "id": "cyber-c11-q068",
+      "topicId": "cyber-c11-t08",
+      "question": "Perché anche la qualità e la data di aggiornamento dei dati sono questioni privacy?",
+      "answer": "Perché dati inesatti, obsoleti o fuori contesto possono causare trattamenti non coerenti con la finalità e danneggiare gli interessati.",
+      "detail": "Il principio di esattezza richiede misure ragionevoli per rettifica e per documentare limiti e provenienza delle informazioni.",
+      "example": "Un’offerta calcolata su dati di consumo non più validi può produrre valutazioni fuorvianti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre la qualità del dato alla sola correttezza del formato tecnico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.7.3, pagina PDF 199"
+    },
+    {
+      "id": "cyber-c11-q069",
+      "topicId": "cyber-c11-t08",
+      "question": "A cosa servono classificazione ed etichette dei dati?",
+      "answer": "A documentare natura, finalità, sensibilità, responsabilità e retention, così da applicare controlli tecnici e organizzativi coerenti.",
+      "detail": "Le etichette guidano masking, accesso per ruolo, logging e conservazione, ma non sostituiscono la valutazione giuridica.",
+      "example": "Metadati “personale”, “finalità fatturazione”, “retention 24 mesi”, “responsabile business”.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che una semplice label renda automaticamente conforme il trattamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.7.4, pagina PDF 199"
+    },
+    {
+      "id": "cyber-c11-q070",
+      "topicId": "cyber-c11-t08",
+      "question": "Come si definisce una policy di conservazione e cancellazione?",
+      "answer": "Per categoria di dato e finalità, fissando durata, modalità di cancellazione o anonimizzazione ed eventuali condizioni legali di conservazione ulteriore.",
+      "detail": "La policy deve includere copie di test, backup, esportazioni e sistemi di logging; tempi e tecniche devono essere coerenti con l’architettura.",
+      "example": "Eliminare un profilo attivo richiede anche di conoscere dove ne esistono copie non operative.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che un pulsante “elimina” cancelli ogni copia fisica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.7.5, pagina PDF 199"
+    },
+    {
+      "id": "cyber-c11-q071",
+      "topicId": "cyber-c11-t08",
+      "question": "Qual è il problema specifico della cancellazione dei dati nei backup?",
+      "answer": "I backup possono conservare copie non visibili nell’applicazione: occorrono regole esplicite su tempi, recupero e gestione della cancellazione.",
+      "detail": "La rimozione logica dal database principale non dimostra che i dati siano spariti da tutti i sistemi. La strategia dipende dai vincoli tecnici e giuridici.",
+      "example": "Record cancellato nel CRM ma ancora incluso nello snapshot di ripristino.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere cancellazione dell’interfaccia con eliminazione effettiva dell’informazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.7.5, pagina PDF 199"
+    },
+    {
+      "id": "cyber-c11-q072",
+      "topicId": "cyber-c11-t08",
+      "question": "Che cosa deve consentire un sistema informativo per attuare il diritto di accesso?",
+      "answer": "Individuare i dati dell’interessato, verificare la sua identità, raccogliere informazioni pertinenti e consegnare una copia protetta nei limiti applicabili.",
+      "detail": "Il diritto non comporta consegnare il database intero o informazioni riservate di altri soggetti. Servono procedure di ricerca, estrazione e risposta documentata.",
+      "example": "Un portale clienti restituisce i dati personali del richiedente dopo controlli di identità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere diritto di accesso con accesso diretto al DBMS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.7.6, pagina PDF 199"
+    },
+    {
+      "id": "cyber-c11-q073",
+      "topicId": "cyber-c11-t09",
+      "question": "Che cosa significa data protection by design ai sensi dell’articolo 25?",
+      "answer": "Integrare principi privacy, diritti e rischi fin dalla progettazione e lungo il ciclo di vita di processi, software e servizi.",
+      "detail": "Richiede scelte preventive su flussi, accessi, architetture, retention e procedure, non un semplice controllo di conformità aggiunto dopo lo sviluppo.",
+      "example": "Progettare API che limitino per ruolo i dati visibili prima di pubblicare il portale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre privacy by design a una casella privacy nell’interfaccia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.8, pagina PDF 199"
+    },
+    {
+      "id": "cyber-c11-q074",
+      "topicId": "cyber-c11-t09",
+      "question": "Che cosa significa data protection by default?",
+      "answer": "Che, in assenza di interventi dell’utente, si trattino solo i dati necessari a ciascuna finalità, limitando quantità, portata, periodo e accessibilità.",
+      "detail": "Le impostazioni iniziali devono essere prudenti e non più invasive del necessario. Non spetta all’utente scoprire e correggere configurazioni eccessivamente espositive.",
+      "example": "Un profilo appena creato non è automaticamente pubblico a tutti i dipendenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere corrette le impostazioni aperte per comodità dell’azienda.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.8, pagina PDF 199"
+    },
+    {
+      "id": "cyber-c11-q075",
+      "topicId": "cyber-c11-t09",
+      "question": "Qual è la differenza tra privacy by design e privacy by default?",
+      "answer": "By design riguarda l’integrazione della protezione nel processo di progettazione e gestione; by default riguarda le impostazioni iniziali e il minimo trattamento necessario.",
+      "detail": "I due aspetti sono connessi: un buon design prepara configurazioni sicure e prudenti, ma le definizioni non coincidono.",
+      "example": "Progettare ruoli, retention e funzioni di cancellazione è by design; impostare accesso ristretto all’avvio è by default.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che sono sinonimi o che basti uno dei due.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.8, pagina PDF 199"
+    },
+    {
+      "id": "cyber-c11-q076",
+      "topicId": "cyber-c11-t09",
+      "question": "Da quali fattori dipende l’adeguatezza delle misure per privacy by design?",
+      "answer": "Stato dell’arte, costi, natura, ambito, contesto e finalità del trattamento, oltre ai rischi per diritti e libertà degli interessati.",
+      "detail": "La scelta deve essere motivata e proporzionata: una soluzione costosa non è automaticamente migliore per ogni trattamento.",
+      "example": "Dati di consumo dettagliati e profilazione possono richiedere misure diverse da un report aggregato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare l’adeguatezza all’acquisto della tecnologia più cara.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.8, pagina PDF 199"
+    },
+    {
+      "id": "cyber-c11-q077",
+      "topicId": "cyber-c11-t09",
+      "question": "Quali misure concrete collegano privacy by design e progettazione applicativa?",
+      "answer": "Minimizzazione, pseudonimizzazione, separazione dei dati, autorizzazione granulare, impostazioni prudenti, cancellazione programmata e verifica dei fornitori.",
+      "detail": "Il manuale richiama le linee guida EDPB 4/2019: le scelte devono essere documentate e integrate nel ciclo di vita del trattamento.",
+      "example": "Segmentare database anagrafico e analitico; programmare retention; controllare accessi alle API.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare by design come un’etichetta documentale priva di controlli reali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.8, pagina PDF 199"
+    },
+    {
+      "id": "cyber-c11-q078",
+      "topicId": "cyber-c11-t09",
+      "question": "Perché la privacy by default richiede di valutare l’accessibilità dei dati?",
+      "answer": "Perché il trattamento minimo necessario riguarda anche quante persone possono consultare i dati, non soltanto quanti campi si raccolgono.",
+      "detail": "Una configurazione che rende visibile un profilo a tutti amplia la portata del trattamento anche se la raccolta iniziale è limitata.",
+      "example": "Impostare nuove schede clienti consultabili solo dal team autorizzato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che l’applicazione sia minimizzata se raccoglie pochi dati ma li espone indiscriminatamente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.8, pagina PDF 199"
+    },
+    {
+      "id": "cyber-c11-q079",
+      "topicId": "cyber-c11-t10",
+      "question": "Qual è il criterio generale dell’articolo 32 del GDPR per la sicurezza?",
+      "answer": "Titolare e responsabile devono garantire un livello di sicurezza adeguato al rischio, considerando contesto, natura del trattamento, stato dell’arte, costi e probabilità e gravità degli effetti sulle persone.",
+      "detail": "Il GDPR non impone un catalogo immutabile di prodotti. Richiede una scelta ragionata e riesaminabile delle misure.",
+      "example": "Un servizio che elabora dati su larga scala può richiedere controlli più articolati di una raccolta minimale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare antivirus, TLS o firewall come requisiti sufficienti in ogni contesto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.9, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q080",
+      "topicId": "cyber-c11-t10",
+      "question": "Quali capacità di sicurezza richiama espressamente l’articolo 32?",
+      "answer": "Pseudonimizzazione e cifratura dove appropriate; riservatezza, integrità, disponibilità e resilienza continuative; ripristino tempestivo; verifica periodica dell’efficacia delle misure.",
+      "detail": "La protezione non riguarda soltanto prevenire letture illecite, ma garantire recupero dopo eventi fisici o tecnici e dimostrare che i controlli funzionino.",
+      "example": "Backup testato, segmentazione e controllo degli accessi affiancati da verifiche periodiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare disponibilità, resilienza e test di ripristino.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.9, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q081",
+      "topicId": "cyber-c11-t10",
+      "question": "Che differenza esiste tra articolo 25 e articolo 32 del GDPR?",
+      "answer": "L’articolo 25 orienta la protezione dei dati fin dalla progettazione e per impostazione predefinita; l’articolo 32 disciplina un livello di sicurezza adeguato al rischio.",
+      "detail": "Sono obblighi complementari: by design definisce come integrare protezione e minimizzazione nei processi; sicurezza del trattamento richiede misure e capacità operative valutate e testate.",
+      "example": "Progettare accessi ristretti è articolo 25; monitorare, cifrare e ripristinare in modo adeguato richiama articolo 32.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre entrambi gli articoli alla sola cifratura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.9, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q082",
+      "topicId": "cyber-c11-t10",
+      "question": "Quali misure tecniche di protezione dei dati descrive il manuale?",
+      "answer": "TLS, cifratura a riposo quando appropriata, gestione delle chiavi, autenticazione forte, MFA, RBAC/ABAC, patch, hardening, segmentazione, backup testati, log protetti, monitoraggio, masking e cancellazione sicura.",
+      "detail": "Ogni misura affronta una diversa esposizione e deve essere proporzionata al rischio e coordinata con le altre.",
+      "example": "MFA sugli amministratori, mascheramento dei dati nei test e backup con ripristino verificato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare un singolo controllo come soluzione universale a qualsiasi rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.9.1, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q083",
+      "topicId": "cyber-c11-t10",
+      "question": "Perché le chiavi crittografiche richiedono una gestione separata?",
+      "answer": "Perché cifrare i dati ha valore limitato se chi ottiene l’archivio ottiene facilmente anche le chiavi che lo decifrano.",
+      "detail": "Il manuale richiede una gestione appropriata del materiale segreto separata dagli archivi protetti, con controlli coerenti.",
+      "example": "Un backup cifrato non dovrebbe essere affiancato senza protezioni dalla sua chiave in chiaro.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la presenza di cifratura con gestione sicura dell’intero sistema.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.9.1, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q084",
+      "topicId": "cyber-c11-t10",
+      "question": "Perché il backup deve essere accompagnato da test periodici di ripristino?",
+      "answer": "Perché la mera presenza di copie non dimostra la capacità di recuperare tempestivamente disponibilità e accesso ai dati dopo un incidente.",
+      "detail": "L’articolo 32 comprende la capacità di ripristino e la verifica regolare dell’efficacia delle misure. Un backup illeggibile o incompleto non soddisfa l’obiettivo operativo.",
+      "example": "Eseguire ripristini di prova su un ambiente controllato e verificarne l’integrità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare la continuità assicurata senza verificare la restaurabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.9.1, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q085",
+      "topicId": "cyber-c11-t10",
+      "question": "Quali sono esempi di misure organizzative di sicurezza dei dati?",
+      "answer": "Istruzioni ai dipendenti, definizione di ruoli, formazione, verifica dei fornitori, contratti per i responsabili, inventario dei trattamenti, retention, risposta agli incidenti e controlli periodici.",
+      "detail": "Le misure organizzative governano il corretto uso e mantenimento delle misure tecniche e il rispetto degli obblighi nel tempo.",
+      "example": "Formazione sul phishing e procedura documentata per trattare una segnalazione di data breach.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che una policy scritta basti se non viene applicata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.9.2, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q086",
+      "topicId": "cyber-c11-t10",
+      "question": "Perché misure tecniche e organizzative devono essere considerate insieme?",
+      "answer": "Perché la sicurezza dipende sia dall’efficacia dei controlli tecnologici sia dai processi e comportamenti che li governano.",
+      "detail": "Un database cifrato con credenziali condivise e chiavi esposte resta vulnerabile; un piano formalmente impeccabile ma mai attuato non protegge i dati.",
+      "example": "RBAC richiede anche un processo per concedere, riesaminare e revocare i ruoli.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la conformità un prodotto o, all’opposto, solo documentazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.9.2, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q087",
+      "topicId": "cyber-c11-t11",
+      "question": "Quali diritti degli interessati principali presenta il Capitolo 11?",
+      "answer": "Informazione, accesso, rettifica, cancellazione, limitazione, portabilità, opposizione e tutele rispetto a determinate decisioni automatizzate.",
+      "detail": "I diritti sono disciplinati da articoli diversi e non tutti sono assoluti; la loro applicabilità richiede le condizioni del singolo istituto.",
+      "example": "Il titolare deve predisporre un processo per riconoscere e trattare correttamente ogni richiesta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che tutte le richieste impongano automaticamente la stessa risposta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.10, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q088",
+      "topicId": "cyber-c11-t11",
+      "question": "Entro quanto tempo si deve normalmente rispondere a una richiesta dell’interessato?",
+      "answer": "Senza ingiustificato ritardo e normalmente entro un mese dal ricevimento; in casi complessi è possibile una proroga fino a due mesi ulteriori, comunicata e motivata entro il primo mese.",
+      "detail": "Il manuale richiama l’articolo 12 e il principio di gratuità generale, salvo specifiche eccezioni normative.",
+      "example": "Una richiesta complessa ricevuta oggi deve essere valutata tempestivamente: l’eventuale proroga va comunicata nel primo mese.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare la possibile proroga in un termine ordinario automatico di tre mesi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.10, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q089",
+      "topicId": "cyber-c11-t11",
+      "question": "In quali condizioni l’esercizio dei diritti è gratuito?",
+      "answer": "In linea generale è gratuito, salve le eccezioni specifiche previste dall’articolo 12.",
+      "detail": "L’organizzazione deve organizzare la gestione delle richieste senza rendere l’esercizio dei diritti un servizio a pagamento ordinario.",
+      "example": "Un cliente può richiedere accesso ai propri dati senza acquistare un estratto del gestionale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che ogni richiesta possa essere tariffata liberamente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.10, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q090",
+      "topicId": "cyber-c11-t11",
+      "question": "Che cosa tutela il diritto di accesso dell’articolo 15?",
+      "answer": "Il diritto di conoscere se i dati personali sono trattati, ricevere le informazioni previste e ottenere una copia dei propri dati entro i limiti applicabili.",
+      "detail": "Il diritto non è una licenza di esplorare direttamente tutti i sistemi aziendali o conoscere dati di terzi.",
+      "example": "Un cliente richiede copia delle informazioni conservate sul proprio contratto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare accesso a consegna integrale dell’intero database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.10, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q091",
+      "topicId": "cyber-c11-t11",
+      "question": "In che cosa consiste il diritto di rettifica dell’articolo 16?",
+      "answer": "Consente di correggere dati personali inesatti e integrare quelli incompleti quando ricorrono le condizioni previste.",
+      "detail": "La correzione deve rispettare anche la necessità di mantenere corretta documentazione storica quando pertinente alla finalità.",
+      "example": "Correggere un recapito errato senza alterare indebitamente registrazioni storiche legittime.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere rettifica con riscrittura indiscriminata del passato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.10, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q092",
+      "topicId": "cyber-c11-t11",
+      "question": "Il diritto alla cancellazione dell’articolo 17 è assoluto?",
+      "answer": "No. Sorge alle condizioni previste dal GDPR e può incontrare eccezioni, come alcuni obblighi legali o esigenze di difesa di diritti.",
+      "detail": "La valutazione deve distinguere dati non più necessari, richieste fondate e obblighi residui, progettando procedure applicabili anche alle copie.",
+      "example": "Un dato necessario a un obbligo di conservazione legale non è automaticamente cancellabile a semplice richiesta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non promettere a qualsiasi interessato la rimozione immediata di ogni dato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.10, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q093",
+      "topicId": "cyber-c11-t11",
+      "question": "Che cos’è il diritto alla limitazione del trattamento dell’articolo 18?",
+      "answer": "È la possibilità di limitare temporaneamente determinate operazioni sui dati nelle situazioni previste dal Regolamento.",
+      "detail": "La limitazione non coincide necessariamente con cancellazione: può imporre di mantenere i dati con operazioni consentite circoscritte.",
+      "example": "Un dato contestato può richiedere limitazioni d’uso mentre si verifica la sua esattezza, se ricorrono i presupposti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare limitazione e cancellazione come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.10, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q094",
+      "topicId": "cyber-c11-t11",
+      "question": "In che cosa consiste il diritto alla portabilità dell’articolo 20?",
+      "answer": "Alle condizioni previste, permette di ricevere o trasmettere dati forniti dall’interessato in formato strutturato, di uso comune e leggibile da dispositivo automatico.",
+      "detail": "Si applica in condizioni specifiche, comprese determinate basi giuridiche e il trattamento con mezzi automatizzati: non copre indiscriminatamente tutte le analisi e inferenze prodotte dal titolare.",
+      "example": "Trasferire alcuni dati di un servizio in un formato macchina leggibile, se il caso rientra nei presupposti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere portabilità con consegna universale di ogni dato derivato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.10, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q095",
+      "topicId": "cyber-c11-t11",
+      "question": "Come funziona il diritto di opposizione dell’articolo 21?",
+      "answer": "Consente di opporsi a determinati trattamenti nelle condizioni previste; per marketing diretto l’opposizione a quel fine opera senza un ulteriore bilanciamento.",
+      "detail": "Il manuale distingue l’opposizione generale in specifiche situazioni dall’opposizione ai trattamenti per marketing diretto.",
+      "example": "Il destinatario di promozioni si oppone al loro invio: la finalità di marketing diretto deve cessare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare indistintamente lo stesso bilanciamento a ogni forma di opposizione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.10, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q096",
+      "topicId": "cyber-c11-t11",
+      "question": "Quali tutele sono previste dall’articolo 22 sulle decisioni automatizzate?",
+      "answer": "Tutele per decisioni basate unicamente su trattamento automatizzato che producono effetti giuridici o analogamente significativi, salvo eccezioni e garanzie previste.",
+      "detail": "Non ogni uso di un algoritmo costituisce automaticamente una decisione di questo tipo: contano autonomia del processo ed effetti per l’interessato.",
+      "example": "Un processo automatizzato che decide una pratica con conseguenze rilevanti richiede valutazione specifica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non qualificare qualsiasi dashboard o previsione statistica come decisione dell’articolo 22.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.10, pagina PDF 200"
+    },
+    {
+      "id": "cyber-c11-q097",
+      "topicId": "cyber-c11-t11",
+      "question": "Quali fasi deve prevedere un processo solido di gestione delle richieste privacy?",
+      "answer": "Ricezione e registrazione; verifica proporzionata dell’identità; ricerca dei sistemi; verifica dei presupposti; estrazione dei dati; tutela di terzi; risposta nei termini; documentazione della decisione.",
+      "detail": "La fattibilità richiede conoscere dove risiedono le informazioni, anche in archivi secondari e copie, e chi abbia la responsabilità operativa.",
+      "example": "L’help desk apre una pratica, verifica il richiedente e coinvolge i referenti dei sistemi pertinenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rispondere automaticamente senza aver verificato identità e pertinenza dei dati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.10.1, pagina PDF 201"
+    },
+    {
+      "id": "cyber-c11-q098",
+      "topicId": "cyber-c11-t11",
+      "question": "Perché la verifica dell’identità dell’interessato è necessaria ma deve essere proporzionata?",
+      "answer": "Perché consegnare dati alla persona sbagliata crea una divulgazione non autorizzata, mentre chiedere informazioni eccessive contraddice la minimizzazione.",
+      "detail": "La gestione delle richieste deve conciliare esercizio del diritto e protezione dei dati degli stessi interessati.",
+      "example": "Prima di inviare l’export dei dati si verifica che il richiedente sia il cliente interessato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare procedure di identificazione arbitrarie o invasive rispetto al rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.10.1, pagina PDF 201"
+    },
+    {
+      "id": "cyber-c11-q099",
+      "topicId": "cyber-c11-t12",
+      "question": "Che cos’è il registro delle attività di trattamento dell’articolo 30?",
+      "answer": "È una documentazione strutturata dei trattamenti effettuati dall’organizzazione: finalità, categorie di interessati e dati, destinatari, trasferimenti, termini di cancellazione e misure generali di sicurezza.",
+      "detail": "Il registro aiuta a capire cosa viene trattato, dove, perché e con quali responsabilità, sostenendo accountability e gestione dei diritti.",
+      "example": "Nel portale energia distinguere registro di fatturazione, assistenza e profilazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre il registro a un elenco di database o server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.11, pagina PDF 201"
+    },
+    {
+      "id": "cyber-c11-q100",
+      "topicId": "cyber-c11-t12",
+      "question": "Le organizzazioni sotto i 250 dipendenti sono sempre esenti dal registro?",
+      "answer": "No. Il GDPR prevede alcune eccezioni, ma non un’esenzione generalizzata: contano anche trattamenti non occasionali, rischi e categorie di dati.",
+      "detail": "Il manuale invita a non usare il solo numero dei dipendenti come unico criterio per non mantenere la documentazione.",
+      "example": "Una piccola impresa con trattamenti continuativi di clienti non può presumere automaticamente l’esenzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare la soglia dei 250 in una regola assoluta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.11, pagina PDF 201"
+    },
+    {
+      "id": "cyber-c11-q101",
+      "topicId": "cyber-c11-t12",
+      "question": "Che cos’è la DPIA e quando diventa necessaria?",
+      "answer": "La Data Protection Impact Assessment è una valutazione d’impatto richiesta quando un tipo di trattamento può presentare un rischio elevato per diritti e libertà delle persone.",
+      "detail": "L’articolo 35 considera natura, oggetto, contesto e finalità, anche con nuove tecnologie. La DPIA esamina necessità, proporzionalità, rischi per le persone e misure di mitigazione.",
+      "example": "Una profilazione sistematica con decisioni significative può richiedere una DPIA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la DPIA obbligatoria per qualsiasi foglio Excel né facoltativa per ogni trattamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.11, pagina PDF 201"
+    },
+    {
+      "id": "cyber-c11-q102",
+      "topicId": "cyber-c11-t12",
+      "question": "Quali casi tipici richiamati dal manuale possono richiedere una DPIA?",
+      "answer": "Valutazioni sistematiche e approfondite di aspetti personali con decisioni significative; trattamenti su larga scala di categorie particolari; sorveglianza sistematica su larga scala di aree pubbliche.",
+      "detail": "Sono esempi contemplati nell’articolo 35. La necessità si valuta sul trattamento concreto e sul rischio elevato per gli interessati.",
+      "example": "Monitoraggio sistematico esteso o profilazione con effetti rilevanti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collegare la DPIA esclusivamente ai rischi di hackeraggio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.11, pagina PDF 201"
+    },
+    {
+      "id": "cyber-c11-q103",
+      "topicId": "cyber-c11-t12",
+      "question": "Perché una DPIA non coincide con un normale risk assessment dei server?",
+      "answer": "Perché la DPIA valuta effetti sui diritti e le libertà delle persone, necessità e proporzionalità del trattamento, non soltanto vulnerabilità tecniche.",
+      "detail": "La sicurezza informatica è un elemento importante, ma la valutazione privacy comprende liceità delle finalità, dati necessari, impatto sull’interessato e mitigazioni.",
+      "example": "Un sistema tecnicamente sicuro può effettuare una profilazione eccessiva e richiedere una DPIA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare una scansione di vulnerabilità come sostituto completo di una DPIA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.11, pagina PDF 201"
+    },
+    {
+      "id": "cyber-c11-q104",
+      "topicId": "cyber-c11-t12",
+      "question": "Quando può essere necessaria la consultazione preventiva dell’autorità ex articolo 36?",
+      "answer": "Quando, nonostante le misure previste, permane un rischio elevato per le persone che non può essere attenuato.",
+      "detail": "La consultazione preventiva segue la valutazione e le misure considerate nella DPIA, non rappresenta un passaggio universale di ogni progetto software.",
+      "example": "Una nuova attività di trattamento presenta rischio elevato residuo non mitigabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che una DPIA comporti automaticamente l’obbligo di consultazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.11, pagina PDF 201"
+    },
+    {
+      "id": "cyber-c11-q105",
+      "topicId": "cyber-c11-t12",
+      "question": "In quali circostanze il DPO è obbligatorio secondo il manuale?",
+      "answer": "Tra gli altri casi: autorità od organismi pubblici, salvo eccezioni; attività principali di monitoraggio regolare e sistematico su larga scala; trattamento su larga scala di categorie particolari o dati dell’articolo 10.",
+      "detail": "La nomina dipende dalle condizioni dell’articolo 37 e dal tipo di attività, non dalla sola presenza di un database aziendale.",
+      "example": "Un’organizzazione la cui attività principale sia il monitoraggio sistematico esteso può rientrare negli obblighi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare il DPO obbligatorio per ogni azienda indipendentemente dalle attività.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.11, pagina PDF 201"
+    },
+    {
+      "id": "cyber-c11-q106",
+      "topicId": "cyber-c11-t12",
+      "question": "Quali funzioni svolge il DPO e chi conserva le responsabilità?",
+      "answer": "Il DPO informa, consiglia, sorveglia la conformità, coopera con l’autorità e partecipa tempestivamente alle questioni di protezione; titolare e responsabile mantengono le rispettive responsabilità.",
+      "detail": "Il DPO non sceglie automaticamente le finalità del trattamento per conto dell’organizzazione e non coincide con il responsabile ex articolo 28.",
+      "example": "Il DPO raccomanda misure e monitoraggio; la direzione decide e attua il trattamento secondo il proprio ruolo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire al DPO tutte le responsabilità legali del titolare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.11, pagina PDF 201"
+    },
+    {
+      "id": "cyber-c11-q107",
+      "topicId": "cyber-c11-t13",
+      "question": "Che cos’è un personal data breach secondo l’articolo 4, punto 12?",
+      "answer": "Una violazione di sicurezza che comporta accidentalmente o illecitamente distruzione, perdita, modifica, divulgazione non autorizzata o accesso a dati personali trattati.",
+      "detail": "Può riguardare dati in transito o conservati e non presuppone necessariamente un attacco intenzionale. Non ogni incidente tecnico è automaticamente un data breach.",
+      "example": "E-mail con dati personali inviata a destinatario errato, oppure archivio di clienti esfiltrato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non richiedere la presenza di hacker per riconoscere una violazione di dati personali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.12, pagina PDF 202"
+    },
+    {
+      "id": "cyber-c11-q108",
+      "topicId": "cyber-c11-t13",
+      "question": "Quali tre dimensioni di sicurezza può compromettere un data breach?",
+      "answer": "Riservatezza quando i dati sono divulgati; integrità quando sono alterati; disponibilità quando sono persi, distrutti o resi indisponibili.",
+      "detail": "Uno stesso evento può coinvolgere più dimensioni e deve essere valutato rispetto al rischio per gli interessati, non solo al danno informatico.",
+      "example": "Un ransomware può impedire l’accesso ai dati e, se li esfiltra, compromettere anche la riservatezza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre ogni data breach alla sola fuga di dati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.12, pagina PDF 202"
+    },
+    {
+      "id": "cyber-c11-q109",
+      "topicId": "cyber-c11-t13",
+      "question": "Qual è la differenza tra incidente IT e data breach?",
+      "answer": "Un incidente IT interessa i sistemi; è data breach quando una violazione di sicurezza produce effetti previsti dall’articolo 4 su dati personali.",
+      "detail": "Un guasto senza dati personali coinvolti non è automaticamente una violazione notificabile; viceversa, un errore umano che divulga dati può costituire data breach.",
+      "example": "Malfunzionamento di stampante senza dati coinvolti vs invio non autorizzato di anagrafiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare i termini come equivalenti in ogni scenario.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.12, pagina PDF 202"
+    },
+    {
+      "id": "cyber-c11-q110",
+      "topicId": "cyber-c11-t13",
+      "question": "Quando il titolare deve notificare un data breach all’autorità?",
+      "answer": "Senza ingiustificato ritardo e, ove possibile, entro 72 ore dalla conoscenza, salvo che sia improbabile un rischio per diritti e libertà delle persone.",
+      "detail": "L’articolo 33 usa una valutazione di rischio, non una regola di notifica indiscriminata. Un’eventuale notifica oltre 72 ore va motivata.",
+      "example": "Un’estrazione non autorizzata di anagrafiche può richiedere rapida notifica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non far decorrere automaticamente le 72 ore dall’inizio ignoto dell’attacco.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.12.1, pagina PDF 202"
+    },
+    {
+      "id": "cyber-c11-q111",
+      "topicId": "cyber-c11-t13",
+      "question": "Qual è il significato preciso del termine di 72 ore?",
+      "answer": "È il termine di riferimento, ove possibile, per notificare all’autorità una violazione notificabile a partire da quando il titolare ne è venuto a conoscenza.",
+      "detail": "L’obbligo principale è agire senza ingiustificato ritardo; il ritardo oltre 72 ore deve essere spiegato. La documentazione della violazione è comunque richiesta.",
+      "example": "Il titolare scopre oggi una fuga di dati: valuta tempestivamente il rischio e l’eventuale notifica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere conoscenza della violazione con data storica del primo accesso malevolo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.12.1, pagina PDF 202"
+    },
+    {
+      "id": "cyber-c11-q112",
+      "topicId": "cyber-c11-t13",
+      "question": "Quale obbligo ha il responsabile del trattamento quando scopre una violazione?",
+      "answer": "Deve informare il titolare senza ingiustificato ritardo dopo essere venuto a conoscenza del data breach.",
+      "detail": "Il titolare rimane il soggetto che valuta la notifica all’autorità secondo il relativo obbligo, mentre la filiera deve assicurare comunicazioni rapide.",
+      "example": "Un provider che rileva accesso non autorizzato ai dati ospitati avvisa il cliente titolare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare indistintamente al responsabile la stessa funzione di notifica diretta del titolare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.12.1, pagina PDF 202"
+    },
+    {
+      "id": "cyber-c11-q113",
+      "topicId": "cyber-c11-t13",
+      "question": "Quando occorre comunicare un data breach direttamente agli interessati?",
+      "answer": "Quando la violazione può presentare un rischio elevato per diritti e libertà, senza ingiustificato ritardo, salvo le eccezioni applicabili dell’articolo 34.",
+      "detail": "Questa comunicazione è distinta dalla notifica all’autorità: la soglia di rischio è più alta. Possono contare misure che rendono i dati incomprensibili ai non autorizzati.",
+      "example": "Esfiltrazione di credenziali e informazioni economiche può comportare rischi elevati di frode.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concludere che ogni violazione notificata al Garante debba automaticamente essere comunicata a tutti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.12.1, pagina PDF 202"
+    },
+    {
+      "id": "cyber-c11-q114",
+      "topicId": "cyber-c11-t13",
+      "question": "Qual è la sequenza decisionale per documentare, notificare e comunicare un data breach?",
+      "answer": "Documentare sempre; se il rischio è improbabile la notifica può non essere necessaria; se il rischio è probabile notificare all’autorità; se è elevato, di regola comunicare anche agli interessati.",
+      "detail": "La tabella del manuale distingue tre livelli di conseguenza e richiede analisi motivata del rischio per le persone.",
+      "example": "Rischio basso dopo perdita di dispositivo cifrato vs rischio elevato per credenziali e dati esfiltrati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non saltare la documentazione nei casi non notificabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.12.1, pagina PDF 202"
+    },
+    {
+      "id": "cyber-c11-q115",
+      "topicId": "cyber-c11-t13",
+      "question": "La perdita di una chiavetta USB cifrata richiede sempre notifica?",
+      "answer": "Non necessariamente. Se cifratura e gestione delle chiavi sono adeguate, le chiavi sono protette e i dati recuperabili, il rischio potrebbe risultare improbabile.",
+      "detail": "Il manuale la presenta come valutazione contestuale: anche senza notifica il titolare deve documentare l’evento e motivare il rischio.",
+      "example": "Dispositivo cifrato perso, chiave non compromessa, backup prontamente ripristinabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere “cifrato” con esenzione automatica senza verifica delle condizioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.12.1, pagina PDF 202"
+    },
+    {
+      "id": "cyber-c11-q116",
+      "topicId": "cyber-c11-t13",
+      "question": "Quali rischi e azioni emergono dall’esfiltrazione di credenziali e dati clienti?",
+      "answer": "Possibili frodi e usi illeciti: serve valutare rapidamente contenimento, notifica, comunicazione agli interessati, rotazione delle credenziali e misure correttive.",
+      "detail": "La valutazione considera tipo e sensibilità dei dati e conseguenze per le persone, oltre alle condizioni concrete della violazione.",
+      "example": "Attaccante copia recapiti, informazioni economiche e password: il titolare agisce sul rischio di impersonificazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare la risposta alla sola riparazione tecnica del server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.12.1, pagina PDF 202"
+    },
+    {
+      "id": "cyber-c11-q117",
+      "topicId": "cyber-c11-t13",
+      "question": "Perché ogni data breach deve essere documentato anche se non è notificato?",
+      "answer": "Perché l’articolo 33 richiede al titolare di mantenere evidenza delle violazioni e delle valutazioni svolte.",
+      "detail": "La documentazione permette accountability, controllo successivo e verifica della decisione su rischio e notificabilità.",
+      "example": "Registro interno dell’evento con data di conoscenza, dati coinvolti, valutazione e misure adottate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cancellare l’evidenza di un evento solo perché il rischio risulta improbabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.12.1, pagina PDF 202"
+    },
+    {
+      "id": "cyber-c11-q118",
+      "topicId": "cyber-c11-t14",
+      "question": "Quali obblighi pone il GDPR per trasferimenti di dati personali verso paesi terzi?",
+      "answer": "Gli articoli 44 e seguenti richiedono una condizione giuridica appropriata e il rispetto degli ulteriori requisiti applicabili, non soltanto una comunicazione cifrata.",
+      "detail": "Tra gli strumenti citati ci sono decisioni di adeguatezza della Commissione europea e garanzie adeguate, come clausole contrattuali tipo.",
+      "example": "Un cloud provider situato fuori dall’UE richiede la verifica dei presupposti del trasferimento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare connessione HTTPS a liceità del trasferimento internazionale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.13, pagina PDF 203"
+    },
+    {
+      "id": "cyber-c11-q119",
+      "topicId": "cyber-c11-t14",
+      "question": "Che cosa sono decisioni di adeguatezza e clausole contrattuali tipo?",
+      "answer": "Sono due possibili strumenti giuridici previsti nel quadro dei trasferimenti internazionali: una decisione riconosce l’adeguatezza di un paese; le clausole possono fornire garanzie appropriate.",
+      "detail": "Il manuale li presenta come esempi di condizioni per il trasferimento, fermo restando il rispetto di ulteriori obblighi applicabili.",
+      "example": "Per un fornitore extra-UE si valutano la destinazione e le eventuali garanzie contrattuali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere che il solo contratto commerciale standard equivalga sempre a una garanzia GDPR adeguata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.13, pagina PDF 203"
+    },
+    {
+      "id": "cyber-c11-q120",
+      "topicId": "cyber-c11-t14",
+      "question": "Le deroghe dell’articolo 49 sono una soluzione generalizzata per trasferire dati fuori dall’UE?",
+      "answer": "No. Sono deroghe a condizioni specifiche e non un’alternativa illimitata alla disciplina dei trasferimenti.",
+      "detail": "La scelta della base per il trasferimento deve essere verificata in relazione al caso concreto e documentata.",
+      "example": "L’uso ricorrente di un provider internazionale non si giustifica automaticamente invocando una generica eccezione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare “deroga” un permesso indiscriminato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.13, pagina PDF 203"
+    },
+    {
+      "id": "cyber-c11-q121",
+      "topicId": "cyber-c11-t14",
+      "question": "Quali aspetti vanno valutati quando un servizio cloud tratta dati personali?",
+      "answer": "Ubicazione e modalità del trattamento, ruoli contrattuali, subfornitori, diritti, misure di sicurezza, accessi amministrativi, log, backup, disponibilità e uscita dal servizio.",
+      "detail": "La conformità giuridica e la sicurezza tecnica sono entrambe necessarie e devono essere valutate, ma non coincidono.",
+      "example": "Un provider con ottima cifratura potrebbe avere condizioni contrattuali o trasferimenti da verificare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non selezionare il fornitore solo in base a certificazioni tecniche o prezzo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.13, pagina PDF 203"
+    },
+    {
+      "id": "cyber-c11-q122",
+      "topicId": "cyber-c11-t14",
+      "question": "Qual è la differenza tra sicurezza di un fornitore e conformità del suo trattamento?",
+      "answer": "La sicurezza riguarda l’efficacia delle difese tecniche e organizzative; la conformità comprende anche ruoli, finalità, trasferimenti, diritti, contratti e altri obblighi.",
+      "detail": "Un fornitore può essere tecnicamente robusto ma inadatto a uno specifico flusso di dati se mancano i presupposti giuridici.",
+      "example": "Audit tecnico positivo non sostituisce la verifica del contratto da responsabile e della localizzazione del dato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che un cloud “certificato” renda automaticamente lecito ogni trattamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.13, pagina PDF 203"
+    },
+    {
+      "id": "cyber-c11-q123",
+      "topicId": "cyber-c11-t15",
+      "question": "Le norme ISO/IEC richiamate nel capitolo rendono automaticamente conforme al GDPR?",
+      "answer": "No. Sono standard che supportano controlli e sistemi di gestione, ma una certificazione non garantisce da sola la liceità di ogni trattamento.",
+      "detail": "Occorre distinguere requisiti cogenti del GDPR e strumenti volontari per organizzare i processi di sicurezza e protezione dati.",
+      "example": "Un’organizzazione certificata deve comunque verificare la base giuridica per la profilazione commerciale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare lo standard volontario come sostituto del regolamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.14, pagina PDF 203"
+    },
+    {
+      "id": "cyber-c11-q124",
+      "topicId": "cyber-c11-t15",
+      "question": "Qual è lo scopo di ISO/IEC 27018 secondo il manuale?",
+      "answer": "Fornisce linee guida sulla protezione delle informazioni personali identificabili nei servizi cloud pubblici quando il fornitore opera come responsabile del trattamento.",
+      "detail": "Il manuale indica l’edizione ISO/IEC 27018:2025 e ne delimita il contesto ai servizi cloud pubblici pertinenti.",
+      "example": "Valutazione delle pratiche di protezione PII presso un cloud provider che tratta dati per conto di clienti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderla con una legge obbligatoria applicabile indistintamente a tutti i sistemi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.14, pagina PDF 203"
+    },
+    {
+      "id": "cyber-c11-q125",
+      "topicId": "cyber-c11-t15",
+      "question": "Che cosa tratta ISO/IEC 27701 secondo il manuale?",
+      "answer": "I requisiti e gli orientamenti per un Privacy Information Management System, PIMS, rivolto a titolari e responsabili.",
+      "detail": "L’edizione riportata è ISO/IEC 27701:2025. L’obiettivo è organizzare la gestione della privacy, non sostituire le basi giuridiche del GDPR.",
+      "example": "Una società adotta processi formalizzati per ruoli, rischi e gestione della privacy.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderla con ISO/IEC 27018, focalizzata sulla tutela di PII nel cloud pubblico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.14, pagina PDF 203"
+    },
+    {
+      "id": "cyber-c11-q126",
+      "topicId": "cyber-c11-t15",
+      "question": "Qual è la funzione di ISO/IEC 29100 secondo il manuale?",
+      "answer": "Offre un quadro generale della privacy con terminologia, attori, principi e considerazioni progettuali.",
+      "detail": "Il riferimento del manuale è ISO/IEC 29100:2024; serve come framework concettuale per ragionare sul trattamento.",
+      "example": "Allineare vocabolario e responsabilità nella progettazione di servizi con dati personali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderla con le istruzioni operative per la DPIA della norma 29134.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.14, pagina PDF 203"
+    },
+    {
+      "id": "cyber-c11-q127",
+      "topicId": "cyber-c11-t15",
+      "question": "Quale standard ISO/IEC riguarda la valutazione d’impatto privacy?",
+      "answer": "ISO/IEC 29134:2023, che fornisce orientamenti per svolgere la valutazione d’impatto e strutturarne il rapporto.",
+      "detail": "La norma supporta il processo di valutazione, ma non modifica quando la DPIA è richiesta ai sensi dell’articolo 35.",
+      "example": "Un team usa indicazioni strutturate per documentare impatti, rischi e mitigazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che uno standard volontario sostituisca i presupposti giuridici della DPIA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.14, pagina PDF 203"
+    },
+    {
+      "id": "cyber-c11-q128",
+      "topicId": "cyber-c11-t15",
+      "question": "Come si collegano ISO/IEC 27001 e 27002 al GDPR?",
+      "answer": "ISO/IEC 27001 riguarda i sistemi di gestione della sicurezza delle informazioni; ISO/IEC 27002 i controlli di sicurezza, entrambi utili a supportare misure adeguate.",
+      "detail": "Il manuale li colloca accanto agli standard più specificamente orientati alla privacy; la conformità GDPR resta da dimostrare per ogni trattamento.",
+      "example": "Un sistema di gestione della sicurezza sostiene processi di controllo, audit e revisione del rischio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a una certificazione ISMS la copertura automatica di tutti i diritti degli interessati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.14, pagina PDF 203"
+    },
+    {
+      "id": "cyber-c11-q129",
+      "topicId": "cyber-c11-t15",
+      "question": "Perché il manuale precisa le edizioni degli standard ISO/IEC?",
+      "answer": "Perché gli standard vengono aggiornati: prima di applicarli bisogna verificare l’edizione pertinente e il relativo campo di applicazione.",
+      "detail": "Le edizioni elencate nel capitolo sono dichiarate verificate al novembre 2026. La numerazione non va citata come invariabile nel tempo.",
+      "example": "Confrontare una procedura aziendale con l’edizione dello standard realmente adottata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non memorizzare gli anni delle norme come se non potessero essere revisionati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.14, pagina PDF 203"
+    },
+    {
+      "id": "cyber-c11-q130",
+      "topicId": "cyber-c11-t16",
+      "question": "Quali categorie di dati tratta il portale energetico usato come caso nel Capitolo 11?",
+      "answer": "Nominativi, recapiti, identificativi dei punti di fornitura, indirizzi, consumi, informazioni contrattuali e tracce degli accessi degli operatori.",
+      "detail": "Il caso serve a combinare finalità, ruoli, minimizzazione, sicurezza, retention e gestione dei diritti in un sistema informativo reale.",
+      "example": "Una piattaforma che propone offerte luce/gas e stima la spesa annua.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che i dati di consumo siano sempre non personali perché tecnici.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.15, pagina PDF 204"
+    },
+    {
+      "id": "cyber-c11-q131",
+      "topicId": "cyber-c11-t16",
+      "question": "Qual è il primo passo per progettare la protezione dei dati nel portale offerte?",
+      "answer": "Mappare categorie di dati e finalità, associando a ogni finalità una base giuridica e una durata di conservazione.",
+      "detail": "Consumi storici, dati anagrafici, fatturazione e dati tecnici non personali vanno distinti, senza dare per scontato che una finalità originaria autorizzi altre analisi.",
+      "example": "Trattamento di fatturazione separato dall’eventuale profilazione commerciale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non riutilizzare automaticamente dati contrattuali per marketing incompatibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.15.1, pagina PDF 204"
+    },
+    {
+      "id": "cyber-c11-q132",
+      "topicId": "cyber-c11-t16",
+      "question": "Perché nello stesso portale energetico serve distinguere dati personali e dati tecnici non personali?",
+      "answer": "Perché il regime del GDPR dipende dalla riconducibilità a una persona fisica, mentre le finalità e le misure applicabili possono differire per tipologia.",
+      "detail": "I consumi individuali e gli identificativi di fornitura possono essere personali; statistiche aggregate effettivamente non riferibili a persone hanno una valutazione diversa.",
+      "example": "Consumo orario di un cliente vs totale mensile di una macroarea non riconducibile ai singoli.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare l’intero dominio energetico in un’unica categoria indistinta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.15.1, pagina PDF 204"
+    },
+    {
+      "id": "cyber-c11-q133",
+      "topicId": "cyber-c11-t16",
+      "question": "Quali permessi differenziati dovrebbero avere cliente, supporto, analista marketing e amministratore DB?",
+      "answer": "Cliente: solo propri dati; supporto: dati necessari al ticket; analista: preferibilmente aggregati o pseudonimi; amministratore DB: privilegi tecnici senza consultazioni ordinarie non necessarie.",
+      "detail": "Le autorizzazioni vanno controllate, registrate e riviste secondo le mansioni e la finalità.",
+      "example": "Il supporto può vedere stato e dati minimi della pratica ma non estrarre tutti i profili di consumo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare amministratore tecnico a titolare di accesso illimitato ai dati di business.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.15.2, pagina PDF 204"
+    },
+    {
+      "id": "cyber-c11-q134",
+      "topicId": "cyber-c11-t16",
+      "question": "Come si traduce il principio di least privilege nel caso del portale energie?",
+      "answer": "Con permessi differenziati per ruolo, risorsa e attività, evitando l’accesso indiscriminato e rivedendo periodicamente le autorizzazioni.",
+      "detail": "Il semplice login non basta; il sistema deve riconoscere l’ambito dei dati e concedere solo operazioni necessarie.",
+      "example": "Un operatore assistenza non visualizza i consumi di tutti i clienti fuori dalla propria pratica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concedere privilegi ampi solo per semplificare lo sviluppo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.15.2, pagina PDF 204"
+    },
+    {
+      "id": "cyber-c11-q135",
+      "topicId": "cyber-c11-t16",
+      "question": "Quando sono sufficienti statistiche aggregate anziché dati individuali?",
+      "answer": "Quando la finalità analitica può essere soddisfatta con valori per fascia o segmento senza nominativi e profili riconducibili a una persona.",
+      "detail": "La minimizzazione deve essere una scelta iniziale: se l’identità non serve all’analisi, non va necessariamente trasferita al sistema analitico.",
+      "example": "Report sui consumi medi di un segmento senza nominativi né POD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non raccogliere dati individuali dettagliati per una semplice statistica aggregata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.15.3, pagina PDF 204"
+    },
+    {
+      "id": "cyber-c11-q136",
+      "topicId": "cyber-c11-t16",
+      "question": "Come utilizzare dati longitudinali dei consumi nel portale riducendo la riconducibilità?",
+      "answer": "Si può usare un codice pseudonimo con tabella di mapping separata, accessi ristretti e monitorati, valutando il rischio di reidentificazione.",
+      "detail": "Anche profili energetici molto dettagliati possono ricondurre indirettamente all’interessato e quindi non diventano automaticamente anonimi.",
+      "example": "Serie mensili con ID casuale e tabella nominativi mantenuta in un ambiente distinto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare il codice pseudonimo come anonimato completo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.15.3, pagina PDF 204"
+    },
+    {
+      "id": "cyber-c11-q137",
+      "topicId": "cyber-c11-t16",
+      "question": "Quali controlli tecnici sono proposti per portale, applicazione e database?",
+      "answer": "TLS per le comunicazioni, cifratura a riposo quando appropriata, segmentazione, backup controllati, MFA per ruoli privilegiati, logging e rilevamento.",
+      "detail": "La sicurezza è multilivello e richiede anche gestione delle chiavi separata dai dati e dai backup che proteggono.",
+      "example": "HTTPS sul web, permessi sul database, backup testati e monitoraggio degli accessi sensibili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che TLS renda superflua la sicurezza del DBMS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.15.4, pagina PDF 204"
+    },
+    {
+      "id": "cyber-c11-q138",
+      "topicId": "cyber-c11-t16",
+      "question": "Perché nel caso energetico le chiavi crittografiche non dovrebbero essere conservate insieme ai backup cifrati senza adeguata separazione?",
+      "answer": "Perché chi acquisisse insieme backup e chiave potrebbe decifrare i dati, vanificando una parte essenziale della protezione.",
+      "detail": "La gestione del materiale segreto è un requisito operativo connesso alla sicurezza della conservazione, al ripristino e al controllo degli accessi.",
+      "example": "Backup in archivio protetto, chiavi gestite in servizio separato con permessi limitati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non valutare la cifratura isolatamente dall’accessibilità delle chiavi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.15.4, pagina PDF 204"
+    },
+    {
+      "id": "cyber-c11-q139",
+      "topicId": "cyber-c11-t16",
+      "question": "Che cosa occorre progettare per conservazione, diritti e incidenti nel portale?",
+      "answer": "Procedure per eliminare dati non necessari, gestire accesso/rettifica, distinguere dati attivi e backup, monitorare anomalie e rispondere alle violazioni.",
+      "detail": "Il piano di incident response deve fissare contatti, ruoli, valutazione dei rischi per le persone e scadenze per notifiche pertinenti.",
+      "example": "Workflow di richiesta accesso cliente e registro incidenti con escalation al titolare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettare che si verifichi una violazione per assegnare responsabilità e procedure.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.15.5, pagina PDF 204"
+    },
+    {
+      "id": "cyber-c11-q140",
+      "topicId": "cyber-c11-t16",
+      "question": "Quale verifica conclusiva rende il caso del portale una valutazione privacy completa?",
+      "answer": "Controllare liceità delle finalità, necessità dei dati, trasparenza, ruoli, misure proporzionate, fornitori e possibilità di esercitare i diritti; valutare DPIA nei casi ad alto rischio.",
+      "detail": "Non basta dimostrare una cifratura corretta: la valutazione riguarda l’intero trattamento e l’impatto sulle persone.",
+      "example": "Revisione combinata di basi giuridiche, permessi, log, retention e processi di risposta ai clienti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concludere “conforme” solo perché il database è sicuro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.15.6, pagina PDF 204"
+    },
+    {
+      "id": "cyber-c11-q141",
+      "topicId": "cyber-c11-t16",
+      "question": "Come collegheresti minimizzazione, privacy by design, least privilege e risk assessment nel caso energetico?",
+      "answer": "Minimizzazione limita i dati; privacy by design integra il vincolo in architettura e processi; least privilege limita gli accessi; la valutazione del rischio dimensiona misure e controlli.",
+      "detail": "I principi operano insieme per ridurre esposizione e impatti potenziali, preservando le funzioni necessarie al servizio.",
+      "example": "Analitiche su dati pseudonimi; accessi per ruolo; TLS e backup; DPIA se il trattamento presenta alto rischio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare principi gestionali, privacy e controlli tecnici come compartimenti separati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.15.6, pagina PDF 204"
+    },
+    {
+      "id": "cyber-c11-q142",
+      "topicId": "cyber-c11-t17",
+      "question": "Esercizio 1: un negozio online deve raccogliere sempre il consenso per gestire l’ordine?",
+      "answer": "No. Nome, indirizzo e pagamento necessari al contratto possono basarsi sull’articolo 6, paragrafo 1, lettera b; la promozione richiede una valutazione separata.",
+      "detail": "Restano obblighi di informazione e rispetto di tutti i principi anche quando non si usa il consenso.",
+      "example": "Spedizione dell’ordine distinta dall’iscrizione facoltativa a newsletter.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare “nessun consenso necessario per il contratto” come “nessun obbligo privacy”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.16, pagina PDF 205"
+    },
+    {
+      "id": "cyber-c11-q143",
+      "topicId": "cyber-c11-t17",
+      "question": "Esercizio 2: COD_CLIENTE, CAP e consumo orario con mapping a nominativo sono dati anonimi?",
+      "answer": "No. Sono almeno pseudonimizzati e rimangono dati personali perché la tabella permette la reidentificazione e i consumi dettagliati possono esporre ulteriori rischi.",
+      "detail": "Occorre verificare finalità, limitare gli accessi e mantenere separate le informazioni di corrispondenza.",
+      "example": "Il file analitico contiene CLT-00481 e il gestionale conserva il legame con il cliente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non qualificare i dati anonimi solo perché manca il nome nel report.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.16, pagina PDF 205"
+    },
+    {
+      "id": "cyber-c11-q144",
+      "topicId": "cyber-c11-t17",
+      "question": "Esercizio 3: è lecito conservare per sempre tutti i log applicativi “per sicurezza”?",
+      "answer": "Non automaticamente: occorrono finalità, contenuti pertinenti, durata proporzionata, accessi limitati e verifica degli obblighi applicabili.",
+      "detail": "La sicurezza può legittimare il logging, ma non giustifica da sola una conservazione indiscriminata con IP, query e identificativi.",
+      "example": "Policy di retention distinta per log tecnici e di audit, con accessi controllati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere finalità legittima con illimitatezza dei dati e dei tempi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.16, pagina PDF 205"
+    },
+    {
+      "id": "cyber-c11-q145",
+      "topicId": "cyber-c11-t17",
+      "question": "Esercizio 4: un file con dati personali inviato per errore a un destinatario esterno richiede analisi anche se viene cancellato?",
+      "answer": "Sì. È una possibile divulgazione non autorizzata da documentare e valutare rispetto al rischio per gli interessati.",
+      "detail": "Contano natura dei dati, numero di persone, destinatario, contenimento e attendibilità della cancellazione. L’errore involontario non esclude un data breach.",
+      "example": "Invio errato di un file clienti: si verifica l’effettiva rimozione e si decide sulla notificabilità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non escludere la violazione solo perché non vi è stata intenzione malevola.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.16, pagina PDF 205"
+    },
+    {
+      "id": "cyber-c11-q146",
+      "topicId": "cyber-c11-t17",
+      "question": "Esercizio 5: che cosa non va in un social aziendale che rende tutti i profili pubblici per impostazione iniziale?",
+      "answer": "Viola la logica di minimizzazione e protezione per impostazione predefinita, poiché concede visibilità oltre quanto necessario.",
+      "detail": "L’accesso iniziale va ristretto ai soggetti e alle categorie necessarie; ampliamenti eventuali devono essere motivati e autorizzati.",
+      "example": "Un nuovo profilo cliente è accessibile solo al team incaricato, non a ogni dipendente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare aperto tutto contando sul fatto che gli utenti cambieranno le preferenze.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.16, pagina PDF 205"
+    },
+    {
+      "id": "cyber-c11-q147",
+      "topicId": "cyber-c11-t17",
+      "question": "Esercizio 6: è valida la risposta “i dati non si possono consegnare perché il database è di proprietà aziendale”?",
+      "answer": "No. Il diritto di accesso dell’interessato riguarda i propri dati personali e le informazioni previste dal GDPR, indipendentemente dalla proprietà del software o database.",
+      "detail": "Occorre verificare il richiedente, raccogliere i dati pertinenti e rispettare condizioni e limiti degli articoli 12 e 15 e i diritti di terzi.",
+      "example": "Un cliente riceve copia dei propri dati senza acquisire tabelle interne di altri utenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non opporre la proprietà della piattaforma all’esercizio dei diritti privacy.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.16, pagina PDF 205"
+    },
+    {
+      "id": "cyber-c11-q148",
+      "topicId": "cyber-c11-t18",
+      "question": "Nel glossario, come si distinguono titolare, responsabile e DPO in una frase?",
+      "answer": "Il titolare decide finalità e mezzi; il responsabile tratta i dati per suo conto; il DPO consiglia, sorveglia e coopera in materia di protezione dei dati.",
+      "detail": "Le funzioni sono diverse e non dipendono automaticamente dal titolo aziendale del soggetto o dal possesso dell’infrastruttura.",
+      "example": "Impresa fornitrice di energia, cloud provider incaricato, figura di protezione dei dati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare i tre termini come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.17, pagina PDF 206"
+    },
+    {
+      "id": "cyber-c11-q149",
+      "topicId": "cyber-c11-t18",
+      "question": "Nel glossario, in che cosa differiscono retention, minimizzazione e anonimizzazione?",
+      "answer": "Retention indica il periodo o la regola di conservazione; minimizzazione limita i dati necessari; anonimizzazione rende non più identificabile una persona secondo criteri adeguati.",
+      "detail": "Le tre nozioni incidono su momenti distinti del ciclo di vita e possono essere combinate ma non si sostituiscono.",
+      "example": "Raccogliere meno dati, conservarli per il tempo giustificato e anonimizzarli se la finalità residua lo permette.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare l’anonimizzazione una soluzione per qualunque finalità originariamente illecita.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.17, pagina PDF 206"
+    },
+    {
+      "id": "cyber-c11-q150",
+      "topicId": "cyber-c11-t18",
+      "question": "Nel glossario, come si distinguono DPIA e data breach?",
+      "answer": "La DPIA valuta preventivamente l’impatto di un trattamento ad alto rischio; il data breach è una violazione di sicurezza che ha prodotto effetti su dati personali.",
+      "detail": "La prima orienta la prevenzione e la proporzionalità; il secondo richiede rilevazione, documentazione e valutazione di eventuale notifica.",
+      "example": "Progettare una nuova profilazione ad alto rischio vs gestire la fuga accidentale di un file clienti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non qualificare la DPIA come un report da scrivere solo dopo una violazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.17, pagina PDF 206"
+    },
+    {
+      "id": "cyber-c11-q151",
+      "topicId": "cyber-c11-t18",
+      "question": "Domanda orale: come spiegheresti il GDPR a un responsabile IT che pensa basti cifrare i dati?",
+      "answer": "La cifratura è una misura importante, ma il GDPR richiede un trattamento lecito, trasparente e minimizzato, finalità definite, gestione dei diritti, retention, controllo dei fornitori e dimostrazione della conformità.",
+      "detail": "La protezione dei dati riguarda le persone e non soltanto la capacità di resistere a un attacco tecnico. Occorre una governance con processi verificabili.",
+      "example": "Il sistema ha TLS e database cifrato ma usa consumi dei clienti per finalità non definite: la cifratura non basta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare l’esposizione orale alla triade CIA.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.18, pagina PDF 206"
+    },
+    {
+      "id": "cyber-c11-q152",
+      "topicId": "cyber-c11-t18",
+      "question": "Domanda orale: come distingueresti “dato tecnico”, “dato personale” e “dato particolare”?",
+      "answer": "Un dato tecnico è personale se identifica o rende identificabile una persona; le categorie particolari dell’articolo 9 hanno un regime aggiuntivo e specifico.",
+      "detail": "Conta il contesto e l’eventuale combinazione con altri dati. Non tutto ciò che è digitale o numerico è sempre personale e non tutti i dati personali rientrano nell’articolo 9.",
+      "example": "Un IP o un POD associabile a persona è personale; un dato sanitario riferito a individuo è categoria particolare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere natura tecnica del formato e natura giuridica dell’informazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.18, pagina PDF 206"
+    },
+    {
+      "id": "cyber-c11-q153",
+      "topicId": "cyber-c11-t18",
+      "question": "Domanda orale: qual è il percorso logico per decidere se un trattamento di dati clienti sia consentito?",
+      "answer": "Identificare dati e interessati; specificare finalità; individuare base giuridica; verificare ulteriori condizioni; informare; minimizzare; definire accessi e retention; assicurare sicurezza e diritti.",
+      "detail": "Il processo segue principi degli articoli 5 e 6 e considera particolarità di dati, modalità e rischio; non comincia da una tecnologia.",
+      "example": "Uso dei consumi per proposte commerciali: verificare nuova finalità, liceità e misure prima di avviare l’analisi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non partire dal consenso come risposta automatica a ogni scenario.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.18, pagina PDF 206"
+    },
+    {
+      "id": "cyber-c11-q154",
+      "topicId": "cyber-c11-t18",
+      "question": "Domanda orale: quali errori concettuali sono più gravi sul consenso?",
+      "answer": "Ritenere che sia sempre necessario, che basti la lettura dell’informativa, che caselle preselezionate siano valide o che una finalità facoltativa sia automaticamente necessaria al contratto.",
+      "detail": "L’articolo 6 offre più basi e il consenso valido richiede libertà, specificità, informazione, inequivocabilità e revocabilità.",
+      "example": "Fatturazione contrattuale separata da comunicazioni promozionali opzionali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre “consenso obbligatorio” come categoria giuridica generale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.18, pagina PDF 206"
+    },
+    {
+      "id": "cyber-c11-q155",
+      "topicId": "cyber-c11-t18",
+      "question": "Domanda orale: perché la pseudonimizzazione non esclude il GDPR?",
+      "answer": "Perché l’identificazione può restare possibile tramite informazioni aggiuntive o caratteristiche del dataset; i dati pseudonimizzati rimangono personali.",
+      "detail": "La tecnica riduce esposizione e rischio, ma non equivale a eliminare la riconducibilità. Anche cifratura e rimozione dei nomi non bastano necessariamente.",
+      "example": "ID cliente e consumi in archivio analitico, mapping conservato separatamente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare pseudonimizzazione e anonimizzazione come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.18, pagina PDF 206"
+    },
+    {
+      "id": "cyber-c11-q156",
+      "topicId": "cyber-c11-t18",
+      "question": "Domanda orale: quale differenza c’è tra diritto di accesso, portabilità e cancellazione?",
+      "answer": "Accesso: conoscere e ricevere copia dei propri dati; portabilità: ottenere o trasmettere specifici dati in formato macchina leggibile alle condizioni previste; cancellazione: eliminazione quando ricorrono presupposti ed entro i limiti applicabili.",
+      "detail": "Sono diritti con oggetto e condizioni differenti. Nessuno autorizza automaticamente a ottenere l’intero database o a eliminare dati dovuti per legge.",
+      "example": "Richiedere report dei propri dati, trasferire alcuni dati forniti o chiedere rimozione di dati non più necessari.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il termine “diritto sui dati” senza specificare la singola pretesa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.18, pagina PDF 206"
+    },
+    {
+      "id": "cyber-c11-q157",
+      "topicId": "cyber-c11-t18",
+      "question": "Domanda orale: quando si attiva la DPIA e perché è diversa dai test di sicurezza?",
+      "answer": "Quando il trattamento può generare rischio elevato per diritti e libertà; esamina necessità, proporzionalità e impatti sulle persone, oltre alle misure di protezione.",
+      "detail": "Un penetration test analizza vulnerabilità tecniche ma non risponde da solo alle domande su liceità e impatto del trattamento.",
+      "example": "Profilazione estesa con effetti significativi sugli individui.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre la DPIA a penetration test o scansione di vulnerabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.18, pagina PDF 206"
+    },
+    {
+      "id": "cyber-c11-q158",
+      "topicId": "cyber-c11-t18",
+      "question": "Domanda orale: come spiegheresti il criterio delle 72 ore senza commettere errori?",
+      "answer": "Le 72 ore decorrono dalla conoscenza della violazione notificabile; la notifica all’autorità va fatta senza ingiustificato ritardo e, ove possibile, entro tale termine, motivando eventuali ritardi.",
+      "detail": "Non tutte le violazioni richiedono notifica, ma tutte devono essere documentate; la comunicazione agli interessati riguarda di regola situazioni di rischio elevato, salvo eccezioni.",
+      "example": "E-mail inviata al destinatario sbagliato: documentazione, valutazione del rischio e decisione motivata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che ogni incidente IT è notificabile entro 72 ore dall’evento iniziale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.18, pagina PDF 206"
+    },
+    {
+      "id": "cyber-c11-q159",
+      "topicId": "cyber-c11-t18",
+      "question": "Domanda orale: come collegheresti i principi GDPR alla gestione di un portale aziendale?",
+      "answer": "Definire finalità e basi, limitare raccolta e accessi, separare ambienti, proteggere dati e chiavi, documentare trattamenti, stabilire retention e diritti, predisporre incident response e verificare il rischio.",
+      "detail": "Il valore della risposta risiede nella combinazione di governance e controlli, con una motivazione per ogni scelta.",
+      "example": "Portale offerte con analitiche pseudonime, permessi per area, backup testati e processo di data breach.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rispondere soltanto con l’elenco di software da installare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.18, pagina PDF 206"
+    },
+    {
+      "id": "cyber-c11-q160",
+      "topicId": "cyber-c11-t18",
+      "question": "Domanda orale: come spiegheresti perché un’azienda piccola può dover gestire registro, diritti e data breach?",
+      "answer": "Perché le disposizioni del GDPR dipendono dal trattamento e dal rischio, non solo dalla dimensione organizzativa; le esenzioni del registro per imprese sotto 250 addetti non sono generali.",
+      "detail": "La dimensione non elimina la necessità di valutare il rischio, rispettare i diritti degli interessati e documentare le eventuali violazioni.",
+      "example": "Piccola azienda con CRM continuativo e customer portal: serve governance proporzionata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fare della dimensione aziendale un’esenzione complessiva.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 11, §11.18, pagina PDF 206"
+    }
+  ]
+}

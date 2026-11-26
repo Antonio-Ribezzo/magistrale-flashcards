@@ -1,0 +1,2890 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cyber",
+  "source": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6: Difesa Perimetrale, Rilevamento e Prevenzione delle intrusioni, pagine PDF 85–107; unica fonte autorizzata.",
+  "chapter": {
+    "id": "cyber-c06",
+    "title": "Difesa Perimetrale, Rilevamento e Prevenzione delle intrusioni",
+    "order": 6,
+    "topics": [
+      {
+        "id": "cyber-c06-t01",
+        "title": "Perimetro, flussi e limiti della fiducia interna"
+      },
+      {
+        "id": "cyber-c06-t02",
+        "title": "Intrusione, fasi, ricognizione, escalation e MITRE ATT&CK"
+      },
+      {
+        "id": "cyber-c06-t03",
+        "title": "IDS: funzionamento, sensori, architettura e fonti dati"
+      },
+      {
+        "id": "cyber-c06-t04",
+        "title": "Telemetria, log, integrità dei file e centralizzazione"
+      },
+      {
+        "id": "cyber-c06-t05",
+        "title": "HIDS: osservazione, vantaggi e limiti"
+      },
+      {
+        "id": "cyber-c06-t06",
+        "title": "NIDS: visibilità, vantaggi, limiti e sistemi ibridi"
+      },
+      {
+        "id": "cyber-c06-t07",
+        "title": "Rilevamento: firme, anomalie, correlazione e qualità degli allarmi"
+      },
+      {
+        "id": "cyber-c06-t08",
+        "title": "Precision, recall, falsi allarmi e impatto operativo"
+      },
+      {
+        "id": "cyber-c06-t09",
+        "title": "Sensori passivi, inline, TAP/SPAN, posizionamento e TLS"
+      },
+      {
+        "id": "cyber-c06-t10",
+        "title": "SIEM, SOC, triage, raccolta e custodia delle evidenze"
+      },
+      {
+        "id": "cyber-c06-t11",
+        "title": "Deception, honeypot e decoy"
+      },
+      {
+        "id": "cyber-c06-t12",
+        "title": "Firewall: packet filtering, stateful inspection, gateway, NGFW e WAF"
+      },
+      {
+        "id": "cyber-c06-t13",
+        "title": "Firewall policy, esempi di regole, filtraggio in ingresso e uscita"
+      },
+      {
+        "id": "cyber-c06-t14",
+        "title": "Bastion host, host firewall, segmentazione e microsegmentazione"
+      },
+      {
+        "id": "cyber-c06-t15",
+        "title": "DMZ: zone, architetture, reverse proxy e VPN"
+      },
+      {
+        "id": "cyber-c06-t16",
+        "title": "IPS, HIPS, NIPS, azioni di blocco e sandbox"
+      },
+      {
+        "id": "cyber-c06-t17",
+        "title": "Caso integrato: architettura enterprise e analisi degli allarmi"
+      },
+      {
+        "id": "cyber-c06-t18",
+        "title": "Metriche, prestazioni, costi, telemetria e Zero Trust"
+      },
+      {
+        "id": "cyber-c06-t19",
+        "title": "Confronti trasversali indispensabili per l’orale"
+      },
+      {
+        "id": "cyber-c06-t20",
+        "title": "Glossario e simulazioni di ragionamento orale"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§6.1 — pagina PDF 85",
+        "cardIds": [
+          "cyber-c06-q001",
+          "cyber-c06-q002",
+          "cyber-c06-q003"
+        ]
+      },
+      {
+        "label": "§6.1.1 — pagina PDF 85",
+        "cardIds": [
+          "cyber-c06-q004"
+        ]
+      },
+      {
+        "label": "§6.1.1 — pagina PDF 86",
+        "cardIds": [
+          "cyber-c06-q005"
+        ]
+      },
+      {
+        "label": "§6.1.2 — pagina PDF 86",
+        "cardIds": [
+          "cyber-c06-q006",
+          "cyber-c06-q007",
+          "cyber-c06-q008"
+        ]
+      },
+      {
+        "label": "§6.2 — pagina PDF 86",
+        "cardIds": [
+          "cyber-c06-q009",
+          "cyber-c06-q010"
+        ]
+      },
+      {
+        "label": "§6.2.1 — pagina PDF 86",
+        "cardIds": [
+          "cyber-c06-q011",
+          "cyber-c06-q012"
+        ]
+      },
+      {
+        "label": "§6.2.2 — pagina PDF 86",
+        "cardIds": [
+          "cyber-c06-q013"
+        ]
+      },
+      {
+        "label": "§6.2.2 — pagina PDF 87",
+        "cardIds": [
+          "cyber-c06-q014"
+        ]
+      },
+      {
+        "label": "§6.2.3 — pagina PDF 87",
+        "cardIds": [
+          "cyber-c06-q015",
+          "cyber-c06-q016"
+        ]
+      },
+      {
+        "label": "§6.2.4 — pagina PDF 87",
+        "cardIds": [
+          "cyber-c06-q017"
+        ]
+      },
+      {
+        "label": "§6.2.5 — pagina PDF 87",
+        "cardIds": [
+          "cyber-c06-q018"
+        ]
+      },
+      {
+        "label": "§6.3 — pagina PDF 87",
+        "cardIds": [
+          "cyber-c06-q019",
+          "cyber-c06-q020"
+        ]
+      },
+      {
+        "label": "§6.3.1 — pagina PDF 87",
+        "cardIds": [
+          "cyber-c06-q021",
+          "cyber-c06-q022"
+        ]
+      },
+      {
+        "label": "§6.3.1 — pagina PDF 88",
+        "cardIds": [
+          "cyber-c06-q023",
+          "cyber-c06-q024"
+        ]
+      },
+      {
+        "label": "§6.3.2 — pagina PDF 88",
+        "cardIds": [
+          "cyber-c06-q025",
+          "cyber-c06-q026"
+        ]
+      },
+      {
+        "label": "§6.3.3 — pagina PDF 88",
+        "cardIds": [
+          "cyber-c06-q027"
+        ]
+      },
+      {
+        "label": "§6.3.4 — pagina PDF 88",
+        "cardIds": [
+          "cyber-c06-q028",
+          "cyber-c06-q029"
+        ]
+      },
+      {
+        "label": "§6.4 — pagina PDF 88",
+        "cardIds": [
+          "cyber-c06-q030"
+        ]
+      },
+      {
+        "label": "§6.4.1 — pagina PDF 89",
+        "cardIds": [
+          "cyber-c06-q031",
+          "cyber-c06-q032"
+        ]
+      },
+      {
+        "label": "§6.4.2 — pagina PDF 89",
+        "cardIds": [
+          "cyber-c06-q033"
+        ]
+      },
+      {
+        "label": "§6.4.3 — pagina PDF 89",
+        "cardIds": [
+          "cyber-c06-q034",
+          "cyber-c06-q035"
+        ]
+      },
+      {
+        "label": "§6.4.4 — pagina PDF 89",
+        "cardIds": [
+          "cyber-c06-q036"
+        ]
+      },
+      {
+        "label": "§6.4.5 — pagina PDF 90",
+        "cardIds": [
+          "cyber-c06-q037"
+        ]
+      },
+      {
+        "label": "§6.4.6 — pagina PDF 90",
+        "cardIds": [
+          "cyber-c06-q038",
+          "cyber-c06-q039"
+        ]
+      },
+      {
+        "label": "§6.4.7 — pagina PDF 90",
+        "cardIds": [
+          "cyber-c06-q040",
+          "cyber-c06-q041"
+        ]
+      },
+      {
+        "label": "§6.5 — pagina PDF 90",
+        "cardIds": [
+          "cyber-c06-q042"
+        ]
+      },
+      {
+        "label": "§6.5.1 — pagina PDF 91",
+        "cardIds": [
+          "cyber-c06-q043",
+          "cyber-c06-q044"
+        ]
+      },
+      {
+        "label": "§6.5.2 — pagina PDF 91",
+        "cardIds": [
+          "cyber-c06-q045",
+          "cyber-c06-q046"
+        ]
+      },
+      {
+        "label": "§6.5.3 — pagina PDF 91",
+        "cardIds": [
+          "cyber-c06-q047",
+          "cyber-c06-q048"
+        ]
+      },
+      {
+        "label": "§6.5.4 — pagina PDF 91",
+        "cardIds": [
+          "cyber-c06-q049",
+          "cyber-c06-q050",
+          "cyber-c06-q051",
+          "cyber-c06-q052"
+        ]
+      },
+      {
+        "label": "§6.5.5 — pagina PDF 92",
+        "cardIds": [
+          "cyber-c06-q053",
+          "cyber-c06-q054",
+          "cyber-c06-q055"
+        ]
+      },
+      {
+        "label": "§6.5.6 — pagina PDF 92",
+        "cardIds": [
+          "cyber-c06-q056",
+          "cyber-c06-q057"
+        ]
+      },
+      {
+        "label": "§6.6 — pagina PDF 92",
+        "cardIds": [
+          "cyber-c06-q058",
+          "cyber-c06-q059"
+        ]
+      },
+      {
+        "label": "§6.6.1 — pagina PDF 92",
+        "cardIds": [
+          "cyber-c06-q060",
+          "cyber-c06-q061"
+        ]
+      },
+      {
+        "label": "§6.6.2 — pagina PDF 92",
+        "cardIds": [
+          "cyber-c06-q062"
+        ]
+      },
+      {
+        "label": "§6.6.2 — pagina PDF 93",
+        "cardIds": [
+          "cyber-c06-q063"
+        ]
+      },
+      {
+        "label": "§6.6.3 — pagina PDF 93",
+        "cardIds": [
+          "cyber-c06-q064",
+          "cyber-c06-q065"
+        ]
+      },
+      {
+        "label": "§6.6.4 — pagina PDF 93",
+        "cardIds": [
+          "cyber-c06-q066",
+          "cyber-c06-q067"
+        ]
+      },
+      {
+        "label": "§6.7 — pagina PDF 93",
+        "cardIds": [
+          "cyber-c06-q068",
+          "cyber-c06-q069"
+        ]
+      },
+      {
+        "label": "§6.7.1 — pagina PDF 93",
+        "cardIds": [
+          "cyber-c06-q070",
+          "cyber-c06-q071"
+        ]
+      },
+      {
+        "label": "§6.7.2 — pagina PDF 93",
+        "cardIds": [
+          "cyber-c06-q072",
+          "cyber-c06-q073"
+        ]
+      },
+      {
+        "label": "§6.7.3 — pagina PDF 94",
+        "cardIds": [
+          "cyber-c06-q074",
+          "cyber-c06-q075"
+        ]
+      },
+      {
+        "label": "§6.7.4 — pagina PDF 94",
+        "cardIds": [
+          "cyber-c06-q076"
+        ]
+      },
+      {
+        "label": "§6.8 — pagina PDF 94",
+        "cardIds": [
+          "cyber-c06-q077",
+          "cyber-c06-q078"
+        ]
+      },
+      {
+        "label": "§6.8.1 — pagina PDF 94",
+        "cardIds": [
+          "cyber-c06-q079"
+        ]
+      },
+      {
+        "label": "§6.8.2 — pagina PDF 94",
+        "cardIds": [
+          "cyber-c06-q080",
+          "cyber-c06-q081"
+        ]
+      },
+      {
+        "label": "§6.8.3 — pagina PDF 95",
+        "cardIds": [
+          "cyber-c06-q082"
+        ]
+      },
+      {
+        "label": "§6.8.4 — pagina PDF 95",
+        "cardIds": [
+          "cyber-c06-q083"
+        ]
+      },
+      {
+        "label": "§6.9 — pagina PDF 95",
+        "cardIds": [
+          "cyber-c06-q084",
+          "cyber-c06-q085",
+          "cyber-c06-q086"
+        ]
+      },
+      {
+        "label": "§6.9.1 — pagina PDF 95",
+        "cardIds": [
+          "cyber-c06-q087",
+          "cyber-c06-q088",
+          "cyber-c06-q089"
+        ]
+      },
+      {
+        "label": "§6.9.1 — pagina PDF 96",
+        "cardIds": [
+          "cyber-c06-q090",
+          "cyber-c06-q091",
+          "cyber-c06-q092"
+        ]
+      },
+      {
+        "label": "§6.9.2 — pagina PDF 96",
+        "cardIds": [
+          "cyber-c06-q093",
+          "cyber-c06-q094"
+        ]
+      },
+      {
+        "label": "§6.9.3 — pagina PDF 96",
+        "cardIds": [
+          "cyber-c06-q095",
+          "cyber-c06-q096"
+        ]
+      },
+      {
+        "label": "§6.9.4 — pagina PDF 96",
+        "cardIds": [
+          "cyber-c06-q097"
+        ]
+      },
+      {
+        "label": "§6.9.4 — pagina PDF 97",
+        "cardIds": [
+          "cyber-c06-q098",
+          "cyber-c06-q099",
+          "cyber-c06-q100"
+        ]
+      },
+      {
+        "label": "§6.9.5 — pagina PDF 97",
+        "cardIds": [
+          "cyber-c06-q101",
+          "cyber-c06-q102"
+        ]
+      },
+      {
+        "label": "§6.9.6 — pagina PDF 97",
+        "cardIds": [
+          "cyber-c06-q103"
+        ]
+      },
+      {
+        "label": "§6.9.7 — pagina PDF 97",
+        "cardIds": [
+          "cyber-c06-q104"
+        ]
+      },
+      {
+        "label": "§6.9.8 — pagina PDF 97",
+        "cardIds": [
+          "cyber-c06-q105"
+        ]
+      },
+      {
+        "label": "§6.10 — pagina PDF 97",
+        "cardIds": [
+          "cyber-c06-q106"
+        ]
+      },
+      {
+        "label": "§6.10.1 — pagina PDF 98",
+        "cardIds": [
+          "cyber-c06-q107",
+          "cyber-c06-q108"
+        ]
+      },
+      {
+        "label": "§6.10.2 — pagina PDF 98",
+        "cardIds": [
+          "cyber-c06-q109"
+        ]
+      },
+      {
+        "label": "§6.10.3 — pagina PDF 98",
+        "cardIds": [
+          "cyber-c06-q110",
+          "cyber-c06-q111",
+          "cyber-c06-q112"
+        ]
+      },
+      {
+        "label": "§6.11 — pagina PDF 98",
+        "cardIds": [
+          "cyber-c06-q113",
+          "cyber-c06-q114"
+        ]
+      },
+      {
+        "label": "§6.11.1 — pagina PDF 99",
+        "cardIds": [
+          "cyber-c06-q115",
+          "cyber-c06-q116"
+        ]
+      },
+      {
+        "label": "§6.11.2 — pagina PDF 99",
+        "cardIds": [
+          "cyber-c06-q117",
+          "cyber-c06-q118"
+        ]
+      },
+      {
+        "label": "§6.11.3 — pagina PDF 99",
+        "cardIds": [
+          "cyber-c06-q119"
+        ]
+      },
+      {
+        "label": "§6.11.4 — pagina PDF 99",
+        "cardIds": [
+          "cyber-c06-q120"
+        ]
+      },
+      {
+        "label": "§6.11.5 — pagina PDF 99",
+        "cardIds": [
+          "cyber-c06-q121"
+        ]
+      },
+      {
+        "label": "§6.12 — pagina PDF 99",
+        "cardIds": [
+          "cyber-c06-q122",
+          "cyber-c06-q123"
+        ]
+      },
+      {
+        "label": "§6.12.1 — pagina PDF 100",
+        "cardIds": [
+          "cyber-c06-q124",
+          "cyber-c06-q125"
+        ]
+      },
+      {
+        "label": "§6.12.2 — pagina PDF 100",
+        "cardIds": [
+          "cyber-c06-q126"
+        ]
+      },
+      {
+        "label": "§6.12.3 — pagina PDF 100",
+        "cardIds": [
+          "cyber-c06-q127",
+          "cyber-c06-q128"
+        ]
+      },
+      {
+        "label": "§6.12.4 — pagina PDF 100",
+        "cardIds": [
+          "cyber-c06-q129",
+          "cyber-c06-q130"
+        ]
+      },
+      {
+        "label": "§6.12.5 — pagina PDF 100",
+        "cardIds": [
+          "cyber-c06-q131"
+        ]
+      },
+      {
+        "label": "§6.12.5 — pagina PDF 101",
+        "cardIds": [
+          "cyber-c06-q132"
+        ]
+      },
+      {
+        "label": "§6.13 — pagina PDF 101",
+        "cardIds": [
+          "cyber-c06-q133"
+        ]
+      },
+      {
+        "label": "§6.13.1 — pagina PDF 101",
+        "cardIds": [
+          "cyber-c06-q134",
+          "cyber-c06-q135"
+        ]
+      },
+      {
+        "label": "§6.13.2 — pagina PDF 101",
+        "cardIds": [
+          "cyber-c06-q136"
+        ]
+      },
+      {
+        "label": "§6.13.3 — pagina PDF 101",
+        "cardIds": [
+          "cyber-c06-q137"
+        ]
+      },
+      {
+        "label": "§6.13.4 — pagina PDF 102",
+        "cardIds": [
+          "cyber-c06-q138",
+          "cyber-c06-q139"
+        ]
+      },
+      {
+        "label": "§6.13.5 — pagina PDF 102",
+        "cardIds": [
+          "cyber-c06-q140",
+          "cyber-c06-q141"
+        ]
+      },
+      {
+        "label": "§6.13.6 — pagina PDF 102",
+        "cardIds": [
+          "cyber-c06-q142"
+        ]
+      },
+      {
+        "label": "§6.13.7 — pagina PDF 103",
+        "cardIds": [
+          "cyber-c06-q143"
+        ]
+      },
+      {
+        "label": "§6.14 — pagina PDF 103",
+        "cardIds": [
+          "cyber-c06-q144"
+        ]
+      },
+      {
+        "label": "§6.14.1 — pagina PDF 103",
+        "cardIds": [
+          "cyber-c06-q145",
+          "cyber-c06-q146",
+          "cyber-c06-q147"
+        ]
+      },
+      {
+        "label": "§6.14.2 — pagina PDF 103",
+        "cardIds": [
+          "cyber-c06-q148",
+          "cyber-c06-q149"
+        ]
+      },
+      {
+        "label": "§6.14.3 — pagina PDF 103",
+        "cardIds": [
+          "cyber-c06-q150",
+          "cyber-c06-q151"
+        ]
+      },
+      {
+        "label": "§6.14.4 — pagina PDF 103",
+        "cardIds": [
+          "cyber-c06-q152"
+        ]
+      },
+      {
+        "label": "§6.15 — pagina PDF 104",
+        "cardIds": [
+          "cyber-c06-q153",
+          "cyber-c06-q154",
+          "cyber-c06-q155",
+          "cyber-c06-q156",
+          "cyber-c06-q157",
+          "cyber-c06-q158",
+          "cyber-c06-q159",
+          "cyber-c06-q160"
+        ]
+      },
+      {
+        "label": "§6.16 — pagina PDF 104",
+        "cardIds": [
+          "cyber-c06-q161",
+          "cyber-c06-q162",
+          "cyber-c06-q163",
+          "cyber-c06-q164",
+          "cyber-c06-q165"
+        ]
+      },
+      {
+        "label": "§6.17 — pagina PDF 105",
+        "cardIds": [
+          "cyber-c06-q166",
+          "cyber-c06-q167",
+          "cyber-c06-q168",
+          "cyber-c06-q169",
+          "cyber-c06-q170"
+        ]
+      },
+      {
+        "label": "§6.17 — pagina PDF 106",
+        "cardIds": [
+          "cyber-c06-q171",
+          "cyber-c06-q172"
+        ]
+      },
+      {
+        "label": "§6.17 — pagina PDF 107",
+        "cardIds": [
+          "cyber-c06-q173",
+          "cyber-c06-q174",
+          "cyber-c06-q175",
+          "cyber-c06-q176",
+          "cyber-c06-q177"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cyber-c06-q001",
+      "topicId": "cyber-c06-t01",
+      "question": "Che cosa si intende per perimetro di rete in cybersecurity?",
+      "answer": "È l’insieme dei confini in cui il traffico attraversa zone sottoposte a diversi livelli di fiducia e a regole di sicurezza differenti.",
+      "detail": "La protezione perimetrale controlla, osserva e limita queste comunicazioni con segmentazione, firewall, rilevazione e prevenzione delle intrusioni. Il perimetro può esistere anche fra reti interne e workload cloud.",
+      "example": "Il portale clienti è accessibile da Internet, ma il database commerciale resta in una zona protetta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare il perimetro soltanto con il router Internet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.1, pagina PDF 85"
+    },
+    {
+      "id": "cyber-c06-q002",
+      "topicId": "cyber-c06-t01",
+      "question": "Quali tre obiettivi devono convivere nella difesa perimetrale?",
+      "answer": "Prevenire connessioni non autorizzate, rilevare comportamenti sospetti e contenere gli effetti di una compromissione.",
+      "detail": "Firewall, IDS e IPS contribuiscono in modi distinti e complementari. La progettazione deve consentire i servizi leciti, proteggere gli asset critici e rendere osservabili gli eventi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che il solo blocco preventivo elimini la necessità di rilevazione e risposta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.1, pagina PDF 85"
+    },
+    {
+      "id": "cyber-c06-q003",
+      "topicId": "cyber-c06-t01",
+      "question": "Perché un portale web pubblico e un database interno richiedono policy differenti?",
+      "answer": "Il portale deve accettare specifiche connessioni esterne; il database deve essere raggiungibile soltanto dai componenti e dagli amministratori autorizzati.",
+      "detail": "La separazione in zone consente di limitare il percorso Internet → reverse proxy → applicazione → database e di evitare la pubblicazione diretta del livello dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concedere al client esterno accesso diretto al database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.1, pagina PDF 85"
+    },
+    {
+      "id": "cyber-c06-q004",
+      "topicId": "cyber-c06-t01",
+      "question": "Perché il modello «dentro la LAN = fidato» non è sufficiente?",
+      "answer": "Perché un endpoint interno può essere già compromesso tramite malware, credenziali rubate, phishing, VPN abusate o fornitori compromessi.",
+      "detail": "Dopo l’accesso iniziale l’attaccante può muoversi lateralmente. Occorrono autenticazione e autorizzazione per risorsa, controlli east–west e segmentazione oltre al filtro Internet–LAN.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre automaticamente affidabilità dall’indirizzo IP interno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.1.1, pagina PDF 85"
+    },
+    {
+      "id": "cyber-c06-q005",
+      "topicId": "cyber-c06-t01",
+      "question": "Che cosa significa Zero Trust nel rapporto fra perimetro e identità?",
+      "answer": "Non attribuire fiducia implicita a un utente o dispositivo solo per la sua ubicazione nella rete aziendale.",
+      "detail": "La decisione di accesso considera identità, dispositivo, risorsa, contesto e policy. Non richiede di eliminare firewall e segmentazione: aggiunge controlli granulari alle difese di rete.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 2: least privilege e complete mediation"
+      ],
+      "mistakes": "Non tradurre Zero Trust con «non usare più firewall».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.1.1, pagina PDF 86"
+    },
+    {
+      "id": "cyber-c06-q006",
+      "topicId": "cyber-c06-t01",
+      "question": "Qual è la differenza tra traffico inbound, outbound ed east–west?",
+      "answer": "Inbound entra da zone esterne; outbound esce verso altre reti; east–west si muove fra host o segmenti interni.",
+      "detail": "Le tre direzioni richiedono controlli diversi: un attacco può usare connessioni in uscita per sottrarre dati o traffico laterale per propagarsi anche se gli ingressi sono filtrati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non progettare una policy che osservi esclusivamente gli ingressi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.1.2, pagina PDF 86"
+    },
+    {
+      "id": "cyber-c06-q007",
+      "topicId": "cyber-c06-t01",
+      "question": "Perché il filtraggio in uscita è importante dopo una compromissione?",
+      "answer": "Perché un host già compromesso può tentare comunicazioni non autorizzate verso l’esterno o esfiltrazione di dati.",
+      "detail": "Limitare destinazioni e protocolli outbound, monitorare anomalie e definire eccezioni riduce alcuni percorsi di abuso. Non significa bloccare tutte le comunicazioni aziendali indispensabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un firewall perimetrale con una garanzia di assenza di traffico malevolo interno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.1.2, pagina PDF 86"
+    },
+    {
+      "id": "cyber-c06-q008",
+      "topicId": "cyber-c06-t01",
+      "question": "Come cambiano i confini di sicurezza in cloud e reti ibride?",
+      "answer": "Il perimetro può essere realizzato con policy e controlli software, security group, segmentazione, identità dei servizi e controlli applicativi.",
+      "detail": "Non sempre tutto il traffico passa per un unico apparato fisico. Si applicano gli stessi principi di zone, flussi minimi autorizzati e controllo dei confini di fiducia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non richiedere un singolo router fisico per ogni confine.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.1.2, pagina PDF 86"
+    },
+    {
+      "id": "cyber-c06-q009",
+      "topicId": "cyber-c06-t02",
+      "question": "Che cos’è un’intrusione?",
+      "answer": "Un tentativo o episodio di accesso, utilizzo o modifica non autorizzata di risorse che può violare proprietà di sicurezza.",
+      "detail": "Può essere eseguita da attori esterni o da utenti interni oltre i propri privilegi. Un tentativo può fallire; un incidente di sicurezza può anche essere accidentale, quindi non coincide sempre con un’intrusione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare «intrusione riuscita» qualsiasi allarme.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.2, pagina PDF 86"
+    },
+    {
+      "id": "cyber-c06-q010",
+      "topicId": "cyber-c06-t02",
+      "question": "Quali quattro attività di intrusione ricorrono nelle slide del docente?",
+      "answer": "Ricognizione, acquisizione dell’accesso, escalation dei privilegi e occultamento delle tracce.",
+      "detail": "Sono attività ricorrenti e non tappe obbligatorie o in ordine invariabile: un attaccante può usare credenziali già elevate e compiere fasi in modo diverso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentarne la sequenza come legge universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.2, pagina PDF 86"
+    },
+    {
+      "id": "cyber-c06-q011",
+      "topicId": "cyber-c06-t02",
+      "question": "Che cos’è la reconnaissance (ricognizione)?",
+      "answer": "La raccolta di informazioni su bersagli, domini, servizi, applicazioni e sistemi raggiungibili prima o durante un tentativo di attacco.",
+      "detail": "Può essere passiva, con informazioni pubbliche, oppure attiva, interagendo con i sistemi. Non ogni attività di ricognizione è automaticamente una violazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la consultazione di dati pubblici con una compromissione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.2.1, pagina PDF 86"
+    },
+    {
+      "id": "cyber-c06-q012",
+      "topicId": "cyber-c06-t02",
+      "question": "Quali segnali possono suggerire attività di ricognizione e perché non bastano da soli?",
+      "answer": "Richieste sequenziali, molte risposte a percorsi inesistenti, connessioni a servizi non usati ed errori di protocollo.",
+      "detail": "Scanner autorizzati, crawler, attività di manutenzione e configurazioni difettose possono generare sintomi simili; occorre corroborarli con identità, orari, sorgenti e policy.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente intenzione criminale a ogni scansione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.2.1, pagina PDF 86"
+    },
+    {
+      "id": "cyber-c06-q013",
+      "topicId": "cyber-c06-t02",
+      "question": "Quali vie possono consentire l’accesso iniziale a un sistema?",
+      "answer": "Vulnerabilità tecniche, credenziali rubate o deboli, configurazioni difettose, malware e relazioni di fiducia compromesse.",
+      "detail": "L’accesso iniziale può essere limitato: ottenere una sessione o eseguire una funzione non significa necessariamente avere privilegi amministrativi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che ogni accesso iniziale comporti il controllo completo della rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.2.2, pagina PDF 86"
+    },
+    {
+      "id": "cyber-c06-q014",
+      "topicId": "cyber-c06-t02",
+      "question": "Quali evidenze aiutano a riconoscere un possibile accesso iniziale?",
+      "answer": "Login inattesi, origini o orari insoliti, creazione/modifica account, processi anomali, richieste di exploit e connessioni a destinazioni inconsuete.",
+      "detail": "Il segnale acquisisce forza quando eventi di endpoint, identità e rete risultano coerenti; occorre escludere modifiche autorizzate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare un singolo login insolito per prova conclusiva.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.2.2, pagina PDF 87"
+    },
+    {
+      "id": "cyber-c06-q015",
+      "topicId": "cyber-c06-t02",
+      "question": "Come si distinguono privilege escalation e lateral movement?",
+      "answer": "Privilege escalation è l’acquisizione di privilegi superiori; lateral movement è il passaggio fra sistemi o identità differenti.",
+      "detail": "Le due attività possono essere collegate, ma non sono sinonimi. È possibile muoversi lateralmente usando credenziali già autorizzate, senza elevazione esplicita dei privilegi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire movement come aumento dei permessi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.2.3, pagina PDF 87"
+    },
+    {
+      "id": "cyber-c06-q016",
+      "topicId": "cyber-c06-t02",
+      "question": "Come può avvenire l’escalation dei privilegi secondo il manuale?",
+      "answer": "Attraverso vulnerabilità applicative, errori di configurazione, abuso di account troppo privilegiati o credenziali compromesse.",
+      "detail": "Il principio del minimo privilegio limita l’impatto potenziale e la probabilità che una singola identità permetta azioni ulteriori.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 2: least privilege"
+      ],
+      "mistakes": "Non trattare la sola autenticazione come controllo sufficiente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.2.3, pagina PDF 87"
+    },
+    {
+      "id": "cyber-c06-q017",
+      "topicId": "cyber-c06-t02",
+      "question": "Perché l’attaccante potrebbe cercare di occultare le tracce?",
+      "answer": "Per ridurre la probabilità che l’intrusione venga scoperta e ricostruita.",
+      "detail": "Può tentare di cancellare o modificare log, fermare sensori, abusare di strumenti legittimi e ridurre traffico visibile. Per questo occorrono raccolta tempestiva remota, protezione dei log e rilevamento dell’interruzione della telemetria.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare l’assenza di log prova dell’assenza di attacco.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.2.4, pagina PDF 87"
+    },
+    {
+      "id": "cyber-c06-q018",
+      "topicId": "cyber-c06-t02",
+      "question": "Che cos’è MITRE ATT&CK e quale uso corretto se ne fa?",
+      "answer": "Un quadro di tattiche e tecniche osservate in attacchi reali, utile per collegare obiettivi offensivi ed evidenze difensive.",
+      "detail": "Comprende, fra altre, reconnaissance, initial access, escalation, lateral movement, collection, C2 ed exfiltration. Nel manuale è un approfondimento: non impone una sequenza fissa delle intrusioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare ATT&CK con uno schema obbligatorio a quattro fasi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.2.5, pagina PDF 87"
+    },
+    {
+      "id": "cyber-c06-q019",
+      "topicId": "cyber-c06-t03",
+      "question": "Che cos’è un Intrusion Detection System (IDS)?",
+      "answer": "Un sistema che acquisisce e analizza attività o eventi rilevanti per segnalare possibili intrusioni o violazioni delle policy.",
+      "detail": "La sua funzione principale è la rilevazione; il blocco attivo caratterizza un IPS o un’integrazione con componenti di enforcement. Gli allarmi devono essere interpretati da un processo operativo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente capacità di blocco a ogni IDS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.3, pagina PDF 87"
+    },
+    {
+      "id": "cyber-c06-q020",
+      "topicId": "cyber-c06-t03",
+      "question": "Quali sono i due elementi logici essenziali di un IDS?",
+      "answer": "Sensori per acquisire le evidenze e analizzatori per interpretarle e riconoscere situazioni sospette.",
+      "detail": "I sensori possono essere software o hardware; gli analizzatori applicano firme, soglie o modelli, producendo eventi e allarmi. Un’infrastruttura estesa può usare raccolta e gestione centralizzate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che il sensore sia sempre lo stesso componente della console di analisi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.3, pagina PDF 87"
+    },
+    {
+      "id": "cyber-c06-q021",
+      "topicId": "cyber-c06-t03",
+      "question": "Quali fonti di telemetria sono citate esplicitamente nelle slide per un IDS?",
+      "answer": "Chiamate a sistema e registri di sistema, file di log e checksum di file specifici.",
+      "detail": "Osservano fenomeni differenti: azioni dei processi, configurazioni, eventi registrati e integrità dei file. Combinare le fonti può aumentare la capacità di rilevazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che un IDS osserva soltanto pacchetti di rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.3.1, pagina PDF 87"
+    },
+    {
+      "id": "cyber-c06-q022",
+      "topicId": "cyber-c06-t03",
+      "question": "Che cosa può indicare il monitoraggio delle system call e dei registri di sistema?",
+      "answer": "Sequenze di richieste al sistema operativo o modifiche di configurazione non previste.",
+      "detail": "Apertura di file, avvio processi e accessi a risorse possono formare pattern; il registro di sistema può mostrare persistenza o cambiamenti. Molte attività lecite generano eventi simili: serve il contesto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che una system call insolita sia intrinsecamente malevola.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.3.1, pagina PDF 87"
+    },
+    {
+      "id": "cyber-c06-q023",
+      "topicId": "cyber-c06-t04",
+      "question": "Quali campi rendono un log utile a un’indagine di sicurezza?",
+      "answer": "Timestamp coerente, host, soggetto o processo, tipo di evento, esito e dettagli tecnici pertinenti.",
+      "detail": "La qualità del log condiziona correlazione, ricostruzione temporale e attribuzione. La raccolta deve limitare segreti e dati non necessari, come password e token.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non salvare credenziali nei log per avere «più visibilità».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.3.1, pagina PDF 88"
+    },
+    {
+      "id": "cyber-c06-q024",
+      "topicId": "cyber-c06-t04",
+      "question": "In che cosa consiste il File Integrity Monitoring (FIM)?",
+      "answer": "Nel confronto di attributi o digest di file critici con valori di riferimento affidabili per rilevare modifiche.",
+      "detail": "Un hash diverso segnala che il contenuto è cambiato, ma non se la modifica sia autorizzata né quale processo l’abbia prodotta. Servono ulteriori log e conoscenza di patch e aggiornamenti previsti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare ogni checksum differente come infezione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.3.1, pagina PDF 88"
+    },
+    {
+      "id": "cyber-c06-q025",
+      "topicId": "cyber-c06-t03",
+      "question": "Come si distinguono evento, allarme e incidente di sicurezza?",
+      "answer": "Evento: fatto osservato; allarme: segnalazione che un evento merita attenzione; incidente: condizione rilevante secondo i criteri organizzativi.",
+      "detail": "Cinque login falliti sono eventi; una soglia superata può produrre un allarme; l’analisi determina se sussiste un tentativo o incidente da gestire. Un allarme può essere falso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che ogni evento o allarme equivale a un incidente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.3.2, pagina PDF 88"
+    },
+    {
+      "id": "cyber-c06-q026",
+      "topicId": "cyber-c06-t03",
+      "question": "Come si valuta un allarme generato da ripetuti login falliti?",
+      "answer": "Si verifica l’origine, l’account, il contesto operativo, gli altri eventi e la policy aziendale.",
+      "detail": "Una password dimenticata e un tentativo ostile possono produrre pattern simili; servono correlazione e analisi prima di classificare l’evento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concludere «attacco riuscito» dal superamento di una soglia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.3.2, pagina PDF 88"
+    },
+    {
+      "id": "cyber-c06-q027",
+      "topicId": "cyber-c06-t03",
+      "question": "Quali componenti può comprendere un’architettura IDS enterprise?",
+      "answer": "Sensori/agenti, canali di raccolta, normalizzazione, rilevamento, archiviazione, console e gestione degli allarmi.",
+      "detail": "Normalizzare rende confrontabili fonti diverse; correlare collega eventi nello stesso scenario. Un piccolo HIDS può anche funzionare localmente: la struttura enterprise non è obbligatoria per ogni installazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare la centralizzazione fisica come requisito universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.3.3, pagina PDF 88"
+    },
+    {
+      "id": "cyber-c06-q028",
+      "topicId": "cyber-c06-t04",
+      "question": "Quali vantaggi offre la centralizzazione della telemetria?",
+      "answer": "Rende più semplici ricerca, correlazione, applicazione di regole comuni, gestione delle evidenze e protezione uniforme.",
+      "detail": "La slide richiama un punto di raccolta dedicato; si possono usare componenti distribuiti mantenendo una vista logica unificata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare la gestione uniforme a un solo server obbligatorio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.3.4, pagina PDF 88"
+    },
+    {
+      "id": "cyber-c06-q029",
+      "topicId": "cyber-c06-t04",
+      "question": "Quali rischi comporta un sistema di raccolta e analisi centralizzato?",
+      "answer": "Colli di bottiglia, indisponibilità, compromissione dell’archivio e perdita di visibilità se il punto centrale non funziona.",
+      "detail": "Code, repliche, distribuzione e separazione delle funzioni possono mitigare i singoli punti di guasto, ma richiedono risorse e governo aggiuntivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ignorare i requisiti di capacità e continuità del sistema di monitoraggio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.3.4, pagina PDF 88"
+    },
+    {
+      "id": "cyber-c06-q030",
+      "topicId": "cyber-c06-t05",
+      "question": "In base a quale criterio distinguiamo HIDS, NIDS e IDS ibridi?",
+      "answer": "In base al punto di osservazione: host locale, traffico di rete oppure combinazione di fonti host e rete.",
+      "detail": "Non descrive automaticamente la tecnica di rilevazione, che può essere a firme o anomalie in ciascuna architettura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare HIDS/NIDS con signature/anomaly detection.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.4, pagina PDF 88"
+    },
+    {
+      "id": "cyber-c06-q031",
+      "topicId": "cyber-c06-t05",
+      "question": "Che cosa monitora un Host-based IDS (HIDS)?",
+      "answer": "Eventi locali di un host: processi, file, account, login, configurazioni, servizi e altre attività del sistema.",
+      "detail": "Un HIDS su un application server può rilevare l’avvio inatteso di un processo anche se l’attività non genera traffico significativo osservabile dal NIDS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarti che un singolo HIDS monitori tutti gli host della rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.4.1, pagina PDF 89"
+    },
+    {
+      "id": "cyber-c06-q032",
+      "topicId": "cyber-c06-t05",
+      "question": "Perché un HIDS può rilevare una modifica locale che sfugge a un NIDS?",
+      "answer": "Perché osserva direttamente stato ed eventi del sistema operativo e dell’applicazione, non soltanto traffico di rete.",
+      "detail": "Una libreria di produzione modificata o una directory riservata aperta possono non produrre un pattern evidente sulla rete.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che ogni processo anomalo sia automaticamente malevolo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.4.1, pagina PDF 89"
+    },
+    {
+      "id": "cyber-c06-q033",
+      "topicId": "cyber-c06-t05",
+      "question": "Quali vantaggi dell’HIDS sono riportati nella slide 92?",
+      "answer": "Dettaglio sugli eventi dell’host, osservazione di abusi interni e possibile accesso ai dati prima della cifratura o dopo la decifratura.",
+      "detail": "La visibilità sui dati applicativi dipende da dove il sensore è installato e dai privilegi di raccolta: non ogni HIDS vede qualunque contenuto TLS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che HIDS è sempre cieco ai dati solo perché il canale esterno è cifrato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.4.2, pagina PDF 89"
+    },
+    {
+      "id": "cyber-c06-q034",
+      "topicId": "cyber-c06-t05",
+      "question": "Quali sono i principali svantaggi di un HIDS?",
+      "answer": "Consumo di CPU/RAM/I/O, gestione di molti agenti, possibili manomissioni sull’host e copertura incompleta.",
+      "detail": "Sensori spenti o non aggiornati causano punti ciechi; un avversario con privilegi elevati può tentare di comprometterne il funzionamento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere «agente installato» con «protezione attiva e funzionante».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.4.3, pagina PDF 89"
+    },
+    {
+      "id": "cyber-c06-q035",
+      "topicId": "cyber-c06-t05",
+      "question": "Perché la compromissione privilegiata di un host è particolarmente delicata per il suo HIDS?",
+      "answer": "Perché l’attaccante può tentare di interrompere la raccolta, alterare sensori o cancellare le evidenze locali.",
+      "detail": "Le protezioni anti-tampering e la spedizione tempestiva dei log su sistemi separati limitano il rischio, senza eliminarlo completamente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non custodire tutte le prove soltanto sulla macchina compromessa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.4.3, pagina PDF 89"
+    },
+    {
+      "id": "cyber-c06-q036",
+      "topicId": "cyber-c06-t06",
+      "question": "Che cosa analizza un Network-based IDS (NIDS)?",
+      "answer": "Traffico visibile nel suo punto di rete: pacchetti, flussi, indirizzi, porte, protocolli, frequenze e indicatori osservabili.",
+      "detail": "Il punto d’osservazione determina quali host e sessioni sono coperti; un NIDS al bordo Internet non vede automaticamente traffico che resta dentro una VLAN.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere estensione della rete con estensione del traffico realmente visto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.4.4, pagina PDF 89"
+    },
+    {
+      "id": "cyber-c06-q037",
+      "topicId": "cyber-c06-t06",
+      "question": "Quali vantaggi offre un NIDS rispetto a molti agenti HIDS?",
+      "answer": "Può monitorare numerosi host da uno o più punti di rete e usare risorse dedicate, senza caricare gli host osservati.",
+      "detail": "Un sensore passivo riceve copie di pacchetti e può essere poco intrusivo sul traffico di produzione, ma non è necessariamente invisibile agli amministratori dell’infrastruttura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire il NIDS universale o del tutto invisibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.4.5, pagina PDF 90"
+    },
+    {
+      "id": "cyber-c06-q038",
+      "topicId": "cyber-c06-t06",
+      "question": "Quali limiti principali presenta un NIDS?",
+      "answer": "Traffico cifrato, assenza di contesto sui processi, perdita di pacchetti e punti ciechi dovuti al posizionamento.",
+      "detail": "Può osservare metadati anche con TLS, ma non ordinariamente il contenuto applicativo; traffico fuori dal percorso e packet drop riducono la copertura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che TLS rende invisibili anche indirizzi, tempi e volumi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.4.6, pagina PDF 90"
+    },
+    {
+      "id": "cyber-c06-q039",
+      "topicId": "cyber-c06-t06",
+      "question": "Perché il NIDS può non accorgersi di un processo malevolo avviato sul server?",
+      "answer": "Perché osserva la rete, non necessariamente le operazioni del sistema operativo.",
+      "detail": "Un processo locale senza traffico significativo non genera obbligatoriamente indicatori di rete. La correlazione con HIDS aiuta a colmare tale lacuna.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuirgli visibilità completa su file e processi locali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.4.6, pagina PDF 90"
+    },
+    {
+      "id": "cyber-c06-q040",
+      "topicId": "cyber-c06-t06",
+      "question": "Come opera una piattaforma IDS ibrida?",
+      "answer": "Combina eventi di host e rete e cerca relazioni temporali e logiche fra le diverse evidenze.",
+      "detail": "Un flusso sospetto segnalato dal NIDS insieme all’avvio di un processo anomalo sull’HIDS dello stesso server può rafforzare l’ipotesi investigativa. Ma correlazione non equivale a causalità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare «confermato» un attacco sulla sola simultaneità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.4.7, pagina PDF 90"
+    },
+    {
+      "id": "cyber-c06-q041",
+      "topicId": "cyber-c06-t06",
+      "question": "Quali condizioni sono necessarie per correlare HIDS e NIDS affidabilmente?",
+      "answer": "Timestamp sincronizzati, identificativi coerenti, normalizzazione, conoscenza dei flussi legittimi e copertura delle sorgenti.",
+      "detail": "IP dinamici, fusi orari errati e perdita di eventi possono suggerire falsi legami. La progettazione deve definire retention, manutenzione e responsabilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non correlare sorgenti con orologi o identità disallineati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.4.7, pagina PDF 90"
+    },
+    {
+      "id": "cyber-c06-q042",
+      "topicId": "cyber-c06-t07",
+      "question": "Quali sono le due famiglie fondamentali di rilevamento IDS presentate dal docente?",
+      "answer": "Signature-based detection e anomaly-based detection.",
+      "detail": "La prima confronta con pattern noti; la seconda cerca deviazioni da una baseline. Non sono una classificazione basata sul posizionamento HIDS/NIDS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere metodo di analisi e tipo di sensore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5, pagina PDF 90"
+    },
+    {
+      "id": "cyber-c06-q043",
+      "topicId": "cyber-c06-t07",
+      "question": "Come funziona la signature-based detection?",
+      "answer": "Confronta eventi osservati con firme, regole, pattern o indicatori riconosciuti come sospetti o malevoli.",
+      "detail": "Può comprendere campi di protocollo, sequenze di pacchetti e comportamenti, non solo confronto esatto di byte. Gli allarmi sono spesso interpretabili se le firme sono appropriate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurla sempre a una scansione letterale di stringhe.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.1, pagina PDF 91"
+    },
+    {
+      "id": "cyber-c06-q044",
+      "topicId": "cyber-c06-t07",
+      "question": "Quali sono i vantaggi e i limiti delle firme IDS?",
+      "answer": "Buona interpretabilità dei pattern conosciuti; difficoltà su varianti sconosciute, necessità di aggiornamenti e possibili falsi positivi.",
+      "detail": "Una firma troppo generica può attivarsi su traffico lecito; una firma troppo specifica può perdere versioni modificate di un comportamento malevolo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare una firma attivata come prova di compromissione avvenuta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.1, pagina PDF 91"
+    },
+    {
+      "id": "cyber-c06-q045",
+      "topicId": "cyber-c06-t07",
+      "question": "Che cos’è una baseline in anomaly detection?",
+      "answer": "Un modello del comportamento atteso, usato per individuare deviazioni rilevanti nei dati osservati.",
+      "detail": "Può usare soglie, statistiche, modelli multivariati o machine learning. Una variazione di traffico può avere cause ostili o legittime, come backup e aggiornamenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare automaticamente «anomalo» a «malevolo».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.2, pagina PDF 91"
+    },
+    {
+      "id": "cyber-c06-q046",
+      "topicId": "cyber-c06-t07",
+      "question": "Quali problemi può creare una baseline non aggiornata?",
+      "answer": "Può generare falsi allarmi durante cambiamenti legittimi oppure non evidenziare attività ostili mimetizzate nel comportamento normale.",
+      "detail": "Stagionalità, nuove applicazioni e mutamenti operativi introducono drift; occorrono verifica, aggiornamento e supervisione del modello.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la baseline fissa e valida per sempre.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.2, pagina PDF 91"
+    },
+    {
+      "id": "cyber-c06-q047",
+      "topicId": "cyber-c06-t07",
+      "question": "In che cosa consiste la correlazione contestuale degli eventi?",
+      "answer": "Nel collegare segnali che, presi isolatamente, possono essere deboli ma insieme suggeriscono uno scenario di sicurezza.",
+      "detail": "Esempio: ripetuti accessi negati, creazione di un account privilegiato e comunicazioni inattese. Servono dati affidabili e allineamento temporale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere correlazione di eventi con dimostrazione causale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.3, pagina PDF 91"
+    },
+    {
+      "id": "cyber-c06-q048",
+      "topicId": "cyber-c06-t07",
+      "question": "Che cosa aggiunge l’analisi dello stato di un protocollo alle firme statiche?",
+      "answer": "Interpreta se sequenze e comportamenti rispettano il funzionamento atteso della comunicazione.",
+      "detail": "Consente di analizzare il contesto di una sessione oltre ai singoli pacchetti isolati; resta dipendente dalla qualità e dalla completezza della telemetria.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che un singolo pacchetto descriva sempre l’intera sessione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.3, pagina PDF 91"
+    },
+    {
+      "id": "cyber-c06-q049",
+      "topicId": "cyber-c06-t08",
+      "question": "Che cosa sono veri positivi, falsi positivi, veri negativi e falsi negativi in un IDS?",
+      "answer": "TP: malevolo con allarme; FP: legittimo con allarme; TN: legittimo senza allarme; FN: malevolo senza allarme.",
+      "detail": "I quattro casi formano la matrice di confusione. FP e FN hanno costi differenti e incidono su precisione, sensibilità e sostenibilità del SOC.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare falso positivo (rumore) con falso negativo (mancata rilevazione).",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.4, pagina PDF 91"
+    },
+    {
+      "id": "cyber-c06-q050",
+      "topicId": "cyber-c06-t08",
+      "question": "Qual è la formula della precision di un IDS e cosa misura?",
+      "answer": "Precision = TP/(TP + FP): la quota degli allarmi positivi che corrisponde realmente a eventi malevoli.",
+      "detail": "Elevata precision riduce il carico delle indagini inutili; richiede denominatore non nullo. Non indica da sola quante minacce siano state mancate.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\mathrm{Precision}=\\frac{TP}{TP+FP}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non usare TP/(TP+FN): quello è il recall.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.4, pagina PDF 91"
+    },
+    {
+      "id": "cyber-c06-q051",
+      "topicId": "cyber-c06-t08",
+      "question": "Qual è la formula del recall o sensibilità e come si interpreta?",
+      "answer": "Recall = TP/(TP + FN): la frazione degli eventi malevoli realmente individuati.",
+      "detail": "Un recall elevato significa poche minacce mancate rispetto al totale delle minacce presenti, ma non implica che gli allarmi siano tutti corretti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\mathrm{Recall}=\\frac{TP}{TP+FN}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non interpretare il recall come percentuale degli allarmi affidabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.4, pagina PDF 91"
+    },
+    {
+      "id": "cyber-c06-q052",
+      "topicId": "cyber-c06-t08",
+      "question": "Perché più sensibilità può aumentare la fatica da allarme (alert fatigue)?",
+      "answer": "Soglie aggressive possono individuare più eventi malevoli ma generare molti falsi positivi da verificare.",
+      "detail": "Gli analisti possono saturarsi e dedicare meno attenzione agli eventi realmente critici. La decisione sulle soglie deve considerare capacità del SOC, rischi e impatto aziendale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fissare le soglie guardando solo il recall.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.4, pagina PDF 91"
+    },
+    {
+      "id": "cyber-c06-q053",
+      "topicId": "cyber-c06-t08",
+      "question": "Nel caso di 10.000 eventi con 100 malevoli, 90 rilevati e 190 falsi allarmi, quali sono TP, FN, FP e TN?",
+      "answer": "TP=90, FN=10, FP=190, TN=9.710.",
+      "detail": "I 9.900 eventi legittimi comprendono 190 falsi positivi e 9.710 veri negativi. Il totale degli allarmi è 280.",
+      "example": "100 − 90 = 10 FN; 9.900 − 190 = 9.710 TN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non contare i 190 FP come eventi malevoli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.5, pagina PDF 92"
+    },
+    {
+      "id": "cyber-c06-q054",
+      "topicId": "cyber-c06-t08",
+      "question": "Nel caso numerico del manuale, quanto valgono recall e precision?",
+      "answer": "Recall 90%; precision circa 32,1%.",
+      "detail": "Recall=90/100; precision=90/(90+190)=90/280. Quasi due terzi degli allarmi positivi riguardano eventi non malevoli, nonostante la buona capacità di individuare le minacce.",
+      "example": "Un SOC deve verificare 280 allarmi per 90 eventi malevoli identificati.",
+      "formulas": [
+        {
+          "latex": "\\mathrm{Recall}=\\frac{90}{90+10}=0{,}90"
+        },
+        {
+          "latex": "\\mathrm{Precision}=\\frac{90}{90+190}\\approx0{,}3214"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non presentare il 90% di recall come 90% di affidabilità degli allarmi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.5, pagina PDF 92"
+    },
+    {
+      "id": "cyber-c06-q055",
+      "topicId": "cyber-c06-t08",
+      "question": "Qual è l’insegnamento manageriale del caso precision 32,1% e recall 90%?",
+      "answer": "L’efficacia non si giudica dal solo tasso di rilevamento, ma anche da costo dei falsi allarmi, tempi e capacità di analisi.",
+      "detail": "Un sistema che segnala molte minacce può comunque sovraccaricare il SOC. Servono priorità, filtraggio contestuale e verifica delle soglie in base al rischio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare i numeri della matrice di confusione come fini a sé stessi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.5, pagina PDF 92"
+    },
+    {
+      "id": "cyber-c06-q056",
+      "topicId": "cyber-c06-t08",
+      "question": "Quali tre benefici della rilevazione IDS sono richiamati dalle slide?",
+      "answer": "Possibile riduzione dei danni, effetto deterrente e informazioni utili per rafforzare le difese.",
+      "detail": "Il beneficio si realizza soltanto se l’allarme alimenta procedure operative con responsabilità, analisi, raccolta prove e capacità di intervento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non installare un IDS senza assegnare chi deve gestirne gli allarmi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.6, pagina PDF 92"
+    },
+    {
+      "id": "cyber-c06-q057",
+      "topicId": "cyber-c06-t08",
+      "question": "Quali decisioni organizzative devono seguire un allarme IDS?",
+      "answer": "Chi lo riceve, chi lo valida, quando si escala, quali prove si conservano e quali misure di risposta sono autorizzate.",
+      "detail": "La detection è una capacità organizzativa prima ancora che un prodotto: senza triage e response l’IDS osserva ma produce scarso valore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere generazione dell’alert con gestione dell’incidente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.5.6, pagina PDF 92"
+    },
+    {
+      "id": "cyber-c06-q058",
+      "topicId": "cyber-c06-t09",
+      "question": "Che differenza esiste tra NIDS passivo e componente inline?",
+      "answer": "Il passivo analizza una copia del traffico; l’inline è sul percorso reale che il traffico deve attraversare.",
+      "detail": "Un sensore passivo non blocca direttamente soltanto osservando. Un dispositivo inline con capacità preventive può impedire pacchetti o sessioni ed è funzionalmente vicino a un NIPS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che qualunque NIDS passivo può scartare i pacchetti della connessione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.6, pagina PDF 92"
+    },
+    {
+      "id": "cyber-c06-q059",
+      "topicId": "cyber-c06-t09",
+      "question": "Quale impatto sull’operatività può avere il posizionamento inline?",
+      "answer": "Può introdurre latenza e diventare un punto di indisponibilità o rallentamento del percorso di comunicazione.",
+      "detail": "Servono dimensionamento, verifica del throughput e del comportamento in caso di guasto; questo rischio è diverso da quello di un sensore puramente passivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere inline soltanto perché «blocca di più».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.6, pagina PDF 92"
+    },
+    {
+      "id": "cyber-c06-q060",
+      "topicId": "cyber-c06-t09",
+      "question": "Che cosa sono un network TAP e una porta SPAN?",
+      "answer": "Strumenti per fornire copie di traffico a sensori di monitoraggio: TAP dal collegamento, SPAN tramite mirroring dello switch.",
+      "detail": "Entrambi richiedono definire direzioni, VLAN e capacità. Lo SPAN può perdere pacchetti in caso di overload o configurazioni sbagliate; anche il TAP richiede adeguate risorse a valle.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che la copia di rete sia completa in qualsiasi condizione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.6.1, pagina PDF 92"
+    },
+    {
+      "id": "cyber-c06-q061",
+      "topicId": "cyber-c06-t09",
+      "question": "Perché una cattura incompleta può compromettere l’IDS?",
+      "answer": "Perché il sensore può perdere pacchetti necessari a ricostruire sessioni, protocolli o sequenze sospette.",
+      "detail": "Il problema non riguarda soltanto la performance: lacune nella cattura possono produrre errori di interpretazione, mancata detection o falsi allarmi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non misurare la qualità del sensore senza valutare packet drop.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.6.1, pagina PDF 92"
+    },
+    {
+      "id": "cyber-c06-q062",
+      "topicId": "cyber-c06-t09",
+      "question": "Che cosa significano fail-open e fail-closed per un dispositivo IPS inline?",
+      "answer": "Fail-open privilegia il passaggio del traffico se il controllo fallisce; fail-closed blocca per privilegiare la protezione.",
+      "detail": "Sono scelte progettuali con impatti diversi su disponibilità e sicurezza. Devono essere esplicitate, documentate e verificate rispetto alla criticità del servizio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dare per scontato che tutti i prodotti adottino lo stesso default.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.6.2, pagina PDF 92"
+    },
+    {
+      "id": "cyber-c06-q063",
+      "topicId": "cyber-c06-t09",
+      "question": "Come si decide fra fail-open e fail-closed?",
+      "answer": "In base a conseguenze del guasto, rischio dell’accesso non controllato e requisiti di continuità del servizio.",
+      "detail": "Un servizio essenziale può richiedere continuità anche a controllo degradato; su un confine che protegge dati critici può essere preferibile bloccare. Non esiste regola universalmente valida.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non decidere per slogan ignorando il sistema concreto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.6.2, pagina PDF 93"
+    },
+    {
+      "id": "cyber-c06-q064",
+      "topicId": "cyber-c06-t09",
+      "question": "Quali sono i punti di collocazione tipici di un sensore NIDS?",
+      "answer": "Confine Internet, DMZ–LAN, segmenti sensibili, ingressi VPN, rete utenti–server e collegamenti cloud.",
+      "detail": "Si deve scegliere in funzione dei flussi e delle minacce che si desidera osservare, documentando i punti ciechi. Non basta scegliere il collegamento con traffico più alto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che un unico sensore al perimetro copra tutto il traffico interno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.6.3, pagina PDF 93"
+    },
+    {
+      "id": "cyber-c06-q065",
+      "topicId": "cyber-c06-t09",
+      "question": "Qual è il compromesso fra mettere un NIDS prima o dopo il firewall?",
+      "answer": "Prima vede anche tentativi poi respinti; dopo osserva meglio ciò che supera il filtro, ma non tutti gli attacchi bloccati.",
+      "detail": "La collocazione influenza volume di rumore, necessità di capacità e tipo di evidenza. Più sensori possono fornire prospettive differenti, se le duplicazioni sono gestibili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che «dopo» sia sempre la posizione migliore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.6.3, pagina PDF 93"
+    },
+    {
+      "id": "cyber-c06-q066",
+      "topicId": "cyber-c06-t09",
+      "question": "Che cosa vede un NIDS su traffico HTTPS senza accesso alla terminazione TLS?",
+      "answer": "Può vedere caratteristiche di rete e metadati disponibili, ma non ordinariamente il payload HTTP protetto da TLS.",
+      "detail": "Indirizzi, tempi, volumi e alcuni metadati rimangono osservabili. Per esaminare HTTP servono log applicativi o sensori in punti autorizzati dopo la terminazione, proteggendo comunque il tratto successivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare tutto il traffico cifrato completamente invisibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.6.4, pagina PDF 93"
+    },
+    {
+      "id": "cyber-c06-q067",
+      "topicId": "cyber-c06-t09",
+      "question": "Quali domande chiariscono se il contenuto di un tunnel HTTPS/VPN è ispezionabile?",
+      "answer": "Dove inizia la cifratura, dove termina e in quale punto del percorso si trova il sensore?",
+      "detail": "Un sensore all’esterno di una VPN vede il tunnel cifrato; dopo la terminazione può avere visibilità diversa. Ogni decifratura o registrazione va autorizzata e gestita con requisiti di sicurezza e privacy.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre l’ispezione in chiaro senza considerare legittimità, protezione e minimizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.6.4, pagina PDF 93"
+    },
+    {
+      "id": "cyber-c06-q068",
+      "topicId": "cyber-c06-t10",
+      "question": "Che cos’è un SIEM e come differisce da un NIDS?",
+      "answer": "Un SIEM centralizza e correla log e allarmi di molte fonti; un NIDS rileva segnali sul traffico osservato nella rete.",
+      "detail": "Il SIEM può ricevere NIDS, HIDS, eventi applicativi, autenticazioni, firewall e telemetria cloud; non coincide con il singolo sensore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarti che il SIEM ispezioni sempre direttamente ogni pacchetto di rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.7, pagina PDF 93"
+    },
+    {
+      "id": "cyber-c06-q069",
+      "topicId": "cyber-c06-t10",
+      "question": "Che cos’è un SOC e perché non coincide con il SIEM?",
+      "answer": "Il SOC è una funzione organizzativa composta da persone, processi e strumenti che monitorano, analizzano e rispondono agli incidenti.",
+      "detail": "Il SIEM è una tecnologia di supporto. Installare una piattaforma senza analisti, procedure e capacità di intervento non equivale ad avere un SOC operativo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare «SOC» come sinonimo di software SIEM.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.7, pagina PDF 93"
+    },
+    {
+      "id": "cyber-c06-q070",
+      "topicId": "cyber-c06-t10",
+      "question": "Perché il logging deve essere progettato come controllo di sicurezza?",
+      "answer": "Per ricostruire gli eventi, verificare le responsabilità e individuare attività anomale o compromissioni.",
+      "detail": "Servono integrità, accessi ristretti, tempi di retention, controllo del flusso, timestamp affidabili e protezione dei dati personali. Non basta scrivere file di log localmente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere più volume di log con maggiore qualità della detection.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.7.1, pagina PDF 93"
+    },
+    {
+      "id": "cyber-c06-q071",
+      "topicId": "cyber-c06-t10",
+      "question": "Quali eventi meritano particolare attenzione nel logging di applicazioni aziendali?",
+      "answer": "Accessi amministrativi, cambi privilegi, autenticazioni fallite, operazioni sensibili, export inattesi, variazioni di configurazione ed errori di validazione.",
+      "detail": "Gli input non fidati devono essere gestiti senza log injection; password, token e altri segreti non devono essere registrati indiscriminatamente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere valori sensibili nei log solo per agevolare debug.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.7.1, pagina PDF 93"
+    },
+    {
+      "id": "cyber-c06-q072",
+      "topicId": "cyber-c06-t10",
+      "question": "Che cos’è il triage di un allarme?",
+      "answer": "La valutazione iniziale per stabilire credibilità, gravità, priorità e assegnazione dell’analisi o risposta.",
+      "detail": "Si verifica la regola scattata, gli eventi originari, l’asset, il contesto, eventuali change autorizzati e gli eventi correlati, prima di classificare il caso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare la priorità sulla sola numerosità degli alert.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.7.2, pagina PDF 93"
+    },
+    {
+      "id": "cyber-c06-q073",
+      "topicId": "cyber-c06-t10",
+      "question": "Perché l’importanza dell’asset influisce sulla priorità di un allarme?",
+      "answer": "Perché un evento isolato su un componente critico può avere conseguenze maggiori di molti tentativi già respinti su servizi meno sensibili.",
+      "detail": "Il triage deve combinare attendibilità del segnale, valore dell’asset, esposizione, probabilità e impatto dello scenario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non basarsi soltanto sul campo severity prodotto automaticamente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.7.2, pagina PDF 93"
+    },
+    {
+      "id": "cyber-c06-q074",
+      "topicId": "cyber-c06-t10",
+      "question": "Che cosa significa catena di custodia delle evidenze digitali?",
+      "answer": "Documentare raccolta, soggetti, tempi, strumenti e successive operazioni per poter ricostruire affidabilmente la storia delle prove.",
+      "detail": "Log, immagini disco e dump di memoria devono essere protetti da modifiche; gli hash aiutano a verificare integrità, ma non sostituiscono le procedure.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che avere un hash basta a dimostrare da chi provenga una prova.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.7.3, pagina PDF 94"
+    },
+    {
+      "id": "cyber-c06-q075",
+      "topicId": "cyber-c06-t10",
+      "question": "Perché un hash dell’immagine disco non è da solo una completa prova forense?",
+      "answer": "Perché controlla la coerenza dei byte, non documenta chi ha acquisito i dati, in quali condizioni e come sono stati custoditi.",
+      "detail": "La robustezza dell’indagine richiede registrazioni delle operazioni, accessi controllati, conservazione e possibilità di riprodurre le verifiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere integrità tecnica con completa tracciabilità della custodia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.7.3, pagina PDF 94"
+    },
+    {
+      "id": "cyber-c06-q076",
+      "topicId": "cyber-c06-t10",
+      "question": "Quale prospettiva introduce l’aggiornamento NIST SP 800-61 Rev. 3 richiamato dal manuale?",
+      "answer": "Integra l’incident response nella gestione organizzativa del rischio e nelle funzioni del CSF 2.0.",
+      "detail": "Preparazione, ruoli, comunicazioni, continuità, recupero e miglioramento dei controlli non sono solo questioni tecniche successive all’attacco. Il manuale segnala questo come integrazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre la risposta agli incidenti al solo spegnimento di un server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.7.4, pagina PDF 94"
+    },
+    {
+      "id": "cyber-c06-q077",
+      "topicId": "cyber-c06-t11",
+      "question": "Che cosa si intende per deception in cybersecurity?",
+      "answer": "L’impiego controllato di risorse o elementi esca per attirare, deviare o rendere osservabile un’interazione sospetta.",
+      "detail": "Un’esca collocata in una zona non usata dalla produzione può segnalare attività inattese, ma deve essere isolata e monitorata per non incrementare il rischio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare dati di produzione reali come esca senza adeguate protezioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.8, pagina PDF 94"
+    },
+    {
+      "id": "cyber-c06-q078",
+      "topicId": "cyber-c06-t11",
+      "question": "Che differenza c’è tra honeypot e decoy nel linguaggio del corso?",
+      "answer": "Honeypot è tipicamente una risorsa o host esca controllato; decoy è un elemento simulato di un sistema di deception.",
+      "detail": "La slide distingue l’host singolo dai decoy automatizzati, ma nella pratica le categorie si sovrappongono. Entrambi servono a rilevare o studiare interazioni sospette.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre una separazione tecnica universalmente rigida.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.8, pagina PDF 94"
+    },
+    {
+      "id": "cyber-c06-q079",
+      "topicId": "cyber-c06-t11",
+      "question": "Come si distinguono honeypot a bassa e alta interazione?",
+      "answer": "Il primo simula funzionalità limitate; il secondo permette interazioni più realistiche, spesso in ambienti isolati.",
+      "detail": "Bassa interazione riduce la superficie di rischio ma produce meno informazioni; alta interazione può fornire evidenze dettagliate, con maggiori costi e pericoli da contenere.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che l’alta interazione sia sempre preferibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.8.1, pagina PDF 94"
+    },
+    {
+      "id": "cyber-c06-q080",
+      "topicId": "cyber-c06-t11",
+      "question": "Quali benefici e rischi accompagnano un honeypot?",
+      "answer": "Benefici: osservare attività ostili e raccogliere informazioni; rischi: costi, falsi allarmi e possibile uso dell’esca compromessa per altri attacchi.",
+      "detail": "Servono isolamento, controllo delle connessioni in uscita, logging, monitoraggio e autorizzazione aziendale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collegare un’esca senza vincoli direttamente a sistemi critici.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.8.2, pagina PDF 94"
+    },
+    {
+      "id": "cyber-c06-q081",
+      "topicId": "cyber-c06-t11",
+      "question": "Perché limitare il traffico in uscita da un honeypot è un controllo essenziale?",
+      "answer": "Per impedire che, dopo la compromissione, l’esca venga usata come base di attacco verso altre risorse.",
+      "detail": "L’isolamento va concepito rispetto ai flussi reali e ai permessi, non solo all’etichetta «rete di test».",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che il nome honeypot lo renda innocuo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.8.2, pagina PDF 94"
+    },
+    {
+      "id": "cyber-c06-q082",
+      "topicId": "cyber-c06-t11",
+      "question": "Come dovrebbe essere interpretato un allarme proveniente da un honeypot?",
+      "answer": "Come segnale investigativo potenzialmente interessante, da confrontare con collocazione e attività autorizzate.",
+      "detail": "Scanner interni, monitoraggio errato e test di sicurezza possono provocare falsi allarmi. Una risorsa che nessuno dovrebbe usare può avere valore, ma non rende superflua la verifica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare come compromissione certa ogni accesso all’esca.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.8.3, pagina PDF 95"
+    },
+    {
+      "id": "cyber-c06-q083",
+      "topicId": "cyber-c06-t11",
+      "question": "Perché la deception non può sostituire firewall, patching e controllo degli accessi?",
+      "answer": "Perché un’esca produce telemetria ma non impedisce di per sé lo sfruttamento delle risorse aziendali reali.",
+      "detail": "La deception integra defense in depth insieme a segmentazione, aggiornamenti, backup, monitoraggio e capacità di risposta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere osservazione di un avversario con protezione dei sistemi di produzione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.8.4, pagina PDF 95"
+    },
+    {
+      "id": "cyber-c06-q084",
+      "topicId": "cyber-c06-t12",
+      "question": "Che cos’è un firewall?",
+      "answer": "Un componente software, hardware o virtuale che controlla flussi di rete in base a una policy, autorizzandoli, bloccandoli o registrandoli.",
+      "detail": "Può usare indirizzi, porte, protocolli, interfacce, zone, stato di connessione e, secondo il prodotto, dati applicativi. La funzione caratteristica è l’enforcement della policy sui flussi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare il firewall all’antivirus o alla sicurezza del codice.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9, pagina PDF 95"
+    },
+    {
+      "id": "cyber-c06-q085",
+      "topicId": "cyber-c06-t12",
+      "question": "Quali informazioni può utilizzare una regola firewall?",
+      "answer": "Sorgente, destinazione, protocollo, porte, interfacce, zona, direzione, stato della connessione e talvolta identità o dettagli applicativi.",
+      "detail": "Il set reale dipende dal dispositivo e dal livello d’ispezione; le regole devono riflettere scambi giustificati fra asset.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che tutti i firewall vedano identità utente o payload TLS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9, pagina PDF 95"
+    },
+    {
+      "id": "cyber-c06-q086",
+      "topicId": "cyber-c06-t12",
+      "question": "Perché un firewall non rende sicuro un servizio web che pubblica?",
+      "answer": "Perché una comunicazione ammessa può comunque trasportare input malevolo verso codice vulnerabile.",
+      "detail": "SQL injection, XSS, autorizzazioni difettose o credenziali abusate richiedono protezioni applicative e controlli sugli endpoint, non soltanto regole IP/porta.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 5: SQL injection e XSS"
+      ],
+      "mistakes": "Non sostituire la correzione di SQLi con l’apertura esclusiva della porta 443.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9, pagina PDF 95"
+    },
+    {
+      "id": "cyber-c06-q087",
+      "topicId": "cyber-c06-t12",
+      "question": "Quali sono le tre famiglie classiche di firewall richiamate dalle slide?",
+      "answer": "Packet filtering, stateful inspection e application-level gateway.",
+      "detail": "La distinzione riguarda le capacità: esame intestazioni, memoria dello stato dei flussi e intermediazione/ispezione di protocolli applicativi. I prodotti moderni possono combinarle.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattarle come categorie commerciali mutuamente esclusive.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.1, pagina PDF 95"
+    },
+    {
+      "id": "cyber-c06-q088",
+      "topicId": "cyber-c06-t12",
+      "question": "Come funziona il packet filtering?",
+      "answer": "Permette o nega traffico valutando principalmente intestazioni IP e di trasporto, come indirizzi, protocolli e porte.",
+      "detail": "È relativamente semplice ed efficiente, ma la porta non identifica in modo certo l’applicazione o la legittimità di una richiesta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che ogni pacchetto TCP 443 sia innocuo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.1, pagina PDF 95"
+    },
+    {
+      "id": "cyber-c06-q089",
+      "topicId": "cyber-c06-t12",
+      "question": "Qual è il limite principale di un packet filter che controlla solo indirizzi e porte?",
+      "answer": "Non analizza necessariamente la semantica dell’operazione applicativa né può garantire che il servizio pubblicato sia sicuro.",
+      "detail": "Un protocollo può usare porte non convenzionali e traffico malevolo può transitare su porte ammesse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare porta e applicazione in modo rigido.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.1, pagina PDF 95"
+    },
+    {
+      "id": "cyber-c06-q090",
+      "topicId": "cyber-c06-t12",
+      "question": "Che cos’è la stateful inspection?",
+      "answer": "Il filtraggio con memoria dello stato dei flussi, capace di riconoscere il traffico di risposta associato a comunicazioni autorizzate.",
+      "detail": "Una state table contiene informazioni sui flussi in corso. Rispetto a regole completamente stateless, è più facile consentire risposte senza aprire nuovi accessi dall’esterno.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che mantenere lo stato significhi ispezionare automaticamente tutto il contenuto applicativo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.1, pagina PDF 96"
+    },
+    {
+      "id": "cyber-c06-q091",
+      "topicId": "cyber-c06-t12",
+      "question": "Quali problemi operativi introduce la state table?",
+      "answer": "Consumo memoria, gestione timeout, possibile saturazione e problemi con percorsi asimmetrici.",
+      "detail": "Per UDP, privo di connessione, il firewall può registrare associazioni di flusso e timer; lo stato non equivale in quel caso a una connessione TCP.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che UDP abbia un handshake analogo a TCP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.1, pagina PDF 96"
+    },
+    {
+      "id": "cyber-c06-q092",
+      "topicId": "cyber-c06-t12",
+      "question": "Che cos’è un application-level gateway (ALG)?",
+      "answer": "Un intermediario/proxy capace di comprendere e verificare aspetti di uno o più protocolli applicativi.",
+      "detail": "Può ricevere la connessione del client, eseguire controlli e crearne una distinta verso il server. Offre visibilità più ricca ma maggiore complessità e dipendenza dal protocollo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare ogni proxy come automaticamente capace di proteggere da ogni attacco web.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.1, pagina PDF 96"
+    },
+    {
+      "id": "cyber-c06-q093",
+      "topicId": "cyber-c06-t12",
+      "question": "Che cosa caratterizza un Next-Generation Firewall (NGFW)?",
+      "answer": "La combinazione di diverse funzioni, potenzialmente stateful, riconoscimento applicazioni e IDS/IPS, secondo il prodotto concreto.",
+      "detail": "È una categoria industriale, non uno standard di capacità identiche; occorre verificare protocollo supportato, ispezione e limiti con traffico cifrato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non giudicare il livello di sicurezza dal solo nome commerciale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.2, pagina PDF 96"
+    },
+    {
+      "id": "cyber-c06-q094",
+      "topicId": "cyber-c06-t12",
+      "question": "Che cos’è un Web Application Firewall (WAF) e cosa non sostituisce?",
+      "answer": "Un controllo specializzato nell’analisi del traffico web HTTP/HTTPS, che può mitigare richieste sospette ma non sostituisce codice e autorizzazioni sicuri.",
+      "detail": "Può usare regole su parametri, header o richieste e deve essere opportunamente collocato. Per SQLi rimangono necessari query parametrizzate e privilegi minimi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che WAF = correzione definitiva della SQL injection.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.2, pagina PDF 96"
+    },
+    {
+      "id": "cyber-c06-q095",
+      "topicId": "cyber-c06-t13",
+      "question": "Che cos’è una firewall policy?",
+      "answer": "Un insieme coerente di regole che definisce quali comunicazioni sono ammesse o negate fra sistemi e zone, con motivazioni e responsabilità.",
+      "detail": "Parte dall’inventario dei flussi necessari: soggetto, servizio, protocolli, destinazioni e scopo. Le regole vanno mantenute, verificate e riesaminate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non iniziare da una regola «allow all» senza requisiti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.3, pagina PDF 96"
+    },
+    {
+      "id": "cyber-c06-q096",
+      "topicId": "cyber-c06-t13",
+      "question": "Come si applica deny by default a una policy firewall?",
+      "answer": "I flussi non espressamente autorizzati sono negati, salvo eccezioni deliberate e documentate.",
+      "detail": "È la traduzione del minimo privilegio nelle comunicazioni. Per non bloccare servizi leciti occorre identificare prima le dipendenze e gestire le eccezioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare deny by default come divieto di ogni comunicazione necessaria.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.3, pagina PDF 96"
+    },
+    {
+      "id": "cyber-c06-q097",
+      "topicId": "cyber-c06-t13",
+      "question": "Quale approccio permette di costruire una matrice di regole firewall leggibile e verificabile?",
+      "answer": "Elencare sorgente, destinazione, servizio/porta e decisione motivata per ogni flusso indispensabile.",
+      "detail": "Per un portale si può consentire Internet→proxy, proxy→app, app→DB, negando Internet→DB e amministrazioni generiche. Le porte devono corrispondere alla configurazione reale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare esempi di porta come valori obbligatori universali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.4, pagina PDF 96"
+    },
+    {
+      "id": "cyber-c06-q098",
+      "topicId": "cyber-c06-t13",
+      "question": "Quali flussi sono ammessi nel caso didattico del portale con reverse proxy, application server e database?",
+      "answer": "Internet→proxy TCP 443; proxy→app TCP 8443 di esempio; app→DB TCP 1521 di esempio.",
+      "detail": "Il manuale nega invece qualunque accesso Internet→database e accessi amministrativi non previsti dalla rete utenti. L’ordine delle regole può incidere sull’esito secondo il prodotto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rendere raggiungibile il database direttamente dall’esterno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.4, pagina PDF 97"
+    },
+    {
+      "id": "cyber-c06-q099",
+      "topicId": "cyber-c06-t13",
+      "question": "Perché l’ordine delle regole firewall può essere decisivo?",
+      "answer": "Perché molti apparati usano priorità o ordine: una regola generica permissiva può essere applicata prima di quella restrittiva.",
+      "detail": "Occorre conoscere la semantica del dispositivo, testare conflitti e riesaminare regole obsolete o eccezioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere che la sola presenza di una deny rule ne garantisca l’efficacia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.4, pagina PDF 97"
+    },
+    {
+      "id": "cyber-c06-q100",
+      "topicId": "cyber-c06-t13",
+      "question": "Quale problema genera il logging indiscriminato di ogni pacchetto bloccato?",
+      "answer": "Può produrre volumi elevati, costi di archiviazione e rumore che rendono più difficile vedere gli eventi importanti.",
+      "detail": "La policy di registrazione deve essere proporzionata e filtrata per preservare la qualità senza annullare la visibilità su attacchi rilevanti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare «logga tutto sempre» come scelta priva di costi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.4, pagina PDF 97"
+    },
+    {
+      "id": "cyber-c06-q101",
+      "topicId": "cyber-c06-t13",
+      "question": "Qual è la differenza fra ingress filtering ed egress filtering?",
+      "answer": "Il primo controlla il traffico in ingresso a una zona; il secondo quello in uscita.",
+      "detail": "L’egress filtering può limitare C2, destinazioni inattese ed esfiltrazione da server compromessi, ma va coordinato con aggiornamenti e servizi aziendali necessari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proteggere soltanto il perimetro inbound.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.5, pagina PDF 97"
+    },
+    {
+      "id": "cyber-c06-q102",
+      "topicId": "cyber-c06-t13",
+      "question": "Come si progetta egress filtering senza interrompere le funzioni aziendali lecite?",
+      "answer": "Si mappano i flussi in uscita necessari, si stabiliscono destinazioni e protocolli consentiti e si gestiscono eccezioni controllate.",
+      "detail": "Servizi come DNS, aggiornamenti, verifica certificati o sincronizzazione temporale possono richiedere comunicazioni: la policy deve essere verificata operativamente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non bloccare tutto senza analizzare le dipendenze.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.5, pagina PDF 97"
+    },
+    {
+      "id": "cyber-c06-q103",
+      "topicId": "cyber-c06-t13",
+      "question": "Come un firewall stateful permette le risposte a una connessione HTTPS avviata dalla LAN?",
+      "answer": "Conserva una voce per il flusso TCP uscente autorizzato e riconosce le risposte che appartengono a quella connessione.",
+      "detail": "Non serve una regola generica che autorizzi connessioni esterne arbitrarie verso gli host interni; una nuova connessione estranea non ha stato valido e viene bloccata se non prevista da altre regole.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il traffico di ritorno con una nuova connessione inbound consentita.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.6, pagina PDF 97"
+    },
+    {
+      "id": "cyber-c06-q104",
+      "topicId": "cyber-c06-t13",
+      "question": "Perché NAT e firewall non sono la stessa cosa?",
+      "answer": "NAT traduce indirizzi e talvolta porte; il firewall applica una policy che consente o vieta flussi.",
+      "detail": "Possono coesistere sul medesimo apparato, ma port forwarding o indirizzi privati non sostituiscono autorizzazioni e restrizioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare «c’è NAT» come dimostrazione di protezione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.7, pagina PDF 97"
+    },
+    {
+      "id": "cyber-c06-q105",
+      "topicId": "cyber-c06-t13",
+      "question": "Quali limiti non vengono risolti dal solo firewall perimetrale?",
+      "answer": "Traffico fuori dal suo percorso, payload cifrato non decifrabile, vulnerabilità applicative, abusi di credenziali valide e movimenti interni non controllati.",
+      "detail": "Regole errate, tunnel abusati e vie alternative possono ridurne l’efficacia. Servono defense in depth, controlli sugli endpoint, identità e segmentazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare «rete sicura» soltanto perché esiste un firewall.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.9.8, pagina PDF 97"
+    },
+    {
+      "id": "cyber-c06-q106",
+      "topicId": "cyber-c06-t14",
+      "question": "Perché il controllo del traffico non dovrebbe risiedere in un solo apparato perimetrale?",
+      "answer": "Perché le compromissioni possono originarsi anche all’interno e i flussi fra host o zone possono non attraversare il firewall esterno.",
+      "detail": "Host firewall, regole fra segmenti, protezione delle identità e controllo applicativo integrano il perimetro tradizionale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ragionare soltanto in termini Internet-verso-azienda.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.10, pagina PDF 97"
+    },
+    {
+      "id": "cyber-c06-q107",
+      "topicId": "cyber-c06-t14",
+      "question": "Che cos’è un bastion host?",
+      "answer": "Un sistema irrobustito, esposto a zone meno fidate o collocato in un punto sensibile per offrire funzioni di accesso o mediazione controllate.",
+      "detail": "Richiede hardening, riduzione servizi, aggiornamenti, monitoraggio e amministrazione rigorosa. Nella slide è rappresentato come prima linea dall’esterno, ma non è necessariamente il firewall perimetrale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare automaticamente bastion host, router e firewall.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.10.1, pagina PDF 98"
+    },
+    {
+      "id": "cyber-c06-q108",
+      "topicId": "cyber-c06-t14",
+      "question": "Quali misure di hardening sono tipiche di un bastion host?",
+      "answer": "Disabilitare servizi superflui, ridurre il software esposto, controllare accessi amministrativi, applicare patch e monitorare attività e configurazione.",
+      "detail": "La maggiore esposizione impone un controllo continuo. In alcuni contesti un jump server media l’accesso amministrativo, ma il termine non è sempre sinonimo di bastion.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non installare applicazioni non indispensabili su un host di accesso sensibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.10.1, pagina PDF 98"
+    },
+    {
+      "id": "cyber-c06-q109",
+      "topicId": "cyber-c06-t14",
+      "question": "Qual è la funzione di un host-based firewall?",
+      "answer": "Controlla le comunicazioni del singolo server, PC o altro dispositivo sulla base di regole locali.",
+      "detail": "Può impedire accessi interni non necessari anche se il perimetro Internet è stato superato, limitando porte amministrative o servizi non usati. Va coordinato con le policy di rete.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che la LAN sia affidabile e che il firewall locale sia superfluo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.10.2, pagina PDF 98"
+    },
+    {
+      "id": "cyber-c06-q110",
+      "topicId": "cyber-c06-t14",
+      "question": "Che differenza esiste tra segmentazione e microsegmentazione?",
+      "answer": "La segmentazione divide in zone con policy differenti; la microsegmentazione applica regole più granulari a workload, servizi o gruppi ristretti.",
+      "detail": "Entrambe limitano il movimento laterale se i collegamenti sono effettivamente filtrati; la sola topologia non basta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare microsegmentazione una VLAN senza controlli sulle comunicazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.10.3, pagina PDF 98"
+    },
+    {
+      "id": "cyber-c06-q111",
+      "topicId": "cyber-c06-t14",
+      "question": "Perché una VLAN non garantisce da sola la sicurezza fra reparti?",
+      "answer": "Perché separa domini di livello 2 ma il routing fra VLAN può rendere le comunicazioni nuovamente possibili.",
+      "detail": "Per imporre confini occorrono policy, ACL e/o firewall L3 appropriate; utenti e database devono avere flussi minimi autorizzati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere separazione Ethernet con autorizzazione applicativa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.10.3, pagina PDF 98"
+    },
+    {
+      "id": "cyber-c06-q112",
+      "topicId": "cyber-c06-t14",
+      "question": "Quale regola concreta difende il database di un sistema gestionale dal movimento laterale?",
+      "answer": "Permettere accesso al DB soltanto agli application server e agli amministratori autorizzati, non a qualunque postazione utente.",
+      "detail": "Combinare firewall fra zone, host firewall, credenziali applicative con privilegi minimi e controlli sull’autorizzazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non autorizzare tutta la rete utenti verso la porta del database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.10.3, pagina PDF 98"
+    },
+    {
+      "id": "cyber-c06-q113",
+      "topicId": "cyber-c06-t15",
+      "question": "Che cos’è una DMZ (Demilitarized Zone)?",
+      "answer": "Una zona di rete intermedia e controllata per servizi raggiungibili da reti meno fidate, separata dalle risorse interne più sensibili.",
+      "detail": "Può ospitare reverse proxy, servizi web pubblici, gateway VPN o DNS pubblici. È una zona esposta e potenzialmente compromettibile, non automaticamente attendibile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare un server in DMZ come intrinsecamente sicuro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.11, pagina PDF 98"
+    },
+    {
+      "id": "cyber-c06-q114",
+      "topicId": "cyber-c06-t15",
+      "question": "Qual è il principale vantaggio architetturale di una DMZ?",
+      "answer": "Separare l’accessibilità pubblica dei servizi dall’accesso alle risorse interne, limitando i flussi tra zone.",
+      "detail": "Anche se un servizio esposto viene compromesso, regole strette possono limitare i percorsi successivi verso LAN e database.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non consentire dalla DMZ accesso generalizzato alla LAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.11, pagina PDF 98"
+    },
+    {
+      "id": "cyber-c06-q115",
+      "topicId": "cyber-c06-t15",
+      "question": "Quali tre zone compongono lo schema didattico di una DMZ?",
+      "answer": "Internet, DMZ dei servizi pubblicati e LAN/reti interne con risorse non pubbliche.",
+      "detail": "A ciascun confine si definiscono flussi autorizzati: Internet solo ai servizi pubblicati, DMZ solo a risorse interne necessarie, gestione amministrativa attraverso percorsi specifici.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre un unico schema fisico: policy e isolamento contano più del numero di apparati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.11.1, pagina PDF 99"
+    },
+    {
+      "id": "cyber-c06-q116",
+      "topicId": "cyber-c06-t15",
+      "question": "Come si possono realizzare i controlli fra Internet, DMZ e LAN?",
+      "answer": "Con firewall a più interfacce, apparati distinti o controlli virtuali, purché i flussi fra zone siano esplicitamente autorizzati.",
+      "detail": "Una zona è una separazione logica e operativa: la presenza o meno di un firewall fisico dedicato dipende dall’architettura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non misurare l’isolamento dal numero assoluto di dispositivi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.11.1, pagina PDF 99"
+    },
+    {
+      "id": "cyber-c06-q117",
+      "topicId": "cyber-c06-t15",
+      "question": "Ricostruisci il flusso sicuro di un portale web con database non pubblico.",
+      "answer": "Client Internet → reverse proxy HTTPS in DMZ → application server in zona applicativa → database in zona dati protetta.",
+      "detail": "Ogni transizione ammette soltanto protocolli e destinazioni necessari; il database non deve essere pubblicato direttamente né raggiungibile dai client esterni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collocare il database sulla stessa superficie pubblica del reverse proxy.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.11.2, pagina PDF 99"
+    },
+    {
+      "id": "cyber-c06-q118",
+      "topicId": "cyber-c06-t15",
+      "question": "Quali misure completano la separazione delle zone nel portale aziendale?",
+      "answer": "Hardening del proxy, protezione dei canali interni, autenticazione e autorizzazioni sull’applicazione, minimi privilegi sul DB e monitoraggio dei log.",
+      "detail": "La DMZ limita percorsi, ma non corregge vulnerabilità del codice o errori di gestione delle identità e dei dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere che esporre solo HTTPS basti per proteggere le informazioni economiche.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.11.2, pagina PDF 99"
+    },
+    {
+      "id": "cyber-c06-q119",
+      "topicId": "cyber-c06-t15",
+      "question": "In che cosa differiscono reverse proxy e WAF in una DMZ?",
+      "answer": "Il reverse proxy riceve e inoltra richieste web; il WAF applica controlli specifici sul traffico applicativo HTTP/HTTPS.",
+      "detail": "Le funzioni possono coesistere nello stesso prodotto, ma la terminazione TLS e il routing non significano automaticamente disponibilità di controlli WAF.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare ogni reverse proxy un WAF.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.11.3, pagina PDF 99"
+    },
+    {
+      "id": "cyber-c06-q120",
+      "topicId": "cyber-c06-t15",
+      "question": "Quali errori tipici rendono poco efficace una DMZ?",
+      "answer": "Database troppo esposto, regole ampie DMZ→LAN e amministrazione remota non protetta, oltre a credenziali condivise e log solo sul server esposto.",
+      "detail": "Occorrono flussi stretti, accessi amministrativi dedicati e forti, log remoti protetti, aggiornamenti e isolamento dei dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare una DMZ come rete «fidata» da cui si può raggiungere tutto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.11.4, pagina PDF 99"
+    },
+    {
+      "id": "cyber-c06-q121",
+      "topicId": "cyber-c06-t15",
+      "question": "Perché un gateway VPN può essere collocato in DMZ e quali controlli servono?",
+      "answer": "È un punto di ingresso controllato per utenti remoti e può essere esposto senza conferire automaticamente fiducia completa alla LAN.",
+      "detail": "Dopo autenticazione occorrono MFA quando previsto, policy post-VPN, segmentazione, monitoraggio e autorizzazione per risorsa. La collocazione dipende dall’architettura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assimilare connessione VPN ad accesso illimitato alla rete aziendale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.11.5, pagina PDF 99"
+    },
+    {
+      "id": "cyber-c06-q122",
+      "topicId": "cyber-c06-t16",
+      "question": "Che cos’è un Intrusion Prevention System (IPS)?",
+      "answer": "Un sistema che riconosce attività sospette e può applicare azioni attive di blocco o contenimento secondo policy.",
+      "detail": "Può scartare pacchetti, interrompere flussi o integrarsi con apparati di rete. Il punto distintivo rispetto a un IDS è la capacità d’intervento, non necessariamente il diverso algoritmo di analisi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che l’IPS è soltanto un IDS con più allarmi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.12, pagina PDF 99"
+    },
+    {
+      "id": "cyber-c06-q123",
+      "topicId": "cyber-c06-t16",
+      "question": "Perché non tutti gli IDS possono diventare IPS semplicemente attivando un’opzione?",
+      "answer": "Perché bloccare il traffico può richiedere una posizione inline o collegamenti con componenti autorizzati a imporre policy.",
+      "detail": "Un sensore passivo che vede solo copie dei pacchetti non può impedire direttamente l’inoltro degli originali senza una capacità di enforcement.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere osservazione e controllo del percorso reale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.12, pagina PDF 99"
+    },
+    {
+      "id": "cyber-c06-q124",
+      "topicId": "cyber-c06-t16",
+      "question": "Che cosa distingue HIPS e NIPS?",
+      "answer": "HIPS interviene sulle azioni locali dell’host; NIPS controlla traffico e connessioni lungo il percorso di rete.",
+      "detail": "HIPS può ostacolare processi o accessi a risorse; NIPS può scartare pacchetti o bloccare flussi. La separazione segue il punto di osservazione ed enforcement.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare HIPS/NIPS come sinonimi di signature/anomaly.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.12.1, pagina PDF 100"
+    },
+    {
+      "id": "cyber-c06-q125",
+      "topicId": "cyber-c06-t16",
+      "question": "Come si collegano HIPS e prodotti moderni di endpoint protection/EDR/XDR?",
+      "answer": "Alcuni prodotti integrano monitoraggio degli endpoint e azioni preventive, ma le etichette commerciali non cancellano la distinzione osservare/bloccare.",
+      "detail": "Un prodotto può combinare isolamento host, raccolta forense, blocco processi e generazione di allarmi; occorre verificare le singole capacità effettive.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre dal nome EDR che tutte le funzioni preventive siano sempre disponibili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.12.1, pagina PDF 100"
+    },
+    {
+      "id": "cyber-c06-q126",
+      "topicId": "cyber-c06-t16",
+      "question": "Quali reazioni può attuare un IPS?",
+      "answer": "Scarto di pacchetti, interruzione di sessioni, aggiornamento policy, quarantena file e isolamento host, quando dispone dei collegamenti necessari.",
+      "detail": "Azione e ambito dipendono da sensori, autorizzazioni e architettura. Blocchi mal calibrati possono interrompere flussi aziendali legittimi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire ad ogni NIPS il controllo diretto dei file di ogni endpoint.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.12.2, pagina PDF 100"
+    },
+    {
+      "id": "cyber-c06-q127",
+      "topicId": "cyber-c06-t16",
+      "question": "Quali costi e rischi introduce la prevenzione automatica inline?",
+      "answer": "Latenza, consumo di risorse, necessità di alta disponibilità e falsi positivi che possono bloccare servizi leciti.",
+      "detail": "Una procedura prudente prova nuove firme in sola osservazione, verifica i risultati e abilita il blocco con criteri e limiti controllati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il blocco automatico sempre migliore del monitoraggio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.12.3, pagina PDF 100"
+    },
+    {
+      "id": "cyber-c06-q128",
+      "topicId": "cyber-c06-t16",
+      "question": "Come adottare una nuova regola di blocco su flussi aziendali critici?",
+      "answer": "Valutarla inizialmente in modalità osservazione, misurare falsi positivi e prestazioni, poi abilitarla secondo una policy verificata.",
+      "detail": "Le misure automatiche devono bilanciare protezione e disponibilità, con controlli sul throughput e sul comportamento in caso di guasto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attivare una firma restrittiva senza test sui casi leciti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.12.3, pagina PDF 100"
+    },
+    {
+      "id": "cyber-c06-q129",
+      "topicId": "cyber-c06-t16",
+      "question": "Che cos’è una sandbox usata per l’analisi di contenuti sospetti?",
+      "answer": "Un ambiente isolato in cui eseguire e osservare codice o file non fidati per individuare attività potenzialmente malevole.",
+      "detail": "Può integrare analisi dinamica e statica. Deve impedire propagazione verso la produzione e limitare interazioni esterne non autorizzate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eseguire campioni sospetti direttamente sull’host produttivo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.12.4, pagina PDF 100"
+    },
+    {
+      "id": "cyber-c06-q130",
+      "topicId": "cyber-c06-t16",
+      "question": "Quali limiti presenta l’analisi in sandbox?",
+      "answer": "Malware capace di riconoscere la sandbox, comportamenti ritardati e impossibilità di riprodurre sempre fedelmente l’ambiente reale.",
+      "detail": "Un risultato negativo significa che non è stata osservata una minaccia nelle condizioni del test, non che il file sia sicuramente innocuo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare assenza di segnale alla prova di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.12.4, pagina PDF 100"
+    },
+    {
+      "id": "cyber-c06-q131",
+      "topicId": "cyber-c06-t16",
+      "question": "Come si distinguono firewall, IDS, IPS, WAF e SIEM per funzione prevalente?",
+      "answer": "Firewall applica policy di flussi; IDS segnala; IPS può bloccare attività malevole; WAF analizza richieste web; SIEM correla eventi di molte fonti.",
+      "detail": "I ruoli logici possono convivere nello stesso prodotto o essere distribuiti. Ognuno ha limiti: il firewall non corregge bug, il SIEM dipende dalla telemetria e l’IPS può generare interruzioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere un prodotto sulla sola sovrapposizione di sigle commerciali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.12.5, pagina PDF 100"
+    },
+    {
+      "id": "cyber-c06-q132",
+      "topicId": "cyber-c06-t16",
+      "question": "Perché all’orale conviene spiegare la funzione logica prima del dispositivo commerciale?",
+      "answer": "Perché un apparato può integrare più funzioni e la medesima funzione può essere distribuita in più componenti.",
+      "detail": "Per distinguere controlli è più corretto chiedere quali evidenze acquisiscono, quale decisione formulano e quale azione possono imporre.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere firewall, IDS e IPS necessariamente come tre scatole fisiche.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.12.5, pagina PDF 101"
+    },
+    {
+      "id": "cyber-c06-q133",
+      "topicId": "cyber-c06-t17",
+      "question": "Quali sono gli asset e gli obiettivi del caso enterprise del Capitolo 6?",
+      "answer": "Reverse proxy pubblico, application server, database economico, accessi amministrativi e log; proteggere riservatezza, integrità e disponibilità.",
+      "detail": "Le proprietà possono avere priorità diverse per servizio: la disponibilità pesa sul portale, l’integrità dei dati economici sul database. Il caso è un’integrazione applicativa del manuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere i controlli senza considerare il valore degli asset.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.13, pagina PDF 101"
+    },
+    {
+      "id": "cyber-c06-q134",
+      "topicId": "cyber-c06-t17",
+      "question": "Quali zone vengono separate nel caso integrato?",
+      "answer": "Internet, DMZ, rete applicativa, rete dati, rete di management e rete di monitoraggio.",
+      "detail": "I client esterni raggiungono il proxy HTTPS; il server applicativo raggiunge il DB solo per necessità; il jump server governa la gestione e la raccolta log è protetta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mescolare piano di amministrazione, produzione e monitoraggio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.13.1, pagina PDF 101"
+    },
+    {
+      "id": "cyber-c06-q135",
+      "topicId": "cyber-c06-t17",
+      "question": "Perché l’inventario dei flussi è necessario prima di configurare i firewall?",
+      "answer": "Per stabilire esattamente quali comunicazioni sono indispensabili e quali devono essere vietate.",
+      "detail": "Una matrice approvata consente di negare Internet→DB, limitare gli accessi amministrativi e verificare periodicamente le regole e le dipendenze.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire l’analisi dei flussi con un generico «tutto dietro firewall».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.13.1, pagina PDF 101"
+    },
+    {
+      "id": "cyber-c06-q136",
+      "topicId": "cyber-c06-t17",
+      "question": "Dove si collocano firewall, NIDS, HIDS, IPS e SIEM nel caso enterprise?",
+      "answer": "Firewall ai confini delle zone; NIDS ai confini esterno/interno; HIDS sugli host critici; IPS sui flussi scelti; SIEM per correlare log e allarmi.",
+      "detail": "I punti di monitoraggio sono selezionati per coprire servizi pubblicati, comunicazioni laterali, processi locali e transizioni verso il database. Non serve necessariamente un prodotto distinto per ogni funzione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare il NIDS al solo ingresso Internet se i flussi interni sono critici.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.13.2, pagina PDF 101"
+    },
+    {
+      "id": "cyber-c06-q137",
+      "topicId": "cyber-c06-t17",
+      "question": "Qual è la sequenza di alert del caso didattico 09:02–09:07?",
+      "answer": "09:02 NIDS connessioni insolite; 09:04 firewall blocchi; 09:05 HIDS processo inatteso; 09:07 SIEM correla il caso.",
+      "detail": "La vicinanza temporale richiede indagine, ma non prova che le connessioni NIDS abbiano causato il processo rilevato dall’HIDS.",
+      "example": "Il SOC avvia formalmente l’indagine alle 09:10.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare correlazione cronologica in certezza causale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.13.3, pagina PDF 101"
+    },
+    {
+      "id": "cyber-c06-q138",
+      "topicId": "cyber-c06-t17",
+      "question": "Quali informazioni essenziali compaiono nel log sintetico di correlazione del manuale?",
+      "answer": "Tempo e fuso, sorgente NIDS/FW/HIDS/SIEM/SOC, asset o zona, evento, severità, decisione e identificativo del caso.",
+      "detail": "Il CASE-042 collega i segnali del proxy, della DMZ e dell’application server. Le righe sono inventate per esercitazione, non uno standard di prodotto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare la sintassi dei log di esempio come formato obbligatorio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.13.4, pagina PDF 102"
+    },
+    {
+      "id": "cyber-c06-q139",
+      "topicId": "cyber-c06-t17",
+      "question": "Nel caso CASE-042 che cosa indica la riga firewall delle 09:04?",
+      "answer": "Ventotto tentativi negati dalla zona DMZ verso db-01.",
+      "detail": "Il log mostra l’applicazione di una policy di blocco: non dimostra da solo un accesso avvenuto né che la sorgente abbia effettivamente compromesso l’application server.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare action=deny come accesso riuscito.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.13.4, pagina PDF 102"
+    },
+    {
+      "id": "cyber-c06-q140",
+      "topicId": "cyber-c06-t17",
+      "question": "Quali passaggi seguire per il triage del caso NIDS–FW–HIDS?",
+      "answer": "Validare log e tempi, identificare gli asset, verificare change autorizzati, confrontare sorgenti, stimare impatto, rispondere e ripristinare.",
+      "detail": "Il SOC deve valutare prove di accessi illeciti, modifiche dati o esfiltrazione; solo con evidenze sufficienti applica contenimento e recovery proporzionati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non isolare immediatamente ogni host senza considerare impatto sul servizio e policy.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.13.5, pagina PDF 102"
+    },
+    {
+      "id": "cyber-c06-q141",
+      "topicId": "cyber-c06-t17",
+      "question": "Quali ruoli svolgono rispettivamente NIDS, firewall, HIDS, SIEM e SOC nel caso?",
+      "answer": "NIDS rileva segnali di rete; firewall registra i flussi consentiti o negati; HIDS rileva attività locali; SIEM correla; SOC interpreta e coordina la risposta.",
+      "detail": "Gli strumenti hanno punti di vista complementari; nessuno ricostruisce da solo l’intera vicenda.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere SIEM o SOC come sostituti degli endpoint e dei controlli di rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.13.5, pagina PDF 102"
+    },
+    {
+      "id": "cyber-c06-q142",
+      "topicId": "cyber-c06-t17",
+      "question": "Come integrare la visibilità quando i collegamenti dell’architettura sono cifrati?",
+      "answer": "Acquisendo log del reverse proxy e dell’applicazione e telemetria sugli endpoint o nei punti autorizzati di terminazione.",
+      "detail": "Il NIDS lungo un canale TLS osserva metadati ma non il contenuto HTTP cifrato; proteggere il canale è comunque necessario e i log vanno minimizzati e protetti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre di disattivare TLS per permettere l’ispezione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.13.6, pagina PDF 102"
+    },
+    {
+      "id": "cyber-c06-q143",
+      "topicId": "cyber-c06-t17",
+      "question": "Quali errori renderebbero inefficace l’architettura di difesa del caso?",
+      "answer": "Database pubblico, account applicativo amministratore, log solo locali, policy permissive, HIDS obsoleti, IPS sottodimensionato e DMZ con accesso libero alla LAN.",
+      "detail": "La coerenza tra asset, flussi e controlli è più importante della quantità di prodotti; ogni eccezione crea esposizione da motivare e riesaminare.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare efficace un progetto solo perché include molti apparati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.13.7, pagina PDF 103"
+    },
+    {
+      "id": "cyber-c06-q144",
+      "topicId": "cyber-c06-t18",
+      "question": "Perché una valutazione di difesa cyber deve essere anche gestionale?",
+      "answer": "Perché occorre scegliere controlli sostenibili in rapporto a rischio, valore degli asset, prestazioni e impatto sui processi.",
+      "detail": "La decisione comprende costi, continuità, responsabilità e capacità di risposta, non soltanto l’elenco delle funzionalità tecniche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere il prodotto «più completo» senza analisi del costo totale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.14, pagina PDF 103"
+    },
+    {
+      "id": "cyber-c06-q145",
+      "topicId": "cyber-c06-t18",
+      "question": "Quali KPI sono indicati dal manuale per valutare una difesa IDS/IPS e perimetrale?",
+      "answer": "Copertura asset, visibilità dei flussi, qualità TP/FP, packet drop, MTTD, MTTR, impatto sulle risorse e qualità delle policy.",
+      "detail": "Sono metriche complementari: un sensore può avere buoni alert ma non monitorare segmenti critici. CPU, latenza, throughput e storage misurano il costo operativo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il numero di sensori installati come misura unica di efficacia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.14.1, pagina PDF 103"
+    },
+    {
+      "id": "cyber-c06-q146",
+      "topicId": "cyber-c06-t18",
+      "question": "Che cosa significano MTTD e MTTR e quale cautela richiede il secondo acronimo?",
+      "answer": "MTTD è il tempo medio per rilevare; MTTR può significare tempo medio per rispondere, riparare o recuperare, secondo il contesto.",
+      "detail": "I confronti richiedono definizioni identiche. Un MTTD calcolato soltanto sugli incidenti rilevati ignora quelli completamente mancati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare due MTTR con definizioni diverse senza precisarlo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.14.1, pagina PDF 103"
+    },
+    {
+      "id": "cyber-c06-q147",
+      "topicId": "cyber-c06-t18",
+      "question": "Perché throughput, latenza, packet drop e copertura dei flussi sono indicatori distinti?",
+      "answer": "Misurano rispettivamente volume gestibile, ritardo introdotto, perdita di eventi e quota di traffico effettivamente osservata.",
+      "detail": "Un NIDS veloce può comunque avere punti ciechi; un IPS con bassa perdita può introdurre latenza. Gli indicatori vanno valutati insieme ai requisiti del servizio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare prestazioni hardware sinonimo di visibilità completa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.14.1, pagina PDF 103"
+    },
+    {
+      "id": "cyber-c06-q148",
+      "topicId": "cyber-c06-t18",
+      "question": "Perché archiviare ogni pacchetto e ogni evento non è sempre conveniente?",
+      "answer": "Può comportare costi elevati, sovraccarico analitico e rischi di privacy o esposizione di dati non necessari.",
+      "detail": "La telemetria va progettata per rischio, obblighi e capacità: metadati e log per alcuni casi, acquisizioni più dettagliate secondo procedure autorizzate in altri.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere massima raccolta con massima efficacia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.14.2, pagina PDF 103"
+    },
+    {
+      "id": "cyber-c06-q149",
+      "topicId": "cyber-c06-t18",
+      "question": "Perché bisogna monitorare lo stato degli stessi sensori e canali di log?",
+      "answer": "Per riconoscere perdita di visibilità causata da agenti disattivati, code bloccate, sensori offline o orologi non sincronizzati.",
+      "detail": "Una piattaforma che mostra soltanto allarmi esistenti può non vedere che una sorgente critica ha smesso di inviare dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare il silenzio del sensore come assenza di minacce.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.14.2, pagina PDF 103"
+    },
+    {
+      "id": "cyber-c06-q150",
+      "topicId": "cyber-c06-t18",
+      "question": "Come si confrontano qualitativamente i costi di HIDS, NIDS, IPS e deception?",
+      "answer": "HIDS richiede gestione su molti host; NIDS hardware e punti di cattura; IPS alta disponibilità e cura dei falsi blocchi; deception isolamento e manutenzione.",
+      "detail": "Il costo totale comprende installazione, licenze, training, infrastruttura, gestione, aggiornamenti, storage e possibili interruzioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non guardare il solo prezzo di acquisto o abbonamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.14.3, pagina PDF 103"
+    },
+    {
+      "id": "cyber-c06-q151",
+      "topicId": "cyber-c06-t18",
+      "question": "Qual è il criterio economico corretto per selezionare un insieme di controlli?",
+      "answer": "Massimizzare la riduzione di rischio compatibile con asset, budget, continuità e risorse disponibili.",
+      "detail": "Il prodotto più potente isolatamente non produce necessariamente la migliore architettura. Servono analisi dei flussi, costi totali e rischi residui.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere potenza commerciale con beneficio netto per l’organizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.14.3, pagina PDF 103"
+    },
+    {
+      "id": "cyber-c06-q152",
+      "topicId": "cyber-c06-t18",
+      "question": "Perché la rete moderna rende insufficiente il solo firewall centrale?",
+      "answer": "Utenti remoti, SaaS e cloud possono comunicare senza attraversare il singolo perimetro aziendale.",
+      "detail": "Occorrono policy vicine alle risorse, segmentazione dei workload, verifica delle identità e controlli sui dispositivi. Zero Trust integra, non sostituisce necessariamente, firewall e monitoraggio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fondare la fiducia sul solo luogo in cui si trova il client.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.14.4, pagina PDF 103"
+    },
+    {
+      "id": "cyber-c06-q153",
+      "topicId": "cyber-c06-t19",
+      "question": "In una risposta orale, come distingui sinteticamente evento, allarme e incidente?",
+      "answer": "Evento è un fatto osservato; allarme è una segnalazione automatica; incidente è una condizione di sicurezza da gestire secondo policy.",
+      "detail": "La distinzione evita di considerare intrusione riuscita ogni log anomalo, e collega rilevazione e triage.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fare coincidere i tre termini.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.15, pagina PDF 104"
+    },
+    {
+      "id": "cyber-c06-q154",
+      "topicId": "cyber-c06-t19",
+      "question": "Come distingui IDS e IPS rispetto alla capacità di intervento?",
+      "answer": "L’IDS analizza e segnala; l’IPS può applicare blocchi o contenimenti.",
+      "detail": "Un IDS passivo vede copie del traffico; un IPS inline può scartare pacchetti ma rischia di interrompere servizi legittimi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire il blocco diretto ai sensori passivi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.15, pagina PDF 104"
+    },
+    {
+      "id": "cyber-c06-q155",
+      "topicId": "cyber-c06-t19",
+      "question": "Quali due coppie di concetti sul rilevamento non devono essere confuse?",
+      "answer": "HIDS/NIDS indicano dove si osserva; signature/anomaly indicano con quale criterio si rileva.",
+      "detail": "Un HIDS o NIDS può applicare firme e anomalie. Il manuale richiede di distinguere punto di osservazione e metodo di analisi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che un HIDS sia sempre anomaly-based.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.15, pagina PDF 104"
+    },
+    {
+      "id": "cyber-c06-q156",
+      "topicId": "cyber-c06-t19",
+      "question": "Quale errore si evita distinguendo firewall e NAT?",
+      "answer": "NAT traduce indirizzi e talvolta porte; firewall autorizza o vieta flussi secondo policy.",
+      "detail": "Le funzioni possono convivere nello stesso dispositivo ma rispondono a domande diverse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire al NAT la decisione di accesso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.15, pagina PDF 104"
+    },
+    {
+      "id": "cyber-c06-q157",
+      "topicId": "cyber-c06-t19",
+      "question": "Come confrontare firewall stateful e stateless senza confondere la sicurezza applicativa?",
+      "answer": "Lo stateless valuta pacchetti in base a regole; lo stateful conserva contesto dei flussi autorizzati.",
+      "detail": "Lo stato serve a classificare comunicazioni e risposte, non dimostra che le richieste applicative siano sicure.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare stateful inspection con validazione del contenuto web.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.15, pagina PDF 104"
+    },
+    {
+      "id": "cyber-c06-q158",
+      "topicId": "cyber-c06-t19",
+      "question": "Quale differenza essenziale separa firewall di rete e WAF?",
+      "answer": "Il firewall controlla flussi e, secondo il dispositivo, anche aspetti applicativi; il WAF è specializzato nel traffico HTTP/HTTPS.",
+      "detail": "Il WAF aiuta a mitigare richieste web, ma non sostituisce la correzione dei difetti e l’autorizzazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare al WAF come rimedio universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.15, pagina PDF 104"
+    },
+    {
+      "id": "cyber-c06-q159",
+      "topicId": "cyber-c06-t19",
+      "question": "Perché DMZ, bastion host e honeypot non sono la stessa cosa?",
+      "answer": "DMZ è una zona intermedia; bastion host è un sistema hardenizzato in posizione esposta; honeypot è un’esca per osservare attività sospette.",
+      "detail": "Le tre nozioni riguardano rispettivamente architettura, ruolo/robustezza di un host e deception; possono esistere nell’ambito di una stessa rete, con scopi distinti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare honeypot un comune server pubblico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.15, pagina PDF 104"
+    },
+    {
+      "id": "cyber-c06-q160",
+      "topicId": "cyber-c06-t19",
+      "question": "Come si distinguono SIEM e SOC in una frase precisa?",
+      "answer": "SIEM è una tecnologia di raccolta/correlazione; SOC è una funzione organizzativa di monitoraggio e risposta.",
+      "detail": "Un SOC impiega processi e analisti, e può utilizzare il SIEM come strumento; avere un software non equivale a garantire una risposta operativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire il SIEM come insieme degli operatori SOC.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.15, pagina PDF 104"
+    },
+    {
+      "id": "cyber-c06-q161",
+      "topicId": "cyber-c06-t20",
+      "question": "Che cosa significano FIM, TAP e SPAN?",
+      "answer": "FIM controlla modifiche a file critici; TAP e SPAN permettono di acquisire copie del traffico di rete.",
+      "detail": "FIM riguarda gli asset dell’host; TAP/SPAN riguardano il punto d’osservazione del NIDS. Non garantiscono autenticità di ogni evento senza ulteriori controlli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare queste sigle come termini per lo stesso tipo di sensore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.16, pagina PDF 104"
+    },
+    {
+      "id": "cyber-c06-q162",
+      "topicId": "cyber-c06-t20",
+      "question": "Che cosa significano «inline» e «stateful inspection»?",
+      "answer": "Inline colloca un controllo sul percorso reale del traffico; stateful inspection valuta i flussi tenendo memoria delle comunicazioni.",
+      "detail": "Un dispositivo può essere inline e stateful, ma le nozioni descrivono due proprietà differenti: posizione del controllo e logica della decisione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare inline e stateful come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.16, pagina PDF 104"
+    },
+    {
+      "id": "cyber-c06-q163",
+      "topicId": "cyber-c06-t20",
+      "question": "Che differenza c’è tra sensore e analizzatore di intrusioni?",
+      "answer": "Il sensore raccoglie la telemetria; l’analizzatore interpreta dati ed eventi alla ricerca di segnali sospetti.",
+      "detail": "I due ruoli possono essere sullo stesso apparato o distribuiti, ma servono entrambi per passare da osservazione a segnalazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare un file di log da solo un IDS completo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.16, pagina PDF 104"
+    },
+    {
+      "id": "cyber-c06-q164",
+      "topicId": "cyber-c06-t20",
+      "question": "Come distingui un decoy da un servizio produttivo?",
+      "answer": "Il decoy è una risorsa simulata progettata per attirare o rilevare attività sospette; un servizio di produzione svolge funzioni di business reali.",
+      "detail": "L’esca richiede isolamento specifico e non deve esporre direttamente dati e funzioni critiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un normale database produttivo come honeypot senza protezione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.16, pagina PDF 104"
+    },
+    {
+      "id": "cyber-c06-q165",
+      "topicId": "cyber-c06-t20",
+      "question": "Che cosa si intende per egress filtering e Zero Trust?",
+      "answer": "Egress filtering limita le comunicazioni in uscita; Zero Trust nega fiducia implicita basata soltanto sulla posizione di rete.",
+      "detail": "Il primo è una misura di controllo dei flussi; il secondo un approccio architetturale più ampio che comprende identità, contesto, risorsa e policy.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre Zero Trust a una singola regola firewall.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.16, pagina PDF 104"
+    },
+    {
+      "id": "cyber-c06-q166",
+      "topicId": "cyber-c06-t20",
+      "question": "Come organizzeresti una risposta completa sull’architettura IDS davanti al professore?",
+      "answer": "Definizione; fonti e sensori; analizzatori; metodi di detection; gestione dell’allarme; limiti e collegamento alla risposta.",
+      "detail": "Cita log, file e system call; differenzia HIDS e NIDS; distingue event, alert e incident; chiarisci la scelta di firme/anomalie e il ruolo del triage.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarti a dire «IDS individua hacker».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.17, pagina PDF 105"
+    },
+    {
+      "id": "cyber-c06-q167",
+      "topicId": "cyber-c06-t20",
+      "question": "Come spiegheresti la differenza fra falso positivo e falso negativo in termini di conseguenze?",
+      "answer": "FP comporta indagine o blocco non necessari; FN lascia inosservata una minaccia reale.",
+      "detail": "La gravità è contestuale: troppi FP producono alert fatigue, mentre FN su asset critici possono causare danni rilevanti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che uno dei due sia sempre il più grave.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.17, pagina PDF 105"
+    },
+    {
+      "id": "cyber-c06-q168",
+      "topicId": "cyber-c06-t20",
+      "question": "Quali aspetti citeresti per valutare una piattaforma IDS installata su moltissimi host?",
+      "answer": "Copertura effettiva, qualità dei log, gestione agenti, risorse, resistenza a manomissioni, capacità centrale e procedure di triage.",
+      "detail": "Le misure hanno costo e devono essere integrate con le responsabilità operative; si monitora anche la salute della raccolta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non misurare il successo solo dal numero di endpoint con agent installato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.17, pagina PDF 105"
+    },
+    {
+      "id": "cyber-c06-q169",
+      "topicId": "cyber-c06-t20",
+      "question": "Come motiveresti l’uso congiunto di un HIDS e di un NIDS con HTTPS?",
+      "answer": "Il NIDS vede metadati e flussi di rete; l’HIDS può osservare processi e dati locali disponibili dopo la decifratura.",
+      "detail": "Le visibilità sono complementari; la raccolta va posta nei punti autorizzati e correlata con timestamp e asset affidabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che HTTPS renda irrilevante qualsiasi NIDS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.17, pagina PDF 105"
+    },
+    {
+      "id": "cyber-c06-q170",
+      "topicId": "cyber-c06-t20",
+      "question": "Come spiegheresti l’utilità del logging centralizzato anche a un interlocutore non tecnico?",
+      "answer": "Permette di ricostruire eventi e responsabilità, individuare incidenti e conservare tracce anche se un singolo sistema viene compromesso.",
+      "detail": "L’investimento deve prevedere accessi controllati, integrità, disponibilità, capacità e processi di indagine.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare un archivio pieno di log come risposta agli incidenti già funzionante.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.17, pagina PDF 105"
+    },
+    {
+      "id": "cyber-c06-q171",
+      "topicId": "cyber-c06-t20",
+      "question": "Come risponderesti all’orale alla domanda «Dove collocheresti un NIDS?»?",
+      "answer": "Dipende dai flussi che devo vedere: bordo Internet, DMZ/LAN, VPN e segmenti sensibili sono punti da valutare.",
+      "detail": "Prima del firewall vedo più tentativi respinti, dopo il firewall i flussi ammessi; valgono limiti di capacità, cifratura e punti ciechi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere il posto «più vicino possibile» senza motivare il tipo di evidenza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.17, pagina PDF 106"
+    },
+    {
+      "id": "cyber-c06-q172",
+      "topicId": "cyber-c06-t20",
+      "question": "Quali tre punti dovresti citare quando confronti honeypot e decoy con il traffico produttivo?",
+      "answer": "La risorsa esca è intenzionale, ha valore di detection e va isolata per non diventare un vettore offensivo.",
+      "detail": "Honeypot e decoy possono sovrapporsi; un accesso inatteso va comunque confrontato con scanner autorizzati e traffico di test.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che ogni contatto con un honeypot dimostri un attacco riuscito.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.17, pagina PDF 106"
+    },
+    {
+      "id": "cyber-c06-q173",
+      "topicId": "cyber-c06-t20",
+      "question": "Come spiegheresti perché un honeypot potrebbe aumentare il rischio?",
+      "answer": "Se compromesso e con connessioni aperte può essere sfruttato per colpire sistemi aziendali o esterni.",
+      "detail": "Servono limiti ai flussi, zona isolata, logging e costi di gestione giustificati; la deception non sostituisce i controlli principali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare una risorsa-esca come intrinsecamente innocua.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.17, pagina PDF 107"
+    },
+    {
+      "id": "cyber-c06-q174",
+      "topicId": "cyber-c06-t20",
+      "question": "Quali tre tipi di firewall dovresti illustrare all’orale e con quale esempio?",
+      "answer": "Packet filter su indirizzi/porte, stateful con tabella di connessioni, ALG/proxy che interpreta il protocollo applicativo.",
+      "detail": "Per esempio, una richiesta HTTPS autorizzata usa regole IP/porta, ritorno stateful e, eventualmente, controlli sul contenuto attraverso proxy.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere i tre meccanismi come totalmente incompatibili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.17, pagina PDF 107"
+    },
+    {
+      "id": "cyber-c06-q175",
+      "topicId": "cyber-c06-t20",
+      "question": "Come giustificheresti deny by default senza compromettere il lavoro?",
+      "answer": "Parto da un inventario dei flussi necessari, autorizzo esplicitamente quelli leciti e nego gli altri, prevedendo eccezioni controllate.",
+      "detail": "Il principio minimizza l’esposizione, ma la qualità della policy richiede test, riesami e verifica di dipendenze come DNS e aggiornamenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare il principio come indiscriminata interruzione del servizio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.17, pagina PDF 107"
+    },
+    {
+      "id": "cyber-c06-q176",
+      "topicId": "cyber-c06-t20",
+      "question": "Come progettare una DMZ efficace per un’applicazione con dati riservati?",
+      "answer": "Pubblicare solo il front-end/reverse proxy, isolare application server e DB, applicare flussi stretti, controlli sugli utenti e log protetti.",
+      "detail": "Una DMZ è un confine di rete, non una cura per XSS, SQLi o credenziali compromesse; servono patching e policy di accesso oltre alla segmentazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non posizionare la zona dati direttamente nella DMZ pubblica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.17, pagina PDF 107"
+    },
+    {
+      "id": "cyber-c06-q177",
+      "topicId": "cyber-c06-t20",
+      "question": "Perché la differenza IDS/IPS è anche un problema di disponibilità e gestione del rischio?",
+      "answer": "L’IDS può segnalare senza interrompere; l’IPS può bloccare ma introduce possibili falsi blocchi, latenza e punti critici.",
+      "detail": "L’automazione va motivata dal rischio, testata e dimensionata; i controlli possono essere integrati in un medesimo prodotto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che il controllo più aggressivo sia sempre la scelta giusta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 6, §6.17, pagina PDF 107"
+    }
+  ]
+}

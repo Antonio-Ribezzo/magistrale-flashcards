@@ -1,0 +1,105 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Identità e decisione di accesso",
+      "concept": "Identità e decisione di accesso",
+      "topics": [
+        "cyber-c04-t01",
+        "cyber-c04-t02",
+        "cyber-c04-t03",
+        "cyber-c04-t04"
+      ],
+      "pages": [
+        51,
+        52
+      ],
+      "blocks": [
+        {
+          "text": "L’identità può essere verificata in fase di registrazione e autenticata in fase d’uso. L’autorizzazione decide quali operazioni il soggetto può eseguire su una risorsa. L’MFA combina fattori indipendenti, mentre l’accounting conserva evidenze delle attività."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Credenziali e sessioni",
+      "concept": "Credenziali e sessioni",
+      "topics": [
+        "cyber-c04-t05",
+        "cyber-c04-t06"
+      ],
+      "pages": [
+        53,
+        54
+      ],
+      "blocks": [
+        {
+          "text": "La sicurezza di una sessione dipende dalla gestione del suo ciclo di vita e dalla verifica server-side delle autorizzazioni. Limitare durata, rinnovare o revocare credenziali e registrare eventi significativi riduce l’esposizione."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "DAC, MAC, RBAC e ABAC",
+      "concept": "DAC, MAC, RBAC e ABAC",
+      "topics": [
+        "cyber-c04-t07",
+        "cyber-c04-t08",
+        "cyber-c04-t09",
+        "cyber-c04-t10",
+        "cyber-c04-t11",
+        "cyber-c04-t12"
+      ],
+      "pages": [
+        54,
+        55,
+        56,
+        57,
+        58
+      ],
+      "blocks": [
+        {
+          "text": "DAC delega decisioni secondo i permessi del proprietario, MAC applica una policy centralizzata, RBAC assegna diritti mediante ruoli, ABAC valuta attributi di soggetti, risorse e contesto. La scelta dipende da granularità, governance e verificabilità richiesta."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Governo delle identità e federazione",
+      "concept": "Governo delle identità e federazione",
+      "topics": [
+        "cyber-c04-t13",
+        "cyber-c04-t14",
+        "cyber-c04-t15",
+        "cyber-c04-t16"
+      ],
+      "pages": [
+        58,
+        59,
+        60
+      ],
+      "blocks": [
+        {
+          "text": "Il ciclo di vita Joiner–Mover–Leaver collega identità e diritti alle responsabilità effettive. In federazione il servizio si affida alle asserzioni di un fornitore d’identità entro un accordo di fiducia. Il single sign-on va accompagnato da controlli sull’autorizzazione e sulla revoca."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "1",
+      "to": "2",
+      "relation": "La verifica dell’identità deve continuare con controlli sulla sessione."
+    },
+    {
+      "from": "1",
+      "to": "3",
+      "relation": "Il modello di accesso determina come viene presa la decisione."
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "relation": "Ruoli e attributi dipendono da fonti attendibili e aggiornate."
+    }
+  ]
+}

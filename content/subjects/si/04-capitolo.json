@@ -1,0 +1,2786 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "si",
+  "source": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4: Progettazione logica e modello relazionale, pagine PDF 50–63. Unica fonte autorizzata; distingui contenuti delle slide, esempi originali e ipotesi didattiche.",
+  "chapter": {
+    "id": "si-c04",
+    "title": "Progettazione logica e modello relazionale",
+    "order": 4,
+    "topics": [
+      {
+        "id": "si-c04-t01",
+        "title": "Fasi della progettazione logica ed equivalenza informativa"
+      },
+      {
+        "id": "si-c04-t02",
+        "title": "Eliminazione delle generalizzazioni: tre strategie"
+      },
+      {
+        "id": "si-c04-t03",
+        "title": "Vincoli di totalità, parzialità, esclusività e sovrapposizione"
+      },
+      {
+        "id": "si-c04-t04",
+        "title": "Ristrutturazione degli attributi multivalore"
+      },
+      {
+        "id": "si-c04-t05",
+        "title": "Partizionamento verticale e accorpamento"
+      },
+      {
+        "id": "si-c04-t06",
+        "title": "Scelta delle chiavi e degli identificatori principali"
+      },
+      {
+        "id": "si-c04-t07",
+        "title": "Ridondanze: costi, benefici e mantenimento della coerenza"
+      },
+      {
+        "id": "si-c04-t08",
+        "title": "Modello relazionale: domini, schemi, istanze e tuple"
+      },
+      {
+        "id": "si-c04-t09",
+        "title": "Vincoli di integrità, chiavi primarie, candidate ed esterne"
+      },
+      {
+        "id": "si-c04-t10",
+        "title": "Mapping di entità forti e deboli"
+      },
+      {
+        "id": "si-c04-t11",
+        "title": "Mapping di associazioni molti-a-molti"
+      },
+      {
+        "id": "si-c04-t12",
+        "title": "Mapping di associazioni uno-a-molti e uno-a-uno"
+      },
+      {
+        "id": "si-c04-t13",
+        "title": "Mapping di associazioni ternarie e ricorsive"
+      },
+      {
+        "id": "si-c04-t14",
+        "title": "Documentazione, business rules e tracciabilità"
+      },
+      {
+        "id": "si-c04-t15",
+        "title": "Caso Software House del corso"
+      },
+      {
+        "id": "si-c04-t16",
+        "title": "Esempio EnerPrice e schema SQL illustrativo"
+      },
+      {
+        "id": "si-c04-t17",
+        "title": "Esercizi svolti 1–6: traduzioni e gerarchie"
+      },
+      {
+        "id": "si-c04-t18",
+        "title": "Esercizi svolti 7–12: vincoli, ternarie e ridondanze"
+      },
+      {
+        "id": "si-c04-t19",
+        "title": "Problemi A–E e venti domande di autoverifica"
+      },
+      {
+        "id": "si-c04-t20",
+        "title": "Checklist finale e impostazione della prova"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§4.1 — pagina PDF 50",
+        "cardIds": [
+          "si-c04-q001",
+          "si-c04-q002",
+          "si-c04-q003",
+          "si-c04-q008"
+        ]
+      },
+      {
+        "label": "§4.1.1 — pagina PDF 50",
+        "cardIds": [
+          "si-c04-q004",
+          "si-c04-q005"
+        ]
+      },
+      {
+        "label": "§4.1.2 — pagina PDF 51",
+        "cardIds": [
+          "si-c04-q006",
+          "si-c04-q007"
+        ]
+      },
+      {
+        "label": "§4.2 — pagina PDF 51",
+        "cardIds": [
+          "si-c04-q009",
+          "si-c04-q010"
+        ]
+      },
+      {
+        "label": "§4.2.1 — pagina PDF 51",
+        "cardIds": [
+          "si-c04-q011",
+          "si-c04-q012",
+          "si-c04-q013"
+        ]
+      },
+      {
+        "label": "§4.2.2 — pagina PDF 51",
+        "cardIds": [
+          "si-c04-q014",
+          "si-c04-q015"
+        ]
+      },
+      {
+        "label": "§4.2.3 — pagina PDF 51",
+        "cardIds": [
+          "si-c04-q016",
+          "si-c04-q017"
+        ]
+      },
+      {
+        "label": "§4.2.3 — pagina PDF 52",
+        "cardIds": [
+          "si-c04-q018",
+          "si-c04-q025"
+        ]
+      },
+      {
+        "label": "§4.2 — pagina PDF 52",
+        "cardIds": [
+          "si-c04-q019"
+        ]
+      },
+      {
+        "label": "§4.2.4 — pagina PDF 52",
+        "cardIds": [
+          "si-c04-q020",
+          "si-c04-q021",
+          "si-c04-q022",
+          "si-c04-q023",
+          "si-c04-q024"
+        ]
+      },
+      {
+        "label": "§4.3 — pagina PDF 52",
+        "cardIds": [
+          "si-c04-q026",
+          "si-c04-q027",
+          "si-c04-q028",
+          "si-c04-q029",
+          "si-c04-q030",
+          "si-c04-q031",
+          "si-c04-q032"
+        ]
+      },
+      {
+        "label": "§4.4 — pagina PDF 52",
+        "cardIds": [
+          "si-c04-q033"
+        ]
+      },
+      {
+        "label": "§4.4.1 — pagina PDF 53",
+        "cardIds": [
+          "si-c04-q034",
+          "si-c04-q035",
+          "si-c04-q036"
+        ]
+      },
+      {
+        "label": "§4.4.2 — pagina PDF 53",
+        "cardIds": [
+          "si-c04-q037",
+          "si-c04-q038"
+        ]
+      },
+      {
+        "label": "§4.4 — pagina PDF 53",
+        "cardIds": [
+          "si-c04-q039"
+        ]
+      },
+      {
+        "label": "§4.5 — pagina PDF 53",
+        "cardIds": [
+          "si-c04-q040",
+          "si-c04-q041",
+          "si-c04-q042",
+          "si-c04-q043",
+          "si-c04-q044",
+          "si-c04-q045"
+        ]
+      },
+      {
+        "label": "§4.6 — pagina PDF 53",
+        "cardIds": [
+          "si-c04-q046",
+          "si-c04-q047"
+        ]
+      },
+      {
+        "label": "§4.6 — pagina PDF 54",
+        "cardIds": [
+          "si-c04-q048",
+          "si-c04-q049",
+          "si-c04-q050",
+          "si-c04-q051",
+          "si-c04-q052",
+          "si-c04-q053",
+          "si-c04-q054"
+        ]
+      },
+      {
+        "label": "§4.7 — pagina PDF 54",
+        "cardIds": [
+          "si-c04-q055"
+        ]
+      },
+      {
+        "label": "§4.7.1 — pagina PDF 54",
+        "cardIds": [
+          "si-c04-q056",
+          "si-c04-q057"
+        ]
+      },
+      {
+        "label": "§4.7.2 — pagina PDF 54",
+        "cardIds": [
+          "si-c04-q058",
+          "si-c04-q059",
+          "si-c04-q060"
+        ]
+      },
+      {
+        "label": "§4.7.3 — pagina PDF 55",
+        "cardIds": [
+          "si-c04-q061",
+          "si-c04-q062",
+          "si-c04-q063",
+          "si-c04-q064",
+          "si-c04-q065"
+        ]
+      },
+      {
+        "label": "§4.7.4 — pagina PDF 55",
+        "cardIds": [
+          "si-c04-q066",
+          "si-c04-q067"
+        ]
+      },
+      {
+        "label": "§4.7 — pagina PDF 55",
+        "cardIds": [
+          "si-c04-q068"
+        ]
+      },
+      {
+        "label": "§4.8.1 — pagina PDF 55",
+        "cardIds": [
+          "si-c04-q069"
+        ]
+      },
+      {
+        "label": "§4.8.2 — pagina PDF 55",
+        "cardIds": [
+          "si-c04-q070",
+          "si-c04-q071",
+          "si-c04-q072",
+          "si-c04-q073"
+        ]
+      },
+      {
+        "label": "§4.8.3 — pagina PDF 55",
+        "cardIds": [
+          "si-c04-q074",
+          "si-c04-q075",
+          "si-c04-q076"
+        ]
+      },
+      {
+        "label": "§4.8 — pagina PDF 56",
+        "cardIds": [
+          "si-c04-q077",
+          "si-c04-q078",
+          "si-c04-q080"
+        ]
+      },
+      {
+        "label": "§4.8.1 — pagina PDF 56",
+        "cardIds": [
+          "si-c04-q079"
+        ]
+      },
+      {
+        "label": "§4.9.1 — pagina PDF 56",
+        "cardIds": [
+          "si-c04-q081",
+          "si-c04-q082"
+        ]
+      },
+      {
+        "label": "§4.9.2 — pagina PDF 56",
+        "cardIds": [
+          "si-c04-q083",
+          "si-c04-q084",
+          "si-c04-q085",
+          "si-c04-q086",
+          "si-c04-q087"
+        ]
+      },
+      {
+        "label": "§4.10.1 — pagina PDF 56",
+        "cardIds": [
+          "si-c04-q088",
+          "si-c04-q089",
+          "si-c04-q090",
+          "si-c04-q091",
+          "si-c04-q092",
+          "si-c04-q093",
+          "si-c04-q094"
+        ]
+      },
+      {
+        "label": "§4.10.2 — pagina PDF 57",
+        "cardIds": [
+          "si-c04-q095",
+          "si-c04-q096",
+          "si-c04-q097",
+          "si-c04-q098"
+        ]
+      },
+      {
+        "label": "§4.10.3 — pagina PDF 57",
+        "cardIds": [
+          "si-c04-q099",
+          "si-c04-q100",
+          "si-c04-q101",
+          "si-c04-q102",
+          "si-c04-q103",
+          "si-c04-q104",
+          "si-c04-q105"
+        ]
+      },
+      {
+        "label": "§4.11 — pagina PDF 57",
+        "cardIds": [
+          "si-c04-q106",
+          "si-c04-q107",
+          "si-c04-q108",
+          "si-c04-q109",
+          "si-c04-q114"
+        ]
+      },
+      {
+        "label": "§4.11.1 — pagina PDF 58",
+        "cardIds": [
+          "si-c04-q110",
+          "si-c04-q111",
+          "si-c04-q112",
+          "si-c04-q113"
+        ]
+      },
+      {
+        "label": "§4.12 — pagina PDF 58",
+        "cardIds": [
+          "si-c04-q115",
+          "si-c04-q116",
+          "si-c04-q117",
+          "si-c04-q118",
+          "si-c04-q119"
+        ]
+      },
+      {
+        "label": "§4.13 — pagina PDF 58",
+        "cardIds": [
+          "si-c04-q120",
+          "si-c04-q121",
+          "si-c04-q122",
+          "si-c04-q123",
+          "si-c04-q124"
+        ]
+      },
+      {
+        "label": "§4.13 — pagina PDF 59",
+        "cardIds": [
+          "si-c04-q125",
+          "si-c04-q126",
+          "si-c04-q127"
+        ]
+      },
+      {
+        "label": "§4.14 — pagina PDF 59",
+        "cardIds": [
+          "si-c04-q128",
+          "si-c04-q129",
+          "si-c04-q130",
+          "si-c04-q131",
+          "si-c04-q132",
+          "si-c04-q133",
+          "si-c04-q134"
+        ]
+      },
+      {
+        "label": "§4.15 — pagina PDF 59",
+        "cardIds": [
+          "si-c04-q135"
+        ]
+      },
+      {
+        "label": "§4.15 — pagina PDF 60",
+        "cardIds": [
+          "si-c04-q136",
+          "si-c04-q137",
+          "si-c04-q138",
+          "si-c04-q139"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 1 — pagina PDF 60",
+        "cardIds": [
+          "si-c04-q140",
+          "si-c04-q141"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 2 — pagina PDF 60",
+        "cardIds": [
+          "si-c04-q142",
+          "si-c04-q143"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 3 — pagina PDF 60",
+        "cardIds": [
+          "si-c04-q144"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 3 — pagina PDF 61",
+        "cardIds": [
+          "si-c04-q145"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 4 — pagina PDF 61",
+        "cardIds": [
+          "si-c04-q146"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 5 — pagina PDF 61",
+        "cardIds": [
+          "si-c04-q147",
+          "si-c04-q148"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 6 — pagina PDF 61",
+        "cardIds": [
+          "si-c04-q149",
+          "si-c04-q150"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 7 — pagina PDF 61",
+        "cardIds": [
+          "si-c04-q151",
+          "si-c04-q152"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 8 — pagina PDF 61",
+        "cardIds": [
+          "si-c04-q153",
+          "si-c04-q154"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 9 — pagina PDF 61",
+        "cardIds": [
+          "si-c04-q155"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 9 — pagina PDF 62",
+        "cardIds": [
+          "si-c04-q156"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 10 — pagina PDF 62",
+        "cardIds": [
+          "si-c04-q157",
+          "si-c04-q158"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 11 — pagina PDF 62",
+        "cardIds": [
+          "si-c04-q159",
+          "si-c04-q160"
+        ]
+      },
+      {
+        "label": "§4.16 — Esercizio 12 — pagina PDF 62",
+        "cardIds": [
+          "si-c04-q161",
+          "si-c04-q162"
+        ]
+      },
+      {
+        "label": "§4.17 — Traccia A — pagina PDF 62",
+        "cardIds": [
+          "si-c04-q163"
+        ]
+      },
+      {
+        "label": "§4.17 — Traccia B — pagina PDF 62",
+        "cardIds": [
+          "si-c04-q164"
+        ]
+      },
+      {
+        "label": "§4.17 — Traccia C — pagina PDF 62",
+        "cardIds": [
+          "si-c04-q165"
+        ]
+      },
+      {
+        "label": "§4.17 — Traccia D — pagina PDF 62",
+        "cardIds": [
+          "si-c04-q166"
+        ]
+      },
+      {
+        "label": "§4.17 — Traccia E — pagina PDF 62",
+        "cardIds": [
+          "si-c04-q167"
+        ]
+      },
+      {
+        "label": "§4.18 — pagina PDF 62",
+        "cardIds": [
+          "si-c04-q168"
+        ]
+      },
+      {
+        "label": "§4.18 — pagina PDF 63",
+        "cardIds": [
+          "si-c04-q169",
+          "si-c04-q170",
+          "si-c04-q171",
+          "si-c04-q172",
+          "si-c04-q173",
+          "si-c04-q174"
+        ]
+      },
+      {
+        "label": "§4.19 — pagina PDF 63",
+        "cardIds": [
+          "si-c04-q175",
+          "si-c04-q176",
+          "si-c04-q177",
+          "si-c04-q178",
+          "si-c04-q179",
+          "si-c04-q180",
+          "si-c04-q181"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "si-c04-q001",
+      "topicId": "si-c04-t01",
+      "question": "Che cosa si intende per progettazione logica di una base di dati?",
+      "answer": "È la trasformazione controllata dello schema concettuale E-R in uno schema logico esprimibile nel modello relazionale, preservando significato e vincoli.",
+      "detail": "Riceve anche volumi, frequenze e stime di costo quando disponibili; precede le decisioni puramente fisiche su indici e memorizzazione.",
+      "example": "Da CLIENTE e CONTRATTO in relazione 1:N si ottengono tabelle collegate da una FK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cominciare creando tabelle a intuito, ignorando l’E-R e le business rules.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.1, pagina PDF 50"
+    },
+    {
+      "id": "si-c04-q002",
+      "topicId": "si-c04-t01",
+      "question": "Qual è la sequenza metodologica delle fasi di progettazione di basi di dati?",
+      "answer": "Analisi dei requisiti → progettazione concettuale → progettazione logica → progettazione fisica.",
+      "detail": "La fase concettuale chiarisce il dominio; la logica ristruttura e traduce; la fisica sceglie l’implementazione del DBMS.",
+      "example": "Prima definisci che cosa rappresenta una simulazione, poi le sue relazioni e infine eventuali indici.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’ordine concettuale delle fasi con un divieto di riesaminarle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.1, pagina PDF 50"
+    },
+    {
+      "id": "si-c04-q003",
+      "topicId": "si-c04-t01",
+      "question": "Quali sono gli input importanti della progettazione logica oltre al diagramma E-R?",
+      "answer": "Specifiche e vincoli del dominio, tavole dei volumi, frequenze delle operazioni e valutazioni dei costi quando disponibili.",
+      "detail": "I dati quantitativi consentono di motivare ristrutturazioni e ridondanze, non di modificare arbitrariamente la semantica.",
+      "example": "Un’associazione letta spesso può indurre a confrontare due mapping equivalenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare volumi e frequenze requisiti di cardinalità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.1, pagina PDF 50"
+    },
+    {
+      "id": "si-c04-q004",
+      "topicId": "si-c04-t01",
+      "question": "Quando due schemi sono informativamente equivalenti?",
+      "answer": "Quando conservano tutte le distinzioni e informazioni significative del dominio, senza aggiungere significati errati.",
+      "detail": "L’equivalenza è semantica e non richiede forme identiche: un’associazione può diventare una tabella autonoma o una FK, se i vincoli lo consentono.",
+      "example": "CONTRATTO(id_contratto,id_cliente FK) preserva un legame CLIENTE–CONTRATTO 1:N.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere equivalenza informativa con uguaglianza del numero di tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.1.1, pagina PDF 50"
+    },
+    {
+      "id": "si-c04-q005",
+      "topicId": "si-c04-t01",
+      "question": "Perché per CLIENTE–CONTRATTO 1:N non occorre normalmente una tabella associativa?",
+      "answer": "Perché ogni contratto è collegato a un solo cliente; la FK del cliente in CONTRATTO esprime direttamente il legame.",
+      "detail": "La soluzione dipende dalle cardinalità e dall’assenza di requisiti ulteriori che richiedano una diversa entità di legame.",
+      "example": "CLIENTE(id PK); CONTRATTO(id PK,id_cliente FK) è sufficiente nello scenario del manuale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare una tabella CLIENTE_CONTRATTO per ogni associazione E-R.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.1.1, pagina PDF 50"
+    },
+    {
+      "id": "si-c04-q006",
+      "topicId": "si-c04-t01",
+      "question": "Quali sono le due fasi interne alla progettazione logica?",
+      "answer": "Ristrutturazione dello schema E-R, seguita dalla traduzione relazionale (mapping).",
+      "detail": "La prima tratta gerarchie, multivalore, accorpamenti/partizioni, identificatori e ridondanze; la seconda produce tabelle, PK, FK e vincoli.",
+      "example": "Eliminare una gerarchia è ristrutturazione; collocare una FK è mapping.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non anticipare la collocazione di PK/FK prima di aver stabilito le strutture da tradurre.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.1.2, pagina PDF 51"
+    },
+    {
+      "id": "si-c04-q007",
+      "topicId": "si-c04-t01",
+      "question": "Quali sono gli output delle due fasi?",
+      "answer": "Ristrutturazione: schema E-R ristrutturato. Traduzione: schema relazionale e documentazione dei vincoli.",
+      "detail": "Lo schema finale non è solo l’elenco delle tabelle: deve includere vincoli e ipotesi esplicite.",
+      "example": "Da una gerarchia PERSONA/DIPENDENTE ristrutturata si ottengono due relazioni legate da PK/FK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fermarti alla lista dei nomi di tabella.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.1.2, pagina PDF 51"
+    },
+    {
+      "id": "si-c04-q008",
+      "topicId": "si-c04-t01",
+      "question": "Come verificheresti la correttezza di una traduzione logica in un esercizio?",
+      "answer": "Disegnerei l’E-R di partenza, scriverei PK/FK, proverei 2–3 tuple significative e verificherei cardinalità minime e massime.",
+      "detail": "I casi di test devono includere una combinazione consentita e una vietata per ogni vincolo delicato.",
+      "example": "Verifico che una FK obbligatoria rifiuti NULL e che una 1:1 non consenta riferimenti duplicati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere una sintassi SQL valida con la correttezza semantica del modello.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.1, pagina PDF 50"
+    },
+    {
+      "id": "si-c04-q009",
+      "topicId": "si-c04-t02",
+      "question": "Perché è necessario decidere come eliminare una generalizzazione E-R?",
+      "answer": "Perché il modello relazionale di riferimento non esprime direttamente la gerarchia padre–figlie: bisogna trasformarla preservando attributi e vincoli.",
+      "detail": "La scelta dipende da totalità, esclusività, struttura degli attributi e operazioni più frequenti.",
+      "example": "OFFERTA generale con sottotipi FISSA e INDICIZZATA ammette varie traduzioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere una strategia senza analizzare le condizioni di appartenenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2, pagina PDF 51"
+    },
+    {
+      "id": "si-c04-q010",
+      "topicId": "si-c04-t02",
+      "question": "Quali sono le tre strategie di eliminazione delle generalizzazioni presentate nel manuale?",
+      "answer": "1) Accorpare le figlie nel padre. 2) Accorpare il padre nelle figlie. 3) Conservare padre e figlie collegate.",
+      "detail": "Producono schemi diversi, non necessariamente diversi significati, purché siano imposti i vincoli del dominio.",
+      "example": "Una tabella OFFERTA; due tabelle FISSA/INDICIZZATA; oppure OFFERTA più due tabelle specializzate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamarle tre sintassi alternative di un medesimo comando SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2, pagina PDF 51"
+    },
+    {
+      "id": "si-c04-q011",
+      "topicId": "si-c04-t02",
+      "question": "Come funziona la strategia «figlie nel padre»?",
+      "answer": "Si usa una sola relazione con attributi comuni, specifici dei sottotipi e spesso un discriminante TIPO.",
+      "detail": "Il discriminante e i vincoli condizionali impediscono combinazioni incoerenti dei campi dei sottotipi.",
+      "example": "OFFERTA(id,nome,tipo,prezzo_fisso,indice,spread).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pretendere che prezzo_fisso e spread siano sempre contemporaneamente valorizzati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.1, pagina PDF 51"
+    },
+    {
+      "id": "si-c04-q012",
+      "topicId": "si-c04-t02",
+      "question": "Quali vantaggi e svantaggi comporta una sola tabella per una gerarchia?",
+      "answer": "Vantaggi: interrogazioni generali semplici, meno join, discriminante facilmente disponibile. Svantaggi: colonne non applicabili, NULL e vincoli condizionali.",
+      "detail": "La convenienza peggiora se i sottotipi hanno molti campi specifici e poco sovrapponibili.",
+      "example": "Una dashboard di tutte le offerte può usare una sola SELECT dalla tabella OFFERTA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che minori join rendano sempre migliore il progetto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.1, pagina PDF 51"
+    },
+    {
+      "id": "si-c04-q013",
+      "topicId": "si-c04-t02",
+      "question": "Quale controllo va introdotto su OFFERTA con discriminante FISSA/INDICIZZATA?",
+      "answer": "Coerenza tra valore di TIPO e campi utilizzabili: FISSA richiede i propri dati e non quelli indicizzati, e viceversa secondo i requisiti.",
+      "detail": "L’uso di colonne nullable non sostituisce i vincoli che caratterizzano ciascun sottotipo.",
+      "example": "Una riga tipo FISSA con solo indice e spread valorizzati è semanticamente sospetta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare TIPO una protezione sufficiente senza verifiche sui valori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.1, pagina PDF 51"
+    },
+    {
+      "id": "si-c04-q014",
+      "topicId": "si-c04-t02",
+      "question": "Come funziona la strategia «padre nelle figlie»?",
+      "answer": "Si eliminano i dati del padre come tabella autonoma e si copiano gli attributi comuni in ciascuna relazione figlia.",
+      "detail": "Nelle slide è praticabile quando la generalizzazione è totale: ogni occorrenza del padre deve essere rappresentabile in almeno una figlia.",
+      "example": "OFFERTA_FISSA(id,nome,prezzo_fisso); OFFERTA_INDICIZZATA(id,nome,indice,spread).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non adottarla per una gerarchia parziale senza rappresentare i casi privi di sottotipo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.2, pagina PDF 51"
+    },
+    {
+      "id": "si-c04-q015",
+      "topicId": "si-c04-t02",
+      "question": "Quali sono i vantaggi e rischi della strategia «solo figlie»?",
+      "answer": "Accessi ai singoli sottotipi semplici; però interrogare tutti i soggetti richiede unione dei dati e va garantita l’unicità globale degli identificatori.",
+      "detail": "Eventuali legami rivolti al padre richiedono un trattamento specifico.",
+      "example": "Elenco tutte le offerte unendo risultati di OFFERTA_FISSA e OFFERTA_INDICIZZATA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che PK separate impediscano la ripetizione del medesimo id in due tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.2, pagina PDF 51"
+    },
+    {
+      "id": "si-c04-q016",
+      "topicId": "si-c04-t02",
+      "question": "Come funziona la strategia «padre + figlie»?",
+      "answer": "Si mantiene una tabella del padre e una tabella per ciascuna figlia; l’identificatore della figlia è anche FK verso il padre.",
+      "detail": "Separa bene gli attributi comuni da quelli specializzati e rappresenta naturalmente un padre privo di sottotipo nelle gerarchie parziali.",
+      "example": "OFFERTA(id PK,nome); OFFERTA_FISSA(id PK/FK,prezzo_fisso).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre identificatori autonomi per le figlie che rompano l’identità condivisa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.3, pagina PDF 51"
+    },
+    {
+      "id": "si-c04-q017",
+      "topicId": "si-c04-t02",
+      "question": "Qual è il vantaggio fondamentale di «padre + figlie» rispetto alla tabella unica?",
+      "answer": "I dati specifici sono separati, senza colonne non applicabili nella tabella generale.",
+      "detail": "Consente interrogazioni sul padre e su una specializzazione; richiede però join quando servono i dati specifici.",
+      "example": "Per ottenere nome e indice di un’offerta indicizzata si uniscono OFFERTA e OFFERTA_INDICIZZATA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare il costo e la complessità delle join.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.3, pagina PDF 51"
+    },
+    {
+      "id": "si-c04-q018",
+      "topicId": "si-c04-t02",
+      "question": "Perché la sola PK/FK delle figlie non garantisce tutti i vincoli di gerarchia?",
+      "answer": "PK/FK garantisce l’appartenenza al padre ma non vieta di norma che lo stesso id appaia in due figlie, né impone che ogni padre ne abbia almeno una.",
+      "detail": "Esclusività e copertura totale richiedono controlli aggiuntivi, spesso globali o procedurali.",
+      "example": "La stessa offerta potrebbe risultare sia FISSA sia INDICIZZATA senza una regola ulteriore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che PK/FK equivalgano automaticamente a totalità ed esclusività.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.3, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q019",
+      "topicId": "si-c04-t02",
+      "question": "Quali criteri guidano la scelta tra le tre strategie?",
+      "answer": "Totalità/parzialità, esclusività/sovrapposizione, differenze tra sottotipi e frequenza di accessi generali o specifici.",
+      "detail": "Il manuale propone un confronto motivato anziché una soluzione universale.",
+      "example": "Sottotipi ricchi e interrogati separatamente favoriscono padre+figlie; accessi trasversali frequenti possono favorire tabella unica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non basarti esclusivamente sul numero finale di tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q020",
+      "topicId": "si-c04-t03",
+      "question": "Che differenza c’è tra generalizzazione totale e parziale?",
+      "answer": "Totale: ogni padre appartiene ad almeno una figlia. Parziale: sono ammesse istanze del padre che non appartengono a nessuna figlia.",
+      "detail": "Si tratta di un vincolo di copertura: indipendente dal numero massimo di figlie per individuo.",
+      "example": "PERSONA può esistere senza essere DIPENDENTE in una gerarchia parziale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre la totalità dall’attuale contenuto delle tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.4, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q021",
+      "topicId": "si-c04-t03",
+      "question": "Che differenza c’è tra gerarchia esclusiva e sovrapposta?",
+      "answer": "Esclusiva: un’istanza non può appartenere contemporaneamente a due figlie. Sovrapposta: più specializzazioni simultanee sono consentite.",
+      "detail": "È un vincolo distinto dalla copertura totale/parziale.",
+      "example": "Una PERSONA può essere lavoratore e studente se la gerarchia è sovrapposta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere «totale» con «esclusiva».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.4, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q022",
+      "topicId": "si-c04-t03",
+      "question": "La strategia «solo figlie» rappresenta direttamente una gerarchia parziale?",
+      "answer": "No: nella formulazione delle slide è praticabile quando la generalizzazione è totale.",
+      "detail": "Se esistono padri senza specializzazione, eliminare la tabella padre farebbe perdere quelle occorrenze, salvo una diversa progettazione motivata.",
+      "example": "Una PERSONA non dipendente sparisce se esiste soltanto DIPENDENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare meccanicamente il mapping solo-figlie a casi parziali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.4, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q023",
+      "topicId": "si-c04-t03",
+      "question": "Come si deve trattare una gerarchia totale ed esclusiva quando si sceglie padre + figlie?",
+      "answer": "Occorre garantire che ogni riga padre abbia una e una sola corrispondenza in una figlia.",
+      "detail": "La FK della figlia garantisce solo che il padre esista; «almeno una» ed «al massimo una» sono verifiche differenti.",
+      "example": "OFFERTA deve risultare presente in FISSA oppure INDICIZZATA, mai in entrambe e mai in nessuna.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare sufficiente inserire una colonna id come PK/FK in ogni figlia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.4, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q024",
+      "topicId": "si-c04-t03",
+      "question": "Una gerarchia può essere totale e sovrapposta?",
+      "answer": "Sì: ogni padre deve appartenere ad almeno una figlia, ma può appartenere contemporaneamente a più figlie.",
+      "detail": "Totalità e sovrapposizione impongono condizioni diverse, da documentare e verificare.",
+      "example": "Ogni PERSONA rientra in almeno una categoria professionale, alcune in più categorie, se i requisiti lo richiedono.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presupporre automaticamente che i sottotipi siano alternativi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.4, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q025",
+      "topicId": "si-c04-t03",
+      "question": "Quale anomalia si verifica se due tabelle figlie hanno ciascuna PK univoca ma condividono l’id?",
+      "answer": "L’unicità vale soltanto all’interno di ciascuna tabella; non si impedisce che il medesimo id sia presente in due figlie.",
+      "detail": "Per una gerarchia disgiunta serve un vincolo globale o una strategia differente.",
+      "example": "id=8 è valido separatamente in OFFERTA_FISSA e OFFERTA_INDICIZZATA, ma viola la disgiunzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare l’unicità locale della PK con un vincolo inter-tabella.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.2.3, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q026",
+      "topicId": "si-c04-t04",
+      "question": "Perché un attributo multivalore va ristrutturato per il mapping relazionale?",
+      "answer": "Per rappresentare ciascun valore come dato atomico in una relazione separata anziché memorizzare una lista nella cella.",
+      "detail": "La relazione separata contiene la FK del proprietario e i valori del multivalore.",
+      "example": "PERSONA e TELEFONO_PERSONA, una tupla per numero.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non memorizzare più numeri in una stringa separata da virgole.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q027",
+      "topicId": "si-c04-t04",
+      "question": "Come si traduce il multivalore «telefoni di una persona»?",
+      "answer": "PERSONA(id_persona PK,nome); TELEFONO_PERSONA(id_persona FK,numero,PK(id_persona,numero)).",
+      "detail": "Una persona può avere zero, uno o più recapiti; la coppia identifica un numero all’interno della persona.",
+      "example": "Le tuple (10,333...) e (10,080...) convivono.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rendere numero globalmente univoco senza un requisito esplicito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q028",
+      "topicId": "si-c04-t04",
+      "question": "Perché la PK (id_persona,numero) potrebbe non bastare se servono dati storici?",
+      "answer": "Perché la stessa associazione persona-numero può ricomparire in periodi diversi: serve distinguere le assegnazioni temporali.",
+      "detail": "Si può introdurre un inizio validità nella chiave o un identificativo evento, secondo i requisiti.",
+      "example": "Lo stesso numero disattivato e poi riassegnato alla stessa persona deve creare due eventi distinti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non forzare unicità eterna di una coppia se il dominio richiede ripetizioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q029",
+      "topicId": "si-c04-t04",
+      "question": "Qual è il mapping dei recapiti email di un fornitore illustrato nel manuale?",
+      "answer": "FORNITORE(codice PK,ragione_sociale); RECAPITO_EMAIL(codice_fornitore FK,email,etichetta,PK(codice_fornitore,email)).",
+      "detail": "L’etichetta descrive il singolo recapito: amministrazione o commerciale.",
+      "example": "Due email di uno stesso fornitore diventano due righe RECAPITO_EMAIL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collocare più email in un singolo campo di FORNITORE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q030",
+      "topicId": "si-c04-t04",
+      "question": "Quale vincolo concreto esprime la PK composta sui recapiti email?",
+      "answer": "Lo stesso fornitore non può registrare due volte lo stesso indirizzo, ma due fornitori possono usare lo stesso indirizzo se previsto dal dominio.",
+      "detail": "La chiave comprende l’identità del proprietario e il valore.",
+      "example": "(F1,info@...) e (F2,info@...) possono coesistere.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare automaticamente email una chiave globale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q031",
+      "topicId": "si-c04-t04",
+      "question": "Che cosa cambia se ogni recapito ha tipo, priorità e intervallo di validità?",
+      "answer": "La relazione separata può accogliere gli attributi aggiuntivi; occorre verificare che la PK identifichi ancora ogni occorrenza.",
+      "detail": "Il multivalore diventa una struttura relazionale gestibile e interrogabile, non una lista opaca.",
+      "example": "RECAPITO_EMAIL con etichetta e validità può richiedere un id_rec per assegnazioni ripetute.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mantenere una PK che impedisca lo storico richiesto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q032",
+      "topicId": "si-c04-t04",
+      "question": "Come decidi se un attributo è realmente multivalore ai fini della traduzione?",
+      "answer": "Chiedendo se per una singola istanza possano esistere più valori simultaneamente, eventualmente ciascuno con proprietà proprie.",
+      "detail": "La decisione parte dal requisito e non dalla sola tecnologia disponibile nel DBMS.",
+      "example": "Una persona con tre telefoni richiede tre occorrenze di recapito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare il multivalore come una concatenazione testuale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.3, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q033",
+      "topicId": "si-c04-t05",
+      "question": "Che cosa indicano partizionamento e accorpamento nel contesto della ristrutturazione E-R?",
+      "answer": "Il partizionamento separa informazioni o componenti usate in modo distinto; l’accorpamento riunisce entità fortemente legate e consultate insieme.",
+      "detail": "Sono scelte prestazionali e semantiche, non operazioni obbligatorie.",
+      "example": "DIPENDENTE può essere separato in ANAGRAFICA e POSIZIONE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che meno tabelle sia sempre migliore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.4, pagina PDF 52"
+    },
+    {
+      "id": "si-c04-q034",
+      "topicId": "si-c04-t05",
+      "question": "Che cos’è il partizionamento verticale di un’entità?",
+      "answer": "La suddivisione degli attributi di una stessa entità in relazioni collegate mediante identità comune.",
+      "detail": "Riduce dati letti in certe operazioni, ma aggiunge join e gestione coerente del ciclo di vita.",
+      "example": "ANAGRAFICA(id,nome,cognome); POSIZIONE(id PK/FK,matricola,qualifica).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare due identità indipendenti per la stessa persona.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.4.1, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q035",
+      "topicId": "si-c04-t05",
+      "question": "Quale problema può introdurre ANAGRAFICA/POSIZIONE separati?",
+      "answer": "La necessità di mantenere coerenti inserimento, eliminazione e presenza dei record collegati.",
+      "detail": "Il partizionamento richiede regole sul fatto che una posizione sia obbligatoria o facoltativa per ogni anagrafica.",
+      "example": "Non deve rimanere una POSIZIONE che referenzia un id inesistente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che la PK/FK basti sempre a imporre presenza reciproca.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.4.1, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q036",
+      "topicId": "si-c04-t05",
+      "question": "Quando il partizionamento verticale può migliorare gli accessi?",
+      "answer": "Quando gruppi di attributi sono consultati da processi diversi con frequenze o requisiti differenti.",
+      "detail": "Il beneficio va confrontato con il costo delle join nelle operazioni che richiedono entrambe le parti.",
+      "example": "L’ufficio anagrafe legge nome e cognome, l’ufficio HR legge qualifica e matricola.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurlo se tutte le query richiedono sempre entrambe le tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.4.1, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q037",
+      "topicId": "si-c04-t05",
+      "question": "In quali condizioni si può valutare l’accorpamento di due entità?",
+      "answer": "Quando sono legate strettamente, spesso in una 1:1, e vengono consultate quasi sempre insieme, preservando però le regole del dominio.",
+      "detail": "La presenza facoltativa può introdurre molti NULL o impedire di rappresentare entità senza controparte.",
+      "example": "Esempio delle slide: PERSONA–ABITAZIONE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non accorpare due entità solo perché compaiono insieme nello stesso disegno.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.4.2, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q038",
+      "topicId": "si-c04-t05",
+      "question": "Quali sono i principali rischi dell’accorpamento?",
+      "answer": "NULL aggiuntivi, perdita di autonomia delle entità, ridondanze e violazioni delle dipendenze funzionali.",
+      "detail": "Una riduzione delle join non compensa automaticamente la perdita di significato o la difficoltà di aggiornamento.",
+      "example": "Se una PERSONA può esistere senza ABITAZIONE, una tabella unica va progettata con attenzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sacrificare la corretta rappresentazione della facoltatività.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.4.2, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q039",
+      "topicId": "si-c04-t05",
+      "question": "Con quali strumenti del Capitolo 3 si può motivare partizionamento o accorpamento?",
+      "answer": "Con la tavola dei volumi e quella delle operazioni/accessi, confrontando costi stimati di letture, scritture e manutenzione.",
+      "detail": "I benefici quantitativi sono comparativi e dipendono dalle ipotesi: non sono misurazioni del DBMS reale.",
+      "example": "Una tabella unica riduce alcune join ma aumenta la dimensione delle righe lette.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un criterio semplicistico «meno tabelle = più velocità».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.4, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q040",
+      "topicId": "si-c04-t06",
+      "question": "Quali caratteristiche considera la docente nella scelta dell’identificatore principale?",
+      "answer": "Unicità, minimalità, assenza di NULL, preferibilmente identificazione interna e frequenza d’uso nelle operazioni; inoltre stabilità e dimensione.",
+      "detail": "Tra più identificatori candidati si sceglie una PK e si preservano gli altri vincoli di unicità necessari.",
+      "example": "id_utente stabile come PK, email con UNIQUE se univoca nel dominio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere automaticamente la chiave più leggibile per l’utente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.5, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q041",
+      "topicId": "si-c04-t06",
+      "question": "Che differenza c’è tra chiave naturale e chiave surrogata?",
+      "answer": "La chiave naturale deriva da attributi del dominio; quella surrogata è un identificativo tecnico introdotto per distinguere le occorrenze.",
+      "detail": "Una chiave tecnica non elimina i vincoli di unicità delle informazioni di business.",
+      "example": "UTENTE(id generato PK,email UNIQUE).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che id generato renda automaticamente ammissibili email duplicate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.5, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q042",
+      "topicId": "si-c04-t06",
+      "question": "Perché l’email può essere una scelta fragile come PK di UTENTE?",
+      "answer": "Perché può cambiare e deve essere trasportata nelle FK; un id stabile può semplificare aggiornamenti e riferimenti.",
+      "detail": "La convenienza di una PK tecnica è presentata nel manuale come integrazione pratica, non come legge assoluta.",
+      "example": "Cambio di email senza cambiare id_utente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere stabilità con il solo fatto di essere un valore testuale o numerico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.5, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q043",
+      "topicId": "si-c04-t06",
+      "question": "Che cosa significa «minimalità» di un identificatore?",
+      "answer": "Non contiene attributi superflui: eliminandone uno, non sarebbe più garantita l’unicità.",
+      "detail": "È la proprietà delle chiavi candidate; una superchiave può invece includere attributi in eccesso.",
+      "example": "matricola è chiave; (matricola,nome) non è minimale se matricola è già unica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare ogni combinazione univoca a chiave candidata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.5, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q044",
+      "topicId": "si-c04-t06",
+      "question": "Perché un identificatore esterno può risultare meno comodo da portare in molte FK?",
+      "answer": "Perché può richiedere una chiave composta che aumenta la complessità dei riferimenti e degli accessi.",
+      "detail": "Si può introdurre una PK surrogata, mantenendo però UNIQUE sulla chiave naturale composta.",
+      "example": "RIGA_PREVENTIVO può avere id_riga PK e UNIQUE(id_preventivo,numero_riga).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non perdere il vincolo di unicità locale se adotti un surrogato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.5, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q045",
+      "topicId": "si-c04-t06",
+      "question": "Come verifichi in un esercizio che un identificatore sia corretto?",
+      "answer": "Provo due istanze distinte con lo stesso valore, verifico facoltatività e variazioni nel tempo e controllo se qualche componente della chiave è eliminabile.",
+      "detail": "Il test deve essere riferito ai requisiti e alla semantica del dominio, non ai dati casualmente presenti.",
+      "example": "Due prodotti possono avere la stessa descrizione: la descrizione non è una PK valida.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere l’unicità di nome, cognome, titolo o descrizione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.5, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q046",
+      "topicId": "si-c04-t07",
+      "question": "Che cos’è una ridondanza informativa nella progettazione logica?",
+      "answer": "Un’informazione memorizzata benché derivabile da altre informazioni già conservate.",
+      "detail": "Può essere intenzionale per facilitare letture, ma richiede aggiornamenti coerenti quando cambiano i dati di origine.",
+      "example": "NUM_ABITANTI di COMUNE derivabile dalle residenze delle persone.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare ogni dato derivato come errore da eliminare sempre.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.6, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q047",
+      "topicId": "si-c04-t07",
+      "question": "Quali esempi di ridondanza vengono discussi nelle slide?",
+      "answer": "Stipendio netto ricavabile da lordo e tasse; numero degli abitanti di una città ricavabile dal conteggio dei residenti.",
+      "detail": "La decisione riguarda memorizzazione contro calcolo al momento della richiesta.",
+      "example": "Saldo o totale aggregato che deve essere aggiornato dopo modifiche ai dati elementari.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non duplicare valori senza descrivere la regola di derivazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.6, pagina PDF 53"
+    },
+    {
+      "id": "si-c04-q048",
+      "topicId": "si-c04-t07",
+      "question": "Qual è il rischio principale nel memorizzare NUM_ABITANTI?",
+      "answer": "L’incoerenza se cambiano le residenze ma il contatore non viene aggiornato correttamente.",
+      "detail": "Ogni evento rilevante deve aggiornare le origini e il valore derivato in modo consistente.",
+      "example": "Trasferimento da COMUNE A a COMUNE B richiede decremento di A e incremento di B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiornare solo un lato del cambiamento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.6, pagina PDF 54"
+    },
+    {
+      "id": "si-c04-q049",
+      "topicId": "si-c04-t07",
+      "question": "Qual è il costo giornaliero senza ridondanza nell’esempio dei residenti?",
+      "answer": "40.060 accessi convenzionali: 500 letture × 80 accessi + 20 variazioni × 3 accessi.",
+      "detail": "Sono parametri di un esercizio originale e non misurazioni produttive.",
+      "example": "40.000 per letture + 60 per variazioni = 40.060.",
+      "formulas": [
+        {
+          "latex": "C_{senza}=500\\cdot80+20\\cdot3=40060",
+          "meaning": "Accessi convenzionali per giorno senza contatore."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non omettere il costo delle variazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.6, pagina PDF 54"
+    },
+    {
+      "id": "si-c04-q050",
+      "topicId": "si-c04-t07",
+      "question": "Qual è il costo giornaliero con ridondanza NUM_ABITANTI nell’esempio?",
+      "answer": "600 accessi convenzionali: 500 letture × 1 accesso + 20 aggiornamenti × 5 accessi.",
+      "detail": "È un confronto ipotetico in cui la lettura del dato mantenuto è meno costosa; include il mantenimento del contatore.",
+      "example": "500 + 100 = 600.",
+      "formulas": [
+        {
+          "latex": "C_{con}=500\\cdot1+20\\cdot5=600",
+          "meaning": "Accessi convenzionali per giorno con contatore mantenuto."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non dimenticare che gli aggiornamenti diventano più costosi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.6, pagina PDF 54"
+    },
+    {
+      "id": "si-c04-q051",
+      "topicId": "si-c04-t07",
+      "question": "Qual è il risparmio convenzionale stimato fra le due alternative del caso NUM_ABITANTI?",
+      "answer": "40.060 − 600 = 39.460 accessi convenzionali al giorno nello scenario ipotizzato.",
+      "detail": "Il valore è fortemente dipendente dalle frequenze assunte, dalle strutture del DBMS e dalla corretta manutenzione del dato derivato.",
+      "example": "In questo scenario le letture sono 500 al giorno e dominano i costi.",
+      "formulas": [
+        {
+          "latex": "\\Delta C=40060-600=39460",
+          "meaning": "Risparmio stimato in accessi convenzionali/giorno."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non trasformare il risparmio in euro o millisecondi senza dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.6, pagina PDF 54"
+    },
+    {
+      "id": "si-c04-q052",
+      "topicId": "si-c04-t07",
+      "question": "Quando può convenire mantenere una ridondanza?",
+      "answer": "Quando i benefici misurabili sulle letture superano i costi di aggiornamento e si può garantire la coerenza transazionale.",
+      "detail": "È una decisione fra prestazioni, memoria, robustezza e manutenzione dei vincoli.",
+      "example": "Totale fattura conservato se consultato spesso e aggiornato con le righe in un’operazione atomica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ottimizzare un solo caso d’uso ignorando scritture e anomalie.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.6, pagina PDF 54"
+    },
+    {
+      "id": "si-c04-q053",
+      "topicId": "si-c04-t07",
+      "question": "Quale alternativa consente aggregazioni frequenti senza mantenere un dato fisicamente ridondante?",
+      "answer": "Calcolare il valore quando serve, eventualmente mediante una vista aggregata, se adatta alle esigenze.",
+      "detail": "La vista descritta nel manuale è alternativa concettuale alla duplicazione del valore fisico; i costi dipendono dal DBMS.",
+      "example": "COUNT dei residenti per comune al momento dell’interrogazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che ogni vista elimini automaticamente il costo di aggregazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.6, pagina PDF 54"
+    },
+    {
+      "id": "si-c04-q054",
+      "topicId": "si-c04-t07",
+      "question": "Quali verifiche sono necessarie prima di conservare un attributo derivato?",
+      "answer": "Esplicitare formula, eventi che lo modificano, procedure di aggiornamento, integrità, costi attesi e strategie per il controllo delle anomalie.",
+      "detail": "Un’informazione derivata può divergere dalla sorgente se si aggiorna in transazioni non coerenti.",
+      "example": "Aggiunta, modifica e cancellazione delle righe fattura devono aggiornare il totale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non memorizzare un contatore senza sapere come ricalcolarlo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.6, pagina PDF 54"
+    },
+    {
+      "id": "si-c04-q055",
+      "topicId": "si-c04-t08",
+      "question": "Qual è l’idea fondamentale del modello relazionale introdotto dalle slide?",
+      "answer": "Rappresentare informazioni mediante relazioni, definite attraverso schemi, domini, attributi e insiemi di tuple.",
+      "detail": "Il modello nasce dall’impostazione di E. F. Codd e fornisce una base rigorosa per vincoli e interrogazioni.",
+      "example": "STUDENTE(matricola,nome,corso) è lo schema; le righe presenti sono un’istanza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare il modello relazionale con il solo aspetto grafico di una tabella SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7, pagina PDF 54"
+    },
+    {
+      "id": "si-c04-q056",
+      "topicId": "si-c04-t08",
+      "question": "Che cos’è il dominio di un attributo relazionale?",
+      "answer": "L’insieme dei valori ammessi, coerente con il significato dell’attributo.",
+      "detail": "Il dominio non è riducibile al tipo tecnico: una matricola e un voto possono essere numeri ma hanno significati e regole differenti.",
+      "example": "Voto in un intervallo previsto; matricola come identificativo ammissibile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che due attributi condividono il dominio semantico solo perché sono INTEGER.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7.1, pagina PDF 54"
+    },
+    {
+      "id": "si-c04-q057",
+      "topicId": "si-c04-t08",
+      "question": "Quale ruolo ha l’atomicità dei valori nel modello relazionale di base?",
+      "answer": "Ogni valore della tupla deve essere trattato come atomico rispetto alle operazioni previste nel modello.",
+      "detail": "Il principio aiuta a comprendere perché gli attributi multivalore vengono tradotti in relazioni separate.",
+      "example": "I tre telefoni di una persona non sono una singola stringa contenente una lista.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere atomicità con impossibilità generale di usare tipi complessi in DBMS moderni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7.1, pagina PDF 54"
+    },
+    {
+      "id": "si-c04-q058",
+      "topicId": "si-c04-t08",
+      "question": "Che cos’è lo schema di una relazione, o componente intensionale?",
+      "answer": "È la descrizione relativamente stabile del nome della relazione, dei suoi attributi e dei relativi domini.",
+      "detail": "Si usa notazione come R(A1,...,An); lo schema non è l’elenco delle tuple attuali.",
+      "example": "STUDENTE(matricola,nome,corso).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare ogni INSERT una modifica dello schema.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7.2, pagina PDF 54"
+    },
+    {
+      "id": "si-c04-q059",
+      "topicId": "si-c04-t08",
+      "question": "Che cos’è l’istanza di una relazione, o componente estensionale?",
+      "answer": "È l’insieme delle tuple che costituiscono il contenuto corrente della relazione e rispettano il suo schema.",
+      "detail": "Cambia quando si inseriscono, aggiornano o cancellano dati; è distinta dall’intensione.",
+      "example": "Oggi esistono tre studenti registrati, domani quattro: cambia l’istanza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare «schema» l’elenco attuale dei record.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7.2, pagina PDF 54"
+    },
+    {
+      "id": "si-c04-q060",
+      "topicId": "si-c04-t08",
+      "question": "In quali circostanze cambia lo schema e in quali cambia l’istanza?",
+      "answer": "Lo schema cambia modificando la struttura/definizione; l’istanza cambia con le operazioni sui dati.",
+      "detail": "La distinzione corrisponde alla differenza fra definizione e contenuto, pur senza entrare ancora nel dettaglio SQL.",
+      "example": "Aggiungere l’attributo email modifica lo schema; inserire una nuova riga modifica l’istanza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere attributi e valori degli attributi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7.2, pagina PDF 54"
+    },
+    {
+      "id": "si-c04-q061",
+      "topicId": "si-c04-t08",
+      "question": "Che cosa indica il grado di una relazione?",
+      "answer": "Il numero degli attributi dello schema della relazione.",
+      "detail": "Non misura quante righe siano memorizzate.",
+      "example": "R(A,B,C,D) ha grado 4 anche quando non contiene nessuna tupla.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere grado e cardinalità dell’istanza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7.3, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q062",
+      "topicId": "si-c04-t08",
+      "question": "Che cosa indica la cardinalità dell’istanza di una relazione?",
+      "answer": "Il numero delle tuple attualmente presenti nella relazione.",
+      "detail": "Questa cardinalità è differente dalle cardinalità minima/massima di partecipazione nello schema E-R.",
+      "example": "Una relazione con 120 righe ha cardinalità 120.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare (0,N) per descrivere il numero di tuple nel database.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7.3, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q063",
+      "topicId": "si-c04-t08",
+      "question": "Che cos’è una tupla nel modello relazionale?",
+      "answer": "L’associazione di un valore a ciascun attributo di una relazione, secondo i domini previsti.",
+      "detail": "La formulazione didattica la rappresenta come elenco ordinato di valori rispetto agli attributi, ma l’ordine fisico delle righe non è parte della definizione.",
+      "example": "(101, Anna, Gestionale) per STUDENTE(matricola,nome,corso).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare la tupla con una sequenza di celle priva dello schema.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7.3, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q064",
+      "topicId": "si-c04-t08",
+      "question": "Nel modello relazionale matematico esiste un ordine intrinseco delle righe?",
+      "answer": "No: una relazione è un insieme di tuple e non possiede un ordine naturale.",
+      "detail": "In SQL serve ORDER BY per richiedere un ordine dell’output di una query.",
+      "example": "Due interrogazioni senza ORDER BY possono restituire le stesse righe in ordine differente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre l’ordinamento dal campo PK o dall’ordine di inserimento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7.3, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q065",
+      "topicId": "si-c04-t08",
+      "question": "Che differenza esiste tra assenza di duplicati nel modello relazionale e risultati SQL?",
+      "answer": "La relazione matematica è un insieme senza duplicati identici; SQL può restituire righe ripetute senza DISTINCT.",
+      "detail": "La differenza tra modello teorico e linguaggio concreto è esplicitata nel manuale.",
+      "example": "Una SELECT su righe proiettate può ripetere un valore se manca DISTINCT.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che qualsiasi SELECT elimina automaticamente i duplicati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7.3, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q066",
+      "topicId": "si-c04-t08",
+      "question": "Che cosa significa NULL nella trattazione del manuale?",
+      "answer": "È un valore speciale associato a informazione sconosciuta o non applicabile, distinto da zero, stringa vuota o un valore arbitrario.",
+      "detail": "In SQL introduce una logica di confronto a tre valori.",
+      "example": "data_fine NULL può indicare che una data non è nota o non è ancora applicabile secondo il dominio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare NULL come numero 0.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7.4, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q067",
+      "topicId": "si-c04-t08",
+      "question": "Come si verifica correttamente la presenza di NULL in SQL?",
+      "answer": "Con IS NULL o IS NOT NULL, non con il normale confronto di uguaglianza.",
+      "detail": "I confronti ordinari con NULL non si comportano come confronti tra valori noti.",
+      "example": "WHERE data_fine IS NULL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere data_fine = NULL aspettandoti un confronto vero.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7.4, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q068",
+      "topicId": "si-c04-t08",
+      "question": "Qual è la differenza tra relazione E-R e relazione del modello relazionale?",
+      "answer": "La relazione E-R è un legame concettuale fra entità; una relazione relazionale è una struttura definita da attributi e istanze di tuple.",
+      "detail": "Una relazione E-R può tradursi come nuova tabella oppure essere incorporata tramite FK.",
+      "example": "LAVORA_A N:M diventa LAVORO; APPARTIENE_A 1:N può diventare una colonna FK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non associare automaticamente una tabella a ogni rombo E-R.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.7, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q069",
+      "topicId": "si-c04-t09",
+      "question": "Che cosa sono vincoli di dominio e vincoli di tupla?",
+      "answer": "I vincoli di dominio limitano i valori di ciascun attributo; i vincoli di tupla esprimono condizioni sui campi di una stessa riga.",
+      "detail": "Tipi, NOT NULL e CHECK possono tradurre numerose condizioni locali.",
+      "example": "durata_mesi > 0; data_fine >= data_inizio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire una regola tra tabelle con un semplice controllo di una sola colonna.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.8.1, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q070",
+      "topicId": "si-c04-t09",
+      "question": "Quando un insieme di attributi è una superchiave?",
+      "answer": "Quando non esistono due tuple distinte che coincidono su tutti gli attributi di quell’insieme.",
+      "detail": "Una superchiave può contenere attributi in più rispetto a quelli strettamente necessari.",
+      "example": "Se matricola è unica, anche (matricola,nome) è superchiave.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre la minimalità per la definizione di superchiave.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.8.2, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q071",
+      "topicId": "si-c04-t09",
+      "question": "Quando una superchiave diventa chiave candidata?",
+      "answer": "Quando è minimale: nessun sottoinsieme proprio dei suoi attributi rimane superchiave.",
+      "detail": "Una relazione può avere più chiavi candidate e se ne sceglie una come PK.",
+      "example": "matricola e codice_fiscale possono essere candidate se entrambe obbligatorie e univoche nel dominio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire candidata la coppia (matricola,nome) se matricola identifica già tutto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.8.2, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q072",
+      "topicId": "si-c04-t09",
+      "question": "Che cos’è la chiave primaria e quale regola di integrità la riguarda?",
+      "answer": "È la chiave scelta fra le candidate per identificare ogni tupla; nessun componente della PK può essere NULL.",
+      "detail": "L’integrità di entità richiede un identificatore valido e presente.",
+      "example": "STUDENTE(matricola PK,codice_fiscale UNIQUE,nome), se entrambe univoche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere un attributo facoltativo come PK.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.8.2, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q073",
+      "topicId": "si-c04-t09",
+      "question": "Qual è la differenza tra PRIMARY KEY e UNIQUE nella documentazione del manuale?",
+      "answer": "PK identifica ogni tupla ed esclude NULL; UNIQUE rappresenta un ulteriore vincolo di unicità, spesso alternativo alla PK.",
+      "detail": "La gestione dettagliata dei NULL con UNIQUE è propria del DBMS; la semantica desiderata va precisata.",
+      "example": "CLIENTE(id PK,partita_iva UNIQUE).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che introdurre PK tecnica faccia perdere il vincolo su partita IVA.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.8.2, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q074",
+      "topicId": "si-c04-t09",
+      "question": "Che cos’è una chiave esterna (FK)?",
+      "answer": "Uno o più attributi che stabiliscono un riferimento a una chiave candidata o a una combinazione univoca di una relazione referenziata.",
+      "detail": "I valori non nulli ammessi devono corrispondere a una tupla valida della relazione di riferimento.",
+      "example": "ORDINE.id_cliente → CLIENTE.id_cliente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare una FK verso un valore non univoco della tabella madre.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.8.3, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q075",
+      "topicId": "si-c04-t09",
+      "question": "Che differenza esiste tra FOREIGN KEY e NOT NULL nel mapping 1:N?",
+      "answer": "FK garantisce che il valore non nullo riferisca un record esistente; NOT NULL impone che la relazione sia presente sul lato che contiene il campo.",
+      "detail": "Una FK nullable può rappresentare partecipazione facoltativa; la FK da sola non impone la presenza.",
+      "example": "PREVENTIVO.id_cliente FK NOT NULL se ogni preventivo ha un cliente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare NOT NULL un controllo di esistenza del record riferito: questa è la funzione FK.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.8.3, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q076",
+      "topicId": "si-c04-t09",
+      "question": "Una FK in FIGLIO garantisce che ogni PADRE abbia almeno un FIGLIO?",
+      "answer": "No: impone la validità dei riferimenti dei figli, non la partecipazione minima positiva dei padri.",
+      "detail": "Vincoli minimi sul lato referenziato possono richiedere strategie aggiuntive.",
+      "example": "Una SQUADRA senza alcun GIOCATORE è ammessa anche se ogni giocatore ha id_squadra NOT NULL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere obbligatorietà della FK col requisito «ogni padre ha almeno un figlio».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.8.3, pagina PDF 55"
+    },
+    {
+      "id": "si-c04-q077",
+      "topicId": "si-c04-t09",
+      "question": "Quali strumenti SQL elementari di vincolo presenta il manuale?",
+      "answer": "PRIMARY KEY, UNIQUE, FOREIGN KEY, NOT NULL e CHECK.",
+      "detail": "Questi vincoli coprono identità, unicità, riferimenti e condizioni locali; non esprimono automaticamente tutte le business rules.",
+      "example": "CHECK(quantita > 0) e id_cliente FK NOT NULL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a CHECK ordinario la verifica arbitraria di dati su altre tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.8, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q078",
+      "topicId": "si-c04-t09",
+      "question": "Perché una regola «il direttore deve appartenere al dipartimento che dirige» non è automaticamente garantita da due FK?",
+      "answer": "Le due FK controllano soltanto l’esistenza dei riferimenti, non la coerenza tra la relazione DIREZIONE e quella AFFERENZA.",
+      "detail": "È un vincolo inter-relazionale che richiede ulteriori controlli o una diversa struttura logica capace di esprimerlo.",
+      "example": "Un direttore valido nella tabella DIPENDENTE può essere assegnato a un dipartimento diverso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fermarti alle verifiche di esistenza dei singoli identificativi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.8, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q079",
+      "topicId": "si-c04-t09",
+      "question": "Perché il manuale mette in guardia contro CHECK che dipendono da altre righe o tabelle?",
+      "answer": "Perché un CHECK ordinario viene usato per condizioni della riga; vincoli trasversali richiedono meccanismi differenti.",
+      "detail": "L’integrazione richiama la documentazione PostgreSQL ma la distinzione serve a livello progettuale.",
+      "example": "La somma degli importi di più righe non è un semplice controllo locale su una sola tupla.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere una generica regola globale come se fosse sempre risolvibile con CHECK.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.8.1, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q080",
+      "topicId": "si-c04-t09",
+      "question": "Quali vincoli minimali vanno specificati per una colonna id_cliente obbligatoria di ORDINE?",
+      "answer": "Una FK verso CLIENTE(id_cliente) e NOT NULL sul campo in ORDINE, oltre a PK del singolo ORDINE.",
+      "detail": "La FK assicura la validità del cliente; NOT NULL vieta ordini privi di cliente.",
+      "example": "ORDINE(id PK,id_cliente FK NOT NULL).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare UNIQUE(id_cliente), perché impedirebbe più ordini dello stesso cliente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.8, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q081",
+      "topicId": "si-c04-t10",
+      "question": "Come si traduce un’entità forte in una relazione?",
+      "answer": "Si crea una tabella con gli attributi elementari necessari e una PK scelta tra gli identificatori validi dell’entità.",
+      "detail": "Gli attributi composti possono essere scomposti nei loro elementi se richiesto dall’uso dei dati.",
+      "example": "IMPIEGATO(matricola PK,nome,cognome,data_nascita).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trascinare nell’implementazione attributi composti non coerenti con l’atomicità desiderata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.9.1, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q082",
+      "topicId": "si-c04-t10",
+      "question": "Che cosa si fa con un attributo composto, come un indirizzo, durante il mapping?",
+      "answer": "Lo si può scomporre in componenti elementari se il dominio richiede interrogazioni o vincoli sulle singole parti.",
+      "detail": "Non è la stessa cosa di un attributo multivalore: il composto descrive un valore articolato, il multivalore una pluralità di valori.",
+      "example": "via, numero_civico e CAP invece di una struttura unica quando servono separatamente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare automaticamente una tabella a parte per ogni componente dell’indirizzo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.9.1, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q083",
+      "topicId": "si-c04-t10",
+      "question": "Che cos’è un’entità debole a identificazione esterna?",
+      "answer": "Un’entità che viene identificata mediante l’identità di un proprietario più un identificatore parziale valido nel contesto del proprietario.",
+      "detail": "La traduzione include una FK al proprietario che partecipa alla PK composta della debole.",
+      "example": "STUDENTE identificato da (id_universita,matricola).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rendere globale un identificatore dichiarato locale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.9.2, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q084",
+      "topicId": "si-c04-t10",
+      "question": "Qual è il mapping dell’esempio UNIVERSITÀ–STUDENTE con matricola locale?",
+      "answer": "UNIVERSITA(id_universita PK,nome,citta); STUDENTE(id_universita FK,matricola,nome,cognome,PK(id_universita,matricola)).",
+      "detail": "La stessa matricola può esistere in due università diverse, ma non due volte nella stessa università.",
+      "example": "(UniA,123) e (UniB,123) sono due studenti distinguibili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere matricola da sola come PK globale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.9.2, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q085",
+      "topicId": "si-c04-t10",
+      "question": "Perché l’id del proprietario è sia FK sia parte della PK della debole?",
+      "answer": "La FK realizza l’appartenenza; come componente della PK contribuisce a distinguere occorrenze con lo stesso codice parziale.",
+      "detail": "Il contesto identificante è parte dell’identità, non soltanto un collegamento accessorio.",
+      "example": "Riga 1 del PREVENTIVO A è distinta da riga 1 del PREVENTIVO B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere la FK del proprietario dalla chiave composta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.9.2, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q086",
+      "topicId": "si-c04-t10",
+      "question": "Se si introduce un id surrogato in STUDENTE, quale unicità di business resta da mantenere?",
+      "answer": "L’unicità sulla coppia (id_universita,matricola), anche se la PK tecnica diventa id_studente.",
+      "detail": "Cambiare la struttura della PK non può permettere due matricole identiche nella stessa università.",
+      "example": "STUDENTE(id_studente PK,id_universita FK,matricola,UNIQUE(id_universita,matricola)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il surrogato per aggirare i vincoli della traccia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.9.2, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q087",
+      "topicId": "si-c04-t10",
+      "question": "Quale difetto introduce STUDENTE(matricola PK,id_universita FK) nell’esempio del manuale?",
+      "answer": "Vieta che università diverse utilizzino lo stesso valore di matricola, mentre il dominio ammette codici locali ripetuti.",
+      "detail": "Il mapping non sarebbe informativamente coerente con l’identificazione esterna.",
+      "example": "La matricola 123 di UniA impedirebbe la matricola 123 di UniB.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare arbitrariamente una chiave locale in chiave globale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.9.2, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q088",
+      "topicId": "si-c04-t11",
+      "question": "Qual è la regola generale di mapping di un’associazione N:M?",
+      "answer": "Si creano le due relazioni dei partecipanti e una terza relazione associativa contenente le due FK e gli eventuali attributi del legame.",
+      "detail": "Le FK costituiscono normalmente una PK composta quando una coppia è ammessa una sola volta.",
+      "example": "IMPIEGATO; PROGETTO; LAVORO(matricola FK,codice FK,data_inizio,PK(matricola,codice)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mettere una singola FK in una delle entità per rappresentare N:M.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.1, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q089",
+      "topicId": "si-c04-t11",
+      "question": "Perché data_inizio_lavoro appartiene a LAVORO e non a IMPIEGATO?",
+      "answer": "Perché si riferisce all’associazione tra un certo impiegato e un certo progetto.",
+      "detail": "Lo stesso impiegato può avere date d’inizio diverse in progetti diversi.",
+      "example": "Impiegato A comincia il Progetto 1 a gennaio e il Progetto 2 a marzo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collocare attributi di relazione in una sola entità partecipante.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.1, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q090",
+      "topicId": "si-c04-t11",
+      "question": "Che cosa garantisce PK(matricola,codice_progetto) nella tabella LAVORO?",
+      "answer": "Che la coppia impiegato–progetto compaia al massimo una volta nella relazione associativa.",
+      "detail": "È una scelta corretta soltanto se il dominio non richiede più episodi distinti della stessa partecipazione.",
+      "example": "La seconda riga (ImpA,Prog1) viene rifiutata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare questa PK se lo stesso impiegato deve rientrare nel progetto in periodi diversi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.1, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q091",
+      "topicId": "si-c04-t11",
+      "question": "Come modificheresti LAVORO per consentire più periodi dello stesso impiegato sullo stesso progetto?",
+      "answer": "Introducendo un identificatore di partecipazione oppure un elemento temporale che renda ogni episodio univoco.",
+      "detail": "La sola coppia di FK non è sufficiente a distinguere eventi ripetuti; occorre specificare le assunzioni sui periodi.",
+      "example": "LAVORO(id_episodio PK,matricola FK,codice FK,dal,al).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidarti a una data se due episodi possono iniziare nello stesso istante.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.1, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q092",
+      "topicId": "si-c04-t11",
+      "question": "Perché la tabella associativa di una N:M contiene normalmente due FK?",
+      "answer": "Perché deve conservare l’identità di entrambi i partecipanti e verificare che le due occorrenze esistano.",
+      "detail": "Ogni riga rappresenta un legame concreto, non una semplice enumerazione indipendente.",
+      "example": "ASSEGNAZIONE(id_collaboratore,id_commessa,ruolo).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare senza vincoli referenziali gli identificatori dei partecipanti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.1, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q093",
+      "topicId": "si-c04-t11",
+      "question": "Una N:M con attributi propri si può tradurre mettendo l’attributo in entrambe le tabelle?",
+      "answer": "No: l’attributo che dipende dalla coppia deve restare sulla relazione associativa per evitarne duplicazioni o perdite.",
+      "detail": "Il mapping deve rispettare la dipendenza semantica e permettere valori diversi per associazioni diverse.",
+      "example": "Ruolo di un collaboratore diverso su due commesse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non duplicare lo stesso campo ruolo in COLLABORATORE e COMMESSA.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.1, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q094",
+      "topicId": "si-c04-t11",
+      "question": "Come si rappresenta in SQL la cardinalità massima N di entrambi i partecipanti a una N:M?",
+      "answer": "Con molte righe nella tabella associativa che possono condividere la prima FK o la seconda, ma non duplicare la coppia PK.",
+      "detail": "Le FK non hanno UNIQUE individuali nel caso ordinario, perché altrimenti si restringerebbe il legame.",
+      "example": "La stessa commessa è presente in più assegnazioni e lo stesso collaboratore in più commesse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare UNIQUE su una singola FK, trasformando la N:M in 1:N.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.1, pagina PDF 56"
+    },
+    {
+      "id": "si-c04-q095",
+      "topicId": "si-c04-t12",
+      "question": "Dove si colloca la chiave esterna nel mapping di un’associazione 1:N?",
+      "answer": "Nella tabella del lato N, dove ogni istanza può riferirsi ad al massimo una istanza del lato 1.",
+      "detail": "Anche eventuali attributi della relazione possono essere collocati nella tabella del lato N, se il mapping preserva il significato.",
+      "example": "GIOCATORE(id, id_squadra FK,ingaggio,ruolo).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collocare una colonna id_giocatore singola in SQUADRA se una squadra ha molti giocatori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.2, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q096",
+      "topicId": "si-c04-t12",
+      "question": "Come varia il mapping 1:N se il lato N ha partecipazione obbligatoria o facoltativa?",
+      "answer": "Obbligatoria: FK NOT NULL; facoltativa: FK nullable quando coerente con il dominio.",
+      "detail": "La FK verifica l’esistenza del padre, la nullabilità la partecipazione del singolo figlio.",
+      "example": "Un giocatore svincolato può avere id_squadra NULL; uno obbligato a una squadra no.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mettere NOT NULL se il dominio permette istanze senza legame.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.2, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q097",
+      "topicId": "si-c04-t12",
+      "question": "Come si rappresentano ingaggio e ruolo nella relazione GIOCATORE–SQUADRA?",
+      "answer": "Possono essere collocati in GIOCATORE assieme alla FK di SQUADRA, nel mapping 1:N riportato.",
+      "detail": "I valori descrivono l’attuale associazione del giocatore con la squadra.",
+      "example": "GIOCATORE(id,id_squadra,ingaggio,ruolo).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare questa soluzione per lo storico dei trasferimenti senza riprogettare gli episodi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.2, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q098",
+      "topicId": "si-c04-t12",
+      "question": "Che cosa non può garantire la sola FK di GIOCATORE per il requisito «ogni squadra deve avere almeno un giocatore»?",
+      "answer": "Non può garantire la partecipazione minima positiva di SQUADRA: una squadra può esistere senza essere referenziata da alcun giocatore.",
+      "detail": "Occorre un ulteriore controllo o una procedura sul ciclo di vita per imporre questo requisito.",
+      "example": "SQUADRA(id=15) esiste senza righe GIOCATORE: le FK dei giocatori rimangono valide.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare NOT NULL in GIOCATORE per un controllo di esistenza figli in SQUADRA.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.2, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q099",
+      "topicId": "si-c04-t12",
+      "question": "Quali casi di partecipazione 1:1 distingue il manuale?",
+      "answer": "Obbligatoria per entrambi; obbligatoria da un lato e facoltativa dall’altro; facoltativa per entrambi.",
+      "detail": "Le scelte logiche cambiano con i minimi, non soltanto con il massimo 1.",
+      "example": "PERSONA–ABITAZIONE può ammettere una parte senza controparte, secondo la traccia.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare tutte le associazioni 1:1 come equivalenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.3, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q100",
+      "topicId": "si-c04-t12",
+      "question": "Come si realizza di norma il massimo uno in una 1:1 con FK?",
+      "answer": "Aggiungendo UNIQUE alla FK, che impedisce a due righe di puntare allo stesso record della tabella opposta.",
+      "detail": "È diverso dalla sola FK, che consentirebbe tanti riferimenti allo stesso padre.",
+      "example": "UNITA(id_direttore FK UNIQUE).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere UNIQUE se ciascun direttore può dirigere al massimo una unità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.3, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q101",
+      "topicId": "si-c04-t12",
+      "question": "Quale mapping è naturale per una 1:1 con un lato obbligatorio e uno facoltativo?",
+      "answer": "Mettere la FK UNIQUE NOT NULL nella tabella del lato con partecipazione obbligatoria.",
+      "detail": "Il lato facoltativo può essere privo di riferimenti; la colonna NOT NULL impedisce l’assenza dal lato obbligatorio.",
+      "example": "Ogni patente appartiene a una persona, ma non ogni persona ha patente: FK di persona in PATENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non posizionare NOT NULL dal lato che può legittimamente restare senza legame.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.3, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q102",
+      "topicId": "si-c04-t12",
+      "question": "Come si può rappresentare una 1:1 facoltativa da entrambi i lati?",
+      "answer": "Con FK UNIQUE nullable su uno dei lati oppure, secondo il contesto, con una tabella associativa autonoma.",
+      "detail": "La scelta dipende da dati del legame, semantica, frequenza di accesso e cicli di vita.",
+      "example": "UNITA(id_direttore FK UNIQUE NULL) se l’unità può essere temporaneamente senza direttore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere NOT NULL a entrambi i lati senza analisi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.3, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q103",
+      "topicId": "si-c04-t12",
+      "question": "Perché una FK UNIQUE NOT NULL non basta per garantire una 1:1 totale su entrambi i lati?",
+      "answer": "Impone il collegamento per ogni riga che contiene la FK, ma non che ogni record della tabella referenziata sia a sua volta collegato.",
+      "detail": "È necessaria anche la copertura del lato opposto, da realizzare con altri vincoli o gestione del ciclo di vita.",
+      "example": "Ogni PATENTE appartiene a una PERSONA, ma può comunque esistere PERSONA senza PATENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre totalità totale da un solo vincolo FK UNIQUE NOT NULL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.3, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q104",
+      "topicId": "si-c04-t12",
+      "question": "Quando può essere opportuno accorpare due entità collegate da 1:1?",
+      "answer": "Quando appartengono al medesimo ciclo di vita, hanno partecipazione compatibile e vengono sempre usate insieme, preservando i vincoli.",
+      "detail": "L’accorpamento è una scelta di ristrutturazione, non una regola automatica del mapping.",
+      "example": "Una 1:1 obbligatoria/obbligatoria può essere candidata ad accorpamento se semanticamente lecito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non accorpare se le entità devono vivere indipendentemente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.3, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q105",
+      "topicId": "si-c04-t12",
+      "question": "In una 1:1 perché NULL e UNIQUE svolgono ruoli diversi?",
+      "answer": "UNIQUE governa il massimo delle partecipazioni; la possibilità di NULL governa l’assenza del legame sul lato con la FK.",
+      "detail": "Per esprimere (0,1) sul lato appropriato spesso servono entrambi gli aspetti: unicità e facoltatività.",
+      "example": "id_direttore UNIQUE nullable: unità senza direttore ammessa, stesso direttore non riutilizzabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire UNIQUE con NOT NULL o viceversa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.10.3, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q106",
+      "topicId": "si-c04-t13",
+      "question": "Qual è il mapping usuale di un’associazione ternaria?",
+      "answer": "Una relazione aggiuntiva con tre FK, una per ciascun partecipante, e gli eventuali attributi propri della combinazione.",
+      "detail": "La scelta della PK richiede di conoscere se la stessa tripla possa ricorrere più volte.",
+      "example": "INTERVENTO(id_operatore,id_sede,id_attivita,durata).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire una ternaria con tre binarie senza provare l’equivalenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q107",
+      "topicId": "si-c04-t13",
+      "question": "Qual è l’esempio ternario delle slide e quale dato dipende dalla tripla?",
+      "answer": "INTERVENTO collega OPERATORE, SEDE e ATTIVITA; DURATA è un attributo dell’intervento specifico.",
+      "detail": "La durata può variare per operatore, sede e attività, quindi appartiene all’interazione complessiva.",
+      "example": "L’operatore A svolge l’attività X nella sede S con durata 90 minuti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non associare durata soltanto a OPERATORE o soltanto ad ATTIVITA.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q108",
+      "topicId": "si-c04-t13",
+      "question": "La tripla di FK è sempre la PK corretta di una relazione ternaria?",
+      "answer": "No: lo è soltanto se ogni combinazione dei tre partecipanti può comparire al massimo una volta.",
+      "detail": "Eventi ripetuti richiedono una data/ora effettivamente identificativa o un id evento.",
+      "example": "Lo stesso operatore può fare due interventi della stessa attività nella stessa sede in giorni diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare la tripla di FK senza verificare la ripetibilità degli episodi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q109",
+      "topicId": "si-c04-t13",
+      "question": "Perché la decomposizione automatica di una ternaria in tre binarie è pericolosa?",
+      "answer": "Le tre associazioni a coppie non determinano necessariamente quali combinazioni a tre siano realmente avvenute.",
+      "detail": "Si possono creare triple «fantasma» unendo dati delle coppie che esistono separatamente.",
+      "example": "OPERATORE–SEDE, SEDE–ATTIVITA e OPERATORE–ATTIVITA non identificano univocamente gli interventi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere esistenza delle coppie con esistenza della tripla.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q110",
+      "topicId": "si-c04-t13",
+      "question": "Che cos’è un’associazione ricorsiva?",
+      "answer": "Un legame in cui la stessa entità compare in ruoli distinti, per esempio supervisore e supervisionato.",
+      "detail": "La traduzione deve mantenere nomi di ruolo non ambigui.",
+      "example": "DIPENDENTE supervisiona DIPENDENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare due FK senza dichiarare chiaramente il ruolo di ciascuna.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.11.1, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q111",
+      "topicId": "si-c04-t13",
+      "question": "Come si traduce una ricorsiva quando ogni dipendente può avere al massimo un supervisore?",
+      "answer": "Con una FK nella stessa relazione DIPENDENTE che punta alla sua PK.",
+      "detail": "La FK può essere nullable se un vertice gerarchico è privo di supervisore.",
+      "example": "DIPENDENTE(id PK,nome,id_supervisore FK NULL REFERENCES DIPENDENTE(id)).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare obbligatoriamente una tabella aggiuntiva per una semplice ricorsiva 1:N.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.11.1, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q112",
+      "topicId": "si-c04-t13",
+      "question": "Quando è utile una tabella associativa per una ricorsiva?",
+      "answer": "Quando sono ammessi più supervisori, più episodi temporali o altri attributi propri dei legami.",
+      "detail": "La relazione associativa rende autonomi i singoli episodi e ne permette l’identificazione.",
+      "example": "SUPERVISIONE(id_supervisore FK,id_collaboratore FK,dal,al) con chiave adeguata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare una singola FK se un dipendente può avere più supervisori contemporanei.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.11.1, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q113",
+      "topicId": "si-c04-t13",
+      "question": "Una FK autoriferita vieta da sola che un dipendente supervisoni se stesso?",
+      "answer": "No: la FK verifica l’esistenza dell’id referenziato, non necessariamente l’assenza di autoreferenza o cicli gerarchici.",
+      "detail": "Servono business rules o ulteriori controlli se il dominio vieta autocontrollo e cicli.",
+      "example": "id=7 con id_supervisore=7 è referenzialmente valido ma può essere semanticamente proibito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare integrità referenziale con correttezza dell’intera gerarchia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.11.1, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q114",
+      "topicId": "si-c04-t13",
+      "question": "Come riconoscere il mapping giusto di un intervento ripetibile nel tempo?",
+      "answer": "Prima verificare se la combinazione di partecipanti identifica una sola occorrenza; altrimenti aggiungere una dimensione temporale o id evento.",
+      "detail": "La data può bastare soltanto se il dominio vieta due eventi identici nello stesso giorno.",
+      "example": "ESECUZIONE con PK(id_tecnico,id_macchina,id_lavorazione,data) se non esistono duplicati nella data.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dare per certa l’unicità della data se non esplicitata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.11, pagina PDF 57"
+    },
+    {
+      "id": "si-c04-q115",
+      "topicId": "si-c04-t14",
+      "question": "Perché lo schema logico non può limitarsi a un elenco di relazioni?",
+      "answer": "Perché molti vincoli semantici, specialmente globali o procedurali, richiedono documentazione e controlli non descritti solo da PK/FK.",
+      "detail": "Un progetto completo specifica tipi, identità, riferimenti, nullabilità, ipotesi e business rules residue.",
+      "example": "Una direttiva «chi dirige deve anche appartenere» va registrata oltre alle FK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare finito il mapping appena hai nominato le tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.12, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q116",
+      "topicId": "si-c04-t14",
+      "question": "Quali elementi compongono la documentazione di uno schema logico completo?",
+      "answer": "Relazioni e attributi, PK e candidate, FK, UNIQUE, CHECK/NOT NULL, regole residue e assunzioni introdotte.",
+      "detail": "Le informazioni devono essere coerenti con il diagramma concettuale e con i requisiti originali.",
+      "example": "Annotare per ogni FK il target, la nullabilità e la molteplicità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere le ipotesi fatte per colmare ambiguità della traccia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.12, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q117",
+      "topicId": "si-c04-t14",
+      "question": "Che cosa significa tracciabilità dei requisiti nella progettazione logica?",
+      "answer": "Ogni requisito deve essere rappresentato in un costrutto E-R; ogni costrutto deve avere un mapping e ogni vincolo deve avere una strategia di verifica.",
+      "detail": "È un criterio operativo di completezza e verificabilità del progetto.",
+      "example": "Il requisito «un solo direttore» porta a una FK UNIQUE o altra soluzione equivalente, più test negativo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre una tabella che non sai collegare a un requisito o a un costrutto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.12, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q118",
+      "topicId": "si-c04-t14",
+      "question": "Come documentare un vincolo che PK/FK non riescono a garantire?",
+      "answer": "Descrivere la regola di business in forma verificabile, i dati coinvolti e la strategia di applicazione o controllo.",
+      "detail": "Separare sempre il vincolo di dominio dalla scelta tecnologica concreta (procedura, transazione, validazione).",
+      "example": "Ogni progetto deve avere un direttore che sia anche tra i suoi partecipanti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fingere che la semplice esistenza della FK del direttore verifichi la partecipazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.12, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q119",
+      "topicId": "si-c04-t14",
+      "question": "Quale verifica va effettuata dopo il mapping, prima di considerarlo completo?",
+      "answer": "Provare istanze valide e non valide rispetto alle cardinalità e ai vincoli, controllando sia le chiavi sia le regole non locali.",
+      "detail": "La qualità è semantica oltre che strutturale.",
+      "example": "Inserire due unità con lo stesso direttore deve fallire quando vige 1:1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarti a una sola tupla positiva senza casi limite.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.12, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q120",
+      "topicId": "si-c04-t15",
+      "question": "Quali sono le principali entità e associazioni nel caso Software House della docente?",
+      "answer": "DIPENDENTE, PROGETTO, RELEASE; PARTECIPAZIONE con mesi-uomo, DIREZIONE e collegamento VERSIONI/RELEASE; sono presenti gerarchie del personale.",
+      "detail": "Il mapping conclusivo del capitolo usa semplificazioni dichiarate e accorpamento delle generalizzazioni.",
+      "example": "La relazione N:M PARTECIPAZIONE diventa una tabella autonoma.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che lo schema semplificato contenga ogni dettaglio del diagramma originale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q121",
+      "topicId": "si-c04-t15",
+      "question": "Qual è lo schema semplificato della tabella DIPENDENTE nel caso del corso?",
+      "answer": "DIPENDENTE(nome PK,assunzione,skill,tipo), usando identificatori e accorpamento della gerarchia a fini didattici.",
+      "detail": "Il manuale chiarisce che nome e titolo non sono necessariamente identificatori affidabili in uno schema professionale.",
+      "example": "TIPO può distinguere le specializzazioni, dopo aver precisato i relativi vincoli.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non elevare Nome a PK universale: è un’ipotesi specifica del caso didattico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q122",
+      "topicId": "si-c04-t15",
+      "question": "Come viene rappresentata DIREZIONE nel mapping semplificato della Software House?",
+      "answer": "PROGETTO(titolo PK,budget,direttore FK verso DIPENDENTE) incorpora il legame di direzione.",
+      "detail": "L’esempio adotta un’associazione con massimo uno sul progetto, ma va verificato se la direzione sia facoltativa e se il direttore sia partecipante.",
+      "example": "PROGETTO(titolo,direttore) rimanda a DIPENDENTE(nome).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che la sola FK garantisca che il direttore partecipi allo stesso progetto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q123",
+      "topicId": "si-c04-t15",
+      "question": "Come sono identificate le RELEASE nel caso Software House?",
+      "answer": "Con una chiave composta (titolo_progetto,numero), in cui titolo_progetto è anche FK verso PROGETTO.",
+      "detail": "Il numero progressivo è locale al progetto, non globalmente univoco.",
+      "example": "Progetto Alfa release 1 e Progetto Beta release 1 sono distinte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare numero da solo come PK di RELEASE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q124",
+      "topicId": "si-c04-t15",
+      "question": "Qual è lo schema di PARTECIPAZIONE nella versione semplificata del corso?",
+      "answer": "PARTECIPAZIONE(nome_dipendente FK,titolo_progetto FK,mesi_uomo,PK(nome_dipendente,titolo_progetto)).",
+      "detail": "Le due FK rappresentano un legame N:M; mesi_uomo è proprietà della coppia.",
+      "example": "Lo stesso DIPENDENTE può avere mesi_uomo differenti su due progetti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collocare mesi_uomo come proprietà generale di DIPENDENTE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.13, pagina PDF 58"
+    },
+    {
+      "id": "si-c04-q125",
+      "topicId": "si-c04-t15",
+      "question": "Quali condizioni supplementari vanno verificate sul caso Software House?",
+      "answer": "Validità del direttore e della sua partecipazione, totalità/esclusività delle categorie del personale, facoltatività della direzione e valori di tipo.",
+      "detail": "Il manuale avverte che il semplice elenco delle relazioni non documenta tutte queste regole.",
+      "example": "Un progetto non può indicare direttore estraneo ai partecipanti se la traccia lo vieta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare corretta una tabella solo perché ogni singola FK esiste.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.13, pagina PDF 59"
+    },
+    {
+      "id": "si-c04-q126",
+      "topicId": "si-c04-t15",
+      "question": "Quale cautela riguarda le chiavi Nome e Titolo nella traduzione del caso della docente?",
+      "answer": "Sono usate per rispettare gli identificatori della traccia didattica, ma nel mondo reale potrebbero non essere univoche o stabili.",
+      "detail": "Una soluzione professionale può proporre id tecnici e UNIQUE ove richiesto, senza attribuire silenziosamente tale modifica alla docente.",
+      "example": "DIPENDENTE(nome PK) nello schema delle slide; id_dipendente in una possibile evoluzione industriale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non correggere implicitamente la fonte cambiando gli identificatori dell’esercizio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.13, pagina PDF 59"
+    },
+    {
+      "id": "si-c04-q127",
+      "topicId": "si-c04-t15",
+      "question": "Come spiegheresti il mapping del caso Software House in una risposta d’esame completa?",
+      "answer": "Partirei da entità e identificatori, tradurrei PARTECIPAZIONE N:M, DIREZIONE con FK, RELEASE con identificazione esterna e gerarchie mediante una strategia motivata.",
+      "detail": "Concluderei citando business rules non coperte dalle sole chiavi.",
+      "example": "Verificare che (progetto,numero) distingua due release 1 di progetti differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fornire solo quattro CREATE TABLE senza esplicitare la semantica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.13, pagina PDF 59"
+    },
+    {
+      "id": "si-c04-q128",
+      "topicId": "si-c04-t16",
+      "question": "Qual è il ruolo dell’esempio EnerPrice nel Capitolo 4?",
+      "answer": "È un mini-caso originale per applicare il mapping logico, non lo schema definitivo del progetto universitario approvato.",
+      "detail": "Assume una piattaforma semplificata di offerte, segmenti, condizioni economiche e scenari.",
+      "example": "Ogni offerta è destinata a un segmento e ammette più simulazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non importare lo schema dimostrativo come architettura definitiva di EnerPrice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "si-c04-q129",
+      "topicId": "si-c04-t16",
+      "question": "Quali sono le quattro relazioni del mini-caso EnerPrice?",
+      "answer": "SEGMENTO(id_segmento,descrizione); OFFERTA(id_offerta,id_segmento,nome); CONDIZIONE_ECONOMICA(id_condizione,id_offerta,tipo,valore,validita_da); SCENARIO(id_scenario,id_offerta,consumo_annuo,costo_unitario).",
+      "detail": "Ogni tabella ha PK sul proprio id; i riferimenti figlio verso parent realizzano relazioni 1:N.",
+      "example": "SCENARIO.id_offerta è FK verso OFFERTA.id_offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere campi e regole non presenti nell’esempio come se fossero richiesti dal corso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "si-c04-q130",
+      "topicId": "si-c04-t16",
+      "question": "Qual è il mapping di SEGMENTO–OFFERTA nel mini-caso?",
+      "answer": "OFFERTA contiene id_segmento come FK verso SEGMENTO, perché l’ipotesi è 1 segmento per offerta e più offerte per segmento.",
+      "detail": "La FK si colloca dal lato N, OFFERTA; la partecipazione minima dipende dal testo del caso.",
+      "example": "SEGMENTO S1 collegato a OFFERTE O1 e O2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre tabella associativa senza cambiare i requisiti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "si-c04-q131",
+      "topicId": "si-c04-t16",
+      "question": "Qual è il mapping di OFFERTA–CONDIZIONE_ECONOMICA e OFFERTA–SCENARIO?",
+      "answer": "Le tabelle CONDIZIONE_ECONOMICA e SCENARIO contengono entrambe id_offerta FK, realizzando due relazioni 1:N distinte.",
+      "detail": "Condizioni e scenari sono entità diverse, con significati e attributi propri.",
+      "example": "Un’offerta ha due condizioni con validità diversa e tre scenari di consumo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non unificare condizioni e scenari solo perché condividono id_offerta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "si-c04-q132",
+      "topicId": "si-c04-t16",
+      "question": "Quali aspetti EnerPrice non sono ancora modellati nel mini-caso?",
+      "answer": "Varianti per segmento, promozioni contemporanee, fasce orarie, costi di rete e storicizzazione completa, fra gli altri.",
+      "detail": "Il manuale dichiara che sono decisioni per l’analisi formale successiva.",
+      "example": "Una condizione vale per più offerte? Il mapping 1:N non è più sufficiente e va rivalutato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che il mini-caso gestisca già tutti i requisiti del progetto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "si-c04-q133",
+      "topicId": "si-c04-t16",
+      "question": "Se una condizione economica deve essere condivisa da più offerte, che cosa va rivisto?",
+      "answer": "La relazione OFFERTA–CONDIZIONE_ECONOMICA e le relative cardinalità, sulla base di nuovi requisiti.",
+      "detail": "Non si deve forzare una cardinalità sbagliata per comodità tecnica.",
+      "example": "Una N:M potrebbe richiedere un’associativa fra OFFERTA e CONDIZIONE_ECONOMICA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mantenere necessariamente id_offerta in CONDIZIONE se l’appartenenza non è più singola.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "si-c04-q134",
+      "topicId": "si-c04-t16",
+      "question": "Perché la presenza di validita_da nella condizione economica non garantisce lo storico completo?",
+      "answer": "Perché servono regole su versioni, intervalli, sovrapposizioni, associazioni e identificazione delle condizioni che il mini-caso non specifica.",
+      "detail": "La corretta storicizzazione richiede requisiti espliciti prima di scegliere chiavi e vincoli.",
+      "example": "Due condizioni della stessa offerta con uguale validita_da potrebbero necessitare distinzioni ulteriori.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare un solo campo data a un modello temporale completo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.14, pagina PDF 59"
+    },
+    {
+      "id": "si-c04-q135",
+      "topicId": "si-c04-t16",
+      "question": "Che cosa vuole dimostrare il piccolo esempio SQL del Capitolo 4?",
+      "answer": "Come PK, FK e NOT NULL esprimano il mapping di legami 1:N e N:M, senza anticipare la trattazione completa del linguaggio.",
+      "detail": "L’illustrazione usa CLIENTE, OFFERTA, REQUISITO e OFFERTA_REQUISITO; non sostituisce lo schema di EnerPrice.",
+      "example": "OFFERTA.id_cliente FK NOT NULL; OFFERTA_REQUISITO con due FK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare lo snippet come specifica definitiva dell’applicazione energetica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.15, pagina PDF 59"
+    },
+    {
+      "id": "si-c04-q136",
+      "topicId": "si-c04-t16",
+      "question": "Quali tabelle e vincoli compaiono nello snippet SQL per il legame 1:N?",
+      "answer": "CLIENTE(id_cliente INTEGER PRIMARY KEY,ragione_sociale NOT NULL) e OFFERTA(id_offerta PK,id_cliente FK NOT NULL,nome NOT NULL).",
+      "detail": "La FK di OFFERTA punta a CLIENTE; più offerte possono riferirsi allo stesso cliente.",
+      "example": "FOREIGN KEY (id_cliente) REFERENCES cliente(id_cliente).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere UNIQUE su offerta.id_cliente se il rapporto è 1:N.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.15, pagina PDF 60"
+    },
+    {
+      "id": "si-c04-q137",
+      "topicId": "si-c04-t16",
+      "question": "Come viene tradotto in SQL il rapporto N:M OFFERTA–REQUISITO?",
+      "answer": "Con OFFERTA_REQUISITO(id_offerta NOT NULL,id_requisito NOT NULL,PRIMARY KEY(id_offerta,id_requisito)) e due FK.",
+      "detail": "Le tabelle OFFERTA e REQUISITO hanno chiavi autonome, mentre la relazione associativa usa la coppia come PK.",
+      "example": "Un’offerta può avere più requisiti; un requisito più offerte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mettere id_requisito singolo in OFFERTA.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.15, pagina PDF 60"
+    },
+    {
+      "id": "si-c04-q138",
+      "topicId": "si-c04-t16",
+      "question": "Perché nello snippet la PK associativa usa entrambe le colonne FK?",
+      "answer": "Perché identifica univocamente ogni coppia offerta–requisito e impedisce la registrazione duplicata della stessa associazione.",
+      "detail": "Non si impedisce che un requisito compaia in offerte diverse o viceversa.",
+      "example": "(O1,R1) e (O1,R2) sono ammessi; un secondo (O1,R1) no.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre UNIQUE su ciascuna FK individuale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.15, pagina PDF 60"
+    },
+    {
+      "id": "si-c04-q139",
+      "topicId": "si-c04-t16",
+      "question": "Quale avvertenza introduce il manuale sulla sintassi SQL mostrata?",
+      "answer": "È un esempio illustrativo PostgreSQL; alcune regole e sintassi possono variare con il DBMS e SQL sarà approfondito nel Capitolo 6.",
+      "detail": "Qui conta soprattutto collegare i costrutti logici ai vincoli corrispondenti.",
+      "example": "PRIMARY KEY, FOREIGN KEY e NOT NULL rendono concreti identificazione e partecipazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che ogni differenza implementativa fra DBMS cambi la semantica E-R.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.15, pagina PDF 60"
+    },
+    {
+      "id": "si-c04-q140",
+      "topicId": "si-c04-t17",
+      "question": "Come si traduce l’esercizio «ogni preventivo appartiene a un cliente»?",
+      "answer": "CLIENTE(id PK,nome); PREVENTIVO(numero PK,data,id_cliente FK NOT NULL).",
+      "detail": "Le cardinalità sono CLIENTE (0,N) e PREVENTIVO (1,1); la FK va nel lato N e deve essere valorizzata.",
+      "example": "Due preventivi possono appartenere allo stesso cliente, ma nessuno può riferire un cliente inesistente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rendere obbligatoria la presenza di preventivi per ogni cliente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 1, pagina PDF 60"
+    },
+    {
+      "id": "si-c04-q141",
+      "topicId": "si-c04-t17",
+      "question": "Perché la presenza di CLIENTE senza PREVENTIVO è valida nell’esercizio 1?",
+      "answer": "Perché la partecipazione di CLIENTE alla relazione è (0,N), quindi un cliente può non avere alcun preventivo.",
+      "detail": "La FK NOT NULL nella tabella PREVENTIVO obbliga il singolo preventivo, non il cliente.",
+      "example": "CLIENTE C1 senza righe PREVENTIVO è consentito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non leggere NOT NULL in PREVENTIVO come minimo 1 sul lato CLIENTE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 1, pagina PDF 60"
+    },
+    {
+      "id": "si-c04-q142",
+      "topicId": "si-c04-t17",
+      "question": "Qual è il mapping dell’esercizio N:M collaboratori–commesse?",
+      "answer": "COLLABORATORE(id PK,nome); COMMESSA(id PK,descrizione); ASSEGNAZIONE(id_collaboratore PK/FK,id_commessa PK/FK,ruolo).",
+      "detail": "Il ruolo è relativo alla coppia collaboratore–commessa; la PK composta è valida se non ci sono episodi ripetuti della stessa coppia.",
+      "example": "Un collaboratore può essere analista su una commessa e coordinatore su un’altra.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non spostare ruolo nella tabella COLLABORATORE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 2, pagina PDF 60"
+    },
+    {
+      "id": "si-c04-q143",
+      "topicId": "si-c04-t17",
+      "question": "Che cosa andrebbe rivisto nell’esercizio collaboratori–commesse se una coppia fosse assegnata più volte?",
+      "answer": "La PK composta andrebbe estesa o sostituita con l’identificazione dei diversi episodi.",
+      "detail": "La coppia di partecipanti da sola non distingue una seconda assegnazione nel tempo.",
+      "example": "Reingaggio dello stesso collaboratore sulla stessa commessa in un nuovo periodo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sovrascrivere lo storico perché la PK vieta due episodi distinti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 2, pagina PDF 60"
+    },
+    {
+      "id": "si-c04-q144",
+      "topicId": "si-c04-t17",
+      "question": "Come si identifica una riga di preventivo con numero progressivo locale?",
+      "answer": "Con PK(id_preventivo,numero_riga): id_preventivo è FK verso PREVENTIVO, numero_riga identifica la riga entro il preventivo.",
+      "detail": "L’entità RIGA_PREVENTIVO è debole e dipende dal proprietario.",
+      "example": "Preventivi A e B possono avere entrambi una riga 1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rendere numero_riga univoco globalmente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 3, pagina PDF 60"
+    },
+    {
+      "id": "si-c04-q145",
+      "topicId": "si-c04-t17",
+      "question": "Quale combinazione di righe dimostra la correttezza dell’identificazione di RIGA_PREVENTIVO?",
+      "answer": "(Preventivo A,1) e (Preventivo B,1) sono ammesse; due righe (Preventivo A,1) no.",
+      "detail": "La PK composta conserva la numerazione locale e impedisce duplicati nel medesimo preventivo.",
+      "example": "RIGA_PREVENTIVO(id_preventivo,numero_riga,quantita,prezzo).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare la sola FK del preventivo come PK.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 3, pagina PDF 61"
+    },
+    {
+      "id": "si-c04-q146",
+      "topicId": "si-c04-t17",
+      "question": "Come si mappa l’attributo multivalore «numeri di telefono di un’azienda»?",
+      "answer": "AZIENDA(id PK,denominazione); TELEFONO_AZIENDA(id_azienda FK,numero,PK(id_azienda,numero)).",
+      "detail": "Ogni telefono è una tupla distinta; la chiave potrebbe richiedere un elemento temporale se il numero è assegnato più volte in periodi diversi.",
+      "example": "Per AZIENDA A si memorizzano (A,123) e (A,456).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concatenare tutti i telefoni in una cella.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 4, pagina PDF 61"
+    },
+    {
+      "id": "si-c04-q147",
+      "topicId": "si-c04-t17",
+      "question": "Quali sono le alternative di mapping per MEZZO specializzato in AUTOVETTURA o MOTOCICLO?",
+      "answer": "Una tabella MEZZO con TIPO; solo due tabelle figlie complete; oppure MEZZO padre e due tabelle specializzate PK/FK.",
+      "detail": "La traccia è totale ed esclusiva: ogni mezzo appartiene a uno e un solo sottotipo.",
+      "example": "MEZZO(id,tipo,marca,numero_porte,cilindrata) è un’alternativa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere basandoti soltanto sul numero delle tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 5, pagina PDF 61"
+    },
+    {
+      "id": "si-c04-q148",
+      "topicId": "si-c04-t17",
+      "question": "Quale vincolo va preservato nell’esercizio MEZZO a prescindere dalla strategia?",
+      "answer": "Ogni mezzo deve essere esattamente AUTOVETTURA o MOTOCICLO, mai entrambe e mai nessuna.",
+      "detail": "È necessario controllare discriminante e campi condizionali o vincoli globali nelle strategie multi-tabella.",
+      "example": "Un mezzo non può essere contemporaneamente in entrambe le figlie.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare l’appartenenza totale/esclusiva garantita da due PK distinte.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 5, pagina PDF 61"
+    },
+    {
+      "id": "si-c04-q149",
+      "topicId": "si-c04-t17",
+      "question": "Qual è il mapping consigliato per PERSONA/DIPENDENTE con gerarchia parziale?",
+      "answer": "PERSONA(id PK,nome); DIPENDENTE(id_persona PK/FK,matricola,data_assunzione).",
+      "detail": "Una persona può non essere dipendente e quindi non avere riga nella tabella figlia.",
+      "example": "PERSONA P1 senza DIPENDENTE è valida.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare solo la tabella DIPENDENTE perché perderebbe le persone non specializzate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 6, pagina PDF 61"
+    },
+    {
+      "id": "si-c04-q150",
+      "topicId": "si-c04-t17",
+      "question": "Perché la strategia «solo figlie» è inadeguata per l’esercizio PERSONA/DIPENDENTE?",
+      "answer": "Perché la gerarchia è parziale e deve ammettere persone senza una specifica istanza DIPENDENTE.",
+      "detail": "La tabella PERSONA preserva identità e attributi generali anche per non dipendenti.",
+      "example": "Una persona cliente non assunta resterebbe nella tabella PERSONA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eliminare il padre di una gerarchia parziale senza un’altra rappresentazione corretta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 6, pagina PDF 61"
+    },
+    {
+      "id": "si-c04-q151",
+      "topicId": "si-c04-t18",
+      "question": "Quale schema rappresenta un’unità con direttore facoltativo e direttore di al massimo un’unità?",
+      "answer": "UNITA(id PK,nome,id_direttore FK NULL UNIQUE); DIPENDENTE(id PK,nome).",
+      "detail": "NULL consente una unità temporaneamente priva di direttore; UNIQUE impedisce che lo stesso dipendente diriga due unità.",
+      "example": "UNITA U1 e U2 con id_direttore diversi sono ammesse; stesso direttore per entrambe no.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rendere id_direttore NOT NULL quando la partecipazione è facoltativa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 7, pagina PDF 61"
+    },
+    {
+      "id": "si-c04-q152",
+      "topicId": "si-c04-t18",
+      "question": "Quale vincolo non è garantito se si aggiunge «ogni dipendente dirige esattamente un’unità»?",
+      "answer": "La copertura del lato DIPENDENTE: la FK in UNITA non obbliga ogni dipendente a comparire come direttore.",
+      "detail": "La partecipazione minima positiva dell’altro lato richiede controlli aggiuntivi.",
+      "example": "Un dipendente D3 senza unità diretta è ammesso dallo schema originario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere UNIQUE con obbligatorietà globale della partecipazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 7, pagina PDF 61"
+    },
+    {
+      "id": "si-c04-q153",
+      "topicId": "si-c04-t18",
+      "question": "Qual è il mapping dell’esercizio ternario tecnico–macchina–lavorazione con data?",
+      "answer": "ESECUZIONE(id_tecnico FK,id_macchina FK,id_lavorazione FK,data,durata,PK(id_tecnico,id_macchina,id_lavorazione,data)).",
+      "detail": "La data distingue esecuzioni della stessa tripla in giorni differenti nell’ipotesi semplificata.",
+      "example": "Tecnico A ripete la stessa lavorazione sulla macchina M in due date.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non perdere la tripla sostituendola con tre binarie indipendenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 8, pagina PDF 61"
+    },
+    {
+      "id": "si-c04-q154",
+      "topicId": "si-c04-t18",
+      "question": "Quando la PK della ternaria con campo data sarebbe ancora insufficiente?",
+      "answer": "Quando possono esistere due esecuzioni con medesimi partecipanti e stessa data: servirebbe ora, progressivo o identificatore evento.",
+      "detail": "La scelta della chiave dipende dalla granularità temporale richiesta.",
+      "example": "Due lavori del medesimo tipo fatti dallo stesso tecnico sulla stessa macchina al mattino e pomeriggio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dare per certa l’unicità della data senza una regola del dominio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 8, pagina PDF 61"
+    },
+    {
+      "id": "si-c04-q155",
+      "topicId": "si-c04-t18",
+      "question": "Come si traduce la ricorsiva dipendente–supervisore dell’esercizio 9?",
+      "answer": "DIPENDENTE(id PK,nome,id_supervisore FK NULL REFERENCES DIPENDENTE(id)).",
+      "detail": "Il direttore generale può avere id_supervisore NULL; i dipendenti possono riferire un altro dipendente esistente.",
+      "example": "D1 senza supervisore; D2 con id_supervisore=D1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non richiedere una tabella SUPERVISIONE per il caso 1:N semplice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 9, pagina PDF 61"
+    },
+    {
+      "id": "si-c04-q156",
+      "topicId": "si-c04-t18",
+      "question": "Perché la FK autoriferita non basta a vietare cicli di supervisione?",
+      "answer": "Verifica soltanto che ogni id_supervisore esista, non che la catena sia aciclica o non contenga autocontrollo.",
+      "detail": "La regola organizzativa richiede vincoli specifici; il testo dell’esercizio richiama esplicitamente tale limite.",
+      "example": "D1 supervisore D2 e D2 supervisore D1 soddisfano le FK ma costituiscono un ciclo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare una struttura referenzialmente valida con una gerarchia valida.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 9, pagina PDF 62"
+    },
+    {
+      "id": "si-c04-q157",
+      "topicId": "si-c04-t18",
+      "question": "Qual è l’errore nella relazione CORSO(id_corso,titolo,matricola_studente) proposta per una N:M?",
+      "answer": "Una sola matricola per corso non può rappresentare molti studenti e più corsi per studente senza duplicazioni improprie.",
+      "detail": "Si devono distinguere CORSO, STUDENTE e associazione ISCRIZIONE.",
+      "example": "CORSO(id PK,titolo); STUDENTE(matricola PK,nome); ISCRIZIONE(id_corso PK/FK,matricola PK/FK).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non incorporare una FK singola nella tabella CORSO per una N:M.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 10, pagina PDF 62"
+    },
+    {
+      "id": "si-c04-q158",
+      "topicId": "si-c04-t18",
+      "question": "Quale vincolo è espresso dalla PK composta di ISCRIZIONE?",
+      "answer": "Ogni coppia corso–studente può comparire al massimo una volta, nell’ipotesi di iscrizione unica per coppia.",
+      "detail": "Se occorressero più tentativi o iscrizioni storicizzate, il modello andrebbe esteso.",
+      "example": "Studente S1 iscritto a C1 e C2 produce due tuple.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere iscrizione con tentativi di esame ripetuti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 10, pagina PDF 62"
+    },
+    {
+      "id": "si-c04-q159",
+      "topicId": "si-c04-t18",
+      "question": "Come scegliere la PK del PRODOTTO quando esistono codice interno e descrizione non univoca?",
+      "answer": "Si può usare id_prodotto tecnico come PK e mantenere UNIQUE(codice_interno); non usare descrizione come identificatore.",
+      "detail": "Un codice del fornitore può essere locale e richiedere il suo identificativo contestuale.",
+      "example": "Chiave naturale fornitore-prodotto: (id_fornitore,codice_fornitore), se univoca nella traccia.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire unicità a una descrizione del prodotto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 11, pagina PDF 62"
+    },
+    {
+      "id": "si-c04-q160",
+      "topicId": "si-c04-t18",
+      "question": "Perché il solo codice_fornitore non identifica necessariamente il prodotto in modo globale?",
+      "answer": "Perché può essere assegnato indipendentemente da più fornitori: occorre includere l’identità del fornitore.",
+      "detail": "È un esempio di chiave naturale composta e identificazione dipendente dal contesto.",
+      "example": "Fornitore F1 e F2 hanno entrambi articolo A100.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non perdere il contesto creando UNIQUE(codice_fornitore) globale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 11, pagina PDF 62"
+    },
+    {
+      "id": "si-c04-q161",
+      "topicId": "si-c04-t18",
+      "question": "Perché totale_fattura conservato in FATTURA è una ridondanza?",
+      "answer": "Perché il totale è derivabile dalla somma delle righe; memorizzarlo duplica un’informazione calcolabile.",
+      "detail": "Può ridurre il costo di lettura ma richiede coerenza durante inserimenti, modifiche ed eliminazioni delle righe.",
+      "example": "Se una riga cambia importo, anche il totale memorizzato deve cambiare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiornare il totale separatamente senza controllo transazionale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 12, pagina PDF 62"
+    },
+    {
+      "id": "si-c04-q162",
+      "topicId": "si-c04-t18",
+      "question": "Quali sono le due strategie alternative per ottenere totale_fattura?",
+      "answer": "Calcolarlo con un’aggregazione delle righe quando necessario oppure conservarlo come dato derivato mantenuto coerentemente.",
+      "detail": "La scelta va motivata usando volumi, frequenze delle letture/scritture e rischio di anomalie.",
+      "example": "SUM delle righe contro attributo totale_fattura aggiornato nell’operazione atomica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare la memorizzazione del totale come un obbligo del modello.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.16 — Esercizio 12, pagina PDF 62"
+    },
+    {
+      "id": "si-c04-q163",
+      "topicId": "si-c04-t19",
+      "question": "Quale distinzione è fondamentale nella traccia «Biblioteca: libri, copie, prestiti»?",
+      "answer": "LIBRO e COPIA sono concetti differenti; COPIA può essere identificata nel contesto del libro, mentre PRESTITO richiede un’identità di evento o periodo.",
+      "detail": "Il testo delle soluzioni orientative suggerisce (id_libro,numero_copia) per la copia.",
+      "example": "Due copie dello stesso libro hanno numeri di inventario distinti; la stessa copia può essere prestata più volte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mettere data prestito come attributo unico di LIBRO.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.17 — Traccia A, pagina PDF 62"
+    },
+    {
+      "id": "si-c04-q164",
+      "topicId": "si-c04-t19",
+      "question": "Quale modello orientativo viene suggerito per la rete di officine?",
+      "answer": "INTERVENTO(evento_id,operatore_id,macchina_id,sede_id,data,durata) con FK alle entità pertinenti.",
+      "detail": "L’id evento consente interventi ripetuti e conserva la combinazione dei partecipanti.",
+      "example": "Un operatore svolge più manutenzioni sulla stessa macchina in date diverse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre l’evento a un legame non identificabile quando è ripetibile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.17 — Traccia B, pagina PDF 62"
+    },
+    {
+      "id": "si-c04-q165",
+      "topicId": "si-c04-t19",
+      "question": "Quali aspetti di mapping bisogna affrontare nell’esercizio università, studenti, corsi e recapiti?",
+      "answer": "I recapiti multivalore richiedono una tabella separata; ISCRIZIONE fra STUDENTE e CORSO può essere una tabella associativa N:M.",
+      "detail": "Il voto sulla coppia è sufficiente soltanto se ha un significato univoco per iscrizione; in presenza di più prove vanno modellati gli appelli.",
+      "example": "Un alunno iscritto a due corsi crea due righe ISCRIZIONE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non perdere prove ripetute mantenendo un solo voto per coppia corso-studente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.17 — Traccia C, pagina PDF 62"
+    },
+    {
+      "id": "si-c04-q166",
+      "topicId": "si-c04-t19",
+      "question": "Che cosa devi confrontare nella traccia sui prodotti standard, digitali e personalizzabili?",
+      "answer": "Le tre strategie di eliminazione di una gerarchia totale esclusiva e i rispettivi controlli di coerenza.",
+      "detail": "Devi valutare discriminante e NULL, unicità globale nelle sole figlie, copertura e disgiunzione nel padre+figlie.",
+      "example": "PRODOTTO(id,tipo,...); sottotipi solo; oppure PRODOTTO con tre figlie.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare una delle tre scelte sempre corretta a prescindere dagli accessi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.17 — Traccia D, pagina PDF 62"
+    },
+    {
+      "id": "si-c04-q167",
+      "topicId": "si-c04-t19",
+      "question": "Qual è la domanda decisiva nel caso «offerta, margine stimato e costi da cui deriva»?",
+      "answer": "Se convenga ricalcolare il margine o conservarlo come ridondanza, specificando aggiornamenti atomici e rischio di incoerenza.",
+      "detail": "Il risultato dipende da frequenze e requisiti, non soltanto dalla possibilità di calcolo.",
+      "example": "Modificare un costo deve ricalcolare il margine mantenuto se si sceglie la ridondanza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non conservare un margine senza la regola che lo ricollega ai costi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.17 — Traccia E, pagina PDF 62"
+    },
+    {
+      "id": "si-c04-q168",
+      "topicId": "si-c04-t19",
+      "question": "Quali sono le tre strategie di eliminazione delle generalizzazioni da sapere a memoria per l’autoverifica?",
+      "answer": "Accorpare le figlie nel padre; accorpare il padre nelle figlie; conservare padre e figlie collegate.",
+      "detail": "La strategia sole figlie è presentata come praticabile per generalizzazione totale.",
+      "example": "OFFERTA unica, tabelle FISSA/INDICIZZATA, oppure tre tabelle collegate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare di discutere vincoli e frequenze oltre alla struttura.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.18, pagina PDF 62"
+    },
+    {
+      "id": "si-c04-q169",
+      "topicId": "si-c04-t19",
+      "question": "Come si distinguono grado, cardinalità relazionale e cardinalità E-R in una domanda rapida?",
+      "answer": "Grado: numero di attributi; cardinalità dell’istanza: numero di tuple; cardinalità E-R: minimo/massimo di partecipazione di una entità a un’associazione.",
+      "detail": "Sono tre quantità con livelli e significati differenti.",
+      "example": "R(A,B,C,D) con 7 tuple: grado 4, cardinalità istanza 7, indipendentemente da eventuali (0,N).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rispondere «N» come cardinalità dell’istanza quando non conosci il numero di righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.18, pagina PDF 63"
+    },
+    {
+      "id": "si-c04-q170",
+      "topicId": "si-c04-t19",
+      "question": "Come si distingue la regola di mapping 1:N da quella N:M in una domanda rapida?",
+      "answer": "1:N: FK sul lato N. N:M: relazione associativa con FK dei due partecipanti e attributi del legame.",
+      "detail": "La collocazione dipende dalla molteplicità, non dal numero di attributi delle entità.",
+      "example": "PREVENTIVO(id_cliente FK) contro ASSEGNAZIONE(id_persona,id_progetto,ruolo).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare sempre una tabella associativa per ogni rombo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.18, pagina PDF 63"
+    },
+    {
+      "id": "si-c04-q171",
+      "topicId": "si-c04-t19",
+      "question": "Perché una business rule non è sempre equivalente a PK/FK?",
+      "answer": "PK/FK garantiscono identità e riferimenti, mentre vincoli su più tuple, più relazioni o procedure possono non essere esprimibili tramite queste sole chiavi.",
+      "detail": "La documentazione deve descrivere tali regole e come verificarle.",
+      "example": "Il direttore del progetto deve essere uno dei partecipanti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare completa una soluzione solo perché ha tutte le FK.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.18, pagina PDF 63"
+    },
+    {
+      "id": "si-c04-q172",
+      "topicId": "si-c04-t19",
+      "question": "Come distingui intensione ed estensione all’autoverifica?",
+      "answer": "Intensione: schema della relazione e domini; estensione: insieme delle tuple correnti.",
+      "detail": "La prima descrive la struttura, la seconda i dati presenti in un momento.",
+      "example": "Il numero di righe può cambiare senza variare STUDENTE(matricola,nome).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare estensione la definizione degli attributi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.18, pagina PDF 63"
+    },
+    {
+      "id": "si-c04-q173",
+      "topicId": "si-c04-t19",
+      "question": "Quale proprietà distingue la chiave candidata dalla superchiave?",
+      "answer": "La minimalità: nessun sottoinsieme proprio della candidata resta superchiave.",
+      "detail": "Una superchiave con attributi ridondanti non è candidata, anche se identifica univocamente.",
+      "example": "(matricola,nome) è superchiave non candidata se matricola è già unica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere minimalità con brevità testuale in caratteri.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.18, pagina PDF 63"
+    },
+    {
+      "id": "si-c04-q174",
+      "topicId": "si-c04-t19",
+      "question": "Che cosa devi ricordare sulle tuple nel modello matematico e sui risultati SQL?",
+      "answer": "La relazione è un insieme senza ordine intrinseco; SQL ordina i risultati soltanto se richiesto con ORDER BY e può mostrare duplicati senza DISTINCT.",
+      "detail": "Il manuale separa esplicitamente teoria e comportamento SQL pratico.",
+      "example": "ORDER BY nome per ottenere ordine alfabetico nella query.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che una PK garantisca l’ordine delle righe restituite.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.18, pagina PDF 63"
+    },
+    {
+      "id": "si-c04-q175",
+      "topicId": "si-c04-t20",
+      "question": "Quali sono i primi due controlli della checklist prima di tradurre uno schema E-R?",
+      "answer": "Individuare identificatori e cardinalità minime/massime; ristrutturare generalizzazioni e attributi multivalore preservando il significato.",
+      "detail": "Questi passaggi precedono la decisione finale sulle FK e sulle tabelle associative.",
+      "example": "Verificare che un numero di release sia locale prima di scegliere la PK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire subito chiavi SQL senza controllare le relazioni concettuali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.19, pagina PDF 63"
+    },
+    {
+      "id": "si-c04-q176",
+      "topicId": "si-c04-t20",
+      "question": "Quali verifiche specifiche impone la checklist per entità forti e deboli?",
+      "answer": "Ogni entità forte deve avere una relazione e PK definita; ogni entità debole deve includere la FK del proprietario nella propria identificazione, se si usa il mapping composto.",
+      "detail": "Le PK e FK devono mantenere l’unicità prevista dalla traccia.",
+      "example": "RIGA_PREVENTIVO con PK(id_preventivo,numero_riga).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare una PK globale se la numerazione è dichiarata locale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.19, pagina PDF 63"
+    },
+    {
+      "id": "si-c04-q177",
+      "topicId": "si-c04-t20",
+      "question": "Quali regole rapide della checklist riguardano associazioni 1:N, N:M e ternarie?",
+      "answer": "1:N: FK sul lato N; N:M e ternaria: nuova relazione che preservi la combinazione e i ruoli pertinenti.",
+      "detail": "Per ogni scelta va comunque verificata la cardinalità minima e l’identificazione degli eventi ripetuti.",
+      "example": "PREVENTIVO.id_cliente per 1:N; INTERVENTO con tre FK per ternaria.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non perdere la semantica della tripla o la ripetibilità temporale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.19, pagina PDF 63"
+    },
+    {
+      "id": "si-c04-q178",
+      "topicId": "si-c04-t20",
+      "question": "Quali controlli sono essenziali in una traduzione 1:1?",
+      "answer": "Verificare UNIQUE, nullabilità, partecipazioni minime di entrambe le parti e le condizioni per eventuale accorpamento.",
+      "detail": "Una FK UNIQUE NOT NULL non impone automaticamente la partecipazione obbligatoria sul lato referenziato.",
+      "example": "UNITA.id_direttore UNIQUE NULL per 1:1 facoltativa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarti a scrivere «uno a uno» senza imporre i massimi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.19, pagina PDF 63"
+    },
+    {
+      "id": "si-c04-q179",
+      "topicId": "si-c04-t20",
+      "question": "Come si conclude una prova di mapping in modo verificabile?",
+      "answer": "Indicare PK/FK/UNIQUE, business rules residue, ipotesi e tuple di test che evidenzino duplicati o stati non validi.",
+      "detail": "La documentazione deve distinguere regole esplicite della traccia da assunzioni del progettista.",
+      "example": "Provare doppia assegnazione del medesimo direttore e verificare che sia respinta in 1:1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare il problema risolto soltanto perché le tabelle compilano.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.19, pagina PDF 63"
+    },
+    {
+      "id": "si-c04-q180",
+      "topicId": "si-c04-t20",
+      "question": "Che cosa significa «capire il perché di ogni tabella» nell’impostazione della prova Moodle?",
+      "answer": "Saper collegare ogni tabella a requisito, entità/associazione E-R, cardinalità, identificatore o regola di business.",
+      "detail": "Le scelte vanno motivate, non solo ricordate; una tabella non giustificabile richiede revisione.",
+      "example": "Una associativa ISCRIZIONE esiste per preservare N:M tra STUDENTE e CORSO.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere strutture senza un significato verificabile nel dominio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.19, pagina PDF 63"
+    },
+    {
+      "id": "si-c04-q181",
+      "topicId": "si-c04-t20",
+      "question": "Quale struttura useresti per rispondere oralmente a una traccia completa di progettazione logica?",
+      "answer": "Requisiti e assunzioni → E-R e ristrutturazioni → relazioni con PK/FK → vincoli aggiuntivi → esempi validi/non validi → conclusione motivata.",
+      "detail": "Lo schema finale deve conservare semantica e rendere verificabili i vincoli, rispettando anche eventuali carichi operativi.",
+      "example": "Nel caso Software House passo da gerarchie, PARTECIPAZIONE e RELEASE alle quattro relazioni motivate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non partire dal codice SQL prima di aver spiegato la struttura informativa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 4, §4.19, pagina PDF 63"
+    }
+  ]
+}

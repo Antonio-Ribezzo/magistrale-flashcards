@@ -1,0 +1,2292 @@
+{
+  "sections": [
+    {
+      "id": "introduzione",
+      "title": "Revisione scientifica dei capitoli 2–6",
+      "group": "Revisione scientifica",
+      "topics": [],
+      "blocks": [
+        {
+          "heading": "Verifica del 28 ottobre 2026 · Fonte prioritaria: slide del Prof. Michele Gorgoglione"
+        },
+        {
+          "heading": "(1.153 pagine); confronto con la dispensa degli ex studenti e, per le precisazioni"
+        },
+        {
+          "heading": "metodologiche, fonti universitarie/istituzionali indicate alla fine."
+        },
+        {
+          "text": "Scopo: rendere trasparenti gli esiti dei controlli svolti su copertura del programma, formule fondamentali, esercizi numerici selezionati e convenzioni. Le correzioni dimostrabili sono state applicate direttamente ai punti del testo; questa appendice documenta le verifiche e raccoglie le avvertenze da usare in sede d’esame. Non costituisce una certificazione formale di ogni singola cifra contenuta nelle oltre 290 pagine del manuale."
+        }
+      ],
+      "concept": "Revisione scientifica dei capitoli 2–6"
+    },
+    {
+      "id": "revisione-a",
+      "title": "A. Capitolo 2 — Rappresentazione del mercato, clustering, profilazione e targeting",
+      "group": "Revisione scientifica",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Copertura confrontata con il programma: scale di misura e statistiche descrittive; scelta delle variabili di segmentazione; normalizzazione; metriche per dati quantitativi, nominali e ordinali; k-means e clustering gerarchico; omogeneità/separazione; inferenza e intervalli di confidenza; processo d’acquisto e targeting. Sono presenti le corrispondenti lezioni 4–7. Le matrici di distanza e gli indici non sostituiscono la valutazione commerciale dei segmenti."
+        },
+        {
+          "table": [
+            [
+              "Verifica numerica",
+              "Risultato ricontrollato"
+            ],
+            [
+              "K-means su [1,2,3] e [10,11,12]",
+              "Centroidi 2 e 11; SSE = 2 + 2 = 4."
+            ],
+            [
+              "K-means su {(1,1),(2,1),(1,2)} e relativa traslazione",
+              "SSE di ogni gruppo = 4/3; totale = 8/3 ≈ 2,6667."
+            ],
+            [
+              "Ward su A={0,2} e B={5,9}",
+              "nA=nB=2; centroidi 1 e 7; incremento SSE = (4/4)×36 = 36."
+            ],
+            [
+              "Dunn su A={0,2} e B={7,9}",
+              "Separazione minima 5, diametro massimo 2 ⇒ Dunn = 2,5."
+            ],
+            [
+              "CAGR mercato 150→165→198→217,8",
+              "(217,8/150)^(1/3) − 1 = 13,2371% ⇒ 13,24%; corregge il precedente 13,20%."
+            ],
+            [
+              "HHI con quote 28,22,18,12,10,6,4",
+              "784+484+324+144+100+36+16 = 1.888."
+            ]
+          ]
+        },
+        {
+          "text": "Chiarimento HHI da fonte istituzionale esterna: nelle Merger Guidelines statunitensi del 2023, un mercato con HHI > 1.800 è altamente concentrato. Ciò NON dimostra di per sé che una fusione sia illegale: la presunzione strutturale richiede ulteriori condizioni, tra cui una variazione HHI > 100 nell’impostazione richiamata. Nell’esame applicare prima le convenzioni presentate dalle slide e dalla traccia."
+        },
+        {
+          "text": "Punti di attenzione: (i) una standardizzazione non rende i dati normali; (ii) la SSE ottima diminuisce aumentando K e non consente da sola di scegliere il numero di cluster; (iii) i valori di Dunn/DB sono confrontabili solo con definizioni, scale e dati coerenti; (iv) per un intervallo di confidenza della media con σ ignota e campione piccolo, sotto le opportune ipotesi si usa t di Student invece della soglia 1,96 applicata meccanicamente."
+        }
+      ],
+      "concept": "A. Capitolo 2 — Rappresentazione del mercato, clustering, profilazione e targeting"
+    },
+    {
+      "id": "revisione-b",
+      "title": "B. Capitolo 3 — Posizionamento, PCA, MDS, preferenze e branding",
+      "group": "Revisione scientifica",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Copertura confrontata: differenziazione e claim; snake plot e mappe delle percezioni; analisi attribute-based e PCA; mappe similarity-based e MDS; modelli di preferenza vettoriali/ideal-point; rappresentazione dei segmenti; first choice, share of preference e stima delle vendite; identità, valore e strategie di marca. Tutti questi blocchi sono presenti nelle lezioni 8–14."
+        },
+        {
+          "text": "CORREZIONE MATEMATICA APPLICATA NELLA LEZIONE 10. Se L₁ e L₂ sono i loading di un attributo sui primi due fattori, la QUOTA DI VARIANZA rappresentata nel piano (h²) e la LUNGHEZZA del vettore (h) non coincidono:"
+        },
+        {
+          "text": "h² = L₁² + L₂²; h = √(L₁² + L₂²)."
+        },
+        {
+          "table": [
+            [
+              "Loading del caso riportato dalle slide",
+              "h²: varianza rappresentata",
+              "h: lunghezza geometrica"
+            ],
+            [
+              "(−0,740; +0,651)",
+              "0,971401 ≈ 97,14%",
+              "0,985597"
+            ],
+            [
+              "(+0,875; −0,435)",
+              "0,954850 ≈ 95,49%",
+              "0,977164"
+            ],
+            [
+              "(−0,906; −0,414)",
+              "0,992232 ≈ 99,22%",
+              "0,996108"
+            ],
+            [
+              "(+0,781; +0,624)",
+              "0,999337 ≈ 99,93%",
+              "0,999668"
+            ]
+          ]
+        },
+        {
+          "text": "Questa spiegazione risolve l’apparente scarto tra i valori ≈0,970;0,955;0,992;0,999 della slide e le radici dei quadrati: i primi sono le somme quadrate (h²), non i moduli (h). È una distinzione da padroneggiare in esercizi di mappe attributo- fattore."
+        },
+        {
+          "text": "Controlli di modello: per PCA con variabili standardizzate la quota di varianza della componente k è λk/Σλ; autovettori, loading e score sono oggetti differenti. Una matrice di dissimilarità giudicata su scala ordinale 1–9 non è automaticamente una matrice di distanze euclidee: il tipo di MDS va scelto coerentemente. Nel modello share of preference con pesi 1/d serve gestire d=0 con il procedimento alternativo indicato dalle slide, non applicare la formula divergente senza precisazioni."
+        }
+      ],
+      "concept": "B. Capitolo 3 — Posizionamento, PCA, MDS, preferenze e branding"
+    },
+    {
+      "id": "revisione-c",
+      "title": "C. Capitolo 4 — Prodotto, ciclo di vita, comunicazione, pricing e distribuzione",
+      "group": "Revisione scientifica",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Copertura confrontata: politica di prodotto e assortimento, ciclo di vita, strategie di lancio, forecasting, comunicazione integrata, canali e indicatori, pricing, metodi di prezzo, strutture tariffarie e distribuzione. Le lezioni 15–19 coprono anche il tema della distribuzione, presente nelle slide ufficiali benché riassunto in forma più sintetica nel programma ricevuto."
+        },
+        {
+          "table": [
+            [
+              "Verifica numerica",
+              "Risultato ricontrollato"
+            ],
+            [
+              "Profitto con Q(p)=1000−8p, v=25, CF=5.000",
+              "Prezzo per ricavi pR=62,50 €; prezzo per utile pπ=75 €; Q=400 e utile=15.000 €."
+            ],
+            [
+              "Mark-up 25% su costo 80 €",
+              "Prezzo 100 €; margine percentuale sulle vendite = 20%."
+            ],
+            [
+              "Confronto canale diretto/indiretto, m=45 e 26, F=27.000 e 6.000",
+              "Volume di indifferenza Q=21.000/19 ≈ 1.105,26."
+            ],
+            [
+              "Sconto prezzo 100→90, v=60, Q iniziale 1.000",
+              "Per difendere 40.000 € di contribuzione servono ≥1.334 unità."
+            ]
+          ]
+        },
+        {
+          "text": "Attenzione a formule e terminologia: i metodi di pricing ad obiettivo ROI presenti nelle slide hanno una rappresentazione per flussi attualizzati da non confondere con il semplice ROI contabile. La pendenza di una domanda lineare è una variazione assoluta per unità di prezzo; l’elasticità è una variazione percentuale e dipende dal punto della curva. Le formule del prezzo ottimo assumono costo marginale costante e domanda lineare nell’intervallo economicamente ammissibile; le conseguenze al di fuori di tali ipotesi non seguono automaticamente."
+        },
+        {
+          "text": "Per la comunicazione, CTR e conversion rate vanno sempre accompagnati dal denominatore definito; ROAS superiore a 1 non è equivalente a redditività positiva. I modelli di ciclo di vita non sono una legge che obbliga ogni prodotto a attraversare tempi e fasi identici."
+        }
+      ],
+      "concept": "C. Capitolo 4 — Prodotto, ciclo di vita, comunicazione, pricing e distribuzione"
+    },
+    {
+      "id": "revisione-d",
+      "title": "D. Capitolo 5 — Customer metrics",
+      "group": "Revisione scientifica",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Copertura confrontata: frequenza, recency, brand sensitivity, share of loyalty, churn e retention, CLTV, consumo per categoria, ratio spend score, Market Basket Variance, coupon e promozioni, satisfaction e willingness to recommend, ratings, awareness, attitude e adoption. Tutti i nuclei richiesti dal programma compaiono nelle lezioni 20–24."
+        },
+        {
+          "table": [
+            [
+              "Verifica numerica",
+              "Risultato ricontrollato"
+            ],
+            [
+              "CLTV Gorgoglione su 5 anni (slide p. 1035)",
+              "Margini 30,41,52,63,74; r=0,85; i=5%; valore attuale 131,5226 € ≈ 131,52 €."
+            ],
+            [
+              "CLTV costante infinito m=50, r=0,85, i=5%",
+              "50×0,85/(1,05−0,85) = 212,50 €."
+            ],
+            [
+              "MBV su quote 50%,30%,20%, M=3",
+              "−Σp·ln(p)/ln(3) = 0,93723."
+            ],
+            [
+              "NPS: 110 promotori, 30 detrattori su 200",
+              "55%−15%=+40 punti (non +40%)."
+            ],
+            [
+              "RSS spese libri 30/100 e 70/200",
+              "Benchmark 100/300=1/3; RSS=0,90 e 1,05."
+            ]
+          ]
+        },
+        {
+          "text": "Le formule CLTV r^t e le varianti con r^(t−1) rappresentano convenzioni diverse sul momento di incasso; gli esercizi del professore impiegano r^t. Non scambiare retention con 1−churn se i due tassi non hanno la stessa base iniziale e definizione temporale. I clienti acquisiti nel periodo non devono essere sommati ai “mantenuti” nel numeratore della retention."
+        },
+        {
+          "text": "Market Basket Variance è entropia normalizzata, non la varianza statistica classica; il denominatore ln(M) richiede M>1 e le quote devono derivare dallo stesso universo di categorie. CSAT e NPS sono approfondimenti accreditati esterni: non attribuire al docente formule non presenti nelle sue slide. Il bounce rate del materiale del corso può usare una soglia di tempo, mentre GA4 usa la nozione di sessione non coinvolta: nelle tracce applicare la definizione specificata."
+        }
+      ],
+      "concept": "D. Capitolo 5 — Customer metrics"
+    },
+    {
+      "id": "revisione-e",
+      "title": "E. Capitolo 6 — Regressione e Conjoint Analysis",
+      "group": "Revisione scientifica",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Copertura confrontata: covarianza e correlazione, minimi quadrati e retta OLS, indici di adattamento, analisi nel tempo con e senza zeri, sensibilità al prezzo come pendenza, utilità, prezzo di riserva e conjoint con dummy. Le lezioni 25–28 coprono tutti gli argomenti richiesti."
+        },
+        {
+          "table": [
+            [
+              "Verifica numerica",
+              "Risultato ricontrollato"
+            ],
+            [
+              "OLS sei clienti: Sxx=17,5; Sxy=43; Syy=113,3333",
+              "b=43/17,5=2,457143; a=9,066667."
+            ],
+            [
+              "Stessa OLS: SSE, SSR, R²",
+              "SSE=7,676190 €²; SSR=105,657143 €²; R²≈0,932269."
+            ],
+            [
+              "Domanda lineare sui prezzi 5,10,15 con frequenze 9,6,3",
+              "b=−0,6 acquisti/€; intercetta=12."
+            ],
+            [
+              "Dummy nell’utilità U=3+2D_A−D_B",
+              "U(A)=5; U(B)=2; U(riferimento C)=3."
+            ],
+            [
+              "WTP marginale con β_attr=1,8; β_prezzo=−0,03",
+              "−β_attr/β_prezzo = 60 €/unità di attributo."
+            ]
+          ]
+        },
+        {
+          "text": "CORREZIONE APPLICATA NELLA LEZIONE 26. La SSE in una regressione con risposta monetaria Y in euro deve essere riportata in €². RMSE e RSE sono invece in euro. La formula di OLS e R² è valida solo nel contesto specificato: per il modello lineare semplice con intercetta R²=r², ma questa identità non si può estendere indiscriminatamente ad altre specificazioni."
+        },
+        {
+          "text": "In analisi temporale i periodi a zero e quelli assenti per mancanza dati sono concettualmente distinti. Regressione condizionata all’acquisto (solo periodi attivi) e regressione della spesa per periodo (zeri inclusi) stimano oggetti diversi. La sensibilità al prezzo delle slide è la pendenza Cov(p,f)/Var(p), non l’elasticità-prezzo."
+        },
+        {
+          "text": "Nella conjoint analysis, i coefficienti delle dummy dipendono dai livelli di riferimento: un coefficiente negativo non significa utilità assoluta negativa, ma utilità inferiore al baseline nel modello dato. La disponibilità marginale a pagare calcolata come −β_attributo/β_prezzo è interpretabile se β_prezzo non è zero e il modello descrive adeguatamente le preferenze nell’intervallo pertinente."
+        }
+      ],
+      "concept": "E. Capitolo 6 — Regressione e Conjoint Analysis"
+    },
+    {
+      "id": "formule-1",
+      "title": "Modulo 1 – Marketing | Capitolo 1",
+      "group": "Formulario generale ragionato",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Market Share in quantità"
+        },
+        {
+          "formula": "MSᵢ = Qᵢ / Qmercato"
+        },
+        {
+          "text": "Quando usare: Quota delle vendite della marca sul totale del mercato nella stessa unità e periodo."
+        },
+        {
+          "text": "Controllo/errore tipico: 0 ≤ MS ≤ 1; somma delle quote esaustive = 1."
+        },
+        {
+          "text": "Esempio minimo: 200 bottiglie/1.000 = 20%."
+        },
+        {
+          "text": "Market Share in valore"
+        },
+        {
+          "formula": "MS€ᵢ = Ricaviᵢ / Ricavi mercato"
+        },
+        {
+          "text": "Quando usare: Controlla il peso della marca in fatturato; la differenza con MS in volume segnala un diverso prezzo medio."
+        },
+        {
+          "text": "Controllo/errore tipico: Numeratore e denominatore devono essere entrambi in euro."
+        },
+        {
+          "text": "Esempio minimo: 16.000/60.000 = 26,67%."
+        },
+        {
+          "text": "Indice di prezzo relativo"
+        },
+        {
+          "formula": "Indice prezzo = MS in valore / MS in quantità"
+        },
+        {
+          "text": "Quando usare: Con unità fisiche omogenee confronta il prezzo medio della marca con il prezzo medio totale."
+        },
+        {
+          "text": "Controllo/errore tipico: Non si applica a volumi non comparabili."
+        },
+        {
+          "text": "Esempio minimo: 0,2667/0,20≈1,333."
+        },
+        {
+          "text": "Market Penetration"
+        },
+        {
+          "formula": "MP = N acquirenti categoria / Popolazione"
+        },
+        {
+          "text": "Quando usare: Diffusione della categoria; non riguarda un singolo brand."
+        },
+        {
+          "text": "Controllo/errore tipico: Denominatore = popolazione (non category buyers)."
+        },
+        {
+          "text": "Esempio minimo: 1.200/2.000=60%."
+        },
+        {
+          "text": "Brand Penetration"
+        },
+        {
+          "formula": "BPᵢ = N buyers marca / Popolazione"
+        },
+        {
+          "text": "Quando usare: Diffusione di un brand nella popolazione."
+        },
+        {
+          "text": "Controllo/errore tipico: BPᵢ ≤ MP per uno stesso perimetro."
+        },
+        {
+          "text": "Esempio minimo: 360/2.000=18%."
+        },
+        {
+          "text": "Penetration Share"
+        },
+        {
+          "formula": "PSᵢ = N buyers marca / N buyers categoria = BPᵢ/MP"
+        },
+        {
+          "text": "Quando usare: Quota degli acquirenti della categoria che acquistano una certa marca."
+        },
+        {
+          "text": "Controllo/errore tipico: Somma delle PS può superare 100%: multibrand. Esempio minimo: 360/1.200=30%."
+        },
+        {
+          "text": "Share of Wallet aggregato"
+        },
+        {
+          "formula": "SOWᵢ = Vendite marca i / Acquisti categoria dei buyers i"
+        },
+        {
+          "text": "Quando usare: Quanto del portafoglio di categoria dei propri clienti viene conquistato dalla marca."
+        },
+        {
+          "text": "Controllo/errore tipico: Non usare tutti gli acquisti del mercato al denominatore."
+        },
+        {
+          "text": "Esempio minimo: 9.000/18.000=50%."
+        },
+        {
+          "text": "Sole Usage"
+        },
+        {
+          "formula": "SUᵢ = Buyers esclusivi i / Buyers marca i"
+        },
+        {
+          "text": "Quando usare: Quota dei buyers che non acquistano altri brand nel periodo."
+        },
+        {
+          "text": "Controllo/errore tipico: Intervallo [0,1]; non equivale a riacquisto temporale."
+        },
+        {
+          "text": "Esempio minimo: 3/7=42,86%."
+        },
+        {
+          "text": "Heavy Usage Index"
+        },
+        {
+          "formula": "HUIᵢ = (Qcategoria dei buyers i / N buyers i) / (Qcategoria mercato / N buyers categoria)"
+        },
+        {
+          "text": "Quando usare: Consumo medio dei buyers della marca rispetto al consumo medio degli acquirenti categoria."
+        },
+        {
+          "text": "Controllo/errore tipico: Può superare 1; non misura fedeltà."
+        },
+        {
+          "text": "Esempio minimo: (18.000/360)/(48.000/1.200)=1,25."
+        },
+        {
+          "text": "Scomposizione di MS"
+        },
+        {
+          "formula": "MSᵢ = PSᵢ × SOWᵢ × HUIᵢ"
+        },
+        {
+          "text": "Quando usare: Identità algebrica da definizioni coerenti, utile a diagnosticare la quota."
+        },
+        {
+          "text": "Controllo/errore tipico: Verificare il prodotto dei tre indici contro MS diretta."
+        },
+        {
+          "text": "Esempio minimo: 0,30×0,50×1,25=18,75%."
+        },
+        {
+          "text": "Brand Development Index"
+        },
+        {
+          "formula": "BDIₛ = (Vendite brandₛ / Popₛ)/(Vendite brand tot / Pop tot)"
+        },
+        {
+          "text": "Quando usare: Prestazione pro capite della marca in un segmento rispetto al mercato."
+        },
+        {
+          "text": "Controllo/errore tipico: BDI > 1 sopra la propria media; non significa automaticamente MS segmentale superiore."
+        },
+        {
+          "text": "Esempio minimo: BDI=1,4 significa +40% sulla media pro capite brand."
+        },
+        {
+          "text": "Category Development Index"
+        },
+        {
+          "formula": "CDIₛ = (Vendite categoriaₛ / Popₛ)/(Vendite categoria tot / Pop tot)"
+        },
+        {
+          "text": "Quando usare: Prestazione pro capite della categoria in un segmento rispetto al mercato."
+        },
+        {
+          "text": "Controllo/errore tipico: CDI > 1 categoria sopra la media."
+        },
+        {
+          "text": "Esempio minimo: CDI=0,8 significa −20% sulla media pro capite categoria."
+        },
+        {
+          "text": "Relazione MS segmento, BDI e CDI"
+        },
+        {
+          "formula": "MSbrand,segmento = MSbrand,tot × BDIₛ / CDIₛ"
+        },
+        {
+          "text": "Quando usare: Collega forza del brand, forza categoria e quota della marca nel segmento."
+        },
+        {
+          "text": "Controllo/errore tipico: BDI/CDI > 1 implica MS segmentale superiore alla MS totale."
+        },
+        {
+          "text": "Esempio minimo: MS=20%, BDI=1,5, CDI=1,2 ⇒ MSₛ=25%."
+        },
+        {
+          "text": "Quota relativa"
+        },
+        {
+          "formula": "RMS = Vendite nostre / Vendite principale concorrente"
+        },
+        {
+          "text": "Quando usare: Misura forza competitiva rispetto al concorrente di riferimento nello stesso mercato."
+        },
+        {
+          "text": "Controllo/errore tipico: Può superare 1; non confonderla con MS assoluta."
+        },
+        {
+          "text": "Esempio minimo: 24/20=1,2."
+        },
+        {
+          "text": "Concentration Ratio"
+        },
+        {
+          "formula": "CRₖ = Σ quote dei k principali operatori"
+        },
+        {
+          "text": "Quando usare: Quanto è concentrato il mercato nelle prime k imprese."
+        },
+        {
+          "text": "Controllo/errore tipico: Indicare sempre k e perimetro; CR₃ ≤ 100%."
+        },
+        {
+          "text": "Esempio minimo: 43,3+24+6,2=73,5%."
+        },
+        {
+          "text": "CAGR"
+        },
+        {
+          "formula": "CAGR = (Vfinale/Viniziale)^(1/n) − 1"
+        },
+        {
+          "text": "Quando usare: Crescita geometrica media annualizzata tra due osservazioni positive."
+        },
+        {
+          "text": "Controllo/errore tipico: n è numero di intervalli/anni, non numero di date contate."
+        },
+        {
+          "text": "Esempio minimo: 0,45/0,41 su 2 anni ⇒ 4,76%."
+        }
+      ],
+      "concept": "Modulo 1 – Marketing | Capitolo 1"
+    },
+    {
+      "id": "formule-2",
+      "title": "Modulo 1 – Marketing | Capitolo 2",
+      "group": "Formulario generale ragionato",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Media"
+        },
+        {
+          "formula": "x̄ = Σxᵢ/n"
+        },
+        {
+          "text": "Quando usare: Sintesi di una variabile numerica."
+        },
+        {
+          "text": "Controllo/errore tipico: Sensibile agli outlier; non fare media dei codici nominali."
+        },
+        {
+          "text": "Esempio minimo: [2,4,6] ⇒ 4."
+        },
+        {
+          "text": "Varianza di popolazione"
+        },
+        {
+          "formula": "σ² = Σ(xᵢ−μ)² / N"
+        },
+        {
+          "text": "Quando usare: Dispersione della popolazione rispetto alla propria media."
+        },
+        {
+          "text": "Controllo/errore tipico: Unità al quadrato; usare N quando i dati descrivono la popolazione completa."
+        },
+        {
+          "text": "Esempio minimo: [2,4,6] ⇒ 8/3."
+        },
+        {
+          "text": "Varianza campionaria"
+        },
+        {
+          "formula": "s² = Σ(xᵢ−x̄ )²/(n−1)"
+        },
+        {
+          "text": "Quando usare: Stimatore della varianza da campione."
+        },
+        {
+          "text": "Controllo/errore tipico: Non confondere n e n−1."
+        },
+        {
+          "text": "Esempio minimo: [2,4,6] ⇒ 4."
+        },
+        {
+          "text": "Z-score"
+        },
+        {
+          "formula": "zᵢ = (xᵢ−μ)/σ"
+        },
+        {
+          "text": "Quando usare: Rende le variabili comparabili in unità di deviazione standard."
+        },
+        {
+          "text": "Controllo/errore tipico: Se σ=0 non definita."
+        },
+        {
+          "text": "Esempio minimo: Media 20, σ=5, x=30 ⇒ z=2."
+        },
+        {
+          "text": "Normalizzazione min–max"
+        },
+        {
+          "formula": "x′ = (x−min)/(max−min)"
+        },
+        {
+          "text": "Quando usare: Riscalamento su [0,1] nel campione."
+        },
+        {
+          "text": "Controllo/errore tipico: Se max=min non definita; outlier distorcono."
+        },
+        {
+          "text": "Esempio minimo: Con min10 max50 x30 ⇒ 0,5."
+        },
+        {
+          "text": "Euclidea"
+        },
+        {
+          "formula": "d(i,j) = √[Σₖ(xᵢₖ−xⱼₖ)²]"
+        },
+        {
+          "text": "Quando usare: Distanza fra due clienti su attributi quantitativi comparabili."
+        },
+        {
+          "text": "Controllo/errore tipico: Se le scale sono differenti, valutare la standardizzazione."
+        },
+        {
+          "text": "Esempio minimo: (0,0) vs (3,4) ⇒ 5."
+        },
+        {
+          "text": "Manhattan"
+        },
+        {
+          "formula": "d₁(i,j) = Σₖ|xᵢₖ−xⱼₖ|"
+        },
+        {
+          "text": "Quando usare: Distanza a blocchi, somma degli scarti assoluti."
+        },
+        {
+          "text": "Controllo/errore tipico: Non sostituire alla euclidea se la traccia richiede il criterio specifico."
+        },
+        {
+          "text": "Esempio minimo: (0,0) vs (3,4) ⇒ 7."
+        },
+        {
+          "text": "Simple Matching"
+        },
+        {
+          "formula": "SM = N attributi coincidenti / N attributi nominali confrontati"
+        },
+        {
+          "text": "Quando usare: Similarità su variabili nominali."
+        },
+        {
+          "text": "Controllo/errore tipico: Codici nominali non hanno distanza numerica."
+        },
+        {
+          "text": "Esempio minimo: 3 coincidenze su 4 ⇒ 75%."
+        },
+        {
+          "text": "Jaccard (approfondimento)"
+        },
+        {
+          "formula": "J = N presenze comuni / N presenze in almeno uno"
+        },
+        {
+          "text": "Quando usare: Confronta variabili binarie asimmetriche, ignora assenze congiunte."
+        },
+        {
+          "text": "Controllo/errore tipico: Non confonderlo con matching semplice."
+        },
+        {
+          "text": "Esempio minimo: 2 presenze comuni / 4 unione =0,5."
+        },
+        {
+          "text": "Centroide"
+        },
+        {
+          "formula": "μg = (1/ng)Σᵢ∈g xᵢ"
+        },
+        {
+          "text": "Quando usare: Media componente per componente dei clienti del cluster g."
+        },
+        {
+          "text": "Controllo/errore tipico: Può non corrispondere ad alcun cliente osservato."
+        },
+        {
+          "text": "Esempio minimo: (1,1),(3,3) ⇒ (2,2)."
+        },
+        {
+          "text": "SSE clustering"
+        },
+        {
+          "formula": "SSE = Σg Σᵢ∈g ||xᵢ−μg||²"
+        },
+        {
+          "text": "Quando usare: Omogeneità interna totale dei cluster in unità quadratiche."
+        },
+        {
+          "text": "Controllo/errore tipico: All’aumentare di K, SSE tende a diminuire; confrontare a K costante."
+        },
+        {
+          "text": "Esempio minimo: Due punti 0 e2, centroide1 ⇒ SSE=2."
+        },
+        {
+          "text": "Linkage single"
+        },
+        {
+          "formula": "D(A,B)=minₐ∈A,b∈B d(a,b)"
+        },
+        {
+          "text": "Quando usare: Fonde cluster sulla minima coppia di distanze."
+        },
+        {
+          "text": "Controllo/errore tipico: Può creare effetto chaining."
+        },
+        {
+          "text": "Esempio minimo: d coppie [3,5,7] ⇒ 3."
+        },
+        {
+          "text": "Linkage complete"
+        },
+        {
+          "formula": "D(A,B)=maxₐ∈A,b∈B d(a,b)"
+        },
+        {
+          "text": "Quando usare: La distanza di due gruppi è la coppia più lontana."
+        },
+        {
+          "text": "Controllo/errore tipico: Favorisce cluster più compatti; non è distanza centroidi."
+        },
+        {
+          "text": "Esempio minimo: d coppie [3,5,7] ⇒ 7."
+        },
+        {
+          "text": "Linkage average"
+        },
+        {
+          "formula": "D(A,B)=media₍ₐ,b₎ d(a,b)"
+        },
+        {
+          "text": "Quando usare: Media delle distanze fra coppie intergruppo."
+        },
+        {
+          "text": "Controllo/errore tipico: Usare tutte le coppie, pesate correttamente."
+        },
+        {
+          "text": "Esempio minimo: d coppie [3,5,7] ⇒ 5."
+        },
+        {
+          "text": "Ward (euclideo classico)"
+        },
+        {
+          "formula": "ΔSSE = nA nB/(nA+nB) × ||μA−μB||²"
+        },
+        {
+          "text": "Quando usare: Fonde la coppia con minor incremento di SSE."
+        },
+        {
+          "text": "Controllo/errore tipico: Non mescolare con linkage arbitrario o distanze non euclidee."
+        },
+        {
+          "text": "Esempio minimo: nA=nB=2, centroidi 1 e7 ⇒ 36."
+        },
+        {
+          "text": "Dunn classico"
+        },
+        {
+          "formula": "Dunn = min separazione intercluster / max diametro intra-cluster"
+        },
+        {
+          "text": "Quando usare: Separazione rispetto alla dispersione massima."
+        },
+        {
+          "text": "Controllo/errore tipico: Richiede distanze tra elementi di cluster diversi e diametri; centroidi da soli non bastano."
+        },
+        {
+          "text": "Esempio minimo: Separazione 5, diametro2 ⇒ 2,5."
+        },
+        {
+          "text": "Davies–Bouldin"
+        },
+        {
+          "formula": "DB = (1/K) Σᵢ maxⱼ≠ᵢ[(Sᵢ+Sⱼ)/Mᵢⱼ]"
+        },
+        {
+          "text": "Quando usare: Misura dispersione rispetto alla distanza fra centroidi."
+        },
+        {
+          "text": "Controllo/errore tipico: Minore tende a essere migliore; denominatore nulla problematico."
+        },
+        {
+          "text": "Esempio minimo: Con S1=S2=1 e M=5 ⇒ DB=0,4 (K=2)."
+        },
+        {
+          "text": "Intervallo media, σ nota"
+        },
+        {
+          "formula": "IC = x̄ ± zα/2 × σ/√n"
+        },
+        {
+          "text": "Quando usare: Intervallo di confidenza stimato della media per condizione appropriate."
+        },
+        {
+          "text": "Controllo/errore tipico: z≈1,96 al 95%; non è l’intervallo che contiene il 95% dei clienti."
+        },
+        {
+          "text": "Esempio minimo: x̄ =7,5, σ=3, n=100 ⇒ [6,912;8,088]."
+        },
+        {
+          "text": "Intervallo media, σ ignota"
+        },
+        {
+          "formula": "IC = x̄ ± tα/2;n−1 × s/√n"
+        },
+        {
+          "text": "Quando usare: Si usa Student sotto ipotesi adeguate quando σ è stimata."
+        },
+        {
+          "text": "Controllo/errore tipico: Distinguere campioni piccoli e approssimazioni grandi campioni."
+        },
+        {
+          "text": "Esempio minimo: n=100, s=3 ⇒ t99≈1,984."
+        },
+        {
+          "text": "Herfindahl–Hirschman"
+        },
+        {
+          "formula": "HHI = Σᵢ sᵢ"
+        },
+        {
+          "text": "²"
+        },
+        {
+          "text": "Quando usare: Concentrazione usando tutte le quote; s in percentuale ⇒ 0–10.000."
+        },
+        {
+          "text": "Controllo/errore tipico: Esplicitare se si usano percentuali o decimali."
+        },
+        {
+          "text": "Esempio minimo: Quote 50/30/20 ⇒ 3.800 (scala 10.000)."
+        }
+      ],
+      "concept": "Modulo 1 – Marketing | Capitolo 2"
+    },
+    {
+      "id": "formule-3",
+      "title": "Modulo 1 – Marketing | Capitolo 3",
+      "group": "Formulario generale ragionato",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Standardizzazione variabili di posizionamento"
+        },
+        {
+          "formula": "zⱼ = (xⱼ−mediaⱼ)/sⱼ"
+        },
+        {
+          "text": "Quando usare: Porta attributi su scale confrontabili per PCA."
+        },
+        {
+          "text": "Controllo/errore tipico: Se un attributo è inverso, considerare l’orientamento prima dell’analisi."
+        },
+        {
+          "text": "Esempio minimo: Z-score 1 = una deviazione sopra media."
+        },
+        {
+          "text": "Varianza spiegata PCA"
+        },
+        {
+          "formula": "Quota PCₖ = λₖ / Σⱼ λⱼ"
+        },
+        {
+          "text": "Quando usare: Importanza della componente k; somma quote =1."
+        },
+        {
+          "text": "Controllo/errore tipico: Gli autovalori sono non negativi per matrice di covarianza/correlazione valida."
+        },
+        {
+          "text": "Esempio minimo: λ=(2,1,0,5) ⇒ PC1=57,14%."
+        },
+        {
+          "text": "Comunalità nel piano (PCA/loadings)"
+        },
+        {
+          "formula": "h²ⱼ ≈ loadingⱼ,1² + loadingⱼ,2²"
+        },
+        {
+          "text": "Quando usare: Parte della varianza standardizzata dell’attributo rappresentata nel piano, se la convenzione di loading lo permette."
+        },
+        {
+          "text": "Controllo/errore tipico: Lunghezza vettore h=√h²: NON confonderla con la percentuale h²."
+        },
+        {
+          "text": "Esempio minimo: loadings (0,6;0,8) ⇒ h²=1, h=1."
+        },
+        {
+          "text": "Distanza euclidea da ideal point"
+        },
+        {
+          "formula": "dᵢs = √[(xᵢ−x*s)²+(yᵢ−y*s)²]"
+        },
+        {
+          "text": "Quando usare: Più piccolo è d, più vicina la marca all’ideale s."
+        },
+        {
+          "text": "Controllo/errore tipico: Assume scala degli assi confrontabile; preferenza non coincide necessariamente con vendita."
+        },
+        {
+          "text": "Esempio minimo: Brand (2,3), ideale (2,4) ⇒ d=1."
+        },
+        {
+          "text": "Modello vettoriale lineare"
+        },
+        {
+          "formula": "Uᵢs = aₛ xᵢ + bₛ yᵢ"
+        },
+        {
+          "text": "Quando usare: Utilità del prodotto rispetto a un vettore di preferenza di segmento."
+        },
+        {
+          "text": "Controllo/errore tipico: Massimizzare U solo sotto ipotesi di monotonicità. Esempio minimo: a=2,b=1, brand(1,3) ⇒ U=5."
+        },
+        {
+          "text": "First Choice"
+        },
+        {
+          "formula": "Vᵢ = Σs Nₛ × consumo medioₛ × 1{i preferito in s}"
+        },
+        {
+          "text": "Quando usare: Assegna domanda del segmento interamente alla marca migliore, secondo il modello."
+        },
+        {
+          "text": "Controllo/errore tipico: Trattare gli ex aequo secondo le regole della traccia."
+        },
+        {
+          "text": "Esempio minimo: 1.000 clienti ×2 unità ⇒ 2.000 al brand vincente."
+        },
+        {
+          "text": "Share of Preference inverso distanza"
+        },
+        {
+          "formula": "wᵢs = [1/dᵢs] / Σⱼ[1/dⱼs]"
+        },
+        {
+          "text": "Quando usare: Ripartisce il consumo segmentale in proporzione inversa alle distanze."
+        },
+        {
+          "text": "Controllo/errore tipico: Se d=0, formula non definita; seguire gestione del caso limite nelle slide."
+        },
+        {
+          "text": "Esempio minimo: dX=1,dY=2 ⇒ quote 2/3 e 1/3."
+        }
+      ],
+      "concept": "Modulo 1 – Marketing | Capitolo 3"
+    },
+    {
+      "id": "formule-4",
+      "title": "Modulo 1 – Marketing | Capitolo 4",
+      "group": "Formulario generale ragionato",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Crescita vendite"
+        },
+        {
+          "formula": "g = (Qt−Qt−1)/Qt−1"
+        },
+        {
+          "text": "Quando usare: Variazione relativa della quantità di un anno."
+        },
+        {
+          "text": "Controllo/errore tipico: Distinguere punti percentuali dalla variazione relativa."
+        },
+        {
+          "text": "Esempio minimo: 120→150 ⇒ 25%."
+        },
+        {
+          "text": "Margine di contribuzione"
+        },
+        {
+          "formula": "mcu = prezzo unitario − costo variabile unitario"
+        },
+        {
+          "text": "Quando usare: Contributo unitario alla copertura dei costi fissi e profitto."
+        },
+        {
+          "text": "Controllo/errore tipico: Non è margine netto; verificare unità €/pezzo."
+        },
+        {
+          "text": "Esempio minimo: p=20,c=8 ⇒ 12 €/unità."
+        },
+        {
+          "text": "Break-even in quantità"
+        },
+        {
+          "formula": "QBE = Costi fissi / (p−cv)"
+        },
+        {
+          "text": "Quando usare: Unità necessarie per pareggiare costi e ricavi a prezzi e costi costanti."
+        },
+        {
+          "text": "Controllo/errore tipico: È definito solo per p>cv."
+        },
+        {
+          "text": "Esempio minimo: CF=6.000, mcu12 ⇒500 unità."
+        },
+        {
+          "text": "Domanda lineare"
+        },
+        {
+          "formula": "Q(p)=a−bp, con b>0"
+        },
+        {
+          "text": "Quando usare: Descrive quantità prevista in funzione del prezzo nel campo stimato."
+        },
+        {
+          "text": "Controllo/errore tipico: Non estrapolare meccanicamente prezzi lontani dai dati; Q≥0."
+        },
+        {
+          "text": "Esempio minimo: Q=1000−8p."
+        },
+        {
+          "text": "Ricavo con domanda lineare"
+        },
+        {
+          "formula": "R(p)=p(a−bp); pR*=a/(2b)"
+        },
+        {
+          "text": "Quando usare: Prezzo che massimizza i ricavi nella funzione lineare."
+        },
+        {
+          "text": "Controllo/errore tipico: Non coincide in generale con il profitto ottimo."
+        },
+        {
+          "text": "Esempio minimo: a=1000,b=8 ⇒ pR=62,50."
+        },
+        {
+          "text": "Profitto con domanda lineare"
+        },
+        {
+          "formula": "π(p)=(p−c)(a−bp)−F; pπ*=(a+bc)/(2b)"
+        },
+        {
+          "text": "Quando usare: Prezzo che massimizza margine operativo quando costo variabile unitario costante."
+        },
+        {
+          "text": "Controllo/errore tipico: Richiede b>0, domanda e range prezzo ammissibili."
+        },
+        {
+          "text": "Esempio minimo: a=1000,b=8,c=20 ⇒pπ*=72,50."
+        },
+        {
+          "text": "Elasticità puntuale"
+        },
+        {
+          "formula": "ε = (dQ/dp) × p/Q"
+        },
+        {
+          "text": "Quando usare: Sensibilità percentuale locale delle quantità al prezzo."
+        },
+        {
+          "text": "Controllo/errore tipico: Di norma negativa; attenzione a usare valore assoluto se richiesto."
+        },
+        {
+          "text": "Esempio minimo: Q=1000−8p, p50 ⇒ −0,667."
+        },
+        {
+          "text": "Elasticità arco"
+        },
+        {
+          "formula": "εarc=[(Q₂−Q₁)/mediaQ]/[(p₂−p₁)/media p]"
+        },
+        {
+          "text": "Quando usare: Elasticità media tra due osservazioni."
+        },
+        {
+          "text": "Controllo/errore tipico: Usare basi al punto medio, evita asimmetria relativa alla direzione."
+        },
+        {
+          "text": "Esempio minimo: Q680→520; p40→60 ⇒−0,667."
+        },
+        {
+          "text": "Margine commerciale vs markup"
+        },
+        {
+          "formula": "Margine su vendita=(PV−PC)/PV; markup su costo=(PV−PC)/PC"
+        },
+        {
+          "text": "Quando usare: Due percentuali diverse con lo stesso numeratore."
+        },
+        {
+          "text": "Controllo/errore tipico: Non usare le due parole come sinonimi."
+        },
+        {
+          "text": "Esempio minimo: PC=70,PV=100 ⇒ margine30%,markup42,86%."
+        },
+        {
+          "text": "Distribuzione numerica"
+        },
+        {
+          "formula": "DN = PV che trattano marca / PV totali"
+        },
+        {
+          "text": "Quando usare: Presenza di marca nei punti vendita."
+        },
+        {
+          "text": "Controllo/errore tipico: Non misura il peso economico dei punti vendita."
+        },
+        {
+          "text": "Esempio minimo: 20/50=40%."
+        },
+        {
+          "text": "Distribuzione ponderata"
+        },
+        {
+          "formula": "DP = Vendite categoria PV trattanti / Vendite categoria tutti PV"
+        },
+        {
+          "text": "Quando usare: Copertura del potenziale di categoria dei negozi che vendono il brand."
+        },
+        {
+          "text": "Controllo/errore tipico: Non coincide necessariamente con quota vendite brand."
+        },
+        {
+          "text": "Esempio minimo: 600.000/1.000.000=60%."
+        },
+        {
+          "text": "CTR e conversion rate"
+        },
+        {
+          "formula": "CTR = clic/impression; CR = conversioni/visite o clic (dichiarare base)"
+        },
+        {
+          "text": "Quando usare: Tasso di risposta pubblicitaria e tasso di esito."
+        },
+        {
+          "text": "Controllo/errore tipico: Specificare sempre denominatore scelto."
+        },
+        {
+          "text": "Esempio minimo: 100 clic/10.000 impression=1%."
+        },
+        {
+          "text": "Costo e ritorno delle campagne"
+        },
+        {
+          "formula": "CPM=spesa/impression×1000; CPA=spesa/acquisizioni; ROAS=ricavi attribuiti/spesa"
+        },
+        {
+          "text": "Quando usare: Valuta efficienza di media e campagne."
+        },
+        {
+          "text": "Controllo/errore tipico: ROAS ≠ profitto né ROI; attribution e margine contano."
+        },
+        {
+          "text": "Esempio minimo: Spesa 200, ricavi1000 ⇒ ROAS5."
+        }
+      ],
+      "concept": "Modulo 1 – Marketing | Capitolo 4"
+    },
+    {
+      "id": "formule-5",
+      "title": "Modulo 2 – Customer Analytics | Capitolo 5",
+      "group": "Formulario generale ragionato",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Frequenza/Recency"
+        },
+        {
+          "formula": "F = N transazioni nel periodo; R = data osservazione − data ultima transazione"
+        },
+        {
+          "text": "Quando usare: F misura quanto spesso compra, R da quanto tempo non compra."
+        },
+        {
+          "text": "Controllo/errore tipico: Una recency più bassa indica acquisto più recente."
+        },
+        {
+          "text": "Esempio minimo: Ultimo acquisto 8 giorni fa ⇒ R=8 giorni."
+        },
+        {
+          "text": "Brand Sensitivity"
+        },
+        {
+          "formula": "SB = 1 − (N brand distinti acquistati / N brand disponibili)"
+        },
+        {
+          "text": "Quando usare: Concentrazione del comportamento di scelta fra brand."
+        },
+        {
+          "text": "Controllo/errore tipico: Dipende dal numero di marche disponibili; non misura quantità."
+        },
+        {
+          "text": "Esempio minimo: 2 marche su 4 ⇒ 0,5."
+        },
+        {
+          "text": "Share of Loyalty individuale"
+        },
+        {
+          "formula": "SOLj,k = acquisti del cliente k del brand j / acquisti categoria del cliente k"
+        },
+        {
+          "text": "Quando usare: Quota acquisti di un singolo cliente assegnata a brand j."
+        },
+        {
+          "text": "Controllo/errore tipico: Somma SOL per cliente =1 se il cliente acquista categoria."
+        },
+        {
+          "text": "Esempio minimo: 3/7=42,86%."
+        },
+        {
+          "text": "Retention / Churn"
+        },
+        {
+          "formula": "Retention = clienti iniziali rimasti / clienti iniziali; Churn=1−Retention"
+        },
+        {
+          "text": "Quando usare: Tassi di conservazione e perdita di una coorte osservata."
+        },
+        {
+          "text": "Controllo/errore tipico: Escludere i nuovi acquisiti dal denominatore della coorte."
+        },
+        {
+          "text": "Esempio minimo: 80 rimasti su100 ⇒ retention80%,churn20%."
+        },
+        {
+          "text": "Customer Lifetime Value"
+        },
+        {
+          "formula": "CLTV = −CAC + Σt [margine atteso t × prob. permanenza t/(1+r)^t]"
+        },
+        {
+          "text": "Quando usare: Valore attuale dei flussi di margine attesi lungo la relazione."
+        },
+        {
+          "text": "Controllo/errore tipico: Non usare fatturato al posto di margine; non scontare due volte il rischio."
+        },
+        {
+          "text": "Esempio minimo: Probabilità e tasso di sconto devono riferirsi allo stesso intervallo."
+        },
+        {
+          "text": "Spesa media e scontrino medio"
+        },
+        {
+          "formula": "Scontrino medio=spesa totale/N transazioni; spesa periodo=spesa totale/N clienti"
+        },
+        {
+          "text": "Quando usare: Distingue importo per acquisto e valore per cliente nel periodo."
+        },
+        {
+          "text": "Controllo/errore tipico: N visite ≠ N scontrini, salvo ipotesi esplicita."
+        },
+        {
+          "text": "Esempio minimo: 1000 €/20 transazioni ⇒ 50 €."
+        },
+        {
+          "text": "Quota spesa e Ratio Spend Score"
+        },
+        {
+          "formula": "qk,j=spesak,j/spesak; RSSk,j=qk,j/qmercato,j"
+        },
+        {
+          "text": "Quando usare: Confronta mix di consumo individuale e benchmark aggregato."
+        },
+        {
+          "text": "Controllo/errore tipico: Il totale di ogni paniere deve includere tutte le categorie."
+        },
+        {
+          "text": "Esempio minimo: Quota cliente30%, mercato20% ⇒ RSS1,5."
+        },
+        {
+          "text": "Market Basket Variance / entropia"
+        },
+        {
+          "formula": "MBV = −Σj pj ln(pj)/ln(M)"
+        },
+        {
+          "text": "Quando usare: Misura distribuzione della spesa/consumo su M categorie (0–1)."
+        },
+        {
+          "text": "Controllo/errore tipico: p=0 contribuisce zero; M>1; base quantità o valore dichiarata."
+        },
+        {
+          "text": "Esempio minimo: Due categorie 50/50 ⇒ MBV1."
+        },
+        {
+          "text": "Satisfaction CSAT"
+        },
+        {
+          "formula": "CSAT = N risposte positive / N risposte valide"
+        },
+        {
+          "text": "Quando usare: Indicatore con soglia dichiarata; spesso 4–5 su Likert 1–5."
+        },
+        {
+          "text": "Controllo/errore tipico: Non confrontare scale e soglie diverse senza normalizzare."
+        },
+        {
+          "text": "Esempio minimo: 80 positivi su100 ⇒80%."
+        },
+        {
+          "text": "Net Promoter Score"
+        },
+        {
+          "formula": "NPS = % promotori(9–10) − % detrattori(0–6)"
+        },
+        {
+          "text": "Quando usare: Saldo di raccomandazioni su scala da −100 a +100 punti."
+        },
+        {
+          "text": "Controllo/errore tipico: Passivi 7–8 nel denominatore ma non nella differenza."
+        },
+        {
+          "text": "Esempio minimo: 60% promotori,20% detrattori ⇒ NPS+40."
+        },
+        {
+          "text": "Trial Rate del corso"
+        },
+        {
+          "formula": "Trial = conversion × awareness × availability"
+        },
+        {
+          "text": "Quando usare: Stima moltiplicativa delle prime prove del prodotto."
+        },
+        {
+          "text": "Controllo/errore tipico: Usare proporzioni; convenzione della specifica slide."
+        },
+        {
+          "text": "Esempio minimo: 0,31×0,60×0,50=9,3%."
+        },
+        {
+          "text": "Repeat Rate e penetrazione dinamica"
+        },
+        {
+          "formula": "Penₜ=Trialₜ+Repeatₜ; Repeatₜ=RRₜ×Penₜ₋₁"
+        },
+        {
+          "text": "Quando usare: Stima degli acquirenti attivi secondo la convenzione delle slide."
+        },
+        {
+          "text": "Controllo/errore tipico: Non confondere con penetrazione cumulata di tutti gli acquirenti unici."
+        },
+        {
+          "text": "Esempio minimo: Pen₁=100, RR50%, Trial₂=100 ⇒ Pen₂=150."
+        },
+        {
+          "text": "Bounce Rate GA4 (integrazione esterna)"
+        },
+        {
+          "formula": "Bounce rate = sessioni non coinvolte / sessioni totali"
+        },
+        {
+          "text": "Quando usare: Definizione operativa moderna di Google Analytics 4."
+        },
+        {
+          "text": "Controllo/errore tipico: Il corso può adottare una soglia temporale differente: per l’esame seguire le slide."
+        }
+      ],
+      "concept": "Modulo 2 – Customer Analytics | Capitolo 5"
+    },
+    {
+      "id": "formule-6",
+      "title": "Modulo 2 – Customer Analytics | Capitolo 6",
+      "group": "Formulario generale ragionato",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Covarianza campionaria"
+        },
+        {
+          "formula": "sxy=Σ(xᵢ−x̄ )(yᵢ−ȳ)/(n−1)"
+        },
+        {
+          "text": "Quando usare: Direzione della relazione lineare fra due variabili."
+        },
+        {
+          "text": "Controllo/errore tipico: Unità = prodotto delle unità; segno, non forza standardizzata."
+        },
+        {
+          "text": "Esempio minimo: Cov>0 ⇒ co-variazione positiva."
+        },
+        {
+          "text": "Correlazione Pearson"
+        },
+        {
+          "formula": "r = sxy/(sx sy)"
+        },
+        {
+          "text": "Quando usare: Associazione lineare standardizzata tra due grandezze quantitative."
+        },
+        {
+          "text": "Controllo/errore tipico: −1≤r≤1; correlazione non implica causalità."
+        },
+        {
+          "text": "Esempio minimo: r=−0,8 significa associazione negativa forte."
+        },
+        {
+          "text": "OLS, pendenza e intercetta"
+        },
+        {
+          "formula": "b₁=Sxy/Sxx=Cov(X,Y)/Var(X); b₀=ȳ−b₁x̄"
+        },
+        {
+          "text": "Quando usare: Minimizza i residui quadratici di Ŷ=b₀+b₁X."
+        },
+        {
+          "text": "Controllo/errore tipico: Stessa convenzione nel numeratore/denominatore; VarX>0."
+        },
+        {
+          "text": "Esempio minimo: Cov=−58,75, Var=1,25 ⇒b₁=−47."
+        },
+        {
+          "text": "Residui"
+        },
+        {
+          "formula": "eᵢ = yᵢ − ŷᵢ"
+        },
+        {
+          "text": "Quando usare: Scarto tra osservato e stimato."
+        },
+        {
+          "text": "Controllo/errore tipico: In OLS con intercetta somma residui ≈0."
+        },
+        {
+          "text": "Esempio minimo: y=8,ŷ=10 ⇒residuo−2."
+        },
+        {
+          "text": "SSE, SST, SSR"
+        },
+        {
+          "formula": "SSE=Σe²; SST=Σ(y−ȳ)²; SSR=Σ(ŷ−ȳ)²"
+        },
+        {
+          "text": "Quando usare: Decomposizione della variabilità con OLS e intercetta."
+        },
+        {
+          "text": "Controllo/errore tipico: SST=SSR+SSE nel modello con intercetta."
+        },
+        {
+          "text": "Esempio minimo: SST100, SSE25 ⇒ SSR75."
+        },
+        {
+          "text": "R-quadrato"
+        },
+        {
+          "formula": "R²=1−SSE/SST=SSR/SST"
+        },
+        {
+          "text": "Quando usare: Quota della variabilità del campione spiegata dalla regressione con intercetta."
+        },
+        {
+          "text": "Controllo/errore tipico: R² alto non prova causalità o capacità predittiva fuori campione."
+        },
+        {
+          "text": "Esempio minimo: SSE25,SST100 ⇒ R²=0,75."
+        },
+        {
+          "text": "MSE della regressione"
+        },
+        {
+          "formula": "MSE=SSE/(n−p), p include intercetta"
+        },
+        {
+          "text": "Quando usare: Stima della varianza residua con corretti gradi di libertà."
+        },
+        {
+          "text": "Controllo/errore tipico: Unità di Y al quadrato; p=2 nella lineare semplice."
+        },
+        {
+          "text": "Esempio minimo: SSE40, n12, p2 ⇒MSE4."
+        },
+        {
+          "text": "RMSE"
+        },
+        {
+          "formula": "RMSE=√[(1/n)Σ(y−ŷ)²] (predizione) oppure √MSE residuo (inferenza)"
+        },
+        {
+          "text": "Quando usare: Due convenzioni diverse: indicare quella richiesta."
+        },
+        {
+          "text": "Controllo/errore tipico: Unità di Y; non usare €² per RMSE."
+        },
+        {
+          "text": "Esempio minimo: SSE100 n25 ⇒RMSE predittivo2."
+        },
+        {
+          "text": "MAE"
+        },
+        {
+          "formula": "MAE=(1/n)Σ|y−ŷ|"
+        },
+        {
+          "text": "Quando usare: Errore medio assoluto delle previsioni."
+        },
+        {
+          "text": "Controllo/errore tipico: Stessa unità di Y; meno sensibile agli outlier di RMSE."
+        },
+        {
+          "text": "Esempio minimo: Errori 2,−3,1 ⇒MAE2."
+        },
+        {
+          "text": "Regressione con dummy"
+        },
+        {
+          "formula": "U=β₀+Σj βj Dj (più eventuali variabili continue)"
+        },
+        {
+          "text": "Quando usare: Valuta contributo di livelli rispetto a una categoria base esclusa."
+        },
+        {
+          "text": "Controllo/errore tipico: Evita includere tutte le categorie + intercetta."
+        },
+        {
+          "text": "Esempio minimo: D=1 aggiunge β rispetto al livello di riferimento."
+        },
+        {
+          "text": "Importanza attributo in conjoint"
+        },
+        {
+          "formula": "Iₐ = [max(partworthₐ)−min(partworthₐ)] / Σb range(partworth_b)"
+        },
+        {
+          "text": "Quando usare: Peso relativo degli attributi per i livelli effettivamente testati."
+        },
+        {
+          "text": "Controllo/errore tipico: Dipende dai range e livelli scelti, non è una verità universale."
+        },
+        {
+          "text": "Esempio minimo: Range 2 e3 ⇒40% e60%."
+        },
+        {
+          "text": "Reservation price da utilità"
+        },
+        {
+          "formula": "U(prodotto a p*) = U(opzione fuori acquisto)"
+        },
+        {
+          "text": "Quando usare: Soglia prezzo a cui il cliente è indifferente tra acquisto e migliore alternativa."
+        },
+        {
+          "text": "Controllo/errore tipico: Serve modello con coefficiente prezzo e outside option identificabile."
+        },
+        {
+          "text": "Esempio minimo: Se U=10−0,5p e Uout=2 ⇒p*=16."
+        }
+      ],
+      "concept": "Modulo 2 – Customer Analytics | Capitolo 6"
+    },
+    {
+      "id": "scelta-formula",
+      "title": "Schema per scegliere la formula corretta",
+      "group": "Formulario generale ragionato",
+      "topics": [],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Consegna menziona...",
+              "Parti da...",
+              "Attenzione"
+            ],
+            [
+              "clienti raggiunti da una marca",
+              "PS / BP",
+              "Denominatore popolazione vs buyers categoria"
+            ],
+            [
+              "spesa per categorie vs mercato",
+              "RSS / MBV",
+              "Il primo benchmark; la seconda diversificazione"
+            ],
+            [
+              "qualità dei cluster",
+              "SSE, Dunn, DB",
+              "Diametri e separazioni non intercambiabili"
+            ],
+            [
+              "mappa attributi",
+              "PCA / loadings",
+              "Non confondere vettori e percentuale di varianza"
+            ],
+            [
+              "prodotto ideale, segmenti",
+              "ideal point / first choice / S.O.P.",
+              "Prima stima preferenza, poi ripartizione vendite"
+            ],
+            [
+              "massimi ricavi/profitti",
+              "dR/dp, dπ/dp",
+              "Costi variabili spostano prezzo ottimo"
+            ]
+          ]
+        },
+        {
+          "table": [
+            [
+              "Consegna menziona...",
+              "Parti da...",
+              "Attenzione"
+            ],
+            [
+              "customer lifetime value",
+              "margini, probabilità, sconto",
+              "Non sostituire margini con ricavi"
+            ],
+            [
+              "regressione su dati",
+              "Cov/Var; residui; R²",
+              "Associazione ≠ causalità"
+            ]
+          ]
+        }
+      ],
+      "concept": "Schema per scegliere la formula corretta"
+    },
+    {
+      "id": "istruzioni",
+      "title": "Simulazioni scritte e orali",
+      "group": "Simulazioni scritte",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Due prove originali da 30 quesiti/60 minuti · tre sessioni orali da tre domande · soluzioni e criteri di autocorrezione."
+        },
+        {
+          "text": "Materiale di preparazione costruito sulle slide ufficiali, sul manuale revisionato e sulle tracce storiche allegate. Le integrazioni esterne e gli esercizi originali sono indicati come tali."
+        },
+        {
+          "heading": "Istruzioni comuni"
+        },
+        {
+          "text": "Le due prove scritte sono ORIGINALI, ispirate alla struttura mista delle tracce storiche (domande brevi, interpretazioni, calcoli). NON sono copie di appelli ufficiali né una previsione certa del formato futuro. Il programma indica normalmente 30 quesiti in 60 minuti; le scansioni storiche mostrano domande aperte, esercizi e grafici, quindi le simulazioni rispettano l’impostazione mista."
+        },
+        {
+          "text": "Punteggio operativo proposto per allenamento: 1 punto a domanda, totale 30; suggerimento di approvazione personale ≥ 24/30, con minimo ≥ 60% dei quesiti numerici corretti. Questa è una soglia didattica, NON un regolamento ufficiale. Calcolatrice consentita nell’allenamento; verificare le regole effettive con il docente."
+        },
+        {
+          "text": "Procedura: 5 minuti lettura e selezione; 45 minuti risposte; 10 minuti controllo. Non guardare le soluzioni prima di concludere. Scrivi prima la formula, poi numeri e unità; rispondi con una frase manageriale dove richiesta."
+        }
+      ],
+      "concept": "Simulazioni scritte e orali"
+    },
+    {
+      "id": "prova-a",
+      "title": "PROVA SCRITTA A — 30 quesiti, 60 minuti",
+      "group": "Simulazioni scritte",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Simulazione A originale, copertura trasversale dei sei capitoli. Ogni quesito vale 1 punto. Rispondi in 1–4 righe o con passaggi sintetici dove necessario."
+        },
+        {
+          "text": "01. Definisci in una frase la differenza tra orientamento al mercato e orientamento alla vendita."
+        },
+        {
+          "text": "02. Marca A vende 240 unità su 1.200. Quanto vale MS in volume?"
+        },
+        {
+          "text": "03. Marca A fattura 3.600 € su 12.000 € di mercato. Quanto vale MS in valore?"
+        },
+        {
+          "text": "04. Su 1.000 famiglie, 500 comprano categoria e 150 marca B. Calcola BP e PS di B."
+        },
+        {
+          "text": "05. I buyers B spendono nella categoria 4.000 €, di cui 1.600 € in B. Calcola SOW."
+        },
+        {
+          "text": "06. Se MS=18%, PS=30%, SOW=50%, ricava HUI."
+        },
+        {
+          "text": "07. BDI=1,50 e CDI=1,25; MS complessiva=20%. Quanto è MS del segmento?"
+        },
+        {
+          "text": "08. Se CDI=0,8, come interpreti il risultato?"
+        },
+        {
+          "text": "09. La business unit vende 18.000 unità; il maggior concorrente 12.000. Quota relativa?"
+        },
+        {
+          "text": "10. Quote delle prime tre imprese 31%, 24%, 15%. Quanto vale CR₃?"
+        },
+        {
+          "text": "11. Per i valori 2,4,6 calcola media e varianza di popolazione."
+        },
+        {
+          "text": "12. Media reddito 50, sd 10: z-score di 65?"
+        },
+        {
+          "text": "13. Distanza euclidea tra A=(0,0), B=(6,8)."
+        },
+        {
+          "text": "14. Distanze fra due gruppi: 3,5,7,9. Qual è single linkage?"
+        },
+        {
+          "text": "15. Cluster a una dimensione con punti 0 e 4. Calcola centroide e SSE."
+        },
+        {
+          "text": "16. Separazione intercluster minima 6 e diametro massimo 2. Dunn classico?"
+        },
+        {
+          "text": "17. Marca X=(2,2), punto ideale=(5,6). Distanza euclidea?"
+        },
+        {
+          "text": "18. In una PCA gli autovalori sono 2,1,1. Quanto spiega PC1?"
+        },
+        {
+          "text": "19. Vettore preferenza w=(2,−1). Qual è utilità lineare del prodotto (3,4)?"
+        },
+        {
+          "text": "20. Segmento 1: 1.000 clienti ×2 unità, sceglie solo X. Segmento 2: 500 ×3 unità, sceglie solo Y. Vendite X e Y nel first choice?"
+        },
+        {
+          "text": "21. Domanda osservata: p=10 →Q=90, p=20→Q=70. Scrivi Q(p)."
+        },
+        {
+          "text": "22. Per Q=110−2p, quale prezzo massimizza i ricavi?"
+        },
+        {
+          "text": "23. CF=6.000 €, p=25 €, cv=10 €. Punto di pareggio in unità?"
+        },
+        {
+          "text": "24. Campagna: 20.000 impression e 300 clic. CTR?"
+        },
+        {
+          "text": "25. Cliente con 5 acquisti nel trimestre e ultimo acquisto 12 giorni prima della data di analisi: Frequency e Recency?"
+        },
+        {
+          "text": "26. Sono disponibili 5 brand e il cliente ne acquista 2. Brand Sensitivity del corso?"
+        },
+        {
+          "text": "27. Un cliente compra 6 unità X e 4 unità Y. Share of Loyalty di X?"
+        },
+        {
+          "text": "28. Un cliente distribuisce esattamente metà spesa in 2 categorie. MBV normalizzata?"
+        },
+        {
+          "text": "29. Di 250 clienti iniziali, 200 restano. Retention e churn?"
+        },
+        {
+          "text": "30. Cov(X,Y)=−12 e Var(X)=4. Pendenza regressione di Y su X?"
+        }
+      ],
+      "concept": "PROVA SCRITTA A — 30 quesiti, 60 minuti"
+    },
+    {
+      "id": "soluzioni-a",
+      "title": "SOLUZIONI RAGIONATE — PROVA A",
+      "group": "Simulazioni scritte",
+      "topics": [],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "Confrontare le risposte solo dopo lo svolgimento cronometrato. Nei calcoli sono valorizzate anche formula, denominatore e interpretazione; i risultati arrotondati coerentemente sono accettabili."
+            },
+            {
+              "text": "01. L’orientamento alla vendita parte dal prodotto da collocare, quello al mercato dai bisogni dei clienti per progettare l’offerta."
+            },
+            {
+              "text": "02. 240/1.200 = 0,20 = 20%."
+            },
+            {
+              "text": "03. 3.600/12.000 = 30%; superiore alla MS in volume, segnale di prezzo medio relativo maggiore."
+            },
+            {
+              "text": "04. BP=150/1.000=15%; PS=150/500=30%."
+            },
+            {
+              "text": "05. SOW=1.600/4.000=40%."
+            },
+            {
+              "text": "06. HUI=0,18/(0,30×0,50)=1,20; i buyers del brand consumano il 20% di categoria in più della media."
+            },
+            {
+              "text": "07. MSseg=0,20×1,50/1,25=0,24=24%."
+            },
+            {
+              "text": "08. La categoria nel segmento ha un consumo/vendita pro capite del 20% inferiore alla media del mercato."
+            },
+            {
+              "text": "09. RMS=18.000/12.000=1,50, superiore al rivale principale."
+            },
+            {
+              "text": "10. CR3=31+24+15=70%."
+            },
+            {
+              "text": "11. Media=4; varianza=[(−2)²+0+2²]/3=8/3≈2,667."
+            },
+            {
+              "text": "12. z=(65−50)/10=1,5."
+            },
+            {
+              "text": "13. √(36+64)=10."
+            },
+            {
+              "text": "14. Minimo=3. Complete sarebbe 9."
+            },
+            {
+              "text": "15. Centroide 2; SSE=(0−2)²+(4−2)²=8."
+            },
+            {
+              "text": "16. 6/2=3. Un valore alto è relativamente positivo; non giudicare senza confronto."
+            },
+            {
+              "text": "17. √[(3)²+(4)²]=5."
+            },
+            {
+              "text": "18. 2/(2+1+1)=50%."
+            },
+            {
+              "text": "19. U=2×3−1×4=2."
+            },
+            {
+              "text": "20. X=2.000 unità; Y=1.500 unità."
+            },
+            {
+              "text": "21. Pendenza (70−90)/(20−10)=−2; intercetta 110; Q=110−2p."
+            },
+            {
+              "text": "22. pR*=110/(2×2)=27,50. R(p)=110p−2p²."
+            },
+            {
+              "text": "23. QBE=6.000/(25−10)=400 unità."
+            },
+            {
+              "text": "24. CTR=300/20.000=1,5%."
+            },
+            {
+              "text": "25. F=5 acquisti/trimestre; R=12 giorni, precisando unità e finestra."
+            },
+            {
+              "text": "26. SB=1−2/5=0,60."
+            },
+            {
+              "text": "27. SOL_X=6/(6+4)=60%."
+            },
+            {
+              "text": "28. MBV=−[0,5ln0,5+0,5ln0,5]/ln2=1."
+            },
+            {
+              "text": "29. Retention=200/250=80%; churn=20%."
+            },
+            {
+              "text": "30. b=−12/4=−3 unità Y per un’unità di X."
+            }
+          ],
+          "label": "Mostra le soluzioni"
+        }
+      ],
+      "concept": "SOLUZIONI RAGIONATE — PROVA A"
+    },
+    {
+      "id": "prova-b",
+      "title": "PROVA SCRITTA B — 30 quesiti, 60 minuti",
+      "group": "Simulazioni scritte",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Simulazione B originale, copertura trasversale dei sei capitoli. Ogni quesito vale 1 punto. Rispondi in 1–4 righe o con passaggi sintetici dove necessario."
+        },
+        {
+          "text": "01. Perché la segmentazione non coincide con il targeting?"
+        },
+        {
+          "text": "02. Un mercato passa da 100 a 144 unità in due anni. CAGR?"
+        },
+        {
+          "text": "03. Tre concorrenti con quote 50%,30%,20%. HHI su scala 0–10.000?"
+        },
+        {
+          "text": "04. Riscola con min–max x=30, minimo10, massimo50."
+        },
+        {
+          "text": "05. Conosci solo i centroidi dei due cluster e la loro distanza. Puoi ricavare il Dunn classico?"
+        },
+        {
+          "text": "06. Due cluster di 2 punti ciascuno, centroidi a distanza 6. Incremento SSE Ward?"
+        },
+        {
+          "text": "07. x̄ =50, sd nota 10, n=100. IC 95% con z=1,96?"
+        },
+        {
+          "text": "08. Due cluster con medie uguali ma sd molto diverse: sono equivalenti per la profilazione?"
+        },
+        {
+          "text": "09. Cosa rappresenta un targeting differenziato?"
+        },
+        {
+          "text": "10. In una mappa similarity-based cosa rappresenta una distanza minore?"
+        },
+        {
+          "text": "11. Loadings attributo=(0,6;0,8). Calcola h e h²."
+        },
+        {
+          "text": "12. Due brand con distanze dal punto ideale 2 e 4. Quali quote nel modello inverso delle distanze?"
+        },
+        {
+          "text": "13. Descrivi una leva appropriata nella maturità del ciclo di vita del prodotto."
+        },
+        {
+          "text": "14. Domanda Q=200−4p, cv=10 €, CF=1.000 €. Prezzo che massimizza profitto?"
+        },
+        {
+          "text": "15. Se Q=200−4p al prezzo p=20, elasticità puntuale?"
+        },
+        {
+          "text": "16. Acquisto retailer a 70 €, rivendita 100 €. Margine sul prezzo e markup sul costo?"
+        },
+        {
+          "text": "17. Una marca è in 20 negozi su 50. Quei 20 pesano il 65% vendite categoria: DN e DP?"
+        },
+        {
+          "text": "18. Sondaggio: 60% promotori, 25% passivi, 15% detrattori. NPS?"
+        },
+        {
+          "text": "19. Su 200 risposte 150 sono positive (soglia definita). CSAT?"
+        },
+        {
+          "text": "20. Nel trimestre si acquisiscono 50 nuovi clienti su 500 clienti a inizio periodo. Tasso d’acquisizione su tale base?"
+        },
+        {
+          "text": "21. Conversion=30%, awareness=60%, availability=50%. Trial rate secondo il modello del corso?"
+        },
+        {
+          "text": "22. Popolazione 10.000, TR del mese 1=10%, penetrazione iniziale0; al mese2 TR=10%, RR=40%. Penetrazione mese2 del modello del corso?"
+        },
+        {
+          "text": "23. Quota spesa del cliente in categoria A=30%, quota mercato20%. RSS?"
+        },
+        {
+          "text": "24. CLTV: margine atteso 110 € al t=1 e 121 € al t=2, r=10%, CAC=40 €; probabilità di permanenza già incorporata nei margini. CLTV?"
+        },
+        {
+          "text": "25. r=−0,9 tra prezzo e quantità: prova che il prezzo causa la domanda?"
+        },
+        {
+          "text": "26. Media X=5, media Y=20, Cov(X,Y)=6, Var(X)=3. Trova retta OLS."
+        },
+        {
+          "text": "27. SST=200 e SSE=50 in un OLS con intercetta: R²?"
+        },
+        {
+          "text": "28. Prezzo cresce di 1 € e il modello prevede 12 unità in meno. Come interpreti la pendenza?"
+        },
+        {
+          "text": "29. Conjoint con U=15−0,5p e utilità alternativa fuori acquisto=5: reservation price?"
+        },
+        {
+          "text": "30. Nella regressione con intercetta e tre livelli di un attributo categorico, quante dummy indipendenti si usano?"
+        }
+      ],
+      "concept": "PROVA SCRITTA B — 30 quesiti, 60 minuti"
+    },
+    {
+      "id": "soluzioni-b",
+      "title": "SOLUZIONI RAGIONATE — PROVA B",
+      "group": "Simulazioni scritte",
+      "topics": [],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "Confrontare le risposte solo dopo lo svolgimento cronometrato. Nei calcoli sono valorizzate anche formula, denominatore e interpretazione; i risultati arrotondati coerentemente sono accettabili."
+            },
+            {
+              "text": "01. La segmentazione identifica gruppi, il targeting seleziona quali segmenti servire."
+            },
+            {
+              "text": "02. (144/100)^(1/2)−1=20% annuo."
+            },
+            {
+              "text": "03. 50²+30²+20²=3.800."
+            },
+            {
+              "text": "04. (30−10)/(50−10)=0,5."
+            },
+            {
+              "text": "05. No: servono distanze tra elementi di cluster diversi e diametri interni, non solo centroidi."
+            },
+            {
+              "text": "06. ΔSSE=2×2/(2+2)×6²=36."
+            },
+            {
+              "text": "07. 50±1,96×(10/10)= [48,04;51,96]."
+            },
+            {
+              "text": "08. No: la media è uguale, ma la dispersione e l’omogeneità differiscono."
+            },
+            {
+              "text": "09. L’impresa serve più segmenti con offerte o marketing mix distinti."
+            },
+            {
+              "text": "10. Prodotti percepiti come più simili secondo le dissimilarità raccolte; assi non sempre interpretabili a priori."
+            },
+            {
+              "text": "11. h=√(0,36+0,64)=1; h²=1 (100% della varianza rappresentata, con convenzioni standardizzate appropriate)."
+            },
+            {
+              "text": "12. Pesi 1/2,1/4; quote rispettivamente 2/3≈66,67% e 1/3≈33,33%."
+            },
+            {
+              "text": "13. Esempio: differenziare il prodotto, cercare nuove occasioni d’uso, ottimizzare mix e distribuzione; giustificare la scelta."
+            },
+            {
+              "text": "14. pπ*=(a+b×c)/(2b)=(200+40)/8=30 €."
+            },
+            {
+              "text": "15. Q=120, dQ/dp=−4, ε=−4×20/120=−2/3≈−0,667."
+            },
+            {
+              "text": "16. Margine=(100−70)/100=30%; markup=(100−70)/70=42,86%."
+            },
+            {
+              "text": "17. DN=40%; DP=65%."
+            },
+            {
+              "text": "18. NPS=60−15=+45 punti."
+            },
+            {
+              "text": "19. 150/200=75%."
+            },
+            {
+              "text": "20. 50/500=10%, ma il denominatore deve essere esplicitato; non è definizione universale."
+            },
+            {
+              "text": "21. 0,30×0,60×0,50=9%."
+            },
+            {
+              "text": "22. P1=1.000; P2=10.000×0,10+0,40×1.000=1.400 acquirenti attivi stimati."
+            },
+            {
+              "text": "23. RSS=0,30/0,20=1,5: la categoria pesa 50% in più nel mix del cliente."
+            },
+            {
+              "text": "24. CLTV=−40+110/1,1+121/(1,1²)=−40+100+100=160 €."
+            },
+            {
+              "text": "25. No: è forte associazione lineare negativa; per causalità serve disegno adeguato e controllo confondenti."
+            },
+            {
+              "text": "26. b1=6/3=2, b0=20−2×5=10; Ŷ=10+2X."
+            },
+            {
+              "text": "27. R²=1−50/200=0,75 =75%."
+            },
+            {
+              "text": "28. La pendenza −12 indica variazione attesa di −12 unità Y per +1 € X, nel campo e alle ipotesi del modello; non è elasticità percentuale."
+            },
+            {
+              "text": "29. 15−0,5p*=5 ⇒ p*=20 €."
+            },
+            {
+              "text": "30. Due dummy, più intercetta; il livello escluso è riferimento."
+            }
+          ],
+          "label": "Mostra le soluzioni"
+        }
+      ],
+      "concept": "SOLUZIONI RAGIONATE — PROVA B"
+    },
+    {
+      "id": "orale",
+      "title": "Simulazioni orali – tre sessioni da circa 30 minuti",
+      "group": "Simulazioni orali",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Ogni sessione segue la struttura dichiarata dal programma: tre domande che coprono l’intero insegnamento. Le tracce sono ORIGINALI, non quesiti estratti dal verbale d’esame. Allenati con 6–8 minuti di risposta per domanda, 1–2 minuti di domande di approfondimento e tempo finale per collegamenti."
+        }
+      ],
+      "concept": "Simulazioni orali – tre sessioni da circa 30 minuti"
+    },
+    {
+      "id": "orale-1",
+      "title": "Sessione orale 1 – Dalla strategia ai dati",
+      "group": "Simulazioni orali",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Domanda 1. Spiega l’identità MS=PS×SOW×HUI e illustra come imposteresti una diagnosi competitiva."
+        },
+        {
+          "worked": [
+            {
+              "text": "Definisci categoria e periodo; distingue tre denominatori; dimostra cancellazioni; esempio numerico; indica leva manageriale senza attribuire causalità automatica."
+            }
+          ],
+          "label": "Traccia di risposta attesa"
+        },
+        {
+          "text": "Domanda 2. Come costruiresti, valuteresti e profileresti i segmenti di un mercato?"
+        },
+        {
+          "worked": [
+            {
+              "text": "STP, basi e descrittori, scale, distanze, standardizzazione, K-means vs gerarchico, SSE/Dunn/DB, campionamento e IC; concludi su azionabilità."
+            }
+          ],
+          "label": "Traccia di risposta attesa"
+        },
+        {
+          "text": "Domanda 3. Come usi una regressione per stimare la sensibilità al prezzo e decidere il prezzo di un prodotto?"
+        },
+        {
+          "worked": [
+            {
+              "text": "Cov/Var, intercetta, residui e R²; funzione domanda, elasticità, pR e pπ; caveat causalità, costi e estrapolazione."
+            }
+          ],
+          "label": "Traccia di risposta attesa"
+        }
+      ],
+      "concept": "Sessione orale 1 – Dalla strategia ai dati"
+    },
+    {
+      "id": "orale-2",
+      "title": "Sessione orale 2 – Posizionamento e relazione col cliente",
+      "group": "Simulazioni orali",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Domanda 1. Differenziazione e posizionamento: descrivi una mappa attribute-based e una similarity-based."
+        },
+        {
+          "worked": [
+            {
+              "text": "Punti parità/differenza, loadings vs scores, PCA e varianza spiegata; MDS, stress, scelta tra tecniche e limiti interpretativi."
+            }
+          ],
+          "label": "Traccia di risposta attesa"
+        },
+        {
+          "text": "Domanda 2. Come trasformi una mappa di preferenze in stime di vendita per due segmenti?"
+        },
+        {
+          "worked": [
+            {
+              "text": "Ideal point o vettoriale; distanze; first choice vs share of preference; domanda totale, pesi segmentali, casi limite; confronto vendite reali."
+            }
+          ],
+          "label": "Traccia di risposta attesa"
+        },
+        {
+          "text": "Domanda 3. Come misuri la qualità della relazione con i clienti e ne stimi il valore economico?"
+        },
+        {
+          "worked": [
+            {
+              "text": "F e R, SOL, retention/churn, CLTV probabilistico; scontrino, RSS, MBV, CSAT/NPS; non confondere soddisfazione e comportamento."
+            }
+          ],
+          "label": "Traccia di risposta attesa"
+        }
+      ],
+      "concept": "Sessione orale 2 – Posizionamento e relazione col cliente"
+    },
+    {
+      "id": "orale-3",
+      "title": "Sessione orale 3 – Marketing mix integrato",
+      "group": "Simulazioni orali",
+      "topics": [],
+      "blocks": [
+        {
+          "text": "Domanda 1. Dalla segmentazione alle decisioni di prodotto: spiega marketing mix, assortimento, ciclo di vita e cannibalizzazione."
+        },
+        {
+          "worked": [
+            {
+              "text": "STP → prodotto; classi e livelli; matrice Ansoff; fasi PLC, strategie lancio; marginalità e cannibalizzazione."
+            }
+          ],
+          "label": "Traccia di risposta attesa"
+        },
+        {
+          "text": "Domanda 2. Progetta e valuta un piano di comunicazione e distribuzione per un nuovo servizio."
+        },
+        {
+          "worked": [
+            {
+              "text": "Target/obiettivi, IMC e gerarchia effetti; canali push/pull, DN/DP, reach, CTR, CPA/ROAS; contrasti tra metriche e attribuzione."
+            }
+          ],
+          "label": "Traccia di risposta attesa"
+        },
+        {
+          "text": "Domanda 3. Come useresti conjoint, regressione e reservation price per valutare un’offerta?"
+        },
+        {
+          "worked": [
+            {
+              "text": "Attributi e livelli, dummy, partworth, utilità, importance, prezzo come livello, outside option, stima massima WTP, ipotesi e bias dichiarativi."
+            }
+          ],
+          "label": "Traccia di risposta attesa"
+        }
+      ],
+      "concept": "Sessione orale 3 – Marketing mix integrato"
+    },
+    {
+      "id": "griglia-orale",
+      "title": "Griglia personale per valutare l’orale",
+      "group": "Simulazioni orali",
+      "topics": [],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Dimensione",
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            [
+              "Definizioni",
+              "Errate",
+              "Incomplete",
+              "Corrette",
+              "Rigorose, contestualizzate"
+            ],
+            [
+              "Formule e passaggi",
+              "Assenti",
+              "Confusi",
+              "Corretti",
+              "Dimostrati e interpretati"
+            ],
+            [
+              "Collegamenti",
+              "Assenti",
+              "Limitati",
+              "Appropriati",
+              "Trasversali e critici"
+            ],
+            [
+              "Esempi e giudizio",
+              "Assenti",
+              "Deboli",
+              "Pertinenti",
+              "Applicati e con limiti"
+            ]
+          ]
+        },
+        {
+          "text": "Attribuire 0–3 punti a ciascuna dimensione per ogni risposta (massimo 12). Non è una griglia ufficiale del docente; serve a rendere osservabili i progressi."
+        },
+        {
+          "heading": "Percorso di consolidamento consigliato"
+        },
+        {
+          "table": [
+            [
+              "1.",
+              "Primo passaggio: svolgi la prova scritta A senza appunti. Annota gli errori per capitolo."
+            ],
+            [
+              "2.",
+              "Secondo: ripassa solo le formule errate nel formulario e rifai i quesiti senza vedere le soluzioni."
+            ],
+            [
+              "3.",
+              "Terzo: affronta 3 esercizi storici prioritari (H02 prezzo, H03 quote, H11 clustering) con tutti i passaggi."
+            ],
+            [
+              "4.",
+              "Quarto: svolgi la prova scritta B in condizioni analoghe; confronta progressi su precisione e gestione del tempo."
+            ],
+            [
+              "5.",
+              "Quinto: registra tre risposte orali per sessione e valuta se sai spiegare il significato manageriale dei numeri."
+            ],
+            [
+              "6.",
+              "Sesto: costruisci una lista finale di 10 errori personali ricorrenti: denominatori, unità, ipotesi, rappresentazioni e interpretazioni."
+            ]
+          ]
+        }
+      ],
+      "concept": "Griglia personale per valutare l’orale"
+    }
+  ],
+  "relations": [
+    {
+      "relation": "Le verifiche di regressione si possono riprendere dal formulario",
+      "to": "formule-6",
+      "from": "revisione-e"
+    },
+    {
+      "relation": "La prima prova applica la procedura di allenamento scritto",
+      "to": "prova-a",
+      "from": "istruzioni"
+    },
+    {
+      "relation": "La seconda prova offre un’altra applicazione trasversale",
+      "to": "prova-b",
+      "from": "istruzioni"
+    },
+    {
+      "relation": "Confronta i calcoli dopo lo svolgimento",
+      "to": "soluzioni-a",
+      "from": "prova-a"
+    },
+    {
+      "relation": "Confronta le risposte usando i criteri di autocorrezione",
+      "to": "soluzioni-b",
+      "from": "prova-b"
+    },
+    {
+      "relation": "Allenati a collegare strategia e dati",
+      "to": "orale-1",
+      "from": "orale"
+    }
+  ]
+}

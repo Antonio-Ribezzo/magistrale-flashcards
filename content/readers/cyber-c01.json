@@ -1,0 +1,97 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Obiettivi di sicurezza e triade CIA",
+      "concept": "Obiettivi di sicurezza e triade CIA",
+      "topics": [
+        "cyber-c01-t01",
+        "cyber-c01-t02",
+        "cyber-c01-t03",
+        "cyber-c01-t04",
+        "cyber-c01-t05"
+      ],
+      "pages": [
+        15,
+        16
+      ],
+      "blocks": [
+        {
+          "text": "Riservatezza significa accesso consentito ai soggetti autorizzati, integrità significa conservazione della correttezza di dati e sistemi, disponibilità significa continuità d’uso quando serve. Un controllo può contribuire a più obiettivi, ma va valutato rispetto al requisito concreto."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Identità, autenticità e responsabilità",
+      "concept": "Identità, autenticità e responsabilità",
+      "topics": [
+        "cyber-c01-t06",
+        "cyber-c01-t07"
+      ],
+      "pages": [
+        16
+      ],
+      "blocks": [
+        {
+          "text": "L’identificazione dichiara chi è il soggetto, l’autenticazione verifica la pretesa e l’accountability attribuisce le operazioni a soggetti o processi. L’autenticità riguarda anche provenienza e integrità dei messaggi. Il non ripudio richiede evidenze coerenti e una gestione affidabile delle credenziali."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Asset, esposizione e rischio",
+      "concept": "Asset, esposizione e rischio",
+      "topics": [
+        "cyber-c01-t11",
+        "cyber-c01-t14",
+        "cyber-c01-t17"
+      ],
+      "pages": [
+        18,
+        20
+      ],
+      "blocks": [
+        {
+          "text": "Parti dagli asset e dai servizi che generano valore. Uno scenario di rischio combina una minaccia, una debolezza o condizione di esposizione e conseguenze per l’organizzazione. Le decisioni di protezione dipendono da probabilità, impatto e costo dei controlli."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Policy e ciclo di sicurezza",
+      "concept": "Policy e ciclo di sicurezza",
+      "topics": [
+        "cyber-c01-t16",
+        "cyber-c01-t18",
+        "cyber-c01-t19"
+      ],
+      "pages": [
+        20,
+        21
+      ],
+      "blocks": [
+        {
+          "text": "La policy rende espliciti obiettivi, responsabilità e regole. Prevenzione, rilevazione, risposta e ripristino sono complementari. Le evidenze raccolte durante il ciclo aiutano a rivedere misure, responsabilità e priorità."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "1",
+      "to": "2",
+      "relation": "Gli obiettivi includono anche requisiti di fiducia e attribuzione."
+    },
+    {
+      "from": "1",
+      "to": "3",
+      "relation": "L’impatto di uno scenario si valuta sugli obiettivi e sugli asset."
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "relation": "Il rischio orienta priorità e responsabilità lungo tutto il ciclo."
+    }
+  ]
+}

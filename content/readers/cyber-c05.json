@@ -1,0 +1,91 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Rilevamento e risposta al malware",
+      "concept": "Rilevamento e risposta al malware",
+      "topics": [
+        "cyber-c05-t06",
+        "cyber-c05-t07"
+      ],
+      "pages": [
+        67,
+        68
+      ],
+      "blocks": [
+        {
+          "text": "Firme e indicatori aiutano a riconoscere ciò che è noto. Telemetria comportamentale ed EDR aggiungono contesto su eventi, processi e sistemi coinvolti. La risposta collega rilevamento, contenimento, conservazione delle evidenze e recupero, verificando anche l’efficacia dei backup."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Protezione dei dati nelle applicazioni",
+      "concept": "Protezione dei dati nelle applicazioni",
+      "topics": [
+        "cyber-c05-t10"
+      ],
+      "pages": [
+        72
+      ],
+      "blocks": [
+        {
+          "text": "Le query parametrizzate mantengono separati istruzioni e valori. Validazione, privilegi minimi e logging completano il controllo. Nei contenuti Web la codifica dell’output deve essere coerente con il contesto di visualizzazione."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Continuità del servizio e risposta al traffico anomalo",
+      "concept": "Continuità del servizio e risposta al traffico anomalo",
+      "topics": [
+        "cyber-c05-t14"
+      ],
+      "pages": [
+        77
+      ],
+      "blocks": [
+        {
+          "text": "Disponibilità e capacità vanno misurate alla luce dei normali pattern di traffico. Limiti proporzionati, monitoraggio e coordinamento con il fornitore di connettività aiutano a gestire l’eccesso di carico. Le contromisure si valutano anche per il loro impatto sugli utenti legittimi."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Sicurezza della memoria e controlli complementari",
+      "concept": "Sicurezza della memoria e controlli complementari",
+      "topics": [
+        "cyber-c05-t16",
+        "cyber-c05-t17",
+        "cyber-c05-t18"
+      ],
+      "pages": [
+        79,
+        80,
+        81
+      ],
+      "blocks": [
+        {
+          "text": "Controlli sui limiti, strumenti di analisi, linguaggi con garanzie di memoria dove appropriati e mitigazioni della piattaforma riducono rischi differenti. Per valutare un’applicazione collega le misure alla causa della debolezza, agli effetti attesi e alle evidenze di verifica."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "1",
+      "to": "4",
+      "relation": "La risposta operativa è un livello della difesa complessiva."
+    },
+    {
+      "from": "2",
+      "to": "4",
+      "relation": "La progettazione sicura interviene sulle cause prima del rilascio."
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "relation": "La continuità richiede misure diverse dalla sola protezione dell’applicazione."
+    }
+  ]
+}

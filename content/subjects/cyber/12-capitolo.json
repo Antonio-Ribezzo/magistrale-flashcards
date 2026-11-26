@@ -1,0 +1,2702 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cyber",
+  "source": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12: Laboratorio e Applicazioni pratiche, pagine PDF 208–232; unica fonte autorizzata.",
+  "chapter": {
+    "id": "cyber-c12",
+    "title": "Laboratorio e Applicazioni pratiche",
+    "order": 12,
+    "topics": [
+      {
+        "id": "cyber-c12-t01",
+        "title": "Metodo del laboratorio, strumenti e Packet Tracer"
+      },
+      {
+        "id": "cyber-c12-t02",
+        "title": "Analisi dei file .pkt del docente e documentazione"
+      },
+      {
+        "id": "cyber-c12-t03",
+        "title": "Metodo sperimentale, prove positive e negative"
+      },
+      {
+        "id": "cyber-c12-t04",
+        "title": "Laboratorio 1: LAN, ARP, ICMP e MAC learning"
+      },
+      {
+        "id": "cyber-c12-t05",
+        "title": "Laboratorio 2: DHCP, DNS e HTTP"
+      },
+      {
+        "id": "cyber-c12-t06",
+        "title": "Laboratorio 3: VLAN, access e trunk su due switch"
+      },
+      {
+        "id": "cyber-c12-t07",
+        "title": "Laboratorio 4: router-on-a-stick e routing inter-VLAN"
+      },
+      {
+        "id": "cyber-c12-t08",
+        "title": "Laboratorio 5: ACL estese e policy per gli ospiti"
+      },
+      {
+        "id": "cyber-c12-t09",
+        "title": "Laboratorio 6: SSH, gestione degli apparati e hardening"
+      },
+      {
+        "id": "cyber-c12-t10",
+        "title": "Laboratorio 7: DHCP snooping e Dynamic ARP Inspection"
+      },
+      {
+        "id": "cyber-c12-t11",
+        "title": "Laboratorio 8: Wi-Fi aziendale e rete ospiti"
+      },
+      {
+        "id": "cyber-c12-t12",
+        "title": "Laboratorio 9: HTTPS, certificati e verifica TLS"
+      },
+      {
+        "id": "cyber-c12-t13",
+        "title": "Laboratorio 10: analisi e risposta a un incidente simulato"
+      },
+      {
+        "id": "cyber-c12-t14",
+        "title": "Progetto integrato: rete sicura di un ufficio"
+      },
+      {
+        "id": "cyber-c12-t15",
+        "title": "Troubleshooting sistematico della rete"
+      },
+      {
+        "id": "cyber-c12-t16",
+        "title": "Esercizi applicativi e soluzioni ragionate"
+      },
+      {
+        "id": "cyber-c12-t17",
+        "title": "Preparazione orale, glossario e autonomia operativa"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§12.1 — pagina PDF 208",
+        "cardIds": [
+          "cyber-c12-q001",
+          "cyber-c12-q002",
+          "cyber-c12-q003"
+        ]
+      },
+      {
+        "label": "§12.1.1 — pagina PDF 208",
+        "cardIds": [
+          "cyber-c12-q004",
+          "cyber-c12-q005",
+          "cyber-c12-q006"
+        ]
+      },
+      {
+        "label": "§12.1.2 — pagina PDF 209",
+        "cardIds": [
+          "cyber-c12-q007",
+          "cyber-c12-q008"
+        ]
+      },
+      {
+        "label": "§12.1.3 — pagina PDF 209",
+        "cardIds": [
+          "cyber-c12-q009",
+          "cyber-c12-q010",
+          "cyber-c12-q153"
+        ]
+      },
+      {
+        "label": "§12.1.4 — pagina PDF 209",
+        "cardIds": [
+          "cyber-c12-q011",
+          "cyber-c12-q012",
+          "cyber-c12-q013",
+          "cyber-c12-q154"
+        ]
+      },
+      {
+        "label": "§12.2 — pagina PDF 210",
+        "cardIds": [
+          "cyber-c12-q014",
+          "cyber-c12-q015"
+        ]
+      },
+      {
+        "label": "§12.2.1 — pagina PDF 210",
+        "cardIds": [
+          "cyber-c12-q016",
+          "cyber-c12-q017",
+          "cyber-c12-q018",
+          "cyber-c12-q019",
+          "cyber-c12-q155"
+        ]
+      },
+      {
+        "label": "§12.2.2 — pagina PDF 211",
+        "cardIds": [
+          "cyber-c12-q020",
+          "cyber-c12-q021",
+          "cyber-c12-q156"
+        ]
+      },
+      {
+        "label": "§12.3 — pagina PDF 211",
+        "cardIds": [
+          "cyber-c12-q022",
+          "cyber-c12-q023",
+          "cyber-c12-q024"
+        ]
+      },
+      {
+        "label": "§12.3.1 — pagina PDF 212",
+        "cardIds": [
+          "cyber-c12-q025",
+          "cyber-c12-q026",
+          "cyber-c12-q157"
+        ]
+      },
+      {
+        "label": "§12.3.2 — pagina PDF 212",
+        "cardIds": [
+          "cyber-c12-q027"
+        ]
+      },
+      {
+        "label": "§12.4 — pagina PDF 212",
+        "cardIds": [
+          "cyber-c12-q028"
+        ]
+      },
+      {
+        "label": "§12.4.1 — pagina PDF 212",
+        "cardIds": [
+          "cyber-c12-q029"
+        ]
+      },
+      {
+        "label": "§12.4.2 — pagina PDF 213",
+        "cardIds": [
+          "cyber-c12-q030",
+          "cyber-c12-q031"
+        ]
+      },
+      {
+        "label": "§12.4.3 — pagina PDF 213",
+        "cardIds": [
+          "cyber-c12-q032",
+          "cyber-c12-q033",
+          "cyber-c12-q158"
+        ]
+      },
+      {
+        "label": "§12.4.4 — pagina PDF 213",
+        "cardIds": [
+          "cyber-c12-q034"
+        ]
+      },
+      {
+        "label": "§12.5 — pagina PDF 213",
+        "cardIds": [
+          "cyber-c12-q035"
+        ]
+      },
+      {
+        "label": "§12.5.1 — pagina PDF 213",
+        "cardIds": [
+          "cyber-c12-q036",
+          "cyber-c12-q037"
+        ]
+      },
+      {
+        "label": "§12.5.2 — pagina PDF 214",
+        "cardIds": [
+          "cyber-c12-q038",
+          "cyber-c12-q159"
+        ]
+      },
+      {
+        "label": "§12.5.3 — pagina PDF 214",
+        "cardIds": [
+          "cyber-c12-q039"
+        ]
+      },
+      {
+        "label": "§12.5.4 — pagina PDF 214",
+        "cardIds": [
+          "cyber-c12-q040",
+          "cyber-c12-q160"
+        ]
+      },
+      {
+        "label": "§12.6 — pagina PDF 214",
+        "cardIds": [
+          "cyber-c12-q041"
+        ]
+      },
+      {
+        "label": "§12.6.1 — pagina PDF 214",
+        "cardIds": [
+          "cyber-c12-q042"
+        ]
+      },
+      {
+        "label": "§12.6.2 — pagina PDF 215",
+        "cardIds": [
+          "cyber-c12-q043",
+          "cyber-c12-q044",
+          "cyber-c12-q161"
+        ]
+      },
+      {
+        "label": "§12.6.3 — pagina PDF 215",
+        "cardIds": [
+          "cyber-c12-q045"
+        ]
+      },
+      {
+        "label": "§12.6.4 — pagina PDF 216",
+        "cardIds": [
+          "cyber-c12-q046"
+        ]
+      },
+      {
+        "label": "§12.6.5 — pagina PDF 216",
+        "cardIds": [
+          "cyber-c12-q047"
+        ]
+      },
+      {
+        "label": "§12.7 — pagina PDF 216",
+        "cardIds": [
+          "cyber-c12-q048"
+        ]
+      },
+      {
+        "label": "§12.7.1 — pagina PDF 216",
+        "cardIds": [
+          "cyber-c12-q049"
+        ]
+      },
+      {
+        "label": "§12.7.2 — pagina PDF 217",
+        "cardIds": [
+          "cyber-c12-q050"
+        ]
+      },
+      {
+        "label": "§12.7.3 — pagina PDF 217",
+        "cardIds": [
+          "cyber-c12-q051",
+          "cyber-c12-q052"
+        ]
+      },
+      {
+        "label": "§12.7.4 — pagina PDF 217",
+        "cardIds": [
+          "cyber-c12-q053",
+          "cyber-c12-q054",
+          "cyber-c12-q162"
+        ]
+      },
+      {
+        "label": "§12.8 — pagina PDF 218",
+        "cardIds": [
+          "cyber-c12-q055",
+          "cyber-c12-q056"
+        ]
+      },
+      {
+        "label": "§12.8.1 — pagina PDF 218",
+        "cardIds": [
+          "cyber-c12-q057"
+        ]
+      },
+      {
+        "label": "§12.8.2 — pagina PDF 218",
+        "cardIds": [
+          "cyber-c12-q058"
+        ]
+      },
+      {
+        "label": "§12.8.3 — pagina PDF 218",
+        "cardIds": [
+          "cyber-c12-q059",
+          "cyber-c12-q060",
+          "cyber-c12-q061",
+          "cyber-c12-q062"
+        ]
+      },
+      {
+        "label": "§12.8.4 — pagina PDF 219",
+        "cardIds": [
+          "cyber-c12-q063",
+          "cyber-c12-q064",
+          "cyber-c12-q163"
+        ]
+      },
+      {
+        "label": "§12.8.5 — pagina PDF 219",
+        "cardIds": [
+          "cyber-c12-q065",
+          "cyber-c12-q066"
+        ]
+      },
+      {
+        "label": "§12.9 — pagina PDF 219",
+        "cardIds": [
+          "cyber-c12-q067"
+        ]
+      },
+      {
+        "label": "§12.9.1 — pagina PDF 219",
+        "cardIds": [
+          "cyber-c12-q068",
+          "cyber-c12-q069"
+        ]
+      },
+      {
+        "label": "§12.9.2 — pagina PDF 219",
+        "cardIds": [
+          "cyber-c12-q070",
+          "cyber-c12-q071"
+        ]
+      },
+      {
+        "label": "§12.9.3 — pagina PDF 220",
+        "cardIds": [
+          "cyber-c12-q072",
+          "cyber-c12-q164"
+        ]
+      },
+      {
+        "label": "§12.9.4 — pagina PDF 220",
+        "cardIds": [
+          "cyber-c12-q073"
+        ]
+      },
+      {
+        "label": "§12.10 — pagina PDF 220",
+        "cardIds": [
+          "cyber-c12-q074"
+        ]
+      },
+      {
+        "label": "§12.10.1 — pagina PDF 220",
+        "cardIds": [
+          "cyber-c12-q075",
+          "cyber-c12-q076",
+          "cyber-c12-q077"
+        ]
+      },
+      {
+        "label": "§12.10.2 — pagina PDF 221",
+        "cardIds": [
+          "cyber-c12-q078",
+          "cyber-c12-q079",
+          "cyber-c12-q165"
+        ]
+      },
+      {
+        "label": "§12.10.3 — pagina PDF 221",
+        "cardIds": [
+          "cyber-c12-q080"
+        ]
+      },
+      {
+        "label": "§12.11 — pagina PDF 221",
+        "cardIds": [
+          "cyber-c12-q081"
+        ]
+      },
+      {
+        "label": "§12.11.1 — pagina PDF 221",
+        "cardIds": [
+          "cyber-c12-q082",
+          "cyber-c12-q083"
+        ]
+      },
+      {
+        "label": "§12.11.2 — pagina PDF 221",
+        "cardIds": [
+          "cyber-c12-q084",
+          "cyber-c12-q166"
+        ]
+      },
+      {
+        "label": "§12.11.3 — pagina PDF 222",
+        "cardIds": [
+          "cyber-c12-q085",
+          "cyber-c12-q086"
+        ]
+      },
+      {
+        "label": "§12.12 — pagina PDF 222",
+        "cardIds": [
+          "cyber-c12-q087"
+        ]
+      },
+      {
+        "label": "§12.12.1 — pagina PDF 222",
+        "cardIds": [
+          "cyber-c12-q088"
+        ]
+      },
+      {
+        "label": "§12.12.2 — pagina PDF 222",
+        "cardIds": [
+          "cyber-c12-q089",
+          "cyber-c12-q090",
+          "cyber-c12-q167"
+        ]
+      },
+      {
+        "label": "§12.12.3 — pagina PDF 222",
+        "cardIds": [
+          "cyber-c12-q091"
+        ]
+      },
+      {
+        "label": "§12.12.4 — pagina PDF 222",
+        "cardIds": [
+          "cyber-c12-q092",
+          "cyber-c12-q093"
+        ]
+      },
+      {
+        "label": "§12.13 — pagina PDF 223",
+        "cardIds": [
+          "cyber-c12-q094"
+        ]
+      },
+      {
+        "label": "§12.13.1 — pagina PDF 223",
+        "cardIds": [
+          "cyber-c12-q095",
+          "cyber-c12-q096"
+        ]
+      },
+      {
+        "label": "§12.13.2 — pagina PDF 223",
+        "cardIds": [
+          "cyber-c12-q097",
+          "cyber-c12-q098",
+          "cyber-c12-q099",
+          "cyber-c12-q100"
+        ]
+      },
+      {
+        "label": "§12.13.3 — pagina PDF 223",
+        "cardIds": [
+          "cyber-c12-q101",
+          "cyber-c12-q102"
+        ]
+      },
+      {
+        "label": "§12.13.4 — pagina PDF 224",
+        "cardIds": [
+          "cyber-c12-q103",
+          "cyber-c12-q104",
+          "cyber-c12-q105",
+          "cyber-c12-q106"
+        ]
+      },
+      {
+        "label": "§12.13.5 — pagina PDF 224",
+        "cardIds": [
+          "cyber-c12-q107",
+          "cyber-c12-q168"
+        ]
+      },
+      {
+        "label": "§12.13.6 — pagina PDF 224",
+        "cardIds": [
+          "cyber-c12-q108",
+          "cyber-c12-q109",
+          "cyber-c12-q110",
+          "cyber-c12-q169"
+        ]
+      },
+      {
+        "label": "§12.13.7 — pagina PDF 224",
+        "cardIds": [
+          "cyber-c12-q111",
+          "cyber-c12-q112"
+        ]
+      },
+      {
+        "label": "§12.14 — pagina PDF 225",
+        "cardIds": [
+          "cyber-c12-q113"
+        ]
+      },
+      {
+        "label": "§12.14.1 — pagina PDF 225",
+        "cardIds": [
+          "cyber-c12-q114",
+          "cyber-c12-q115",
+          "cyber-c12-q170"
+        ]
+      },
+      {
+        "label": "§12.14.2 — pagina PDF 225",
+        "cardIds": [
+          "cyber-c12-q116",
+          "cyber-c12-q117"
+        ]
+      },
+      {
+        "label": "§12.14.3 — pagina PDF 225",
+        "cardIds": [
+          "cyber-c12-q118",
+          "cyber-c12-q119"
+        ]
+      },
+      {
+        "label": "§12.14.4 — pagina PDF 226",
+        "cardIds": [
+          "cyber-c12-q120",
+          "cyber-c12-q121"
+        ]
+      },
+      {
+        "label": "§12.15 — pagina PDF 226",
+        "cardIds": [
+          "cyber-c12-q122",
+          "cyber-c12-q123",
+          "cyber-c12-q124",
+          "cyber-c12-q171"
+        ]
+      },
+      {
+        "label": "§12.15.1 — pagina PDF 227",
+        "cardIds": [
+          "cyber-c12-q125",
+          "cyber-c12-q126",
+          "cyber-c12-q127",
+          "cyber-c12-q128"
+        ]
+      },
+      {
+        "label": "§12.16 — pagina PDF 227",
+        "cardIds": [
+          "cyber-c12-q129",
+          "cyber-c12-q130",
+          "cyber-c12-q131",
+          "cyber-c12-q132",
+          "cyber-c12-q133",
+          "cyber-c12-q134",
+          "cyber-c12-q135",
+          "cyber-c12-q136",
+          "cyber-c12-q137",
+          "cyber-c12-q138"
+        ]
+      },
+      {
+        "label": "§12.17 — pagina PDF 228",
+        "cardIds": [
+          "cyber-c12-q139",
+          "cyber-c12-q140",
+          "cyber-c12-q141",
+          "cyber-c12-q142",
+          "cyber-c12-q143"
+        ]
+      },
+      {
+        "label": "§12.18 — pagina PDF 231",
+        "cardIds": [
+          "cyber-c12-q144",
+          "cyber-c12-q145",
+          "cyber-c12-q146",
+          "cyber-c12-q147",
+          "cyber-c12-q148"
+        ]
+      },
+      {
+        "label": "§12.19 — pagina PDF 232",
+        "cardIds": [
+          "cyber-c12-q149",
+          "cyber-c12-q150"
+        ]
+      },
+      {
+        "label": "§12.19.1 — pagina PDF 232",
+        "cardIds": [
+          "cyber-c12-q151",
+          "cyber-c12-q152",
+          "cyber-c12-q172"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cyber-c12-q001",
+      "topicId": "cyber-c12-t01",
+      "question": "Qual è la finalità del Capitolo 12 e perché non basta che una topologia funzioni?",
+      "answer": "Trasformare le conoscenze teoriche in capacità di configurare, osservare, verificare e motivare controlli di sicurezza.",
+      "detail": "Occorre spiegare perché la comunicazione funziona, quali proprietà sono garantite, quali prove lo dimostrano e quali rischi rimangono. Una rete raggiungibile può non essere autorizzata né protetta.",
+      "example": "Un ping riuscito conferma la connettività, non la cifratura o il controllo dei privilegi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare funzionamento tecnico e sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1, pagina PDF 208"
+    },
+    {
+      "id": "cyber-c12-q002",
+      "topicId": "cyber-c12-t01",
+      "question": "Quali sono i quattro tipi di risultato che dovrebbe produrre una buona esercitazione?",
+      "answer": "Risultato funzionale, risultato di sicurezza, risultato osservabile e risultato gestionale.",
+      "detail": "Il funzionale verifica il servizio; quello di sicurezza verifica il rifiuto di operazioni non autorizzate; quello osservabile raccoglie tracce, tabelle e log; quello gestionale giustifica controlli per impatto, costo e operatività.",
+      "example": "Un servizio web accessibile solo dagli uffici, confermato da ACL e test, combina i primi tre risultati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una schermata senza spiegazione non è una prova completa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1, pagina PDF 208"
+    },
+    {
+      "id": "cyber-c12-q003",
+      "topicId": "cyber-c12-t01",
+      "question": "Che cosa significa interpretare criticamente una prova di sicurezza?",
+      "answer": "Collegare un esito a un requisito, a una configurazione specifica e a evidenze verificabili, dichiarandone i limiti.",
+      "detail": "La stessa prova può riuscire per motivi diversi: un traffico bloccato potrebbe derivare da una policy ma anche da un guasto. Il laboratorio deve isolare la causa e registrare le condizioni iniziali.",
+      "example": "Prima di attribuire il blocco alla ACL, verificare route, stato porte, sorgente e destinatario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare un singolo sintomo in una conclusione certa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1, pagina PDF 208"
+    },
+    {
+      "id": "cyber-c12-q004",
+      "topicId": "cyber-c12-t01",
+      "question": "A cosa serve Cisco Packet Tracer e quale limite deve essere dichiarato?",
+      "answer": "Simula topologie, host, apparati, configurazioni e un sottoinsieme dei protocolli; non riproduce integralmente dispositivi reali, vulnerabilità e funzioni di sicurezza.",
+      "detail": "È utile per seguire PDU e comportamenti didattici, ma i suoi risultati non costituiscono audit di una rete produttiva. Il supporto dipende dai modelli e dalla versione.",
+      "example": "Un handshake HTTPS simulato non certifica la robustezza di una PKI reale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire al simulatore un livello di fedeltà che non garantisce.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1.1, pagina PDF 208"
+    },
+    {
+      "id": "cyber-c12-q005",
+      "topicId": "cyber-c12-t01",
+      "question": "Quali strumenti si usano per osservare configurazioni e traffico nel laboratorio?",
+      "answer": "CLI IOS simulata, terminale PC, browser simulato, Simulation Mode e scheda delle evidenze; Wireshark esterno è opzionale.",
+      "detail": "La CLI permette comandi show e configurazione; il terminale offre ping, ipconfig e arp nei limiti del simulatore; il browser verifica servizi; Wireshark analizza catture autorizzate ma non è integrato in Packet Tracer.",
+      "example": "Usare show vlan brief sullo switch e arp -a sul PC, se supportati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il terminale simulato con una shell completa di Windows o Linux.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1.1, pagina PDF 208"
+    },
+    {
+      "id": "cyber-c12-q006",
+      "topicId": "cyber-c12-t01",
+      "question": "Perché la scheda di evidenze va compilata anche quando un test fallisce?",
+      "answer": "Perché il fallimento è un dato utile da diagnosticare, non un risultato da omettere.",
+      "detail": "Documentare input, configurazione, comportamento atteso e osservato aiuta a individuare il livello responsabile, ripetere il test e spiegare il significato del risultato.",
+      "example": "Annotare un ping fallito con IP sorgente e destinazione, timestamp e stato del gateway.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non riportare soltanto le prove riuscite.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1.1, pagina PDF 208"
+    },
+    {
+      "id": "cyber-c12-q007",
+      "topicId": "cyber-c12-t01",
+      "question": "Qual è il percorso indicato dal manuale per ottenere e iniziare a usare Packet Tracer?",
+      "answer": "Accedere a Cisco Networking Academy, seguire Getting Started with Cisco Packet Tracer, installare la versione compatibile, effettuare l’accesso e salvare una nuova topologia.",
+      "detail": "Le istruzioni ufficiali distinguono macOS, Windows e Linux. Il manuale raccomanda fonti Cisco anziché installazioni da siti terzi; una topologia va salvata con nome descrittivo.",
+      "example": "Aprire netacad.com e seguire il corso gratuito di avvio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che un pacchetto per un sistema operativo funzioni su un altro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1.2, pagina PDF 209"
+    },
+    {
+      "id": "cyber-c12-q008",
+      "topicId": "cyber-c12-t01",
+      "question": "In cosa si differenziano la vista Logical e la vista Physical di Packet Tracer?",
+      "answer": "Logical visualizza la topologia funzionale e i collegamenti; Physical rappresenta l’organizzazione fisica dell’ambiente.",
+      "detail": "Per configurare VLAN, apparati e verificare i flussi si opera prevalentemente in Logical. La rappresentazione Physical offre una prospettiva ambientale, senza sostituire la verifica delle configurazioni.",
+      "example": "Per individuare una connessione SW1–SW2 usare la vista Logical.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare la vista fisica come prova della configurazione dei protocolli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1.2, pagina PDF 209"
+    },
+    {
+      "id": "cyber-c12-q009",
+      "topicId": "cyber-c12-t01",
+      "question": "Qual è la differenza fra Real-time e Simulation Mode?",
+      "answer": "Real-time esegue il comportamento complessivo della rete; Simulation permette di avanzare per eventi e ispezionare i protocolli e il percorso delle PDU.",
+      "detail": "Simulation è adatta a ricostruire ARP, ICMP e DHCP e a filtrare i protocolli osservati. Il dettaglio varia in base al supporto del simulatore.",
+      "example": "Per un ping si filtra ARP/ICMP e si esaminano richiesta ARP ed Echo Request.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che ogni pacchetto o campo reale sia visibile in Simulation.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1.3, pagina PDF 209"
+    },
+    {
+      "id": "cyber-c12-q010",
+      "topicId": "cyber-c12-t01",
+      "question": "A cosa servono Add Simple PDU e i filtri degli eventi?",
+      "answer": "Add Simple PDU avvia una prova ICMP scegliendo sorgente e destinazione; i filtri mostrano soltanto i protocolli d’interesse.",
+      "detail": "Filtrare il traffico migliora la leggibilità degli scambi e permette di collegare i singoli eventi ai livelli della rete senza confondersi con pacchetti estranei.",
+      "example": "Selezionare ARP e ICMP prima di studiare la prima comunicazione fra due PC.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il semplice invio di una PDU non dimostra un’autorizzazione applicativa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1.3, pagina PDF 209"
+    },
+    {
+      "id": "cyber-c12-q011",
+      "topicId": "cyber-c12-t01",
+      "question": "Quali prompt identificano le principali modalità della CLI Cisco IOS?",
+      "answer": "Switch> user EXEC; Switch# privileged EXEC; Switch(config)# configurazione globale; Switch(config-if)# configurazione d’interfaccia.",
+      "detail": "I comandi accettati dipendono dal contesto. enable eleva a privileged EXEC; configure terminal apre la configurazione globale; interface seleziona la porta; exit ed end cambiano modalità.",
+      "example": "Da Switch# eseguire configure terminal, poi interface fa0/1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare i comandi come se la CLI fosse una shell general-purpose.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1.4, pagina PDF 209"
+    },
+    {
+      "id": "cyber-c12-q012",
+      "topicId": "cyber-c12-t01",
+      "question": "Come si assegna un hostname e si salva la configurazione su uno switch IOS simulato?",
+      "answer": "Usare enable, configure terminal, hostname SW-TEST, end e copy running-config startup-config.",
+      "detail": "I comandi di configurazione modificano l’assetto attivo. Il salvataggio nella startup configuration serve a conservarlo al riavvio, quando supportato. Il file .pkt salva lo stato secondo le modalità dell’app.",
+      "example": "`Switch(config)# hostname SW-TEST` seguito da `SW-TEST# copy running-config startup-config`.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dare per scontato che modifiche attive e persistenti coincidano.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1.4, pagina PDF 209"
+    },
+    {
+      "id": "cyber-c12-q013",
+      "topicId": "cyber-c12-t01",
+      "question": "Qual è la differenza tra show running-config e show startup-config?",
+      "answer": "Il primo mostra la configurazione attiva; il secondo quella memorizzata per il riavvio.",
+      "detail": "Dopo una modifica non salvata, i due output possono differire. La corretta disciplina di laboratorio prevede osservare con show prima di modificare e verificare i nomi reali delle interfacce.",
+      "example": "Un trunk attivo ma non salvato può scomparire dopo un riavvio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Le interfacce Gi0/0 e Fa0/1 sono esempi, non nomi universali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1.4, pagina PDF 209"
+    },
+    {
+      "id": "cyber-c12-q014",
+      "topicId": "cyber-c12-t02",
+      "question": "Qual è la differenza tra i file Cisco Packet Tracer .pkt e .pka?",
+      "answer": "Un .pkt contiene tipicamente una topologia salvata con dispositivi e configurazioni; un .pka è normalmente un’attività guidata con istruzioni e possibili valutazioni.",
+      "detail": "La tipologia e il nome non descrivono necessariamente le tecnologie reali presenti. Solo l’apertura del progetto permette di identificarne topologia e obiettivi effettivi.",
+      "example": "Lezione 14.pkt non implica automaticamente che contenga VLAN o ACL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire funzioni a un file solo dal nome.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.2, pagina PDF 210"
+    },
+    {
+      "id": "cyber-c12-q015",
+      "topicId": "cyber-c12-t02",
+      "question": "Perché è corretto duplicare un progetto .pkt prima di esplorarlo?",
+      "answer": "Per preservare il materiale originale e rendere reversibili le prove effettuate.",
+      "detail": "Il manuale raccomanda una copia con suffisso _ANALISI e ulteriori nomi distinti per le configurazioni modificate. Le modifiche vanno sempre confrontate con uno stato iniziale non alterato.",
+      "example": "Aprire Lezione 15.pkt e lavorare su Lezione 15_ANALISI.pkt.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sovrascrivere il file originale durante i test.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.2, pagina PDF 210"
+    },
+    {
+      "id": "cyber-c12-q016",
+      "topicId": "cyber-c12-t02",
+      "question": "Come si avvia l’analisi dei file Lezione 14.pkt e Lezione 15.pkt?",
+      "answer": "Aprire il .pkt, controllare la compatibilità, inventariare dispositivi e collegamenti e salvare una schermata della vista Logical.",
+      "detail": "Registrare router, switch, PC, server e access point con nomi e porte effettivi; se appare un problema di versione, cercare una versione compatibile senza alterare l’originale.",
+      "example": "Inventario con nome apparato, ruolo, porte utilizzate, dispositivo collegato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non iniziare cambiando configurazioni senza un baseline.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.2.1, pagina PDF 210"
+    },
+    {
+      "id": "cyber-c12-q017",
+      "topicId": "cyber-c12-t02",
+      "question": "Quali comandi show sono indicati per censire una topologia Packet Tracer sconosciuta?",
+      "answer": "show running-config, show ip interface brief, show vlan brief, show interfaces trunk, show ip route, show access-lists e show mac address-table, quando disponibili.",
+      "detail": "Ogni comando verifica un aspetto diverso: stato IP, assegnazioni L2, trunk, rotte, ACL e apprendimento MAC. Vanno usati solo su apparati che li supportano.",
+      "example": "`show interfaces trunk` sullo switch, `show ip route` sul router.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarsi ogni comando su qualunque dispositivo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.2.1, pagina PDF 210"
+    },
+    {
+      "id": "cyber-c12-q018",
+      "topicId": "cyber-c12-t02",
+      "question": "Come si passa dall’inventario di una topologia alla verifica del suo comportamento?",
+      "answer": "Annotando IP/mask/gateway/DNS e servizi, costruendo una matrice sorgente–destinazione e svolgendo test mirati sia positivi sia negativi.",
+      "detail": "Per ogni test occorrono previsioni, comando o operazione, risultato ed evidenza. Si collegano poi i comportamenti a VLAN, route, ACL e servizi presenti, distinguendo sicurezza dimostrata e supposizioni.",
+      "example": "Verificare separatamente PC-A→Server e PC-OSPITI→Server.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un esito negativo isolato non dimostra quale controllo lo abbia causato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.2.1, pagina PDF 210"
+    },
+    {
+      "id": "cyber-c12-q019",
+      "topicId": "cyber-c12-t02",
+      "question": "Come va documentata una modifica sperimentale in uno dei .pkt del docente?",
+      "answer": "Salvando il progetto modificato con un altro nome, descrivendo differenza di configurazione e di comportamento prima/dopo.",
+      "detail": "Conservare una copia immutata consente di riprodurre le prove e distinguere la rete originaria dagli interventi dell’analista.",
+      "example": "Cambiare la allowed VLAN list solo nella copia e annotare quali ping cessano di funzionare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non spacciare la configurazione modificata per quella originale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.2.1, pagina PDF 210"
+    },
+    {
+      "id": "cyber-c12-q020",
+      "topicId": "cyber-c12-t02",
+      "question": "Quali informazioni deve contenere la scheda di analisi di un file .pkt?",
+      "answer": "Identificazione, topologia, configurazioni, obiettivo ipotizzato, almeno due prove, proprietà di sicurezza osservate e limiti.",
+      "detail": "Si registrano nome/versione, apparati/porte/collegamenti, subnet/VLAN/route/ACL/servizi, dettagli dei test, prove di blocco o protezione e ciò che il simulatore non consente di dimostrare.",
+      "example": "Tabella con Test A: sorgente, destinazione, ping, esito e screenshot.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire evidenze e configurazioni con impressioni generiche.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.2.2, pagina PDF 211"
+    },
+    {
+      "id": "cyber-c12-q021",
+      "topicId": "cyber-c12-t02",
+      "question": "Possiamo sapere che cosa mostrano Lezione 14.pkt e Lezione 15.pkt senza aprirli?",
+      "answer": "No: il manuale non attribuisce loro una topologia specifica in assenza di ispezione diretta dei file.",
+      "detail": "Le attività successive del Capitolo 12 sono un percorso di esercitazioni aggiuntivo e non la descrizione verificata dei progetti del docente.",
+      "example": "Un esercizio su VLAN proposto nel manuale non dimostra che il file del docente contenga VLAN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare risultati non osservati nei file .pkt.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.2.2, pagina PDF 211"
+    },
+    {
+      "id": "cyber-c12-q022",
+      "topicId": "cyber-c12-t03",
+      "question": "Qual è la sequenza comune proposta per tutte le esercitazioni pratiche?",
+      "answer": "Scopo → ipotesi → configurazione → verifica funzionale → verifica di sicurezza → evidenze → riflessione critica.",
+      "detail": "La sequenza rende ripetibile l’esperimento e separa una funzionalità riuscita da una restrizione intenzionale. La riflessione finale considera i limiti di ciò che è stato provato.",
+      "example": "Prima definire che gli ospiti non devono raggiungere i server, poi configurare e verificare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trarre conclusioni da test privi di risultato atteso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.3, pagina PDF 211"
+    },
+    {
+      "id": "cyber-c12-q023",
+      "topicId": "cyber-c12-t03",
+      "question": "Come si differenziano test positivo e test negativo in una matrice di sicurezza?",
+      "answer": "Il positivo dimostra che un flusso autorizzato passa; il negativo verifica che un flusso non autorizzato venga negato dalla policy.",
+      "detail": "Occorre ripetere il negativo e correlare il fallimento alla configurazione: guasti di rete, dispositivi spenti o route assenti possono produrre lo stesso sintomo.",
+      "example": "Uffici→Server consentito; Ospiti→Server negato da ACL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un ping fallito non prova automaticamente un firewall corretto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.3, pagina PDF 211"
+    },
+    {
+      "id": "cyber-c12-q024",
+      "topicId": "cyber-c12-t03",
+      "question": "Quali condizioni rendono attendibile una conclusione tecnica di laboratorio?",
+      "answer": "Conoscere esito atteso, requisito, stato iniziale, regola effettivamente applicata ed evidenze che ne spiegano l’esito.",
+      "detail": "Test, comando show e osservazione di pacchetti o contatori devono concordare. Il risultato deve essere ripetibile e non dipendere da cause accidentali.",
+      "example": "Una ACL con counter incrementato durante il test è evidenza migliore del solo timeout.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere la diagnosi delle cause alternative.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.3, pagina PDF 211"
+    },
+    {
+      "id": "cyber-c12-q025",
+      "topicId": "cyber-c12-t03",
+      "question": "Quali evidenze si associano alle fasi della griglia di laboratorio?",
+      "answer": "Topologia/IP per preparazione; running-config per configurazione; ping/HTTP/DNS per test positivi; blocco ripetibile per negativi; stato rete per diagnosi; limiti nella conclusione.",
+      "detail": "La griglia del manuale include esplicitamente preparazione, configurazione, verifica positiva, verifica negativa, diagnosi e conclusione.",
+      "example": "Per un errore inter-VLAN raccogliere show interfaces trunk, routing e ACL oltre al ping.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un risultato osservato con la spiegazione della sua causa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.3.1, pagina PDF 212"
+    },
+    {
+      "id": "cyber-c12-q026",
+      "topicId": "cyber-c12-t03",
+      "question": "Come documentare un test di blocco in modo che non venga confuso con un guasto?",
+      "answer": "Mostrare che il traffico autorizzato funziona, che quello vietato fallisce e che l’ACL o il controllo previsto intercetta la richiesta.",
+      "detail": "Confronti positivi/negativi, configurazioni e stato del percorso escludono ipotesi alternative. Se mancano dati, si dichiara l’incertezza.",
+      "example": "Uffici→Server OK, Ospiti→Server KO, counter deny in aumento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare “accesso negato” un host spento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.3.1, pagina PDF 212"
+    },
+    {
+      "id": "cyber-c12-q027",
+      "topicId": "cyber-c12-t03",
+      "question": "Quali indirizzi usa il manuale per gli esempi e quale precauzione impone?",
+      "answer": "Sottoreti private come 192.168.10.0/24 e intervalli di documentazione come 198.51.100.0/24, senza fingere una connessione Internet reale.",
+      "detail": "I dati e le credenziali degli esempi sono fittizi e vanno usati esclusivamente nel laboratorio. Un indirizzo di documentazione non rappresenta un endpoint pubblicamente disponibile.",
+      "example": "198.51.100.2 è un server fittizio nella topologia, non un host Internet.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non riusare password di laboratorio su sistemi reali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.3.2, pagina PDF 212"
+    },
+    {
+      "id": "cyber-c12-q028",
+      "topicId": "cyber-c12-t04",
+      "question": "Qual è l’obiettivo del laboratorio LAN minima?",
+      "answer": "Costruire una LAN funzionante, osservare ARP e ICMP, verificare apprendimento MAC e separare connettività da sicurezza.",
+      "detail": "Il test permette di comprendere il comportamento di switch e host nello stesso dominio L2 senza coinvolgere un router.",
+      "example": "Due PC su uno switch 2960 si raggiungono usando IP nella stessa /24.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un ping riuscito non è un test di identità crittografica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.4, pagina PDF 212"
+    },
+    {
+      "id": "cyber-c12-q029",
+      "topicId": "cyber-c12-t04",
+      "question": "Qual è la topologia e l’indirizzamento del laboratorio LAN minima?",
+      "answer": "Switch L2 con PC-A su Fa0/1 (192.168.10.10/24) e PC-B su Fa0/2 (192.168.10.20/24); gateway non necessario.",
+      "detail": "Entrambi gli host appartengono alla subnet 192.168.10.0/24, quindi possono scambiarsi traffico direttamente sullo stesso collegamento logico.",
+      "example": "Mask 255.255.255.0 sui due client.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere un gateway solo per un ping intra-LAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.4.1, pagina PDF 212"
+    },
+    {
+      "id": "cyber-c12-q030",
+      "topicId": "cyber-c12-t04",
+      "question": "Qual è la sequenza da osservare quando PC-A esegue il primo ping verso PC-B?",
+      "answer": "Possibile risoluzione ARP dell’IP di B, poi ICMP Echo Request e, se B risponde, Echo Reply.",
+      "detail": "In Simulation Mode si filtrano ARP e ICMP; ARP cerca il MAC del destinatario nella LAN, mentre ICMP permette il test di raggiungibilità.",
+      "example": "`ping 192.168.10.20` da PC-A e osservazione dei due protocolli.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare una richiesta ARP per l’intero meccanismo di ping.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.4.2, pagina PDF 213"
+    },
+    {
+      "id": "cyber-c12-q031",
+      "topicId": "cyber-c12-t04",
+      "question": "Quali comandi permettono di osservare apprendimento MAC e cache ARP?",
+      "answer": "show mac address-table sullo switch e arp -a sul PC, se supportati.",
+      "detail": "La MAC table mostra i MAC sorgente appresi per porta; la cache ARP del client associa IP e MAC locali. Le due tabelle operano a scopi differenti.",
+      "example": "Lo switch registra il MAC di PC-B sulla Fa0/2; il client conserva l’associazione IP→MAC.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La tabella MAC non elenca autorizzazioni o servizi HTTP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.4.2, pagina PDF 213"
+    },
+    {
+      "id": "cyber-c12-q032",
+      "topicId": "cyber-c12-t04",
+      "question": "Perché il primo ping può fallire e i successivi riuscire?",
+      "answer": "La risoluzione ARP iniziale può introdurre ritardo o perdita del primo ICMP nella simulazione.",
+      "detail": "Prima di diagnosticare un guasto o una ACL, si devono esaminare sequenza ARP/ICMP e prove successive; il comportamento può dipendere dal simulatore.",
+      "example": "Primo echo senza reply, secondo echo riuscito dopo apprendimento ARP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare automaticamente il primo timeout come attacco.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.4.3, pagina PDF 213"
+    },
+    {
+      "id": "cyber-c12-q033",
+      "topicId": "cyber-c12-t04",
+      "question": "Che cosa dimostra e che cosa non dimostra un ping riuscito tra PC-A e PC-B?",
+      "answer": "Dimostra raggiungibilità IP e risposta ICMP; non dimostra autenticità del peer, cifratura né assenza di vulnerabilità.",
+      "detail": "Lo switch inoltra i frame apprendendo i MAC, ma questi meccanismi non forniscono da soli verifica crittografica dell’identità.",
+      "example": "Un host raggiungibile potrebbe comunque esporre servizi vulnerabili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ping e certificato TLS sono prove di natura diversa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.4.3, pagina PDF 213"
+    },
+    {
+      "id": "cyber-c12-q034",
+      "topicId": "cyber-c12-t04",
+      "question": "Che cosa accade se PC-B viene spostato da 192.168.10.20/24 a 192.168.20.20/24 senza router?",
+      "answer": "La comunicazione IP ordinaria con PC-A non dovrebbe più riuscire perché gli host appartengono a subnet diverse e manca routing.",
+      "detail": "La modifica non altera il cablaggio ma rende necessaria una funzione L3. Va poi ripristinato l’indirizzo originario per chiudere la prova.",
+      "example": "PC-A resta 192.168.10.10/24 e PC-B passa a 192.168.20.20/24.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire allo switch L2 capacità di instradamento non configurate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.4.4, pagina PDF 213"
+    },
+    {
+      "id": "cyber-c12-q035",
+      "topicId": "cyber-c12-t05",
+      "question": "Quale catena di servizi dimostra il laboratorio DHCP, DNS e HTTP?",
+      "answer": "Il client ottiene configurazione IP con DHCP, risolve un nome tramite DNS e richiede una pagina HTTP.",
+      "detail": "Ogni passaggio svolge una funzione distinta; la disponibilità di un servizio non implica la configurazione corretta degli altri né la protezione del contenuto.",
+      "example": "Dopo DHCP, aprire http://intranet.lab.test.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere risoluzione dei nomi con erogazione web.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.5, pagina PDF 213"
+    },
+    {
+      "id": "cyber-c12-q036",
+      "topicId": "cyber-c12-t05",
+      "question": "Quali parametri sono previsti per il server e il pool DHCP del laboratorio 2?",
+      "answer": "Server 192.168.50.10/24; pool client da 192.168.50.100; DNS 192.168.50.10; record A intranet.lab.test→192.168.50.10.",
+      "detail": "Il server usa IP statico fuori dal pool. Il gateway è superfluo nella sola LAN isolata senza router; se il simulatore obbliga a valorizzarlo, va documentato il limite.",
+      "example": "Un solo server Packet Tracer ospita DHCP, DNS e HTTP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non includere 192.168.50.10 tra gli indirizzi assegnati via DHCP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.5.1, pagina PDF 213"
+    },
+    {
+      "id": "cyber-c12-q037",
+      "topicId": "cyber-c12-t05",
+      "question": "Perché il manuale usa il nome intranet.lab.test e non un dominio Internet reale?",
+      "answer": "Perché .test è riservato a test e documentazione e il laboratorio non richiede accesso a Internet.",
+      "detail": "La risoluzione si svolge sul server DNS locale; anche la pagina HTML è ospitata nella rete di prova. L’uso del nome non rappresenta una pubblicazione su Internet.",
+      "example": "Il client chiede al DNS locale l’IP di intranet.lab.test.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare il successo come prova di connettività Internet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.5.1, pagina PDF 213"
+    },
+    {
+      "id": "cyber-c12-q038",
+      "topicId": "cyber-c12-t05",
+      "question": "Quale procedura configura e verifica i tre servizi del laboratorio 2?",
+      "answer": "Assegnare IP statico al server, abilitare DHCP/DNS/HTTP, registrare il record A, porre il client in DHCP, controllare ipconfig e aprire la pagina per nome.",
+      "detail": "In Simulation Mode si possono filtrare DHCP, DNS e HTTP, documentando negoziazione, risoluzione e richiesta applicativa nei limiti della versione.",
+      "example": "Prima ping verso 192.168.50.10, poi browser su http://intranet.lab.test.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi alla pagina riuscita senza verificare indirizzo e DNS assegnati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.5.2, pagina PDF 214"
+    },
+    {
+      "id": "cyber-c12-q039",
+      "topicId": "cyber-c12-t05",
+      "question": "Che cosa prova il corretto caricamento di una pagina HTTP dopo DHCP e DNS?",
+      "answer": "Prova la cooperazione funzionale dei servizi di configurazione, risoluzione e applicazione, non la riservatezza del contenuto.",
+      "detail": "Una pagina servita con HTTP non è automaticamente cifrata tramite TLS. Packet Tracer può semplificare gli aspetti di HTTPS e PKI anche quando offre un’opzione HTTPS.",
+      "example": "HTTP locale risponde ma il traffico non va descritto come crittograficamente protetto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere “sito sicuro” soltanto perché la pagina si apre.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.5.3, pagina PDF 214"
+    },
+    {
+      "id": "cyber-c12-q040",
+      "topicId": "cyber-c12-t05",
+      "question": "Se DNS viene disabilitato mentre HTTP rimane attivo, che cosa succede e che cosa dimostra?",
+      "answer": "Il client può ancora raggiungere il server per IP ma potrebbe non risolvere più intranet.lab.test, salvo cache valida.",
+      "detail": "Il guasto separa name resolution dalla disponibilità HTTP: il browser per nome fallisce mentre il server web può funzionare. Va ripristinato il DNS a conclusione della prova.",
+      "example": "http://192.168.50.10 funziona, http://intranet.lab.test fallisce.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente il guasto al server HTTP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.5.4, pagina PDF 214"
+    },
+    {
+      "id": "cyber-c12-q041",
+      "topicId": "cyber-c12-t06",
+      "question": "Qual è il risultato che vuole dimostrare il laboratorio VLAN su due switch?",
+      "answer": "Due VLAN formano domini broadcast distinti, possono estendersi su un trunk e non comunicano automaticamente tra loro senza routing.",
+      "detail": "La separazione riguarda il livello 2: quando viene aggiunto un router, la comunicazione IP tra VLAN può essere resa possibile, se non soggetta a policy.",
+      "example": "VLAN 10 e VLAN 20 attraversano lo stesso link SW1–SW2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Separazione VLAN non equivale ad ACL.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.6, pagina PDF 214"
+    },
+    {
+      "id": "cyber-c12-q042",
+      "topicId": "cyber-c12-t06",
+      "question": "Come sono collegati i quattro PC e i due switch nel laboratorio 3?",
+      "answer": "SW1 Fa0/1→PC-A VLAN10, Fa0/2→PC-C VLAN20; SW2 Fa0/1→PC-B VLAN10, Fa0/2→PC-D VLAN20; Gi0/1↔Gi0/1 trunk.",
+      "detail": "I PC della VLAN10 hanno 192.168.10.10/.20; quelli della VLAN20 192.168.20.10/.20, tutti /24. Non si usa router per i test intra-VLAN.",
+      "example": "PC-A e PC-B sono nella stessa VLAN anche se su switch differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare una porta access fra gli switch se devono attraversare entrambe le VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.6.1, pagina PDF 214"
+    },
+    {
+      "id": "cyber-c12-q043",
+      "topicId": "cyber-c12-t06",
+      "question": "Quali comandi creano VLAN 10 e assegnano Fa0/1 come porta access?",
+      "answer": "`vlan 10`, `name UFFICI`, poi `interface fastEthernet0/1`, `switchport mode access`, `switchport access vlan 10`.",
+      "detail": "La creazione della VLAN e l’associazione della porta sono operazioni distinte: senza assegnazione coerente, l’host potrebbe essere collegato al dominio sbagliato.",
+      "example": "SW1 Fa0/1 porta di PC-A, VLAN 10.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il nome descrittivo UFFICI non sostituisce il VID numerico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.6.2, pagina PDF 215"
+    },
+    {
+      "id": "cyber-c12-q044",
+      "topicId": "cyber-c12-t06",
+      "question": "Come viene configurato e limitato il trunk SW1–SW2 nell’esempio?",
+      "answer": "Su Gi0/1: `switchport mode trunk`, `switchport trunk allowed vlan 10,20`, `no shutdown`.",
+      "detail": "Lo stesso accordo di VLAN consentite deve essere coerente su SW2; il manuale raccomanda di impostare esplicitamente il trunk anziché affidarsi alla negoziazione automatica.",
+      "example": "Il trunk trasporta frame della VLAN10 e della VLAN20 mediante tagging.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ammettere VLAN non necessarie per mera comodità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.6.2, pagina PDF 215"
+    },
+    {
+      "id": "cyber-c12-q045",
+      "topicId": "cyber-c12-t06",
+      "question": "Quali comandi mostrano VLAN, trunk e MAC appresi e come si interpretano?",
+      "answer": "`show vlan brief` per VLAN/porte access; `show interfaces trunk` per trunk e VLAN ammesse; `show mac address-table` per MAC e porte apprese.",
+      "detail": "La verifica va fatta su entrambi gli switch; se un comando non è supportato dal modello, si usa un equivalente o la schermata di configurazione.",
+      "example": "Se VLAN20 è assente dalle allowed VLAN di SW2, il problema è visibile nel trunk.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un unico output come prova di tutta la topologia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.6.3, pagina PDF 215"
+    },
+    {
+      "id": "cyber-c12-q046",
+      "topicId": "cyber-c12-t06",
+      "question": "Quali sono i quattro risultati di ping attesi nel laboratorio su due switch senza router?",
+      "answer": "PC-A→PC-B riesce (VLAN10); PC-C→PC-D riesce (VLAN20); PC-A→PC-C e PC-A→PC-D falliscono (VLAN/subnet diverse senza routing).",
+      "detail": "I test confermano la connettività all’interno delle VLAN attraverso il trunk e la separazione L2. Non dimostrano una policy di blocco attiva su un router.",
+      "example": "Le due subnet sono 192.168.10.0/24 e 192.168.20.0/24.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire il fallimento inter-VLAN a una ACL inesistente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.6.4, pagina PDF 216"
+    },
+    {
+      "id": "cyber-c12-q047",
+      "topicId": "cyber-c12-t06",
+      "question": "Quale sintomo provoca l’esclusione della VLAN 20 dalle VLAN ammesse sul trunk?",
+      "answer": "I dispositivi VLAN10 sui due switch continuano a comunicare; quelli VLAN20 su switch differenti non si raggiungono.",
+      "detail": "Il guasto riguarda il trasporto dei frame VLAN20 sul collegamento trunk, non l’indirizzamento IP degli host. Va ripristinata la allowed VLAN list per concludere l’esperimento.",
+      "example": "PC-C→PC-D fallisce mentre PC-A→PC-B continua a riuscire.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cambiare maschere o IP prima di verificare il trunk.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.6.5, pagina PDF 216"
+    },
+    {
+      "id": "cyber-c12-q048",
+      "topicId": "cyber-c12-t07",
+      "question": "Che cos’è il router-on-a-stick e quale limite della sola VLAN risolve?",
+      "answer": "È il routing inter-VLAN tramite una porta fisica del router collegata in trunk e suddivisa in subinterfacce logiche per ciascuna VLAN.",
+      "detail": "Le VLAN separano domini di broadcast L2; per collegare subnet distinte occorre una funzione L3. Una subinterfaccia riceve il tagging 802.1Q e un indirizzo di gateway. Una singola porta può diventare collo di bottiglia.",
+      "example": "R1 Gi0/0.10, .20 e .30 serve tre VLAN sul trunk Gi0/1 dello switch.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La presenza del router non equivale a negare gli accessi tra VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.7, pagina PDF 216"
+    },
+    {
+      "id": "cyber-c12-q049",
+      "topicId": "cyber-c12-t07",
+      "question": "Quali sono le VLAN, gli host e i gateway del laboratorio router-on-a-stick?",
+      "answer": "VLAN10 UFFICI: 192.168.10.10→gateway .10.1; VLAN20 SERVER: 192.168.20.10→.20.1; VLAN30 OSPITI: 192.168.30.10→.30.1; tutti /24.",
+      "detail": "Lo switch 2960 collega le tre porte Fa0/1–3 alle rispettive VLAN; Gi0/1 porta in trunk a R1 Gi0/0. Gli indirizzi .1 sono le subinterfacce del router.",
+      "example": "PC-OSPITI 192.168.30.10/24 usa 192.168.30.1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non configurare come gateway l’IP di una VLAN diversa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.7.1, pagina PDF 216"
+    },
+    {
+      "id": "cyber-c12-q050",
+      "topicId": "cyber-c12-t07",
+      "question": "Come va configurato lo switch per il router-on-a-stick del manuale?",
+      "answer": "Creare VLAN10/20/30, associare Fa0/1–3 come access alle rispettive VLAN e impostare Gi0/1 trunk con allowed VLAN 10,20,30.",
+      "detail": "Il trunk permette al router di ricevere frame identificati col VID; una porta access per ciascun host conserva il corretto dominio L2.",
+      "example": "`switchport mode trunk` e `switchport trunk allowed vlan 10,20,30` su Gi0/1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una VLAN creata ma non consentita nel trunk resta irraggiungibile dal gateway previsto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.7.2, pagina PDF 217"
+    },
+    {
+      "id": "cyber-c12-q051",
+      "topicId": "cyber-c12-t07",
+      "question": "Quali comandi e indirizzi definiscono la subinterfaccia R1 Gi0/0.20?",
+      "answer": "`interface gigabitEthernet0/0.20`; `encapsulation dot1Q 20`; `ip address 192.168.20.1 255.255.255.0`.",
+      "detail": "La subinterfaccia associa traffico con VID20 all’interfaccia L3 della subnet SERVER; la porta fisica Gi0/0 deve essere attivata con `no shutdown`.",
+      "example": "Il server 192.168.20.10 usa come gateway 192.168.20.1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare tutti i gateway all’interfaccia fisica priva di tagging.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.7.3, pagina PDF 217"
+    },
+    {
+      "id": "cyber-c12-q052",
+      "topicId": "cyber-c12-t07",
+      "question": "Che cosa controllano `show ip interface brief` e `show ip route` dopo la configurazione di R1?",
+      "answer": "Lo stato e gli indirizzi delle interfacce/subinterfacce e la presenza delle reti collegate nella tabella di routing.",
+      "detail": "Consentono di distinguere un problema di subinterfaccia o collegamento da un problema di destinazione; i nomi fisici variano tra modelli e vanno adattati.",
+      "example": "Le reti 192.168.10.0/24, .20.0/24 e .30.0/24 risultano direttamente connesse se le interfacce sono operative.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire all’ACL un blocco se la rete non compare neppure nelle rotte.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.7.3, pagina PDF 217"
+    },
+    {
+      "id": "cyber-c12-q053",
+      "topicId": "cyber-c12-t07",
+      "question": "Qual è l’ordine dei test per verificare un router-on-a-stick?",
+      "answer": "Ping del gateway della propria VLAN, poi di un host di altra VLAN, poi traffico dalla rete ospiti verso le altre VLAN prima delle ACL.",
+      "detail": "In Simulation Mode si osserva che l’host invia il pacchetto al MAC del gateway e R1 lo inoltra verso la subinterfaccia corretta. La risposta ICMP dipende anche dalla disponibilità del destinatario.",
+      "example": "PC-UFFICI→192.168.10.1, poi →192.168.20.10; PC-OSPITI→192.168.10.10.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere VLAN separate con divieto automatico di routing IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.7.4, pagina PDF 217"
+    },
+    {
+      "id": "cyber-c12-q054",
+      "topicId": "cyber-c12-t07",
+      "question": "Perché PC-OSPITI può raggiungere gli uffici dopo l’introduzione del router?",
+      "answer": "Perché R1 conosce le sottoreti direttamente connesse e può inoltrare traffico inter-VLAN in assenza di restrizioni.",
+      "detail": "L’isolamento dei broadcast non sostituisce l’autorizzazione. Servono ACL, firewall o controlli equivalenti nel punto di instradamento.",
+      "example": "Prima della ACL la VLAN30 può inviare ping alla VLAN10.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che VLAN dedicate siano di per sé un firewall.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.7.4, pagina PDF 217"
+    },
+    {
+      "id": "cyber-c12-q055",
+      "topicId": "cyber-c12-t08",
+      "question": "Qual è la finalità del laboratorio ACL dopo aver configurato il routing?",
+      "answer": "Applicare una policy che permetta le comunicazioni autorizzate e impedisca agli ospiti l’accesso alle subnet interne.",
+      "detail": "Le ACL Cisco sono valutate dall’alto secondo il primo match; una normale ACL termina con un deny implicito. L’ordine, l’interfaccia e la direzione sono parte del requisito.",
+      "example": "VLAN10→Server VLAN20 consentito; VLAN30→VLAN10/20 negato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere una ACL come una semplice lista non ordinata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.8, pagina PDF 218"
+    },
+    {
+      "id": "cyber-c12-q056",
+      "topicId": "cyber-c12-t08",
+      "question": "Quali tre proprietà devono essere esplicitate quando si presenta una ACL all’orale?",
+      "answer": "Quali flussi ammette o nega, dove e in quale direzione è applicata, e con quale ordine valuta le regole.",
+      "detail": "La corretta sintassi non basta: una ACL applicata nella direzione sbagliata o con permessi troppo ampi può disattendere la policy aziendale.",
+      "example": "GUEST-IN applicata in ingresso a Gi0/0.30.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non separare la policy dalla topologia su cui viene applicata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.8, pagina PDF 218"
+    },
+    {
+      "id": "cyber-c12-q057",
+      "topicId": "cyber-c12-t08",
+      "question": "Qual è la matrice di autorizzazione richiesta per uffici e ospiti?",
+      "answer": "Uffici VLAN10 possono comunicare con Server VLAN20; ospiti VLAN30 non possono raggiungere VLAN10/20; opzionalmente possono raggiungere un server esterno fittizio.",
+      "detail": "È una policy di prova su reti private e sulla risorsa 198.51.100.2; non configura accesso Internet reale. Occorre verificare percorsi consentiti e negati.",
+      "example": "PC-OSPITI→SERVER-INT negato; PC-OSPITI→SERVER-EXT consentito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La riuscita verso il server esterno non dimostra connettività Internet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.8.1, pagina PDF 218"
+    },
+    {
+      "id": "cyber-c12-q058",
+      "topicId": "cyber-c12-t08",
+      "question": "Quali indirizzi vengono usati per simulare una rete esterna nel laboratorio ACL?",
+      "answer": "R1 Gi0/1 ha 198.51.100.1/30, SERVER-EXT 198.51.100.2/30 con gateway 198.51.100.1.",
+      "detail": "La subnet 198.51.100.0/30 è riservata agli esempi ed è un collegamento locale di laboratorio. Non richiede NAT né linea Internet.",
+      "example": "`ip address 198.51.100.1 255.255.255.252` su Gi0/1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere 198.51.100.2 come servizio pubblicamente raggiungibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.8.2, pagina PDF 218"
+    },
+    {
+      "id": "cyber-c12-q059",
+      "topicId": "cyber-c12-t08",
+      "question": "Quali sono, nell’ordine, le tre istruzioni della ACL estesa GUEST-IN?",
+      "answer": "`deny ip 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255`; `deny ip 192.168.30.0 0.0.0.255 192.168.20.0 0.0.0.255`; `permit ip 192.168.30.0 0.0.0.255 any`.",
+      "detail": "Le prime due regole negano accessi da ospiti alle reti riservate; la terza consente le altre destinazioni previste. Tutte si valutano in ordine e restano soggette alle altre condizioni di routing.",
+      "example": "Nella CLI prima `ip access-list extended GUEST-IN`, poi le tre regole.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Se la permit è posta prima, rischia di rendere inefficaci i deny seguenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.8.3, pagina PDF 218"
+    },
+    {
+      "id": "cyber-c12-q060",
+      "topicId": "cyber-c12-t08",
+      "question": "Perché occorre la terza `permit ip ... any` in GUEST-IN?",
+      "answer": "Perché l’implicit deny finale negherebbe anche il traffico che non corrisponde ai due deny espliciti.",
+      "detail": "Se la policy prevede risorse esterne ammesse, servono regole permit precise; un’ACL composta soltanto dai primi deny bloccherebbe tutti gli altri flussi controllati dalla ACL.",
+      "example": "Senza permit, ospiti non raggiungono neppure SERVER-EXT.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il deny implicito con una protezione limitata alle sole destinazioni elencate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.8.3, pagina PDF 218"
+    },
+    {
+      "id": "cyber-c12-q061",
+      "topicId": "cyber-c12-t08",
+      "question": "Come e dove si applica GUEST-IN alla VLAN ospiti?",
+      "answer": "`interface gigabitEthernet0/0.30` e `ip access-group GUEST-IN in`.",
+      "detail": "La direzione in indica che il router valuta il traffico quando entra dalla subinterfaccia VLAN30. La policy non viene applicata allo stesso modo al traffico in ingresso dalle VLAN10 e 20.",
+      "example": "Test PC-OSPITI→SERVER-INT bloccato; uffici→server ancora consentito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere direzione in/out con mittente/destinatario applicativo senza guardare l’interfaccia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.8.3, pagina PDF 218"
+    },
+    {
+      "id": "cyber-c12-q062",
+      "topicId": "cyber-c12-t08",
+      "question": "Qual è la differenza tra subnet mask /24 e wildcard mask 0.0.0.255 nelle ACL?",
+      "answer": "La subnet mask 255.255.255.0 indica i bit di rete; la wildcard 0.0.0.255 richiede corrispondenza dei primi 24 bit e permette variazioni negli ultimi 8.",
+      "detail": "Nella wildcard un bit a zero deve corrispondere, uno può variare. Non è una maschera di rete usata per assegnare gli indirizzi ai PC.",
+      "example": "`192.168.30.0 0.0.0.255` seleziona tutte le sorgenti /24 ospiti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere 255.255.255.0 al posto della wildcard nell’istruzione ACL.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.8.3, pagina PDF 218"
+    },
+    {
+      "id": "cyber-c12-q063",
+      "topicId": "cyber-c12-t08",
+      "question": "Quali risultati si attendono nei quattro test principali dopo l’applicazione di GUEST-IN?",
+      "answer": "Uffici→server interno consentito; ospiti→uffici negato; ospiti→server interno negato; ospiti→server esterno di prova consentito.",
+      "detail": "I blocchi ospiti→uffici/server derivano dai due deny, il server esterno dalla permit. Il test verso il proprio gateway può variare secondo IOS/control-plane e non è criterio unico.",
+      "example": "Confrontare contatori show access-lists prima/dopo i ping.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere conclusivo il solo ping ospiti→192.168.30.1.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.8.4, pagina PDF 219"
+    },
+    {
+      "id": "cyber-c12-q064",
+      "topicId": "cyber-c12-t08",
+      "question": "Perché una ACL tradizionale di router non equivale a un firewall stateful completo?",
+      "answer": "Perché il filtraggio ACL non comprende necessariamente gestione dello stato di connessione, proxy e ispezione applicativa.",
+      "detail": "Una prova ACL non dimostra assenza di vie alternative, corretta autorizzazione delle API o protezione di tutti i servizi. In reti reali vanno considerate eccezioni DNS/DHCP e flussi iniziati dall’esterno.",
+      "example": "Un web server raggiungibile può comunque accettare richieste applicative non autorizzate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire alle ACL proprietà che non sono state configurate o testate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.8.4, pagina PDF 219"
+    },
+    {
+      "id": "cyber-c12-q065",
+      "topicId": "cyber-c12-t08",
+      "question": "Un ping negato dopo l’aggiunta della ACL dimostra sempre che la ACL funziona?",
+      "answer": "No: occorre verificare prima IP/gateway, link, VLAN/trunk, subinterfacce, routing, ACL e risposta del destinatario.",
+      "detail": "Solo correlando il comportamento con regola, direzione, contatori e test positivi di controllo si può giustificare la conclusione.",
+      "example": "`show ip interface brief`, `show interfaces trunk`, `show ip route`, `show access-lists`.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cambiare immediatamente i deny senza localizzare il problema.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.8.5, pagina PDF 219"
+    },
+    {
+      "id": "cyber-c12-q066",
+      "topicId": "cyber-c12-t08",
+      "question": "A che cosa servono i contatori delle ACL nella diagnosi?",
+      "answer": "Aiutano a vedere se una specifica regola ha intercettato pacchetti durante la prova, quando il modello li espone.",
+      "detail": "La prova è più robusta se si rileva un incremento coerente con la sorgente, la destinazione e il momento del test; una regola può essere corretta ma non intercettare traffico per errata posizione.",
+      "example": "Il counter deny sulla rete server aumenta durante il tentativo da PC-OSPITI.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un counter fermo impone di controllare il percorso e la direzione della ACL.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.8.5, pagina PDF 219"
+    },
+    {
+      "id": "cyber-c12-q067",
+      "topicId": "cyber-c12-t09",
+      "question": "Perché una rete che instrada correttamente può essere insicura sul piano della gestione?",
+      "answer": "Perché i servizi amministrativi possono esporre Telnet, credenziali deboli, accessi troppo ampi o porte inutilizzate.",
+      "detail": "La sicurezza del piano di gestione degli apparati è diversa dalla sola funzionalità del piano dati. Servono protocolli protetti e restrizioni sulle postazioni amministrative.",
+      "example": "R1 instrada correttamente ma consente accessi Telnet non cifrati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere disponibilità della rete con hardening dei router.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.9, pagina PDF 219"
+    },
+    {
+      "id": "cyber-c12-q068",
+      "topicId": "cyber-c12-t09",
+      "question": "Quali controlli compongono un accesso amministrativo progettato correttamente?",
+      "answer": "Identità personali, credenziali gestite, rete di gestione limitata, protocollo cifrato, privilegi adeguati e logging.",
+      "detail": "Il laboratorio usa un account locale, mentre scenari reali possono richiedere AAA centralizzato, MFA e separazione dei ruoli. Le sorgenti di amministrazione vanno limitate.",
+      "example": "Solo postazioni autorizzate della rete management possono collegarsi in SSH.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il solo accesso SSH non dimostra una policy completa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.9.1, pagina PDF 219"
+    },
+    {
+      "id": "cyber-c12-q069",
+      "topicId": "cyber-c12-t09",
+      "question": "Perché `service password-encryption` non è sufficiente a proteggere le password?",
+      "answer": "Nelle configurazioni Cisco tradizionali realizza un offuscamento reversibile, non una protezione crittografica robusta.",
+      "detail": "La gestione sicura richiede segreti appropriati, controllo degli accessi, protocolli protetti e procedure di rotazione: un comando di mascheramento della configurazione non sostituisce questi controlli.",
+      "example": "Una password offuscata nel running-config non equivale a un vault sicuro.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare questa funzione password hashing resistente agli attacchi offline.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.9.1, pagina PDF 219"
+    },
+    {
+      "id": "cyber-c12-q070",
+      "topicId": "cyber-c12-t09",
+      "question": "Quali prerequisiti e comandi principali abilitano SSH sul router simulato?",
+      "answer": "Impostare hostname e `ip domain-name`, creare `username ... secret`, generare chiavi RSA, usare `ip ssh version 2`, e su VTY `login local` più `transport input ssh`.",
+      "detail": "Servono modello e versione che supportino SSH e chiavi RSA; la sintassi può variare. Il comando show ip ssh aiuta a verificare il servizio.",
+      "example": "Su R1: `line vty 0 4`, `login local`, `transport input ssh`.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attivare SSH dimenticando le linee VTY o lasciando Telnet abilitato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.9.2, pagina PDF 219"
+    },
+    {
+      "id": "cyber-c12-q071",
+      "topicId": "cyber-c12-t09",
+      "question": "Che significato ha il segnaposto <PASSWORD_DI_LAB> nell’esempio IOS?",
+      "answer": "Indica una password fittizia da scegliere localmente, non una stringa da copiare letteralmente con parentesi angolari.",
+      "detail": "Il manuale ricorda che alcuni comandi RSA richiedono dimensioni della chiave e che per la sintassi va consultato l’help contestuale del simulatore.",
+      "example": "Sostituire il segnaposto con un segreto di prova non usato altrove.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserire credenziali personali nei .pkt distribuiti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.9.2, pagina PDF 219"
+    },
+    {
+      "id": "cyber-c12-q072",
+      "topicId": "cyber-c12-t09",
+      "question": "Quali prove mostrano che la gestione è passata da Telnet a SSH?",
+      "answer": "Verificare che Telnet sia rifiutato sulle linee VTY e che il client autorizzato riesca a collegarsi con SSH.",
+      "detail": "Controllare show ip ssh, configurazione VTY e, se disponibile, il client SSH simulato. La cifratura del canale non risolve da sola gestione dei ruoli, logging, patch e fonti autorizzate.",
+      "example": "Sessione SSH riuscita da PC amministratore e Telnet non accettato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che SSH elimini ogni rischio di accesso remoto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.9.3, pagina PDF 220"
+    },
+    {
+      "id": "cyber-c12-q073",
+      "topicId": "cyber-c12-t09",
+      "question": "Come si riduce la superficie d’attacco delle porte fisiche inutilizzate sullo switch?",
+      "answer": "Se il modello lo supporta, si individua un range realmente inutilizzato, si applica `shutdown` e si verifica con `show interfaces status`.",
+      "detail": "Prima di disabilitare occorre controllare che il range non includa trunk, server o porte di management. Una configurazione corretta ma applicata al range sbagliato può interrompere servizi leciti.",
+      "example": "`interface range fa0/10 - 24` seguito da `shutdown` soltanto se quelle porte sono libere.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non copiare range di porte senza controllare la topologia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.9.4, pagina PDF 220"
+    },
+    {
+      "id": "cyber-c12-q074",
+      "topicId": "cyber-c12-t10",
+      "question": "Quali minacce tratta il laboratorio DHCP snooping e Dynamic ARP Inspection?",
+      "answer": "Server DHCP non autorizzati e falsificazione delle associazioni IP–MAC tramite ARP spoofing.",
+      "detail": "I controlli appartengono alla protezione del primo hop sulla LAN; il laboratorio è facoltativo perché gli switch Packet Tracer non ne simulano necessariamente tutte le funzioni.",
+      "example": "Un rogue DHCP distribuisce un gateway malevolo; un ARP falso devia il traffico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dare per scontato che i comandi siano disponibili su qualunque modello.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.10, pagina PDF 220"
+    },
+    {
+      "id": "cyber-c12-q075",
+      "topicId": "cyber-c12-t10",
+      "question": "Che cosa si intende con first hop in una rete locale?",
+      "answer": "Le interazioni iniziali dell’host con la LAN: configurazione IP, risoluzione MAC e invio del traffico verso il gateway.",
+      "detail": "Se una di queste relazioni è manipolata, anche applicazioni formalmente corrette possono usare percorsi non affidabili o il destinatario errato.",
+      "example": "Un PC riceve via DHCP un DNS o un gateway controllato da un attaccante.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il primo hop non coincide con un generico server web su Internet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.10.1, pagina PDF 220"
+    },
+    {
+      "id": "cyber-c12-q076",
+      "topicId": "cyber-c12-t10",
+      "question": "Come funziona il principio delle porte trusted e untrusted in DHCP snooping?",
+      "answer": "Lo switch distingue porte da cui accettare risposte DHCP del server legittimo e porte su cui filtrare risposte sospette.",
+      "detail": "La funzione può apprendere binding IP, MAC, VLAN e interfaccia tramite il traffico DHCP. La posizione delle porte fidate deve essere scelta dopo aver studiato la topologia.",
+      "example": "Porta verso server DHCP legittimo trusted; porte client untrusted.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare automaticamente come trusted tutti i trunk.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.10.1, pagina PDF 220"
+    },
+    {
+      "id": "cyber-c12-q077",
+      "topicId": "cyber-c12-t10",
+      "question": "Come usa DAI la tabella di DHCP snooping per contrastare ARP spoofing?",
+      "answer": "Confronta i messaggi ARP ricevuti su porte non fidate con associazioni IP–MAC note, limitando quelli incoerenti.",
+      "detail": "Le associazioni possono provenire dal binding DHCP. Dispositivi con indirizzi statici richiedono eventuali eccezioni o registrazioni esplicite; altrimenti possono essere bloccati.",
+      "example": "Una risposta ARP con MAC incompatibile rispetto al binding viene sospettata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "DAI non può verificare magicamente ogni host statico senza dati affidabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.10.1, pagina PDF 220"
+    },
+    {
+      "id": "cyber-c12-q078",
+      "topicId": "cyber-c12-t10",
+      "question": "Qual è l’ordine prudente per attivare DHCP snooping e DAI?",
+      "answer": "Mappare il percorso DHCP, scegliere porte trusted, attivare snooping sulle VLAN, verificare assegnazione e binding, solo poi introdurre DAI.",
+      "detail": "Il manuale sottolinea che abilitazioni frettolose possono interrompere client legittimi, soprattutto con IP statici e topologie non comprese.",
+      "example": "Verificare `show ip dhcp snooping binding` prima di attivare DAI.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare DAI alla cieca su una VLAN con host statici.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.10.2, pagina PDF 221"
+    },
+    {
+      "id": "cyber-c12-q079",
+      "topicId": "cyber-c12-t10",
+      "question": "Quali comandi di verifica sono previsti per DHCP snooping e DAI?",
+      "answer": "`show ip dhcp snooping`, `show ip dhcp snooping binding` e `show ip arp inspection`, se disponibili.",
+      "detail": "Consentono di ispezionare abilitazione, binding e controlli ARP: l’assenza del comando nel simulatore va riportata come limite, non mascherata con risultati inventati.",
+      "example": "Documentare VLAN protetta, interfaccia trusted e tabella binding.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere che la misura è efficace senza alcuna evidenza osservabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.10.2, pagina PDF 221"
+    },
+    {
+      "id": "cyber-c12-q080",
+      "topicId": "cyber-c12-t10",
+      "question": "Perché un controllo di first-hop security mal configurato può diventare un rischio?",
+      "answer": "Può interrompere DHCP o ARP legittimi, provocando un disservizio pur essendo progettato come difesa.",
+      "detail": "Porte fidate errate, server in posizione diversa e binding statici assenti possono causare falsi blocchi. Servono verifica del supporto, sequenza di attivazione e capacità di rollback.",
+      "example": "DAI attivo senza binding nega traffico ad host con IP statici.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La presenza di un comando di sicurezza non prova un vantaggio operativo netto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.10.3, pagina PDF 221"
+    },
+    {
+      "id": "cyber-c12-q081",
+      "topicId": "cyber-c12-t11",
+      "question": "Qual è lo scopo del laboratorio sulle reti Wi-Fi aziendali e ospiti?",
+      "answer": "Realizzare accesso wireless protetto per dipendenti e separazione verificabile dei visitatori dalle risorse interne.",
+      "detail": "Si usano uno o più access point del simulatore e domini IP/VLAN distinti; il supporto delle funzioni dipende da modelli e versione.",
+      "example": "WLAN interna per utenti autorizzati e WLAN ospiti con accesso limitato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "SSID differenti non garantiscono da soli isolamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.11, pagina PDF 221"
+    },
+    {
+      "id": "cyber-c12-q082",
+      "topicId": "cyber-c12-t11",
+      "question": "Quali protocolli Wi-Fi raccomanda il manuale nell’esercitazione?",
+      "answer": "WPA3 quando supportato; altrimenti WPA2 con AES/CCMP per la prova, evitando WEP e WPA/TKIP come scelte moderne.",
+      "detail": "In reti enterprise si possono utilizzare 802.1X, EAP-TLS e RADIUS, ma non sono sempre simulati completamente in Packet Tracer.",
+      "example": "Scegliere WPA2-AES se il modello non offre WPA3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare sicura una rete che usa WEP per mera compatibilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.11.1, pagina PDF 221"
+    },
+    {
+      "id": "cyber-c12-q083",
+      "topicId": "cyber-c12-t11",
+      "question": "Perché la protezione della rete ospiti non si ottiene cambiando soltanto il SSID?",
+      "answer": "Perché occorrono separazione IP/VLAN e policy di routing, ACL o firewall che impediscano l’accesso ai server aziendali.",
+      "detail": "Il nome della WLAN identifica un accesso radio, ma non è una regola L3 né un controllo di autorizzazione su risorse interne.",
+      "example": "Ospiti su VLAN30 con ACL che nega VLAN10 e VLAN20.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un nome di rete differente con una separazione di privilegi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.11.1, pagina PDF 221"
+    },
+    {
+      "id": "cyber-c12-q084",
+      "topicId": "cyber-c12-t11",
+      "question": "Qual è la procedura di base per configurare e verificare WLAN interna e ospiti?",
+      "answer": "Creare due WLAN, attribuire domini IP/VLAN distinti, configurare ACL/firewall, impostare credenziali fittizie e testare sia flussi ammessi sia negati.",
+      "detail": "La prova deve verificare il servizio interno per i dipendenti e il blocco degli ospiti alle risorse riservate; eventuali funzioni WPA3/802.1X non supportate vanno dichiarate.",
+      "example": "Client interno→server ammesso; ospite→server riservato negato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non memorizzare password personali nella topologia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.11.2, pagina PDF 221"
+    },
+    {
+      "id": "cyber-c12-q085",
+      "topicId": "cyber-c12-t11",
+      "question": "Perché nascondere il broadcast SSID non è una misura crittografica?",
+      "answer": "Perché non cifra il traffico e non autentica l’utente; riduce soltanto la pubblicità ordinaria del nome della WLAN.",
+      "detail": "Il manuale distingue visibilità del nome, autenticazione del collegamento, isolamento IP e autorizzazione applicativa come livelli differenti.",
+      "example": "Una WLAN con SSID nascosto ma senza WPA2/WPA3 resta priva di protezione radio adeguata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere l’SSID nascosto come una password.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.11.3, pagina PDF 222"
+    },
+    {
+      "id": "cyber-c12-q086",
+      "topicId": "cyber-c12-t11",
+      "question": "Perché una password Wi-Fi condivisa non equivale a identità individuale e controllo applicativo?",
+      "answer": "Perché più utenti possono conoscere la stessa credenziale, mentre applicazioni e servizi devono verificare i permessi dei singoli soggetti.",
+      "detail": "Anche una WLAN cifrata protegge principalmente il tratto radio. Quando necessario, i servizi devono usare TLS end-to-end e autorizzazioni applicative indipendenti.",
+      "example": "Un ospite collegato con una password condivisa non deve poter leggere documenti del CRM.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire all’access point controlli sulle API del server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.11.3, pagina PDF 222"
+    },
+    {
+      "id": "cyber-c12-q087",
+      "topicId": "cyber-c12-t12",
+      "question": "Qual è l’obiettivo del laboratorio HTTPS e quali limiti ha Packet Tracer su questo tema?",
+      "answer": "Distinguere disponibilità della pagina e protezione crittografica del canale, osservando i certificati e l’identità del server.",
+      "detail": "Per dettagli reali di PKI e TLS moderno il manuale suggerisce anche un browser su servizio autorizzato, perché Packet Tracer non simula integralmente handshake, CA e validazioni.",
+      "example": "Confrontare una pagina HTTP disponibile con una sessione HTTPS validata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare Packet Tracer un audit della PKI pubblica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.12, pagina PDF 222"
+    },
+    {
+      "id": "cyber-c12-q088",
+      "topicId": "cyber-c12-t12",
+      "question": "Quali verifiche concettuali compie il client durante una connessione HTTPS affidabile?",
+      "answer": "Controlla nome del servizio, certificato, corrispondenza del nome, validità temporale, catena di fiducia e stabilisce chiavi per il canale protetto.",
+      "detail": "TLS protegge dati applicativi verso l’endpoint TLS e normalmente autentica il server. Certificato valido non equivale ad applicazione priva di vulnerabilità.",
+      "example": "Confrontare il dominio richiesto con i nomi SAN del certificato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare autenticità del server a correttezza dei permessi utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.12.1, pagina PDF 222"
+    },
+    {
+      "id": "cyber-c12-q089",
+      "topicId": "cyber-c12-t12",
+      "question": "Quali dati essenziali di un certificato si annotano nella prova browser?",
+      "answer": "Subject/SAN, issuer, not before/not after, algoritmo di firma e catena di certificazione.",
+      "detail": "La verifica deve distinguere nome DNS richiesto, identità attestata dal certificato e contenuto HTTP restituito. Un browser può segnalare certificato scaduto, non attendibile o con nome errato.",
+      "example": "Il nome SAN non contiene il dominio aperto: il browser deve segnalare un problema.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserire credenziali personali durante la verifica didattica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.12.2, pagina PDF 222"
+    },
+    {
+      "id": "cyber-c12-q090",
+      "topicId": "cyber-c12-t12",
+      "question": "Perché ignorare senza criterio un avviso di certificato invalida una parte decisiva della fiducia?",
+      "answer": "Perché si rinuncia a verificare in modo attendibile che il server contattato sia quello desiderato.",
+      "detail": "La cifratura senza autenticazione affidabile può consentire collegamenti a interlocutori sostituiti. Un certificato self-signed o con nome incoerente richiede una decisione di fiducia appropriata.",
+      "example": "Accettare qualunque certificato impedisce di distinguere il vero endpoint da un possibile impostore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere canale cifrato con canale necessariamente autenticato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.12.2, pagina PDF 222"
+    },
+    {
+      "id": "cyber-c12-q091",
+      "topicId": "cyber-c12-t12",
+      "question": "Che cosa fa il comando `openssl s_client -connect example.com:443 -servername example.com`?",
+      "answer": "Apre una normale connessione TLS e mostra, secondo la versione, informazioni su negoziazione e certificati; `-servername` invia il nome SNI.",
+      "detail": "È una verifica opzionale soltanto per servizi di cui è lecito osservare pubblicamente la connessione. SNI aiuta a identificare il sito giusto su IP condivisi. Non sostituisce un audit.",
+      "example": "Il server sceglie il certificato adatto al nome SNI su hosting virtuale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare questo comando come prova che il sito non abbia vulnerabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.12.3, pagina PDF 222"
+    },
+    {
+      "id": "cyber-c12-q092",
+      "topicId": "cyber-c12-t12",
+      "question": "Cosa protegge TLS e quali problemi restano fuori dal suo perimetro?",
+      "answer": "Protegge confidenzialità/integrità della comunicazione verso l’endpoint TLS e normalmente autentica il server; non elimina difetti dell’applicazione.",
+      "detail": "Autorizzazioni scorrette, SQL injection, vulnerabilità di sessione e host compromessi richiedono controlli distinti. Un proxy che termina TLS richiede attenzione anche al collegamento con il backend.",
+      "example": "Client→reverse proxy cifrato, ma proxy→server interno da valutare separatamente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che HTTPS cifra automaticamente i dati fin dentro il database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.12.4, pagina PDF 222"
+    },
+    {
+      "id": "cyber-c12-q093",
+      "topicId": "cyber-c12-t12",
+      "question": "Perché la terminazione TLS su un reverse proxy va considerata nella verifica di sicurezza?",
+      "answer": "Perché la protezione del primo tratto finisce sull’endpoint TLS e il traffico verso il backend richiede proprie misure coerenti con il rischio.",
+      "detail": "Bisogna distinguere confidenzialità del canale, autenticazione del server, autorizzazioni dell’applicazione e sicurezza degli endpoint, evitando garanzie non testate.",
+      "example": "Il browser valida il proxy, ma il proxy inoltra la richiesta su una connessione separata al backend.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere cifratura end-to-end solo perché il browser mostra HTTPS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.12.4, pagina PDF 222"
+    },
+    {
+      "id": "cyber-c12-q094",
+      "topicId": "cyber-c12-t13",
+      "question": "Che cosa caratterizza il laboratorio di incident response rispetto alle simulazioni di rete?",
+      "answer": "È un tabletop exercise: il team interpreta indizi sintetici, valuta impatti, decide contenimento e ripristino, senza eseguire attacchi reali.",
+      "detail": "La competenza richiesta è decisionale e organizzativa oltre che tecnica. Le azioni devono preservare evidenze, coinvolgere ruoli e considerare conseguenze per i processi aziendali.",
+      "example": "Un incremento dei 503 viene investigato insieme ai log IAM e alle segnalazioni del help desk.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare la simulazione per l’analisi di un incidente realmente accaduto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13, pagina PDF 223"
+    },
+    {
+      "id": "cyber-c12-q095",
+      "topicId": "cyber-c12-t13",
+      "question": "Qual è l’architettura e il problema iniziale dello scenario incidente simulato?",
+      "answer": "Portale offerte e margini con reverse proxy esposto, application server interno e database non esposto direttamente; alcuni utenti non accedono e compaiono anomalie nei log.",
+      "detail": "I dati del caso sono inventati. Il portale gestisce informazioni di business e alcuni dati personali; i segnali possono riflettere guasto, attacco o configurazione errata.",
+      "example": "HTTP 503 in aumento e autenticazioni fallite, con un login anomalo di account tecnico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre un’esfiltrazione dal solo incremento di errori.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.1, pagina PDF 223"
+    },
+    {
+      "id": "cyber-c12-q096",
+      "topicId": "cyber-c12-t13",
+      "question": "Perché i confini architetturali del portale contano nella risposta all’incidente?",
+      "answer": "Perché proxy, applicazione, IAM e database forniscono evidenze diverse e possono richiedere contenimenti differenti.",
+      "detail": "Il database non raggiungibile da Internet non è automaticamente sicuro se un account di servizio interno è compromesso. Il contenimento deve rispettare dipendenze e continuità.",
+      "example": "Bloccare un account applicativo può interrompere anche le integrazioni che lo usano.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il perimetro di rete una prova di assenza di rischio sui dati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.1, pagina PDF 223"
+    },
+    {
+      "id": "cyber-c12-q097",
+      "topicId": "cyber-c12-t13",
+      "question": "Qual è la timeline sintetica degli eventi del caso incidente?",
+      "answer": "09:02 proxy: 503 in aumento; 09:05 login falliti; 09:08 API lente; 09:11 login riuscito account tecnico da client insolito; 09:15 accessi DB consueti; 09:20 tre segnalazioni di blocco.",
+      "detail": "Ogni voce è un indizio, non una diagnosi definitiva. Occorre preservare la cronologia, collegare le sorgenti e identificare le informazioni mancanti.",
+      "example": "Il login riuscito anomalo alle 09:11 richiede approfondimento prioritario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire i timestamp del caso con una narrazione non documentata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.2, pagina PDF 223"
+    },
+    {
+      "id": "cyber-c12-q098",
+      "topicId": "cyber-c12-t13",
+      "question": "Che cosa suggeriscono i numerosi HTTP 503 alle 09:02?",
+      "answer": "Un problema di disponibilità del servizio, possibile ma non necessariamente dovuto a saturazione o attacco.",
+      "detail": "Per interpretarlo bisogna controllare proxy, backend, metriche di carico, connessioni, eventuali manutenzioni e tassi di errore.",
+      "example": "Un backend fermo può produrre 503 anche senza traffico ostile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proclamare DDoS senza correlazione di evidenze.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.2, pagina PDF 223"
+    },
+    {
+      "id": "cyber-c12-q099",
+      "topicId": "cyber-c12-t13",
+      "question": "Qual è l’evento più sensibile nella timeline e perché?",
+      "answer": "Il login riuscito delle 09:11 di un account tecnico da un client non abituale, perché potrebbe indicare uso improprio di una credenziale privilegiata.",
+      "detail": "Va verificata legittimità della postazione, titolarità della sessione, attività successive e dipendenze aziendali prima di una decisione di disabilitazione.",
+      "example": "Confrontare log IAM, destinazione e orari autorizzati del servizio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Anomalia significativa non equivale a compromissione già dimostrata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.2, pagina PDF 223"
+    },
+    {
+      "id": "cyber-c12-q100",
+      "topicId": "cyber-c12-t13",
+      "question": "Gli accessi al DB dal consueto application server alle 09:15 escludono una violazione?",
+      "answer": "No: indicano soltanto che la sorgente registrata è quella consueta, senza provare né esfiltrazione né sua assenza.",
+      "detail": "Se fosse stato compromesso un account applicativo, il traffico verso il DB potrebbe provenire da componenti normalmente autorizzati. Occorrono query log, profili d’accesso e dati correlati.",
+      "example": "Una chiamata DB dal server applicativo può essere legittima o abusiva.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare “nessuna prova immediata” in certezza di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.2, pagina PDF 223"
+    },
+    {
+      "id": "cyber-c12-q101",
+      "topicId": "cyber-c12-t13",
+      "question": "Perché gli indizi devono essere separati da ipotesi e fatti confermati?",
+      "answer": "Per evitare attribuzioni errate e interventi che danneggiano il servizio senza risolvere la causa.",
+      "detail": "HTTP 503, login falliti e risposta lenta possono avere spiegazioni alternative. Si raccolgono prove per confrontare le ipotesi e registrare il grado di certezza.",
+      "example": "Un’integrazione difettosa potrebbe produrre molti login falliti senza attacco.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserire in un report una causa non verificata come fatto accertato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.3, pagina PDF 223"
+    },
+    {
+      "id": "cyber-c12-q102",
+      "topicId": "cyber-c12-t13",
+      "question": "Quali tre domande guidano l’analisi iniziale di un incidente?",
+      "answer": "Che cosa sappiamo con certezza? Che cosa ipotizziamo? Quali informazioni mancano?",
+      "detail": "Il team deve preservare log e altre evidenze, classificare l’impatto, evitare interventi distruttivi non necessari e coinvolgere i responsabili per stabilire un piano proporzionato.",
+      "example": "Sappiamo che ci sono 503; ipotizziamo saturazione; ci mancano metriche sul backend.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cancellare o sovrascrivere evidenze mentre si prova a risolvere.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.3, pagina PDF 223"
+    },
+    {
+      "id": "cyber-c12-q103",
+      "topicId": "cyber-c12-t13",
+      "question": "Qual è il percorso operativo di gestione dell’incidente nel manuale basato su NIST SP 800-61 Rev. 3?",
+      "answer": "Preparazione Govern/Identify/Protect; Detect per raccogliere evidenze; Respond per contenere; Recover per ripristinare; miglioramento continuo.",
+      "detail": "Il documento collega la risposta alle sei funzioni del NIST CSF 2.0 e non a una semplice sequenza isolata di quattro passi: preparazione e governance operano lungo tutto il processo.",
+      "example": "Prima predisporre ruoli e asset, poi analizzare log e adottare contenimento proporzionato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare Rev. 3 al solo schema lineare prevenzione-rilevazione-risposta-recupero.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.4, pagina PDF 224"
+    },
+    {
+      "id": "cyber-c12-q104",
+      "topicId": "cyber-c12-t13",
+      "question": "Che cosa comporta concretamente la fase Detect nel caso del portale?",
+      "answer": "Raccogliere e correlare monitoraggio, segnalazioni, eventi proxy, IAM, applicazione e database, verificandone affidabilità e ordine temporale.",
+      "detail": "Il risultato è un primo perimetro dell’incidente, da riesaminare man mano che emergono nuove evidenze. Non basta l’osservazione di una sola fonte.",
+      "example": "Correlare 503 alle 09:02, login alle 09:05 e rallentamento API alle 09:08.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere correlazione temporale e causalità provata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.4, pagina PDF 224"
+    },
+    {
+      "id": "cyber-c12-q105",
+      "topicId": "cyber-c12-t13",
+      "question": "Quali criteri devono guidare le azioni di Respond?",
+      "answer": "Contenere il possibile uso improprio limitando account, percorsi o funzioni specifiche secondo procedure autorizzate e impatto sul business.",
+      "detail": "Ogni intervento introduce anche rischi operativi: bloccare un account tecnico o filtrare traffico può fermare utenti e processi leciti.",
+      "example": "Disabilitazione temporanea dell’account solo dopo verifica di identità e dipendenze.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non effettuare blocchi indiscriminati senza valutare gli effetti sul servizio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.4, pagina PDF 224"
+    },
+    {
+      "id": "cyber-c12-q106",
+      "topicId": "cyber-c12-t13",
+      "question": "Che cosa è necessario verificare prima di dichiarare conclusa la fase Recover?",
+      "answer": "Disponibilità ripristinata, integrità dei componenti e delle configurazioni, assenza della causa persistente e monitoraggio del ritorno alla normalità.",
+      "detail": "La riapertura del servizio deve essere controllata: se si ripristina una configurazione ancora vulnerabile, il problema può ripetersi. Il post-incident review aggiorna policy e formazione.",
+      "example": "Ripristinare una configurazione verificata e controllare le API dopo il recovery.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Recovery non significa semplicemente riaccendere il server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.4, pagina PDF 224"
+    },
+    {
+      "id": "cyber-c12-q107",
+      "topicId": "cyber-c12-t13",
+      "question": "Quali domande dovrebbe porre il team prima di isolare un application server?",
+      "answer": "Quali processi dipendono dal servizio, quale impatto avrebbe l’isolamento, quali accessi sono realmente anomali e chi può autorizzare la misura.",
+      "detail": "La decisione coinvolge continuità operativa, ruoli, evidenze e priorità di business. Il gruppo deve prevedere anche conservazione log e comunicazioni necessarie.",
+      "example": "Un portale bloccato può interrompere simulazioni e approvazioni delle offerte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pianificare l’isolamento guardando soltanto il sintomo tecnico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.5, pagina PDF 224"
+    },
+    {
+      "id": "cyber-c12-q108",
+      "topicId": "cyber-c12-t13",
+      "question": "Quali sono i pro e i rischi del disabilitare temporaneamente l’account tecnico sospetto?",
+      "answer": "Può limitare un uso improprio, ma può interrompere servizi integrati che dipendono dall’account.",
+      "detail": "Prima di agire servono identità, audit del login, utilizzi previsti e dipendenze dell’account. Il contenimento va eseguito secondo procedure e autorizzazioni.",
+      "example": "Bloccare la credenziale del batch può arrestare elaborazioni di back-office.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cancellare l’account o i suoi log senza preservare evidenze.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.6, pagina PDF 224"
+    },
+    {
+      "id": "cyber-c12-q109",
+      "topicId": "cyber-c12-t13",
+      "question": "Quali evidenze giustificano un rate limiting sul reverse proxy e quale rischio comporta?",
+      "answer": "Telemetria di carico, volumi per sorgente e tassi di errore; il rischio è bloccare anche utenti legittimi.",
+      "detail": "La misura può ridurre saturazione o traffico anomalo ma richiede taratura e verifica dell’effetto sul servizio. Non prova di per sé la presenza di un DDoS.",
+      "example": "Limitare richieste anomale dopo avere osservato pattern nelle metriche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non configurare limiti arbitrari senza analizzare il traffico reale del caso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.6, pagina PDF 224"
+    },
+    {
+      "id": "cyber-c12-q110",
+      "topicId": "cyber-c12-t13",
+      "question": "Perché si preservano log e snapshot autorizzati durante la gestione di un incidente?",
+      "answer": "Per consentire analisi, attribuzione temporale e tracciabilità delle decisioni senza perdere informazioni rilevanti.",
+      "detail": "La conservazione richiede procedure, autorizzazioni, protezione dei dati e attenzione al costo di spazio e performance. Va evitata la distruzione involontaria di evidenze.",
+      "example": "Salvare log proxy/IAM prima di ruotare credenziali o riavviare componenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La raccolta di evidenze non autorizza a ignorare privacy e sicurezza dei log.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.6, pagina PDF 224"
+    },
+    {
+      "id": "cyber-c12-q111",
+      "topicId": "cyber-c12-t13",
+      "question": "Quando un disservizio informatico può diventare un data breach ai sensi del GDPR?",
+      "answer": "Quando una violazione di sicurezza comporta distruzione, perdita, modifica, divulgazione o accesso non autorizzato a dati personali.",
+      "detail": "Un portale indisponibile non costituisce automaticamente un breach di dati personali. Serve una valutazione fattuale con titolare, DPO e funzioni legali sugli obblighi applicabili.",
+      "example": "Servizio in 503 senza evidenze di compromissione dei dati: verifiche ancora necessarie.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre obblighi di notifica dalla sola presenza di HTTP 503.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.7, pagina PDF 224"
+    },
+    {
+      "id": "cyber-c12-q112",
+      "topicId": "cyber-c12-t13",
+      "question": "Qual è il ruolo del tecnico nel collegamento fra incident response e GDPR?",
+      "answer": "Raccogliere e condividere evidenze tecniche affidabili con i soggetti aziendali competenti per la valutazione legale e organizzativa.",
+      "detail": "Titolare, DPO e uffici competenti devono valutare condizioni e notifiche del GDPR; il tecnico non dovrebbe sostituire l’accertamento con conclusioni normative non dimostrate.",
+      "example": "Fornire timeline e categorie di dati potenzialmente esposte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proclamare da soli “nessuna notifica necessaria” senza valutazioni appropriate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.7, pagina PDF 224"
+    },
+    {
+      "id": "cyber-c12-q113",
+      "topicId": "cyber-c12-t14",
+      "question": "Qual è lo scenario della progettazione conclusiva del Capitolo 12?",
+      "answer": "Rete di piccola azienda con amministrazione, personale operativo, ospiti e un server di dati riservati; richiesta segmentazione e accessi controllati.",
+      "detail": "Il progetto deve dimostrare requisiti tecnici e operativi, sicurezza dei flussi e capacità di ripristino, non soltanto presentare una topologia graficamente corretta.",
+      "example": "Uffici e ospiti usano VLAN differenti con ACL verso il server interno.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un diagramma senza test e policy non soddisfa l’esercitazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.14, pagina PDF 225"
+    },
+    {
+      "id": "cyber-c12-q114",
+      "topicId": "cyber-c12-t14",
+      "question": "Quali requisiti coprono R1–R3 della rete aziendale conclusiva?",
+      "answer": "R1 VLAN/subnet distinte per Amministrazione e Operazioni; R2 server raggiungibile solo da reti autorizzate; R3 ospiti limitati ai servizi previsti.",
+      "detail": "I criteri di verifica sono rispettivamente separazione dei domini, test positivi/negativi verso il server e ACL conformi alla matrice di autorizzazione.",
+      "example": "Uffici→server ammesso, ospiti→server negato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre R2/R3 al fatto di avere tre SSID o VLAN differenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.14.1, pagina PDF 225"
+    },
+    {
+      "id": "cyber-c12-q115",
+      "topicId": "cyber-c12-t14",
+      "question": "Quali requisiti coprono R4–R7 della rete aziendale conclusiva?",
+      "answer": "R4 configurazioni osservabili/documentate; R5 credenziali gestione separate; R6 backup configurazioni e piano ripristino; R7 limiti simulazione dichiarati.",
+      "detail": "La soluzione viene giudicata anche sulla capacità di provare scelte, gestire accessi amministrativi e recuperare da guasti; le funzioni non testate vanno esplicitate.",
+      "example": "R4: output show e tabella porte; R6: copia della configurazione e procedura di recovery.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare documentazione e recovery come attività opzionali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.14.1, pagina PDF 225"
+    },
+    {
+      "id": "cyber-c12-q116",
+      "topicId": "cyber-c12-t14",
+      "question": "Qual è la segmentazione IP/VLAN proposta per l’ufficio nell’esercitazione conclusiva?",
+      "answer": "VLAN10 AMMINISTRAZIONE 192.168.10.0/24; VLAN20 OPERAZIONI 192.168.20.0/24; VLAN30 OSPITI 192.168.30.0/24; VLAN40 SERVER 192.168.40.0/24; VLAN99 GESTIONE opzionale.",
+      "detail": "Le interfacce devono appartenere alle VLAN previste e i trunk trasportare solo quelle necessarie. I gateway possono trovarsi su router oppure switch multilayer.",
+      "example": "VLAN99, se introdotta, usa 192.168.99.0/24 per management.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere questo progetto a quattro VLAN con il precedente router-on-a-stick a tre VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.14.2, pagina PDF 225"
+    },
+    {
+      "id": "cyber-c12-q117",
+      "topicId": "cyber-c12-t14",
+      "question": "Perché il diagramma della rete finale colloca router/firewall fra le VLAN?",
+      "answer": "Perché il routing deve consentire il traffico necessario applicando le policy, anziché permettere automaticamente ogni flusso tra subnet.",
+      "detail": "Il diagramma rappresenta VLAN10, 20, 30 e 40 con un punto di controllo L3. L’isolamento va verificato da test e regole, non dedotto dai blocchi grafici.",
+      "example": "Il router nega OSPITI→SERVER e permette reti autorizzate secondo policy.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la figura una prova dell’effettiva configurazione di ACL.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.14.2, pagina PDF 225"
+    },
+    {
+      "id": "cyber-c12-q118",
+      "topicId": "cyber-c12-t14",
+      "question": "Quali politiche minime dovrebbero essere esposte all’orale per l’ufficio?",
+      "answer": "Ospiti isolati dalle reti interne; server su rete dedicata; personale abilitato ai soli servizi di ruolo; management accessibile soltanto da rete controllata.",
+      "detail": "Le restrizioni vanno implementate in router, apparati L3 o sistemi di sicurezza. Si aggiungono patch, log, recovery, account amministrativi e verifiche periodiche.",
+      "example": "VLAN OSPITI non può chiamare servizi di amministrazione del router.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La VLAN separa broadcast ma non garantisce autorizzazioni sulle applicazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.14.3, pagina PDF 225"
+    },
+    {
+      "id": "cyber-c12-q119",
+      "topicId": "cyber-c12-t14",
+      "question": "Quali misure complementari impediscono di fermarsi alla sola segmentazione VLAN?",
+      "answer": "Least privilege, autenticazione/autorizzazione applicativa, patching, registrazione eventi, backup e revisione periodica delle regole.",
+      "detail": "VLAN e ACL aiutano a limitare i percorsi, ma non eliminano errori del software o uso improprio di credenziali valide. La sicurezza è una combinazione di misure.",
+      "example": "Un account legittimo ma con privilegi eccessivi può leggere dati nonostante le VLAN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere la sicurezza della rete come proprietà garantita dal numero di VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.14.3, pagina PDF 225"
+    },
+    {
+      "id": "cyber-c12-q120",
+      "topicId": "cyber-c12-t14",
+      "question": "Che cosa deve contenere l’elaborato finale della rete sicura?",
+      "answer": "Diagramma, inventario, tabella IP, VLAN/porte, configurazioni, matrice dei flussi, test ed evidenze, errori/diagnosi, rischi residui e motivazione economica.",
+      "detail": "La relazione rende verificabili requisito, implementazione e risultato; collega le scelte tecniche a costo, operatività e rischi ancora aperti.",
+      "example": "Matrice sorgente→destinazione con esiti attesi e osservati per ogni gruppo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare soltanto screenshot della topologia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.14.4, pagina PDF 226"
+    },
+    {
+      "id": "cyber-c12-q121",
+      "topicId": "cyber-c12-t14",
+      "question": "Perché la relazione finale deve includere rischi residui e ragioni economiche?",
+      "answer": "Perché nessun controllo elimina ogni minaccia e la scelta delle difese deve essere sostenibile per l’organizzazione.",
+      "detail": "Le protezioni hanno costi di installazione, manutenzione, usabilità e continuità; spiegare compromessi e controlli non testati dimostra consapevolezza gestionale.",
+      "example": "Una rete di gestione dedicata aumenta isolamento ma richiede amministrazione e monitoraggio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere “più controlli” con una soluzione automaticamente migliore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.14.4, pagina PDF 226"
+    },
+    {
+      "id": "cyber-c12-q122",
+      "topicId": "cyber-c12-t15",
+      "question": "Qual è il principio guida del troubleshooting secondo il manuale?",
+      "answer": "Osservare il sintomo, definire l’esito atteso e verificare i livelli progressivamente prima di modificare la configurazione.",
+      "detail": "Intervenire subito sulle ACL o sugli IP può peggiorare la situazione e cancellare tracce della causa. Il troubleshooting deve separare connettività fisica, VLAN, routing, servizi e policy.",
+      "example": "Prima di rimuovere un deny verificare che server e gateway siano attivi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare cambiamenti casuali come metodo diagnostico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.15, pagina PDF 226"
+    },
+    {
+      "id": "cyber-c12-q123",
+      "topicId": "cyber-c12-t15",
+      "question": "Se un host raggiunge il server per IP ma non per nome, da dove si comincia?",
+      "answer": "Dalla configurazione DNS del client, dal record A e dalla raggiungibilità del resolver.",
+      "detail": "La connettività IP è già stata verificata: il sintomo indica un possibile problema di name resolution, non necessariamente un guasto HTTP.",
+      "example": "Ping 192.168.50.10 riuscito, intranet.lab.test non risolto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non riavviare a caso il web server senza controllo DNS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.15, pagina PDF 226"
+    },
+    {
+      "id": "cyber-c12-q124",
+      "topicId": "cyber-c12-t15",
+      "question": "Come si riconosce un problema di trunk rispetto a uno di routing inter-VLAN?",
+      "answer": "Se una VLAN funziona solo sullo stesso switch, controllare trunk/allowed VLAN; se gli host in VLAN distinte non si raggiungono, controllare gateway e routing L3.",
+      "detail": "show interfaces trunk rivela le VLAN ammesse; show ip interface brief e show ip route chiariscono stato delle subinterfacce e instradamento.",
+      "example": "VLAN20 non attraversa SW1–SW2 ma VLAN10 sì: sospetta allowed VLAN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non modificare l’IP di un host se il problema è trasporto sul trunk.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.15, pagina PDF 226"
+    },
+    {
+      "id": "cyber-c12-q125",
+      "topicId": "cyber-c12-t15",
+      "question": "Quali controlli si eseguono a livello fisico e collegamento durante una diagnosi?",
+      "answer": "Verificare alimentazione, cablaggi, stato porte, VLAN, trunk, apprendimento MAC e, quando pertinente, ARP.",
+      "detail": "Un errore L1/L2 rende inutili molte verifiche superiori: prima bisogna accertare che host e switch possano trasferire frame sul percorso.",
+      "example": "`show vlan brief`, `show interfaces trunk`, `show mac address-table`.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imputare un timeout HTTP al server se il link è down.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.15.1, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q126",
+      "topicId": "cyber-c12-t15",
+      "question": "Quali controlli si eseguono al livello rete durante il troubleshooting?",
+      "answer": "Indirizzo IP, maschera, default gateway, subinterfacce e tabella di routing.",
+      "detail": "Il dispositivo deve identificare correttamente le subnet e avere una rotta di destinazione. Un gateway errato impedisce comunicazioni off-subnet anche se la LAN funziona.",
+      "example": "`ipconfig` sul client, `show ip route` sul router.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un ping nella propria VLAN non conferma funzionamento inter-VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.15.1, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q127",
+      "topicId": "cyber-c12-t15",
+      "question": "Quali problemi si cercano al livello trasporto e policy?",
+      "answer": "Porte di servizio, filtri ACL, direzione e ordine delle regole e disponibilità del servizio di trasporto.",
+      "detail": "Un pacchetto può raggiungere la subnet ma non un servizio specifico: occorre differenziare policy di rete da porta non in ascolto o servizio non avviato.",
+      "example": "La deny dell’ACL blocca HTTP ma altri test sono consentiti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare successo ICMP e disponibilità TCP/HTTP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.15.1, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q128",
+      "topicId": "cyber-c12-t15",
+      "question": "Quali verifiche si fanno a livello applicativo e di sicurezza?",
+      "answer": "Stato applicazione, DNS, autenticazione/autorizzazione, codici di errore, coerenza con policy e assenza di percorsi alternativi non previsti.",
+      "detail": "Una richiesta può arrivare al server ma essere rifiutata per permessi, o funzionare nonostante una policy che avrebbe dovuto impedirla. Le due situazioni richiedono diagnosi diverse.",
+      "example": "HTTP risponde 403: indagare il permesso applicativo senza imputarlo a trunk.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare il sistema sicuro solo perché il firewall blocca un flusso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.15.1, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q129",
+      "topicId": "cyber-c12-t16",
+      "question": "Esercizio 1: VLAN10 e VLAN20 su uno switch senza router possono comunicare con ping?",
+      "answer": "No, in condizioni ordinarie: sono subnet e domini L2 distinti e manca un dispositivo di routing.",
+      "detail": "La condivisione dello chassis dello switch non elimina i confini IP. Occorre introdurre una funzione L3 e, se necessario, policy.",
+      "example": "PC-A 192.168.10.10/24; PC-B 192.168.20.10/24.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che il cablaggio nello stesso switch basti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.16, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q130",
+      "topicId": "cyber-c12-t16",
+      "question": "Esercizio 2: VLAN20 comunica sullo stesso switch ma non fra due switch; cosa controllare?",
+      "answer": "Verificare VLAN20 su entrambi gli switch e nelle allowed VLAN del trunk.",
+      "detail": "La VLAN10 che funziona sullo stesso trunk suggerisce un problema selettivo di trasporto della VLAN20, non necessariamente di IP.",
+      "example": "`show interfaces trunk` e `show vlan brief` sui due switch.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare tutte le VLAN come un unico canale indivisibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.16, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q131",
+      "topicId": "cyber-c12-t16",
+      "question": "Esercizio 3: quale wildcard identifica la sorgente 192.168.30.0/24 in una ACL Cisco?",
+      "answer": "`192.168.30.0 0.0.0.255`, con wildcard 0.0.0.255.",
+      "detail": "Nella wildcard il bit zero richiede corrispondenza e il bit uno permette variazione. La subnet mask corrispondente è 255.255.255.0.",
+      "example": "La regola corrisponde agli indirizzi 192.168.30.x.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere wildcard e subnet mask.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.16, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q132",
+      "topicId": "cyber-c12-t16",
+      "question": "Esercizio 4: ping per IP funziona, ma intranet.lab.test no; qual è la prima ipotesi?",
+      "answer": "Problema DNS: server non raggiungibile, servizio spento, record A mancante o resolver errato nel client.",
+      "detail": "La raggiungibilità IP mostra che almeno quel percorso funziona; il nome richiede una risoluzione separata.",
+      "example": "Controllare DNS impostato nel client e record intranet.lab.test.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire il problema a HTTP se la pagina è disponibile per IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.16, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q133",
+      "topicId": "cyber-c12-t16",
+      "question": "Esercizio 5: perché una ACL con un solo deny verso la rete server blocca anche la rete esterna?",
+      "answer": "Perché termina con un deny implicito che blocca tutti gli altri flussi non permessi esplicitamente.",
+      "detail": "Se la policy ammette altre destinazioni, va aggiunta una permit adeguata e collocata dopo i deny specifici.",
+      "example": "Aggiungere `permit ip 192.168.30.0 0.0.0.255 any` quando coerente con la policy.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere un permit implicito finale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.16, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q134",
+      "topicId": "cyber-c12-t16",
+      "question": "Esercizio 6: il fallimento del ping tra VLAN è prova che un firewall ha bloccato il traffico?",
+      "answer": "No: il fallimento può dipendere da route, gateway, VLAN, porte o host e richiede verifiche prima di attribuire la causa alla policy.",
+      "detail": "Servono prove positive/negative e controlli di interfacce, tabella routing, ACL e condizioni del destinatario.",
+      "example": "Un server spento non è una policy di sicurezza efficace.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare un sintomo in evidenza della causa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.16, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q135",
+      "topicId": "cyber-c12-t16",
+      "question": "Esercizio 7: una pagina disponibile su HTTPS esclude furto dati e vulnerabilità applicative?",
+      "answer": "No: TLS protegge il canale verso l’endpoint e normalmente autentica il server, ma non corregge difetti applicativi o di accesso.",
+      "detail": "Le informazioni potrebbero essere esposte da SQL injection, account compromessi o privilegi errati indipendentemente dalla cifratura in transito.",
+      "example": "Una API HTTPS senza controlli sugli ID può esporre record altrui.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare HTTPS prova di security by design dell’app.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.16, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q136",
+      "topicId": "cyber-c12-t16",
+      "question": "Esercizio 8: molti HTTP 503 dimostrano automaticamente un DDoS?",
+      "answer": "No: 503 segnala temporanea indisponibilità del servizio ma non ne certifica la causa.",
+      "detail": "Occorre correlare carico, stato dei backend, log del proxy e autenticazione con segnalazioni di utenti prima di confermare un’ipotesi.",
+      "example": "Un errore dell’application server può produrre 503 senza traffico malevolo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere indicatore di impatto e attribuzione causale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.16, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q137",
+      "topicId": "cyber-c12-t16",
+      "question": "Esercizio 9: aggiungere una VLAN di amministrazione impedisce automaticamente gli accessi dagli uffici?",
+      "answer": "No: la separazione L2 non esclude il routing; occorrono restrizioni sulle sorgenti autorizzate verso i servizi di gestione.",
+      "detail": "Router e firewall devono applicare regole coerenti con la matrice dei permessi. Il risultato va testato da entrambe le parti.",
+      "example": "VLAN99 esiste, ma senza ACL VLAN10 potrebbe raggiungerla.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare la segmentazione come sostituto dell’autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.16, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q138",
+      "topicId": "cyber-c12-t16",
+      "question": "Esercizio 10: come applicare defense in depth dopo l’uso anomalo di un account tecnico?",
+      "answer": "Preservare evidenze, verificare e contenere l’account; poi rivedere credenziali, ruoli, reti sorgente, MFA e monitoraggio.",
+      "detail": "La risposta combina controlli di identità, rete, rilevamento e procedure, valutando i rischi di disservizio durante il contenimento.",
+      "example": "Limitare le subnet che possono usare l’account e creare alert per login insoliti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che il semplice cambio password elimini tutte le vie d’abuso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.16, pagina PDF 227"
+    },
+    {
+      "id": "cyber-c12-q139",
+      "topicId": "cyber-c12-t17",
+      "question": "Quale differenza deve emergere all’orale tra una rete raggiungibile e una rete protetta?",
+      "answer": "Raggiungibilità indica comunicazione possibile; protezione richiede requisiti, controlli di sicurezza e prove che gli usi non autorizzati siano impediti.",
+      "detail": "Il repertorio orale del capitolo insiste su connettività, policy, evidenze e limiti. Un test di sicurezza deve attribuire il risultato a una regola.",
+      "example": "Uffici→Server OK e Ospiti→Server KO con ACL documentata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire sicura una LAN perché tutti i ping rispondono.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.17, pagina PDF 228"
+    },
+    {
+      "id": "cyber-c12-q140",
+      "topicId": "cyber-c12-t17",
+      "question": "Come collegare all’orale VLAN, router-on-a-stick e ACL in una sola spiegazione?",
+      "answer": "Le VLAN separano L2; il router-on-a-stick instrada tra subnet; le ACL limitano sul routing i flussi secondo la policy.",
+      "detail": "È un percorso causale: prima la struttura logica, poi la funzione IP, infine l’autorizzazione di rete. Il test positivo e negativo verifica la regola voluta.",
+      "example": "VLAN30 ospiti raggiunge R1 ma non server VLAN20 dopo GUEST-IN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire alla VLAN il lavoro dell’ACL.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.17, pagina PDF 228"
+    },
+    {
+      "id": "cyber-c12-q141",
+      "topicId": "cyber-c12-t17",
+      "question": "Come confrontare all’orale Packet Tracer con un apparato Cisco reale?",
+      "answer": "Packet Tracer è un simulatore didattico con supporto parziale; l’apparato reale ha comportamento, firmware e vulnerabilità effettivi.",
+      "detail": "Le prove della topologia simulata servono a comprendere concetti, non a certificare crittografia, capacità di produzione o assenza di vulnerabilità nel mondo reale.",
+      "example": "Un comando non supportato in simulazione non prova che sia impossibile sul dispositivo reale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare un modello virtuale in garanzia operativa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.17, pagina PDF 228"
+    },
+    {
+      "id": "cyber-c12-q142",
+      "topicId": "cyber-c12-t17",
+      "question": "Come distinguere indizio, incidente e prova durante una risposta d’esame?",
+      "answer": "L’indizio suggerisce un evento; l’incidente è un evento di sicurezza da accertare e gestire; una prova documenta una proprietà o un fatto specifico.",
+      "detail": "Il ragionamento corretto espone ciò che è certo, le ipotesi alternative e i controlli ancora necessari. È la stessa disciplina adottata per verificare i test di rete.",
+      "example": "HTTP 503 è indizio di indisponibilità, non prova certa di DDoS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un errore applicativo con un attacco già attribuito.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.17, pagina PDF 228"
+    },
+    {
+      "id": "cyber-c12-q143",
+      "topicId": "cyber-c12-t17",
+      "question": "Come motivare la dimensione gestionale di una scelta difensiva?",
+      "answer": "Valutando costo, manutenzione, disponibilità, usabilità, ruoli, competenze e riduzione attesa del rischio.",
+      "detail": "Il manuale richiede un bilanciamento: una misura efficace tecnicamente ma troppo onerosa o incline a disservizi può peggiorare il rischio complessivo.",
+      "example": "Attivare DAI dopo aver validato binding evita blocchi di host leciti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non giustificare un controllo dicendo solo “è più sicuro”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.17, pagina PDF 228"
+    },
+    {
+      "id": "cyber-c12-q144",
+      "topicId": "cyber-c12-t17",
+      "question": "Che cosa significa PDU e che ruolo svolge in Simulation Mode?",
+      "answer": "PDU significa Protocol Data Unit: unità di dati di un certo livello di comunicazione, rappresentata negli eventi del simulatore.",
+      "detail": "Osservando una PDU è possibile collegare il modello dei protocolli a sorgente, destinazione, dispositivo attraversato ed evento, nei limiti del livello simulato.",
+      "example": "Una PDU ICMP e una PDU ARP mostrano operazioni diverse nel primo ping.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che PDU significhi soltanto pacchetto IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.18, pagina PDF 231"
+    },
+    {
+      "id": "cyber-c12-q145",
+      "topicId": "cyber-c12-t17",
+      "question": "Qual è la differenza fra VID, access port e trunk nel glossario del laboratorio?",
+      "answer": "VID è l’identificatore numerico della VLAN; una porta access appartiene normalmente a una VLAN; il trunk può trasportarne più di una tramite tagging.",
+      "detail": "I tre termini descrivono rispettivamente identificazione del dominio L2, collegamento tipico a host e trasporto di domini diversi tra apparati.",
+      "example": "VID20 su access Fa0/2; trunk Gi0/1 ammette VLAN10 e VLAN20.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare il nome UFFICI con il numero VID.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.18, pagina PDF 231"
+    },
+    {
+      "id": "cyber-c12-q146",
+      "topicId": "cyber-c12-t17",
+      "question": "Che differenza esiste tra running configuration, startup configuration ed evidenza?",
+      "answer": "Running è la configurazione attiva, startup quella salvata per il riavvio; un’evidenza è un’informazione documentata che sostiene una conclusione tecnica.",
+      "detail": "Un output show può essere evidenza di una configurazione ma non necessariamente del comportamento di sicurezza senza test.",
+      "example": "show running-config mostra ACL applicata; il test conferma l’effetto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere stato configurato, stato salvato e risultato osservato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.18, pagina PDF 231"
+    },
+    {
+      "id": "cyber-c12-q147",
+      "topicId": "cyber-c12-t17",
+      "question": "Come si distinguono contenimento e rischio residuo nella fase di gestione?",
+      "answer": "Il contenimento limita diffusione o impatto di un incidente; il rischio residuo è quello che permane dopo i controlli adottati.",
+      "detail": "Una misura temporanea riduce alcuni percorsi d’attacco senza dimostrare che tutte le cause siano eliminate; occorre valutazione, monitoraggio e recupero.",
+      "example": "Disabilitare un account limita l’accesso ma non risolve automaticamente vulnerabilità già sfruttate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare contenimento come eliminazione definitiva del rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.18, pagina PDF 231"
+    },
+    {
+      "id": "cyber-c12-q148",
+      "topicId": "cyber-c12-t17",
+      "question": "Quali sono i significati di SAN e reverse proxy nel contesto del laboratorio?",
+      "answer": "SAN è l’estensione del certificato che elenca nomi, come DNS, coperti dal certificato; il reverse proxy riceve richieste client e le inoltra ai servizi backend.",
+      "detail": "I due concetti si incontrano nella validazione HTTPS: un proxy può essere endpoint TLS e presentare un certificato per il nome pubblico, mentre la connessione verso backend è un tratto separato.",
+      "example": "Certificato del proxy con SAN per il sito richiesto dal browser.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che il SAN definisca i privilegi di accesso dell’utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.18, pagina PDF 231"
+    },
+    {
+      "id": "cyber-c12-q149",
+      "topicId": "cyber-c12-t17",
+      "question": "Quale struttura di risposta consiglia il manuale per raccontare un laboratorio all’orale?",
+      "answer": "Requisito → topologia scelta → regola implementata → prova del comportamento → limiti residui.",
+      "detail": "L’obiettivo è motivare perché si è scelto un controllo e che cosa mostrano risultati e verifiche. I comandi sono mezzi, non il fulcro dell’esposizione.",
+      "example": "Per gli ospiti: VLAN dedicata, ACL sul router, test da/verso server, contatori e limiti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non iniziare recitando a memoria comandi privi di contesto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.19, pagina PDF 232"
+    },
+    {
+      "id": "cyber-c12-q150",
+      "topicId": "cyber-c12-t17",
+      "question": "Come si espone correttamente il caso della VLAN ospiti senza confondere segmentazione e autorizzazione?",
+      "answer": "Dichiaro il requisito di separare ospiti e server, creo la VLAN ospiti, imposto il routing necessario e la ACL che nega le reti riservate; verifico con test ed evidenze.",
+      "detail": "La spiegazione si conclude ricordando che la sola VLAN non basta perché un router può inoltrare traffico tra VLAN. È essenziale provare anche i flussi autorizzati.",
+      "example": "Test PC-OSPITI→SERVER-INT negato e PC-UFFICI→SERVER-INT consentito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il solo ping negativo come dimostrazione di policy.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.19, pagina PDF 232"
+    },
+    {
+      "id": "cyber-c12-q151",
+      "topicId": "cyber-c12-t17",
+      "question": "Quali capacità operative fondamentali richiede la checklist conclusiva?",
+      "answer": "Aprire e copiare i .pkt; usare Simulation; assegnare IP/mask/gateway; configurare VLAN/access/trunk; spiegare router-on-a-stick e leggere ACL.",
+      "detail": "La checklist unisce capacità di osservazione, configurazione e interpretazione: occorre saper collegare i comandi agli obiettivi e ai risultati.",
+      "example": "Osservare ARP e ICMP, configurare VLAN10 e verificare show vlan brief.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare un laboratorio padroneggiato senza saper spiegare il risultato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.19.1, pagina PDF 232"
+    },
+    {
+      "id": "cyber-c12-q152",
+      "topicId": "cyber-c12-t17",
+      "question": "Quali verifiche di sicurezza e limiti devono essere padroneggiati prima dell’orale?",
+      "answer": "Matrice di traffico ammesso/negato, distinzione guasto vs policy, proprietà e limiti di SSH/TLS, analisi di incidente e limiti della simulazione.",
+      "detail": "La competenza include saper dire quali conclusioni sono supportate e quali no, e documentare fatti, ipotesi e azioni in uno scenario operativo.",
+      "example": "Un ping negativo va correlato a routing e ACL; HTTPS non elimina SQL injection.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare risultati di Packet Tracer come prove assolute di sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.19.1, pagina PDF 232"
+    },
+    {
+      "id": "cyber-c12-q153",
+      "topicId": "cyber-c12-t01",
+      "question": "Quali informazioni del pannello Simulation sono utili per ricostruire un protocollo?",
+      "answer": "Sorgente, destinazione, dispositivo attraversato, tipo di protocollo e dettagli della PDU, per quanto supportati dalla versione.",
+      "detail": "L’osservazione evento per evento aiuta a comprendere non solo se una richiesta riesce, ma il percorso e la funzione di ogni protocollo, distinguendo il controllo dei livelli.",
+      "example": "La richiesta ARP precede l’Echo Request ICMP quando la cache non contiene il MAC.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che il simulatore riproduca tutti i campi dei pacchetti reali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1.3, pagina PDF 209"
+    },
+    {
+      "id": "cyber-c12-q154",
+      "topicId": "cyber-c12-t01",
+      "question": "Qual è la differenza pratica tra i comandi IOS `exit` ed `end`?",
+      "answer": "`exit` esce dal contesto di configurazione corrente; `end` ritorna direttamente alla modalità privileged EXEC.",
+      "detail": "La modalità del prompt determina quali comandi sono accettati. Dopo la configurazione occorre tornare a un contesto che consenta la verifica con show e il salvataggio.",
+      "example": "Da SW(config-if)# usare exit per SW(config)# oppure end per SW#.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un comando di navigazione CLI con un’operazione di rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.1.4, pagina PDF 209"
+    },
+    {
+      "id": "cyber-c12-q155",
+      "topicId": "cyber-c12-t02",
+      "question": "Come si verifica quali servizi applicativi sono effettivamente presenti in un file .pkt?",
+      "answer": "Controllando le configurazioni dei server e i parametri dei client per DHCP, DNS e HTTP, poi effettuando prove mirate.",
+      "detail": "Un server disegnato nella vista Logical non garantisce che i suoi servizi siano abilitati. Bisogna ispezionare indirizzamento, scheda Services e risposte osservate.",
+      "example": "DNS configurato sul client ma non attivo sul server produce un esito diverso da un HTTP spento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre il ruolo di un dispositivo esclusivamente dall’icona.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.2.1, pagina PDF 210"
+    },
+    {
+      "id": "cyber-c12-q156",
+      "topicId": "cyber-c12-t02",
+      "question": "Come deve essere scritta la sezione Sicurezza nella scheda di analisi?",
+      "answer": "Indicare ciò che è effettivamente impedito, rilevato o protetto e riportare l’evidenza che supporta ogni affermazione.",
+      "detail": "Vanno tenuti distinti i risultati verificati, gli obiettivi soltanto ipotizzati e le funzioni non osservabili o non emulate. Questo impedisce di sovrastimare le protezioni.",
+      "example": "Una ACL visibile e una prova negativa coerente supportano il blocco di un certo flusso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare sicura l’intera rete dopo un solo test.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.2.2, pagina PDF 211"
+    },
+    {
+      "id": "cyber-c12-q157",
+      "topicId": "cyber-c12-t03",
+      "question": "Qual è l’importanza delle prove positive di controllo nella verifica di una regola deny?",
+      "answer": "Dimostrano che la rete e i servizi funzionano per il traffico previsto, rendendo interpretabile il risultato negativo.",
+      "detail": "Se entrambe le prove falliscono, il problema può essere generale. Una buona verifica oppone comunicazioni consentite a comunicazioni negate e collega il risultato al controllo.",
+      "example": "Uffici→server funziona mentre Ospiti→server fallisce per un deny mirato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non validare una deny in una topologia in cui tutti i collegamenti sono down.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.3.1, pagina PDF 212"
+    },
+    {
+      "id": "cyber-c12-q158",
+      "topicId": "cyber-c12-t04",
+      "question": "Che cosa apprende lo switch durante il traffico ARP/ICMP e in che cosa differisce dalla cache ARP?",
+      "answer": "Lo switch apprende MAC sorgente e porta di ingresso per inoltrare frame; il PC usa ARP per associare un IP locale al MAC destinatario.",
+      "detail": "Le due tabelle si aggiornano per motivi differenti. Un’entrata nella MAC table non è necessariamente la prova che la cache ARP di un host sia corretta.",
+      "example": "MAC di PC-A su Fa0/1 e MAC di PC-B su Fa0/2; cache ARP di A collega .20 al MAC B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’apprendimento MAC con la risoluzione IP-MAC.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.4.3, pagina PDF 213"
+    },
+    {
+      "id": "cyber-c12-q159",
+      "topicId": "cyber-c12-t05",
+      "question": "Perché un pool DHCP non deve comprendere l’indirizzo statico del server?",
+      "answer": "Per evitare assegnazioni duplicate e conflitti di indirizzamento nella LAN di prova.",
+      "detail": "Nel laboratorio il server usa 192.168.50.10 mentre gli host dinamici partono da 192.168.50.100. La scelta rende le assegnazioni distinguibili e prevedibili.",
+      "example": "Escludere .10 dal pool DHCP e lasciare l’IP del server statico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare lo stesso indirizzo per server DNS/HTTP e client DHCP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.5.2, pagina PDF 214"
+    },
+    {
+      "id": "cyber-c12-q160",
+      "topicId": "cyber-c12-t05",
+      "question": "Perché un client può ancora aprire intranet.lab.test per un breve periodo dopo aver spento DNS?",
+      "answer": "Perché il client o il resolver può aver conservato una risposta DNS valida nella cache.",
+      "detail": "Il guasto controllato va interpretato considerando il caching. È utile ripetere le prove o verificarne le condizioni, senza dedurre che il DNS sia effettivamente ancora disponibile.",
+      "example": "Accesso per nome possibile con cache, accesso per IP indipendente dal DNS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che ogni test interroghi sempre un DNS autorevole.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.5.4, pagina PDF 214"
+    },
+    {
+      "id": "cyber-c12-q161",
+      "topicId": "cyber-c12-t06",
+      "question": "Perché il manuale imposta esplicitamente `switchport mode trunk`?",
+      "answer": "Per controllare il ruolo del collegamento anziché dipendere dalla negoziazione automatica del trunk.",
+      "detail": "Una configurazione esplicita rende verificabili modalità e VLAN trasportate; sui due switch le impostazioni devono risultare coerenti.",
+      "example": "SW1 Gi0/1 e SW2 Gi0/1 configurate per trasportare VLAN10 e VLAN20.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare un cavo tra switch automaticamente un trunk correttamente configurato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.6.2, pagina PDF 215"
+    },
+    {
+      "id": "cyber-c12-q162",
+      "topicId": "cyber-c12-t07",
+      "question": "Durante un ping inter-VLAN, quale destinazione usa il frame locale iniziale?",
+      "answer": "Il MAC del gateway della VLAN di origine, mentre l’IP di destinazione del pacchetto continua a indicare l’host remoto.",
+      "detail": "Il router riceve il pacchetto e lo inoltra verso la VLAN destinataria. La distinzione fra indirizzamento L2 del next hop e IP finale è essenziale per interpretare ARP e la simulazione.",
+      "example": "PC-UFFICI invia verso 192.168.20.10 passando inizialmente dal gateway 192.168.10.1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che il frame locale usa direttamente il MAC del server in un’altra subnet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.7.4, pagina PDF 217"
+    },
+    {
+      "id": "cyber-c12-q163",
+      "topicId": "cyber-c12-t08",
+      "question": "Perché il ping verso il gateway della VLAN ospiti non è il criterio principale per valutare GUEST-IN?",
+      "answer": "Perché il comportamento dipende dal modello IOS e da come il simulatore gestisce il traffico diretto al router e il control-plane.",
+      "detail": "La policy si valuta meglio verificando il traffico degli ospiti verso le due reti interne negate e verso una destinazione esterna di prova ammessa.",
+      "example": "Usare la matrice PC-OSPITI→uffici/server/esterno, non il solo ping 192.168.30.1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scartare una ACL corretta per una singola risposta ICMP del gateway.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.8.4, pagina PDF 219"
+    },
+    {
+      "id": "cyber-c12-q164",
+      "topicId": "cyber-c12-t09",
+      "question": "Che differenza esiste tra cifrare la sessione SSH e autorizzare soltanto gli amministratori giusti?",
+      "answer": "SSH protegge la comunicazione amministrativa; la limitazione di identità, privilegi e sorgenti è una scelta separata di controllo accessi.",
+      "detail": "Restano necessari ciclo di vita degli account, logging, manutenzione, rete di gestione e policy. L’accesso remoto cifrato può comunque essere usato da un soggetto non autorizzato se le credenziali sono compromesse.",
+      "example": "Un SSH accessibile da ogni subnet resta eccessivamente esposto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare `transport input ssh` una completa strategia di hardening.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.9.3, pagina PDF 220"
+    },
+    {
+      "id": "cyber-c12-q165",
+      "topicId": "cyber-c12-t10",
+      "question": "Perché non tutti i collegamenti trunk devono essere dichiarati trusted per DHCP snooping?",
+      "answer": "Perché la fiducia deve seguire il percorso reale verso il servizio DHCP legittimo e non il solo tipo di interfaccia.",
+      "detail": "Una porta trusted concede un trattamento speciale ai messaggi DHCP; classificarne troppe come fidate potrebbe consentire risposte da soggetti non autorizzati.",
+      "example": "Solo la porta verso l’infrastruttura DHCP necessaria viene classificata trusted.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non associare automaticamente trunk e fiducia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.10.2, pagina PDF 221"
+    },
+    {
+      "id": "cyber-c12-q166",
+      "topicId": "cyber-c12-t11",
+      "question": "Come si valuta un laboratorio Wi-Fi se il modello Packet Tracer non supporta WPA3 o 802.1X?",
+      "answer": "Si usano le funzioni effettivamente disponibili, si testano separazione e accessi e si documentano esplicitamente le protezioni non simulate.",
+      "detail": "Un risultato utile non richiede fingere che la crittografia e la federazione siano realizzate integralmente. In laboratorio si può impiegare WPA2-AES quando WPA3 non è disponibile.",
+      "example": "Report: WPA2-AES testato; EAP-TLS non verificabile su questo access point simulato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non segnare funzioni come sicure quando il simulatore non le implementa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.11.2, pagina PDF 221"
+    },
+    {
+      "id": "cyber-c12-q167",
+      "topicId": "cyber-c12-t12",
+      "question": "Quali tre anomalie del certificato richiedono attenzione nella prova HTTPS?",
+      "answer": "Certificato scaduto, catena o emittente non attendibile, oppure nomi certificati non corrispondenti all’host richiesto.",
+      "detail": "La presenza di una firma crittografica non è sufficiente: la verifica confronta la catena con i trust anchor e controlla i SAN e le date.",
+      "example": "URL intranet.lab.test ma SAN destinato a un altro dominio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ignorare un avviso browser senza conoscerne la causa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.12.2, pagina PDF 222"
+    },
+    {
+      "id": "cyber-c12-q168",
+      "topicId": "cyber-c12-t13",
+      "question": "Quali prove sono prioritarie per differenziare sovraccarico, guasto e attacco nel portale simulato?",
+      "answer": "Log del proxy e del backend, telemetria dei volumi, utilizzo risorse, eventi IAM, accessi database e segnalazioni degli utenti.",
+      "detail": "La correlazione chiarisce impatto e percorsi coinvolti, senza dare per dimostrata una sola causa a partire dagli errori HTTP. Occorre conservare la cronologia e gli accessi anomali.",
+      "example": "Confrontare picchi 503 con tempi risposta API e numero di richieste per sorgente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eliminare ipotesi alternative senza dati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.5, pagina PDF 224"
+    },
+    {
+      "id": "cyber-c12-q169",
+      "topicId": "cyber-c12-t13",
+      "question": "Quali precauzioni richiede il ripristino da una configurazione verificata?",
+      "answer": "Test d’integrità, controllo della configurazione, verifica che il guasto o la minaccia non persista e monitoraggio dopo il ripristino.",
+      "detail": "La decisione recupera disponibilità ma può reintrodurre la causa dell’incidente se lo stato ripristinato è ancora vulnerabile. Il recupero va coordinato con le procedure.",
+      "example": "Ripristino e verifica funzionale della rete dopo isolamento dell’account sospetto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non riaprire un servizio senza verificare la causa residua.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.13.6, pagina PDF 224"
+    },
+    {
+      "id": "cyber-c12-q170",
+      "topicId": "cyber-c12-t14",
+      "question": "Perché R7 impone di dichiarare esplicitamente ciò che Packet Tracer non ha consentito di verificare?",
+      "answer": "Per evitare conclusioni di sicurezza eccessive e distinguere ciò che è stato osservato da ciò che resta non testato.",
+      "detail": "La relazione finale deve elencare funzionalità assenti o semplificate del simulatore, così il giudizio su HTTPS, AAA o altri controlli rimane proporzionato alle evidenze.",
+      "example": "Dichiarare che la prova sulla PKI pubblica è rimandata a un ambiente reale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non nascondere lacune dello strumento presentandole come successi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.14.1, pagina PDF 225"
+    },
+    {
+      "id": "cyber-c12-q171",
+      "topicId": "cyber-c12-t15",
+      "question": "Se DHCP non assegna l’indirizzo, quali cause vanno verificate prima di cambiare i client?",
+      "answer": "Pool errato, server DHCP inattivo, broadcast o relay interrotto e policy di snooping configurata male.",
+      "detail": "Il percorso del protocollo e lo stato del servizio devono essere controllati; una difesa L2 può bloccare le risposte DHCP legittime se le porte trusted sono errate.",
+      "example": "Client non riceve lease dopo attivazione snooping: controllare binding e porta trusted.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non risolvere sistematicamente un errore DHCP assegnando IP statici senza diagnosi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.15, pagina PDF 226"
+    },
+    {
+      "id": "cyber-c12-q172",
+      "topicId": "cyber-c12-t17",
+      "question": "Come può uno studente verificare di padroneggiare davvero i laboratori prima dell’orale?",
+      "answer": "Deve saper spiegare senza appunti requisito, configurazione, esito previsto, prove positive e negative, cause alternative e limiti del simulatore.",
+      "detail": "La checklist finale premia autonomia e capacità di giudizio più della memorizzazione della CLI. L’errore di un test deve poter essere diagnosticato in modo ripetibile.",
+      "example": "Raccontare il flusso VLAN→routing→ACL senza avere davanti i comandi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere aver letto le esercitazioni con aver acquisito competenza verificata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 12, §12.19.1, pagina PDF 232"
+    }
+  ]
+}

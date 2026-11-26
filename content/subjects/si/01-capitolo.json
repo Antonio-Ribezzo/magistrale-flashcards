@@ -1,0 +1,2700 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "si",
+  "source": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1: Fondamenti dei sistemi informativi, pagine PDF 1–16. Unica fonte autorizzata; esempi originali e approfondimenti distinti dove indicato nel manuale.",
+  "chapter": {
+    "id": "si-c01",
+    "title": "Fondamenti dei sistemi informativi",
+    "order": 1,
+    "topics": [
+      {
+        "id": "si-c01-t01",
+        "title": "Sistema: scopo, parti, confine e feedback"
+      },
+      {
+        "id": "si-c01-t02",
+        "title": "Dati, informazioni, conoscenza e qualità del dato"
+      },
+      {
+        "id": "si-c01-t03",
+        "title": "Sistema informativo, sistema informatico e architettura a strati"
+      },
+      {
+        "id": "si-c01-t04",
+        "title": "TPS, MIS, DSS, ESS/EIS e KMS"
+      },
+      {
+        "id": "si-c01-t05",
+        "title": "Enterprise Systems: ERP, CRM, SCM, PLM e HRMS"
+      },
+      {
+        "id": "si-c01-t06",
+        "title": "Organizzazione, risorse, processi, beni, servizi e dati"
+      },
+      {
+        "id": "si-c01-t07",
+        "title": "Caso universitario: verbalizzazione degli esami AS-IS"
+      },
+      {
+        "id": "si-c01-t08",
+        "title": "Modellazione: organizzazione e tassonomie"
+      },
+      {
+        "id": "si-c01-t09",
+        "title": "BPMN: processi, simboli e confini della notazione"
+      },
+      {
+        "id": "si-c01-t10",
+        "title": "Modellazione concettuale dei dati ed E-R"
+      },
+      {
+        "id": "si-c01-t11",
+        "title": "Efficienza, efficacia e misurazione dei processi"
+      },
+      {
+        "id": "si-c01-t12",
+        "title": "Evoluzione dei sistemi informativi e integrazione dei dati"
+      },
+      {
+        "id": "si-c01-t13",
+        "title": "Progettazione technology-driven e service-oriented"
+      },
+      {
+        "id": "si-c01-t14",
+        "title": "Ciclo di vita: sette fasi e deliverable"
+      },
+      {
+        "id": "si-c01-t15",
+        "title": "AS-IS, TO-BE e tracciabilità di requisito"
+      },
+      {
+        "id": "si-c01-t16",
+        "title": "Caso EnerPrice: organizzazione, processo, dati e decisioni"
+      },
+      {
+        "id": "si-c01-t17",
+        "title": "Collegamenti, confronti ed errori ricorrenti"
+      },
+      {
+        "id": "si-c01-t18",
+        "title": "Esercizi guidati: applicazioni del Capitolo 1"
+      },
+      {
+        "id": "si-c01-t19",
+        "title": "Autoverifica e consolidamento per l’esame"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§1.1 — pagina PDF 2",
+        "cardIds": [
+          "si-c01-q001",
+          "si-c01-q002",
+          "si-c01-q003",
+          "si-c01-q004",
+          "si-c01-q005",
+          "si-c01-q006",
+          "si-c01-q007",
+          "si-c01-q008"
+        ]
+      },
+      {
+        "label": "§1.2 — pagina PDF 3",
+        "cardIds": [
+          "si-c01-q009",
+          "si-c01-q010",
+          "si-c01-q011",
+          "si-c01-q012",
+          "si-c01-q013",
+          "si-c01-q021"
+        ]
+      },
+      {
+        "label": "§1.2.1 — pagina PDF 3",
+        "cardIds": [
+          "si-c01-q014",
+          "si-c01-q015",
+          "si-c01-q016",
+          "si-c01-q017",
+          "si-c01-q018",
+          "si-c01-q022"
+        ]
+      },
+      {
+        "label": "§1.2.2 — pagina PDF 3",
+        "cardIds": [
+          "si-c01-q019",
+          "si-c01-q020"
+        ]
+      },
+      {
+        "label": "§1.3 — pagina PDF 4",
+        "cardIds": [
+          "si-c01-q023",
+          "si-c01-q024",
+          "si-c01-q025",
+          "si-c01-q026"
+        ]
+      },
+      {
+        "label": "§1.3.1 — pagina PDF 4",
+        "cardIds": [
+          "si-c01-q027",
+          "si-c01-q028",
+          "si-c01-q029",
+          "si-c01-q030",
+          "si-c01-q031",
+          "si-c01-q032",
+          "si-c01-q033"
+        ]
+      },
+      {
+        "label": "§1.4 — pagina PDF 4",
+        "cardIds": [
+          "si-c01-q034"
+        ]
+      },
+      {
+        "label": "§1.4 — pagina PDF 5",
+        "cardIds": [
+          "si-c01-q035",
+          "si-c01-q036",
+          "si-c01-q037",
+          "si-c01-q038",
+          "si-c01-q039",
+          "si-c01-q040",
+          "si-c01-q041",
+          "si-c01-q042",
+          "si-c01-q043"
+        ]
+      },
+      {
+        "label": "§1.4.1 — pagina PDF 5",
+        "cardIds": [
+          "si-c01-q044",
+          "si-c01-q045",
+          "si-c01-q046",
+          "si-c01-q047",
+          "si-c01-q048",
+          "si-c01-q049",
+          "si-c01-q050",
+          "si-c01-q051"
+        ]
+      },
+      {
+        "label": "§1.5 — pagina PDF 5",
+        "cardIds": [
+          "si-c01-q052"
+        ]
+      },
+      {
+        "label": "§1.5 — pagina PDF 6",
+        "cardIds": [
+          "si-c01-q053",
+          "si-c01-q054",
+          "si-c01-q065"
+        ]
+      },
+      {
+        "label": "§1.5.1 — pagina PDF 6",
+        "cardIds": [
+          "si-c01-q055",
+          "si-c01-q056",
+          "si-c01-q057",
+          "si-c01-q058",
+          "si-c01-q059"
+        ]
+      },
+      {
+        "label": "§1.5.2 — pagina PDF 6",
+        "cardIds": [
+          "si-c01-q060",
+          "si-c01-q061"
+        ]
+      },
+      {
+        "label": "§1.5.3 — pagina PDF 6",
+        "cardIds": [
+          "si-c01-q062",
+          "si-c01-q063"
+        ]
+      },
+      {
+        "label": "§1.5.3 — pagina PDF 7",
+        "cardIds": [
+          "si-c01-q064"
+        ]
+      },
+      {
+        "label": "§1.6 — pagina PDF 7",
+        "cardIds": [
+          "si-c01-q066",
+          "si-c01-q078"
+        ]
+      },
+      {
+        "label": "§1.6.1 — pagina PDF 7",
+        "cardIds": [
+          "si-c01-q067",
+          "si-c01-q068",
+          "si-c01-q069",
+          "si-c01-q070",
+          "si-c01-q071",
+          "si-c01-q072",
+          "si-c01-q073"
+        ]
+      },
+      {
+        "label": "§1.6.2 — pagina PDF 8",
+        "cardIds": [
+          "si-c01-q074",
+          "si-c01-q075",
+          "si-c01-q076",
+          "si-c01-q077"
+        ]
+      },
+      {
+        "label": "§1.7 — pagina PDF 8",
+        "cardIds": [
+          "si-c01-q079",
+          "si-c01-q080"
+        ]
+      },
+      {
+        "label": "§1.7.1 — pagina PDF 8",
+        "cardIds": [
+          "si-c01-q081",
+          "si-c01-q082",
+          "si-c01-q083"
+        ]
+      },
+      {
+        "label": "§1.7.2 — pagina PDF 8",
+        "cardIds": [
+          "si-c01-q084"
+        ]
+      },
+      {
+        "label": "§1.7.2 — pagina PDF 9",
+        "cardIds": [
+          "si-c01-q085",
+          "si-c01-q086",
+          "si-c01-q087",
+          "si-c01-q088",
+          "si-c01-q089",
+          "si-c01-q090",
+          "si-c01-q091"
+        ]
+      },
+      {
+        "label": "§1.7.3 — pagina PDF 9",
+        "cardIds": [
+          "si-c01-q092",
+          "si-c01-q093",
+          "si-c01-q094"
+        ]
+      },
+      {
+        "label": "§1.7 — pagina PDF 9",
+        "cardIds": [
+          "si-c01-q095"
+        ]
+      },
+      {
+        "label": "§1.8 — pagina PDF 9",
+        "cardIds": [
+          "si-c01-q096",
+          "si-c01-q097",
+          "si-c01-q098",
+          "si-c01-q104"
+        ]
+      },
+      {
+        "label": "§1.8 — pagina PDF 10",
+        "cardIds": [
+          "si-c01-q099",
+          "si-c01-q100",
+          "si-c01-q101",
+          "si-c01-q102",
+          "si-c01-q103"
+        ]
+      },
+      {
+        "label": "§1.9 — pagina PDF 10",
+        "cardIds": [
+          "si-c01-q105",
+          "si-c01-q106",
+          "si-c01-q107",
+          "si-c01-q108",
+          "si-c01-q109",
+          "si-c01-q110",
+          "si-c01-q111",
+          "si-c01-q112",
+          "si-c01-q113"
+        ]
+      },
+      {
+        "label": "§1.10 — pagina PDF 10",
+        "cardIds": [
+          "si-c01-q114"
+        ]
+      },
+      {
+        "label": "§1.10 — pagina PDF 11",
+        "cardIds": [
+          "si-c01-q115",
+          "si-c01-q116",
+          "si-c01-q117",
+          "si-c01-q118",
+          "si-c01-q119",
+          "si-c01-q120",
+          "si-c01-q121",
+          "si-c01-q122",
+          "si-c01-q123"
+        ]
+      },
+      {
+        "label": "§1.11 — pagina PDF 11",
+        "cardIds": [
+          "si-c01-q124",
+          "si-c01-q125",
+          "si-c01-q136"
+        ]
+      },
+      {
+        "label": "§1.11.1 — pagina PDF 12",
+        "cardIds": [
+          "si-c01-q126",
+          "si-c01-q127",
+          "si-c01-q128",
+          "si-c01-q129",
+          "si-c01-q130",
+          "si-c01-q131",
+          "si-c01-q132",
+          "si-c01-q133",
+          "si-c01-q134",
+          "si-c01-q135"
+        ]
+      },
+      {
+        "label": "§1.11.2 — pagina PDF 12",
+        "cardIds": [
+          "si-c01-q137",
+          "si-c01-q138",
+          "si-c01-q139",
+          "si-c01-q140",
+          "si-c01-q141"
+        ]
+      },
+      {
+        "label": "§1.12 — pagina PDF 12",
+        "cardIds": [
+          "si-c01-q142",
+          "si-c01-q143",
+          "si-c01-q144"
+        ]
+      },
+      {
+        "label": "§1.12 — pagina PDF 13",
+        "cardIds": [
+          "si-c01-q145",
+          "si-c01-q146",
+          "si-c01-q147",
+          "si-c01-q148",
+          "si-c01-q149",
+          "si-c01-q150"
+        ]
+      },
+      {
+        "label": "§1.13 — pagina PDF 13",
+        "cardIds": [
+          "si-c01-q151",
+          "si-c01-q152",
+          "si-c01-q153",
+          "si-c01-q154",
+          "si-c01-q155",
+          "si-c01-q156",
+          "si-c01-q157",
+          "si-c01-q158",
+          "si-c01-q159"
+        ]
+      },
+      {
+        "label": "§1.14 — pagina PDF 13",
+        "cardIds": [
+          "si-c01-q160",
+          "si-c01-q161"
+        ]
+      },
+      {
+        "label": "§1.14 — pagina PDF 14",
+        "cardIds": [
+          "si-c01-q162",
+          "si-c01-q163",
+          "si-c01-q164",
+          "si-c01-q165",
+          "si-c01-q166",
+          "si-c01-q167"
+        ]
+      },
+      {
+        "label": "§1.15 — pagina PDF 14",
+        "cardIds": [
+          "si-c01-q168",
+          "si-c01-q169"
+        ]
+      },
+      {
+        "label": "§1.15 — pagina PDF 15",
+        "cardIds": [
+          "si-c01-q170",
+          "si-c01-q171",
+          "si-c01-q172",
+          "si-c01-q173",
+          "si-c01-q174",
+          "si-c01-q175"
+        ]
+      },
+      {
+        "label": "§1.16 — pagina PDF 16",
+        "cardIds": [
+          "si-c01-q176",
+          "si-c01-q177",
+          "si-c01-q178",
+          "si-c01-q179",
+          "si-c01-q180",
+          "si-c01-q181",
+          "si-c01-q182",
+          "si-c01-q183"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "si-c01-q001",
+      "topicId": "si-c01-t01",
+      "question": "Come definisce il manuale un sistema?",
+      "answer": "Un insieme di componenti funzionali che interagiscono e cooperano per raggiungere uno scopo comune.",
+      "detail": "Non è sufficiente possedere molti elementi: il loro coordinamento e il risultato congiunto distinguono un sistema da un semplice elenco di oggetti.",
+      "example": "Persone, procedure e software che cooperano per gestire una richiesta di servizio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire un sistema come mera raccolta di programmi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.1, pagina PDF 2"
+    },
+    {
+      "id": "si-c01-q002",
+      "topicId": "si-c01-t01",
+      "question": "Quali caratteristiche permettono di descrivere operativamente un sistema?",
+      "answer": "Obiettivo, componenti, relazioni, confine e ambiente.",
+      "detail": "L’obiettivo specifica il risultato; le componenti sono le parti; le relazioni mostrano le interazioni; il confine delimita il perimetro; l’ambiente comprende soggetti e fattori esterni.",
+      "example": "Un servizio aziendale ha come ambiente clienti, fornitori, partner e autorità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere ambiente esterno con componenti interne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.1, pagina PDF 2"
+    },
+    {
+      "id": "si-c01-q003",
+      "topicId": "si-c01-t01",
+      "question": "Che cosa rappresenta il confine di un sistema?",
+      "answer": "La delimitazione di componenti e attività che appartengono al sistema rispetto a ciò che costituisce il suo ambiente.",
+      "detail": "Il confine dipende dallo scopo dell’analisi; serve per specificare responsabilità, input/output e interazioni verso l’esterno.",
+      "example": "Per valutare un processo di approvazione si può includere la segreteria e trattare il richiedente come attore esterno.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il confine uguale alla rete o all’infrastruttura fisica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.1, pagina PDF 2"
+    },
+    {
+      "id": "si-c01-q004",
+      "topicId": "si-c01-t01",
+      "question": "Come funziona lo schema input–trasformazione–output con feedback?",
+      "answer": "Il sistema riceve input, li elabora mediante attività coordinate, produce output e può usare feedback per correggersi.",
+      "detail": "Il manuale presenta questa struttura come chiarimento didattico generale coerente con l’analisi dei processi, non come definizione unica di ogni sistema.",
+      "example": "Richiesta di un cliente → verifica e preparazione → preventivo; un reclamo successivo costituisce feedback.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il feedback non coincide necessariamente con l’output stesso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.1, pagina PDF 2"
+    },
+    {
+      "id": "si-c01-q005",
+      "topicId": "si-c01-t01",
+      "question": "Qual è il ruolo delle relazioni fra le componenti di un sistema?",
+      "answer": "Consentono lo scambio di richieste, dati, decisioni e risorse necessario al risultato comune.",
+      "detail": "Le relazioni distinguono cooperazione funzionale da mera coesistenza; se si interrompe un passaggio critico, l’intero risultato può peggiorare.",
+      "example": "Un’approvazione collega l’analista e il responsabile del processo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non esaminare soltanto le componenti ignorando i loro flussi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.1, pagina PDF 2"
+    },
+    {
+      "id": "si-c01-q006",
+      "topicId": "si-c01-t01",
+      "question": "Quali grandi famiglie di sistemi richiama il capitolo?",
+      "answer": "Sistemi naturali e sistemi artificiali, tra cui i sistemi socio-tecnici.",
+      "detail": "Nei sistemi socio-tecnici cooperano persone, procedure e strumenti; le tecnologie sostengono e non esauriscono la gestione delle informazioni.",
+      "example": "Un’impresa combina attività umane, regole organizzative e sistemi digitali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un sistema organizzativo non è definito soltanto dall’hardware.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.1, pagina PDF 2"
+    },
+    {
+      "id": "si-c01-q007",
+      "topicId": "si-c01-t01",
+      "question": "Perché un insieme di software non costituisce automaticamente un sistema informativo?",
+      "answer": "Perché mancano, se non specificati, lo scopo organizzativo, le attività, gli attori, le regole e l’uso effettivo dei flussi informativi.",
+      "detail": "Il sistema informativo si comprende a partire dall’organizzazione; il supporto ICT è solo una parte del quadro.",
+      "example": "Un database non indica chi deve approvare i dati e come la decisione deve essere comunicata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre sistema informativo a programmi e database.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.1, pagina PDF 2"
+    },
+    {
+      "id": "si-c01-q008",
+      "topicId": "si-c01-t01",
+      "question": "Qual è la domanda principale da porre prima di elencare le tecnologie di un sistema?",
+      "answer": "Quale obiettivo organizzativo o servizio deve essere raggiunto e come cooperano le componenti per produrlo?",
+      "detail": "Questa impostazione prepara l’approccio service-oriented trattato più avanti: bisogni e processi precedono la scelta tecnica.",
+      "example": "Prima di scegliere un framework per EnerPrice occorre sapere quale decisione sul pricing supportare.",
+      "formulas": [],
+      "connections": [
+        "§1.10: strategie di progettazione"
+      ],
+      "mistakes": "Non partire dall’elenco di strumenti come se definisse il valore del sistema.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.1, pagina PDF 2"
+    },
+    {
+      "id": "si-c01-q009",
+      "topicId": "si-c01-t02",
+      "question": "Che cos’è un dato secondo il capitolo?",
+      "answer": "L’esito della misurazione o registrazione di un fenomeno: una rappresentazione che, senza contesto, non esprime ancora tutto il significato utile a decidere.",
+      "detail": "Il dato descrive caratteristiche della realtà osservata; unità di misura, oggetto, tempo e condizioni permettono di interpretarlo.",
+      "example": "Il numero 3.000 memorizzato da solo in una tabella.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che ogni numero registrato sia già informazione decisionale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q010",
+      "topicId": "si-c01-t02",
+      "question": "Quando un dato diventa informazione?",
+      "answer": "Quando viene interpretato in un contesto e assume un significato rilevante per comprendere una situazione o prendere decisioni.",
+      "detail": "Sono importanti fenomeno misurato, unità, data e soggetto di riferimento.",
+      "example": "«3.000 kWh consumati da un cliente in un anno» è informazione più utile del solo «3.000».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il trattamento aritmetico non è sufficiente se manca il significato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q011",
+      "topicId": "si-c01-t02",
+      "question": "Che cosa indica la conoscenza e in che cosa differisce dall’informazione?",
+      "answer": "È una risorsa o capacità degli agenti di interpretare le informazioni e orientare le proprie azioni e decisioni.",
+      "detail": "La conoscenza appartiene a persone o agenti e si manifesta nell’uso appropriato dell’informazione; un sistema informativo la supporta ma non garantisce decisioni corrette.",
+      "example": "Sapere come usare il confronto dei consumi per scegliere un segmento di offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire conoscenza come un semplice dato più dettagliato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q012",
+      "topicId": "si-c01-t02",
+      "question": "Come distingui dato, informazione e conoscenza con l’esempio energetico del manuale?",
+      "answer": "Dato: «3.000»; informazione: consumo annuo del cliente pari a 3.000 kWh, con periodo e unità; conoscenza: saper usare quel consumo per valutare offerte o segmentazioni.",
+      "detail": "La catena richiede interpretazione, collegamento con altri dati e capacità decisionale; il passaggio non è automatico.",
+      "example": "Confrontare il consumo di un cliente con una soglia di segmento e decidere quale proposta esaminare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la rappresentazione del valore con la decisione che ne deriva.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q013",
+      "topicId": "si-c01-t02",
+      "question": "Perché la qualità del dato è necessaria anche se la query o il calcolo sono corretti?",
+      "answer": "Perché valori errati, incompleti, incoerenti o non aggiornati possono produrre informazioni fuorvianti e decisioni sbagliate.",
+      "detail": "Il manuale sottolinea che la qualità semantica e il contesto sono determinanti quanto il formato tecnico.",
+      "example": "Una formula esatta applicata a un prezzo non aggiornato dà una simulazione non affidabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un database tecnicamente funzionante non assicura informazione valida.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q014",
+      "topicId": "si-c01-t02",
+      "question": "Che cos’è l’accuratezza dei dati?",
+      "answer": "La corrispondenza dei valori registrati ai fenomeni reali che intendono rappresentare.",
+      "detail": "L’errore di misura o trascrizione può trasferirsi direttamente a report, segmentazioni e decisioni.",
+      "example": "Inserire 30.000 anziché 3.000 kWh può assegnare il cliente a un segmento errato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere accuratezza con completezza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2.1, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q015",
+      "topicId": "si-c01-t02",
+      "question": "Che cosa si intende per completezza dei dati?",
+      "answer": "Presenza delle informazioni necessarie per lo scopo e le operazioni previste.",
+      "detail": "Un dato numerico può essere corretto ma non utilizzabile se manca l’attributo che ne fissa il contesto.",
+      "example": "Consumo energetico senza mese di riferimento: serie temporale non confrontabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il valore presente non implica record completo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2.1, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q016",
+      "topicId": "si-c01-t02",
+      "question": "Che cosa significa coerenza dei dati?",
+      "answer": "Assenza di significati o regole incompatibili tra fonti, reparti e elaborazioni che devono essere confrontati o integrati.",
+      "detail": "Occorre condividere vocabolario, definizioni e unità; chiamare allo stesso modo indicatori diversi produce errori anche senza problemi sintattici.",
+      "example": "Due uffici definiscono «costo prodotto» includendo o escludendo componenti differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Coerenza non significa soltanto che il dato supera un controllo di tipo SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2.1, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q017",
+      "topicId": "si-c01-t02",
+      "question": "Che cos’è la tempestività dell’informazione?",
+      "answer": "La disponibilità di dati sufficientemente aggiornati e accessibili quando servono alla decisione.",
+      "detail": "La qualità dipende dall’orizzonte del processo: un listino valido ieri può essere inutilizzabile per simulare un’offerta oggi.",
+      "example": "Simulazione eseguita su un listino scaduto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare ogni dato storico come errore: può essere corretto se il periodo è esplicitato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2.1, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q018",
+      "topicId": "si-c01-t02",
+      "question": "In che cosa differiscono qualità sintattica e qualità semantica?",
+      "answer": "La qualità sintattica riguarda formato e vincoli; quella semantica riguarda il significato corretto del dato nel dominio.",
+      "detail": "Un numero con formato valido può avere unità errata o riferirsi a un periodo non previsto; supera controlli tecnici ma non è semanticamente affidabile.",
+      "example": "«500» valido come NUMBER ma memorizzato in euro anziché €/MWh.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare validazione del formato a validità del contenuto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2.1, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q019",
+      "topicId": "si-c01-t02",
+      "question": "Perché il dato digitale è una risorsa peculiare rispetto a un bene fisico?",
+      "answer": "Può essere copiato, riutilizzato e distribuito molte volte a costo incrementale di sola riproduzione spesso trascurabile.",
+      "detail": "La replicabilità non annulla i costi di acquisizione, qualità, archiviazione, sicurezza e governance.",
+      "example": "Lo stesso dataset può alimentare più report senza ricreare la misura originale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concludere che il dato digitale sia gratuito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2.2, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q020",
+      "topicId": "si-c01-t02",
+      "question": "Quali tecnologie aumentano le opportunità di raccolta e uso dei dati menzionate nel manuale?",
+      "answer": "Mobile computing, Internet of Things, social network, cloud computing e architetture big data.",
+      "detail": "Aumentano volume, frequenza e accessibilità delle informazioni; il valore nasce solo dall’utilizzo pertinente rispetto al problema e dai processi che le impiegano.",
+      "example": "Sensori IoT raccolgono misure, servizi cloud le elaborano e applicazioni mobile espongono il risultato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la tecnologia un fine in sé.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2.2, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q021",
+      "topicId": "si-c01-t02",
+      "question": "Perché informazioni e conoscenza non sono direttamente equivalenti?",
+      "answer": "Perché un’informazione significativa non comporta automaticamente la capacità di usarla in modo coerente.",
+      "detail": "Il manuale osserva che la conoscenza non è osservabile come il valore di una colonna: si inferisce dalle decisioni o azioni dell’agente.",
+      "example": "Conoscere il margine previsto non implica saper scegliere l’offerta migliore rispettando vincoli e obiettivi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente «conoscenza» a un database con più informazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q022",
+      "topicId": "si-c01-t02",
+      "question": "Quale controllo preliminare suggerisce il capitolo per confrontare indicatori fra reparti?",
+      "answer": "Concordare definizioni, unità di misura, perimetri e riferimenti temporali dei dati prima di integrarli o confrontarli.",
+      "detail": "È la condizione per distinguere una divergenza reale da una differenza di significato.",
+      "example": "«Costo unitario» nei due reparti deve riferirsi agli stessi elementi e allo stesso periodo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non risolvere un disallineamento semantico soltanto con SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.2.1, pagina PDF 3"
+    },
+    {
+      "id": "si-c01-q023",
+      "topicId": "si-c01-t03",
+      "question": "Che cos’è un sistema informativo in senso organizzativo?",
+      "answer": "L’insieme dei flussi informativi di un’organizzazione, delle attività e regole mediante cui i dati vengono raccolti, conservati, scambiati, elaborati e resi disponibili ai soggetti interessati.",
+      "detail": "È un sottoinsieme funzionale dell’organizzazione, non un semplice prodotto software; include elementi procedurali e umani.",
+      "example": "Un processo di verbalizzazione con persone, registri, controlli, regole e archivio finale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare il SI alla tecnologia digitale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.3, pagina PDF 4"
+    },
+    {
+      "id": "si-c01-q024",
+      "topicId": "si-c01-t03",
+      "question": "Che cos’è un sistema informatico?",
+      "answer": "La componente del sistema informativo che utilizza tecnologie dell’informazione e della comunicazione per supportare dati, funzioni e flussi.",
+      "detail": "Può comprendere interfacce, programmi client e server, DBMS, middleware, sistemi operativi, hardware e reti.",
+      "example": "Il portale web e il DBMS usati per registrare esami.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire il sistema informatico come l’intera organizzazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.3, pagina PDF 4"
+    },
+    {
+      "id": "si-c01-q025",
+      "topicId": "si-c01-t03",
+      "question": "Qual è la relazione fra organizzazione, sistema informativo e sistema informatico?",
+      "answer": "L’organizzazione definisce obiettivi e regole; il sistema informativo sostiene i flussi di informazioni nei processi; il sistema informatico ne realizza una parte con ICT.",
+      "detail": "È la struttura annidata della figura 1.2; nella pratica i confini possono sovrapporsi, ma la distinzione concettuale rimane utile.",
+      "example": "Un’approvazione è regola del processo; la funzione che registra il «via libera» è supporto informatico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il diagramma non autorizza a dire che tutti i flussi del SI siano digitali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.3, pagina PDF 4"
+    },
+    {
+      "id": "si-c01-q026",
+      "topicId": "si-c01-t03",
+      "question": "Può esistere un sistema informativo senza un sistema informatico?",
+      "answer": "Sì. Un’organizzazione può gestire le informazioni con supporti cartacei, telefonate, procedure e ruoli.",
+      "detail": "L’esistenza di flussi informativi precede la loro automatizzazione.",
+      "example": "Registri cartacei consegnati dal docente alle segreterie.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Digitale non è sinonimo di informativo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.3, pagina PDF 4"
+    },
+    {
+      "id": "si-c01-q027",
+      "topicId": "si-c01-t03",
+      "question": "Quali strati funzionali descrivono l’architettura di un sistema informatico nel manuale?",
+      "answer": "Interazione; applicazione client; applicazione server; persistenza/DBMS; infrastruttura.",
+      "detail": "Gli strati collaborano, ma rappresentano responsabilità logiche: non è necessario che coincidano con macchine fisiche distinte.",
+      "example": "Browser, applicazione server, database e rete in una soluzione web.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere strati logici con numero di server fisici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.3.1, pagina PDF 4"
+    },
+    {
+      "id": "si-c01-q028",
+      "topicId": "si-c01-t03",
+      "question": "Quali responsabilità spettano al livello di interazione?",
+      "answer": "Raccolta degli input, presentazione dei risultati e dialogo con l’utente.",
+      "detail": "Include form e pagine attraverso cui l’utente osserva e avvia attività, senza esaurire la verifica delle regole di business.",
+      "example": "Form per inserire i dati di una richiesta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una form corretta non garantisce da sola correttezza del processo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.3.1, pagina PDF 4"
+    },
+    {
+      "id": "si-c01-q029",
+      "topicId": "si-c01-t03",
+      "question": "Che funzione ha il livello applicazione client?",
+      "answer": "Presentazione dell’esperienza applicativa, controlli locali e invio delle richieste verso i servizi.",
+      "detail": "Il manuale distingue il livello di interazione dall’applicazione che agisce sul lato del dispositivo dell’utente.",
+      "example": "Browser che verifica il formato di un campo e invia la richiesta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non delegare esclusivamente al client controlli sostanziali e autorizzazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.3.1, pagina PDF 4"
+    },
+    {
+      "id": "si-c01-q030",
+      "topicId": "si-c01-t03",
+      "question": "Quali sono le responsabilità dell’applicazione server?",
+      "answer": "Gestire regole applicative, autorizzazioni, processi di elaborazione e coordinamento dei dati.",
+      "detail": "Il livello server rende operativi i requisiti del servizio e può interagire con i DBMS e altri componenti.",
+      "example": "Controllare che una richiesta sia ammissibile prima di registrarla.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’interfaccia utente con la logica server.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.3.1, pagina PDF 4"
+    },
+    {
+      "id": "si-c01-q031",
+      "topicId": "si-c01-t03",
+      "question": "Qual è la responsabilità del livello di persistenza/DBMS?",
+      "answer": "Memorizzazione, interrogazione dei dati, vincoli e gestione delle transazioni.",
+      "detail": "Contribuisce ad affidabilità e coerenza dei dati secondo le responsabilità del DBMS.",
+      "example": "Aggiornare in transazione le informazioni della carriera dello studente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il DBMS non decide da solo quali processi organizzativi sono legittimi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.3.1, pagina PDF 4"
+    },
+    {
+      "id": "si-c01-q032",
+      "topicId": "si-c01-t03",
+      "question": "Che cosa include il livello infrastrutturale?",
+      "answer": "Sistemi operativi, macchine fisiche o virtuali, rete e servizi tecnologici di base.",
+      "detail": "È la base di esecuzione e comunicazione dei componenti software e dei dati.",
+      "example": "Server e rete attraverso cui raggiungere il portale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare l’infrastruttura al sistema informativo nel suo insieme.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.3.1, pagina PDF 4"
+    },
+    {
+      "id": "si-c01-q033",
+      "topicId": "si-c01-t03",
+      "question": "Perché sostituire una web app non implica necessariamente ridisegnare il sistema informativo?",
+      "answer": "Perché ruoli, responsabilità, regole e processi possono rimanere invariati anche quando cambia lo strumento ICT.",
+      "detail": "È possibile anche il contrario: un nuovo requisito organizzativo può richiedere revisione dei processi e non solo del codice.",
+      "example": "Cambiare interfaccia di verbalizzazione senza mutare le regole di approvazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare trasformazione organizzativa una mera sostituzione del software.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.3.1, pagina PDF 4"
+    },
+    {
+      "id": "si-c01-q034",
+      "topicId": "si-c01-t04",
+      "question": "Secondo quale criterio il manuale classifica TPS, MIS, DSS ed ESS/EIS?",
+      "answer": "In base agli utenti serviti, al livello organizzativo e al tipo di attività o decisione supportata.",
+      "detail": "Le categorie sono prospettive analitiche: un’unica piattaforma può svolgere più funzioni.",
+      "example": "Un gestionale integra registrazioni, report, simulazioni e dashboard.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare obbligatoria una applicazione separata per ciascuna sigla.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4, pagina PDF 4"
+    },
+    {
+      "id": "si-c01-q035",
+      "topicId": "si-c01-t04",
+      "question": "Che cosa significa TPS e a cosa serve?",
+      "answer": "Transaction Processing System: sostiene la registrazione e gestione di eventi operativi o transazioni quotidiane.",
+      "detail": "Serve soprattutto l’operatività ricorrente e i soggetti che effettuano le registrazioni.",
+      "example": "Inserimento di un ordine, pagamento o prenotazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "TPS non indica prevalentemente una simulazione strategica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q036",
+      "topicId": "si-c01-t04",
+      "question": "Che cosa significa MIS e quale decisione supporta?",
+      "answer": "Management Information System: sintetizza e organizza dati operativi per monitoraggio, pianificazione e controllo gestionale.",
+      "detail": "È rivolto soprattutto al management intermedio e produce viste aggregate.",
+      "example": "Report mensile delle vendite o dei costi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un report riepilogativo non è automaticamente DSS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q037",
+      "topicId": "si-c01-t04",
+      "question": "Che cosa significa DSS e qual è la sua funzione principale?",
+      "answer": "Decision Support System: aiuta analisti e manager a valutare alternative in decisioni non interamente strutturate.",
+      "detail": "Supporta confronti di ipotesi, scenari e possibili conseguenze, non soltanto la registrazione dello stato corrente.",
+      "example": "Confronto tra margini attesi di tre configurazioni di prezzo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire DSS come semplice cruscotto di indicatori già disponibili.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q038",
+      "topicId": "si-c01-t04",
+      "question": "Qual è la differenza fondamentale tra MIS e DSS?",
+      "answer": "Il MIS riepiloga e monitora il già osservato; il DSS permette di confrontare ipotesi e alternative per orientare una scelta.",
+      "detail": "Una stessa piattaforma può contenere entrambe le funzioni: è la funzione informativa a determinare la classificazione.",
+      "example": "Report del fatturato mensile (MIS) rispetto alla simulazione del fatturato a prezzi diversi (DSS).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che ogni calcolo aziendale trasformi un MIS in DSS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q039",
+      "topicId": "si-c01-t04",
+      "question": "Che cosa sono ESS/EIS e a chi sono rivolti?",
+      "answer": "Executive Support/Information Systems: forniscono alla direzione indicatori aggregati e una visione strategica.",
+      "detail": "Sostengono il livello direzionale e la lettura sintetica delle performance.",
+      "example": "Cruscotto direzionale con principali KPI aziendali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere direzionale con una transazione di dettaglio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q040",
+      "topicId": "si-c01-t04",
+      "question": "Che cosa significa KMS?",
+      "answer": "Knowledge Management System: aiuta a acquisire, organizzare, condividere e riutilizzare conoscenze nell’organizzazione.",
+      "detail": "Il risultato non è soltanto un archivio, ma la diffusione di procedure, esperienza e lezioni apprese.",
+      "example": "Base aziendale di procedure e risoluzioni di problemi ricorrenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare qualsiasi database transazionale come KMS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q041",
+      "topicId": "si-c01-t04",
+      "question": "A quali livelli si riferisce la figura della classificazione funzionale?",
+      "answer": "Operativo, gestionale, decisionale e direzionale.",
+      "detail": "Le funzioni TPS, MIS, DSS, ESS/EIS corrispondono rispettivamente a differenti livelli informativi, con possibili sovrapposizioni pratiche.",
+      "example": "Dati di dettaglio dagli operatori possono alimentare indicatori per la direzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La figura è una sintesi dei livelli, non una separazione assoluta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q042",
+      "topicId": "si-c01-t04",
+      "question": "Se un dirigente chiede «quanto è accaduto?» e «cosa accadrebbe cambiando il prezzo?», quali funzioni si distinguono?",
+      "answer": "La prima è tipicamente reportistica MIS/ESS; la seconda richiede capacità DSS di simulazione e confronto di scenari.",
+      "detail": "È il tipo di interrogativo — descrittivo o ipotetico — che orienta la classificazione.",
+      "example": "«Quanto abbiamo venduto?» vs «Quanto potremmo guadagnare con un’offerta diversa?».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare soltanto per qualifica dell’utente ignorando il compito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q043",
+      "topicId": "si-c01-t04",
+      "question": "Perché classificare una piattaforma come DSS non esclude componenti TPS o MIS?",
+      "answer": "Perché una piattaforma integra spesso registrazioni, elaborazioni, report e simulazioni con finalità informative differenti.",
+      "detail": "La distinzione riguarda la funzione prevalente, non un vincolo di implementazione a moduli isolati.",
+      "example": "EnerPrice registra configurazioni (TPS), produce resoconti (MIS) e confronta scenari (DSS).",
+      "formulas": [],
+      "connections": [
+        "§1.12: EnerPrice"
+      ],
+      "mistakes": "Non usare un’unica etichetta per negare le altre funzioni presenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q044",
+      "topicId": "si-c01-t05",
+      "question": "Che cosa sono gli Enterprise Systems?",
+      "answer": "Famiglie di sistemi aziendali che integrano processi e dati di più funzioni organizzative.",
+      "detail": "Possono affiancare o includere funzioni di TPS, MIS e DSS; spesso hanno ambiti sovrapposti.",
+      "example": "Piattaforma integrata che unisce contabilità, acquisti e logistica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare Enterprise Systems e TPS/MIS/DSS come classificazioni alternative esclusive.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4.1, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q045",
+      "topicId": "si-c01-t05",
+      "question": "Che cosa significa ERP e quale scopo svolge?",
+      "answer": "Enterprise Resource Planning: integra risorse e processi gestionali di amministrazione, acquisti, produzione e finanza.",
+      "detail": "L’accento è sull’integrazione di informazioni e operazioni tra funzioni aziendali.",
+      "example": "Gestione coordinata di ordini di acquisto, magazzino e contabilità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere ERP con sola contabilità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4.1, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q046",
+      "topicId": "si-c01-t05",
+      "question": "Che cosa significa CRM e quale dominio gestisce?",
+      "answer": "Customer Relationship Management: gestisce conoscenza e interazioni con i clienti.",
+      "detail": "Tipicamente coinvolge vendite, marketing e assistenza post-vendita.",
+      "example": "Storico delle interazioni commerciali e delle richieste del cliente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere CRM con il solo modulo di fatturazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4.1, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q047",
+      "topicId": "si-c01-t05",
+      "question": "Qual è la finalità di un SCM?",
+      "answer": "Supply Chain Management: coordinare i flussi della catena di fornitura.",
+      "detail": "Supporta acquisti, logistica e pianificazione degli approvvigionamenti e delle consegne.",
+      "example": "Coordinare fabbisogni di materiali e consegne dei fornitori.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre la supply chain al solo magazzino.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4.1, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q048",
+      "topicId": "si-c01-t05",
+      "question": "Qual è la funzione di un PLM?",
+      "answer": "Product Lifecycle Management: gestire informazioni e attività lungo il ciclo di vita del prodotto.",
+      "detail": "Comprende progettazione, sviluppo, modifiche e dismissione.",
+      "example": "Gestione di revisioni, versioni e modifiche di un prodotto industriale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare PLM un sinonimo di CRM.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4.1, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q049",
+      "topicId": "si-c01-t05",
+      "question": "Che cosa gestiscono HRMS e HCM?",
+      "answer": "Human Resource Management System / Human Capital Management: processi relativi alle risorse umane.",
+      "detail": "Personale, presenze, formazione e competenze sono ambiti tipici.",
+      "example": "Portale per presenze e formazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificarli come sistemi logistici SCM.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4.1, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q050",
+      "topicId": "si-c01-t05",
+      "question": "Qual è la differenza fra classificare un sistema per funzione informativa e per dominio enterprise?",
+      "answer": "TPS/MIS/DSS/ESS/KMS descrivono soprattutto il tipo di supporto all’attività e alla decisione; ERP/CRM/SCM/PLM/HRMS descrivono l’ambito gestionale integrato.",
+      "detail": "Un ERP può produrre sia report MIS sia simulazioni DSS: le due letture sono complementari.",
+      "example": "Un CRM contiene dati transazionali e cruscotti direzionali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mettere le due tassonomie in competizione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4.1, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q051",
+      "topicId": "si-c01-t05",
+      "question": "Come si colloca EnerPrice nella classificazione introduttiva del capitolo?",
+      "answer": "Prevalentemente come DSS per valutare offerte energetiche, con funzioni transazionali di configurazione e funzioni gestionali di reportistica.",
+      "detail": "È una lettura didattica del progetto personale descritta nel manuale, non una classificazione specifica attribuita dalla docente.",
+      "example": "Creare un’offerta, stimare KPI, confrontare scenari.",
+      "formulas": [],
+      "connections": [
+        "§1.12: secondo caso guidato"
+      ],
+      "mistakes": "Non presentare EnerPrice come un esempio ufficiale delle slide della docente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.4.1, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q052",
+      "topicId": "si-c01-t06",
+      "question": "Perché il sistema informativo deve essere studiato nel contesto dell’organizzazione?",
+      "answer": "Perché sostiene processi che utilizzano risorse, rispettano regole e perseguono obiettivi; fuori da questo contesto i dati e le tecnologie non hanno un significato gestionale completo.",
+      "detail": "L’organizzazione include anche vincoli legislativi, regolamenti e procedure interne.",
+      "example": "Una registrazione di esame deve rispettare le regole di carriera e le competenze delle segreterie.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non progettare i dati prescindendo dagli attori e dalle regole di processo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5, pagina PDF 5"
+    },
+    {
+      "id": "si-c01-q053",
+      "topicId": "si-c01-t06",
+      "question": "Che cos’è un processo aziendale?",
+      "answer": "Un insieme coordinato di attività che usa risorse e tecnologie per produrre beni o servizi destinati a un risultato riconoscibile.",
+      "detail": "Non è sufficiente sapere quali dati vengono memorizzati: serve conoscere dove nascono, chi li utilizza e quali output permettono di generare.",
+      "example": "Richiesta del cliente → analisi delle condizioni → elaborazione del preventivo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare un singolo programma con l’intero processo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5, pagina PDF 6"
+    },
+    {
+      "id": "si-c01-q054",
+      "topicId": "si-c01-t06",
+      "question": "Quali sono gli elementi essenziali di una rappresentazione di processo per input e output?",
+      "answer": "Input, attività/processi che trasformano gli input, output e risorse necessarie.",
+      "detail": "L’efficienza dell’uso di risorse e la soddisfazione dello scopo dipendono da come le attività sono coordinate.",
+      "example": "Una richiesta e dati di catalogo diventano un preventivo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere il processo soltanto con il nome della sua funzione software.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5, pagina PDF 6"
+    },
+    {
+      "id": "si-c01-q055",
+      "topicId": "si-c01-t06",
+      "question": "Quali sono le cinque categorie di risorse organizzative richiamate?",
+      "answer": "Economiche, umane, informative, tecnologiche e fisiche.",
+      "detail": "Le risorse contribuiscono in modo complementare a realizzare processi, decisioni e servizi.",
+      "example": "Budget, personale, informazioni di catalogo, sistemi ICT e locali/impianti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Le risorse dell’organizzazione non si limitano alla tecnologia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5.1, pagina PDF 6"
+    },
+    {
+      "id": "si-c01-q056",
+      "topicId": "si-c01-t06",
+      "question": "Che cosa comprendono le risorse economiche?",
+      "answer": "Capitale, budget e costi necessari a realizzare, gestire e mantenere le attività.",
+      "detail": "Servono anche per confrontare sostenibilità e alternative progettuali, non soltanto per l’acquisto del software.",
+      "example": "Budget per realizzare il sistema e costi ricorrenti di manutenzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere risorse economiche e informative.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5.1, pagina PDF 6"
+    },
+    {
+      "id": "si-c01-q057",
+      "topicId": "si-c01-t06",
+      "question": "Quale funzione svolgono le risorse umane nei processi informativi?",
+      "answer": "Forniscono competenze, tempo, responsabilità e coordinamento delle attività.",
+      "detail": "Un processo richiede soggetti che producano, controllino, interpretino e utilizzino informazioni; gli strumenti ne supportano il lavoro.",
+      "example": "Un responsabile verifica e approva una simulazione predisposta da un analista.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La sola automazione non cancella responsabilità e ruoli.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5.1, pagina PDF 6"
+    },
+    {
+      "id": "si-c01-q058",
+      "topicId": "si-c01-t06",
+      "question": "Che cosa rientra nelle risorse informative?",
+      "answer": "Dati, conoscenze, documenti e flussi informativi necessari per svolgere attività e prendere decisioni.",
+      "detail": "Devono avere significato condiviso e qualità sufficiente per lo scopo organizzativo.",
+      "example": "Listini, profili di consumo, regole commerciali e storico delle decisioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare risorsa informativa soltanto con file digitali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5.1, pagina PDF 6"
+    },
+    {
+      "id": "si-c01-q059",
+      "topicId": "si-c01-t06",
+      "question": "Come si distinguono risorse tecnologiche e fisiche?",
+      "answer": "Le tecnologiche comprendono software, hardware, reti e strumenti digitali; le fisiche includono sedi, impianti e altre infrastrutture materiali.",
+      "detail": "La distinzione è funzionale: alcuni beni sono materiali e al contempo fanno parte dell’infrastruttura tecnologica.",
+      "example": "DBMS e rete sono risorse tecnologiche; locali e arredi risorse fisiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare categorie come se fossero necessariamente disgiunte in ogni classificazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5.1, pagina PDF 6"
+    },
+    {
+      "id": "si-c01-q060",
+      "topicId": "si-c01-t06",
+      "question": "Quali caratteristiche distinguono generalmente un bene fisico da un servizio?",
+      "answer": "Il bene è in genere tangibile, producibile e immagazzinabile prima del consumo; il servizio è prevalentemente intangibile e spesso erogato e fruito contestualmente.",
+      "detail": "Il manuale precisa che questa distinzione non è assoluta e che alcune offerte integrano beni, servizi e dati.",
+      "example": "Computer come bene; assistenza tecnica come servizio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che ogni servizio sia sempre immagazzinabile o che ogni bene sia consumato immediatamente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5.2, pagina PDF 6"
+    },
+    {
+      "id": "si-c01-q061",
+      "topicId": "si-c01-t06",
+      "question": "Come differiscono beni, servizi e dati digitali in termini di copie e scorte?",
+      "answer": "I beni fisici possono essere stoccati; la prestazione del servizio in genere non è immagazzinabile allo stesso modo; i dati digitali sono archiviabili, replicabili e riutilizzabili.",
+      "detail": "Sono diverse anche tangibilità e relazione tra produzione e uso.",
+      "example": "Computer, intervento di assistenza e storico dei consumi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare il dato come un bene materiale consumato a ogni lettura.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5.2, pagina PDF 6"
+    },
+    {
+      "id": "si-c01-q062",
+      "topicId": "si-c01-t06",
+      "question": "Che cosa distingue un processo primario da uno di supporto?",
+      "answer": "Il primario contribuisce direttamente alla produzione dell’output di valore per il destinatario; quello di supporto fornisce risorse e condizioni ai processi primari.",
+      "detail": "La qualificazione dipende dal settore e dallo scopo dell’organizzazione.",
+      "example": "In manifattura produzione/distribuzione sono primari; amministrazione e gestione del personale forniscono supporto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare «primario» a una funzione senza considerare il tipo di impresa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5.3, pagina PDF 6"
+    },
+    {
+      "id": "si-c01-q063",
+      "topicId": "si-c01-t06",
+      "question": "Qual è l’esempio universitario di processi primari e di supporto riportato?",
+      "answer": "Didattica, ricerca ed esami sono processi primari; pulizia e manutenzione sono processi di supporto.",
+      "detail": "Lo stesso tipo di attività potrebbe essere primario per un’organizzazione che la vende come servizio.",
+      "example": "La manutenzione è supporto nell’ateneo ma attività primaria per un’impresa di manutenzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere una classificazione universale e indipendente dal contesto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5.3, pagina PDF 6"
+    },
+    {
+      "id": "si-c01-q064",
+      "topicId": "si-c01-t06",
+      "question": "Perché un processo non coincide necessariamente con una funzione dell’organigramma?",
+      "answer": "Perché può attraversare unità organizzative diverse, coinvolgendo attori, dati e decisioni lungo un flusso interfunzionale.",
+      "detail": "L’organigramma rappresenta chi appartiene a quale struttura; il processo rappresenta come si arriva all’output.",
+      "example": "La verbalizzazione coinvolge docente, segreteria dipartimentale e segreteria centrale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre la sequenza operativa dai soli legami gerarchici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5.3, pagina PDF 7"
+    },
+    {
+      "id": "si-c01-q065",
+      "topicId": "si-c01-t06",
+      "question": "Quali componenti trasformano una richiesta di cliente in un preventivo?",
+      "answer": "Dati di catalogo, competenze commerciali, regole di pricing, procedure di approvazione e strumenti software, coordinati in attività.",
+      "detail": "È un esempio del manuale che dimostra la complementarità delle cinque risorse e dei processi.",
+      "example": "Richiesta → elaborazione con dati e regole → preventivo conforme.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il software da solo non stabilisce che cosa costituisce un preventivo approvato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.5, pagina PDF 6"
+    },
+    {
+      "id": "si-c01-q066",
+      "topicId": "si-c01-t07",
+      "question": "Perché la docente usa la verbalizzazione degli esami come caso guida?",
+      "answer": "Perché permette di analizzare insieme persone, strutture, documenti, dati, controlli, flussi e sistema informatico.",
+      "detail": "È un processo cartaceo didattico di tipo AS-IS; il manuale avverte che non è la descrizione delle procedure attuali del Politecnico.",
+      "example": "Registro compilato dal docente, verifiche nelle segreterie e aggiornamento finale della carriera.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare il caso storico didattico come la procedura amministrativa oggi in vigore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.6, pagina PDF 7"
+    },
+    {
+      "id": "si-c01-q067",
+      "topicId": "si-c01-t07",
+      "question": "Qual è l’evento iniziale del caso di verbalizzazione e quale primo documento viene creato?",
+      "answer": "Lo studente supera un esame; il docente registra dati dello studente, insegnamento e voto su un registro cartaceo.",
+      "detail": "La registrazione iniziale è il punto in cui nasce il dato, prima dei passaggi di controllo.",
+      "example": "Registro degli esami compilato dal docente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la compilazione iniziale con l’aggiornamento definitivo della carriera.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.6.1, pagina PDF 7"
+    },
+    {
+      "id": "si-c01-q068",
+      "topicId": "si-c01-t07",
+      "question": "Qual è il primo trasferimento documentale del processo AS-IS?",
+      "answer": "Al termine della sessione il docente consegna il registro alla segreteria del dipartimento.",
+      "detail": "È un flusso informativo e documentale tra ruoli organizzativi distinti.",
+      "example": "Passaggio materiale del registro alla segreteria.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un documento può essere parte del SI anche se cartaceo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.6.1, pagina PDF 7"
+    },
+    {
+      "id": "si-c01-q069",
+      "topicId": "si-c01-t07",
+      "question": "Che controllo effettua la segreteria dipartimentale?",
+      "answer": "Verifica la completezza dei campi presenti nel registro e, se rileva mancanze, segnala la necessità di correzione al docente.",
+      "detail": "La verifica di completezza è distinta dal successivo controllo di coerenza con le regole di carriera.",
+      "example": "Registro senza un voto: richiesta di integrazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire alla prima verifica tutti i controlli amministrativi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.6.1, pagina PDF 7"
+    },
+    {
+      "id": "si-c01-q070",
+      "topicId": "si-c01-t07",
+      "question": "Che cosa avviene dopo la raccolta dei registri a livello dipartimentale?",
+      "answer": "I registri della sessione sono inviati alla segreteria centrale per controlli ulteriori.",
+      "detail": "Il processo attraversa più unità: è un esempio del motivo per cui l’organigramma da solo non basta.",
+      "example": "Invio dei registri raccolti alla struttura centrale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non saltare il trasferimento tra segreterie nella descrizione dell’AS-IS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.6.1, pagina PDF 7"
+    },
+    {
+      "id": "si-c01-q071",
+      "topicId": "si-c01-t07",
+      "question": "Quali verifiche effettua la segreteria centrale?",
+      "answer": "Verifica la coerenza dei dati, la presenza dell’insegnamento nel piano di studi e la regolarità della posizione contributiva dello studente.",
+      "detail": "Queste condizioni tutelano la correttezza dell’aggiornamento finale della carriera.",
+      "example": "Un esame non presente nel piano di studi richiede gestione dell’anomalia.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre il controllo centrale alla sola verifica che tutti i campi siano compilati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.6.1, pagina PDF 7"
+    },
+    {
+      "id": "si-c01-q072",
+      "topicId": "si-c01-t07",
+      "question": "Che cosa succede se una verifica individua un errore nel registro?",
+      "answer": "Il documento ritorna al docente perché venga corretto prima di poter procedere all’aggiornamento finale.",
+      "detail": "È un ciclo di ritorno nel processo, utile da rappresentare con una scelta e una sequenza di correzione.",
+      "example": "Incoerenza nel voto o nei dati: richiesta di rettifica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il percorso AS-IS non è una sequenza lineare priva di eccezioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.6.1, pagina PDF 7"
+    },
+    {
+      "id": "si-c01-q073",
+      "topicId": "si-c01-t07",
+      "question": "Qual è l’output finale della verbalizzazione didattica?",
+      "answer": "L’aggiornamento del sistema delle carriere con l’insegnamento superato, il voto e gli altri dati previsti, dopo esito positivo delle verifiche.",
+      "detail": "L’output non è la compilazione del registro ma la carriera correttamente aggiornata.",
+      "example": "Lo studente visualizza il voto riconosciuto nella carriera.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non misurare l’esito del servizio soltanto dal numero di registri consegnati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.6.1, pagina PDF 7"
+    },
+    {
+      "id": "si-c01-q074",
+      "topicId": "si-c01-t07",
+      "question": "Quali sono le principali unità organizzative coinvolte nel caso?",
+      "answer": "Docente, segreteria dipartimentale e segreteria centrale.",
+      "detail": "La distinzione permette di attribuire responsabilità, passaggi e controlli.",
+      "example": "Il docente produce/corregge il registro; le segreterie verificano e trasferiscono dati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un attore con l’applicazione che può usare.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.6.2, pagina PDF 8"
+    },
+    {
+      "id": "si-c01-q075",
+      "topicId": "si-c01-t07",
+      "question": "Quali dati risultano rilevanti nella verbalizzazione?",
+      "answer": "Studente, corso/insegnamento, esame, voto, piano di studi, posizione relativa alle tasse ed eventuale paese Erasmus.",
+      "detail": "La tassonomia concettuale del caso prepara la modellazione dei dati.",
+      "example": "Per convalidare la prova occorrono identificazione dello studente, corso e vincoli di carriera.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare la modellazione alla coppia studente-voto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.6.2, pagina PDF 8"
+    },
+    {
+      "id": "si-c01-q076",
+      "topicId": "si-c01-t07",
+      "question": "Quali tipi di controllo sono distinti nella tabella del caso guida?",
+      "answer": "Completezza, coerenza, verifica che l’insegnamento sia previsto e regolarità delle tasse.",
+      "detail": "Sono controlli con scopi differenti: evitare aggiornamenti incompleti, inconsistenti o non ammissibili.",
+      "example": "Un registro pieno ma relativo a un corso non previsto può comunque essere rifiutato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Completezza non implica automaticamente correttezza o ammissibilità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.6.2, pagina PDF 8"
+    },
+    {
+      "id": "si-c01-q077",
+      "topicId": "si-c01-t07",
+      "question": "Perché un registro incompleto non rappresenta un problema soltanto informatico?",
+      "answer": "Perché può dipendere da compilazione, responsabilità, definizione dei dati, regole di controllo, modalità di segnalazione e tempi di correzione.",
+      "detail": "Cambiare applicazione può aiutare ma non sostituisce l’analisi di processo e dei requisiti.",
+      "example": "Aggiungere un campo obbligatorio non risolve chi deve correggere un errore e quando.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire ogni difetto informativo alla mancanza di software.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.6.2, pagina PDF 8"
+    },
+    {
+      "id": "si-c01-q078",
+      "topicId": "si-c01-t07",
+      "question": "Quale distinzione evidenzia il caso tra registro cartaceo e database finale?",
+      "answer": "Il registro è il documento che veicola i dati nell’AS-IS; il database finale è un supporto informatico della carriera aggiornata.",
+      "detail": "Il SI include l’intero processo e tutti gli attori, non soltanto il supporto di partenza o l’archivio finale.",
+      "example": "Registro cartaceo → controlli → carriera digitale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare il registro con l’intero sistema informativo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.6, pagina PDF 7"
+    },
+    {
+      "id": "si-c01-q079",
+      "topicId": "si-c01-t08",
+      "question": "Perché bisogna modellare un sistema informativo oltre a descriverlo in linguaggio naturale?",
+      "answer": "Per ridurre ambiguità, ripetizioni e omissioni, esplicitando prospettive condivise di organizzazione, processi e dati.",
+      "detail": "I modelli sono complementari e permettono verifiche diverse sullo stesso scenario.",
+      "example": "La verbalizzazione si può rappresentare tramite ruoli, sequenze di attività e struttura dei dati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere un solo modello per sostituire tutte le prospettive.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7, pagina PDF 8"
+    },
+    {
+      "id": "si-c01-q080",
+      "topicId": "si-c01-t08",
+      "question": "Quali tre prospettive di modellazione vengono distinte nelle slide?",
+      "answer": "Organizzazione: chi opera; processi: quali attività e decisioni si susseguono; dati: quali informazioni e relazioni devono essere rappresentate.",
+      "detail": "Ogni prospettiva corrisponde a una domanda differente e a rappresentazioni specifiche.",
+      "example": "Organigramma; BPMN; schema E-R.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un diagramma BPMN non sostituisce lo schema dei dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7, pagina PDF 8"
+    },
+    {
+      "id": "si-c01-q081",
+      "topicId": "si-c01-t08",
+      "question": "Che cos’è una tassonomia e a che cosa serve?",
+      "answer": "Un elenco organizzato di categorie e sottocategorie che aiuta a ordinare concetti, attività o dati di un dominio.",
+      "detail": "Non rappresenta automaticamente la sequenza delle attività o tutti i vincoli esistenti.",
+      "example": "Classificazione dei controlli: completezza, coerenza, amministrativi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere tassonomia con modello dinamico del processo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.1, pagina PDF 8"
+    },
+    {
+      "id": "si-c01-q082",
+      "topicId": "si-c01-t08",
+      "question": "Che cos’è un organigramma?",
+      "answer": "Una rappresentazione delle strutture, dei ruoli e dei rapporti gerarchici dell’organizzazione.",
+      "detail": "Permette di capire le strutture responsabili; non mostra con sufficiente precisione l’ordine dei passaggi e i rami decisionali.",
+      "example": "Rettore, amministrazione centrale, dipartimenti, segreterie e docenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre l’ordine delle verifiche dai soli livelli gerarchici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.1, pagina PDF 8"
+    },
+    {
+      "id": "si-c01-q083",
+      "topicId": "si-c01-t08",
+      "question": "Perché la modellazione organizzativa deve essere integrata con quella dei processi?",
+      "answer": "Perché i flussi di lavoro attraversano unità e funzioni differenti e non seguono necessariamente l’organigramma.",
+      "detail": "La responsabilità gerarchica non descrive chi invia un documento a chi, quando e per quale verifica.",
+      "example": "Un registro passa da docente a due segreterie prima dell’aggiornamento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rappresentare attività interfunzionali come se fossero interne a una sola unità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.1, pagina PDF 8"
+    },
+    {
+      "id": "si-c01-q084",
+      "topicId": "si-c01-t09",
+      "question": "Che cos’è BPMN e quale problema risolve?",
+      "answer": "Business Process Model and Notation: una notazione grafica per descrivere attività, eventi, scelte, flussi e partecipanti di un processo.",
+      "detail": "È usata per rendere il comportamento del processo più chiaro e analizzabile rispetto a una sola descrizione discorsiva.",
+      "example": "Diagramma dei controlli sulla verbalizzazione, con ritorno al docente in caso di errore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "BPMN non descrive principalmente la struttura persistente dei dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.2, pagina PDF 8"
+    },
+    {
+      "id": "si-c01-q085",
+      "topicId": "si-c01-t09",
+      "question": "Che cos’è un evento BPMN?",
+      "answer": "Un accadimento che avvia, modifica o conclude il flusso di processo.",
+      "detail": "Il suo ruolo non coincide con un’attività eseguita da un soggetto, anche se può scatenarla.",
+      "example": "La conclusione dell’esame e la necessità di verbalizzare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non disegnare come task un evento che non rappresenta lavoro svolto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.2, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q086",
+      "topicId": "si-c01-t09",
+      "question": "Che cosa rappresenta una attività (task) BPMN?",
+      "answer": "Una unità di lavoro svolta nel processo da un partecipante o da un sistema.",
+      "detail": "Può essere assegnata al ruolo responsabile e collegata da flussi di sequenza.",
+      "example": "Verificare la completezza del registro.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare un’attività come semplice condizione booleana.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.2, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q087",
+      "topicId": "si-c01-t09",
+      "question": "A che cosa serve un gateway BPMN?",
+      "answer": "A separare o ricongiungere percorsi del processo secondo condizioni o regole.",
+      "detail": "Un gateway esclusivo rappresenta una scelta alternativa; il suo significato deve essere coerente con i flussi in uscita.",
+      "example": "«Il registro è completo?» Sì → procedi; No → richiedi correzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il gateway come sinonimo di un’attività di verifica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.2, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q088",
+      "topicId": "si-c01-t09",
+      "question": "Che cosa indica il flusso di sequenza in BPMN?",
+      "answer": "Ordine e direzione fra gli elementi del processo all’interno di un flusso.",
+      "detail": "Collega attività, eventi e gateway secondo l’ordine previsto.",
+      "example": "Verifica completezza → controllo centrale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere ogni freccia disegnata con un flusso di messaggio fra partecipanti distinti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.2, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q089",
+      "topicId": "si-c01-t09",
+      "question": "Che cosa rappresentano pool e lane nel modello BPMN?",
+      "answer": "Contenitori che organizzano partecipanti e responsabilità nel diagramma.",
+      "detail": "La distinzione formale fra pool e lane richiede attenzione: flussi di sequenza all’interno di un partecipante e flussi di messaggio fra partecipanti diversi.",
+      "example": "Corsie per docente e segreterie coinvolte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente significato BPMN completo a una figura puramente esplicativa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.2, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q090",
+      "topicId": "si-c01-t09",
+      "question": "Quale precisazione fa il manuale sulla figura semplificata della verbalizzazione?",
+      "answer": "Usa corsie e frecce per spiegare il caso ma non pretende di rispettare tutti i dettagli della notazione BPMN 2.0.",
+      "detail": "Per una modellazione formale occorre distinguere con precisione flussi di sequenza e flussi di messaggio fra partecipanti.",
+      "example": "La figura 1.6 serve alla comprensione, non è una specifica BPMN rigorosa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che la figura didattica è un diagramma BPMN completo e normativo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.2, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q091",
+      "topicId": "si-c01-t09",
+      "question": "Quali elementi BPMN useresti per rappresentare il ritorno al docente per la correzione?",
+      "answer": "Task di verifica, gateway sulla condizione di completezza/coerenza, ramo negativo verso attività di correzione, quindi collegamento al punto di verifica appropriato.",
+      "detail": "I simboli devono rendere esplicita sia la responsabilità dell’azione sia la logica del ritorno.",
+      "example": "Segreteria controlla → incompleto → docente integra → nuova verifica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rendere il flusso erroneamente lineare ignorando le eccezioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.2, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q092",
+      "topicId": "si-c01-t10",
+      "question": "Qual è lo scopo della modellazione dei dati nel caso universitario?",
+      "answer": "Rappresentare le informazioni da conservare e i legami fra i concetti del dominio indipendentemente dal flusso delle attività.",
+      "detail": "È complementare a organigramma e BPMN: studente, corso, esame, piano di studi e tasse hanno struttura e vincoli propri.",
+      "example": "Schema concettuale con STUDENTE, CORSO ed ESAME.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cercare di far esprimere al modello E-R l’intera sequenza di verifiche.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.3, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q093",
+      "topicId": "si-c01-t10",
+      "question": "Che differenza esiste fra tassonomia dei dati e schema Entità-Relazione?",
+      "answer": "La tassonomia elenca/classifica concetti e attributi; uno schema E-R rappresenta le entità, i loro legami e i vincoli concettuali.",
+      "detail": "Nel caso universitario la tassonomia aiuta a individuare i termini, mentre lo schema E-R rende esplicito come sono collegati.",
+      "example": "Studente Erasmus come categoria; associazioni fra studente ed esame nello schema.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La tassonomia da sola non esplicita le cardinalità delle relazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.3, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q094",
+      "topicId": "si-c01-t10",
+      "question": "Quali entità e informazioni sono richiamate nel modello E-R del caso esami?",
+      "answer": "Studente, corso, esame sostenuto e voto, piano di studi e specializzazione per studenti Erasmus.",
+      "detail": "Nel capitolo introduttivo conta il cambio di prospettiva; identificatori e cardinalità saranno approfonditi nel Capitolo 2.",
+      "example": "Relazione fra la carriera dello studente e i risultati delle prove.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non anticipare una precisa soluzione logica se il capitolo non la richiede.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7.3, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q095",
+      "topicId": "si-c01-t10",
+      "question": "Quale domanda risponde ciascuno fra organigramma, BPMN ed E-R?",
+      "answer": "Organigramma: «chi ha responsabilità?»; BPMN: «in quale sequenza si svolgono attività e decisioni?»; E-R: «quali dati e relazioni devono persistere?».",
+      "detail": "Questa tripartizione sintetizza la tabella del §1.7.3.",
+      "example": "Approvazione di offerta: ruolo responsabile, flusso di approvazione, record della simulazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere responsabilità, comportamento e struttura dei dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.7, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q096",
+      "topicId": "si-c01-t11",
+      "question": "Che cosa significa efficienza di un processo?",
+      "answer": "Quanto economicamente il processo impiega le risorse per produrre un output, ad esempio tempo, lavoro o costo per unità prodotta.",
+      "detail": "Si può migliorare l’efficienza mantenendo un livello di servizio costante e usando meno risorse.",
+      "example": "Ridurre le ore di lavoro manuale per ogni esame verbalizzato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un processo più rapido non è necessariamente più corretto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.8, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q097",
+      "topicId": "si-c01-t11",
+      "question": "Che cosa significa efficacia di un processo?",
+      "answer": "La capacità di raggiungere gli obiettivi del processo e soddisfare il bisogno del destinatario.",
+      "detail": "Il miglioramento riguarda qualità, correttezza e valore del servizio consegnato, non soltanto il minor impiego di risorse.",
+      "example": "Rendere il voto disponibile agli studenti in tempi più brevi e senza errori.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire efficacia come semplice riduzione dei costi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.8, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q098",
+      "topicId": "si-c01-t11",
+      "question": "Quale differenza mostra il caso universitario tra efficienza ed efficacia?",
+      "answer": "Ridurre le ore impiegate nella registrazione è efficienza; migliorare la correttezza o la tempestiva disponibilità della carriera è efficacia.",
+      "detail": "Le due dimensioni sono complementari ma richiedono indicatori distinti.",
+      "example": "80 ore invece di 100 per registrare gli stessi esami; pubblicazione dei voti più rapida e corretta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concludere che un indicatore di tempo operativo misura tutto il valore del servizio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.8, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q099",
+      "topicId": "si-c01-t11",
+      "question": "Come si calcola la riduzione percentuale di ore operative nell’esempio del manuale?",
+      "answer": "Da 100 ore a 80 ore: (100 − 80) / 100 × 100 = 20% di riduzione.",
+      "detail": "Il denominatore è il valore iniziale; i dati sono ipotetici, introdotti nel manuale per l’esercizio.",
+      "example": "100 registrazioni prima richiedono 100 ore; dopo ne richiedono 80.",
+      "formulas": [
+        {
+          "latex": "\\frac{H_{iniziali}-H_{nuove}}{H_{iniziali}}\\times100",
+          "meaning": "Riduzione relativa dell’impiego operativo a parità di perimetro."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non usare 80 come denominatore se si vuole il miglioramento rispetto alla situazione iniziale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.8, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q100",
+      "topicId": "si-c01-t11",
+      "question": "Come cambia il tempo di disponibilità nell’esempio che passa da 10 giorni a 5?",
+      "answer": "La riduzione è (10 − 5)/10 = 50% del tempo precedente.",
+      "detail": "Il manuale precisa che la riduzione dei tempi può essere letta come miglioramento dell’efficacia del servizio; i valori sono esempi inventati.",
+      "example": "Disponibilità del risultato dopo 5 giorni anziché 10.",
+      "formulas": [
+        {
+          "latex": "\\frac{T_{iniziale}-T_{nuovo}}{T_{iniziale}}\\times100",
+          "meaning": "Riduzione percentuale del tempo di attesa rispetto al valore iniziale."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confondere la riduzione del tempo atteso con quella delle ore lavorate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.8, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q101",
+      "topicId": "si-c01-t11",
+      "question": "Perché un tempo medio può non descrivere adeguatamente il servizio?",
+      "answer": "Perché può nascondere situazioni estreme, ritardi su casi singoli e problemi di accuratezza.",
+      "detail": "Il manuale propone misure aggiuntive per comprendere la distribuzione dei risultati e la qualità.",
+      "example": "La media dei tempi migliora ma alcune pratiche restano oltre la soglia di servizio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la media una prova sufficiente di efficacia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.8, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q102",
+      "topicId": "si-c01-t11",
+      "question": "Quali indicatori integrativi propone il manuale oltre alle medie?",
+      "answer": "Percentuale di registrazioni corrette al primo passaggio, numero di correzioni, tempo mediano, casi oltre soglia e costo per registrazione.",
+      "detail": "La valutazione deve combinare costo/risorse e risultati per l’utente.",
+      "example": "Un KPI di qualità può affiancare tempo di attesa e ore lavorate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non misurare l’efficacia con una sola cifra di produttività.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.8, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q103",
+      "topicId": "si-c01-t11",
+      "question": "Quali precauzioni servono per confrontare una metrica prima e dopo una modifica di processo?",
+      "answer": "Stesso perimetro, unità e base di confronto; ipotesi esplicite sulla qualità e sul volume; scelta di un denominatore coerente.",
+      "detail": "Il caso del manuale ipotizza invariata la qualità per isolare il confronto operativo.",
+      "example": "Confronto di 100 registrazioni prima e dopo, non di popolazioni diverse senza normalizzazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire causalmente il miglioramento al software senza verificare le condizioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.8, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q104",
+      "topicId": "si-c01-t11",
+      "question": "Un processo è efficiente ma produce spesso dati errati: come lo valuteresti?",
+      "answer": "Può essere efficiente nell’uso delle risorse ma inefficace rispetto all’obiettivo di un risultato corretto; servono indicatori di qualità oltre ai costi.",
+      "detail": "La distinzione consente di giustificare interventi che non riducano solo tempi e spese.",
+      "example": "Carriere aggiornate rapidamente, ma con voto inesatto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Efficienza e efficacia non sono sinonimi e non sono necessariamente correlate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.8, pagina PDF 9"
+    },
+    {
+      "id": "si-c01-q105",
+      "topicId": "si-c01-t12",
+      "question": "Quale evoluzione dei sistemi informativi descrive il manuale?",
+      "answer": "L’aumento della connessione tra organizzazioni, della quantità e varietà di dati digitali e dell’integrazione fra reti e sistemi.",
+      "detail": "La capacità di raccogliere dati non basta: bisogna riconciliarli, combinarli e renderli utilizzabili nei processi.",
+      "example": "Flussi informativi collegano clienti, fornitori e unità aziendali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non associare l’evoluzione soltanto al numero di record archiviati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.9, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q106",
+      "topicId": "si-c01-t12",
+      "question": "Perché l’integrazione dei dati è un requisito più importante della semplice accumulazione?",
+      "answer": "Perché fonti eterogenee devono essere rese coerenti e collegate per produrre informazioni interpretabili e supportare i processi.",
+      "detail": "L’integrazione richiede definizioni condivise, identificazione dei soggetti e qualità dei dati.",
+      "example": "Abbinare dati commerciali e di consumo per una simulazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Più dati non garantiscono automaticamente decisioni migliori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.9, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q107",
+      "topicId": "si-c01-t12",
+      "question": "Quali grandi tipologie di dati e strutture richiama il capitolo?",
+      "answer": "Dati strutturati, semistrutturati e non strutturati; richiama anche i knowledge graph come possibilità di collegamento semantico.",
+      "detail": "L’architettura adatta dipende dai problemi e dalle caratteristiche delle fonti.",
+      "example": "Tabelle relazionali, documenti e contenuti testuali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare i knowledge graph una tecnologia obbligatoria del corso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.9, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q108",
+      "topicId": "si-c01-t12",
+      "question": "Qual è il contributo e una difficoltà del mobile computing?",
+      "answer": "Consente accesso ai processi da dispositivi e luoghi diversi; comporta problemi di sicurezza e usabilità su schermi ridotti.",
+      "detail": "I benefici sono collegati alla possibilità di utilizzare i servizi quando servono.",
+      "example": "App per consultare una pratica fuori ufficio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La mobilità da sola non risolve la progettazione dei processi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.9, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q109",
+      "topicId": "si-c01-t12",
+      "question": "Che cosa offre l’IoT a un sistema informativo e quale rischio operativo aggiunge?",
+      "answer": "Raccoglie dati frequenti dal mondo fisico tramite dispositivi e sensori; rende più critiche qualità e volume dei dati di misura.",
+      "detail": "Le informazioni diventano utili soltanto con interpretazione e integrazione adeguata.",
+      "example": "Misure di consumo trasmesse da dispositivi connessi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che ogni misura ricevuta sia valida senza verifica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.9, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q110",
+      "topicId": "si-c01-t12",
+      "question": "Quale opportunità e quale problema introducono i social network?",
+      "answer": "Interazione e condivisione fra utenti, clienti e organizzazioni; necessità di governance delle informazioni pubblicate.",
+      "detail": "La dimensione organizzativa è rilevante per qualità, sicurezza e valore delle informazioni.",
+      "example": "Segnalazioni e feedback raccolti su canali social.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare interazione spontanea a dato già validato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.9, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q111",
+      "topicId": "si-c01-t12",
+      "question": "Quale contributo e quale difficoltà associa il manuale al cloud computing?",
+      "answer": "Risorse di elaborazione e archiviazione accessibili via rete; possibili dipendenze dai servizi e problemi di controllo dei costi.",
+      "detail": "Il modello infrastrutturale influenza accessibilità, gestione e sostenibilità, non definisce da solo la qualità del servizio.",
+      "example": "Database e applicazione ospitati in cloud.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Cloud non equivale automaticamente a costo nullo o sicurezza garantita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.9, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q112",
+      "topicId": "si-c01-t12",
+      "question": "Qual è l’opportunità e il limite delle architetture big data?",
+      "answer": "Elaborare grandi volumi di dati eterogenei; gestire la complessità operativa e l’integrazione delle fonti.",
+      "detail": "La scala dell’elaborazione deve essere giustificata dal problema e dal valore atteso.",
+      "example": "Analisi di grandi insiemi di eventi o misure.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non adottare big data come fine in sé.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.9, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q113",
+      "topicId": "si-c01-t12",
+      "question": "Che cosa lega l’evoluzione tecnologica alla dimensione gestionale della qualità?",
+      "answer": "Ogni nuova fonte o canale amplia le opportunità ma introduce vincoli di sicurezza, qualità, costi e coordinamento informativo.",
+      "detail": "La scelta progettuale deve verificare come le tecnologie contribuiscono al servizio e alle decisioni.",
+      "example": "Sensori → archivio cloud → report: serve qualità in ogni passaggio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare la valutazione al nome delle tecnologie.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.9, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q114",
+      "topicId": "si-c01-t13",
+      "question": "Che cos’è un approccio technology-driven alla progettazione?",
+      "answer": "Un percorso che parte dalle tecnologie e dall’infrastruttura, definendo successivamente attività e modalità del servizio.",
+      "detail": "Può favorire standardizzazione e sfruttamento di risorse esistenti, ma rischia di imporre soluzioni tecniche ai bisogni dell’utente.",
+      "example": "Scelta anticipata di DBMS e framework prima di analizzare i processi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che tecnologia moderna garantisca valore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.10, pagina PDF 10"
+    },
+    {
+      "id": "si-c01-q115",
+      "topicId": "si-c01-t13",
+      "question": "Che cos’è un approccio service-oriented nella prospettiva del capitolo?",
+      "answer": "Un percorso che parte da bisogni degli utenti e risultati richiesti, progetta processi e informazioni e poi sceglie tecnologie proporzionate.",
+      "detail": "Qui «service-oriented» è un orientamento della progettazione del servizio, non un’imposizione di una specifica architettura software.",
+      "example": "Prima capire come prenotare biglietti, poi selezionare gli strumenti digitali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere service-oriented con SOA.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.10, pagina PDF 11"
+    },
+    {
+      "id": "si-c01-q116",
+      "topicId": "si-c01-t13",
+      "question": "Qual è la principale differenza nella sequenza delle decisioni fra i due approcci?",
+      "answer": "Technology-driven: tecnologia → attività/processi → servizio; service-oriented: bisogni del servizio → processi/dati → tecnologia.",
+      "detail": "La figura 1.10 mostra due ordini di progettazione, non due stack applicativi obbligatori.",
+      "example": "Partire dal database vs partire dalle esigenze di marketing nel caso EnerPrice.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire la strategia dalla sola tecnologia infine adottata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.10, pagina PDF 11"
+    },
+    {
+      "id": "si-c01-q117",
+      "topicId": "si-c01-t13",
+      "question": "Quale vantaggio e quale rischio può avere il technology-driven?",
+      "answer": "Vantaggio: standardizzare e riutilizzare asset esistenti; rischio: costruire una soluzione funzionante ma inadeguata ai bisogni.",
+      "detail": "Una scelta tecnologica prematura può condizionare il modo in cui viene erogato il servizio.",
+      "example": "Piattaforma unica già aziendale scelta prima di conoscere gli utenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che technology-driven sia sempre privo di vantaggi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.10, pagina PDF 11"
+    },
+    {
+      "id": "si-c01-q118",
+      "topicId": "si-c01-t13",
+      "question": "Quale criticità può incontrare l’approccio service-oriented?",
+      "answer": "Bisogni e requisiti degli utenti possono essere inizialmente poco chiari o difficili da formalizzare in scelte progettuali.",
+      "detail": "Occorrono analisi, confronto e validazione progressiva dei requisiti prima di scegliere tecnologie.",
+      "example": "Due reparti hanno definizioni differenti di «margine».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Service-oriented non significa che le tecnologie siano irrilevanti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.10, pagina PDF 11"
+    },
+    {
+      "id": "si-c01-q119",
+      "topicId": "si-c01-t13",
+      "question": "Qual è l’esempio della docente per spiegare l’approccio orientato al servizio?",
+      "answer": "La necessità di prenotare biglietti per uno spettacolo guida la progettazione del servizio prima della selezione degli strumenti.",
+      "detail": "Il punto di partenza è il bisogno da soddisfare, non la decisione di usare un particolare software.",
+      "example": "Definire posti, prenotazione, disponibilità e conferma prima di scegliere il framework.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il risultato del servizio con la presenza di una piattaforma web.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.10, pagina PDF 11"
+    },
+    {
+      "id": "si-c01-q120",
+      "topicId": "si-c01-t13",
+      "question": "Come applicare un approccio service-oriented al progetto EnerPrice?",
+      "answer": "Chiarire quali informazioni e confronti servano al marketing, modellare processi e dati, quindi scegliere database, linguaggio, architettura e interfacce adeguati.",
+      "detail": "L’esempio EnerPrice è un’integrazione didattica nel manuale, non il caso ufficiale della docente.",
+      "example": "Prima definire KPI e scenari da confrontare; poi decidere PHP, MVC e database relazionale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre un database distribuito senza un requisito che lo giustifichi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.10, pagina PDF 11"
+    },
+    {
+      "id": "si-c01-q121",
+      "topicId": "si-c01-t13",
+      "question": "Perché service-oriented nel capitolo non coincide con Service-Oriented Architecture (SOA)?",
+      "answer": "Perché il primo indica un criterio di partenza basato sui bisogni e il valore del servizio; SOA è una specifica architettura software basata su servizi.",
+      "detail": "Il manuale precisa espressamente che sono concetti diversi.",
+      "example": "Si può progettare un servizio orientato all’utente e realizzarlo senza SOA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che l’approccio richieda microservizi o API particolari.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.10, pagina PDF 11"
+    },
+    {
+      "id": "si-c01-q122",
+      "topicId": "si-c01-t13",
+      "question": "Quali criteri manageriali dovrebbero valutare la qualità di una scelta tecnologica?",
+      "answer": "Coerenza con i bisogni, adeguatezza dei processi, affidabilità delle informazioni, costo complessivo e valore consegnato.",
+      "detail": "La modernità dello strumento non è una metrica sufficiente per la bontà del progetto.",
+      "example": "Un’app semplice ma affidabile può soddisfare meglio il bisogno di una soluzione tecnologicamente complessa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare la quantità di funzioni o l’ultimo framework come unica misura del successo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.10, pagina PDF 11"
+    },
+    {
+      "id": "si-c01-q123",
+      "topicId": "si-c01-t13",
+      "question": "Come riconoscere in una traccia una strategia technology-driven?",
+      "answer": "Il team decide prima infrastruttura, database o linguaggio e solo dopo interroga gli utenti per capire come dovrebbe funzionare il servizio.",
+      "detail": "La diagnosi riguarda l’ordine delle scelte, non il tipo particolare di tecnologia impiegata.",
+      "example": "«Abbiamo scelto tutti gli strumenti e ora chiediamo quali processi servono».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non etichettare automaticamente technology-driven un progetto che utilizza tecnologie standard.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.10, pagina PDF 11"
+    },
+    {
+      "id": "si-c01-q124",
+      "topicId": "si-c01-t14",
+      "question": "Da che cosa parte la progettazione di un sistema informativo nelle slide?",
+      "answer": "Dai requisiti degli utenti, generalmente espressi inizialmente in linguaggio naturale.",
+      "detail": "Devono essere compresi e tradotti in processi, dati, architetture e costi; la progettazione mira a migliorare efficacia, efficienza e valore.",
+      "example": "«Voglio sapere quando una simulazione può essere approvata» come requisito utente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non partire obbligatoriamente dalla tabella SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11, pagina PDF 11"
+    },
+    {
+      "id": "si-c01-q125",
+      "topicId": "si-c01-t14",
+      "question": "Quali output complessivi deve produrre l’attività di progettazione secondo il capitolo?",
+      "answer": "Descrizione dei processi organizzativi, modello concettuale dei dati, architetture e dimensioni dei componenti tecnologici, valutazione dei costi.",
+      "detail": "Sono deliverable complementari necessari a motivare le scelte.",
+      "example": "BPMN, E-R, architettura applicativa e stima dei costi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non consegnare soltanto un’applicazione come prova di progettazione completa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11, pagina PDF 11"
+    },
+    {
+      "id": "si-c01-q126",
+      "topicId": "si-c01-t14",
+      "question": "Quali sono in ordine le sette fasi della progettazione indicate dalla docente?",
+      "answer": "1) Ricostruzione dello stato; 2) valutazione di efficienza/efficacia; 3) modellazione; 4) progettazione TO-BE; 5) definizione delle componenti software; 6) progettazione tecnologica; 7) valutazione dei costi.",
+      "detail": "Le sette fasi seguono la slide 56 e formano un metodo analitico per documentare scelte e passaggi.",
+      "example": "Dall’analisi del processo attuale fino alla valutazione economica della soluzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire le fasi scegliendo la tecnologia come primo passo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.1, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q127",
+      "topicId": "si-c01-t14",
+      "question": "Che cosa accade nella fase 1, ricostruzione dello stato?",
+      "answer": "Si rilevano strutture, processi, dati e loro relazioni per ottenere il quadro AS-IS e la mappa delle responsabilità.",
+      "detail": "Serve conoscere la situazione effettiva prima di definire modifiche.",
+      "example": "Mappare come viene verbalizzato un esame prima di digitalizzarlo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non iniziare dal disegno del TO-BE senza conoscere il processo corrente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.1, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q128",
+      "topicId": "si-c01-t14",
+      "question": "Che cosa si svolge nella fase 2, valutazione dell’efficienza e dell’efficacia?",
+      "answer": "Si scelgono indicatori e si misura la qualità dei processi esistenti, producendo baseline, criticità e obiettivi misurabili.",
+      "detail": "L’analisi prepara un confronto esplicito prima/dopo.",
+      "example": "Tempo medio di verbalizzazione, errori e ore operative.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare «miglioramento» un cambiamento privo di misure iniziali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.1, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q129",
+      "topicId": "si-c01-t14",
+      "question": "Qual è la fase 3 del ciclo e quali deliverable produce?",
+      "answer": "La modellazione: rappresentare i processi tramite BPMN e i dati tramite modello E-R, producendo diagrammi e descrizioni dei flussi.",
+      "detail": "Le due rappresentazioni sono complementari, una comportamentale e l’altra strutturale.",
+      "example": "BPMN di approvazione e E-R delle offerte e simulazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che BPMN contenga per definizione tutte le relazioni persistenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.1, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q130",
+      "topicId": "si-c01-t14",
+      "question": "Quale attività caratterizza la fase 4, progettazione TO-BE?",
+      "answer": "Definire come dovranno funzionare i processi futuri e aggiornare i requisiti per ottenere la configurazione desiderata.",
+      "detail": "Il ridisegno può modificare ruoli, responsabilità, controlli e modalità informative, non soltanto le schermate.",
+      "example": "Inserire controllo tempestivo per registri incompleti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare TO-BE con «stessa procedura ma su computer».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.1, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q131",
+      "topicId": "si-c01-t14",
+      "question": "Qual è il risultato della fase 5, definizione delle nuove componenti software?",
+      "answer": "Individuare le funzionalità applicative necessarie a supportare i processi progettati.",
+      "detail": "La specifica delle funzioni deriva dai requisiti e dai flussi TO-BE.",
+      "example": "Gestione approvazioni, versioni e report di simulazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non anticipare tecnologia o framework come sostituti delle funzioni richieste.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.1, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q132",
+      "topicId": "si-c01-t14",
+      "question": "Qual è il contenuto della fase 6, progettazione tecnologica?",
+      "answer": "Definire architetture software, hardware e dati, con scelte e dimensionamento delle componenti.",
+      "detail": "La decisione tecnica deve essere coerente con requisiti di volume, prestazione, sicurezza e sostenibilità.",
+      "example": "Definire una soluzione web e il DBMS appropriato ai carichi previsti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere la tecnologia sulla base della novità senza dimensionamento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.1, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q133",
+      "topicId": "si-c01-t14",
+      "question": "Che cosa comprende la fase 7, valutazione dei costi?",
+      "answer": "Stimare i costi di costruzione e gestione del sistema per analizzare economicamente le alternative.",
+      "detail": "Rende possibile una decisione progettuale anche in termini di budget e costi ricorrenti.",
+      "example": "Confrontare sviluppo, hosting, manutenzione e gestione nel tempo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare soltanto il costo iniziale di implementazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.1, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q134",
+      "topicId": "si-c01-t14",
+      "question": "Le sette fasi devono essere eseguite una volta sola senza ritorni?",
+      "answer": "No. Il manuale le presenta come metodo analitico, non come una legge rigida che proibisce revisioni e ritorni alle fasi precedenti.",
+      "detail": "La scoperta di requisiti mancanti può richiedere nuove interviste, aggiornamento dei modelli e revisione delle stime.",
+      "example": "Dopo la modellazione emerge un nuovo vincolo sulle autorizzazioni: si aggiornano requisiti e TO-BE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere sequenza didattica con rigidità di progetto waterfall.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.1, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q135",
+      "topicId": "si-c01-t14",
+      "question": "Qual è la relazione fra misurazione iniziale e valutazione finale del sistema?",
+      "answer": "La baseline di efficienza/efficacia offre il riferimento per verificare se la soluzione futura soddisfa gli obiettivi.",
+      "detail": "Senza indicatori iniziali è più difficile dimostrare il miglioramento organizzativo.",
+      "example": "Confrontare tassi di errore o tempi prima e dopo una modifica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un software avviato correttamente non dimostra di per sé il raggiungimento degli obiettivi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.1, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q136",
+      "topicId": "si-c01-t14",
+      "question": "Qual è l’obiettivo finale del ciclo di progettazione del SI?",
+      "answer": "Accrescere efficienza, efficacia e valore dei servizi erogati attraverso scelte organizzative, informative e tecnologiche coerenti.",
+      "detail": "È una finalità gestionale, non limitata all’installazione di applicazioni.",
+      "example": "Servizio di registrazione più corretto, tempestivo e sostenibile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere output tecnico e successo del sistema informativo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11, pagina PDF 11"
+    },
+    {
+      "id": "si-c01-q137",
+      "topicId": "si-c01-t15",
+      "question": "Che cosa significa AS-IS nella progettazione di un sistema informativo?",
+      "answer": "La ricostruzione dello stato attuale di processi, attività, attori, regole, flussi e dati.",
+      "detail": "Permette di conoscere problemi, vincoli e punti di misura prima di progettare la soluzione.",
+      "example": "Il registro esami cartaceo con controlli e trasferimenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare AS-IS una descrizione del sistema desiderato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.2, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q138",
+      "topicId": "si-c01-t15",
+      "question": "Che cosa significa TO-BE?",
+      "answer": "La configurazione futura desiderata di processi, ruoli e strumenti, progettata per soddisfare requisiti e obiettivi.",
+      "detail": "Può cambiare il modo di lavorare, non soltanto sostituire un supporto cartaceo con una schermata.",
+      "example": "Verifica automatizzata della completezza con responsabilità e gestione delle eccezioni esplicite.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "TO-BE non significa necessariamente «digitalizzare tutto».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.2, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q139",
+      "topicId": "si-c01-t15",
+      "question": "Perché il passaggio da AS-IS a TO-BE non deve ridursi a digitalizzare un modulo?",
+      "answer": "Perché senza ripensare controlli, responsabilità, ridondanze e flussi potrebbe restare un processo inefficace o inefficiente.",
+      "detail": "Occorre comprendere cause delle criticità e introdurre requisiti verificabili che le affrontino.",
+      "example": "Sostituire un registro cartaceo con un form senza definire chi risolve le anomalie non elimina il ritardo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere informatizzazione e redesign di processo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.2, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q140",
+      "topicId": "si-c01-t15",
+      "question": "Che cosa significa tracciabilità progettuale nel manuale?",
+      "answer": "Collegare ogni requisito a processi, dati, funzionalità e test di verifica, rendendo motivate e controllabili le scelte.",
+      "detail": "Serve per controllare copertura e coerenza tra bisogno, implementazione e verifica.",
+      "example": "Un requisito di approvazione implica ruolo, stato della simulazione, funzione applicativa e relativo test.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare sufficiente una funzionalità priva di requisito e prova di correttezza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.2, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q141",
+      "topicId": "si-c01-t15",
+      "question": "Come costruiresti la catena di tracciabilità per «confrontare due scenari di EnerPrice»?",
+      "answer": "Requisito di confronto → processo di simulazione → dati di offerta/scenari/parametri → funzione di calcolo e confronto → test su risultati riproducibili.",
+      "detail": "L’esempio di tracciabilità è un chiarimento introdotto nel manuale, non una prescrizione tecnica della docente.",
+      "example": "Due scenari con parametri noti devono produrre differenze spiegabili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non iniziare dal pulsante «confronta» senza definire input e criterio del confronto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.11.2, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q142",
+      "topicId": "si-c01-t16",
+      "question": "Perché il manuale utilizza EnerPrice come secondo caso guidato?",
+      "answer": "Per applicare i concetti del capitolo a un sistema di supporto decisionale per valutare offerte commerciali energetiche.",
+      "detail": "È un esempio originale del manuale coerente con il progetto approvato, distinto dal caso universitario ufficiale delle slide.",
+      "example": "Marketing confronta nuove offerte, scenari economici e margini attesi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire l’esempio EnerPrice alla docente se il manuale lo indica come originale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.12, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q143",
+      "topicId": "si-c01-t16",
+      "question": "Qual è il bisogno informativo di partenza del caso EnerPrice?",
+      "answer": "Disporre di informazioni affidabili per valutare se una configurazione commerciale soddisfa gli obiettivi economici e quali alternative siano preferibili.",
+      "detail": "Il progetto non ha come finalità primaria l’esecuzione di una query, ma una decisione supportata da dati e regole.",
+      "example": "Scegliere quale variante di offerta approfondire.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere una simulazione calcolata con una decisione automaticamente corretta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.12, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q144",
+      "topicId": "si-c01-t16",
+      "question": "Quale processo AS-IS ipotetico descrive il manuale per EnerPrice?",
+      "answer": "Un lavoro di valutazione basato su fogli di calcolo e scambi fra marketing e controllo economico, con difficoltà nel consolidare condizioni, costi e ricavi.",
+      "detail": "È una ricostruzione didattica ipotetica, non una descrizione verificata di procedure aziendali reali.",
+      "example": "Versioni di fogli scambiate via messaggio e indicatori ricostruiti manualmente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare l’AS-IS illustrativo come processo industriale certificato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.12, pagina PDF 12"
+    },
+    {
+      "id": "si-c01-q145",
+      "topicId": "si-c01-t16",
+      "question": "Quale configurazione TO-BE illustra il caso EnerPrice?",
+      "answer": "Gestione esplicita delle versioni delle offerte e degli scenari, con risultati riproducibili e confrontabili.",
+      "detail": "Il valore deriva da controlli, dati coerenti, tracciabilità e informazioni utili alla decisione.",
+      "example": "Catalogo delle offerte, parametri di simulazione e confronto dei margini.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire TO-BE come mero passaggio da Excel a un database.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.12, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q146",
+      "topicId": "si-c01-t16",
+      "question": "Quali ruoli organizzativi sono richiamati nella tabella di EnerPrice?",
+      "answer": "Marketing e responsabile della valutazione economica.",
+      "detail": "Rappresentano la domanda «chi formula e valuta la proposta?» nella prospettiva organizzativa.",
+      "example": "Un analista configura l’offerta e un responsabile valuta i risultati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere ruolo organizzativo con account o tabella del DB.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.12, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q147",
+      "topicId": "si-c01-t16",
+      "question": "Quali dati principali occorrono nel dominio EnerPrice di questo capitolo?",
+      "answer": "Offerta, segmento, condizioni economiche, consumi ipotetici e costi.",
+      "detail": "Il manuale usa questi oggetti a titolo didattico, senza definire qui lo schema dati definitivo del progetto.",
+      "example": "Dati di due offerte per effettuare confronti fra scenari.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare cardinalità e identificatori non specificati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.12, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q148",
+      "topicId": "si-c01-t16",
+      "question": "Quale informazione significativa produce EnerPrice e quale decisione abilita?",
+      "answer": "Informazioni: margine previsto e differenza tra scenari; decisione: scegliere la variante commerciale da approfondire.",
+      "detail": "I dati diventano informazione tramite un modello coerente e informazione diventa base per il giudizio umano.",
+      "example": "Due simulazioni mostrano margini differenti: il decisore valuta quale variante proseguire.",
+      "formulas": [],
+      "connections": [
+        "§1.2: dati, informazioni, conoscenza"
+      ],
+      "mistakes": "Il valore calcolato non coincide con la scelta gestionale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.12, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q149",
+      "topicId": "si-c01-t16",
+      "question": "Quali tecnologie sono citate come esempio proporzionato per EnerPrice?",
+      "answer": "Un’applicazione PHP MVC con database relazionale.",
+      "detail": "È una possibile scelta nell’esempio del manuale, non un vincolo architetturale imposto dalla docente o un requisito di ogni DSS.",
+      "example": "Backend MVC e archivio relazionale per condizioni e scenari.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che tutti i DSS debbano usare PHP o un determinato framework.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.12, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q150",
+      "topicId": "si-c01-t16",
+      "question": "Quale lezione generale emerge dal caso EnerPrice sulla progettazione?",
+      "answer": "Occorre prima comprendere requisiti, processi, informazioni, responsabilità e significato degli indicatori; solo dopo scegliere dati implementativi e tecnologie.",
+      "detail": "Una query SQL corretta non elimina differenze semantiche fra reparti né risolve ruoli e regole di approvazione.",
+      "example": "Due uffici definiscono «margine» in modi diversi: serve chiarimento funzionale prima del codice.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la correttezza informatica equivalente a quella gestionale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.12, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q151",
+      "topicId": "si-c01-t17",
+      "question": "Qual è la distinzione essenziale fra dato e informazione da esporre all’esame?",
+      "answer": "Dato: valore osservato o registrato; informazione: significato ottenuto interpretando il valore in un contesto.",
+      "detail": "L’unità di misura e il periodo determinano l’utilità della rappresentazione.",
+      "example": "«3000» rispetto a «3.000 kWh di consumo annuo».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare registro e informazione pronta per decidere.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.13, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q152",
+      "topicId": "si-c01-t17",
+      "question": "Come distinguere informazione e conoscenza in una frase?",
+      "answer": "Informazione è contenuto interpretabile; conoscenza è capacità dell’agente di interpretarlo e utilizzarlo per agire o decidere.",
+      "detail": "La prima può essere comunicata da un report; la seconda dipende dall’agente e dal contesto decisionale.",
+      "example": "Leggere un report vs saper scegliere una strategia coerente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che visualizzare un KPI garantisca capacità decisionale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.13, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q153",
+      "topicId": "si-c01-t17",
+      "question": "Qual è il confronto fondamentale fra sistema informativo e sistema informatico?",
+      "answer": "Il primo comprende flussi, persone, processi e informazioni dell’organizzazione; il secondo ne sostiene tecnicamente una parte tramite ICT.",
+      "detail": "La componente digitale può cambiare senza cambiare necessariamente tutti i processi.",
+      "example": "Verbalizzazione: persone e regole vs portale e DBMS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare «sistema informativo» soltanto un’app web.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.13, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q154",
+      "topicId": "si-c01-t17",
+      "question": "Qual è la distinzione sintetica fra organigramma e BPMN?",
+      "answer": "Organigramma: strutture e responsabilità; BPMN: ordine delle attività, eventi e diramazioni decisionali.",
+      "detail": "Sono due viste complementari, non strumenti alternativi per lo stesso obiettivo.",
+      "example": "Chi deve controllare il registro vs come il controllo viene eseguito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un organigramma non è una mappa dei processi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.13, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q155",
+      "topicId": "si-c01-t17",
+      "question": "Come differiscono BPMN ed E-R?",
+      "answer": "BPMN descrive comportamento, attori e flussi del processo; E-R descrive struttura concettuale dei dati e relazioni da conservare.",
+      "detail": "Una progettazione di SI richiede entrambi quando devono essere chiariti workflow e persistenza.",
+      "example": "Approvare un’offerta (BPMN) e collegare offerta, scenario e valutazione (E-R).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare le relazioni E-R come frecce di esecuzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.13, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q156",
+      "topicId": "si-c01-t17",
+      "question": "Qual è il contrasto più immediato fra TPS e DSS?",
+      "answer": "TPS registra operazioni/eventi quotidiani; DSS confronta alternative e ipotesi per supportare decisioni.",
+      "detail": "Nella stessa piattaforma le funzioni possono coesistere.",
+      "example": "Registrare condizioni di offerta vs simulare cambiamenti di prezzo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare ogni processo di calcolo come transazione DSS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.13, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q157",
+      "topicId": "si-c01-t17",
+      "question": "Quali sono le due dimensioni complementari con cui valutare un processo?",
+      "answer": "Efficienza: quantità di risorse impiegate; efficacia: raggiungimento dell’obiettivo e qualità del servizio per l’utente.",
+      "detail": "Va previsto un insieme di KPI che non premi solo la riduzione dei costi.",
+      "example": "Ore per pratica e percentuale di pratiche corrette.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un KPI economico da solo non descrive necessariamente il risultato del servizio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.13, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q158",
+      "topicId": "si-c01-t17",
+      "question": "Come confrontare rapidamente AS-IS e TO-BE?",
+      "answer": "AS-IS ricostruisce la situazione attuale; TO-BE specifica il processo e il sistema desiderati in futuro.",
+      "detail": "Il divario tra i due orienta requisiti, redesign e valutazione dei costi.",
+      "example": "Registro cartaceo attuale e flusso digitalizzato con verifiche progettato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere due tecnologie diverse ignorando i processi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.13, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q159",
+      "topicId": "si-c01-t17",
+      "question": "Come distinguere technology-driven da service-oriented nella prova?",
+      "answer": "Technology-driven parte dalla scelta della tecnologia; service-oriented parte dal bisogno e dal servizio, quindi definisce processi/dati e solo in seguito tecnologie.",
+      "detail": "Non coincide con il confronto monolite/microservizi o con SOA.",
+      "example": "«Scelgo il framework» vs «definisco la decisione da supportare».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere approccio service-oriented con architettura a servizi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.13, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q160",
+      "topicId": "si-c01-t18",
+      "question": "Esercizio 1: come classifichi registrazione di ordini, report mensile, simulatore di prezzi e cruscotto della direzione?",
+      "answer": "Rispettivamente TPS, MIS, DSS, ESS/EIS.",
+      "detail": "Il criterio è la funzione prevalente: registrazione, riepilogo gestionale, confronto di ipotesi e visione strategica.",
+      "example": "Una piattaforma potrebbe contenere tutte e quattro le funzioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare una funzione in base al solo nome del programma.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.14, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q161",
+      "topicId": "si-c01-t18",
+      "question": "Esercizio 2: che cosa appartiene al sistema informativo di un reclamo oltre al software?",
+      "answer": "Regole di trattamento, ruoli, responsabilità, flusso di assegnazione, modalità di chiusura e dati da raccogliere.",
+      "detail": "Il software che registra il reclamo è componente informatica; digitalizzarlo non significa automaticamente ridisegnarne la gestione.",
+      "example": "Operatori che assegnano e risolvono un reclamo secondo procedura.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre il processo all’interfaccia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.14, pagina PDF 13"
+    },
+    {
+      "id": "si-c01-q162",
+      "topicId": "si-c01-t18",
+      "question": "Esercizio 3: individua evento iniziale, tre attività, scelta e output del processo esami.",
+      "answer": "Evento: esame superato da verbalizzare. Attività: compilazione, verifica completezza, controllo centrale. Scelta: registro valido/completo? Output: carriera aggiornata.",
+      "detail": "Se la verifica fallisce si richiede correzione; dati essenziali comprendono studente, corso, voto, piano di studi e tasse.",
+      "example": "Trasferimento docente → segreterie → sistema carriere.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere il ramo di correzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.14, pagina PDF 14"
+    },
+    {
+      "id": "si-c01-q163",
+      "topicId": "si-c01-t18",
+      "question": "Esercizio 4: come si calcolano i miglioramenti per 120→90 ore e 8→3 giorni?",
+      "answer": "Riduzione delle ore = (120−90)/120 = 25%; riduzione del tempo di attesa = (8−3)/8 = 62,5%.",
+      "detail": "Il primo è un indicatore di efficienza; il secondo riguarda la tempestività e quindi l’efficacia, assumendo qualità invariata.",
+      "example": "Il lavoro diminuisce di 30 ore; l’attesa diminuisce di 5 giorni.",
+      "formulas": [
+        {
+          "latex": "\\frac{120-90}{120}\\times100=25\\%",
+          "meaning": "Riduzione percentuale delle ore di lavoro."
+        },
+        {
+          "latex": "\\frac{8-3}{8}\\times100=62{,}5\\%",
+          "meaning": "Riduzione percentuale del tempo di attesa."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non dividere per 90 o per 3: si usa il livello iniziale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.14, pagina PDF 14"
+    },
+    {
+      "id": "si-c01-q164",
+      "topicId": "si-c01-t18",
+      "question": "Esercizio 5: un team sceglie database e linguaggio prima di parlare con gli utenti. Che problema rilevi?",
+      "answer": "Sta seguendo una strategia technology-driven, rischiando di imporre tecnologie a esigenze non ancora chiarite.",
+      "detail": "Per riprogettare: bisogni, AS-IS, obiettivi, misure, TO-BE, dati/funzioni e infine tecnologia proporzionata.",
+      "example": "Prima chiedere agli utenti come devono essere approvate le offerte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare come soluzione un diverso framework scelto altrettanto prematuramente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.14, pagina PDF 14"
+    },
+    {
+      "id": "si-c01-q165",
+      "topicId": "si-c01-t18",
+      "question": "Esercizio 6: in EnerPrice una simulazione deve essere approvata. Quali elementi riguardano l’organizzazione?",
+      "answer": "Esistenza e responsabilità del ruolo autorizzato ad approvare.",
+      "detail": "Il modello organizzativo stabilisce chi può decidere e rispondere dell’approvazione.",
+      "example": "Analista e responsabile della validazione economica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un nome di tabella non definisce una responsabilità aziendale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.14, pagina PDF 14"
+    },
+    {
+      "id": "si-c01-q166",
+      "topicId": "si-c01-t18",
+      "question": "Esercizio 6: quali sono gli aspetti di processo di un requisito di approvazione?",
+      "answer": "La sequenza configurazione → simulazione → controllo → approvazione oppure ritorno per correzione.",
+      "detail": "Il BPMN esprime attività, soggetti e rami condizionali.",
+      "example": "Un esito negativo riporta la simulazione all’analista.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la sequenza delle attività con lo schema persistente dei dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.14, pagina PDF 14"
+    },
+    {
+      "id": "si-c01-q167",
+      "topicId": "si-c01-t18",
+      "question": "Esercizio 6: quali sono gli aspetti relativi ai dati di un requisito di approvazione?",
+      "answer": "Occorre rappresentare offerta, scenario, parametri, risultato, stato, autore e informazioni dell’approvazione secondo i requisiti.",
+      "detail": "L’E-R descrive concetti e relazioni; il flusso temporale delle attività deve essere modellato separatamente.",
+      "example": "Memorizzare la simulazione e l’eventuale decisione associata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pretendere che lo schema E-R sostituisca la descrizione del processo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.14, pagina PDF 14"
+    },
+    {
+      "id": "si-c01-q168",
+      "topicId": "si-c01-t19",
+      "question": "Qual è la differenza fra una verifica di apprendimento e una traccia d’esame ufficiale?",
+      "answer": "Le domande del §1.15 sono originali del manuale per esercitarsi, non riproducono la prova Moodle del docente.",
+      "detail": "Servono come richiamo attivo e autovalutazione dopo lo studio della teoria.",
+      "example": "Provare a rispondere senza consultare le sezioni precedenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare l’elenco una garanzia delle domande d’esame.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.15, pagina PDF 14"
+    },
+    {
+      "id": "si-c01-q169",
+      "topicId": "si-c01-t19",
+      "question": "Domanda di autoverifica: perché «3.000» senza contesto non è informazione sufficiente?",
+      "answer": "Perché non sappiamo che cosa sia stato misurato, l’unità di misura, il soggetto e il tempo di riferimento.",
+      "detail": "Il dato grezzo richiede interpretazione per acquistare significato decisionale.",
+      "example": "3.000 euro di spesa e 3.000 kWh di consumo sono fenomeni differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire un significato al dato senza base nel contesto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.15, pagina PDF 14"
+    },
+    {
+      "id": "si-c01-q170",
+      "topicId": "si-c01-t19",
+      "question": "Domanda di autoverifica: che cosa distingue TPS, MIS, DSS ed ESS in una progressione sintetica?",
+      "answer": "TPS registra le operazioni; MIS sintetizza il controllo; DSS valuta alternative; ESS/EIS offre visione strategica aggregata.",
+      "detail": "È una distinzione per scopo informativo e destinatario, non per necessaria separazione tecnologica.",
+      "example": "Eventi → report → scenari → dashboard di direzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare la progressione come pipeline tecnologica obbligatoria.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.15, pagina PDF 15"
+    },
+    {
+      "id": "si-c01-q171",
+      "topicId": "si-c01-t19",
+      "question": "Domanda di autoverifica: quali cinque categorie di risorse riconosci in una impresa?",
+      "answer": "Economiche, umane, informative, tecnologiche e fisiche.",
+      "detail": "È necessario saper aggiungere un esempio pertinente a ciascuna categoria.",
+      "example": "Budget, addetti, catalogo dati, software, stabilimento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non citare solo hardware e software.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.15, pagina PDF 15"
+    },
+    {
+      "id": "si-c01-q172",
+      "topicId": "si-c01-t19",
+      "question": "Domanda di autoverifica: in BPMN quale elemento rappresenta una scelta condizionata?",
+      "answer": "Il gateway, per esempio esclusivo, che dirige il processo lungo uno dei rami secondo una condizione.",
+      "detail": "Un task può eseguire il controllo, mentre il gateway modella l’esito e la diramazione.",
+      "example": "Registro completo? Sì/No.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare gateway la semplice attività di verifica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.15, pagina PDF 15"
+    },
+    {
+      "id": "si-c01-q173",
+      "topicId": "si-c01-t19",
+      "question": "Domanda di autoverifica: che cosa rappresentano tassonomia, BPMN ed E-R?",
+      "answer": "Rispettivamente classificazione dei concetti, comportamento del processo e struttura concettuale dei dati.",
+      "detail": "È fondamentale associare ogni modello alla domanda a cui risponde.",
+      "example": "Categorie di dati, flow di approvazione, associazioni tra entità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare i tre strumenti come equivalenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.15, pagina PDF 15"
+    },
+    {
+      "id": "si-c01-q174",
+      "topicId": "si-c01-t19",
+      "question": "Domanda di autoverifica: quali output della progettazione derivano dai requisiti utente?",
+      "answer": "Processi, dati/modello concettuale, architetture, dimensionamento dei componenti e costi.",
+      "detail": "La progettazione del SI lega bisogni, soluzioni organizzative e tecnologia in un percorso verificabile.",
+      "example": "BPMN, E-R, architettura web, analisi economica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non elencare soltanto il codice sviluppato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.15, pagina PDF 15"
+    },
+    {
+      "id": "si-c01-q175",
+      "topicId": "si-c01-t19",
+      "question": "Domanda di autoverifica: sai ripetere le sette fasi con una parola chiave ciascuna?",
+      "answer": "AS-IS; misurazione; modellazione; TO-BE; componenti/funzioni software; tecnologia e architettura; costi.",
+      "detail": "Il richiamo dei termini deve poter essere ampliato con attività e deliverable di ogni fase.",
+      "example": "Per la fase 2 indicare una baseline; per la fase 6 architetture e dimensionamento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire la metodologia della docente con un elenco generico di fasi SDLC.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.15, pagina PDF 15"
+    },
+    {
+      "id": "si-c01-q176",
+      "topicId": "si-c01-t19",
+      "question": "Consolidamento: proponi due KPI di efficienza e uno di efficacia per un ufficio preventivi.",
+      "answer": "Efficienza: ore lavorate per preventivo e costo per preventivo; efficacia: percentuale di preventivi accurati e consegnati entro il tempo promesso.",
+      "detail": "È una risposta applicativa orientativa ricavata dalle definizioni del capitolo; il §1.16 propone la domanda senza soluzione ufficiale.",
+      "example": "Monitorare tempo operativo e tasso di qualità del risultato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non valutare il successo soltanto dal numero di pratiche smaltite.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.16, pagina PDF 16"
+    },
+    {
+      "id": "si-c01-q177",
+      "topicId": "si-c01-t19",
+      "question": "Consolidamento: in quali due momenti del processo universitario potrebbero nascere dati di scarsa qualità?",
+      "answer": "Nella compilazione iniziale del registro (dati mancanti o voto errato) e durante trasferimento, verifica o aggiornamento (incoerenze, ritardi, errori di trascrizione).",
+      "detail": "Applicazione ragionata del caso guida, non soluzione univoca attribuita alla docente.",
+      "example": "Voto omesso prima della consegna; carriera aggiornata con insegnamento non coerente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire il problema soltanto al database finale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.16, pagina PDF 16"
+    },
+    {
+      "id": "si-c01-q178",
+      "topicId": "si-c01-t19",
+      "question": "Consolidamento: se un nuovo sistema riduce i costi ma peggiora la correttezza del servizio, che conclusione trai?",
+      "answer": "È un miglioramento possibile dell’efficienza, ma non necessariamente dell’efficacia; bisogna verificare entrambi i risultati rispetto agli obiettivi.",
+      "detail": "Una valutazione manageriale deve integrare produttività, accuratezza, tempi e soddisfazione delle esigenze.",
+      "example": "Meno ore per registrare esami ma più correzioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare positivo il progetto solo perché è costato meno.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.16, pagina PDF 16"
+    },
+    {
+      "id": "si-c01-q179",
+      "topicId": "si-c01-t19",
+      "question": "Consolidamento: come costruire una tassonomia per l’assistenza tecnica distinguendo processi primari e di supporto?",
+      "answer": "Possibile proposta: primari = ricezione interventi, diagnosi, riparazione, consegna; supporto = personale, acquisti interni, amministrazione, manutenzione degli strumenti.",
+      "detail": "La classificazione dipende dal servizio offerto e deve essere motivata; è una soluzione applicativa non un elenco ufficiale.",
+      "example": "Assistenza tecnica per clienti come attività di valore primario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre la stessa classificazione a qualunque organizzazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.16, pagina PDF 16"
+    },
+    {
+      "id": "si-c01-q180",
+      "topicId": "si-c01-t19",
+      "question": "Consolidamento: quali sono tre benefici potenziali della digitalizzazione di un registro cartaceo?",
+      "answer": "Maggiore tempestività nella circolazione del dato, controlli di completezza automatizzabili e tracciabilità/accessibilità delle informazioni.",
+      "detail": "Sono benefici possibili subordinati a un progetto coerente con i processi; il manuale propone di discuterli criticamente.",
+      "example": "Il sistema segnala campi obbligatori mancanti prima dell’invio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non promettere che la sola tecnologia elimini tutti gli errori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.16, pagina PDF 16"
+    },
+    {
+      "id": "si-c01-q181",
+      "topicId": "si-c01-t19",
+      "question": "Consolidamento: quali tre limiti/rischi della digitalizzazione devono essere valutati?",
+      "answer": "Rischio di copiare un processo inefficace, necessità di formazione/gestione del cambiamento e rischi tecnologici relativi a dati, disponibilità e costi.",
+      "detail": "È una sintesi argomentata dai temi del capitolo, non una soluzione prestabilita al quesito aperto.",
+      "example": "Un portale nuovo con ruoli non chiari genera comunque ritardi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il TO-BE uguale all’installazione del programma.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.16, pagina PDF 16"
+    },
+    {
+      "id": "si-c01-q182",
+      "topicId": "si-c01-t19",
+      "question": "Consolidamento: perché non è corretto iniziare un progetto esclusivamente dal framework?",
+      "answer": "Perché la scelta tecnica non chiarisce bisogni, obiettivi, ruoli, processi, dati e criteri con cui misurare il servizio.",
+      "detail": "L’approccio service-oriented parte dal problema da risolvere e può scegliere tecnologie più adatte dopo l’analisi.",
+      "example": "In EnerPrice prima definire KPI e scenari, poi l’applicazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare modernità dello stack e valore organizzativo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.16, pagina PDF 16"
+    },
+    {
+      "id": "si-c01-q183",
+      "topicId": "si-c01-t19",
+      "question": "Consolidamento: collega un requisito EnerPrice a fase, dato e test di verifica.",
+      "answer": "Requisito: confrontare due simulazioni. Fase: modellazione requisiti/processi e definizione componenti. Dati: offerta, scenario, parametri e risultato. Test: stessi input generano risultati coerenti e confronto interpretabile.",
+      "detail": "Risposta applicativa orientativa; nel caso reale i criteri e i valori di riferimento devono essere specificati e validati.",
+      "example": "Confronto fra scenario A e B con diverse condizioni economiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che la sola presenza della funzione «confronta» soddisfi il requisito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 1, §1.16, pagina PDF 16"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Dati personali, trattamento e ruoli",
+      "concept": "Dati personali, trattamento e ruoli",
+      "topics": [
+        "cyber-c11-t01",
+        "cyber-c11-t02",
+        "cyber-c11-t03",
+        "cyber-c11-t04"
+      ],
+      "pages": [
+        192,
+        193,
+        194,
+        195
+      ],
+      "blocks": [
+        {
+          "text": "Inquadra la possibilità di identificare una persona e il ruolo dei soggetti coinvolti nel trattamento. Pseudonimizzazione, anonimizzazione e cifratura hanno finalità e garanzie differenti. Considera insieme contesto, finalità e rischio di reidentificazione."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Principi, finalità e ciclo di vita",
+      "concept": "Principi, finalità e ciclo di vita",
+      "topics": [
+        "cyber-c11-t05",
+        "cyber-c11-t06",
+        "cyber-c11-t07",
+        "cyber-c11-t08"
+      ],
+      "pages": [
+        195,
+        197,
+        198
+      ],
+      "blocks": [
+        {
+          "text": "Collega ciascun trattamento a finalità documentate, a una base giuridica e all’informativa. Minimizzazione, esattezza e conservazione limitata orientano raccolta, uso e cancellazione. L’accountability richiede evidenze delle decisioni."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Protezione dei dati nella progettazione",
+      "concept": "Protezione dei dati nella progettazione",
+      "topics": [
+        "cyber-c11-t09",
+        "cyber-c11-t10",
+        "cyber-c11-t11",
+        "cyber-c11-t12"
+      ],
+      "pages": [
+        199,
+        200,
+        201
+      ],
+      "blocks": [
+        {
+          "text": "Le misure di progettazione e le impostazioni predefinite vanno valutate in relazione al rischio. Registro, valutazione d’impatto quando pertinente, gestione dei diritti e responsabilità organizzative rendono verificabili le scelte."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Violazioni dei dati e gestione dei fornitori",
+      "concept": "Violazioni dei dati e gestione dei fornitori",
+      "topics": [
+        "cyber-c11-t13",
+        "cyber-c11-t14",
+        "cyber-c11-t16"
+      ],
+      "pages": [
+        202,
+        203,
+        204
+      ],
+      "blocks": [
+        {
+          "text": "La risposta a una violazione include accertamento, documentazione, valutazione del rischio e verifica degli obblighi applicabili. La gestione del fornitore richiede identificare responsabilità e garanzie lungo tutto il ciclo di vita."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "1",
+      "to": "2",
+      "relation": "I ruoli e le finalità guidano le decisioni sul trattamento."
+    },
+    {
+      "from": "2",
+      "to": "3",
+      "relation": "I principi si traducono in misure e impostazioni verificabili."
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "relation": "La risposta alle violazioni si appoggia su responsabilità ed evidenze già definite."
+    }
+  ]
+}

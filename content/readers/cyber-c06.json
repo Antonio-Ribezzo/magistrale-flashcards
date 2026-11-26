@@ -1,0 +1,106 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Perimetro, sensori e telemetria",
+      "concept": "Perimetro, sensori e telemetria",
+      "topics": [
+        "cyber-c06-t01",
+        "cyber-c06-t03",
+        "cyber-c06-t04",
+        "cyber-c06-t05",
+        "cyber-c06-t06"
+      ],
+      "pages": [
+        85,
+        87,
+        88,
+        89
+      ],
+      "blocks": [
+        {
+          "text": "La fiducia dipende da identità, contesto e policy, non solo dalla collocazione in rete. I sensori di host e di rete osservano fonti diverse. Una buona architettura combina punti di osservazione, log utili, sincronizzazione temporale e copertura documentata."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Allarmi, correlazione e triage",
+      "concept": "Allarmi, correlazione e triage",
+      "topics": [
+        "cyber-c06-t07",
+        "cyber-c06-t08",
+        "cyber-c06-t10"
+      ],
+      "pages": [
+        90,
+        91,
+        93
+      ],
+      "blocks": [
+        {
+          "text": "Le firme individuano pattern noti; i metodi basati su anomalie evidenziano deviazioni dal comportamento atteso. Precision e recall misurano errori diversi. Il triage valuta contesto, severità e affidabilità, e conserva evidenze proporzionate all’incidente."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Filtraggio, segmentazione e DMZ",
+      "concept": "Filtraggio, segmentazione e DMZ",
+      "topics": [
+        "cyber-c06-t12",
+        "cyber-c06-t13",
+        "cyber-c06-t14",
+        "cyber-c06-t15"
+      ],
+      "pages": [
+        95,
+        96,
+        97,
+        98
+      ],
+      "blocks": [
+        {
+          "text": "Firewall e policy consentono flussi dichiarati. La segmentazione separa risorse con requisiti differenti; la DMZ gestisce servizi esposti riducendo accessi diretti alle zone interne. Il controllo richiede anche verifica delle regole e monitoraggio."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Prevenzione e impatto operativo",
+      "concept": "Prevenzione e impatto operativo",
+      "topics": [
+        "cyber-c06-t16",
+        "cyber-c06-t17",
+        "cyber-c06-t18"
+      ],
+      "pages": [
+        99,
+        101,
+        103
+      ],
+      "blocks": [
+        {
+          "text": "Un IDS segnala, mentre un IPS può intervenire sul flusso. Il blocco automatico introduce costi e rischi di falsi positivi, quindi servono metriche, responsabilità chiare e verifiche sul servizio."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "1",
+      "to": "2",
+      "relation": "La qualità dell’analisi dipende dalle fonti e dalla visibilità dei sensori."
+    },
+    {
+      "from": "3",
+      "to": "1",
+      "relation": "La segmentazione modifica i punti in cui osservare e controllare i flussi."
+    },
+    {
+      "from": "2",
+      "to": "4",
+      "relation": "La confidenza nell’allarme orienta le azioni automatiche o manuali."
+    }
+  ]
+}

@@ -1,0 +1,2504 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cyber",
+  "source": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7: La Gestione del Rischio Cyber, pagine PDF 108–125; unica fonte autorizzata.",
+  "chapter": {
+    "id": "cyber-c07",
+    "title": "La Gestione del Rischio Cyber",
+    "order": 7,
+    "topics": [
+      {
+        "id": "cyber-c07-t01",
+        "title": "Rischio cyber: definizione, governo e continuità aziendale"
+      },
+      {
+        "id": "cyber-c07-t02",
+        "title": "Quattro approcci: baseline, informale, formale, combinato"
+      },
+      {
+        "id": "cyber-c07-t03",
+        "title": "Risk assessment: preparazione, scenari, valutazione e riesame"
+      },
+      {
+        "id": "cyber-c07-t04",
+        "title": "Contesto, asset, CIA, appetite, tolerance, RTO e RPO"
+      },
+      {
+        "id": "cyber-c07-t05",
+        "title": "Minacce, eventi, vulnerabilità, esposizione e scenari"
+      },
+      {
+        "id": "cyber-c07-t06",
+        "title": "Likelihood: cinque classi, condizioni e incertezza"
+      },
+      {
+        "id": "cyber-c07-t07",
+        "title": "Impatto: sei classi e conseguenze multidimensionali"
+      },
+      {
+        "id": "cyber-c07-t08",
+        "title": "Matrice qualitativa E/H/M/L: interpretazione e limiti"
+      },
+      {
+        "id": "cyber-c07-t09",
+        "title": "Perdita attesa, SLE, ARO, ALE e limiti quantitativi"
+      },
+      {
+        "id": "cyber-c07-t10",
+        "title": "Analisi qualitativa, semiquantitativa e quantitativa"
+      },
+      {
+        "id": "cyber-c07-t11",
+        "title": "Trattamento, prevenzione, resilienza e rischio residuo"
+      },
+      {
+        "id": "cyber-c07-t12",
+        "title": "Analisi economica: benefici, costi e sensibilità"
+      },
+      {
+        "id": "cyber-c07-t13",
+        "title": "Governance, risk owner, registro e terze parti"
+      },
+      {
+        "id": "cyber-c07-t14",
+        "title": "Caso integrato: portale enterprise offerte e pricing"
+      },
+      {
+        "id": "cyber-c07-t15",
+        "title": "Esercizi svolti e ragionamento numerico"
+      },
+      {
+        "id": "cyber-c07-t16",
+        "title": "Errori da evitare, glossario e interrogazione orale"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§7.1 — pagina PDF 108",
+        "cardIds": [
+          "cyber-c07-q001",
+          "cyber-c07-q002",
+          "cyber-c07-q003",
+          "cyber-c07-q004"
+        ]
+      },
+      {
+        "label": "§7.1.1 — pagina PDF 109",
+        "cardIds": [
+          "cyber-c07-q005"
+        ]
+      },
+      {
+        "label": "§7.1.2 — pagina PDF 109",
+        "cardIds": [
+          "cyber-c07-q006"
+        ]
+      },
+      {
+        "label": "§7.2 — pagina PDF 109",
+        "cardIds": [
+          "cyber-c07-q007"
+        ]
+      },
+      {
+        "label": "§7.2.1 — pagina PDF 109",
+        "cardIds": [
+          "cyber-c07-q008",
+          "cyber-c07-q009"
+        ]
+      },
+      {
+        "label": "§7.2.2 — pagina PDF 109",
+        "cardIds": [
+          "cyber-c07-q010"
+        ]
+      },
+      {
+        "label": "§7.2.2 — pagina PDF 110",
+        "cardIds": [
+          "cyber-c07-q011"
+        ]
+      },
+      {
+        "label": "§7.2.3 — pagina PDF 110",
+        "cardIds": [
+          "cyber-c07-q012",
+          "cyber-c07-q013"
+        ]
+      },
+      {
+        "label": "§7.2.4 — pagina PDF 110",
+        "cardIds": [
+          "cyber-c07-q014",
+          "cyber-c07-q015"
+        ]
+      },
+      {
+        "label": "§7.3 — pagina PDF 110",
+        "cardIds": [
+          "cyber-c07-q016",
+          "cyber-c07-q017"
+        ]
+      },
+      {
+        "label": "§7.3.1 — pagina PDF 111",
+        "cardIds": [
+          "cyber-c07-q018"
+        ]
+      },
+      {
+        "label": "§7.3.2 — pagina PDF 111",
+        "cardIds": [
+          "cyber-c07-q019"
+        ]
+      },
+      {
+        "label": "§7.3.3 — pagina PDF 111",
+        "cardIds": [
+          "cyber-c07-q020"
+        ]
+      },
+      {
+        "label": "§7.3.4 — pagina PDF 111",
+        "cardIds": [
+          "cyber-c07-q021"
+        ]
+      },
+      {
+        "label": "§7.3.5 — pagina PDF 111",
+        "cardIds": [
+          "cyber-c07-q022"
+        ]
+      },
+      {
+        "label": "§7.3.6 — pagina PDF 112",
+        "cardIds": [
+          "cyber-c07-q023"
+        ]
+      },
+      {
+        "label": "§7.4 — pagina PDF 112",
+        "cardIds": [
+          "cyber-c07-q024"
+        ]
+      },
+      {
+        "label": "§7.4.1 — pagina PDF 112",
+        "cardIds": [
+          "cyber-c07-q025"
+        ]
+      },
+      {
+        "label": "§7.4.2 — pagina PDF 112",
+        "cardIds": [
+          "cyber-c07-q026",
+          "cyber-c07-q027"
+        ]
+      },
+      {
+        "label": "§7.4.3 — pagina PDF 113",
+        "cardIds": [
+          "cyber-c07-q028"
+        ]
+      },
+      {
+        "label": "§7.4.4 — pagina PDF 113",
+        "cardIds": [
+          "cyber-c07-q029",
+          "cyber-c07-q030"
+        ]
+      },
+      {
+        "label": "§7.4.5 — pagina PDF 113",
+        "cardIds": [
+          "cyber-c07-q031",
+          "cyber-c07-q032"
+        ]
+      },
+      {
+        "label": "§7.5 — pagina PDF 113",
+        "cardIds": [
+          "cyber-c07-q033"
+        ]
+      },
+      {
+        "label": "§7.5.1 — pagina PDF 113",
+        "cardIds": [
+          "cyber-c07-q034"
+        ]
+      },
+      {
+        "label": "§7.5.2 — pagina PDF 113",
+        "cardIds": [
+          "cyber-c07-q035"
+        ]
+      },
+      {
+        "label": "§7.5.3 — pagina PDF 113",
+        "cardIds": [
+          "cyber-c07-q036",
+          "cyber-c07-q037"
+        ]
+      },
+      {
+        "label": "§7.5.4 — pagina PDF 113",
+        "cardIds": [
+          "cyber-c07-q038"
+        ]
+      },
+      {
+        "label": "§7.5.4 — pagina PDF 114",
+        "cardIds": [
+          "cyber-c07-q039",
+          "cyber-c07-q040"
+        ]
+      },
+      {
+        "label": "§7.6 — pagina PDF 114",
+        "cardIds": [
+          "cyber-c07-q041",
+          "cyber-c07-q042",
+          "cyber-c07-q043"
+        ]
+      },
+      {
+        "label": "§7.6.1 — pagina PDF 114",
+        "cardIds": [
+          "cyber-c07-q044"
+        ]
+      },
+      {
+        "label": "§7.6.2 — pagina PDF 114",
+        "cardIds": [
+          "cyber-c07-q045"
+        ]
+      },
+      {
+        "label": "§7.6.3 — pagina PDF 114",
+        "cardIds": [
+          "cyber-c07-q046"
+        ]
+      },
+      {
+        "label": "§7.6.4 — pagina PDF 114",
+        "cardIds": [
+          "cyber-c07-q047"
+        ]
+      },
+      {
+        "label": "§7.7 — pagina PDF 114",
+        "cardIds": [
+          "cyber-c07-q048",
+          "cyber-c07-q049",
+          "cyber-c07-q050"
+        ]
+      },
+      {
+        "label": "§7.7.1 — pagina PDF 115",
+        "cardIds": [
+          "cyber-c07-q051"
+        ]
+      },
+      {
+        "label": "§7.7.2 — pagina PDF 115",
+        "cardIds": [
+          "cyber-c07-q052"
+        ]
+      },
+      {
+        "label": "§7.7.3 — pagina PDF 115",
+        "cardIds": [
+          "cyber-c07-q053"
+        ]
+      },
+      {
+        "label": "§7.8 — pagina PDF 115",
+        "cardIds": [
+          "cyber-c07-q054",
+          "cyber-c07-q055",
+          "cyber-c07-q148",
+          "cyber-c07-q149",
+          "cyber-c07-q150",
+          "cyber-c07-q151",
+          "cyber-c07-q152"
+        ]
+      },
+      {
+        "label": "§7.8.1 — pagina PDF 115",
+        "cardIds": [
+          "cyber-c07-q056",
+          "cyber-c07-q057"
+        ]
+      },
+      {
+        "label": "§7.8.2 — pagina PDF 115",
+        "cardIds": [
+          "cyber-c07-q058",
+          "cyber-c07-q059"
+        ]
+      },
+      {
+        "label": "§7.8.3 — pagina PDF 116",
+        "cardIds": [
+          "cyber-c07-q060",
+          "cyber-c07-q061"
+        ]
+      },
+      {
+        "label": "§7.9 — pagina PDF 116",
+        "cardIds": [
+          "cyber-c07-q062"
+        ]
+      },
+      {
+        "label": "§7.9.1 — pagina PDF 116",
+        "cardIds": [
+          "cyber-c07-q063",
+          "cyber-c07-q064"
+        ]
+      },
+      {
+        "label": "§7.9.2 — pagina PDF 116",
+        "cardIds": [
+          "cyber-c07-q065"
+        ]
+      },
+      {
+        "label": "§7.9.3 — pagina PDF 116",
+        "cardIds": [
+          "cyber-c07-q066",
+          "cyber-c07-q067",
+          "cyber-c07-q068"
+        ]
+      },
+      {
+        "label": "§7.9.4 — pagina PDF 116",
+        "cardIds": [
+          "cyber-c07-q069",
+          "cyber-c07-q070"
+        ]
+      },
+      {
+        "label": "§7.9.5 — pagina PDF 117",
+        "cardIds": [
+          "cyber-c07-q071",
+          "cyber-c07-q072"
+        ]
+      },
+      {
+        "label": "§7.10 — pagina PDF 117",
+        "cardIds": [
+          "cyber-c07-q073",
+          "cyber-c07-q074",
+          "cyber-c07-q075"
+        ]
+      },
+      {
+        "label": "§7.11 — pagina PDF 117",
+        "cardIds": [
+          "cyber-c07-q076",
+          "cyber-c07-q077"
+        ]
+      },
+      {
+        "label": "§7.11.1 — pagina PDF 118",
+        "cardIds": [
+          "cyber-c07-q078"
+        ]
+      },
+      {
+        "label": "§7.11.2 — pagina PDF 118",
+        "cardIds": [
+          "cyber-c07-q079"
+        ]
+      },
+      {
+        "label": "§7.11.3 — pagina PDF 118",
+        "cardIds": [
+          "cyber-c07-q080",
+          "cyber-c07-q081"
+        ]
+      },
+      {
+        "label": "§7.11.4 — pagina PDF 118",
+        "cardIds": [
+          "cyber-c07-q082"
+        ]
+      },
+      {
+        "label": "§7.11.5 — pagina PDF 118",
+        "cardIds": [
+          "cyber-c07-q083"
+        ]
+      },
+      {
+        "label": "§7.11.6 — pagina PDF 118",
+        "cardIds": [
+          "cyber-c07-q084",
+          "cyber-c07-q085"
+        ]
+      },
+      {
+        "label": "§7.12 — pagina PDF 119",
+        "cardIds": [
+          "cyber-c07-q086"
+        ]
+      },
+      {
+        "label": "§7.12.1 — pagina PDF 119",
+        "cardIds": [
+          "cyber-c07-q087"
+        ]
+      },
+      {
+        "label": "§7.12.2 — pagina PDF 119",
+        "cardIds": [
+          "cyber-c07-q088"
+        ]
+      },
+      {
+        "label": "§7.12.3 — pagina PDF 119",
+        "cardIds": [
+          "cyber-c07-q089",
+          "cyber-c07-q090"
+        ]
+      },
+      {
+        "label": "§7.12.4 — pagina PDF 119",
+        "cardIds": [
+          "cyber-c07-q091"
+        ]
+      },
+      {
+        "label": "§7.13 — pagina PDF 119",
+        "cardIds": [
+          "cyber-c07-q092",
+          "cyber-c07-q093"
+        ]
+      },
+      {
+        "label": "§7.13.1 — pagina PDF 120",
+        "cardIds": [
+          "cyber-c07-q094"
+        ]
+      },
+      {
+        "label": "§7.13.2 — pagina PDF 120",
+        "cardIds": [
+          "cyber-c07-q095",
+          "cyber-c07-q096"
+        ]
+      },
+      {
+        "label": "§7.13.3 — pagina PDF 120",
+        "cardIds": [
+          "cyber-c07-q097"
+        ]
+      },
+      {
+        "label": "§7.14 — pagina PDF 120",
+        "cardIds": [
+          "cyber-c07-q098"
+        ]
+      },
+      {
+        "label": "§7.14.1 — pagina PDF 120",
+        "cardIds": [
+          "cyber-c07-q099"
+        ]
+      },
+      {
+        "label": "§7.14.2 — pagina PDF 120",
+        "cardIds": [
+          "cyber-c07-q100"
+        ]
+      },
+      {
+        "label": "§7.14.3 — pagina PDF 120",
+        "cardIds": [
+          "cyber-c07-q101",
+          "cyber-c07-q102",
+          "cyber-c07-q103"
+        ]
+      },
+      {
+        "label": "§7.14.4 — pagina PDF 121",
+        "cardIds": [
+          "cyber-c07-q104",
+          "cyber-c07-q105"
+        ]
+      },
+      {
+        "label": "§7.14.5 — pagina PDF 121",
+        "cardIds": [
+          "cyber-c07-q106",
+          "cyber-c07-q107",
+          "cyber-c07-q108"
+        ]
+      },
+      {
+        "label": "§7.14.6 — pagina PDF 121",
+        "cardIds": [
+          "cyber-c07-q109"
+        ]
+      },
+      {
+        "label": "§7.15 — pagina PDF 121",
+        "cardIds": [
+          "cyber-c07-q110",
+          "cyber-c07-q111",
+          "cyber-c07-q112",
+          "cyber-c07-q113"
+        ]
+      },
+      {
+        "label": "§7.15 — pagina PDF 122",
+        "cardIds": [
+          "cyber-c07-q114",
+          "cyber-c07-q115",
+          "cyber-c07-q116"
+        ]
+      },
+      {
+        "label": "§7.16 — pagina PDF 122",
+        "cardIds": [
+          "cyber-c07-q117",
+          "cyber-c07-q118",
+          "cyber-c07-q119",
+          "cyber-c07-q120",
+          "cyber-c07-q121",
+          "cyber-c07-q122",
+          "cyber-c07-q123",
+          "cyber-c07-q124",
+          "cyber-c07-q125",
+          "cyber-c07-q126"
+        ]
+      },
+      {
+        "label": "§7.17 — pagina PDF 123",
+        "cardIds": [
+          "cyber-c07-q127",
+          "cyber-c07-q128",
+          "cyber-c07-q129",
+          "cyber-c07-q130",
+          "cyber-c07-q131",
+          "cyber-c07-q132"
+        ]
+      },
+      {
+        "label": "§7.18 — pagina PDF 123",
+        "cardIds": [
+          "cyber-c07-q133",
+          "cyber-c07-q134",
+          "cyber-c07-q135",
+          "cyber-c07-q136",
+          "cyber-c07-q137"
+        ]
+      },
+      {
+        "label": "§7.18 — pagina PDF 124",
+        "cardIds": [
+          "cyber-c07-q138",
+          "cyber-c07-q139",
+          "cyber-c07-q140",
+          "cyber-c07-q141",
+          "cyber-c07-q142",
+          "cyber-c07-q143",
+          "cyber-c07-q144",
+          "cyber-c07-q145"
+        ]
+      },
+      {
+        "label": "§7.18 — pagina PDF 125",
+        "cardIds": [
+          "cyber-c07-q146",
+          "cyber-c07-q147"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cyber-c07-q001",
+      "topicId": "cyber-c07-t01",
+      "question": "Che cosa si intende per rischio cyber e perché non è sinonimo di vulnerabilità?",
+      "answer": "È la possibilità che uno scenario avverso produca una perdita, valutata congiuntamente in base alla probabilità o plausibilità dell’evento e alla gravità delle conseguenze.",
+      "detail": "La vulnerabilità è una debolezza; la minaccia è una possibile fonte di danno; il rischio nasce quando si considera uno scenario credibile e il suo impatto sul business. Il docente introduce l’idea della perdita potenziale pesata per la probabilità; il manuale chiarisce che gli impatti non sono sempre monetari.",
+      "example": "Una configurazione DB insicura è una vulnerabilità; l’eventuale accesso abusivo e la divulgazione dei prezzi riservati sono uno scenario di rischio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere «rischio = bug» né considerare soltanto euro di danno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.1, pagina PDF 108"
+    },
+    {
+      "id": "cyber-c07-q002",
+      "topicId": "cyber-c07-t01",
+      "question": "Perché la cybersecurity non può promettere rischio zero?",
+      "answer": "Perché sistemi, persone e minacce cambiano, mentre tempo, competenze e risorse di protezione sono limitati.",
+      "detail": "Nuove vulnerabilità, errori, fornitori indisponibili e tecniche sconosciute mantengono un rischio residuo anche in presenza di controlli. La gestione punta a renderlo proporzionato e accettabile, non a eliminare ogni incertezza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’efficacia di una contromisura con l’eliminazione totale del rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.1, pagina PDF 108"
+    },
+    {
+      "id": "cyber-c07-q003",
+      "topicId": "cyber-c07-t01",
+      "question": "Quali quattro aspetti collegano una decisione cyber al management?",
+      "answer": "Che cosa proteggere; che cosa può andare storto; con quale plausibilità e impatto; quale trattamento conviene attuare.",
+      "detail": "Questa sequenza permette di passare dall’inventario degli asset al confronto fra rischi e investimenti, includendo un’autorità responsabile per le decisioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una lista di software di sicurezza non risponde a tutte le domande di gestione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.1, pagina PDF 108"
+    },
+    {
+      "id": "cyber-c07-q004",
+      "topicId": "cyber-c07-t01",
+      "question": "Qual è la differenza fra fonte di minaccia, vulnerabilità, evento e impatto nel caso di un database?",
+      "answer": "Fonte: soggetto ostile; vulnerabilità: configurazione errata; evento: accesso abusivo; impatto: esposizione dei dati e conseguenze aziendali.",
+      "detail": "Il rischio collega questi elementi *prima* dell’incidente. Dopo l’evento, l’impatto osservato può differire da quello ipotizzato. L’analisi corretta descrive la catena causale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non indicare il database stesso come minaccia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.1, pagina PDF 108"
+    },
+    {
+      "id": "cyber-c07-q005",
+      "topicId": "cyber-c07-t01",
+      "question": "Quali sono le quattro domande operative di un risk manager?",
+      "answer": "1) Quali asset e processi proteggere? 2) Quali scenari di minaccia considerare? 3) Quanto sono plausibili e gravi? 4) Quali azioni intraprendere e chi le decide?",
+      "detail": "Le risposte devono essere collegate: una misura è giustificabile solo rispetto a uno scenario su un bene o processo di valore, con impatto e priorità esplicitati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non passare direttamente dall’elenco delle minacce all’acquisto di strumenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.1.1, pagina PDF 109"
+    },
+    {
+      "id": "cyber-c07-q006",
+      "topicId": "cyber-c07-t01",
+      "question": "Perché analizzare un rischio informatico in termini di business continuity?",
+      "answer": "Perché la compromissione di IT può interrompere ricavi, processi produttivi, incassi e obblighi aziendali anche senza distruzione fisica di hardware.",
+      "detail": "L’analisi deve identificare i processi dipendenti dai sistemi e confrontare tempi di fermo, perdita di dati e capacità di ripristino. La continuità collega il linguaggio tecnico a quello gestionale.",
+      "example": "Un guasto del gestionale di fatturazione può ritardare emissione delle fatture e incassi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non misurare il valore di un sistema soltanto con il suo prezzo di acquisto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.1.2, pagina PDF 109"
+    },
+    {
+      "id": "cyber-c07-q007",
+      "topicId": "cyber-c07-t02",
+      "question": "Quali quattro approcci alla valutazione del rischio presenta il docente?",
+      "answer": "Baseline, informale, formale o dettagliato, combinato.",
+      "detail": "Sono modalità organizzative e livelli di approfondimento, non tecnologie. La scelta dipende da criticità, dati, risorse, dimensione e urgenza; nessuno è universalmente superiore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamarli quattro tipologie di firewall o quattro classi numeriche di rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.2, pagina PDF 109"
+    },
+    {
+      "id": "cyber-c07-q008",
+      "topicId": "cyber-c07-t02",
+      "question": "In che cosa consiste l’approccio baseline?",
+      "answer": "Nell’adottare un insieme uniforme di buone pratiche e controlli minimi senza valutare in dettaglio ogni singolo scenario prima di intervenire.",
+      "detail": "È rapido e utile come punto di partenza: aggiornamenti, backup, autenticazione robusta, cifratura dei dischi e inventario. Può però essere insufficiente per processi critici o sproporzionato per risorse marginali.",
+      "example": "Imporre patch e backup a tutti i PC di uno studio professionale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Baseline non significa protezione scadente o assenza di controlli seri.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.2.1, pagina PDF 109"
+    },
+    {
+      "id": "cyber-c07-q009",
+      "topicId": "cyber-c07-t02",
+      "question": "Quale limite gestionale presenta una baseline identica per tutti gli asset?",
+      "answer": "Non considera pienamente differenze di valore, esposizione e impatto fra gli asset.",
+      "detail": "Una medesima misura potrebbe essere eccessiva su una postazione poco critica e insufficiente sul servizio che gestisce scadenze o pagamenti. Occorre adattare le baseline ai rischi reali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che uniformità equivalga ad adeguatezza per ogni risorsa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.2.1, pagina PDF 109"
+    },
+    {
+      "id": "cyber-c07-q010",
+      "topicId": "cyber-c07-t02",
+      "question": "Che cos’è l’approccio informale e quando può essere utile?",
+      "answer": "Una valutazione rapida basata sul giudizio di esperti che conoscono sistemi e criticità, con formalizzazione limitata.",
+      "detail": "Permette decisioni tempestive in contesti piccoli o urgenti, anche con dati incompleti. I limiti sono dipendenza dai valutatori, possibili bias, ripetibilità ridotta e documentazione insufficiente.",
+      "example": "Un amministratore segnala subito l’accesso remoto di un server senza MFA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Informale non significa arbitrario o privo di documentazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.2.2, pagina PDF 109"
+    },
+    {
+      "id": "cyber-c07-q011",
+      "topicId": "cyber-c07-t02",
+      "question": "Come evitare che una valutazione informale diventi un’opinione non verificabile?",
+      "answer": "Registrando il perimetro, le evidenze disponibili, le assunzioni, i valutatori e la motivazione delle priorità.",
+      "detail": "Un giudizio esperto può essere corretto e tempestivo ma va documentato e verificato successivamente per evitare decisioni difficili da difendere.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la velocità di un intervento urgente con la mancanza di responsabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.2.2, pagina PDF 110"
+    },
+    {
+      "id": "cyber-c07-q012",
+      "topicId": "cyber-c07-t02",
+      "question": "Che cosa caratterizza l’approccio formale o dettagliato?",
+      "answer": "Un processo strutturato che censisce asset e scenari, stima likelihood e impatti, documenta criteri, decisioni e riesami.",
+      "detail": "È tracciabile e indicato su sistemi critici o contesti regolamentati; richiede più tempo, competenze e costi. Può usare scale qualitative se metodo, evidenze e responsabilità sono espliciti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Formale non significa necessariamente probabilità precise al decimale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.2.3, pagina PDF 110"
+    },
+    {
+      "id": "cyber-c07-q013",
+      "topicId": "cyber-c07-t02",
+      "question": "Perché un’analisi formale molto lunga può paradossalmente lasciare l’azienda più esposta?",
+      "answer": "Perché problemi evidenti possono rimanere senza correzione mentre si completa la valutazione.",
+      "detail": "Occorre distinguere tra misure urgenti già giustificate e approfondimenti successivi: è possibile applicare controlli di base in parallelo alla valutazione dettagliata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attendere mesi prima di correggere un accesso critico palesemente insicuro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.2.3, pagina PDF 110"
+    },
+    {
+      "id": "cyber-c07-q014",
+      "topicId": "cyber-c07-t02",
+      "question": "Qual è la logica dell’approccio combinato?",
+      "answer": "Applicare subito una baseline e concentrare valutazioni più formali sugli asset e processi più critici.",
+      "detail": "Permette di graduare tempi e costi in organizzazioni eterogenee: non è un miscuglio casuale, ma una priorità guidata dal rischio.",
+      "example": "MFA e backup su tutta l’azienda, risk assessment formale sul servizio di incasso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedicare la stessa intensità di analisi a terminale informativo e sistema transazionale mission-critical.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.2.4, pagina PDF 110"
+    },
+    {
+      "id": "cyber-c07-q015",
+      "topicId": "cyber-c07-t02",
+      "question": "Come giustificare all’orale la scelta fra baseline, informale, formale e combinato?",
+      "answer": "Confrontando criticità del servizio, dimensione, vincoli normativi, urgenza, disponibilità di dati e risorse, tracciabilità richiesta.",
+      "detail": "Baseline privilegia rapidità e omogeneità; informale valorizza giudizio esperto; formale offre dettaglio e auditabilità; combinato assegna risorse analitiche dove producono più valore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proclamare un metodo migliore in ogni scenario.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.2.4, pagina PDF 110"
+    },
+    {
+      "id": "cyber-c07-q016",
+      "topicId": "cyber-c07-t03",
+      "question": "Quali sono le tre macrofasi NIST del risk assessment riportate nel manuale?",
+      "answer": "Prepare for the assessment; conduct the assessment; maintain the assessment.",
+      "detail": "Il manuale le collega alla preparazione, all’identificazione/analisi di minacce, vulnerabilità, probabilità e impatti, e al monitoraggio con aggiornamenti. È un’integrazione dichiarata, coerente con lo schema del docente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere il mantenimento dopo la prima valutazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.3, pagina PDF 110"
+    },
+    {
+      "id": "cyber-c07-q017",
+      "topicId": "cyber-c07-t03",
+      "question": "Qual è la sequenza ragionata dei sei passi operativi dell’analisi del rischio?",
+      "answer": "Perimetro e obiettivo; asset e dipendenze; scenari di minaccia; likelihood e impatti; valutazione/priorità/decisione; aggiornamento.",
+      "detail": "La sequenza traduce un problema tecnico in priorità gestionali documentabili e riesaminabili; comunicazione e monitoraggio accompagnano il processo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non partire dai punteggi della matrice prima di definire l’evento da valutare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.3, pagina PDF 110"
+    },
+    {
+      "id": "cyber-c07-q018",
+      "topicId": "cyber-c07-t03",
+      "question": "Quali elementi bisogna stabilire prima di valutare un rischio?",
+      "answer": "Perimetro del sistema/processo, obiettivo, orizzonte temporale, criteri d’impatto, dipendenze, unità coinvolte e responsabile della decisione.",
+      "detail": "L’esclusione di cloud, identity provider o database può nascondere punti di guasto essenziali. Il periodo rende confrontabili le stime della likelihood.",
+      "example": "Una valutazione del portale clienti che ignora il provider di identità è incompleta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare direttamente una probabilità mensile con una annuale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.3.1, pagina PDF 111"
+    },
+    {
+      "id": "cyber-c07-q019",
+      "topicId": "cyber-c07-t03",
+      "question": "Come si collega un inventario degli asset ai processi aziendali?",
+      "answer": "Per ogni asset si rilevano funzione, proprietario, processi supportati, requisiti CIA, dipendenze e controlli esistenti.",
+      "detail": "Gli asset includono dati, credenziali, contratti, personale, software e servizi; l’inventario non deve limitarsi a dispositivi fisici. Il collegamento al business permette di stimare l’impatto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una lista di server senza processi e referenti non basta per misurare il rischio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.3.2, pagina PDF 111"
+    },
+    {
+      "id": "cyber-c07-q020",
+      "topicId": "cyber-c07-t03",
+      "question": "Che caratteristiche deve avere uno scenario di minaccia utile al risk assessment?",
+      "answer": "Deve specificare fonte, debolezza o vettore, evento dannoso, asset interessato e conseguenze.",
+      "detail": "La formulazione «hacker» è generica; uno scenario causale rende possibili stime, controlli mirati e verifica dell’efficacia.",
+      "example": "«Credenziale amministrativa rubata senza MFA → accesso al DB → esposizione dei dati economici».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare come scenario soltanto il nome di una minaccia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.3.3, pagina PDF 111"
+    },
+    {
+      "id": "cyber-c07-q021",
+      "topicId": "cyber-c07-t03",
+      "question": "Su quali evidenze stimare likelihood e impatto?",
+      "answer": "Dati storici, statistiche di settore, esposizione, capacità dell’attaccante, facilità di sfruttamento, controlli attivi, criticità e tempi di recovery.",
+      "detail": "Le fonti possono essere incomplete; è opportuno dichiarare assunzioni e incertezza invece di dare un’apparenza artificiale di precisione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un valore con molte cifre decimali non è automaticamente una stima solida.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.3.4, pagina PDF 111"
+    },
+    {
+      "id": "cyber-c07-q022",
+      "topicId": "cyber-c07-t03",
+      "question": "Come si passa dal livello di rischio a una decisione gestionale?",
+      "answer": "Si confronta la valutazione con i criteri di tollerabilità, si decide una priorità e si assegna un trattamento motivato a un responsabile.",
+      "detail": "Una stessa classe di matrice può corrispondere a danni diversi; vincoli legali, processi e persone coinvolte possono cambiare la scelta. La decisione va registrata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare il livello E/H/M/L come un ordine automatico di acquisto di strumenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.3.5, pagina PDF 111"
+    },
+    {
+      "id": "cyber-c07-q023",
+      "topicId": "cyber-c07-t03",
+      "question": "Quando deve essere aggiornata una valutazione del rischio?",
+      "answer": "Dopo nuovi incidenti o vulnerabilità, cambi di architettura ed esposizione, modifiche ai controlli, audit e riesami periodici.",
+      "detail": "Il rischio cambia con tecnologia, persone e minacce. Un giudizio precedentemente basso può diventare alto dopo la pubblicazione su Internet di un nuovo endpoint.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Risk assessment non è un documento da compilare una sola volta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.3.6, pagina PDF 112"
+    },
+    {
+      "id": "cyber-c07-q024",
+      "topicId": "cyber-c07-t04",
+      "question": "Perché il contesto organizzativo modifica il rischio associato allo stesso difetto tecnico?",
+      "answer": "Perché valore dei processi, dipendenze, esposizione, obblighi e impatti possono essere molto diversi.",
+      "detail": "Un’ora di fermo di una pagina informativa non equivale a un’ora di indisponibilità di un sistema pagamenti. La criticità è situata nell’organizzazione e non solo nel codice.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare la stessa classe d’impatto per ogni azienda a parità di CVE.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.4, pagina PDF 112"
+    },
+    {
+      "id": "cyber-c07-q025",
+      "topicId": "cyber-c07-t04",
+      "question": "Quali fattori di contesto devono entrare in un’analisi del rischio cyber?",
+      "answer": "Settore, dimensione, maturità, norme, outsourcing e cloud, numero di utenti, esposizione Internet, continuità, fornitori, valore dei dati e capacità di recupero.",
+      "detail": "La loro combinazione determina quali minacce sono plausibili e quali danni risultano tollerabili. Occorre mappare le dipendenze fra asset e processi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire il rischio di un asset senza considerare il processo a cui serve.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.4.1, pagina PDF 112"
+    },
+    {
+      "id": "cyber-c07-q026",
+      "topicId": "cyber-c07-t04",
+      "question": "Come si applica la triade CIA alla criticità di un processo?",
+      "answer": "Si valuta separatamente l’impatto della perdita di riservatezza, integrità e disponibilità per quell’asset o processo.",
+      "detail": "Il manuale distingue le classi FIPS 199 basso/moderato/alto dalla scala a sei conseguenze delle slide: non vanno sovrapposte meccanicamente.",
+      "example": "Listino pubblico: riservatezza bassa, integrità alta; database clienti: le tre proprietà possono essere alte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la riservatezza prioritaria per ogni asset per definizione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.4.2, pagina PDF 112"
+    },
+    {
+      "id": "cyber-c07-q027",
+      "topicId": "cyber-c07-t04",
+      "question": "Perché un listino pubblico può avere integrità alta e riservatezza bassa?",
+      "answer": "Perché i prezzi sono destinati a essere letti, ma una modifica abusiva può generare danni economici o contrattuali.",
+      "detail": "La classificazione deve riflettere gli usi del dato: CIA separa la possibilità di leggere dall’affidabilità delle modifiche e dalla possibilità di accesso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere dato pubblico con dato che chiunque può modificare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.4.2, pagina PDF 112"
+    },
+    {
+      "id": "cyber-c07-q028",
+      "topicId": "cyber-c07-t04",
+      "question": "Perché il valore di un asset non coincide con il suo costo di sostituzione?",
+      "answer": "Perché comprende anche ricavi e processi dipendenti, dati, costi di ripristino, obblighi, danni reputazionali e indisponibilità.",
+      "detail": "Un server economico può alimentare un processo dal valore molto elevato; il valore si può esprimere in euro, criticità o requisiti di continuità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non calcolare il rischio come prezzo d’acquisto del server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.4.3, pagina PDF 113"
+    },
+    {
+      "id": "cyber-c07-q029",
+      "topicId": "cyber-c07-t04",
+      "question": "Qual è la differenza tra risk appetite e risk tolerance?",
+      "answer": "Risk appetite esprime la propensione strategica a correre certi rischi; risk tolerance definisce limiti/scostamenti ammissibili nelle decisioni operative.",
+      "detail": "Sono concetti collegati ma distinti. La direzione deve trasformare dichiarazioni generali in criteri misurabili e in soggetti autorizzati a decidere.",
+      "example": "Appetite basso per perdita dati; tolerance operativa con limiti di fermo ed eccezioni controllate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "«Tolleranza zero» senza obiettivi e processi verificabili è insufficiente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.4.4, pagina PDF 113"
+    },
+    {
+      "id": "cyber-c07-q030",
+      "topicId": "cyber-c07-t04",
+      "question": "Perché risk appetite e risk tolerance non dovrebbero essere definiti soltanto dal team IT?",
+      "answer": "Perché riguardano obiettivi, conseguenze e responsabilità dell’organizzazione, quindi richiedono indirizzo della direzione e dei proprietari dei processi.",
+      "detail": "I tecnici forniscono evidenze e opzioni, ma la decisione di accettabilità coinvolge risorse, reputazione, vincoli legali e priorità aziendali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non delegare automaticamente al solo sistemista l’accettazione di rischi commerciali critici.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.4.4, pagina PDF 113"
+    },
+    {
+      "id": "cyber-c07-q031",
+      "topicId": "cyber-c07-t04",
+      "question": "Che cosa misurano RTO e RPO, e qual è la differenza essenziale?",
+      "answer": "RTO è il tempo obiettivo di ripristino del servizio; RPO è la massima perdita di dati tollerabile, normalmente espressa in tempo.",
+      "detail": "RTO riguarda quanto a lungo il servizio può restare indisponibile; RPO quanto indietro nel tempo possono risalire i dati recuperati. Sono obiettivi da testare, non garanzie automatiche.",
+      "example": "RTO 2 ore; RPO 15 minuti: sistema ripristinato entro 2 h, con perdita dati entro circa 15 min.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire RPO come il tempo impiegato per riavviare il server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.4.5, pagina PDF 113"
+    },
+    {
+      "id": "cyber-c07-q032",
+      "topicId": "cyber-c07-t04",
+      "question": "Un backup giornaliero è compatibile automaticamente con RPO di 15 minuti?",
+      "answer": "No: la frequenza e l’architettura dei backup devono permettere di recuperare dati sufficientemente recenti.",
+      "detail": "Un RPO di 15 minuti richiede misure e verifiche adeguate, come copie o replica molto frequenti secondo il contesto. Un backup giornaliero può perdere fino a molte ore di modifiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre il rispetto di RPO dalla sola esistenza di un backup.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.4.5, pagina PDF 113"
+    },
+    {
+      "id": "cyber-c07-q033",
+      "topicId": "cyber-c07-t05",
+      "question": "Quali origini delle minacce considera il manuale?",
+      "answer": "Naturali e artificiali, intenzionali e non intenzionali: calamità, guasti, errori, malware e atti malevoli.",
+      "detail": "Il rischio cyber non presuppone necessariamente un criminale: un guasto o un errore umano possono compromettere disponibilità e integrità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non escludere eventi accidentali dal risk assessment.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.5, pagina PDF 113"
+    },
+    {
+      "id": "cyber-c07-q034",
+      "topicId": "cyber-c07-t05",
+      "question": "Che differenza c’è tra fonte di minaccia ed evento di minaccia?",
+      "answer": "La fonte è l’attore o la circostanza che può causare danno; l’evento è ciò che concretamente accade o potrebbe accadere.",
+      "detail": "Per un furto di credenziali, la fonte può essere un attaccante esterno, l’evento la compromissione dell’account e la conseguenza l’accesso ai dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare «attaccante» come descrizione completa dell’evento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.5.1, pagina PDF 113"
+    },
+    {
+      "id": "cyber-c07-q035",
+      "topicId": "cyber-c07-t05",
+      "question": "Quali forme può assumere una vulnerabilità?",
+      "answer": "Tecnica, organizzativa, fisica o procedurale: è una debolezza sfruttabile o attivabile da una fonte di minaccia.",
+      "detail": "Un’applicazione non aggiornata, la mancata separazione delle mansioni, una sala server accessibile e una revoca account inefficace sono esempi distinti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre le vulnerabilità alle sole CVE software.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.5.2, pagina PDF 113"
+    },
+    {
+      "id": "cyber-c07-q036",
+      "topicId": "cyber-c07-t05",
+      "question": "Perché gravità tecnica di una vulnerabilità e rischio aziendale non coincidono?",
+      "answer": "Perché contano raggiungibilità, utilizzo del componente, configurazione reale, sfruttabilità, misure presenti e criticità del business.",
+      "detail": "Una porta vulnerabile esposta a Internet ha un profilo diverso da un servizio isolato. La valutazione deve descrivere condizioni predisponenti ed esposizione effettiva.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare automaticamente la priorità massima a ogni vulnerabilità tecnicamente grave.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.5.3, pagina PDF 113"
+    },
+    {
+      "id": "cyber-c07-q037",
+      "topicId": "cyber-c07-t05",
+      "question": "Che cosa si intende per condizione predisponente nel rischio cyber?",
+      "answer": "Una circostanza che rende più o meno probabile o dannoso lo sfruttamento di una debolezza.",
+      "detail": "Esempi nel manuale: servizio esposto, dipendenza da fornitore, presenza di controlli, configurazione o capacità di exploit. Le condizioni vanno incluse nello scenario e aggiornate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non stimare likelihood senza considerare l’esposizione reale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.5.3, pagina PDF 113"
+    },
+    {
+      "id": "cyber-c07-q038",
+      "topicId": "cyber-c07-t05",
+      "question": "Qual è una struttura corretta per scrivere uno scenario di rischio?",
+      "answer": "Fonte di minaccia → vulnerabilità/condizione predisponente → evento → asset compromesso → conseguenza sul business.",
+      "detail": "La forma causa-effetto è utile per individuare controllo, impatto e dati necessari alla valutazione. «Rischio hacker» non specifica niente di ciò.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere soltanto l’attore senza evento o impatto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.5.4, pagina PDF 113"
+    },
+    {
+      "id": "cyber-c07-q039",
+      "topicId": "cyber-c07-t05",
+      "question": "Come riscrivere in modo utile «rischio hacker» nel caso di un portale?",
+      "answer": "«Un attaccante ruba credenziali amministrative e, in assenza di MFA, accede al database di produzione esponendo dati dei clienti».",
+      "detail": "La formulazione individua fonte, debolezza, evento, asset e danno e permette di discutere controlli come MFA e limitazione dei privilegi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non indicare una vulnerabilità come se fosse già un incidente verificato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.5.4, pagina PDF 114"
+    },
+    {
+      "id": "cyber-c07-q040",
+      "topicId": "cyber-c07-t05",
+      "question": "Una vulnerabilità può esistere senza generare un incidente?",
+      "answer": "Sì: l’incidente richiede che si verifichino condizioni ed eventi che attivano o sfruttano la debolezza.",
+      "detail": "Il rischio va comunque valutato correlando fonti di minaccia, esposizione, plausibilità e conseguenze. Una vulnerabilità osservata non prova né assenza di rischio né compromissione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’esistenza di una debolezza con la certezza del danno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.5.4, pagina PDF 114"
+    },
+    {
+      "id": "cyber-c07-q041",
+      "topicId": "cyber-c07-t06",
+      "question": "Quali sono, nell’ordine, le cinque classi di likelihood delle slide?",
+      "answer": "Rare, Unlikely, Possible, Likely, Almost certain.",
+      "detail": "La scala ordinale 1–5 ordina dalla minore alla maggiore plausibilità. Le etichette non sono percentuali e non definiscono da sole una frequenza annua.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non tradurre automaticamente 4/5 in 80%.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.6, pagina PDF 114"
+    },
+    {
+      "id": "cyber-c07-q042",
+      "topicId": "cyber-c07-t06",
+      "question": "Che significato operativo hanno Rare, Unlikely e Possible?",
+      "answer": "Rare: evento eccezionale; Unlikely: possibile ma non atteso nelle condizioni correnti; Possible: può verificarsi, anche per fattori esterni.",
+      "detail": "Le etichette sono sintetizzate dal manuale come esempi didattici. Per attribuirle è necessario dichiarare lo scenario e il contesto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare Possible a una probabilità numerica obbligatoria.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.6, pagina PDF 114"
+    },
+    {
+      "id": "cyber-c07-q043",
+      "topicId": "cyber-c07-t06",
+      "question": "Che significato operativo hanno Likely e Almost certain?",
+      "answer": "Likely: accadimento probabile in certe circostanze; Almost certain: evento atteso nella maggior parte delle circostanze, prima o poi.",
+      "detail": "Rappresentano le due classi di maggiore plausibilità nella scala del docente; non sono certezze matematiche senza una metodologia quantitativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire «quasi certo» a qualsiasi vulnerabilità esposta senza motivazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.6, pagina PDF 114"
+    },
+    {
+      "id": "cyber-c07-q044",
+      "topicId": "cyber-c07-t06",
+      "question": "Che cosa deve specificare una stima di likelihood per essere interpretabile?",
+      "answer": "Evento preciso, asset e contesto, orizzonte temporale e controlli considerati.",
+      "detail": "«Ransomware probabile» è vago; il manuale propone di stimare l’incidente sul sistema nel periodo, date esposizione, minacce e difese. Likelihood qualitativa non coincide necessariamente con una probabilità percentuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare giudizi con periodi e scenari differenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.6.1, pagina PDF 114"
+    },
+    {
+      "id": "cyber-c07-q045",
+      "topicId": "cyber-c07-t06",
+      "question": "Quali fattori aumentano e quali riducono la likelihood?",
+      "answer": "La aumentano esposizione Internet, credenziali deboli, software obsoleto e minacce frequenti; la riducono patch, MFA, hardening, segmentazione e privilegi minimi.",
+      "detail": "Il monitoraggio e l’isolamento possono influire sulla plausibilità di conseguenze e sull’efficacia complessiva dei controlli; bisogna motivare il meccanismo specifico.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un controllo installato ma non configurato o verificato non garantisce la riduzione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.6.2, pagina PDF 114"
+    },
+    {
+      "id": "cyber-c07-q046",
+      "topicId": "cyber-c07-t06",
+      "question": "Perché non è corretto interpretare il punteggio Likely = 4 come probabilità 80%?",
+      "answer": "Perché 1–5 è una scala ordinale, non una scala probabilistica con intervalli uguali.",
+      "detail": "Senza una mappatura quantitativa dichiarata, il 4 significa soltanto categoria più alta del 3. Moltiplicare questi punteggi non produce automaticamente un rischio monetario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere etichette per ordinare con probabilità misurate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.6.3, pagina PDF 114"
+    },
+    {
+      "id": "cyber-c07-q047",
+      "topicId": "cyber-c07-t06",
+      "question": "Come si distingue il livello stimato di rischio dalla confidenza nella stima?",
+      "answer": "Il livello esprime la valutazione del rischio; la confidenza indica quanto sono solide fonti, dati e assunzioni su cui la stima si fonda.",
+      "detail": "Due rischi classificati Possible possono poggiare rispettivamente su statistiche affidabili oppure su opinioni discordanti; è utile registrare incertezza e condizioni di revisione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare una stima priva di dati come altrettanto solida di una supportata da osservazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.6.4, pagina PDF 114"
+    },
+    {
+      "id": "cyber-c07-q048",
+      "topicId": "cyber-c07-t07",
+      "question": "Quali sono le sei classi crescenti di impatto descritte nelle slide?",
+      "answer": "Insignificant, Minor, Moderate, Major, Catastrophic, Doomsday.",
+      "detail": "Sono categorie didattiche di gravità crescente e non soglie economiche universali; vanno contestualizzate per organizzazione e processo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderle con le tre categorie d’impatto di FIPS 199.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.7, pagina PDF 114"
+    },
+    {
+      "id": "cyber-c07-q049",
+      "topicId": "cyber-c07-t07",
+      "question": "Come si caratterizzano Insignificant, Minor e Moderate?",
+      "answer": "Insignificant: conseguenze limitate e facilmente risolvibili; Minor: problema gestibile internamente; Moderate: conseguenze che possono richiedere settimane e attenzione manageriale.",
+      "detail": "La definizione richiede criteri applicabili al contesto: il numero di giorni non è una soglia rigida per tutti i processi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non tradurre automaticamente Moderate in un costo fisso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.7, pagina PDF 114"
+    },
+    {
+      "id": "cyber-c07-q050",
+      "topicId": "cyber-c07-t07",
+      "question": "Come si caratterizzano Major, Catastrophic e Doomsday?",
+      "answer": "Major: problema prolungato e visibile anche all’esterno; Catastrophic: danni aziendali gravi e possibili effetti giuridici; Doomsday: effetti di lungo periodo e possibile ristrutturazione.",
+      "detail": "Si tratta di gradi di impatto della scala delle slide, utili per l’asse delle conseguenze nella matrice qualitativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il termine Doomsday come sinonimo generico di un incidente qualsiasi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.7, pagina PDF 114"
+    },
+    {
+      "id": "cyber-c07-q051",
+      "topicId": "cyber-c07-t07",
+      "question": "Quali dimensioni di impatto vanno valutate oltre al costo diretto?",
+      "answer": "Fermo operativo, recupero, dati e reputazione, perdita clienti, effetti legali/contrattuali, sicurezza fisica e danni indiretti.",
+      "detail": "Le conseguenze possono riguardare CIA e più processi; è necessario evitare il doppio conteggio quando due categorie descrivono lo stesso danno.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sommare due volte un medesimo ritardo di fatturazione come perdita diretta e indiretta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.7.1, pagina PDF 115"
+    },
+    {
+      "id": "cyber-c07-q052",
+      "topicId": "cyber-c07-t07",
+      "question": "Che differenza c’è tra impatto potenziale, osservato e worst case?",
+      "answer": "Potenziale: perdita ipotizzabile prima dell’evento; osservato: danno riscontrato dopo; worst case: peggior esito ragionevolmente considerato.",
+      "detail": "Worst case non coincide con la conseguenza più probabile: il metodo deve dichiarare quale gravità viene usata per evitare classificazioni incoerenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare lo scenario peggiore come perdita attesa media.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.7.2, pagina PDF 115"
+    },
+    {
+      "id": "cyber-c07-q053",
+      "topicId": "cyber-c07-t07",
+      "question": "Perché una modifica abusiva di dati può avere impatti aziendali molto diversi?",
+      "answer": "Dipende dal ruolo dei dati: correggere un report interno non usato può essere semplice, alterare prezzi contrattuali può causare danni e reclami.",
+      "detail": "La tipologia tecnica della vulnerabilità non basta per stimare l’impatto; va analizzato il processo che utilizza l’informazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare lo stesso livello di gravità a tutte le alterazioni di database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.7.3, pagina PDF 115"
+    },
+    {
+      "id": "cyber-c07-q054",
+      "topicId": "cyber-c07-t08",
+      "question": "Com’è strutturata la matrice del rischio presentata nel manuale?",
+      "answer": "Cinque classi di likelihood per sei classi di conseguenze; ogni incrocio dà E (Extreme), H (High), M (Medium) o L (Low).",
+      "detail": "La matrice serve per attribuire priorità e individuare il livello organizzativo coinvolto. I valori sono quelli della figura del corso, non il risultato di una moltiplicazione universale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare una matrice 5×5 o dedurre le celle dal prodotto dei numeri.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.8, pagina PDF 115"
+    },
+    {
+      "id": "cyber-c07-q055",
+      "topicId": "cyber-c07-t08",
+      "question": "Come sono ordinati gli assi della matrice E/H/M/L del corso?",
+      "answer": "Righe: da Almost certain in alto a Rare in basso; colonne: da Doomsday a sinistra a Insignificant a destra.",
+      "detail": "L’intersezione fornisce la classe; occorre leggere le etichette per non invertire gravità e probabilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dare per scontato che la scala cresca da sinistra verso destra.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.8, pagina PDF 115"
+    },
+    {
+      "id": "cyber-c07-q056",
+      "topicId": "cyber-c07-t08",
+      "question": "Quale classe assegna la matrice a Possible + Moderate?",
+      "answer": "H — High.",
+      "detail": "Si parte dalla riga Possible e si incrocia la colonna Moderate. Il risultato orienta verso l’attenzione del management, non verso un importo monetario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire H con un valore ricavato da 3×3.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.8.1, pagina PDF 115"
+    },
+    {
+      "id": "cyber-c07-q057",
+      "topicId": "cyber-c07-t08",
+      "question": "Quali classi assegna la matrice a Rare + Minor e Possible + Major?",
+      "answer": "Rare + Minor = L (Low); Possible + Major = E (Extreme).",
+      "detail": "La differenza nella gravità e nella plausibilità porta a livelli di gestione differenti; il caso Possible + Major è citato nell’esercizio del capitolo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare un solo livello basandoti esclusivamente sulla likelihood.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.8.1, pagina PDF 115"
+    },
+    {
+      "id": "cyber-c07-q058",
+      "topicId": "cyber-c07-t08",
+      "question": "Che cosa richiede operativamente un rischio Extreme (E)?",
+      "answer": "Approfondimento e pianificazione a livello direttivo.",
+      "detail": "La direzione deve affrontare lo scenario con responsabilità e priorità appropriate; il risultato non è un ordine automatico di comprare la misura più costosa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere classe estrema con perdita certa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.8.2, pagina PDF 115"
+    },
+    {
+      "id": "cyber-c07-q059",
+      "topicId": "cyber-c07-t08",
+      "question": "Come differiscono High, Medium e Low nella gestione della matrice?",
+      "answer": "H richiede attenzione del management; M procedure specifiche di monitoraggio e risposta; L procedure ordinarie.",
+      "detail": "Le indicazioni descrivono il livello di presidio organizzativo suggerito dalla slide, che va adattato alle policy e ai vincoli reali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare Low come «nessun controllo necessario».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.8.2, pagina PDF 115"
+    },
+    {
+      "id": "cyber-c07-q060",
+      "topicId": "cyber-c07-t08",
+      "question": "Quali limiti presentano le matrici qualitative del rischio?",
+      "answer": "Soggettività delle categorie, confini arbitrari, scenari diversi nella stessa cella e falsa impressione di precisione.",
+      "detail": "Devono essere documentate, applicate uniformemente e integrate con la descrizione dello scenario. Il prodotto di punteggi ordinali non produce euro di perdita attesa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la matrice una misura probabilistica o finanziaria assoluta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.8.3, pagina PDF 116"
+    },
+    {
+      "id": "cyber-c07-q061",
+      "topicId": "cyber-c07-t08",
+      "question": "Come si classificano Possible + Major e Unlikely + Minor nel caso guidato?",
+      "answer": "Possible + Major = E; Unlikely + Minor = L.",
+      "detail": "Il primo riguarda un blocco prolungato di portale mission-critical e chiede attenzione direttiva; il secondo un malfunzionamento locale non critico gestibile ordinariamente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare uguale priorità solo perché entrambi gli incidenti possono avvenire.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.8.3, pagina PDF 116"
+    },
+    {
+      "id": "cyber-c07-q062",
+      "topicId": "cyber-c07-t09",
+      "question": "Qual è la formula quantitativa elementare del rischio proposta dal docente?",
+      "answer": "Per uno scenario con perdita fissa in un periodo definito: perdita attesa = probabilità dell’evento × perdita monetaria.",
+      "detail": "È un modello didattico di valore atteso, utilizzabile soltanto con scenario, probabilità, orizzonte temporale e unità coerenti. Non cattura automaticamente tutti i danni non monetari e le code estreme.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\mathbb{E}[L]=p\\cdot L"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non prendere il valore atteso come una perdita certa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.9, pagina PDF 116"
+    },
+    {
+      "id": "cyber-c07-q063",
+      "topicId": "cyber-c07-t09",
+      "question": "Se un evento ha probabilità annua 20% e comporta una perdita di 80.000 €, qual è la perdita attesa?",
+      "answer": "16.000 € per l’anno considerato.",
+      "detail": "Si applica 0,20 × 80.000 €. Il valore è una media teorica fra esiti possibili: non significa che si pagheranno esattamente 16.000 €.",
+      "example": "Anni senza evento possono avere perdita zero; in un anno con evento la perdita ipotizzata è 80.000 €.",
+      "formulas": [
+        {
+          "latex": "0{,}20\\cdot 80\\,000\\,\\mathrm{€}=16\\,000\\,\\mathrm{€}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non moltiplicare per 20 al posto di 0,20.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.9.1, pagina PDF 116"
+    },
+    {
+      "id": "cyber-c07-q064",
+      "topicId": "cyber-c07-t09",
+      "question": "Che cosa rappresentano p e L nella formula p × L?",
+      "answer": "p è la probabilità dello scenario nel periodo scelto, fra 0 e 1; L è la perdita monetaria assunta costante nello scenario.",
+      "detail": "Le due grandezze richiedono definizione dei limiti dello scenario. Se perdite e frequenze variano molto o gli eventi sono multipli, serve un modello più articolato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un punteggio ordinale Possible = 3 come p = 3.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.9.1, pagina PDF 116"
+    },
+    {
+      "id": "cyber-c07-q065",
+      "topicId": "cyber-c07-t09",
+      "question": "Perché è obbligatorio specificare il periodo nella perdita attesa?",
+      "answer": "Perché probabilità e frequenze hanno significato soltanto rispetto a un orizzonte o a un numero di esposizioni.",
+      "detail": "20% annuo e 20% per tentativo di accesso non sono equivalenti. Se uno stesso evento può ripetersi, bisogna trattare con cautela il modello di un solo evento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sommare o confrontare perdite attese con periodi diversi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.9.2, pagina PDF 116"
+    },
+    {
+      "id": "cyber-c07-q066",
+      "topicId": "cyber-c07-t09",
+      "question": "Che cosa significano SLE, ARO e ALE?",
+      "answer": "SLE: Single Loss Expectancy, perdita per evento; ARO: Annual Rate of Occurrence, numero medio di eventi per anno; ALE: Annualized Loss Expectancy, perdita annua attesa.",
+      "detail": "Nella formulazione semplificata, ALE = SLE × ARO. La frequenza media ARO non è necessariamente una probabilità fra 0 e 1: può rappresentare anche più eventi per anno.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\mathrm{ALE}=\\mathrm{SLE}\\times\\mathrm{ARO}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confondere ARO con una scala qualitativa da 1 a 5.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.9.3, pagina PDF 116"
+    },
+    {
+      "id": "cyber-c07-q067",
+      "topicId": "cyber-c07-t09",
+      "question": "Come si calcola ALE se ogni evento costa in media 20.000 € e se ne attende 0,4 all’anno?",
+      "answer": "ALE = 8.000 € all’anno.",
+      "detail": "La SLE è 20.000 € per evento e la ARO è 0,4 eventi per anno: il prodotto produce euro/anno. È una media di lungo periodo, non un evento annuale garantito.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "20\\,000\\,\\mathrm{€}/\\mathrm{evento}\\cdot0{,}4\\,\\mathrm{eventi}/\\mathrm{anno}=8\\,000\\,\\mathrm{€}/\\mathrm{anno}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non esprimere ALE in «eventi» senza unità monetaria.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.9.3, pagina PDF 116"
+    },
+    {
+      "id": "cyber-c07-q068",
+      "topicId": "cyber-c07-t09",
+      "question": "Come differiscono probabilità annua di un evento e ARO?",
+      "answer": "La probabilità annua descrive la possibilità che lo scenario si verifichi nel periodo; ARO esprime un numero medio annuo di occorrenze.",
+      "detail": "Per eventi rari e un unico evento, i modelli possono dare valori simili; non sono però definizioni intercambiabili quando l’evento è ripetibile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare una ARO di 2 eventi/anno come probabilità del 200%.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.9.3, pagina PDF 116"
+    },
+    {
+      "id": "cyber-c07-q069",
+      "topicId": "cyber-c07-t09",
+      "question": "Nell’esempio del manuale quanto vale la perdita attesa prima e dopo la misura di sicurezza?",
+      "answer": "Prima 16.000 €/anno; dopo 4.000 €/anno.",
+      "detail": "La probabilità annua scende da 20% a 5%, mentre la perdita per evento resta 80.000 €. La misura riduce la perdita annua attesa di 12.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "0{,}20\\cdot80\\,000=16\\,000"
+        },
+        {
+          "latex": "0{,}05\\cdot80\\,000=4\\,000"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non ridurre anche L se il testo dice che il danno per evento rimane invariato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.9.4, pagina PDF 116"
+    },
+    {
+      "id": "cyber-c07-q070",
+      "topicId": "cyber-c07-t09",
+      "question": "Qual è il beneficio netto semplificato della misura da 6.000 € annui nell’esempio?",
+      "answer": "6.000 €/anno.",
+      "detail": "Beneficio lordo da rischio evitato: 16.000 − 4.000 = 12.000 €/anno. Sottraendo 6.000 €/anno di costo ricorrente: 6.000 €/anno. Non è un’approvazione automatica: mancano costi iniziali, incertezza e vincoli.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "(16\\,000-4\\,000)-6\\,000=6\\,000\\,\\mathrm{€}/\\mathrm{anno}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non indicare 12.000 € come beneficio netto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.9.4, pagina PDF 116"
+    },
+    {
+      "id": "cyber-c07-q071",
+      "topicId": "cyber-c07-t09",
+      "question": "Quali limiti rendono il modello perdita attesa = p × L insufficiente per una decisione completa?",
+      "answer": "Probabilità e perdite difficili da stimare, eventi correlati, distribuzioni asimmetriche, perdita estrema e dati incompleti.",
+      "detail": "La media può nascondere rischi rarissimi ma intollerabili. Occorrono valutazioni di sensibilità, vincoli legali, scenari e livelli di rischio residuo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere sempre il controllo con la media di costo più bassa se resta una perdita potenzialmente catastrofica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.9.5, pagina PDF 117"
+    },
+    {
+      "id": "cyber-c07-q072",
+      "topicId": "cyber-c07-t09",
+      "question": "Perché due scenari con uguale perdita attesa possono richiedere trattamenti diversi?",
+      "answer": "Perché frequenza, severità massima, resilienza e tolleranza aziendale possono essere molto differenti.",
+      "detail": "Un evento frequente con danno modesto e uno rarissimo con danno enorme possono avere la stessa media annua, ma il secondo può minacciare la sopravvivenza organizzativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il valore atteso non descrive da solo la distribuzione del danno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.9.5, pagina PDF 117"
+    },
+    {
+      "id": "cyber-c07-q073",
+      "topicId": "cyber-c07-t10",
+      "question": "Come si distinguono analisi qualitativa, semiquantitativa e quantitativa?",
+      "answer": "Qualitativa: categorie verbali; semiquantitativa: punteggi attribuiti a categorie; quantitativa: misure numeriche di probabilità/frequenza e perdite con unità esplicite.",
+      "detail": "La prima facilita un primo screening; la seconda ordina scenari; la terza favorisce il confronto economico, ma richiede stime credibili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che trasformare Rare in 1 produca una probabilità misurata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.10, pagina PDF 117"
+    },
+    {
+      "id": "cyber-c07-q074",
+      "topicId": "cyber-c07-t10",
+      "question": "Quando è utile applicare una metodologia qualitativa e poi una quantitativa?",
+      "answer": "Quando bisogna selezionare rapidamente pochi rischi rilevanti e approfondire economicamente soltanto le misure più costose.",
+      "detail": "La combinazione è coerente con l’uso proporzionato delle risorse. Occorre mantenere chiari gli scopi e le unità di ciascuna analisi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare direttamente il numero 12 di una matrice con 12.000 € di ALE.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.10, pagina PDF 117"
+    },
+    {
+      "id": "cyber-c07-q075",
+      "topicId": "cyber-c07-t10",
+      "question": "Qual è il limite principale di ciascuno dei tre metodi?",
+      "answer": "Qualitativo: soggettività; semiquantitativo: punteggi ordinali non monetari; quantitativo: qualità incerta dei dati e delle ipotesi.",
+      "detail": "La scelta deve dipendere dalla decisione da supportare. Una metodologia numerica elaborata senza dati attendibili non è necessariamente superiore a una valutazione qualitativa trasparente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non misurare la qualità dell’analisi dal numero di decimali mostrati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.10, pagina PDF 117"
+    },
+    {
+      "id": "cyber-c07-q076",
+      "topicId": "cyber-c07-t11",
+      "question": "Quali sono le quattro leve di trattamento esplicitamente richiamate dalle slide?",
+      "answer": "Evitare attività rischiose; trasferire parte del rischio; ridurre le conseguenze; ridurre la probabilità.",
+      "detail": "Il manuale aggiunge come integrazione gestionale l’accettazione del rischio residuo, che deve essere formale e consapevole.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere l’accettazione quando descrivi il modello gestionale completo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.11, pagina PDF 117"
+    },
+    {
+      "id": "cyber-c07-q077",
+      "topicId": "cyber-c07-t11",
+      "question": "Quali sono le modalità generali di risk treatment descritte nell’integrazione del manuale?",
+      "answer": "Evitare, mitigare (probabilità o impatto), condividere/trasferire, accettare.",
+      "detail": "Le modalità devono essere collegate a uno scenario e a criteri aziendali; il trattamento può combinare diverse misure.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere rischio accettato come rischio ignorato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.11, pagina PDF 117"
+    },
+    {
+      "id": "cyber-c07-q078",
+      "topicId": "cyber-c07-t11",
+      "question": "Che cosa significa evitare un rischio e qual è un esempio?",
+      "answer": "Rinunciare o modificare l’attività che genera un particolare scenario di rischio.",
+      "detail": "Disattivare l’accessibilità Internet di un’interfaccia amministrativa inutile elimina quella esposizione, ma non annulla tutte le minacce agli altri componenti.",
+      "example": "Rendere un pannello di amministrazione raggiungibile solo attraverso percorsi controllati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proclamare che evitare un vettore equivalga a eliminare il rischio totale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.11.1, pagina PDF 118"
+    },
+    {
+      "id": "cyber-c07-q079",
+      "topicId": "cyber-c07-t11",
+      "question": "Quali misure riducono prevalentemente la probabilità di un evento cyber?",
+      "answer": "Patching, MFA, hardening, protezione endpoint, segmentazione, revisione del codice, gestione configurazioni e privilegi minimi.",
+      "detail": "Sono misure preventive: per stimarne il beneficio bisogna verificare installazione, configurazione, copertura ed efficacia.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente efficacia a un prodotto solo perché acquistato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.11.2, pagina PDF 118"
+    },
+    {
+      "id": "cyber-c07-q080",
+      "topicId": "cyber-c07-t11",
+      "question": "Quali misure riducono prevalentemente l’impatto di un incidente?",
+      "answer": "Backup testati, ridondanza, disaster recovery, incident response e business continuity.",
+      "detail": "Sono misure di resilienza e recupero: possono limitare perdita dati, fermo e costo complessivo anche senza impedire l’incidente iniziale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare il backup alla prevenzione dell’attacco.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.11.3, pagina PDF 118"
+    },
+    {
+      "id": "cyber-c07-q081",
+      "topicId": "cyber-c07-t11",
+      "question": "Perché un backup non testato e non isolato potrebbe non mitigare il rischio?",
+      "answer": "Perché può essere inutilizzabile o compromesso insieme al sistema principale, e quindi non consentire il ripristino.",
+      "detail": "La contromisura va verificata con restore, tempi coerenti con RTO/RPO, protezione degli accessi e integrità delle copie.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare il rischio mitigato solo perché esiste una directory «backup».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.11.3, pagina PDF 118"
+    },
+    {
+      "id": "cyber-c07-q082",
+      "topicId": "cyber-c07-t11",
+      "question": "Che cosa significa trasferire o condividere un rischio e perché non equivale a eliminarlo?",
+      "answer": "Attribuire a soggetti terzi alcune conseguenze economiche o responsabilità contrattuali, senza cancellare necessariamente il danno operativo.",
+      "detail": "Polizze e contratti hanno massimali, franchigie, esclusioni e condizioni. Gli obblighi verso clienti, persone e autorità possono permanere in capo all’organizzazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere «assicurazione = sistema sicuro».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.11.4, pagina PDF 118"
+    },
+    {
+      "id": "cyber-c07-q083",
+      "topicId": "cyber-c07-t11",
+      "question": "Quando e come può essere accettato il rischio residuo?",
+      "answer": "Quando è compatibile con i criteri aziendali e l’autorità competente approva consapevolmente una decisione motivata e documentata.",
+      "detail": "È opportuno indicare proprietario del rischio, basi della valutazione, durata dell’accettazione, controlli e condizioni di riesame; non devono essere violati obblighi normativi o contrattuali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Accettare un rischio non è dimenticarsi di monitorarlo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.11.5, pagina PDF 118"
+    },
+    {
+      "id": "cyber-c07-q084",
+      "topicId": "cyber-c07-t11",
+      "question": "Che differenza esiste fra rischio inerente e rischio residuo?",
+      "answer": "Il primo è il rischio prima dell’effetto dei controlli considerati; il secondo è ciò che rimane dopo i controlli dichiarati nel perimetro.",
+      "detail": "La distinzione dipende da quali misure sono incluse nell’analisi. Anche dopo il trattamento possono restare eventi possibili e conseguenze non eliminate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che residuo significhi zero né che inerente abbia sempre identico significato senza perimetro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.11.6, pagina PDF 118"
+    },
+    {
+      "id": "cyber-c07-q085",
+      "topicId": "cyber-c07-t11",
+      "question": "Come interpretare un controllo che riduce la probabilità ma lascia invariata la gravità per evento?",
+      "answer": "Il rischio residuo è inferiore perché cambia la likelihood, mentre l’impatto condizionato all’evento resta uguale.",
+      "detail": "Nell’esempio economico del manuale p passa dal 20% al 5%, L resta 80.000 €. Una matrice qualitativa può analogamente cambiare riga senza cambiare colonna.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre simultaneamente likelihood e impatto senza giustificare entrambe le variazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.11.6, pagina PDF 118"
+    },
+    {
+      "id": "cyber-c07-q086",
+      "topicId": "cyber-c07-t12",
+      "question": "Qual è il criterio generale per bilanciare livello di rischio e costo del trattamento?",
+      "answer": "Confrontare beneficio atteso, costo complessivo, criticità e tolleranza, senza applicare una formula universale a ogni situazione.",
+      "detail": "Il diagramma del docente è qualitativo: rischi elevati possono giustificare investimenti importanti, rischi bassi richiedono verifica della proporzionalità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare il diagramma come curva economica con parametri fissati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.12, pagina PDF 119"
+    },
+    {
+      "id": "cyber-c07-q087",
+      "topicId": "cyber-c07-t12",
+      "question": "Come si stima il beneficio economico elementare di una contromisura?",
+      "answer": "Come riduzione della perdita attesa fra scenario senza e con controllo; il beneficio netto sottrae i costi pertinenti.",
+      "detail": "Servono orizzonte e ipotesi coerenti; benefici indiretti di fiducia, resilienza e conformità non sono sempre catturati dai soli euro attesi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\mathrm{Beneficio\\ lordo}=\\mathrm{ALE}_{prima}-\\mathrm{ALE}_{dopo}"
+        },
+        {
+          "latex": "\\mathrm{Beneficio\\ netto}=\\mathrm{Beneficio\\ lordo}-\\mathrm{Costo}_{periodo}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confrontare un investimento una tantum con benefici annui senza distribuirlo sul periodo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.12.1, pagina PDF 119"
+    },
+    {
+      "id": "cyber-c07-q088",
+      "topicId": "cyber-c07-t12",
+      "question": "Quali costi nascosti possono rendere una misura di sicurezza più onerosa del prezzo di acquisto?",
+      "answer": "Installazione, licenze, manutenzione, training, gestione alert, falsi positivi, rallentamenti e perdita di produttività.",
+      "detail": "Occorre coinvolgere i responsabili dei processi, confrontare alternative e stimare il costo di ciclo di vita della misura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non valutare la convenienza di un firewall usando solo il prezzo di listino.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.12.2, pagina PDF 119"
+    },
+    {
+      "id": "cyber-c07-q089",
+      "topicId": "cyber-c07-t12",
+      "question": "Che cos’è un’analisi di sensibilità nel confronto costo-beneficio cyber?",
+      "answer": "Il ricalcolo della decisione sotto ipotesi alternative sulle quantità incerte, in particolare frequenza, perdite ed efficacia del controllo.",
+      "detail": "Il manuale ipotizza benefici fra 4.000 e 18.000 € annui contro un costo di 6.000 €: il risultato cambia a seconda dello scenario. Serve acquisire evidenze o discuterne il rischio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non decidere come se una sola stima puntuale fosse certa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.12.3, pagina PDF 119"
+    },
+    {
+      "id": "cyber-c07-q090",
+      "topicId": "cyber-c07-t12",
+      "question": "Una misura costa 6.000 € e il beneficio stimato varia da 4.000 a 18.000 €: qual è la conclusione?",
+      "answer": "Non esiste una convenienza economica robusta alle ipotesi: nello scenario basso il saldo è −2.000 €, nello scenario alto +12.000 €.",
+      "detail": "La decisione dipende dalle probabilità e dagli impatti stimati; il risk manager può cercare dati aggiuntivi, avviare un pilota o coinvolgere il risk owner.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare sufficiente il solo estremo più favorevole.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.12.3, pagina PDF 119"
+    },
+    {
+      "id": "cyber-c07-q091",
+      "topicId": "cyber-c07-t12",
+      "question": "Perché una contromisura economicamente conveniente può essere insufficiente?",
+      "answer": "Perché può lasciare un rischio catastrofico oltre la tolleranza, o non soddisfare obblighi legali, sicurezza delle persone e continuità.",
+      "detail": "Il solo valore atteso monetario non basta per eventi estremi e vincoli non negoziabili. Occorre valutare efficacia e rischio residuo in più dimensioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il beneficio netto positivo come autorizzazione universale al trattamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.12.4, pagina PDF 119"
+    },
+    {
+      "id": "cyber-c07-q092",
+      "topicId": "cyber-c07-t13",
+      "question": "Qual è la differenza tra security team, risk owner, decisore e control owner?",
+      "answer": "Il security team analizza e propone; il risk owner è responsabile del rischio sul processo; il decisore approva; il control owner implementa e gestisce la misura.",
+      "detail": "I ruoli possono coinvolgere persone diverse. Rendere esplicite responsabilità, scadenze ed evidenze permette che la valutazione diventi azione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che il tecnico che esegue un test possa accettare da solo il rischio di business.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.13, pagina PDF 119"
+    },
+    {
+      "id": "cyber-c07-q093",
+      "topicId": "cyber-c07-t13",
+      "question": "Che cos’è un risk register?",
+      "answer": "Un registro strutturato di scenari, valutazioni, priorità, decisioni, controlli, responsabilità e scadenze.",
+      "detail": "Collega l’analisi tecnica alla governance: agevola riesame, audit, comunicazione e verifica dell’avanzamento dei piani.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattarlo come semplice elenco di CVE.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.13, pagina PDF 119"
+    },
+    {
+      "id": "cyber-c07-q094",
+      "topicId": "cyber-c07-t13",
+      "question": "Quali campi minimi dovrebbe contenere il registro dei rischi secondo il manuale?",
+      "answer": "ID, titolo e scenario, asset/processo, minaccia e vulnerabilità, controlli, likelihood e impatto prima/dopo, classe di rischio, responsabile, trattamento, scadenza, stato, data di revisione e motivazione di accettazione.",
+      "detail": "Una scheda deve essere tracciabile e utile a chi implementa e a chi decide; la valutazione post-trattamento rende osservabile il rischio residuo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non indicare un rischio senza owner, stato e data di revisione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.13.1, pagina PDF 120"
+    },
+    {
+      "id": "cyber-c07-q095",
+      "topicId": "cyber-c07-t13",
+      "question": "Quali KPI possono aiutare a monitorare l’esposizione cyber?",
+      "answer": "Vulnerabilità critiche aperte, tempo di correzione, MFA su account privilegiati, esiti restore, copertura log, riesami dei rischi e tempi di risposta.",
+      "detail": "Sono indicatori parziali: la percentuale MFA o il numero di patch non dimostrano da soli il livello di rischio reale, che dipende da scenario e impatti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere una metrica di attività con una misura complessiva di perdita attesa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.13.2, pagina PDF 120"
+    },
+    {
+      "id": "cyber-c07-q096",
+      "topicId": "cyber-c07-t13",
+      "question": "Perché un alto tasso di account con MFA può coesistere con un rischio ancora alto?",
+      "answer": "Perché permessi eccessivi, account esclusi, applicazioni vulnerabili o indisponibilità restano possibili.",
+      "detail": "L’indicatore copre soltanto un tipo di difesa e va interpretato insieme ai rischi prioritari, alle eccezioni e all’efficacia verificata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare KPI 100% in «sicurezza garantita».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.13.2, pagina PDF 120"
+    },
+    {
+      "id": "cyber-c07-q097",
+      "topicId": "cyber-c07-t13",
+      "question": "Che cosa si intende per rischio di terze parti nella cybersecurity?",
+      "answer": "Il rischio che guasti o incidenti di fornitori e dipendenze esterne compromettano i processi aziendali.",
+      "detail": "Cloud, SaaS, identity provider e sviluppatori esterni possono costituire punti di dipendenza. Servono inventario, valutazione fornitori, SLA, continuità e clausole appropriate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "L’assenza di compromissioni dei server interni non elimina il rischio da fornitore.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.13.3, pagina PDF 120"
+    },
+    {
+      "id": "cyber-c07-q098",
+      "topicId": "cyber-c07-t14",
+      "question": "Qual è il contesto del caso applicativo integrato del Capitolo 7?",
+      "answer": "Un portale enterprise fittizio di offerte e pricing con front-end, backend Java, database relazionale e servizio di autenticazione.",
+      "detail": "Serve a esercitarsi sulle conseguenze di modifiche ai prezzi, indisponibilità e recupero. Non descrive una infrastruttura realmente esistente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire gli scenari del caso a una società reale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.14, pagina PDF 120"
+    },
+    {
+      "id": "cyber-c07-q099",
+      "topicId": "cyber-c07-t14",
+      "question": "Quali proprietà di sicurezza sono più rilevanti per il portale offerte del caso?",
+      "answer": "Integrità dei prezzi e delle regole; disponibilità durante le campagne; riservatezza di listini, dati clienti e credenziali.",
+      "detail": "Le conseguenze si manifestano come offerte errate, reclami, rettifiche, ritardi operativi ed esposizione di dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare l’integrità meno importante della confidenzialità per un motore di pricing.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.14.1, pagina PDF 120"
+    },
+    {
+      "id": "cyber-c07-q100",
+      "topicId": "cyber-c07-t14",
+      "question": "Quali sono i cinque asset A1–A5 del caso e le rispettive funzioni?",
+      "answer": "A1 database offerte; A2 backend applicativo; A3 identity provider; A4 backup; A5 log e monitoraggio.",
+      "detail": "A1 memorizza prezzi, A2 calcola regole, A3 gestisce identità e sessioni, A4 abilita recovery, A5 permette ricostruzione eventi. Proprietà prevalenti: A1 integrità/riservatezza; A2 integrità/disponibilità; A3 autenticità/disponibilità; A4 disponibilità/integrità; A5 integrità/tracciabilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare che backup e log sono asset da proteggere, non soltanto controlli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.14.2, pagina PDF 120"
+    },
+    {
+      "id": "cyber-c07-q101",
+      "topicId": "cyber-c07-t14",
+      "question": "Che cosa descrive lo scenario R1 del caso enterprise?",
+      "answer": "Furto di credenziali privilegiate, assenza di MFA, accesso al gestionale e modifica dei parametri di offerte.",
+      "detail": "Asset coinvolti: identità, applicazione e database; impatti: integrità del pricing, reputazione e costi di rettifica. È uno scenario malevolo di modifica di dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire R1 come semplice indisponibilità del database.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.14.3, pagina PDF 120"
+    },
+    {
+      "id": "cyber-c07-q102",
+      "topicId": "cyber-c07-t14",
+      "question": "Che cosa descrive lo scenario R2 del caso enterprise?",
+      "answer": "Guasto infrastrutturale del database nel periodo di picco, con interruzione del servizio e perdita di produttività.",
+      "detail": "Coinvolge database e backend e colpisce soprattutto la disponibilità. È un rischio anche senza presenza di un attaccante intenzionale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non escludere R2 perché non è un cyberattacco deliberato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.14.3, pagina PDF 120"
+    },
+    {
+      "id": "cyber-c07-q103",
+      "topicId": "cyber-c07-t14",
+      "question": "Che cosa descrive lo scenario R3 del caso enterprise?",
+      "answer": "Backup non recuperabile dopo un incidente perché il ripristino non era stato testato.",
+      "detail": "La debolezza del processo di backup aggrava la perdita dati e prolunga il fermo; non va confuso con l’incidente iniziale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere R3 come furto di credenziali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.14.3, pagina PDF 120"
+    },
+    {
+      "id": "cyber-c07-q104",
+      "topicId": "cyber-c07-t14",
+      "question": "Quali classi E/H/M/L vengono assegnate ai tre scenari del caso?",
+      "answer": "R1 Possible + Major = E; R2 Likely + Moderate = H; R3 Unlikely + Catastrophic = E.",
+      "detail": "R1 e R3 sono entrambi Extreme ma per motivi diversi: una combinazione di plausibilità e danni importanti, l’altro un impatto catastrofico a probabilità minore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non stimare R1 e R3 come identici solo perché condividono la lettera E.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.14.4, pagina PDF 121"
+    },
+    {
+      "id": "cyber-c07-q105",
+      "topicId": "cyber-c07-t14",
+      "question": "Come giustificare all’orale che R1 e R3 richiedano misure differenti benché siano entrambi Extreme?",
+      "answer": "R1 riguarda accessi privilegiati e integrità dei prezzi; R3 riguarda l’incapacità di ripristino e un impatto catastrofico.",
+      "detail": "Il primo si tratta soprattutto con prevenzione e audit; il secondo con copie isolate e restore testati. La classe è una priorità, non una ricetta di intervento.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non acquistare lo stesso controllo per scenari con causalità diverse.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.14.4, pagina PDF 121"
+    },
+    {
+      "id": "cyber-c07-q106",
+      "topicId": "cyber-c07-t14",
+      "question": "Quali contromisure sono previste per il rischio R1 e come valutarle?",
+      "answer": "MFA, minimo privilegio, audit delle modifiche; test di accesso, revisione dei ruoli e verifiche dei log.",
+      "detail": "Le misure riducono soprattutto la probabilità e migliorano la detection dell’alterazione delle offerte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il solo logging non impedisce automaticamente la modifica abusiva.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.14.5, pagina PDF 121"
+    },
+    {
+      "id": "cyber-c07-q107",
+      "topicId": "cyber-c07-t14",
+      "question": "Quali contromisure sono previste per R2 e come verificarle?",
+      "answer": "Replica, monitoraggio e procedure di failover, da provare simulando indisponibilità.",
+      "detail": "Agiscono prevalentemente sull’impatto e sul tempo di interruzione del servizio. La presenza di un nodo replica non dimostra che il failover funzioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare ogni intervento su disponibilità una misura di riduzione della probabilità del guasto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.14.5, pagina PDF 121"
+    },
+    {
+      "id": "cyber-c07-q108",
+      "topicId": "cyber-c07-t14",
+      "question": "Quali contromisure sono previste per R3 e quale prova ne dimostra l’efficacia?",
+      "answer": "Backup isolati e test periodici di ripristino; restore effettivamente completato entro RTO e RPO.",
+      "detail": "La qualità delle copie e la capacità di recuperare dati verificati sono essenziali; un backup presente ma corrotto è inutile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare job «backup riuscito» a ripristino provato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.14.5, pagina PDF 121"
+    },
+    {
+      "id": "cyber-c07-q109",
+      "topicId": "cyber-c07-t14",
+      "question": "Come deve essere presa la decisione gestionale finale sui rischi R1–R3?",
+      "answer": "Integrando valutazioni del responsabile commerciale e dell’infrastruttura, interdipendenze, priorità, costi, tempi e benefici.",
+      "detail": "Chi gestisce offerte può privilegiare la modifica abusiva dei prezzi; chi gestisce infrastruttura può privilegiare il restore. La decisione deve essere motivata e verificabile, non guidata solo dalla preferenza tecnica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre la scelta a «vince il rischio con il punteggio numerico più alto».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.14.6, pagina PDF 121"
+    },
+    {
+      "id": "cyber-c07-q110",
+      "topicId": "cyber-c07-t15",
+      "question": "Esercizio 1: un incidente costa 120.000 € con probabilità annua 10%. Quanto vale la perdita attesa prima del controllo?",
+      "answer": "12.000 € annui.",
+      "detail": "La probabilità 10% si converte in 0,10; si moltiplica per il danno: 0,10 × 120.000. È una stima media annuale ipotetica.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "0{,}10\\cdot120\\,000=12\\,000\\,\\mathrm{€}/\\mathrm{anno}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non usare 10 come moltiplicatore né confondere perdita media e danno effettivo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.15, pagina PDF 121"
+    },
+    {
+      "id": "cyber-c07-q111",
+      "topicId": "cyber-c07-t15",
+      "question": "Esercizio 1: la probabilità scende al 4% e il controllo costa 3.000 €/anno. Qual è il beneficio netto?",
+      "answer": "4.200 € annui.",
+      "detail": "Perdita attesa post controllo: 0,04 × 120.000 = 4.800. Riduzione: 12.000 − 4.800 = 7.200; beneficio netto: 7.200 − 3.000 = 4.200 €/anno. La decisione reale richiede stima dei costi iniziali e dei danni non monetizzabili.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "0{,}04\\cdot120\\,000=4\\,800"
+        },
+        {
+          "latex": "12\\,000-4\\,800-3\\,000=4\\,200\\,\\mathrm{€}/\\mathrm{anno}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confondere riduzione lorda 7.200 € con beneficio netto 4.200 €.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.15, pagina PDF 121"
+    },
+    {
+      "id": "cyber-c07-q112",
+      "topicId": "cyber-c07-t15",
+      "question": "Esercizio 2: confronta A (50% × 10.000 €) e B (1% × 500.000 €). Quanto valgono le perdite attese?",
+      "answer": "Entrambe 5.000 € annui, ma con profili di rischio radicalmente differenti.",
+      "detail": "A genera più spesso perdite minori; B comporta rischio di danno raro ma gravissimo, potenzialmente incompatibile con la continuità aziendale. Il valore atteso non misura da solo la tollerabilità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "0{,}50\\cdot10\\,000=5\\,000"
+        },
+        {
+          "latex": "0{,}01\\cdot500\\,000=5\\,000"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non dedurre stessa priorità e stessa misura solo dalla media uguale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.15, pagina PDF 121"
+    },
+    {
+      "id": "cyber-c07-q113",
+      "topicId": "cyber-c07-t15",
+      "question": "Esercizio 2: perché il rischio B può essere trattato prima del rischio A pur avendo la stessa ALE?",
+      "answer": "Perché 500.000 € di perdita singola possono superare la capacità di sopravvivenza o la risk tolerance dell’organizzazione.",
+      "detail": "La governance deve valutare la distribuzione e i massimi ragionevoli, non solo una media. La scelta dipende da vincoli, liquidità e continuità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare «stessa media» a «stesso rischio in ogni senso».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.15, pagina PDF 121"
+    },
+    {
+      "id": "cyber-c07-q114",
+      "topicId": "cyber-c07-t15",
+      "question": "Esercizio 3: quali classi restituisce la matrice per Rare + Moderate e Possible + Minor?",
+      "answer": "Entrambe M — Medium.",
+      "detail": "Nella matrice del docente l’incrocio porta alla stessa classe di gestione, pur derivando da likelihood e impatti diversi. Non indica uguali euro attesi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare M traducendo arbitrariamente i numeri ordinali in percentuali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.15, pagina PDF 122"
+    },
+    {
+      "id": "cyber-c07-q115",
+      "topicId": "cyber-c07-t15",
+      "question": "Esercizio 4: nel caso ransomware, quali controlli mirano a likelihood e quali a impatto?",
+      "answer": "MFA e aggiornamenti frequenti puntano soprattutto a ridurre la likelihood; backup offline, restore testati, ridondanza e continuità riducono soprattutto l’impatto.",
+      "detail": "Alcuni controlli possono avere effetti su entrambe le dimensioni. Va sempre spiegato *come* la misura modifica lo scenario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare genericamente prevenzione ogni misura di recupero.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.15, pagina PDF 122"
+    },
+    {
+      "id": "cyber-c07-q116",
+      "topicId": "cyber-c07-t15",
+      "question": "Esercizio 5: un’impresa ha 50 PC, un piccolo portale pubblico e un sistema di transazioni economiche. Quale approccio applicare?",
+      "answer": "Combinato: baseline sui dispositivi, verifica rapida del portale e risk assessment formale sul sistema transazionale.",
+      "detail": "L’approfondimento segue criticità e possibili conseguenze sul business, non semplicemente dimensione tecnica o numero di componenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre identico approfondimento a ogni asset.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.15, pagina PDF 122"
+    },
+    {
+      "id": "cyber-c07-q117",
+      "topicId": "cyber-c07-t16",
+      "question": "Perché «il rischio è la vulnerabilità» è una risposta sbagliata?",
+      "answer": "La vulnerabilità è una debolezza; il rischio riguarda uno scenario avverso con una likelihood e conseguenze su asset/processi.",
+      "detail": "Il difetto può essere non sfruttabile o avere impatto limitato nel perimetro reale. È necessario correlare fonte di minaccia, esposizione e danno.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non costruire un risk register che contenga solo l’elenco dei bug.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.16, pagina PDF 122"
+    },
+    {
+      "id": "cyber-c07-q118",
+      "topicId": "cyber-c07-t16",
+      "question": "Come confutare l’affermazione «Likelihood 4 significa probabilità 80%»?",
+      "answer": "La scala Rare–Almost certain è ordinale: 4 è una classe e non una percentuale.",
+      "detail": "Solo una metodologia con soglie quantitative esplicite permette di associare intervalli numerici. Senza questa mappatura, la conversione è arbitraria.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dividere automaticamente per 5.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.16, pagina PDF 122"
+    },
+    {
+      "id": "cyber-c07-q119",
+      "topicId": "cyber-c07-t16",
+      "question": "Perché il prodotto dei punteggi della matrice non fornisce una misura rigorosa di perdita?",
+      "answer": "Perché i punteggi rappresentano categorie ordinate e non grandezze cardinali con intervalli numerici garantiti.",
+      "detail": "La matrice E/H/M/L è una convenzione di priorità; l’analisi in euro richiede vere probabilità/frequenze e perdite stimate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare 3×4=12 una «probabilità di danno» o una perdita in euro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.16, pagina PDF 122"
+    },
+    {
+      "id": "cyber-c07-q120",
+      "topicId": "cyber-c07-t16",
+      "question": "Un rischio High obbliga a comprare la contromisura più costosa?",
+      "answer": "No: si deve scegliere una misura proporzionata, efficace e sostenibile rispetto allo scenario.",
+      "detail": "Prezzo elevato non implica copertura elevata; si valutano riduzione effettiva di likelihood/impatto, costi totali e alternative.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il costo di acquisto come proxy dell’efficacia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.16, pagina PDF 122"
+    },
+    {
+      "id": "cyber-c07-q121",
+      "topicId": "cyber-c07-t16",
+      "question": "Perché una polizza cyber non elimina il rischio informatico?",
+      "answer": "Perché trasferisce solo alcune conseguenze economiche entro limiti contrattuali.",
+      "detail": "Non impedisce intrusioni, fermi e danni reputazionali, né cancella obblighi e responsabilità verso terzi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare copertura assicurativa a prevenzione tecnica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.16, pagina PDF 122"
+    },
+    {
+      "id": "cyber-c07-q122",
+      "topicId": "cyber-c07-t16",
+      "question": "Perché «abbiamo backup, quindi non subiremo danni» è falso?",
+      "answer": "Il backup può agevolare il recupero ma non impedisce furto di dati, fermo, estorsione, costi e possibili fallimenti del restore.",
+      "detail": "La protezione dipende da frequenza, isolamento, integrità, test e rispetto degli obiettivi RTO/RPO.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare un backup non testato come mitigazione verificata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.16, pagina PDF 122"
+    },
+    {
+      "id": "cyber-c07-q123",
+      "topicId": "cyber-c07-t16",
+      "question": "Che cosa distingue l’accettazione del rischio dall’inerzia?",
+      "answer": "L’accettazione è deliberata, approvata, motivata e monitorata; l’inerzia lascia un rischio senza una decisione responsabile.",
+      "detail": "Un risk owner deve conoscere criteri, durata e trigger di riesame dell’accettazione; non devono essere ignorati obblighi non negoziabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere semplicemente «si accetta» senza owner e motivazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.16, pagina PDF 122"
+    },
+    {
+      "id": "cyber-c07-q124",
+      "topicId": "cyber-c07-t16",
+      "question": "Perché il valore di acquisto di un server non determina il rischio del servizio che ospita?",
+      "answer": "Perché il rischio dipende dalle conseguenze per processi, dati, clienti, ricavi e continuità oltre che dal costo del dispositivo.",
+      "detail": "Un server poco costoso può essere un punto di dipendenza unico per funzioni essenziali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non misurare il danno solo come prezzo del componente compromesso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.16, pagina PDF 122"
+    },
+    {
+      "id": "cyber-c07-q125",
+      "topicId": "cyber-c07-t16",
+      "question": "Che errore si commette congelando indefinitamente una valutazione del rischio?",
+      "answer": "Si ignorano cambi di vulnerabilità, minacce, esposizione, fornitori, configurazioni e controlli.",
+      "detail": "Il mantenimento e il monitoraggio sono parte integrante del processo; incidenti e cambiamenti importanti richiedono nuova valutazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare il report di rischio come documento immutabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.16, pagina PDF 122"
+    },
+    {
+      "id": "cyber-c07-q126",
+      "topicId": "cyber-c07-t16",
+      "question": "Perché una perdita attesa bassa non rende sempre trascurabile lo scenario?",
+      "answer": "Perché la stessa media può derivare da un evento molto raro ma catastrofico e violare la risk tolerance.",
+      "detail": "L’organizzazione deve considerare perdita massima, obblighi, sicurezza delle persone e sostenibilità del worst case.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non minimizzare automaticamente eventi a bassa frequenza e impatto enorme.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.16, pagina PDF 122"
+    },
+    {
+      "id": "cyber-c07-q127",
+      "topicId": "cyber-c07-t16",
+      "question": "Come distingui risk assessment, risk treatment e risk register?",
+      "answer": "Assessment identifica e valuta scenari; treatment seleziona e realizza interventi; register documenta valutazioni, decisioni, responsabili e revisioni.",
+      "detail": "Sono momenti e strumenti collegati della governance, ma non sinonimi. Il registro permette di ricostruire chi ha deciso e cosa è stato fatto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare compilazione del registro come esecuzione del trattamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.17, pagina PDF 123"
+    },
+    {
+      "id": "cyber-c07-q128",
+      "topicId": "cyber-c07-t16",
+      "question": "Che differenza esiste fra likelihood, impatto e rischio?",
+      "answer": "Likelihood è plausibilità dello scenario, impatto è gravità delle conseguenze e rischio è la valutazione congiunta dei due.",
+      "detail": "Il docente rappresenta i fattori con una matrice qualitativa o con un valore atteso in scenari semplici, mantenendo espliciti contesto e criteri.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire rischio esclusivamente come probabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.17, pagina PDF 123"
+    },
+    {
+      "id": "cyber-c07-q129",
+      "topicId": "cyber-c07-t16",
+      "question": "Come distingui risk owner e control owner?",
+      "answer": "Il risk owner risponde della gestione del rischio sul processo; il control owner si occupa dell’implementazione e del funzionamento di una misura.",
+      "detail": "La stessa persona potrebbe coprire entrambi i ruoli in alcune organizzazioni, ma è utile distinguere autorità decisionale ed esecuzione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire a chi configura MFA la responsabilità di accettare un rischio commerciale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.17, pagina PDF 123"
+    },
+    {
+      "id": "cyber-c07-q130",
+      "topicId": "cyber-c07-t16",
+      "question": "Qual è la distinzione essenziale tra SLE, ARO e ALE in termini di unità?",
+      "answer": "SLE è euro per evento, ARO eventi per anno, ALE euro per anno.",
+      "detail": "La coerenza dimensionale aiuta a evitare errori di formula. ARO può essere una frequenza media, non soltanto una percentuale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\frac{\\mathrm{€}}{\\mathrm{evento}}\\cdot\\frac{\\mathrm{eventi}}{\\mathrm{anno}}=\\frac{\\mathrm{€}}{\\mathrm{anno}}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non scrivere ALE come una semplice probabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.17, pagina PDF 123"
+    },
+    {
+      "id": "cyber-c07-q131",
+      "topicId": "cyber-c07-t16",
+      "question": "Come distingui il rischio inerente da quello residuo usando un controllo di accesso?",
+      "answer": "Il rischio inerente è stimato prima di attribuire effetto al controllo nell’analisi; il residuo è quello che resta una volta considerato il controllo.",
+      "detail": "Per un accesso privilegiato, MFA può ridurre la likelihood, ma credenziali rubate, configurazioni errate o altri vettori possono mantenere rischio residuo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che il rischio residuo sia completamente azzerato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.17, pagina PDF 123"
+    },
+    {
+      "id": "cyber-c07-q132",
+      "topicId": "cyber-c07-t16",
+      "question": "Come distingui RTO da RPO attraverso una domanda manageriale?",
+      "answer": "RTO risponde «entro quanto devo tornare operativo?»; RPO «quanti dati recenti posso perdere al massimo?».",
+      "detail": "Sono requisiti diversi e possono richiedere misure distinte di continuità e protezione dei dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare RPO come durata del fermo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.17, pagina PDF 123"
+    },
+    {
+      "id": "cyber-c07-q133",
+      "topicId": "cyber-c07-t16",
+      "question": "Come imposteresti in 90 secondi una risposta orale completa sul rischio cyber?",
+      "answer": "Definisco scenario, asset e processo; distinguo minaccia, vulnerabilità ed evento; stimo likelihood e impatti; confronto criteri e indico trattamento, owner e rischio residuo.",
+      "detail": "Questa struttura integra la definizione del docente con il processo gestionale. Fornisci un esempio concreto e spiega perché il valore atteso non copre sempre tutti gli impatti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non elencare sigle senza mostrarne il collegamento.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 123"
+    },
+    {
+      "id": "cyber-c07-q134",
+      "topicId": "cyber-c07-t16",
+      "question": "Come spiegheresti all’orale perché la gestione del rischio non coincide con il solo patch management?",
+      "answer": "Le patch sono un possibile controllo preventivo; il risk management include processi, asset, scenari, impatti, priorità, costi, terze parti, recovery e responsabilità.",
+      "detail": "Una patch può ridurre la likelihood di un exploit ma non affrontare guasti, furto di dati da insider o backup non recuperabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare «aggiornare il software» come risposta universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 123"
+    },
+    {
+      "id": "cyber-c07-q135",
+      "topicId": "cyber-c07-t16",
+      "question": "Come giustificheresti l’approccio combinato davanti al docente?",
+      "answer": "Applico subito controlli di base su tutti gli asset e approfondisco formalmente quelli con conseguenze rilevanti, spiegando il criterio di priorità.",
+      "detail": "Cita efficacia rapida della baseline, costo del formale, rischi dell’informale e necessità di non lasciare esposizioni evidenti aperte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che combinato significhi eseguire il 50% di ogni metodologia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 123"
+    },
+    {
+      "id": "cyber-c07-q136",
+      "topicId": "cyber-c07-t16",
+      "question": "Quale sequenza useresti per impostare un assessment su un portale pubblico senza dimenticare dipendenze?",
+      "answer": "Definisco scope e periodo; identifico front-end, backend, identità, DB e fornitori; formulo scenari; valuto likelihood, impatto, controlli e rischio; decido e riesamino.",
+      "detail": "Il ragionamento deve includere continuità, utenti e asset non fisici, altrimenti si perdono scenari critici.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non escludere identity provider e backup dal perimetro di un servizio web.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 123"
+    },
+    {
+      "id": "cyber-c07-q137",
+      "topicId": "cyber-c07-t16",
+      "question": "Come spiegheresti il valore degli asset con un esempio di ingegneria gestionale?",
+      "answer": "Confronto costo tecnico dell’asset con valore dei processi e danni da disservizio: il secondo può essere molto maggiore.",
+      "detail": "Un database prezzi può costare relativamente poco come infrastruttura ma determinare correttezza contrattuale e ricavi. Usa requisiti CIA e dipendenze.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non stimare l’impatto sul business con il solo prezzo dell’hardware.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 123"
+    },
+    {
+      "id": "cyber-c07-q138",
+      "topicId": "cyber-c07-t16",
+      "question": "Come distingueresti una vulnerabilità esistente da una minaccia sfruttabile in un vero assessment?",
+      "answer": "Esamino se è presente nel componente reale, se è raggiungibile, se l’evento è plausibile e che conseguenze potrebbe produrre.",
+      "detail": "Serve un’analisi delle condizioni predisponenti; un bug isolato o non sfruttabile può non essere lo scenario prioritario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre automaticamente da CVSS elevato una ALE elevata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 124"
+    },
+    {
+      "id": "cyber-c07-q139",
+      "topicId": "cyber-c07-t16",
+      "question": "Come esporresti la likelihood senza trasformare le categorie delle slide in percentuali?",
+      "answer": "Cito le cinque classi in ordine, definisco scenario e periodo e sottolineo che 1–5 è una scala ordinale.",
+      "detail": "È possibile associare soglie numeriche soltanto con metodo esplicito; la qualità delle informazioni e l’incertezza devono essere comunicate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che Possible equivale al 60%.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 124"
+    },
+    {
+      "id": "cyber-c07-q140",
+      "topicId": "cyber-c07-t16",
+      "question": "Come illustreresti la matrice del docente senza usare una moltiplicazione numerica?",
+      "answer": "Seleziono la riga della likelihood e la colonna della conseguenza e leggo la classe E/H/M/L della cella corrispondente.",
+      "detail": "Spiego i livelli gestionali e almeno due esempi: Possible + Moderate = H e Rare + Minor = L; posso citare R3 Unlikely + Catastrophic = E.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare la classe E in un importo economico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 124"
+    },
+    {
+      "id": "cyber-c07-q141",
+      "topicId": "cyber-c07-t16",
+      "question": "Come giustificheresti la differenza fra riduzione di likelihood e riduzione di impatto nell’orale?",
+      "answer": "Descrivo il meccanismo: MFA e patching ostacolano il successo dell’attacco; backup testati e ridondanza riducono i danni dopo l’incidente.",
+      "detail": "Alcune misure agiscono su entrambi, ma la classificazione è motivata dall’effetto principale sulla specifica catena causale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare ogni strumento «prevenzione».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 124"
+    },
+    {
+      "id": "cyber-c07-q142",
+      "topicId": "cyber-c07-t16",
+      "question": "Come spiegheresti a un dirigente che una ALE non è una perdita certa?",
+      "answer": "È un valore medio atteso nel periodo, calcolato da frequenze/probabilità e perdite ipotizzate; esiti reali possono essere zero o molto più gravi.",
+      "detail": "L’esempio 50% × 10.000 € e 1% × 500.000 € produce la stessa media 5.000 € ma rischi di coda molto diversi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare ALE come previsione puntuale della fattura del prossimo anno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 124"
+    },
+    {
+      "id": "cyber-c07-q143",
+      "topicId": "cyber-c07-t16",
+      "question": "Come confronteresti economicamente un controllo con probabilità e perdite incerte?",
+      "answer": "Calcolo perdita attesa prima/dopo, beneficio lordo e netto, includo tutti i costi pertinenti e svolgo analisi di sensibilità.",
+      "detail": "Se la convenienza dipende molto dalle ipotesi, servono prove aggiuntive o decisione consapevole del risk owner; restano vincoli di conformità e rischio estremo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere come certo il beneficio più alto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 124"
+    },
+    {
+      "id": "cyber-c07-q144",
+      "topicId": "cyber-c07-t16",
+      "question": "Come spiegheresti perché una polizza è una risposta gestionale ma non una difesa tecnica?",
+      "answer": "Condivide alcune conseguenze economiche, ma non impedisce la compromissione né assicura il funzionamento dei servizi.",
+      "detail": "Deve essere valutata con franchigie, massimali, esclusioni e obblighi; è complementare a prevenzione e recovery.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare il trasferimento del rischio come completa eliminazione della responsabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 124"
+    },
+    {
+      "id": "cyber-c07-q145",
+      "topicId": "cyber-c07-t16",
+      "question": "Come presenteresti un piano di trattamento come ingegnere gestionale?",
+      "answer": "Per ciascuno scenario indico priorità, controllo, effetto su likelihood/impatto, costo, owner, scadenza, evidenza di efficacia e rischio residuo.",
+      "detail": "Il registro dei rischi rende verificabili assegnazioni e decisioni; la direzione approva accettazioni o eccezioni nelle competenze previste.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fermarti a un elenco di tecnologie senza verifica e responsabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 124"
+    },
+    {
+      "id": "cyber-c07-q146",
+      "topicId": "cyber-c07-t16",
+      "question": "Come risponderesti alla domanda «Chi può accettare il rischio residuo?»?",
+      "answer": "Chi possiede l’autorità prevista dalle policy e la responsabilità gestionale per le conseguenze, sulla base di una valutazione documentata.",
+      "detail": "Il risk owner partecipa alla gestione; la decisione deve rispettare criteri, limiti, obblighi e condizioni di monitoraggio/riesame.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente il potere di accettazione all’ultimo tecnico coinvolto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 125"
+    },
+    {
+      "id": "cyber-c07-q147",
+      "topicId": "cyber-c07-t16",
+      "question": "Qual è il valore aggiunto di un ingegnere gestionale nell’analisi del rischio cyber?",
+      "answer": "Tradurre guasti e minacce tecniche in conseguenze su processi, investimenti, continuità, responsabilità, fornitori e decisioni sostenibili.",
+      "detail": "Integra valutazioni di sicurezza ed economia aziendale, prioritizza interventi misurabili, identifica compromessi e supporta la governance nel rischio residuo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre la disciplina alla configurazione degli apparati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.18, pagina PDF 125"
+    },
+    {
+      "id": "cyber-c07-q148",
+      "topicId": "cyber-c07-t08",
+      "question": "Come si classificano i sei impatti sulla riga Almost certain della matrice del corso?",
+      "answer": "Doomsday E; Catastrophic E; Major E; Moderate E; Minor H; Insignificant H.",
+      "detail": "Questa è la riga di likelihood massima nella figura del manuale, letta da sinistra verso destra. Serve per riconoscere le priorità senza inventare formule.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire una riga reale della matrice con un prodotto di punteggi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.8, pagina PDF 115"
+    },
+    {
+      "id": "cyber-c07-q149",
+      "topicId": "cyber-c07-t08",
+      "question": "Come si classificano i sei impatti sulla riga Likely della matrice del corso?",
+      "answer": "Doomsday E; Catastrophic E; Major E; Moderate H; Minor H; Insignificant M.",
+      "detail": "L’intersezione Likely + Moderate vale H, come usato nel caso R2. Le classi derivano dalla tabella del docente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire tutta la riga Likely automaticamente Extreme.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.8, pagina PDF 115"
+    },
+    {
+      "id": "cyber-c07-q150",
+      "topicId": "cyber-c07-t08",
+      "question": "Come si classificano i sei impatti sulla riga Possible della matrice del corso?",
+      "answer": "Doomsday E; Catastrophic E; Major E; Moderate H; Minor M; Insignificant L.",
+      "detail": "Possibile + Major dà E (caso R1); Possible + Moderate dà H e Possible + Minor dà M. Sono tre incroci da sapere distinguere.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere Possible + Minor con Possible + Moderate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.8, pagina PDF 115"
+    },
+    {
+      "id": "cyber-c07-q151",
+      "topicId": "cyber-c07-t08",
+      "question": "Come si classificano i sei impatti sulla riga Unlikely della matrice del corso?",
+      "answer": "Doomsday E; Catastrophic E; Major H; Moderate M; Minor L; Insignificant L.",
+      "detail": "Unlikely + Catastrophic dà E nel caso R3: una probabilità bassa non esclude gestione urgente per una perdita catastrofica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare meccanicamente la categoria Low a ogni evento Unlikely.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.8, pagina PDF 115"
+    },
+    {
+      "id": "cyber-c07-q152",
+      "topicId": "cyber-c07-t08",
+      "question": "Come si classificano i sei impatti sulla riga Rare della matrice del corso?",
+      "answer": "Doomsday E; Catastrophic H; Major H; Moderate M; Minor L; Insignificant L.",
+      "detail": "Rare + Moderate dà M e Rare + Minor dà L, mentre Rare + Doomsday resta E. La matrice considera anche la gravità estrema.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare rischio raro a rischio sempre trascurabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 7, §7.8, pagina PDF 115"
+    }
+  ]
+}

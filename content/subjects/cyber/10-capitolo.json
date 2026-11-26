@@ -1,0 +1,2668 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cyber",
+  "source": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10: VLAN e Reti Locali, pagine PDF 169–191; unica fonte autorizzata.",
+  "chapter": {
+    "id": "cyber-c10",
+    "title": "VLAN e Reti Locali",
+    "order": 10,
+    "topics": [
+      {
+        "id": "cyber-c10-t01",
+        "title": "LAN, segmentazione, domini di collisione e broadcast"
+      },
+      {
+        "id": "cyber-c10-t02",
+        "title": "Switching Ethernet: frame, FDB, learning e forwarding"
+      },
+      {
+        "id": "cyber-c10-t03",
+        "title": "VLAN: proprietà, subnet, scalabilità e limiti di sicurezza"
+      },
+      {
+        "id": "cyber-c10-t04",
+        "title": "Porte access, trunk e hybrid: classificazione e inoltro"
+      },
+      {
+        "id": "cyber-c10-t05",
+        "title": "Ingress/egress, PVID, native VLAN e rischi di mismatch"
+      },
+      {
+        "id": "cyber-c10-t06",
+        "title": "Tag IEEE 802.1Q: TPID, TCI, PCP, DEI e VID"
+      },
+      {
+        "id": "cyber-c10-t07",
+        "title": "Esempi di tagging e calcoli sui bit del tag"
+      },
+      {
+        "id": "cyber-c10-t08",
+        "title": "VLAN distribuite: trunk, allowed VLAN e controllo dei loop"
+      },
+      {
+        "id": "cyber-c10-t09",
+        "title": "VTP: dominio, modalità, revision e gestione sicura"
+      },
+      {
+        "id": "cyber-c10-t10",
+        "title": "Inter-VLAN routing e gateway: tre architetture"
+      },
+      {
+        "id": "cyber-c10-t11",
+        "title": "Percorso completo del pacchetto fra VLAN"
+      },
+      {
+        "id": "cyber-c10-t12",
+        "title": "VLAN hopping, MAC flooding, rogue DHCP e ARP spoofing"
+      },
+      {
+        "id": "cyber-c10-t13",
+        "title": "STP/BPDU, management e rischi del routing non filtrato"
+      },
+      {
+        "id": "cyber-c10-t14",
+        "title": "Hardening di rete e controlli multilivello"
+      },
+      {
+        "id": "cyber-c10-t15",
+        "title": "802.1X, least privilege e Zero Trust nella rete aziendale"
+      },
+      {
+        "id": "cyber-c10-t16",
+        "title": "Packet Tracer: topologia, porte e piano IPv4"
+      },
+      {
+        "id": "cyber-c10-t17",
+        "title": "Packet Tracer: creazione VLAN e porte access"
+      },
+      {
+        "id": "cyber-c10-t18",
+        "title": "Packet Tracer: trunk e router-on-a-stick"
+      },
+      {
+        "id": "cyber-c10-t19",
+        "title": "Packet Tracer: SVI management, PC e test pre-ACL"
+      },
+      {
+        "id": "cyber-c10-t20",
+        "title": "Packet Tracer: ACL ospiti, test e limiti stateless"
+      },
+      {
+        "id": "cyber-c10-t21",
+        "title": "Diagnostica e troubleshooting di VLAN e routing"
+      },
+      {
+        "id": "cyber-c10-t22",
+        "title": "Esercizi ragionati e ricostruzione dei casi"
+      },
+      {
+        "id": "cyber-c10-t23",
+        "title": "Domande trasversali per esame orale e glossario"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§10.1 — pagina PDF 169",
+        "cardIds": [
+          "cyber-c10-q001"
+        ]
+      },
+      {
+        "label": "§10.1.1 — pagina PDF 169",
+        "cardIds": [
+          "cyber-c10-q002",
+          "cyber-c10-q003"
+        ]
+      },
+      {
+        "label": "§10.1.2 — pagina PDF 169",
+        "cardIds": [
+          "cyber-c10-q004",
+          "cyber-c10-q005"
+        ]
+      },
+      {
+        "label": "§10.1.3 — pagina PDF 169",
+        "cardIds": [
+          "cyber-c10-q006",
+          "cyber-c10-q007"
+        ]
+      },
+      {
+        "label": "§10.2 — pagina PDF 170",
+        "cardIds": [
+          "cyber-c10-q008"
+        ]
+      },
+      {
+        "label": "§10.2.1 — pagina PDF 170",
+        "cardIds": [
+          "cyber-c10-q009",
+          "cyber-c10-q010"
+        ]
+      },
+      {
+        "label": "§10.2.2 — pagina PDF 170",
+        "cardIds": [
+          "cyber-c10-q011",
+          "cyber-c10-q012"
+        ]
+      },
+      {
+        "label": "§10.2.3 — pagina PDF 170",
+        "cardIds": [
+          "cyber-c10-q013"
+        ]
+      },
+      {
+        "label": "§10.2.4 — pagina PDF 171",
+        "cardIds": [
+          "cyber-c10-q014",
+          "cyber-c10-q015"
+        ]
+      },
+      {
+        "label": "§10.3 — pagina PDF 171",
+        "cardIds": [
+          "cyber-c10-q016"
+        ]
+      },
+      {
+        "label": "§10.3.1 — pagina PDF 171",
+        "cardIds": [
+          "cyber-c10-q017",
+          "cyber-c10-q018"
+        ]
+      },
+      {
+        "label": "§10.3.2 — pagina PDF 171",
+        "cardIds": [
+          "cyber-c10-q019"
+        ]
+      },
+      {
+        "label": "§10.3.3 — pagina PDF 172",
+        "cardIds": [
+          "cyber-c10-q020"
+        ]
+      },
+      {
+        "label": "§10.3.4 — pagina PDF 172",
+        "cardIds": [
+          "cyber-c10-q021"
+        ]
+      },
+      {
+        "label": "§10.4 — pagina PDF 172",
+        "cardIds": [
+          "cyber-c10-q022"
+        ]
+      },
+      {
+        "label": "§10.4.1 — pagina PDF 172",
+        "cardIds": [
+          "cyber-c10-q023"
+        ]
+      },
+      {
+        "label": "§10.4.2 — pagina PDF 172",
+        "cardIds": [
+          "cyber-c10-q024",
+          "cyber-c10-q025"
+        ]
+      },
+      {
+        "label": "§10.4.3 — pagina PDF 173",
+        "cardIds": [
+          "cyber-c10-q026"
+        ]
+      },
+      {
+        "label": "§10.4.4 — pagina PDF 173",
+        "cardIds": [
+          "cyber-c10-q027",
+          "cyber-c10-q028"
+        ]
+      },
+      {
+        "label": "§10.4.5 — pagina PDF 173",
+        "cardIds": [
+          "cyber-c10-q029"
+        ]
+      },
+      {
+        "label": "§10.5 — pagina PDF 174",
+        "cardIds": [
+          "cyber-c10-q030"
+        ]
+      },
+      {
+        "label": "§10.5.1 — pagina PDF 174",
+        "cardIds": [
+          "cyber-c10-q031",
+          "cyber-c10-q032"
+        ]
+      },
+      {
+        "label": "§10.5.2 — pagina PDF 174",
+        "cardIds": [
+          "cyber-c10-q033"
+        ]
+      },
+      {
+        "label": "§10.5.3 — pagina PDF 174",
+        "cardIds": [
+          "cyber-c10-q034"
+        ]
+      },
+      {
+        "label": "§10.5.4 — pagina PDF 174",
+        "cardIds": [
+          "cyber-c10-q035"
+        ]
+      },
+      {
+        "label": "§10.5.5 — pagina PDF 175",
+        "cardIds": [
+          "cyber-c10-q036",
+          "cyber-c10-q037"
+        ]
+      },
+      {
+        "label": "§10.5.6 — pagina PDF 175",
+        "cardIds": [
+          "cyber-c10-q038"
+        ]
+      },
+      {
+        "label": "§10.5.7 — pagina PDF 175",
+        "cardIds": [
+          "cyber-c10-q039"
+        ]
+      },
+      {
+        "label": "§10.6 — pagina PDF 175",
+        "cardIds": [
+          "cyber-c10-q040"
+        ]
+      },
+      {
+        "label": "§10.6.1 — pagina PDF 175",
+        "cardIds": [
+          "cyber-c10-q041"
+        ]
+      },
+      {
+        "label": "§10.6.2 — pagina PDF 176",
+        "cardIds": [
+          "cyber-c10-q042"
+        ]
+      },
+      {
+        "label": "§10.6.3 — pagina PDF 176",
+        "cardIds": [
+          "cyber-c10-q043"
+        ]
+      },
+      {
+        "label": "§10.6.4 — pagina PDF 176",
+        "cardIds": [
+          "cyber-c10-q044",
+          "cyber-c10-q045"
+        ]
+      },
+      {
+        "label": "§10.7 — pagina PDF 176",
+        "cardIds": [
+          "cyber-c10-q046"
+        ]
+      },
+      {
+        "label": "§10.7.1 — pagina PDF 176",
+        "cardIds": [
+          "cyber-c10-q047"
+        ]
+      },
+      {
+        "label": "§10.7.2 — pagina PDF 176",
+        "cardIds": [
+          "cyber-c10-q048",
+          "cyber-c10-q049"
+        ]
+      },
+      {
+        "label": "§10.7.3 — pagina PDF 177",
+        "cardIds": [
+          "cyber-c10-q050",
+          "cyber-c10-q051"
+        ]
+      },
+      {
+        "label": "§10.7.4 — pagina PDF 177",
+        "cardIds": [
+          "cyber-c10-q052",
+          "cyber-c10-q053"
+        ]
+      },
+      {
+        "label": "§10.7.5 — pagina PDF 177",
+        "cardIds": [
+          "cyber-c10-q054"
+        ]
+      },
+      {
+        "label": "§10.7.6 — pagina PDF 177",
+        "cardIds": [
+          "cyber-c10-q055"
+        ]
+      },
+      {
+        "label": "§10.8 — pagina PDF 177",
+        "cardIds": [
+          "cyber-c10-q056",
+          "cyber-c10-q057"
+        ]
+      },
+      {
+        "label": "§10.8.1 — pagina PDF 178",
+        "cardIds": [
+          "cyber-c10-q058"
+        ]
+      },
+      {
+        "label": "§10.8.2 — pagina PDF 178",
+        "cardIds": [
+          "cyber-c10-q059",
+          "cyber-c10-q060"
+        ]
+      },
+      {
+        "label": "§10.8.3 — pagina PDF 178",
+        "cardIds": [
+          "cyber-c10-q061",
+          "cyber-c10-q062"
+        ]
+      },
+      {
+        "label": "§10.8.4 — pagina PDF 179",
+        "cardIds": [
+          "cyber-c10-q063"
+        ]
+      },
+      {
+        "label": "§10.8.5 — pagina PDF 179",
+        "cardIds": [
+          "cyber-c10-q064",
+          "cyber-c10-q065",
+          "cyber-c10-q066"
+        ]
+      },
+      {
+        "label": "§10.9 — pagina PDF 179",
+        "cardIds": [
+          "cyber-c10-q067"
+        ]
+      },
+      {
+        "label": "§10.9.1 — pagina PDF 179",
+        "cardIds": [
+          "cyber-c10-q068",
+          "cyber-c10-q069",
+          "cyber-c10-q070"
+        ]
+      },
+      {
+        "label": "§10.9.2 — pagina PDF 179",
+        "cardIds": [
+          "cyber-c10-q071"
+        ]
+      },
+      {
+        "label": "§10.9.3 — pagina PDF 180",
+        "cardIds": [
+          "cyber-c10-q072",
+          "cyber-c10-q073"
+        ]
+      },
+      {
+        "label": "§10.9.4 — pagina PDF 180",
+        "cardIds": [
+          "cyber-c10-q074",
+          "cyber-c10-q075"
+        ]
+      },
+      {
+        "label": "§10.9.5 — pagina PDF 180",
+        "cardIds": [
+          "cyber-c10-q076"
+        ]
+      },
+      {
+        "label": "§10.9.6 — pagina PDF 180",
+        "cardIds": [
+          "cyber-c10-q077"
+        ]
+      },
+      {
+        "label": "§10.9.7 — pagina PDF 180",
+        "cardIds": [
+          "cyber-c10-q078"
+        ]
+      },
+      {
+        "label": "§10.10 — pagina PDF 180",
+        "cardIds": [
+          "cyber-c10-q079",
+          "cyber-c10-q080"
+        ]
+      },
+      {
+        "label": "§10.10.1 — pagina PDF 181",
+        "cardIds": [
+          "cyber-c10-q081"
+        ]
+      },
+      {
+        "label": "§10.10.2 — pagina PDF 181",
+        "cardIds": [
+          "cyber-c10-q082",
+          "cyber-c10-q083"
+        ]
+      },
+      {
+        "label": "§10.10.3 — pagina PDF 181",
+        "cardIds": [
+          "cyber-c10-q084"
+        ]
+      },
+      {
+        "label": "§10.10.4 — pagina PDF 181",
+        "cardIds": [
+          "cyber-c10-q085",
+          "cyber-c10-q086"
+        ]
+      },
+      {
+        "label": "§10.11 — pagina PDF 182",
+        "cardIds": [
+          "cyber-c10-q087"
+        ]
+      },
+      {
+        "label": "§10.11.1 — pagina PDF 182",
+        "cardIds": [
+          "cyber-c10-q088"
+        ]
+      },
+      {
+        "label": "§10.11.2 — pagina PDF 182",
+        "cardIds": [
+          "cyber-c10-q089",
+          "cyber-c10-q090"
+        ]
+      },
+      {
+        "label": "§10.11.3 — pagina PDF 182",
+        "cardIds": [
+          "cyber-c10-q091",
+          "cyber-c10-q092"
+        ]
+      },
+      {
+        "label": "§10.11.4 — pagina PDF 183",
+        "cardIds": [
+          "cyber-c10-q093",
+          "cyber-c10-q094"
+        ]
+      },
+      {
+        "label": "§10.11.5 — pagina PDF 183",
+        "cardIds": [
+          "cyber-c10-q095",
+          "cyber-c10-q096"
+        ]
+      },
+      {
+        "label": "§10.11.6 — pagina PDF 184",
+        "cardIds": [
+          "cyber-c10-q097",
+          "cyber-c10-q098"
+        ]
+      },
+      {
+        "label": "§10.11.7 — pagina PDF 184",
+        "cardIds": [
+          "cyber-c10-q099",
+          "cyber-c10-q100",
+          "cyber-c10-q101"
+        ]
+      },
+      {
+        "label": "§10.11.8 — pagina PDF 185",
+        "cardIds": [
+          "cyber-c10-q102",
+          "cyber-c10-q103"
+        ]
+      },
+      {
+        "label": "§10.11.9 — pagina PDF 185",
+        "cardIds": [
+          "cyber-c10-q104"
+        ]
+      },
+      {
+        "label": "§10.11.10 — pagina PDF 185",
+        "cardIds": [
+          "cyber-c10-q105",
+          "cyber-c10-q106"
+        ]
+      },
+      {
+        "label": "§10.11.11 — pagina PDF 185",
+        "cardIds": [
+          "cyber-c10-q107",
+          "cyber-c10-q108",
+          "cyber-c10-q109",
+          "cyber-c10-q110"
+        ]
+      },
+      {
+        "label": "§10.11.12 — pagina PDF 186",
+        "cardIds": [
+          "cyber-c10-q111",
+          "cyber-c10-q112"
+        ]
+      },
+      {
+        "label": "§10.11.13 — pagina PDF 186",
+        "cardIds": [
+          "cyber-c10-q113",
+          "cyber-c10-q114",
+          "cyber-c10-q115"
+        ]
+      },
+      {
+        "label": "§10.11.14 — pagina PDF 186",
+        "cardIds": [
+          "cyber-c10-q116",
+          "cyber-c10-q117",
+          "cyber-c10-q118",
+          "cyber-c10-q119",
+          "cyber-c10-q120"
+        ]
+      },
+      {
+        "label": "§10.12 — pagina PDF 187",
+        "cardIds": [
+          "cyber-c10-q121",
+          "cyber-c10-q122",
+          "cyber-c10-q123",
+          "cyber-c10-q124",
+          "cyber-c10-q125",
+          "cyber-c10-q126",
+          "cyber-c10-q127",
+          "cyber-c10-q128",
+          "cyber-c10-q129",
+          "cyber-c10-q130",
+          "cyber-c10-q131",
+          "cyber-c10-q132",
+          "cyber-c10-q133",
+          "cyber-c10-q134",
+          "cyber-c10-q135",
+          "cyber-c10-q136"
+        ]
+      },
+      {
+        "label": "§10.13 — pagina PDF 188",
+        "cardIds": [
+          "cyber-c10-q137",
+          "cyber-c10-q138",
+          "cyber-c10-q139",
+          "cyber-c10-q140",
+          "cyber-c10-q141",
+          "cyber-c10-q142",
+          "cyber-c10-q143",
+          "cyber-c10-q144",
+          "cyber-c10-q145",
+          "cyber-c10-q146",
+          "cyber-c10-q147",
+          "cyber-c10-q148",
+          "cyber-c10-q149",
+          "cyber-c10-q150",
+          "cyber-c10-q151",
+          "cyber-c10-q152",
+          "cyber-c10-q153",
+          "cyber-c10-q154",
+          "cyber-c10-q155",
+          "cyber-c10-q156",
+          "cyber-c10-q157",
+          "cyber-c10-q158",
+          "cyber-c10-q159"
+        ]
+      },
+      {
+        "label": "§10.14 — pagina PDF 191",
+        "cardIds": [
+          "cyber-c10-q160",
+          "cyber-c10-q161",
+          "cyber-c10-q162",
+          "cyber-c10-q163",
+          "cyber-c10-q164"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cyber-c10-q001",
+      "topicId": "cyber-c10-t01",
+      "question": "Perché una LAN aziendale estesa richiede segmentazione?",
+      "answer": "Per organizzare i dispositivi e limitare i domini di comunicazione, il broadcast superfluo e le esposizioni derivanti dal tenere tutti gli host nello stesso ambiente di livello 2.",
+      "detail": "Una LAN collega dispositivi in un contesto locale mediante switch e regole Ethernet condivise. Al crescere degli host emergono necessità di amministrazione, prestazioni, controllo delle comunicazioni e sicurezza. La segmentazione può essere fisica o logica; le VLAN realizzano separazione logica di livello 2.",
+      "example": "Amministrazione, ufficio tecnico, ospiti e management possono essere divisi in gruppi pur utilizzando switch comuni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una rete VLAN non elimina la necessità di controlli sui flussi instradati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.1, pagina PDF 169"
+    },
+    {
+      "id": "cyber-c10-q002",
+      "topicId": "cyber-c10-t01",
+      "question": "Quale problema risolve una VLAN nell’esempio dei quattro reparti aziendali?",
+      "answer": "Suddivide un’infrastruttura di switch comune in domini broadcast separati, uno per ogni gruppo, senza richiedere una LAN fisica autonoma per ciascuno.",
+      "detail": "Dispositivi dell’amministrazione non devono ricevere automaticamente il broadcast degli ospiti. La separazione favorisce politiche differenziate, ma il routing tra VLAN, se permesso senza ACL, consente comunque comunicazioni IP.",
+      "example": "VLAN 10 per amministrazione, VLAN 20 per ufficio tecnico, VLAN 30 ospiti e VLAN 99 management.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Separazione dei broadcast non significa isolamento completo delle applicazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.1.1, pagina PDF 169"
+    },
+    {
+      "id": "cyber-c10-q003",
+      "topicId": "cyber-c10-t01",
+      "question": "Perché una VLAN da sola non basta a impedire che un ospite raggiunga un server amministrativo?",
+      "answer": "Perché la VLAN separa il traffico Ethernet di livello 2, mentre un router o switch L3 può instradare pacchetti tra le relative subnet.",
+      "detail": "Se un gateway collega VLAN ospiti e amministrazione e nessuna ACL o firewall blocca il flusso, la comunicazione può riuscire. Occorre definire policy sul confine di livello 3 e sui servizi, oltre alla membership VLAN.",
+      "example": "Un ping fra 192.168.30.10 e 192.168.10.10 può riuscire dopo l’attivazione del routing, pur in VLAN distinte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare il funzionamento previsto del routing come un fallimento del tagging VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.1.1, pagina PDF 169"
+    },
+    {
+      "id": "cyber-c10-q004",
+      "topicId": "cyber-c10-t01",
+      "question": "Che differenza c’è tra dominio di collisione e dominio di broadcast?",
+      "answer": "Il dominio di collisione riguarda trasmissioni concorrenti sul medesimo mezzo condiviso; il dominio di broadcast comprende le interfacce raggiunte da un frame Ethernet broadcast della stessa rete logica.",
+      "detail": "Le collisioni erano caratteristiche dei vecchi segmenti Ethernet condivisi; sui collegamenti Ethernet switchati full-duplex non operano nel medesimo modo. Le VLAN, invece, sono definite per separare domini broadcast di livello 2.",
+      "example": "Un ARP broadcast usa come MAC destinazione FF:FF:FF:FF:FF:FF ma rimane nella propria VLAN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non giustificare le VLAN principalmente come un rimedio alle collisioni Ethernet moderne.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.1.2, pagina PDF 169"
+    },
+    {
+      "id": "cyber-c10-q005",
+      "topicId": "cyber-c10-t01",
+      "question": "Come uno switch con VLAN 10 e VLAN 20 inoltra un broadcast ARP della VLAN 10?",
+      "answer": "Lo diffonde alle porte idonee della VLAN 10, escludendo normalmente la porta di ingresso, e non alle porte che appartengono soltanto alla VLAN 20.",
+      "detail": "Il broadcast MAC è FF:FF:FF:FF:FF:FF. Il dominio di broadcast è determinato dalla membership VLAN, non dal numero complessivo di porte fisiche dello switch.",
+      "example": "Un ARP emesso da Fa0/3 in VLAN 10 non arriva a un host su Fa0/17 appartenente soltanto a VLAN 20.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il router non propaga normalmente lo stesso broadcast L2 da una VLAN all’altra.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.1.2, pagina PDF 169"
+    },
+    {
+      "id": "cyber-c10-q006",
+      "topicId": "cyber-c10-t01",
+      "question": "In Ethernet, che cosa distinguono unicast, broadcast e multicast?",
+      "answer": "Unicast individua un singolo MAC; broadcast tutte le interfacce del relativo dominio L2; multicast un gruppo di destinatari.",
+      "detail": "Per unicast noto lo switch usa FDB; per broadcast effettua diffusione nella VLAN; per multicast il trattamento dipende da funzionalità come IGMP snooping e dalla configurazione. Non tutto il multicast deve essere trasmesso a ogni porta.",
+      "example": "L’ARP IPv4 può generare broadcast, mentre gruppi di ricezione possono utilizzare multicast.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Multicast e broadcast non sono sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.1.3, pagina PDF 169"
+    },
+    {
+      "id": "cyber-c10-q007",
+      "topicId": "cyber-c10-t01",
+      "question": "Che cos’è un unknown unicast e come può essere trattato?",
+      "answer": "È un frame unicast il cui MAC destinatario non è ancora presente nella tabella di inoltro per quella VLAN; lo switch può eseguire flooding nella VLAN.",
+      "detail": "Il flooding invia copie alle porte ammesse della stessa VLAN, eccetto in genere quella di ingresso, secondo regole e restrizioni del bridge. L’apprendimento futuro può trasformare quel traffico in forwarding mirato.",
+      "example": "Un host appena collegato, non ancora apparso come MAC sorgente, può essere raggiunto inizialmente tramite unknown-unicast flooding.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’indirizzo unicast sconosciuto con un indirizzo MAC broadcast.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.1.3, pagina PDF 169"
+    },
+    {
+      "id": "cyber-c10-q008",
+      "topicId": "cyber-c10-t02",
+      "question": "Qual è la funzione fondamentale di uno switch Ethernet di livello 2?",
+      "answer": "Riceve frame Ethernet, apprende dove si trovano i MAC sorgenti e decide sulle proprie porte come inoltrare i frame diretti ai MAC destinatari.",
+      "detail": "Mantiene una Forwarding Database (FDB), spesso detta MAC address table. In uno switch VLAN-aware il contesto di apprendimento comprende l’appartenenza VLAN: l’inoltro avviene nel corretto dominio L2.",
+      "example": "Una FDB può associare (VLAN 10, MAC A) a Fa0/1 e (VLAN 20, MAC C) a Fa0/3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Uno switch L2 non è automaticamente un router IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.2, pagina PDF 170"
+    },
+    {
+      "id": "cyber-c10-q009",
+      "topicId": "cyber-c10-t02",
+      "question": "Quali campi essenziali contiene un frame Ethernet e a cosa servono per lo switching?",
+      "answer": "MAC di destinazione, MAC sorgente, campo Type/Length, dati e Frame Check Sequence (FCS).",
+      "detail": "Il MAC destinatario guida il forwarding; quello sorgente alimenta l’apprendimento della tabella MAC. Type/Length classifica il contenuto o indica la lunghezza; FCS aiuta a rilevare errori trasmissivi.",
+      "example": "Uno switch riceve su Fa0/2 un frame dal MAC A al MAC B e può imparare che A è raggiungibile tramite Fa0/2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La FCS non è una firma digitale né una protezione crittografica contro manomissioni intenzionali.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.2.1, pagina PDF 170"
+    },
+    {
+      "id": "cyber-c10-q010",
+      "topicId": "cyber-c10-t02",
+      "question": "Perché una FCS Ethernet valida non garantisce autenticità o integrità crittografica?",
+      "answer": "Perché serve a individuare errori di trasmissione, ma un soggetto che costruisce o altera un frame può ricalcolare una FCS coerente.",
+      "detail": "L’autenticità e la protezione da modifiche malevole richiedono meccanismi ulteriori, come controlli crittografici nei protocolli appropriati. La FCS opera al livello di collegamento con finalità differenti.",
+      "example": "Una trama falsificata può avere FCS formalmente corretta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a CRC/FCS le proprietà di HMAC, firma digitale o AEAD.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.2.1, pagina PDF 170"
+    },
+    {
+      "id": "cyber-c10-q011",
+      "topicId": "cyber-c10-t02",
+      "question": "Come funziona il MAC learning di uno switch VLAN-aware?",
+      "answer": "Alla ricezione di un frame valido associa il MAC sorgente alla porta d’ingresso nel contesto della VLAN e aggiorna la Forwarding Database.",
+      "detail": "Concettualmente la FDB contiene mapping (VLAN, MAC) → porta. Le voci dinamiche possono scadere dopo un tempo di inattività (aging) e cambiare quando un dispositivo si sposta. Le regole variano in base a modello e funzioni di sicurezza.",
+      "example": "Il MAC 00:11:22:AA:01:10 è appreso su Fa0/1 in VLAN 10; un altro MAC su Fa0/3 in VLAN 20.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere FDB dinamica con assegnazione amministrativa della porta alla VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.2.2, pagina PDF 170"
+    },
+    {
+      "id": "cyber-c10-q012",
+      "topicId": "cyber-c10-t02",
+      "question": "In che cosa differiscono MAC address table e database/configurazione VLAN?",
+      "answer": "La MAC address table descrive dove sono raggiungibili i MAC appresi; la configurazione VLAN stabilisce quali VLAN esistono e a quali porte appartengono.",
+      "detail": "La prima dipende dal traffico e può subire aging; la seconda deriva da configurazione o sistemi di gestione. Entrambe sono necessarie al forwarding, ma non sostituiscono l’una l’altra.",
+      "example": "Creare VLAN 20 e associare Fa0/3 a essa non significa che lo switch conosca già il MAC del PC collegato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire al comando “vlan 20” l’apprendimento automatico dei MAC dell’host.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.2.2, pagina PDF 170"
+    },
+    {
+      "id": "cyber-c10-q013",
+      "topicId": "cyber-c10-t02",
+      "question": "Come decide lo switch tra forwarding mirato e flooding?",
+      "answer": "Se il MAC destinazione è noto e il forwarding è permesso nella VLAN, invia sulla porta indicata dalla FDB; se non è noto, può effettuare flooding entro la VLAN.",
+      "detail": "La classificazione VLAN è determinante: l’inoltro non porta automaticamente un frame in un altro dominio VLAN. Anche l’operatività della porta e le policy locali possono limitare il comportamento.",
+      "example": "Unicast noto per VLAN 10: solo la porta di destinazione; unknown unicast per VLAN 10: più porte idonee della VLAN 10.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che flooding significhi consegnare a tutte le VLAN dello switch.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.2.3, pagina PDF 170"
+    },
+    {
+      "id": "cyber-c10-q014",
+      "topicId": "cyber-c10-t02",
+      "question": "Perché una corretta attività di switching non equivale a una policy di autorizzazione?",
+      "answer": "Perché lo switch verifica l’ammissibilità dell’inoltro L2, non se l’utente abbia diritto di leggere o modificare dati applicativi.",
+      "detail": "All’interno della stessa VLAN restano necessari autenticazione, autorizzazione, cifratura dove occorre e protezione degli endpoint. Per disponibilità e prevenzione di loop è importante anche il controllo della topologia con STP o sistemi analoghi.",
+      "example": "Due PC nella stessa VLAN potrebbero comunicare a livello Ethernet ma non essere entrambi autorizzati a usare un database.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare la membership VLAN come sostituto delle autorizzazioni applicative.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.2.4, pagina PDF 171"
+    },
+    {
+      "id": "cyber-c10-q015",
+      "topicId": "cyber-c10-t02",
+      "question": "Qual è il ruolo di STP nelle LAN con collegamenti ridondanti?",
+      "answer": "Aiuta a evitare loop di livello 2 che potrebbero provocare circolazione persistente dei frame e tempeste broadcast.",
+      "detail": "STP, RSTP e MSTP regolano percorsi ridondanti secondo la topologia. Non servono per definire il numero della VLAN, ma possono essere essenziali per mantenere disponibile una rete con più switch interconnessi.",
+      "example": "Due collegamenti paralleli fra switch, se non gestiti, possono generare problemi di loop.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Creare VLAN separate non neutralizza di per sé i loop presenti al loro interno.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.2.4, pagina PDF 171"
+    },
+    {
+      "id": "cyber-c10-q016",
+      "topicId": "cyber-c10-t03",
+      "question": "Come si definisce una Virtual Local Area Network (VLAN)?",
+      "answer": "È una rete locale logica che suddivide una infrastruttura di bridging/switching di livello 2 in domini di comunicazione separati.",
+      "detail": "Le regole IEEE 802.1Q classificano frame e porte e, quando necessario, rappresentano l’appartenenza tramite un VLAN Identifier. VLAN differenti possono usare gli stessi switch fisici senza mescolare i loro broadcast.",
+      "example": "VLAN 10 e VLAN 20 condividono lo stesso switch ma formano due domini L2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Virtuale non significa priva di configurazione o di legami con le porte fisiche.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.3, pagina PDF 171"
+    },
+    {
+      "id": "cyber-c10-q017",
+      "topicId": "cyber-c10-t03",
+      "question": "Qual è la distinzione fondamentale fra VLAN e subnet IP?",
+      "answer": "La VLAN separa il bridging Ethernet a livello 2; la subnet identifica un intervallo di indirizzi IP e un prefisso a livello 3.",
+      "detail": "È buona prassi avere spesso una subnet per VLAN, perché ciò semplifica gateway, routing e ACL, ma non è un’equivalenza teorica imposta dallo standard.",
+      "example": "VLAN 10 può essere associata a 192.168.10.0/24 e VLAN 20 a 192.168.20.0/24 per scelta progettuale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che il VID venga calcolato dai bit dell’indirizzo IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.3.1, pagina PDF 171"
+    },
+    {
+      "id": "cyber-c10-q018",
+      "topicId": "cyber-c10-t03",
+      "question": "Perché nelle architetture aziendali si associano spesso subnet IP diverse a VLAN diverse?",
+      "answer": "Per rendere chiari i confini tra domini L2, individuare un gateway per ciascuna rete e applicare policy di instradamento e ACL in maniera leggibile.",
+      "detail": "L’associazione è una decisione amministrativa. La creazione della VLAN non crea automaticamente il prefisso IP né abilita un gateway.",
+      "example": "Un reparto usa VLAN 30 e 192.168.30.0/24, con gateway 192.168.30.1 configurato su dispositivo L3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarsi connettività inter-VLAN senza routing esplicito.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.3.1, pagina PDF 171"
+    },
+    {
+      "id": "cyber-c10-q019",
+      "topicId": "cyber-c10-t03",
+      "question": "Quali vantaggi economici e operativi offrono le VLAN?",
+      "answer": "Permettono condivisione di infrastruttura fisica, scalabilità e gestione per gruppi logici, minore diffusione del broadcast e separazione organizzativa.",
+      "detail": "Gli utenti di un reparto possono trovarsi su switch o piani diversi mantenendo una rete logica comune. Si possono gestire modifiche organizzative senza dover necessariamente ricablare tutti i collegamenti.",
+      "example": "Aggiungere un dipendente a un reparto può richiedere la corretta assegnazione VLAN della porta, non un nuovo switch dedicato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "I risparmi e la semplificazione non eliminano i costi di gestione dei trunk e delle policy.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.3.2, pagina PDF 171"
+    },
+    {
+      "id": "cyber-c10-q020",
+      "topicId": "cyber-c10-t03",
+      "question": "Quali proprietà di sicurezza una VLAN non garantisce da sola?",
+      "answer": "Non autentica gli utenti, non cifra il traffico, non applica automaticamente ACL IP e non garantisce autorizzazioni applicative o protezione totale dagli attacchi locali.",
+      "detail": "All’interno della medesima VLAN restano possibili attacchi come ARP spoofing. Tra VLAN diverse un gateway può far transitare pacchetti in assenza di policy di blocco. La sicurezza richiede difese complementari.",
+      "example": "Una rete ospiti in VLAN 30 deve comunque essere filtrata verso i servizi interni sul router/firewall.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare “VLAN diversa = nessuna comunicazione possibile”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.3.3, pagina PDF 172"
+    },
+    {
+      "id": "cyber-c10-q021",
+      "topicId": "cyber-c10-t03",
+      "question": "Che cos’è il VID e cosa rappresenta nell’architettura VLAN?",
+      "answer": "Il VLAN Identifier è il valore numerico usato per distinguere un dominio VLAN nel contesto del tagging 802.1Q.",
+      "detail": "L’identificatore è trasportato dai frame tagged; su una porta access l’appartenenza può essere attribuita dalla configurazione anche se il PC invia frame untagged. Il numero VLAN non corrisponde alla porta fisica né alla subnet IP.",
+      "example": "VID 10 distingue il traffico etichettato VLAN 10 da quello con VID 20 su uno stesso trunk.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare il VID al protocollo IP o al numero della porta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.3.4, pagina PDF 172"
+    },
+    {
+      "id": "cyber-c10-q022",
+      "topicId": "cyber-c10-t04",
+      "question": "Quale problema risolvono i diversi tipi di porta VLAN access, trunk e hybrid?",
+      "answer": "Determinano come un frame viene classificato in una VLAN all’ingresso e se viene trasmesso con o senza tag all’uscita.",
+      "detail": "Le access servono normalmente host finali untagged, le trunk trasportano più VLAN tagged, le hybrid combinano comportamenti secondo la piattaforma.",
+      "example": "Il medesimo switch collega un PC su access e un altro switch tramite trunk.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare access e trunk come differenze di velocità fisica del cavo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.4, pagina PDF 172"
+    },
+    {
+      "id": "cyber-c10-q023",
+      "topicId": "cyber-c10-t04",
+      "question": "Come funziona una porta access collegata a un PC che non usa tag 802.1Q?",
+      "answer": "Lo switch assegna i frame untagged in ingresso alla VLAN configurata sulla porta e consegna normalmente frame untagged in uscita verso il PC.",
+      "detail": "Un ARP broadcast del PC viene classificato nella sua VLAN, per esempio VLAN 10; la membership è decisa dallo switch, non dalla richiesta ARP e non richiede che il PC conosca il VID.",
+      "example": "Su Fa0/1 impostata come access VLAN 10, il PC trasmette un Ethernet frame senza tag e lo switch lo associa a VLAN 10.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pretendere di configurare 802.1Q sul PC per un access standard.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.4.1, pagina PDF 172"
+    },
+    {
+      "id": "cyber-c10-q024",
+      "topicId": "cyber-c10-t04",
+      "question": "Come funziona una porta trunk 802.1Q e dove si usa?",
+      "answer": "Trasporta più VLAN sullo stesso collegamento usando normalmente tag 802.1Q con VID distinti.",
+      "detail": "È frequente su collegamenti switch–switch o switch–router. Entrambi gli endpoint devono essere configurati coerentemente e devono permettere le VLAN da far transitare. Alcune implementazioni usano anche traffico untagged per la native VLAN.",
+      "example": "Il trunk fra SW1 e SW2 può trasportare contemporaneamente VLAN 10, 20 e 99.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una porta trunk non è semplicemente una porta ad alta velocità o un protocollo IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.4.2, pagina PDF 172"
+    },
+    {
+      "id": "cyber-c10-q025",
+      "topicId": "cyber-c10-t04",
+      "question": "Che cosa indica la lista allowed VLANs su un trunk?",
+      "answer": "Quali VLAN sono autorizzate a transitare su quel collegamento 802.1Q.",
+      "detail": "Una lista restrittiva evita trasporto non necessario e riduce possibilità di esposizione, ma non è un firewall IP. La lista va verificata sulle estremità e sui dispositivi intermedi del percorso.",
+      "example": "“allowed vlan 10,20,99” non dovrebbe trasportare la VLAN 30.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere VLAN esistente nello switch e VLAN ammessa su ogni trunk.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.4.2, pagina PDF 172"
+    },
+    {
+      "id": "cyber-c10-q026",
+      "topicId": "cyber-c10-t04",
+      "question": "Che cos’è una porta hybrid e in quale scenario può servire?",
+      "answer": "Una porta che, secondo le capacità del dispositivo, tratta una VLAN in forma untagged e altre VLAN in forma tagged sulla medesima interfaccia.",
+      "detail": "Il termine e la sintassi dipendono dal produttore. Un caso tipico è telefono IP con PC a cascata: la VLAN dati può essere untagged e quella voce tagged.",
+      "example": "Telefono IP e PC condividono fisicamente un cavo verso lo switch ma appartengono a VLAN differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presupporre che tutte le piattaforme implementino “hybrid” allo stesso modo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.4.3, pagina PDF 173"
+    },
+    {
+      "id": "cyber-c10-q027",
+      "topicId": "cyber-c10-t05",
+      "question": "Che differenza c’è tra classificazione ingress e comportamento egress su una porta VLAN?",
+      "answer": "Ingress decide a quale VLAN appartiene il frame ricevuto; egress stabilisce come trasmettere il frame in uscita, tagged oppure untagged.",
+      "detail": "Un frame senza tag in ingresso può essere associato al PVID; uno tagged è valutato in base al VID e alle policy. All’uscita, lo switch adatta il tagging alla configurazione del collegamento o dell’host destinatario.",
+      "example": "PC → access: untagged classificato VLAN 10; switch → trunk: trasmesso con tag VID 10.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che il tag originale debba restare identico su tutte le porte.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.4.4, pagina PDF 173"
+    },
+    {
+      "id": "cyber-c10-q028",
+      "topicId": "cyber-c10-t05",
+      "question": "Come si distinguono PVID, native VLAN e VID?",
+      "answer": "PVID è il criterio per classificare tipicamente frame untagged in ingresso; native VLAN è l’impostazione di molte trunk per il traffico untagged; VID è l’identificatore presente nei tag 802.1Q.",
+      "detail": "PVID e native VLAN sono collegati ma non sinonimi universali. Nei Catalyst è tipica una native VLAN 1, che nella progettazione sicura può essere sostituita da una dedicata e coerente fra le estremità.",
+      "example": "Un frame privo di tag arriva su un trunk con native VLAN 99; un frame tagged può contenere esplicitamente VID 20.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare PVID “campo di 12 bit” né considerare sempre la native VLAN come VLAN dati degli utenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.4.4, pagina PDF 173"
+    },
+    {
+      "id": "cyber-c10-q029",
+      "topicId": "cyber-c10-t04",
+      "question": "Come confrontare access, trunk e hybrid per un colloquio orale?",
+      "answer": "Access: tipicamente una VLAN dati e host untagged. Trunk: più VLAN, tagging e allowed VLANs. Hybrid: traffico tagged e untagged sulla stessa porta secondo piattaforma.",
+      "detail": "In access contano membership e PVID; in trunk contano coerenza della native VLAN, tagging e VLAN ammesse; in hybrid le regole ingress/egress. I rischi includono assegnazione errata, trunk non autorizzato, mismatch e ambiguità dei tag.",
+      "example": "PC collegato a Fa0/1: access; switch collegato a Gi0/1 di un altro switch: trunk; telefono IP più PC: configurazione ibrida/voice VLAN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a trunk o hybrid proprietà di autenticazione dell’utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.4.5, pagina PDF 173"
+    },
+    {
+      "id": "cyber-c10-q030",
+      "topicId": "cyber-c10-t06",
+      "question": "Che cosa standardizza IEEE 802.1Q in relazione alle VLAN?",
+      "answer": "Il funzionamento dei bridge VLAN-aware e, tra gli altri aspetti, il formato del tag Ethernet che rappresenta le informazioni di appartenenza VLAN.",
+      "detail": "Il C-tag consente la trasmissione di frame tagged su link condivisi. Tagging inserisce l’etichetta; untagging la rimuove. 802.1Q non deve essere confuso con il protocollo 802.1X di accesso autenticato.",
+      "example": "Un trunk può trasportare VLAN 10 e 20 e lo switch remoto riconosce i rispettivi VID.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "802.1Q non effettua routing IP tra VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.5, pagina PDF 174"
+    },
+    {
+      "id": "cyber-c10-q031",
+      "topicId": "cyber-c10-t06",
+      "question": "Dove viene inserito il tag IEEE 802.1Q e di quanti byte aumenta il frame?",
+      "answer": "Il tag da 4 byte si inserisce tra il MAC sorgente e il campo Type/Length originale; il frame Ethernet massimo ordinario passa normalmente da 1518 a 1522 byte con un solo tag.",
+      "detail": "Il tag contiene TPID (16 bit) e TCI (16 bit); la FCS deve essere ricalcolata in seguito all’inserimento. Nell’esempio standard resta invariato il payload massimo tradizionale da 1500 byte, escludendo preambolo e SFD.",
+      "example": "Frame: [MAC dest][MAC src][TPID][TCI][Type/Length][dati][FCS].",
+      "formulas": [
+        {
+          "latex": "\\mathrm{tag}=16\\,bit\\,(TPID)+16\\,bit\\,(TCI)=32\\,bit=4\\,byte"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confondere l’aumento della lunghezza del frame con un aumento del payload IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.5.1, pagina PDF 174"
+    },
+    {
+      "id": "cyber-c10-q032",
+      "topicId": "cyber-c10-t06",
+      "question": "Come si suddivide il campo Tag Control Information (TCI)?",
+      "answer": "TCI è lungo 16 bit: PCP di 3 bit, DEI di 1 bit e VID di 12 bit.",
+      "detail": "PCP riguarda la priorità; DEI la possibile eleggibilità allo scarto; VID identifica la VLAN. Il TPID è un campo distinto, di 16 bit, che precede TCI.",
+      "example": "La concatenazione PCP=101, DEI=0, VID=000000010100 forma il TCI del caso didattico.",
+      "formulas": [
+        {
+          "latex": "3+1+12=16\\ \\mathrm{bit}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "I bit di PCP/DEI non partecipano al valore numerico del VID.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.5.1, pagina PDF 174"
+    },
+    {
+      "id": "cyber-c10-q033",
+      "topicId": "cyber-c10-t06",
+      "question": "Che cos’è TPID 0x8100 nel tag 802.1Q?",
+      "answer": "È il Tag Protocol Identifier a 16 bit che segnala un comune tag Ethernet C-VLAN prima dei 16 bit di TCI.",
+      "detail": "Permette agli apparati di interpretare i bit successivi come informazioni di tagging anziché direttamente come Type/Length. Esistono anche altri contesti di tagging, per esempio S-tag degli operatori 802.1ad, distinti dal C-tag ordinario.",
+      "example": "Un frame con TPID 0x8100 viene riconosciuto come dotato di C-tag 802.1Q.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare 0x8100 come ID VLAN o priorità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.5.2, pagina PDF 174"
+    },
+    {
+      "id": "cyber-c10-q034",
+      "topicId": "cyber-c10-t06",
+      "question": "Qual è il significato del campo PCP e quali valori può assumere?",
+      "answer": "Priority Code Point è un campo da 3 bit, con valori 0–7, che indica la classe di priorità del frame per il trattamento QoS.",
+      "detail": "La priorità può aiutare a differenziare traffico sensibile alla latenza, come la voce. Non identifica la VLAN né impone da sola una prestazione garantita: il trattamento dipende dalle policy degli apparati.",
+      "example": "PCP 5 e VID 20 significano priorità 5 per un frame della VLAN 20, non VLAN 5.",
+      "formulas": [
+        {
+          "latex": "2^3=8\\ \\mathrm{valori}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non includere i 3 bit di PCP nel numero di VID.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.5.3, pagina PDF 174"
+    },
+    {
+      "id": "cyber-c10-q035",
+      "topicId": "cyber-c10-t06",
+      "question": "Perché nel tag 802.1Q si incontrano i nomi CFI e DEI?",
+      "answer": "Sono denominazioni storica e attuale dello stesso bit di TCI: CFI (Canonical Format Indicator) nei contesti legacy e DEI (Drop Eligible Indicator) nel contesto Ethernet moderno.",
+      "detail": "Il DEI indica l’eleggibilità allo scarto in caso di congestione secondo policy; CFI richiamava storicamente aspetti di compatibilità dei formati. Non si sommano: occupano un solo bit del TCI.",
+      "example": "Una tabella antica può riportare PCP/CFI/VID; una moderna PCP/DEI/VID.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire CFI e DEI come due distinti campi da un bit.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.5.4, pagina PDF 174"
+    },
+    {
+      "id": "cyber-c10-q036",
+      "topicId": "cyber-c10-t06",
+      "question": "Quante VLAN ordinarie sono identificabili con il VID a 12 bit?",
+      "answer": "Il VID rappresenta 4096 combinazioni, ma 0 è riservato al priority-tagged e 4095 è riservato; gli ID VLAN ordinari sono 1–4094.",
+      "detail": "Il numero effettivo di VLAN configurabili su uno specifico apparato può essere inferiore, per limiti e riserve della piattaforma. La sola presenza di un VID in un frame non implica ammissibilità della VLAN sulla porta.",
+      "example": "VID 200 può essere sintatticamente valido ma rifiutato su un trunk che ammette solo VLAN 10 e 20.",
+      "formulas": [
+        {
+          "latex": "2^{12}=4096"
+        },
+        {
+          "latex": "\\mathrm{VID\\ ordinari}=1,\\ldots,4094"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non dichiarare che tutti i 4096 valori sono VLAN utente utilizzabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.5.5, pagina PDF 175"
+    },
+    {
+      "id": "cyber-c10-q037",
+      "topicId": "cyber-c10-t06",
+      "question": "Quali verifiche compie uno switch prima di accettare un frame tagged con VID valido?",
+      "answer": "Controlla secondo la configurazione che la VLAN esista, sia consentita sull’interfaccia e che il frame rispetti regole e policy di ingresso.",
+      "detail": "Uno standard che rappresenta 12 bit di VID non obbliga ogni dispositivo a creare o trasportare tutte le VLAN. VLAN database e allowed VLANs sono vincoli pratici distinti dalla codifica binaria.",
+      "example": "VID 200 su trunk allowed 10,20 non deve passare perché l’ID è valido in astratto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere validità del numero con autorizzazione del traffico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.5.5, pagina PDF 175"
+    },
+    {
+      "id": "cyber-c10-q038",
+      "topicId": "cyber-c10-t07",
+      "question": "Come si costruisce il TCI con PCP=5, DEI=0, VID=20?",
+      "answer": "Si scrivono PCP=101 (3 bit), DEI=0 (1 bit), VID=000000010100 (12 bit) e si concatenano in un campo da 16 bit.",
+      "detail": "La sequenza ottenuta è 1010 0000 0001 0100, equivalente a 0xA014. Il tag completo antepone TPID=0x8100 al TCI. Il valore PCP rimane una priorità e non entra nel valore numerico del VID.",
+      "example": "Tag comune: TPID 0x8100 + TCI 0xA014; VID 20 e PCP 5.",
+      "formulas": [
+        {
+          "latex": "\\mathrm{TCI}=(5\\ll13)\\;|\\;(0\\ll12)\\;|\\;20=0xA014"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non leggere i primi 3 bit del TCI come parte del VID.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.5.6, pagina PDF 175"
+    },
+    {
+      "id": "cyber-c10-q039",
+      "topicId": "cyber-c10-t07",
+      "question": "Ricostruisci il percorso di un frame tra due PC in VLAN 10 collegati a switch diversi.",
+      "answer": "PC sorgente invia untagged alla porta access; SW1 classifica VLAN 10 e trasmette tagged sul trunk; SW2 legge VID 10 e invia untagged alla porta access del PC destinatario.",
+      "detail": "La VLAN è gestita dagli apparati di rete. L’host finale non deve necessariamente sapere che il frame è transitato con tag. Il trunk e i due switch devono permettere VLAN 10.",
+      "example": "PC-A → SW1 access VLAN 10 → trunk VID 10 → SW2 access VLAN 10 → PC-B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire il tag al pacchetto IP end-to-end: è una proprietà del frame Ethernet sul collegamento appropriato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.5.7, pagina PDF 175"
+    },
+    {
+      "id": "cyber-c10-q040",
+      "topicId": "cyber-c10-t08",
+      "question": "Come può una VLAN estendersi oltre un singolo switch?",
+      "answer": "Collegando gli switch tramite trunk 802.1Q che trasportano la medesima VLAN, configurata o resa disponibile correttamente sui dispositivi interessati.",
+      "detail": "Host fisicamente lontani possono appartenere allo stesso dominio broadcast logico. Il trunk conserva la distinzione tra VLAN tramite VID; non è necessaria una nuova VLAN solo perché cambia switch.",
+      "example": "Utenti VLAN 10 a due piani diversi comunicano tramite trunk fra gli switch.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare due switch fisici automaticamente due domini broadcast distinti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.6, pagina PDF 175"
+    },
+    {
+      "id": "cyber-c10-q041",
+      "topicId": "cyber-c10-t08",
+      "question": "Che cosa succede al broadcast VLAN 10 in un collegamento SW-A–SW-B che ammette VLAN 10 e 20?",
+      "answer": "Il broadcast può propagarsi alle porte della VLAN 10 sui due switch, ma non alle porte che appartengono soltanto alla VLAN 20.",
+      "detail": "Il collegamento comune trasporta frame di VLAN differenti con identificatori separati. Contano membership VLAN, allowed VLANs, port state e topologia effettiva.",
+      "example": "Un ARP lanciato da un PC VLAN 10 su SW-A può raggiungere un PC VLAN 10 su SW-B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il trunk non è un router che invia broadcast tra VLAN differenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.6.1, pagina PDF 175"
+    },
+    {
+      "id": "cyber-c10-q042",
+      "topicId": "cyber-c10-t08",
+      "question": "Perché definire in modo restrittivo le allowed VLANs sui trunk?",
+      "answer": "Per trasportare soltanto le VLAN necessarie, riducendo traffico non utile, errori e superfici di esposizione superflue.",
+      "detail": "Occorre valutare se uno switch remoto ospita dispositivi di una VLAN o se funge da transito. Il filtraggio agisce su membership/forwarding L2; non sostituisce ACL e firewall dei flussi IP consentiti.",
+      "example": "Un collegamento verso una zona senza VLAN 30 può non aver bisogno di VLAN 30 nella lista allowed.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rimuovere una VLAN da un trunk intermedio senza verificare se sia necessaria oltre quel punto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.6.2, pagina PDF 176"
+    },
+    {
+      "id": "cyber-c10-q043",
+      "topicId": "cyber-c10-t05",
+      "question": "Che cos’è una native VLAN mismatch e quali problemi può causare?",
+      "answer": "È una incongruenza fra le estremità del trunk nel trattamento dei frame untagged, che possono essere assegnati a VLAN diverse.",
+      "detail": "Se un lato classifica untagged come VLAN 99 e l’altro come VLAN 1, possono derivare inoltri inattesi, problemi operativi, messaggi diagnostici e rischi di sicurezza. La configurazione di native VLAN/PVID e delle VLAN ammesse deve essere coerente.",
+      "example": "SW1 native 99, SW2 native 1 sullo stesso trunk: il medesimo frame senza tag è interpretato diversamente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che 802.1Q imponga per sempre native VLAN 1 in tutte le piattaforme.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.6.3, pagina PDF 176"
+    },
+    {
+      "id": "cyber-c10-q044",
+      "topicId": "cyber-c10-t08",
+      "question": "Perché un loop di livello 2 può provocare una broadcast storm su più switch?",
+      "answer": "Perché i frame broadcast o unknown unicast possono essere inoltrati ripetutamente su percorsi ridondanti senza un corretto controllo degli anelli.",
+      "detail": "I trunk possono estendere il problema attraverso più apparati e VLAN. Soluzioni come STP, RSTP e MSTP regolano i collegamenti ridondanti; una VLAN non previene di per sé i loop.",
+      "example": "Due percorsi paralleli tra tre switch possono far circolare copie dei broadcast e saturare risorse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non disabilitare indiscriminatamente STP pensando che VLAN diverse risolvano il problema.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.6.4, pagina PDF 176"
+    },
+    {
+      "id": "cyber-c10-q045",
+      "topicId": "cyber-c10-t08",
+      "question": "Quali famiglie di protocolli aiutano a controllare i loop di livello 2?",
+      "answer": "Spanning Tree Protocol (STP), Rapid STP (RSTP), Multiple STP (MSTP) o meccanismi/topologie alternative di controllo.",
+      "detail": "La scelta dipende dalla rete e dal vendor. Devono essere governate anche porte edge e messaggi BPDU, non soltanto la classificazione 802.1Q.",
+      "example": "RSTP può limitare la persistenza di cicli fra switch ridondati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "STP e 802.1Q risolvono problemi differenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.6.4, pagina PDF 176"
+    },
+    {
+      "id": "cyber-c10-q046",
+      "topicId": "cyber-c10-t09",
+      "question": "Che cos’è VTP e qual è la differenza rispetto a IEEE 802.1Q?",
+      "answer": "VLAN Trunking Protocol è un protocollo Cisco che distribuisce informazioni di configurazione VLAN nel dominio VTP; IEEE 802.1Q gestisce il tagging e il trasporto dei frame VLAN sui trunk.",
+      "detail": "VTP aiuta ad amministrare database VLAN su più switch, ma la rete può funzionare senza di esso. Confondere piano di gestione e forwarding dei dati porta a diagnosi errate.",
+      "example": "Un trunk IEEE 802.1Q trasporta frame VLAN 20 anche se gli switch usano VTP transparent.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "VTP non è il protocollo che materialmente trasporta il frame Ethernet tagged.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.7, pagina PDF 176"
+    },
+    {
+      "id": "cyber-c10-q047",
+      "topicId": "cyber-c10-t09",
+      "question": "Quale problema organizzativo può risolvere VTP in una rete di molti switch?",
+      "answer": "Riduce la necessità di creare manualmente ogni nuova VLAN su tutti i dispositivi, distribuendo modifiche coerenti nel dominio configurato.",
+      "detail": "La sincronizzazione può semplificare amministrazione e ridurre divergenze fra database, ma permette anche di propagare rapidamente errori: occorrono processi di cambio controllati.",
+      "example": "Dieci switch devono conoscere VLAN 50; un sistema VTP coerente può annunciarne la creazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare la distribuzione automatica come sempre migliore della gestione locale o automatizzata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.7.1, pagina PDF 176"
+    },
+    {
+      "id": "cyber-c10-q048",
+      "topicId": "cyber-c10-t09",
+      "question": "Come differiscono le modalità VTP server, client, transparent e off?",
+      "answer": "Server modifica e annuncia il database VLAN; client riceve e propaga le informazioni condivise; transparent gestisce VLAN localmente senza applicare normalmente gli aggiornamenti del dominio; off disabilita la partecipazione nelle piattaforme che lo prevedono.",
+      "detail": "La modalità transparent può inoltrare annunci in versioni compatibili, ma non è un client “spento”. Comportamenti e opzioni dipendono da versione e piattaforma; VTPv3 include ruoli specifici.",
+      "example": "Il laboratorio usa vtp mode transparent su SW1 e SW2 per controllare localmente le VLAN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare transparent e client né assumere off disponibile ovunque.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.7.2, pagina PDF 176"
+    },
+    {
+      "id": "cyber-c10-q049",
+      "topicId": "cyber-c10-t09",
+      "question": "Perché la modalità VTP transparent è adatta al laboratorio introduttivo?",
+      "answer": "Permette di creare e gestire localmente il database VLAN su ciascuno switch, senza dipendere dalla propagazione VTP.",
+      "detail": "L’attenzione rimane su access, trunk, frame tagged e routing inter-VLAN. Si possono comunque costruire le stesse VLAN su switch differenti e trasportarle con 802.1Q.",
+      "example": "Il comando didattico è “vtp mode transparent” su SW1 e SW2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che transparent impedisca l’uso dei trunk.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.7.2, pagina PDF 176"
+    },
+    {
+      "id": "cyber-c10-q050",
+      "topicId": "cyber-c10-t09",
+      "question": "Quali parametri devono essere considerati per partecipare correttamente a un dominio VTP?",
+      "answer": "Nome del dominio, versione del protocollo, eventuali meccanismi di protezione e configuration revision number.",
+      "detail": "Il contatore di revisione identifica uno stato di configurazione distribuita, non il numero di VLAN o la release software. Le revisioni e il loro significato operativo variano in base alle regole e alla versione VTP.",
+      "example": "Uno switch nel dominio sbagliato non deve essere considerato automaticamente parte della stessa distribuzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non leggere revision 80 come “80 VLAN create”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.7.3, pagina PDF 177"
+    },
+    {
+      "id": "cyber-c10-q051",
+      "topicId": "cyber-c10-t09",
+      "question": "Che cos’è la configuration revision number VTP?",
+      "answer": "Un contatore della versione del database VLAN distribuito nel dominio, utilizzato per interpretare la novità degli aggiornamenti.",
+      "detail": "In determinate versioni revisioni maggiori possono prevalere su quelle inferiori. Il rischio è organizzativo e tecnico: un dispositivo con stato più recente ma sbagliato può diffondere configurazioni dannose.",
+      "example": "Revision 80 e revision 45 non sono numeri di VLAN; possono rappresentare età diverse dello stato distribuito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il numero di revisione non è una garanzia della correttezza della configurazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.7.3, pagina PDF 177"
+    },
+    {
+      "id": "cyber-c10-q052",
+      "topicId": "cyber-c10-t09",
+      "question": "Perché collegare uno switch con una revision VTP più alta può interrompere una rete?",
+      "answer": "In particolare con VTPv1/v2, può propagare un database VLAN non desiderato che sostituisce quello operativo e fa scomparire VLAN necessarie.",
+      "detail": "Prima di collegare uno switch occorre verificare dominio, modalità, versione, revision e procedura di reset/migrazione. VTPv3 aggiunge controlli e primary server, ma non rende inutile il change management.",
+      "example": "Apparato revision 80 collegato a dominio revision 45: rischio di distribuire VLAN non coerenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che il collegamento azzeri automaticamente il numero di revisione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.7.4, pagina PDF 177"
+    },
+    {
+      "id": "cyber-c10-q053",
+      "topicId": "cyber-c10-t09",
+      "question": "Quali verifiche preventive eseguire prima di introdurre uno switch in un dominio VTP?",
+      "answer": "Controllare dominio, modalità, versione, revision, database VLAN, autorizzazione al cambiamento e possibilità di rollback.",
+      "detail": "Sulle piattaforme tradizionali una procedura di messa in sicurezza può coinvolgere il passaggio a transparent e la verifica dello stato; la procedura esatta va scelta secondo versione e documentazione vendor.",
+      "example": "Eseguire show vtp status e confrontare lo stato con la rete di destinazione prima di connettere il trunk.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eseguire modifiche casuali su una rete di produzione senza aver preservato le evidenze.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.7.4, pagina PDF 177"
+    },
+    {
+      "id": "cyber-c10-q054",
+      "topicId": "cyber-c10-t09",
+      "question": "Quale lezione gestionale deriva dal caso dello switch di laboratorio introdotto in produzione?",
+      "answer": "Un errore di change management può propagare una configurazione VLAN errata e interrompere servizi anche se nessuno ha attaccato la rete.",
+      "detail": "La sicurezza richiede inventario, verifica preventiva, backup delle configurazioni, approvazione dei change, controlli pre-change e rollback. Il problema non è solo la sintassi dei comandi.",
+      "example": "Uno switch riutilizzato con configurazione VTP residua viene collegato senza verifiche e gli switch client perdono VLAN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere ogni interruzione per VTP come attacco intenzionale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.7.5, pagina PDF 177"
+    },
+    {
+      "id": "cyber-c10-q055",
+      "topicId": "cyber-c10-t09",
+      "question": "È obbligatorio usare VTP per creare VLAN su più switch?",
+      "answer": "No. VLAN e trunk 802.1Q possono essere configurati e funzionare anche senza VTP, mediante configurazione locale o automazione.",
+      "detail": "VTP è una possibile soluzione Cisco di distribuzione della configurazione. La compatibilità con il trasporto tagged dipende da membership e trunk, non dall’adesione al dominio VTP.",
+      "example": "Due switch con VLAN 10 creata localmente e trunk allowed VLAN 10 possono comunicare anche in transparent.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rendere VTP un prerequisito di router-on-a-stick o 802.1Q.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.7.6, pagina PDF 177"
+    },
+    {
+      "id": "cyber-c10-q056",
+      "topicId": "cyber-c10-t10",
+      "question": "Perché per inviare pacchetti IP fra VLAN differenti serve il livello 3?",
+      "answer": "Perché ogni VLAN è un dominio Ethernet di livello 2 separato; un router o switch L3 deve esaminare gli indirizzi IP e instradare il traffico fra subnet differenti.",
+      "detail": "Lo switch L2 non converte un frame VLAN 10 in traffico della VLAN 20. Il gateway riceve il pacchetto IP su un’interfaccia della subnet sorgente e ne decide il percorso e la policy verso la rete di destinazione.",
+      "example": "Per comunicare fra 192.168.10.10/24 e 192.168.20.10/24 si usa un gateway L3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un trunk, da solo, non realizza routing inter-VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.8, pagina PDF 177"
+    },
+    {
+      "id": "cyber-c10-q057",
+      "topicId": "cyber-c10-t10",
+      "question": "Perché l’attivazione del routing non costituisce automaticamente un controllo di accesso?",
+      "answer": "Perché il gateway può inoltrare pacchetti fra subnet secondo le rotte disponibili, se nessuna ACL o firewall impedisce il flusso.",
+      "detail": "L’amministratore deve tradurre la segmentazione in regole di sorgente, destinazione, protocolli e porte. Le ACL sono strumenti di policy diversi dalla VLAN.",
+      "example": "Due reparti in VLAN differenti possono scambiarsi pacchetti se il router ha le rotte e non ci sono filtri.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire sicura una rete soltanto perché ha subnet separate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.8, pagina PDF 177"
+    },
+    {
+      "id": "cyber-c10-q058",
+      "topicId": "cyber-c10-t10",
+      "question": "Come funziona il metodo tradizionale di routing con una interfaccia fisica del router per VLAN?",
+      "answer": "Ogni VLAN è collegata tramite una porta access a una distinta interfaccia fisica del router, indirizzata nella subnet corrispondente.",
+      "detail": "Il router riceve pacchetti da un’interfaccia e li inoltra sull’altra dopo le verifiche di routing. È didatticamente semplice ma poco scalabile perché il numero di porte e cavi aumenta con le VLAN.",
+      "example": "G0/0 del router collega VLAN 10, G0/1 collega VLAN 20.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non serve un tag trunk su ogni singolo collegamento access del modello tradizionale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.8.1, pagina PDF 178"
+    },
+    {
+      "id": "cyber-c10-q059",
+      "topicId": "cyber-c10-t10",
+      "question": "Come funziona un router-on-a-stick (ROAS)?",
+      "answer": "Una sola interfaccia fisica del router è collegata in trunk 802.1Q allo switch; più subinterfacce logiche identificano le VLAN e possiedono i relativi IP di gateway.",
+      "detail": "Ogni subinterfaccia è associata a un VID con encapsulation dot1Q, per esempio G0/0.10 per VLAN 10, G0/0.20 per VLAN 20. Il router instrada fra subnet; il collegamento unico può costituire un collo di bottiglia in scenari molto trafficati.",
+      "example": "G0/0.10 → 192.168.10.1/24; G0/0.20 → 192.168.20.1/24.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare le subinterfacce quattro porte fisiche distinte.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.8.2, pagina PDF 178"
+    },
+    {
+      "id": "cyber-c10-q060",
+      "topicId": "cyber-c10-t10",
+      "question": "Qual è il limite prestazionale tipico del router-on-a-stick?",
+      "answer": "Il traffico di più VLAN attraversa il medesimo collegamento fisico verso il router, che può diventare un punto di congestione.",
+      "detail": "Il limite reale dipende dalla capacità dell’interfaccia, dalla piattaforma e dal profilo di traffico. ROAS resta valido per laboratori e reti contenute.",
+      "example": "Un unico trunk a capacità finita sostiene molte comunicazioni inter-VLAN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che ROAS sia sempre inadeguato o insicuro a prescindere dal carico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.8.2, pagina PDF 178"
+    },
+    {
+      "id": "cyber-c10-q061",
+      "topicId": "cyber-c10-t10",
+      "question": "Che cos’è una SVI e quando può effettuare routing inter-VLAN?",
+      "answer": "Una Switch Virtual Interface è una interfaccia IP logica associata a una VLAN; su uno switch L3, con routing abilitato, può servire da gateway di quella subnet.",
+      "detail": "Per esempio Vlan10 = 192.168.10.1/24 e Vlan20 = 192.168.20.1/24. Su switch L2 una SVI può essere usata solo per management e non implica capacità di routing.",
+      "example": "Uno switch multilayer con ip routing abilitato collega le subnet tramite le proprie SVI.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il comando interface vlan non prova, da solo, che un apparato supporti L3.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.8.3, pagina PDF 178"
+    },
+    {
+      "id": "cyber-c10-q062",
+      "topicId": "cyber-c10-t10",
+      "question": "Perché il routing su switch L3 con SVI può essere più scalabile rispetto a ROAS?",
+      "answer": "Perché switching e routing avvengono nello stesso apparato, senza dover inviare ogni scambio inter-VLAN a un router esterno tramite un unico trunk.",
+      "detail": "La scalabilità concreta dipende da modello, risorse e funzionalità. La presenza di routing locale non elimina la necessità di ACL e di un confine di fiducia controllato.",
+      "example": "Un campus può usare SVI su uno switch multilayer per molte subnet dei reparti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Switch L3 non significa sicurezza automatica dei flussi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.8.3, pagina PDF 178"
+    },
+    {
+      "id": "cyber-c10-q063",
+      "topicId": "cyber-c10-t10",
+      "question": "Confronta le tre architetture di inter-VLAN routing.",
+      "answer": "Tradizionale: interfacce fisiche router distinte e scarsa scalabilità. ROAS: unico trunk e subinterfacce router. Switch multilayer: SVI locali e routing integrato.",
+      "detail": "La differenza è dove si collocano i gateway e come si collegano le VLAN. La necessità di definire policy di accesso, rotte e monitoraggio resta comune a tutte.",
+      "example": "Piccola rete didattica: tradizionale; laboratorio: ROAS; campus aziendale: SVI su switch L3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che solo un router fisico esterno possa eseguire inter-VLAN routing.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.8.4, pagina PDF 179"
+    },
+    {
+      "id": "cyber-c10-q064",
+      "topicId": "cyber-c10-t11",
+      "question": "Quali sono i primi tre passaggi di un pacchetto da PC-A VLAN 10 a PC-B VLAN 20?",
+      "answer": "PC-A rileva che PC-B appartiene a una subnet esterna; risolve tramite ARP il MAC del proprio gateway se necessario; invia un frame Ethernet a quel MAC contenente un pacchetto IP destinato a PC-B.",
+      "detail": "Nel caso manuale PC-A è 192.168.10.10/24, PC-B 192.168.20.10/24, gateway 192.168.10.1 e 192.168.20.1. L’IP destinatario resta 192.168.20.10, mentre il MAC di primo hop è quello del gateway VLAN 10.",
+      "example": "Destinazione IP 192.168.20.10 ma primo frame Ethernet verso il MAC di 192.168.10.1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserire il MAC remoto di PC-B come destinatario del primo frame locale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.8.5, pagina PDF 179"
+    },
+    {
+      "id": "cyber-c10-q065",
+      "topicId": "cyber-c10-t11",
+      "question": "Che cosa fa il dispositivo di livello 3 quando riceve il frame diretto a un’altra VLAN?",
+      "answer": "Rimuove l’incapsulamento L2 d’ingresso, consulta routing e policy, eventualmente risolve il MAC del destinatario nella VLAN d’uscita e costruisce un nuovo frame Ethernet.",
+      "detail": "Il routing IP conserva in genere indirizzi IP sorgente/destinazione end-to-end, mentre cambiano MAC e incapsulamento sui segmenti Ethernet. Il router deve rispettare ACL e altre policy.",
+      "example": "Frame VLAN 10 verso gateway → router → nuovo frame VLAN 20 verso PC-B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che il router inoltri il medesimo frame Ethernet intatto fra VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.8.5, pagina PDF 179"
+    },
+    {
+      "id": "cyber-c10-q066",
+      "topicId": "cyber-c10-t11",
+      "question": "Perché cambiano i MAC ma non necessariamente gli IP nel percorso inter-VLAN?",
+      "answer": "Gli indirizzi MAC identificano l’inoltro su ciascun collegamento L2; gli indirizzi IP descrivono i punti logici della comunicazione instradata.",
+      "detail": "Il router incapsula nuovamente il pacchetto nel frame di uscita. La regola citata vale in assenza di operazioni come NAT, che possono cambiare gli indirizzi IP.",
+      "example": "Da VLAN 10 a VLAN 20 il MAC di destinazione passa da quello del gateway a quello di PC-B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere ARP del next hop con modifica dell’IP destinatario.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.8.5, pagina PDF 179"
+    },
+    {
+      "id": "cyber-c10-q067",
+      "topicId": "cyber-c10-t12",
+      "question": "Quali classi di attacco bisogna considerare in una LAN segmentata mediante VLAN?",
+      "answer": "Tentativi di VLAN hopping, attacchi alla tabella MAC, servizi DHCP abusivi, ARP spoofing, interferenze STP/BPDU, compromissione del management e flussi inter-VLAN non filtrati.",
+      "detail": "Le VLAN forniscono il confine L2 ma non sostituiscono controlli sugli ingressi, identità, gestione degli apparati e policy di livello 3. Occorre valutare minacce locali e al piano di controllo.",
+      "example": "Due host nella stessa VLAN ospiti possono ancora essere esposti a manipolazioni ARP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare il threat model al solo double tagging.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.9, pagina PDF 179"
+    },
+    {
+      "id": "cyber-c10-q068",
+      "topicId": "cyber-c10-t12",
+      "question": "Che cos’è il VLAN hopping?",
+      "answer": "È una famiglia di tentativi di raggiungere VLAN non previste sfruttando configurazioni o comportamenti della rete VLAN-aware.",
+      "detail": "Le tecniche didattiche includono la negoziazione abusiva di trunk DTP e, in contesti specifici, double tagging. Nessuna tecnica è automaticamente efficace contro ogni rete 802.1Q.",
+      "example": "Una porta utente dinamica diventa trunk quando riceve segnali DTP appropriati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere il VLAN hopping come normale comunicazione inter-VLAN autorizzata dal router.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.9.1, pagina PDF 179"
+    },
+    {
+      "id": "cyber-c10-q069",
+      "topicId": "cyber-c10-t12",
+      "question": "In che modo la negoziazione automatica DTP può favorire un trunk non autorizzato?",
+      "answer": "Su piattaforme che la supportano, una porta configurata in modalità dinamica potrebbe negoziare un trunk con un peer non fidato.",
+      "detail": "Il dispositivo collegato può allora ricevere o trasmettere più VLAN delle necessarie. Le contromisure sono porte utente access statiche, trunk espliciti, limitazione delle allowed VLANs e DTP disabilitato dove opportuno.",
+      "example": "Un computer non affidabile è collegato a una porta lasciata in modalità di negoziazione del trunk.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire lo stesso rischio DTP a ogni switch o versione indipendentemente dalla configurazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.9.1, pagina PDF 179"
+    },
+    {
+      "id": "cyber-c10-q070",
+      "topicId": "cyber-c10-t12",
+      "question": "Che cos’è il double tagging e perché richiede condizioni specifiche?",
+      "answer": "È un tentativo di utilizzare più tag VLAN affinché apparati successivi interpretino in modo diverso il traffico dopo la gestione del tag esterno.",
+      "detail": "Può essere rilevante in particolari configurazioni con trunk e native VLAN. Non basta aggiungere due tag per superare ogni segmentazione e di norma non si ottiene così una comunicazione bidirezionale generalizzata.",
+      "example": "Un frame con tag esterno trattato come native VLAN può lasciare un tag interno interpretato sul tratto successivo, se ricorrono i prerequisiti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare il double tagging come vulnerabilità inevitabile di IEEE 802.1Q.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.9.1, pagina PDF 179"
+    },
+    {
+      "id": "cyber-c10-q071",
+      "topicId": "cyber-c10-t12",
+      "question": "Che cos’è un attacco di MAC flooding e come si può mitigare?",
+      "answer": "Un volume anomalo di MAC sorgenti tenta di consumare le risorse finite della FDB, potenzialmente aumentando flooding e instabilità.",
+      "detail": "La reazione dipende dall’implementazione dello switch. Limitazioni degli indirizzi appresi per porta (Port Security), controllo dell’accesso e monitoraggio aiutano a ridurre il rischio.",
+      "example": "Una porta apprende migliaia di MAC apparentemente distinti e supera soglie della tabella.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che qualunque switch saturo diventi automaticamente un hub.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.9.2, pagina PDF 179"
+    },
+    {
+      "id": "cyber-c10-q072",
+      "topicId": "cyber-c10-t12",
+      "question": "Che cos’è un rogue DHCP server e quale danno può causare nella VLAN?",
+      "answer": "È un servizio DHCP non autorizzato che può fornire IP, gateway o resolver DNS falsi agli host della rete locale.",
+      "detail": "Una VLAN limita il perimetro broadcast ma non impedisce il rogue DHCP al suo interno. DHCP snooping può distinguere porte trusted/untrusted e filtrare risposte indesiderate.",
+      "example": "Un falso gateway fornito via DHCP può deviare il traffico verso apparati controllati dall’attaccante.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere DHCP snooping con un controllo crittografico delle pagine web.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.9.3, pagina PDF 180"
+    },
+    {
+      "id": "cyber-c10-q073",
+      "topicId": "cyber-c10-t12",
+      "question": "Come funziona DHCP snooping come controllo difensivo?",
+      "answer": "Verifica il traffico DHCP in ingresso distinguendo porte fidate e non fidate, per limitare risposte da server non autorizzati.",
+      "detail": "Su alcune piattaforme costruisce binding IP/MAC/porta/VLAN che possono essere utilizzati da altri controlli, come Dynamic ARP Inspection. Necessita configurazione coerente.",
+      "example": "Un PC non deve poter improvvisarsi server DHCP per tutta la VLAN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non impostare a trusted indiscriminatamente tutte le porte client.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.9.3, pagina PDF 180"
+    },
+    {
+      "id": "cyber-c10-q074",
+      "topicId": "cyber-c10-t12",
+      "question": "Che cos’è ARP spoofing e perché una VLAN non lo elimina fra host dello stesso segmento?",
+      "answer": "È l’invio di informazioni ARP false per associare un IPv4 legittimo, per esempio il gateway, al MAC dell’attaccante.",
+      "detail": "ARP tradizionale non autentica crittograficamente le associazioni. La VLAN confina il dominio ma non protegge automaticamente i dispositivi che vi appartengono. L’attacco può favorire deviazione del traffico o MitM.",
+      "example": "Un host fa credere ai PC di VLAN 10 che 192.168.10.1 corrisponda al suo MAC.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a 802.1Q la validazione delle risposte ARP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.9.4, pagina PDF 180"
+    },
+    {
+      "id": "cyber-c10-q075",
+      "topicId": "cyber-c10-t12",
+      "question": "Che cosa fa Dynamic ARP Inspection e da quali dati dipende?",
+      "answer": "Valida i messaggi ARP rispetto a binding affidabili e policy per ridurre ARP spoofing e poisoning.",
+      "detail": "Le associazioni possono derivare da DHCP snooping o essere definite staticamente. Senza una configurazione coerente, il controllo può non rilevare falsificazioni o bloccare traffico legittimo.",
+      "example": "DAI rifiuta un annuncio ARP incoerente con il binding noto per quella porta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare DAI una protezione automatica priva di prerequisiti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.9.4, pagina PDF 180"
+    },
+    {
+      "id": "cyber-c10-q076",
+      "topicId": "cyber-c10-t13",
+      "question": "In che modo l’abuso di STP e BPDU minaccia una LAN?",
+      "answer": "Messaggi BPDU inattesi o manipolati possono interferire con la selezione della topologia Spanning Tree e alterare percorsi di livello 2.",
+      "detail": "Sulle porte edge destinate a host, PortFast e BPDU Guard correttamente applicati limitano la partecipazione impropria al tree. Le protezioni vanno scelte secondo topologia e vendor.",
+      "example": "Un dispositivo non autorizzato invia BPDU su una porta che dovrebbe connettere solo un PC.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non abilitare BPDU Guard indistintamente sui trunk legittimi fra switch.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.9.5, pagina PDF 180"
+    },
+    {
+      "id": "cyber-c10-q077",
+      "topicId": "cyber-c10-t13",
+      "question": "Come deve essere protetta una VLAN destinata al management degli switch?",
+      "answer": "Va separata dalle reti non autorizzate e difesa con ACL, autenticazione robusta, protocolli amministrativi sicuri, logging e gestione delle credenziali.",
+      "detail": "SSH e, dove utile, jump host o percorsi di gestione dedicati limitano la superficie d’accesso. La membership VLAN non impedisce da sola che un utente raggiunga l’IP di gestione tramite routing.",
+      "example": "VLAN 99 per gestione accessibile agli amministratori autorizzati ma non a VLAN 30 ospiti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidarsi soltanto all’oscurità dell’indirizzo IP di management.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.9.6, pagina PDF 180"
+    },
+    {
+      "id": "cyber-c10-q078",
+      "topicId": "cyber-c10-t13",
+      "question": "Perché un host ospite può raggiungere il database amministrativo nonostante le due VLAN separate?",
+      "answer": "Perché uno switch L3 o router può instradare tra le subnet se non è presente una policy che neghi il traffico.",
+      "detail": "Non è una “perdita” del tagging: è un comportamento previsto del livello 3. ACL, firewall e autorizzazioni applicative devono essere collocati sul percorso di fiducia pertinente.",
+      "example": "VLAN 30 → gateway → VLAN 10 funziona se routing consentito senza filtri.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non diagnosticare la VLAN come guasta per un problema di policy L3.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.9.7, pagina PDF 180"
+    },
+    {
+      "id": "cyber-c10-q079",
+      "topicId": "cyber-c10-t14",
+      "question": "Che cos’è il network hardening e perché è necessario anche con le VLAN?",
+      "answer": "È la configurazione e manutenzione degli apparati per ridurre funzionalità inutili, esposizioni, errori e vulnerabilità attraverso controlli coordinati.",
+      "detail": "Include access statiche, trunk espliciti, allowed VLANs, gestione della native VLAN, DTP disabilitato dove opportuno, porte inutilizzate disabilitate, Port Security, 802.1X, DHCP snooping, DAI, BPDU Guard, ACL, logging e monitoraggio.",
+      "example": "Una VLAN guest separata non è protetta se una porta dinamica negozia trunk o un gateway consente tutto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La difesa in profondità non significa abilitare ogni controllo senza comprenderne gli effetti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.10, pagina PDF 180"
+    },
+    {
+      "id": "cyber-c10-q080",
+      "topicId": "cyber-c10-t14",
+      "question": "Quali limiti vanno associati ai singoli controlli di hardening VLAN?",
+      "answer": "Porte access statiche non autenticano gli utenti; allowed VLANs non sono firewall; Port Security non sostituisce 802.1X; ACL necessitano policy e test; DHCP snooping/DAI richiedono binding e configurazione corretta.",
+      "detail": "La scelta deve tenere conto di funzioni necessarie, dipendenze tra controlli e possibili effetti sulla disponibilità. Anche log e credenziali dei dispositivi richiedono protezione.",
+      "example": "Port Security limita MAC appresi, ma una credenziale compromessa resta un problema applicativo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere una singola misura come soluzione universale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.10, pagina PDF 180"
+    },
+    {
+      "id": "cyber-c10-q081",
+      "topicId": "cyber-c10-t15",
+      "question": "Come si applica il principio del minimo privilegio alla rete aziendale?",
+      "answer": "Si autorizzano solo le comunicazioni necessarie fra sorgenti, destinazioni, servizi e porte, negando i percorsi che non hanno ragione operativa.",
+      "detail": "Una policy chiara documenta flussi ammessi, eccezioni e test. Gli ospiti non devono amministrare switch; dispositivi IoT non devono leggere database riservati per default.",
+      "example": "Ospiti VLAN 30 verso management VLAN 99: deny; amministratori autorizzati verso SSH degli switch: allow mirato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a separare visivamente i reparti nell’interfaccia dello switch.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.10.1, pagina PDF 181"
+    },
+    {
+      "id": "cyber-c10-q082",
+      "topicId": "cyber-c10-t15",
+      "question": "Come funziona IEEE 802.1X nel controllo dell’accesso a una LAN?",
+      "answer": "Controlla l’ammissione alla rete tramite una procedura di autenticazione sulla porta: supplicant nell’host, authenticator nello switch, authentication server spesso AAA/RADIUS.",
+      "detail": "In reti appropriate l’esito dell’autenticazione può determinare anche assegnazioni dinamiche VLAN. 802.1X non è 802.1Q: il primo controlla l’accesso, il secondo organizza il tagging.",
+      "example": "Un laptop si autentica prima di ottenere i permessi di rete per il proprio ruolo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il possesso fisico di una presa Ethernet una prova sufficiente di autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.10.2, pagina PDF 181"
+    },
+    {
+      "id": "cyber-c10-q083",
+      "topicId": "cyber-c10-t15",
+      "question": "Che cosa distinguono IEEE 802.1Q e IEEE 802.1X?",
+      "answer": "802.1Q gestisce VLAN, bridging e tagging Ethernet; 802.1X gestisce autenticazione/ammissione dell’endpoint sulla porta di accesso.",
+      "detail": "Sono tecnologie complementari: un utente può essere autenticato con 802.1X e poi assegnato a una VLAN gestita con 802.1Q. Nessuna delle due sostituisce da sola autorizzazioni applicative.",
+      "example": "RADIUS decide l’accesso e la VLAN assegnata; il trunk 802.1Q trasporta i frame della VLAN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non leggere il carattere finale Q/X come varianti di una medesima funzione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.10.2, pagina PDF 181"
+    },
+    {
+      "id": "cyber-c10-q084",
+      "topicId": "cyber-c10-t15",
+      "question": "Perché le VLAN sono utili ma insufficienti per realizzare Zero Trust?",
+      "answer": "Perché Zero Trust non accorda fiducia implicita soltanto per la collocazione interna: verifica identità, dispositivo, contesto e risorsa a ogni accesso pertinente.",
+      "detail": "Le VLAN contribuiscono alla segmentazione, ma la protezione richiede policy, autenticazione, autorizzazione e controlli applicativi anche per traffico interno. Una VLAN “dipendenti” non rende ogni dipendente affidabile.",
+      "example": "Un utente autenticato alla rete non ottiene automaticamente accesso a tutti i record di un’applicazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare Zero Trust con la semplice creazione di numerose VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.10.3, pagina PDF 181"
+    },
+    {
+      "id": "cyber-c10-q085",
+      "topicId": "cyber-c10-t15",
+      "question": "Come imposteresti una policy fra VLAN 10 amministrazione, 20 operazioni, 30 ospiti e 99 management?",
+      "answer": "Ospiti solo verso servizi esterni esplicitamente ammessi; management solo da amministratori autorizzati; operazioni verso soli servizi richiesti; server riservati accessibili solo a componenti autorizzati; change registrati.",
+      "detail": "La policy va espressa in flussi con sorgente, destinazione, protocollo, porta, direzione e verifiche. È possibile usare jump host e canali sicuri per il management, segmentazione dei server e monitoraggio.",
+      "example": "VLAN 30 non raggiunge 10/20/99; una postazione operativa accede soltanto all’applicazione di reparto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere “accesso a Internet consentito” con “accesso a tutte le reti consentito”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.10.4, pagina PDF 181"
+    },
+    {
+      "id": "cyber-c10-q086",
+      "topicId": "cyber-c10-t15",
+      "question": "Quali informazioni servono per tradurre una policy aziendale in ACL o regole firewall?",
+      "answer": "Sorgente, destinazione, direzione del traffico, protocolli e porte, condizioni e priorità delle regole, più il risultato atteso nei test.",
+      "detail": "Occorre verificare anche risposte delle sessioni, percorsi alternativi, configurazione degli host e dipendenze applicative. Negare una subnet è una misura di base, non l’intera gestione del rischio.",
+      "example": "Bloccare 192.168.30.0/24 verso 192.168.99.0/24 sulle interfacce corrette.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere ACL senza considerare se i flussi sono bidirezionali o stateful.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.10.4, pagina PDF 181"
+    },
+    {
+      "id": "cyber-c10-q087",
+      "topicId": "cyber-c10-t16",
+      "question": "Quale scopo ha il laboratorio VLAN del manuale e quanto sono vincolanti i comandi Cisco mostrati?",
+      "answer": "Esercitare la configurazione completa di VLAN, access, trunk, MAC learning, router-on-a-stick e ACL, usando una topologia autonoma in Packet Tracer.",
+      "detail": "Il manuale chiarisce che la topologia non presuppone il contenuto dei file .pkt del docente. I comandi sono in stile Cisco IOS e i nomi delle interfacce o la disponibilità di funzionalità possono variare in base al router, allo switch e alla versione del simulatore.",
+      "example": "Un router può avere GigabitEthernet0/0/0 anziché G0/0: la sintassi va adattata coerentemente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare i nomi d’interfaccia dell’esempio universali su qualsiasi modello.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11, pagina PDF 182"
+    },
+    {
+      "id": "cyber-c10-q088",
+      "topicId": "cyber-c10-t16",
+      "question": "Quali risultati devono essere dimostrabili al termine del laboratorio Packet Tracer?",
+      "answer": "Creazione delle quattro VLAN; associazione delle access; trunk fra gli switch; apprendimento MAC; routing inter-VLAN con subinterfacce; ACL ospiti; test di connettività e spiegazione dei blocchi.",
+      "detail": "Non basta copiare comandi: bisogna verificare separatamente lo stato L2, la tabella MAC, le interfacce L3, le rotte e l’effetto della policy. Una sequenza di test prima/dopo ACL permette di isolare le cause.",
+      "example": "PC-A e PC-D devono comunicare nella VLAN 10; PC-C deve essere isolato dalle reti interne dopo ACL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un ping riuscito non dimostra automaticamente correttezza di tutte le policy.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.1, pagina PDF 182"
+    },
+    {
+      "id": "cyber-c10-q089",
+      "topicId": "cyber-c10-t16",
+      "question": "Quali apparati e collegamenti compongono la topologia didattica del capitolo?",
+      "answer": "Due switch L2 SW1/SW2, un router R1 con subinterfacce 802.1Q e quattro PC: A e D su SW1, B e C su SW2; Gi0/1 collega gli switch e Gi0/2 di SW1 collega R1.",
+      "detail": "PC-A→SW1 Fa0/1 VLAN10; PC-D→SW1 Fa0/2 VLAN10; PC-B→SW2 Fa0/1 VLAN20; PC-C→SW2 Fa0/2 VLAN30; SW1 Gi0/1 ↔ SW2 Gi0/1; SW1 Gi0/2 ↔ R1 Gi0/0. I collegamenti switch–switch e switch–router sono trunk.",
+      "example": "La presenza di quattro VLAN non richiede quattro cavi Ethernet verso il router.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire la VLAN 99 a uno dei PC del piano: serve a management degli switch.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.2, pagina PDF 182"
+    },
+    {
+      "id": "cyber-c10-q090",
+      "topicId": "cyber-c10-t16",
+      "question": "Come cambia la topologia se il router usa l’interfaccia Gi0/0/0 anziché Gi0/0?",
+      "answer": "Occorre sostituire coerentemente il nome dell’interfaccia fisica e delle sue subinterfacce nei comandi.",
+      "detail": "La logica del ROAS non cambia: un’interfaccia fisica che supporta subinterfacce 802.1Q e più gateway logici. La sintassi esatta dipende dal modello Packet Tracer.",
+      "example": "Gi0/0/0.10 sostituisce Gi0/0.10 solo quando quella è la denominazione supportata dal router scelto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cambiare solo metà dei riferimenti all’interfaccia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.2, pagina PDF 182"
+    },
+    {
+      "id": "cyber-c10-q091",
+      "topicId": "cyber-c10-t16",
+      "question": "Qual è il piano IPv4 completo del laboratorio per VLAN 10, 20, 30 e 99?",
+      "answer": "VLAN10: PC-A 192.168.10.10, PC-D 192.168.10.11, gateway .10.1; VLAN20: PC-B 192.168.20.10, gateway .20.1; VLAN30: PC-C 192.168.30.10, gateway .30.1; VLAN99: SW1 192.168.99.2 e SW2 192.168.99.3, gateway .99.1. Ogni rete è /24.",
+      "detail": "Il router R1 utilizza G0/0.10=.10.1/24, G0/0.20=.20.1/24, G0/0.30=.30.1/24 e G0/0.99=.99.1/24. Le SVI degli switch L2 servono al management, non all’instradamento degli utenti.",
+      "example": "Il PC-C ha 192.168.30.10/24 e usa 192.168.30.1, non 192.168.10.1, come default gateway.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare indirizzo management dello switch e indirizzo della subinterfaccia router.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.3, pagina PDF 182"
+    },
+    {
+      "id": "cyber-c10-q092",
+      "topicId": "cyber-c10-t16",
+      "question": "Perché scegliere una subnet /24 distinta per ognuna delle quattro VLAN del laboratorio?",
+      "answer": "Per rendere leggibili gateway, tabella di routing e ACL, mantenendo un rapporto chiaro fra VLAN e rete IPv4.",
+      "detail": "La separazione L2 dipende dalla VLAN; il prefisso IP aiuta a realizzare la comunicazione L3. In una subnet /24 ordinaria sono presenti 256 indirizzi totali e 254 utilizzabili per host, escludendo rete e broadcast.",
+      "example": "VLAN20 → 192.168.20.0/24 e gateway 192.168.20.1.",
+      "formulas": [
+        {
+          "latex": "2^{32-24}=256"
+        },
+        {
+          "latex": "256-2=254"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Il gateway .1 è una scelta progettuale del laboratorio, non una regola intrinseca del VLAN ID.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.3, pagina PDF 182"
+    },
+    {
+      "id": "cyber-c10-q093",
+      "topicId": "cyber-c10-t17",
+      "question": "Quali comandi Cisco creano la VLAN 10 denominata AMMINISTRAZIONE su uno switch del laboratorio?",
+      "answer": "In modalità globale: `vlan 10`, poi `name AMMINISTRAZIONE`, quindi `exit`. Prima si imposta `vtp mode transparent` e poi si creano analogamente VLAN 20, 30 e 99.",
+      "detail": "La sequenza usa `enable`, `configure terminal` e un hostname appropriato. Le VLAN sono: 10 AMMINISTRAZIONE, 20 OPERAZIONI, 30 OSPITI, 99 MANAGEMENT. Le etichette non sono protocolli e non determinano da sole le policy.",
+      "example": "`SW1(config)# vlan 10` seguito da `SW1(config-vlan)# name AMMINISTRAZIONE`.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarsi che il comando `name` configuri gateway o ACL.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.4, pagina PDF 183"
+    },
+    {
+      "id": "cyber-c10-q094",
+      "topicId": "cyber-c10-t17",
+      "question": "Che cosa dimostra `show vlan brief` e che cosa NON dimostra?",
+      "answer": "Mostra la presenza/stato delle VLAN e le porte access associate; non prova che i trunk e il routing inter-VLAN funzionino.",
+      "detail": "Va utilizzato dopo la creazione di VLAN 10, 20, 30 e 99 su ciascuno switch. Occorrono ulteriori verifiche con `show interfaces trunk`, `show mac address-table` e comandi L3.",
+      "example": "VLAN 10 appare in `show vlan brief`, ma il link SW1–SW2 può comunque non essere trunk.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare configurazione VLAN esistente e connettività end-to-end garantita.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.4, pagina PDF 183"
+    },
+    {
+      "id": "cyber-c10-q095",
+      "topicId": "cyber-c10-t17",
+      "question": "Quali comandi assegnano una porta PC alla VLAN 10 in modo statico?",
+      "answer": "Nell’interfaccia: `switchport mode access`, `switchport access vlan 10`; sulle porte edge dell’esempio viene utilizzato anche `spanning-tree portfast`.",
+      "detail": "Su SW1 Fa0/1 e Fa0/2 appartengono a VLAN 10. Su SW2 Fa0/1 appartiene a VLAN 20 e Fa0/2 a VLAN 30. PortFast va destinato alle porte edge verso host, non ai trunk fra switch.",
+      "example": "`interface fastEthernet 0/1` → `switchport mode access` → `switchport access vlan 10`.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non abilitare PortFast indiscriminatamente sui collegamenti tra switch.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.5, pagina PDF 183"
+    },
+    {
+      "id": "cyber-c10-q096",
+      "topicId": "cyber-c10-t17",
+      "question": "Perché impostare esplicitamente `switchport mode access` sulle porte degli utenti?",
+      "answer": "Per impedire che una porta destinata a un host venga lasciata in modalità di negoziazione automatica del trunk.",
+      "detail": "La modalità access statica riduce la possibilità che dispositivi non autorizzati ottengano il trasporto di VLAN multiple. In ambienti reali possono essere aggiunte BPDU Guard e 802.1X, secondo policy e piattaforma.",
+      "example": "Un PC su Fa0/1 di SW1 non deve poter provocare una trunk DTP per VLAN 10,20,30,99.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La modalità access non prova l’identità della persona collegata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.5, pagina PDF 183"
+    },
+    {
+      "id": "cyber-c10-q097",
+      "topicId": "cyber-c10-t18",
+      "question": "Come si configura un trunk fra SW1 e SW2 nel laboratorio?",
+      "answer": "Su Gi0/1 di entrambi: `switchport mode trunk` e `switchport trunk allowed vlan 10,20,30,99`; poi `show interfaces trunk`.",
+      "detail": "La stessa configurazione viene prevista per Gi0/2 di SW1 verso R1. `switchport nonegotiate` è opzionale dove supportato e richiede coerenza con il peer. Le VLAN devono essere create e operative.",
+      "example": "`interface gigabitEthernet 0/1` → `switchport mode trunk` → `switchport trunk allowed vlan 10,20,30,99`.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che lo stesso elenco allowed su SW1 basti se SW2 ha una lista differente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.6, pagina PDF 184"
+    },
+    {
+      "id": "cyber-c10-q098",
+      "topicId": "cyber-c10-t18",
+      "question": "Che cosa controllare quando `show interfaces trunk` indica che un trunk non è operativo?",
+      "answer": "Cablaggio, stato fisico delle porte, modalità trunk sui due peer, VLAN ammesse, VLAN presenti/attive e configurazioni intermedie.",
+      "detail": "Un trunk può essere configurato senza essere realmente utilizzabile. Occorre analizzare interfaccia per interfaccia e non concludere soltanto dalla presenza dei comandi nel running-config.",
+      "example": "VLAN 30 configurata sui due switch ma non allowed sul collegamento: gli host VLAN30 remoti non comunicano.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare `show vlan brief` come unico test del trunk.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.6, pagina PDF 184"
+    },
+    {
+      "id": "cyber-c10-q099",
+      "topicId": "cyber-c10-t18",
+      "question": "Quali comandi fondamentali realizzano la subinterfaccia di VLAN 20 sul router-on-a-stick?",
+      "answer": "Sulla subinterfaccia `interface gigabitEthernet 0/0.20`: `encapsulation dot1Q 20` e `ip address 192.168.20.1 255.255.255.0`.",
+      "detail": "L’interfaccia fisica Gi0/0 viene preparata con `no ip address` e `no shutdown`. Sul medesimo link si configurano anche subinterfacce .10, .30 e .99, con tag e gateway coerenti. Il trunk verso lo switch deve ammettere tutte le VLAN usate.",
+      "example": "G0/0.30 ha `encapsulation dot1Q 30` e IP 192.168.30.1/24.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare lo stesso indirizzo IP a due subinterfacce o dimenticare l’attivazione della porta fisica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.7, pagina PDF 184"
+    },
+    {
+      "id": "cyber-c10-q100",
+      "topicId": "cyber-c10-t18",
+      "question": "Che cosa verifica `show ip interface brief` sul router nel laboratorio?",
+      "answer": "Lo stato delle interfacce fisiche e logiche e i rispettivi indirizzi IPv4, compresi i gateway delle quattro subinterfacce.",
+      "detail": "Per essere operative, la porta fisica, il trunk e i collegamenti devono funzionare. Le rotte direttamente connesse delle subnet /24 saranno presenti quando le interfacce corrispondenti sono operative.",
+      "example": "R1 visualizza G0/0.10 192.168.10.1 e G0/0.99 192.168.99.1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "L’esistenza della subinterfaccia non prova da sola che la porta dell’altro switch accetti i relativi tag.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.7, pagina PDF 184"
+    },
+    {
+      "id": "cyber-c10-q101",
+      "topicId": "cyber-c10-t18",
+      "question": "Quali reti direttamente connesse dovrebbe conoscere R1 con il ROAS del laboratorio?",
+      "answer": "192.168.10.0/24, 192.168.20.0/24, 192.168.30.0/24 e 192.168.99.0/24, quando subinterfacce e collegamento sono operativi.",
+      "detail": "Le subnet derivano dagli IP di gateway configurati sulle subinterfacce. Il routing fra queste reti è allora possibile se non è vietato da ACL o altre policy.",
+      "example": "`show ip route` deve includere le quattro reti connesse alla Gi0/0 tramite le subinterfacce.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una rotta diretta disponibile non implica che tutti i pacchetti possano attraversare i filtri.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.7, pagina PDF 184"
+    },
+    {
+      "id": "cyber-c10-q102",
+      "topicId": "cyber-c10-t19",
+      "question": "Come si configura l’SVI di management VLAN 99 su SW1 e SW2?",
+      "answer": "Su SW1: `interface vlan 99`, `ip address 192.168.99.2 255.255.255.0`, `no shutdown`, poi `ip default-gateway 192.168.99.1`; su SW2 si usa .99.3.",
+      "detail": "Su switch L2 la SVI permette la gestione IP, non il routing fra VLAN utente. Deve esistere VLAN 99 e un collegamento operativo che la trasporti, secondo il modello.",
+      "example": "SW1 management 192.168.99.2, SW2 192.168.99.3, router gateway 192.168.99.1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre dal nome interface Vlan99 che uno switch 2960 possa instradare VLAN10 e VLAN20.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.8, pagina PDF 185"
+    },
+    {
+      "id": "cyber-c10-q103",
+      "topicId": "cyber-c10-t19",
+      "question": "Perché una SVI VLAN 99 può risultare non operativa benché abbia un indirizzo IP?",
+      "answer": "Perché lo stato dell’interfaccia logica dipende anche dall’esistenza della VLAN e dalle condizioni operative delle porte che la supportano.",
+      "detail": "La verifica va fatta sul modello specifico, sullo stato del trunk e sulla VLAN 99 consentita. Non basta il comando `no shutdown` se il dominio VLAN non ha percorso operativo.",
+      "example": "SVI 192.168.99.2 configurata, ma VLAN 99 non ammessa sui trunk necessari.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere indirizzo amministrativo configurato e reale raggiungibilità di rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.8, pagina PDF 185"
+    },
+    {
+      "id": "cyber-c10-q104",
+      "topicId": "cyber-c10-t19",
+      "question": "Come si configurano IP, maschera e gateway dei PC e perché il DNS non è indispensabile in questo laboratorio?",
+      "answer": "Si imposta per ogni PC l’IPv4 della propria subnet /24 e il gateway corrispondente; i ping diretti a indirizzi IP non richiedono risoluzione di nomi DNS.",
+      "detail": "Un gateway errato può lasciare funzionante la comunicazione locale nella stessa subnet ma impedire il routing a destinazioni esterne. I parametri del piano sono espliciti al §10.11.3.",
+      "example": "PC-B: IP 192.168.20.10, mask 255.255.255.0, gateway 192.168.20.1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare un problema DNS per problema di routing quando il test usa già indirizzi IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.9, pagina PDF 185"
+    },
+    {
+      "id": "cyber-c10-q105",
+      "topicId": "cyber-c10-t19",
+      "question": "Quali ping dovrebbero riuscire prima di applicare la ACL ospiti?",
+      "answer": "PC-A→PC-D (stessa VLAN10), PC-A→192.168.10.1 (gateway), PC-A→PC-B (inter-VLAN10–20) e PC-B→PC-C (inter-VLAN20–30).",
+      "detail": "Il test PC-A→SW1 192.168.99.2 dipende anche dalle policy e dalla gestione abilitata. La verifica pre-ACL serve a dimostrare che la topologia L2 e il routing funzionano prima dell’introduzione di filtri di sicurezza.",
+      "example": "PC-B (VLAN20) riesce a pingare PC-C (VLAN30) prima di bloccare le reti interne dalla VLAN30.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarsi che la creazione di VLAN separate blocchi automaticamente tutti i ping inter-VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.10, pagina PDF 185"
+    },
+    {
+      "id": "cyber-c10-q106",
+      "topicId": "cyber-c10-t19",
+      "question": "Come interpretare un primo ping fallito seguito da ping riusciti in Packet Tracer?",
+      "answer": "Può dipendere dal tempo necessario per risoluzione ARP o apprendimento MAC, non necessariamente da un errore VLAN.",
+      "detail": "Si valutano più tentativi e, se necessario, cache ARP/FDB e stato del link. I test vanno correlati al livello interessato e ai comandi diagnostici.",
+      "example": "Il primo echo scade mentre gli host apprendono il next hop; i successivi riescono.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre da un singolo timeout la presenza certa di un errore di configurazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.10, pagina PDF 185"
+    },
+    {
+      "id": "cyber-c10-q107",
+      "topicId": "cyber-c10-t20",
+      "question": "Quale obiettivo ha la ACL GUEST_IN del laboratorio e dove viene applicata?",
+      "answer": "Impedisce agli host della VLAN30 (192.168.30.0/24) di raggiungere le subnet VLAN10, VLAN20 e VLAN99; si applica in ingresso sulla subinterfaccia router G0/0.30.",
+      "detail": "L’ACL estesa usa tre `deny ip` destinati a 192.168.10.0/24, .20.0/24 e .99.0/24, seguiti da `permit ip 192.168.30.0 0.0.0.255 any`. La direzione in ingresso sul gateway ospiti intercetta le richieste provenienti da quella subnet.",
+      "example": "`interface gigabitEthernet 0/0.30` e `ip access-group GUEST_IN in`.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare la ACL su interfacce casuali: il verso è essenziale per il risultato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.11, pagina PDF 185"
+    },
+    {
+      "id": "cyber-c10-q108",
+      "topicId": "cyber-c10-t20",
+      "question": "Che cosa rappresenta `0.0.0.255` nelle righe ACL per subnet /24?",
+      "answer": "È la wildcard mask che seleziona gli indirizzi corrispondenti ai primi tre ottetti della rete IPv4 /24.",
+      "detail": "Nella sintassi Cisco dell’esempio `deny ip 192.168.30.0 0.0.0.255 192.168.10.0 0.0.0.255` filtra le sorgenti della subnet ospiti dirette alla subnet amministrativa.",
+      "example": "Confronta wildcard 0.0.0.255 con subnet mask 255.255.255.0: sono rappresentazioni con ruoli distinti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non copiare 255.255.255.0 al posto della wildcard nella sintassi ACL dell’esempio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.11, pagina PDF 185"
+    },
+    {
+      "id": "cyber-c10-q109",
+      "topicId": "cyber-c10-t20",
+      "question": "Qual è la logica delle quattro righe principali della ACL `GUEST_IN`?",
+      "answer": "Tre divieti per traffico ospiti verso VLAN10/20/99 e un permesso residuo degli ospiti verso altre destinazioni, ove esistenti e instradabili.",
+      "detail": "Il `permit ... any` evita che la ACL neghi indiscriminatamente tutte le destinazioni non interne, ma non abilita da solo Internet. La topologia non ha ISP né NAT e altre policy possono incidere.",
+      "example": "Il comando `permit ip 192.168.30.0 0.0.0.255 any` non crea connessione a Internet.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare “any” come l’aggiunta automatica di route, provider o connettività esterna.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.11, pagina PDF 185"
+    },
+    {
+      "id": "cyber-c10-q110",
+      "topicId": "cyber-c10-t20",
+      "question": "Perché una ACL tradizionale stateless può bloccare la risposta a una connessione avviata da una VLAN interna verso gli ospiti?",
+      "answer": "Perché valuta i pacchetti secondo sorgente, destinazione, verso e regole senza mantenere necessariamente lo stato della sessione.",
+      "detail": "Un amministratore VLAN10 che inizi un flusso verso VLAN30 può ricevere risposte provenienti da VLAN30 dirette a VLAN10: la ACL GUEST_IN le bloccherebbe. Se occorrono comunicazioni bidirezionali selettive, serve una policy progettata considerando i ritorni o un firewall stateful.",
+      "example": "La richiesta VLAN10→VLAN30 passa, ma la risposta VLAN30→VLAN10 corrisponde a un `deny`.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la ACL di esempio una policy stateful che distingue automaticamente risposte da nuove connessioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.11, pagina PDF 185"
+    },
+    {
+      "id": "cyber-c10-q111",
+      "topicId": "cyber-c10-t20",
+      "question": "Quali risultati di ping ci si aspetta dopo aver applicato la ACL GUEST_IN?",
+      "answer": "PC-A→PC-D riesce; PC-A→PC-B riesce; PC-C→PC-A è bloccato; PC-C→PC-B è bloccato; PC-C→SW1 192.168.99.2 è bloccato.",
+      "detail": "I primi due non attraversano in ingresso la subinterfaccia VLAN30. Gli ultimi tre arrivano dalla subnet ospiti e sono negati dalla ACL verso le subnet 10, 20 o 99.",
+      "example": "PC-C 192.168.30.10 non può più pingare 192.168.10.10 o 192.168.99.2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che PC-A→PC-D venga filtrato dal router: è traffico nella stessa VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.12, pagina PDF 186"
+    },
+    {
+      "id": "cyber-c10-q112",
+      "topicId": "cyber-c10-t20",
+      "question": "Che cosa prova il confronto dei test prima e dopo l’applicazione della ACL?",
+      "answer": "Dimostra che la sola VLAN realizza la separazione L2, mentre la ACL definisce quali flussi IP instradati sono consentiti o vietati.",
+      "detail": "Prima delle ACL, il routing collega VLAN10,20,30; dopo i filtri, la policy impedisce agli ospiti determinate destinazioni senza interrompere comunicazioni non pertinenti.",
+      "example": "PC-B→PC-C riusciva prima; dopo ACL i test devono essere interpretati considerando anche il traffico di risposta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concludere che una VLAN non funzioni solo perché una comunicazione IP viene negata dal firewall.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.12, pagina PDF 186"
+    },
+    {
+      "id": "cyber-c10-q113",
+      "topicId": "cyber-c10-t21",
+      "question": "Quali comandi diagnostici sono fondamentali per verificare VLAN, trunk e tabella MAC?",
+      "answer": "`show vlan brief`, `show interfaces trunk`, `show interfaces <porta> switchport` e `show mac address-table`.",
+      "detail": "Il primo controlla VLAN e access, il secondo trunk e VLAN consentite, il terzo le proprietà della porta, il quarto gli indirizzi appresi per VLAN e interfaccia. Nessuno da solo dimostra l’intera connettività applicativa.",
+      "example": "Per una VLAN che non raggiunge SW2, `show interfaces trunk` indica se è allowed sul collegamento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare i comandi di routing per diagnosticare prima di tutto un problema fra host della stessa subnet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.13, pagina PDF 186"
+    },
+    {
+      "id": "cyber-c10-q114",
+      "topicId": "cyber-c10-t21",
+      "question": "Quali comandi controllano routing, ACL e stato VTP nel laboratorio?",
+      "answer": "`show ip interface brief`, `show ip route`, `show access-lists` e `show vtp status`, oltre a ping e traceroute per la connettività.",
+      "detail": "Il primo mostra indirizzi/stati L3, il secondo rotte, il terzo policy e talvolta contatori, il quarto modalità/dominio/versione/revision VTP. Ping e traceroute vanno interpretati in funzione del sistema e del protocollo.",
+      "example": "Una VLAN scomparsa dopo aggiunta switch richiede anche `show vtp status`.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare traceroute come una prova delle VLAN L2 attraversate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.13, pagina PDF 186"
+    },
+    {
+      "id": "cyber-c10-q115",
+      "topicId": "cyber-c10-t21",
+      "question": "Che cosa occorre salvare al termine della sessione Packet Tracer?",
+      "answer": "La configurazione sugli apparati, dove supportato tramite `copy running-config startup-config`, e il progetto Packet Tracer `.pkt`.",
+      "detail": "Il salvataggio va fatto dopo aver verificato il funzionamento. Il file .pkt e le configurazioni persistenti sono elementi diversi: entrambi aiutano a riprodurre il laboratorio.",
+      "example": "`R1# copy running-config startup-config` prima di chiudere e salvataggio del progetto simulato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che la sola esecuzione dei comandi garantisca sempre persistenza delle modifiche.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.13, pagina PDF 186"
+    },
+    {
+      "id": "cyber-c10-q116",
+      "topicId": "cyber-c10-t21",
+      "question": "Caso di diagnosi: PC-A non raggiunge PC-D, entrambi in VLAN10. Da dove iniziare?",
+      "answer": "Da indirizzi IP/subnet, stato fisico del collegamento, access VLAN e apprendimento dei MAC; non dal routing inter-VLAN.",
+      "detail": "I due host appartengono alla stessa subnet e dovrebbero comunicare nel dominio L2. Verificare porte, VLAN membership e FDB delimita rapidamente il problema.",
+      "example": "PC-A 192.168.10.10 non raggiunge PC-D 192.168.10.11 sulla stessa SW1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cambiare gateway come prima azione se il problema è puramente locale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.14, pagina PDF 186"
+    },
+    {
+      "id": "cyber-c10-q117",
+      "topicId": "cyber-c10-t21",
+      "question": "Caso di diagnosi: PC-A raggiunge PC-D ma non PC-B in VLAN20. Quali ipotesi verificare?",
+      "answer": "Gateway dei PC, stato delle subinterfacce router, trunk SW1–R1, trunk SW1–SW2, VLAN ammesse e rotte.",
+      "detail": "La comunicazione locale VLAN10 funziona, quindi si passa ai componenti necessari all’instradamento e alla propagazione di VLAN20. Controllare anche ACL se già applicate.",
+      "example": "MAC learning locale corretto ma trunk verso il router non operativo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ricominciare la diagnosi da qualunque componente senza sfruttare il successo del ping locale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.14, pagina PDF 186"
+    },
+    {
+      "id": "cyber-c10-q118",
+      "topicId": "cyber-c10-t21",
+      "question": "Caso di diagnosi: una VLAN non riceve broadcast sugli host collegati a uno switch remoto. Che cosa controllare?",
+      "answer": "Presenza della VLAN sui dispositivi, allowed VLANs, stato dei trunk, percorso dei frame e configurazioni degli switch intermedi.",
+      "detail": "Il broadcast L2 non attraversa ordinariamente un router. Se host nella stessa VLAN sono separati da switch in trunk, i frame devono poter percorrere ogni tratto L2 necessario.",
+      "example": "VLAN30 presente su SW1 e SW2 ma assente dalle allowed VLANs di Gi0/1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non diagnosticare come errore l’assenza del broadcast su host di VLAN differenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.14, pagina PDF 186"
+    },
+    {
+      "id": "cyber-c10-q119",
+      "topicId": "cyber-c10-t21",
+      "question": "Caso di diagnosi: un ospite raggiunge un database amministrativo. Perché le VLAN non bastano e quali controlli fare?",
+      "answer": "Perché può esistere routing fra subnet; controllare ACL/firewall su percorsi corretti, verso delle regole, subnet, percorsi alternativi e autorizzazione applicativa.",
+      "detail": "La policy deve impedire i flussi indesiderati nel punto dove il traffico attraversa il confine di fiducia. La sola presenza di VLAN30 non equivale a blocco del livello 3.",
+      "example": "ACL GUEST_IN applicata in uscita sulla subinterfaccia sbagliata potrebbe non bloccare PC-C verso VLAN10.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non modificare il tag VLAN al posto delle regole IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.14, pagina PDF 186"
+    },
+    {
+      "id": "cyber-c10-q120",
+      "topicId": "cyber-c10-t21",
+      "question": "Caso di diagnosi: dopo l’aggiunta di uno switch spariscono VLAN di produzione. Qual è la prima area da indagare?",
+      "answer": "La configurazione VTP dello switch introdotto: dominio, versione, modalità, revision e database VLAN, oltre al change effettuato.",
+      "detail": "VTP tradizionale può propagare accidentalmente stati non desiderati. Preservare evidenze, confrontare backup e seguire rollback controllato prima di altre modifiche in produzione.",
+      "example": "Uno switch con revision 80 altera il dominio revision 45.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non procedere a ripristini casuali senza aver chiarito la causa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.11.14, pagina PDF 186"
+    },
+    {
+      "id": "cyber-c10-q121",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 1: su 24 porte, VLAN10=1–8, VLAN20=9–16, VLAN30=17–24. Quali porte ricevono il broadcast di Fa0/3?",
+      "answer": "Le porte abilitate della VLAN10 diverse dall’ingresso: tipicamente 1, 2 e 4–8, salvo ulteriori filtri; non le porte delle VLAN20 e 30.",
+      "detail": "Il frame broadcast è classificato in VLAN10 dalla porta sorgente. Il numero totale di porte fisiche non definisce il broadcast domain: conta la membership VLAN.",
+      "example": "Sono 7 possibili altre porte nella VLAN10, non 23 porte dello switch.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non propagare il broadcast a tutti i 24 connettori perché lo switch è unico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q122",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 1: quale principio permette di risolvere casi con broadcast in VLAN distribuite su più switch?",
+      "answer": "Il broadcast si diffonde solo nel dominio VLAN, lungo link che ammettono quella VLAN e sulle porte ammesse, generalmente escludendo l’ingresso.",
+      "detail": "Fra switch il broadcast può attraversare un trunk con VID corretto, ma non deve attraversare un router verso una VLAN differente in modo ordinario.",
+      "example": "Un host VLAN10 su SW2 riceve il broadcast di VLAN10 da SW1 se il trunk permette VLAN10.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il numero di switch come limite del broadcast domain.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q123",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 2: con VID=200, PCP=6 e DEI=0, quanti bit occupa il tag 802.1Q?",
+      "answer": "32 bit in totale: TPID 16 bit più TCI 16 bit, a sua volta suddiviso in PCP 3, DEI 1, VID 12.",
+      "detail": "Il VID identifica VLAN200, PCP 6 definisce la priorità del frame, DEI 0 è l’indicatore di eleggibilità allo scarto: non sono tre diverse VLAN. Il tag è lungo quattro byte.",
+      "example": "16 + 3 + 1 + 12 = 32 bit = 4 byte.",
+      "formulas": [
+        {
+          "latex": "16+(3+1+12)=32\\ \\mathrm{bit}"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non calcolare 16+16+3+1+12: PCP/DEI/VID sono già inclusi nei 16 bit di TCI.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q124",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 2: come si distinguono le informazioni del tag utili a classificare VLAN, QoS e scarto?",
+      "answer": "VID identifica la VLAN, PCP identifica la priorità, DEI segnala eleggibilità allo scarto, TPID identifica il tipo di tag.",
+      "detail": "Un frame VLAN200 ad alta priorità può avere PCP6; il trattamento effettivo QoS dipende dalla configurazione del dispositivo. Il valore numerico 200 non implica priorità 200.",
+      "example": "PCP=6 e VID=200 sono indipendenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare DEI=0 come “nessuna VLAN” o come indicatore del MAC.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q125",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 3: un PC senza tagging in access VLAN20 parla con un host su un altro switch. Ricostruisci il trattamento del frame.",
+      "answer": "Il PC invia untagged; SW1 lo assegna alla VLAN20; il trunk lo porta tagged VID20; SW2 lo riconosce e lo consegna untagged sulla access VLAN20.",
+      "detail": "Il percorso funziona se VLAN20 esiste ed è ammessa sui trunk pertinenti. L’host finale non deve essere VLAN-aware; l’etichetta è aggiunta o rimossa dagli apparati.",
+      "example": "PC VLAN20→SW1 access→trunk VID20→SW2 access→PC VLAN20.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non configurare 802.1Q sul PC per un esempio di porta access tradizionale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q126",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 3: quali due configurazioni devono essere coerenti affinché il frame arrivi allo switch remoto?",
+      "answer": "L’appartenenza VLAN delle porte access e la presenza/autorizzazione di quella VLAN sul trunk fra gli switch.",
+      "detail": "Può essere necessario controllare anche stato delle porte e VLAN database. Il solo numero VLAN impostato sul PC, ove presente, non sostituisce questi requisiti.",
+      "example": "Access VLAN20 corretta ma allowed VLANs trunk solo 10,30: comunicazione remota non riuscita.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non indagare subito il router per due host della stessa VLAN e subnet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q127",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 4: PC-A VLAN10 192.168.10.10/24 e PC-B VLAN20 192.168.20.10/24, senza L3: il ping riesce?",
+      "answer": "Normalmente no: appartengono a reti IP e domini L2 differenti, e manca un dispositivo che esegua routing.",
+      "detail": "Un trunk fra gli switch estende le VLAN, ma non instrada i pacchetti da VLAN10 a VLAN20. Servono gateway e percorso L3 correttamente configurati.",
+      "example": "Configurare due trunk non sostituisce l’interfaccia router G0/0.10 o G0/0.20.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire al trunk una funzione di routing.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q128",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 5: due switch possiedono VLAN30 ma il trunk permette solo VLAN10 e 20. Cosa accade al traffico VLAN30?",
+      "answer": "Il traffico VLAN30 non attraversa quel trunk; due host VLAN30 sui lati opposti normalmente non comunicano attraverso quel collegamento.",
+      "detail": "La verifica utile è `show interfaces trunk` e confronto dell’elenco allowed su entrambi gli apparati. La VLAN può esistere nel database pur non essendo trasportabile fra gli switch.",
+      "example": "VLAN30 sulla access di SW1 e VLAN30 sulla access di SW2, ma trunk allowed 10,20: ping locale remoto fallisce.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere la creazione della VLAN sufficiente a superare un filtro sul trunk.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q129",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 6: quante combinazioni IPv4 e quanti host ordinari offre ogni subnet /24 del laboratorio?",
+      "answer": "256 indirizzi totali, di cui normalmente 254 disponibili per host, riservando indirizzo di rete e broadcast.",
+      "detail": "Il gateway può essere scelto convenzionalmente come indirizzo .1. Per ciascuna VLAN: 192.168.10.0/24, .20.0/24, .30.0/24, .99.0/24.",
+      "example": "Nella subnet 192.168.20.0/24 si può scegliere 192.168.20.1 come gateway.",
+      "formulas": [
+        {
+          "latex": "2^8=256"
+        },
+        {
+          "latex": "256-2=254"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Il VID=20 non impone di usare automaticamente .20.1: è una scelta del piano.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q130",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 6: perché non basta configurare un IP .1 su uno switch L2 per realizzare il gateway di tutte le VLAN?",
+      "answer": "Perché una SVI su switch L2 può permettere la gestione del dispositivo, ma non implica capacità di routing IP tra VLAN.",
+      "detail": "Nel laboratorio il gateway si trova sulle subinterfacce ROAS del router. Su uno switch L3 può invece essere implementato tramite SVI con routing abilitato.",
+      "example": "SW1 VLAN99 IP 192.168.99.2 non è il gateway degli host VLAN10: lo è R1 192.168.10.1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’IP di management con la capacità di instradare.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q131",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 7: un PC in VLAN10 si sposta da Fa0/1 a Fa0/5 mantenendo lo stesso MAC. Che cosa avviene nella FDB?",
+      "answer": "Quando lo switch riceve frame validi dal medesimo MAC sulla nuova porta, può aggiornare la mappatura (VLAN10, MAC)→Fa0/5.",
+      "detail": "L’apprendimento è dinamico e le voci possono scadere; Port Security o altre policy possono limitare spostamenti non autorizzati. La modifica di porta non modifica necessariamente il VID né l’indirizzo IP.",
+      "example": "FDB precedente Fa0/1, nuova Fa0/5 dopo ricezione del frame sorgente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare FDB una configurazione statica immutabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q132",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 8: VTPv2 revision80 non coerente introdotto nel dominio revision45. Qual è il rischio?",
+      "answer": "Che il database VLAN errato venga considerato più recente e distribuito, eliminando VLAN operative e interrompendo servizi.",
+      "detail": "Il manuale invita a verificare revision, dominio, modalità e versione e a seguire procedure sicure di migrazione e rollback. Non è garantito un azzeramento automatico.",
+      "example": "Lo switch di laboratorio con revision80 si collega al dominio di produzione revision45.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La revisione numericamente maggiore non significa configurazione più corretta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q133",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 8: quali sono i controlli organizzativi che accompagnano la prevenzione dell’errore VTP?",
+      "answer": "Verifiche pre-change, backup di configurazione, change management, corretta migrazione, controllo revision e piano di rollback.",
+      "detail": "Un errore di amministrazione può avere impatto simile a un attacco alla disponibilità. La difesa comprende procedure oltre a comandi di rete.",
+      "example": "L’apparato di ricambio viene controllato prima di entrare in produzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare VTP come un rischio puramente teorico o solo cyber-criminale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q134",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 9: VLAN ospiti e amministrazione separate, ma host ospite raggiunge server tramite switch L3. La VLAN è guasta?",
+      "answer": "No: può essere il routing inter-VLAN abilitato senza policy di blocco. La VLAN svolge comunque la separazione L2 prevista.",
+      "detail": "Serve una ACL o firewall coerente con gli obiettivi, e controlli sugli accessi ai servizi. Verificare anche route e percorsi alternativi prima di concludere.",
+      "example": "VLAN30 e VLAN10 isolate a livello broadcast, con gateway L3 capace di inoltrare pacchetti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eliminare il routing se le attività aziendali richiedono comunicazioni selettive; applicare una policy mirata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q135",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 10: con ACL ospiti stateless in ingresso su VLAN30, una richiesta da VLAN10 verso VLAN30 è sempre bidirezionale?",
+      "answer": "No: la risposta da VLAN30 verso VLAN10 può essere negata dalla ACL che blocca il traffico sorgente ospiti diretto a subnet interne.",
+      "detail": "Le ACL tradizionali non mantengono necessariamente lo stato. Bisogna definire la semantica desiderata e scegliere una policy completa o un firewall stateful per distinguere ritorni leciti da nuove connessioni.",
+      "example": "Richiesta 10→30 consentita, ma pacchetto di risposta 30→10 intercettato da GUEST_IN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che una ACL in un solo verso consenta implicitamente tutte le risposte.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q136",
+      "topicId": "cyber-c10-t22",
+      "question": "Esercizio 10: come motivare l’uso di un firewall stateful al posto di semplici ACL IP?",
+      "answer": "Per esprimere in modo più controllabile policy che distinguono sessioni stabilite, risposte correlate e nuovi tentativi di connessione.",
+      "detail": "La scelta deve dipendere dal rischio e dai flussi da consentire; il laboratorio illustra esplicitamente il limite delle ACL statiche sulla subinterfaccia VLAN30.",
+      "example": "Un amministratore può contattare un servizio guest autorizzato e ricevere le risposte senza aprire genericamente traffico guest→internal.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Firewall stateful non significa assenza di policy di identità e sicurezza applicativa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.12, pagina PDF 187"
+    },
+    {
+      "id": "cyber-c10-q137",
+      "topicId": "cyber-c10-t23",
+      "question": "All’orale, come spiegheresti perché la segmentazione VLAN migliora organizzazione e prestazioni senza garantire sicurezza assoluta?",
+      "answer": "Separa i domini broadcast sulla stessa infrastruttura fisica, ma lascia da gestire accessi locali, comunicazione inter-VLAN, identità e policy applicative.",
+      "detail": "Un’esposizione convincente procede da definizione L2, esempio di broadcast, estensione via trunk e limite del routing L3. Si conclude con ACL/firewall, autenticazione e monitoraggio.",
+      "example": "Amministrazione e ospiti in VLAN10/30: ARP separato; un router può ancora consentire accessi IP non autorizzati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare “VLAN = firewall” come definizione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q138",
+      "topicId": "cyber-c10-t23",
+      "question": "Qual è l’errore concettuale nel dire che VLAN e subnet sono sempre equivalenti?",
+      "answer": "Confondere due livelli: la VLAN è un dominio di bridging Ethernet (L2), la subnet una rete di indirizzamento IP (L3).",
+      "detail": "La relazione uno a uno è frequente e utile in azienda, ma viene scelta dal progettista. Il router si configura secondo la rete IP, il trunk secondo il VID.",
+      "example": "La VLAN10 può essere mappata su 192.168.10.0/24 ma non è definita dalla cifra 10 contenuta nell’IP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non derivare automaticamente una subnet dalla denominazione VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q139",
+      "topicId": "cyber-c10-t23",
+      "question": "Come collegare il MAC learning alla differenza fra unicast noto e unknown unicast?",
+      "answer": "La FDB viene popolata osservando i MAC sorgenti; una destinazione nota consente l’inoltro mirato, una sconosciuta può richiedere flooding nella VLAN.",
+      "detail": "Occorre distinguere dati dinamici appresi dalla configurazione statica di appartenenza VLAN e spiegare che il flooding resta vincolato al broadcast domain.",
+      "example": "Un host appena spostato potrebbe causare temporaneamente flooding finché la FDB non viene aggiornata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere il flooding come invio sistematico a ogni porta di ogni VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q140",
+      "topicId": "cyber-c10-t23",
+      "question": "Come dimostreresti che Port Security, 802.1X e le ACL risolvono problemi differenti?",
+      "answer": "Port Security limita gli indirizzi MAC appresi; 802.1X governa l’ammissione dell’endpoint; ACL/firewall limitano flussi IP fra reti o servizi.",
+      "detail": "Il controllo appropriato si sceglie in relazione alla minaccia: MAC flooding, accesso di host non autorizzato e comunicazioni verso subnet proibite sono tre problemi distinti. Le misure sono complementari.",
+      "example": "Una porta può ammettere un solo MAC ma appartenere a una VLAN che instrada senza filtri verso il management.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare Port Security come autentica prova dell’identità dell’utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q141",
+      "topicId": "cyber-c10-t23",
+      "question": "Se due switch comunicano via trunk ma PC in VLAN20 non si vedono, quali verifiche porresti in ordine?",
+      "answer": "Stato fisico; presenza VLAN20 su entrambi; porte access corrette; VLAN20 ammessa sul trunk; forwarding/MAC learning; subnet IP e filtri.",
+      "detail": "La priorità diagnostica parte dai livelli richiesti dalla comunicazione. Se i PC appartengono alla stessa VLAN e subnet, il router non è normalmente necessario.",
+      "example": "Prima `show vlan brief`, poi `show interfaces trunk` e `show mac address-table`.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non modificare subito il routing IP per un guasto confinato al livello 2.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q142",
+      "topicId": "cyber-c10-t23",
+      "question": "Come descriveresti la differenza tra un frame untagged e un frame VLAN-tagged senza confondere host e trunk?",
+      "answer": "Il frame untagged non contiene l’etichetta 802.1Q; quello tagged contiene TPID e TCI con VID e informazioni QoS.",
+      "detail": "La porta access può classificare untagged tramite PVID; il trunk usa tag per distinguere VLAN multiple e può avere regole per il traffico native/untagged.",
+      "example": "PC untagged→SW1→trunk tagged VID10→SW2→PC untagged.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che ogni frame appartenente a una VLAN contenga obbligatoriamente un tag.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q143",
+      "topicId": "cyber-c10-t23",
+      "question": "Perché il native VLAN mismatch è diverso dal semplice mancato trasporto di una allowed VLAN?",
+      "answer": "Nel mismatch l’untagged può essere classificato in VLAN diverse alle estremità; nell’allowed VLAN mancante il traffico di una VLAN non è autorizzato a transitare sul trunk.",
+      "detail": "I due casi hanno sintomi e rischi distinti: il primo può produrre inoltri inattesi o esposizioni, il secondo interrompe una specifica connettività. Entrambi richiedono verifica bilaterale.",
+      "example": "SW1 native99/SW2 native1 versus SW1 allowed10,20/SW2 allowed10.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare “trunk rotto” come spiegazione sufficiente senza identificare il parametro errato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q144",
+      "topicId": "cyber-c10-t23",
+      "question": "In una risposta orale, come illustreresti il layout del C-tag in modo completo e numericamente coerente?",
+      "answer": "Il C-tag è un inserto di 4 byte dopo MAC sorgente: TPID 16 bit, tipicamente 0x8100; TCI 16 bit con PCP3, DEI1, VID12.",
+      "detail": "Il massimo frame tradizionale passa tipicamente 1518→1522 byte con singolo tag. VID ordinari 1–4094, PCP 0–7, CFI storico corrisponde al bit oggi chiamato DEI.",
+      "example": "Con PCP5, DEI0, VID20 il TCI è 0xA014.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sommare due volte i bit di PCP/DEI/VID al TCI già conteggiato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q145",
+      "topicId": "cyber-c10-t23",
+      "question": "Qual è il modo corretto di spiegare la relazione fra QoS e tagging 802.1Q?",
+      "answer": "Il campo PCP segnala una classe di priorità, ma non determina il VID e non garantisce da solo una prestazione assoluta.",
+      "detail": "I dispositivi devono interpretare la priorità secondo le policy QoS; il DEI gestisce un aspetto dell’eleggibilità allo scarto. L’identificazione VLAN è indipendente.",
+      "example": "Un frame voce VLAN20 può avere PCP5 pur restando nella VLAN20.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che PCP5 sposta automaticamente il frame nella VLAN5.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q146",
+      "topicId": "cyber-c10-t23",
+      "question": "Perché VTP è un esempio di compromesso fra automazione e rischio operativo?",
+      "answer": "La sincronizzazione VLAN evita configurazioni manuali ripetute ma può diffondere un database errato a molti switch.",
+      "detail": "Nell’esposizione bisogna distinguere VTP da 802.1Q, citare modalità server/client/transparent e il rischio di revision nelle versioni tradizionali, quindi proporre change management e backup.",
+      "example": "Switch revision80 nel dominio revision45 causa perdita di VLAN necessarie.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere una revisione più alta come certificazione di qualità o sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q147",
+      "topicId": "cyber-c10-t23",
+      "question": "Perché una SVI su switch L2 non è la stessa cosa di una SVI di routing su switch multilayer?",
+      "answer": "La SVI del dispositivo L2 serve tipicamente a gestirlo via IP; sullo switch L3 può fungere da gateway e partecipare al routing con funzionalità abilitate.",
+      "detail": "Il nome `interface vlan` è simile, ma capacità e configurazione differiscono. Nel laboratorio SW1 ha management 192.168.99.2 e R1 è responsabile del routing.",
+      "example": "R1 G0/0.99 192.168.99.1 è gateway della subnet management, SW1 .99.2 è indirizzo di gestione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre capacità L3 dall’esistenza della sola SVI.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q148",
+      "topicId": "cyber-c10-t23",
+      "question": "Come illustreresti al professore un percorso completo IP tra due VLAN senza modificare impropriamente gli IP?",
+      "answer": "Host risolve MAC gateway, invia frame al gateway con destinazione IP remota; router consulta route/ACL, risolve next-hop e genera nuovo frame di uscita.",
+      "detail": "Gli indirizzi MAC cambiano fra tratte, mentre gli IP normalmente restano quelli di sorgente e destinazione salvo NAT. Mostra i due domini L2 separati e il ruolo del dispositivo L3.",
+      "example": "PC-A 192.168.10.10→gateway 192.168.10.1→PC-B 192.168.20.10.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare ARP per cercare il MAC di PC-B direttamente dalla VLAN10 se PC-B è fuori subnet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q149",
+      "topicId": "cyber-c10-t23",
+      "question": "Come giustificare la scelta tra routing tradizionale, ROAS e switch multilayer in termini di scalabilità?",
+      "answer": "Interfacce fisiche separate sono intuitive ma poco scalabili; ROAS economizza porte tramite trunk ma può concentrare traffico; L3 SVI integra routing nello switch.",
+      "detail": "La scelta dipende da capacità, topologia, traffico, gestione e policy. Le tre opzioni richiedono tutte autorizzazioni sul confine inter-VLAN.",
+      "example": "Laboratorio: ROAS; campus con molte VLAN: possibile switch L3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare lo switch multilayer come dispositivo che ignora la sicurezza perché opera localmente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q150",
+      "topicId": "cyber-c10-t23",
+      "question": "Perché DHCP snooping e DAI vengono spesso considerati insieme?",
+      "answer": "Perché il primo può costruire binding attendibili relativi al DHCP e il secondo può usarli per verificare le associazioni dichiarate nei messaggi ARP.",
+      "detail": "Entrambi proteggono minacce locali differenti: rogue DHCP e ARP spoofing. Binding statici o altre fonti possono essere necessari in reti con indirizzi non ottenuti via DHCP.",
+      "example": "Il client ha IP/MAC/porta noti al controllo; DAI valida un ARP coerente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare uno dei due come sostituto automatico dell’altro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q151",
+      "topicId": "cyber-c10-t23",
+      "question": "Come collegheresti i rischi di STP e VTP alla disponibilità della rete?",
+      "answer": "STP alterato può produrre topologie errate o loop; VTP errato può cambiare o cancellare VLAN condivise; entrambi possono interrompere comunicazioni lecite.",
+      "detail": "Occorrono BPDU Guard sulle porte appropriate, protezione del controllo STP, verifica revision/mode VTP e processi di gestione del cambiamento.",
+      "example": "Un host invia BPDU sulla porta edge; uno switch VTP non verificato propaga un database scorretto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare ogni indisponibilità come guasto IP: il problema può essere nel controllo L2.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q152",
+      "topicId": "cyber-c10-t23",
+      "question": "Qual è la differenza fra cifratura del traffico e isolamento in VLAN?",
+      "answer": "La cifratura mira a rendere il contenuto non leggibile a soggetti privi delle chiavi; la VLAN controlla il dominio di inoltro Ethernet.",
+      "detail": "Gli host dello stesso dominio possono comunque comunicare senza cifratura. Le policy devono includere TLS, identità e autorizzazioni dove richiesto, non solo VID diversi.",
+      "example": "Un frame VLAN10 con HTTP in chiaro non è cifrato per il solo fatto che passa su trunk 802.1Q.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere tagging e crittografia.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q153",
+      "topicId": "cyber-c10-t23",
+      "question": "Come spiegare il rapporto tra 802.1X, RADIUS e VLAN dinamiche?",
+      "answer": "Il supplicant autentica tramite l’authenticator dello switch verso un server AAA spesso RADIUS; in configurazioni compatibili l’esito può contribuire ad assegnare la VLAN appropriata.",
+      "detail": "L’accesso autenticato governa chi è ammesso, mentre VLAN e 802.1Q governano il dominio L2. Autorizzazione applicativa e regole fra VLAN rimangono necessarie.",
+      "example": "Un dipendente autenticato viene ammesso alla VLAN20, un dispositivo non idoneo non ottiene gli stessi accessi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare la VLAN dinamica con una prova di autorizzazione a tutti i servizi interni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q154",
+      "topicId": "cyber-c10-t23",
+      "question": "Che cosa dimostra il laboratorio Packet Tracer quando PC-A e PC-B si raggiungono prima della ACL ma PC-C è bloccato dopo?",
+      "answer": "Dimostra la distinzione fra configurazione VLAN/routing corretta e applicazione deliberata di una policy L3 sulle richieste provenienti dagli ospiti.",
+      "detail": "La prova deve includere configurazione, comandi diagnostici, ping prima/dopo e motivazione di ogni esito. In particolare la ACL `GUEST_IN` in ingresso su .30 blocca destinazioni interne.",
+      "example": "Prima PC-B→PC-C ha connettività inter-VLAN; dopo PC-C→PC-B risulta negato dalla ACL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un solo ping come verifica esaustiva dei controlli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q155",
+      "topicId": "cyber-c10-t23",
+      "question": "Come distingueresti un problema di route, VLAN e ACL partendo da tre ping mirati?",
+      "answer": "Ping nella stessa VLAN verifica L2/subnet; ping al gateway verifica accesso all’interfaccia L3; ping alla subnet remota verifica routing e policy.",
+      "detail": "La progressione permette di restringere le cause. `show vlan brief` e FDB aiutano sul L2; `show ip route` sul routing; `show access-lists` sul filtro. Anche ARP e stato dei trunk vanno verificati.",
+      "example": "PC-A→PC-D fallisce: indaga L2; PC-A→PC-D riesce ma PC-A→gateway no: indaga trunk/gateway; gateway raggiunto ma remoto no: route/ACL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare una diagnosi unica a ogni timeout.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q156",
+      "topicId": "cyber-c10-t23",
+      "question": "Qual è la limitazione più importante di una ACL stateless da evidenziare in un’interrogazione?",
+      "answer": "Non riconosce necessariamente lo stato della sessione: una risposta lecita può essere bloccata dalle regole unidirezionali su IP sorgente e destinazione.",
+      "detail": "L’esempio degli ospiti esplicita la possibilità che un collegamento partito da VLAN10 verso VLAN30 non riceva risposte per via dei deny da VLAN30 verso VLAN10. Le policy stateful possono descrivere meglio questi casi.",
+      "example": "Il pacchetto di ritorno nella direzione 30→10 viene filtrato dalla GUEST_IN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che un deny ACL su ospiti blocca soltanto le nuove connessioni originate dagli ospiti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q157",
+      "topicId": "cyber-c10-t23",
+      "question": "Come motivare l’impiego di VLAN99 management separata da VLAN utenti?",
+      "answer": "Riduce la visibilità e l’accesso di utenti ordinari e ospiti alle interfacce di amministrazione degli apparati, consentendo policy mirate.",
+      "detail": "Non basta la numerazione della VLAN99: sono necessari gateway e route controllati, ACL, SSH, credenziali robuste, log e possibilmente jump host.",
+      "example": "SW1 192.168.99.2 dovrebbe essere amministrabile da percorsi autorizzati, non da PC-C nella VLAN30.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare una VLAN management priva di controlli IP pensando che sia intrinsecamente segreta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q158",
+      "topicId": "cyber-c10-t23",
+      "question": "Se un professore afferma “il trunk porta più VLAN, quindi i reparti comunicano fra loro”, come correggeresti?",
+      "answer": "Il trunk trasporta più domini VLAN distinti sullo stesso mezzo fisico; la comunicazione fra VLAN richiede routing L3 e policy che la consentano.",
+      "detail": "Si possono estendere contemporaneamente VLAN10 e VLAN20 da SW1 a SW2 mantenendo i rispettivi broadcast confinati. Un PC VLAN10 parla con VLAN20 solo tramite gateway.",
+      "example": "Il trunk Gi0/1 con allowed VLAN10,20 non è un router.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare “più VLAN su un cavo” come sinonimo di “VLAN fuse in un unico segmento”.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q159",
+      "topicId": "cyber-c10-t23",
+      "question": "Come costruiresti una risposta orale completa sulle principali minacce alla rete VLAN?",
+      "answer": "Partirei da trunk impropri/VLAN hopping, passerei a MAC flooding e minacce locali DHCP/ARP, poi STP/BPDU, management e routing inter-VLAN non filtrato.",
+      "detail": "Assocerei a ogni minaccia la contromisura coerente: access statica e DTP controllato; Port Security; DHCP snooping e DAI; BPDU Guard; ACL/SSH; policy firewall e least privilege.",
+      "example": "Attacco ARP nella stessa VLAN → DAI, non soltanto VLAN diverse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non elencare contromisure senza collegarle alla debolezza effettiva.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.13, pagina PDF 188"
+    },
+    {
+      "id": "cyber-c10-q160",
+      "topicId": "cyber-c10-t23",
+      "question": "Nel glossario, che relazione c’è tra switch/bridge, MAC, FDB e broadcast domain?",
+      "answer": "Bridge/switch inoltra frame usando MAC e FDB; il broadcast domain è l’insieme di interfacce che ricevono il broadcast L2 della stessa VLAN.",
+      "detail": "La FDB associa MAC/VLAN a porte; lo switch apprende dal MAC sorgente e cerca il MAC di destinazione. Il VID delimita il contesto di inoltro ma non è un indirizzo MAC.",
+      "example": "Un frame broadcast VLAN10 si diffonde nel dominio VLAN10, mentre un unicast noto usa la relativa FDB.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire FDB come database di autorizzazioni degli utenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.14, pagina PDF 191"
+    },
+    {
+      "id": "cyber-c10-q161",
+      "topicId": "cyber-c10-t23",
+      "question": "Nel glossario, come si differenziano access port, trunk port, hybrid port e native VLAN?",
+      "answer": "Access serve generalmente una VLAN con frame untagged; trunk più VLAN con tagging; hybrid combina tagged e untagged secondo piattaforma; native VLAN regola l’untagged su alcune trunk.",
+      "detail": "PVID è il criterio di classificazione dei frame untagged in ingresso, mentre VID è il numero presente nel tag. Le quattro nozioni operano sulle interfacce L2 ma hanno scopi diversi.",
+      "example": "PC access VLAN10, due switch in trunk, telefono+PC tramite voice VLAN, native VLAN dedicata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare i quattro termini come categorie mutualmente equivalenti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.14, pagina PDF 191"
+    },
+    {
+      "id": "cyber-c10-q162",
+      "topicId": "cyber-c10-t23",
+      "question": "Nel glossario, quali concetti riguardano gestione della VLAN e quali il suo trasporto?",
+      "answer": "VTP e configuration revision riguardano gestione/distribuzione del database VLAN; IEEE 802.1Q, TPID, TCI e VID riguardano classificazione e trasporto dei frame.",
+      "detail": "DTP è una negoziazione dinamica di trunk su piattaforme compatibili, non lo standard del tag e non il database VTP.",
+      "example": "Uno switch VTP transparent può comunque trasportare un frame con TPID 0x8100 e VID10.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere VTP, DTP e 802.1Q benché compaiano tutti nelle configurazioni dei trunk.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.14, pagina PDF 191"
+    },
+    {
+      "id": "cyber-c10-q163",
+      "topicId": "cyber-c10-t23",
+      "question": "Nel glossario, quali sono i diversi significati di SVI, router-on-a-stick e inter-VLAN routing?",
+      "answer": "Inter-VLAN routing è la funzione L3; router-on-a-stick ne è una realizzazione con trunk/subinterfacce; SVI è un’interfaccia logica associata a una VLAN che su switch L3 può costituire il gateway.",
+      "detail": "La SVI su uno switch L2 viene spesso usata per management senza routing. Scelta della tecnologia, tabella IP e policy firewall restano distinte.",
+      "example": "R1 G0/0.20 è gateway ROAS VLAN20; SVI Vlan99 su SW1 L2 è IP gestionale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che l’esistenza di una SVI qualunque abiliti automaticamente routing fra tutte le VLAN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.14, pagina PDF 191"
+    },
+    {
+      "id": "cyber-c10-q164",
+      "topicId": "cyber-c10-t23",
+      "question": "Nel glossario, come organizzare una risposta su VLAN hopping, DHCP snooping, DAI e BPDU Guard?",
+      "answer": "VLAN hopping riguarda attraversamento non previsto dei domini; DHCP snooping limita DHCP non autorizzato; DAI valida ARP; BPDU Guard protegge porte edge da BPDU inattese.",
+      "detail": "Si tratta di minacce e difese su piani diversi. Un contromisura non sostituisce automaticamente le altre e deve essere inserita in una configurazione coerente con accessi, trunk, fiducia delle porte e gestione di rete.",
+      "example": "Snooping/DAI per host locali nella stessa VLAN; BPDU Guard per porta edge; trunk statici per ridurre DTP hopping.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire VLAN hopping come sinonimo di ARP spoofing.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 10, §10.14, pagina PDF 191"
+    }
+  ]
+}

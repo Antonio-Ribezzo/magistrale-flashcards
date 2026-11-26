@@ -1,0 +1,2508 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "si",
+  "source": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9: Tecnologie delle basi di dati, pagine PDF 130–145. Unica fonte autorizzata: nozioni generali, specificità PostgreSQL/Oracle, laboratorio proposto ed esercizi originali sono distinti come nel manuale.",
+  "chapter": {
+    "id": "si-c09",
+    "title": "Tecnologie delle basi di dati",
+    "order": 9,
+    "topics": [
+      {
+        "id": "si-c09-t01",
+        "title": "Ruolo e livelli delle tecnologie DBMS"
+      },
+      {
+        "id": "si-c09-t02",
+        "title": "Organizzazione fisica e gerarchia di memoria"
+      },
+      {
+        "id": "si-c09-t03",
+        "title": "Pagine, record, buffer e costi di I/O"
+      },
+      {
+        "id": "si-c09-t04",
+        "title": "Indici: B-tree, hash, GIN, GiST e BRIN"
+      },
+      {
+        "id": "si-c09-t05",
+        "title": "Indici composti, selettività, parziali e covering"
+      },
+      {
+        "id": "si-c09-t06",
+        "title": "Ottimizzazione delle query ed EXPLAIN"
+      },
+      {
+        "id": "si-c09-t07",
+        "title": "Algoritmi fisici di join"
+      },
+      {
+        "id": "si-c09-t08",
+        "title": "Laboratorio PostgreSQL e misure riproducibili"
+      },
+      {
+        "id": "si-c09-t09",
+        "title": "Transazioni e proprietà ACID"
+      },
+      {
+        "id": "si-c09-t10",
+        "title": "Anomalie di concorrenza e serializzabilità"
+      },
+      {
+        "id": "si-c09-t11",
+        "title": "Livelli di isolamento SQL e differenze DBMS"
+      },
+      {
+        "id": "si-c09-t12",
+        "title": "Lock, deadlock, 2PL e sincronizzazione"
+      },
+      {
+        "id": "si-c09-t13",
+        "title": "MVCC, snapshot e versioni"
+      },
+      {
+        "id": "si-c09-t14",
+        "title": "WAL, recovery, backup, RPO e RTO"
+      },
+      {
+        "id": "si-c09-t15",
+        "title": "Sicurezza e controllo degli accessi DBMS"
+      },
+      {
+        "id": "si-c09-t16",
+        "title": "DBMS paralleli, frammentazione, replica e sharding"
+      },
+      {
+        "id": "si-c09-t17",
+        "title": "Two-Phase Commit: fasi, failure e operazioni prepared"
+      },
+      {
+        "id": "si-c09-t18",
+        "title": "OLTP, OLAP e compromessi architetturali"
+      },
+      {
+        "id": "si-c09-t19",
+        "title": "Applicazioni didattiche a EnerPrice"
+      },
+      {
+        "id": "si-c09-t20",
+        "title": "Diciotto esercizi svolti e cinque problemi autonomi"
+      },
+      {
+        "id": "si-c09-t21",
+        "title": "Autoverifica, glossario e collegamenti"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§9.1 — pagina PDF 130",
+        "cardIds": [
+          "si-c09-q001",
+          "si-c09-q002",
+          "si-c09-q003",
+          "si-c09-q004",
+          "si-c09-q005"
+        ]
+      },
+      {
+        "label": "§9.2 — pagine PDF 130–131",
+        "cardIds": [
+          "si-c09-q006",
+          "si-c09-q007",
+          "si-c09-q008",
+          "si-c09-q009",
+          "si-c09-q010",
+          "si-c09-q011",
+          "si-c09-q012"
+        ]
+      },
+      {
+        "label": "§9.3 — pagina PDF 131",
+        "cardIds": [
+          "si-c09-q013",
+          "si-c09-q014",
+          "si-c09-q015",
+          "si-c09-q016",
+          "si-c09-q017"
+        ]
+      },
+      {
+        "label": "§9.4 — pagine PDF 131–132",
+        "cardIds": [
+          "si-c09-q018",
+          "si-c09-q019",
+          "si-c09-q020",
+          "si-c09-q021",
+          "si-c09-q022",
+          "si-c09-q023",
+          "si-c09-q024",
+          "si-c09-q025"
+        ]
+      },
+      {
+        "label": "§9.5 — pagine PDF 132–133",
+        "cardIds": [
+          "si-c09-q026",
+          "si-c09-q027",
+          "si-c09-q028",
+          "si-c09-q029",
+          "si-c09-q030",
+          "si-c09-q031",
+          "si-c09-q032",
+          "si-c09-q033"
+        ]
+      },
+      {
+        "label": "§9.6 — pagina PDF 133",
+        "cardIds": [
+          "si-c09-q034",
+          "si-c09-q035",
+          "si-c09-q036",
+          "si-c09-q037",
+          "si-c09-q038",
+          "si-c09-q039",
+          "si-c09-q040"
+        ]
+      },
+      {
+        "label": "§9.7 — pagine PDF 133–134",
+        "cardIds": [
+          "si-c09-q041",
+          "si-c09-q042",
+          "si-c09-q043",
+          "si-c09-q044",
+          "si-c09-q045"
+        ]
+      },
+      {
+        "label": "§9.8 — pagine PDF 134–135",
+        "cardIds": [
+          "si-c09-q046",
+          "si-c09-q047",
+          "si-c09-q048",
+          "si-c09-q049",
+          "si-c09-q050",
+          "si-c09-q051",
+          "si-c09-q052",
+          "si-c09-q053",
+          "si-c09-q054"
+        ]
+      },
+      {
+        "label": "§9.9 — pagine PDF 135–136",
+        "cardIds": [
+          "si-c09-q055",
+          "si-c09-q056",
+          "si-c09-q057",
+          "si-c09-q058",
+          "si-c09-q059",
+          "si-c09-q060",
+          "si-c09-q061",
+          "si-c09-q062",
+          "si-c09-q063"
+        ]
+      },
+      {
+        "label": "§9.10 — pagine PDF 136–137",
+        "cardIds": [
+          "si-c09-q064",
+          "si-c09-q065",
+          "si-c09-q066",
+          "si-c09-q067",
+          "si-c09-q068",
+          "si-c09-q069",
+          "si-c09-q070",
+          "si-c09-q071",
+          "si-c09-q072",
+          "si-c09-q073"
+        ]
+      },
+      {
+        "label": "§9.11 — pagina PDF 137",
+        "cardIds": [
+          "si-c09-q074",
+          "si-c09-q075",
+          "si-c09-q076",
+          "si-c09-q077",
+          "si-c09-q078",
+          "si-c09-q079",
+          "si-c09-q080",
+          "si-c09-q081",
+          "si-c09-q082",
+          "si-c09-q083"
+        ]
+      },
+      {
+        "label": "§9.12 — pagine PDF 137–138",
+        "cardIds": [
+          "si-c09-q084",
+          "si-c09-q085",
+          "si-c09-q086",
+          "si-c09-q087",
+          "si-c09-q088",
+          "si-c09-q089",
+          "si-c09-q090",
+          "si-c09-q091"
+        ]
+      },
+      {
+        "label": "§9.13 — pagina PDF 138",
+        "cardIds": [
+          "si-c09-q092",
+          "si-c09-q093",
+          "si-c09-q094",
+          "si-c09-q095",
+          "si-c09-q096",
+          "si-c09-q097"
+        ]
+      },
+      {
+        "label": "§9.14 — pagine PDF 138–139",
+        "cardIds": [
+          "si-c09-q098",
+          "si-c09-q099",
+          "si-c09-q100",
+          "si-c09-q101",
+          "si-c09-q102",
+          "si-c09-q103",
+          "si-c09-q104",
+          "si-c09-q105"
+        ]
+      },
+      {
+        "label": "§9.15 — pagina PDF 139",
+        "cardIds": [
+          "si-c09-q106",
+          "si-c09-q107",
+          "si-c09-q108",
+          "si-c09-q109",
+          "si-c09-q110",
+          "si-c09-q111",
+          "si-c09-q112"
+        ]
+      },
+      {
+        "label": "§9.16 — pagina PDF 140",
+        "cardIds": [
+          "si-c09-q113",
+          "si-c09-q114",
+          "si-c09-q115",
+          "si-c09-q116",
+          "si-c09-q117",
+          "si-c09-q118",
+          "si-c09-q119",
+          "si-c09-q120",
+          "si-c09-q121"
+        ]
+      },
+      {
+        "label": "§9.17 — pagine PDF 140–141",
+        "cardIds": [
+          "si-c09-q122",
+          "si-c09-q123",
+          "si-c09-q124",
+          "si-c09-q125",
+          "si-c09-q126",
+          "si-c09-q127",
+          "si-c09-q128",
+          "si-c09-q129",
+          "si-c09-q130",
+          "si-c09-q131"
+        ]
+      },
+      {
+        "label": "§9.18 — pagine PDF 141–142",
+        "cardIds": [
+          "si-c09-q132",
+          "si-c09-q133",
+          "si-c09-q134",
+          "si-c09-q135"
+        ]
+      },
+      {
+        "label": "§9.19 — pagina PDF 142",
+        "cardIds": [
+          "si-c09-q136",
+          "si-c09-q137",
+          "si-c09-q138",
+          "si-c09-q139",
+          "si-c09-q140",
+          "si-c09-q141"
+        ]
+      },
+      {
+        "label": "§9.20 — pagine PDF 142–144",
+        "cardIds": [
+          "si-c09-q142",
+          "si-c09-q143",
+          "si-c09-q144",
+          "si-c09-q145",
+          "si-c09-q146",
+          "si-c09-q147",
+          "si-c09-q148",
+          "si-c09-q149",
+          "si-c09-q150",
+          "si-c09-q151",
+          "si-c09-q152",
+          "si-c09-q153",
+          "si-c09-q154",
+          "si-c09-q155",
+          "si-c09-q156",
+          "si-c09-q157",
+          "si-c09-q158",
+          "si-c09-q159",
+          "si-c09-q160",
+          "si-c09-q161",
+          "si-c09-q162",
+          "si-c09-q163",
+          "si-c09-q164"
+        ]
+      },
+      {
+        "label": "§9.21 — pagine PDF 144–145",
+        "cardIds": [
+          "si-c09-q165",
+          "si-c09-q166",
+          "si-c09-q167",
+          "si-c09-q168",
+          "si-c09-q169",
+          "si-c09-q170",
+          "si-c09-q171",
+          "si-c09-q172",
+          "si-c09-q173",
+          "si-c09-q174"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "si-c09-q001",
+      "topicId": "si-c09-t01",
+      "question": "Quale problema affrontano le tecnologie DBMS dopo la progettazione logica e SQL?",
+      "answer": "Stabiliscono come conservare, individuare, rendere visibili e proteggere i dati.",
+      "detail": "Il modello relazionale e SQL definiscono dati e risultati; il DBMS sceglie accessi fisici, piani, visibilità transazionale e recupero dai guasti.",
+      "example": "Due SELECT logicamente identiche possono produrre lo stesso risultato con costi diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere correttezza della query con efficienza del suo piano.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.1, pagina PDF 130"
+    },
+    {
+      "id": "si-c09-q002",
+      "topicId": "si-c09-t01",
+      "question": "Quali sono i tre livelli descritti nel Capitolo 9?",
+      "answer": "Esterno (viste e interfacce), logico (tabelle, vincoli, relazioni), fisico (file, pagine, indici, buffer, log).",
+      "detail": "Il motore DBMS media fra la richiesta formulata dagli utenti e l’organizzazione concreta delle informazioni.",
+      "example": "Un report su una vista usa tabelle logiche che il motore legge tramite pagine e indici.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare una vista con un file fisico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.1, pagina PDF 130"
+    },
+    {
+      "id": "si-c09-q003",
+      "topicId": "si-c09-t01",
+      "question": "Come può cambiare il piano di una SELECT senza cambiarne il risultato?",
+      "answer": "Il DBMS può sostituire una scansione sequenziale con un accesso indicizzato o cambiare algoritmo di join.",
+      "detail": "Il piano riguarda l’esecuzione; se la trasformazione è semanticamente equivalente, il risultato logico non cambia.",
+      "example": "Una condizione su id_offerta può usare un B-tree dopo aver creato un indice.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che un piano diverso produca obbligatoriamente dati diversi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.1, pagina PDF 130"
+    },
+    {
+      "id": "si-c09-q004",
+      "topicId": "si-c09-t01",
+      "question": "Perché un ingegnere gestionale deve conoscere indici e transazioni?",
+      "answer": "Per valutare prestazioni, coerenza, tempi di elaborazione e continuità del servizio.",
+      "detail": "Un indice inadatto aggrava il costo degli aggiornamenti; una transazione lunga aumenta la contesa; isolamento insufficiente può consentire incoerenze.",
+      "example": "Approvare due offerte concorrenti richiede regole transazionali coerenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare il ragionamento alla sintassi SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.1, pagina PDF 130"
+    },
+    {
+      "id": "si-c09-q005",
+      "topicId": "si-c09-t01",
+      "question": "Perché non si possono trasferire automaticamente i dettagli da PostgreSQL a Oracle?",
+      "answer": "Perché sintassi, implementazioni fisiche, visibilità delle versioni, livelli di isolamento e recovery possono differire.",
+      "detail": "Il manuale alterna principi generali a dettagli tecnici esplicitamente relativi ai due DBMS.",
+      "example": "PostgreSQL usa tuple MVCC nell’heap; Oracle ricostruisce letture consistenti tramite undo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare le implementazioni come fisicamente identiche.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.1, pagina PDF 130"
+    },
+    {
+      "id": "si-c09-q006",
+      "topicId": "si-c09-t02",
+      "question": "Che differenza esiste tra relazione logica e memorizzazione fisica?",
+      "answer": "La relazione è un insieme di tuple nel modello; fisicamente le righe sono ospitate in file organizzati in blocchi o pagine.",
+      "detail": "Il DBMS trasferisce pagine tra memoria persistente e RAM; il costo dipende dall’accesso alle pagine e dal loro riuso.",
+      "example": "Un risultato da dieci righe può richiedere la lettura di molte pagine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare righe restituite e pagine lette.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.2, pagine PDF 130–131"
+    },
+    {
+      "id": "si-c09-q007",
+      "topicId": "si-c09-t02",
+      "question": "Che cos’è una tabella heap e perché non è normalmente ordinata per chiave?",
+      "answer": "È una struttura fisica di righe per cui non si presume un ordinamento stabile secondo la chiave di ricerca.",
+      "detail": "Una scansione completa visita pagine e verifica i predicati sulle tuple; in PostgreSQL heap e indici sono strutture distinte.",
+      "example": "La presenza di PK su offerta non impone ordinamento permanente delle pagine heap.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare clustered ogni tabella con chiave primaria.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.2, pagine PDF 130–131"
+    },
+    {
+      "id": "si-c09-q008",
+      "topicId": "si-c09-t02",
+      "question": "Che funzione hanno le pagine di database?",
+      "answer": "Sono unità di organizzazione e trasferimento dei dati nello storage.",
+      "detail": "Possono includere header, riferimenti ai record, spazio libero e contenuto delle tuple; il layout effettivo dipende dal motore.",
+      "example": "Una tabella può occupare mille pagine pur contenendo decine di migliaia di tuple.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la figura concettuale un layout binario universale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.2, pagine PDF 130–131"
+    },
+    {
+      "id": "si-c09-q009",
+      "topicId": "si-c09-t02",
+      "question": "Qual è la dimensione di pagina abituale in PostgreSQL e come va interpretata?",
+      "answer": "Comunemente 8 KiB per configurazione predefinita, non una misura universale per ogni DBMS o installazione.",
+      "detail": "Dimensione e layout incidono sulla densità dei record e sui trasferimenti di I/O.",
+      "example": "Un calcolo basato su 8 KiB va contestualizzato al motore esaminato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere KiB (1024 byte) con un valore globale fisso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.2, pagine PDF 130–131"
+    },
+    {
+      "id": "si-c09-q010",
+      "topicId": "si-c09-t02",
+      "question": "Che cos’è il buffer pool?",
+      "answer": "Una porzione di RAM dove il DBMS mantiene copie delle pagine per ridurre letture ripetute dallo storage.",
+      "detail": "Il buffer manager gestisce caricamento, mantenimento e scrittura delle pagine.",
+      "example": "Due esecuzioni della stessa SELECT possono avere differenze nei buffer hit/read.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare un buffer hit equivalente a una lettura da disco.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.2, pagine PDF 130–131"
+    },
+    {
+      "id": "si-c09-q011",
+      "topicId": "si-c09-t02",
+      "question": "Che cos’è una dirty page?",
+      "answer": "Una pagina modificata in memoria che non è ancora necessariamente stata riportata sul file dati persistente.",
+      "detail": "Con protocolli di log adeguati il COMMIT può essere durevole senza scrittura immediata di ogni pagina dati.",
+      "example": "La modifica viene ricostruita da WAL dopo crash se sono rispettate le garanzie previste.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre da “dirty” che la transazione sia necessariamente non confermata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.2, pagine PDF 130–131"
+    },
+    {
+      "id": "si-c09-q012",
+      "topicId": "si-c09-t02",
+      "question": "Quali ruoli svolgono CPU/cache, RAM, SSD e backup?",
+      "answer": "CPU/cache elabora rapidamente; RAM riutilizza pagine; SSD/dischi conserva dati e log; backup sostiene ripristino e storia.",
+      "detail": "La gerarchia combina latenza, capacità e persistenza differenti.",
+      "example": "Un backup protegge da perdita di storage ma non sostituisce COMMIT/ROLLBACK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere backup con gestione delle transazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.2, pagine PDF 130–131"
+    },
+    {
+      "id": "si-c09-q013",
+      "topicId": "si-c09-t03",
+      "question": "Qual è la formula elementare per stimare il numero di pagine di una tabella?",
+      "answer": "B = ceil(N/P), con N record e P record medi per pagina.",
+      "detail": "La funzione ceil arrotonda all’intero superiore; trascura overhead, frammentazione, indici e record di misura variabile.",
+      "example": "96.000 tuple / 96 tuple per pagina = 1.000 pagine.",
+      "formulas": [
+        {
+          "latex": "B=\\left\\lceil\\frac{N}{P}\\right\\rceil",
+          "meaning": "Stima del numero di pagine necessarie"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non arrotondare per difetto quando resta anche un solo record.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.3, pagina PDF 131"
+    },
+    {
+      "id": "si-c09-q014",
+      "topicId": "si-c09-t03",
+      "question": "Come si interpreta una full table scan da 1.000 pagine?",
+      "answer": "Come una scansione delle pagine della tabella per valutare le righe, non come la restituzione di mille tuple.",
+      "detail": "I tempi dipendono anche dalla cache e dalle modalità di lettura.",
+      "example": "La tabella da 96.000 tuple dell’esempio occupa circa 1.000 pagine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non convertire automaticamente pagine in millisecondi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.3, pagina PDF 131"
+    },
+    {
+      "id": "si-c09-q015",
+      "topicId": "si-c09-t03",
+      "question": "Perché selezionare il 3% delle tuple non equivale a leggere il 3% delle pagine?",
+      "answer": "Le tuple selezionate possono essere disperse in molte pagine.",
+      "detail": "Correlazione fisica, raggruppamento delle tuple, cache e distribuzione cambiano gli accessi.",
+      "example": "Righe sparse possono costringere a leggere quasi tutta la tabella.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare s × B come costo esatto di accesso indicizzato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.3, pagina PDF 131"
+    },
+    {
+      "id": "si-c09-q016",
+      "topicId": "si-c09-t03",
+      "question": "Quali variabili usa il modello numerico per valutare accessi e indici?",
+      "answer": "N = record; P = record per pagina; B = pagine; s = frazione di righe selezionate; F = fan-out dell’albero.",
+      "detail": "F rappresenta i figli medi per nodo e aiuta a capire la profondità degli indici bilanciati.",
+      "example": "B è in pagine, s è una frazione nell’intervallo 0–1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere selettività percentuale e numero assoluto di righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.3, pagina PDF 131"
+    },
+    {
+      "id": "si-c09-q017",
+      "topicId": "si-c09-t03",
+      "question": "Che cosa rappresenta il costo didattico in accessi a pagine?",
+      "answer": "Una misura semplificata delle operazioni di I/O, non una durata reale.",
+      "detail": "Il motore considera inoltre CPU, cache, pattern sequenziale/casuale e pesi configurabili.",
+      "example": "79 accessi convenzionali non vogliono dire 79 ms.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasporre direttamente unità didattiche nei tempi osservati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.3, pagina PDF 131"
+    },
+    {
+      "id": "si-c09-q018",
+      "topicId": "si-c09-t04",
+      "question": "Che cos’è un indice di database e quale compromesso introduce?",
+      "answer": "È una struttura ausiliaria per individuare righe senza scandire indiscriminatamente la tabella; occupa spazio e richiede aggiornamento.",
+      "detail": "Può accelerare alcune letture ma rallentare INSERT, UPDATE e DELETE.",
+      "example": "Un indice su codice offerta può aiutare ricerche selettive.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare automaticamente un indice per ogni colonna.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.4, pagine PDF 131–132"
+    },
+    {
+      "id": "si-c09-q019",
+      "topicId": "si-c09-t04",
+      "question": "Come funziona concettualmente un indice B-tree?",
+      "answer": "I nodi interni instradano la ricerca e le foglie conservano valori di chiave e riferimenti alle righe.",
+      "detail": "La struttura bilanciata e il fan-out elevato mantengono pochi livelli; è adatta a uguaglianze, intervalli e alcuni ordinamenti.",
+      "example": "WHERE data >= una soglia può beneficiare di un B-tree sulla data.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare il costo addizionale di recupero delle pagine heap.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.4, pagine PDF 131–132"
+    },
+    {
+      "id": "si-c09-q020",
+      "topicId": "si-c09-t04",
+      "question": "Qual è il metodo d’indice predefinito di CREATE INDEX in PostgreSQL?",
+      "answer": "B-tree.",
+      "detail": "È una struttura generale per uguaglianza, range e spesso ordinamento.",
+      "example": "CREATE INDEX idx_codice ON offerta(codice).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare Hash come metodo predefinito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.4, pagine PDF 131–132"
+    },
+    {
+      "id": "si-c09-q021",
+      "topicId": "si-c09-t04",
+      "question": "Quando può convenire un indice Hash e quale limite ha?",
+      "answer": "Per ricerche principalmente di uguaglianza; non sostituisce il B-tree nei predicati di intervallo.",
+      "detail": "La scelta deve rispondere agli operatori effettivamente usati.",
+      "example": "WHERE codice = 42 è un confronto di uguaglianza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non proporre Hash per BETWEEN come se ordinasse i valori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.4, pagine PDF 131–132"
+    },
+    {
+      "id": "si-c09-q022",
+      "topicId": "si-c09-t04",
+      "question": "Per quali dati è utile GIN e quali costi comporta?",
+      "answer": "Per array, ricerca testuale e strutture multivalore, a prezzo di spazio e manutenzione potenzialmente onerosi.",
+      "detail": "Non è un sostituto generalista del B-tree per ogni colonna numerica.",
+      "example": "Ricerche per appartenenza a un array di tag.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere GIN solo perché un predicato contiene testo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.4, pagine PDF 131–132"
+    },
+    {
+      "id": "si-c09-q023",
+      "topicId": "si-c09-t04",
+      "question": "Qual è il campo d’impiego di GiST e SP-GiST?",
+      "answer": "Operatori specializzati, come geometrie, intervalli e altri domini supportati dalle rispettive operator class.",
+      "detail": "L’adeguatezza dipende dagli operatori effettivi e dal tipo di dato.",
+      "example": "Una ricerca spaziale può richiedere un indice specializzato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a tutte le operator class le stesse proprietà.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.4, pagine PDF 131–132"
+    },
+    {
+      "id": "si-c09-q024",
+      "topicId": "si-c09-t04",
+      "question": "Che cos’è BRIN e quando è interessante?",
+      "answer": "Un indice che riassume intervalli di blocchi, utile per tabelle molto grandi se i valori sono correlati all’ordine fisico.",
+      "detail": "Filtra gruppi di blocchi in modo approssimato; non identifica ogni singola riga come un indice puntuale.",
+      "example": "Una grande tabella append-only con date crescenti può favorirlo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che BRIN sia ideale con valori disordinati e sparsi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.4, pagine PDF 131–132"
+    },
+    {
+      "id": "si-c09-q025",
+      "topicId": "si-c09-t04",
+      "question": "Qual è la differenza tra indice clustered e indice UNIQUE?",
+      "answer": "UNIQUE impone unicità dei valori; clustering riguarda il rapporto tra ordine fisico e ordine della chiave.",
+      "detail": "Una chiave primaria non impone che la heap PostgreSQL resti fisicamente ordinata.",
+      "example": "Due righe con codici consecutivi possono risiedere in pagine distanti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare vincolo di integrità con ordinamento su disco.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.4, pagine PDF 131–132"
+    },
+    {
+      "id": "si-c09-q026",
+      "topicId": "si-c09-t05",
+      "question": "Perché un indice (a,b) non equivale a due indici (a) e (b)?",
+      "answer": "Perché contiene chiavi composite ordinate e la posizione delle colonne condiziona il percorso di ricerca.",
+      "detail": "Nei B-tree PostgreSQL il prefisso iniziale è particolarmente utile a restringere lo spazio di ricerca.",
+      "example": "Un indice (id_offerta,data_creazione) favorisce id_offerta=42 e filtro successivo per data.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare intercambiabili (a,b) e (b,a).",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.5, pagine PDF 132–133"
+    },
+    {
+      "id": "si-c09-q027",
+      "topicId": "si-c09-t05",
+      "question": "Come si interpreta la regola del prefisso iniziale di un indice composto?",
+      "answer": "I filtri sulle colonne iniziali restringono efficacemente il tratto esplorato; su colonne successive senza prefisso l’efficacia può diminuire.",
+      "detail": "Il planner può talvolta utilizzare strategie aggiuntive: non è un divieto assoluto.",
+      "example": "WHERE data_creazione > ... da sola non sfrutta come WHERE id_offerta=42 il prefisso di (id_offerta,data).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che un indice composto è sempre inutilizzabile senza la prima colonna.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.5, pagine PDF 132–133"
+    },
+    {
+      "id": "si-c09-q028",
+      "topicId": "si-c09-t05",
+      "question": "Qual è l’indice composto di esempio per le simulazioni?",
+      "answer": "CREATE INDEX idx_simulazioni_offerta_data ON scenario_simulazione(id_offerta, data_creazione);",
+      "detail": "È correlato alla ricerca di simulazioni per offerta entro un intervallo temporale.",
+      "example": "WHERE id_offerta=42 AND data_creazione>=DATE '2026-01-01'.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la data di creazione con la chiave identificativa dello scenario.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.5, pagine PDF 132–133"
+    },
+    {
+      "id": "si-c09-q029",
+      "topicId": "si-c09-t05",
+      "question": "Come si calcola la selettività del predicato?",
+      "answer": "s = righe attese che soddisfano il filtro / righe totali.",
+      "detail": "È una frazione tra 0 e 1; una piccola s tende a favorire ricerche selettive, ma non garantisce uso di indice.",
+      "example": "400 righe su 80.000 ⇒ s=0,005=0,5%.",
+      "formulas": [
+        {
+          "latex": "s=\\frac{N_{\\mathrm{selezionate}}}{N_{\\mathrm{totali}}}",
+          "meaning": "Selettività come quota delle righe che superano il filtro"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confondere selectivity bassa con scarsa qualità della query.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.5, pagine PDF 132–133"
+    },
+    {
+      "id": "si-c09-q030",
+      "topicId": "si-c09-t05",
+      "question": "Perché un indice su un attributo con pochi valori distinti può non convenire?",
+      "answer": "Se ogni valore corrisponde a molte righe, gli accessi all’indice più quelli ai dati possono superare il costo di uno scan.",
+      "detail": "Conta anche la dimensione della tabella e la collocazione fisica delle righe.",
+      "example": "WHERE stato='APPROVATA' che prende il 96% della tabella.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che ogni condizione WHERE richieda un indice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.5, pagine PDF 132–133"
+    },
+    {
+      "id": "si-c09-q031",
+      "topicId": "si-c09-t05",
+      "question": "Che cos’è un indice parziale PostgreSQL?",
+      "answer": "Un indice che include solo righe che soddisfano un predicato dichiarato.",
+      "detail": "Può essere più piccolo e meno oneroso di un indice generalista, se le query filtrano coerentemente.",
+      "example": "CREATE INDEX idx_offerte_bozza ON offerta(codice) WHERE stato='BOZZA';",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che il planner lo usi per una query incompatibile con il predicato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.5, pagine PDF 132–133"
+    },
+    {
+      "id": "si-c09-q032",
+      "topicId": "si-c09-t05",
+      "question": "Che cosa significa covering index o index-only scan?",
+      "answer": "Un indice che contiene i dati richiesti può permettere in certe condizioni una lettura prevalentemente o soltanto dall’indice.",
+      "detail": "PostgreSQL deve comunque verificare la visibilità MVCC; potrebbe quindi leggere la heap.",
+      "example": "SELECT delle sole colonne indicizzate potrebbe prestarsi a index-only scan.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non garantire assenza di letture heap in ogni esecuzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.5, pagine PDF 132–133"
+    },
+    {
+      "id": "si-c09-q033",
+      "topicId": "si-c09-t05",
+      "question": "Quali criteri considerare prima di aggiungere un indice?",
+      "answer": "Query reali, predicati e ordinamento, selettività, dimensione, frequenza di scrittura, spazio, statistiche e piano osservato.",
+      "detail": "Si devono valutare benefici e manutenzione, non solo la velocità di una singola SELECT.",
+      "example": "Un portale che consulta solo bozze può valutare un indice parziale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ottimizzare prima di avere un carico rappresentativo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.5, pagine PDF 132–133"
+    },
+    {
+      "id": "si-c09-q034",
+      "topicId": "si-c09-t06",
+      "question": "Quali fasi attraversa una query prima di essere eseguita?",
+      "answer": "Analisi di sintassi/riferimenti, rappresentazione interna, possibili riscritture equivalenti, scelta del piano fisico ed esecuzione.",
+      "detail": "L’ottimizzatore valuta cardinalità, statistiche, indici e operatori.",
+      "example": "Una SQL con JOIN può essere eseguita mediante nested loop o hash join.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’ordine testuale SQL con l’ordine fisico scelto dal planner.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.6, pagina PDF 133"
+    },
+    {
+      "id": "si-c09-q035",
+      "topicId": "si-c09-t06",
+      "question": "Perché stimare correttamente il numero di righe è importante?",
+      "answer": "Perché le cardinalità stimate guidano la scelta di accessi e join.",
+      "detail": "Una stima di poche righe quando ne arrivano milioni può produrre piani inefficaci.",
+      "example": "Nested loop ripetuto su un input molto più grande del previsto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non spiegare ogni piano inefficiente esclusivamente con la mancanza di indici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.6, pagina PDF 133"
+    },
+    {
+      "id": "si-c09-q036",
+      "topicId": "si-c09-t06",
+      "question": "A che cosa serve ANALYZE in PostgreSQL?",
+      "answer": "Ad aggiornare statistiche su dati e distribuzioni che il planner usa per stimare costi e cardinalità.",
+      "detail": "Statistiche non rappresentative possono far scegliere un piano peggiore.",
+      "example": "Dopo aver popolato lab_si9.scenario il manuale esegue ANALYZE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere ANALYZE statistico con EXPLAIN ANALYZE di esecuzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.6, pagina PDF 133"
+    },
+    {
+      "id": "si-c09-q037",
+      "topicId": "si-c09-t06",
+      "question": "Che cosa mostra EXPLAIN senza ANALYZE?",
+      "answer": "Il piano previsto, con operatori e stime di costi e righe.",
+      "detail": "È una previsione del planner, non una misurazione del comportamento reale.",
+      "example": "EXPLAIN SELECT id_offerta,COUNT(*) ... GROUP BY id_offerta;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non leggere rows stimato come conteggio osservato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.6, pagina PDF 133"
+    },
+    {
+      "id": "si-c09-q038",
+      "topicId": "si-c09-t06",
+      "question": "Che cosa aggiunge EXPLAIN (ANALYZE, BUFFERS)?",
+      "answer": "Esegue davvero lo statement e mostra misure come actual rows, tempi, loops e buffer hit/read.",
+      "detail": "Permette di confrontare stima e osservazione; i risultati dipendono dall’ambiente.",
+      "example": "Stima di 10 righe e 40.000 righe effettive suggerisce di rivedere selettività/statistiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare profiling mutativo in produzione senza cautele.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.6, pagina PDF 133"
+    },
+    {
+      "id": "si-c09-q039",
+      "topicId": "si-c09-t06",
+      "question": "Che unità hanno i costi riportati da EXPLAIN?",
+      "answer": "Unità arbitrarie del modello di costo del planner, non millisecondi.",
+      "detail": "Execution Time è invece una durata osservata nel test, influenzata da hardware, cache e carico.",
+      "example": "cost=...total=... è comparabile all’interno del modello, non al tempo in ms.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare tempo reale il numero di cost.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.6, pagina PDF 133"
+    },
+    {
+      "id": "si-c09-q040",
+      "topicId": "si-c09-t06",
+      "question": "Perché EXPLAIN ANALYZE su UPDATE o DELETE richiede prudenza?",
+      "answer": "Perché lo statement viene realmente eseguito e può modificare i dati.",
+      "detail": "In un laboratorio si può usare una transazione controllata con ROLLBACK, quando appropriato.",
+      "example": "Profiling di un UPDATE in un database di test.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che EXPLAIN ANALYZE sia una simulazione innocua.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.6, pagina PDF 133"
+    },
+    {
+      "id": "si-c09-q041",
+      "topicId": "si-c09-t07",
+      "question": "Quali sono i tre algoritmi fisici di join introdotti nel capitolo?",
+      "answer": "Nested loop, hash join e merge join.",
+      "detail": "Sono metodi diversi per trovare righe corrispondenti a una condizione di join; per un equi-join appropriato possono produrre lo stesso risultato logico.",
+      "example": "JOIN su chiave offerta-scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere tipo logico di JOIN con il suo algoritmo fisico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.7, pagine PDF 133–134"
+    },
+    {
+      "id": "si-c09-q042",
+      "topicId": "si-c09-t07",
+      "question": "Come opera un nested loop join?",
+      "answer": "Per ogni riga dell’input esterno cerca le righe corrispondenti nell’input interno.",
+      "detail": "Può essere conveniente con input esterno piccolo o ricerca interna indicizzata; senza indice il lavoro ingenuo cresce come |A|×|B|.",
+      "example": "50 righe esterne e indice nella tabella interna da 2 milioni.",
+      "formulas": [
+        {
+          "latex": "C_{\\mathrm{nested\\ loop}}\\propto |A|\\cdot|B|",
+          "meaning": "Costo ingenuo di nested loop senza accesso indicizzato"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non giudicarlo inefficiente a priori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.7, pagine PDF 133–134"
+    },
+    {
+      "id": "si-c09-q043",
+      "topicId": "si-c09-t07",
+      "question": "Come opera un hash join?",
+      "answer": "Costruisce una struttura hash su un input e la usa per trovare corrispondenze nell’altro.",
+      "detail": "È spesso utile per equi-join su insiemi medio-grandi, ma usa memoria e può partizionare su disco.",
+      "example": "JOIN su uguali id_offerta quando i dataset sono consistenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiararlo automaticamente migliore senza considerare memoria e cardinalità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.7, pagine PDF 133–134"
+    },
+    {
+      "id": "si-c09-q044",
+      "topicId": "si-c09-t07",
+      "question": "Come opera un merge join?",
+      "answer": "Confronta sequenze ordinate sui valori di join avanzando nei due input.",
+      "detail": "È utile con dati già ordinati o quando il costo dell’ordinamento è favorevole.",
+      "example": "Due flussi ordinati per id_offerta possono essere fusi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ignorare l’eventuale sort iniziale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.7, pagine PDF 133–134"
+    },
+    {
+      "id": "si-c09-q045",
+      "topicId": "si-c09-t07",
+      "question": "Come si confrontano algoritmi di join senza ricorrere a slogan?",
+      "answer": "Si valutano cardinalità, disponibilità di indici, selettività, ordinamento, memoria, costo di I/O e stime del piano.",
+      "detail": "Il DBMS può cambiare algoritmo al variare dei dati, anche con query identica.",
+      "example": "Nested loop su piccolo input, hash su insiemi grandi, merge su dati ordinati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non decretare un vincitore universale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.7, pagine PDF 133–134"
+    },
+    {
+      "id": "si-c09-q046",
+      "topicId": "si-c09-t08",
+      "question": "Qual è lo scopo del laboratorio lab_si9?",
+      "answer": "Confrontare piani di accesso di una query prima e dopo un indice composto.",
+      "detail": "Il dataset è didattico ed è generato con generate_series, non è un benchmark eseguito o un risultato misurato nel manuale.",
+      "example": "Tabella scenario con 100.000 righe e campi id_offerta, consumo_kwh, data_creazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare tempi e piani osservati che il manuale lascia da rilevare.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.8, pagine PDF 134–135"
+    },
+    {
+      "id": "si-c09-q047",
+      "topicId": "si-c09-t08",
+      "question": "Quali sono i quattro campi dello schema lab_si9.scenario?",
+      "answer": "id BIGINT identity PK, id_offerta INTEGER, consumo_kwh NUMERIC(12,2), data_creazione DATE.",
+      "detail": "Tutti i campi non-ID sono NOT NULL nell’esempio.",
+      "example": "La data è costruita a partire da DATE '2026-01-01' + (n % 365).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare il dataset come un modello produttivo di EnerPrice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.8, pagine PDF 134–135"
+    },
+    {
+      "id": "si-c09-q048",
+      "topicId": "si-c09-t08",
+      "question": "Come il manuale popola 100.000 righe del dataset?",
+      "answer": "Con INSERT ... SELECT da generate_series(1,100000) e formule deterministiche sulle colonne.",
+      "detail": "id_offerta=1+(n%100), consumo=1000+(n%4000), data=01/01/2026+(n%365).",
+      "example": "Dopo INSERT viene eseguito ANALYZE lab_si9.scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire casualità ai valori generati in modo deterministico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.8, pagine PDF 134–135"
+    },
+    {
+      "id": "si-c09-q049",
+      "topicId": "si-c09-t08",
+      "question": "Qual è il filtro scelto nel confronto EXPLAIN prima/dopo?",
+      "answer": "id_offerta=37 AND data_creazione >= DATE '2026-10-01'.",
+      "detail": "Il filtro combina uguaglianza sulla colonna iniziale e intervallo sulla seconda.",
+      "example": "Indice CREATE INDEX idx_scenario_offerta_data ON lab_si9.scenario(id_offerta,data_creazione).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire l’ordine delle colonne nella spiegazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.8, pagine PDF 134–135"
+    },
+    {
+      "id": "si-c09-q050",
+      "topicId": "si-c09-t08",
+      "question": "Qual è la sequenza corretta dell’esperimento con un indice?",
+      "answer": "Creare/popolare dati, ANALYZE, EXPLAIN ANALYZE BUFFERS senza indice, creare indice, ANALYZE, ripetere la medesima query.",
+      "detail": "Le condizioni delle due misure devono essere confrontabili.",
+      "example": "Annotare operatori di scan, actual rows, loops e buffer.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare filtri o dataset differenti come se fosse un test controllato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.8, pagine PDF 134–135"
+    },
+    {
+      "id": "si-c09-q051",
+      "topicId": "si-c09-t08",
+      "question": "Come interpretare rows e actual rows nei piani?",
+      "answer": "rows è il numero previsto; actual rows è quello misurato all’esecuzione del nodo.",
+      "detail": "Una differenza elevata può orientare verso revisione delle statistiche o dei filtri.",
+      "example": "EXPLAIN stima 10 ma ANALYZE trova 40.000 righe.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare actual rows come valore stimato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.8, pagine PDF 134–135"
+    },
+    {
+      "id": "si-c09-q052",
+      "topicId": "si-c09-t08",
+      "question": "Che cosa significano loops e Buffers hit/read?",
+      "answer": "loops indica le ripetizioni del nodo; hit/read segnala pagine già in cache e pagine da leggere.",
+      "detail": "Sono misure utili a capire la ripetizione dell’operatore e l’accesso alla memoria.",
+      "example": "Nested loop può ripetere la scansione interna molte volte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare ogni hit a un I/O fisico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.8, pagine PDF 134–135"
+    },
+    {
+      "id": "si-c09-q053",
+      "topicId": "si-c09-t08",
+      "question": "Perché eseguire ciascuna SELECT più volte nel laboratorio?",
+      "answer": "Per distinguere un primo caricamento delle pagine dagli accessi successivi che possono riutilizzare la cache.",
+      "detail": "Il confronto deve annotare versione, indici, cardinalità, filtri, statistiche e piano.",
+      "example": "Prima esecuzione con shared read; seconda con più shared hit.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire necessariamente al nuovo indice ogni variazione dei tempi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.8, pagine PDF 134–135"
+    },
+    {
+      "id": "si-c09-q054",
+      "topicId": "si-c09-t08",
+      "question": "È un errore se il planner continua a scegliere Seq Scan dopo aver creato l’indice?",
+      "answer": "No: può essere la scelta meno costosa per filtri poco selettivi o tabelle piccole.",
+      "detail": "Il manuale richiede di misurare anche un filtro che restituisce molte righe.",
+      "example": "Una ricerca che estrae la maggior parte delle tuple può favorire letture sequenziali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre Index Scan come risultato atteso del laboratorio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.8, pagine PDF 134–135"
+    },
+    {
+      "id": "si-c09-q055",
+      "topicId": "si-c09-t09",
+      "question": "Che cos’è una transazione?",
+      "answer": "Un’unità logica di lavoro che raggruppa più operazioni e definisce che cosa debba essere confermato o annullato insieme.",
+      "detail": "È il confine entro cui il DBMS fornisce proprietà ACID secondo la configurazione.",
+      "example": "Approvatore aggiorna offerta e registra lo snapshot economico nella stessa transazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare ogni singolo statement a un intero workflow transazionale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.9, pagine PDF 135–136"
+    },
+    {
+      "id": "si-c09-q056",
+      "topicId": "si-c09-t09",
+      "question": "Quali sono le quattro proprietà ACID?",
+      "answer": "Atomicity, Consistency, Isolation e Durability.",
+      "detail": "Atomicità: tutto o niente; consistenza: preservazione di invarianti; isolamento: interazione concorrente regolata; durabilità: persistenza delle modifiche dopo commit.",
+      "example": "Un’offerta e i suoi scenari sono salvati in modo coerente anche quando la procedura contiene più comandi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere consistenza del DBMS con correttezza del calcolo economico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.9, pagine PDF 135–136"
+    },
+    {
+      "id": "si-c09-q057",
+      "topicId": "si-c09-t09",
+      "question": "Che cosa garantisce l’atomicità?",
+      "answer": "Che le modifiche incluse nella stessa transazione vengano confermate insieme oppure annullate.",
+      "detail": "Se un INSERT successivo fallisce e viene eseguito ROLLBACK, non resta una parte dell’unità di lavoro.",
+      "example": "Errore nell’inserimento del terzo scenario ⇒ nessun aggiornamento del workflow se tutto è in una transazione annullata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare atomico un processo con COMMIT intermedi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.9, pagine PDF 135–136"
+    },
+    {
+      "id": "si-c09-q058",
+      "topicId": "si-c09-t09",
+      "question": "Che cosa significa consistenza ACID e qual è il suo limite?",
+      "answer": "Una transazione corretta deve preservare i vincoli definiti; ACID non verifica automaticamente ogni regola non implementata.",
+      "detail": "Un DBMS può confermare atomicamente un valore di margine calcolato male se non esiste una regola che lo impedisca.",
+      "example": "Un totale errato ma non vietato dai vincoli può essere salvato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre da COMMIT riuscito che tutti i KPI siano semanticamente corretti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.9, pagine PDF 135–136"
+    },
+    {
+      "id": "si-c09-q059",
+      "topicId": "si-c09-t09",
+      "question": "Che cosa disciplina l’isolamento ACID?",
+      "answer": "La visibilità e la coerenza delle interazioni tra transazioni concorrenti, secondo un livello dichiarato.",
+      "detail": "Diversi livelli ammettono anomalie differenti o provocano abort e retry.",
+      "example": "Due utenti tentano di approvare contemporaneamente un’offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare isolamento come totale assenza di concorrenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.9, pagine PDF 135–136"
+    },
+    {
+      "id": "si-c09-q060",
+      "topicId": "si-c09-t09",
+      "question": "Che cosa significa durabilità?",
+      "answer": "Che dopo COMMIT il DBMS garantisce il mantenimento delle modifiche secondo protocollo e configurazione.",
+      "detail": "I log consentono di ricostruire pagine non ancora scritte nei file dati.",
+      "example": "Crash dopo commit e replay del WAL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare durabilità con immunità alla distruzione totale dello storage.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.9, pagine PDF 135–136"
+    },
+    {
+      "id": "si-c09-q061",
+      "topicId": "si-c09-t09",
+      "question": "Quali sono i comandi transazionali essenziali?",
+      "answer": "BEGIN apre la transazione; COMMIT conferma; ROLLBACK annulla; SAVEPOINT definisce un punto interno di ritorno.",
+      "detail": "SAVEPOINT non conclude la transazione.",
+      "example": "BEGIN; UPDATE ...; SAVEPOINT s1; ROLLBACK TO SAVEPOINT s1; COMMIT;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare ROLLBACK TO SAVEPOINT come sostituto di ogni rollback globale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.9, pagine PDF 135–136"
+    },
+    {
+      "id": "si-c09-q062",
+      "topicId": "si-c09-t09",
+      "question": "Perché il listato di approvazione dell’offerta è solo uno scheletro?",
+      "answer": "Perché deve ancora verificare che sia stata aggiornata esattamente una riga, gestire errori e registrare lo snapshot prima del COMMIT.",
+      "detail": "L’UPDATE filtrato su stato BOZZA non basta da solo a implementare il workflow.",
+      "example": "UPDATE offerta SET stato='APPROVATA' WHERE id_offerta=42 AND stato='BOZZA'.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere sicuro un workflow solo perché racchiuso fra BEGIN e COMMIT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.9, pagine PDF 135–136"
+    },
+    {
+      "id": "si-c09-q063",
+      "topicId": "si-c09-t09",
+      "question": "Quando è opportuno usare SAVEPOINT?",
+      "answer": "Quando una porzione del lavoro può essere annullata senza invalidare la transazione nel suo complesso.",
+      "detail": "È una decisione funzionale: se il requisito pretende tutto-o-niente, occorre rollback dell’intera unità.",
+      "example": "Annullamento di un’operazione opzionale pur conservando la precedente UPDATE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mantenere risultati parziali quando il requisito impone atomicità complessiva.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.9, pagine PDF 135–136"
+    },
+    {
+      "id": "si-c09-q064",
+      "topicId": "si-c09-t10",
+      "question": "Perché la concorrenza introduce anomalie?",
+      "answer": "Perché le operazioni delle transazioni possono interlecciarsi e osservare o produrre stati non desiderati.",
+      "detail": "Uno schedule descrive l’ordine globale di letture e scritture eseguite da più transazioni.",
+      "example": "Una SELECT seguita da UPDATE non impedisce a un’altra sessione di modificare prima il dato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare due operazioni sequenziali lato client automaticamente isolate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.10, pagine PDF 136–137"
+    },
+    {
+      "id": "si-c09-q065",
+      "topicId": "si-c09-t10",
+      "question": "Che cos’è il dirty read?",
+      "answer": "La lettura di una modifica scritta da un’altra transazione ma non ancora confermata.",
+      "detail": "Se la transazione scrivente annulla, il lettore ha osservato un valore mai stabilizzato.",
+      "example": "Lettura di prezzo 12 poi annullato da ROLLBACK.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con il valore confermato visto in READ COMMITTED.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.10, pagine PDF 136–137"
+    },
+    {
+      "id": "si-c09-q066",
+      "topicId": "si-c09-t10",
+      "question": "Che cos’è il non-repeatable read?",
+      "answer": "La stessa riga letta due volte nella stessa transazione produce valori diversi dopo il commit di un’altra transazione.",
+      "detail": "Riguarda una o più colonne della stessa riga.",
+      "example": "A legge 10, B aggiorna a 12 e conferma, A rilegge 12.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamarlo phantom se cambia solo il valore della stessa riga.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.10, pagine PDF 136–137"
+    },
+    {
+      "id": "si-c09-q067",
+      "topicId": "si-c09-t10",
+      "question": "Che cos’è il phantom read?",
+      "answer": "Due esecuzioni del medesimo predicato restituiscono un insieme di righe differente per modifiche concorrenti.",
+      "detail": "È un cambiamento del set di occorrenze che soddisfano la condizione.",
+      "example": "A conta 5 scenari >3000 kWh, B ne inserisce uno e conferma, A ne conta 6.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con la sola variazione del prezzo su una riga già presente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.10, pagine PDF 136–137"
+    },
+    {
+      "id": "si-c09-q068",
+      "topicId": "si-c09-t10",
+      "question": "Che cos’è un lost update?",
+      "answer": "Una modifica sovrascrive di fatto l’effetto dell’altra, per esempio quando due client calcolano un nuovo valore sul medesimo dato letto.",
+      "detail": "Un incremento eseguito con UPDATE valore=valore+1 può risolvere il caso elementare, ma non tutti i problemi di concorrenza.",
+      "example": "Entrambi leggono 5, entrambi scrivono 6: un incremento si perde.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare risolto qualsiasi vincolo multi-riga con un incremento atomico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.10, pagine PDF 136–137"
+    },
+    {
+      "id": "si-c09-q069",
+      "topicId": "si-c09-t10",
+      "question": "Che cos’è il write skew?",
+      "answer": "Due transazioni aggiornano righe diverse a partire da uno stato condiviso e insieme violano un invariante tra righe.",
+      "detail": "Può richiedere coordinamento con lock adeguati o SERIALIZABLE con retry.",
+      "example": "Due autorizzatori disattivano ciascuno l’altro, lasciando zero autorizzatori attivi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con lost update: i dati scritti possono trovarsi in righe differenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.10, pagine PDF 136–137"
+    },
+    {
+      "id": "si-c09-q070",
+      "topicId": "si-c09-t10",
+      "question": "Che cosa significa serializzabilità?",
+      "answer": "Che lo schedule concorrente ha effetti equivalenti a un qualche ordine seriale delle transazioni.",
+      "detail": "Non richiede di eseguire fisicamente le transazioni una dopo l’altra, ma di ottenere un risultato compatibile.",
+      "example": "Due approvazioni concorrenti devono rispettare gli invarianti come in una sequenza valida.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare serializzabilità con semplice assenza di dirty read.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.10, pagine PDF 136–137"
+    },
+    {
+      "id": "si-c09-q071",
+      "topicId": "si-c09-t10",
+      "question": "Quando due operazioni di transazioni diverse sono in conflitto?",
+      "answer": "Se agiscono sullo stesso elemento e almeno una è una scrittura.",
+      "detail": "Read-read non introduce conflitto; read-write e write-write sul medesimo dato sì.",
+      "example": "R1(X) prima di W2(X) genera una dipendenza fra le transazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere archi per accessi indipendenti a dati diversi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.10, pagine PDF 136–137"
+    },
+    {
+      "id": "si-c09-q072",
+      "topicId": "si-c09-t10",
+      "question": "Come si costruisce il grafo di precedenza?",
+      "answer": "Si disegnano transazioni come nodi e un arco Ti→Tj quando un’operazione di Ti precede un’operazione conflittuale di Tj.",
+      "detail": "Un grafo senza cicli corrisponde a uno schedule serializzabile per conflitti.",
+      "example": "Un solo arco T1→T2 indica compatibilità con ordine T1 prima di T2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre serializzabilità per conflitti da un grafo ciclico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.10, pagine PDF 136–137"
+    },
+    {
+      "id": "si-c09-q073",
+      "topicId": "si-c09-t10",
+      "question": "Che cosa comporta un ciclo nel grafo delle precedenze?",
+      "answer": "Non esiste un ordine seriale equivalente per conflitti.",
+      "detail": "La serializzabilità per conflitti è criterio più restrittivo di quella per viste.",
+      "example": "T1→T2 e T2→T1 formano un ciclo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare serializzabilità per viste e per conflitti come sinonimi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.10, pagine PDF 136–137"
+    },
+    {
+      "id": "si-c09-q074",
+      "topicId": "si-c09-t11",
+      "question": "Quali quattro livelli di isolamento sono presentati dallo standard SQL?",
+      "answer": "READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ e SERIALIZABLE.",
+      "detail": "Il loro confronto deve distinguere le garanzie standard dalle implementazioni concrete.",
+      "example": "La tabella del manuale indica i fenomeni potenzialmente consentiti da ogni livello.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire meccanicamente identico comportamento a PostgreSQL e Oracle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.11, pagina PDF 137"
+    },
+    {
+      "id": "si-c09-q075",
+      "topicId": "si-c09-t11",
+      "question": "Che anomalie ammette READ UNCOMMITTED secondo il modello standard?",
+      "answer": "Può ammettere dirty read, non-repeatable read, phantom e anomalie di serializzazione.",
+      "detail": "È il livello teorico più permissivo della tabella.",
+      "example": "Leggere un prezzo non confermato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare questo comportamento a PostgreSQL, che lo tratta diversamente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.11, pagina PDF 137"
+    },
+    {
+      "id": "si-c09-q076",
+      "topicId": "si-c09-t11",
+      "question": "Qual è la garanzia di READ COMMITTED nello standard?",
+      "answer": "Non ammette dirty read, ma può ammettere letture non ripetibili, phantom e anomalie di serializzazione.",
+      "detail": "È il livello predefinito di PostgreSQL indicato nel manuale.",
+      "example": "A legge 10, B conferma 12, A può leggere 12 in una SELECT successiva.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre uno snapshot stabile per tutta la transazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.11, pagina PDF 137"
+    },
+    {
+      "id": "si-c09-q077",
+      "topicId": "si-c09-t11",
+      "question": "Che cosa garantisce REPEATABLE READ nello standard SQL?",
+      "answer": "Evita dirty read e non-repeatable read; nello standard può consentire phantom e anomalie di serializzazione.",
+      "detail": "La semantica concreta può essere più forte in alcuni DBMS.",
+      "example": "Rilettura del prezzo stabile rispetto allo snapshot previsto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente i phantom allo specifico REPEATABLE READ PostgreSQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.11, pagina PDF 137"
+    },
+    {
+      "id": "si-c09-q078",
+      "topicId": "si-c09-t11",
+      "question": "Qual è la proprietà essenziale di SERIALIZABLE?",
+      "answer": "Le transazioni completate devono produrre effetti compatibili con un’esecuzione seriale.",
+      "detail": "Può comportare errori di serializzazione che richiedono il retry dell’intera unità di lavoro.",
+      "example": "Due operazioni concorrenti su un vincolo di autorizzatori possono essere serializzate o una annullata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare SERIALIZABLE come garanzia che non si verifichino abort.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.11, pagina PDF 137"
+    },
+    {
+      "id": "si-c09-q079",
+      "topicId": "si-c09-t11",
+      "question": "Come si comporta READ UNCOMMITTED in PostgreSQL?",
+      "answer": "Si comporta come READ COMMITTED e non consente veri dirty read.",
+      "detail": "È un dettaglio specifico del DBMS che differisce dalla tabella teorica minima dello standard.",
+      "example": "Un test su una riga modificata ma non confermata non espone il nuovo valore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rispondere che PostgreSQL READ UNCOMMITTED legge dati sporchi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.11, pagina PDF 137"
+    },
+    {
+      "id": "si-c09-q080",
+      "topicId": "si-c09-t11",
+      "question": "Qual è la particolarità di PostgreSQL REPEATABLE READ?",
+      "answer": "Evita anche i phantom read rispetto al minimo teorico standard, pur potendo ammettere anomalie di serializzazione.",
+      "detail": "Usa snapshot coerenti secondo le regole del motore.",
+      "example": "Due SELECT ordinarie nello stesso snapshot vedono lo stesso insieme di righe.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equipararlo a SERIALIZABLE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.11, pagina PDF 137"
+    },
+    {
+      "id": "si-c09-q081",
+      "topicId": "si-c09-t11",
+      "question": "Qual è la gestione PostgreSQL di SERIALIZABLE?",
+      "answer": "Controlla dipendenze fra transazioni e può abortire una transazione in caso di anomalia di serializzazione.",
+      "detail": "L’applicazione deve saper ripetere in modo controllato l’intera transazione.",
+      "example": "Retry dopo un errore di serializzazione nell’approvazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a ripetere l’ultima query isolata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.11, pagina PDF 137"
+    },
+    {
+      "id": "si-c09-q082",
+      "topicId": "si-c09-t11",
+      "question": "Qual è la differenza architetturale richiamata per Oracle?",
+      "answer": "Oracle usa informazioni undo per ricostruire versioni appropriate dei dati durante le letture consistenti.",
+      "detail": "Livelli e meccanismi non coincidono esattamente con quelli PostgreSQL; vanno verificati per prodotto/versione.",
+      "example": "Snapshot Oracle tramite undo, PostgreSQL tramite visibilità delle tuple MVCC.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere portabilità totale di lock e isolamento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.11, pagina PDF 137"
+    },
+    {
+      "id": "si-c09-q083",
+      "topicId": "si-c09-t11",
+      "question": "Che cosa mostra il listato BEGIN TRANSACTION ISOLATION LEVEL REPEATABLE READ?",
+      "answer": "L’impostazione di una transazione PostgreSQL che effettua letture coerenti al livello richiesto.",
+      "detail": "Non risolve automaticamente qualsiasi invariante tra più righe.",
+      "example": "SELECT stato FROM offerta WHERE id_offerta=42 nella stessa transazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire a ogni lock coordinato l’uso indiscriminato di REPEATABLE READ.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.11, pagina PDF 137"
+    },
+    {
+      "id": "si-c09-q084",
+      "topicId": "si-c09-t12",
+      "question": "Che cos’è un lock nel DBMS?",
+      "answer": "Un meccanismo che limita operazioni concorrenti incompatibili su righe, tabelle o altre risorse.",
+      "detail": "Le modalità e la compatibilità dipendono dal motore e dal livello di isolamento.",
+      "example": "Una riga di offerta bloccata da un aggiornamento può richiedere attesa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presupporre che ogni lock impedisca qualsiasi lettura.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.12, pagine PDF 137–138"
+    },
+    {
+      "id": "si-c09-q085",
+      "topicId": "si-c09-t12",
+      "question": "Che cosa fa SELECT ... FOR UPDATE in PostgreSQL?",
+      "answer": "Acquisisce un lock sulle righe selezionate rispetto a modifiche concorrenti, secondo le regole transazionali.",
+      "detail": "Il lock rimane sino alla conclusione della transazione nel caso considerato.",
+      "example": "BEGIN; SELECT ... WHERE id_offerta=42 FOR UPDATE; UPDATE ...; COMMIT;",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerarlo un lock automatico su ogni vincolo aggregato della tabella.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.12, pagine PDF 137–138"
+    },
+    {
+      "id": "si-c09-q086",
+      "topicId": "si-c09-t12",
+      "question": "Che cos’è un deadlock?",
+      "answer": "Un’attesa circolare: due o più transazioni attendono reciprocamente risorse bloccate dalle altre.",
+      "detail": "Il DBMS può scegliere una vittima, annullarla e consentire l’avanzamento.",
+      "example": "A blocca 1 e attende 2; B blocca 2 e attende 1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con una semplice attesa a senso unico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.12, pagine PDF 137–138"
+    },
+    {
+      "id": "si-c09-q087",
+      "topicId": "si-c09-t12",
+      "question": "Quali misure riducono il rischio di deadlock?",
+      "answer": "Ordine uniforme di acquisizione dei lock, transazioni brevi, scelta di accessi efficienti e gestione dei retry.",
+      "detail": "Ridurre le righe coinvolte e rispettare una disciplina coerente di accesso limita i cicli.",
+      "example": "Tutti i processi bloccano prima id=1 e poi id=2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere sufficiente eliminare del tutto i lock.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.12, pagine PDF 137–138"
+    },
+    {
+      "id": "si-c09-q088",
+      "topicId": "si-c09-t12",
+      "question": "Come si deve gestire un deadlock rilevato?",
+      "answer": "Il DBMS annulla una delle transazioni; il programma deve gestire il fallimento e, quando opportuno, ripetere l’intera operazione.",
+      "detail": "Eventuali effetti esterni devono essere compatibili con il retry.",
+      "example": "Approvatore riprova in modo controllato il workflow dopo rollback.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fare COMMIT di un workflow già annullato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.12, pagine PDF 137–138"
+    },
+    {
+      "id": "si-c09-q089",
+      "topicId": "si-c09-t12",
+      "question": "Che cos’è il Two-Phase Locking (2PL)?",
+      "answer": "Un protocollo di concorrenza con fase crescente di acquisizione lock e fase decrescente di rilascio, senza nuove acquisizioni dopo il rilascio.",
+      "detail": "Applicato coerentemente, garantisce serializzabilità per conflitti nel modello teorico.",
+      "example": "Transazione ottiene tutte le risorse necessarie prima di iniziare la fase di rilascio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere 2PL con le due fasi del commit distribuito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.12, pagine PDF 137–138"
+    },
+    {
+      "id": "si-c09-q090",
+      "topicId": "si-c09-t12",
+      "question": "Che cosa aggiunge lo strict 2PL?",
+      "answer": "Trattiene i lock esclusivi sino al termine della transazione.",
+      "detail": "Semplifica il recupero ed evita letture di scritture non confermate.",
+      "example": "Una seconda transazione non può aggiornare la riga ancora protetta dal lock esclusivo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descriverlo come protocollo per coinvolgere due database.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.12, pagine PDF 137–138"
+    },
+    {
+      "id": "si-c09-q091",
+      "topicId": "si-c09-t12",
+      "question": "Perché un lock sulla singola offerta può non proteggere un vincolo su più righe?",
+      "answer": "Perché l’invariante può dipendere da altre righe o oggetti che non sono stati coordinati.",
+      "detail": "Per le regole aggregative occorre progettare il protocollo di sincronizzazione complessivo.",
+      "example": "Numero minimo di autorizzatori attivi su righe distinte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non generalizzare la copertura di un row lock a ogni business rule.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.12, pagine PDF 137–138"
+    },
+    {
+      "id": "si-c09-q092",
+      "topicId": "si-c09-t13",
+      "question": "Che cos’è MVCC?",
+      "answer": "Multi-Version Concurrency Control: gestione delle versioni che consente letture coerenti rispetto a uno snapshot.",
+      "detail": "Riduce la contesa tra letture e scritture senza eliminare tutte le anomalie.",
+      "example": "Un lettore può vedere prezzo 10 mentre un’altra sessione ha già confermato 12.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare sempre “dato vecchio = bug”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.13, pagina PDF 138"
+    },
+    {
+      "id": "si-c09-q093",
+      "topicId": "si-c09-t13",
+      "question": "Che cos’è uno snapshot transazionale?",
+      "answer": "Una fotografia logica delle versioni visibili alla transazione in un determinato contesto di isolamento.",
+      "detail": "La stessa query può vedere versioni differenti in base a quando e come il DBMS definisce lo snapshot.",
+      "example": "REPEATABLE READ mantiene il quadro coerente per le SELECT ordinarie.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con un backup fisico del database.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.13, pagina PDF 138"
+    },
+    {
+      "id": "si-c09-q094",
+      "topicId": "si-c09-t13",
+      "question": "Dove conserva PostgreSQL le versioni MVCC?",
+      "answer": "Nelle tuple della heap, con metadati transazionali utilizzati per determinare la visibilità.",
+      "detail": "Le vecchie versioni non più necessarie possono richiedere manutenzione e recupero di spazio.",
+      "example": "UPDATE genera nuova visibilità, mentre un lettore può usare la versione precedente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare la visibilità MVCC a un ordinamento fisico delle righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.13, pagina PDF 138"
+    },
+    {
+      "id": "si-c09-q095",
+      "topicId": "si-c09-t13",
+      "question": "Qual è il ruolo di VACUUM in PostgreSQL?",
+      "answer": "Recuperare versioni di tuple non più utili e contribuire alla gestione della crescita delle tabelle.",
+      "detail": "Le versioni obsolete influiscono anche su manutenzione e indici.",
+      "example": "Una tabella con molti UPDATE/DELETE richiede corretta manutenzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che MVCC elimini qualsiasi costo di pulizia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.13, pagina PDF 138"
+    },
+    {
+      "id": "si-c09-q096",
+      "topicId": "si-c09-t13",
+      "question": "Come ottiene Oracle la read consistency descritta nel manuale?",
+      "answer": "Ricostruendo versioni precedenti appropriate tramite informazioni contenute negli undo segment.",
+      "detail": "È concettualmente simile nell’obiettivo a PostgreSQL ma differente nella struttura fisica.",
+      "example": "Una query può vedere una versione anteriore al COMMIT concorrente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che Oracle usa VACUUM sulle tuple della heap PostgreSQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.13, pagina PDF 138"
+    },
+    {
+      "id": "si-c09-q097",
+      "topicId": "si-c09-t13",
+      "question": "Quando una lettura “vecchia” può essere corretta e quando serve cautela?",
+      "answer": "È corretta se coerente con lo snapshot richiesto; serve cautela quando il processo necessita il dato più recente appena confermato.",
+      "detail": "La scelta del livello e della transazione deve seguire il requisito informativo.",
+      "example": "Report consistente vs decisione operativa sullo stato corrente di un’offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cercare di risolvere sempre con READ COMMITTED un problema di coerenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.13, pagina PDF 138"
+    },
+    {
+      "id": "si-c09-q098",
+      "topicId": "si-c09-t14",
+      "question": "Qual è l’idea fondamentale del Write-Ahead Logging?",
+      "answer": "Registrare durevolmente le informazioni di log necessarie prima di considerare persistenti determinate modifiche alle pagine dati.",
+      "detail": "Il DBMS può così ricostruire operazioni confermate dopo un crash senza scrivere immediatamente tutte le dirty pages.",
+      "example": "COMMIT seguito da crash prima del flush delle pagine heap.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che il commit richiede la scrittura immediata di ogni pagina dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.14, pagine PDF 138–139"
+    },
+    {
+      "id": "si-c09-q099",
+      "topicId": "si-c09-t14",
+      "question": "Che cosa accade nel recovery dopo crash?",
+      "answer": "Il DBMS usa informazioni persistenti, fra cui il log, per riportare lo stato a una situazione consistente secondo le garanzie previste.",
+      "detail": "È distinto dal recupero dopo distruzione dello storage.",
+      "example": "Replay delle modifiche confermate che non erano ancora presenti nei file dati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare WAL una copia indipendente del database.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.14, pagine PDF 138–139"
+    },
+    {
+      "id": "si-c09-q100",
+      "topicId": "si-c09-t14",
+      "question": "Quali problemi diversi richiedono ROLLBACK, WAL/recovery e backup?",
+      "answer": "Errore prima del commit: ROLLBACK; crash dopo commit: WAL/recovery; perdita dei file: backup e log conservati; DELETE erroneo già confermato: PITR o strategie di recupero.",
+      "detail": "La risposta dipende dall’evento e dal momento rispetto al commit.",
+      "example": "Dopo un COMMIT errato il semplice ROLLBACK non è più disponibile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non prescrivere una sola soluzione per qualunque guasto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.14, pagine PDF 138–139"
+    },
+    {
+      "id": "si-c09-q101",
+      "topicId": "si-c09-t14",
+      "question": "Come si distinguono redo e undo in Oracle?",
+      "answer": "Redo conserva informazioni per ripetere modifiche; undo supporta soprattutto rollback e ricostruzione delle versioni per letture consistenti.",
+      "detail": "La coppia non corrisponde uno-a-uno a WAL e tuple MVCC PostgreSQL.",
+      "example": "Oracle read consistency tramite undo; crash recovery tramite redo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare “redo=backup”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.14, pagine PDF 138–139"
+    },
+    {
+      "id": "si-c09-q102",
+      "topicId": "si-c09-t14",
+      "question": "Che cos’è RPO?",
+      "answer": "Recovery Point Objective: massima perdita di dati espressa in intervallo temporale che si considera tollerabile.",
+      "detail": "Determina quanto recente debba essere un punto recuperabile.",
+      "example": "RPO 15 minuti non è garantito da un semplice backup notturno.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere perdita di dati con tempo per riavviare il servizio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.14, pagine PDF 138–139"
+    },
+    {
+      "id": "si-c09-q103",
+      "topicId": "si-c09-t14",
+      "question": "Che cos’è RTO?",
+      "answer": "Recovery Time Objective: obiettivo di tempo entro il quale il servizio deve essere ripristinato.",
+      "detail": "Richiede procedure, capacità e test di recupero misurati.",
+      "example": "RTO di 2 ore per riavviare l’attività aziendale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare RTO a frequenza dei backup.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.14, pagine PDF 138–139"
+    },
+    {
+      "id": "si-c09-q104",
+      "topicId": "si-c09-t14",
+      "question": "Che cosa significa PITR?",
+      "answer": "Point-in-Time Recovery: ripristino a un punto temporale scelto, mediante backup e log archiviati dove supportato e configurato.",
+      "detail": "Occorre verificare integrità, disponibilità e corretta conservazione delle copie.",
+      "example": "Recupero dello stato prima di un DELETE accidentalmente confermato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che un backup base basti sempre per qualunque istante.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.14, pagine PDF 138–139"
+    },
+    {
+      "id": "si-c09-q105",
+      "topicId": "si-c09-t14",
+      "question": "Perché WAL, backup e restore periodico sono controlli complementari?",
+      "answer": "Perché proteggono da classi diverse di guasti e la recuperabilità deve essere effettivamente provata.",
+      "detail": "ACID non sostituisce i piani di continuità, supporti indipendenti e simulazioni di ripristino.",
+      "example": "Backup giornaliero senza log può perdere quasi un giorno di dati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre RPO/RTO garantiti dalla sola esistenza delle copie.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.14, pagine PDF 138–139"
+    },
+    {
+      "id": "si-c09-q106",
+      "topicId": "si-c09-t15",
+      "question": "Qual è la distinzione tra autenticazione e autorizzazione nel DBMS?",
+      "answer": "Autenticazione: verifica chi accede; autorizzazione: decide quali azioni sono consentite.",
+      "detail": "L’audit permette di ricostruire eventi e responsabilità, secondo le regole di logging.",
+      "example": "Un account identificato non è automaticamente autorizzato ad aggiornare offerte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare login riuscito come prova di permesso sulla risorsa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.15, pagina PDF 139"
+    },
+    {
+      "id": "si-c09-q107",
+      "topicId": "si-c09-t15",
+      "question": "Che cosa impone il principio del minimo privilegio?",
+      "answer": "Concedere a ruoli e account solo operazioni e risorse realmente necessarie.",
+      "detail": "Riduce l’impatto di errori o compromissioni.",
+      "example": "Ruolo di report con sola SELECT e senza DELETE/UPDATE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare privilegi amministrativi “per comodità”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.15, pagina PDF 139"
+    },
+    {
+      "id": "si-c09-q108",
+      "topicId": "si-c09-t15",
+      "question": "Come si crea nell’esempio PostgreSQL un ruolo di sola lettura?",
+      "answer": "CREATE ROLE ruolo_report NOLOGIN; GRANT USAGE ON SCHEMA lab_si9 TO ruolo_report; GRANT SELECT ON lab_si9.scenario TO ruolo_report;",
+      "detail": "Il ruolo può essere assegnato all’utente autorizzato senza concedere INSERT, UPDATE o DELETE.",
+      "example": "GRANT ruolo_report TO nome_utente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che SELECT su tabella dia automaticamente ogni altro privilegio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.15, pagina PDF 139"
+    },
+    {
+      "id": "si-c09-q109",
+      "topicId": "si-c09-t15",
+      "question": "A che cosa servono GRANT e REVOKE?",
+      "answer": "A concedere o revocare privilegi sugli oggetti secondo i meccanismi del DBMS.",
+      "detail": "Possono riguardare tabelle, schemi, viste e altri elementi.",
+      "example": "REVOKE UPDATE su una tabella da un ruolo che non deve più modificarla.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere gestione dei permessi DB con ruoli funzionali dell’applicazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.15, pagina PDF 139"
+    },
+    {
+      "id": "si-c09-q110",
+      "topicId": "si-c09-t15",
+      "question": "Perché un ruolo PostgreSQL non sostituisce l’autorizzazione PHP dell’utente finale?",
+      "answer": "Perché l’applicazione può condividere un account tecnico e deve applicare comunque i permessi riferiti al singolo utilizzatore.",
+      "detail": "I due controlli sono livelli differenti e complementari.",
+      "example": "Un utente Marketing non deve vedere offerte dell’area non autorizzata anche se l’account DB può leggere la tabella.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non delegare ogni vincolo applicativo a un unico account DB condiviso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.15, pagina PDF 139"
+    },
+    {
+      "id": "si-c09-q111",
+      "topicId": "si-c09-t15",
+      "question": "Quali difese complementari cita il manuale per i dati aziendali?",
+      "answer": "Ruoli/segregazione, query parametrizzate, autorizzazioni server-side, vincoli, backup, monitoraggio e audit.",
+      "detail": "Ogni misura contrasta rischi differenti: accessi impropri, SQL injection, alterazioni, indisponibilità, mancata tracciabilità.",
+      "example": "SQL parametrizzato per input utente e log per le operazioni sensibili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere che un firewall o il backup eliminino ogni minaccia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.15, pagina PDF 139"
+    },
+    {
+      "id": "si-c09-q112",
+      "topicId": "si-c09-t15",
+      "question": "Quando possono essere utili row-level security e audit?",
+      "answer": "Quando occorrono controlli granulari sulle righe e ricostruzione proporzionata delle operazioni.",
+      "detail": "Sono misure da valutare rispetto a policy, contesto e architettura, non automatismi obbligatori.",
+      "example": "Limitare visibilità delle offerte per reparto e tracciare approvazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non conservare indiscriminatamente nei log tutti i dati riservati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.15, pagina PDF 139"
+    },
+    {
+      "id": "si-c09-q113",
+      "topicId": "si-c09-t16",
+      "question": "Qual è la distinzione essenziale tra database parallelo e distribuito?",
+      "answer": "Il primo parallelizza attività sullo stesso insieme logico di dati; il secondo colloca e gestisce dati su più nodi con problematiche di comunicazione e coerenza.",
+      "detail": "Scansioni, join e aggregazioni possono sfruttare worker; la distribuzione aggiunge localizzazione delle copie e fallimenti parziali.",
+      "example": "Quattro worker che elaborano una SELECT sullo stesso database non implicano sharding.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare parallelismo interno a più server indipendenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.16, pagina PDF 140"
+    },
+    {
+      "id": "si-c09-q114",
+      "topicId": "si-c09-t16",
+      "question": "Che cosa indicano Gather e Gather Merge in un piano PostgreSQL?",
+      "answer": "Operatori associati a piani di query parallela, per raccogliere i risultati dei worker.",
+      "detail": "È una forma di elaborazione parallela nel motore e non prova di distribuzione geografica dei dati.",
+      "example": "EXPLAIN su una scansione aggregata eseguita con worker.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non leggere Gather come comando di replica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.16, pagina PDF 140"
+    },
+    {
+      "id": "si-c09-q115",
+      "topicId": "si-c09-t16",
+      "question": "Che cosa significa frammentazione orizzontale?",
+      "answer": "Ripartire le righe di una relazione tra partizioni o nodi.",
+      "detail": "Aiuta a distribuire dati o carico, ma alcune query devono accedere a più frammenti.",
+      "example": "Scenari con id di intervalli diversi su nodi distinti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderla con separazione delle colonne.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.16, pagina PDF 140"
+    },
+    {
+      "id": "si-c09-q116",
+      "topicId": "si-c09-t16",
+      "question": "Che cosa significa frammentazione verticale?",
+      "answer": "Ripartire gruppi di attributi, mantenendo i dati necessari alla ricostruzione della relazione.",
+      "detail": "La ricomposizione richiede riferimenti comuni coerenti.",
+      "example": "Dati identificativi su un frammento e attributi analitici su un altro.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere la verticalizzazione un semplice filtro di righe.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.16, pagina PDF 140"
+    },
+    {
+      "id": "si-c09-q117",
+      "topicId": "si-c09-t16",
+      "question": "Qual è lo scopo della replicazione?",
+      "answer": "Conservare copie di dati su nodi diversi per disponibilità e/o capacità di lettura.",
+      "detail": "Impone di considerare propagazione aggiornamenti, ritardi e potenziali conflitti.",
+      "example": "Replica di sola lettura che riceve modifiche dal primario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che tutte le repliche siano aggiornate nello stesso istante.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.16, pagina PDF 140"
+    },
+    {
+      "id": "si-c09-q118",
+      "topicId": "si-c09-t16",
+      "question": "Qual è la differenza tra replica sincrona e replica asincrona richiamata dal capitolo?",
+      "answer": "Con una replica asincrona le modifiche possono arrivare dopo il commit sul primario.",
+      "detail": "La copia può quindi essere temporaneamente non aggiornata e non garantisce conferma simultanea ovunque.",
+      "example": "Report letto da replica subito dopo il salvataggio dell’offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non promettere read-after-write immediato su replica asincrona.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.16, pagina PDF 140"
+    },
+    {
+      "id": "si-c09-q119",
+      "topicId": "si-c09-t16",
+      "question": "In che cosa differiscono partizionamento locale e sharding?",
+      "answer": "Il partizionamento in un DBMS non implica necessariamente più server; sharding ripartisce dati su nodi separati e richiede routing.",
+      "detail": "Le query che coinvolgono frammenti su nodi diversi possono comportare traffico di rete e coordinamento.",
+      "example": "Più partizioni di scenario sullo stesso server vs shard su server differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare sharding ogni PARTITION BY.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.16, pagina PDF 140"
+    },
+    {
+      "id": "si-c09-q120",
+      "topicId": "si-c09-t16",
+      "question": "Quali principali compromessi introducono architetture distribuite?",
+      "answer": "Overhead di coordinamento, interrogazioni inter-nodo, ritardo delle repliche, conflitti di scrittura e guasti parziali.",
+      "detail": "La distribuzione non è automaticamente più efficiente per piccoli workload.",
+      "example": "Una query su tutti i segmenti potrebbe dover leggere nodi diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere distribuzione solo per apparente sofisticazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.16, pagina PDF 140"
+    },
+    {
+      "id": "si-c09-q121",
+      "topicId": "si-c09-t16",
+      "question": "Perché due COMMIT locali separati non realizzano automaticamente una transazione distribuita atomica?",
+      "answer": "Perché il primo database potrebbe confermare e il secondo fallire, lasciando uno stato solo parzialmente applicato.",
+      "detail": "È necessario un protocollo comune oppure un disegno con compensazioni quando appropriato.",
+      "example": "Addebito su DB A confermato, scrittura di ordine su DB B fallita.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare replica e coordinamento del commit.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.16, pagina PDF 140"
+    },
+    {
+      "id": "si-c09-q122",
+      "topicId": "si-c09-t17",
+      "question": "Qual è lo scopo del Two-Phase Commit (2PC)?",
+      "answer": "Coordinare una decisione di conferma o annullamento tra più partecipanti di una transazione distribuita.",
+      "detail": "Il commit globale si decide solo se tutti i partecipanti hanno votato YES nella fase di preparazione.",
+      "example": "Due database devono approvare le proprie modifiche come un’unica operazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con Two-Phase Locking.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.17, pagine PDF 140–141"
+    },
+    {
+      "id": "si-c09-q123",
+      "topicId": "si-c09-t17",
+      "question": "Che cosa avviene nella fase 1 del 2PC?",
+      "answer": "Il coordinatore chiede PREPARE; ogni partecipante verifica se può completare, rende persistente lo stato necessario e vota YES/NO.",
+      "detail": "Dopo YES il partecipante è prepared e può mantenere lock in attesa della decisione globale.",
+      "example": "Nodo A vota YES, nodo B vota NO.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare YES come COMMIT già definitivo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.17, pagine PDF 140–141"
+    },
+    {
+      "id": "si-c09-q124",
+      "topicId": "si-c09-t17",
+      "question": "Quale decisione prende il coordinatore nella fase 2 del 2PC?",
+      "answer": "COMMIT se tutti hanno votato YES; ABORT se almeno uno ha votato NO.",
+      "detail": "Il coordinatore rende durevole la decisione globale e la comunica ai partecipanti.",
+      "example": "A=YES e B=NO ⇒ ABORT globale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ammettere un commit locale deciso indipendentemente dopo un NO.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.17, pagine PDF 140–141"
+    },
+    {
+      "id": "si-c09-q125",
+      "topicId": "si-c09-t17",
+      "question": "Che cosa fa un partecipante dopo la decisione globale?",
+      "answer": "Conclude tramite commit o rollback coerente con la decisione e libera le risorse.",
+      "detail": "Lo stato prepared serve a rispettare la scelta comune.",
+      "example": "Dopo ABORT un nodo prepared annulla la propria parte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare una prepared transaction aperta indefinitamente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.17, pagine PDF 140–141"
+    },
+    {
+      "id": "si-c09-q126",
+      "topicId": "si-c09-t17",
+      "question": "Qual è la debolezza classica del 2PC?",
+      "answer": "Può bloccare partecipanti prepared se il coordinatore non è disponibile prima della comunicazione della decisione.",
+      "detail": "I partecipanti possono trovarsi in stato incerto e mantenere lock sino al recupero della decisione.",
+      "example": "A e B hanno votato YES; il coordinatore cade prima della decisione nota.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non decidere arbitrariamente commit o abort sul singolo nodo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.17, pagine PDF 140–141"
+    },
+    {
+      "id": "si-c09-q127",
+      "topicId": "si-c09-t17",
+      "question": "Come si distinguono le responsabilità del coordinatore e dei partecipanti?",
+      "answer": "Il coordinatore raccoglie voti, sceglie e diffonde la decisione globale; i partecipanti preparano e applicano la decisione.",
+      "detail": "La persistenza delle informazioni preparatorie è necessaria anche in presenza di guasti.",
+      "example": "PREPARE→YES/NO→COMMIT/ABORT→liberazione risorse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire ai partecipanti la scelta autonoma sul commit globale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.17, pagine PDF 140–141"
+    },
+    {
+      "id": "si-c09-q128",
+      "topicId": "si-c09-t17",
+      "question": "Quali comandi PostgreSQL implementano gli stati prepared?",
+      "answer": "PREPARE TRANSACTION, COMMIT PREPARED e ROLLBACK PREPARED.",
+      "detail": "Sono destinati al coordinamento da parte di un transaction manager; max_prepared_transactions può essere disabilitato.",
+      "example": "PREPARE TRANSACTION 'tx_ordine_42'; poi una sola scelta fra commit prepared e rollback prepared.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lanciare manualmente una prepared transaction senza gestore e configurazione adeguati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.17, pagine PDF 140–141"
+    },
+    {
+      "id": "si-c09-q129",
+      "topicId": "si-c09-t17",
+      "question": "Perché transazioni prepared abbandonate sono pericolose?",
+      "answer": "Possono trattenere lock e ostacolare operazioni e manutenzione.",
+      "detail": "Serve un gestore che garantisca chiusura anche in presenza di errori.",
+      "example": "Una transazione prepared in attesa per molto tempo blocca modifiche incompatibili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare PREPARE TRANSACTION come normale BEGIN.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.17, pagine PDF 140–141"
+    },
+    {
+      "id": "si-c09-q130",
+      "topicId": "si-c09-t17",
+      "question": "Che differenza c’è tra 2PC e 2PL?",
+      "answer": "2PC coordina il commit distribuito; 2PL disciplina acquisizione e rilascio dei lock per la concorrenza.",
+      "detail": "Entrambi hanno “due fasi”, ma risolvono problemi differenti.",
+      "example": "PREPARE/COMMIT globale vs fase crescente/decrescente di lock.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rispondere che Two-Phase Commit impedisce di per sé ogni deadlock.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.17, pagine PDF 140–141"
+    },
+    {
+      "id": "si-c09-q131",
+      "topicId": "si-c09-t17",
+      "question": "Quando il 2PC non è richiesto in un’applicazione?",
+      "answer": "Quando il lavoro può essere eseguito in una transazione locale su un solo DBMS.",
+      "detail": "Il manuale non lo presenta come requisito obbligatorio di EnerPrice monolitico.",
+      "example": "Salvataggio di offerta e scenari nello stesso PostgreSQL.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre 2PC solo per dimostrare conoscenza teorica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.17, pagine PDF 140–141"
+    },
+    {
+      "id": "si-c09-q132",
+      "topicId": "si-c09-t18",
+      "question": "Che cosa caratterizza un carico OLTP?",
+      "answer": "Molte operazioni relativamente brevi, puntuali, selettive, con aggiornamenti e forte esigenza di consistenza.",
+      "detail": "Serve a processi operativi come registrazioni, cambi di stato e approvazioni.",
+      "example": "INSERT simulazione e UPDATE stato offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere OLTP con sola lettura di report aggregati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.18, pagine PDF 141–142"
+    },
+    {
+      "id": "si-c09-q133",
+      "topicId": "si-c09-t18",
+      "question": "Che cosa caratterizza un carico OLAP?",
+      "answer": "Query analitiche aggregate e storiche, confronti su volumi anche grandi e interrogazioni per decisioni.",
+      "detail": "La progettazione privilegia spesso scansioni, raggruppamenti e storicizzazione.",
+      "example": "Riepilogo trimestrale dei margini per segmento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che OLAP implichi sempre una tecnologia distribuita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.18, pagine PDF 141–142"
+    },
+    {
+      "id": "si-c09-q134",
+      "topicId": "si-c09-t18",
+      "question": "Perché OLTP e OLAP non sono categorie rigidamente separate?",
+      "answer": "Perché un singolo DBMS può gestire entrambi i carichi quando volumi e requisiti lo consentono.",
+      "detail": "La distinzione riguarda prevalenza di obiettivi e query, non una separazione fisica obbligatoria.",
+      "example": "Un piccolo gestionale registra simulazioni e mostra report aggregati nello stesso database.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre un warehouse come requisito di partenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.18, pagine PDF 141–142"
+    },
+    {
+      "id": "si-c09-q135",
+      "topicId": "si-c09-t18",
+      "question": "Quando è giustificato separare un warehouse o un servizio analytics?",
+      "answer": "Quando scale, disponibilità, complessità o carichi misurati rendono ragionevole una componente dedicata.",
+      "detail": "La decisione comporta costi, trasferimenti e possibile ritardo nella freschezza dei dati.",
+      "example": "Query analitiche complesse che interferiscono col lavoro operativo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere architetture sofisticate senza un requisito verificabile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.18, pagine PDF 141–142"
+    },
+    {
+      "id": "si-c09-q136",
+      "topicId": "si-c09-t19",
+      "question": "Qual è l’obiettivo dell’esempio EnerPrice nel Capitolo 9?",
+      "answer": "Collegare indicizzazione, piani, transazioni, isolamento e distribuzione al sistema di simulazione delle offerte energetiche.",
+      "detail": "È un collegamento didattico che non definisce il database definitivo né usa procedure aziendali riservate.",
+      "example": "Cercare simulazioni per offerta/data e confrontare margini.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare gli esempi con requisiti approvati del progetto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.19, pagina PDF 142"
+    },
+    {
+      "id": "si-c09-q137",
+      "topicId": "si-c09-t19",
+      "question": "Quale indice composto è proposto come possibile esempio per EnerPrice?",
+      "answer": "Un indice sui riferimenti dell’offerta e sulla data delle simulazioni.",
+      "detail": "Serve se le interrogazioni reali cercano spesso le simulazioni di una data offerta in un intervallo.",
+      "example": "Indice su (id_offerta,data_creazione).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non crearlo senza analizzare carico e piani.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.19, pagina PDF 142"
+    },
+    {
+      "id": "si-c09-q138",
+      "topicId": "si-c09-t19",
+      "question": "Come applicare EXPLAIN al caso EnerPrice?",
+      "answer": "Confrontando piani di interrogazioni selettive sulle offerte e di report aggregati.",
+      "detail": "Dati, cardinalità e cache possono far preferire accessi differenti.",
+      "example": "Ricerca di una singola offerta vs aggregazione di tutti i segmenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aspettarsi che entrambe le query usino lo stesso indice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.19, pagina PDF 142"
+    },
+    {
+      "id": "si-c09-q139",
+      "topicId": "si-c09-t19",
+      "question": "Quale problema affronta una transazione locale in EnerPrice?",
+      "answer": "Evitare che configurazione, risultati economici e cambiamenti di stato vengano salvati solo parzialmente.",
+      "detail": "Il confine atomico va definito in base al workflow.",
+      "example": "Salvataggio di una nuova simulazione e dei suoi valori nello stesso commit.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare commit intermedi se il requisito richiede tutto o niente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.19, pagina PDF 142"
+    },
+    {
+      "id": "si-c09-q140",
+      "topicId": "si-c09-t19",
+      "question": "Perché isolamento e lock sono utili nell’approvazione?",
+      "answer": "Per gestire tentativi concorrenti senza perdere aggiornamenti o violare regole di stato.",
+      "detail": "Occorre scegliere sincronizzazione e controlli coerenti col modello.",
+      "example": "Due responsabili cercano di approvare la stessa proposta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che il solo accesso HTTPS impedisca inconsistenze concorrenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.19, pagina PDF 142"
+    },
+    {
+      "id": "si-c09-q141",
+      "topicId": "si-c09-t19",
+      "question": "Quale architettura viene indicata come proporzionata per la prima versione di EnerPrice?",
+      "answer": "Una singola applicazione PHP MVC con PostgreSQL e transazioni locali.",
+      "detail": "Il manuale considera 2PC conoscenza teorica, non funzionalità necessaria al monolite.",
+      "example": "Server applicativo e DB relazionale unico a supporto del caso didattico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere transazioni distribuite artificiali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.19, pagina PDF 142"
+    },
+    {
+      "id": "si-c09-q142",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 1: quante pagine servono per 210.000 tuple da 105 tuple/pagina?",
+      "answer": "2.000 pagine.",
+      "detail": "B = ceil(210000/105); la stima non include overhead fisico.",
+      "example": "Una scansione completa visita circa 2.000 pagine nel modello.",
+      "formulas": [
+        {
+          "latex": "B=\\left\\lceil\\frac{210000}{105}\\right\\rceil=2000",
+          "meaning": "Numero di pagine dell’esercizio svolto 1"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non includere per errore 1 pagina aggiuntiva quando la divisione è esatta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q143",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 2: qual è la selettività di un filtro che restituisce 400 righe su 80.000?",
+      "answer": "0,005, cioè 0,5%.",
+      "detail": "Un filtro selettivo può giustificare un indice, ma dipende anche da dati, cache e costi.",
+      "example": "400/80000.",
+      "formulas": [
+        {
+          "latex": "s=\\frac{400}{80000}=0{,}005=0{,}5\\%",
+          "meaning": "Selettività dell’esercizio svolto 2"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non indicare 5%: la conversione in percentuale moltiplica per 100.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q144",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 3: scan da 1.200 pagine contro 4 accessi al B-tree e 75 pagine dati: quale conviene nel modello?",
+      "answer": "Ricerca indicizzata: 79 unità contro 1.200 dello scan.",
+      "detail": "Si sommano i 4 accessi d’albero e le 75 pagine dati; non sono tempi reali.",
+      "example": "4+75=79.",
+      "formulas": [
+        {
+          "latex": "C_{\\mathrm{indice}}=4+75=79",
+          "meaning": "Costo di accesso tramite indice"
+        },
+        {
+          "latex": "C_{\\mathrm{scan}}=1200",
+          "meaning": "Costo della scansione completa"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non trascurare il costo delle pagine dati dopo l’indice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q145",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 4: con B-tree (id_offerta,data_creazione), quale filtro sfrutta meglio l’ordine?",
+      "answer": "WHERE id_offerta=12, rispetto alla sola condizione data_creazione > una soglia.",
+      "detail": "Il primo filtra sul prefisso iniziale; il secondo non offre la stessa capacità di restrizione.",
+      "example": "Ricerca simulazioni di una singola offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non escludere in assoluto che il planner scelga comunque un uso particolare dell’indice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q146",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 5: se il 4% delle OFFERTE è BOZZA e la UI legge quasi solo bozze, quale indice valutare?",
+      "answer": "Indice parziale WHERE stato='BOZZA' sulle colonne effettivamente ricercate.",
+      "detail": "Riduce la dimensione e la manutenzione potenziale rispetto a un indice per tutte le righe, se le query lo giustificano.",
+      "example": "Ricerca veloce delle bozze per codice.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non indicizzare ogni stato indiscriminatamente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q147",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 6: A ha 50 righe e B ha 2 milioni con indice di join: quale piano è plausibile?",
+      "answer": "Nested loop con ricerche indicizzate nell’input B per le 50 righe esterne.",
+      "detail": "La piccola cardinalità esterna rende plausibile la scelta, ma il planner deve confrontare costi.",
+      "example": "50 ricerche di chiave potenzialmente efficienti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerarlo il solo piano possibile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q148",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 7: EXPLAIN stima 10 righe ma ne osserva 40.000: cosa verificare?",
+      "answer": "Statistiche, distribuzione valori, correlazioni, selettività, filtri, join e aggiornamento con ANALYZE.",
+      "detail": "Lo scarto nelle cardinalità può portare a un piano di accesso o join non adeguato.",
+      "example": "Un nested loop scelto per poche righe diventa oneroso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imputare automaticamente la discrepanza a un bug SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q149",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 8: durante l’approvazione fallisce l’inserimento del terzo scenario: cosa deve accadere?",
+      "answer": "Se tutto appartiene alla stessa transazione annullata, nessuna delle modifiche del workflow viene confermata.",
+      "detail": "COMMIT intermedi spezzerebbero l’atomicità.",
+      "example": "ROLLBACK di approvazione e inserimenti 1–3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare l’offerta APPROVATA con soli due scenari se il requisito è atomico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q150",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 9: A legge 10, B committa 12, A rilegge 12: quale anomalia?",
+      "answer": "Non-repeatable read.",
+      "detail": "È possibile in PostgreSQL READ COMMITTED; in REPEATABLE READ le SELECT ordinarie mantengono snapshot stabile.",
+      "example": "Prezzo letto due volte cambia nella stessa transazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificarlo come dirty read perché B ha già confermato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q151",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 10: il numero di scenari >3000 passa da 5 a 6 dopo INSERT concorrente: fenomeno?",
+      "answer": "Phantom read.",
+      "detail": "Cambia l’insieme che soddisfa il filtro, non soltanto un attributo di una riga già presente.",
+      "example": "COUNT(*) con lo stesso predicato prima e dopo un INSERT.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con non-repeatable read.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q152",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 11: A blocca riga 1 e vuole 2, B blocca 2 e vuole 1: che succede?",
+      "answer": "Deadlock per attesa circolare.",
+      "detail": "Prevenzione: ordine uniforme dei lock, operazioni brevi e gestione dei retry.",
+      "example": "Acquisire sempre 1 e poi 2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire questo scenario un semplice timeout indipendente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q153",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 12: vedere un prezzo vecchio dopo COMMIT concorrente in PostgreSQL è sempre bug?",
+      "answer": "No: può essere una conseguenza coerente dello snapshot e del livello di isolamento.",
+      "detail": "Per ottenere il valore più recente occorre progettare correttamente l’unità transazionale.",
+      "example": "Lettura in REPEATABLE READ mantiene la versione precedente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non correggere indiscriminatamente con lock esclusivi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q154",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 13: come può durare un COMMIT se una pagina dati non è ancora su disco?",
+      "answer": "Con WAL persistito in modo adeguato, il recovery riproduce le modifiche confermate.",
+      "detail": "Per perdita completa del supporto occorrono copie e log indipendenti.",
+      "example": "Replay dopo crash prima del flush heap.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare WAL con backup fisico indipendente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q155",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 14: un account deve solo leggere scenari: quali privilegi concedere?",
+      "answer": "USAGE sullo schema e SELECT sui dati pertinenti; non UPDATE o DELETE.",
+      "detail": "Minimo privilegio e controllo dei ruoli applicativi sono complementari.",
+      "example": "Ruolo report in lab_si9.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concedere amministrazione per semplificare l’accesso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q156",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 15: SELECT con 4 worker e replica che riceve modifiche sono la stessa tecnica?",
+      "answer": "No: il primo è parallelismo di esecuzione, la seconda duplica dati fra istanze/nodi.",
+      "detail": "Problemi di coordinamento e consistenza sono differenti.",
+      "example": "Worker di scansione vs replica asincrona.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere Gather con trasferimento sulla replica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q157",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 16: nel 2PC A vota YES e B NO: quale decisione?",
+      "answer": "ABORT globale.",
+      "detail": "COMMIT è consentito soltanto se tutti i partecipanti sono pronti.",
+      "example": "I nodi prepared devono annullare e rilasciare le risorse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non consentire al solo nodo A di confermare definitivamente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q158",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 17: due YES e crash del coordinatore prima della decisione: rischio?",
+      "answer": "Partecipanti prepared incerti, eventualmente bloccati sino al recupero della decisione globale.",
+      "detail": "È il limite di blocking del 2PC classico.",
+      "example": "Lock trattenuti durante l’indisponibilità del coordinatore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non far scegliere arbitrariamente a ogni nodo COMMIT o ABORT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q159",
+      "topicId": "si-c09-t20",
+      "question": "Esercizio 18: una query restituisce il 90% della tabella e usa Seq Scan nonostante un indice: è errato?",
+      "answer": "Non necessariamente: l’accesso sequenziale può costare meno degli accessi casuali via indice.",
+      "detail": "Valutare il piano con misure rappresentative prima di forzare l’uso di un indice.",
+      "example": "Filtro poco selettivo su una tabella grande.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare la presenza di un indice in obbligo di Index Scan.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q160",
+      "topicId": "si-c09-t20",
+      "question": "Problema autonomo 1: 45.001 tuple, 150 per pagina: quanto vale B?",
+      "answer": "301 pagine.",
+      "detail": "300 pagine non bastano perché resterebbe una tupla.",
+      "example": "ceil(45001/150)=ceil(300,0066...)=301.",
+      "formulas": [
+        {
+          "latex": "B=\\left\\lceil\\frac{45001}{150}\\right\\rceil=301",
+          "meaning": "Numero di pagine del problema autonomo"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non arrotondare al più vicino; occorre arrotondare in alto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q161",
+      "topicId": "si-c09-t20",
+      "question": "Problema autonomo 2: cita due casi in cui gli indici possono peggiorare il sistema.",
+      "answer": "Tabelle molto aggiornate con poche SELECT filtrate; filtri ampi o tabelle piccole dove la scansione è più economica.",
+      "detail": "Ogni indice deve essere mantenuto e occupa spazio.",
+      "example": "Frequenti INSERT/UPDATE su colonne indicizzate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare soltanto i benefici delle letture.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q162",
+      "topicId": "si-c09-t20",
+      "question": "Problema autonomo 3: descrivi lo schedule di una non-repeatable read.",
+      "answer": "A legge x=10; B aggiorna x=12 e committa; A rilegge x=12 in READ COMMITTED.",
+      "detail": "In PostgreSQL REPEATABLE READ la seconda lettura ordinaria della stessa transazione vede ancora 10.",
+      "example": "Due sessioni con SELECT e UPDATE intercalati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che A ha letto un valore non confermato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q163",
+      "topicId": "si-c09-t20",
+      "question": "Problema autonomo 4: quale differenza tra WAL e backup?",
+      "answer": "WAL sostiene durabilità e crash recovery; backup protegge da perdita dei file e può sostenere PITR assieme a log archiviati.",
+      "detail": "Rispondono a guasti diversi.",
+      "example": "Crash del server vs rottura del disco e cancellazione delle copie originali.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare WAL sufficiente a tutti i disastri.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q164",
+      "topicId": "si-c09-t20",
+      "question": "Problema autonomo 5: perché 2PC non equivale a due COMMIT indipendenti?",
+      "answer": "Perché usa voto PREPARE, decisione condivisa e stati persistenti, evitando conferme discordanti nei normali casi contemplati dal protocollo.",
+      "detail": "Due commit locali non garantiscono atomicità globale.",
+      "example": "DB A conferma, DB B fallisce prima di confermare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non descrivere due COMMIT in sequenza come protocollo distribuito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.20, pagine PDF 142–144"
+    },
+    {
+      "id": "si-c09-q165",
+      "topicId": "si-c09-t21",
+      "question": "Come riconoscere una risposta completa sul ruolo fisico del DBMS?",
+      "answer": "Deve spiegare traduzione da SQL a piani, pagine, buffer, indici e accessi, distinguendo organizzazione logica e fisica.",
+      "detail": "È il collegamento teorico che unisce i primi capitoli sulle query alle tecnologie del motore.",
+      "example": "La stessa SELECT può seguire Scan differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fermarsi alla definizione di tabella.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.21, pagine PDF 144–145"
+    },
+    {
+      "id": "si-c09-q166",
+      "topicId": "si-c09-t21",
+      "question": "Quali dieci termini compongono il glossario finale del capitolo?",
+      "answer": "Heap, buffer pool, B-tree, selectivity, query plan, snapshot, MVCC, deadlock, WAL e 2PC.",
+      "detail": "Il manuale li usa per ripercorrere accesso fisico, concorrenza, recovery e commit distribuito.",
+      "example": "Heap = righe non ordinate stabilmente per chiave; WAL = log preventivo; 2PC = coordinamento globale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rispondere solo con le sigle senza spiegazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.21, pagine PDF 144–145"
+    },
+    {
+      "id": "si-c09-q167",
+      "topicId": "si-c09-t21",
+      "question": "Qual è il livello di isolamento predefinito di PostgreSQL nel manuale?",
+      "answer": "READ COMMITTED.",
+      "detail": "Non ammette dirty read, ma possono cambiare righe e risultati delle SELECT successive nella stessa transazione.",
+      "example": "B conferma aggiornamento e A in nuova SELECT può vederlo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire il default a SERIALIZABLE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.21, pagine PDF 144–145"
+    },
+    {
+      "id": "si-c09-q168",
+      "topicId": "si-c09-t21",
+      "question": "Qual è la relazione fra snapshot e deadlock?",
+      "answer": "Sono concetti diversi: uno descrive la visibilità di versioni, l’altro un ciclo di attese su lock.",
+      "detail": "MVCC riduce alcune contese lettura/scrittura, ma non elimina tutte le situazioni di blocco.",
+      "example": "Lettura coerente del prezzo e due UPDATE reciprocamente in attesa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che MVCC renda impossibili i deadlock.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.21, pagine PDF 144–145"
+    },
+    {
+      "id": "si-c09-q169",
+      "topicId": "si-c09-t21",
+      "question": "Come distinguere costo del piano, tempo effettivo e RPO/RTO?",
+      "answer": "Costo del piano = metrica stimata; Execution Time = tempo misurato della query; RPO/RTO = obiettivi di continuità dati/servizio.",
+      "detail": "Sono misure di natura e finalità diverse.",
+      "example": "Planner cost 120; esecuzione 4 ms; RPO 15 min; RTO 2 ore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontarle numericamente come grandezze omogenee.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.21, pagine PDF 144–145"
+    },
+    {
+      "id": "si-c09-q170",
+      "topicId": "si-c09-t21",
+      "question": "Quale differenza esiste fra selectivity e numero di pagine?",
+      "answer": "La prima è frazione delle righe filtrate; il secondo misura unità di memorizzazione/lettura.",
+      "detail": "Una selettività del 3% può comunque coinvolgere una quota elevata di pagine.",
+      "example": "Righe sparse su molte pagine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare una proporzione rigida fra s e numero di pagine.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.21, pagine PDF 144–145"
+    },
+    {
+      "id": "si-c09-q171",
+      "topicId": "si-c09-t21",
+      "question": "Quali nozioni occorre padroneggiare per rispondere a una domanda sui piani di esecuzione?",
+      "answer": "Righe stimate/effettive, operatori Seq/Index Scan e join, cost, loops, hit/read, statistiche e selettività.",
+      "detail": "Saper interpretare perché il piano sia plausibile con le caratteristiche dei dati.",
+      "example": "Confronto EXPLAIN prima/dopo indice nel laboratorio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a memorizzare il nome dell’operatore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.21, pagine PDF 144–145"
+    },
+    {
+      "id": "si-c09-q172",
+      "topicId": "si-c09-t21",
+      "question": "Che cosa distingue la sicurezza tramite database da quella applicativa?",
+      "answer": "Permessi sugli oggetti DB e controlli sul soggetto finale sono strati complementari.",
+      "detail": "Il sistema può usare una sola credenziale tecnica DB ma applicare policy diverse ai propri utenti.",
+      "example": "Ruolo report e autorizzazioni per singola offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere GRANT sul ruolo tecnico con autorizzazione granulare dell’utente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.21, pagine PDF 144–145"
+    },
+    {
+      "id": "si-c09-q173",
+      "topicId": "si-c09-t21",
+      "question": "Perché il 2PC deve essere conosciuto anche senza implementarlo in EnerPrice?",
+      "answer": "È un concetto del programma sulle tecnologie DBMS distribuite e aiuta a spiegare l’atomicità su più partecipanti.",
+      "detail": "Nel progetto didattico monolitico le transazioni locali sono più proporzionate.",
+      "example": "Confronto COMMIT locale e protocollo prepare/decision.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare ogni contenuto teorico in requisito di progetto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.21, pagine PDF 144–145"
+    },
+    {
+      "id": "si-c09-q174",
+      "topicId": "si-c09-t21",
+      "question": "Come affrontare un caso nuovo che combina prestazioni, consistenza e disponibilità?",
+      "answer": "Individuare prima requisiti, volume e operazioni; misurare il piano; definire transazioni e isolamento; valutare recovery e distribuzione solo se necessari.",
+      "detail": "Il metodo mantiene distinti costi, proprietà ACID, rischio residuo e continuità.",
+      "example": "Dashboard e workflow di approvazione con caratteristiche diverse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere l’architettura partendo dal massimo numero di tecnologie.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 9, §9.21, pagine PDF 144–145"
+    }
+  ]
+}

@@ -1,0 +1,3506 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cdg",
+  "source": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC); PDF fornito dall’utente, pagine PDF 54–69 (da §6.1 a §6.32). Fonte unica autorizzata.",
+  "chapter": {
+    "id": "cdg-c06",
+    "title": "Il costo pieno basato sulle attività: Activity-Based Costing (ABC)",
+    "order": 6,
+    "topics": [
+      {
+        "id": "cdg-c06-t01",
+        "title": "Perché studiare l’Activity-Based Costing"
+      },
+      {
+        "id": "cdg-c06-t02",
+        "title": "Limiti dei sistemi di costo tradizionali"
+      },
+      {
+        "id": "cdg-c06-t03",
+        "title": "Assunto centrale e due stadi dell’ABC"
+      },
+      {
+        "id": "cdg-c06-t04",
+        "title": "Attività: definizione, elementi e confini"
+      },
+      {
+        "id": "cdg-c06-t05",
+        "title": "Attività, compiti, processi e centri di costo"
+      },
+      {
+        "id": "cdg-c06-t06",
+        "title": "Analisi e rappresentazione dei processi"
+      },
+      {
+        "id": "cdg-c06-t07",
+        "title": "Livello di aggregazione delle attività"
+      },
+      {
+        "id": "cdg-c06-t08",
+        "title": "Resource driver e attribuzione delle risorse"
+      },
+      {
+        "id": "cdg-c06-t09",
+        "title": "Esempio: risorse e costi delle attività"
+      },
+      {
+        "id": "cdg-c06-t10",
+        "title": "Activity driver, activity rate e costo pieno"
+      },
+      {
+        "id": "cdg-c06-t11",
+        "title": "Quattro tipologie di activity driver"
+      },
+      {
+        "id": "cdg-c06-t12",
+        "title": "Gerarchia delle attività e dei costi"
+      },
+      {
+        "id": "cdg-c06-t13",
+        "title": "Cost driver: determinanti economico-organizzative"
+      },
+      {
+        "id": "cdg-c06-t14",
+        "title": "Procedimento e quadrature del sistema ABC"
+      },
+      {
+        "id": "cdg-c06-t15",
+        "title": "Caso formaggi: costo dei controlli"
+      },
+      {
+        "id": "cdg-c06-t16",
+        "title": "Caso Arcari: due prodotti e quattro attività"
+      },
+      {
+        "id": "cdg-c06-t17",
+        "title": "Caso Standard e Premium a cinque attività"
+      },
+      {
+        "id": "cdg-c06-t18",
+        "title": "Confronto ABC e metodo tradizionale"
+      },
+      {
+        "id": "cdg-c06-t19",
+        "title": "Interpretazione delle distorsioni e delle decisioni"
+      },
+      {
+        "id": "cdg-c06-t20",
+        "title": "ABC nelle imprese di servizi: filiale bancaria"
+      },
+      {
+        "id": "cdg-c06-t21",
+        "title": "ABC per clienti, canali e mercati"
+      },
+      {
+        "id": "cdg-c06-t22",
+        "title": "Caso software ed energia: Standard e Custom"
+      },
+      {
+        "id": "cdg-c06-t23",
+        "title": "Activity-Based Management (ABM)"
+      },
+      {
+        "id": "cdg-c06-t24",
+        "title": "Le quattro fasi dell’ABM"
+      },
+      {
+        "id": "cdg-c06-t25",
+        "title": "Valore delle attività e capacità inutilizzata"
+      },
+      {
+        "id": "cdg-c06-t26",
+        "title": "KPI di processo e reporting per attività"
+      },
+      {
+        "id": "cdg-c06-t27",
+        "title": "Limiti e convenienza dell’ABC"
+      },
+      {
+        "id": "cdg-c06-t28",
+        "title": "Time-Driven Activity-Based Costing (TDABC)"
+      },
+      {
+        "id": "cdg-c06-t29",
+        "title": "Quadrature, errori e procedura d’esame"
+      },
+      {
+        "id": "cdg-c06-t30",
+        "title": "Esercizi di allenamento e impostazione"
+      },
+      {
+        "id": "cdg-c06-t31",
+        "title": "Soluzioni ragionate e controlli"
+      },
+      {
+        "id": "cdg-c06-t32",
+        "title": "Ripasso, formulario e glossario"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§6.1 — pagina PDF 54",
+        "cardIds": [
+          "cdg-c06-q001",
+          "cdg-c06-q002",
+          "cdg-c06-q003",
+          "cdg-c06-q004"
+        ]
+      },
+      {
+        "label": "§6.2 — pagina PDF 55",
+        "cardIds": [
+          "cdg-c06-q005",
+          "cdg-c06-q006",
+          "cdg-c06-q007",
+          "cdg-c06-q008",
+          "cdg-c06-q009"
+        ]
+      },
+      {
+        "label": "§6.3 — pagina PDF 55",
+        "cardIds": [
+          "cdg-c06-q010",
+          "cdg-c06-q011",
+          "cdg-c06-q012",
+          "cdg-c06-q013"
+        ]
+      },
+      {
+        "label": "§6.4 — pagina PDF 56",
+        "cardIds": [
+          "cdg-c06-q014",
+          "cdg-c06-q015",
+          "cdg-c06-q016",
+          "cdg-c06-q017",
+          "cdg-c06-q018"
+        ]
+      },
+      {
+        "label": "§6.5 — pagina PDF 56",
+        "cardIds": [
+          "cdg-c06-q019",
+          "cdg-c06-q020",
+          "cdg-c06-q021",
+          "cdg-c06-q022"
+        ]
+      },
+      {
+        "label": "§6.6 — pagina PDF 56",
+        "cardIds": [
+          "cdg-c06-q023",
+          "cdg-c06-q024",
+          "cdg-c06-q025",
+          "cdg-c06-q026"
+        ]
+      },
+      {
+        "label": "§6.7 — pagina PDF 57",
+        "cardIds": [
+          "cdg-c06-q027",
+          "cdg-c06-q028",
+          "cdg-c06-q029",
+          "cdg-c06-q030"
+        ]
+      },
+      {
+        "label": "§6.8 — pagina PDF 57",
+        "cardIds": [
+          "cdg-c06-q031",
+          "cdg-c06-q032",
+          "cdg-c06-q033",
+          "cdg-c06-q034",
+          "cdg-c06-q035",
+          "cdg-c06-q036"
+        ]
+      },
+      {
+        "label": "§6.9 — pagina PDF 58",
+        "cardIds": [
+          "cdg-c06-q037",
+          "cdg-c06-q038",
+          "cdg-c06-q039",
+          "cdg-c06-q040",
+          "cdg-c06-q041"
+        ]
+      },
+      {
+        "label": "§6.10 — pagina PDF 58",
+        "cardIds": [
+          "cdg-c06-q042",
+          "cdg-c06-q043",
+          "cdg-c06-q044",
+          "cdg-c06-q045",
+          "cdg-c06-q046",
+          "cdg-c06-q047"
+        ]
+      },
+      {
+        "label": "§6.11 — pagina PDF 58",
+        "cardIds": [
+          "cdg-c06-q048",
+          "cdg-c06-q049",
+          "cdg-c06-q050",
+          "cdg-c06-q051",
+          "cdg-c06-q052",
+          "cdg-c06-q053",
+          "cdg-c06-q054"
+        ]
+      },
+      {
+        "label": "§6.12 — pagina PDF 59",
+        "cardIds": [
+          "cdg-c06-q055",
+          "cdg-c06-q056",
+          "cdg-c06-q057",
+          "cdg-c06-q058",
+          "cdg-c06-q059",
+          "cdg-c06-q060"
+        ]
+      },
+      {
+        "label": "§6.13 — pagina PDF 60",
+        "cardIds": [
+          "cdg-c06-q061",
+          "cdg-c06-q062",
+          "cdg-c06-q063",
+          "cdg-c06-q064",
+          "cdg-c06-q065",
+          "cdg-c06-q066"
+        ]
+      },
+      {
+        "label": "§6.14 — pagina PDF 60",
+        "cardIds": [
+          "cdg-c06-q067",
+          "cdg-c06-q068",
+          "cdg-c06-q069",
+          "cdg-c06-q070",
+          "cdg-c06-q071"
+        ]
+      },
+      {
+        "label": "§6.15 — pagina PDF 61",
+        "cardIds": [
+          "cdg-c06-q072",
+          "cdg-c06-q073",
+          "cdg-c06-q074",
+          "cdg-c06-q075"
+        ]
+      },
+      {
+        "label": "§6.16 — pagina PDF 61",
+        "cardIds": [
+          "cdg-c06-q076",
+          "cdg-c06-q077",
+          "cdg-c06-q078",
+          "cdg-c06-q079",
+          "cdg-c06-q080",
+          "cdg-c06-q081"
+        ]
+      },
+      {
+        "label": "§6.17 — pagina PDF 62",
+        "cardIds": [
+          "cdg-c06-q082",
+          "cdg-c06-q083",
+          "cdg-c06-q084",
+          "cdg-c06-q085",
+          "cdg-c06-q086",
+          "cdg-c06-q087",
+          "cdg-c06-q088",
+          "cdg-c06-q089",
+          "cdg-c06-q090",
+          "cdg-c06-q091",
+          "cdg-c06-q092",
+          "cdg-c06-q093"
+        ]
+      },
+      {
+        "label": "§6.18 — pagina PDF 63",
+        "cardIds": [
+          "cdg-c06-q094",
+          "cdg-c06-q095",
+          "cdg-c06-q096",
+          "cdg-c06-q097",
+          "cdg-c06-q098",
+          "cdg-c06-q099",
+          "cdg-c06-q100"
+        ]
+      },
+      {
+        "label": "§6.19 — pagina PDF 63",
+        "cardIds": [
+          "cdg-c06-q101",
+          "cdg-c06-q102",
+          "cdg-c06-q103",
+          "cdg-c06-q104",
+          "cdg-c06-q105"
+        ]
+      },
+      {
+        "label": "§6.20 — pagina PDF 64",
+        "cardIds": [
+          "cdg-c06-q106",
+          "cdg-c06-q107",
+          "cdg-c06-q108",
+          "cdg-c06-q109",
+          "cdg-c06-q110",
+          "cdg-c06-q111",
+          "cdg-c06-q112",
+          "cdg-c06-q113"
+        ]
+      },
+      {
+        "label": "§6.21 — pagina PDF 64",
+        "cardIds": [
+          "cdg-c06-q114",
+          "cdg-c06-q115",
+          "cdg-c06-q116",
+          "cdg-c06-q117",
+          "cdg-c06-q118"
+        ]
+      },
+      {
+        "label": "§6.22 — pagina PDF 65",
+        "cardIds": [
+          "cdg-c06-q119",
+          "cdg-c06-q120",
+          "cdg-c06-q121",
+          "cdg-c06-q122",
+          "cdg-c06-q123",
+          "cdg-c06-q124",
+          "cdg-c06-q125"
+        ]
+      },
+      {
+        "label": "§6.23 — pagina PDF 65",
+        "cardIds": [
+          "cdg-c06-q126",
+          "cdg-c06-q127",
+          "cdg-c06-q128",
+          "cdg-c06-q129"
+        ]
+      },
+      {
+        "label": "§6.24 — pagina PDF 65",
+        "cardIds": [
+          "cdg-c06-q130",
+          "cdg-c06-q131",
+          "cdg-c06-q132",
+          "cdg-c06-q133",
+          "cdg-c06-q134",
+          "cdg-c06-q135"
+        ]
+      },
+      {
+        "label": "§6.25 — pagina PDF 66",
+        "cardIds": [
+          "cdg-c06-q136",
+          "cdg-c06-q137",
+          "cdg-c06-q138",
+          "cdg-c06-q139",
+          "cdg-c06-q140",
+          "cdg-c06-q141"
+        ]
+      },
+      {
+        "label": "§6.26 — pagina PDF 66",
+        "cardIds": [
+          "cdg-c06-q142",
+          "cdg-c06-q143",
+          "cdg-c06-q144",
+          "cdg-c06-q145",
+          "cdg-c06-q146",
+          "cdg-c06-q147"
+        ]
+      },
+      {
+        "label": "§6.27 — pagina PDF 66",
+        "cardIds": [
+          "cdg-c06-q148",
+          "cdg-c06-q149",
+          "cdg-c06-q150",
+          "cdg-c06-q151",
+          "cdg-c06-q152"
+        ]
+      },
+      {
+        "label": "§6.28 — pagina PDF 67",
+        "cardIds": [
+          "cdg-c06-q153",
+          "cdg-c06-q154",
+          "cdg-c06-q155",
+          "cdg-c06-q156",
+          "cdg-c06-q157",
+          "cdg-c06-q158"
+        ]
+      },
+      {
+        "label": "§6.29 — pagina PDF 67",
+        "cardIds": [
+          "cdg-c06-q159",
+          "cdg-c06-q160",
+          "cdg-c06-q161",
+          "cdg-c06-q162",
+          "cdg-c06-q163",
+          "cdg-c06-q164"
+        ]
+      },
+      {
+        "label": "§6.30 — pagina PDF 68",
+        "cardIds": [
+          "cdg-c06-q165",
+          "cdg-c06-q166",
+          "cdg-c06-q167",
+          "cdg-c06-q168",
+          "cdg-c06-q169",
+          "cdg-c06-q170",
+          "cdg-c06-q171",
+          "cdg-c06-q172"
+        ]
+      },
+      {
+        "label": "§6.31 — pagina PDF 69",
+        "cardIds": [
+          "cdg-c06-q173",
+          "cdg-c06-q174",
+          "cdg-c06-q175",
+          "cdg-c06-q176",
+          "cdg-c06-q177",
+          "cdg-c06-q178",
+          "cdg-c06-q179",
+          "cdg-c06-q180",
+          "cdg-c06-q181"
+        ]
+      },
+      {
+        "label": "§6.32 — pagina PDF 69",
+        "cardIds": [
+          "cdg-c06-q182",
+          "cdg-c06-q183",
+          "cdg-c06-q184",
+          "cdg-c06-q185",
+          "cdg-c06-q186",
+          "cdg-c06-q187"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cdg-c06-q001",
+      "topicId": "cdg-c06-t01",
+      "question": "Perché il Capitolo 6 introduce l’Activity-Based Costing dopo i centri di costo?",
+      "answer": "Perché i centri di costo, pur migliorando un riparto unico, non sempre spiegano quali attività determinano davvero il consumo delle risorse.",
+      "detail": "Prodotti che condividono reparti e macchine possono avere necessità molto diverse di setup, collaudi, acquisti, modifiche e supporto. L’ABC mette al centro queste attività anziché assumere che una sola base del reparto rappresenti tutti i consumi.",
+      "example": "Un articolo di serie e un articolo personalizzato passano dalla stessa macchina, ma il secondo richiede molti più attrezzaggi e prove.",
+      "formulas": [],
+      "connections": [
+        "§6.2 — Distorsioni tradizionali",
+        "§6.3 — Due stadi dell’ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.1, pagina PDF 54"
+    },
+    {
+      "id": "cdg-c06-q002",
+      "topicId": "cdg-c06-t01",
+      "question": "Che cos’è l’Activity-Based Costing secondo il manuale?",
+      "answer": "Un sistema di misurazione del costo pieno che attribuisce i costi delle risorse alle attività e quelli delle attività agli oggetti di costo.",
+      "detail": "L’unità di analisi centrale è l’attività effettivamente richiesta per produrre o servire un oggetto di costo: prodotto, commessa, servizio o cliente. La metodologia rende visibile il diverso carico di lavoro che gli oggetti impongono all’organizzazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.2 — Distorsioni tradizionali",
+        "§6.3 — Due stadi dell’ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.1, pagina PDF 54"
+    },
+    {
+      "id": "cdg-c06-q003",
+      "topicId": "cdg-c06-t01",
+      "question": "Quale relazione fra prodotti, attività e risorse giustifica l’ABC?",
+      "answer": "I prodotti e gli altri oggetti richiedono attività; sono le attività a utilizzare i fattori produttivi che generano costi.",
+      "detail": "La logica causale sposta la domanda dal semplice volume fabbricato al lavoro concretamente svolto. I costi diretti identificabili con l’oggetto possono rimanere direttamente imputati senza essere fatti transitare artificialmente per i pool di attività.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.2 — Distorsioni tradizionali",
+        "§6.3 — Due stadi dell’ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.1, pagina PDF 54"
+    },
+    {
+      "id": "cdg-c06-q004",
+      "topicId": "cdg-c06-t01",
+      "question": "Quali competenze teoriche e operative richiede il Capitolo 6?",
+      "answer": "Definire ABC e driver, distinguere attività e processi, calcolare i costi con due stadi, confrontare i metodi e interpretare i risultati per migliorare la gestione.",
+      "detail": "La competenza non si ferma al risultato numerico: comprende la scelta ragionata dei driver, le verifiche di quadratura, l’analisi di redditività per prodotti e clienti e il collegamento dell’ABC con l’ABM.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.2 — Distorsioni tradizionali",
+        "§6.3 — Due stadi dell’ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.1, pagina PDF 54"
+    },
+    {
+      "id": "cdg-c06-q005",
+      "topicId": "cdg-c06-t02",
+      "question": "Quale ipotesi sostiene i sistemi tradizionali che ripartiscono i costi indiretti con basi volumetriche?",
+      "answer": "Che il consumo dei costi indiretti aumenti in modo sufficientemente coerente con l’indicatore di volume scelto.",
+      "detail": "Ore di manodopera, ore macchina o quantità prodotte possono essere buone basi per talune risorse. Diventano fuorvianti se una parte significativa del lavoro dipende invece da lotti, varianti, ordini o complessità.",
+      "example": "Le ore di lavoro sono una buona base solo se rappresentano davvero il consumo dei costi comuni analizzati.",
+      "formulas": [],
+      "connections": [
+        "§6.3 — Logica ABC",
+        "§6.18 — Confronto numerico"
+      ],
+      "mistakes": "Non assumere che ore MOD e numero di pezzi spieghino ogni costo indiretto.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.2, pagina PDF 55"
+    },
+    {
+      "id": "cdg-c06-q006",
+      "topicId": "cdg-c06-t02",
+      "question": "Perché piccoli lotti e prodotti personalizzati possono essere sottocostati con un riparto volumetrico?",
+      "answer": "Perché richiedono molte attività di preparazione e gestione che non crescono proporzionalmente alle unità prodotte.",
+      "detail": "Setup, progettazione e apertura ordini possono verificarsi una volta per lotto o variante. Un prodotto con poche unità ma molti lotti provoca più attività di un prodotto standardizzato e può ricevere troppo pochi costi con una base per pezzo.",
+      "example": "1000 unità in 20 lotti richiedono più avviamenti di 1000 unità in 2 lotti.",
+      "formulas": [],
+      "connections": [
+        "§6.3 — Logica ABC",
+        "§6.18 — Confronto numerico"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.2, pagina PDF 55"
+    },
+    {
+      "id": "cdg-c06-q007",
+      "topicId": "cdg-c06-t02",
+      "question": "Che cosa si intende per sovvenzionamento incrociato dei costi (cross-subsidization)?",
+      "answer": "Una distorsione di imputazione per cui alcuni oggetti assorbono costi che, secondo l’effettivo uso delle attività, sarebbero da riferire ad altri.",
+      "detail": "Il caso tipico è il prodotto standard ad alto volume che riceve costi di complessità eccessivi, mentre quello speciale a basso volume ne riceve troppo pochi. Il totale aziendale rimane uguale: cambia la distribuzione interna dei costi.",
+      "example": "Nel confronto del manuale, il riparto tradizionale attribuisce 72.000 € in più al prodotto Standard rispetto all’ABC.",
+      "formulas": [],
+      "connections": [
+        "§6.3 — Logica ABC",
+        "§6.18 — Confronto numerico"
+      ],
+      "mistakes": "Non interpretare il sovvenzionamento incrociato come creazione di nuovi costi o trasferimento reale di denaro.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.2, pagina PDF 55"
+    },
+    {
+      "id": "cdg-c06-q008",
+      "topicId": "cdg-c06-t02",
+      "question": "Quando un sistema tradizionale a base unica può restare appropriato?",
+      "answer": "Quando le attività sono omogenee e i costi indiretti seguono ragionevolmente un unico driver misurabile.",
+      "detail": "In questa situazione l’ABC potrebbe richiedere dati e manutenzione aggiuntivi senza generare un miglioramento decisionale proporzionato. La complessità del modello deve essere giustificata dai benefici informativi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.3 — Logica ABC",
+        "§6.18 — Confronto numerico"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.2, pagina PDF 55"
+    },
+    {
+      "id": "cdg-c06-q009",
+      "topicId": "cdg-c06-t02",
+      "question": "Quando l’ABC diventa particolarmente utile rispetto al riparto unico?",
+      "answer": "Quando il peso dei costi indiretti è rilevante e prodotti, lotti, servizi o clienti consumano attività molto differenti.",
+      "detail": "Eterogeneità dei processi, gamma articolata, complessità variabile e attività non strettamente volumetriche sono indizi che una base unica può occultare le cause dei costi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.27 — Condizioni di convenienza"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.2, pagina PDF 55"
+    },
+    {
+      "id": "cdg-c06-q010",
+      "topicId": "cdg-c06-t03",
+      "question": "Quali sono i due stadi fondamentali del procedimento ABC?",
+      "answer": "Primo: attribuire i costi delle risorse alle attività. Secondo: imputare i costi delle attività ai prodotti o agli altri oggetti di costo.",
+      "detail": "Nel primo passaggio si usano misure di consumo delle risorse; nel secondo misure di consumo delle attività. Il passaggio deve essere tracciabile e coerente per evitare duplicazioni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Risorse}\\xrightarrow{\\text{resource driver}}\\text{Attività}\\xrightarrow{\\text{activity driver}}\\text{Oggetti di costo}",
+          "meaning": "Sequenza dei due stadi del modello ABC."
+        }
+      ],
+      "connections": [
+        "§6.8 — Resource driver",
+        "§6.10 — Activity driver"
+      ],
+      "mistakes": "Non invertire i due passaggi: le attività ricevono prima il costo delle risorse, poi lo trasferiscono ai prodotti.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.3, pagina PDF 55"
+    },
+    {
+      "id": "cdg-c06-q011",
+      "topicId": "cdg-c06-t03",
+      "question": "Che ruolo ha il resource driver nel primo stadio dell’ABC?",
+      "answer": "Misura quanta parte di una risorsa condivisa è impiegata dalle diverse attività per attribuirne il costo.",
+      "detail": "Si possono utilizzare percentuali di tempo, ore di impiego o altri parametri ragionevolmente causali. Se la risorsa è dedicata a un’unica attività, l’attribuzione può essere diretta.",
+      "example": "Un responsabile acquisti dedica il 60% del tempo agli ordini e il 40% alla qualifica fornitori.",
+      "formulas": [],
+      "connections": [
+        "§6.8 — Resource driver",
+        "§6.10 — Activity driver"
+      ],
+      "mistakes": "Le ore della risorsa non sono automaticamente il driver con cui si attribuisce il costo dell’attività ai prodotti.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.3, pagina PDF 55"
+    },
+    {
+      "id": "cdg-c06-q012",
+      "topicId": "cdg-c06-t03",
+      "question": "Che ruolo ha l’activity driver nel secondo stadio dell’ABC?",
+      "answer": "Misura quanto ciascun oggetto di costo utilizza l’attività e permette di attribuirne il costo.",
+      "detail": "Per la gestione degli ordini il numero di ordini richiesti dai prodotti può essere una base appropriata, se gli ordini sono relativamente simili; il numero di pezzi venduti non riflette necessariamente il carico amministrativo.",
+      "example": "Il costo di gestione ordini può essere assegnato a due prodotti usando quanti ordini ciascuno richiede.",
+      "formulas": [],
+      "connections": [
+        "§6.8 — Resource driver",
+        "§6.10 — Activity driver"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.3, pagina PDF 55"
+    },
+    {
+      "id": "cdg-c06-q013",
+      "topicId": "cdg-c06-t03",
+      "question": "Come viene trattato nell’ABC il costo di una risorsa dedicata in esclusiva a un’attività?",
+      "answer": "Può essere imputato direttamente a quell’attività, senza una ripartizione percentuale fra più attività.",
+      "detail": "Un resource driver serve quando è necessario misurare o stimare il consumo di una risorsa condivisa. Introdurre quote arbitrarie per una risorsa esclusiva non migliora il modello.",
+      "example": "Macchina dedicata esclusivamente al collaudo: costo attribuito direttamente all’attività Collaudo.",
+      "formulas": [],
+      "connections": [
+        "§6.8 — Resource driver",
+        "§6.10 — Activity driver"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.3, pagina PDF 55"
+    },
+    {
+      "id": "cdg-c06-q014",
+      "topicId": "cdg-c06-t04",
+      "question": "Come viene definita un’attività nell’ABC?",
+      "answer": "Un insieme omogeneo di compiti svolti con competenze specifiche, che impiega input e genera un output identificabile per un cliente interno o esterno.",
+      "detail": "La definizione lega lavoro, persone, know-how, omogeneità di costi e performance, input e output. Un’attività è quindi più concreta di una generica voce organizzativa o di una lista di mansioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.5 — Attività e processo",
+        "§6.7 — Aggregazione"
+      ],
+      "mistakes": "Non confondere “attività” con l’intera funzione o con un compito isolato.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.4, pagina PDF 56"
+    },
+    {
+      "id": "cdg-c06-q015",
+      "topicId": "cdg-c06-t04",
+      "question": "Quali elementi devono essere esplicitati per descrivere correttamente un’attività?",
+      "answer": "Inizio e fine, compiti, input, output, destinatario, risorse, unità di misura, volume e responsabilità.",
+      "detail": "Delimitare correttamente l’attività consente di scegliere driver significativi e impedisce di contabilizzare due volte la stessa prestazione o di aggregare attività dal comportamento molto diverso.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.5 — Attività e processo",
+        "§6.7 — Aggregazione"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.4, pagina PDF 56"
+    },
+    {
+      "id": "cdg-c06-q016",
+      "topicId": "cdg-c06-t04",
+      "question": "Quali sono esempi di attività rilevanti per un modello ABC?",
+      "answer": "Gestione ordini, setup, collaudo, movimentazione, riparazioni, assistenza al cliente, predisposizione offerte e documentazione tecnica.",
+      "detail": "Sono esempi tratti dal manuale che possono verificarsi in imprese manifatturiere e di servizi. Ciascuna attività deve avere un output identificabile e un modo ragionevole di misurare il lavoro richiesto.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.5 — Attività e processo",
+        "§6.7 — Aggregazione"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.4, pagina PDF 56"
+    },
+    {
+      "id": "cdg-c06-q017",
+      "topicId": "cdg-c06-t04",
+      "question": "Perché “Acquisti” non è automaticamente un’attività omogenea?",
+      "answer": "Perché è una funzione che può comprendere attività distinte, come registrazione ordini, qualifica fornitori e solleciti urgenti.",
+      "detail": "Pur impiegando lo stesso personale, queste attività possono avere tempi, cause e driver molto diversi. Un unico costo medio dell’ufficio rischia di occultare tale eterogeneità.",
+      "example": "Nella funzione Acquisti, registrare un ordine e qualificare un fornitore sono attività distinte.",
+      "formulas": [],
+      "connections": [
+        "§6.5 — Attività e processo",
+        "§6.7 — Aggregazione"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.4, pagina PDF 56"
+    },
+    {
+      "id": "cdg-c06-q018",
+      "topicId": "cdg-c06-t04",
+      "question": "Che rischio si corre se non sono chiari i confini fra attività?",
+      "answer": "Si possono duplicare costi, omettere prestazioni o usare un driver che rappresenta soltanto parte del lavoro.",
+      "detail": "Confini di ingresso e uscita e destinatario dell’output consentono di distinguere attività contigue e di controllare la coerenza dei cost pool. La classificazione deve essere mantenibile e riproducibile.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.5 — Attività e processo",
+        "§6.7 — Aggregazione"
+      ],
+      "mistakes": "Evitare confini sovrapposti che duplicano gli stessi costi nelle attività adiacenti.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.4, pagina PDF 56"
+    },
+    {
+      "id": "cdg-c06-q019",
+      "topicId": "cdg-c06-t05",
+      "question": "Che differenza esiste tra compito, attività e processo?",
+      "answer": "Il compito è un’operazione elementare; l’attività riunisce compiti omogenei; il processo collega attività finalizzate a un risultato complessivo.",
+      "detail": "Verificare un codice fornitore è un compito; emettere un ordine è un’attività; approvvigionare materiali è un processo. I tre livelli descrivono aggregazioni di lavoro, non necessariamente livelli gerarchici.",
+      "example": "Compito: verificare codice fornitore. Attività: emettere ordine. Processo: approvvigionare il materiale.",
+      "formulas": [],
+      "connections": [
+        "§6.6 — Process mapping",
+        "§6.1 — Logica ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.5, pagina PDF 56"
+    },
+    {
+      "id": "cdg-c06-q020",
+      "topicId": "cdg-c06-t05",
+      "question": "In cosa differiscono il centro di costo e l’attività?",
+      "answer": "Il centro di costo aggrega risorse per unità organizzativa; l’attività descrive il lavoro effettivamente svolto e può attraversare più unità.",
+      "detail": "Un centro Acquisti contiene molte attività; l’attività di gestione non conformità può interessare Qualità, Produzione, Logistica e Assistenza. La diversa prospettiva spiega perché i due sistemi attribuiscano costi in modo diverso.",
+      "example": "Un ufficio Acquisti contiene più attività; gestire non conformità coinvolge anche Qualità, Logistica e Assistenza.",
+      "formulas": [],
+      "connections": [
+        "§6.6 — Process mapping",
+        "§6.1 — Logica ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.5, pagina PDF 56"
+    },
+    {
+      "id": "cdg-c06-q021",
+      "topicId": "cdg-c06-t05",
+      "question": "L’ABC sostituisce necessariamente la contabilità per centri di costo?",
+      "answer": "No. Può riutilizzarne i dati e analizzarli ulteriormente per attività.",
+      "detail": "I centri restano utili per rilevare risorse e responsabilità. L’ABC approfondisce la relazione fra risorse, attività e oggetti di costo, senza richiedere obbligatoriamente l’eliminazione dei centri.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.6 — Process mapping",
+        "§6.1 — Logica ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.5, pagina PDF 56"
+    },
+    {
+      "id": "cdg-c06-q022",
+      "topicId": "cdg-c06-t05",
+      "question": "Perché una stessa attività può essere trasversale a più centri?",
+      "answer": "Perché il lavoro necessario a produrre un output può richiedere contributi coordinati di diverse funzioni aziendali.",
+      "detail": "La gestione delle non conformità può coinvolgere chi produce, controlla, spedisce e assiste il cliente. L’organigramma non coincide necessariamente con il flusso delle attività.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.6 — Process mapping",
+        "§6.1 — Logica ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.5, pagina PDF 56"
+    },
+    {
+      "id": "cdg-c06-q023",
+      "topicId": "cdg-c06-t06",
+      "question": "Che cos’è un processo aziendale nella prospettiva ABC?",
+      "answer": "Una sequenza coordinata di attività che produce un output complessivo per un destinatario interno o esterno.",
+      "detail": "La prospettiva per processi segue il flusso del valore e del lavoro attraverso le unità organizzative, anziché limitarsi alle relazioni gerarchiche. Aiuta a leggere tempi, passaggi e costi dell’intero percorso.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.4 — Confini delle attività",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.6, pagina PDF 56"
+    },
+    {
+      "id": "cdg-c06-q024",
+      "topicId": "cdg-c06-t06",
+      "question": "Quali attività può includere il processo dall’ordine alla consegna?",
+      "answer": "Ricezione e verifica ordine, controllo disponibilità, approvvigionamento, lavorazione, collaudo, imballaggio e spedizione.",
+      "detail": "Il buon risultato finale dipende dalla continuità fra queste fasi. Ottimizzare un reparto isolato non basta se rimangono attese o errori nei passaggi fra funzioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.4 — Confini delle attività",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.6, pagina PDF 56"
+    },
+    {
+      "id": "cdg-c06-q025",
+      "topicId": "cdg-c06-t06",
+      "question": "A cosa serve la mappatura dei processi (process mapping) per l’ABC?",
+      "answer": "A individuare attività, interdipendenze, duplicazioni, colli di bottiglia, responsabilità e oggetti che utilizzano ciascuna attività.",
+      "detail": "Il process mapping precede la scelta di driver e pool: prima occorre capire dove si genera realmente il lavoro, poi misurarlo e attribuirne i costi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.4 — Confini delle attività",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.6, pagina PDF 56"
+    },
+    {
+      "id": "cdg-c06-q026",
+      "topicId": "cdg-c06-t06",
+      "question": "Quale ruolo può svolgere il process owner in un processo trasversale?",
+      "answer": "Coordinare la prestazione complessiva end-to-end, pur quando gli operatori dipendono formalmente da responsabili funzionali.",
+      "detail": "Questa figura aiuta ad assegnare responsabilità a un risultato che attraversa più reparti. La performance va osservata lungo il processo, non soltanto nei singoli centri.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.4 — Confini delle attività",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.6, pagina PDF 56"
+    },
+    {
+      "id": "cdg-c06-q027",
+      "topicId": "cdg-c06-t07",
+      "question": "Perché un sistema ABC non deve avere né troppe né troppo poche attività?",
+      "answer": "Perché il dettaglio eccessivo rende costosa la misurazione, mentre aggregazioni troppo ampie nascondono le cause dei costi.",
+      "detail": "Occorre bilanciare accuratezza informativa e costo di costruzione e manutenzione del modello. Non è utile catalogare ogni gesto se non migliora le decisioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.4 — Definizione di attività",
+        "§6.27 — Convenienza dell’ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.7, pagina PDF 57"
+    },
+    {
+      "id": "cdg-c06-q028",
+      "topicId": "cdg-c06-t07",
+      "question": "Quando conviene tenere separate due attività simili secondo le slide?",
+      "answer": "Quando hanno costi significativi, driver sostanzialmente differenti o un contributo distinto alla differenziazione dell’impresa.",
+      "detail": "Gli ordini urgenti possono richiedere tempi e trattamenti diversi dagli ordini standard. Se tale differenza è materiale, aggregarli in una media riduce la qualità dell’informazione.",
+      "example": "Gestione ordini standard e urgenti possono richiedere costi molto differenti: conviene separarle se la differenza è significativa.",
+      "formulas": [],
+      "connections": [
+        "§6.4 — Definizione di attività",
+        "§6.27 — Convenienza dell’ABC"
+      ],
+      "mistakes": "Non separare attività irrilevanti soltanto per aumentare il numero dei pool.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.7, pagina PDF 57"
+    },
+    {
+      "id": "cdg-c06-q029",
+      "topicId": "cdg-c06-t07",
+      "question": "Quando è ragionevole aggregare ordini standard e urgenti in una sola attività?",
+      "answer": "Quando le differenze di consumo sono modeste e il vantaggio del dettaglio non giustifica maggiori rilevazioni.",
+      "detail": "La precisione teorica non è l’unico obiettivo: la struttura informativa deve essere praticabile, economica e adatta alle decisioni da supportare.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.4 — Definizione di attività",
+        "§6.27 — Convenienza dell’ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.7, pagina PDF 57"
+    },
+    {
+      "id": "cdg-c06-q030",
+      "topicId": "cdg-c06-t07",
+      "question": "Qual è il trade-off centrale nella scelta del livello di dettaglio dell’ABC?",
+      "answer": "Maggiore disaggregazione può aumentare la precisione, ma richiede più dati, rilevazioni, aggiornamenti e controlli.",
+      "detail": "La soluzione corretta è il livello che migliora in modo apprezzabile decisioni e analisi rispetto al costo informativo che comporta.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.4 — Definizione di attività",
+        "§6.27 — Convenienza dell’ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.7, pagina PDF 57"
+    },
+    {
+      "id": "cdg-c06-q031",
+      "topicId": "cdg-c06-t08",
+      "question": "Che cos’è il resource driver?",
+      "answer": "È la misura del consumo di una risorsa da parte di una specifica attività, usata nel primo stadio dell’ABC.",
+      "detail": "Può consistere in ore di personale, minuti macchina, metri quadrati, kWh o percentuali d’impiego. Deve rappresentare una relazione ragionevole fra risorsa e attività, non semplicemente una base disponibile.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.9 — Esempio delle risorse",
+        "§6.10 — Secondo stadio"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.8, pagina PDF 57"
+    },
+    {
+      "id": "cdg-c06-q032",
+      "topicId": "cdg-c06-t08",
+      "question": "Come si determina il costo di una risorsa assegnato a una singola attività?",
+      "answer": "Moltiplicando il costo complessivo della risorsa per la quota di utilizzo relativa all’attività.",
+      "detail": "Se la risorsa è condivisa, la quota va rilevata o stimata con una base controllabile. Le quote complessive devono essere riconciliate con il costo della risorsa e l’eventuale parte inutilizzata o non assegnata va esplicitata.",
+      "example": "Su una risorsa da 100.000 € usata al 25% da un’attività, la quota attribuita è 25.000 €.",
+      "formulas": [
+        {
+          "latex": "C_{r\\to a}=C_r\\,q_{r,a}",
+          "meaning": "Costo della risorsa r destinato all’attività a; q è la percentuale d’impiego come frazione."
+        }
+      ],
+      "connections": [
+        "§6.9 — Esempio delle risorse",
+        "§6.10 — Secondo stadio"
+      ],
+      "mistakes": "Le quote di una risorsa non devono superare il 100% senza una spiegazione.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.8, pagina PDF 57"
+    },
+    {
+      "id": "cdg-c06-q033",
+      "topicId": "cdg-c06-t08",
+      "question": "Come si calcola il costo totale di un’attività nello stadio risorse → attività?",
+      "answer": "Sommando tutte le quote dei costi delle risorse assegnate a quell’attività.",
+      "detail": "Ogni contributo deve essere riconducibile a una risorsa specifica e al relativo driver. La somma dei costi delle attività deve quadrarsi con il perimetro totale delle risorse attribuite.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_a=\\sum_r C_r\\,q_{r,a}",
+          "meaning": "Somma dei costi delle risorse r consumate dall’attività a."
+        }
+      ],
+      "connections": [
+        "§6.9 — Esempio delle risorse",
+        "§6.10 — Secondo stadio"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.8, pagina PDF 57"
+    },
+    {
+      "id": "cdg-c06-q034",
+      "topicId": "cdg-c06-t08",
+      "question": "Quali misure possono fungere da resource driver?",
+      "answer": "Tempo del personale, minuti macchina, superficie, accessi ai sistemi e consumi energetici misurati.",
+      "detail": "La scelta dipende dalla risorsa: il tempo può essere appropriato per lavoro amministrativo, i metri quadrati per spazi e i consumi misurati per energia. Le percentuali da intervista devono essere validate periodicamente.",
+      "example": "Ore uomo per personale, metri quadrati per spazi e kWh misurati per consumi energetici.",
+      "formulas": [],
+      "connections": [
+        "§6.9 — Esempio delle risorse",
+        "§6.10 — Secondo stadio"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.8, pagina PDF 57"
+    },
+    {
+      "id": "cdg-c06-q035",
+      "topicId": "cdg-c06-t08",
+      "question": "Come distinguere attribuzione diretta e indiretta delle risorse alle attività?",
+      "answer": "La prima traccia il costo di una risorsa esclusiva; la seconda distribuisce una risorsa condivisa mediante resource driver.",
+      "detail": "Una macchina usata soltanto nei collaudi si attribuisce al collaudo. Tre addetti che svolgono ordini, qualifica fornitori e solleciti richiedono una misura delle quote di tempo.",
+      "example": "Tre addetti condivisi su ordini, qualifica e solleciti richiedono una ripartizione del relativo tempo.",
+      "formulas": [],
+      "connections": [
+        "§6.9 — Esempio delle risorse",
+        "§6.10 — Secondo stadio"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.8, pagina PDF 57"
+    },
+    {
+      "id": "cdg-c06-q036",
+      "topicId": "cdg-c06-t08",
+      "question": "Perché resource driver e activity driver non sono intercambiabili?",
+      "answer": "Perché il primo collega risorse e attività; il secondo collega attività e oggetti di costo.",
+      "detail": "Le ore dei dipendenti possono servire a ripartire il costo dell’ufficio acquisti fra attività. Il numero di ordini può poi distribuire il costo della gestione ordini ai diversi prodotti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.9 — Esempio delle risorse",
+        "§6.10 — Secondo stadio"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.8, pagina PDF 57"
+    },
+    {
+      "id": "cdg-c06-q037",
+      "topicId": "cdg-c06-t09",
+      "question": "Quali costi di risorse sono considerati nell’esempio delle quattro attività?",
+      "answer": "Personale 120.000 €, macchinari 90.000 € e sistemi informativi 30.000 €, per 240.000 € complessivi.",
+      "detail": "I 240.000 € sono attribuiti con percentuali di impiego a setup, test, lavorazione macchina e assistenza clienti. Le percentuali di ogni singola risorsa sommano al 100%.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.8 — Resource driver",
+        "§6.14 — Quadrature"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.9, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q038",
+      "topicId": "cdg-c06-t09",
+      "question": "Come si ottiene il costo di 60.000 € dell’attività Setup?",
+      "answer": "Attribuendo 36.000 € di personale, 18.000 € di macchinari e 6.000 € di sistemi informativi.",
+      "detail": "Le quote derivano da 30% × 120.000, 20% × 90.000 e 20% × 30.000. È il costo totale dell’attività, non ancora il costo di uno specifico prodotto.",
+      "example": "36.000 + 18.000 + 6.000 = 60.000 €.",
+      "formulas": [
+        {
+          "latex": "120000\\times0{,}30+90000\\times0{,}20+30000\\times0{,}20=60000",
+          "meaning": "Costi di Setup in euro."
+        }
+      ],
+      "connections": [
+        "§6.8 — Resource driver",
+        "§6.14 — Quadrature"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.9, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q039",
+      "topicId": "cdg-c06-t09",
+      "question": "Come si ottiene il costo di 72.000 € dell’attività Test?",
+      "answer": "Sommando 48.000 € di personale, 9.000 € di macchinari e 15.000 € di sistemi informativi.",
+      "detail": "Le percentuali applicate sono 40% del personale, 10% dei macchinari e 50% dei sistemi IT. Il totale riflette l’impiego delle risorse nella funzione di test.",
+      "example": "48.000 + 9.000 + 15.000 = 72.000 €.",
+      "formulas": [],
+      "connections": [
+        "§6.8 — Resource driver",
+        "§6.14 — Quadrature"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.9, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q040",
+      "topicId": "cdg-c06-t09",
+      "question": "Quanto costano le attività Macchine e Assistenza nell’esempio di allocazione delle risorse?",
+      "answer": "Macchine costa 63.000 € e Assistenza clienti costa 45.000 €.",
+      "detail": "Macchine assorbe il 70% di 90.000 € di macchinari. Assistenza utilizza il 30% del personale (36.000 €) e il 30% dei sistemi IT (9.000 €).",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.8 — Resource driver",
+        "§6.14 — Quadrature"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.9, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q041",
+      "topicId": "cdg-c06-t09",
+      "question": "Quale quadratura si verifica nell’esempio delle quattro attività?",
+      "answer": "60.000 + 72.000 + 63.000 + 45.000 = 240.000 €, cioè il costo totale delle risorse.",
+      "detail": "La verifica dimostra che i costi delle tre risorse sono stati completamente trasferiti alle quattro attività, senza omissioni né duplicazioni nel primo stadio. Non è ancora la quadratura dei costi attribuiti ai prodotti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.8 — Resource driver",
+        "§6.14 — Quadrature"
+      ],
+      "mistakes": "Non confondere la determinazione dei pool di attività con l’imputazione finale ai prodotti.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.9, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q042",
+      "topicId": "cdg-c06-t10",
+      "question": "Che cosa misura un activity driver?",
+      "answer": "La quantità di attività richiesta da uno specifico prodotto, servizio, cliente o altro oggetto di costo.",
+      "detail": "È la base di ripartizione del secondo stadio dell’ABC. Per un’attività di collaudo il parametro può essere il tempo di test, mentre per ordini omogenei può essere il loro numero.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Famiglie di driver",
+        "§6.14 — Costruzione ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.10, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q043",
+      "topicId": "cdg-c06-t10",
+      "question": "Come si calcola l’activity rate o tasso di attività?",
+      "answer": "Si divide il costo totale del pool di attività per la quantità complessiva del suo activity driver nello stesso periodo.",
+      "detail": "Il denominatore deve considerare tutti gli oggetti serviti dall’attività o una scelta esplicita sulla capacità. Le unità devono essere coerenti: euro per setup, euro per ordine, euro per ora di test, e così via.",
+      "example": "Un pool Setup da 72.000 € su 36 setup produce un tasso di 2.000 €/setup.",
+      "formulas": [
+        {
+          "latex": "r_a=\\frac{C_a}{X_{a,tot}}",
+          "meaning": "Costo dell’attività per unità del driver pertinente."
+        }
+      ],
+      "connections": [
+        "§6.11 — Famiglie di driver",
+        "§6.14 — Costruzione ABC"
+      ],
+      "mistakes": "Non usare il volume del driver del solo prodotto al posto del totale del periodo.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.10, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q044",
+      "topicId": "cdg-c06-t10",
+      "question": "Come si attribuisce il costo di un’attività al singolo oggetto di costo?",
+      "answer": "Moltiplicando il tasso dell’attività per la quantità del relativo driver consumata dall’oggetto.",
+      "detail": "L’attribuzione deve essere svolta separatamente per ciascuna attività. Usare una quantità di un’altra base produce una quota non interpretabile anche se i calcoli aritmetici risultano corretti.",
+      "example": "Con 2.000 €/setup e 12 setup consumati da Standard, la quota di attività è 24.000 €.",
+      "formulas": [
+        {
+          "latex": "C_{a,i}=r_a\\,X_{a,i}",
+          "meaning": "Quota del costo dell’attività a attribuita all’oggetto i."
+        }
+      ],
+      "connections": [
+        "§6.11 — Famiglie di driver",
+        "§6.14 — Costruzione ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.10, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q045",
+      "topicId": "cdg-c06-t10",
+      "question": "Qual è la formula generale del costo pieno di un oggetto in ABC?",
+      "answer": "Costi diretti attribuibili all’oggetto più la somma delle quote delle attività che esso utilizza.",
+      "detail": "Le quote delle attività sono calcolate con i rispettivi tassi e driver. Se si vuole il costo unitario, si divide il totale attribuito per il numero di unità dell’oggetto, non prima.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_{pieno,i}=C_{diretti,i}+\\sum_a r_a\\,X_{a,i}",
+          "meaning": "Costo pieno totale dell’oggetto i secondo ABC."
+        }
+      ],
+      "connections": [
+        "§6.11 — Famiglie di driver",
+        "§6.14 — Costruzione ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.10, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q046",
+      "topicId": "cdg-c06-t10",
+      "question": "Quali criteri deve soddisfare un buon activity driver?",
+      "answer": "Relazione causale con l’attività, osservabilità, costo di misurazione sostenibile, stabilità e assenza di incentivi distorsivi.",
+      "detail": "La comodità di rilevazione da sola non basta. Un numero di ordini può funzionare per ordini simili, mentre ordini molto eterogenei possono richiedere tempi o pesi differenziati.",
+      "example": "Per collaudi di durata differente, ore test sono spesso più rappresentative del semplice numero di test.",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Famiglie di driver",
+        "§6.14 — Costruzione ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.10, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q047",
+      "topicId": "cdg-c06-t10",
+      "question": "Perché il denominatore dell’activity rate deve essere complessivo e riferito al periodo corretto?",
+      "answer": "Perché deve rappresentare tutta l’attività cui corrisponde il costo del pool, non soltanto la quota di un prodotto.",
+      "detail": "Dividere il costo comune per i driver di un solo oggetto gonfia il tasso e duplica le quote attribuite. Occorre inoltre verificare coerenza fra durata del costo e quantità del driver.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Famiglie di driver",
+        "§6.14 — Costruzione ABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.10, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q048",
+      "topicId": "cdg-c06-t11",
+      "question": "Quali sono le quattro famiglie di activity driver indicate nel manuale?",
+      "answer": "Driver legati al volume, alla complessità, all’efficienza e al mercato.",
+      "detail": "La distinzione aiuta a scegliere la variabile osservabile che rappresenta la domanda di lavoro. Le famiglie non sono mutuamente esclusive: uno stesso tempo di test può risentire di volume, complessità ed efficienza.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.10 — Scelta dei driver",
+        "§6.13 — Determinanti di costo"
+      ],
+      "mistakes": "Le quattro famiglie non sono classificazioni che si escludono a vicenda.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.11, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q049",
+      "topicId": "cdg-c06-t11",
+      "question": "Quali esempi rientrano nei driver legati al volume?",
+      "answer": "Unità prodotte, ore macchina, livello di produzione, costo di manodopera diretta e consumo di materiali.",
+      "detail": "Questi indicatori sono adeguati quando l’attività cresce sostanzialmente con la quantità lavorata. Non vanno generalizzati alle attività generate da lotti, varianti e ordini.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.10 — Scelta dei driver",
+        "§6.13 — Determinanti di costo"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.11, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q050",
+      "topicId": "cdg-c06-t11",
+      "question": "Quali esempi rientrano nei driver legati alla complessità?",
+      "answer": "Numero di componenti, varianti, ordini distinti, modifiche, movimentazioni e interventi.",
+      "detail": "Sono rilevanti per prodotti personalizzati o lotti piccoli perché rappresentano fonti di lavoro che il volume dei pezzi non intercetta. Una maggiore varietà di codici può aumentare la gestione acquisti.",
+      "example": "Numero di varianti e di ordini distinti rappresentano carichi non necessariamente proporzionali alle unità prodotte.",
+      "formulas": [],
+      "connections": [
+        "§6.10 — Scelta dei driver",
+        "§6.13 — Determinanti di costo"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.11, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q051",
+      "topicId": "cdg-c06-t11",
+      "question": "Quali indicatori il corso collega alla famiglia dei driver di efficienza?",
+      "answer": "Tempi di attrezzaggio, durata dei collaudi e tempi di lavorazione.",
+      "detail": "Tali misure colgono l’intensità dell’attività e le condizioni di svolgimento. Possono essere influenzate anche dalla complessità del prodotto e dal volume, per cui la convenzione va dichiarata.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.10 — Scelta dei driver",
+        "§6.13 — Determinanti di costo"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.11, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q052",
+      "topicId": "cdg-c06-t11",
+      "question": "Che cosa rappresentano i driver legati al mercato?",
+      "answer": "Caratteristiche della gamma, dei segmenti e dell’offerta che determinano la complessità e il lavoro commerciale richiesto.",
+      "detail": "Il manuale cita ampiezza del catalogo, differenziazione dei margini, varietà dei mercati e complessità commerciale. La scelta del driver va collegata all’attività specifica.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.10 — Scelta dei driver",
+        "§6.13 — Determinanti di costo"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.11, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q053",
+      "topicId": "cdg-c06-t11",
+      "question": "Quali activity driver sono coerenti con setup, acquisti, collaudi e assistenza?",
+      "answer": "Setup: numero o ore di attrezzaggi; acquisti: ordini distinti; collaudi: ore o numero test; assistenza: ticket ponderati o minuti.",
+      "detail": "La scelta fra conteggio e durata dipende dall’eterogeneità delle prestazioni. Il numero di ticket può distorcere l’allocazione se alcuni richiedono molto più tempo di altri.",
+      "example": "Per assistenza eterogenea il manuale propone ticket ponderati oppure minuti di lavoro.",
+      "formulas": [],
+      "connections": [
+        "§6.10 — Scelta dei driver",
+        "§6.13 — Determinanti di costo"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.11, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q054",
+      "topicId": "cdg-c06-t11",
+      "question": "Perché le famiglie dei driver non sono mutuamente esclusive?",
+      "answer": "Perché il consumo di attività può dipendere simultaneamente da più caratteristiche dell’oggetto e del processo.",
+      "detail": "La durata di un collaudo varia con numero di unità, complessità delle verifiche e produttività dei tecnici. L’etichetta del driver non sostituisce la verifica empirica della misura.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.10 — Scelta dei driver",
+        "§6.13 — Determinanti di costo"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.11, pagina PDF 58"
+    },
+    {
+      "id": "cdg-c06-q055",
+      "topicId": "cdg-c06-t12",
+      "question": "Quali quattro livelli distingue la gerarchia delle attività ABC?",
+      "answer": "Attività a livello di unità, lotto, prodotto e struttura.",
+      "detail": "È un approfondimento del manuale di origine manageriale internazionale e completa la classificazione dei driver del corso. Serve a spiegare perché non tutti i costi crescano con i pezzi prodotti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Driver di complessità",
+        "§6.19 — Distorsioni"
+      ],
+      "mistakes": "Questa gerarchia è un approfondimento del manuale, non una sostituzione della classificazione dei driver delle slide.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.12, pagina PDF 59"
+    },
+    {
+      "id": "cdg-c06-q056",
+      "topicId": "cdg-c06-t12",
+      "question": "Che cosa sono le attività unit-level?",
+      "answer": "Attività eseguite per ogni unità di output, con consumo normalmente proporzionale alle unità o alle ore per unità.",
+      "detail": "Esempi sono lavorazione del pezzo, consumo di materiali e controlli ripetuti su ciascuna unità. Sono i casi più vicini alla logica dei driver volumetrici.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Driver di complessità",
+        "§6.19 — Distorsioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.12, pagina PDF 59"
+    },
+    {
+      "id": "cdg-c06-q057",
+      "topicId": "cdg-c06-t12",
+      "question": "Che cosa sono le attività batch-level?",
+      "answer": "Attività svolte una volta per lotto o ordine, indipendentemente dal numero di unità che contiene.",
+      "detail": "Rientrano setup, avviamenti, preparazione documenti e controlli sulla prima produzione. A parità di pezzi, più lotti comportano una maggiore frequenza di tali attività.",
+      "example": "La preparazione di una linea prima di lavorare un lotto è batch-level, anche se il lotto contiene migliaia di unità.",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Driver di complessità",
+        "§6.19 — Distorsioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.12, pagina PDF 59"
+    },
+    {
+      "id": "cdg-c06-q058",
+      "topicId": "cdg-c06-t12",
+      "question": "Che cosa sono le attività product-sustaining?",
+      "answer": "Attività necessarie a mantenere una linea o una variante, indipendentemente dal volume prodotto.",
+      "detail": "Progettazione di una famiglia, aggiornamento distinte base e documentazione e test di omologazione sono esempi. Un driver per pezzo non rappresenta automaticamente il loro consumo.",
+      "example": "L’aggiornamento della documentazione relativa a una variante sostiene il prodotto, non una singola unità.",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Driver di complessità",
+        "§6.19 — Distorsioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.12, pagina PDF 59"
+    },
+    {
+      "id": "cdg-c06-q059",
+      "topicId": "cdg-c06-t12",
+      "question": "Che cosa sono le attività facility-sustaining e perché richiedono cautela?",
+      "answer": "Attività a supporto dell’intera struttura produttiva o aziendale, con un nesso spesso debole con i singoli prodotti.",
+      "detail": "Sicurezza generale, illuminazione comune e direzione del sito possono essere necessari anche senza una correlazione diretta con un articolo. Un riparto arbitrario va dichiarato come convenzione.",
+      "example": "La sicurezza generale dello stabilimento può essere necessaria senza essere causalmente riferibile a un solo prodotto.",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Driver di complessità",
+        "§6.19 — Distorsioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.12, pagina PDF 59"
+    },
+    {
+      "id": "cdg-c06-q060",
+      "topicId": "cdg-c06-t12",
+      "question": "Come cambiano le attività batch-level con lotti diversi a parità di volume?",
+      "answer": "Aumentano al crescere del numero di lotti, anche se il numero complessivo delle unità è invariato.",
+      "detail": "Il manuale confronta 1.000 unità in 20 lotti con 1.000 in 2 lotti: nel primo caso gli avviamenti sono dieci volte tanto. Il volume non è quindi un sostituto valido del numero di setup.",
+      "example": "20 attrezzaggi contro 2, con identico volume di 1.000 unità.",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Driver di complessità",
+        "§6.19 — Distorsioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.12, pagina PDF 59"
+    },
+    {
+      "id": "cdg-c06-q061",
+      "topicId": "cdg-c06-t13",
+      "question": "Che cosa si intende per cost driver nel lessico delle slide del corso?",
+      "answer": "La determinante economico-organizzativa che provoca o influenza il bisogno di un’attività e il consumo delle risorse associate.",
+      "detail": "Può trattarsi di ampiezza del catalogo, complessità del prodotto, qualità dei dati, automazione, politica dei lotti e variabilità delle richieste. È una causa da governare, non semplicemente una base di calcolo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Activity driver",
+        "§6.23 — Gestione ABM"
+      ],
+      "mistakes": "Nel lessico del corso cost driver è una causa organizzativa; in altre fonti può indicare anche una base di ripartizione.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.13, pagina PDF 60"
+    },
+    {
+      "id": "cdg-c06-q062",
+      "topicId": "cdg-c06-t13",
+      "question": "Qual è la differenza tra cost driver e activity driver secondo il manuale?",
+      "answer": "Il cost driver spiega perché nasce il consumo dell’attività; l’activity driver misura quanta attività attribuire al singolo oggetto.",
+      "detail": "Nella gestione acquisti la varietà dei fornitori e la scarsa standardizzazione possono aumentare la complessità. Il numero di ordini può invece essere usato per attribuire il costo ai prodotti. La letteratura estera talvolta usa “cost driver” anche per la base ABC.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Activity driver",
+        "§6.23 — Gestione ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.13, pagina PDF 60"
+    },
+    {
+      "id": "cdg-c06-q063",
+      "topicId": "cdg-c06-t13",
+      "question": "Come distinguere resource, activity e cost driver nella movimentazione merci?",
+      "answer": "Resource driver: ore degli addetti e dei mezzi; activity driver: pallet o codici movimentati; cost driver: layout, efficienza dei mezzi e posizione dei magazzini.",
+      "detail": "Le tre misure rispondono a domande diverse: quante risorse consuma l’attività, quali prodotti richiedono movimentazioni e quali condizioni gestionali generano il bisogno di movimentare.",
+      "example": "Il magazzino usa ore di addetti e mezzi (risorse); movimenta pallet (attività); subisce vincoli di layout (cause).",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Activity driver",
+        "§6.23 — Gestione ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.13, pagina PDF 60"
+    },
+    {
+      "id": "cdg-c06-q064",
+      "topicId": "cdg-c06-t13",
+      "question": "Come distinguere i tre driver nell’assemblaggio di prodotti?",
+      "answer": "Resource driver: ore o risorse dedicate; activity driver: assemblaggi o unità assemblate; cost driver: numero componenti, dimensione lotti e automazione.",
+      "detail": "Il numero di componenti può influenzare il tempo necessario; il conteggio degli assemblaggi misura quanto lavoro si imputa ai prodotti; le ore degli addetti distribuiscono il costo delle risorse all’attività.",
+      "example": "Nell’assemblaggio il numero di componenti per prodotto può far aumentare lavoro e tempo per unità assemblata.",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Activity driver",
+        "§6.23 — Gestione ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.13, pagina PDF 60"
+    },
+    {
+      "id": "cdg-c06-q065",
+      "topicId": "cdg-c06-t13",
+      "question": "Come distinguere i tre driver nei pagamenti ai fornitori?",
+      "answer": "Resource driver: ore e risorse amministrative; activity driver: numero pagamenti o fatture saldate; cost driver: varietà delle condizioni, numero di banche, qualità documenti e automazione.",
+      "detail": "Per migliorare il processo non basta conoscere il costo per pagamento: occorre intervenire sulle cause della complessità e degli errori.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.23 — Activity-Based Management"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.13, pagina PDF 60"
+    },
+    {
+      "id": "cdg-c06-q066",
+      "topicId": "cdg-c06-t13",
+      "question": "Perché identificare i cost driver è decisivo per il miglioramento dei processi?",
+      "answer": "Perché consente di intervenire sulle cause della domanda di attività anziché limitarsi a redistribuire contabilmente i costi.",
+      "detail": "Ridurre varietà inutile, errori documentali, urgenze o rilavorazioni può diminuire il lavoro richiesto. Questa è la base del passaggio dall’ABC all’ABM.",
+      "example": "La scarsa standardizzazione dei codici aumenta la complessità degli acquisti; migliorare i dati può ridurre attività.",
+      "formulas": [],
+      "connections": [
+        "§6.11 — Activity driver",
+        "§6.23 — Gestione ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.13, pagina PDF 60"
+    },
+    {
+      "id": "cdg-c06-q067",
+      "topicId": "cdg-c06-t14",
+      "question": "Quali sono gli otto passaggi di costruzione di un sistema ABC?",
+      "answer": "Definire scopo e oggetto; mappare processi; individuare attività; rilevare risorse; attribuirle alle attività; misurare activity driver; calcolare tassi e quote; aggiungere diretti e verificare.",
+      "detail": "La sequenza separa progettazione del sistema, rilevazione dei dati, imputazione e controllo. Saltare la mappatura o il perimetro può rendere arbitrarie anche le formule corrette.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.8 — Primo stadio",
+        "§6.10 — Secondo stadio"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.14, pagina PDF 60"
+    },
+    {
+      "id": "cdg-c06-q068",
+      "topicId": "cdg-c06-t14",
+      "question": "Quali quattro formule descrivono il calcolo ABC completo?",
+      "answer": "Costo attività = somma delle quote di risorse; tasso = costo attività/driver totale; indiretti oggetto = somma tassi×driver; costo unitario = (diretti+indiretti)/unità.",
+      "detail": "Le lettere del manuale sono C(r) costo risorsa, q(r,a) quota della risorsa assorbita dall’attività, X(a,i) consumo del driver da parte dell’oggetto e X(a,tot) volume totale del driver.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_a=\\sum_r C(r)q(r,a)",
+          "meaning": "Costo dell’attività a."
+        },
+        {
+          "latex": "r_a=\\frac{C_a}{X(a,tot)}",
+          "meaning": "Tasso dell’attività."
+        },
+        {
+          "latex": "C_{indiretti,i}=\\sum_a r_a X(a,i)",
+          "meaning": "Indiretti imputati all’oggetto."
+        },
+        {
+          "latex": "C_{unitario,i}=\\frac{C_{diretti,i}+C_{indiretti,i}}{N_i}",
+          "meaning": "Costo pieno per unità dell’oggetto."
+        }
+      ],
+      "connections": [
+        "§6.8 — Primo stadio",
+        "§6.10 — Secondo stadio"
+      ],
+      "mistakes": "Non mescolare costi unitari e totali né confrontare tassi con unità di driver differenti.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.14, pagina PDF 60"
+    },
+    {
+      "id": "cdg-c06-q069",
+      "topicId": "cdg-c06-t14",
+      "question": "Come si trattano nel procedimento ABC le materie prime direttamente tracciabili al prodotto?",
+      "answer": "Si imputano direttamente al prodotto, senza passaggi inutili attraverso le attività.",
+      "detail": "Se il perimetro riguarda il costo industriale del prodotto, il costo direttamente osservabile non deve essere contato anche nei pool. Eccezioni per altre finalità di analisi vanno spiegate.",
+      "example": "Materie prime specificamente misurabili per il prodotto vanno nel suo costo diretto, non due volte nei pool.",
+      "formulas": [],
+      "connections": [
+        "§6.8 — Primo stadio",
+        "§6.10 — Secondo stadio"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.14, pagina PDF 60"
+    },
+    {
+      "id": "cdg-c06-q070",
+      "topicId": "cdg-c06-t14",
+      "question": "Quali sono le tre quadrature obbligatorie nel procedimento ABC?",
+      "answer": "Quote di ciascuna risorsa = costo risorsa; costi attività = indiretti analizzati; quote attribuite agli oggetti = pool, salvo costi esplicitamente non imputati.",
+      "detail": "Le verifiche separano errori di primo stadio, costruzione dei pool ed errori di secondo stadio. Se una parte della capacità non viene usata, deve emergere come costo non attribuito e non scomparire.",
+      "example": "Se sono attribuiti 240.000 € di risorse, la somma dei costi delle attività del primo stadio deve essere 240.000 €.",
+      "formulas": [],
+      "connections": [
+        "§6.8 — Primo stadio",
+        "§6.10 — Secondo stadio"
+      ],
+      "mistakes": "Le quote non imputate devono essere dichiarate come tali, non eliminate dai prospetti.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.14, pagina PDF 60"
+    },
+    {
+      "id": "cdg-c06-q071",
+      "topicId": "cdg-c06-t14",
+      "question": "Perché è necessario tenere separati costi diretti e costi già presenti nei pool di attività?",
+      "answer": "Per evitare che la stessa risorsa venga imputata due volte allo stesso oggetto.",
+      "detail": "Un materiale tracciato al prodotto non deve essere sommato anche come quota di una generica attività produttiva, salvo un diverso perimetro esplicito e una riconciliazione che lo giustifichi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.8 — Primo stadio",
+        "§6.10 — Secondo stadio"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.14, pagina PDF 60"
+    },
+    {
+      "id": "cdg-c06-q072",
+      "topicId": "cdg-c06-t15",
+      "question": "Come si attribuisce il costo dei controlli qualità a Stagionato e Fresco?",
+      "answer": "Il costo è 200 € per controllo: Stagionato usa 4 controlli e riceve 800 €, Fresco ne usa 10 e riceve 2.000 €.",
+      "detail": "La base ABC è il numero di controlli richiesti, non il numero di unità prodotte. Il totale è 14 controlli e 2.800 € complessivi.",
+      "example": "4 × 200 = 800 €; 10 × 200 = 2.000 €.",
+      "formulas": [],
+      "connections": [
+        "§6.2 — Cross-subsidization",
+        "§6.10 — Activity rate"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.15, pagina PDF 61"
+    },
+    {
+      "id": "cdg-c06-q073",
+      "topicId": "cdg-c06-t15",
+      "question": "Qual è il costo unitario dei controlli per i due formaggi?",
+      "answer": "Stagionato 1,60 € per unità; Fresco 5,00 € per unità.",
+      "detail": "Si dividono i 800 € per 500 unità Stagionato e i 2.000 € per 400 unità Fresco. Il Fresco ha meno unità ma assorbe più controlli in totale e soprattutto per unità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "800/500=1{,}60\\;\\text{€/u}",
+          "meaning": "Controlli Stagionato per unità."
+        },
+        {
+          "latex": "2000/400=5{,}00\\;\\text{€/u}",
+          "meaning": "Controlli Fresco per unità."
+        }
+      ],
+      "connections": [
+        "§6.2 — Cross-subsidization",
+        "§6.10 — Activity rate"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.15, pagina PDF 61"
+    },
+    {
+      "id": "cdg-c06-q074",
+      "topicId": "cdg-c06-t15",
+      "question": "Che risultato darebbe nel caso dei formaggi il riparto dei controlli per pezzo?",
+      "answer": "Attribuirebbe lo stesso costo medio di circa 3,11 € a ciascuna delle 900 unità, senza evidenziare differenze di controllo.",
+      "detail": "Il calcolo 2.800/900 perde l’informazione sul carico di collaudo differenziato. È una distorsione di imputazione, non una variazione dei 2.800 € di costo complessivo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "2800/(500+400)\\approx3{,}11\\;\\text{€/u}",
+          "meaning": "Quota media per pezzo con riparto volumetrico."
+        }
+      ],
+      "connections": [
+        "§6.2 — Cross-subsidization",
+        "§6.10 — Activity rate"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.15, pagina PDF 61"
+    },
+    {
+      "id": "cdg-c06-q075",
+      "topicId": "cdg-c06-t15",
+      "question": "Quale principio dell’ABC dimostra il caso dei due formaggi?",
+      "answer": "Il costo per prodotto dipende dall’intensità di attività richiesta, non soltanto dal volume delle unità.",
+      "detail": "La diversa numerosità dei controlli genera costi per unità molto differenti. L’ABC non aumenta né riduce i costi complessivi: ne modifica l’attribuzione in base al consumo misurato.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.2 — Cross-subsidization",
+        "§6.10 — Activity rate"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.15, pagina PDF 61"
+    },
+    {
+      "id": "cdg-c06-q076",
+      "topicId": "cdg-c06-t16",
+      "question": "Quali sono i quattro pool dell’esercizio Arcari con due prodotti?",
+      "answer": "Programmazione 20.000 €, Acquisti 30.000 €, Collaudo 15.000 € e Vendite 50.000 €, per 115.000 € totali.",
+      "detail": "Il caso 3.4 delle soluzioni editoriali viene riportato nel manuale per mostrare i tassi ABC di attività diverse. Ogni pool utilizza il proprio volume di driver.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.10 — Tasso di attività",
+        "§6.17 — Caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.16, pagina PDF 61"
+    },
+    {
+      "id": "cdg-c06-q077",
+      "topicId": "cdg-c06-t16",
+      "question": "Quali sono i tassi ABC delle quattro attività nel caso Arcari?",
+      "answer": "Programmazione 10; Acquisti 3; Collaudo 50; Vendite 50 euro per unità del rispettivo driver.",
+      "detail": "I denominatori sono rispettivamente 2.000, 10.000, 300 e 1.000 unità di driver. Le grandezze fisiche specifiche non sono precisate nella tabella sintetica del manuale: non bisogna inventarle.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "20000/2000=10",
+          "meaning": "Programmazione per unità del relativo driver."
+        },
+        {
+          "latex": "30000/10000=3",
+          "meaning": "Acquisti."
+        },
+        {
+          "latex": "15000/300=50",
+          "meaning": "Collaudo."
+        },
+        {
+          "latex": "50000/1000=50",
+          "meaning": "Vendite."
+        }
+      ],
+      "connections": [
+        "§6.10 — Tasso di attività",
+        "§6.17 — Caso integrato"
+      ],
+      "mistakes": "Il manuale indica le quantità dei driver ma non ne specifica sempre l’unità fisica: non inventarla.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.16, pagina PDF 61"
+    },
+    {
+      "id": "cdg-c06-q078",
+      "topicId": "cdg-c06-t16",
+      "question": "Come vengono ripartiti i 115.000 € indiretti nel caso Arcari?",
+      "answer": "59.000 € al prodotto A e 56.000 € al prodotto B.",
+      "detail": "Le quote provengono dall’applicazione dei quattro activity rate ai driver consumati dai prodotti. La somma dei costi attribuiti riproduce l’intero totale dei pool: 59.000 + 56.000 = 115.000 €.",
+      "example": "I 59.000 € di indiretti di A più i 56.000 € di B ricostruiscono 115.000 €.",
+      "formulas": [],
+      "connections": [
+        "§6.10 — Tasso di attività",
+        "§6.17 — Caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.16, pagina PDF 61"
+    },
+    {
+      "id": "cdg-c06-q079",
+      "topicId": "cdg-c06-t16",
+      "question": "Quali sono gli indiretti unitari ABC dei prodotti A e B nel caso Arcari?",
+      "answer": "A 5,90 € per unità e B 11,20 € per unità.",
+      "detail": "Le produzioni sono 10.000 unità A e 5.000 unità B. Occorre dividere gli indiretti totali del prodotto per le sue unità, dopo aver sommato i pool.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "59000/10000=5{,}90",
+          "meaning": "Indiretti ABC unitari di A."
+        },
+        {
+          "latex": "56000/5000=11{,}20",
+          "meaning": "Indiretti ABC unitari di B."
+        }
+      ],
+      "connections": [
+        "§6.10 — Tasso di attività",
+        "§6.17 — Caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.16, pagina PDF 61"
+    },
+    {
+      "id": "cdg-c06-q080",
+      "topicId": "cdg-c06-t16",
+      "question": "Come si ottengono i costi pieni industriali unitari A e B nel caso Arcari?",
+      "answer": "A: 14,40 €; B: 31,20 € per unità.",
+      "detail": "Per A i diretti sono 2 € di M1, 1,50 € di M2 e 5 € di MOD; aggiungendo 5,90 € di indiretti si arriva a 14,40 €. Per B sono 4 + 1 + 15 + 11,20 = 31,20 €.",
+      "example": "A: 2+1,50+5+5,90=14,40 €/u; B: 4+1+15+11,20=31,20 €/u.",
+      "formulas": [],
+      "connections": [
+        "§6.10 — Tasso di attività",
+        "§6.17 — Caso integrato"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.16, pagina PDF 61"
+    },
+    {
+      "id": "cdg-c06-q081",
+      "topicId": "cdg-c06-t16",
+      "question": "Qual è l’ordine corretto di soluzione di un esercizio ABC con più driver?",
+      "answer": "Calcolare ogni tasso separatamente, attribuire ciascun pool, sommare per prodotto e solo alla fine dividere per le unità.",
+      "detail": "Il manuale presenta questa sequenza come indicazione d’esame. Un tasso espresso in euro per unità di un driver non può essere applicato a una base di natura diversa.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.10 — Tasso di attività",
+        "§6.17 — Caso integrato"
+      ],
+      "mistakes": "Non dividere i singoli pool per i pezzi prima di aver ricostruito la quota del prodotto, se i driver sono diversi.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.16, pagina PDF 61"
+    },
+    {
+      "id": "cdg-c06-q082",
+      "topicId": "cdg-c06-t17",
+      "question": "Quali sono volumi e costi diretti unitari di Standard e Premium nel caso integrato ABC?",
+      "answer": "Standard: 10.000 unità, 12 € materiali e 6 € MOD; Premium: 2.000 unità, 20 € materiali e 12 € MOD.",
+      "detail": "I diretti unitari sono quindi 18 € per Standard e 32 € per Premium. Questi valori vengono sommati solo dopo aver attribuito con i driver i 330.000 € di indiretti industriali.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Procedura di calcolo",
+        "§6.18 — Riparto tradizionale"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.17, pagina PDF 62"
+    },
+    {
+      "id": "cdg-c06-q083",
+      "topicId": "cdg-c06-t17",
+      "question": "Quali sono i cinque cost pool e i rispettivi importi nel caso Standard/Premium?",
+      "answer": "Attrezzaggi 72.000 €, acquisti 54.000 €, collaudi 66.000 €, lavorazione 96.000 € e supporto prodotto 42.000 €.",
+      "detail": "La somma è 330.000 €, cioè l’intero ammontare degli indiretti industriali da attribuire. I driver sono setup, ordini, ore di test, ore macchina e schede tecniche.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Procedura di calcolo",
+        "§6.18 — Riparto tradizionale"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.17, pagina PDF 62"
+    },
+    {
+      "id": "cdg-c06-q084",
+      "topicId": "cdg-c06-t17",
+      "question": "Quali sono i volumi totali dei cinque activity driver nel caso Standard/Premium?",
+      "answer": "36 setup, 180 ordini, 1.100 ore di test, 12.000 ore macchina e 7 schede tecniche.",
+      "detail": "Si sommano sempre i consumi di Standard e Premium per ciascuna attività: 12+24, 60+120, 400+700, 8.000+4.000, 3+4. Non si deve usare la quantità prodotta nel denominatore dei pool non volumetrici.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Procedura di calcolo",
+        "§6.18 — Riparto tradizionale"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.17, pagina PDF 62"
+    },
+    {
+      "id": "cdg-c06-q085",
+      "topicId": "cdg-c06-t17",
+      "question": "Come si calcola il tasso di attrezzaggio del caso Standard/Premium?",
+      "answer": "72.000 € divisi per 36 setup danno 2.000 €/setup.",
+      "detail": "La quota di Standard è 12 × 2.000 = 24.000 €; quella di Premium 24 × 2.000 = 48.000 €. La somma ricostruisce i 72.000 € del pool.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "r_{setup}=72000/(12+24)=2000\\;\\text{€/setup}",
+          "meaning": "Tasso degli attrezzaggi nel caso integrato."
+        }
+      ],
+      "connections": [
+        "§6.14 — Procedura di calcolo",
+        "§6.18 — Riparto tradizionale"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.17, pagina PDF 62"
+    },
+    {
+      "id": "cdg-c06-q086",
+      "topicId": "cdg-c06-t17",
+      "question": "Qual è il tasso dell’attività Acquisti nel caso Standard/Premium?",
+      "answer": "54.000 € / 180 ordini = 300 € per ordine.",
+      "detail": "Standard richiede 60 ordini e riceve 18.000 €; Premium ne richiede 120 e riceve 36.000 €. La quota totale attribuita coincide con il cost pool Acquisti.",
+      "example": "Pool acquisti 54.000 € su 180 ordini: 300 €/ordine; Standard 18.000 €, Premium 36.000 €.",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Procedura di calcolo",
+        "§6.18 — Riparto tradizionale"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.17, pagina PDF 62"
+    },
+    {
+      "id": "cdg-c06-q087",
+      "topicId": "cdg-c06-t17",
+      "question": "Qual è il tasso dei Collaudi e quali importi vengono attribuiti ai prodotti?",
+      "answer": "60 €/ora test; 24.000 € a Standard e 42.000 € a Premium.",
+      "detail": "I 66.000 € del pool sono divisi per 1.100 ore di test. Standard utilizza 400 ore e Premium 700, evidenziando il maggior carico di collaudo del Premium anche con meno pezzi.",
+      "example": "66.000 € su 1.100 ore test producono 60 €/h; Premium usa 700 ore e riceve 42.000 €.",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Procedura di calcolo",
+        "§6.18 — Riparto tradizionale"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.17, pagina PDF 62"
+    },
+    {
+      "id": "cdg-c06-q088",
+      "topicId": "cdg-c06-t17",
+      "question": "Come si imputa il pool Lavorazione nel caso Standard/Premium?",
+      "answer": "Con 96.000 €/12.000 ore = 8 €/ora macchina: 64.000 € a Standard e 32.000 € a Premium.",
+      "detail": "Le ore sono 8.000 per Standard e 4.000 per Premium. A differenza dei costi di setup e collaudo, questo pool segue qui un driver di tipo volumetrico.",
+      "example": "Lavorazione: 8.000×8 = 64.000 € Standard; 4.000×8 = 32.000 € Premium.",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Procedura di calcolo",
+        "§6.18 — Riparto tradizionale"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.17, pagina PDF 62"
+    },
+    {
+      "id": "cdg-c06-q089",
+      "topicId": "cdg-c06-t17",
+      "question": "Come viene imputato il pool Supporto prodotto nel caso Standard/Premium?",
+      "answer": "Con 42.000 €/7 schede = 6.000 € per scheda: 18.000 € a Standard e 24.000 € a Premium.",
+      "detail": "Standard ha tre schede tecniche e Premium quattro. Il numero di schede rappresenta l’impegno di supporto alla varietà dei prodotti, non il numero delle unità fabbricate.",
+      "example": "Supporto prodotto: 3×6.000 = 18.000 € Standard; 4×6.000 = 24.000 € Premium.",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Procedura di calcolo",
+        "§6.18 — Riparto tradizionale"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.17, pagina PDF 62"
+    },
+    {
+      "id": "cdg-c06-q090",
+      "topicId": "cdg-c06-t17",
+      "question": "Quali sono i costi indiretti totali attribuiti ai due prodotti nel caso Standard/Premium?",
+      "answer": "148.000 € a Standard e 182.000 € a Premium.",
+      "detail": "Standard assorbe 24.000+18.000+24.000+64.000+18.000 €; Premium 48.000+36.000+42.000+32.000+24.000 €. Il totale 148.000+182.000=330.000 € verifica la quadratura degli indiretti.",
+      "example": "Quote Standard: 24.000+18.000+24.000+64.000+18.000 = 148.000 €.",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Procedura di calcolo",
+        "§6.18 — Riparto tradizionale"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.17, pagina PDF 62"
+    },
+    {
+      "id": "cdg-c06-q091",
+      "topicId": "cdg-c06-t17",
+      "question": "Quali sono i costi indiretti ABC unitari di Standard e Premium?",
+      "answer": "14,80 €/unità per Standard e 91,00 €/unità per Premium.",
+      "detail": "Si dividono i costi indiretti totali per i rispettivi volumi: 148.000/10.000 e 182.000/2.000. La forte differenza è legata al numero di attività richieste per unità, non solo ai costi diretti.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "148000/10000=14{,}80\\;\\text{€/u}",
+          "meaning": "Indiretti unitari Standard."
+        },
+        {
+          "latex": "182000/2000=91{,}00\\;\\text{€/u}",
+          "meaning": "Indiretti unitari Premium."
+        }
+      ],
+      "connections": [
+        "§6.14 — Procedura di calcolo",
+        "§6.18 — Riparto tradizionale"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.17, pagina PDF 62"
+    },
+    {
+      "id": "cdg-c06-q092",
+      "topicId": "cdg-c06-t17",
+      "question": "Qual è il costo pieno industriale ABC unitario di Standard e Premium?",
+      "answer": "32,80 € per Standard e 123,00 € per Premium.",
+      "detail": "Per Standard 12+6+14,80=32,80 €. Per Premium 20+12+91=123 €. I diretti sono sommati agli indiretti ABC, dopo la completa allocazione dei cinque pool.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "12+6+14{,}80=32{,}80",
+          "meaning": "Costo pieno industriale Standard €/u."
+        },
+        {
+          "latex": "20+12+91=123",
+          "meaning": "Costo pieno industriale Premium €/u."
+        }
+      ],
+      "connections": [
+        "§6.14 — Procedura di calcolo",
+        "§6.18 — Riparto tradizionale"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.17, pagina PDF 62"
+    },
+    {
+      "id": "cdg-c06-q093",
+      "topicId": "cdg-c06-t17",
+      "question": "Come si verifica il costo industriale complessivo nel caso Standard/Premium?",
+      "answer": "Si ottengono 574.000 € sia sommando diretti e indiretti sia moltiplicando costi unitari per quantità.",
+      "detail": "I diretti totali sono 18×10.000 + 32×2.000 = 244.000 €; aggiungendo 330.000 € di indiretti si ottengono 574.000 €. Verifica alternativa: 32,80×10.000 + 123×2.000 = 574.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "244000+330000=574000",
+          "meaning": "Controllo per natura dei costi."
+        },
+        {
+          "latex": "32{,}80\\times10000+123\\times2000=574000",
+          "meaning": "Controllo dai costi pieni unitari."
+        }
+      ],
+      "connections": [
+        "§6.14 — Procedura di calcolo",
+        "§6.18 — Riparto tradizionale"
+      ],
+      "mistakes": "La quadratura dei 574.000 € non dimostra da sola che le basi di imputazione siano causalmente corrette.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.17, pagina PDF 62"
+    },
+    {
+      "id": "cdg-c06-q094",
+      "topicId": "cdg-c06-t18",
+      "question": "Qual è il coefficiente tradizionale a base unica del caso Standard/Premium?",
+      "answer": "330.000 € / 12.000 ore macchina = 27,50 €/ora macchina.",
+      "detail": "Il metodo tradizionale ipotizzato assegna tutti i costi indiretti usando le ore macchina, senza distinguere setup, acquisti, collaudi e supporto prodotto.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "r_{trad}=330000/12000=27{,}50\\;\\text{€/h}",
+          "meaning": "Coefficiente unico del riparto tradizionale."
+        }
+      ],
+      "connections": [
+        "§6.17 — Costo pieno ABC",
+        "§6.19 — Distorsioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.18, pagina PDF 63"
+    },
+    {
+      "id": "cdg-c06-q095",
+      "topicId": "cdg-c06-t18",
+      "question": "Quali costi indiretti il metodo tradizionale attribuisce a Standard e Premium?",
+      "answer": "220.000 € a Standard e 110.000 € a Premium.",
+      "detail": "Standard assorbe 8.000 ore macchina × 27,50 €/h, Premium 4.000 × 27,50. La somma continua a essere 330.000 €: cambia il peso di ciascun prodotto.",
+      "example": "Il tradizionale usa 27,50 €/h: 8.000 ore Standard e 4.000 ore Premium attribuiscono 220.000 € e 110.000 €.",
+      "formulas": [],
+      "connections": [
+        "§6.17 — Costo pieno ABC",
+        "§6.19 — Distorsioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.18, pagina PDF 63"
+    },
+    {
+      "id": "cdg-c06-q096",
+      "topicId": "cdg-c06-t18",
+      "question": "Quanto valgono gli indiretti unitari con il riparto tradizionale?",
+      "answer": "22 € per Standard e 55 € per Premium.",
+      "detail": "Le quote totali sono ripartite sulle 10.000 unità Standard e sulle 2.000 Premium. Il dato sottostima il consumo del Premium rispetto all’ABC perché le attività di complessità non seguono soltanto le ore macchina.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.17 — Costo pieno ABC",
+        "§6.19 — Distorsioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.18, pagina PDF 63"
+    },
+    {
+      "id": "cdg-c06-q097",
+      "topicId": "cdg-c06-t18",
+      "question": "Quali sono i costi pieni industriali unitari secondo il metodo tradizionale?",
+      "answer": "Standard 40 € e Premium 87 € per unità.",
+      "detail": "Ai diretti di 18 € e 32 € si aggiungono rispettivamente 22 € e 55 € di indiretti del metodo a base unica. Il totale aziendale dei costi continua a essere 574.000 €.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.17 — Costo pieno ABC",
+        "§6.19 — Distorsioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.18, pagina PDF 63"
+    },
+    {
+      "id": "cdg-c06-q098",
+      "topicId": "cdg-c06-t18",
+      "question": "Quanto differiscono i costi pieni tradizionali da quelli ABC?",
+      "answer": "Tradizionale meno ABC: +7,20 € per Standard e −36,00 € per Premium.",
+      "detail": "Standard costa 40 € con il metodo tradizionale contro 32,80 € con ABC; Premium 87 € contro 123 €. Il segno positivo indica sovrastima relativa; il negativo sottostima relativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.17 — Costo pieno ABC",
+        "§6.19 — Distorsioni"
+      ],
+      "mistakes": "Un costo unitario diverso non equivale a un maggior costo complessivo aziendale.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.18, pagina PDF 63"
+    },
+    {
+      "id": "cdg-c06-q099",
+      "topicId": "cdg-c06-t18",
+      "question": "A quanto ammonta il trasferimento complessivo di costi fra i due prodotti?",
+      "answer": "72.000 € vengono attribuiti in più a Standard e in meno a Premium nel metodo tradizionale rispetto all’ABC.",
+      "detail": "Standard: 7,20 × 10.000 = 72.000 €. Premium: 36 × 2.000 = 72.000 €. Le due differenze si compensano: il costo totale dell’impresa non cambia.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "7{,}20\\times10000=36\\times2000=72000",
+          "meaning": "Entità del trasferimento di costo fra i prodotti."
+        }
+      ],
+      "connections": [
+        "§6.17 — Costo pieno ABC",
+        "§6.19 — Distorsioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.18, pagina PDF 63"
+    },
+    {
+      "id": "cdg-c06-q100",
+      "topicId": "cdg-c06-t18",
+      "question": "Perché ABC e metodo tradizionale producono lo stesso costo aziendale ma costi di prodotto diversi?",
+      "answer": "Perché ripartiscono lo stesso perimetro di 330.000 € di indiretti con regole di attribuzione differenti.",
+      "detail": "L’ABC usa cinque driver coerenti con attività diverse; il tradizionale utilizza solo ore macchina. Il confronto mostra una distorsione della distribuzione, non un aumento del costo complessivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.17 — Costo pieno ABC",
+        "§6.19 — Distorsioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.18, pagina PDF 63"
+    },
+    {
+      "id": "cdg-c06-q101",
+      "topicId": "cdg-c06-t19",
+      "question": "Perché il metodo ABC attribuisce al Premium molti più costi indiretti nel caso integrato?",
+      "answer": "Perché, pur avendo un volume minore, il Premium richiede più setup, ordini, ore di test e schede di supporto.",
+      "detail": "Il Premium usa 24 dei 36 setup, 120 dei 180 ordini e 700 delle 1.100 ore di test. Questi fabbisogni non sono rappresentati da un unico riparto per ore macchina.",
+      "example": "Il Premium assorbe 24 setup su 36 e 700 ore di test su 1.100, pur rappresentando solo 2.000 pezzi.",
+      "formulas": [],
+      "connections": [
+        "§6.18 — Confronto numerico",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.19, pagina PDF 63"
+    },
+    {
+      "id": "cdg-c06-q102",
+      "topicId": "cdg-c06-t19",
+      "question": "Il costo ABC è automaticamente il costo “assolutamente vero” di un prodotto?",
+      "answer": "No. Anche nell’ABC alcuni costi indiretti dipendono da misure, stime e convenzioni che devono essere verificate.",
+      "detail": "Il metodo può rappresentare meglio la causalità quando i driver sono misurati in modo attendibile, ma non elimina completamente l’incertezza dei riparti. I costi di struttura sono particolarmente difficili da attribuire causalmente.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.18 — Confronto numerico",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "Un numero ottenuto con molti driver non è necessariamente una misura oggettiva priva di stime.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.19, pagina PDF 63"
+    },
+    {
+      "id": "cdg-c06-q103",
+      "topicId": "cdg-c06-t19",
+      "question": "Quali decisioni possono essere influenzate dalla scoperta di una distorsione ABC?",
+      "answer": "Prezzi, dimensione dei lotti, numero di varianti, negoziazione commerciale, automazione, progettazione e organizzazione.",
+      "detail": "Se un prodotto assorbe molte attività di setup e collaudo, si possono ripensare le cause della complessità. La decisione non deve basarsi soltanto sul confronto dei costi pieni.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.18 — Confronto numerico",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.19, pagina PDF 63"
+    },
+    {
+      "id": "cdg-c06-q104",
+      "topicId": "cdg-c06-t19",
+      "question": "Perché non è corretto eliminare automaticamente un prodotto con costo pieno ABC elevato?",
+      "answer": "Perché il costo pieno attribuito non coincide necessariamente con il costo eliminabile o differenziale.",
+      "detail": "Macchinari, personale e struttura possono continuare a generare costi dopo l’abbandono del prodotto. Per decidere occorre studiare ricavi e costi futuri che effettivamente cambiano fra le alternative.",
+      "example": "Se i costi di macchina non scompaiono eliminando Premium, non possono essere trattati come risparmio certo.",
+      "formulas": [],
+      "connections": [
+        "§6.18 — Confronto numerico",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "Non confondere riparto di costi esistenti con risparmi realizzabili eliminando il prodotto.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.19, pagina PDF 63"
+    },
+    {
+      "id": "cdg-c06-q105",
+      "topicId": "cdg-c06-t19",
+      "question": "Quale analisi gestionale dovrebbe seguire il confronto fra costi ABC e tradizionali?",
+      "answer": "Verificare quali condizioni determinano più attività e se sia possibile ridurne l’uso senza compromettere il valore al cliente.",
+      "detail": "La differenza di costo è un segnale da approfondire: per intervenire servono informazioni su varianti, dimensione dei lotti, urgenze, modifiche e qualità del processo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.23 — Dall’ABC all’ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.19, pagina PDF 63"
+    },
+    {
+      "id": "cdg-c06-q106",
+      "topicId": "cdg-c06-t20",
+      "question": "Perché l’ABC è applicabile anche alle imprese di servizi?",
+      "answer": "Perché servizi e clienti richiedono attività che consumano personale, infrastrutture, sistemi e competenze con intensità diverse.",
+      "detail": "L’oggetto non deve essere un pezzo fisico: può essere un conto aperto, una pratica, una transazione, un cliente o una prestazione. La struttura dei driver resta quella dei due stadi ABC.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.21 — Clienti e canali",
+        "§6.14 — Quadrature"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.20, pagina PDF 64"
+    },
+    {
+      "id": "cdg-c06-q107",
+      "topicId": "cdg-c06-t20",
+      "question": "Quali costi e quali attività sono presenti nell’esempio della filiale bancaria?",
+      "answer": "Sei sportellisti costano 300.000 €, due vice-direttori 160.000 €, un direttore 100.000 €; costi di struttura 250.000 €.",
+      "detail": "Le principali attività analizzate sono apertura conti, operazioni allo sportello e concessione mutui. Una parte del personale svolge anche altre attività non imputate alle tre prestazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.21 — Clienti e canali",
+        "§6.14 — Quadrature"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.20, pagina PDF 64"
+    },
+    {
+      "id": "cdg-c06-q108",
+      "topicId": "cdg-c06-t20",
+      "question": "Quanto personale viene attribuito all’attività Apertura conti?",
+      "answer": "60.000 €, pari al 20% dei 300.000 € di costo degli sportellisti.",
+      "detail": "Il volume è 120 aperture: il costo parziale per apertura di conto è 60.000/120 = 500 €. Il valore riguarda solo il personale attribuito, non il costo pieno aziendale della prestazione.",
+      "example": "Apertura conto: 300.000×20% = 60.000 €; 60.000/120 conti = 500 € per conto.",
+      "formulas": [],
+      "connections": [
+        "§6.21 — Clienti e canali",
+        "§6.14 — Quadrature"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.20, pagina PDF 64"
+    },
+    {
+      "id": "cdg-c06-q109",
+      "topicId": "cdg-c06-t20",
+      "question": "Quanto personale viene imputato alle operazioni di sportello e quale costo parziale unitario risulta?",
+      "answer": "210.000 € totali, cioè 0,50 € per ognuna delle 420.000 operazioni.",
+      "detail": "Si attribuisce il 70% dei 300.000 € degli addetti allo sportello. Rimangono esclusi gli altri costi di struttura e le attività non allocate.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "210000/420000=0{,}50\\;\\text{€/operazione}",
+          "meaning": "Costo parziale per operazione allo sportello."
+        }
+      ],
+      "connections": [
+        "§6.21 — Clienti e canali",
+        "§6.14 — Quadrature"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.20, pagina PDF 64"
+    },
+    {
+      "id": "cdg-c06-q110",
+      "topicId": "cdg-c06-t20",
+      "question": "Come si determina il costo di 156.000 € dell’attività Concessione mutui?",
+      "answer": "30.000 € degli sportellisti, 96.000 € dei vice-direttori e 30.000 € del direttore.",
+      "detail": "Le quote sono 10% × 300.000 + 60% × 160.000 + 30% × 100.000. A fronte di 80 mutui il costo parziale è 1.950 € per mutuo.",
+      "example": "Mutui: 30.000+96.000+30.000 = 156.000 €; su 80 mutui sono 1.950 € per mutuo.",
+      "formulas": [
+        {
+          "latex": "300000\\cdot0{,}10+160000\\cdot0{,}60+100000\\cdot0{,}30=156000",
+          "meaning": "Costo personale dell’attività Mutui."
+        }
+      ],
+      "connections": [
+        "§6.21 — Clienti e canali",
+        "§6.14 — Quadrature"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.20, pagina PDF 64"
+    },
+    {
+      "id": "cdg-c06-q111",
+      "topicId": "cdg-c06-t20",
+      "question": "Quali costi rimangono non imputati alle tre principali prestazioni bancarie?",
+      "answer": "134.000 € di personale impegnato in altre attività e 250.000 € di costi generali di struttura.",
+      "detail": "Le tre attività principali assorbono 60.000+210.000+156.000=426.000 € dei 560.000 € di personale. La quota residua è 134.000 €. I costi di struttura devono essere dichiarati separatamente o ripartiti con una scelta giustificata.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.21 — Clienti e canali",
+        "§6.14 — Quadrature"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.20, pagina PDF 64"
+    },
+    {
+      "id": "cdg-c06-q112",
+      "topicId": "cdg-c06-t20",
+      "question": "I costi di 500 € per conto, 0,50 € per operazione e 1.950 € per mutuo sono costi pieni?",
+      "answer": "No. Sono costi parziali riferiti al solo personale attribuito alle rispettive attività.",
+      "detail": "Per determinare un costo pieno occorre decidere il trattamento dei costi di struttura e delle altre attività. Qualsiasi attribuzione aggiuntiva richiede un criterio esplicito, che può modificare il risultato.",
+      "example": "Al costo del personale per apertura conto devono ancora essere valutati costi comuni e di struttura.",
+      "formulas": [],
+      "connections": [
+        "§6.21 — Clienti e canali",
+        "§6.14 — Quadrature"
+      ],
+      "mistakes": "Non chiamare «costo pieno» un costo che comprende soltanto il personale delle attività selezionate.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.20, pagina PDF 64"
+    },
+    {
+      "id": "cdg-c06-q113",
+      "topicId": "cdg-c06-t20",
+      "question": "Quale quadratura dei costi del personale si ottiene nell’esempio della filiale?",
+      "answer": "60.000 + 210.000 + 156.000 + 134.000 = 560.000 €.",
+      "detail": "Le tre prestazioni principali e il lavoro per altre attività ricostruiscono il costo di 300.000+160.000+100.000 € del personale. I 250.000 € di struttura restano un perimetro separato, non già distribuito.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.21 — Clienti e canali",
+        "§6.14 — Quadrature"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.20, pagina PDF 64"
+    },
+    {
+      "id": "cdg-c06-q114",
+      "topicId": "cdg-c06-t21",
+      "question": "Quali ulteriori oggetti di costo si possono studiare con l’ABC oltre ai prodotti?",
+      "answer": "Commesse, clienti, segmenti di clienti, canali commerciali e mercati geografici.",
+      "detail": "La logica è identica: associare a ciascun oggetto le attività che richiede e quantificarne il consumo. In un’impresa di servizi il cliente può essere l’oggetto gestionale più rilevante.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.20 — ABC nei servizi",
+        "§6.19 — Decisioni differenziali"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.21, pagina PDF 64"
+    },
+    {
+      "id": "cdg-c06-q115",
+      "topicId": "cdg-c06-t21",
+      "question": "Perché due clienti con lo stesso fatturato possono avere costi di servizio differenti?",
+      "answer": "Perché possono richiedere un numero molto diverso di ordini, urgenze, reclami, resi e interventi.",
+      "detail": "Un cliente concentra gli acquisti in un ordine trimestrale e fornisce dati completi; un altro ordina ogni settimana e richiede frequenti consegne urgenti e assistenza. Ripartire i costi in proporzione ai ricavi maschera la differenza.",
+      "example": "Cliente 1: un ordine trimestrale. Cliente 2: ordini settimanali, urgenze e reclami; ricavi uguali, attività diverse.",
+      "formulas": [],
+      "connections": [
+        "§6.20 — ABC nei servizi",
+        "§6.19 — Decisioni differenziali"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.21, pagina PDF 64"
+    },
+    {
+      "id": "cdg-c06-q116",
+      "topicId": "cdg-c06-t21",
+      "question": "Come si imposta una lettura ABC della redditività del cliente?",
+      "answer": "Si parte dal margine commerciale e si sottraggono i costi delle attività causate dal cliente.",
+      "detail": "Le attività possono includere gestione ordini, spedizioni speciali, supporto, resi e amministrazione del credito. Occorre distinguere redditività da costo di servizio e considerare anche il valore strategico del rapporto.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.20 — ABC nei servizi",
+        "§6.19 — Decisioni differenziali"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.21, pagina PDF 64"
+    },
+    {
+      "id": "cdg-c06-q117",
+      "topicId": "cdg-c06-t21",
+      "question": "Perché il costo del servizio a un cliente non coincide necessariamente con la convenienza a mantenerlo?",
+      "answer": "Perché la scelta dipende anche da ricavi, costi futuri eliminabili, opportunità e rilevanza strategica.",
+      "detail": "Un costo attribuito può comprendere risorse che non scomparirebbero eliminando il cliente. L’ABC descrive il consumo delle attività, ma la decisione va completata con un’analisi differenziale.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.20 — ABC nei servizi",
+        "§6.19 — Decisioni differenziali"
+      ],
+      "mistakes": "Il costo attribuito al cliente non coincide con il risparmio certo in caso di cessazione del rapporto.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.21, pagina PDF 64"
+    },
+    {
+      "id": "cdg-c06-q118",
+      "topicId": "cdg-c06-t21",
+      "question": "Quale applicazione ai clienti richiama il manuale dalle soluzioni Arcari?",
+      "answer": "L’esercizio 3.7 Sofianna, che imputa i costi delle attività ai clienti usando appositi coefficienti.",
+      "detail": "Questo richiamo evidenzia che i clienti possono essere oggetti di costo come i prodotti. La struttura del modello rimane costo dei pool, tassi per activity driver e quote ai singoli clienti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.20 — ABC nei servizi",
+        "§6.19 — Decisioni differenziali"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.21, pagina PDF 64"
+    },
+    {
+      "id": "cdg-c06-q119",
+      "topicId": "cdg-c06-t22",
+      "question": "Quali sono le quattro attività e i relativi costi nel caso software-energia?",
+      "answer": "Raccolta requisiti 12.000 €, configurazione 16.000 €, test 18.000 € e supporto post-rilascio 9.000 €.",
+      "detail": "Il pool complessivo è di 55.000 € nel periodo. Si confrontano due linee commerciali, Standard e Custom, che utilizzano le attività in quantità differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.21 — Oggetti di costo",
+        "§6.10 — Tassi"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.22, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q120",
+      "topicId": "cdg-c06-t22",
+      "question": "Quali sono i volumi complessivi dei driver nel caso dei servizi software ed energetici?",
+      "answer": "30 revisioni requisiti, 80 configurazioni, 600 ore di test e 45 interventi di assistenza.",
+      "detail": "Ogni quantità è riferita alla totalità delle linee analizzate. È il denominatore pertinente per determinare i quattro tassi di attività.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.21 — Oggetti di costo",
+        "§6.10 — Tassi"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.22, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q121",
+      "topicId": "cdg-c06-t22",
+      "question": "Quali sono i tassi delle attività nel caso software-energia?",
+      "answer": "400 €/revisione, 200 €/configurazione, 30 €/ora di test e 200 €/intervento di assistenza.",
+      "detail": "Si dividono rispettivamente 12.000 per 30, 16.000 per 80, 18.000 per 600 e 9.000 per 45. Le unità di misura sono diverse e vanno rispettate.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "12000/30=400",
+          "meaning": "Euro per revisione requisiti."
+        },
+        {
+          "latex": "16000/80=200",
+          "meaning": "Euro per configurazione."
+        },
+        {
+          "latex": "18000/600=30",
+          "meaning": "Euro per ora test."
+        },
+        {
+          "latex": "9000/45=200",
+          "meaning": "Euro per intervento di supporto."
+        }
+      ],
+      "connections": [
+        "§6.21 — Oggetti di costo",
+        "§6.10 — Tassi"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.22, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q122",
+      "topicId": "cdg-c06-t22",
+      "question": "Quali attività consuma la linea Standard e quanto costo indiretto le viene attribuito?",
+      "answer": "10 revisioni, 50 configurazioni, 200 ore test e 15 interventi, per 23.000 € totali.",
+      "detail": "Le quote sono 4.000 € requisiti, 10.000 € configurazione, 6.000 € test e 3.000 € supporto. La linea Standard richiede più configurazioni ma meno revisioni, test e assistenza di Custom.",
+      "example": "Standard: requisiti 4.000, configurazioni 10.000, test 6.000 e supporto 3.000 €.",
+      "formulas": [],
+      "connections": [
+        "§6.21 — Oggetti di costo",
+        "§6.10 — Tassi"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.22, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q123",
+      "topicId": "cdg-c06-t22",
+      "question": "Quali attività consuma la linea Custom e quanto costo indiretto le viene attribuito?",
+      "answer": "20 revisioni, 30 configurazioni, 400 ore test e 30 interventi, per 32.000 € totali.",
+      "detail": "Le quote sono 8.000 € requisiti, 6.000 € configurazione, 12.000 € test e 6.000 € supporto. La maggiore complessità provoca costi superiori pur con meno configurazioni.",
+      "example": "Custom: requisiti 8.000, configurazioni 6.000, test 12.000 e supporto 6.000 €.",
+      "formulas": [],
+      "connections": [
+        "§6.21 — Oggetti di costo",
+        "§6.10 — Tassi"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.22, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q124",
+      "topicId": "cdg-c06-t22",
+      "question": "Come si verifica la quadratura del caso software-energia?",
+      "answer": "Standard 23.000 € più Custom 32.000 € ricostruiscono i 55.000 € dei quattro cost pool.",
+      "detail": "La quadratura conferma l’attribuzione integrale dei costi delle attività considerate. Per decidere i prezzi è necessario aggiungere i costi diretti e valutare ricavi, capacità disponibile e contratti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.21 — Oggetti di costo",
+        "§6.10 — Tassi"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.22, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q125",
+      "topicId": "cdg-c06-t22",
+      "question": "Quale conclusione gestionale si ricava dal caso Standard/Custom?",
+      "answer": "Il volume di configurazioni non basta a spiegare il costo: revisioni, test e supporto possono rendere più oneroso Custom.",
+      "detail": "Il modello fa emergere il profilo delle attività richieste dalle diverse linee. Usare soltanto il numero di configurazioni finali avrebbe nascosto il peso delle attività più complesse.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.21 — Oggetti di costo",
+        "§6.10 — Tassi"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.22, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q126",
+      "topicId": "cdg-c06-t23",
+      "question": "Che cos’è l’Activity-Based Management (ABM)?",
+      "answer": "L’utilizzo delle informazioni sui costi e sulle attività prodotte dall’ABC per migliorare processi, efficienza, qualità e redditività.",
+      "detail": "L’ABC misura e attribuisce i costi delle attività; l’ABM impiega tali informazioni per comprendere le cause del lavoro e decidere interventi di miglioramento. La sola misurazione non modifica i processi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.13 — Cost driver gestionali",
+        "§6.24 — Fasi ABM"
+      ],
+      "mistakes": "La misurazione ABC non è di per sé un intervento di miglioramento; l’ABM richiede azioni.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.23, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q127",
+      "topicId": "cdg-c06-t23",
+      "question": "Qual è la differenza fondamentale tra le domande poste da ABC e ABM?",
+      "answer": "ABC chiede quanto costano le attività e chi le consuma; ABM chiede perché le attività assorbono risorse e come migliorarle.",
+      "detail": "La seconda prospettiva considera valore, qualità, processi e determinanti gestionali, oltre alla semplice ripartizione contabile. È il passaggio dalla misura alla gestione.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.13 — Cost driver gestionali",
+        "§6.24 — Fasi ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.23, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q128",
+      "topicId": "cdg-c06-t23",
+      "question": "Quali sono i due obiettivi dell’ABM indicati nel materiale del corso?",
+      "answer": "Aumentare il valore offerto ai clienti e migliorare la redditività aziendale.",
+      "detail": "Ridurre i costi è uno strumento possibile ma non l’unico. Un’attività può diventare più costosa e risultare comunque giustificata se migliora in misura significativa qualità, affidabilità o disponibilità del servizio.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.13 — Cost driver gestionali",
+        "§6.24 — Fasi ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.23, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q129",
+      "topicId": "cdg-c06-t23",
+      "question": "Perché ridurre indiscriminatamente ogni attività costosa non è coerente con l’ABM?",
+      "answer": "Perché alcune attività generano valore oppure sono indispensabili per qualità, sicurezza e conformità.",
+      "detail": "La gestione deve valutare il contributo dell’attività e le sue cause. Tagliare un controllo necessario può peggiorare il valore al cliente e aumentare costi futuri di errore o rischio.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.13 — Cost driver gestionali",
+        "§6.24 — Fasi ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.23, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q130",
+      "topicId": "cdg-c06-t24",
+      "question": "Quali sono le quattro fasi dell’Activity-Based Management secondo le slide?",
+      "answer": "Identificazione delle attività a valore e non-valore; reingegnerizzazione; benchmarking; misure per il miglioramento continuo.",
+      "detail": "Le fasi si ripetono nel tempo. Gli interventi possono modificare consumo di risorse, processi e driver, rendendo necessario aggiornare anche il modello di costing.",
+      "example": "Un progetto ABM individua un controllo duplicato, lo ridisegna, confronta risultati e misura il miglioramento nel tempo.",
+      "formulas": [],
+      "connections": [
+        "§6.23 — Obiettivi ABM",
+        "§6.26 — KPI"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.24, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q131",
+      "topicId": "cdg-c06-t24",
+      "question": "In che cosa consiste la prima fase dell’ABM: identificazione del valore?",
+      "answer": "Classificare le attività secondo il contributo alle esigenze del cliente e alle condizioni essenziali di erogazione.",
+      "detail": "La valutazione considera qualità, conformità, sicurezza e continuità operativa, non solo ciò che il cliente vede. Un controllo obbligatorio non va eliminato automaticamente perché non modifica fisicamente il prodotto.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.23 — Obiettivi ABM",
+        "§6.26 — KPI"
+      ],
+      "mistakes": "Non eliminare automaticamente attività di sicurezza, conformità e controlli obbligatori.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.24, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q132",
+      "topicId": "cdg-c06-t24",
+      "question": "Che cosa significa reingegnerizzare un processo nell’ABM?",
+      "answer": "Riprogettare attività e passaggi per ridurre errori, attese, duplicazioni, rilavorazioni e trasferimenti superflui.",
+      "detail": "A volte la causa del problema risiede nei confini fra reparti: perciò non basta ottimizzare una singola funzione, ma occorre rivedere il processo end-to-end.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.23 — Obiettivi ABM",
+        "§6.26 — KPI"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.24, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q133",
+      "topicId": "cdg-c06-t24",
+      "question": "A cosa serve il benchmarking delle attività nell’ABM?",
+      "answer": "A confrontare prestazioni e metodi con standard interni o unità esterne comparabili per individuare miglioramenti.",
+      "detail": "I confronti hanno senso solo considerando complessità delle attività, condizioni operative e qualità del servizio. Una differenza di costo non dimostra da sola maggiore efficienza.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.23 — Obiettivi ABM",
+        "§6.26 — KPI"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.24, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q134",
+      "topicId": "cdg-c06-t24",
+      "question": "In cosa consiste la fase di miglioramento continuo dell’ABM?",
+      "answer": "Definire KPI, responsabilità, obiettivi e frequenze di monitoraggio per verificare l’effetto reale degli interventi.",
+      "detail": "I miglioramenti devono ridurre tempi, sprechi o risorse effettivamente utilizzate, non semplicemente spostare costi da un’attività a un’altra nel sistema contabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.23 — Obiettivi ABM",
+        "§6.26 — KPI"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.24, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q135",
+      "topicId": "cdg-c06-t24",
+      "question": "Perché l’ABM è un processo ciclico?",
+      "answer": "Perché le modifiche organizzative cambiano attività e driver e richiedono nuove misurazioni e ulteriori valutazioni.",
+      "detail": "L’effetto di una reingegnerizzazione non va dato per acquisito: occorre confrontare gli indicatori nel tempo e aggiornare il modello ABC per mantenere significativi i costi attribuiti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.23 — Obiettivi ABM",
+        "§6.26 — KPI"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.24, pagina PDF 65"
+    },
+    {
+      "id": "cdg-c06-q136",
+      "topicId": "cdg-c06-t25",
+      "question": "Che cosa caratterizza un’attività a valore aggiunto nel manuale?",
+      "answer": "Un contributo riconoscibile alla prestazione richiesta dal cliente o alle condizioni essenziali per erogarla.",
+      "detail": "La prospettiva considera anche qualità, conformità, sicurezza e continuità. Il fatto che un’attività sia indiretta o non immediatamente percepibile dal cliente non ne esclude il valore.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.24 — Attività a valore",
+        "§6.28 — TDABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.25, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q137",
+      "topicId": "cdg-c06-t25",
+      "question": "Quali attività possono non aggiungere valore per il cliente?",
+      "answer": "Rilavorazioni da errori, passaggi amministrativi duplicati, trasferimenti inutili e attese evitabili.",
+      "detail": "L’obiettivo non è eliminare tutte le attività di supporto, ma capire dove si consumano risorse senza un beneficio funzionale o obbligatorio. La valutazione delle cause è parte dell’ABM.",
+      "example": "Doppio inserimento dati e rilavorazione di un prodotto difettoso sono esempi di attività eliminabili da riprogettare.",
+      "formulas": [],
+      "connections": [
+        "§6.24 — Attività a valore",
+        "§6.28 — TDABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.25, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q138",
+      "topicId": "cdg-c06-t25",
+      "question": "Perché sicurezza, controlli qualità e conformità non sono automaticamente attività senza valore?",
+      "answer": "Perché possono essere condizioni indispensabili di legge, sicurezza o affidabilità anche se il cliente non le vede.",
+      "detail": "Il valore gestionale non coincide soltanto con la trasformazione fisica del prodotto. Eliminare attività essenziali può introdurre rischi e compromettere la prestazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.24 — Attività a valore",
+        "§6.28 — TDABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.25, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q139",
+      "topicId": "cdg-c06-t25",
+      "question": "Come si calcola il costo teorico della capacità per pratica nell’esempio dell’ufficio?",
+      "answer": "100.000 € / 5.000 pratiche di capacità pratica = 20 € per pratica.",
+      "detail": "Il valore usa la capacità pratica fornita, non il numero effettivo di pratiche svolte. È la base per separare risorse utilizzate e capacità disponibile ma non impiegata.",
+      "example": "5.000 pratiche di capacità pratica con 100.000 € di costo comportano 20 € per pratica potenziale.",
+      "formulas": [
+        {
+          "latex": "100000/5000=20\\;\\text{€/pratica}",
+          "meaning": "Costo unitario della capacità pratica disponibile."
+        }
+      ],
+      "connections": [
+        "§6.24 — Attività a valore",
+        "§6.28 — TDABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.25, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q140",
+      "topicId": "cdg-c06-t25",
+      "question": "Che effetto produce il riparto di tutti i 100.000 € su sole 4.000 pratiche effettive?",
+      "answer": "Il costo apparente sale a 25 € per pratica, occultando 20.000 € di capacità inutilizzata.",
+      "detail": "A 20 €/pratica, le 4.000 prestazioni assorbirebbero 80.000 €. I 20.000 € residui rappresentano risorse fornite ma non utilizzate, da distinguere nel controllo gestionale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "100000/4000=25",
+          "meaning": "Riparto totale sui soli volumi effettivi."
+        },
+        {
+          "latex": "(5000-4000)\\times20=20000",
+          "meaning": "Valore della capacità inutilizzata."
+        }
+      ],
+      "connections": [
+        "§6.24 — Attività a valore",
+        "§6.28 — TDABC"
+      ],
+      "mistakes": "Non attribuire automaticamente il costo della capacità inutilizzata alle pratiche effettive.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.25, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q141",
+      "topicId": "cdg-c06-t25",
+      "question": "Perché è utile separare risorse fornite, risorse utilizzate e capacità inutilizzata?",
+      "answer": "Per non attribuire ai prodotti o servizi costi provocati dalla disponibilità di capacità non utilizzata.",
+      "detail": "Una quota di costo per unità più alta può derivare da sottoutilizzo e non da maggiore lavoro richiesto dalla prestazione. La distinzione è utile per decisioni e controllo, fermo restando che la valutazione civilistica segue regole specifiche.",
+      "example": "4.000 pratiche a 20 € assorbono 80.000 €: i 20.000 € residui rappresentano capacità inutilizzata.",
+      "formulas": [],
+      "connections": [
+        "§6.24 — Attività a valore",
+        "§6.28 — TDABC"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.25, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q142",
+      "topicId": "cdg-c06-t26",
+      "question": "Quali dimensioni deve considerare il reporting basato sulle attività?",
+      "answer": "Costo totale attività, volume dei driver, costo per driver, tempi, difetti, puntualità e qualità.",
+      "detail": "Il modello ABC può alimentare report multidimensionali che uniscono misure monetarie e operative. Un solo indicatore economico non descrive completamente il risultato di un processo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.24 — Miglioramento continuo",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.26, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q143",
+      "topicId": "cdg-c06-t26",
+      "question": "Quali KPI può utilizzare la direzione per l’attività Setup?",
+      "answer": "Costo per avviamento e minuti di setup; come possibili cause, varietà dei lotti e dei formati.",
+      "detail": "L’indicatore monetario quantifica il consumo di risorse, quello operativo mostra la durata. Per migliorare bisogna analizzare se la causa è frequenza dei cambi, varietà produttiva o inefficienza dei passaggi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.24 — Miglioramento continuo",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.26, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q144",
+      "topicId": "cdg-c06-t26",
+      "question": "Quali KPI si possono usare per acquisti e gestione ordini?",
+      "answer": "Costo per ordine e quota di ordini urgenti; possibili cause sono dati incompleti, fornitori e ritardi.",
+      "detail": "Il manuale richiede di combinare euro per ordine con indicatori operativi e qualitativi. Un costo medio basso non è necessariamente un buon risultato se aumentano errori e ritardi.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.24 — Miglioramento continuo",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.26, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q145",
+      "topicId": "cdg-c06-t26",
+      "question": "Quali KPI sono indicati per l’attività Collaudi?",
+      "answer": "Costo per ora di test, percentuale di ripetizioni, ore per lotto, tempi di attraversamento e numero di non conformità.",
+      "detail": "La combinazione consente di identificare errori, variabilità e difetti. La sola riduzione del costo per test può deteriorare la qualità, se si riducono verifiche necessarie.",
+      "example": "Collaudo: €/ora test, percentuale test ripetuti e ore per lotto in uno stesso report.",
+      "formulas": [],
+      "connections": [
+        "§6.24 — Miglioramento continuo",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.26, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q146",
+      "topicId": "cdg-c06-t26",
+      "question": "Quali KPI sono utili per l’attività Assistenza?",
+      "answer": "Costo per ticket e tempo di risoluzione, leggendo anche qualità dei rilasci e documentazione.",
+      "detail": "Un alto numero di ticket può derivare da difetti dei sistemi a monte. Il reporting deve aiutare a correggere le cause e non limitarsi a misurare la produttività degli operatori.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.24 — Miglioramento continuo",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.26, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q147",
+      "topicId": "cdg-c06-t26",
+      "question": "Quali caratteristiche organizzative deve possedere ogni KPI di attività?",
+      "answer": "Definizione univoca, fonte dei dati, periodicità, responsabile e possibilità di orientare azioni.",
+      "detail": "La misura deve essere verificabile e comparabile nel tempo; non va ottimizzata in modo isolato sacrificando qualità e soddisfazione del cliente.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.24 — Miglioramento continuo",
+        "§6.23 — ABM"
+      ],
+      "mistakes": "Un KPI monetario ottimizzato isolatamente può peggiorare qualità o servizio.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.26, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q148",
+      "topicId": "cdg-c06-t27",
+      "question": "Quali costi organizzativi comporta l’introduzione di un sistema ABC?",
+      "answer": "Progettazione, raccolta dati, formazione, scelta e aggiornamento dei driver e manutenzione del modello.",
+      "detail": "L’ABC non è automaticamente conveniente in qualunque contesto. Il maggiore dettaglio è giustificato se produce informazioni sufficientemente migliori per le decisioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.7 — Livello di dettaglio",
+        "§6.19 — Limiti interpretativi"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.27, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q149",
+      "topicId": "cdg-c06-t27",
+      "question": "Quali difficoltà tecniche e informative possono ridurre l’affidabilità dell’ABC?",
+      "answer": "Attività mal definite, dettaglio inadeguato, stime di tempo deboli, driver poco causali e pool eccessivamente aggregati.",
+      "detail": "Le percentuali stimate in un’intervista possono non rispecchiare la situazione reale. Si devono verificare qualità e stabilità dei dati, applicando controlli e analisi di sensibilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.7 — Livello di dettaglio",
+        "§6.19 — Limiti interpretativi"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.27, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q150",
+      "topicId": "cdg-c06-t27",
+      "question": "Perché imputare i costi di struttura ai prodotti può creare falsa precisione?",
+      "answer": "Perché una parte dei costi dell’intera struttura non presenta una relazione causale osservabile con i singoli oggetti.",
+      "detail": "Sicurezza generale o direzione di stabilimento possono essere necessarie per tutti senza dipendere da un driver specifico. Una quota calcolata con precisione aritmetica può restare convenzionale.",
+      "example": "Il costo della direzione generale può essere ripartito per convenzione, non attribuito come consumo causale misurato.",
+      "formulas": [],
+      "connections": [
+        "§6.7 — Livello di dettaglio",
+        "§6.19 — Limiti interpretativi"
+      ],
+      "mistakes": "La precisione aritmetica non rende causale una base di ripartizione arbitraria.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.27, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q151",
+      "topicId": "cdg-c06-t27",
+      "question": "In quali condizioni l’ABC tende a essere più conveniente?",
+      "answer": "Indiretti elevati, gamma ampia, complessità differenziata, lotti eterogenei, servizi ai clienti diversi e driver affidabili.",
+      "detail": "Quando le attività incidono in modo diverso sui prodotti, la visibilità aggiuntiva può aiutare prezzi, scelte di mix e miglioramento. In produzioni omogenee, il modello tradizionale può essere sufficiente.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.7 — Livello di dettaglio",
+        "§6.19 — Limiti interpretativi"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.27, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q152",
+      "topicId": "cdg-c06-t27",
+      "question": "Come si può controllare la robustezza di un sistema ABC?",
+      "answer": "Verificando dati e ipotesi, aggiornando i driver, confrontando i risultati e svolgendo analisi di sensibilità sui riparti.",
+      "detail": "Occorre capire se cambiamenti ragionevoli nelle stime di tempo o nelle basi alterano in modo decisivo la classifica dei costi dei prodotti. Un risultato fragile va interpretato con cautela.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.7 — Livello di dettaglio",
+        "§6.19 — Limiti interpretativi"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.27, pagina PDF 66"
+    },
+    {
+      "id": "cdg-c06-q153",
+      "topicId": "cdg-c06-t28",
+      "question": "Che cos’è il Time-Driven Activity-Based Costing (TDABC)?",
+      "answer": "Una variante dell’ABC basata principalmente sul costo della capacità pratica per unità di tempo e sul tempo necessario alle transazioni.",
+      "detail": "Il manuale presenta l’approccio di Kaplan e Anderson come approfondimento, non come nucleo autonomo delle slide. L’obiettivo è semplificare alcune rilevazioni e rendere più evidente il costo della capacità non utilizzata.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.25 — Capacità inutilizzata",
+        "§6.10 — Activity rate"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.28, pagina PDF 67"
+    },
+    {
+      "id": "cdg-c06-q154",
+      "topicId": "cdg-c06-t28",
+      "question": "Quali sono i due parametri fondamentali del TDABC?",
+      "answer": "Costo per unità di capacità pratica disponibile e durata standard o stimata della prestazione.",
+      "detail": "Moltiplicandoli si ottiene il costo attribuito alla transazione. È essenziale distinguere capacità pratica da tempo effettivamente impegnato.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.25 — Capacità inutilizzata",
+        "§6.10 — Activity rate"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.28, pagina PDF 67"
+    },
+    {
+      "id": "cdg-c06-q155",
+      "topicId": "cdg-c06-t28",
+      "question": "Come si calcola il costo al minuto nell’esempio TDABC del manuale?",
+      "answer": "120.000 € / 12.000 minuti di capacità pratica = 10 €/minuto.",
+      "detail": "Il costo per unità di tempo misura il costo della capacità fornita. Si applica quindi ai minuti necessari per le diverse transazioni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "120000/12000=10\\;\\text{€/min}",
+          "meaning": "Costo per minuto di capacità pratica disponibile."
+        }
+      ],
+      "connections": [
+        "§6.25 — Capacità inutilizzata",
+        "§6.10 — Activity rate"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.28, pagina PDF 67"
+    },
+    {
+      "id": "cdg-c06-q156",
+      "topicId": "cdg-c06-t28",
+      "question": "Quanto costa una pratica semplice e una complessa nell’esempio TDABC?",
+      "answer": "La pratica semplice da 3 minuti costa 30 €; quella complessa da 9 minuti costa 90 €.",
+      "detail": "Il tasso di 10 €/minuto è lo stesso, ma il consumo di capacità cambia con la durata. Il modello riconosce così la complessità diversa delle transazioni.",
+      "example": "A 10 €/minuto una pratica da tre minuti costa 30 €; una da nove minuti 90 €.",
+      "formulas": [],
+      "connections": [
+        "§6.25 — Capacità inutilizzata",
+        "§6.10 — Activity rate"
+      ],
+      "mistakes": "Il costo al minuto usa la capacità pratica, non solo i minuti effettivamente lavorati.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.28, pagina PDF 67"
+    },
+    {
+      "id": "cdg-c06-q157",
+      "topicId": "cdg-c06-t28",
+      "question": "Che cosa sono le time equations nel TDABC?",
+      "answer": "Equazioni che stimano il tempo di una transazione in funzione delle sue caratteristiche.",
+      "detail": "L’esempio del manuale prevede 3 minuti base, 2 aggiuntivi per un nuovo cliente e 4 per una verifica manuale. Le stime devono essere validate e aggiornate quando cambiano le procedure.",
+      "example": "Nuovo cliente con verifica manuale: 3 + 2 + 4 = 9 minuti nell’equazione dell’esempio.",
+      "formulas": [
+        {
+          "latex": "t=3+2I_{cliente\\ nuovo}+4I_{verifica\\ manuale}\\ \\mathrm{min}",
+          "meaning": "Equazione temporale esemplificativa; I vale 1 se la condizione è presente, altrimenti 0."
+        }
+      ],
+      "connections": [
+        "§6.25 — Capacità inutilizzata",
+        "§6.10 — Activity rate"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.28, pagina PDF 67"
+    },
+    {
+      "id": "cdg-c06-q158",
+      "topicId": "cdg-c06-t28",
+      "question": "Quali vantaggi e limiti presenta il TDABC rispetto all’ABC tradizionale?",
+      "answer": "Può semplificare la misura e rendere esplicita la capacità inutilizzata, ma dipende comunque da stime aggiornate di capacità e tempi.",
+      "detail": "Non elimina il bisogno di dati attendibili. Variazioni di processo, mix di pratiche e tecnologia rendono necessaria la revisione delle equazioni temporali e dei costi della capacità.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.25 — Capacità inutilizzata",
+        "§6.10 — Activity rate"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.28, pagina PDF 67"
+    },
+    {
+      "id": "cdg-c06-q159",
+      "topicId": "cdg-c06-t29",
+      "question": "Quali controlli indipendenti devono chiudere un calcolo ABC?",
+      "answer": "Verificare costi delle risorse attribuite, totale dei cost pool e somma delle quote finali, distinguendo eventuali costi non imputati.",
+      "detail": "Sono tre riconciliazioni: risorse verso attività, attività verso pool e pool verso oggetti. Le somme finali devono ricostruire il perimetro selezionato o mostrare la capacità inutilizzata.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Quadrature",
+        "§6.30 — Esercitazioni"
+      ],
+      "mistakes": "L’uguaglianza dei totali non convalida automaticamente la scelta economica dei driver.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.29, pagina PDF 67"
+    },
+    {
+      "id": "cdg-c06-q160",
+      "topicId": "cdg-c06-t29",
+      "question": "Perché è sbagliato dividere il costo dei setup per le unità prodotte?",
+      "answer": "Perché il consumo dell’attività di attrezzaggio dipende dai setup, non necessariamente dal numero di pezzi.",
+      "detail": "L’activity rate va calcolato su una base coerente: numero di setup o minuti di setup. Dividere subito per le unità crea un tasso volumetrico che nasconde la dimensione dei lotti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Quadrature",
+        "§6.30 — Esercitazioni"
+      ],
+      "mistakes": "Il numero di pezzi non sostituisce il numero di setup quando la preparazione è per lotto.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.29, pagina PDF 67"
+    },
+    {
+      "id": "cdg-c06-q161",
+      "topicId": "cdg-c06-t29",
+      "question": "Quale errore deriva dall’applicare a un prodotto un activity rate calcolato con un driver differente?",
+      "answer": "Il costo imputato perde significato economico e può violare la coerenza delle unità di misura.",
+      "detail": "Un tasso espresso in euro per ora test va moltiplicato per ore test, non per numero di ordini. Ogni attività richiede la propria base di allocazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Quadrature",
+        "§6.30 — Esercitazioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.29, pagina PDF 67"
+    },
+    {
+      "id": "cdg-c06-q162",
+      "topicId": "cdg-c06-t29",
+      "question": "Perché non bisogna arrotondare troppo presto i tassi ABC?",
+      "answer": "Perché piccoli arrotondamenti, moltiplicati per grandi volumi di driver, possono generare differenze nei totali e nelle quadrature.",
+      "detail": "È opportuno mantenere precisione intermedia e arrotondare in modo coerente solo nella presentazione finale. La verifica del totale deve usare valori con adeguata precisione.",
+      "example": "Un tasso di €/ora troncato troppo presto può creare uno scostamento quando viene applicato a migliaia di ore.",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Quadrature",
+        "§6.30 — Esercitazioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.29, pagina PDF 67"
+    },
+    {
+      "id": "cdg-c06-q163",
+      "topicId": "cdg-c06-t29",
+      "question": "Quali sono le cinque tabelle consigliate per risolvere un esercizio ABC?",
+      "answer": "Costi risorse; costi per attività; driver e tassi; quote attribuite ai prodotti; costo unitario e interpretazione.",
+      "detail": "Ogni tabella dovrebbe contenere grandezze, unità di misura e quadratura. È un metodo pratico per evitare confusione fra primo e secondo stadio del modello.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Quadrature",
+        "§6.30 — Esercitazioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.29, pagina PDF 67"
+    },
+    {
+      "id": "cdg-c06-q164",
+      "topicId": "cdg-c06-t29",
+      "question": "Quali errori ricorrenti di interpretazione bisogna evitare negli esercizi ABC?",
+      "answer": "Confondere resource e activity driver, duplicare risorse, usare driver parziali, mescolare unità, confondere totali/unitari e trattare un costo pieno come evitabile.",
+      "detail": "Il controllo non è solo aritmetico: occorre verificare causalità delle basi e destinazione dei costi. Una quadratura perfetta non prova, da sola, la correttezza dei criteri scelti.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Quadrature",
+        "§6.30 — Esercitazioni"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.29, pagina PDF 67"
+    },
+    {
+      "id": "cdg-c06-q165",
+      "topicId": "cdg-c06-t30",
+      "question": "Quali driver conviene scegliere per ordini simili e per setup molto eterogenei?",
+      "answer": "Numero di ordini per quelli con durate simili; minuti di setup quando la durata varia molto.",
+      "detail": "Il manuale propone 150 ordini omogenei e setup variabili da 10 a 100 minuti. Nel secondo caso il mero numero di attrezzaggi non coglie il consumo di tempo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.31 — Soluzioni del manuale",
+        "§6.29 — Procedura"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.30, pagina PDF 68"
+    },
+    {
+      "id": "cdg-c06-q166",
+      "topicId": "cdg-c06-t30",
+      "question": "Come scegliere il driver per ticket di assistenza semplici e complessi?",
+      "answer": "Utilizzare minuti di lavoro o ticket equivalenti ponderati per complessità.",
+      "detail": "Una base di soli ticket può sovrastimare quelli semplici e sottostimare quelli complessi. La ponderazione deve riflettere il carico di lavoro e rimanere verificabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.31 — Soluzioni del manuale",
+        "§6.29 — Procedura"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.30, pagina PDF 68"
+    },
+    {
+      "id": "cdg-c06-q167",
+      "topicId": "cdg-c06-t30",
+      "question": "Quale driver può essere usato per l’attività di progettazione di varianti?",
+      "answer": "Numero di varianti oppure ore di progettazione, secondo l’eterogeneità del lavoro richiesto.",
+      "detail": "Con dodici varianti simili può bastare il numero; quando richiedono durate molto diverse le ore sono più rappresentative. La scelta deve privilegiare il consumo reale dell’attività.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.31 — Soluzioni del manuale",
+        "§6.29 — Procedura"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.30, pagina PDF 68"
+    },
+    {
+      "id": "cdg-c06-q168",
+      "topicId": "cdg-c06-t30",
+      "question": "Come impostare la ripartizione di 100.000 € di risorse fra ordini e assistenza?",
+      "answer": "Distribuire separatamente 70.000 € di personale e 30.000 € di software secondo le rispettive percentuali, poi sommare per attività.",
+      "detail": "Il personale è ripartito 50% e 50%; il software 20% su ordini e 80% su assistenza. La quadratura deve ricostruire i 100.000 € di risorse complessive.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.31 — Soluzioni del manuale",
+        "§6.29 — Procedura"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.30, pagina PDF 68"
+    },
+    {
+      "id": "cdg-c06-q169",
+      "topicId": "cdg-c06-t30",
+      "question": "Come impostare il calcolo ABC dei pool di setup e acquisti nel terzo esercizio?",
+      "answer": "Calcolare un tasso per i 24 setup e uno per i 120 ordini, quindi applicarli ai consumi di X e Y.",
+      "detail": "I pool sono 48.000 € setup e 36.000 € acquisti; X utilizza 8 setup e 30 ordini, Y 16 e 90. Si devono ottenere due quote per prodotto e controllare i totali.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.31 — Soluzioni del manuale",
+        "§6.29 — Procedura"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.30, pagina PDF 68"
+    },
+    {
+      "id": "cdg-c06-q170",
+      "topicId": "cdg-c06-t30",
+      "question": "Quale sequenza si usa nell’esercizio sul costo industriale unitario del prodotto A?",
+      "answer": "Sommare 42.000 € di setup e 18.000 € di collaudi, dividere per 2.000 unità e aggiungere 25 € di costi diretti unitari.",
+      "detail": "Il diretto è già espresso in euro per pezzo; non va diviso nuovamente. Il costo indiretto va invece ricavato dai due pool totali attribuiti al prodotto.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.31 — Soluzioni del manuale",
+        "§6.29 — Procedura"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.30, pagina PDF 68"
+    },
+    {
+      "id": "cdg-c06-q171",
+      "topicId": "cdg-c06-t30",
+      "question": "Qual è il confronto richiesto nell’esercizio sui 100.000 € di indiretti tradizionali e ABC?",
+      "answer": "Attribuire tradizionalmente con le ore macchina, confrontare le quote ABC per A e B e misurare il trasferimento di costo.",
+      "detail": "Il tradizionale usa 5.000 ore (3.000 A e 2.000 B), mentre ABC assegna 45.000 € ad A e 55.000 € a B. Per confrontare i costi unitari si usano 3.000 unità A e 1.000 B.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.31 — Soluzioni del manuale",
+        "§6.29 — Procedura"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.30, pagina PDF 68"
+    },
+    {
+      "id": "cdg-c06-q172",
+      "topicId": "cdg-c06-t30",
+      "question": "Che cosa richiede l’esercizio di capacità pratica nel TDABC?",
+      "answer": "Determinare costo al minuto, costo delle prestazioni effettive e costo della capacità non utilizzata.",
+      "detail": "Il costo totale di capacità è 60.000 €, quello pratico è 30.000 minuti e l’impiego effettivo è 24.000. I risultati devono riconciliare l’intero costo iniziale.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.31 — Soluzioni del manuale",
+        "§6.29 — Procedura"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.30, pagina PDF 68"
+    },
+    {
+      "id": "cdg-c06-q173",
+      "topicId": "cdg-c06-t31",
+      "question": "Qual è il risultato dell’esercizio di attribuzione di personale e software fra Ordini e Assistenza?",
+      "answer": "Gestione ordini 41.000 € e Assistenza 59.000 €; insieme ricostruiscono 100.000 €.",
+      "detail": "Ordini riceve 35.000 € di personale e 6.000 € di software; Assistenza riceve 35.000 € e 24.000 €. Il totale coincide con 70.000 € di personale più 30.000 € di software.",
+      "example": "Ordini: 35.000+6.000 = 41.000 €. Assistenza: 35.000+24.000 = 59.000 €.",
+      "formulas": [],
+      "connections": [
+        "§6.30 — Problemi di allenamento",
+        "§6.29 — Verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.31, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q174",
+      "topicId": "cdg-c06-t31",
+      "question": "Quali sono i due tassi dell’esercizio con setup e ordini?",
+      "answer": "2.000 €/setup e 300 €/ordine.",
+      "detail": "I pool sono 48.000 € per 24 setup e 36.000 € per 120 ordini. Il totale indiretto del caso è 84.000 € e deve essere ricostruito dalle quote X e Y.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.30 — Problemi di allenamento",
+        "§6.29 — Verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.31, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q175",
+      "topicId": "cdg-c06-t31",
+      "question": "Quanto viene attribuito a X e Y nell’esercizio con due pool ABC?",
+      "answer": "X riceve 25.000 € e Y 59.000 €, per un totale di 84.000 €.",
+      "detail": "X: 8 setup×2.000 + 30 ordini×300 = 25.000 €. Y: 16×2.000 + 90×300 = 59.000 €. La somma ricostruisce esattamente 48.000+36.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "8\\times2000+30\\times300=25000",
+          "meaning": "Quota indiretti di X."
+        },
+        {
+          "latex": "16\\times2000+90\\times300=59000",
+          "meaning": "Quota indiretti di Y."
+        }
+      ],
+      "connections": [
+        "§6.30 — Problemi di allenamento",
+        "§6.29 — Verifiche"
+      ],
+      "mistakes": "Controlla che X+Y ricostruisca esattamente i due pool.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.31, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q176",
+      "topicId": "cdg-c06-t31",
+      "question": "Qual è il costo pieno unitario del prodotto A nell’esercizio con setup e collaudi?",
+      "answer": "55 €/unità, di cui 30 € di indiretti e 25 € di diretti.",
+      "detail": "Setup 42.000 € più collaudi 18.000 € danno 60.000 € di indiretti. Dividendo per 2.000 unità si ottengono 30 €/unità; il diretto unitario è già dato.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.30 — Problemi di allenamento",
+        "§6.29 — Verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.31, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q177",
+      "topicId": "cdg-c06-t31",
+      "question": "Quali sono le quote indirette unitarie tradizionali e ABC nell’esercizio 5?",
+      "answer": "Tradizionale: A 20 €/u, B 40 €/u; ABC: A 15 €/u, B 55 €/u.",
+      "detail": "Il tradizionale applica 20 €/ora a 3.000 e 2.000 ore, producendo 60.000 e 40.000 €; ABC attribuisce 45.000 e 55.000 €. Dividendo per 3.000 e 1.000 unità si ottengono le quattro quote.",
+      "example": "A: 60.000/3.000 = 20 €/u tradizionali, 45.000/3.000 = 15 €/u ABC.",
+      "formulas": [],
+      "connections": [
+        "§6.30 — Problemi di allenamento",
+        "§6.29 — Verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.31, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q178",
+      "topicId": "cdg-c06-t31",
+      "question": "Quale trasferimento di costo evidenzia l’esercizio 5, tradizionale contro ABC?",
+      "answer": "Il tradizionale attribuisce 15.000 € in più ad A e 15.000 € in meno a B rispetto all’ABC.",
+      "detail": "La differenza nasce dalla base ore macchina rispetto al consumo delle attività misurato con ABC. I 100.000 € di indiretti restano invariati nel totale.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.30 — Problemi di allenamento",
+        "§6.29 — Verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.31, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q179",
+      "topicId": "cdg-c06-t31",
+      "question": "Qual è il tasso del servizio assistenza e quanto viene attribuito ai clienti Alfa, Beta e Gamma?",
+      "answer": "60 € per ticket equivalente; Alfa 18.000 €, Beta 39.000 € e Gamma 15.000 €.",
+      "detail": "Il tasso deriva da 72.000/1.200. I clienti richiedono rispettivamente 300, 650 e 250 ticket equivalenti; la quadratura è 18.000+39.000+15.000=72.000 €.",
+      "example": "Beta assorbe 650 ticket equivalenti × 60 €/ticket = 39.000 €.",
+      "formulas": [],
+      "connections": [
+        "§6.30 — Problemi di allenamento",
+        "§6.29 — Verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.31, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q180",
+      "topicId": "cdg-c06-t31",
+      "question": "Quanto costano i setup per A e B nell’esercizio sui lotti?",
+      "answer": "A costa 5 €/unità e B 25 €/unità per i setup.",
+      "detail": "I volumi sono entrambi 1.000 unità, ma A ha 10 lotti e B 50; ogni setup costa 500 €. Il riparto per pezzo darebbe 15 €/unità per entrambi, occultando la maggiore frammentazione di B.",
+      "example": "A: 10×500/1000 = 5 €/u; B: 50×500/1000 = 25 €/u.",
+      "formulas": [],
+      "connections": [
+        "§6.30 — Problemi di allenamento",
+        "§6.29 — Verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.31, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q181",
+      "topicId": "cdg-c06-t31",
+      "question": "Quali sono costo delle prestazioni e valore della capacità inutilizzata nell’esercizio TDABC?",
+      "answer": "Il tasso è 2 €/minuto; costo attribuito 48.000 €; capacità inutilizzata 12.000 €.",
+      "detail": "La capacità pratica è 30.000 minuti a un costo di 60.000 €. Le prestazioni impiegano 24.000 minuti, mentre 6.000 restano disponibili ma inutilizzati. La quadratura è 48.000+12.000=60.000 €.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.30 — Problemi di allenamento",
+        "§6.29 — Verifiche"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.31, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q182",
+      "topicId": "cdg-c06-t32",
+      "question": "Come si definisce un cost pool nell’ABC?",
+      "answer": "Un aggregato dei costi attribuiti a un’attività, da distribuire agli oggetti mediante un activity driver appropriato.",
+      "detail": "Il costo del pool deriva dall’impiego di più risorse, ricostruito nel primo stadio. Serve a calcolare l’activity rate, purché il suo contenuto sia sufficientemente omogeneo.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Formulario",
+        "§6.29 — Errori d’esame"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.32, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q183",
+      "topicId": "cdg-c06-t32",
+      "question": "Come si distinguono in una frase resource driver, activity driver e cost driver?",
+      "answer": "Il resource driver misura risorse consumate dall’attività; l’activity driver misura attività consumate dall’oggetto; il cost driver ne spiega la causa.",
+      "detail": "La distinzione segue le slide italiane del corso. Un sistema può utilizzare misure simili in ruoli diversi, ma bisogna chiarire che cosa viene collegato e per quale finalità.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Formulario",
+        "§6.29 — Errori d’esame"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.32, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q184",
+      "topicId": "cdg-c06-t32",
+      "question": "Come si definisce l’activity rate nel glossario del capitolo?",
+      "answer": "Il costo attribuito per unità dell’activity driver, pari al costo del pool diviso per la quantità totale del driver.",
+      "detail": "Si esprime in unità coerenti con l’attività, per esempio €/setup, €/ordine o €/ora test. È lo strumento base del secondo stadio di imputazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Formulario",
+        "§6.29 — Errori d’esame"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.32, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q185",
+      "topicId": "cdg-c06-t32",
+      "question": "Qual è il significato sintetico di cross-subsidization?",
+      "answer": "È l’attribuzione distorta dei costi fra diversi prodotti o oggetti, quando una base non rappresenta il consumo delle attività.",
+      "detail": "Nel caso Standard/Premium il tradizionale sposta 72.000 € da Premium verso Standard rispetto all’ABC. Il costo aziendale totale non cambia.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Formulario",
+        "§6.29 — Errori d’esame"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.32, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q186",
+      "topicId": "cdg-c06-t32",
+      "question": "Che cosa si deve ricordare del collegamento fra ABC, ABM e TDABC?",
+      "answer": "ABC misura il costo delle attività; ABM usa le misure per migliorare; TDABC considera costo della capacità pratica e tempi delle prestazioni.",
+      "detail": "Sono strumenti collegati ma con finalità diverse. L’ABM è il passaggio gestionale della misurazione; il TDABC è un approfondimento metodologico per modellare la durata delle transazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§6.14 — Formulario",
+        "§6.29 — Errori d’esame"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.32, pagina PDF 69"
+    },
+    {
+      "id": "cdg-c06-q187",
+      "topicId": "cdg-c06-t32",
+      "question": "Quale percorso minimo deve ricordare lo studente per un esercizio completo di costo pieno ABC?",
+      "answer": "Risorse → costi attività → activity rate → quote agli oggetti → costi diretti → costo pieno unitario → quadrature.",
+      "detail": "Il percorso riassume il formulario del manuale. Prima di calcolare occorre dichiarare oggetto e periodo; alla fine è necessario interpretare il risultato e non confonderlo con un costo evitabile.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "C_a=\\sum_r C_rq_{r,a}",
+          "meaning": "Stadio 1: costo attività."
+        },
+        {
+          "latex": "r_a=C_a/X_{a,tot}",
+          "meaning": "Tasso attività."
+        },
+        {
+          "latex": "C_i=C_{diretti,i}+\\sum_a r_aX_{a,i}",
+          "meaning": "Costo pieno totale."
+        },
+        {
+          "latex": "C_{u,i}=C_i/N_i",
+          "meaning": "Costo pieno unitario."
+        }
+      ],
+      "connections": [
+        "§6.14 — Formulario",
+        "§6.29 — Errori d’esame"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 6, Il costo pieno basato sulle attività: Activity-Based Costing (ABC), §6.32, pagina PDF 69"
+    }
+  ]
+}

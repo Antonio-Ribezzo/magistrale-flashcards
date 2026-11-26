@@ -1,0 +1,2410 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cyber",
+  "source": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0: Prerequisiti di networking, Lezioni 0.1 e 0.2, pagine PDF 1–14 (contenuti da pagina 2 a 14). Unica fonte autorizzata.",
+  "chapter": {
+    "id": "cyber-c00",
+    "title": "Prerequisiti di networking — Fondamenti delle reti e comunicazione Internet",
+    "order": 0,
+    "topics": [
+      {
+        "id": "cyber-c00-t01",
+        "title": "Perché conoscere le reti: flusso client-server e rischi"
+      },
+      {
+        "id": "cyber-c00-t02",
+        "title": "Rete informatica, nodi, LAN, WAN e WLAN"
+      },
+      {
+        "id": "cyber-c00-t03",
+        "title": "Dispositivi: NIC, switch e router"
+      },
+      {
+        "id": "cyber-c00-t04",
+        "title": "Protocollo di comunicazione e servizi dei protocolli"
+      },
+      {
+        "id": "cyber-c00-t05",
+        "title": "Modello OSI: sette livelli"
+      },
+      {
+        "id": "cyber-c00-t06",
+        "title": "Pila TCP/IP e corrispondenze con OSI"
+      },
+      {
+        "id": "cyber-c00-t07",
+        "title": "Incapsulamento, decapsulamento e sicurezza multilivello"
+      },
+      {
+        "id": "cyber-c00-t08",
+        "title": "Indirizzi MAC, IP e porte di trasporto"
+      },
+      {
+        "id": "cyber-c00-t09",
+        "title": "TCP, UDP, handshake e SYN Flood"
+      },
+      {
+        "id": "cyber-c00-t10",
+        "title": "IP: best effort, IPv4/IPv6 e indirizzi pubblici/privati"
+      },
+      {
+        "id": "cyber-c00-t11",
+        "title": "Subnet mask, prefisso CIDR, host e appartenenza alla rete"
+      },
+      {
+        "id": "cyber-c00-t12",
+        "title": "Default gateway, ARP e ARP spoofing"
+      },
+      {
+        "id": "cyber-c00-t13",
+        "title": "DHCP: configurazione, DORA e rogue server"
+      },
+      {
+        "id": "cyber-c00-t14",
+        "title": "DNS: gerarchia, record, cache e sicurezza"
+      },
+      {
+        "id": "cyber-c00-t15",
+        "title": "NAT, NAPT/PAT, firewall e port forwarding"
+      },
+      {
+        "id": "cyber-c00-t16",
+        "title": "Architettura client-server e livelli logici"
+      },
+      {
+        "id": "cyber-c00-t17",
+        "title": "HTTP: richieste, metodi, risposte, status e sessioni"
+      },
+      {
+        "id": "cyber-c00-t18",
+        "title": "HTTPS, TLS e limiti della protezione del canale"
+      },
+      {
+        "id": "cyber-c00-t19",
+        "title": "Navigazione HTTPS: flusso end-to-end completo"
+      },
+      {
+        "id": "cyber-c00-t20",
+        "title": "Analisi delle minacce e defense in depth"
+      },
+      {
+        "id": "cyber-c00-t21",
+        "title": "Domande trasversali e ripasso per l’orale"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§0.1 — pagina PDF 2",
+        "cardIds": [
+          "cyber-c00-q001",
+          "cyber-c00-q002",
+          "cyber-c00-q003"
+        ]
+      },
+      {
+        "label": "§0.2 — pagina PDF 2",
+        "cardIds": [
+          "cyber-c00-q004",
+          "cyber-c00-q005",
+          "cyber-c00-q006"
+        ]
+      },
+      {
+        "label": "§0.3.1–0.3.3 — pagina PDF 2",
+        "cardIds": [
+          "cyber-c00-q007",
+          "cyber-c00-q008",
+          "cyber-c00-q009",
+          "cyber-c00-q010"
+        ]
+      },
+      {
+        "label": "§0.4 — pagina PDF 3",
+        "cardIds": [
+          "cyber-c00-q011",
+          "cyber-c00-q012",
+          "cyber-c00-q013",
+          "cyber-c00-q014"
+        ]
+      },
+      {
+        "label": "§0.5 — pagina PDF 3",
+        "cardIds": [
+          "cyber-c00-q015",
+          "cyber-c00-q016",
+          "cyber-c00-q017",
+          "cyber-c00-q018"
+        ]
+      },
+      {
+        "label": "§0.6 — pagina PDF 3",
+        "cardIds": [
+          "cyber-c00-q019",
+          "cyber-c00-q020"
+        ]
+      },
+      {
+        "label": "§0.6 — pagina PDF 4",
+        "cardIds": [
+          "cyber-c00-q021",
+          "cyber-c00-q022",
+          "cyber-c00-q023",
+          "cyber-c00-q024",
+          "cyber-c00-q025",
+          "cyber-c00-q026",
+          "cyber-c00-q027"
+        ]
+      },
+      {
+        "label": "§0.7 — pagina PDF 4",
+        "cardIds": [
+          "cyber-c00-q028",
+          "cyber-c00-q029",
+          "cyber-c00-q030",
+          "cyber-c00-q031"
+        ]
+      },
+      {
+        "label": "§0.8 — pagina PDF 4",
+        "cardIds": [
+          "cyber-c00-q032",
+          "cyber-c00-q033",
+          "cyber-c00-q034",
+          "cyber-c00-q035"
+        ]
+      },
+      {
+        "label": "§0.9 — pagina PDF 5",
+        "cardIds": [
+          "cyber-c00-q036",
+          "cyber-c00-q037",
+          "cyber-c00-q038",
+          "cyber-c00-q039",
+          "cyber-c00-q040"
+        ]
+      },
+      {
+        "label": "§0.10 — pagina PDF 5",
+        "cardIds": [
+          "cyber-c00-q041",
+          "cyber-c00-q042",
+          "cyber-c00-q043",
+          "cyber-c00-q044"
+        ]
+      },
+      {
+        "label": "§0.10.1 — pagina PDF 5",
+        "cardIds": [
+          "cyber-c00-q045"
+        ]
+      },
+      {
+        "label": "§0.10.1 — pagina PDF 6",
+        "cardIds": [
+          "cyber-c00-q046",
+          "cyber-c00-q047"
+        ]
+      },
+      {
+        "label": "§0.11 — pagina PDF 6",
+        "cardIds": [
+          "cyber-c00-q048"
+        ]
+      },
+      {
+        "label": "§0.12 — pagina PDF 7",
+        "cardIds": [
+          "cyber-c00-q049",
+          "cyber-c00-q050",
+          "cyber-c00-q051",
+          "cyber-c00-q052",
+          "cyber-c00-q053"
+        ]
+      },
+      {
+        "label": "§0.12.2 — pagina PDF 7",
+        "cardIds": [
+          "cyber-c00-q054",
+          "cyber-c00-q055",
+          "cyber-c00-q056"
+        ]
+      },
+      {
+        "label": "§0.13 — pagina PDF 7",
+        "cardIds": [
+          "cyber-c00-q057",
+          "cyber-c00-q058",
+          "cyber-c00-q059",
+          "cyber-c00-q060",
+          "cyber-c00-q061",
+          "cyber-c00-q062"
+        ]
+      },
+      {
+        "label": "§0.13.2 — pagina PDF 8",
+        "cardIds": [
+          "cyber-c00-q063",
+          "cyber-c00-q064",
+          "cyber-c00-q065"
+        ]
+      },
+      {
+        "label": "§0.14 — pagina PDF 8",
+        "cardIds": [
+          "cyber-c00-q066",
+          "cyber-c00-q067"
+        ]
+      },
+      {
+        "label": "§0.14.1 — pagina PDF 8",
+        "cardIds": [
+          "cyber-c00-q068",
+          "cyber-c00-q069",
+          "cyber-c00-q070"
+        ]
+      },
+      {
+        "label": "§0.14.2 — pagina PDF 8",
+        "cardIds": [
+          "cyber-c00-q071",
+          "cyber-c00-q072"
+        ]
+      },
+      {
+        "label": "§0.15 — pagina PDF 8",
+        "cardIds": [
+          "cyber-c00-q073",
+          "cyber-c00-q074",
+          "cyber-c00-q075",
+          "cyber-c00-q076"
+        ]
+      },
+      {
+        "label": "§0.15 — pagina PDF 9",
+        "cardIds": [
+          "cyber-c00-q077"
+        ]
+      },
+      {
+        "label": "§0.16 — pagina PDF 9",
+        "cardIds": [
+          "cyber-c00-q078",
+          "cyber-c00-q079",
+          "cyber-c00-q080",
+          "cyber-c00-q081",
+          "cyber-c00-q082",
+          "cyber-c00-q083",
+          "cyber-c00-q084",
+          "cyber-c00-q085",
+          "cyber-c00-q086",
+          "cyber-c00-q087"
+        ]
+      },
+      {
+        "label": "§0.16.5 — pagina PDF 9",
+        "cardIds": [
+          "cyber-c00-q088",
+          "cyber-c00-q089",
+          "cyber-c00-q090"
+        ]
+      },
+      {
+        "label": "§0.17 — pagina PDF 9",
+        "cardIds": [
+          "cyber-c00-q091",
+          "cyber-c00-q092",
+          "cyber-c00-q093"
+        ]
+      },
+      {
+        "label": "§0.17 — pagina PDF 10",
+        "cardIds": [
+          "cyber-c00-q094",
+          "cyber-c00-q095"
+        ]
+      },
+      {
+        "label": "§0.17.3 — pagina PDF 10",
+        "cardIds": [
+          "cyber-c00-q096",
+          "cyber-c00-q097",
+          "cyber-c00-q098"
+        ]
+      },
+      {
+        "label": "§0.18 — pagina PDF 10",
+        "cardIds": [
+          "cyber-c00-q099",
+          "cyber-c00-q100",
+          "cyber-c00-q101",
+          "cyber-c00-q102"
+        ]
+      },
+      {
+        "label": "§0.19 — pagina PDF 10",
+        "cardIds": [
+          "cyber-c00-q103",
+          "cyber-c00-q104",
+          "cyber-c00-q105",
+          "cyber-c00-q106"
+        ]
+      },
+      {
+        "label": "§0.19 — pagina PDF 11",
+        "cardIds": [
+          "cyber-c00-q107",
+          "cyber-c00-q108",
+          "cyber-c00-q109",
+          "cyber-c00-q110"
+        ]
+      },
+      {
+        "label": "§0.19.3 — pagina PDF 11",
+        "cardIds": [
+          "cyber-c00-q111",
+          "cyber-c00-q112",
+          "cyber-c00-q113",
+          "cyber-c00-q114",
+          "cyber-c00-q115",
+          "cyber-c00-q116",
+          "cyber-c00-q117"
+        ]
+      },
+      {
+        "label": "§0.19.5 — pagina PDF 11",
+        "cardIds": [
+          "cyber-c00-q118",
+          "cyber-c00-q119",
+          "cyber-c00-q120"
+        ]
+      },
+      {
+        "label": "§0.20 — pagina PDF 11",
+        "cardIds": [
+          "cyber-c00-q121",
+          "cyber-c00-q122",
+          "cyber-c00-q123"
+        ]
+      },
+      {
+        "label": "§0.20 — pagina PDF 12",
+        "cardIds": [
+          "cyber-c00-q124"
+        ]
+      },
+      {
+        "label": "§0.20.3 — pagina PDF 12",
+        "cardIds": [
+          "cyber-c00-q125",
+          "cyber-c00-q126",
+          "cyber-c00-q127",
+          "cyber-c00-q128",
+          "cyber-c00-q129"
+        ]
+      },
+      {
+        "label": "§0.21 — pagina PDF 12",
+        "cardIds": [
+          "cyber-c00-q130",
+          "cyber-c00-q131",
+          "cyber-c00-q132",
+          "cyber-c00-q133",
+          "cyber-c00-q134",
+          "cyber-c00-q135"
+        ]
+      },
+      {
+        "label": "§0.21 — pagina PDF 13",
+        "cardIds": [
+          "cyber-c00-q136",
+          "cyber-c00-q137",
+          "cyber-c00-q138",
+          "cyber-c00-q139",
+          "cyber-c00-q140",
+          "cyber-c00-q141"
+        ]
+      },
+      {
+        "label": "§0.22 — pagina PDF 13",
+        "cardIds": [
+          "cyber-c00-q142",
+          "cyber-c00-q143",
+          "cyber-c00-q144"
+        ]
+      },
+      {
+        "label": "§0.22 — pagina PDF 14",
+        "cardIds": [
+          "cyber-c00-q145",
+          "cyber-c00-q146",
+          "cyber-c00-q147",
+          "cyber-c00-q148",
+          "cyber-c00-q149",
+          "cyber-c00-q150",
+          "cyber-c00-q151",
+          "cyber-c00-q152"
+        ]
+      },
+      {
+        "label": "§0.23 — pagina PDF 14",
+        "cardIds": [
+          "cyber-c00-q153"
+        ]
+      },
+      {
+        "label": "§0.24 — pagina PDF 14",
+        "cardIds": [
+          "cyber-c00-q154",
+          "cyber-c00-q155",
+          "cyber-c00-q156",
+          "cyber-c00-q157",
+          "cyber-c00-q158",
+          "cyber-c00-q159",
+          "cyber-c00-q160"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "cyber-c00-q001",
+      "topicId": "cyber-c00-t01",
+      "question": "Perché è necessario conoscere il funzionamento delle reti prima di studiare la cybersecurity?",
+      "answer": "Perché per proteggere sistemi, applicazioni e dati bisogna capire come comunicano e in quali punti possono essere attaccati.",
+      "detail": "Ogni fase della comunicazione — individuare il server, stabilire il percorso, inviare una richiesta, elaborarla e ricevere la risposta — può essere bersaglio di intercettazione, modifica, impersonificazione, accesso abusivo o interruzione del servizio.",
+      "example": "L’accesso a un portale aziendale attraversa client, rete, server applicativo e talvolta database.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che la cybersecurity riguardi soltanto i dispositivi o l’installazione di antivirus.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.1, pagina PDF 2"
+    },
+    {
+      "id": "cyber-c00-q002",
+      "topicId": "cyber-c00-t01",
+      "question": "Quali sono, nell’ordine, le sei fasi essenziali di una richiesta client-server del manuale?",
+      "answer": "Individuazione del server; stabilimento del percorso di rete; invio della richiesta; elaborazione server, eventualmente con accesso a un database; restituzione della risposta; interpretazione dei dati da parte del client.",
+      "detail": "La sequenza serve come schema di riferimento per collegare a ogni passaggio i possibili rischi e le contromisure di sicurezza.",
+      "example": "Il browser individua un sito, invia una richiesta, riceve una pagina e la visualizza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Saltare la fase di individuazione del servizio o confondere l’elaborazione del server con il rendering del client.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.1, pagina PDF 2"
+    },
+    {
+      "id": "cyber-c00-q003",
+      "topicId": "cyber-c00-t01",
+      "question": "Quali rischi possono manifestarsi durante una comunicazione tra client e server?",
+      "answer": "Intercettazione, alterazione dei messaggi, impersonificazione, accesso non autorizzato e interruzione del servizio.",
+      "detail": "Non tutte le minacce colpiscono la stessa proprietà: leggere dati senza permesso compromette la riservatezza; modificarli l’integrità; impedire il servizio la disponibilità.",
+      "example": "Un aggressore legge dati in transito o impedisce a un server di rispondere.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ridurre tutti gli attacchi di rete alla sola intercettazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.1, pagina PDF 2"
+    },
+    {
+      "id": "cyber-c00-q004",
+      "topicId": "cyber-c00-t02",
+      "question": "Che cos’è una rete informatica e che cosa sono i nodi?",
+      "answer": "È un insieme di dispositivi interconnessi che comunicano e condividono dati, risorse e servizi mediante mezzi trasmissivi e protocolli. I dispositivi collegati sono i nodi.",
+      "detail": "Tra i nodi rientrano computer, smartphone, stampanti, server, router e altri apparati: non soltanto i dispositivi degli utenti.",
+      "example": "Due computer e un server sono collegati tramite uno switch nella medesima rete locale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che una rete richieda necessariamente Internet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.2, pagina PDF 2"
+    },
+    {
+      "id": "cyber-c00-q005",
+      "topicId": "cyber-c00-t02",
+      "question": "Quali tre elementi sono indispensabili per il funzionamento di una rete?",
+      "answer": "Dispositivi, mezzi trasmissivi e protocolli di comunicazione.",
+      "detail": "I dispositivi generano o inoltrano informazioni; i mezzi (Ethernet, fibra, onde radio) trasportano il segnale; i protocolli definiscono significato, formato e ordine dei messaggi. Il semplice collegamento fisico non permette di comunicare senza regole condivise.",
+      "example": "Un cavo collega due host, ma senza protocolli compatibili non basta per scambiare dati comprensibili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere mezzo trasmissivo con protocollo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.2, pagina PDF 2"
+    },
+    {
+      "id": "cyber-c00-q006",
+      "topicId": "cyber-c00-t02",
+      "question": "Che ruolo hanno server e switch nello schema della LAN del manuale?",
+      "answer": "Il server offre servizi; lo switch collega i dispositivi nella stessa rete locale e permette l’inoltro del traffico tra loro.",
+      "detail": "Lo schema mostra Computer A 192.168.1.10, Computer B 192.168.1.11 e Server 192.168.1.20 collegati tramite switch. Non introduce, da solo, una garanzia di autorizzazione o confidenzialità.",
+      "example": "L’accesso ai dati riservati del server richiede comunque controlli sui permessi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che l’essere nella stessa LAN implichi automaticamente il diritto di accesso ai servizi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.2, pagina PDF 2"
+    },
+    {
+      "id": "cyber-c00-q007",
+      "topicId": "cyber-c00-t02",
+      "question": "Che cos’è una LAN e dove viene tipicamente utilizzata?",
+      "answer": "Una Local Area Network è una rete collocata in un’area geografica limitata, come casa, ufficio o edificio aziendale.",
+      "detail": "Può utilizzare Ethernet o Wi-Fi per condividere servizi, risorse e dati.",
+      "example": "La rete interna di un ufficio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Definire una LAN in base al solo uso di cavi: una LAN può includere connessioni wireless.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.3.1–0.3.3, pagina PDF 2"
+    },
+    {
+      "id": "cyber-c00-q008",
+      "topicId": "cyber-c00-t02",
+      "question": "Che cos’è una WAN e che relazione ha con Internet?",
+      "answer": "Una Wide Area Network collega reti o dispositivi distribuiti su distanze maggiori, ad esempio sedi aziendali diverse.",
+      "detail": "Internet è l’interconnessione mondiale di reti autonome, non una singola WAN gestita da un unico soggetto.",
+      "example": "La connessione fra sedi aziendali di città differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che Internet è una rete privata amministrata da un unico ente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.3.1–0.3.3, pagina PDF 2"
+    },
+    {
+      "id": "cyber-c00-q009",
+      "topicId": "cyber-c00-t02",
+      "question": "Che cos’è una WLAN e quale particolare esigenza di sicurezza introduce?",
+      "answer": "È una rete locale wireless, normalmente basata su Wi-Fi, che trasmette mediante onde radio.",
+      "detail": "Offre mobilità, ma il segnale può essere ricevuto anche nelle vicinanze: sono quindi necessari meccanismi di autenticazione e crittografia adeguati.",
+      "example": "Una rete Wi-Fi aziendale accessibile nell’edificio e nelle aree limitrofe.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare il segnale radio sicuro soltanto perché il punto di accesso si trova dentro l’ufficio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.3.1–0.3.3, pagina PDF 2"
+    },
+    {
+      "id": "cyber-c00-q010",
+      "topicId": "cyber-c00-t02",
+      "question": "Come si distinguono LAN, WAN e WLAN?",
+      "answer": "LAN indica una rete locale; WAN una rete estesa; WLAN una rete locale realizzata con comunicazione radio.",
+      "detail": "LAN e WAN descrivono soprattutto ambito e collegamento delle reti; WLAN esplicita la tecnologia wireless usata nella rete locale.",
+      "example": "Una WLAN di un ufficio può accedere a una WAN per raggiungere una sede remota.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Contrapporre LAN e WLAN come categorie che non possano coesistere.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.3.1–0.3.3, pagina PDF 2"
+    },
+    {
+      "id": "cyber-c00-q011",
+      "topicId": "cyber-c00-t03",
+      "question": "Che cosa fa una scheda di rete (NIC) e che relazione ha con l’indirizzo MAC?",
+      "answer": "La Network Interface Card, fisica o virtuale, rende disponibile un’interfaccia di comunicazione. In Ethernet l’interfaccia usa indirizzi MAC nelle operazioni di collegamento.",
+      "detail": "Il MAC può essere modificato o falsificato e non costituisce, da solo, una prova attendibile dell’identità del dispositivo.",
+      "example": "Una macchina virtuale possiede una NIC virtuale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare il MAC immutabile o equivalente a un’autenticazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.4, pagina PDF 3"
+    },
+    {
+      "id": "cyber-c00-q012",
+      "topicId": "cyber-c00-t03",
+      "question": "Come inoltra il traffico uno switch Ethernet tradizionale?",
+      "answer": "Collega nodi della LAN e inoltra frame verso la porta associata al MAC di destinazione, apprendendo le associazioni MAC-porta.",
+      "detail": "Lavora principalmente al livello 2 OSI, il livello di collegamento dati.",
+      "example": "Se un server è collegato a una porta dello switch, lo switch può dirigere lì i frame a esso destinati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere il MAC di destinazione del frame con l’IP di destinazione del pacchetto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.4, pagina PDF 3"
+    },
+    {
+      "id": "cyber-c00-q013",
+      "topicId": "cyber-c00-t03",
+      "question": "Come funziona un router dal punto di vista dell’instradamento?",
+      "answer": "Collega reti IP diverse e inoltra pacchetti secondo l’IP di destinazione e la propria tabella di routing.",
+      "detail": "Opera principalmente al livello 3 OSI. Il manuale precisa che uno switch layer 3 può svolgere anche routing.",
+      "example": "Un router collega la rete 192.168.1.0/24 a reti esterne.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Supporre che ogni switch sia incapace di routing, senza distinguere gli switch layer 3.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.4, pagina PDF 3"
+    },
+    {
+      "id": "cyber-c00-q014",
+      "topicId": "cyber-c00-t03",
+      "question": "Qual è la differenza essenziale tra switch Ethernet tradizionale e router?",
+      "answer": "Lo switch inoltra frame nell’ambito della LAN basandosi sui MAC; il router inoltra pacchetti tra reti IP diverse basandosi sugli IP e sulle rotte.",
+      "detail": "Sono funzioni differenti, collocate prevalentemente ai livelli OSI 2 e 3. Apparati moderni possono combinarle.",
+      "example": "Due host della stessa LAN possono comunicare tramite switch; per una rete remota interviene il routing.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Rispondere genericamente che entrambi «connettono computer» senza spiegare livello e identificatori utilizzati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.4, pagina PDF 3"
+    },
+    {
+      "id": "cyber-c00-q015",
+      "topicId": "cyber-c00-t04",
+      "question": "Che cos’è un protocollo di comunicazione?",
+      "answer": "È un insieme condiviso di regole sul formato e significato dei messaggi, l’ordine degli scambi, la gestione degli errori e, quando previsto, avvio e chiusura della comunicazione.",
+      "detail": "Protocolli diversi risolvono problemi diversi: trasporto, indirizzamento, risoluzione nomi, interazione applicativa e sicurezza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostenere che un protocollo sia soltanto una convenzione sulle porte.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.5, pagina PDF 3"
+    },
+    {
+      "id": "cyber-c00-q016",
+      "topicId": "cyber-c00-t04",
+      "question": "Quali compiti svolgono Ethernet e IP?",
+      "answer": "Ethernet permette la comunicazione su collegamenti locali cablati; IP permette l’indirizzamento e l’inoltro di pacchetti tra reti.",
+      "detail": "Nel modello a livelli Ethernet è legato all’accesso/collegamento, IP al livello rete/Internet.",
+      "example": "Un frame Ethernet può trasportare un pacchetto IP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere l’inoltro locale Ethernet con il routing IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.5, pagina PDF 3"
+    },
+    {
+      "id": "cyber-c00-q017",
+      "topicId": "cyber-c00-t04",
+      "question": "Quali compiti svolgono TCP, UDP e DNS?",
+      "answer": "TCP trasporta un flusso di byte affidabile e ordinato; UDP trasporta datagrammi senza garanzie integrate di ordine o consegna; DNS risolve i nomi di dominio.",
+      "detail": "TCP e UDP sono protocolli di trasporto, mentre DNS è un servizio/protocollo applicativo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che DNS è un protocollo di routing o che UDP garantisce automaticamente la consegna.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.5, pagina PDF 3"
+    },
+    {
+      "id": "cyber-c00-q018",
+      "topicId": "cyber-c00-t04",
+      "question": "Quali compiti svolgono HTTP, TLS e IPSec?",
+      "answer": "HTTP definisce richieste e risposte applicative Web; TLS protegge crittograficamente una comunicazione; IPSec protegge comunicazioni a livello IP.",
+      "detail": "Il manuale contrappone il significato dei messaggi HTTP alla protezione del canale TLS e alla protezione a livello IP di IPSec.",
+      "example": "HTTP scambia risorse; HTTPS utilizza TLS per proteggere lo scambio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare HTTP e TLS intercambiabili o IPSec un linguaggio applicativo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.5, pagina PDF 3"
+    },
+    {
+      "id": "cyber-c00-q019",
+      "topicId": "cyber-c00-t05",
+      "question": "Cos’è il modello OSI e a che cosa serve nello studio della cybersecurity?",
+      "answer": "È un modello concettuale a sette livelli che rappresenta le funzioni di comunicazione; serve a classificare protocolli, minacce e difese.",
+      "detail": "Ogni livello offre servizi a quello superiore e utilizza quelli del livello inferiore. Non è una corrispondenza rigida per tutte le tecnologie contemporanee.",
+      "example": "Un firewall di rete e un controllo applicativo operano su informazioni di livelli diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare il modello OSI come l’unica pila protocollare concretamente eseguita da Internet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.6, pagina PDF 3"
+    },
+    {
+      "id": "cyber-c00-q020",
+      "topicId": "cyber-c00-t05",
+      "question": "Quali sono i sette livelli OSI in ordine dal più basso al più alto?",
+      "answer": "1 Fisico; 2 Collegamento dati; 3 Rete; 4 Trasporto; 5 Sessione; 6 Presentazione; 7 Applicazione.",
+      "detail": "È utile saperli ripetere anche nell’ordine inverso e associarvi una funzione concreta, soprattutto ai livelli 2, 3, 4 e 7.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Invertire rete e trasporto o confondere presentazione con applicazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.6, pagina PDF 3"
+    },
+    {
+      "id": "cyber-c00-q021",
+      "topicId": "cyber-c00-t05",
+      "question": "Qual è la funzione del livello 1, Fisico, del modello OSI?",
+      "answer": "Trasmettere segnali e bit usando caratteristiche elettriche, ottiche o radio e interfacce fisiche.",
+      "detail": "Si occupa della codifica fisica e della trasmissione dei segnali, non dell’indirizzamento IP o della semantica HTTP.",
+      "example": "Trasmissione di bit attraverso una fibra ottica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire al livello fisico la gestione delle porte TCP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.6, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q022",
+      "topicId": "cyber-c00-t05",
+      "question": "Qual è la funzione del livello 2, Collegamento dati, del modello OSI?",
+      "answer": "Organizzare i dati in frame e trasferirli sul collegamento o all’interno della LAN.",
+      "detail": "Ethernet e lo switch Ethernet tradizionale sono esempi collegati a questo livello; gli indirizzi MAC sono riferimenti locali.",
+      "example": "Invio di un frame Ethernet a uno switch.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere un frame Ethernet con un pacchetto IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.6, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q023",
+      "topicId": "cyber-c00-t05",
+      "question": "Qual è la funzione del livello 3, Rete, del modello OSI?",
+      "answer": "Fornire indirizzamento logico e instradamento dei pacchetti tra reti.",
+      "detail": "Il protocollo emblematico è IP; il router consulta le rotte per la destinazione.",
+      "example": "Trasferire un pacchetto dalla LAN dell’utente a una rete remota.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare il livello 3 responsabile di tutte le ritrasmissioni TCP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.6, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q024",
+      "topicId": "cyber-c00-t05",
+      "question": "Qual è la funzione del livello 4, Trasporto, del modello OSI?",
+      "answer": "Permettere la comunicazione tra processi e offrire servizi di trasporto come quelli di TCP e UDP.",
+      "detail": "TCP aggiunge ordinamento e affidabilità; UDP fornisce un trasporto di datagrammi più essenziale. I numeri di porta consentono di distinguere le comunicazioni.",
+      "example": "La porta 443 identifica comunemente un servizio HTTPS su TCP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire le porte TCP/UDP al livello IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.6, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q025",
+      "topicId": "cyber-c00-t05",
+      "question": "Che cosa fanno i livelli OSI 5 e 6, Sessione e Presentazione?",
+      "answer": "Il livello 5 organizza e controlla le sessioni; il livello 6 si occupa della rappresentazione e delle trasformazioni dei dati.",
+      "detail": "La loro separazione è concettuale. Nei sistemi moderni alcune funzioni vengono realizzate da protocolli che attraversano convenzionalmente più livelli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pretendere una corrispondenza uno-a-uno rigida di tutti i protocolli moderni con questi due livelli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.6, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q026",
+      "topicId": "cyber-c00-t05",
+      "question": "Qual è la funzione del livello 7, Applicazione, del modello OSI?",
+      "answer": "Riguarda i servizi di comunicazione impiegati dalle applicazioni.",
+      "detail": "HTTP e DNS sono esempi di protocolli che si collocano nel livello applicativo. Il livello non coincide con tutta l’interfaccia grafica del browser.",
+      "example": "Una richiesta HTTP formulata dal browser.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere il livello applicazione con il solo programma visibile all’utente.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.6, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q027",
+      "topicId": "cyber-c00-t05",
+      "question": "A quali livelli OSI si collocano prevalentemente Ethernet, IP, TCP/UDP, HTTP/DNS?",
+      "answer": "Ethernet al livello 2; IP al 3; TCP e UDP al 4; HTTP e DNS al 7.",
+      "detail": "Queste collocazioni sono riferimenti didattici, non una rappresentazione esaustiva di tutti i protocolli moderni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assegnare DNS al livello 3 perché restituisce indirizzi IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.6, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q028",
+      "topicId": "cyber-c00-t06",
+      "question": "Che cosa identifica la famiglia TCP/IP?",
+      "answer": "La famiglia di protocolli su cui si basa la comunicazione Internet.",
+      "detail": "Nella rappresentazione didattica del manuale è organizzata in quattro livelli: accesso alla rete, Internet, trasporto, applicazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere TCP/IP con il solo protocollo TCP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.7, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q029",
+      "topicId": "cyber-c00-t06",
+      "question": "Quali sono i quattro livelli del modello TCP/IP dal basso verso l’alto?",
+      "answer": "Accesso alla rete, Internet, Trasporto, Applicazione.",
+      "detail": "L’architettura a quattro livelli semplifica molte funzioni presentate separatamente nel modello OSI.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostenere che il modello TCP/IP abbia necessariamente sette livelli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.7, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q030",
+      "topicId": "cyber-c00-t06",
+      "question": "Come si confrontano i livelli TCP/IP con il modello OSI?",
+      "answer": "Accesso alla rete ≈ OSI 1–2; Internet ≈ OSI 3; Trasporto ≈ OSI 4; Applicazione ≈ OSI 5–7.",
+      "detail": "La corrispondenza è indicativa, non perfetta. TLS e QUIC possono combinare funzioni attribuite convenzionalmente a più livelli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Imporre una corrispondenza esatta per ogni protocollo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.7, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q031",
+      "topicId": "cyber-c00-t06",
+      "question": "Quali esempi di protocolli sono associati dal manuale ai livelli TCP/IP?",
+      "answer": "Accesso: Ethernet e Wi-Fi; Internet: IPv4 e IPv6; Trasporto: TCP e UDP; Applicazione: HTTP, DNS e SMTP.",
+      "detail": "Sapere questa classificazione aiuta a diagnosticare dove collocare un guasto o una protezione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Classificare IP e TCP nel medesimo livello.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.7, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q032",
+      "topicId": "cyber-c00-t07",
+      "question": "Che cos’è l’incapsulamento e che cosa succede in ricezione?",
+      "answer": "L’incapsulamento è l’aggiunta progressiva delle informazioni di controllo dei protocolli ai dati applicativi; alla ricezione avviene il decapsulamento.",
+      "detail": "Ogni livello aggiunge tipicamente un header; il collegamento può aggiungere anche un trailer. Il ricevente interpreta questi elementi e consegna i dati al processo corretto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che incapsulamento significhi automaticamente cifratura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.8, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q033",
+      "topicId": "cyber-c00-t07",
+      "question": "Qual è la sequenza di incapsulamento TCP/IP mostrata nel manuale?",
+      "answer": "Dati applicativi → segmento TCP → pacchetto IP → frame Ethernet.",
+      "detail": "Si aggiungono header TCP, header IP, header Ethernet e trailer FCS. Lo schema è: [ETH][IP][TCP][DATI][FCS].",
+      "example": "Una richiesta web viene incapsulata prima di essere trasmessa sul collegamento Ethernet.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Invertire segmento TCP e pacchetto IP oppure dimenticare il trailer FCS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.8, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q034",
+      "topicId": "cyber-c00-t07",
+      "question": "Qual è la differenza tra segmento, pacchetto e frame nel caso illustrato?",
+      "answer": "Segmento = dati con header TCP; pacchetto = header IP più segmento; frame = header Ethernet, pacchetto e trailer di collegamento.",
+      "detail": "I nomi fanno riferimento ai diversi livelli e ai metadati aggiunti per gestire trasporto, instradamento e collegamento locale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare i tre termini come sinonimi senza distinguere il livello.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.8, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q035",
+      "topicId": "cyber-c00-t07",
+      "question": "Perché i controlli di sicurezza non osservano tutti le stesse informazioni?",
+      "answer": "Perché operano a livelli differenti della comunicazione.",
+      "detail": "Un firewall tradizionale può filtrare indirizzi IP e porte; un controllo applicativo può analizzare, quando disponibile, il contenuto di richieste HTTP.",
+      "example": "Un filtraggio porta 443 non equivale a validare un parametro ricevuto da un’applicazione Web.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che il filtro sulle porte sostituisca controlli applicativi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.8, pagina PDF 4"
+    },
+    {
+      "id": "cyber-c00-q036",
+      "topicId": "cyber-c00-t08",
+      "question": "Che cos’è un indirizzo MAC e in quale ambito viene usato?",
+      "answer": "È un identificatore di interfaccia nel livello di collegamento dati, usato ad esempio da Ethernet per l’inoltro locale dei frame.",
+      "detail": "Il manuale riporta un MAC a 48 bit come 00:1A:2B:3C:4D:5E. Può essere falsificato: non costituisce prova crittografica d’identità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare il MAC come indirizzo IP o come credenziale autentica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.9, pagina PDF 5"
+    },
+    {
+      "id": "cyber-c00-q037",
+      "topicId": "cyber-c00-t08",
+      "question": "Qual è il compito dell’indirizzo IP?",
+      "answer": "Identificare la destinazione e permettere l’indirizzamento e l’instradamento dei pacchetti attraverso reti IP.",
+      "detail": "IPv4 è lungo 32 bit e IPv6 128 bit; l’indirizzo viene assegnato a un’interfaccia secondo la configurazione della rete.",
+      "example": "192.168.1.20 è un indirizzo IPv4.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere indirizzo IP con numero di porta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.9, pagina PDF 5"
+    },
+    {
+      "id": "cyber-c00-q038",
+      "topicId": "cyber-c00-t08",
+      "question": "Qual è il compito delle porte di trasporto?",
+      "answer": "Distinguere comunicazioni e servizi su un dispositivo a livello TCP o UDP.",
+      "detail": "Un singolo indirizzo IP può esporre più servizi con numeri di porta differenti; le porte più comuni sono convenzioni configurabili.",
+      "example": "192.168.1.20:443 combina IP e porta di un servizio HTTPS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare ogni applicazione irrevocabilmente associata a una sola porta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.9, pagina PDF 5"
+    },
+    {
+      "id": "cyber-c00-q039",
+      "topicId": "cyber-c00-t08",
+      "question": "Quali porte comuni vengono indicate per HTTP, HTTPS, DNS, SSH e SMTP?",
+      "answer": "HTTP/TCP 80; HTTPS/TCP 443; DNS/UDP e TCP 53; SSH/TCP 22; SMTP/TCP 25.",
+      "detail": "Sono porte frequenti, non vincoli universali: i servizi possono essere configurati in modi differenti. HTTP/3 è discusso in seguito come traffico su UDP 443.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermazione errata: DNS usa esclusivamente UDP 53.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.9, pagina PDF 5"
+    },
+    {
+      "id": "cyber-c00-q040",
+      "topicId": "cyber-c00-t08",
+      "question": "Come distinguere, in una risposta d’esame, MAC, IP e porta?",
+      "answer": "MAC = consegna locale del frame; IP = instradamento tra reti; porta = individuazione della comunicazione o del servizio a livello trasporto.",
+      "detail": "Gli identificatori cooperano, ma risolvono problemi distinti.",
+      "example": "Per raggiungere un web server remoto servono IP del server, porta del servizio e MAC del prossimo hop sul collegamento locale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che il MAC remoto attraversa Internet invariato lungo tutti i router.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.9, pagina PDF 5"
+    },
+    {
+      "id": "cyber-c00-q041",
+      "topicId": "cyber-c00-t09",
+      "question": "Che tipo di trasporto offre TCP?",
+      "answer": "Un flusso di byte affidabile e ordinato, orientato alla connessione.",
+      "detail": "Si basa su numeri di sequenza, ACK, ritrasmissioni, controllo del flusso e della congestione. Il suo overhead è in genere maggiore di UDP.",
+      "example": "HTTP/1.1, HTTP/2 e SSH utilizzano normalmente TCP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che il solo uso di TCP renda cifrati i dati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.10, pagina PDF 5"
+    },
+    {
+      "id": "cyber-c00-q042",
+      "topicId": "cyber-c00-t09",
+      "question": "Che tipo di trasporto offre UDP?",
+      "answer": "Un trasporto di datagrammi senza connessione e senza garanzie integrate di ordine, consegna o ritrasmissione.",
+      "detail": "Ha generalmente overhead inferiore a TCP; le applicazioni possono implementare sopra UDP ulteriori funzioni di affidabilità e sicurezza, come QUIC.",
+      "example": "DNS, applicazioni in tempo reale e QUIC sono esempi menzionati nel manuale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che un’applicazione basata su UDP non possa mai offrire affidabilità.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.10, pagina PDF 5"
+    },
+    {
+      "id": "cyber-c00-q043",
+      "topicId": "cyber-c00-t09",
+      "question": "Quali differenze hanno TCP e UDP quanto a connessione, ordine e overhead?",
+      "answer": "TCP richiede una connessione e offre affidabilità e ordine integrati, con overhead generalmente maggiore; UDP è senza connessione e non integra tali garanzie, con overhead tendenzialmente minore.",
+      "detail": "La scelta dipende dalle esigenze dell’applicazione; funzionalità ulteriori possono essere aggiunte sopra UDP.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Semplificare dicendo che UDP è sempre «insicuro» e TCP sempre «sicuro».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.10, pagina PDF 5"
+    },
+    {
+      "id": "cyber-c00-q044",
+      "topicId": "cyber-c00-t09",
+      "question": "Quali meccanismi rendono TCP affidabile?",
+      "answer": "Numeri di sequenza, riscontri ACK, ritrasmissioni e controlli di flusso e congestione.",
+      "detail": "Questi strumenti aiutano a offrire una sequenza ordinata di byte e a gestire perdite e pressione sulla rete, non a garantire la riservatezza crittografica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere affidabilità della consegna con integrità e riservatezza crittografiche.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.10, pagina PDF 5"
+    },
+    {
+      "id": "cyber-c00-q045",
+      "topicId": "cyber-c00-t09",
+      "question": "Qual è lo scopo del three-way handshake TCP?",
+      "answer": "Stabilire normalmente una connessione TCP e sincronizzare i numeri di sequenza prima dello scambio applicativo.",
+      "detail": "La sequenza comprende tre messaggi ed è distinta dall’eventuale handshake TLS successivo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerarlo un meccanismo di autenticazione crittografica del server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.10.1, pagina PDF 5"
+    },
+    {
+      "id": "cyber-c00-q046",
+      "topicId": "cyber-c00-t09",
+      "question": "Qual è l’ordine corretto dei messaggi del three-way handshake TCP?",
+      "answer": "Client → server: SYN; server → client: SYN-ACK; client → server: ACK.",
+      "detail": "Dopo il completamento della sequenza la connessione TCP può trasportare dati. Il riferimento standard TCP citato è RFC 9293.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Invertire la direzione del SYN-ACK oppure sostituire l’ACK finale con un secondo SYN.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.10.1, pagina PDF 6"
+    },
+    {
+      "id": "cyber-c00-q047",
+      "topicId": "cyber-c00-t09",
+      "question": "Che cos’è un attacco SYN Flood e perché sfrutta il meccanismo di apertura TCP?",
+      "answer": "È un attacco che produce numerose richieste di apertura non completate, consumando risorse dedicate alla gestione delle connessioni.",
+      "detail": "Sfrutta la fase di instaurazione di una connessione TCP: il server può impegnare risorse per richieste che non raggiungono l’ACK finale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere SYN Flood con un’intercettazione passiva del traffico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.10.1, pagina PDF 6"
+    },
+    {
+      "id": "cyber-c00-q048",
+      "topicId": "cyber-c00-t09",
+      "question": "Quali cinque distinzioni verifica la sezione di autovalutazione della Lezione 0.1?",
+      "answer": "Switch/router; necessità dei protocolli; IP/porta; affidabilità TCP; utilità del modello OSI.",
+      "detail": "Sono i concetti che il manuale considera basilari prima di passare a DNS, NAT e HTTP. Occorre saperli spiegare, non soltanto nominare.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Prepararsi soltanto a ricordare sigle senza chiarire i livelli e le funzioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.1, §0.11, pagina PDF 6"
+    },
+    {
+      "id": "cyber-c00-q049",
+      "topicId": "cyber-c00-t10",
+      "question": "Quale funzione svolge il protocollo IP nella comunicazione Internet?",
+      "answer": "Permette di identificare destinazioni e inoltrare pacchetti attraverso reti differenti, anche remote.",
+      "detail": "Il protocollo IP opera al livello Internet della pila TCP/IP, approssimativamente al livello 3 OSI.",
+      "example": "Un pacchetto IP viene trasferito dalla rete locale a quella del server remoto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere il routing IP con la risoluzione DNS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.12, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q050",
+      "topicId": "cyber-c00-t10",
+      "question": "Che cosa significa che IP offre un servizio «best effort»?",
+      "answer": "Significa che IP non garantisce di per sé consegna né ordinamento dei pacchetti.",
+      "detail": "Eventuali garanzie ulteriori possono essere implementate da protocolli di livello superiore, come TCP.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che un pacchetto IP venga sempre ritrasmesso automaticamente dal protocollo IP in caso di perdita.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.12, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q051",
+      "topicId": "cyber-c00-t10",
+      "question": "Qual è la lunghezza di IPv4 e IPv6 e come viene rappresentato un IPv4?",
+      "answer": "IPv4 usa 32 bit, rappresentati di norma da quattro ottetti decimali da 0 a 255; IPv6 usa 128 bit.",
+      "detail": "Un ottetto contiene 8 bit. La differenza amplia drasticamente lo spazio degli indirizzi in IPv6.",
+      "example": "192.168.1.10 è costituito da quattro ottetti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che IPv4 utilizzi quattro blocchi da 32 bit.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.12, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q052",
+      "topicId": "cyber-c00-t10",
+      "question": "Come si rappresenta in binario l’indirizzo IPv4 192.168.1.10 indicato dal manuale?",
+      "answer": "11000000.10101000.00000001.00001010.",
+      "detail": "Ciascun ottetto decimale corrisponde a esattamente otto bit. È un esempio utile per comprendere subnet mask e operazione AND.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dimenticare gli zeri iniziali in ciascun ottetto quando si rappresentano i 32 bit.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.12, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q053",
+      "topicId": "cyber-c00-t10",
+      "question": "Quanti indirizzi teorici sono rappresentabili con IPv4 e perché non sono tutti IP pubblici assegnabili?",
+      "answer": "2^32 = 4.294.967.296 combinazioni; parte dello spazio è riservata o destinata a usi speciali.",
+      "detail": "Il numero teorico delle combinazioni non coincide con quello degli host pubblici effettivamente raggiungibili.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "2^{32}=4\\,294\\,967\\,296"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Identificare 2^32 con il numero di dispositivi pubblici realmente utilizzabili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.12, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q054",
+      "topicId": "cyber-c00-t10",
+      "question": "Qual è la differenza tra indirizzo IPv4 pubblico e privato?",
+      "answer": "Un IP pubblico appartiene allo spazio normalmente instradabile su Internet; un IP privato è riservato all’uso interno e non è direttamente instradato sulla rete pubblica.",
+      "detail": "La raggiungibilità concreta di un IP pubblico dipende comunque dalle politiche di routing e dai controlli di accesso. Le reti private possono riutilizzare gli stessi indirizzi in organizzazioni differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Supporre che un indirizzo pubblico sia sempre raggiungibile o un indirizzo privato sia automaticamente sicuro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.12.2, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q055",
+      "topicId": "cyber-c00-t10",
+      "question": "Quali sono i tre intervalli IPv4 privati previsti da RFC 1918?",
+      "answer": "10.0.0.0/8; 172.16.0.0/12; 192.168.0.0/16.",
+      "detail": "Gli intervalli corrispondono a 10.0.0.0–10.255.255.255, 172.16.0.0–172.31.255.255 e 192.168.0.0–192.168.255.255.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che tutto l’intervallo 172.0.0.0/8 sia privato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.12.2, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q056",
+      "topicId": "cyber-c00-t10",
+      "question": "Perché l’uso di IP privati non è, da solo, una misura di sicurezza sufficiente?",
+      "answer": "Perché gli IP privati non impediscono malware, accessi malevoli interni, configurazioni insicure o traffico non autorizzato.",
+      "detail": "La non instradabilità diretta su Internet non sostituisce firewall, controlli degli accessi e gestione delle vulnerabilità.",
+      "example": "Un server interno 192.168.1.20 resta vulnerabile se le autorizzazioni sono errate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere il tipo di indirizzo con un sistema di autenticazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.12.2, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q057",
+      "topicId": "cyber-c00-t11",
+      "question": "Che cos’è una subnet e quale funzione svolge la subnet mask?",
+      "answer": "Una subnet è una porzione di rete IP identificata da un prefisso; in IPv4 la subnet mask distingue i bit del prefisso di rete da quelli residui.",
+      "detail": "L’indirizzo di rete si ottiene usando una AND bit a bit fra indirizzo IPv4 e maschera.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare la subnet mask come un secondo indirizzo di host.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.13, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q058",
+      "topicId": "cyber-c00-t11",
+      "question": "Che cosa significa la notazione CIDR /24?",
+      "answer": "Che il prefisso di rete comprende 24 bit e restano 8 bit per l’indirizzamento all’interno della subnet IPv4.",
+      "detail": "Per un indirizzo IPv4 la lunghezza complessiva è 32 bit. La maschera /24 equivale a 255.255.255.0.",
+      "example": "192.168.1.10/24 appartiene alla subnet 192.168.1.0/24.",
+      "formulas": [
+        {
+          "latex": "32-24=8"
+        },
+        {
+          "latex": "2^8=256"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Pensare che /24 significhi 24 host disponibili.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.13, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q059",
+      "topicId": "cyber-c00-t11",
+      "question": "Come si calcola la rete associata a 192.168.1.10/24?",
+      "answer": "L’operazione AND tra 192.168.1.10 e la maschera 255.255.255.0 produce 192.168.1.0.",
+      "detail": "I primi 24 bit appartengono al prefisso: l’ultimo ottetto viene azzerato nell’identificatore di rete.",
+      "example": "192.168.1.10/24 → rete 192.168.1.0/24.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiare l’IP dell’host con l’identificatore di rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.13, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q060",
+      "topicId": "cyber-c00-t11",
+      "question": "In una subnet IPv4 /24 quanti indirizzi totali e quanti host ordinari si possono normalmente usare?",
+      "answer": "256 indirizzi complessivi e, nella subnet ordinaria dell’esempio, 254 indirizzi assegnabili a host.",
+      "detail": "Si escludono normalmente identificatore di rete e broadcast. Il manuale sottolinea che questa regola non si applica indistintamente ai casi speciali come /31 punto-punto.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "2^{32-24}=256"
+        },
+        {
+          "latex": "256-2=254"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Applicare meccanicamente la sottrazione di due indirizzi in ogni subnet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.13, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q061",
+      "topicId": "cyber-c00-t11",
+      "question": "Quali sono rete, primo host, ultimo host e broadcast di 192.168.1.0/24?",
+      "answer": "Rete 192.168.1.0; primo host 192.168.1.1; ultimo host 192.168.1.254; broadcast 192.168.1.255.",
+      "detail": "Questi valori si riferiscono alla tipica subnet IPv4 /24 illustrata dal manuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assegnare 192.168.1.0 o 192.168.1.255 a un normale host nella configurazione didattica.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.13, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q062",
+      "topicId": "cyber-c00-t11",
+      "question": "A cosa serve l’operazione AND bit a bit fra IP e subnet mask?",
+      "answer": "A ricavare il prefisso, cioè l’indirizzo della rete a cui appartiene l’interfaccia.",
+      "detail": "Si applica bit a bit: il risultato è 1 soltanto se entrambi i bit sono 1. Consente di individuare se la destinazione è nella stessa subnet in base alla configurazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Calcolare la subnet mediante semplice somma di IP e maschera.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.13, pagina PDF 7"
+    },
+    {
+      "id": "cyber-c00-q063",
+      "topicId": "cyber-c00-t11",
+      "question": "Gli host 192.168.1.10/24 e 192.168.1.20/24 appartengono alla stessa subnet?",
+      "answer": "Sì, entrambi appartengono a 192.168.1.0/24.",
+      "detail": "Confrontando i prefissi calcolati con la maschera /24, la parte di rete coincide.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Decidere sulla sola somiglianza grafica degli indirizzi senza considerare il prefisso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.13.2, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q064",
+      "topicId": "cyber-c00-t11",
+      "question": "L’host 192.168.2.30/24 appartiene alla stessa subnet di 192.168.1.10/24?",
+      "answer": "No: il primo appartiene a 192.168.2.0/24, il secondo a 192.168.1.0/24.",
+      "detail": "Per comunicare tra reti differenti occorre un percorso di routing appropriato, normalmente attraverso un router.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Supporre che tutti gli indirizzi 192.168.x.x siano necessariamente nella stessa subnet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.13.2, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q065",
+      "topicId": "cyber-c00-t11",
+      "question": "Perché suddividere un’azienda in subnet non garantisce automaticamente l’isolamento sicuro?",
+      "answer": "Perché la separazione logica deve essere accompagnata da regole di routing, firewall e autorizzazione.",
+      "detail": "La subnet aiuta a organizzare i dispositivi e prepara i concetti di segmentazione e VLAN, ma non sostituisce i controlli sul traffico.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere segmentazione IP e enforcement della sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.13.2, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q066",
+      "topicId": "cyber-c00-t12",
+      "question": "Che cos’è il default gateway?",
+      "answer": "È il router a cui un host inoltra normalmente pacchetti quando non esiste una rotta più specifica verso la destinazione.",
+      "detail": "Non viene utilizzato automaticamente per tutti gli scambi: un host della stessa subnet può essere raggiunto direttamente sul collegamento.",
+      "example": "Un client 192.168.1.10/24 usa il gateway 192.168.1.1 per raggiungere un server Internet.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere default gateway con il resolver DNS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.14, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q067",
+      "topicId": "cyber-c00-t12",
+      "question": "Come decide un host se usare direttamente il collegamento locale o il gateway?",
+      "answer": "Consulta il prefisso di rete e la tabella di routing: per una destinazione locale usa il collegamento, per una remota usa una rotta appropriata e, in mancanza di una più specifica, il default gateway.",
+      "detail": "Il percorso concreto dipende dalla configurazione; il prefisso da solo non esaurisce tutte le scelte della tabella di routing.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che ogni pacchetto passa obbligatoriamente dal gateway.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.14, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q068",
+      "topicId": "cyber-c00-t12",
+      "question": "Che cos’è ARP e quale problema risolve in IPv4 su Ethernet?",
+      "answer": "ARP associa un indirizzo IPv4 presente sul collegamento locale al corrispondente indirizzo MAC.",
+      "detail": "L’host può usare ARP per trovare il MAC del proprio gateway prima di inviare un frame destinato a una rete remota.",
+      "example": "Il client cerca il MAC di 192.168.1.1, il gateway configurato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostenere che ARP risolva nomi DNS in indirizzi IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.14.1, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q069",
+      "topicId": "cyber-c00-t12",
+      "question": "Quando si raggiunge un server remoto via Ethernet, quali indirizzi di destinazione usa il primo frame e il pacchetto IP?",
+      "answer": "Il frame locale usa come MAC di destinazione quello del gateway; il pacchetto IP conserva come destinazione l’IP del server remoto.",
+      "detail": "Ai passaggi successivi i router rimuovono il frame locale e reincapsulano il pacchetto nel collegamento successivo. Gli IP possono essere tradotti se interviene NAT.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Impostare il MAC del server remoto nel primo frame Ethernet o affermare che il MAC resta invariato fino a Internet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.14.1, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q070",
+      "topicId": "cyber-c00-t12",
+      "question": "Che cosa cambia nei pacchetti quando un router passa da un collegamento al successivo?",
+      "answer": "Il router elimina l’incapsulamento del collegamento ricevuto e realizza un nuovo frame compatibile con il collegamento successivo.",
+      "detail": "Il pacchetto IP viene inoltrato in base alla destinazione e alle regole di routing; in presenza di NAT possono essere tradotti indirizzi e porte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che un unico frame Ethernet attraversi senza modifiche tutti i router Internet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.14.1, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q071",
+      "topicId": "cyber-c00-t12",
+      "question": "Che cos’è l’ARP spoofing o ARP poisoning?",
+      "answer": "Un tentativo di associare fraudolentemente un IP legittimo al MAC dell’attaccante sulla rete locale.",
+      "detail": "ARP tradizionale non autentica crittograficamente i messaggi. Se la manipolazione riesce, il traffico può essere deviato e facilitare un attacco Man-in-the-Middle.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Supporre che l’ARP spoofing richieda di conoscere la password del server remoto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.14.2, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q072",
+      "topicId": "cyber-c00-t12",
+      "question": "In quale contesto l’ARP spoofing può facilitare un attacco Man-in-the-Middle?",
+      "answer": "Quando l’attaccante è presente nella stessa rete locale e riesce a manipolare le associazioni IP-MAC usate dagli host.",
+      "detail": "Una falsa associazione relativa al gateway può indurre un dispositivo a inviare frame all’attaccante invece che al destinatario previsto.",
+      "example": "L’host associa 192.168.1.1 al MAC di un attaccante.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere ARP spoofing con DNS spoofing, che riguarda la risoluzione dei nomi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.14.2, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q073",
+      "topicId": "cyber-c00-t13",
+      "question": "A che cosa serve DHCP e quali parametri può fornire al client?",
+      "answer": "Configura automaticamente la rete assegnando, tra l’altro, IPv4, subnet mask, gateway, server DNS e durata della lease.",
+      "detail": "Riduce la configurazione manuale dei dispositivi. La lease delimita temporalmente l’assegnazione.",
+      "example": "Un client riceve IP 192.168.1.50, mask 255.255.255.0, gateway 192.168.1.1 e DNS 192.168.1.2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che DHCP serva soltanto ad assegnare un indirizzo IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.15, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q074",
+      "topicId": "cyber-c00-t13",
+      "question": "Che cosa significa DORA nel protocollo DHCPv4?",
+      "answer": "Discover, Offer, Request, Acknowledgment.",
+      "detail": "È la sequenza introduttiva tipica con cui un client cerca un server, riceve una proposta, la richiede e ottiene conferma.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Invertire Offer e Request oppure scambiare ACK per una nuova ricerca.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.15, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q075",
+      "topicId": "cyber-c00-t13",
+      "question": "Che cosa avviene nei passaggi DHCP Discover e Offer?",
+      "answer": "Discover: il client cerca un server DHCP, spesso mediante broadcast; Offer: un server propone una configurazione e un indirizzo.",
+      "detail": "Il Discover avvia la ricerca; l’Offer è una proposta e non ancora la conferma finale della lease.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che il client scelga un indirizzo pubblico arbitrario nel Discover.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.15, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q076",
+      "topicId": "cyber-c00-t13",
+      "question": "Che cosa avviene nei passaggi DHCP Request e Acknowledgment?",
+      "answer": "Request: il client richiede la configurazione proposta; Acknowledgment (ACK): il server conferma la lease e i parametri.",
+      "detail": "L’ACK chiude la procedura introduttiva di assegnazione descritta dal manuale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare l’Offer come assegnazione definitiva senza successivo scambio.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.15, pagina PDF 8"
+    },
+    {
+      "id": "cyber-c00-q077",
+      "topicId": "cyber-c00-t13",
+      "question": "Quale minaccia rappresenta un rogue DHCP server e quale misura cita il manuale?",
+      "answer": "Un server DHCP non autorizzato può comunicare un gateway o un resolver DNS malevolo; il DHCP snooping limita da quali porte sono accettabili determinate risposte DHCP.",
+      "detail": "Alterare la configurazione automatica può deviare o manipolare le comunicazioni dei client.",
+      "example": "Un falso DHCP comunica al client un DNS sotto controllo dell’attaccante.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere DHCP snooping con la cifratura del contenuto delle pagine Web.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.15, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q078",
+      "topicId": "cyber-c00-t14",
+      "question": "Che cos’è il DNS e perché non è una singola rubrica centralizzata?",
+      "answer": "Il Domain Name System è un sistema gerarchico e distribuito che associa nomi di dominio a record informativi, inclusi indirizzi IP.",
+      "detail": "Usa zone, deleghe, resolver e server autorevoli. Il client interroga normalmente un resolver ricorsivo.",
+      "example": "www.example.com può essere risolto in un indirizzo IPv4 attraverso un record A.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Presentare il DNS come un singolo server mondiale con tutti i nomi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.16, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q079",
+      "topicId": "cyber-c00-t14",
+      "question": "Quali elementi compongono il nome www.example.com secondo il manuale?",
+      "answer": "www è l’etichetta del servizio/host, example è il dominio e .com il TLD.",
+      "detail": "L’organizzazione gerarchica consente deleghe e amministrazione distribuita dei nomi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere il TLD .com con un indirizzo IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.16, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q080",
+      "topicId": "cyber-c00-t14",
+      "question": "Qual è il ruolo del resolver DNS ricorsivo?",
+      "answer": "Riceve la richiesta del client e cerca la risposta, eventualmente usando cache o interrogando altri server DNS.",
+      "detail": "Se la cache non contiene dati validi, il resolver può consultare root, TLD e server autorevole, quindi restituire il record ottenuto al client.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che il browser interroga sempre direttamente il server autorevole.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.16, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q081",
+      "topicId": "cyber-c00-t14",
+      "question": "Quali sono le fasi essenziali di una risoluzione DNS senza cache valida?",
+      "answer": "Il client chiede al resolver; il resolver ottiene deleghe da root e TLD e interroga il server autorevole; restituisce il record al client.",
+      "detail": "Il percorso concreto può ridursi per effetto del caching o variare a causa di alias e altre funzionalità DNS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostenere che tutte le interrogazioni root, TLD e autorevole avvengano obbligatoriamente a ogni accesso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.16, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q082",
+      "topicId": "cyber-c00-t14",
+      "question": "Che differenza c’è tra server DNS root, TLD e autorevole?",
+      "answer": "Il root orienta verso i TLD; il server TLD orienta verso la zona delegata; il server autorevole fornisce i record della zona che gestisce.",
+      "detail": "È la struttura gerarchica descritta nella Lezione 0.2 per la ricerca di nomi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare root e autorevole come sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.16, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q083",
+      "topicId": "cyber-c00-t14",
+      "question": "Che cosa indicano i record DNS A e AAAA?",
+      "answer": "A associa un nome a un indirizzo IPv4; AAAA associa un nome a un indirizzo IPv6.",
+      "detail": "I record possono essere interrogati dal resolver e restituiti all’applicazione.",
+      "example": "www.example.com può avere sia un record A sia uno AAAA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che AAAA sia un alias di un altro nome.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.16, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q084",
+      "topicId": "cyber-c00-t14",
+      "question": "Che cosa indicano i record DNS CNAME, MX e NS?",
+      "answer": "CNAME è un alias verso un altro nome DNS; MX identifica server di posta; NS individua server autorevoli.",
+      "detail": "Risolvono funzioni differenti: alias, posta elettronica e delega/autorità DNS.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Utilizzare MX per indicare direttamente un servizio Web.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.16, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q085",
+      "topicId": "cyber-c00-t14",
+      "question": "Che cosa serve a registrare il record DNS TXT?",
+      "answer": "Testo utilizzato per molteplici finalità applicative.",
+      "detail": "È diverso dai record A/AAAA per indirizzamento, CNAME per alias, MX per la posta e NS per l’autorità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Assumere che un record TXT sia necessariamente un indirizzo IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.16, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q086",
+      "topicId": "cyber-c00-t14",
+      "question": "Che cos’è il TTL DNS e perché è rilevante?",
+      "answer": "Il Time To Live regola per quanto tempo le informazioni DNS possono essere mantenute in cache.",
+      "detail": "Il caching riduce tempi e carico di interrogazione; il TTL condiziona la durata della validità delle informazioni conservate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere TTL DNS con la durata di una lease DHCP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.16, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q087",
+      "topicId": "cyber-c00-t14",
+      "question": "Qual è la porta utilizzata frequentemente dal DNS e quali protocolli di trasporto può usare?",
+      "answer": "La porta 53, su UDP e su TCP.",
+      "detail": "La scelta del trasporto dipende dal contesto e dal tipo di scambio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Rispondere «UDP soltanto».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.16, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q088",
+      "topicId": "cyber-c00-t14",
+      "question": "Che cosa distingue DNS spoofing e DNS cache poisoning?",
+      "answer": "Lo spoofing consiste nel fornire informazioni DNS false; il cache poisoning è la contaminazione di una cache DNS con dati malevoli.",
+      "detail": "Entrambi possono deviare un client verso informazioni non attendibili, ma il secondo coinvolge esplicitamente l’alterazione di una cache.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiare una risposta DNS falsa con un normale errore HTTP 404.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.16.5, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q089",
+      "topicId": "cyber-c00-t14",
+      "question": "Quali proprietà offre DNSSEC e che cosa non offre?",
+      "answer": "Permette di verificare autenticità dell’origine e integrità di dati DNS firmati; non cifra le interrogazioni DNS.",
+      "detail": "L’obiettivo è diverso dalla protezione del canale client-resolver.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermazione errata: «DNSSEC cifra il traffico DNS».",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.16.5, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q090",
+      "topicId": "cyber-c00-t14",
+      "question": "Che cosa proteggono DNS over TLS e DNS over HTTPS e in che cosa si distinguono da DNSSEC?",
+      "answer": "DoT e DoH possono proteggere il canale fra client e resolver; DNSSEC verifica autenticità e integrità dei dati DNS firmati.",
+      "detail": "Sono meccanismi complementari che affrontano problemi di sicurezza diversi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare DoH come un sostituto automatico delle firme DNSSEC.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.16.5, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q091",
+      "topicId": "cyber-c00-t15",
+      "question": "Che cos’è NAT e quale problema affronta nella comunicazione IPv4?",
+      "answer": "Network Address Translation è la traduzione di informazioni di indirizzamento quando un pacchetto attraversa un dispositivo.",
+      "detail": "È usato frequentemente per consentire a dispositivi con indirizzi IPv4 privati di comunicare verso destinazioni pubbliche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere NAT con un protocollo di cifratura dei pacchetti.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.17, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q092",
+      "topicId": "cyber-c00-t15",
+      "question": "Qual è la differenza tra Basic NAT e NAPT/PAT?",
+      "answer": "Basic NAT traduce l’indirizzo IP; NAPT/PAT traduce anche identificatori del trasporto, come le porte TCP/UDP.",
+      "detail": "La traduzione delle porte permette a più client interni di condividere un medesimo indirizzo IPv4 esterno mantenendo distinti i flussi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostenere che NAT e PAT modifichino obbligatoriamente sempre le stesse informazioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.17, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q093",
+      "topicId": "cyber-c00-t15",
+      "question": "Perché la traduzione NAPT/PAT permette a due dispositivi di condividere un IP esterno?",
+      "answer": "Perché il dispositivo conserva associazioni fra le coppie IP:porta interne e porte esterne differenti sullo stesso IPv4 pubblico.",
+      "detail": "Il manuale mostra, per esempio, 192.168.1.10:51500 → 203.0.113.5:40001 e 192.168.1.11:51501 → 203.0.113.5:40002.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che due client debbano usare la stessa porta esterna perché condividono l’IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.17, pagina PDF 9"
+    },
+    {
+      "id": "cyber-c00-q094",
+      "topicId": "cyber-c00-t15",
+      "question": "Come viene instradata la risposta verso il client corretto quando è stato usato NAPT?",
+      "answer": "Il dispositivo NAT consulta la tabella delle associazioni e ripristina la destinazione interna IP:porta corrispondente.",
+      "detail": "Le porte esterne differenti consentono di discriminare flussi provenienti da dispositivi interni diversi.",
+      "example": "La risposta per 203.0.113.5:40001 ritorna al flusso 192.168.1.10:51500.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere la mappatura NAPT con il record DNS del servizio remoto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.17, pagina PDF 10"
+    },
+    {
+      "id": "cyber-c00-q095",
+      "topicId": "cyber-c00-t15",
+      "question": "Perché nel caso del manuale l’indirizzo 203.0.113.5 non deve essere trattato come un vero IP pubblico assegnato?",
+      "answer": "Perché appartiene a un intervallo riservato agli esempi e alla documentazione.",
+      "detail": "Il manuale impiega 203.0.113.x anche nell’esempio end-to-end per illustrare la comunicazione senza indicare un host pubblico reale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Cercare di contattare 203.0.113.5 come se rappresentasse un servizio reale del caso.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.17, pagina PDF 10"
+    },
+    {
+      "id": "cyber-c00-q096",
+      "topicId": "cyber-c00-t15",
+      "question": "Qual è la differenza fondamentale tra NAT e firewall?",
+      "answer": "NAT traduce indirizzi ed eventualmente porte; un firewall applica regole per ammettere o bloccare flussi.",
+      "detail": "Le due funzioni possono essere offerte dallo stesso router, ma non coincidono dal punto di vista della sicurezza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che NAT garantisce automaticamente lo stesso controllo degli accessi di un firewall.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.17.3, pagina PDF 10"
+    },
+    {
+      "id": "cyber-c00-q097",
+      "topicId": "cyber-c00-t15",
+      "question": "Che cos’è il port forwarding?",
+      "answer": "È la configurazione che inoltra traffico ricevuto su un indirizzo e una porta esterni verso un servizio interno.",
+      "detail": "Consente di raggiungere dall’esterno un servizio dietro un dispositivo di traduzione; può aumentarne l’esposizione se mancano controlli adeguati.",
+      "example": "Traffico in ingresso su una porta esterna viene inoltrato al server interno previsto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare il port forwarding privo di rischi perché il server usa un indirizzo privato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.17.3, pagina PDF 10"
+    },
+    {
+      "id": "cyber-c00-q098",
+      "topicId": "cyber-c00-t15",
+      "question": "Perché port forwarding e indirizzi privati non bastano a proteggere un servizio esposto?",
+      "answer": "Perché il traffico inoltrato può raggiungere un servizio vulnerabile: servono controlli d’accesso, configurazione sicura e regole di protezione.",
+      "detail": "La natura privata dell’IP interno non ne impedisce l’esposizione tramite una mappatura di porte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere impossibile un accesso dall’esterno a un servizio su rete privata quando è configurato un inoltro.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.17.3, pagina PDF 10"
+    },
+    {
+      "id": "cyber-c00-q099",
+      "topicId": "cyber-c00-t16",
+      "question": "Che cosa caratterizza il modello client-server?",
+      "answer": "Un client avvia richieste verso un server che offre un servizio; il server le elabora e restituisce risposte.",
+      "detail": "Nel Web il browser è un client e il web server riceve richieste HTTP. L’elaborazione può coinvolgere servizi e database.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che client e server debbano essere due computer fisici dedicati.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.18, pagina PDF 10"
+    },
+    {
+      "id": "cyber-c00-q100",
+      "topicId": "cyber-c00-t16",
+      "question": "Quali sono i tre livelli logici tipici di un’applicazione enterprise?",
+      "answer": "Presentation layer, application layer e data layer.",
+      "detail": "Presentation ospita browser e interfaccia; application gestisce server applicativo e business logic; data comprende DBMS e persistenza. Sono livelli logici e non necessariamente tre macchine separate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere livelli logici dell’applicazione con livelli fisici OSI.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.18, pagina PDF 10"
+    },
+    {
+      "id": "cyber-c00-q101",
+      "topicId": "cyber-c00-t16",
+      "question": "Quali rischi possono collocarsi ai diversi livelli di un’applicazione client-server?",
+      "answer": "XSS nel browser, difetti di autorizzazione nella logica applicativa, SQL injection e accessi impropri verso il database, intercettazione durante la comunicazione.",
+      "detail": "La sicurezza va progettata lungo tutto il percorso della richiesta, non soltanto su un livello.",
+      "example": "Una query parametrizzata riguarda un rischio differente dalla cifratura del canale TLS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Supporre che HTTPS elimini SQL injection, XSS o autorizzazioni errate.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.18, pagina PDF 10"
+    },
+    {
+      "id": "cyber-c00-q102",
+      "topicId": "cyber-c00-t16",
+      "question": "Perché un’architettura applicativa a tre livelli non implica tre macchine fisiche?",
+      "answer": "Perché distingue responsabilità logiche (presentazione, applicazione, dati), che possono essere distribuite fisicamente in modi diversi.",
+      "detail": "La distinzione è utile per ragionare su funzioni e controlli anche quando più componenti sono ospitati nello stesso sistema.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare un tier logico come un dispositivo obbligatoriamente separato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.18, pagina PDF 10"
+    },
+    {
+      "id": "cyber-c00-q103",
+      "topicId": "cyber-c00-t17",
+      "question": "Che cos’è HTTP e quale schema di comunicazione utilizza?",
+      "answer": "Hypertext Transfer Protocol è un protocollo applicativo basato su richieste del client e risposte del server.",
+      "detail": "Definisce la semantica dello scambio di risorse e metadati sul Web; i principi sono richiamati dal manuale con RFC 9110.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere HTTP con un protocollo di trasporto o con un meccanismo di cifratura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19, pagina PDF 10"
+    },
+    {
+      "id": "cyber-c00-q104",
+      "topicId": "cyber-c00-t17",
+      "question": "Come si scompone la richiesta «GET /prodotti/125 HTTP/1.1»?",
+      "answer": "GET è il metodo; /prodotti/125 è il percorso della risorsa; HTTP/1.1 indica la versione della rappresentazione testuale.",
+      "detail": "Gli header Host e Accept specificano rispettivamente il nome del server e il formato di risposta preferito.",
+      "example": "Host: www.example.com e Accept: application/json.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che /prodotti/125 rappresenta un indirizzo IP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19, pagina PDF 10"
+    },
+    {
+      "id": "cyber-c00-q105",
+      "topicId": "cyber-c00-t17",
+      "question": "Che ruolo hanno gli header Host e Accept nell’esempio HTTP del manuale?",
+      "answer": "Host individua il nome del destinatario; Accept comunica il tipo di rappresentazione desiderato dal client.",
+      "detail": "Il server interpreta questi metadati insieme alla richiesta. Non sono metodi HTTP e non costituiscono, da soli, un’autorizzazione.",
+      "example": "Accept: application/json richiede preferibilmente una risposta JSON.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere Accept con Content-Type della risposta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19, pagina PDF 10"
+    },
+    {
+      "id": "cyber-c00-q106",
+      "topicId": "cyber-c00-t17",
+      "question": "HTTP/2 e HTTP/3 cambiano il significato dei metodi HTTP?",
+      "answer": "No: usano meccanismi differenti per rappresentare e trasportare i messaggi, conservando la semantica generale delle richieste e delle risposte HTTP.",
+      "detail": "Il manuale chiarisce che l’esempio testuale è un messaggio HTTP/1.1; non si deve trattare la sintassi visualizzata come identica per tutte le versioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Credere che GET e POST abbiano semantiche del tutto diverse in HTTP/2 e HTTP/3.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19, pagina PDF 10"
+    },
+    {
+      "id": "cyber-c00-q107",
+      "topicId": "cyber-c00-t17",
+      "question": "Qual è la funzione del metodo HTTP GET?",
+      "answer": "Richiedere una rappresentazione della risorsa.",
+      "detail": "Nell’esempio la risorsa è /prodotti/125; la richiesta può includere header che precisano host e formato atteso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare GET un metodo per cancellare una risorsa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q108",
+      "topicId": "cyber-c00-t17",
+      "question": "Qual è la funzione del metodo HTTP POST?",
+      "answer": "Inviare dati affinché la risorsa li elabori.",
+      "detail": "Il manuale lo presenta come metodo di trasmissione di dati per elaborazione applicativa, distinto dalla lettura della rappresentazione con GET.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostenere che POST garantisca di per sé cifratura o autenticazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q109",
+      "topicId": "cyber-c00-t17",
+      "question": "Qual è la differenza tra i metodi HTTP PUT e PATCH?",
+      "answer": "PUT crea o sostituisce lo stato di una risorsa secondo la rappresentazione; PATCH richiede una modifica parziale.",
+      "detail": "Le relative operazioni dipendono dalle regole dell’applicazione e dalle autorizzazioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere la sostituzione con una modifica necessariamente parziale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q110",
+      "topicId": "cyber-c00-t17",
+      "question": "A che cosa servono i metodi HTTP DELETE, HEAD e OPTIONS?",
+      "answer": "DELETE richiede la rimozione; HEAD richiede metadati senza il corpo di risposta; OPTIONS richiede le opzioni di comunicazione.",
+      "detail": "I metodi definiscono operazioni applicative, non i permessi di chi le invoca.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che il solo nome DELETE autorizzi il richiedente a eliminare qualunque risorsa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q111",
+      "topicId": "cyber-c00-t17",
+      "question": "Quali parti compongono una risposta HTTP/1.1?",
+      "answer": "Una riga di stato, gli header e un eventuale corpo (body).",
+      "detail": "Il codice di stato comunica l’esito; gli header descrivono metadati come Content-Type; il body può contenere dati, per esempio JSON.",
+      "example": "HTTP/1.1 200 OK; Content-Type: application/json; body con id, nome e stato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere Content-Type con lo stato della richiesta.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19.3, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q112",
+      "topicId": "cyber-c00-t17",
+      "question": "Che cosa indica l’header «Content-Type: application/json» in una risposta?",
+      "answer": "Che il corpo della risposta contiene una rappresentazione JSON.",
+      "detail": "Nell’esempio il body racchiude un prodotto con id 125, nome «Prodotto Energia» e stato «ATTIVO».",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare application/json come un codice di stato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19.3, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q113",
+      "topicId": "cyber-c00-t17",
+      "question": "Qual è il significato delle cinque classi di codici HTTP 1xx, 2xx, 3xx, 4xx, 5xx?",
+      "answer": "1xx informazioni provvisorie; 2xx successo; 3xx reindirizzamento o ulteriore azione; 4xx problema attribuibile alla richiesta client; 5xx problema lato server.",
+      "detail": "Esempi del manuale: 100 Continue, 200 OK/201 Created, 301 Moved Permanently, 400/401/403/404 e 500 Internal Server Error.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire i 4xx al server e i 5xx al client.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19.3, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q114",
+      "topicId": "cyber-c00-t17",
+      "question": "Qual è la differenza tra 200 OK e 201 Created?",
+      "answer": "200 indica richiesta riuscita; 201 indica che una risorsa è stata creata.",
+      "detail": "Entrambi appartengono alla classe 2xx dei risultati di successo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare 201 come un errore di autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19.3, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q115",
+      "topicId": "cyber-c00-t17",
+      "question": "Qual è la differenza tra HTTP 400 e 404?",
+      "answer": "400 segnala un problema nella richiesta del client; 404 indica che la risorsa non è stata trovata o non viene rivelata.",
+      "detail": "Sono entrambi codici della classe 4xx, ma descrivono situazioni differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Associare 404 a un errore interno inatteso del server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19.3, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q116",
+      "topicId": "cyber-c00-t17",
+      "question": "Qual è la differenza tra HTTP 401 e 403 in relazione alla sicurezza?",
+      "answer": "401 riguarda un’autenticazione necessaria o non valida; 403 indica che il server rifiuta l’operazione.",
+      "detail": "La distinzione aiuta a non confondere autenticazione (verifica dell’identità) e autorizzazione (permesso di compiere un’azione).",
+      "example": "Un utente privo di credenziali valide può ricevere 401; una richiesta rifiutata dalla policy può ricevere 403.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che 401 e 403 sono sinonimi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19.3, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q117",
+      "topicId": "cyber-c00-t17",
+      "question": "Che cosa significa il codice HTTP 500?",
+      "answer": "Un errore inatteso lato server.",
+      "detail": "Appartiene alla classe 5xx, distinta dai codici 4xx normalmente associati alla richiesta del client.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Interpretare 500 come prova certa di un tentativo di accesso non autorizzato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19.3, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q118",
+      "topicId": "cyber-c00-t17",
+      "question": "Che cosa significa che HTTP è stateless?",
+      "answer": "Che il protocollo non richiede di interpretare una richiesta sulla base dello stato applicativo conservato da richieste precedenti.",
+      "detail": "Le applicazioni possono comunque realizzare sessioni tramite cookie, token e altri identificatori.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che un sito HTTP non possa mai avere login o sessioni.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19.5, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q119",
+      "topicId": "cyber-c00-t17",
+      "question": "Come possono esistere sessioni applicative se HTTP è stateless?",
+      "answer": "L’applicazione usa cookie, token o identificatori per collegare richieste distinte a un contesto utente.",
+      "detail": "Lo stato viene gestito da meccanismi applicativi sopra la semantica HTTP, non da una proprietà obbligatoria di ogni richiesta HTTP.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiare lo stato applicativo con la connessione TCP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19.5, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q120",
+      "topicId": "cyber-c00-t17",
+      "question": "Perché il furto di un identificatore di sessione valido costituisce un rischio?",
+      "answer": "Perché può permettere tentativi di impersonificazione della sessione associata al legittimo utente.",
+      "detail": "La protezione e la gestione dei cookie e dei token sono quindi importanti anche quando la comunicazione è crittograficamente protetta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che un token rubato diventi innocuo solo perché il sito usa HTTPS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.19.5, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q121",
+      "topicId": "cyber-c00-t18",
+      "question": "Perché HTTP non cifrato non garantisce la riservatezza e l’integrità dei dati trasmessi?",
+      "answer": "Perché il protocollo HTTP, da solo, non aggiunge una protezione crittografica del canale.",
+      "detail": "Il contenuto potrebbe essere intercettato o modificato durante il transito se mancano ulteriori protezioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare l’uso della porta 80 una forma di cifratura.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.20, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q122",
+      "topicId": "cyber-c00-t18",
+      "question": "Che cosa aggiunge HTTPS alla comunicazione HTTP?",
+      "answer": "Una protezione crittografica normalmente basata su TLS: riservatezza, integrità del canale e, di norma, autenticazione del server.",
+      "detail": "HTTPS riguarda il canale tra gli endpoint e non sana automaticamente le vulnerabilità nella logica applicativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che HTTPS garantisca assenza di XSS, SQL injection e errori di autorizzazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.20, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q123",
+      "topicId": "cyber-c00-t18",
+      "question": "Quali proprietà di sicurezza offre TLS secondo il Capitolo 0?",
+      "answer": "Protegge confidenzialità e integrità della comunicazione e autentica normalmente il server tramite certificati e meccanismi crittografici.",
+      "detail": "L’identità del server va verificata dal client; la crittografia del canale non equivale alla verifica di tutte le autorizzazioni nell’app.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che TLS protegga ogni dato dopo che il server lo ha decifrato e memorizzato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.20, pagina PDF 11"
+    },
+    {
+      "id": "cyber-c00-q124",
+      "topicId": "cyber-c00-t18",
+      "question": "Quali sono le porte comunemente associate a HTTP e HTTPS, e quale eccezione cita il manuale?",
+      "answer": "HTTP su TCP 80; HTTPS su TCP 443; HTTP/3 usa spesso UDP 443.",
+      "detail": "HTTP/3 opera su QUIC sopra UDP e integra TLS 1.3, perciò non è corretto affermare che ogni HTTPS debba necessariamente usare TCP.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che HTTPS utilizza esclusivamente TCP in qualsiasi versione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.20, pagina PDF 12"
+    },
+    {
+      "id": "cyber-c00-q125",
+      "topicId": "cyber-c00-t18",
+      "question": "Quali passaggi compie un browser per stabilire una comunicazione HTTPS nell’esempio su TCP?",
+      "answer": "Interpreta URL; esegue DNS se necessario; instaura TCP; avvia TLS handshake; verifica certificato e identità del server; deriva chiavi; scambia HTTP nel canale TLS.",
+      "detail": "La procedura descrive il caso didattico HTTP/1.1 su TCP. Il flusso concreto può differire con versioni e protocolli moderni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Fare precedere la richiesta HTTP protetta alla negoziazione TLS nel caso didattico.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.20.3, pagina PDF 12"
+    },
+    {
+      "id": "cyber-c00-q126",
+      "topicId": "cyber-c00-t18",
+      "question": "Qual è la differenza fra handshake TCP e handshake TLS?",
+      "answer": "Il TCP handshake stabilisce la connessione di trasporto; il TLS handshake negozia la protezione crittografica e verifica normalmente l’identità del server.",
+      "detail": "Nel caso HTTP/1.1 su TCP sono passaggi successivi con scopi distinti: affidabilità del trasporto contro confidenzialità/integrità e autenticazione del canale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere SYN/SYN-ACK/ACK con i messaggi di certificazione TLS.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.20.3, pagina PDF 12"
+    },
+    {
+      "id": "cyber-c00-q127",
+      "topicId": "cyber-c00-t18",
+      "question": "Come cooperano crittografia asimmetrica e simmetrica nelle connessioni TLS 1.3 descritte dal manuale?",
+      "answer": "Strumenti asimmetrici supportano autenticazione e accordo sulle chiavi; chiavi simmetriche proteggono efficientemente il traffico applicativo.",
+      "detail": "La spiegazione approfondita del handshake TLS è demandata ai capitoli successivi; qui importa distinguere negoziazione e protezione dei dati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che tutti i contenuti di una connessione HTTPS siano cifrati direttamente con la chiave pubblica del certificato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.20.3, pagina PDF 12"
+    },
+    {
+      "id": "cyber-c00-q128",
+      "topicId": "cyber-c00-t18",
+      "question": "Qual è il ruolo di QUIC in HTTP/3?",
+      "answer": "HTTP/3 utilizza QUIC sopra UDP; QUIC integra TLS 1.3 per la protezione della comunicazione.",
+      "detail": "Questo è il motivo per cui la formula «HTTPS = HTTP su TCP 443» non descrive ogni versione moderna.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare QUIC come sinonimo di TCP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.20.3, pagina PDF 12"
+    },
+    {
+      "id": "cyber-c00-q129",
+      "topicId": "cyber-c00-t18",
+      "question": "Che cosa non permette di concludere la presenza di HTTPS?",
+      "answer": "Che l’applicazione o il server siano esenti da vulnerabilità, controlli autorizzativi errati, XSS o SQL injection.",
+      "detail": "HTTPS protegge il trasporto crittografico tra endpoint; la sicurezza dell’applicazione richiede ulteriori misure ai livelli interessati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare il lucchetto del browser una certificazione della qualità di tutto il software.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.20.3, pagina PDF 12"
+    },
+    {
+      "id": "cyber-c00-q130",
+      "topicId": "cyber-c00-t19",
+      "question": "Quali parametri di rete descrivono il client e il servizio nell’esempio completo di navigazione HTTPS?",
+      "answer": "Client 192.168.1.10/24; gateway 192.168.1.1; resolver DNS 192.168.1.2; host www.example.com; server 203.0.113.20; HTTPS porta 443.",
+      "detail": "Nell’esempio il NAT usa l’IP esterno 203.0.113.5. Gli IP 203.0.113.x sono destinati a documentazione e non identificano servizi reali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Scambiare il gateway 192.168.1.1 con il resolver 192.168.1.2.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.21, pagina PDF 12"
+    },
+    {
+      "id": "cyber-c00-q131",
+      "topicId": "cyber-c00-t19",
+      "question": "Quali sono le undici fasi dell’apertura di https://www.example.com secondo il caso del manuale?",
+      "answer": "1 URL; 2 DNS; 3 routing; 4 ARP; 5 routing e NAPT; 6 TCP handshake; 7 TLS handshake; 8 richiesta HTTP; 9 elaborazione server; 10 risposta HTTP; 11 rendering.",
+      "detail": "La sequenza è didattica, ipotizza HTTP/1.1 su TCP e mostra come i servizi di rete cooperino dall’URL alla pagina visualizzata.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare tutti gli undici passaggi come obbligatori in ogni caricamento reale: cache, proxy e connessioni riutilizzate possono modificarli.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.21, pagina PDF 12"
+    },
+    {
+      "id": "cyber-c00-q132",
+      "topicId": "cyber-c00-t19",
+      "question": "Qual è il ruolo dell’interpretazione dell’URL e della risoluzione DNS nel caso HTTPS?",
+      "answer": "Il browser estrae schema HTTPS e nome del servizio dall’URL, poi se necessario usa il resolver DNS per ottenere l’IP del server.",
+      "detail": "L’esempio ipotizza che www.example.com venga risolto in 203.0.113.20. Il DNS non autentica da solo il contenuto delle future risposte HTTP.",
+      "example": "Il nome non è ancora il percorso di routing: occorre ottenere la destinazione IP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che l’URL contenga obbligatoriamente l’indirizzo IP del server.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.21, pagina PDF 12"
+    },
+    {
+      "id": "cyber-c00-q133",
+      "topicId": "cyber-c00-t19",
+      "question": "Perché il browser nell’esempio invia il traffico al gateway e non direttamente al server?",
+      "answer": "Perché 203.0.113.20 non appartiene alla subnet locale 192.168.1.0/24; in mancanza di rotte più specifiche si utilizza 192.168.1.1 come default gateway.",
+      "detail": "La decisione avviene sulla base del prefisso e delle rotte disponibili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Usare la risoluzione ARP per recuperare il MAC del server remoto su Internet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.21, pagina PDF 12"
+    },
+    {
+      "id": "cyber-c00-q134",
+      "topicId": "cyber-c00-t19",
+      "question": "Quale ruolo ha ARP nella fase di invio del primo frame verso il server remoto?",
+      "answer": "Se necessario, il client usa ARP per conoscere il MAC dell’interfaccia gateway 192.168.1.1.",
+      "detail": "Il frame Ethernet è indirizzato al MAC del gateway, mentre il pacchetto IP continua a essere destinato all’IP del server.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Mettere il MAC del server remoto come destinatario Ethernet del primo tratto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.21, pagina PDF 12"
+    },
+    {
+      "id": "cyber-c00-q135",
+      "topicId": "cyber-c00-t19",
+      "question": "Come funziona la traduzione NAPT nell’esempio completo?",
+      "answer": "Il router mappa 192.168.1.10:51500 in 203.0.113.5:40001 per comunicare con 203.0.113.20:443.",
+      "detail": "Conserva la mappatura e la usa anche per dirigere le risposte al client interno; sono coinvolti sia IP sia porte.",
+      "example": "192.168.1.10:51500 → 203.0.113.5:40001 → 203.0.113.20:443.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere la porta sorgente NAPT 40001 con la porta di servizio HTTPS 443.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.21, pagina PDF 12"
+    },
+    {
+      "id": "cyber-c00-q136",
+      "topicId": "cyber-c00-t19",
+      "question": "Qual è l’ordine dei due handshake previsti nell’esempio didattico HTTPS su TCP?",
+      "answer": "Prima three-way handshake TCP, poi TLS handshake.",
+      "detail": "TCP stabilisce il trasporto, TLS negozia protezione e autenticazione del server, dopodiché si scambiano i messaggi HTTP protetti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostenere che HTTP GET venga necessariamente inviato in chiaro tra i due handshake.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.21, pagina PDF 13"
+    },
+    {
+      "id": "cyber-c00-q137",
+      "topicId": "cyber-c00-t19",
+      "question": "Che cosa accade nella fase di richiesta HTTP dopo il TLS handshake?",
+      "answer": "Il browser invia una richiesta come «GET / HTTP/1.1» con l’header Host; il contenuto attraversa il canale protetto da TLS.",
+      "detail": "L’esempio mostra HTTP/1.1 sopra la connessione protetta. TLS gestisce la protezione dei dati durante il trasporto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere la richiesta HTTP con la richiesta DNS iniziale.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.21, pagina PDF 13"
+    },
+    {
+      "id": "cyber-c00-q138",
+      "topicId": "cyber-c00-t19",
+      "question": "Che cosa fa il server dopo avere ricevuto la richiesta HTTPS?",
+      "answer": "Riceve e decifra il traffico TLS, interpreta la richiesta HTTP e può eseguire logica applicativa e interrogazioni sul database.",
+      "detail": "La cifratura termina al relativo endpoint TLS; rimangono necessari controlli di autorizzazione e sicurezza applicativa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che il server elabori un body HTTP che rimane cifrato senza alcuna decifratura nel punto di terminazione.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.21, pagina PDF 13"
+    },
+    {
+      "id": "cyber-c00-q139",
+      "topicId": "cyber-c00-t19",
+      "question": "Come vengono restituite e utilizzate risposta HTTP e pagina nel caso completo?",
+      "answer": "Il server può restituire «200 OK» e un body HTML attraverso il canale TLS; il NAT dirige la risposta al client e il browser interpreta e visualizza la pagina.",
+      "detail": "Il browser può poi richiedere risorse aggiuntive, come CSS, JavaScript e immagini.",
+      "example": "Risposta illustrativa: HTTP/1.1 200 OK, Content-Type: text/html, body con «Benvenuto».",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare il rendering effettuato sul server anziché nel browser per il caso descritto.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.21, pagina PDF 13"
+    },
+    {
+      "id": "cyber-c00-q140",
+      "topicId": "cyber-c00-t19",
+      "question": "Perché l’esempio delle undici fasi non è una sequenza obbligata per ogni apertura di pagina?",
+      "answer": "Perché cache, connessioni riutilizzate, proxy, CDN, bilanciatori e versioni HTTP differenti possono eliminare o modificare singoli passaggi.",
+      "detail": "È una ricostruzione logica per apprendere i protocolli, non una descrizione universale di ogni implementazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Affermare che ogni pagina richieda sempre una nuova risoluzione DNS e un nuovo handshake TCP.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.21, pagina PDF 13"
+    },
+    {
+      "id": "cyber-c00-q141",
+      "topicId": "cyber-c00-t19",
+      "question": "In quali punti della navigazione intervengono DNS, routing, ARP, NAPT, TCP, TLS e HTTP?",
+      "answer": "DNS individua l’IP del servizio; routing sceglie il percorso; ARP determina il MAC locale del prossimo hop; NAPT traduce IP/porte; TCP instaura il trasporto; TLS protegge la comunicazione; HTTP definisce richiesta e risposta.",
+      "detail": "Questa è la sintesi trasversale del Capitolo 0 per ricostruire l’accesso sicuro a un’applicazione Web.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire a un singolo protocollo tutte le funzioni del flusso end-to-end.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.21, pagina PDF 13"
+    },
+    {
+      "id": "cyber-c00-q142",
+      "topicId": "cyber-c00-t20",
+      "question": "Quale minaccia è associata al DHCP e quale contromisura viene proposta?",
+      "answer": "Un server DHCP malevolo; la contromisura indicata è DHCP snooping.",
+      "detail": "La falsa assegnazione dei parametri può deviare traffico verso gateway o resolver compromessi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che DHCP snooping sostituisca TLS per proteggere il contenuto Web.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.22, pagina PDF 13"
+    },
+    {
+      "id": "cyber-c00-q143",
+      "topicId": "cyber-c00-t20",
+      "question": "Quale minaccia è associata al DNS e quali difese vengono proposte?",
+      "answer": "DNS spoofing o cache poisoning; il manuale propone DNSSEC e protezione del resolver.",
+      "detail": "DNSSEC verifica autenticità e integrità di dati DNS firmati, mentre la sicurezza del resolver riduce altre possibilità di manipolazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostenere che il DNSSEC cifri automaticamente tutte le query.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.22, pagina PDF 13"
+    },
+    {
+      "id": "cyber-c00-q144",
+      "topicId": "cyber-c00-t20",
+      "question": "Quale minaccia è associata a Ethernet/ARP e quale difesa cita il manuale?",
+      "answer": "ARP spoofing; il manuale cita Dynamic ARP Inspection e controlli di rete.",
+      "detail": "La protezione mira a contrastare associazioni IP-MAC malevole e deviazioni del traffico locale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire il controllo ARP a un certificato HTTPS senza ulteriori misure di rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.22, pagina PDF 13"
+    },
+    {
+      "id": "cyber-c00-q145",
+      "topicId": "cyber-c00-t20",
+      "question": "Quale minaccia è associata a router/gateway e quali difese sono suggerite?",
+      "answer": "Accessi o instradamenti impropri; contromisure: hardening e firewall.",
+      "detail": "È necessario configurare e proteggere i dispositivi di frontiera oltre a scegliere rotte corrette.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Pensare che la sola presenza del gateway crei una politica di sicurezza completa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.22, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q146",
+      "topicId": "cyber-c00-t20",
+      "question": "Quale minaccia colpisce la fase TCP e quale contromisura indica la tabella?",
+      "answer": "SYN Flood; il manuale indica SYN cookies e mitigazione.",
+      "detail": "Il rischio riguarda il consumo delle risorse allocate per le aperture di connessione non completate.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattare SYN Flood come un attacco applicativo SQL injection.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.22, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q147",
+      "topicId": "cyber-c00-t20",
+      "question": "Quale rischio riguarda HTTP non protetto e quale misura viene proposta?",
+      "answer": "Intercettazione o modifica dei messaggi; la difesa proposta è HTTPS con TLS.",
+      "detail": "TLS tutela il canale da lettura e manomissione durante il trasporto, nelle condizioni previste dal protocollo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Concludere che HTTPS basti a proteggere la logica applicativa.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.22, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q148",
+      "topicId": "cyber-c00-t20",
+      "question": "Quali attacchi sono associati all’applicazione Web e quali contromisure cita il manuale?",
+      "answer": "SQL injection e XSS; la tabella richiama query parametrizzate, escaping e controlli sugli input.",
+      "detail": "Le difese applicative si aggiungono alla protezione del canale, perché riguardano l’elaborazione dei dati da parte degli endpoint.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ritenere che SSL/TLS impedisca da solo SQL injection.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.22, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q149",
+      "topicId": "cyber-c00-t20",
+      "question": "Quale rischio riguarda le sessioni e quali misure sono proposte?",
+      "answer": "Session hijacking; la tabella richiama cookie protetti, scadenze e gestione sicura della sessione.",
+      "detail": "Un identificatore di sessione rubato e ancora valido può essere riutilizzato per impersonare un utente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Confondere una sessione autenticata con un canale HTTPS necessariamente inattaccabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.22, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q150",
+      "topicId": "cyber-c00-t20",
+      "question": "Quale rischio riguarda l’accesso al database e quali controlli vengono suggeriti?",
+      "answer": "Accessi impropri; difese: principio del minimo privilegio e autorizzazioni.",
+      "detail": "Bisogna controllare chi può leggere o modificare i dati, non soltanto assicurare il traffico verso il database.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Considerare la riservatezza del DB garantita solo perché si trova su IP privato.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.22, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q151",
+      "topicId": "cyber-c00-t20",
+      "question": "Che cosa significa defense in depth nel contesto del flusso applicativo?",
+      "answer": "Adottare più contromisure coordinate a livelli diversi della comunicazione e dell’applicazione.",
+      "detail": "Le difese devono coprire rischi differenti: rete, servizi, trasporto, canale, Web, sessioni e database. Nessuna singola protezione rende sicuro l’intero sistema.",
+      "example": "TLS per il canale, query parametrizzate nella logica applicativa, privilegi minimi sul database.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che firewall o HTTPS siano sufficienti a garantire da soli tutta la sicurezza.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.22, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q152",
+      "topicId": "cyber-c00-t20",
+      "question": "Perché firewall, HTTPS e IP privati non sono da soli garanzie assolute?",
+      "answer": "Perché il firewall non rende sicuro un host già compromesso, HTTPS non elimina i bug del server e un IP privato non equivale a controllo degli accessi.",
+      "detail": "Ciascuno risponde a un problema specifico, lasciando rischi residui negli altri livelli.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Attribuire alle tecnologie proprietà che non offrono.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.22, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q153",
+      "topicId": "cyber-c00-t21",
+      "question": "Qual è la catena concettuale dal livello rete alla sicurezza Web riassunta dalla Lezione 0.2?",
+      "answer": "Indirizzi e subnet identificano i destinatari; gateway e ARP permettono il prossimo salto; DHCP e DNS supportano la configurazione e l’individuazione dei servizi; NAT traduce indirizzi; HTTP scambia dati e HTTPS li protegge tramite TLS.",
+      "detail": "La lezione collega queste funzioni alla scelta di contromisure contro minacce specifiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Memorizzare gli acronimi come elementi indipendenti senza conoscere l’ordine logico di utilizzo.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.23, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q154",
+      "topicId": "cyber-c00-t21",
+      "question": "Come risponderesti oralmente alla domanda: «In cosa differiscono un IP pubblico e uno privato?»",
+      "answer": "Gli IP privati appartengono agli intervalli RFC 1918 e non sono direttamente instradati su Internet; quelli pubblici sono destinati all’instradamento pubblico, secondo le policy effettive.",
+      "detail": "Si può aggiungere che NAT permette frequentemente comunicazioni in uscita da reti private e che nessuna delle due categorie garantisce da sola la sicurezza.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che privato significhi protetto e pubblico significhi sempre raggiungibile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.24, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q155",
+      "topicId": "cyber-c00-t21",
+      "question": "Come spiegheresti insieme subnet mask, gateway e ARP a un esame orale?",
+      "answer": "La subnet mask permette di determinare il prefisso e distinguere la rete locale; per destinazioni remote si usa una rotta, spesso il gateway; ARP risolve il MAC locale del prossimo hop su Ethernet IPv4.",
+      "detail": "La destinazione IP del pacchetto resta normalmente quella del server remoto, mentre il MAC locale è quello del gateway per il primo tratto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Mescolare l’indirizzamento IP con quello Ethernet.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.24, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q156",
+      "topicId": "cyber-c00-t21",
+      "question": "Come distingueresti DHCP e DNS in una domanda orale?",
+      "answer": "DHCP configura il dispositivo con parametri di rete; DNS permette alle applicazioni di ricavare informazioni, tra cui indirizzi IP, dai nomi di dominio.",
+      "detail": "Il DHCP può indicare quale resolver DNS usare; le funzioni dei due servizi sono quindi collegate ma non coincidenti.",
+      "example": "Il client riceve 192.168.1.2 come resolver via DHCP, poi lo interroga per www.example.com.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Descrivere DHCP come un sistema di traduzione dei nomi.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.24, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q157",
+      "topicId": "cyber-c00-t21",
+      "question": "Come spiegheresti la differenza tra NAT, firewall e HTTPS in un’unica risposta?",
+      "answer": "NAT traduce indirizzi/porte; firewall decide quali flussi ammettere secondo una policy; HTTPS usa TLS per proteggere crittograficamente il contenuto del canale.",
+      "detail": "Sono funzioni complementari e nessuna, singolarmente, garantisce autorizzazioni applicative corrette.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Trattarle come tre modi equivalenti di cifrare la rete.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.24, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q158",
+      "topicId": "cyber-c00-t21",
+      "question": "Qual è la risposta essenziale alla domanda: «HTTP è stateless; come esistono login e sessioni?»",
+      "answer": "HTTP non conserva obbligatoriamente stato tra richieste; le applicazioni aggiungono sessioni tramite cookie, token o identificatori.",
+      "detail": "Gli identificatori devono essere protetti perché una loro sottrazione può consentire tentativi di impersonificazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dire che una connessione TCP persistente sia automaticamente una sessione utente autenticata.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.24, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q159",
+      "topicId": "cyber-c00-t21",
+      "question": "Come illustreresti a voce perché HTTPS è più sicuro di HTTP senza considerarlo una garanzia assoluta?",
+      "answer": "HTTPS protegge il canale con TLS, offrendo riservatezza, integrità e normalmente autenticazione del server; non elimina XSS, SQL injection o accessi autorizzativi errati.",
+      "detail": "La risposta corretta distingue sicurezza del trasporto e sicurezza degli endpoint, collegandosi alla difesa in profondità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Sostenere che il lucchetto HTTPS provi che dati e applicazione sono completamente sicuri.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.24, pagina PDF 14"
+    },
+    {
+      "id": "cyber-c00-q160",
+      "topicId": "cyber-c00-t21",
+      "question": "Qual è la migliore sintesi orale dell’apertura di un sito HTTPS in questo capitolo?",
+      "answer": "URL → DNS → verifica del percorso e gateway → ARP locale → eventuale NAPT → handshake TCP → handshake TLS → richiesta HTTP protetta → elaborazione server → risposta cifrata → rendering nel browser.",
+      "detail": "Va precisato che il caso del manuale usa HTTP/1.1 su TCP e che cache, proxy o HTTP/3 possono modificare il percorso concreto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Dimenticare la differenza fra connessione di trasporto e protezione crittografica o presentare la sequenza come immutabile.",
+      "reference": "Fondamenti_di_Cybersecurity_Manuale.pdf — Capitolo 0, Lezione 0.2, §0.24, pagina PDF 14"
+    }
+  ]
+}

@@ -1,0 +1,3156 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "si",
+  "source": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3: Strategie di progettazione, pattern e analisi delle prestazioni, pagine PDF 35–49. Unica fonte autorizzata; esempi del docente e integrazioni didattiche sono distinti nel testo.",
+  "chapter": {
+    "id": "si-c03",
+    "title": "Strategie di progettazione, pattern e analisi delle prestazioni",
+    "order": 3,
+    "topics": [
+      {
+        "id": "si-c03-t01",
+        "title": "Correttezza sintattica, semantica e completezza dello schema"
+      },
+      {
+        "id": "si-c03-t02",
+        "title": "Strategie di progettazione concettuale: quadro comparativo"
+      },
+      {
+        "id": "si-c03-t03",
+        "title": "Top-down: raffinamento controllato"
+      },
+      {
+        "id": "si-c03-t04",
+        "title": "Bottom-up: sottoschemi e integrazione semantica"
+      },
+      {
+        "id": "si-c03-t05",
+        "title": "Inside-out e strategia mista"
+      },
+      {
+        "id": "si-c03-t06",
+        "title": "Regole concettuali RC1, RC2, RC3"
+      },
+      {
+        "id": "si-c03-t07",
+        "title": "Pattern 1: relazione parte-di e autonomia"
+      },
+      {
+        "id": "si-c03-t08",
+        "title": "Pattern 2: eventi ripetuti ed entità evento"
+      },
+      {
+        "id": "si-c03-t09",
+        "title": "Pattern 3: storia e Pattern 4: evoluzione"
+      },
+      {
+        "id": "si-c03-t10",
+        "title": "Scelta critica dei pattern e prestazioni concettuali"
+      },
+      {
+        "id": "si-c03-t11",
+        "title": "Caso Software House: volumi e stime"
+      },
+      {
+        "id": "si-c03-t12",
+        "title": "Operazioni, tavole degli accessi e formula del costo"
+      },
+      {
+        "id": "si-c03-t13",
+        "title": "Caso della docente: Op1, Op2, Op3 e costo complessivo"
+      },
+      {
+        "id": "si-c03-t14",
+        "title": "Stima di occupazione di memoria"
+      },
+      {
+        "id": "si-c03-t15",
+        "title": "Ridondanze, confronto delle alternative e coerenza"
+      },
+      {
+        "id": "si-c03-t16",
+        "title": "Documentazione finale della fase concettuale"
+      },
+      {
+        "id": "si-c03-t17",
+        "title": "Dodici esercizi svolti: riconoscimento e applicazione"
+      },
+      {
+        "id": "si-c03-t18",
+        "title": "Autoverifica e correzioni ragionate"
+      },
+      {
+        "id": "si-c03-t19",
+        "title": "Problemi autonomi A–E e metodo per la prova Moodle"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§3.1 — pagina PDF 35",
+        "cardIds": [
+          "si-c03-q001"
+        ]
+      },
+      {
+        "label": "§3.1.1 — pagina PDF 35",
+        "cardIds": [
+          "si-c03-q002",
+          "si-c03-q003",
+          "si-c03-q004"
+        ]
+      },
+      {
+        "label": "§3.1.2 — pagina PDF 35",
+        "cardIds": [
+          "si-c03-q005",
+          "si-c03-q006"
+        ]
+      },
+      {
+        "label": "§3.1 — pagina PDF 36",
+        "cardIds": [
+          "si-c03-q007",
+          "si-c03-q008",
+          "si-c03-q009"
+        ]
+      },
+      {
+        "label": "§3.2 — pagina PDF 36",
+        "cardIds": [
+          "si-c03-q010",
+          "si-c03-q011",
+          "si-c03-q012",
+          "si-c03-q013",
+          "si-c03-q014",
+          "si-c03-q015",
+          "si-c03-q016"
+        ]
+      },
+      {
+        "label": "§3.3 — pagina PDF 36",
+        "cardIds": [
+          "si-c03-q017"
+        ]
+      },
+      {
+        "label": "§3.3 — pagina PDF 37",
+        "cardIds": [
+          "si-c03-q018",
+          "si-c03-q019",
+          "si-c03-q020",
+          "si-c03-q021",
+          "si-c03-q022"
+        ]
+      },
+      {
+        "label": "§3.4 — pagina PDF 37",
+        "cardIds": [
+          "si-c03-q023",
+          "si-c03-q024",
+          "si-c03-q025",
+          "si-c03-q026",
+          "si-c03-q027",
+          "si-c03-q028",
+          "si-c03-q029"
+        ]
+      },
+      {
+        "label": "§3.5 — pagina PDF 37",
+        "cardIds": [
+          "si-c03-q030"
+        ]
+      },
+      {
+        "label": "§3.5 — pagina PDF 38",
+        "cardIds": [
+          "si-c03-q031",
+          "si-c03-q032",
+          "si-c03-q033"
+        ]
+      },
+      {
+        "label": "§3.6 — pagina PDF 38",
+        "cardIds": [
+          "si-c03-q034",
+          "si-c03-q035",
+          "si-c03-q036",
+          "si-c03-q037",
+          "si-c03-q038"
+        ]
+      },
+      {
+        "label": "§3.7 — pagina PDF 38",
+        "cardIds": [
+          "si-c03-q039",
+          "si-c03-q040",
+          "si-c03-q042",
+          "si-c03-q043"
+        ]
+      },
+      {
+        "label": "§3.7 — pagina PDF 39",
+        "cardIds": [
+          "si-c03-q041",
+          "si-c03-q044"
+        ]
+      },
+      {
+        "label": "§3.8 — pagina PDF 39",
+        "cardIds": [
+          "si-c03-q045",
+          "si-c03-q046",
+          "si-c03-q047",
+          "si-c03-q048",
+          "si-c03-q049",
+          "si-c03-q050"
+        ]
+      },
+      {
+        "label": "§3.9 — pagina PDF 39",
+        "cardIds": [
+          "si-c03-q051"
+        ]
+      },
+      {
+        "label": "§3.9 — pagina PDF 40",
+        "cardIds": [
+          "si-c03-q052",
+          "si-c03-q053",
+          "si-c03-q054",
+          "si-c03-q055",
+          "si-c03-q056"
+        ]
+      },
+      {
+        "label": "§3.10 — pagina PDF 40",
+        "cardIds": [
+          "si-c03-q057",
+          "si-c03-q058",
+          "si-c03-q059"
+        ]
+      },
+      {
+        "label": "§3.11 — pagina PDF 40",
+        "cardIds": [
+          "si-c03-q060"
+        ]
+      },
+      {
+        "label": "§3.11 — pagina PDF 41",
+        "cardIds": [
+          "si-c03-q061",
+          "si-c03-q062",
+          "si-c03-q063"
+        ]
+      },
+      {
+        "label": "§3.12 — pagina PDF 41",
+        "cardIds": [
+          "si-c03-q064",
+          "si-c03-q065",
+          "si-c03-q066"
+        ]
+      },
+      {
+        "label": "§3.13 — pagina PDF 41",
+        "cardIds": [
+          "si-c03-q067",
+          "si-c03-q068",
+          "si-c03-q069",
+          "si-c03-q070"
+        ]
+      },
+      {
+        "label": "§3.14 — pagina PDF 42",
+        "cardIds": [
+          "si-c03-q071",
+          "si-c03-q072"
+        ]
+      },
+      {
+        "label": "§3.14.1 — pagina PDF 42",
+        "cardIds": [
+          "si-c03-q073",
+          "si-c03-q074",
+          "si-c03-q075",
+          "si-c03-q076",
+          "si-c03-q077",
+          "si-c03-q078",
+          "si-c03-q079"
+        ]
+      },
+      {
+        "label": "§3.14.2 — pagina PDF 42",
+        "cardIds": [
+          "si-c03-q080",
+          "si-c03-q081",
+          "si-c03-q082",
+          "si-c03-q083"
+        ]
+      },
+      {
+        "label": "§3.15 — pagina PDF 42",
+        "cardIds": [
+          "si-c03-q084"
+        ]
+      },
+      {
+        "label": "§3.15 — pagina PDF 43",
+        "cardIds": [
+          "si-c03-q085",
+          "si-c03-q086",
+          "si-c03-q087",
+          "si-c03-q095",
+          "si-c03-q096"
+        ]
+      },
+      {
+        "label": "§3.15.1 — pagina PDF 43",
+        "cardIds": [
+          "si-c03-q088",
+          "si-c03-q089",
+          "si-c03-q090",
+          "si-c03-q091",
+          "si-c03-q092",
+          "si-c03-q093",
+          "si-c03-q094"
+        ]
+      },
+      {
+        "label": "§3.16.1 — pagina PDF 43",
+        "cardIds": [
+          "si-c03-q097",
+          "si-c03-q098",
+          "si-c03-q099"
+        ]
+      },
+      {
+        "label": "§3.16.2 — pagina PDF 43",
+        "cardIds": [
+          "si-c03-q100",
+          "si-c03-q101",
+          "si-c03-q102",
+          "si-c03-q103",
+          "si-c03-q104"
+        ]
+      },
+      {
+        "label": "§3.16.3 — pagina PDF 43",
+        "cardIds": [
+          "si-c03-q105",
+          "si-c03-q106",
+          "si-c03-q107",
+          "si-c03-q108"
+        ]
+      },
+      {
+        "label": "§3.16.3 — pagina PDF 44",
+        "cardIds": [
+          "si-c03-q109",
+          "si-c03-q110"
+        ]
+      },
+      {
+        "label": "§3.16.4 — pagina PDF 44",
+        "cardIds": [
+          "si-c03-q111",
+          "si-c03-q112",
+          "si-c03-q113"
+        ]
+      },
+      {
+        "label": "§3.16 — pagina PDF 44",
+        "cardIds": [
+          "si-c03-q114",
+          "si-c03-q115",
+          "si-c03-q116",
+          "si-c03-q117"
+        ]
+      },
+      {
+        "label": "§3.17 — pagina PDF 44",
+        "cardIds": [
+          "si-c03-q118",
+          "si-c03-q119",
+          "si-c03-q120",
+          "si-c03-q124",
+          "si-c03-q125"
+        ]
+      },
+      {
+        "label": "§3.17.1 — pagina PDF 44",
+        "cardIds": [
+          "si-c03-q121",
+          "si-c03-q122",
+          "si-c03-q123"
+        ]
+      },
+      {
+        "label": "§3.18 — pagina PDF 44",
+        "cardIds": [
+          "si-c03-q126",
+          "si-c03-q127"
+        ]
+      },
+      {
+        "label": "§3.18.1 — pagina PDF 45",
+        "cardIds": [
+          "si-c03-q128",
+          "si-c03-q129",
+          "si-c03-q130",
+          "si-c03-q131",
+          "si-c03-q132",
+          "si-c03-q133",
+          "si-c03-q134",
+          "si-c03-q135",
+          "si-c03-q136"
+        ]
+      },
+      {
+        "label": "§3.18 — pagina PDF 45",
+        "cardIds": [
+          "si-c03-q137",
+          "si-c03-q138",
+          "si-c03-q139",
+          "si-c03-q140"
+        ]
+      },
+      {
+        "label": "§3.19 — pagina PDF 45",
+        "cardIds": [
+          "si-c03-q141",
+          "si-c03-q142",
+          "si-c03-q143",
+          "si-c03-q144",
+          "si-c03-q145",
+          "si-c03-q146",
+          "si-c03-q147"
+        ]
+      },
+      {
+        "label": "§3.20 — pagina PDF 45",
+        "cardIds": [
+          "si-c03-q148"
+        ]
+      },
+      {
+        "label": "§3.20 — pagina PDF 46",
+        "cardIds": [
+          "si-c03-q149",
+          "si-c03-q150",
+          "si-c03-q151",
+          "si-c03-q152",
+          "si-c03-q153",
+          "si-c03-q154",
+          "si-c03-q155",
+          "si-c03-q156",
+          "si-c03-q157",
+          "si-c03-q158",
+          "si-c03-q159"
+        ]
+      },
+      {
+        "label": "§3.20 — pagina PDF 47",
+        "cardIds": [
+          "si-c03-q160",
+          "si-c03-q161",
+          "si-c03-q162",
+          "si-c03-q163",
+          "si-c03-q164",
+          "si-c03-q165",
+          "si-c03-q166",
+          "si-c03-q167",
+          "si-c03-q168",
+          "si-c03-q169",
+          "si-c03-q170",
+          "si-c03-q171"
+        ]
+      },
+      {
+        "label": "§3.21 — pagina PDF 47",
+        "cardIds": [
+          "si-c03-q172"
+        ]
+      },
+      {
+        "label": "§3.21 — pagina PDF 48",
+        "cardIds": [
+          "si-c03-q173",
+          "si-c03-q174",
+          "si-c03-q175",
+          "si-c03-q176",
+          "si-c03-q177",
+          "si-c03-q178",
+          "si-c03-q179"
+        ]
+      },
+      {
+        "label": "§3.22 — pagina PDF 48",
+        "cardIds": [
+          "si-c03-q180",
+          "si-c03-q181",
+          "si-c03-q182",
+          "si-c03-q183",
+          "si-c03-q184",
+          "si-c03-q185"
+        ]
+      },
+      {
+        "label": "§3.22 — pagina PDF 49",
+        "cardIds": [
+          "si-c03-q186",
+          "si-c03-q187"
+        ]
+      },
+      {
+        "label": "§3.23 — pagina PDF 49",
+        "cardIds": [
+          "si-c03-q188",
+          "si-c03-q189",
+          "si-c03-q190",
+          "si-c03-q191",
+          "si-c03-q192",
+          "si-c03-q193",
+          "si-c03-q194",
+          "si-c03-q195",
+          "si-c03-q196",
+          "si-c03-q197",
+          "si-c03-q198"
+        ]
+      },
+      {
+        "label": "§3.24 — pagina PDF 49",
+        "cardIds": [
+          "si-c03-q199",
+          "si-c03-q200",
+          "si-c03-q201",
+          "si-c03-q202",
+          "si-c03-q203",
+          "si-c03-q204",
+          "si-c03-q205",
+          "si-c03-q206"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "si-c03-q001",
+      "topicId": "si-c03-t01",
+      "question": "Quali sono i due requisiti fondamentali di qualità di uno schema concettuale secondo la docente?",
+      "answer": "Correttezza e completezza rispetto alle specifiche dei requisiti.",
+      "detail": "La qualità non coincide con un diagramma esteticamente ordinato: deve rappresentare correttamente il dominio e tutti i fatti necessari alle operazioni.",
+      "example": "Un E-R elegante che ometta i costi necessari al calcolo del margine è incompleto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non giudicare lo schema solo dalla presenza dei simboli E-R.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.1, pagina PDF 35"
+    },
+    {
+      "id": "si-c03-q002",
+      "topicId": "si-c03-t01",
+      "question": "Che cosa significa correttezza sintattica di uno schema E-R?",
+      "answer": "Uso dei costrutti E-R secondo la notazione e le convenzioni adottate: entità, relazioni, attributi, cardinalità e identificatori collocati correttamente.",
+      "detail": "Controlla la forma della rappresentazione, non ancora la fedeltà delle regole aziendali.",
+      "example": "L’identificatore deve appartenere al costrutto cui si riferisce e la cardinalità al ruolo corretto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Uno schema sintatticamente corretto può comunque essere semanticamente sbagliato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.1.1, pagina PDF 35"
+    },
+    {
+      "id": "si-c03-q003",
+      "topicId": "si-c03-t01",
+      "question": "Che cosa significa correttezza semantica e come si distingue da quella sintattica?",
+      "answer": "Lo schema è semanticamente corretto se i fatti, le cardinalità e i vincoli modellati rispettano il significato reale dei requisiti.",
+      "detail": "La correttezza sintattica riguarda il linguaggio grafico; la semantica riguarda ciò che il diagramma consente o vieta nel dominio.",
+      "example": "Se ogni dipartimento appartiene a una sola università, (0,N) sul dipartimento può essere sintatticamente valido ma semanticamente errato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere valida una cardinalità soltanto perché formalmente ammessa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.1.1, pagina PDF 35"
+    },
+    {
+      "id": "si-c03-q004",
+      "topicId": "si-c03-t01",
+      "question": "Quale cardinalità contraddice il requisito «ogni dipartimento appartiene a una sola università» e perché?",
+      "answer": "La partecipazione (0,N) di DIPARTIMENTO a COMPOSTA lo contraddice: consente zero o più università per un singolo dipartimento.",
+      "detail": "Per il requisito citato la partecipazione del dipartimento deve essere esattamente (1,1), salvo precisazioni ulteriori sul dominio.",
+      "example": "Un dipartimento collegato a due università sarebbe ammesso da (0,N), ma vietato dal requisito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non leggere il massimo N come numero di dipartimenti dell’università: qui è scritto sul lato DIPARTIMENTO.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.1.1, pagina PDF 35"
+    },
+    {
+      "id": "si-c03-q005",
+      "topicId": "si-c03-t01",
+      "question": "Quando uno schema E-R è completo rispetto ai requisiti?",
+      "answer": "Quando contempla tutti i dati di interesse, consente le operazioni richieste e documenta i vincoli, comprese le business rules non rappresentabili interamente nel diagramma.",
+      "detail": "Non deve descrivere gli algoritmi istruzione per istruzione, ma deve rendere disponibili i dati necessari a eseguirli.",
+      "example": "Per calcolare un margine servono ricavi e costi, non solo prezzi di vendita.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere completezza con quantità elevata di entità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.1.2, pagina PDF 35"
+    },
+    {
+      "id": "si-c03-q006",
+      "topicId": "si-c03-t01",
+      "question": "Perché un modello con prezzo di vendita ma senza costi ipotizzati è incompleto per il calcolo del margine?",
+      "answer": "Perché manca uno degli input necessari all’operazione richiesta, indipendentemente dalla correttezza grafica del modello.",
+      "detail": "Una verifica di completezza parte dalle operazioni previste e risale ai fatti da conservare o ricavare.",
+      "example": "Un sistema può memorizzare OFFERTA e PREZZO ma non avere informazioni per calcolare PREZZO – COSTO.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare l’operazione calcolabile quando gli input sono assenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.1.2, pagina PDF 35"
+    },
+    {
+      "id": "si-c03-q007",
+      "topicId": "si-c03-t01",
+      "question": "Quali cinque controlli propone la tabella di qualità dello schema?",
+      "answer": "Sintassi dei costrutti; correttezza semantica; completezza dei dati; completezza delle operazioni; documentazione dei vincoli non grafici.",
+      "detail": "Ogni controllo intercetta errori diversi, che un esame del solo disegno non individua.",
+      "example": "Controllo della data fine ≥ data inizio come business rule separata dai simboli E-R.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fondere controllo semantico e controllo dei vincoli in un unico sì/no.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.1, pagina PDF 36"
+    },
+    {
+      "id": "si-c03-q008",
+      "topicId": "si-c03-t01",
+      "question": "Come si verifica la completezza operazionale di un E-R?",
+      "answer": "Per ogni caso d’uso o operazione si controlla che siano rappresentati i fatti e i collegamenti necessari per eseguirla.",
+      "detail": "Serve una verifica esplicita dal requisito all’informazione, anche se il singolo elemento sembra secondario.",
+      "example": "Per confrontare scenari occorre una relazione fra configurazione e scenario; la sola entità CONFIGURAZIONE non basta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fermarsi all’elenco dei dati senza ricostruire come vengono utilizzati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.1, pagina PDF 36"
+    },
+    {
+      "id": "si-c03-q009",
+      "topicId": "si-c03-t01",
+      "question": "Perché un diagramma E-R formalmente corretto non dimostra che il sistema informativo sia adeguato?",
+      "answer": "Perché può contenere assunzioni di dominio errate, ignorare dati richiesti o non specificare vincoli non esprimibili graficamente.",
+      "detail": "Correttezza e completezza sono verifiche distinte da effettuare rispetto al documento dei requisiti.",
+      "example": "Una cliente nuova può esistere senza ordini: imporre (1,N) sugli ordini può rendere lo schema infedele.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre obbligatorietà a un cliente solo perché nella tabella di test tutti avevano ordini.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.1, pagina PDF 36"
+    },
+    {
+      "id": "si-c03-q010",
+      "topicId": "si-c03-t02",
+      "question": "Quali sono le quattro strategie di progettazione concettuale presentate dalla docente?",
+      "answer": "Top-down, bottom-up, inside-out e mista.",
+      "detail": "Sono metodi per organizzare la costruzione del modello E-R, non notazioni grafiche differenti.",
+      "example": "Un modello della stessa impresa può essere costruito con approcci diversi se la semantica finale è corretta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamarle quattro modelli di dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.2, pagina PDF 36"
+    },
+    {
+      "id": "si-c03-q011",
+      "topicId": "si-c03-t02",
+      "question": "Che cosa cambia principalmente tra top-down e bottom-up?",
+      "answer": "Top-down parte da uno schema globale astratto e lo raffina; bottom-up parte da sottoproblemi e integra gli schemi locali.",
+      "detail": "Il verso di costruzione è differente, ma entrambi devono concludersi con un modello coerente e completo.",
+      "example": "Un’offerta energetica generale che si dettaglia vs catalogo, marketing e pricing progettati separatamente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare bottom-up con traduzione da tabelle SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.2, pagina PDF 36"
+    },
+    {
+      "id": "si-c03-q012",
+      "topicId": "si-c03-t02",
+      "question": "Qual è il rischio principale della strategia top-down?",
+      "answer": "Un’astrazione iniziale sbagliata o troppo generale può nascondere particolarità locali essenziali.",
+      "detail": "I raffinamenti successivi devono conservare il significato e verificare le informazioni non ancora rappresentate.",
+      "example": "Un generico «cliente» potrebbe mascherare ruoli diversi e regole di appartenenza specifiche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non adottare lo schema globale iniziale come verità immutabile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.2, pagina PDF 36"
+    },
+    {
+      "id": "si-c03-q013",
+      "topicId": "si-c03-t02",
+      "question": "Qual è il rischio principale della strategia bottom-up?",
+      "answer": "Sottoschemi sviluppati separatamente possono usare definizioni, identificatori, granularità e cardinalità incompatibili.",
+      "detail": "La fase di integrazione semantica è un’attività vera e propria, non una semplice giunzione grafica.",
+      "example": "Marketing parla di TARGET, Pricing di SEGMENTO: prima di unirli serve verificare se coincidono.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mettere in comune entità perché hanno nomi simili.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.2, pagina PDF 36"
+    },
+    {
+      "id": "si-c03-q014",
+      "topicId": "si-c03-t02",
+      "question": "Qual è il rischio principale di inside-out?",
+      "answer": "L’effetto tunnel: concentrarsi sul nucleo iniziale e dimenticare parti del dominio non direttamente connesse.",
+      "detail": "Occorre tornare ai requisiti e verificare sistematicamente la copertura globale.",
+      "example": "Partire da OFFERTA può trascurare l’amministrazione di utenti o la gestione degli audit.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il fatto che l’espansione sia coerente non implica che sia completa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.2, pagina PDF 36"
+    },
+    {
+      "id": "si-c03-q015",
+      "topicId": "si-c03-t02",
+      "question": "Quale rischio specifico ha la strategia mista?",
+      "answer": "Revisioni non governate tra schema generale, sottoschemi e integrazioni possono produrre incoerenze.",
+      "detail": "Il manuale invita a documentare le decisioni e governare le revisioni mentre si combinano approcci.",
+      "example": "Due gruppi modificano indipendentemente la definizione di SEGMENTO dopo l’approvazione dello scheletro.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Mista non significa sommare senza controllo tutte le strategie.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.2, pagina PDF 36"
+    },
+    {
+      "id": "si-c03-q016",
+      "topicId": "si-c03-t02",
+      "question": "Perché non esiste un unico schema E-R universalmente migliore per un dominio?",
+      "answer": "Possono esistere più rappresentazioni corrette che rispondono alle stesse esigenze informative, con differenti scelte di astrazione e prestazioni.",
+      "detail": "La scelta va motivata con semantica, requisiti, vincoli e costi operativi, non con la preferenza grafica.",
+      "example": "Un evento può richiedere entità autonoma o una relazione con attributi, in funzione dell’identità nel tempo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che il primo disegno conforme al lessico sia l’unico ammissibile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.2, pagina PDF 36"
+    },
+    {
+      "id": "si-c03-q017",
+      "topicId": "si-c03-t03",
+      "question": "Come si definisce la strategia top-down?",
+      "answer": "Si parte da uno schema globale molto astratto e lo si specifica mediante raffinamenti successivi fino ai concetti E-R necessari.",
+      "detail": "L’obiettivo è controllare inizialmente il quadro complessivo; la scelta delle tabelle e dei tipi SQL viene dopo.",
+      "example": "OFFERTA ENERGETICA → condizioni commerciali, segmento e scenario → attributi e relazioni appropriati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un primo disegno dettagliato di tabelle non è un raffinamento top-down.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.3, pagina PDF 36"
+    },
+    {
+      "id": "si-c03-q018",
+      "topicId": "si-c03-t03",
+      "question": "Quali sono le cinque fasi operative del raffinamento top-down nel manuale?",
+      "answer": "Individuare schema essenziale; scegliere un concetto astratto; espanderlo preservandone il significato; ripetere fino ai costrutti E-R; confrontare il risultato con i requisiti.",
+      "detail": "A ogni iterazione bisogna verificare che non si perdano fatti già espressi dallo schema precedente.",
+      "example": "OFFERTA → prezzo e durata → dettaglio dei parametri di consumo e dello scenario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare concluso il metodo senza validazione finale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.3, pagina PDF 37"
+    },
+    {
+      "id": "si-c03-q019",
+      "topicId": "si-c03-t03",
+      "question": "Come evolve l’esempio di OFFERTA ENERGETICA nei due raffinamenti?",
+      "answer": "Primo passaggio: si distinguono caratteristiche dell’offerta, segmento destinatario e scenari. Secondo: si dettagliano prezzo unitario, quota fissa, durata e parametri di consumo.",
+      "detail": "Lo schema dei raffinamenti è un esempio didattico di concetti intermedi, non ancora il diagramma E-R definitivo.",
+      "example": "Solo a un passo successivo si decide che cosa è entità e che cosa resta attributo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere automaticamente che ogni riquadro intermedio sia un’entità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.3, pagina PDF 37"
+    },
+    {
+      "id": "si-c03-q020",
+      "topicId": "si-c03-t03",
+      "question": "Che cosa significa preservare la semantica durante un raffinamento top-down?",
+      "answer": "Ogni versione più dettagliata deve mantenere veri i vincoli e i fatti previsti dalla versione precedente, aggiungendo precisione senza contraddizioni.",
+      "detail": "Il raffinamento non deve cancellare requisiti per semplificare il disegno.",
+      "example": "Una variante prezzo non può perdere il legame con il segmento per cui è valida.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire una relazione N:M con 1:N solo perché il diagramma appare più pulito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.3, pagina PDF 37"
+    },
+    {
+      "id": "si-c03-q021",
+      "topicId": "si-c03-t03",
+      "question": "Perché il top-down opera a livello concettuale e non direttamente sulle tabelle SQL?",
+      "answer": "Perché i livelli intermedi servono a chiarire il significato del dominio; tabelle, indici e tipi dipendono dalle fasi logica e fisica.",
+      "detail": "Solo al termine del raffinamento si scelgono entità, relazioni, attributi e identificatori.",
+      "example": "Un riquadro «rendimento target» può essere scomposto in concetti senza produrre subito CREATE TABLE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare progettazione top-down l’aggiunta di colonne a una tabella già decisa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.3, pagina PDF 37"
+    },
+    {
+      "id": "si-c03-q022",
+      "topicId": "si-c03-t03",
+      "question": "Quando è utile preferire inizialmente un approccio top-down?",
+      "answer": "Quando è possibile identificare una visione generale sufficientemente affidabile del dominio e si vuole mantenerla visibile mentre cresce il dettaglio.",
+      "detail": "Il vantaggio deve essere bilanciato col rischio di un’astrazione incompleta o errata.",
+      "example": "Servizio di valutazione offerte definito in macrofunzioni prima della modellazione dei singoli parametri.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usarlo in modo rigido dove i requisiti locali sono ancora poco conosciuti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.3, pagina PDF 37"
+    },
+    {
+      "id": "si-c03-q023",
+      "topicId": "si-c03-t04",
+      "question": "Che cosa prevede la strategia bottom-up?",
+      "answer": "Scomporre le specifiche in sottoproblemi, modellare sottoschemi locali e integrarli in uno schema coerente.",
+      "detail": "È utile quando uffici differenti conoscono bene aree diverse della realtà aziendale.",
+      "example": "Sottoschemi catalogo, segmentazione e analisi economica poi integrati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi ad affiancare le figure senza risolvere conflitti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.4, pagina PDF 37"
+    },
+    {
+      "id": "si-c03-q024",
+      "topicId": "si-c03-t04",
+      "question": "Quali cinque conflitti di integrazione bottom-up sono elencati nel manuale?",
+      "answer": "Sinonimia, omonimia, identificatori diversi, diversa granularità e cardinalità contraddittorie.",
+      "detail": "Il glossario e i requisiti devono chiarire se i concetti locali sono uguali, collegati o distinti.",
+      "example": "Un target marketing può comprendere più profili di consumo del pricing: non è necessariamente un sinonimo perfetto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere arbitrariamente l’interpretazione di uno dei reparti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.4, pagina PDF 37"
+    },
+    {
+      "id": "si-c03-q025",
+      "topicId": "si-c03-t04",
+      "question": "Che differenza esiste tra sinonimia e omonimia nell’integrazione dei sottoschemi?",
+      "answer": "Sinonimia: nomi diversi per lo stesso concetto. Omonimia: stesso nome usato con significati differenti.",
+      "detail": "Si risolvono con definizioni condivise e contesto semantico documentato.",
+      "example": "«Target» e «segmento» forse sono sinonimi; «costo» può significare unitario o complessivo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La sola uguaglianza del nome non garantisce identità di significato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.4, pagina PDF 37"
+    },
+    {
+      "id": "si-c03-q026",
+      "topicId": "si-c03-t04",
+      "question": "Perché identificatori differenti nei sottoschemi possono ostacolare l’integrazione?",
+      "answer": "Due reparti possono assegnare codici distinti allo stesso oggetto o usare regole di identificazione locali, impedendo un collegamento certo.",
+      "detail": "Occorre definire identità condivisa o una mappatura controllata delle chiavi.",
+      "example": "Marketing ha codTarget, Pricing idSegmento per un possibile segmento comune.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che valori numerici uguali identificano lo stesso oggetto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.4, pagina PDF 37"
+    },
+    {
+      "id": "si-c03-q027",
+      "topicId": "si-c03-t04",
+      "question": "Come una differenza di granularità può alterare la semantica di uno schema integrato?",
+      "answer": "Un sottoschema può descrivere gruppi aggregati e un altro unità più fini: equipararli crea collegamenti e cardinalità sbagliati.",
+      "detail": "Serve chiarire la relazione tra livelli, non sostituire uno con l’altro.",
+      "example": "Un SEGMENTO di clienti può comprendere diversi PROFILI di consumo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non forzare 1:1 dove può esserci 1:N.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.4, pagina PDF 37"
+    },
+    {
+      "id": "si-c03-q028",
+      "topicId": "si-c03-t04",
+      "question": "Come si gestiscono cardinalità discordanti dopo l’integrazione bottom-up?",
+      "answer": "Si risale ai requisiti e si fissa la regola reale, dichiarando eventuali ipotesi ancora non confermate.",
+      "detail": "Le cardinalità non si stabiliscono scegliendo la media delle due proposte.",
+      "example": "Un reparto richiede un solo target per offerta, un altro più target: va chiarita la molteplicità ammessa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non privilegiare la cardinalità più restrittiva senza giustificazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.4, pagina PDF 37"
+    },
+    {
+      "id": "si-c03-q029",
+      "topicId": "si-c03-t04",
+      "question": "Qual è la verifica necessaria dopo l’unione di più sottoschemi?",
+      "answer": "Controllare univocità delle definizioni, identità delle entità condivise, coerenza dei vincoli e completezza rispetto ai requisiti complessivi.",
+      "detail": "Un’integrazione visivamente corretta non assicura l’assenza di duplicati o contraddizioni.",
+      "example": "Una relazione tra OFFERTA e SEGMENTO deve essere interpretata allo stesso modo da Marketing e Pricing.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fermarsi al solo collegamento grafico dei diagrammi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.4, pagina PDF 37"
+    },
+    {
+      "id": "si-c03-q030",
+      "topicId": "si-c03-t05",
+      "question": "Che cos’è inside-out e in che senso è un caso particolare del bottom-up?",
+      "answer": "Si parte da pochi concetti centrali ben compresi e si espande gradualmente verso quelli collegati, senza schema generale completo iniziale.",
+      "detail": "È vicino al bottom-up perché muove dal locale verso il globale; invece di integrare più sottoschemi autonomi esplora un nucleo.",
+      "example": "OFFERTA → condizioni → segmenti → scenari → risultati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderlo con un top-down che parte da tutto il sistema.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.5, pagina PDF 37"
+    },
+    {
+      "id": "si-c03-q031",
+      "topicId": "si-c03-t05",
+      "question": "Quale nucleo usa l’esempio EnerPrice per illustrare inside-out?",
+      "answer": "OFFERTA, da cui si esplorano CONDIZIONE, SEGMENTO, SCENARIO e RISULTATO.",
+      "detail": "La figura 3.5 è uno schema esplorativo, non il modello finale del progetto.",
+      "example": "Si chiarisce progressivamente che cosa si conserva per ogni scenario e a quale offerta si riferisce.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere le cardinalità dalla sola disposizione dei riquadri.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.5, pagina PDF 38"
+    },
+    {
+      "id": "si-c03-q032",
+      "topicId": "si-c03-t05",
+      "question": "Qual è il vantaggio e quale il limite di inside-out?",
+      "answer": "Vantaggio: nucleo concreto e comprensibile. Limite: possibile mancata copertura di concetti periferici del dominio.",
+      "detail": "La verifica globale dei requisiti, anche mediante matrice di copertura, è quindi indispensabile.",
+      "example": "Una progettazione che parte da OFFERTA potrebbe non intercettare i requisiti di audit e gestione degli utenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una buona espansione locale non prova la completezza del sistema.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.5, pagina PDF 38"
+    },
+    {
+      "id": "si-c03-q033",
+      "topicId": "si-c03-t05",
+      "question": "In cosa differisce operativamente inside-out da bottom-up classico?",
+      "answer": "Inside-out estende un nucleo centrale lungo le connessioni; bottom-up progetta più sottoschemi separati e poi li integra.",
+      "detail": "Entrambi si muovono dal particolare verso il sistema complessivo.",
+      "example": "Da OFFERTA a SCENARIO è inside-out; modellare catalogo e clienti separatamente è bottom-up.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare i due nomi come sinonimi perfetti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.5, pagina PDF 38"
+    },
+    {
+      "id": "si-c03-q034",
+      "topicId": "si-c03-t05",
+      "question": "Qual è la strategia mista presentata dalle dispense?",
+      "answer": "Combina top-down e bottom-up: identifica concetti principali, costruisce uno schema scheletro, decompone e poi raffina/integra.",
+      "detail": "Il manuale aggiunge come controllo finale la validazione dei requisiti e delle definizioni condivise.",
+      "example": "OFFERTA, SEGMENTO e SCENARIO come scheletro; sottoschemi catalogo, costi e simulazioni da integrare.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che la strategia mista sia sempre obbligatoria per ogni problema.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.6, pagina PDF 38"
+    },
+    {
+      "id": "si-c03-q035",
+      "topicId": "si-c03-t05",
+      "question": "Quali sono i quattro passi della strategia mista indicati esplicitamente nella fonte?",
+      "answer": "Individuare i concetti principali; definire uno schema scheletro; decomporre; raffinare, espandere e integrare.",
+      "detail": "La tabella operativa del manuale evidenzia inoltre una successiva validazione come controllo del modello ottenuto.",
+      "example": "Concetti principali → scheletro E-R → sottoschemi → schema unificato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire alla docente la validazione come quinto passo della sequenza originaria di quattro.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.6, pagina PDF 38"
+    },
+    {
+      "id": "si-c03-q036",
+      "topicId": "si-c03-t05",
+      "question": "Perché la strategia mista è utile per requisiti articolati?",
+      "answer": "Mantiene una visione globale, ma permette di approfondire localmente componenti complesse e riunirle in modo coerente.",
+      "detail": "Il beneficio dipende dalla tracciabilità delle revisioni e dalle definizioni condivise.",
+      "example": "Separare il calcolo economico dalle condizioni commerciali pur conservando OFFERTA come concetto comune.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non perdere il controllo delle versioni dei sottoschemi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.6, pagina PDF 38"
+    },
+    {
+      "id": "si-c03-q037",
+      "topicId": "si-c03-t05",
+      "question": "Come motivare la scelta di una strategia in una prova Moodle?",
+      "answer": "Descrivere punto di partenza, direzione della progettazione, opportunità per il problema e rischio da controllare.",
+      "detail": "Se il quesito chiede solo la definizione, spiegare il movimento fondamentale; per un caso complesso si può motivare la mista.",
+      "example": "Per un grande sistema con reparti distinti: scheletro centrale e raffinamento per domini.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rispondere «mista perché è sempre la migliore».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.6, pagina PDF 38"
+    },
+    {
+      "id": "si-c03-q038",
+      "topicId": "si-c03-t05",
+      "question": "Quali output operativi produce la sequenza mista nella tabella del manuale?",
+      "answer": "Elenco dei concetti candidati, E-R preliminare, sottoschemi locali, schema unificato con dizionari e vincoli, verifica di tracciabilità.",
+      "detail": "La domanda finale è se ogni frase rilevante dei requisiti abbia una rappresentazione o una regola documentata.",
+      "example": "Una versione condivisa del dizionario SEGMENTO evita conflitti tra sottoschemi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere una lista di componenti con un modello validato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.6, pagina PDF 38"
+    },
+    {
+      "id": "si-c03-q039",
+      "topicId": "si-c03-t06",
+      "question": "Quali sono le regole concettuali RC1, RC2 e RC3 per scegliere i costrutti E-R?",
+      "answer": "RC1: concetto significativo con esistenza autonoma → entità. RC2: collegamento tra concetti → relazione. RC3: caso particolare di una classe → generalizzazione.",
+      "detail": "Sono indicazioni per interpretare i requisiti, non conversioni lessicali automatiche.",
+      "example": "AZIENDA come entità, LAVORA come relazione, PROGETTO ACCETTATO come specializzazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non decidere solo in base alla forma grammaticale del testo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.7, pagina PDF 38"
+    },
+    {
+      "id": "si-c03-q040",
+      "topicId": "si-c03-t06",
+      "question": "Quando una proprietà testuale dovrebbe essere promossa a entità secondo RC1?",
+      "answer": "Quando rappresenta una realtà autonomamente identificabile, con informazioni proprie e relazioni rilevanti.",
+      "detail": "Il criterio è semantico: deve essere utile interrogare il concetto come oggetto distinto.",
+      "example": "Azienda con ragione sociale, sede e partita IVA non è più un semplice testo del dipendente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare entità per ogni sostantivo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.7, pagina PDF 38"
+    },
+    {
+      "id": "si-c03-q041",
+      "topicId": "si-c03-t06",
+      "question": "Perché AZIENDA come attributo di DIPENDENTE e come entità collegata da LAVORA non sono equivalenti?",
+      "answer": "Nel secondo modello AZIENDA ha una propria identità, attributi e associazioni; nel primo è soltanto un valore associato al dipendente.",
+      "detail": "Se occorre descrivere o interrogare le aziende autonome, è necessario il secondo livello concettuale.",
+      "example": "Cercare tutti i dipendenti della stessa azienda identificata da partita IVA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la differenza una mera scelta grafica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.7, pagina PDF 39"
+    },
+    {
+      "id": "si-c03-q042",
+      "topicId": "si-c03-t06",
+      "question": "Che cosa suggerisce RC2 quando si dice «un impiegato lavora in un’azienda»?",
+      "answer": "Rappresentare il legame significativo fra IMPIEGATO e AZIENDA attraverso una relazione, per esempio LAVORA, se i requisiti richiedono entrambe come entità.",
+      "detail": "Le cardinalità del legame vanno derivate separatamente dai requisiti.",
+      "example": "Un’impresa impiega molti lavoratori, ma la modalità di affiliazione nel tempo va chiarita.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre automaticamente la cardinalità da RC2.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.7, pagina PDF 38"
+    },
+    {
+      "id": "si-c03-q043",
+      "topicId": "si-c03-t06",
+      "question": "In quale situazione RC3 suggerisce una generalizzazione?",
+      "answer": "Quando una categoria rappresenta casi particolari di un’entità più generale, con proprietà o regole aggiuntive.",
+      "detail": "La superclasse conserva gli attributi comuni, la sottoclasse quelli specifici.",
+      "example": "PROGETTO → PROGETTO ACCETTATO con finanziamento e data di avvio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare gerarchie per semplici valori enumerati senza altre differenze.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.7, pagina PDF 38"
+    },
+    {
+      "id": "si-c03-q044",
+      "topicId": "si-c03-t06",
+      "question": "Quale ragionamento deve accompagnare l’applicazione delle regole RC1–RC3?",
+      "answer": "Verificare identità, autonomìa, attribuzione delle proprietà, relazioni, cardinalità e requisiti d’uso; poi confrontare le soluzioni con gli scenari consentiti.",
+      "detail": "La stessa frase può portare a scelte E-R differenti al cambiare delle informazioni da gestire.",
+      "example": "Se di AZIENDA serve solo un’etichetta può bastare un attributo; se servono sedi e interrogazioni, serve un’entità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare un pattern come vincolo universale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.7, pagina PDF 39"
+    },
+    {
+      "id": "si-c03-q045",
+      "topicId": "si-c03-t07",
+      "question": "Che problema risolve il Pattern 1 parte-di?",
+      "answer": "Modellare l’appartenenza di una parte a un insieme o a un tutto, distinguendo l’eventuale autonomia della parte.",
+      "detail": "La docente confronta UNIVERSITÀ–DIPARTIMENTO e SQUADRA–ATLETA, che hanno minimi differenti.",
+      "example": "Un dipartimento non esiste senza università nel caso della slide; un atleta può esistere senza squadra.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre le cardinalità solo dal verbo «comprende».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.8, pagina PDF 39"
+    },
+    {
+      "id": "si-c03-q046",
+      "topicId": "si-c03-t07",
+      "question": "Quali cardinalità descrivono UNIVERSITÀ–DIPARTIMENTO nel Pattern 1 delle slide?",
+      "answer": "UNIVERSITÀ (1,N) verso i dipartimenti; DIPARTIMENTO (1,1) verso l’università.",
+      "detail": "Ogni università ha almeno un dipartimento e ogni dipartimento appartiene a un’unica università nel modello didattico.",
+      "example": "Un dipartimento senza università è escluso dalla partecipazione minima 1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non generalizzare queste cardinalità a tutti gli atenei o a ogni momento del ciclo di vita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.8, pagina PDF 39"
+    },
+    {
+      "id": "si-c03-q047",
+      "topicId": "si-c03-t07",
+      "question": "Quali cardinalità descrivono SQUADRA–ATLETA nel Pattern 1 delle slide?",
+      "answer": "SQUADRA (1,N) verso gli atleti; ATLETA (0,1) verso la squadra.",
+      "detail": "L’atleta può esistere senza squadra; nello schema considerato non gioca contemporaneamente in più di una squadra.",
+      "example": "Un atleta svincolato è lecito; una squadra con zero atleti non è prevista nello schema delle slide.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre che l’atleta debba sempre appartenere a una squadra.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.8, pagina PDF 39"
+    },
+    {
+      "id": "si-c03-q048",
+      "topicId": "si-c03-t07",
+      "question": "Come riconoscere nel Pattern 1 se una parte ha autonomia rispetto al tutto?",
+      "answer": "Si verifica se l’occorrenza della parte è ammessa senza partecipare ad alcun tutto, ossia il minimo della sua associazione.",
+      "detail": "La denominazione «parte di» non è da sola sufficiente.",
+      "example": "ATLETA (0,1) è autonomo rispetto alla squadra; DIPARTIMENTO (1,1) non lo è nel caso universitario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere autonomia con la cardinalità massima N del lato opposto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.8, pagina PDF 39"
+    },
+    {
+      "id": "si-c03-q049",
+      "topicId": "si-c03-t07",
+      "question": "Perché un requisito di storicizzazione può cambiare il modello parte-di?",
+      "answer": "Se una parte può appartenere a diversi «tutti» in periodi successivi, servono date o eventi di affiliazione per distinguere nel tempo i legami.",
+      "detail": "Una cardinalità sullo stato corrente non descrive automaticamente la storia delle assegnazioni.",
+      "example": "Un atleta cambia squadra tra stagioni; la relazione statica (0,1) non conserva tutta la carriera.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non modificare da (0,1) a (0,N) senza chiarire se si parla di contemporaneità o storico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.8, pagina PDF 39"
+    },
+    {
+      "id": "si-c03-q050",
+      "topicId": "si-c03-t07",
+      "question": "Qual è l’errore di ragionamento da evitare nell’uso delle relazioni parte-di?",
+      "answer": "Imporre un modello di esistenza o una molteplicità perché il testo usa «composto da», senza verificare regole e orizzonte temporale.",
+      "detail": "Il capitolo mostra due esempi simili a parole ma diversi nella partecipazione minima.",
+      "example": "Una società può avere divisioni ancora non attive, se il dominio lo consente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare l’esempio didattico in regola generale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.8, pagina PDF 39"
+    },
+    {
+      "id": "si-c03-q051",
+      "topicId": "si-c03-t08",
+      "question": "Quale problema di modellazione affronta il Pattern 2 «entità evento»?",
+      "answer": "Distingue occorrenze ripetute dello stesso fatto tra le medesime entità partecipanti, quando occorre memorizzare dati propri per ciascun evento.",
+      "detail": "La coppia (studente, corso) non identifica più tentativi d’esame senza un ulteriore elemento identificante.",
+      "example": "Lo stesso studente sostiene lo stesso corso due volte con esiti diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presupporre che una relazione semplice rappresenti più tentativi indistinguibili.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.9, pagina PDF 39"
+    },
+    {
+      "id": "si-c03-q052",
+      "topicId": "si-c03-t08",
+      "question": "Come il manuale trasforma il collegamento STUDENTE–CORSO per rappresentare più esami?",
+      "answer": "Introduce l’entità evento ESAME, collegata a STUDENTE e a CORSO tramite associazioni che consentono più esami per studente e per corso.",
+      "detail": "Ogni singola occorrenza ESAME riguarda esattamente uno studente e un corso nel caso di studio.",
+      "example": "Due ESAME con la stessa coppia studente-corso possono avere date e voti differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare la sola coppia studente-corso come identificatore se ci sono ripetizioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.9, pagina PDF 40"
+    },
+    {
+      "id": "si-c03-q053",
+      "topicId": "si-c03-t08",
+      "question": "Quali informazioni possono caratterizzare un’entità evento ESAME?",
+      "answer": "Data, voto, eventualmente ora, esito, commissione, sede o documenti, se richiesti; più un identificatore che distingua ogni tentativo.",
+      "detail": "Non tutte le proprietà sono obbligatorie nel caso della docente: l’insieme effettivo dipende dai requisiti.",
+      "example": "Identificatore tecnico oppure combinazione di studente, corso e data/ora se davvero univoca.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare una chiave naturale non garantita dal testo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.9, pagina PDF 40"
+    },
+    {
+      "id": "si-c03-q054",
+      "topicId": "si-c03-t08",
+      "question": "Perché la sola data non è automaticamente una buona chiave per gli esami ripetuti?",
+      "answer": "Perché potrebbero esistere più tentativi o eventi nello stesso giorno, e il requisito non garantisce l’unicità della sola data.",
+      "detail": "La scelta può richiedere ora, numero progressivo o identificatore autonomo.",
+      "example": "Due esami distinti nella stessa data non devono collassare in un’unica istanza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere un vincolo di unicità che il manuale presenta solo come possibile ipotesi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.9, pagina PDF 40"
+    },
+    {
+      "id": "si-c03-q055",
+      "topicId": "si-c03-t08",
+      "question": "Quando è giustificata l’introduzione di un’entità evento invece di una semplice relazione con attributi?",
+      "answer": "Quando le istanze dell’evento sono ripetibili, devono essere identificabili autonomamente o collegate a propri dati/attività.",
+      "detail": "Il motivo non è la parola «esame», ma il bisogno di conservare più occorrenze.",
+      "example": "TENTATIVO d’esame, PRESTITO ripetuto o INTERVENTO di manutenzione ripetibile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non promuovere ogni relazione a entità senza una ragione di identità o di storicità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.9, pagina PDF 40"
+    },
+    {
+      "id": "si-c03-q056",
+      "topicId": "si-c03-t08",
+      "question": "Quale errore di esame si commette se si aggiunge ESAME solo perché compare il sostantivo «esame»?",
+      "answer": "Si sostituisce una motivazione semantica con un criterio lessicale: l’entità è necessaria se occorrenze e informazioni dell’evento lo richiedono.",
+      "detail": "Il capitolo richiede di argomentare ripetizione, attributi e chiave, non di moltiplicare i rettangoli.",
+      "example": "Per un solo esito finale per coppia studente-corso la scelta può essere diversa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere denominazione del fenomeno e livello di astrazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.9, pagina PDF 40"
+    },
+    {
+      "id": "si-c03-q057",
+      "topicId": "si-c03-t09",
+      "question": "Qual è l’idea del Pattern 3 relativo alla storia di un concetto?",
+      "answer": "Usare una generalizzazione per distinguere condizioni storiche o attuali della stessa classe, con eventuali attributi specifici.",
+      "detail": "Le slide usano SOFTWARE, SOFTWARE OBSOLETO e SOFTWARE AGGIORNATO.",
+      "example": "Data fine validità per software obsoleto, data aggiornamento per software aggiornato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare questa gerarchia come sistema completo di versionamento temporale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.10, pagina PDF 40"
+    },
+    {
+      "id": "si-c03-q058",
+      "topicId": "si-c03-t09",
+      "question": "Perché SOFTWARE OBSOLETO e SOFTWARE AGGIORNATO sono l’esempio del Pattern 3?",
+      "answer": "Rappresentano differenze significative collegate allo stato storico di SOFTWARE, anziché appiattire tutti gli stati in proprietà indistinte.",
+      "detail": "La superclasse conserva il concetto generale; i sottotipi ne distinguono le condizioni.",
+      "example": "Un software aggiornato può avere informazioni differenti da uno obsoleto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre automaticamente quanti cambiamenti siano avvenuti nel tempo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.10, pagina PDF 40"
+    },
+    {
+      "id": "si-c03-q059",
+      "topicId": "si-c03-t09",
+      "question": "Una gerarchia fra stati storici conserva automaticamente la cronologia completa?",
+      "answer": "No. Se occorre ricostruire tutti i cambiamenti nel tempo, può servire un’entità VERSIONE o STATO con intervalli temporali e vincoli di non sovrapposizione.",
+      "detail": "Questa è una precisazione didattica del manuale, non una sostituzione del pattern delle slide.",
+      "example": "Registro di tutte le versioni con decorrenza e fine validità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere classificazione corrente con sequenza storica di eventi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.10, pagina PDF 40"
+    },
+    {
+      "id": "si-c03-q060",
+      "topicId": "si-c03-t09",
+      "question": "Qual è il Pattern 4 relativo all’evoluzione di un concetto?",
+      "answer": "Una generalizzazione rappresenta il passaggio di un oggetto a una condizione più specifica, che aggiunge proprietà prima non applicabili.",
+      "detail": "Nell’esempio PROGETTO diventa PROGETTO ACCETTATO con informazioni proprie della fase accettata.",
+      "example": "Importo finanziato e data di inizio esistono solo dopo l’accettazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere cambiamento di stato e nuova identità del progetto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.11, pagina PDF 40"
+    },
+    {
+      "id": "si-c03-q061",
+      "topicId": "si-c03-t09",
+      "question": "Quali informazioni sono specifiche del sottotipo PROGETTO ACCETTATO nel Pattern 4?",
+      "answer": "Finanziamento e data d’inizio, che si aggiungono ai dati generali ereditati da PROGETTO.",
+      "detail": "La classe padre mantiene gli attributi condivisi; il sottotipo introduce attributi associati alla nuova condizione.",
+      "example": "Un progetto non approvato potrebbe non avere ancora finanziamento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non copiare tutti gli attributi del padre nel sottotipo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.11, pagina PDF 41"
+    },
+    {
+      "id": "si-c03-q062",
+      "topicId": "si-c03-t09",
+      "question": "Quali proprietà della gerarchia occorre sempre precisare applicando Pattern 4?",
+      "answer": "Se è totale o parziale, disgiunta o sovrapposta, e quale condizione determina l’appartenenza al sottotipo.",
+      "detail": "Il caso di accettazione non stabilisce da solo tutte le regole sulla sovrapposizione.",
+      "example": "PROGETTO ACCETTATO è riconosciuto dalla condizione di accettazione, non da un nome diverso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre automaticamente la totalità solo perché tutti gli esempi mostrati sono accettati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.11, pagina PDF 41"
+    },
+    {
+      "id": "si-c03-q063",
+      "topicId": "si-c03-t09",
+      "question": "Come usare Pattern 4 in un esempio di offerta energetica senza definirne lo schema definitivo?",
+      "answer": "Si può distinguere OFFERTA IN VALUTAZIONE da OFFERTA APPROVATA, aggiungendo nella seconda data e responsabile di approvazione.",
+      "detail": "L’esempio è un trasferimento didattico; lo storico completo delle approvazioni può richiedere eventi separati.",
+      "example": "OFFERTA APPROVATA eredita i dati generali dell’offerta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che questa gerarchia sia il modello finale di EnerPrice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.11, pagina PDF 41"
+    },
+    {
+      "id": "si-c03-q064",
+      "topicId": "si-c03-t09",
+      "question": "Qual è la differenza centrale tra Pattern 3 «storia» e Pattern 4 «evoluzione»?",
+      "answer": "Pattern 3 enfatizza condizioni storiche/attuali; Pattern 4 il raggiungimento di una nuova condizione con proprietà aggiuntive.",
+      "detail": "Entrambi impiegano generalizzazioni ma rispondono a esigenze diverse; nessuno garantisce da solo la cronologia completa.",
+      "example": "SOFTWARE OBSOLETO/AGGIORNATO vs PROGETTO/PROGETTO ACCETTATO.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare le due etichette come sinonimi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.12, pagina PDF 41"
+    },
+    {
+      "id": "si-c03-q065",
+      "topicId": "si-c03-t09",
+      "question": "Quali segnali testuali fanno pensare ai quattro pattern del manuale?",
+      "answer": "«Composto da» → parte-di; «più tentativi/diverse volte» → evento; «precedente/obsoleto» → storia; «una volta accettato» → evoluzione.",
+      "detail": "Sono indizi per avviare il ragionamento, non prove sufficienti a fissare vincoli.",
+      "example": "«Un cliente effettua più ordini nello stesso giorno» richiede valutare identità degli eventi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare pattern soltanto per parole chiave.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.12, pagina PDF 41"
+    },
+    {
+      "id": "si-c03-q066",
+      "topicId": "si-c03-t09",
+      "question": "Perché i pattern E-R non sono schemi obbligatori da copiare?",
+      "answer": "Perché una soluzione ricorrente deve essere adattata al dominio senza introdurre condizioni non previste dai requisiti.",
+      "detail": "La verifica finale resta sempre di correttezza e completezza.",
+      "example": "Storicizzare tutti gli stati può richiedere una struttura temporale diversa dalla sola gerarchia.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sacrificare un caso limite per aderire alla figura del pattern.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.12, pagina PDF 41"
+    },
+    {
+      "id": "si-c03-q067",
+      "topicId": "si-c03-t10",
+      "question": "Che cosa aggiunge l’analisi delle prestazioni alla correttezza concettuale E-R?",
+      "answer": "Stima il costo delle operazioni e l’occupazione di memoria attesa per confrontare alternative di rappresentazione.",
+      "detail": "Si basa su tavole dei volumi, delle operazioni e degli accessi, con ipotesi dichiarate.",
+      "example": "Due modelli semanticamente corretti possono richiedere quantità diverse di accessi per una stessa richiesta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere solo il modello con meno entità senza misurare le operazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.13, pagina PDF 41"
+    },
+    {
+      "id": "si-c03-q068",
+      "topicId": "si-c03-t10",
+      "question": "Quali sono i due indici di prestazione introdotti dalla docente?",
+      "answer": "Costo operazionale, inteso come accessi convenzionali richiesti dalle operazioni, e occupazione di memoria stimata da volumi e dimensioni.",
+      "detail": "Sono indici comparativi a livello di progetto, non tempi di risposta reali.",
+      "example": "Accessi di lettura/scrittura e byte teorici delle istanze.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non associare direttamente questi indicatori a euro o millisecondi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.13, pagina PDF 41"
+    },
+    {
+      "id": "si-c03-q069",
+      "topicId": "si-c03-t10",
+      "question": "Perché gli indici di prestazione concettuali sono stime e non misure effettive del DBMS?",
+      "answer": "Perché non tengono conto dettagliatamente di indici, cache, ottimizzatore, selettività, concorrenza e hardware reale.",
+      "detail": "Sono utili soprattutto per ragionare tra alternative a parità di ipotesi.",
+      "example": "Un COUNT può usare un indice senza leggere tutte le righe come nello schema teorico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che 1.150 accessi equivalgano a 1.150 ms.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.13, pagina PDF 41"
+    },
+    {
+      "id": "si-c03-q070",
+      "topicId": "si-c03-t10",
+      "question": "Quali elementi devono essere esplicitati prima di confrontare due schemi E-R sotto il profilo delle prestazioni?",
+      "answer": "I volumi attesi, le frequenze delle operazioni, gli accessi di lettura e scrittura, le dimensioni delle istanze e i relativi pesi.",
+      "detail": "Solo con le stesse assunzioni il confronto dei costi è interpretabile.",
+      "example": "Due scenari con frequenze di consultazione diverse possono favorire scelte opposte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare valori calcolati su orizzonti temporali diversi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.13, pagina PDF 41"
+    },
+    {
+      "id": "si-c03-q071",
+      "topicId": "si-c03-t11",
+      "question": "Quali concetti principali compongono il caso Software House ripreso nel Capitolo 3?",
+      "answer": "DIPENDENTE, PROGETTO, RELEASE e le relazioni PARTECIPAZIONE, DIREZIONE e VERSIONI, con gerarchie di personale.",
+      "detail": "I progetti hanno direttore e release; i dipendenti partecipano a progetti con quantità di mesi-uomo.",
+      "example": "Le specializzazioni comprendono TECNICO, SVILUPPATORE, PROGRAMMATORE e ANALISTA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’insieme dei dipendenti con le occorrenze delle partecipazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.14, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q072",
+      "topicId": "si-c03-t11",
+      "question": "Quali informazioni sono importanti per stimare i volumi del caso Software House?",
+      "answer": "Numero di progetti, dipendenti, release, occorrenze delle relazioni e popolazioni dei sottotipi, insieme alle medie di partecipazione.",
+      "detail": "Il caso conserva le ipotesi di lavoro della docente, non quantità reali di un’organizzazione.",
+      "example": "100 progetti, 500 dipendenti, 10 release e 20 partecipazioni per progetto in media.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non prendere le medie per vincoli imposti a ogni singolo oggetto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.14, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q073",
+      "topicId": "si-c03-t11",
+      "question": "Che cosa rappresenta la tavola dei volumi?",
+      "answer": "Il numero stimato di occorrenze di ogni entità e relazione dello schema nel carico atteso.",
+      "detail": "È una stima quantitativa per i successivi calcoli e non una lista di attributi o una query già eseguita.",
+      "example": "PROGETTO 100; RELEASE 1.000; PARTECIPAZIONE 2.000.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente la stessa cardinalità a tutti i progetti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.14.1, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q074",
+      "topicId": "si-c03-t11",
+      "question": "Quali volumi delle entità principali sono riportati dalla docente?",
+      "answer": "PROGETTO 100; RELEASE 1.000; DIPENDENTE 500.",
+      "detail": "Questi valori alimentano la valutazione di accessi e spazio.",
+      "example": "Con 100 progetti e 10 release medie si stimano 1.000 RELEASE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che ogni progetto deve avere esattamente dieci release.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.14.1, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q075",
+      "topicId": "si-c03-t11",
+      "question": "Quali volumi sono attribuiti ai sottotipi del personale?",
+      "answer": "TECNICO 200; SVILUPPATORE 100; PROGRAMMATORE 70; ANALISTA 30.",
+      "detail": "I sottotipi sono sottoinsiemi delle rispettive superclassi, non popolazioni aggiuntive da sommare ai 500 dipendenti.",
+      "example": "70 programmatori e 30 analisti costituiscono i 100 sviluppatori del caso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non calcolare 500 + 200 + 100 + 70 + 30 come numero di persone distinte.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.14.1, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q076",
+      "topicId": "si-c03-t11",
+      "question": "Quali volumi hanno le tre relazioni del caso Software House?",
+      "answer": "DIREZIONE 100; PARTECIPAZIONE 2.000; VERSIONI 1.000.",
+      "detail": "DIREZIONE conta un direttore per ciascuno dei 100 progetti; VERSIONI collega le 1.000 release; PARTECIPAZIONE 20 persone medie per progetto.",
+      "example": "V(PARTECIPAZIONE) = 100 × 20 = 2.000.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare la relazione PARTECIPAZIONE per la superclasse DIPENDENTE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.14.1, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q077",
+      "topicId": "si-c03-t11",
+      "question": "Perché la tavola stima 1.000 istanze di VERSIONI?",
+      "answer": "Perché considera 100 progetti con una media di 10 release per progetto, per un totale stimato di 1.000 collegamenti VERSIONI.",
+      "detail": "L’ipotesi è riferita alla media del carico, non alla cardinalità E-R massima.",
+      "example": "100 × 10 = 1.000.",
+      "formulas": [
+        {
+          "latex": "V(\\mathrm{VERSIONI})=100\\cdot10=1000",
+          "meaning": "Numero stimato di associazioni progetto–release."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confondere un volume medio con un vincolo obbligatorio di 10 release.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.14.1, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q078",
+      "topicId": "si-c03-t11",
+      "question": "Come si ricavano le 2.000 partecipazioni previste?",
+      "answer": "Moltiplicando 100 progetti per 20 dipendenti mediamente associati a ciascuno: 2.000 occorrenze della relazione PARTECIPAZIONE.",
+      "detail": "Lo stesso dipendente può partecipare a più progetti, generando più collegamenti.",
+      "example": "Un lavoratore presente in 4 progetti produce quattro PARTECIPAZIONE.",
+      "formulas": [
+        {
+          "latex": "V(\\mathrm{PARTECIPAZIONE})=100\\cdot20=2000",
+          "meaning": "Volume stimato dell’associazione."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non stimare 2.000 dipendenti distinti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.14.1, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q079",
+      "topicId": "si-c03-t11",
+      "question": "Con 500 dipendenti e 2.000 partecipazioni, che cosa significa la media di quattro partecipazioni per dipendente?",
+      "answer": "È il quoziente 2.000/500, una media sul carico complessivo che non obbliga ogni dipendente a partecipare esattamente a quattro progetti.",
+      "detail": "La distribuzione reale può essere eterogenea, purché coerente con i requisiti.",
+      "example": "Un dipendente può avere zero assegnazioni e un altro più di quattro.",
+      "formulas": [
+        {
+          "latex": "\\bar n=2000/500=4",
+          "meaning": "Partecipazioni medie per dipendente."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non dedurre da una media un minimo o massimo individuale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.14.1, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q080",
+      "topicId": "si-c03-t11",
+      "question": "Come si stimano i volumi delle relazioni in una traccia priva di conteggi espliciti?",
+      "answer": "Si parte dai volumi noti delle entità, si individua o ipotizza una media di partecipazione e si moltiplica, verificando le cardinalità.",
+      "detail": "Ogni ipotesi aggiuntiva deve essere dichiarata e verificata rispetto al dominio.",
+      "example": "80 commesse con 5 consegne medie → 400 CONSEGNA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare N come valore numerico della molteplicità media.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.14.2, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q081",
+      "topicId": "si-c03-t11",
+      "question": "Qual è la differenza fra cardinalità E-R e volume stimato?",
+      "answer": "La cardinalità vincola le partecipazioni ammissibili per un’istanza; il volume stima quante occorrenze esisteranno in un carico complessivo.",
+      "detail": "Una relazione (0,N) non stabilisce una media precisa.",
+      "example": "Nello stesso schema possono comparire 100 progetti e 1.000 release.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere «cardinalità 10» solo perché la media è dieci.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.14.2, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q082",
+      "topicId": "si-c03-t11",
+      "question": "Come verificare la coerenza tra volume stimato e gerarchie?",
+      "answer": "Controllare che il volume del sottotipo sia compatibile con la superclasse e che la lettura delle popolazioni rispetti eventuale sovrapposizione.",
+      "detail": "Nel caso i 100 SVILUPPATORE sono già DIPENDENTE, e PROGRAMMATORE e ANALISTA sono loro sottotipi.",
+      "example": "Programmatore 70 e Analista 30 rispetto a Sviluppatore 100.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non contare più volte una persona solo perché compare in più livelli di gerarchia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.14.2, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q083",
+      "topicId": "si-c03-t11",
+      "question": "Perché è utile una tavola dei volumi anche prima dell’implementazione del database?",
+      "answer": "Permette di valutare costi delle operazioni e memoria attesa sotto ipotesi note e individuare quali associazioni possono generare molti accessi.",
+      "detail": "È parte della documentazione concettuale di valutazione, non sostituisce benchmark fisici.",
+      "example": "PARTECIPAZIONE con 2.000 collegamenti pesa molto sull’operazione batch del caso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare una proiezione come misurazione di produzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.14.2, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q084",
+      "topicId": "si-c03-t12",
+      "question": "Che cosa contiene la tavola delle operazioni?",
+      "answer": "Descrizione di ciascuna operazione, tipo interattiva (I) o batch (B) e frequenza di esecuzione nel periodo.",
+      "detail": "È diversa dalla tavola dei volumi, che conta istanze di entità e associazioni.",
+      "example": "Op1 assegnare un dipendente; Op2 mostrare dettaglio; Op3 elaborazione per tutti i progetti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non annotare il numero delle entità al posto della frequenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.15, pagina PDF 42"
+    },
+    {
+      "id": "si-c03-q085",
+      "topicId": "si-c03-t12",
+      "question": "Quali sono le tre operazioni e le loro frequenze nel caso della docente?",
+      "answer": "Op1 assegnare un dipendente a un progetto: I, 10/giorno; Op2 mostrare progetto, release e direttore: I, 100/giorno; Op3 mostrare dipendenti per tutti i progetti: B, 5/giorno.",
+      "detail": "I pesi dell’esempio coincidono per I e B, ma il modello permette pesi diversi.",
+      "example": "Op3 attraversa tutti i progetti a ogni avvio batch.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare 5 batch/giorno con 5 progetti elaborati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.15, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q086",
+      "topicId": "si-c03-t12",
+      "question": "Che cosa registra una tavola degli accessi per una singola operazione?",
+      "answer": "Per ogni entità o relazione visitata indica il numero previsto di accessi e se si tratta di lettura (L/R) o scrittura (W).",
+      "detail": "Le somme degli accessi alimentano la formula del costo.",
+      "example": "Op2 legge 1 PROGETTO, 10 VERSIONI, 10 RELEASE, 1 DIREZIONE e 1 DIPENDENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere i 23 accessi di Op2 con 23 istanze persistenti dello stesso tipo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.15, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q087",
+      "topicId": "si-c03-t12",
+      "question": "Che differenza esiste tra L, R e W nelle tavole degli accessi?",
+      "answer": "L (lettura, usata nelle tavole italiane) e R (read) indicano letture; W (write) indica scritture.",
+      "detail": "La notazione può variare tra le slide; nel calcolo va distinta la somma delle letture dalla somma delle scritture.",
+      "example": "Op1 ha una W, Op2 solo L, Op3 solo R.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare R come una relazione E-R nella colonna tipo di accesso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.15, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q088",
+      "topicId": "si-c03-t12",
+      "question": "Qual è la formula del costo operazionale per un’operazione O di tipo T?",
+      "answer": "c(O_T) = f(O_T) × w_T × [α × NC_write + NC_read].",
+      "detail": "f è la frequenza del periodo; w_T il peso della tipologia; α pesa le scritture; NC_write e NC_read sono accessi per singola esecuzione.",
+      "example": "10 × 0,5 × (2 × 1 + 0) = 10 per Op1.",
+      "formulas": [
+        {
+          "latex": "c(O_T)=f(O_T)\\,w_T\\,[\\alpha\\,NC_{write}+NC_{read}]",
+          "meaning": "Costo in accessi convenzionali ponderati per periodo."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non moltiplicare due volte la frequenza né interpretare la formula come tempo di esecuzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.15.1, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q089",
+      "topicId": "si-c03-t12",
+      "question": "Che cosa rappresenta f(O_T) nella formula di costo?",
+      "answer": "La frequenza con cui l’operazione viene eseguita nel periodo di riferimento.",
+      "detail": "Nel caso tutti i costi sono giornalieri; la frequenza non è il numero di accessi interni alla singola esecuzione.",
+      "example": "Op2: f = 100 richieste al giorno.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il volume dei progetti al posto della frequenza delle chiamate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.15.1, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q090",
+      "topicId": "si-c03-t12",
+      "question": "Che cosa rappresenta w_T nella formula del costo?",
+      "answer": "Il peso assegnato alla tipologia di operazione T, per esempio interattiva oppure batch.",
+      "detail": "Può differire tra tipologie; nell’esempio della docente i due pesi sono entrambi 0,5.",
+      "example": "w_I = 0,5 e w_B = 0,5 nel caso Software House.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare 0,5 come probabilità che l’operazione riesca.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.15.1, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q091",
+      "topicId": "si-c03-t12",
+      "question": "Che cosa rappresenta α nella formula dei costi e quale valore assume nel caso?",
+      "answer": "È il moltiplicatore delle scritture rispetto alle letture; nell’esempio α = 2.",
+      "detail": "È un coefficiente convenzionale del modello, non un rapporto universale tra durata di UPDATE e SELECT in un DBMS.",
+      "example": "Una scrittura pesa due unità rispetto a una lettura di peso unitario.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamarlo fattore di conversione tra euro e secondi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.15.1, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q092",
+      "topicId": "si-c03-t12",
+      "question": "Come si definiscono NC_read e NC_write?",
+      "answer": "NC_read è il totale degli accessi in lettura e NC_write quello in scrittura richiesti da una singola esecuzione dell’operazione.",
+      "detail": "Vengono ricavati sommando le voci della tavola degli accessi, prima della frequenza giornaliera.",
+      "example": "Per Op2: NC_read = 23; NC_write = 0.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non includere già la frequenza nel numero NC per poi moltiplicarla nuovamente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.15.1, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q093",
+      "topicId": "si-c03-t12",
+      "question": "Quali parametri numerici adotta il caso Software House e a quale periodo si riferisce?",
+      "answer": "w_I = 0,5; w_B = 0,5; α = 2; frequenze e costi riferiti al giorno.",
+      "detail": "Sono ipotesi specifiche dell’esempio, non costanti fisiche o vincoli generali per batch e interattive.",
+      "example": "Op3 è B e usa comunque peso 0,5 come le operazioni I.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire automaticamente questi valori a ogni esercizio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.15.1, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q094",
+      "topicId": "si-c03-t12",
+      "question": "In quale unità si misura il risultato della formula del costo operazionale?",
+      "answer": "Unità convenzionali di accessi ponderati per periodo, nel caso «al giorno».",
+      "detail": "Non sono automaticamente byte, euro, CPU-secondi né millisecondi.",
+      "example": "c(Op2) = 1.150 unità convenzionali/giorno.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non convertire la cifra in durata o costo monetario senza dati ulteriori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.15.1, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q095",
+      "topicId": "si-c03-t12",
+      "question": "Come ricostruire una tavola degli accessi senza perdere componenti importanti?",
+      "answer": "Individuare il percorso di visita tra entità e relazioni, stimare quante occorrenze vengono attraversate e distinguere ciascun accesso in lettura/scrittura.",
+      "detail": "Bisogna includere anche le relazioni, non solo le entità visualizzate nella schermata.",
+      "example": "Op2 legge VERSIONI e DIREZIONE oltre a PROGETTO, RELEASE e DIPENDENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere gli accessi alle associazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.15, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q096",
+      "topicId": "si-c03-t12",
+      "question": "Perché la stessa entità può contribuire con più accessi a una sola operazione?",
+      "answer": "Perché l’operazione può visitare più occorrenze o rivisitare un insieme di dati attraverso diversi collegamenti.",
+      "detail": "Gli accessi non sono uguali alla cardinalità dell’entità nel database.",
+      "example": "Op3 accede a DIPENDENTE 2.000 volte attraverso PARTECIPAZIONE, pur avendo 500 persone distinte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non porre un limite agli accessi pari al numero di righe distinte.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.15, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q097",
+      "topicId": "si-c03-t13",
+      "question": "Quale azione rappresenta Op1 e quali accessi richiede secondo la slide?",
+      "answer": "Assegnare un dipendente a un progetto; una scrittura sulla relazione PARTECIPAZIONE, zero letture considerate.",
+      "detail": "La tavola didattica registra NC_write = 1 e NC_read = 0.",
+      "example": "Modificare l’insieme delle assegnazioni lavoratore-progetto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere letture non previste dalla tavola originale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.1, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q098",
+      "topicId": "si-c03-t13",
+      "question": "Come si ricava il costo giornaliero di Op1?",
+      "answer": "c(Op1) = 10 × 0,5 × (2 × 1 + 0) = 10 unità convenzionali al giorno.",
+      "detail": "La frequenza è 10/giorno, il peso I è 0,5 e l’unica scrittura viene pesata con α = 2.",
+      "example": "Il costo non equivale a dieci nuove entità DIPENDENTE.",
+      "formulas": [
+        {
+          "latex": "c(Op1)=10\\cdot0.5\\cdot(2\\cdot1+0)=10",
+          "meaning": "Costo ponderato giornaliero di una scrittura per chiamata."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non dimenticare il peso w_I prima di calcolare il totale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.1, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q099",
+      "topicId": "si-c03-t13",
+      "question": "Perché Op1 non ha costo pari a 20 nonostante 10 esecuzioni e α=2?",
+      "answer": "Perché il costo include anche il peso della tipologia w_I = 0,5, che dimezza il prodotto 10 × 2.",
+      "detail": "La presenza del peso non dipende dalla natura dell’operazione: è previsto dalla formula.",
+      "example": "10 × 0,5 × 2 = 10.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere w_T nella formula.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.1, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q100",
+      "topicId": "si-c03-t13",
+      "question": "Quali sono i cinque componenti della tavola degli accessi di Op2?",
+      "answer": "PROGETTO: 1 lettura; VERSIONI: 10; RELEASE: 10; DIREZIONE: 1; DIPENDENTE: 1.",
+      "detail": "La funzione mostra un progetto con release e direttore; traversa quindi sia entità sia associazioni.",
+      "example": "Le 10 release medie sono collegate da 10 VERSIONI.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non contare VERSIONI e RELEASE come un’unica visita indistinta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.2, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q101",
+      "topicId": "si-c03-t13",
+      "question": "Come si ricavano i 23 accessi di lettura di Op2?",
+      "answer": "Somma 1 PROGETTO + 10 VERSIONI + 10 RELEASE + 1 DIREZIONE + 1 DIPENDENTE = 23.",
+      "detail": "Tutti gli accessi sono letture nella tavola del caso.",
+      "example": "NC_read = 23 e NC_write = 0.",
+      "formulas": [
+        {
+          "latex": "NC_{read}(Op2)=1+10+10+1+1=23",
+          "meaning": "Letture per singola richiesta di dettaglio progetto."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non sostituire 23 con il numero complessivo di progetti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.2, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q102",
+      "topicId": "si-c03-t13",
+      "question": "Come si calcola il costo complessivo giornaliero di Op2?",
+      "answer": "c(Op2) = 100 × 0,5 × (2 × 0 + 23) = 1.150 unità convenzionali/giorno.",
+      "detail": "Le 100 richieste/giorno moltiplicano 23 accessi di lettura per richiesta, ponderati con 0,5.",
+      "example": "100 × 11,5 = 1.150.",
+      "formulas": [
+        {
+          "latex": "c(Op2)=100\\cdot0.5\\cdot23=1150",
+          "meaning": "Costo giornaliero della consultazione del dettaglio."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non usare la frequenza 100 per stimare il numero di progetti distinti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.2, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q103",
+      "topicId": "si-c03-t13",
+      "question": "Perché il costo di Op2 non usa α in modo effettivo?",
+      "answer": "Perché NC_write = 0: il termine α × NC_write è nullo, quindi il costo dipende solo dalle letture.",
+      "detail": "Il parametro α resta presente nella formula generale anche quando non influisce sul risultato.",
+      "example": "2 × 0 + 23 = 23.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non moltiplicare anche le letture per α.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.2, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q104",
+      "topicId": "si-c03-t13",
+      "question": "In Op2 perché si leggono sia VERSIONI sia RELEASE?",
+      "answer": "VERSIONI rappresenta il legame progetto–release, mentre RELEASE contiene i dati delle singole occorrenze; la tavola delle slide contabilizza entrambi.",
+      "detail": "La stima dipende dal percorso concettuale dei dati.",
+      "example": "10 legami VERSIONI e 10 entità RELEASE per un progetto medio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eliminare uno dei due accessi solo perché nella successiva implementazione potrebbe esistere una join ottimizzata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.2, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q105",
+      "topicId": "si-c03-t13",
+      "question": "Che cosa fa Op3, e quale differenza ha rispetto a Op2?",
+      "answer": "Op3 esamina per ogni progetto tutti i dipendenti associati, come elaborazione batch; Op2 mostra il dettaglio di un solo progetto.",
+      "detail": "Il carico di Op3 attraversa l’intero insieme stimato di progetti e partecipazioni.",
+      "example": "100 progetti e 2.000 associazioni per ogni avvio batch.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a Op3 le 10 release per progetto di Op2.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.3, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q106",
+      "topicId": "si-c03-t13",
+      "question": "Quali accessi effettua Op3 secondo la tavola della docente?",
+      "answer": "100 letture PROGETTO, 2.000 letture PARTECIPAZIONE e 2.000 letture DIPENDENTE, tutte per un’esecuzione batch.",
+      "detail": "Le visite a DIPENDENTE possono ripetersi sulla stessa persona lungo relazioni differenti.",
+      "example": "NC_read = 100 + 2.000 + 2.000.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire 2.000 visite con 500 individui distinti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.3, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q107",
+      "topicId": "si-c03-t13",
+      "question": "Come si ricavano i 4.100 accessi in lettura di Op3?",
+      "answer": "Somma 100 PROGETTO + 2.000 PARTECIPAZIONE + 2.000 DIPENDENTE = 4.100 per esecuzione.",
+      "detail": "Il totale si riferisce a un singolo batch, prima di applicare la frequenza 5/giorno.",
+      "example": "Accessi ai dipendenti effettuati tramite i 2.000 collegamenti.",
+      "formulas": [
+        {
+          "latex": "NC_{read}(Op3)=100+2000+2000=4100",
+          "meaning": "Accessi per singola esecuzione del batch."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non moltiplicare la tavola per cinque prima di inserirla nella formula.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.3, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q108",
+      "topicId": "si-c03-t13",
+      "question": "Perché Op3 legge 2.000 istanze DIPENDENTE pur essendoci solo 500 dipendenti stimati?",
+      "answer": "Perché conta gli accessi attraverso 2.000 partecipazioni: lo stesso dipendente può essere visitato più volte.",
+      "detail": "La tavola degli accessi non conteggia persone distinte ma visite durante l’elaborazione.",
+      "example": "Un dipendente su quattro progetti viene letto in quattro partecipazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre arbitrariamente il costo ipotizzando una cache non prevista nelle slide.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.3, pagina PDF 43"
+    },
+    {
+      "id": "si-c03-q109",
+      "topicId": "si-c03-t13",
+      "question": "Come si calcola il costo di Op3?",
+      "answer": "c(Op3) = 5 × 0,5 × (2 × 0 + 4.100) = 10.250 unità convenzionali/giorno.",
+      "detail": "Cinque avvii batch/giorno, peso batch 0,5, nessuna scrittura nella tavola.",
+      "example": "4.100 letture per batch × 5 × 0,5.",
+      "formulas": [
+        {
+          "latex": "c(Op3)=5\\cdot0.5\\cdot4100=10250",
+          "meaning": "Costo giornaliero della scansione batch."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non interpretare il fattore 5 come cinque progetti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.3, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q110",
+      "topicId": "si-c03-t13",
+      "question": "Come si distingue il significato di 4.100 e 5 in Op3?",
+      "answer": "4.100 è il numero di accessi per singola esecuzione; 5 è il numero giornaliero di esecuzioni.",
+      "detail": "Il modello tiene distinti carico per chiamata e frequenza.",
+      "example": "Il costo ponderato giornaliero è 4.100 × 5 × 0,5.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare 4.100 come frequenza giornaliera.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.3, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q111",
+      "topicId": "si-c03-t13",
+      "question": "Come si definisce il costo complessivo dello schema S nella trattazione della docente?",
+      "answer": "Somma dei costi ponderati delle operazioni previste: c(S) = Σ_i c(O_i).",
+      "detail": "I costi devono essere nello stesso periodo e derivare da tavole coerenti.",
+      "example": "c(Op1)+c(Op2)+c(Op3).",
+      "formulas": [
+        {
+          "latex": "c(S)=\\sum_i c(O_i)",
+          "meaning": "Somma dei costi giornalieri delle operazioni considerate."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non sommare accessi per singola esecuzione con costi già giornalizzati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.4, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q112",
+      "topicId": "si-c03-t13",
+      "question": "Qual è il costo complessivo finale della Software House e come si ottiene?",
+      "answer": "11.410 unità convenzionali di accesso ponderato per giorno = 10 + 1.150 + 10.250.",
+      "detail": "Il risultato è riferito ai tre carichi e ai pesi delle slide, non al costo fisico effettivo del DBMS.",
+      "example": "Op3 da sola contribuisce per 10.250, la quota più alta.",
+      "formulas": [
+        {
+          "latex": "c(S)=10+1150+10250=11410",
+          "meaning": "Costo complessivo giornaliero del caso."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non chiamare 11.410 byte, euro o millisecondi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.4, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q113",
+      "topicId": "si-c03-t13",
+      "question": "Quale delle tre operazioni domina il costo complessivo e perché?",
+      "answer": "Op3, l’elaborazione batch su tutti i progetti e le partecipazioni, con 10.250 unità/giorno.",
+      "detail": "Il peso giornaliero dipende tanto dai 4.100 accessi per avvio quanto dalle cinque esecuzioni e da w_B.",
+      "example": "Op1 pesa 10, Op2 1.150, Op3 10.250.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non concludere che ogni batch è necessariamente più oneroso di ogni operazione interattiva.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16.4, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q114",
+      "topicId": "si-c03-t13",
+      "question": "Qual è la sequenza di calcolo corretta per una domanda d’esame sui costi operazionali?",
+      "answer": "Costruire tavola dei volumi; identificare operazione e percorso; contare letture/scritture per esecuzione; applicare α e w; moltiplicare per frequenza; sommare i costi.",
+      "detail": "La docente richiede ipotesi e conti riproducibili, non solo il numero finale.",
+      "example": "Per Op2 prima 23 accessi poi ×100×0,5.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cominciare dalla moltiplicazione delle frequenze senza aver costruito la tavola.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q115",
+      "topicId": "si-c03-t13",
+      "question": "Perché la somma dei volumi della tavola non coincide col costo dello schema?",
+      "answer": "I volumi contano istanze attese; il costo conta visite di lettura/scrittura nei percorsi operativi, ponderate e ripetute secondo le frequenze.",
+      "detail": "La stessa entità può essere acceduta più volte anche quando il suo volume è limitato.",
+      "example": "500 DIPENDENTE nel database, ma 2.000 loro accessi in Op3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sommare tutte le entità come se ciascuna operazione le visitasse una sola volta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q116",
+      "topicId": "si-c03-t13",
+      "question": "Se il carico di lavoro cambia, quali valori della formula devono essere riconsiderati?",
+      "answer": "Frequenze f, accessi per esecuzione NC, pesi adottati e, se cambiano i dati, i volumi da cui si stimano gli accessi.",
+      "detail": "Il costo non è proprietà immutabile di un diagramma E-R indipendentemente dall’uso.",
+      "example": "Se Op2 passa da 100 a 200 richieste/giorno, a parità di altro il suo costo raddoppia.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mantenere il totale 11.410 dopo aver cambiato una frequenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q117",
+      "topicId": "si-c03-t13",
+      "question": "Perché il fattore α non misura il rapporto reale tra un’operazione SQL UPDATE e SELECT?",
+      "answer": "Perché pesa convenzionalmente le scritture nel modello didattico; il costo effettivo dipende da implementazione e DBMS.",
+      "detail": "I coefficienti 0,5 e 2 sono parametri della docente per confrontare i carichi.",
+      "example": "Nello stesso DBMS una lettura indicizzata e una scansione completa hanno costi molto diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non convertire direttamente l’accesso ponderato in tempo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.16, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q118",
+      "topicId": "si-c03-t14",
+      "question": "Qual è la formula generale di stima della memoria associata allo schema E-R?",
+      "answer": "Sommare, per ogni entità e relazione, il numero stimato di occorrenze moltiplicato per la dimensione media di una occorrenza.",
+      "detail": "È una misura semplificata dell’informazione memorizzata, prima dell’overhead fisico di un DBMS.",
+      "example": "500 DIPENDENTE × 12 byte ciascuno.",
+      "formulas": [
+        {
+          "latex": "M(S)=\\sum_{e\\in E} V(e)\\,size(e)+\\sum_{r\\in R}V(r)\\,size(r)",
+          "meaning": "Stima teorica delle dimensioni di entità e associazioni."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non dimenticare il contributo delle relazioni quando richiesto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.17, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q119",
+      "topicId": "si-c03-t14",
+      "question": "Che cosa significano V(x) e size(x) nella stima della memoria?",
+      "answer": "V(x) è il volume stimato delle istanze del costrutto; size(x) i byte medi di una istanza.",
+      "detail": "Il prodotto contribuisce alla memoria del modello; E e R includono entità e relazioni.",
+      "example": "Un’entità con 1.000 istanze da 16 byte contribuisce per 16.000 byte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare V come cardinalità minima o size come numero di attributi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.17, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q120",
+      "topicId": "si-c03-t14",
+      "question": "Perché nel calcolo di memoria si sommano entità e relazioni?",
+      "answer": "Perché le associazioni possono rappresentare informazione persistente e avere proprie occorrenze e dimensioni medie.",
+      "detail": "La scelta fisica di memorizzazione verrà definita successivamente, ma l’informazione concettuale va conteggiata nella stima proposta.",
+      "example": "PARTECIPAZIONE ha 2.000 occorrenze, ciascuna con i propri dati di legame.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ipotizzare che una relazione sia sempre gratuita in memoria.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.17, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q121",
+      "topicId": "si-c03-t14",
+      "question": "Quali dati usa la docente per stimare la memoria dell’entità DIPENDENTE?",
+      "answer": "500 dipendenti; NOME da 8 caratteri a 1 byte ciascuno; ANNO DI ASSUNZIONE da 4 byte.",
+      "detail": "Sono ipotesi semplificate della slide, non lunghezze universali dei dati testuali o numerici.",
+      "example": "Dimensione per persona: 8 + 4 = 12 B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire 8 caratteri con un numero variabile di byte senza dichiararlo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.17.1, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q122",
+      "topicId": "si-c03-t14",
+      "question": "Qual è la memoria teorica dei 500 DIPENDENTE della docente?",
+      "answer": "6.000 byte: 500 istanze × (8 + 4) byte.",
+      "detail": "Il calcolo non include indici, pagine, intestazioni di riga e overhead del DBMS.",
+      "example": "500 × 12 B = 6.000 B.",
+      "formulas": [
+        {
+          "latex": "M(\\mathrm{Dipendente})=500(8+4)=6000\\,\\mathrm{B}",
+          "meaning": "Stima teorica della slide per 500 istanze."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non presentare i 6.000 B come consumo reale su disco.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.17.1, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q123",
+      "topicId": "si-c03-t14",
+      "question": "Perché «8 caratteri = 8 byte» non vale in qualsiasi sistema?",
+      "answer": "Perché dipende dalla codifica e dai caratteri: in codifiche Unicode alcuni caratteri possono richiedere più byte.",
+      "detail": "La slide usa esplicitamente un’ipotesi di un byte per carattere per il proprio esercizio.",
+      "example": "NOME da otto caratteri è stimato 8 B solo nel modello semplificato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non generalizzare l’assunzione a database reali con UTF-8.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.17.1, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q124",
+      "topicId": "si-c03-t14",
+      "question": "Quali componenti reali di memoria vengono trascurate nella stima semplificata?",
+      "answer": "Overhead di righe e pagine, indici, codifica dei caratteri, metadati e dettagli di organizzazione fisica.",
+      "detail": "L’obiettivo è confrontare grandezze in un problema didattico, non prevedere la dimensione esatta sul disco.",
+      "example": "Un DBMS potrebbe usare pagine e strutture interne non comprese nei 6.000 B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare dimensione logica degli attributi a storage effettivo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.17, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q125",
+      "topicId": "si-c03-t14",
+      "question": "Come si può confrontare correttamente la memoria di due alternative concettuali?",
+      "answer": "Usando per entrambe le stesse ipotesi di codifica, dimensione media delle istanze, volumi e tipi di costrutti.",
+      "detail": "Differenze dovute a ipotesi diverse non dimostrano superiorità dello schema.",
+      "example": "Due modelli valutati con 1 byte/carattere e stessi volumi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare una stima senza overhead con una stima che lo include.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.17, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q126",
+      "topicId": "si-c03-t15",
+      "question": "Che cos’è una ridondanza informativa nella progettazione dei dati?",
+      "answer": "Un’informazione conservata anche se può essere ricavata da altri dati presenti nel sistema.",
+      "detail": "Può agevolare le letture ma consuma memoria e richiede controlli di aggiornamento e consistenza.",
+      "example": "Conservare NUMERO_RELEASE in PROGETTO anche se si può calcolare contando RELEASE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare qualsiasi ridondanza con un errore assoluto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q127",
+      "topicId": "si-c03-t15",
+      "question": "Qual è il trade-off fondamentale legato alle ridondanze secondo le slide?",
+      "answer": "Ridurre il costo di alcune operazioni di lettura può aumentare spazio, scritture e rischio di incoerenza.",
+      "detail": "L’opportunità della scelta dipende da frequenze e requisiti del carico, non da una preferenza universale.",
+      "example": "Contatore delle release letto spesso e aggiornato quando le release cambiano.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere solo in base al numero di SELECT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18, pagina PDF 44"
+    },
+    {
+      "id": "si-c03-q128",
+      "topicId": "si-c03-t15",
+      "question": "Quali ipotesi definiscono il confronto sul contatore delle release?",
+      "answer": "100 letture/giorno; 10 nuove release/giorno; 10 release medie per progetto; lettura peso 1, scrittura peso 2; w=1 in entrambe le alternative.",
+      "detail": "Sono numeri di un esempio originale e non vanno mescolati ai parametri delle tre operazioni della docente.",
+      "example": "Si confronta calcolo al momento della richiesta con contatore persistito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare w=0,5 dell’esempio precedente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18.1, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q129",
+      "topicId": "si-c03-t15",
+      "question": "Quante letture giornaliere servono senza contatore persistito?",
+      "answer": "1.100: 100 richieste × (1 lettura PROGETTO + 10 letture RELEASE).",
+      "detail": "La media di 10 release è una delle ipotesi dichiarate nell’esempio.",
+      "example": "100 × 11 = 1.100.",
+      "formulas": [
+        {
+          "latex": "L_{senza}=100(1+10)=1100",
+          "meaning": "Letture giornaliere senza contatore."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non ignorare la lettura della riga PROGETTO.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18.1, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q130",
+      "topicId": "si-c03-t15",
+      "question": "Quante letture giornaliere servono con contatore persistito?",
+      "answer": "100: una lettura di PROGETTO per ciascuna delle 100 richieste.",
+      "detail": "Il contatore evita il conteggio delle dieci RELEASE medie a ogni consultazione.",
+      "example": "100 × 1 = 100.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che con il contatore non vi siano mai scritture.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18.1, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q131",
+      "topicId": "si-c03-t15",
+      "question": "Quale differenza c’è nelle scritture giornaliere fra le due alternative?",
+      "answer": "Senza contatore 20 scritture/giorno (10 × 2); con contatore 30 (10 × 3).",
+      "detail": "L’alternativa con contatore deve aggiornare anche il valore ridondante.",
+      "example": "Il numero di nuove release è 10/giorno in entrambi gli scenari.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confrontare soltanto i conteggi delle letture.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18.1, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q132",
+      "topicId": "si-c03-t15",
+      "question": "Come si calcola il costo giornaliero senza contatore persistito?",
+      "answer": "1.100 letture ×1 + 20 scritture ×2 = 1.140 unità convenzionali/giorno.",
+      "detail": "In questo esempio si assume w=1 per entrambi i tipi di operazione.",
+      "example": "1.100 + 40 = 1.140.",
+      "formulas": [
+        {
+          "latex": "C_{senza}=1100+2\\cdot20=1140",
+          "meaning": "Costo nel confronto originale senza contatore."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non applicare un ulteriore fattore 0,5 tratto dalla Software House.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18.1, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q133",
+      "topicId": "si-c03-t15",
+      "question": "Come si calcola il costo giornaliero con contatore persistito?",
+      "answer": "100 letture ×1 + 30 scritture ×2 = 160 unità convenzionali/giorno.",
+      "detail": "Le 10 scritture extra rispetto all’alternativa senza contatore sono il prezzo di mantenimento del dato derivato.",
+      "example": "100 + 60 = 160.",
+      "formulas": [
+        {
+          "latex": "C_{con}=100+2\\cdot30=160",
+          "meaning": "Costo nel confronto originale con contatore."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non considerare il contatore «gratuito» in scrittura.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18.1, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q134",
+      "topicId": "si-c03-t15",
+      "question": "Quanto si risparmia nel confronto con/senza contatore e che cosa significa?",
+      "answer": "980 unità convenzionali/giorno nel carico ipotizzato: 1.140 − 160.",
+      "detail": "È un vantaggio nel modello semplificato; non una previsione universale del DBMS.",
+      "example": "Con letture meno frequenti e aggiornamenti molto frequenti il risultato potrebbe invertire segno.",
+      "formulas": [
+        {
+          "latex": "\\Delta C=1140-160=980",
+          "meaning": "Risparmio di costo operazionale ponderato al giorno."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non presentare 980 come risparmio in euro.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18.1, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q135",
+      "topicId": "si-c03-t15",
+      "question": "Qual è la memoria aggiuntiva del contatore nell’esempio?",
+      "answer": "400 byte: un valore aggiuntivo da 4 byte su ciascuno dei 100 progetti.",
+      "detail": "È la sola memoria del campo, senza overhead fisico.",
+      "example": "100 × 4 B = 400 B.",
+      "formulas": [
+        {
+          "latex": "M_{extra}=100\\cdot4\\,\\mathrm{B}=400\\,\\mathrm{B}",
+          "meaning": "Occupazione logica aggiuntiva del contatore."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non dimenticare lo spazio quando confronti i costi operativi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18.1, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q136",
+      "topicId": "si-c03-t15",
+      "question": "Che cosa occorre fare quando si inserisce o si elimina una release se si conserva un contatore?",
+      "answer": "Aggiornare coerentemente il valore derivato, idealmente nell’ambito della stessa transazione quando appropriato.",
+      "detail": "Senza sincronizzazione il contatore può divergere dalla realtà delle release registrate.",
+      "example": "Inserire una nuova RELEASE e incrementare NUMERO_RELEASE in PROGETTO.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che una colonna derivata si aggiorni spontaneamente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18.1, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q137",
+      "topicId": "si-c03-t15",
+      "question": "In quali condizioni il contatore potrebbe non convenire?",
+      "answer": "Se le consultazioni sono rare e gli aggiornamenti frequenti, oppure se costi di consistenza, memoria e complessità superano il risparmio in lettura.",
+      "detail": "Il caso a favore del contatore è legato al carico specifico scelto nel manuale.",
+      "example": "Un sistema con centinaia di scritture e una sola lettura giornaliera può avere un bilancio diverso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non generalizzare il risultato 160 vs 1.140.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q138",
+      "topicId": "si-c03-t15",
+      "question": "Perché un indice di database non coincide con una ridondanza E-R?",
+      "answer": "L’indice è una struttura di accesso fisico che può accelerare interrogazioni; la ridondanza è conservazione di un’informazione derivabile.",
+      "detail": "Entrambi hanno costi di spazio e manutenzione ma svolgono ruoli diversi, collocati in fasi progettuali distinte.",
+      "example": "Indice sulle release vs contatore del numero delle release.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare «indice» e «campo calcolato persistito» come sinonimi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q139",
+      "topicId": "si-c03-t15",
+      "question": "Perché i costi del contatore non determinano automaticamente la migliore implementazione fisica?",
+      "answer": "Perché il DBMS può ottimizzare i conteggi, usare indici e cache, e avere costi reali diversi dalla stima di accessi concettuali.",
+      "detail": "La decisione definitiva richiede anche test e misure nel contesto di esecuzione.",
+      "example": "Una query COUNT indicizzata può essere molto efficiente senza contatore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere confronto teorico e benchmark.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q140",
+      "topicId": "si-c03-t15",
+      "question": "Quali dimensioni occorre considerare insieme per scegliere fra due schemi corretti?",
+      "answer": "Fedeltà dei requisiti e dei vincoli, costo operativo, occupazione di memoria, aggiornamenti e rischio di incoerenza.",
+      "detail": "La correttezza semantica è un vincolo preliminare, non un fattore da sacrificare per risparmiare accessi.",
+      "example": "Non si elimina la possibilità di più tentativi d’esame solo per ottenere meno entità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non massimizzare una metrica ignorando tutte le altre.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.18, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q141",
+      "topicId": "si-c03-t16",
+      "question": "Quali documenti devono risultare dalla fase di progettazione concettuale secondo la docente?",
+      "answer": "Analisi dei requisiti, schema E-R, dizionario delle entità, dizionario delle relazioni, tabella delle business rules e tavole degli indici di stima.",
+      "detail": "La documentazione permette di verificare le scelte e preparare la progettazione logica.",
+      "example": "Schema della Software House con volumi delle entità e costo delle operazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non consegnare solo il diagramma senza vincoli e dizionari.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.19, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q142",
+      "topicId": "si-c03-t16",
+      "question": "Quale controllo è prioritario sull’analisi dei requisiti prima di concludere lo schema?",
+      "answer": "Verificare che oggetti, processi, operazioni e vincoli siano definiti senza ambiguità irrisolte.",
+      "detail": "Le ipotesi mancanti devono essere dichiarate o chiarite prima delle scelte implementative.",
+      "example": "«Un progetto può avere molti direttori?» deve essere risolto se incide sulle cardinalità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare minimi o chiavi senza fonte.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.19, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q143",
+      "topicId": "si-c03-t16",
+      "question": "Che cosa deve rendere verificabile il dizionario delle entità?",
+      "answer": "Significato di ciascuna classe, attributi e identificatori, con nomi univoci e definizioni coerenti col glossario.",
+      "detail": "Il dizionario integra la figura e limita ambiguità semantiche.",
+      "example": "Definire PROGETTO e la chiave che lo distingue.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare lo stesso nome per concetti differenti senza precisazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.19, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q144",
+      "topicId": "si-c03-t16",
+      "question": "Che cosa contiene il dizionario delle relazioni?",
+      "answer": "Significato delle associazioni, ruoli, partecipazioni, attributi del legame e cardinalità pertinenti.",
+      "detail": "Le definizioni devono essere coerenti con le business rules.",
+      "example": "PARTECIPAZIONE contiene l’allocazione in mesi-uomo del dipendente sul progetto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere PARTECIPAZIONE con DIREZIONE perché collegano le stesse entità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.19, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q145",
+      "topicId": "si-c03-t16",
+      "question": "Che ruolo ha la tabella delle business rules nella documentazione concettuale?",
+      "answer": "Registra vincoli e derivazioni non esprimibili completamente dalla notazione grafica E-R, per renderli controllabili.",
+      "detail": "Una cardinalità corretta non garantisce sempre vincoli tra relazioni diverse.",
+      "example": "Il direttore deve anche partecipare al progetto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare implicite regole necessarie al dominio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.19, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q146",
+      "topicId": "si-c03-t16",
+      "question": "Che cosa devono documentare le tavole di stima prima del passaggio alla fase logica?",
+      "answer": "Volumi previsti, operazioni e frequenze, accessi e dimensioni, specificando tutte le ipotesi numeriche.",
+      "detail": "L’obiettivo è poter ricostruire gli indici e motivare le alternative.",
+      "example": "Riportare w_I, w_B e α oltre ai risultati 10, 1.150, 10.250.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non riportare solo il totale dei costi senza le basi di calcolo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.19, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q147",
+      "topicId": "si-c03-t16",
+      "question": "Che cosa viene approfondito nel Capitolo 4 rispetto al risultato di questo capitolo?",
+      "answer": "Ristrutturazione dello schema, analisi delle ridondanze ed eliminazione delle generalizzazioni in vista della progettazione logica e della traduzione.",
+      "detail": "Il Capitolo 3 costruisce metodi e indici per valutare le scelte; non completa ancora la loro traduzione relazionale.",
+      "example": "Decisione di come rappresentare una gerarchia in tabelle nella fase successiva.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non anticipare la soluzione fisica mentre la semantica concettuale è ancora aperta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.19, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q148",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 1: uno schema per i prestiti contiene UTENTE e LIBRO ma non le date. Quale proprietà di qualità manca?",
+      "answer": "La completezza rispetto ai dati e alle operazioni: senza date non si conservano inizio e restituzione dei prestiti.",
+      "detail": "La notazione E-R può essere formalmente valida, ma non soddisfare il requisito di storicizzazione.",
+      "example": "Se lo stesso utente prende lo stesso libro più volte, occorre distinguere anche gli eventi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non definire lo schema corretto e completo solo perché contiene i due nomi principali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 45"
+    },
+    {
+      "id": "si-c03-q149",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 1: quale ulteriore problema emerge se un utente può prendere ripetutamente in prestito lo stesso libro?",
+      "answer": "Occorre distinguere le diverse occorrenze del prestito, ad esempio modellando un evento PRESTITO identificabile.",
+      "detail": "La coppia UTENTE–LIBRO non basta, se lo stesso collegamento si ripete in periodi differenti.",
+      "example": "Due prestiti dello stesso libro con date di inizio diverse devono restare separati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare una sola associazione senza identità dell’evento quando serve lo storico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 46"
+    },
+    {
+      "id": "si-c03-q150",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 2: partire da ORDINE e aggiungere via via CLIENTE, RIGA, PRODOTTO e PAGAMENTO quale strategia indica?",
+      "answer": "Inside-out, perché si esplora il dominio espandendosi da un nucleo iniziale ben definito.",
+      "detail": "La costruzione parte da un concetto centrale e segue i legami.",
+      "example": "ORDINE → CLIENTE e PRODOTTO → ulteriori informazioni connesse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamarlo top-down solo perché il primo concetto è generale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 46"
+    },
+    {
+      "id": "si-c03-q151",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 2: progettare catalogo e vendite separatamente, poi unirli, a quale strategia corrisponde?",
+      "answer": "Bottom-up: sottoschemi autonomi sviluppati localmente e successivamente integrati.",
+      "detail": "La difficoltà principale è riconciliare identità, definizioni e cardinalità del dominio comune.",
+      "example": "PRODOTTO nel catalogo deve avere lo stesso significato del PRODOTTO usato nelle vendite.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affiancare gli schemi senza validazione globale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 46"
+    },
+    {
+      "id": "si-c03-q152",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 3: quali livelli di raffinamento sono proposti per un sistema di gestione eventi?",
+      "answer": "Livello 0: EVENTO. Livello 1: ORGANIZZAZIONE, RISORSE, PARTECIPANTI. Livello 2: per esempio responsabile/sede, sala/attrezzature, persona/iscrizione.",
+      "detail": "I concetti intermedi non sono necessariamente tutti entità E-R definitive.",
+      "example": "Solo dopo si decide se ISCRIZIONE debba essere una relazione o un evento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non tradurre meccanicamente ogni riquadro in tabella.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 46"
+    },
+    {
+      "id": "si-c03-q153",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 3: perché la proposta di raffinamento non implica un unico diagramma E-R definitivo?",
+      "answer": "Perché il raffinamento chiarisce progressivamente il dominio, mentre autonomia, cardinalità e identificatori dipendono dai requisiti di dettaglio.",
+      "detail": "L’obiettivo didattico è la progressione del livello di astrazione.",
+      "example": "ISCRIZIONE può avere proprie date e più occorrenze, richiedendo una entità evento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non supporre che l’elenco di concetti sia una specifica logica completa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 46"
+    },
+    {
+      "id": "si-c03-q154",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 4: Marketing usa CLIENTE_TARGET e Pricing SEGMENTO. Qual è il primo passo prima di integrarli?",
+      "answer": "Chiarire con i responsabili le definizioni, i livelli di granularità e se i due concetti coincidono o sono collegati.",
+      "detail": "L’eventuale integrazione richiede identità e cardinalità verificate.",
+      "example": "Un target può contenere diversi profili di consumo, e quindi non essere equivalente al segmento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non unire due oggetti perché sembrano sinonimi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 46"
+    },
+    {
+      "id": "si-c03-q155",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 4: che fare se CLIENTE_TARGET e SEGMENTO rappresentano realtà diverse?",
+      "answer": "Mantenerli distinti e modellare la relazione corretta tra essi con cardinalità motivate.",
+      "detail": "Se coincidono davvero, si può progettare un’entità condivisa e unificare gli attributi pertinenti.",
+      "example": "TARGET N:1 SEGMENTO oppure 1:N soltanto se supportato da un requisito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre uno specifico rapporto 1:1 senza evidenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 46"
+    },
+    {
+      "id": "si-c03-q156",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 5: quando AZIENDA non è più un semplice attributo di DIPENDENTE?",
+      "answer": "Quando occorre conservarne identità, sede, partita IVA e collegamenti con molti dipendenti.",
+      "detail": "RC1 porta a entità AZIENDA; RC2 a relazione LAVORA con DIPENDENTE.",
+      "example": "Trovare tutti i lavoratori della medesima azienda identificata dalla partita IVA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non duplicare i dati dell’azienda su tutti i dipendenti come unica rappresentazione concettuale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 46"
+    },
+    {
+      "id": "si-c03-q157",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 5: quale informazione permette di scegliere il modello «AZIENDA entità» invece dell’attributo?",
+      "answer": "La richiesta di gestire informazioni autonome sulle aziende e interrogarle indipendentemente dai dipendenti.",
+      "detail": "Un’esigenza diversa può produrre una modellazione diversa anche partendo da una frase iniziale simile.",
+      "example": "Azienda con sede e partita IVA, ricercata per mostrare tutti i dipendenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che ogni nome di azienda deve essere sempre entità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 46"
+    },
+    {
+      "id": "si-c03-q158",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 6: come rappresentare FACOLTÀ con almeno un corso e CORSO che appartiene a una sola facoltà?",
+      "answer": "Relazione FACOLTÀ–COMPRENDE–CORSO con FACOLTÀ (1,N) e CORSO (1,1).",
+      "detail": "I minimi e i massimi derivano dal testo della traccia, non dal verbo «comprende».",
+      "example": "Una facoltà ha almeno un corso; un corso ha esattamente una facoltà.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire le coppie di cardinalità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 46"
+    },
+    {
+      "id": "si-c03-q159",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 6: quale modifica dei requisiti cambierebbe la partecipazione minima di FACOLTÀ?",
+      "answer": "Se fosse ammessa una facoltà appena istituita senza corsi, il minimo potrebbe passare da 1 a 0.",
+      "detail": "Le cardinalità dipendono da stati ammissibili e processi organizzativi.",
+      "example": "FACOLTÀ (0,N) consentirebbe l’assenza di corsi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non variare il minimo senza una modifica o precisazione del dominio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 46"
+    },
+    {
+      "id": "si-c03-q160",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 7: come modellare tentativi ripetuti dello stesso esame per uno studente?",
+      "answer": "Introducendo TENTATIVO o ESAME come entità evento, collegata esattamente a uno studente e un corso e dotata di identificatore proprio.",
+      "detail": "Data, ora ed esito caratterizzano la singola occorrenza.",
+      "example": "Uno studente può avere due tentativi dello stesso corso in appelli diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare la sola coppia studente–corso come chiave.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 47"
+    },
+    {
+      "id": "si-c03-q161",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 7: è sufficiente usare STUDENTE+ CORSO+ DATA come identificatore di un tentativo?",
+      "answer": "Solo se le regole del dominio garantiscono unicità; altrimenti serve ora, progressivo o identificatore autonomo.",
+      "detail": "Il manuale propone un ID_TENTATIVO oppure una combinazione davvero univoca.",
+      "example": "Due esami nello stesso giorno potrebbero richiedere un’informazione aggiuntiva.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare unicità che il testo non assicura.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 47"
+    },
+    {
+      "id": "si-c03-q162",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 8: come classificare «versioni software obsolete e aggiornate» e «progetto dopo accettazione»?",
+      "answer": "Il primo come Pattern 3 (storia/stati); il secondo come Pattern 4 (evoluzione che introduce proprietà).",
+      "detail": "Entrambi impiegano gerarchie, ma rispondono a esigenze differenti.",
+      "example": "SOFTWARE OBSOLETO vs PROGETTO ACCETTATO con importo finanziato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare i due pattern come identici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 47"
+    },
+    {
+      "id": "si-c03-q163",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 8: se sono richieste tutte le modifiche di versione con intervalli temporali, che cosa va aggiunto?",
+      "answer": "Una struttura temporale esplicita, per esempio VERSIONE con decorrenza e fine, perché la sola gerarchia non conserva la sequenza completa.",
+      "detail": "La precisazione è compatibile con il Pattern 3 senza sostituirne lo scopo didattico.",
+      "example": "Da uno stato attuale non si deducono necessariamente tutte le versioni precedenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare «storico» sinonimo di una sola classificazione obsoleto/aggiornato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 47"
+    },
+    {
+      "id": "si-c03-q164",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 9: 80 commesse con 5 consegne medie e 12 assegnazioni medie. Quali volumi si stimano?",
+      "answer": "400 CONSEGNA e 960 ASSEGNAZIONE.",
+      "detail": "Si moltiplica il numero delle commesse per la media di ciascuna relazione, senza confondere i due costrutti.",
+      "example": "80 × 5 = 400; 80 × 12 = 960.",
+      "formulas": [
+        {
+          "latex": "V(CONSEGNA)=80\\cdot5=400",
+          "meaning": "Stima del primo volume."
+        },
+        {
+          "latex": "V(ASSEGNAZIONE)=80\\cdot12=960",
+          "meaning": "Stima del secondo volume."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non ricavare da questi numeri una cardinalità massima.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 47"
+    },
+    {
+      "id": "si-c03-q165",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 9: che differenza c’è tra 5 consegne medie e cardinalità (0,N)?",
+      "answer": "Cinque è un’ipotesi statistica di carico; (0,N) ammette un numero variabile, senza fissare la media né il massimo numerico.",
+      "detail": "La stima non deve alterare la semantica del diagramma.",
+      "example": "Una commessa può avere 2 consegne e un’altra 8 pur mantenendo una media 5.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire N con 5 nella cardinalità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 47"
+    },
+    {
+      "id": "si-c03-q166",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 10: un’operazione 40 volte/giorno legge 6 elementi e scrive 2, con w=0,5 e α=2. Qual è il costo?",
+      "answer": "200 unità convenzionali/giorno: 40 × 0,5 × (6 + 2 × 2).",
+      "detail": "Il conteggio degli accessi è per esecuzione; la frequenza è applicata una volta sola.",
+      "example": "40 × 0,5 × 10 = 200.",
+      "formulas": [
+        {
+          "latex": "c(O)=40\\cdot0.5\\cdot(6+2\\cdot2)=200",
+          "meaning": "Costo ponderato giornaliero."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non dimenticare che due scritture pesano quattro unità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 47"
+    },
+    {
+      "id": "si-c03-q167",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 10: che cosa accade al costo se si sommano le letture ma si dimentica α?",
+      "answer": "Si sottostima il costo nel modello dato, perché le 2 scritture devono pesare complessivamente 4 e non 2 unità.",
+      "detail": "È un errore di applicazione della formula, non una diversa scelta tecnica del DBMS.",
+      "example": "Senza α si otterrebbe 160 anziché 200.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare i pesi solo al totale delle letture.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 47"
+    },
+    {
+      "id": "si-c03-q168",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 11: quanto occupano teoricamente 1.200 istanze con 24 B più due interi da 4 B?",
+      "answer": "38.400 B: ogni occorrenza è 24 + 4 + 4 = 32 byte, quindi 1.200 × 32.",
+      "detail": "La stima esclude overhead fisico di record, pagine e indici.",
+      "example": "1.200 × 32 = 38.400 byte.",
+      "formulas": [
+        {
+          "latex": "M=1200(24+4+4)=38400\\,\\mathrm{B}",
+          "meaning": "Stima semplificata della memoria."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non confondere 24 byte con 24 caratteri Unicode indipendentemente dalla codifica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 47"
+    },
+    {
+      "id": "si-c03-q169",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 11: perché i 38.400 B non sono una stima esatta dello spazio su disco?",
+      "answer": "Non includono costi delle strutture interne del DBMS e assumono dimensioni in byte già note per ogni campo.",
+      "detail": "Se il campo da 24 B fosse invece di 24 caratteri Unicode la codifica andrebbe precisata.",
+      "example": "UTF-8 può occupare più byte per alcuni caratteri.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare l’esercizio concettuale in un benchmark.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 47"
+    },
+    {
+      "id": "si-c03-q170",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 12: quale risparmio di letture produce un contatore per 200 consultazioni da 8 a 1 lettura?",
+      "answer": "1.400 accessi in lettura risparmiati al giorno: 200 × (8 − 1).",
+      "detail": "Il vantaggio è differenziale, prima di considerare la scrittura extra per aggiornare il contatore.",
+      "example": "200 × 7 = 1.400.",
+      "formulas": [
+        {
+          "latex": "\\Delta L=200(8-1)=1400",
+          "meaning": "Letture giornaliere risparmiate."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non dedurre già da questo il risparmio netto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 47"
+    },
+    {
+      "id": "si-c03-q171",
+      "topicId": "si-c03-t17",
+      "question": "Esercizio 12: con 12 aggiornamenti extra e α=2, qual è il vantaggio netto giornaliero del contatore?",
+      "answer": "1.376 unità convenzionali: 1.400 letture risparmiate − 12 × 2 = 24 unità aggiuntive di scrittura.",
+      "detail": "Il risultato è valido per la sola componente differenziale e ignora spazio/overhead come richiesto dalla traccia.",
+      "example": "1.400 − 24 = 1.376.",
+      "formulas": [
+        {
+          "latex": "\\Delta C=1400-12\\cdot2=1376",
+          "meaning": "Risparmio ponderato netto, date le ipotesi."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non sottrarre 12 invece di 24, né chiamare 1.376 un risparmio in euro.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.20, pagina PDF 47"
+    },
+    {
+      "id": "si-c03-q172",
+      "topicId": "si-c03-t18",
+      "question": "Autoverifica: uno schema completo può essere semanticamente scorretto? Spiega con un esempio.",
+      "answer": "Sì. Può rappresentare tutti i dati e le operazioni ma ammettere stati vietati dai requisiti, per esempio cardinalità non corrette.",
+      "detail": "Completezza e correttezza semantica sono due verifiche distinte.",
+      "example": "Un dipartimento con due università quando il testo ne impone una sola.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare «completo» come sinonimo di «corretto».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.21, pagina PDF 47"
+    },
+    {
+      "id": "si-c03-q173",
+      "topicId": "si-c03-t18",
+      "question": "Autoverifica: perché inside-out deve concludersi con la verifica del dominio complessivo?",
+      "answer": "Perché l’espansione da un concetto centrale non assicura di intercettare requisiti periferici non connessi direttamente al nucleo.",
+      "detail": "La risposta deve evidenziare il limite di copertura, non soltanto la facilità del metodo.",
+      "example": "Dal nucleo OFFERTA potrebbero restare fuori funzioni di gestione utenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare completo il modello senza controllo sui requisiti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.21, pagina PDF 48"
+    },
+    {
+      "id": "si-c03-q174",
+      "topicId": "si-c03-t18",
+      "question": "Autoverifica: quali tre informazioni occorrono per riconoscere un pattern senza inventare vincoli?",
+      "answer": "Il fenomeno da rappresentare, le regole di identità/partecipazione e l’eventuale evoluzione o ripetibilità nel tempo.",
+      "detail": "La tabella dei pattern è una guida diagnostica, non una libreria di soluzioni obbligatorie.",
+      "example": "«Stesso cliente ordina più volte» suggerisce di distinguere gli eventi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fermarti al verbo utilizzato nella traccia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.21, pagina PDF 48"
+    },
+    {
+      "id": "si-c03-q175",
+      "topicId": "si-c03-t18",
+      "question": "Autoverifica: perché lo stesso DIPENDENTE può essere acceduto 2.000 volte anche con 500 istanze nel database?",
+      "answer": "Perché il numero di accessi conta visite attraverso le partecipazioni, non persone distinte.",
+      "detail": "Un’operazione batch può accedere più volte alla stessa istanza.",
+      "example": "2.000 legami PARTECIPAZIONE richiamano 2.000 letture DIPENDENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire gli accessi per visita con COUNT DISTINCT.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.21, pagina PDF 48"
+    },
+    {
+      "id": "si-c03-q176",
+      "topicId": "si-c03-t18",
+      "question": "Autoverifica: quali elementi della tabella degli accessi servono prima di usare la formula?",
+      "answer": "Per ciascuna entità e relazione visitata: quante letture, quante scritture e la quantità per esecuzione.",
+      "detail": "Solo dopo si applicano frequenza, peso dell’operazione e peso delle scritture.",
+      "example": "Op2 = 23 L, 0 W; f = 100, w = 0,5.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sommare frequenze a numeri di accessi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.21, pagina PDF 48"
+    },
+    {
+      "id": "si-c03-q177",
+      "topicId": "si-c03-t18",
+      "question": "Autoverifica: come giustificare che l’analisi delle prestazioni di uno schema E-R è comparativa?",
+      "answer": "È costruita con stime, ipotesi di carico e pesi convenzionali; serve a confrontare alternative, non a prevedere tempi reali.",
+      "detail": "Il comportamento reale del DBMS dipende da caratteristiche fisiche non rappresentate nella tavola.",
+      "example": "Op3 = 10.250 unità ponderate non significa 10.250 millisecondi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare l’indice convenzionale in SLA.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.21, pagina PDF 48"
+    },
+    {
+      "id": "si-c03-q178",
+      "topicId": "si-c03-t18",
+      "question": "Autoverifica: come distingui la memoria stimata dal volume delle entità?",
+      "answer": "Il volume è il numero di occorrenze; la memoria stimata è il volume moltiplicato per la dimensione media in byte di un’occorrenza.",
+      "detail": "La memoria complessiva somma contributi delle entità e delle associazioni.",
+      "example": "500 × 12 B = 6.000 B per DIPENDENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere «memoria 500» quando 500 è il volume.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.21, pagina PDF 48"
+    },
+    {
+      "id": "si-c03-q179",
+      "topicId": "si-c03-t18",
+      "question": "Autoverifica: qual è la domanda manageriale fondamentale dietro una ridondanza?",
+      "answer": "Se il risparmio in lettura giustifica memoria aggiuntiva, scritture, manutenzione e rischio di incoerenza per il carico previsto.",
+      "detail": "La decisione segue qualità e correttezza dei dati e usa stime con ipotesi dichiarate.",
+      "example": "Contatore delle release: favorevole nel caso letto spesso, meno sicuro con molte scritture.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non valutare esclusivamente la velocità di consultazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.21, pagina PDF 48"
+    },
+    {
+      "id": "si-c03-q180",
+      "topicId": "si-c03-t18",
+      "question": "Qual è la risposta sintetica della fonte alla differenza fra top-down e strategia mista?",
+      "answer": "Il top-down raffina uno schema generale; la strategia mista parte da concetti principali e scheletro, decompone e reintegra i sottoschemi.",
+      "detail": "Nella risposta breve d’esame occorre chiarire il movimento di costruzione.",
+      "example": "Scomporre OFFERTA in aree locali e riconciliarle è mista.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre mista a un semplice top-down con più passaggi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.22, pagina PDF 48"
+    },
+    {
+      "id": "si-c03-q181",
+      "topicId": "si-c03-t18",
+      "question": "Come spiegare in poche parole RC1, RC2 e RC3 come richiesto dall’autoverifica?",
+      "answer": "RC1 = entità con esistenza autonoma; RC2 = relazione fra entità; RC3 = generalizzazione per casi particolari.",
+      "detail": "La scelta si verifica poi sulla semantica del requisito.",
+      "example": "Azienda, Lavora, Progetto Accettato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare che ogni verbo è automaticamente una relazione corretta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.22, pagina PDF 48"
+    },
+    {
+      "id": "si-c03-q182",
+      "topicId": "si-c03-t18",
+      "question": "Qual è la risposta sintetica sul perché AZIENDA come attributo non equivalga a un’entità?",
+      "answer": "L’attributo è un valore associato al dipendente; l’entità AZIENDA ha identità e informazioni proprie e può partecipare ad altre relazioni.",
+      "detail": "È la differenza di autonomia concettuale del fatto rappresentato.",
+      "example": "L’indirizzo e la partita IVA dell’azienda non sono proprietà individuali del dipendente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare solo il formato grafico del modello.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.22, pagina PDF 48"
+    },
+    {
+      "id": "si-c03-q183",
+      "topicId": "si-c03-t18",
+      "question": "Qual è la risposta sintetica alla domanda «l’entità evento è sempre necessaria per un esame?»?",
+      "answer": "Serve quando occorre distinguere occorrenze ripetute con propri attributi e identificatori; non basta il nome del fatto.",
+      "detail": "Il caso della docente prevede tentativi multipli studente–corso.",
+      "example": "ESAME distinguibile per identificativo oppure chiave composita valida.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiungere entità senza una regola di identità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.22, pagina PDF 48"
+    },
+    {
+      "id": "si-c03-q184",
+      "topicId": "si-c03-t18",
+      "question": "Come rispondere alla domanda «quali parametri usa il costo operazionale nelle slide»?",
+      "answer": "Frequenza, peso della tipologia, numero di letture, numero di scritture e coefficiente α delle scritture.",
+      "detail": "Nel caso w_I = w_B = 0,5 e α = 2, con periodo giornaliero.",
+      "example": "c(O_T) = f × w × (αW + R).",
+      "formulas": [
+        {
+          "latex": "c(O_T)=f(O_T)\\,w_T(\\alpha NC_{write}+NC_{read})",
+          "meaning": "Parametri del costo del modello didattico."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non elencare solo letture e scritture senza pesi e frequenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.22, pagina PDF 48"
+    },
+    {
+      "id": "si-c03-q185",
+      "topicId": "si-c03-t18",
+      "question": "Come rispondere alla domanda «da dove provengono i 23 accessi di Op2»?",
+      "answer": "PROGETTO 1 + VERSIONI 10 + RELEASE 10 + DIREZIONE 1 + DIPENDENTE 1.",
+      "detail": "La tavola segue i collegamenti richiesti dal dettaglio del progetto.",
+      "example": "Somma = 23 letture per esecuzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare le associazioni, VERSIONI e DIREZIONE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.22, pagina PDF 48"
+    },
+    {
+      "id": "si-c03-q186",
+      "topicId": "si-c03-t18",
+      "question": "Quali ipotesi sono indispensabili per spiegare i 6.000 B di DIPENDENTE?",
+      "answer": "500 occorrenze, nome stimato 8 byte, anno di assunzione 4 byte, overhead non conteggiato.",
+      "detail": "La fonte precisa che un carattere può richiedere più di un byte fuori dall’ipotesi semplificata.",
+      "example": "500 × (8 + 4) B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere dimensioni universali del DBMS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.22, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q187",
+      "topicId": "si-c03-t18",
+      "question": "Come rispondere alla domanda «perché una ridondanza peggiora le scritture»?",
+      "answer": "Perché ogni modifica dei dati sorgente può richiedere un aggiornamento coerente del valore derivato memorizzato, aumentando il lavoro.",
+      "detail": "Un contatore errato è un problema di integrità oltre che di costo operativo.",
+      "example": "Cancellare una RELEASE richiede decrementare NUMERO_RELEASE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare le scritture aggiuntive un costo nullo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.22, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q188",
+      "topicId": "si-c03-t19",
+      "question": "Problema A: quali primi passaggi esprime una strategia mista per una scuola con studenti, corsi, docenti, iscrizioni e pagamenti?",
+      "answer": "Definire uno scheletro di concetti principali, modellare sottoschemi per didattica e amministrazione, poi integrarli con definizioni e vincoli coerenti.",
+      "detail": "Il criterio di controllo del manuale richiede scheletro, sottoschemi e verifica di integrazione.",
+      "example": "STUDENTE e CORSO nel nucleo, ISCRIZIONE e PAGAMENTO nei sottodomini.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non partire dalla scelta delle tabelle senza analizzare la semantica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.23, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q189",
+      "topicId": "si-c03-t19",
+      "question": "Problema A: quali conflitti di integrazione dovrebbe controllare il progetto della scuola?",
+      "answer": "Codici identificativi, significato di iscrizione, legami tra studente e corso, periodicità dei pagamenti e cardinalità delle relazioni condivise.",
+      "detail": "Sono criteri di verifica applicati all’esercizio, non regole esplicitate come cardinalità dalla traccia.",
+      "example": "Una «iscrizione» può riferirsi a un corso o a un anno accademico: va chiarito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare il vincolo di una sola iscrizione per studente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.23, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q190",
+      "topicId": "si-c03-t19",
+      "question": "Problema B: quando l’incarico di un allenatore deve essere modellato come evento storico?",
+      "answer": "Quando una persona può cambiare allenatore e occorre conservare più incarichi con periodi di validità.",
+      "detail": "Una relazione semplice che rappresenta solo l’allenatore corrente non ricostruisce il passato.",
+      "example": "INCARICO_ALLENATORE con data inizio e fine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere relazione attuale e storico degli incarichi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.23, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q191",
+      "topicId": "si-c03-t19",
+      "question": "Problema B: quali due alternative confronta la traccia della palestra?",
+      "answer": "Una semplice relazione persona–allenatore per lo stato corrente e un’entità o collegamento storico INCARICO che distingue intervalli successivi.",
+      "detail": "La seconda è necessaria se i periodi ripetuti devono essere conservati.",
+      "example": "Un atleta lavora con lo stesso allenatore in due periodi differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre che cambi allenatore una sola volta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.23, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q192",
+      "topicId": "si-c03-t19",
+      "question": "Problema C: 40 reparti e 120 addetti, ciascuno segue mediamente tre reparti. Qual è V(ASSEGNAZIONE)?",
+      "answer": "360 associazioni: 120 × 3, verificando coerenza con le cardinalità ammesse.",
+      "detail": "Il numero 40 di reparti descrive un’entità, non sostituisce la media per addetto.",
+      "example": "Ogni addetto crea mediamente tre legami, quindi 360.",
+      "formulas": [
+        {
+          "latex": "V(ASSEGNAZIONE)=120\\cdot3=360",
+          "meaning": "Volume atteso della relazione per i 120 addetti."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non calcolare 40 × 120 × 3.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.23, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q193",
+      "topicId": "si-c03-t19",
+      "question": "Problema C: con 360 associazioni e 40 reparti si può affermare che ognuno ha nove addetti?",
+      "answer": "No. Nove è solo la media 360/40, non la partecipazione obbligatoria di ogni reparto.",
+      "detail": "Il volume aggregato non definisce la distribuzione.",
+      "example": "Un reparto può avere cinque addetti e un altro tredici.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere media e cardinalità minima.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.23, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q194",
+      "topicId": "si-c03-t19",
+      "question": "Problema D: frequenza 60/giorno, w=0,5, 18 letture, 4 scritture e α=2. Qual è il costo?",
+      "answer": "780 unità convenzionali/giorno: 60 × 0,5 × (18 + 2 × 4).",
+      "detail": "Si calcola prima il costo per esecuzione (26 accessi ponderati), poi la frequenza e il peso.",
+      "example": "30 × 26 = 780.",
+      "formulas": [
+        {
+          "latex": "c(O)=60\\cdot0.5(18+2\\cdot4)=780",
+          "meaning": "Costo ponderato del problema D."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non dimenticare le quattro scritture pesate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.23, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q195",
+      "topicId": "si-c03-t19",
+      "question": "Problema D: perché la risposta corretta non è 660?",
+      "answer": "Perché 660 risulterebbe da 60 × 0,5 × (18+4) senza applicare il coefficiente α=2 alle scritture.",
+      "detail": "La traccia attribuisce un costo doppio alle scritture.",
+      "example": "18 + 8 = 26, non 22.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare le scritture come letture semplici quando α è diverso da 1.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.23, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q196",
+      "topicId": "si-c03-t19",
+      "question": "Problema E: con 1.000 consultazioni da 5 letture ridotte a 1, qual è il risparmio lordo in letture?",
+      "answer": "4.000 letture/giorno: (5−1) × 1.000.",
+      "detail": "Il vantaggio netto deve considerare le scritture aggiuntive per conservare il dato derivato.",
+      "example": "Con 50 aggiornamenti extra e α=2, il costo delle scritture è 100.",
+      "formulas": [
+        {
+          "latex": "\\Delta L=1000(5-1)=4000",
+          "meaning": "Risparmio lordo delle letture."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non fermarsi al risparmio lordo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.23, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q197",
+      "topicId": "si-c03-t19",
+      "question": "Problema E: quale risparmio netto si ottiene se la persistenza aggiunge 50 scritture/giorno, α=2 e w=1?",
+      "answer": "3.900 unità convenzionali/giorno: 4.000 letture risparmiate − 50 × 2.",
+      "detail": "È un confronto semplificato che ignora memoria e overhead, come specificato dalla traccia.",
+      "example": "4.000 − 100 = 3.900.",
+      "formulas": [
+        {
+          "latex": "\\Delta C=4000-50\\cdot2=3900",
+          "meaning": "Risparmio netto del problema E."
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non presentare il risultato come universale per ogni DBMS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.23, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q198",
+      "topicId": "si-c03-t19",
+      "question": "Quali aspetti mancano volutamente dalle tracce autonome di consolidamento?",
+      "answer": "Una soluzione grafica definitiva e, in alcuni casi, dettagli sufficienti a imporre tutte le cardinalità o gli identificatori.",
+      "detail": "I criteri sono di controllo del ragionamento e non sostituiscono il tentativo autonomo.",
+      "example": "Nella palestra occorre chiarire se gli incarichi sovrapposti siano ammessi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre automaticamente vincoli temporali non dichiarati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.23, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q199",
+      "topicId": "si-c03-t19",
+      "question": "Qual è l’ordine operativo consigliato per una traccia Moodle di progettazione concettuale?",
+      "answer": "Individuare requisiti; scegliere una strategia; costruire schema iniziale; usare RC1–RC3; riconoscere pattern; correggere cardinalità e identificatori; verificare completezza e business rules; poi tradurre.",
+      "detail": "La scelta dei costrutti viene prima delle strutture relazionali.",
+      "example": "Nel caso Software House prima si verifica DIREZIONE/PARTECIPAZIONE, poi si passa alla traduzione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non iniziare da CREATE TABLE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.24, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q200",
+      "topicId": "si-c03-t19",
+      "question": "Come strutturare una risposta d’esame alla domanda «quale strategia useresti»?",
+      "answer": "Definire l’approccio, spiegare il punto di partenza, descrivere il movimento progettuale e motivare perché serve nel caso.",
+      "detail": "È utile menzionare il rischio da verificare per la strategia scelta.",
+      "example": "Mista per un sistema ampio con aree gestite da reparti diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rispondere solo con il nome della strategia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.24, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q201",
+      "topicId": "si-c03-t19",
+      "question": "Come strutturare una risposta d’esame alla domanda «quale pattern applicheresti»?",
+      "answer": "Identificare il problema ricorrente, proporre i costrutti E-R pertinenti, spiegare vincoli, casi limite e eventuali alternative.",
+      "detail": "Il pattern è un ausilio e va verificato sulla traccia.",
+      "example": "Più prestiti della stessa copia → entità evento per distinguere i tentativi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere per la sola presenza di una parola chiave.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.24, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q202",
+      "topicId": "si-c03-t19",
+      "question": "Come rispondere alla domanda «quante occorrenze si prevedono»?",
+      "answer": "Partire dal volume noto e dalla media di partecipazione, moltiplicare e indicare chiaramente le ipotesi.",
+      "detail": "Il valore ottenuto è volume stimato, non una cardinalità E-R.",
+      "example": "100 progetti ×10 release medie = 1.000 release.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare una media in vincolo obbligatorio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.24, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q203",
+      "topicId": "si-c03-t19",
+      "question": "Come rispondere alla domanda «qual è il costo dell’operazione»?",
+      "answer": "Costruire una tavola degli accessi, distinguere NC_read e NC_write, poi applicare pesi, frequenza e coefficiente α.",
+      "detail": "Indicare le unità convenzionali e il periodo di riferimento.",
+      "example": "100 ×0,5×23 =1.150 unità ponderate/giorno per Op2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dare il solo numero senza spiegare gli accessi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.24, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q204",
+      "topicId": "si-c03-t19",
+      "question": "Come rispondere alla domanda «quanta memoria è necessaria»?",
+      "answer": "Stimare volumi e dimensioni delle istanze, sommare entità e relazioni e precisare le semplificazioni sui byte e sull’overhead.",
+      "detail": "Il risultato descrive una stima concettuale, non lo storage fisico esatto.",
+      "example": "500 DIPENDENTE ×12 B =6.000 B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ignorare la codifica del testo quando è rilevante.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.24, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q205",
+      "topicId": "si-c03-t19",
+      "question": "Come rispondere alla domanda «quale schema conviene»?",
+      "answer": "Verificare prima correttezza e completezza; poi confrontare accessi, memoria, aggiornamenti, coerenza e ipotesi di carico.",
+      "detail": "Non esiste uno schema universalmente migliore senza specificare requisiti e operazioni prevalenti.",
+      "example": "Il contatore delle release conviene nell’esempio, ma può essere svantaggioso con carico diverso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere lo schema più veloce se rappresenta male il dominio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.24, pagina PDF 49"
+    },
+    {
+      "id": "si-c03-q206",
+      "topicId": "si-c03-t19",
+      "question": "Qual è il collegamento finale del Capitolo 3 con il Capitolo 4?",
+      "answer": "Il Capitolo 3 fornisce metodi di costruzione e indicatori di stima; il successivo affronta ristrutturazioni e traduzione logica dello schema.",
+      "detail": "La rimozione delle generalizzazioni e il trattamento delle ridondanze diventano scelte tecniche fondate su requisiti e costi.",
+      "example": "Passaggio da E-R validato e tavole dei volumi alla trasformazione relazionale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non anticipare ottimizzazioni fisiche mentre gli elementi concettuali non sono definiti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 3, §3.24, pagina PDF 49"
+    }
+  ]
+}

@@ -1,0 +1,1561 @@
+{
+  "sections": [
+    {
+      "id": "introduzione",
+      "title": "Introduzione",
+      "topics": [],
+      "blocks": [
+        {
+          "image": "cdg-p101-2.png",
+          "caption": "Tre finalità informative, tre logiche di misurazione: distinzione da padroneggiare prima della CVP analysis.",
+          "alt": "Tre finalità informative, tre logiche di misurazione: distinzione da padroneggiare prima della CVP analysis."
+        }
+      ],
+      "concept": "Introduzione"
+    },
+    {
+      "id": "9-1",
+      "title": "9.1 Obiettivi e competenze da acquisire",
+      "topics": [
+        "cdg-c09-t01"
+      ],
+      "blocks": [
+        {
+          "text": "Il controllo di gestione non cerca un solo «costo vero» per ogni prodotto. A seconda della decisione, sono utili configurazioni differenti: talvolta vogliamo conoscere il costo pieno industriale, talvolta la spesa direttamente attribuibile a un oggetto, talvolta il costo che varia con le quantità vendute. La scelta del sistema di costing dipende dalla domanda gestionale e non dalla disponibilità di una formula prefissata."
+        },
+        {
+          "text": "Questo capitolo chiude l’area del programma dedicata ai sistemi di misurazione dei costi e alle condizioni di rischio operativo. Dobbiamo saper costruire un conto economico a margini, misurare il rischio di perdita in presenza di oscillazioni dei volumi e interpretare i risultati in termini manageriali. Per lo scritto occorre anche saper riconoscere ipotesi non valide o dati incoerenti."
+        },
+        {
+          "text": "• Distinguere costi diretti da variabili, costi specifici da comuni e full costing da variable costing."
+        },
+        {
+          "text": "• Calcolare margine di contribuzione unitario, totale, percentuale e di primo/secondo livello."
+        },
+        {
+          "text": "• Determinare punto di pareggio in quantità e fatturato, volumi e ricavi obiettivo, margine di sicurezza e GLO."
+        },
+        {
+          "text": "• Gestire imprese multiprodotto, capacità massima, mix di vendita, costi a tratti e analisi what-if."
+        },
+        {
+          "text": "• Spiegare quando il modello lineare non è affidabile e riconciliare ogni risultato con il conto economico."
+        }
+      ],
+      "concept": "Obiettivi e competenze da acquisire"
+    },
+    {
+      "id": "9-2",
+      "title": "9.2 Direct costing, variable costing e full costing: distinzione",
+      "topics": [
+        "cdg-c09-t02"
+      ],
+      "blocks": [
+        {
+          "text": "Nel direct costing si guarda in primo luogo alla possibilità di imputare un costo direttamente all’oggetto: prodotto, commessa, linea di prodotto, segmento, reparto o periodo. In questa accezione adottata nelle slide, i costi direttamente attribuibili all’unità di prodotto sono raccolti senza passare per un criterio indiretto di riparto. Quando l’oggetto diventa una linea di prodotto nel suo insieme, possono essere direttamente riferibili anche costi fissi specifici sostenuti per quella linea."
+        },
+        {
+          "text": "Nel variable costing, invece, il criterio guida è il comportamento del costo: si attribuiscono al prodotto i costi variabili di produzione, anche se alcuni sono indiretti rispetto alla singola unità. I costi fissi di fabbricazione sono trattati nel conto economico interno come costi del periodo. Il termine inglese «direct costing» è utilizzato talvolta nei testi internazionali come sinonimo di variable costing; nel nostro corso ne manteniamo distinta la prospettiva di tracciabilità, perché è questo il confronto esplicito della docente."
+        },
+        {
+          "text": "Nel full costing (o absorption costing per il costo pieno industriale) si imputano al prodotto i costi diretti e una quota ragionevole dei costi indiretti di produzione, inclusa la componente fissa. Il metodo mira a un costo industriale complessivo, ma la ripartizione dei costi comuni può dipendere dalla base prescelta. Per valutare la redditività di una decisione incrementale non è sempre la configurazione più informativa."
+        },
+        {
+          "table": [
+            [
+              "Metodo",
+              "Criterio di base",
+              "Risultato principale",
+              "Impiego tipico"
+            ],
+            [
+              "Direct costing semplice",
+              "Attribuibilità diretta all’unità",
+              "Costo diretto unitario",
+              "Confronto tra oggetti chiaramente tracciabili"
+            ],
+            [
+              "Direct costing evoluto",
+              "Attribuibilità a unità e segmento",
+              "Costo diretto + fissi specifici totali",
+              "Redditività di linea / segmento"
+            ],
+            [
+              "Variable costing",
+              "Variabilità rispetto ai volumi",
+              "Margine di contribuzione",
+              "BEP, what-if e decisioni operative"
+            ],
+            [
+              "Full costing industriale",
+              "Assorbimento diretto e indiretto",
+              "Costo pieno industriale",
+              "Valutazione produzione e rimanenze secondo regole contabili"
+            ]
+          ]
+        }
+      ],
+      "concept": "Direct costing, variable costing e full costing: distinzione"
+    },
+    {
+      "id": "9-3",
+      "title": "9.3 Classificazione dei costi: due assi indipendenti",
+      "topics": [
+        "cdg-c09-t03"
+      ],
+      "blocks": [
+        {
+          "text": "Un costo è diretto se, rispetto a un oggetto determinato, può essere attribuito con un procedimento diretto affidabile; è indiretto se per imputarlo all’oggetto serve una stima, un driver o un criterio di riparto. Un costo è invece variabile se, nel campo di rilevanza considerato, il suo ammontare totale cambia con il livello di attività; è fisso se rimane sostanzialmente invariato entro quell’intervallo."
+        },
+        {
+          "text": "Le due coppie di categorie rispondono dunque a domande diverse. Esempio: l’ammortamento di una macchina dedicata a una sola linea può essere specifico e direttamente attribuibile alla linea, ma è fisso rispetto alle unità prodotte. L’energia delle macchine condivise può essere indiretta rispetto al singolo prodotto e variabile con le ore macchina. È sbagliato dedurre automaticamente che tutti i costi diretti siano variabili o che tutti gli indiretti siano fissi."
+        },
+        {
+          "image": "cdg-p102-1.png",
+          "caption": "Quattro combinazioni possibili tra tracciabilità e comportamento dei costi.",
+          "alt": "Quattro combinazioni possibili tra tracciabilità e comportamento dei costi."
+        },
+        {
+          "text": "Attenzione all’oggetto di costo: La stessa spesa può cambiare classificazione se cambia l’oggetto. La retribuzione del responsabile di una linea è specifica della linea, ma può essere indiretta rispetto alla singola unità prodotta. Specificità e variabilità non sono sinonimi."
+        }
+      ],
+      "concept": "Classificazione dei costi: due assi indipendenti"
+    },
+    {
+      "id": "9-4",
+      "title": "9.4 Direct costing semplice: costo unitario e totale",
+      "topics": [
+        "cdg-c09-t04"
+      ],
+      "blocks": [
+        {
+          "text": "Il sistema semplice considera come costo diretto unitario la somma dei fattori produttivi direttamente consumati per l’unità realizzata: materie prime, lavoro direttamente misurato e altri costi attribuibili senza ripartizione indiretta. Il calcolo richiede quantità fisica consumata e prezzo di ciascuna risorsa. La forma elementare è:"
+        },
+        {
+          "text": "Costo diretto unitario = Σ (quantità direttamente impiegata × prezzo del fattore)"
+        },
+        {
+          "text": "Se la produzione comprende Q unità omogenee, il costo diretto totale imputabile alle unità è pari al costo diretto unitario moltiplicato per Q. La formula presuppone impieghi e prezzi unitari coerenti con il livello di attività considerato."
+        },
+        {
+          "text": "Costo diretto totale = costo diretto unitario × Q"
+        },
+        {
+          "text": "Esempio originale. Per realizzare un componente si impiegano materiali per 10 €, manodopera diretta per 15 € e altre lavorazioni direttamente imputabili per 5 €. Il costo diretto unitario è 30 €, non 20 €. Per 100 unità si sostengono 3.000 € di costi diretti. La somma è importante perché nella tabella introduttiva delle slide compare un totale di 20 € non coerente con le tre voci (10 + 15 + 5). Per studiare e svolgere lo scritto deve prevalere la verifica aritmetica."
+        },
+        {
+          "text": "10 + 15 + 5 = 30 €/unità; 30 × 100 = 3.000 €"
+        }
+      ],
+      "concept": "Direct costing semplice: costo unitario e totale"
+    },
+    {
+      "id": "9-5",
+      "title": "9.5 Direct costing evoluto e costi fissi specifici",
+      "topics": [
+        "cdg-c09-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Quando l’oggetto di riferimento è una linea di prodotto o un segmento nel suo complesso, possono essere attribuiti a tale oggetto anche costi fissi specifici, come l’ammortamento di un impianto esclusivo o lo stipendio di un responsabile dedicato. Essi sono riconducibili in modo diretto alla linea, ma non sono un costo variabile per singola unità: la loro divisione per la quantità trasformerebbe un ammontare fisso in un costo medio, diverso dal significato di costo direttamente causato da ogni pezzo addizionale."
+        },
+        {
+          "text": "Il direct costing evoluto tiene quindi distinti due livelli: il costo diretto totale delle unità e il costo fisso specifico riferito al segmento. È particolarmente utile per attribuire responsabilità a un centro di profitto o comprendere quali linee contribuiscano a coprire i costi comuni aziendali."
+        },
+        {
+          "text": "Costo diretto totale di 1° livello = costo diretto unitario × Q"
+        },
+        {
+          "text": "Costo diretto totale di 2° livello = costo diretto totale di 1° livello + costi fissi specifici"
+        },
+        {
+          "text": "Nell’esempio precedente, aggiungendo un costo fisso specifico di 300 €, il costo diretto totale della linea sale da 3.000 € a 3.300 €. Questo non significa che produrre una unità addizionale costi 33 €: il costo marginale derivante dai fattori direttamente consumati resta 30 € se struttura e condizioni rimangono invariati."
+        }
+      ],
+      "concept": "Direct costing evoluto e costi fissi specifici"
+    },
+    {
+      "id": "9-6",
+      "title": "9.6 Variable costing: la logica dei costi variabili",
+      "topics": [
+        "cdg-c09-t06"
+      ],
+      "blocks": [
+        {
+          "text": "Il variable costing è particolarmente adatto all’analisi costi-volumi-risultati perché distingue i costi che si muovono al variare dei volumi dai costi strutturali che persistono nel periodo. Per la misura del margine di contribuzione si considerano tutti i costi variabili pertinenti, non solo quelli diretti industriali: se la domanda riguarda la redditività delle vendite, vanno considerate per esempio le provvigioni commerciali, gli imballaggi di consegna e i costi variabili di distribuzione."
+        },
+        {
+          "text": "Esempio: prezzo 80 €; materiali e lavoro direttamente imputabili 40 €/pezzo; costi indiretti industriali variabili 7 € e costi commerciali variabili 3 €. Il costo diretto semplice è 40 €, mentre il costo variabile aziendale unitario è 50 €. Per la CVP il margine di contribuzione è 80 − 50 = 30 €; impiegare 80 − 40 = 40 € sovrastimerebbe il contributo unitario alle spese fisse e all’utile di 10 €."
+        },
+        {
+          "text": "Margine di contribuzione unitario (mdc) = prezzo unitario (p) − costo variabile aziendale unitario (cvu)"
+        },
+        {
+          "text": "Precisazione sui termini: Nella letteratura anglosassone variable costing e direct/marginal costing sono talora denominazioni equivalenti. Per il corso l’oggetto è più sottile: nel confronto della docente il direct costing semplice nasce dalla tracciabilità dei costi diretti, il variable costing distingue invece CV e CF. Manteniamo questa convenzione e segnaliamo l’uso linguistico esterno."
+        }
+      ],
+      "concept": "Variable costing: la logica dei costi variabili"
+    },
+    {
+      "id": "9-7",
+      "title": "9.7 Schemi di conto economico e margini di primo e secondo livello",
+      "topics": [
+        "cdg-c09-t07"
+      ],
+      "blocks": [
+        {
+          "text": "Il conto economico a margine di contribuzione ordina le voci in base al comportamento dei costi, non soltanto per natura o per funzione. Il margine di primo livello (MdC1) indica quanta parte dei ricavi rimane dopo aver coperto tutti i costi variabili. Il margine di secondo livello (MdC2), calcolato per prodotto, linea o segmento, sottrae anche i costi fissi specifici del segmento. Il risultato operativo aziendale emerge sottraendo, infine, i costi fissi comuni non attribuibili univocamente."
+        },
+        {
+          "text": "MdC1 di segmento = ricavi segmento − costi variabili del segmento"
+        },
+        {
+          "text": "MdC2 di segmento = MdC1 segmento − costi fissi specifici del segmento"
+        },
+        {
+          "text": "RO aziendale = Σ MdC2 dei segmenti − costi fissi comuni aziendali"
+        },
+        {
+          "text": "Se un segmento ha MdC1 positivo ma MdC2 negativo, sta contribuendo a sostenere i propri costi fissi ma non li copre interamente. Ciò non è sufficiente, da solo, per decretarne la chiusura: occorre capire quali costi fissi siano realmente eliminabili, quali ricavi cesserebbero e se esistano effetti su altri prodotti. Questa analisi differenziale sarà sviluppata nel Capitolo 10."
+        },
+        {
+          "table": [
+            [
+              "Voce",
+              "Prodotto A",
+              "Prodotto B",
+              "Totale"
+            ],
+            [
+              "Ricavi di vendita",
+              "320.000",
+              "275.000",
+              "595.000"
+            ],
+            [
+              "Costi variabili complessivi",
+              "(200.000)",
+              "(175.000)",
+              "(375.000)"
+            ],
+            [
+              "MdC 1° livello",
+              "120.000",
+              "100.000",
+              "220.000"
+            ],
+            [
+              "Costi fissi specifici",
+              "(60.000)",
+              "(35.000)",
+              "(95.000)"
+            ],
+            [
+              "MdC 2° livello",
+              "60.000",
+              "65.000",
+              "125.000"
+            ],
+            [
+              "Costi fissi comuni",
+              "—",
+              "—",
+              "(90.000)"
+            ],
+            [
+              "Risultato operativo",
+              "—",
+              "—",
+              "35.000"
+            ]
+          ]
+        },
+        {
+          "image": "cdg-p104-1.png",
+          "caption": "Ricostruzione numerica dei due livelli di margine nell’esempio a due linee.",
+          "alt": "Ricostruzione numerica dei due livelli di margine nell’esempio a due linee."
+        }
+      ],
+      "concept": "Schemi di conto economico e margini di primo e secondo livello"
+    },
+    {
+      "id": "9-8",
+      "title": "9.8 Caso integrato a due linee di prodotto",
+      "topics": [
+        "cdg-c09-t08"
+      ],
+      "blocks": [
+        {
+          "text": "Una società vende il prodotto A (4.000 unità a 80 €) e il prodotto B (2.500 unità a 110 €). I costi variabili aziendali unitari sono rispettivamente 50 € e 70 €. I costi fissi specifici ammontano a 60.000 € per A e 35.000 € per B; i costi fissi comuni sono 90.000 €. Ogni dato è costruito per mantenere esplicita la distinzione fra componente unitaria e componente totale."
+        },
+        {
+          "text": "Fase 1 — Ricavi: A = 4.000 × 80 = 320.000 €; B = 2.500 × 110 = 275.000 €. Fase 2 — Costi variabili: A = 4.000 × 50 = 200.000 €; B = 2.500 × 70 = 175.000 €. Fase 3 — MdC1: A = 120.000 €, B = 100.000 €. Fase 4 — MdC2: A = 60.000 €, B = 65.000 €. Fase 5 — RO: 60.000 + 65.000 − 90.000 = 35.000 €."
+        },
+        {
+          "text": "Quadratura: 595.000 − 375.000 − 95.000 − 90.000 = 35.000 €"
+        },
+        {
+          "text": "Sarebbe scorretto distribuire automaticamente i 90.000 € di costi comuni tra A e B e dedurre che un prodotto debba essere abbandonato perché presenta una «perdita» dopo il riparto. La perdita potrebbe dipendere dalla base adottata per allocare costi che non scomparirebbero interrompendo la linea."
+        }
+      ],
+      "concept": "Caso integrato a due linee di prodotto"
+    },
+    {
+      "id": "9-9",
+      "title": "9.9 Significato economico e utilizzo del margine di contribuzione",
+      "topics": [
+        "cdg-c09-t09"
+      ],
+      "blocks": [
+        {
+          "text": "Il margine di contribuzione non coincide con l’utile: è una grandezza intermedia. Ogni unità venduta genera ricavi; una parte serve a pagare i costi variabili; l’eccedenza contribuisce prima alla copertura dei costi fissi, poi alla produzione del risultato operativo. Per questo il termine «contribuzione» è più corretto di «profitto unitario»."
+        },
+        {
+          "text": "Lo stesso concetto si esprime in tre modi complementari: mdc unitario (euro per unità), MdC totale (euro nel periodo) e rapporto di contribuzione (MdC/Ricavi, percentuale). Il margine unitario è utile per calcolare il numero di unità necessario al pareggio; il rapporto percentuale per calcolare il fatturato di pareggio, soprattutto in aziende multiprodotto o di servizi."
+        },
+        {
+          "text": "MdC = (p − cvu) × Q; RC = MdC / Ricavi = (p − cvu) / p"
+        },
+        {
+          "text": "Con p = 50 € e cvu = 30 €, il mdc unitario è 20 € e il rapporto RC è 20/50 = 40%. Ogni 100 € di ricavo lasciano 40 € per coprire i costi fissi e generare utile operativo. Se un’impresa realizza 200.000 € di vendite, il suo MdC complessivo, in condizioni omogenee, è 80.000 €."
+        }
+      ],
+      "concept": "Significato economico e utilizzo del margine di contribuzione"
+    },
+    {
+      "id": "9-10",
+      "title": "9.10 Rischio operativo: definizione e struttura dei costi",
+      "topics": [
+        "cdg-c09-t10"
+      ],
+      "blocks": [
+        {
+          "text": "Il rischio operativo, nel senso utilizzato dal corso, è la possibilità che variazioni dei volumi della gestione caratteristica provochino perdite a livello di risultato operativo. Non coincide con il rischio finanziario legato al debito, né con il rischio di insolvenza, né con tutti i rischi aziendali: è specificamente connesso alle relazioni fra volumi di attività, ricavi, costi variabili e costi fissi."
+        },
+        {
+          "text": "Un’impresa con costi fissi elevati deve generare un margine di contribuzione adeguato per raggiungere il pareggio. Quando i volumi crescono oltre il BEP può beneficiare di un rapido aumento dell’utile; quando la domanda diminuisce, i costi fissi non si contraggono proporzionalmente e l’utile può ridursi molto rapidamente. La stessa struttura che amplifica i risultati favorevoli può amplificare le perdite."
+        },
+        {
+          "text": "Nel modello elementare la vulnerabilità può essere valutata con il BEP, il margine di sicurezza, il margine di elasticità rispetto alla capacità e il grado di leva operativa. Sono indicatori con finalità differenti: non possono essere scambiati o sommati tra loro."
+        }
+      ],
+      "concept": "Rischio operativo: definizione e struttura dei costi"
+    },
+    {
+      "id": "9-11",
+      "title": "9.11 CVP analysis: ipotesi e campo di validità",
+      "topics": [
+        "cdg-c09-t11"
+      ],
+      "blocks": [
+        {
+          "text": "La Cost-Volume-Profit analysis (CVP), o analisi costi-volumi-risultati, è un modello che rappresenta la relazione tra prezzo, costo variabile unitario, costi fissi, quantità vendute e risultato operativo. Il modello lineare è molto utile, ma funziona soltanto sotto alcune ipotesi esplicite. La loro omissione è una causa frequente di errori di interpretazione."
+        },
+        {
+          "text": "• Prezzo di vendita unitario p costante nell’intervallo studiato; le politiche di sconto possono modificare questa ipotesi."
+        },
+        {
+          "text": "• Costo variabile unitario cvu costante; i costi variabili totali crescono linearmente con Q."
+        },
+        {
+          "text": "• Costi fissi totali CF invariati dentro l’intervallo di rilevanza e nel periodo analizzato."
+        },
+        {
+          "text": "• Quantità prodotte sostanzialmente coincidenti con quelle vendute oppure variazioni di scorte gestite esplicitamente."
+        },
+        {
+          "text": "• Per il caso multiprodotto, composizione del mix di vendita stabile mentre cambia il volume complessivo."
+        },
+        {
+          "text": "• Qualità, produttività e condizioni produttive comparabili; assenza di vincoli che rendano impossibili i volumi calcolati."
+        },
+        {
+          "text": "Se il costo fisso aumenta oltre una capacità soglia, il prezzo si riduce al superamento di un ordine minimo o il mix muta, il BEP lineare non è più valido sull’intero dominio. In tal caso bisogna costruire funzioni a tratti o scenari distinti e verificare in quale tratto cade la soluzione."
+        },
+        {
+          "text": "Verifica di fattibilità: Un BEP matematico maggiore della capacità produttiva non è «un risultato da arrotondare»: indica che, con prezzo, costo e struttura correnti, il pareggio non è raggiungibile dentro il campo operativo analizzato."
+        }
+      ],
+      "concept": "CVP analysis: ipotesi e campo di validità"
+    },
+    {
+      "id": "9-12",
+      "title": "9.12 BEP monoprodotto: dimostrazione algebrica",
+      "topics": [
+        "cdg-c09-t12"
+      ],
+      "blocks": [
+        {
+          "text": "Consideriamo Q unità vendute, prezzo p, costo variabile unitario cvu, costi fissi complessivi CF. Il ricavo totale è RT = pQ; il costo variabile totale è CV = cvuQ; i costi totali sono CT = CF + cvuQ. Il risultato operativo si ottiene per differenza fra ricavi e costi della gestione caratteristica:"
+        },
+        {
+          "text": "RO(Q) = RT − CT = pQ − cvuQ − CF = (p − cvu)Q − CF"
+        },
+        {
+          "text": "Nel punto di pareggio il reddito operativo è nullo: RO = 0. Uguagliando ricavi e costi totali otteniamo pQ = cvuQ + CF; portando a sinistra i termini proporzionali al volume, (p − cvu)Q = CF. Da qui discende la formula fondamentale:"
+        },
+        {
+          "text": "Q_BEP = CF / (p − cvu) = CF / mdc [unità di prodotto]"
+        },
+        {
+          "text": "Esempio del corso: CF = 200.000 €, prezzo = 7 €/unità, costo variabile = 3 €/unità. Il margine unitario è 4 €; il BEP è 50.000 unità. Controllo: ricavi = 350.000 €; costi variabili = 150.000 €; costi fissi = 200.000 €; quindi ricavi − costi totali = 0."
+        },
+        {
+          "text": "200.000 / (7 − 3) = 50.000 unità; RT = CT = 350.000 €"
+        },
+        {
+          "text": "Se il rapporto mdc è nullo o negativo, ogni unità venduta non contribuisce alla copertura dei costi fissi e la formula positiva non fornisce un BEP operativo raggiungibile con costi fissi maggiori di zero. Se le unità devono essere intere, la quantità economica di pareggio va arrotondata per eccesso, effettuando sempre la verifica del risultato operativo."
+        }
+      ],
+      "concept": "BEP monoprodotto: dimostrazione algebrica"
+    },
+    {
+      "id": "9-13",
+      "title": "9.13 Fatturato di pareggio e rapporto di contribuzione",
+      "topics": [
+        "cdg-c09-t13"
+      ],
+      "blocks": [
+        {
+          "text": "In molte attività non ha senso parlare di un numero uniforme di pezzi, perché l’impresa vende prodotti differenti o servizi eterogenei. Il punto di pareggio può allora essere espresso in fatturato, utilizzando il rapporto di contribuzione RC = mdc/p. Partendo da F = pQ e dalla formula precedente si ricava: F_BEP = p × Q_BEP = CF / RC = CF / [(p − cvu) / p] [euro]"
+        },
+        {
+          "text": "Riprendendo il caso CF = 200.000 €, p = 7 € e cvu = 3 €, il rapporto di contribuzione è 4/7 = 57,142857%; il fatturato di pareggio è quindi 200.000 / (4/7) = 350.000 €. Usare il valore arrotondato 57,14% può introdurre una lieve differenza, che non va scambiata per un nuovo risultato economico."
+        },
+        {
+          "text": "Controllo dimensionale: CF è misurato in euro; RC è un rapporto puro; il risultato è euro. Non si deve dividere CF per un margine unitario e poi chiamare fatturato il risultato: CF/mdc produce pezzi, non euro."
+        }
+      ],
+      "concept": "Fatturato di pareggio e rapporto di contribuzione"
+    },
+    {
+      "id": "9-14",
+      "title": "9.14 Diagramma di redditività e diagramma profitto-volume",
+      "topics": [
+        "cdg-c09-t14"
+      ],
+      "blocks": [
+        {
+          "text": "Il diagramma di redditività rappresenta sull’asse orizzontale il volume Q e sull’asse verticale costi e ricavi in euro. La retta dei ricavi parte dall’origine e ha pendenza p; la retta dei costi totali parte dal livello CF e ha pendenza cvu. Il punto di intersezione individua il BEP. A sinistra la retta dei costi è sopra quella dei ricavi e si genera una perdita; a destra accade il contrario."
+        },
+        {
+          "image": "cdg-p106-1.png",
+          "caption": "Grafico originale dell’esempio del corso: costi fissi 200.000 €, prezzo 7 € e costo variabile 3 €.",
+          "alt": "Grafico originale dell’esempio del corso: costi fissi 200.000 €, prezzo 7 € e costo variabile 3 €."
+        },
+        {
+          "text": "Il diagramma profitto-volume rappresenta invece direttamente RO(Q). La retta intercetta l’asse verticale in −CF e ha pendenza mdc; il punto in cui attraversa lo zero coincide con Q_BEP. Questo secondo grafico può essere più rapido nella lettura di un problema che chieda massimo utile, massimo disavanzo o reddito obiettivo."
+        },
+        {
+          "image": "cdg-p106-2.png",
+          "caption": "La pendenza della retta del risultato operativo è pari al margine di contribuzione unitario.",
+          "alt": "La pendenza della retta del risultato operativo è pari al margine di contribuzione unitario."
+        }
+      ],
+      "concept": "Diagramma di redditività e diagramma profitto-volume"
+    },
+    {
+      "id": "9-15",
+      "title": "9.15 Reddito obiettivo e imposizione fiscale",
+      "topics": [
+        "cdg-c09-t15"
+      ],
+      "blocks": [
+        {
+          "text": "Il pareggio è solo un caso particolare, con RO obiettivo pari a zero. Se l’impresa vuole generare un risultato operativo desiderato R*, occorre coprire sia i costi fissi sia il risultato voluto. La stessa equazione del BEP si risolve rispetto a Q, aggiungendo R* al numeratore:"
+        },
+        {
+          "text": "Q_obiettivo = (CF + RO_obiettivo) / mdc"
+        },
+        {
+          "text": "F_obiettivo = (CF + RO_obiettivo) / RC Esempio: p = 50 €, cvu = 30 €, CF = 240.000 €, RO desiderato = 60.000 €. Si richiedono (240.000 + 60.000)/20 = 15.000 unità e 750.000 € di ricavi. Il risultato è verificato da un MdC totale di 300.000 € meno i 240.000 € fissi."
+        },
+        {
+          "text": "Se il risultato desiderato è netto dopo le imposte e si ipotizza una aliquota fiscale effettiva t costante sul risultato considerato, il reddito ante imposte corrispondente è RN*/(1 − t). Per un utile netto desiderato di 45.000 € e t = 25%, l’utile lordo necessario è 60.000 €; il livello di vendita torna quindi a 15.000 unità. È una semplificazione didattica: nella realtà imponibile fiscale, imposte differite, interessi e altre componenti possono rendere non coincidenti utile operativo e base imponibile."
+        },
+        {
+          "text": "RO_ante_imposte richiesto = RN_obiettivo / (1 − t); Q = [CF + RN/(1 − t)] / mdc"
+        }
+      ],
+      "concept": "Reddito obiettivo e imposizione fiscale"
+    },
+    {
+      "id": "9-16",
+      "title": "9.16 Capacità produttiva, massimo utile e massimo rischio di perdita",
+      "topics": [
+        "cdg-c09-t16"
+      ],
+      "blocks": [
+        {
+          "text": "Una volta individuato il BEP occorre verificare la capacità massima disponibile Qmax. In un modello lineare con margine unitario positivo, l’utile massimo compatibile con la capacità e con una domanda sufficiente si ottiene al massimo volume praticabile: ROmax = mdc × Qmax − CF. Se la produzione e vendita è nulla, la perdita operativa massima del modello semplice è pari ai costi fissi: RO(0) = −CF."
+        },
+        {
+          "text": "L’ultima affermazione richiede attenzione: il minimo di risultato potrebbe essere diverso se esistono penali, costi straordinari di chiusura, minimi contrattuali o prezzi/costi dipendenti dai volumi. Non si deve interpretare −CF come una perdita massima assoluta dell’azienda in qualsiasi circostanza."
+        },
+        {
+          "text": "RO_max = mdc × Q_max − CF; RO(0) = −CF"
+        },
+        {
+          "text": "Se Q_BEP è superiore a Qmax, anche vendendo tutta la capacità l’impresa rimane in perdita. Se Q_BEP è inferiore a Qmax, esiste un intervallo di produzione potenzialmente redditizio, purché il mercato sia disposto ad assorbire le quantità."
+        }
+      ],
+      "concept": "Capacità produttiva, massimo utile e massimo rischio di perdita"
+    },
+    {
+      "id": "9-17",
+      "title": "9.17 Caso del corso: Pizzeria Bella Napoli",
+      "topics": [
+        "cdg-c09-t17"
+      ],
+      "blocks": [
+        {
+          "text": "La pizzeria impiega un pizzaiolo dipendente con costo mensile lordo di 2.000 €; sostiene inoltre 3.500 € mensili di altri costi fissi. Il prezzo di una pizza è 4 €. I costi variabili medi sono 1,30 € di materie prime, 0,10 € di confezionamento e 0,30 € per la consegna domiciliare, che riguarda il 50% degli ordini. La capacità massima è pari a 3.000 pizze mensili. Il primo errore da evitare è combinare costi mensili con quantità annuali."
+        },
+        {
+          "table": [
+            [
+              "Dato",
+              "Mensile",
+              "Annuale"
+            ],
+            [
+              "Costi fissi totali",
+              "2.000 + 3.500 = 5.500 €",
+              "66.000 €"
+            ],
+            [
+              "Capacità produttiva",
+              "3.000 pizze",
+              "36.000 pizze"
+            ],
+            [
+              "Costo variabile unitario medio",
+              "1,30 + 0,10 + 0,30 × 0,50 = 1,55 €",
+              "1,55 €/pizza"
+            ],
+            [
+              "Margine di contribuzione unitario",
+              "4,00 − 1,55 = 2,45 €",
+              "2,45 €/pizza"
+            ]
+          ]
+        },
+        {
+          "text": "Il punto di pareggio annuo è 66.000/2,45 = 26.938,7755 pizze. Poiché non è possibile vendere una frazione di pizza nel modello, servono almeno 26.939 pizze annue. Il volume mensile equivalente è 5.500/2,45 = 2.244,89796, quindi 2.245 pizze. Il risultato non va arrotondato per difetto: con 26.938 pizze il reddito operativo sarebbe ancora negativo."
+        },
+        {
+          "formula": "Q_BEP ≈ 26.939 pizze/anno; Q_max = 36.000 pizze/anno"
+        },
+        {
+          "text": "Il massimo risultato operativo ipotetico, se tutte le 36.000 pizze vengono effettivamente vendute, è 36.000 × 2,45 − 66.000 = 22.200 €. La perdita nel caso di zero vendite sarebbe pari a 66.000 € annui. Il margine di elasticità rispetto alla capacità è (36.000 − 26.938,7755)/36.000 = 25,17%. Questo significa che il volume massimo potrebbe ridursi del 25,17% prima di raggiungere la soglia di perdita, se il riferimento è la piena capacità e non un volume previsto inferiore."
+        },
+        {
+          "image": "cdg-p108-1.png",
+          "caption": "Scala quantitativa del caso Pizzeria Bella Napoli: distanza fra BEP e piena capacità.",
+          "alt": "Scala quantitativa del caso Pizzeria Bella Napoli: distanza fra BEP e piena capacità."
+        }
+      ],
+      "concept": "Caso del corso: Pizzeria Bella Napoli"
+    },
+    {
+      "id": "9-18",
+      "title": "9.18 Ricavi e costi per intervalli: premio oltre soglia",
+      "topics": [
+        "cdg-c09-t18"
+      ],
+      "blocks": [
+        {
+          "text": "Le slide propongono un’estensione del caso: al pizzaiolo viene riconosciuto un incentivo di 0,30 € per ogni pizza prodotta e venduta oltre le prime 28.000 annuali. Il premio non si applica retroattivamente a tutte le pizze. Si tratta di un costo variabile addizionale «a tratti»; rappresentare CV = 1,85Q per Q > 28.000 sovrastimerebbe i costi perché farebbe pagare l’incentivo anche sulle prime 28.000 unità."
+        },
+        {
+          "text": "CV(Q) = 1,55Q + 0,30 × max(0, Q − 28.000)"
+        },
+        {
+          "text": "RO(Q) = 2,45Q − 66.000 − 0,30 × max(0, Q − 28.000)"
+        },
+        {
+          "text": "Poiché il BEP originale (26.938,78) è inferiore a 28.000, il nuovo incentivo non sposta il primo punto di pareggio. Al volume massimo, invece, l’extra costo è 0,30 × (36.000 − 28.000) = 2.400 €, dunque l’utile massimo passa da 22.200 € a 19.800 €. Nel tratto oltre 28.000, il margine sulle unità addizionali scende da 2,45 € a 2,15 €."
+        },
+        {
+          "image": "cdg-p108-2.png",
+          "caption": "La retta del risultato economico cambia pendenza dopo la soglia: il premio colpisce soltanto l’eccedenza.",
+          "alt": "La retta del risultato economico cambia pendenza dopo la soglia: il premio colpisce soltanto l’eccedenza."
+        },
+        {
+          "text": "Controllo della funzione a tratti: A Q = 28.000 le due formule devono dare lo stesso reddito operativo: 2,45 × 28.000 − 66.000 = 2.600 €. La continuità del grafico è un controllo utile per riconoscere l’applicazione impropria del premio sull’intero volume."
+        }
+      ],
+      "concept": "Ricavi e costi per intervalli: premio oltre soglia"
+    },
+    {
+      "id": "9-19",
+      "title": "9.19 BEP in imprese multiprodotto: mix fisico",
+      "topics": [
+        "cdg-c09-t19"
+      ],
+      "blocks": [
+        {
+          "text": "Nelle imprese che vendono più prodotti non esiste in generale un solo margine unitario: ogni prodotto può avere prezzo e costo variabile differenti. Per calcolare un BEP complessivo è necessario assumere un mix di vendita costante. Se il mix è definito in quantità, si calcola il margine unitario medio ponderato utilizzando il peso dei volumi di ciascun prodotto sul volume complessivo."
+        },
+        {
+          "text": "αᵢ = Qᵢ / ΣQᵢ; mdc medio = Σ(αᵢ × mdcᵢ); Q_BEP,mix = CF / mdc medio"
+        },
+        {
+          "text": "Esempio tratto dai dati delle slide: X: 100.000 pezzi, p = 7 €, cvu = 3 €; Y: 160.000 pezzi, p = 6,50 €, cvu = 4 €; Z: 90.000 pezzi, p = 4,50 €, cvu = 3 €. I costi fissi comuni sono 200.000 €. Il mix fisico si ricava dividendo i singoli volumi per 350.000 pezzi."
+        },
+        {
+          "table": [
+            [
+              "Prodotto",
+              "Volumi",
+              "p (€/pz)",
+              "cvu (€/pz)",
+              "mdc (€/pz)",
+              "Mix Q"
+            ],
+            [
+              "X",
+              "100.000",
+              "7,00",
+              "3,00",
+              "4,00",
+              "28,5714%"
+            ],
+            [
+              "Y",
+              "160.000",
+              "6,50",
+              "4,00",
+              "2,50",
+              "45,7143%"
+            ],
+            [
+              "Z",
+              "90.000",
+              "4,50",
+              "3,00",
+              "1,50",
+              "25,7143%"
+            ],
+            [
+              "Totale",
+              "350.000",
+              "—",
+              "—",
+              "—",
+              "100,00%"
+            ]
+          ]
+        },
+        {
+          "text": "Il MdC totale dei tre prodotti ai volumi di riferimento è 100.000×4 + 160.000×2,50 + 90.000×1,50 = 935.000 €. Dividendo per 350.000 unità si ottiene mdc medio = 2,67142857 €/unità. Il volume teorico complessivo di pareggio è 200.000 / 2,67142857 = 74.866,31 unità; questa è una quantità teorica continua, non ancora un piano produttivo con quantità intere e mix esatto."
+        },
+        {
+          "formula": "mdc medio = 935.000 / 350.000 = 2,67142857 €/pezzo; Q_BEP = 74.866,31 pezzi"
+        },
+        {
+          "text": "Per rispettare esattamente le proporzioni 100:160:90, possiamo semplificare il mix in 10 X + 16 Y + 9 Z = 35 pezzi per «paniere composito». Il margine di un paniere è 10×4 +16×2,5 +9×1,5 = 93,50 €. Il numero continuo di panieri di pareggio è 200.000/93,50 = 2.139,0374; il minimo numero intero di panieri è 2.140, per un totale di 74.900 pezzi (21.400 X, 34.240 Y, 19.260 Z). Questo piano dà un MdC di 200.090 € e un utile di 90 €: il pareggio è superato senza violare le proporzioni discrete."
+        },
+        {
+          "formula": "Panieri interi minimi = ceil(200.000 / 93,50) = 2.140; Q = 2.140 × 35 = 74.900"
+        },
+        {
+          "image": "cdg-p109-1.png",
+          "caption": "Margini totali per prodotto riferiti al mix iniziale: i contributi dipendono da volumi e mdc unitari.",
+          "alt": "Margini totali per prodotto riferiti al mix iniziale: i contributi dipendono da volumi e mdc unitari."
+        },
+        {
+          "text": "Verifica critica del materiale: Nell’esempio multiprodotto delle slide, il denominatore 1,144 + 1,142 + 0,385 è riportato anche come 2,286, ma la somma vale circa 2,671. Il risultato di 77.490 pezzi non è coerente con i dati elencati. Il manuale conserva la metodologia indicata dal corso e ricostruisce i valori corretti usando i pesi non arrotondati."
+        }
+      ],
+      "concept": "BEP in imprese multiprodotto: mix fisico"
+    },
+    {
+      "id": "9-20",
+      "title": "9.20 BEP multiprodotto: mix a ricavi e quadrature",
+      "topics": [
+        "cdg-c09-t20"
+      ],
+      "blocks": [
+        {
+          "text": "Se il mix è espresso in quote del fatturato, il parametro appropriato è il rapporto di contribuzione medio ponderato, non il margine unitario medio. Per ciascun prodotto si calcola il rapporto rᵢ = mdcᵢ/pᵢ e si pondera con βᵢ = Ricaviᵢ/Ricavi complessivi. Il rapporto aggregato è uguale a MdC totale diviso Ricavi totali."
+        },
+        {
+          "text": "βᵢ = Fᵢ / ΣFᵢ; RC medio = Σ(βᵢ × mdcᵢ/pᵢ) = MdC totale / F totale"
+        },
+        {
+          "text": "F_BEP,mix = CF / RC medio"
+        },
+        {
+          "text": "I fatturati iniziali sono: X = 700.000 €, Y = 1.040.000 €, Z = 405.000 €, per un totale di 2.145.000 €. Il rapporto medio esatto è 935.000 / 2.145.000 = 43,58974359%. Il fatturato di pareggio è quindi 200.000 / 0,4358974359 = 458.823,53 €. I due approcci coincidono: 74.866,31016 pezzi teorici × prezzo medio ponderato (2.145.000/350.000) = 458.823,53 €."
+        },
+        {
+          "table": [
+            [
+              "Grandezza",
+              "Calcolo",
+              "Risultato"
+            ],
+            [
+              "Fatturato iniziale totale",
+              "700.000 + 1.040.000 + 405.000",
+              "2.145.000 €"
+            ],
+            [
+              "MdC iniziale totale",
+              "400.000 + 400.000 + 135.000",
+              "935.000 €"
+            ],
+            [
+              "RC ponderato",
+              "935.000 / 2.145.000",
+              "43,589744%"
+            ],
+            [
+              "Fatturato BEP",
+              "200.000 / 0,4358974359",
+              "458.823,53 €"
+            ],
+            [
+              "Q teorica BEP",
+              "200.000 / 2,67142857",
+              "74.866,31 pz"
+            ]
+          ]
+        },
+        {
+          "text": "I due metodi restituiscono lo stesso equilibrio se il mix fisico e quello in valore derivano dagli stessi dati e si mantengono costanti. Se si combinano pesi fisici per i margini in euro e pesi di fatturato per i margini unitari si ottengono risultati privi di significato. Gli arrotondamenti devono essere rinviati al risultato finale e non applicati troppo presto ai singoli pesi."
+        }
+      ],
+      "concept": "BEP multiprodotto: mix a ricavi e quadrature"
+    },
+    {
+      "id": "9-21",
+      "title": "9.21 Margine di sicurezza e margine di elasticità",
+      "topics": [
+        "cdg-c09-t21"
+      ],
+      "blocks": [
+        {
+          "text": "Il margine di sicurezza (MdS o MGS) è la distanza fra il volume effettivo o previsto di vendita e il BEP. Misura di quanto possono scendere le vendite prima che il risultato operativo diventi negativo, mantenendo valide le ipotesi CVP. Può essere espresso in quantità, in valore monetario o in percentuale."
+        },
+        {
+          "text": "MGS_Q = Q_eff − Q_BEP; MGS_% = (Q_eff − Q_BEP) / Q_eff × 100"
+        },
+        {
+          "text": "MGS_F = F_eff − F_BEP; MGS_% = (F_eff − F_BEP) / F_eff × 100"
+        },
+        {
+          "text": "Esempio: nel caso con CF = 200.000 €, p = 7 € e cvu = 3 €, a 100.000 unità vendute il margine di sicurezza è 50.000 unità, pari al 50% del volume effettivo. L’azienda potrebbe perdere la metà delle vendite prima di tornare al pareggio, se prezzo, costi e altri vincoli rimanessero invariati."
+        },
+        {
+          "text": "Il margine di elasticità, nella terminologia delle slide, pone invece a confronto la soglia BEP con la capacità produttiva massima: (Qmax − QBEP)/Qmax. I due indicatori coincidono soltanto se il livello di vendita preso come riferimento per la sicurezza è uguale alla capacità massima. Nel caso della pizzeria il margine di elasticità è 25,17%, ma se si prevedessero 30.000 pizze anziché 36.000, il margine di sicurezza previsto sarebbe (30.000 − 26.938,78)/30.000 = 10,20%."
+        },
+        {
+          "text": "Segno e interpretazione: Un margine di sicurezza negativo segnala che i volumi effettivi sono sotto il BEP e che il"
+        },
+        {
+          "heading": "modello stima una perdita operativa. Se il denominatore è zero il rapporto percentuale non è definito; in questi"
+        },
+        {
+          "heading": "casi si espone la differenza assoluta o si commenta il problema senza forzare una percentuale."
+        }
+      ],
+      "concept": "Margine di sicurezza e margine di elasticità"
+    },
+    {
+      "id": "9-22",
+      "title": "9.22 Grado di leva operativa (GLO): formula e interpretazione",
+      "topics": [
+        "cdg-c09-t22"
+      ],
+      "blocks": [
+        {
+          "text": "Il grado di leva operativa (GLO) misura la sensibilità percentuale del reddito operativo a una variazione percentuale dei volumi o del fatturato, nel punto di attività considerato e sotto le ipotesi del modello lineare. È un’elasticità del risultato, non la quota di costi fissi né un indicatore espresso in percentuale."
+        },
+        {
+          "text": "GLO = (% variazione RO) / (% variazione Q) = MdC totale / RO"
+        },
+        {
+          "text": "La relazione si dimostra dalla funzione RO = mdc·Q − CF: la derivata del reddito operativo rispetto a Q è dRO/dQ = mdc; pertanto (dRO/RO)/(dQ/Q) = mdc·Q/RO = MdC/RO. Se un’azienda presenta GLO = 4 in un certo punto e le ipotesi restano valide, un aumento del 1% nelle vendite determina approssimativamente un aumento del 4% del reddito operativo. La relazione è locale; se la variazione di Q supera scaglioni di capacità o determina variazioni di prezzi, serve un nuovo calcolo."
+        },
+        {
+          "text": "Esempio: CF = 60.000 €, p = 30 €, cvu = 12 €, Q = 5.000. Il MdC è 18×5.000 = 90.000 €; RO = 30.000 €, quindi GLO = 90.000/30.000 = 3. Una crescita del 10% dei volumi (500 pezzi) porta l’utile da 30.000 a 39.000 €, ossia +30%, a parità di struttura e prezzi."
+        },
+        {
+          "text": "Al BEP il denominatore RO è zero e il GLO non è definito: tende a valori molto elevati avvicinandosi alla soglia da sopra. Sotto il pareggio si ottengono valori negativi la cui interpretazione percentuale è delicata: conviene usare scenari di reddito e margine di sicurezza piuttosto che interpretare meccanicamente un GLO negativo."
+        },
+        {
+          "image": "cdg-p111-1.png",
+          "caption": "Nel modello lineare il GLO cresce rapidamente avvicinandosi al punto di pareggio dall’area di profitto.",
+          "alt": "Nel modello lineare il GLO cresce rapidamente avvicinandosi al punto di pareggio dall’area di profitto."
+        }
+      ],
+      "concept": "Grado di leva operativa (GLO): formula e interpretazione"
+    },
+    {
+      "id": "9-23",
+      "title": "9.23 Confronto fra due strutture di costo",
+      "topics": [
+        "cdg-c09-t23"
+      ],
+      "blocks": [
+        {
+          "text": "Confrontiamo due processi produttivi alternativi per lo stesso bene, venduto a 30 €: struttura A con costi fissi di 60.000 € e variabili unitari di 12 €, struttura B più automatizzata con costi fissi di 100.000 € e variabili unitari di 4 €. La B sostiene maggiori costi fissi ma ha un margine unitario più elevato. Le due scelte non possono essere valutate soltanto dal costo unitario pieno calcolato su un volume arbitrario."
+        },
+        {
+          "table": [
+            [
+              "Misura",
+              "A: CF 60.000 € / cvu 12 €",
+              "B: CF 100.000 € / cvu 4 €"
+            ],
+            [
+              "mdc unitario",
+              "18 €",
+              "26 €"
+            ],
+            [
+              "Q_BEP",
+              "3.333,33 unità",
+              "3.846,15 unità"
+            ],
+            [
+              "RO a 4.000 unità",
+              "12.000 €",
+              "4.000 €"
+            ],
+            [
+              "RO a 5.000 unità",
+              "30.000 €",
+              "30.000 €"
+            ],
+            [
+              "RO a 6.000 unità",
+              "48.000 €",
+              "56.000 €"
+            ],
+            [
+              "GLO a 5.000 unità",
+              "3,000",
+              "4,333"
+            ]
+          ]
+        },
+        {
+          "text": "Per individuare la quantità di indifferenza fra le due strutture uguagliamo i costi totali: 60.000 + 12Q = 100.000 + 4Q; da cui Q = 40.000/8 = 5.000 unità. A volumi inferiori la struttura A è più conveniente; a volumi superiori la B può generare maggiore redditività. La B presenta tuttavia un BEP più alto e un GLO maggiore nel punto di confronto, quindi una maggiore sensibilità alle contrazioni della domanda."
+        },
+        {
+          "image": "cdg-p111-2.png",
+          "caption": "Il maggior costo fisso può essere compensato dal minor costo variabile soltanto oltre il punto di indifferenza.",
+          "alt": "Il maggior costo fisso può essere compensato dal minor costo variabile soltanto oltre il punto di indifferenza."
+        }
+      ],
+      "concept": "Confronto fra due strutture di costo"
+    },
+    {
+      "id": "9-24",
+      "title": "9.24 Angolo di rischio: interpretazione prudente",
+      "topics": [
+        "cdg-c09-t24"
+      ],
+      "blocks": [
+        {
+          "text": "Il materiale del corso richiama anche l’angolo di rischio attraverso la rappresentazione delle rette dei costi e dei ricavi. In termini intuitivi, il grafico mostra quanto rapidamente si apre la distanza tra ricavi totali e costi totali al crescere dei volumi e quanto questa struttura esponga a variazioni del risultato operativo. La distanza verticale fra le due rette è il reddito operativo: questa è la grandezza economicamente significativa."
+        },
+        {
+          "text": "Occorre tuttavia usare prudenza: l’ampiezza geometrica di un angolo disegnato su un grafico dipende dalla scala scelta sugli assi. Cambiando la proporzione fra euro e quantità l’angolo cambia senza che cambi il rischio economico reale. Per confronti quantitativi è preferibile utilizzare BEP, margine di sicurezza, rapporto dei costi fissi e GLO nel medesimo livello di attività."
+        },
+        {
+          "text": "Non bisogna inoltre dedurre dal solo margine unitario che un’azienda sia «più rischiosa»: una maggiore differenza tra p e cvu rende più inclinata la retta del risultato operativo, ma potrebbe ridurre il BEP e migliorare il margine di sicurezza se i costi fissi fossero invariati. Il rischio deriva dall’interazione di tutti i parametri e della domanda attesa."
+        }
+      ],
+      "concept": "Angolo di rischio: interpretazione prudente"
+    },
+    {
+      "id": "9-25",
+      "title": "9.25 Analisi di sensibilità e scenari what-if",
+      "topics": [
+        "cdg-c09-t25"
+      ],
+      "blocks": [
+        {
+          "text": "L’analisi what-if modifica uno o più parametri del modello per verificare come cambiano il BEP e il reddito operativo. È essenziale distinguere tra una previsione («ci attendiamo 5.000 vendite») e una simulazione condizionale («cosa accadrebbe con 4.000 vendite?»). La previsione riguarda la probabilità che lo scenario si realizzi; la CVP ne determina le conseguenze economiche, dati i parametri assunti."
+        },
+        {
+          "text": "Riprendiamo p = 30 €, cvu = 12 €, CF = 60.000 € e Q = 5.000 unità. Con i parametri originali RO = 30.000 €. La tabella mostra il risultato ottenibile variando contemporaneamente prezzo e costo variabile mantenendo invariati Q e CF. Questa rappresentazione rende esplicito il rischio di analizzare un solo dato isolato."
+        },
+        {
+          "image": "cdg-p112-1.png",
+          "caption": "Matrice what-if costruita con la funzione RO = Q(p − cvu) − CF.",
+          "alt": "Matrice what-if costruita con la funzione RO = Q(p − cvu) − CF."
+        },
+        {
+          "text": "Il modello può essere esteso a tre scenari: pessimistico, centrale e ottimistico. È opportuno includere volumi realistici e limiti di capacità; associare una probabilità ai diversi scenari richiede dati esterni sulla domanda e non discende dalle formule CVP. Se si costruisce un valore atteso, occorre indicare chiaramente le probabilità e il grado di incertezza delle stime."
+        }
+      ],
+      "concept": "Analisi di sensibilità e scenari what-if"
+    },
+    {
+      "id": "9-26",
+      "title": "9.26 Variazioni di prezzo, costo variabile, costi fissi e vendite",
+      "topics": [
+        "cdg-c09-t26"
+      ],
+      "blocks": [
+        {
+          "text": "Ogni parametro modifica in modo diverso il BEP. A parità degli altri elementi: un aumento di CF incrementa il BEP, un aumento di p lo riduce, un aumento di cvu lo incrementa; un cambiamento del volume effettivo non modifica il BEP se i costi unitari e fissi restano identici, ma cambia RO, MGS e GLO nel punto osservato."
+        },
+        {
+          "text": "Effetto di un prezzo scontato: con CF = 60.000 €, cvu = 12 €, il BEP iniziale a p = 30 € è 3.333,33 unità. Se il prezzo scende a 27 €, mdc scende a 15 € e il BEP sale a 4.000 unità. Perché lo sconto convenga in termini di reddito operativo, l’incremento delle quantità vendute deve compensare la perdita di margine unitario. A Q iniziale = 5.000, il vecchio MdC è 90.000 €; servirebbero 90.000/15 = 6.000 unità, quindi +20% di volume, per mantenere invariato il MdC complessivo. La possibilità di vendere 1.000 unità aggiuntive è una questione commerciale distinta dal calcolo."
+        },
+        {
+          "text": "Effetto di CF aggiuntivi: una campagna promozionale fissa di 15.000 € richiede, a margine unitario di 18 €, almeno 833,34 unità addizionali per coprirsi; con unità intere ne servono 834. È un calcolo incrementale, utile come ponte verso le decisioni di breve periodo trattate nel capitolo seguente. ΔQ necessario = incremento CF / mdc aggiuntivo, se p e cvu non cambiano"
+        }
+      ],
+      "concept": "Variazioni di prezzo, costo variabile, costi fissi e vendite"
+    },
+    {
+      "id": "9-27",
+      "title": "9.27 Capacità limitata, mix mutevole, prezzi a scaglioni",
+      "topics": [
+        "cdg-c09-t27"
+      ],
+      "blocks": [
+        {
+          "text": "Il BEP e la CVP non possono prescindere dai vincoli di mercato e produzione. Un’impresa con capacità massima di 3.000 unità non può adottare un piano con 4.200 unità vendute senza prevedere ulteriori turni, impianti, subfornitura o altri interventi che probabilmente modificano i costi. Se il mix di prodotti varia all’aumentare dei volumi, occorre ricalcolare margine medio e quantità di equilibrio; il BEP originario non resta valido."
+        },
+        {
+          "text": "Con prezzi a scaglioni, una scontistica sulle sole unità addizionali produce una funzione di ricavo a tratti: R(Q) = p₁ min(Q,s) + p₂ max(0,Q−s), con s soglia. Se invece il nuovo prezzo si applica retroattivamente a tutte le unità raggiunta la soglia, il ricavo può presentare una discontinuità: è una clausola commerciale diversa, che va esplicitata."
+        },
+        {
+          "text": "Con costi fissi a scatti, CF(Q) cambia quando si supera una soglia di capacità. Per ogni tratto occorre (1) identificare l’intervallo di validità, (2) calcolare un candidato BEP usando CF e margine del tratto, (3) verificare che il volume appartenga realmente al tratto, (4) confrontare le eventuali altre soluzioni. Non è corretto applicare una media dei costi fissi su volumi diversi senza controllare l’intervallo operativo."
+        }
+      ],
+      "concept": "Capacità limitata, mix mutevole, prezzi a scaglioni"
+    },
+    {
+      "id": "9-28",
+      "title": "9.28 Caso d’esame: Motel da 400 stanze",
+      "topics": [
+        "cdg-c09-t28"
+      ],
+      "blocks": [
+        {
+          "text": "La Simulazione d’esame n. 1 fornita contiene un caso di analisi costi-volumi-risultati su un motel con 400 stanze, aperto 365 giorni l’anno, costi fissi di 3.400.000 € annui, ricavo di 50 € per stanza-giorno occupata e costo variabile di 10 € per stanza-giorno. L’unità economica da utilizzare non è «una stanza», ma una stanza-giorno venduta: questo evita di confrontare ricavi giornalieri con costi fissi annuali."
+        },
+        {
+          "text": "La capacità annua è 400×365 = 146.000 stanze-giorno. Il margine per unità venduta è 40 €; il BEP è quindi 3.400.000/40 = 85.000 stanze-giorno. Il tasso di occupazione di pareggio è 85.000/146.000 = 58,22%. Il risultato operativo a piena occupazione è 146.000×40 − 3.400.000 = 2.440.000 €."
+        },
+        {
+          "table": [
+            [
+              "Grandezza richiesta",
+              "Calcolo",
+              "Risultato"
+            ],
+            [
+              "Capacità annua",
+              "400 × 365",
+              "146.000 stanze-giorno"
+            ],
+            [
+              "MdC unitario",
+              "50 − 10",
+              "40 €/stanza-giorno"
+            ],
+            [
+              "BEP fisico",
+              "3.400.000 / 40",
+              "85.000 stanze-giorno"
+            ],
+            [
+              "Occupazione BEP",
+              "85.000 / 146.000 × 100",
+              "58,22%"
+            ],
+            [
+              "RO con occupazione al 50%",
+              "(146.000 × 0,50 × 40) − 3.400.000",
+              "−480.000 €"
+            ],
+            [
+              "RO massimo al 100%",
+              "(146.000 × 40) − 3.400.000",
+              "2.440.000 €"
+            ],
+            [
+              "Ricavi al BEP",
+              "85.000 × 50",
+              "4.250.000 €"
+            ],
+            [
+              "CV al BEP",
+              "85.000 × 10",
+              "850.000 €"
+            ],
+            [
+              "CT al BEP",
+              "850.000 + 3.400.000",
+              "4.250.000 €"
+            ]
+          ]
+        },
+        {
+          "text": "L’esercizio chiede anche di rappresentare graficamente i risultati: occorre tracciare RT(Q)=50Q e CT(Q)=3.400.000+10Q, evidenziare l’intersezione a 85.000, il massimo a 146.000 e il livello di occupazione del 50% (73.000 stanze-giorno), che resta in perdita. La piena occupazione deve essere trattata come limite teorico, non come previsione realistica della domanda."
+        },
+        {
+          "text": "Il margine di sicurezza con occupazione attesa del 50% è negativo: (73.000 − 85.000)/73.000 ×100 ≈ −16,44%. Se la domanda attesa fosse del 75%, allora Q=109.500 e il margine sarebbe (109.500−85.000)/109.500 ≈ 22,37%. Il confronto mostra come il rischio dipenda dal volume atteso, non solo dalla capacità del motel."
+        }
+      ],
+      "concept": "Caso d’esame: Motel da 400 stanze"
+    },
+    {
+      "id": "9-29",
+      "title": "9.29 Caso manageriale: piattaforma di servizi digitali",
+      "topics": [
+        "cdg-c09-t29"
+      ],
+      "blocks": [
+        {
+          "text": "Esempio originale, integrativo e non tratto dal corso. Una società commercializza un servizio software in abbonamento annuale. Ogni cliente paga 320 € all’anno; la componente variabile comprende 32 € di infrastruttura cloud, 18 € di assistenza e altri servizi variabili, per un totale di 50 € a cliente. I costi fissi annuali comprendono 210.000 € per sviluppo e manutenzione continuativa e 45.000 € per struttura e amministrazione. Si stimano 1.200 clienti paganti nell’anno, senza variazioni di prezzo e con capacità di servizio adeguata."
+        },
+        {
+          "text": "Il margine di contribuzione per cliente è 320 − 50 = 270 €. I costi fissi sono 255.000 €. Il BEP è 255.000/270 = 944,44 clienti, quindi almeno 945 clienti paganti. Con 1.200 clienti il fatturato è 384.000 €, il costo variabile 60.000 €, MdC 324.000 € e RO 69.000 €. Il margine di sicurezza è (1.200−944,444)/1.200 = 21,30%; GLO = 324.000/69.000 = 4,696."
+        },
+        {
+          "table": [
+            [
+              "Indicatore",
+              "Calcolo",
+              "Risultato"
+            ],
+            [
+              "Prezzo e costi variabili",
+              "320 − (32 + 18)",
+              "mdc = 270 €/cliente"
+            ],
+            [
+              "Costi fissi",
+              "210.000 + 45.000",
+              "255.000 €"
+            ],
+            [
+              "BEP clienti",
+              "255.000 / 270",
+              "944,44 → 945"
+            ],
+            [
+              "RO con 1.200 clienti",
+              "270 × 1.200 − 255.000",
+              "69.000 €"
+            ],
+            [
+              "Margine sicurezza",
+              "(1.200 − 944,44) / 1.200",
+              "21,30%"
+            ],
+            [
+              "GLO",
+              "324.000 / 69.000",
+              "4,696"
+            ],
+            [
+              "Clienti per RO 90.000 €",
+              "(255.000 + 90.000) / 270",
+              "1.277,78 → 1.278"
+            ]
+          ]
+        },
+        {
+          "text": "Il risultato non rappresenta una previsione di business: trascura abbandoni dei clienti, acquisizione progressiva nel corso dell’anno, sconti, differenti livelli di utilizzo cloud, imposte e scelte di capitalizzazione degli investimenti software. Il modello è però utile per capire quante unità economiche servono alla copertura dei costi, quali volumi sono necessari per un utile obiettivo e quanto sia rischioso operare vicino alla soglia."
+        }
+      ],
+      "concept": "Caso manageriale: piattaforma di servizi digitali"
+    },
+    {
+      "id": "9-30",
+      "title": "9.30 Direct/variable costing e valorizzazione delle rimanenze",
+      "topics": [
+        "cdg-c09-t30"
+      ],
+      "blocks": [
+        {
+          "text": "Il conto economico direzionale a margine di contribuzione risponde alle esigenze di analisi dei risultati e non coincide automaticamente con la struttura di valorizzazione delle rimanenze richiesta per il bilancio d’esercizio. Secondo il principio OIC 13 – Rimanenze, il costo di produzione comprende, oltre ai costi diretti, la quota ragionevolmente imputabile dei costi generali di produzione; i costi generali fissi sono attribuiti sulla base della normale capacità produttiva. Non è dunque corretto presumere che le rimanenze possano essere valorizzate in bilancio al solo costo variabile industriale."
+        },
+        {
+          "text": "La differenza nasce dal trattamento dei costi fissi industriali: nel variable costing sono spesati integralmente nell’esercizio; nel full/absorption costing una parte può rimanere incorporata nelle unità prodotte ma non vendute, nel rispetto dei criteri contabili applicabili. Ciò può provocare differenze temporanee nel reddito misurato, pur senza modificare il flusso di cassa sottostante."
+        },
+        {
+          "text": "L’OIC 13 non autorizza comunque un assorbimento illimitato: in caso di bassa produzione, il costo fisso unitario imputato alle rimanenze non deve aumentare per effetto del sottoutilizzo anomalo della capacità. La quota non assorbibile resta costo dell’esercizio. Questo vincolo contabile è diverso dal problema decisionale: la CVP rimane centrata sulla struttura dei costi e sui volumi venduti."
+        },
+        {
+          "text": "Fonte esterna: L’approfondimento è fondato sui paragrafi dedicati al costo di produzione e all’allocazione dei"
+        },
+        {
+          "heading": "costi generali fissi alla capacità normale. È qui per collegare il Capitolo 9 con la contabilità generale e i sistemi"
+        },
+        {
+          "heading": "di costo pieno precedentemente studiati."
+        }
+      ],
+      "concept": "Direct/variable costing e valorizzazione delle rimanenze"
+    },
+    {
+      "id": "9-31",
+      "title": "9.31 Riconciliazione tra variable e absorption costing",
+      "topics": [
+        "cdg-c09-t31"
+      ],
+      "blocks": [
+        {
+          "text": "Esempio didattico originale. Un’impresa produce 1.000 unità, ne vende 800, non dispone di rimanenze iniziali e ha un prezzo di vendita di 100 €. Il costo variabile industriale è 45 € per unità prodotta, i costi industriali fissi sostenuti sono 20.000 €, i costi commerciali variabili ammontano a 5 € per unità venduta e quelli fissi commerciali a 10.000 €. Supponiamo che la produzione di 1.000 unità rappresenti la capacità produttiva normale: il costo industriale fisso assorbito unitario è 20.000/1.000 = 20 €."
+        },
+        {
+          "text": "Variable costing: Ricavi 80.000 €; costo industriale variabile del venduto 800×45 = 36.000 €; costi commerciali variabili 800×5 = 4.000 €; MdC = 40.000 €; costi industriali fissi 20.000 € e commerciali fissi 10.000 €; utile = 10.000 €. Le rimanenze finali industriali, nel prospetto gestionale, sono 200×45 = 9.000 €."
+        },
+        {
+          "text": "Absorption costing: Il costo industriale unitario è 45 +20 = 65 €. Il costo industriale del venduto è 800×65 = 52.000 €; il margine industriale lordo è 80.000−52.000 = 28.000 €; meno costi commerciali variabili 4.000 € e fissi 10.000 € porta a 14.000 €. Le rimanenze finali ammontano a 200×65 = 13.000 €: includono 4.000 € di costi fissi industriali differiti nell’attivo."
+        },
+        {
+          "table": [
+            [
+              "Grandezza",
+              "Variable costing",
+              "Absorption costing"
+            ],
+            [
+              "Rimanenze finali",
+              "9.000 €",
+              "13.000 €"
+            ],
+            [
+              "Costi fissi industriali a CE",
+              "20.000 €",
+              "16.000 € tramite costo del venduto"
+            ],
+            [
+              "Reddito operativo",
+              "10.000 €",
+              "14.000 €"
+            ],
+            [
+              "Differenza reddituale",
+              "—",
+              "+4.000 €"
+            ]
+          ]
+        },
+        {
+          "text": "RO_absorption − RO_variable = 200 unità × 20 €/unità = +4.000 €"
+        },
+        {
+          "text": "Con rimanenze iniziali e finali la riconciliazione considera la differenza fra costi fissi industriali differiti nelle rimanenze finali e quelli rilasciati dalle rimanenze iniziali. Una produzione in eccesso rispetto alle vendite può quindi far apparire più alto l’utile sotto absorption costing, senza che siano state vendute più unità: il management deve saper distinguere tale effetto contabile dalla crescita della domanda."
+        }
+      ],
+      "concept": "Riconciliazione tra variable e absorption costing"
+    },
+    {
+      "id": "9-32",
+      "title": "9.32 Errori frequenti e controlli di quadratura",
+      "topics": [
+        "cdg-c09-t32"
+      ],
+      "blocks": [
+        {
+          "text": "La maggior parte degli errori negli esercizi di CVP nasce da una di queste cause: confondere costi diretti e costi variabili, sommare importi riferiti a periodi diversi, scambiare pezzi con euro, applicare un margine medio non coerente con il mix, dimenticare i costi commerciali variabili, dividere costi fissi per un contributo unitario nullo o negativo, non verificare la capacità massima."
+        },
+        {
+          "text": "• Controllo 1 — Unità di misura. CF/mdc produce unità; CF/RC produce euro. I costi mensili si confrontano con volumi mensili."
+        },
+        {
+          "text": "• Controllo 2 — Forma del conto economico. RT − CV = MdC; MdC − CF = RO. Nel conto economico evoluto i CF specifici precedono i comuni."
+        },
+        {
+          "text": "• Controllo 3 — BEP. Sostituendo Q_BEP nella funzione RO(Q) si deve ottenere zero, salvo arrotondamenti o discretezza delle unità."
+        },
+        {
+          "text": "• Controllo 4 — Multiprodotto. I pesi devono sommare a 100%; le quantità di pareggio ricostruite devono preservare il mix assunto."
+        },
+        {
+          "text": "• Controllo 5 — Campo di validità. Se il BEP cade oltre la capacità o in uno scaglione diverso, il risultato aritmetico non è utilizzabile senza revisione."
+        },
+        {
+          "text": "• Controllo 6 — Premio e soglie. I costi sulle unità eccedenti non devono essere applicati retroattivamente a tutti i pezzi, salvo indicazione esplicita."
+        },
+        {
+          "text": "• Controllo 7 — GLO. Vicino al BEP l’indice è molto sensibile; al pareggio è non definito. Non interpretarlo come una percentuale."
+        },
+        {
+          "text": "• Controllo 8 — Fonti. Anche esempi nelle slide o nei formulari devono superare la verifica della somma, delle unità e dell’identità contabile."
+        },
+        {
+          "text": "Tre incongruenze da non trascrivere (a) Nel confronto di direct costing della presentazione la somma 10 + 15 + 5 è 30, non 20. (b) Nel multiprodotto la somma dei tre contributi medi dà circa 2,671 e non 2,286; i risultati di quantità e fatturato riportati nelle slide non quadrano con i dati. (c) Il costo dell’incentivo oltre soglia nella pizzeria è 0,30 × max(0, Q − 28.000), non 0,30 × tutte le unità. Il manuale non modifica silenziosamente la fonte, ma ne segnala la discrepanza e propone la ricostruzione matematica."
+        }
+      ],
+      "concept": "Errori frequenti e controlli di quadratura"
+    },
+    {
+      "id": "9-33",
+      "title": "9.33 Procedura guidata per la prova scritta",
+      "topics": [
+        "cdg-c09-t33"
+      ],
+      "blocks": [
+        {
+          "text": "Negli esercizi con tempo limitato una procedura stabile è più utile di un formulario memorizzato senza comprensione. La sequenza seguente è applicabile a una parte rilevante delle tracce di controllo di gestione dedicate a rischio operativo e margin analysis."
+        },
+        {
+          "text": "• 1. Leggere la domanda prima dei dati. Identificare ciò che è richiesto: Q_BEP, F_BEP, risultato operativo, reddito obiettivo, sicurezza, leva, confronto fra scenari o mix."
+        },
+        {
+          "text": "• 2. Definire unità economica e periodo. «Pezzi al mese», «stanza-giorno all’anno» o «clienti paganti nell’anno» sono oggetti differenti."
+        },
+        {
+          "text": "• 3. Separare parametri. Scrivere p, cvu, CF, Q, Qmax. Nei problemi multiprodotto aggiungere mix fisico e/o mix di fatturato."
+        },
+        {
+          "text": "• 4. Costruire il margine unitario o il margine medio coerente. Controllare che includa tutti i costi variabili pertinenti."
+        },
+        {
+          "text": "• 5. Calcolare la grandezza richiesta. Applicare BEP, Q obiettivo o RO(Q), verificando il campo di rilevanza."
+        },
+        {
+          "text": "• 6. Effettuare quadrature. Al BEP ricavi = costi; nella riclassificazione ricavi − CV − CF = RO."
+        },
+        {
+          "text": "• 7. Interpretare in una frase. Il numero è ottenibile? Il piano è rischioso? Una diminuzione del volume causa una perdita?"
+        },
+        {
+          "text": "• 8. Gestire arrotondamenti e mix discreto. Usare cifre non arrotondate nei passaggi intermedi; arrotondare unità o panieri solo al termine."
+        },
+        {
+          "image": "cdg-p116-1.png",
+          "caption": "Le quattro macrofasi dell’analisi: classificare, calcolare, verificare e interpretare.",
+          "alt": "Le quattro macrofasi dell’analisi: classificare, calcolare, verificare e interpretare."
+        }
+      ],
+      "concept": "Procedura guidata per la prova scritta"
+    },
+    {
+      "id": "9-34",
+      "title": "9.34 Esercizi autonomi con soluzioni commentate",
+      "topics": [
+        "cdg-c09-t34"
+      ],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "I problemi seguenti sono originali, salvo dove è indicato l’adattamento del caso fornito nelle simulazioni. Sono organizzati per difficoltà crescente. Per simulare una prova reale si raccomanda di risolvere prima i quesiti senza consultare la sezione delle soluzioni e di annotare il tipo di errore commesso."
+            },
+            {
+              "text": "Esercizio 1 — BEP elementare Una linea vende pezzi a 35 € ciascuno; il costo variabile unitario è 19 € e i costi fissi annuali sono 96.000 €. Determinare mdc, Q_BEP, F_BEP e verificare il pareggio."
+            },
+            {
+              "text": "Esercizio 2 — Obiettivo operativo Con CF di 120.000 € e mdc unitario di 25 €, quante unità occorre vendere per ottenere RO = 30.000 €?"
+            },
+            {
+              "text": "Esercizio 3 — Sicurezza e leva Usando i dati dell’esercizio 1, supporre Q = 8.000. Calcolare RO, margine di sicurezza assoluto/percentuale e GLO."
+            },
+            {
+              "text": "Esercizio 4 — Motel Un motel ha 400 stanze, è aperto 365 giorni, sostiene 3,4 milioni di euro di costi fissi, incassa 50 € per notte occupata e sostiene 10 € variabili. Determinare occupazione al pareggio, RO a occupazione 50% e RO a occupazione 100%."
+            },
+            {
+              "text": "Esercizio 5 — Direct vs variable Un prodotto ha p = 40 €, materiali 10 €, MOD 5 €, lavorazioni specifiche 6 € e costi indiretti variabili di produzione 2 € per pezzo. È realizzato in 1.000 unità; una macchina dedicata comporta 10.000 € fissi. Calcolare costo diretto unitario semplice, costo variabile unitario e MdC1/MdC2 per la linea, ipotizzando assenza di altri costi."
+            },
+            {
+              "text": "Esercizio 6 — Mix di vendita discreto Si vendono panieri virtuali composti da 3 unità A (p 50 €, cvu 30 €) e 2 unità B (p 80 €, cvu 40 €). CF complessivi pari a 100.000 €. Determinare il numero minimo intero di panieri per non perdere e il relativo fatturato."
+            },
+            {
+              "text": "Esercizio 7 — Sconto sul prezzo Un’impresa ha CF 150.000 €, p 40 €, cvu 25 € e Q previsto 12.000. Calcolare RO e BEP; poi portare p a 38 € a volumi invariati e ricalcolare RO e BEP."
+            },
+            {
+              "text": "Esercizio 8 — Leva operativa Con CF 90.000 €, p 45 €, cvu 25 € e Q = 6.000, calcolare MdC, RO e GLO. Stimare l’effetto di una variazione del +5% delle vendite."
+            },
+            {
+              "text": "Esercizio 9 — Scelta di struttura A: CF 60.000 €, cvu 12 €. B: CF 100.000 €, cvu 4 €. Il prezzo è 30 €. Individuare la quantità di indifferenza e quale struttura è preferibile a Q = 4.000 e Q = 6.000."
+            },
+            {
+              "text": "Esercizio 10 — Reddito netto obiettivo Un’impresa vuole ottenere un utile netto di 30.000 € con aliquota semplificata del 25%, CF = 120.000 € e mdc unitario = 20 €. Calcolare Q obiettivo."
+            },
+            {
+              "text": "Esercizio 11 — Incentivo a soglia Un prodotto ha p 10 €, cvu 6 €, CF 60.000 €. Oltre le prime 20.000 unità si paga un premio aggiuntivo di 1 €/pezzo sulle sole unità eccedenti. Determinare BEP e RO a 30.000 pezzi."
+            },
+            {
+              "text": "Esercizio 12 — Margine di sicurezza previsto La società Gamma ha QBEP = 2.800 unità, Q atteso = 3.500 unità e Qmax = 5.000 unità. Calcolare MGS percentuale e margine di elasticità rispetto alla capacità; spiegare perché differiscono."
+            },
+            {
+              "text": "Esercizio 13 — Due margini aziendali Due segmenti hanno MdC1 di 90.000 € e 70.000 €, CF specifici di 40.000 € e 50.000 €; i costi fissi comuni sono 35.000 €. Ricostruire MdC2 e RO complessivo."
+            },
+            {
+              "text": "Esercizio 14 — Rimanenze e risultato Produzione 1.000 unità, vendite 800, p 100 €, costo variabile industriale 45 €, costi fissi industriali 20.000 €, costo commerciale variabile 5 €/venduta, costi fissi commerciali 10.000 €. Calcolare RO in variable costing e absorption costing, con capacità normale pari a 1.000 e nessuna rimanenza iniziale."
+            },
+            {
+              "text": "Esercizio 15 — Validità del modello Un’impresa ha CF 75.000 €, prezzo 18 €, cvu 13 € e capacità massima 10.000 pezzi. Calcolare il BEP teorico e spiegare se il pareggio è raggiungibile nella struttura corrente."
+            },
+            {
+              "text": "Soluzione 1 mdc = 35 − 19 = 16 €/pz; QBEP = 96.000 / 16 = 6.000 unità; FBEP = 6.000×35 = 210.000 €. Controllo: CV = 6.000×19 = 114.000 €; CT = 114.000 + 96.000 = 210.000 €; RO = 0."
+            },
+            {
+              "text": "Soluzione 2 Q = (CF + RO*)/mdc = (120.000 +30.000)/25 = 6.000 unità. Il MdC totale atteso è 150.000 €; tolti 120.000 € fissi resta 30.000 €."
+            },
+            {
+              "text": "Soluzione 3 RO = 8.000×16 −96.000 = 32.000 €; MGS = 8.000−6.000 = 2.000 pezzi; MGS% = 2.000/8.000 =25%; GLO = (8.000×16)/32.000 = 4. Le vendite possono calare del 25% prima del BEP, a parametri invariati."
+            },
+            {
+              "text": "Soluzione 4 Capacità = 400×365 =146.000 stanze-giorno; mdc=40 €; QBEP=3.400.000/40=85.000; occupazione 58,22%. Al 50% Q=73.000, RO=73.000×40−3.400.000=−480.000 €; al 100% RO=146.000×40−3.400.000=2.440.000 €."
+            },
+            {
+              "text": "Soluzione 5 Costo diretto unitario semplice = 10+5+6=21 €/pz; variabile unitario =21+2=23 €/pz. Per 1.000 pezzi: ricavi 40.000 €, CV 23.000 €, MdC1 17.000 €. Il costo fisso specifico di 10.000 € riduce MdC2 a 7.000 €. Non è corretto sommare il costo fisso di linea al cvu marginale."
+            },
+            {
+              "text": "Soluzione 6 mdc A =50−30=20 €, mdc B=80−40=40 €. Per paniere 3A+2B: MdC=3×20+2×40=140 €, ricavi=3×50+2×80=310 €. Paniere BEP continuo=100.000/140=714,2857. Servono 715 panieri, cioè A=2.145 e B=1.430, ricavi=715×310=221.650 €, RO=715×140−100.000=100 €."
+            },
+            {
+              "text": "Soluzione 7 Inizialmente mdc=15 €, RO=12.000×15−150.000=30.000 €, QBEP=150.000/15=10.000. Dopo lo sconto mdc=13 €, RO=12.000×13−150.000=6.000 €, QBEP=150.000/13≈11.538,46 →11.539 unità."
+            },
+            {
+              "text": "Soluzione 8 mdc=20 €, MdC totale=20×6.000=120.000 €, RO=30.000 €, GLO=4. +5% delle vendite implica Q=6.300, MdC=126.000 € e RO=36.000 € (+20%), dato che tutti i parametri rimangono costanti."
+            },
+            {
+              "text": "Soluzione 9 Uguagliare CT_A=60.000+12Q e CT_B=100.000+4Q; 8Q=40.000 → Q*=5.000. A Q=4.000: RO_A=12.000 € e RO_B=4.000 €, conviene A. A Q=6.000: RO_A=48.000 €, RO_B=56.000 €, conviene B."
+            },
+            {
+              "text": "Soluzione 10 Risultato lordo necessario =30.000/(1−0,25)=40.000 €. Q=(120.000+40.000)/20=8.000 unità. La formula assume un’aliquota proporzionale e un confronto tra RO e risultato imponibile compatibile con la semplificazione."
+            },
+            {
+              "text": "Soluzione 11 mdc base =4 €, QBEP iniziale=60.000/4=15.000 unità: la soglia di 20.000 non influisce sul primo BEP. A Q=30.000: RO=4×30.000−60.000−1×(30.000−20.000)=50.000 €. Il premio va solo sulle 10.000 unità in eccesso."
+            },
+            {
+              "text": "Soluzione 12 MGS=(3.500−2.800)/3.500=20%. Margine di elasticità=(5.000−2.800)/5.000=44%. Cambia il denominatore e il volume di riferimento: vendite attese nel primo, capacità massima nel secondo."
+            },
+            {
+              "text": "Soluzione 13 MdC2_A=90.000−40.000=50.000 €; MdC2_B=70.000−50.000=20.000 €; RO=50.000+20.000−35.000=35.000 €. I costi fissi comuni si sottraggono una sola volta a livello aziendale."
+            },
+            {
+              "text": "Soluzione 14 Variable: 80.000−(800×45)−(800×5)−20.000−10.000=10.000 €. Absorption: quota fissa industriale 20 €/pz, costo pieno unitario 65 €, RO=80.000−(800×65)−(800×5)−10.000=14.000 €. Differenza =200 unità in scorta ×20 € =4.000 €."
+            },
+            {
+              "text": "Soluzione 15 mdc=18−13=5 €, QBEP=75.000/5=15.000 pezzi. È superiore alla capacità massima 10.000, quindi il pareggio non è fisicamente raggiungibile. Anche a Qmax: RO=10.000×5−75.000=−25.000 €. Serve un intervento su prezzi, CV, CF o capacità con successivo ricalcolo."
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Esercizi autonomi con soluzioni commentate"
+    },
+    {
+      "id": "9-35",
+      "title": "9.35 Formulario ragionato, glossario e domande teoriche",
+      "topics": [
+        "cdg-c09-t35"
+      ],
+      "blocks": [
+        {
+          "text": "Il formulario serve a controllare la logica degli esercizi. Ogni formula è valida solo sotto le ipotesi indicate in precedenza. È consigliabile imparare a ricostruirle a partire da RO = MdC − CF, anziché ricordarle come istruzioni isolate."
+        },
+        {
+          "table": [
+            [
+              "Grandezza",
+              "Formula",
+              "Condizione"
+            ],
+            [
+              "Margine unitario",
+              "mdc = p − cvu",
+              "Prezzo e costo unitario omogenei"
+            ],
+            [
+              "Margine totale",
+              "MdC = mdc × Q",
+              "Costi variabili lineari"
+            ],
+            [
+              "Rapporto contribuzione",
+              "RC = mdc / p = MdC / F",
+              "F e MdC riferiti allo stesso mix"
+            ],
+            [
+              "Reddito operativo",
+              "RO = mdc × Q − CF",
+              "Stesso periodo di riferimento"
+            ],
+            [
+              "Break-even fisico",
+              "QBEP = CF / mdc",
+              "mdc > 0"
+            ],
+            [
+              "Break-even fatturato",
+              "FBEP = CF / RC",
+              "RC > 0"
+            ],
+            [
+              "RO obiettivo",
+              "Q = (CF + RO*) / mdc",
+              "Struttura invariata"
+            ],
+            [
+              "RN obiettivo",
+              "RO* = RN* / (1 − t)",
+              "Aliquota proporzionale semplificata"
+            ],
+            [
+              "BEP multiprodotto",
+              "Q = CF / Σ(αᵢ × mdcᵢ)",
+              "Mix fisico costante"
+            ],
+            [
+              "BEP multiprodotto in €",
+              "F = CF / Σ(βᵢ × RCᵢ)",
+              "Mix in fatturato costante"
+            ],
+            [
+              "Margine sicurezza",
+              "(Q − QBEP) / Q",
+              "Volume effettivo o previsto positivo"
+            ],
+            [
+              "Margine elasticità",
+              "(Qmax − QBEP) / Qmax",
+              "Confronto con capacità massima"
+            ],
+            [
+              "Grado leva operativa",
+              "GLO = MdC / RO",
+              "RO ≠ 0, modello lineare"
+            ],
+            [
+              "RO con soglia incentivo",
+              "mdcQ − CF − k·max(Q − s,0)",
+              "Premio k solo oltre s"
+            ],
+            [
+              "Differenza absorption−variable",
+              "CF ind. in RF − CF ind. in RI",
+              "Criteri di costo coerenti"
+            ]
+          ]
+        },
+        {
+          "text": "Glossario minimo rigoroso"
+        },
+        {
+          "text": "• Costi fissi (CF): costi relativamente invarianti nel totale entro un intervallo rilevante di attività e un dato periodo."
+        },
+        {
+          "text": "• Costi variabili (CV): costi totali che cambiano con il volume; nel modello lineare l’incidenza unitaria è costante."
+        },
+        {
+          "text": "• Costo diretto: costo imputabile direttamente a un oggetto di calcolo definito; non necessariamente variabile."
+        },
+        {
+          "text": "• Costo fisso specifico: costo fisso riconducibile a uno specifico segmento o prodotto-linea; non necessariamente eliminabile in ogni decisione."
+        },
+        {
+          "text": "• MdC primo livello: differenza fra ricavi e costi variabili pertinenti."
+        },
+        {
+          "text": "• MdC secondo livello: MdC1 al netto dei costi fissi specifici del segmento."
+        },
+        {
+          "text": "• BEP: livello di attività nel quale ricavi totali e costi totali coincidono, con RO = 0."
+        },
+        {
+          "text": "• Rapporto di contribuzione: quota di ogni euro di ricavo disponibile a coprire costi fissi e utile."
+        },
+        {
+          "text": "• MGS: distanza tra attività effettiva/prevista e BEP."
+        },
+        {
+          "text": "• Margine di elasticità: distanza relativa tra capacità massima e BEP, nel significato adottato nelle slide."
+        },
+        {
+          "text": "• GLO: elasticità del risultato operativo a una variazione relativa delle vendite nel punto considerato."
+        },
+        {
+          "text": "• Sales mix: proporzioni dei prodotti nelle vendite espresse in quantità o ricavi; il metodo di ponderazione deve essere coerente."
+        },
+        {
+          "text": "Domande di teoria per lo scritto"
+        },
+        {
+          "text": "• 1. Perché un costo può essere diretto e fisso contemporaneamente? Fai un esempio."
+        },
+        {
+          "text": "• 2. Qual è la distinzione tra direct costing semplice, direct costing evoluto e variable costing secondo il corso?"
+        },
+        {
+          "text": "• 3. Che cosa rappresentano il MdC1 e il MdC2 e perché non equivalgono a un utile?"
+        },
+        {
+          "text": "• 4. Quali sono le ipotesi necessarie per applicare la break-even analysis lineare?"
+        },
+        {
+          "text": "• 5. Dimostra la formula del BEP in quantità partendo da RT e CT."
+        },
+        {
+          "text": "• 6. Perché il BEP multiprodotto dipende dal mix e come si calcola usando pesi fisici o monetari?"
+        },
+        {
+          "text": "• 7. Distingui MGS, margine di elasticità e GLO."
+        },
+        {
+          "text": "• 8. Come cambiano rischio e reddito operativo passando da una struttura ad alto CV a una ad alto CF?"
+        },
+        {
+          "text": "• 9. Perché il GLO non è definito al BEP e non equivale al costo fisso percentuale?"
+        },
+        {
+          "text": "• 10. Perché un utile positivo con absorption costing può dipendere dall’aumento del magazzino?"
+        },
+        {
+          "text": "• 11. Cosa accade se il punto di pareggio teorico è oltre la capacità produttiva?"
+        },
+        {
+          "text": "• 12. Come si verifica una soluzione con ricavi/costi a soglia e cosa significa che una clausola è retroattiva?"
+        }
+      ],
+      "concept": "Formulario ragionato, glossario e domande teoriche"
+    }
+  ],
+  "relations": [
+    {
+      "to": "9-3",
+      "relation": "I metodi distinguono tracciabilità e comportamento dei costi",
+      "from": "9-2"
+    },
+    {
+      "to": "9-7",
+      "relation": "Sottrarre i variabili permette di leggere il margine di primo livello",
+      "from": "9-6"
+    },
+    {
+      "to": "9-9",
+      "relation": "Il margine misura il contributo alla copertura dei fissi",
+      "from": "9-7"
+    },
+    {
+      "to": "9-12",
+      "relation": "Il pareggio si raggiunge quando il contributo totale copre i fissi",
+      "from": "9-9"
+    },
+    {
+      "to": "9-19",
+      "relation": "Con più prodotti il pareggio dipende dal mix",
+      "from": "9-12"
+    },
+    {
+      "to": "9-22",
+      "relation": "La struttura di costo determina la sensibilità del risultato operativo",
+      "from": "9-10"
+    },
+    {
+      "to": "9-21",
+      "relation": "La distanza dal pareggio misura il margine di sicurezza",
+      "from": "9-12"
+    }
+  ]
+}

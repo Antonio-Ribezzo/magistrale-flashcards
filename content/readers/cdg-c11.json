@@ -1,0 +1,1270 @@
+{
+  "sections": [
+    {
+      "id": "introduzione",
+      "title": "Introduzione",
+      "topics": [],
+      "blocks": [
+        {
+          "image": "cdg-p137-1.png",
+          "caption": "Le cinque principali fasi operative e la revisione ex post del processo di investimento.",
+          "alt": "Le cinque principali fasi operative e la revisione ex post del processo di investimento."
+        }
+      ],
+      "concept": "Introduzione"
+    },
+    {
+      "id": "11-1",
+      "title": "11.1 Obiettivi, lessico e collegamenti con il corso",
+      "topics": [
+        "cdg-c11-t01"
+      ],
+      "blocks": [
+        {
+          "text": "Questo capitolo completa il passaggio dalle decisioni operative di breve periodo (Capitolo 10) alla valutazione di scelte che impegnano risorse per più esercizi. La domanda centrale è: un’impresa dovrebbe spendere oggi per ottenere benefici monetari futuri, oppure utilizzare diversamente il capitale? Per rispondere occorre conoscere quantità, momento in cui si manifestano e rischio dei flussi finanziari. La sola utilità contabile non basta."
+        },
+        {
+          "text": "Al termine dello studio saprai: costruire correttamente la linea del tempo dei flussi di cassa; capitalizzare e attualizzare importi a date differenti; calcolare e interpretare VAN, TIR, PBP, PBP attualizzato, indice di redditività e costo annuo equivalente; confrontare alternative di dimensioni o vite differenti; riconoscere errori su tassi, imposte e capitale circolante; motivare una decisione e valutare l’effetto dell’incertezza. Il percorso è volutamente graduale: ogni formula sarà associata a una domanda gestionale, un esempio e un controllo di plausibilità."
+        },
+        {
+          "heading": "PER LO STUDIO | “Flusso di cassa” indica entrata o uscita di denaro in una data precisa; “costo” e “ricavo” sono"
+        },
+        {
+          "heading": "grandezze economiche di competenza. I due linguaggi sono connessi, ma non intercambiabili."
+        }
+      ],
+      "concept": "Obiettivi, lessico e collegamenti con il corso"
+    },
+    {
+      "id": "11-2",
+      "title": "11.2 Che cos’è un investimento e perché pianificarlo",
+      "topics": [
+        "cdg-c11-t02"
+      ],
+      "blocks": [
+        {
+          "text": "Un investimento è un impiego attuale di risorse per ottenere benefici futuri. Può consistere nell’acquisto di un impianto, nello sviluppo di un prodotto, nell’acquisizione di un software, nell’apertura di una sede o in un progetto di efficienza energetica. Il progetto genera tipicamente un esborso iniziale e una serie di incassi e pagamenti distribuiti nel tempo. L’obiettivo della valutazione economico-finanziaria non è solo recuperare il costo, ma remunerare adeguatamente il capitale tenuto impegnato e il rischio assunto."
+        },
+        {
+          "text": "Un investimento è spesso difficilmente reversibile: dopo avere installato un impianto o sviluppato un applicativo proprietario può essere costoso tornare indietro. Il decisore deve perciò considerare l’orizzonte, le condizioni di mercato, la possibilità di riutilizzo dei beni, gli effetti sulla liquidità e sulla strategia. Un investimento può essere tecnicamente utile ma finanziariamente non conveniente; viceversa può avere VAN positivo ma non essere realizzabile per limiti normativi o di capacità."
+        },
+        {
+          "table": [
+            [
+              "Aspetto",
+              "Decisione di breve periodo",
+              "Investimento pluriennale"
+            ],
+            [
+              "Risorse",
+              "Capacità e contratti esistenti",
+              "Nuovi impianti, tecnologie, struttura"
+            ],
+            [
+              "Focus",
+              "Margine differenziale prossimo",
+              "Flussi incrementali per tutta la vita"
+            ],
+            [
+              "Tempo",
+              "Spesso pochi mesi",
+              "Anni, anche con uscita iniziale"
+            ],
+            [
+              "Rischio",
+              "Più circoscritto (non sempre)",
+              "Esposizione prolungata e irreversibilità"
+            ],
+            [
+              "Metodo",
+              "Δ ricavi e costi rilevanti",
+              "VAN, TIR e altri metodi finanziari"
+            ]
+          ]
+        }
+      ],
+      "concept": "Che cos’è un investimento e perché pianificarlo"
+    },
+    {
+      "id": "11-3",
+      "title": "11.3 Processo di capital budgeting e categorie dei progetti",
+      "topics": [
+        "cdg-c11-t03"
+      ],
+      "blocks": [
+        {
+          "text": "Il capital budgeting è il processo di identificazione, analisi, selezione, realizzazione e monitoraggio di investimenti di lungo termine. La docente lo inquadra nella politica degli investimenti, distinta ma coordinata con la politica dei finanziamenti (come reperire il capitale) e quella dei dividendi (distribuire o reinvestire valore). Un buon progetto può comunque essere rinviato se l’impresa non dispone della liquidità necessaria o se esistono opportunità superiori."
+        },
+        {
+          "text": "Le fasi operative sono: (1) ricerca e formulazione di opportunità; (2) previsione dei flussi incrementali, della durata e del rischio; (3) verifica dei criteri economico-finanziari; (4) scelta coerente con budget, strategia e vincoli; (5) esecuzione; (6) confronto ex post tra attese e risultati. Gli investimenti possono essere di sostituzione, ampliamento, razionalizzazione, innovazione, sicurezza/conformità o natura strategica. I progetti “obbligatori” richiedono comunque la valutazione della soluzione meno onerosa a parità di obbligo soddisfatto."
+        }
+      ],
+      "concept": "Processo di capital budgeting e categorie dei progetti"
+    },
+    {
+      "id": "11-4",
+      "title": "11.4 Il valore finanziario del tempo: logica economica",
+      "topics": [
+        "cdg-c11-t04"
+      ],
+      "blocks": [
+        {
+          "text": "Un euro oggi non equivale automaticamente a un euro tra tre anni. Chi possiede denaro subito può investirlo e ottenere rendimento; inoltre deve valutare inflazione, incertezza e rischio. Il principio del valore finanziario del tempo consente di rendere confrontabili somme disponibili in date diverse scegliendo una medesima epoca di riferimento. Questa “traslazione” avviene mediante capitalizzazione (dal presente al futuro) e attualizzazione (dal futuro al presente)."
+        },
+        {
+          "text": "Esempio: se il tasso annuo composto è 8%, 1.000 € oggi sono finanziariamente equivalenti a 1.080 € fra un anno. Fra tre anni saranno equivalenti a 1.259,71 €. In senso inverso, 1.259,71 € esigibili fra tre anni valgono 1.000 € alla data odierna al medesimo tasso. L’equivalenza è condizionata al tasso e alle ipotesi, non è un prezzo universalmente osservabile."
+        },
+        {
+          "image": "cdg-p138-1.png",
+          "caption": "Un valore monetario può essere trasferito nel tempo con la stessa legge finanziaria.",
+          "alt": "Un valore monetario può essere trasferito nel tempo con la stessa legge finanziaria."
+        }
+      ],
+      "concept": "Il valore finanziario del tempo: logica economica"
+    },
+    {
+      "id": "11-5",
+      "title": "11.5 Tasso di interesse, rischio e costo opportunità",
+      "topics": [
+        "cdg-c11-t05"
+      ],
+      "blocks": [
+        {
+          "text": "Il tasso r esprime il prezzo del denaro nel tempo e, nella valutazione degli investimenti, il rendimento minimo richiesto per progetti di rischio comparabile. Può richiamare il costo del finanziamento, il rendimento alternativo rinunciato (costo opportunità) o il costo medio ponderato del capitale (WACC). Non si applica indiscriminatamente qualsiasi tasso di prestito: la scelta deve riflettere chi sostiene il rischio, la struttura di finanziamento e il tipo di flusso usato."
+        },
+        {
+          "text": "Il costo opportunità è il rendimento a cui si rinuncia non scegliendo un impiego alternativo del capitale di rischio simile. Se investiamo in un progetto che rende il 5% ma esiste un impiego realmente comparabile che richiede almeno l’8%, il primo non remunera sufficientemente il capitale. Tassi elevati penalizzano maggiormente incassi molto lontani nel tempo; non rappresentano una correzione arbitraria, ma una condizione economica da giustificare."
+        }
+      ],
+      "concept": "Tasso di interesse, rischio e costo opportunità"
+    },
+    {
+      "id": "11-6",
+      "title": "11.6 Capitalizzazione semplice, composta e continua",
+      "topics": [
+        "cdg-c11-t06"
+      ],
+      "blocks": [
+        {
+          "text": "La capitalizzazione semplice attribuisce interessi sempre sul capitale iniziale: M = C₀(1 + r·n). È utile per brevi periodi o convenzioni particolari. La capitalizzazione composta reinveste periodicamente gli interessi, quindi genera “interessi su interessi”: M = C₀(1+r)ⁿ. È la legge assunta ordinariamente nel capital budgeting pluriennale. La capitalizzazione continua, come approfondimento matematico, applica una forza di interesse costante δ: M = C₀·e^(δn). Non bisogna usare r ed δ come se fossero lo stesso numero: r = e^δ−1 per un periodo unitario."
+        },
+        {
+          "heading": "M semplice = C₀ × (1 + r·n) | M composto = C₀ × (1+r)ⁿ"
+        },
+        {
+          "text": "Esempio su 10.000 €, 6% annuo, tre anni: semplice = 10.000(1+0,06×3) = 11.800 €; composto = 10.000(1,06)³ = 11.910,16 €. La differenza di 110,16 € nasce dal reinvestimento degli interessi. Per i flussi di cassa che maturano a epoche distinte useremo normalmente il regime composto, specificando sempre frequenza e unità di tempo del tasso."
+        }
+      ],
+      "concept": "Capitalizzazione semplice, composta e continua"
+    },
+    {
+      "id": "11-7",
+      "title": "11.7 Attualizzazione: valore attuale di uno o più flussi",
+      "topics": [
+        "cdg-c11-t07"
+      ],
+      "blocks": [
+        {
+          "text": "L’attualizzazione risponde alla domanda: quanto vale oggi un importo che sarà incassato o pagato a un’epoca futura? Se t indica il numero di periodi, il valore attuale di un flusso futuro è VA(CFₜ) = CFₜ/(1+r)ᵗ. Il coefficiente 1/(1+r)ᵗ è il fattore di sconto. A un tasso positivo esso è minore di uno e decresce con t. Valori negativi (uscite) conservano il proprio segno."
+        },
+        {
+          "heading": "VA(CFₜ) = CFₜ/(1+r)ᵗ | VA dei flussi = Σₜ CFₜ/(1+r)ᵗ"
+        },
+        {
+          "text": "Per 5.000 € esigibili tra due anni al 10%: VA = 5.000/(1,10)² = 4.132,23 €. Per tre incassi da 1.000 €, 2.000 € e 3.000 € alle epoche 1, 2 e 3 al 5%, si attualizza ogni flusso separatamente e poi si somma: 952,38 + 1.814,06 + 2.591,51 = 5.357,95 € (approssimazioni). Non è corretto sommare 6.000 € e attualizzare per tre anni: gli incassi non avvengono tutti alla stessa data."
+        }
+      ],
+      "concept": "Attualizzazione: valore attuale di uno o più flussi"
+    },
+    {
+      "id": "11-8",
+      "title": "11.8 Tassi equivalenti, nominali ed effettivi",
+      "topics": [
+        "cdg-c11-t08"
+      ],
+      "blocks": [
+        {
+          "text": "Quando i flussi sono mensili occorre un tasso mensile coerente: con un tasso annuo effettivo iₐ, il mensile equivalente è iₘ=(1+iₐ)^(1/12)−1. Con iₐ=2%, iₘ≈0,165158% e non esattamente 2%/12. Viceversa iₐ=(1+iₘ)¹²−1. Se invece è dichiarato un tasso nominale annuo j convertibile mensilmente, il tasso per mese è j/12 e l’effettivo annuo è (1+j/12)¹²−1. Confondere nominale ed effettivo produce errori sistematici."
+        },
+        {
+          "heading": "Tasso periodale equivalente = (1 + tasso effettivo annuale)^(1/m) − 1"
+        },
+        {
+          "text": "Per periodi che non coincidono con il calendario occorre conoscere la convenzione temporale adottata (mesi, trimestri, anni). Se r è espresso per anno, un flusso al mese 6 si sconta con un esponente coerente con metà anno oppure con un tasso semestrale equivalente. Regola d’esame: annotare accanto al tasso “% / anno”, “% / mese” o “% / trimestre” prima di scrivere la formula."
+        }
+      ],
+      "concept": "Tassi equivalenti, nominali ed effettivi"
+    },
+    {
+      "id": "11-9",
+      "title": "11.9 Rendite posticipate, anticipate e perpetuità",
+      "topics": [
+        "cdg-c11-t09"
+      ],
+      "blocks": [
+        {
+          "text": "Una rendita è una successione di pagamenti di uguale importo R a intervalli costanti. Se i pagamenti sono posticipati (fine di ciascun periodo) per n periodi, il fattore di rendita è aₙ(r)=[1−(1+r)^(−n)]/r e VA=R·aₙ(r). Il montante al termine del periodo n è M=R·[(1+r)ⁿ−1]/r. Nel caso di pagamenti anticipati (a inizio periodo, da t0 a t(n−1)), il valore attuale è VA anticipata = R·aₙ(r)·(1+r)."
+        },
+        {
+          "heading": "VA rendita posticipata = R × [1 − (1+r)^(−n)] / r"
+        },
+        {
+          "heading": "VA rendita anticipata = VA posticipata × (1+r)"
+        },
+        {
+          "text": "Una perpetuità posticipata costante, con prima rata a t1 e r>0, ha VA = R/r. Se le rate crescono indefinitamente a un tasso g, con prima rata R₁ a t1 e r>g, VA=R₁/(r−g). Se la perpetuità comincia a t(k+1), la formula R/r restituisce il valore a tk, da attualizzare ancora fino a t0. L’errore più comune è dimenticare la prima data di incasso. Non si applicano formule di perpetuità se non sono coerenti con l’orizzonte economico e con le ipotesi di durata."
+        },
+        {
+          "heading": "CASO ARCARI 9.1 | Il capitolo 9 delle soluzioni editoriali usa il tasso mensile equivalente al 2% effettivo annuo e"
+        },
+        {
+          "heading": "il montante di una rendita posticipata; il risultato pubblicato è 3.632,85 €. Non disponendo del testo completo"
+        },
+        {
+          "heading": "dell’esercizio 9.1, evitiamo di inventare numero di rate e importi: il valore è utilizzato come riscontro, non come"
+        },
+        {
+          "heading": "problema ricostruito arbitrariamente."
+        }
+      ],
+      "concept": "Rendite posticipate, anticipate e perpetuità"
+    },
+    {
+      "id": "11-10",
+      "title": "11.10 I flussi di cassa: che cosa conta davvero",
+      "topics": [
+        "cdg-c11-t10"
+      ],
+      "blocks": [
+        {
+          "text": "La bontà di una valutazione dipende soprattutto dalla costruzione dei cash flow, non soltanto dalla formula impiegata. In un VAN si considerano i flussi futuri, incrementali e pertinenti all’investimento: per ogni voce chiediamoci se quel pagamento o incasso avverrà, quando e se è causato dalla scelta. Un prezzo di vendita contabile non incassato immediatamente non deve essere automaticamente collocato nel medesimo periodo. I costi già sostenuti sono sunk costs; se invariati a seguito della decisione, non entrano nei flussi differenziali."
+        },
+        {
+          "text": "Sono tipicamente rilevanti: investimento e installazione, costi di formazione incrementali, ricavi netti incassati, risparmi operativi, manutenzioni, imposte sui redditi dovute, variazioni del capitale circolante netto operativo, proventi della vendita finale e costi di smantellamento. Un costo opportunità può essere rilevante se un bene impiegato nel progetto perde un impiego alternativo remunerativo. La quota di ammortamento contabile non è un esborso monetario ed è esclusa come voce diretta, pur potendo incidere sul calcolo delle imposte. Gli interessi sul finanziamento, se utilizziamo flussi operativi per tutti i finanziatori e un WACC coerente, non vanno sottratti una seconda volta."
+        },
+        {
+          "image": "cdg-p140-1.png",
+          "caption": "Esempio di linea temporale: il segno e l’anno di manifestazione del cash flow sono essenziali.",
+          "alt": "Esempio di linea temporale: il segno e l’anno di manifestazione del cash flow sono essenziali."
+        }
+      ],
+      "concept": "I flussi di cassa: che cosa conta davvero"
+    },
+    {
+      "id": "11-11",
+      "title": "11.11 Investimento iniziale, capitale circolante e valore finale",
+      "topics": [
+        "cdg-c11-t11"
+      ],
+      "blocks": [
+        {
+          "text": "Il flusso al tempo iniziale, di solito CF₀, comprende l’acquisto dell’attività, l’installazione, eventuali oneri iniziali direttamente connessi e l’investimento iniziale in capitale circolante netto. Per un progetto di sostituzione occorre considerare anche il prezzo effettivamente incassabile dalla vendita del vecchio bene e la fiscalità applicabile. Attenzione: il “costo storico” del vecchio impianto è passato e non rilevante; l’eventuale ricavo futuro dalla sua vendita lo è."
+        },
+        {
+          "text": "Il capitale circolante netto operativo (CCN) assorbe liquidità quando crescono, per esempio, rimanenze e crediti commerciali al netto dei debiti commerciali. Se un progetto richiede 15.000 € di nuovo CCN all’avvio, questo è un esborso iniziale anche se non appare come costo nel conto economico. Se il progetto termina e tutto il CCN viene liberato, abbiamo un’entrata finale di 15.000 €. Durante la vita, la voce da inserire è −ΔCCN: un incremento di CCN provoca un’uscita; una riduzione libera cassa."
+        },
+        {
+          "text": "Il valore terminale può includere il prezzo residuo di vendita di macchine, licenze o beni, il recupero del CCN e gli eventuali costi di dismissione e ripristino. Deve essere collocato nell’anno effettivo in cui avverrà l’incasso o il pagamento, non confuso con il valore contabile residuo. La stima di un valore di vendita al netto degli effetti fiscali può differire molto dal valore residuo nei libri."
+        }
+      ],
+      "concept": "Investimento iniziale, capitale circolante e valore finale"
+    },
+    {
+      "id": "11-12",
+      "title": "11.12 Dall’utile al cash flow operativo e al FCFF",
+      "topics": [
+        "cdg-c11-t12"
+      ],
+      "blocks": [
+        {
+          "text": "Il rendiconto economico misura il risultato per competenza, mentre la valutazione finanziaria richiede flussi monetari. Per un progetto finanziato indistintamente da debito e capitale proprio, una formulazione semplificata del free cash flow to the firm (FCFF) è: EBIT·(1−T) + ammortamenti − investimenti netti − ΔCCN operativo. Tale schema presuppone aliquota fiscale rappresentativa e componenti operative definite coerentemente. Se il reddito imponibile diverge dall’EBIT, occorre correggere le imposte effettive e le loro scadenze."
+        },
+        {
+          "heading": "FCFFₜ = EBITₜ(1−T) + Ammortamentiₜ − CAPEXₜ − ΔCCNₜ"
+        },
+        {
+          "text": "Esempio: reddito operativo EBIT = 42.000 €; aliquota 25%; ammortamenti = 9.000 €; acquisti di nuovi beni = 6.000 €; incremento CCN = 4.000 €. Il flusso operativo disponibile è 42.000×0,75 + 9.000 − 6.000 − 4.000 = 30.500 €. L’ammortamento è riaggiunto perché ha ridotto l’EBIT senza assorbire cassa; la fiscalità ne incorpora l’effetto deducibile, se previsto dalle regole del problema. Non confondere questo flusso con il saldo banca, che può includere raccolta di prestiti, rimborsi di debito e dividendi."
+        },
+        {
+          "image": "cdg-p141-1.png",
+          "caption": "Ponte concettuale tra risultato operativo e cash flow dell’investimento.",
+          "alt": "Ponte concettuale tra risultato operativo e cash flow dell’investimento."
+        }
+      ],
+      "concept": "Dall’utile al cash flow operativo e al FCFF"
+    },
+    {
+      "id": "11-13",
+      "title": "11.13 La scelta del tasso: WACC e coerenza finanziaria",
+      "topics": [
+        "cdg-c11-t13"
+      ],
+      "blocks": [
+        {
+          "text": "Il tasso di attualizzazione deve riflettere l’alternativa finanziaria pertinente. Per flussi disponibili a tutti i finanziatori può essere appropriato un WACC, cioè una media ponderata dei rendimenti richiesti dagli azionisti (Kₑ) e dei finanziatori (Kᴅ), tenendo conto, quando coerente, della deducibilità fiscale degli interessi. Una forma comune per struttura finanziaria debito D e patrimonio E è:"
+        },
+        {
+          "heading": "WACC = [E/(D+E)] × Kₑ + [D/(D+E)] × Kᴅ × (1−T)"
+        },
+        {
+          "text": "Esempio: E=60% e D=40% (pesi su valori rappresentativi), Kₑ=12%, Kᴅ=6%, T=25%. Risulta WACC = 0,60×12% + 0,40×6%×0,75 = 9%. Il tasso non è corretto per ogni progetto se il suo rischio differisce da quello dell’azienda: una nuova attività molto rischiosa richiede una valutazione specifica. Per flussi destinati ai soli azionisti (cash flow to equity) occorre un rendimento richiesto del capitale proprio coerente con tali flussi, non il WACC impiegato per FCFF."
+        },
+        {
+          "heading": "INTEGRAZIONE ACCA E IFRS | La coerenza tra ipotesi dei flussi e tasso è fondamentale: non duplicare il rischio"
+        },
+        {
+          "heading": "correggendo in modo inconciliabile entrambi; non mescolare valori reali con tassi nominali. IAS 36 impiega il"
+        },
+        {
+          "heading": "valore attuale per una finalità contabile diversa (impairment), ma conferma il principio della coerenza tra cash"
+        },
+        {
+          "heading": "flow e tasso di sconto."
+        }
+      ],
+      "concept": "La scelta del tasso: WACC e coerenza finanziaria"
+    },
+    {
+      "id": "11-14",
+      "title": "11.14 VAN: definizione, formula e significato",
+      "topics": [
+        "cdg-c11-t14"
+      ],
+      "blocks": [
+        {
+          "text": "Il Valore Attuale Netto (VAN), o Net Present Value (NPV), è la somma dei valori attuali di tutti i flussi finanziari incrementali del progetto, compreso l’esborso iniziale (negativo). Se r è costante e le epoche sono annuali, la formula è:"
+        },
+        {
+          "heading": "VAN(r) = Σₜ₌₀ⁿ [CFₜ/(1+r)ᵗ] = CF₀ + CF₁/(1+r) + … + CFₙ/(1+r)ⁿ"
+        },
+        {
+          "text": "Se VAN > 0, il progetto, nelle ipotesi adottate, genera ricchezza superiore alla remunerazione richiesta del capitale; se VAN = 0, remunera esattamente al tasso r; se VAN < 0, non raggiunge la soglia richiesta. VAN positivo non significa “incassare quella cifra subito”: è la stima del valore attuale netto creato, non il saldo di liquidità del primo periodo. Il metodo tiene conto della dimensione, del tempo e del costo del capitale, purché le stime dei flussi siano attendibili."
+        },
+        {
+          "text": "Fra i principali limiti: necessità di stimare flussi e tasso, sensibilità agli scenari futuri, dipendenza dall’orizzonte e dal trattamento del valore terminale. Per progetti alternativi con vita e servizio comparabili, il VAN più alto è generalmente il criterio decisivo. Se le vite non sono comparabili occorre normalizzare (costo annuo equivalente, catena di sostituzioni) oppure uniformare correttamente l’orizzonte decisionale."
+        }
+      ],
+      "concept": "VAN: definizione, formula e significato"
+    },
+    {
+      "id": "11-15",
+      "title": "11.15 Calcolo del VAN: tabella, regole e verifiche",
+      "topics": [
+        "cdg-c11-t15"
+      ],
+      "blocks": [
+        {
+          "text": "La procedura standard è: (1) costruire la tabella con una colonna per ogni epoca; (2) assegnare il segno agli esborsi e agli incassi; (3) scegliere un tasso periodale coerente; (4) calcolare i fattori (1+r)⁻ᵗ; (5) moltiplicare ciascun cash flow per il proprio fattore; (6) sommare tutti i valori attuali; (7) confrontare il VAN con zero e interpretare rischio, vincoli e alternative."
+        },
+        {
+          "table": [
+            [
+              "Epoca",
+              "CF (€)",
+              "Fattore 8%",
+              "VA del CF (€)"
+            ],
+            [
+              "t0",
+              "-100.000,00",
+              "1.00000",
+              "-100.000,00"
+            ],
+            [
+              "t1",
+              "30.000,00",
+              "0.92593",
+              "27.777,78"
+            ],
+            [
+              "t2",
+              "36.000,00",
+              "0.85734",
+              "30.864,20"
+            ],
+            [
+              "t3",
+              "40.000,00",
+              "0.79383",
+              "31.753,29"
+            ],
+            [
+              "t4",
+              "44.000,00",
+              "0.73503",
+              "32.341,31"
+            ],
+            [
+              "t5",
+              "35.000,00",
+              "0.68058",
+              "23.820,41"
+            ]
+          ]
+        },
+        {
+          "text": "Nel caso illustrativo, il VAN al tasso dell’8% è 46.556,99 €. È positivo: il progetto supera il rendimento richiesto. Nota che gli incassi nominali sommati senza sconto ammontano a 185.000 €; questo non autorizza a sostenere che il VAN sia 85.000 €. Il confronto corretto richiede i valori attuali."
+        },
+        {
+          "image": "cdg-p142-1.png",
+          "caption": "Relazione VAN-tasso; l’intersezione con l’asse orizzontale individua il TIR nei casi convenzionali.",
+          "alt": "Relazione VAN-tasso; l’intersezione con l’asse orizzontale individua il TIR nei casi convenzionali."
+        }
+      ],
+      "concept": "Calcolo del VAN: tabella, regole e verifiche"
+    },
+    {
+      "id": "11-16",
+      "title": "11.16 Caso d’esame ufficiale: i due investimenti logistici",
+      "topics": [
+        "cdg-c11-t16"
+      ],
+      "blocks": [
+        {
+          "text": "La Simulazione d’esame n°1 contiene un esercizio di investimenti per un’impresa della logistica portuale, con due alternative e tasso del 3%. È un caso particolarmente utile perché i progetti hanno otto anni di incassi ma esborsi iniziali molto diversi. Le informazioni sono riportate integralmente nella tabella seguente, in cui t0 rappresenta il pagamento iniziale e t1–t8 gli incassi annui."
+        },
+        {
+          "table": [
+            [
+              "Anno",
+              "Alternativa 1 (€)",
+              "Alternativa 2 (€)"
+            ],
+            [
+              "0",
+              "-28.000",
+              "-150.000"
+            ],
+            [
+              "1",
+              "5.000",
+              "12.000"
+            ],
+            [
+              "2",
+              "3.000",
+              "15.000"
+            ],
+            [
+              "3",
+              "2.000",
+              "25.000"
+            ],
+            [
+              "4",
+              "1.000",
+              "27.000"
+            ],
+            [
+              "5",
+              "3.000",
+              "30.000"
+            ],
+            [
+              "6",
+              "3.000",
+              "30.000"
+            ],
+            [
+              "7",
+              "4.500",
+              "35.000"
+            ],
+            [
+              "8",
+              "5.000",
+              "35.000"
+            ]
+          ]
+        },
+        {
+          "text": "Calcoliamo VAN₁ = −28.000 + Σ(t1–t8) CFₜ/(1,03)ᵗ = -4.892,84 €. Analogamente VAN₂ = −150.000 + Σ(t1–t8) CFₜ/(1,03)ᵗ = 29.747,43 €. L’alternativa 1 risulta economicamente non conveniente; la 2 supera la soglia. Se sono davvero alternative mutuamente esclusive con i medesimi obiettivi e durata, preferiamo la 2 in base al VAN."
+        },
+        {
+          "text": "Il pay-back semplice dell’alternativa 1 non si realizza entro l’ottavo anno: gli incassi totali sono 26.500 € contro l’esborso di 28.000 €. L’alternativa 2 recupera l’esborso durante l’anno 7: al termine dell’anno 6 mancano 11.000 €, contro un incasso del settimo anno di 35.000 €. Con ripartizione uniforme dei flussi nell’anno, PBP₂ ≈ 6 + 11.000/35.000 = 6,31 anni (circa 6 anni e 3,8 mesi). L’interpolazione fra anni è un’approssimazione e va dichiarata. Il VAN dell’alternativa 2 è comunque il criterio economico principale."
+        },
+        {
+          "heading": "RISULTATI VERIFICATI | Il calcolo con la formula NPV fornisce VAN₁ ≈ −4.892,84 € e VAN₂ ≈ +29.747,43 €. La"
+        },
+        {
+          "heading": "ragione del risultato negativo dell’alternativa 1 non è l’elevato tasso: gli incassi nominali complessivi non"
+        },
+        {
+          "heading": "recuperano neppure l’investimento iniziale."
+        }
+      ],
+      "concept": "Caso d’esame ufficiale: i due investimenti logistici"
+    },
+    {
+      "id": "11-17",
+      "title": "11.17 Progetti indipendenti e mutuamente esclusivi",
+      "topics": [
+        "cdg-c11-t17"
+      ],
+      "blocks": [
+        {
+          "text": "I progetti indipendenti possono essere accettati insieme, purché ciascuno abbia VAN positivo e non emergano altri vincoli. I progetti mutuamente esclusivi risolvono il medesimo bisogno e non possono essere realizzati contemporaneamente: a tassi, rischio e durata comparabili va scelto il VAN maggiore, non necessariamente il TIR maggiore. Un progetto può produrre percentuali molto elevate su una base piccola ma creare meno valore totale di un progetto più grande."
+        },
+        {
+          "text": "Bisogna distinguere anche tra investimenti che si escludono per incompatibilità tecnica e investimenti limitati dalla scarsità del capitale: nel secondo caso il problema è scegliere una combinazione di progetti fattibile e capace di massimizzare il VAN complessivo. Non basta ordinare semplicemente tutti i progetti per VAN, per TIR o per indice di redditività senza verificare i vincoli."
+        }
+      ],
+      "concept": "Progetti indipendenti e mutuamente esclusivi"
+    },
+    {
+      "id": "11-18",
+      "title": "11.18 Il progetto incrementale e i conflitti tra criteri",
+      "topics": [
+        "cdg-c11-t18"
+      ],
+      "blocks": [
+        {
+          "text": "Un modo rigoroso per confrontare due alternative è costruire il progetto incrementale: per ogni periodo si calcola ΔCFₜ = CFₜ(B)−CFₜ(A). Il suo VAN è VAN(B)−VAN(A). Se il VAN incrementale è positivo, passando da A a B si ottiene un aumento di valore attuale; se negativo, il maggior esborso o il diverso profilo dei flussi non è giustificato dalle entrate aggiuntive attualizzate. Questo confronto è particolarmente importante quando B richiede un investimento iniziale superiore."
+        },
+        {
+          "heading": "VAN(B−A) = Σ [CFₜ(B)−CFₜ(A)]/(1+r)ᵗ = VAN(B) − VAN(A)"
+        },
+        {
+          "text": "Esempio originale: progetto A richiede 40.000 € oggi e genera 20.000 € per tre anni; progetto B richiede 100.000 € oggi e genera 50.000 € per tre anni. Al tasso del 10%: VAN(A) ≈ 9.737,04 €; VAN(B) ≈ 24.342,60 €. Il progetto incrementale B−A richiede 60.000 € addizionali ma genera 30.000 € aggiuntivi ogni anno: VAN(B−A) ≈ 14.605,56 € > 0. Preferiamo B, anche se entrambi hanno lo stesso TIR percentuale: qui prevale il valore assoluto creato."
+        },
+        {
+          "heading": "VERIFICA ARCARI 9.3 | La soluzione editoriale riporta TIR(A)=20% e TIR(B)=19,4% e, in un punto, suggerisce A per"
+        },
+        {
+          "heading": "il TIR più elevato. Riporta inoltre VAN(B−A)=+5.359,17 €, a favore di B nell’analisi incrementale. Non sono"
+        },
+        {
+          "heading": "conclusioni compatibili con un unico criterio di scelta: per progetti alternativi comparabili con tasso rilevante,"
+        },
+        {
+          "heading": "il VAN incrementale positivo è l’evidenza decisiva. Consideriamo questa discrepanza un’occasione per capire il"
+        },
+        {
+          "heading": "limite del TIR, non per memorizzare risposte contraddittorie."
+        }
+      ],
+      "concept": "Il progetto incrementale e i conflitti tra criteri"
+    },
+    {
+      "id": "11-19",
+      "title": "11.19 TIR: definizione, calcolo e interpretazione",
+      "topics": [
+        "cdg-c11-t19"
+      ],
+      "blocks": [
+        {
+          "text": "Il Tasso Interno di Rendimento (TIR), o Internal Rate of Return (IRR), è il tasso che rende nullo il VAN della sequenza di flussi. Misura un rendimento implicito del progetto nelle ipotesi del modello, ma non è il profitto totale in euro. Per un progetto convenzionale con un’uscita iniziale e soli incassi futuri positivi, il VAN di norma diminuisce al crescere del tasso e l’equazione ha una soluzione positiva unica quando il progetto complessivo recupera l’esborso in modo adeguato."
+        },
+        {
+          "heading": "TIR = r* tale che 0 = Σₜ₌₀ⁿ CFₜ/(1+r*)ᵗ"
+        },
+        {
+          "text": "Regola per un progetto convenzionale isolato: se TIR > costo opportunità r, il progetto è accettabile; se TIR < r, non raggiunge la soglia; se uguali, è al limite. Esempio: −100 € oggi e +120 € fra un anno: 0=−100+120/(1+TIR), dunque TIR=20%. Per più anni si impiegano ricerca numerica, calcolatrice o foglio elettronico. Un’interpolazione lineare tra due tassi con VAN di segno opposto offre solo una stima approssimata; la verifica consiste nel sostituire il tasso ottenuto nella formula del VAN."
+        },
+        {
+          "text": "Nel nostro esempio con investimento di 100.000 € e flussi successivi 30.000, 36.000, 40.000, 44.000 e 35.000 €, il TIR è circa 23,6%, superiore al tasso richiesto dell’8%. Il VAN è coerentemente positivo. Tuttavia, in un confronto fra progetti con capitali diversi il TIR più alto non garantisce il maggiore VAN."
+        },
+        {
+          "image": "cdg-p144-1.png",
+          "caption": "Ogni criterio risponde a una domanda diversa; comprenderne la funzione evita false equivalenze.",
+          "alt": "Ogni criterio risponde a una domanda diversa; comprenderne la funzione evita false equivalenze."
+        }
+      ],
+      "concept": "TIR: definizione, calcolo e interpretazione"
+    },
+    {
+      "id": "11-20",
+      "title": "11.20 TIR multipli, inesistenza e limiti del criterio",
+      "topics": [
+        "cdg-c11-t20"
+      ],
+      "blocks": [
+        {
+          "text": "Quando i flussi sono non convenzionali, per esempio uscita iniziale, ricavo intermedio e grande costo di bonifica finale, la funzione VAN(r) può avere più intersezioni con zero oppure nessuna radice economicamente significativa. Un esempio classico è: CF=(−100, +230, −132). L’equazione è −100 + 230/(1+r) − 132/(1+r)² = 0 e possiede due soluzioni, r=10% e r=20%. A quale tasso dovremmo confrontare il costo del capitale? Il TIR non fornisce una risposta univoca, mentre il VAN calcolato al tasso pertinente resta interpretabile."
+        },
+        {
+          "text": "Può verificarsi anche assenza di un TIR ammissibile, per esempio quando il VAN non si annulla in alcun tasso economicamente rilevante. Nei progetti di finanziamento (incasso iniziale seguito da pagamenti), le usuali regole “TIR maggiore è meglio” possono perfino invertirsi: un TIR alto rappresenta un costo del prestito più elevato. Per questo è essenziale riconoscere lo schema dei segni e la natura dell’operazione prima di usare meccanicamente il criterio."
+        },
+        {
+          "image": "cdg-p144-2.png",
+          "caption": "Con flussi che cambiano segno più volte possono esistere due TIR.",
+          "alt": "Con flussi che cambiano segno più volte possono esistere due TIR."
+        }
+      ],
+      "concept": "TIR multipli, inesistenza e limiti del criterio"
+    },
+    {
+      "id": "11-21",
+      "title": "11.21 Pay-back period semplice e scontato",
+      "topics": [
+        "cdg-c11-t21"
+      ],
+      "blocks": [
+        {
+          "text": "Il Pay-back Period (PBP) misura dopo quanto tempo i flussi futuri cumulati compensano l’investimento iniziale. Si costruisce la cumulata dei CF senza attualizzarli; il primo periodo in cui essa diventa nulla o positiva identifica il recupero. Quando la soglia cade all’interno di un anno, e si assume una distribuzione uniforme dell’incasso, si interpola: PBP = anni completi + importo residuo da recuperare / flusso dell’anno successivo."
+        },
+        {
+          "text": "Il Discounted Pay-back Period (PBP attualizzato) applica invece la stessa procedura ai flussi attualizzati; è in genere non inferiore al PBP semplice, a parità di tasso positivo e flussi convenzionali. È più rigoroso sul valore del tempo, ma entrambi ignorano i flussi successivi al momento di recupero e non misurano direttamente il valore creato. Per questa ragione il PBP è utile come indicatore di liquidità e rischio di esposizione, non come sostituto del VAN."
+        },
+        {
+          "image": "cdg-p145-1.png",
+          "caption": "Lo stesso progetto può recuperare il capitale prima in termini nominali che attualizzati.",
+          "alt": "Lo stesso progetto può recuperare il capitale prima in termini nominali che attualizzati."
+        }
+      ],
+      "concept": "Pay-back period semplice e scontato"
+    },
+    {
+      "id": "11-22",
+      "title": "11.22 Indice di redditività e razionamento del capitale",
+      "topics": [
+        "cdg-c11-t22"
+      ],
+      "blocks": [
+        {
+          "text": "L’Indice di Redditività (IR, Profitability Index, PI) mette in rapporto il valore attuale degli incassi e l’esborso iniziale nel caso standard con un solo investimento al tempo zero: PI = VA incassi futuri / I₀ = 1 + VAN/I₀. Se PI>1, il VAN è positivo; se PI=1, è nullo; se PI<1, è negativo. Più che “quanto euro crea”, l’indice dice “quanto valore attuale lordo otteniamo per euro investito”."
+        },
+        {
+          "heading": "PI = VA(flussi positivi futuri) / Investimento iniziale = 1 + VAN / I₀"
+        },
+        {
+          "text": "L’indice può essere utile quando il capitale è razionato e i progetti sono divisibili o selezionabili in combinazioni semplici. Non è però una procedura universale di ottimizzazione per progetti indivisibili: ordinare per PI può lasciare capitale inutilizzato o impedire combinazioni di VAN superiore. In quel caso occorre confrontare tutte le combinazioni ammissibili o utilizzare programmazione intera. Inoltre, se gli investimenti avvengono in anni successivi, occorre usare una definizione coerente che includa il valore attuale delle uscite future nel denominatore."
+        },
+        {
+          "image": "cdg-p145-2.png",
+          "caption": "Esempio di indici di redditività calcolati su progetti con dimensioni differenti.",
+          "alt": "Esempio di indici di redditività calcolati su progetti con dimensioni differenti."
+        }
+      ],
+      "concept": "Indice di redditività e razionamento del capitale"
+    },
+    {
+      "id": "11-23",
+      "title": "11.23 Vite differenti: costo annuo equivalente",
+      "topics": [
+        "cdg-c11-t23"
+      ],
+      "blocks": [
+        {
+          "text": "Quando due macchinari assicurano lo stesso servizio per durate differenti, il confronto diretto di VA dei soli costi può penalizzare quello che dura più a lungo. Con l’ipotesi esplicita che l’attività venga ripetuta/sostituita, il Costo Annuo Equivalente (CAE) trasforma il valore attuale dei costi in una rata annua equivalente: CAE = VA(costi)/aₙ(r). Va scelta l’alternativa col CAE minimo, mantenendo parità di servizio, rischio e convenzioni finanziarie. Se i flussi netti sono positivi si può analogamente usare un valore annuo equivalente del VAN."
+        },
+        {
+          "heading": "CAE = VA(costi) × r / [1 − (1+r)^(−n)]"
+        },
+        {
+          "text": "Nel caso editoriale Arcari 9.5 sono riportati VA(costi) A=37.395,63 € e VA(costi) B=44.342,87 €: A sembra meno costosa in valore attuale. Le vite sono però differenti; i corrispondenti CAE pubblicati sono A=9.365,98 € e B=8.517,04 €. Sulla base del criterio annuo B risulta meno onerosa. Senza conoscere durata e tasso del testo originale non ricostruiamo gli elementi mancanti: conserviamo i risultati come riferimento e concentriamoci sulla logica della trasformazione."
+        },
+        {
+          "image": "cdg-p146-1.png",
+          "caption": "La soluzione Arcari 9.5 mostra perché il costo annuo equivalente è utile per vite diverse.",
+          "alt": "La soluzione Arcari 9.5 mostra perché il costo annuo equivalente è utile per vite diverse."
+        }
+      ],
+      "concept": "Vite differenti: costo annuo equivalente"
+    },
+    {
+      "id": "11-24",
+      "title": "11.24 Lettura critica delle soluzioni Arcari 9.1–9.7",
+      "topics": [
+        "cdg-c11-t24"
+      ],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "Le soluzioni del capitolo 9 della quarta edizione di Arcari forniscono un ottimo insieme di controlli, ma, per diversi esercizi, non riproducono integralmente il testo. Di seguito distinguiamo i risultati editoriali dichiarati, il significato teorico e ciò che è possibile verificare dai dati visibili. Questa distinzione impedisce di ricostruire tracce inesistenti o di attribuire al manuale ipotesi che non ha esplicitato."
+            },
+            {
+              "table": [
+                [
+                  "Esercizio",
+                  "Tema",
+                  "Riscontro editoriale"
+                ],
+                [
+                  "9.1",
+                  "Montante e tasso mensile equivalente",
+                  "iₘ≈0,165%; M=3.632,85 €"
+                ],
+                [
+                  "9.2",
+                  "Rendita temporanea e perpetuità",
+                  "VA costi 149,925 mln; ricavo annuo 23,976 mln"
+                ],
+                [
+                  "9.3",
+                  "TIR, VAN incrementale e PI",
+                  "TIR A 20%, B 19,4%; VAN(B−A) +5.359,17 €"
+                ],
+                [
+                  "9.4",
+                  "Prezzo di pareggio, rendite",
+                  "Prezzi 28 € e 15,63 € in due configurazioni"
+                ],
+                [
+                  "9.5",
+                  "CAE, durate differenti",
+                  "CAE A 9.365,98 €; B 8.517,04 €"
+                ],
+                [
+                  "9.6",
+                  "PI e capitale limitato",
+                  "PI: B 1,346; A 1,310; C 1,064 (nella soluzione un refuso sulla sigla)"
+                ],
+                [
+                  "9.7",
+                  "Rendite anticipate/posticipate",
+                  "F* editoriale 2.136,42 €/mese; da verificare con il testo visibile"
+                ]
+              ]
+            },
+            {
+              "text": "Controllo Arcari 9.7. Il testo disponibile nelle soluzioni descrive: fee iniziale 15.000 €, arredo immediato 4.000 €, 36 affitti mensili anticipati da 900 €, 36 costi mensili posticipati da 500 € e tasso mensile 2%. Assumendo 36 fatturati mensili posticipati costanti, il pareggio conduce a: VA costi = 19.000 + 900·a₃₆(0,02)·1,02 + 500·a₃₆(0,02) ≈ 55.143,18 €; quindi F = VA costi/a₃₆(0,02) ≈ 2.163,42 €/mese. La soluzione pubblicata indica invece 2.136,42 €/mese. Non possiamo stabilire se manchi una diversa ipotesi nel testo originario oppure se vi sia un refuso; nell’esame applicheremo sempre le epoche e i dati della traccia effettivamente consegnata*."
+            },
+            {
+              "text": "La soluzione 9.6 è utile per vedere come si ordina il PI sotto un budget vincolato, ma la sola ordinazione per PI non garantisce matematicamente il massimo VAN in tutti i problemi indivisibili. Il testo editoriale prevede una possibilità di frazionamento di alcuni progetti: è proprio questa ipotesi che può rendere naturale allocare capitali secondo indici marginali."
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Lettura critica delle soluzioni Arcari 9.1–9.7"
+    },
+    {
+      "id": "11-25",
+      "title": "11.25 Inflazione, imposte, ammortamenti e coerenza dei flussi",
+      "topics": [
+        "cdg-c11-t25"
+      ],
+      "blocks": [
+        {
+          "text": "Un progetto deve essere valutato su basi temporali e monetarie omogenee. Se i flussi futuri incorporano inflazione, il tasso di sconto deve essere nominale; se i flussi sono espressi a prezzi costanti (reali), si usa un tasso reale coerente. La relazione esatta tra tasso nominale i, tasso reale r e inflazione π è (1+i)=(1+r)(1+π). Il diffuso calcolo i≈r+π è un’approssimazione accettabile solo per tassi modesti."
+        },
+        {
+          "formula": "1 + i nominale = (1 + r reale) × (1 + inflazione attesa)"
+        },
+        {
+          "text": "Gli ammortamenti non sono pagamenti, ma influenzano le imposte quando fiscalmente deducibili: a parità di flussi lordi, una deduzione ammessa può creare un tax shield (risparmio di imposta). Esempio semplificato: 10.000 € di ammortamento fiscalmente deducibile e aliquota del 25% riducono, a parità di imponibile sufficiente, l’imposta corrente di 2.500 €. Non assumere automaticamente che tale risparmio sia incassato nello stesso periodo: regimi fiscali e scadenze possono produrre differenze."
+        },
+        {
+          "text": "I crediti e le scorte assorbono liquidità; i debiti commerciali possono finanziarne una parte. Esempio: un investimento richiede CCN operativo pari a 10.000 € a t0 e, dal terzo anno, 13.000 €; si rilevano −10.000 a t0, −3.000 al momento dell’incremento e +13.000 a fine progetto se il capitale viene integralmente liberato. È sbagliato sottrarre 13.000 in ciascun anno: il flusso è la variazione dello stock."
+        },
+        {
+          "text": "Convezione fiscale e finanziaria. Per un VAN dell’investimento prima della struttura finanziaria si costruiscono flussi unlevered e si evita di sottrarre rate di rimborso del prestito o interessi finanziari se il relativo costo è già contenuto nel WACC. In un’analisi del solo capitale proprio, invece, occorrono flussi coerenti per l’equity. Le indicazioni fiscali servono a capire la logica e non sostituiscono una valutazione normativa di specifici regimi impositivi."
+        }
+      ],
+      "concept": "Inflazione, imposte, ammortamenti e coerenza dei flussi"
+    },
+    {
+      "id": "11-26",
+      "title": "11.26 Analisi di sensitività e scenari",
+      "topics": [
+        "cdg-c11-t26"
+      ],
+      "blocks": [
+        {
+          "text": "Le previsioni di ricavi, costi, tassi e tempi non sono certezze. L’analisi di sensitività modifica un parametro alla volta (prezzo, domanda, CAPEX, costo del capitale, valore residuo) e misura come cambia il VAN. Individua le ipotesi critiche, ma non assegna necessariamente probabilità e ignora la correlazione tra variabili. L’analisi di scenario costruisce situazioni coerenti: pessimistico, centrale e ottimistico, modificando contemporaneamente più variabili. Se le probabilità sono attendibili si può calcolare un VAN atteso, senza confonderlo con il VAN di uno scenario “più probabile”."
+        },
+        {
+          "text": "Esempio originale con progetto −120.000 € oggi, poi flussi di 35.000, 42.000, 44.000, 45.000 e 30.000 €: al tasso 8% il VAN è circa 36.838,10 €. Se il tasso cambia, il VAN cambia pur lasciando invariati gli incassi previsti. Per una decisione seria occorre chiedersi quale aumento del CAPEX o quale calo dei ricavi porterebbe il VAN sotto zero; questa soglia può essere più informativa di una singola previsione puntuale."
+        },
+        {
+          "image": "cdg-p147-1.png",
+          "caption": "Analisi di sensitività del VAN al tasso di sconto per un progetto illustrativo.",
+          "alt": "Analisi di sensitività del VAN al tasso di sconto per un progetto illustrativo."
+        }
+      ],
+      "concept": "Analisi di sensitività e scenari"
+    },
+    {
+      "id": "11-27",
+      "title": "11.27 Opzioni reali e flessibilità manageriale",
+      "topics": [
+        "cdg-c11-t27"
+      ],
+      "blocks": [
+        {
+          "text": "Il VAN tradizionale assume spesso che la decisione venga presa tutta al tempo zero e che il piano futuro resti rigido. Nella realtà, il management può scegliere se attendere, espandere, ridimensionare, abbandonare, cambiare tecnologia o modificare l’input/output quando nuove informazioni diventano disponibili. Queste possibilità sono dette opzioni reali: diritti di adottare scelte future economicamente vantaggiose, senza obbligo di esercitarle."
+        },
+        {
+          "text": "Un investimento pilota può costare più di un impianto rigido, ma conferire il diritto di espandere soltanto se la domanda aumenta. La flessibilità può quindi aggiungere valore; spesso si esprime la relazione concettuale: valore del progetto flessibile = VAN del piano rigido + valore delle opzioni, prestando attenzione ai costi necessari per ottenere tale flessibilità. La stima rigorosa del valore delle opzioni richiede modelli oltre il semplice VAN (alberi decisionali, simulazioni, metodi opzionali) e non va ridotta a un bonus numerico arbitrario."
+        },
+        {
+          "text": "Il corso presenta il caso di un progetto di estrazione di gas naturale: attendere informazioni su prezzo e capacità, ampliare l’estrazione, oppure abbandonare il giacimento dopo osservazioni sfavorevoli può cambiare il valore atteso della scelta. Il collegamento manageriale è importante: valutare un progetto significa anche progettare quali decisioni future sarà possibile prendere."
+        },
+        {
+          "image": "cdg-p148-1.png",
+          "caption": "Esempi di flessibilità successiva all’avvio di un investimento.",
+          "alt": "Esempi di flessibilità successiva all’avvio di un investimento."
+        }
+      ],
+      "concept": "Opzioni reali e flessibilità manageriale"
+    },
+    {
+      "id": "11-28",
+      "title": "11.28 Caso integrato: investire in una piattaforma software",
+      "topics": [
+        "cdg-c11-t28"
+      ],
+      "blocks": [
+        {
+          "text": "Caso integrato originale — piattaforma software per la gestione di offerte energetiche. Un’impresa valuta lo sviluppo di un modulo che accelera le simulazioni economiche e riduce attività manuali. Lo sviluppo e l’avviamento richiedono 120.000 € a t0; sono previsti cinque anni di flussi operativi netti incrementali da 35.000, 42.000, 44.000, 45.000 e 30.000 €, già al netto delle componenti monetarie operative, imposte e movimenti di circolante, senza ulteriore valore residuo. Il tasso richiesto è 8%. Queste ipotesi sono dichiarate per rendere l’esercizio autonomo: non sono dati reali di un’azienda."
+        },
+        {
+          "table": [
+            [
+              "Anno",
+              "CF incrementale (€)",
+              "VA all’8% (€)",
+              "Cumulata (€)"
+            ],
+            [
+              "t0",
+              "-120.000,00",
+              "-120.000,00",
+              "-120.000"
+            ],
+            [
+              "t1",
+              "35.000,00",
+              "32.407,41",
+              "-85.000"
+            ],
+            [
+              "t2",
+              "42.000,00",
+              "36.008,23",
+              "-43.000"
+            ],
+            [
+              "t3",
+              "44.000,00",
+              "34.928,62",
+              "1.000"
+            ],
+            [
+              "t4",
+              "45.000,00",
+              "33.076,34",
+              "46.000"
+            ],
+            [
+              "t5",
+              "30.000,00",
+              "20.417,50",
+              "76.000"
+            ]
+          ]
+        },
+        {
+          "text": "Valutazione. VAN = 36,838.10 € e TIR = 19.07%. Il VAN positivo significa che il progetto remunera l’8% richiesto e genera valore attuale ulteriore. Il TIR supera il tasso r, confermando la convenienza in questo caso convenzionale. La cumulata nominale passa da negativa a positiva durante il quarto anno: dopo t3 mancano 1,000 €, coperti dal flusso di t4 pari a 45,000 €. Il PBP semplice è 3 + 1,000/45,000 ≈ 3.02 anni. Il PI è 1 + VAN/120.000 ≈ 1.307."
+        },
+        {
+          "text": "Come leggere il risultato. Un investimento digitale può migliorare tempi, disponibilità dei dati e controllo operativo, ma questi benefici devono essere trasformati in flussi incrementali giustificati per entrare nel VAN. Una maggiore soddisfazione dei clienti, per esempio, non è automaticamente una cassa in entrata: va collegata a ricavi aggiuntivi, costi evitati o valore finale osservabile. In un budget reale bisognerebbe testare scenari con adozione più lenta, necessità di manutenzione e costi di integrazione."
+        }
+      ],
+      "concept": "Caso integrato: investire in una piattaforma software"
+    },
+    {
+      "id": "11-29",
+      "title": "11.29 Confronto complessivo dei principali criteri",
+      "topics": [
+        "cdg-c11-t29"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Criterio",
+              "Misura",
+              "Decisione e limiti"
+            ],
+            [
+              "VAN",
+              "Valore attuale netto in euro",
+              ">0; massimizzare per alternative comparabili"
+            ],
+            [
+              "TIR",
+              "Tasso che annulla VAN",
+              "> r per flussi convenzionali; possibili multipli"
+            ],
+            [
+              "PBP",
+              "Anni per recuperare l’esborso nominale",
+              "Rispetta soglia; ignora valore del tempo e post-recupero"
+            ],
+            [
+              "PBP scontato",
+              "Anni per recuperare CF attualizzati",
+              "Rispetta soglia; ignora flussi post-recupero"
+            ],
+            [
+              "PI",
+              "VA incassi / investimento iniziale",
+              ">1; utile con capitale limitato, cautela su indivisibilità"
+            ],
+            [
+              "CAE",
+              "Costo equivalente annuo",
+              "Minimo per alternative di pari servizio ma vita diversa"
+            ],
+            [
+              "Opzioni reali",
+              "Valore di flessibilità futura",
+              "Richiede ipotesi e modelli addizionali"
+            ]
+          ]
+        },
+        {
+          "text": "La disciplina non prescrive di scegliere un solo indicatore in ogni circostanza. VAN come criterio economico di riferimento; TIR per comunicare un rendimento percentuale; PBP per leggere il tempo di esposizione; CAE per durate diverse; PI per allocazioni di capitale; sensitività e opzioni reali per gestire l’incertezza. La raccomandazione finale deve integrare dati economici, fattibilità tecnica e obiettivi aziendali."
+        }
+      ],
+      "concept": "Confronto complessivo dei principali criteri"
+    },
+    {
+      "id": "11-30",
+      "title": "11.30 Protocollo per risolvere una traccia scritta",
+      "topics": [
+        "cdg-c11-t30"
+      ],
+      "blocks": [
+        {
+          "text": "Procedura completa per una prova scritta da circa 60 minuti. (1) Evidenzia data iniziale, durata, flussi e tasso; (2) costruisci t0, t1, …, tn e converti i tassi; (3) identifica costi sommersi, valore di recupero e variazioni CCN; (4) compila la tabella firmata dei CF; (5) calcola VAN mostrando fattori e parziali; (6) applica il secondo criterio richiesto (TIR, PBP, PI, CAE); (7) confronta alternative esplicitando mutualità, durata e budget; (8) scrivi una frase decisionale con criterio, risultato, vincoli e ipotesi."
+        },
+        {
+          "text": "La qualità della soluzione si dimostra anche con controlli semplici: a r=0 il VAN coincide con la somma dei CF; con incassi positivi e tasso maggiore, il VAN ordinariamente diminuisce; il PBP non può risultare inferiore a zero; in una rendita anticipata la prima rata non si sconta; l’investimento non può essere conteggiato sia nel CF₀ sia sottratto nuovamente dal VAN. Se la traccia fornisce un tasso “mensile” e flussi “annuali”, la conversione è obbligatoria."
+        }
+      ],
+      "concept": "Protocollo per risolvere una traccia scritta"
+    },
+    {
+      "id": "11-31",
+      "title": "11.31 Errori tipici ed esame: controlli rapidi",
+      "topics": [
+        "cdg-c11-t31"
+      ],
+      "blocks": [
+        {
+          "text": "Errori ricorrenti. Scambiare utile e cassa; iniziare la prima entrata al tempo zero anziché alla fine del primo periodo; applicare la stessa potenza di sconto a tutti i flussi; dividere il tasso annuo effettivo per 12 invece di calcolare il tasso equivalente; considerare l’ammortamento come pagamento; dimenticare il CCN; duplicare gli interessi quando si usa WACC; confrontare solo TIR per progetti esclusivi; scegliere una macchina dal valore attuale dei costi senza correggere le durate; usare una perpetuità con prima rata in una data non dichiarata."
+        },
+        {
+          "text": "Controlli diagnostici. Se il VAN è fortemente positivo con esborso iniziale di gran lunga superiore alla somma degli incassi, controllare i segni. Se TIR è molto alto su un progetto con ultimo grande esborso, sospettare flussi non convenzionali. Se il CAE di una macchina di durata maggiore risulta confrontato con un costo totale di una di durata minore, ricontrollare il fattore di rendita. Se PI indica il miglior progetto ma il VAN totale di una combinazione alternativa è maggiore, il problema richiede una vera ottimizzazione sotto vincolo."
+        }
+      ],
+      "concept": "Errori tipici ed esame: controlli rapidi"
+    },
+    {
+      "id": "11-32",
+      "title": "11.32 Esercizi autonomi 1–8",
+      "topics": [
+        "cdg-c11-t32"
+      ],
+      "blocks": [
+        {
+          "text": "Risolvi gli otto esercizi senza leggere le risposte. Per ciascuno scrivi linea temporale, formula, sostituzione numerica, unità di misura e conclusione. Gli esercizi 1–5 allenano i prerequisiti finanziari; 6–8 riproducono i criteri fondamentali del capital budgeting."
+        },
+        {
+          "text": "Esercizio 1 — Capitalizzazione composta Investi 8.000 € oggi al tasso annuo effettivo del 5%. Calcola montante dopo quattro anni e interesse totale."
+        },
+        {
+          "text": "Esercizio 2 — Valore attuale singolo Riceverai 12.000 € fra tre anni; r=6% annuo. Calcola il valore attuale e interpreta la differenza."
+        },
+        {
+          "text": "Esercizio 3 — Tasso mensile equivalente Da un tasso annuo effettivo 2,4%, ricava il tasso mensile effettivo. Perché non si deve usare automaticamente 2,4%/12?"
+        },
+        {
+          "text": "Esercizio 4 — Rendite Una macchina genera risparmi di 6.000 € annui per 5 anni, a fine anno, con r=7%. Calcola il valore attuale dei risparmi."
+        },
+        {
+          "text": "Esercizio 5 — Rendita anticipata Devi pagare un canone di 800 € all’inizio di ogni anno per 4 anni; r=5%. Calcola VA e confrontalo con pagamenti posticipati."
+        },
+        {
+          "text": "Esercizio 6 — VAN di progetto CF = (−50.000, 18.000, 20.000, 22.000), r=9%. Calcola il VAN e decidi."
+        },
+        {
+          "text": "Esercizio 7 — Pay-back CF = (−36.000, 10.000, 12.000, 15.000, 18.000). Calcola PBP semplice con interpolazione lineare."
+        },
+        {
+          "text": "Esercizio 8 — Indice di redditività Un progetto richiede 75.000 € oggi e presenta VAN positivo di 18.000 €. Calcola PI e spiega che cosa misura."
+        }
+      ],
+      "concept": "Esercizi autonomi 1–8"
+    },
+    {
+      "id": "11-33",
+      "title": "11.33 Soluzioni commentate 1–8",
+      "topics": [
+        "cdg-c11-t33"
+      ],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "Soluzione 1 M = 8.000×1,05⁴ = 9.724,05 €; interesse complessivo = 1.724,05 €. Non si moltiplica 8.000×0,05×4, che darebbe il valore sotto interesse semplice."
+            },
+            {
+              "text": "Soluzione 2 VA=12.000/1,06³ = 10.075,43 €. La differenza rispetto a 12.000 € remunera il tempo al 6% annuo."
+            },
+            {
+              "text": "Soluzione 3 iₘ=(1,024)^(1/12)−1 ≈ 0,1978% per mese. La divisione aritmetica sarebbe la convenzione di un tasso nominale, non la conversione di un effettivo."
+            },
+            {
+              "text": "Soluzione 4 VA=6.000×[1−1,07^(−5)]/0,07 = 24.601,18 €. La prima rata è a t1."
+            },
+            {
+              "text": "Soluzione 5 VA anticipata=800×[1−1,05^(−4)]/0,05×1,05 = 2.978,60 €. Posticipata = 2.836,76 €; l’anticipata vale di più perché ogni pagamento avviene un periodo prima."
+            },
+            {
+              "text": "Soluzione 6 VAN=−50.000+18.000/1,09+20.000/1,09²+22.000/1,09³ = 335,40 €; il segno determina l’accettabilità."
+            },
+            {
+              "text": "Soluzione 7 Cumulata: −36.000; −26.000; −14.000; +1.000; +19.000. Il recupero avviene durante il 3° anno: PBP=2+14.000/15.000≈2,93 anni."
+            },
+            {
+              "text": "Soluzione 8 PI=1+18.000/75.000=1,240. Un euro investito genera 1,24 € di valore attuale lordo; il valore netto addizionale per euro è 0,24 €."
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Soluzioni commentate 1–8"
+    },
+    {
+      "id": "11-34",
+      "title": "11.34 Esercizi autonomi 9–16",
+      "topics": [
+        "cdg-c11-t34"
+      ],
+      "blocks": [
+        {
+          "text": "Questi problemi richiedono più passaggi: analisi di alternativa, flussi incrementali, recupero di circolante, durata e portafoglio. Mantieni sempre separate le somme nominali dai valori attuali e le decisioni di accettazione del singolo progetto da quelle di confronto tra progetti."
+        },
+        {
+          "text": "Esercizio 9 — TIR a un periodo Esborso iniziale 40.000 €; un unico incasso di 49.000 € dopo un anno. Calcola TIR e valuta se il rendimento minimo richiesto è 15%."
+        },
+        {
+          "text": "Esercizio 10 — Progetto differenziale A: (−40.000; +20.000; +20.000; +20.000). B: (−100.000; +50.000; +50.000; +50.000). r=10%. Calcola VAN delle opzioni e di B−A."
+        },
+        {
+          "text": "Esercizio 11 — Flussi e CCN A t0 impianto 90.000 € e CCN 10.000 €. Flussi operativi monetari 34.000 € annui per tre anni; CCN integralmente liberato a t3. r=8%. Determina CF e VAN."
+        },
+        {
+          "text": "Esercizio 12 — Due TIR Verifica che i flussi (−100, +230, −132) presentano VAN=0 ai tassi 10% e 20%. Che cosa puoi concludere?"
+        },
+        {
+          "text": "Esercizio 13 — VAN e PBP su prova reale Riprendi i due investimenti logistici della sezione 11.16. Calcola VAN₁ e VAN₂ al 3%; determina il PBP di ciascuno; formula la scelta."
+        },
+        {
+          "text": "Esercizio 14 — Inflazione coerente Tasso reale richiesto 6%; inflazione attesa 3%. Calcola il tasso nominale esatto. Un ricavo reale di 10.000 € a t1, in euro di t0, a quanto corrisponde nominalmente a t1?"
+        },
+        {
+          "text": "Esercizio 15 — CAE indipendente Alternativa X: VA costi 25.000 € su 3 anni. Alternativa Y: VA costi 37.000 € su 5 anni. r=8%; stesso servizio e sostituzione ripetibile. Calcola i due CAE."
+        },
+        {
+          "text": "Esercizio 16 — Budget di capitale limitato Tre progetti indivisibili: A costa 70 e crea VAN 16, B costa 60 e crea VAN 18, C costa 40 e crea VAN 14 (tutte le cifre in migliaia di euro). Budget 100. Quale combinazione massimizza il VAN? Il PI da solo basta?"
+        }
+      ],
+      "concept": "Esercizi autonomi 9–16"
+    },
+    {
+      "id": "11-35",
+      "title": "11.35 Soluzioni commentate 9–16",
+      "topics": [
+        "cdg-c11-t35"
+      ],
+      "blocks": [
+        {
+          "worked": [
+            {
+              "text": "Soluzione 9 0=−40.000+49.000/(1+i) ⇒ i=49.000/40.000−1=22,5%; maggiore del 15% richiesto, quindi accettabile, a parità di ipotesi."
+            },
+            {
+              "text": "Soluzione 10 VAN(A)=9.737,04 €; VAN(B)=24.342,60 €; VAN(B−A)=14.605,56 € positivo. B domina A in termini di valore creato; i TIR percentuali coincidono perché B è 2,5 volte A."
+            },
+            {
+              "text": "Soluzione 11 CF₀=−100.000 €; CF₁=34.000; CF₂=34.000; CF₃=34.000+10.000=44.000 €. VAN = -4.440,38 €. Il recupero di CCN va a t3, non a t0."
+            },
+            {
+              "text": "Soluzione 12 Sostituendo i due tassi si trova VAN(10%)=0 e VAN(20%)=0. Il criterio TIR è ambiguo: calcolare il VAN al tasso di sconto pertinente e motivare la decisione."
+            },
+            {
+              "text": "Soluzione 13 VAN₁=−4.892,84 €; VAN₂=+29.747,43 €. L’alternativa 1 non raggiunge il recupero neppure a t8; la 2 lo raggiunge a circa 6,31 anni (PBP semplice). Scegliere 2 tra progetti alternativi comparabili."
+            },
+            {
+              "text": "Soluzione 14 i=(1,06×1,03)−1=9,18% nominale. Un ricavo reale a t1 di 10.000 € corrisponde a 10.300 € nominali a t1; usare 10.300/1,0918 produce lo stesso VA di 10.000/1,06."
+            },
+            {
+              "text": "Soluzione 15 CAE(X)=25.000/[1−1,08^(−3)]×0,08 = 9.700,84 € annui; CAE(Y)=9.266,89 € annui. Scelta: Y ha minore costo annualizzato, assumendo servizio comparabile e sostituzione possibile."
+            },
+            {
+              "text": "Soluzione 16 Combinazioni ammissibili: solo A (VAN 16), solo B (18), solo C (14), B+C (costo 100, VAN 32). A+C supera budget (110), A+B supera budget (130). Scelta B+C con VAN totale 32. PI(A)=1,229; PI(B)=1,300; PI(C)=1,350: l’ordinamento per PI qui aiuta ma non sostituisce il controllo dei vincoli di indivisibilità."
+            }
+          ],
+          "label": "Mostra lo svolgimento"
+        }
+      ],
+      "concept": "Soluzioni commentate 9–16"
+    },
+    {
+      "id": "11-36",
+      "title": "11.36 Domande teoriche di autoverifica",
+      "topics": [
+        "cdg-c11-t36"
+      ],
+      "blocks": [
+        {
+          "text": "Domande per un colloquio orale o un quesito teorico scritto. Qual è la differenza tra reddito e flusso finanziario? Quale significato economico ha il tasso di sconto? Perché il VAN è preferibile al solo TIR nel confronto di progetti esclusivi? Come si riconosce un costo sommerso? Perché un incremento dei crediti commerciali assorbe cassa? Quando serve il CAE? Come cambia il valore di un progetto se aumenta il tasso r? Che differenza esiste fra pay-back semplice e scontato? Perché le opzioni reali possono aggiungere valore? In che senso un indice di redditività maggiore di uno non basta a risolvere qualunque problema di portafoglio?"
+        },
+        {
+          "text": "Risposte essenziali da saper argomentare: reddito = competenza, cassa = momento monetario; r = rendimento minimo coerente col rischio; VAN = ricchezza assoluta creata, TIR = radice percentuale che può entrare in conflitto; un sunk cost è già irreversibile; più crediti richiedono fondi; CAE normalizza costi di servizi ripetibili con durate differenti; maggiore r riduce il VA di incassi futuri positivi; il discounted PBP sconta i CF ma continua a ignorare quanto accade dopo il recupero; le opzioni reali rappresentano capacità di risposta a informazioni future; il portafoglio richiede ottimizzazione con budget e indivisibilità."
+        }
+      ],
+      "concept": "Domande teoriche di autoverifica"
+    },
+    {
+      "id": "11-37",
+      "title": "11.37 Formulario finale ragionato",
+      "topics": [
+        "cdg-c11-t37"
+      ],
+      "blocks": [
+        {
+          "table": [
+            [
+              "Grandezza",
+              "Formula / procedura",
+              "Attenzione"
+            ],
+            [
+              "Montante composto",
+              "C₀(1+r)ⁿ",
+              "r e n nella stessa unità temporale"
+            ],
+            [
+              "Valore attuale",
+              "CFₜ/(1+r)ᵗ",
+              "CF₀ non si attualizza"
+            ],
+            [
+              "Tasso equivalente",
+              "(1+iₐ)^(1/m)−1",
+              "tasso effettivo, non nominale"
+            ],
+            [
+              "VA rendita posticipata",
+              "R[1−(1+r)^(−n)]/r",
+              "prima rata a t1"
+            ],
+            [
+              "VA rendita anticipata",
+              "VA posticipata×(1+r)",
+              "prima rata a t0"
+            ],
+            [
+              "Perpetuità costante",
+              "R/r",
+              "prima rata a t1"
+            ],
+            [
+              "Perpetuità crescente",
+              "R₁/(r−g)",
+              "r>g; prima rata a t1"
+            ],
+            [
+              "VAN",
+              "Σ CFₜ/(1+r)ᵗ",
+              "includere l’esborso t0"
+            ],
+            [
+              "TIR",
+              "VAN(TIR)=0",
+              "cautela su flussi non convenzionali"
+            ],
+            [
+              "PBP",
+              "prima epoca con cumulata ≥0",
+              "non sconta"
+            ],
+            [
+              "PBP scontato",
+              "idem con CFₜ/(1+r)ᵗ",
+              "ignora post-recupero"
+            ],
+            [
+              "PI standard",
+              "1+VAN/I₀",
+              "I₀>0; uscite future da trattare coerentemente"
+            ],
+            [
+              "CAE",
+              "VA costi/aₙ(r)",
+              "parità di servizio e ipotesi comparabili"
+            ],
+            [
+              "FCFF semplificato",
+              "EBIT(1−T)+Amm−CAPEX−ΔCCN",
+              "tassi/finanziamenti coerenti"
+            ],
+            [
+              "WACC",
+              "E/V Kₑ+D/V Kᴅ(1−T)",
+              "adatto ai FCFF con rischio appropriato"
+            ]
+          ]
+        }
+      ],
+      "concept": "Formulario finale ragionato"
+    },
+    {
+      "id": "11-38",
+      "title": "11.38 Glossario operativo",
+      "topics": [
+        "cdg-c11-t38"
+      ],
+      "blocks": [
+        {
+          "text": "Attualizzazione: trasformazione di flussi futuri in valori monetari equivalenti alla data scelta. Capitalizzazione: operazione inversa, che trasporta un capitale nel futuro. CF, cash flow: entrata/uscita monetaria collocata in una precisa epoca. CAPEX: spesa per investimenti in beni durevoli. CCN operativo: capitale assorbito da crediti e rimanenze al netto dei debiti operativi pertinenti. WACC: costo medio ponderato di debito ed equity. Costo opportunità: rendimento o beneficio alternativo rinunciato. VAN / NPV: differenza attualizzata tra benefici monetari e impieghi di risorse. TIR / IRR: tasso che annulla VAN. PBP: durata necessaria per recuperare nominalmente l’esborso. PI: valore attuale lordo per unità di capitale investito. CAE: costo annualizzato comparabile per alternative con durate differenti. Opzione reale: possibilità di modificare decisioni future dopo nuove informazioni."
+        }
+      ],
+      "concept": "Glossario operativo"
+    }
+  ],
+  "relations": [
+    {
+      "to": "11-10",
+      "relation": "La valutazione richiede i flussi incrementali del progetto",
+      "from": "11-3"
+    },
+    {
+      "to": "11-7",
+      "relation": "L’attualizzazione rende confrontabili importi in date diverse",
+      "from": "11-4"
+    },
+    {
+      "to": "11-14",
+      "relation": "Il VAN somma i flussi attualizzati e considera l’esborso",
+      "from": "11-7"
+    },
+    {
+      "to": "11-13",
+      "relation": "Il tasso dev’essere coerente con i flussi scelti",
+      "from": "11-10"
+    },
+    {
+      "to": "11-19",
+      "relation": "Il TIR è il tasso per cui il VAN si annulla",
+      "from": "11-14"
+    },
+    {
+      "to": "11-17",
+      "relation": "Fra alternative incompatibili conta il valore creato",
+      "from": "11-14"
+    },
+    {
+      "to": "11-21",
+      "relation": "Il pay-back misura il tempo di recupero",
+      "from": "11-14"
+    }
+  ]
+}

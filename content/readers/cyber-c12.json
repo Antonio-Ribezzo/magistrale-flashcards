@@ -1,0 +1,107 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Metodo di prova e documentazione",
+      "concept": "Metodo di prova e documentazione",
+      "topics": [
+        "cyber-c12-t01",
+        "cyber-c12-t02",
+        "cyber-c12-t03"
+      ],
+      "pages": [
+        208,
+        210,
+        211
+      ],
+      "blocks": [
+        {
+          "text": "Dichiara obiettivo, topologia, ipotesi e risultato atteso. Una prova positiva verifica che un flusso ammesso funzioni; una negativa controlla che una policy impedisca un flusso vietato. Registra evidenze riproducibili e varia una condizione alla volta."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Diagnostica di connettività e segmentazione",
+      "concept": "Diagnostica di connettività e segmentazione",
+      "topics": [
+        "cyber-c12-t04",
+        "cyber-c12-t05",
+        "cyber-c12-t06",
+        "cyber-c12-t07"
+      ],
+      "pages": [
+        212,
+        213,
+        214,
+        216
+      ],
+      "blocks": [
+        {
+          "text": "Verifica in ordine collegamento, indirizzamento, risoluzione, segmento e instradamento. Usa le osservazioni per scegliere il livello da controllare e distingui le cause di livello 2 dai problemi di routing, DNS o applicazione."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Verifica dei controlli di accesso e del trasporto",
+      "concept": "Verifica dei controlli di accesso e del trasporto",
+      "topics": [
+        "cyber-c12-t08",
+        "cyber-c12-t09",
+        "cyber-c12-t10",
+        "cyber-c12-t11",
+        "cyber-c12-t12"
+      ],
+      "pages": [
+        218,
+        219,
+        220,
+        221,
+        222
+      ],
+      "blocks": [
+        {
+          "text": "Nelle prove difensive controlla che segmentazione, gestione degli apparati e regole di accesso corrispondano alla policy. Su HTTPS verifica certificato, dominio atteso e stato del canale. Documenta l’esito sia per gli accessi consentiti sia per quelli vietati."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Analisi di un problema e risposta difensiva",
+      "concept": "Analisi di un problema e risposta difensiva",
+      "topics": [
+        "cyber-c12-t13",
+        "cyber-c12-t14",
+        "cyber-c12-t15"
+      ],
+      "pages": [
+        223,
+        225,
+        226
+      ],
+      "blocks": [
+        {
+          "text": "Parti dai sintomi senza anticipare la causa. Metti in relazione topologia, configurazione e log, documenta la sequenza temporale, valuta l’impatto e verifica il ripristino. Distingui la risoluzione tecnica dalla revisione della policy."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "1",
+      "to": "2",
+      "relation": "I risultati attesi orientano l’ordine dei controlli."
+    },
+    {
+      "from": "2",
+      "to": "3",
+      "relation": "Una volta confermata la connettività si verificano policy e garanzie."
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "relation": "Le evidenze raccolte aiutano a ricostruire problemi e incidenti."
+    }
+  ]
+}

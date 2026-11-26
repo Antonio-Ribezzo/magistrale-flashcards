@@ -1,0 +1,3072 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "si",
+  "source": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6: Normalizzazione delle basi di dati, pagine PDF 80–94. Unica fonte autorizzata; esempi ufficiali delle slide e integrazioni didattiche dichiarati nelle schede.",
+  "chapter": {
+    "id": "si-c06",
+    "title": "Normalizzazione delle basi di dati",
+    "order": 6,
+    "topics": [
+      {
+        "id": "si-c06-t01",
+        "title": "Normalizzazione: ridondanze, NULL e anomalie"
+      },
+      {
+        "id": "si-c06-t02",
+        "title": "Dipendenze funzionali: definizione, semantica e tempo"
+      },
+      {
+        "id": "si-c06-t03",
+        "title": "Armstrong e regole di inferenza"
+      },
+      {
+        "id": "si-c06-t04",
+        "title": "Chiusura degli attributi ed esercizio guidato 1"
+      },
+      {
+        "id": "si-c06-t05",
+        "title": "Superchiavi, chiavi candidate e attributi primi"
+      },
+      {
+        "id": "si-c06-t06",
+        "title": "Coperture minime e verifica di equivalenza"
+      },
+      {
+        "id": "si-c06-t07",
+        "title": "Prima forma normale: atomicità contestuale"
+      },
+      {
+        "id": "si-c06-t08",
+        "title": "Seconda forma normale e dipendenze parziali"
+      },
+      {
+        "id": "si-c06-t09",
+        "title": "Terza forma normale: definizione formale e casi"
+      },
+      {
+        "id": "si-c06-t10",
+        "title": "BCNF: differenze da 3NF e compromessi"
+      },
+      {
+        "id": "si-c06-t11",
+        "title": "Decomposizione senza perdita e tuple spurie"
+      },
+      {
+        "id": "si-c06-t12",
+        "title": "Conservazione delle dipendenze funzionali"
+      },
+      {
+        "id": "si-c06-t13",
+        "title": "Algoritmo di decomposizione in BCNF"
+      },
+      {
+        "id": "si-c06-t14",
+        "title": "Sintesi 3NF e aggiunta di una chiave"
+      },
+      {
+        "id": "si-c06-t15",
+        "title": "Caso delle slide PRESTITO_LIBRARIO"
+      },
+      {
+        "id": "si-c06-t16",
+        "title": "Normalizzazione, SQL, prestazioni e ridondanze controllate"
+      },
+      {
+        "id": "si-c06-t17",
+        "title": "Applicazione didattica EnerPrice"
+      },
+      {
+        "id": "si-c06-t18",
+        "title": "Metodo operativo e errori d’esame"
+      },
+      {
+        "id": "si-c06-t19",
+        "title": "Esercizi svolti 6–9: FD, 2NF, 3NF, BCNF"
+      },
+      {
+        "id": "si-c06-t20",
+        "title": "Esercizi svolti 10–13: join, dipendenze, sintesi"
+      },
+      {
+        "id": "si-c06-t21",
+        "title": "Esercizi svolti 14–17: 1NF, chiavi ed EnerPrice"
+      },
+      {
+        "id": "si-c06-t22",
+        "title": "Esercizi autonomi A1–A6"
+      },
+      {
+        "id": "si-c06-t23",
+        "title": "Autoverifica teorica e confronti conclusivi"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§6.1 — pagina PDF 80",
+        "cardIds": [
+          "si-c06-q001",
+          "si-c06-q002",
+          "si-c06-q003",
+          "si-c06-q004",
+          "si-c06-q005",
+          "si-c06-q006"
+        ]
+      },
+      {
+        "label": "§6.1 — pagina PDF 81",
+        "cardIds": [
+          "si-c06-q007",
+          "si-c06-q008"
+        ]
+      },
+      {
+        "label": "§6.2 — pagina PDF 81",
+        "cardIds": [
+          "si-c06-q009",
+          "si-c06-q010",
+          "si-c06-q011",
+          "si-c06-q012",
+          "si-c06-q013",
+          "si-c06-q014"
+        ]
+      },
+      {
+        "label": "§6.2.1 — pagina PDF 81",
+        "cardIds": [
+          "si-c06-q015",
+          "si-c06-q016",
+          "si-c06-q017",
+          "si-c06-q018"
+        ]
+      },
+      {
+        "label": "§6.3 — pagina PDF 82",
+        "cardIds": [
+          "si-c06-q019",
+          "si-c06-q020",
+          "si-c06-q021",
+          "si-c06-q022",
+          "si-c06-q023",
+          "si-c06-q024",
+          "si-c06-q025",
+          "si-c06-q026"
+        ]
+      },
+      {
+        "label": "§6.3.1 — pagina PDF 82",
+        "cardIds": [
+          "si-c06-q027",
+          "si-c06-q028",
+          "si-c06-q032"
+        ]
+      },
+      {
+        "label": "§6.3.1 (esercizio 1) — pagina PDF 82",
+        "cardIds": [
+          "si-c06-q029",
+          "si-c06-q030",
+          "si-c06-q031"
+        ]
+      },
+      {
+        "label": "§6.4 — pagina PDF 83",
+        "cardIds": [
+          "si-c06-q033",
+          "si-c06-q034",
+          "si-c06-q035",
+          "si-c06-q036"
+        ]
+      },
+      {
+        "label": "§6.4 (esercizio 2) — pagina PDF 83",
+        "cardIds": [
+          "si-c06-q037",
+          "si-c06-q038",
+          "si-c06-q039"
+        ]
+      },
+      {
+        "label": "§6.5 — pagina PDF 83",
+        "cardIds": [
+          "si-c06-q040",
+          "si-c06-q041",
+          "si-c06-q042",
+          "si-c06-q047"
+        ]
+      },
+      {
+        "label": "§6.5 (esercizio 3) — pagina PDF 83",
+        "cardIds": [
+          "si-c06-q043",
+          "si-c06-q044",
+          "si-c06-q045",
+          "si-c06-q046"
+        ]
+      },
+      {
+        "label": "§6.6.1 — pagina PDF 84",
+        "cardIds": [
+          "si-c06-q048",
+          "si-c06-q049",
+          "si-c06-q050",
+          "si-c06-q051",
+          "si-c06-q052"
+        ]
+      },
+      {
+        "label": "§6.6.2 — pagina PDF 84",
+        "cardIds": [
+          "si-c06-q053",
+          "si-c06-q054",
+          "si-c06-q055",
+          "si-c06-q056",
+          "si-c06-q057",
+          "si-c06-q058"
+        ]
+      },
+      {
+        "label": "§6.7 — pagina PDF 84",
+        "cardIds": [
+          "si-c06-q059",
+          "si-c06-q060"
+        ]
+      },
+      {
+        "label": "§6.7 — pagina PDF 85",
+        "cardIds": [
+          "si-c06-q061",
+          "si-c06-q062",
+          "si-c06-q063",
+          "si-c06-q064",
+          "si-c06-q065"
+        ]
+      },
+      {
+        "label": "§6.8 — pagina PDF 85",
+        "cardIds": [
+          "si-c06-q066",
+          "si-c06-q067",
+          "si-c06-q068",
+          "si-c06-q069",
+          "si-c06-q070",
+          "si-c06-q071",
+          "si-c06-q072"
+        ]
+      },
+      {
+        "label": "§6.9 — pagina PDF 86",
+        "cardIds": [
+          "si-c06-q073",
+          "si-c06-q074",
+          "si-c06-q075",
+          "si-c06-q076",
+          "si-c06-q077",
+          "si-c06-q079"
+        ]
+      },
+      {
+        "label": "§6.9 (esercizio 4) — pagina PDF 86",
+        "cardIds": [
+          "si-c06-q078"
+        ]
+      },
+      {
+        "label": "§6.10 — pagina PDF 86",
+        "cardIds": [
+          "si-c06-q080",
+          "si-c06-q081",
+          "si-c06-q082",
+          "si-c06-q083",
+          "si-c06-q084"
+        ]
+      },
+      {
+        "label": "§6.11.1 — pagina PDF 87",
+        "cardIds": [
+          "si-c06-q085",
+          "si-c06-q086",
+          "si-c06-q087",
+          "si-c06-q088",
+          "si-c06-q089",
+          "si-c06-q090"
+        ]
+      },
+      {
+        "label": "§6.11.2 — pagina PDF 87",
+        "cardIds": [
+          "si-c06-q091",
+          "si-c06-q092",
+          "si-c06-q093",
+          "si-c06-q094",
+          "si-c06-q095"
+        ]
+      },
+      {
+        "label": "§6.11.2 (esercizio 5) — pagina PDF 87",
+        "cardIds": [
+          "si-c06-q096",
+          "si-c06-q097",
+          "si-c06-q098",
+          "si-c06-q099"
+        ]
+      },
+      {
+        "label": "§6.12 — pagina PDF 88",
+        "cardIds": [
+          "si-c06-q100",
+          "si-c06-q101",
+          "si-c06-q102",
+          "si-c06-q103",
+          "si-c06-q104",
+          "si-c06-q105",
+          "si-c06-q106",
+          "si-c06-q107",
+          "si-c06-q108",
+          "si-c06-q109"
+        ]
+      },
+      {
+        "label": "§6.13 — pagina PDF 88",
+        "cardIds": [
+          "si-c06-q110",
+          "si-c06-q111",
+          "si-c06-q112",
+          "si-c06-q113",
+          "si-c06-q114",
+          "si-c06-q115"
+        ]
+      },
+      {
+        "label": "§6.14 — pagina PDF 89",
+        "cardIds": [
+          "si-c06-q116",
+          "si-c06-q117",
+          "si-c06-q118",
+          "si-c06-q119",
+          "si-c06-q120",
+          "si-c06-q121",
+          "si-c06-q122",
+          "si-c06-q123"
+        ]
+      },
+      {
+        "label": "§6.15 — pagina PDF 90",
+        "cardIds": [
+          "si-c06-q124",
+          "si-c06-q125",
+          "si-c06-q126",
+          "si-c06-q127",
+          "si-c06-q128",
+          "si-c06-q129",
+          "si-c06-q130"
+        ]
+      },
+      {
+        "label": "§6.16 (esercizio 6) — pagina PDF 90",
+        "cardIds": [
+          "si-c06-q131",
+          "si-c06-q132",
+          "si-c06-q133"
+        ]
+      },
+      {
+        "label": "§6.16 (esercizio 7) — pagina PDF 90",
+        "cardIds": [
+          "si-c06-q134",
+          "si-c06-q135",
+          "si-c06-q136"
+        ]
+      },
+      {
+        "label": "§6.16 (esercizio 8) — pagina PDF 90",
+        "cardIds": [
+          "si-c06-q137",
+          "si-c06-q138",
+          "si-c06-q139"
+        ]
+      },
+      {
+        "label": "§6.16 (esercizio 9) — pagina PDF 91",
+        "cardIds": [
+          "si-c06-q140",
+          "si-c06-q141",
+          "si-c06-q142",
+          "si-c06-q143"
+        ]
+      },
+      {
+        "label": "§6.16 (esercizio 10) — pagina PDF 91",
+        "cardIds": [
+          "si-c06-q144",
+          "si-c06-q145",
+          "si-c06-q146",
+          "si-c06-q147"
+        ]
+      },
+      {
+        "label": "§6.16 (esercizio 11) — pagina PDF 91",
+        "cardIds": [
+          "si-c06-q148",
+          "si-c06-q149",
+          "si-c06-q150"
+        ]
+      },
+      {
+        "label": "§6.16 (esercizio 12) — pagina PDF 91",
+        "cardIds": [
+          "si-c06-q151",
+          "si-c06-q152",
+          "si-c06-q153"
+        ]
+      },
+      {
+        "label": "§6.16 (esercizio 13) — pagina PDF 91",
+        "cardIds": [
+          "si-c06-q154",
+          "si-c06-q155"
+        ]
+      },
+      {
+        "label": "§6.16 (esercizio 14) — pagina PDF 92",
+        "cardIds": [
+          "si-c06-q156",
+          "si-c06-q157",
+          "si-c06-q158"
+        ]
+      },
+      {
+        "label": "§6.16 (esercizio 15) — pagina PDF 92",
+        "cardIds": [
+          "si-c06-q159",
+          "si-c06-q160",
+          "si-c06-q161"
+        ]
+      },
+      {
+        "label": "§6.16 (esercizio 16) — pagina PDF 92",
+        "cardIds": [
+          "si-c06-q162",
+          "si-c06-q163",
+          "si-c06-q164",
+          "si-c06-q165"
+        ]
+      },
+      {
+        "label": "§6.16 (esercizio 17) — pagina PDF 92",
+        "cardIds": [
+          "si-c06-q166",
+          "si-c06-q167",
+          "si-c06-q168"
+        ]
+      },
+      {
+        "label": "§6.17 (A1) — pagina PDF 93",
+        "cardIds": [
+          "si-c06-q169",
+          "si-c06-q170"
+        ]
+      },
+      {
+        "label": "§6.17 (A2) — pagina PDF 93",
+        "cardIds": [
+          "si-c06-q171",
+          "si-c06-q172"
+        ]
+      },
+      {
+        "label": "§6.17 (A3) — pagina PDF 93",
+        "cardIds": [
+          "si-c06-q173",
+          "si-c06-q174"
+        ]
+      },
+      {
+        "label": "§6.17 (A4) — pagina PDF 93",
+        "cardIds": [
+          "si-c06-q175",
+          "si-c06-q176"
+        ]
+      },
+      {
+        "label": "§6.17 (A5) — pagina PDF 93",
+        "cardIds": [
+          "si-c06-q177",
+          "si-c06-q178"
+        ]
+      },
+      {
+        "label": "§6.17 (A6) — pagina PDF 93",
+        "cardIds": [
+          "si-c06-q179",
+          "si-c06-q180"
+        ]
+      },
+      {
+        "label": "§6.17 (20 domande di autoverifica) — pagina PDF 93",
+        "cardIds": [
+          "si-c06-q181",
+          "si-c06-q182",
+          "si-c06-q183",
+          "si-c06-q184",
+          "si-c06-q185",
+          "si-c06-q186",
+          "si-c06-q187",
+          "si-c06-q188",
+          "si-c06-q189",
+          "si-c06-q190",
+          "si-c06-q193",
+          "si-c06-q196",
+          "si-c06-q198",
+          "si-c06-q199",
+          "si-c06-q200"
+        ]
+      },
+      {
+        "label": "§6.17 (20 domande di autoverifica) — pagina PDF 94",
+        "cardIds": [
+          "si-c06-q191",
+          "si-c06-q192",
+          "si-c06-q194",
+          "si-c06-q195",
+          "si-c06-q197"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "si-c06-q001",
+      "topicId": "si-c06-t01",
+      "question": "Che cos’è la normalizzazione delle basi di dati e quale problema risolve?",
+      "answer": "È il raffinamento formale degli schemi relazionali a partire dai vincoli semantici, soprattutto le dipendenze funzionali, per ridurre ridondanze e anomalie.",
+      "detail": "Non coincide con la semplice moltiplicazione delle tabelle: lo scopo è organizzare i fatti in relazioni coerenti, ricostruibili e controllabili.",
+      "example": "La tabella che ripete stipendio, bilancio di progetto e funzione di ogni impiegato può essere separata in tre relazioni.",
+      "formulas": [],
+      "connections": [
+        "§6.2: le dipendenze funzionali chiariscono perché alcune ripetizioni sono anomalie."
+      ],
+      "mistakes": "Non giustificare una decomposizione soltanto perché produce più tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.1, pagina PDF 80"
+    },
+    {
+      "id": "si-c06-q002",
+      "topicId": "si-c06-t01",
+      "question": "Quali tre fatti distinti sono mescolati nella relazione Impiegato–Progetto delle slide?",
+      "answer": "Lo stipendio dell’impiegato, il bilancio del progetto e la funzione svolta da quell’impiegato nello specifico progetto.",
+      "detail": "Sono fatti con determinanti differenti: impiegato, progetto e coppia impiegato–progetto.",
+      "example": "IMPIEGATO(Impiegato,Stipendio), PROGETTO(Progetto,Bilancio), PARTECIPAZIONE(Impiegato,Progetto,Funzione).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mettere Funzione nell’anagrafica IMPIEGATO senza considerare il progetto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.1, pagina PDF 80"
+    },
+    {
+      "id": "si-c06-q003",
+      "topicId": "si-c06-t01",
+      "question": "Che cos’è un’anomalia di modifica e come appare nell’esempio delle slide?",
+      "answer": "È il rischio che la modifica dello stesso fatto ripetuto in più tuple venga applicata solo ad alcune di esse, rendendo il database incoerente.",
+      "detail": "Uno stipendio deve essere modificato in tutte le righe di partecipazione dell’impiegato se è duplicato nella relazione unica.",
+      "example": "Aggiornare lo stipendio di Verdi in una sola partecipazione lascerebbe valori contraddittori.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’anomalia di modifica con la violazione di un vincolo su un singolo campo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.1, pagina PDF 80"
+    },
+    {
+      "id": "si-c06-q004",
+      "topicId": "si-c06-t01",
+      "question": "In che cosa consiste l’anomalia d’inserimento nella grande tabella Impiegato–Progetto?",
+      "answer": "Può diventare impossibile inserire autonomamente un nuovo impiegato se la riga richiede già una partecipazione a un progetto.",
+      "detail": "L’esistenza dell’impiegato risulta indebitamente subordinata a quella del collegamento operativo.",
+      "example": "Un neoassunto non ancora assegnato non ha una riga di PARTECIPAZIONE.",
+      "formulas": [],
+      "connections": [
+        "Capitolo 4: la traduzione E-R→relazionale precede il raffinamento degli schemi."
+      ],
+      "mistakes": "Non inventare un progetto fittizio solo per registrare il dipendente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.1, pagina PDF 80"
+    },
+    {
+      "id": "si-c06-q005",
+      "topicId": "si-c06-t01",
+      "question": "In che cosa consiste l’anomalia di cancellazione nell’esempio impiegati e progetti?",
+      "answer": "Eliminando l’ultima partecipazione di un progetto, si rischia di cancellare anche l’unica copia della sua informazione di bilancio.",
+      "detail": "La cancellazione di un evento operativo non dovrebbe distruggere un fatto anagrafico indipendente.",
+      "example": "Cancellare l’ultima riga del progetto Giove fa perdere il bilancio di Giove se tutto è nella tabella mista.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare normale che un fatto indipendente sparisca con una relazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.1, pagina PDF 80"
+    },
+    {
+      "id": "si-c06-q006",
+      "topicId": "si-c06-t01",
+      "question": "Perché ripetere stipendio e bilancio è una forma di ridondanza problematica?",
+      "answer": "Il medesimo fatto è memorizzato in più tuple anziché in un’unica sede logica coerente.",
+      "detail": "Produce costo di archiviazione e soprattutto più punti da mantenere sincronizzati.",
+      "example": "Lo stipendio di Verdi compare per ogni progetto a cui partecipa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Ridondanza non significa automaticamente errore, ma richiede una giustificazione e gestione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.1, pagina PDF 80"
+    },
+    {
+      "id": "si-c06-q007",
+      "topicId": "si-c06-t01",
+      "question": "Quali altre due linee guida di qualità richiama il manuale oltre alla ridondanza?",
+      "answer": "Ridurre NULL inutili, soprattutto quando attributi riguardano poche occorrenze, ed evitare decomposizioni che generino tuple spurie al join.",
+      "detail": "NULL può significare dato ignoto, non disponibile o non applicabile: non sempre le tre condizioni equivalgono.",
+      "example": "Un attributo valido solo per alcuni sottotipi può richiedere una modellazione specifica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare ogni attributo facoltativo in una tabella autonoma senza bisogno.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.1, pagina PDF 81"
+    },
+    {
+      "id": "si-c06-q008",
+      "topicId": "si-c06-t01",
+      "question": "Perché il numero massimo di tabelle non è un criterio per valutare la normalizzazione?",
+      "answer": "Perché il criterio corretto è il rispetto dei fatti e delle loro dipendenze, evitando perdita di informazioni e controlli inutilmente complessi.",
+      "detail": "Anche uno schema molto frammentato può generare associazioni spurie o rendere difficili i vincoli.",
+      "example": "Separare IMPIEGATO e PROGETTO è giustificato dalle FD; separare ogni campo opzionale no.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare «molte tabelle» a «qualità elevata».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.1, pagina PDF 81"
+    },
+    {
+      "id": "si-c06-q009",
+      "topicId": "si-c06-t02",
+      "question": "Che cosa significa formalmente la dipendenza funzionale X → Y su R?",
+      "answer": "Per ogni istanza lecita di R, ogni coppia di tuple che coincide su tutti gli attributi X deve coincidere anche su tutti gli attributi Y.",
+      "detail": "È un vincolo di dominio, non una correlazione statistica o una coincidenza nel piccolo campione osservato.",
+      "example": "Impiegato → Stipendio se nel periodo considerato un impiegato ha un solo stipendio.",
+      "formulas": [
+        {
+          "latex": "\\forall t_1,t_2\\in r: t_1[X]=t_2[X]\\Rightarrow t_1[Y]=t_2[Y]",
+          "meaning": "Definizione della FD in ogni istanza lecita"
+        }
+      ],
+      "connections": [
+        "§6.4: una superchiave si riconosce calcolando la chiusura rispetto alle FD."
+      ],
+      "mistakes": "La FD non implica in generale la dipendenza inversa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.2, pagina PDF 81"
+    },
+    {
+      "id": "si-c06-q010",
+      "topicId": "si-c06-t02",
+      "question": "Perché una dipendenza funzionale non può essere dedotta con certezza da poche righe di dati?",
+      "answer": "Perché deve valere in tutte le istanze lecite ammesse dal dominio, non soltanto nel campione corrente.",
+      "detail": "Un campione può non contenere ancora il caso che falsificherebbe la presunta FD.",
+      "example": "Cinque persone con nomi diversi non dimostrano Nome → CodiceFiscale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non promuovere accidentalmente una coincidenza osservata a regola permanente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.2, pagina PDF 81"
+    },
+    {
+      "id": "si-c06-q011",
+      "topicId": "si-c06-t02",
+      "question": "Quali sono le tre dipendenze funzionali principali del caso Impiegato–Progetto?",
+      "answer": "Impiegato → Stipendio; Progetto → Bilancio; (Impiegato,Progetto) → Funzione, secondo le ipotesi del caso.",
+      "detail": "Ogni determinante coincide con l’identità del fatto descritto.",
+      "example": "La funzione può cambiare passando da un progetto a un altro per lo stesso dipendente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire le FD: due progetti possono avere uguale bilancio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.2, pagina PDF 81"
+    },
+    {
+      "id": "si-c06-q012",
+      "topicId": "si-c06-t02",
+      "question": "Perché Impiegato → Stipendio potrebbe non valere se si conserva lo storico degli stipendi?",
+      "answer": "Perché la stessa persona può avere stipendi diversi in periodi distinti; il solo identificatore dell’impiegato non determina più il valore storico.",
+      "detail": "Occorre rendere esplicita una componente temporale che distingua i valori, con periodi validi ben identificati.",
+      "example": "(Impiegato,DataInizioValidità) → Stipendio è una possibile FD, se ogni inizio identifica un periodo univoco.",
+      "formulas": [],
+      "connections": [
+        "§6.12: le regole temporali cambiano le FD assunte per prestiti e studenti."
+      ],
+      "mistakes": "Non riutilizzare senza verifica una FD di fotografia corrente per uno storico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.2, pagina PDF 81"
+    },
+    {
+      "id": "si-c06-q013",
+      "topicId": "si-c06-t02",
+      "question": "Che cosa cambierebbe se un impiegato potesse svolgere più funzioni nel medesimo progetto?",
+      "answer": "La FD (Impiegato,Progetto) → Funzione non sarebbe più valida senza ulteriori attributi identificanti o una revisione del modello.",
+      "detail": "Un vincolo può dipendere dal livello di dettaglio e dalle ipotesi del dominio.",
+      "example": "Distinguere le assegnazioni per intervallo di attività o ruolo, quando richiesto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre l’unicità della funzione se la traccia ammette assegnazioni multiple.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.2, pagina PDF 81"
+    },
+    {
+      "id": "si-c06-q014",
+      "topicId": "si-c06-t02",
+      "question": "Una FD X → Y significa necessariamente che X è una chiave?",
+      "answer": "No. Una FD determina solo gli attributi Y indicati; X è una superchiave soltanto se ne determina tutti gli attributi di R.",
+      "detail": "Il calcolo della chiusura X⁺ permette di verificare se X determina tutto lo schema.",
+      "example": "Progetto → Bilancio può valere nella grande relazione, ma Progetto non identifica la partecipazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare determinante e chiave universale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.2, pagina PDF 81"
+    },
+    {
+      "id": "si-c06-q015",
+      "topicId": "si-c06-t02",
+      "question": "Quando una dipendenza funzionale X → Y è banale?",
+      "answer": "Quando Y è sottoinsieme di X; la dipendenza segue dalla struttura degli attributi senza aggiungere un vincolo sostanziale.",
+      "detail": "Ogni riga uguale su AB è necessariamente uguale su A.",
+      "example": "AB → A è banale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non richiedere dati osservati per dimostrare una FD banale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.2.1, pagina PDF 81"
+    },
+    {
+      "id": "si-c06-q016",
+      "topicId": "si-c06-t02",
+      "question": "Quando una dipendenza funzionale è non banale?",
+      "answer": "Quando il lato destro non è contenuto nel determinante e introduce una vera restrizione sui valori possibili.",
+      "detail": "Il vincolo deriva dalla semantica del dominio, non dalla sola appartenenza di attributi.",
+      "example": "A → B con B distinto da A è non banale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderla con una FD necessariamente piena.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.2.1, pagina PDF 81"
+    },
+    {
+      "id": "si-c06-q017",
+      "topicId": "si-c06-t02",
+      "question": "Che cosa distingue una dipendenza piena da una parziale?",
+      "answer": "X → Y è piena se nessun sottoinsieme proprio di X determina Y; è parziale se almeno un sottoinsieme proprio di X determina Y.",
+      "detail": "La nozione è cruciale per riconoscere le violazioni della seconda forma normale.",
+      "example": "(Ordine,Prodotto) → Quantità è piena se nessun singolo attributo basta; (Ordine,Prodotto) → DataOrdine è parziale se Ordine → DataOrdine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non decidere la pienezza guardando solo il numero di attributi in X.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.2.1, pagina PDF 81"
+    },
+    {
+      "id": "si-c06-q018",
+      "topicId": "si-c06-t02",
+      "question": "Perché (Ordine,Prodotto) → DataOrdine è una dipendenza parziale?",
+      "answer": "Perché Ordine da solo determina DataOrdine; Prodotto non è necessario per quel valore.",
+      "detail": "La presenza di Prodotto sul lato sinistro è superflua per determinare la data.",
+      "example": "Ordine → DataOrdine, dunque anche (Ordine,Prodotto) → DataOrdine.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire alla riga dell’ordine un fatto dell’ordine intero.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.2.1, pagina PDF 81"
+    },
+    {
+      "id": "si-c06-q019",
+      "topicId": "si-c06-t03",
+      "question": "Che cosa rappresenta F⁺ e perché non conviene enumerarlo completamente?",
+      "answer": "F⁺ è l’insieme di tutte le FD logicamente implicate dall’insieme F; può essere molto esteso.",
+      "detail": "Negli esercizi si usa la chiusura X⁺ per dimostrare implicazioni particolari o riconoscere superchiavi.",
+      "example": "Se Y ⊆ X⁺, F implica X → Y.",
+      "formulas": [],
+      "connections": [
+        "§6.5: la transitività serve a rimuovere FD ridondanti dalla cover."
+      ],
+      "mistakes": "Non confondere l’insieme delle FD implicate F⁺ con quello degli attributi X⁺.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3, pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q020",
+      "topicId": "si-c06-t03",
+      "question": "Qual è l’assioma di riflessività di Armstrong?",
+      "answer": "Se Y ⊆ X, allora X → Y.",
+      "detail": "Formalizza le FD banali che seguono dalla stessa struttura degli attributi.",
+      "example": "AB → A.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non richiedere una regola semantica ulteriore per riflessività.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3, pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q021",
+      "topicId": "si-c06-t03",
+      "question": "Qual è l’assioma di aumento di Armstrong?",
+      "answer": "Se X → Y, allora XZ → YZ, aggiungendo gli stessi attributi a entrambi i lati.",
+      "detail": "È una regola di inferenza corretta anche quando Z include attributi già presenti.",
+      "example": "A → B implica AC → BC.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non togliere arbitrariamente attributi dal determinante.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3, pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q022",
+      "topicId": "si-c06-t03",
+      "question": "Qual è l’assioma di transitività di Armstrong?",
+      "answer": "Da X → Y e Y → Z segue X → Z.",
+      "detail": "Consente di derivare determinazioni indirette mediante passaggi concatenati.",
+      "example": "A → B e B → C implicano A → C.",
+      "formulas": [],
+      "connections": [
+        "§6.3.1: le chiusure applicano concretamente queste regole."
+      ],
+      "mistakes": "Non sostituire la transitività con la falsa simmetria X → Y ⇒ Y → X.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3, pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q023",
+      "topicId": "si-c06-t03",
+      "question": "Qual è la regola derivata di unione per le FD?",
+      "answer": "Se X → Y e X → Z, allora X → YZ.",
+      "detail": "Raggruppa gli attributi determinati dal medesimo insieme X.",
+      "example": "A → B e A → C implicano A → BC.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non unire FD che hanno determinanti differenti senza averli prima giustificati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3, pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q024",
+      "topicId": "si-c06-t03",
+      "question": "Qual è la regola derivata di decomposizione delle FD?",
+      "answer": "Da X → YZ seguono X → Y e X → Z.",
+      "detail": "È il primo passo per costruire una copertura minima con lato destro unitario.",
+      "example": "A → BC si scompone in A → B e A → C.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere questa decomposizione della FD con la decomposizione di una tabella.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3, pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q025",
+      "topicId": "si-c06-t03",
+      "question": "Qual è la regola derivata di pseudotransitività?",
+      "answer": "Se X → Y e WY → Z, allora WX → Z.",
+      "detail": "Combina determinazioni facendo entrare il contesto W nella seconda dipendenza.",
+      "example": "A → B e BC → D implicano AC → D.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere W nel determinante finale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3, pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q026",
+      "topicId": "si-c06-t03",
+      "question": "Che cosa significa che gli assiomi di Armstrong sono corretti e completi?",
+      "answer": "Correttezza: le FD derivate sono davvero implicate; completezza: ogni FD logicamente implicata è derivabile mediante gli assiomi.",
+      "detail": "Questo fonda il calcolo algoritmico delle chiusure.",
+      "example": "Una derivazione con riflessività, aumento e transitività non inventa vincoli.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare completezza logica con enumerazione pratica di tutto F⁺.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3, pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q027",
+      "topicId": "si-c06-t04",
+      "question": "Come si calcola operativamente la chiusura X⁺ sotto un insieme F di FD?",
+      "answer": "Si parte da X⁺ = X; finché possibile, se il lato sinistro L di una FD L → R è incluso in X⁺, si aggiungono gli attributi di R; si arresta al punto fisso.",
+      "detail": "Una sola scansione può essere insufficiente: le FD diventano applicabili dopo l’aggiunta di nuovi attributi.",
+      "example": "A → B, B → C: da A si aggiunge B e poi C.",
+      "formulas": [],
+      "connections": [
+        "§6.4: una chiusura completa permette di dimostrare che un insieme è superchiave."
+      ],
+      "mistakes": "Non interrompere prima di una passata senza nuove aggiunte.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3.1, pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q028",
+      "topicId": "si-c06-t04",
+      "question": "Come verificare se una FD X → Y è implicata da F?",
+      "answer": "Calcolare X⁺ rispetto a F e verificare che tutti gli attributi di Y appartengano a X⁺.",
+      "detail": "L’inclusione Y ⊆ X⁺ equivale all’implicazione sotto le FD considerate.",
+      "example": "Se A⁺={A,B,C,D}, allora A → CD è implicata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fare il test su Y⁺: serve il determinante X.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3.1, pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q029",
+      "topicId": "si-c06-t04",
+      "question": "Nell’esercizio 1 quali sono lo schema e le FD di partenza?",
+      "answer": "R(A,B,C,D,E) e F={A → B, A → C, C → D, BD → E}.",
+      "detail": "La dipendenza BD → E richiede entrambi gli attributi B e D.",
+      "example": "All’inizio A⁺ contiene soltanto A.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare BD → E prima che entrambi B e D siano disponibili.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3.1 (esercizio 1), pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q030",
+      "topicId": "si-c06-t04",
+      "question": "Come evolve A⁺ nell’esercizio 1 fino alla chiusura completa?",
+      "answer": "{A} → {A,B,C} tramite A → B e A → C → {A,B,C,D} tramite C → D → {A,B,C,D,E} tramite BD → E.",
+      "detail": "Il punto fisso coincide con tutto lo schema R.",
+      "example": "A⁺ = ABCDE.",
+      "formulas": [
+        {
+          "latex": "A^+=\\{A,B,C,D,E\\}",
+          "meaning": "Chiusura completa dell’esercizio 1"
+        }
+      ],
+      "connections": [
+        "§6.4: una chiusura completa permette di dimostrare che un insieme è superchiave."
+      ],
+      "mistakes": "Non dimenticare E dopo aver ricavato D: BD è ormai incluso nella chiusura.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3.1 (esercizio 1), pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q031",
+      "topicId": "si-c06-t04",
+      "question": "Perché nell’esercizio 1 A è sia superchiave sia chiave candidata?",
+      "answer": "A⁺ contiene tutto R, quindi A è superchiave; non ha sottoinsiemi propri non vuoti da testare come determinanti di R, quindi è minimale.",
+      "detail": "La minimalità è indispensabile per passare da superchiave a chiave candidata.",
+      "example": "R(A,B,C,D,E), A⁺=ABCDE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare «candidata» per una superchiave composta senza testare i sottoinsiemi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3.1 (esercizio 1), pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q032",
+      "topicId": "si-c06-t04",
+      "question": "Quale differenza c’è tra dimostrare la chiusura e leggere un esempio di tuple?",
+      "answer": "La chiusura deduce conseguenze logiche dalle FD assunte; le tuple osservate possono solo smentire una FD, non dimostrarne la validità universale.",
+      "detail": "La prova formale si basa sul dominio descritto da F.",
+      "example": "Due righe differenti per A possono avere lo stesso B senza contraddire A → B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere una verifica su istanze con una deduzione formale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.3.1, pagina PDF 82"
+    },
+    {
+      "id": "si-c06-q033",
+      "topicId": "si-c06-t05",
+      "question": "Qual è la definizione formale di superchiave usando la chiusura?",
+      "answer": "K è superchiave di R quando K⁺ contiene tutti gli attributi dello schema.",
+      "detail": "Può comprendere attributi in eccesso, quindi non è necessariamente minima.",
+      "example": "Con A⁺=ABC, sia A sia AB sono superchiavi di R(A,B,C).",
+      "formulas": [],
+      "connections": [
+        "§6.7: la nozione di attributo primo richiede tutte le chiavi candidate."
+      ],
+      "mistakes": "Non considerare automaticamente candidata ogni superchiave.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.4, pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q034",
+      "topicId": "si-c06-t05",
+      "question": "Che cos’è una chiave candidata e come si verifica la sua minimalità?",
+      "answer": "È una superchiave K per cui nessun sottoinsieme proprio è ancora una superchiave.",
+      "detail": "Occorre controllare la chiusura dei sottoinsiemi o ragionare in modo equivalente sui determinanti indispensabili.",
+      "example": "Se AB⁺=R ma A⁺≠R e B⁺≠R, AB è candidata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere come candidata AB quando A da solo identifica tutto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.4, pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q035",
+      "topicId": "si-c06-t05",
+      "question": "In che rapporto stanno chiave candidata e chiave primaria?",
+      "answer": "La chiave primaria è una delle chiavi candidate scelta come identificatore progettuale principale; le altre restano candidate.",
+      "detail": "Normalizzazione, 2NF e 3NF richiedono di considerare tutte le chiavi candidate.",
+      "example": "Una relazione può avere PK=AB e chiavi candidate alternative AC e AD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ignorare le chiavi alternative perché non sono PRIMARY KEY SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.4, pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q036",
+      "topicId": "si-c06-t05",
+      "question": "Qual è la differenza tra attributo primo e non primo?",
+      "answer": "Primo: appartiene ad almeno una chiave candidata; non primo: non appartiene ad alcuna chiave candidata.",
+      "detail": "L’appartenenza alla PK scelta non è il criterio corretto.",
+      "example": "Se chiavi candidate AB, AC, AD, allora A,B,C,D sono tutti primi.",
+      "formulas": [],
+      "connections": [
+        "§6.7: la nozione di attributo primo richiede tutte le chiavi candidate."
+      ],
+      "mistakes": "Non classificare C come non primo soltanto perché la PK scelta è AB.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.4, pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q037",
+      "topicId": "si-c06-t05",
+      "question": "Quali FD e quali chiavi candidate ha l’esercizio 2?",
+      "answer": "R(A,B,C,D) con F={AB → C, C → D, D → B}; le chiavi candidate sono AB, AC e AD.",
+      "detail": "A non compare mai a destra delle FD e deve comparire in ciascuna chiave.",
+      "example": "AB⁺=ABCD; AC⁺=ACDB; AD⁺=ADBC.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarti alla prima chiave trovata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.4 (esercizio 2), pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q038",
+      "topicId": "si-c06-t05",
+      "question": "Perché nell’esercizio 2 A deve appartenere a tutte le chiavi candidate?",
+      "answer": "Perché nessuna FD consente di derivare A da attributi che non lo contengono, quindi ogni superchiave deve includerlo.",
+      "detail": "La mancata apparizione sul lato destro è un’indicazione utile, da combinare con prove di chiusura e minimalità.",
+      "example": "Nell’esercizio A non compare in alcun RHS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere sufficiente questa regola per individuare automaticamente l’intera chiave.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.4 (esercizio 2), pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q039",
+      "topicId": "si-c06-t05",
+      "question": "Perché AB, AC e AD sono tutte minimali nell’esercizio 2?",
+      "answer": "Ogni coppia che contiene A ottiene gli altri attributi tramite le FD, mentre A da solo non determina B,C,D e ciascun altro attributo da solo non determina A.",
+      "detail": "B,C,D si determinano in un ciclo attraverso AB → C, C → D, D → B.",
+      "example": "AB⁺=R; AC⁺=R; AD⁺=R, nessuna singola componente è una chiave.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare la presenza di più candidate con duplicazione inutile della PK.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.4 (esercizio 2), pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q040",
+      "topicId": "si-c06-t06",
+      "question": "Quando due insiemi di FD F e G sono equivalenti?",
+      "answer": "Quando implicano esattamente le stesse dipendenze funzionali, cioè F⁺ = G⁺.",
+      "detail": "L’equivalenza si può controllare verificando nei due versi che ogni FD di un insieme sia implicata dall’altro.",
+      "example": "A → BC equivale a {A → B,A → C}.",
+      "formulas": [],
+      "connections": [
+        "§6.11.2: la sintesi 3NF inizia da una copertura minimale."
+      ],
+      "mistakes": "Non richiedere che F e G abbiano lo stesso numero di FD.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.5, pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q041",
+      "topicId": "si-c06-t06",
+      "question": "Quali tre proprietà deve soddisfare una copertura minima?",
+      "answer": "Ogni FD ha un solo attributo a destra; nessun attributo sul lato sinistro è superfluo; nessuna FD è ridondante rispetto alle altre.",
+      "detail": "In più deve restare equivalente all’insieme originario.",
+      "example": "Una FD A → BC si divide e poi si cercano attributi e FD eliminabili.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere minima copertura con schema già normalizzato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.5, pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q042",
+      "topicId": "si-c06-t06",
+      "question": "Qual è la procedura di calcolo della copertura minima?",
+      "answer": "Scomporre i lati destri; eliminare attributi superflui dai determinanti; eliminare FD ridondanti; controllare l’equivalenza delle chiusure.",
+      "detail": "Se necessario nella sintesi 3NF si possono riunire FD con lo stesso lato sinistro dopo la minimalizzazione.",
+      "example": "Da AB → D, se A da solo determina D, eliminare B dal lato sinistro.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eliminare una FD senza verificare che il resto ancora la implichi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.5, pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q043",
+      "topicId": "si-c06-t06",
+      "question": "Quale insieme di dipendenze parte nell’esercizio 3?",
+      "answer": "F={A → BC, B → C, AB → D, D → E}.",
+      "detail": "Prima di minimizzare è necessario scomporre A → BC in A → B e A → C.",
+      "example": "La scomposizione iniziale produce cinque FD monovalore.",
+      "formulas": [],
+      "connections": [
+        "§6.11.2: la sintesi 3NF inizia da una copertura minimale."
+      ],
+      "mistakes": "Non tentare di eliminare intere FD senza valutarne le conseguenze.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.5 (esercizio 3), pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q044",
+      "topicId": "si-c06-t06",
+      "question": "Quale FD è ridondante dopo la prima scomposizione nell’esercizio 3 e perché?",
+      "answer": "A → C è ridondante perché A → B e B → C implicano A → C per transitività.",
+      "detail": "La sua eliminazione conserva F⁺.",
+      "example": "Da A ottieni B, poi da B ottieni C.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cancellare B → C, che fornisce una determinazione non equivalente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.5 (esercizio 3), pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q045",
+      "topicId": "si-c06-t06",
+      "question": "Perché in AB → D l’attributo B è superfluo nell’esercizio 3?",
+      "answer": "Perché A → B consente di ottenere B da A; quindi da A è già possibile attivare AB → D e dedurre D.",
+      "detail": "Si sostituisce AB → D con A → D mantenendo l’equivalenza.",
+      "example": "A⁺ contiene B e quindi D.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non togliere A dal determinante: B da solo non determina D.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.5 (esercizio 3), pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q046",
+      "topicId": "si-c06-t06",
+      "question": "Qual è una copertura minima verificata dell’esercizio 3?",
+      "answer": "{A → B, B → C, A → D, D → E}.",
+      "detail": "Le quattro FD hanno RHS unitario, non presentano attributi superflui a sinistra e nessuna è implicata dalle altre.",
+      "example": "È equivalente all’insieme {A → BC,B → C,AB → D,D → E}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare che il calcolo della cover abbia già eliminato le anomalie della relazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.5 (esercizio 3), pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q047",
+      "topicId": "si-c06-t06",
+      "question": "Perché minimizzare le FD non basta per mettere automaticamente una relazione in 3NF?",
+      "answer": "La copertura minima semplifica la descrizione dei vincoli; le forme normali classificano invece la struttura della relazione rispetto a quei vincoli.",
+      "detail": "Dopo la cover occorre ancora trovare chiavi, verificare le violazioni e decomporre se necessario.",
+      "example": "La FD B → C può rimanere in una cover minima pur violando la 3NF di una relazione con chiave A.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere elaborazione delle regole e ristrutturazione dei dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.5, pagina PDF 83"
+    },
+    {
+      "id": "si-c06-q048",
+      "topicId": "si-c06-t07",
+      "question": "Qual è la condizione fondamentale della prima forma normale (1NF)?",
+      "answer": "Gli attributi devono contenere valori atomici rispetto al dominio adottato e la struttura relazionale non deve usare celle con collezioni da interrogare come valori separati.",
+      "detail": "L’atomicità è relativa agli usi: un indirizzo può essere un valore unico oppure richiedere componenti se vanno interrogate.",
+      "example": "Una lista di numeri di telefono in una stringa non è adeguata se ogni numero va gestito individualmente.",
+      "formulas": [],
+      "connections": [
+        "§6.16 (esercizio 14): i telefoni multivalore mostrano come testare l’atomicità."
+      ],
+      "mistakes": "Non confondere atomicità concettuale con un elenco rigido di tipi SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.6.1, pagina PDF 84"
+    },
+    {
+      "id": "si-c06-q049",
+      "topicId": "si-c06-t07",
+      "question": "Perché telefoni=\"333...,080...\" può violare 1NF nel caso del manuale?",
+      "answer": "Perché un campo memorizza più valori che l’applicazione deve interrogare, aggiornare ed eventualmente classificare singolarmente.",
+      "detail": "È opportuno separare l’anagrafica CONTATTO dalle occorrenze di TELEFONO_CONTATTO.",
+      "example": "CONTATTO(id,nome), TELEFONO_CONTATTO(id_contatto,numero,tipo).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire a una stringa separata da virgole le proprietà di una vera relazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.6.1, pagina PDF 84"
+    },
+    {
+      "id": "si-c06-q050",
+      "topicId": "si-c06-t07",
+      "question": "Perché un indirizzo può essere atomico in un sistema e composto in un altro?",
+      "answer": "Dipende se i requisiti richiedono di usare separatamente CAP, città, via e altre componenti.",
+      "detail": "La decisione deriva dal significato dei dati nel dominio, non da una regola universale sul numero di caratteri.",
+      "example": "Visualizzare solo l’indirizzo completo può bastare; filtrare per CAP suggerisce una rappresentazione separabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non suddividere ogni stringa senza una necessità di gestione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.6.1, pagina PDF 84"
+    },
+    {
+      "id": "si-c06-q051",
+      "topicId": "si-c06-t07",
+      "question": "La 1NF coincide con la presenza di un vincolo PRIMARY KEY dichiarato in SQL?",
+      "answer": "No. La 1NF riguarda i valori atomici e la struttura relazionale; la scelta e dichiarazione di una PK è un problema progettuale fondamentale ma distinto.",
+      "detail": "Il manuale precisa che tecnicamente i DBMS possono avere tabelle senza PK dichiarata, benché sia spesso sconsigliabile.",
+      "example": "Una tabella con colonne scalari ma senza PK non diventa automaticamente una tabella con lista di telefoni.",
+      "formulas": [],
+      "connections": [
+        "§6.16 (esercizio 14): i telefoni multivalore mostrano come testare l’atomicità."
+      ],
+      "mistakes": "Non trattare un requisito implementativo SQL come definizione esclusiva di 1NF.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.6.1, pagina PDF 84"
+    },
+    {
+      "id": "si-c06-q052",
+      "topicId": "si-c06-t07",
+      "question": "In quale ordine conviene verificare le forme normali?",
+      "answer": "Prima 1NF, poi 2NF, quindi 3NF e infine BCNF, motivando ogni passaggio tramite le FD e le chiavi candidate.",
+      "detail": "Le condizioni sono progressive: se manca 1NF, non è giustificato dichiarare che la relazione soddisfa le forme successive.",
+      "example": "Liste di telefoni vanno affrontate prima delle dipendenze parziali e transitive.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non iniziare dalla BCNF ignorando se i dati sono atomici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.6.1, pagina PDF 84"
+    },
+    {
+      "id": "si-c06-q053",
+      "topicId": "si-c06-t08",
+      "question": "Qual è la definizione di seconda forma normale (2NF)?",
+      "answer": "La relazione deve essere in 1NF e ogni attributo non primo deve dipendere pienamente da ogni chiave candidata, senza dipendere da una sua parte propria.",
+      "detail": "Quando ci sono più chiavi candidate bisogna controllarle tutte.",
+      "example": "Se la chiave è (Ordine,Articolo), Cliente dipendente da Ordine soltanto è una violazione.",
+      "formulas": [],
+      "connections": [
+        "§6.16 (esercizio 7): la chiave Ordine–Articolo mostra due dipendenze parziali."
+      ],
+      "mistakes": "Non controllare solo la PK scelta o soltanto gli attributi «non chiave» in senso colloquiale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.6.2, pagina PDF 84"
+    },
+    {
+      "id": "si-c06-q054",
+      "topicId": "si-c06-t08",
+      "question": "Quando la seconda forma normale è automaticamente soddisfatta?",
+      "answer": "Se tutte le chiavi candidate sono composte da un solo attributo, non possono avere sottoinsiemi propri non vuoti che determinino un attributo non primo.",
+      "detail": "La relazione potrebbe comunque violare la 3NF per dipendenze transitive.",
+      "example": "Impiegato → Dipartimento → NomeDipartimento: chiave singola e possibile violazione 3NF.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre 3NF o BCNF dalla soddisfazione automatica di 2NF.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.6.2, pagina PDF 84"
+    },
+    {
+      "id": "si-c06-q055",
+      "topicId": "si-c06-t08",
+      "question": "Qual è la chiave composta della relazione RIGA_MISTA nel caso del manuale?",
+      "answer": "(id_ordine,id_prodotto), assumendo che ogni prodotto compaia una sola volta nello stesso ordine.",
+      "detail": "La coppia identifica la riga; la quantità è un fatto che dipende da entrambe le componenti.",
+      "example": "RIGA_MISTA(id_ordine,id_prodotto,cliente,nome_prodotto,quantità).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ignorare l’ipotesi di unicità della riga per coppia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.6.2, pagina PDF 84"
+    },
+    {
+      "id": "si-c06-q056",
+      "topicId": "si-c06-t08",
+      "question": "Perché Cliente e NomeProdotto violano la 2NF della RIGA_MISTA?",
+      "answer": "Cliente dipende solo da id_ordine e NomeProdotto solo da id_prodotto, che sono sottoinsiemi propri della chiave composta.",
+      "detail": "Sono attributi non primi e le relative FD parziali generano duplicazioni.",
+      "example": "id_ordine → cliente e id_prodotto → nome_prodotto.",
+      "formulas": [],
+      "connections": [
+        "§6.16 (esercizio 7): la chiave Ordine–Articolo mostra due dipendenze parziali."
+      ],
+      "mistakes": "Non considerare Quantità una dipendenza parziale senza una regola che la giustifichi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.6.2, pagina PDF 84"
+    },
+    {
+      "id": "si-c06-q057",
+      "topicId": "si-c06-t08",
+      "question": "Quale decomposizione elimina le dipendenze parziali di RIGA_MISTA?",
+      "answer": "Separare ORDINE(id_ordine,cliente), PRODOTTO(id_prodotto,nome_prodotto) e RIGA(id_ordine,id_prodotto,quantità).",
+      "detail": "Ogni fatto risiede nel contesto che lo determina, mentre RIGA conserva l’associazione e il suo dato specifico.",
+      "example": "La quantità continua a riferirsi alla coppia ordine–prodotto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non spostare la quantità nell’anagrafica del prodotto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.6.2, pagina PDF 84"
+    },
+    {
+      "id": "si-c06-q058",
+      "topicId": "si-c06-t08",
+      "question": "Perché l’eliminazione delle dipendenze parziali può lasciare ancora una violazione di 3NF?",
+      "answer": "Perché dentro una tabella normalizzata in 2NF può rimanere una FD transitiva da una chiave verso un attributo non primo tramite un determinante non superchiave.",
+      "detail": "Il manuale fa l’esempio di id_cliente → ragione_sociale se questi dati restano dentro ORDINE.",
+      "example": "id_ordine → id_cliente → ragione_sociale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fermarsi a 2NF assumendo che tutte le ridondanze siano risolte.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.6.2, pagina PDF 84"
+    },
+    {
+      "id": "si-c06-q059",
+      "topicId": "si-c06-t09",
+      "question": "Qual è la definizione formale di terza forma normale (3NF)?",
+      "answer": "Per ogni FD non banale X → A in F⁺ con A singolo attributo, vale almeno una condizione: X è superchiave oppure A è attributo primo.",
+      "detail": "La definizione considera tutte le chiavi candidate e contiene un’eccezione rispetto alla BCNF per i lati destri primi.",
+      "example": "Dirigente → Sede può essere permessa in 3NF se Sede appartiene a una chiave candidata.",
+      "formulas": [
+        {
+          "latex": "\\forall (X\\to A)\\in F^+,\\;A\\notin X:\\; X\\text{ superchiave}\\;\\lor\\;A\\text{ primo}",
+          "meaning": "Condizione completa di 3NF per RHS unitario"
+        }
+      ],
+      "connections": [
+        "§6.8: la BCNF è più restrittiva perché non ammette l’eccezione del RHS primo."
+      ],
+      "mistakes": "Non limitarsi alla frase «nessuna dipendenza transitiva» quando esistono più chiavi candidate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.7, pagina PDF 84"
+    },
+    {
+      "id": "si-c06-q060",
+      "topicId": "si-c06-t09",
+      "question": "Perché l’assenza di dipendenze transitive è un criterio intuitivo ma non pienamente generale per 3NF?",
+      "answer": "Perché la definizione formale ammette alcune FD con determinante non superchiave quando l’attributo a destra è primo.",
+      "detail": "Con chiavi candidate multiple possono esistere casi in 3NF che non sono BCNF.",
+      "example": "Il caso ufficiale Progetto–Dirigente–Sede ha tutti gli attributi primi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare la scorciatoia come se fosse una definizione universale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.7, pagina PDF 84"
+    },
+    {
+      "id": "si-c06-q061",
+      "topicId": "si-c06-t09",
+      "question": "Quali sono le FD rilevanti nell’esempio IMP_DIP del manuale?",
+      "answer": "id_imp → id_dip; id_dip → nome_dip, dir_dip; quindi id_imp determina transitivamente anche nome_dip e dir_dip.",
+      "detail": "Gli attributi del dipartimento dipendono dal dipartimento, non direttamente dall’identità dell’impiegato come fatto indipendente.",
+      "example": "IMP_DIP(id_imp,nome,id_dip,nome_dip,dir_dip).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non duplicare i dati del dipartimento su ogni impiegato senza giustificazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.7, pagina PDF 85"
+    },
+    {
+      "id": "si-c06-q062",
+      "topicId": "si-c06-t09",
+      "question": "Perché id_dip → nome_dip e dir_dip viola la 3NF in IMP_DIP?",
+      "answer": "id_dip non è superchiave dell’intera IMP_DIP e gli attributi nome_dip e dir_dip non sono primi.",
+      "detail": "La FD è non banale e non soddisfa nessuna delle due condizioni formali della 3NF.",
+      "example": "La tabella contiene più impiegati nello stesso dipartimento.",
+      "formulas": [],
+      "connections": [
+        "§6.8: la BCNF è più restrittiva perché non ammette l’eccezione del RHS primo."
+      ],
+      "mistakes": "Non confondere un identificatore del dipartimento con una chiave dell’intera relazione degli impiegati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.7, pagina PDF 85"
+    },
+    {
+      "id": "si-c06-q063",
+      "topicId": "si-c06-t09",
+      "question": "Come si normalizza il caso IMP_DIP con dipendenza transitiva?",
+      "answer": "Separando IMP(id_imp,nome,id_dip) e DIP(id_dip,nome_dip,dir_dip).",
+      "detail": "Il dipartimento diventa una relazione autonoma e l’impiegato ne mantiene il riferimento.",
+      "example": "Per cambiare nome del dipartimento si aggiorna DIP una volta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eliminare id_dip dalla tabella IMP, altrimenti perdi il collegamento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.7, pagina PDF 85"
+    },
+    {
+      "id": "si-c06-q064",
+      "topicId": "si-c06-t09",
+      "question": "Quali FD caratterizzano il caso ufficiale Dirigente–Progetto–Sede?",
+      "answer": "Dirigente → Sede e (Progetto,Sede) → Dirigente.",
+      "detail": "Le chiavi candidate risultano (Progetto,Sede) e (Progetto,Dirigente).",
+      "example": "Un dirigente opera in una sede; una coppia progetto-sede individua il dirigente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire Dirigente → Sede senza una regola addizionale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.7, pagina PDF 85"
+    },
+    {
+      "id": "si-c06-q065",
+      "topicId": "si-c06-t09",
+      "question": "Perché il caso Progetto–Dirigente–Sede rispetta la 3NF nonostante Dirigente → Sede?",
+      "answer": "Perché Sede appartiene alla chiave candidata (Progetto,Sede); è quindi un attributo primo, ammesso come lato destro nella 3NF.",
+      "detail": "L’altra chiave candidata è (Progetto,Dirigente); tutti e tre gli attributi sono primi.",
+      "example": "Dirigente non è superchiave ma Sede è primo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire «non è in 3NF» soltanto perché il determinante è non chiave.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.7, pagina PDF 85"
+    },
+    {
+      "id": "si-c06-q066",
+      "topicId": "si-c06-t10",
+      "question": "Qual è la condizione formale della Boyce–Codd Normal Form (BCNF)?",
+      "answer": "Per ogni FD non banale X → Y valida sullo schema, X deve essere una superchiave.",
+      "detail": "BCNF non prevede l’eccezione della 3NF per il lato destro primo.",
+      "example": "Dirigente → Sede viola BCNF se Dirigente non identifica il progetto.",
+      "formulas": [
+        {
+          "latex": "\\forall X\\to Y\\text{ non banale}: X\\text{ è superchiave}",
+          "meaning": "Condizione BCNF"
+        }
+      ],
+      "connections": [
+        "§6.10: decomporre in BCNF può perdere la conservazione delle dipendenze."
+      ],
+      "mistakes": "Non confondere una FD con RHS primo con una FD automaticamente lecita in BCNF.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.8, pagina PDF 85"
+    },
+    {
+      "id": "si-c06-q067",
+      "topicId": "si-c06-t10",
+      "question": "Qual è la relazione gerarchica fra BCNF, 3NF, 2NF e 1NF?",
+      "answer": "BCNF implica 3NF, che implica 2NF, che a sua volta implica 1NF; i conversi in generale non valgono.",
+      "detail": "Una relazione in 3NF può avere ancora una FD con determinante non superchiave e RHS primo.",
+      "example": "Il caso Progetto–Dirigente–Sede è 3NF ma non BCNF.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere equivalenza fra forme normali di livello diverso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.8, pagina PDF 85"
+    },
+    {
+      "id": "si-c06-q068",
+      "topicId": "si-c06-t10",
+      "question": "Perché Dirigente → Sede viola BCNF nel caso ufficiale?",
+      "answer": "Perché conoscere il dirigente permette di conoscere la sede, ma non di identificare il progetto: Dirigente non è superchiave.",
+      "detail": "La relazione può essere 3NF perché il RHS è primo, ma non BCNF.",
+      "example": "Progetto–Dirigente–Sede: D → S con chiavi PS e PD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare che la presenza di una chiave contenente D rende D da solo superchiave.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.8, pagina PDF 85"
+    },
+    {
+      "id": "si-c06-q069",
+      "topicId": "si-c06-t10",
+      "question": "Quale decomposizione in BCNF propone il manuale per il caso Dirigente–Progetto–Sede?",
+      "answer": "DIRIGENTE_SEDE(Dirigente,Sede) e PROGETTO_DIRIGENTE(Progetto,Dirigente).",
+      "detail": "L’intersezione Dirigente determina la prima relazione, quindi la ricostruzione è lossless.",
+      "example": "DS e PD sono i due sottoschemi.",
+      "formulas": [],
+      "connections": [
+        "§6.10: decomporre in BCNF può perdere la conservazione delle dipendenze."
+      ],
+      "mistakes": "Non presentare la decomposizione come automaticamente dependency-preserving.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.8, pagina PDF 85"
+    },
+    {
+      "id": "si-c06-q070",
+      "topicId": "si-c06-t10",
+      "question": "Quale FD non resta verificabile localmente nella decomposizione BCNF DS e PD?",
+      "answer": "(Progetto,Sede) → Dirigente, perché i tre attributi non sono più presenti insieme in una singola relazione e non è derivabile dalle sole FD proiettate.",
+      "detail": "La violazione può richiedere controlli che coinvolgano un join tra le nuove tabelle.",
+      "example": "Potrebbero comparire dirigenti diversi sullo stesso progetto e sede.",
+      "formulas": [],
+      "connections": [
+        "§6.10: preservazione FD ≠ join lossless."
+      ],
+      "mistakes": "Non dichiarare che join lossless implica conservazione delle FD.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.8, pagina PDF 85"
+    },
+    {
+      "id": "si-c06-q071",
+      "topicId": "si-c06-t10",
+      "question": "Qual è il compromesso principale tra 3NF e BCNF nel manuale?",
+      "answer": "La BCNF elimina più ridondanze indotte dalle FD, ma la sua decomposizione può perdere la conservazione locale delle dipendenze; una sintesi 3NF può garantire entrambe le proprietà.",
+      "detail": "La scelta pratica bilancia anomalie residue e possibilità di imporre i vincoli efficacemente.",
+      "example": "Il caso Dirigente–Progetto–Sede esplicita la perdita di PS → D dopo la BCNF.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare BCNF sempre superiore su ogni dimensione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.8, pagina PDF 85"
+    },
+    {
+      "id": "si-c06-q072",
+      "topicId": "si-c06-t10",
+      "question": "Quando è ragionevole preferire 3NF a BCNF?",
+      "answer": "Quando occorre preservare vincoli funzionali verificabili localmente e la conversione in BCNF perderebbe questa proprietà, con costi o rischi significativi.",
+      "detail": "La relazione 3NF deve comunque soddisfare i requisiti e il join senza perdita.",
+      "example": "Mantenere tutte le FD controllabili direttamente nel database può essere più utile di eliminare ogni residua anomalia da FD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che la 3NF elimini sempre ogni ridondanza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.8, pagina PDF 85"
+    },
+    {
+      "id": "si-c06-q073",
+      "topicId": "si-c06-t11",
+      "question": "Che cosa significa decomposizione senza perdita (lossless join)?",
+      "answer": "Per ogni istanza lecita, il join delle proiezioni sugli schemi decomposti ricostruisce esattamente la relazione iniziale, senza aggiungere associazioni non presenti.",
+      "detail": "La proprietà è logica e deve valere per tutte le istanze che rispettano i vincoli; un esempio osservato non basta a dimostrarla in generale.",
+      "example": "R=π_R1(R) ⋈ π_R2(R).",
+      "formulas": [
+        {
+          "latex": "r=\\pi_{R_1}(r)\\bowtie\\pi_{R_2}(r)",
+          "meaning": "Ricostruzione esatta di ogni istanza lecita"
+        }
+      ],
+      "connections": [
+        "§6.16 (esercizio 10): il join fra impiegati e progetti tramite Sede genera due tuple spurie."
+      ],
+      "mistakes": "Non confondere lossless con il fatto che nessuna colonna venga eliminata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.9, pagina PDF 86"
+    },
+    {
+      "id": "si-c06-q074",
+      "topicId": "si-c06-t11",
+      "question": "Che cosa sono le tuple spurie introdotte da un join?",
+      "answer": "Sono combinazioni di attributi che appaiono nel join delle relazioni decomposte ma non appartenevano alla relazione originale.",
+      "detail": "Indicano la perdita di informazione sulle associazioni ammesse, anche quando tutti i valori originari sono ancora memorizzati.",
+      "example": "Una sede comune fa accoppiare impiegati e progetti che non hanno mai lavorato insieme.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamarle duplicati: possono essere nuove associazioni semanticamente false.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.9, pagina PDF 86"
+    },
+    {
+      "id": "si-c06-q075",
+      "topicId": "si-c06-t11",
+      "question": "Qual è il criterio lossless per una decomposizione binaria sotto sole FD?",
+      "answer": "Se R=R1 ∪ R2, la decomposizione è lossless se e solo se (R1∩R2) → R1 oppure (R1∩R2) → R2 è implicata dalle FD.",
+      "detail": "L’intersezione deve determinare almeno uno dei due sottoschemi, non necessariamente tutta R.",
+      "example": "Per R(ABC), R1(AB), R2(AC), A → B assicura lossless.",
+      "formulas": [
+        {
+          "latex": "(R_1\\cap R_2)\\to R_1\\;\\lor\\;(R_1\\cap R_2)\\to R_2",
+          "meaning": "Test lossless per due schemi sotto FD"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non imporre che gli attributi comuni siano chiave di tutta R.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.9, pagina PDF 86"
+    },
+    {
+      "id": "si-c06-q076",
+      "topicId": "si-c06-t11",
+      "question": "Qual è la situazione delle slide in cui la decomposizione crea tuple spurie?",
+      "answer": "Una relazione Impiegato–Progetto–Sede viene spezzata in IMPIEGATO_SEDE e PROGETTO_SEDE e ricongiunta per Sede.",
+      "detail": "Se più impiegati e progetti condividono la stessa sede, il join può produrre combinazioni mai registrate.",
+      "example": "Verdi e Neri in Milano, progetti Giove, Venere, Saturno: join per Milano genera combinazioni indebite.",
+      "formulas": [],
+      "connections": [
+        "Capitolo 5: l’operatore join è qui valutato per la ricostruzione delle relazioni."
+      ],
+      "mistakes": "Non dedurre Sede → Impiegato o Sede → Progetto senza una regola del dominio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.9, pagina PDF 86"
+    },
+    {
+      "id": "si-c06-q077",
+      "topicId": "si-c06-t11",
+      "question": "Perché il solo attributo Sede non garantisce lossless nella separazione impiegato e progetto?",
+      "answer": "Perché Sede non determina né l’impiegato né il progetto: possono esistere più valori di entrambi nello stesso luogo.",
+      "detail": "L’intersezione dei due sottoschemi è {Sede} e il criterio lossless non si verifica.",
+      "example": "IMPIEGATO_SEDE(Impiegato,Sede) ⋈ PROGETTO_SEDE(Progetto,Sede).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che un join su un attributo comune sia automaticamente sicuro.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.9, pagina PDF 86"
+    },
+    {
+      "id": "si-c06-q078",
+      "topicId": "si-c06-t11",
+      "question": "Come si applica il criterio lossless nell’esercizio 4?",
+      "answer": "Per R(A,B,C), F={A → B}, R1(A,B), R2(A,C), l’intersezione è A e A → AB è implicata; il join è lossless.",
+      "detail": "È sufficiente che A determini R1: non occorre A → C.",
+      "example": "A → B e la riflessività implicano A → AB.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rispondere «con perdita» perché A non determina C.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.9 (esercizio 4), pagina PDF 86"
+    },
+    {
+      "id": "si-c06-q079",
+      "topicId": "si-c06-t11",
+      "question": "Perché un join con tuple spurie è considerato una perdita di informazione anche se produce più righe?",
+      "answer": "Perché la decomposizione ha perso il dato che distingueva quali associazioni erano realmente valide; il join non sa ricostruirlo.",
+      "detail": "Il surplus di tuple rappresenta la perdita del vincolo di correlazione tra attributi.",
+      "example": "Non si sa più se Verdi lavorasse su Saturno soltanto conoscendo la sede.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non interpretare «lossless» come un controllo soltanto sul numero di tuple.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.9, pagina PDF 86"
+    },
+    {
+      "id": "si-c06-q080",
+      "topicId": "si-c06-t12",
+      "question": "Che cosa significa conservazione delle dipendenze (dependency preservation)?",
+      "answer": "Le FD originali possono essere imposte e dedotte dalle FD proiettate sulle relazioni decomposte senza ricorrere a join per controllarle.",
+      "detail": "Formalmente, la chiusura dell’unione delle proiezioni delle FD deve equivalere alla chiusura delle FD originarie.",
+      "example": "Una FD A → B dentro AB è localmente controllabile.",
+      "formulas": [],
+      "connections": [
+        "§6.11.2: la sintesi 3NF preserva le FD e può assicurare lossless join."
+      ],
+      "mistakes": "Non equiparare la proprietà alla sola ricostruibilità delle tuple.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.10, pagina PDF 86"
+    },
+    {
+      "id": "si-c06-q081",
+      "topicId": "si-c06-t12",
+      "question": "Qual è il criterio formale di conservazione delle dipendenze dopo la decomposizione?",
+      "answer": "Se Fi è la proiezione di F⁺ su Ri, allora (F1 ∪ ... ∪ Fn)⁺ deve coincidere con F⁺.",
+      "detail": "Non è necessario che ogni FD iniziale sia scritta identica in una tabella: può anche essere deducibile dalla combinazione delle FD locali.",
+      "example": "A → B in AB e B → C in BC permettono di dedurre A → C.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non richiedere erroneamente che tutte le FD iniziali siano presenti letteralmente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.10, pagina PDF 86"
+    },
+    {
+      "id": "si-c06-q082",
+      "topicId": "si-c06-t12",
+      "question": "In che cosa differiscono lossless join e conservazione delle dipendenze?",
+      "answer": "Lossless riguarda la ricostruzione esatta delle tuple; conservazione riguarda il mantenimento di vincoli funzionali verificabili dalle tabelle risultanti.",
+      "detail": "Una decomposizione può soddisfare una proprietà e non l’altra.",
+      "example": "AB e AC sotto A → B, B → C sono lossless ma non preservano B → C.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare una sola prova per certificare entrambe le proprietà.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.10, pagina PDF 86"
+    },
+    {
+      "id": "si-c06-q083",
+      "topicId": "si-c06-t12",
+      "question": "Perché il caso Dirigente–Progetto–Sede dimostra la possibile perdita di preservazione in BCNF?",
+      "answer": "Dopo la decomposizione DS e PD resta localmente D → S, ma il vincolo (P,S) → D coinvolge attributi non presenti nella stessa tabella.",
+      "detail": "La ricostruzione è senza perdita, mentre il controllo del secondo vincolo richiede confronti tra relazioni.",
+      "example": "Due dirigenti dello stesso progetto nella stessa sede sono un possibile controesempio.",
+      "formulas": [],
+      "connections": [
+        "§6.11.2: la sintesi 3NF preserva le FD e può assicurare lossless join."
+      ],
+      "mistakes": "Non dire che la decomposizione rende falso il vincolo: diventa non imponibile solo tramite le FD locali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.10, pagina PDF 86"
+    },
+    {
+      "id": "si-c06-q084",
+      "topicId": "si-c06-t12",
+      "question": "Quale garanzia offre l’algoritmo di sintesi 3NF rispetto a lossless e conservazione?",
+      "answer": "Per un problema espresso con dipendenze funzionali, può costruire una decomposizione in 3NF che sia senza perdita e conservi le FD.",
+      "detail": "La procedura parte dalla cover minimale e include una relazione contenente una chiave candidata se necessario.",
+      "example": "La sintesi 3NF del manuale genera AB, BC, CDE, AD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire automaticamente questa garanzia a qualunque procedura BCNF.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.10, pagina PDF 86"
+    },
+    {
+      "id": "si-c06-q085",
+      "topicId": "si-c06-t13",
+      "question": "Qual è il primo passo dell’algoritmo di decomposizione in BCNF?",
+      "answer": "Partire dallo schema R e individuare una relazione che viola BCNF insieme a una FD non banale X → Y il cui determinante X non è superchiave.",
+      "detail": "La scelta della FD guida la separazione; può essere necessario ripetere il procedimento su più schemi.",
+      "example": "In R(P,D,S), D → S viola BCNF.",
+      "formulas": [],
+      "connections": [
+        "§6.9: ogni passo BCNF utilizza il criterio del join senza perdita."
+      ],
+      "mistakes": "Non iniziare a spezzare tabelle senza una violazione dimostrata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.1, pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q086",
+      "topicId": "si-c06-t13",
+      "question": "Quali due sottoschemi vengono prodotti da una violazione X → Y nell’algoritmo BCNF?",
+      "answer": "S1 = X ∪ Y; S2 = S − (Y − X), mantenendo X in entrambe le relazioni.",
+      "detail": "La formula evita di eliminare dalla seconda relazione eventuali attributi che appartengono anche a X.",
+      "example": "Da R(A,B,C), A → B: S1(A,B) e S2(A,C).",
+      "formulas": [
+        {
+          "latex": "S_1=X\\cup Y,\\qquad S_2=S\\setminus(Y\\setminus X)",
+          "meaning": "Schema generico di decomposizione BCNF"
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non sottrarre indiscriminatamente tutto Y quando X e Y si sovrappongono.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.1, pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q087",
+      "topicId": "si-c06-t13",
+      "question": "Perché ogni passo della decomposizione BCNF conserva il lossless join?",
+      "answer": "Perché i due sottoschemi condividono il determinante X, che per la FD scelta determina almeno il primo sottoschema X ∪ Y.",
+      "detail": "Il criterio della decomposizione binaria senza perdita è quindi soddisfatto.",
+      "example": "R(ABC), A → B, AB e AC: A determina AB.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre dalla garanzia lossless anche la conservazione di tutte le FD.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.1, pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q088",
+      "topicId": "si-c06-t13",
+      "question": "Perché la decomposizione BCNF può richiedere più iterazioni?",
+      "answer": "Perché le relazioni risultanti possono ancora contenere FD non banali con determinante non superchiave; bisogna ripetere fino alla BCNF di ogni componente.",
+      "detail": "Un singolo passo risolve una violazione scelta, non necessariamente tutte le altre.",
+      "example": "Dopo aver separato un attributo, verificare le FD proiettate di entrambi i sottoschemi.",
+      "formulas": [],
+      "connections": [
+        "§6.9: ogni passo BCNF utilizza il criterio del join senza perdita."
+      ],
+      "mistakes": "Non dichiarare l’algoritmo concluso appena compare una prima coppia di tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.1, pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q089",
+      "topicId": "si-c06-t13",
+      "question": "Qual è il controllo finale indispensabile dopo la decomposizione BCNF?",
+      "answer": "Verificare separatamente la conservazione delle dipendenze originali, perché non è una proprietà automaticamente garantita.",
+      "detail": "La procedura assicura il lossless ma può complicare il controllo di alcune FD.",
+      "example": "DS e PD sono in BCNF ma non preservano localmente PS → D.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non valutare lo schema solo in base al nome della forma normale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.1, pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q090",
+      "topicId": "si-c06-t13",
+      "question": "Quale precisazione fa il manuale sulla formula sintetica R − Y?",
+      "answer": "È una scorciatoia valida soltanto quando X e Y non si sovrappongono; nel caso generale va usato R − (Y − X).",
+      "detail": "Gli attributi condivisi con X devono rimanere nella relazione contenente il determinante.",
+      "example": "S1 = X∪Y e S2 = R−(Y−X).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cancellare attributi del determinante presenti anche nel RHS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.1, pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q091",
+      "topicId": "si-c06-t14",
+      "question": "Qual è lo scopo della sintesi in terza forma normale?",
+      "answer": "Costruire, a partire dalle FD, uno schema in 3NF che conservi le dipendenze e possa essere reso senza perdita.",
+      "detail": "Il percorso inizia con la copertura minima delle FD.",
+      "example": "Il manuale costruisce AB, BC, CDE e aggiunge AD.",
+      "formulas": [],
+      "connections": [
+        "§6.5: la cover minimale è il punto di partenza della sintesi."
+      ],
+      "mistakes": "Non equiparare la sintesi 3NF alla decomposizione BCNF.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.2, pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q092",
+      "topicId": "si-c06-t14",
+      "question": "Qual è la prima operazione dell’algoritmo classico di sintesi 3NF?",
+      "answer": "Calcolare una copertura minimale o canonica equivalente delle FD.",
+      "detail": "Questo evita di creare relazioni ridondanti per FD già implicate o determinanti con attributi superflui.",
+      "example": "A → BC può essere prima scomposta e poi riunita secondo un criterio coerente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non generare tabelle da un insieme arbitrario di FD senza analizzarne la ridondanza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.2, pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q093",
+      "topicId": "si-c06-t14",
+      "question": "Come si creano le relazioni nell’algoritmo di sintesi 3NF?",
+      "answer": "Per ogni FD X → A della copertura minimale si genera uno schema che contenga X ∪ {A}; si possono aggregare FD con lo stesso X.",
+      "detail": "Si rimuovono eventuali schemi interamente contenuti in altri già generati.",
+      "example": "A → B produce AB; CD → E produce CDE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare una relazione separata per ogni attributo senza tener conto di X.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.2, pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q094",
+      "topicId": "si-c06-t14",
+      "question": "Perché si elimina una relazione contenuta interamente in un’altra durante la sintesi?",
+      "answer": "Per evitare un sottoschema superfluo la cui informazione e i cui attributi sono già rappresentati da una relazione più ampia generata dall’algoritmo.",
+      "detail": "L’eliminazione va fatta entro la procedura con le sue garanzie, non come cancellazione arbitraria di fatti.",
+      "example": "Una relazione AB è contenuta in ABC, a parità di scopo della sintesi.",
+      "formulas": [],
+      "connections": [
+        "§6.5: la cover minimale è il punto di partenza della sintesi."
+      ],
+      "mistakes": "Non eliminare una relazione indispensabile soltanto perché condivide qualche attributo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.2, pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q095",
+      "topicId": "si-c06-t14",
+      "question": "Quando si deve aggiungere una relazione contenente una chiave candidata nella sintesi 3NF?",
+      "answer": "Quando nessuno degli schemi generati contiene interamente una chiave candidata della relazione originale.",
+      "detail": "Il passaggio assicura la proprietà di ricostruzione senza perdita della sintesi.",
+      "example": "Nel caso R(ABCDE), la chiave AD non è inclusa in AB, BC o CDE: si aggiunge AD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere il controllo sulla presenza di una chiave.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.2, pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q096",
+      "topicId": "si-c06-t14",
+      "question": "Quali sono le FD di partenza dell’esercizio 5 sulla sintesi 3NF?",
+      "answer": "R(A,B,C,D,E), F={A → B, B → C, CD → E}.",
+      "detail": "Le FD costituiscono già una cover minimale per il caso didattico.",
+      "example": "Il determinante CD deve includere sia C sia D.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare FD D → E o C → E.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.2 (esercizio 5), pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q097",
+      "topicId": "si-c06-t14",
+      "question": "Quali sono i primi tre sottoschemi generati nell’esercizio 5?",
+      "answer": "AB, BC e CDE, uno per ogni FD della cover minimale.",
+      "detail": "Nessuno di essi contiene la chiave candidata AD della relazione originaria.",
+      "example": "AB per A → B, BC per B → C, CDE per CD → E.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire chiavi originali all’insieme dei sottoschemi senza verificarlo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.2 (esercizio 5), pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q098",
+      "topicId": "si-c06-t14",
+      "question": "Come si dimostra che AD è chiave candidata nell’esercizio 5?",
+      "answer": "A e D non compaiono a destra di alcuna FD, quindi sono entrambi necessari; (AD)⁺ = {A,D,B,C,E} e la coppia è minimale.",
+      "detail": "A aggiunge B, B aggiunge C e CD aggiunge E.",
+      "example": "AD⁺=ABCDE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire AD con A da solo: D non è ricavabile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.2 (esercizio 5), pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q099",
+      "topicId": "si-c06-t14",
+      "question": "Qual è il risultato finale verificato della sintesi 3NF dell’esercizio 5?",
+      "answer": "R1(A,B), R2(B,C), R3(C,D,E), R4(A,D).",
+      "detail": "La decomposizione è in 3NF, preserva le FD e contiene una relazione con chiave candidata per il lossless join.",
+      "example": "AB, BC, CDE, AD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare lossless per il solo fatto che tutte le colonne compaiano da qualche parte.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.11.2 (esercizio 5), pagina PDF 87"
+    },
+    {
+      "id": "si-c06-q100",
+      "topicId": "si-c06-t15",
+      "question": "Quali informazioni mescola la grande relazione PRESTITO_LIBRARIO delle slide?",
+      "answer": "Dati anagrafici degli studenti, corsi di studio, copie fisiche dei libri, informazioni bibliografiche delle opere e singoli prestiti.",
+      "detail": "Gli oggetti hanno identità e FD differenti: mantenerli in un’unica tabella produce ridondanze e anomalie.",
+      "example": "Matricola, id_cds, collocazione fisica, ISBN, istante del prestito.",
+      "formulas": [],
+      "connections": [
+        "§6.2: gli attributi temporali possono modificare le dipendenze funzionali."
+      ],
+      "mistakes": "Non confondere un esemplare fisico con un’opera bibliografica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.12, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q101",
+      "topicId": "si-c06-t15",
+      "question": "Quale FD riguarda la matricola nel caso PRESTITO_LIBRARIO?",
+      "answer": "Matricola determina dati anagrafici dello studente e id_cds nel modello semplificato del docente.",
+      "detail": "È una fotografia temporale: se il corso può cambiare nel tempo, la FD va riesaminata per i dati storici.",
+      "example": "Matricola → CF, nome, cognome, email, id_cds, ecc.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare come universale la permanenza dello stesso corso di studi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.12, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q102",
+      "topicId": "si-c06-t15",
+      "question": "Quale FD riguarda il corso di studi nel caso della biblioteca?",
+      "answer": "id_cds → nome_cds, tipo_cds.",
+      "detail": "Il codice identifica la descrizione e il tipo del corso nella situazione modellata.",
+      "example": "CORSO_STUDI(id_cds,nome_cds,tipo_cds).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ripetere nome e tipologia del corso su ogni prestito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.12, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q103",
+      "topicId": "si-c06-t15",
+      "question": "Quale FD collega collocazione fisica e ISBN nel caso PRESTITO_LIBRARIO?",
+      "answer": "(armadio,scaffale,ordine/posizione) → codice_ISBN, secondo la collocazione stabile descritta nelle slide.",
+      "detail": "La posizione fisica identifica una copia nella semplificazione adottata; può cambiare nel tempo in altri domini.",
+      "example": "COPIA(armadio,scaffale,posizione,ISBN).",
+      "formulas": [],
+      "connections": [
+        "Capitolo 2: un evento ripetibile richiede un identificatore adeguato."
+      ],
+      "mistakes": "Non assumere che un ISBN identifichi una sola copia fisica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.12, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q104",
+      "topicId": "si-c06-t15",
+      "question": "Quale FD riguarda l’ISBN e quale limite va ricordato?",
+      "answer": "ISBN → titolo_libro, autore_libro, anno_edizione nella semplificazione delle slide.",
+      "detail": "ISBN identifica l’edizione, non necessariamente una singola copia; la possibilità di più autori richiederebbe una modellazione distinta.",
+      "example": "LIBRO(ISBN,titolo,autore,anno_edizione).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare il caso didattico in un vincolo generale «un libro ha sempre un solo autore».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.12, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q105",
+      "topicId": "si-c06-t15",
+      "question": "Quale FD rappresenta l’unicità del beneficiario di un prestito al suo inizio?",
+      "answer": "(Collocazione,DataPrestito,OraPrestito) → Matricola, assumendo un solo studente per specifica copia in un determinato istante.",
+      "detail": "La collocazione riunisce armadio, scaffale e posizione; l’istante distingue prestiti ripetuti della stessa copia.",
+      "example": "Una copia può essere prestata a persone differenti in periodi successivi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare la sola collocazione come identificatore di tutte le occorrenze PRESTITO.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.12, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q106",
+      "topicId": "si-c06-t15",
+      "question": "Qual è la decomposizione proposta per PRESTITO_LIBRARIO?",
+      "answer": "STUDENTE(matricola, dati anagrafici, id_cds), CORSO_STUDI(id_cds,nome_cds,tipo_cds), COPIA(armadio,scaffale,posizione,ISBN), LIBRO(ISBN, dati bibliografici), PRESTITO(matricola, collocazione, data/ora prestito e restituzione).",
+      "detail": "La scomposizione segue i determinanti dei fatti e distingue copia e singolo evento di prestito.",
+      "example": "Il prestito si collega alla matricola e alla copia fisica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non mantenere dati del corso e del libro ripetuti nel record di prestito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.12, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q107",
+      "topicId": "si-c06-t15",
+      "question": "Perché la chiave della tabella PRESTITO non coincide semplicemente con la collocazione?",
+      "answer": "Perché lo stesso esemplare può essere prestato più volte nel tempo: bisogna distinguere le occorrenze attraverso data/ora o un identificatore di evento.",
+      "detail": "Nelle slide si usa la collocazione con l’istante, mentre un progetto reale potrebbe introdurre id_prestito.",
+      "example": "Due prestiti della stessa copia in due mesi diversi sono eventi distinti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che un id_prestito garantisca da solo l’assenza di prestiti simultanei incompatibili.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.12, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q108",
+      "topicId": "si-c06-t15",
+      "question": "Quale controllo resta necessario anche aggiungendo un id_prestito univoco?",
+      "answer": "Impedire che la stessa copia risulti assegnata a prestiti temporalmente incompatibili, secondo le regole del dominio.",
+      "detail": "Un identificatore univoco garantisce l’unicità delle righe, non tutte le business rules sui periodi.",
+      "example": "Due record con ID distinti possono sovrapporsi nel periodo per la stessa copia.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere integrità della chiave con integrità dei vincoli temporali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.12, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q109",
+      "topicId": "si-c06-t15",
+      "question": "Quali ipotesi temporali e semantiche devono essere dichiarate nel caso della biblioteca?",
+      "answer": "Possibile cambio di corso dello studente, variabilità della collocazione della copia, pluralità di autori e ripetizione dei prestiti.",
+      "detail": "Le FD del docente descrivono un modello semplificato e non devono essere estese fuori dalle sue ipotesi senza verifica.",
+      "example": "Per storia completa può servire l’identificatore dell’evento e una validità temporale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare gli esempi come vincoli necessariamente veri per ogni biblioteca reale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.12, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q110",
+      "topicId": "si-c06-t16",
+      "question": "Quali benefici produce uno schema normalizzato sulla gestione dei dati?",
+      "answer": "Riduce anomalie di inserimento, aggiornamento e cancellazione, e rende più coerente il luogo in cui ogni fatto viene conservato e verificato.",
+      "detail": "La qualità dipende dalle FD e dai vincoli, non solo dal numero di join.",
+      "example": "Cambiare il nome di un segmento una volta nella tabella SEGMENTO.",
+      "formulas": [],
+      "connections": [
+        "§6.14: nel caso EnerPrice uno snapshot può avere una finalità storica."
+      ],
+      "mistakes": "Non promettere che la normalizzazione elimini automaticamente ogni anomalia possibile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.13, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q111",
+      "topicId": "si-c06-t16",
+      "question": "Quale possibile costo prestazionale comporta la normalizzazione?",
+      "answer": "Alcune interrogazioni devono ricostruire i dati mediante più join, con possibile costo di lettura e di esecuzione sul carico reale.",
+      "detail": "Il costo va misurato con dati e workload effettivi, senza trasformare il numero di tabelle in un giudizio assoluto.",
+      "example": "Per visualizzare nome offerta e segmento possono servire join tra SCENARIO, OFFERTA e SEGMENTO.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che ogni join sia necessariamente lento o evitabile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.13, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q112",
+      "topicId": "si-c06-t16",
+      "question": "Che cos’è una denormalizzazione controllata e quali rischi comporta?",
+      "answer": "È l’introduzione consapevole di dati ridondanti per soddisfare esigenze misurate, con regole esplicite di aggiornamento e verifica.",
+      "detail": "Può ridurre certe letture, ma moltiplica i punti di possibile incoerenza.",
+      "example": "Conservare un aggregato per dashboard frequentemente consultata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare «ottimizzazione» una copia non governata di dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.13, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q113",
+      "topicId": "si-c06-t16",
+      "question": "Qual è la differenza tra normalizzazione e snapshot storico?",
+      "answer": "La normalizzazione distribuisce fatti secondo le loro dipendenze; uno snapshot conserva intenzionalmente una fotografia di dati e risultati a un momento determinato.",
+      "detail": "Lo snapshot può mantenere valori non più derivabili dal listino corrente, per esigenze di audit o riproducibilità.",
+      "example": "Scenario commerciale approvato con prezzi e KPI dell’epoca.",
+      "formulas": [],
+      "connections": [
+        "Capitolo 3: il trade-off fra spazio e costo operativo può motivare ridondanze controllate."
+      ],
+      "mistakes": "Non aggiornare retroattivamente uno snapshot storico usando i valori correnti senza una regola esplicita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.13, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q114",
+      "topicId": "si-c06-t16",
+      "question": "Come si differenziano vista e vista materializzata nel compromesso prestazionale?",
+      "answer": "Una vista descrive una logica di interrogazione; una vista materializzata conserva il risultato aggiornandolo secondo una politica di refresh, facilitando alcune letture.",
+      "detail": "La seconda richiede storage, manutenzione e gestione della freschezza dei dati.",
+      "example": "Un riepilogo della marginalità può essere consultato come vista o precalcolato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un dato materializzato con una fonte sempre aggiornata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.13, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q115",
+      "topicId": "si-c06-t16",
+      "question": "In che senso le functional dependencies delle statistiche PostgreSQL sono diverse dalle FD della normalizzazione?",
+      "answer": "Le statistiche estese del planner descrivono relazioni osservate nei dati per stimare la selettività delle query; le FD della normalizzazione sono vincoli logici del dominio.",
+      "detail": "Le statistiche non equivalgono a un CHECK o una FOREIGN KEY che impongano una regola tra tuple.",
+      "example": "Il planner usa statistiche per scegliere piani; il progettista usa FD per validare uno schema.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la presenza di statistiche come prova della validità universale di una FD.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.13, pagina PDF 88"
+    },
+    {
+      "id": "si-c06-q116",
+      "topicId": "si-c06-t17",
+      "question": "Che tipo di fonte è il caso EnerPrice del Capitolo 6?",
+      "answer": "È un’applicazione didattica originale del manuale, distinta dalle slide del docente e non equivalente allo schema definitivo del progetto.",
+      "detail": "I nomi di entità, le FD e gli attributi sono ipotesi per imparare la normalizzazione.",
+      "example": "SIMULAZIONE_MISTA è una relazione inventata per l’esercizio.",
+      "formulas": [],
+      "connections": [
+        "§6.7: le FD transitive generano violazioni della 3NF."
+      ],
+      "mistakes": "Non presentare il caso come descrizione di un sistema aziendale reale o già implementato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.14, pagina PDF 89"
+    },
+    {
+      "id": "si-c06-q117",
+      "topicId": "si-c06-t17",
+      "question": "Quali attributi contiene la relazione di partenza SIMULAZIONE_MISTA?",
+      "answer": "simulazione_id, offerta_id, nome_offerta, segmento_id, nome_segmento, prezzo_unitario, consumo_annuo, costo_unitario_approvv, margine_previsionale.",
+      "detail": "Mescola anagrafica dell’offerta e del segmento con ipotesi e risultati della singola simulazione.",
+      "example": "Una stessa offerta può essere valutata tramite più simulazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente il margine al catalogo dell’offerta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.14, pagina PDF 89"
+    },
+    {
+      "id": "si-c06-q118",
+      "topicId": "si-c06-t17",
+      "question": "Quali FD ipotetiche sono dichiarate nel caso EnerPrice?",
+      "answer": "simulazione_id → offerta_id, consumo_annuo, costo_unitario_approvv; offerta_id → nome_offerta, segmento_id, prezzo_unitario; segmento_id → nome_segmento.",
+      "detail": "Ogni FD dipende dall’ipotesi che un ID identifichi univocamente il rispettivo elemento.",
+      "example": "Il nome_segmento dipende dall’identità del segmento, non da quella della simulazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inferire altre FD senza che siano dichiarate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.14, pagina PDF 89"
+    },
+    {
+      "id": "si-c06-q119",
+      "topicId": "si-c06-t17",
+      "question": "Qual è la chiave candidata della relazione mista nel caso EnerPrice?",
+      "answer": "simulazione_id, nell’ipotesi didattica che identifichi univocamente lo scenario e ne determini tutti i dati della riga.",
+      "detail": "Il risultato dipende dalla granularità dello scenario; nel sistema reale potrebbe servire un modello più articolato.",
+      "example": "simulazione_id determina offerta_id e i dati delle altre entità per transitività.",
+      "formulas": [],
+      "connections": [
+        "§6.13: lo snapshot è distinto dalla ridondanza accidentale."
+      ],
+      "mistakes": "Non elevare questa chiave didattica a vincolo definitivo del progetto EnerPrice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.14, pagina PDF 89"
+    },
+    {
+      "id": "si-c06-q120",
+      "topicId": "si-c06-t17",
+      "question": "Perché offerta_id → nome_offerta e segmento_id viola la 3NF di SIMULAZIONE_MISTA?",
+      "answer": "Perché offerta_id non è superchiave della relazione mista e gli attributi determinati sono non primi.",
+      "detail": "Analogamente segmento_id → nome_segmento introduce una dipendenza transitiva.",
+      "example": "simulazione_id → offerta_id → segmento_id → nome_segmento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’ID di una entità anagrafica con la chiave della relazione di simulazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.14, pagina PDF 89"
+    },
+    {
+      "id": "si-c06-q121",
+      "topicId": "si-c06-t17",
+      "question": "Quale decomposizione normalizzata propone il manuale per EnerPrice?",
+      "answer": "SEGMENTO(segmento_id,nome_segmento), OFFERTA(offerta_id,nome_offerta,segmento_id,prezzo_unitario), SCENARIO(simulazione_id,offerta_id,consumo_annuo,costo_unitario_approvv).",
+      "detail": "La separazione mantiene anagrafiche e scenari distinti.",
+      "example": "SCENARIO contiene i riferimenti all’offerta e i parametri della simulazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non replicare nome_segmento e nome_offerta dentro ogni riga scenario.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.14, pagina PDF 89"
+    },
+    {
+      "id": "si-c06-q122",
+      "topicId": "si-c06-t17",
+      "question": "Perché il margine_previsionale può essere trattato come attributo derivato nell’esempio?",
+      "answer": "Perché, se esiste una formula dichiarata e gli input necessari sono disponibili, può essere ricalcolato in fase applicativa o di query.",
+      "detail": "Il manuale non fornisce una formula aziendale unica: la derivazione è subordinata alla definizione del modello economico.",
+      "example": "Prezzo, consumo e costo ipotetico contribuiscono al calcolo del risultato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare formule di margine non presenti nel manuale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.14, pagina PDF 89"
+    },
+    {
+      "id": "si-c06-q123",
+      "topicId": "si-c06-t17",
+      "question": "Quando potrebbe essere opportuno conservare il margine o i parametri di una simulazione approvata come snapshot?",
+      "answer": "Quando il requisito richiede di riprodurre in futuro esattamente le condizioni e i risultati economici approvati, anche se listini e dati correnti cambiano.",
+      "detail": "È ridondanza intenzionale da governare, distinta dal catalogo normalizzato.",
+      "example": "Una simulazione approvata il mese scorso deve restare confrontabile con i parametri storici.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non aggiornare lo storico con il catalogo nuovo facendo perdere la fotografia precedente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.14, pagina PDF 89"
+    },
+    {
+      "id": "si-c06-q124",
+      "topicId": "si-c06-t18",
+      "question": "Qual è il primo controllo da fare in un esercizio di normalizzazione?",
+      "answer": "Riscrivere schema e FD senza ambiguità, dichiarando eventuali ipotesi sul dominio prima di calcolare chiavi o forme normali.",
+      "detail": "La correttezza di tutto il seguito dipende dai vincoli realmente assunti.",
+      "example": "Una FD Impiegato → Stipendio può cessare di valere nello storico.",
+      "formulas": [],
+      "connections": [
+        "§6.9–6.10: lossless join e preservazione vanno giustificati separatamente."
+      ],
+      "mistakes": "Non dedurre vincoli universali da un piccolo esempio di tuple.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.15, pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q125",
+      "topicId": "si-c06-t18",
+      "question": "Perché occorre trovare tutte le chiavi candidate prima di decidere se R è in 3NF?",
+      "answer": "Perché la 3NF dipende dagli attributi primi, definiti dall’appartenenza ad almeno una chiave candidata.",
+      "detail": "Scegliere soltanto la PK può produrre un giudizio sbagliato sulla 3NF.",
+      "example": "Nel caso PS e PD, S è primo anche se la PK selezionata fosse PD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare gli attributi in primi/non primi guardando solo una chiave.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.15, pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q126",
+      "topicId": "si-c06-t18",
+      "question": "Quale forma minima deve avere la motivazione di una violazione di forma normale?",
+      "answer": "Indicare una FD concreta X → A, la chiave o le chiavi rilevanti e quale condizione della forma normale viene violata.",
+      "detail": "Per 2NF: dipendenza parziale verso non primo; per 3NF: X non superchiave e A non primo; per BCNF: X non superchiave.",
+      "example": "D → S viola BCNF perché D non è superchiave.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scrivere semplicemente «ci sono duplicati» come prova formale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.15, pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q127",
+      "topicId": "si-c06-t18",
+      "question": "Quali controlli sono richiesti dopo una decomposizione?",
+      "answer": "Elencare gli schemi e le FD proiettate, motivare le chiavi, provare lossless join, verificare preservazione delle FD e valutare le conseguenze operative.",
+      "detail": "Le due prove di correttezza sono indipendenti.",
+      "example": "Per AB, AC sotto A → B: lossless; per A → B e B → C: AB, AC non preserving.",
+      "formulas": [],
+      "connections": [
+        "§6.9–6.10: lossless join e preservazione vanno giustificati separatamente."
+      ],
+      "mistakes": "Non fermarsi alla lista dei nomi delle tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.15, pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q128",
+      "topicId": "si-c06-t18",
+      "question": "Quali errori sono più frequenti nel riconoscimento delle chiavi?",
+      "answer": "Dedurre le FD dal campione, controllare solo la PK e dimenticare di verificare la minimalità delle superchiavi.",
+      "detail": "Le chiusure degli insiemi di attributi forniscono una prova riproducibile.",
+      "example": "AB⁺=R non basta per dire candidata se A⁺=R.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non saltare i sottoinsiemi propri.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.15, pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q129",
+      "topicId": "si-c06-t18",
+      "question": "Perché «3NF significa assenza di dipendenze transitive» è un criterio potenzialmente fuorviante?",
+      "answer": "Perché esistono FD con determinante non superchiave e lato destro primo ammesse dalla definizione formale di 3NF.",
+      "detail": "La scorciatoia funziona in molti casi con una sola chiave, ma non sostituisce la condizione generale.",
+      "example": "Il caso DS/PS del docente è in 3NF ma non BCNF.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare un risultato senza testare la regola X superchiave oppure RHS primo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.15, pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q130",
+      "topicId": "si-c06-t18",
+      "question": "Qual è il criterio corretto per confrontare proposte di normalizzazione all’esame?",
+      "answer": "Verificare integrità logica, anomalie ridotte, capacità di imporre i vincoli, lossless join, conservazione FD e costo delle interrogazioni.",
+      "detail": "Non esiste una scelta automaticamente migliore in ogni carico e requisito.",
+      "example": "La BCNF riduce anomalie ma può richiedere un controllo di vincoli tra più tabelle.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non valutare solo il numero delle relazioni o dei join.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.15, pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q131",
+      "topicId": "si-c06-t19",
+      "question": "Esercizio 6: da A → B si può dedurre B → A?",
+      "answer": "No: una FD non è in generale simmetrica; per dimostrare il contrario basta un’istanza che rispetti A → B ma violi B → A.",
+      "detail": "Il controesempio deve mantenere valori diversi di A con uno stesso B.",
+      "example": "R(A,B,C) con tuple (1,7,x) e (2,7,y): A → B è rispettata, B → A no.",
+      "formulas": [],
+      "connections": [
+        "§6.6–6.8: gli esercizi applicano in sequenza 2NF, 3NF e BCNF."
+      ],
+      "mistakes": "Non confondere dipendenza funzionale con equivalenza biunivoca.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 6), pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q132",
+      "topicId": "si-c06-t19",
+      "question": "Esercizio 6: perché le due tuple del controesempio soddisfano A → B?",
+      "answer": "Perché hanno valori di A diversi; la FD impone uguaglianza di B solo quando A è uguale.",
+      "detail": "Un vincolo condizionale può essere rispettato senza che in un campione esistano tuple con identico determinante.",
+      "example": "(1,7,x) e (2,7,y).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare la premessa A uguale a due tuple che hanno A differente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 6), pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q133",
+      "topicId": "si-c06-t19",
+      "question": "Esercizio 6: come si dimostra in generale che una FD non è implicata da F?",
+      "answer": "Costruendo almeno una relazione lecita rispetto a F nella quale la FD proposta risulta falsa.",
+      "detail": "Per smentire una conseguenza universale basta un controesempio concreto coerente con le premesse.",
+      "example": "F={A → B}; due righe con stesso B e A diverso confutano B → A.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare la sola mancata derivazione intuitiva una prova tanto chiara quanto il controesempio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 6), pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q134",
+      "topicId": "si-c06-t19",
+      "question": "Esercizio 7: quali sono schema, FD e chiave candidata?",
+      "answer": "R(Ordine,Articolo,Cliente,Descrizione,Quantità), F={Ordine → Cliente, Articolo → Descrizione, (Ordine,Articolo) → Quantità}; la chiave candidata è (Ordine,Articolo).",
+      "detail": "La coppia determina Quantità e, tramite le singole componenti, Cliente e Descrizione.",
+      "example": "Ordine da solo non determina Articolo, né viceversa.",
+      "formulas": [],
+      "connections": [
+        "§6.6–6.8: gli esercizi applicano in sequenza 2NF, 3NF e BCNF."
+      ],
+      "mistakes": "Non usare Ordine come chiave di una tabella con più articoli per ordine.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 7), pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q135",
+      "topicId": "si-c06-t19",
+      "question": "Esercizio 7: quale violazione di 2NF si verifica?",
+      "answer": "Cliente dipende solo da Ordine e Descrizione solo da Articolo, entrambi sottoinsiemi propri della chiave composta.",
+      "detail": "Quantità è invece associata alla riga identificata da entrambi gli attributi.",
+      "example": "Le FD parziali riguardano attributi non primi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non accusare ogni attributo della stessa tabella di dipendenza parziale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 7), pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q136",
+      "topicId": "si-c06-t19",
+      "question": "Esercizio 7: quale soluzione di decomposizione è verificata?",
+      "answer": "ORDINE(Ordine,Cliente), ARTICOLO(Articolo,Descrizione), RIGA(Ordine,Articolo,Quantità).",
+      "detail": "Le FD vengono conservate localmente e i collegamenti attraverso le chiavi permettono di ricostruire la riga.",
+      "example": "La tabella RIGA contiene la quantità della specifica coppia.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non conservare Cliente e Descrizione ripetuti nella RIGA.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 7), pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q137",
+      "topicId": "si-c06-t19",
+      "question": "Esercizio 8: quali FD sono date per la relazione scuola?",
+      "answer": "R(Studente,Corso,Docente,Aula), F={(Studente,Corso) → Docente, Docente → Aula}.",
+      "detail": "Una coppia studente-corso determina il docente e quindi, per transitività, l’aula.",
+      "example": "(Studente,Corso) è chiave candidata del modello semplificato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre una FD autonoma Studente → Corso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 8), pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q138",
+      "topicId": "si-c06-t19",
+      "question": "Esercizio 8: perché Docente → Aula viola la 3NF?",
+      "answer": "Docente non è superchiave di R e Aula non è un attributo primo.",
+      "detail": "La relazione soddisfa il nesso transitorio (Studente,Corso) → Docente → Aula.",
+      "example": "La FD Docente → Aula non soddisfa né condizione formale della 3NF.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che Docente è chiave solo perché determina Aula.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 8), pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q139",
+      "topicId": "si-c06-t19",
+      "question": "Esercizio 8: come si decompone la relazione scuola e perché il join è lossless?",
+      "answer": "ISCRIZIONE(Studente,Corso,Docente) e DOCENTE_AULA(Docente,Aula); l’intersezione Docente determina tutta DOCENTE_AULA.",
+      "detail": "Entrambe le FD originarie restano controllabili nelle nuove relazioni.",
+      "example": "Docente → Aula vale nella seconda tabella.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere Docente da ISCRIZIONE: è il collegamento necessario.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 8), pagina PDF 90"
+    },
+    {
+      "id": "si-c06-q140",
+      "topicId": "si-c06-t19",
+      "question": "Esercizio 9: quali FD e chiavi candidate caratterizzano R(P,D,S)?",
+      "answer": "F={D → S, PS → D}; le chiavi candidate sono PS e PD.",
+      "detail": "P=Progetto, D=Dirigente, S=Sede; da PD segue S, e PS determina D.",
+      "example": "PS⁺=PDS e PD⁺=PDS.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non includere D da solo tra le chiavi candidate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 9), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q141",
+      "topicId": "si-c06-t19",
+      "question": "Esercizio 9: perché la relazione è in 3NF ma non in BCNF?",
+      "answer": "Tutti gli attributi sono primi, quindi D → S è ammessa dalla 3NF; D non è però superchiave, quindi la FD viola BCNF.",
+      "detail": "È il controesempio classico all’equivalenza fra 3NF e BCNF.",
+      "example": "Le chiavi PS e PD comprendono complessivamente P,D,S.",
+      "formulas": [],
+      "connections": [
+        "§6.7: RHS primo è ammesso dalla 3NF.",
+        "§6.8: la BCNF richiede X superchiave."
+      ],
+      "mistakes": "Non valutare la 3NF soltanto con il criterio «determinante sempre chiave».",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 9), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q142",
+      "topicId": "si-c06-t19",
+      "question": "Esercizio 9: quale decomposizione BCNF è lossless?",
+      "answer": "DS(Dirigente,Sede) e PD(Progetto,Dirigente), con intersezione D che determina DS.",
+      "detail": "D → S garantisce lossless.",
+      "example": "R=PDS → DS+PD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere l’intersezione di attributi con l’intersezione di tuple.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 9), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q143",
+      "topicId": "si-c06-t19",
+      "question": "Esercizio 9: qual è il prezzo in termini di dipendenze preservate?",
+      "answer": "PS → D non è preservata dalle sole FD locali di DS e PD.",
+      "detail": "Anche se il join è lossless, il controllo del vincolo PS → D non è ottenibile verificando una sola tabella.",
+      "example": "È possibile dover controllare tramite join associazioni progetto–sede e dirigente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che ogni decomposizione BCNF sia dependency-preserving.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 9), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q144",
+      "topicId": "si-c06-t20",
+      "question": "Esercizio 10: quali sono le quattro tuple iniziali di Impiegato–Progetto–Sede?",
+      "answer": "(Verdi,Giove,Milano), (Verdi,Venere,Milano), (Neri,Saturno,Milano), (Neri,Venere,Milano).",
+      "detail": "Tutti i progetti e impiegati dell’esempio sono associati alla stessa sede.",
+      "example": "Il join si svolge sul valore Milano.",
+      "formulas": [],
+      "connections": [
+        "§6.9–6.11: dagli esempi con tuple spurie si arriva alla sintesi 3NF."
+      ],
+      "mistakes": "Non aggiungere righe al dataset iniziale prima di valutare la decomposizione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 10), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q145",
+      "topicId": "si-c06-t20",
+      "question": "Esercizio 10: quali righe contengono le proiezioni IMPIEGATO_SEDE e PROGETTO_SEDE?",
+      "answer": "IMPIEGATO_SEDE={(Verdi,Milano),(Neri,Milano)}; PROGETTO_SEDE={(Giove,Milano),(Venere,Milano),(Saturno,Milano)}.",
+      "detail": "La semantica insiemistica elimina le ripetizioni delle stesse coppie.",
+      "example": "Due impiegati × tre progetti per la stessa sede.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non contare due volte la coppia Verdi–Milano perché Verdi aveva due partecipazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 10), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q146",
+      "topicId": "si-c06-t20",
+      "question": "Esercizio 10: quante tuple produce il join su Sede e quante sono spurie?",
+      "answer": "Produce 2 × 3 = 6 tuple, mentre la relazione iniziale ne aveva 4: le due aggiuntive sono spurie.",
+      "detail": "L’unico valore di sede condiviso consente ogni combinazione tra impiegati e progetti.",
+      "example": "Le tuple spurie sono (Verdi,Saturno,Milano) e (Neri,Giove,Milano).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare la perdita soltanto contando le righe, senza indicare quali associazioni sono false.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 10), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q147",
+      "topicId": "si-c06-t20",
+      "question": "Esercizio 10: quale conclusione si trae sulla decomposizione per Sede?",
+      "answer": "Non è lossless perché il join aggiunge associazioni che non esistevano nella relazione originale.",
+      "detail": "Sede non determina né impiegato né progetto.",
+      "example": "Il criterio dell’intersezione non è soddisfatto.",
+      "formulas": [],
+      "connections": [
+        "§6.9–6.11: dagli esempi con tuple spurie si arriva alla sintesi 3NF."
+      ],
+      "mistakes": "Non ritenere sufficiente che tutte le colonne originarie siano ancora presenti nelle proiezioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 10), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q148",
+      "topicId": "si-c06-t20",
+      "question": "Esercizio 11: quale decomposizione va analizzata e con quali FD?",
+      "answer": "R(A,B,C), F={A → B, B → C}, decomposta in AB e AC.",
+      "detail": "Occorre controllare distintamente lossless join e dependency preservation.",
+      "example": "Le tabelle condividono l’attributo A.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che conservare A → C per transitività equivalga a conservare anche B → C.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 11), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q149",
+      "topicId": "si-c06-t20",
+      "question": "Esercizio 11: perché AB e AC sono lossless?",
+      "answer": "Perché l’intersezione A determina AB grazie alla FD A → B.",
+      "detail": "La prima condizione binaria di ricostruzione senza perdita è verificata.",
+      "example": "A → AB per riflessività e A → B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non richiedere che A determini tutta R.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 11), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q150",
+      "topicId": "si-c06-t20",
+      "question": "Esercizio 11: perché AB e AC non preservano tutte le FD?",
+      "answer": "In AB si verifica A → B e in AC si può imporre A → C, ma dalle sole FD locali non segue B → C.",
+      "detail": "Due istanze localmente lecite possono unirsi violando B → C della relazione originaria.",
+      "example": "La FD B → C richiede una verifica incrociata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare la preservazione di A → C a quella di B → C.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 11), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q151",
+      "topicId": "si-c06-t20",
+      "question": "Esercizio 12: qual è il problema di sintesi 3NF assegnato?",
+      "answer": "R(A,B,C,D,E), F={A → B, B → C, CD → E}, con richiesta di ricostruire la sintesi.",
+      "detail": "La cover è già minimale secondo la traccia.",
+      "example": "Generare AB, BC e CDE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare che A determina D.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 12), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q152",
+      "topicId": "si-c06-t20",
+      "question": "Esercizio 12: quale chiave candidata occorre aggiungere e perché?",
+      "answer": "AD, perché A e D non compaiono nei lati destri, AD⁺ determina ABCDE e nessuno degli schemi iniziali contiene AD.",
+      "detail": "La relazione AD è aggiunta per soddisfare il requisito di perdita nulla della sintesi.",
+      "example": "AB, BC, CDE, AD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere AD perché le sole prime tre tabelle contengono comunque tutti i nomi degli attributi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 12), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q153",
+      "topicId": "si-c06-t20",
+      "question": "Esercizio 12: quali proprietà ha lo schema finale verificato?",
+      "answer": "È una sintesi 3NF lossless e dependency-preserving, con le relazioni AB, BC, CDE, AD.",
+      "detail": "Ogni FD ha un contesto locale e AD contiene una chiave candidata.",
+      "example": "A → B in AB; B → C in BC; CD → E in CDE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare BCNF il risultato senza controllarne le singole FD proiettate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 12), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q154",
+      "topicId": "si-c06-t20",
+      "question": "Esercizio 13: quale FD è superflua nell’insieme {A → B, B → C, A → C}?",
+      "answer": "A → C, perché segue per transitività dalle altre due dipendenze.",
+      "detail": "Eliminandola non cambia la chiusura dell’insieme.",
+      "example": "A → B → C.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non eliminare A → B oppure B → C, perché non sono implicate dalle due rimaste.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 13), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q155",
+      "topicId": "si-c06-t20",
+      "question": "Esercizio 13: qual è la cover equivalente e perché è utile?",
+      "answer": "{A → B, B → C}; descrive gli stessi vincoli senza ripetere una conseguenza già deducibile.",
+      "detail": "La copertura minima rende più semplice l’analisi dei vincoli e la sintesi.",
+      "example": "A⁺ contiene C anche senza scrivere A → C.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere una FD mancante nel testo della cover con una FD non più valida.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 13), pagina PDF 91"
+    },
+    {
+      "id": "si-c06-q156",
+      "topicId": "si-c06-t21",
+      "question": "Esercizio 14: perché una colonna telefoni che contiene più numeri in un’unica stringa è problematica?",
+      "answer": "I singoli telefoni non sono trattati come valori atomici quando il dominio richiede ricerche, aggiornamenti e caratteristiche per ogni numero.",
+      "detail": "È una violazione del modo in cui i dati devono essere utilizzati in 1NF.",
+      "example": "CONTATTO(id,nome,telefoni=\"333..., 080...\").",
+      "formulas": [],
+      "connections": [
+        "§6.6–6.7: valore multivalore, dipendenza parziale e transitiva sono problemi differenti."
+      ],
+      "mistakes": "Non considerare la virgola un sostituto della struttura relazionale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 14), pagina PDF 92"
+    },
+    {
+      "id": "si-c06-q157",
+      "topicId": "si-c06-t21",
+      "question": "Esercizio 14: quali due schemi propone il manuale?",
+      "answer": "CONTATTO(id,nome) e TELEFONO_CONTATTO(id_contatto,numero,tipo opzionale).",
+      "detail": "Si può usare la coppia (id_contatto,numero) come chiave se lo stesso numero non può apparire due volte per contatto, con FK verso CONTATTO.",
+      "example": "Un contatto ha più righe telefoniche.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affermare l’unicità globale di numero se non è richiesta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 14), pagina PDF 92"
+    },
+    {
+      "id": "si-c06-q158",
+      "topicId": "si-c06-t21",
+      "question": "Esercizio 14: quale vantaggio offre la normalizzazione dei telefoni?",
+      "answer": "Ogni numero si può cercare, modificare o classificare separatamente senza manipolare una lista testuale.",
+      "detail": "Si migliorano coerenza, validazione e flessibilità degli aggiornamenti.",
+      "example": "Tipo può distinguere cellulare e fisso nella singola riga.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre che ogni contatto debba avere obbligatoriamente almeno un telefono senza requisiti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 14), pagina PDF 92"
+    },
+    {
+      "id": "si-c06-q159",
+      "topicId": "si-c06-t21",
+      "question": "Esercizio 15: con R(A,B,C) e F={AB → C}, AB è chiave candidata?",
+      "answer": "Sì: AB⁺ = ABC, mentre A⁺ = A e B⁺ = B, quindi AB determina tutto ed è minimale.",
+      "detail": "Nessun lato sinistro proprio determina l’intero schema.",
+      "example": "AB è superchiave e chiave candidata.",
+      "formulas": [],
+      "connections": [
+        "§6.6–6.7: valore multivalore, dipendenza parziale e transitiva sono problemi differenti."
+      ],
+      "mistakes": "Non ritenere che A o B determinino C senza FD ulteriori.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 15), pagina PDF 92"
+    },
+    {
+      "id": "si-c06-q160",
+      "topicId": "si-c06-t21",
+      "question": "Esercizio 15: AB → C è piena o parziale rispetto ad AB?",
+      "answer": "È piena, perché eliminando A o B dal determinante C non risulta più ricavabile.",
+      "detail": "Non esistono sottoinsiemi propri di AB che determinino C.",
+      "example": "A⁺={A}, B⁺={B}, AB⁺=ABC.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la FD con una condizione parziale solo perché la chiave è composta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 15), pagina PDF 92"
+    },
+    {
+      "id": "si-c06-q161",
+      "topicId": "si-c06-t21",
+      "question": "Esercizio 15: quale forma normale raggiunge R rispetto a F?",
+      "answer": "BCNF, perché l’unica FD non banale considerata ha come determinante AB, che è superchiave.",
+      "detail": "Il manuale sottolinea la necessità di controllare tutte le FD implicate e le chiavi, non una singola osservazione empirica.",
+      "example": "R(A,B,C), F={AB → C}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare BCNF se esistono altre FD del dominio non incluse nel problema.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 15), pagina PDF 92"
+    },
+    {
+      "id": "si-c06-q162",
+      "topicId": "si-c06-t21",
+      "question": "Esercizio 16: quali informazioni mescola la relazione EnerPrice semplificata?",
+      "answer": "simulazione_id, offerta_id, nome_offerta, segmento_id, nome_segmento e consumo.",
+      "detail": "Raccoglie in una singola riga fatti di simulazione, offerta e segmento.",
+      "example": "Una stessa offerta può avere più simulazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare nome_offerta e nome_segmento fatti autonomi della singola simulazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 16), pagina PDF 92"
+    },
+    {
+      "id": "si-c06-q163",
+      "topicId": "si-c06-t21",
+      "question": "Esercizio 16: quali FD rendono la relazione EnerPrice non in 3NF?",
+      "answer": "simulazione_id → offerta_id,consumo; offerta_id → nome_offerta,segmento_id; segmento_id → nome_segmento. Le ultime due hanno determinanti non superchiave e RHS non primi.",
+      "detail": "simulazione_id è chiave candidata nella semplificazione dell’esercizio.",
+      "example": "simulazione_id → offerta_id → segmento_id → nome_segmento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere una chiave di catalogo con la chiave di simulazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 16), pagina PDF 92"
+    },
+    {
+      "id": "si-c06-q164",
+      "topicId": "si-c06-t21",
+      "question": "Esercizio 16: quale decomposizione elimina le dipendenze transitive?",
+      "answer": "SCENARIO(simulazione_id,offerta_id,consumo), OFFERTA(offerta_id,nome_offerta,segmento_id), SEGMENTO(segmento_id,nome_segmento).",
+      "detail": "Le FD sono rappresentate localmente e gli attributi comuni collegano le anagrafiche.",
+      "example": "La FK offerta_id collega scenario e offerta; segmento_id collega offerta e segmento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare la soluzione didattica come schema di produzione già approvato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 16), pagina PDF 92"
+    },
+    {
+      "id": "si-c06-q165",
+      "topicId": "si-c06-t21",
+      "question": "Esercizio 16: qual è il criterio per conservare un risultato di simulazione anziché ricalcolarlo?",
+      "answer": "Serve un requisito esplicito di storicizzazione o riproducibilità; il valore derivabile può essere calcolato, mentre uno snapshot approvato può meritare conservazione intenzionale.",
+      "detail": "La scelta va dichiarata distinguendo dato di catalogo corrente e fotografia storica.",
+      "example": "Un margine approvato non deve necessariamente variare al cambio del listino.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non conservare copie di risultati senza regole di aggiornamento e validità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 16), pagina PDF 92"
+    },
+    {
+      "id": "si-c06-q166",
+      "topicId": "si-c06-t21",
+      "question": "Esercizio 17: quali sono le FD della relazione Impiegato–Dipartimento–NomeDipartimento?",
+      "answer": "Impiegato → Dipartimento e Dipartimento → NomeDipartimento.",
+      "detail": "Impiegato è chiave candidata singola nel modello semplificato e determina NomeDipartimento transitivamente.",
+      "example": "R(Impiegato,Dipartimento,NomeDipartimento).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire Dipartimento direttamente alla chiave universale della relazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 17), pagina PDF 92"
+    },
+    {
+      "id": "si-c06-q167",
+      "topicId": "si-c06-t21",
+      "question": "Esercizio 17: perché la relazione è in 2NF ma non in 3NF?",
+      "answer": "La 2NF è soddisfatta perché la chiave candidata è singola; la FD Dipartimento → NomeDipartimento viola 3NF perché il determinante non è superchiave e il RHS non è primo.",
+      "detail": "È una dimostrazione che la 2NF non basta per eliminare le dipendenze transitive.",
+      "example": "Impiegato → Dipartimento → NomeDipartimento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostenere che una chiave singola garantisca 3NF.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 17), pagina PDF 92"
+    },
+    {
+      "id": "si-c06-q168",
+      "topicId": "si-c06-t21",
+      "question": "Esercizio 17: quale decomposizione è appropriata?",
+      "answer": "IMPIEGATO(Impiegato,Dipartimento) e DIPARTIMENTO(Dipartimento,NomeDipartimento).",
+      "detail": "Il nome del dipartimento viene gestito una volta nel proprio contesto.",
+      "example": "Dipartimento è il collegamento tra le relazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non duplicare NomeDipartimento su ogni riga IMPIEGATO.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.16 (esercizio 17), pagina PDF 92"
+    },
+    {
+      "id": "si-c06-q169",
+      "topicId": "si-c06-t22",
+      "question": "Autoverifica A1: con R(A,B,C,D) e F={A → B, B → C, C → D}, quanto vale A⁺?",
+      "answer": "A⁺={A,B,C,D}; A è chiave candidata perché determina tutti gli attributi ed è minimale.",
+      "detail": "Applicare in sequenza A → B, B → C e C → D.",
+      "example": "A⁺: A → AB → ABC → ABCD.",
+      "formulas": [],
+      "connections": [
+        "§6.3–6.4: gli esercizi autonomi iniziano dalle chiusure e dalle chiavi."
+      ],
+      "mistakes": "Non fermare la chiusura dopo aver aggiunto solo B.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (A1), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q170",
+      "topicId": "si-c06-t22",
+      "question": "A1: perché la catena di dipendenze basta a dimostrare A → D?",
+      "answer": "Per transitività reiterata: A determina B, B determina C, C determina D.",
+      "detail": "L’inferenza è valida anche se A → D non è esplicitamente scritta in F.",
+      "example": "A → B → C → D.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare una FD non riportata nella cover con una FD non implicata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (A1), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q171",
+      "topicId": "si-c06-t22",
+      "question": "Autoverifica A2: con R(A,B,C), F={AB → C, C → B}, quali sono le chiavi candidate?",
+      "answer": "AB e AC; A è necessario in ogni chiave perché non compare a destra di FD.",
+      "detail": "AB → C dà tutta R; AC → B perché C → B; nessun singolo attributo determina A e tutto lo schema.",
+      "example": "AB⁺=ABC; AC⁺=ACB.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare BC una chiave: manca A.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (A2), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q172",
+      "topicId": "si-c06-t22",
+      "question": "A2: quali attributi risultano primi e come incide ciò sulla valutazione di 3NF?",
+      "answer": "A, B e C sono tutti primi perché appartengono almeno a una fra le chiavi AB e AC.",
+      "detail": "Un RHS primo può consentire una FD con determinante non superchiave secondo la regola formale di 3NF.",
+      "example": "C → B è permessa dalla 3NF anche se C da solo non è superchiave.",
+      "formulas": [],
+      "connections": [
+        "§6.3–6.4: gli esercizi autonomi iniziano dalle chiusure e dalle chiavi."
+      ],
+      "mistakes": "Non classificare B come non primo solo perché si sceglie AC come PK.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (A2), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q173",
+      "topicId": "si-c06-t22",
+      "question": "Autoverifica A3: R(ABC), F={A → B}, decomposizione AB e AC: è lossless?",
+      "answer": "Sì, perché l’intersezione A determina la relazione AB tramite A → B.",
+      "detail": "Non è necessario che A determini C.",
+      "example": "A → AB e R1∩R2={A}.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare perdita solo perché AC contiene C non determinato da A.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (A3), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q174",
+      "topicId": "si-c06-t22",
+      "question": "A3: quale formula si utilizza per verificare la ricostruibilità binaria?",
+      "answer": "L’intersezione dei due schemi deve determinare tutti gli attributi del primo o del secondo schema sotto le FD considerate.",
+      "detail": "Per AB, AC, l’intersezione è A e A → AB vale.",
+      "example": "(R1∩R2) → R1 oppure (R1∩R2) → R2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare semplicemente «hanno un attributo in comune» come prova.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (A3), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q175",
+      "topicId": "si-c06-t22",
+      "question": "Autoverifica A4: R(ABC), F={A → B, B → C}, decomposizione AB e AC: preserva F?",
+      "answer": "No: preserva A → B e la conseguenza A → C, ma non mantiene localmente B → C.",
+      "detail": "Il join è lossless, ma la dependency preservation manca.",
+      "example": "Per controllare B → C servirebbe ricongiungere le informazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere A → C derivata per transitività con B → C originaria.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (A4), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q176",
+      "topicId": "si-c06-t22",
+      "question": "A4: quale controesempio concettuale mostra la mancata conservazione di B → C?",
+      "answer": "È possibile che più tuple con lo stesso B in AB corrispondano a valori di C differenti in AC attraverso diversi A, mantenendo vere le FD locali A → B e A → C.",
+      "detail": "Il vincolo B → C può fallire nel join senza che la singola tabella AB o AC violi i rispettivi controlli.",
+      "example": "AB={(a1,b),(a2,b)} e AC={(a1,c1),(a2,c2)} con c1 diverso da c2.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere l’esistenza del join sufficiente a garantire tutti i vincoli.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (A4), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q177",
+      "topicId": "si-c06-t22",
+      "question": "Autoverifica A5: R(ABC), F={A → B, B → C}, decomposizione AB e BC: preserva le FD?",
+      "answer": "Sì. A → B resta verificabile in AB e B → C resta verificabile in BC.",
+      "detail": "Le FD sono direttamente locali e la loro unione riproduce la chiusura di F.",
+      "example": "AB controlla A → B; BC controlla B → C.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la prova di preservazione con quella del join senza perdita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (A5), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q178",
+      "topicId": "si-c06-t22",
+      "question": "A5: perché AB e BC sono anche lossless?",
+      "answer": "L’intersezione è B e B → C determina tutto BC, soddisfacendo il criterio per la decomposizione binaria.",
+      "detail": "Questo esempio soddisfa entrambe le proprietà.",
+      "example": "R1=AB, R2=BC, R1∩R2=B, B → BC.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare lossless per il solo fatto che preserva le FD: mostrare il test separato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (A5), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q179",
+      "topicId": "si-c06-t22",
+      "question": "Autoverifica A6: R(ABC), F={A → B, B → C}, è in 3NF?",
+      "answer": "No. A è chiave candidata, C non è primo e B → C ha determinante B che non è superchiave: la FD viola 3NF.",
+      "detail": "La transitività A → B → C causa la ridondanza del dato C.",
+      "example": "Scomporre in AB e BC è una soluzione che soddisfa i controlli del caso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere il fatto che A sia chiave con il fatto che B sia superchiave.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (A6), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q180",
+      "topicId": "si-c06-t22",
+      "question": "A6: qual è il percorso minimo per giustificare la violazione della 3NF?",
+      "answer": "Calcolare A⁺=ABC, riconoscere A come chiave candidata, classificare B e C come non primi e mostrare che B → C viola entrambe le condizioni 3NF.",
+      "detail": "Solo dopo ha senso proporre la decomposizione e verificarla.",
+      "example": "B non determina A; C è non primo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non basare il giudizio sulla sola impressione che C sia ripetuto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (A6), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q181",
+      "topicId": "si-c06-t23",
+      "question": "All’orale, come distingui una FD da una correlazione statistica osservata nei dati?",
+      "answer": "Una FD X → Y è un vincolo semantico che deve valere in ogni istanza lecita; una correlazione descrive soltanto una regolarità empirica in dati osservati.",
+      "detail": "La seconda può essere utile in analisi, ma non dimostra l’esistenza della prima.",
+      "example": "Dieci impiegati con stipendi differenti non provano Stipendio → Impiegato.",
+      "formulas": [],
+      "connections": [
+        "§6.15: il metodo d’esame richiede ipotesi, prove di lossless e preservazione, non solo nuove tabelle."
+      ],
+      "mistakes": "Non trarre vincoli di normalizzazione da semplici frequenze o coincidenze.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q182",
+      "topicId": "si-c06-t23",
+      "question": "Come spieghi in pochi passaggi la differenza fra F⁺ e X⁺?",
+      "answer": "F⁺ contiene tutte le dipendenze funzionali implicate da F; X⁺ contiene tutti gli attributi ricavabili da X mediante F.",
+      "detail": "X⁺ è lo strumento operativo per testare singole FD e chiavi senza enumerare F⁺.",
+      "example": "Se Y ⊆ X⁺ allora X → Y appartiene a F⁺.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere due oggetti con contenuto e scopi distinti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q183",
+      "topicId": "si-c06-t23",
+      "question": "Come riconosci subito una FD banale e quale esempio presenteresti?",
+      "answer": "È banale quando il RHS è già contenuto nel LHS, ad esempio AB → A.",
+      "detail": "La sua verità non richiede condizioni semantiche sul dominio oltre all’identità dei valori.",
+      "example": "AB → B è banale; A → B con B diverso è non banale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare come banale una FD solo perché sembra ovvia nell’applicazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q184",
+      "topicId": "si-c06-t23",
+      "question": "Quali sono i tre assiomi di Armstrong da saper enunciare senza esitazioni?",
+      "answer": "Riflessività, aumento e transitività; le regole di unione, decomposizione e pseudotransitività derivano da essi.",
+      "detail": "Gli assiomi sono corretti e completi per le FD.",
+      "example": "AB → A; A → B implica AC → BC; A → B e B → C implicano A → C.",
+      "formulas": [],
+      "connections": [
+        "§6.15: il metodo d’esame richiede ipotesi, prove di lossless e preservazione, non solo nuove tabelle."
+      ],
+      "mistakes": "Non presentare le regole derivate come sostituti necessari della terna base.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q185",
+      "topicId": "si-c06-t23",
+      "question": "Come riconosci se una superchiave è davvero candidata?",
+      "answer": "Dopo aver dimostrato K⁺=R, verifico che nessun sottoinsieme proprio di K abbia ancora chiusura pari a R.",
+      "detail": "La minimalità riguarda gli attributi, non la cardinalità del numero di FD usate.",
+      "example": "AB è candidata se AB⁺=R ma A⁺≠R e B⁺≠R.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare chiave candidata una superchiave con attributi inutili.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q186",
+      "topicId": "si-c06-t23",
+      "question": "Perché «attributo primo» non coincide con «attributo della PRIMARY KEY»?",
+      "answer": "È primo qualunque attributo che compaia in almeno una chiave candidata, anche diversa da quella selezionata come primaria.",
+      "detail": "Questo dettaglio può cambiare il giudizio formale sulla 3NF.",
+      "example": "Con candidate AB e AC, C è primo anche con PK=AB.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ignorare le candidate key alternative.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q187",
+      "topicId": "si-c06-t23",
+      "question": "Quali tre verifiche certificano una copertura minimale di FD?",
+      "answer": "RHS unitario, nessun attributo superfluo nei determinanti e nessuna FD eliminabile senza alterare F⁺.",
+      "detail": "È inoltre necessario che la cover sia equivalente all’insieme originario.",
+      "example": "Una FD A → C implicata da A → B e B → C è eliminabile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che cover minimale significhi necessariamente BCNF.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q188",
+      "topicId": "si-c06-t23",
+      "question": "Come distingui le violazioni di 1NF e 2NF in una prova?",
+      "answer": "1NF riguarda la non atomicità di valori che il dominio richiede separabili; 2NF riguarda attributi non primi determinati da una parte propria di una chiave candidata.",
+      "detail": "Per 2NF è preliminare avere 1NF e individuare le chiavi.",
+      "example": "Lista di telefoni per 1NF; Ordine → Cliente in riga con chiave (Ordine,Articolo) per 2NF.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare un test di FD per dimostrare direttamente la non atomicità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q189",
+      "topicId": "si-c06-t23",
+      "question": "Come illustri la differenza formale fra 3NF e BCNF usando una sola FD?",
+      "answer": "3NF ammette X → A non banale se X è superchiave oppure A è primo; BCNF richiede sempre X superchiave.",
+      "detail": "La differenza appare in schemi con più chiavi candidate.",
+      "example": "D → S nel caso PDS: RHS primo, ma D non superchiave.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dire che tutte le 3NF sono BCNF.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q190",
+      "topicId": "si-c06-t23",
+      "question": "Come distingui una dipendenza parziale da una transitiva?",
+      "answer": "Parziale: un attributo non primo dipende da una parte di una chiave composta; transitiva: una chiave determina un fatto tramite un determinante intermedio che ne influenza la forma normale.",
+      "detail": "La 2NF affronta dipendenze parziali; la 3NF ha una definizione formale più generale rispetto alla semplice transitività.",
+      "example": "(Ordine,Articolo) → Cliente parziale se Ordine → Cliente; Impiegato → Dipartimento → NomeDipartimento transitiva.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare «parziale» ogni dipendenza in una catena.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q191",
+      "topicId": "si-c06-t23",
+      "question": "Come definisci una tupla spuria in modo comprensibile all’esaminatore?",
+      "answer": "È una combinazione di valori prodotta dal join delle relazioni separate che non era una riga lecita nella relazione originale.",
+      "detail": "La sua presenza indica una decomposizione con perdita informativa nella ricostruzione.",
+      "example": "Verdi–Saturno nasce dal join sulla sede Milano ma non era una partecipazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confonderla con una riga duplicata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 94"
+    },
+    {
+      "id": "si-c06-q192",
+      "topicId": "si-c06-t23",
+      "question": "Qual è il test da usare per dimostrare lossless join di una decomposizione binaria?",
+      "answer": "Controllare se l’intersezione degli attributi determina uno dei due schemi: (R1∩R2) → R1 oppure (R1∩R2) → R2.",
+      "detail": "La verifica usa le FD e deve essere distinta dal semplice controllo degli attributi presenti.",
+      "example": "AB e AC sono lossless se A → B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non richiedere un determinante chiave di tutta R.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 94"
+    },
+    {
+      "id": "si-c06-q193",
+      "topicId": "si-c06-t23",
+      "question": "Quale verifica dimostra dependency preservation?",
+      "answer": "Proiettare le FD implicate su ogni sottoschema e verificare che l’unione delle FD locali implichi le FD dell’originale.",
+      "detail": "La preservazione significa poter controllare i vincoli senza ricongiungere le tabelle.",
+      "example": "AB+BC preservano A → B e B → C, AB+AC no.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare che ricostruibilità delle tuple garantisce preservazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q194",
+      "topicId": "si-c06-t23",
+      "question": "Perché una decomposizione in BCNF non è automaticamente la scelta migliore?",
+      "answer": "Riduce ridondanze da FD, ma può perdere la conservazione locale di dipendenze e rendere più onerosi certi controlli.",
+      "detail": "La 3NF può essere preferita quando si vogliono entrambe le garanzie di lossless e dependency-preserving.",
+      "example": "Decomposizione DS+PD richiede controllo aggiuntivo per PS → D.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trascurare gestione dei vincoli per massimizzare la forma normale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 94"
+    },
+    {
+      "id": "si-c06-q195",
+      "topicId": "si-c06-t23",
+      "question": "In quale ordine esporresti l’algoritmo di sintesi 3NF?",
+      "answer": "Copertura minima, uno schema per ogni FD o gruppo con stesso determinante, eliminazione delle relazioni contenute, aggiunta di un sottoschema con chiave candidata se assente, verifica del risultato.",
+      "detail": "Il procedimento è pensato per garantire conservazione delle FD e lossless.",
+      "example": "F={A → B,B → C,CD → E} produce AB,BC,CDE,AD.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dimenticare il passaggio della relazione contenente una chiave.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 94"
+    },
+    {
+      "id": "si-c06-q196",
+      "topicId": "si-c06-t23",
+      "question": "Come distingui il codice ISBN dalla copia di un libro e dal prestito nell’esempio del docente?",
+      "answer": "ISBN identifica l’edizione bibliografica; la collocazione distingue un esemplare fisico; il prestito è un evento temporale che collega copia e studente.",
+      "detail": "I tre concetti hanno identificatori e regole differenti.",
+      "example": "Una copia può essere prestata molte volte e più copie possono condividere ISBN.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare ISBN come ID di ogni esemplare fisico o di ogni prestito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q197",
+      "topicId": "si-c06-t23",
+      "question": "Quando un dato derivato può essere intenzionalmente memorizzato senza tradire la progettazione?",
+      "answer": "Quando esiste un requisito esplicito di prestazioni o storicizzazione e sono definite responsabilità di aggiornamento, versioni e controlli di coerenza.",
+      "detail": "La ridondanza va giustificata e gestita, non introdotta accidentalmente.",
+      "example": "Snapshot economico di una simulazione approvata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sovrascrivere risultati storici con valori aggiornati senza una policy.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 94"
+    },
+    {
+      "id": "si-c06-q198",
+      "topicId": "si-c06-t23",
+      "question": "Come presenteresti una soluzione completa di normalizzazione in sede di prova?",
+      "answer": "Raccontare ipotesi e FD, calcolare chiusure e candidate key, classificare gli attributi, indicare le forme normali violate, proporre gli schemi e dimostrare lossless e preservazione FD.",
+      "detail": "Concludere discutendo anomalie residue e compromessi su prestazioni e integrità.",
+      "example": "R(ABC), A → B, B → C: individuare A come chiave, violazione 3NF e soluzione AB+BC con due prove separate.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non consegnare soltanto un elenco di nuove tabelle senza motivazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q199",
+      "topicId": "si-c06-t23",
+      "question": "Qual è il controllo più importante quando si riutilizza uno schema in un contesto storico anziché corrente?",
+      "answer": "Rivalutare le FD e le chiavi rispetto al tempo: un fatto determinato da un identificatore oggi potrebbe assumere più valori storici.",
+      "detail": "Può essere necessaria una chiave che includa l’intervallo di validità o un ID evento.",
+      "example": "Impiegato → Stipendio corrente vs (Impiegato,Decorrenza) → Stipendio storico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non copiare le FD di un archivio corrente dentro uno storico senza ripensarle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    },
+    {
+      "id": "si-c06-q200",
+      "topicId": "si-c06-t23",
+      "question": "Perché le statistiche del query planner non sostituiscono le FD formali?",
+      "answer": "Perché misurano regolarità osservate per ottimizzare stime ed esecuzione, mentre le FD della normalizzazione sono vincoli semantici che devono valere in tutte le istanze lecite.",
+      "detail": "Le finalità sono differenti, anche se il nome «dipendenza funzionale» ricorre in entrambi i contesti.",
+      "example": "Extended statistics del DBMS e modello logico del dominio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare statistiche empiriche come garanzia di integrità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 6, §6.17 (20 domande di autoverifica), pagina PDF 93"
+    }
+  ]
+}

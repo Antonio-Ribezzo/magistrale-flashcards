@@ -1,0 +1,104 @@
+{
+  "sections": [
+    {
+      "id": "1",
+      "title": "Cifratura simmetrica e autenticata",
+      "concept": "Cifratura simmetrica e autenticata",
+      "topics": [
+        "cyber-c03-t01",
+        "cyber-c03-t02",
+        "cyber-c03-t03",
+        "cyber-c03-t04"
+      ],
+      "pages": [
+        35,
+        37,
+        38,
+        39
+      ],
+      "blocks": [
+        {
+          "text": "Nella cifratura simmetrica le parti condividono un segreto. La sicurezza dipende dalla protezione della chiave e dall’uso corretto della modalità, oltre che dall’algoritmo. La cifratura autenticata protegge il contenuto e verifica l’integrità dei dati associati secondo le garanzie della modalità."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Ciclo delle chiavi e sistemi ibridi",
+      "concept": "Ciclo delle chiavi e sistemi ibridi",
+      "topics": [
+        "cyber-c03-t05",
+        "cyber-c03-t06",
+        "cyber-c03-t07"
+      ],
+      "pages": [
+        40,
+        41
+      ],
+      "blocks": [
+        {
+          "text": "La gestione delle chiavi comprende generazione, conservazione, rotazione e revoca. I sistemi ibridi combinano meccanismi asimmetrici per autenticazione o accordo sul segreto e meccanismi simmetrici per i dati. Le chiavi effimere limitano quanto la compromissione successiva di una chiave di lungo periodo può esporre sessioni passate."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Hash, MAC e firme",
+      "concept": "Hash, MAC e firme",
+      "topics": [
+        "cyber-c03-t08",
+        "cyber-c03-t09",
+        "cyber-c03-t10"
+      ],
+      "pages": [
+        42,
+        43,
+        44
+      ],
+      "blocks": [
+        {
+          "text": "Un hash produce un’impronta. Un MAC usa una chiave condivisa per controllare integrità e autenticità; una firma si verifica con la chiave pubblica corrispondente. I tre strumenti rispondono a requisiti differenti e vanno scelti a partire dalle garanzie necessarie."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Certificati, dati a riposo e credenziali",
+      "concept": "Certificati, dati a riposo e credenziali",
+      "topics": [
+        "cyber-c03-t11",
+        "cyber-c03-t12",
+        "cyber-c03-t13",
+        "cyber-c03-t14"
+      ],
+      "pages": [
+        44,
+        45,
+        46,
+        47
+      ],
+      "blocks": [
+        {
+          "text": "Una PKI collega identità e chiavi pubbliche mediante certificati e catene di fiducia. I dati a riposo richiedono cifratura e gestione separata delle chiavi. Le password richiedono schemi di derivazione dedicati con salt e controlli coerenti di autenticazione."
+        }
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "from": "1",
+      "to": "2",
+      "relation": "Le garanzie della cifratura dipendono dal ciclo di vita delle chiavi."
+    },
+    {
+      "from": "2",
+      "to": "3",
+      "relation": "La scelta del meccanismo dipende anche dal requisito di autenticità."
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "relation": "La verifica delle firme dipende dal legame attendibile fra chiave e identità."
+    }
+  ]
+}

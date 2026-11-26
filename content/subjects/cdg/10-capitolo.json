@@ -1,0 +1,3476 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "cdg",
+  "source": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo; PDF fornito dall’utente, pagine PDF 120–136. Fonte unica autorizzata.",
+  "chapter": {
+    "id": "cdg-c10",
+    "title": "Le informazioni economiche a supporto delle decisioni di breve periodo",
+    "order": 10,
+    "topics": [
+      {
+        "id": "cdg-c10-t01",
+        "title": "Obiettivi e mappa degli argomenti"
+      },
+      {
+        "id": "cdg-c10-t02",
+        "title": "Decisioni operative e strategiche"
+      },
+      {
+        "id": "cdg-c10-t03",
+        "title": "Dall’obiettivo al confronto fra alternative"
+      },
+      {
+        "id": "cdg-c10-t04",
+        "title": "Analisi differenziale: logica e formule"
+      },
+      {
+        "id": "cdg-c10-t05",
+        "title": "Ricavi e costi rilevanti: le tre condizioni"
+      },
+      {
+        "id": "cdg-c10-t06",
+        "title": "Costi sommersi, eliminabili, incrementali e impegnati"
+      },
+      {
+        "id": "cdg-c10-t07",
+        "title": "Rilevanza e classificazioni dei costi: perché non coincidono"
+      },
+      {
+        "id": "cdg-c10-t08",
+        "title": "Costo opportunità e beni già disponibili"
+      },
+      {
+        "id": "cdg-c10-t09",
+        "title": "Decisioni in condizioni di certezza, rischio e incertezza"
+      },
+      {
+        "id": "cdg-c10-t10",
+        "title": "Tipi di probabilità e stati di natura"
+      },
+      {
+        "id": "cdg-c10-t11",
+        "title": "Matrice dei payoff e criteri decisionali senza probabilità"
+      },
+      {
+        "id": "cdg-c10-t12",
+        "title": "Valore atteso, valore dell’informazione e sensibilità"
+      },
+      {
+        "id": "cdg-c10-t13",
+        "title": "Alberi decisionali e simulazione Monte Carlo"
+      },
+      {
+        "id": "cdg-c10-t14",
+        "title": "Aggiungere o eliminare un segmento"
+      },
+      {
+        "id": "cdg-c10-t15",
+        "title": "Caso del corso: Industrial-Textil"
+      },
+      {
+        "id": "cdg-c10-t16",
+        "title": "Caso Arcari 8.1: Mascara e rossetti"
+      },
+      {
+        "id": "cdg-c10-t17",
+        "title": "Ordini speciali: capacità e contributo incrementale"
+      },
+      {
+        "id": "cdg-c10-t18",
+        "title": "Caso Arcari 8.2: Delta S.p.A."
+      },
+      {
+        "id": "cdg-c10-t19",
+        "title": "Caso Arcari 8.3: Drinking"
+      },
+      {
+        "id": "cdg-c10-t20",
+        "title": "Ordine con penale: caso dei camici della simulazione"
+      },
+      {
+        "id": "cdg-c10-t21",
+        "title": "Capacità satura, commesse concorrenti e costo opportunità"
+      },
+      {
+        "id": "cdg-c10-t22",
+        "title": "Make or buy: struttura rigorosa del confronto"
+      },
+      {
+        "id": "cdg-c10-t23",
+        "title": "Caso Arcari 8.5: Omega e soglia make/buy"
+      },
+      {
+        "id": "cdg-c10-t24",
+        "title": "Outsourcing e fattori qualitativi"
+      },
+      {
+        "id": "cdg-c10-t25",
+        "title": "Lavorazioni successive: scelta al punto di separazione"
+      },
+      {
+        "id": "cdg-c10-t26",
+        "title": "Casi Arcari 8.6 e 8.7: Bianchi e Rossi"
+      },
+      {
+        "id": "cdg-c10-t27",
+        "title": "Impiego di una risorsa scarsa"
+      },
+      {
+        "id": "cdg-c10-t28",
+        "title": "Caso Arcari 8.8: Beta e mix produttivo"
+      },
+      {
+        "id": "cdg-c10-t29",
+        "title": "Più vincoli: introduzione alla programmazione lineare"
+      },
+      {
+        "id": "cdg-c10-t30",
+        "title": "Caso Arcari 8.9: Golosa e decisioni sotto incertezza"
+      },
+      {
+        "id": "cdg-c10-t31",
+        "title": "Caso Arcari 8.10: Pelletteria e quattro criteri di scelta"
+      },
+      {
+        "id": "cdg-c10-t32",
+        "title": "Caso integrato: commessa software con capacità limitata"
+      },
+      {
+        "id": "cdg-c10-t33",
+        "title": "Fattori qualitativi, rischi e controlli finali"
+      },
+      {
+        "id": "cdg-c10-t34",
+        "title": "Procedura guidata per la prova scritta"
+      },
+      {
+        "id": "cdg-c10-t35",
+        "title": "Esercizi autonomi graduati"
+      },
+      {
+        "id": "cdg-c10-t36",
+        "title": "Soluzioni commentate degli esercizi"
+      },
+      {
+        "id": "cdg-c10-t37",
+        "title": "Formulario ragionato e glossario essenziale"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§10.1 — pagina PDF 120–121",
+        "cardIds": [
+          "cdg-c10-q001",
+          "cdg-c10-q002",
+          "cdg-c10-q003",
+          "cdg-c10-q004"
+        ]
+      },
+      {
+        "label": "§10.2 — pagina PDF 121",
+        "cardIds": [
+          "cdg-c10-q005",
+          "cdg-c10-q006",
+          "cdg-c10-q007",
+          "cdg-c10-q008"
+        ]
+      },
+      {
+        "label": "§10.3 — pagina PDF 121",
+        "cardIds": [
+          "cdg-c10-q009",
+          "cdg-c10-q010",
+          "cdg-c10-q011",
+          "cdg-c10-q012"
+        ]
+      },
+      {
+        "label": "§10.4 — pagina PDF 121–122",
+        "cardIds": [
+          "cdg-c10-q013",
+          "cdg-c10-q014",
+          "cdg-c10-q015",
+          "cdg-c10-q016",
+          "cdg-c10-q017",
+          "cdg-c10-q018"
+        ]
+      },
+      {
+        "label": "§10.5 — pagina PDF 122–123",
+        "cardIds": [
+          "cdg-c10-q019",
+          "cdg-c10-q020",
+          "cdg-c10-q021",
+          "cdg-c10-q022"
+        ]
+      },
+      {
+        "label": "§10.6 — pagina PDF 123",
+        "cardIds": [
+          "cdg-c10-q023",
+          "cdg-c10-q024",
+          "cdg-c10-q025",
+          "cdg-c10-q026",
+          "cdg-c10-q027"
+        ]
+      },
+      {
+        "label": "§10.7 — pagina PDF 123",
+        "cardIds": [
+          "cdg-c10-q028",
+          "cdg-c10-q029",
+          "cdg-c10-q030",
+          "cdg-c10-q031"
+        ]
+      },
+      {
+        "label": "§10.8 — pagina PDF 123–124",
+        "cardIds": [
+          "cdg-c10-q032",
+          "cdg-c10-q033",
+          "cdg-c10-q034",
+          "cdg-c10-q035",
+          "cdg-c10-q036"
+        ]
+      },
+      {
+        "label": "§10.9 — pagina PDF 124",
+        "cardIds": [
+          "cdg-c10-q037",
+          "cdg-c10-q038",
+          "cdg-c10-q039",
+          "cdg-c10-q040"
+        ]
+      },
+      {
+        "label": "§10.10 — pagina PDF 124",
+        "cardIds": [
+          "cdg-c10-q041",
+          "cdg-c10-q042",
+          "cdg-c10-q043",
+          "cdg-c10-q044",
+          "cdg-c10-q045"
+        ]
+      },
+      {
+        "label": "§10.11 — pagina PDF 124–125",
+        "cardIds": [
+          "cdg-c10-q046",
+          "cdg-c10-q047",
+          "cdg-c10-q048",
+          "cdg-c10-q049",
+          "cdg-c10-q050",
+          "cdg-c10-q051"
+        ]
+      },
+      {
+        "label": "§10.12 — pagina PDF 125",
+        "cardIds": [
+          "cdg-c10-q052",
+          "cdg-c10-q053",
+          "cdg-c10-q054",
+          "cdg-c10-q055",
+          "cdg-c10-q056"
+        ]
+      },
+      {
+        "label": "§10.13 — pagina PDF 125",
+        "cardIds": [
+          "cdg-c10-q057",
+          "cdg-c10-q058",
+          "cdg-c10-q059",
+          "cdg-c10-q060",
+          "cdg-c10-q061"
+        ]
+      },
+      {
+        "label": "§10.14 — pagina PDF 125–126",
+        "cardIds": [
+          "cdg-c10-q062",
+          "cdg-c10-q063",
+          "cdg-c10-q064",
+          "cdg-c10-q065",
+          "cdg-c10-q066"
+        ]
+      },
+      {
+        "label": "§10.15 — pagina PDF 126",
+        "cardIds": [
+          "cdg-c10-q067",
+          "cdg-c10-q068",
+          "cdg-c10-q069",
+          "cdg-c10-q070",
+          "cdg-c10-q071"
+        ]
+      },
+      {
+        "label": "§10.16 — pagina PDF 126–127",
+        "cardIds": [
+          "cdg-c10-q072",
+          "cdg-c10-q073",
+          "cdg-c10-q074",
+          "cdg-c10-q075",
+          "cdg-c10-q076"
+        ]
+      },
+      {
+        "label": "§10.17 — pagina PDF 127",
+        "cardIds": [
+          "cdg-c10-q077",
+          "cdg-c10-q078",
+          "cdg-c10-q079",
+          "cdg-c10-q080",
+          "cdg-c10-q081"
+        ]
+      },
+      {
+        "label": "§10.18 — pagina PDF 127–128",
+        "cardIds": [
+          "cdg-c10-q082",
+          "cdg-c10-q083",
+          "cdg-c10-q084",
+          "cdg-c10-q085",
+          "cdg-c10-q086"
+        ]
+      },
+      {
+        "label": "§10.19 — pagina PDF 128",
+        "cardIds": [
+          "cdg-c10-q087",
+          "cdg-c10-q088",
+          "cdg-c10-q089",
+          "cdg-c10-q090"
+        ]
+      },
+      {
+        "label": "§10.20 — pagina PDF 128",
+        "cardIds": [
+          "cdg-c10-q091",
+          "cdg-c10-q092",
+          "cdg-c10-q093",
+          "cdg-c10-q094"
+        ]
+      },
+      {
+        "label": "§10.21 — pagina PDF 128–129",
+        "cardIds": [
+          "cdg-c10-q095",
+          "cdg-c10-q096",
+          "cdg-c10-q097",
+          "cdg-c10-q098",
+          "cdg-c10-q099",
+          "cdg-c10-q100"
+        ]
+      },
+      {
+        "label": "§10.22 — pagina PDF 129",
+        "cardIds": [
+          "cdg-c10-q101",
+          "cdg-c10-q102",
+          "cdg-c10-q103",
+          "cdg-c10-q104",
+          "cdg-c10-q105",
+          "cdg-c10-q106"
+        ]
+      },
+      {
+        "label": "§10.23 — pagina PDF 129–130",
+        "cardIds": [
+          "cdg-c10-q107",
+          "cdg-c10-q108",
+          "cdg-c10-q109",
+          "cdg-c10-q110"
+        ]
+      },
+      {
+        "label": "§10.24 — pagina PDF 130",
+        "cardIds": [
+          "cdg-c10-q111",
+          "cdg-c10-q112",
+          "cdg-c10-q113"
+        ]
+      },
+      {
+        "label": "§10.25 — pagina PDF 130",
+        "cardIds": [
+          "cdg-c10-q114",
+          "cdg-c10-q115",
+          "cdg-c10-q116",
+          "cdg-c10-q117"
+        ]
+      },
+      {
+        "label": "§10.26 — pagina PDF 130–131",
+        "cardIds": [
+          "cdg-c10-q118",
+          "cdg-c10-q119",
+          "cdg-c10-q120",
+          "cdg-c10-q121"
+        ]
+      },
+      {
+        "label": "§10.27 — pagina PDF 131",
+        "cardIds": [
+          "cdg-c10-q122",
+          "cdg-c10-q123",
+          "cdg-c10-q124",
+          "cdg-c10-q125",
+          "cdg-c10-q126"
+        ]
+      },
+      {
+        "label": "§10.28 — pagina PDF 131",
+        "cardIds": [
+          "cdg-c10-q127",
+          "cdg-c10-q128",
+          "cdg-c10-q129",
+          "cdg-c10-q130",
+          "cdg-c10-q131",
+          "cdg-c10-q132"
+        ]
+      },
+      {
+        "label": "§10.29 — pagina PDF 131–132",
+        "cardIds": [
+          "cdg-c10-q133",
+          "cdg-c10-q134",
+          "cdg-c10-q135",
+          "cdg-c10-q136"
+        ]
+      },
+      {
+        "label": "§10.30 — pagina PDF 132",
+        "cardIds": [
+          "cdg-c10-q137",
+          "cdg-c10-q138",
+          "cdg-c10-q139",
+          "cdg-c10-q140"
+        ]
+      },
+      {
+        "label": "§10.31 — pagina PDF 132–133",
+        "cardIds": [
+          "cdg-c10-q141",
+          "cdg-c10-q142",
+          "cdg-c10-q143",
+          "cdg-c10-q144",
+          "cdg-c10-q145",
+          "cdg-c10-q146",
+          "cdg-c10-q147",
+          "cdg-c10-q148",
+          "cdg-c10-q149"
+        ]
+      },
+      {
+        "label": "§10.32 — pagina PDF 133",
+        "cardIds": [
+          "cdg-c10-q150",
+          "cdg-c10-q151",
+          "cdg-c10-q152",
+          "cdg-c10-q153",
+          "cdg-c10-q154"
+        ]
+      },
+      {
+        "label": "§10.33 — pagina PDF 133",
+        "cardIds": [
+          "cdg-c10-q155",
+          "cdg-c10-q156",
+          "cdg-c10-q157",
+          "cdg-c10-q158"
+        ]
+      },
+      {
+        "label": "§10.34 — pagina PDF 133–134",
+        "cardIds": [
+          "cdg-c10-q159",
+          "cdg-c10-q160",
+          "cdg-c10-q161",
+          "cdg-c10-q162",
+          "cdg-c10-q163",
+          "cdg-c10-q164",
+          "cdg-c10-q165"
+        ]
+      },
+      {
+        "label": "§10.35 — pagina PDF 134–135",
+        "cardIds": [
+          "cdg-c10-q166",
+          "cdg-c10-q167",
+          "cdg-c10-q168",
+          "cdg-c10-q169",
+          "cdg-c10-q170",
+          "cdg-c10-q171",
+          "cdg-c10-q172",
+          "cdg-c10-q173",
+          "cdg-c10-q174",
+          "cdg-c10-q175",
+          "cdg-c10-q176",
+          "cdg-c10-q177",
+          "cdg-c10-q178",
+          "cdg-c10-q179",
+          "cdg-c10-q180",
+          "cdg-c10-q181"
+        ]
+      },
+      {
+        "label": "§10.36 — pagina PDF 135–136",
+        "cardIds": [
+          "cdg-c10-q182",
+          "cdg-c10-q183",
+          "cdg-c10-q184",
+          "cdg-c10-q185",
+          "cdg-c10-q186",
+          "cdg-c10-q187"
+        ]
+      },
+      {
+        "label": "§10.37 — pagina PDF 136",
+        "cardIds": [
+          "cdg-c10-q188",
+          "cdg-c10-q189",
+          "cdg-c10-q190",
+          "cdg-c10-q191",
+          "cdg-c10-q192",
+          "cdg-c10-q193",
+          "cdg-c10-q194",
+          "cdg-c10-q195"
+        ]
+      }
+    ],
+    "sourcePdfPages": [
+      120,
+      136
+    ],
+    "cardCount": 195
+  },
+  "cards": [
+    {
+      "id": "cdg-c10-q001",
+      "topicId": "cdg-c10-t01",
+      "question": "Qual è la domanda centrale dell’analisi economica per le decisioni di breve periodo?",
+      "answer": "Come cambiano le conseguenze economiche scegliendo un’alternativa futura invece di un’altra?",
+      "detail": "Il valore contabile di un prodotto o il risultato già conseguito non bastano: occorre isolare ricavi, costi e benefici che si modificano realmente per effetto della decisione. Il risultato deve diventare una raccomandazione motivata, con condizioni e vincoli dichiarati.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§10.4 — Analisi differenziale"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.1, pagina PDF 120–121"
+    },
+    {
+      "id": "cdg-c10-q002",
+      "topicId": "cdg-c10-t01",
+      "question": "Quali famiglie di problemi decisionali vengono affrontate nel Capitolo 10?",
+      "answer": "Aggiunta o eliminazione di segmenti, ordini speciali, make or buy, lavorazioni successive, impiego di risorse scarse e decisioni in rischio/incertezza.",
+      "detail": "Tutti questi problemi condividono il filtro di rilevanza delle informazioni, ma hanno vincoli diversi: capacità, fissi evitabili, opportunità alternative, probabilità degli stati futuri e fattibilità tecnica.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.1, pagina PDF 120–121"
+    },
+    {
+      "id": "cdg-c10-q003",
+      "topicId": "cdg-c10-t01",
+      "question": "Quali conoscenze dei capitoli precedenti sono indispensabili per affrontare il Capitolo 10?",
+      "answer": "Distinguere costi fissi e variabili, diretti e indiretti, specifici e comuni; calcolare il margine di contribuzione e riconoscere vincoli di capacità.",
+      "detail": "La corretta classificazione è un punto di partenza, non la decisione finale: per ciascuna voce occorre ancora verificare se muta fra le alternative e se è riferita al periodo analizzato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.1, pagina PDF 120–121"
+    },
+    {
+      "id": "cdg-c10-q004",
+      "topicId": "cdg-c10-t01",
+      "question": "Perché una risposta numerica corretta non è sufficiente a motivare una decisione manageriale?",
+      "answer": "Perché deve essere anche economicamente pertinente, concretamente realizzabile e robusta rispetto a ipotesi e rischi.",
+      "detail": "È possibile ottenere un incremento positivo di reddito da un modello che richieda ore macchina non disponibili, violi un contratto o ometta la perdita di un cliente. Il commento finale deve riportare tali condizioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§10.33 — Verifiche finali"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.1, pagina PDF 120–121"
+    },
+    {
+      "id": "cdg-c10-q005",
+      "topicId": "cdg-c10-t02",
+      "question": "In cosa consiste una decisione operativa e qual è il suo orizzonte tipico?",
+      "answer": "È una scelta sull’impiego delle risorse disponibili, di norma più reversibile e concentrata nel breve periodo.",
+      "detail": "Esempi includono accettare una commessa extra, scegliere un turno o acquistare temporaneamente un componente. In genere si confrontano ricavi e costi differenziali nell’orizzonte considerato.",
+      "example": "Utilizzare alcune ore macchina residue per un ordine aggiuntivo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.2, pagina PDF 121"
+    },
+    {
+      "id": "cdg-c10-q006",
+      "topicId": "cdg-c10-t02",
+      "question": "In cosa consiste una decisione strategica e quale analisi richiede normalmente?",
+      "answer": "Modifica in modo durevole capacità, asset, mercati o portafoglio di attività e richiede spesso un’analisi pluriennale dei flussi finanziari e dei rischi.",
+      "detail": "Nuovi stabilimenti, acquisizioni e ingressi stabili in mercati diversi hanno effetti difficilmente reversibili. Il capitolo successivo li affronta attraverso il capital budgeting.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "Capitolo 11 — Capital budgeting"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.2, pagina PDF 121"
+    },
+    {
+      "id": "cdg-c10-q007",
+      "topicId": "cdg-c10-t02",
+      "question": "Perché la soglia temporale di un anno non distingue in modo assoluto scelte operative e strategiche?",
+      "answer": "Perché contano anche reversibilità e trasformazione delle risorse, non solo la durata.",
+      "detail": "Una scelta semestrale può impegnare irreversibilmente competenze o capacità; viceversa un’operazione ripetuta può produrre effetti strategici nel tempo. L’orizzonte del budget è una convenzione didattica, non una definizione universale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non classificare come operativa ogni scelta inferiore a dodici mesi.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.2, pagina PDF 121"
+    },
+    {
+      "id": "cdg-c10-q008",
+      "topicId": "cdg-c10-t02",
+      "question": "Quali tre verifiche precedono la scelta del metodo economico per una decisione?",
+      "answer": "Orizzonte temporale, reversibilità e impatto sulla capacità produttiva o sulle risorse strategiche.",
+      "detail": "Queste dimensioni aiutano a stabilire se basti un confronto reddituale di breve periodo o se occorra valutare flussi finanziari pluriennali, investimenti e rischi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.2, pagina PDF 121"
+    },
+    {
+      "id": "cdg-c10-q009",
+      "topicId": "cdg-c10-t03",
+      "question": "Perché l’analisi decisionale richiede alternative esplicite e comparabili?",
+      "answer": "Perché il vantaggio economico è sempre relativo a un’opzione scartata, spesso lo status quo.",
+      "detail": "La domanda corretta è «come cambia il RO se faccio A invece di B?»; non «quanto utile è stato attribuito al prodotto?». Opzioni con durata, prestazioni o vincoli diversi vanno rese confrontabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§10.4 — Differenziale A−B"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.3, pagina PDF 121"
+    },
+    {
+      "id": "cdg-c10-q010",
+      "topicId": "cdg-c10-t03",
+      "question": "Che cos’è lo status quo in un confronto decisionale?",
+      "answer": "È l’alternativa di riferimento che mantiene la situazione attuale, rispetto alla quale si valuta la modifica proposta.",
+      "detail": "Il suo risultato economico può includere costi e ricavi destinati a proseguire. L’opzione nuova viene valutata osservando differenze reali rispetto al mantenimento della situazione originaria.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.3, pagina PDF 121"
+    },
+    {
+      "id": "cdg-c10-q011",
+      "topicId": "cdg-c10-t03",
+      "question": "Quali elementi devono essere esplicitati prima di calcolare una convenienza economica?",
+      "answer": "Obiettivo, alternative realistiche, unità e periodo, risorse disponibili, costi e ricavi diversi, fattori non monetari e rischi.",
+      "detail": "Una tabella iniziale riduce errori dovuti a basi non omogenee o limiti nascosti. I vincoli tecnici e contrattuali fanno parte della decisione, non sono un controllo opzionale alla fine.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.3, pagina PDF 121"
+    },
+    {
+      "id": "cdg-c10-q012",
+      "topicId": "cdg-c10-t03",
+      "question": "Perché la fattibilità tecnica viene prima della convenienza economica?",
+      "answer": "Perché un’alternativa economicamente preferibile può non essere realizzabile nelle capacità e nei contratti disponibili.",
+      "detail": "La soluzione algebrica del punto di indifferenza, per esempio, può richiedere un volume maggiore del massimo ottenibile: una soglia teorica non diventa automaticamente una scelta praticabile.",
+      "example": "Caso Delta: soglia 6.000 litri, massimo tecnicamente possibile con ore libere 2.250 litri.",
+      "formulas": [],
+      "connections": [
+        "§10.18 — Delta"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.3, pagina PDF 121"
+    },
+    {
+      "id": "cdg-c10-q013",
+      "topicId": "cdg-c10-t04",
+      "question": "Come si definisce il vantaggio economico dell’alternativa A rispetto a B?",
+      "answer": "È la differenza fra il risultato operativo di A e quello di B: positiva se A è preferibile nel perimetro analizzato.",
+      "detail": "La convenzione di tutto il capitolo è A−B. Il segno deve essere interpretato rispetto alle alternative correttamente etichettate: se A è il nuovo ordine, un ΔRO positivo favorisce l’accettazione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO(A−B) = [RA − CA] − [RB − CB]}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.4, pagina PDF 121–122"
+    },
+    {
+      "id": "cdg-c10-q014",
+      "topicId": "cdg-c10-t04",
+      "question": "Qual è la formula per il reddito operativo differenziale tramite componenti emergenti e cessanti?",
+      "answer": "Ricavi emergenti meno ricavi cessanti più costi cessanti meno costi emergenti.",
+      "detail": "I ricavi aggiuntivi e i costi evitati producono effetti positivi; i nuovi costi e i ricavi perduti producono effetti negativi. Occorre mantenere la medesima convenzione di confronto.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = ricavi emergenti − ricavi cessanti + costi cessanti − costi emergenti}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.4, pagina PDF 121–122"
+    },
+    {
+      "id": "cdg-c10-q015",
+      "topicId": "cdg-c10-t04",
+      "question": "Perché “costo differenziale” non significa necessariamente “costo variabile”?",
+      "answer": "Perché un costo fisso può sorgere soltanto scegliendo una specifica alternativa.",
+      "detail": "Un nuovo canone di magazzino è fisso rispetto ai pezzi movimentati ma incrementale rispetto allo status quo; viceversa una spesa variabile uguale in A e B non influenza il confronto.",
+      "example": "Canone fisso aggiuntivo di un magazzino necessario solo per A.",
+      "formulas": [],
+      "connections": [
+        "§10.7 — Tre classificazioni diverse"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.4, pagina PDF 121–122"
+    },
+    {
+      "id": "cdg-c10-q016",
+      "topicId": "cdg-c10-t04",
+      "question": "Che differenza esiste tra metodo completo e metodo differenziale?",
+      "answer": "Il metodo completo ricostruisce il risultato delle due alternative; quello differenziale calcola soltanto le variazioni.",
+      "detail": "Le voci identiche si annullano e possono essere omesse nel metodo differenziale. I due procedimenti devono fornire lo stesso ΔRO quando i dati e l’orizzonte sono coerenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sottrarre due volte un costo presente sia in A sia in B.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.4, pagina PDF 121–122"
+    },
+    {
+      "id": "cdg-c10-q017",
+      "topicId": "cdg-c10-t04",
+      "question": "Nell’esempio illustrativo con 25.000 € di maggiori ricavi, 8.000 € di costi evitati, 21.000 € nuovi e 4.000 € di margine perso, qual è ΔRO?",
+      "answer": "Il vantaggio A−B è +8.000 €.",
+      "detail": "Si sommano le componenti positive (+25.000 +8.000) e si sottraggono i costi emergenti (21.000) e il costo opportunità (4.000). Il calcolo dipende dall’effettiva evitabilità degli 8.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = 25.000 + 8.000 − 21.000 − 4.000 = +8.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.4, pagina PDF 121–122"
+    },
+    {
+      "id": "cdg-c10-q018",
+      "topicId": "cdg-c10-t04",
+      "question": "Perché la granularità temporale influenza un confronto differenziale?",
+      "answer": "Perché un costo una tantum e un costo ricorrente devono essere riferiti a periodi equivalenti.",
+      "detail": "Una penale pagata subito non è identica a una manutenzione da sostenere più anni. È necessario dichiarare la durata della decisione e includere solo gli effetti pertinenti a quel periodo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.4, pagina PDF 121–122"
+    },
+    {
+      "id": "cdg-c10-q019",
+      "topicId": "cdg-c10-t05",
+      "question": "Quali sono le tre condizioni che rendono rilevante un costo o un ricavo?",
+      "answer": "Deve essere futuro, differente tra alternative realistiche e modificato proprio dalla scelta considerata.",
+      "detail": "Il filtro esclude costi già irreversibili, spese comuni invarianti e valori che non cambiano scegliendo un’opzione. Si aggiungono tuttavia i benefici alternativi sacrificati, pur se non registrati in contabilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.5, pagina PDF 122–123"
+    },
+    {
+      "id": "cdg-c10-q020",
+      "topicId": "cdg-c10-t05",
+      "question": "Perché la rilevanza di una voce economica dipende dalla domanda gestionale?",
+      "answer": "Perché oggetto, alternative e orizzonte temporale cambiano ciò che la decisione può realmente modificare.",
+      "detail": "Un contratto di affitto può essere inevitabile questo mese ma rinegoziabile nel confronto fra assetti produttivi pluriennali. Una stessa voce è quindi irrilevante in un caso e rilevante in un altro.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.5, pagina PDF 122–123"
+    },
+    {
+      "id": "cdg-c10-q021",
+      "topicId": "cdg-c10-t05",
+      "question": "Un costo già sostenuto è rilevante per un ordine futuro?",
+      "answer": "No, se è irrevocabile e identico in entrambe le alternative; possono però rilevare valori recuperabili o opportunità future.",
+      "detail": "Il fatto che un macchinario sia costato molto non rende economicamente obbligatorio continuare a usarlo. Il prezzo ricavabile da una vendita attuale o un uso alternativo è invece una conseguenza futura.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§10.6 — Costi sommersi",
+        "§10.8 — Opportunità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.5, pagina PDF 122–123"
+    },
+    {
+      "id": "cdg-c10-q022",
+      "topicId": "cdg-c10-t05",
+      "question": "Perché i benefici alternativi sacrificati sono rilevanti anche se non figurano nel bilancio?",
+      "answer": "Perché sono conseguenze economiche della scelta che impedisce di utilizzare diversamente una risorsa.",
+      "detail": "Il costo opportunità misura un vantaggio realistico perduto. Senza di esso gli ordini con capacità satura possono sembrare convenienti anche quando distruggono più margine di quanto ne creino.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.5, pagina PDF 122–123"
+    },
+    {
+      "id": "cdg-c10-q023",
+      "topicId": "cdg-c10-t06",
+      "question": "Che cos’è un costo sommerso (sunk cost)?",
+      "answer": "Una spesa già sostenuta e non modificabile dalle alternative future considerate.",
+      "detail": "È esclusa dall’analisi differenziale perché il suo ammontare è identico qualunque sia la scelta. Non equivale ad affermare che il bene acquistato sia privo di valore attuale.",
+      "example": "Studio di fattibilità già pagato: il suo costo non cambia accettando o rifiutando una nuova commessa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.6, pagina PDF 123"
+    },
+    {
+      "id": "cdg-c10-q024",
+      "topicId": "cdg-c10-t06",
+      "question": "Come si distingue un costo evitabile da uno incrementale?",
+      "answer": "L’evitabile è una spesa futura che scompare con la scelta; l’incrementale è una spesa futura nuova o maggiore generata dalla scelta.",
+      "detail": "Per la chiusura di una linea conta il risparmio realmente ottenibile; per aprirne una contano le nuove risorse da impiegare. Entrambi sono rilevanti soltanto se differiscono tra le opzioni.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.6, pagina PDF 123"
+    },
+    {
+      "id": "cdg-c10-q025",
+      "topicId": "cdg-c10-t06",
+      "question": "Quando un costo contrattualmente impegnato diventa rilevante?",
+      "answer": "Quando la decisione può cambiarne il pagamento o generare una penale, oppure quando il rapporto è effettivamente interrompibile.",
+      "detail": "Se il contratto resta obbligatorio anche chiudendo il reparto, il costo non è evitabile; se la chiusura richiede una penale, questa è una voce emergente da confrontare con i risparmi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.6, pagina PDF 123"
+    },
+    {
+      "id": "cdg-c10-q026",
+      "topicId": "cdg-c10-t06",
+      "question": "Perché un costo comune allocato a un prodotto non è automaticamente eliminabile chiudendolo?",
+      "answer": "Perché il riparto contabile non dimostra che la risorsa comune non servirà più.",
+      "detail": "Le spese del direttore generale, per esempio, possono restare identiche. La loro attribuzione al prodotto riduce un margine contabile ma non costituisce necessariamente un risparmio futuro.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.6, pagina PDF 123"
+    },
+    {
+      "id": "cdg-c10-q027",
+      "topicId": "cdg-c10-t06",
+      "question": "Quali voci vengono escluse o incluse tipicamente in un’analisi differenziale?",
+      "answer": "Si escludono i costi passati irrecuperabili e quelli futuri invarianti; si includono costi nuovi, risparmi reali, penali causate dalla scelta e margini alternativi perduti.",
+      "detail": "L’analisi richiede un esame concreto di ogni voce, senza usare la sola classificazione del conto economico. Un costo fisso futuro può essere pertinente, mentre un ammortamento già destinato a maturare in ogni opzione può non esserlo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.6, pagina PDF 123"
+    },
+    {
+      "id": "cdg-c10-q028",
+      "topicId": "cdg-c10-t07",
+      "question": "In che cosa differiscono le classificazioni diretto/indiretto, fisso/variabile e rilevante/irrilevante?",
+      "answer": "Tracciabilità rispetto all’oggetto, comportamento con il volume e variazione fra alternative sono tre dimensioni distinte.",
+      "detail": "Un costo può essere diretto e fisso ma irrilevante per la decisione; un canone nuovo può essere fisso e rilevante; una spesa indiretta può crescere solo se si accetta la commessa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.7, pagina PDF 123"
+    },
+    {
+      "id": "cdg-c10-q029",
+      "topicId": "cdg-c10-t07",
+      "question": "Perché 4.000 € di ammortamento attribuiti a una commessa non sono sempre costi rilevanti?",
+      "answer": "Perché l’ammortamento può maturare comunque, anche senza la nuova commessa.",
+      "detail": "L’imputazione al progetto è una misura contabile. Se invece il progetto richiede il noleggio di una nuova macchina da 4.000 €, la spesa è aggiuntiva e quindi rilevante.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.7, pagina PDF 123"
+    },
+    {
+      "id": "cdg-c10-q030",
+      "topicId": "cdg-c10-t07",
+      "question": "Come può un costo fisso essere rilevante per una decisione di breve periodo?",
+      "answer": "Se nasce con una alternativa o scompare scegliendone un’altra.",
+      "detail": "La stabilità rispetto alle quantità non implica stabilità rispetto alle scelte. Il costo di un setup, un nuovo turno o un noleggio può essere fisso per l’ordine ma interamente evitabile rifiutandolo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.7, pagina PDF 123"
+    },
+    {
+      "id": "cdg-c10-q031",
+      "topicId": "cdg-c10-t07",
+      "question": "Come può un costo variabile risultare irrilevante?",
+      "answer": "Se è identico fra le alternative realistiche e perciò non modifica il vantaggio economico.",
+      "detail": "Variabilità rispetto al livello di produzione e differenza tra opzioni non coincidono. È necessario riferire ogni voce allo specifico confronto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.7, pagina PDF 123"
+    },
+    {
+      "id": "cdg-c10-q032",
+      "topicId": "cdg-c10-t08",
+      "question": "Che cosa si intende per costo opportunità?",
+      "answer": "Il beneficio della migliore alternativa praticabile a cui si rinuncia impiegando una risorsa in una scelta diversa.",
+      "detail": "Può consistere nel margine perduto di una commessa o nel ricavo netto di vendita di materiale già disponibile; normalmente non è un costo iscritto nella contabilità generale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.8, pagina PDF 123–124"
+    },
+    {
+      "id": "cdg-c10-q033",
+      "topicId": "cdg-c10-t08",
+      "question": "Nel caso di 500 racchette difettose, come si confrontano vendita immediata e rilavorazione?",
+      "answer": "Vendere subito genera 22.500 €; rilavorare e vendere genera 30.000 € netti; la rilavorazione conviene per 7.500 €.",
+      "detail": "La differenza per racchetta è 100 € di nuovo prezzo meno 40 € di lavorazione e meno 45 € ricavabili senza lavorare. I costi passati già comuni alle alternative non vengono riaddebitati.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = 500 × (100 − 40 − 45) = +7.500 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.8, pagina PDF 123–124"
+    },
+    {
+      "id": "cdg-c10-q034",
+      "topicId": "cdg-c10-t08",
+      "question": "Come si valuta un materiale già in magazzino quando viene richiesto per un nuovo ordine?",
+      "answer": "Si considera il miglior valore alternativo realisticamente sacrificato: realizzo netto, sostituzione o margine da altro impiego, secondo il caso.",
+      "detail": "Non si usa automaticamente il prezzo storico, che può essere sommerso. Se il materiale non ha altri impieghi né realizzo e non richiede reintegro, l’uso può avere costo incrementale nullo, salvo spese aggiuntive.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.8, pagina PDF 123–124"
+    },
+    {
+      "id": "cdg-c10-q035",
+      "topicId": "cdg-c10-t08",
+      "question": "In quale situazione il costo incrementale di un materiale già pagato può essere nullo?",
+      "answer": "Quando è inutilizzabile altrove, non rivendibile, non da sostituire e non richiede nuovi esborsi per essere impiegato.",
+      "detail": "Il costo storico non è recuperabile e l’uso non sacrifica alternative concrete; eventuali spese di trasporto, adattamento o lavorazione restano invece incrementali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.8, pagina PDF 123–124"
+    },
+    {
+      "id": "cdg-c10-q036",
+      "topicId": "cdg-c10-t08",
+      "question": "Perché il costo opportunità della capacità produttiva non coincide sempre con i ricavi persi?",
+      "answer": "Perché la risorsa alternativa avrebbe generato un margine, non necessariamente ricavi al netto di zero costi.",
+      "detail": "Quando una commessa ordinaria viene sacrificata, si considera il suo margine di contribuzione pertinente, cioè la differenza fra ricavi perduti e costi evitati; non l’intero fatturato.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§10.21 — Capacità satura"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.8, pagina PDF 123–124"
+    },
+    {
+      "id": "cdg-c10-q037",
+      "topicId": "cdg-c10-t09",
+      "question": "Come si distinguono certezza, rischio e incertezza nelle scelte manageriali?",
+      "answer": "Certezza: conseguenze note; rischio: esiti non certi ma probabilità assegnabili; incertezza: probabilità assenti o non affidabili.",
+      "detail": "Il metodo cambia: confronto diretto di ΔRO in certezza, valore atteso e scenari in rischio, criteri come maximin o minimax regret in incertezza. La distinzione dipende dalla qualità delle informazioni sugli stati futuri.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.9, pagina PDF 124"
+    },
+    {
+      "id": "cdg-c10-q038",
+      "topicId": "cdg-c10-t09",
+      "question": "Perché il rischio decisionale del Capitolo 10 non coincide con il rischio operativo del Capitolo 9?",
+      "answer": "Il rischio decisionale riguarda esiti futuri probabilistici; quello operativo riguarda la sensibilità del risultato alla struttura dei costi e ai volumi.",
+      "detail": "La leva operativa descrive una relazione economica. La matrice dei payoff descrive alternative sotto stati futuri; si tratta di prospettive complementari ma non identiche.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.9, pagina PDF 124"
+    },
+    {
+      "id": "cdg-c10-q039",
+      "topicId": "cdg-c10-t09",
+      "question": "Quale metodo si usa normalmente per scegliere fra alternative in condizioni di certezza?",
+      "answer": "Il confronto di risultati differenziali, preferendo l’alternativa con maggiore reddito operativo pertinente.",
+      "detail": "Il metodo presuppone che le conseguenze siano sufficientemente determinate e che tutte le alternative siano fattibili, comparabili e prive di effetti rilevanti esclusi dal modello.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO(A−B) > 0 → A preferibile a B}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.9, pagina PDF 124"
+    },
+    {
+      "id": "cdg-c10-q040",
+      "topicId": "cdg-c10-t09",
+      "question": "Perché una probabilità stimata non garantisce che il valore atteso sia il risultato che si realizzerà?",
+      "answer": "Perché il valore atteso è una media ponderata di esiti possibili, non una previsione certa del singolo evento.",
+      "detail": "Se una scelta ha due risultati, uno molto alto e uno negativo, la media può risultare positiva anche se la realizzazione concreta sarà diversa dalla media.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.9, pagina PDF 124"
+    },
+    {
+      "id": "cdg-c10-q041",
+      "topicId": "cdg-c10-t10",
+      "question": "Che cos’è uno stato di natura in una decisione sotto rischio o incertezza?",
+      "answer": "Una condizione futura esterna al controllo del decisore che modifica i payoff delle sue alternative.",
+      "detail": "La domanda bassa o alta, oppure un prezzo dei materiali favorevole o sfavorevole, sono esempi. Il manager sceglie l’azione ma non comanda lo stato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.10, pagina PDF 124"
+    },
+    {
+      "id": "cdg-c10-q042",
+      "topicId": "cdg-c10-t10",
+      "question": "Che cosa contiene una matrice dei payoff?",
+      "answer": "Per ogni coppia alternativa–stato di natura riporta il risultato economico associato.",
+      "detail": "Le righe sono le scelte, le colonne gli stati futuri, le celle i payoff. La matrice può essere analizzata anche senza probabilità mediante criteri prudenziali o di rimpianto.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§10.11 — Criteri senza probabilità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.10, pagina PDF 124"
+    },
+    {
+      "id": "cdg-c10-q043",
+      "topicId": "cdg-c10-t10",
+      "question": "Quali sono i tre tipi di probabilità trattati dal manuale?",
+      "answer": "Classica, frequentista e soggettiva.",
+      "detail": "La classica nasce da casi elementari equiprobabili; la frequentista dalle frequenze osservate in ripetizioni; la soggettiva da valutazioni esperte e motivate. Il loro grado di affidabilità può essere diverso.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.10, pagina PDF 124"
+    },
+    {
+      "id": "cdg-c10-q044",
+      "topicId": "cdg-c10-t10",
+      "question": "Quali vincoli matematici devono rispettare le probabilità degli stati di natura?",
+      "answer": "Ciascuna probabilità è compresa tra zero e uno e la somma delle probabilità degli stati esaustivi è uno.",
+      "detail": "Una distribuzione che non rispetta questi vincoli non può essere utilizzata correttamente nel calcolo del valore monetario atteso.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{0 ≤ p(sᵢ) ≤ 1}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{Σᵢ p(sᵢ) = 1}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.10, pagina PDF 124"
+    },
+    {
+      "id": "cdg-c10-q045",
+      "topicId": "cdg-c10-t10",
+      "question": "Come ci si comporta quando le probabilità future sono molto incerte o fragili?",
+      "answer": "Si dichiarano le ipotesi, si costruiscono scenari e si calcolano soglie che possono cambiare l’alternativa preferita.",
+      "detail": "Una probabilità assegnata soggettivamente non va presentata come certezza oggettiva. L’analisi di sensibilità rende visibile quanto la raccomandazione dipenda dalla stima iniziale.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§10.12 — Sensibilità"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.10, pagina PDF 124"
+    },
+    {
+      "id": "cdg-c10-q046",
+      "topicId": "cdg-c10-t11",
+      "question": "Come funziona il criterio maximax per payoff espressi come utili?",
+      "answer": "Per ogni azione si considera il suo payoff migliore, poi si sceglie l’azione con il massimo tra questi valori.",
+      "detail": "È un criterio ottimistico, orientato al risultato massimo possibile; non tiene conto del peggior esito delle alternative.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.11, pagina PDF 124–125"
+    },
+    {
+      "id": "cdg-c10-q047",
+      "topicId": "cdg-c10-t11",
+      "question": "Come funziona il criterio maximin per payoff espressi come utili?",
+      "answer": "Per ogni azione si considera il payoff peggiore, quindi si sceglie il migliore tra i minimi.",
+      "detail": "È un criterio prudenziale e protegge il risultato garantito nello scenario peggiore. Non significa che gli esiti peggiori siano probabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.11, pagina PDF 124–125"
+    },
+    {
+      "id": "cdg-c10-q048",
+      "topicId": "cdg-c10-t11",
+      "question": "Come si calcola il rimpianto di una scelta in uno stato di natura?",
+      "answer": "Si sottrae il payoff della scelta dal payoff massimo ottenibile nello stesso stato.",
+      "detail": "Il rimpianto quantifica il sacrificio per non aver selezionato l’azione migliore conoscendo lo stato futuro. Si calcola per colonna, non sottraendo direttamente i massimi delle righe.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Regret(a,s) = maxₐ Payoff(a,s) − Payoff(a,s)}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.11, pagina PDF 124–125"
+    },
+    {
+      "id": "cdg-c10-q049",
+      "topicId": "cdg-c10-t11",
+      "question": "Quale azione seleziona il criterio minimax regret?",
+      "answer": "Quella con il minore tra i massimi rimpianti delle alternative.",
+      "detail": "Prima si costruisce la matrice delle perdite d’opportunità, poi per ogni riga si determina il massimo rimpianto e se ne sceglie il minimo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.11, pagina PDF 124–125"
+    },
+    {
+      "id": "cdg-c10-q050",
+      "topicId": "cdg-c10-t11",
+      "question": "Che ruolo hanno i criteri di Laplace e Hurwicz quando mancano probabilità attendibili?",
+      "answer": "Laplace attribuisce pesi uguali agli stati per convenzione; Hurwicz combina miglior e peggior risultato con un coefficiente di ottimismo.",
+      "detail": "Sono criteri alternativi di decisione sotto incertezza. La scelta dei pesi o del coefficiente è una preferenza del decisore, non un fatto probabilistico accertato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.11, pagina PDF 124–125"
+    },
+    {
+      "id": "cdg-c10-q051",
+      "topicId": "cdg-c10-t11",
+      "question": "Che cautela è necessaria se la matrice contiene costi anziché utili?",
+      "answer": "Il verso della preferenza deve essere adattato, perché costi minori sono migliori.",
+      "detail": "Le regole formulate per massimizzare payoff monetari non vanno applicate meccanicamente a matrici in cui ogni cella rappresenta una spesa.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.11, pagina PDF 124–125"
+    },
+    {
+      "id": "cdg-c10-q052",
+      "topicId": "cdg-c10-t12",
+      "question": "Che cos’è il valore monetario atteso EV di un’alternativa?",
+      "answer": "È la somma dei payoff possibili ponderati per le rispettive probabilità degli stati.",
+      "detail": "Se si è neutrali al rischio e si vuole massimizzare il payoff medio, si seleziona l’alternativa con EV maggiore. Il valore non è l’esito certo della decisione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{EV(a) = Σₛ p(s) × Payoff(a,s)}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.12, pagina PDF 125"
+    },
+    {
+      "id": "cdg-c10-q053",
+      "topicId": "cdg-c10-t12",
+      "question": "Che cosa misura l’EVPI, valore atteso dell’informazione perfetta?",
+      "answer": "Il massimo beneficio medio teorico del conoscere in anticipo lo stato futuro prima di scegliere l’azione.",
+      "detail": "Con informazione perfetta si prende l’alternativa migliore in ciascuno stato; si confronta il valore atteso così ottenuto con il miglior EV conseguibile senza informazione. È un limite teorico al prezzo da pagare per un’informazione perfetta.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{EVPI = Σₛ p(s) × maxₐ Payoff(a,s) − maxₐ EV(a)}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.12, pagina PDF 125"
+    },
+    {
+      "id": "cdg-c10-q054",
+      "topicId": "cdg-c10-t12",
+      "question": "Perché l’EVPI non equivale automaticamente al budget per acquistare informazioni?",
+      "answer": "Perché è un limite superiore teorico in un modello di neutralità al rischio e informazione perfetta.",
+      "detail": "Informazioni parziali, imperfette o tardive possono avere un valore inferiore. Il valore va giudicato rispetto alle probabilità, ai payoff e all’obiettivo del decisore.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.12, pagina PDF 125"
+    },
+    {
+      "id": "cdg-c10-q055",
+      "topicId": "cdg-c10-t12",
+      "question": "Che cos’è un’analisi di sensibilità probabilistica?",
+      "answer": "È la variazione di una probabilità o di un altro parametro per determinare quando cambia la decisione più conveniente.",
+      "detail": "Per due alternative si uguagliano i relativi valori attesi in funzione della probabilità incognita; la soluzione fornisce la soglia di inversione. Se la stima è vicino alla soglia, la scelta è fragile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.12, pagina PDF 125"
+    },
+    {
+      "id": "cdg-c10-q056",
+      "topicId": "cdg-c10-t12",
+      "question": "Come si interpreta la neutralità al rischio nell’uso dei valori attesi?",
+      "answer": "Si preferisce l’alternativa con maggiore payoff medio, senza assegnare un peso aggiuntivo alla variabilità degli esiti.",
+      "detail": "Un manager avverso al rischio potrebbe preferire un risultato medio inferiore ma più stabile. Il manuale esplicita che massimizzare EV è una scelta di criterio, non una prescrizione assoluta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.12, pagina PDF 125"
+    },
+    {
+      "id": "cdg-c10-q057",
+      "topicId": "cdg-c10-t13",
+      "question": "Che cos’è un albero decisionale e cosa rappresentano i suoi nodi?",
+      "answer": "Rappresenta in sequenza decisioni e eventi aleatori; i nodi di scelta sono di norma quadrati e quelli aleatori cerchi.",
+      "detail": "Su ciascun ramo si specificano alternative, probabilità, flussi o payoff, distinguendo i fenomeni controllabili dal manager dagli stati futuri non controllabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.13, pagina PDF 125"
+    },
+    {
+      "id": "cdg-c10-q058",
+      "topicId": "cdg-c10-t13",
+      "question": "Come si risolve un albero decisionale a più stadi?",
+      "answer": "Con il procedimento all’indietro: si calcolano prima i valori attesi dei nodi aleatori finali, poi si scelgono le azioni migliori nei nodi decisionali.",
+      "detail": "La rappresentazione rende visibile quando arriva l’informazione e quali scelte diventano disponibili dopo i diversi eventi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.13, pagina PDF 125"
+    },
+    {
+      "id": "cdg-c10-q059",
+      "topicId": "cdg-c10-t13",
+      "question": "In che cosa consiste una simulazione Monte Carlo applicata a decisioni economiche?",
+      "answer": "Si definiscono distribuzioni per le variabili incerte, si generano numerosi scenari coerenti e si osserva la distribuzione dei risultati.",
+      "detail": "Diversamente da un valore atteso su pochi stati, la simulazione può integrare molte fonti di variabilità. Il manuale cita a titolo esemplificativo Oracle Crystal Ball.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La simulazione non crea automaticamente probabilità attendibili: dipende dagli input.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.13, pagina PDF 125"
+    },
+    {
+      "id": "cdg-c10-q060",
+      "topicId": "cdg-c10-t13",
+      "question": "Quali sono i limiti concettuali della simulazione Monte Carlo?",
+      "answer": "La qualità della distribuzione dei risultati dipende dalle ipotesi, dalle distribuzioni e dalle relazioni fra input.",
+      "detail": "Aumentare il numero delle simulazioni non corregge dati non rappresentativi. Nel manuale il richiamo è metodologico e non implica di dover programmare durante la prova scritta salvo indicazioni diverse.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.13, pagina PDF 125"
+    },
+    {
+      "id": "cdg-c10-q061",
+      "topicId": "cdg-c10-t13",
+      "question": "Quale vantaggio offre un albero decisionale rispetto a una semplice matrice dei payoff?",
+      "answer": "Rende esplicita la sequenza temporale di scelte, eventi e informazioni disponibili, non solo il risultato finale azione–stato.",
+      "detail": "È utile quando una decisione iniziale può aprire scelte successive condizionate da eventi osservati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.13, pagina PDF 125"
+    },
+    {
+      "id": "cdg-c10-q062",
+      "topicId": "cdg-c10-t14",
+      "question": "Che cosa si intende per segmento nell’analisi delle decisioni di breve periodo?",
+      "answer": "Una parte dell’attività con ricavi e costi identificabili, come linea di prodotto, mercato, clienti o reparto.",
+      "detail": "Le decisioni di aggiungere o chiudere un segmento richiedono il contributo economico che esso genera o assorbe, tenendo separati costi fissi comuni allocati e costi effettivamente evitabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.14, pagina PDF 125–126"
+    },
+    {
+      "id": "cdg-c10-q063",
+      "topicId": "cdg-c10-t14",
+      "question": "Quando conviene aggiungere un segmento?",
+      "answer": "Quando il margine dei nuovi ricavi al netto dei costi variabili supera i nuovi fissi specifici, i margini alternativi sacrificati e gli altri costi incrementali.",
+      "detail": "Il confronto riguarda il risultato complessivo dell’impresa, non solo il conto economico attribuito al nuovo segmento.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO aggiunta = MdC nuovo − CF nuovi − costi opportunità − altri oneri emergenti}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.14, pagina PDF 125–126"
+    },
+    {
+      "id": "cdg-c10-q064",
+      "topicId": "cdg-c10-t14",
+      "question": "Quando conviene eliminare un segmento?",
+      "answer": "Quando i costi realmente eliminabili e i benefici del riutilizzo delle risorse superano il margine di contribuzione che cesserebbe con la chiusura.",
+      "detail": "I costi fissi comuni che rimangono non sono risparmi. Eventuali effetti su vendite collegate, fidelizzazione o utilizzi alternativi modificano il risultato.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO chiusura = CF eliminabili + benefici alternativi − MdC cessante}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.14, pagina PDF 125–126"
+    },
+    {
+      "id": "cdg-c10-q065",
+      "topicId": "cdg-c10-t14",
+      "question": "Come si calcola il margine di segmento dopo i fissi specifici evitabili?",
+      "answer": "Sottraendo ai ricavi i costi variabili e i costi fissi specifici effettivamente eliminabili.",
+      "detail": "Il valore indica il contributo che si perderebbe chiudendo la linea in assenza di altre conseguenze. Un costo specifico può essere non eliminabile nel breve termine, e in tal caso non va sottratto come risparmio possibile.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{MdC di segmento = Ricavi segmento − CV segmento − CF specifici evitabili}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.14, pagina PDF 125–126"
+    },
+    {
+      "id": "cdg-c10-q066",
+      "topicId": "cdg-c10-t14",
+      "question": "Perché una linea in perdita dopo riparto dei costi comuni può essere conveniente da mantenere?",
+      "answer": "Perché può generare un margine positivo destinato a coprire costi comuni che continuerebbero anche dopo la chiusura.",
+      "detail": "Eliminandola si perdono ricavi e margine, ma non necessariamente le spese di struttura; il risultato aziendale può peggiorare.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§10.15 — Industrial-Textil"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.14, pagina PDF 125–126"
+    },
+    {
+      "id": "cdg-c10-q067",
+      "topicId": "cdg-c10-t15",
+      "question": "Quali dati caratterizzano la linea M nel caso Industrial-Textil?",
+      "answer": "Ricavi 300.000 €, costi variabili 192.000 €, costi fissi e generali attribuiti 144.000 €, dei quali solo 40.000 € eliminabili.",
+      "detail": "Il conto economico per linea evidenzia −36.000 €, ma la quota di 104.000 € non eliminabile continuerebbe anche dopo la chiusura.",
+      "example": "MdC prima dei fissi = 300.000 − 192.000 = 108.000 €.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.15, pagina PDF 126"
+    },
+    {
+      "id": "cdg-c10-q068",
+      "topicId": "cdg-c10-t15",
+      "question": "Qual è il margine decisionale della linea M di Industrial-Textil?",
+      "answer": "+68.000 €, pari al margine di contribuzione di 108.000 € meno 40.000 € di fissi realmente eliminabili.",
+      "detail": "La linea contribuisce positivamente al risultato complessivo nonostante la perdita contabile imputata di 36.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Margine segmento = 300.000 − 192.000 − 40.000 = 68.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.15, pagina PDF 126"
+    },
+    {
+      "id": "cdg-c10-q069",
+      "topicId": "cdg-c10-t15",
+      "question": "Che effetto avrebbe chiudere la linea M senza impieghi alternativi?",
+      "answer": "Riduzione del risultato aziendale di 68.000 €: non conviene chiuderla nelle ipotesi del caso.",
+      "detail": "Si perdono 300.000 € di ricavi, si evitano 192.000 € variabili e 40.000 € fissi: il saldo è negativo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO chiusura = −300.000 + 192.000 + 40.000 = −68.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.15, pagina PDF 126"
+    },
+    {
+      "id": "cdg-c10-q070",
+      "topicId": "cdg-c10-t15",
+      "question": "Quando la chiusura della linea M potrebbe diventare conveniente?",
+      "answer": "Se i benefici economici netti ottenibili riutilizzando le risorse superassero 68.000 €, oppure se altri effetti rilevanti modificassero il confronto.",
+      "detail": "La capacità liberata ha un costo opportunità: la sua destinazione alternativa può ribaltare la conclusione, purché il beneficio sia concretamente conseguibile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.15, pagina PDF 126"
+    },
+    {
+      "id": "cdg-c10-q071",
+      "topicId": "cdg-c10-t15",
+      "question": "Qual è l’errore decisivo nel leggere la perdita contabile di Industrial-Textil?",
+      "answer": "Interpretare i −36.000 € di risultato attribuito come risparmio ottenibile chiudendo il segmento.",
+      "detail": "Una parte consistente della perdita deriva da costi comuni o fissi che non scompaiono. Il confronto deve usare il margine sacrificato, non il risultato a full costing.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Perdita contabile attribuita ≠ effetto economico della chiusura.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.15, pagina PDF 126"
+    },
+    {
+      "id": "cdg-c10-q072",
+      "topicId": "cdg-c10-t16",
+      "question": "Quali sono i dati rilevanti della linea Rossetti nel caso Arcari 8.1?",
+      "answer": "Ricavi 1.350.000 €, provvigioni 81.000 €, costi variabili di prodotto 1.000.000 € e costi fissi specifici 190.000 €.",
+      "detail": "Nel manuale i valori provengono dalla soluzione editoriale disponibile; non viene ricostruita una traccia integrale mancante.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.16, pagina PDF 126–127"
+    },
+    {
+      "id": "cdg-c10-q073",
+      "topicId": "cdg-c10-t16",
+      "question": "Come si determina il primo margine di contribuzione dei Rossetti?",
+      "answer": "269.000 €, sottraendo ai ricavi provvigioni e costi variabili di prodotto.",
+      "detail": "Le provvigioni costituiscono una voce variabile pertinente nel perimetro dell’esercizio.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{MdC = 1.350.000 − 81.000 − 1.000.000 = 269.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.16, pagina PDF 126–127"
+    },
+    {
+      "id": "cdg-c10-q074",
+      "topicId": "cdg-c10-t16",
+      "question": "Qual è il margine dei Rossetti dopo tutti i costi fissi specifici indicati?",
+      "answer": "79.000 €, assumendo che i 190.000 € siano inclusi integralmente nel confronto.",
+      "detail": "Se tali costi risultano tutti evitabili, chiudere la linea farebbe perdere 79.000 € di contributo al risultato delle due aree.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{269.000 − 190.000 = 79.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.16, pagina PDF 126–127"
+    },
+    {
+      "id": "cdg-c10-q075",
+      "topicId": "cdg-c10-t16",
+      "question": "Perché occorre verificare la quota di 80.000 € di ammortamenti dei Rossetti?",
+      "answer": "Perché un costo specifico contabilizzato può non essere evitabile nel periodo della decisione.",
+      "detail": "Se l’ammortamento non si elimina con la chiusura, il risparmio effettivo sui fissi scende e il margine perso chiudendo risulta più elevato rispetto ai 79.000 € ottenuti sottraendo tutti i fissi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.16, pagina PDF 126–127"
+    },
+    {
+      "id": "cdg-c10-q076",
+      "topicId": "cdg-c10-t16",
+      "question": "Come devono essere trattati i 930.000 € di fissi comuni aziendali del caso Rossetti?",
+      "answer": "Non si assumono eliminabili per la sola chiusura della linea.",
+      "detail": "Sono costi comuni: vanno eventualmente considerati solo per la porzione che cambiasse davvero in conseguenza della scelta; il riparto non prova alcun risparmio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.16, pagina PDF 126–127"
+    },
+    {
+      "id": "cdg-c10-q077",
+      "topicId": "cdg-c10-t17",
+      "question": "Che cos’è un ordine speciale e quali due verifiche sono indispensabili?",
+      "answer": "Una vendita aggiuntiva con condizioni particolari; occorre verificare fattibilità della capacità e vantaggio economico incrementale.",
+      "detail": "L’ordine può richiedere un prezzo ribassato, una personalizzazione o una consegna diversa. La convenienza dipende da costi nuovi, penali e margini sacrificati, non dal costo pieno storico.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.17, pagina PDF 127"
+    },
+    {
+      "id": "cdg-c10-q078",
+      "topicId": "cdg-c10-t17",
+      "question": "Come si calcolano ore necessarie e ore residue per un ordine speciale?",
+      "answer": "Ore richieste = quantità × ore per unità; ore residue = ore disponibili meno ore già impegnate.",
+      "detail": "Se le ore richieste superano quelle libere, bisogna valutare riduzione della produzione ordinaria, ore aggiuntive o impossibilità contrattuale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{H_richieste = Q × h_u}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{H_residue = H_disponibili − H_impegnate}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.17, pagina PDF 127"
+    },
+    {
+      "id": "cdg-c10-q079",
+      "topicId": "cdg-c10-t17",
+      "question": "Qual è la formula completa del ΔRO di un ordine speciale nel modello del manuale?",
+      "answer": "Margine aggiuntivo dell’ordine meno costi fissi incrementali, costi opportunità e altre penali.",
+      "detail": "Il costo variabile pertinente deve essere effettivamente prodotto dall’ordine; commissioni non dovute e fissi preesistenti invarianti non si sottraggono.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = Q × (P_speciale − CV_unitario_pertinente) − CF_incrementali − opportunità − penali}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.17, pagina PDF 127"
+    },
+    {
+      "id": "cdg-c10-q080",
+      "topicId": "cdg-c10-t17",
+      "question": "Perché un ordine speciale con prezzo inferiore al costo pieno può comunque essere conveniente?",
+      "answer": "Perché la quota di costi fissi non incrementali già assorbita nel costo pieno non cambia accettando l’ordine.",
+      "detail": "Se esiste capacità libera e il prezzo copre i costi effettivamente nuovi, la commessa può generare contributo positivo; devono però essere sottratti setup, penali e sacrifici reali.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.17, pagina PDF 127"
+    },
+    {
+      "id": "cdg-c10-q081",
+      "topicId": "cdg-c10-t17",
+      "question": "Come cambia l’analisi se l’ordine speciale usa capacità già satura?",
+      "answer": "Si deve includere il margine di contribuzione della produzione ordinaria che viene abbandonata o il costo della migliore alternativa di recupero.",
+      "detail": "La capacità residua è un bene economicamente scarso. Ignorare il contributo perduto sovrastima il vantaggio del nuovo ordine.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§10.21 — Capacità satura"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.17, pagina PDF 127"
+    },
+    {
+      "id": "cdg-c10-q082",
+      "topicId": "cdg-c10-t18",
+      "question": "Nel caso Delta, quante ore macchina sono disponibili per ordini speciali?",
+      "answer": "450 ore mensili, pari al 30% delle 1.500 ore del reparto.",
+      "detail": "Il reparto usa il 70% della capacità nella produzione ordinaria; il nuovo ordine di 2.000 litri richiede 400 ore e risulta tecnicamente eseguibile.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{H_libere = 1.500 × 0,30 = 450 h}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{H_ordine = 2.000 × 0,2 = 400 h}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.18, pagina PDF 127–128"
+    },
+    {
+      "id": "cdg-c10-q083",
+      "topicId": "cdg-c10-t18",
+      "question": "Qual è il costo variabile pertinente unitario del caso Delta?",
+      "answer": "19,50 €/litro, somma di 12 materiali, 1 provvigioni, 3,50 manodopera e 3 indiretti variabili.",
+      "detail": "Con prezzo speciale 20 €/litro, il contributo unitario è soltanto 0,50 €/litro.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{CV_unitario = 12 + 1 + 3,50 + 3 = 19,50 €/l}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{MdC_u = 20 − 19,50 = 0,50 €/l}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.18, pagina PDF 127–128"
+    },
+    {
+      "id": "cdg-c10-q084",
+      "topicId": "cdg-c10-t18",
+      "question": "Qual è la convenienza dell’ordine Delta da 2.000 litri?",
+      "answer": "ΔRO = −2.000 €, quindi il rifiuto è economicamente preferibile pur essendo l’ordine fattibile.",
+      "detail": "Il MdC complessivo è 1.000 € ma i nuovi fissi sono 3.000 €. La fattibilità tecnica non equivale a convenienza economica.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = 2.000 × 0,50 − 3.000 = −2.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.18, pagina PDF 127–128"
+    },
+    {
+      "id": "cdg-c10-q085",
+      "topicId": "cdg-c10-t18",
+      "question": "Qual è la soglia economica di indifferenza del caso Delta?",
+      "answer": "6.000 litri, ottenuti dividendo i 3.000 € di costi fissi nuovi per 0,50 €/litro di margine.",
+      "detail": "La soglia è valida algebricamente alle condizioni di prezzo e costo indicate; non dimostra che esista capacità sufficiente.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Q* = 3.000 / 0,50 = 6.000 litri}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.18, pagina PDF 127–128"
+    },
+    {
+      "id": "cdg-c10-q086",
+      "topicId": "cdg-c10-t18",
+      "question": "Perché nel caso Delta la soglia economica di 6.000 litri non è realizzabile nelle condizioni date?",
+      "answer": "Perché 450 ore libere, a 0,2 ore per litro, consentono al massimo 2.250 litri.",
+      "detail": "Raggiungere la soglia richiederebbe ampliare capacità, sottrarre ore alla produzione ordinaria o modificare costi e prezzi. Non si deve confondere la soluzione matematica con una scelta fattibile.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Q_max_tecnico = 450 / 0,2 = 2.250 litri}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.18, pagina PDF 127–128"
+    },
+    {
+      "id": "cdg-c10-q087",
+      "topicId": "cdg-c10-t19",
+      "question": "Quante ore libere e quante ore richieste emergono dal caso Arcari Drinking?",
+      "answer": "3.600 ore disponibili nel trimestre e 2.400 ore necessarie per l’ordine di 12.000 unità.",
+      "detail": "La capacità libera deriva da 4.000 ore mensili per tre mesi al 30%; l’ordine assorbe 0,20 ore per unità. Rimangono 1.200 ore libere.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{H_libere = 4.000 × 3 × 0,30 = 3.600 h}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{H_richieste = 12.000 × 0,20 = 2.400 h}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.19, pagina PDF 128"
+    },
+    {
+      "id": "cdg-c10-q088",
+      "topicId": "cdg-c10-t19",
+      "question": "Qual è il costo variabile unitario pertinente del caso Drinking?",
+      "answer": "2,00 € per unità: materiali 0,80 €, MOD 0,40 € e indiretti variabili 0,80 €.",
+      "detail": "Il prezzo speciale è 2,50 €/unità e genera un MdC unitario di 0,50 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{CV_u = 0,80 + 0,40 + 0,80 = 2,00 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{MdC_u = 2,50 − 2,00 = 0,50 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.19, pagina PDF 128"
+    },
+    {
+      "id": "cdg-c10-q089",
+      "topicId": "cdg-c10-t19",
+      "question": "Qual è il ΔRO dell’ordine speciale Drinking?",
+      "answer": "+2.500 €: l’ordine è conveniente alle condizioni del caso.",
+      "detail": "Il MdC totale di 6.000 € supera i 3.500 € di fissi incrementali. L’ordine è anche fattibile entro le ore libere.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = 12.000 × 0,50 − 3.500 = +2.500 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.19, pagina PDF 128"
+    },
+    {
+      "id": "cdg-c10-q090",
+      "topicId": "cdg-c10-t19",
+      "question": "Come si ricava la componente indiretta variabile di 0,80 €/unità nel caso Drinking?",
+      "answer": "Si separa la tariffa fissa dalla tariffa totale: 6 − 96.000/48.000 = 4 €/ora variabili, moltiplicati per 0,20 ore.",
+      "detail": "Non si devono imputare al nuovo ordine tutti i 6 €/ora se i 2 €/ora di quota fissa non sono incrementali.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{CIV/h = 6 − (96.000/48.000) = 4 €/h}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{CIV/u = 4 × 0,20 = 0,80 €/u}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.19, pagina PDF 128"
+    },
+    {
+      "id": "cdg-c10-q091",
+      "topicId": "cdg-c10-t20",
+      "question": "Quali dati contabili e decisionali distingue il caso dei camici ospedalieri?",
+      "answer": "Prezzo ordinario 32,50 €, costo pieno 26,20 €, costo diretto di produzione 24,50 €, costo variabile pertinente 20,50 €.",
+      "detail": "L’ospedale richiede 5.500 camici a 24 € e l’accettazione impone una penale di 18.000 € per una consegna ritardata. Per la scelta si usano costi pertinenti e penale, non il costo pieno.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.20, pagina PDF 128"
+    },
+    {
+      "id": "cdg-c10-q092",
+      "topicId": "cdg-c10-t20",
+      "question": "Come si calcolano i ricavi e i costi variabili incrementali dell’ordine dei camici?",
+      "answer": "Ricavi 132.000 € e costi variabili 112.750 €.",
+      "detail": "Il margine prima della penale è 19.250 €; i costi fissi preesistenti che non cambiano non riducono il differenziale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{R = 5.500 × 24 = 132.000 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{CV = 5.500 × 20,50 = 112.750 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.20, pagina PDF 128"
+    },
+    {
+      "id": "cdg-c10-q093",
+      "topicId": "cdg-c10-t20",
+      "question": "Qual è il ΔRO dell’ordine di camici con penale?",
+      "answer": "+1.250 €: economicamente favorevole, se la penale esaurisce gli effetti del ritardo.",
+      "detail": "La scelta rimane fragile perché il vantaggio è modesto e potrebbe essere annullato da trasporto straordinario, resi o perdita di fiducia del cliente abituale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = 132.000 − 112.750 − 18.000 = +1.250 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.20, pagina PDF 128"
+    },
+    {
+      "id": "cdg-c10-q094",
+      "topicId": "cdg-c10-t20",
+      "question": "Quali sono i due errori speculari nella valutazione dell’ordine dei camici?",
+      "answer": "Rifiutarlo solo perché il prezzo speciale è inferiore al costo pieno e accettarlo ignorando la penale.",
+      "detail": "La porzione di costo pieno non incrementale è irrilevante, mentre il danno contrattuale di 18.000 € nasce con l’accettazione e deve ridurre il contributo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.20, pagina PDF 128"
+    },
+    {
+      "id": "cdg-c10-q095",
+      "topicId": "cdg-c10-t21",
+      "question": "Come si determina il costo opportunità quando si sacrifica produzione ordinaria?",
+      "answer": "Moltiplicando le unità ordinarie rinunciate per il relativo MdC unitario pertinente.",
+      "detail": "Se si rinuncia a 300 unità con MdC 8 €, il costo opportunità è 2.400 €. Se si possono recuperare le vendite con straordinari, va confrontato il costo del recupero con il margine perso.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Costo opportunità = unità rinunciate × MdC ordinario/u}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.21, pagina PDF 128–129"
+    },
+    {
+      "id": "cdg-c10-q096",
+      "topicId": "cdg-c10-t21",
+      "question": "Quale problema di capacità presenta l’ordine Lucix del caso Arcari 8.4?",
+      "answer": "Richiede 6.250 ore per 25.000 unità da 0,25 ore, contro 6.000 ore residue.",
+      "detail": "L’ordine integrale è tecnicamente non eseguibile usando solo la capacità libera: occorre recuperare 250 ore, sacrificare altra produzione o concordare un ordine parziale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{25.000 × 0,25 = 6.250 h > 6.000 h}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.21, pagina PDF 128–129"
+    },
+    {
+      "id": "cdg-c10-q097",
+      "topicId": "cdg-c10-t21",
+      "question": "Come si valuta economicamente l’ordine integrale Lucix sacrificando 1.000 pezzi standard?",
+      "answer": "Il nuovo ordine genera 8.750 € di MdC e sacrifica 600 € di MdC ordinario: vantaggio netto 8.150 €.",
+      "detail": "Il MdC speciale è 6 − 3,25 − 2 − 0,40 = 0,35 €/unità; le 250 ore mancanti comportano la rinuncia a 1.000 pezzi con 0,60 €/pezzo di contributo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{MdC_u_Lucix = 0,35 €/u}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{ΔRO = 25.000×0,35 − 1.000×0,60 = +8.150 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.21, pagina PDF 128–129"
+    },
+    {
+      "id": "cdg-c10-q098",
+      "topicId": "cdg-c10-t21",
+      "question": "Qual è il vantaggio dell’alternativa Lucix parziale da 24.000 unità?",
+      "answer": "8.400 € di MdC, prima di altri effetti commerciali.",
+      "detail": "Le 6.000 ore residue permettono 24.000 × 0,25 ore. Il risultato supera gli 8.150 € dell’ordine integrale dopo sacrificio di vendite standard, ma la scelta reale dipende anche dalla possibilità di accettazione parziale.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{24.000 × 0,35 = 8.400 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.21, pagina PDF 128–129"
+    },
+    {
+      "id": "cdg-c10-q099",
+      "topicId": "cdg-c10-t21",
+      "question": "Qual è la convenienza dell’ordine Sole nel caso Arcari 8.4?",
+      "answer": "È tecnicamente fattibile ma economicamente sfavorevole per 500 €.",
+      "detail": "Occorrono 5.000 ore su 6.000 libere. Il MdC è 7,50 − 4,25 − 2 − 0,80 = 0,45 €/unità; su 10.000 unità produce 4.500 €, meno dei 5.000 € di fissi nuovi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = 10.000×0,45 − 5.000 = −500 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.21, pagina PDF 128–129"
+    },
+    {
+      "id": "cdg-c10-q100",
+      "topicId": "cdg-c10-t21",
+      "question": "Qual è il risultato make/buy separato riportato nel fascicolo Arcari 8.4?",
+      "answer": "MAKE è più conveniente di 97.500 €: costo pertinente interno 1.822.500 € contro prezzo esterno 1.920.000 € per 1.000 pezzi.",
+      "detail": "Il prezzo unitario di indifferenza del BUY è 1.822,50 €. La soluzione tratta il 25% di una quota di fissi come evitabile: il restante 75% non va aggiunto automaticamente.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{1.920.000 − 1.822.500 = 97.500 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{Prezzo BUY indifferenza = 1.822,50 €/pezzo}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.21, pagina PDF 128–129"
+    },
+    {
+      "id": "cdg-c10-q101",
+      "topicId": "cdg-c10-t22",
+      "question": "Che cosa confronta la decisione make or buy?",
+      "answer": "Il costo economicamente rilevante della produzione interna con quello dell’acquisto da un fornitore esterno.",
+      "detail": "I due percorsi devono assicurare output comparabili per quantità e qualità; il costo pieno contabile interno può contenere quote che non scomparirebbero scegliendo il BUY.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.22, pagina PDF 129"
+    },
+    {
+      "id": "cdg-c10-q102",
+      "topicId": "cdg-c10-t22",
+      "question": "Quali componenti formano il costo rilevante del MAKE?",
+      "answer": "Costi variabili interni, fissi interni realmente evitabili e costo opportunità della capacità impiegata.",
+      "detail": "Occorre includere solo voci che differiscono rispetto al BUY. Se il personale interno rimane retribuito in entrambi gli scenari, il suo costo va valutato secondo l’effettiva eliminabilità e l’eventuale uso alternativo.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{MAKE_rilevante = CV_interni + CF_interni_evitabili + opportunità}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.22, pagina PDF 129"
+    },
+    {
+      "id": "cdg-c10-q103",
+      "topicId": "cdg-c10-t22",
+      "question": "Quali componenti formano il costo rilevante del BUY?",
+      "answer": "Prezzo del fornitore, costi accessori incrementali e fissi specifici residui legati all’acquisto.",
+      "detail": "Trasporto, controllo qualità, avvio fornitura, logistica e penali possono modificare il costo dell’esternalizzazione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{BUY_rilevante = prezzo_fornitore + oneri_accessori_incrementali + CF_specifici_BUY}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.22, pagina PDF 129"
+    },
+    {
+      "id": "cdg-c10-q104",
+      "topicId": "cdg-c10-t22",
+      "question": "Come si tratta il margine di un altro prodotto reso possibile dal BUY?",
+      "answer": "Come beneficio del BUY oppure come costo opportunità del MAKE, ma una sola volta.",
+      "detail": "L’acquisto può liberare ore macchina per una commessa alternativa. Contare il beneficio due volte distorcerebbe la scelta; ignorarlo potrebbe far preferire impropriamente il MAKE.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.22, pagina PDF 129"
+    },
+    {
+      "id": "cdg-c10-q105",
+      "topicId": "cdg-c10-t22",
+      "question": "Da quali equazioni deriva il volume di indifferenza make/buy?",
+      "answer": "Uguagliando MAKE = F + cQ e BUY = bQ si ottiene Q* = F/(b−c), per b>c.",
+      "detail": "F è il fisso realmente legato al MAKE, c il costo interno variabile per unità e b il costo esterno completo per unità. Sotto la soglia il BUY può essere preferibile; sopra, il MAKE, se valgono capacità e prezzi del modello.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{F + cQ* = bQ*}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{Q* = F/(b−c), con b>c}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.22, pagina PDF 129"
+    },
+    {
+      "id": "cdg-c10-q106",
+      "topicId": "cdg-c10-t22",
+      "question": "Perché la soglia make/buy richiede verifiche di validità?",
+      "answer": "Perché presuppone prezzi unitari costanti, fissi effettivamente differenziali e capacità sufficiente nell’intervallo analizzato.",
+      "detail": "Se sono presenti scale di produzione, nuove soglie di capacità o altri benefici, la relazione lineare può non descrivere più correttamente il confronto.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare Q* quando b≤c senza riesaminare la struttura della decisione.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.22, pagina PDF 129"
+    },
+    {
+      "id": "cdg-c10-q107",
+      "topicId": "cdg-c10-t23",
+      "question": "Quali dati unitari caratterizzano il caso Arcari Omega?",
+      "answer": "Per 10.000 componenti il costo pertinente MAKE è 49 €/unità (22+8+13+6); il fornitore chiede 53 €/unità.",
+      "detail": "Le quote fisse non evitabili vanno escluse. Il caso assume condizioni quantitative e qualitative comparabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.23, pagina PDF 129–130"
+    },
+    {
+      "id": "cdg-c10-q108",
+      "topicId": "cdg-c10-t23",
+      "question": "Quale alternativa conviene nel caso Omega senza utilizzi alternativi della capacità?",
+      "answer": "MAKE: costo 490.000 € contro 530.000 € del BUY, con risparmio di 40.000 €.",
+      "detail": "Il confronto usa i costi rilevanti e non carica al MAKE componenti non eliminabili identiche fra le due opzioni.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{MAKE = 10.000×49 = 490.000 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{BUY = 10.000×53 = 530.000 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{Risparmio MAKE = 40.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.23, pagina PDF 129–130"
+    },
+    {
+      "id": "cdg-c10-q109",
+      "topicId": "cdg-c10-t23",
+      "question": "Come cambia Omega se produrre internamente fa perdere un’altra commessa da 50.000 € di margine?",
+      "answer": "Il BUY diventa preferibile per 10.000 €, perché il costo economico del MAKE sale a 540.000 €.",
+      "detail": "Il margine alternativo sacrificato è una conseguenza della saturazione delle risorse interne. Il suo valore supera il risparmio iniziale di 40.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{MAKE_con_opportunità = 490.000 + 50.000 = 540.000 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{Vantaggio BUY = 540.000 − 530.000 = 10.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.23, pagina PDF 129–130"
+    },
+    {
+      "id": "cdg-c10-q110",
+      "topicId": "cdg-c10-t23",
+      "question": "Qual è la condizione non monetaria essenziale per accettare la conclusione del caso Omega?",
+      "answer": "Che qualità, capacità e rischi delle alternative siano sostanzialmente comparabili.",
+      "detail": "Una soluzione esterna economicamente più economica ma inaffidabile, o una produzione interna non realizzabile, richiedono un giudizio più ampio del semplice confronto unitario.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.23, pagina PDF 129–130"
+    },
+    {
+      "id": "cdg-c10-q111",
+      "topicId": "cdg-c10-t24",
+      "question": "Quali fattori qualitativi devono accompagnare una scelta di outsourcing?",
+      "answer": "Continuità delle forniture, tempi, elasticità dei volumi, qualità, riservatezza, dipendenza tecnologica, rischi contrattuali e sicurezza.",
+      "detail": "Una scelta con minor costo differenziale può essere inaccettabile se aumenta il rischio di interruzione dell’attività, perdita di dati o impossibilità di soddisfare requisiti minimi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.24, pagina PDF 130"
+    },
+    {
+      "id": "cdg-c10-q112",
+      "topicId": "cdg-c10-t24",
+      "question": "Nel settore software, quali voci aggiuntive vanno considerate confrontando sviluppo interno e licenza esterna?",
+      "answer": "Integrazione, collaudo, aggiornamenti, supporto, formazione, uscita dal fornitore e costo opportunità del tempo sottratto ad altri progetti.",
+      "detail": "Il solo confronto tra stipendio degli sviluppatori e canone del software non dimostra la convenienza; lo stipendio può essere già vincolato nel trimestre e quindi non eliminabile.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.24, pagina PDF 130"
+    },
+    {
+      "id": "cdg-c10-q113",
+      "topicId": "cdg-c10-t24",
+      "question": "Perché una decisione di outsourcing può avere implicazioni strategiche pur nascendo da un problema operativo?",
+      "answer": "Perché ripetere l’acquisto esterno può creare dipendenza dal fornitore e perdita di competenze interne.",
+      "detail": "La decisione di breve periodo deve specificare orizzonte, reversibilità e rischio di lock-in quando questi possono incidere sul futuro della capacità aziendale.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§10.2 — Operativo e strategico"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.24, pagina PDF 130"
+    },
+    {
+      "id": "cdg-c10-q114",
+      "topicId": "cdg-c10-t25",
+      "question": "Che cos’è il punto di separazione (split-off) in un processo con prodotti congiunti?",
+      "answer": "Il momento in cui gli output diventano identificabili e possono, a seconda del processo, essere venduti separatamente o ulteriormente lavorati.",
+      "detail": "Dal punto di separazione in avanti si confrontano ricavi ulteriori e costi aggiuntivi specifici. I costi congiunti precedenti sono comuni alle opzioni di vendita o lavorazione.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.25, pagina PDF 130"
+    },
+    {
+      "id": "cdg-c10-q115",
+      "topicId": "cdg-c10-t25",
+      "question": "Qual è la formula per decidere se proseguire una lavorazione dopo lo split-off?",
+      "answer": "Incremento del ricavo di vendita meno costi incrementali successivi di trasformazione, commercializzazione ed eventuale capacità sacrificata.",
+      "detail": "Se il risultato è positivo e l’alternativa è praticabile, lavorare ulteriormente conviene; altrimenti può essere preferibile vendere subito.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = (Ricavi_dopo − Ricavi_split-off) − Costi_successivi_incrementali}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.25, pagina PDF 130"
+    },
+    {
+      "id": "cdg-c10-q116",
+      "topicId": "cdg-c10-t25",
+      "question": "Perché i costi congiunti anteriori allo split-off non vanno usati nella scelta sulla lavorazione successiva?",
+      "answer": "Perché sono già stati sostenuti e non variano fra vendita immediata e trasformazione ulteriore.",
+      "detail": "I sistemi di full costing possono ripartire tali costi per valorizzare le scorte, ma il riparto non li rende differenziali rispetto alla decisione futura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.25, pagina PDF 130"
+    },
+    {
+      "id": "cdg-c10-q117",
+      "topicId": "cdg-c10-t25",
+      "question": "Quando una lavorazione successiva con margine incrementale positivo potrebbe non essere accettata?",
+      "answer": "Quando sottrae capacità a una alternativa più redditizia, impone vincoli non soddisfacibili o introduce altri costi e rischi rilevanti.",
+      "detail": "L’analisi deve integrare l’eventuale costo opportunità delle ore e l’effettiva possibilità di vendere l’output al prezzo considerato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.25, pagina PDF 130"
+    },
+    {
+      "id": "cdg-c10-q118",
+      "topicId": "cdg-c10-t26",
+      "question": "Quali sono i vantaggi incrementali delle lavorazioni ulteriori nel caso Bianchi?",
+      "answer": "Prodotto A +60.000 €, B +70.000 €, C +8.000 €: tutte e tre sono convenienti nelle condizioni indicate.",
+      "detail": "I differenziali derivano rispettivamente da maggiori ricavi 140.000, 100.000 e 20.000 € meno costi successivi 80.000, 30.000 e 12.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{A: 140.000 − 80.000 = +60.000 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{B: 100.000 − 30.000 = +70.000 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{C: 20.000 − 12.000 = +8.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.26, pagina PDF 130–131"
+    },
+    {
+      "id": "cdg-c10-q119",
+      "topicId": "cdg-c10-t26",
+      "question": "Quale decisione riguarda il prodotto X del caso Rossi?",
+      "answer": "Non effettuare la lavorazione successiva: il vantaggio differenziale corretto è −5.000 €.",
+      "detail": "I ricavi incrementali sono 13.000 € e i costi successivi 18.000 €. Il manuale segnala che la soluzione editoriale riporta erroneamente −6.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO_X = 13.000 − 18.000 = −5.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "Non ripetere il refuso editoriale −6.000 €; usare i dati e la correzione esplicita del manuale.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.26, pagina PDF 130–131"
+    },
+    {
+      "id": "cdg-c10-q120",
+      "topicId": "cdg-c10-t26",
+      "question": "Quali sono le convenienze delle lavorazioni successive per Y e Z nel caso Rossi?",
+      "answer": "Y +3.000 € e Z +12.000 €; conviene lavorare entrambi ulteriormente.",
+      "detail": "Y: aumento ricavi 20.000 € meno costi 17.000 €. Z: aumento ricavi 32.000 € meno costi 20.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO_Y = 20.000 − 17.000 = +3.000 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{ΔRO_Z = 32.000 − 20.000 = +12.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.26, pagina PDF 130–131"
+    },
+    {
+      "id": "cdg-c10-q121",
+      "topicId": "cdg-c10-t26",
+      "question": "Che lezione metodologica insegnano congiuntamente i casi Bianchi e Rossi?",
+      "answer": "Ogni prodotto si valuta con il proprio incremento di ricavi e di costi dopo lo split-off; i costi congiunti passati restano esclusi.",
+      "detail": "Il segno del differenziale può essere diverso tra prodotti originati dallo stesso processo; non è corretto decidere con un unico margine aggregato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.26, pagina PDF 130–131"
+    },
+    {
+      "id": "cdg-c10-q122",
+      "topicId": "cdg-c10-t27",
+      "question": "Quando una risorsa produttiva è considerata scarsa?",
+      "answer": "Quando il fabbisogno del programma desiderato eccede la capacità effettivamente disponibile.",
+      "detail": "Il collo di bottiglia può essere costituito da ore macchina, manodopera specializzata, materiali, spazio o tempo del team. La carenza si accerta confrontando domanda massima e disponibilità.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.27, pagina PDF 131"
+    },
+    {
+      "id": "cdg-c10-q123",
+      "topicId": "cdg-c10-t27",
+      "question": "Qual è l’indice di priorità per un prodotto quando esiste una sola risorsa scarsa?",
+      "answer": "Il margine di contribuzione unitario diviso il consumo unitario della risorsa limitante.",
+      "detail": "L’indice quantifica il contributo generato per ogni unità scarsa: euro per ora, euro per chilogrammo, ecc. La graduatoria si costruisce in ordine decrescente, rispettando i vincoli di domanda e capacità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Indice_i = MdC_u_i / unità_di_risorsa_scarsa_per_pezzo_i}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.27, pagina PDF 131"
+    },
+    {
+      "id": "cdg-c10-q124",
+      "topicId": "cdg-c10-t27",
+      "question": "Perché il prodotto col maggiore MdC unitario non è sempre il più conveniente da produrre per primo?",
+      "answer": "Perché può consumare molta più risorsa limitante per pezzo e generare meno margine per unità di capacità.",
+      "detail": "La priorità va riferita al collo di bottiglia: un prodotto con 40 € di margine e 2 ore offre 20 €/ora, mentre uno con 30 € e 1 ora offre 30 €/ora.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.27, pagina PDF 131"
+    },
+    {
+      "id": "cdg-c10-q125",
+      "topicId": "cdg-c10-t27",
+      "question": "Quali passaggi compongono la scelta del mix in presenza di una sola risorsa scarsa?",
+      "answer": "Verificare scarsità, calcolare MdC unitario e per risorsa, ordinare i prodotti, rispettare domanda e minimi, assegnare capacità e calcolare il contributo totale.",
+      "detail": "La graduatoria semplice vale nel contesto esplicitato dal manuale: un unico vincolo, domanda delimitata e quantità frazionabili secondo il modello.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.27, pagina PDF 131"
+    },
+    {
+      "id": "cdg-c10-q126",
+      "topicId": "cdg-c10-t27",
+      "question": "Perché la graduatoria per MdC/risorsa può fallire se ci sono più colli di bottiglia?",
+      "answer": "Perché il prodotto che sfrutta bene un fattore può saturare in modo inefficiente un altro fattore limitante.",
+      "detail": "Con due capacità simultaneamente vincolanti diventa opportuno modellare tutte le disuguaglianze e massimizzare il contributo complessivo, come nell’esempio introduttivo di programmazione lineare.",
+      "example": "",
+      "formulas": [],
+      "connections": [
+        "§10.29 — Programmazione lineare"
+      ],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.27, pagina PDF 131"
+    },
+    {
+      "id": "cdg-c10-q127",
+      "topicId": "cdg-c10-t28",
+      "question": "Qual è il collo di bottiglia nel caso Beta e come si individua?",
+      "answer": "Il reparto Stampaggio: il piano desiderato richiede 2.000 ore, ma ne sono disponibili 1.500.",
+      "detail": "L’Assemblaggio non limita il piano iniziale perché dispone di 9.000 ore a fronte di 8.500 richieste. La graduatoria va quindi costruita su €/ora di stampaggio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.28, pagina PDF 131"
+    },
+    {
+      "id": "cdg-c10-q128",
+      "topicId": "cdg-c10-t28",
+      "question": "Quali sono i margini per ora di stampaggio delle tre sedie Beta?",
+      "answer": "Elegant 5.337,50 €/h, Super 4.375 €/h, Comfort 1.975 €/h.",
+      "detail": "Si dividono i MdC unitari per il consumo di ore di stampaggio per unità: rispettivamente 1.067,50/0,20; 1.312,50/0,30; 790/0,40.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Elegant: 1.067,50 / 0,20 = 5.337,50 €/h}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{Super: 1.312,50 / 0,30 = 4.375 €/h}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{Comfort: 790 / 0,40 = 1.975 €/h}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.28, pagina PDF 131"
+    },
+    {
+      "id": "cdg-c10-q129",
+      "topicId": "cdg-c10-t28",
+      "question": "Quale priorità di produzione è corretta nel caso Beta?",
+      "answer": "Elegant, poi Super, infine Comfort.",
+      "detail": "Anche se Super ha MdC unitario più elevato di Elegant, consuma più tempo del reparto scarso: per unità di stampaggio Elegant genera il maggiore contributo.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare la graduatoria basata sul solo MdC per pezzo.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.28, pagina PDF 131"
+    },
+    {
+      "id": "cdg-c10-q130",
+      "topicId": "cdg-c10-t28",
+      "question": "Quale mix produttivo ottimizza il MdC con 1.500 ore di stampaggio nel caso Beta?",
+      "answer": "1.000 Elegant, 2.000 Super e 1.750 Comfort.",
+      "detail": "Elegant usa 200 ore e Super 600; le restanti 700 ore permettono 1.750 Comfort. L’impiego totale è esattamente 1.500 ore.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Ore impiegate = 1.000×0,20 + 2.000×0,30 + 1.750×0,40 = 1.500 h}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.28, pagina PDF 131"
+    },
+    {
+      "id": "cdg-c10-q131",
+      "topicId": "cdg-c10-t28",
+      "question": "Qual è il MdC complessivo del mix scelto nel caso Beta?",
+      "answer": "5.075.000 €, prima dei costi fissi che non cambiano al variare del mix.",
+      "detail": "Si sommano i contributi delle tre linee nelle quantità determinate dalla graduatoria: 1.067.500 + 2.625.000 + 1.382.500.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{MdC = 1.000×1.067,50 + 2.000×1.312,50 + 1.750×790 = 5.075.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.28, pagina PDF 131"
+    },
+    {
+      "id": "cdg-c10-q132",
+      "topicId": "cdg-c10-t28",
+      "question": "Quale verifica aggiuntiva rimane importante dopo aver assegnato le ore di stampaggio nel caso Beta?",
+      "answer": "Verificare che gli altri reparti e i vincoli di domanda non vengano violati dal mix finale.",
+      "detail": "L’Assemblaggio non è inizialmente il fattore scarso, ma il piano deve comunque rispettarne la capacità; il modello assume domanda massima e consumo di risorse come da esercizio.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.28, pagina PDF 131"
+    },
+    {
+      "id": "cdg-c10-q133",
+      "topicId": "cdg-c10-t29",
+      "question": "Perché la programmazione lineare è introdotta nel caso con due risorse limitanti?",
+      "answer": "Perché bisogna massimizzare simultaneamente il margine di contribuzione rispettando più vincoli di capacità.",
+      "detail": "La graduatoria ottenuta dividendo il margine per una sola risorsa non garantisce l’ottimo quando prodotti diversi assorbono risorse in proporzioni differenti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.29, pagina PDF 131–132"
+    },
+    {
+      "id": "cdg-c10-q134",
+      "topicId": "cdg-c10-t29",
+      "question": "Come si scrive la funzione obiettivo e i vincoli del caso introduttivo con prodotti A e B?",
+      "answer": "Massimizzare 30A + 40B, con 2A+B≤100, A+3B≤120 e A,B≥0.",
+      "detail": "I coefficienti dell’obiettivo rappresentano i MdC unitari, quelli delle disuguaglianze il consumo di due risorse disponibili.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{max Z = 30A + 40B}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{2A + B ≤ 100}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{A + 3B ≤ 120}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{A,B ≥ 0}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.29, pagina PDF 131–132"
+    },
+    {
+      "id": "cdg-c10-q135",
+      "topicId": "cdg-c10-t29",
+      "question": "Qual è la soluzione ottima del caso di programmazione lineare riportato nel manuale?",
+      "answer": "A=36 e B=28, con margine totale 2.200 €.",
+      "detail": "È l’intersezione dei due vincoli attivi: 2×36+28=100 e 36+3×28=120. I due vertici con un solo prodotto hanno risultati inferiori.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Z = 30×36 + 40×28 = 2.200 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.29, pagina PDF 131–132"
+    },
+    {
+      "id": "cdg-c10-q136",
+      "topicId": "cdg-c10-t29",
+      "question": "Quali sono i risultati se nel caso a due vincoli si producesse solo A o solo B?",
+      "answer": "Solo A: 1.500 € (50 unità); solo B: 1.600 € (40 unità).",
+      "detail": "La combinazione mista da 2.200 € produce più contributo di entrambe le alternative pure, mostrando il limite dell’ordinamento fondato su un solo prodotto.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Solo A: 30×50 = 1.500 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{Solo B: 40×40 = 1.600 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.29, pagina PDF 131–132"
+    },
+    {
+      "id": "cdg-c10-q137",
+      "topicId": "cdg-c10-t30",
+      "question": "Quali alternative e stati di natura caratterizzano il caso Golosa?",
+      "answer": "Commercializzare merendine acquistate o produrre e commercializzare, con domanda di 200.000, 300.000 o 400.000 confezioni.",
+      "detail": "Il problema presenta una matrice di risultati per tre volumi, senza richiedere di inventare probabilità non indicate dalla fonte.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.30, pagina PDF 132"
+    },
+    {
+      "id": "cdg-c10-q138",
+      "topicId": "cdg-c10-t30",
+      "question": "Quali sono i payoff delle due alternative di Golosa nei tre stati di domanda?",
+      "answer": "Comprare/commercializzare: 166.000, 444.000, 822.000 €; produrre/commercializzare: −160.000, 0, 200.000 €.",
+      "detail": "Il risultato centrale della produzione interna è zero nella ricostruzione del manuale, ottenuto da ricavi meno costi elencati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.30, pagina PDF 132"
+    },
+    {
+      "id": "cdg-c10-q139",
+      "topicId": "cdg-c10-t30",
+      "question": "Perché comprare e commercializzare domina strettamente produrre nel caso Golosa?",
+      "answer": "Perché produce un payoff superiore in tutti e tre gli stati di domanda.",
+      "detail": "La prima riga è sempre il massimo della rispettiva colonna, quindi la superiorità non dipende dall’attribuzione di probabilità agli stati.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.30, pagina PDF 132"
+    },
+    {
+      "id": "cdg-c10-q140",
+      "topicId": "cdg-c10-t30",
+      "question": "Quali decisioni danno maximax, maximin e minimax regret nel caso Golosa?",
+      "answer": "Tutti e tre selezionano «comprare e commercializzare».",
+      "detail": "Poiché l’alternativa domina l’altra in ogni stato, ha sia il massimo più elevato sia il minimo migliore e genera rimpianto nullo in ciascuna colonna.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La dominanza vale solo nelle ipotesi del caso: non generalizzarla a qualsiasi confronto make/buy.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.30, pagina PDF 132"
+    },
+    {
+      "id": "cdg-c10-q141",
+      "topicId": "cdg-c10-t31",
+      "question": "Quali sono le scelte, gli stati e le condizioni del caso Pelletteria?",
+      "answer": "Ordinare 1.000 o 2.000 unità; domanda bassa 1.000 o alta 2.000. Prezzo vendita 60 €, costo iniziale 30 €/u con ordine 1.000 e 28 €/u con ordine 2.000.",
+      "detail": "Se si ordina 1.000 e la domanda è 2.000, le unità mancanti costano 55 €/u al grossista; se si ordina 2.000 e la domanda è 1.000, l’eccedenza viene svenduta a 20 €/u.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.31, pagina PDF 132–133"
+    },
+    {
+      "id": "cdg-c10-q142",
+      "topicId": "cdg-c10-t31",
+      "question": "Qual è la matrice dei payoff del caso Pelletteria?",
+      "answer": "Ordinare 1.000: 30.000 € con domanda bassa, 35.000 € con domanda alta. Ordinare 2.000: 24.000 € con domanda bassa, 64.000 € con domanda alta.",
+      "detail": "I valori sono utili economici delle combinazioni azione-stato, non probabilità. Costituiscono la base di tutti i criteri successivi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.31, pagina PDF 132–133"
+    },
+    {
+      "id": "cdg-c10-q143",
+      "topicId": "cdg-c10-t31",
+      "question": "Quale azione seleziona il criterio maximin nel caso Pelletteria?",
+      "answer": "Ordinare 1.000 unità, perché il peggior risultato di questa scelta è 30.000 €, contro 24.000 € dell’altra.",
+      "detail": "Il criterio massimizza il risultato peggiore e rappresenta un atteggiamento prudenziale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.31, pagina PDF 132–133"
+    },
+    {
+      "id": "cdg-c10-q144",
+      "topicId": "cdg-c10-t31",
+      "question": "Quale azione seleziona il criterio maximax nel caso Pelletteria?",
+      "answer": "Ordinare 2.000 unità, perché il suo massimo possibile è 64.000 €, maggiore di 35.000 €.",
+      "detail": "Il criterio ottimistico guarda al risultato migliore di ogni alternativa, indipendentemente dalla protezione offerta nel caso sfavorevole.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.31, pagina PDF 132–133"
+    },
+    {
+      "id": "cdg-c10-q145",
+      "topicId": "cdg-c10-t31",
+      "question": "Come si costruisce la matrice dei rimpianti del caso Pelletteria?",
+      "answer": "Ordine 1.000: rimpianti 0 e 29.000 €; ordine 2.000: 6.000 e 0 €.",
+      "detail": "Con domanda bassa il miglior payoff è 30.000 €; con domanda alta è 64.000 €. Si sottrae il payoff di ciascuna azione al massimo della sua colonna.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Regret(1.000,alta) = 64.000 − 35.000 = 29.000 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{Regret(2.000,bassa) = 30.000 − 24.000 = 6.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "Il manuale segnala il refuso editoriale 19.000 €: il rimpianto corretto è 29.000 €.",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.31, pagina PDF 132–133"
+    },
+    {
+      "id": "cdg-c10-q146",
+      "topicId": "cdg-c10-t31",
+      "question": "Quale alternativa è preferita dal minimax regret nella Pelletteria?",
+      "answer": "Ordinare 2.000 unità, con massimo rimpianto 6.000 € contro 29.000 € dell’ordine da 1.000.",
+      "detail": "La raccomandazione non richiede probabilità; cerca di limitare il peggior sacrificio di opportunità dopo aver osservato lo stato di domanda.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.31, pagina PDF 132–133"
+    },
+    {
+      "id": "cdg-c10-q147",
+      "topicId": "cdg-c10-t31",
+      "question": "Quali sono i valori attesi con probabilità 80% di domanda bassa e 20% di domanda alta?",
+      "answer": "EV(ordine 1.000)=31.000 €; EV(ordine 2.000)=32.000 €. Con neutralità al rischio conviene ordinare 2.000.",
+      "detail": "Il vantaggio atteso è 1.000 € e dipende dalle probabilità assegnate; il singolo risultato effettivo non sarà necessariamente 32.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{EV_1000 = 0,8×30.000 + 0,2×35.000 = 31.000 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{EV_2000 = 0,8×24.000 + 0,2×64.000 = 32.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.31, pagina PDF 132–133"
+    },
+    {
+      "id": "cdg-c10-q148",
+      "topicId": "cdg-c10-t31",
+      "question": "Qual è la probabilità critica di domanda alta che rende indifferenti gli ordini nella Pelletteria?",
+      "answer": "p* = 6/35 = 17,14% circa; sopra questa soglia l’ordine di 2.000 ha EV maggiore.",
+      "detail": "Si uguagliano 30.000+5.000p e 24.000+40.000p. La soglia quantifica la sensibilità della scelta alla previsione di domanda.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{30.000 + 5.000p = 24.000 + 40.000p}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{p* = 6/35 ≈ 17,14\\%}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.31, pagina PDF 132–133"
+    },
+    {
+      "id": "cdg-c10-q149",
+      "topicId": "cdg-c10-t31",
+      "question": "Qual è il valore atteso dell’informazione perfetta nel caso Pelletteria?",
+      "answer": "EVPI = 4.800 €.",
+      "detail": "Con informazione perfetta si ordinerebbero 1.000 unità se la domanda è bassa e 2.000 se alta; il valore atteso è 36.800 €, contro 32.000 € senza informazione.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{EV_con_PI = 0,8×30.000 + 0,2×64.000 = 36.800 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{EVPI = 36.800 − 32.000 = 4.800 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.31, pagina PDF 132–133"
+    },
+    {
+      "id": "cdg-c10-q150",
+      "topicId": "cdg-c10-t32",
+      "question": "Qual è la capacità residua nel caso della commessa software?",
+      "answer": "150 ore di specialisti, perché 1.050 delle 1.200 ore disponibili sono già assegnate.",
+      "detail": "Il nuovo incarico richiede 200 ore: mancano 50 ore, da sottrarre a un contratto esistente o ottenere aumentando la capacità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{H_libere = 1.200 − 1.050 = 150 h}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{H_mancanti = 200 − 150 = 50 h}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.32, pagina PDF 133"
+    },
+    {
+      "id": "cdg-c10-q151",
+      "topicId": "cdg-c10-t32",
+      "question": "Qual è il margine di contribuzione della nuova commessa software prima del setup e dell’opportunità?",
+      "answer": "17.000 €, pari a 200 ore moltiplicate per 85 €/ora.",
+      "detail": "La tariffa è 130 €/ora e il costo variabile pertinente 45 €/ora, quindi il contributo per ora è 85 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{MdC = 200 × (130 − 45) = 17.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.32, pagina PDF 133"
+    },
+    {
+      "id": "cdg-c10-q152",
+      "topicId": "cdg-c10-t32",
+      "question": "Qual è il costo opportunità della capacità nel caso della commessa software?",
+      "answer": "5.500 €, pari a 50 ore sottratte alla commessa ordinaria che genera 110 € di MdC/ora.",
+      "detail": "L’ordine richiede più tempo libero di quello disponibile. Per misurarne la convenienza, il contributo perso sui clienti esistenti deve ridurre il risultato.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Opportunità = 50 × 110 = 5.500 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.32, pagina PDF 133"
+    },
+    {
+      "id": "cdg-c10-q153",
+      "topicId": "cdg-c10-t32",
+      "question": "Qual è la convenienza differenziale complessiva della commessa software?",
+      "answer": "+8.500 €, se è possibile ridimensionare il lavoro ordinario senza ulteriori danni.",
+      "detail": "Si parte dal MdC nuovo di 17.000 €, si sottrae il setup di 3.000 € e il margine alternativo perso di 5.500 €. Ignorare quest’ultimo sovrastimerebbe il vantaggio di 5.500 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = 17.000 − 3.000 − 5.500 = +8.500 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.32, pagina PDF 133"
+    },
+    {
+      "id": "cdg-c10-q154",
+      "topicId": "cdg-c10-t32",
+      "question": "Perché una commessa software con ΔRO positivo potrebbe essere rifiutata?",
+      "answer": "Perché la riduzione di ore a clienti esistenti potrebbe violare accordi, causare effetti commerciali non compensati o essere tecnicamente impossibile.",
+      "detail": "Un modello con ΔRO positivo non rende automaticamente disponibile capacità che non esiste. È necessario verificare la praticabilità della scelta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.32, pagina PDF 133"
+    },
+    {
+      "id": "cdg-c10-q155",
+      "topicId": "cdg-c10-t33",
+      "question": "Quali cinque verifiche qualitative devono accompagnare i risultati numerici delle decisioni?",
+      "answer": "Capacità, effetti commerciali, qualità/sicurezza, orizzonte decisionale e sensibilità delle ipotesi su prezzi e volumi.",
+      "detail": "La scelta va giudicata rispetto a risorse e competenze disponibili, reputazione, conformità, costi che cambiano con il periodo e rischio che i dati previsionali non si realizzino.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.33, pagina PDF 133"
+    },
+    {
+      "id": "cdg-c10-q156",
+      "topicId": "cdg-c10-t33",
+      "question": "Perché non è corretto confrontare due alternative con qualità o rischi molto diversi come fossero equivalenti?",
+      "answer": "Perché un ΔRO basato solo sui costi omette caratteristiche che possono incidere sulla realizzabilità e sul valore della scelta.",
+      "detail": "Un fornitore con prezzo inferiore ma con affidabilità insufficiente potrebbe non essere un’alternativa ammissibile per un servizio critico.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.33, pagina PDF 133"
+    },
+    {
+      "id": "cdg-c10-q157",
+      "topicId": "cdg-c10-t33",
+      "question": "Quali costi vanno esclusi e quali inclusi nella valutazione finale?",
+      "answer": "Esclusi costi sommersi e comuni invarianti; inclusi costi nuovi, evitabili, opportunità, penali e conseguenze di capacità.",
+      "detail": "Il criterio si applica alle alternative concrete, non alle etichette contabili. Anche un costo indiretto può essere rilevante se cambia realmente.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.33, pagina PDF 133"
+    },
+    {
+      "id": "cdg-c10-q158",
+      "topicId": "cdg-c10-t33",
+      "question": "Quando un ΔRO positivo non giustifica automaticamente l’approvazione della scelta?",
+      "answer": "Quando la decisione viola obblighi, supera capacità, compromette requisiti minimi o comporta rischi non accettabili.",
+      "detail": "Il manager deve motivare il giudizio combinando risultato economico, ipotesi, fattibilità e fattori non monetari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.33, pagina PDF 133"
+    },
+    {
+      "id": "cdg-c10-q159",
+      "topicId": "cdg-c10-t34",
+      "question": "Qual è il primo passo della procedura d’esame del Capitolo 10?",
+      "answer": "Identificare la decisione, definire chiaramente le alternative A e B e specificare l’orizzonte temporale.",
+      "detail": "Se sono presenti più prodotti o stati futuri, conviene costruire subito una tabella dei dati per evitare confronti non omogenei.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.34, pagina PDF 133–134"
+    },
+    {
+      "id": "cdg-c10-q160",
+      "topicId": "cdg-c10-t34",
+      "question": "Che cosa si controlla nella fase di fattibilità della procedura d’esame?",
+      "answer": "Ore disponibili e necessarie, risorse scarse, volumi massimi e vincoli contrattuali.",
+      "detail": "Non basta ottenere un punto di pareggio algebrico: è necessario che il volume o la scelta siano realizzabili con le risorse effettive.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.34, pagina PDF 133–134"
+    },
+    {
+      "id": "cdg-c10-q161",
+      "topicId": "cdg-c10-t34",
+      "question": "Come si ricostruisce il contributo economico prima del ΔRO?",
+      "answer": "Si isolano ricavi addizionali, costi variabili realmente nuovi, fissi evitabili/emergenti, penali e benefici alternativi sacrificati.",
+      "detail": "Il costo pieno riportato nel testo non viene assunto automaticamente come costo rilevante; ogni componente va classificata in base alla scelta.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.34, pagina PDF 133–134"
+    },
+    {
+      "id": "cdg-c10-q162",
+      "topicId": "cdg-c10-t34",
+      "question": "Quale convenzione di segno bisogna usare sistematicamente nello scritto?",
+      "answer": "ΔRO(A−B), con valore positivo a favore dell’alternativa A se tutte le altre condizioni sono comparabili.",
+      "detail": "Cambiare la convenzione a metà esercizio può produrre un’interpretazione errata pur con differenze aritmetiche corrette.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO(A−B) = RO_A − RO_B}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.34, pagina PDF 133–134"
+    },
+    {
+      "id": "cdg-c10-q163",
+      "topicId": "cdg-c10-t34",
+      "question": "Come si verifica la correttezza di un confronto differenziale?",
+      "answer": "Si ricostruiscono i risultati completi delle alternative oppure si ripetono i calcoli per unità e totali, controllando tempi e unità di misura.",
+      "detail": "Un controllo indipendente aiuta a intercettare costi omessi, voci contate due volte, differenti periodi di riferimento e soglie irrealizzabili.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.34, pagina PDF 133–134"
+    },
+    {
+      "id": "cdg-c10-q164",
+      "topicId": "cdg-c10-t34",
+      "question": "Che cosa deve contenere la conclusione manageriale di un esercizio di convenienza?",
+      "answer": "Alternativa prescelta, vantaggio economico, condizioni di validità e fattori qualitativi che potrebbero cambiare la scelta.",
+      "detail": "Una risposta «accettare» o «rifiutare» priva di motivazione non dimostra che si siano compresi vincoli, ipotesi e limiti del modello.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.34, pagina PDF 133–134"
+    },
+    {
+      "id": "cdg-c10-q165",
+      "topicId": "cdg-c10-t34",
+      "question": "Quali sono gli errori ricorrenti segnalati dal manuale per lo scritto di breve periodo?",
+      "answer": "Confondere costo pieno e rilevante, assimilare fisso a eliminabile, omettere opportunità e penali, usare periodi diversi e ignorare fattibilità o incertezza.",
+      "detail": "Per prevenirli serve una tabella iniziale e un controllo finale sia economico sia tecnico. Anche la probabilità di uno stato non va scambiata con la certezza del risultato.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.34, pagina PDF 133–134"
+    },
+    {
+      "id": "cdg-c10-q166",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E1 quali voci costituiscono costi futuri incrementali della nuova commessa?",
+      "answer": "Materiali per 4.000 € e noleggio speciale per 1.200 €: totale 5.200 €.",
+      "detail": "I 6.000 € del progetto passato sono sommersi, mentre lo stipendio del coordinatore già impiegato non cambia. Occorre solo verificare se il suo tempo abbia un uso alternativo redditizio.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{4.000 + 1.200 = 5.200 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q167",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E2 qual è il principio decisivo per valutare un ordine con setup?",
+      "answer": "Il MdC incrementale deve superare i nuovi costi fissi di avvio.",
+      "detail": "Per 800 pezzi a 45 € con CV 30 €, il contributo è 12.000 € e il setup 8.000 €; l’ordine genera +4.000 €, con capacità libera.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = 800 × (45 − 30) − 8.000 = +4.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q168",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E3 come cambia la chiusura di una linea quando si trova un impiego alternativo della capacità?",
+      "answer": "Senza alternativa peggiora il RO di 30.000 €; con nuovo margine netto di 45.000 € migliora di 15.000 €.",
+      "detail": "Il margine attuale dopo fissi evitabili è (240.000−150.000)−60.000=30.000 €. La chiusura comporta il sacrificio di tale margine, da confrontare con il nuovo beneficio.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO riconversione = −30.000 + 45.000 = +15.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q169",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E4 come si valuta un ordine che supera di 50 ore la capacità residua?",
+      "answer": "Il costo opportunità delle ore sacrificate si somma a setup e costi variabili incrementali, portando a ΔRO=−1.000 €.",
+      "detail": "Servono 450 ore, ne sono libere 400 e le restanti 50 costano 80 € di MdC alternativo per ora. Il contributo nuovo è 12.000 € e il setup 9.000 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = 12.000 − 9.000 − 50×80 = −1.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q170",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E5 perché la presenza di un uso alternativo cambia la decisione make/buy?",
+      "answer": "Senza uso alternativo MAKE costa 22.000 € in meno; con 30.000 € di margine alternativo perso diventa più conveniente BUY di 8.000 €.",
+      "detail": "Il costo opportunità del MAKE deve essere considerato se il BUY libera capacità da impiegare nella nuova attività.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{MAKE = 8.000×16 + 18.000 = 146.000 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{BUY = 8.000×21 = 168.000 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{MAKE con opportunità = 176.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q171",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E6 quale soglia make/buy e quali scelte risultano?",
+      "answer": "Q*=3.000 unità; a 2.000 conviene BUY e a 5.000 conviene MAKE.",
+      "detail": "Il fisso evitabile del MAKE è 9.000 €, il variabile interno è 12 €/u e il BUY 15 €/u. Il confronto vale entro un intervallo in cui costi e capacità restano validi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Q* = 9.000 / (15−12) = 3.000 u}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q172",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E7 quali lavorazioni ulteriori sono economicamente convenienti?",
+      "answer": "Lavorare A (+15.000 €) ma non B (−5.000 €).",
+      "detail": "Per A il ricavo incrementale è 40.000 € e il costo successivo 25.000 €; per B sono 10.000 € e 15.000 €. I costi congiunti precedenti sono esclusi.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{A: 190.000 − 150.000 − 25.000 = +15.000 €}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{B: 60.000 − 50.000 − 15.000 = −5.000 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q173",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E8 qual è la graduatoria per una sola risorsa scarsa?",
+      "answer": "C 40 €/h, A 30 €/h, B 15 €/h.",
+      "detail": "Dopo aver ordinato per euro per ora si assegnano le 500 ore: 200 a C (400 unità), 200 ad A (500 unità) e 100 a B (100 unità). Il MdC totale è 15.500 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{C: 20/0,5 = 40 €/h}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{A: 12/0,4 = 30 €/h}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{B: 15/1 = 15 €/h}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q174",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E9 che decisioni danno maximin, maximax e minimax regret?",
+      "answer": "Maximin Y, maximax X, minimax regret X.",
+      "detail": "I payoff (migliaia €) sono X=(20,40), Y=(25,30). Il minimo di Y è migliore, il massimo di X è migliore e i massimi rimpianti sono 5 per X e 10 per Y.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q175",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E9 come cambia la scelta usando P(domanda alta)=30%?",
+      "answer": "EV(X)=26.000 €, EV(Y)=26.500 €: con neutralità al rischio conviene Y.",
+      "detail": "In funzione della probabilità p di domanda alta, X e Y sono equivalenti per p=1/3=33,33%; sopra tale soglia X ha EV maggiore.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{EV_X = 20+20p}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{EV_Y = 25+5p}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{p*=1/3}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q176",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E10 qual è l’EVPI dei payoff dell’esercizio E9?",
+      "answer": "3.000 €.",
+      "detail": "Con perfetta informazione si sceglierebbe Y se domanda bassa e X se domanda alta: EV con informazione=29.500 €. Senza informazione il miglior EV è 26.500 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{EVPI = (0,7×25 + 0,3×40) − 26,5 = 3 migliaia €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q177",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E11 qual è il valore rilevante del componente già in magazzino?",
+      "answer": "Il prezzo netto di rivendita alternativo di 500 €, non il costo storico di 1.000 € ormai sommerso.",
+      "detail": "Usarlo nella commessa genera 2.000 € di ricavi e 1.300 € di nuovi costi; rinunciando alla rivendita si sacrifica 500 €, perciò il vantaggio netto è +200 €.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = 2.000 − 1.300 − 500 = +200 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q178",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E12 che risultato produce un ordine speciale con penale pari al margine aggiuntivo?",
+      "answer": "ΔRO=0 €: indifferenza economica nel perimetro dato.",
+      "detail": "Il margine aggiuntivo è 1.000×(25−18)=7.000 €, interamente assorbito da una penale certa di 7.000 €. Servono valutazioni su altre conseguenze commerciali.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO = 1.000×7 − 7.000 = 0 €}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q179",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E13 conviene cessare una linea che appare in perdita dopo costi comuni allocati?",
+      "answer": "No: chiudendola si perderebbero 10.000 € di margine decisionale.",
+      "detail": "La linea ha MdC 30.000 € e fissi realmente evitabili 20.000 €; la quota comune di 18.000 € continua anche dopo la cessazione. Il report attribuito −8.000 € non è il ΔRO della chiusura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q180",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E14 qual è il risultato del problema con due vincoli di capacità?",
+      "answer": "La soluzione combinata A=36, B=28 genera 2.200 €, contro 1.500 € solo A e 1.600 € solo B.",
+      "detail": "Si massimizza 30A+40B con 2A+B≤100 e A+3B≤120. L’intersezione dei due vincoli attivi è ammissibile e preferibile ai vertici puri.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q181",
+      "topicId": "cdg-c10-t35",
+      "question": "Nell’esercizio E15 perché non si può accettare automaticamente l’ordine Delta al volume di pareggio?",
+      "answer": "Perché servirebbero 6.000 litri, ma con le 450 ore residue e 0,2 ore/litro il massimo realizzabile è 2.250 litri.",
+      "detail": "Il pareggio è una soglia algebrica; per raggiungerlo occorrerebbe modificare capacità, mix ordinario o struttura dei costi.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.35, pagina PDF 134–135"
+    },
+    {
+      "id": "cdg-c10-q182",
+      "topicId": "cdg-c10-t36",
+      "question": "Qual è il criterio comune alle soluzioni E1, E11 ed E13?",
+      "answer": "Separare le conseguenze future modificabili dalle spese storiche o comuni che restano in ogni alternativa.",
+      "detail": "E1 esclude il progetto passato, E11 usa il realizzo alternativo del componente invece del costo storico, E13 esclude le spese comuni che permangono con la chiusura.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.36, pagina PDF 135–136"
+    },
+    {
+      "id": "cdg-c10-q183",
+      "topicId": "cdg-c10-t36",
+      "question": "Qual è il controllo comune alle soluzioni E2, E4 ed E12 sugli ordini speciali?",
+      "answer": "Confrontare MdC aggiuntivo con setup, penali e costi opportunità, dopo aver verificato la capacità.",
+      "detail": "E2 è conveniente (+4.000 €); E4 perde 1.000 € a causa della capacità satura; E12 è indifferente perché la penale assorbe tutto il margine.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.36, pagina PDF 135–136"
+    },
+    {
+      "id": "cdg-c10-q184",
+      "topicId": "cdg-c10-t36",
+      "question": "Che cosa insegnano le soluzioni E3 ed E5 sul riutilizzo delle risorse?",
+      "answer": "Un beneficio alternativo può ribaltare la convenienza di chiudere un segmento o di produrre internamente.",
+      "detail": "In E3 la riconversione genera un margine netto superiore al contributo perso; in E5 l’utilizzo liberato dal BUY produce 30.000 € e modifica il make/buy iniziale.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.36, pagina PDF 135–136"
+    },
+    {
+      "id": "cdg-c10-q185",
+      "topicId": "cdg-c10-t36",
+      "question": "Come si confrontano le soluzioni E8 ed E14 nel trattamento della capacità scarsa?",
+      "answer": "E8 usa la graduatoria MdC/ora perché c’è un solo vincolo; E14 risolve un modello con due vincoli attivi.",
+      "detail": "Nel secondo caso la soluzione ottima può essere una combinazione di prodotti non individuabile con una sola graduatoria di margini unitari.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.36, pagina PDF 135–136"
+    },
+    {
+      "id": "cdg-c10-q186",
+      "topicId": "cdg-c10-t36",
+      "question": "Quale collegamento esiste tra le soluzioni E9 ed E10?",
+      "answer": "E9 seleziona l’alternativa col maggiore valore atteso con probabilità nota; E10 misura il beneficio teorico di conoscere in anticipo lo stato.",
+      "detail": "Il confronto è fra l’EV massimo senza informazione (26,5 migliaia €) e l’EV con informazione perfetta (29,5), quindi EVPI 3.000 €.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.36, pagina PDF 135–136"
+    },
+    {
+      "id": "cdg-c10-q187",
+      "topicId": "cdg-c10-t36",
+      "question": "Quali due verifiche impediscono di confondere un risultato numerico con una decisione completa?",
+      "answer": "Controllo di fattibilità fisica e contrattuale; controllo di condizioni economiche e ipotesi qualitative.",
+      "detail": "E15 mostra una soglia irraggiungibile; E12 mostra l’indifferenza numerica, che non elimina gli effetti commerciali potenzialmente rilevanti.",
+      "example": "",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.36, pagina PDF 135–136"
+    },
+    {
+      "id": "cdg-c10-q188",
+      "topicId": "cdg-c10-t37",
+      "question": "Quale formula riassume il confronto tra alternative nel formulario del Capitolo 10?",
+      "answer": "ΔRO = ΔRicavi − ΔCosti, interpretato con la convenzione A−B.",
+      "detail": "Si includono soltanto le voci che variano realmente tra le due opzioni e l’effetto dei benefici sacrificati; un segno positivo favorisce A nel modello.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO(A−B) = ΔRicavi − ΔCosti}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.37, pagina PDF 136"
+    },
+    {
+      "id": "cdg-c10-q189",
+      "topicId": "cdg-c10-t37",
+      "question": "Qual è la formula operativa per aggiungere una linea?",
+      "answer": "Margine di contribuzione dei nuovi ricavi meno costi fissi nuovi e costi opportunità.",
+      "detail": "Gli importi devono essere nuovi o realmente modificati dalla scelta; il perimetro può includere ulteriori effetti rilevanti, come una riduzione del MdC di linee già attive.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO_aggiunta = MdC_nuovi − CF_nuovi − opportunità}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.37, pagina PDF 136"
+    },
+    {
+      "id": "cdg-c10-q190",
+      "topicId": "cdg-c10-t37",
+      "question": "Qual è la formula operativa per chiudere una linea?",
+      "answer": "Costi fissi effettivamente eliminabili più benefici alternativi meno margine di contribuzione cessante.",
+      "detail": "Non vanno sottratte al risultato quote comuni che continueranno dopo la chiusura.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO_chiusura = CF_evitabili + benefici_alternativi − MdC_cessante}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.37, pagina PDF 136"
+    },
+    {
+      "id": "cdg-c10-q191",
+      "topicId": "cdg-c10-t37",
+      "question": "Come si calcola il volume di indifferenza di un ordine speciale con nuovi costi fissi?",
+      "answer": "Dividendo i nuovi fissi per il margine unitario pertinente, se positivo e se il volume richiesto è fattibile.",
+      "detail": "La soglia è un dato economico che va confrontato con la capacità tecnica; il caso Delta mostra perché questo controllo è necessario.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Q* = CF_nuovi/(P_speciale−CVr), con P_speciale > CVr}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.37, pagina PDF 136"
+    },
+    {
+      "id": "cdg-c10-q192",
+      "topicId": "cdg-c10-t37",
+      "question": "Qual è la formula della soglia make/buy e quale ipotesi la sostiene?",
+      "answer": "Q*=F/(b−c), quando b supera c e i costi sono coerenti nel range.",
+      "detail": "F è il fisso differenziale di MAKE, c il suo costo variabile unitario e b il costo esterno pertinente per unità. Vanno inoltre verificati opportunità, volumi e capacità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{MAKE = F + cQ}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{BUY = bQ}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{Q* = F/(b−c)}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.37, pagina PDF 136"
+    },
+    {
+      "id": "cdg-c10-q193",
+      "topicId": "cdg-c10-t37",
+      "question": "Quali formule del formulario servono per lavorazioni successive e risorse scarse?",
+      "answer": "Per le lavorazioni si confrontano incremento ricavi e costi extra; per una risorsa scarsa si usa il MdC unitario diviso per l’assorbimento della risorsa.",
+      "detail": "Le prime escludono i costi congiunti pregressi; le seconde sono una regola di priorità per un unico vincolo di capacità.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{ΔRO_successivo = Ricavi_dopo − Ricavi_prima − costi_futuri_extra}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{Priorità_i = MdC_u_i / risorsa_scarsa_u_i}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.37, pagina PDF 136"
+    },
+    {
+      "id": "cdg-c10-q194",
+      "topicId": "cdg-c10-t37",
+      "question": "Quali relazioni riassumono valori attesi e informazione perfetta?",
+      "answer": "EV è il payoff medio ponderato e EVPI è il valore atteso del risultato migliore in ogni stato meno il miglior EV senza informazione.",
+      "detail": "I calcoli richiedono probabilità motivate e un criterio di neutralità al rischio per preferire il massimo valore atteso.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{EV(a) = Σₛ p(s)×Payoff(a,s)}",
+          "meaning": ""
+        },
+        {
+          "latex": "\\text{EVPI = EV_con_informazione_perfetta − maxₐ EV(a)}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.37, pagina PDF 136"
+    },
+    {
+      "id": "cdg-c10-q195",
+      "topicId": "cdg-c10-t37",
+      "question": "Come si usa il criterio del rimpianto nel formulario?",
+      "answer": "Per ogni stato si sottrae il payoff dell’azione dal payoff più elevato dello stesso stato, poi si minimizza il massimo rimpianto di ogni azione.",
+      "detail": "È un criterio utilizzabile senza probabilità affidabili e diverso dal maximax e dal maximin.",
+      "example": "",
+      "formulas": [
+        {
+          "latex": "\\text{Regret(a,s) = maxₐ Payoff(a,s) − Payoff(a,s)}",
+          "meaning": ""
+        }
+      ],
+      "connections": [],
+      "mistakes": "",
+      "reference": "Controllo_di_Gestione_Manuale.pdf — Capitolo 10, Le informazioni economiche a supporto delle decisioni di breve periodo, §10.37, pagina PDF 136"
+    }
+  ]
+}

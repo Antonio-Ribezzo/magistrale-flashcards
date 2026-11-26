@@ -1,0 +1,3118 @@
+{
+  "schemaVersion": 1,
+  "subjectId": "si",
+  "source": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2: Analisi dei requisiti e progettazione concettuale E-R, pagine PDF 17–34. Unica fonte autorizzata; distinguere esempi del docente, tracce storiche rielaborate ed esercizi originali come nel manuale.",
+  "chapter": {
+    "id": "si-c02",
+    "title": "Analisi dei requisiti e progettazione concettuale E-R",
+    "order": 2,
+    "topics": [
+      {
+        "id": "si-c02-t01",
+        "title": "Livelli della progettazione e scopo del modello concettuale"
+      },
+      {
+        "id": "si-c02-t02",
+        "title": "Acquisizione dei requisiti, ambiguità, glossario e URD"
+      },
+      {
+        "id": "si-c02-t03",
+        "title": "Notazione Entità–Relazione, entità, attributi e legami"
+      },
+      {
+        "id": "si-c02-t04",
+        "title": "Relazioni binarie, ternarie, ricorsive e attributi di associazione"
+      },
+      {
+        "id": "si-c02-t05",
+        "title": "Tipologie di attributi e scelta tra attributo, entità ed evento"
+      },
+      {
+        "id": "si-c02-t06",
+        "title": "Cardinalità minime e massime, 1:1, 1:N, N:M"
+      },
+      {
+        "id": "si-c02-t07",
+        "title": "Identificatori interni, composti, esterni e univocità"
+      },
+      {
+        "id": "si-c02-t08",
+        "title": "Generalizzazioni, totalità, esclusività e gerarchie a cascata"
+      },
+      {
+        "id": "si-c02-t09",
+        "title": "Dizionari, vincoli di integrità e business rules"
+      },
+      {
+        "id": "si-c02-t10",
+        "title": "Caso Software House: schema, cardinalità e regole trasversali"
+      },
+      {
+        "id": "si-c02-t11",
+        "title": "Caso impresa: dipartimenti, progetti, familiari e vincoli"
+      },
+      {
+        "id": "si-c02-t12",
+        "title": "Applicazione concettuale al progetto EnerPrice"
+      },
+      {
+        "id": "si-c02-t13",
+        "title": "Metodo in nove passaggi, verifiche ed errori d’esame"
+      },
+      {
+        "id": "si-c02-t14",
+        "title": "Esercizi storici: ottica, prove d’esame e bandi"
+      },
+      {
+        "id": "si-c02-t15",
+        "title": "Esercizi originali: eventi, attributi, chiavi e gerarchie"
+      },
+      {
+        "id": "si-c02-t16",
+        "title": "Esercizi originali: relazioni ternarie, regole e requisiti ambigui"
+      },
+      {
+        "id": "si-c02-t17",
+        "title": "Autoverifica e domande trasversali di teoria E-R"
+      },
+      {
+        "id": "si-c02-t18",
+        "title": "Problemi autonomi A–E e soluzioni orientative"
+      },
+      {
+        "id": "si-c02-t19",
+        "title": "Checklist conclusiva dello schema concettuale"
+      }
+    ]
+  },
+  "coverage": {
+    "sections": [
+      {
+        "label": "§2.1 — pagina PDF 17",
+        "cardIds": [
+          "si-c02-q001",
+          "si-c02-q002",
+          "si-c02-q003"
+        ]
+      },
+      {
+        "label": "§2.1 — pagina PDF 18",
+        "cardIds": [
+          "si-c02-q004",
+          "si-c02-q005",
+          "si-c02-q006"
+        ]
+      },
+      {
+        "label": "§2.2.1 — pagina PDF 18",
+        "cardIds": [
+          "si-c02-q007",
+          "si-c02-q008"
+        ]
+      },
+      {
+        "label": "§2.2.2 — pagina PDF 18",
+        "cardIds": [
+          "si-c02-q009",
+          "si-c02-q010"
+        ]
+      },
+      {
+        "label": "§2.2.3 — pagina PDF 18",
+        "cardIds": [
+          "si-c02-q011",
+          "si-c02-q012",
+          "si-c02-q013",
+          "si-c02-q014"
+        ]
+      },
+      {
+        "label": "§2.2.4 — pagina PDF 19",
+        "cardIds": [
+          "si-c02-q015",
+          "si-c02-q016",
+          "si-c02-q017"
+        ]
+      },
+      {
+        "label": "§2.2.5 — pagina PDF 19",
+        "cardIds": [
+          "si-c02-q018"
+        ]
+      },
+      {
+        "label": "§2.3 — pagina PDF 19",
+        "cardIds": [
+          "si-c02-q019",
+          "si-c02-q027",
+          "si-c02-q028",
+          "si-c02-q029"
+        ]
+      },
+      {
+        "label": "§2.3.1 — pagina PDF 19",
+        "cardIds": [
+          "si-c02-q020",
+          "si-c02-q021",
+          "si-c02-q022"
+        ]
+      },
+      {
+        "label": "§2.3.2 — pagina PDF 19",
+        "cardIds": [
+          "si-c02-q023"
+        ]
+      },
+      {
+        "label": "§2.3.2 — pagina PDF 20",
+        "cardIds": [
+          "si-c02-q024"
+        ]
+      },
+      {
+        "label": "§2.3.3 — pagina PDF 20",
+        "cardIds": [
+          "si-c02-q025",
+          "si-c02-q026"
+        ]
+      },
+      {
+        "label": "§2.4.1 — pagina PDF 20",
+        "cardIds": [
+          "si-c02-q030",
+          "si-c02-q031",
+          "si-c02-q032"
+        ]
+      },
+      {
+        "label": "§2.4.2 — pagina PDF 20",
+        "cardIds": [
+          "si-c02-q033",
+          "si-c02-q034"
+        ]
+      },
+      {
+        "label": "§2.4.3 — pagina PDF 20",
+        "cardIds": [
+          "si-c02-q035"
+        ]
+      },
+      {
+        "label": "§2.4.3 — pagina PDF 21",
+        "cardIds": [
+          "si-c02-q036",
+          "si-c02-q037"
+        ]
+      },
+      {
+        "label": "§2.5.1 — pagina PDF 21",
+        "cardIds": [
+          "si-c02-q038",
+          "si-c02-q039",
+          "si-c02-q040",
+          "si-c02-q041",
+          "si-c02-q042"
+        ]
+      },
+      {
+        "label": "§2.5.2 — pagina PDF 21",
+        "cardIds": [
+          "si-c02-q043"
+        ]
+      },
+      {
+        "label": "§2.5.3 — pagina PDF 21",
+        "cardIds": [
+          "si-c02-q044",
+          "si-c02-q045"
+        ]
+      },
+      {
+        "label": "§2.6.1 — pagina PDF 22",
+        "cardIds": [
+          "si-c02-q046",
+          "si-c02-q047",
+          "si-c02-q048"
+        ]
+      },
+      {
+        "label": "§2.6.2 — pagina PDF 22",
+        "cardIds": [
+          "si-c02-q049",
+          "si-c02-q050",
+          "si-c02-q051",
+          "si-c02-q052"
+        ]
+      },
+      {
+        "label": "§2.6.3 — pagina PDF 22",
+        "cardIds": [
+          "si-c02-q053",
+          "si-c02-q054",
+          "si-c02-q055"
+        ]
+      },
+      {
+        "label": "§2.6.4 — pagina PDF 22",
+        "cardIds": [
+          "si-c02-q056",
+          "si-c02-q057"
+        ]
+      },
+      {
+        "label": "§2.6.5 — pagina PDF 22",
+        "cardIds": [
+          "si-c02-q058",
+          "si-c02-q059"
+        ]
+      },
+      {
+        "label": "§2.6.5 — pagina PDF 23",
+        "cardIds": [
+          "si-c02-q060",
+          "si-c02-q061"
+        ]
+      },
+      {
+        "label": "§2.7.1 — pagina PDF 23",
+        "cardIds": [
+          "si-c02-q062",
+          "si-c02-q063",
+          "si-c02-q064",
+          "si-c02-q065"
+        ]
+      },
+      {
+        "label": "§2.7.2 — pagina PDF 23",
+        "cardIds": [
+          "si-c02-q066",
+          "si-c02-q067",
+          "si-c02-q068",
+          "si-c02-q069"
+        ]
+      },
+      {
+        "label": "§2.7.3 — pagina PDF 23",
+        "cardIds": [
+          "si-c02-q070",
+          "si-c02-q071",
+          "si-c02-q072"
+        ]
+      },
+      {
+        "label": "§2.7.4 — pagina PDF 23",
+        "cardIds": [
+          "si-c02-q073",
+          "si-c02-q074"
+        ]
+      },
+      {
+        "label": "§2.8.1 — pagina PDF 24",
+        "cardIds": [
+          "si-c02-q075",
+          "si-c02-q076"
+        ]
+      },
+      {
+        "label": "§2.8.2 — pagina PDF 24",
+        "cardIds": [
+          "si-c02-q077",
+          "si-c02-q078",
+          "si-c02-q079"
+        ]
+      },
+      {
+        "label": "§2.8.3 — pagina PDF 24",
+        "cardIds": [
+          "si-c02-q080",
+          "si-c02-q081",
+          "si-c02-q082"
+        ]
+      },
+      {
+        "label": "§2.8.4 — pagina PDF 24",
+        "cardIds": [
+          "si-c02-q083"
+        ]
+      },
+      {
+        "label": "§2.9.1 — pagina PDF 25",
+        "cardIds": [
+          "si-c02-q084",
+          "si-c02-q085"
+        ]
+      },
+      {
+        "label": "§2.9.2 — pagina PDF 25",
+        "cardIds": [
+          "si-c02-q086"
+        ]
+      },
+      {
+        "label": "§2.9.3 — pagina PDF 25",
+        "cardIds": [
+          "si-c02-q087"
+        ]
+      },
+      {
+        "label": "§2.9.4 — pagina PDF 25",
+        "cardIds": [
+          "si-c02-q088",
+          "si-c02-q089",
+          "si-c02-q090",
+          "si-c02-q091",
+          "si-c02-q092"
+        ]
+      },
+      {
+        "label": "§2.9.5 — pagina PDF 26",
+        "cardIds": [
+          "si-c02-q093",
+          "si-c02-q094"
+        ]
+      },
+      {
+        "label": "§2.10.1 — pagina PDF 26",
+        "cardIds": [
+          "si-c02-q095",
+          "si-c02-q096"
+        ]
+      },
+      {
+        "label": "§2.10.2 — pagina PDF 26",
+        "cardIds": [
+          "si-c02-q097",
+          "si-c02-q098",
+          "si-c02-q099",
+          "si-c02-q100",
+          "si-c02-q101",
+          "si-c02-q102"
+        ]
+      },
+      {
+        "label": "§2.10.3 — pagina PDF 26",
+        "cardIds": [
+          "si-c02-q103"
+        ]
+      },
+      {
+        "label": "§2.10.4 — pagina PDF 27",
+        "cardIds": [
+          "si-c02-q104",
+          "si-c02-q105",
+          "si-c02-q106",
+          "si-c02-q107"
+        ]
+      },
+      {
+        "label": "§2.10.5 — pagina PDF 27",
+        "cardIds": [
+          "si-c02-q108",
+          "si-c02-q109",
+          "si-c02-q110"
+        ]
+      },
+      {
+        "label": "§2.11.1 — pagina PDF 27",
+        "cardIds": [
+          "si-c02-q111"
+        ]
+      },
+      {
+        "label": "§2.11.2 — pagina PDF 27",
+        "cardIds": [
+          "si-c02-q112",
+          "si-c02-q113"
+        ]
+      },
+      {
+        "label": "§2.11.3 — pagina PDF 28",
+        "cardIds": [
+          "si-c02-q114",
+          "si-c02-q115",
+          "si-c02-q116",
+          "si-c02-q117",
+          "si-c02-q118"
+        ]
+      },
+      {
+        "label": "§2.11.4 — pagina PDF 28",
+        "cardIds": [
+          "si-c02-q119",
+          "si-c02-q120"
+        ]
+      },
+      {
+        "label": "§2.12 — pagina PDF 28",
+        "cardIds": [
+          "si-c02-q121",
+          "si-c02-q122",
+          "si-c02-q123",
+          "si-c02-q124",
+          "si-c02-q125",
+          "si-c02-q126"
+        ]
+      },
+      {
+        "label": "§2.13.1 — pagina PDF 29",
+        "cardIds": [
+          "si-c02-q127",
+          "si-c02-q128",
+          "si-c02-q129",
+          "si-c02-q130"
+        ]
+      },
+      {
+        "label": "§2.13.2 — pagina PDF 29",
+        "cardIds": [
+          "si-c02-q131",
+          "si-c02-q132",
+          "si-c02-q133",
+          "si-c02-q134",
+          "si-c02-q135",
+          "si-c02-q136"
+        ]
+      },
+      {
+        "label": "§2.13.3 — pagina PDF 29",
+        "cardIds": [
+          "si-c02-q137",
+          "si-c02-q138"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 1 — pagina PDF 29",
+        "cardIds": [
+          "si-c02-q139",
+          "si-c02-q140"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 1 — pagina PDF 30",
+        "cardIds": [
+          "si-c02-q141",
+          "si-c02-q142",
+          "si-c02-q143",
+          "si-c02-q144"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 2 — pagina PDF 30",
+        "cardIds": [
+          "si-c02-q145",
+          "si-c02-q146",
+          "si-c02-q147"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 3 — pagina PDF 30",
+        "cardIds": [
+          "si-c02-q148",
+          "si-c02-q149",
+          "si-c02-q150"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 3 — pagina PDF 31",
+        "cardIds": [
+          "si-c02-q151"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 4 — pagina PDF 31",
+        "cardIds": [
+          "si-c02-q152",
+          "si-c02-q153",
+          "si-c02-q154"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 5 — pagina PDF 31",
+        "cardIds": [
+          "si-c02-q155",
+          "si-c02-q156"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 6 — pagina PDF 31",
+        "cardIds": [
+          "si-c02-q157",
+          "si-c02-q158"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 7 — pagina PDF 31",
+        "cardIds": [
+          "si-c02-q159",
+          "si-c02-q160"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 8 — pagina PDF 31",
+        "cardIds": [
+          "si-c02-q161",
+          "si-c02-q162"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 9 — pagina PDF 32",
+        "cardIds": [
+          "si-c02-q163",
+          "si-c02-q164"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 10 — pagina PDF 32",
+        "cardIds": [
+          "si-c02-q165",
+          "si-c02-q166"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 11 — pagina PDF 32",
+        "cardIds": [
+          "si-c02-q167",
+          "si-c02-q168"
+        ]
+      },
+      {
+        "label": "§2.14 · Esercizio 12 — pagina PDF 32",
+        "cardIds": [
+          "si-c02-q169",
+          "si-c02-q170"
+        ]
+      },
+      {
+        "label": "§2.15.1 — pagina PDF 32",
+        "cardIds": [
+          "si-c02-q171",
+          "si-c02-q172",
+          "si-c02-q173",
+          "si-c02-q174",
+          "si-c02-q175"
+        ]
+      },
+      {
+        "label": "§2.15.1 — pagina PDF 33",
+        "cardIds": [
+          "si-c02-q176",
+          "si-c02-q177",
+          "si-c02-q178",
+          "si-c02-q179",
+          "si-c02-q180",
+          "si-c02-q181",
+          "si-c02-q182"
+        ]
+      },
+      {
+        "label": "§2.15.2–2.15.3 · Problema A — pagina PDF 33",
+        "cardIds": [
+          "si-c02-q183",
+          "si-c02-q184",
+          "si-c02-q185"
+        ]
+      },
+      {
+        "label": "§2.15.2–2.15.3 · Problema B — pagina PDF 33",
+        "cardIds": [
+          "si-c02-q186",
+          "si-c02-q187"
+        ]
+      },
+      {
+        "label": "§2.15.2–2.15.3 · Problema C — pagina PDF 33",
+        "cardIds": [
+          "si-c02-q188",
+          "si-c02-q189"
+        ]
+      },
+      {
+        "label": "§2.15.2–2.15.3 · Problema D — pagina PDF 33",
+        "cardIds": [
+          "si-c02-q190",
+          "si-c02-q191"
+        ]
+      },
+      {
+        "label": "§2.15.2–2.15.3 · Problema E — pagina PDF 33",
+        "cardIds": [
+          "si-c02-q192"
+        ]
+      },
+      {
+        "label": "§2.15.2–2.15.3 · Problema E — pagina PDF 34",
+        "cardIds": [
+          "si-c02-q193"
+        ]
+      },
+      {
+        "label": "§2.15.2 — pagina PDF 33",
+        "cardIds": [
+          "si-c02-q194"
+        ]
+      },
+      {
+        "label": "§2.15.3 — pagina PDF 33",
+        "cardIds": [
+          "si-c02-q195"
+        ]
+      },
+      {
+        "label": "§2.16.1 — pagina PDF 34",
+        "cardIds": [
+          "si-c02-q196",
+          "si-c02-q197",
+          "si-c02-q198",
+          "si-c02-q199",
+          "si-c02-q200",
+          "si-c02-q201",
+          "si-c02-q202"
+        ]
+      },
+      {
+        "label": "§2.16 — pagina PDF 34",
+        "cardIds": [
+          "si-c02-q203"
+        ]
+      }
+    ]
+  },
+  "cards": [
+    {
+      "id": "si-c02-q001",
+      "topicId": "si-c02-t01",
+      "question": "Qual è il problema affrontato dalla progettazione concettuale dei dati?",
+      "answer": "Tradurre una descrizione del dominio e dei requisiti in uno schema rigoroso dei fatti, delle relazioni e dei vincoli, indipendente dal DBMS.",
+      "detail": "Il modello deve rappresentare significati e regole prima di scegliere tabelle, linguaggio SQL, indici o tecnologie.",
+      "example": "Per un’offerta: definire che cosa sono offerta, cliente e richiesta e come sono collegati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non iniziare dal disegno delle tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.1, pagina PDF 17"
+    },
+    {
+      "id": "si-c02-q002",
+      "topicId": "si-c02-t01",
+      "question": "Quali sono i tre livelli di progettazione di una base di dati e che cosa producono?",
+      "answer": "Concettuale: schema E-R, dizionari e vincoli; logico: schema nel modello scelto, per esempio relazionale; fisico: strutture e parametri specifici del DBMS.",
+      "detail": "Il passaggio deve conservare la semantica: ogni livello risponde a decisioni diverse.",
+      "example": "Concettuale: un cliente presenta richieste; logico: CLIENTE e RICHIESTA con collegamento; fisico: indice per la ricerca.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una chiave primaria SQL non è di per sé il punto di partenza del ragionamento E-R.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.1, pagina PDF 17"
+    },
+    {
+      "id": "si-c02-q003",
+      "topicId": "si-c02-t01",
+      "question": "Perché fissare subito le tabelle SQL può compromettere la progettazione?",
+      "answer": "Perché anticipa scelte implementative prima che siano chiariti oggetti, relazioni, identità, cardinalità e vincoli.",
+      "detail": "Potrebbero sfuggire eventi ripetuti, dipendenze dal contesto o regole non rappresentabili con una singola tabella.",
+      "example": "La release numerata da 1 in ogni progetto non è identificabile col solo NumeroRelease.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la struttura del database con il significato del dominio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.1, pagina PDF 17"
+    },
+    {
+      "id": "si-c02-q004",
+      "topicId": "si-c02-t01",
+      "question": "Qual è il ruolo dello User Requirements Document (URD) rispetto allo schema E-R?",
+      "answer": "L’URD contiene esigenze e requisiti degli utenti; lo schema concettuale ne formalizza la parte informativa: oggetti, associazioni, proprietà e condizioni.",
+      "detail": "La descrizione delle schermate o del codice rimane collegata, ma non coincide con la modellazione dei dati.",
+      "example": "Una richiesta “ogni offerta appartiene a un cliente” può diventare un vincolo di associazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "L’URD non è già il diagramma E-R.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.1, pagina PDF 18"
+    },
+    {
+      "id": "si-c02-q005",
+      "topicId": "si-c02-t01",
+      "question": "Quali elementi fondamentali compongono il linguaggio E-R introdotto nel capitolo?",
+      "answer": "Entità, relazioni, attributi, cardinalità, identificatori e generalizzazioni.",
+      "detail": "Lo schema rappresenta il dominio concettuale; dizionari e business rules completano i significati non interamente esprimibili in figura.",
+      "example": "CLIENTE — EFFETTUA — ORDINE, con identificatori, attributi e cardinalità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire allo schema E-R il compito di descrivere le istruzioni SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.1, pagina PDF 18"
+    },
+    {
+      "id": "si-c02-q006",
+      "topicId": "si-c02-t01",
+      "question": "Che cosa distingue la descrizione concettuale da quella fisica di una stessa informazione?",
+      "answer": "La descrizione concettuale specifica cosa significa e quale regola segue; quella fisica specifica come è memorizzata o accelerata nel DBMS.",
+      "detail": "La stessa realtà può ammettere scelte fisiche differenti mantenendo invariati i requisiti.",
+      "example": "Il vincolo “ogni ordine appartiene a un cliente” è concettuale; un indice su id_cliente è fisico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere indipendenza dal DBMS con assenza di vincoli sui dati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.1, pagina PDF 18"
+    },
+    {
+      "id": "si-c02-q007",
+      "topicId": "si-c02-t02",
+      "question": "Come definisce il manuale un requisito nel contesto dell’analisi dei dati?",
+      "answer": "Una necessità, informazione da rappresentare, vincolo da rispettare o comportamento atteso del sistema.",
+      "detail": "Per modellare i dati è essenziale isolare le regole informative senza confonderle con funzioni e schermate.",
+      "example": "“Ogni offerta ha un codice e una decorrenza” esprime dati; “l’operatore vede un elenco” esprime funzionalità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un nome di schermata non fornisce automaticamente un modello concettuale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.2.1, pagina PDF 18"
+    },
+    {
+      "id": "si-c02-q008",
+      "topicId": "si-c02-t02",
+      "question": "Qual è la differenza fra un requisito informativo e uno funzionale?",
+      "answer": "Il requisito informativo descrive fatti e vincoli da rappresentare; quello funzionale descrive le operazioni o i servizi che il sistema deve offrire.",
+      "detail": "Si influenzano: per eseguire una funzione servono dati pertinenti, ma vanno analizzati con prospettive distinte.",
+      "example": "“Un contratto ha data di sottoscrizione” vs “l’utente può ricercare contratti per data”.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare ogni verbo dell’interfaccia in un’entità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.2.1, pagina PDF 18"
+    },
+    {
+      "id": "si-c02-q009",
+      "topicId": "si-c02-t02",
+      "question": "Quali fonti dei requisiti indica la docente?",
+      "answer": "Utenti e committenti; interviste e questionari; documenti normativi, regolamenti e procedure; sistemi preesistenti e modulistica.",
+      "detail": "Occorre confrontare le fonti, perché descrizioni formali e pratiche operative possono divergere.",
+      "example": "Una procedura può dire che ogni release ha numero, ma l’applicazione rivela che riparte per progetto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La testimonianza di un solo ruolo non definisce automaticamente tutte le regole.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.2.2, pagina PDF 18"
+    },
+    {
+      "id": "si-c02-q010",
+      "topicId": "si-c02-t02",
+      "question": "Perché l’analisi di un’implementazione esistente può far emergere requisiti taciuti?",
+      "answer": "Perché dati e procedure operative possono mostrare convenzioni, eccezioni e vincoli non dichiarati nei documenti o nelle interviste.",
+      "detail": "Tali osservazioni devono comunque essere validate, non trasformate automaticamente in requisiti.",
+      "example": "Un progressivo locale, non globale, può emergere esaminando release di progetti diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare un comportamento storico accidentale per una regola voluta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.2.2, pagina PDF 18"
+    },
+    {
+      "id": "si-c02-q011",
+      "topicId": "si-c02-t02",
+      "question": "Quali operazioni rendono un requisito adatto alla modellazione?",
+      "answer": "Scegliere il livello di astrazione; scomporre frasi complesse in affermazioni atomiche; uniformare il lessico; validare con esempi e casi limite.",
+      "detail": "Le regole singole devono poter essere lette e controllate indipendentemente.",
+      "example": "“Ogni prodotto ha un codice” richiede chiarire se il codice è globale o locale al catalogo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare cardinalità senza definire prima la frase di dominio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.2.3, pagina PDF 18"
+    },
+    {
+      "id": "si-c02-q012",
+      "topicId": "si-c02-t02",
+      "question": "Che cosa sono requisiti atomici e perché servono?",
+      "answer": "Sono affermazioni che descrivono un singolo fatto o vincolo sufficientemente preciso da poter essere verificato.",
+      "detail": "La scomposizione consente di distinguere attributi, identificazioni, partecipazioni e condizioni.",
+      "example": "“Ogni dipendente ha nome; può partecipare a progetti; per ogni partecipazione si registrano mesi-uomo”.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una frase lunga non deve nascondere vincoli separati.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.2.3, pagina PDF 18"
+    },
+    {
+      "id": "si-c02-q013",
+      "topicId": "si-c02-t02",
+      "question": "Come bisogna comportarsi se una traccia non chiarisce se una partecipazione sia obbligatoria?",
+      "answer": "Non inventare il minimo 1: registrare l’ipotesi aperta, cercare conferma o motivare la scelta adottata nell’esercizio.",
+      "detail": "Il verbo “può” segnala possibilità ma non dimostra l’esistenza di almeno una partecipazione.",
+      "example": "“Un progetto può avere dipendenti” da solo non impone (1,N).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare possibilità in obbligatorietà.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.2.3, pagina PDF 18"
+    },
+    {
+      "id": "si-c02-q014",
+      "topicId": "si-c02-t02",
+      "question": "Perché è importante esplicitare le assunzioni introdotte durante l’analisi?",
+      "answer": "Per distinguere le regole davvero presenti nei requisiti dalle decisioni progettuali necessarie quando il testo è incompleto.",
+      "detail": "Un’assunzione modifica spesso cardinalità, identificatori, gerarchie e casi limite.",
+      "example": "Assumere che una proposta abbia un solo autore deve essere dichiarato se non previsto dalla fonte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare ipotesi aggiunte come fatti della traccia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.2.3, pagina PDF 18"
+    },
+    {
+      "id": "si-c02-q015",
+      "topicId": "si-c02-t02",
+      "question": "A che cosa serve il glossario dei requisiti?",
+      "answer": "A definire in modo univoco i termini del dominio, indicare sinonimi e chiarire le relazioni semantiche.",
+      "detail": "Aiuta a evitare omonimi, cioè una parola con significati diversi, e sinonimi non riconosciuti per lo stesso concetto.",
+      "example": "“Offerta” non equivale a contratto già firmato; “scenario” non equivale a esito della simulazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un termine per due entità diverse senza chiarirlo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.2.4, pagina PDF 19"
+    },
+    {
+      "id": "si-c02-q016",
+      "topicId": "si-c02-t02",
+      "question": "Come distinguere nel glossario Offerta, Segmento, Scenario e Margine?",
+      "answer": "Offerta: condizioni economiche proposte; Segmento: categoria di clientela; Scenario: insieme di ipotesi di simulazione; Margine: differenza fra ricavi e costi definiti nel modello.",
+      "detail": "Le definizioni vanno concordate prima di individuare chiavi e relazioni.",
+      "example": "Un unico segmento può essere destinatario di offerte diverse; una stessa offerta può essere valutata con scenari differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere lo scenario con il risultato numerico che produce.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.2.4, pagina PDF 19"
+    },
+    {
+      "id": "si-c02-q017",
+      "topicId": "si-c02-t02",
+      "question": "Quali casi limite sono utili per validare l’interpretazione di requisiti?",
+      "answer": "Appartenenze multiple, dati opzionali, modifiche nel tempo, ripetizioni di eventi e periodi di validità.",
+      "detail": "Sono casi che possono rivelare un’identificazione troppo debole o una cardinalità non giustificata.",
+      "example": "Cliente in più segmenti; sconto valido per soli alcuni mesi; due interventi uguali nello stesso giorno.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fermarsi ai casi “normali” in cui lo schema sembra funzionare.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.2.4, pagina PDF 19"
+    },
+    {
+      "id": "si-c02-q018",
+      "topicId": "si-c02-t02",
+      "question": "Quali prodotti documentali concludevano l’analisi dei requisiti secondo il manuale?",
+      "answer": "Contesto e obiettivi, requisiti dei dati, glossario, assunzioni, vincoli informativi e primi esempi; poi schema E-R, dizionari e tabella delle business rules.",
+      "detail": "La documentazione serve a rendere tracciabili le scelte, non soltanto a produrre una figura.",
+      "example": "Requisito SH-05 → relazione DIREZIONE e vincolo che il direttore partecipi al progetto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un disegno privo di definizioni e vincoli non basta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.2.5, pagina PDF 19"
+    },
+    {
+      "id": "si-c02-q019",
+      "topicId": "si-c02-t03",
+      "question": "Qual è la finalità del modello Entità–Relazione?",
+      "answer": "Rappresentare a livello concettuale classi di oggetti, legami significativi e proprietà del dominio, senza specificare tabelle SQL.",
+      "detail": "Il manuale segue prevalentemente la notazione delle dispense della docente e ricorda Chen come riferimento storico.",
+      "example": "DIPENDENTE partecipa a PROGETTO con un attributo MesiUomo sul legame.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere relazione E-R con una tabella relazionale già definita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.3, pagina PDF 19"
+    },
+    {
+      "id": "si-c02-q020",
+      "topicId": "si-c02-t03",
+      "question": "Che cos’è un’entità nel modello E-R?",
+      "answer": "Una classe di oggetti materiali o astratti della realtà di interesse, distinguibili e descrivibili con proprietà.",
+      "detail": "La scelta dipende dal perimetro informativo, non dall’esistenza universale dell’oggetto.",
+      "example": "DIPENDENTE, PROGETTO, RELEASE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare ogni parola del testo automaticamente in entità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.3.1, pagina PDF 19"
+    },
+    {
+      "id": "si-c02-q021",
+      "topicId": "si-c02-t03",
+      "question": "Qual è la differenza tra classe di entità e sua occorrenza?",
+      "answer": "La classe definisce il tipo di oggetti e le proprietà; l’occorrenza è un singolo oggetto concreto appartenente a quella classe.",
+      "detail": "Il diagramma rappresenta classi; le istanze compariranno nei dati effettivi.",
+      "example": "PROGETTO è la classe; “Sviluppo portale” è una sua possibile istanza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non disegnare una nuova entità per ciascun valore o oggetto concreto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.3.1, pagina PDF 19"
+    },
+    {
+      "id": "si-c02-q022",
+      "topicId": "si-c02-t03",
+      "question": "Perché le entità sono normalmente denominate al singolare nel manuale?",
+      "answer": "Per rendere chiaro che rappresentano una classe, non un elenco di singole occorrenze.",
+      "detail": "È una convenzione di leggibilità delle slide, non un vincolo matematico del modello.",
+      "example": "STUDENTE anziché STUDENTI.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare sbagliata una semantica corretta solo per una convenzione grafica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.3.1, pagina PDF 19"
+    },
+    {
+      "id": "si-c02-q023",
+      "topicId": "si-c02-t03",
+      "question": "Che cos’è un attributo e che cos’è il suo dominio?",
+      "answer": "L’attributo è una proprietà di un’entità o relazione; il dominio è l’insieme dei valori concettualmente ammissibili per quella proprietà.",
+      "detail": "Il dominio è semantico e non coincide semplicemente con il tipo dato SQL.",
+      "example": "Budget non è solo NUMBER: può richiedere valuta, limiti e regole di validità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che scegliere VARCHAR2 esaurisca la definizione del dominio.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.3.2, pagina PDF 19"
+    },
+    {
+      "id": "si-c02-q024",
+      "topicId": "si-c02-t03",
+      "question": "Quando un attributo deve essere collocato su una relazione invece che su un’entità?",
+      "answer": "Quando il suo valore dipende dallo specifico legame tra le occorrenze partecipanti.",
+      "detail": "Valutare se il valore cambia mantenendo fissa una sola delle entità.",
+      "example": "MesiUomo dipende da DIPENDENTE–PROGETTO: un dipendente lavora per quantità diverse su progetti diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collocare MesiUomo su DIPENDENTE per semplice comodità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.3.2, pagina PDF 20"
+    },
+    {
+      "id": "si-c02-q025",
+      "topicId": "si-c02-t03",
+      "question": "Che cos’è una relazione E-R?",
+      "answer": "Un legame logico semanticamente rilevante tra due o più entità, con proprie occorrenze di associazione.",
+      "detail": "Può avere attributi e cardinalità; è distinta dalla nozione di relazione-tabella del modello relazionale.",
+      "example": "PARTECIPAZIONE tra DIPENDENTE e PROGETTO.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare automaticamente il rombo E-R alla tabella SQL futura.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.3.3, pagina PDF 20"
+    },
+    {
+      "id": "si-c02-q026",
+      "topicId": "si-c02-t03",
+      "question": "Qual è la differenza fra un’entità e una relazione E-R?",
+      "answer": "L’entità rappresenta una classe di oggetti autonomamente riconoscibili; la relazione rappresenta un fatto di collegamento tra partecipanti.",
+      "detail": "In alcuni casi lo stesso dominio ammette rappresentazioni alternative; occorre conservare significato, identificazione e ripetibilità.",
+      "example": "Un intervento di manutenzione ripetuto può dover diventare entità evento invece di semplice collegamento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La scelta non è determinata dal numero di parole della descrizione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.3.3, pagina PDF 20"
+    },
+    {
+      "id": "si-c02-q027",
+      "topicId": "si-c02-t03",
+      "question": "Come vengono rappresentati graficamente entità, relazioni e attributi nella notazione E-R del capitolo?",
+      "answer": "Le entità sono rettangoli, le relazioni rombi e gli attributi ellissi; le connessioni e le cardinalità specificano come partecipano le classi.",
+      "detail": "La notazione è quella illustrata dalla figura 2.3 del manuale e segue le convenzioni delle dispense.",
+      "example": "CLIENTE (rettangolo) — EFFETTUA (rombo) — ORDINE (rettangolo); attributi in ellissi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un attributo-ellisse con una entità autonoma.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.3, pagina PDF 19"
+    },
+    {
+      "id": "si-c02-q028",
+      "topicId": "si-c02-t03",
+      "question": "Quale segno grafico distingue un attributo identificante nella figura introduttiva E-R?",
+      "answer": "Il pallino pieno accanto all’attributo, secondo la convenzione usata nella figura 2.3 del manuale.",
+      "detail": "La simbologia deve corrispondere alla semantica dell’unicità del dominio.",
+      "example": "Matricola con segno di identificazione nella figura 2.3.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre automaticamente un identificatore dalla sola presenza di un attributo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.3, pagina PDF 19"
+    },
+    {
+      "id": "si-c02-q029",
+      "topicId": "si-c02-t03",
+      "question": "Come interpretare le coppie di numeri scritte vicino alle linee di una relazione E-R?",
+      "answer": "Sono le cardinalità minima e massima della partecipazione dell’entità collegata, lette dal punto di vista di una sua singola istanza.",
+      "detail": "La figura 2.3 mostra il legame CLIENTE–ORDINE: i numeri non indicano quantità effettivamente presenti nel database.",
+      "example": "ORDINE (1,1) verso EFFETTUA significa un collegamento obbligatorio e unico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire le cardinalità tra i due lati del rombo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.3, pagina PDF 19"
+    },
+    {
+      "id": "si-c02-q030",
+      "topicId": "si-c02-t04",
+      "question": "Che cosa indica il grado di una relazione E-R?",
+      "answer": "Il numero dei ruoli o delle partecipazioni di entità coinvolti nel legame: binario con due, ternario con tre, e così via.",
+      "detail": "In una relazione ricorsiva la stessa entità può comparire in ruoli distinti.",
+      "example": "FORNITURA(PRODOTTO, PRODUTTORE, NEGOZIO) è ternaria.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il numero di attributi per determinare il grado.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.4.1, pagina PDF 20"
+    },
+    {
+      "id": "si-c02-q031",
+      "topicId": "si-c02-t04",
+      "question": "Perché una relazione ternaria non è generalmente equivalente a tre relazioni binarie?",
+      "answer": "Perché il fatto può dipendere dalla specifica combinazione di tre occorrenze; le binarie separate possono perdere l’associazione congiunta.",
+      "detail": "La scomposizione è legittima solo se requisiti aggiuntivi ne garantiscono equivalenza semantica.",
+      "example": "Il prezzo di fornitura dipende dalla terna produttore–articolo–rivenditore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non decomporre automaticamente ogni ternaria.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.4.1, pagina PDF 20"
+    },
+    {
+      "id": "si-c02-q032",
+      "topicId": "si-c02-t04",
+      "question": "Quando si può motivare una scomposizione della ternaria in legami più semplici?",
+      "answer": "Quando esistono regole esplicite che rendono ricostruibile senza ambiguità la terna a partire dalle associazioni più semplici.",
+      "detail": "Occorre dichiarare le dipendenze del dominio invece di inferirle dalla grafica.",
+      "example": "Se ogni articolo avesse esattamente un produttore indipendentemente dal rivenditore, potrebbe cambiare la modellazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una scomposizione “più semplice” non è corretta se perde informazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.4.1, pagina PDF 20"
+    },
+    {
+      "id": "si-c02-q033",
+      "topicId": "si-c02-t04",
+      "question": "Che cos’è una relazione ricorsiva e a cosa servono i ruoli?",
+      "answer": "È un legame in cui la stessa entità partecipa più volte; i ruoli distinguono le posizioni occupate dalle sue occorrenze.",
+      "detail": "Le cardinalità devono essere collegate al ruolo giusto.",
+      "example": "SUPERVISIONA tra DIPENDENTE responsabile e DIPENDENTE subordinato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire un’unica cardinalità indistinta all’entità ripetuta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.4.2, pagina PDF 20"
+    },
+    {
+      "id": "si-c02-q034",
+      "topicId": "si-c02-t04",
+      "question": "Quali cardinalità descrivono una supervisione con al massimo un capo per subordinato e molti subordinati per capo?",
+      "answer": "Nel ruolo supervisionato (0,1) se è ammesso chi non ha capo; nel ruolo supervisore (0,N) se si può non coordinare nessuno.",
+      "detail": "Se la partecipazione al ruolo subordinato fosse obbligatoria per tutti, il minimo cambierebbe; dipende dalla traccia.",
+      "example": "Il direttore generale può non avere un superiore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre (1,1) al subordinato se sono previste eccezioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.4.2, pagina PDF 20"
+    },
+    {
+      "id": "si-c02-q035",
+      "topicId": "si-c02-t04",
+      "question": "Qual è il test semantico per attribuire OreLavorate a una relazione?",
+      "answer": "Chiedersi se il numero cambi per ogni coppia di occorrenze anziché descrivere in modo stabile una singola entità.",
+      "detail": "La dipendenza dal legame è più significativa della terminologia usata nella frase.",
+      "example": "OreLavorate nell’assegnazione di un tecnico a un intervento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre attributi di entità che aggregano dati di molte relazioni senza una scelta esplicita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.4.3, pagina PDF 20"
+    },
+    {
+      "id": "si-c02-q036",
+      "topicId": "si-c02-t04",
+      "question": "Perché una relazione ESAME fra STUDENTE e CORSO può essere insufficiente?",
+      "answer": "Se lo stesso studente sostiene più tentativi dello stesso corso, la coppia studente–corso non identifica ogni singolo esame.",
+      "detail": "Occorre distinguere gli eventi nel tempo con un identificatore appropriato o un’entità evento.",
+      "example": "Due prove dello stesso studente nello stesso insegnamento, in appelli diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che una singola coppia ammetta una sola occorrenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.4.3, pagina PDF 21"
+    },
+    {
+      "id": "si-c02-q037",
+      "topicId": "si-c02-t04",
+      "question": "Quali soluzioni concettuali permettono di rappresentare prove d’esame ripetute?",
+      "answer": "Introdurre una entità ESAME/TENTATIVO identificabile, oppure modellare appelli e partecipazioni in modo da identificare ogni esecuzione.",
+      "detail": "La data da sola è sufficiente solo se il requisito ne garantisce effettivamente l’unicità.",
+      "example": "Un progressivo del tentativo associato a studente e corso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non salvare il voto come attributo singolo del corso o dello studente perdendo la storia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.4.3, pagina PDF 21"
+    },
+    {
+      "id": "si-c02-q038",
+      "topicId": "si-c02-t05",
+      "question": "Qual è la differenza fra attributo semplice e composto?",
+      "answer": "Il semplice è trattato come atomico nel dominio; il composto si scompone in sottoproprietà con significato proprio.",
+      "detail": "La scelta dipende dalle operazioni e dal livello di dettaglio richiesto.",
+      "example": "Titolo di progetto semplice; Indirizzo composto da Via, Civico e CAP.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Atomico è relativo al modello, non una qualità assoluta della stringa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.5.1, pagina PDF 21"
+    },
+    {
+      "id": "si-c02-q039",
+      "topicId": "si-c02-t05",
+      "question": "Che cosa significa che un attributo è multivalore?",
+      "answer": "Che una stessa occorrenza di entità può avere più valori di quella proprietà.",
+      "detail": "Il numero ammissibile di valori può essere vincolato; se ciascun valore ha dati propri, può convenire un’entità.",
+      "example": "Uno sviluppatore possiede più competenze Skill.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non equiparare una lista multivalore a più occorrenze dell’entità padre.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.5.1, pagina PDF 21"
+    },
+    {
+      "id": "si-c02-q040",
+      "topicId": "si-c02-t05",
+      "question": "Quando un attributo multivalore dovrebbe essere promosso a entità o associazione?",
+      "answer": "Quando ogni valore deve avere identità, informazioni ulteriori, relazioni autonome o una storia di modifiche.",
+      "detail": "Modellare la struttura necessaria a rispondere ai requisiti, non soltanto una lista testuale.",
+      "example": "Per ogni Skill sono richiesti livello, certificazione e data.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non forzare tutti i valori in un campo CSV se sono fatti indipendenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.5.1, pagina PDF 21"
+    },
+    {
+      "id": "si-c02-q041",
+      "topicId": "si-c02-t05",
+      "question": "Che cos’è un attributo derivato?",
+      "answer": "Una proprietà il cui valore si può calcolare a partire da altri dati e da una regola definita.",
+      "detail": "Il modello deve esprimere la dipendenza; conservarlo fisicamente è una scelta successiva legata a storia e coerenza.",
+      "example": "Età derivata da data di nascita e data di riferimento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare un valore derivato come fatto stabile senza precisarne la data.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.5.1, pagina PDF 21"
+    },
+    {
+      "id": "si-c02-q042",
+      "topicId": "si-c02-t05",
+      "question": "Qual è la differenza fra attributo derivato e attributo memorizzato?",
+      "answer": "Il primo si ottiene tramite una regola da altri fatti; il secondo è conservato direttamente nello stato del sistema.",
+      "detail": "Un dato derivato può essere materializzato, ma poi necessita aggiornamento coerente; non cambia la sua natura concettuale.",
+      "example": "TotaleBudget calcolato dai budget dei singoli progetti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che derivato significhi “mai memorizzabile”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.5.1, pagina PDF 21"
+    },
+    {
+      "id": "si-c02-q043",
+      "topicId": "si-c02-t05",
+      "question": "Con quali criteri si decide se modellare un fatto come attributo o come entità?",
+      "answer": "Verificare identità autonoma, proprietà proprie, condivisione tra più oggetti, relazioni, esigenze temporali e operazioni richieste.",
+      "detail": "La complessità aggiunta deve essere giustificata da fatti del dominio.",
+      "example": "Una COMPETENZA con certificazioni e storico di valutazioni può essere entità; un semplice colore può restare attributo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non moltiplicare entità senza bisogno.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.5.2, pagina PDF 21"
+    },
+    {
+      "id": "si-c02-q044",
+      "topicId": "si-c02-t05",
+      "question": "Un attributo facoltativo e una partecipazione minima zero rappresentano la stessa cosa?",
+      "answer": "No: il primo riguarda disponibilità di un valore della proprietà; la seconda l’obbligatorietà del legame con un’altra occorrenza.",
+      "detail": "I due aspetti devono essere giustificati distintamente.",
+      "example": "DataFine di un progetto attivo può mancare; un progetto può o meno avere un direttore secondo i requisiti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre la cardinalità di un legame da un campo nullabile.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.5.3, pagina PDF 21"
+    },
+    {
+      "id": "si-c02-q045",
+      "topicId": "si-c02-t05",
+      "question": "Perché gli attributi temporali richiedono attenzione nella modellazione concettuale?",
+      "answer": "Perché valori con periodi di validità possono avere molte versioni e non essere rappresentabili da un solo valore corrente.",
+      "detail": "Bisogna chiarire se serve solo stato attuale oppure storia, decorrenze e scadenze.",
+      "example": "Una condizione economica di offerta cambia nel tempo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non cancellare implicitamente le informazioni storiche.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.5.3, pagina PDF 21"
+    },
+    {
+      "id": "si-c02-q046",
+      "topicId": "si-c02-t06",
+      "question": "Che cosa rappresenta la coppia di cardinalità (minimo, massimo) associata a un’entità in una relazione?",
+      "answer": "Quante occorrenze di quella relazione possono o devono coinvolgere una singola occorrenza dell’entità, nel ruolo indicato.",
+      "detail": "Il minimo determina facoltatività o obbligatorietà; il massimo esprime il limite superiore ammesso.",
+      "example": "PROGETTO (1,N) in PARTECIPAZIONE: ogni progetto ha almeno un partecipante, potenzialmente molti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non leggere (1,N) come “esattamente un progetto” o come numero effettivo di persone.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.1, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q047",
+      "topicId": "si-c02-t06",
+      "question": "Che differenza c’è tra cardinalità minima 0 e 1?",
+      "answer": "0 consente che un’istanza non partecipi alla relazione; 1 richiede almeno una partecipazione.",
+      "detail": "L’obbligatorietà è una regola del dominio, da dimostrare con la specifica.",
+      "example": "Un dipendente appena assunto può non essere assegnato ad alcun progetto: (0,N).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La parola “può” non dimostra minimo 1.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.1, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q048",
+      "topicId": "si-c02-t06",
+      "question": "Qual è la differenza tra cardinalità massima 1 e N?",
+      "answer": "1 vieta più di un legame nel ruolo; N ammette più legami senza fissare un limite superiore numerico.",
+      "detail": "Il massimo esprime un vincolo e non una media stimata di utilizzo.",
+      "example": "Ogni ordine ha un solo cliente; un cliente può avere molti ordini.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "N non significa un numero concreto di partecipazioni già presenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.1, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q049",
+      "topicId": "si-c02-t06",
+      "question": "Come si riconosce una relazione uno-a-uno (1:1)?",
+      "answer": "Entrambi i ruoli hanno massimo 1, indipendentemente dai minimi scelti.",
+      "detail": "La relazione può essere facoltativa per uno o entrambi i lati.",
+      "example": "PERSONA–PASSAPORTO in uno scenario semplificato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere 1:1 con (1,1) su entrambi i lati: i minimi possono essere zero.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.2, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q050",
+      "topicId": "si-c02-t06",
+      "question": "Come si riconosce una relazione uno-a-molti (1:N)?",
+      "answer": "Un ruolo ha massimo 1 e l’altro massimo N: un’occorrenza del lato “uno” può legarsi a molte dell’altro lato.",
+      "detail": "I minimi vanno comunque specificati separatamente.",
+      "example": "CLIENTE–ORDINE: ogni ordine di solito si riferisce a un cliente; un cliente può avere più ordini.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assegnare i massimi secondo la semplice disposizione grafica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.2, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q051",
+      "topicId": "si-c02-t06",
+      "question": "Come si riconosce una relazione molti-a-molti (N:M)?",
+      "answer": "Entrambi i ruoli ammettono massimo N, cioè una singola istanza di ciascun tipo può collegarsi a molte istanze dell’altro.",
+      "detail": "Il legame può contenere attributi propri della combinazione.",
+      "example": "DIPENDENTE–PROGETTO attraverso PARTECIPAZIONE con MesiUomo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Molti-a-molti non implica necessariamente minimi uguali a 1.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.2, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q052",
+      "topicId": "si-c02-t06",
+      "question": "Perché occorre verificare le ipotesi temporali di una relazione apparentemente 1:1?",
+      "answer": "Perché nel tempo più occorrenze possono essere associate successivamente, cambiando le esigenze di rappresentazione e di identificazione.",
+      "detail": "La cardinalità riguarda la semantica nel periodo definito, non un’immagine istantanea arbitraria.",
+      "example": "Una persona può avere più passaporti storici, benché uno solo sia valido in un certo momento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre un 1:1 storico da un 1:1 simultaneo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.2, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q053",
+      "topicId": "si-c02-t06",
+      "question": "Quale differenza c’è tra (0,N) e (1,N)?",
+      "answer": "Entrambe consentono molti legami; (0,N) ammette nessuno, mentre (1,N) impone almeno uno.",
+      "detail": "Il massimo non cambia; la differenza è solo nella partecipazione minima.",
+      "example": "Nuovo progetto senza personale vs progetto che deve avere almeno un partecipante.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre minimo 1 dalla presenza attuale di qualche dato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.3, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q054",
+      "topicId": "si-c02-t06",
+      "question": "Una relazione (1,N) richiede che siano presenti esattamente N legami?",
+      "answer": "No: obbliga almeno un legame e ne permette un numero arbitrario maggiore, nei limiti delle altre regole del dominio.",
+      "detail": "Il valore N non è una quantità predefinita da inserire in tabella.",
+      "example": "Un progetto con tre partecipanti soddisfa (1,N).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare cardinalità di schema con frequenza o volume osservato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.3, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q055",
+      "topicId": "si-c02-t06",
+      "question": "Come incidono gli stati iniziali e transitori del processo sull’assegnazione dei minimi?",
+      "answer": "Se una nuova istanza può esistere lecitamente prima di avere un legame, il minimo può dover essere 0 o va prevista una regola sul suo ciclo di vita.",
+      "detail": "La scelta deve tener conto di creazione, cancellazione, attivazione e storicizzazione.",
+      "example": "Un progetto in bozza può esistere prima delle assegnazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre vincoli di stato finale a tutte le fasi senza esplicitarlo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.3, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q056",
+      "topicId": "si-c02-t06",
+      "question": "Perché le cardinalità di una relazione ricorsiva richiedono i nomi dei ruoli?",
+      "answer": "Perché si applicano a funzioni diverse svolte dalla stessa entità, per esempio supervisore e supervisionato.",
+      "detail": "Senza ruoli il significato di minimo e massimo diventa ambiguo.",
+      "example": "Nel ruolo subordinato al massimo un supervisore; nel ruolo responsabile molti subordinati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non indicare solo “DIPENDENTE (0,N)” senza ruolo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.4, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q057",
+      "topicId": "si-c02-t06",
+      "question": "Perché la lettura delle cardinalità di una ternaria richiede cautela?",
+      "answer": "Perché ciascuna partecipazione va interpretata rispetto alla combinazione degli altri partecipanti e alla convenzione del corso.",
+      "detail": "Non si può ragionare come se la ternaria fosse tre binarie indipendenti.",
+      "example": "Un prezzo per produttore–articolo–rivenditore non deriva da tre prezzi binari separati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire meccanicamente la semantica di una binaria alla ternaria.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.4, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q058",
+      "topicId": "si-c02-t06",
+      "question": "Qual è la procedura in cinque passi per ricavare cardinalità da una traccia?",
+      "answer": "1) Individuare il legame e i ruoli; 2) chiedere per una singola istanza il numero massimo di legami; 3) ripetere la domanda per l’altro ruolo; 4) giustificare i quattro valori in frasi; 5) provare casi limite.",
+      "detail": "Nelle relazioni n-arie le domande vanno adattate alla combinazione dei ruoli.",
+      "example": "Verificare nuovo dipendente non assegnato, cancellazione di progetto, cambi di direttore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare cardinalità sulla base di esempi casuali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.5, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q059",
+      "topicId": "si-c02-t06",
+      "question": "Come si legge correttamente una cardinalità (0,1) per il ruolo DIPENDENTE in DIREZIONE?",
+      "answer": "Ciascun dipendente può non dirigere alcun progetto e, se ne dirige uno, non può dirigerne più di uno.",
+      "detail": "È una regola che la traccia o il diagramma devono sostenere; non deriva da “ogni progetto ha un direttore”.",
+      "example": "Un dipendente non direttore è ammesso.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non capovolgere la lettura tra ruolo dipendente e ruolo progetto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.5, pagina PDF 22"
+    },
+    {
+      "id": "si-c02-q060",
+      "topicId": "si-c02-t06",
+      "question": "Perché “ogni progetto ha un direttore” non basta per porre (0,1) sul lato dipendente?",
+      "answer": "La frase impone un direttore per ogni progetto ma non vieta che lo stesso dipendente diriga più progetti.",
+      "detail": "Il limite per il dipendente richiede un vincolo autonomo o la scelta specifica dello schema del docente.",
+      "example": "Un direttore potrebbe dirigere due progetti se il testo non lo esclude.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere DIREZIONE con PARTECIPAZIONE, che ha regole diverse.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.5, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q061",
+      "topicId": "si-c02-t06",
+      "question": "Perché DIREZIONE e PARTECIPAZIONE devono avere cardinalità distinte?",
+      "answer": "Descrivono legami con significato diverso: assegnazione di lavoro e responsabilità di direzione.",
+      "detail": "Il fatto che un direttore debba partecipare al progetto è una business rule fra le due relazioni, non una fusione delle cardinalità.",
+      "example": "Un progetto ha molti partecipanti ma uno solo dirige.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rappresentare la direzione come un unico attributo di PARTECIPAZIONE se perdono identità e vincoli.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.6.5, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q062",
+      "topicId": "si-c02-t07",
+      "question": "Che cos’è un identificatore di entità?",
+      "answer": "Un insieme di attributi, eventualmente unito a relazioni identificanti, capace di individuare in modo univoco ogni occorrenza dell’entità.",
+      "detail": "Può essere interno oppure esterno; va giustificato rispetto al dominio.",
+      "example": "CodiceDipendente oppure (PROGETTO, NumeroRelease).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere identificazione concettuale con tipo fisico della colonna SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.7.1, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q063",
+      "topicId": "si-c02-t07",
+      "question": "Che cosa caratterizza un identificatore interno?",
+      "answer": "È composto esclusivamente da attributi dell’entità identificata, semplici o combinati, che rendono univoca l’occorrenza.",
+      "detail": "Gli attributi identificanti sono obbligatori e monovalore nel modello delle dispense.",
+      "example": "CodiceDipendente; oppure (CodiceFiliale, NumeroLocale) entrambi memorizzati nell’entità.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il solo nome di una persona raramente è univoco senza una regola esplicita.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.7.1, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q064",
+      "topicId": "si-c02-t07",
+      "question": "Quali proprietà devono avere gli attributi identificanti nelle dispense?",
+      "answer": "Devono avere un valore per ogni istanza, non essere multivalore e identificare univocamente secondo i requisiti; per gli attributi identificanti si richiama la cardinalità (1,1).",
+      "detail": "La sola presenza di un campo non prova che sia un identificatore valido.",
+      "example": "Codice univoco obbligatorio; non un telefono facoltativo o una lista di numeri.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare chiavi che possono mancare per alcune istanze.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.7.1, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q065",
+      "topicId": "si-c02-t07",
+      "question": "Che cosa si intende per identificatore composto?",
+      "answer": "Un’identità definita dalla combinazione di più attributi quando nessuno di essi, preso da solo, individua l’occorrenza.",
+      "detail": "La combinazione deve essere univoca nel contesto pertinente.",
+      "example": "CodiceFiliale + NumeroLocale, se entrambi sono memorizzati come attributi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che ogni singolo componente della chiave sia univoco.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.7.1, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q066",
+      "topicId": "si-c02-t07",
+      "question": "Che cos’è un identificatore esterno?",
+      "answer": "Un’identificazione che dipende anche dall’occorrenza di un’altra entità tramite una relazione identificante, oltre a eventuali attributi locali.",
+      "detail": "Serve quando l’unicità è valida all’interno di un contesto e non globalmente.",
+      "example": "RELEASE identificata da PROGETTO e NumeroProgressivo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non chiamare esterno un semplice attributo composto senza una relazione con il contesto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.7.2, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q067",
+      "topicId": "si-c02-t07",
+      "question": "Perché la matricola dello studente può richiedere un contesto esterno?",
+      "answer": "Perché può essere univoca soltanto entro l’università che la assegna: la combinazione UNIVERSITÀ + Matricola identifica lo studente.",
+      "detail": "La relazione identificante deve individuare un contesto ben definito, con partecipazione (1,1) dal lato dell’entità dipendente.",
+      "example": "Studente con matricola 123 in due atenei differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire automaticamente unicità nazionale a codici locali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.7.2, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q068",
+      "topicId": "si-c02-t07",
+      "question": "Perché RELEASE non è identificata dal solo progressivo 1, 2, 3?",
+      "answer": "Perché la numerazione riparte per progetto: la stessa release 1 può comparire in progetti differenti.",
+      "detail": "L’identificatore è contesto PROGETTO + NumeroProgressivo; ogni RELEASE appartiene al suo progetto identificante.",
+      "example": "Progetto Alfa, Release 1; Progetto Beta, Release 1: istanze diverse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre unicità globale di NumeroProgressivo contro la traccia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.7.2, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q069",
+      "topicId": "si-c02-t07",
+      "question": "Quale condizione di partecipazione è tipica del lato debole di un’identificazione esterna?",
+      "answer": "L’entità che dipende dal contesto deve essere associata a esattamente un’istanza della relazione identificante, quindi partecipazione (1,1).",
+      "detail": "Se l’istanza dipendesse da più contesti senza regola aggiuntiva, l’identificazione rischierebbe ambiguità.",
+      "example": "Ogni release si riferisce esattamente a un progetto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere una relazione con massimo N per identificazione esterna senza una semantica adeguata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.7.2, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q070",
+      "topicId": "si-c02-t07",
+      "question": "Perché un attributo facoltativo non può essere scelto come unico identificatore?",
+      "answer": "Perché alcune istanze potrebbero esserne prive, impedendo di individuarle univocamente.",
+      "detail": "La condizione (1,1) degli attributi identificanti rende il valore sempre disponibile.",
+      "example": "Un codice promozionale opzionale non identifica tutte le offerte.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare il valore nullo come identità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.7.3, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q071",
+      "topicId": "si-c02-t07",
+      "question": "Perché un attributo multivalore è inappropriato come identificatore interno unico?",
+      "answer": "Perché non fornisce necessariamente un singolo valore stabile per ogni occorrenza.",
+      "detail": "La definizione dell’identità dovrebbe restare univoca e non dipendere da una collezione variabile di valori.",
+      "example": "Elenco di numeri di telefono di una persona.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un insieme di contatti non è automaticamente una chiave.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.7.3, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q072",
+      "topicId": "si-c02-t07",
+      "question": "Perché cognome e nome possono essere identificatori scorretti?",
+      "answer": "Perché persone diverse possono condividere gli stessi valori, salvo che la specifica dichiari esplicitamente un vincolo di unicità.",
+      "detail": "Nelle esercitazioni bisogna rispettare le ipotesi del docente ma segnalarne i limiti rispetto alla pratica reale.",
+      "example": "Due impiegati chiamati Mario Rossi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non correggere silenziosamente la traccia introducendo un codice non richiesto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.7.3, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q073",
+      "topicId": "si-c02-t07",
+      "question": "Come comportarsi quando la traccia accademica stabilisce “Nome univoco” per DIPENDENTE?",
+      "answer": "Usare Nome come identificatore nel modello richiesto dalla traccia, chiarendo che l’ipotesi necessita verifica in un progetto reale.",
+      "detail": "La fedeltà ai requisiti dell’esercizio viene prima delle scelte professionali più realistiche.",
+      "example": "Caso Software House del docente: identificazione DIPENDENTE per Nome.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire senza motivazione l’identificatore previsto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.7.4, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q074",
+      "topicId": "si-c02-t07",
+      "question": "Quale controllo va eseguito prima di dichiarare valida una chiave concettuale?",
+      "answer": "Verificare univocità nel dominio, obbligatorietà, monovalenza e, se pertinente, contesto e stabilità rispetto al ciclo di vita.",
+      "detail": "Provare casi di duplicazione, cambi di nome o progressivo che ricomincia da 1.",
+      "example": "Controllare che PROGETTO+Numero identifichi una sola release.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una chiave apparentemente unica in un piccolo campione può non esserlo per regola.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.7.4, pagina PDF 23"
+    },
+    {
+      "id": "si-c02-q075",
+      "topicId": "si-c02-t08",
+      "question": "Che cos’è una generalizzazione E-R?",
+      "answer": "Un legame tra una classe padre più generale e classi figlie specializzate, che ereditano proprietà e relazioni comuni e possono aggiungerne di proprie.",
+      "detail": "La specializzazione evita ripetizioni e rappresenta sottocategorie del dominio.",
+      "example": "DIPENDENTE → TECNICO e SVILUPPATORE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non duplicare nelle figlie tutti gli attributi già posseduti dal padre.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.8.1, pagina PDF 24"
+    },
+    {
+      "id": "si-c02-q076",
+      "topicId": "si-c02-t08",
+      "question": "Che cosa ereditano le specializzazioni dall’entità padre?",
+      "answer": "Le caratteristiche e i legami comuni descritti dalla classe generale, compresa la capacità di essere identificate come istanze del padre.",
+      "detail": "Gli attributi specifici sono aggiunti soltanto nelle sottoclassi in cui hanno senso.",
+      "example": "Un PROGRAMMATORE eredita le proprietà di SVILUPPATORE e DIPENDENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare figlie e padre come insiemi disgiunti di persone senza relazione d’identità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.8.1, pagina PDF 24"
+    },
+    {
+      "id": "si-c02-q077",
+      "topicId": "si-c02-t08",
+      "question": "Quando una generalizzazione si dice totale?",
+      "answer": "Quando ogni istanza dell’entità padre deve appartenere ad almeno una delle specializzazioni rappresentate.",
+      "detail": "La totalità riguarda copertura delle istanze, non reciproca esclusione delle figlie.",
+      "example": "Tutti i documenti sono necessariamente classificati come uno dei tipi previsti, se la traccia lo impone.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre totalità solo osservando i dati attuali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.8.2, pagina PDF 24"
+    },
+    {
+      "id": "si-c02-q078",
+      "topicId": "si-c02-t08",
+      "question": "Quando una generalizzazione si dice parziale?",
+      "answer": "Quando può esistere almeno una istanza del padre che non appartiene ad alcuna delle sottoclassi rappresentate.",
+      "detail": "La scelta è indipendente dalla possibilità di appartenere a più figlie.",
+      "example": "Una persona può non essere né studente né lavoratore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che la presenza di più figlie esaurisca automaticamente il padre.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.8.2, pagina PDF 24"
+    },
+    {
+      "id": "si-c02-q079",
+      "topicId": "si-c02-t08",
+      "question": "Perché i requisiti, e non la fotografia del database, determinano la totalità di una gerarchia?",
+      "answer": "Perché il vincolo descrive tutti gli stati ammessi del dominio; il contenuto attuale può essere solo un sottoinsieme dei casi consentiti.",
+      "detail": "Anche se oggi tutte le persone sono studenti, il modello può ammetterne altre.",
+      "example": "Dipendenti attuali tutti tecnici non dimostrano gerarchia necessariamente totale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inferire una legge dalle sole occorrenze osservate.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.8.2, pagina PDF 24"
+    },
+    {
+      "id": "si-c02-q080",
+      "topicId": "si-c02-t08",
+      "question": "Che differenza c’è fra gerarchia disgiunta e sovrapposta?",
+      "answer": "Disgiunta: una istanza del padre appartiene al massimo a una figlia; sovrapposta: può appartenere a più figlie.",
+      "detail": "L’esclusività è una proprietà distinta da totalità/parzialità.",
+      "example": "PERSONA può essere contemporaneamente STUDENTE e LAVORATORE in una gerarchia sovrapposta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare totale sinonimo di disgiunta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.8.3, pagina PDF 24"
+    },
+    {
+      "id": "si-c02-q081",
+      "topicId": "si-c02-t08",
+      "question": "Una gerarchia può essere insieme parziale e sovrapposta?",
+      "answer": "Sì: alcune istanze non appartengono a nessuna figlia; altre possono appartenere a più specializzazioni.",
+      "detail": "Le due dimensioni sono indipendenti.",
+      "example": "Una persona può essere studente, lavoratore, entrambi o nessuno dei due.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a scegliere una sola etichetta tra “totale”, “parziale” e “sovrapposta”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.8.3, pagina PDF 24"
+    },
+    {
+      "id": "si-c02-q082",
+      "topicId": "si-c02-t08",
+      "question": "La distinzione disgiunta/sovrapposta è presentata nello stesso modo delle slide della docente?",
+      "answer": "No: il manuale segnala che è un’integrazione concettuale utile; nelle slide in questa parte è soprattutto esplicitata totale/parziale.",
+      "detail": "È opportuno distinguere l’enfasi delle dispense dall’approfondimento didattico inserito nel manuale.",
+      "example": "Gerarchia PERSONA–STUDENTE/LAVORATORE usata come chiarimento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non attribuire indistintamente ogni integrazione alle slide.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.8.3, pagina PDF 24"
+    },
+    {
+      "id": "si-c02-q083",
+      "topicId": "si-c02-t08",
+      "question": "Che cosa sono le generalizzazioni a cascata?",
+      "answer": "Gerarchie con più livelli, in cui un’entità già specializzata diventa padre di specializzazioni più specifiche.",
+      "detail": "I livelli aggiungono proprietà particolari preservando quelle ereditate dai livelli superiori.",
+      "example": "DIPENDENTE → SVILUPPATORE → PROGRAMMATORE/ANALISTA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ripetere tutti gli attributi ereditati in ogni nodo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.8.4, pagina PDF 24"
+    },
+    {
+      "id": "si-c02-q084",
+      "topicId": "si-c02-t09",
+      "question": "Perché uno schema E-R corretto graficamente non è sempre una documentazione concettuale completa?",
+      "answer": "Perché non tutti i vincoli tra più relazioni, le condizioni comparative e le derivazioni sono esprimibili con i soli simboli e cardinalità.",
+      "detail": "Dizionari e business rules spiegano e completano il diagramma.",
+      "example": "Il direttore di un dipartimento deve anche afferire a quel dipartimento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che cardinalità formalmente giuste garantiscano tutte le regole di business.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.9.1, pagina PDF 25"
+    },
+    {
+      "id": "si-c02-q085",
+      "topicId": "si-c02-t09",
+      "question": "Quale esempio mostra il limite delle sole cardinalità nella relazione fra DIREZIONE e AFFERENZA?",
+      "answer": "Un impiegato potrebbe dirigere il dipartimento A ma afferire al dipartimento B senza violare separatamente le cardinalità delle due relazioni.",
+      "detail": "Occorre una regola esplicita che imponga coerenza fra i due legami.",
+      "example": "Se Mario dirige A, deve risultare assegnato ad A.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire il vincolo inter-relazionale con un semplice massimo 1.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.9.1, pagina PDF 25"
+    },
+    {
+      "id": "si-c02-q086",
+      "topicId": "si-c02-t09",
+      "question": "A che cosa serve il dizionario delle entità?",
+      "answer": "A definire per ogni entità significato, attributi e identificatore, rendendo verificabile la coerenza del lessico con il diagramma.",
+      "detail": "È uno strumento complementare alla figura, non un suo duplicato privo di informazioni.",
+      "example": "RELEASE: versione di progetto; NumeroProgressivo; identificatore PROGETTO + Numero.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non compilare dizionari con nomi privi di definizione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.9.2, pagina PDF 25"
+    },
+    {
+      "id": "si-c02-q087",
+      "topicId": "si-c02-t09",
+      "question": "A che cosa serve il dizionario delle relazioni?",
+      "answer": "A descrivere il significato dei legami, le entità e i ruoli partecipanti, gli attributi propri e i vincoli pertinenti.",
+      "detail": "È essenziale quando le stesse entità sono collegate da relazioni differenti.",
+      "example": "DIPENDENTE–PROGETTO: PARTECIPAZIONE con MesiUomo, DIREZIONE senza quel significato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere due relazioni solo perché hanno gli stessi partecipanti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.9.3, pagina PDF 25"
+    },
+    {
+      "id": "si-c02-q088",
+      "topicId": "si-c02-t09",
+      "question": "Quali tre categorie di contenuti possono essere documentate come business rules nel manuale?",
+      "answer": "Descrizioni di concetti, vincoli di integrità e regole di derivazione; le prime confluiscono spesso nel glossario.",
+      "detail": "I vincoli devono valere in ogni stato ammesso; le derivazioni specificano come ottenere valori.",
+      "example": "Direttore afferente al dipartimento; budget totale ricavato dalla somma di budget selezionati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una derivazione non è un semplice vincolo di validità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.9.4, pagina PDF 25"
+    },
+    {
+      "id": "si-c02-q089",
+      "topicId": "si-c02-t09",
+      "question": "Che differenza esiste fra vincolo di integrità e regola di derivazione?",
+      "answer": "Un vincolo prescrive una condizione sempre vera per gli stati ammissibili; una derivazione descrive come calcolare un valore da altri.",
+      "detail": "Entrambi sono fatti concettuali da esprimere, anche se l’implementazione avverrà dopo.",
+      "example": "Stipendio ≤ stipendio direttore (vincolo); budget totale = somma dei budget (derivazione).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere condizioni booleane con formule di calcolo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.9.4, pagina PDF 25"
+    },
+    {
+      "id": "si-c02-q090",
+      "topicId": "si-c02-t09",
+      "question": "Perché una business rule può non essere realizzabile con un singolo CHECK SQL?",
+      "answer": "Perché può richiedere confronti tra più righe, entità o relazioni e condizioni che vanno oltre il contenuto di una riga.",
+      "detail": "La decisione implementativa spetta alla progettazione logica/fisica e applicativa; qui va documentato il vincolo.",
+      "example": "Il direttore deve risultare fra i partecipanti dello stesso progetto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non piegare lo schema concettuale alle capacità di un singolo vincolo SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.9.4, pagina PDF 25"
+    },
+    {
+      "id": "si-c02-q091",
+      "topicId": "si-c02-t09",
+      "question": "Che cosa stabilisce la business rule sull’afferenza del dirigente di un dipartimento?",
+      "answer": "Che chi dirige un dipartimento deve essere anche assegnato/afferente a quello stesso dipartimento.",
+      "detail": "Richiede verificare coerenza fra due associazioni distinte.",
+      "example": "Mario dirige Dipartimento A ma afferisce a B: stato invalido.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Le cardinalità dei singoli legami non bastano da sole.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.9.4, pagina PDF 25"
+    },
+    {
+      "id": "si-c02-q092",
+      "topicId": "si-c02-t09",
+      "question": "Che cosa esprime una regola comparativa sugli stipendi nel caso delle dispense?",
+      "answer": "Che lo stipendio di un impiegato non superi quello del direttore del dipartimento cui afferisce, secondo la traccia didattica.",
+      "detail": "È una regola specifica del caso, non una norma generale sulle retribuzioni aziendali.",
+      "example": "Dipendente 2.200 €, direttore 2.000 €: caso non valido.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare il vincolo a organizzazioni diverse senza che sia previsto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.9.4, pagina PDF 25"
+    },
+    {
+      "id": "si-c02-q093",
+      "topicId": "si-c02-t09",
+      "question": "Quali sono i sei elementi minimi di una documentazione concettuale completa?",
+      "answer": "1) Requisiti, glossario e ipotesi; 2) diagramma E-R; 3) dizionario entità; 4) dizionario relazioni; 5) business rules numerate; 6) esempi validi e invalidi per verificare il modello.",
+      "detail": "Il pacchetto rende le scelte controllabili prima della traduzione nel modello relazionale.",
+      "example": "E-R e regola “direttore partecipante” verificati con un esempio ammesso e uno vietato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non consegnare solo un’immagine senza note sulle assunzioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.9.5, pagina PDF 26"
+    },
+    {
+      "id": "si-c02-q094",
+      "topicId": "si-c02-t09",
+      "question": "Come utilizzare esempi positivi e negativi per validare uno schema?",
+      "answer": "Proporre almeno uno stato ammesso e uno vietato per ogni vincolo significativo e controllare che la documentazione spieghi la differenza.",
+      "detail": "Il metodo scopre errori nella semantica, nelle cardinalità e nelle identificazioni.",
+      "example": "Due release 1 di progetti diversi: ammesse; due release 1 dello stesso progetto: non ammesse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non accontentarsi di un caso positivo “semplice”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.9.5, pagina PDF 26"
+    },
+    {
+      "id": "si-c02-q095",
+      "topicId": "si-c02-t10",
+      "question": "Quali oggetti e fatti descrive il caso Software House della docente?",
+      "answer": "Dipendenti e progetti; partecipazioni con MesiUomo; direzione dei progetti; release con numero progressivo locale; specializzazioni di dipendenti e skill.",
+      "detail": "Il caso riunisce N:M con attributo, due relazioni sugli stessi partecipanti, identificazione esterna e gerarchie.",
+      "example": "DIPENDENTE partecipa a PROGETTO, un partecipante ne è direttore, il progetto ha release.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non omettere il vincolo che il direttore sia un partecipante.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.1, pagina PDF 26"
+    },
+    {
+      "id": "si-c02-q096",
+      "topicId": "si-c02-t10",
+      "question": "Quali attributi e identificatori sono fissati nella Software House delle dispense?",
+      "answer": "DIPENDENTE ha Nome (identificante nella traccia), Stipendio e DataAssunzione; PROGETTO ha Titolo univoco (identificante) e Budget; RELEASE ha NumeroProgressivo e Data, con identificazione nel progetto.",
+      "detail": "Gli identificatori hanno convenzioni didattiche specifiche, da rispettare nella soluzione della traccia.",
+      "example": "RELEASE (Progetto Alfa, n. 1) è diversa da RELEASE (Progetto Beta, n. 1).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre codici aziendali aggiuntivi come se fossero prescritti dalla fonte.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.1, pagina PDF 26"
+    },
+    {
+      "id": "si-c02-q097",
+      "topicId": "si-c02-t10",
+      "question": "Perché è utile trasformare la traccia Software House in requisiti SH-01–SH-08?",
+      "answer": "Per ricondurre ogni affermazione a una scelta concettuale esplicita e verificabile: entità, attributi, legami, identificatori, gerarchie o regole esterne.",
+      "detail": "La tabella SH-01–SH-08 rende tracciabile il motivo di ogni elemento.",
+      "example": "SH-05: il direttore è un partecipante → DIREZIONE + business rule di appartenenza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitarsi a memorizzare la figura senza il perché dei suoi elementi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.2, pagina PDF 26"
+    },
+    {
+      "id": "si-c02-q098",
+      "topicId": "si-c02-t10",
+      "question": "Che cosa implica SH-03 nel modello Software House?",
+      "answer": "Che un dipendente può partecipare a più progetti: PARTECIPAZIONE non è una relazione uno-a-uno.",
+      "detail": "Anche il progetto può avere più dipendenti; la relazione viene modellata come N:M.",
+      "example": "Un dipendente associato a tre progetti e un progetto con più dipendenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la cardinalità di PARTECIPAZIONE con quella di DIREZIONE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.2, pagina PDF 26"
+    },
+    {
+      "id": "si-c02-q099",
+      "topicId": "si-c02-t10",
+      "question": "Che cosa implica SH-04 per l’attributo MesiUomo?",
+      "answer": "MesiUomo deve appartenere alla relazione PARTECIPAZIONE perché quantifica il contributo di uno specifico dipendente a uno specifico progetto.",
+      "detail": "Può cambiare per ogni combinazione dipendente–progetto.",
+      "example": "Mario lavora 2 mesi-uomo su A e 5 su B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inserirlo come proprietà generale di DIPENDENTE o PROGETTO.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.2, pagina PDF 26"
+    },
+    {
+      "id": "si-c02-q100",
+      "topicId": "si-c02-t10",
+      "question": "Come si modella SH-05: “ogni progetto ha un direttore scelto tra i partecipanti”?",
+      "answer": "Con una relazione DIREZIONE distinta da PARTECIPAZIONE e una business rule che obblighi il direttore a partecipare al medesimo progetto.",
+      "detail": "La cardinalità da sola non esprime l’implicazione tra i due legami.",
+      "example": "Mario può dirigere Alfa solo se compare anche come partecipante di Alfa.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare DIREZIONE una partecipazione qualsiasi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.2, pagina PDF 26"
+    },
+    {
+      "id": "si-c02-q101",
+      "topicId": "si-c02-t10",
+      "question": "Come si modella SH-06: release progressivamente numerate per progetto?",
+      "answer": "Con entità RELEASE e relazione identificante a PROGETTO; numero progressivo univoco solo all’interno del progetto.",
+      "detail": "RELEASE dipende da esattamente un progetto; un progetto può avere molte release.",
+      "example": "(Alfa, 1), (Alfa, 2), (Beta, 1).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre unicità globale del numero della release.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.2, pagina PDF 26"
+    },
+    {
+      "id": "si-c02-q102",
+      "topicId": "si-c02-t10",
+      "question": "Quali gerarchie descrive SH-07/SH-08?",
+      "answer": "DIPENDENTE si specializza in TECNICO e SVILUPPATORE; SVILUPPATORE si specializza in PROGRAMMATORE e ANALISTA.",
+      "detail": "Skill è un attributo potenzialmente multivalore di sviluppatore, da evolvere in entità se occorrono dati più ricchi.",
+      "example": "Programmatore come sottotipo di Sviluppatore e quindi di Dipendente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non duplicare gli attributi di DIPENDENTE lungo la gerarchia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.2, pagina PDF 26"
+    },
+    {
+      "id": "si-c02-q103",
+      "topicId": "si-c02-t10",
+      "question": "Perché PARTECIPAZIONE e DIREZIONE non devono essere fuse nel caso Software House?",
+      "answer": "Perché descrivono fatti distinti, con cardinalità e regole differenti: lavoro su un progetto e responsabilità del progetto.",
+      "detail": "L’esistenza del direttore tra i partecipanti richiede un vincolo di coerenza esplicito.",
+      "example": "Un progetto può avere dieci partecipanti ma uno solo è direttore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre responsabilità dalla sola partecipazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.3, pagina PDF 26"
+    },
+    {
+      "id": "si-c02-q104",
+      "topicId": "si-c02-t10",
+      "question": "Quali cardinalità sono riportate per PARTECIPAZIONE nel caso Software House?",
+      "answer": "DIPENDENTE (0,N) e PROGETTO (1,N) nello schema proposto.",
+      "detail": "Un dipendente può essere non assegnato; un progetto nello schema deve avere almeno un partecipante.",
+      "example": "Dipendente nuovo con zero progetti; Progetto A con almeno un dipendente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il minimo (1,N) del progetto appartiene alla soluzione proposta, non a una regola universale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.4, pagina PDF 27"
+    },
+    {
+      "id": "si-c02-q105",
+      "topicId": "si-c02-t10",
+      "question": "Quali cardinalità sono riportate per DIREZIONE nella rappresentazione Software House della docente?",
+      "answer": "DIPENDENTE (0,1) e PROGETTO (1,1).",
+      "detail": "Ogni progetto ha esattamente un direttore; nella figura lo stesso dipendente dirige al massimo un progetto, ipotesi più forte del solo testo.",
+      "example": "Marco non dirige progetti; Laura ne dirige uno.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre (0,1) per dipendente dalla sola frase “ogni progetto ha un direttore”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.4, pagina PDF 27"
+    },
+    {
+      "id": "si-c02-q106",
+      "topicId": "si-c02-t10",
+      "question": "Quali cardinalità sono riportate per VERSIONI tra PROGETTO e RELEASE?",
+      "answer": "PROGETTO (0,N) e RELEASE (1,1).",
+      "detail": "Il progetto può non avere ancora release; ogni release è associata a un unico progetto, necessario per identificarla.",
+      "example": "Progetto appena creato senza versioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rendere RELEASE indipendente dal contesto che numera le versioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.4, pagina PDF 27"
+    },
+    {
+      "id": "si-c02-q107",
+      "topicId": "si-c02-t10",
+      "question": "Quale ipotesi del diagramma della docente non consegue automaticamente dal testo sulla direzione?",
+      "answer": "Il massimo 1 sul lato DIPENDENTE di DIREZIONE: l’enunciato “ogni progetto ha un unico direttore” non impedisce di per sé che una persona diriga due progetti.",
+      "detail": "Il manuale invita a distinguere letteralmente la traccia dalle scelte del disegno mostrato.",
+      "example": "Stesso direttore per Progetto A e B: ammissibile senza vincolo aggiuntivo; non ammesso nello schema esemplificativo.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare un divieto di doppia direzione senza dirne l’origine.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.4, pagina PDF 27"
+    },
+    {
+      "id": "si-c02-q108",
+      "topicId": "si-c02-t10",
+      "question": "Quali quattro controlli di business sono particolarmente importanti per la Software House?",
+      "answer": "Direttore partecipante al progetto; MesiUomo valido secondo regole del dominio; numerazione della release locale al progetto; titolo del progetto univoco.",
+      "detail": "Il modello deve anche riferirsi a dipendenti realmente esistenti.",
+      "example": "Due progetti con stesso Titolo violano l’identificazione fissata; due release 1 di progetti diversi no.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire l’unicità locale con una globale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.5, pagina PDF 27"
+    },
+    {
+      "id": "si-c02-q109",
+      "topicId": "si-c02-t10",
+      "question": "Quali test negativi useresti per validare DIREZIONE e identificazione delle RELEASE?",
+      "answer": "Tentare di nominare direttore un dipendente che non partecipa al progetto; inserire due RELEASE con stesso Numero per il medesimo PROGETTO.",
+      "detail": "In entrambi i casi il modello deve qualificare lo stato come non valido; il secondo caso viola univocità contestuale.",
+      "example": "Direttore Mario non in PARTECIPAZIONE ad Alfa; due (Alfa,1).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ritenere valido un test solo perché non viola la cardinalità (1,1).",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.5, pagina PDF 27"
+    },
+    {
+      "id": "si-c02-q110",
+      "topicId": "si-c02-t10",
+      "question": "Perché la Software House è un caso formativo centrale per l’esame di modellazione?",
+      "answer": "Perché costringe a giustificare relazioni distinte, minimi e massimi, attributi di associazione, identificatori esterni, gerarchie e business rules.",
+      "detail": "La prova non verifica solo simboli, ma capacità di trasformare requisiti in scelte motivate.",
+      "example": "Ricostruire a foglio bianco DIPENDENTE–PROGETTO–RELEASE con i vincoli.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non apprendere uno schema come disegno senza saperlo spiegare.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.10.5, pagina PDF 27"
+    },
+    {
+      "id": "si-c02-q111",
+      "topicId": "si-c02-t11",
+      "question": "Quali sono gli elementi fondamentali del caso dipartimenti, progetti e familiari?",
+      "answer": "IMPIEGATO, DIPARTIMENTO, PROGETTO, FAMILIARE e potenzialmente SEDE, con afferenza, direzione, partecipazione, supervisione ricorsiva e legami familiari.",
+      "detail": "Il caso introduce vincoli tra associazioni e confronti fra attributi.",
+      "example": "Un impiegato afferisce a un dipartimento e lavora su progetti, un direttore dirige il dipartimento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non limitare lo schema alla sola struttura gerarchica aziendale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.11.1, pagina PDF 27"
+    },
+    {
+      "id": "si-c02-q112",
+      "topicId": "si-c02-t11",
+      "question": "Quali identificatori sono esplicitati nel caso dell’impresa con dipartimenti?",
+      "answer": "IMPIEGATO: CodiceFiscale; DIPARTIMENTO: Numero; PROGETTO: NumeroProgetto. Per FAMILIARE l’identificazione va discussa sulla traccia; SEDE può richiedere una scelta fra entità e attributo.",
+      "detail": "Il manuale segnala che alcune alternative non sono completamente specificate.",
+      "example": "La sede di dipartimento potrebbe essere dato multivalore se non esistono proprietà autonome della sede.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre una identità arbitraria per FAMILIARE senza confrontare la fonte.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.11.2, pagina PDF 27"
+    },
+    {
+      "id": "si-c02-q113",
+      "topicId": "si-c02-t11",
+      "question": "Quali relazioni caratterizzano il caso aziendale oltre alla PARTECIPAZIONE?",
+      "answer": "DIREZIONE del dipartimento, AFFERENZA dell’impiegato, SUPERVISIONE tra impiegati, COMPOSIZIONE/assegnazione di progetti e rapporto con familiari.",
+      "detail": "Ogni relazione ha una semantica e propri vincoli, anche quando riusa la stessa entità.",
+      "example": "Un responsabile sovrintende un altro impiegato; un dipartimento gestisce progetti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere assegnazione al dipartimento con assegnazione al progetto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.11.2, pagina PDF 27"
+    },
+    {
+      "id": "si-c02-q114",
+      "topicId": "si-c02-t11",
+      "question": "Quali quattro vincoli non banali sono dichiarati nel caso aziendale?",
+      "answer": "1) Il direttore afferisce al dipartimento diretto; 2) stipendio impiegato ≤ stipendio direttore; 3) dipartimento con sede a Roma diretto da impiegato con oltre dieci anni di anzianità; 4) impiegato senza dipartimento non partecipa a progetti.",
+      "detail": "Sono vincoli specifici delle dispense e non regole generali delle organizzazioni.",
+      "example": "Impiegato non assegnato che compare in PARTECIPAZIONE: invalido.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che cardinalità individuali garantiscano queste implicazioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.11.3, pagina PDF 28"
+    },
+    {
+      "id": "si-c02-q115",
+      "topicId": "si-c02-t11",
+      "question": "Come esprimere il vincolo “il direttore di un dipartimento deve afferire allo stesso”?",
+      "answer": "Come business rule che confronta l’istanza di DIPARTIMENTO associata a DIREZIONE con quella associata ad AFFERENZA per lo stesso IMPIEGATO.",
+      "detail": "Servono almeno due relazioni e una condizione semantica incrociata.",
+      "example": "Mario dirige A ma afferisce B: configurazione vietata.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre il vincolo a “ogni dipartimento ha un direttore”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.11.3, pagina PDF 28"
+    },
+    {
+      "id": "si-c02-q116",
+      "topicId": "si-c02-t11",
+      "question": "Come verificare il vincolo retributivo del caso impresa?",
+      "answer": "Per ogni impiegato confrontare lo stipendio con quello del direttore del dipartimento di afferenza: l’impiegato non deve superarlo.",
+      "detail": "La regola ha significato nel caso didattico e richiede collegamenti tra entità.",
+      "example": "Impiegato 2.200 €, direttore 2.000 € → violazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare la regola come normativa generale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.11.3, pagina PDF 28"
+    },
+    {
+      "id": "si-c02-q117",
+      "topicId": "si-c02-t11",
+      "question": "Quale condizione aggiuntiva riguarda i dipartimenti con sede a Roma?",
+      "answer": "Devono essere diretti da un impiegato con più di dieci anni di anzianità, secondo l’esercizio delle dispense.",
+      "detail": "Occorre conoscere sede e anzianità del direttore per verificare il vincolo.",
+      "example": "Direttore di dipartimento romano con nove anni di anzianità: stato invalido.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non applicare la soglia a tutti i dipartimenti indipendentemente dalla sede.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.11.3, pagina PDF 28"
+    },
+    {
+      "id": "si-c02-q118",
+      "topicId": "si-c02-t11",
+      "question": "Che vincolo collega mancata afferenza e mancata partecipazione a progetti?",
+      "answer": "Se un impiegato non afferisce ad alcun dipartimento, non deve partecipare ad alcun progetto.",
+      "detail": "È una implicazione tra due associazioni; non coincide con un semplice minimo di partecipazione.",
+      "example": "Impiegato senza DIPARTIMENTO ma in PARTECIPAZIONE ad Alfa: stato vietato.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che due relazioni siano semanticamente indipendenti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.11.3, pagina PDF 28"
+    },
+    {
+      "id": "si-c02-q119",
+      "topicId": "si-c02-t11",
+      "question": "Qual è il metodo consigliato per verificare i vincoli del caso aziendale?",
+      "answer": "Formulare per ogni business rule un esempio che la soddisfi e uno che la violi, controllando che la documentazione distingua correttamente i due stati.",
+      "detail": "Il caso dipartimenti consente di provare incroci tra relazioni, confronti numerici, date e implicazioni.",
+      "example": "Mario dirige A e afferisce A: ammissibile; dirige A e afferisce B: non ammissibile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scambiare un test di coerenza della modellazione con la scelta del meccanismo SQL.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.11.4, pagina PDF 28"
+    },
+    {
+      "id": "si-c02-q120",
+      "topicId": "si-c02-t11",
+      "question": "Perché nel caso dipartimenti è importante separare regola del dominio e meccanismo di implementazione?",
+      "answer": "Perché il compito concettuale è stabilire lo stato valido; la scelta fra DBMS, procedure o controlli applicativi viene dopo.",
+      "detail": "Un vincolo inter-relazionale non va trascurato solo perché richiede più di un CHECK SQL.",
+      "example": "Il controllo su anzianità del direttore è documentato come business rule.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridisegnare il dominio per evitare una verifica implementativa.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.11.4, pagina PDF 28"
+    },
+    {
+      "id": "si-c02-q121",
+      "topicId": "si-c02-t12",
+      "question": "Che ruolo ha EnerPrice all’interno del Capitolo 2?",
+      "answer": "È un esempio didattico preliminare per applicare E-R al settore energia; non rappresenta né sostituisce lo schema definitivo del progetto approvato.",
+      "detail": "Il manuale usa una parte del dominio per esercitare scelte concettuali e domande sui requisiti.",
+      "example": "SEGMENTO, OFFERTA, CONDIZIONE_ECONOMICA, SIMULAZIONE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trattare il frammento come modello autorizzato definitivo di EnerPrice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.12, pagina PDF 28"
+    },
+    {
+      "id": "si-c02-q122",
+      "topicId": "si-c02-t12",
+      "question": "Quali concetti sono candidati a entità nell’esempio preliminare EnerPrice?",
+      "answer": "Segmento, offerta, condizioni economiche e simulazione, con ipotesi relative ai risultati e alle configurazioni.",
+      "detail": "Occorre decidere in base a cardinalità, identità, proprietà autonome e necessità di memorizzare scenari multipli.",
+      "example": "Offerta con più condizioni e più simulazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre una unica condizione per offerta senza che sia scritto.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.12, pagina PDF 28"
+    },
+    {
+      "id": "si-c02-q123",
+      "topicId": "si-c02-t12",
+      "question": "Quando CONDIZIONE_ECONOMICA è preferibile a un semplice attributo di OFFERTA?",
+      "answer": "Quando occorre rappresentare più condizioni per offerta, ciascuna con tipologia, decorrenza, durata o altre informazioni autonome.",
+      "detail": "La scelta evita una lista non strutturata che perderebbe validità temporale e differenziazione.",
+      "example": "Sconto percentuale valido da gennaio a marzo e quota fissa con altra decorrenza.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non comprimere condizioni ripetibili in un unico prezzo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.12, pagina PDF 28"
+    },
+    {
+      "id": "si-c02-q124",
+      "topicId": "si-c02-t12",
+      "question": "Che cosa bisogna chiedere prima di assegnare la cardinalità fra OFFERTA e SEGMENTO?",
+      "answer": "Se un’offerta possa rivolgersi a più segmenti e se un segmento possa ricevere più offerte, distinguendo minimi e massimi.",
+      "detail": "La presenza di una relazione nel disegno preliminare non risolve le regole di targeting.",
+      "example": "Una promozione destinata a due segmenti richiederebbe massimi coerenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare il minimo obbligatorio di un segmento senza un requisito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.12, pagina PDF 28"
+    },
+    {
+      "id": "si-c02-q125",
+      "topicId": "si-c02-t12",
+      "question": "Quali dati possono servire a identificare una SIMULAZIONE in EnerPrice?",
+      "answer": "Occorre definire un criterio univoco per ogni esecuzione e il collegamento all’offerta e alle ipotesi utilizzate; i dettagli richiedono requisiti espliciti.",
+      "detail": "Una stessa offerta può essere simulata più volte con scenari differenti.",
+      "example": "Simulazioni A e B della stessa offerta hanno parametri diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare la simulazione solo con il prodotto se le ripetizioni sono ammesse.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.12, pagina PDF 28"
+    },
+    {
+      "id": "si-c02-q126",
+      "topicId": "si-c02-t12",
+      "question": "Qual è la cautela del manuale nell’uso di un margine economico come dato del modello?",
+      "answer": "Chiarire se sia un attributo calcolato della simulazione, un risultato persistito o una struttura autonoma quando esistono più risultati per scenario.",
+      "detail": "La scelta dipende da tracciabilità, storia e requisiti di confronto.",
+      "example": "Margine previsto per uno scenario di consumo specifico.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere che una sola colonna contenga sempre tutti gli indicatori economici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.12, pagina PDF 28"
+    },
+    {
+      "id": "si-c02-q127",
+      "topicId": "si-c02-t13",
+      "question": "Qual è il primo passo del metodo in nove fasi per risolvere tracce E-R?",
+      "answer": "Leggere l’intero testo una prima volta senza disegnare, identificando oggetto e scopo della base di dati.",
+      "detail": "Serve a fissare il perimetro prima di trasformare parole in figure.",
+      "example": "Nella traccia di un negozio di ottica capire che si gestiscono cataloghi, ordini e clienti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non disegnare la prima entità prima di conoscere l’intero scenario.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.13.1, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q128",
+      "topicId": "si-c02-t13",
+      "question": "Quali indizi linguistici si evidenziano durante la seconda lettura dei requisiti?",
+      "answer": "Sostantivi significativi, verbi di relazione, aggettivi/quantità e negazioni.",
+      "detail": "I sostantivi suggeriscono entità e proprietà; verbi e quantificatori aiutano a individuare legami e vincoli.",
+      "example": "“Ogni ordine ha una montatura e due lenti, destra e sinistra”.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ignorare “al massimo”, “esattamente uno”, “può” o “non”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.13.1, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q129",
+      "topicId": "si-c02-t13",
+      "question": "Quali passi seguono l’individuazione dei termini nella procedura E-R?",
+      "answer": "Scomporre i requisiti in frasi atomiche e glossario; distinguere entità, attributi ed eventi; individuare relazioni e attributi dei legami.",
+      "detail": "Si costruisce prima una descrizione semantica coerente, poi il diagramma.",
+      "example": "INTERVENTO_ESEGUITO come entità evento per manutenzioni ripetute.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere una chiave prima di decidere cosa sia un’istanza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.13.1, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q130",
+      "topicId": "si-c02-t13",
+      "question": "Quali sono le ultime quattro attività del metodo operativo in nove passi?",
+      "answer": "Stabilire cardinalità minime/massime per ruolo; trovare identificatori; valutare gerarchie; redigere dizionari e business rules e validare con casi leciti/illeciti.",
+      "detail": "Queste verifiche impediscono che una figura dall’aspetto corretto nasconda vincoli mancanti.",
+      "example": "Verificare che un direttore sia un partecipante usando una business rule.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il disegno concluso senza test di coerenza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.13.1, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q131",
+      "topicId": "si-c02-t13",
+      "question": "Qual è l’errore nel creare una nuova entità per ogni valore osservato?",
+      "answer": "Si confonde la classe con le sue occorrenze; un’entità raccoglie istanze dello stesso tipo.",
+      "detail": "La distinzione serve a non proliferare rettangoli inutili.",
+      "example": "CLIENTE è entità; Cliente Rossi e Cliente Bianchi sono istanze.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non disegnare una entità “ClienteRossi”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.13.2, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q132",
+      "topicId": "si-c02-t13",
+      "question": "Quale errore nasce dall’assegnare automaticamente minimo 1 a una relazione?",
+      "answer": "Si inventa un’obbligatorietà che potrebbe non essere prevista dalla traccia.",
+      "detail": "Il minimo va motivato o dichiarato come ipotesi.",
+      "example": "Un cliente nuovo può non avere ancora ordini.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere presenza probabile con obbligo universale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.13.2, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q133",
+      "topicId": "si-c02-t13",
+      "question": "Perché non bisogna ridurre una relazione ternaria a tre binarie senza verifica?",
+      "answer": "Si può perdere la combinazione di tre partecipanti da cui dipende il dato, per esempio prezzo concordato.",
+      "detail": "Le regole per un’eventuale decomposizione devono essere esplicitate.",
+      "example": "Fornitura del produttore P dell’articolo A al rivenditore R.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere strutture più semplici se cambiano la semantica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.13.2, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q134",
+      "topicId": "si-c02-t13",
+      "question": "Qual è l’errore nel progettare subito la struttura SQL nella fase E-R?",
+      "answer": "Si passa prematuramente dalla modellazione del significato alle scelte logiche e implementative.",
+      "detail": "La fase concettuale deve prima fissare entità, legami, identità e business rules.",
+      "example": "Scegliere CREATE TABLE prima di chiarire se “intervento” è entità evento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare i limiti di un DBMS come motivo per cambiare un requisito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.13.2, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q135",
+      "topicId": "si-c02-t13",
+      "question": "Che cosa bisogna saper giustificare durante una prova di modellazione E-R?",
+      "answer": "Perché un fatto è entità o relazione, perché un attributo dipende da un legame, perché una chiave è valida e perché le cardinalità rispettano il testo.",
+      "detail": "Anche gerarchie, ruoli ricorsivi e vincoli esterni al diagramma devono essere spiegabili verbalmente.",
+      "example": "Motivare l’identificazione esterna di RELEASE invece di disegnare solo la figura.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "La complessità grafica non sostituisce la correttezza.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.13.2, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q136",
+      "topicId": "si-c02-t13",
+      "question": "Perché la coerenza interna è più importante della complessità del diagramma?",
+      "answer": "Uno schema piccolo ma fedele al testo, con identità e cardinalità corrette, è preferibile a uno ricco di entità e ipotesi arbitrarie.",
+      "detail": "Un modello concettuale va valutato sui requisiti e sulla verificabilità, non sul numero di simboli.",
+      "example": "Non creare entità SCONTO, PROMOZIONE e INCENTIVO se nel dominio sono sinonimi non distinti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare nuove regole per far apparire sofisticata la soluzione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.13.2, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q137",
+      "topicId": "si-c02-t13",
+      "question": "Come bisogna sostenere verbalmente una scelta di progettazione E-R durante l’esame?",
+      "answer": "Spiegando quale frase dei requisiti giustifica ogni entità, relazione, attributo, identificatore, cardinalità e business rule, e quali ipotesi restano aperte.",
+      "detail": "Una risposta convincente non consiste nel disegnare una figura complessa: dimostra coerenza interna e capacità di distinguere fatti e assunzioni.",
+      "example": "Spiegare perché MesiUomo appartiene a PARTECIPAZIONE e non a DIPENDENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presentare una scelta arbitraria come se fosse obbligata dalla traccia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.13.3, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q138",
+      "topicId": "si-c02-t13",
+      "question": "Qual è il modo corretto di rispondere quando una specifica ammette più modellazioni ragionevoli?",
+      "answer": "Dichiarare la propria ipotesi, motivare i vincoli che introduce e chiarire come cambierebbe lo schema sotto un’altra ipotesi.",
+      "detail": "Il manuale privilegia una soluzione fedele al testo rispetto a una più complessa ma incoerente.",
+      "example": "Per uno sconto con più versioni nel tempo, spiegare perché introdurresti una entità evento/condizione temporale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare unica una rappresentazione senza verificare i requisiti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.13.3, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q139",
+      "topicId": "si-c02-t14",
+      "question": "Nel caso del negozio di ottica (traccia 16/02/2017), quali entità principali devono essere modellate?",
+      "answer": "FORNITORE, MONTATURA, LENTE, CLIENTE e ORDINE; occorre distinguere i produttori e i ruoli delle lenti all’interno dell’ordine.",
+      "detail": "Il caso è una sintesi ragionata di una traccia storica, non una riproduzione integrale delle soluzioni.",
+      "example": "Un ordine collega un cliente, una montatura, una lente destra e una sinistra.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non ridurre le lenti a un’unica partecipazione senza lato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 1, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q140",
+      "topicId": "si-c02-t14",
+      "question": "Come si identificano MONTATURA e LENTE quando i codici sono locali al produttore?",
+      "answer": "Con identificazione esterna: produttore pertinente + CodiceLocale del prodotto.",
+      "detail": "Il codice della montatura o della lente non è univoco globalmente fra i fornitori.",
+      "example": "Due montature M10 di aziende diverse sono prodotti distinti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rendere universalmente univoco il codice locale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 1, pagina PDF 29"
+    },
+    {
+      "id": "si-c02-q141",
+      "topicId": "si-c02-t14",
+      "question": "Perché sono utili specializzazioni del FORNITORE nel caso del negozio di ottica?",
+      "answer": "Perché fornitori di montature e fornitori di lenti ricoprono ruoli produttivi differenti, che la modellazione deve distinguere.",
+      "detail": "Le relazioni identificanti devono collegare il tipo corretto di prodotto al suo produttore.",
+      "example": "FORNITORE_MONTATURE per una MONTATURA, FORNITORE_LENTI per una LENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collegare indifferentemente ogni tipo prodotto a qualsiasi ruolo senza vincoli.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 1, pagina PDF 30"
+    },
+    {
+      "id": "si-c02-q142",
+      "topicId": "si-c02-t14",
+      "question": "Perché nell’ORDINE di ottica la LENTE deve comparire con due ruoli distinti?",
+      "answer": "Perché lente destra e sinistra possono avere difetti, gradazioni e altre informazioni differenti.",
+      "detail": "Si possono usare due associazioni o una struttura più articolata, conservando sempre il significato del lato.",
+      "example": "Stesso modello di lente montato su entrambi i lati ma con gradazioni diverse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non fondere due posizioni semanticamente differenti in un unico legame generico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 1, pagina PDF 30"
+    },
+    {
+      "id": "si-c02-q143",
+      "topicId": "si-c02-t14",
+      "question": "Qual è il particolare vincolo di costo della traccia storica del negozio di ottica?",
+      "answer": "Il costo dell’ordine non deve superare la somma dei costi della montatura e delle lenti.",
+      "detail": "Il manuale sottolinea che il vincolo può sembrare commercialmente insolito, ma va rispettato perché esplicito nella traccia.",
+      "example": "Costo ordine 90, componenti 80 → stato vietato dalla regola didattica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non correggere il requisito sostituendolo con il più intuitivo “deve essere maggiore”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 1, pagina PDF 30"
+    },
+    {
+      "id": "si-c02-q144",
+      "topicId": "si-c02-t14",
+      "question": "Quale identità si suggerisce per ORDINE nella rielaborazione della traccia di ottica?",
+      "answer": "Una identificazione dipendente dal cliente e dall’istante se così previsto dalla fonte, da verificare per effettiva unicità; non bastano i dati anagrafici.",
+      "detail": "L’ordine è un evento distinto: il modello non deve confondere due acquisti della stessa persona.",
+      "example": "Due ordini dello stesso cliente in orari diversi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non assumere che la sola data sia sempre sufficiente a identificare un ordine.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 1, pagina PDF 30"
+    },
+    {
+      "id": "si-c02-q145",
+      "topicId": "si-c02-t14",
+      "question": "Quali specializzazioni sono centrali nell’esercizio Studenti e prove d’esame (05/07/2018)?",
+      "answer": "STUDENTE può avere la specializzazione MATURANDO; PROVA è specializzata in PRIMA, SECONDA, TERZA e QUARTA_PROVA.",
+      "detail": "Le figlie possono possedere attributi o relazioni differenti, non essere soltanto valori etichetta.",
+      "example": "TERZA_PROVA associata a DOMANDA, QUARTA_PROVA a DOCENTE quando richiesto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rappresentare automaticamente tutte le differenze come un unico attributo TipoProva.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 2, pagina PDF 30"
+    },
+    {
+      "id": "si-c02-q146",
+      "topicId": "si-c02-t14",
+      "question": "Quali informazioni restano nell’entità generale PROVA e quali nelle sue specializzazioni?",
+      "answer": "I dati comuni come data, durata e voto restano su PROVA; attributi o relazioni previsti soltanto per un particolare tipo vanno nelle rispettive figlie.",
+      "detail": "La scelta segue il principio di ereditarietà: padre per fatti comuni, specializzazione per fatti esclusivi.",
+      "example": "TipologiaTraccia su PRIMA_PROVA; DOMANDA collegata a TERZA_PROVA.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non duplicare data e voto nelle quattro sottoclassi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 2, pagina PDF 30"
+    },
+    {
+      "id": "si-c02-q147",
+      "topicId": "si-c02-t14",
+      "question": "Perché l’identificazione della PROVA richiede cautela nel caso del 2018?",
+      "answer": "Perché se si eliminasse l’ipotesi di una sola prova per studente in un giorno, la data non distinguerebbe più tutte le occorrenze.",
+      "detail": "Una convenzione valida nello scenario delle dispense non va assunta universale.",
+      "example": "Due prove dello stesso studente nello stesso giorno → servirebbe ulteriore discriminante.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dichiarare una chiave valida senza ricostruire i vincoli temporali.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 2, pagina PDF 30"
+    },
+    {
+      "id": "si-c02-q148",
+      "topicId": "si-c02-t14",
+      "question": "Come si identifica PROPOSTA nell’esercizio sui bandi pubblici (04/11/2019)?",
+      "answer": "Con un numero progressivo valido nell’ambito del BANDO: identificatore esterno BANDO + NumeroProposta.",
+      "detail": "La stessa numerazione può ricominciare per bandi diversi.",
+      "example": "Bando X, proposta 1; Bando Y, proposta 1: non sono lo stesso oggetto.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre unicità globale al numero proposta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 3, pagina PDF 30"
+    },
+    {
+      "id": "si-c02-q149",
+      "topicId": "si-c02-t14",
+      "question": "Perché PARTNER viene specializzato in AZIENDA e UNIVERSITÀ nel caso dei bandi?",
+      "answer": "Perché le due tipologie possiedono proprietà proprie: per AZIENDA partita IVA e carattere innovativo; per UNIVERSITÀ referente amministrativo.",
+      "detail": "La specializzazione esplicita requisiti diversi senza rendere duplicati i dati comuni.",
+      "example": "PROPOSTA con partner azienda e università.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rappresentare due tipi con campi genericamente nullabili ignorando le differenze richieste.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 3, pagina PDF 30"
+    },
+    {
+      "id": "si-c02-q150",
+      "topicId": "si-c02-t14",
+      "question": "Quali sono i due vincoli sui partner per ogni proposta nella traccia dei bandi?",
+      "answer": "Una sola UNIVERSITÀ partner e un massimo di tre AZIENDE partner per proposta.",
+      "detail": "Il massimo tre è un limite numerico più specifico del generico N e va documentato chiaramente.",
+      "example": "Quattro aziende associate alla stessa proposta: configurazione invalida.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Il vincolo di una sola università non vale per ogni partner indistintamente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 3, pagina PDF 30"
+    },
+    {
+      "id": "si-c02-q151",
+      "topicId": "si-c02-t14",
+      "question": "Quale vincolo temporale inter-entità deve essere annotato nel caso dei bandi?",
+      "answer": "La proposta deve essere inviata entro la scadenza del bando al quale è riferita.",
+      "detail": "Serve confrontare la data della proposta con la scadenza del bando; il diagramma da solo non descrive pienamente il confronto.",
+      "example": "Data invio 11 giugno, scadenza 10 giugno → violazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare valido il sistema solo perché PROPOSTA è collegata a BANDO.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 3, pagina PDF 31"
+    },
+    {
+      "id": "si-c02-q152",
+      "topicId": "si-c02-t15",
+      "question": "Perché l’esercizio degli interventi di manutenzione ripetuti richiede una entità evento INTERVENTO_ESEGUITO?",
+      "answer": "Perché la stessa attrezzatura può ricevere lo stesso tipo di intervento più volte, anche dallo stesso tecnico nello stesso giorno.",
+      "detail": "Un’istanza evento deve distinguere ogni esecuzione con data, durata e identificatore valido.",
+      "example": "Stesso tecnico, stessa attrezzatura, stesso tipo di intervento ma due interventi distinti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Una relazione unica ATTREZZATURA–TIPO_INTERVENTO perde le ripetizioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 4, pagina PDF 31"
+    },
+    {
+      "id": "si-c02-q153",
+      "topicId": "si-c02-t15",
+      "question": "Quale identificatore è appropriato per INTERVENTO_ESEGUITO se data e tecnico non bastano?",
+      "answer": "Un CodiceIntervento univoco oppure un progressivo contestuale effettivamente sufficiente.",
+      "detail": "I requisiti dichiarano che può esserci più di un intervento nello stesso giorno sulle stesse entità.",
+      "example": "Due interventi effettuati da Luca il 12 marzo sulla stessa attrezzatura.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare un identificatore composito che può duplicarsi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 4, pagina PDF 31"
+    },
+    {
+      "id": "si-c02-q154",
+      "topicId": "si-c02-t15",
+      "question": "Come si collegano le entità nell’esercizio degli interventi ricorrenti?",
+      "answer": "Ogni INTERVENTO_ESEGUITO fa riferimento a una ATTREZZATURA, un TECNICO e un TIPO_INTERVENTO; da ciascuna di tali entità possono derivare più esecuzioni.",
+      "detail": "I minimi sui lati degli oggetti di riferimento restano normalmente zero salvo ulteriori vincoli.",
+      "example": "Attrezzatura appena acquistata senza interventi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre almeno un intervento per ogni attrezzatura senza requisito.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 4, pagina PDF 31"
+    },
+    {
+      "id": "si-c02-q155",
+      "topicId": "si-c02-t15",
+      "question": "Come si modella la tariffa oraria concordata per ogni coppia consulente–cliente?",
+      "answer": "Con relazione molti-a-molti ASSEGNAZIONE(CONSULENTE, CLIENTE) e TariffaOraria come attributo del legame.",
+      "detail": "La tariffa varia con la coppia, non è proprietà fissa del consulente né del cliente.",
+      "example": "Consulente Rossi: 70 €/h a cliente A, 90 €/h a cliente B.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collocare tariffa solo su CONSULENTE.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 5, pagina PDF 31"
+    },
+    {
+      "id": "si-c02-q156",
+      "topicId": "si-c02-t15",
+      "question": "Che cosa cambia se si deve conservare lo storico delle tariffe consulente–cliente?",
+      "answer": "Il legame deve distinguere versioni temporali, per esempio con un ACCORDO_TARIFFARIO avente decorrenza o con un identificatore delle versioni.",
+      "detail": "Una sola tariffa corrente non ricostruisce quelle valide nei mesi passati.",
+      "example": "Accordo a 80 €/h da gennaio e a 85 €/h da luglio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sovrascrivere l’unico attributo TariffaOraria se serve lo storico.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 5, pagina PDF 31"
+    },
+    {
+      "id": "si-c02-q157",
+      "topicId": "si-c02-t15",
+      "question": "Come identificare PROVA quando NumeroProva riparte da 1 in ciascun LABORATORIO?",
+      "answer": "Mediante identificazione esterna LABORATORIO + NumeroProva, se ogni prova appartiene esattamente a un laboratorio.",
+      "detail": "La partecipazione della PROVA alla relazione identificante è (1,1); quella del LABORATORIO può essere (0,N).",
+      "example": "Prova 1 in laboratorio A e prova 1 in B: entrambe ammesse.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non modificare la traccia imponendo un NumeroProva globale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 6, pagina PDF 31"
+    },
+    {
+      "id": "si-c02-q158",
+      "topicId": "si-c02-t15",
+      "question": "Quali cardinalità sono coerenti con un laboratorio che esegue più prove numerate localmente?",
+      "answer": "Per PROVA (1,1) verso il laboratorio; per LABORATORIO (0,N) se può non aver ancora eseguito prove e può eseguirne molte.",
+      "detail": "L’identificazione della prova dipende dal contesto obbligatorio.",
+      "example": "Laboratorio appena attivato senza prove.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rendere obbligatoria almeno una prova per laboratorio senza motivo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 6, pagina PDF 31"
+    },
+    {
+      "id": "si-c02-q159",
+      "topicId": "si-c02-t15",
+      "question": "Come modellare la relazione ricorsiva tra collaboratore e responsabile diretto?",
+      "answer": "Usando COLLABORATORE con relazione SUPERVISIONA e ruoli responsabile/supervisionato.",
+      "detail": "Il ruolo supervisionato ha (0,1) per ammettere il direttore generale; il responsabile (0,N) perché può supervisionare più persone o nessuna.",
+      "example": "Direttore generale senza capo, responsabile con tre subordinati.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non invertire i due ruoli.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 7, pagina PDF 31"
+    },
+    {
+      "id": "si-c02-q160",
+      "topicId": "si-c02-t15",
+      "question": "Quali condizioni non sono garantite dalle sole cardinalità di SUPERVISIONA?",
+      "answer": "L’esistenza di un unico direttore generale e l’assenza di cicli gerarchici.",
+      "detail": "Sono vincoli ulteriori da descrivere esplicitamente e da verificare.",
+      "example": "Ciclo A→B→A: può rispettare i massimi ma essere vietato dal dominio.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non pensare che (0,1) vieti automaticamente cicli e più radici.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 7, pagina PDF 31"
+    },
+    {
+      "id": "si-c02-q161",
+      "topicId": "si-c02-t15",
+      "question": "Quale gerarchia deriva dall’ipotesi “ogni documento è cartaceo oppure digitale, mai entrambi”?",
+      "answer": "Una generalizzazione totale e disgiunta di DOCUMENTO in CARTACEO e DIGITALE.",
+      "detail": "Totale perché ogni documento appartiene a una figlia; disgiunta perché le categorie sono alternative.",
+      "example": "Un documento non può essere privo di entrambi i tipi né appartenere a tutti e due.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere esaustività con la sola esclusività.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 8, pagina PDF 31"
+    },
+    {
+      "id": "si-c02-q162",
+      "topicId": "si-c02-t15",
+      "question": "Quale gerarchia deriva da PERSONA che può essere studente, lavoratore, entrambe o nessuna?",
+      "answer": "Una generalizzazione parziale e sovrapposta di PERSONA in STUDENTE e LAVORATORE.",
+      "detail": "Parziale perché sono ammesse persone senza figli; sovrapposta perché una persona può appartenere a entrambe.",
+      "example": "Persona che lavora e frequenta l’università.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non imporre disgiunzione basandosi solo su nomi di ruoli diversi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 8, pagina PDF 31"
+    },
+    {
+      "id": "si-c02-q163",
+      "topicId": "si-c02-t16",
+      "question": "Perché l’esercizio Laboratorio–Dipartimento–Persona richiede una business rule inter-relazionale?",
+      "answer": "Perché la persona che dirige un laboratorio deve essere assegnata al dipartimento cui quel laboratorio appartiene; le cardinalità dei singoli legami non bastano.",
+      "detail": "Si devono incrociare DIREZIONE, APPARTENENZA e ASSEGNAZIONE.",
+      "example": "Luca dirige laboratorio L del Dipartimento A ma è assegnato a B: invalido.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire il confronto fra relazioni con una semplice cardinalità 1:N.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 9, pagina PDF 32"
+    },
+    {
+      "id": "si-c02-q164",
+      "topicId": "si-c02-t16",
+      "question": "Quali cardinalità sono plausibili per APPARTENENZA LABORATORIO–DIPARTIMENTO nella traccia?",
+      "answer": "LABORATORIO (1,1) e DIPARTIMENTO (0,N), se ogni laboratorio appartiene a uno e un dipartimento può possederne più.",
+      "detail": "Sono da distinguere dai vincoli che collegano il responsabile al dipartimento.",
+      "example": "Dipartimento senza laboratori; laboratorio assegnato a un solo dipartimento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non credere che queste cardinalità garantiscano l’appartenenza corretta del direttore.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 9, pagina PDF 32"
+    },
+    {
+      "id": "si-c02-q165",
+      "topicId": "si-c02-t16",
+      "question": "Come modellare il prezzo concordato specifico per produttore, articolo e rivenditore?",
+      "answer": "Con una relazione ternaria FORNITURA(PRODUTTORE, ARTICOLO, RIVENDITORE) avente attributo PrezzoConcordato.",
+      "detail": "Il prezzo dipende dalla terna completa e non da uno solo dei partecipanti.",
+      "example": "Lo stesso articolo può avere prezzi differenti per rivenditori diversi a parità di produttore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non separare la ternaria in tre binarie senza giustificazione.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 10, pagina PDF 32"
+    },
+    {
+      "id": "si-c02-q166",
+      "topicId": "si-c02-t16",
+      "question": "Quale assunzione potrebbe rendere plausibile una rappresentazione alternativa alla ternaria FORNITURA?",
+      "answer": "Una regola aggiuntiva che determini univocamente qualche partecipante o dipendenza, per esempio un unico produttore per articolo indipendentemente dal rivenditore.",
+      "detail": "Il manuale richiede di provare le ipotesi e non introdurle tacitamente.",
+      "example": "Ogni articolo ha un solo produttore: il problema potrebbe essere riformulato in modo più semplice.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non presumere univocità del produttore se non è scritta.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 10, pagina PDF 32"
+    },
+    {
+      "id": "si-c02-q167",
+      "topicId": "si-c02-t16",
+      "question": "Come modellare la storia delle valutazioni delle competenze dei dipendenti?",
+      "answer": "Con DIPENDENTE, COMPETENZA e una entità evento VALUTAZIONE_COMPETENZA collegata a entrambi, con livello e data per ogni valutazione.",
+      "detail": "La stessa coppia dipendente–competenza può ricevere valutazioni ripetute nel tempo.",
+      "example": "Valutazione Java di Mario a marzo e una nuova valutazione a ottobre.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Un semplice attributo multivalore Skill non conserva storico, livelli e proprietà.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 11, pagina PDF 32"
+    },
+    {
+      "id": "si-c02-q168",
+      "topicId": "si-c02-t16",
+      "question": "Perché VALUTAZIONE_COMPETENZA deve avere una identificazione autonoma o contestuale sufficiente?",
+      "answer": "Perché più valutazioni della stessa competenza per lo stesso dipendente devono restare distinte, anche se condividono alcuni attributi.",
+      "detail": "La scelta della chiave richiede verificare se la data o la combinazione proposta sia realmente univoca.",
+      "example": "Due valutazioni nello stesso giorno potrebbero richiedere un progressivo o timestamp più discriminante.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare solo DIPENDENTE+COMPETENZA se ci sono eventi ripetuti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 11, pagina PDF 32"
+    },
+    {
+      "id": "si-c02-q169",
+      "topicId": "si-c02-t16",
+      "question": "Quali chiarimenti richiede la frase ambigua “un cliente può scegliere uno sconto”?",
+      "answer": "Che cosa significa scegliere; quanti sconti può avere; se gli sconti sono associati a offerte o prodotti; quando sono validi; se si mantengono versioni; quale soggetto è titolare della scelta.",
+      "detail": "Il manuale usa l’esercizio per mostrare come da una frase vaga dipendano entità e cardinalità molto diverse.",
+      "example": "Sconto sul singolo prodotto oppure sconto per cliente con decorrenza: modelli differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre automaticamente una relazione 1:1 da “uno sconto”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 12, pagina PDF 32"
+    },
+    {
+      "id": "si-c02-q170",
+      "topicId": "si-c02-t16",
+      "question": "Perché una parola come “sconto” non basta a definire un’entità e i suoi legami?",
+      "answer": "Perché occorre sapere se rappresenta una condizione con durata e identità proprie, un’opzione, un valore di un’offerta o un evento di scelta.",
+      "detail": "Il glossario e le domande di chiarimento precedono la formalizzazione.",
+      "example": "Due sconti sul medesimo prodotto in periodi differenti richiedono storia.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non progettare tabelle per parole prima di comprenderne la semantica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.14 · Esercizio 12, pagina PDF 32"
+    },
+    {
+      "id": "si-c02-q171",
+      "topicId": "si-c02-t17",
+      "question": "Richiamo d’esame: qual è la differenza fra requisiti degli utenti e schema concettuale dei dati?",
+      "answer": "I requisiti descrivono bisogni, fatti, operazioni e vincoli; lo schema E-R formalizza le classi, le associazioni e le proprietà informative pertinenti.",
+      "detail": "La documentazione originale va mantenuta tracciabile; il diagramma non sostituisce l’URD.",
+      "example": "“Il cliente può ordinare più prodotti” viene tradotto in entità, relazioni e cardinalità da chiarire.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non leggere il testo come elenco meccanico di tabelle.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.1, pagina PDF 32"
+    },
+    {
+      "id": "si-c02-q172",
+      "topicId": "si-c02-t17",
+      "question": "Richiamo d’esame: quale domanda distingue una proprietà di entità da una proprietà di relazione?",
+      "answer": "Da quali occorrenze dipende il valore: da un singolo oggetto oppure dalla combinazione di più partecipanti?",
+      "detail": "È una domanda più affidabile della semplice posizione della parola nella frase.",
+      "example": "MesiUomo dipende da DIPENDENTE+PROGETTO; DataNascita dipende da DIPENDENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere l’entità che “sembra” più vicina nel diagramma.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.1, pagina PDF 32"
+    },
+    {
+      "id": "si-c02-q173",
+      "topicId": "si-c02-t17",
+      "question": "Richiamo d’esame: come si difende una cardinalità (0,1) invece di (1,1)?",
+      "answer": "Mostrando che è lecito un caso senza partecipazione e che non sono leciti due legami per la stessa occorrenza nel ruolo.",
+      "detail": "Il caso limite può essere un oggetto nuovo o una eccezione prevista nei requisiti.",
+      "example": "Un collaboratore appena assunto senza responsabile assegnato: minimo 0; due responsabili simultanei non consentiti dal massimo 1.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non motivare il minimo usando il massimo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.1, pagina PDF 32"
+    },
+    {
+      "id": "si-c02-q174",
+      "topicId": "si-c02-t17",
+      "question": "Richiamo d’esame: perché “può” da solo non equivale a partecipazione obbligatoria?",
+      "answer": "Perché descrive una possibilità ma non esclude che un’istanza abbia zero collegamenti.",
+      "detail": "Per minimo 1 occorre una frase esplicita o un’ipotesi motivata.",
+      "example": "“Un consulente può lavorare per diversi clienti” ammette, senza altro, anche zero incarichi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non tradurre “può partecipare” in (1,N) senza chiarimento.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.1, pagina PDF 32"
+    },
+    {
+      "id": "si-c02-q175",
+      "topicId": "si-c02-t17",
+      "question": "Richiamo d’esame: come si verifica la correttezza dell’identificatore di una RELEASE?",
+      "answer": "Si prova a creare release con lo stesso numero in progetti diversi e con lo stesso numero nello stesso progetto: il primo caso deve essere ammissibile, il secondo vietato.",
+      "detail": "Il test verifica unicità nel contesto; il legame identificante è necessario.",
+      "example": "(A,1) e (B,1) validi; due (A,1) invalidi.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere la frequenza di utilizzo con l’unicità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.1, pagina PDF 32"
+    },
+    {
+      "id": "si-c02-q176",
+      "topicId": "si-c02-t17",
+      "question": "Richiamo d’esame: che cosa si intende per entità padre e specializzazione?",
+      "answer": "La classe padre contiene le proprietà e relazioni comuni; le figlie sono sottoclassi delle sue istanze e aggiungono aspetti propri.",
+      "detail": "Il modello deve chiarire, secondo requisiti, se la copertura è totale/parziale e se le figlie sono disgiunte/sovrapposte.",
+      "example": "DIPENDENTE → SVILUPPATORE → PROGRAMMATORE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rappresentare figli come copie indipendenti del padre.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.1, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q177",
+      "topicId": "si-c02-t17",
+      "question": "Richiamo d’esame: perché l’autonomia di una entità è una questione di dominio e non di forma grafica?",
+      "answer": "Perché serve valutare identità, proprietà, relazioni e uso nel tempo; gli stessi fatti possono richiedere rappresentazioni diverse sotto requisiti diversi.",
+      "detail": "L’analisi precede la scelta del rettangolo o dell’ovale.",
+      "example": "Una competenza con valutazioni storiche è più ricca di una stringa Skill.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non creare nuove entità solo per moltiplicare i componenti del disegno.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.1, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q178",
+      "topicId": "si-c02-t17",
+      "question": "Richiamo d’esame: perché la relazione DIREZIONE non garantisce che il direttore sia partecipante al progetto?",
+      "answer": "Perché DIREZIONE e PARTECIPAZIONE sono associazioni distinte e le cardinalità di una non impongono l’esistenza dell’altra.",
+      "detail": "La proprietà si esprime come vincolo di coerenza inter-relazionale.",
+      "example": "Mario dirige Alfa ma non compare tra i partecipanti: vietato dalla business rule.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il vincolo implicito nella parola “direttore”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.1, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q179",
+      "topicId": "si-c02-t17",
+      "question": "Richiamo d’esame: quali controlli completeresti prima della progettazione logica?",
+      "answer": "Copertura requisiti; identificazione delle entità; correttezza attributi e relazioni; cardinalità giustificate; gerarchie; business rules; coerenza fra figura, glossario e dizionari.",
+      "detail": "La fase logica non dovrebbe iniziare con ambiguità concettuali non documentate.",
+      "example": "Rileggere requisito SH-05 e controllare DIREZIONE e partecipazione.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non sostituire la revisione semantica con il semplice avvio del DBMS.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.1, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q180",
+      "topicId": "si-c02-t17",
+      "question": "Richiamo d’esame: come distingueresti due problemi apparentemente simili, ternaria FORNITURA e relazione binaria ASSEGNAZIONE?",
+      "answer": "Nella ternaria il fatto dipende da tre soggetti; nella binaria ASSEGNAZIONE la tariffa dipende solo dalla coppia consulente–cliente.",
+      "detail": "Il grado della relazione deriva dalla dipendenza semantica del fatto.",
+      "example": "Prezzo(produttore, articolo, rivenditore) vs Tariffa(consulente, cliente).",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non scegliere per abitudine una relazione N:M in tutti i casi.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.1, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q181",
+      "topicId": "si-c02-t17",
+      "question": "Richiamo d’esame: quando occorre trasformare una relazione con data in entità evento?",
+      "answer": "Quando si devono rappresentare più occorrenze ripetute della stessa combinazione e occorre identificarle separatamente nel tempo.",
+      "detail": "Una semplice data può non essere sufficiente se due eventi si verificano nello stesso giorno.",
+      "example": "Prestiti ripetuti dello stesso libro allo stesso lettore.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare perdere la storia delle ripetizioni.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.1, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q182",
+      "topicId": "si-c02-t17",
+      "question": "Richiamo d’esame: perché un E-R valido può non essere completo?",
+      "answer": "Perché può rispettare la notazione ma mancare di dati, legami, vincoli o eventi necessari alle operazioni richieste.",
+      "detail": "Completezza è valutata rispetto alle specifiche, non al numero di simboli o all’estetica del disegno.",
+      "example": "Relazione PRESTITO senza periodo non basta se occorre sapere quando il libro è stato restituito.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere validità sintattica con copertura dei requisiti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.1, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q183",
+      "topicId": "si-c02-t18",
+      "question": "Biblioteca: perché bisogna distinguere LIBRO da COPIA?",
+      "answer": "LIBRO rappresenta l’opera o il titolo; COPIA il singolo esemplare identificato dal suo inventario.",
+      "detail": "Un titolo può avere più copie che possono essere prestate indipendentemente.",
+      "example": "Tre copie fisiche di uno stesso manuale.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non associare un solo stato di prestito all’intero titolo se esistono più esemplari.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.2–2.15.3 · Problema A, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q184",
+      "topicId": "si-c02-t18",
+      "question": "Biblioteca: come si preservano prestiti ripetuti della stessa copia allo stesso lettore?",
+      "answer": "Con un’entità evento PRESTITO identificabile, collegata a COPIA e LETTORE, con data iniziale, scadenza e restituzione.",
+      "detail": "I medesimi partecipanti possono essere collegati da più prestiti distinti nel tempo.",
+      "example": "Prestito della copia 102 a Marta a gennaio e nuovamente a settembre.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non identificare PRESTITO con la sola coppia lettore–copia.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.2–2.15.3 · Problema A, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q185",
+      "topicId": "si-c02-t18",
+      "question": "Biblioteca: il fatto che una copia debba appartenere a un titolo impone che ogni titolo abbia già una copia?",
+      "answer": "No: la copia riferisce esattamente a un libro, ma il minimo sul lato LIBRO va chiarito rispetto alla possibilità che un titolo sia censito prima dell’acquisto.",
+      "detail": "La soluzione orientativa lascia aperta questa scelta dipendente dai requisiti.",
+      "example": "Libro a catalogo ordinato, nessuna copia ancora disponibile.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre automaticamente minimo 1 in senso inverso.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.2–2.15.3 · Problema A, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q186",
+      "topicId": "si-c02-t18",
+      "question": "Forniture industriali: quale fatto preserva una ternaria FORNITURA?",
+      "answer": "Prezzo e tempo di consegna riferiti alla specifica combinazione FORNITORE–COMPONENTE–STABILIMENTO.",
+      "detail": "I valori potrebbero cambiare per una sola delle tre dimensioni.",
+      "example": "Lo stesso componente costa diversamente se consegnato a stabilimenti differenti.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non dedurre il prezzo dal solo codice componente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.2–2.15.3 · Problema B, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q187",
+      "topicId": "si-c02-t18",
+      "question": "Forniture industriali: quando ha senso un’entità CONTRATTO_FORNITURA invece della ternaria?",
+      "answer": "Quando il dominio riconosce veri contratti con identità, attributi e righe proprie e le assunzioni necessarie vengono dichiarate.",
+      "detail": "È una rappresentazione alternativa che cambia la struttura, non un effetto automatico della normalizzazione.",
+      "example": "Contratto con data, durata e righe per componente e stabilimento.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non introdurre un contratto inesistente nel testo come fatto certo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.2–2.15.3 · Problema B, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q188",
+      "topicId": "si-c02-t18",
+      "question": "Offerte energetiche: quali entità sono candidate nella soluzione orientativa?",
+      "answer": "SEGMENTO, OFFERTA, CONDIZIONE_ECONOMICA e SIMULAZIONE.",
+      "detail": "Offerte e condizioni hanno possibile molteplicità; le simulazioni devono conservare le ipotesi; serve chiarire i vincoli temporali.",
+      "example": "Una offerta con sconto valido da marzo a giugno e due simulazioni.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare lo schema dell’esercizio definitivo per EnerPrice.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.2–2.15.3 · Problema C, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q189",
+      "topicId": "si-c02-t18",
+      "question": "Offerte energetiche: quali regole non sono determinate dalla traccia e devono essere verificate?",
+      "answer": "Minimo di partecipazione del segmento alle offerte, esatta unicità delle condizioni economiche, gestione dei periodi di validità e vincoli temporali.",
+      "detail": "La soluzione orientativa non attribuisce obbligatorietà senza una frase di requisito.",
+      "example": "È lecito un segmento senza offerte? La traccia non lo chiarisce.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non inventare minimi o vincoli di non sovrapposizione senza documentarli.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.2–2.15.3 · Problema C, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q190",
+      "topicId": "si-c02-t18",
+      "question": "Risorse e team: come distinguere APPARTENENZA e COORDINAMENTO?",
+      "answer": "APPARTENENZA(COLLABORATORE, TEAM) è N:M secondo la traccia; COORDINAMENTO è distinto e ha massimo 1 per il collaboratore.",
+      "detail": "Il massimo dal lato TEAM richiede chiarimento se il testo non precisa quanti coordinatori può avere.",
+      "example": "Collaboratore appartiene ad A e B ma coordina solo A.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasformare automaticamente “coordina al massimo uno” in “ogni team ha esattamente uno”.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.2–2.15.3 · Problema D, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q191",
+      "topicId": "si-c02-t18",
+      "question": "Risorse e team: perché “il coordinatore deve appartenere al team che coordina” è una business rule?",
+      "answer": "Perché collega semanticamente la relazione COORDINAMENTO alla relazione APPARTENENZA e non è garantita dai massimi/minimi dei due legami.",
+      "detail": "La regola va controllata per ciascuna coppia coordinatore–team.",
+      "example": "Una persona coordina Team A ma appartiene solo a B: stato invalido.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere un vincolo tra relazioni con una cardinalità isolata.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.2–2.15.3 · Problema D, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q192",
+      "topicId": "si-c02-t18",
+      "question": "Gerarchie: che proprietà ha PAGAMENTO specializzato in CONTANTI, CARTA e BONIFICO?",
+      "answer": "Totale ed esclusiva, se il testo afferma che tutti i pagamenti appartengono a esattamente una delle tre modalità.",
+      "detail": "Sono imposte sia copertura completa sia assenza di appartenenze multiple.",
+      "example": "Ogni pagamento è uno dei tre tipi e non due contemporaneamente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non rendere facoltativa una categoria quando il requisito è esaustivo.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.2–2.15.3 · Problema E, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q193",
+      "topicId": "si-c02-t18",
+      "question": "Gerarchie: perché CITTADINO specializzato in STUDENTE, PENSIONATO e LAVORATORE non è automaticamente totale o disgiunto?",
+      "answer": "Perché un cittadino può ricoprire più ruoli e il testo non esclude che non ricopra nessuno dei tre.",
+      "detail": "La soluzione orientativa segnala la necessità di verificare il dominio: possibile sovrapposizione e parzialità.",
+      "example": "Una persona pensionata e lavoratrice; un cittadino senza tali ruoli.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non trasferire al cittadino l’esclusività del caso PAGAMENTO.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.2–2.15.3 · Problema E, pagina PDF 34"
+    },
+    {
+      "id": "si-c02-q194",
+      "topicId": "si-c02-t18",
+      "question": "Come vanno affrontati i cinque problemi autonomi del manuale?",
+      "answer": "Provare prima a disegnare e motivare autonomamente per 15–25 minuti, poi confrontare le scelte con la checklist del §2.13 e le soluzioni orientative.",
+      "detail": "Alcune tracce sono volutamente incomplete: individuare una domanda di chiarimento fa parte di una risposta valida.",
+      "example": "Nel caso EnerPrice segnare “minimo del segmento non specificato” anziché sceglierlo arbitrariamente.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non copiare lo schema soluzione senza saper giustificare identificatori e cardinalità.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.2, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q195",
+      "topicId": "si-c02-t18",
+      "question": "Che cosa accomuna le soluzioni orientative dei problemi A–D del §2.15.3?",
+      "answer": "La necessità di distinguere eventi ripetuti, dipendenze da combinazioni di partecipanti, cardinalità non specificate e business rules tra relazioni.",
+      "detail": "Il manuale non presenta sempre un unico schema conclusivo: invita a motivare ipotesi e casi limite.",
+      "example": "PRESTITO ripetuto, FORNITURA ternaria, condizioni temporali di OFFERTA, coordinatore appartenente al TEAM.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non confondere una soluzione orientativa con un vincolo ulteriore imposto dal docente.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.15.3, pagina PDF 33"
+    },
+    {
+      "id": "si-c02-q196",
+      "topicId": "si-c02-t19",
+      "question": "Qual è la prima domanda della checklist finale di uno schema E-R?",
+      "answer": "Ogni informazione rilevante della traccia è rappresentata nel diagramma oppure in una regola documentata?",
+      "detail": "Il controllo di copertura precede l’analisi implementativa.",
+      "example": "Scoprire che manca il periodo di validità di una condizione economica.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare completo un diagramma solo perché esteticamente chiaro.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.16.1, pagina PDF 34"
+    },
+    {
+      "id": "si-c02-q197",
+      "topicId": "si-c02-t19",
+      "question": "Che cosa bisogna verificare sull’identità delle entità prima della consegna?",
+      "answer": "Che ogni entità possieda un identificatore valido, univoco nel contesto corretto e giustificato dai requisiti.",
+      "detail": "La checklist chiede di riesaminare chiavi interne, esterne e obbligatorietà.",
+      "example": "RELEASE identificata da PROGETTO+Numero.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non utilizzare un attributo facoltativo o una numerazione locale come chiave globale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.16.1, pagina PDF 34"
+    },
+    {
+      "id": "si-c02-q198",
+      "topicId": "si-c02-t19",
+      "question": "Quale controllo va svolto sugli attributi dello schema E-R?",
+      "answer": "Che ogni attributo descriva effettivamente la classe o la relazione alla quale è assegnato.",
+      "detail": "Occorre considerare dati multivalore, derivati, temporali e relativi a eventi ripetuti.",
+      "example": "TariffaOraria su ASSEGNAZIONE, non su CONSULENTE.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non collocare per comodità un fatto dove perde il suo significato.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.16.1, pagina PDF 34"
+    },
+    {
+      "id": "si-c02-q199",
+      "topicId": "si-c02-t19",
+      "question": "Quale verifica richiede la checklist per cardinalità e relazioni particolari?",
+      "answer": "Giustificare ogni minimo e massimo con frasi e casi limite; identificare ruoli ricorsivi e preservare combinazioni nelle ternarie.",
+      "detail": "È necessario testare la coerenza fra comportamento ammesso e rappresentazione.",
+      "example": "Un responsabile può avere molti subordinati; un subordinato al massimo uno.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non usare cardinalità senza indicare il ruolo a cui si riferiscono.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.16.1, pagina PDF 34"
+    },
+    {
+      "id": "si-c02-q200",
+      "topicId": "si-c02-t19",
+      "question": "Quale controllo finale occorre svolgere sulle generalizzazioni?",
+      "answer": "Stabilire o dichiarare come ipotesi totalità/parzialità ed esclusività/sovrapposizione, oltre a controllare corretta eredità.",
+      "detail": "Le due dimensioni non si deducono automaticamente l’una dall’altra.",
+      "example": "PERSONA studente/lavoratore può essere parziale e sovrapposta.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non lasciare implicite proprietà che possono cambiare i casi consentiti.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.16.1, pagina PDF 34"
+    },
+    {
+      "id": "si-c02-q201",
+      "topicId": "si-c02-t19",
+      "question": "Come verificare l’allineamento tra schema, glossario e dizionari?",
+      "answer": "Controllare che nomi, definizioni, identificatori, ruoli, attributi e regole abbiano lo stesso significato in tutti gli artefatti.",
+      "detail": "Eventuali ambiguità vanno chiarite prima della progettazione logica.",
+      "example": "“Offerta” non deve indicare contratto nel glossario e promozione nello schema.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non considerare il dizionario una formalità separata dal diagramma.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.16.1, pagina PDF 34"
+    },
+    {
+      "id": "si-c02-q202",
+      "topicId": "si-c02-t19",
+      "question": "Come valutare la completezza delle business rules rispetto al diagramma?",
+      "answer": "Verificare che tutti i vincoli non pienamente esprimibili con simboli E-R siano annotati e testabili.",
+      "detail": "Sono frequenti i vincoli tra relazioni, comparazioni numeriche e implicazioni.",
+      "example": "Direttore deve partecipare allo stesso progetto che dirige.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non affidarsi alla sola cardinalità di DIREZIONE per questa verifica.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.16.1, pagina PDF 34"
+    },
+    {
+      "id": "si-c02-q203",
+      "topicId": "si-c02-t19",
+      "question": "Quale deve essere l’output della progettazione concettuale prima di passare al Capitolo 3?",
+      "answer": "Schema E-R e documentazione dei requisiti, identificazioni, dizionari, gerarchie, business rules e verifiche, ancora indipendenti da SQL e dal DBMS.",
+      "detail": "Il Capitolo 3 passerà alle scelte di ristrutturazione e progettazione logica; le questioni semantiche principali devono essere risolte o dichiarate.",
+      "example": "Consegna di una Software House con diagramma, SH-01–SH-08, dizionari, vincolo direttore-partecipante e casi limite.",
+      "formulas": [],
+      "connections": [],
+      "mistakes": "Non saltare al CREATE TABLE prima della validazione concettuale.",
+      "reference": "Sistemi_Informativi_Manuale.pdf — Modulo 1, Capitolo 2, §2.16, pagina PDF 34"
+    }
+  ]
+}
